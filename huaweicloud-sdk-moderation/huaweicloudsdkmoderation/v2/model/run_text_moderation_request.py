@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunTextModerationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunTextModerationRequest:
     }
 
     def __init__(self, body=None):
-        """RunTextModerationRequest - a model defined in huaweicloud sdk"""
+        """RunTextModerationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunTextModerationRequest
+        :type body: :class:`huaweicloudsdkmoderation.v2.TextDetectionReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunTextModerationRequest:
 
 
         :return: The body of this RunTextModerationRequest.
-        :rtype: TextDetectionReq
+        :rtype: :class:`huaweicloudsdkmoderation.v2.TextDetectionReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunTextModerationRequest:
 
 
         :param body: The body of this RunTextModerationRequest.
-        :type: TextDetectionReq
+        :type body: :class:`huaweicloudsdkmoderation.v2.TextDetectionReq`
         """
         self._body = body
 

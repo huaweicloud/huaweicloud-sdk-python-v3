@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunDevstarTemplateJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RunDevstarTemplateJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, file_list=None):
-        """RunDevstarTemplateJobResponse - a model defined in huaweicloud sdk"""
+        """RunDevstarTemplateJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务id。
+        :type job_id: str
+        :param file_list: 文件列表。
+        :type file_list: list[:class:`huaweicloudsdkdevstar.v1.FileTreeNode`]
+        """
         
         super(RunDevstarTemplateJobResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class RunDevstarTemplateJobResponse(SdkResponse):
         任务id。
 
         :param job_id: The job_id of this RunDevstarTemplateJobResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -74,7 +81,7 @@ class RunDevstarTemplateJobResponse(SdkResponse):
         文件列表。
 
         :return: The file_list of this RunDevstarTemplateJobResponse.
-        :rtype: list[FileTreeNode]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.FileTreeNode`]
         """
         return self._file_list
 
@@ -85,7 +92,7 @@ class RunDevstarTemplateJobResponse(SdkResponse):
         文件列表。
 
         :param file_list: The file_list of this RunDevstarTemplateJobResponse.
-        :type: list[FileTreeNode]
+        :type file_list: list[:class:`huaweicloudsdkdevstar.v1.FileTreeNode`]
         """
         self._file_list = file_list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubnetResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SubnetResult:
     }
 
     def __init__(self, id=None, status=None):
-        """SubnetResult - a model defined in huaweicloud sdk"""
+        """SubnetResult
+
+        The model defined in huaweicloud sdk
+
+        :param id: uuid形式的一个资源标识。
+        :type id: str
+        :param status: 功能说明：子网的状态。   取值范围：ACTIVE,UNKNOWN,ERROR       ACTIVE表示子网已挂载到ROUTER上       UNKNOWN表示子网还未挂载到ROUTER上       ERROR表示子网状态故障  
+        :type status: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class SubnetResult:
         uuid形式的一个资源标识。
 
         :param id: The id of this SubnetResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +90,7 @@ class SubnetResult:
         功能说明：子网的状态。   取值范围：ACTIVE,UNKNOWN,ERROR       ACTIVE表示子网已挂载到ROUTER上       UNKNOWN表示子网还未挂载到ROUTER上       ERROR表示子网状态故障  
 
         :param status: The status of this SubnetResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 

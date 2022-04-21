@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListProtocolsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class KeystoneListProtocolsRequest:
     }
 
     def __init__(self, idp_id=None):
-        """KeystoneListProtocolsRequest - a model defined in huaweicloud sdk"""
+        """KeystoneListProtocolsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param idp_id: 身份提供商ID。
+        :type idp_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class KeystoneListProtocolsRequest:
         身份提供商ID。
 
         :param idp_id: The idp_id of this KeystoneListProtocolsRequest.
-        :type: str
+        :type idp_id: str
         """
         self._idp_id = idp_id
 

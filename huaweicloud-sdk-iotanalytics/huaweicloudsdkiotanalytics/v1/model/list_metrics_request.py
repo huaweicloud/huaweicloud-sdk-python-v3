@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMetricsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListMetricsRequest:
     }
 
     def __init__(self, data_store_id=None, body=None):
-        """ListMetricsRequest - a model defined in huaweicloud sdk"""
+        """ListMetricsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param data_store_id: 存储ID
+        :type data_store_id: str
+        :param body: Body of the ListMetricsRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.GetMetricsRequest`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListMetricsRequest:
         存储ID
 
         :param data_store_id: The data_store_id of this ListMetricsRequest.
-        :type: str
+        :type data_store_id: str
         """
         self._data_store_id = data_store_id
 
@@ -72,7 +79,7 @@ class ListMetricsRequest:
 
 
         :return: The body of this ListMetricsRequest.
-        :rtype: GetMetricsRequest
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.GetMetricsRequest`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ListMetricsRequest:
 
 
         :param body: The body of this ListMetricsRequest.
-        :type: GetMetricsRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.GetMetricsRequest`
         """
         self._body = body
 

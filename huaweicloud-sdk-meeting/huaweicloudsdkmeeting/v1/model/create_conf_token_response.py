@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateConfTokenResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateConfTokenResponse(SdkResponse):
     }
 
     def __init__(self, data=None, address_token=None, gloabl_public_ip=None):
-        """CreateConfTokenResponse - a model defined in huaweicloud sdk"""
+        """CreateConfTokenResponse
+
+        The model defined in huaweicloud sdk
+
+        :param data: 
+        :type data: :class:`huaweicloudsdkmeeting.v1.TokenInfo`
+        :param address_token: 地址本查询临时Token。
+        :type address_token: str
+        :param gloabl_public_ip: global外网IP。
+        :type gloabl_public_ip: str
+        """
         
         super(CreateConfTokenResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class CreateConfTokenResponse(SdkResponse):
 
 
         :return: The data of this CreateConfTokenResponse.
-        :rtype: TokenInfo
+        :rtype: :class:`huaweicloudsdkmeeting.v1.TokenInfo`
         """
         return self._data
 
@@ -66,7 +75,7 @@ class CreateConfTokenResponse(SdkResponse):
 
 
         :param data: The data of this CreateConfTokenResponse.
-        :type: TokenInfo
+        :type data: :class:`huaweicloudsdkmeeting.v1.TokenInfo`
         """
         self._data = data
 
@@ -88,7 +97,7 @@ class CreateConfTokenResponse(SdkResponse):
         地址本查询临时Token。
 
         :param address_token: The address_token of this CreateConfTokenResponse.
-        :type: str
+        :type address_token: str
         """
         self._address_token = address_token
 
@@ -110,7 +119,7 @@ class CreateConfTokenResponse(SdkResponse):
         global外网IP。
 
         :param gloabl_public_ip: The gloabl_public_ip of this CreateConfTokenResponse.
-        :type: str
+        :type gloabl_public_ip: str
         """
         self._gloabl_public_ip = gloabl_public_ip
 

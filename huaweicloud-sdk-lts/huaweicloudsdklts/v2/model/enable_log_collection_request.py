@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnableLogCollectionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class EnableLogCollectionRequest:
     }
 
     def __init__(self):
-        """EnableLogCollectionRequest - a model defined in huaweicloud sdk"""
+        """EnableLogCollectionRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListHostRouteResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListHostRouteResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListHostRouteResponse - a model defined in huaweicloud sdk"""
+        """ListHostRouteResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 数量
+        :type total: int
+        :param items: 路由信息body
+        :type items: list[:class:`huaweicloudsdkwaf.v1.RouteBody`]
+        """
         
         super(ListHostRouteResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ListHostRouteResponse(SdkResponse):
         数量
 
         :param total: The total of this ListHostRouteResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ListHostRouteResponse(SdkResponse):
         路由信息body
 
         :return: The items of this ListHostRouteResponse.
-        :rtype: list[RouteBody]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.RouteBody`]
         """
         return self._items
 
@@ -85,7 +92,7 @@ class ListHostRouteResponse(SdkResponse):
         路由信息body
 
         :param items: The items of this ListHostRouteResponse.
-        :type: list[RouteBody]
+        :type items: list[:class:`huaweicloudsdkwaf.v1.RouteBody`]
         """
         self._items = items
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowHistoryTasksResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowHistoryTasksResponse(SdkResponse):
     }
 
     def __init__(self, total=None, tasks=None):
-        """ShowHistoryTasksResponse - a model defined in huaweicloud sdk"""
+        """ShowHistoryTasksResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总共的任务个数。
+        :type total: int
+        :param tasks: 日志列表数据
+        :type tasks: list[:class:`huaweicloudsdkcdn.v1.TasksObject`]
+        """
         
         super(ShowHistoryTasksResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowHistoryTasksResponse(SdkResponse):
         总共的任务个数。
 
         :param total: The total of this ShowHistoryTasksResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -74,7 +81,7 @@ class ShowHistoryTasksResponse(SdkResponse):
         日志列表数据
 
         :return: The tasks of this ShowHistoryTasksResponse.
-        :rtype: list[TasksObject]
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.TasksObject`]
         """
         return self._tasks
 
@@ -85,7 +92,7 @@ class ShowHistoryTasksResponse(SdkResponse):
         日志列表数据
 
         :param tasks: The tasks of this ShowHistoryTasksResponse.
-        :type: list[TasksObject]
+        :type tasks: list[:class:`huaweicloudsdkcdn.v1.TasksObject`]
         """
         self._tasks = tasks
 

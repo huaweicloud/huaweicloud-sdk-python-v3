@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ModifyInstancePasswordBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ModifyInstancePasswordBody:
     }
 
     def __init__(self, old_password=None, new_password=None):
-        """ModifyInstancePasswordBody - a model defined in huaweicloud sdk"""
+        """ModifyInstancePasswordBody
+
+        The model defined in huaweicloud sdk
+
+        :param old_password: 旧密码
+        :type old_password: str
+        :param new_password: 新密码
+        :type new_password: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ModifyInstancePasswordBody:
         旧密码
 
         :param old_password: The old_password of this ModifyInstancePasswordBody.
-        :type: str
+        :type old_password: str
         """
         self._old_password = old_password
 
@@ -85,7 +92,7 @@ class ModifyInstancePasswordBody:
         新密码
 
         :param new_password: The new_password of this ModifyInstancePasswordBody.
-        :type: str
+        :type new_password: str
         """
         self._new_password = new_password
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEditingJobReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CreateEditingJobReq:
     }
 
     def __init__(self, edit_type=None, clips=None, concats=None, concat=None, mix=None, input=None, output_setting=None, image_watermark_settings=None, edit_settings=None, user_data=None):
-        """CreateEditingJobReq - a model defined in huaweicloud sdk"""
+        """CreateEditingJobReq
+
+        The model defined in huaweicloud sdk
+
+        :param edit_type: 剪辑任务类型。取值如下：\&quot;CLIP\&quot;,\&quot;CONCAT\&quot;,\&quot;CONCATS\&quot;,\&quot;MIX\&quot;。
+        :type edit_type: list[str]
+        :param clips: 剪切信息
+        :type clips: list[:class:`huaweicloudsdkmpc.v1.ClipInfo`]
+        :param concats: 多拼接任务信息，支持多个拼接输出，与concat参数只能二选一。 
+        :type concats: list[:class:`huaweicloudsdkmpc.v1.MultiConcatInfo`]
+        :param concat: 
+        :type concat: :class:`huaweicloudsdkmpc.v1.ConcatInfo`
+        :param mix: 
+        :type mix: :class:`huaweicloudsdkmpc.v1.MixInfo`
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output_setting: 
+        :type output_setting: :class:`huaweicloudsdkmpc.v1.OutputSetting`
+        :param image_watermark_settings: 水印信息。
+        :type image_watermark_settings: list[:class:`huaweicloudsdkmpc.v1.ImageWatermarkSetting`]
+        :param edit_settings: 媒体处理配置，当edit_type为空时该参数生效。会根据该参数配置，对input参数指定的源文件进行处理 
+        :type edit_settings: list[:class:`huaweicloudsdkmpc.v1.EditSetting`]
+        :param user_data: 用户自定义数据。
+        :type user_data: str
+        """
         
         
 
@@ -103,7 +126,7 @@ class CreateEditingJobReq:
         剪辑任务类型。取值如下：\"CLIP\",\"CONCAT\",\"CONCATS\",\"MIX\"。
 
         :param edit_type: The edit_type of this CreateEditingJobReq.
-        :type: list[str]
+        :type edit_type: list[str]
         """
         self._edit_type = edit_type
 
@@ -114,7 +137,7 @@ class CreateEditingJobReq:
         剪切信息
 
         :return: The clips of this CreateEditingJobReq.
-        :rtype: list[ClipInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.ClipInfo`]
         """
         return self._clips
 
@@ -125,7 +148,7 @@ class CreateEditingJobReq:
         剪切信息
 
         :param clips: The clips of this CreateEditingJobReq.
-        :type: list[ClipInfo]
+        :type clips: list[:class:`huaweicloudsdkmpc.v1.ClipInfo`]
         """
         self._clips = clips
 
@@ -136,7 +159,7 @@ class CreateEditingJobReq:
         多拼接任务信息，支持多个拼接输出，与concat参数只能二选一。 
 
         :return: The concats of this CreateEditingJobReq.
-        :rtype: list[MultiConcatInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.MultiConcatInfo`]
         """
         return self._concats
 
@@ -147,7 +170,7 @@ class CreateEditingJobReq:
         多拼接任务信息，支持多个拼接输出，与concat参数只能二选一。 
 
         :param concats: The concats of this CreateEditingJobReq.
-        :type: list[MultiConcatInfo]
+        :type concats: list[:class:`huaweicloudsdkmpc.v1.MultiConcatInfo`]
         """
         self._concats = concats
 
@@ -157,7 +180,7 @@ class CreateEditingJobReq:
 
 
         :return: The concat of this CreateEditingJobReq.
-        :rtype: ConcatInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ConcatInfo`
         """
         return self._concat
 
@@ -167,7 +190,7 @@ class CreateEditingJobReq:
 
 
         :param concat: The concat of this CreateEditingJobReq.
-        :type: ConcatInfo
+        :type concat: :class:`huaweicloudsdkmpc.v1.ConcatInfo`
         """
         self._concat = concat
 
@@ -177,7 +200,7 @@ class CreateEditingJobReq:
 
 
         :return: The mix of this CreateEditingJobReq.
-        :rtype: MixInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.MixInfo`
         """
         return self._mix
 
@@ -187,7 +210,7 @@ class CreateEditingJobReq:
 
 
         :param mix: The mix of this CreateEditingJobReq.
-        :type: MixInfo
+        :type mix: :class:`huaweicloudsdkmpc.v1.MixInfo`
         """
         self._mix = mix
 
@@ -197,7 +220,7 @@ class CreateEditingJobReq:
 
 
         :return: The input of this CreateEditingJobReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -207,7 +230,7 @@ class CreateEditingJobReq:
 
 
         :param input: The input of this CreateEditingJobReq.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -217,7 +240,7 @@ class CreateEditingJobReq:
 
 
         :return: The output_setting of this CreateEditingJobReq.
-        :rtype: OutputSetting
+        :rtype: :class:`huaweicloudsdkmpc.v1.OutputSetting`
         """
         return self._output_setting
 
@@ -227,7 +250,7 @@ class CreateEditingJobReq:
 
 
         :param output_setting: The output_setting of this CreateEditingJobReq.
-        :type: OutputSetting
+        :type output_setting: :class:`huaweicloudsdkmpc.v1.OutputSetting`
         """
         self._output_setting = output_setting
 
@@ -238,7 +261,7 @@ class CreateEditingJobReq:
         水印信息。
 
         :return: The image_watermark_settings of this CreateEditingJobReq.
-        :rtype: list[ImageWatermarkSetting]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.ImageWatermarkSetting`]
         """
         return self._image_watermark_settings
 
@@ -249,7 +272,7 @@ class CreateEditingJobReq:
         水印信息。
 
         :param image_watermark_settings: The image_watermark_settings of this CreateEditingJobReq.
-        :type: list[ImageWatermarkSetting]
+        :type image_watermark_settings: list[:class:`huaweicloudsdkmpc.v1.ImageWatermarkSetting`]
         """
         self._image_watermark_settings = image_watermark_settings
 
@@ -260,7 +283,7 @@ class CreateEditingJobReq:
         媒体处理配置，当edit_type为空时该参数生效。会根据该参数配置，对input参数指定的源文件进行处理 
 
         :return: The edit_settings of this CreateEditingJobReq.
-        :rtype: list[EditSetting]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.EditSetting`]
         """
         return self._edit_settings
 
@@ -271,7 +294,7 @@ class CreateEditingJobReq:
         媒体处理配置，当edit_type为空时该参数生效。会根据该参数配置，对input参数指定的源文件进行处理 
 
         :param edit_settings: The edit_settings of this CreateEditingJobReq.
-        :type: list[EditSetting]
+        :type edit_settings: list[:class:`huaweicloudsdkmpc.v1.EditSetting`]
         """
         self._edit_settings = edit_settings
 
@@ -293,7 +316,7 @@ class CreateEditingJobReq:
         用户自定义数据。
 
         :param user_data: The user_data of this CreateEditingJobReq.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 

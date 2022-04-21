@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateConsumerGroupRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateConsumerGroupRequest:
     }
 
     def __init__(self, queue_id=None, body=None):
-        """CreateConsumerGroupRequest - a model defined in huaweicloud sdk"""
+        """CreateConsumerGroupRequest
+
+        The model defined in huaweicloud sdk
+
+        :param queue_id: 指定的队列ID
+        :type queue_id: str
+        :param body: Body of the CreateConsumerGroupRequest
+        :type body: :class:`huaweicloudsdkdms.v2.CreateConsumerGroupReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateConsumerGroupRequest:
         指定的队列ID
 
         :param queue_id: The queue_id of this CreateConsumerGroupRequest.
-        :type: str
+        :type queue_id: str
         """
         self._queue_id = queue_id
 
@@ -72,7 +79,7 @@ class CreateConsumerGroupRequest:
 
 
         :return: The body of this CreateConsumerGroupRequest.
-        :rtype: CreateConsumerGroupReq
+        :rtype: :class:`huaweicloudsdkdms.v2.CreateConsumerGroupReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateConsumerGroupRequest:
 
 
         :param body: The body of this CreateConsumerGroupRequest.
-        :type: CreateConsumerGroupReq
+        :type body: :class:`huaweicloudsdkdms.v2.CreateConsumerGroupReq`
         """
         self._body = body
 

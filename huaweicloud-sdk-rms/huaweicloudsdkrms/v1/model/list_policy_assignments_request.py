@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPolicyAssignmentsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListPolicyAssignmentsRequest:
     }
 
     def __init__(self):
-        """ListPolicyAssignmentsRequest - a model defined in huaweicloud sdk"""
+        """ListPolicyAssignmentsRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

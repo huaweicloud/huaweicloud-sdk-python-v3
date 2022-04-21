@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExecuteDeploymentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ExecuteDeploymentRequest:
     }
 
     def __init__(self, deployment_id=None):
-        """ExecuteDeploymentRequest - a model defined in huaweicloud sdk"""
+        """ExecuteDeploymentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param deployment_id: 部署计划ID。  约束： - 该接口只能执行指定名称（name）创建的部署计划。
+        :type deployment_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ExecuteDeploymentRequest:
         部署计划ID。  约束： - 该接口只能执行指定名称（name）创建的部署计划。
 
         :param deployment_id: The deployment_id of this ExecuteDeploymentRequest.
-        :type: str
+        :type deployment_id: str
         """
         self._deployment_id = deployment_id
 

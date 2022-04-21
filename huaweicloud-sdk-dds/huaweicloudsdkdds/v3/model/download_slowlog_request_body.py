@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DownloadSlowlogRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DownloadSlowlogRequestBody:
     }
 
     def __init__(self, file_name_list=None, node_id_list=None):
-        """DownloadSlowlogRequestBody - a model defined in huaweicloud sdk"""
+        """DownloadSlowlogRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param file_name_list: - 需要下载的文件的文件名列表。
+        :type file_name_list: list[str]
+        :param node_id_list: 节点ID列表，取空值，表示查询实例下所有允许查询的节点。使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群下面的 shard节点 - 副本集、单节点下面的所有节点
+        :type node_id_list: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class DownloadSlowlogRequestBody:
         - 需要下载的文件的文件名列表。
 
         :param file_name_list: The file_name_list of this DownloadSlowlogRequestBody.
-        :type: list[str]
+        :type file_name_list: list[str]
         """
         self._file_name_list = file_name_list
 
@@ -85,7 +92,7 @@ class DownloadSlowlogRequestBody:
         节点ID列表，取空值，表示查询实例下所有允许查询的节点。使用请参考《DDS API参考》的“查询实例列表和详情”响应消息表“nodes 数据结构说明”的“id”。允许查询的节点如下： - 集群下面的 shard节点 - 副本集、单节点下面的所有节点
 
         :param node_id_list: The node_id_list of this DownloadSlowlogRequestBody.
-        :type: list[str]
+        :type node_id_list: list[str]
         """
         self._node_id_list = node_id_list
 

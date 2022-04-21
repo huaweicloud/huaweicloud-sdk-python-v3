@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRomaAppRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateRomaAppRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateRomaAppRequest - a model defined in huaweicloud sdk"""
+        """CreateRomaAppRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param body: Body of the CreateRomaAppRequest
+        :type body: :class:`huaweicloudsdkroma.v2.CreateAppReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateRomaAppRequest:
         实例ID
 
         :param instance_id: The instance_id of this CreateRomaAppRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class CreateRomaAppRequest:
 
 
         :return: The body of this CreateRomaAppRequest.
-        :rtype: CreateAppReq
+        :rtype: :class:`huaweicloudsdkroma.v2.CreateAppReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateRomaAppRequest:
 
 
         :param body: The body of this CreateRomaAppRequest.
-        :type: CreateAppReq
+        :type body: :class:`huaweicloudsdkroma.v2.CreateAppReq`
         """
         self._body = body
 

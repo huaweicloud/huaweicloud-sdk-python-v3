@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BalancerActiveWindow:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BalancerActiveWindow:
     }
 
     def __init__(self, start_time=None, stop_time=None):
-        """BalancerActiveWindow - a model defined in huaweicloud sdk"""
+        """BalancerActiveWindow
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 活动时间窗开始时间。
+        :type start_time: str
+        :param stop_time: 活动时间窗结束时间。
+        :type stop_time: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class BalancerActiveWindow:
         活动时间窗开始时间。
 
         :param start_time: The start_time of this BalancerActiveWindow.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -85,7 +92,7 @@ class BalancerActiveWindow:
         活动时间窗结束时间。
 
         :param stop_time: The stop_time of this BalancerActiveWindow.
-        :type: str
+        :type stop_time: str
         """
         self._stop_time = stop_time
 

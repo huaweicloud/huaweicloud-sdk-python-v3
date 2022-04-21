@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateClusterTagsReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateClusterTagsReq:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchCreateClusterTagsReq - a model defined in huaweicloud sdk"""
+        """BatchCreateClusterTagsReq
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作标识：仅限于create（创建）。
+        :type action: str
+        :param tags: 标签列表。
+        :type tags: list[:class:`huaweicloudsdkmrs.v1.Tag`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class BatchCreateClusterTagsReq:
         操作标识：仅限于create（创建）。
 
         :param action: The action of this BatchCreateClusterTagsReq.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -72,7 +79,7 @@ class BatchCreateClusterTagsReq:
         标签列表。
 
         :return: The tags of this BatchCreateClusterTagsReq.
-        :rtype: list[Tag]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.Tag`]
         """
         return self._tags
 
@@ -83,7 +90,7 @@ class BatchCreateClusterTagsReq:
         标签列表。
 
         :param tags: The tags of this BatchCreateClusterTagsReq.
-        :type: list[Tag]
+        :type tags: list[:class:`huaweicloudsdkmrs.v1.Tag`]
         """
         self._tags = tags
 

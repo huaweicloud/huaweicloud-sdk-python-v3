@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QuerySeriesOptionParam:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class QuerySeriesOptionParam:
     }
 
     def __init__(self, namespace=None, metric_name=None, dimensions=None):
-        """QuerySeriesOptionParam - a model defined in huaweicloud sdk"""
+        """QuerySeriesOptionParam
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: 时间序列命名空间。 取值范围：PAAS.CONTAINER、PAAS.NODE、PAAS.SLA、PAAS.AGGR、CUSTOMMETRICS等。 PAAS.CONTAINER：应用时间序列命名空间； PAAS.NODE：节点时间序列命名空间； PAAS.SLA：SLA时间序列命名空间； PAAS.AGGR：集群时间序列命名空间； CUSTOMMETRICS：自定义时间序列命名空间。
+        :type namespace: str
+        :param metric_name: 时间序列名称，名称长度取值范围为1~255个字符。 取值范围： AOM提供的基础时间序列名称，cpuUsage、cpuCoreUsed等： cpuUage：cpu使用率； cpuCoreUsed：cpu内核占用； 用户上报的自定义时间序列名称。
+        :type metric_name: str
+        :param dimensions: 时间序列维度列表。 可通过/v2/{project_id}/series接口中namespace+metric_name， 查询当前监控的时间序列名称的时间序列维度列表。
+        :type dimensions: list[:class:`huaweicloudsdkaom.v2.DimensionSeries`]
+        """
         
         
 
@@ -67,7 +76,7 @@ class QuerySeriesOptionParam:
         时间序列命名空间。 取值范围：PAAS.CONTAINER、PAAS.NODE、PAAS.SLA、PAAS.AGGR、CUSTOMMETRICS等。 PAAS.CONTAINER：应用时间序列命名空间； PAAS.NODE：节点时间序列命名空间； PAAS.SLA：SLA时间序列命名空间； PAAS.AGGR：集群时间序列命名空间； CUSTOMMETRICS：自定义时间序列命名空间。
 
         :param namespace: The namespace of this QuerySeriesOptionParam.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -89,7 +98,7 @@ class QuerySeriesOptionParam:
         时间序列名称，名称长度取值范围为1~255个字符。 取值范围： AOM提供的基础时间序列名称，cpuUsage、cpuCoreUsed等： cpuUage：cpu使用率； cpuCoreUsed：cpu内核占用； 用户上报的自定义时间序列名称。
 
         :param metric_name: The metric_name of this QuerySeriesOptionParam.
-        :type: str
+        :type metric_name: str
         """
         self._metric_name = metric_name
 
@@ -100,7 +109,7 @@ class QuerySeriesOptionParam:
         时间序列维度列表。 可通过/v2/{project_id}/series接口中namespace+metric_name， 查询当前监控的时间序列名称的时间序列维度列表。
 
         :return: The dimensions of this QuerySeriesOptionParam.
-        :rtype: list[DimensionSeries]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.DimensionSeries`]
         """
         return self._dimensions
 
@@ -111,7 +120,7 @@ class QuerySeriesOptionParam:
         时间序列维度列表。 可通过/v2/{project_id}/series接口中namespace+metric_name， 查询当前监控的时间序列名称的时间序列维度列表。
 
         :param dimensions: The dimensions of this QuerySeriesOptionParam.
-        :type: list[DimensionSeries]
+        :type dimensions: list[:class:`huaweicloudsdkaom.v2.DimensionSeries`]
         """
         self._dimensions = dimensions
 

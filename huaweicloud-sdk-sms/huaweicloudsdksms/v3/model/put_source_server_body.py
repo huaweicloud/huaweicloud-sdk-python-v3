@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PutSourceServerBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PutSourceServerBody:
     }
 
     def __init__(self, name=None, migprojectid=None, disks=None, volume_groups=None):
-        """PutSourceServerBody - a model defined in huaweicloud sdk"""
+        """PutSourceServerBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 源端服务器修改后的名字
+        :type name: str
+        :param migprojectid: 源端服务器修改后所属的迁移项目id
+        :type migprojectid: str
+        :param disks: 磁盘
+        :type disks: list[:class:`huaweicloudsdksms.v3.PutDisk`]
+        :param volume_groups: 卷组
+        :type volume_groups: list[:class:`huaweicloudsdksms.v3.PutVolumeGroups`]
+        """
         
         
 
@@ -73,7 +84,7 @@ class PutSourceServerBody:
         源端服务器修改后的名字
 
         :param name: The name of this PutSourceServerBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -95,7 +106,7 @@ class PutSourceServerBody:
         源端服务器修改后所属的迁移项目id
 
         :param migprojectid: The migprojectid of this PutSourceServerBody.
-        :type: str
+        :type migprojectid: str
         """
         self._migprojectid = migprojectid
 
@@ -106,7 +117,7 @@ class PutSourceServerBody:
         磁盘
 
         :return: The disks of this PutSourceServerBody.
-        :rtype: list[PutDisk]
+        :rtype: list[:class:`huaweicloudsdksms.v3.PutDisk`]
         """
         return self._disks
 
@@ -117,7 +128,7 @@ class PutSourceServerBody:
         磁盘
 
         :param disks: The disks of this PutSourceServerBody.
-        :type: list[PutDisk]
+        :type disks: list[:class:`huaweicloudsdksms.v3.PutDisk`]
         """
         self._disks = disks
 
@@ -128,7 +139,7 @@ class PutSourceServerBody:
         卷组
 
         :return: The volume_groups of this PutSourceServerBody.
-        :rtype: list[PutVolumeGroups]
+        :rtype: list[:class:`huaweicloudsdksms.v3.PutVolumeGroups`]
         """
         return self._volume_groups
 
@@ -139,7 +150,7 @@ class PutSourceServerBody:
         卷组
 
         :param volume_groups: The volume_groups of this PutSourceServerBody.
-        :type: list[PutVolumeGroups]
+        :type volume_groups: list[:class:`huaweicloudsdksms.v3.PutVolumeGroups`]
         """
         self._volume_groups = volume_groups
 

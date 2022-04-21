@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryMatchItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class QueryMatchItem:
     }
 
     def __init__(self, key=None, value=None):
-        """QueryMatchItem - a model defined in huaweicloud sdk"""
+        """QueryMatchItem
+
+        The model defined in huaweicloud sdk
+
+        :param key: 取值为“instance_name”或“instance_id”，分别表示按实例名称或按实例ID匹配查询。
+        :type key: str
+        :param value: 待匹配的实例名称或实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class QueryMatchItem:
         取值为“instance_name”或“instance_id”，分别表示按实例名称或按实例ID匹配查询。
 
         :param key: The key of this QueryMatchItem.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class QueryMatchItem:
         待匹配的实例名称或实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param value: The value of this QueryMatchItem.
-        :type: str
+        :type value: str
         """
         self._value = value
 

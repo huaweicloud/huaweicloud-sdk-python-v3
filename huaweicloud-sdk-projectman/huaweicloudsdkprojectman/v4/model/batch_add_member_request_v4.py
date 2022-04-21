@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddMemberRequestV4:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchAddMemberRequestV4:
     }
 
     def __init__(self, role_id=None, user_id=None):
-        """BatchAddMemberRequestV4 - a model defined in huaweicloud sdk"""
+        """BatchAddMemberRequestV4
+
+        The model defined in huaweicloud sdk
+
+        :param role_id: 成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
+        :type role_id: int
+        :param user_id: 用户32位uuid
+        :type user_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchAddMemberRequestV4:
         成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
         :param role_id: The role_id of this BatchAddMemberRequestV4.
-        :type: int
+        :type role_id: int
         """
         self._role_id = role_id
 
@@ -84,7 +91,7 @@ class BatchAddMemberRequestV4:
         用户32位uuid
 
         :param user_id: The user_id of this BatchAddMemberRequestV4.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPoolsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListPoolsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, pools=None):
-        """ListPoolsResponse - a model defined in huaweicloud sdk"""
+        """ListPoolsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID。  注：自动生成 。
+        :type request_id: str
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
+        :param pools: 后端服务器组列表。
+        :type pools: list[:class:`huaweicloudsdkelb.v3.Pool`]
+        """
         
         super(ListPoolsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListPoolsResponse(SdkResponse):
         请求ID。  注：自动生成 。
 
         :param request_id: The request_id of this ListPoolsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -78,7 +87,7 @@ class ListPoolsResponse(SdkResponse):
 
 
         :return: The page_info of this ListPoolsResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class ListPoolsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListPoolsResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
         """
         self._page_info = page_info
 
@@ -99,7 +108,7 @@ class ListPoolsResponse(SdkResponse):
         后端服务器组列表。
 
         :return: The pools of this ListPoolsResponse.
-        :rtype: list[Pool]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.Pool`]
         """
         return self._pools
 
@@ -110,7 +119,7 @@ class ListPoolsResponse(SdkResponse):
         后端服务器组列表。
 
         :param pools: The pools of this ListPoolsResponse.
-        :type: list[Pool]
+        :type pools: list[:class:`huaweicloudsdkelb.v3.Pool`]
         """
         self._pools = pools
 

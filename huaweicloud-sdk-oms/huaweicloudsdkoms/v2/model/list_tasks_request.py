@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTasksRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListTasksRequest:
     }
 
     def __init__(self, group_id=None, limit=None, offset=None, status=None):
-        """ListTasksRequest - a model defined in huaweicloud sdk"""
+        """ListTasksRequest
+
+        The model defined in huaweicloud sdk
+
+        :param group_id: 迁移任务组group_id
+        :type group_id: str
+        :param limit: 查询返回迁移任务列表当前页面的数量，默认查询10条。 最多返回100条迁移任务信息。
+        :type limit: int
+        :param offset: 起始的任务序号，默认为0。 取值大于等于0，取值为0时从第一条开始查询。
+        :type offset: int
+        :param status: 迁移任务状态（无该参数时代表查询所有状态的任务）： 1：等待调度 2：正在执行 3：停止 4：失败 5：成功
+        :type status: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListTasksRequest:
         迁移任务组group_id
 
         :param group_id: The group_id of this ListTasksRequest.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -95,7 +106,7 @@ class ListTasksRequest:
         查询返回迁移任务列表当前页面的数量，默认查询10条。 最多返回100条迁移任务信息。
 
         :param limit: The limit of this ListTasksRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class ListTasksRequest:
         起始的任务序号，默认为0。 取值大于等于0，取值为0时从第一条开始查询。
 
         :param offset: The offset of this ListTasksRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -139,7 +150,7 @@ class ListTasksRequest:
         迁移任务状态（无该参数时代表查询所有状态的任务）： 1：等待调度 2：正在执行 3：停止 4：失败 5：成功
 
         :param status: The status of this ListTasksRequest.
-        :type: int
+        :type status: int
         """
         self._status = status
 

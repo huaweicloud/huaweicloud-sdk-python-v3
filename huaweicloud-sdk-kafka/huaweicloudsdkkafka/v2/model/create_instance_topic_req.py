@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceTopicReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class CreateInstanceTopicReq:
     }
 
     def __init__(self, id=None, replication=None, sync_message_flush=None, partition=None, sync_replication=None, retention_time=None):
-        """CreateInstanceTopicReq - a model defined in huaweicloud sdk"""
+        """CreateInstanceTopicReq
+
+        The model defined in huaweicloud sdk
+
+        :param id: topic名称，长度为4-64，以字母开头且只支持大小写字母、中横线、下划线以及数字。
+        :type id: str
+        :param replication: 副本数，配置数据的可靠性。 取值范围：1-3。
+        :type replication: int
+        :param sync_message_flush: 是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
+        :type sync_message_flush: bool
+        :param partition: topic分区数，设置消费的并发数。 取值范围：1-100。
+        :type partition: int
+        :param sync_replication: 是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks&#x3D;-1，否则不生效，默认关闭。
+        :type sync_replication: bool
+        :param retention_time: 消息老化时间。默认值为72。取值范围1~168，单位小时。
+        :type retention_time: int
+        """
         
         
 
@@ -82,7 +97,7 @@ class CreateInstanceTopicReq:
         topic名称，长度为4-64，以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
         :param id: The id of this CreateInstanceTopicReq.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -104,7 +119,7 @@ class CreateInstanceTopicReq:
         副本数，配置数据的可靠性。 取值范围：1-3。
 
         :param replication: The replication of this CreateInstanceTopicReq.
-        :type: int
+        :type replication: int
         """
         self._replication = replication
 
@@ -126,7 +141,7 @@ class CreateInstanceTopicReq:
         是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
 
         :param sync_message_flush: The sync_message_flush of this CreateInstanceTopicReq.
-        :type: bool
+        :type sync_message_flush: bool
         """
         self._sync_message_flush = sync_message_flush
 
@@ -148,7 +163,7 @@ class CreateInstanceTopicReq:
         topic分区数，设置消费的并发数。 取值范围：1-100。
 
         :param partition: The partition of this CreateInstanceTopicReq.
-        :type: int
+        :type partition: int
         """
         self._partition = partition
 
@@ -170,7 +185,7 @@ class CreateInstanceTopicReq:
         是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效，默认关闭。
 
         :param sync_replication: The sync_replication of this CreateInstanceTopicReq.
-        :type: bool
+        :type sync_replication: bool
         """
         self._sync_replication = sync_replication
 
@@ -192,7 +207,7 @@ class CreateInstanceTopicReq:
         消息老化时间。默认值为72。取值范围1~168，单位小时。
 
         :param retention_time: The retention_time of this CreateInstanceTopicReq.
-        :type: int
+        :type retention_time: int
         """
         self._retention_time = retention_time
 

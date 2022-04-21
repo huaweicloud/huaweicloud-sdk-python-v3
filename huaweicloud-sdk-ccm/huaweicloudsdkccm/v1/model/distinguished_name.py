@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DistinguishedName:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class DistinguishedName:
     }
 
     def __init__(self, common_name=None, country=None, state=None, locality=None, organization=None, organizational_unit=None):
-        """DistinguishedName - a model defined in huaweicloud sdk"""
+        """DistinguishedName
+
+        The model defined in huaweicloud sdk
+
+        :param common_name: 证书通用名称（CN）。
+        :type common_name: str
+        :param country: 国家编码，需符合正则\&quot;**[A-Za-z]{2}**\&quot;。
+        :type country: str
+        :param state: 省市名称。
+        :type state: str
+        :param locality: 地区名称。
+        :type locality: str
+        :param organization: 组织名称。
+        :type organization: str
+        :param organizational_unit: 组织单元名称。
+        :type organizational_unit: str
+        """
         
         
 
@@ -77,7 +92,7 @@ class DistinguishedName:
         证书通用名称（CN）。
 
         :param common_name: The common_name of this DistinguishedName.
-        :type: str
+        :type common_name: str
         """
         self._common_name = common_name
 
@@ -99,7 +114,7 @@ class DistinguishedName:
         国家编码，需符合正则\"**[A-Za-z]{2}**\"。
 
         :param country: The country of this DistinguishedName.
-        :type: str
+        :type country: str
         """
         self._country = country
 
@@ -121,7 +136,7 @@ class DistinguishedName:
         省市名称。
 
         :param state: The state of this DistinguishedName.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -143,7 +158,7 @@ class DistinguishedName:
         地区名称。
 
         :param locality: The locality of this DistinguishedName.
-        :type: str
+        :type locality: str
         """
         self._locality = locality
 
@@ -165,7 +180,7 @@ class DistinguishedName:
         组织名称。
 
         :param organization: The organization of this DistinguishedName.
-        :type: str
+        :type organization: str
         """
         self._organization = organization
 
@@ -187,7 +202,7 @@ class DistinguishedName:
         组织单元名称。
 
         :param organizational_unit: The organizational_unit of this DistinguishedName.
-        :type: str
+        :type organizational_unit: str
         """
         self._organizational_unit = organizational_unit
 

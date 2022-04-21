@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RespHostProperty:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class RespHostProperty:
     }
 
     def __init__(self, host_type=None, host_type_name=None, vcpus=None, cores=None, sockets=None, memory=None, available_instance_capacities=None):
-        """RespHostProperty - a model defined in huaweicloud sdk"""
+        """RespHostProperty
+
+        The model defined in huaweicloud sdk
+
+        :param host_type: 专属主机类型。
+        :type host_type: str
+        :param host_type_name: 专属主机类型的名称。
+        :type host_type_name: str
+        :param vcpus: 专属主机的vCPUs个数。
+        :type vcpus: int
+        :param cores: 专属主机的物理核数。
+        :type cores: int
+        :param sockets: 专属主机的物理套接字数量。
+        :type sockets: int
+        :param memory: 专属主机的物理内存大小。
+        :type memory: int
+        :param available_instance_capacities: 专属主机上创建的云服务器规格。
+        :type available_instance_capacities: list[:class:`huaweicloudsdkdeh.v1.RespInstanceCapacity`]
+        """
         
         
 
@@ -81,7 +98,7 @@ class RespHostProperty:
         专属主机类型。
 
         :param host_type: The host_type of this RespHostProperty.
-        :type: str
+        :type host_type: str
         """
         self._host_type = host_type
 
@@ -103,7 +120,7 @@ class RespHostProperty:
         专属主机类型的名称。
 
         :param host_type_name: The host_type_name of this RespHostProperty.
-        :type: str
+        :type host_type_name: str
         """
         self._host_type_name = host_type_name
 
@@ -125,7 +142,7 @@ class RespHostProperty:
         专属主机的vCPUs个数。
 
         :param vcpus: The vcpus of this RespHostProperty.
-        :type: int
+        :type vcpus: int
         """
         self._vcpus = vcpus
 
@@ -147,7 +164,7 @@ class RespHostProperty:
         专属主机的物理核数。
 
         :param cores: The cores of this RespHostProperty.
-        :type: int
+        :type cores: int
         """
         self._cores = cores
 
@@ -169,7 +186,7 @@ class RespHostProperty:
         专属主机的物理套接字数量。
 
         :param sockets: The sockets of this RespHostProperty.
-        :type: int
+        :type sockets: int
         """
         self._sockets = sockets
 
@@ -191,7 +208,7 @@ class RespHostProperty:
         专属主机的物理内存大小。
 
         :param memory: The memory of this RespHostProperty.
-        :type: int
+        :type memory: int
         """
         self._memory = memory
 
@@ -202,7 +219,7 @@ class RespHostProperty:
         专属主机上创建的云服务器规格。
 
         :return: The available_instance_capacities of this RespHostProperty.
-        :rtype: list[RespInstanceCapacity]
+        :rtype: list[:class:`huaweicloudsdkdeh.v1.RespInstanceCapacity`]
         """
         return self._available_instance_capacities
 
@@ -213,7 +230,7 @@ class RespHostProperty:
         专属主机上创建的云服务器规格。
 
         :param available_instance_capacities: The available_instance_capacities of this RespHostProperty.
-        :type: list[RespInstanceCapacity]
+        :type available_instance_capacities: list[:class:`huaweicloudsdkdeh.v1.RespInstanceCapacity`]
         """
         self._available_instance_capacities = available_instance_capacities
 

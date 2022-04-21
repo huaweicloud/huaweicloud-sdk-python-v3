@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicKey:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PublicKey:
     }
 
     def __init__(self, id=None, key=None, title=None):
-        """PublicKey - a model defined in huaweicloud sdk"""
+        """PublicKey
+
+        The model defined in huaweicloud sdk
+
+        :param id: 密钥id
+        :type id: str
+        :param key: 密钥
+        :type key: str
+        :param title: 密钥名称
+        :type title: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class PublicKey:
         密钥id
 
         :param id: The id of this PublicKey.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -87,7 +96,7 @@ class PublicKey:
         密钥
 
         :param key: The key of this PublicKey.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -109,7 +118,7 @@ class PublicKey:
         密钥名称
 
         :param title: The title of this PublicKey.
-        :type: str
+        :type title: str
         """
         self._title = title
 

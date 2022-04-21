@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValidateDictionaryResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ValidateDictionaryResponse(SdkResponse):
     }
 
     def __init__(self, name=None, code=None):
-        """ValidateDictionaryResponse - a model defined in huaweicloud sdk"""
+        """ValidateDictionaryResponse
+
+        The model defined in huaweicloud sdk
+
+        :param name: 字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
+        :type name: str
+        :param code: 字典编码 - 字符集：英文字母、数字、下划线和空格 - 约束：实例下唯一
+        :type code: str
+        """
         
         super(ValidateDictionaryResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ValidateDictionaryResponse(SdkResponse):
         字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
 
         :param name: The name of this ValidateDictionaryResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class ValidateDictionaryResponse(SdkResponse):
         字典编码 - 字符集：英文字母、数字、下划线和空格 - 约束：实例下唯一
 
         :param code: The code of this ValidateDictionaryResponse.
-        :type: str
+        :type code: str
         """
         self._code = code
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CloneServerBrief:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CloneServerBrief:
     }
 
     def __init__(self, vm_id=None, name=None):
-        """CloneServerBrief - a model defined in huaweicloud sdk"""
+        """CloneServerBrief
+
+        The model defined in huaweicloud sdk
+
+        :param vm_id: 克隆服务器ID
+        :type vm_id: str
+        :param name: 克隆虚拟机的名称
+        :type name: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class CloneServerBrief:
         克隆服务器ID
 
         :param vm_id: The vm_id of this CloneServerBrief.
-        :type: str
+        :type vm_id: str
         """
         self._vm_id = vm_id
 
@@ -85,7 +92,7 @@ class CloneServerBrief:
         克隆虚拟机的名称
 
         :param name: The name of this CloneServerBrief.
-        :type: str
+        :type name: str
         """
         self._name = name
 

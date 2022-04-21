@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeInstanceBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ResizeInstanceBody:
     }
 
     def __init__(self, spec_code=None, new_capacity=None, bss_param=None, reserved_ip=None, change_type=None, available_zones=None, node_list=None):
-        """ResizeInstanceBody - a model defined in huaweicloud sdk"""
+        """ResizeInstanceBody
+
+        The model defined in huaweicloud sdk
+
+        :param spec_code: 产品规格编码。具体查询方法如下：  - 方法一：查询产品介绍中的[实例规格](https://support.huaweicloud.com/productdesc-dcs/dcs-pd-0522002.html) - 方法二：登录分布式缓存的控制台界面，点击购买缓存实例，查找对应的实例规格名称 - 方法三：调用[查询产品规格](https://support.huaweicloud.com/api-dcs/ListFlavors.html)接口查询。
+        :type spec_code: str
+        :param new_capacity: 新的缓存实例规格，新的规格必须大于扩容前的规格，单位：GB。 取值包括：4，8，16，32，64 取值必须是当前产品支持的实例规格，请以实际为准。 
+        :type new_capacity: int
+        :param bss_param: 
+        :type bss_param: :class:`huaweicloudsdkdcs.v2.BssParamEntity`
+        :param reserved_ip: 需要保留的节点ip。cluster集群缩容时需要填写，不填写时系统将随机删除多余的分片
+        :type reserved_ip: list[str]
+        :param change_type: 变更类型，Redis 4.0或者5.0主备实例进行副本数变更时必选。 - createReplication: 添加副本 - deleteReplication: 删除副本 
+        :type change_type: str
+        :param available_zones: Redis 4.0或者5.0主备实例进行添加副本时必选，指定每个副本所在的可用区Code，使用前需要先确认该可用区资源是否售罄。  具体查询方法，请参考[查询可用区信息](https://support.huaweicloud.com/api-dcs/ListAvailableZones.html) 
+        :type available_zones: list[str]
+        :param node_list: Redis 4.0或者5.0主备实例进行删除副本时必选，指定需要删除的节点ID，目前仅支持一次删除一个副本。  节点ID查询方法，请参考[查询分片信息](https://support.huaweicloud.com/api-dcs/ListGroupReplicationInfo.html) 
+        :type node_list: list[str]
+        """
         
         
 
@@ -86,7 +103,7 @@ class ResizeInstanceBody:
         产品规格编码。具体查询方法如下：  - 方法一：查询产品介绍中的[实例规格](https://support.huaweicloud.com/productdesc-dcs/dcs-pd-0522002.html) - 方法二：登录分布式缓存的控制台界面，点击购买缓存实例，查找对应的实例规格名称 - 方法三：调用[查询产品规格](https://support.huaweicloud.com/api-dcs/ListFlavors.html)接口查询。
 
         :param spec_code: The spec_code of this ResizeInstanceBody.
-        :type: str
+        :type spec_code: str
         """
         self._spec_code = spec_code
 
@@ -108,7 +125,7 @@ class ResizeInstanceBody:
         新的缓存实例规格，新的规格必须大于扩容前的规格，单位：GB。 取值包括：4，8，16，32，64 取值必须是当前产品支持的实例规格，请以实际为准。 
 
         :param new_capacity: The new_capacity of this ResizeInstanceBody.
-        :type: int
+        :type new_capacity: int
         """
         self._new_capacity = new_capacity
 
@@ -118,7 +135,7 @@ class ResizeInstanceBody:
 
 
         :return: The bss_param of this ResizeInstanceBody.
-        :rtype: BssParamEntity
+        :rtype: :class:`huaweicloudsdkdcs.v2.BssParamEntity`
         """
         return self._bss_param
 
@@ -128,7 +145,7 @@ class ResizeInstanceBody:
 
 
         :param bss_param: The bss_param of this ResizeInstanceBody.
-        :type: BssParamEntity
+        :type bss_param: :class:`huaweicloudsdkdcs.v2.BssParamEntity`
         """
         self._bss_param = bss_param
 
@@ -150,7 +167,7 @@ class ResizeInstanceBody:
         需要保留的节点ip。cluster集群缩容时需要填写，不填写时系统将随机删除多余的分片
 
         :param reserved_ip: The reserved_ip of this ResizeInstanceBody.
-        :type: list[str]
+        :type reserved_ip: list[str]
         """
         self._reserved_ip = reserved_ip
 
@@ -172,7 +189,7 @@ class ResizeInstanceBody:
         变更类型，Redis 4.0或者5.0主备实例进行副本数变更时必选。 - createReplication: 添加副本 - deleteReplication: 删除副本 
 
         :param change_type: The change_type of this ResizeInstanceBody.
-        :type: str
+        :type change_type: str
         """
         self._change_type = change_type
 
@@ -194,7 +211,7 @@ class ResizeInstanceBody:
         Redis 4.0或者5.0主备实例进行添加副本时必选，指定每个副本所在的可用区Code，使用前需要先确认该可用区资源是否售罄。  具体查询方法，请参考[查询可用区信息](https://support.huaweicloud.com/api-dcs/ListAvailableZones.html) 
 
         :param available_zones: The available_zones of this ResizeInstanceBody.
-        :type: list[str]
+        :type available_zones: list[str]
         """
         self._available_zones = available_zones
 
@@ -216,7 +233,7 @@ class ResizeInstanceBody:
         Redis 4.0或者5.0主备实例进行删除副本时必选，指定需要删除的节点ID，目前仅支持一次删除一个副本。  节点ID查询方法，请参考[查询分片信息](https://support.huaweicloud.com/api-dcs/ListGroupReplicationInfo.html) 
 
         :param node_list: The node_list of this ResizeInstanceBody.
-        :type: list[str]
+        :type node_list: list[str]
         """
         self._node_list = node_list
 

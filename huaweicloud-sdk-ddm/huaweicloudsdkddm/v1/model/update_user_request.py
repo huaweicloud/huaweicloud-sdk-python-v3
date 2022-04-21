@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateUserRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateUserRequest:
     }
 
     def __init__(self, instance_id=None, username=None, body=None):
-        """UpdateUserRequest - a model defined in huaweicloud sdk"""
+        """UpdateUserRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID。
+        :type instance_id: str
+        :param username: 需要修改的DDM帐号名称。
+        :type username: str
+        :param body: Body of the UpdateUserRequest
+        :type body: :class:`huaweicloudsdkddm.v1.UpdateUserReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateUserRequest:
         DDM实例ID。
 
         :param instance_id: The instance_id of this UpdateUserRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateUserRequest:
         需要修改的DDM帐号名称。
 
         :param username: The username of this UpdateUserRequest.
-        :type: str
+        :type username: str
         """
         self._username = username
 
@@ -98,7 +107,7 @@ class UpdateUserRequest:
 
 
         :return: The body of this UpdateUserRequest.
-        :rtype: UpdateUserReq
+        :rtype: :class:`huaweicloudsdkddm.v1.UpdateUserReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateUserRequest:
 
 
         :param body: The body of this UpdateUserRequest.
-        :type: UpdateUserReq
+        :type body: :class:`huaweicloudsdkddm.v1.UpdateUserReq`
         """
         self._body = body
 

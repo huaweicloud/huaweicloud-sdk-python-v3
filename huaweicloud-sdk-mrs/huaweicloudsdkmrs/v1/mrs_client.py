@@ -51,22 +51,24 @@ class MrsClient(Client):
     def batch_create_cluster_tags(self, request):
         """批量添加集群标签
 
-        为指定集群批量添加标签。  一个集群上最多有10个标签。  此接口为幂等接口：  - 创建时，同一个集群不允许重复key，如果数据库存在就覆盖。
+        为指定集群批量添加标签。
+        
+        一个集群上最多有10个标签。
+        
+        此接口为幂等接口：
+        
+        - 创建时，同一个集群不允许重复key，如果数据库存在就覆盖。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateClusterTagsRequest request
-        :return: BatchCreateClusterTagsResponse
+        :param request: Request instance for BatchCreateClusterTags
+        :type request: :class:`huaweicloudsdkmrs.v1.BatchCreateClusterTagsRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.BatchCreateClusterTagsResponse`
         """
         return self.batch_create_cluster_tags_with_http_info(request)
 
     def batch_create_cluster_tags_with_http_info(self, request):
-        """批量添加集群标签
-
-        为指定集群批量添加标签。  一个集群上最多有10个标签。  此接口为幂等接口：  - 创建时，同一个集群不允许重复key，如果数据库存在就覆盖。
-
-        :param BatchCreateClusterTagsRequest request
-        :return: BatchCreateClusterTagsResponse
-        """
-
         all_params = ['cluster_id', 'batch_create_cluster_tags_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -112,26 +114,28 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def batch_delete_cluster_tags(self, request):
         """批量删除集群标签
 
-        为指定集群批量删除标签。  一个集群上最多有10个标签。  此接口为幂等接口：   - 删除时，如果删除的标签不存在，默认处理成功，删除时不对标签字符集范围做校验。Key长度36个unicode字符，value为43个unicode字符。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+        为指定集群批量删除标签。
+        
+        一个集群上最多有10个标签。
+        
+        此接口为幂等接口：
+        
+        
+        - 删除时，如果删除的标签不存在，默认处理成功，删除时不对标签字符集范围做校验。Key长度36个unicode字符，value为43个unicode字符。删除时tags结构体不能缺失，key不能为空，或者空字符串。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchDeleteClusterTagsRequest request
-        :return: BatchDeleteClusterTagsResponse
+        :param request: Request instance for BatchDeleteClusterTags
+        :type request: :class:`huaweicloudsdkmrs.v1.BatchDeleteClusterTagsRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.BatchDeleteClusterTagsResponse`
         """
         return self.batch_delete_cluster_tags_with_http_info(request)
 
     def batch_delete_cluster_tags_with_http_info(self, request):
-        """批量删除集群标签
-
-        为指定集群批量删除标签。  一个集群上最多有10个标签。  此接口为幂等接口：   - 删除时，如果删除的标签不存在，默认处理成功，删除时不对标签字符集范围做校验。Key长度36个unicode字符，value为43个unicode字符。删除时tags结构体不能缺失，key不能为空，或者空字符串。
-
-        :param BatchDeleteClusterTagsRequest request
-        :return: BatchDeleteClusterTagsResponse
-        """
-
         all_params = ['cluster_id', 'batch_delete_cluster_tags_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -177,26 +181,22 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_and_execute_job(self, request):
         """新增作业并执行
 
-        在MRS集群中新增一个作业，并执行作业。该接口不兼容Sahara。 集群ID可参考[查询集群列表](https://support.huaweicloud.com/api-mrs/ListClusters.html)接口获取。
+        在MRS集群中新增一个作业，并执行作业。该接口不兼容Sahara。
+        集群ID可参考[查询集群列表](https://support.huaweicloud.com/api-mrs/ListClusters.html)接口获取。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateAndExecuteJobRequest request
-        :return: CreateAndExecuteJobResponse
+        :param request: Request instance for CreateAndExecuteJob
+        :type request: :class:`huaweicloudsdkmrs.v1.CreateAndExecuteJobRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.CreateAndExecuteJobResponse`
         """
         return self.create_and_execute_job_with_http_info(request)
 
     def create_and_execute_job_with_http_info(self, request):
-        """新增作业并执行
-
-        在MRS集群中新增一个作业，并执行作业。该接口不兼容Sahara。 集群ID可参考[查询集群列表](https://support.huaweicloud.com/api-mrs/ListClusters.html)接口获取。
-
-        :param CreateAndExecuteJobRequest request
-        :return: CreateAndExecuteJobResponse
-        """
-
         all_params = ['submit_job_req_v11']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +240,27 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_cluster(self, request):
         """创建集群并执行作业
 
-        创建一个MRS集群，并在集群中提交一个作业。该接口不兼容Sahara。 支持同一时间并发创建10个集群。 使用接口前，您需要先获取下的资源信息。 - 通过VPC创建或查询VPC、子网 - 通过ECS创建或查询密钥对 - 通过[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)获取区域信息 - 参考[MRS服务支持的组件](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)获取MRS版本及对应版本支持的组件信息  
+        创建一个MRS集群，并在集群中提交一个作业。该接口不兼容Sahara。
+        支持同一时间并发创建10个集群。
+        使用接口前，您需要先获取下的资源信息。
+        - 通过VPC创建或查询VPC、子网
+        - 通过ECS创建或查询密钥对
+        - 通过[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)获取区域信息
+        - 参考[MRS服务支持的组件](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)获取MRS版本及对应版本支持的组件信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateClusterRequest request
-        :return: CreateClusterResponse
+        :param request: Request instance for CreateCluster
+        :type request: :class:`huaweicloudsdkmrs.v1.CreateClusterRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.CreateClusterResponse`
         """
         return self.create_cluster_with_http_info(request)
 
     def create_cluster_with_http_info(self, request):
-        """创建集群并执行作业
-
-        创建一个MRS集群，并在集群中提交一个作业。该接口不兼容Sahara。 支持同一时间并发创建10个集群。 使用接口前，您需要先获取下的资源信息。 - 通过VPC创建或查询VPC、子网 - 通过ECS创建或查询密钥对 - 通过[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)获取区域信息 - 参考[MRS服务支持的组件](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)获取MRS版本及对应版本支持的组件信息  
-
-        :param CreateClusterRequest request
-        :return: CreateClusterResponse
-        """
-
         all_params = ['cluster_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -303,26 +304,22 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_cluster_tag(self, request):
         """给指定集群添加标签
 
-        为特定的集群添加一个tag。 一个集群上最多有10个标签，此接口为幂等接口。添加标签时，如果创建的标签已经存在（key相同），则覆盖。
+        为特定的集群添加一个tag。
+        一个集群上最多有10个标签，此接口为幂等接口。添加标签时，如果创建的标签已经存在（key相同），则覆盖。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateClusterTagRequest request
-        :return: CreateClusterTagResponse
+        :param request: Request instance for CreateClusterTag
+        :type request: :class:`huaweicloudsdkmrs.v1.CreateClusterTagRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.CreateClusterTagResponse`
         """
         return self.create_cluster_tag_with_http_info(request)
 
     def create_cluster_tag_with_http_info(self, request):
-        """给指定集群添加标签
-
-        为特定的集群添加一个tag。 一个集群上最多有10个标签，此接口为幂等接口。添加标签时，如果创建的标签已经存在（key相同），则覆盖。
-
-        :param CreateClusterTagRequest request
-        :return: CreateClusterTagResponse
-        """
-
         all_params = ['cluster_id', 'create_tag_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -368,26 +365,23 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_scaling_policy(self, request):
         """配置弹性伸缩规则
 
-        对弹性伸缩规则进行编辑。  在创建集群并执行作业接口中也可以创建弹性伸缩规则。
+        对弹性伸缩规则进行编辑。
+        
+        在创建集群并执行作业接口中也可以创建弹性伸缩规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateScalingPolicyRequest request
-        :return: CreateScalingPolicyResponse
+        :param request: Request instance for CreateScalingPolicy
+        :type request: :class:`huaweicloudsdkmrs.v1.CreateScalingPolicyRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.CreateScalingPolicyResponse`
         """
         return self.create_scaling_policy_with_http_info(request)
 
     def create_scaling_policy_with_http_info(self, request):
-        """配置弹性伸缩规则
-
-        对弹性伸缩规则进行编辑。  在创建集群并执行作业接口中也可以创建弹性伸缩规则。
-
-        :param CreateScalingPolicyRequest request
-        :return: CreateScalingPolicyResponse
-        """
-
         all_params = ['cluster_id', 'auto_scaling_policy_req_v11']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -433,26 +427,29 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_cluster(self, request):
         """删除集群
 
-        数据完成处理分析后或者集群运行异常无法提供服务时可删除集群服务。该接口兼容Sahara。  处于如下状态的集群不允许删除： - scaling-out：扩容中 - scaling-in：缩容中 - starting：启动中 - terminating：删除中 - terminated：已删除 - failed：失败
+        数据完成处理分析后或者集群运行异常无法提供服务时可删除集群服务。该接口兼容Sahara。
+        
+        处于如下状态的集群不允许删除：
+        - scaling-out：扩容中
+        - scaling-in：缩容中
+        - starting：启动中
+        - terminating：删除中
+        - terminated：已删除
+        - failed：失败
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteClusterRequest request
-        :return: DeleteClusterResponse
+        :param request: Request instance for DeleteCluster
+        :type request: :class:`huaweicloudsdkmrs.v1.DeleteClusterRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.DeleteClusterResponse`
         """
         return self.delete_cluster_with_http_info(request)
 
     def delete_cluster_with_http_info(self, request):
-        """删除集群
-
-        数据完成处理分析后或者集群运行异常无法提供服务时可删除集群服务。该接口兼容Sahara。  处于如下状态的集群不允许删除： - scaling-out：扩容中 - scaling-in：缩容中 - starting：启动中 - terminating：删除中 - terminated：已删除 - failed：失败
-
-        :param DeleteClusterRequest request
-        :return: DeleteClusterResponse
-        """
-
         all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -496,26 +493,21 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_cluster_tag(self, request):
         """删除指定集群的标签
 
         删除特定集群的标签。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteClusterTagRequest request
-        :return: DeleteClusterTagResponse
+        :param request: Request instance for DeleteClusterTag
+        :type request: :class:`huaweicloudsdkmrs.v1.DeleteClusterTagRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.DeleteClusterTagResponse`
         """
         return self.delete_cluster_tag_with_http_info(request)
 
     def delete_cluster_tag_with_http_info(self, request):
-        """删除指定集群的标签
-
-        删除特定集群的标签。
-
-        :param DeleteClusterTagRequest request
-        :return: DeleteClusterTagResponse
-        """
-
         all_params = ['cluster_id', 'key']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -561,26 +553,21 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_job_execution(self, request):
         """删除作业执行对象
 
         删除指定的作业执行对象。该接口兼容Sahara。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteJobExecutionRequest request
-        :return: DeleteJobExecutionResponse
+        :param request: Request instance for DeleteJobExecution
+        :type request: :class:`huaweicloudsdkmrs.v1.DeleteJobExecutionRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.DeleteJobExecutionResponse`
         """
         return self.delete_job_execution_with_http_info(request)
 
     def delete_job_execution_with_http_info(self, request):
-        """删除作业执行对象
-
-        删除指定的作业执行对象。该接口兼容Sahara。
-
-        :param DeleteJobExecutionRequest request
-        :return: DeleteJobExecutionResponse
-        """
-
         all_params = ['job_execution_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -624,26 +611,21 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_all_tags(self, request):
         """查询所有标签
 
         查询租户在指定Region下的所有标签集合 。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAllTagsRequest request
-        :return: ListAllTagsResponse
+        :param request: Request instance for ListAllTags
+        :type request: :class:`huaweicloudsdkmrs.v1.ListAllTagsRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.ListAllTagsResponse`
         """
         return self.list_all_tags_with_http_info(request)
 
     def list_all_tags_with_http_info(self, request):
-        """查询所有标签
-
-        查询租户在指定Region下的所有标签集合 。
-
-        :param ListAllTagsRequest request
-        :return: ListAllTagsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -685,26 +667,21 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_cluster_tags(self, request):
         """查询指定集群的标签
 
         查询指定集群的标签信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListClusterTagsRequest request
-        :return: ListClusterTagsResponse
+        :param request: Request instance for ListClusterTags
+        :type request: :class:`huaweicloudsdkmrs.v1.ListClusterTagsRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.ListClusterTagsResponse`
         """
         return self.list_cluster_tags_with_http_info(request)
 
     def list_cluster_tags_with_http_info(self, request):
-        """查询指定集群的标签
-
-        查询指定集群的标签信息。
-
-        :param ListClusterTagsRequest request
-        :return: ListClusterTagsResponse
-        """
-
         all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -748,26 +725,21 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_clusters(self, request):
         """查询集群列表
 
         查看用户创建的集群列表信息。该接口不兼容Sahara。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListClustersRequest request
-        :return: ListClustersResponse
+        :param request: Request instance for ListClusters
+        :type request: :class:`huaweicloudsdkmrs.v1.ListClustersRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.ListClustersResponse`
         """
         return self.list_clusters_with_http_info(request)
 
     def list_clusters_with_http_info(self, request):
-        """查询集群列表
-
-        查看用户创建的集群列表信息。该接口不兼容Sahara。
-
-        :param ListClustersRequest request
-        :return: ListClustersResponse
-        """
-
         all_params = ['tags', 'page_size', 'current_page', 'cluster_name', 'cluster_state', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -821,26 +793,23 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_clusters_by_tags(self, request):
         """查询特定标签的集群列表
 
-        使用标签过滤集群。  集群默认按照创建时间倒序，集群tag也按照创建时间倒序。
+        使用标签过滤集群。
+        
+        集群默认按照创建时间倒序，集群tag也按照创建时间倒序。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListClustersByTagsRequest request
-        :return: ListClustersByTagsResponse
+        :param request: Request instance for ListClustersByTags
+        :type request: :class:`huaweicloudsdkmrs.v1.ListClustersByTagsRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.ListClustersByTagsResponse`
         """
         return self.list_clusters_by_tags_with_http_info(request)
 
     def list_clusters_by_tags_with_http_info(self, request):
-        """查询特定标签的集群列表
-
-        使用标签过滤集群。  集群默认按照创建时间倒序，集群tag也按照创建时间倒序。
-
-        :param ListClustersByTagsRequest request
-        :return: ListClustersByTagsResponse
-        """
-
         all_params = ['list_resource_request']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -884,26 +853,21 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_execute_job(self, request):
         """查询作业exe对象列表
 
         查询所有作业的exe对象列表。该接口不兼容Sahara。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListExecuteJobRequest request
-        :return: ListExecuteJobResponse
+        :param request: Request instance for ListExecuteJob
+        :type request: :class:`huaweicloudsdkmrs.v1.ListExecuteJobRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.ListExecuteJobResponse`
         """
         return self.list_execute_job_with_http_info(request)
 
     def list_execute_job_with_http_info(self, request):
-        """查询作业exe对象列表
-
-        查询所有作业的exe对象列表。该接口不兼容Sahara。
-
-        :param ListExecuteJobRequest request
-        :return: ListExecuteJobResponse
-        """
-
         all_params = ['cluster_id', 'page_size', 'current_page', 'job_name', 'state', 'id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -957,26 +921,21 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_hosts(self, request):
         """查询主机列表
 
         该接口用于查询输入集群的主机列表详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListHostsRequest request
-        :return: ListHostsResponse
+        :param request: Request instance for ListHosts
+        :type request: :class:`huaweicloudsdkmrs.v1.ListHostsRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.ListHostsResponse`
         """
         return self.list_hosts_with_http_info(request)
 
     def list_hosts_with_http_info(self, request):
-        """查询主机列表
-
-        该接口用于查询输入集群的主机列表详情。
-
-        :param ListHostsRequest request
-        :return: ListHostsResponse
-        """
-
         all_params = ['cluster_id', 'page_size', 'current_page']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1024,26 +983,21 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_cluster_details(self, request):
         """查询集群详情
 
         查看指定集群的详细信息。该接口不兼容Sahara。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowClusterDetailsRequest request
-        :return: ShowClusterDetailsResponse
+        :param request: Request instance for ShowClusterDetails
+        :type request: :class:`huaweicloudsdkmrs.v1.ShowClusterDetailsRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.ShowClusterDetailsResponse`
         """
         return self.show_cluster_details_with_http_info(request)
 
     def show_cluster_details_with_http_info(self, request):
-        """查询集群详情
-
-        查看指定集群的详细信息。该接口不兼容Sahara。
-
-        :param ShowClusterDetailsRequest request
-        :return: ShowClusterDetailsResponse
-        """
-
         all_params = ['cluster_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1087,26 +1041,21 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_job_exes(self, request):
         """查询作业exe对象详情
 
         查询指定作业的exe对象详细信息。该接口不兼容Sahara。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowJobExesRequest request
-        :return: ShowJobExesResponse
+        :param request: Request instance for ShowJobExes
+        :type request: :class:`huaweicloudsdkmrs.v1.ShowJobExesRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.ShowJobExesResponse`
         """
         return self.show_job_exes_with_http_info(request)
 
     def show_job_exes_with_http_info(self, request):
-        """查询作业exe对象详情
-
-        查询指定作业的exe对象详细信息。该接口不兼容Sahara。
-
-        :param ShowJobExesRequest request
-        :return: ShowJobExesResponse
-        """
-
         all_params = ['job_exe_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1150,26 +1099,22 @@ class MrsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_cluster_scaling(self, request):
         """调整集群节点
 
-        创建集群后，扩容/缩容集群Core节点或者Task节点。MRS集群创建成功后不支持调整Master节点数量，即不支持扩缩容Master节点。该接口不兼容Sahara。 处于running状态的集群才允许扩容/缩容，其他状态则不允许扩容/缩容。 集群状态和集群ID可参考[查询集群列表](https://support.huaweicloud.com/api-mrs/ListClusters.html)接口获取。
+        创建集群后，扩容/缩容集群Core节点或者Task节点。MRS集群创建成功后不支持调整Master节点数量，即不支持扩缩容Master节点。该接口不兼容Sahara。
+        处于running状态的集群才允许扩容/缩容，其他状态则不允许扩容/缩容。 集群状态和集群ID可参考[查询集群列表](https://support.huaweicloud.com/api-mrs/ListClusters.html)接口获取。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateClusterScalingRequest request
-        :return: UpdateClusterScalingResponse
+        :param request: Request instance for UpdateClusterScaling
+        :type request: :class:`huaweicloudsdkmrs.v1.UpdateClusterScalingRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v1.UpdateClusterScalingResponse`
         """
         return self.update_cluster_scaling_with_http_info(request)
 
     def update_cluster_scaling_with_http_info(self, request):
-        """调整集群节点
-
-        创建集群后，扩容/缩容集群Core节点或者Task节点。MRS集群创建成功后不支持调整Master节点数量，即不支持扩缩容Master节点。该接口不兼容Sahara。 处于running状态的集群才允许扩容/缩容，其他状态则不允许扩容/缩容。 集群状态和集群ID可参考[查询集群列表](https://support.huaweicloud.com/api-mrs/ListClusters.html)接口获取。
-
-        :param UpdateClusterScalingRequest request
-        :return: UpdateClusterScalingResponse
-        """
-
         all_params = ['cluster_id', 'cluster_scaling_req']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1214,7 +1159,6 @@ class MrsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

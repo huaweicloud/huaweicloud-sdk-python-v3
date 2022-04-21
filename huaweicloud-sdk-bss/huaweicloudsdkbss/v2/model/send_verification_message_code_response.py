@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SendVerificationMessageCodeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class SendVerificationMessageCodeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SendVerificationMessageCodeResponse - a model defined in huaweicloud sdk"""
+        """SendVerificationMessageCodeResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(SendVerificationMessageCodeResponse, self).__init__()
         self.discriminator = None

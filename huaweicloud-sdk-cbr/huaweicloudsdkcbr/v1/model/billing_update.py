@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BillingUpdate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BillingUpdate:
     }
 
     def __init__(self, consistent_level=None, size=None):
-        """BillingUpdate - a model defined in huaweicloud sdk"""
+        """BillingUpdate
+
+        The model defined in huaweicloud sdk
+
+        :param consistent_level: 存储库规格
+        :type consistent_level: str
+        :param size: 存储库大小，单位为GB
+        :type size: int
+        """
         
         
 
@@ -63,7 +70,7 @@ class BillingUpdate:
         存储库规格
 
         :param consistent_level: The consistent_level of this BillingUpdate.
-        :type: str
+        :type consistent_level: str
         """
         self._consistent_level = consistent_level
 
@@ -85,7 +92,7 @@ class BillingUpdate:
         存储库大小，单位为GB
 
         :param size: The size of this BillingUpdate.
-        :type: int
+        :type size: int
         """
         self._size = size
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OffsiteBackupInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class OffsiteBackupInstance:
     }
 
     def __init__(self, id=None, name=None, source_region=None, source_project_id=None, datastore=None, destination_region=None, destination_project_id=None, keep_days=None):
-        """OffsiteBackupInstance - a model defined in huaweicloud sdk"""
+        """OffsiteBackupInstance
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例ID。
+        :type id: str
+        :param name: 创建的实例名称。
+        :type name: str
+        :param source_region: 源区域。
+        :type source_region: str
+        :param source_project_id: 租户在源区域下的project ID。
+        :type source_project_id: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkrds.v3.ParaGroupDatastore`
+        :param destination_region: 跨区域备份所在区域。
+        :type destination_region: str
+        :param destination_project_id: 租户在目标区域下的project ID。
+        :type destination_project_id: str
+        :param keep_days: 跨区域备份保留天数。
+        :type keep_days: int
+        """
         
         
 
@@ -92,7 +111,7 @@ class OffsiteBackupInstance:
         实例ID。
 
         :param id: The id of this OffsiteBackupInstance.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -114,7 +133,7 @@ class OffsiteBackupInstance:
         创建的实例名称。
 
         :param name: The name of this OffsiteBackupInstance.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -136,7 +155,7 @@ class OffsiteBackupInstance:
         源区域。
 
         :param source_region: The source_region of this OffsiteBackupInstance.
-        :type: str
+        :type source_region: str
         """
         self._source_region = source_region
 
@@ -158,7 +177,7 @@ class OffsiteBackupInstance:
         租户在源区域下的project ID。
 
         :param source_project_id: The source_project_id of this OffsiteBackupInstance.
-        :type: str
+        :type source_project_id: str
         """
         self._source_project_id = source_project_id
 
@@ -168,7 +187,7 @@ class OffsiteBackupInstance:
 
 
         :return: The datastore of this OffsiteBackupInstance.
-        :rtype: ParaGroupDatastore
+        :rtype: :class:`huaweicloudsdkrds.v3.ParaGroupDatastore`
         """
         return self._datastore
 
@@ -178,7 +197,7 @@ class OffsiteBackupInstance:
 
 
         :param datastore: The datastore of this OffsiteBackupInstance.
-        :type: ParaGroupDatastore
+        :type datastore: :class:`huaweicloudsdkrds.v3.ParaGroupDatastore`
         """
         self._datastore = datastore
 
@@ -200,7 +219,7 @@ class OffsiteBackupInstance:
         跨区域备份所在区域。
 
         :param destination_region: The destination_region of this OffsiteBackupInstance.
-        :type: str
+        :type destination_region: str
         """
         self._destination_region = destination_region
 
@@ -222,7 +241,7 @@ class OffsiteBackupInstance:
         租户在目标区域下的project ID。
 
         :param destination_project_id: The destination_project_id of this OffsiteBackupInstance.
-        :type: str
+        :type destination_project_id: str
         """
         self._destination_project_id = destination_project_id
 
@@ -244,7 +263,7 @@ class OffsiteBackupInstance:
         跨区域备份保留天数。
 
         :param keep_days: The keep_days of this OffsiteBackupInstance.
-        :type: int
+        :type keep_days: int
         """
         self._keep_days = keep_days
 

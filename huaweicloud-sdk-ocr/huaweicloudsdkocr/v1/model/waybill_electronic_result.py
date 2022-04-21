@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class WaybillElectronicResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class WaybillElectronicResult:
     }
 
     def __init__(self, code=None, receiver_name=None, receiver_phone=None, receiver_address=None, sender_name=None, sender_phone=None, sender_address=None, waybill_number=None, confidence=None):
-        """WaybillElectronicResult - a model defined in huaweicloud sdk"""
+        """WaybillElectronicResult
+
+        The model defined in huaweicloud sdk
+
+        :param code: 三段码。 
+        :type code: str
+        :param receiver_name: 收件人姓名。 
+        :type receiver_name: str
+        :param receiver_phone: 收件人电话。 
+        :type receiver_phone: str
+        :param receiver_address: 收件人地址。 
+        :type receiver_address: str
+        :param sender_name: 寄件人姓名。 
+        :type sender_name: str
+        :param sender_phone: 寄件人电话。 
+        :type sender_phone: str
+        :param sender_address: 寄件人地址。 
+        :type sender_address: str
+        :param waybill_number: 条形码运单号。 
+        :type waybill_number: str
+        :param confidence: 相关字段的置信度信息，取值范围0~1。 置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
+        :type confidence: object
+        """
         
         
 
@@ -98,7 +119,7 @@ class WaybillElectronicResult:
         三段码。 
 
         :param code: The code of this WaybillElectronicResult.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -120,7 +141,7 @@ class WaybillElectronicResult:
         收件人姓名。 
 
         :param receiver_name: The receiver_name of this WaybillElectronicResult.
-        :type: str
+        :type receiver_name: str
         """
         self._receiver_name = receiver_name
 
@@ -142,7 +163,7 @@ class WaybillElectronicResult:
         收件人电话。 
 
         :param receiver_phone: The receiver_phone of this WaybillElectronicResult.
-        :type: str
+        :type receiver_phone: str
         """
         self._receiver_phone = receiver_phone
 
@@ -164,7 +185,7 @@ class WaybillElectronicResult:
         收件人地址。 
 
         :param receiver_address: The receiver_address of this WaybillElectronicResult.
-        :type: str
+        :type receiver_address: str
         """
         self._receiver_address = receiver_address
 
@@ -186,7 +207,7 @@ class WaybillElectronicResult:
         寄件人姓名。 
 
         :param sender_name: The sender_name of this WaybillElectronicResult.
-        :type: str
+        :type sender_name: str
         """
         self._sender_name = sender_name
 
@@ -208,7 +229,7 @@ class WaybillElectronicResult:
         寄件人电话。 
 
         :param sender_phone: The sender_phone of this WaybillElectronicResult.
-        :type: str
+        :type sender_phone: str
         """
         self._sender_phone = sender_phone
 
@@ -230,7 +251,7 @@ class WaybillElectronicResult:
         寄件人地址。 
 
         :param sender_address: The sender_address of this WaybillElectronicResult.
-        :type: str
+        :type sender_address: str
         """
         self._sender_address = sender_address
 
@@ -252,7 +273,7 @@ class WaybillElectronicResult:
         条形码运单号。 
 
         :param waybill_number: The waybill_number of this WaybillElectronicResult.
-        :type: str
+        :type waybill_number: str
         """
         self._waybill_number = waybill_number
 
@@ -274,7 +295,7 @@ class WaybillElectronicResult:
         相关字段的置信度信息，取值范围0~1。 置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
         :param confidence: The confidence of this WaybillElectronicResult.
-        :type: object
+        :type confidence: object
         """
         self._confidence = confidence
 

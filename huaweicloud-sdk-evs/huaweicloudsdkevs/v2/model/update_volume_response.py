@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateVolumeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class UpdateVolumeResponse(SdkResponse):
     }
 
     def __init__(self, attachments=None, availability_zone=None, bootable=None, created_at=None, id=None, links=None, metadata=None, multiattach=None, name=None, os_vol_host_attrhost=None, os_vol_tenant_attrtenant_id=None, shareable=None, size=None, snapshot_id=None, source_volid=None, status=None, volume_image_metadata=None, volume_type=None, description=None, os_volume_replicationextended_status=None):
-        """UpdateVolumeResponse - a model defined in huaweicloud sdk"""
+        """UpdateVolumeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param attachments: 是否挂载信息。
+        :type attachments: list[:class:`huaweicloudsdkevs.v2.Attachment`]
+        :param availability_zone: 云硬盘所属AZ。
+        :type availability_zone: str
+        :param bootable: 是否为可启动云硬盘。
+        :type bootable: str
+        :param created_at: 创建云硬盘的时间。
+        :type created_at: str
+        :param id: 云硬盘ID。
+        :type id: str
+        :param links: 云硬盘uri自描述信息
+        :type links: list[:class:`huaweicloudsdkevs.v2.Link`]
+        :param metadata: 
+        :type metadata: :class:`huaweicloudsdkevs.v2.VolumeMetadata`
+        :param multiattach: 是否为可共享云硬盘。
+        :type multiattach: bool
+        :param name: 云硬盘名称
+        :type name: str
+        :param os_vol_host_attrhost: 预留属性。
+        :type os_vol_host_attrhost: str
+        :param os_vol_tenant_attrtenant_id: 云硬盘所属的项目ID。
+        :type os_vol_tenant_attrtenant_id: str
+        :param shareable: 是否为共享云硬盘。
+        :type shareable: str
+        :param size: 云硬盘大小。
+        :type size: int
+        :param snapshot_id: 快照ID。
+        :type snapshot_id: str
+        :param source_volid: 预留字段。
+        :type source_volid: str
+        :param status: 云硬盘状态。
+        :type status: str
+        :param volume_image_metadata: 云硬盘镜像的元数据。 &gt; 说明： &gt;  &gt; 关于“volume_image_metadata”字段的详细说明，具体请参见：\&quot;[查询镜像详情](https://support.huaweicloud.com/api-ims/ims_03_0703.html)\&quot;。
+        :type volume_image_metadata: object
+        :param volume_type: 云硬盘类型。
+        :type volume_type: str
+        :param description: 云硬盘描述。
+        :type description: str
+        :param os_volume_replicationextended_status: 预留属性。
+        :type os_volume_replicationextended_status: str
+        """
         
         super(UpdateVolumeResponse, self).__init__()
 
@@ -142,7 +185,7 @@ class UpdateVolumeResponse(SdkResponse):
         是否挂载信息。
 
         :return: The attachments of this UpdateVolumeResponse.
-        :rtype: list[Attachment]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.Attachment`]
         """
         return self._attachments
 
@@ -153,7 +196,7 @@ class UpdateVolumeResponse(SdkResponse):
         是否挂载信息。
 
         :param attachments: The attachments of this UpdateVolumeResponse.
-        :type: list[Attachment]
+        :type attachments: list[:class:`huaweicloudsdkevs.v2.Attachment`]
         """
         self._attachments = attachments
 
@@ -175,7 +218,7 @@ class UpdateVolumeResponse(SdkResponse):
         云硬盘所属AZ。
 
         :param availability_zone: The availability_zone of this UpdateVolumeResponse.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -197,7 +240,7 @@ class UpdateVolumeResponse(SdkResponse):
         是否为可启动云硬盘。
 
         :param bootable: The bootable of this UpdateVolumeResponse.
-        :type: str
+        :type bootable: str
         """
         self._bootable = bootable
 
@@ -219,7 +262,7 @@ class UpdateVolumeResponse(SdkResponse):
         创建云硬盘的时间。
 
         :param created_at: The created_at of this UpdateVolumeResponse.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -241,7 +284,7 @@ class UpdateVolumeResponse(SdkResponse):
         云硬盘ID。
 
         :param id: The id of this UpdateVolumeResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -252,7 +295,7 @@ class UpdateVolumeResponse(SdkResponse):
         云硬盘uri自描述信息
 
         :return: The links of this UpdateVolumeResponse.
-        :rtype: list[Link]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.Link`]
         """
         return self._links
 
@@ -263,7 +306,7 @@ class UpdateVolumeResponse(SdkResponse):
         云硬盘uri自描述信息
 
         :param links: The links of this UpdateVolumeResponse.
-        :type: list[Link]
+        :type links: list[:class:`huaweicloudsdkevs.v2.Link`]
         """
         self._links = links
 
@@ -273,7 +316,7 @@ class UpdateVolumeResponse(SdkResponse):
 
 
         :return: The metadata of this UpdateVolumeResponse.
-        :rtype: VolumeMetadata
+        :rtype: :class:`huaweicloudsdkevs.v2.VolumeMetadata`
         """
         return self._metadata
 
@@ -283,7 +326,7 @@ class UpdateVolumeResponse(SdkResponse):
 
 
         :param metadata: The metadata of this UpdateVolumeResponse.
-        :type: VolumeMetadata
+        :type metadata: :class:`huaweicloudsdkevs.v2.VolumeMetadata`
         """
         self._metadata = metadata
 
@@ -305,7 +348,7 @@ class UpdateVolumeResponse(SdkResponse):
         是否为可共享云硬盘。
 
         :param multiattach: The multiattach of this UpdateVolumeResponse.
-        :type: bool
+        :type multiattach: bool
         """
         self._multiattach = multiattach
 
@@ -327,7 +370,7 @@ class UpdateVolumeResponse(SdkResponse):
         云硬盘名称
 
         :param name: The name of this UpdateVolumeResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -349,7 +392,7 @@ class UpdateVolumeResponse(SdkResponse):
         预留属性。
 
         :param os_vol_host_attrhost: The os_vol_host_attrhost of this UpdateVolumeResponse.
-        :type: str
+        :type os_vol_host_attrhost: str
         """
         self._os_vol_host_attrhost = os_vol_host_attrhost
 
@@ -371,7 +414,7 @@ class UpdateVolumeResponse(SdkResponse):
         云硬盘所属的项目ID。
 
         :param os_vol_tenant_attrtenant_id: The os_vol_tenant_attrtenant_id of this UpdateVolumeResponse.
-        :type: str
+        :type os_vol_tenant_attrtenant_id: str
         """
         self._os_vol_tenant_attrtenant_id = os_vol_tenant_attrtenant_id
 
@@ -393,7 +436,7 @@ class UpdateVolumeResponse(SdkResponse):
         是否为共享云硬盘。
 
         :param shareable: The shareable of this UpdateVolumeResponse.
-        :type: str
+        :type shareable: str
         """
         self._shareable = shareable
 
@@ -415,7 +458,7 @@ class UpdateVolumeResponse(SdkResponse):
         云硬盘大小。
 
         :param size: The size of this UpdateVolumeResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -437,7 +480,7 @@ class UpdateVolumeResponse(SdkResponse):
         快照ID。
 
         :param snapshot_id: The snapshot_id of this UpdateVolumeResponse.
-        :type: str
+        :type snapshot_id: str
         """
         self._snapshot_id = snapshot_id
 
@@ -459,7 +502,7 @@ class UpdateVolumeResponse(SdkResponse):
         预留字段。
 
         :param source_volid: The source_volid of this UpdateVolumeResponse.
-        :type: str
+        :type source_volid: str
         """
         self._source_volid = source_volid
 
@@ -481,7 +524,7 @@ class UpdateVolumeResponse(SdkResponse):
         云硬盘状态。
 
         :param status: The status of this UpdateVolumeResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -503,7 +546,7 @@ class UpdateVolumeResponse(SdkResponse):
         云硬盘镜像的元数据。 > 说明： >  > 关于“volume_image_metadata”字段的详细说明，具体请参见：\"[查询镜像详情](https://support.huaweicloud.com/api-ims/ims_03_0703.html)\"。
 
         :param volume_image_metadata: The volume_image_metadata of this UpdateVolumeResponse.
-        :type: object
+        :type volume_image_metadata: object
         """
         self._volume_image_metadata = volume_image_metadata
 
@@ -525,7 +568,7 @@ class UpdateVolumeResponse(SdkResponse):
         云硬盘类型。
 
         :param volume_type: The volume_type of this UpdateVolumeResponse.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 
@@ -547,7 +590,7 @@ class UpdateVolumeResponse(SdkResponse):
         云硬盘描述。
 
         :param description: The description of this UpdateVolumeResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -569,7 +612,7 @@ class UpdateVolumeResponse(SdkResponse):
         预留属性。
 
         :param os_volume_replicationextended_status: The os_volume_replicationextended_status of this UpdateVolumeResponse.
-        :type: str
+        :type os_volume_replicationextended_status: str
         """
         self._os_volume_replicationextended_status = os_volume_replicationextended_status
 

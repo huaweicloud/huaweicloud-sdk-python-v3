@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TriggerBpsDict:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class TriggerBpsDict:
     }
 
     def __init__(self, traffic_pos_id=None, traffic_per_second=None, packet_per_second=None):
-        """TriggerBpsDict - a model defined in huaweicloud sdk"""
+        """TriggerBpsDict
+
+        The model defined in huaweicloud sdk
+
+        :param traffic_pos_id: 流量分段ID
+        :type traffic_pos_id: int
+        :param traffic_per_second: 每秒流量（Mbit/s）阈值
+        :type traffic_per_second: int
+        :param packet_per_second: 每秒报文数（个/s）阈值
+        :type packet_per_second: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class TriggerBpsDict:
         流量分段ID
 
         :param traffic_pos_id: The traffic_pos_id of this TriggerBpsDict.
-        :type: int
+        :type traffic_pos_id: int
         """
         self._traffic_pos_id = traffic_pos_id
 
@@ -87,7 +96,7 @@ class TriggerBpsDict:
         每秒流量（Mbit/s）阈值
 
         :param traffic_per_second: The traffic_per_second of this TriggerBpsDict.
-        :type: int
+        :type traffic_per_second: int
         """
         self._traffic_per_second = traffic_per_second
 
@@ -109,7 +118,7 @@ class TriggerBpsDict:
         每秒报文数（个/s）阈值
 
         :param packet_per_second: The packet_per_second of this TriggerBpsDict.
-        :type: int
+        :type packet_per_second: int
         """
         self._packet_per_second = packet_per_second
 

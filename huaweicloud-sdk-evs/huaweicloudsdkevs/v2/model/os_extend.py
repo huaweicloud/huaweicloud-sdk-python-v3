@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OsExtend:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class OsExtend:
     }
 
     def __init__(self, new_size=None):
-        """OsExtend - a model defined in huaweicloud sdk"""
+        """OsExtend
+
+        The model defined in huaweicloud sdk
+
+        :param new_size: 扩容后的云硬盘大小，单位为GB。扩容的大小必须大于原有云硬盘容量且小于云硬盘最大容量。 云硬盘最大容量： * 数据盘：32768GB * 系统盘：1024GB
+        :type new_size: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class OsExtend:
         扩容后的云硬盘大小，单位为GB。扩容的大小必须大于原有云硬盘容量且小于云硬盘最大容量。 云硬盘最大容量： * 数据盘：32768GB * 系统盘：1024GB
 
         :param new_size: The new_size of this OsExtend.
-        :type: int
+        :type new_size: int
         """
         self._new_size = new_size
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowGroupsRespGroupAssignment:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowGroupsRespGroupAssignment:
     }
 
     def __init__(self, topic=None, partitions=None):
-        """ShowGroupsRespGroupAssignment - a model defined in huaweicloud sdk"""
+        """ShowGroupsRespGroupAssignment
+
+        The model defined in huaweicloud sdk
+
+        :param topic: topic名称。
+        :type topic: str
+        :param partitions: 分区列表。
+        :type partitions: list[int]
+        """
         
         
 
@@ -63,7 +70,7 @@ class ShowGroupsRespGroupAssignment:
         topic名称。
 
         :param topic: The topic of this ShowGroupsRespGroupAssignment.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -85,7 +92,7 @@ class ShowGroupsRespGroupAssignment:
         分区列表。
 
         :param partitions: The partitions of this ShowGroupsRespGroupAssignment.
-        :type: list[int]
+        :type partitions: list[int]
         """
         self._partitions = partitions
 

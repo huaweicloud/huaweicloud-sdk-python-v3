@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddonInstanceStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AddonInstanceStatus:
     }
 
     def __init__(self, status=None, reason=None, message=None, target_versions=None, current_version=None):
-        """AddonInstanceStatus - a model defined in huaweicloud sdk"""
+        """AddonInstanceStatus
+
+        The model defined in huaweicloud sdk
+
+        :param status: 插件实例状态
+        :type status: str
+        :param reason: 插件安装失败原因
+        :type reason: str
+        :param message: 安装错误详情
+        :type message: str
+        :param target_versions: 此插件版本，支持升级的集群版本
+        :type target_versions: list[str]
+        :param current_version: 
+        :type current_version: :class:`huaweicloudsdkcce.v3.Versions`
+        """
         
         
 
@@ -74,7 +87,7 @@ class AddonInstanceStatus:
         插件实例状态
 
         :param status: The status of this AddonInstanceStatus.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -96,7 +109,7 @@ class AddonInstanceStatus:
         插件安装失败原因
 
         :param reason: The reason of this AddonInstanceStatus.
-        :type: str
+        :type reason: str
         """
         self._reason = reason
 
@@ -118,7 +131,7 @@ class AddonInstanceStatus:
         安装错误详情
 
         :param message: The message of this AddonInstanceStatus.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -140,7 +153,7 @@ class AddonInstanceStatus:
         此插件版本，支持升级的集群版本
 
         :param target_versions: The target_versions of this AddonInstanceStatus.
-        :type: list[str]
+        :type target_versions: list[str]
         """
         self._target_versions = target_versions
 
@@ -150,7 +163,7 @@ class AddonInstanceStatus:
 
 
         :return: The current_version of this AddonInstanceStatus.
-        :rtype: Versions
+        :rtype: :class:`huaweicloudsdkcce.v3.Versions`
         """
         return self._current_version
 
@@ -160,7 +173,7 @@ class AddonInstanceStatus:
 
 
         :param current_version: The current_version of this AddonInstanceStatus.
-        :type: Versions
+        :type current_version: :class:`huaweicloudsdkcce.v3.Versions`
         """
         self._current_version = current_version
 

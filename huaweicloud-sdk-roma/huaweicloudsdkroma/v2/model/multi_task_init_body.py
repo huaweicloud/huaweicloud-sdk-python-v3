@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MultiTaskInitBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class MultiTaskInitBody:
     }
 
     def __init__(self, ext_info=None, source_datasource_id=None, target_datasource_id=None, task_id=None, auto_mapping=None):
-        """MultiTaskInitBody - a model defined in huaweicloud sdk"""
+        """MultiTaskInitBody
+
+        The model defined in huaweicloud sdk
+
+        :param ext_info: 
+        :type ext_info: :class:`huaweicloudsdkroma.v2.MultiTaskInitBodyExtInfo`
+        :param source_datasource_id: 源端数据源ID
+        :type source_datasource_id: str
+        :param target_datasource_id: 目标端数据源ID
+        :type target_datasource_id: str
+        :param task_id: 任务ID，可以为空，为空时自动分配任务ID
+        :type task_id: str
+        :param auto_mapping: 是否自动建立源端到目标端映射
+        :type auto_mapping: bool
+        """
         
         
 
@@ -66,7 +79,7 @@ class MultiTaskInitBody:
 
 
         :return: The ext_info of this MultiTaskInitBody.
-        :rtype: MultiTaskInitBodyExtInfo
+        :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskInitBodyExtInfo`
         """
         return self._ext_info
 
@@ -76,7 +89,7 @@ class MultiTaskInitBody:
 
 
         :param ext_info: The ext_info of this MultiTaskInitBody.
-        :type: MultiTaskInitBodyExtInfo
+        :type ext_info: :class:`huaweicloudsdkroma.v2.MultiTaskInitBodyExtInfo`
         """
         self._ext_info = ext_info
 
@@ -98,7 +111,7 @@ class MultiTaskInitBody:
         源端数据源ID
 
         :param source_datasource_id: The source_datasource_id of this MultiTaskInitBody.
-        :type: str
+        :type source_datasource_id: str
         """
         self._source_datasource_id = source_datasource_id
 
@@ -120,7 +133,7 @@ class MultiTaskInitBody:
         目标端数据源ID
 
         :param target_datasource_id: The target_datasource_id of this MultiTaskInitBody.
-        :type: str
+        :type target_datasource_id: str
         """
         self._target_datasource_id = target_datasource_id
 
@@ -142,7 +155,7 @@ class MultiTaskInitBody:
         任务ID，可以为空，为空时自动分配任务ID
 
         :param task_id: The task_id of this MultiTaskInitBody.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -164,7 +177,7 @@ class MultiTaskInitBody:
         是否自动建立源端到目标端映射
 
         :param auto_mapping: The auto_mapping of this MultiTaskInitBody.
-        :type: bool
+        :type auto_mapping: bool
         """
         self._auto_mapping = auto_mapping
 

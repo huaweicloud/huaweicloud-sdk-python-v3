@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LanguageDetectionReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class LanguageDetectionReq:
     }
 
     def __init__(self, text=None):
-        """LanguageDetectionReq - a model defined in huaweicloud sdk"""
+        """LanguageDetectionReq
+
+        The model defined in huaweicloud sdk
+
+        :param text: 需要识别语种的文本。仅支持utf-8编码，长度不超过1000字符。
+        :type text: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class LanguageDetectionReq:
         需要识别语种的文本。仅支持utf-8编码，长度不超过1000字符。
 
         :param text: The text of this LanguageDetectionReq.
-        :type: str
+        :type text: str
         """
         self._text = text
 

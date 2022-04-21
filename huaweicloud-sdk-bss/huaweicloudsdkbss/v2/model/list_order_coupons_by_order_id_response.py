@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOrderCouponsByOrderIdResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
     }
 
     def __init__(self, count=None, user_coupons=None, coupon_max_use_quantity=None):
-        """ListOrderCouponsByOrderIdResponse - a model defined in huaweicloud sdk"""
+        """ListOrderCouponsByOrderIdResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 查询总数。
+        :type count: int
+        :param user_coupons: 可用的优惠券列表。 具体请参见表2。
+        :type user_coupons: list[:class:`huaweicloudsdkbss.v2.CouponInfoV2`]
+        :param coupon_max_use_quantity: 优惠券使用的最大数量。 具体请参见表4。
+        :type coupon_max_use_quantity: list[:class:`huaweicloudsdkbss.v2.CouponMaxUseQuantity`]
+        """
         
         super(ListOrderCouponsByOrderIdResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
         查询总数。
 
         :param count: The count of this ListOrderCouponsByOrderIdResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -79,7 +88,7 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
         可用的优惠券列表。 具体请参见表2。
 
         :return: The user_coupons of this ListOrderCouponsByOrderIdResponse.
-        :rtype: list[CouponInfoV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.CouponInfoV2`]
         """
         return self._user_coupons
 
@@ -90,7 +99,7 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
         可用的优惠券列表。 具体请参见表2。
 
         :param user_coupons: The user_coupons of this ListOrderCouponsByOrderIdResponse.
-        :type: list[CouponInfoV2]
+        :type user_coupons: list[:class:`huaweicloudsdkbss.v2.CouponInfoV2`]
         """
         self._user_coupons = user_coupons
 
@@ -101,7 +110,7 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
         优惠券使用的最大数量。 具体请参见表4。
 
         :return: The coupon_max_use_quantity of this ListOrderCouponsByOrderIdResponse.
-        :rtype: list[CouponMaxUseQuantity]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.CouponMaxUseQuantity`]
         """
         return self._coupon_max_use_quantity
 
@@ -112,7 +121,7 @@ class ListOrderCouponsByOrderIdResponse(SdkResponse):
         优惠券使用的最大数量。 具体请参见表4。
 
         :param coupon_max_use_quantity: The coupon_max_use_quantity of this ListOrderCouponsByOrderIdResponse.
-        :type: list[CouponMaxUseQuantity]
+        :type coupon_max_use_quantity: list[:class:`huaweicloudsdkbss.v2.CouponMaxUseQuantity`]
         """
         self._coupon_max_use_quantity = coupon_max_use_quantity
 

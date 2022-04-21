@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVolumesByTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListVolumesByTagsRequestBody:
     }
 
     def __init__(self, action=None, limit=None, matches=None, offset=None, tags=None):
-        """ListVolumesByTagsRequestBody - a model defined in huaweicloud sdk"""
+        """ListVolumesByTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作标识。  根据标签查询云硬盘实例详情时使用“filter”。
+        :type action: str
+        :param limit: 查询记录数。最小值1，最大值1000，默认为1000。返回的结果中记录数不超过limit值
+        :type limit: int
+        :param matches: 资源本身支持的查询条件。标签列表中的标签key值不允许重复。
+        :type matches: list[:class:`huaweicloudsdkevs.v2.Match`]
+        :param offset: 索引位置。最小值0，默认为0。返回的结果中第一条记录为符合查询条件的第“offset值+1”条记录
+        :type offset: int
+        :param tags: 标签的键值对。标签列表中最多包含10个key 。标签列表中的标签key值不允许重复。标签列表中多个key之间是“与”的关系，云硬盘必须满足请求中所有key才会匹配出来。
+        :type tags: list[:class:`huaweicloudsdkevs.v2.TagsForListVolumes`]
+        """
         
         
 
@@ -76,7 +89,7 @@ class ListVolumesByTagsRequestBody:
         操作标识。  根据标签查询云硬盘实例详情时使用“filter”。
 
         :param action: The action of this ListVolumesByTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -98,7 +111,7 @@ class ListVolumesByTagsRequestBody:
         查询记录数。最小值1，最大值1000，默认为1000。返回的结果中记录数不超过limit值
 
         :param limit: The limit of this ListVolumesByTagsRequestBody.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -109,7 +122,7 @@ class ListVolumesByTagsRequestBody:
         资源本身支持的查询条件。标签列表中的标签key值不允许重复。
 
         :return: The matches of this ListVolumesByTagsRequestBody.
-        :rtype: list[Match]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.Match`]
         """
         return self._matches
 
@@ -120,7 +133,7 @@ class ListVolumesByTagsRequestBody:
         资源本身支持的查询条件。标签列表中的标签key值不允许重复。
 
         :param matches: The matches of this ListVolumesByTagsRequestBody.
-        :type: list[Match]
+        :type matches: list[:class:`huaweicloudsdkevs.v2.Match`]
         """
         self._matches = matches
 
@@ -142,7 +155,7 @@ class ListVolumesByTagsRequestBody:
         索引位置。最小值0，默认为0。返回的结果中第一条记录为符合查询条件的第“offset值+1”条记录
 
         :param offset: The offset of this ListVolumesByTagsRequestBody.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -153,7 +166,7 @@ class ListVolumesByTagsRequestBody:
         标签的键值对。标签列表中最多包含10个key 。标签列表中的标签key值不允许重复。标签列表中多个key之间是“与”的关系，云硬盘必须满足请求中所有key才会匹配出来。
 
         :return: The tags of this ListVolumesByTagsRequestBody.
-        :rtype: list[TagsForListVolumes]
+        :rtype: list[:class:`huaweicloudsdkevs.v2.TagsForListVolumes`]
         """
         return self._tags
 
@@ -164,7 +177,7 @@ class ListVolumesByTagsRequestBody:
         标签的键值对。标签列表中最多包含10个key 。标签列表中的标签key值不允许重复。标签列表中多个key之间是“与”的关系，云硬盘必须满足请求中所有key才会匹配出来。
 
         :param tags: The tags of this ListVolumesByTagsRequestBody.
-        :type: list[TagsForListVolumes]
+        :type tags: list[:class:`huaweicloudsdkevs.v2.TagsForListVolumes`]
         """
         self._tags = tags
 

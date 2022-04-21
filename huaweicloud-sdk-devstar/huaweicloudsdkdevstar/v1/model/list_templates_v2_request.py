@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplatesV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListTemplatesV2Request:
     }
 
     def __init__(self, x_language=None, action_id=None, body=None):
-        """ListTemplatesV2Request - a model defined in huaweicloud sdk"""
+        """ListTemplatesV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
+        :type x_language: str
+        :param action_id: 请填写固定值“query”。
+        :type action_id: str
+        :param body: Body of the ListTemplatesV2Request
+        :type body: :class:`huaweicloudsdkdevstar.v1.TemplateQueryV2`
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListTemplatesV2Request:
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :param x_language: The x_language of this ListTemplatesV2Request.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class ListTemplatesV2Request:
         请填写固定值“query”。
 
         :param action_id: The action_id of this ListTemplatesV2Request.
-        :type: str
+        :type action_id: str
         """
         self._action_id = action_id
 
@@ -99,7 +108,7 @@ class ListTemplatesV2Request:
 
 
         :return: The body of this ListTemplatesV2Request.
-        :rtype: TemplateQueryV2
+        :rtype: :class:`huaweicloudsdkdevstar.v1.TemplateQueryV2`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class ListTemplatesV2Request:
 
 
         :param body: The body of this ListTemplatesV2Request.
-        :type: TemplateQueryV2
+        :type body: :class:`huaweicloudsdkdevstar.v1.TemplateQueryV2`
         """
         self._body = body
 

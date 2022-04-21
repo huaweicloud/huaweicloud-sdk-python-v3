@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateEdgeApplicationVersionRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateEdgeApplicationVersionRequest:
     }
 
     def __init__(self, edge_app_id=None, version=None, body=None):
-        """UpdateEdgeApplicationVersionRequest - a model defined in huaweicloud sdk"""
+        """UpdateEdgeApplicationVersionRequest
+
+        The model defined in huaweicloud sdk
+
+        :param edge_app_id: 应用ID，应用唯一。
+        :type edge_app_id: str
+        :param version: 应用版本,应用内版本唯一。
+        :type version: str
+        :param body: Body of the UpdateEdgeApplicationVersionRequest
+        :type body: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeAppVersionDTO`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateEdgeApplicationVersionRequest:
         应用ID，应用唯一。
 
         :param edge_app_id: The edge_app_id of this UpdateEdgeApplicationVersionRequest.
-        :type: str
+        :type edge_app_id: str
         """
         self._edge_app_id = edge_app_id
 
@@ -88,7 +97,7 @@ class UpdateEdgeApplicationVersionRequest:
         应用版本,应用内版本唯一。
 
         :param version: The version of this UpdateEdgeApplicationVersionRequest.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -98,7 +107,7 @@ class UpdateEdgeApplicationVersionRequest:
 
 
         :return: The body of this UpdateEdgeApplicationVersionRequest.
-        :rtype: UpdateEdgeAppVersionDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeAppVersionDTO`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateEdgeApplicationVersionRequest:
 
 
         :param body: The body of this UpdateEdgeApplicationVersionRequest.
-        :type: UpdateEdgeAppVersionDTO
+        :type body: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeAppVersionDTO`
         """
         self._body = body
 

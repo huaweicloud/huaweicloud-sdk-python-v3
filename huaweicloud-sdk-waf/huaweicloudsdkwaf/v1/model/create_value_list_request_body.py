@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateValueListRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateValueListRequestBody:
     }
 
     def __init__(self, name=None, type=None, values=None, description=None):
-        """CreateValueListRequestBody - a model defined in huaweicloud sdk"""
+        """CreateValueListRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 引用表名称，只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64
+        :type name: str
+        :param type: 引用表类型，参见枚举列表
+        :type type: str
+        :param values: 引用表的值
+        :type values: list[str]
+        :param description: 引用表描述，最长128字符
+        :type description: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class CreateValueListRequestBody:
         引用表名称，只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64
 
         :param name: The name of this CreateValueListRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -92,7 +103,7 @@ class CreateValueListRequestBody:
         引用表类型，参见枚举列表
 
         :param type: The type of this CreateValueListRequestBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -114,7 +125,7 @@ class CreateValueListRequestBody:
         引用表的值
 
         :param values: The values of this CreateValueListRequestBody.
-        :type: list[str]
+        :type values: list[str]
         """
         self._values = values
 
@@ -136,7 +147,7 @@ class CreateValueListRequestBody:
         引用表描述，最长128字符
 
         :param description: The description of this CreateValueListRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

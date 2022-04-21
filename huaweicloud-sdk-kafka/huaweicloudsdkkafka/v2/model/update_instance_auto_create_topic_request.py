@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateInstanceAutoCreateTopicRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateInstanceAutoCreateTopicRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateInstanceAutoCreateTopicRequest - a model defined in huaweicloud sdk"""
+        """UpdateInstanceAutoCreateTopicRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the UpdateInstanceAutoCreateTopicRequest
+        :type body: :class:`huaweicloudsdkkafka.v2.UpdateInstanceAutoCreateTopicReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateInstanceAutoCreateTopicRequest:
         实例ID。
 
         :param instance_id: The instance_id of this UpdateInstanceAutoCreateTopicRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class UpdateInstanceAutoCreateTopicRequest:
 
 
         :return: The body of this UpdateInstanceAutoCreateTopicRequest.
-        :rtype: UpdateInstanceAutoCreateTopicReq
+        :rtype: :class:`huaweicloudsdkkafka.v2.UpdateInstanceAutoCreateTopicReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateInstanceAutoCreateTopicRequest:
 
 
         :param body: The body of this UpdateInstanceAutoCreateTopicRequest.
-        :type: UpdateInstanceAutoCreateTopicReq
+        :type body: :class:`huaweicloudsdkkafka.v2.UpdateInstanceAutoCreateTopicReq`
         """
         self._body = body
 

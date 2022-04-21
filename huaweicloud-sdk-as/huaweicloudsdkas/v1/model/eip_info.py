@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EipInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EipInfo:
     }
 
     def __init__(self, ip_type=None, bandwidth=None):
-        """EipInfo - a model defined in huaweicloud sdk"""
+        """EipInfo
+
+        The model defined in huaweicloud sdk
+
+        :param ip_type: 弹性IP地址类型。类型枚举值：5_bgp：全动态BGP;5_sbgp：静态BGP;5_telcom：中国电信;5_union：中国联通;详情请参见《虚拟私有云接口参考》“申请弹性公网IP”章节的“publicip”字段说明。
+        :type ip_type: str
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkas.v1.BandwidthInfo`
+        """
         
         
 
@@ -61,7 +68,7 @@ class EipInfo:
         弹性IP地址类型。类型枚举值：5_bgp：全动态BGP;5_sbgp：静态BGP;5_telcom：中国电信;5_union：中国联通;详情请参见《虚拟私有云接口参考》“申请弹性公网IP”章节的“publicip”字段说明。
 
         :param ip_type: The ip_type of this EipInfo.
-        :type: str
+        :type ip_type: str
         """
         self._ip_type = ip_type
 
@@ -71,7 +78,7 @@ class EipInfo:
 
 
         :return: The bandwidth of this EipInfo.
-        :rtype: BandwidthInfo
+        :rtype: :class:`huaweicloudsdkas.v1.BandwidthInfo`
         """
         return self._bandwidth
 
@@ -81,7 +88,7 @@ class EipInfo:
 
 
         :param bandwidth: The bandwidth of this EipInfo.
-        :type: BandwidthInfo
+        :type bandwidth: :class:`huaweicloudsdkas.v1.BandwidthInfo`
         """
         self._bandwidth = bandwidth
 

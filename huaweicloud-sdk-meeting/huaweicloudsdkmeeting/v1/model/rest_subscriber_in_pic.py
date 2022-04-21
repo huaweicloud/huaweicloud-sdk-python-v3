@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestSubscriberInPic:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RestSubscriberInPic:
     }
 
     def __init__(self, index=None, subscriber=None, is_assist_stream=None):
-        """RestSubscriberInPic - a model defined in huaweicloud sdk"""
+        """RestSubscriberInPic
+
+        The model defined in huaweicloud sdk
+
+        :param index: 多画面中每个画面的编号，编号从1开始
+        :type index: int
+        :param subscriber: 每个画面中会话标识，即Call_ID，通过会议状态通知获取
+        :type subscriber: list[str]
+        :param is_assist_stream: 是否为辅流 0： 不是辅流 1： 是辅流
+        :type is_assist_stream: int
+        """
         
         
 
@@ -68,7 +77,7 @@ class RestSubscriberInPic:
         多画面中每个画面的编号，编号从1开始
 
         :param index: The index of this RestSubscriberInPic.
-        :type: int
+        :type index: int
         """
         self._index = index
 
@@ -90,7 +99,7 @@ class RestSubscriberInPic:
         每个画面中会话标识，即Call_ID，通过会议状态通知获取
 
         :param subscriber: The subscriber of this RestSubscriberInPic.
-        :type: list[str]
+        :type subscriber: list[str]
         """
         self._subscriber = subscriber
 
@@ -112,7 +121,7 @@ class RestSubscriberInPic:
         是否为辅流 0： 不是辅流 1： 是辅流
 
         :param is_assist_stream: The is_assist_stream of this RestSubscriberInPic.
-        :type: int
+        :type is_assist_stream: int
         """
         self._is_assist_stream = is_assist_stream
 

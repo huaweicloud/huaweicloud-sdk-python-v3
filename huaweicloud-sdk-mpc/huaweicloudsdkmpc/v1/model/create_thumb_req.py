@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateThumbReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateThumbReq:
     }
 
     def __init__(self, input=None, output=None, user_data=None, thumbnail_para=None, tar=None, sync=None, original_dir=None):
-        """CreateThumbReq - a model defined in huaweicloud sdk"""
+        """CreateThumbReq
+
+        The model defined in huaweicloud sdk
+
+        :param input: 
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        :param user_data: 用户自定义数据。 
+        :type user_data: str
+        :param thumbnail_para: 
+        :type thumbnail_para: :class:`huaweicloudsdkmpc.v1.ThumbnailPara`
+        :param tar: 是否压缩抽帧图片生成tar包。  取值如下： - 0：压缩。 - 1：不压缩 默认值：1 
+        :type tar: int
+        :param sync: 是否同步处理，同步处理是指不下载全部文件，快速定位到截图位置进行截图。  取值如下： - 0：排队处理。 - 1：同步处理，暂只支持按时间点截单张图。 默认值：0 
+        :type sync: int
+        :param original_dir: 是否使用原始输出目录。  取值如下： - 0：不使用原始输出目录，下发的输出目录后面追加随机目录，防止截图文件outputUri相同被覆盖。 - 1：使用原始输出目录。 默认值：0 
+        :type original_dir: int
+        """
         
         
 
@@ -73,7 +90,7 @@ class CreateThumbReq:
 
 
         :return: The input of this CreateThumbReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._input
 
@@ -83,7 +100,7 @@ class CreateThumbReq:
 
 
         :param input: The input of this CreateThumbReq.
-        :type: ObsObjInfo
+        :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._input = input
 
@@ -93,7 +110,7 @@ class CreateThumbReq:
 
 
         :return: The output of this CreateThumbReq.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -103,7 +120,7 @@ class CreateThumbReq:
 
 
         :param output: The output of this CreateThumbReq.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 
@@ -125,7 +142,7 @@ class CreateThumbReq:
         用户自定义数据。 
 
         :param user_data: The user_data of this CreateThumbReq.
-        :type: str
+        :type user_data: str
         """
         self._user_data = user_data
 
@@ -135,7 +152,7 @@ class CreateThumbReq:
 
 
         :return: The thumbnail_para of this CreateThumbReq.
-        :rtype: ThumbnailPara
+        :rtype: :class:`huaweicloudsdkmpc.v1.ThumbnailPara`
         """
         return self._thumbnail_para
 
@@ -145,7 +162,7 @@ class CreateThumbReq:
 
 
         :param thumbnail_para: The thumbnail_para of this CreateThumbReq.
-        :type: ThumbnailPara
+        :type thumbnail_para: :class:`huaweicloudsdkmpc.v1.ThumbnailPara`
         """
         self._thumbnail_para = thumbnail_para
 
@@ -167,7 +184,7 @@ class CreateThumbReq:
         是否压缩抽帧图片生成tar包。  取值如下： - 0：压缩。 - 1：不压缩 默认值：1 
 
         :param tar: The tar of this CreateThumbReq.
-        :type: int
+        :type tar: int
         """
         self._tar = tar
 
@@ -189,7 +206,7 @@ class CreateThumbReq:
         是否同步处理，同步处理是指不下载全部文件，快速定位到截图位置进行截图。  取值如下： - 0：排队处理。 - 1：同步处理，暂只支持按时间点截单张图。 默认值：0 
 
         :param sync: The sync of this CreateThumbReq.
-        :type: int
+        :type sync: int
         """
         self._sync = sync
 
@@ -211,7 +228,7 @@ class CreateThumbReq:
         是否使用原始输出目录。  取值如下： - 0：不使用原始输出目录，下发的输出目录后面追加随机目录，防止截图文件outputUri相同被覆盖。 - 1：使用原始输出目录。 默认值：0 
 
         :param original_dir: The original_dir of this CreateThumbReq.
-        :type: int
+        :type original_dir: int
         """
         self._original_dir = original_dir
 

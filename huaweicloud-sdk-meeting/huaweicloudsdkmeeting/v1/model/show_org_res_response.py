@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowOrgResResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowOrgResResponse(SdkResponse):
     }
 
     def __init__(self, used_rec_storage=None, used_accounts_count=None, used_live_count=None, conf_count=None, conf_length=None, active_attendee_count=None, total_attendee_count=None):
-        """ShowOrgResResponse - a model defined in huaweicloud sdk"""
+        """ShowOrgResResponse
+
+        The model defined in huaweicloud sdk
+
+        :param used_rec_storage: 已用录制存储空间(单位G)
+        :type used_rec_storage: float
+        :param used_accounts_count: 已用的企业并发数
+        :type used_accounts_count: int
+        :param used_live_count: 已用的直播推流资源
+        :type used_live_count: int
+        :param conf_count: 会议总次数
+        :type conf_count: int
+        :param conf_length: 会议总时长
+        :type conf_length: int
+        :param active_attendee_count: 活跃用户数
+        :type active_attendee_count: int
+        :param total_attendee_count: 总与会人数
+        :type total_attendee_count: int
+        """
         
         super(ShowOrgResResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class ShowOrgResResponse(SdkResponse):
         已用录制存储空间(单位G)
 
         :param used_rec_storage: The used_rec_storage of this ShowOrgResResponse.
-        :type: float
+        :type used_rec_storage: float
         """
         self._used_rec_storage = used_rec_storage
 
@@ -110,7 +127,7 @@ class ShowOrgResResponse(SdkResponse):
         已用的企业并发数
 
         :param used_accounts_count: The used_accounts_count of this ShowOrgResResponse.
-        :type: int
+        :type used_accounts_count: int
         """
         self._used_accounts_count = used_accounts_count
 
@@ -132,7 +149,7 @@ class ShowOrgResResponse(SdkResponse):
         已用的直播推流资源
 
         :param used_live_count: The used_live_count of this ShowOrgResResponse.
-        :type: int
+        :type used_live_count: int
         """
         self._used_live_count = used_live_count
 
@@ -154,7 +171,7 @@ class ShowOrgResResponse(SdkResponse):
         会议总次数
 
         :param conf_count: The conf_count of this ShowOrgResResponse.
-        :type: int
+        :type conf_count: int
         """
         self._conf_count = conf_count
 
@@ -176,7 +193,7 @@ class ShowOrgResResponse(SdkResponse):
         会议总时长
 
         :param conf_length: The conf_length of this ShowOrgResResponse.
-        :type: int
+        :type conf_length: int
         """
         self._conf_length = conf_length
 
@@ -198,7 +215,7 @@ class ShowOrgResResponse(SdkResponse):
         活跃用户数
 
         :param active_attendee_count: The active_attendee_count of this ShowOrgResResponse.
-        :type: int
+        :type active_attendee_count: int
         """
         self._active_attendee_count = active_attendee_count
 
@@ -220,7 +237,7 @@ class ShowOrgResResponse(SdkResponse):
         总与会人数
 
         :param total_attendee_count: The total_attendee_count of this ShowOrgResResponse.
-        :type: int
+        :type total_attendee_count: int
         """
         self._total_attendee_count = total_attendee_count
 

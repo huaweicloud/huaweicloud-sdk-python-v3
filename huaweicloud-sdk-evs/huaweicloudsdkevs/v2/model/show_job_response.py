@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowJobResponse(SdkResponse):
     }
 
     def __init__(self, status=None, entities=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None):
-        """ShowJobResponse - a model defined in huaweicloud sdk"""
+        """ShowJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param status: job的状态。SUCCESS：成功。RUNNING：运行中。FAIL：失败。INIT：正在初始化。
+        :type status: str
+        :param entities: 
+        :type entities: :class:`huaweicloudsdkevs.v2.JobEntities`
+        :param job_id: job的ID。
+        :type job_id: str
+        :param job_type: job的类型。createVolume：创建单个云硬盘。batchCreateVolume：批量创建云硬盘。deleteVolume：删除单个云硬盘。extendVolume：扩容云硬盘。bulkDeleteVolume：批量删除云硬盘。deleteSingleVolume：批量删除时逐个删除单个云硬盘。retypeVolume：对云硬盘做硬盘类型变更。
+        :type job_type: str
+        :param begin_time: 开始时间。
+        :type begin_time: str
+        :param end_time: 结束时间。
+        :type end_time: str
+        :param error_code: job执行失败时的错误码。
+        :type error_code: str
+        :param fail_reason: job执行失败时的错误原因。
+        :type fail_reason: str
+        """
         
         super(ShowJobResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class ShowJobResponse(SdkResponse):
         job的状态。SUCCESS：成功。RUNNING：运行中。FAIL：失败。INIT：正在初始化。
 
         :param status: The status of this ShowJobResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -103,7 +122,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :return: The entities of this ShowJobResponse.
-        :rtype: JobEntities
+        :rtype: :class:`huaweicloudsdkevs.v2.JobEntities`
         """
         return self._entities
 
@@ -113,7 +132,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :param entities: The entities of this ShowJobResponse.
-        :type: JobEntities
+        :type entities: :class:`huaweicloudsdkevs.v2.JobEntities`
         """
         self._entities = entities
 
@@ -135,7 +154,7 @@ class ShowJobResponse(SdkResponse):
         job的ID。
 
         :param job_id: The job_id of this ShowJobResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -157,7 +176,7 @@ class ShowJobResponse(SdkResponse):
         job的类型。createVolume：创建单个云硬盘。batchCreateVolume：批量创建云硬盘。deleteVolume：删除单个云硬盘。extendVolume：扩容云硬盘。bulkDeleteVolume：批量删除云硬盘。deleteSingleVolume：批量删除时逐个删除单个云硬盘。retypeVolume：对云硬盘做硬盘类型变更。
 
         :param job_type: The job_type of this ShowJobResponse.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -179,7 +198,7 @@ class ShowJobResponse(SdkResponse):
         开始时间。
 
         :param begin_time: The begin_time of this ShowJobResponse.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -201,7 +220,7 @@ class ShowJobResponse(SdkResponse):
         结束时间。
 
         :param end_time: The end_time of this ShowJobResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -223,7 +242,7 @@ class ShowJobResponse(SdkResponse):
         job执行失败时的错误码。
 
         :param error_code: The error_code of this ShowJobResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -245,7 +264,7 @@ class ShowJobResponse(SdkResponse):
         job执行失败时的错误原因。
 
         :param fail_reason: The fail_reason of this ShowJobResponse.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EnvPods:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class EnvPods:
     }
 
     def __init__(self, name=None, value=None):
-        """EnvPods - a model defined in huaweicloud sdk"""
+        """EnvPods
+
+        The model defined in huaweicloud sdk
+
+        :param name: 环境变量的key，由大小写字母或下划线开头，由数字、大小写字母、下划线组成，最大长度2048个字符，不允许重复
+        :type name: str
+        :param value: 环境变量的value，最大长度20480个字符。value、value_from和field_path必须三选一使用。
+        :type value: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class EnvPods:
         环境变量的key，由大小写字母或下划线开头，由数字、大小写字母、下划线组成，最大长度2048个字符，不允许重复
 
         :param name: The name of this EnvPods.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -84,7 +91,7 @@ class EnvPods:
         环境变量的value，最大长度20480个字符。value、value_from和field_path必须三选一使用。
 
         :param value: The value of this EnvPods.
-        :type: str
+        :type value: str
         """
         self._value = value
 

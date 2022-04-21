@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteQualityEnhanceTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteQualityEnhanceTemplateRequest:
     }
 
     def __init__(self, template_id=None):
-        """DeleteQualityEnhanceTemplateRequest - a model defined in huaweicloud sdk"""
+        """DeleteQualityEnhanceTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param template_id: 模板ID 
+        :type template_id: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteQualityEnhanceTemplateRequest:
         模板ID 
 
         :param template_id: The template_id of this DeleteQualityEnhanceTemplateRequest.
-        :type: int
+        :type template_id: int
         """
         self._template_id = template_id
 

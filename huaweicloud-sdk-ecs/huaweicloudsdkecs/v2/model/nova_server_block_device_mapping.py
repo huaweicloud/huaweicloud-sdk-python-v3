@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaServerBlockDeviceMapping:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class NovaServerBlockDeviceMapping:
     }
 
     def __init__(self, source_type=None, destination_type=None, guest_format=None, device_name=None, delete_on_termination=None, boot_index=None, uuid=None, volume_size=None, volume_type=None):
-        """NovaServerBlockDeviceMapping - a model defined in huaweicloud sdk"""
+        """NovaServerBlockDeviceMapping
+
+        The model defined in huaweicloud sdk
+
+        :param source_type: 卷设备的源头类型，当前只支持volume、image、snapshot、blank类型。  当使用卷创建云服务器时，source_type设置为volume；当使用镜像创建云服务器时，source_type设置为image；当使用快照创建云服务器时，source_type设置为snapshot；当创建空数据卷时，source_type设置为blank。  - 说明： -  - 当卷设备的源头类型为snapshot时，且boot_index为0，则该快照对应的云硬盘必须为系统盘。
+        :type source_type: str
+        :param destination_type: 卷设备的目标类型，当前仅支持volume类型。  - volume：卷。 - local：本地文件，当前不支持该类型。
+        :type destination_type: str
+        :param guest_format: local文件系统格式，例如：swap, ext4。  当前不支持该功能。
+        :type guest_format: str
+        :param device_name: 卷设备名称。  &gt; 说明： &gt;  &gt; 该字段已经废弃。 &gt;  &gt; 用户指定的device_name不会生效，系统会默认生成一个device_name。
+        :type device_name: str
+        :param delete_on_termination: 删除弹性云服务器时，是否删除卷，默认值false。  true：删除弹性云服务器时，删除卷  false：删除弹性云服务器时，不删除卷
+        :type delete_on_termination: bool
+        :param boot_index: 启动标识，“0”代表启动盘，“-1“代表非启动盘。  &gt; 说明： &gt;  &gt; 当卷设备的源头类型全为volume时，boot_index的值有一个为0。
+        :type boot_index: str
+        :param uuid: 当source_type值是volume时，uuid为卷的uuid；  当source_type值是snapshot时，uuid为快照的uuid；  当source_type值是image时，uuid为镜像的uuid；
+        :type uuid: str
+        :param volume_size: 卷大小，整数，在source_type是image或blank，destination_type是volume的时候必选。  单位为GB。
+        :type volume_size: int
+        :param volume_type: 卷类型，在source_type是image，destination_type是volume时建议填写。  卷类型取值范围请参考 EVS 服务 [磁盘类型介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
+        :type volume_type: str
+        """
         
         
 
@@ -97,7 +118,7 @@ class NovaServerBlockDeviceMapping:
         卷设备的源头类型，当前只支持volume、image、snapshot、blank类型。  当使用卷创建云服务器时，source_type设置为volume；当使用镜像创建云服务器时，source_type设置为image；当使用快照创建云服务器时，source_type设置为snapshot；当创建空数据卷时，source_type设置为blank。  - 说明： -  - 当卷设备的源头类型为snapshot时，且boot_index为0，则该快照对应的云硬盘必须为系统盘。
 
         :param source_type: The source_type of this NovaServerBlockDeviceMapping.
-        :type: str
+        :type source_type: str
         """
         self._source_type = source_type
 
@@ -119,7 +140,7 @@ class NovaServerBlockDeviceMapping:
         卷设备的目标类型，当前仅支持volume类型。  - volume：卷。 - local：本地文件，当前不支持该类型。
 
         :param destination_type: The destination_type of this NovaServerBlockDeviceMapping.
-        :type: str
+        :type destination_type: str
         """
         self._destination_type = destination_type
 
@@ -141,7 +162,7 @@ class NovaServerBlockDeviceMapping:
         local文件系统格式，例如：swap, ext4。  当前不支持该功能。
 
         :param guest_format: The guest_format of this NovaServerBlockDeviceMapping.
-        :type: str
+        :type guest_format: str
         """
         self._guest_format = guest_format
 
@@ -163,7 +184,7 @@ class NovaServerBlockDeviceMapping:
         卷设备名称。  > 说明： >  > 该字段已经废弃。 >  > 用户指定的device_name不会生效，系统会默认生成一个device_name。
 
         :param device_name: The device_name of this NovaServerBlockDeviceMapping.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -185,7 +206,7 @@ class NovaServerBlockDeviceMapping:
         删除弹性云服务器时，是否删除卷，默认值false。  true：删除弹性云服务器时，删除卷  false：删除弹性云服务器时，不删除卷
 
         :param delete_on_termination: The delete_on_termination of this NovaServerBlockDeviceMapping.
-        :type: bool
+        :type delete_on_termination: bool
         """
         self._delete_on_termination = delete_on_termination
 
@@ -207,7 +228,7 @@ class NovaServerBlockDeviceMapping:
         启动标识，“0”代表启动盘，“-1“代表非启动盘。  > 说明： >  > 当卷设备的源头类型全为volume时，boot_index的值有一个为0。
 
         :param boot_index: The boot_index of this NovaServerBlockDeviceMapping.
-        :type: str
+        :type boot_index: str
         """
         self._boot_index = boot_index
 
@@ -229,7 +250,7 @@ class NovaServerBlockDeviceMapping:
         当source_type值是volume时，uuid为卷的uuid；  当source_type值是snapshot时，uuid为快照的uuid；  当source_type值是image时，uuid为镜像的uuid；
 
         :param uuid: The uuid of this NovaServerBlockDeviceMapping.
-        :type: str
+        :type uuid: str
         """
         self._uuid = uuid
 
@@ -251,7 +272,7 @@ class NovaServerBlockDeviceMapping:
         卷大小，整数，在source_type是image或blank，destination_type是volume的时候必选。  单位为GB。
 
         :param volume_size: The volume_size of this NovaServerBlockDeviceMapping.
-        :type: int
+        :type volume_size: int
         """
         self._volume_size = volume_size
 
@@ -273,7 +294,7 @@ class NovaServerBlockDeviceMapping:
         卷类型，在source_type是image，destination_type是volume时建议填写。  卷类型取值范围请参考 EVS 服务 [磁盘类型介绍](https://support.huaweicloud.com/productdesc-evs/zh-cn_topic_0044524691.html)。
 
         :param volume_type: The volume_type of this NovaServerBlockDeviceMapping.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 

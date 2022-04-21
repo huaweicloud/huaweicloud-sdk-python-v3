@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowApplicationConfigurationRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowApplicationConfigurationRequest:
     }
 
     def __init__(self, application_id=None, environment_id=None):
-        """ShowApplicationConfigurationRequest - a model defined in huaweicloud sdk"""
+        """ShowApplicationConfigurationRequest
+
+        The model defined in huaweicloud sdk
+
+        :param application_id: 应用ID。
+        :type application_id: str
+        :param environment_id: 环境ID，如果未提供，查询所有环境。
+        :type environment_id: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ShowApplicationConfigurationRequest:
         应用ID。
 
         :param application_id: The application_id of this ShowApplicationConfigurationRequest.
-        :type: str
+        :type application_id: str
         """
         self._application_id = application_id
 
@@ -84,7 +91,7 @@ class ShowApplicationConfigurationRequest:
         环境ID，如果未提供，查询所有环境。
 
         :param environment_id: The environment_id of this ShowApplicationConfigurationRequest.
-        :type: str
+        :type environment_id: str
         """
         self._environment_id = environment_id
 

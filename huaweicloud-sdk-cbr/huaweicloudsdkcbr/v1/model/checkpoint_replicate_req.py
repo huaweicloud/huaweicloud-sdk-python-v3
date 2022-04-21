@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckpointReplicateReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CheckpointReplicateReq:
     }
 
     def __init__(self, replicate=None):
-        """CheckpointReplicateReq - a model defined in huaweicloud sdk"""
+        """CheckpointReplicateReq
+
+        The model defined in huaweicloud sdk
+
+        :param replicate: 
+        :type replicate: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateParam`
+        """
         
         
 
@@ -45,7 +50,7 @@ class CheckpointReplicateReq:
 
 
         :return: The replicate of this CheckpointReplicateReq.
-        :rtype: CheckpointReplicateParam
+        :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateParam`
         """
         return self._replicate
 
@@ -55,7 +60,7 @@ class CheckpointReplicateReq:
 
 
         :param replicate: The replicate of this CheckpointReplicateReq.
-        :type: CheckpointReplicateParam
+        :type replicate: :class:`huaweicloudsdkcbr.v1.CheckpointReplicateParam`
         """
         self._replicate = replicate
 

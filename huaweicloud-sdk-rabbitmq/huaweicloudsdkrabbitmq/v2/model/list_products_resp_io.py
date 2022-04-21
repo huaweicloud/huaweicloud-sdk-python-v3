@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListProductsRespIo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListProductsRespIo:
     }
 
     def __init__(self, io_type=None, storage_spec_code=None, available_zones=None, unavailable_zones=None, volume_type=None):
-        """ListProductsRespIo - a model defined in huaweicloud sdk"""
+        """ListProductsRespIo
+
+        The model defined in huaweicloud sdk
+
+        :param io_type: IO类型。
+        :type io_type: str
+        :param storage_spec_code: IO规格。
+        :type storage_spec_code: str
+        :param available_zones: IO未售罄的可用区列表。
+        :type available_zones: list[str]
+        :param unavailable_zones: IO已售罄的不可用区列表。
+        :type unavailable_zones: list[str]
+        :param volume_type: 磁盘类型。
+        :type volume_type: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ListProductsRespIo:
         IO类型。
 
         :param io_type: The io_type of this ListProductsRespIo.
-        :type: str
+        :type io_type: str
         """
         self._io_type = io_type
 
@@ -100,7 +113,7 @@ class ListProductsRespIo:
         IO规格。
 
         :param storage_spec_code: The storage_spec_code of this ListProductsRespIo.
-        :type: str
+        :type storage_spec_code: str
         """
         self._storage_spec_code = storage_spec_code
 
@@ -122,7 +135,7 @@ class ListProductsRespIo:
         IO未售罄的可用区列表。
 
         :param available_zones: The available_zones of this ListProductsRespIo.
-        :type: list[str]
+        :type available_zones: list[str]
         """
         self._available_zones = available_zones
 
@@ -144,7 +157,7 @@ class ListProductsRespIo:
         IO已售罄的不可用区列表。
 
         :param unavailable_zones: The unavailable_zones of this ListProductsRespIo.
-        :type: list[str]
+        :type unavailable_zones: list[str]
         """
         self._unavailable_zones = unavailable_zones
 
@@ -166,7 +179,7 @@ class ListProductsRespIo:
         磁盘类型。
 
         :param volume_type: The volume_type of this ListProductsRespIo.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 

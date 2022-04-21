@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEdgeNodesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListEdgeNodesRequest:
     }
 
     def __init__(self, name=None, limit=None, offset=None, device_id=None, device_name=None, app_name=None, tags=None, ief_instance_id=None):
-        """ListEdgeNodesRequest - a model defined in huaweicloud sdk"""
+        """ListEdgeNodesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param name: 边缘节点名称，模糊匹配
+        :type name: str
+        :param limit: 每页显示的条目数量，取值范围1~1000，默认为500
+        :type limit: str
+        :param offset: 查询的起始位置，取值范围为非负整数，默认为0
+        :type offset: str
+        :param device_id: 按终端设备ID查找
+        :type device_id: str
+        :param device_name: 按绑定终端设备名称查找
+        :type device_name: str
+        :param app_name: 按应用名称查找
+        :type app_name: str
+        :param tags: 标签的key和value通过点连接， 多个标签通过逗号连接，如：tags&#x3D;key1.value1,key2.value2
+        :type tags: str
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class ListEdgeNodesRequest:
         边缘节点名称，模糊匹配
 
         :param name: The name of this ListEdgeNodesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -115,7 +134,7 @@ class ListEdgeNodesRequest:
         每页显示的条目数量，取值范围1~1000，默认为500
 
         :param limit: The limit of this ListEdgeNodesRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -137,7 +156,7 @@ class ListEdgeNodesRequest:
         查询的起始位置，取值范围为非负整数，默认为0
 
         :param offset: The offset of this ListEdgeNodesRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -159,7 +178,7 @@ class ListEdgeNodesRequest:
         按终端设备ID查找
 
         :param device_id: The device_id of this ListEdgeNodesRequest.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -181,7 +200,7 @@ class ListEdgeNodesRequest:
         按绑定终端设备名称查找
 
         :param device_name: The device_name of this ListEdgeNodesRequest.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -203,7 +222,7 @@ class ListEdgeNodesRequest:
         按应用名称查找
 
         :param app_name: The app_name of this ListEdgeNodesRequest.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 
@@ -225,7 +244,7 @@ class ListEdgeNodesRequest:
         标签的key和value通过点连接， 多个标签通过逗号连接，如：tags=key1.value1,key2.value2
 
         :param tags: The tags of this ListEdgeNodesRequest.
-        :type: str
+        :type tags: str
         """
         self._tags = tags
 
@@ -247,7 +266,7 @@ class ListEdgeNodesRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this ListEdgeNodesRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 

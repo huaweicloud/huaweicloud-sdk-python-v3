@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCompetitionScoreResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateCompetitionScoreResponse(SdkResponse):
     }
 
     def __init__(self, works_id=None):
-        """CreateCompetitionScoreResponse - a model defined in huaweicloud sdk"""
+        """CreateCompetitionScoreResponse
+
+        The model defined in huaweicloud sdk
+
+        :param works_id: 作品ID
+        :type works_id: str
+        """
         
         super(CreateCompetitionScoreResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateCompetitionScoreResponse(SdkResponse):
         作品ID
 
         :param works_id: The works_id of this CreateCompetitionScoreResponse.
-        :type: str
+        :type works_id: str
         """
         self._works_id = works_id
 

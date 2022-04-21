@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateCommandResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateCommandResponse(SdkResponse):
     }
 
     def __init__(self, command_id=None, response=None):
-        """CreateCommandResponse - a model defined in huaweicloud sdk"""
+        """CreateCommandResponse
+
+        The model defined in huaweicloud sdk
+
+        :param command_id: 设备命令ID，用于唯一标识一条命令，在下发设备命令时由物联网平台分配获得。
+        :type command_id: str
+        :param response: 设备上报的命令执行结果。Json格式，具体格式需要应用和设备约定。
+        :type response: object
+        """
         
         super(CreateCommandResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateCommandResponse(SdkResponse):
         设备命令ID，用于唯一标识一条命令，在下发设备命令时由物联网平台分配获得。
 
         :param command_id: The command_id of this CreateCommandResponse.
-        :type: str
+        :type command_id: str
         """
         self._command_id = command_id
 
@@ -85,7 +92,7 @@ class CreateCommandResponse(SdkResponse):
         设备上报的命令执行结果。Json格式，具体格式需要应用和设备约定。
 
         :param response: The response of this CreateCommandResponse.
-        :type: object
+        :type response: object
         """
         self._response = response
 

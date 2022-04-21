@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ParseCertificateSigningRequestRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ParseCertificateSigningRequestRequest:
     }
 
     def __init__(self, body=None):
-        """ParseCertificateSigningRequestRequest - a model defined in huaweicloud sdk"""
+        """ParseCertificateSigningRequestRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ParseCertificateSigningRequestRequest
+        :type body: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ParseCertificateSigningRequestRequest:
 
 
         :return: The body of this ParseCertificateSigningRequestRequest.
-        :rtype: ParseCertificateSigningRequestRequestBody
+        :rtype: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ParseCertificateSigningRequestRequest:
 
 
         :param body: The body of this ParseCertificateSigningRequestRequest.
-        :type: ParseCertificateSigningRequestRequestBody
+        :type body: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestRequestBody`
         """
         self._body = body
 

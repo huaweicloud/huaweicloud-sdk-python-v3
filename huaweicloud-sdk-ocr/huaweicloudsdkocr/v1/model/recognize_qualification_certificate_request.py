@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RecognizeQualificationCertificateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RecognizeQualificationCertificateRequest:
     }
 
     def __init__(self, body=None):
-        """RecognizeQualificationCertificateRequest - a model defined in huaweicloud sdk"""
+        """RecognizeQualificationCertificateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RecognizeQualificationCertificateRequest
+        :type body: :class:`huaweicloudsdkocr.v1.QualificationCertificateRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RecognizeQualificationCertificateRequest:
 
 
         :return: The body of this RecognizeQualificationCertificateRequest.
-        :rtype: QualificationCertificateRequestBody
+        :rtype: :class:`huaweicloudsdkocr.v1.QualificationCertificateRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RecognizeQualificationCertificateRequest:
 
 
         :param body: The body of this RecognizeQualificationCertificateRequest.
-        :type: QualificationCertificateRequestBody
+        :type body: :class:`huaweicloudsdkocr.v1.QualificationCertificateRequestBody`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobSuccessRatioRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowJobSuccessRatioRequest:
     }
 
     def __init__(self, job_id=None, start_time=None, end_time=None):
-        """ShowJobSuccessRatioRequest - a model defined in huaweicloud sdk"""
+        """ShowJobSuccessRatioRequest
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 构建的任务ID [获取项目下构建任务列表](https://support.huaweicloud.com/api-codeci/ShowJobListByProjectId.html)； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
+        :type job_id: str
+        :param start_time: 区间开始时间，格式yyyy-MM-dd。
+        :type start_time: str
+        :param end_time: 区间结束时间，格式yyyy-MM-dd。
+        :type end_time: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class ShowJobSuccessRatioRequest:
         构建的任务ID [获取项目下构建任务列表](https://support.huaweicloud.com/api-codeci/ShowJobListByProjectId.html)； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
         :param job_id: The job_id of this ShowJobSuccessRatioRequest.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -87,7 +96,7 @@ class ShowJobSuccessRatioRequest:
         区间开始时间，格式yyyy-MM-dd。
 
         :param start_time: The start_time of this ShowJobSuccessRatioRequest.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -109,7 +118,7 @@ class ShowJobSuccessRatioRequest:
         区间结束时间，格式yyyy-MM-dd。
 
         :param end_time: The end_time of this ShowJobSuccessRatioRequest.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 

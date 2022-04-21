@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePublicipBandwidthOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreatePublicipBandwidthOption:
     }
 
     def __init__(self, charge_mode=None, id=None, name=None, share_type=None, size=None):
-        """CreatePublicipBandwidthOption - a model defined in huaweicloud sdk"""
+        """CreatePublicipBandwidthOption
+
+        The model defined in huaweicloud sdk
+
+        :param charge_mode: 功能说明：按流量计费还是按带宽计费。 取值范围：bandwidth，traffic。  不填或为空时默认是bandwidth。  其中IPv6国外默认是bandwidth，国内默认是traffic。取值为traffic，表示流量计费。
+        :type charge_mode: str
+        :param id: 功能说明：带宽ID  创建WHOLE类型带宽的弹性公网IP时可以指定之前的共享带宽创建  取值范围：WHOLE类型的带宽ID 
+        :type id: str
+        :param name: 功能说明：带宽名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  如果share_type是PER，该参数必须带,如果share_type是WHOLE并且id有值，该参数会忽略。
+        :type name: str
+        :param share_type: 功能说明：带宽类型 取值范围：PER，WHOLE(PER为独占带宽，WHOLE是共享带宽)。 约束：该字段为WHOLE时，必须指定带宽ID。
+        :type share_type: str
+        :param size: 功能说明：带宽大小  取值范围：默认1Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。  约束：share_type是PER，该参数必须带，如果share_type是WHOLE并且id有值，该参数会忽略。  注意：调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s：默认最小单位为1Mbit/s。  300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。  大于1000Mbit/s：默认最小单位为500Mbit/s。
+        :type size: int
+        """
         
         
 
@@ -77,7 +90,7 @@ class CreatePublicipBandwidthOption:
         功能说明：按流量计费还是按带宽计费。 取值范围：bandwidth，traffic。  不填或为空时默认是bandwidth。  其中IPv6国外默认是bandwidth，国内默认是traffic。取值为traffic，表示流量计费。
 
         :param charge_mode: The charge_mode of this CreatePublicipBandwidthOption.
-        :type: str
+        :type charge_mode: str
         """
         self._charge_mode = charge_mode
 
@@ -99,7 +112,7 @@ class CreatePublicipBandwidthOption:
         功能说明：带宽ID  创建WHOLE类型带宽的弹性公网IP时可以指定之前的共享带宽创建  取值范围：WHOLE类型的带宽ID 
 
         :param id: The id of this CreatePublicipBandwidthOption.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -121,7 +134,7 @@ class CreatePublicipBandwidthOption:
         功能说明：带宽名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  如果share_type是PER，该参数必须带,如果share_type是WHOLE并且id有值，该参数会忽略。
 
         :param name: The name of this CreatePublicipBandwidthOption.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -143,7 +156,7 @@ class CreatePublicipBandwidthOption:
         功能说明：带宽类型 取值范围：PER，WHOLE(PER为独占带宽，WHOLE是共享带宽)。 约束：该字段为WHOLE时，必须指定带宽ID。
 
         :param share_type: The share_type of this CreatePublicipBandwidthOption.
-        :type: str
+        :type share_type: str
         """
         self._share_type = share_type
 
@@ -165,7 +178,7 @@ class CreatePublicipBandwidthOption:
         功能说明：带宽大小  取值范围：默认1Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。  约束：share_type是PER，该参数必须带，如果share_type是WHOLE并且id有值，该参数会忽略。  注意：调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s：默认最小单位为1Mbit/s。  300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。  大于1000Mbit/s：默认最小单位为500Mbit/s。
 
         :param size: The size of this CreatePublicipBandwidthOption.
-        :type: int
+        :type size: int
         """
         self._size = size
 

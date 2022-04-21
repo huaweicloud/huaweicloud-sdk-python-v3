@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaServer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -114,7 +113,97 @@ class NovaServer:
     }
 
     def __init__(self, name=None, id=None, status=None, created=None, updated=None, flavor=None, image=None, tenant_id=None, key_name=None, user_id=None, metadata=None, host_id=None, addresses=None, security_groups=None, links=None, os_dc_fdisk_config=None, os_ext_a_zavailability_zone=None, os_ext_srv_att_rhost=None, os_ext_srv_att_rhypervisor_hostname=None, os_ext_srv_att_rinstance_name=None, os_ext_st_spower_state=None, os_ext_st_stask_state=None, os_ext_st_svm_state=None, os_srv_us_glaunched_at=None, os_srv_us_gterminated_at=None, os_extended_volumesvolumes_attached=None, fault=None, description=None, host_status=None, os_ext_srv_att_rhostname=None, os_ext_srv_att_rreservation_id=None, os_ext_srv_att_rlaunch_index=None, os_ext_srv_att_rkernel_id=None, os_ext_srv_att_rramdisk_id=None, os_ext_srv_att_rroot_device_name=None, os_ext_srv_att_ruser_data=None, tags=None, locked=None, access_i_pv4=None, access_i_pv6=None, config_drive=None, progress=None, osscheduler_hints=None):
-        """NovaServer - a model defined in huaweicloud sdk"""
+        """NovaServer
+
+        The model defined in huaweicloud sdk
+
+        :param name: 云服务器名称。
+        :type name: str
+        :param id: 云服务器唯一标识。
+        :type id: str
+        :param status: 云服务器当前状态信息。  取值范围： ACTIVE， BUILD，DELETED，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
+        :type status: str
+        :param created: 云服务器创建时间。 时间格式例如：2019-05-22T07:48:53Z
+        :type created: str
+        :param updated: 云服务器上一次更新时间。时间格式例如：2019-05-22T07:48:53Z
+        :type updated: str
+        :param flavor: 
+        :type flavor: :class:`huaweicloudsdkecs.v2.NovaServerFlavor`
+        :param image: 
+        :type image: :class:`huaweicloudsdkecs.v2.NovaServerImage`
+        :param tenant_id: 云服务器所属租户ID。即项目id，与project_id表示相同的概念。
+        :type tenant_id: str
+        :param key_name: SSH密钥名称。
+        :type key_name: str
+        :param user_id: 云服务器所属用户ID。
+        :type user_id: str
+        :param metadata: 云服务器元数据。
+        :type metadata: dict(str, str)
+        :param host_id: 云服务器对应的主机ID。
+        :type host_id: str
+        :param addresses: 云服务器对应的网络地址信息。
+        :type addresses: dict(str, list[NovaNetwork])
+        :param security_groups: 云服务器所属安全组列表。
+        :type security_groups: list[:class:`huaweicloudsdkecs.v2.NovaServerSecurityGroup`]
+        :param links: 云服务器相关标记快捷链接信息。
+        :type links: list[:class:`huaweicloudsdkecs.v2.NovaLink`]
+        :param os_dc_fdisk_config: 扩展属性，磁盘配置方式。对镜像启动云服务器生效。  取值范围：  - AUTO: API使用单个分区构建目标磁盘大小的云服务器。 API会自动调整文件系统以适应整个分区。 - MANUAL：API使用源映像中的分区方案和文件系统构建服务器。如果目标磁盘较大，则API不分区剩余的磁盘空间。
+        :type os_dc_fdisk_config: str
+        :param os_ext_a_zavailability_zone: 扩展属性，可用分区编码。
+        :type os_ext_a_zavailability_zone: str
+        :param os_ext_srv_att_rhost: 扩展属性，与主机宿主名称。
+        :type os_ext_srv_att_rhost: str
+        :param os_ext_srv_att_rhypervisor_hostname: 扩展属性，hypervisor主机名。
+        :type os_ext_srv_att_rhypervisor_hostname: str
+        :param os_ext_srv_att_rinstance_name: 扩展属性，云服务器实例ID。
+        :type os_ext_srv_att_rinstance_name: str
+        :param os_ext_st_spower_state: 扩展属性，云服务器电源状态。  取值范围：0，1，2，3，4  - 0 : pending - 1 : running - 2 : paused - 3 : shutdown - 4 : crashed
+        :type os_ext_st_spower_state: int
+        :param os_ext_st_stask_state: 扩展属性，云服务器任务状态。  取值范围：  SHOUTOFF, RESIZE, REBUILD, VERIFY_RESIZE, REVERT_RESIZE, PAUSED, MIGRATING, SUSPENDED, RESCUE, ERROR, DELETED,SOFT_DELETED,SHELVED,SHELVED_OFFLOADED  取值范围请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)表3。
+        :type os_ext_st_stask_state: str
+        :param os_ext_st_svm_state: 扩展属性，云服务器状态。  取值范围：  ACTIVE,BUILDING,STOPPED,RESIZED,PAUSED,SUSPENDED,RESCUED,ERROR,DELETED,SOFT_DELETED,SHELVED,SHELVED_OFFLOADED  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
+        :type os_ext_st_svm_state: str
+        :param os_srv_us_glaunched_at: 扩展属性，云服务器启动时间。时间格式例如：2019-05-22T07:48:19.000000
+        :type os_srv_us_glaunched_at: str
+        :param os_srv_us_gterminated_at: 扩展属性，云服务器关闭时间。  时间格式例如：2019-05-22T07:48:19.000000
+        :type os_srv_us_gterminated_at: str
+        :param os_extended_volumesvolumes_attached: 云服务器挂载的云磁盘信息。
+        :type os_extended_volumesvolumes_attached: list[:class:`huaweicloudsdkecs.v2.NovaServerVolume`]
+        :param fault: 
+        :type fault: :class:`huaweicloudsdkecs.v2.NovaServerFault`
+        :param description: 弹性云服务器的描述信息。  微版本2.19后支持
+        :type description: str
+        :param host_status: nova-compute状态。  - UP：服务正常 - UNKNOWN：状态未知 - DOWN：服务异常 - MAINTENANCE：维护状态 - 空字符串：弹性云服务器无主机信息
+        :type host_status: str
+        :param os_ext_srv_att_rhostname: 弹性云服务器的主机名。  微版本2.3后支持
+        :type os_ext_srv_att_rhostname: str
+        :param os_ext_srv_att_rreservation_id: 批量创建场景，弹性云服务器的预留ID。  微版本2.3后支持
+        :type os_ext_srv_att_rreservation_id: str
+        :param os_ext_srv_att_rlaunch_index: 批量创建场景，弹性云服务器的启动顺序。  微版本2.3后支持
+        :type os_ext_srv_att_rlaunch_index: int
+        :param os_ext_srv_att_rkernel_id: 若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空。  微版本2.3后支持
+        :type os_ext_srv_att_rkernel_id: str
+        :param os_ext_srv_att_rramdisk_id: 若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。  微版本2.3后支持
+        :type os_ext_srv_att_rramdisk_id: str
+        :param os_ext_srv_att_rroot_device_name: 弹性云服务器系统盘的设备名称。  微版本2.3后支持
+        :type os_ext_srv_att_rroot_device_name: str
+        :param os_ext_srv_att_ruser_data: 创建弹性云服务器时指定的user_data。  微版本2.3后支持
+        :type os_ext_srv_att_ruser_data: str
+        :param tags: 云服务器的标签列表。  系统近期对标签功能进行了升级，升级后，返回的tag值遵循如下规则：  - key与value使用“&#x3D;”连接，如“key&#x3D;value”。 - 如果value为空字符串，则仅返回key。
+        :type tags: list[str]
+        :param locked: 当云服务器被锁时为True，否则为False。  微版本2.9后支持
+        :type locked: bool
+        :param access_i_pv4: 预留属性。
+        :type access_i_pv4: str
+        :param access_i_pv6: 预留属性。
+        :type access_i_pv6: str
+        :param config_drive: 预留属性。
+        :type config_drive: str
+        :param progress: 预留属性
+        :type progress: int
+        :param osscheduler_hints: 
+        :type osscheduler_hints: :class:`huaweicloudsdkecs.v2.NovaServerSchedulerHints`
+        """
         
         
 
@@ -236,7 +325,7 @@ class NovaServer:
         云服务器名称。
 
         :param name: The name of this NovaServer.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -258,7 +347,7 @@ class NovaServer:
         云服务器唯一标识。
 
         :param id: The id of this NovaServer.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -280,7 +369,7 @@ class NovaServer:
         云服务器当前状态信息。  取值范围： ACTIVE， BUILD，DELETED，ERROR，HARD_REBOOT，MIGRATING，REBOOT，RESIZE，REVERT_RESIZE，SHELVED，SHELVED_OFFLOADED，SHUTOFF，UNKNOWN，VERIFY_RESIZE  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
 
         :param status: The status of this NovaServer.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -302,7 +391,7 @@ class NovaServer:
         云服务器创建时间。 时间格式例如：2019-05-22T07:48:53Z
 
         :param created: The created of this NovaServer.
-        :type: str
+        :type created: str
         """
         self._created = created
 
@@ -324,7 +413,7 @@ class NovaServer:
         云服务器上一次更新时间。时间格式例如：2019-05-22T07:48:53Z
 
         :param updated: The updated of this NovaServer.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 
@@ -334,7 +423,7 @@ class NovaServer:
 
 
         :return: The flavor of this NovaServer.
-        :rtype: NovaServerFlavor
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaServerFlavor`
         """
         return self._flavor
 
@@ -344,7 +433,7 @@ class NovaServer:
 
 
         :param flavor: The flavor of this NovaServer.
-        :type: NovaServerFlavor
+        :type flavor: :class:`huaweicloudsdkecs.v2.NovaServerFlavor`
         """
         self._flavor = flavor
 
@@ -354,7 +443,7 @@ class NovaServer:
 
 
         :return: The image of this NovaServer.
-        :rtype: NovaServerImage
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaServerImage`
         """
         return self._image
 
@@ -364,7 +453,7 @@ class NovaServer:
 
 
         :param image: The image of this NovaServer.
-        :type: NovaServerImage
+        :type image: :class:`huaweicloudsdkecs.v2.NovaServerImage`
         """
         self._image = image
 
@@ -386,7 +475,7 @@ class NovaServer:
         云服务器所属租户ID。即项目id，与project_id表示相同的概念。
 
         :param tenant_id: The tenant_id of this NovaServer.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 
@@ -408,7 +497,7 @@ class NovaServer:
         SSH密钥名称。
 
         :param key_name: The key_name of this NovaServer.
-        :type: str
+        :type key_name: str
         """
         self._key_name = key_name
 
@@ -430,7 +519,7 @@ class NovaServer:
         云服务器所属用户ID。
 
         :param user_id: The user_id of this NovaServer.
-        :type: str
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -452,7 +541,7 @@ class NovaServer:
         云服务器元数据。
 
         :param metadata: The metadata of this NovaServer.
-        :type: dict(str, str)
+        :type metadata: dict(str, str)
         """
         self._metadata = metadata
 
@@ -474,7 +563,7 @@ class NovaServer:
         云服务器对应的主机ID。
 
         :param host_id: The host_id of this NovaServer.
-        :type: str
+        :type host_id: str
         """
         self._host_id = host_id
 
@@ -496,7 +585,7 @@ class NovaServer:
         云服务器对应的网络地址信息。
 
         :param addresses: The addresses of this NovaServer.
-        :type: dict(str, list[NovaNetwork])
+        :type addresses: dict(str, list[NovaNetwork])
         """
         self._addresses = addresses
 
@@ -507,7 +596,7 @@ class NovaServer:
         云服务器所属安全组列表。
 
         :return: The security_groups of this NovaServer.
-        :rtype: list[NovaServerSecurityGroup]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NovaServerSecurityGroup`]
         """
         return self._security_groups
 
@@ -518,7 +607,7 @@ class NovaServer:
         云服务器所属安全组列表。
 
         :param security_groups: The security_groups of this NovaServer.
-        :type: list[NovaServerSecurityGroup]
+        :type security_groups: list[:class:`huaweicloudsdkecs.v2.NovaServerSecurityGroup`]
         """
         self._security_groups = security_groups
 
@@ -529,7 +618,7 @@ class NovaServer:
         云服务器相关标记快捷链接信息。
 
         :return: The links of this NovaServer.
-        :rtype: list[NovaLink]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NovaLink`]
         """
         return self._links
 
@@ -540,7 +629,7 @@ class NovaServer:
         云服务器相关标记快捷链接信息。
 
         :param links: The links of this NovaServer.
-        :type: list[NovaLink]
+        :type links: list[:class:`huaweicloudsdkecs.v2.NovaLink`]
         """
         self._links = links
 
@@ -562,7 +651,7 @@ class NovaServer:
         扩展属性，磁盘配置方式。对镜像启动云服务器生效。  取值范围：  - AUTO: API使用单个分区构建目标磁盘大小的云服务器。 API会自动调整文件系统以适应整个分区。 - MANUAL：API使用源映像中的分区方案和文件系统构建服务器。如果目标磁盘较大，则API不分区剩余的磁盘空间。
 
         :param os_dc_fdisk_config: The os_dc_fdisk_config of this NovaServer.
-        :type: str
+        :type os_dc_fdisk_config: str
         """
         self._os_dc_fdisk_config = os_dc_fdisk_config
 
@@ -584,7 +673,7 @@ class NovaServer:
         扩展属性，可用分区编码。
 
         :param os_ext_a_zavailability_zone: The os_ext_a_zavailability_zone of this NovaServer.
-        :type: str
+        :type os_ext_a_zavailability_zone: str
         """
         self._os_ext_a_zavailability_zone = os_ext_a_zavailability_zone
 
@@ -606,7 +695,7 @@ class NovaServer:
         扩展属性，与主机宿主名称。
 
         :param os_ext_srv_att_rhost: The os_ext_srv_att_rhost of this NovaServer.
-        :type: str
+        :type os_ext_srv_att_rhost: str
         """
         self._os_ext_srv_att_rhost = os_ext_srv_att_rhost
 
@@ -628,7 +717,7 @@ class NovaServer:
         扩展属性，hypervisor主机名。
 
         :param os_ext_srv_att_rhypervisor_hostname: The os_ext_srv_att_rhypervisor_hostname of this NovaServer.
-        :type: str
+        :type os_ext_srv_att_rhypervisor_hostname: str
         """
         self._os_ext_srv_att_rhypervisor_hostname = os_ext_srv_att_rhypervisor_hostname
 
@@ -650,7 +739,7 @@ class NovaServer:
         扩展属性，云服务器实例ID。
 
         :param os_ext_srv_att_rinstance_name: The os_ext_srv_att_rinstance_name of this NovaServer.
-        :type: str
+        :type os_ext_srv_att_rinstance_name: str
         """
         self._os_ext_srv_att_rinstance_name = os_ext_srv_att_rinstance_name
 
@@ -672,7 +761,7 @@ class NovaServer:
         扩展属性，云服务器电源状态。  取值范围：0，1，2，3，4  - 0 : pending - 1 : running - 2 : paused - 3 : shutdown - 4 : crashed
 
         :param os_ext_st_spower_state: The os_ext_st_spower_state of this NovaServer.
-        :type: int
+        :type os_ext_st_spower_state: int
         """
         self._os_ext_st_spower_state = os_ext_st_spower_state
 
@@ -694,7 +783,7 @@ class NovaServer:
         扩展属性，云服务器任务状态。  取值范围：  SHOUTOFF, RESIZE, REBUILD, VERIFY_RESIZE, REVERT_RESIZE, PAUSED, MIGRATING, SUSPENDED, RESCUE, ERROR, DELETED,SOFT_DELETED,SHELVED,SHELVED_OFFLOADED  取值范围请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)表3。
 
         :param os_ext_st_stask_state: The os_ext_st_stask_state of this NovaServer.
-        :type: str
+        :type os_ext_st_stask_state: str
         """
         self._os_ext_st_stask_state = os_ext_st_stask_state
 
@@ -716,7 +805,7 @@ class NovaServer:
         扩展属性，云服务器状态。  取值范围：  ACTIVE,BUILDING,STOPPED,RESIZED,PAUSED,SUSPENDED,RESCUED,ERROR,DELETED,SOFT_DELETED,SHELVED,SHELVED_OFFLOADED  云服务器状态说明请参考[云服务器状态](https://support.huaweicloud.com/api-ecs/ecs_08_0002.html)。
 
         :param os_ext_st_svm_state: The os_ext_st_svm_state of this NovaServer.
-        :type: str
+        :type os_ext_st_svm_state: str
         """
         self._os_ext_st_svm_state = os_ext_st_svm_state
 
@@ -738,7 +827,7 @@ class NovaServer:
         扩展属性，云服务器启动时间。时间格式例如：2019-05-22T07:48:19.000000
 
         :param os_srv_us_glaunched_at: The os_srv_us_glaunched_at of this NovaServer.
-        :type: str
+        :type os_srv_us_glaunched_at: str
         """
         self._os_srv_us_glaunched_at = os_srv_us_glaunched_at
 
@@ -760,7 +849,7 @@ class NovaServer:
         扩展属性，云服务器关闭时间。  时间格式例如：2019-05-22T07:48:19.000000
 
         :param os_srv_us_gterminated_at: The os_srv_us_gterminated_at of this NovaServer.
-        :type: str
+        :type os_srv_us_gterminated_at: str
         """
         self._os_srv_us_gterminated_at = os_srv_us_gterminated_at
 
@@ -771,7 +860,7 @@ class NovaServer:
         云服务器挂载的云磁盘信息。
 
         :return: The os_extended_volumesvolumes_attached of this NovaServer.
-        :rtype: list[NovaServerVolume]
+        :rtype: list[:class:`huaweicloudsdkecs.v2.NovaServerVolume`]
         """
         return self._os_extended_volumesvolumes_attached
 
@@ -782,7 +871,7 @@ class NovaServer:
         云服务器挂载的云磁盘信息。
 
         :param os_extended_volumesvolumes_attached: The os_extended_volumesvolumes_attached of this NovaServer.
-        :type: list[NovaServerVolume]
+        :type os_extended_volumesvolumes_attached: list[:class:`huaweicloudsdkecs.v2.NovaServerVolume`]
         """
         self._os_extended_volumesvolumes_attached = os_extended_volumesvolumes_attached
 
@@ -792,7 +881,7 @@ class NovaServer:
 
 
         :return: The fault of this NovaServer.
-        :rtype: NovaServerFault
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaServerFault`
         """
         return self._fault
 
@@ -802,7 +891,7 @@ class NovaServer:
 
 
         :param fault: The fault of this NovaServer.
-        :type: NovaServerFault
+        :type fault: :class:`huaweicloudsdkecs.v2.NovaServerFault`
         """
         self._fault = fault
 
@@ -824,7 +913,7 @@ class NovaServer:
         弹性云服务器的描述信息。  微版本2.19后支持
 
         :param description: The description of this NovaServer.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -846,7 +935,7 @@ class NovaServer:
         nova-compute状态。  - UP：服务正常 - UNKNOWN：状态未知 - DOWN：服务异常 - MAINTENANCE：维护状态 - 空字符串：弹性云服务器无主机信息
 
         :param host_status: The host_status of this NovaServer.
-        :type: str
+        :type host_status: str
         """
         self._host_status = host_status
 
@@ -868,7 +957,7 @@ class NovaServer:
         弹性云服务器的主机名。  微版本2.3后支持
 
         :param os_ext_srv_att_rhostname: The os_ext_srv_att_rhostname of this NovaServer.
-        :type: str
+        :type os_ext_srv_att_rhostname: str
         """
         self._os_ext_srv_att_rhostname = os_ext_srv_att_rhostname
 
@@ -890,7 +979,7 @@ class NovaServer:
         批量创建场景，弹性云服务器的预留ID。  微版本2.3后支持
 
         :param os_ext_srv_att_rreservation_id: The os_ext_srv_att_rreservation_id of this NovaServer.
-        :type: str
+        :type os_ext_srv_att_rreservation_id: str
         """
         self._os_ext_srv_att_rreservation_id = os_ext_srv_att_rreservation_id
 
@@ -912,7 +1001,7 @@ class NovaServer:
         批量创建场景，弹性云服务器的启动顺序。  微版本2.3后支持
 
         :param os_ext_srv_att_rlaunch_index: The os_ext_srv_att_rlaunch_index of this NovaServer.
-        :type: int
+        :type os_ext_srv_att_rlaunch_index: int
         """
         self._os_ext_srv_att_rlaunch_index = os_ext_srv_att_rlaunch_index
 
@@ -934,7 +1023,7 @@ class NovaServer:
         若使用AMI格式的镜像，则表示kernel image的UUID；否则，留空。  微版本2.3后支持
 
         :param os_ext_srv_att_rkernel_id: The os_ext_srv_att_rkernel_id of this NovaServer.
-        :type: str
+        :type os_ext_srv_att_rkernel_id: str
         """
         self._os_ext_srv_att_rkernel_id = os_ext_srv_att_rkernel_id
 
@@ -956,7 +1045,7 @@ class NovaServer:
         若使用AMI格式镜像，则表示ramdisk image的UUID；否则，留空。  微版本2.3后支持
 
         :param os_ext_srv_att_rramdisk_id: The os_ext_srv_att_rramdisk_id of this NovaServer.
-        :type: str
+        :type os_ext_srv_att_rramdisk_id: str
         """
         self._os_ext_srv_att_rramdisk_id = os_ext_srv_att_rramdisk_id
 
@@ -978,7 +1067,7 @@ class NovaServer:
         弹性云服务器系统盘的设备名称。  微版本2.3后支持
 
         :param os_ext_srv_att_rroot_device_name: The os_ext_srv_att_rroot_device_name of this NovaServer.
-        :type: str
+        :type os_ext_srv_att_rroot_device_name: str
         """
         self._os_ext_srv_att_rroot_device_name = os_ext_srv_att_rroot_device_name
 
@@ -1000,7 +1089,7 @@ class NovaServer:
         创建弹性云服务器时指定的user_data。  微版本2.3后支持
 
         :param os_ext_srv_att_ruser_data: The os_ext_srv_att_ruser_data of this NovaServer.
-        :type: str
+        :type os_ext_srv_att_ruser_data: str
         """
         self._os_ext_srv_att_ruser_data = os_ext_srv_att_ruser_data
 
@@ -1022,7 +1111,7 @@ class NovaServer:
         云服务器的标签列表。  系统近期对标签功能进行了升级，升级后，返回的tag值遵循如下规则：  - key与value使用“=”连接，如“key=value”。 - 如果value为空字符串，则仅返回key。
 
         :param tags: The tags of this NovaServer.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -1044,7 +1133,7 @@ class NovaServer:
         当云服务器被锁时为True，否则为False。  微版本2.9后支持
 
         :param locked: The locked of this NovaServer.
-        :type: bool
+        :type locked: bool
         """
         self._locked = locked
 
@@ -1066,7 +1155,7 @@ class NovaServer:
         预留属性。
 
         :param access_i_pv4: The access_i_pv4 of this NovaServer.
-        :type: str
+        :type access_i_pv4: str
         """
         self._access_i_pv4 = access_i_pv4
 
@@ -1088,7 +1177,7 @@ class NovaServer:
         预留属性。
 
         :param access_i_pv6: The access_i_pv6 of this NovaServer.
-        :type: str
+        :type access_i_pv6: str
         """
         self._access_i_pv6 = access_i_pv6
 
@@ -1110,7 +1199,7 @@ class NovaServer:
         预留属性。
 
         :param config_drive: The config_drive of this NovaServer.
-        :type: str
+        :type config_drive: str
         """
         self._config_drive = config_drive
 
@@ -1132,7 +1221,7 @@ class NovaServer:
         预留属性
 
         :param progress: The progress of this NovaServer.
-        :type: int
+        :type progress: int
         """
         self._progress = progress
 
@@ -1142,7 +1231,7 @@ class NovaServer:
 
 
         :return: The osscheduler_hints of this NovaServer.
-        :rtype: NovaServerSchedulerHints
+        :rtype: :class:`huaweicloudsdkecs.v2.NovaServerSchedulerHints`
         """
         return self._osscheduler_hints
 
@@ -1152,7 +1241,7 @@ class NovaServer:
 
 
         :param osscheduler_hints: The osscheduler_hints of this NovaServer.
-        :type: NovaServerSchedulerHints
+        :type osscheduler_hints: :class:`huaweicloudsdkecs.v2.NovaServerSchedulerHints`
         """
         self._osscheduler_hints = osscheduler_hints
 

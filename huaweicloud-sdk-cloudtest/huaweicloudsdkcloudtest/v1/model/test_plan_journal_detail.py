@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TestPlanJournalDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class TestPlanJournalDetail:
     }
 
     def __init__(self, updated=None, added=None, deleted=None, journalized_type=None, type=None):
-        """TestPlanJournalDetail - a model defined in huaweicloud sdk"""
+        """TestPlanJournalDetail
+
+        The model defined in huaweicloud sdk
+
+        :param updated: 测试计划基础信息变更，包括计划名称，测试类型，计划处理者、版本号、关联迭代、开始日期、截至日期、描述
+        :type updated: list[:class:`huaweicloudsdkcloudtest.v1.AttributeChange`]
+        :param added: 测试计划资源的添加记录（工作项或者测试用例）
+        :type added: list[:class:`huaweicloudsdkcloudtest.v1.NameAndId`]
+        :param deleted: 测试计划资源的移除记录（工作项或者测试用例）
+        :type deleted: list[:class:`huaweicloudsdkcloudtest.v1.NameAndId`]
+        :param journalized_type: 表明该条变更记录的具体变更类型，例如测试用例（testCase），需求（issue）
+        :type journalized_type: str
+        :param type: 表明该条变更记录属于基础信息变更还是资源（需求添加移除、用例添加移除）变更
+        :type type: str
+        """
         
         
 
@@ -67,7 +80,7 @@ class TestPlanJournalDetail:
         测试计划基础信息变更，包括计划名称，测试类型，计划处理者、版本号、关联迭代、开始日期、截至日期、描述
 
         :return: The updated of this TestPlanJournalDetail.
-        :rtype: list[AttributeChange]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.AttributeChange`]
         """
         return self._updated
 
@@ -78,7 +91,7 @@ class TestPlanJournalDetail:
         测试计划基础信息变更，包括计划名称，测试类型，计划处理者、版本号、关联迭代、开始日期、截至日期、描述
 
         :param updated: The updated of this TestPlanJournalDetail.
-        :type: list[AttributeChange]
+        :type updated: list[:class:`huaweicloudsdkcloudtest.v1.AttributeChange`]
         """
         self._updated = updated
 
@@ -89,7 +102,7 @@ class TestPlanJournalDetail:
         测试计划资源的添加记录（工作项或者测试用例）
 
         :return: The added of this TestPlanJournalDetail.
-        :rtype: list[NameAndId]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.NameAndId`]
         """
         return self._added
 
@@ -100,7 +113,7 @@ class TestPlanJournalDetail:
         测试计划资源的添加记录（工作项或者测试用例）
 
         :param added: The added of this TestPlanJournalDetail.
-        :type: list[NameAndId]
+        :type added: list[:class:`huaweicloudsdkcloudtest.v1.NameAndId`]
         """
         self._added = added
 
@@ -111,7 +124,7 @@ class TestPlanJournalDetail:
         测试计划资源的移除记录（工作项或者测试用例）
 
         :return: The deleted of this TestPlanJournalDetail.
-        :rtype: list[NameAndId]
+        :rtype: list[:class:`huaweicloudsdkcloudtest.v1.NameAndId`]
         """
         return self._deleted
 
@@ -122,7 +135,7 @@ class TestPlanJournalDetail:
         测试计划资源的移除记录（工作项或者测试用例）
 
         :param deleted: The deleted of this TestPlanJournalDetail.
-        :type: list[NameAndId]
+        :type deleted: list[:class:`huaweicloudsdkcloudtest.v1.NameAndId`]
         """
         self._deleted = deleted
 
@@ -144,7 +157,7 @@ class TestPlanJournalDetail:
         表明该条变更记录的具体变更类型，例如测试用例（testCase），需求（issue）
 
         :param journalized_type: The journalized_type of this TestPlanJournalDetail.
-        :type: str
+        :type journalized_type: str
         """
         self._journalized_type = journalized_type
 
@@ -166,7 +179,7 @@ class TestPlanJournalDetail:
         表明该条变更记录属于基础信息变更还是资源（需求添加移除、用例添加移除）变更
 
         :param type: The type of this TestPlanJournalDetail.
-        :type: str
+        :type type: str
         """
         self._type = type
 

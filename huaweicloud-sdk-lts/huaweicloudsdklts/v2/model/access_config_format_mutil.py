@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessConfigFormatMutil:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AccessConfigFormatMutil:
     }
 
     def __init__(self, mode=None, value=None):
-        """AccessConfigFormatMutil - a model defined in huaweicloud sdk"""
+        """AccessConfigFormatMutil
+
+        The model defined in huaweicloud sdk
+
+        :param mode: 单行日志。time：日志时间，regular：正则模式。
+        :type mode: str
+        :param value: 日志时间。 当mode为\&quot;regular\&quot;，则输入正则表达式 当mode为\&quot;time\&quot;，则时间通配符：用日志打印时间来标识一条日志数据，通过时间通配符来匹配日志，每条日志的行首显示日志的打印时间；如果日志中的时间格式为：2019-01-01 23:59:59，时间通配符应该填写为：YYYY-MM-DD hh:mm:ss；如果日志中的时间格式为：19-1-1 23:59:59，时间通配符应该填写为：YY-M-D hh:mm:ss
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class AccessConfigFormatMutil:
         单行日志。time：日志时间，regular：正则模式。
 
         :param mode: The mode of this AccessConfigFormatMutil.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -83,7 +90,7 @@ class AccessConfigFormatMutil:
         日志时间。 当mode为\"regular\"，则输入正则表达式 当mode为\"time\"，则时间通配符：用日志打印时间来标识一条日志数据，通过时间通配符来匹配日志，每条日志的行首显示日志的打印时间；如果日志中的时间格式为：2019-01-01 23:59:59，时间通配符应该填写为：YYYY-MM-DD hh:mm:ss；如果日志中的时间格式为：19-1-1 23:59:59，时间通配符应该填写为：YY-M-D hh:mm:ss
 
         :param value: The value of this AccessConfigFormatMutil.
-        :type: str
+        :type value: str
         """
         self._value = value
 

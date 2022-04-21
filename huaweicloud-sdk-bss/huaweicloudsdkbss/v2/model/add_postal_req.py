@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddPostalReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class AddPostalReq:
     }
 
     def __init__(self, recipient=None, province=None, city=None, district=None, address=None, zipcode=None, mobile_phone=None, is_default=None):
-        """AddPostalReq - a model defined in huaweicloud sdk"""
+        """AddPostalReq
+
+        The model defined in huaweicloud sdk
+
+        :param recipient: 收件人姓名。
+        :type recipient: str
+        :param province: 省、自治区或直辖市。例如：江苏省。
+        :type province: str
+        :param city: 市/区。例如：南京市。
+        :type city: str
+        :param district: 区。例如：雨花台区。
+        :type district: str
+        :param address: 邮寄详细地址。
+        :type address: str
+        :param zipcode: 邮寄地址所在邮编。
+        :type zipcode: str
+        :param mobile_phone: 手机号码，不带国家码。
+        :type mobile_phone: str
+        :param is_default: 是否默认地址，默认为0。 1：默认地址0：非默认地址
+        :type is_default: int
+        """
         
         
 
@@ -87,7 +106,7 @@ class AddPostalReq:
         收件人姓名。
 
         :param recipient: The recipient of this AddPostalReq.
-        :type: str
+        :type recipient: str
         """
         self._recipient = recipient
 
@@ -109,7 +128,7 @@ class AddPostalReq:
         省、自治区或直辖市。例如：江苏省。
 
         :param province: The province of this AddPostalReq.
-        :type: str
+        :type province: str
         """
         self._province = province
 
@@ -131,7 +150,7 @@ class AddPostalReq:
         市/区。例如：南京市。
 
         :param city: The city of this AddPostalReq.
-        :type: str
+        :type city: str
         """
         self._city = city
 
@@ -153,7 +172,7 @@ class AddPostalReq:
         区。例如：雨花台区。
 
         :param district: The district of this AddPostalReq.
-        :type: str
+        :type district: str
         """
         self._district = district
 
@@ -175,7 +194,7 @@ class AddPostalReq:
         邮寄详细地址。
 
         :param address: The address of this AddPostalReq.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -197,7 +216,7 @@ class AddPostalReq:
         邮寄地址所在邮编。
 
         :param zipcode: The zipcode of this AddPostalReq.
-        :type: str
+        :type zipcode: str
         """
         self._zipcode = zipcode
 
@@ -219,7 +238,7 @@ class AddPostalReq:
         手机号码，不带国家码。
 
         :param mobile_phone: The mobile_phone of this AddPostalReq.
-        :type: str
+        :type mobile_phone: str
         """
         self._mobile_phone = mobile_phone
 
@@ -241,7 +260,7 @@ class AddPostalReq:
         是否默认地址，默认为0。 1：默认地址0：非默认地址
 
         :param is_default: The is_default of this AddPostalReq.
-        :type: int
+        :type is_default: int
         """
         self._is_default = is_default
 

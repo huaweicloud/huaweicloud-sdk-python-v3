@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListKeypairsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListKeypairsResponse(SdkResponse):
     }
 
     def __init__(self, keypairs=None, page_info=None):
-        """ListKeypairsResponse - a model defined in huaweicloud sdk"""
+        """ListKeypairsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param keypairs: SSH密钥对信息详情
+        :type keypairs: list[:class:`huaweicloudsdkkps.v3.Keypairs`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkkps.v3.PageInfo`
+        """
         
         super(ListKeypairsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListKeypairsResponse(SdkResponse):
         SSH密钥对信息详情
 
         :return: The keypairs of this ListKeypairsResponse.
-        :rtype: list[Keypairs]
+        :rtype: list[:class:`huaweicloudsdkkps.v3.Keypairs`]
         """
         return self._keypairs
 
@@ -63,7 +70,7 @@ class ListKeypairsResponse(SdkResponse):
         SSH密钥对信息详情
 
         :param keypairs: The keypairs of this ListKeypairsResponse.
-        :type: list[Keypairs]
+        :type keypairs: list[:class:`huaweicloudsdkkps.v3.Keypairs`]
         """
         self._keypairs = keypairs
 
@@ -73,7 +80,7 @@ class ListKeypairsResponse(SdkResponse):
 
 
         :return: The page_info of this ListKeypairsResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkkps.v3.PageInfo`
         """
         return self._page_info
 
@@ -83,7 +90,7 @@ class ListKeypairsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListKeypairsResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkkps.v3.PageInfo`
         """
         self._page_info = page_info
 

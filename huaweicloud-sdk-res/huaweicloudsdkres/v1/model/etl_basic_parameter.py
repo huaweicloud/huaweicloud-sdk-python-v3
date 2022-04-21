@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EtlBasicParameter:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class EtlBasicParameter:
     }
 
     def __init__(self, user_features=None, item_features=None, rank_etl_filter=None):
-        """EtlBasicParameter - a model defined in huaweicloud sdk"""
+        """EtlBasicParameter
+
+        The model defined in huaweicloud sdk
+
+        :param user_features: 用户特征。
+        :type user_features: list[:class:`huaweicloudsdkres.v1.FeatureTransformation`]
+        :param item_features: 物品特征。
+        :type item_features: list[:class:`huaweicloudsdkres.v1.FeatureTransformation`]
+        :param rank_etl_filter: 
+        :type rank_etl_filter: :class:`huaweicloudsdkres.v1.RankETLFilter`
+        """
         
         
 
@@ -57,7 +66,7 @@ class EtlBasicParameter:
         用户特征。
 
         :return: The user_features of this EtlBasicParameter.
-        :rtype: list[FeatureTransformation]
+        :rtype: list[:class:`huaweicloudsdkres.v1.FeatureTransformation`]
         """
         return self._user_features
 
@@ -68,7 +77,7 @@ class EtlBasicParameter:
         用户特征。
 
         :param user_features: The user_features of this EtlBasicParameter.
-        :type: list[FeatureTransformation]
+        :type user_features: list[:class:`huaweicloudsdkres.v1.FeatureTransformation`]
         """
         self._user_features = user_features
 
@@ -79,7 +88,7 @@ class EtlBasicParameter:
         物品特征。
 
         :return: The item_features of this EtlBasicParameter.
-        :rtype: list[FeatureTransformation]
+        :rtype: list[:class:`huaweicloudsdkres.v1.FeatureTransformation`]
         """
         return self._item_features
 
@@ -90,7 +99,7 @@ class EtlBasicParameter:
         物品特征。
 
         :param item_features: The item_features of this EtlBasicParameter.
-        :type: list[FeatureTransformation]
+        :type item_features: list[:class:`huaweicloudsdkres.v1.FeatureTransformation`]
         """
         self._item_features = item_features
 
@@ -100,7 +109,7 @@ class EtlBasicParameter:
 
 
         :return: The rank_etl_filter of this EtlBasicParameter.
-        :rtype: RankETLFilter
+        :rtype: :class:`huaweicloudsdkres.v1.RankETLFilter`
         """
         return self._rank_etl_filter
 
@@ -110,7 +119,7 @@ class EtlBasicParameter:
 
 
         :param rank_etl_filter: The rank_etl_filter of this EtlBasicParameter.
-        :type: RankETLFilter
+        :type rank_etl_filter: :class:`huaweicloudsdkres.v1.RankETLFilter`
         """
         self._rank_etl_filter = rank_etl_filter
 

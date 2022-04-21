@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApiRuntimeDefinitionV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListApiRuntimeDefinitionV2Request:
     }
 
     def __init__(self, instance_id=None, api_id=None, env_id=None):
-        """ListApiRuntimeDefinitionV2Request - a model defined in huaweicloud sdk"""
+        """ListApiRuntimeDefinitionV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param api_id: API的编号
+        :type api_id: str
+        :param env_id: API的发布环境编号
+        :type env_id: str
+        """
         
         
 
@@ -66,7 +75,7 @@ class ListApiRuntimeDefinitionV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListApiRuntimeDefinitionV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class ListApiRuntimeDefinitionV2Request:
         API的编号
 
         :param api_id: The api_id of this ListApiRuntimeDefinitionV2Request.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -110,7 +119,7 @@ class ListApiRuntimeDefinitionV2Request:
         API的发布环境编号
 
         :param env_id: The env_id of this ListApiRuntimeDefinitionV2Request.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 

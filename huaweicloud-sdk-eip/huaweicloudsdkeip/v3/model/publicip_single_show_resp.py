@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PublicipSingleShowResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -86,7 +85,69 @@ class PublicipSingleShowResp:
     }
 
     def __init__(self, id=None, project_id=None, ip_version=None, public_ip_address=None, public_ipv6_address=None, network_type=None, status=None, description=None, public_border_group=None, created_at=None, updated_at=None, type=None, vnic=None, bandwidth=None, enterprise_project_id=None, billing_info=None, lock_status=None, associate_instance_type=None, associate_instance_id=None, publicip_pool_id=None, publicip_pool_name=None, alias=None, profile=None, fake_network_type=None, tags=None, associate_instance_metadata=None, associate_mode=None, allow_share_bandwidth_types=None, cascade_delete_by_instance=None):
-        """PublicipSingleShowResp - a model defined in huaweicloud sdk"""
+        """PublicipSingleShowResp
+
+        The model defined in huaweicloud sdk
+
+        :param id: 功能说明：弹性公网IP唯一标识
+        :type id: str
+        :param project_id: 功能说明：项目ID
+        :type project_id: str
+        :param ip_version: 功能说明：IP版本信息 取值范围：4表示公网IP地址为public_ip_address地址;6表示公网IP地址为public_ipv6_address地址\&quot;
+        :type ip_version: int
+        :param public_ip_address: 功能说明：弹性公网IP或者IPv6端口的地址
+        :type public_ip_address: str
+        :param public_ipv6_address: 功能说明：IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
+        :type public_ipv6_address: str
+        :param network_type: 废弃，功能由publicip_pool_name继承，默认不显示。功能说明：弹性公网IP的网络类型
+        :type network_type: str
+        :param status: 功能说明：弹性公网IP的状态  取值范围：冻结FREEZED，绑定失败BIND_ERROR，绑定中BINDING，释放中PENDING_DELETE， 创建中PENDING_CREATE，创建中NOTIFYING，释放中NOTIFY_DELETE，更新中PENDING_UPDATE， 未绑定DOWN ，绑定ACTIVE，绑定ELB，绑定VPN，失败ERROR。
+        :type status: str
+        :param description: 功能说明：弹性公网IP描述信息 约束：用户以自定义方式标识资源，系统不感知
+        :type description: str
+        :param public_border_group: 功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：publicip只能绑定该字段相同的资源
+        :type public_border_group: str
+        :param created_at: 功能说明：资源创建UTC时间 格式:yyyy-MM-ddTHH:mm:ssZ
+        :type created_at: datetime
+        :param updated_at: 功能说明：资源更新UTC时间 格式:yyyy-MM-ddTHH:mm:ssZ
+        :type updated_at: datetime
+        :param type: 功能说明：弹性公网IP类型
+        :type type: str
+        :param vnic: 
+        :type vnic: :class:`huaweicloudsdkeip.v3.VnicInfo`
+        :param bandwidth: 
+        :type bandwidth: :class:`huaweicloudsdkeip.v3.PublicipBandwidthInfo`
+        :param enterprise_project_id: 功能说明：企业项目ID。最大长度36字节,带“-”连字符的UUID格式,或者是字符串“0”。创建弹性公网IP时,给弹性公网IP绑定企业项目ID。
+        :type enterprise_project_id: str
+        :param billing_info: 功能说明：公网IP的订单信息 约束：包周期才会有订单信息，按需资源此字段为空
+        :type billing_info: str
+        :param lock_status: 功能说明：记录公网IP当前的冻结状态 约束：metadata类型，标识欠费冻结、公安冻结 取值范围：police，locked
+        :type lock_status: str
+        :param associate_instance_type: 功能说明：公网IP绑定的实例类型 取值范围：PORT、NATGW、ELB、ELBV1、VPN、null
+        :type associate_instance_type: str
+        :param associate_instance_id: 功能说明：公网IP绑定的实例ID
+        :type associate_instance_id: str
+        :param publicip_pool_id: 功能说明：公网IP所属网络的ID。publicip_pool_name对应的网络ID
+        :type publicip_pool_id: str
+        :param publicip_pool_name: 功能说明：弹性公网IP的网络类型, 包括公共池类型，如5_bgp/5_sbgp...，和用户购买的专属池。 专属池见publcip_pool相关接口
+        :type publicip_pool_name: str
+        :param alias: 功能说明：弹性公网IP名称
+        :type alias: str
+        :param profile: 
+        :type profile: :class:`huaweicloudsdkeip.v3.ProfileInfo`
+        :param fake_network_type: 默认不显示。该字段仅仅用于表示eip的bgp类型是否是真实的静态sbgp * 1. 如果为true，则该eip可以切换bgp类型 * 2. 如果为false，则该eip不可以切换bgp类型
+        :type fake_network_type: bool
+        :param tags: 默认不显示。用户标签
+        :type tags: list[:class:`huaweicloudsdkeip.v3.TagsInfo`]
+        :param associate_instance_metadata: 默认不显示。记录实例的更上一层归属。例如associate_instance_type为PORT，此字段记录PORT的device_id和device_owner信息。仅有限场景记录。
+        :type associate_instance_metadata: str
+        :param associate_mode: 默认不显示。开启支持直通模式后展示，表示直通模式的标识。
+        :type associate_mode: str
+        :param allow_share_bandwidth_types: 功能说明：表示此publicip可以加入的共享带宽类型列表，如果为空列表，则表示该           publicip不能加入任何共享带宽 约束：publicip只能加入到有该带宽类型的共享带宽中
+        :type allow_share_bandwidth_types: list[str]
+        :param cascade_delete_by_instance: 默认不显示。表示该eip是否支持与实例同步删除。
+        :type cascade_delete_by_instance: bool
+        """
         
         
 
@@ -198,7 +259,7 @@ class PublicipSingleShowResp:
         功能说明：弹性公网IP唯一标识
 
         :param id: The id of this PublicipSingleShowResp.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -220,7 +281,7 @@ class PublicipSingleShowResp:
         功能说明：项目ID
 
         :param project_id: The project_id of this PublicipSingleShowResp.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -242,7 +303,7 @@ class PublicipSingleShowResp:
         功能说明：IP版本信息 取值范围：4表示公网IP地址为public_ip_address地址;6表示公网IP地址为public_ipv6_address地址\"
 
         :param ip_version: The ip_version of this PublicipSingleShowResp.
-        :type: int
+        :type ip_version: int
         """
         self._ip_version = ip_version
 
@@ -264,7 +325,7 @@ class PublicipSingleShowResp:
         功能说明：弹性公网IP或者IPv6端口的地址
 
         :param public_ip_address: The public_ip_address of this PublicipSingleShowResp.
-        :type: str
+        :type public_ip_address: str
         """
         self._public_ip_address = public_ip_address
 
@@ -286,7 +347,7 @@ class PublicipSingleShowResp:
         功能说明：IPv4时无此字段，IPv6时为申请到的弹性公网IP地址
 
         :param public_ipv6_address: The public_ipv6_address of this PublicipSingleShowResp.
-        :type: str
+        :type public_ipv6_address: str
         """
         self._public_ipv6_address = public_ipv6_address
 
@@ -308,7 +369,7 @@ class PublicipSingleShowResp:
         废弃，功能由publicip_pool_name继承，默认不显示。功能说明：弹性公网IP的网络类型
 
         :param network_type: The network_type of this PublicipSingleShowResp.
-        :type: str
+        :type network_type: str
         """
         self._network_type = network_type
 
@@ -330,7 +391,7 @@ class PublicipSingleShowResp:
         功能说明：弹性公网IP的状态  取值范围：冻结FREEZED，绑定失败BIND_ERROR，绑定中BINDING，释放中PENDING_DELETE， 创建中PENDING_CREATE，创建中NOTIFYING，释放中NOTIFY_DELETE，更新中PENDING_UPDATE， 未绑定DOWN ，绑定ACTIVE，绑定ELB，绑定VPN，失败ERROR。
 
         :param status: The status of this PublicipSingleShowResp.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -352,7 +413,7 @@ class PublicipSingleShowResp:
         功能说明：弹性公网IP描述信息 约束：用户以自定义方式标识资源，系统不感知
 
         :param description: The description of this PublicipSingleShowResp.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -374,7 +435,7 @@ class PublicipSingleShowResp:
         功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：publicip只能绑定该字段相同的资源
 
         :param public_border_group: The public_border_group of this PublicipSingleShowResp.
-        :type: str
+        :type public_border_group: str
         """
         self._public_border_group = public_border_group
 
@@ -396,7 +457,7 @@ class PublicipSingleShowResp:
         功能说明：资源创建UTC时间 格式:yyyy-MM-ddTHH:mm:ssZ
 
         :param created_at: The created_at of this PublicipSingleShowResp.
-        :type: datetime
+        :type created_at: datetime
         """
         self._created_at = created_at
 
@@ -418,7 +479,7 @@ class PublicipSingleShowResp:
         功能说明：资源更新UTC时间 格式:yyyy-MM-ddTHH:mm:ssZ
 
         :param updated_at: The updated_at of this PublicipSingleShowResp.
-        :type: datetime
+        :type updated_at: datetime
         """
         self._updated_at = updated_at
 
@@ -440,7 +501,7 @@ class PublicipSingleShowResp:
         功能说明：弹性公网IP类型
 
         :param type: The type of this PublicipSingleShowResp.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -450,7 +511,7 @@ class PublicipSingleShowResp:
 
 
         :return: The vnic of this PublicipSingleShowResp.
-        :rtype: VnicInfo
+        :rtype: :class:`huaweicloudsdkeip.v3.VnicInfo`
         """
         return self._vnic
 
@@ -460,7 +521,7 @@ class PublicipSingleShowResp:
 
 
         :param vnic: The vnic of this PublicipSingleShowResp.
-        :type: VnicInfo
+        :type vnic: :class:`huaweicloudsdkeip.v3.VnicInfo`
         """
         self._vnic = vnic
 
@@ -470,7 +531,7 @@ class PublicipSingleShowResp:
 
 
         :return: The bandwidth of this PublicipSingleShowResp.
-        :rtype: PublicipBandwidthInfo
+        :rtype: :class:`huaweicloudsdkeip.v3.PublicipBandwidthInfo`
         """
         return self._bandwidth
 
@@ -480,7 +541,7 @@ class PublicipSingleShowResp:
 
 
         :param bandwidth: The bandwidth of this PublicipSingleShowResp.
-        :type: PublicipBandwidthInfo
+        :type bandwidth: :class:`huaweicloudsdkeip.v3.PublicipBandwidthInfo`
         """
         self._bandwidth = bandwidth
 
@@ -502,7 +563,7 @@ class PublicipSingleShowResp:
         功能说明：企业项目ID。最大长度36字节,带“-”连字符的UUID格式,或者是字符串“0”。创建弹性公网IP时,给弹性公网IP绑定企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this PublicipSingleShowResp.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -524,7 +585,7 @@ class PublicipSingleShowResp:
         功能说明：公网IP的订单信息 约束：包周期才会有订单信息，按需资源此字段为空
 
         :param billing_info: The billing_info of this PublicipSingleShowResp.
-        :type: str
+        :type billing_info: str
         """
         self._billing_info = billing_info
 
@@ -546,7 +607,7 @@ class PublicipSingleShowResp:
         功能说明：记录公网IP当前的冻结状态 约束：metadata类型，标识欠费冻结、公安冻结 取值范围：police，locked
 
         :param lock_status: The lock_status of this PublicipSingleShowResp.
-        :type: str
+        :type lock_status: str
         """
         self._lock_status = lock_status
 
@@ -568,7 +629,7 @@ class PublicipSingleShowResp:
         功能说明：公网IP绑定的实例类型 取值范围：PORT、NATGW、ELB、ELBV1、VPN、null
 
         :param associate_instance_type: The associate_instance_type of this PublicipSingleShowResp.
-        :type: str
+        :type associate_instance_type: str
         """
         self._associate_instance_type = associate_instance_type
 
@@ -590,7 +651,7 @@ class PublicipSingleShowResp:
         功能说明：公网IP绑定的实例ID
 
         :param associate_instance_id: The associate_instance_id of this PublicipSingleShowResp.
-        :type: str
+        :type associate_instance_id: str
         """
         self._associate_instance_id = associate_instance_id
 
@@ -612,7 +673,7 @@ class PublicipSingleShowResp:
         功能说明：公网IP所属网络的ID。publicip_pool_name对应的网络ID
 
         :param publicip_pool_id: The publicip_pool_id of this PublicipSingleShowResp.
-        :type: str
+        :type publicip_pool_id: str
         """
         self._publicip_pool_id = publicip_pool_id
 
@@ -634,7 +695,7 @@ class PublicipSingleShowResp:
         功能说明：弹性公网IP的网络类型, 包括公共池类型，如5_bgp/5_sbgp...，和用户购买的专属池。 专属池见publcip_pool相关接口
 
         :param publicip_pool_name: The publicip_pool_name of this PublicipSingleShowResp.
-        :type: str
+        :type publicip_pool_name: str
         """
         self._publicip_pool_name = publicip_pool_name
 
@@ -656,7 +717,7 @@ class PublicipSingleShowResp:
         功能说明：弹性公网IP名称
 
         :param alias: The alias of this PublicipSingleShowResp.
-        :type: str
+        :type alias: str
         """
         self._alias = alias
 
@@ -666,7 +727,7 @@ class PublicipSingleShowResp:
 
 
         :return: The profile of this PublicipSingleShowResp.
-        :rtype: ProfileInfo
+        :rtype: :class:`huaweicloudsdkeip.v3.ProfileInfo`
         """
         return self._profile
 
@@ -676,7 +737,7 @@ class PublicipSingleShowResp:
 
 
         :param profile: The profile of this PublicipSingleShowResp.
-        :type: ProfileInfo
+        :type profile: :class:`huaweicloudsdkeip.v3.ProfileInfo`
         """
         self._profile = profile
 
@@ -698,7 +759,7 @@ class PublicipSingleShowResp:
         默认不显示。该字段仅仅用于表示eip的bgp类型是否是真实的静态sbgp * 1. 如果为true，则该eip可以切换bgp类型 * 2. 如果为false，则该eip不可以切换bgp类型
 
         :param fake_network_type: The fake_network_type of this PublicipSingleShowResp.
-        :type: bool
+        :type fake_network_type: bool
         """
         self._fake_network_type = fake_network_type
 
@@ -709,7 +770,7 @@ class PublicipSingleShowResp:
         默认不显示。用户标签
 
         :return: The tags of this PublicipSingleShowResp.
-        :rtype: list[TagsInfo]
+        :rtype: list[:class:`huaweicloudsdkeip.v3.TagsInfo`]
         """
         return self._tags
 
@@ -720,7 +781,7 @@ class PublicipSingleShowResp:
         默认不显示。用户标签
 
         :param tags: The tags of this PublicipSingleShowResp.
-        :type: list[TagsInfo]
+        :type tags: list[:class:`huaweicloudsdkeip.v3.TagsInfo`]
         """
         self._tags = tags
 
@@ -742,7 +803,7 @@ class PublicipSingleShowResp:
         默认不显示。记录实例的更上一层归属。例如associate_instance_type为PORT，此字段记录PORT的device_id和device_owner信息。仅有限场景记录。
 
         :param associate_instance_metadata: The associate_instance_metadata of this PublicipSingleShowResp.
-        :type: str
+        :type associate_instance_metadata: str
         """
         self._associate_instance_metadata = associate_instance_metadata
 
@@ -764,7 +825,7 @@ class PublicipSingleShowResp:
         默认不显示。开启支持直通模式后展示，表示直通模式的标识。
 
         :param associate_mode: The associate_mode of this PublicipSingleShowResp.
-        :type: str
+        :type associate_mode: str
         """
         self._associate_mode = associate_mode
 
@@ -786,7 +847,7 @@ class PublicipSingleShowResp:
         功能说明：表示此publicip可以加入的共享带宽类型列表，如果为空列表，则表示该           publicip不能加入任何共享带宽 约束：publicip只能加入到有该带宽类型的共享带宽中
 
         :param allow_share_bandwidth_types: The allow_share_bandwidth_types of this PublicipSingleShowResp.
-        :type: list[str]
+        :type allow_share_bandwidth_types: list[str]
         """
         self._allow_share_bandwidth_types = allow_share_bandwidth_types
 
@@ -808,7 +869,7 @@ class PublicipSingleShowResp:
         默认不显示。表示该eip是否支持与实例同步删除。
 
         :param cascade_delete_by_instance: The cascade_delete_by_instance of this PublicipSingleShowResp.
-        :type: bool
+        :type cascade_delete_by_instance: bool
         """
         self._cascade_delete_by_instance = cascade_delete_by_instance
 

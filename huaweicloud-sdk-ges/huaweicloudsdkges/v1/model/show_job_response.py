@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowJobResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ShowJobResponse(SdkResponse):
     }
 
     def __init__(self, error_message=None, error_code=None, job_id=None, status=None, job_type=None, job_name=None, related_graph=None, begin_time=None, end_time=None, job_detail=None, fail_reason=None, job_progress=None):
-        """ShowJobResponse - a model defined in huaweicloud sdk"""
+        """ShowJobResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_message: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
+        :type error_message: str
+        :param error_code: 系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
+        :type error_code: str
+        :param job_id: 任务ID。
+        :type job_id: str
+        :param status: 任务状态。  - pending:等待中 - running:运行中 - success:成功 - failed:失败
+        :type status: str
+        :param job_type: 任务类型。
+        :type job_type: str
+        :param job_name: 任务名称。
+        :type job_name: str
+        :param related_graph: 关联图名称。
+        :type related_graph: str
+        :param begin_time: 任务开始时间，格式为UTC,\&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss\&quot;
+        :type begin_time: str
+        :param end_time: 任务结束时间，格式为UTC,\&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ss\&quot;
+        :type end_time: str
+        :param job_detail: 
+        :type job_detail: :class:`huaweicloudsdkges.v1.JobDetail`
+        :param fail_reason: 任务失败原因
+        :type fail_reason: str
+        :param job_progress: 任务执行进度，预留字段，暂未使用。
+        :type job_progress: float
+        """
         
         super(ShowJobResponse, self).__init__()
 
@@ -113,7 +140,7 @@ class ShowJobResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误信息。
 
         :param error_message: The error_message of this ShowJobResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -135,7 +162,7 @@ class ShowJobResponse(SdkResponse):
         系统提示信息，执行成功时，字段可能为空。执行失败时，用于显示错误码。
 
         :param error_code: The error_code of this ShowJobResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -157,7 +184,7 @@ class ShowJobResponse(SdkResponse):
         任务ID。
 
         :param job_id: The job_id of this ShowJobResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -179,7 +206,7 @@ class ShowJobResponse(SdkResponse):
         任务状态。  - pending:等待中 - running:运行中 - success:成功 - failed:失败
 
         :param status: The status of this ShowJobResponse.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -201,7 +228,7 @@ class ShowJobResponse(SdkResponse):
         任务类型。
 
         :param job_type: The job_type of this ShowJobResponse.
-        :type: str
+        :type job_type: str
         """
         self._job_type = job_type
 
@@ -223,7 +250,7 @@ class ShowJobResponse(SdkResponse):
         任务名称。
 
         :param job_name: The job_name of this ShowJobResponse.
-        :type: str
+        :type job_name: str
         """
         self._job_name = job_name
 
@@ -245,7 +272,7 @@ class ShowJobResponse(SdkResponse):
         关联图名称。
 
         :param related_graph: The related_graph of this ShowJobResponse.
-        :type: str
+        :type related_graph: str
         """
         self._related_graph = related_graph
 
@@ -267,7 +294,7 @@ class ShowJobResponse(SdkResponse):
         任务开始时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"
 
         :param begin_time: The begin_time of this ShowJobResponse.
-        :type: str
+        :type begin_time: str
         """
         self._begin_time = begin_time
 
@@ -289,7 +316,7 @@ class ShowJobResponse(SdkResponse):
         任务结束时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"
 
         :param end_time: The end_time of this ShowJobResponse.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -299,7 +326,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :return: The job_detail of this ShowJobResponse.
-        :rtype: JobDetail
+        :rtype: :class:`huaweicloudsdkges.v1.JobDetail`
         """
         return self._job_detail
 
@@ -309,7 +336,7 @@ class ShowJobResponse(SdkResponse):
 
 
         :param job_detail: The job_detail of this ShowJobResponse.
-        :type: JobDetail
+        :type job_detail: :class:`huaweicloudsdkges.v1.JobDetail`
         """
         self._job_detail = job_detail
 
@@ -331,7 +358,7 @@ class ShowJobResponse(SdkResponse):
         任务失败原因
 
         :param fail_reason: The fail_reason of this ShowJobResponse.
-        :type: str
+        :type fail_reason: str
         """
         self._fail_reason = fail_reason
 
@@ -353,7 +380,7 @@ class ShowJobResponse(SdkResponse):
         任务执行进度，预留字段，暂未使用。
 
         :param job_progress: The job_progress of this ShowJobResponse.
-        :type: float
+        :type job_progress: float
         """
         self._job_progress = job_progress
 

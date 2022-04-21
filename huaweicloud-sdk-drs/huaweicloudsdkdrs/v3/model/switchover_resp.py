@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SwitchoverResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class SwitchoverResp:
     }
 
     def __init__(self, job_id=None, updated_at=None, source_db=None, target_db=None, job_direction=None, is_target_readonly=None, error_msg=None, error_code=None):
-        """SwitchoverResp - a model defined in huaweicloud sdk"""
+        """SwitchoverResp
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 任务ID
+        :type job_id: str
+        :param updated_at: 更新时间，格式yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
+        :type updated_at: str
+        :param source_db: 
+        :type source_db: :class:`huaweicloudsdkdrs.v3.EndpointVO`
+        :param target_db: 
+        :type target_db: :class:`huaweicloudsdkdrs.v3.EndpointVO`
+        :param job_direction: 任务方向。
+        :type job_direction: str
+        :param is_target_readonly: 目标库是否只读。
+        :type is_target_readonly: bool
+        :param error_msg: 错误信息。
+        :type error_msg: str
+        :param error_code: 错误码。
+        :type error_code: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class SwitchoverResp:
         任务ID
 
         :param job_id: The job_id of this SwitchoverResp.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 
@@ -115,7 +134,7 @@ class SwitchoverResp:
         更新时间，格式yyyy-MM-dd'T'HH:mm:ss'Z'
 
         :param updated_at: The updated_at of this SwitchoverResp.
-        :type: str
+        :type updated_at: str
         """
         self._updated_at = updated_at
 
@@ -125,7 +144,7 @@ class SwitchoverResp:
 
 
         :return: The source_db of this SwitchoverResp.
-        :rtype: EndpointVO
+        :rtype: :class:`huaweicloudsdkdrs.v3.EndpointVO`
         """
         return self._source_db
 
@@ -135,7 +154,7 @@ class SwitchoverResp:
 
 
         :param source_db: The source_db of this SwitchoverResp.
-        :type: EndpointVO
+        :type source_db: :class:`huaweicloudsdkdrs.v3.EndpointVO`
         """
         self._source_db = source_db
 
@@ -145,7 +164,7 @@ class SwitchoverResp:
 
 
         :return: The target_db of this SwitchoverResp.
-        :rtype: EndpointVO
+        :rtype: :class:`huaweicloudsdkdrs.v3.EndpointVO`
         """
         return self._target_db
 
@@ -155,7 +174,7 @@ class SwitchoverResp:
 
 
         :param target_db: The target_db of this SwitchoverResp.
-        :type: EndpointVO
+        :type target_db: :class:`huaweicloudsdkdrs.v3.EndpointVO`
         """
         self._target_db = target_db
 
@@ -177,7 +196,7 @@ class SwitchoverResp:
         任务方向。
 
         :param job_direction: The job_direction of this SwitchoverResp.
-        :type: str
+        :type job_direction: str
         """
         self._job_direction = job_direction
 
@@ -199,7 +218,7 @@ class SwitchoverResp:
         目标库是否只读。
 
         :param is_target_readonly: The is_target_readonly of this SwitchoverResp.
-        :type: bool
+        :type is_target_readonly: bool
         """
         self._is_target_readonly = is_target_readonly
 
@@ -221,7 +240,7 @@ class SwitchoverResp:
         错误信息。
 
         :param error_msg: The error_msg of this SwitchoverResp.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -243,7 +262,7 @@ class SwitchoverResp:
         错误码。
 
         :param error_code: The error_code of this SwitchoverResp.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

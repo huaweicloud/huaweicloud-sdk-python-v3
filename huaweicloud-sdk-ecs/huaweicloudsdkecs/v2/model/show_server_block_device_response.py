@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowServerBlockDeviceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowServerBlockDeviceResponse(SdkResponse):
     }
 
     def __init__(self, volume_attachment=None):
-        """ShowServerBlockDeviceResponse - a model defined in huaweicloud sdk"""
+        """ShowServerBlockDeviceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param volume_attachment: 
+        :type volume_attachment: :class:`huaweicloudsdkecs.v2.ServerBlockDevice`
+        """
         
         super(ShowServerBlockDeviceResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowServerBlockDeviceResponse(SdkResponse):
 
 
         :return: The volume_attachment of this ShowServerBlockDeviceResponse.
-        :rtype: ServerBlockDevice
+        :rtype: :class:`huaweicloudsdkecs.v2.ServerBlockDevice`
         """
         return self._volume_attachment
 
@@ -56,7 +61,7 @@ class ShowServerBlockDeviceResponse(SdkResponse):
 
 
         :param volume_attachment: The volume_attachment of this ShowServerBlockDeviceResponse.
-        :type: ServerBlockDevice
+        :type volume_attachment: :class:`huaweicloudsdkecs.v2.ServerBlockDevice`
         """
         self._volume_attachment = volume_attachment
 

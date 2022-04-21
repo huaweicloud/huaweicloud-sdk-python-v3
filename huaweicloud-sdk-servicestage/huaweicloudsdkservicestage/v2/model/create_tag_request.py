@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTagRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class CreateTagRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, ref=None, body=None):
-        """CreateTagRequest - a model defined in huaweicloud sdk"""
+        """CreateTagRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_repo_auth: 授权名称。
+        :type x_repo_auth: str
+        :param namespace: 组织ID。
+        :type namespace: str
+        :param project: 仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
+        :type project: str
+        :param ref: 分支名称或者tag标签名称或者commit sha。
+        :type ref: str
+        :param body: Body of the CreateTagRequest
+        :type body: :class:`huaweicloudsdkservicestage.v2.TagCreate`
+        """
         
         
 
@@ -74,7 +87,7 @@ class CreateTagRequest:
         授权名称。
 
         :param x_repo_auth: The x_repo_auth of this CreateTagRequest.
-        :type: str
+        :type x_repo_auth: str
         """
         self._x_repo_auth = x_repo_auth
 
@@ -96,7 +109,7 @@ class CreateTagRequest:
         组织ID。
 
         :param namespace: The namespace of this CreateTagRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -118,7 +131,7 @@ class CreateTagRequest:
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
         :param project: The project of this CreateTagRequest.
-        :type: str
+        :type project: str
         """
         self._project = project
 
@@ -140,7 +153,7 @@ class CreateTagRequest:
         分支名称或者tag标签名称或者commit sha。
 
         :param ref: The ref of this CreateTagRequest.
-        :type: str
+        :type ref: str
         """
         self._ref = ref
 
@@ -150,7 +163,7 @@ class CreateTagRequest:
 
 
         :return: The body of this CreateTagRequest.
-        :rtype: TagCreate
+        :rtype: :class:`huaweicloudsdkservicestage.v2.TagCreate`
         """
         return self._body
 
@@ -160,7 +173,7 @@ class CreateTagRequest:
 
 
         :param body: The body of this CreateTagRequest.
-        :type: TagCreate
+        :type body: :class:`huaweicloudsdkservicestage.v2.TagCreate`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostPaidServerNic:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class PostPaidServerNic:
     }
 
     def __init__(self, subnet_id=None, ip_address=None, ipv6_enable=None, ipv6_bandwidth=None):
-        """PostPaidServerNic - a model defined in huaweicloud sdk"""
+        """PostPaidServerNic
+
+        The model defined in huaweicloud sdk
+
+        :param subnet_id: 待创建云服务器所在的子网信息，需要指定vpcid对应VPC下的子网ID，UUID格式。  可以通过VPC服务 [查询子网](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;VPC&amp;api&#x3D;ListSubnets) 接口查询，该接口支持通过创建云服务器填写的vpcid进行过滤查询。
+        :type subnet_id: str
+        :param ip_address: 待创建云服务器网卡的IP地址，IPv4格式。  约束：  - 不填或空字符串，默认在子网（subnet）中自动分配一个未使用的IP作网卡的IP地址。 - 若指定IP地址，该IP地址必须在子网（subnet）对应的网段内，且未被使用。
+        :type ip_address: str
+        :param ipv6_enable: 是否支持ipv6。  取值为true时，标识此网卡支持ipv6。
+        :type ipv6_enable: bool
+        :param ipv6_bandwidth: 
+        :type ipv6_bandwidth: :class:`huaweicloudsdkecs.v2.PostPaidServerIpv6Bandwidth`
+        """
         
         
 
@@ -72,7 +83,7 @@ class PostPaidServerNic:
         待创建云服务器所在的子网信息，需要指定vpcid对应VPC下的子网ID，UUID格式。  可以通过VPC服务 [查询子网](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=VPC&api=ListSubnets) 接口查询，该接口支持通过创建云服务器填写的vpcid进行过滤查询。
 
         :param subnet_id: The subnet_id of this PostPaidServerNic.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -94,7 +105,7 @@ class PostPaidServerNic:
         待创建云服务器网卡的IP地址，IPv4格式。  约束：  - 不填或空字符串，默认在子网（subnet）中自动分配一个未使用的IP作网卡的IP地址。 - 若指定IP地址，该IP地址必须在子网（subnet）对应的网段内，且未被使用。
 
         :param ip_address: The ip_address of this PostPaidServerNic.
-        :type: str
+        :type ip_address: str
         """
         self._ip_address = ip_address
 
@@ -116,7 +127,7 @@ class PostPaidServerNic:
         是否支持ipv6。  取值为true时，标识此网卡支持ipv6。
 
         :param ipv6_enable: The ipv6_enable of this PostPaidServerNic.
-        :type: bool
+        :type ipv6_enable: bool
         """
         self._ipv6_enable = ipv6_enable
 
@@ -126,7 +137,7 @@ class PostPaidServerNic:
 
 
         :return: The ipv6_bandwidth of this PostPaidServerNic.
-        :rtype: PostPaidServerIpv6Bandwidth
+        :rtype: :class:`huaweicloudsdkecs.v2.PostPaidServerIpv6Bandwidth`
         """
         return self._ipv6_bandwidth
 
@@ -136,7 +147,7 @@ class PostPaidServerNic:
 
 
         :param ipv6_bandwidth: The ipv6_bandwidth of this PostPaidServerNic.
-        :type: PostPaidServerIpv6Bandwidth
+        :type ipv6_bandwidth: :class:`huaweicloudsdkecs.v2.PostPaidServerIpv6Bandwidth`
         """
         self._ipv6_bandwidth = ipv6_bandwidth
 

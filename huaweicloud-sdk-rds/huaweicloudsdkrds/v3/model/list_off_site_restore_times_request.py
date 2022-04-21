@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOffSiteRestoreTimesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListOffSiteRestoreTimesRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, date=None):
-        """ListOffSiteRestoreTimesRequest - a model defined in huaweicloud sdk"""
+        """ListOffSiteRestoreTimesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param date: 所需查询的日期，为yyyy-mm-dd字符串格式，时区为UTC。
+        :type date: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListOffSiteRestoreTimesRequest:
         语言
 
         :param x_language: The x_language of this ListOffSiteRestoreTimesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -89,7 +98,7 @@ class ListOffSiteRestoreTimesRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ListOffSiteRestoreTimesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -111,7 +120,7 @@ class ListOffSiteRestoreTimesRequest:
         所需查询的日期，为yyyy-mm-dd字符串格式，时区为UTC。
 
         :param date: The date of this ListOffSiteRestoreTimesRequest.
-        :type: str
+        :type date: str
         """
         self._date = date
 

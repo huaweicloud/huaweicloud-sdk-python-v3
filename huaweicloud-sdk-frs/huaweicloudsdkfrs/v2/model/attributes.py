@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Attributes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class Attributes:
     }
 
     def __init__(self, dress=None, glass=None, hat=None, age=None, mask=None, beard=None, phototype=None, quality=None, hair=None, expression=None, face_angle=None):
-        """Attributes - a model defined in huaweicloud sdk"""
+        """Attributes
+
+        The model defined in huaweicloud sdk
+
+        :param dress: 
+        :type dress: :class:`huaweicloudsdkfrs.v2.Dress`
+        :param glass: 是否带眼镜： • yes：带眼镜 • dark：带墨镜 • none：未戴眼镜 • unknown：未知
+        :type glass: str
+        :param hat: 是否戴帽子： • yes：戴帽子 • none：未戴帽子 • unknown：未知
+        :type hat: str
+        :param age: 年龄。
+        :type age: int
+        :param mask: 是否戴口罩： • yes：戴口罩 • none：未戴口罩 • unknown：未知
+        :type mask: str
+        :param beard: 胡须： • yes：有胡须 • none：无胡须 • unknown：未知
+        :type beard: str
+        :param phototype: 图片类型： • idcard：证件照 • monitor：摄像头监控 • internet photo：网络图片
+        :type phototype: str
+        :param quality: 
+        :type quality: :class:`huaweicloudsdkfrs.v2.FaceQuality`
+        :param hair: 发型： • long：长发 • short：短发 • unknown：未知
+        :type hair: str
+        :param expression: 
+        :type expression: :class:`huaweicloudsdkfrs.v2.AttributesExpression`
+        :param face_angle: 人脸图片旋转角（顺时针偏转角度），支持0°、90°、180°和270°图片旋转。
+        :type face_angle: int
+        """
         
         
 
@@ -85,7 +110,7 @@ class Attributes:
 
 
         :return: The dress of this Attributes.
-        :rtype: Dress
+        :rtype: :class:`huaweicloudsdkfrs.v2.Dress`
         """
         return self._dress
 
@@ -95,7 +120,7 @@ class Attributes:
 
 
         :param dress: The dress of this Attributes.
-        :type: Dress
+        :type dress: :class:`huaweicloudsdkfrs.v2.Dress`
         """
         self._dress = dress
 
@@ -117,7 +142,7 @@ class Attributes:
         是否带眼镜： • yes：带眼镜 • dark：带墨镜 • none：未戴眼镜 • unknown：未知
 
         :param glass: The glass of this Attributes.
-        :type: str
+        :type glass: str
         """
         self._glass = glass
 
@@ -139,7 +164,7 @@ class Attributes:
         是否戴帽子： • yes：戴帽子 • none：未戴帽子 • unknown：未知
 
         :param hat: The hat of this Attributes.
-        :type: str
+        :type hat: str
         """
         self._hat = hat
 
@@ -161,7 +186,7 @@ class Attributes:
         年龄。
 
         :param age: The age of this Attributes.
-        :type: int
+        :type age: int
         """
         self._age = age
 
@@ -183,7 +208,7 @@ class Attributes:
         是否戴口罩： • yes：戴口罩 • none：未戴口罩 • unknown：未知
 
         :param mask: The mask of this Attributes.
-        :type: str
+        :type mask: str
         """
         self._mask = mask
 
@@ -205,7 +230,7 @@ class Attributes:
         胡须： • yes：有胡须 • none：无胡须 • unknown：未知
 
         :param beard: The beard of this Attributes.
-        :type: str
+        :type beard: str
         """
         self._beard = beard
 
@@ -227,7 +252,7 @@ class Attributes:
         图片类型： • idcard：证件照 • monitor：摄像头监控 • internet photo：网络图片
 
         :param phototype: The phototype of this Attributes.
-        :type: str
+        :type phototype: str
         """
         self._phototype = phototype
 
@@ -237,7 +262,7 @@ class Attributes:
 
 
         :return: The quality of this Attributes.
-        :rtype: FaceQuality
+        :rtype: :class:`huaweicloudsdkfrs.v2.FaceQuality`
         """
         return self._quality
 
@@ -247,7 +272,7 @@ class Attributes:
 
 
         :param quality: The quality of this Attributes.
-        :type: FaceQuality
+        :type quality: :class:`huaweicloudsdkfrs.v2.FaceQuality`
         """
         self._quality = quality
 
@@ -269,7 +294,7 @@ class Attributes:
         发型： • long：长发 • short：短发 • unknown：未知
 
         :param hair: The hair of this Attributes.
-        :type: str
+        :type hair: str
         """
         self._hair = hair
 
@@ -279,7 +304,7 @@ class Attributes:
 
 
         :return: The expression of this Attributes.
-        :rtype: AttributesExpression
+        :rtype: :class:`huaweicloudsdkfrs.v2.AttributesExpression`
         """
         return self._expression
 
@@ -289,7 +314,7 @@ class Attributes:
 
 
         :param expression: The expression of this Attributes.
-        :type: AttributesExpression
+        :type expression: :class:`huaweicloudsdkfrs.v2.AttributesExpression`
         """
         self._expression = expression
 
@@ -311,7 +336,7 @@ class Attributes:
         人脸图片旋转角（顺时针偏转角度），支持0°、90°、180°和270°图片旋转。
 
         :param face_angle: The face_angle of this Attributes.
-        :type: int
+        :type face_angle: int
         """
         self._face_angle = face_angle
 

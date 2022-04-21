@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Segment:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Segment:
     }
 
     def __init__(self, start_time=None, end_time=None, result=None):
-        """Segment - a model defined in huaweicloud sdk"""
+        """Segment
+
+        The model defined in huaweicloud sdk
+
+        :param start_time: 一句的起始时间戳，单位ms。
+        :type start_time: int
+        :param end_time: 一句的结束时间戳，单位ms。
+        :type end_time: int
+        :param result: 
+        :type result: :class:`huaweicloudsdksis.v1.TranscriberResult`
+        """
         
         
 
@@ -65,7 +74,7 @@ class Segment:
         一句的起始时间戳，单位ms。
 
         :param start_time: The start_time of this Segment.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -87,7 +96,7 @@ class Segment:
         一句的结束时间戳，单位ms。
 
         :param end_time: The end_time of this Segment.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -97,7 +106,7 @@ class Segment:
 
 
         :return: The result of this Segment.
-        :rtype: TranscriberResult
+        :rtype: :class:`huaweicloudsdksis.v1.TranscriberResult`
         """
         return self._result
 
@@ -107,7 +116,7 @@ class Segment:
 
 
         :param result: The result of this Segment.
-        :type: TranscriberResult
+        :type result: :class:`huaweicloudsdksis.v1.TranscriberResult`
         """
         self._result = result
 

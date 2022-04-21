@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowIssueCompletionRateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowIssueCompletionRateResponse(SdkResponse):
     }
 
     def __init__(self, issue_completion_rates=None, total=None):
-        """ShowIssueCompletionRateResponse - a model defined in huaweicloud sdk"""
+        """ShowIssueCompletionRateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param issue_completion_rates: 不同类型的工作项完成率
+        :type issue_completion_rates: list[:class:`huaweicloudsdkprojectman.v4.IssueCompletionRateV4IssueCompletionRates`]
+        :param total: 总数
+        :type total: int
+        """
         
         super(ShowIssueCompletionRateResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ShowIssueCompletionRateResponse(SdkResponse):
         不同类型的工作项完成率
 
         :return: The issue_completion_rates of this ShowIssueCompletionRateResponse.
-        :rtype: list[IssueCompletionRateV4IssueCompletionRates]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.IssueCompletionRateV4IssueCompletionRates`]
         """
         return self._issue_completion_rates
 
@@ -63,7 +70,7 @@ class ShowIssueCompletionRateResponse(SdkResponse):
         不同类型的工作项完成率
 
         :param issue_completion_rates: The issue_completion_rates of this ShowIssueCompletionRateResponse.
-        :type: list[IssueCompletionRateV4IssueCompletionRates]
+        :type issue_completion_rates: list[:class:`huaweicloudsdkprojectman.v4.IssueCompletionRateV4IssueCompletionRates`]
         """
         self._issue_completion_rates = issue_completion_rates
 
@@ -85,7 +92,7 @@ class ShowIssueCompletionRateResponse(SdkResponse):
         总数
 
         :param total: The total of this ShowIssueCompletionRateResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 

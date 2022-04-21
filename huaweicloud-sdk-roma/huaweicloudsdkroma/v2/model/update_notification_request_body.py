@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateNotificationRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateNotificationRequestBody:
     }
 
     def __init__(self, topic=None, status=None):
-        """UpdateNotificationRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateNotificationRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param topic: 通知发送的主题名，该主题需要在MQS存在
+        :type topic: str
+        :param status: 启停状态 0-启用 1-停用
+        :type status: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class UpdateNotificationRequestBody:
         通知发送的主题名，该主题需要在MQS存在
 
         :param topic: The topic of this UpdateNotificationRequestBody.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -83,7 +90,7 @@ class UpdateNotificationRequestBody:
         启停状态 0-启用 1-停用
 
         :param status: The status of this UpdateNotificationRequestBody.
-        :type: int
+        :type status: int
         """
         self._status = status
 

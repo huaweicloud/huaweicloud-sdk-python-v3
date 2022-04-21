@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SlowlogItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class SlowlogItem:
     }
 
     def __init__(self, id=None, command=None, start_time=None, duration=None, shard_name=None):
-        """SlowlogItem - a model defined in huaweicloud sdk"""
+        """SlowlogItem
+
+        The model defined in huaweicloud sdk
+
+        :param id: 慢日志的唯一标识
+        :type id: int
+        :param command: 慢命令
+        :type command: str
+        :param start_time: 执行开始时间,格式为“2020-06-19T07:06:07Z”
+        :type start_time: str
+        :param duration: 持续时间，单位是ms
+        :type duration: str
+        :param shard_name: 慢命令所在的分片名称，仅在实例类型为集群时支持
+        :type shard_name: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class SlowlogItem:
         慢日志的唯一标识
 
         :param id: The id of this SlowlogItem.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -100,7 +113,7 @@ class SlowlogItem:
         慢命令
 
         :param command: The command of this SlowlogItem.
-        :type: str
+        :type command: str
         """
         self._command = command
 
@@ -122,7 +135,7 @@ class SlowlogItem:
         执行开始时间,格式为“2020-06-19T07:06:07Z”
 
         :param start_time: The start_time of this SlowlogItem.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -144,7 +157,7 @@ class SlowlogItem:
         持续时间，单位是ms
 
         :param duration: The duration of this SlowlogItem.
-        :type: str
+        :type duration: str
         """
         self._duration = duration
 
@@ -166,7 +179,7 @@ class SlowlogItem:
         慢命令所在的分片名称，仅在实例类型为集群时支持
 
         :param shard_name: The shard_name of this SlowlogItem.
-        :type: str
+        :type shard_name: str
         """
         self._shard_name = shard_name
 

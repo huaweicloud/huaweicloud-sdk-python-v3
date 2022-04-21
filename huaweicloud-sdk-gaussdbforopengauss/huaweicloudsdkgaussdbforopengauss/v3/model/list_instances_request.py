@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ListInstancesRequest:
     }
 
     def __init__(self, x_language=None, id=None, name=None, type=None, datastore_type=None, vpc_id=None, subnet_id=None, offset=None, limit=None, tags=None):
-        """ListInstancesRequest - a model defined in huaweicloud sdk"""
+        """ListInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言
+        :type x_language: str
+        :param id: 实例ID。  “\\*”为系统保留字符，如果id是以“\\*”起始，表示按照\\*后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入“\\*”。
+        :type id: str
+        :param name: 实例名称。  “\\*”为系统保留字符，如果name是以“\\*”起始，表示按照\\*后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入“\\*”。
+        :type name: str
+        :param type: 按照实例类型查询。目前仅支持取值“Enterprise”（区分大小写），对应分布式实例（企业版）。当前支持取值\&quot;Ha\&quot;（区分大小写），对应主备式实例。
+        :type type: str
+        :param datastore_type: 数据库类型，区分大小写。  - GaussDB(for openGauss)
+        :type datastore_type: str
+        :param vpc_id: 虚拟私有云ID。  方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。
+        :type vpc_id: str
+        :param subnet_id: 子网的网络ID信息。  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
+        :type subnet_id: str
+        :param offset: 索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
+        :type offset: int
+        :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100
+        :type limit: int
+        :param tags: 根据实例标签键值对进行查询。  {key}表示标签键，不可以为空或重复。最大长度127个unicode字符。key不能为空或者空字符串，不能为空格，使用之前先trim前后半角空格。不能包含+/?#&amp;&#x3D;,%特殊字符。  {value}表示标签值，可以为空。最大长度255个unicode字符，使用之前先trim 前后半角空格。不能包含+/?#&amp;&#x3D;,%特殊字符。  如果value为空，则表示any_value（查询任意value）。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，最多包含10组。
+        :type tags: list[str]
+        """
         
         
 
@@ -103,7 +126,7 @@ class ListInstancesRequest:
         语言
 
         :param x_language: The x_language of this ListInstancesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -125,7 +148,7 @@ class ListInstancesRequest:
         实例ID。  “\\*”为系统保留字符，如果id是以“\\*”起始，表示按照\\*后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入“\\*”。
 
         :param id: The id of this ListInstancesRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -147,7 +170,7 @@ class ListInstancesRequest:
         实例名称。  “\\*”为系统保留字符，如果name是以“\\*”起始，表示按照\\*后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入“\\*”。
 
         :param name: The name of this ListInstancesRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -169,7 +192,7 @@ class ListInstancesRequest:
         按照实例类型查询。目前仅支持取值“Enterprise”（区分大小写），对应分布式实例（企业版）。当前支持取值\"Ha\"（区分大小写），对应主备式实例。
 
         :param type: The type of this ListInstancesRequest.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -191,7 +214,7 @@ class ListInstancesRequest:
         数据库类型，区分大小写。  - GaussDB(for openGauss)
 
         :param datastore_type: The datastore_type of this ListInstancesRequest.
-        :type: str
+        :type datastore_type: str
         """
         self._datastore_type = datastore_type
 
@@ -213,7 +236,7 @@ class ListInstancesRequest:
         虚拟私有云ID。  方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。
 
         :param vpc_id: The vpc_id of this ListInstancesRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -235,7 +258,7 @@ class ListInstancesRequest:
         子网的网络ID信息。  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
 
         :param subnet_id: The subnet_id of this ListInstancesRequest.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -257,7 +280,7 @@ class ListInstancesRequest:
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
         :param offset: The offset of this ListInstancesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -279,7 +302,7 @@ class ListInstancesRequest:
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100
 
         :param limit: The limit of this ListInstancesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -301,7 +324,7 @@ class ListInstancesRequest:
         根据实例标签键值对进行查询。  {key}表示标签键，不可以为空或重复。最大长度127个unicode字符。key不能为空或者空字符串，不能为空格，使用之前先trim前后半角空格。不能包含+/?#&=,%特殊字符。  {value}表示标签值，可以为空。最大长度255个unicode字符，使用之前先trim 前后半角空格。不能包含+/?#&=,%特殊字符。  如果value为空，则表示any_value（查询任意value）。  如果同时使用多个标签键值对进行查询，中间使用逗号分隔开，最多包含10组。
 
         :param tags: The tags of this ListInstancesRequest.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 

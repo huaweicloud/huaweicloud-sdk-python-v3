@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TimeSpan:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class TimeSpan:
     }
 
     def __init__(self, _from=None, to=None):
-        """TimeSpan - a model defined in huaweicloud sdk"""
+        """TimeSpan
+
+        The model defined in huaweicloud sdk
+
+        :param _from: 起始时间
+        :type _from: str
+        :param to: 结束时间
+        :type to: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class TimeSpan:
         起始时间
 
         :param _from: The _from of this TimeSpan.
-        :type: str
+        :type _from: str
         """
         self.__from = _from
 
@@ -83,7 +90,7 @@ class TimeSpan:
         结束时间
 
         :param to: The to of this TimeSpan.
-        :type: str
+        :type to: str
         """
         self._to = to
 

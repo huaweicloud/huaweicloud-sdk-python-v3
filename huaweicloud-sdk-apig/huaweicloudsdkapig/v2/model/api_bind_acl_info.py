@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiBindAclInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class ApiBindAclInfo:
     }
 
     def __init__(self, acl_id=None, acl_name=None, entity_type=None, acl_type=None, acl_value=None, env_id=None, env_name=None, bind_id=None, bind_time=None):
-        """ApiBindAclInfo - a model defined in huaweicloud sdk"""
+        """ApiBindAclInfo
+
+        The model defined in huaweicloud sdk
+
+        :param acl_id: ACL策略编号
+        :type acl_id: str
+        :param acl_name: ACL策略名称
+        :type acl_name: str
+        :param entity_type: ACL策略作用的对象类型
+        :type entity_type: str
+        :param acl_type: ACL策略类型 - PERMIT：白名单类型 - DENY：黑名单类型
+        :type acl_type: str
+        :param acl_value: ACL策略值
+        :type acl_value: str
+        :param env_id: 生效的环境编号
+        :type env_id: str
+        :param env_name: 生效的环境名称
+        :type env_name: str
+        :param bind_id: 绑定关系编号
+        :type bind_id: str
+        :param bind_time: 绑定时间
+        :type bind_time: datetime
+        """
         
         
 
@@ -98,7 +119,7 @@ class ApiBindAclInfo:
         ACL策略编号
 
         :param acl_id: The acl_id of this ApiBindAclInfo.
-        :type: str
+        :type acl_id: str
         """
         self._acl_id = acl_id
 
@@ -120,7 +141,7 @@ class ApiBindAclInfo:
         ACL策略名称
 
         :param acl_name: The acl_name of this ApiBindAclInfo.
-        :type: str
+        :type acl_name: str
         """
         self._acl_name = acl_name
 
@@ -142,7 +163,7 @@ class ApiBindAclInfo:
         ACL策略作用的对象类型
 
         :param entity_type: The entity_type of this ApiBindAclInfo.
-        :type: str
+        :type entity_type: str
         """
         self._entity_type = entity_type
 
@@ -164,7 +185,7 @@ class ApiBindAclInfo:
         ACL策略类型 - PERMIT：白名单类型 - DENY：黑名单类型
 
         :param acl_type: The acl_type of this ApiBindAclInfo.
-        :type: str
+        :type acl_type: str
         """
         self._acl_type = acl_type
 
@@ -186,7 +207,7 @@ class ApiBindAclInfo:
         ACL策略值
 
         :param acl_value: The acl_value of this ApiBindAclInfo.
-        :type: str
+        :type acl_value: str
         """
         self._acl_value = acl_value
 
@@ -208,7 +229,7 @@ class ApiBindAclInfo:
         生效的环境编号
 
         :param env_id: The env_id of this ApiBindAclInfo.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -230,7 +251,7 @@ class ApiBindAclInfo:
         生效的环境名称
 
         :param env_name: The env_name of this ApiBindAclInfo.
-        :type: str
+        :type env_name: str
         """
         self._env_name = env_name
 
@@ -252,7 +273,7 @@ class ApiBindAclInfo:
         绑定关系编号
 
         :param bind_id: The bind_id of this ApiBindAclInfo.
-        :type: str
+        :type bind_id: str
         """
         self._bind_id = bind_id
 
@@ -274,7 +295,7 @@ class ApiBindAclInfo:
         绑定时间
 
         :param bind_time: The bind_time of this ApiBindAclInfo.
-        :type: datetime
+        :type bind_time: datetime
         """
         self._bind_time = bind_time
 

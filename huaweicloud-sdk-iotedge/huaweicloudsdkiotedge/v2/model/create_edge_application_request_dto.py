@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateEdgeApplicationRequestDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateEdgeApplicationRequestDTO:
     }
 
     def __init__(self, edge_app_id=None, description=None, function_type=None):
-        """CreateEdgeApplicationRequestDTO - a model defined in huaweicloud sdk"""
+        """CreateEdgeApplicationRequestDTO
+
+        The model defined in huaweicloud sdk
+
+        :param edge_app_id: 应用ID
+        :type edge_app_id: str
+        :param description: 应用描述
+        :type description: str
+        :param function_type: 功能类型,分为数据处理（DATA_PROCESSING）和协议解析（PROTOCOL_PARSING）和IT集成（ON_PREMISE_INTEGRATION），数据默认为DATA_PROCESSING，数据处理模块可以传输消息，协议解析为驱动类型，IT集成为部署南向3rdIA使用
+        :type function_type: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateEdgeApplicationRequestDTO:
         应用ID
 
         :param edge_app_id: The edge_app_id of this CreateEdgeApplicationRequestDTO.
-        :type: str
+        :type edge_app_id: str
         """
         self._edge_app_id = edge_app_id
 
@@ -89,7 +98,7 @@ class CreateEdgeApplicationRequestDTO:
         应用描述
 
         :param description: The description of this CreateEdgeApplicationRequestDTO.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -111,7 +120,7 @@ class CreateEdgeApplicationRequestDTO:
         功能类型,分为数据处理（DATA_PROCESSING）和协议解析（PROTOCOL_PARSING）和IT集成（ON_PREMISE_INTEGRATION），数据默认为DATA_PROCESSING，数据处理模块可以传输消息，协议解析为驱动类型，IT集成为部署南向3rdIA使用
 
         :param function_type: The function_type of this CreateEdgeApplicationRequestDTO.
-        :type: str
+        :type function_type: str
         """
         self._function_type = function_type
 

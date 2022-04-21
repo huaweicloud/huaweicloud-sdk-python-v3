@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SqlserverUserForCreation:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SqlserverUserForCreation:
     }
 
     def __init__(self, name=None, password=None):
-        """SqlserverUserForCreation - a model defined in huaweicloud sdk"""
+        """SqlserverUserForCreation
+
+        The model defined in huaweicloud sdk
+
+        :param name: 数据库用户名称。  数据库帐号名称在1到128个字符之间，不能和系统用户名称相同。  系统用户包括：rdsadmin, rdsuser, rdsbackup, rdsmirror。
+        :type name: str
+        :param password: 数据库帐号密码。  取值范围：非空，密码长度在8到128个字符之间，至少包含大写字母、小写字母、数字、特殊字符三种字符的组合。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+        :type password: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class SqlserverUserForCreation:
         数据库用户名称。  数据库帐号名称在1到128个字符之间，不能和系统用户名称相同。  系统用户包括：rdsadmin, rdsuser, rdsbackup, rdsmirror。
 
         :param name: The name of this SqlserverUserForCreation.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class SqlserverUserForCreation:
         数据库帐号密码。  取值范围：非空，密码长度在8到128个字符之间，至少包含大写字母、小写字母、数字、特殊字符三种字符的组合。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
         :param password: The password of this SqlserverUserForCreation.
-        :type: str
+        :type password: str
         """
         self._password = password
 

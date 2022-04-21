@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryResourceResultDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class QueryResourceResultDTO:
     }
 
     def __init__(self, id=None, type=None, type_id=None, type_desc=None, vmr_mode=None, count=None, expire_date=None, order_id=None, status=None, editable=None):
-        """QueryResourceResultDTO - a model defined in huaweicloud sdk"""
+        """QueryResourceResultDTO
+
+        The model defined in huaweicloud sdk
+
+        :param id: 唯一标识若携带则以携带为准，企业内保证唯一，否则后台自动生成UUID
+        :type id: str
+        :param type: 资源类型，前台通过查询接口返回该sp支持售卖的资源在界面上做相应屏蔽，当前为枚举类型. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
+        :type type: str
+        :param type_id: 资源标识，比如资源类型为vmrpkg，则该参数为vmrPkgId
+        :type type_id: str
+        :param type_desc: 资源标识对应的回显描述,比如资源类型为vmrpkg，则该参数为vmrPkgName
+        :type type_desc: str
+        :param vmr_mode: VMR模式. 0：个人会议ID 1：云会议室 2：网络研讨会
+        :type vmr_mode: int
+        :param count: 资源数量
+        :type count: int
+        :param expire_date: 到期时间,utc时间戳
+        :type expire_date: int
+        :param order_id: 资源对应的订单id
+        :type order_id: str
+        :param status: 资源状态: - 0：正常 - 1：到期 - 2：停用
+        :type status: int
+        :param editable: 标识资源是否可以编辑或删除
+        :type editable: bool
+        """
         
         
 
@@ -103,7 +126,7 @@ class QueryResourceResultDTO:
         唯一标识若携带则以携带为准，企业内保证唯一，否则后台自动生成UUID
 
         :param id: The id of this QueryResourceResultDTO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -125,7 +148,7 @@ class QueryResourceResultDTO:
         资源类型，前台通过查询接口返回该sp支持售卖的资源在界面上做相应屏蔽，当前为枚举类型. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
 
         :param type: The type of this QueryResourceResultDTO.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -147,7 +170,7 @@ class QueryResourceResultDTO:
         资源标识，比如资源类型为vmrpkg，则该参数为vmrPkgId
 
         :param type_id: The type_id of this QueryResourceResultDTO.
-        :type: str
+        :type type_id: str
         """
         self._type_id = type_id
 
@@ -169,7 +192,7 @@ class QueryResourceResultDTO:
         资源标识对应的回显描述,比如资源类型为vmrpkg，则该参数为vmrPkgName
 
         :param type_desc: The type_desc of this QueryResourceResultDTO.
-        :type: str
+        :type type_desc: str
         """
         self._type_desc = type_desc
 
@@ -191,7 +214,7 @@ class QueryResourceResultDTO:
         VMR模式. 0：个人会议ID 1：云会议室 2：网络研讨会
 
         :param vmr_mode: The vmr_mode of this QueryResourceResultDTO.
-        :type: int
+        :type vmr_mode: int
         """
         self._vmr_mode = vmr_mode
 
@@ -213,7 +236,7 @@ class QueryResourceResultDTO:
         资源数量
 
         :param count: The count of this QueryResourceResultDTO.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -235,7 +258,7 @@ class QueryResourceResultDTO:
         到期时间,utc时间戳
 
         :param expire_date: The expire_date of this QueryResourceResultDTO.
-        :type: int
+        :type expire_date: int
         """
         self._expire_date = expire_date
 
@@ -257,7 +280,7 @@ class QueryResourceResultDTO:
         资源对应的订单id
 
         :param order_id: The order_id of this QueryResourceResultDTO.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 
@@ -279,7 +302,7 @@ class QueryResourceResultDTO:
         资源状态: - 0：正常 - 1：到期 - 2：停用
 
         :param status: The status of this QueryResourceResultDTO.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -301,7 +324,7 @@ class QueryResourceResultDTO:
         标识资源是否可以编辑或删除
 
         :param editable: The editable of this QueryResourceResultDTO.
-        :type: bool
+        :type editable: bool
         """
         self._editable = editable
 

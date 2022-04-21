@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListActiveOrHistoryAlarmsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
     }
 
     def __init__(self, events=None, page_info=None):
-        """ListActiveOrHistoryAlarmsResponse - a model defined in huaweicloud sdk"""
+        """ListActiveOrHistoryAlarmsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param events: 告警信息
+        :type events: list[:class:`huaweicloudsdklts.v2.Events`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdklts.v2.PageInfo`
+        """
         
         super(ListActiveOrHistoryAlarmsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
         告警信息
 
         :return: The events of this ListActiveOrHistoryAlarmsResponse.
-        :rtype: list[Events]
+        :rtype: list[:class:`huaweicloudsdklts.v2.Events`]
         """
         return self._events
 
@@ -63,7 +70,7 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
         告警信息
 
         :param events: The events of this ListActiveOrHistoryAlarmsResponse.
-        :type: list[Events]
+        :type events: list[:class:`huaweicloudsdklts.v2.Events`]
         """
         self._events = events
 
@@ -73,7 +80,7 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
 
 
         :return: The page_info of this ListActiveOrHistoryAlarmsResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdklts.v2.PageInfo`
         """
         return self._page_info
 
@@ -83,7 +90,7 @@ class ListActiveOrHistoryAlarmsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListActiveOrHistoryAlarmsResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdklts.v2.PageInfo`
         """
         self._page_info = page_info
 

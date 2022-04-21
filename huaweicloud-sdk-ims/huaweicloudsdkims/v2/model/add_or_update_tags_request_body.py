@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AddOrUpdateTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class AddOrUpdateTagsRequestBody:
     }
 
     def __init__(self, image_id=None, tag=None, image_tag=None):
-        """AddOrUpdateTagsRequestBody - a model defined in huaweicloud sdk"""
+        """AddOrUpdateTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param image_id: 镜像ID。
+        :type image_id: str
+        :param tag: 标签数据。 tag和image_tag只能使用一个。
+        :type tag: str
+        :param image_tag: 
+        :type image_tag: :class:`huaweicloudsdkims.v2.ResourceTag`
+        """
         
         
 
@@ -67,7 +76,7 @@ class AddOrUpdateTagsRequestBody:
         镜像ID。
 
         :param image_id: The image_id of this AddOrUpdateTagsRequestBody.
-        :type: str
+        :type image_id: str
         """
         self._image_id = image_id
 
@@ -89,7 +98,7 @@ class AddOrUpdateTagsRequestBody:
         标签数据。 tag和image_tag只能使用一个。
 
         :param tag: The tag of this AddOrUpdateTagsRequestBody.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 
@@ -99,7 +108,7 @@ class AddOrUpdateTagsRequestBody:
 
 
         :return: The image_tag of this AddOrUpdateTagsRequestBody.
-        :rtype: ResourceTag
+        :rtype: :class:`huaweicloudsdkims.v2.ResourceTag`
         """
         return self._image_tag
 
@@ -109,7 +118,7 @@ class AddOrUpdateTagsRequestBody:
 
 
         :param image_tag: The image_tag of this AddOrUpdateTagsRequestBody.
-        :type: ResourceTag
+        :type image_tag: :class:`huaweicloudsdkims.v2.ResourceTag`
         """
         self._image_tag = image_tag
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSpaceAnalysisRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListSpaceAnalysisRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, object_type=None, database_id=None, offset=None, limit=None, show_instance_info=None, datastore_type=None):
-        """ListSpaceAnalysisRequest - a model defined in huaweicloud sdk"""
+        """ListSpaceAnalysisRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param x_language: 语言
+        :type x_language: str
+        :param object_type: 对象类型
+        :type object_type: str
+        :param database_id: 数据库ID
+        :type database_id: str
+        :param offset: 偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。offset必须是limit的整数倍。
+        :type offset: str
+        :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
+        :type limit: str
+        :param show_instance_info: 是否返回实例级别数据，取值：true或者false
+        :type show_instance_info: str
+        :param datastore_type: 引擎类型
+        :type datastore_type: str
+        """
         
         
 
@@ -90,7 +109,7 @@ class ListSpaceAnalysisRequest:
         实例ID
 
         :param instance_id: The instance_id of this ListSpaceAnalysisRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -112,7 +131,7 @@ class ListSpaceAnalysisRequest:
         语言
 
         :param x_language: The x_language of this ListSpaceAnalysisRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -134,7 +153,7 @@ class ListSpaceAnalysisRequest:
         对象类型
 
         :param object_type: The object_type of this ListSpaceAnalysisRequest.
-        :type: str
+        :type object_type: str
         """
         self._object_type = object_type
 
@@ -156,7 +175,7 @@ class ListSpaceAnalysisRequest:
         数据库ID
 
         :param database_id: The database_id of this ListSpaceAnalysisRequest.
-        :type: str
+        :type database_id: str
         """
         self._database_id = database_id
 
@@ -178,7 +197,7 @@ class ListSpaceAnalysisRequest:
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。offset必须是limit的整数倍。
 
         :param offset: The offset of this ListSpaceAnalysisRequest.
-        :type: str
+        :type offset: str
         """
         self._offset = offset
 
@@ -200,7 +219,7 @@ class ListSpaceAnalysisRequest:
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
         :param limit: The limit of this ListSpaceAnalysisRequest.
-        :type: str
+        :type limit: str
         """
         self._limit = limit
 
@@ -222,7 +241,7 @@ class ListSpaceAnalysisRequest:
         是否返回实例级别数据，取值：true或者false
 
         :param show_instance_info: The show_instance_info of this ListSpaceAnalysisRequest.
-        :type: str
+        :type show_instance_info: str
         """
         self._show_instance_info = show_instance_info
 
@@ -244,7 +263,7 @@ class ListSpaceAnalysisRequest:
         引擎类型
 
         :param datastore_type: The datastore_type of this ListSpaceAnalysisRequest.
-        :type: str
+        :type datastore_type: str
         """
         self._datastore_type = datastore_type
 

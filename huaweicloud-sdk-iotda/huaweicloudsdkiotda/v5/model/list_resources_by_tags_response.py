@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourcesByTagsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListResourcesByTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, page=None):
-        """ListResourcesByTagsResponse - a model defined in huaweicloud sdk"""
+        """ListResourcesByTagsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 资源列表。
+        :type resources: list[:class:`huaweicloudsdkiotda.v5.ResourceDTO`]
+        :param page: 
+        :type page: :class:`huaweicloudsdkiotda.v5.Page`
+        """
         
         super(ListResourcesByTagsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListResourcesByTagsResponse(SdkResponse):
         资源列表。
 
         :return: The resources of this ListResourcesByTagsResponse.
-        :rtype: list[ResourceDTO]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.ResourceDTO`]
         """
         return self._resources
 
@@ -63,7 +70,7 @@ class ListResourcesByTagsResponse(SdkResponse):
         资源列表。
 
         :param resources: The resources of this ListResourcesByTagsResponse.
-        :type: list[ResourceDTO]
+        :type resources: list[:class:`huaweicloudsdkiotda.v5.ResourceDTO`]
         """
         self._resources = resources
 
@@ -73,7 +80,7 @@ class ListResourcesByTagsResponse(SdkResponse):
 
 
         :return: The page of this ListResourcesByTagsResponse.
-        :rtype: Page
+        :rtype: :class:`huaweicloudsdkiotda.v5.Page`
         """
         return self._page
 
@@ -83,7 +90,7 @@ class ListResourcesByTagsResponse(SdkResponse):
 
 
         :param page: The page of this ListResourcesByTagsResponse.
-        :type: Page
+        :type page: :class:`huaweicloudsdkiotda.v5.Page`
         """
         self._page = page
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeTypes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -22,79 +21,46 @@ class NodeTypes:
     sensitive_list = []
 
     openapi_types = {
+        'spec_name': 'str',
         'detail': 'list[Detail]',
-        'id': 'str',
-        'spec_name': 'str'
+        'id': 'str'
     }
 
     attribute_map = {
+        'spec_name': 'spec_name',
         'detail': 'detail',
-        'id': 'id',
-        'spec_name': 'spec_name'
+        'id': 'id'
     }
 
-    def __init__(self, detail=None, id=None, spec_name=None):
-        """NodeTypes - a model defined in huaweicloud sdk"""
+    def __init__(self, spec_name=None, detail=None, id=None):
+        """NodeTypes
+
+        The model defined in huaweicloud sdk
+
+        :param spec_name: 节点类型名称。
+        :type spec_name: str
+        :param detail: 节点类型详细。
+        :type detail: list[:class:`huaweicloudsdkdws.v2.Detail`]
+        :param id: 节点类型ID。
+        :type id: str
+        """
         
         
 
+        self._spec_name = None
         self._detail = None
         self._id = None
-        self._spec_name = None
         self.discriminator = None
 
+        self.spec_name = spec_name
         self.detail = detail
         self.id = id
-        self.spec_name = spec_name
-
-    @property
-    def detail(self):
-        """Gets the detail of this NodeTypes.
-
-        节点类型详细
-
-        :return: The detail of this NodeTypes.
-        :rtype: list[Detail]
-        """
-        return self._detail
-
-    @detail.setter
-    def detail(self, detail):
-        """Sets the detail of this NodeTypes.
-
-        节点类型详细
-
-        :param detail: The detail of this NodeTypes.
-        :type: list[Detail]
-        """
-        self._detail = detail
-
-    @property
-    def id(self):
-        """Gets the id of this NodeTypes.
-
-        节点类型ID
-
-        :return: The id of this NodeTypes.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this NodeTypes.
-
-        节点类型ID
-
-        :param id: The id of this NodeTypes.
-        :type: str
-        """
-        self._id = id
 
     @property
     def spec_name(self):
         """Gets the spec_name of this NodeTypes.
 
+        节点类型名称。
 
         :return: The spec_name of this NodeTypes.
         :rtype: str
@@ -105,11 +71,56 @@ class NodeTypes:
     def spec_name(self, spec_name):
         """Sets the spec_name of this NodeTypes.
 
+        节点类型名称。
 
         :param spec_name: The spec_name of this NodeTypes.
-        :type: str
+        :type spec_name: str
         """
         self._spec_name = spec_name
+
+    @property
+    def detail(self):
+        """Gets the detail of this NodeTypes.
+
+        节点类型详细。
+
+        :return: The detail of this NodeTypes.
+        :rtype: list[:class:`huaweicloudsdkdws.v2.Detail`]
+        """
+        return self._detail
+
+    @detail.setter
+    def detail(self, detail):
+        """Sets the detail of this NodeTypes.
+
+        节点类型详细。
+
+        :param detail: The detail of this NodeTypes.
+        :type detail: list[:class:`huaweicloudsdkdws.v2.Detail`]
+        """
+        self._detail = detail
+
+    @property
+    def id(self):
+        """Gets the id of this NodeTypes.
+
+        节点类型ID。
+
+        :return: The id of this NodeTypes.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this NodeTypes.
+
+        节点类型ID。
+
+        :param id: The id of this NodeTypes.
+        :type id: str
+        """
+        self._id = id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

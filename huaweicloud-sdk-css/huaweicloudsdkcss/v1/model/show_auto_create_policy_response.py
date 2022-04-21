@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAutoCreatePolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
     }
 
     def __init__(self, keepday=None, period=None, prefix=None, bucket=None, base_path=None, agency=None, enable=None):
-        """ShowAutoCreatePolicyResponse - a model defined in huaweicloud sdk"""
+        """ShowAutoCreatePolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param keepday: 快照保留的天数。
+        :type keepday: int
+        :param period: 每天快照创建时刻。
+        :type period: str
+        :param prefix: 快照命名前缀。
+        :type prefix: str
+        :param bucket: 快照存放的OBS桶。
+        :type bucket: str
+        :param base_path: 快照在OBS桶中的存放路径。
+        :type base_path: str
+        :param agency: 访问OBS桶用到的委托。
+        :type agency: str
+        :param enable: 是否开启自动创建快照策略。
+        :type enable: str
+        """
         
         super(ShowAutoCreatePolicyResponse, self).__init__()
 
@@ -88,7 +105,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         快照保留的天数。
 
         :param keepday: The keepday of this ShowAutoCreatePolicyResponse.
-        :type: int
+        :type keepday: int
         """
         self._keepday = keepday
 
@@ -110,7 +127,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         每天快照创建时刻。
 
         :param period: The period of this ShowAutoCreatePolicyResponse.
-        :type: str
+        :type period: str
         """
         self._period = period
 
@@ -132,7 +149,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         快照命名前缀。
 
         :param prefix: The prefix of this ShowAutoCreatePolicyResponse.
-        :type: str
+        :type prefix: str
         """
         self._prefix = prefix
 
@@ -154,7 +171,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         快照存放的OBS桶。
 
         :param bucket: The bucket of this ShowAutoCreatePolicyResponse.
-        :type: str
+        :type bucket: str
         """
         self._bucket = bucket
 
@@ -176,7 +193,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         快照在OBS桶中的存放路径。
 
         :param base_path: The base_path of this ShowAutoCreatePolicyResponse.
-        :type: str
+        :type base_path: str
         """
         self._base_path = base_path
 
@@ -198,7 +215,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         访问OBS桶用到的委托。
 
         :param agency: The agency of this ShowAutoCreatePolicyResponse.
-        :type: str
+        :type agency: str
         """
         self._agency = agency
 
@@ -220,7 +237,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         是否开启自动创建快照策略。
 
         :param enable: The enable of this ShowAutoCreatePolicyResponse.
-        :type: str
+        :type enable: str
         """
         self._enable = enable
 

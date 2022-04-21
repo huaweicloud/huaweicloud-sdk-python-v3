@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSecretDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateSecretDetail:
     }
 
     def __init__(self, description=None, secrets=None):
-        """UpdateSecretDetail - a model defined in huaweicloud sdk"""
+        """UpdateSecretDetail
+
+        The model defined in huaweicloud sdk
+
+        :param description: 密钥描述,最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
+        :type description: str
+        :param secrets: secrets是一个字典，由多个键值对组成，json化后最大总长度为1048576，key和value均为字符串。键值对中key由大小写字母或中划线开头，由数字、大小写字母、点号（.）、中划线（-）、下划线（_）组成，最小长度为1，最大长度63个字符, 键值对中的value必须为base64字符。 注：secrets字典的长度即字典转为标准的字符串后的长度，例如字典{\&quot;a\&quot;: \&quot;b\&quot;}转为标准字符串后为&#39;{\&quot;a\&quot;: \&quot;b\&quot;}&#39;，长度为10
+        :type secrets: dict(str, str)
+        """
         
         
 
@@ -63,7 +70,7 @@ class UpdateSecretDetail:
         密钥描述,最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
         :param description: The description of this UpdateSecretDetail.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -85,7 +92,7 @@ class UpdateSecretDetail:
         secrets是一个字典，由多个键值对组成，json化后最大总长度为1048576，key和value均为字符串。键值对中key由大小写字母或中划线开头，由数字、大小写字母、点号（.）、中划线（-）、下划线（_）组成，最小长度为1，最大长度63个字符, 键值对中的value必须为base64字符。 注：secrets字典的长度即字典转为标准的字符串后的长度，例如字典{\"a\": \"b\"}转为标准字符串后为'{\"a\": \"b\"}'，长度为10
 
         :param secrets: The secrets of this UpdateSecretDetail.
-        :type: dict(str, str)
+        :type secrets: dict(str, str)
         """
         self._secrets = secrets
 

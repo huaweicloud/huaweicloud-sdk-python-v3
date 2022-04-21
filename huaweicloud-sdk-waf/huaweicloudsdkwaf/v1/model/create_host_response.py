@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateHostResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -54,7 +53,37 @@ class CreateHostResponse(SdkResponse):
     }
 
     def __init__(self, id=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, protocol=None, certificateid=None, certificatename=None, server=None, proxy=None, timestamp=None, exclusive_ip=None):
-        """CreateHostResponse - a model defined in huaweicloud sdk"""
+        """CreateHostResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 域名id
+        :type id: str
+        :param hostname: 创建的云模式防护域名
+        :type hostname: str
+        :param policyid: 策略id
+        :type policyid: str
+        :param access_code: cname前缀
+        :type access_code: str
+        :param protect_status: 域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        :type protect_status: int
+        :param access_status: 接入状态
+        :type access_status: int
+        :param protocol: 返回的客户端协议类型
+        :type protocol: str
+        :param certificateid: 返回的证书id
+        :type certificateid: str
+        :param certificatename: 证书名称
+        :type certificatename: str
+        :param server: 源站信息
+        :type server: list[:class:`huaweicloudsdkwaf.v1.CloudWafServer`]
+        :param proxy: 是否开启了代理
+        :type proxy: bool
+        :param timestamp: 创建防护域名的时间
+        :type timestamp: int
+        :param exclusive_ip: 是否使用独享ip
+        :type exclusive_ip: bool
+        """
         
         super(CreateHostResponse, self).__init__()
 
@@ -118,7 +147,7 @@ class CreateHostResponse(SdkResponse):
         域名id
 
         :param id: The id of this CreateHostResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -140,7 +169,7 @@ class CreateHostResponse(SdkResponse):
         创建的云模式防护域名
 
         :param hostname: The hostname of this CreateHostResponse.
-        :type: str
+        :type hostname: str
         """
         self._hostname = hostname
 
@@ -162,7 +191,7 @@ class CreateHostResponse(SdkResponse):
         策略id
 
         :param policyid: The policyid of this CreateHostResponse.
-        :type: str
+        :type policyid: str
         """
         self._policyid = policyid
 
@@ -184,7 +213,7 @@ class CreateHostResponse(SdkResponse):
         cname前缀
 
         :param access_code: The access_code of this CreateHostResponse.
-        :type: str
+        :type access_code: str
         """
         self._access_code = access_code
 
@@ -206,7 +235,7 @@ class CreateHostResponse(SdkResponse):
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :param protect_status: The protect_status of this CreateHostResponse.
-        :type: int
+        :type protect_status: int
         """
         self._protect_status = protect_status
 
@@ -228,7 +257,7 @@ class CreateHostResponse(SdkResponse):
         接入状态
 
         :param access_status: The access_status of this CreateHostResponse.
-        :type: int
+        :type access_status: int
         """
         self._access_status = access_status
 
@@ -250,7 +279,7 @@ class CreateHostResponse(SdkResponse):
         返回的客户端协议类型
 
         :param protocol: The protocol of this CreateHostResponse.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -272,7 +301,7 @@ class CreateHostResponse(SdkResponse):
         返回的证书id
 
         :param certificateid: The certificateid of this CreateHostResponse.
-        :type: str
+        :type certificateid: str
         """
         self._certificateid = certificateid
 
@@ -294,7 +323,7 @@ class CreateHostResponse(SdkResponse):
         证书名称
 
         :param certificatename: The certificatename of this CreateHostResponse.
-        :type: str
+        :type certificatename: str
         """
         self._certificatename = certificatename
 
@@ -305,7 +334,7 @@ class CreateHostResponse(SdkResponse):
         源站信息
 
         :return: The server of this CreateHostResponse.
-        :rtype: list[CloudWafServer]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.CloudWafServer`]
         """
         return self._server
 
@@ -316,7 +345,7 @@ class CreateHostResponse(SdkResponse):
         源站信息
 
         :param server: The server of this CreateHostResponse.
-        :type: list[CloudWafServer]
+        :type server: list[:class:`huaweicloudsdkwaf.v1.CloudWafServer`]
         """
         self._server = server
 
@@ -338,7 +367,7 @@ class CreateHostResponse(SdkResponse):
         是否开启了代理
 
         :param proxy: The proxy of this CreateHostResponse.
-        :type: bool
+        :type proxy: bool
         """
         self._proxy = proxy
 
@@ -360,7 +389,7 @@ class CreateHostResponse(SdkResponse):
         创建防护域名的时间
 
         :param timestamp: The timestamp of this CreateHostResponse.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 
@@ -382,7 +411,7 @@ class CreateHostResponse(SdkResponse):
         是否使用独享ip
 
         :param exclusive_ip: The exclusive_ip of this CreateHostResponse.
-        :type: bool
+        :type exclusive_ip: bool
         """
         self._exclusive_ip = exclusive_ip
 

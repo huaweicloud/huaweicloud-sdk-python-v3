@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoadCustomThesaurusReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class LoadCustomThesaurusReq:
     }
 
     def __init__(self, bucket_name=None, main_object=None, stop_object=None, synonym_object=None):
-        """LoadCustomThesaurusReq - a model defined in huaweicloud sdk"""
+        """LoadCustomThesaurusReq
+
+        The model defined in huaweicloud sdk
+
+        :param bucket_name: 词库文件存放的OBS桶（桶类型必须为标准存储或者低频存储，不支持归档存储）。
+        :type bucket_name: str
+        :param main_object: 主词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持100M。  mainObject, stopObject, synonymObject三个参数至少要填写一个。 说明：一次只能加载一个主词库，不支持同时加载多个主词库。
+        :type main_object: str
+        :param stop_object: 停词词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持20M。  mainObject, stopObject, synonymObject三个参数至少要填写一个。
+        :type stop_object: str
+        :param synonym_object: 同义词词库文件，必须为UTF-8无BOM编码的文本文件，一行一组分词，文件大小最大支持20M。  mainObject, stopObject, synonymObject三个参数至少要填写一个。
+        :type synonym_object: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class LoadCustomThesaurusReq:
         词库文件存放的OBS桶（桶类型必须为标准存储或者低频存储，不支持归档存储）。
 
         :param bucket_name: The bucket_name of this LoadCustomThesaurusReq.
-        :type: str
+        :type bucket_name: str
         """
         self._bucket_name = bucket_name
 
@@ -91,7 +102,7 @@ class LoadCustomThesaurusReq:
         主词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持100M。  mainObject, stopObject, synonymObject三个参数至少要填写一个。 说明：一次只能加载一个主词库，不支持同时加载多个主词库。
 
         :param main_object: The main_object of this LoadCustomThesaurusReq.
-        :type: str
+        :type main_object: str
         """
         self._main_object = main_object
 
@@ -113,7 +124,7 @@ class LoadCustomThesaurusReq:
         停词词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持20M。  mainObject, stopObject, synonymObject三个参数至少要填写一个。
 
         :param stop_object: The stop_object of this LoadCustomThesaurusReq.
-        :type: str
+        :type stop_object: str
         """
         self._stop_object = stop_object
 
@@ -135,7 +146,7 @@ class LoadCustomThesaurusReq:
         同义词词库文件，必须为UTF-8无BOM编码的文本文件，一行一组分词，文件大小最大支持20M。  mainObject, stopObject, synonymObject三个参数至少要填写一个。
 
         :param synonym_object: The synonym_object of this LoadCustomThesaurusReq.
-        :type: str
+        :type synonym_object: str
         """
         self._synonym_object = synonym_object
 

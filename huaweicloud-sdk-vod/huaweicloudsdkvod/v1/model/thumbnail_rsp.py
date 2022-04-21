@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThumbnailRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ThumbnailRsp:
     }
 
     def __init__(self, offset=None, url=None):
-        """ThumbnailRsp - a model defined in huaweicloud sdk"""
+        """ThumbnailRsp
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 截图在视频中的时间偏移，单位为秒。
+        :type offset: int
+        :param url: 截图访问URL
+        :type url: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ThumbnailRsp:
         截图在视频中的时间偏移，单位为秒。
 
         :param offset: The offset of this ThumbnailRsp.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -83,7 +90,7 @@ class ThumbnailRsp:
         截图访问URL
 
         :param url: The url of this ThumbnailRsp.
-        :type: str
+        :type url: str
         """
         self._url = url
 

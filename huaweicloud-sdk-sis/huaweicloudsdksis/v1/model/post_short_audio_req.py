@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostShortAudioReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PostShortAudioReq:
     }
 
     def __init__(self, config=None, data=None):
-        """PostShortAudioReq - a model defined in huaweicloud sdk"""
+        """PostShortAudioReq
+
+        The model defined in huaweicloud sdk
+
+        :param config: 
+        :type config: :class:`huaweicloudsdksis.v1.Config`
+        :param data: 语音数据，base64编码，要求base64编码后大小不超过4M，音频时长不超过1分钟。
+        :type data: str
+        """
         
         
 
@@ -49,7 +56,7 @@ class PostShortAudioReq:
 
 
         :return: The config of this PostShortAudioReq.
-        :rtype: Config
+        :rtype: :class:`huaweicloudsdksis.v1.Config`
         """
         return self._config
 
@@ -59,7 +66,7 @@ class PostShortAudioReq:
 
 
         :param config: The config of this PostShortAudioReq.
-        :type: Config
+        :type config: :class:`huaweicloudsdksis.v1.Config`
         """
         self._config = config
 
@@ -81,7 +88,7 @@ class PostShortAudioReq:
         语音数据，base64编码，要求base64编码后大小不超过4M，音频时长不超过1分钟。
 
         :param data: The data of this PostShortAudioReq.
-        :type: str
+        :type data: str
         """
         self._data = data
 

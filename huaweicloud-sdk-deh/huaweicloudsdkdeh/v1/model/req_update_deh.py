@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReqUpdateDeh:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ReqUpdateDeh:
     }
 
     def __init__(self, dedicated_host=None):
-        """ReqUpdateDeh - a model defined in huaweicloud sdk"""
+        """ReqUpdateDeh
+
+        The model defined in huaweicloud sdk
+
+        :param dedicated_host: 
+        :type dedicated_host: :class:`huaweicloudsdkdeh.v1.ReqUpdateDehMessage`
+        """
         
         
 
@@ -45,7 +50,7 @@ class ReqUpdateDeh:
 
 
         :return: The dedicated_host of this ReqUpdateDeh.
-        :rtype: ReqUpdateDehMessage
+        :rtype: :class:`huaweicloudsdkdeh.v1.ReqUpdateDehMessage`
         """
         return self._dedicated_host
 
@@ -55,7 +60,7 @@ class ReqUpdateDeh:
 
 
         :param dedicated_host: The dedicated_host of this ReqUpdateDeh.
-        :type: ReqUpdateDehMessage
+        :type dedicated_host: :class:`huaweicloudsdkdeh.v1.ReqUpdateDehMessage`
         """
         self._dedicated_host = dedicated_host
 

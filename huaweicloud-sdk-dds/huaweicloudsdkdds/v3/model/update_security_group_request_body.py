@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateSecurityGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateSecurityGroupRequestBody:
     }
 
     def __init__(self, security_group_id=None):
-        """UpdateSecurityGroupRequestBody - a model defined in huaweicloud sdk"""
+        """UpdateSecurityGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param security_group_id: 新的安全组ID。
+        :type security_group_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateSecurityGroupRequestBody:
         新的安全组ID。
 
         :param security_group_id: The security_group_id of this UpdateSecurityGroupRequestBody.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 

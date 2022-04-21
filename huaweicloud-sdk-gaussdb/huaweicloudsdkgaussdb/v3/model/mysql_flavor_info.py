@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlFlavorInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MysqlFlavorInfo:
     }
 
     def __init__(self, vcpus=None, ram=None):
-        """MysqlFlavorInfo - a model defined in huaweicloud sdk"""
+        """MysqlFlavorInfo
+
+        The model defined in huaweicloud sdk
+
+        :param vcpus: CPU核数。
+        :type vcpus: str
+        :param ram: 内存大小，单位GB。
+        :type ram: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class MysqlFlavorInfo:
         CPU核数。
 
         :param vcpus: The vcpus of this MysqlFlavorInfo.
-        :type: str
+        :type vcpus: str
         """
         self._vcpus = vcpus
 
@@ -83,7 +90,7 @@ class MysqlFlavorInfo:
         内存大小，单位GB。
 
         :param ram: The ram of this MysqlFlavorInfo.
-        :type: str
+        :type ram: str
         """
         self._ram = ram
 

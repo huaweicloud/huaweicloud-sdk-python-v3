@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAvailableZonesV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListAvailableZonesV2Request:
     }
 
     def __init__(self):
-        """ListAvailableZonesV2Request - a model defined in huaweicloud sdk"""
+        """ListAvailableZonesV2Request
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

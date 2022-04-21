@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBackendInstancesV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListBackendInstancesV2Request:
     }
 
     def __init__(self, instance_id=None, vpc_channel_id=None, offset=None, limit=None, name=None):
-        """ListBackendInstancesV2Request - a model defined in huaweicloud sdk"""
+        """ListBackendInstancesV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param vpc_channel_id: VPC通道的编号
+        :type vpc_channel_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param name: 云服务器的名称
+        :type name: str
+        """
         
         
 
@@ -76,7 +89,7 @@ class ListBackendInstancesV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListBackendInstancesV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -98,7 +111,7 @@ class ListBackendInstancesV2Request:
         VPC通道的编号
 
         :param vpc_channel_id: The vpc_channel_id of this ListBackendInstancesV2Request.
-        :type: str
+        :type vpc_channel_id: str
         """
         self._vpc_channel_id = vpc_channel_id
 
@@ -120,7 +133,7 @@ class ListBackendInstancesV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListBackendInstancesV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -142,7 +155,7 @@ class ListBackendInstancesV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListBackendInstancesV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -164,7 +177,7 @@ class ListBackendInstancesV2Request:
         云服务器的名称
 
         :param name: The name of this ListBackendInstancesV2Request.
-        :type: str
+        :type name: str
         """
         self._name = name
 

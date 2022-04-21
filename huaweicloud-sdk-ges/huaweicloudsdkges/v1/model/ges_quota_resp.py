@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GesQuotaResp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class GesQuotaResp:
     }
 
     def __init__(self, resources=None):
-        """GesQuotaResp - a model defined in huaweicloud sdk"""
+        """GesQuotaResp
+
+        The model defined in huaweicloud sdk
+
+        :param resources: GES资源配额列表。
+        :type resources: list[:class:`huaweicloudsdkges.v1.Quota`]
+        """
         
         
 
@@ -47,7 +52,7 @@ class GesQuotaResp:
         GES资源配额列表。
 
         :return: The resources of this GesQuotaResp.
-        :rtype: list[Quota]
+        :rtype: list[:class:`huaweicloudsdkges.v1.Quota`]
         """
         return self._resources
 
@@ -58,7 +63,7 @@ class GesQuotaResp:
         GES资源配额列表。
 
         :param resources: The resources of this GesQuotaResp.
-        :type: list[Quota]
+        :type resources: list[:class:`huaweicloudsdkges.v1.Quota`]
         """
         self._resources = resources
 

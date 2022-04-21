@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NamedFormula:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NamedFormula:
     }
 
     def __init__(self, name=None, formula=None):
-        """NamedFormula - a model defined in huaweicloud sdk"""
+        """NamedFormula
+
+        The model defined in huaweicloud sdk
+
+        :param name: 公式名称，不能和输入参数名重复，正则：\&quot;^[A-Za-z][A-Za-z_]{0,31}$\&quot;
+        :type name: str
+        :param formula: 公式，最多1024个字符
+        :type formula: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class NamedFormula:
         公式名称，不能和输入参数名重复，正则：\"^[A-Za-z][A-Za-z_]{0,31}$\"
 
         :param name: The name of this NamedFormula.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -83,7 +90,7 @@ class NamedFormula:
         公式，最多1024个字符
 
         :param formula: The formula of this NamedFormula.
-        :type: str
+        :type formula: str
         """
         self._formula = formula
 

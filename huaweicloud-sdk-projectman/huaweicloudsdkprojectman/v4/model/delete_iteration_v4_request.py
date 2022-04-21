@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteIterationV4Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DeleteIterationV4Request:
     }
 
     def __init__(self, project_id=None, iteration_id=None):
-        """DeleteIterationV4Request - a model defined in huaweicloud sdk"""
+        """DeleteIterationV4Request
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: devcloud的项目id
+        :type project_id: str
+        :param iteration_id: 迭代id
+        :type iteration_id: int
+        """
         
         
 
@@ -61,7 +68,7 @@ class DeleteIterationV4Request:
         devcloud的项目id
 
         :param project_id: The project_id of this DeleteIterationV4Request.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -83,7 +90,7 @@ class DeleteIterationV4Request:
         迭代id
 
         :param iteration_id: The iteration_id of this DeleteIterationV4Request.
-        :type: int
+        :type iteration_id: int
         """
         self._iteration_id = iteration_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTaskParameterRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListTaskParameterRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, body=None):
-        """ListTaskParameterRequest - a model defined in huaweicloud sdk"""
+        """ListTaskParameterRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_id: 项目ID
+        :type project_id: str
+        :param task_id: 任务ID
+        :type task_id: str
+        :param body: Body of the ListTaskParameterRequest
+        :type body: :class:`huaweicloudsdkcodecheck.v2.ConfigTaskParameterBody`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ListTaskParameterRequest:
         项目ID
 
         :param project_id: The project_id of this ListTaskParameterRequest.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -88,7 +97,7 @@ class ListTaskParameterRequest:
         任务ID
 
         :param task_id: The task_id of this ListTaskParameterRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -98,7 +107,7 @@ class ListTaskParameterRequest:
 
 
         :return: The body of this ListTaskParameterRequest.
-        :rtype: ConfigTaskParameterBody
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ConfigTaskParameterBody`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class ListTaskParameterRequest:
 
 
         :param body: The body of this ListTaskParameterRequest.
-        :type: ConfigTaskParameterBody
+        :type body: :class:`huaweicloudsdkcodecheck.v2.ConfigTaskParameterBody`
         """
         self._body = body
 

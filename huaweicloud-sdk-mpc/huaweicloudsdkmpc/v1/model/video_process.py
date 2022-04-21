@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VideoProcess:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class VideoProcess:
     }
 
     def __init__(self, hls_init_count=None, hls_init_interval=None, rotate=None, adaptation=None, upsample=None):
-        """VideoProcess - a model defined in huaweicloud sdk"""
+        """VideoProcess
+
+        The model defined in huaweicloud sdk
+
+        :param hls_init_count: 需要单独设置时长的HLS起始分片数量。与hls_init_interval配合使用，设置前面hls_init_count个HLS分片时长。 为0表示不单独配置时长。 
+        :type hls_init_count: int
+        :param hls_init_interval: 表示前面hls_init_count个HLS分片的时长,hls_init_count不为0时，该字段才起作用。 
+        :type hls_init_interval: int
+        :param rotate: 视频顺时针旋转角度。  - 0：表示不旋转 - 1：表示顺时针旋转90度 - 2：表示顺时针旋转180度 - 3：表示顺时针旋转270度 
+        :type rotate: int
+        :param adaptation: 长短边自适应控制字段： - SHORT：表示短边自适应 - LONG：表示长边自适应 - NONE：表示不自适应 
+        :type adaptation: str
+        :param upsample: 是否开启上采样，如支持从480P的片源转为720P，可取值为:  - 0：表示上采样关闭， - 1：表示上采样开启. 
+        :type upsample: int
+        """
         
         
 
@@ -78,7 +91,7 @@ class VideoProcess:
         需要单独设置时长的HLS起始分片数量。与hls_init_interval配合使用，设置前面hls_init_count个HLS分片时长。 为0表示不单独配置时长。 
 
         :param hls_init_count: The hls_init_count of this VideoProcess.
-        :type: int
+        :type hls_init_count: int
         """
         self._hls_init_count = hls_init_count
 
@@ -100,7 +113,7 @@ class VideoProcess:
         表示前面hls_init_count个HLS分片的时长,hls_init_count不为0时，该字段才起作用。 
 
         :param hls_init_interval: The hls_init_interval of this VideoProcess.
-        :type: int
+        :type hls_init_interval: int
         """
         self._hls_init_interval = hls_init_interval
 
@@ -122,7 +135,7 @@ class VideoProcess:
         视频顺时针旋转角度。  - 0：表示不旋转 - 1：表示顺时针旋转90度 - 2：表示顺时针旋转180度 - 3：表示顺时针旋转270度 
 
         :param rotate: The rotate of this VideoProcess.
-        :type: int
+        :type rotate: int
         """
         self._rotate = rotate
 
@@ -144,7 +157,7 @@ class VideoProcess:
         长短边自适应控制字段： - SHORT：表示短边自适应 - LONG：表示长边自适应 - NONE：表示不自适应 
 
         :param adaptation: The adaptation of this VideoProcess.
-        :type: str
+        :type adaptation: str
         """
         self._adaptation = adaptation
 
@@ -166,7 +179,7 @@ class VideoProcess:
         是否开启上采样，如支持从480P的片源转为720P，可取值为:  - 0：表示上采样关闭， - 1：表示上采样开启. 
 
         :param upsample: The upsample of this VideoProcess.
-        :type: int
+        :type upsample: int
         """
         self._upsample = upsample
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CompareObjectInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CompareObjectInfo:
     }
 
     def __init__(self, db_name=None, table_name=None):
-        """CompareObjectInfo - a model defined in huaweicloud sdk"""
+        """CompareObjectInfo
+
+        The model defined in huaweicloud sdk
+
+        :param db_name: 库名。
+        :type db_name: str
+        :param table_name: 该库下的表名列表。
+        :type table_name: list[str]
+        """
         
         
 
@@ -62,7 +69,7 @@ class CompareObjectInfo:
         库名。
 
         :param db_name: The db_name of this CompareObjectInfo.
-        :type: str
+        :type db_name: str
         """
         self._db_name = db_name
 
@@ -84,7 +91,7 @@ class CompareObjectInfo:
         该库下的表名列表。
 
         :param table_name: The table_name of this CompareObjectInfo.
-        :type: list[str]
+        :type table_name: list[str]
         """
         self._table_name = table_name
 

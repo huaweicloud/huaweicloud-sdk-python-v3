@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Quota:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Quota:
     }
 
     def __init__(self, type=None, available=None, edge_volume=None):
-        """Quota - a model defined in huaweicloud sdk"""
+        """Quota
+
+        The model defined in huaweicloud sdk
+
+        :param type: 类型。  取值范围： - \&quot;graph\&quot; - \&quot;backup\&quot; - \&quot;metadata\&quot;
+        :type type: str
+        :param available: 图的可用个数。
+        :type available: int
+        :param edge_volume: 边的可用个数。type为graph时此值有效。
+        :type edge_volume: int
+        """
         
         
 
@@ -66,7 +75,7 @@ class Quota:
         类型。  取值范围： - \"graph\" - \"backup\" - \"metadata\"
 
         :param type: The type of this Quota.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -88,7 +97,7 @@ class Quota:
         图的可用个数。
 
         :param available: The available of this Quota.
-        :type: int
+        :type available: int
         """
         self._available = available
 
@@ -110,7 +119,7 @@ class Quota:
         边的可用个数。type为graph时此值有效。
 
         :param edge_volume: The edge_volume of this Quota.
-        :type: int
+        :type edge_volume: int
         """
         self._edge_volume = edge_volume
 

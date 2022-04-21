@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TaskTimingFrequency:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class TaskTimingFrequency:
     }
 
     def __init__(self, interval=None, duration=None, begin_at=None, end_at=None):
-        """TaskTimingFrequency - a model defined in huaweicloud sdk"""
+        """TaskTimingFrequency
+
+        The model defined in huaweicloud sdk
+
+        :param interval: 相邻两次执行之间的间隔，频率模式必填。取值范围在5~720之间，单位：分钟。
+        :type interval: int
+        :param duration: 单次执行的运行时长，频率模式必填。取值范围在5~720之间，单位：分钟。
+        :type duration: int
+        :param begin_at: 单日内执行的起始时间，选填。格式形如hh:mm:ss。
+        :type begin_at: str
+        :param end_at: 单日内执行的结束时间，选填。格式形如hh:mm:ss。
+        :type end_at: str
+        """
         
         
 
@@ -71,7 +82,7 @@ class TaskTimingFrequency:
         相邻两次执行之间的间隔，频率模式必填。取值范围在5~720之间，单位：分钟。
 
         :param interval: The interval of this TaskTimingFrequency.
-        :type: int
+        :type interval: int
         """
         self._interval = interval
 
@@ -93,7 +104,7 @@ class TaskTimingFrequency:
         单次执行的运行时长，频率模式必填。取值范围在5~720之间，单位：分钟。
 
         :param duration: The duration of this TaskTimingFrequency.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -115,7 +126,7 @@ class TaskTimingFrequency:
         单日内执行的起始时间，选填。格式形如hh:mm:ss。
 
         :param begin_at: The begin_at of this TaskTimingFrequency.
-        :type: str
+        :type begin_at: str
         """
         self._begin_at = begin_at
 
@@ -137,7 +148,7 @@ class TaskTimingFrequency:
         单日内执行的结束时间，选填。格式形如hh:mm:ss。
 
         :param end_at: The end_at of this TaskTimingFrequency.
-        :type: str
+        :type end_at: str
         """
         self._end_at = end_at
 

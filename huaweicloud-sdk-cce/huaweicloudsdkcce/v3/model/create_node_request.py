@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateNodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateNodeRequest:
     }
 
     def __init__(self, cluster_id=None, nodepool_scale_up=None, body=None):
-        """CreateNodeRequest - a model defined in huaweicloud sdk"""
+        """CreateNodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
+        :type cluster_id: str
+        :param nodepool_scale_up: 标明是否为nodepool下发的请求。若不为“NodepoolScaleUp”将自动更新对应节点池的实例数
+        :type nodepool_scale_up: str
+        :param body: Body of the CreateNodeRequest
+        :type body: :class:`huaweicloudsdkcce.v3.NodeCreateRequest`
+        """
         
         
 
@@ -67,7 +76,7 @@ class CreateNodeRequest:
         集群 ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
         :param cluster_id: The cluster_id of this CreateNodeRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 
@@ -89,7 +98,7 @@ class CreateNodeRequest:
         标明是否为nodepool下发的请求。若不为“NodepoolScaleUp”将自动更新对应节点池的实例数
 
         :param nodepool_scale_up: The nodepool_scale_up of this CreateNodeRequest.
-        :type: str
+        :type nodepool_scale_up: str
         """
         self._nodepool_scale_up = nodepool_scale_up
 
@@ -99,7 +108,7 @@ class CreateNodeRequest:
 
 
         :return: The body of this CreateNodeRequest.
-        :rtype: NodeCreateRequest
+        :rtype: :class:`huaweicloudsdkcce.v3.NodeCreateRequest`
         """
         return self._body
 
@@ -109,7 +118,7 @@ class CreateNodeRequest:
 
 
         :param body: The body of this CreateNodeRequest.
-        :type: NodeCreateRequest
+        :type body: :class:`huaweicloudsdkcce.v3.NodeCreateRequest`
         """
         self._body = body
 

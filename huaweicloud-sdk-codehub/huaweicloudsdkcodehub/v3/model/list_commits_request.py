@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCommitsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ListCommitsRequest:
     }
 
     def __init__(self, repo_id=None, ref_name=None, since=None, until=None, path=None, all=None, with_stats=None):
-        """ListCommitsRequest - a model defined in huaweicloud sdk"""
+        """ListCommitsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param repo_id: 仓库短id
+        :type repo_id: int
+        :param ref_name: 仓库的branch名或tag名，如果为空则查询默认分支
+        :type ref_name: str
+        :param since: 在此日期之后或当天提交，格式 YYYY-MM-DDTHH:MM:SSZ
+        :type since: str
+        :param until: 在此日期之前或当天提交，格式 YYYY-MM-DDTHH:MM:SSZ
+        :type until: str
+        :param path: 文件路径
+        :type path: str
+        :param all: 是否检索仓库中每个提交
+        :type all: bool
+        :param with_stats: 有关每个提交的统计信息是否添加到响应中
+        :type with_stats: bool
+        """
         
         
 
@@ -87,7 +104,7 @@ class ListCommitsRequest:
         仓库短id
 
         :param repo_id: The repo_id of this ListCommitsRequest.
-        :type: int
+        :type repo_id: int
         """
         self._repo_id = repo_id
 
@@ -109,7 +126,7 @@ class ListCommitsRequest:
         仓库的branch名或tag名，如果为空则查询默认分支
 
         :param ref_name: The ref_name of this ListCommitsRequest.
-        :type: str
+        :type ref_name: str
         """
         self._ref_name = ref_name
 
@@ -131,7 +148,7 @@ class ListCommitsRequest:
         在此日期之后或当天提交，格式 YYYY-MM-DDTHH:MM:SSZ
 
         :param since: The since of this ListCommitsRequest.
-        :type: str
+        :type since: str
         """
         self._since = since
 
@@ -153,7 +170,7 @@ class ListCommitsRequest:
         在此日期之前或当天提交，格式 YYYY-MM-DDTHH:MM:SSZ
 
         :param until: The until of this ListCommitsRequest.
-        :type: str
+        :type until: str
         """
         self._until = until
 
@@ -175,7 +192,7 @@ class ListCommitsRequest:
         文件路径
 
         :param path: The path of this ListCommitsRequest.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -197,7 +214,7 @@ class ListCommitsRequest:
         是否检索仓库中每个提交
 
         :param all: The all of this ListCommitsRequest.
-        :type: bool
+        :type all: bool
         """
         self._all = all
 
@@ -219,7 +236,7 @@ class ListCommitsRequest:
         有关每个提交的统计信息是否添加到响应中
 
         :param with_stats: The with_stats of this ListCommitsRequest.
-        :type: bool
+        :type with_stats: bool
         """
         self._with_stats = with_stats
 

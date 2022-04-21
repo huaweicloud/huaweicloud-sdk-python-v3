@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EdgeCloud:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class EdgeCloud:
     }
 
     def __init__(self, id=None, name=None, description=None, coverage=None, failed_num=None, status=None, success_num=None, edge_regions=None):
-        """EdgeCloud - a model defined in huaweicloud sdk"""
+        """EdgeCloud
+
+        The model defined in huaweicloud sdk
+
+        :param id: 边缘业务ID。
+        :type id: str
+        :param name: 边缘业务名称。 取值范围：只能由中文字符、大小写英文字母、数字及中划线、下划线组成，且长度为[1-32]个字符。
+        :type name: str
+        :param description: 边缘业务描述。最大支持255字节。
+        :type description: str
+        :param coverage: 
+        :type coverage: :class:`huaweicloudsdkiec.v1.CoverageResp`
+        :param failed_num: 创建失败的虚拟机
+        :type failed_num: int
+        :param status: 边缘业务状态，现存状态有： - creating/scheduling/updating：部署中 - inService：运行中 - failed：创建失败 - deleting：删除中 - delFailed：删除失败
+        :type status: str
+        :param success_num: 成功创建的虚拟机
+        :type success_num: int
+        :param edge_regions: 边缘业务支持的边缘区域数目。
+        :type edge_regions: int
+        """
         
         
 
@@ -93,7 +112,7 @@ class EdgeCloud:
         边缘业务ID。
 
         :param id: The id of this EdgeCloud.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class EdgeCloud:
         边缘业务名称。 取值范围：只能由中文字符、大小写英文字母、数字及中划线、下划线组成，且长度为[1-32]个字符。
 
         :param name: The name of this EdgeCloud.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -137,7 +156,7 @@ class EdgeCloud:
         边缘业务描述。最大支持255字节。
 
         :param description: The description of this EdgeCloud.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -147,7 +166,7 @@ class EdgeCloud:
 
 
         :return: The coverage of this EdgeCloud.
-        :rtype: CoverageResp
+        :rtype: :class:`huaweicloudsdkiec.v1.CoverageResp`
         """
         return self._coverage
 
@@ -157,7 +176,7 @@ class EdgeCloud:
 
 
         :param coverage: The coverage of this EdgeCloud.
-        :type: CoverageResp
+        :type coverage: :class:`huaweicloudsdkiec.v1.CoverageResp`
         """
         self._coverage = coverage
 
@@ -179,7 +198,7 @@ class EdgeCloud:
         创建失败的虚拟机
 
         :param failed_num: The failed_num of this EdgeCloud.
-        :type: int
+        :type failed_num: int
         """
         self._failed_num = failed_num
 
@@ -201,7 +220,7 @@ class EdgeCloud:
         边缘业务状态，现存状态有： - creating/scheduling/updating：部署中 - inService：运行中 - failed：创建失败 - deleting：删除中 - delFailed：删除失败
 
         :param status: The status of this EdgeCloud.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -223,7 +242,7 @@ class EdgeCloud:
         成功创建的虚拟机
 
         :param success_num: The success_num of this EdgeCloud.
-        :type: int
+        :type success_num: int
         """
         self._success_num = success_num
 
@@ -245,7 +264,7 @@ class EdgeCloud:
         边缘业务支持的边缘区域数目。
 
         :param edge_regions: The edge_regions of this EdgeCloud.
-        :type: int
+        :type edge_regions: int
         """
         self._edge_regions = edge_regions
 

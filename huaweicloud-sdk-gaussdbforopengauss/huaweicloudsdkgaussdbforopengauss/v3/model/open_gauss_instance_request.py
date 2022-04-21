@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenGaussInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class OpenGaussInstanceRequest:
     }
 
     def __init__(self, name=None, datastore=None, ha=None, configuration_id=None, port=None, password=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, volume=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, sharding_num=None, coordinator_num=None, replica_num=None, enable_force_switch=None):
-        """OpenGaussInstanceRequest - a model defined in huaweicloud sdk"""
+        """OpenGaussInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param name: 实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。  取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
+        :type name: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastore`
+        :param ha: 
+        :type ha: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHa`
+        :param configuration_id: 参数模板ID。当不传该参数时，使用系统默认的参数模板。
+        :type configuration_id: str
+        :param port: 数据库对外开放的端口，不填默认为8000，可选范围为：1024-39998。限制端口： 2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,12016,12017,20049,20050,21731,21732,32122,32123,32124。  - GaussDB(for openGauss)数据库端口当前只支持设置为8000，当不传该参数时，默认端口为8000。
+        :type port: str
+        :param password: 数据库密码。必选。  取值范围：  &#39;非空； 至少包含大写字母（A-Z），小写字母（a-z），数字（0-9），非字母数字字符（限定为~!@#%^*-_&#x3D;+?,）四类字符中的三类字符；长度8~32个字符。&#39;  &#39;建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。&#39;
+        :type password: str
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategy`
+        :param enterprise_project_id: 企业项目ID。只有企业租户时该参数才生效。  使用请参考《企业管理 API参考》的“[查询企业项目列表](https://support.huaweicloud.com/api-em/zh-cn_topic_0121230880.html)”响应消息表“enterprise_project字段数据结构说明”的“id”。
+        :type enterprise_project_id: str
+        :param disk_encryption_id: 用于磁盘加密的密钥ID，默认为空。
+        :type disk_encryption_id: str
+        :param flavor_ref: 规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
+        :type flavor_ref: str
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolume`
+        :param region: 区域ID。  取值范围：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        :type region: str
+        :param availability_zone: 可用区ID。  GaussDB(for openGauss)取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。详见示例。  - 部署在同一可用区：需要输入三个相同的可用区。例如：部署在“cn-north-4a”可用区，则需要在此处输入\&quot;cn-north-4a,cn-north-4a,cn-north-4a\&quot;。 - 部署在三个不同可用区：需要分别输入三个不同的可用区。 取值范围：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
+        :type availability_zone: str
+        :param vpc_id: 虚拟私有云ID，获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。
+        :type vpc_id: str
+        :param subnet_id: 子网的网络ID信息，获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
+        :type subnet_id: str
+        :param security_group_id: 指定实例所属的安全组。如果不需要指定安全组，请联系客服申请白名单。  - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)。
+        :type security_group_id: str
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfo`
+        :param time_zone: UTC时区。  - 不选择时，GaussDB(for openGauss)国内站、默认为UTC时间。 - 选择填写时，取值范围为UTC-12:00~UTC+12:00，且只支持整段时间，如UTC+08:00，不支持UTC+08:30。
+        :type time_zone: str
+        :param sharding_num: 仅分布式形态需要填写该参数。分片数量，取值范围1~9。
+        :type sharding_num: int
+        :param coordinator_num: 仅分布式形态需要填写该参数。协调节点数量，取值范围1~9。CN数量必须小于或等于两倍的分片数。
+        :type coordinator_num: int
+        :param replica_num: 实例副本数，支持取值2，3。不填默认为3。仅支持1.3.0及以上版本的实例。  说明： 2副本选项仅针对特定用户开放，如需配置白名单权限，您可以在管理控制台右上角，选择“[工单 &gt; 新建工单](https://auth.huaweicloud.com/authui/login.html?service&#x3D;https%3A%2F%2Fconsole.huaweicloud.com%2Fticket%2F%3Fregion%3Dcn-north-1%26locale%3Dzh-cn%26cloud_route_state%3D%2Fticketindex%2FcreateIndex#/login)”，提交开通白名单的申请。
+        :type replica_num: int
+        :param enable_force_switch: enable_force_switch表示是否开启备机强升主功能，enable_force_switch&#x3D;true表示开启备机强升主功能，enable_force_switch&#x3D;false表示关闭，默认关闭。仅支持1.2.2及以上版本。  说明：  备机强升主功能适用场景：在主机发生故障后，为了保障集群的可用性，强制拉起备机作为新主机对外提供服务的场景。 本功能在集群故障状态下，以丢失部分数据为代价换取集群尽可能快的恢复服务。本功能是集群状态为不可用时的一个逃生方法，如果操作者不清楚备机强升后丢失数据对业务的影响，请勿使用本功能。 备机强升主相关介绍请参考《故障处理》备机强升主章节。
+        :type enable_force_switch: bool
+        """
         
         
 
@@ -152,7 +199,7 @@ class OpenGaussInstanceRequest:
         实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。  取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
         :param name: The name of this OpenGaussInstanceRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -162,7 +209,7 @@ class OpenGaussInstanceRequest:
 
 
         :return: The datastore of this OpenGaussInstanceRequest.
-        :rtype: OpenGaussDatastore
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastore`
         """
         return self._datastore
 
@@ -172,7 +219,7 @@ class OpenGaussInstanceRequest:
 
 
         :param datastore: The datastore of this OpenGaussInstanceRequest.
-        :type: OpenGaussDatastore
+        :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussDatastore`
         """
         self._datastore = datastore
 
@@ -182,7 +229,7 @@ class OpenGaussInstanceRequest:
 
 
         :return: The ha of this OpenGaussInstanceRequest.
-        :rtype: OpenGaussHa
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHa`
         """
         return self._ha
 
@@ -192,7 +239,7 @@ class OpenGaussInstanceRequest:
 
 
         :param ha: The ha of this OpenGaussInstanceRequest.
-        :type: OpenGaussHa
+        :type ha: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussHa`
         """
         self._ha = ha
 
@@ -214,7 +261,7 @@ class OpenGaussInstanceRequest:
         参数模板ID。当不传该参数时，使用系统默认的参数模板。
 
         :param configuration_id: The configuration_id of this OpenGaussInstanceRequest.
-        :type: str
+        :type configuration_id: str
         """
         self._configuration_id = configuration_id
 
@@ -236,7 +283,7 @@ class OpenGaussInstanceRequest:
         数据库对外开放的端口，不填默认为8000，可选范围为：1024-39998。限制端口： 2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,12016,12017,20049,20050,21731,21732,32122,32123,32124。  - GaussDB(for openGauss)数据库端口当前只支持设置为8000，当不传该参数时，默认端口为8000。
 
         :param port: The port of this OpenGaussInstanceRequest.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -258,7 +305,7 @@ class OpenGaussInstanceRequest:
         数据库密码。必选。  取值范围：  '非空； 至少包含大写字母（A-Z），小写字母（a-z），数字（0-9），非字母数字字符（限定为~!@#%^*-_=+?,）四类字符中的三类字符；长度8~32个字符。'  '建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。'
 
         :param password: The password of this OpenGaussInstanceRequest.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -268,7 +315,7 @@ class OpenGaussInstanceRequest:
 
 
         :return: The backup_strategy of this OpenGaussInstanceRequest.
-        :rtype: OpenGaussBackupStrategy
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategy`
         """
         return self._backup_strategy
 
@@ -278,7 +325,7 @@ class OpenGaussInstanceRequest:
 
 
         :param backup_strategy: The backup_strategy of this OpenGaussInstanceRequest.
-        :type: OpenGaussBackupStrategy
+        :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategy`
         """
         self._backup_strategy = backup_strategy
 
@@ -300,7 +347,7 @@ class OpenGaussInstanceRequest:
         企业项目ID。只有企业租户时该参数才生效。  使用请参考《企业管理 API参考》的“[查询企业项目列表](https://support.huaweicloud.com/api-em/zh-cn_topic_0121230880.html)”响应消息表“enterprise_project字段数据结构说明”的“id”。
 
         :param enterprise_project_id: The enterprise_project_id of this OpenGaussInstanceRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -322,7 +369,7 @@ class OpenGaussInstanceRequest:
         用于磁盘加密的密钥ID，默认为空。
 
         :param disk_encryption_id: The disk_encryption_id of this OpenGaussInstanceRequest.
-        :type: str
+        :type disk_encryption_id: str
         """
         self._disk_encryption_id = disk_encryption_id
 
@@ -344,7 +391,7 @@ class OpenGaussInstanceRequest:
         规格码，取值范围：非空。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB(for openGauss)的“规格编码”列内容获取。
 
         :param flavor_ref: The flavor_ref of this OpenGaussInstanceRequest.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -354,7 +401,7 @@ class OpenGaussInstanceRequest:
 
 
         :return: The volume of this OpenGaussInstanceRequest.
-        :rtype: OpenGaussVolume
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolume`
         """
         return self._volume
 
@@ -364,7 +411,7 @@ class OpenGaussInstanceRequest:
 
 
         :param volume: The volume of this OpenGaussInstanceRequest.
-        :type: OpenGaussVolume
+        :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussVolume`
         """
         self._volume = volume
 
@@ -386,7 +433,7 @@ class OpenGaussInstanceRequest:
         区域ID。  取值范围：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :param region: The region of this OpenGaussInstanceRequest.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -408,7 +455,7 @@ class OpenGaussInstanceRequest:
         可用区ID。  GaussDB(for openGauss)取值范围：非空，可选部署在同一可用区或三个不同可用区，可用区之间用逗号隔开。详见示例。  - 部署在同一可用区：需要输入三个相同的可用区。例如：部署在“cn-north-4a”可用区，则需要在此处输入\"cn-north-4a,cn-north-4a,cn-north-4a\"。 - 部署在三个不同可用区：需要分别输入三个不同的可用区。 取值范围：非空，请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)。
 
         :param availability_zone: The availability_zone of this OpenGaussInstanceRequest.
-        :type: str
+        :type availability_zone: str
         """
         self._availability_zone = availability_zone
 
@@ -430,7 +477,7 @@ class OpenGaussInstanceRequest:
         虚拟私有云ID，获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询VPC列表](https://support.huaweicloud.com/api-vpc/vpc_api01_0003.html)。
 
         :param vpc_id: The vpc_id of this OpenGaussInstanceRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -452,7 +499,7 @@ class OpenGaussInstanceRequest:
         子网的网络ID信息，获取方法如下：  - 方法1：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询子网列表](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
 
         :param subnet_id: The subnet_id of this OpenGaussInstanceRequest.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -474,7 +521,7 @@ class OpenGaussInstanceRequest:
         指定实例所属的安全组。如果不需要指定安全组，请联系客服申请白名单。  - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体操作可参考[查询安全组列表](https://support.huaweicloud.com/api-vpc/vpc_sg01_0003.html)。
 
         :param security_group_id: The security_group_id of this OpenGaussInstanceRequest.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -484,7 +531,7 @@ class OpenGaussInstanceRequest:
 
 
         :return: The charge_info of this OpenGaussInstanceRequest.
-        :rtype: OpenGaussChargeInfo
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfo`
         """
         return self._charge_info
 
@@ -494,7 +541,7 @@ class OpenGaussInstanceRequest:
 
 
         :param charge_info: The charge_info of this OpenGaussInstanceRequest.
-        :type: OpenGaussChargeInfo
+        :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfo`
         """
         self._charge_info = charge_info
 
@@ -516,7 +563,7 @@ class OpenGaussInstanceRequest:
         UTC时区。  - 不选择时，GaussDB(for openGauss)国内站、默认为UTC时间。 - 选择填写时，取值范围为UTC-12:00~UTC+12:00，且只支持整段时间，如UTC+08:00，不支持UTC+08:30。
 
         :param time_zone: The time_zone of this OpenGaussInstanceRequest.
-        :type: str
+        :type time_zone: str
         """
         self._time_zone = time_zone
 
@@ -538,7 +585,7 @@ class OpenGaussInstanceRequest:
         仅分布式形态需要填写该参数。分片数量，取值范围1~9。
 
         :param sharding_num: The sharding_num of this OpenGaussInstanceRequest.
-        :type: int
+        :type sharding_num: int
         """
         self._sharding_num = sharding_num
 
@@ -560,7 +607,7 @@ class OpenGaussInstanceRequest:
         仅分布式形态需要填写该参数。协调节点数量，取值范围1~9。CN数量必须小于或等于两倍的分片数。
 
         :param coordinator_num: The coordinator_num of this OpenGaussInstanceRequest.
-        :type: int
+        :type coordinator_num: int
         """
         self._coordinator_num = coordinator_num
 
@@ -582,7 +629,7 @@ class OpenGaussInstanceRequest:
         实例副本数，支持取值2，3。不填默认为3。仅支持1.3.0及以上版本的实例。  说明： 2副本选项仅针对特定用户开放，如需配置白名单权限，您可以在管理控制台右上角，选择“[工单 > 新建工单](https://auth.huaweicloud.com/authui/login.html?service=https%3A%2F%2Fconsole.huaweicloud.com%2Fticket%2F%3Fregion%3Dcn-north-1%26locale%3Dzh-cn%26cloud_route_state%3D%2Fticketindex%2FcreateIndex#/login)”，提交开通白名单的申请。
 
         :param replica_num: The replica_num of this OpenGaussInstanceRequest.
-        :type: int
+        :type replica_num: int
         """
         self._replica_num = replica_num
 
@@ -604,7 +651,7 @@ class OpenGaussInstanceRequest:
         enable_force_switch表示是否开启备机强升主功能，enable_force_switch=true表示开启备机强升主功能，enable_force_switch=false表示关闭，默认关闭。仅支持1.2.2及以上版本。  说明：  备机强升主功能适用场景：在主机发生故障后，为了保障集群的可用性，强制拉起备机作为新主机对外提供服务的场景。 本功能在集群故障状态下，以丢失部分数据为代价换取集群尽可能快的恢复服务。本功能是集群状态为不可用时的一个逃生方法，如果操作者不清楚备机强升后丢失数据对业务的影响，请勿使用本功能。 备机强升主相关介绍请参考《故障处理》备机强升主章节。
 
         :param enable_force_switch: The enable_force_switch of this OpenGaussInstanceRequest.
-        :type: bool
+        :type enable_force_switch: bool
         """
         self._enable_force_switch = enable_force_switch
 

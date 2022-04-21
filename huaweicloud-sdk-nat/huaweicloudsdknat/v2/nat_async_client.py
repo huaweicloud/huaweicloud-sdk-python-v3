@@ -52,21 +52,17 @@ class NatAsyncClient(Client):
         """批量创建DNAT规则
 
         批量创建DNAT规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param BatchCreateNatGatewayDnatRulesRequest request
-        :return: BatchCreateNatGatewayDnatRulesResponse
+        :param request: Request instance for BatchCreateNatGatewayDnatRules
+        :type request: :class:`huaweicloudsdknat.v2.BatchCreateNatGatewayDnatRulesRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.BatchCreateNatGatewayDnatRulesResponse`
         """
         return self.batch_create_nat_gateway_dnat_rules_with_http_info(request)
 
     def batch_create_nat_gateway_dnat_rules_with_http_info(self, request):
-        """批量创建DNAT规则
-
-        批量创建DNAT规则。
-
-        :param BatchCreateNatGatewayDnatRulesRequest request
-        :return: BatchCreateNatGatewayDnatRulesResponse
-        """
-
         all_params = ['batch_create_nat_gateway_dnat_rules_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_nat_gateway_dnat_rule_async(self, request):
         """创建DNAT规则
 
         创建DNAT规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateNatGatewayDnatRuleRequest request
-        :return: CreateNatGatewayDnatRuleResponse
+        :param request: Request instance for CreateNatGatewayDnatRule
+        :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatRuleRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatRuleResponse`
         """
         return self.create_nat_gateway_dnat_rule_with_http_info(request)
 
     def create_nat_gateway_dnat_rule_with_http_info(self, request):
-        """创建DNAT规则
-
-        创建DNAT规则。
-
-        :param CreateNatGatewayDnatRuleRequest request
-        :return: CreateNatGatewayDnatRuleResponse
-        """
-
         all_params = ['create_nat_gateway_dnat_rule_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -173,26 +164,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_nat_gateway_dnat_rule_async(self, request):
         """删除DNAT规则
 
         删除指定的DNAT规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteNatGatewayDnatRuleRequest request
-        :return: DeleteNatGatewayDnatRuleResponse
+        :param request: Request instance for DeleteNatGatewayDnatRule
+        :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewayDnatRuleRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.DeleteNatGatewayDnatRuleResponse`
         """
         return self.delete_nat_gateway_dnat_rule_with_http_info(request)
 
     def delete_nat_gateway_dnat_rule_with_http_info(self, request):
-        """删除DNAT规则
-
-        删除指定的DNAT规则。
-
-        :param DeleteNatGatewayDnatRuleRequest request
-        :return: DeleteNatGatewayDnatRuleResponse
-        """
-
         all_params = ['nat_gateway_id', 'dnat_rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -238,26 +224,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_nat_gateway_dnat_rules_async(self, request):
         """查询DNAT规则列表
 
         查询DNAT规则列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListNatGatewayDnatRulesRequest request
-        :return: ListNatGatewayDnatRulesResponse
+        :param request: Request instance for ListNatGatewayDnatRules
+        :type request: :class:`huaweicloudsdknat.v2.ListNatGatewayDnatRulesRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewayDnatRulesResponse`
         """
         return self.list_nat_gateway_dnat_rules_with_http_info(request)
 
     def list_nat_gateway_dnat_rules_with_http_info(self, request):
-        """查询DNAT规则列表
-
-        查询DNAT规则列表。
-
-        :param ListNatGatewayDnatRulesRequest request
-        :return: ListNatGatewayDnatRulesResponse
-        """
-
         all_params = ['admin_state_up', 'external_service_port', 'floating_ip_address', 'status', 'floating_ip_id', 'internal_service_port', 'limit', 'id', 'description', 'created_at', 'nat_gateway_id', 'port_id', 'private_ip', 'protocol']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -330,26 +311,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_nat_gateway_dnat_rule_async(self, request):
         """查询指定的DNAT规则详情
 
         查询指定的DNAT规则详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowNatGatewayDnatRuleRequest request
-        :return: ShowNatGatewayDnatRuleResponse
+        :param request: Request instance for ShowNatGatewayDnatRule
+        :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewayDnatRuleRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ShowNatGatewayDnatRuleResponse`
         """
         return self.show_nat_gateway_dnat_rule_with_http_info(request)
 
     def show_nat_gateway_dnat_rule_with_http_info(self, request):
-        """查询指定的DNAT规则详情
-
-        查询指定的DNAT规则详情。
-
-        :param ShowNatGatewayDnatRuleRequest request
-        :return: ShowNatGatewayDnatRuleResponse
-        """
-
         all_params = ['dnat_rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -393,26 +369,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_nat_gateway_dnat_rule_async(self, request):
         """更新DNAT规则
 
         更新指定的DNAT规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateNatGatewayDnatRuleRequest request
-        :return: UpdateNatGatewayDnatRuleResponse
+        :param request: Request instance for UpdateNatGatewayDnatRule
+        :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleResponse`
         """
         return self.update_nat_gateway_dnat_rule_with_http_info(request)
 
     def update_nat_gateway_dnat_rule_with_http_info(self, request):
-        """更新DNAT规则
-
-        更新指定的DNAT规则。
-
-        :param UpdateNatGatewayDnatRuleRequest request
-        :return: UpdateNatGatewayDnatRuleResponse
-        """
-
         all_params = ['dnat_rule_id', 'update_nat_gateway_dnat_rule_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -458,26 +429,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_nat_gateway_async(self, request):
         """创建公网NAT网关
 
         创建公网NAT网关实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateNatGatewayRequest request
-        :return: CreateNatGatewayResponse
+        :param request: Request instance for CreateNatGateway
+        :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewayRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewayResponse`
         """
         return self.create_nat_gateway_with_http_info(request)
 
     def create_nat_gateway_with_http_info(self, request):
-        """创建公网NAT网关
-
-        创建公网NAT网关实例。
-
-        :param CreateNatGatewayRequest request
-        :return: CreateNatGatewayResponse
-        """
-
         all_params = ['create_nat_gateway_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -521,26 +487,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_nat_gateway_async(self, request):
         """删除公网NAT网关
 
         删除公网NAT网关实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteNatGatewayRequest request
-        :return: DeleteNatGatewayResponse
+        :param request: Request instance for DeleteNatGateway
+        :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewayRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.DeleteNatGatewayResponse`
         """
         return self.delete_nat_gateway_with_http_info(request)
 
     def delete_nat_gateway_with_http_info(self, request):
-        """删除公网NAT网关
-
-        删除公网NAT网关实例。
-
-        :param DeleteNatGatewayRequest request
-        :return: DeleteNatGatewayResponse
-        """
-
         all_params = ['nat_gateway_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -584,26 +545,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_nat_gateways_async(self, request):
         """查询公网NAT网关列表
 
         查询公网NAT网关实例列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListNatGatewaysRequest request
-        :return: ListNatGatewaysResponse
+        :param request: Request instance for ListNatGateways
+        :type request: :class:`huaweicloudsdknat.v2.ListNatGatewaysRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewaysResponse`
         """
         return self.list_nat_gateways_with_http_info(request)
 
     def list_nat_gateways_with_http_info(self, request):
-        """查询公网NAT网关列表
-
-        查询公网NAT网关实例列表。
-
-        :param ListNatGatewaysRequest request
-        :return: ListNatGatewaysResponse
-        """
-
         all_params = ['id', 'enterprise_project_id', 'description', 'created_at', 'name', 'status', 'spec', 'admin_state_up', 'internal_network_id', 'router_id', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -669,26 +625,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_nat_gateway_async(self, request):
         """查询指定的公网NAT网关详情
 
         查询指定的公网NAT网关实例详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowNatGatewayRequest request
-        :return: ShowNatGatewayResponse
+        :param request: Request instance for ShowNatGateway
+        :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewayRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ShowNatGatewayResponse`
         """
         return self.show_nat_gateway_with_http_info(request)
 
     def show_nat_gateway_with_http_info(self, request):
-        """查询指定的公网NAT网关详情
-
-        查询指定的公网NAT网关实例详情。
-
-        :param ShowNatGatewayRequest request
-        :return: ShowNatGatewayResponse
-        """
-
         all_params = ['nat_gateway_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -732,26 +683,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_nat_gateway_async(self, request):
         """更新公网NAT网关
 
         更新公网NAT网关实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateNatGatewayRequest request
-        :return: UpdateNatGatewayResponse
+        :param request: Request instance for UpdateNatGateway
+        :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewayRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayResponse`
         """
         return self.update_nat_gateway_with_http_info(request)
 
     def update_nat_gateway_with_http_info(self, request):
-        """更新公网NAT网关
-
-        更新公网NAT网关实例。
-
-        :param UpdateNatGatewayRequest request
-        :return: UpdateNatGatewayResponse
-        """
-
         all_params = ['nat_gateway_id', 'update_nat_gateway_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -797,26 +743,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def create_nat_gateway_snat_rule_async(self, request):
         """创建SNAT规则
 
         创建SNAT规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateNatGatewaySnatRuleRequest request
-        :return: CreateNatGatewaySnatRuleResponse
+        :param request: Request instance for CreateNatGatewaySnatRule
+        :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewaySnatRuleRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewaySnatRuleResponse`
         """
         return self.create_nat_gateway_snat_rule_with_http_info(request)
 
     def create_nat_gateway_snat_rule_with_http_info(self, request):
-        """创建SNAT规则
-
-        创建SNAT规则。
-
-        :param CreateNatGatewaySnatRuleRequest request
-        :return: CreateNatGatewaySnatRuleResponse
-        """
-
         all_params = ['create_nat_gateway_snat_rule_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -860,26 +801,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def delete_nat_gateway_snat_rule_async(self, request):
         """删除SNAT规则
 
         删除指定的SNAT规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DeleteNatGatewaySnatRuleRequest request
-        :return: DeleteNatGatewaySnatRuleResponse
+        :param request: Request instance for DeleteNatGatewaySnatRule
+        :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewaySnatRuleRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.DeleteNatGatewaySnatRuleResponse`
         """
         return self.delete_nat_gateway_snat_rule_with_http_info(request)
 
     def delete_nat_gateway_snat_rule_with_http_info(self, request):
-        """删除SNAT规则
-
-        删除指定的SNAT规则。
-
-        :param DeleteNatGatewaySnatRuleRequest request
-        :return: DeleteNatGatewaySnatRuleResponse
-        """
-
         all_params = ['nat_gateway_id', 'snat_rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -925,26 +861,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_nat_gateway_snat_rules_async(self, request):
         """查询SNAT规则列表
 
         查询SNAT规则列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListNatGatewaySnatRulesRequest request
-        :return: ListNatGatewaySnatRulesResponse
+        :param request: Request instance for ListNatGatewaySnatRules
+        :type request: :class:`huaweicloudsdknat.v2.ListNatGatewaySnatRulesRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewaySnatRulesResponse`
         """
         return self.list_nat_gateway_snat_rules_with_http_info(request)
 
     def list_nat_gateway_snat_rules_with_http_info(self, request):
-        """查询SNAT规则列表
-
-        查询SNAT规则列表。
-
-        :param ListNatGatewaySnatRulesRequest request
-        :return: ListNatGatewaySnatRulesResponse
-        """
-
         all_params = ['admin_state_up', 'cidr', 'limit', 'floating_ip_address', 'floating_ip_id', 'id', 'description', 'created_at', 'nat_gateway_id', 'network_id', 'source_type', 'status']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1011,26 +942,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_nat_gateway_snat_rule_async(self, request):
         """查询指定的SNAT规则详情
 
         查询指定的SNAT规则详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowNatGatewaySnatRuleRequest request
-        :return: ShowNatGatewaySnatRuleResponse
+        :param request: Request instance for ShowNatGatewaySnatRule
+        :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewaySnatRuleRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.ShowNatGatewaySnatRuleResponse`
         """
         return self.show_nat_gateway_snat_rule_with_http_info(request)
 
     def show_nat_gateway_snat_rule_with_http_info(self, request):
-        """查询指定的SNAT规则详情
-
-        查询指定的SNAT规则详情。
-
-        :param ShowNatGatewaySnatRuleRequest request
-        :return: ShowNatGatewaySnatRuleResponse
-        """
-
         all_params = ['snat_rule_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1074,26 +1000,21 @@ class NatAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_nat_gateway_snat_rule_async(self, request):
         """更新SNAT规则
 
         更新指定的SNAT规则。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateNatGatewaySnatRuleRequest request
-        :return: UpdateNatGatewaySnatRuleResponse
+        :param request: Request instance for UpdateNatGatewaySnatRule
+        :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewaySnatRuleRequest`
+        :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewaySnatRuleResponse`
         """
         return self.update_nat_gateway_snat_rule_with_http_info(request)
 
     def update_nat_gateway_snat_rule_with_http_info(self, request):
-        """更新SNAT规则
-
-        更新指定的SNAT规则。
-
-        :param UpdateNatGatewaySnatRuleRequest request
-        :return: UpdateNatGatewaySnatRuleResponse
-        """
-
         all_params = ['snat_rule_id', 'update_nat_gateway_snat_rule_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -1138,7 +1059,6 @@ class NatAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

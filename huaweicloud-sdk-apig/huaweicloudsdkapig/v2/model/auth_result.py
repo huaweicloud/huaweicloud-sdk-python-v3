@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AuthResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class AuthResult:
     }
 
     def __init__(self, status=None, error_msg=None, error_code=None, api_name=None, app_name=None):
-        """AuthResult - a model defined in huaweicloud sdk"""
+        """AuthResult
+
+        The model defined in huaweicloud sdk
+
+        :param status: 授权结果 - SUCCESS：授权成功 - SKIPPED：跳过 - FAILED：授权失败
+        :type status: str
+        :param error_msg: 授权失败错误信息
+        :type error_msg: str
+        :param error_code: 授权失败错误码
+        :type error_code: str
+        :param api_name: 授权失败的API名称
+        :type api_name: str
+        :param app_name: 授权失败的APP名称
+        :type app_name: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class AuthResult:
         授权结果 - SUCCESS：授权成功 - SKIPPED：跳过 - FAILED：授权失败
 
         :param status: The status of this AuthResult.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -100,7 +113,7 @@ class AuthResult:
         授权失败错误信息
 
         :param error_msg: The error_msg of this AuthResult.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 
@@ -122,7 +135,7 @@ class AuthResult:
         授权失败错误码
 
         :param error_code: The error_code of this AuthResult.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -144,7 +157,7 @@ class AuthResult:
         授权失败的API名称
 
         :param api_name: The api_name of this AuthResult.
-        :type: str
+        :type api_name: str
         """
         self._api_name = api_name
 
@@ -166,7 +179,7 @@ class AuthResult:
         授权失败的APP名称
 
         :param app_name: The app_name of this AuthResult.
-        :type: str
+        :type app_name: str
         """
         self._app_name = app_name
 

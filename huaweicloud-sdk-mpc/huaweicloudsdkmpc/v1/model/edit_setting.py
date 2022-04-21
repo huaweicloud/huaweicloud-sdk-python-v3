@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class EditSetting:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class EditSetting:
     }
 
     def __init__(self, timeline_start=None, timeline_end=None, trans_template_id=None, av_parameter=None, mosaics=None, image_watermarks=None, heads=None, tails=None, output=None):
-        """EditSetting - a model defined in huaweicloud sdk"""
+        """EditSetting
+
+        The model defined in huaweicloud sdk
+
+        :param timeline_start: input指定源文件开始截取的时间，单位：秒。可以有正数或者负数，正数表示从开始往后的时间点，负数表示从结尾往前的时间点 
+        :type timeline_start: str
+        :param timeline_end: input指定源文件接受截取的时间，单位：秒。可以有正数或者负数，正数表示从开始往后的时间点，负数表示从结尾往前的时间点。 
+        :type timeline_end: str
+        :param trans_template_id: 转码模板id
+        :type trans_template_id: int
+        :param av_parameter: 
+        :type av_parameter: :class:`huaweicloudsdkmpc.v1.AvParameters`
+        :param mosaics: 马赛克（模糊处理）配置，会对input指定的源文件进行马赛克处理，马赛克基于视频左上角为参考位置 
+        :type mosaics: list[:class:`huaweicloudsdkmpc.v1.MosaicInfo`]
+        :param image_watermarks: 图片水印配置，会对input指定的源文件进行马赛克处理。水印设置参数里面的overlay_input字段不填 
+        :type image_watermarks: list[:class:`huaweicloudsdkmpc.v1.ImageWatermarkSetting`]
+        :param heads: 头部文件列表，需要指定文件名。列表内文件会按照顺序拼接在input指定文件的前面 
+        :type heads: list[:class:`huaweicloudsdkmpc.v1.ObsObjInfo`]
+        :param tails: 尾部文件列表，需要指定文件名。列表内文件会按照顺序拼接在input指定文件的后面 
+        :type tails: list[:class:`huaweicloudsdkmpc.v1.ObsObjInfo`]
+        :param output: 
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
+        """
         
         
 
@@ -97,7 +118,7 @@ class EditSetting:
         input指定源文件开始截取的时间，单位：秒。可以有正数或者负数，正数表示从开始往后的时间点，负数表示从结尾往前的时间点 
 
         :param timeline_start: The timeline_start of this EditSetting.
-        :type: str
+        :type timeline_start: str
         """
         self._timeline_start = timeline_start
 
@@ -119,7 +140,7 @@ class EditSetting:
         input指定源文件接受截取的时间，单位：秒。可以有正数或者负数，正数表示从开始往后的时间点，负数表示从结尾往前的时间点。 
 
         :param timeline_end: The timeline_end of this EditSetting.
-        :type: str
+        :type timeline_end: str
         """
         self._timeline_end = timeline_end
 
@@ -141,7 +162,7 @@ class EditSetting:
         转码模板id
 
         :param trans_template_id: The trans_template_id of this EditSetting.
-        :type: int
+        :type trans_template_id: int
         """
         self._trans_template_id = trans_template_id
 
@@ -151,7 +172,7 @@ class EditSetting:
 
 
         :return: The av_parameter of this EditSetting.
-        :rtype: AvParameters
+        :rtype: :class:`huaweicloudsdkmpc.v1.AvParameters`
         """
         return self._av_parameter
 
@@ -161,7 +182,7 @@ class EditSetting:
 
 
         :param av_parameter: The av_parameter of this EditSetting.
-        :type: AvParameters
+        :type av_parameter: :class:`huaweicloudsdkmpc.v1.AvParameters`
         """
         self._av_parameter = av_parameter
 
@@ -172,7 +193,7 @@ class EditSetting:
         马赛克（模糊处理）配置，会对input指定的源文件进行马赛克处理，马赛克基于视频左上角为参考位置 
 
         :return: The mosaics of this EditSetting.
-        :rtype: list[MosaicInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.MosaicInfo`]
         """
         return self._mosaics
 
@@ -183,7 +204,7 @@ class EditSetting:
         马赛克（模糊处理）配置，会对input指定的源文件进行马赛克处理，马赛克基于视频左上角为参考位置 
 
         :param mosaics: The mosaics of this EditSetting.
-        :type: list[MosaicInfo]
+        :type mosaics: list[:class:`huaweicloudsdkmpc.v1.MosaicInfo`]
         """
         self._mosaics = mosaics
 
@@ -194,7 +215,7 @@ class EditSetting:
         图片水印配置，会对input指定的源文件进行马赛克处理。水印设置参数里面的overlay_input字段不填 
 
         :return: The image_watermarks of this EditSetting.
-        :rtype: list[ImageWatermarkSetting]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.ImageWatermarkSetting`]
         """
         return self._image_watermarks
 
@@ -205,7 +226,7 @@ class EditSetting:
         图片水印配置，会对input指定的源文件进行马赛克处理。水印设置参数里面的overlay_input字段不填 
 
         :param image_watermarks: The image_watermarks of this EditSetting.
-        :type: list[ImageWatermarkSetting]
+        :type image_watermarks: list[:class:`huaweicloudsdkmpc.v1.ImageWatermarkSetting`]
         """
         self._image_watermarks = image_watermarks
 
@@ -216,7 +237,7 @@ class EditSetting:
         头部文件列表，需要指定文件名。列表内文件会按照顺序拼接在input指定文件的前面 
 
         :return: The heads of this EditSetting.
-        :rtype: list[ObsObjInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.ObsObjInfo`]
         """
         return self._heads
 
@@ -227,7 +248,7 @@ class EditSetting:
         头部文件列表，需要指定文件名。列表内文件会按照顺序拼接在input指定文件的前面 
 
         :param heads: The heads of this EditSetting.
-        :type: list[ObsObjInfo]
+        :type heads: list[:class:`huaweicloudsdkmpc.v1.ObsObjInfo`]
         """
         self._heads = heads
 
@@ -238,7 +259,7 @@ class EditSetting:
         尾部文件列表，需要指定文件名。列表内文件会按照顺序拼接在input指定文件的后面 
 
         :return: The tails of this EditSetting.
-        :rtype: list[ObsObjInfo]
+        :rtype: list[:class:`huaweicloudsdkmpc.v1.ObsObjInfo`]
         """
         return self._tails
 
@@ -249,7 +270,7 @@ class EditSetting:
         尾部文件列表，需要指定文件名。列表内文件会按照顺序拼接在input指定文件的后面 
 
         :param tails: The tails of this EditSetting.
-        :type: list[ObsObjInfo]
+        :type tails: list[:class:`huaweicloudsdkmpc.v1.ObsObjInfo`]
         """
         self._tails = tails
 
@@ -259,7 +280,7 @@ class EditSetting:
 
 
         :return: The output of this EditSetting.
-        :rtype: ObsObjInfo
+        :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         return self._output
 
@@ -269,7 +290,7 @@ class EditSetting:
 
 
         :param output: The output of this EditSetting.
-        :type: ObsObjInfo
+        :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
         """
         self._output = output
 

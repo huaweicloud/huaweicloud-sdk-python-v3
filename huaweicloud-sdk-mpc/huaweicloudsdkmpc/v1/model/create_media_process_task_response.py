@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateMediaProcessTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateMediaProcessTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """CreateMediaProcessTaskResponse - a model defined in huaweicloud sdk"""
+        """CreateMediaProcessTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 任务Id
+        :type task_id: str
+        """
         
         super(CreateMediaProcessTaskResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateMediaProcessTaskResponse(SdkResponse):
         任务Id
 
         :param task_id: The task_id of this CreateMediaProcessTaskResponse.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 

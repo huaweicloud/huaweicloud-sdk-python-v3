@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOngoingWebinarsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListOngoingWebinarsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """ListOngoingWebinarsResponse - a model defined in huaweicloud sdk"""
+        """ListOngoingWebinarsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param offset: 偏移量。
+        :type offset: int
+        :param limit: 查询个数。
+        :type limit: int
+        :param count: 总记录数
+        :type count: int
+        :param data: 
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.OpenWebinarOngoingInfo`]
+        """
         
         super(ListOngoingWebinarsResponse, self).__init__()
 
@@ -70,7 +81,7 @@ class ListOngoingWebinarsResponse(SdkResponse):
         偏移量。
 
         :param offset: The offset of this ListOngoingWebinarsResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -92,7 +103,7 @@ class ListOngoingWebinarsResponse(SdkResponse):
         查询个数。
 
         :param limit: The limit of this ListOngoingWebinarsResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -114,7 +125,7 @@ class ListOngoingWebinarsResponse(SdkResponse):
         总记录数
 
         :param count: The count of this ListOngoingWebinarsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -124,7 +135,7 @@ class ListOngoingWebinarsResponse(SdkResponse):
 
 
         :return: The data of this ListOngoingWebinarsResponse.
-        :rtype: list[OpenWebinarOngoingInfo]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.OpenWebinarOngoingInfo`]
         """
         return self._data
 
@@ -134,7 +145,7 @@ class ListOngoingWebinarsResponse(SdkResponse):
 
 
         :param data: The data of this ListOngoingWebinarsResponse.
-        :type: list[OpenWebinarOngoingInfo]
+        :type data: list[:class:`huaweicloudsdkmeeting.v1.OpenWebinarOngoingInfo`]
         """
         self._data = data
 

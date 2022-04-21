@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InvoiceVerificationRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class InvoiceVerificationRequestBody:
     }
 
     def __init__(self, code=None, number=None, issue_date=None, check_code=None, subtotal_amount=None):
-        """InvoiceVerificationRequestBody - a model defined in huaweicloud sdk"""
+        """InvoiceVerificationRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param code: 发票代码
+        :type code: str
+        :param number: 发票号码
+        :type number: str
+        :param issue_date: 发票日期格式YYYY-MM-DD
+        :type issue_date: str
+        :param check_code: 校验码后六位  发票种类为增值税普通发票、增值税电子普通发票、增值税普通发票（卷式）、增值税电子普通发票（通行费）、区块链电子发票时此项不可为空（区块链电子发票验真时，填写的是5位校验码） 
+        :type check_code: str
+        :param subtotal_amount: 合计金额（不含税）  1.发票种类为增值税专用发票、增值税电子专用发票、机动车销售统一发票、二手车销售统一发票、区块链电子发票时不可为空； 2.增值税专用发票、增值税电子专用发票、机动车销售统一发票、区块链电子发票填写发票合计金额（不含税），二手车发票填写发票车价合计 
+        :type subtotal_amount: str
+        """
         
         
 
@@ -75,7 +88,7 @@ class InvoiceVerificationRequestBody:
         发票代码
 
         :param code: The code of this InvoiceVerificationRequestBody.
-        :type: str
+        :type code: str
         """
         self._code = code
 
@@ -97,7 +110,7 @@ class InvoiceVerificationRequestBody:
         发票号码
 
         :param number: The number of this InvoiceVerificationRequestBody.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -119,7 +132,7 @@ class InvoiceVerificationRequestBody:
         发票日期格式YYYY-MM-DD
 
         :param issue_date: The issue_date of this InvoiceVerificationRequestBody.
-        :type: str
+        :type issue_date: str
         """
         self._issue_date = issue_date
 
@@ -141,7 +154,7 @@ class InvoiceVerificationRequestBody:
         校验码后六位  发票种类为增值税普通发票、增值税电子普通发票、增值税普通发票（卷式）、增值税电子普通发票（通行费）、区块链电子发票时此项不可为空（区块链电子发票验真时，填写的是5位校验码） 
 
         :param check_code: The check_code of this InvoiceVerificationRequestBody.
-        :type: str
+        :type check_code: str
         """
         self._check_code = check_code
 
@@ -163,7 +176,7 @@ class InvoiceVerificationRequestBody:
         合计金额（不含税）  1.发票种类为增值税专用发票、增值税电子专用发票、机动车销售统一发票、二手车销售统一发票、区块链电子发票时不可为空； 2.增值税专用发票、增值税电子专用发票、机动车销售统一发票、区块链电子发票填写发票合计金额（不含税），二手车发票填写发票车价合计 
 
         :param subtotal_amount: The subtotal_amount of this InvoiceVerificationRequestBody.
-        :type: str
+        :type subtotal_amount: str
         """
         self._subtotal_amount = subtotal_amount
 

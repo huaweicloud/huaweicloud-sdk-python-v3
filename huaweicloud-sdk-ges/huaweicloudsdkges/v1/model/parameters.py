@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Parameters:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -46,7 +45,29 @@ class Parameters:
     }
 
     def __init__(self, schema_path=None, edgeset_path=None, edgeset_format=None, edgeset_default_label=None, vertexset_path=None, vertexset_format=None, vertexset_default_label=None, log_dir=None, parallel_edge=None):
-        """Parameters - a model defined in huaweicloud sdk"""
+        """Parameters
+
+        The model defined in huaweicloud sdk
+
+        :param schema_path: 元数据文件OBS路径，只支持文件。
+        :type schema_path: str
+        :param edgeset_path: 边数据集文件OBS路径，只支持文件。
+        :type edgeset_path: str
+        :param edgeset_format: 边数据集格式。当前仅支持csv。  默认为csv。
+        :type edgeset_format: str
+        :param edgeset_default_label: 边数据集默认标签，当前默认为空，可以不填。
+        :type edgeset_default_label: str
+        :param vertexset_path: 点数据集OBS路径，只支持文件。
+        :type vertexset_path: str
+        :param vertexset_format: 点数据集格式。当前仅支持csv。  默认为csv。
+        :type vertexset_format: str
+        :param vertexset_default_label: 点数据集默认标签，当前默认为空，可以不填。
+        :type vertexset_default_label: str
+        :param log_dir: OBS日志存储目录，用于存储建图过程导入失败的数据和详细日志。
+        :type log_dir: str
+        :param parallel_edge: 
+        :type parallel_edge: :class:`huaweicloudsdkges.v1.ParallelEdge`
+        """
         
         
 
@@ -96,7 +117,7 @@ class Parameters:
         元数据文件OBS路径，只支持文件。
 
         :param schema_path: The schema_path of this Parameters.
-        :type: str
+        :type schema_path: str
         """
         self._schema_path = schema_path
 
@@ -118,7 +139,7 @@ class Parameters:
         边数据集文件OBS路径，只支持文件。
 
         :param edgeset_path: The edgeset_path of this Parameters.
-        :type: str
+        :type edgeset_path: str
         """
         self._edgeset_path = edgeset_path
 
@@ -140,7 +161,7 @@ class Parameters:
         边数据集格式。当前仅支持csv。  默认为csv。
 
         :param edgeset_format: The edgeset_format of this Parameters.
-        :type: str
+        :type edgeset_format: str
         """
         self._edgeset_format = edgeset_format
 
@@ -162,7 +183,7 @@ class Parameters:
         边数据集默认标签，当前默认为空，可以不填。
 
         :param edgeset_default_label: The edgeset_default_label of this Parameters.
-        :type: str
+        :type edgeset_default_label: str
         """
         self._edgeset_default_label = edgeset_default_label
 
@@ -184,7 +205,7 @@ class Parameters:
         点数据集OBS路径，只支持文件。
 
         :param vertexset_path: The vertexset_path of this Parameters.
-        :type: str
+        :type vertexset_path: str
         """
         self._vertexset_path = vertexset_path
 
@@ -206,7 +227,7 @@ class Parameters:
         点数据集格式。当前仅支持csv。  默认为csv。
 
         :param vertexset_format: The vertexset_format of this Parameters.
-        :type: str
+        :type vertexset_format: str
         """
         self._vertexset_format = vertexset_format
 
@@ -228,7 +249,7 @@ class Parameters:
         点数据集默认标签，当前默认为空，可以不填。
 
         :param vertexset_default_label: The vertexset_default_label of this Parameters.
-        :type: str
+        :type vertexset_default_label: str
         """
         self._vertexset_default_label = vertexset_default_label
 
@@ -250,7 +271,7 @@ class Parameters:
         OBS日志存储目录，用于存储建图过程导入失败的数据和详细日志。
 
         :param log_dir: The log_dir of this Parameters.
-        :type: str
+        :type log_dir: str
         """
         self._log_dir = log_dir
 
@@ -260,7 +281,7 @@ class Parameters:
 
 
         :return: The parallel_edge of this Parameters.
-        :rtype: ParallelEdge
+        :rtype: :class:`huaweicloudsdkges.v1.ParallelEdge`
         """
         return self._parallel_edge
 
@@ -270,7 +291,7 @@ class Parameters:
 
 
         :param parallel_edge: The parallel_edge of this Parameters.
-        :type: ParallelEdge
+        :type parallel_edge: :class:`huaweicloudsdkges.v1.ParallelEdge`
         """
         self._parallel_edge = parallel_edge
 

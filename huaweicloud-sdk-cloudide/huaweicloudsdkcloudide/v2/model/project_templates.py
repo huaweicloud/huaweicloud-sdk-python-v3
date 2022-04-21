@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ProjectTemplates:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class ProjectTemplates:
     }
 
     def __init__(self, description=None, display_name=None, logo=None, name=None, path=None, project_type=None, region=None, source=None, tags=None, template_id=None):
-        """ProjectTemplates - a model defined in huaweicloud sdk"""
+        """ProjectTemplates
+
+        The model defined in huaweicloud sdk
+
+        :param description: 描述
+        :type description: str
+        :param display_name: 显示名
+        :type display_name: str
+        :param logo: 图标
+        :type logo: str
+        :param name: 模板名
+        :type name: str
+        :param path: 路径
+        :type path: str
+        :param project_type: 项目类型
+        :type project_type: str
+        :param region: 区域
+        :type region: str
+        :param source: 
+        :type source: :class:`huaweicloudsdkcloudide.v2.SourceStorage`
+        :param tags: tags
+        :type tags: list[str]
+        :param template_id: 模板id
+        :type template_id: int
+        """
         
         
 
@@ -103,7 +126,7 @@ class ProjectTemplates:
         描述
 
         :param description: The description of this ProjectTemplates.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -125,7 +148,7 @@ class ProjectTemplates:
         显示名
 
         :param display_name: The display_name of this ProjectTemplates.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -147,7 +170,7 @@ class ProjectTemplates:
         图标
 
         :param logo: The logo of this ProjectTemplates.
-        :type: str
+        :type logo: str
         """
         self._logo = logo
 
@@ -169,7 +192,7 @@ class ProjectTemplates:
         模板名
 
         :param name: The name of this ProjectTemplates.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -191,7 +214,7 @@ class ProjectTemplates:
         路径
 
         :param path: The path of this ProjectTemplates.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -213,7 +236,7 @@ class ProjectTemplates:
         项目类型
 
         :param project_type: The project_type of this ProjectTemplates.
-        :type: str
+        :type project_type: str
         """
         self._project_type = project_type
 
@@ -235,7 +258,7 @@ class ProjectTemplates:
         区域
 
         :param region: The region of this ProjectTemplates.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -245,7 +268,7 @@ class ProjectTemplates:
 
 
         :return: The source of this ProjectTemplates.
-        :rtype: SourceStorage
+        :rtype: :class:`huaweicloudsdkcloudide.v2.SourceStorage`
         """
         return self._source
 
@@ -255,7 +278,7 @@ class ProjectTemplates:
 
 
         :param source: The source of this ProjectTemplates.
-        :type: SourceStorage
+        :type source: :class:`huaweicloudsdkcloudide.v2.SourceStorage`
         """
         self._source = source
 
@@ -277,7 +300,7 @@ class ProjectTemplates:
         tags
 
         :param tags: The tags of this ProjectTemplates.
-        :type: list[str]
+        :type tags: list[str]
         """
         self._tags = tags
 
@@ -299,7 +322,7 @@ class ProjectTemplates:
         模板id
 
         :param template_id: The template_id of this ProjectTemplates.
-        :type: int
+        :type template_id: int
         """
         self._template_id = template_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LogsTree:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class LogsTree:
     }
 
     def __init__(self, blob_id=None, commit=None, file_name=None, file_path=None, md5=None, type=None):
-        """LogsTree - a model defined in huaweicloud sdk"""
+        """LogsTree
+
+        The model defined in huaweicloud sdk
+
+        :param blob_id: 存储块id
+        :type blob_id: str
+        :param commit: 
+        :type commit: :class:`huaweicloudsdkcodehub.v3.Commit`
+        :param file_name: 文件名称
+        :type file_name: str
+        :param file_path: 文件路径
+        :type file_path: str
+        :param md5: MD5
+        :type md5: str
+        :param type: 存储类型
+        :type type: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class LogsTree:
         存储块id
 
         :param blob_id: The blob_id of this LogsTree.
-        :type: str
+        :type blob_id: str
         """
         self._blob_id = blob_id
 
@@ -93,7 +108,7 @@ class LogsTree:
 
 
         :return: The commit of this LogsTree.
-        :rtype: Commit
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Commit`
         """
         return self._commit
 
@@ -103,7 +118,7 @@ class LogsTree:
 
 
         :param commit: The commit of this LogsTree.
-        :type: Commit
+        :type commit: :class:`huaweicloudsdkcodehub.v3.Commit`
         """
         self._commit = commit
 
@@ -125,7 +140,7 @@ class LogsTree:
         文件名称
 
         :param file_name: The file_name of this LogsTree.
-        :type: str
+        :type file_name: str
         """
         self._file_name = file_name
 
@@ -147,7 +162,7 @@ class LogsTree:
         文件路径
 
         :param file_path: The file_path of this LogsTree.
-        :type: str
+        :type file_path: str
         """
         self._file_path = file_path
 
@@ -169,7 +184,7 @@ class LogsTree:
         MD5
 
         :param md5: The md5 of this LogsTree.
-        :type: str
+        :type md5: str
         """
         self._md5 = md5
 
@@ -191,7 +206,7 @@ class LogsTree:
         存储类型
 
         :param type: The type of this LogsTree.
-        :type: str
+        :type type: str
         """
         self._type = type
 

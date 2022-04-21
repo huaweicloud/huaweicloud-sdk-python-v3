@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaCreateServersSchedulerHint:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class NovaCreateServersSchedulerHint:
     }
 
     def __init__(self, group=None, different_host=None, same_host=None, cidr=None, build_near_host_ip=None, tenancy=None, dedicated_host_id=None):
-        """NovaCreateServersSchedulerHint - a model defined in huaweicloud sdk"""
+        """NovaCreateServersSchedulerHint
+
+        The model defined in huaweicloud sdk
+
+        :param group: 反亲和性组信息。  UUID格式。
+        :type group: str
+        :param different_host: 与指定弹性云服务器满足反亲和性。   当前不支持该功能。
+        :type different_host: list[str]
+        :param same_host: 与指定的弹性云服务器满足亲和性。   当前不支持该功能。
+        :type same_host: list[str]
+        :param cidr: 将弹性云服务器scheduler到指定网段的host上，host网段的cidr。   当前不支持该功能。
+        :type cidr: str
+        :param build_near_host_ip: 将弹性云服务器scheduler到指定网段的host上，host IP地址。   当前不支持该功能。
+        :type build_near_host_ip: str
+        :param tenancy: 在专属主机或共享池中创建弹性云服务器。默认为在共享池创建。 值为： shared 或dedicated。 shared：表示共享池。 dedicated:表示专属主机。 创建与查询此值均有效。
+        :type tenancy: str
+        :param dedicated_host_id: 专属主机ID。 此属性仅在tenancy值为dedicated时有效。 不指定此属性，系统将自动分配租户可自动放置弹性云服务器的专属主机。 创建与查询此值均有效。
+        :type dedicated_host_id: str
+        """
         
         
 
@@ -88,7 +105,7 @@ class NovaCreateServersSchedulerHint:
         反亲和性组信息。  UUID格式。
 
         :param group: The group of this NovaCreateServersSchedulerHint.
-        :type: str
+        :type group: str
         """
         self._group = group
 
@@ -110,7 +127,7 @@ class NovaCreateServersSchedulerHint:
         与指定弹性云服务器满足反亲和性。   当前不支持该功能。
 
         :param different_host: The different_host of this NovaCreateServersSchedulerHint.
-        :type: list[str]
+        :type different_host: list[str]
         """
         self._different_host = different_host
 
@@ -132,7 +149,7 @@ class NovaCreateServersSchedulerHint:
         与指定的弹性云服务器满足亲和性。   当前不支持该功能。
 
         :param same_host: The same_host of this NovaCreateServersSchedulerHint.
-        :type: list[str]
+        :type same_host: list[str]
         """
         self._same_host = same_host
 
@@ -154,7 +171,7 @@ class NovaCreateServersSchedulerHint:
         将弹性云服务器scheduler到指定网段的host上，host网段的cidr。   当前不支持该功能。
 
         :param cidr: The cidr of this NovaCreateServersSchedulerHint.
-        :type: str
+        :type cidr: str
         """
         self._cidr = cidr
 
@@ -176,7 +193,7 @@ class NovaCreateServersSchedulerHint:
         将弹性云服务器scheduler到指定网段的host上，host IP地址。   当前不支持该功能。
 
         :param build_near_host_ip: The build_near_host_ip of this NovaCreateServersSchedulerHint.
-        :type: str
+        :type build_near_host_ip: str
         """
         self._build_near_host_ip = build_near_host_ip
 
@@ -198,7 +215,7 @@ class NovaCreateServersSchedulerHint:
         在专属主机或共享池中创建弹性云服务器。默认为在共享池创建。 值为： shared 或dedicated。 shared：表示共享池。 dedicated:表示专属主机。 创建与查询此值均有效。
 
         :param tenancy: The tenancy of this NovaCreateServersSchedulerHint.
-        :type: str
+        :type tenancy: str
         """
         self._tenancy = tenancy
 
@@ -220,7 +237,7 @@ class NovaCreateServersSchedulerHint:
         专属主机ID。 此属性仅在tenancy值为dedicated时有效。 不指定此属性，系统将自动分配租户可自动放置弹性云服务器的专属主机。 创建与查询此值均有效。
 
         :param dedicated_host_id: The dedicated_host_id of this NovaCreateServersSchedulerHint.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PushCertificateRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PushCertificateRequestBody:
     }
 
     def __init__(self, target_project=None, target_service=None):
-        """PushCertificateRequestBody - a model defined in huaweicloud sdk"""
+        """PushCertificateRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param target_project: 推送到的目标服务所在的区域。
+        :type target_project: str
+        :param target_service: 证书推送的目标服务，当前仅支持：CDN、WAF、ELB。
+        :type target_service: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class PushCertificateRequestBody:
         推送到的目标服务所在的区域。
 
         :param target_project: The target_project of this PushCertificateRequestBody.
-        :type: str
+        :type target_project: str
         """
         self._target_project = target_project
 
@@ -83,7 +90,7 @@ class PushCertificateRequestBody:
         证书推送的目标服务，当前仅支持：CDN、WAF、ELB。
 
         :param target_service: The target_service of this PushCertificateRequestBody.
-        :type: str
+        :type target_service: str
         """
         self._target_service = target_service
 

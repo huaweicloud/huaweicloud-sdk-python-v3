@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StartVpecpResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class StartVpecpResponse(SdkResponse):
     }
 
     def __init__(self, action=None):
-        """StartVpecpResponse - a model defined in huaweicloud sdk"""
+        """StartVpecpResponse
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作行为。createVpcepservice表示已开启终端节点。
+        :type action: str
+        """
         
         super(StartVpecpResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class StartVpecpResponse(SdkResponse):
         操作行为。createVpcepservice表示已开启终端节点。
 
         :param action: The action of this StartVpecpResponse.
-        :type: str
+        :type action: str
         """
         self._action = action
 

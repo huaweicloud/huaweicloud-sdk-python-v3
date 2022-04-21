@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricDataValue:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class MetricDataValue:
     }
 
     def __init__(self, data_points=None, metric=None):
-        """MetricDataValue - a model defined in huaweicloud sdk"""
+        """MetricDataValue
+
+        The model defined in huaweicloud sdk
+
+        :param data_points: 重点指标。
+        :type data_points: list[:class:`huaweicloudsdkaom.v2.MetricDataPoints`]
+        :param metric: 
+        :type metric: :class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`
+        """
         
         
 
@@ -52,7 +59,7 @@ class MetricDataValue:
         重点指标。
 
         :return: The data_points of this MetricDataValue.
-        :rtype: list[MetricDataPoints]
+        :rtype: list[:class:`huaweicloudsdkaom.v2.MetricDataPoints`]
         """
         return self._data_points
 
@@ -63,7 +70,7 @@ class MetricDataValue:
         重点指标。
 
         :param data_points: The data_points of this MetricDataValue.
-        :type: list[MetricDataPoints]
+        :type data_points: list[:class:`huaweicloudsdkaom.v2.MetricDataPoints`]
         """
         self._data_points = data_points
 
@@ -73,7 +80,7 @@ class MetricDataValue:
 
 
         :return: The metric of this MetricDataValue.
-        :rtype: MetricQueryMeritcParam
+        :rtype: :class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`
         """
         return self._metric
 
@@ -83,7 +90,7 @@ class MetricDataValue:
 
 
         :param metric: The metric of this MetricDataValue.
-        :type: MetricQueryMeritcParam
+        :type metric: :class:`huaweicloudsdkaom.v2.MetricQueryMeritcParam`
         """
         self._metric = metric
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchCreateOrDeleteTagsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchCreateOrDeleteTagsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchCreateOrDeleteTagsRequest - a model defined in huaweicloud sdk"""
+        """BatchCreateOrDeleteTagsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param body: Body of the BatchCreateOrDeleteTagsRequest
+        :type body: :class:`huaweicloudsdkdcs.v2.CreateOrDeleteInstanceTags`
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchCreateOrDeleteTagsRequest:
         实例ID。
 
         :param instance_id: The instance_id of this BatchCreateOrDeleteTagsRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -72,7 +79,7 @@ class BatchCreateOrDeleteTagsRequest:
 
 
         :return: The body of this BatchCreateOrDeleteTagsRequest.
-        :rtype: CreateOrDeleteInstanceTags
+        :rtype: :class:`huaweicloudsdkdcs.v2.CreateOrDeleteInstanceTags`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class BatchCreateOrDeleteTagsRequest:
 
 
         :param body: The body of this BatchCreateOrDeleteTagsRequest.
-        :type: CreateOrDeleteInstanceTags
+        :type body: :class:`huaweicloudsdkdcs.v2.CreateOrDeleteInstanceTags`
         """
         self._body = body
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BackupDatabase:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BackupDatabase:
     }
 
     def __init__(self, name=None):
-        """BackupDatabase - a model defined in huaweicloud sdk"""
+        """BackupDatabase
+
+        The model defined in huaweicloud sdk
+
+        :param name: SqlServer引擎指定备份的数据库。
+        :type name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class BackupDatabase:
         SqlServer引擎指定备份的数据库。
 
         :param name: The name of this BackupDatabase.
-        :type: str
+        :type name: str
         """
         self._name = name
 

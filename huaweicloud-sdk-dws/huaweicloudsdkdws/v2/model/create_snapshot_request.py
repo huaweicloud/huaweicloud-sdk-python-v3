@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSnapshotRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateSnapshotRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSnapshotRequest - a model defined in huaweicloud sdk"""
+        """CreateSnapshotRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateSnapshotRequest
+        :type body: :class:`huaweicloudsdkdws.v2.CreateSnapshotRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateSnapshotRequest:
 
 
         :return: The body of this CreateSnapshotRequest.
-        :rtype: CreateSnapshotRequestBody
+        :rtype: :class:`huaweicloudsdkdws.v2.CreateSnapshotRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateSnapshotRequest:
 
 
         :param body: The body of this CreateSnapshotRequest.
-        :type: CreateSnapshotRequestBody
+        :type body: :class:`huaweicloudsdkdws.v2.CreateSnapshotRequestBody`
         """
         self._body = body
 

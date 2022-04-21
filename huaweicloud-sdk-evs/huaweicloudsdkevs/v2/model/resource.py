@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Resource:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class Resource:
     }
 
     def __init__(self, resource_id=None, resource_name=None, resource_detail=None, tags=None):
-        """Resource - a model defined in huaweicloud sdk"""
+        """Resource
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源ID。
+        :type resource_id: str
+        :param resource_name: 资源名称。
+        :type resource_name: str
+        :param resource_detail: 
+        :type resource_detail: :class:`huaweicloudsdkevs.v2.VolumeDetailForTag`
+        :param tags: 标签列表。
+        :type tags: list[dict(str, str)]
+        """
         
         
 
@@ -70,7 +81,7 @@ class Resource:
         资源ID。
 
         :param resource_id: The resource_id of this Resource.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -92,7 +103,7 @@ class Resource:
         资源名称。
 
         :param resource_name: The resource_name of this Resource.
-        :type: str
+        :type resource_name: str
         """
         self._resource_name = resource_name
 
@@ -102,7 +113,7 @@ class Resource:
 
 
         :return: The resource_detail of this Resource.
-        :rtype: VolumeDetailForTag
+        :rtype: :class:`huaweicloudsdkevs.v2.VolumeDetailForTag`
         """
         return self._resource_detail
 
@@ -112,7 +123,7 @@ class Resource:
 
 
         :param resource_detail: The resource_detail of this Resource.
-        :type: VolumeDetailForTag
+        :type resource_detail: :class:`huaweicloudsdkevs.v2.VolumeDetailForTag`
         """
         self._resource_detail = resource_detail
 
@@ -134,7 +145,7 @@ class Resource:
         标签列表。
 
         :param tags: The tags of this Resource.
-        :type: list[dict(str, str)]
+        :type tags: list[dict(str, str)]
         """
         self._tags = tags
 

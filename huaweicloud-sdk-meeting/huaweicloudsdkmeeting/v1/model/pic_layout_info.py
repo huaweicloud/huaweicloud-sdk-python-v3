@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PicLayoutInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PicLayoutInfo:
     }
 
     def __init__(self, x=None, y=None, sub_pic_layout_info_list=None):
-        """PicLayoutInfo - a model defined in huaweicloud sdk"""
+        """PicLayoutInfo
+
+        The model defined in huaweicloud sdk
+
+        :param x: 多画面布局的宽度
+        :type x: int
+        :param y: 多画面布局的高度
+        :type y: int
+        :param sub_pic_layout_info_list: 子画面布局具体列表
+        :type sub_pic_layout_info_list: list[:class:`huaweicloudsdkmeeting.v1.SubPicLayoutInfo`]
+        """
         
         
 
@@ -68,7 +77,7 @@ class PicLayoutInfo:
         多画面布局的宽度
 
         :param x: The x of this PicLayoutInfo.
-        :type: int
+        :type x: int
         """
         self._x = x
 
@@ -90,7 +99,7 @@ class PicLayoutInfo:
         多画面布局的高度
 
         :param y: The y of this PicLayoutInfo.
-        :type: int
+        :type y: int
         """
         self._y = y
 
@@ -101,7 +110,7 @@ class PicLayoutInfo:
         子画面布局具体列表
 
         :return: The sub_pic_layout_info_list of this PicLayoutInfo.
-        :rtype: list[SubPicLayoutInfo]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.SubPicLayoutInfo`]
         """
         return self._sub_pic_layout_info_list
 
@@ -112,7 +121,7 @@ class PicLayoutInfo:
         子画面布局具体列表
 
         :param sub_pic_layout_info_list: The sub_pic_layout_info_list of this PicLayoutInfo.
-        :type: list[SubPicLayoutInfo]
+        :type sub_pic_layout_info_list: list[:class:`huaweicloudsdkmeeting.v1.SubPicLayoutInfo`]
         """
         self._sub_pic_layout_info_list = sub_pic_layout_info_list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSshKeysRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class ListSshKeysRequest:
     }
 
     def __init__(self):
-        """ListSshKeysRequest - a model defined in huaweicloud sdk"""
+        """ListSshKeysRequest
+
+        The model defined in huaweicloud sdk
+
+        """
         
         
         self.discriminator = None

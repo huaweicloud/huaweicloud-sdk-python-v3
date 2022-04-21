@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ParamsReqBean:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ParamsReqBean:
     }
 
     def __init__(self, key=None, target_value=None):
-        """ParamsReqBean - a model defined in huaweicloud sdk"""
+        """ParamsReqBean
+
+        The model defined in huaweicloud sdk
+
+        :param key: 数据库参数名
+        :type key: str
+        :param target_value: 目标数据库参数值
+        :type target_value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ParamsReqBean:
         数据库参数名
 
         :param key: The key of this ParamsReqBean.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class ParamsReqBean:
         目标数据库参数值
 
         :param target_value: The target_value of this ParamsReqBean.
-        :type: str
+        :type target_value: str
         """
         self._target_value = target_value
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TargetServerAssociatedWithTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class TargetServerAssociatedWithTask:
     }
 
     def __init__(self, id=None, vm_id=None, name=None, ip=None, os_type=None, os_version=None):
-        """TargetServerAssociatedWithTask - a model defined in huaweicloud sdk"""
+        """TargetServerAssociatedWithTask
+
+        The model defined in huaweicloud sdk
+
+        :param id: 目的端在SMS数据库中的ID
+        :type id: str
+        :param vm_id: 目的端虚机id
+        :type vm_id: str
+        :param name: 目的端服务器名称
+        :type name: str
+        :param ip: 目的端服务器ip
+        :type ip: str
+        :param os_type: 目的端服务器的OS类型
+        :type os_type: str
+        :param os_version: 操作系统版本
+        :type os_version: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class TargetServerAssociatedWithTask:
         目的端在SMS数据库中的ID
 
         :param id: The id of this TargetServerAssociatedWithTask.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class TargetServerAssociatedWithTask:
         目的端虚机id
 
         :param vm_id: The vm_id of this TargetServerAssociatedWithTask.
-        :type: str
+        :type vm_id: str
         """
         self._vm_id = vm_id
 
@@ -127,7 +142,7 @@ class TargetServerAssociatedWithTask:
         目的端服务器名称
 
         :param name: The name of this TargetServerAssociatedWithTask.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -149,7 +164,7 @@ class TargetServerAssociatedWithTask:
         目的端服务器ip
 
         :param ip: The ip of this TargetServerAssociatedWithTask.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -171,7 +186,7 @@ class TargetServerAssociatedWithTask:
         目的端服务器的OS类型
 
         :param os_type: The os_type of this TargetServerAssociatedWithTask.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -193,7 +208,7 @@ class TargetServerAssociatedWithTask:
         操作系统版本
 
         :param os_version: The os_version of this TargetServerAssociatedWithTask.
-        :type: str
+        :type os_version: str
         """
         self._os_version = os_version
 

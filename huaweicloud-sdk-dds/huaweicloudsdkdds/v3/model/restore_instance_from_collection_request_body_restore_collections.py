@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestoreInstanceFromCollectionRequestBodyRestoreCollections:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RestoreInstanceFromCollectionRequestBodyRestoreCollections:
     }
 
     def __init__(self, database=None, restore_database_time=None, collections=None):
-        """RestoreInstanceFromCollectionRequestBodyRestoreCollections - a model defined in huaweicloud sdk"""
+        """RestoreInstanceFromCollectionRequestBodyRestoreCollections
+
+        The model defined in huaweicloud sdk
+
+        :param database: 数据库名称。
+        :type database: str
+        :param restore_database_time: 数据库恢复时间点。如果是数据库级恢复，该参数必传，UNIX时间戳格式，单位是毫秒，时区是UTC。
+        :type restore_database_time: str
+        :param collections: 集合信息。
+        :type collections: list[:class:`huaweicloudsdkdds.v3.RestoreInstanceFromCollectionRequestBodyCollections`]
+        """
         
         
 
@@ -67,7 +76,7 @@ class RestoreInstanceFromCollectionRequestBodyRestoreCollections:
         数据库名称。
 
         :param database: The database of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
-        :type: str
+        :type database: str
         """
         self._database = database
 
@@ -89,7 +98,7 @@ class RestoreInstanceFromCollectionRequestBodyRestoreCollections:
         数据库恢复时间点。如果是数据库级恢复，该参数必传，UNIX时间戳格式，单位是毫秒，时区是UTC。
 
         :param restore_database_time: The restore_database_time of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
-        :type: str
+        :type restore_database_time: str
         """
         self._restore_database_time = restore_database_time
 
@@ -100,7 +109,7 @@ class RestoreInstanceFromCollectionRequestBodyRestoreCollections:
         集合信息。
 
         :return: The collections of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
-        :rtype: list[RestoreInstanceFromCollectionRequestBodyCollections]
+        :rtype: list[:class:`huaweicloudsdkdds.v3.RestoreInstanceFromCollectionRequestBodyCollections`]
         """
         return self._collections
 
@@ -111,7 +120,7 @@ class RestoreInstanceFromCollectionRequestBodyRestoreCollections:
         集合信息。
 
         :param collections: The collections of this RestoreInstanceFromCollectionRequestBodyRestoreCollections.
-        :type: list[RestoreInstanceFromCollectionRequestBodyCollections]
+        :type collections: list[:class:`huaweicloudsdkdds.v3.RestoreInstanceFromCollectionRequestBodyCollections`]
         """
         self._collections = collections
 

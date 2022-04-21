@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLogItemsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListLogItemsResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_message=None, result=None):
-        """ListLogItemsResponse - a model defined in huaweicloud sdk"""
+        """ListLogItemsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_code: 响应码,SVCSTG_AMS_2000000代表正常返回。
+        :type error_code: str
+        :param error_message: 响应信息描述。
+        :type error_message: str
+        :param result: 查询结果元数据信息，包括返回总数及结果。
+        :type result: str
+        """
         
         super(ListLogItemsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListLogItemsResponse(SdkResponse):
         响应码,SVCSTG_AMS_2000000代表正常返回。
 
         :param error_code: The error_code of this ListLogItemsResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -90,7 +99,7 @@ class ListLogItemsResponse(SdkResponse):
         响应信息描述。
 
         :param error_message: The error_message of this ListLogItemsResponse.
-        :type: str
+        :type error_message: str
         """
         self._error_message = error_message
 
@@ -112,7 +121,7 @@ class ListLogItemsResponse(SdkResponse):
         查询结果元数据信息，包括返回总数及结果。
 
         :param result: The result of this ListLogItemsResponse.
-        :type: str
+        :type result: str
         """
         self._result = result
 

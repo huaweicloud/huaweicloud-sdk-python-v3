@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListRestoreDatabasesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ListRestoreDatabasesRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, restore_time=None, offset=None, limit=None):
-        """ListRestoreDatabasesRequest - a model defined in huaweicloud sdk"""
+        """ListRestoreDatabasesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言。
+        :type x_language: str
+        :param instance_id: 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
+        :type instance_id: str
+        :param restore_time: 恢复时间点。UNIX时间戳格式，单位是毫秒，时区是UTC。
+        :type restore_time: str
+        :param offset: 索引位置偏移量。取值大于或等于0。不传该参数时，查询偏移量默认为0。
+        :type offset: int
+        :param limit: 查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
+        :type limit: int
+        """
         
         
 
@@ -76,7 +89,7 @@ class ListRestoreDatabasesRequest:
         语言。
 
         :param x_language: The x_language of this ListRestoreDatabasesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -98,7 +111,7 @@ class ListRestoreDatabasesRequest:
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
         :param instance_id: The instance_id of this ListRestoreDatabasesRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -120,7 +133,7 @@ class ListRestoreDatabasesRequest:
         恢复时间点。UNIX时间戳格式，单位是毫秒，时区是UTC。
 
         :param restore_time: The restore_time of this ListRestoreDatabasesRequest.
-        :type: str
+        :type restore_time: str
         """
         self._restore_time = restore_time
 
@@ -142,7 +155,7 @@ class ListRestoreDatabasesRequest:
         索引位置偏移量。取值大于或等于0。不传该参数时，查询偏移量默认为0。
 
         :param offset: The offset of this ListRestoreDatabasesRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -164,7 +177,7 @@ class ListRestoreDatabasesRequest:
         查询个数上限值。取值范围：1~100。不传该参数时，默认查询前100条信息。
 
         :param limit: The limit of this ListRestoreDatabasesRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

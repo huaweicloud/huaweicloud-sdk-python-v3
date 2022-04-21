@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddMembersResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchAddMembersResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchAddMembersResponse - a model defined in huaweicloud sdk"""
+        """BatchAddMembersResponse
+
+        The model defined in huaweicloud sdk
+
+        :param job_id: 异步任务ID。
+        :type job_id: str
+        """
         
         super(BatchAddMembersResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class BatchAddMembersResponse(SdkResponse):
         异步任务ID。
 
         :param job_id: The job_id of this BatchAddMembersResponse.
-        :type: str
+        :type job_id: str
         """
         self._job_id = job_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteWorkflowsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchDeleteWorkflowsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDeleteWorkflowsRequest - a model defined in huaweicloud sdk"""
+        """BatchDeleteWorkflowsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the BatchDeleteWorkflowsRequest
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class BatchDeleteWorkflowsRequest:
 
 
         :return: The body of this BatchDeleteWorkflowsRequest.
-        :rtype: BatchDeleteWorkflowsRequestBody
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class BatchDeleteWorkflowsRequest:
 
 
         :param body: The body of this BatchDeleteWorkflowsRequest.
-        :type: BatchDeleteWorkflowsRequestBody
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsRequestBody`
         """
         self._body = body
 

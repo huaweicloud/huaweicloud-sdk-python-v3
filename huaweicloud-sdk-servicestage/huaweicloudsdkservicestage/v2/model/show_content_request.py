@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowContentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowContentRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, path=None, ref=None):
-        """ShowContentRequest - a model defined in huaweicloud sdk"""
+        """ShowContentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_repo_auth: 授权名称。
+        :type x_repo_auth: str
+        :param namespace: 组织ID。
+        :type namespace: str
+        :param project: 仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
+        :type project: str
+        :param path: 文件路径，需要将“/”替换为“:”。
+        :type path: str
+        :param ref: 分支名称或者tag标签名称或者commit sha。
+        :type ref: str
+        """
         
         
 
@@ -73,7 +86,7 @@ class ShowContentRequest:
         授权名称。
 
         :param x_repo_auth: The x_repo_auth of this ShowContentRequest.
-        :type: str
+        :type x_repo_auth: str
         """
         self._x_repo_auth = x_repo_auth
 
@@ -95,7 +108,7 @@ class ShowContentRequest:
         组织ID。
 
         :param namespace: The namespace of this ShowContentRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -117,7 +130,7 @@ class ShowContentRequest:
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
         :param project: The project of this ShowContentRequest.
-        :type: str
+        :type project: str
         """
         self._project = project
 
@@ -139,7 +152,7 @@ class ShowContentRequest:
         文件路径，需要将“/”替换为“:”。
 
         :param path: The path of this ShowContentRequest.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -161,7 +174,7 @@ class ShowContentRequest:
         分支名称或者tag标签名称或者commit sha。
 
         :param ref: The ref of this ShowContentRequest.
-        :type: str
+        :type ref: str
         """
         self._ref = ref
 

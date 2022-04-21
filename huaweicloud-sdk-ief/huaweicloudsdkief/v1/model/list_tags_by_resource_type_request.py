@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTagsByResourceTypeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTagsByResourceTypeRequest:
     }
 
     def __init__(self, ief_instance_id=None, resource_type=None):
-        """ListTagsByResourceTypeRequest - a model defined in huaweicloud sdk"""
+        """ListTagsByResourceTypeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param resource_type: 资源类型 - ief-edge_node - ief-deployment - ief-application - ief-device
+        :type resource_type: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListTagsByResourceTypeRequest:
         铂金版实例ID，专业版实例为空值
 
         :param ief_instance_id: The ief_instance_id of this ListTagsByResourceTypeRequest.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -84,7 +91,7 @@ class ListTagsByResourceTypeRequest:
         资源类型 - ief-edge_node - ief-deployment - ief-application - ief-device
 
         :param resource_type: The resource_type of this ListTagsByResourceTypeRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 

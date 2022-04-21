@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScanJob:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ScanJob:
     }
 
     def __init__(self, create_time=None, cycle=None, id=None, last_run_time=None, last_scan_risk=None, name=None, open=None, rule_groups=None, status=None, topic_urn=None, use_nlp=None, start_time=None):
-        """ScanJob - a model defined in huaweicloud sdk"""
+        """ScanJob
+
+        The model defined in huaweicloud sdk
+
+        :param create_time: 任务创建时间
+        :type create_time: int
+        :param cycle: 任务执行方式
+        :type cycle: str
+        :param id: 任务ID
+        :type id: str
+        :param last_run_time: 任务上一次执行时间
+        :type last_run_time: int
+        :param last_scan_risk: 任务上一次扫描风险等级结果
+        :type last_scan_risk: str
+        :param name: 任务名称
+        :type name: str
+        :param open: 任务开启状态
+        :type open: bool
+        :param rule_groups: 任务使用的规则组
+        :type rule_groups: list[str]
+        :param status: 任务当前状态
+        :type status: str
+        :param topic_urn: SMN服务通知主题
+        :type topic_urn: str
+        :param use_nlp: 是否使用了NLP进行扫描
+        :type use_nlp: bool
+        :param start_time: 任务启动时间
+        :type start_time: int
+        """
         
         
 
@@ -113,7 +140,7 @@ class ScanJob:
         任务创建时间
 
         :param create_time: The create_time of this ScanJob.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -135,7 +162,7 @@ class ScanJob:
         任务执行方式
 
         :param cycle: The cycle of this ScanJob.
-        :type: str
+        :type cycle: str
         """
         self._cycle = cycle
 
@@ -157,7 +184,7 @@ class ScanJob:
         任务ID
 
         :param id: The id of this ScanJob.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -179,7 +206,7 @@ class ScanJob:
         任务上一次执行时间
 
         :param last_run_time: The last_run_time of this ScanJob.
-        :type: int
+        :type last_run_time: int
         """
         self._last_run_time = last_run_time
 
@@ -201,7 +228,7 @@ class ScanJob:
         任务上一次扫描风险等级结果
 
         :param last_scan_risk: The last_scan_risk of this ScanJob.
-        :type: str
+        :type last_scan_risk: str
         """
         self._last_scan_risk = last_scan_risk
 
@@ -223,7 +250,7 @@ class ScanJob:
         任务名称
 
         :param name: The name of this ScanJob.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -245,7 +272,7 @@ class ScanJob:
         任务开启状态
 
         :param open: The open of this ScanJob.
-        :type: bool
+        :type open: bool
         """
         self._open = open
 
@@ -267,7 +294,7 @@ class ScanJob:
         任务使用的规则组
 
         :param rule_groups: The rule_groups of this ScanJob.
-        :type: list[str]
+        :type rule_groups: list[str]
         """
         self._rule_groups = rule_groups
 
@@ -289,7 +316,7 @@ class ScanJob:
         任务当前状态
 
         :param status: The status of this ScanJob.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -311,7 +338,7 @@ class ScanJob:
         SMN服务通知主题
 
         :param topic_urn: The topic_urn of this ScanJob.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 
@@ -333,7 +360,7 @@ class ScanJob:
         是否使用了NLP进行扫描
 
         :param use_nlp: The use_nlp of this ScanJob.
-        :type: bool
+        :type use_nlp: bool
         """
         self._use_nlp = use_nlp
 
@@ -355,7 +382,7 @@ class ScanJob:
         任务启动时间
 
         :param start_time: The start_time of this ScanJob.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 

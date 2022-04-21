@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListResourceInstancesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListResourceInstancesRequest:
     }
 
     def __init__(self, resource_type=None, body=None):
-        """ListResourceInstancesRequest - a model defined in huaweicloud sdk"""
+        """ListResourceInstancesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_type: 资源类型，枚举类：SCALING_GROUP_TAG。
+        :type resource_type: str
+        :param body: Body of the ListResourceInstancesRequest
+        :type body: :class:`huaweicloudsdkas.v1.QueryTagsOption`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListResourceInstancesRequest:
         资源类型，枚举类：SCALING_GROUP_TAG。
 
         :param resource_type: The resource_type of this ListResourceInstancesRequest.
-        :type: str
+        :type resource_type: str
         """
         self._resource_type = resource_type
 
@@ -72,7 +79,7 @@ class ListResourceInstancesRequest:
 
 
         :return: The body of this ListResourceInstancesRequest.
-        :rtype: QueryTagsOption
+        :rtype: :class:`huaweicloudsdkas.v1.QueryTagsOption`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ListResourceInstancesRequest:
 
 
         :param body: The body of this ListResourceInstancesRequest.
-        :type: QueryTagsOption
+        :type body: :class:`huaweicloudsdkas.v1.QueryTagsOption`
         """
         self._body = body
 

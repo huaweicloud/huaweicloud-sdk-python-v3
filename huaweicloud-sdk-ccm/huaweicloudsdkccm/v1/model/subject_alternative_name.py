@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SubjectAlternativeName:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class SubjectAlternativeName:
     }
 
     def __init__(self, type=None, value=None):
-        """SubjectAlternativeName - a model defined in huaweicloud sdk"""
+        """SubjectAlternativeName
+
+        The model defined in huaweicloud sdk
+
+        :param type: 备用名称类型，当前仅支持DNS与IP。 - **DNS** - **IP**
+        :type type: str
+        :param value: 对应备用名称类型的值。   - DNS类型，长度为0~253；   - IP类型，长度为0~39。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class SubjectAlternativeName:
         备用名称类型，当前仅支持DNS与IP。 - **DNS** - **IP**
 
         :param type: The type of this SubjectAlternativeName.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -83,7 +90,7 @@ class SubjectAlternativeName:
         对应备用名称类型的值。   - DNS类型，长度为0~253；   - IP类型，长度为0~39。
 
         :param value: The value of this SubjectAlternativeName.
-        :type: str
+        :type value: str
         """
         self._value = value
 

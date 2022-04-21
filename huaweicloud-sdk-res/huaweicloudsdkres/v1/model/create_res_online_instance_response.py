@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResOnlineInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreateResOnlineInstanceResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, job=None, message=None, error_code=None):
-        """CreateResOnlineInstanceResponse - a model defined in huaweicloud sdk"""
+        """CreateResOnlineInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param is_success: 是否成功
+        :type is_success: bool
+        :param job: 
+        :type job: :class:`huaweicloudsdkres.v1.Jobs`
+        :param message: 返回消息（请求成功时，不返回此字段）
+        :type message: str
+        :param error_code: 错误码（请求成功时，不返回此字段）
+        :type error_code: str
+        """
         
         super(CreateResOnlineInstanceResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class CreateResOnlineInstanceResponse(SdkResponse):
         是否成功
 
         :param is_success: The is_success of this CreateResOnlineInstanceResponse.
-        :type: bool
+        :type is_success: bool
         """
         self._is_success = is_success
 
@@ -83,7 +94,7 @@ class CreateResOnlineInstanceResponse(SdkResponse):
 
 
         :return: The job of this CreateResOnlineInstanceResponse.
-        :rtype: Jobs
+        :rtype: :class:`huaweicloudsdkres.v1.Jobs`
         """
         return self._job
 
@@ -93,7 +104,7 @@ class CreateResOnlineInstanceResponse(SdkResponse):
 
 
         :param job: The job of this CreateResOnlineInstanceResponse.
-        :type: Jobs
+        :type job: :class:`huaweicloudsdkres.v1.Jobs`
         """
         self._job = job
 
@@ -115,7 +126,7 @@ class CreateResOnlineInstanceResponse(SdkResponse):
         返回消息（请求成功时，不返回此字段）
 
         :param message: The message of this CreateResOnlineInstanceResponse.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -137,7 +148,7 @@ class CreateResOnlineInstanceResponse(SdkResponse):
         错误码（请求成功时，不返回此字段）
 
         :param error_code: The error_code of this CreateResOnlineInstanceResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 

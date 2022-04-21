@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateProductTopicResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateProductTopicResponse(SdkResponse):
     }
 
     def __init__(self, product_id=None, topic_id=None, permission=None, topic_name=None, version=None, description=None):
-        """UpdateProductTopicResponse - a model defined in huaweicloud sdk"""
+        """UpdateProductTopicResponse
+
+        The model defined in huaweicloud sdk
+
+        :param product_id: 归属产品ID
+        :type product_id: int
+        :param topic_id: 产品主题ID
+        :type topic_id: int
+        :param permission: 主题权限 0-发布 1-订阅
+        :type permission: int
+        :param topic_name: 主题名称
+        :type topic_name: str
+        :param version: 版本号
+        :type version: str
+        :param description: 描述
+        :type description: str
+        """
         
         super(UpdateProductTopicResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class UpdateProductTopicResponse(SdkResponse):
         归属产品ID
 
         :param product_id: The product_id of this UpdateProductTopicResponse.
-        :type: int
+        :type product_id: int
         """
         self._product_id = product_id
 
@@ -105,7 +120,7 @@ class UpdateProductTopicResponse(SdkResponse):
         产品主题ID
 
         :param topic_id: The topic_id of this UpdateProductTopicResponse.
-        :type: int
+        :type topic_id: int
         """
         self._topic_id = topic_id
 
@@ -127,7 +142,7 @@ class UpdateProductTopicResponse(SdkResponse):
         主题权限 0-发布 1-订阅
 
         :param permission: The permission of this UpdateProductTopicResponse.
-        :type: int
+        :type permission: int
         """
         self._permission = permission
 
@@ -149,7 +164,7 @@ class UpdateProductTopicResponse(SdkResponse):
         主题名称
 
         :param topic_name: The topic_name of this UpdateProductTopicResponse.
-        :type: str
+        :type topic_name: str
         """
         self._topic_name = topic_name
 
@@ -171,7 +186,7 @@ class UpdateProductTopicResponse(SdkResponse):
         版本号
 
         :param version: The version of this UpdateProductTopicResponse.
-        :type: str
+        :type version: str
         """
         self._version = version
 
@@ -193,7 +208,7 @@ class UpdateProductTopicResponse(SdkResponse):
         描述
 
         :param description: The description of this UpdateProductTopicResponse.
-        :type: str
+        :type description: str
         """
         self._description = description
 

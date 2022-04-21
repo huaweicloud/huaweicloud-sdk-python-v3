@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSimCardsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListSimCardsResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, sim_cards=None):
-        """ListSimCardsResponse - a model defined in huaweicloud sdk"""
+        """ListSimCardsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param limit: 每页记录数
+        :type limit: int
+        :param offset: 页码
+        :type offset: int
+        :param count: 总数
+        :type count: int
+        :param sim_cards: sim卡数据集合
+        :type sim_cards: list[:class:`huaweicloudsdkgsl.v3.SimDeviceVO`]
+        """
         
         super(ListSimCardsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListSimCardsResponse(SdkResponse):
         每页记录数
 
         :param limit: The limit of this ListSimCardsResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -95,7 +106,7 @@ class ListSimCardsResponse(SdkResponse):
         页码
 
         :param offset: The offset of this ListSimCardsResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -117,7 +128,7 @@ class ListSimCardsResponse(SdkResponse):
         总数
 
         :param count: The count of this ListSimCardsResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -128,7 +139,7 @@ class ListSimCardsResponse(SdkResponse):
         sim卡数据集合
 
         :return: The sim_cards of this ListSimCardsResponse.
-        :rtype: list[SimDeviceVO]
+        :rtype: list[:class:`huaweicloudsdkgsl.v3.SimDeviceVO`]
         """
         return self._sim_cards
 
@@ -139,7 +150,7 @@ class ListSimCardsResponse(SdkResponse):
         sim卡数据集合
 
         :param sim_cards: The sim_cards of this ListSimCardsResponse.
-        :type: list[SimDeviceVO]
+        :type sim_cards: list[:class:`huaweicloudsdkgsl.v3.SimDeviceVO`]
         """
         self._sim_cards = sim_cards
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PostPaidServerSchedulerHints:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class PostPaidServerSchedulerHints:
     }
 
     def __init__(self, group=None, dedicated_host_id=None, tenancy=None):
-        """PostPaidServerSchedulerHints - a model defined in huaweicloud sdk"""
+        """PostPaidServerSchedulerHints
+
+        The model defined in huaweicloud sdk
+
+        :param group: 云服务器组ID，UUID格式。  云服务器组的ID可以从控制台或者参考[查询云服务器组列表](https://support.huaweicloud.com/api-ecs/ecs_03_1402.html)获取。
+        :type group: str
+        :param dedicated_host_id: 专属主机的ID。专属主机的ID仅在tenancy为dedicated时生效。
+        :type dedicated_host_id: str
+        :param tenancy: 在指定的专属主机或者共享主机上创建弹性云服务器云主机。参数值为shared或者dedicated。
+        :type tenancy: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class PostPaidServerSchedulerHints:
         云服务器组ID，UUID格式。  云服务器组的ID可以从控制台或者参考[查询云服务器组列表](https://support.huaweicloud.com/api-ecs/ecs_03_1402.html)获取。
 
         :param group: The group of this PostPaidServerSchedulerHints.
-        :type: str
+        :type group: str
         """
         self._group = group
 
@@ -90,7 +99,7 @@ class PostPaidServerSchedulerHints:
         专属主机的ID。专属主机的ID仅在tenancy为dedicated时生效。
 
         :param dedicated_host_id: The dedicated_host_id of this PostPaidServerSchedulerHints.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 
@@ -112,7 +121,7 @@ class PostPaidServerSchedulerHints:
         在指定的专属主机或者共享主机上创建弹性云服务器云主机。参数值为shared或者dedicated。
 
         :param tenancy: The tenancy of this PostPaidServerSchedulerHints.
-        :type: str
+        :type tenancy: str
         """
         self._tenancy = tenancy
 

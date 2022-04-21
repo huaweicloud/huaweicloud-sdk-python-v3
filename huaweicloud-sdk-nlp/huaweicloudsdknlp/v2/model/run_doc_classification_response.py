@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunDocClassificationResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class RunDocClassificationResponse(SdkResponse):
     }
 
     def __init__(self, result=None, error_code=None, error_msg=None):
-        """RunDocClassificationResponse - a model defined in huaweicloud sdk"""
+        """RunDocClassificationResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 标签列表
+        :type result: object
+        :param error_code: 调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
+        :type error_code: str
+        :param error_msg: 调用失败时的错误信息。调用成功时无此字段。
+        :type error_msg: str
+        """
         
         super(RunDocClassificationResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class RunDocClassificationResponse(SdkResponse):
         标签列表
 
         :param result: The result of this RunDocClassificationResponse.
-        :type: object
+        :type result: object
         """
         self._result = result
 
@@ -90,7 +99,7 @@ class RunDocClassificationResponse(SdkResponse):
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
         :param error_code: The error_code of this RunDocClassificationResponse.
-        :type: str
+        :type error_code: str
         """
         self._error_code = error_code
 
@@ -112,7 +121,7 @@ class RunDocClassificationResponse(SdkResponse):
         调用失败时的错误信息。调用成功时无此字段。
 
         :param error_msg: The error_msg of this RunDocClassificationResponse.
-        :type: str
+        :type error_msg: str
         """
         self._error_msg = error_msg
 

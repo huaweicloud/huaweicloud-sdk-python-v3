@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PeakBandwidthData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PeakBandwidthData:
     }
 
     def __init__(self, value=None, domain=None):
-        """PeakBandwidthData - a model defined in huaweicloud sdk"""
+        """PeakBandwidthData
+
+        The model defined in huaweicloud sdk
+
+        :param value: 带宽峰值，单位为bps。
+        :type value: int
+        :param domain: 播放域名。
+        :type domain: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class PeakBandwidthData:
         带宽峰值，单位为bps。
 
         :param value: The value of this PeakBandwidthData.
-        :type: int
+        :type value: int
         """
         self._value = value
 
@@ -85,7 +92,7 @@ class PeakBandwidthData:
         播放域名。
 
         :param domain: The domain of this PeakBandwidthData.
-        :type: str
+        :type domain: str
         """
         self._domain = domain
 

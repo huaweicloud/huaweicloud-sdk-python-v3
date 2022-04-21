@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExecuteSessionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ExecuteSessionResponse(SdkResponse):
     }
 
     def __init__(self, reply_type=None, qabot_answers=None, chat_answers=None, taskbot_answers=None, request_id=None):
-        """ExecuteSessionResponse - a model defined in huaweicloud sdk"""
+        """ExecuteSessionResponse
+
+        The model defined in huaweicloud sdk
+
+        :param reply_type: 回复类型： 0   问答型机器人回复。 1   任务型机器人回复。 2   闲聊回复。
+        :type reply_type: int
+        :param qabot_answers: 
+        :type qabot_answers: :class:`huaweicloudsdkcbs.v1.QaBotAnswers`
+        :param chat_answers: 
+        :type chat_answers: :class:`huaweicloudsdkcbs.v1.ChatAnswers`
+        :param taskbot_answers: 
+        :type taskbot_answers: :class:`huaweicloudsdkcbs.v1.TaskBotAnswers`
+        :param request_id: 请求ID。
+        :type request_id: str
+        """
         
         super(ExecuteSessionResponse, self).__init__()
 
@@ -78,7 +91,7 @@ class ExecuteSessionResponse(SdkResponse):
         回复类型： 0   问答型机器人回复。 1   任务型机器人回复。 2   闲聊回复。
 
         :param reply_type: The reply_type of this ExecuteSessionResponse.
-        :type: int
+        :type reply_type: int
         """
         self._reply_type = reply_type
 
@@ -88,7 +101,7 @@ class ExecuteSessionResponse(SdkResponse):
 
 
         :return: The qabot_answers of this ExecuteSessionResponse.
-        :rtype: QaBotAnswers
+        :rtype: :class:`huaweicloudsdkcbs.v1.QaBotAnswers`
         """
         return self._qabot_answers
 
@@ -98,7 +111,7 @@ class ExecuteSessionResponse(SdkResponse):
 
 
         :param qabot_answers: The qabot_answers of this ExecuteSessionResponse.
-        :type: QaBotAnswers
+        :type qabot_answers: :class:`huaweicloudsdkcbs.v1.QaBotAnswers`
         """
         self._qabot_answers = qabot_answers
 
@@ -108,7 +121,7 @@ class ExecuteSessionResponse(SdkResponse):
 
 
         :return: The chat_answers of this ExecuteSessionResponse.
-        :rtype: ChatAnswers
+        :rtype: :class:`huaweicloudsdkcbs.v1.ChatAnswers`
         """
         return self._chat_answers
 
@@ -118,7 +131,7 @@ class ExecuteSessionResponse(SdkResponse):
 
 
         :param chat_answers: The chat_answers of this ExecuteSessionResponse.
-        :type: ChatAnswers
+        :type chat_answers: :class:`huaweicloudsdkcbs.v1.ChatAnswers`
         """
         self._chat_answers = chat_answers
 
@@ -128,7 +141,7 @@ class ExecuteSessionResponse(SdkResponse):
 
 
         :return: The taskbot_answers of this ExecuteSessionResponse.
-        :rtype: TaskBotAnswers
+        :rtype: :class:`huaweicloudsdkcbs.v1.TaskBotAnswers`
         """
         return self._taskbot_answers
 
@@ -138,7 +151,7 @@ class ExecuteSessionResponse(SdkResponse):
 
 
         :param taskbot_answers: The taskbot_answers of this ExecuteSessionResponse.
-        :type: TaskBotAnswers
+        :type taskbot_answers: :class:`huaweicloudsdkcbs.v1.TaskBotAnswers`
         """
         self._taskbot_answers = taskbot_answers
 
@@ -160,7 +173,7 @@ class ExecuteSessionResponse(SdkResponse):
         请求ID。
 
         :param request_id: The request_id of this ExecuteSessionResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 

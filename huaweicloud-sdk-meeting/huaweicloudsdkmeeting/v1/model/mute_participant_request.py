@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MuteParticipantRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MuteParticipantRequest:
     }
 
     def __init__(self, conference_id=None, participant_id=None, x_conference_authorization=None, body=None):
-        """MuteParticipantRequest - a model defined in huaweicloud sdk"""
+        """MuteParticipantRequest
+
+        The model defined in huaweicloud sdk
+
+        :param conference_id: 会议ID。
+        :type conference_id: str
+        :param participant_id: 与会者标识。
+        :type participant_id: str
+        :param x_conference_authorization: 会控授权令牌，通过获取会控token接口获得。
+        :type x_conference_authorization: str
+        :param body: Body of the MuteParticipantRequest
+        :type body: :class:`huaweicloudsdkmeeting.v1.RestMuteParticipantReqBody`
+        """
         
         
 
@@ -70,7 +81,7 @@ class MuteParticipantRequest:
         会议ID。
 
         :param conference_id: The conference_id of this MuteParticipantRequest.
-        :type: str
+        :type conference_id: str
         """
         self._conference_id = conference_id
 
@@ -92,7 +103,7 @@ class MuteParticipantRequest:
         与会者标识。
 
         :param participant_id: The participant_id of this MuteParticipantRequest.
-        :type: str
+        :type participant_id: str
         """
         self._participant_id = participant_id
 
@@ -114,7 +125,7 @@ class MuteParticipantRequest:
         会控授权令牌，通过获取会控token接口获得。
 
         :param x_conference_authorization: The x_conference_authorization of this MuteParticipantRequest.
-        :type: str
+        :type x_conference_authorization: str
         """
         self._x_conference_authorization = x_conference_authorization
 
@@ -124,7 +135,7 @@ class MuteParticipantRequest:
 
 
         :return: The body of this MuteParticipantRequest.
-        :rtype: RestMuteParticipantReqBody
+        :rtype: :class:`huaweicloudsdkmeeting.v1.RestMuteParticipantReqBody`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class MuteParticipantRequest:
 
 
         :param body: The body of this MuteParticipantRequest.
-        :type: RestMuteParticipantReqBody
+        :type body: :class:`huaweicloudsdkmeeting.v1.RestMuteParticipantReqBody`
         """
         self._body = body
 

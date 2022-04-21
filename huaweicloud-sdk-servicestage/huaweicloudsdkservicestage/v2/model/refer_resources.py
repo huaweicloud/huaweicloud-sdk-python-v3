@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReferResources:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ReferResources:
     }
 
     def __init__(self, id=None, type=None, refer_alias=None, parameters=None):
-        """ReferResources - a model defined in huaweicloud sdk"""
+        """ReferResources
+
+        The model defined in huaweicloud sdk
+
+        :param id: 资源ID。
+        :type id: str
+        :param type: 
+        :type type: :class:`huaweicloudsdkservicestage.v2.ResourceType`
+        :param refer_alias: 应用别名，dcs时才提供，支持“distributed_session”、“distributed_cache”、“distributed_session, distributed_cache”，  默认值是“distributed_session, distributed_cache”。 
+        :type refer_alias: str
+        :param parameters: 引用资源参数。
+        :type parameters: object
+        """
         
         
 
@@ -73,7 +84,7 @@ class ReferResources:
         资源ID。
 
         :param id: The id of this ReferResources.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -83,7 +94,7 @@ class ReferResources:
 
 
         :return: The type of this ReferResources.
-        :rtype: ResourceType
+        :rtype: :class:`huaweicloudsdkservicestage.v2.ResourceType`
         """
         return self._type
 
@@ -93,7 +104,7 @@ class ReferResources:
 
 
         :param type: The type of this ReferResources.
-        :type: ResourceType
+        :type type: :class:`huaweicloudsdkservicestage.v2.ResourceType`
         """
         self._type = type
 
@@ -115,7 +126,7 @@ class ReferResources:
         应用别名，dcs时才提供，支持“distributed_session”、“distributed_cache”、“distributed_session, distributed_cache”，  默认值是“distributed_session, distributed_cache”。 
 
         :param refer_alias: The refer_alias of this ReferResources.
-        :type: str
+        :type refer_alias: str
         """
         self._refer_alias = refer_alias
 
@@ -137,7 +148,7 @@ class ReferResources:
         引用资源参数。
 
         :param parameters: The parameters of this ReferResources.
-        :type: object
+        :type parameters: object
         """
         self._parameters = parameters
 

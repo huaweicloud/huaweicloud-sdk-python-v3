@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTestCaseResultBean:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpdateTestCaseResultBean:
     }
 
     def __init__(self, testcase_id=None, execute_id=None, result_id=None, end_time=None, duration=None, description=None):
-        """UpdateTestCaseResultBean - a model defined in huaweicloud sdk"""
+        """UpdateTestCaseResultBean
+
+        The model defined in huaweicloud sdk
+
+        :param testcase_id: 测试用例唯一标识，列表中不允许存在重复的id，固定长度32位字符
+        :type testcase_id: str
+        :param execute_id: 注册服务执行id，该值不允许重复，不超过32位字符
+        :type execute_id: str
+        :param result_id: 测试用例结果，（0-成功，1-失败，5-执行中，6-停止）
+        :type result_id: str
+        :param end_time: 用例结束执行的时间戳，在执行结束时该字段必传
+        :type end_time: int
+        :param duration: 执行用例持续时长ms，更新状态时改字段必传
+        :type duration: int
+        :param description: 用于记录该次结果执行的备注信息
+        :type description: str
+        """
         
         
 
@@ -79,7 +94,7 @@ class UpdateTestCaseResultBean:
         测试用例唯一标识，列表中不允许存在重复的id，固定长度32位字符
 
         :param testcase_id: The testcase_id of this UpdateTestCaseResultBean.
-        :type: str
+        :type testcase_id: str
         """
         self._testcase_id = testcase_id
 
@@ -101,7 +116,7 @@ class UpdateTestCaseResultBean:
         注册服务执行id，该值不允许重复，不超过32位字符
 
         :param execute_id: The execute_id of this UpdateTestCaseResultBean.
-        :type: str
+        :type execute_id: str
         """
         self._execute_id = execute_id
 
@@ -123,7 +138,7 @@ class UpdateTestCaseResultBean:
         测试用例结果，（0-成功，1-失败，5-执行中，6-停止）
 
         :param result_id: The result_id of this UpdateTestCaseResultBean.
-        :type: str
+        :type result_id: str
         """
         self._result_id = result_id
 
@@ -145,7 +160,7 @@ class UpdateTestCaseResultBean:
         用例结束执行的时间戳，在执行结束时该字段必传
 
         :param end_time: The end_time of this UpdateTestCaseResultBean.
-        :type: int
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -167,7 +182,7 @@ class UpdateTestCaseResultBean:
         执行用例持续时长ms，更新状态时改字段必传
 
         :param duration: The duration of this UpdateTestCaseResultBean.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -189,7 +204,7 @@ class UpdateTestCaseResultBean:
         用于记录该次结果执行的备注信息
 
         :param description: The description of this UpdateTestCaseResultBean.
-        :type: str
+        :type description: str
         """
         self._description = description
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CompareFaceByUrlResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CompareFaceByUrlResponse(SdkResponse):
     }
 
     def __init__(self, image1_face=None, image2_face=None, similarity=None):
-        """CompareFaceByUrlResponse - a model defined in huaweicloud sdk"""
+        """CompareFaceByUrlResponse
+
+        The model defined in huaweicloud sdk
+
+        :param image1_face: 
+        :type image1_face: :class:`huaweicloudsdkfrs.v2.CompareFace`
+        :param image2_face: 
+        :type image2_face: :class:`huaweicloudsdkfrs.v2.CompareFace`
+        :param similarity: 人脸相似度，1表示最大，0表示最小，值越大表示越相似。一般情况下超过0.93即可认为是同一个人。 调用失败时无此字段。
+        :type similarity: float
+        """
         
         super(CompareFaceByUrlResponse, self).__init__()
 
@@ -56,7 +65,7 @@ class CompareFaceByUrlResponse(SdkResponse):
 
 
         :return: The image1_face of this CompareFaceByUrlResponse.
-        :rtype: CompareFace
+        :rtype: :class:`huaweicloudsdkfrs.v2.CompareFace`
         """
         return self._image1_face
 
@@ -66,7 +75,7 @@ class CompareFaceByUrlResponse(SdkResponse):
 
 
         :param image1_face: The image1_face of this CompareFaceByUrlResponse.
-        :type: CompareFace
+        :type image1_face: :class:`huaweicloudsdkfrs.v2.CompareFace`
         """
         self._image1_face = image1_face
 
@@ -76,7 +85,7 @@ class CompareFaceByUrlResponse(SdkResponse):
 
 
         :return: The image2_face of this CompareFaceByUrlResponse.
-        :rtype: CompareFace
+        :rtype: :class:`huaweicloudsdkfrs.v2.CompareFace`
         """
         return self._image2_face
 
@@ -86,7 +95,7 @@ class CompareFaceByUrlResponse(SdkResponse):
 
 
         :param image2_face: The image2_face of this CompareFaceByUrlResponse.
-        :type: CompareFace
+        :type image2_face: :class:`huaweicloudsdkfrs.v2.CompareFace`
         """
         self._image2_face = image2_face
 
@@ -108,7 +117,7 @@ class CompareFaceByUrlResponse(SdkResponse):
         人脸相似度，1表示最大，0表示最小，值越大表示越相似。一般情况下超过0.93即可认为是同一个人。 调用失败时无此字段。
 
         :param similarity: The similarity of this CompareFaceByUrlResponse.
-        :type: float
+        :type similarity: float
         """
         self._similarity = similarity
 

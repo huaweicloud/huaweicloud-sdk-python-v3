@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPipelineLastStatusV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
     }
 
     def __init__(self, pipeline_id=None, name=None, status=None, result=None, executor=None, start_time=None, finish_time=None, detail_url=None, modify_url=None, build_id=None, stages=None):
-        """ShowPipelineLastStatusV2Response - a model defined in huaweicloud sdk"""
+        """ShowPipelineLastStatusV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param pipeline_id: 流水线id
+        :type pipeline_id: str
+        :param name: 流水线名称
+        :type name: str
+        :param status: 执行状态
+        :type status: str
+        :param result: 执行结果
+        :type result: str
+        :param executor: 执行人
+        :type executor: str
+        :param start_time: 启动时间
+        :type start_time: str
+        :param finish_time: 结束时间
+        :type finish_time: str
+        :param detail_url: 运行详情链接
+        :type detail_url: str
+        :param modify_url: 编辑链接
+        :type modify_url: str
+        :param build_id: 流水线执行序号
+        :type build_id: str
+        :param stages: 阶段信息
+        :type stages: list[:class:`huaweicloudsdkdevstar.v1.PipelineStageResp`]
+        """
         
         super(ShowPipelineLastStatusV2Response, self).__init__()
 
@@ -108,7 +133,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
         流水线id
 
         :param pipeline_id: The pipeline_id of this ShowPipelineLastStatusV2Response.
-        :type: str
+        :type pipeline_id: str
         """
         self._pipeline_id = pipeline_id
 
@@ -130,7 +155,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
         流水线名称
 
         :param name: The name of this ShowPipelineLastStatusV2Response.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -152,7 +177,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
         执行状态
 
         :param status: The status of this ShowPipelineLastStatusV2Response.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -174,7 +199,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
         执行结果
 
         :param result: The result of this ShowPipelineLastStatusV2Response.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -196,7 +221,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
         执行人
 
         :param executor: The executor of this ShowPipelineLastStatusV2Response.
-        :type: str
+        :type executor: str
         """
         self._executor = executor
 
@@ -218,7 +243,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
         启动时间
 
         :param start_time: The start_time of this ShowPipelineLastStatusV2Response.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -240,7 +265,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
         结束时间
 
         :param finish_time: The finish_time of this ShowPipelineLastStatusV2Response.
-        :type: str
+        :type finish_time: str
         """
         self._finish_time = finish_time
 
@@ -262,7 +287,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
         运行详情链接
 
         :param detail_url: The detail_url of this ShowPipelineLastStatusV2Response.
-        :type: str
+        :type detail_url: str
         """
         self._detail_url = detail_url
 
@@ -284,7 +309,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
         编辑链接
 
         :param modify_url: The modify_url of this ShowPipelineLastStatusV2Response.
-        :type: str
+        :type modify_url: str
         """
         self._modify_url = modify_url
 
@@ -306,7 +331,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
         流水线执行序号
 
         :param build_id: The build_id of this ShowPipelineLastStatusV2Response.
-        :type: str
+        :type build_id: str
         """
         self._build_id = build_id
 
@@ -317,7 +342,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
         阶段信息
 
         :return: The stages of this ShowPipelineLastStatusV2Response.
-        :rtype: list[PipelineStageResp]
+        :rtype: list[:class:`huaweicloudsdkdevstar.v1.PipelineStageResp`]
         """
         return self._stages
 
@@ -328,7 +353,7 @@ class ShowPipelineLastStatusV2Response(SdkResponse):
         阶段信息
 
         :param stages: The stages of this ShowPipelineLastStatusV2Response.
-        :type: list[PipelineStageResp]
+        :type stages: list[:class:`huaweicloudsdkdevstar.v1.PipelineStageResp`]
         """
         self._stages = stages
 

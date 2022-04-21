@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChartConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ChartConfig:
     }
 
     def __init__(self, can_sort=None, can_search=None, page_size=None):
-        """ChartConfig - a model defined in huaweicloud sdk"""
+        """ChartConfig
+
+        The model defined in huaweicloud sdk
+
+        :param can_sort: 是否开启排序
+        :type can_sort: bool
+        :param can_search: 是否开启搜索
+        :type can_search: bool
+        :param page_size: 每页显示数量
+        :type page_size: int
+        """
         
         
 
@@ -65,7 +74,7 @@ class ChartConfig:
         是否开启排序
 
         :param can_sort: The can_sort of this ChartConfig.
-        :type: bool
+        :type can_sort: bool
         """
         self._can_sort = can_sort
 
@@ -87,7 +96,7 @@ class ChartConfig:
         是否开启搜索
 
         :param can_search: The can_search of this ChartConfig.
-        :type: bool
+        :type can_search: bool
         """
         self._can_search = can_search
 
@@ -109,7 +118,7 @@ class ChartConfig:
         每页显示数量
 
         :param page_size: The page_size of this ChartConfig.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 

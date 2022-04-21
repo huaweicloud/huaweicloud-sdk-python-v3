@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowNatGatewayResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowNatGatewayResponse(SdkResponse):
     }
 
     def __init__(self, nat_gateway=None):
-        """ShowNatGatewayResponse - a model defined in huaweicloud sdk"""
+        """ShowNatGatewayResponse
+
+        The model defined in huaweicloud sdk
+
+        :param nat_gateway: 
+        :type nat_gateway: :class:`huaweicloudsdknat.v2.NatGatewayResponseBody`
+        """
         
         super(ShowNatGatewayResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class ShowNatGatewayResponse(SdkResponse):
 
 
         :return: The nat_gateway of this ShowNatGatewayResponse.
-        :rtype: NatGatewayResponseBody
+        :rtype: :class:`huaweicloudsdknat.v2.NatGatewayResponseBody`
         """
         return self._nat_gateway
 
@@ -56,7 +61,7 @@ class ShowNatGatewayResponse(SdkResponse):
 
 
         :param nat_gateway: The nat_gateway of this ShowNatGatewayResponse.
-        :type: NatGatewayResponseBody
+        :type nat_gateway: :class:`huaweicloudsdknat.v2.NatGatewayResponseBody`
         """
         self._nat_gateway = nat_gateway
 

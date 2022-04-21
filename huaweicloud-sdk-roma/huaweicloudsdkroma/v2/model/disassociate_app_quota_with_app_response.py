@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DisassociateAppQuotaWithAppResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class DisassociateAppQuotaWithAppResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisassociateAppQuotaWithAppResponse - a model defined in huaweicloud sdk"""
+        """DisassociateAppQuotaWithAppResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(DisassociateAppQuotaWithAppResponse, self).__init__()
         self.discriminator = None

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestResponse:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RestResponse:
     }
 
     def __init__(self, return_code=None, return_desc=None):
-        """RestResponse - a model defined in huaweicloud sdk"""
+        """RestResponse
+
+        The model defined in huaweicloud sdk
+
+        :param return_code: 结果码
+        :type return_code: int
+        :param return_desc: 结果描述
+        :type return_desc: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class RestResponse:
         结果码
 
         :param return_code: The return_code of this RestResponse.
-        :type: int
+        :type return_code: int
         """
         self._return_code = return_code
 
@@ -84,7 +91,7 @@ class RestResponse:
         结果描述
 
         :param return_desc: The return_desc of this RestResponse.
-        :type: str
+        :type return_desc: str
         """
         self._return_desc = return_desc
 

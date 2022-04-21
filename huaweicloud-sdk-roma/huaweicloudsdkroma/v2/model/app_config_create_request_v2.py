@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AppConfigCreateRequestV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class AppConfigCreateRequestV2:
     }
 
     def __init__(self, config_type=None, config_value=None, description=None, config_name=None):
-        """AppConfigCreateRequestV2 - a model defined in huaweicloud sdk"""
+        """AppConfigCreateRequestV2
+
+        The model defined in huaweicloud sdk
+
+        :param config_type: 应用配置类型： - variable：模板变量 - password：密码 - certificate：证书
+        :type config_type: str
+        :param config_value: 应用配置值： - config_type &#x3D; variable：config_value为模板变量的值 - config_type &#x3D; password：config_value为密码值 - config_type &#x3D; certificate：config_value需要包含证书public_key（必填），私钥private_key（必填）和密码passphrase（非必填），格式如：\&quot;{\\\\\&quot;public_key\\\\\&quot;: \\\&quot;\\,\\\\\&quot;private_key\\\\\&quot;:\\\\\&quot;\\\\\&quot;,\\\\\&quot;passphrase\\\\\&quot;:\\\\\&quot;\\\\\&quot;}\&quot;
+        :type config_value: str
+        :param description: 应用配置描述
+        :type description: str
+        :param config_name: 应用配置名称。  支持英文大小写字符、数字、下划线、中划线、点和@，且只能以英文字母开头。
+        :type config_name: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class AppConfigCreateRequestV2:
         应用配置类型： - variable：模板变量 - password：密码 - certificate：证书
 
         :param config_type: The config_type of this AppConfigCreateRequestV2.
-        :type: str
+        :type config_type: str
         """
         self._config_type = config_type
 
@@ -94,7 +105,7 @@ class AppConfigCreateRequestV2:
         应用配置值： - config_type = variable：config_value为模板变量的值 - config_type = password：config_value为密码值 - config_type = certificate：config_value需要包含证书public_key（必填），私钥private_key（必填）和密码passphrase（非必填），格式如：\"{\\\\\"public_key\\\\\": \\\"\\,\\\\\"private_key\\\\\":\\\\\"\\\\\",\\\\\"passphrase\\\\\":\\\\\"\\\\\"}\"
 
         :param config_value: The config_value of this AppConfigCreateRequestV2.
-        :type: str
+        :type config_value: str
         """
         self._config_value = config_value
 
@@ -116,7 +127,7 @@ class AppConfigCreateRequestV2:
         应用配置描述
 
         :param description: The description of this AppConfigCreateRequestV2.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -138,7 +149,7 @@ class AppConfigCreateRequestV2:
         应用配置名称。  支持英文大小写字符、数字、下划线、中划线、点和@，且只能以英文字母开头。
 
         :param config_name: The config_name of this AppConfigCreateRequestV2.
-        :type: str
+        :type config_name: str
         """
         self._config_name = config_name
 

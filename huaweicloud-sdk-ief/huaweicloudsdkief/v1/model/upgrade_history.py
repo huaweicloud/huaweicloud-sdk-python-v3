@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpgradeHistory:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class UpgradeHistory:
     }
 
     def __init__(self, id=None, from_version=None, to_version=None, upgrade_time=None, result=None, dur_time=None):
-        """UpgradeHistory - a model defined in huaweicloud sdk"""
+        """UpgradeHistory
+
+        The model defined in huaweicloud sdk
+
+        :param id: 节点升级或安装历史版本id
+        :type id: int
+        :param from_version: 节点升级前节点上edgecore版本号，形式如2.1.0，其中每一位都是整数
+        :type from_version: str
+        :param to_version: 节点升级或安装后节点行edgecore版本号，形式如2.1.0，其中每一位都是整数
+        :type to_version: str
+        :param upgrade_time: 节点升级或安装的十位时间戳
+        :type upgrade_time: int
+        :param result: 节点升级或安装状态，包含 - install_success：边缘节点安装成功 - upgrade_success：边缘节点升级成功 - install_failed：边缘节点安装失败 - upgrade_failed：边缘节点升级失败 - upgrade_failed_rollback_success：边缘节点升级失败回滚成功 - upgrade_failed_rollback_failed：边缘节点升级失败回滚失败
+        :type result: str
+        :param dur_time: 节点升级所消耗的时间
+        :type dur_time: int
+        """
         
         
 
@@ -83,7 +98,7 @@ class UpgradeHistory:
         节点升级或安装历史版本id
 
         :param id: The id of this UpgradeHistory.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -105,7 +120,7 @@ class UpgradeHistory:
         节点升级前节点上edgecore版本号，形式如2.1.0，其中每一位都是整数
 
         :param from_version: The from_version of this UpgradeHistory.
-        :type: str
+        :type from_version: str
         """
         self._from_version = from_version
 
@@ -127,7 +142,7 @@ class UpgradeHistory:
         节点升级或安装后节点行edgecore版本号，形式如2.1.0，其中每一位都是整数
 
         :param to_version: The to_version of this UpgradeHistory.
-        :type: str
+        :type to_version: str
         """
         self._to_version = to_version
 
@@ -149,7 +164,7 @@ class UpgradeHistory:
         节点升级或安装的十位时间戳
 
         :param upgrade_time: The upgrade_time of this UpgradeHistory.
-        :type: int
+        :type upgrade_time: int
         """
         self._upgrade_time = upgrade_time
 
@@ -171,7 +186,7 @@ class UpgradeHistory:
         节点升级或安装状态，包含 - install_success：边缘节点安装成功 - upgrade_success：边缘节点升级成功 - install_failed：边缘节点安装失败 - upgrade_failed：边缘节点升级失败 - upgrade_failed_rollback_success：边缘节点升级失败回滚成功 - upgrade_failed_rollback_failed：边缘节点升级失败回滚失败
 
         :param result: The result of this UpgradeHistory.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -193,7 +208,7 @@ class UpgradeHistory:
         节点升级所消耗的时间
 
         :param dur_time: The dur_time of this UpgradeHistory.
-        :type: int
+        :type dur_time: int
         """
         self._dur_time = dur_time
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateProjectVpcChannelSyncsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateProjectVpcChannelSyncsRequest:
     }
 
     def __init__(self, body=None):
-        """CreateProjectVpcChannelSyncsRequest - a model defined in huaweicloud sdk"""
+        """CreateProjectVpcChannelSyncsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateProjectVpcChannelSyncsRequest
+        :type body: :class:`huaweicloudsdkroma.v2.ProjectVpcSync`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateProjectVpcChannelSyncsRequest:
 
 
         :return: The body of this CreateProjectVpcChannelSyncsRequest.
-        :rtype: ProjectVpcSync
+        :rtype: :class:`huaweicloudsdkroma.v2.ProjectVpcSync`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateProjectVpcChannelSyncsRequest:
 
 
         :param body: The body of this CreateProjectVpcChannelSyncsRequest.
-        :type: ProjectVpcSync
+        :type body: :class:`huaweicloudsdkroma.v2.ProjectVpcSync`
         """
         self._body = body
 

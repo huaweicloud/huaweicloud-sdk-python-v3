@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPartitionMessageResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowPartitionMessageResponse(SdkResponse):
     }
 
     def __init__(self, message=None):
-        """ShowPartitionMessageResponse - a model defined in huaweicloud sdk"""
+        """ShowPartitionMessageResponse
+
+        The model defined in huaweicloud sdk
+
+        :param message: 消息列表。
+        :type message: list[:class:`huaweicloudsdkkafka.v2.ShowPartitionMessageEntity`]
+        """
         
         super(ShowPartitionMessageResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ShowPartitionMessageResponse(SdkResponse):
         消息列表。
 
         :return: The message of this ShowPartitionMessageResponse.
-        :rtype: list[ShowPartitionMessageEntity]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowPartitionMessageEntity`]
         """
         return self._message
 
@@ -58,7 +63,7 @@ class ShowPartitionMessageResponse(SdkResponse):
         消息列表。
 
         :param message: The message of this ShowPartitionMessageResponse.
-        :type: list[ShowPartitionMessageEntity]
+        :type message: list[:class:`huaweicloudsdkkafka.v2.ShowPartitionMessageEntity`]
         """
         self._message = message
 

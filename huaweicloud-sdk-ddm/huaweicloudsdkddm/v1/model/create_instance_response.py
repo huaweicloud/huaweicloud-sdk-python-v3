@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateInstanceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, order_id=None):
-        """CreateInstanceResponse - a model defined in huaweicloud sdk"""
+        """CreateInstanceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 实例ID。创建按需付费实例时返回该参数。
+        :type id: str
+        :param order_id: 订单号，创建包年/包月实例时返回该参数。
+        :type order_id: str
+        """
         
         super(CreateInstanceResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateInstanceResponse(SdkResponse):
         实例ID。创建按需付费实例时返回该参数。
 
         :param id: The id of this CreateInstanceResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class CreateInstanceResponse(SdkResponse):
         订单号，创建包年/包月实例时返回该参数。
 
         :param order_id: The order_id of this CreateInstanceResponse.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 

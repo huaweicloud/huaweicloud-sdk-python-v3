@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListFreeResourceInfosResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListFreeResourceInfosResponse(SdkResponse):
     }
 
     def __init__(self, free_resource_packages=None, total_count=None):
-        """ListFreeResourceInfosResponse - a model defined in huaweicloud sdk"""
+        """ListFreeResourceInfosResponse
+
+        The model defined in huaweicloud sdk
+
+        :param free_resource_packages: 资源包信息列表，具体参见表2。
+        :type free_resource_packages: list[:class:`huaweicloudsdkbssintl.v2.FreeResourcePackageV3`]
+        :param total_count: 总条数。
+        :type total_count: int
+        """
         
         super(ListFreeResourceInfosResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListFreeResourceInfosResponse(SdkResponse):
         资源包信息列表，具体参见表2。
 
         :return: The free_resource_packages of this ListFreeResourceInfosResponse.
-        :rtype: list[FreeResourcePackageV3]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.FreeResourcePackageV3`]
         """
         return self._free_resource_packages
 
@@ -63,7 +70,7 @@ class ListFreeResourceInfosResponse(SdkResponse):
         资源包信息列表，具体参见表2。
 
         :param free_resource_packages: The free_resource_packages of this ListFreeResourceInfosResponse.
-        :type: list[FreeResourcePackageV3]
+        :type free_resource_packages: list[:class:`huaweicloudsdkbssintl.v2.FreeResourcePackageV3`]
         """
         self._free_resource_packages = free_resource_packages
 
@@ -85,7 +92,7 @@ class ListFreeResourceInfosResponse(SdkResponse):
         总条数。
 
         :param total_count: The total_count of this ListFreeResourceInfosResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

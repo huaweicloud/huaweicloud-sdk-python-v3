@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Nearline:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class Nearline:
     }
 
     def __init__(self, item_topic=None, user_topic=None, behavior_topic=None):
-        """Nearline - a model defined in huaweicloud sdk"""
+        """Nearline
+
+        The model defined in huaweicloud sdk
+
+        :param item_topic: 
+        :type item_topic: :class:`huaweicloudsdkres.v1.Topic`
+        :param user_topic: 
+        :type user_topic: :class:`huaweicloudsdkres.v1.Topic`
+        :param behavior_topic: 
+        :type behavior_topic: :class:`huaweicloudsdkres.v1.Topic`
+        """
         
         
 
@@ -56,7 +65,7 @@ class Nearline:
 
 
         :return: The item_topic of this Nearline.
-        :rtype: Topic
+        :rtype: :class:`huaweicloudsdkres.v1.Topic`
         """
         return self._item_topic
 
@@ -66,7 +75,7 @@ class Nearline:
 
 
         :param item_topic: The item_topic of this Nearline.
-        :type: Topic
+        :type item_topic: :class:`huaweicloudsdkres.v1.Topic`
         """
         self._item_topic = item_topic
 
@@ -76,7 +85,7 @@ class Nearline:
 
 
         :return: The user_topic of this Nearline.
-        :rtype: Topic
+        :rtype: :class:`huaweicloudsdkres.v1.Topic`
         """
         return self._user_topic
 
@@ -86,7 +95,7 @@ class Nearline:
 
 
         :param user_topic: The user_topic of this Nearline.
-        :type: Topic
+        :type user_topic: :class:`huaweicloudsdkres.v1.Topic`
         """
         self._user_topic = user_topic
 
@@ -96,7 +105,7 @@ class Nearline:
 
 
         :return: The behavior_topic of this Nearline.
-        :rtype: Topic
+        :rtype: :class:`huaweicloudsdkres.v1.Topic`
         """
         return self._behavior_topic
 
@@ -106,7 +115,7 @@ class Nearline:
 
 
         :param behavior_topic: The behavior_topic of this Nearline.
-        :type: Topic
+        :type behavior_topic: :class:`huaweicloudsdkres.v1.Topic`
         """
         self._behavior_topic = behavior_topic
 

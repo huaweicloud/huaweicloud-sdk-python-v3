@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchAddDeviceToGroupRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class BatchAddDeviceToGroupRequestBody:
     }
 
     def __init__(self, resources=None):
-        """BatchAddDeviceToGroupRequestBody - a model defined in huaweicloud sdk"""
+        """BatchAddDeviceToGroupRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param resources: 设备ID列表，自动向下取整
+        :type resources: list[int]
+        """
         
         
 
@@ -57,7 +62,7 @@ class BatchAddDeviceToGroupRequestBody:
         设备ID列表，自动向下取整
 
         :param resources: The resources of this BatchAddDeviceToGroupRequestBody.
-        :type: list[int]
+        :type resources: list[int]
         """
         self._resources = resources
 

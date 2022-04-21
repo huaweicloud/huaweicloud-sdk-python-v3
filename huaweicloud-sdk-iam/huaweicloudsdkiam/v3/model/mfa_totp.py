@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MfaTotp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class MfaTotp:
     }
 
     def __init__(self, user=None):
-        """MfaTotp - a model defined in huaweicloud sdk"""
+        """MfaTotp
+
+        The model defined in huaweicloud sdk
+
+        :param user: 
+        :type user: :class:`huaweicloudsdkiam.v3.MfaTotpUser`
+        """
         
         
 
@@ -45,7 +50,7 @@ class MfaTotp:
 
 
         :return: The user of this MfaTotp.
-        :rtype: MfaTotpUser
+        :rtype: :class:`huaweicloudsdkiam.v3.MfaTotpUser`
         """
         return self._user
 
@@ -55,7 +60,7 @@ class MfaTotp:
 
 
         :param user: The user of this MfaTotp.
-        :type: MfaTotpUser
+        :type user: :class:`huaweicloudsdkiam.v3.MfaTotpUser`
         """
         self._user = user
 

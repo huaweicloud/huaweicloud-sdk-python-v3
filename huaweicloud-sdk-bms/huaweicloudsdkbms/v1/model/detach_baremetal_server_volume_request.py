@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DetachBaremetalServerVolumeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class DetachBaremetalServerVolumeRequest:
     }
 
     def __init__(self, server_id=None, attachment_id=None):
-        """DetachBaremetalServerVolumeRequest - a model defined in huaweicloud sdk"""
+        """DetachBaremetalServerVolumeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param server_id: 裸金属服务器ID
+        :type server_id: str
+        :param attachment_id: 裸金属服务器的云磁盘ID
+        :type attachment_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class DetachBaremetalServerVolumeRequest:
         裸金属服务器ID
 
         :param server_id: The server_id of this DetachBaremetalServerVolumeRequest.
-        :type: str
+        :type server_id: str
         """
         self._server_id = server_id
 
@@ -83,7 +90,7 @@ class DetachBaremetalServerVolumeRequest:
         裸金属服务器的云磁盘ID
 
         :param attachment_id: The attachment_id of this DetachBaremetalServerVolumeRequest.
-        :type: str
+        :type attachment_id: str
         """
         self._attachment_id = attachment_id
 

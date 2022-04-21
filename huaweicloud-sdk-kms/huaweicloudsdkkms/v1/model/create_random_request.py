@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateRandomRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateRandomRequest:
     }
 
     def __init__(self, version_id=None, body=None):
-        """CreateRandomRequest - a model defined in huaweicloud sdk"""
+        """CreateRandomRequest
+
+        The model defined in huaweicloud sdk
+
+        :param version_id: API版本号
+        :type version_id: str
+        :param body: Body of the CreateRandomRequest
+        :type body: :class:`huaweicloudsdkkms.v1.GenRandomRequestBody`
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateRandomRequest:
         API版本号
 
         :param version_id: The version_id of this CreateRandomRequest.
-        :type: str
+        :type version_id: str
         """
         self._version_id = version_id
 
@@ -72,7 +79,7 @@ class CreateRandomRequest:
 
 
         :return: The body of this CreateRandomRequest.
-        :rtype: GenRandomRequestBody
+        :rtype: :class:`huaweicloudsdkkms.v1.GenRandomRequestBody`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class CreateRandomRequest:
 
 
         :param body: The body of this CreateRandomRequest.
-        :type: GenRandomRequestBody
+        :type body: :class:`huaweicloudsdkkms.v1.GenRandomRequestBody`
         """
         self._body = body
 

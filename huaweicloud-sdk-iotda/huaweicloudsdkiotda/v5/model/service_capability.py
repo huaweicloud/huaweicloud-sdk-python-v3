@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ServiceCapability:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class ServiceCapability:
     }
 
     def __init__(self, service_id=None, service_type=None, properties=None, commands=None, events=None, description=None, option=None):
-        """ServiceCapability - a model defined in huaweicloud sdk"""
+        """ServiceCapability
+
+        The model defined in huaweicloud sdk
+
+        :param service_id: **参数说明**：设备的服务ID。注：产品内不允许重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-$等字符的组合。
+        :type service_id: str
+        :param service_type: **参数说明**：设备的服务类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-$等字符的组合。
+        :type service_type: str
+        :param properties: **参数说明**：设备服务支持的属性列表。 **取值范围**：数组长度大小不超过500。
+        :type properties: list[:class:`huaweicloudsdkiotda.v5.ServiceProperty`]
+        :param commands: **参数说明**：设备服务支持的命令列表。 **取值范围**：数组长度大小不超过500。
+        :type commands: list[:class:`huaweicloudsdkiotda.v5.ServiceCommand`]
+        :param events: **参数说明**：设备服务支持的事件列表。 **取值范围**：数组长度大小不超过500。
+        :type events: list[:class:`huaweicloudsdkiotda.v5.ServiceEvent`]
+        :param description: **参数说明**：设备服务的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?&#39;#().,;&amp;%@!- ，、：；。/等字符的组合。
+        :type description: str
+        :param option: **参数说明**：指定设备服务是否必选。目前本字段为非功能性字段，仅起到标识作用。 **取值范围**： - Master：主服务 - Mandatory：必选服务 - Optional：可选服务 默认值为Optional。
+        :type option: str
+        """
         
         
 
@@ -86,7 +103,7 @@ class ServiceCapability:
         **参数说明**：设备的服务ID。注：产品内不允许重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
 
         :param service_id: The service_id of this ServiceCapability.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 
@@ -108,7 +125,7 @@ class ServiceCapability:
         **参数说明**：设备的服务类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
 
         :param service_type: The service_type of this ServiceCapability.
-        :type: str
+        :type service_type: str
         """
         self._service_type = service_type
 
@@ -119,7 +136,7 @@ class ServiceCapability:
         **参数说明**：设备服务支持的属性列表。 **取值范围**：数组长度大小不超过500。
 
         :return: The properties of this ServiceCapability.
-        :rtype: list[ServiceProperty]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.ServiceProperty`]
         """
         return self._properties
 
@@ -130,7 +147,7 @@ class ServiceCapability:
         **参数说明**：设备服务支持的属性列表。 **取值范围**：数组长度大小不超过500。
 
         :param properties: The properties of this ServiceCapability.
-        :type: list[ServiceProperty]
+        :type properties: list[:class:`huaweicloudsdkiotda.v5.ServiceProperty`]
         """
         self._properties = properties
 
@@ -141,7 +158,7 @@ class ServiceCapability:
         **参数说明**：设备服务支持的命令列表。 **取值范围**：数组长度大小不超过500。
 
         :return: The commands of this ServiceCapability.
-        :rtype: list[ServiceCommand]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.ServiceCommand`]
         """
         return self._commands
 
@@ -152,7 +169,7 @@ class ServiceCapability:
         **参数说明**：设备服务支持的命令列表。 **取值范围**：数组长度大小不超过500。
 
         :param commands: The commands of this ServiceCapability.
-        :type: list[ServiceCommand]
+        :type commands: list[:class:`huaweicloudsdkiotda.v5.ServiceCommand`]
         """
         self._commands = commands
 
@@ -163,7 +180,7 @@ class ServiceCapability:
         **参数说明**：设备服务支持的事件列表。 **取值范围**：数组长度大小不超过500。
 
         :return: The events of this ServiceCapability.
-        :rtype: list[ServiceEvent]
+        :rtype: list[:class:`huaweicloudsdkiotda.v5.ServiceEvent`]
         """
         return self._events
 
@@ -174,7 +191,7 @@ class ServiceCapability:
         **参数说明**：设备服务支持的事件列表。 **取值范围**：数组长度大小不超过500。
 
         :param events: The events of this ServiceCapability.
-        :type: list[ServiceEvent]
+        :type events: list[:class:`huaweicloudsdkiotda.v5.ServiceEvent`]
         """
         self._events = events
 
@@ -196,7 +213,7 @@ class ServiceCapability:
         **参数说明**：设备服务的描述信息。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
         :param description: The description of this ServiceCapability.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -218,7 +235,7 @@ class ServiceCapability:
         **参数说明**：指定设备服务是否必选。目前本字段为非功能性字段，仅起到标识作用。 **取值范围**： - Master：主服务 - Mandatory：必选服务 - Optional：可选服务 默认值为Optional。
 
         :param option: The option of this ServiceCapability.
-        :type: str
+        :type option: str
         """
         self._option = option
 

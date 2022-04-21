@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IdpIdInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class IdpIdInfo:
     }
 
     def __init__(self, id=None):
-        """IdpIdInfo - a model defined in huaweicloud sdk"""
+        """IdpIdInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 身份提供商id。
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class IdpIdInfo:
         身份提供商id。
 
         :param id: The id of this IdpIdInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 

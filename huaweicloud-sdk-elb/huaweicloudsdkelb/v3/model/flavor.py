@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Flavor:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class Flavor:
     }
 
     def __init__(self, id=None, info=None, name=None, shared=None, project_id=None, type=None, flavor_sold_out=None):
-        """Flavor - a model defined in huaweicloud sdk"""
+        """Flavor
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规格ID。
+        :type id: str
+        :param info: 
+        :type info: :class:`huaweicloudsdkelb.v3.FlavorInfo`
+        :param name: 规格名称。
+        :type name: str
+        :param shared: 共享。
+        :type shared: bool
+        :param project_id: 项目ID。
+        :type project_id: str
+        :param type: L4和L7 分别表示四层和七层flavor。查询支持按type过滤。
+        :type type: str
+        :param flavor_sold_out: 是否售罄。
+        :type flavor_sold_out: bool
+        """
         
         
 
@@ -81,7 +98,7 @@ class Flavor:
         规格ID。
 
         :param id: The id of this Flavor.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -91,7 +108,7 @@ class Flavor:
 
 
         :return: The info of this Flavor.
-        :rtype: FlavorInfo
+        :rtype: :class:`huaweicloudsdkelb.v3.FlavorInfo`
         """
         return self._info
 
@@ -101,7 +118,7 @@ class Flavor:
 
 
         :param info: The info of this Flavor.
-        :type: FlavorInfo
+        :type info: :class:`huaweicloudsdkelb.v3.FlavorInfo`
         """
         self._info = info
 
@@ -123,7 +140,7 @@ class Flavor:
         规格名称。
 
         :param name: The name of this Flavor.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -145,7 +162,7 @@ class Flavor:
         共享。
 
         :param shared: The shared of this Flavor.
-        :type: bool
+        :type shared: bool
         """
         self._shared = shared
 
@@ -167,7 +184,7 @@ class Flavor:
         项目ID。
 
         :param project_id: The project_id of this Flavor.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -189,7 +206,7 @@ class Flavor:
         L4和L7 分别表示四层和七层flavor。查询支持按type过滤。
 
         :param type: The type of this Flavor.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -211,7 +228,7 @@ class Flavor:
         是否售罄。
 
         :param flavor_sold_out: The flavor_sold_out of this Flavor.
-        :type: bool
+        :type flavor_sold_out: bool
         """
         self._flavor_sold_out = flavor_sold_out
 

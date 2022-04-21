@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ThumbnailPara:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ThumbnailPara:
     }
 
     def __init__(self, type=None, time=None, start_time=None, duration=None, dots=None, output_filename=None, format=None, aspect_ratio=None, width=None, height=None, max_length=None):
-        """ThumbnailPara - a model defined in huaweicloud sdk"""
+        """ThumbnailPara
+
+        The model defined in huaweicloud sdk
+
+        :param type: 采样类型。  取值如下： - \&quot;TIME\&quot;：根据时间间隔采样截图。 - \&quot;DOTS\&quot;：指定时间点截图。选择同步截图时，需指定此类型。  默认值：\&quot;TIME\&quot; 
+        :type type: str
+        :param time: 采样截图的时间间隔值。  默认值：12。  单位：秒 
+        :type time: int
+        :param start_time: 采样类型为“TIME”模式的开始时间，和“time”配合使用。  默认值：0。  单位：秒。 
+        :type start_time: int
+        :param duration: 采样类型为“TIME”模式的持续时间，和“time”、“start_time”配合使用，表示从视频文件的第“start_time”开始，持续时间为“duration”，每间隔“time”生成一张截图。 取值范围：[数字，ToEND]。“ToEND”表示持续到视频结束。  默认值： ToEND。  单位：秒。 &gt; “duration”必须大于等0，若设置为0，则截图持续时间从“start_time”到视频结束。 
+        :type duration: int
+        :param dots: 指定时间截图时的时间点数组，最多支持10个。 
+        :type dots: list[int]
+        :param output_filename: 截图输出文件名。  - 如果只抽一张图（即：按DOTS方式，指定1个时间点）则按该指定文件名输出图片。  - 如果抽多张图（即：按DOTS方式指定多个时间点或按TIME间隔截图）则输出图片名在该指定文件名基础上在增加时间点（示例：output_filename_10.jpg）。  - 如果指定了压缩抽帧图片生成tar包，则tar包按该指定文件名输出。 
+        :type output_filename: str
+        :param format: 截图文件格式。  取值如下：  1：表示jpg格式 
+        :type format: int
+        :param aspect_ratio: 纵横比。 
+        :type aspect_ratio: int
+        :param width: 图片宽度  取值范围：(96,3840]  单位：px 
+        :type width: int
+        :param height: 图片高度  取值范围：(96,2160]  单位：px 
+        :type height: int
+        :param max_length: 截图最长边的尺寸。宽边尺寸按照该尺寸与原始视频像素等比缩放计算。   取值范围：[240,3840]  默认值：480  单位：像素  &gt; 该参数和width/height选择使用，以width/height优先，若width/height都不等于0，则图片尺寸按width/height得出；反之，则图片尺寸按 max_length 得出。  &gt; 若该参数和width/height都未选择，则按源片源宽高输出截图 
+        :type max_length: int
+        """
         
         
 
@@ -108,7 +133,7 @@ class ThumbnailPara:
         采样类型。  取值如下： - \"TIME\"：根据时间间隔采样截图。 - \"DOTS\"：指定时间点截图。选择同步截图时，需指定此类型。  默认值：\"TIME\" 
 
         :param type: The type of this ThumbnailPara.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -130,7 +155,7 @@ class ThumbnailPara:
         采样截图的时间间隔值。  默认值：12。  单位：秒 
 
         :param time: The time of this ThumbnailPara.
-        :type: int
+        :type time: int
         """
         self._time = time
 
@@ -152,7 +177,7 @@ class ThumbnailPara:
         采样类型为“TIME”模式的开始时间，和“time”配合使用。  默认值：0。  单位：秒。 
 
         :param start_time: The start_time of this ThumbnailPara.
-        :type: int
+        :type start_time: int
         """
         self._start_time = start_time
 
@@ -174,7 +199,7 @@ class ThumbnailPara:
         采样类型为“TIME”模式的持续时间，和“time”、“start_time”配合使用，表示从视频文件的第“start_time”开始，持续时间为“duration”，每间隔“time”生成一张截图。 取值范围：[数字，ToEND]。“ToEND”表示持续到视频结束。  默认值： ToEND。  单位：秒。 > “duration”必须大于等0，若设置为0，则截图持续时间从“start_time”到视频结束。 
 
         :param duration: The duration of this ThumbnailPara.
-        :type: int
+        :type duration: int
         """
         self._duration = duration
 
@@ -196,7 +221,7 @@ class ThumbnailPara:
         指定时间截图时的时间点数组，最多支持10个。 
 
         :param dots: The dots of this ThumbnailPara.
-        :type: list[int]
+        :type dots: list[int]
         """
         self._dots = dots
 
@@ -218,7 +243,7 @@ class ThumbnailPara:
         截图输出文件名。  - 如果只抽一张图（即：按DOTS方式，指定1个时间点）则按该指定文件名输出图片。  - 如果抽多张图（即：按DOTS方式指定多个时间点或按TIME间隔截图）则输出图片名在该指定文件名基础上在增加时间点（示例：output_filename_10.jpg）。  - 如果指定了压缩抽帧图片生成tar包，则tar包按该指定文件名输出。 
 
         :param output_filename: The output_filename of this ThumbnailPara.
-        :type: str
+        :type output_filename: str
         """
         self._output_filename = output_filename
 
@@ -240,7 +265,7 @@ class ThumbnailPara:
         截图文件格式。  取值如下：  1：表示jpg格式 
 
         :param format: The format of this ThumbnailPara.
-        :type: int
+        :type format: int
         """
         self._format = format
 
@@ -262,7 +287,7 @@ class ThumbnailPara:
         纵横比。 
 
         :param aspect_ratio: The aspect_ratio of this ThumbnailPara.
-        :type: int
+        :type aspect_ratio: int
         """
         self._aspect_ratio = aspect_ratio
 
@@ -284,7 +309,7 @@ class ThumbnailPara:
         图片宽度  取值范围：(96,3840]  单位：px 
 
         :param width: The width of this ThumbnailPara.
-        :type: int
+        :type width: int
         """
         self._width = width
 
@@ -306,7 +331,7 @@ class ThumbnailPara:
         图片高度  取值范围：(96,2160]  单位：px 
 
         :param height: The height of this ThumbnailPara.
-        :type: int
+        :type height: int
         """
         self._height = height
 
@@ -328,7 +353,7 @@ class ThumbnailPara:
         截图最长边的尺寸。宽边尺寸按照该尺寸与原始视频像素等比缩放计算。   取值范围：[240,3840]  默认值：480  单位：像素  > 该参数和width/height选择使用，以width/height优先，若width/height都不等于0，则图片尺寸按width/height得出；反之，则图片尺寸按 max_length 得出。  > 若该参数和width/height都未选择，则按源片源宽高输出截图 
 
         :param max_length: The max_length of this ThumbnailPara.
-        :type: int
+        :type max_length: int
         """
         self._max_length = max_length
 

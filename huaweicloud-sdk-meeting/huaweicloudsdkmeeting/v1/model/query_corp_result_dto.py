@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryCorpResultDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class QueryCorpResultDTO:
     }
 
     def __init__(self, basic_info=None, admin_info=None, res_info=None, group_dto=None, id=None):
-        """QueryCorpResultDTO - a model defined in huaweicloud sdk"""
+        """QueryCorpResultDTO
+
+        The model defined in huaweicloud sdk
+
+        :param basic_info: 
+        :type basic_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpBasicResultDTO`
+        :param admin_info: 
+        :type admin_info: :class:`huaweicloudsdkmeeting.v1.QueryAdminResultDTO`
+        :param res_info: 
+        :type res_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpResResultDTO`
+        :param group_dto: 
+        :type group_dto: :class:`huaweicloudsdkmeeting.v1.OrgGroupDTO`
+        :param id: 企业id
+        :type id: str
+        """
         
         
 
@@ -66,7 +79,7 @@ class QueryCorpResultDTO:
 
 
         :return: The basic_info of this QueryCorpResultDTO.
-        :rtype: QueryCorpBasicResultDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.QueryCorpBasicResultDTO`
         """
         return self._basic_info
 
@@ -76,7 +89,7 @@ class QueryCorpResultDTO:
 
 
         :param basic_info: The basic_info of this QueryCorpResultDTO.
-        :type: QueryCorpBasicResultDTO
+        :type basic_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpBasicResultDTO`
         """
         self._basic_info = basic_info
 
@@ -86,7 +99,7 @@ class QueryCorpResultDTO:
 
 
         :return: The admin_info of this QueryCorpResultDTO.
-        :rtype: QueryAdminResultDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.QueryAdminResultDTO`
         """
         return self._admin_info
 
@@ -96,7 +109,7 @@ class QueryCorpResultDTO:
 
 
         :param admin_info: The admin_info of this QueryCorpResultDTO.
-        :type: QueryAdminResultDTO
+        :type admin_info: :class:`huaweicloudsdkmeeting.v1.QueryAdminResultDTO`
         """
         self._admin_info = admin_info
 
@@ -106,7 +119,7 @@ class QueryCorpResultDTO:
 
 
         :return: The res_info of this QueryCorpResultDTO.
-        :rtype: QueryCorpResResultDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.QueryCorpResResultDTO`
         """
         return self._res_info
 
@@ -116,7 +129,7 @@ class QueryCorpResultDTO:
 
 
         :param res_info: The res_info of this QueryCorpResultDTO.
-        :type: QueryCorpResResultDTO
+        :type res_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpResResultDTO`
         """
         self._res_info = res_info
 
@@ -126,7 +139,7 @@ class QueryCorpResultDTO:
 
 
         :return: The group_dto of this QueryCorpResultDTO.
-        :rtype: OrgGroupDTO
+        :rtype: :class:`huaweicloudsdkmeeting.v1.OrgGroupDTO`
         """
         return self._group_dto
 
@@ -136,7 +149,7 @@ class QueryCorpResultDTO:
 
 
         :param group_dto: The group_dto of this QueryCorpResultDTO.
-        :type: OrgGroupDTO
+        :type group_dto: :class:`huaweicloudsdkmeeting.v1.OrgGroupDTO`
         """
         self._group_dto = group_dto
 
@@ -158,7 +171,7 @@ class QueryCorpResultDTO:
         企业id
 
         :param id: The id of this QueryCorpResultDTO.
-        :type: str
+        :type id: str
         """
         self._id = id
 

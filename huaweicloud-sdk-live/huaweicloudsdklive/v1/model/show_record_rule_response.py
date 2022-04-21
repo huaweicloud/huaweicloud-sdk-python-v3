@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRecordRuleResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ShowRecordRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, publish_domain=None, app=None, stream=None, record_type=None, default_record_config=None, create_time=None, update_time=None):
-        """ShowRecordRuleResponse - a model defined in huaweicloud sdk"""
+        """ShowRecordRuleResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 规则id，由服务端返回。创建或修改的时候不携带
+        :type id: str
+        :param publish_domain: 直播推流域名
+        :type publish_domain: str
+        :param app: 应用名，如果任意应用填写*。录制规则匹配的时候，优先精确app匹配，如果匹配不到，则匹配*
+        :type app: str
+        :param stream: 录制的流名，如果任意流名则填写*。录制规则匹配的时候，优先精确stream匹配，如果匹配不到，则匹配*
+        :type stream: str
+        :param record_type: 录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD, ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD: 持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD: 命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。命令控制的接口参考/v1/{project_id}/record/control - PLAN_RECORD: 计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD: 按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。租户提供的接口定义参考：/customer-record-ondemand-url 
+        :type record_type: str
+        :param default_record_config: 
+        :type default_record_config: :class:`huaweicloudsdklive.v1.DefaultRecordConfig`
+        :param create_time: 创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
+        :type create_time: date
+        :param update_time: 修改时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
+        :type update_time: date
+        """
         
         super(ShowRecordRuleResponse, self).__init__()
 
@@ -93,7 +112,7 @@ class ShowRecordRuleResponse(SdkResponse):
         规则id，由服务端返回。创建或修改的时候不携带
 
         :param id: The id of this ShowRecordRuleResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -115,7 +134,7 @@ class ShowRecordRuleResponse(SdkResponse):
         直播推流域名
 
         :param publish_domain: The publish_domain of this ShowRecordRuleResponse.
-        :type: str
+        :type publish_domain: str
         """
         self._publish_domain = publish_domain
 
@@ -137,7 +156,7 @@ class ShowRecordRuleResponse(SdkResponse):
         应用名，如果任意应用填写*。录制规则匹配的时候，优先精确app匹配，如果匹配不到，则匹配*
 
         :param app: The app of this ShowRecordRuleResponse.
-        :type: str
+        :type app: str
         """
         self._app = app
 
@@ -159,7 +178,7 @@ class ShowRecordRuleResponse(SdkResponse):
         录制的流名，如果任意流名则填写*。录制规则匹配的时候，优先精确stream匹配，如果匹配不到，则匹配*
 
         :param stream: The stream of this ShowRecordRuleResponse.
-        :type: str
+        :type stream: str
         """
         self._stream = stream
 
@@ -181,7 +200,7 @@ class ShowRecordRuleResponse(SdkResponse):
         录制类型，包括：CONTINUOUS_RECORD，COMMAND_RECORD，PLAN_RECORD, ON_DEMAND_RECORD。默认CONTINUOUS_RECORD。 - CONTINUOUS_RECORD: 持续录制，在该规则类型配置后，只要有流到推送到录制系统，就触发录制。 - COMMAND_RECORD: 命令录制，在该规则类型配置后，在流推送到录制系统后，租户需要通过命令控制该流的录制开始和结束。命令控制的接口参考/v1/{project_id}/record/control - PLAN_RECORD: 计划录制，在该规则类型配置后，推的流如果在计划录制的时间区间则触发录制。 - ON_DEMAND_RECORD: 按需录制，在该规则类型配置后，录制系统收到推流后，需要调用租户提供的接口查询录制规则，并根据规则录制。租户提供的接口定义参考：/customer-record-ondemand-url 
 
         :param record_type: The record_type of this ShowRecordRuleResponse.
-        :type: str
+        :type record_type: str
         """
         self._record_type = record_type
 
@@ -191,7 +210,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
 
         :return: The default_record_config of this ShowRecordRuleResponse.
-        :rtype: DefaultRecordConfig
+        :rtype: :class:`huaweicloudsdklive.v1.DefaultRecordConfig`
         """
         return self._default_record_config
 
@@ -201,7 +220,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
 
         :param default_record_config: The default_record_config of this ShowRecordRuleResponse.
-        :type: DefaultRecordConfig
+        :type default_record_config: :class:`huaweicloudsdklive.v1.DefaultRecordConfig`
         """
         self._default_record_config = default_record_config
 
@@ -223,7 +242,7 @@ class ShowRecordRuleResponse(SdkResponse):
         创建时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
 
         :param create_time: The create_time of this ShowRecordRuleResponse.
-        :type: date
+        :type create_time: date
         """
         self._create_time = create_time
 
@@ -245,7 +264,7 @@ class ShowRecordRuleResponse(SdkResponse):
         修改时间，格式：yyyy-mm-ddThh:mm:ssZ，UTC时间。 在查询的时候返回
 
         :param update_time: The update_time of this ShowRecordRuleResponse.
-        :type: date
+        :type update_time: date
         """
         self._update_time = update_time
 

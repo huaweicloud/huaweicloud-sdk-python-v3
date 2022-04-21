@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TranscriberConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class TranscriberConfig:
     }
 
     def __init__(self, audio_format=None, _property=None, add_punc=None, need_analysis_info=None, vocabulary_id=None, digit_norm=None, callback_url=None, need_word_info=None):
-        """TranscriberConfig - a model defined in huaweicloud sdk"""
+        """TranscriberConfig
+
+        The model defined in huaweicloud sdk
+
+        :param audio_format: 支持语音的格式。  audioformat取值范围:  auto  自动判断，系统会自动判断并支持WAV（内部支持pcm/ulaw/alaw/adpcm编码格式）、MP3、M4A、ogg-speex、ogg-opus、AMR、wma等格式，相应的文件后缀名为.wav, .mp3, .m4a, .spx, .opus, .amr 和.wma, 不区分大小写。支持双声道的音频。  pcm16k16bit  16k16bit裸音频录音数据。  pcm8k16bit   8k16bit裸音频录音数据。  ulaw16k8bit  16k8bit ulaw 裸音频录音数据。  ulaw8k8bit   8k8bit ulaw 裸音频录音数据。  alaw16k8bit  16k8bit alaw 裸音频录音数据。  alaw8k8bit   8k8bit alaw 裸音频录音数据。  vox8k4bit    8k4bit vox 裸音频录音数据。  v3_8k4bit    8k4bit v3 裸音频录音数据。
+        :type audio_format: str
+        :param _property: 所使用的模型特征串。通常是“语种_采样率_领域”的形式，例如chinese_8k_common。  采样率需要与音频采样率保持一致。  当前支持如下模型特征串：  chinese_8k_common  chinese_16k_conversation  chinese_8k_bank（银行领域，区域仅支持cn-north-4）  chinese_8k_insurance（保险领域，区域仅支持cn-north-4） 
+        :type _property: str
+        :param add_punc: 是否加标点， 可以为 yes, no(缺省)。
+        :type add_punc: str
+        :param need_analysis_info: 
+        :type need_analysis_info: :class:`huaweicloudsdksis.v1.AnalysisInfo`
+        :param vocabulary_id: 热词表id，不使用则不填写。
+        :type vocabulary_id: str
+        :param digit_norm: 表示是否将语音中的数字识别为阿拉伯数字，取值为yes 、 no，缺省为yes。
+        :type digit_norm: str
+        :param callback_url: 用于录音文件识表示回调 url，即用户用于接收识别结果的服务器地址，不支持IP地址方式调用，url长度小于2048字节。服务请求方法为POST。  如果用户使用回调方式获取识别结果，需填写该参数，处理成功后用户服务器需返回状态码“200”。  如果用户使用轮询方式获取识别结果，则无需填写该参数。别结果的回调url，不使用则不填写。
+        :type callback_url: str
+        :param need_word_info: 表示是否在识别结果中输出分词结果信息，取值为“yes”和“no”，默认为“no”。
+        :type need_word_info: str
+        """
         
         
 
@@ -92,7 +111,7 @@ class TranscriberConfig:
         支持语音的格式。  audioformat取值范围:  auto  自动判断，系统会自动判断并支持WAV（内部支持pcm/ulaw/alaw/adpcm编码格式）、MP3、M4A、ogg-speex、ogg-opus、AMR、wma等格式，相应的文件后缀名为.wav, .mp3, .m4a, .spx, .opus, .amr 和.wma, 不区分大小写。支持双声道的音频。  pcm16k16bit  16k16bit裸音频录音数据。  pcm8k16bit   8k16bit裸音频录音数据。  ulaw16k8bit  16k8bit ulaw 裸音频录音数据。  ulaw8k8bit   8k8bit ulaw 裸音频录音数据。  alaw16k8bit  16k8bit alaw 裸音频录音数据。  alaw8k8bit   8k8bit alaw 裸音频录音数据。  vox8k4bit    8k4bit vox 裸音频录音数据。  v3_8k4bit    8k4bit v3 裸音频录音数据。
 
         :param audio_format: The audio_format of this TranscriberConfig.
-        :type: str
+        :type audio_format: str
         """
         self._audio_format = audio_format
 
@@ -114,7 +133,7 @@ class TranscriberConfig:
         所使用的模型特征串。通常是“语种_采样率_领域”的形式，例如chinese_8k_common。  采样率需要与音频采样率保持一致。  当前支持如下模型特征串：  chinese_8k_common  chinese_16k_conversation  chinese_8k_bank（银行领域，区域仅支持cn-north-4）  chinese_8k_insurance（保险领域，区域仅支持cn-north-4） 
 
         :param _property: The _property of this TranscriberConfig.
-        :type: str
+        :type _property: str
         """
         self.__property = _property
 
@@ -136,7 +155,7 @@ class TranscriberConfig:
         是否加标点， 可以为 yes, no(缺省)。
 
         :param add_punc: The add_punc of this TranscriberConfig.
-        :type: str
+        :type add_punc: str
         """
         self._add_punc = add_punc
 
@@ -146,7 +165,7 @@ class TranscriberConfig:
 
 
         :return: The need_analysis_info of this TranscriberConfig.
-        :rtype: AnalysisInfo
+        :rtype: :class:`huaweicloudsdksis.v1.AnalysisInfo`
         """
         return self._need_analysis_info
 
@@ -156,7 +175,7 @@ class TranscriberConfig:
 
 
         :param need_analysis_info: The need_analysis_info of this TranscriberConfig.
-        :type: AnalysisInfo
+        :type need_analysis_info: :class:`huaweicloudsdksis.v1.AnalysisInfo`
         """
         self._need_analysis_info = need_analysis_info
 
@@ -178,7 +197,7 @@ class TranscriberConfig:
         热词表id，不使用则不填写。
 
         :param vocabulary_id: The vocabulary_id of this TranscriberConfig.
-        :type: str
+        :type vocabulary_id: str
         """
         self._vocabulary_id = vocabulary_id
 
@@ -200,7 +219,7 @@ class TranscriberConfig:
         表示是否将语音中的数字识别为阿拉伯数字，取值为yes 、 no，缺省为yes。
 
         :param digit_norm: The digit_norm of this TranscriberConfig.
-        :type: str
+        :type digit_norm: str
         """
         self._digit_norm = digit_norm
 
@@ -222,7 +241,7 @@ class TranscriberConfig:
         用于录音文件识表示回调 url，即用户用于接收识别结果的服务器地址，不支持IP地址方式调用，url长度小于2048字节。服务请求方法为POST。  如果用户使用回调方式获取识别结果，需填写该参数，处理成功后用户服务器需返回状态码“200”。  如果用户使用轮询方式获取识别结果，则无需填写该参数。别结果的回调url，不使用则不填写。
 
         :param callback_url: The callback_url of this TranscriberConfig.
-        :type: str
+        :type callback_url: str
         """
         self._callback_url = callback_url
 
@@ -244,7 +263,7 @@ class TranscriberConfig:
         表示是否在识别结果中输出分词结果信息，取值为“yes”和“no”，默认为“no”。
 
         :param need_word_info: The need_word_info of this TranscriberConfig.
-        :type: str
+        :type need_word_info: str
         """
         self._need_word_info = need_word_info
 

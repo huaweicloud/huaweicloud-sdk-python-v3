@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScalingConfiguration:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ScalingConfiguration:
     }
 
     def __init__(self, scaling_configuration_id=None, tenant=None, scaling_configuration_name=None, instance_config=None, create_time=None, scaling_group_id=None):
-        """ScalingConfiguration - a model defined in huaweicloud sdk"""
+        """ScalingConfiguration
+
+        The model defined in huaweicloud sdk
+
+        :param scaling_configuration_id: 伸缩配置ID，全局唯一。
+        :type scaling_configuration_id: str
+        :param tenant: 租户ID。
+        :type tenant: str
+        :param scaling_configuration_name: 伸缩配置名称。
+        :type scaling_configuration_name: str
+        :param instance_config: 
+        :type instance_config: :class:`huaweicloudsdkas.v1.InstanceConfigResult`
+        :param create_time: 创建伸缩配置的时间，遵循UTC时间。
+        :type create_time: datetime
+        :param scaling_group_id: 绑定该伸缩配置的伸缩组ID
+        :type scaling_group_id: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class ScalingConfiguration:
         伸缩配置ID，全局唯一。
 
         :param scaling_configuration_id: The scaling_configuration_id of this ScalingConfiguration.
-        :type: str
+        :type scaling_configuration_id: str
         """
         self._scaling_configuration_id = scaling_configuration_id
 
@@ -105,7 +120,7 @@ class ScalingConfiguration:
         租户ID。
 
         :param tenant: The tenant of this ScalingConfiguration.
-        :type: str
+        :type tenant: str
         """
         self._tenant = tenant
 
@@ -127,7 +142,7 @@ class ScalingConfiguration:
         伸缩配置名称。
 
         :param scaling_configuration_name: The scaling_configuration_name of this ScalingConfiguration.
-        :type: str
+        :type scaling_configuration_name: str
         """
         self._scaling_configuration_name = scaling_configuration_name
 
@@ -137,7 +152,7 @@ class ScalingConfiguration:
 
 
         :return: The instance_config of this ScalingConfiguration.
-        :rtype: InstanceConfigResult
+        :rtype: :class:`huaweicloudsdkas.v1.InstanceConfigResult`
         """
         return self._instance_config
 
@@ -147,7 +162,7 @@ class ScalingConfiguration:
 
 
         :param instance_config: The instance_config of this ScalingConfiguration.
-        :type: InstanceConfigResult
+        :type instance_config: :class:`huaweicloudsdkas.v1.InstanceConfigResult`
         """
         self._instance_config = instance_config
 
@@ -169,7 +184,7 @@ class ScalingConfiguration:
         创建伸缩配置的时间，遵循UTC时间。
 
         :param create_time: The create_time of this ScalingConfiguration.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -191,7 +206,7 @@ class ScalingConfiguration:
         绑定该伸缩配置的伸缩组ID
 
         :param scaling_group_id: The scaling_group_id of this ScalingConfiguration.
-        :type: str
+        :type scaling_group_id: str
         """
         self._scaling_group_id = scaling_group_id
 

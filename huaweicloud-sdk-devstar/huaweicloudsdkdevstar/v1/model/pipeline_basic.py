@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PipelineBasic:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class PipelineBasic:
     }
 
     def __init__(self, uuid=None, id=None, name=None, url=None, last_running_status=None):
-        """PipelineBasic - a model defined in huaweicloud sdk"""
+        """PipelineBasic
+
+        The model defined in huaweicloud sdk
+
+        :param uuid: DevStar系统生成的流水线UUID
+        :type uuid: str
+        :param id: CloudPipeline系统对应流水线ID
+        :type id: str
+        :param name: 流水线名称
+        :type name: str
+        :param url: 流水线地址
+        :type url: str
+        :param last_running_status: 流水线最后一次运行状态,success:成功,failed:失败,running:运行中
+        :type last_running_status: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class PipelineBasic:
         DevStar系统生成的流水线UUID
 
         :param uuid: The uuid of this PipelineBasic.
-        :type: str
+        :type uuid: str
         """
         self._uuid = uuid
 
@@ -100,7 +113,7 @@ class PipelineBasic:
         CloudPipeline系统对应流水线ID
 
         :param id: The id of this PipelineBasic.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -122,7 +135,7 @@ class PipelineBasic:
         流水线名称
 
         :param name: The name of this PipelineBasic.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -144,7 +157,7 @@ class PipelineBasic:
         流水线地址
 
         :param url: The url of this PipelineBasic.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -166,7 +179,7 @@ class PipelineBasic:
         流水线最后一次运行状态,success:成功,failed:失败,running:运行中
 
         :param last_running_status: The last_running_status of this PipelineBasic.
-        :type: str
+        :type last_running_status: str
         """
         self._last_running_status = last_running_status
 

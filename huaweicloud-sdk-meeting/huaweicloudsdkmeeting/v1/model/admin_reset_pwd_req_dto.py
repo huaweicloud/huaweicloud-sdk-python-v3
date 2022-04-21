@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AdminResetPwdReqDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AdminResetPwdReqDTO:
     }
 
     def __init__(self, account=None):
-        """AdminResetPwdReqDTO - a model defined in huaweicloud sdk"""
+        """AdminResetPwdReqDTO
+
+        The model defined in huaweicloud sdk
+
+        :param account: 被修改密码的用户账号 maxLength：255 minLength：1 
+        :type account: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class AdminResetPwdReqDTO:
         被修改密码的用户账号 maxLength：255 minLength：1 
 
         :param account: The account of this AdminResetPwdReqDTO.
-        :type: str
+        :type account: str
         """
         self._account = account
 

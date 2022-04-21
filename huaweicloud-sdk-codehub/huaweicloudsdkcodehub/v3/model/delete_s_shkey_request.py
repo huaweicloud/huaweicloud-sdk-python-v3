@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteSShkeyRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeleteSShkeyRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteSShkeyRequest - a model defined in huaweicloud sdk"""
+        """DeleteSShkeyRequest
+
+        The model defined in huaweicloud sdk
+
+        :param id: sshKey的id
+        :type id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeleteSShkeyRequest:
         sshKey的id
 
         :param id: The id of this DeleteSShkeyRequest.
-        :type: str
+        :type id: str
         """
         self._id = id
 

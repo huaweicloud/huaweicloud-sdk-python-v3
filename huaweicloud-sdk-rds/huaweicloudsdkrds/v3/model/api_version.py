@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ApiVersion:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ApiVersion:
     }
 
     def __init__(self, id=None, links=None, status=None, updated=None):
-        """ApiVersion - a model defined in huaweicloud sdk"""
+        """ApiVersion
+
+        The model defined in huaweicloud sdk
+
+        :param id: API版本号，如v1、v3。
+        :type id: str
+        :param links: 对应API的链接信息，v1、v3版本该字段为空。
+        :type links: list[:class:`huaweicloudsdkrds.v3.LinksInfoResponse`]
+        :param status: 版本状态。 取值“CURRENT”，表示该版本为主推版本。 取值“DEPRECATED”，表示为废弃版本，存在后续删除的可能。
+        :type status: str
+        :param updated: 版本更新时间。 格式为“yyyy-mm-dd Thh:mm:ssZ”。 其中，T指某个时间的开始；Z指UTC时间。
+        :type updated: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ApiVersion:
         API版本号，如v1、v3。
 
         :param id: The id of this ApiVersion.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -80,7 +91,7 @@ class ApiVersion:
         对应API的链接信息，v1、v3版本该字段为空。
 
         :return: The links of this ApiVersion.
-        :rtype: list[LinksInfoResponse]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.LinksInfoResponse`]
         """
         return self._links
 
@@ -91,7 +102,7 @@ class ApiVersion:
         对应API的链接信息，v1、v3版本该字段为空。
 
         :param links: The links of this ApiVersion.
-        :type: list[LinksInfoResponse]
+        :type links: list[:class:`huaweicloudsdkrds.v3.LinksInfoResponse`]
         """
         self._links = links
 
@@ -113,7 +124,7 @@ class ApiVersion:
         版本状态。 取值“CURRENT”，表示该版本为主推版本。 取值“DEPRECATED”，表示为废弃版本，存在后续删除的可能。
 
         :param status: The status of this ApiVersion.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -135,7 +146,7 @@ class ApiVersion:
         版本更新时间。 格式为“yyyy-mm-dd Thh:mm:ssZ”。 其中，T指某个时间的开始；Z指UTC时间。
 
         :param updated: The updated of this ApiVersion.
-        :type: str
+        :type updated: str
         """
         self._updated = updated
 

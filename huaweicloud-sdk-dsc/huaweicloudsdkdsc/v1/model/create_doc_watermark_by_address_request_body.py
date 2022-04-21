@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateDocWatermarkByAddressRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -56,7 +55,39 @@ class CreateDocWatermarkByAddressRequestBody:
     }
 
     def __init__(self, region_id=None, src_file=None, doc_type=None, dst_file=None, blind_watermark=None, visible_watermark=None, image_mark=None, visible_type=None, file_password=None, marked_file_password=None, readonly_password=None, front=None, rotation=None, opacity=None):
-        """CreateDocWatermarkByAddressRequestBody - a model defined in huaweicloud sdk"""
+        """CreateDocWatermarkByAddressRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param region_id: 项目所在region的id，如北京一为：cn-north-1。
+        :type region_id: str
+        :param src_file: 待添加水印的文档地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
+        :type src_file: str
+        :param doc_type: 待嵌入水印的文档类型。
+        :type doc_type: str
+        :param dst_file: 添加水印后的文档存放地址，格式和要求同src_file字段，不设置时，默认取src_file的值，即添加水印后覆盖原文件。
+        :type dst_file: str
+        :param blind_watermark: 暗文字水印内容，与“visible_watermark”字段至少有一个不为空
+        :type blind_watermark: str
+        :param visible_watermark: 明文字水印内容，与暗水印“blind_watermark”字段至少有一个不为空。
+        :type visible_watermark: str
+        :param image_mark: 待嵌入的图形明水印文件的地址, 字段格式要求同src_file字段，图形文件的格式必须为“png”或“jpg”，否则返回参数错误；图像文件大小不超过1MB
+        :type image_mark: str
+        :param visible_type: 该字段控制明水印嵌入文字还是图片。默认为**TEXT**类型，需填写visible_watermark字段设置明文字水印； 当该字段为**IMAGE**时，需填写image_watermark字段设置水印图片地址此时 ，“visible_watermark”，“font_size”，“rotation”和“opacity”字段无效。
+        :type visible_type: str
+        :param file_password: 待加水印文件有密码时，读取文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
+        :type file_password: str
+        :param marked_file_password: 添加水印后给文件设置密码， 最大支持长度256。默认不加文档密码。
+        :type marked_file_password: str
+        :param readonly_password: 添加水印后给文件设置只读密码， 最大支持长度256。默认不加只读密码。
+        :type readonly_password: str
+        :param front: 明水印字体大小，取值为[1,100]，默认值50
+        :type front: int
+        :param rotation: 明水印旋转角度，逆时针方向，取值为[0,90]，默认值45。
+        :type rotation: int
+        :param opacity: 明水印的透明度，取值[0,1]，默认值为0.3；
+        :type opacity: float
+        """
         
         
 
@@ -120,7 +151,7 @@ class CreateDocWatermarkByAddressRequestBody:
         项目所在region的id，如北京一为：cn-north-1。
 
         :param region_id: The region_id of this CreateDocWatermarkByAddressRequestBody.
-        :type: str
+        :type region_id: str
         """
         self._region_id = region_id
 
@@ -142,7 +173,7 @@ class CreateDocWatermarkByAddressRequestBody:
         待添加水印的文档地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
 
         :param src_file: The src_file of this CreateDocWatermarkByAddressRequestBody.
-        :type: str
+        :type src_file: str
         """
         self._src_file = src_file
 
@@ -164,7 +195,7 @@ class CreateDocWatermarkByAddressRequestBody:
         待嵌入水印的文档类型。
 
         :param doc_type: The doc_type of this CreateDocWatermarkByAddressRequestBody.
-        :type: str
+        :type doc_type: str
         """
         self._doc_type = doc_type
 
@@ -186,7 +217,7 @@ class CreateDocWatermarkByAddressRequestBody:
         添加水印后的文档存放地址，格式和要求同src_file字段，不设置时，默认取src_file的值，即添加水印后覆盖原文件。
 
         :param dst_file: The dst_file of this CreateDocWatermarkByAddressRequestBody.
-        :type: str
+        :type dst_file: str
         """
         self._dst_file = dst_file
 
@@ -208,7 +239,7 @@ class CreateDocWatermarkByAddressRequestBody:
         暗文字水印内容，与“visible_watermark”字段至少有一个不为空
 
         :param blind_watermark: The blind_watermark of this CreateDocWatermarkByAddressRequestBody.
-        :type: str
+        :type blind_watermark: str
         """
         self._blind_watermark = blind_watermark
 
@@ -230,7 +261,7 @@ class CreateDocWatermarkByAddressRequestBody:
         明文字水印内容，与暗水印“blind_watermark”字段至少有一个不为空。
 
         :param visible_watermark: The visible_watermark of this CreateDocWatermarkByAddressRequestBody.
-        :type: str
+        :type visible_watermark: str
         """
         self._visible_watermark = visible_watermark
 
@@ -252,7 +283,7 @@ class CreateDocWatermarkByAddressRequestBody:
         待嵌入的图形明水印文件的地址, 字段格式要求同src_file字段，图形文件的格式必须为“png”或“jpg”，否则返回参数错误；图像文件大小不超过1MB
 
         :param image_mark: The image_mark of this CreateDocWatermarkByAddressRequestBody.
-        :type: str
+        :type image_mark: str
         """
         self._image_mark = image_mark
 
@@ -274,7 +305,7 @@ class CreateDocWatermarkByAddressRequestBody:
         该字段控制明水印嵌入文字还是图片。默认为**TEXT**类型，需填写visible_watermark字段设置明文字水印； 当该字段为**IMAGE**时，需填写image_watermark字段设置水印图片地址此时 ，“visible_watermark”，“font_size”，“rotation”和“opacity”字段无效。
 
         :param visible_type: The visible_type of this CreateDocWatermarkByAddressRequestBody.
-        :type: str
+        :type visible_type: str
         """
         self._visible_type = visible_type
 
@@ -296,7 +327,7 @@ class CreateDocWatermarkByAddressRequestBody:
         待加水印文件有密码时，读取文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
 
         :param file_password: The file_password of this CreateDocWatermarkByAddressRequestBody.
-        :type: str
+        :type file_password: str
         """
         self._file_password = file_password
 
@@ -318,7 +349,7 @@ class CreateDocWatermarkByAddressRequestBody:
         添加水印后给文件设置密码， 最大支持长度256。默认不加文档密码。
 
         :param marked_file_password: The marked_file_password of this CreateDocWatermarkByAddressRequestBody.
-        :type: str
+        :type marked_file_password: str
         """
         self._marked_file_password = marked_file_password
 
@@ -340,7 +371,7 @@ class CreateDocWatermarkByAddressRequestBody:
         添加水印后给文件设置只读密码， 最大支持长度256。默认不加只读密码。
 
         :param readonly_password: The readonly_password of this CreateDocWatermarkByAddressRequestBody.
-        :type: str
+        :type readonly_password: str
         """
         self._readonly_password = readonly_password
 
@@ -362,7 +393,7 @@ class CreateDocWatermarkByAddressRequestBody:
         明水印字体大小，取值为[1,100]，默认值50
 
         :param front: The front of this CreateDocWatermarkByAddressRequestBody.
-        :type: int
+        :type front: int
         """
         self._front = front
 
@@ -384,7 +415,7 @@ class CreateDocWatermarkByAddressRequestBody:
         明水印旋转角度，逆时针方向，取值为[0,90]，默认值45。
 
         :param rotation: The rotation of this CreateDocWatermarkByAddressRequestBody.
-        :type: int
+        :type rotation: int
         """
         self._rotation = rotation
 
@@ -406,7 +437,7 @@ class CreateDocWatermarkByAddressRequestBody:
         明水印的透明度，取值[0,1]，默认值为0.3；
 
         :param opacity: The opacity of this CreateDocWatermarkByAddressRequestBody.
-        :type: float
+        :type opacity: float
         """
         self._opacity = opacity
 

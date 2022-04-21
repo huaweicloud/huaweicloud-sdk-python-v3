@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListVpcsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListVpcsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, vpcs=None, page_info=None):
-        """ListVpcsResponse - a model defined in huaweicloud sdk"""
+        """ListVpcsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID
+        :type request_id: str
+        :param vpcs: VPC列表响应体
+        :type vpcs: list[:class:`huaweicloudsdkvpc.v3.Vpc`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`
+        """
         
         super(ListVpcsResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListVpcsResponse(SdkResponse):
         请求ID
 
         :param request_id: The request_id of this ListVpcsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -79,7 +88,7 @@ class ListVpcsResponse(SdkResponse):
         VPC列表响应体
 
         :return: The vpcs of this ListVpcsResponse.
-        :rtype: list[Vpc]
+        :rtype: list[:class:`huaweicloudsdkvpc.v3.Vpc`]
         """
         return self._vpcs
 
@@ -90,7 +99,7 @@ class ListVpcsResponse(SdkResponse):
         VPC列表响应体
 
         :param vpcs: The vpcs of this ListVpcsResponse.
-        :type: list[Vpc]
+        :type vpcs: list[:class:`huaweicloudsdkvpc.v3.Vpc`]
         """
         self._vpcs = vpcs
 
@@ -100,7 +109,7 @@ class ListVpcsResponse(SdkResponse):
 
 
         :return: The page_info of this ListVpcsResponse.
-        :rtype: PageInfo
+        :rtype: :class:`huaweicloudsdkvpc.v3.PageInfo`
         """
         return self._page_info
 
@@ -110,7 +119,7 @@ class ListVpcsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListVpcsResponse.
-        :type: PageInfo
+        :type page_info: :class:`huaweicloudsdkvpc.v3.PageInfo`
         """
         self._page_info = page_info
 

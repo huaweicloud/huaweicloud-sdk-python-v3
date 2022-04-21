@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricRequestV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MetricRequestV2:
     }
 
     def __init__(self, date_range=None, metric_type=None, dividend=None, divisor=None):
-        """MetricRequestV2 - a model defined in huaweicloud sdk"""
+        """MetricRequestV2
+
+        The model defined in huaweicloud sdk
+
+        :param date_range: 统计周期
+        :type date_range: str
+        :param metric_type: 指标类型
+        :type metric_type: str
+        :param dividend: 
+        :type dividend: :class:`huaweicloudsdkprojectman.v4.MetricRequestV2Dividend`
+        :param divisor: 指标分母过滤条件
+        :type divisor: object
+        """
         
         
 
@@ -73,7 +84,7 @@ class MetricRequestV2:
         统计周期
 
         :param date_range: The date_range of this MetricRequestV2.
-        :type: str
+        :type date_range: str
         """
         self._date_range = date_range
 
@@ -95,7 +106,7 @@ class MetricRequestV2:
         指标类型
 
         :param metric_type: The metric_type of this MetricRequestV2.
-        :type: str
+        :type metric_type: str
         """
         self._metric_type = metric_type
 
@@ -105,7 +116,7 @@ class MetricRequestV2:
 
 
         :return: The dividend of this MetricRequestV2.
-        :rtype: MetricRequestV2Dividend
+        :rtype: :class:`huaweicloudsdkprojectman.v4.MetricRequestV2Dividend`
         """
         return self._dividend
 
@@ -115,7 +126,7 @@ class MetricRequestV2:
 
 
         :param dividend: The dividend of this MetricRequestV2.
-        :type: MetricRequestV2Dividend
+        :type dividend: :class:`huaweicloudsdkprojectman.v4.MetricRequestV2Dividend`
         """
         self._dividend = dividend
 
@@ -137,7 +148,7 @@ class MetricRequestV2:
         指标分母过滤条件
 
         :param divisor: The divisor of this MetricRequestV2.
-        :type: object
+        :type divisor: object
         """
         self._divisor = divisor
 

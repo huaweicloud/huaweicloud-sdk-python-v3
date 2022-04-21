@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ItineraryList:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ItineraryList:
     }
 
     def __init__(self, departure_station=None, destination_station=None, carrier=None, flight=None, cabin_class=None, date=None, time=None, fare_basis=None, effective_date=None, expiry_date=None, baggage_allowance=None):
-        """ItineraryList - a model defined in huaweicloud sdk"""
+        """ItineraryList
+
+        The model defined in huaweicloud sdk
+
+        :param departure_station: 始发站。 
+        :type departure_station: str
+        :param destination_station: 目的站。 
+        :type destination_station: str
+        :param carrier: 承运人。 
+        :type carrier: str
+        :param flight: 航班号。 
+        :type flight: str
+        :param cabin_class: 座位等级。 
+        :type cabin_class: str
+        :param date: 日期。 
+        :type date: str
+        :param time: 时间。 
+        :type time: str
+        :param fare_basis: 客票类别。 
+        :type fare_basis: str
+        :param effective_date: 客票生效日期。 
+        :type effective_date: str
+        :param expiry_date: 有效截止日期。 
+        :type expiry_date: str
+        :param baggage_allowance: 免费行李。 
+        :type baggage_allowance: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class ItineraryList:
         始发站。 
 
         :param departure_station: The departure_station of this ItineraryList.
-        :type: str
+        :type departure_station: str
         """
         self._departure_station = departure_station
 
@@ -130,7 +155,7 @@ class ItineraryList:
         目的站。 
 
         :param destination_station: The destination_station of this ItineraryList.
-        :type: str
+        :type destination_station: str
         """
         self._destination_station = destination_station
 
@@ -152,7 +177,7 @@ class ItineraryList:
         承运人。 
 
         :param carrier: The carrier of this ItineraryList.
-        :type: str
+        :type carrier: str
         """
         self._carrier = carrier
 
@@ -174,7 +199,7 @@ class ItineraryList:
         航班号。 
 
         :param flight: The flight of this ItineraryList.
-        :type: str
+        :type flight: str
         """
         self._flight = flight
 
@@ -196,7 +221,7 @@ class ItineraryList:
         座位等级。 
 
         :param cabin_class: The cabin_class of this ItineraryList.
-        :type: str
+        :type cabin_class: str
         """
         self._cabin_class = cabin_class
 
@@ -218,7 +243,7 @@ class ItineraryList:
         日期。 
 
         :param date: The date of this ItineraryList.
-        :type: str
+        :type date: str
         """
         self._date = date
 
@@ -240,7 +265,7 @@ class ItineraryList:
         时间。 
 
         :param time: The time of this ItineraryList.
-        :type: str
+        :type time: str
         """
         self._time = time
 
@@ -262,7 +287,7 @@ class ItineraryList:
         客票类别。 
 
         :param fare_basis: The fare_basis of this ItineraryList.
-        :type: str
+        :type fare_basis: str
         """
         self._fare_basis = fare_basis
 
@@ -284,7 +309,7 @@ class ItineraryList:
         客票生效日期。 
 
         :param effective_date: The effective_date of this ItineraryList.
-        :type: str
+        :type effective_date: str
         """
         self._effective_date = effective_date
 
@@ -306,7 +331,7 @@ class ItineraryList:
         有效截止日期。 
 
         :param expiry_date: The expiry_date of this ItineraryList.
-        :type: str
+        :type expiry_date: str
         """
         self._expiry_date = expiry_date
 
@@ -328,7 +353,7 @@ class ItineraryList:
         免费行李。 
 
         :param baggage_allowance: The baggage_allowance of this ItineraryList.
-        :type: str
+        :type baggage_allowance: str
         """
         self._baggage_allowance = baggage_allowance
 

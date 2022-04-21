@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListScalingGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListScalingGroupsResponse(SdkResponse):
     }
 
     def __init__(self, total_number=None, start_number=None, limit=None, scaling_groups=None):
-        """ListScalingGroupsResponse - a model defined in huaweicloud sdk"""
+        """ListScalingGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_number: 总记录数
+        :type total_number: int
+        :param start_number: 查询的开始记录号
+        :type start_number: int
+        :param limit: 查询记录数
+        :type limit: int
+        :param scaling_groups: 伸缩组列表
+        :type scaling_groups: list[:class:`huaweicloudsdkas.v1.ScalingGroups`]
+        """
         
         super(ListScalingGroupsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListScalingGroupsResponse(SdkResponse):
         总记录数
 
         :param total_number: The total_number of this ListScalingGroupsResponse.
-        :type: int
+        :type total_number: int
         """
         self._total_number = total_number
 
@@ -95,7 +106,7 @@ class ListScalingGroupsResponse(SdkResponse):
         查询的开始记录号
 
         :param start_number: The start_number of this ListScalingGroupsResponse.
-        :type: int
+        :type start_number: int
         """
         self._start_number = start_number
 
@@ -117,7 +128,7 @@ class ListScalingGroupsResponse(SdkResponse):
         查询记录数
 
         :param limit: The limit of this ListScalingGroupsResponse.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -128,7 +139,7 @@ class ListScalingGroupsResponse(SdkResponse):
         伸缩组列表
 
         :return: The scaling_groups of this ListScalingGroupsResponse.
-        :rtype: list[ScalingGroups]
+        :rtype: list[:class:`huaweicloudsdkas.v1.ScalingGroups`]
         """
         return self._scaling_groups
 
@@ -139,7 +150,7 @@ class ListScalingGroupsResponse(SdkResponse):
         伸缩组列表
 
         :param scaling_groups: The scaling_groups of this ListScalingGroupsResponse.
-        :type: list[ScalingGroups]
+        :type scaling_groups: list[:class:`huaweicloudsdkas.v1.ScalingGroups`]
         """
         self._scaling_groups = scaling_groups
 

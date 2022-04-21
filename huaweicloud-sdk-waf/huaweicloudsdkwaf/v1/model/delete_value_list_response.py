@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeleteValueListResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class DeleteValueListResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, type=None, timestamp=None):
-        """DeleteValueListResponse - a model defined in huaweicloud sdk"""
+        """DeleteValueListResponse
+
+        The model defined in huaweicloud sdk
+
+        :param id: 引用表id
+        :type id: str
+        :param name: 引用表名称
+        :type name: str
+        :param type: 引用表类型
+        :type type: str
+        :param timestamp: 删除引用表的时间，时间为13位毫秒时间戳
+        :type timestamp: int
+        """
         
         super(DeleteValueListResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class DeleteValueListResponse(SdkResponse):
         引用表id
 
         :param id: The id of this DeleteValueListResponse.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -95,7 +106,7 @@ class DeleteValueListResponse(SdkResponse):
         引用表名称
 
         :param name: The name of this DeleteValueListResponse.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -117,7 +128,7 @@ class DeleteValueListResponse(SdkResponse):
         引用表类型
 
         :param type: The type of this DeleteValueListResponse.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -139,7 +150,7 @@ class DeleteValueListResponse(SdkResponse):
         删除引用表的时间，时间为13位毫秒时间戳
 
         :param timestamp: The timestamp of this DeleteValueListResponse.
-        :type: int
+        :type timestamp: int
         """
         self._timestamp = timestamp
 

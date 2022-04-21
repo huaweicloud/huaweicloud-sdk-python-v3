@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeExecutionDetail:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NodeExecutionDetail:
     }
 
     def __init__(self, node_id=None, executions=None):
-        """NodeExecutionDetail - a model defined in huaweicloud sdk"""
+        """NodeExecutionDetail
+
+        The model defined in huaweicloud sdk
+
+        :param node_id: 流程节点ID
+        :type node_id: str
+        :param executions: 节点执行记录
+        :type executions: list[:class:`huaweicloudsdkfunctiongraph.v2.NodeExecution`]
+        """
         
         
 
@@ -63,7 +70,7 @@ class NodeExecutionDetail:
         流程节点ID
 
         :param node_id: The node_id of this NodeExecutionDetail.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -74,7 +81,7 @@ class NodeExecutionDetail:
         节点执行记录
 
         :return: The executions of this NodeExecutionDetail.
-        :rtype: list[NodeExecution]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.NodeExecution`]
         """
         return self._executions
 
@@ -85,7 +92,7 @@ class NodeExecutionDetail:
         节点执行记录
 
         :param executions: The executions of this NodeExecutionDetail.
-        :type: list[NodeExecution]
+        :type executions: list[:class:`huaweicloudsdkfunctiongraph.v2.NodeExecution`]
         """
         self._executions = executions
 

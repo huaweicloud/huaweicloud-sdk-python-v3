@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ScalingInstance:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ScalingInstance:
     }
 
     def __init__(self, instance_name=None, instance_id=None, failed_reason=None, failed_details=None, instance_config=None):
-        """ScalingInstance - a model defined in huaweicloud sdk"""
+        """ScalingInstance
+
+        The model defined in huaweicloud sdk
+
+        :param instance_name: 云服务器名称。
+        :type instance_name: str
+        :param instance_id: 云服务器id。
+        :type instance_id: str
+        :param failed_reason: 实例伸缩失败原因。
+        :type failed_reason: str
+        :param failed_details: 实例伸缩失败详情。
+        :type failed_details: str
+        :param instance_config: 实例配置信息。
+        :type instance_config: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ScalingInstance:
         云服务器名称。
 
         :param instance_name: The instance_name of this ScalingInstance.
-        :type: str
+        :type instance_name: str
         """
         self._instance_name = instance_name
 
@@ -100,7 +113,7 @@ class ScalingInstance:
         云服务器id。
 
         :param instance_id: The instance_id of this ScalingInstance.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -122,7 +135,7 @@ class ScalingInstance:
         实例伸缩失败原因。
 
         :param failed_reason: The failed_reason of this ScalingInstance.
-        :type: str
+        :type failed_reason: str
         """
         self._failed_reason = failed_reason
 
@@ -144,7 +157,7 @@ class ScalingInstance:
         实例伸缩失败详情。
 
         :param failed_details: The failed_details of this ScalingInstance.
-        :type: str
+        :type failed_details: str
         """
         self._failed_details = failed_details
 
@@ -166,7 +179,7 @@ class ScalingInstance:
         实例配置信息。
 
         :param instance_config: The instance_config of this ScalingInstance.
-        :type: str
+        :type instance_config: str
         """
         self._instance_config = instance_config
 

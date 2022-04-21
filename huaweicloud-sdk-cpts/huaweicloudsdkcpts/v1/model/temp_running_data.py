@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class TempRunningData:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class TempRunningData:
     }
 
     def __init__(self, content_method_url=None, crawler_status=None, related_temp_running_id=None, task_run_info_id=None, temp_id=None, temp_name=None, temp_running_status=None):
-        """TempRunningData - a model defined in huaweicloud sdk"""
+        """TempRunningData
+
+        The model defined in huaweicloud sdk
+
+        :param content_method_url: content_method_url
+        :type content_method_url: list[str]
+        :param crawler_status: crawler_status
+        :type crawler_status: int
+        :param related_temp_running_id: related_temp_running_id
+        :type related_temp_running_id: int
+        :param task_run_info_id: task_run_info_id
+        :type task_run_info_id: int
+        :param temp_id: temp_id
+        :type temp_id: int
+        :param temp_name: temp_name
+        :type temp_name: str
+        :param temp_running_status: temp_running_status
+        :type temp_running_status: int
+        """
         
         
 
@@ -88,7 +105,7 @@ class TempRunningData:
         content_method_url
 
         :param content_method_url: The content_method_url of this TempRunningData.
-        :type: list[str]
+        :type content_method_url: list[str]
         """
         self._content_method_url = content_method_url
 
@@ -110,7 +127,7 @@ class TempRunningData:
         crawler_status
 
         :param crawler_status: The crawler_status of this TempRunningData.
-        :type: int
+        :type crawler_status: int
         """
         self._crawler_status = crawler_status
 
@@ -132,7 +149,7 @@ class TempRunningData:
         related_temp_running_id
 
         :param related_temp_running_id: The related_temp_running_id of this TempRunningData.
-        :type: int
+        :type related_temp_running_id: int
         """
         self._related_temp_running_id = related_temp_running_id
 
@@ -154,7 +171,7 @@ class TempRunningData:
         task_run_info_id
 
         :param task_run_info_id: The task_run_info_id of this TempRunningData.
-        :type: int
+        :type task_run_info_id: int
         """
         self._task_run_info_id = task_run_info_id
 
@@ -176,7 +193,7 @@ class TempRunningData:
         temp_id
 
         :param temp_id: The temp_id of this TempRunningData.
-        :type: int
+        :type temp_id: int
         """
         self._temp_id = temp_id
 
@@ -198,7 +215,7 @@ class TempRunningData:
         temp_name
 
         :param temp_name: The temp_name of this TempRunningData.
-        :type: str
+        :type temp_name: str
         """
         self._temp_name = temp_name
 
@@ -220,7 +237,7 @@ class TempRunningData:
         temp_running_status
 
         :param temp_running_status: The temp_running_status of this TempRunningData.
-        :type: int
+        :type temp_running_status: int
         """
         self._temp_running_status = temp_running_status
 

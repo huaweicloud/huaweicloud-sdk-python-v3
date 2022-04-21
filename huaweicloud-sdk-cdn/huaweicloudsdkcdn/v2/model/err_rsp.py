@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ErrRsp:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ErrRsp:
     }
 
     def __init__(self, error=None):
-        """ErrRsp - a model defined in huaweicloud sdk"""
+        """ErrRsp
+
+        The model defined in huaweicloud sdk
+
+        :param error: 
+        :type error: :class:`huaweicloudsdkcdn.v2.ErrMsg`
+        """
         
         
 
@@ -45,7 +50,7 @@ class ErrRsp:
 
 
         :return: The error of this ErrRsp.
-        :rtype: ErrMsg
+        :rtype: :class:`huaweicloudsdkcdn.v2.ErrMsg`
         """
         return self._error
 
@@ -55,7 +60,7 @@ class ErrRsp:
 
 
         :param error: The error of this ErrRsp.
-        :type: ErrMsg
+        :type error: :class:`huaweicloudsdkcdn.v2.ErrMsg`
         """
         self._error = error
 

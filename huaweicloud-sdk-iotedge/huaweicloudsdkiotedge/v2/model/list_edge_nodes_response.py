@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListEdgeNodesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListEdgeNodesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, page_info=None, nodes=None):
-        """ListEdgeNodesResponse - a model defined in huaweicloud sdk"""
+        """ListEdgeNodesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总记录数
+        :type count: int
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
+        :param nodes: 节点列表
+        :type nodes: list[:class:`huaweicloudsdkiotedge.v2.EdgeNodeDTO`]
+        """
         
         super(ListEdgeNodesResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListEdgeNodesResponse(SdkResponse):
         总记录数
 
         :param count: The count of this ListEdgeNodesResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -78,7 +87,7 @@ class ListEdgeNodesResponse(SdkResponse):
 
 
         :return: The page_info of this ListEdgeNodesResponse.
-        :rtype: PageInfoDTO
+        :rtype: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
         """
         return self._page_info
 
@@ -88,7 +97,7 @@ class ListEdgeNodesResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListEdgeNodesResponse.
-        :type: PageInfoDTO
+        :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
         """
         self._page_info = page_info
 
@@ -99,7 +108,7 @@ class ListEdgeNodesResponse(SdkResponse):
         节点列表
 
         :return: The nodes of this ListEdgeNodesResponse.
-        :rtype: list[EdgeNodeDTO]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.EdgeNodeDTO`]
         """
         return self._nodes
 
@@ -110,7 +119,7 @@ class ListEdgeNodesResponse(SdkResponse):
         节点列表
 
         :param nodes: The nodes of this ListEdgeNodesResponse.
-        :type: list[EdgeNodeDTO]
+        :type nodes: list[:class:`huaweicloudsdkiotedge.v2.EdgeNodeDTO`]
         """
         self._nodes = nodes
 

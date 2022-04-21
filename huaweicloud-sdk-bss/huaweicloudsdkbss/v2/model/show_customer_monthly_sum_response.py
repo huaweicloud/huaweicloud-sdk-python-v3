@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowCustomerMonthlySumResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, bill_sums=None, consume_amount=None, debt_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, cash_amount=None, credit_amount=None, writeoff_amount=None, measure_id=None, currency=None):
-        """ShowCustomerMonthlySumResponse - a model defined in huaweicloud sdk"""
+        """ShowCustomerMonthlySumResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total_count: 总条数，必须大于等于0。
+        :type total_count: int
+        :param bill_sums: 账单记录，具体参考表2。
+        :type bill_sums: list[:class:`huaweicloudsdkbss.v2.BillSumRecordInfoV2`]
+        :param consume_amount: 总金额（包含退订）。
+        :type consume_amount: float
+        :param debt_amount: 总欠费金额。
+        :type debt_amount: float
+        :param coupon_amount: 代金券金额。
+        :type coupon_amount: float
+        :param flexipurchase_coupon_amount: 现金券金额，预留。
+        :type flexipurchase_coupon_amount: float
+        :param stored_value_card_amount: 储值卡金额，预留。
+        :type stored_value_card_amount: float
+        :param cash_amount: 现金账户金额。
+        :type cash_amount: float
+        :param credit_amount: 信用账户金额。
+        :type credit_amount: float
+        :param writeoff_amount: 欠费核销金额。
+        :type writeoff_amount: float
+        :param measure_id: 金额单位。 1：元
+        :type measure_id: int
+        :param currency: 币种。 CNY：人民币。
+        :type currency: str
+        """
         
         super(ShowCustomerMonthlySumResponse, self).__init__()
 
@@ -113,7 +140,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
         总条数，必须大于等于0。
 
         :param total_count: The total_count of this ShowCustomerMonthlySumResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -124,7 +151,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
         账单记录，具体参考表2。
 
         :return: The bill_sums of this ShowCustomerMonthlySumResponse.
-        :rtype: list[BillSumRecordInfoV2]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.BillSumRecordInfoV2`]
         """
         return self._bill_sums
 
@@ -135,7 +162,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
         账单记录，具体参考表2。
 
         :param bill_sums: The bill_sums of this ShowCustomerMonthlySumResponse.
-        :type: list[BillSumRecordInfoV2]
+        :type bill_sums: list[:class:`huaweicloudsdkbss.v2.BillSumRecordInfoV2`]
         """
         self._bill_sums = bill_sums
 
@@ -157,7 +184,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
         总金额（包含退订）。
 
         :param consume_amount: The consume_amount of this ShowCustomerMonthlySumResponse.
-        :type: float
+        :type consume_amount: float
         """
         self._consume_amount = consume_amount
 
@@ -179,7 +206,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
         总欠费金额。
 
         :param debt_amount: The debt_amount of this ShowCustomerMonthlySumResponse.
-        :type: float
+        :type debt_amount: float
         """
         self._debt_amount = debt_amount
 
@@ -201,7 +228,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
         代金券金额。
 
         :param coupon_amount: The coupon_amount of this ShowCustomerMonthlySumResponse.
-        :type: float
+        :type coupon_amount: float
         """
         self._coupon_amount = coupon_amount
 
@@ -223,7 +250,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
         现金券金额，预留。
 
         :param flexipurchase_coupon_amount: The flexipurchase_coupon_amount of this ShowCustomerMonthlySumResponse.
-        :type: float
+        :type flexipurchase_coupon_amount: float
         """
         self._flexipurchase_coupon_amount = flexipurchase_coupon_amount
 
@@ -245,7 +272,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
         储值卡金额，预留。
 
         :param stored_value_card_amount: The stored_value_card_amount of this ShowCustomerMonthlySumResponse.
-        :type: float
+        :type stored_value_card_amount: float
         """
         self._stored_value_card_amount = stored_value_card_amount
 
@@ -267,7 +294,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
         现金账户金额。
 
         :param cash_amount: The cash_amount of this ShowCustomerMonthlySumResponse.
-        :type: float
+        :type cash_amount: float
         """
         self._cash_amount = cash_amount
 
@@ -289,7 +316,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
         信用账户金额。
 
         :param credit_amount: The credit_amount of this ShowCustomerMonthlySumResponse.
-        :type: float
+        :type credit_amount: float
         """
         self._credit_amount = credit_amount
 
@@ -311,7 +338,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
         欠费核销金额。
 
         :param writeoff_amount: The writeoff_amount of this ShowCustomerMonthlySumResponse.
-        :type: float
+        :type writeoff_amount: float
         """
         self._writeoff_amount = writeoff_amount
 
@@ -333,7 +360,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
         金额单位。 1：元
 
         :param measure_id: The measure_id of this ShowCustomerMonthlySumResponse.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -355,7 +382,7 @@ class ShowCustomerMonthlySumResponse(SdkResponse):
         币种。 CNY：人民币。
 
         :param currency: The currency of this ShowCustomerMonthlySumResponse.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 

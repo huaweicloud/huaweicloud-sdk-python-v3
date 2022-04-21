@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateMeetingResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateMeetingResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateMeetingResponse - a model defined in huaweicloud sdk"""
+        """UpdateMeetingResponse
+
+        The model defined in huaweicloud sdk
+
+        :param body: 会议信息列表
+        :type body: list[:class:`huaweicloudsdkmeeting.v1.ConferenceInfo`]
+        """
         
         super(UpdateMeetingResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class UpdateMeetingResponse(SdkResponse):
         会议信息列表
 
         :return: The body of this UpdateMeetingResponse.
-        :rtype: list[ConferenceInfo]
+        :rtype: list[:class:`huaweicloudsdkmeeting.v1.ConferenceInfo`]
         """
         return self._body
 
@@ -58,7 +63,7 @@ class UpdateMeetingResponse(SdkResponse):
         会议信息列表
 
         :param body: The body of this UpdateMeetingResponse.
-        :type: list[ConferenceInfo]
+        :type body: list[:class:`huaweicloudsdkmeeting.v1.ConferenceInfo`]
         """
         self._body = body
 

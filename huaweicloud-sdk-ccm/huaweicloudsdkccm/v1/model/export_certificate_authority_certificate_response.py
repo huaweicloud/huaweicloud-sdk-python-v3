@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExportCertificateAuthorityCertificateResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExportCertificateAuthorityCertificateResponse(SdkResponse):
     }
 
     def __init__(self, certificate=None, certificate_chain=None):
-        """ExportCertificateAuthorityCertificateResponse - a model defined in huaweicloud sdk"""
+        """ExportCertificateAuthorityCertificateResponse
+
+        The model defined in huaweicloud sdk
+
+        :param certificate: 证书内容。  &gt;  - 通过API请求本接口，证书内容中换行符已使用\&quot;\\r\\n\&quot;代替；  &gt;  - 通过console端导出证书，将得到标准的PEM格式的证书文件。
+        :type certificate: str
+        :param certificate_chain: 证书链内容，证书链中排列顺序（从上至下）：中间证书&gt;...&gt;根证书。 &gt;  - 通过API请求本接口，证书链内容中换行符已使用\&quot;\\r\\n\&quot;代替； &gt;  - 通过console端导出证书链，将得到标准的PEM格式的证书链文件。
+        :type certificate_chain: str
+        """
         
         super(ExportCertificateAuthorityCertificateResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ExportCertificateAuthorityCertificateResponse(SdkResponse):
         证书内容。  >  - 通过API请求本接口，证书内容中换行符已使用\"\\r\\n\"代替；  >  - 通过console端导出证书，将得到标准的PEM格式的证书文件。
 
         :param certificate: The certificate of this ExportCertificateAuthorityCertificateResponse.
-        :type: str
+        :type certificate: str
         """
         self._certificate = certificate
 
@@ -85,7 +92,7 @@ class ExportCertificateAuthorityCertificateResponse(SdkResponse):
         证书链内容，证书链中排列顺序（从上至下）：中间证书>...>根证书。 >  - 通过API请求本接口，证书链内容中换行符已使用\"\\r\\n\"代替； >  - 通过console端导出证书链，将得到标准的PEM格式的证书链文件。
 
         :param certificate_chain: The certificate_chain of this ExportCertificateAuthorityCertificateResponse.
-        :type: str
+        :type certificate_chain: str
         """
         self._certificate_chain = certificate_chain
 

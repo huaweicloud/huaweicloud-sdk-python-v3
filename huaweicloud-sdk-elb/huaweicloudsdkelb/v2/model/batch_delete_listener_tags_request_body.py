@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class BatchDeleteListenerTagsRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class BatchDeleteListenerTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchDeleteListenerTagsRequestBody - a model defined in huaweicloud sdk"""
+        """BatchDeleteListenerTagsRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param action: 操作类型。 取值范围：delete- 删除标签。
+        :type action: str
+        :param tags: 标签对象列表。
+        :type tags: list[:class:`huaweicloudsdkelb.v2.ResourceTag`]
+        """
         
         
 
@@ -62,7 +69,7 @@ class BatchDeleteListenerTagsRequestBody:
         操作类型。 取值范围：delete- 删除标签。
 
         :param action: The action of this BatchDeleteListenerTagsRequestBody.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -73,7 +80,7 @@ class BatchDeleteListenerTagsRequestBody:
         标签对象列表。
 
         :return: The tags of this BatchDeleteListenerTagsRequestBody.
-        :rtype: list[ResourceTag]
+        :rtype: list[:class:`huaweicloudsdkelb.v2.ResourceTag`]
         """
         return self._tags
 
@@ -84,7 +91,7 @@ class BatchDeleteListenerTagsRequestBody:
         标签对象列表。
 
         :param tags: The tags of this BatchDeleteListenerTagsRequestBody.
-        :type: list[ResourceTag]
+        :type tags: list[:class:`huaweicloudsdkelb.v2.ResourceTag`]
         """
         self._tags = tags
 

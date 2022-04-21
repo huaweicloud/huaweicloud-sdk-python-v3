@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListBackupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListBackupsResponse(SdkResponse):
     }
 
     def __init__(self, backups=None, total_count=None):
-        """ListBackupsResponse - a model defined in huaweicloud sdk"""
+        """ListBackupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param backups: 备份信息。
+        :type backups: list[:class:`huaweicloudsdkrds.v3.BackupForList`]
+        :param total_count: 总记录数。
+        :type total_count: int
+        """
         
         super(ListBackupsResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListBackupsResponse(SdkResponse):
         备份信息。
 
         :return: The backups of this ListBackupsResponse.
-        :rtype: list[BackupForList]
+        :rtype: list[:class:`huaweicloudsdkrds.v3.BackupForList`]
         """
         return self._backups
 
@@ -63,7 +70,7 @@ class ListBackupsResponse(SdkResponse):
         备份信息。
 
         :param backups: The backups of this ListBackupsResponse.
-        :type: list[BackupForList]
+        :type backups: list[:class:`huaweicloudsdkrds.v3.BackupForList`]
         """
         self._backups = backups
 
@@ -85,7 +92,7 @@ class ListBackupsResponse(SdkResponse):
         总记录数。
 
         :param total_count: The total_count of this ListBackupsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateIndirectPartnerAccountRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateIndirectPartnerAccountRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateIndirectPartnerAccountRequest - a model defined in huaweicloud sdk"""
+        """UpdateIndirectPartnerAccountRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the UpdateIndirectPartnerAccountRequest
+        :type body: :class:`huaweicloudsdkbss.v2.AdjustToIndirectPartnerReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class UpdateIndirectPartnerAccountRequest:
 
 
         :return: The body of this UpdateIndirectPartnerAccountRequest.
-        :rtype: AdjustToIndirectPartnerReq
+        :rtype: :class:`huaweicloudsdkbss.v2.AdjustToIndirectPartnerReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class UpdateIndirectPartnerAccountRequest:
 
 
         :param body: The body of this UpdateIndirectPartnerAccountRequest.
-        :type: AdjustToIndirectPartnerReq
+        :type body: :class:`huaweicloudsdkbss.v2.AdjustToIndirectPartnerReq`
         """
         self._body = body
 

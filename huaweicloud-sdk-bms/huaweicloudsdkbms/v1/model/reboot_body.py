@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RebootBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RebootBody:
     }
 
     def __init__(self, reboot=None):
-        """RebootBody - a model defined in huaweicloud sdk"""
+        """RebootBody
+
+        The model defined in huaweicloud sdk
+
+        :param reboot: 
+        :type reboot: :class:`huaweicloudsdkbms.v1.ServersInfoType`
+        """
         
         
 
@@ -45,7 +50,7 @@ class RebootBody:
 
 
         :return: The reboot of this RebootBody.
-        :rtype: ServersInfoType
+        :rtype: :class:`huaweicloudsdkbms.v1.ServersInfoType`
         """
         return self._reboot
 
@@ -55,7 +60,7 @@ class RebootBody:
 
 
         :param reboot: The reboot of this RebootBody.
-        :type: ServersInfoType
+        :type reboot: :class:`huaweicloudsdkbms.v1.ServersInfoType`
         """
         self._reboot = reboot
 

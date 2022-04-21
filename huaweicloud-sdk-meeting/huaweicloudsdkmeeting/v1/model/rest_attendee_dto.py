@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestAttendeeDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -60,7 +59,43 @@ class RestAttendeeDTO:
     }
 
     def __init__(self, user_uuid=None, account_id=None, name=None, role=None, phone=None, phone2=None, phone3=None, email=None, sms=None, is_mute=None, is_auto_invite=None, type=None, address=None, dept_uuid=None, dept_name=None, app_id=None):
-        """RestAttendeeDTO - a model defined in huaweicloud sdk"""
+        """RestAttendeeDTO
+
+        The model defined in huaweicloud sdk
+
+        :param user_uuid: 与会者的用户UUID。
+        :type user_uuid: str
+        :param account_id: 与会者的账号ID。 如果是账号/密码鉴权场景，选填，表示华为云会议帐号ID。 如果是APPID鉴权场景，必填，表示第三方的User ID，同时需要携带appid参数。
+        :type account_id: str
+        :param name: 与会者名称或昵称，长度限制为96个字符。
+        :type name: str
+        :param role: 会议中的角色。默认为普通与会者。 - 0: 普通与会者。 - 1: 会议主席。 - 2: 预留字段，暂不对外开放。
+        :type role: int
+        :param phone: 如果是账号/密码鉴权场景，必填，号码（可支持SIP、TEL号码格式）。 如果是APP ID鉴权场景，选填。 最大不超过127个字符。phone、email和sms三者需至少填写一个。
+        :type phone: str
+        :param phone2: 预留字段，取值类型同phone。
+        :type phone2: str
+        :param phone3: 预留字段，取值类型同phone。
+        :type phone3: str
+        :param email: 邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个。
+        :type email: str
+        :param sms: 短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。
+        :type sms: str
+        :param is_mute: 用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音。 - 1: 需要静音。
+        :type is_mute: int
+        :param is_auto_invite: 会议开始时是否自动邀请该与会者。默认值由企业级配置决定。 - 0: 不自动邀请 - 1: 自动邀请
+        :type is_auto_invite: int
+        :param type: 默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 软终端用户固定电话，暂不使用。
+        :type type: str
+        :param address: 终端所在会议室信息。（预留字段）
+        :type address: str
+        :param dept_uuid: 部门ID。最大不超过64个字符。
+        :type dept_uuid: str
+        :param dept_name: 部门名称。最大不超过128个字符。
+        :type dept_name: str
+        :param app_id: App ID，应用标识，一个应用只需创建一次。如果是APP ID鉴权场景，此项必填。
+        :type app_id: str
+        """
         
         
 
@@ -133,7 +168,7 @@ class RestAttendeeDTO:
         与会者的用户UUID。
 
         :param user_uuid: The user_uuid of this RestAttendeeDTO.
-        :type: str
+        :type user_uuid: str
         """
         self._user_uuid = user_uuid
 
@@ -155,7 +190,7 @@ class RestAttendeeDTO:
         与会者的账号ID。 如果是账号/密码鉴权场景，选填，表示华为云会议帐号ID。 如果是APPID鉴权场景，必填，表示第三方的User ID，同时需要携带appid参数。
 
         :param account_id: The account_id of this RestAttendeeDTO.
-        :type: str
+        :type account_id: str
         """
         self._account_id = account_id
 
@@ -177,7 +212,7 @@ class RestAttendeeDTO:
         与会者名称或昵称，长度限制为96个字符。
 
         :param name: The name of this RestAttendeeDTO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -199,7 +234,7 @@ class RestAttendeeDTO:
         会议中的角色。默认为普通与会者。 - 0: 普通与会者。 - 1: 会议主席。 - 2: 预留字段，暂不对外开放。
 
         :param role: The role of this RestAttendeeDTO.
-        :type: int
+        :type role: int
         """
         self._role = role
 
@@ -221,7 +256,7 @@ class RestAttendeeDTO:
         如果是账号/密码鉴权场景，必填，号码（可支持SIP、TEL号码格式）。 如果是APP ID鉴权场景，选填。 最大不超过127个字符。phone、email和sms三者需至少填写一个。
 
         :param phone: The phone of this RestAttendeeDTO.
-        :type: str
+        :type phone: str
         """
         self._phone = phone
 
@@ -243,7 +278,7 @@ class RestAttendeeDTO:
         预留字段，取值类型同phone。
 
         :param phone2: The phone2 of this RestAttendeeDTO.
-        :type: str
+        :type phone2: str
         """
         self._phone2 = phone2
 
@@ -265,7 +300,7 @@ class RestAttendeeDTO:
         预留字段，取值类型同phone。
 
         :param phone3: The phone3 of this RestAttendeeDTO.
-        :type: str
+        :type phone3: str
         """
         self._phone3 = phone3
 
@@ -287,7 +322,7 @@ class RestAttendeeDTO:
         邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个。
 
         :param email: The email of this RestAttendeeDTO.
-        :type: str
+        :type email: str
         """
         self._email = email
 
@@ -309,7 +344,7 @@ class RestAttendeeDTO:
         短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。
 
         :param sms: The sms of this RestAttendeeDTO.
-        :type: str
+        :type sms: str
         """
         self._sms = sms
 
@@ -331,7 +366,7 @@ class RestAttendeeDTO:
         用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音。 - 1: 需要静音。
 
         :param is_mute: The is_mute of this RestAttendeeDTO.
-        :type: int
+        :type is_mute: int
         """
         self._is_mute = is_mute
 
@@ -353,7 +388,7 @@ class RestAttendeeDTO:
         会议开始时是否自动邀请该与会者。默认值由企业级配置决定。 - 0: 不自动邀请 - 1: 自动邀请
 
         :param is_auto_invite: The is_auto_invite of this RestAttendeeDTO.
-        :type: int
+        :type is_auto_invite: int
         """
         self._is_auto_invite = is_auto_invite
 
@@ -375,7 +410,7 @@ class RestAttendeeDTO:
         默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 软终端用户固定电话，暂不使用。
 
         :param type: The type of this RestAttendeeDTO.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -397,7 +432,7 @@ class RestAttendeeDTO:
         终端所在会议室信息。（预留字段）
 
         :param address: The address of this RestAttendeeDTO.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -419,7 +454,7 @@ class RestAttendeeDTO:
         部门ID。最大不超过64个字符。
 
         :param dept_uuid: The dept_uuid of this RestAttendeeDTO.
-        :type: str
+        :type dept_uuid: str
         """
         self._dept_uuid = dept_uuid
 
@@ -441,7 +476,7 @@ class RestAttendeeDTO:
         部门名称。最大不超过128个字符。
 
         :param dept_name: The dept_name of this RestAttendeeDTO.
-        :type: str
+        :type dept_name: str
         """
         self._dept_name = dept_name
 
@@ -463,7 +498,7 @@ class RestAttendeeDTO:
         App ID，应用标识，一个应用只需创建一次。如果是APP ID鉴权场景，此项必填。
 
         :param app_id: The app_id of this RestAttendeeDTO.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 

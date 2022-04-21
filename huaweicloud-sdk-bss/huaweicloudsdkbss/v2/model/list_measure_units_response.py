@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMeasureUnitsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListMeasureUnitsResponse(SdkResponse):
     }
 
     def __init__(self, measure_units=None):
-        """ListMeasureUnitsResponse - a model defined in huaweicloud sdk"""
+        """ListMeasureUnitsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param measure_units: 度量单位信息，具体参见表2。
+        :type measure_units: list[:class:`huaweicloudsdkbss.v2.MeasureUnitRest`]
+        """
         
         super(ListMeasureUnitsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListMeasureUnitsResponse(SdkResponse):
         度量单位信息，具体参见表2。
 
         :return: The measure_units of this ListMeasureUnitsResponse.
-        :rtype: list[MeasureUnitRest]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.MeasureUnitRest`]
         """
         return self._measure_units
 
@@ -58,7 +63,7 @@ class ListMeasureUnitsResponse(SdkResponse):
         度量单位信息，具体参见表2。
 
         :param measure_units: The measure_units of this ListMeasureUnitsResponse.
-        :type: list[MeasureUnitRest]
+        :type measure_units: list[:class:`huaweicloudsdkbss.v2.MeasureUnitRest`]
         """
         self._measure_units = measure_units
 

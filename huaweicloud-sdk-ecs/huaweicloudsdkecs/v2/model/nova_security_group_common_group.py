@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NovaSecurityGroupCommonGroup:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class NovaSecurityGroupCommonGroup:
     }
 
     def __init__(self, name=None, tenant_id=None):
-        """NovaSecurityGroupCommonGroup - a model defined in huaweicloud sdk"""
+        """NovaSecurityGroupCommonGroup
+
+        The model defined in huaweicloud sdk
+
+        :param name: 对端安全组的名称
+        :type name: str
+        :param tenant_id: 对端安全组所属租户的租户ID
+        :type tenant_id: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class NovaSecurityGroupCommonGroup:
         对端安全组的名称
 
         :param name: The name of this NovaSecurityGroupCommonGroup.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -85,7 +92,7 @@ class NovaSecurityGroupCommonGroup:
         对端安全组所属租户的租户ID
 
         :param tenant_id: The tenant_id of this NovaSecurityGroupCommonGroup.
-        :type: str
+        :type tenant_id: str
         """
         self._tenant_id = tenant_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImageTaggingItemBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ImageTaggingItemBody:
     }
 
     def __init__(self, confidence=None, type=None, tag=None, i18n_tag=None, i18n_type=None, instances=None):
-        """ImageTaggingItemBody - a model defined in huaweicloud sdk"""
+        """ImageTaggingItemBody
+
+        The model defined in huaweicloud sdk
+
+        :param confidence: 置信度，将Float型置信度转为String类型返回,取值范围：0-100。
+        :type confidence: str
+        :param type: 标签的类别。返回的标签类型，包含二十多种大类，具体可以参考[图像标签](http://support.huaweicloud.com/image_faq/image_01_0037.html)。 
+        :type type: str
+        :param tag: 标签名称。
+        :type tag: str
+        :param i18n_tag: 
+        :type i18n_tag: :class:`huaweicloudsdkimage.v2.ImageTaggingItemBodyI18nTag`
+        :param i18n_type: 
+        :type i18n_type: :class:`huaweicloudsdkimage.v2.ImageTaggingItemBodyI18nType`
+        :param instances: 目标检测框信息，为空则表示没有目标检测框。
+        :type instances: list[:class:`huaweicloudsdkimage.v2.ImageTaggingInstance`]
+        """
         
         
 
@@ -83,7 +98,7 @@ class ImageTaggingItemBody:
         置信度，将Float型置信度转为String类型返回,取值范围：0-100。
 
         :param confidence: The confidence of this ImageTaggingItemBody.
-        :type: str
+        :type confidence: str
         """
         self._confidence = confidence
 
@@ -105,7 +120,7 @@ class ImageTaggingItemBody:
         标签的类别。返回的标签类型，包含二十多种大类，具体可以参考[图像标签](http://support.huaweicloud.com/image_faq/image_01_0037.html)。 
 
         :param type: The type of this ImageTaggingItemBody.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -127,7 +142,7 @@ class ImageTaggingItemBody:
         标签名称。
 
         :param tag: The tag of this ImageTaggingItemBody.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 
@@ -137,7 +152,7 @@ class ImageTaggingItemBody:
 
 
         :return: The i18n_tag of this ImageTaggingItemBody.
-        :rtype: ImageTaggingItemBodyI18nTag
+        :rtype: :class:`huaweicloudsdkimage.v2.ImageTaggingItemBodyI18nTag`
         """
         return self._i18n_tag
 
@@ -147,7 +162,7 @@ class ImageTaggingItemBody:
 
 
         :param i18n_tag: The i18n_tag of this ImageTaggingItemBody.
-        :type: ImageTaggingItemBodyI18nTag
+        :type i18n_tag: :class:`huaweicloudsdkimage.v2.ImageTaggingItemBodyI18nTag`
         """
         self._i18n_tag = i18n_tag
 
@@ -157,7 +172,7 @@ class ImageTaggingItemBody:
 
 
         :return: The i18n_type of this ImageTaggingItemBody.
-        :rtype: ImageTaggingItemBodyI18nType
+        :rtype: :class:`huaweicloudsdkimage.v2.ImageTaggingItemBodyI18nType`
         """
         return self._i18n_type
 
@@ -167,7 +182,7 @@ class ImageTaggingItemBody:
 
 
         :param i18n_type: The i18n_type of this ImageTaggingItemBody.
-        :type: ImageTaggingItemBodyI18nType
+        :type i18n_type: :class:`huaweicloudsdkimage.v2.ImageTaggingItemBodyI18nType`
         """
         self._i18n_type = i18n_type
 
@@ -178,7 +193,7 @@ class ImageTaggingItemBody:
         目标检测框信息，为空则表示没有目标检测框。
 
         :return: The instances of this ImageTaggingItemBody.
-        :rtype: list[ImageTaggingInstance]
+        :rtype: list[:class:`huaweicloudsdkimage.v2.ImageTaggingInstance`]
         """
         return self._instances
 
@@ -189,7 +204,7 @@ class ImageTaggingItemBody:
         目标检测框信息，为空则表示没有目标检测框。
 
         :param instances: The instances of this ImageTaggingItemBody.
-        :type: list[ImageTaggingInstance]
+        :type instances: list[:class:`huaweicloudsdkimage.v2.ImageTaggingInstance`]
         """
         self._instances = instances
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DecryptDataRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class DecryptDataRequestBody:
     }
 
     def __init__(self, cipher_text=None, encryption_context=None, encryption_algorithm=None, key_id=None, sequence=None):
-        """DecryptDataRequestBody - a model defined in huaweicloud sdk"""
+        """DecryptDataRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param cipher_text: 被加密数据密文。取值为加密数据结果中的cipher_text的值，满足正则匹配“^[0-9a-zA-Z+/&#x3D;]{188,5648}$”。
+        :type cipher_text: str
+        :param encryption_context: 一系列key-value键值对，用于记录资源上下文信息，用于保护数据的完整性，不应包含敏感信息，最大长度为8192。 当在加密时指定了该参数时，解密密文时，需要传入相同的参数，才能正确的解密。 例如：{\&quot;Key1\&quot;:\&quot;Value1\&quot;,\&quot;Key2\&quot;:\&quot;Value2\&quot;}
+        :type encryption_context: object
+        :param encryption_algorithm: 数据加密算法，仅使用非对称密钥需要指定该参数，默认值为“SYMMETRIC_DEFAULT”，合法枚举值如下：  - SYMMETRIC_DEFAULT  - RSAES_OAEP_SHA_256  - RSAES_OAEP_SHA_1  - SM2_ENCRYPT
+        :type encryption_algorithm: str
+        :param key_id: 密钥ID，36字节，满足正则匹配“^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$”。仅当密文使用非对称密钥加密时才需要此参数。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
+        :type key_id: str
+        :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
+        :type sequence: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class DecryptDataRequestBody:
         被加密数据密文。取值为加密数据结果中的cipher_text的值，满足正则匹配“^[0-9a-zA-Z+/=]{188,5648}$”。
 
         :param cipher_text: The cipher_text of this DecryptDataRequestBody.
-        :type: str
+        :type cipher_text: str
         """
         self._cipher_text = cipher_text
 
@@ -100,7 +113,7 @@ class DecryptDataRequestBody:
         一系列key-value键值对，用于记录资源上下文信息，用于保护数据的完整性，不应包含敏感信息，最大长度为8192。 当在加密时指定了该参数时，解密密文时，需要传入相同的参数，才能正确的解密。 例如：{\"Key1\":\"Value1\",\"Key2\":\"Value2\"}
 
         :param encryption_context: The encryption_context of this DecryptDataRequestBody.
-        :type: object
+        :type encryption_context: object
         """
         self._encryption_context = encryption_context
 
@@ -122,7 +135,7 @@ class DecryptDataRequestBody:
         数据加密算法，仅使用非对称密钥需要指定该参数，默认值为“SYMMETRIC_DEFAULT”，合法枚举值如下：  - SYMMETRIC_DEFAULT  - RSAES_OAEP_SHA_256  - RSAES_OAEP_SHA_1  - SM2_ENCRYPT
 
         :param encryption_algorithm: The encryption_algorithm of this DecryptDataRequestBody.
-        :type: str
+        :type encryption_algorithm: str
         """
         self._encryption_algorithm = encryption_algorithm
 
@@ -144,7 +157,7 @@ class DecryptDataRequestBody:
         密钥ID，36字节，满足正则匹配“^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$”。仅当密文使用非对称密钥加密时才需要此参数。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
         :param key_id: The key_id of this DecryptDataRequestBody.
-        :type: str
+        :type key_id: str
         """
         self._key_id = key_id
 
@@ -166,7 +179,7 @@ class DecryptDataRequestBody:
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
         :param sequence: The sequence of this DecryptDataRequestBody.
-        :type: str
+        :type sequence: str
         """
         self._sequence = sequence
 

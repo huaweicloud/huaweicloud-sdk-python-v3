@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class HeaderMap:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class HeaderMap:
     }
 
     def __init__(self, content_disposition=None, content_language=None, access_control_allow_origin=None, access_control_allow_methods=None, access_control_max_age=None, access_control_expose_headers=None):
-        """HeaderMap - a model defined in huaweicloud sdk"""
+        """HeaderMap
+
+        The model defined in huaweicloud sdk
+
+        :param content_disposition: 指示回复的内容该以何种形式展示
+        :type content_disposition: str
+        :param content_language: 说明访问者希望采用的语言或语言组合
+        :type content_language: str
+        :param access_control_allow_origin: 指定了该响应的资源是否被允许与给定的origin共享
+        :type access_control_allow_origin: str
+        :param access_control_allow_methods: 明确了客户端所要访问的资源允许使用的方法或方法列表
+        :type access_control_allow_methods: str
+        :param access_control_max_age: Access-Control-Allow-Methods 和Access-Control-Allow-Headers 提供的信息可以被缓存多久
+        :type access_control_max_age: str
+        :param access_control_expose_headers: 列出了哪些首部可以作为响应的一部分暴露给外部
+        :type access_control_expose_headers: str
+        """
         
         
 
@@ -83,7 +98,7 @@ class HeaderMap:
         指示回复的内容该以何种形式展示
 
         :param content_disposition: The content_disposition of this HeaderMap.
-        :type: str
+        :type content_disposition: str
         """
         self._content_disposition = content_disposition
 
@@ -105,7 +120,7 @@ class HeaderMap:
         说明访问者希望采用的语言或语言组合
 
         :param content_language: The content_language of this HeaderMap.
-        :type: str
+        :type content_language: str
         """
         self._content_language = content_language
 
@@ -127,7 +142,7 @@ class HeaderMap:
         指定了该响应的资源是否被允许与给定的origin共享
 
         :param access_control_allow_origin: The access_control_allow_origin of this HeaderMap.
-        :type: str
+        :type access_control_allow_origin: str
         """
         self._access_control_allow_origin = access_control_allow_origin
 
@@ -149,7 +164,7 @@ class HeaderMap:
         明确了客户端所要访问的资源允许使用的方法或方法列表
 
         :param access_control_allow_methods: The access_control_allow_methods of this HeaderMap.
-        :type: str
+        :type access_control_allow_methods: str
         """
         self._access_control_allow_methods = access_control_allow_methods
 
@@ -171,7 +186,7 @@ class HeaderMap:
         Access-Control-Allow-Methods 和Access-Control-Allow-Headers 提供的信息可以被缓存多久
 
         :param access_control_max_age: The access_control_max_age of this HeaderMap.
-        :type: str
+        :type access_control_max_age: str
         """
         self._access_control_max_age = access_control_max_age
 
@@ -193,7 +208,7 @@ class HeaderMap:
         列出了哪些首部可以作为响应的一部分暴露给外部
 
         :param access_control_expose_headers: The access_control_expose_headers of this HeaderMap.
-        :type: str
+        :type access_control_expose_headers: str
         """
         self._access_control_expose_headers = access_control_expose_headers
 

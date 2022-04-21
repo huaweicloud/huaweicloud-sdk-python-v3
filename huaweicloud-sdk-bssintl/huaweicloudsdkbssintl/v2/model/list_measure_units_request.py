@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListMeasureUnitsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListMeasureUnitsRequest:
     }
 
     def __init__(self, x_language=None):
-        """ListMeasureUnitsRequest - a model defined in huaweicloud sdk"""
+        """ListMeasureUnitsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言。zh_CN：中文en_US：英文缺省为zh_CN。
+        :type x_language: str
+        """
         
         
 
@@ -58,7 +63,7 @@ class ListMeasureUnitsRequest:
         语言。zh_CN：中文en_US：英文缺省为zh_CN。
 
         :param x_language: The x_language of this ListMeasureUnitsRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 

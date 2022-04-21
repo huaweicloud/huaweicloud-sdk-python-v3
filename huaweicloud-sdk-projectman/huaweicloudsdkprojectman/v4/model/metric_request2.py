@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MetricRequest2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class MetricRequest2:
     }
 
     def __init__(self, metric_type=None, sprint_id=None, dividend=None, divisor=None):
-        """MetricRequest2 - a model defined in huaweicloud sdk"""
+        """MetricRequest2
+
+        The model defined in huaweicloud sdk
+
+        :param metric_type: 指标类型
+        :type metric_type: str
+        :param sprint_id: 迭代ID
+        :type sprint_id: str
+        :param dividend: 
+        :type dividend: :class:`huaweicloudsdkprojectman.v4.MetricRequest2Dividend`
+        :param divisor: 指标分母过滤条件
+        :type divisor: object
+        """
         
         
 
@@ -73,7 +84,7 @@ class MetricRequest2:
         指标类型
 
         :param metric_type: The metric_type of this MetricRequest2.
-        :type: str
+        :type metric_type: str
         """
         self._metric_type = metric_type
 
@@ -95,7 +106,7 @@ class MetricRequest2:
         迭代ID
 
         :param sprint_id: The sprint_id of this MetricRequest2.
-        :type: str
+        :type sprint_id: str
         """
         self._sprint_id = sprint_id
 
@@ -105,7 +116,7 @@ class MetricRequest2:
 
 
         :return: The dividend of this MetricRequest2.
-        :rtype: MetricRequest2Dividend
+        :rtype: :class:`huaweicloudsdkprojectman.v4.MetricRequest2Dividend`
         """
         return self._dividend
 
@@ -115,7 +126,7 @@ class MetricRequest2:
 
 
         :param dividend: The dividend of this MetricRequest2.
-        :type: MetricRequest2Dividend
+        :type dividend: :class:`huaweicloudsdkprojectman.v4.MetricRequest2Dividend`
         """
         self._dividend = dividend
 
@@ -137,7 +148,7 @@ class MetricRequest2:
         指标分母过滤条件
 
         :param divisor: The divisor of this MetricRequest2.
-        :type: object
+        :type divisor: object
         """
         self._divisor = divisor
 

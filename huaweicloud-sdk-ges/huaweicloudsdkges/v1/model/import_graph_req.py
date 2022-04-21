@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ImportGraphReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class ImportGraphReq:
     }
 
     def __init__(self, edgeset_path=None, edgeset_format=None, vertexset_path=None, vertexset_format=None, schema_path=None, log_dir=None, parallel_edge=None, action=None, ignore_label=None, delimiter=None, trim_quote=None, offline=None):
-        """ImportGraphReq - a model defined in huaweicloud sdk"""
+        """ImportGraphReq
+
+        The model defined in huaweicloud sdk
+
+        :param edgeset_path: 边文件目录或边文件名。
+        :type edgeset_path: str
+        :param edgeset_format: 边数据集格式。当前仅支持csv。  默认为csv。
+        :type edgeset_format: str
+        :param vertexset_path: 点文件目录或点文件名。
+        :type vertexset_path: str
+        :param vertexset_format: 点数据集格式。当前仅支持csv。  默认为csv。
+        :type vertexset_format: str
+        :param schema_path: 新增数据的元数据文件路径。
+        :type schema_path: str
+        :param log_dir: 导入图日志存放目录，用于存储导入失败的数据和详细错入原因。
+        :type log_dir: str
+        :param parallel_edge: 重复边处理
+        :type parallel_edge: object
+        :param action: 处理方式，取值为allow，ignore和override，默认为allow。 - allow表示允许重复边。 - ignore表示忽略之后的重复边。 - override表示覆盖之前的重复边。
+        :type action: str
+        :param ignore_label: 重复边的定义，是否忽略Label。取值为true或者false，默认取true。 - true 表示重复边定义不包含Label，即用&lt;源点，终点&gt;标记一条边，不包含Label。 - false 表示重复边定义包含Label，即用&lt;源点，终点，Label&gt;标记一条边。
+        :type ignore_label: bool
+        :param delimiter: csv格式文件字段分隔符，默认值为逗号（,）。list/set类型的字段内元素分隔符默认为分号（;）。
+        :type delimiter: str
+        :param trim_quote: csv格式文件字段包围符，默认值为双引号（\&quot;）。用来包围一个字段，如字段中含有分隔符或者换行等。
+        :type trim_quote: str
+        :param offline: 是否离线导入，取值为true或者false，默认取false。 - true 表示离线导入，导入速度较快，但导入过程中图处于锁定状态，不可读不可写。 - false 表示在线导入，相对离线导入，在线导入速度略慢，但导入过程中图并未锁定，可读不可写。
+        :type offline: bool
+        """
         
         
 
@@ -113,7 +140,7 @@ class ImportGraphReq:
         边文件目录或边文件名。
 
         :param edgeset_path: The edgeset_path of this ImportGraphReq.
-        :type: str
+        :type edgeset_path: str
         """
         self._edgeset_path = edgeset_path
 
@@ -135,7 +162,7 @@ class ImportGraphReq:
         边数据集格式。当前仅支持csv。  默认为csv。
 
         :param edgeset_format: The edgeset_format of this ImportGraphReq.
-        :type: str
+        :type edgeset_format: str
         """
         self._edgeset_format = edgeset_format
 
@@ -157,7 +184,7 @@ class ImportGraphReq:
         点文件目录或点文件名。
 
         :param vertexset_path: The vertexset_path of this ImportGraphReq.
-        :type: str
+        :type vertexset_path: str
         """
         self._vertexset_path = vertexset_path
 
@@ -179,7 +206,7 @@ class ImportGraphReq:
         点数据集格式。当前仅支持csv。  默认为csv。
 
         :param vertexset_format: The vertexset_format of this ImportGraphReq.
-        :type: str
+        :type vertexset_format: str
         """
         self._vertexset_format = vertexset_format
 
@@ -201,7 +228,7 @@ class ImportGraphReq:
         新增数据的元数据文件路径。
 
         :param schema_path: The schema_path of this ImportGraphReq.
-        :type: str
+        :type schema_path: str
         """
         self._schema_path = schema_path
 
@@ -223,7 +250,7 @@ class ImportGraphReq:
         导入图日志存放目录，用于存储导入失败的数据和详细错入原因。
 
         :param log_dir: The log_dir of this ImportGraphReq.
-        :type: str
+        :type log_dir: str
         """
         self._log_dir = log_dir
 
@@ -245,7 +272,7 @@ class ImportGraphReq:
         重复边处理
 
         :param parallel_edge: The parallel_edge of this ImportGraphReq.
-        :type: object
+        :type parallel_edge: object
         """
         self._parallel_edge = parallel_edge
 
@@ -267,7 +294,7 @@ class ImportGraphReq:
         处理方式，取值为allow，ignore和override，默认为allow。 - allow表示允许重复边。 - ignore表示忽略之后的重复边。 - override表示覆盖之前的重复边。
 
         :param action: The action of this ImportGraphReq.
-        :type: str
+        :type action: str
         """
         self._action = action
 
@@ -289,7 +316,7 @@ class ImportGraphReq:
         重复边的定义，是否忽略Label。取值为true或者false，默认取true。 - true 表示重复边定义不包含Label，即用<源点，终点>标记一条边，不包含Label。 - false 表示重复边定义包含Label，即用<源点，终点，Label>标记一条边。
 
         :param ignore_label: The ignore_label of this ImportGraphReq.
-        :type: bool
+        :type ignore_label: bool
         """
         self._ignore_label = ignore_label
 
@@ -311,7 +338,7 @@ class ImportGraphReq:
         csv格式文件字段分隔符，默认值为逗号（,）。list/set类型的字段内元素分隔符默认为分号（;）。
 
         :param delimiter: The delimiter of this ImportGraphReq.
-        :type: str
+        :type delimiter: str
         """
         self._delimiter = delimiter
 
@@ -333,7 +360,7 @@ class ImportGraphReq:
         csv格式文件字段包围符，默认值为双引号（\"）。用来包围一个字段，如字段中含有分隔符或者换行等。
 
         :param trim_quote: The trim_quote of this ImportGraphReq.
-        :type: str
+        :type trim_quote: str
         """
         self._trim_quote = trim_quote
 
@@ -355,7 +382,7 @@ class ImportGraphReq:
         是否离线导入，取值为true或者false，默认取false。 - true 表示离线导入，导入速度较快，但导入过程中图处于锁定状态，不可读不可写。 - false 表示在线导入，相对离线导入，在线导入速度略慢，但导入过程中图并未锁定，可读不可写。
 
         :param offline: The offline of this ImportGraphReq.
-        :type: bool
+        :type offline: bool
         """
         self._offline = offline
 

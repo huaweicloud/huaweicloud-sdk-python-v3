@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowListenerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowListenerRequest:
     }
 
     def __init__(self, listener_id=None):
-        """ShowListenerRequest - a model defined in huaweicloud sdk"""
+        """ShowListenerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param listener_id: 监听器id
+        :type listener_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowListenerRequest:
         监听器id
 
         :param listener_id: The listener_id of this ShowListenerRequest.
-        :type: str
+        :type listener_id: str
         """
         self._listener_id = listener_id
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAppConfigV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class CreateAppConfigV2Response(SdkResponse):
     }
 
     def __init__(self, id=None, app_id=None, config_type=None, config_name=None, config_value=None, update_time=None, description=None):
-        """CreateAppConfigV2Response - a model defined in huaweicloud sdk"""
+        """CreateAppConfigV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param id: 应用配置编号
+        :type id: str
+        :param app_id: 应用编号
+        :type app_id: str
+        :param config_type: 应用配置类型
+        :type config_type: str
+        :param config_name: 应用配置名称
+        :type config_name: str
+        :param config_value: 应用配置值
+        :type config_value: str
+        :param update_time: 应用配置更新时间
+        :type update_time: datetime
+        :param description: 应用配置描述
+        :type description: str
+        """
         
         super(CreateAppConfigV2Response, self).__init__()
 
@@ -88,7 +105,7 @@ class CreateAppConfigV2Response(SdkResponse):
         应用配置编号
 
         :param id: The id of this CreateAppConfigV2Response.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -110,7 +127,7 @@ class CreateAppConfigV2Response(SdkResponse):
         应用编号
 
         :param app_id: The app_id of this CreateAppConfigV2Response.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -132,7 +149,7 @@ class CreateAppConfigV2Response(SdkResponse):
         应用配置类型
 
         :param config_type: The config_type of this CreateAppConfigV2Response.
-        :type: str
+        :type config_type: str
         """
         self._config_type = config_type
 
@@ -154,7 +171,7 @@ class CreateAppConfigV2Response(SdkResponse):
         应用配置名称
 
         :param config_name: The config_name of this CreateAppConfigV2Response.
-        :type: str
+        :type config_name: str
         """
         self._config_name = config_name
 
@@ -176,7 +193,7 @@ class CreateAppConfigV2Response(SdkResponse):
         应用配置值
 
         :param config_value: The config_value of this CreateAppConfigV2Response.
-        :type: str
+        :type config_value: str
         """
         self._config_value = config_value
 
@@ -198,7 +215,7 @@ class CreateAppConfigV2Response(SdkResponse):
         应用配置更新时间
 
         :param update_time: The update_time of this CreateAppConfigV2Response.
-        :type: datetime
+        :type update_time: datetime
         """
         self._update_time = update_time
 
@@ -220,7 +237,7 @@ class CreateAppConfigV2Response(SdkResponse):
         应用配置描述
 
         :param description: The description of this CreateAppConfigV2Response.
-        :type: str
+        :type description: str
         """
         self._description = description
 

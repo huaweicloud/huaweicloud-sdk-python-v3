@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDomainSettingsResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class UpdateDomainSettingsResponseBody:
     }
 
     def __init__(self, domain_id=None, login_url=None, login_username=None, login_password=None, login_cookies=None, verify_url=None, http_headers=None, domain_name=None):
-        """UpdateDomainSettingsResponseBody - a model defined in huaweicloud sdk"""
+        """UpdateDomainSettingsResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param domain_id: 域名id
+        :type domain_id: str
+        :param login_url: 网站需要登录时，设置登录页面
+        :type login_url: str
+        :param login_username: 网站需要登录时，设置登录用户名
+        :type login_username: str
+        :param login_password: 网站需要登录时，设置登录密码
+        :type login_password: str
+        :param login_cookies: 网站需要登录时，设置登录cookie
+        :type login_cookies: str
+        :param verify_url: 设置用于验证登录是否成功的网址
+        :type verify_url: str
+        :param http_headers: 设置自定义HTTP请求头
+        :type http_headers: dict(str, str)
+        :param domain_name: 域名
+        :type domain_name: str
+        """
         
         
 
@@ -93,7 +112,7 @@ class UpdateDomainSettingsResponseBody:
         域名id
 
         :param domain_id: The domain_id of this UpdateDomainSettingsResponseBody.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -115,7 +134,7 @@ class UpdateDomainSettingsResponseBody:
         网站需要登录时，设置登录页面
 
         :param login_url: The login_url of this UpdateDomainSettingsResponseBody.
-        :type: str
+        :type login_url: str
         """
         self._login_url = login_url
 
@@ -137,7 +156,7 @@ class UpdateDomainSettingsResponseBody:
         网站需要登录时，设置登录用户名
 
         :param login_username: The login_username of this UpdateDomainSettingsResponseBody.
-        :type: str
+        :type login_username: str
         """
         self._login_username = login_username
 
@@ -159,7 +178,7 @@ class UpdateDomainSettingsResponseBody:
         网站需要登录时，设置登录密码
 
         :param login_password: The login_password of this UpdateDomainSettingsResponseBody.
-        :type: str
+        :type login_password: str
         """
         self._login_password = login_password
 
@@ -181,7 +200,7 @@ class UpdateDomainSettingsResponseBody:
         网站需要登录时，设置登录cookie
 
         :param login_cookies: The login_cookies of this UpdateDomainSettingsResponseBody.
-        :type: str
+        :type login_cookies: str
         """
         self._login_cookies = login_cookies
 
@@ -203,7 +222,7 @@ class UpdateDomainSettingsResponseBody:
         设置用于验证登录是否成功的网址
 
         :param verify_url: The verify_url of this UpdateDomainSettingsResponseBody.
-        :type: str
+        :type verify_url: str
         """
         self._verify_url = verify_url
 
@@ -225,7 +244,7 @@ class UpdateDomainSettingsResponseBody:
         设置自定义HTTP请求头
 
         :param http_headers: The http_headers of this UpdateDomainSettingsResponseBody.
-        :type: dict(str, str)
+        :type http_headers: dict(str, str)
         """
         self._http_headers = http_headers
 
@@ -247,7 +266,7 @@ class UpdateDomainSettingsResponseBody:
         域名
 
         :param domain_name: The domain_name of this UpdateDomainSettingsResponseBody.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 

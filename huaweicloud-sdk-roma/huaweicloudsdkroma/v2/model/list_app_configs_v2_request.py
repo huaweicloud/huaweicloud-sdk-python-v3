@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListAppConfigsV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListAppConfigsV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, app_id=None, config_name=None, roma_app_name=None):
-        """ListAppConfigsV2Request - a model defined in huaweicloud sdk"""
+        """ListAppConfigsV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param app_id: 应用编号
+        :type app_id: str
+        :param config_name: 应用配置名称
+        :type config_name: str
+        :param roma_app_name: 应用名称
+        :type roma_app_name: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListAppConfigsV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListAppConfigsV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -104,7 +119,7 @@ class ListAppConfigsV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListAppConfigsV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -126,7 +141,7 @@ class ListAppConfigsV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListAppConfigsV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -148,7 +163,7 @@ class ListAppConfigsV2Request:
         应用编号
 
         :param app_id: The app_id of this ListAppConfigsV2Request.
-        :type: str
+        :type app_id: str
         """
         self._app_id = app_id
 
@@ -170,7 +185,7 @@ class ListAppConfigsV2Request:
         应用配置名称
 
         :param config_name: The config_name of this ListAppConfigsV2Request.
-        :type: str
+        :type config_name: str
         """
         self._config_name = config_name
 
@@ -192,7 +207,7 @@ class ListAppConfigsV2Request:
         应用名称
 
         :param roma_app_name: The roma_app_name of this ListAppConfigsV2Request.
-        :type: str
+        :type roma_app_name: str
         """
         self._roma_app_name = roma_app_name
 

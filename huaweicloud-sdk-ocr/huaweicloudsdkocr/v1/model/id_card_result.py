@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IdCardResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class IdCardResult:
     }
 
     def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, issue=None, valid_from=None, valid_to=None, verification_result=None, text_location=None):
-        """IdCardResult - a model defined in huaweicloud sdk"""
+        """IdCardResult
+
+        The model defined in huaweicloud sdk
+
+        :param name: 姓名。 
+        :type name: str
+        :param sex: 性别。 
+        :type sex: str
+        :param birth: 出生日期。 
+        :type birth: str
+        :param ethnicity: 民族。 
+        :type ethnicity: str
+        :param address: 地址。 
+        :type address: str
+        :param number: 身份证号。 
+        :type number: str
+        :param issue: 发证机关。 
+        :type issue: str
+        :param valid_from: 有效起始日期。 
+        :type valid_from: str
+        :param valid_to: 有效结束日期。   &gt; 说明：  - 身份证识别支持中华人民共和国居民身份证识别。 
+        :type valid_to: str
+        :param verification_result: 
+        :type verification_result: :class:`huaweicloudsdkocr.v1.IdcardVerificationResult`
+        :param text_location: 文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
+        :type text_location: object
+        """
         
         
 
@@ -108,7 +133,7 @@ class IdCardResult:
         姓名。 
 
         :param name: The name of this IdCardResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -130,7 +155,7 @@ class IdCardResult:
         性别。 
 
         :param sex: The sex of this IdCardResult.
-        :type: str
+        :type sex: str
         """
         self._sex = sex
 
@@ -152,7 +177,7 @@ class IdCardResult:
         出生日期。 
 
         :param birth: The birth of this IdCardResult.
-        :type: str
+        :type birth: str
         """
         self._birth = birth
 
@@ -174,7 +199,7 @@ class IdCardResult:
         民族。 
 
         :param ethnicity: The ethnicity of this IdCardResult.
-        :type: str
+        :type ethnicity: str
         """
         self._ethnicity = ethnicity
 
@@ -196,7 +221,7 @@ class IdCardResult:
         地址。 
 
         :param address: The address of this IdCardResult.
-        :type: str
+        :type address: str
         """
         self._address = address
 
@@ -218,7 +243,7 @@ class IdCardResult:
         身份证号。 
 
         :param number: The number of this IdCardResult.
-        :type: str
+        :type number: str
         """
         self._number = number
 
@@ -240,7 +265,7 @@ class IdCardResult:
         发证机关。 
 
         :param issue: The issue of this IdCardResult.
-        :type: str
+        :type issue: str
         """
         self._issue = issue
 
@@ -262,7 +287,7 @@ class IdCardResult:
         有效起始日期。 
 
         :param valid_from: The valid_from of this IdCardResult.
-        :type: str
+        :type valid_from: str
         """
         self._valid_from = valid_from
 
@@ -284,7 +309,7 @@ class IdCardResult:
         有效结束日期。   > 说明：  - 身份证识别支持中华人民共和国居民身份证识别。 
 
         :param valid_to: The valid_to of this IdCardResult.
-        :type: str
+        :type valid_to: str
         """
         self._valid_to = valid_to
 
@@ -294,7 +319,7 @@ class IdCardResult:
 
 
         :return: The verification_result of this IdCardResult.
-        :rtype: IdcardVerificationResult
+        :rtype: :class:`huaweicloudsdkocr.v1.IdcardVerificationResult`
         """
         return self._verification_result
 
@@ -304,7 +329,7 @@ class IdCardResult:
 
 
         :param verification_result: The verification_result of this IdCardResult.
-        :type: IdcardVerificationResult
+        :type verification_result: :class:`huaweicloudsdkocr.v1.IdcardVerificationResult`
         """
         self._verification_result = verification_result
 
@@ -326,7 +351,7 @@ class IdCardResult:
         文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
 
         :param text_location: The text_location of this IdCardResult.
-        :type: object
+        :type text_location: object
         """
         self._text_location = text_location
 

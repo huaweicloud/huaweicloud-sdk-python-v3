@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetDevicesListArrayObject:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -72,7 +71,55 @@ class GetDevicesListArrayObject:
     }
 
     def __init__(self, id=None, name=None, type=None, status=None, cpu=None, memory=None, os=None, firmware_name=None, firmware_version=None, firmware_status=None, firmware_cause=None, path=None, path_update_status=None, path_update_cause=None, create_time=None, update_time=None, user_time=None, resource_spec_code=None, cloud_service_type=None, active_content=None, active_flag=None, topic_urn=None):
-        """GetDevicesListArrayObject - a model defined in huaweicloud sdk"""
+        """GetDevicesListArrayObject
+
+        The model defined in huaweicloud sdk
+
+        :param id: 设备ID
+        :type id: str
+        :param name: 设备名称
+        :type name: str
+        :param type: 设备类型
+        :type type: str
+        :param status: 设备状态(0:离线;1:在线)
+        :type status: int
+        :param cpu: cpu核数
+        :type cpu: int
+        :param memory: 内存大小
+        :type memory: int
+        :param os: 操作系统
+        :type os: str
+        :param firmware_name: 固件名称
+        :type firmware_name: str
+        :param firmware_version: 固件版本
+        :type firmware_version: str
+        :param firmware_status: 固件状态(1:更新中，2：更新失败，3：更新成功)
+        :type firmware_status: int
+        :param firmware_cause: 固件更新失败原因
+        :type firmware_cause: str
+        :param path: 设备数据存储路径，该桶需要和当前region匹配
+        :type path: str
+        :param path_update_status: 设备数据存储路径更新状态(0:更新成功，1：更新中)
+        :type path_update_status: int
+        :param path_update_cause: 设备数据存储路径更新失败原因
+        :type path_update_cause: str
+        :param create_time: 创建时间（时间戳）
+        :type create_time: int
+        :param update_time: 更新时间（时间戳）
+        :type update_time: int
+        :param user_time: IAM用户名
+        :type user_time: str
+        :param resource_spec_code: 计费资源码
+        :type resource_spec_code: str
+        :param cloud_service_type: 云服务计费类型
+        :type cloud_service_type: str
+        :param active_content: 激活内容
+        :type active_content: str
+        :param active_flag: 激活状态(0:未激活，1：已激活且付费，2：已激活且免费，3：付费到期，4：已激活使用SN码，5：已激活30天免费，6：免费到期)
+        :type active_flag: int
+        :param topic_urn: 关联设备的主题消息推送的URN地址
+        :type topic_urn: str
+        """
         
         
 
@@ -163,7 +210,7 @@ class GetDevicesListArrayObject:
         设备ID
 
         :param id: The id of this GetDevicesListArrayObject.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -185,7 +232,7 @@ class GetDevicesListArrayObject:
         设备名称
 
         :param name: The name of this GetDevicesListArrayObject.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -207,7 +254,7 @@ class GetDevicesListArrayObject:
         设备类型
 
         :param type: The type of this GetDevicesListArrayObject.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -229,7 +276,7 @@ class GetDevicesListArrayObject:
         设备状态(0:离线;1:在线)
 
         :param status: The status of this GetDevicesListArrayObject.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -251,7 +298,7 @@ class GetDevicesListArrayObject:
         cpu核数
 
         :param cpu: The cpu of this GetDevicesListArrayObject.
-        :type: int
+        :type cpu: int
         """
         self._cpu = cpu
 
@@ -273,7 +320,7 @@ class GetDevicesListArrayObject:
         内存大小
 
         :param memory: The memory of this GetDevicesListArrayObject.
-        :type: int
+        :type memory: int
         """
         self._memory = memory
 
@@ -295,7 +342,7 @@ class GetDevicesListArrayObject:
         操作系统
 
         :param os: The os of this GetDevicesListArrayObject.
-        :type: str
+        :type os: str
         """
         self._os = os
 
@@ -317,7 +364,7 @@ class GetDevicesListArrayObject:
         固件名称
 
         :param firmware_name: The firmware_name of this GetDevicesListArrayObject.
-        :type: str
+        :type firmware_name: str
         """
         self._firmware_name = firmware_name
 
@@ -339,7 +386,7 @@ class GetDevicesListArrayObject:
         固件版本
 
         :param firmware_version: The firmware_version of this GetDevicesListArrayObject.
-        :type: str
+        :type firmware_version: str
         """
         self._firmware_version = firmware_version
 
@@ -361,7 +408,7 @@ class GetDevicesListArrayObject:
         固件状态(1:更新中，2：更新失败，3：更新成功)
 
         :param firmware_status: The firmware_status of this GetDevicesListArrayObject.
-        :type: int
+        :type firmware_status: int
         """
         self._firmware_status = firmware_status
 
@@ -383,7 +430,7 @@ class GetDevicesListArrayObject:
         固件更新失败原因
 
         :param firmware_cause: The firmware_cause of this GetDevicesListArrayObject.
-        :type: str
+        :type firmware_cause: str
         """
         self._firmware_cause = firmware_cause
 
@@ -405,7 +452,7 @@ class GetDevicesListArrayObject:
         设备数据存储路径，该桶需要和当前region匹配
 
         :param path: The path of this GetDevicesListArrayObject.
-        :type: str
+        :type path: str
         """
         self._path = path
 
@@ -427,7 +474,7 @@ class GetDevicesListArrayObject:
         设备数据存储路径更新状态(0:更新成功，1：更新中)
 
         :param path_update_status: The path_update_status of this GetDevicesListArrayObject.
-        :type: int
+        :type path_update_status: int
         """
         self._path_update_status = path_update_status
 
@@ -449,7 +496,7 @@ class GetDevicesListArrayObject:
         设备数据存储路径更新失败原因
 
         :param path_update_cause: The path_update_cause of this GetDevicesListArrayObject.
-        :type: str
+        :type path_update_cause: str
         """
         self._path_update_cause = path_update_cause
 
@@ -471,7 +518,7 @@ class GetDevicesListArrayObject:
         创建时间（时间戳）
 
         :param create_time: The create_time of this GetDevicesListArrayObject.
-        :type: int
+        :type create_time: int
         """
         self._create_time = create_time
 
@@ -493,7 +540,7 @@ class GetDevicesListArrayObject:
         更新时间（时间戳）
 
         :param update_time: The update_time of this GetDevicesListArrayObject.
-        :type: int
+        :type update_time: int
         """
         self._update_time = update_time
 
@@ -515,7 +562,7 @@ class GetDevicesListArrayObject:
         IAM用户名
 
         :param user_time: The user_time of this GetDevicesListArrayObject.
-        :type: str
+        :type user_time: str
         """
         self._user_time = user_time
 
@@ -537,7 +584,7 @@ class GetDevicesListArrayObject:
         计费资源码
 
         :param resource_spec_code: The resource_spec_code of this GetDevicesListArrayObject.
-        :type: str
+        :type resource_spec_code: str
         """
         self._resource_spec_code = resource_spec_code
 
@@ -559,7 +606,7 @@ class GetDevicesListArrayObject:
         云服务计费类型
 
         :param cloud_service_type: The cloud_service_type of this GetDevicesListArrayObject.
-        :type: str
+        :type cloud_service_type: str
         """
         self._cloud_service_type = cloud_service_type
 
@@ -581,7 +628,7 @@ class GetDevicesListArrayObject:
         激活内容
 
         :param active_content: The active_content of this GetDevicesListArrayObject.
-        :type: str
+        :type active_content: str
         """
         self._active_content = active_content
 
@@ -603,7 +650,7 @@ class GetDevicesListArrayObject:
         激活状态(0:未激活，1：已激活且付费，2：已激活且免费，3：付费到期，4：已激活使用SN码，5：已激活30天免费，6：免费到期)
 
         :param active_flag: The active_flag of this GetDevicesListArrayObject.
-        :type: int
+        :type active_flag: int
         """
         self._active_flag = active_flag
 
@@ -625,7 +672,7 @@ class GetDevicesListArrayObject:
         关联设备的主题消息推送的URN地址
 
         :param topic_urn: The topic_urn of this GetDevicesListArrayObject.
-        :type: str
+        :type topic_urn: str
         """
         self._topic_urn = topic_urn
 

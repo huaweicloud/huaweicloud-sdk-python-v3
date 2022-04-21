@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NeutronUpdateFirewallPolicyResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NeutronUpdateFirewallPolicyResponse(SdkResponse):
     }
 
     def __init__(self, firewall_policy=None):
-        """NeutronUpdateFirewallPolicyResponse - a model defined in huaweicloud sdk"""
+        """NeutronUpdateFirewallPolicyResponse
+
+        The model defined in huaweicloud sdk
+
+        :param firewall_policy: 
+        :type firewall_policy: :class:`huaweicloudsdkvpc.v2.NeutronFirewallPolicy`
+        """
         
         super(NeutronUpdateFirewallPolicyResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class NeutronUpdateFirewallPolicyResponse(SdkResponse):
 
 
         :return: The firewall_policy of this NeutronUpdateFirewallPolicyResponse.
-        :rtype: NeutronFirewallPolicy
+        :rtype: :class:`huaweicloudsdkvpc.v2.NeutronFirewallPolicy`
         """
         return self._firewall_policy
 
@@ -56,7 +61,7 @@ class NeutronUpdateFirewallPolicyResponse(SdkResponse):
 
 
         :param firewall_policy: The firewall_policy of this NeutronUpdateFirewallPolicyResponse.
-        :type: NeutronFirewallPolicy
+        :type firewall_policy: :class:`huaweicloudsdkvpc.v2.NeutronFirewallPolicy`
         """
         self._firewall_policy = firewall_policy
 

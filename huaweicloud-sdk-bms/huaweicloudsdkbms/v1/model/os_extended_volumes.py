@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OsExtendedVolumes:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class OsExtendedVolumes:
     }
 
     def __init__(self, id=None, delete_on_termination=None):
-        """OsExtendedVolumes - a model defined in huaweicloud sdk"""
+        """OsExtendedVolumes
+
+        The model defined in huaweicloud sdk
+
+        :param id: 云硬盘ID
+        :type id: str
+        :param delete_on_termination: 删裸金属服务器时是否一并删除该卷。true：是false：否
+        :type delete_on_termination: bool
+        """
         
         
 
@@ -63,7 +70,7 @@ class OsExtendedVolumes:
         云硬盘ID
 
         :param id: The id of this OsExtendedVolumes.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -85,7 +92,7 @@ class OsExtendedVolumes:
         删裸金属服务器时是否一并删除该卷。true：是false：否
 
         :param delete_on_termination: The delete_on_termination of this OsExtendedVolumes.
-        :type: bool
+        :type delete_on_termination: bool
         """
         self._delete_on_termination = delete_on_termination
 

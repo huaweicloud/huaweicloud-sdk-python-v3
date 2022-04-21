@@ -52,21 +52,17 @@ class EpsAsyncClient(Client):
         """创建企业项目
 
         创建企业项目。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param CreateEnterpriseProjectRequest request
-        :return: CreateEnterpriseProjectResponse
+        :param request: Request instance for CreateEnterpriseProject
+        :type request: :class:`huaweicloudsdkeps.v1.CreateEnterpriseProjectRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.CreateEnterpriseProjectResponse`
         """
         return self.create_enterprise_project_with_http_info(request)
 
     def create_enterprise_project_with_http_info(self, request):
-        """创建企业项目
-
-        创建企业项目。
-
-        :param CreateEnterpriseProjectRequest request
-        :return: CreateEnterpriseProjectResponse
-        """
-
         all_params = ['create_ep']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -110,26 +106,21 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def disable_enterprise_project_async(self, request):
         """停用企业项目
 
         停用企业项目。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param DisableEnterpriseProjectRequest request
-        :return: DisableEnterpriseProjectResponse
+        :param request: Request instance for DisableEnterpriseProject
+        :type request: :class:`huaweicloudsdkeps.v1.DisableEnterpriseProjectRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.DisableEnterpriseProjectResponse`
         """
         return self.disable_enterprise_project_with_http_info(request)
 
     def disable_enterprise_project_with_http_info(self, request):
-        """停用企业项目
-
-        停用企业项目。
-
-        :param DisableEnterpriseProjectRequest request
-        :return: DisableEnterpriseProjectResponse
-        """
-
         all_params = ['enterprise_project_id', 'action']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -175,26 +166,21 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def enable_enterprise_project_async(self, request):
         """启用企业项目
 
         启用企业项目。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param EnableEnterpriseProjectRequest request
-        :return: EnableEnterpriseProjectResponse
+        :param request: Request instance for EnableEnterpriseProject
+        :type request: :class:`huaweicloudsdkeps.v1.EnableEnterpriseProjectRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.EnableEnterpriseProjectResponse`
         """
         return self.enable_enterprise_project_with_http_info(request)
 
     def enable_enterprise_project_with_http_info(self, request):
-        """启用企业项目
-
-        启用企业项目。
-
-        :param EnableEnterpriseProjectRequest request
-        :return: EnableEnterpriseProjectResponse
-        """
-
         all_params = ['enterprise_project_id', 'action']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -240,26 +226,21 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_api_versions_async(self, request):
         """查询API版本列表
 
         查询企业项目的API版本列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListApiVersionsRequest request
-        :return: ListApiVersionsResponse
+        :param request: Request instance for ListApiVersions
+        :type request: :class:`huaweicloudsdkeps.v1.ListApiVersionsRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.ListApiVersionsResponse`
         """
         return self.list_api_versions_with_http_info(request)
 
     def list_api_versions_with_http_info(self, request):
-        """查询API版本列表
-
-        查询企业项目的API版本列表。
-
-        :param ListApiVersionsRequest request
-        :return: ListApiVersionsResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -301,26 +282,21 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_enterprise_project_async(self, request):
         """查询企业项目列表
 
         查询当前用户已授权的企业项目列表，用户可以使用企业项目绑定资源。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListEnterpriseProjectRequest request
-        :return: ListEnterpriseProjectResponse
+        :param request: Request instance for ListEnterpriseProject
+        :type request: :class:`huaweicloudsdkeps.v1.ListEnterpriseProjectRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.ListEnterpriseProjectResponse`
         """
         return self.list_enterprise_project_with_http_info(request)
 
     def list_enterprise_project_with_http_info(self, request):
-        """查询企业项目列表
-
-        查询当前用户已授权的企业项目列表，用户可以使用企业项目绑定资源。
-
-        :param ListEnterpriseProjectRequest request
-        :return: ListEnterpriseProjectResponse
-        """
-
         all_params = ['id', 'limit', 'name', 'offset', 'sort_dir', 'sort_key', 'status']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -376,26 +352,21 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def migrate_resource_async(self, request):
         """迁移资源
 
         迁移资源到目标企业项目。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param MigrateResourceRequest request
-        :return: MigrateResourceResponse
+        :param request: Request instance for MigrateResource
+        :type request: :class:`huaweicloudsdkeps.v1.MigrateResourceRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.MigrateResourceResponse`
         """
         return self.migrate_resource_with_http_info(request)
 
     def migrate_resource_with_http_info(self, request):
-        """迁移资源
-
-        迁移资源到目标企业项目。
-
-        :param MigrateResourceRequest request
-        :return: MigrateResourceResponse
-        """
-
         all_params = ['enterprise_project_id', 'req_migrate_resource']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -441,26 +412,21 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_api_version_async(self, request):
         """查询API版本号详情
 
         查询指定的企业项目API版本号详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowApiVersionRequest request
-        :return: ShowApiVersionResponse
+        :param request: Request instance for ShowApiVersion
+        :type request: :class:`huaweicloudsdkeps.v1.ShowApiVersionRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.ShowApiVersionResponse`
         """
         return self.show_api_version_with_http_info(request)
 
     def show_api_version_with_http_info(self, request):
-        """查询API版本号详情
-
-        查询指定的企业项目API版本号详情
-
-        :param ShowApiVersionRequest request
-        :return: ShowApiVersionResponse
-        """
-
         all_params = ['api_version']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -504,26 +470,21 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_enterprise_project_async(self, request):
         """查询企业项目详情
 
         查询企业项目详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowEnterpriseProjectRequest request
-        :return: ShowEnterpriseProjectResponse
+        :param request: Request instance for ShowEnterpriseProject
+        :type request: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectResponse`
         """
         return self.show_enterprise_project_with_http_info(request)
 
     def show_enterprise_project_with_http_info(self, request):
-        """查询企业项目详情
-
-        查询企业项目详情。
-
-        :param ShowEnterpriseProjectRequest request
-        :return: ShowEnterpriseProjectResponse
-        """
-
         all_params = ['enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -567,26 +528,21 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_enterprise_project_quota_async(self, request):
         """查询企业项目配额
 
         查询企业项目的配额信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowEnterpriseProjectQuotaRequest request
-        :return: ShowEnterpriseProjectQuotaResponse
+        :param request: Request instance for ShowEnterpriseProjectQuota
+        :type request: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectQuotaRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectQuotaResponse`
         """
         return self.show_enterprise_project_quota_with_http_info(request)
 
     def show_enterprise_project_quota_with_http_info(self, request):
-        """查询企业项目配额
-
-        查询企业项目的配额信息。
-
-        :param ShowEnterpriseProjectQuotaRequest request
-        :return: ShowEnterpriseProjectQuotaResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -628,26 +584,21 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_resource_bind_enterprise_project_async(self, request):
         """查询企业项目绑定的资源列表
 
         查询企业项目下绑定的资源详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowResourceBindEnterpriseProjectRequest request
-        :return: ShowResourceBindEnterpriseProjectResponse
+        :param request: Request instance for ShowResourceBindEnterpriseProject
+        :type request: :class:`huaweicloudsdkeps.v1.ShowResourceBindEnterpriseProjectRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.ShowResourceBindEnterpriseProjectResponse`
         """
         return self.show_resource_bind_enterprise_project_with_http_info(request)
 
     def show_resource_bind_enterprise_project_with_http_info(self, request):
-        """查询企业项目绑定的资源列表
-
-        查询企业项目下绑定的资源详情。
-
-        :param ShowResourceBindEnterpriseProjectRequest request
-        :return: ShowResourceBindEnterpriseProjectResponse
-        """
-
         all_params = ['enterprise_project_id', 'req_ep_resouce']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -693,26 +644,21 @@ class EpsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def update_enterprise_project_async(self, request):
         """修改企业项目
 
         修改企业项目。当前仅支持修改名称和描述。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param UpdateEnterpriseProjectRequest request
-        :return: UpdateEnterpriseProjectResponse
+        :param request: Request instance for UpdateEnterpriseProject
+        :type request: :class:`huaweicloudsdkeps.v1.UpdateEnterpriseProjectRequest`
+        :rtype: :class:`huaweicloudsdkeps.v1.UpdateEnterpriseProjectResponse`
         """
         return self.update_enterprise_project_with_http_info(request)
 
     def update_enterprise_project_with_http_info(self, request):
-        """修改企业项目
-
-        修改企业项目。当前仅支持修改名称和描述。
-
-        :param UpdateEnterpriseProjectRequest request
-        :return: UpdateEnterpriseProjectResponse
-        """
-
         all_params = ['enterprise_project_id', 'modify_ep']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -757,7 +703,6 @@ class EpsAsyncClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CdmStartClusterReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CdmStartClusterReq:
     }
 
     def __init__(self, start=None):
-        """CdmStartClusterReq - a model defined in huaweicloud sdk"""
+        """CdmStartClusterReq
+
+        The model defined in huaweicloud sdk
+
+        :param start: 集群启动操作，定义集群启动标识，为空对象
+        :type start: object
+        """
         
         
 
@@ -57,7 +62,7 @@ class CdmStartClusterReq:
         集群启动操作，定义集群启动标识，为空对象
 
         :param start: The start of this CdmStartClusterReq.
-        :type: object
+        :type start: object
         """
         self._start = start
 

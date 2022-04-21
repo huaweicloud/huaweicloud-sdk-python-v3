@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangingTheDelayThresholdRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ChangingTheDelayThresholdRequestBody:
     }
 
     def __init__(self, delay_threshold_in_kilobytes=None):
-        """ChangingTheDelayThresholdRequestBody - a model defined in huaweicloud sdk"""
+        """ChangingTheDelayThresholdRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param delay_threshold_in_kilobytes: 延时阈值（单位：KB），取值范围为0~10485760。
+        :type delay_threshold_in_kilobytes: int
+        """
         
         
 
@@ -57,7 +62,7 @@ class ChangingTheDelayThresholdRequestBody:
         延时阈值（单位：KB），取值范围为0~10485760。
 
         :param delay_threshold_in_kilobytes: The delay_threshold_in_kilobytes of this ChangingTheDelayThresholdRequestBody.
-        :type: int
+        :type delay_threshold_in_kilobytes: int
         """
         self._delay_threshold_in_kilobytes = delay_threshold_in_kilobytes
 

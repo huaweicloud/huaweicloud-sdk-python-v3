@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowEventRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowEventRequest:
     }
 
     def __init__(self, event_id=None, function_urn=None):
-        """ShowEventRequest - a model defined in huaweicloud sdk"""
+        """ShowEventRequest
+
+        The model defined in huaweicloud sdk
+
+        :param event_id: 事件ID。
+        :type event_id: str
+        :param function_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :type function_urn: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowEventRequest:
         事件ID。
 
         :param event_id: The event_id of this ShowEventRequest.
-        :type: str
+        :type event_id: str
         """
         self._event_id = event_id
 
@@ -83,7 +90,7 @@ class ShowEventRequest:
         函数的URN（Uniform Resource Name），唯一标识函数。
 
         :param function_urn: The function_urn of this ShowEventRequest.
-        :type: str
+        :type function_urn: str
         """
         self._function_urn = function_urn
 

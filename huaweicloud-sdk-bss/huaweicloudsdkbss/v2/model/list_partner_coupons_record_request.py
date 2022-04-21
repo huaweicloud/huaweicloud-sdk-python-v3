@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPartnerCouponsRecordRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class ListPartnerCouponsRecordRequest:
     }
 
     def __init__(self, operation_types=None, quota_id=None, quota_type=None, coupon_ids=None, customer_id=None, operation_time_begin=None, operation_time_end=None, result=None, offset=None, limit=None, indirect_partner_id=None):
-        """ListPartnerCouponsRecordRequest - a model defined in huaweicloud sdk"""
+        """ListPartnerCouponsRecordRequest
+
+        The model defined in huaweicloud sdk
+
+        :param operation_types: 操作类型。1：发放2：手动回收3：解绑自动回收4：过期回收5：退订回收6：退款充值撤销7：建立关联回收
+        :type operation_types: list[str]
+        :param quota_id: 额度ID。请从“查询优惠券额度”接口的响应参数中获取。
+        :type quota_id: str
+        :param quota_type: 额度类型：0：代金券额度1：现金券额度
+        :type quota_type: int
+        :param coupon_ids: 代金券ID列表。请从“发放优惠券”接口的响应参数中获取。
+        :type coupon_ids: list[str]
+        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :type customer_id: str
+        :param operation_time_begin: 操作时间（开始）。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出操作时间大于这个时间的记录。
+        :type operation_time_begin: str
+        :param operation_time_end: 操作时间（结束）。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出操作时间小于这个时间的记录。
+        :type operation_time_end: str
+        :param result: 操作结果：0：成功-1：失败（非0的记录）
+        :type result: str
+        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :type offset: int
+        :param limit: 每页记录数。默认值为10。
+        :type limit: int
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
+        :type indirect_partner_id: str
+        """
         
         
 
@@ -108,7 +133,7 @@ class ListPartnerCouponsRecordRequest:
         操作类型。1：发放2：手动回收3：解绑自动回收4：过期回收5：退订回收6：退款充值撤销7：建立关联回收
 
         :param operation_types: The operation_types of this ListPartnerCouponsRecordRequest.
-        :type: list[str]
+        :type operation_types: list[str]
         """
         self._operation_types = operation_types
 
@@ -130,7 +155,7 @@ class ListPartnerCouponsRecordRequest:
         额度ID。请从“查询优惠券额度”接口的响应参数中获取。
 
         :param quota_id: The quota_id of this ListPartnerCouponsRecordRequest.
-        :type: str
+        :type quota_id: str
         """
         self._quota_id = quota_id
 
@@ -152,7 +177,7 @@ class ListPartnerCouponsRecordRequest:
         额度类型：0：代金券额度1：现金券额度
 
         :param quota_type: The quota_type of this ListPartnerCouponsRecordRequest.
-        :type: int
+        :type quota_type: int
         """
         self._quota_type = quota_type
 
@@ -174,7 +199,7 @@ class ListPartnerCouponsRecordRequest:
         代金券ID列表。请从“发放优惠券”接口的响应参数中获取。
 
         :param coupon_ids: The coupon_ids of this ListPartnerCouponsRecordRequest.
-        :type: list[str]
+        :type coupon_ids: list[str]
         """
         self._coupon_ids = coupon_ids
 
@@ -196,7 +221,7 @@ class ListPartnerCouponsRecordRequest:
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
         :param customer_id: The customer_id of this ListPartnerCouponsRecordRequest.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -218,7 +243,7 @@ class ListPartnerCouponsRecordRequest:
         操作时间（开始）。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出操作时间大于这个时间的记录。
 
         :param operation_time_begin: The operation_time_begin of this ListPartnerCouponsRecordRequest.
-        :type: str
+        :type operation_time_begin: str
         """
         self._operation_time_begin = operation_time_begin
 
@@ -240,7 +265,7 @@ class ListPartnerCouponsRecordRequest:
         操作时间（结束）。UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出操作时间小于这个时间的记录。
 
         :param operation_time_end: The operation_time_end of this ListPartnerCouponsRecordRequest.
-        :type: str
+        :type operation_time_end: str
         """
         self._operation_time_end = operation_time_end
 
@@ -262,7 +287,7 @@ class ListPartnerCouponsRecordRequest:
         操作结果：0：成功-1：失败（非0的记录）
 
         :param result: The result of this ListPartnerCouponsRecordRequest.
-        :type: str
+        :type result: str
         """
         self._result = result
 
@@ -284,7 +309,7 @@ class ListPartnerCouponsRecordRequest:
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListPartnerCouponsRecordRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -306,7 +331,7 @@ class ListPartnerCouponsRecordRequest:
         每页记录数。默认值为10。
 
         :param limit: The limit of this ListPartnerCouponsRecordRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -328,7 +353,7 @@ class ListPartnerCouponsRecordRequest:
         精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
 
         :param indirect_partner_id: The indirect_partner_id of this ListPartnerCouponsRecordRequest.
-        :type: str
+        :type indirect_partner_id: str
         """
         self._indirect_partner_id = indirect_partner_id
 

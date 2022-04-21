@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class PrePaidServerTag:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class PrePaidServerTag:
     }
 
     def __init__(self, key=None, value=None):
-        """PrePaidServerTag - a model defined in huaweicloud sdk"""
+        """PrePaidServerTag
+
+        The model defined in huaweicloud sdk
+
+        :param key: 键。  最大长度36个unicode字符。key不能为空。不能包含非打印字符ASCII(0-31)，\&quot;&#x3D;\&quot;, \&quot;*\&quot;,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”。  同一资源的key值不能重复。
+        :type key: str
+        :param value:   值。  每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符ASCII(0-31)，“&#x3D;”,“*”,“&lt;”,“&gt;”,“\\”,“,”,“|”,“/”。
+        :type value: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class PrePaidServerTag:
         键。  最大长度36个unicode字符。key不能为空。不能包含非打印字符ASCII(0-31)，\"=\", \"*\",“<”,“>”,“\\”,“,”,“|”,“/”。  同一资源的key值不能重复。
 
         :param key: The key of this PrePaidServerTag.
-        :type: str
+        :type key: str
         """
         self._key = key
 
@@ -83,7 +90,7 @@ class PrePaidServerTag:
           值。  每个值最大长度43个unicode字符，可以为空字符串。 不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”。
 
         :param value: The value of this PrePaidServerTag.
-        :type: str
+        :type value: str
         """
         self._value = value
 

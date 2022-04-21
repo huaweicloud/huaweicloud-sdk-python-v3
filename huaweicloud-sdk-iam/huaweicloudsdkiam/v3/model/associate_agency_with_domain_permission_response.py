@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AssociateAgencyWithDomainPermissionResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -28,7 +27,11 @@ class AssociateAgencyWithDomainPermissionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AssociateAgencyWithDomainPermissionResponse - a model defined in huaweicloud sdk"""
+        """AssociateAgencyWithDomainPermissionResponse
+
+        The model defined in huaweicloud sdk
+
+        """
         
         super(AssociateAgencyWithDomainPermissionResponse, self).__init__()
         self.discriminator = None

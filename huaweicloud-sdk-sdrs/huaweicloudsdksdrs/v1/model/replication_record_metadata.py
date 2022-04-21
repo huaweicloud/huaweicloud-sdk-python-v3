@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReplicationRecordMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ReplicationRecordMetadata:
     }
 
     def __init__(self, multiattach=None, bootable=None, volume_size=None, volume_type=None):
-        """ReplicationRecordMetadata - a model defined in huaweicloud sdk"""
+        """ReplicationRecordMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param multiattach: 复制对中的云硬盘是否为共享云硬盘。
+        :type multiattach: bool
+        :param bootable: 复制对中的云硬盘是否为系统盘。
+        :type bootable: bool
+        :param volume_size: 复制对中的云硬盘容量。单位：GB
+        :type volume_size: int
+        :param volume_type: 复制对中的云硬盘类型。SATA：普通IO磁盘类型。SAS：高IO磁盘类型。SSD：超高IO磁盘类型。co-p1：高IO（性能优化I型）uh-l1：超高IO（时延优化）其中co-p1和uh-l1两种云硬盘只能使用在HANA云服务器、HL1型云服务器、HL2型云服务器上。
+        :type volume_type: str
+        """
         
         
 
@@ -69,7 +80,7 @@ class ReplicationRecordMetadata:
         复制对中的云硬盘是否为共享云硬盘。
 
         :param multiattach: The multiattach of this ReplicationRecordMetadata.
-        :type: bool
+        :type multiattach: bool
         """
         self._multiattach = multiattach
 
@@ -91,7 +102,7 @@ class ReplicationRecordMetadata:
         复制对中的云硬盘是否为系统盘。
 
         :param bootable: The bootable of this ReplicationRecordMetadata.
-        :type: bool
+        :type bootable: bool
         """
         self._bootable = bootable
 
@@ -113,7 +124,7 @@ class ReplicationRecordMetadata:
         复制对中的云硬盘容量。单位：GB
 
         :param volume_size: The volume_size of this ReplicationRecordMetadata.
-        :type: int
+        :type volume_size: int
         """
         self._volume_size = volume_size
 
@@ -135,7 +146,7 @@ class ReplicationRecordMetadata:
         复制对中的云硬盘类型。SATA：普通IO磁盘类型。SAS：高IO磁盘类型。SSD：超高IO磁盘类型。co-p1：高IO（性能优化I型）uh-l1：超高IO（时延优化）其中co-p1和uh-l1两种云硬盘只能使用在HANA云服务器、HL1型云服务器、HL2型云服务器上。
 
         :param volume_type: The volume_type of this ReplicationRecordMetadata.
-        :type: str
+        :type volume_type: str
         """
         self._volume_type = volume_type
 

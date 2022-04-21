@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateDatasourceInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class UpdateDatasourceInfoRequest:
     }
 
     def __init__(self, instance_id=None, datasource_id=None, body=None):
-        """UpdateDatasourceInfoRequest - a model defined in huaweicloud sdk"""
+        """UpdateDatasourceInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param datasource_id: 数据源ID
+        :type datasource_id: str
+        :param body: Body of the UpdateDatasourceInfoRequest
+        :type body: :class:`huaweicloudsdkroma.v2.DatasourceInfo`
+        """
         
         
 
@@ -66,7 +75,7 @@ class UpdateDatasourceInfoRequest:
         实例ID
 
         :param instance_id: The instance_id of this UpdateDatasourceInfoRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class UpdateDatasourceInfoRequest:
         数据源ID
 
         :param datasource_id: The datasource_id of this UpdateDatasourceInfoRequest.
-        :type: str
+        :type datasource_id: str
         """
         self._datasource_id = datasource_id
 
@@ -98,7 +107,7 @@ class UpdateDatasourceInfoRequest:
 
 
         :return: The body of this UpdateDatasourceInfoRequest.
-        :rtype: DatasourceInfo
+        :rtype: :class:`huaweicloudsdkroma.v2.DatasourceInfo`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class UpdateDatasourceInfoRequest:
 
 
         :param body: The body of this UpdateDatasourceInfoRequest.
-        :type: DatasourceInfo
+        :type body: :class:`huaweicloudsdkroma.v2.DatasourceInfo`
         """
         self._body = body
 

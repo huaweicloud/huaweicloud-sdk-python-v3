@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTaskStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class UpdateTaskStatusRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """UpdateTaskStatusRequest - a model defined in huaweicloud sdk"""
+        """UpdateTaskStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param task_id: 迁移任务ID
+        :type task_id: str
+        :param body: Body of the UpdateTaskStatusRequest
+        :type body: :class:`huaweicloudsdksms.v3.UpdateTaskStatusReq`
+        """
         
         
 
@@ -62,7 +69,7 @@ class UpdateTaskStatusRequest:
         迁移任务ID
 
         :param task_id: The task_id of this UpdateTaskStatusRequest.
-        :type: str
+        :type task_id: str
         """
         self._task_id = task_id
 
@@ -72,7 +79,7 @@ class UpdateTaskStatusRequest:
 
 
         :return: The body of this UpdateTaskStatusRequest.
-        :rtype: UpdateTaskStatusReq
+        :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskStatusReq`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class UpdateTaskStatusRequest:
 
 
         :param body: The body of this UpdateTaskStatusRequest.
-        :type: UpdateTaskStatusReq
+        :type body: :class:`huaweicloudsdksms.v3.UpdateTaskStatusReq`
         """
         self._body = body
 

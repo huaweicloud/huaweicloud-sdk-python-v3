@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdatePeriodToOnDemandResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdatePeriodToOnDemandResponse(SdkResponse):
     }
 
     def __init__(self, error_details=None):
-        """UpdatePeriodToOnDemandResponse - a model defined in huaweicloud sdk"""
+        """UpdatePeriodToOnDemandResponse
+
+        The model defined in huaweicloud sdk
+
+        :param error_details: HTTP 200的时候返回该字段；部分失败时仅返回失败的记录；如果全部成功，则该记录为空，具体参见表1。
+        :type error_details: list[:class:`huaweicloudsdkbssintl.v2.ErrorDetail`]
+        """
         
         super(UpdatePeriodToOnDemandResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class UpdatePeriodToOnDemandResponse(SdkResponse):
         HTTP 200的时候返回该字段；部分失败时仅返回失败的记录；如果全部成功，则该记录为空，具体参见表1。
 
         :return: The error_details of this UpdatePeriodToOnDemandResponse.
-        :rtype: list[ErrorDetail]
+        :rtype: list[:class:`huaweicloudsdkbssintl.v2.ErrorDetail`]
         """
         return self._error_details
 
@@ -58,7 +63,7 @@ class UpdatePeriodToOnDemandResponse(SdkResponse):
         HTTP 200的时候返回该字段；部分失败时仅返回失败的记录；如果全部成功，则该记录为空，具体参见表1。
 
         :param error_details: The error_details of this UpdatePeriodToOnDemandResponse.
-        :type: list[ErrorDetail]
+        :type error_details: list[:class:`huaweicloudsdkbssintl.v2.ErrorDetail`]
         """
         self._error_details = error_details
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateFollow302SwitchResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateFollow302SwitchResponse(SdkResponse):
     }
 
     def __init__(self, follow_status=None):
-        """UpdateFollow302SwitchResponse - a model defined in huaweicloud sdk"""
+        """UpdateFollow302SwitchResponse
+
+        The model defined in huaweicloud sdk
+
+        :param follow_status: 
+        :type follow_status: :class:`huaweicloudsdkcdn.v1.Follow302StatusBody`
+        """
         
         super(UpdateFollow302SwitchResponse, self).__init__()
 
@@ -46,7 +51,7 @@ class UpdateFollow302SwitchResponse(SdkResponse):
 
 
         :return: The follow_status of this UpdateFollow302SwitchResponse.
-        :rtype: Follow302StatusBody
+        :rtype: :class:`huaweicloudsdkcdn.v1.Follow302StatusBody`
         """
         return self._follow_status
 
@@ -56,7 +61,7 @@ class UpdateFollow302SwitchResponse(SdkResponse):
 
 
         :param follow_status: The follow_status of this UpdateFollow302SwitchResponse.
-        :type: Follow302StatusBody
+        :type follow_status: :class:`huaweicloudsdkcdn.v1.Follow302StatusBody`
         """
         self._follow_status = follow_status
 

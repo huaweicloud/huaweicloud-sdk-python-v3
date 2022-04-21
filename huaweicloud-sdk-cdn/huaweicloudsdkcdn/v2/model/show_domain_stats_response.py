@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDomainStatsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowDomainStatsResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """ShowDomainStatsResponse - a model defined in huaweicloud sdk"""
+        """ShowDomainStatsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param result: 按指定的分组方式组织的数据
+        :type result: dict(str, object)
+        """
         
         super(ShowDomainStatsResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ShowDomainStatsResponse(SdkResponse):
         按指定的分组方式组织的数据
 
         :param result: The result of this ShowDomainStatsResponse.
-        :type: dict(str, object)
+        :type result: dict(str, object)
         """
         self._result = result
 

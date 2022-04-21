@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowRefundOrderDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ShowRefundOrderDetailsRequest:
     }
 
     def __init__(self, order_id=None):
-        """ShowRefundOrderDetailsRequest - a model defined in huaweicloud sdk"""
+        """ShowRefundOrderDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param order_id: 退订订单或者降配订单的ID。
+        :type order_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ShowRefundOrderDetailsRequest:
         退订订单或者降配订单的ID。
 
         :param order_id: The order_id of this ShowRefundOrderDetailsRequest.
-        :type: str
+        :type order_id: str
         """
         self._order_id = order_id
 

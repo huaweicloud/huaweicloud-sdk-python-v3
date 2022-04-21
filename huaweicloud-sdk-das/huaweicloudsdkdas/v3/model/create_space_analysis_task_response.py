@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSpaceAnalysisTaskResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateSpaceAnalysisTaskResponse(SdkResponse):
     }
 
     def __init__(self, execution_time=None):
-        """CreateSpaceAnalysisTaskResponse - a model defined in huaweicloud sdk"""
+        """CreateSpaceAnalysisTaskResponse
+
+        The model defined in huaweicloud sdk
+
+        :param execution_time: 执行时间，毫秒为单位的时间戳
+        :type execution_time: int
+        """
         
         super(CreateSpaceAnalysisTaskResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class CreateSpaceAnalysisTaskResponse(SdkResponse):
         执行时间，毫秒为单位的时间戳
 
         :param execution_time: The execution_time of this CreateSpaceAnalysisTaskResponse.
-        :type: int
+        :type execution_time: int
         """
         self._execution_time = execution_time
 

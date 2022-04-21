@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RuleStatus:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RuleStatus:
     }
 
     def __init__(self, status=None):
-        """RuleStatus - a model defined in huaweicloud sdk"""
+        """RuleStatus
+
+        The model defined in huaweicloud sdk
+
+        :param status: **参数说明**：规则的激活状态。 **取值范围**： - active：激活。 - inactive：未激活。
+        :type status: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RuleStatus:
         **参数说明**：规则的激活状态。 **取值范围**： - active：激活。 - inactive：未激活。
 
         :param status: The status of this RuleStatus.
-        :type: str
+        :type status: str
         """
         self._status = status
 

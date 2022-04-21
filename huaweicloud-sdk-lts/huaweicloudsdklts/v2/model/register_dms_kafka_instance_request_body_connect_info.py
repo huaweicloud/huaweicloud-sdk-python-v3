@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RegisterDmsKafkaInstanceRequestBodyConnectInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class RegisterDmsKafkaInstanceRequestBodyConnectInfo:
     }
 
     def __init__(self, user_name=None, pwd=None):
-        """RegisterDmsKafkaInstanceRequestBodyConnectInfo - a model defined in huaweicloud sdk"""
+        """RegisterDmsKafkaInstanceRequestBodyConnectInfo
+
+        The model defined in huaweicloud sdk
+
+        :param user_name: 账号
+        :type user_name: str
+        :param pwd: 密码
+        :type pwd: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class RegisterDmsKafkaInstanceRequestBodyConnectInfo:
         账号
 
         :param user_name: The user_name of this RegisterDmsKafkaInstanceRequestBodyConnectInfo.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -85,7 +92,7 @@ class RegisterDmsKafkaInstanceRequestBodyConnectInfo:
         密码
 
         :param pwd: The pwd of this RegisterDmsKafkaInstanceRequestBodyConnectInfo.
-        :type: str
+        :type pwd: str
         """
         self._pwd = pwd
 

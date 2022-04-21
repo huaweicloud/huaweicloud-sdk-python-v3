@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class GetProductTemplatesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class GetProductTemplatesRequest:
     }
 
     def __init__(self, project_uuid=None, page_no=None, page_size=None):
-        """GetProductTemplatesRequest - a model defined in huaweicloud sdk"""
+        """GetProductTemplatesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param project_uuid: 项目ID
+        :type project_uuid: str
+        :param page_no: 分页页数
+        :type page_no: int
+        :param page_size: 每页数据数
+        :type page_size: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class GetProductTemplatesRequest:
         项目ID
 
         :param project_uuid: The project_uuid of this GetProductTemplatesRequest.
-        :type: str
+        :type project_uuid: str
         """
         self._project_uuid = project_uuid
 
@@ -89,7 +98,7 @@ class GetProductTemplatesRequest:
         分页页数
 
         :param page_no: The page_no of this GetProductTemplatesRequest.
-        :type: int
+        :type page_no: int
         """
         self._page_no = page_no
 
@@ -111,7 +120,7 @@ class GetProductTemplatesRequest:
         每页数据数
 
         :param page_size: The page_size of this GetProductTemplatesRequest.
-        :type: int
+        :type page_size: int
         """
         self._page_size = page_size
 

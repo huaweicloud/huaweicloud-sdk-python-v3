@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListSubnetsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListSubnetsRequest:
     }
 
     def __init__(self, vpc_id=None, limit=None, offset=None, site_id=None):
-        """ListSubnetsRequest - a model defined in huaweicloud sdk"""
+        """ListSubnetsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        :param limit: 查询返回边缘子网列表数量。取值范围：0~1000。
+        :type limit: int
+        :param offset: 查询的偏移量。
+        :type offset: int
+        :param site_id: 站点ID。
+        :type site_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class ListSubnetsRequest:
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this ListSubnetsRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -95,7 +106,7 @@ class ListSubnetsRequest:
         查询返回边缘子网列表数量。取值范围：0~1000。
 
         :param limit: The limit of this ListSubnetsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -117,7 +128,7 @@ class ListSubnetsRequest:
         查询的偏移量。
 
         :param offset: The offset of this ListSubnetsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -139,7 +150,7 @@ class ListSubnetsRequest:
         站点ID。
 
         :param site_id: The site_id of this ListSubnetsRequest.
-        :type: str
+        :type site_id: str
         """
         self._site_id = site_id
 

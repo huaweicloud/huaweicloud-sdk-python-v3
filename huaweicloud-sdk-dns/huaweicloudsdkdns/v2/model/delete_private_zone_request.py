@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class DeletePrivateZoneRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class DeletePrivateZoneRequest:
     }
 
     def __init__(self, zone_id=None):
-        """DeletePrivateZoneRequest - a model defined in huaweicloud sdk"""
+        """DeletePrivateZoneRequest
+
+        The model defined in huaweicloud sdk
+
+        :param zone_id: 待删除zone的ID。
+        :type zone_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class DeletePrivateZoneRequest:
         待删除zone的ID。
 
         :param zone_id: The zone_id of this DeletePrivateZoneRequest.
-        :type: str
+        :type zone_id: str
         """
         self._zone_id = zone_id
 

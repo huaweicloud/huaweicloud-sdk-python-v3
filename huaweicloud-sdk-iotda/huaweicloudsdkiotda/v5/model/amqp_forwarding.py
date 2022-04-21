@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AmqpForwarding:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AmqpForwarding:
     }
 
     def __init__(self, queue_name=None):
-        """AmqpForwarding - a model defined in huaweicloud sdk"""
+        """AmqpForwarding
+
+        The model defined in huaweicloud sdk
+
+        :param queue_name: **参数说明**：用于接收满足规则条件数据的amqp queue。
+        :type queue_name: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class AmqpForwarding:
         **参数说明**：用于接收满足规则条件数据的amqp queue。
 
         :param queue_name: The queue_name of this AmqpForwarding.
-        :type: str
+        :type queue_name: str
         """
         self._queue_name = queue_name
 

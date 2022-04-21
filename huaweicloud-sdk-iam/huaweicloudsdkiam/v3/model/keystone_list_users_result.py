@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class KeystoneListUsersResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class KeystoneListUsersResult:
     }
 
     def __init__(self, pwd_status=None, domain_id=None, last_project_id=None, name=None, description=None, password_expires_at=None, links=None, id=None, enabled=None, pwd_strength=None):
-        """KeystoneListUsersResult - a model defined in huaweicloud sdk"""
+        """KeystoneListUsersResult
+
+        The model defined in huaweicloud sdk
+
+        :param pwd_status: IAM用户密码状态。true：需要修改密码，false：正常。
+        :type pwd_status: bool
+        :param domain_id: IAM用户所属账号ID。
+        :type domain_id: str
+        :param last_project_id: IAM用户退出系统前，在控制台最后访问的项目ID。
+        :type last_project_id: str
+        :param name: IAM用户名。
+        :type name: str
+        :param description: IAM用户描述信息。
+        :type description: str
+        :param password_expires_at: IAM用户密码过期时间（UTC时间），“null”表示密码不过期。
+        :type password_expires_at: str
+        :param links: 
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
+        :param id: IAM用户ID。
+        :type id: str
+        :param enabled: IAM用户是否启用。true表示启用，false表示停用，默认为true。
+        :type enabled: bool
+        :param pwd_strength: IAM用户的密码强度。high：密码强度高；mid：密码强度中等；low：密码强度低。
+        :type pwd_strength: str
+        """
         
         
 
@@ -97,7 +120,7 @@ class KeystoneListUsersResult:
         IAM用户密码状态。true：需要修改密码，false：正常。
 
         :param pwd_status: The pwd_status of this KeystoneListUsersResult.
-        :type: bool
+        :type pwd_status: bool
         """
         self._pwd_status = pwd_status
 
@@ -119,7 +142,7 @@ class KeystoneListUsersResult:
         IAM用户所属账号ID。
 
         :param domain_id: The domain_id of this KeystoneListUsersResult.
-        :type: str
+        :type domain_id: str
         """
         self._domain_id = domain_id
 
@@ -141,7 +164,7 @@ class KeystoneListUsersResult:
         IAM用户退出系统前，在控制台最后访问的项目ID。
 
         :param last_project_id: The last_project_id of this KeystoneListUsersResult.
-        :type: str
+        :type last_project_id: str
         """
         self._last_project_id = last_project_id
 
@@ -163,7 +186,7 @@ class KeystoneListUsersResult:
         IAM用户名。
 
         :param name: The name of this KeystoneListUsersResult.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -185,7 +208,7 @@ class KeystoneListUsersResult:
         IAM用户描述信息。
 
         :param description: The description of this KeystoneListUsersResult.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -207,7 +230,7 @@ class KeystoneListUsersResult:
         IAM用户密码过期时间（UTC时间），“null”表示密码不过期。
 
         :param password_expires_at: The password_expires_at of this KeystoneListUsersResult.
-        :type: str
+        :type password_expires_at: str
         """
         self._password_expires_at = password_expires_at
 
@@ -217,7 +240,7 @@ class KeystoneListUsersResult:
 
 
         :return: The links of this KeystoneListUsersResult.
-        :rtype: Links
+        :rtype: :class:`huaweicloudsdkiam.v3.Links`
         """
         return self._links
 
@@ -227,7 +250,7 @@ class KeystoneListUsersResult:
 
 
         :param links: The links of this KeystoneListUsersResult.
-        :type: Links
+        :type links: :class:`huaweicloudsdkiam.v3.Links`
         """
         self._links = links
 
@@ -249,7 +272,7 @@ class KeystoneListUsersResult:
         IAM用户ID。
 
         :param id: The id of this KeystoneListUsersResult.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -271,7 +294,7 @@ class KeystoneListUsersResult:
         IAM用户是否启用。true表示启用，false表示停用，默认为true。
 
         :param enabled: The enabled of this KeystoneListUsersResult.
-        :type: bool
+        :type enabled: bool
         """
         self._enabled = enabled
 
@@ -293,7 +316,7 @@ class KeystoneListUsersResult:
         IAM用户的密码强度。high：密码强度高；mid：密码强度中等；low：密码强度低。
 
         :param pwd_strength: The pwd_strength of this KeystoneListUsersResult.
-        :type: str
+        :type pwd_strength: str
         """
         self._pwd_strength = pwd_strength
 

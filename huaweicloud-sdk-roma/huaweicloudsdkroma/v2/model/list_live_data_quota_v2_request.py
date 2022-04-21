@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLiveDataQuotaV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListLiveDataQuotaV2Request:
     }
 
     def __init__(self, instance_id=None):
-        """ListLiveDataQuotaV2Request - a model defined in huaweicloud sdk"""
+        """ListLiveDataQuotaV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListLiveDataQuotaV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListLiveDataQuotaV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 

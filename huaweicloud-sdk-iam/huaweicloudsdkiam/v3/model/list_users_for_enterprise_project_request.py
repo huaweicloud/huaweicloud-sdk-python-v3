@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListUsersForEnterpriseProjectRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListUsersForEnterpriseProjectRequest:
     }
 
     def __init__(self, enterprise_project_id=None):
-        """ListUsersForEnterpriseProjectRequest - a model defined in huaweicloud sdk"""
+        """ListUsersForEnterpriseProjectRequest
+
+        The model defined in huaweicloud sdk
+
+        :param enterprise_project_id: 待查询企业项目ID。
+        :type enterprise_project_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class ListUsersForEnterpriseProjectRequest:
         待查询企业项目ID。
 
         :param enterprise_project_id: The enterprise_project_id of this ListUsersForEnterpriseProjectRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 

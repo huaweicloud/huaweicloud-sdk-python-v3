@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class NodeItem:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class NodeItem:
     }
 
     def __init__(self, uid=None):
-        """NodeItem - a model defined in huaweicloud sdk"""
+        """NodeItem
+
+        The model defined in huaweicloud sdk
+
+        :param uid: 节点ID
+        :type uid: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class NodeItem:
         节点ID
 
         :param uid: The uid of this NodeItem.
-        :type: str
+        :type uid: str
         """
         self._uid = uid
 

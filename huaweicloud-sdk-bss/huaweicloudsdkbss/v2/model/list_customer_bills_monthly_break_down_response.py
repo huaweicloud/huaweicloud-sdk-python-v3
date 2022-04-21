@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
     }
 
     def __init__(self, currency=None, total_count=None, details=None):
-        """ListCustomerBillsMonthlyBreakDownResponse - a model defined in huaweicloud sdk"""
+        """ListCustomerBillsMonthlyBreakDownResponse
+
+        The model defined in huaweicloud sdk
+
+        :param currency: 货币单位代码： CNY：人民币
+        :type currency: str
+        :param total_count: 结果集数量，只有成功才返回这个参数。
+        :type total_count: int
+        :param details: 分摊成本记录数据。 具体请参见表3。
+        :type details: list[:class:`huaweicloudsdkbss.v2.NvlCostAnalysedBillDetail`]
+        """
         
         super(ListCustomerBillsMonthlyBreakDownResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
         货币单位代码： CNY：人民币
 
         :param currency: The currency of this ListCustomerBillsMonthlyBreakDownResponse.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 
@@ -90,7 +99,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
         结果集数量，只有成功才返回这个参数。
 
         :param total_count: The total_count of this ListCustomerBillsMonthlyBreakDownResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 
@@ -101,7 +110,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
         分摊成本记录数据。 具体请参见表3。
 
         :return: The details of this ListCustomerBillsMonthlyBreakDownResponse.
-        :rtype: list[NvlCostAnalysedBillDetail]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.NvlCostAnalysedBillDetail`]
         """
         return self._details
 
@@ -112,7 +121,7 @@ class ListCustomerBillsMonthlyBreakDownResponse(SdkResponse):
         分摊成本记录数据。 具体请参见表3。
 
         :param details: The details of this ListCustomerBillsMonthlyBreakDownResponse.
-        :type: list[NvlCostAnalysedBillDetail]
+        :type details: list[:class:`huaweicloudsdkbss.v2.NvlCostAnalysedBillDetail`]
         """
         self._details = details
 

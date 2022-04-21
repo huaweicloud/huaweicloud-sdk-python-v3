@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class QueryDeviceTypeResultDTO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class QueryDeviceTypeResultDTO:
     }
 
     def __init__(self, type=None, model=None, enable_active_code=None, resolution=None, support_projection_code=None, support_svc=None):
-        """QueryDeviceTypeResultDTO - a model defined in huaweicloud sdk"""
+        """QueryDeviceTypeResultDTO
+
+        The model defined in huaweicloud sdk
+
+        :param type: 终端类型，区分自研和第三方终端
+        :type type: str
+        :param model: 终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
+        :type model: str
+        :param enable_active_code: 是否支持激活码
+        :type enable_active_code: bool
+        :param resolution: 屏幕分辨率。1080P、720P等。
+        :type resolution: str
+        :param support_projection_code: 是否支持投影码
+        :type support_projection_code: bool
+        :param support_svc: 是否支持SVC
+        :type support_svc: bool
+        """
         
         
 
@@ -83,7 +98,7 @@ class QueryDeviceTypeResultDTO:
         终端类型，区分自研和第三方终端
 
         :param type: The type of this QueryDeviceTypeResultDTO.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -105,7 +120,7 @@ class QueryDeviceTypeResultDTO:
         终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
 
         :param model: The model of this QueryDeviceTypeResultDTO.
-        :type: str
+        :type model: str
         """
         self._model = model
 
@@ -127,7 +142,7 @@ class QueryDeviceTypeResultDTO:
         是否支持激活码
 
         :param enable_active_code: The enable_active_code of this QueryDeviceTypeResultDTO.
-        :type: bool
+        :type enable_active_code: bool
         """
         self._enable_active_code = enable_active_code
 
@@ -149,7 +164,7 @@ class QueryDeviceTypeResultDTO:
         屏幕分辨率。1080P、720P等。
 
         :param resolution: The resolution of this QueryDeviceTypeResultDTO.
-        :type: str
+        :type resolution: str
         """
         self._resolution = resolution
 
@@ -171,7 +186,7 @@ class QueryDeviceTypeResultDTO:
         是否支持投影码
 
         :param support_projection_code: The support_projection_code of this QueryDeviceTypeResultDTO.
-        :type: bool
+        :type support_projection_code: bool
         """
         self._support_projection_code = support_projection_code
 
@@ -193,7 +208,7 @@ class QueryDeviceTypeResultDTO:
         是否支持SVC
 
         :param support_svc: The support_svc of this QueryDeviceTypeResultDTO.
-        :type: bool
+        :type support_svc: bool
         """
         self._support_svc = support_svc
 

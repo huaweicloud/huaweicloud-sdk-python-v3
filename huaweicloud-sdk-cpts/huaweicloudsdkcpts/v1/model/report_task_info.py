@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReportTaskInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ReportTaskInfo:
     }
 
     def __init__(self, vum=None):
-        """ReportTaskInfo - a model defined in huaweicloud sdk"""
+        """ReportTaskInfo
+
+        The model defined in huaweicloud sdk
+
+        :param vum: 分钟*并发数
+        :type vum: float
+        """
         
         
 
@@ -58,7 +63,7 @@ class ReportTaskInfo:
         分钟*并发数
 
         :param vum: The vum of this ReportTaskInfo.
-        :type: float
+        :type vum: float
         """
         self._vum = vum
 

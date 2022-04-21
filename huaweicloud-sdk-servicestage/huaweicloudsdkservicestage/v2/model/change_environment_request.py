@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ChangeEnvironmentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ChangeEnvironmentRequest:
     }
 
     def __init__(self, environment_id=None, body=None):
-        """ChangeEnvironmentRequest - a model defined in huaweicloud sdk"""
+        """ChangeEnvironmentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param environment_id: 环境ID。
+        :type environment_id: str
+        :param body: Body of the ChangeEnvironmentRequest
+        :type body: :class:`huaweicloudsdkservicestage.v2.EnvironmentModify`
+        """
         
         
 
@@ -62,7 +69,7 @@ class ChangeEnvironmentRequest:
         环境ID。
 
         :param environment_id: The environment_id of this ChangeEnvironmentRequest.
-        :type: str
+        :type environment_id: str
         """
         self._environment_id = environment_id
 
@@ -72,7 +79,7 @@ class ChangeEnvironmentRequest:
 
 
         :return: The body of this ChangeEnvironmentRequest.
-        :rtype: EnvironmentModify
+        :rtype: :class:`huaweicloudsdkservicestage.v2.EnvironmentModify`
         """
         return self._body
 
@@ -82,7 +89,7 @@ class ChangeEnvironmentRequest:
 
 
         :param body: The body of this ChangeEnvironmentRequest.
-        :type: EnvironmentModify
+        :type body: :class:`huaweicloudsdkservicestage.v2.EnvironmentModify`
         """
         self._body = body
 

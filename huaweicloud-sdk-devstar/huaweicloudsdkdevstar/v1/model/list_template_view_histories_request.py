@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTemplateViewHistoriesRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTemplateViewHistoriesRequest:
     }
 
     def __init__(self, x_language=None, platform_source=None):
-        """ListTemplateViewHistoriesRequest - a model defined in huaweicloud sdk"""
+        """ListTemplateViewHistoriesRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
+        :type x_language: str
+        :param platform_source: 平台来源： - 0：查询CodeLabs中用户浏览过的模板。 - 1：查询DevStar中用户浏览过的模板。 
+        :type platform_source: int
+        """
         
         
 
@@ -62,7 +69,7 @@ class ListTemplateViewHistoriesRequest:
         语言类型，缺省值为“zh-cn”。  枚举值： - zh-cn：中文 - en-us：英文 
 
         :param x_language: The x_language of this ListTemplateViewHistoriesRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -84,7 +91,7 @@ class ListTemplateViewHistoriesRequest:
         平台来源： - 0：查询CodeLabs中用户浏览过的模板。 - 1：查询DevStar中用户浏览过的模板。 
 
         :param platform_source: The platform_source of this ListTemplateViewHistoriesRequest.
-        :type: int
+        :type platform_source: int
         """
         self._platform_source = platform_source
 

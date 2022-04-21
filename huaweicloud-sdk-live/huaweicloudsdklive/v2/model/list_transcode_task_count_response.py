@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListTranscodeTaskCountResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ListTranscodeTaskCountResponse(SdkResponse):
     }
 
     def __init__(self, transcode_data_list=None, x_request_id=None):
-        """ListTranscodeTaskCountResponse - a model defined in huaweicloud sdk"""
+        """ListTranscodeTaskCountResponse
+
+        The model defined in huaweicloud sdk
+
+        :param transcode_data_list: 时间戳及相应时间的数值。
+        :type transcode_data_list: list[:class:`huaweicloudsdklive.v2.TranscodeCountData`]
+        :param x_request_id: 
+        :type x_request_id: str
+        """
         
         super(ListTranscodeTaskCountResponse, self).__init__()
 
@@ -52,7 +59,7 @@ class ListTranscodeTaskCountResponse(SdkResponse):
         时间戳及相应时间的数值。
 
         :return: The transcode_data_list of this ListTranscodeTaskCountResponse.
-        :rtype: list[TranscodeCountData]
+        :rtype: list[:class:`huaweicloudsdklive.v2.TranscodeCountData`]
         """
         return self._transcode_data_list
 
@@ -63,7 +70,7 @@ class ListTranscodeTaskCountResponse(SdkResponse):
         时间戳及相应时间的数值。
 
         :param transcode_data_list: The transcode_data_list of this ListTranscodeTaskCountResponse.
-        :type: list[TranscodeCountData]
+        :type transcode_data_list: list[:class:`huaweicloudsdklive.v2.TranscodeCountData`]
         """
         self._transcode_data_list = transcode_data_list
 
@@ -83,7 +90,7 @@ class ListTranscodeTaskCountResponse(SdkResponse):
 
 
         :param x_request_id: The x_request_id of this ListTranscodeTaskCountResponse.
-        :type: str
+        :type x_request_id: str
         """
         self._x_request_id = x_request_id
 

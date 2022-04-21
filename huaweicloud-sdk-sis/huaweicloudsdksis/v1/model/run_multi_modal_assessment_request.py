@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RunMultiModalAssessmentRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RunMultiModalAssessmentRequest:
     }
 
     def __init__(self, body=None):
-        """RunMultiModalAssessmentRequest - a model defined in huaweicloud sdk"""
+        """RunMultiModalAssessmentRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the RunMultiModalAssessmentRequest
+        :type body: :class:`huaweicloudsdksis.v1.PostMultiModalAssessmentReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class RunMultiModalAssessmentRequest:
 
 
         :return: The body of this RunMultiModalAssessmentRequest.
-        :rtype: PostMultiModalAssessmentReq
+        :rtype: :class:`huaweicloudsdksis.v1.PostMultiModalAssessmentReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class RunMultiModalAssessmentRequest:
 
 
         :param body: The body of this RunMultiModalAssessmentRequest.
-        :type: PostMultiModalAssessmentReq
+        :type body: :class:`huaweicloudsdksis.v1.PostMultiModalAssessmentReq`
         """
         self._body = body
 

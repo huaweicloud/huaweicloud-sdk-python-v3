@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ClusterTask:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ClusterTask:
     }
 
     def __init__(self, description=None, id=None, name=None):
-        """ClusterTask - a model defined in huaweicloud sdk"""
+        """ClusterTask
+
+        The model defined in huaweicloud sdk
+
+        :param description: 任务描述
+        :type description: str
+        :param id: 任务id
+        :type id: str
+        :param name: 任务名称
+        :type name: str
+        """
         
         
 
@@ -68,7 +77,7 @@ class ClusterTask:
         任务描述
 
         :param description: The description of this ClusterTask.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -90,7 +99,7 @@ class ClusterTask:
         任务id
 
         :param id: The id of this ClusterTask.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -112,7 +121,7 @@ class ClusterTask:
         任务名称
 
         :param name: The name of this ClusterTask.
-        :type: str
+        :type name: str
         """
         self._name = name
 

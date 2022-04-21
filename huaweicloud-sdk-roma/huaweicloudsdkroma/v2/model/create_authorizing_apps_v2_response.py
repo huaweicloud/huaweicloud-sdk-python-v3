@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateAuthorizingAppsV2Response(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateAuthorizingAppsV2Response(SdkResponse):
     }
 
     def __init__(self, auths=None):
-        """CreateAuthorizingAppsV2Response - a model defined in huaweicloud sdk"""
+        """CreateAuthorizingAppsV2Response
+
+        The model defined in huaweicloud sdk
+
+        :param auths: API与APP的授权关系列表
+        :type auths: list[:class:`huaweicloudsdkroma.v2.ApiAuthRelations`]
+        """
         
         super(CreateAuthorizingAppsV2Response, self).__init__()
 
@@ -47,7 +52,7 @@ class CreateAuthorizingAppsV2Response(SdkResponse):
         API与APP的授权关系列表
 
         :return: The auths of this CreateAuthorizingAppsV2Response.
-        :rtype: list[ApiAuthRelations]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.ApiAuthRelations`]
         """
         return self._auths
 
@@ -58,7 +63,7 @@ class CreateAuthorizingAppsV2Response(SdkResponse):
         API与APP的授权关系列表
 
         :param auths: The auths of this CreateAuthorizingAppsV2Response.
-        :type: list[ApiAuthRelations]
+        :type auths: list[:class:`huaweicloudsdkroma.v2.ApiAuthRelations`]
         """
         self._auths = auths
 

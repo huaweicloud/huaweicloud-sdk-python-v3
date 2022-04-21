@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StructConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class StructConfig:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None, template_id=None, template_name=None, template_type=None, demo_fields=None, tag_fields=None, quick_analysis=None):
-        """StructConfig - a model defined in huaweicloud sdk"""
+        """StructConfig
+
+        The model defined in huaweicloud sdk
+
+        :param log_group_id: 日志组ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
+        :type log_group_id: str
+        :param log_stream_id: 日志流ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
+        :type log_stream_id: str
+        :param template_id: 所用模板id。当使用系统模板时，当前属性可以为空
+        :type template_id: str
+        :param template_name: 所用模板名称，会对模板名称及id进行校验
+        :type template_name: str
+        :param template_type: 所用模板类型，分为built_in及custom两种类型，对应系统模板和自定义模板，系统模板分为CTS，VPC和ELB三种。
+        :type template_type: str
+        :param demo_fields: 示例字段数组，只需要填写与模板中is_analysis状态不同的字段
+        :type demo_fields: list[:class:`huaweicloudsdklts.v2.FieldModel`]
+        :param tag_fields: Tag字段数组，只需要填写与模板中is_analysis状态不同的字段
+        :type tag_fields: list[:class:`huaweicloudsdklts.v2.FieldModel`]
+        :param quick_analysis: 是否开启demo_fields和tag_fields快速分析,为true时，所有的demo_fields和tag_fields全部字段均打开快速分析;不填或者为false，以模板中的demo_fields和tag_fields中的is_analysis决定是否开启快速分析。
+        :type quick_analysis: bool
+        """
         
         
 
@@ -88,7 +107,7 @@ class StructConfig:
         日志组ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
         :param log_group_id: The log_group_id of this StructConfig.
-        :type: str
+        :type log_group_id: str
         """
         self._log_group_id = log_group_id
 
@@ -110,7 +129,7 @@ class StructConfig:
         日志流ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
         :param log_stream_id: The log_stream_id of this StructConfig.
-        :type: str
+        :type log_stream_id: str
         """
         self._log_stream_id = log_stream_id
 
@@ -132,7 +151,7 @@ class StructConfig:
         所用模板id。当使用系统模板时，当前属性可以为空
 
         :param template_id: The template_id of this StructConfig.
-        :type: str
+        :type template_id: str
         """
         self._template_id = template_id
 
@@ -154,7 +173,7 @@ class StructConfig:
         所用模板名称，会对模板名称及id进行校验
 
         :param template_name: The template_name of this StructConfig.
-        :type: str
+        :type template_name: str
         """
         self._template_name = template_name
 
@@ -176,7 +195,7 @@ class StructConfig:
         所用模板类型，分为built_in及custom两种类型，对应系统模板和自定义模板，系统模板分为CTS，VPC和ELB三种。
 
         :param template_type: The template_type of this StructConfig.
-        :type: str
+        :type template_type: str
         """
         self._template_type = template_type
 
@@ -187,7 +206,7 @@ class StructConfig:
         示例字段数组，只需要填写与模板中is_analysis状态不同的字段
 
         :return: The demo_fields of this StructConfig.
-        :rtype: list[FieldModel]
+        :rtype: list[:class:`huaweicloudsdklts.v2.FieldModel`]
         """
         return self._demo_fields
 
@@ -198,7 +217,7 @@ class StructConfig:
         示例字段数组，只需要填写与模板中is_analysis状态不同的字段
 
         :param demo_fields: The demo_fields of this StructConfig.
-        :type: list[FieldModel]
+        :type demo_fields: list[:class:`huaweicloudsdklts.v2.FieldModel`]
         """
         self._demo_fields = demo_fields
 
@@ -209,7 +228,7 @@ class StructConfig:
         Tag字段数组，只需要填写与模板中is_analysis状态不同的字段
 
         :return: The tag_fields of this StructConfig.
-        :rtype: list[FieldModel]
+        :rtype: list[:class:`huaweicloudsdklts.v2.FieldModel`]
         """
         return self._tag_fields
 
@@ -220,7 +239,7 @@ class StructConfig:
         Tag字段数组，只需要填写与模板中is_analysis状态不同的字段
 
         :param tag_fields: The tag_fields of this StructConfig.
-        :type: list[FieldModel]
+        :type tag_fields: list[:class:`huaweicloudsdklts.v2.FieldModel`]
         """
         self._tag_fields = tag_fields
 
@@ -242,7 +261,7 @@ class StructConfig:
         是否开启demo_fields和tag_fields快速分析,为true时，所有的demo_fields和tag_fields全部字段均打开快速分析;不填或者为false，以模板中的demo_fields和tag_fields中的is_analysis决定是否开启快速分析。
 
         :param quick_analysis: The quick_analysis of this StructConfig.
-        :type: bool
+        :type quick_analysis: bool
         """
         self._quick_analysis = quick_analysis
 

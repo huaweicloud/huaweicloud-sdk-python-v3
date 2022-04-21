@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ReportoutlineInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -76,7 +75,59 @@ class ReportoutlineInfo:
     }
 
     def __init__(self, avg_response_time=None, branch_id=None, branch_name=None, case_retry=None, complete_num=None, duration=None, end_time=None, executed_num=None, iteration_uri=None, kpi_case_count=None, kpi_case_execute_count=None, kpi_case_pass_count=None, max_users=None, pass_num=None, stage=None, stage_name=None, start_time=None, success_rate=None, task_status=None, total_num=None, tps=None, version_uri=None, project_id=None, service_id=None):
-        """ReportoutlineInfo - a model defined in huaweicloud sdk"""
+        """ReportoutlineInfo
+
+        The model defined in huaweicloud sdk
+
+        :param avg_response_time: 平均响应时间
+        :type avg_response_time: float
+        :param branch_id: 分支id
+        :type branch_id: str
+        :param branch_name: 分支名称
+        :type branch_name: str
+        :param case_retry: 用例重试次数
+        :type case_retry: float
+        :param complete_num: 已完成的用例数
+        :type complete_num: float
+        :param duration: 持续时间
+        :type duration: float
+        :param end_time: 结束时间
+        :type end_time: str
+        :param executed_num: 已执行用例数
+        :type executed_num: float
+        :param iteration_uri: 迭代id
+        :type iteration_uri: str
+        :param kpi_case_count: kpi用例数
+        :type kpi_case_count: float
+        :param kpi_case_execute_count: kpi用例执行次数
+        :type kpi_case_execute_count: float
+        :param kpi_case_pass_count: kpi用例通过次数
+        :type kpi_case_pass_count: float
+        :param max_users: 最大并发数
+        :type max_users: float
+        :param pass_num: 结果为pass的用例数
+        :type pass_num: float
+        :param stage: 阶段id
+        :type stage: float
+        :param stage_name: 阶段名称
+        :type stage_name: str
+        :param start_time: 开始时间
+        :type start_time: str
+        :param success_rate: 成功率
+        :type success_rate: float
+        :param task_status: 任务状态
+        :type task_status: float
+        :param total_num: 总用例数
+        :type total_num: float
+        :param tps: 性能tps指标
+        :type tps: float
+        :param version_uri: 分支uri
+        :type version_uri: str
+        :param project_id: 工程id
+        :type project_id: str
+        :param service_id: 服务id
+        :type service_id: str
+        """
         
         
 
@@ -173,7 +224,7 @@ class ReportoutlineInfo:
         平均响应时间
 
         :param avg_response_time: The avg_response_time of this ReportoutlineInfo.
-        :type: float
+        :type avg_response_time: float
         """
         self._avg_response_time = avg_response_time
 
@@ -195,7 +246,7 @@ class ReportoutlineInfo:
         分支id
 
         :param branch_id: The branch_id of this ReportoutlineInfo.
-        :type: str
+        :type branch_id: str
         """
         self._branch_id = branch_id
 
@@ -217,7 +268,7 @@ class ReportoutlineInfo:
         分支名称
 
         :param branch_name: The branch_name of this ReportoutlineInfo.
-        :type: str
+        :type branch_name: str
         """
         self._branch_name = branch_name
 
@@ -239,7 +290,7 @@ class ReportoutlineInfo:
         用例重试次数
 
         :param case_retry: The case_retry of this ReportoutlineInfo.
-        :type: float
+        :type case_retry: float
         """
         self._case_retry = case_retry
 
@@ -261,7 +312,7 @@ class ReportoutlineInfo:
         已完成的用例数
 
         :param complete_num: The complete_num of this ReportoutlineInfo.
-        :type: float
+        :type complete_num: float
         """
         self._complete_num = complete_num
 
@@ -283,7 +334,7 @@ class ReportoutlineInfo:
         持续时间
 
         :param duration: The duration of this ReportoutlineInfo.
-        :type: float
+        :type duration: float
         """
         self._duration = duration
 
@@ -305,7 +356,7 @@ class ReportoutlineInfo:
         结束时间
 
         :param end_time: The end_time of this ReportoutlineInfo.
-        :type: str
+        :type end_time: str
         """
         self._end_time = end_time
 
@@ -327,7 +378,7 @@ class ReportoutlineInfo:
         已执行用例数
 
         :param executed_num: The executed_num of this ReportoutlineInfo.
-        :type: float
+        :type executed_num: float
         """
         self._executed_num = executed_num
 
@@ -349,7 +400,7 @@ class ReportoutlineInfo:
         迭代id
 
         :param iteration_uri: The iteration_uri of this ReportoutlineInfo.
-        :type: str
+        :type iteration_uri: str
         """
         self._iteration_uri = iteration_uri
 
@@ -371,7 +422,7 @@ class ReportoutlineInfo:
         kpi用例数
 
         :param kpi_case_count: The kpi_case_count of this ReportoutlineInfo.
-        :type: float
+        :type kpi_case_count: float
         """
         self._kpi_case_count = kpi_case_count
 
@@ -393,7 +444,7 @@ class ReportoutlineInfo:
         kpi用例执行次数
 
         :param kpi_case_execute_count: The kpi_case_execute_count of this ReportoutlineInfo.
-        :type: float
+        :type kpi_case_execute_count: float
         """
         self._kpi_case_execute_count = kpi_case_execute_count
 
@@ -415,7 +466,7 @@ class ReportoutlineInfo:
         kpi用例通过次数
 
         :param kpi_case_pass_count: The kpi_case_pass_count of this ReportoutlineInfo.
-        :type: float
+        :type kpi_case_pass_count: float
         """
         self._kpi_case_pass_count = kpi_case_pass_count
 
@@ -437,7 +488,7 @@ class ReportoutlineInfo:
         最大并发数
 
         :param max_users: The max_users of this ReportoutlineInfo.
-        :type: float
+        :type max_users: float
         """
         self._max_users = max_users
 
@@ -459,7 +510,7 @@ class ReportoutlineInfo:
         结果为pass的用例数
 
         :param pass_num: The pass_num of this ReportoutlineInfo.
-        :type: float
+        :type pass_num: float
         """
         self._pass_num = pass_num
 
@@ -481,7 +532,7 @@ class ReportoutlineInfo:
         阶段id
 
         :param stage: The stage of this ReportoutlineInfo.
-        :type: float
+        :type stage: float
         """
         self._stage = stage
 
@@ -503,7 +554,7 @@ class ReportoutlineInfo:
         阶段名称
 
         :param stage_name: The stage_name of this ReportoutlineInfo.
-        :type: str
+        :type stage_name: str
         """
         self._stage_name = stage_name
 
@@ -525,7 +576,7 @@ class ReportoutlineInfo:
         开始时间
 
         :param start_time: The start_time of this ReportoutlineInfo.
-        :type: str
+        :type start_time: str
         """
         self._start_time = start_time
 
@@ -547,7 +598,7 @@ class ReportoutlineInfo:
         成功率
 
         :param success_rate: The success_rate of this ReportoutlineInfo.
-        :type: float
+        :type success_rate: float
         """
         self._success_rate = success_rate
 
@@ -569,7 +620,7 @@ class ReportoutlineInfo:
         任务状态
 
         :param task_status: The task_status of this ReportoutlineInfo.
-        :type: float
+        :type task_status: float
         """
         self._task_status = task_status
 
@@ -591,7 +642,7 @@ class ReportoutlineInfo:
         总用例数
 
         :param total_num: The total_num of this ReportoutlineInfo.
-        :type: float
+        :type total_num: float
         """
         self._total_num = total_num
 
@@ -613,7 +664,7 @@ class ReportoutlineInfo:
         性能tps指标
 
         :param tps: The tps of this ReportoutlineInfo.
-        :type: float
+        :type tps: float
         """
         self._tps = tps
 
@@ -635,7 +686,7 @@ class ReportoutlineInfo:
         分支uri
 
         :param version_uri: The version_uri of this ReportoutlineInfo.
-        :type: str
+        :type version_uri: str
         """
         self._version_uri = version_uri
 
@@ -657,7 +708,7 @@ class ReportoutlineInfo:
         工程id
 
         :param project_id: The project_id of this ReportoutlineInfo.
-        :type: str
+        :type project_id: str
         """
         self._project_id = project_id
 
@@ -679,7 +730,7 @@ class ReportoutlineInfo:
         服务id
 
         :param service_id: The service_id of this ReportoutlineInfo.
-        :type: str
+        :type service_id: str
         """
         self._service_id = service_id
 

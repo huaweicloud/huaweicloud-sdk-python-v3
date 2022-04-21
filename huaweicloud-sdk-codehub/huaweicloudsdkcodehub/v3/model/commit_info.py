@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommitInfo:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -52,7 +51,35 @@ class CommitInfo:
     }
 
     def __init__(self, id=None, short_id=None, title=None, author_name=None, author_email=None, committer_name=None, committer_email=None, created_at=None, message=None, parent_ids=None, committed_date=None, authored_date=None):
-        """CommitInfo - a model defined in huaweicloud sdk"""
+        """CommitInfo
+
+        The model defined in huaweicloud sdk
+
+        :param id: 提交对应的SHA id
+        :type id: str
+        :param short_id: 提交对应的短SHA id
+        :type short_id: str
+        :param title: 提交标题
+        :type title: str
+        :param author_name: 作者
+        :type author_name: str
+        :param author_email: 作者邮箱
+        :type author_email: str
+        :param committer_name: 提交作者
+        :type committer_name: str
+        :param committer_email: 提交作者邮箱
+        :type committer_email: str
+        :param created_at: 创建时间
+        :type created_at: str
+        :param message: 提交信息
+        :type message: str
+        :param parent_ids: 父提交id
+        :type parent_ids: list[str]
+        :param committed_date: 提交时间
+        :type committed_date: datetime
+        :param authored_date: 作者提交时间
+        :type authored_date: datetime
+        """
         
         
 
@@ -113,7 +140,7 @@ class CommitInfo:
         提交对应的SHA id
 
         :param id: The id of this CommitInfo.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -135,7 +162,7 @@ class CommitInfo:
         提交对应的短SHA id
 
         :param short_id: The short_id of this CommitInfo.
-        :type: str
+        :type short_id: str
         """
         self._short_id = short_id
 
@@ -157,7 +184,7 @@ class CommitInfo:
         提交标题
 
         :param title: The title of this CommitInfo.
-        :type: str
+        :type title: str
         """
         self._title = title
 
@@ -179,7 +206,7 @@ class CommitInfo:
         作者
 
         :param author_name: The author_name of this CommitInfo.
-        :type: str
+        :type author_name: str
         """
         self._author_name = author_name
 
@@ -201,7 +228,7 @@ class CommitInfo:
         作者邮箱
 
         :param author_email: The author_email of this CommitInfo.
-        :type: str
+        :type author_email: str
         """
         self._author_email = author_email
 
@@ -223,7 +250,7 @@ class CommitInfo:
         提交作者
 
         :param committer_name: The committer_name of this CommitInfo.
-        :type: str
+        :type committer_name: str
         """
         self._committer_name = committer_name
 
@@ -245,7 +272,7 @@ class CommitInfo:
         提交作者邮箱
 
         :param committer_email: The committer_email of this CommitInfo.
-        :type: str
+        :type committer_email: str
         """
         self._committer_email = committer_email
 
@@ -267,7 +294,7 @@ class CommitInfo:
         创建时间
 
         :param created_at: The created_at of this CommitInfo.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -289,7 +316,7 @@ class CommitInfo:
         提交信息
 
         :param message: The message of this CommitInfo.
-        :type: str
+        :type message: str
         """
         self._message = message
 
@@ -311,7 +338,7 @@ class CommitInfo:
         父提交id
 
         :param parent_ids: The parent_ids of this CommitInfo.
-        :type: list[str]
+        :type parent_ids: list[str]
         """
         self._parent_ids = parent_ids
 
@@ -333,7 +360,7 @@ class CommitInfo:
         提交时间
 
         :param committed_date: The committed_date of this CommitInfo.
-        :type: datetime
+        :type committed_date: datetime
         """
         self._committed_date = committed_date
 
@@ -355,7 +382,7 @@ class CommitInfo:
         作者提交时间
 
         :param authored_date: The authored_date of this CommitInfo.
-        :type: datetime
+        :type authored_date: datetime
         """
         self._authored_date = authored_date
 

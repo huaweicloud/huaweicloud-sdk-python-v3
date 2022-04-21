@@ -52,21 +52,17 @@ class ApmClient(Client):
         """获取ak-sk
 
         获取该用户创建的aksk列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListAkSkRequest request
-        :return: ListAkSkResponse
+        :param request: Request instance for ListAkSk
+        :type request: :class:`huaweicloudsdkapm.v1.ListAkSkRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ListAkSkResponse`
         """
         return self.list_ak_sk_with_http_info(request)
 
     def list_ak_sk_with_http_info(self, request):
-        """获取ak-sk
-
-        获取该用户创建的aksk列表
-
-        :param ListAkSkRequest request
-        :return: ListAkSkResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -108,26 +104,21 @@ class ApmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def list_business(self, request):
         """查询业务列表
 
         该接口用于查询对应用户下的业务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListBusinessRequest request
-        :return: ListBusinessResponse
+        :param request: Request instance for ListBusiness
+        :type request: :class:`huaweicloudsdkapm.v1.ListBusinessRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ListBusinessResponse`
         """
         return self.list_business_with_http_info(request)
 
     def list_business_with_http_info(self, request):
-        """查询业务列表
-
-        该接口用于查询对应用户下的业务。
-
-        :param ListBusinessRequest request
-        :return: ListBusinessResponse
-        """
-
         all_params = []
         local_var_params = {}
         for attr in request.attribute_map:
@@ -169,26 +160,21 @@ class ApmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-
     def show_master_address(self, request):
         """查询master地址
 
         根据region名称获取该名称下的master服务podlb地址信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ShowMasterAddressRequest request
-        :return: ShowMasterAddressResponse
+        :param request: Request instance for ShowMasterAddress
+        :type request: :class:`huaweicloudsdkapm.v1.ShowMasterAddressRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ShowMasterAddressResponse`
         """
         return self.show_master_address_with_http_info(request)
 
     def show_master_address_with_http_info(self, request):
-        """查询master地址
-
-        根据region名称获取该名称下的master服务podlb地址信息
-
-        :param ShowMasterAddressRequest request
-        :return: ShowMasterAddressResponse
-        """
-
         all_params = ['region_name']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -231,7 +217,6 @@ class ApmClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

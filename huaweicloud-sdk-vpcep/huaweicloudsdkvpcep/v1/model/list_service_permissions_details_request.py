@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServicePermissionsDetailsRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListServicePermissionsDetailsRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None, permission=None, limit=None, offset=None, sort_key=None, sort_dir=None):
-        """ListServicePermissionsDetailsRequest - a model defined in huaweicloud sdk"""
+        """ListServicePermissionsDetailsRequest
+
+        The model defined in huaweicloud sdk
+
+        :param vpc_endpoint_service_id: 终端节点服务的ID。
+        :type vpc_endpoint_service_id: str
+        :param permission: 权限帐号ID，格式为 “iam:domain::domain_id”。 其中“domain_id”为授权用户的 帐号ID，例如“iam:domain:: 6e9dfd51d1124e8d8498dce89492 3a0d”。 支持模糊搜索。
+        :type permission: str
+        :param limit: 查询返回终端节点服务的白名单数 量限制，即每页返回的个数。 取值范围：0~500，取值一般为 10，20或者50，默认为10。
+        :type limit: int
+        :param offset: 偏移量。 偏移量为一个大于0小于终端节点 服务总个数的整数，表示从偏移量 后面的终端节点服务开始查询。
+        :type offset: int
+        :param sort_key: 查询结果中白名单列表的排序字 段，取值为create_at，表示白名单 的添加时间。
+        :type sort_key: str
+        :param sort_dir: 查询结果中白名单列表的排序方 式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        :type sort_dir: str
+        """
         
         
 
@@ -82,7 +97,7 @@ class ListServicePermissionsDetailsRequest:
         终端节点服务的ID。
 
         :param vpc_endpoint_service_id: The vpc_endpoint_service_id of this ListServicePermissionsDetailsRequest.
-        :type: str
+        :type vpc_endpoint_service_id: str
         """
         self._vpc_endpoint_service_id = vpc_endpoint_service_id
 
@@ -104,7 +119,7 @@ class ListServicePermissionsDetailsRequest:
         权限帐号ID，格式为 “iam:domain::domain_id”。 其中“domain_id”为授权用户的 帐号ID，例如“iam:domain:: 6e9dfd51d1124e8d8498dce89492 3a0d”。 支持模糊搜索。
 
         :param permission: The permission of this ListServicePermissionsDetailsRequest.
-        :type: str
+        :type permission: str
         """
         self._permission = permission
 
@@ -126,7 +141,7 @@ class ListServicePermissionsDetailsRequest:
         查询返回终端节点服务的白名单数 量限制，即每页返回的个数。 取值范围：0~500，取值一般为 10，20或者50，默认为10。
 
         :param limit: The limit of this ListServicePermissionsDetailsRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -148,7 +163,7 @@ class ListServicePermissionsDetailsRequest:
         偏移量。 偏移量为一个大于0小于终端节点 服务总个数的整数，表示从偏移量 后面的终端节点服务开始查询。
 
         :param offset: The offset of this ListServicePermissionsDetailsRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -170,7 +185,7 @@ class ListServicePermissionsDetailsRequest:
         查询结果中白名单列表的排序字 段，取值为create_at，表示白名单 的添加时间。
 
         :param sort_key: The sort_key of this ListServicePermissionsDetailsRequest.
-        :type: str
+        :type sort_key: str
         """
         self._sort_key = sort_key
 
@@ -192,7 +207,7 @@ class ListServicePermissionsDetailsRequest:
         查询结果中白名单列表的排序方 式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
 
         :param sort_dir: The sort_dir of this ListServicePermissionsDetailsRequest.
-        :type: str
+        :type sort_dir: str
         """
         self._sort_dir = sort_dir
 

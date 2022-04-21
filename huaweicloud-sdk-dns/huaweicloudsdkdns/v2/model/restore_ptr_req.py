@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RestorePtrReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RestorePtrReq:
     }
 
     def __init__(self, ptrdname=None):
-        """RestorePtrReq - a model defined in huaweicloud sdk"""
+        """RestorePtrReq
+
+        The model defined in huaweicloud sdk
+
+        :param ptrdname: PTR记录对应的域名。  此处值为null。
+        :type ptrdname: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RestorePtrReq:
         PTR记录对应的域名。  此处值为null。
 
         :param ptrdname: The ptrdname of this RestorePtrReq.
-        :type: str
+        :type ptrdname: str
         """
         self._ptrdname = ptrdname
 

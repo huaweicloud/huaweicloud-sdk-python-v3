@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowMessagesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ShowMessagesResponse(SdkResponse):
     }
 
     def __init__(self, messages=None, messages_count=None, offsets_count=None, offset=None):
-        """ShowMessagesResponse - a model defined in huaweicloud sdk"""
+        """ShowMessagesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param messages: 消息列表。
+        :type messages: list[:class:`huaweicloudsdkkafka.v2.ShowMessagesRespMessages`]
+        :param messages_count: 消息总数。
+        :type messages_count: int
+        :param offsets_count: 总页数。
+        :type offsets_count: int
+        :param offset: 当前页数。
+        :type offset: int
+        """
         
         super(ShowMessagesResponse, self).__init__()
 
@@ -62,7 +73,7 @@ class ShowMessagesResponse(SdkResponse):
         消息列表。
 
         :return: The messages of this ShowMessagesResponse.
-        :rtype: list[ShowMessagesRespMessages]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.ShowMessagesRespMessages`]
         """
         return self._messages
 
@@ -73,7 +84,7 @@ class ShowMessagesResponse(SdkResponse):
         消息列表。
 
         :param messages: The messages of this ShowMessagesResponse.
-        :type: list[ShowMessagesRespMessages]
+        :type messages: list[:class:`huaweicloudsdkkafka.v2.ShowMessagesRespMessages`]
         """
         self._messages = messages
 
@@ -95,7 +106,7 @@ class ShowMessagesResponse(SdkResponse):
         消息总数。
 
         :param messages_count: The messages_count of this ShowMessagesResponse.
-        :type: int
+        :type messages_count: int
         """
         self._messages_count = messages_count
 
@@ -117,7 +128,7 @@ class ShowMessagesResponse(SdkResponse):
         总页数。
 
         :param offsets_count: The offsets_count of this ShowMessagesResponse.
-        :type: int
+        :type offsets_count: int
         """
         self._offsets_count = offsets_count
 
@@ -139,7 +150,7 @@ class ShowMessagesResponse(SdkResponse):
         当前页数。
 
         :param offset: The offset of this ShowMessagesResponse.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListServersDedicatedHostRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ListServersDedicatedHostRequest:
     }
 
     def __init__(self, dedicated_host_id=None, limit=None, marker=None):
-        """ListServersDedicatedHostRequest - a model defined in huaweicloud sdk"""
+        """ListServersDedicatedHostRequest
+
+        The model defined in huaweicloud sdk
+
+        :param dedicated_host_id: 专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
+        :type dedicated_host_id: str
+        :param limit: 每个页面上显示的条目数。
+        :type limit: int
+        :param marker: 该值是上一页最后一条记录的ID。  如果“marker”取值无效，将会返回“400”错误码。
+        :type marker: str
+        """
         
         
 
@@ -67,7 +76,7 @@ class ListServersDedicatedHostRequest:
         专属主机ID。  可以从专属主机控制台查询，或者通过调用查询专属主机列表API获取。
 
         :param dedicated_host_id: The dedicated_host_id of this ListServersDedicatedHostRequest.
-        :type: str
+        :type dedicated_host_id: str
         """
         self._dedicated_host_id = dedicated_host_id
 
@@ -89,7 +98,7 @@ class ListServersDedicatedHostRequest:
         每个页面上显示的条目数。
 
         :param limit: The limit of this ListServersDedicatedHostRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -111,7 +120,7 @@ class ListServersDedicatedHostRequest:
         该值是上一页最后一条记录的ID。  如果“marker”取值无效，将会返回“400”错误码。
 
         :param marker: The marker of this ListServersDedicatedHostRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 

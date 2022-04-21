@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MfaIdentity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class MfaIdentity:
     }
 
     def __init__(self, methods=None, password=None, totp=None):
-        """MfaIdentity - a model defined in huaweicloud sdk"""
+        """MfaIdentity
+
+        The model defined in huaweicloud sdk
+
+        :param methods: 认证方法，该字段内容为[\&quot;password\&quot;, \&quot;totp\&quot;]。
+        :type methods: list[str]
+        :param password: 
+        :type password: :class:`huaweicloudsdkiam.v3.PwdPassword`
+        :param totp: 
+        :type totp: :class:`huaweicloudsdkiam.v3.MfaTotp`
+        """
         
         
 
@@ -65,7 +74,7 @@ class MfaIdentity:
         认证方法，该字段内容为[\"password\", \"totp\"]。
 
         :param methods: The methods of this MfaIdentity.
-        :type: list[str]
+        :type methods: list[str]
         """
         self._methods = methods
 
@@ -75,7 +84,7 @@ class MfaIdentity:
 
 
         :return: The password of this MfaIdentity.
-        :rtype: PwdPassword
+        :rtype: :class:`huaweicloudsdkiam.v3.PwdPassword`
         """
         return self._password
 
@@ -85,7 +94,7 @@ class MfaIdentity:
 
 
         :param password: The password of this MfaIdentity.
-        :type: PwdPassword
+        :type password: :class:`huaweicloudsdkiam.v3.PwdPassword`
         """
         self._password = password
 
@@ -95,7 +104,7 @@ class MfaIdentity:
 
 
         :return: The totp of this MfaIdentity.
-        :rtype: MfaTotp
+        :rtype: :class:`huaweicloudsdkiam.v3.MfaTotp`
         """
         return self._totp
 
@@ -105,7 +114,7 @@ class MfaIdentity:
 
 
         :param totp: The totp of this MfaIdentity.
-        :type: MfaTotp
+        :type totp: :class:`huaweicloudsdkiam.v3.MfaTotp`
         """
         self._totp = totp
 

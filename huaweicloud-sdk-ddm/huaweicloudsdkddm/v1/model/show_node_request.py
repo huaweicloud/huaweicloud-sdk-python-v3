@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowNodeRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowNodeRequest:
     }
 
     def __init__(self, instance_id=None, node_id=None):
-        """ShowNodeRequest - a model defined in huaweicloud sdk"""
+        """ShowNodeRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: DDM实例ID
+        :type instance_id: str
+        :param node_id: DDM节点ID
+        :type node_id: str
+        """
         
         
 
@@ -61,7 +68,7 @@ class ShowNodeRequest:
         DDM实例ID
 
         :param instance_id: The instance_id of this ShowNodeRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -83,7 +90,7 @@ class ShowNodeRequest:
         DDM节点ID
 
         :param node_id: The node_id of this ShowNodeRequest.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 

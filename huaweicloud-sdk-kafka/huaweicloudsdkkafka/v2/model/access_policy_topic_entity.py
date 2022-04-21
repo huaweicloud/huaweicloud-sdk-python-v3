@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessPolicyTopicEntity:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class AccessPolicyTopicEntity:
     }
 
     def __init__(self, name=None, policies=None):
-        """AccessPolicyTopicEntity - a model defined in huaweicloud sdk"""
+        """AccessPolicyTopicEntity
+
+        The model defined in huaweicloud sdk
+
+        :param name: topic名称。
+        :type name: str
+        :param policies: 权限列表。
+        :type policies: list[:class:`huaweicloudsdkkafka.v2.AccessPolicyEntity`]
+        """
         
         
 
@@ -61,7 +68,7 @@ class AccessPolicyTopicEntity:
         topic名称。
 
         :param name: The name of this AccessPolicyTopicEntity.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -72,7 +79,7 @@ class AccessPolicyTopicEntity:
         权限列表。
 
         :return: The policies of this AccessPolicyTopicEntity.
-        :rtype: list[AccessPolicyEntity]
+        :rtype: list[:class:`huaweicloudsdkkafka.v2.AccessPolicyEntity`]
         """
         return self._policies
 
@@ -83,7 +90,7 @@ class AccessPolicyTopicEntity:
         权限列表。
 
         :param policies: The policies of this AccessPolicyTopicEntity.
-        :type: list[AccessPolicyEntity]
+        :type policies: list[:class:`huaweicloudsdkkafka.v2.AccessPolicyEntity`]
         """
         self._policies = policies
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateResDatasourceRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class CreateResDatasourceRequestBody:
     }
 
     def __init__(self, datasource_name=None, specs_config=None, data_config=None):
-        """CreateResDatasourceRequestBody - a model defined in huaweicloud sdk"""
+        """CreateResDatasourceRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param datasource_name: 数据源名称，1-64位字母、数字、下划线、中划线组合。
+        :type datasource_name: str
+        :param specs_config: 
+        :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
+        :param data_config: 
+        :type data_config: :class:`huaweicloudsdkres.v1.DataConfig`
+        """
         
         
 
@@ -65,7 +74,7 @@ class CreateResDatasourceRequestBody:
         数据源名称，1-64位字母、数字、下划线、中划线组合。
 
         :param datasource_name: The datasource_name of this CreateResDatasourceRequestBody.
-        :type: str
+        :type datasource_name: str
         """
         self._datasource_name = datasource_name
 
@@ -75,7 +84,7 @@ class CreateResDatasourceRequestBody:
 
 
         :return: The specs_config of this CreateResDatasourceRequestBody.
-        :rtype: SpecsConfig
+        :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
         return self._specs_config
 
@@ -85,7 +94,7 @@ class CreateResDatasourceRequestBody:
 
 
         :param specs_config: The specs_config of this CreateResDatasourceRequestBody.
-        :type: SpecsConfig
+        :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
         self._specs_config = specs_config
 
@@ -95,7 +104,7 @@ class CreateResDatasourceRequestBody:
 
 
         :return: The data_config of this CreateResDatasourceRequestBody.
-        :rtype: DataConfig
+        :rtype: :class:`huaweicloudsdkres.v1.DataConfig`
         """
         return self._data_config
 
@@ -105,7 +114,7 @@ class CreateResDatasourceRequestBody:
 
 
         :param data_config: The data_config of this CreateResDatasourceRequestBody.
-        :type: DataConfig
+        :type data_config: :class:`huaweicloudsdkres.v1.DataConfig`
         """
         self._data_config = data_config
 

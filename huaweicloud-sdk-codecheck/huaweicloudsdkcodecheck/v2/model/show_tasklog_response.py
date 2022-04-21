@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTasklogResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowTasklogResponse(SdkResponse):
     }
 
     def __init__(self, param_info=None, log_info=None):
-        """ShowTasklogResponse - a model defined in huaweicloud sdk"""
+        """ShowTasklogResponse
+
+        The model defined in huaweicloud sdk
+
+        :param param_info: 
+        :type param_info: :class:`huaweicloudsdkcodecheck.v2.ParamInfo`
+        :param log_info: 日志信息
+        :type log_info: list[:class:`huaweicloudsdkcodecheck.v2.LogInfo`]
+        """
         
         super(ShowTasklogResponse, self).__init__()
 
@@ -51,7 +58,7 @@ class ShowTasklogResponse(SdkResponse):
 
 
         :return: The param_info of this ShowTasklogResponse.
-        :rtype: ParamInfo
+        :rtype: :class:`huaweicloudsdkcodecheck.v2.ParamInfo`
         """
         return self._param_info
 
@@ -61,7 +68,7 @@ class ShowTasklogResponse(SdkResponse):
 
 
         :param param_info: The param_info of this ShowTasklogResponse.
-        :type: ParamInfo
+        :type param_info: :class:`huaweicloudsdkcodecheck.v2.ParamInfo`
         """
         self._param_info = param_info
 
@@ -72,7 +79,7 @@ class ShowTasklogResponse(SdkResponse):
         日志信息
 
         :return: The log_info of this ShowTasklogResponse.
-        :rtype: list[LogInfo]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.LogInfo`]
         """
         return self._log_info
 
@@ -83,7 +90,7 @@ class ShowTasklogResponse(SdkResponse):
         日志信息
 
         :param log_info: The log_info of this ShowTasklogResponse.
-        :type: list[LogInfo]
+        :type log_info: list[:class:`huaweicloudsdkcodecheck.v2.LogInfo`]
         """
         self._log_info = log_info
 

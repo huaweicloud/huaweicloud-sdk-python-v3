@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePipelineByTemplateRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreatePipelineByTemplateRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """CreatePipelineByTemplateRequest - a model defined in huaweicloud sdk"""
+        """CreatePipelineByTemplateRequest
+
+        The model defined in huaweicloud sdk
+
+        :param x_language: 语言类型 中文:zh-cn 英文:en-us，默认en-us
+        :type x_language: str
+        :param body: Body of the CreatePipelineByTemplateRequest
+        :type body: :class:`huaweicloudsdkcloudpipeline.v2.TemplateCddl`
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreatePipelineByTemplateRequest:
         语言类型 中文:zh-cn 英文:en-us，默认en-us
 
         :param x_language: The x_language of this CreatePipelineByTemplateRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -73,7 +80,7 @@ class CreatePipelineByTemplateRequest:
 
 
         :return: The body of this CreatePipelineByTemplateRequest.
-        :rtype: TemplateCddl
+        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.TemplateCddl`
         """
         return self._body
 
@@ -83,7 +90,7 @@ class CreatePipelineByTemplateRequest:
 
 
         :param body: The body of this CreatePipelineByTemplateRequest.
-        :type: TemplateCddl
+        :type body: :class:`huaweicloudsdkcloudpipeline.v2.TemplateCddl`
         """
         self._body = body
 

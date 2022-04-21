@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RespDataByIdCardImage:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class RespDataByIdCardImage:
     }
 
     def __init__(self, verification_result=None, verification_message=None, verification_code=None, similarity=None, idcard_result=None):
-        """RespDataByIdCardImage - a model defined in huaweicloud sdk"""
+        """RespDataByIdCardImage
+
+        The model defined in huaweicloud sdk
+
+        :param verification_result: 审核校验结果： \&quot;valid\&quot;表示身份审核通过； \&quot;invalid\&quot;表示身份审核不通过； \&quot;nonexistent\&quot;表示数据源没有该身份证号码，这种情况一般是被验证人正在办理户籍迁移，或者被验证人是军人或政要。
+        :type verification_result: str
+        :param verification_message: 审核校验信息，具体参[考校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
+        :type verification_message: str
+        :param verification_code: 审核校验代码，具体参[考校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
+        :type verification_code: int
+        :param similarity: 人像相识度。取值范围[0,100]
+        :type similarity: str
+        :param idcard_result: 
+        :type idcard_result: :class:`huaweicloudsdkivs.v2.IdcardResult`
+        """
         
         
 
@@ -78,7 +91,7 @@ class RespDataByIdCardImage:
         审核校验结果： \"valid\"表示身份审核通过； \"invalid\"表示身份审核不通过； \"nonexistent\"表示数据源没有该身份证号码，这种情况一般是被验证人正在办理户籍迁移，或者被验证人是军人或政要。
 
         :param verification_result: The verification_result of this RespDataByIdCardImage.
-        :type: str
+        :type verification_result: str
         """
         self._verification_result = verification_result
 
@@ -100,7 +113,7 @@ class RespDataByIdCardImage:
         审核校验信息，具体参[考校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
 
         :param verification_message: The verification_message of this RespDataByIdCardImage.
-        :type: str
+        :type verification_message: str
         """
         self._verification_message = verification_message
 
@@ -122,7 +135,7 @@ class RespDataByIdCardImage:
         审核校验代码，具体参[考校验信息说明](https://support.huaweicloud.com/api-ivs/ivs_02_0017.html)
 
         :param verification_code: The verification_code of this RespDataByIdCardImage.
-        :type: int
+        :type verification_code: int
         """
         self._verification_code = verification_code
 
@@ -144,7 +157,7 @@ class RespDataByIdCardImage:
         人像相识度。取值范围[0,100]
 
         :param similarity: The similarity of this RespDataByIdCardImage.
-        :type: str
+        :type similarity: str
         """
         self._similarity = similarity
 
@@ -154,7 +167,7 @@ class RespDataByIdCardImage:
 
 
         :return: The idcard_result of this RespDataByIdCardImage.
-        :rtype: IdcardResult
+        :rtype: :class:`huaweicloudsdkivs.v2.IdcardResult`
         """
         return self._idcard_result
 
@@ -164,7 +177,7 @@ class RespDataByIdCardImage:
 
 
         :param idcard_result: The idcard_result of this RespDataByIdCardImage.
-        :type: IdcardResult
+        :type idcard_result: :class:`huaweicloudsdkivs.v2.IdcardResult`
         """
         self._idcard_result = idcard_result
 

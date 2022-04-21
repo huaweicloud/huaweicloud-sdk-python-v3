@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPolicyStatesByResourceIdRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListPolicyStatesByResourceIdRequest:
     }
 
     def __init__(self, resource_id=None, compliance_state=None, limit=None, marker=None):
-        """ListPolicyStatesByResourceIdRequest - a model defined in huaweicloud sdk"""
+        """ListPolicyStatesByResourceIdRequest
+
+        The model defined in huaweicloud sdk
+
+        :param resource_id: 资源ID
+        :type resource_id: str
+        :param compliance_state: 合规状态
+        :type compliance_state: str
+        :param limit: 最大的返回数量
+        :type limit: int
+        :param marker: 分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
+        :type marker: str
+        """
         
         
 
@@ -72,7 +83,7 @@ class ListPolicyStatesByResourceIdRequest:
         资源ID
 
         :param resource_id: The resource_id of this ListPolicyStatesByResourceIdRequest.
-        :type: str
+        :type resource_id: str
         """
         self._resource_id = resource_id
 
@@ -94,7 +105,7 @@ class ListPolicyStatesByResourceIdRequest:
         合规状态
 
         :param compliance_state: The compliance_state of this ListPolicyStatesByResourceIdRequest.
-        :type: str
+        :type compliance_state: str
         """
         self._compliance_state = compliance_state
 
@@ -116,7 +127,7 @@ class ListPolicyStatesByResourceIdRequest:
         最大的返回数量
 
         :param limit: The limit of this ListPolicyStatesByResourceIdRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -138,7 +149,7 @@ class ListPolicyStatesByResourceIdRequest:
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
         :param marker: The marker of this ListPolicyStatesByResourceIdRequest.
-        :type: str
+        :type marker: str
         """
         self._marker = marker
 

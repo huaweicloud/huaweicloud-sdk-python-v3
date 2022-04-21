@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CommonParamV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CommonParamV2:
     }
 
     def __init__(self, param_key=None, param_name=None, is_show=None, is_required=None):
-        """CommonParamV2 - a model defined in huaweicloud sdk"""
+        """CommonParamV2
+
+        The model defined in huaweicloud sdk
+
+        :param param_key: 参数标识
+        :type param_key: str
+        :param param_name: 参数名称
+        :type param_name: str
+        :param is_show: 是否展示
+        :type is_show: int
+        :param is_required: 是否必填
+        :type is_required: int
+        """
         
         
 
@@ -73,7 +84,7 @@ class CommonParamV2:
         参数标识
 
         :param param_key: The param_key of this CommonParamV2.
-        :type: str
+        :type param_key: str
         """
         self._param_key = param_key
 
@@ -95,7 +106,7 @@ class CommonParamV2:
         参数名称
 
         :param param_name: The param_name of this CommonParamV2.
-        :type: str
+        :type param_name: str
         """
         self._param_name = param_name
 
@@ -117,7 +128,7 @@ class CommonParamV2:
         是否展示
 
         :param is_show: The is_show of this CommonParamV2.
-        :type: int
+        :type is_show: int
         """
         self._is_show = is_show
 
@@ -139,7 +150,7 @@ class CommonParamV2:
         是否必填
 
         :param is_required: The is_required of this CommonParamV2.
-        :type: int
+        :type is_required: int
         """
         self._is_required = is_required
 

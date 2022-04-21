@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowTaskSetRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowTaskSetRequest:
     }
 
     def __init__(self, test_suite_id=None, offset=None, limit=None):
-        """ShowTaskSetRequest - a model defined in huaweicloud sdk"""
+        """ShowTaskSetRequest
+
+        The model defined in huaweicloud sdk
+
+        :param test_suite_id: 测试工程id
+        :type test_suite_id: int
+        :param offset: 查询偏移
+        :type offset: int
+        :param limit: 查询数量
+        :type limit: int
+        """
         
         
 
@@ -67,7 +76,7 @@ class ShowTaskSetRequest:
         测试工程id
 
         :param test_suite_id: The test_suite_id of this ShowTaskSetRequest.
-        :type: int
+        :type test_suite_id: int
         """
         self._test_suite_id = test_suite_id
 
@@ -89,7 +98,7 @@ class ShowTaskSetRequest:
         查询偏移
 
         :param offset: The offset of this ShowTaskSetRequest.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -111,7 +120,7 @@ class ShowTaskSetRequest:
         查询数量
 
         :param limit: The limit of this ShowTaskSetRequest.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 

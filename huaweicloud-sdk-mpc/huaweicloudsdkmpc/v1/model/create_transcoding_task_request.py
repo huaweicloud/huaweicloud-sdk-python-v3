@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateTranscodingTaskRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class CreateTranscodingTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTranscodingTaskRequest - a model defined in huaweicloud sdk"""
+        """CreateTranscodingTaskRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the CreateTranscodingTaskRequest
+        :type body: :class:`huaweicloudsdkmpc.v1.CreateTranscodingReq`
+        """
         
         
 
@@ -46,7 +51,7 @@ class CreateTranscodingTaskRequest:
 
 
         :return: The body of this CreateTranscodingTaskRequest.
-        :rtype: CreateTranscodingReq
+        :rtype: :class:`huaweicloudsdkmpc.v1.CreateTranscodingReq`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class CreateTranscodingTaskRequest:
 
 
         :param body: The body of this CreateTranscodingTaskRequest.
-        :type: CreateTranscodingReq
+        :type body: :class:`huaweicloudsdkmpc.v1.CreateTranscodingReq`
         """
         self._body = body
 

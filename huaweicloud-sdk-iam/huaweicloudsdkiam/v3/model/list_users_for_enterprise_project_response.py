@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListUsersForEnterpriseProjectResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListUsersForEnterpriseProjectResponse(SdkResponse):
     }
 
     def __init__(self, users=None):
-        """ListUsersForEnterpriseProjectResponse - a model defined in huaweicloud sdk"""
+        """ListUsersForEnterpriseProjectResponse
+
+        The model defined in huaweicloud sdk
+
+        :param users: 用户信息。
+        :type users: list[:class:`huaweicloudsdkiam.v3.ListUsersForEnterpriseProjectResUsers`]
+        """
         
         super(ListUsersForEnterpriseProjectResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListUsersForEnterpriseProjectResponse(SdkResponse):
         用户信息。
 
         :return: The users of this ListUsersForEnterpriseProjectResponse.
-        :rtype: list[ListUsersForEnterpriseProjectResUsers]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.ListUsersForEnterpriseProjectResUsers`]
         """
         return self._users
 
@@ -58,7 +63,7 @@ class ListUsersForEnterpriseProjectResponse(SdkResponse):
         用户信息。
 
         :param users: The users of this ListUsersForEnterpriseProjectResponse.
-        :type: list[ListUsersForEnterpriseProjectResUsers]
+        :type users: list[:class:`huaweicloudsdkiam.v3.ListUsersForEnterpriseProjectResUsers`]
         """
         self._users = users
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetMessagesResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ResetMessagesResponse(SdkResponse):
     }
 
     def __init__(self, topic=None, partition=None, message_offset=None, consumer_key=None):
-        """ResetMessagesResponse - a model defined in huaweicloud sdk"""
+        """ResetMessagesResponse
+
+        The model defined in huaweicloud sdk
+
+        :param topic: topic名称。
+        :type topic: str
+        :param partition: 分区。
+        :type partition: int
+        :param message_offset: 消息偏移量。
+        :type message_offset: int
+        :param consumer_key: 应用key。在该消息头中添加一个consumer_key的消息头。
+        :type consumer_key: str
+        """
         
         super(ResetMessagesResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ResetMessagesResponse(SdkResponse):
         topic名称。
 
         :param topic: The topic of this ResetMessagesResponse.
-        :type: str
+        :type topic: str
         """
         self._topic = topic
 
@@ -95,7 +106,7 @@ class ResetMessagesResponse(SdkResponse):
         分区。
 
         :param partition: The partition of this ResetMessagesResponse.
-        :type: int
+        :type partition: int
         """
         self._partition = partition
 
@@ -117,7 +128,7 @@ class ResetMessagesResponse(SdkResponse):
         消息偏移量。
 
         :param message_offset: The message_offset of this ResetMessagesResponse.
-        :type: int
+        :type message_offset: int
         """
         self._message_offset = message_offset
 
@@ -139,7 +150,7 @@ class ResetMessagesResponse(SdkResponse):
         应用key。在该消息头中添加一个consumer_key的消息头。
 
         :param consumer_key: The consumer_key of this ResetMessagesResponse.
-        :type: str
+        :type consumer_key: str
         """
         self._consumer_key = consumer_key
 

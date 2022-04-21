@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SourceServersResponseBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -70,7 +69,53 @@ class SourceServersResponseBody:
     }
 
     def __init__(self, id=None, ip=None, name=None, enterprise_project_id=None, add_date=None, os_type=None, os_version=None, oem_system=None, state=None, connected=None, cpu_quantity=None, memory=None, current_task=None, checks=None, init_target_server=None, replicatesize=None, stage_action_time=None, totalsize=None, last_visit_time=None, migration_cycle=None, state_action_time=None):
-        """SourceServersResponseBody - a model defined in huaweicloud sdk"""
+        """SourceServersResponseBody
+
+        The model defined in huaweicloud sdk
+
+        :param id: 源端服务器id
+        :type id: str
+        :param ip: 源端服务器的ip地址
+        :type ip: str
+        :param name: 源端服务器名称
+        :type name: str
+        :param enterprise_project_id: 企业项目id
+        :type enterprise_project_id: str
+        :param add_date: 源端服务器的注册时间
+        :type add_date: int
+        :param os_type: 操作系统类型，OS_TYPE (WINDOWS/LINUX)
+        :type os_type: str
+        :param os_version: 系统详细版本号，如CENTOS7.6等
+        :type os_version: str
+        :param oem_system: 是否是OEM操作系统(Windows)
+        :type oem_system: bool
+        :param state: 源端服务器状态
+        :type state: str
+        :param connected: 源端服务器与主机迁移服务端是否连接
+        :type connected: bool
+        :param cpu_quantity: 源端CPU核心数
+        :type cpu_quantity: int
+        :param memory: 源端物理内存大小（单位：字节）
+        :type memory: int
+        :param current_task: 
+        :type current_task: :class:`huaweicloudsdksms.v3.TaskByServerSources`
+        :param checks: 源端校验检查项列表
+        :type checks: list[:class:`huaweicloudsdksms.v3.EnvironmentCheck`]
+        :param init_target_server: 
+        :type init_target_server: :class:`huaweicloudsdksms.v3.InitTargetServer`
+        :param replicatesize: 已复制的大小（单位：字节）
+        :type replicatesize: int
+        :param stage_action_time: 迁移周期（migration_cycle）上一次变化的时间
+        :type stage_action_time: int
+        :param totalsize: 需要迁移的数据量总大小（单位：字节）
+        :type totalsize: int
+        :param last_visit_time: Agent上一次连接状态发生变化的时间
+        :type last_visit_time: int
+        :param migration_cycle: 迁移周期
+        :type migration_cycle: str
+        :param state_action_time: 源端状态（state）上次发生变化的时间
+        :type state_action_time: int
+        """
         
         
 
@@ -158,7 +203,7 @@ class SourceServersResponseBody:
         源端服务器id
 
         :param id: The id of this SourceServersResponseBody.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -180,7 +225,7 @@ class SourceServersResponseBody:
         源端服务器的ip地址
 
         :param ip: The ip of this SourceServersResponseBody.
-        :type: str
+        :type ip: str
         """
         self._ip = ip
 
@@ -202,7 +247,7 @@ class SourceServersResponseBody:
         源端服务器名称
 
         :param name: The name of this SourceServersResponseBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -224,7 +269,7 @@ class SourceServersResponseBody:
         企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this SourceServersResponseBody.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -246,7 +291,7 @@ class SourceServersResponseBody:
         源端服务器的注册时间
 
         :param add_date: The add_date of this SourceServersResponseBody.
-        :type: int
+        :type add_date: int
         """
         self._add_date = add_date
 
@@ -268,7 +313,7 @@ class SourceServersResponseBody:
         操作系统类型，OS_TYPE (WINDOWS/LINUX)
 
         :param os_type: The os_type of this SourceServersResponseBody.
-        :type: str
+        :type os_type: str
         """
         self._os_type = os_type
 
@@ -290,7 +335,7 @@ class SourceServersResponseBody:
         系统详细版本号，如CENTOS7.6等
 
         :param os_version: The os_version of this SourceServersResponseBody.
-        :type: str
+        :type os_version: str
         """
         self._os_version = os_version
 
@@ -312,7 +357,7 @@ class SourceServersResponseBody:
         是否是OEM操作系统(Windows)
 
         :param oem_system: The oem_system of this SourceServersResponseBody.
-        :type: bool
+        :type oem_system: bool
         """
         self._oem_system = oem_system
 
@@ -334,7 +379,7 @@ class SourceServersResponseBody:
         源端服务器状态
 
         :param state: The state of this SourceServersResponseBody.
-        :type: str
+        :type state: str
         """
         self._state = state
 
@@ -356,7 +401,7 @@ class SourceServersResponseBody:
         源端服务器与主机迁移服务端是否连接
 
         :param connected: The connected of this SourceServersResponseBody.
-        :type: bool
+        :type connected: bool
         """
         self._connected = connected
 
@@ -378,7 +423,7 @@ class SourceServersResponseBody:
         源端CPU核心数
 
         :param cpu_quantity: The cpu_quantity of this SourceServersResponseBody.
-        :type: int
+        :type cpu_quantity: int
         """
         self._cpu_quantity = cpu_quantity
 
@@ -400,7 +445,7 @@ class SourceServersResponseBody:
         源端物理内存大小（单位：字节）
 
         :param memory: The memory of this SourceServersResponseBody.
-        :type: int
+        :type memory: int
         """
         self._memory = memory
 
@@ -410,7 +455,7 @@ class SourceServersResponseBody:
 
 
         :return: The current_task of this SourceServersResponseBody.
-        :rtype: TaskByServerSources
+        :rtype: :class:`huaweicloudsdksms.v3.TaskByServerSources`
         """
         return self._current_task
 
@@ -420,7 +465,7 @@ class SourceServersResponseBody:
 
 
         :param current_task: The current_task of this SourceServersResponseBody.
-        :type: TaskByServerSources
+        :type current_task: :class:`huaweicloudsdksms.v3.TaskByServerSources`
         """
         self._current_task = current_task
 
@@ -431,7 +476,7 @@ class SourceServersResponseBody:
         源端校验检查项列表
 
         :return: The checks of this SourceServersResponseBody.
-        :rtype: list[EnvironmentCheck]
+        :rtype: list[:class:`huaweicloudsdksms.v3.EnvironmentCheck`]
         """
         return self._checks
 
@@ -442,7 +487,7 @@ class SourceServersResponseBody:
         源端校验检查项列表
 
         :param checks: The checks of this SourceServersResponseBody.
-        :type: list[EnvironmentCheck]
+        :type checks: list[:class:`huaweicloudsdksms.v3.EnvironmentCheck`]
         """
         self._checks = checks
 
@@ -452,7 +497,7 @@ class SourceServersResponseBody:
 
 
         :return: The init_target_server of this SourceServersResponseBody.
-        :rtype: InitTargetServer
+        :rtype: :class:`huaweicloudsdksms.v3.InitTargetServer`
         """
         return self._init_target_server
 
@@ -462,7 +507,7 @@ class SourceServersResponseBody:
 
 
         :param init_target_server: The init_target_server of this SourceServersResponseBody.
-        :type: InitTargetServer
+        :type init_target_server: :class:`huaweicloudsdksms.v3.InitTargetServer`
         """
         self._init_target_server = init_target_server
 
@@ -484,7 +529,7 @@ class SourceServersResponseBody:
         已复制的大小（单位：字节）
 
         :param replicatesize: The replicatesize of this SourceServersResponseBody.
-        :type: int
+        :type replicatesize: int
         """
         self._replicatesize = replicatesize
 
@@ -506,7 +551,7 @@ class SourceServersResponseBody:
         迁移周期（migration_cycle）上一次变化的时间
 
         :param stage_action_time: The stage_action_time of this SourceServersResponseBody.
-        :type: int
+        :type stage_action_time: int
         """
         self._stage_action_time = stage_action_time
 
@@ -528,7 +573,7 @@ class SourceServersResponseBody:
         需要迁移的数据量总大小（单位：字节）
 
         :param totalsize: The totalsize of this SourceServersResponseBody.
-        :type: int
+        :type totalsize: int
         """
         self._totalsize = totalsize
 
@@ -550,7 +595,7 @@ class SourceServersResponseBody:
         Agent上一次连接状态发生变化的时间
 
         :param last_visit_time: The last_visit_time of this SourceServersResponseBody.
-        :type: int
+        :type last_visit_time: int
         """
         self._last_visit_time = last_visit_time
 
@@ -572,7 +617,7 @@ class SourceServersResponseBody:
         迁移周期
 
         :param migration_cycle: The migration_cycle of this SourceServersResponseBody.
-        :type: str
+        :type migration_cycle: str
         """
         self._migration_cycle = migration_cycle
 
@@ -594,7 +639,7 @@ class SourceServersResponseBody:
         源端状态（state）上次发生变化的时间
 
         :param state_action_time: The state_action_time of this SourceServersResponseBody.
-        :type: int
+        :type state_action_time: int
         """
         self._state_action_time = state_action_time
 

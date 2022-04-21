@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListOnDemandResourceRatingsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -40,7 +39,23 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     }
 
     def __init__(self, amount=None, discount_amount=None, official_website_amount=None, measure_id=None, currency=None, product_rating_results=None):
-        """ListOnDemandResourceRatingsResponse - a model defined in huaweicloud sdk"""
+        """ListOnDemandResourceRatingsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param amount: 折扣的金额。
+        :type amount: float
+        :param discount_amount: 优惠额（官网价和总价的差）。
+        :type discount_amount: float
+        :param official_website_amount: 按需产品的官网价。
+        :type official_website_amount: float
+        :param measure_id: 度量单位标识。 1：元
+        :type measure_id: int
+        :param currency: 币种。 CNY：人民币。 值为空代表人民币。
+        :type currency: str
+        :param product_rating_results: 产品询价结果，具体参见表2。
+        :type product_rating_results: list[:class:`huaweicloudsdkbss.v2.DemandProductRatingResult`]
+        """
         
         super(ListOnDemandResourceRatingsResponse, self).__init__()
 
@@ -83,7 +98,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         折扣的金额。
 
         :param amount: The amount of this ListOnDemandResourceRatingsResponse.
-        :type: float
+        :type amount: float
         """
         self._amount = amount
 
@@ -105,7 +120,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         优惠额（官网价和总价的差）。
 
         :param discount_amount: The discount_amount of this ListOnDemandResourceRatingsResponse.
-        :type: float
+        :type discount_amount: float
         """
         self._discount_amount = discount_amount
 
@@ -127,7 +142,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         按需产品的官网价。
 
         :param official_website_amount: The official_website_amount of this ListOnDemandResourceRatingsResponse.
-        :type: float
+        :type official_website_amount: float
         """
         self._official_website_amount = official_website_amount
 
@@ -149,7 +164,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         度量单位标识。 1：元
 
         :param measure_id: The measure_id of this ListOnDemandResourceRatingsResponse.
-        :type: int
+        :type measure_id: int
         """
         self._measure_id = measure_id
 
@@ -171,7 +186,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         币种。 CNY：人民币。 值为空代表人民币。
 
         :param currency: The currency of this ListOnDemandResourceRatingsResponse.
-        :type: str
+        :type currency: str
         """
         self._currency = currency
 
@@ -182,7 +197,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         产品询价结果，具体参见表2。
 
         :return: The product_rating_results of this ListOnDemandResourceRatingsResponse.
-        :rtype: list[DemandProductRatingResult]
+        :rtype: list[:class:`huaweicloudsdkbss.v2.DemandProductRatingResult`]
         """
         return self._product_rating_results
 
@@ -193,7 +208,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
         产品询价结果，具体参见表2。
 
         :param product_rating_results: The product_rating_results of this ListOnDemandResourceRatingsResponse.
-        :type: list[DemandProductRatingResult]
+        :type product_rating_results: list[:class:`huaweicloudsdkbss.v2.DemandProductRatingResult`]
         """
         self._product_rating_results = product_rating_results
 

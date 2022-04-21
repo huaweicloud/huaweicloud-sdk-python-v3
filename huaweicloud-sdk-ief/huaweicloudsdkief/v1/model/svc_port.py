@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SvcPort:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class SvcPort:
     }
 
     def __init__(self, name=None, node_port=None, port=None, protocol=None, target_port=None):
-        """SvcPort - a model defined in huaweicloud sdk"""
+        """SvcPort
+
+        The model defined in huaweicloud sdk
+
+        :param name: 服务端口必须进行命名，而且名称只允许是{protocol}-{suffix}这种格式，其中{protocol}可以是tcp、http等，IEF根据在端口上定义的协议来提供对应的路由能力。例如“name:http-0”和“name:tcp-0”是合法的端口名，“name:http2forecast”是非法的端口号。
+        :type name: str
+        :param node_port: 当spec.type&#x3D;NodePort时，指定映射到物理机的端口号
+        :type node_port: str
+        :param port: 服务监听的端口号
+        :type port: str
+        :param protocol: 具体的协议，比如TCP
+        :type protocol: str
+        :param target_port: 需要转发到后端Pod的端口号
+        :type target_port: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class SvcPort:
         服务端口必须进行命名，而且名称只允许是{protocol}-{suffix}这种格式，其中{protocol}可以是tcp、http等，IEF根据在端口上定义的协议来提供对应的路由能力。例如“name:http-0”和“name:tcp-0”是合法的端口名，“name:http2forecast”是非法的端口号。
 
         :param name: The name of this SvcPort.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -100,7 +113,7 @@ class SvcPort:
         当spec.type=NodePort时，指定映射到物理机的端口号
 
         :param node_port: The node_port of this SvcPort.
-        :type: str
+        :type node_port: str
         """
         self._node_port = node_port
 
@@ -122,7 +135,7 @@ class SvcPort:
         服务监听的端口号
 
         :param port: The port of this SvcPort.
-        :type: str
+        :type port: str
         """
         self._port = port
 
@@ -144,7 +157,7 @@ class SvcPort:
         具体的协议，比如TCP
 
         :param protocol: The protocol of this SvcPort.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -166,7 +179,7 @@ class SvcPort:
         需要转发到后端Pod的端口号
 
         :param target_port: The target_port of this SvcPort.
-        :type: str
+        :type target_port: str
         """
         self._target_port = target_port
 

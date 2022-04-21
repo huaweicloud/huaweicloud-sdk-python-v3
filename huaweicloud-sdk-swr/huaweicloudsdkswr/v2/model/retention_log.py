@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RetentionLog:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class RetentionLog:
     }
 
     def __init__(self, created_at=None, id=None, namespace=None, repo=None, retention_id=None, rule_type=None, tag=None):
-        """RetentionLog - a model defined in huaweicloud sdk"""
+        """RetentionLog
+
+        The model defined in huaweicloud sdk
+
+        :param created_at: 创建时间
+        :type created_at: str
+        :param id: ID
+        :type id: int
+        :param namespace: 组织名
+        :type namespace: str
+        :param repo: 镜像仓库名
+        :type repo: str
+        :param retention_id: 老化规则ID
+        :type retention_id: int
+        :param rule_type: 规则
+        :type rule_type: str
+        :param tag: 镜像版本
+        :type tag: str
+        """
         
         
 
@@ -81,7 +98,7 @@ class RetentionLog:
         创建时间
 
         :param created_at: The created_at of this RetentionLog.
-        :type: str
+        :type created_at: str
         """
         self._created_at = created_at
 
@@ -103,7 +120,7 @@ class RetentionLog:
         ID
 
         :param id: The id of this RetentionLog.
-        :type: int
+        :type id: int
         """
         self._id = id
 
@@ -125,7 +142,7 @@ class RetentionLog:
         组织名
 
         :param namespace: The namespace of this RetentionLog.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -147,7 +164,7 @@ class RetentionLog:
         镜像仓库名
 
         :param repo: The repo of this RetentionLog.
-        :type: str
+        :type repo: str
         """
         self._repo = repo
 
@@ -169,7 +186,7 @@ class RetentionLog:
         老化规则ID
 
         :param retention_id: The retention_id of this RetentionLog.
-        :type: int
+        :type retention_id: int
         """
         self._retention_id = retention_id
 
@@ -191,7 +208,7 @@ class RetentionLog:
         规则
 
         :param rule_type: The rule_type of this RetentionLog.
-        :type: str
+        :type rule_type: str
         """
         self._rule_type = rule_type
 
@@ -213,7 +230,7 @@ class RetentionLog:
         镜像版本
 
         :param tag: The tag of this RetentionLog.
-        :type: str
+        :type tag: str
         """
         self._tag = tag
 

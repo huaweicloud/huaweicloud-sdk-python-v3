@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateTriggerRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class UpdateTriggerRequest:
     }
 
     def __init__(self, namespace=None, repository=None, trigger=None, body=None):
-        """UpdateTriggerRequest - a model defined in huaweicloud sdk"""
+        """UpdateTriggerRequest
+
+        The model defined in huaweicloud sdk
+
+        :param namespace: 组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
+        :type namespace: str
+        :param repository: 镜像仓库名称
+        :type repository: str
+        :param trigger: 触发器名称
+        :type trigger: str
+        :param body: Body of the UpdateTriggerRequest
+        :type body: :class:`huaweicloudsdkswr.v2.UpdateTriggerRequestBody`
+        """
         
         
 
@@ -70,7 +81,7 @@ class UpdateTriggerRequest:
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
         :param namespace: The namespace of this UpdateTriggerRequest.
-        :type: str
+        :type namespace: str
         """
         self._namespace = namespace
 
@@ -92,7 +103,7 @@ class UpdateTriggerRequest:
         镜像仓库名称
 
         :param repository: The repository of this UpdateTriggerRequest.
-        :type: str
+        :type repository: str
         """
         self._repository = repository
 
@@ -114,7 +125,7 @@ class UpdateTriggerRequest:
         触发器名称
 
         :param trigger: The trigger of this UpdateTriggerRequest.
-        :type: str
+        :type trigger: str
         """
         self._trigger = trigger
 
@@ -124,7 +135,7 @@ class UpdateTriggerRequest:
 
 
         :return: The body of this UpdateTriggerRequest.
-        :rtype: UpdateTriggerRequestBody
+        :rtype: :class:`huaweicloudsdkswr.v2.UpdateTriggerRequestBody`
         """
         return self._body
 
@@ -134,7 +145,7 @@ class UpdateTriggerRequest:
 
 
         :param body: The body of this UpdateTriggerRequest.
-        :type: UpdateTriggerRequestBody
+        :type body: :class:`huaweicloudsdkswr.v2.UpdateTriggerRequestBody`
         """
         self._body = body
 

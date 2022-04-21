@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class StateDataFilter:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class StateDataFilter:
     }
 
     def __init__(self, input=None, output=None):
-        """StateDataFilter - a model defined in huaweicloud sdk"""
+        """StateDataFilter
+
+        The model defined in huaweicloud sdk
+
+        :param input: 输入过滤表达式（JsonPath）
+        :type input: str
+        :param output: 输出过滤表达式（JsonPath）
+        :type output: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class StateDataFilter:
         输入过滤表达式（JsonPath）
 
         :param input: The input of this StateDataFilter.
-        :type: str
+        :type input: str
         """
         self._input = input
 
@@ -85,7 +92,7 @@ class StateDataFilter:
         输出过滤表达式（JsonPath）
 
         :param output: The output of this StateDataFilter.
-        :type: str
+        :type output: str
         """
         self._output = output
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValidateSqlResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ValidateSqlResponse(SdkResponse):
     }
 
     def __init__(self, valid=None):
-        """ValidateSqlResponse - a model defined in huaweicloud sdk"""
+        """ValidateSqlResponse
+
+        The model defined in huaweicloud sdk
+
+        :param valid: SQL是否通过语法校验
+        :type valid: bool
+        """
         
         super(ValidateSqlResponse, self).__init__()
 
@@ -58,7 +63,7 @@ class ValidateSqlResponse(SdkResponse):
         SQL是否通过语法校验
 
         :param valid: The valid of this ValidateSqlResponse.
-        :type: bool
+        :type valid: bool
         """
         self._valid = valid
 

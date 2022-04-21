@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateNatGatewayDnatOption:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -48,7 +47,31 @@ class CreateNatGatewayDnatOption:
     }
 
     def __init__(self, description=None, port_id=None, private_ip=None, nat_gateway_id=None, internal_service_port=None, floating_ip_id=None, external_service_port=None, protocol=None, internal_service_port_range=None, external_service_port_range=None):
-        """CreateNatGatewayDnatOption - a model defined in huaweicloud sdk"""
+        """CreateNatGatewayDnatOption
+
+        The model defined in huaweicloud sdk
+
+        :param description: DNAT规则的描述，长度限制为255。
+        :type description: str
+        :param port_id: 虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
+        :type port_id: str
+        :param private_ip: 用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
+        :type private_ip: str
+        :param nat_gateway_id: 公网NAT网关实例的ID。
+        :type nat_gateway_id: str
+        :param internal_service_port: 虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
+        :type internal_service_port: int
+        :param floating_ip_id: 弹性公网IP的id。
+        :type floating_ip_id: str
+        :param external_service_port: Floatingip对外提供服务的端口号。 取值范围：0~65535。
+        :type external_service_port: int
+        :param protocol: 协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
+        :type protocol: str
+        :param internal_service_port_range: 虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明：该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
+        :type internal_service_port_range: str
+        :param external_service_port_range: Floatingip对外提供服务的端口号范围。 功能说明：该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
+        :type external_service_port_range: str
+        """
         
         
 
@@ -98,7 +121,7 @@ class CreateNatGatewayDnatOption:
         DNAT规则的描述，长度限制为255。
 
         :param description: The description of this CreateNatGatewayDnatOption.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -120,7 +143,7 @@ class CreateNatGatewayDnatOption:
         虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
 
         :param port_id: The port_id of this CreateNatGatewayDnatOption.
-        :type: str
+        :type port_id: str
         """
         self._port_id = port_id
 
@@ -142,7 +165,7 @@ class CreateNatGatewayDnatOption:
         用户私有IP地址，对应专线、云连接场景，与port_id参数二选一。
 
         :param private_ip: The private_ip of this CreateNatGatewayDnatOption.
-        :type: str
+        :type private_ip: str
         """
         self._private_ip = private_ip
 
@@ -164,7 +187,7 @@ class CreateNatGatewayDnatOption:
         公网NAT网关实例的ID。
 
         :param nat_gateway_id: The nat_gateway_id of this CreateNatGatewayDnatOption.
-        :type: str
+        :type nat_gateway_id: str
         """
         self._nat_gateway_id = nat_gateway_id
 
@@ -186,7 +209,7 @@ class CreateNatGatewayDnatOption:
         虚拟机或者裸机对外提供服务的协议端口号。 取值范围：0~65535。
 
         :param internal_service_port: The internal_service_port of this CreateNatGatewayDnatOption.
-        :type: int
+        :type internal_service_port: int
         """
         self._internal_service_port = internal_service_port
 
@@ -208,7 +231,7 @@ class CreateNatGatewayDnatOption:
         弹性公网IP的id。
 
         :param floating_ip_id: The floating_ip_id of this CreateNatGatewayDnatOption.
-        :type: str
+        :type floating_ip_id: str
         """
         self._floating_ip_id = floating_ip_id
 
@@ -230,7 +253,7 @@ class CreateNatGatewayDnatOption:
         Floatingip对外提供服务的端口号。 取值范围：0~65535。
 
         :param external_service_port: The external_service_port of this CreateNatGatewayDnatOption.
-        :type: int
+        :type external_service_port: int
         """
         self._external_service_port = external_service_port
 
@@ -252,7 +275,7 @@ class CreateNatGatewayDnatOption:
         协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。
 
         :param protocol: The protocol of this CreateNatGatewayDnatOption.
-        :type: str
+        :type protocol: str
         """
         self._protocol = protocol
 
@@ -274,7 +297,7 @@ class CreateNatGatewayDnatOption:
         虚拟机或者裸机对外提供服务的协议端口号范围。 功能说明：该端口范围与external _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
 
         :param internal_service_port_range: The internal_service_port_range of this CreateNatGatewayDnatOption.
-        :type: str
+        :type internal_service_port_range: str
         """
         self._internal_service_port_range = internal_service_port_range
 
@@ -296,7 +319,7 @@ class CreateNatGatewayDnatOption:
         Floatingip对外提供服务的端口号范围。 功能说明：该端口范围与internal _service_port_range按顺序实现1:1映射。 取值范围：1~65535。 约束：只能以’-’字符连接端口范围。 
 
         :param external_service_port_range: The external_service_port_range of this CreateNatGatewayDnatOption.
-        :type: str
+        :type external_service_port_range: str
         """
         self._external_service_port_range = external_service_port_range
 

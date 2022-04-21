@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResetUserPasswrodRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ResetUserPasswrodRequest:
     }
 
     def __init__(self, instance_id=None, user_name=None, body=None):
-        """ResetUserPasswrodRequest - a model defined in huaweicloud sdk"""
+        """ResetUserPasswrodRequest
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param user_name: 用户名称。
+        :type user_name: str
+        :param body: Body of the ResetUserPasswrodRequest
+        :type body: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodReq`
+        """
         
         
 
@@ -66,7 +75,7 @@ class ResetUserPasswrodRequest:
         实例ID。
 
         :param instance_id: The instance_id of this ResetUserPasswrodRequest.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -88,7 +97,7 @@ class ResetUserPasswrodRequest:
         用户名称。
 
         :param user_name: The user_name of this ResetUserPasswrodRequest.
-        :type: str
+        :type user_name: str
         """
         self._user_name = user_name
 
@@ -98,7 +107,7 @@ class ResetUserPasswrodRequest:
 
 
         :return: The body of this ResetUserPasswrodRequest.
-        :rtype: ResetUserPasswrodReq
+        :rtype: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodReq`
         """
         return self._body
 
@@ -108,7 +117,7 @@ class ResetUserPasswrodRequest:
 
 
         :param body: The body of this ResetUserPasswrodRequest.
-        :type: ResetUserPasswrodReq
+        :type body: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodReq`
         """
         self._body = body
 

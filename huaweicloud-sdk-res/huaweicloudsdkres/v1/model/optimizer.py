@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class Optimizer:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class Optimizer:
     }
 
     def __init__(self, type=None, learning_rate=None, initial_accumulator_value=None, lambda1=None, lambda2=None, epsilon=None, decay_rate=None, decay_steps=None):
-        """Optimizer - a model defined in huaweicloud sdk"""
+        """Optimizer
+
+        The model defined in huaweicloud sdk
+
+        :param type: 优化器类型。
+        :type type: str
+        :param learning_rate: 学习率。
+        :type learning_rate: float
+        :param initial_accumulator_value: 初始梯度累加和。
+        :type initial_accumulator_value: float
+        :param lambda1: L1正则项系数。
+        :type lambda1: float
+        :param lambda2: L2正则项系数。
+        :type lambda2: float
+        :param epsilon: 数值稳定常量。
+        :type epsilon: float
+        :param decay_rate: 衰减因子。
+        :type decay_rate: float
+        :param decay_steps: 衰减步长。
+        :type decay_steps: float
+        """
         
         
 
@@ -93,7 +112,7 @@ class Optimizer:
         优化器类型。
 
         :param type: The type of this Optimizer.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -115,7 +134,7 @@ class Optimizer:
         学习率。
 
         :param learning_rate: The learning_rate of this Optimizer.
-        :type: float
+        :type learning_rate: float
         """
         self._learning_rate = learning_rate
 
@@ -137,7 +156,7 @@ class Optimizer:
         初始梯度累加和。
 
         :param initial_accumulator_value: The initial_accumulator_value of this Optimizer.
-        :type: float
+        :type initial_accumulator_value: float
         """
         self._initial_accumulator_value = initial_accumulator_value
 
@@ -159,7 +178,7 @@ class Optimizer:
         L1正则项系数。
 
         :param lambda1: The lambda1 of this Optimizer.
-        :type: float
+        :type lambda1: float
         """
         self._lambda1 = lambda1
 
@@ -181,7 +200,7 @@ class Optimizer:
         L2正则项系数。
 
         :param lambda2: The lambda2 of this Optimizer.
-        :type: float
+        :type lambda2: float
         """
         self._lambda2 = lambda2
 
@@ -203,7 +222,7 @@ class Optimizer:
         数值稳定常量。
 
         :param epsilon: The epsilon of this Optimizer.
-        :type: float
+        :type epsilon: float
         """
         self._epsilon = epsilon
 
@@ -225,7 +244,7 @@ class Optimizer:
         衰减因子。
 
         :param decay_rate: The decay_rate of this Optimizer.
-        :type: float
+        :type decay_rate: float
         """
         self._decay_rate = decay_rate
 
@@ -247,7 +266,7 @@ class Optimizer:
         衰减步长。
 
         :param decay_steps: The decay_steps of this Optimizer.
-        :type: float
+        :type decay_steps: float
         """
         self._decay_steps = decay_steps
 

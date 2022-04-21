@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class LoginPolicyResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -42,7 +41,25 @@ class LoginPolicyResult:
     }
 
     def __init__(self, account_validity_period=None, custom_info_for_login=None, lockout_duration=None, login_failed_times=None, period_with_login_failures=None, session_timeout=None, show_recent_login_info=None):
-        """LoginPolicyResult - a model defined in huaweicloud sdk"""
+        """LoginPolicyResult
+
+        The model defined in huaweicloud sdk
+
+        :param account_validity_period: 账号在该值设置的有效期内未使用，则被停用。
+        :type account_validity_period: int
+        :param custom_info_for_login: 登录提示信息。
+        :type custom_info_for_login: str
+        :param lockout_duration: 帐号锁定时长（分钟）。
+        :type lockout_duration: int
+        :param login_failed_times: 限定时间内登录失败次数。
+        :type login_failed_times: int
+        :param period_with_login_failures: 限定时间长度（分钟）。
+        :type period_with_login_failures: int
+        :param session_timeout: 登录会话失效时间。
+        :type session_timeout: int
+        :param show_recent_login_info: 是否显示最近一次的登录信息。
+        :type show_recent_login_info: bool
+        """
         
         
 
@@ -81,7 +98,7 @@ class LoginPolicyResult:
         账号在该值设置的有效期内未使用，则被停用。
 
         :param account_validity_period: The account_validity_period of this LoginPolicyResult.
-        :type: int
+        :type account_validity_period: int
         """
         self._account_validity_period = account_validity_period
 
@@ -103,7 +120,7 @@ class LoginPolicyResult:
         登录提示信息。
 
         :param custom_info_for_login: The custom_info_for_login of this LoginPolicyResult.
-        :type: str
+        :type custom_info_for_login: str
         """
         self._custom_info_for_login = custom_info_for_login
 
@@ -125,7 +142,7 @@ class LoginPolicyResult:
         帐号锁定时长（分钟）。
 
         :param lockout_duration: The lockout_duration of this LoginPolicyResult.
-        :type: int
+        :type lockout_duration: int
         """
         self._lockout_duration = lockout_duration
 
@@ -147,7 +164,7 @@ class LoginPolicyResult:
         限定时间内登录失败次数。
 
         :param login_failed_times: The login_failed_times of this LoginPolicyResult.
-        :type: int
+        :type login_failed_times: int
         """
         self._login_failed_times = login_failed_times
 
@@ -169,7 +186,7 @@ class LoginPolicyResult:
         限定时间长度（分钟）。
 
         :param period_with_login_failures: The period_with_login_failures of this LoginPolicyResult.
-        :type: int
+        :type period_with_login_failures: int
         """
         self._period_with_login_failures = period_with_login_failures
 
@@ -191,7 +208,7 @@ class LoginPolicyResult:
         登录会话失效时间。
 
         :param session_timeout: The session_timeout of this LoginPolicyResult.
-        :type: int
+        :type session_timeout: int
         """
         self._session_timeout = session_timeout
 
@@ -213,7 +230,7 @@ class LoginPolicyResult:
         是否显示最近一次的登录信息。
 
         :param show_recent_login_info: The show_recent_login_info of this LoginPolicyResult.
-        :type: bool
+        :type show_recent_login_info: bool
         """
         self._show_recent_login_info = show_recent_login_info
 

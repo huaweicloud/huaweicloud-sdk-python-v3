@@ -52,21 +52,17 @@ class CgsClient(Client):
         """查询容器节点列表
 
         查询容器节点列表（仅新版本容器安全支持，即将上线，敬请期待！）
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
 
-        :param ListContainerNodesRequest request
-        :return: ListContainerNodesResponse
+        :param request: Request instance for ListContainerNodes
+        :type request: :class:`huaweicloudsdkcgs.v5.ListContainerNodesRequest`
+        :rtype: :class:`huaweicloudsdkcgs.v5.ListContainerNodesResponse`
         """
         return self.list_container_nodes_with_http_info(request)
 
     def list_container_nodes_with_http_info(self, request):
-        """查询容器节点列表
-
-        查询容器节点列表（仅新版本容器安全支持，即将上线，敬请期待！）
-
-        :param ListContainerNodesRequest request
-        :return: ListContainerNodesResponse
-        """
-
         all_params = ['host_name', 'agent_status', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -115,7 +111,6 @@ class CgsClient(Client):
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
-
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, response_type=None, response_headers=None, auth_settings=None,

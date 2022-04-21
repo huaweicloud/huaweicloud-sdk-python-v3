@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListApisBindedToRequestThrottlingPolicyV2Request:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, throttle_id=None, env_id=None, group_id=None, api_id=None, api_name=None):
-        """ListApisBindedToRequestThrottlingPolicyV2Request - a model defined in huaweicloud sdk"""
+        """ListApisBindedToRequestThrottlingPolicyV2Request
+
+        The model defined in huaweicloud sdk
+
+        :param instance_id: 实例ID
+        :type instance_id: str
+        :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
+        :type offset: int
+        :param limit: 每页显示的条目数量
+        :type limit: int
+        :param throttle_id: 流控策略编号
+        :type throttle_id: str
+        :param env_id: 环境的ID
+        :type env_id: str
+        :param group_id: API分组编号
+        :type group_id: str
+        :param api_id: API编号
+        :type api_id: str
+        :param api_name: API名称
+        :type api_name: str
+        """
         
         
 
@@ -91,7 +110,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
         实例ID
 
         :param instance_id: The instance_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
-        :type: str
+        :type instance_id: str
         """
         self._instance_id = instance_id
 
@@ -113,7 +132,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
         :param offset: The offset of this ListApisBindedToRequestThrottlingPolicyV2Request.
-        :type: int
+        :type offset: int
         """
         self._offset = offset
 
@@ -135,7 +154,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
         每页显示的条目数量
 
         :param limit: The limit of this ListApisBindedToRequestThrottlingPolicyV2Request.
-        :type: int
+        :type limit: int
         """
         self._limit = limit
 
@@ -157,7 +176,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
         流控策略编号
 
         :param throttle_id: The throttle_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
-        :type: str
+        :type throttle_id: str
         """
         self._throttle_id = throttle_id
 
@@ -179,7 +198,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
         环境的ID
 
         :param env_id: The env_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
-        :type: str
+        :type env_id: str
         """
         self._env_id = env_id
 
@@ -201,7 +220,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
         API分组编号
 
         :param group_id: The group_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
-        :type: str
+        :type group_id: str
         """
         self._group_id = group_id
 
@@ -223,7 +242,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
         API编号
 
         :param api_id: The api_id of this ListApisBindedToRequestThrottlingPolicyV2Request.
-        :type: str
+        :type api_id: str
         """
         self._api_id = api_id
 
@@ -245,7 +264,7 @@ class ListApisBindedToRequestThrottlingPolicyV2Request:
         API名称
 
         :param api_name: The api_name of this ListApisBindedToRequestThrottlingPolicyV2Request.
-        :type: str
+        :type api_name: str
         """
         self._api_name = api_name
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RangeStatusRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class RangeStatusRequest:
     }
 
     def __init__(self, range_status=None):
-        """RangeStatusRequest - a model defined in huaweicloud sdk"""
+        """RangeStatusRequest
+
+        The model defined in huaweicloud sdk
+
+        :param range_status: range状态（\&quot;off\&quot;/\&quot;on\&quot;）
+        :type range_status: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class RangeStatusRequest:
         range状态（\"off\"/\"on\"）
 
         :param range_status: The range_status of this RangeStatusRequest.
-        :type: str
+        :type range_status: str
         """
         self._range_status = range_status
 

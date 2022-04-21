@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class UpdateCloseKibanaRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class UpdateCloseKibanaRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """UpdateCloseKibanaRequest - a model defined in huaweicloud sdk"""
+        """UpdateCloseKibanaRequest
+
+        The model defined in huaweicloud sdk
+
+        :param cluster_id: 指定待关闭的集群ID。
+        :type cluster_id: str
+        """
         
         
 
@@ -57,7 +62,7 @@ class UpdateCloseKibanaRequest:
         指定待关闭的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateCloseKibanaRequest.
-        :type: str
+        :type cluster_id: str
         """
         self._cluster_id = cluster_id
 

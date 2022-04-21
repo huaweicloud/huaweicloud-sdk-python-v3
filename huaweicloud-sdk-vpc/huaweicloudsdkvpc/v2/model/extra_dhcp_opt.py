@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ExtraDhcpOpt:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ExtraDhcpOpt:
     }
 
     def __init__(self, opt_name=None, opt_value=None):
-        """ExtraDhcpOpt - a model defined in huaweicloud sdk"""
+        """ExtraDhcpOpt
+
+        The model defined in huaweicloud sdk
+
+        :param opt_name: Option名称
+        :type opt_name: str
+        :param opt_value: Option值
+        :type opt_value: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class ExtraDhcpOpt:
         Option名称
 
         :param opt_name: The opt_name of this ExtraDhcpOpt.
-        :type: str
+        :type opt_name: str
         """
         self._opt_name = opt_name
 
@@ -85,7 +92,7 @@ class ExtraDhcpOpt:
         Option值
 
         :param opt_value: The opt_value of this ExtraDhcpOpt.
-        :type: str
+        :type opt_value: str
         """
         self._opt_value = opt_value
 

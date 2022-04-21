@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowPartnersServiceInfoRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -38,7 +37,21 @@ class ShowPartnersServiceInfoRequest:
     }
 
     def __init__(self, case_sub_type_id=None, product_id=None, x_site=None, x_language=None, x_time_zone=None):
-        """ShowPartnersServiceInfoRequest - a model defined in huaweicloud sdk"""
+        """ShowPartnersServiceInfoRequest
+
+        The model defined in huaweicloud sdk
+
+        :param case_sub_type_id: 工单子类
+        :type case_sub_type_id: str
+        :param product_id: ISV产品Id
+        :type product_id: str
+        :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
+        :type x_site: int
+        :param x_language: 语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
+        :type x_language: str
+        :param x_time_zone: 环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
+        :type x_time_zone: str
+        """
         
         
 
@@ -78,7 +91,7 @@ class ShowPartnersServiceInfoRequest:
         工单子类
 
         :param case_sub_type_id: The case_sub_type_id of this ShowPartnersServiceInfoRequest.
-        :type: str
+        :type case_sub_type_id: str
         """
         self._case_sub_type_id = case_sub_type_id
 
@@ -100,7 +113,7 @@ class ShowPartnersServiceInfoRequest:
         ISV产品Id
 
         :param product_id: The product_id of this ShowPartnersServiceInfoRequest.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 
@@ -122,7 +135,7 @@ class ShowPartnersServiceInfoRequest:
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
         :param x_site: The x_site of this ShowPartnersServiceInfoRequest.
-        :type: int
+        :type x_site: int
         """
         self._x_site = x_site
 
@@ -144,7 +157,7 @@ class ShowPartnersServiceInfoRequest:
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
         :param x_language: The x_language of this ShowPartnersServiceInfoRequest.
-        :type: str
+        :type x_language: str
         """
         self._x_language = x_language
 
@@ -166,7 +179,7 @@ class ShowPartnersServiceInfoRequest:
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
         :param x_time_zone: The x_time_zone of this ShowPartnersServiceInfoRequest.
-        :type: str
+        :type x_time_zone: str
         """
         self._x_time_zone = x_time_zone
 

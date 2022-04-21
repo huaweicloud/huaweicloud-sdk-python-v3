@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePreheatingAssetReq:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreatePreheatingAssetReq:
     }
 
     def __init__(self, asset_id=None, urls=None):
-        """CreatePreheatingAssetReq - a model defined in huaweicloud sdk"""
+        """CreatePreheatingAssetReq
+
+        The model defined in huaweicloud sdk
+
+        :param asset_id: 已发布媒资的ID。
+        :type asset_id: str
+        :param urls: 已发布媒资的播放URL列表，一次最多只能预热10个URL。
+        :type urls: list[str]
+        """
         
         
 
@@ -63,7 +70,7 @@ class CreatePreheatingAssetReq:
         已发布媒资的ID。
 
         :param asset_id: The asset_id of this CreatePreheatingAssetReq.
-        :type: str
+        :type asset_id: str
         """
         self._asset_id = asset_id
 
@@ -85,7 +92,7 @@ class CreatePreheatingAssetReq:
         已发布媒资的播放URL列表，一次最多只能预热10个URL。
 
         :param urls: The urls of this CreatePreheatingAssetReq.
-        :type: list[str]
+        :type urls: list[str]
         """
         self._urls = urls
 

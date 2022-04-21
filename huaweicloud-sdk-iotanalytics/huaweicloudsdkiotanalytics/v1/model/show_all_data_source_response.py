@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowAllDataSourceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ShowAllDataSourceResponse(SdkResponse):
     }
 
     def __init__(self, count=None, datasources=None):
-        """ShowAllDataSourceResponse - a model defined in huaweicloud sdk"""
+        """ShowAllDataSourceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param count: 总数
+        :type count: int
+        :param datasources: 数据源列表
+        :type datasources: list[:class:`huaweicloudsdkiotanalytics.v1.DatasourceRestDTO`]
+        """
         
         super(ShowAllDataSourceResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class ShowAllDataSourceResponse(SdkResponse):
         总数
 
         :param count: The count of this ShowAllDataSourceResponse.
-        :type: int
+        :type count: int
         """
         self._count = count
 
@@ -74,7 +81,7 @@ class ShowAllDataSourceResponse(SdkResponse):
         数据源列表
 
         :return: The datasources of this ShowAllDataSourceResponse.
-        :rtype: list[DatasourceRestDTO]
+        :rtype: list[:class:`huaweicloudsdkiotanalytics.v1.DatasourceRestDTO`]
         """
         return self._datasources
 
@@ -85,7 +92,7 @@ class ShowAllDataSourceResponse(SdkResponse):
         数据源列表
 
         :param datasources: The datasources of this ShowAllDataSourceResponse.
-        :type: list[DatasourceRestDTO]
+        :type datasources: list[:class:`huaweicloudsdkiotanalytics.v1.DatasourceRestDTO`]
         """
         self._datasources = datasources
 

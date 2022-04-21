@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CheckpointPlanCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CheckpointPlanCreate:
     }
 
     def __init__(self, id=None, name=None, resources=None, skipped_resources=None):
-        """CheckpointPlanCreate - a model defined in huaweicloud sdk"""
+        """CheckpointPlanCreate
+
+        The model defined in huaweicloud sdk
+
+        :param id: 存储库id
+        :type id: str
+        :param name: 存储库名称
+        :type name: str
+        :param resources: 备份对象
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.CheckpointResourceResp`]
+        :param skipped_resources: 备份时跳过的资源列表
+        :type skipped_resources: list[:class:`huaweicloudsdkcbr.v1.CheckpointCreateSkippedResource`]
+        """
         
         
 
@@ -71,7 +82,7 @@ class CheckpointPlanCreate:
         存储库id
 
         :param id: The id of this CheckpointPlanCreate.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -93,7 +104,7 @@ class CheckpointPlanCreate:
         存储库名称
 
         :param name: The name of this CheckpointPlanCreate.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -104,7 +115,7 @@ class CheckpointPlanCreate:
         备份对象
 
         :return: The resources of this CheckpointPlanCreate.
-        :rtype: list[CheckpointResourceResp]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.CheckpointResourceResp`]
         """
         return self._resources
 
@@ -115,7 +126,7 @@ class CheckpointPlanCreate:
         备份对象
 
         :param resources: The resources of this CheckpointPlanCreate.
-        :type: list[CheckpointResourceResp]
+        :type resources: list[:class:`huaweicloudsdkcbr.v1.CheckpointResourceResp`]
         """
         self._resources = resources
 
@@ -126,7 +137,7 @@ class CheckpointPlanCreate:
         备份时跳过的资源列表
 
         :return: The skipped_resources of this CheckpointPlanCreate.
-        :rtype: list[CheckpointCreateSkippedResource]
+        :rtype: list[:class:`huaweicloudsdkcbr.v1.CheckpointCreateSkippedResource`]
         """
         return self._skipped_resources
 
@@ -137,7 +148,7 @@ class CheckpointPlanCreate:
         备份时跳过的资源列表
 
         :param skipped_resources: The skipped_resources of this CheckpointPlanCreate.
-        :type: list[CheckpointCreateSkippedResource]
+        :type skipped_resources: list[:class:`huaweicloudsdkcbr.v1.CheckpointCreateSkippedResource`]
         """
         self._skipped_resources = skipped_resources
 

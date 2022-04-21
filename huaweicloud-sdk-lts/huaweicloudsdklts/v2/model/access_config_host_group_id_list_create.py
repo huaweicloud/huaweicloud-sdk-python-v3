@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class AccessConfigHostGroupIdListCreate:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class AccessConfigHostGroupIdListCreate:
     }
 
     def __init__(self, host_group_id_list=None):
-        """AccessConfigHostGroupIdListCreate - a model defined in huaweicloud sdk"""
+        """AccessConfigHostGroupIdListCreate
+
+        The model defined in huaweicloud sdk
+
+        :param host_group_id_list: 主机组ID列表
+        :type host_group_id_list: list[str]
+        """
         
         
 
@@ -57,7 +62,7 @@ class AccessConfigHostGroupIdListCreate:
         主机组ID列表
 
         :param host_group_id_list: The host_group_id_list of this AccessConfigHostGroupIdListCreate.
-        :type: list[str]
+        :type host_group_id_list: list[str]
         """
         self._host_group_id_list = host_group_id_list
 

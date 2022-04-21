@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ShowDeviceGroupTreeResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class ShowDeviceGroupTreeResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ShowDeviceGroupTreeResponse - a model defined in huaweicloud sdk"""
+        """ShowDeviceGroupTreeResponse
+
+        The model defined in huaweicloud sdk
+
+        :param total: 总数
+        :type total: int
+        :param size: 本次返回数量
+        :type size: int
+        :param items: 设备分组信息
+        :type items: list[:class:`huaweicloudsdkroma.v2.GroupTreeResponse`]
+        """
         
         super(ShowDeviceGroupTreeResponse, self).__init__()
 
@@ -68,7 +77,7 @@ class ShowDeviceGroupTreeResponse(SdkResponse):
         总数
 
         :param total: The total of this ShowDeviceGroupTreeResponse.
-        :type: int
+        :type total: int
         """
         self._total = total
 
@@ -90,7 +99,7 @@ class ShowDeviceGroupTreeResponse(SdkResponse):
         本次返回数量
 
         :param size: The size of this ShowDeviceGroupTreeResponse.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -101,7 +110,7 @@ class ShowDeviceGroupTreeResponse(SdkResponse):
         设备分组信息
 
         :return: The items of this ShowDeviceGroupTreeResponse.
-        :rtype: list[GroupTreeResponse]
+        :rtype: list[:class:`huaweicloudsdkroma.v2.GroupTreeResponse`]
         """
         return self._items
 
@@ -112,7 +121,7 @@ class ShowDeviceGroupTreeResponse(SdkResponse):
         设备分组信息
 
         :param items: The items of this ShowDeviceGroupTreeResponse.
-        :type: list[GroupTreeResponse]
+        :type items: list[:class:`huaweicloudsdkroma.v2.GroupTreeResponse`]
         """
         self._items = items
 

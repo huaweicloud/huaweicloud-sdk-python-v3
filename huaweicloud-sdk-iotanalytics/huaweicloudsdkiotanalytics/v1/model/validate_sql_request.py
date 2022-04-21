@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ValidateSqlRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ValidateSqlRequest:
     }
 
     def __init__(self, body=None):
-        """ValidateSqlRequest - a model defined in huaweicloud sdk"""
+        """ValidateSqlRequest
+
+        The model defined in huaweicloud sdk
+
+        :param body: Body of the ValidateSqlRequest
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.ValidateSqlRequestBody`
+        """
         
         
 
@@ -46,7 +51,7 @@ class ValidateSqlRequest:
 
 
         :return: The body of this ValidateSqlRequest.
-        :rtype: ValidateSqlRequestBody
+        :rtype: :class:`huaweicloudsdkiotanalytics.v1.ValidateSqlRequestBody`
         """
         return self._body
 
@@ -56,7 +61,7 @@ class ValidateSqlRequest:
 
 
         :param body: The body of this ValidateSqlRequest.
-        :type: ValidateSqlRequestBody
+        :type body: :class:`huaweicloudsdkiotanalytics.v1.ValidateSqlRequestBody`
         """
         self._body = body
 

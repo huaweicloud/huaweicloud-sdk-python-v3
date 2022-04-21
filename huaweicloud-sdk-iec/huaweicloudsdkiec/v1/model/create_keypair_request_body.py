@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateKeypairRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateKeypairRequestBody:
     }
 
     def __init__(self, name=None, public_key=None):
-        """CreateKeypairRequestBody - a model defined in huaweicloud sdk"""
+        """CreateKeypairRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param name: 密钥对名称。 新创建的密钥名称不能和已有密钥名称相同。
+        :type name: str
+        :param public_key: 导入的公钥信息。 建议导入的公钥长度不大于1024字节。 &gt; 长度超过1024字节会导致边缘实例注入该密钥失败。
+        :type public_key: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class CreateKeypairRequestBody:
         密钥对名称。 新创建的密钥名称不能和已有密钥名称相同。
 
         :param name: The name of this CreateKeypairRequestBody.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -84,7 +91,7 @@ class CreateKeypairRequestBody:
         导入的公钥信息。 建议导入的公钥长度不大于1024字节。 > 长度超过1024字节会导致边缘实例注入该密钥失败。
 
         :param public_key: The public_key of this CreateKeypairRequestBody.
-        :type: str
+        :type public_key: str
         """
         self._public_key = public_key
 

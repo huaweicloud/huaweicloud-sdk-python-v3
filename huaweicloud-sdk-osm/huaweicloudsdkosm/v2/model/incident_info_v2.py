@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class IncidentInfoV2:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -50,7 +49,33 @@ class IncidentInfoV2:
     }
 
     def __init__(self, xcustomer_id=None, xcustomer_name=None, status=None, incident_id=None, business_type_name=None, incident_type_name=None, customer_id=None, dc_name=None, simple_description=None, create_time=None, label_list=None):
-        """IncidentInfoV2 - a model defined in huaweicloud sdk"""
+        """IncidentInfoV2
+
+        The model defined in huaweicloud sdk
+
+        :param xcustomer_id: 子用户id
+        :type xcustomer_id: str
+        :param xcustomer_name: 子用户名称
+        :type xcustomer_name: str
+        :param status: 状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
+        :type status: int
+        :param incident_id: 工单id
+        :type incident_id: str
+        :param business_type_name: 问题类型名称
+        :type business_type_name: str
+        :param incident_type_name: 工单类型名称
+        :type incident_type_name: str
+        :param customer_id: 客户id
+        :type customer_id: str
+        :param dc_name: 区域名称
+        :type dc_name: str
+        :param simple_description: 简要描述
+        :type simple_description: str
+        :param create_time: 创建时间
+        :type create_time: datetime
+        :param label_list: 标签列表
+        :type label_list: list[:class:`huaweicloudsdkosm.v2.LabelInfo`]
+        """
         
         
 
@@ -100,7 +125,7 @@ class IncidentInfoV2:
         子用户id
 
         :param xcustomer_id: The xcustomer_id of this IncidentInfoV2.
-        :type: str
+        :type xcustomer_id: str
         """
         self._xcustomer_id = xcustomer_id
 
@@ -122,7 +147,7 @@ class IncidentInfoV2:
         子用户名称
 
         :param xcustomer_name: The xcustomer_name of this IncidentInfoV2.
-        :type: str
+        :type xcustomer_name: str
         """
         self._xcustomer_name = xcustomer_name
 
@@ -144,7 +169,7 @@ class IncidentInfoV2:
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
         :param status: The status of this IncidentInfoV2.
-        :type: int
+        :type status: int
         """
         self._status = status
 
@@ -166,7 +191,7 @@ class IncidentInfoV2:
         工单id
 
         :param incident_id: The incident_id of this IncidentInfoV2.
-        :type: str
+        :type incident_id: str
         """
         self._incident_id = incident_id
 
@@ -188,7 +213,7 @@ class IncidentInfoV2:
         问题类型名称
 
         :param business_type_name: The business_type_name of this IncidentInfoV2.
-        :type: str
+        :type business_type_name: str
         """
         self._business_type_name = business_type_name
 
@@ -210,7 +235,7 @@ class IncidentInfoV2:
         工单类型名称
 
         :param incident_type_name: The incident_type_name of this IncidentInfoV2.
-        :type: str
+        :type incident_type_name: str
         """
         self._incident_type_name = incident_type_name
 
@@ -232,7 +257,7 @@ class IncidentInfoV2:
         客户id
 
         :param customer_id: The customer_id of this IncidentInfoV2.
-        :type: str
+        :type customer_id: str
         """
         self._customer_id = customer_id
 
@@ -254,7 +279,7 @@ class IncidentInfoV2:
         区域名称
 
         :param dc_name: The dc_name of this IncidentInfoV2.
-        :type: str
+        :type dc_name: str
         """
         self._dc_name = dc_name
 
@@ -276,7 +301,7 @@ class IncidentInfoV2:
         简要描述
 
         :param simple_description: The simple_description of this IncidentInfoV2.
-        :type: str
+        :type simple_description: str
         """
         self._simple_description = simple_description
 
@@ -298,7 +323,7 @@ class IncidentInfoV2:
         创建时间
 
         :param create_time: The create_time of this IncidentInfoV2.
-        :type: datetime
+        :type create_time: datetime
         """
         self._create_time = create_time
 
@@ -309,7 +334,7 @@ class IncidentInfoV2:
         标签列表
 
         :return: The label_list of this IncidentInfoV2.
-        :rtype: list[LabelInfo]
+        :rtype: list[:class:`huaweicloudsdkosm.v2.LabelInfo`]
         """
         return self._label_list
 
@@ -320,7 +345,7 @@ class IncidentInfoV2:
         标签列表
 
         :param label_list: The label_list of this IncidentInfoV2.
-        :type: list[LabelInfo]
+        :type label_list: list[:class:`huaweicloudsdkosm.v2.LabelInfo`]
         """
         self._label_list = label_list
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class MysqlInstanceRequest:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -68,7 +67,51 @@ class MysqlInstanceRequest:
     }
 
     def __init__(self, charge_info=None, region=None, name=None, datastore=None, mode=None, flavor_ref=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, password=None, backup_strategy=None, time_zone=None, availability_zone_mode=None, master_availability_zone=None, slave_count=None, volume=None, tags=None, enterprise_project_id=None, dedicated_resource_id=None):
-        """MysqlInstanceRequest - a model defined in huaweicloud sdk"""
+        """MysqlInstanceRequest
+
+        The model defined in huaweicloud sdk
+
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
+        :param region: 区域ID。
+        :type region: str
+        :param name: 实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
+        :type name: str
+        :param datastore: 
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :param mode: 实例类型，目前仅支持Cluster。
+        :type mode: str
+        :param flavor_ref: 规格码。
+        :type flavor_ref: str
+        :param vpc_id: 虚拟私有云ID。
+        :type vpc_id: str
+        :param subnet_id: 子网的网络ID。
+        :type subnet_id: str
+        :param security_group_id: 安全组ID。如果实例所选用的子网开启网络ACL进行访问控制，则该参数非必选。如果未开启ACL进行访问控制，则该参数必选。
+        :type security_group_id: str
+        :param configuration_id: 参数模板ID。
+        :type configuration_id: str
+        :param password: 数据库密码。 取值范围：至少包含以下字符的三种：大小写字母、数字和特殊符号~!@#$%^*-_&#x3D;+?,()&amp;，长度8~32个字符。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。如果您输入弱密码，系统会自动判定密码非法。
+        :type password: str
+        :param backup_strategy: 
+        :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
+        :param time_zone: 时区。默认时区为UTC。
+        :type time_zone: str
+        :param availability_zone_mode: 可用区类型,单可用区Single或多可用区multi。
+        :type availability_zone_mode: str
+        :param master_availability_zone: 主可用区。
+        :type master_availability_zone: str
+        :param slave_count: 备节点个数。单次接口调用最多支持创建9个备节点。
+        :type slave_count: int
+        :param volume: 
+        :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlVolume`
+        :param tags: 
+        :type tags: list[:class:`huaweicloudsdkgaussdb.v3.MysqlTags`]
+        :param enterprise_project_id: 企业项目ID。如果账户开通企业项目服务则该参数必选，未开启该参数不可选。
+        :type enterprise_project_id: str
+        :param dedicated_resource_id: 专属资源池ID，只有开通专属资源池后才可以下发此参数。
+        :type dedicated_resource_id: str
+        """
         
         
 
@@ -131,7 +174,7 @@ class MysqlInstanceRequest:
 
 
         :return: The charge_info of this MysqlInstanceRequest.
-        :rtype: MysqlChargeInfo
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
         """
         return self._charge_info
 
@@ -141,7 +184,7 @@ class MysqlInstanceRequest:
 
 
         :param charge_info: The charge_info of this MysqlInstanceRequest.
-        :type: MysqlChargeInfo
+        :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlChargeInfo`
         """
         self._charge_info = charge_info
 
@@ -163,7 +206,7 @@ class MysqlInstanceRequest:
         区域ID。
 
         :param region: The region of this MysqlInstanceRequest.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -185,7 +228,7 @@ class MysqlInstanceRequest:
         实例名称。 用于表示实例的名称，同一租户下，同类型的实例名可重名。 取值范围：4~64个字符之间，必须以字母开头，区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他的特殊字符。
 
         :param name: The name of this MysqlInstanceRequest.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -195,7 +238,7 @@ class MysqlInstanceRequest:
 
 
         :return: The datastore of this MysqlInstanceRequest.
-        :rtype: MysqlDatastore
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
         """
         return self._datastore
 
@@ -205,7 +248,7 @@ class MysqlInstanceRequest:
 
 
         :param datastore: The datastore of this MysqlInstanceRequest.
-        :type: MysqlDatastore
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
         """
         self._datastore = datastore
 
@@ -227,7 +270,7 @@ class MysqlInstanceRequest:
         实例类型，目前仅支持Cluster。
 
         :param mode: The mode of this MysqlInstanceRequest.
-        :type: str
+        :type mode: str
         """
         self._mode = mode
 
@@ -249,7 +292,7 @@ class MysqlInstanceRequest:
         规格码。
 
         :param flavor_ref: The flavor_ref of this MysqlInstanceRequest.
-        :type: str
+        :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
 
@@ -271,7 +314,7 @@ class MysqlInstanceRequest:
         虚拟私有云ID。
 
         :param vpc_id: The vpc_id of this MysqlInstanceRequest.
-        :type: str
+        :type vpc_id: str
         """
         self._vpc_id = vpc_id
 
@@ -293,7 +336,7 @@ class MysqlInstanceRequest:
         子网的网络ID。
 
         :param subnet_id: The subnet_id of this MysqlInstanceRequest.
-        :type: str
+        :type subnet_id: str
         """
         self._subnet_id = subnet_id
 
@@ -315,7 +358,7 @@ class MysqlInstanceRequest:
         安全组ID。如果实例所选用的子网开启网络ACL进行访问控制，则该参数非必选。如果未开启ACL进行访问控制，则该参数必选。
 
         :param security_group_id: The security_group_id of this MysqlInstanceRequest.
-        :type: str
+        :type security_group_id: str
         """
         self._security_group_id = security_group_id
 
@@ -337,7 +380,7 @@ class MysqlInstanceRequest:
         参数模板ID。
 
         :param configuration_id: The configuration_id of this MysqlInstanceRequest.
-        :type: str
+        :type configuration_id: str
         """
         self._configuration_id = configuration_id
 
@@ -359,7 +402,7 @@ class MysqlInstanceRequest:
         数据库密码。 取值范围：至少包含以下字符的三种：大小写字母、数字和特殊符号~!@#$%^*-_=+?,()&，长度8~32个字符。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。如果您输入弱密码，系统会自动判定密码非法。
 
         :param password: The password of this MysqlInstanceRequest.
-        :type: str
+        :type password: str
         """
         self._password = password
 
@@ -369,7 +412,7 @@ class MysqlInstanceRequest:
 
 
         :return: The backup_strategy of this MysqlInstanceRequest.
-        :rtype: MysqlBackupStrategy
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
         """
         return self._backup_strategy
 
@@ -379,7 +422,7 @@ class MysqlInstanceRequest:
 
 
         :param backup_strategy: The backup_strategy of this MysqlInstanceRequest.
-        :type: MysqlBackupStrategy
+        :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
         """
         self._backup_strategy = backup_strategy
 
@@ -401,7 +444,7 @@ class MysqlInstanceRequest:
         时区。默认时区为UTC。
 
         :param time_zone: The time_zone of this MysqlInstanceRequest.
-        :type: str
+        :type time_zone: str
         """
         self._time_zone = time_zone
 
@@ -423,7 +466,7 @@ class MysqlInstanceRequest:
         可用区类型,单可用区Single或多可用区multi。
 
         :param availability_zone_mode: The availability_zone_mode of this MysqlInstanceRequest.
-        :type: str
+        :type availability_zone_mode: str
         """
         self._availability_zone_mode = availability_zone_mode
 
@@ -445,7 +488,7 @@ class MysqlInstanceRequest:
         主可用区。
 
         :param master_availability_zone: The master_availability_zone of this MysqlInstanceRequest.
-        :type: str
+        :type master_availability_zone: str
         """
         self._master_availability_zone = master_availability_zone
 
@@ -467,7 +510,7 @@ class MysqlInstanceRequest:
         备节点个数。单次接口调用最多支持创建9个备节点。
 
         :param slave_count: The slave_count of this MysqlInstanceRequest.
-        :type: int
+        :type slave_count: int
         """
         self._slave_count = slave_count
 
@@ -477,7 +520,7 @@ class MysqlInstanceRequest:
 
 
         :return: The volume of this MysqlInstanceRequest.
-        :rtype: MysqlVolume
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlVolume`
         """
         return self._volume
 
@@ -487,7 +530,7 @@ class MysqlInstanceRequest:
 
 
         :param volume: The volume of this MysqlInstanceRequest.
-        :type: MysqlVolume
+        :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlVolume`
         """
         self._volume = volume
 
@@ -497,7 +540,7 @@ class MysqlInstanceRequest:
 
 
         :return: The tags of this MysqlInstanceRequest.
-        :rtype: list[MysqlTags]
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlTags`]
         """
         return self._tags
 
@@ -507,7 +550,7 @@ class MysqlInstanceRequest:
 
 
         :param tags: The tags of this MysqlInstanceRequest.
-        :type: list[MysqlTags]
+        :type tags: list[:class:`huaweicloudsdkgaussdb.v3.MysqlTags`]
         """
         self._tags = tags
 
@@ -529,7 +572,7 @@ class MysqlInstanceRequest:
         企业项目ID。如果账户开通企业项目服务则该参数必选，未开启该参数不可选。
 
         :param enterprise_project_id: The enterprise_project_id of this MysqlInstanceRequest.
-        :type: str
+        :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
 
@@ -551,7 +594,7 @@ class MysqlInstanceRequest:
         专属资源池ID，只有开通专属资源池后才可以下发此参数。
 
         :param dedicated_resource_id: The dedicated_resource_id of this MysqlInstanceRequest.
-        :type: str
+        :type dedicated_resource_id: str
         """
         self._dedicated_resource_id = dedicated_resource_id
 

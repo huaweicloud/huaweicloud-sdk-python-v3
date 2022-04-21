@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListPublicipsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class ListPublicipsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, publicips=None, page_info=None, total_count=None):
-        """ListPublicipsResponse - a model defined in huaweicloud sdk"""
+        """ListPublicipsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 本次请求的编号
+        :type request_id: str
+        :param publicips: 功能说明：弹性公网IP对象
+        :type publicips: list[:class:`huaweicloudsdkeip.v3.PublicipSingleShowResp`]
+        :param page_info: 
+        :type page_info: :class:`huaweicloudsdkeip.v3.PageInfoOption`
+        :param total_count: 公网IP总条目数
+        :type total_count: int
+        """
         
         super(ListPublicipsResponse, self).__init__()
 
@@ -73,7 +84,7 @@ class ListPublicipsResponse(SdkResponse):
         本次请求的编号
 
         :param request_id: The request_id of this ListPublicipsResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -84,7 +95,7 @@ class ListPublicipsResponse(SdkResponse):
         功能说明：弹性公网IP对象
 
         :return: The publicips of this ListPublicipsResponse.
-        :rtype: list[PublicipSingleShowResp]
+        :rtype: list[:class:`huaweicloudsdkeip.v3.PublicipSingleShowResp`]
         """
         return self._publicips
 
@@ -95,7 +106,7 @@ class ListPublicipsResponse(SdkResponse):
         功能说明：弹性公网IP对象
 
         :param publicips: The publicips of this ListPublicipsResponse.
-        :type: list[PublicipSingleShowResp]
+        :type publicips: list[:class:`huaweicloudsdkeip.v3.PublicipSingleShowResp`]
         """
         self._publicips = publicips
 
@@ -105,7 +116,7 @@ class ListPublicipsResponse(SdkResponse):
 
 
         :return: The page_info of this ListPublicipsResponse.
-        :rtype: PageInfoOption
+        :rtype: :class:`huaweicloudsdkeip.v3.PageInfoOption`
         """
         return self._page_info
 
@@ -115,7 +126,7 @@ class ListPublicipsResponse(SdkResponse):
 
 
         :param page_info: The page_info of this ListPublicipsResponse.
-        :type: PageInfoOption
+        :type page_info: :class:`huaweicloudsdkeip.v3.PageInfoOption`
         """
         self._page_info = page_info
 
@@ -137,7 +148,7 @@ class ListPublicipsResponse(SdkResponse):
         公网IP总条目数
 
         :param total_count: The total_count of this ListPublicipsResponse.
-        :type: int
+        :type total_count: int
         """
         self._total_count = total_count
 

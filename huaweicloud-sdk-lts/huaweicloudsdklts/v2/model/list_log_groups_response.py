@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ListLogGroupsResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -30,7 +29,13 @@ class ListLogGroupsResponse(SdkResponse):
     }
 
     def __init__(self, log_groups=None):
-        """ListLogGroupsResponse - a model defined in huaweicloud sdk"""
+        """ListLogGroupsResponse
+
+        The model defined in huaweicloud sdk
+
+        :param log_groups: 日志组信息。
+        :type log_groups: list[:class:`huaweicloudsdklts.v2.LogGroup`]
+        """
         
         super(ListLogGroupsResponse, self).__init__()
 
@@ -47,7 +52,7 @@ class ListLogGroupsResponse(SdkResponse):
         日志组信息。
 
         :return: The log_groups of this ListLogGroupsResponse.
-        :rtype: list[LogGroup]
+        :rtype: list[:class:`huaweicloudsdklts.v2.LogGroup`]
         """
         return self._log_groups
 
@@ -58,7 +63,7 @@ class ListLogGroupsResponse(SdkResponse):
         日志组信息。
 
         :param log_groups: The log_groups of this ListLogGroupsResponse.
-        :type: list[LogGroup]
+        :type log_groups: list[:class:`huaweicloudsdklts.v2.LogGroup`]
         """
         self._log_groups = log_groups
 

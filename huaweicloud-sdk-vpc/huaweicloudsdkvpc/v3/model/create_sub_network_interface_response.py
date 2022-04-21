@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreateSubNetworkInterfaceResponse(SdkResponse):
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class CreateSubNetworkInterfaceResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, sub_network_interface=None):
-        """CreateSubNetworkInterfaceResponse - a model defined in huaweicloud sdk"""
+        """CreateSubNetworkInterfaceResponse
+
+        The model defined in huaweicloud sdk
+
+        :param request_id: 请求ID
+        :type request_id: str
+        :param sub_network_interface: 
+        :type sub_network_interface: :class:`huaweicloudsdkvpc.v3.SubNetworkInterface`
+        """
         
         super(CreateSubNetworkInterfaceResponse, self).__init__()
 
@@ -63,7 +70,7 @@ class CreateSubNetworkInterfaceResponse(SdkResponse):
         请求ID
 
         :param request_id: The request_id of this CreateSubNetworkInterfaceResponse.
-        :type: str
+        :type request_id: str
         """
         self._request_id = request_id
 
@@ -73,7 +80,7 @@ class CreateSubNetworkInterfaceResponse(SdkResponse):
 
 
         :return: The sub_network_interface of this CreateSubNetworkInterfaceResponse.
-        :rtype: SubNetworkInterface
+        :rtype: :class:`huaweicloudsdkvpc.v3.SubNetworkInterface`
         """
         return self._sub_network_interface
 
@@ -83,7 +90,7 @@ class CreateSubNetworkInterfaceResponse(SdkResponse):
 
 
         :param sub_network_interface: The sub_network_interface of this CreateSubNetworkInterfaceResponse.
-        :type: SubNetworkInterface
+        :type sub_network_interface: :class:`huaweicloudsdkvpc.v3.SubNetworkInterface`
         """
         self._sub_network_interface = sub_network_interface
 

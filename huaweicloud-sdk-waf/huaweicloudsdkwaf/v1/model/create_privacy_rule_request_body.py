@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class CreatePrivacyRuleRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class CreatePrivacyRuleRequestBody:
     }
 
     def __init__(self, url=None, category=None, index=None, description=None):
-        """CreatePrivacyRuleRequestBody - a model defined in huaweicloud sdk"""
+        """CreatePrivacyRuleRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param url: 隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\&quot;*\&quot;号结尾代表路径前缀
+        :type url: str
+        :param category: 屏蔽字段
+        :type category: str
+        :param index: 屏蔽字段名
+        :type index: str
+        :param description: 规则描述
+        :type description: str
+        """
         
         
 
@@ -70,7 +81,7 @@ class CreatePrivacyRuleRequestBody:
         隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
         :param url: The url of this CreatePrivacyRuleRequestBody.
-        :type: str
+        :type url: str
         """
         self._url = url
 
@@ -92,7 +103,7 @@ class CreatePrivacyRuleRequestBody:
         屏蔽字段
 
         :param category: The category of this CreatePrivacyRuleRequestBody.
-        :type: str
+        :type category: str
         """
         self._category = category
 
@@ -114,7 +125,7 @@ class CreatePrivacyRuleRequestBody:
         屏蔽字段名
 
         :param index: The index of this CreatePrivacyRuleRequestBody.
-        :type: str
+        :type index: str
         """
         self._index = index
 
@@ -136,7 +147,7 @@ class CreatePrivacyRuleRequestBody:
         规则描述
 
         :param description: The description of this CreatePrivacyRuleRequestBody.
-        :type: str
+        :type description: str
         """
         self._description = description
 

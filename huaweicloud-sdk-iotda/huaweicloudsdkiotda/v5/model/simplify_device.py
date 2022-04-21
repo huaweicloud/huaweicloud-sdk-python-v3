@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class SimplifyDevice:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class SimplifyDevice:
     }
 
     def __init__(self, device_id=None, node_id=None, device_name=None, product_id=None):
-        """SimplifyDevice - a model defined in huaweicloud sdk"""
+        """SimplifyDevice
+
+        The model defined in huaweicloud sdk
+
+        :param device_id: 设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\&quot;product_id\&quot; + \&quot;_\&quot; + \&quot;node_id\&quot;拼接而成。
+        :type device_id: str
+        :param node_id: 设备标识码，通常使用IMEI、MAC地址或Serial No作为nodeId。
+        :type node_id: str
+        :param device_name: 设备名称。
+        :type device_name: str
+        :param product_id: 设备关联的产品ID，用于唯一标识一个产品模型。
+        :type product_id: str
+        """
         
         
 
@@ -73,7 +84,7 @@ class SimplifyDevice:
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
         :param device_id: The device_id of this SimplifyDevice.
-        :type: str
+        :type device_id: str
         """
         self._device_id = device_id
 
@@ -95,7 +106,7 @@ class SimplifyDevice:
         设备标识码，通常使用IMEI、MAC地址或Serial No作为nodeId。
 
         :param node_id: The node_id of this SimplifyDevice.
-        :type: str
+        :type node_id: str
         """
         self._node_id = node_id
 
@@ -117,7 +128,7 @@ class SimplifyDevice:
         设备名称。
 
         :param device_name: The device_name of this SimplifyDevice.
-        :type: str
+        :type device_name: str
         """
         self._device_name = device_name
 
@@ -139,7 +150,7 @@ class SimplifyDevice:
         设备关联的产品ID，用于唯一标识一个产品模型。
 
         :param product_id: The product_id of this SimplifyDevice.
-        :type: str
+        :type product_id: str
         """
         self._product_id = product_id
 

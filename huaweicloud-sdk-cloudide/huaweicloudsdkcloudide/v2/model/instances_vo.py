@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InstancesVO:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -84,7 +83,67 @@ class InstancesVO:
     }
 
     def __init__(self, arch=None, attributes=None, cpu_memory=None, created_time=None, description=None, display_name=None, domain_name=None, id=None, is_temporary=None, label=None, link=None, name=None, organization_id=None, owner_id=None, owner_name=None, platform_id=None, private=None, pvc_quantity=None, refresh_interval=None, region=None, server_map=None, server_url=None, stack_id=None, status=None, updated_time=None, visitor_id=None, visitor_name=None, visitor_domain_name=None):
-        """InstancesVO - a model defined in huaweicloud sdk"""
+        """InstancesVO
+
+        The model defined in huaweicloud sdk
+
+        :param arch: cpu架构 x86|arm
+        :type arch: str
+        :param attributes: 
+        :type attributes: :class:`huaweicloudsdkcloudide.v2.Attributes`
+        :param cpu_memory: cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacks接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
+        :type cpu_memory: str
+        :param created_time: 创建时间
+        :type created_time: str
+        :param description: 描述
+        :type description: str
+        :param display_name: 实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
+        :type display_name: str
+        :param domain_name: 租户名
+        :type domain_name: str
+        :param id: id
+        :type id: str
+        :param is_temporary: 是否页面显示（以标签配置为准）
+        :type is_temporary: bool
+        :param label: 标签
+        :type label: str
+        :param link: 链接
+        :type link: str
+        :param name: 名称
+        :type name: str
+        :param organization_id: 租户id（对应华为云帐号的domainId）
+        :type organization_id: str
+        :param owner_id: 用户id
+        :type owner_id: str
+        :param owner_name: 用户名
+        :type owner_name: str
+        :param platform_id: 平台ID
+        :type platform_id: int
+        :param private: 是否私有平台
+        :type private: bool
+        :param pvc_quantity: PVC规格 5GB|10GB|20GB
+        :type pvc_quantity: str
+        :param refresh_interval: 自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止
+        :type refresh_interval: int
+        :param region: 区域
+        :type region: str
+        :param server_map: server
+        :type server_map: dict(str, str)
+        :param server_url: 服务链接
+        :type server_url: str
+        :param stack_id: 技术栈ID，通过技术栈管理ListStacks接口获取。
+        :type stack_id: str
+        :param status: 实例状态 。 - INIT 初始化 - STARTING 启动中 - RUNNING 运行中 - STOPPING 停止中 - STOPPED 已停止 - DELETING 删除中 - DELETED 已删除 - DELETE_FAILED 删除失败
+        :type status: str
+        :param updated_time: 更新时间
+        :type updated_time: str
+        :param visitor_id: 访问者id
+        :type visitor_id: str
+        :param visitor_name: 访问者名称
+        :type visitor_name: str
+        :param visitor_domain_name: 访问者租户名称
+        :type visitor_domain_name: str
+        """
         
         
 
@@ -193,7 +252,7 @@ class InstancesVO:
         cpu架构 x86|arm
 
         :param arch: The arch of this InstancesVO.
-        :type: str
+        :type arch: str
         """
         self._arch = arch
 
@@ -203,7 +262,7 @@ class InstancesVO:
 
 
         :return: The attributes of this InstancesVO.
-        :rtype: Attributes
+        :rtype: :class:`huaweicloudsdkcloudide.v2.Attributes`
         """
         return self._attributes
 
@@ -213,7 +272,7 @@ class InstancesVO:
 
 
         :param attributes: The attributes of this InstancesVO.
-        :type: Attributes
+        :type attributes: :class:`huaweicloudsdkcloudide.v2.Attributes`
         """
         self._attributes = attributes
 
@@ -235,7 +294,7 @@ class InstancesVO:
         cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacks接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
 
         :param cpu_memory: The cpu_memory of this InstancesVO.
-        :type: str
+        :type cpu_memory: str
         """
         self._cpu_memory = cpu_memory
 
@@ -257,7 +316,7 @@ class InstancesVO:
         创建时间
 
         :param created_time: The created_time of this InstancesVO.
-        :type: str
+        :type created_time: str
         """
         self._created_time = created_time
 
@@ -279,7 +338,7 @@ class InstancesVO:
         描述
 
         :param description: The description of this InstancesVO.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -301,7 +360,7 @@ class InstancesVO:
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
         :param display_name: The display_name of this InstancesVO.
-        :type: str
+        :type display_name: str
         """
         self._display_name = display_name
 
@@ -323,7 +382,7 @@ class InstancesVO:
         租户名
 
         :param domain_name: The domain_name of this InstancesVO.
-        :type: str
+        :type domain_name: str
         """
         self._domain_name = domain_name
 
@@ -345,7 +404,7 @@ class InstancesVO:
         id
 
         :param id: The id of this InstancesVO.
-        :type: str
+        :type id: str
         """
         self._id = id
 
@@ -367,7 +426,7 @@ class InstancesVO:
         是否页面显示（以标签配置为准）
 
         :param is_temporary: The is_temporary of this InstancesVO.
-        :type: bool
+        :type is_temporary: bool
         """
         self._is_temporary = is_temporary
 
@@ -389,7 +448,7 @@ class InstancesVO:
         标签
 
         :param label: The label of this InstancesVO.
-        :type: str
+        :type label: str
         """
         self._label = label
 
@@ -411,7 +470,7 @@ class InstancesVO:
         链接
 
         :param link: The link of this InstancesVO.
-        :type: str
+        :type link: str
         """
         self._link = link
 
@@ -433,7 +492,7 @@ class InstancesVO:
         名称
 
         :param name: The name of this InstancesVO.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -455,7 +514,7 @@ class InstancesVO:
         租户id（对应华为云帐号的domainId）
 
         :param organization_id: The organization_id of this InstancesVO.
-        :type: str
+        :type organization_id: str
         """
         self._organization_id = organization_id
 
@@ -477,7 +536,7 @@ class InstancesVO:
         用户id
 
         :param owner_id: The owner_id of this InstancesVO.
-        :type: str
+        :type owner_id: str
         """
         self._owner_id = owner_id
 
@@ -499,7 +558,7 @@ class InstancesVO:
         用户名
 
         :param owner_name: The owner_name of this InstancesVO.
-        :type: str
+        :type owner_name: str
         """
         self._owner_name = owner_name
 
@@ -521,7 +580,7 @@ class InstancesVO:
         平台ID
 
         :param platform_id: The platform_id of this InstancesVO.
-        :type: int
+        :type platform_id: int
         """
         self._platform_id = platform_id
 
@@ -543,7 +602,7 @@ class InstancesVO:
         是否私有平台
 
         :param private: The private of this InstancesVO.
-        :type: bool
+        :type private: bool
         """
         self._private = private
 
@@ -565,7 +624,7 @@ class InstancesVO:
         PVC规格 5GB|10GB|20GB
 
         :param pvc_quantity: The pvc_quantity of this InstancesVO.
-        :type: str
+        :type pvc_quantity: str
         """
         self._pvc_quantity = pvc_quantity
 
@@ -587,7 +646,7 @@ class InstancesVO:
         自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止
 
         :param refresh_interval: The refresh_interval of this InstancesVO.
-        :type: int
+        :type refresh_interval: int
         """
         self._refresh_interval = refresh_interval
 
@@ -609,7 +668,7 @@ class InstancesVO:
         区域
 
         :param region: The region of this InstancesVO.
-        :type: str
+        :type region: str
         """
         self._region = region
 
@@ -631,7 +690,7 @@ class InstancesVO:
         server
 
         :param server_map: The server_map of this InstancesVO.
-        :type: dict(str, str)
+        :type server_map: dict(str, str)
         """
         self._server_map = server_map
 
@@ -653,7 +712,7 @@ class InstancesVO:
         服务链接
 
         :param server_url: The server_url of this InstancesVO.
-        :type: str
+        :type server_url: str
         """
         self._server_url = server_url
 
@@ -675,7 +734,7 @@ class InstancesVO:
         技术栈ID，通过技术栈管理ListStacks接口获取。
 
         :param stack_id: The stack_id of this InstancesVO.
-        :type: str
+        :type stack_id: str
         """
         self._stack_id = stack_id
 
@@ -697,7 +756,7 @@ class InstancesVO:
         实例状态 。 - INIT 初始化 - STARTING 启动中 - RUNNING 运行中 - STOPPING 停止中 - STOPPED 已停止 - DELETING 删除中 - DELETED 已删除 - DELETE_FAILED 删除失败
 
         :param status: The status of this InstancesVO.
-        :type: str
+        :type status: str
         """
         self._status = status
 
@@ -719,7 +778,7 @@ class InstancesVO:
         更新时间
 
         :param updated_time: The updated_time of this InstancesVO.
-        :type: str
+        :type updated_time: str
         """
         self._updated_time = updated_time
 
@@ -741,7 +800,7 @@ class InstancesVO:
         访问者id
 
         :param visitor_id: The visitor_id of this InstancesVO.
-        :type: str
+        :type visitor_id: str
         """
         self._visitor_id = visitor_id
 
@@ -763,7 +822,7 @@ class InstancesVO:
         访问者名称
 
         :param visitor_name: The visitor_name of this InstancesVO.
-        :type: str
+        :type visitor_name: str
         """
         self._visitor_name = visitor_name
 
@@ -785,7 +844,7 @@ class InstancesVO:
         访问者租户名称
 
         :param visitor_domain_name: The visitor_domain_name of this InstancesVO.
-        :type: str
+        :type visitor_domain_name: str
         """
         self._visitor_domain_name = visitor_domain_name
 

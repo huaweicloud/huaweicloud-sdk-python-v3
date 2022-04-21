@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class OpenNotifySetting:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -34,7 +33,17 @@ class OpenNotifySetting:
     }
 
     def __init__(self, enable_calendar=None, enable_sms=None, enable_email=None):
-        """OpenNotifySetting - a model defined in huaweicloud sdk"""
+        """OpenNotifySetting
+
+        The model defined in huaweicloud sdk
+
+        :param enable_calendar: 发送邮件日历是否开启，\&quot;Y\&quot; 开启，\&quot;N\&quot; 不开启。
+        :type enable_calendar: str
+        :param enable_sms: 短信通知是否开启，\&quot;Y\&quot; 开启，\&quot;N\&quot; 不开启。
+        :type enable_sms: str
+        :param enable_email: 短信通知是否开启，\&quot;Y\&quot; 开启，\&quot;N\&quot; 不开启。
+        :type enable_email: str
+        """
         
         
 
@@ -65,7 +74,7 @@ class OpenNotifySetting:
         发送邮件日历是否开启，\"Y\" 开启，\"N\" 不开启。
 
         :param enable_calendar: The enable_calendar of this OpenNotifySetting.
-        :type: str
+        :type enable_calendar: str
         """
         self._enable_calendar = enable_calendar
 
@@ -87,7 +96,7 @@ class OpenNotifySetting:
         短信通知是否开启，\"Y\" 开启，\"N\" 不开启。
 
         :param enable_sms: The enable_sms of this OpenNotifySetting.
-        :type: str
+        :type enable_sms: str
         """
         self._enable_sms = enable_sms
 
@@ -109,7 +118,7 @@ class OpenNotifySetting:
         短信通知是否开启，\"Y\" 开启，\"N\" 不开启。
 
         :param enable_email: The enable_email of this OpenNotifySetting.
-        :type: str
+        :type enable_email: str
         """
         self._enable_email = enable_email
 

@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class VolumeMetadata:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class VolumeMetadata:
     }
 
     def __init__(self, system__encrypted=None, system__cmkid=None):
-        """VolumeMetadata - a model defined in huaweicloud sdk"""
+        """VolumeMetadata
+
+        The model defined in huaweicloud sdk
+
+        :param system__encrypted: 表示云硬盘加密功能的字段，&#39;0&#39;代表不加密，&#39;1&#39;代表加密。  该字段不存在时，云硬盘默认为不加密。
+        :type system__encrypted: str
+        :param system__cmkid: 用户主密钥ID，是metadata中的表示加密功能的字段，与__system__encrypted配合使用。
+        :type system__cmkid: str
+        """
         
         
 
@@ -63,7 +70,7 @@ class VolumeMetadata:
         表示云硬盘加密功能的字段，'0'代表不加密，'1'代表加密。  该字段不存在时，云硬盘默认为不加密。
 
         :param system__encrypted: The system__encrypted of this VolumeMetadata.
-        :type: str
+        :type system__encrypted: str
         """
         self._system__encrypted = system__encrypted
 
@@ -85,7 +92,7 @@ class VolumeMetadata:
         用户主密钥ID，是metadata中的表示加密功能的字段，与__system__encrypted配合使用。
 
         :param system__cmkid: The system__cmkid of this VolumeMetadata.
-        :type: str
+        :type system__cmkid: str
         """
         self._system__cmkid = system__cmkid
 

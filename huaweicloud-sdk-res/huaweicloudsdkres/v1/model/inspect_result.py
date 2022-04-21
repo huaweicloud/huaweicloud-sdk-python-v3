@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class InspectResult:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -36,7 +35,19 @@ class InspectResult:
     }
 
     def __init__(self, type=None, count_num=None, multiplicity=None, legal_rate=None):
-        """InspectResult - a model defined in huaweicloud sdk"""
+        """InspectResult
+
+        The model defined in huaweicloud sdk
+
+        :param type: 数据类型。
+        :type type: str
+        :param count_num: 条目数。
+        :type count_num: int
+        :param multiplicity: 重复读。
+        :type multiplicity: float
+        :param legal_rate: 合法率。
+        :type legal_rate: float
+        """
         
         
 
@@ -73,7 +84,7 @@ class InspectResult:
         数据类型。
 
         :param type: The type of this InspectResult.
-        :type: str
+        :type type: str
         """
         self._type = type
 
@@ -95,7 +106,7 @@ class InspectResult:
         条目数。
 
         :param count_num: The count_num of this InspectResult.
-        :type: int
+        :type count_num: int
         """
         self._count_num = count_num
 
@@ -117,7 +128,7 @@ class InspectResult:
         重复读。
 
         :param multiplicity: The multiplicity of this InspectResult.
-        :type: float
+        :type multiplicity: float
         """
         self._multiplicity = multiplicity
 
@@ -139,7 +150,7 @@ class InspectResult:
         合法率。
 
         :param legal_rate: The legal_rate of this InspectResult.
-        :type: float
+        :type legal_rate: float
         """
         self._legal_rate = legal_rate
 

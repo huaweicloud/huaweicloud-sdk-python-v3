@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class ResizeInstanceVolumeRequestBody:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -32,7 +31,15 @@ class ResizeInstanceVolumeRequestBody:
     }
 
     def __init__(self, size=None, is_auto_pay=None):
-        """ResizeInstanceVolumeRequestBody - a model defined in huaweicloud sdk"""
+        """ResizeInstanceVolumeRequestBody
+
+        The model defined in huaweicloud sdk
+
+        :param size: 待扩容到的磁盘容量。取值为整数，并且大于当前磁盘容量。磁盘容量最大值的大小与所选引擎类型以及规格相关，具体请参见数据库实例规格。
+        :type size: int
+        :param is_auto_pay: 创建包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。
+        :type is_auto_pay: str
+        """
         
         
 
@@ -62,7 +69,7 @@ class ResizeInstanceVolumeRequestBody:
         待扩容到的磁盘容量。取值为整数，并且大于当前磁盘容量。磁盘容量最大值的大小与所选引擎类型以及规格相关，具体请参见数据库实例规格。
 
         :param size: The size of this ResizeInstanceVolumeRequestBody.
-        :type: int
+        :type size: int
         """
         self._size = size
 
@@ -84,7 +91,7 @@ class ResizeInstanceVolumeRequestBody:
         创建包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - true，表示自动从账户中支付。 - false，表示手动从账户中支付，默认为该方式。
 
         :param is_auto_pay: The is_auto_pay of this ResizeInstanceVolumeRequestBody.
-        :type: str
+        :type is_auto_pay: str
         """
         self._is_auto_pay = is_auto_pay
 

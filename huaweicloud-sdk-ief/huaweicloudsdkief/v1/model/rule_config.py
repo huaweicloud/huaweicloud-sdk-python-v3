@@ -10,7 +10,6 @@ from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 class RuleConfig:
 
-
     """
     Attributes:
       openapi_types (dict): The key is attribute name
@@ -44,7 +43,27 @@ class RuleConfig:
     }
 
     def __init__(self, description=None, ief_instance_id=None, in_using=None, name=None, source=None, source_resource=None, target=None, target_resource=None):
-        """RuleConfig - a model defined in huaweicloud sdk"""
+        """RuleConfig
+
+        The model defined in huaweicloud sdk
+
+        :param description: 规则描述，最大长度255，不允许^~#$%&amp;*&lt;&gt;()[]{}&#39;\&quot;\\
+        :type description: str
+        :param ief_instance_id: 铂金版实例ID，如果为空则表示是专业版实例。
+        :type ief_instance_id: str
+        :param in_using: 是否启用规则，默认为true(启用)
+        :type in_using: bool
+        :param name: 规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的规则名唯一
+        :type name: str
+        :param source: 源端点ID
+        :type source: str
+        :param source_resource: 源端点资源。 示例： - rest: path取值需要为标准URI格式。 {\&quot;path\&quot;:\&quot;/a/b/c\&quot;} - eventbus: {\&quot;topic\&quot;: \&quot;&lt;project id&gt;/nodes/&lt;node id&gt;/user/&lt;租户自定义且满足eventbus topic要求的字符串&gt;\&quot;,\&quot;node_id\&quot;:\&quot;&lt;node id&gt;\&quot;}
+        :type source_resource: dict(str, str)
+        :param target: 目的端点ID
+        :type target: str
+        :param target_resource: 目的端点资源，示例： - dis: {\&quot;channel\&quot;: \&quot;dis channel name\&quot;} - servicebus: {\&quot;path\&quot;: \&quot;/request path\&quot;} - apigw: {\&quot;resource\&quot;: \&quot;http://ssss.com\&quot;} - eventbus: {\&quot;topic\&quot;: \&quot;/xxxx\&quot;}
+        :type target_resource: dict(str, str)
+        """
         
         
 
@@ -88,7 +107,7 @@ class RuleConfig:
         规则描述，最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
         :param description: The description of this RuleConfig.
-        :type: str
+        :type description: str
         """
         self._description = description
 
@@ -110,7 +129,7 @@ class RuleConfig:
         铂金版实例ID，如果为空则表示是专业版实例。
 
         :param ief_instance_id: The ief_instance_id of this RuleConfig.
-        :type: str
+        :type ief_instance_id: str
         """
         self._ief_instance_id = ief_instance_id
 
@@ -132,7 +151,7 @@ class RuleConfig:
         是否启用规则，默认为true(启用)
 
         :param in_using: The in_using of this RuleConfig.
-        :type: bool
+        :type in_using: bool
         """
         self._in_using = in_using
 
@@ -154,7 +173,7 @@ class RuleConfig:
         规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的规则名唯一
 
         :param name: The name of this RuleConfig.
-        :type: str
+        :type name: str
         """
         self._name = name
 
@@ -176,7 +195,7 @@ class RuleConfig:
         源端点ID
 
         :param source: The source of this RuleConfig.
-        :type: str
+        :type source: str
         """
         self._source = source
 
@@ -198,7 +217,7 @@ class RuleConfig:
         源端点资源。 示例： - rest: path取值需要为标准URI格式。 {\"path\":\"/a/b/c\"} - eventbus: {\"topic\": \"<project id>/nodes/<node id>/user/<租户自定义且满足eventbus topic要求的字符串>\",\"node_id\":\"<node id>\"}
 
         :param source_resource: The source_resource of this RuleConfig.
-        :type: dict(str, str)
+        :type source_resource: dict(str, str)
         """
         self._source_resource = source_resource
 
@@ -220,7 +239,7 @@ class RuleConfig:
         目的端点ID
 
         :param target: The target of this RuleConfig.
-        :type: str
+        :type target: str
         """
         self._target = target
 
@@ -242,7 +261,7 @@ class RuleConfig:
         目的端点资源，示例： - dis: {\"channel\": \"dis channel name\"} - servicebus: {\"path\": \"/request path\"} - apigw: {\"resource\": \"http://ssss.com\"} - eventbus: {\"topic\": \"/xxxx\"}
 
         :param target_resource: The target_resource of this RuleConfig.
-        :type: dict(str, str)
+        :type target_resource: dict(str, str)
         """
         self._target_resource = target_resource
 
