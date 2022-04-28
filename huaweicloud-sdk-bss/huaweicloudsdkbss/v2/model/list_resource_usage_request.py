@@ -47,17 +47,17 @@ class ListResourceUsageRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: |语言。en_US：英文；zh_CN：中文。默认：zh_CN：中文|
+        :param x_language: 语言。en_US：英文；zh_CN：中文。默认：zh_CN：中文
         :type x_language: str
         :param bill_cycle: 账期，格式为yyyy-MM。
         :type bill_cycle: str
-        :param service_type_code: 云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络hws.service.type.obs：对象存储服务
+        :param service_type_code: 云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络,hws.service.type.obs：对象存储服务
         :type service_type_code: str
-        :param resource_type_code: 资源类型编码，当前仅支持：hws.resource.type.cdn：CDNhws.resource.type.obs：云存储资源类型和云服务类型的对应关系可调用根据云服务类型查询资源列表接口获取。
+        :param resource_type_code: 资源类型编码，当前仅支持：hws.resource.type.cdn：CDN,hws.resource.type.obs：云存储。资源类型和云服务类型的对应关系可调用[根据云服务类型查询资源列表](https://support.huaweicloud.com/api-oce/qct_00003.html)接口获取。
         :type resource_type_code: str
-        :param usage_type: 使用量类型编码，当前仅支持：95Peak：中国大陆月95峰值带宽_1024进制95peak_1000：中国大陆月95峰值带宽_1000进制bandwidth95peak：95峰值带宽资源类型和使用量类型的对应关系可调用查询使用量类型列表接口获取。
+        :param usage_type: 使用量类型编码，当前仅支持：95Peak：中国大陆月95峰值带宽_1024进制,95peak_1000：中国大陆月95峰值带宽_1000进制,bandwidth95peak：95峰值带宽.资源类型和使用量类型的对应关系可调用[查询使用量类型列表](https://support.huaweicloud.com/api-oce/qct_00004.html)接口获取。
         :type usage_type: str
-        :param resource_id: 资源ID，您可以调用查询资源用量汇总接口获取。
+        :param resource_id: 资源ID，您可以调用[查询资源用量汇总](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001144806706.html)接口获取。
         :type resource_id: str
         :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
@@ -93,7 +93,7 @@ class ListResourceUsageRequest:
     def x_language(self):
         """Gets the x_language of this ListResourceUsageRequest.
 
-        |语言。en_US：英文；zh_CN：中文。默认：zh_CN：中文|
+        语言。en_US：英文；zh_CN：中文。默认：zh_CN：中文
 
         :return: The x_language of this ListResourceUsageRequest.
         :rtype: str
@@ -104,7 +104,7 @@ class ListResourceUsageRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListResourceUsageRequest.
 
-        |语言。en_US：英文；zh_CN：中文。默认：zh_CN：中文|
+        语言。en_US：英文；zh_CN：中文。默认：zh_CN：中文
 
         :param x_language: The x_language of this ListResourceUsageRequest.
         :type x_language: str
@@ -137,7 +137,7 @@ class ListResourceUsageRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListResourceUsageRequest.
 
-        云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络hws.service.type.obs：对象存储服务
+        云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络,hws.service.type.obs：对象存储服务
 
         :return: The service_type_code of this ListResourceUsageRequest.
         :rtype: str
@@ -148,7 +148,7 @@ class ListResourceUsageRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListResourceUsageRequest.
 
-        云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络hws.service.type.obs：对象存储服务
+        云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络,hws.service.type.obs：对象存储服务
 
         :param service_type_code: The service_type_code of this ListResourceUsageRequest.
         :type service_type_code: str
@@ -159,7 +159,7 @@ class ListResourceUsageRequest:
     def resource_type_code(self):
         """Gets the resource_type_code of this ListResourceUsageRequest.
 
-        资源类型编码，当前仅支持：hws.resource.type.cdn：CDNhws.resource.type.obs：云存储资源类型和云服务类型的对应关系可调用根据云服务类型查询资源列表接口获取。
+        资源类型编码，当前仅支持：hws.resource.type.cdn：CDN,hws.resource.type.obs：云存储。资源类型和云服务类型的对应关系可调用[根据云服务类型查询资源列表](https://support.huaweicloud.com/api-oce/qct_00003.html)接口获取。
 
         :return: The resource_type_code of this ListResourceUsageRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class ListResourceUsageRequest:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this ListResourceUsageRequest.
 
-        资源类型编码，当前仅支持：hws.resource.type.cdn：CDNhws.resource.type.obs：云存储资源类型和云服务类型的对应关系可调用根据云服务类型查询资源列表接口获取。
+        资源类型编码，当前仅支持：hws.resource.type.cdn：CDN,hws.resource.type.obs：云存储。资源类型和云服务类型的对应关系可调用[根据云服务类型查询资源列表](https://support.huaweicloud.com/api-oce/qct_00003.html)接口获取。
 
         :param resource_type_code: The resource_type_code of this ListResourceUsageRequest.
         :type resource_type_code: str
@@ -181,7 +181,7 @@ class ListResourceUsageRequest:
     def usage_type(self):
         """Gets the usage_type of this ListResourceUsageRequest.
 
-        使用量类型编码，当前仅支持：95Peak：中国大陆月95峰值带宽_1024进制95peak_1000：中国大陆月95峰值带宽_1000进制bandwidth95peak：95峰值带宽资源类型和使用量类型的对应关系可调用查询使用量类型列表接口获取。
+        使用量类型编码，当前仅支持：95Peak：中国大陆月95峰值带宽_1024进制,95peak_1000：中国大陆月95峰值带宽_1000进制,bandwidth95peak：95峰值带宽.资源类型和使用量类型的对应关系可调用[查询使用量类型列表](https://support.huaweicloud.com/api-oce/qct_00004.html)接口获取。
 
         :return: The usage_type of this ListResourceUsageRequest.
         :rtype: str
@@ -192,7 +192,7 @@ class ListResourceUsageRequest:
     def usage_type(self, usage_type):
         """Sets the usage_type of this ListResourceUsageRequest.
 
-        使用量类型编码，当前仅支持：95Peak：中国大陆月95峰值带宽_1024进制95peak_1000：中国大陆月95峰值带宽_1000进制bandwidth95peak：95峰值带宽资源类型和使用量类型的对应关系可调用查询使用量类型列表接口获取。
+        使用量类型编码，当前仅支持：95Peak：中国大陆月95峰值带宽_1024进制,95peak_1000：中国大陆月95峰值带宽_1000进制,bandwidth95peak：95峰值带宽.资源类型和使用量类型的对应关系可调用[查询使用量类型列表](https://support.huaweicloud.com/api-oce/qct_00004.html)接口获取。
 
         :param usage_type: The usage_type of this ListResourceUsageRequest.
         :type usage_type: str
@@ -203,7 +203,7 @@ class ListResourceUsageRequest:
     def resource_id(self):
         """Gets the resource_id of this ListResourceUsageRequest.
 
-        资源ID，您可以调用查询资源用量汇总接口获取。
+        资源ID，您可以调用[查询资源用量汇总](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001144806706.html)接口获取。
 
         :return: The resource_id of this ListResourceUsageRequest.
         :rtype: str
@@ -214,7 +214,7 @@ class ListResourceUsageRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListResourceUsageRequest.
 
-        资源ID，您可以调用查询资源用量汇总接口获取。
+        资源ID，您可以调用[查询资源用量汇总](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001144806706.html)接口获取。
 
         :param resource_id: The resource_id of this ListResourceUsageRequest.
         :type resource_id: str

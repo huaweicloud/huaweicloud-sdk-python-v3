@@ -22,15 +22,17 @@ class DeleteGaussMySqlProxyRequest:
 
     openapi_types = {
         'x_language': 'str',
-        'instance_id': 'str'
+        'instance_id': 'str',
+        'body': 'CloseMysqlProxyRequestBody'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
-        'instance_id': 'instance_id'
+        'instance_id': 'instance_id',
+        'body': 'body'
     }
 
-    def __init__(self, x_language=None, instance_id=None):
+    def __init__(self, x_language=None, instance_id=None, body=None):
         """DeleteGaussMySqlProxyRequest
 
         The model defined in huaweicloud sdk
@@ -39,17 +41,22 @@ class DeleteGaussMySqlProxyRequest:
         :type x_language: str
         :param instance_id: 实例ID
         :type instance_id: str
+        :param body: Body of the DeleteGaussMySqlProxyRequest
+        :type body: :class:`huaweicloudsdkgaussdb.v3.CloseMysqlProxyRequestBody`
         """
         
         
 
         self._x_language = None
         self._instance_id = None
+        self._body = None
         self.discriminator = None
 
         if x_language is not None:
             self.x_language = x_language
         self.instance_id = instance_id
+        if body is not None:
+            self.body = body
 
     @property
     def x_language(self):
@@ -94,6 +101,26 @@ class DeleteGaussMySqlProxyRequest:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def body(self):
+        """Gets the body of this DeleteGaussMySqlProxyRequest.
+
+
+        :return: The body of this DeleteGaussMySqlProxyRequest.
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.CloseMysqlProxyRequestBody`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this DeleteGaussMySqlProxyRequest.
+
+
+        :param body: The body of this DeleteGaussMySqlProxyRequest.
+        :type body: :class:`huaweicloudsdkgaussdb.v3.CloseMysqlProxyRequestBody`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -34,7 +34,8 @@ class MysqlProxy:
         'node_num': 'int',
         'mode': 'str',
         'nodes': 'list[MysqlProxyNodes]',
-        'flavor_ref': 'str'
+        'flavor_ref': 'str',
+        'name': 'str'
     }
 
     attribute_map = {
@@ -51,23 +52,24 @@ class MysqlProxy:
         'node_num': 'node_num',
         'mode': 'mode',
         'nodes': 'nodes',
-        'flavor_ref': 'flavor_ref'
+        'flavor_ref': 'flavor_ref',
+        'name': 'name'
     }
 
-    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None):
+    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None):
         """MysqlProxy
 
         The model defined in huaweicloud sdk
 
         :param pool_id: Proxy实例id。
         :type pool_id: str
-        :param status: Proxy实例开启状态。  取值范围：closed、open、frozen、opening、closing、enlarging、freezing和unfreezin。
+        :param status: Proxy实例开启状态。  取值范围：closed、open、frozen、opening、closing、enlarging、freezing和unfreezing。
         :type status: str
         :param address: Proxy读写分离地址。
         :type address: str
         :param port: Proxy端口信息。
         :type port: int
-        :param pool_status: Proxy实例状态。 取值范围：abnormal、normal、creating和deleted。
+        :param pool_status: Proxy实例状态。 取值范围：ACTIVE、BUILD、FAILED和DELETED。
         :type pool_status: str
         :param delay_threshold_in_seconds: 延时阈值，单位：秒。
         :type delay_threshold_in_seconds: int
@@ -87,6 +89,8 @@ class MysqlProxy:
         :type nodes: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyNodes`]
         :param flavor_ref: Proxy规格信息。
         :type flavor_ref: str
+        :param name: Proxy实例名称。
+        :type name: str
         """
         
         
@@ -105,6 +109,7 @@ class MysqlProxy:
         self._mode = None
         self._nodes = None
         self._flavor_ref = None
+        self._name = None
         self.discriminator = None
 
         if pool_id is not None:
@@ -135,6 +140,8 @@ class MysqlProxy:
             self.nodes = nodes
         if flavor_ref is not None:
             self.flavor_ref = flavor_ref
+        if name is not None:
+            self.name = name
 
     @property
     def pool_id(self):
@@ -162,7 +169,7 @@ class MysqlProxy:
     def status(self):
         """Gets the status of this MysqlProxy.
 
-        Proxy实例开启状态。  取值范围：closed、open、frozen、opening、closing、enlarging、freezing和unfreezin。
+        Proxy实例开启状态。  取值范围：closed、open、frozen、opening、closing、enlarging、freezing和unfreezing。
 
         :return: The status of this MysqlProxy.
         :rtype: str
@@ -173,7 +180,7 @@ class MysqlProxy:
     def status(self, status):
         """Sets the status of this MysqlProxy.
 
-        Proxy实例开启状态。  取值范围：closed、open、frozen、opening、closing、enlarging、freezing和unfreezin。
+        Proxy实例开启状态。  取值范围：closed、open、frozen、opening、closing、enlarging、freezing和unfreezing。
 
         :param status: The status of this MysqlProxy.
         :type status: str
@@ -228,7 +235,7 @@ class MysqlProxy:
     def pool_status(self):
         """Gets the pool_status of this MysqlProxy.
 
-        Proxy实例状态。 取值范围：abnormal、normal、creating和deleted。
+        Proxy实例状态。 取值范围：ACTIVE、BUILD、FAILED和DELETED。
 
         :return: The pool_status of this MysqlProxy.
         :rtype: str
@@ -239,7 +246,7 @@ class MysqlProxy:
     def pool_status(self, pool_status):
         """Sets the pool_status of this MysqlProxy.
 
-        Proxy实例状态。 取值范围：abnormal、normal、creating和deleted。
+        Proxy实例状态。 取值范围：ACTIVE、BUILD、FAILED和DELETED。
 
         :param pool_status: The pool_status of this MysqlProxy.
         :type pool_status: str
@@ -443,6 +450,28 @@ class MysqlProxy:
         :type flavor_ref: str
         """
         self._flavor_ref = flavor_ref
+
+    @property
+    def name(self):
+        """Gets the name of this MysqlProxy.
+
+        Proxy实例名称。
+
+        :return: The name of this MysqlProxy.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this MysqlProxy.
+
+        Proxy实例名称。
+
+        :param name: The name of this MysqlProxy.
+        :type name: str
+        """
+        self._name = name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

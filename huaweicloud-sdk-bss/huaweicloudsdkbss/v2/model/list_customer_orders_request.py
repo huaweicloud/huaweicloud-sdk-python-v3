@@ -59,7 +59,7 @@ class ListCustomerOrdersRequest:
 
         :param order_id: 订单ID。 说明： 使用特殊字符进行查询的时候，请注意进行URL编码转换，如“%”的转码应为“%25”。
         :type order_id: str
-        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
         :type customer_id: str
         :param create_time_begin: 订单创建开始时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
         :type create_time_begin: str
@@ -81,7 +81,7 @@ class ListCustomerOrdersRequest:
         :type payment_time_begin: str
         :param payment_time_end: 订单支付结束时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
         :type payment_time_end: str
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商的客户订单列表时，需要携带该参数；否则只能查询自己客户的订单列表。
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云伙伴能力中心（一级经销商）查询精英服务商的客户订单列表时，需要携带该参数；否则只能查询自己客户的订单列表。
         :type indirect_partner_id: str
         """
         
@@ -155,7 +155,7 @@ class ListCustomerOrdersRequest:
     def customer_id(self):
         """Gets the customer_id of this ListCustomerOrdersRequest.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
         :return: The customer_id of this ListCustomerOrdersRequest.
         :rtype: str
@@ -166,7 +166,7 @@ class ListCustomerOrdersRequest:
     def customer_id(self, customer_id):
         """Sets the customer_id of this ListCustomerOrdersRequest.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
         :param customer_id: The customer_id of this ListCustomerOrdersRequest.
         :type customer_id: str
@@ -397,7 +397,7 @@ class ListCustomerOrdersRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListCustomerOrdersRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商的客户订单列表时，需要携带该参数；否则只能查询自己客户的订单列表。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云伙伴能力中心（一级经销商）查询精英服务商的客户订单列表时，需要携带该参数；否则只能查询自己客户的订单列表。
 
         :return: The indirect_partner_id of this ListCustomerOrdersRequest.
         :rtype: str
@@ -408,7 +408,7 @@ class ListCustomerOrdersRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListCustomerOrdersRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商的客户订单列表时，需要携带该参数；否则只能查询自己客户的订单列表。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云伙伴能力中心（一级经销商）查询精英服务商的客户订单列表时，需要携带该参数；否则只能查询自己客户的订单列表。
 
         :param indirect_partner_id: The indirect_partner_id of this ListCustomerOrdersRequest.
         :type indirect_partner_id: str

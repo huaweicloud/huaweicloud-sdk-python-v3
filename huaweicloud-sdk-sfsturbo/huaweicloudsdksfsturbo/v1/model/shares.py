@@ -95,7 +95,7 @@ class Shares:
         :type id: str
         :param name: 创建时指定的SFS Turbo文件系统名称。
         :type name: str
-        :param pay_model: SFS Turbo文件系统的计费模式。“0”代表按需付费，“1”代表包周期计费。
+        :param pay_model: SFS Turbo文件系统的计费模式。&#39;0&#39;代表按需付费，&#39;1&#39;代表包周期计费。
         :type pay_model: str
         :param region: SFS Turbo文件系统所在区域。
         :type region: str
@@ -429,7 +429,7 @@ class Shares:
     def pay_model(self):
         """Gets the pay_model of this Shares.
 
-        SFS Turbo文件系统的计费模式。“0”代表按需付费，“1”代表包周期计费。
+        SFS Turbo文件系统的计费模式。'0'代表按需付费，'1'代表包周期计费。
 
         :return: The pay_model of this Shares.
         :rtype: str
@@ -440,7 +440,7 @@ class Shares:
     def pay_model(self, pay_model):
         """Sets the pay_model of this Shares.
 
-        SFS Turbo文件系统的计费模式。“0”代表按需付费，“1”代表包周期计费。
+        SFS Turbo文件系统的计费模式。'0'代表按需付费，'1'代表包周期计费。
 
         :param pay_model: The pay_model of this Shares.
         :type pay_model: str

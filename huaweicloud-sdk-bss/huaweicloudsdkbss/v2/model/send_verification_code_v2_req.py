@@ -53,7 +53,7 @@ class SendVerificationCodeV2Req:
         :type lang: str
         :param scene: 验证码使用的场景，目前支持如下场景： 29：注册场景18：个人银行卡实名认证场景 不填写默认为29。
         :type scene: int
-        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。 如果scene&#x3D;18的时候必填。
+        :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。 如果scene&#x3D;18的时候必填。
         :type customer_id: str
         """
         
@@ -193,7 +193,7 @@ class SendVerificationCodeV2Req:
     def customer_id(self):
         """Gets the customer_id of this SendVerificationCodeV2Req.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。 如果scene=18的时候必填。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。 如果scene=18的时候必填。
 
         :return: The customer_id of this SendVerificationCodeV2Req.
         :rtype: str
@@ -204,7 +204,7 @@ class SendVerificationCodeV2Req:
     def customer_id(self, customer_id):
         """Sets the customer_id of this SendVerificationCodeV2Req.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。 如果scene=18的时候必填。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。 如果scene=18的时候必填。
 
         :param customer_id: The customer_id of this SendVerificationCodeV2Req.
         :type customer_id: str

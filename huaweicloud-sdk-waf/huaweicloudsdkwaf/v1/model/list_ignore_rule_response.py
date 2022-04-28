@@ -22,7 +22,7 @@ class ListIgnoreRuleResponse(SdkResponse):
 
     openapi_types = {
         'total': 'int',
-        'items': 'list[IngnoreItem]'
+        'items': 'list[IgnoreRuleBody]'
     }
 
     attribute_map = {
@@ -35,10 +35,10 @@ class ListIgnoreRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 该策略下规则数量
+        :param total: 该策略下误报屏蔽规则数量
         :type total: int
         :param items: 误报屏蔽规则对象列表
-        :type items: list[:class:`huaweicloudsdkwaf.v1.IngnoreItem`]
+        :type items: list[:class:`huaweicloudsdkwaf.v1.IgnoreRuleBody`]
         """
         
         super(ListIgnoreRuleResponse, self).__init__()
@@ -56,7 +56,7 @@ class ListIgnoreRuleResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListIgnoreRuleResponse.
 
-        该策略下规则数量
+        该策略下误报屏蔽规则数量
 
         :return: The total of this ListIgnoreRuleResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class ListIgnoreRuleResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListIgnoreRuleResponse.
 
-        该策略下规则数量
+        该策略下误报屏蔽规则数量
 
         :param total: The total of this ListIgnoreRuleResponse.
         :type total: int
@@ -81,7 +81,7 @@ class ListIgnoreRuleResponse(SdkResponse):
         误报屏蔽规则对象列表
 
         :return: The items of this ListIgnoreRuleResponse.
-        :rtype: list[:class:`huaweicloudsdkwaf.v1.IngnoreItem`]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.IgnoreRuleBody`]
         """
         return self._items
 
@@ -92,7 +92,7 @@ class ListIgnoreRuleResponse(SdkResponse):
         误报屏蔽规则对象列表
 
         :param items: The items of this ListIgnoreRuleResponse.
-        :type items: list[:class:`huaweicloudsdkwaf.v1.IngnoreItem`]
+        :type items: list[:class:`huaweicloudsdkwaf.v1.IgnoreRuleBody`]
         """
         self._items = items
 

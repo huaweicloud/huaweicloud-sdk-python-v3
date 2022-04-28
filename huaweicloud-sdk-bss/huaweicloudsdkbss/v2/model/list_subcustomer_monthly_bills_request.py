@@ -47,11 +47,11 @@ class ListSubcustomerMonthlyBillsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
         :type customer_id: str
         :param cycle: 消费时间。格式固定为YYYY-MM。示例：2018-08
         :type cycle: str
-        :param cloud_service_type: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :param cloud_service_type: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。
         :type cloud_service_type: str
         :param charge_mode: 计费模式。1：包年/包月3：按需
         :type charge_mode: str
@@ -61,7 +61,7 @@ class ListSubcustomerMonthlyBillsRequest:
         :type limit: int
         :param bill_type: 账单类型。0：消费1：退订2：华为核销
         :type bill_type: str
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
         :type indirect_partner_id: str
         """
         
@@ -96,7 +96,7 @@ class ListSubcustomerMonthlyBillsRequest:
     def customer_id(self):
         """Gets the customer_id of this ListSubcustomerMonthlyBillsRequest.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
         :return: The customer_id of this ListSubcustomerMonthlyBillsRequest.
         :rtype: str
@@ -107,7 +107,7 @@ class ListSubcustomerMonthlyBillsRequest:
     def customer_id(self, customer_id):
         """Sets the customer_id of this ListSubcustomerMonthlyBillsRequest.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
         :param customer_id: The customer_id of this ListSubcustomerMonthlyBillsRequest.
         :type customer_id: str
@@ -140,7 +140,7 @@ class ListSubcustomerMonthlyBillsRequest:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this ListSubcustomerMonthlyBillsRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。
 
         :return: The cloud_service_type of this ListSubcustomerMonthlyBillsRequest.
         :rtype: str
@@ -151,7 +151,7 @@ class ListSubcustomerMonthlyBillsRequest:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this ListSubcustomerMonthlyBillsRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。
 
         :param cloud_service_type: The cloud_service_type of this ListSubcustomerMonthlyBillsRequest.
         :type cloud_service_type: str
@@ -250,7 +250,7 @@ class ListSubcustomerMonthlyBillsRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListSubcustomerMonthlyBillsRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
 
         :return: The indirect_partner_id of this ListSubcustomerMonthlyBillsRequest.
         :rtype: str
@@ -261,7 +261,7 @@ class ListSubcustomerMonthlyBillsRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListSubcustomerMonthlyBillsRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
 
         :param indirect_partner_id: The indirect_partner_id of this ListSubcustomerMonthlyBillsRequest.
         :type indirect_partner_id: str

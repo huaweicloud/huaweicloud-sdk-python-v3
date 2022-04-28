@@ -21,28 +21,35 @@ class EnlargeProxyRequest:
     sensitive_list = []
 
     openapi_types = {
-        'node_num': 'int'
+        'node_num': 'int',
+        'proxy_id': 'str'
     }
 
     attribute_map = {
-        'node_num': 'node_num'
+        'node_num': 'node_num',
+        'proxy_id': 'proxy_id'
     }
 
-    def __init__(self, node_num=None):
+    def __init__(self, node_num=None, proxy_id=None):
         """EnlargeProxyRequest
 
         The model defined in huaweicloud sdk
 
         :param node_num: proxy节点扩容操作需要扩容的节点数。本次扩容的节点数的取值范围：1~30之间的整数。 限制条件：该实例的proxy节点的总数量小于等于32。
         :type node_num: int
+        :param proxy_id: 数据库代理id。 如果实例只开启了一个代理，可不传该参数；如果实例开启了多个代理，则必须指定一个数据库代理，扩容新的代理节点。。
+        :type proxy_id: str
         """
         
         
 
         self._node_num = None
+        self._proxy_id = None
         self.discriminator = None
 
         self.node_num = node_num
+        if proxy_id is not None:
+            self.proxy_id = proxy_id
 
     @property
     def node_num(self):
@@ -65,6 +72,28 @@ class EnlargeProxyRequest:
         :type node_num: int
         """
         self._node_num = node_num
+
+    @property
+    def proxy_id(self):
+        """Gets the proxy_id of this EnlargeProxyRequest.
+
+        数据库代理id。 如果实例只开启了一个代理，可不传该参数；如果实例开启了多个代理，则必须指定一个数据库代理，扩容新的代理节点。。
+
+        :return: The proxy_id of this EnlargeProxyRequest.
+        :rtype: str
+        """
+        return self._proxy_id
+
+    @proxy_id.setter
+    def proxy_id(self, proxy_id):
+        """Sets the proxy_id of this EnlargeProxyRequest.
+
+        数据库代理id。 如果实例只开启了一个代理，可不传该参数；如果实例开启了多个代理，则必须指定一个数据库代理，扩容新的代理节点。。
+
+        :param proxy_id: The proxy_id of this EnlargeProxyRequest.
+        :type proxy_id: str
+        """
+        self._proxy_id = proxy_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

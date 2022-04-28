@@ -32,14 +32,16 @@ class ListEventItems:
         'payload': 'str',
         'action': 'str',
         'request_line': 'str',
-        'headers': 'ListEventItemsHeaders',
+        'headers': 'object',
         'cookie': 'str',
         'status': 'str',
+        'process_time': 'int',
         'region': 'str',
         'host_id': 'str',
         'response_time': 'int',
         'response_size': 'int',
-        'response_body': 'str'
+        'response_body': 'str',
+        'request_body': 'str'
     }
 
     attribute_map = {
@@ -57,14 +59,16 @@ class ListEventItems:
         'headers': 'headers',
         'cookie': 'cookie',
         'status': 'status',
+        'process_time': 'process_time',
         'region': 'region',
         'host_id': 'host_id',
         'response_time': 'response_time',
         'response_size': 'response_size',
-        'response_body': 'response_body'
+        'response_body': 'response_body',
+        'request_body': 'request_body'
     }
 
-    def __init__(self, id=None, time=None, policyid=None, sip=None, host=None, url=None, attack=None, rule=None, payload=None, action=None, request_line=None, headers=None, cookie=None, status=None, region=None, host_id=None, response_time=None, response_size=None, response_body=None):
+    def __init__(self, id=None, time=None, policyid=None, sip=None, host=None, url=None, attack=None, rule=None, payload=None, action=None, request_line=None, headers=None, cookie=None, status=None, process_time=None, region=None, host_id=None, response_time=None, response_size=None, response_body=None, request_body=None):
         """ListEventItems
 
         The model defined in huaweicloud sdk
@@ -91,13 +95,15 @@ class ListEventItems:
         :type action: str
         :param request_line: 请求方法和路径
         :type request_line: str
-        :param headers: 
-        :type headers: :class:`huaweicloudsdkwaf.v1.ListEventItemsHeaders`
+        :param headers: http请求header
+        :type headers: object
         :param cookie: 请求cookie
         :type cookie: str
         :param status: 响应码状态
         :type status: str
-        :param region: 区域
+        :param process_time: 处理时长
+        :type process_time: int
+        :param region: 地理位置
         :type region: str
         :param host_id: 域名id
         :type host_id: str
@@ -107,6 +113,8 @@ class ListEventItems:
         :type response_size: int
         :param response_body: 响应体
         :type response_body: str
+        :param request_body: 请求体
+        :type request_body: str
         """
         
         
@@ -125,11 +133,13 @@ class ListEventItems:
         self._headers = None
         self._cookie = None
         self._status = None
+        self._process_time = None
         self._region = None
         self._host_id = None
         self._response_time = None
         self._response_size = None
         self._response_body = None
+        self._request_body = None
         self.discriminator = None
 
         if id is not None:
@@ -160,6 +170,8 @@ class ListEventItems:
             self.cookie = cookie
         if status is not None:
             self.status = status
+        if process_time is not None:
+            self.process_time = process_time
         if region is not None:
             self.region = region
         if host_id is not None:
@@ -170,6 +182,8 @@ class ListEventItems:
             self.response_size = response_size
         if response_body is not None:
             self.response_body = response_body
+        if request_body is not None:
+            self.request_body = request_body
 
     @property
     def id(self):
@@ -417,9 +431,10 @@ class ListEventItems:
     def headers(self):
         """Gets the headers of this ListEventItems.
 
+        http请求header
 
         :return: The headers of this ListEventItems.
-        :rtype: :class:`huaweicloudsdkwaf.v1.ListEventItemsHeaders`
+        :rtype: object
         """
         return self._headers
 
@@ -427,9 +442,10 @@ class ListEventItems:
     def headers(self, headers):
         """Sets the headers of this ListEventItems.
 
+        http请求header
 
         :param headers: The headers of this ListEventItems.
-        :type headers: :class:`huaweicloudsdkwaf.v1.ListEventItemsHeaders`
+        :type headers: object
         """
         self._headers = headers
 
@@ -478,10 +494,32 @@ class ListEventItems:
         self._status = status
 
     @property
+    def process_time(self):
+        """Gets the process_time of this ListEventItems.
+
+        处理时长
+
+        :return: The process_time of this ListEventItems.
+        :rtype: int
+        """
+        return self._process_time
+
+    @process_time.setter
+    def process_time(self, process_time):
+        """Sets the process_time of this ListEventItems.
+
+        处理时长
+
+        :param process_time: The process_time of this ListEventItems.
+        :type process_time: int
+        """
+        self._process_time = process_time
+
+    @property
     def region(self):
         """Gets the region of this ListEventItems.
 
-        区域
+        地理位置
 
         :return: The region of this ListEventItems.
         :rtype: str
@@ -492,7 +530,7 @@ class ListEventItems:
     def region(self, region):
         """Sets the region of this ListEventItems.
 
-        区域
+        地理位置
 
         :param region: The region of this ListEventItems.
         :type region: str
@@ -586,6 +624,28 @@ class ListEventItems:
         :type response_body: str
         """
         self._response_body = response_body
+
+    @property
+    def request_body(self):
+        """Gets the request_body of this ListEventItems.
+
+        请求体
+
+        :return: The request_body of this ListEventItems.
+        :rtype: str
+        """
+        return self._request_body
+
+    @request_body.setter
+    def request_body(self, request_body):
+        """Sets the request_body of this ListEventItems.
+
+        请求体
+
+        :param request_body: The request_body of this ListEventItems.
+        :type request_body: str
+        """
+        self._request_body = request_body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

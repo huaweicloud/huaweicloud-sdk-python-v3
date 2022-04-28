@@ -67,9 +67,9 @@ class QuerySubCustomerListReq:
         :type associated_on_begin: str
         :param associated_on_end: 关联时间区间段结束，UTC时间。 格式：YYYY-MM-DD&#39;T&#39;hh:mm:ss&#39;Z&#39;，例如“2019-05-06T08:05:01Z”。
         :type associated_on_end: str
-        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id，或者可以从创建客户接口的响应获取domain_id。
+        :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id，或者可以从创建客户接口的响应获取domain_id。
         :type customer_id: str
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。如果需要查询精英服务商伙伴的子客户列表，必须携带该字段。
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询精英服务商伙伴的子客户列表，必须携带该字段。
         :type indirect_partner_id: str
         """
         
@@ -288,7 +288,7 @@ class QuerySubCustomerListReq:
     def customer_id(self):
         """Gets the customer_id of this QuerySubCustomerListReq.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id，或者可以从创建客户接口的响应获取domain_id。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id，或者可以从创建客户接口的响应获取domain_id。
 
         :return: The customer_id of this QuerySubCustomerListReq.
         :rtype: str
@@ -299,7 +299,7 @@ class QuerySubCustomerListReq:
     def customer_id(self, customer_id):
         """Sets the customer_id of this QuerySubCustomerListReq.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id，或者可以从创建客户接口的响应获取domain_id。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id，或者可以从创建客户接口的响应获取domain_id。
 
         :param customer_id: The customer_id of this QuerySubCustomerListReq.
         :type customer_id: str
@@ -310,7 +310,7 @@ class QuerySubCustomerListReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this QuerySubCustomerListReq.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。如果需要查询精英服务商伙伴的子客户列表，必须携带该字段。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询精英服务商伙伴的子客户列表，必须携带该字段。
 
         :return: The indirect_partner_id of this QuerySubCustomerListReq.
         :rtype: str
@@ -321,7 +321,7 @@ class QuerySubCustomerListReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this QuerySubCustomerListReq.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。如果需要查询精英服务商伙伴的子客户列表，必须携带该字段。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询精英服务商伙伴的子客户列表，必须携带该字段。
 
         :param indirect_partner_id: The indirect_partner_id of this QuerySubCustomerListReq.
         :type indirect_partner_id: str

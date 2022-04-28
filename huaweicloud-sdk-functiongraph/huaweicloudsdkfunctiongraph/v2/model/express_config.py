@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DriverLicenseResultStatus:
+class ExpressConfig:
 
     """
     Attributes:
@@ -21,49 +21,51 @@ class DriverLicenseResultStatus:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str'
+        'log_level': 'str'
     }
 
     attribute_map = {
-        'name': 'name'
+        'log_level': 'log_level'
     }
 
-    def __init__(self, name=None):
-        """DriverLicenseResultStatus
+    def __init__(self, log_level=None):
+        """ExpressConfig
 
         The model defined in huaweicloud sdk
 
-        :param name: 
-        :type name: str
+        :param log_level: 快速模式相关配置，仅在mode配置为EXPRESS时生效 快速模式下流程的执行日志级别，当前支持： ALL: 记录所有节点的执行日志 ERROR：仅记录异常节点执行日志 NONE：不记录日志 注意：当配置为ALL和ERROR级别时租户需要开启LTS相关权限
+        :type log_level: str
         """
         
         
 
-        self._name = None
+        self._log_level = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        if log_level is not None:
+            self.log_level = log_level
 
     @property
-    def name(self):
-        """Gets the name of this DriverLicenseResultStatus.
+    def log_level(self):
+        """Gets the log_level of this ExpressConfig.
 
+        快速模式相关配置，仅在mode配置为EXPRESS时生效 快速模式下流程的执行日志级别，当前支持： ALL: 记录所有节点的执行日志 ERROR：仅记录异常节点执行日志 NONE：不记录日志 注意：当配置为ALL和ERROR级别时租户需要开启LTS相关权限
 
-        :return: The name of this DriverLicenseResultStatus.
+        :return: The log_level of this ExpressConfig.
         :rtype: str
         """
-        return self._name
+        return self._log_level
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this DriverLicenseResultStatus.
+    @log_level.setter
+    def log_level(self, log_level):
+        """Sets the log_level of this ExpressConfig.
 
+        快速模式相关配置，仅在mode配置为EXPRESS时生效 快速模式下流程的执行日志级别，当前支持： ALL: 记录所有节点的执行日志 ERROR：仅记录异常节点执行日志 NONE：不记录日志 注意：当配置为ALL和ERROR级别时租户需要开启LTS相关权限
 
-        :param name: The name of this DriverLicenseResultStatus.
-        :type name: str
+        :param log_level: The log_level of this ExpressConfig.
+        :type log_level: str
         """
-        self._name = name
+        self._log_level = log_level
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -107,7 +109,7 @@ class DriverLicenseResultStatus:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DriverLicenseResultStatus):
+        if not isinstance(other, ExpressConfig):
             return False
 
         return self.__dict__ == other.__dict__

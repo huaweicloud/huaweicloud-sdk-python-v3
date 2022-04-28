@@ -21,29 +21,36 @@ class CreateDeploymentJobsParams:
     sensitive_list = []
 
     openapi_types = {
-        'function': 'FGSDeploymentJobsParam'
+        'function': 'FGSDeploymentJobsParam',
+        'cci': 'CciDeploymentJobsParam'
     }
 
     attribute_map = {
-        'function': 'function'
+        'function': 'function',
+        'cci': 'cci'
     }
 
-    def __init__(self, function=None):
+    def __init__(self, function=None, cci=None):
         """CreateDeploymentJobsParams
 
         The model defined in huaweicloud sdk
 
         :param function: 
         :type function: :class:`huaweicloudsdkdevstar.v1.FGSDeploymentJobsParam`
+        :param cci: 
+        :type cci: :class:`huaweicloudsdkdevstar.v1.CciDeploymentJobsParam`
         """
         
         
 
         self._function = None
+        self._cci = None
         self.discriminator = None
 
         if function is not None:
             self.function = function
+        if cci is not None:
+            self.cci = cci
 
     @property
     def function(self):
@@ -64,6 +71,26 @@ class CreateDeploymentJobsParams:
         :type function: :class:`huaweicloudsdkdevstar.v1.FGSDeploymentJobsParam`
         """
         self._function = function
+
+    @property
+    def cci(self):
+        """Gets the cci of this CreateDeploymentJobsParams.
+
+
+        :return: The cci of this CreateDeploymentJobsParams.
+        :rtype: :class:`huaweicloudsdkdevstar.v1.CciDeploymentJobsParam`
+        """
+        return self._cci
+
+    @cci.setter
+    def cci(self, cci):
+        """Sets the cci of this CreateDeploymentJobsParams.
+
+
+        :param cci: The cci of this CreateDeploymentJobsParams.
+        :type cci: :class:`huaweicloudsdkdevstar.v1.CciDeploymentJobsParam`
+        """
+        self._cci = cci
 
     def to_dict(self):
         """Returns the model properties as a dict"""

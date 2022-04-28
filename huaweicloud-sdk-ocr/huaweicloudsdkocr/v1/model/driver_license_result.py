@@ -36,7 +36,7 @@ class DriverLicenseResult:
         'file_number': 'str',
         'record': 'str',
         'accumulated_scores': 'str',
-        'status': 'list[DriverLicenseResultStatus]',
+        'status': 'list[str]',
         'generation_date': 'str',
         'current_time': 'str',
         'text_location': 'object'
@@ -100,7 +100,7 @@ class DriverLicenseResult:
         :param accumulated_scores: 累积记分。 
         :type accumulated_scores: str
         :param status: 状态。
-        :type status: list[:class:`huaweicloudsdkocr.v1.DriverLicenseResultStatus`]
+        :type status: list[str]
         :param generation_date: 生成时间。 
         :type generation_date: str
         :param current_time: 当前时间。 
@@ -508,7 +508,7 @@ class DriverLicenseResult:
         状态。
 
         :return: The status of this DriverLicenseResult.
-        :rtype: list[:class:`huaweicloudsdkocr.v1.DriverLicenseResultStatus`]
+        :rtype: list[str]
         """
         return self._status
 
@@ -519,7 +519,7 @@ class DriverLicenseResult:
         状态。
 
         :param status: The status of this DriverLicenseResult.
-        :type status: list[:class:`huaweicloudsdkocr.v1.DriverLicenseResultStatus`]
+        :type status: list[str]
         """
         self._status = status
 

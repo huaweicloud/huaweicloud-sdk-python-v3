@@ -48,7 +48,8 @@ class MysqlInstanceInfoDetail:
         'master_az_code': 'str',
         'maintenance_window': 'str',
         'tags': 'list[MysqlTags]',
-        'dedicated_resource_id': 'str'
+        'dedicated_resource_id': 'str',
+        'proxies': 'list[MysqlProxyInfo]'
     }
 
     attribute_map = {
@@ -79,10 +80,11 @@ class MysqlInstanceInfoDetail:
         'master_az_code': 'master_az_code',
         'maintenance_window': 'maintenance_window',
         'tags': 'tags',
-        'dedicated_resource_id': 'dedicated_resource_id'
+        'dedicated_resource_id': 'dedicated_resource_id',
+        'proxies': 'proxies'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, status=None, port=None, alias=None, type=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None):
+    def __init__(self, id=None, name=None, project_id=None, status=None, port=None, alias=None, type=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None, proxies=None):
         """MysqlInstanceInfoDetail
 
         The model defined in huaweicloud sdk
@@ -93,7 +95,7 @@ class MysqlInstanceInfoDetail:
         :type name: str
         :param project_id: 租户在某一region下的project ID。
         :type project_id: str
-        :param status: 实例状态。 取值： 值为“BUILD”，表示实例正在创建。 值为“ACTIVE”，表示实例正常。 值为“FAILED”，表示实例异常。 值为“FROZEN”，表示实例冻结。 值为“MODIFYING”，表示实例正在扩容。 值为“REBOOTING”，表示实例正在重启。 值为“RESTORING”，表示实例正在恢复。 值为“MODIFYING INSTANCE TYPE”，表示实例正在转主备。 值为“SWITCHOVER”，表示实例正在主备切换。 值为“MIGRATING”，表示实例正在迁移。 值为“BACKING UP”，表示实例正在进行备份。 值为“MODIFYING DATABASE PORT”，表示实例正在修改数据库端口。值为“STORAGE FULL”，表示实例磁盘空间满。
+        :param status: 实例状态。 取值： 值为“BUILD”，表示实例正在创建。 值为“ACTIVE”，表示实例正常。 值为“FAILED”，表示实例创建失败。 值为“FROZEN”，表示实例冻结。 值为“MODIFYING”，表示实例正在扩容。 值为“REBOOTING”，表示实例正在重启。 值为“RESTORING”，表示实例正在恢复。 值为“SWITCHOVER”，表示实例正在主备切换。 值为“MIGRATING”，表示实例正在迁移。 值为“BACKING UP”，表示实例正在进行备份。 值为“MODIFYING DATABASE PORT”，表示实例正在修改数据库端口。值为“STORAGE FULL”，表示实例磁盘空间满。
         :type status: str
         :param port: 数据库端口号。
         :type port: str
@@ -143,6 +145,8 @@ class MysqlInstanceInfoDetail:
         :type tags: list[:class:`huaweicloudsdkgaussdb.v3.MysqlTags`]
         :param dedicated_resource_id: 专属资源池ID，只有数据库实例属于专属资源池才会返回该参数。
         :type dedicated_resource_id: str
+        :param proxies: 
+        :type proxies: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyInfo`]
         """
         
         
@@ -175,6 +179,7 @@ class MysqlInstanceInfoDetail:
         self._maintenance_window = None
         self._tags = None
         self._dedicated_resource_id = None
+        self._proxies = None
         self.discriminator = None
 
         self.id = id
@@ -230,6 +235,8 @@ class MysqlInstanceInfoDetail:
             self.tags = tags
         if dedicated_resource_id is not None:
             self.dedicated_resource_id = dedicated_resource_id
+        if proxies is not None:
+            self.proxies = proxies
 
     @property
     def id(self):
@@ -301,7 +308,7 @@ class MysqlInstanceInfoDetail:
     def status(self):
         """Gets the status of this MysqlInstanceInfoDetail.
 
-        实例状态。 取值： 值为“BUILD”，表示实例正在创建。 值为“ACTIVE”，表示实例正常。 值为“FAILED”，表示实例异常。 值为“FROZEN”，表示实例冻结。 值为“MODIFYING”，表示实例正在扩容。 值为“REBOOTING”，表示实例正在重启。 值为“RESTORING”，表示实例正在恢复。 值为“MODIFYING INSTANCE TYPE”，表示实例正在转主备。 值为“SWITCHOVER”，表示实例正在主备切换。 值为“MIGRATING”，表示实例正在迁移。 值为“BACKING UP”，表示实例正在进行备份。 值为“MODIFYING DATABASE PORT”，表示实例正在修改数据库端口。值为“STORAGE FULL”，表示实例磁盘空间满。
+        实例状态。 取值： 值为“BUILD”，表示实例正在创建。 值为“ACTIVE”，表示实例正常。 值为“FAILED”，表示实例创建失败。 值为“FROZEN”，表示实例冻结。 值为“MODIFYING”，表示实例正在扩容。 值为“REBOOTING”，表示实例正在重启。 值为“RESTORING”，表示实例正在恢复。 值为“SWITCHOVER”，表示实例正在主备切换。 值为“MIGRATING”，表示实例正在迁移。 值为“BACKING UP”，表示实例正在进行备份。 值为“MODIFYING DATABASE PORT”，表示实例正在修改数据库端口。值为“STORAGE FULL”，表示实例磁盘空间满。
 
         :return: The status of this MysqlInstanceInfoDetail.
         :rtype: str
@@ -312,7 +319,7 @@ class MysqlInstanceInfoDetail:
     def status(self, status):
         """Sets the status of this MysqlInstanceInfoDetail.
 
-        实例状态。 取值： 值为“BUILD”，表示实例正在创建。 值为“ACTIVE”，表示实例正常。 值为“FAILED”，表示实例异常。 值为“FROZEN”，表示实例冻结。 值为“MODIFYING”，表示实例正在扩容。 值为“REBOOTING”，表示实例正在重启。 值为“RESTORING”，表示实例正在恢复。 值为“MODIFYING INSTANCE TYPE”，表示实例正在转主备。 值为“SWITCHOVER”，表示实例正在主备切换。 值为“MIGRATING”，表示实例正在迁移。 值为“BACKING UP”，表示实例正在进行备份。 值为“MODIFYING DATABASE PORT”，表示实例正在修改数据库端口。值为“STORAGE FULL”，表示实例磁盘空间满。
+        实例状态。 取值： 值为“BUILD”，表示实例正在创建。 值为“ACTIVE”，表示实例正常。 值为“FAILED”，表示实例创建失败。 值为“FROZEN”，表示实例冻结。 值为“MODIFYING”，表示实例正在扩容。 值为“REBOOTING”，表示实例正在重启。 值为“RESTORING”，表示实例正在恢复。 值为“SWITCHOVER”，表示实例正在主备切换。 值为“MIGRATING”，表示实例正在迁移。 值为“BACKING UP”，表示实例正在进行备份。 值为“MODIFYING DATABASE PORT”，表示实例正在修改数据库端口。值为“STORAGE FULL”，表示实例磁盘空间满。
 
         :param status: The status of this MysqlInstanceInfoDetail.
         :type status: str
@@ -840,6 +847,26 @@ class MysqlInstanceInfoDetail:
         :type dedicated_resource_id: str
         """
         self._dedicated_resource_id = dedicated_resource_id
+
+    @property
+    def proxies(self):
+        """Gets the proxies of this MysqlInstanceInfoDetail.
+
+
+        :return: The proxies of this MysqlInstanceInfoDetail.
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyInfo`]
+        """
+        return self._proxies
+
+    @proxies.setter
+    def proxies(self, proxies):
+        """Sets the proxies of this MysqlInstanceInfoDetail.
+
+
+        :param proxies: The proxies of this MysqlInstanceInfoDetail.
+        :type proxies: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyInfo`]
+        """
+        self._proxies = proxies
 
     def to_dict(self):
         """Returns the model properties as a dict"""

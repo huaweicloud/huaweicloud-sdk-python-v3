@@ -6899,6 +6899,68 @@ class MeetingClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_department(self, request):
+        """通过部门编码查询部门信息
+
+        通过部门编码查询部门信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowDepartment
+        :type request: :class:`huaweicloudsdkmeeting.v1.ShowDepartmentRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDepartmentResponse`
+        """
+        return self.show_department_with_http_info(request)
+
+    def show_department_with_http_info(self, request):
+        all_params = ['dept_code', 'x_request_id', 'accept_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'dept_code' in local_var_params:
+            path_params['dept_code'] = local_var_params['dept_code']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/abs/departments/{dept_code}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDepartmentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_dept_and_child_dept(self, request):
         """查询部门及其一级子部门列表
 

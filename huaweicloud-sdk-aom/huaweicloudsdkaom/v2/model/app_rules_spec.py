@@ -30,7 +30,7 @@ class AppRulesSpec:
         'log_file_fix': 'list[str]',
         'log_path_rule': 'list[LogPathRule]',
         'name_rule': 'NameRule',
-        'priority': 'str'
+        'priority': 'int'
     }
 
     attribute_map = {
@@ -70,7 +70,7 @@ class AppRulesSpec:
         :param name_rule: 
         :type name_rule: :class:`huaweicloudsdkaom.v2.NameRule`
         :param priority: 规则优先级。 1~9999的整数字符串,默认取值为9999
-        :type priority: str
+        :type priority: int
         """
         
         
@@ -303,7 +303,7 @@ class AppRulesSpec:
         规则优先级。 1~9999的整数字符串,默认取值为9999
 
         :return: The priority of this AppRulesSpec.
-        :rtype: str
+        :rtype: int
         """
         return self._priority
 
@@ -314,7 +314,7 @@ class AppRulesSpec:
         规则优先级。 1~9999的整数字符串,默认取值为9999
 
         :param priority: The priority of this AppRulesSpec.
-        :type priority: str
+        :type priority: int
         """
         self._priority = priority
 

@@ -41,7 +41,7 @@ class ListServiceResourcesRequest:
 
         :param x_language: 语言。中文：zh_CN英文：en_US缺省为zh_CN。
         :type x_language: str
-        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。
         :type service_type_code: str
         :param limit: 每次查询的数量，默认值为10。
         :type limit: int
@@ -91,7 +91,7 @@ class ListServiceResourcesRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListServiceResourcesRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。
 
         :return: The service_type_code of this ListServiceResourcesRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class ListServiceResourcesRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListServiceResourcesRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。
 
         :param service_type_code: The service_type_code of this ListServiceResourcesRequest.
         :type service_type_code: str

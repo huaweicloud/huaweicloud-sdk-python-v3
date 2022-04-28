@@ -169,6 +169,66 @@ class FunctionGraphAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def cancel_async_invocation_async(self, request):
+        """停止函数异步调用请求
+
+        停止函数异步调用请求
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CancelAsyncInvocation
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.CancelAsyncInvocationRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CancelAsyncInvocationResponse`
+        """
+        return self.cancel_async_invocation_with_http_info(request)
+
+    def cancel_async_invocation_with_http_info(self, request):
+        all_params = ['function_urn', 'cancel_async_invocation_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/cancel',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CancelAsyncInvocationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_dependency_async(self, request):
         """创建依赖包
 
@@ -3262,7 +3322,7 @@ class FunctionGraphAsyncClient(Client):
         return self.show_tenant_metric_with_http_info(request)
 
     def show_tenant_metric_with_http_info(self, request):
-        all_params = ['period']
+        all_params = ['period', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3275,6 +3335,10 @@ class FunctionGraphAsyncClient(Client):
         query_params = []
         if 'period' in local_var_params:
             query_params.append(('period', local_var_params['period']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
 
         header_params = {}
 
@@ -3378,7 +3442,7 @@ class FunctionGraphAsyncClient(Client):
         return self.show_work_flow_metric_with_http_info(request)
 
     def show_work_flow_metric_with_http_info(self, request):
-        all_params = ['workflow_urn', 'period']
+        all_params = ['workflow_urn', 'period', 'start_time', 'end_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3393,6 +3457,10 @@ class FunctionGraphAsyncClient(Client):
         query_params = []
         if 'period' in local_var_params:
             query_params.append(('period', local_var_params['period']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
 
         header_params = {}
 
@@ -3478,6 +3546,66 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowWorkflowExecutionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def start_sync_workflow_execution_async(self, request):
+        """同步执行函数流
+
+        同步执行函数流
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for StartSyncWorkflowExecution
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.StartSyncWorkflowExecutionRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StartSyncWorkflowExecutionResponse`
+        """
+        return self.start_sync_workflow_execution_with_http_info(request)
+
+    def start_sync_workflow_execution_with_http_info(self, request):
+        all_params = ['workflow_id', 'start_sync_workflow_execution_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/sync-executions',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartSyncWorkflowExecutionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

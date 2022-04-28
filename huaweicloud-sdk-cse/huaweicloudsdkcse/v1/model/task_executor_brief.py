@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class Advance:
+class TaskExecutorBrief:
 
     """
     Attributes:
@@ -21,80 +21,80 @@ class Advance:
     sensitive_list = []
 
     openapi_types = {
-        'index': 'str',
-        'contents': 'list[str]'
+        'duration': 'int',
+        'description': 'str'
     }
 
     attribute_map = {
-        'index': 'index',
-        'contents': 'contents'
+        'duration': 'duration',
+        'description': 'description'
     }
 
-    def __init__(self, index=None, contents=None):
-        """Advance
+    def __init__(self, duration=None, description=None):
+        """TaskExecutorBrief
 
         The model defined in huaweicloud sdk
 
-        :param index: 索引（参数：params，会话cookie：cookie，header字段：header，body字段：body，多种组合：multipart）
-        :type index: str
-        :param contents: 指定字段（仅在param，cookie，header模式下可以使用）
-        :type contents: list[str]
+        :param duration: 子任务持续时长
+        :type duration: int
+        :param description: 子任务描述
+        :type description: str
         """
         
         
 
-        self._index = None
-        self._contents = None
+        self._duration = None
+        self._description = None
         self.discriminator = None
 
-        if index is not None:
-            self.index = index
-        if contents is not None:
-            self.contents = contents
+        if duration is not None:
+            self.duration = duration
+        if description is not None:
+            self.description = description
 
     @property
-    def index(self):
-        """Gets the index of this Advance.
+    def duration(self):
+        """Gets the duration of this TaskExecutorBrief.
 
-        索引（参数：params，会话cookie：cookie，header字段：header，body字段：body，多种组合：multipart）
+        子任务持续时长
 
-        :return: The index of this Advance.
+        :return: The duration of this TaskExecutorBrief.
+        :rtype: int
+        """
+        return self._duration
+
+    @duration.setter
+    def duration(self, duration):
+        """Sets the duration of this TaskExecutorBrief.
+
+        子任务持续时长
+
+        :param duration: The duration of this TaskExecutorBrief.
+        :type duration: int
+        """
+        self._duration = duration
+
+    @property
+    def description(self):
+        """Gets the description of this TaskExecutorBrief.
+
+        子任务描述
+
+        :return: The description of this TaskExecutorBrief.
         :rtype: str
         """
-        return self._index
+        return self._description
 
-    @index.setter
-    def index(self, index):
-        """Sets the index of this Advance.
+    @description.setter
+    def description(self, description):
+        """Sets the description of this TaskExecutorBrief.
 
-        索引（参数：params，会话cookie：cookie，header字段：header，body字段：body，多种组合：multipart）
+        子任务描述
 
-        :param index: The index of this Advance.
-        :type index: str
+        :param description: The description of this TaskExecutorBrief.
+        :type description: str
         """
-        self._index = index
-
-    @property
-    def contents(self):
-        """Gets the contents of this Advance.
-
-        指定字段（仅在param，cookie，header模式下可以使用）
-
-        :return: The contents of this Advance.
-        :rtype: list[str]
-        """
-        return self._contents
-
-    @contents.setter
-    def contents(self, contents):
-        """Sets the contents of this Advance.
-
-        指定字段（仅在param，cookie，header模式下可以使用）
-
-        :param contents: The contents of this Advance.
-        :type contents: list[str]
-        """
-        self._contents = contents
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -138,7 +138,7 @@ class Advance:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Advance):
+        if not isinstance(other, TaskExecutorBrief):
             return False
 
         return self.__dict__ == other.__dict__

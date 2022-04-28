@@ -88,8 +88,7 @@ class ListGaussMySqlErrorLogRequest:
             self.limit = limit
         if level is not None:
             self.level = level
-        if node_id is not None:
-            self.node_id = node_id
+        self.node_id = node_id
 
     @property
     def x_language(self):

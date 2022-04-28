@@ -53,7 +53,7 @@ class QueryIndirectPartnersReq:
         :type offset: int
         :param limit: 每次查询的数量限制。默认值为10。
         :type limit: int
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
         :type indirect_partner_id: str
         """
         
@@ -194,7 +194,7 @@ class QueryIndirectPartnersReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this QueryIndirectPartnersReq.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
 
         :return: The indirect_partner_id of this QueryIndirectPartnersReq.
         :rtype: str
@@ -205,7 +205,7 @@ class QueryIndirectPartnersReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this QueryIndirectPartnersReq.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
 
         :param indirect_partner_id: The indirect_partner_id of this QueryIndirectPartnersReq.
         :type indirect_partner_id: str

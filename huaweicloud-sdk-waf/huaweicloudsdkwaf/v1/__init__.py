@@ -6,7 +6,6 @@ from __future__ import absolute_import
 from huaweicloudsdkwaf.v1.waf_client import WafClient
 from huaweicloudsdkwaf.v1.waf_async_client import WafAsyncClient
 # import models into sdk package
-from huaweicloudsdkwaf.v1.model.advance import Advance
 from huaweicloudsdkwaf.v1.model.anti_tamper_rule_response_body import AntiTamperRuleResponseBody
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_request import ApplyCertificateToHostRequest
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_request_body import ApplyCertificateToHostRequestBody
@@ -18,6 +17,7 @@ from huaweicloudsdkwaf.v1.model.certificate_bunding_host_body import Certificate
 from huaweicloudsdkwaf.v1.model.cloud_waf_host_item import CloudWafHostItem
 from huaweicloudsdkwaf.v1.model.cloud_waf_server import CloudWafServer
 from huaweicloudsdkwaf.v1.model.composite_host_response import CompositeHostResponse
+from huaweicloudsdkwaf.v1.model.condition import Condition
 from huaweicloudsdkwaf.v1.model.count_item import CountItem
 from huaweicloudsdkwaf.v1.model.create_anti_tamper_rule_request import CreateAntiTamperRuleRequest
 from huaweicloudsdkwaf.v1.model.create_anti_tamper_rule_response import CreateAntiTamperRuleResponse
@@ -25,12 +25,16 @@ from huaweicloudsdkwaf.v1.model.create_anti_tamper_rules_request_body import Cre
 from huaweicloudsdkwaf.v1.model.create_certificate_request import CreateCertificateRequest
 from huaweicloudsdkwaf.v1.model.create_certificate_request_body import CreateCertificateRequestBody
 from huaweicloudsdkwaf.v1.model.create_certificate_response import CreateCertificateResponse
+from huaweicloudsdkwaf.v1.model.create_condition import CreateCondition
 from huaweicloudsdkwaf.v1.model.create_geo_ip_rule_request_body import CreateGeoIpRuleRequestBody
 from huaweicloudsdkwaf.v1.model.create_geoip_rule_request import CreateGeoipRuleRequest
 from huaweicloudsdkwaf.v1.model.create_geoip_rule_response import CreateGeoipRuleResponse
 from huaweicloudsdkwaf.v1.model.create_host_request import CreateHostRequest
 from huaweicloudsdkwaf.v1.model.create_host_request_body import CreateHostRequestBody
 from huaweicloudsdkwaf.v1.model.create_host_response import CreateHostResponse
+from huaweicloudsdkwaf.v1.model.create_ignore_rule_request import CreateIgnoreRuleRequest
+from huaweicloudsdkwaf.v1.model.create_ignore_rule_request_body import CreateIgnoreRuleRequestBody
+from huaweicloudsdkwaf.v1.model.create_ignore_rule_response import CreateIgnoreRuleResponse
 from huaweicloudsdkwaf.v1.model.create_policy_request import CreatePolicyRequest
 from huaweicloudsdkwaf.v1.model.create_policy_request_body import CreatePolicyRequestBody
 from huaweicloudsdkwaf.v1.model.create_policy_response import CreatePolicyResponse
@@ -55,6 +59,8 @@ from huaweicloudsdkwaf.v1.model.delete_geoip_rule_request import DeleteGeoipRule
 from huaweicloudsdkwaf.v1.model.delete_geoip_rule_response import DeleteGeoipRuleResponse
 from huaweicloudsdkwaf.v1.model.delete_host_request import DeleteHostRequest
 from huaweicloudsdkwaf.v1.model.delete_host_response import DeleteHostResponse
+from huaweicloudsdkwaf.v1.model.delete_ignore_rule_request import DeleteIgnoreRuleRequest
+from huaweicloudsdkwaf.v1.model.delete_ignore_rule_response import DeleteIgnoreRuleResponse
 from huaweicloudsdkwaf.v1.model.delete_policy_request import DeletePolicyRequest
 from huaweicloudsdkwaf.v1.model.delete_policy_response import DeletePolicyResponse
 from huaweicloudsdkwaf.v1.model.delete_premium_host_request import DeletePremiumHostRequest
@@ -68,7 +74,7 @@ from huaweicloudsdkwaf.v1.model.delete_white_black_ip_rule_response import Delet
 from huaweicloudsdkwaf.v1.model.flag import Flag
 from huaweicloudsdkwaf.v1.model.ge_o_ip_item import GeOIpItem
 from huaweicloudsdkwaf.v1.model.host_flag import HostFlag
-from huaweicloudsdkwaf.v1.model.ingnore_item import IngnoreItem
+from huaweicloudsdkwaf.v1.model.ignore_rule_body import IgnoreRuleBody
 from huaweicloudsdkwaf.v1.model.list_antitamper_rule_request import ListAntitamperRuleRequest
 from huaweicloudsdkwaf.v1.model.list_antitamper_rule_response import ListAntitamperRuleResponse
 from huaweicloudsdkwaf.v1.model.list_bandwidth_timeline_request import ListBandwidthTimelineRequest
@@ -78,7 +84,6 @@ from huaweicloudsdkwaf.v1.model.list_certificates_response import ListCertificat
 from huaweicloudsdkwaf.v1.model.list_composite_hosts_request import ListCompositeHostsRequest
 from huaweicloudsdkwaf.v1.model.list_composite_hosts_response import ListCompositeHostsResponse
 from huaweicloudsdkwaf.v1.model.list_event_items import ListEventItems
-from huaweicloudsdkwaf.v1.model.list_event_items_headers import ListEventItemsHeaders
 from huaweicloudsdkwaf.v1.model.list_event_request import ListEventRequest
 from huaweicloudsdkwaf.v1.model.list_event_response import ListEventResponse
 from huaweicloudsdkwaf.v1.model.list_geoip_rule_request import ListGeoipRuleRequest

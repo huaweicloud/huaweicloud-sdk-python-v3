@@ -55,9 +55,9 @@ class ListGaussMySqlInstancesRequest:
 
         :param x_language: 语言。
         :type x_language: str
-        :param id: 实例ID。 “*”为系统保留字符，如果id是以 “*”起始，表示按照 “*”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入 “*”。
+        :param id: 实例ID。 \\“\\*\\”为系统保留字符，如果id是以 \\“\\*\\”起始，表示按照 \\“\\*\\”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入 \\“\\*\\”。
         :type id: str
-        :param name: 实例名称。  “*”为系统保留字符，如果name是以 “*”起始，表示按照 “*”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入 “*”。
+        :param name: 实例名称。  \\“\\*\\”为系统保留字符，如果name是以 \\“\\*\\”起始，表示按照 \\“\\*\\”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入 \\“\\*\\”。
         :type name: str
         :param type: 按照实例类型查询。目前仅支持Cluster。
         :type type: str
@@ -141,7 +141,7 @@ class ListGaussMySqlInstancesRequest:
     def id(self):
         """Gets the id of this ListGaussMySqlInstancesRequest.
 
-        实例ID。 “*”为系统保留字符，如果id是以 “*”起始，表示按照 “*”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入 “*”。
+        实例ID。 \\“\\*\\”为系统保留字符，如果id是以 \\“\\*\\”起始，表示按照 \\“\\*\\”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入 \\“\\*\\”。
 
         :return: The id of this ListGaussMySqlInstancesRequest.
         :rtype: str
@@ -152,7 +152,7 @@ class ListGaussMySqlInstancesRequest:
     def id(self, id):
         """Sets the id of this ListGaussMySqlInstancesRequest.
 
-        实例ID。 “*”为系统保留字符，如果id是以 “*”起始，表示按照 “*”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入 “*”。
+        实例ID。 \\“\\*\\”为系统保留字符，如果id是以 \\“\\*\\”起始，表示按照 \\“\\*\\”后面的值模糊匹配，否则，按照id精确匹配查询。不能只传入 \\“\\*\\”。
 
         :param id: The id of this ListGaussMySqlInstancesRequest.
         :type id: str
@@ -163,7 +163,7 @@ class ListGaussMySqlInstancesRequest:
     def name(self):
         """Gets the name of this ListGaussMySqlInstancesRequest.
 
-        实例名称。  “*”为系统保留字符，如果name是以 “*”起始，表示按照 “*”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入 “*”。
+        实例名称。  \\“\\*\\”为系统保留字符，如果name是以 \\“\\*\\”起始，表示按照 \\“\\*\\”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入 \\“\\*\\”。
 
         :return: The name of this ListGaussMySqlInstancesRequest.
         :rtype: str
@@ -174,7 +174,7 @@ class ListGaussMySqlInstancesRequest:
     def name(self, name):
         """Sets the name of this ListGaussMySqlInstancesRequest.
 
-        实例名称。  “*”为系统保留字符，如果name是以 “*”起始，表示按照 “*”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入 “*”。
+        实例名称。  \\“\\*\\”为系统保留字符，如果name是以 \\“\\*\\”起始，表示按照 \\“\\*\\”后面的值模糊匹配，否则，按照name精确匹配查询。不能只传入 \\“\\*\\”。
 
         :param name: The name of this ListGaussMySqlInstancesRequest.
         :type name: str

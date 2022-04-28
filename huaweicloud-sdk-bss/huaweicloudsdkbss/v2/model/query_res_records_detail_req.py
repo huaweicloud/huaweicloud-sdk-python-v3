@@ -73,7 +73,7 @@ class QueryResRecordsDetailReq:
         :type charge_mode: int
         :param bill_type: 账单类型： 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
         :type bill_type: int
-        :param enterprise_project_id: 企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
         :type enterprise_project_id: str
         :param include_zero_record: 返回是否包含应付金额为0的记录。 true: 包含false: 不包含
         :type include_zero_record: bool
@@ -293,7 +293,7 @@ class QueryResRecordsDetailReq:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this QueryResRecordsDetailReq.
 
-        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
         :return: The enterprise_project_id of this QueryResRecordsDetailReq.
         :rtype: str
@@ -304,7 +304,7 @@ class QueryResRecordsDetailReq:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this QueryResRecordsDetailReq.
 
-        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
         :param enterprise_project_id: The enterprise_project_id of this QueryResRecordsDetailReq.
         :type enterprise_project_id: str

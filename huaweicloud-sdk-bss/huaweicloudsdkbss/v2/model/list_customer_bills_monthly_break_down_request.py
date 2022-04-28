@@ -59,15 +59,15 @@ class ListCustomerBillsMonthlyBreakDownRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        :param x_language: 语言。en_US：英文。zh_CN：中文
         :type x_language: str
         :param shared_month: 查询分摊成本的月份，格式：YYYY-MM。
         :type shared_month: str
-        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。
         :type service_type_code: str
-        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
+        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用[查询资源类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256519451.html)接口获取。
         :type resource_type_code: str
-        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
         :type region_code: str
         :param charging_mode: 计费模式。1：包年/包月3：按需10：预留实例
         :type charging_mode: int
@@ -81,7 +81,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
         :type resource_id: str
         :param resource_name: 资源名称
         :type resource_name: str
-        :param enterprise_project_id: 企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
         :type enterprise_project_id: str
         :param method: 查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。
         :type method: str
@@ -139,7 +139,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def x_language(self):
         """Gets the x_language of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        语言。en_US：英文。zh_CN：中文
 
         :return: The x_language of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -150,7 +150,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        语言。en_US：英文。zh_CN：中文
 
         :param x_language: The x_language of this ListCustomerBillsMonthlyBreakDownRequest.
         :type x_language: str
@@ -183,7 +183,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。
 
         :return: The service_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -194,7 +194,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。
 
         :param service_type_code: The service_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
         :type service_type_code: str
@@ -205,7 +205,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def resource_type_code(self):
         """Gets the resource_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用[查询资源类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256519451.html)接口获取。
 
         :return: The resource_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -216,7 +216,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用[查询资源类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256519451.html)接口获取。
 
         :param resource_type_code: The resource_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
         :type resource_type_code: str
@@ -227,7 +227,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def region_code(self):
         """Gets the region_code of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
 
         :return: The region_code of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -238,7 +238,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def region_code(self, region_code):
         """Sets the region_code of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this ListCustomerBillsMonthlyBreakDownRequest.
         :type region_code: str
@@ -381,7 +381,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
         :return: The enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -392,7 +392,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
         :param enterprise_project_id: The enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
         :type enterprise_project_id: str

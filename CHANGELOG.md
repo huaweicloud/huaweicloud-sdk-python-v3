@@ -1,3 +1,163 @@
+# 3.0.86 2022-04-28
+
+### HuaweiCloud SDK All
+
+- _Features_
+  - Support the cloud service collection package `huaweicloudsdkall`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `string` -> `int32` of the request parameter `priority` of the interface `AddOrUpdateServiceDiscoveryRules`
+  - Modify the type `string` -> `int32` of the response parameter `priority` of the interface `ListServiceDiscoveryRules`
+
+### HuaweiCloud SDK CSE
+
+- _Features_
+  - Support the service `Cloud Service Engine`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DevStar
+
+- _Features_
+  - Support the interface `ConfirmDeploymentJob`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `cci` to the interface `CreateDeploymentJobs`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - Support the interfaces `CancelAsyncInvocation`, `StartSyncWorkflowExecution`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListFunctionStatistics`:
+    - Modify the type `int32` -> `int64` of the response parameter `timestamp`
+    - Modify the type `int32` -> `double` of the response parameter `value`
+  - Changes of the interface `ListStatistics`:
+    - Modify the type `int32` -> `int64` of the response parameter `timestamp`
+    - Modify the type `int32` -> `double` of the response parameter `value`
+  - Add the response parameter `enable_async_status_log` to the interface `ListFunctionAsyncInvokeConfig`
+  - Add the response parameter `enable_async_status_log` to the interface `ShowFunctionAsyncInvokeConfig`
+  - Changes of the interface `UpdateFunctionAsyncInvokeConfig`:
+    - Add the request parameter `enable_async_status_log`
+    - Add the response parameter `enable_async_status_log`
+  - Changes of the interface `CreateWorkflow`:
+    - Add the request parameters `mode`, `express_config`
+    - Add the enum values `End` to the request parameter `type`
+  - Changes of the interface `ShowWorkFlow`:
+    - Add the response parameters `mode`, `express_config`
+    - Add the enum values `End` to the response parameter `type`
+  - Changes of the interface `UpdateWorkFlow`:
+    - Add the request parameters `mode`, `express_config`
+    - Add the enum values `End` to the request parameter `type`
+  - Changes of the interface `ShowTenantMetric`:
+    - Add the request parameters `start_time`, `end_time`
+    - Modify the type `int32` -> `int64` of the response parameter `timestamp`
+    - Modify the type `int32` -> `double` of the response parameter `value`
+  - Changes of the interface `ShowWorkFlowMetric`:
+    - Add the request parameters `start_time`, `end_time`
+    - Modify the type `int32` -> `int64` of the response parameter `timestamp`
+    - Modify the type `int32` -> `double` of the response parameter `value`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the interface `ShowGaussMySqlProxyList`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateGaussMySqlReadonlyNode`:
+    - Add the request parameter `X-Auth-Token`
+    - Remove the request parameter `x-auth-token`
+  - Remove the response parameters `size`, `order_id` from the interface `ExpandGaussMySqlInstanceVolume`
+  - Changes of the interface `ListGaussMySqlDedicatedResources`:
+    - Add the request parameter `X-Auth-Token`
+    - Remove the request parameter `x-auth-token`
+  - Add the request parameter `CloseMysqlProxyRequest` to the interface `DeleteGaussMySqlProxy`
+  - Changes of the interface `CreateGaussMySqlProxy`:
+    - Add the request parameters `proxy_name`, `proxy_mode`, `nodes_read_weight`
+    - The request parameter `flavor_ref`, `node_num` changed to required
+  - Add the request parameter `proxy_id` to the interface `ExpandGaussMySqlProxy`
+  - Changes of the interface `ListGaussMySqlErrorLog`:
+    - Add the request parameter `X-Auth-Token`
+    - Remove the request parameter `x-auth-token`
+    - The request parameter `node_id` changed to not required
+  - Changes of the interface `ListGaussMySqlSlowLog`:
+    - Add the request parameter `X-Auth-Token`
+    - Remove the request parameter `x-auth-token`
+  - Changes of the interface `ListGaussMySqlConfigurations`:
+    - Add the request parameter `X-Auth-Token`
+    - Remove the request parameter `x-auth-token`
+  - Changes of the interface `ShowGaussMySqlJobInfo`:
+    - Add the request parameter `X-Auth-Token`
+    - Remove the request parameter `x-auth-token`
+  - Changes of the interface `ListInstanceTags`:
+    - Add the request parameter `X-Auth-Token`
+    - Remove the request parameter `x-auth-token`
+  - Changes of the interface `ListProjectTags`:
+    - Add the request parameter `X-Auth-Token`
+    - Remove the request parameter `x-auth-token`
+  - Changes of the interface `BatchTagAction`:
+    - Add the request parameter `X-Auth-Token`
+    - Remove the request parameter `x-auth-token`
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+  - Support the interface `ShowDepartment`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `deptCodes` to the interface `SearchCorpDir`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - Fix the problem that the response body's type of the interface `RecognizeMyanmarDriverLicense` is incorrect.
+- _Change_
+  - None
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - Support the interfaces `DeleteIgnoreRule`, `CreateIgnoreRule`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameters `id`, `policyid`, `timestamp`, `description`, `status`, `url`, `rule`, `domain`, `url_logic`, `advanced` from the interface `ListIgnoreRule`
+  - Add the response parameter `producer` to the interface `ListValueList`
+  - Add the response parameters `process_time`, `request_body` to the interface `ListEvent`
+  - Changes of the interface `ShowEvent`:
+    - Add the response parameters `process_time`, `request_body`
+    - Modify the type `string` -> `object` of the response parameter `headers`
+    - Modify the type `string` -> `int32` of the response parameter `response_size`
+    - Modify the type `string` -> `int64` of the response parameter `response_time`
+  - Modify the type `string` -> `enum` of the response parameter `paid_type` of the interface `ListHost`
+  - Add the response parameters `flag`, `http2_enable` to the interface `CreateHost`
+  - Add the response parameter `protect_status` to the interface `UpdateHostProtectStatus`
+  - Modify the type `string` -> `enum` of the response parameter `paid_type` of the interface `DeleteHost`
+  - Modify the type `string` -> `enum` of the response parameter `protocol` of the interface `UpdateHost`
+  - Add the response parameters `id`, `name`, `level`, `action`, `options`, `full_detection`, `hosts`, `bind_host`, `timestamp`, `extend` to the interface `DeletePolicy`
+  - Add the response parameters `id`, `policyid`, `timestamp`, `description`, `status` to the interface `UpdatePolicyRuleStatus`
+  - Add the response parameters `id`, `policyid`, `timestamp`, `description`, `status`, `url`, `category`, `index` to the interface `DeletePrivacyRule`
+  - Add the response parameter `region` to the interface `DeletePremiumHost`
+
 # 3.0.85 2022-04-21
 
 ### HuaweiCloud SDK AS

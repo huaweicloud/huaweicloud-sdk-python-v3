@@ -43,7 +43,7 @@ class ListIssuedCouponQuotasRequest:
 
         :param quota_id: 精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。
         :type quota_id: str
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
         :type indirect_partner_id: str
         :param parent_quota_id: 父额度ID，即华为云伙伴能力中心用于发放给精英服务商代金券额度的额度ID。
         :type parent_quota_id: str
@@ -99,7 +99,7 @@ class ListIssuedCouponQuotasRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListIssuedCouponQuotasRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
 
         :return: The indirect_partner_id of this ListIssuedCouponQuotasRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class ListIssuedCouponQuotasRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListIssuedCouponQuotasRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
 
         :param indirect_partner_id: The indirect_partner_id of this ListIssuedCouponQuotasRequest.
         :type indirect_partner_id: str

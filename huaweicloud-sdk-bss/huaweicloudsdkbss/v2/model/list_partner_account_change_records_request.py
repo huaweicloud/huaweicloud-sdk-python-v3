@@ -45,9 +45,9 @@ class ListPartnerAccountChangeRecordsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param balance_type: 账户类型。BALANCE_TYPE_DEBIT：现金账户BALANCE_TYPE_CREDIT：信用账户
+        :param balance_type: 账户类型。BALANCE_TYPE_DEBIT：现金账户,BALANCE_TYPE_CREDIT：信用账户
         :type balance_type: str
-        :param trade_type: 交易类型。RECHARGE：充值DEDEUCT：消费REFUND：退款RFROZEN：冻结TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）ADJUST：调账（华为核销等）BEADJUST：经销商拨款BERETRIEVE：经销商回收BEUNBIND：解绑/关联模式切换导致的回收EXPIRED：过期清零BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）TRADE_MODE_TRANSFER：交易模式变更SYSTEM：系统操作（购买标销合同的伙伴涉及该模式）COUPONCANCEL：代金券回收
+        :param trade_type: 交易类型。RECHARGE：充值,DEDEUCT：消费,REFUND：退款,RFROZEN：冻结,TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）,ADJUST：调账（华为核销等）,BEADJUST：经销商拨款,BERETRIEVE：经销商回收,BEUNBIND：解绑/关联模式切换导致的回收,EXPIRED：过期清零,BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）,TRADE_MODE_TRANSFER：交易模式变更,SYSTEM：系统操作（购买标销合同的伙伴涉及该模式）,COUPONCANCEL：代金券回收
         :type trade_type: str
         :param trade_time_begin: 查询收支明细的开始日期。 说明： 东八区时间，格式为YYYY-MM-DD，如“2017-10-21”。默认值为一年前的当天日期。
         :type trade_time_begin: str
@@ -57,7 +57,7 @@ class ListPartnerAccountChangeRecordsRequest:
         :type offset: int
         :param limit: 每次查询的数量，默认值为10。
         :type limit: int
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。 说明： 华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的收支明细时，需携带此参数；否则只能查询自身的收支明细。
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 说明： 华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的收支明细时，需携带此参数；否则只能查询自身的收支明细。
         :type indirect_partner_id: str
         """
         
@@ -90,7 +90,7 @@ class ListPartnerAccountChangeRecordsRequest:
     def balance_type(self):
         """Gets the balance_type of this ListPartnerAccountChangeRecordsRequest.
 
-        账户类型。BALANCE_TYPE_DEBIT：现金账户BALANCE_TYPE_CREDIT：信用账户
+        账户类型。BALANCE_TYPE_DEBIT：现金账户,BALANCE_TYPE_CREDIT：信用账户
 
         :return: The balance_type of this ListPartnerAccountChangeRecordsRequest.
         :rtype: str
@@ -101,7 +101,7 @@ class ListPartnerAccountChangeRecordsRequest:
     def balance_type(self, balance_type):
         """Sets the balance_type of this ListPartnerAccountChangeRecordsRequest.
 
-        账户类型。BALANCE_TYPE_DEBIT：现金账户BALANCE_TYPE_CREDIT：信用账户
+        账户类型。BALANCE_TYPE_DEBIT：现金账户,BALANCE_TYPE_CREDIT：信用账户
 
         :param balance_type: The balance_type of this ListPartnerAccountChangeRecordsRequest.
         :type balance_type: str
@@ -112,7 +112,7 @@ class ListPartnerAccountChangeRecordsRequest:
     def trade_type(self):
         """Gets the trade_type of this ListPartnerAccountChangeRecordsRequest.
 
-        交易类型。RECHARGE：充值DEDEUCT：消费REFUND：退款RFROZEN：冻结TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）ADJUST：调账（华为核销等）BEADJUST：经销商拨款BERETRIEVE：经销商回收BEUNBIND：解绑/关联模式切换导致的回收EXPIRED：过期清零BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）TRADE_MODE_TRANSFER：交易模式变更SYSTEM：系统操作（购买标销合同的伙伴涉及该模式）COUPONCANCEL：代金券回收
+        交易类型。RECHARGE：充值,DEDEUCT：消费,REFUND：退款,RFROZEN：冻结,TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）,ADJUST：调账（华为核销等）,BEADJUST：经销商拨款,BERETRIEVE：经销商回收,BEUNBIND：解绑/关联模式切换导致的回收,EXPIRED：过期清零,BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）,TRADE_MODE_TRANSFER：交易模式变更,SYSTEM：系统操作（购买标销合同的伙伴涉及该模式）,COUPONCANCEL：代金券回收
 
         :return: The trade_type of this ListPartnerAccountChangeRecordsRequest.
         :rtype: str
@@ -123,7 +123,7 @@ class ListPartnerAccountChangeRecordsRequest:
     def trade_type(self, trade_type):
         """Sets the trade_type of this ListPartnerAccountChangeRecordsRequest.
 
-        交易类型。RECHARGE：充值DEDEUCT：消费REFUND：退款RFROZEN：冻结TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）ADJUST：调账（华为核销等）BEADJUST：经销商拨款BERETRIEVE：经销商回收BEUNBIND：解绑/关联模式切换导致的回收EXPIRED：过期清零BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）TRADE_MODE_TRANSFER：交易模式变更SYSTEM：系统操作（购买标销合同的伙伴涉及该模式）COUPONCANCEL：代金券回收
+        交易类型。RECHARGE：充值,DEDEUCT：消费,REFUND：退款,RFROZEN：冻结,TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）,ADJUST：调账（华为核销等）,BEADJUST：经销商拨款,BERETRIEVE：经销商回收,BEUNBIND：解绑/关联模式切换导致的回收,EXPIRED：过期清零,BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）,TRADE_MODE_TRANSFER：交易模式变更,SYSTEM：系统操作（购买标销合同的伙伴涉及该模式）,COUPONCANCEL：代金券回收
 
         :param trade_type: The trade_type of this ListPartnerAccountChangeRecordsRequest.
         :type trade_type: str
@@ -222,7 +222,7 @@ class ListPartnerAccountChangeRecordsRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListPartnerAccountChangeRecordsRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。 说明： 华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的收支明细时，需携带此参数；否则只能查询自身的收支明细。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 说明： 华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的收支明细时，需携带此参数；否则只能查询自身的收支明细。
 
         :return: The indirect_partner_id of this ListPartnerAccountChangeRecordsRequest.
         :rtype: str
@@ -233,7 +233,7 @@ class ListPartnerAccountChangeRecordsRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListPartnerAccountChangeRecordsRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。 说明： 华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的收支明细时，需携带此参数；否则只能查询自身的收支明细。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 说明： 华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的收支明细时，需携带此参数；否则只能查询自身的收支明细。
 
         :param indirect_partner_id: The indirect_partner_id of this ListPartnerAccountChangeRecordsRequest.
         :type indirect_partner_id: str

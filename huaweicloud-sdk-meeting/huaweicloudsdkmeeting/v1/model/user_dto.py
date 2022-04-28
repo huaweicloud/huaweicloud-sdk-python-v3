@@ -37,7 +37,8 @@ class UserDTO:
         'title': 'str',
         'description': 'str',
         'hide_phone': 'bool',
-        'type': 'str'
+        'type': 'str',
+        'dept_codes': 'list[str]'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class UserDTO:
         'title': 'title',
         'description': 'description',
         'hide_phone': 'hidePhone',
-        'type': 'type'
+        'type': 'type',
+        'dept_codes': 'deptCodes'
     }
 
-    def __init__(self, id=None, status_code=None, account=None, name=None, english_name=None, email=None, phone=None, dept_name=None, number=None, update_time=None, is_hard_terminal=None, vmr_id=None, signature=None, title=None, description=None, hide_phone=None, type=None):
+    def __init__(self, id=None, status_code=None, account=None, name=None, english_name=None, email=None, phone=None, dept_name=None, number=None, update_time=None, is_hard_terminal=None, vmr_id=None, signature=None, title=None, description=None, hide_phone=None, type=None, dept_codes=None):
         """UserDTO
 
         The model defined in huaweicloud sdk
@@ -99,6 +101,8 @@ class UserDTO:
         :type hide_phone: bool
         :param type: 类型： * NORMAL_USER&#x3D;普通用户 * HARD_TERMINAL&#x3D;硬终端用户 * WHITE_BOARD&#x3D;第三方白板 * HW_VISION_MEMBER&#x3D;智慧屏 
         :type type: str
+        :param dept_codes: 部门编码列表
+        :type dept_codes: list[str]
         """
         
         
@@ -120,6 +124,7 @@ class UserDTO:
         self._description = None
         self._hide_phone = None
         self._type = None
+        self._dept_codes = None
         self.discriminator = None
 
         if id is not None:
@@ -156,6 +161,8 @@ class UserDTO:
             self.hide_phone = hide_phone
         if type is not None:
             self.type = type
+        if dept_codes is not None:
+            self.dept_codes = dept_codes
 
     @property
     def id(self):
@@ -530,6 +537,28 @@ class UserDTO:
         :type type: str
         """
         self._type = type
+
+    @property
+    def dept_codes(self):
+        """Gets the dept_codes of this UserDTO.
+
+        部门编码列表
+
+        :return: The dept_codes of this UserDTO.
+        :rtype: list[str]
+        """
+        return self._dept_codes
+
+    @dept_codes.setter
+    def dept_codes(self, dept_codes):
+        """Sets the dept_codes of this UserDTO.
+
+        部门编码列表
+
+        :param dept_codes: The dept_codes of this UserDTO.
+        :type dept_codes: list[str]
+        """
+        self._dept_codes = dept_codes
 
     def to_dict(self):
         """Returns the model properties as a dict"""

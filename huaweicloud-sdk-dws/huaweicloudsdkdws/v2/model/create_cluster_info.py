@@ -59,7 +59,7 @@ class CreateClusterInfo:
 
         :param node_type: 节点类型
         :type node_type: str
-        :param number_of_node: 集群节点数量，取值范围为3~32。
+        :param number_of_node: 集群节点数量，取值范围为2~256。
         :type number_of_node: int
         :param subnet_id: 指定子网ID，用于集群网络配置。
         :type subnet_id: str
@@ -147,7 +147,7 @@ class CreateClusterInfo:
     def number_of_node(self):
         """Gets the number_of_node of this CreateClusterInfo.
 
-        集群节点数量，取值范围为3~32。
+        集群节点数量，取值范围为2~256。
 
         :return: The number_of_node of this CreateClusterInfo.
         :rtype: int
@@ -158,7 +158,7 @@ class CreateClusterInfo:
     def number_of_node(self, number_of_node):
         """Sets the number_of_node of this CreateClusterInfo.
 
-        集群节点数量，取值范围为3~32。
+        集群节点数量，取值范围为2~256。
 
         :param number_of_node: The number_of_node of this CreateClusterInfo.
         :type number_of_node: int

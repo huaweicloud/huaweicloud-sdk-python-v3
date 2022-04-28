@@ -26,7 +26,8 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
         'max_async_retry_attempts': 'int',
         'destination_config': 'FuncAsyncDestinationConfig',
         'created_time': 'str',
-        'last_modified': 'str'
+        'last_modified': 'str',
+        'enable_async_status_log': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
         'max_async_retry_attempts': 'max_async_retry_attempts',
         'destination_config': 'destination_config',
         'created_time': 'created_time',
-        'last_modified': 'last_modified'
+        'last_modified': 'last_modified',
+        'enable_async_status_log': 'enable_async_status_log'
     }
 
-    def __init__(self, func_urn=None, max_async_event_age_in_seconds=None, max_async_retry_attempts=None, destination_config=None, created_time=None, last_modified=None):
+    def __init__(self, func_urn=None, max_async_event_age_in_seconds=None, max_async_retry_attempts=None, destination_config=None, created_time=None, last_modified=None, enable_async_status_log=None):
         """ShowFunctionAsyncInvokeConfigResponse
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
         :type created_time: str
         :param last_modified: 异步调用配置的最后更改时间。
         :type last_modified: str
+        :param enable_async_status_log: 开启异步调用状态持久化
+        :type enable_async_status_log: bool
         """
         
         super(ShowFunctionAsyncInvokeConfigResponse, self).__init__()
@@ -65,6 +69,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
         self._destination_config = None
         self._created_time = None
         self._last_modified = None
+        self._enable_async_status_log = None
         self.discriminator = None
 
         if func_urn is not None:
@@ -79,6 +84,8 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
             self.created_time = created_time
         if last_modified is not None:
             self.last_modified = last_modified
+        if enable_async_status_log is not None:
+            self.enable_async_status_log = enable_async_status_log
 
     @property
     def func_urn(self):
@@ -209,6 +216,28 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
         :type last_modified: str
         """
         self._last_modified = last_modified
+
+    @property
+    def enable_async_status_log(self):
+        """Gets the enable_async_status_log of this ShowFunctionAsyncInvokeConfigResponse.
+
+        开启异步调用状态持久化
+
+        :return: The enable_async_status_log of this ShowFunctionAsyncInvokeConfigResponse.
+        :rtype: bool
+        """
+        return self._enable_async_status_log
+
+    @enable_async_status_log.setter
+    def enable_async_status_log(self, enable_async_status_log):
+        """Sets the enable_async_status_log of this ShowFunctionAsyncInvokeConfigResponse.
+
+        开启异步调用状态持久化
+
+        :param enable_async_status_log: The enable_async_status_log of this ShowFunctionAsyncInvokeConfigResponse.
+        :type enable_async_status_log: bool
+        """
+        self._enable_async_status_log = enable_async_status_log
 
     def to_dict(self):
         """Returns the model properties as a dict"""

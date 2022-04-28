@@ -29,6 +29,8 @@ class UpdateWorkflowRequestBody:
         'states': 'list[OperationState]',
         'constants': 'object',
         'retries': 'list[Retry]',
+        'mode': 'str',
+        'express_config': 'ExpressConfig',
         'enterprise_project_id': 'str'
     }
 
@@ -41,10 +43,12 @@ class UpdateWorkflowRequestBody:
         'states': 'states',
         'constants': 'constants',
         'retries': 'retries',
+        'mode': 'mode',
+        'express_config': 'express_config',
         'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, description=None, triggers=None, start=None, functions=None, states=None, constants=None, retries=None, enterprise_project_id=None):
+    def __init__(self, name=None, description=None, triggers=None, start=None, functions=None, states=None, constants=None, retries=None, mode=None, express_config=None, enterprise_project_id=None):
         """UpdateWorkflowRequestBody
 
         The model defined in huaweicloud sdk
@@ -65,6 +69,10 @@ class UpdateWorkflowRequestBody:
         :type constants: object
         :param retries: 重试策略清单
         :type retries: list[:class:`huaweicloudsdkfunctiongraph.v2.Retry`]
+        :param mode: 工作流模式，当前支持两种模式 NORMAL: 标准模式，普通模式面向普通的业务场景，支持长时间任务，支持执行历史持久化和查询，只支持异步调用 EXPRESS: 快速模式，快速模式面向业务执行时长较短，需要极致性能的场景，只支持流程执行时长低于5分钟的场景，不支持执行历史持久化，支持同步和异步调用 默认为标准模式
+        :type mode: str
+        :param express_config: 
+        :type express_config: :class:`huaweicloudsdkfunctiongraph.v2.ExpressConfig`
         :param enterprise_project_id: 企业项目ID，在企业用户创建函数时必填。
         :type enterprise_project_id: str
         """
@@ -79,6 +87,8 @@ class UpdateWorkflowRequestBody:
         self._states = None
         self._constants = None
         self._retries = None
+        self._mode = None
+        self._express_config = None
         self._enterprise_project_id = None
         self.discriminator = None
 
@@ -98,6 +108,10 @@ class UpdateWorkflowRequestBody:
             self.constants = constants
         if retries is not None:
             self.retries = retries
+        if mode is not None:
+            self.mode = mode
+        if express_config is not None:
+            self.express_config = express_config
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
 
@@ -276,6 +290,48 @@ class UpdateWorkflowRequestBody:
         :type retries: list[:class:`huaweicloudsdkfunctiongraph.v2.Retry`]
         """
         self._retries = retries
+
+    @property
+    def mode(self):
+        """Gets the mode of this UpdateWorkflowRequestBody.
+
+        工作流模式，当前支持两种模式 NORMAL: 标准模式，普通模式面向普通的业务场景，支持长时间任务，支持执行历史持久化和查询，只支持异步调用 EXPRESS: 快速模式，快速模式面向业务执行时长较短，需要极致性能的场景，只支持流程执行时长低于5分钟的场景，不支持执行历史持久化，支持同步和异步调用 默认为标准模式
+
+        :return: The mode of this UpdateWorkflowRequestBody.
+        :rtype: str
+        """
+        return self._mode
+
+    @mode.setter
+    def mode(self, mode):
+        """Sets the mode of this UpdateWorkflowRequestBody.
+
+        工作流模式，当前支持两种模式 NORMAL: 标准模式，普通模式面向普通的业务场景，支持长时间任务，支持执行历史持久化和查询，只支持异步调用 EXPRESS: 快速模式，快速模式面向业务执行时长较短，需要极致性能的场景，只支持流程执行时长低于5分钟的场景，不支持执行历史持久化，支持同步和异步调用 默认为标准模式
+
+        :param mode: The mode of this UpdateWorkflowRequestBody.
+        :type mode: str
+        """
+        self._mode = mode
+
+    @property
+    def express_config(self):
+        """Gets the express_config of this UpdateWorkflowRequestBody.
+
+
+        :return: The express_config of this UpdateWorkflowRequestBody.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ExpressConfig`
+        """
+        return self._express_config
+
+    @express_config.setter
+    def express_config(self, express_config):
+        """Sets the express_config of this UpdateWorkflowRequestBody.
+
+
+        :param express_config: The express_config of this UpdateWorkflowRequestBody.
+        :type express_config: :class:`huaweicloudsdkfunctiongraph.v2.ExpressConfig`
+        """
+        self._express_config = express_config
 
     @property
     def enterprise_project_id(self):

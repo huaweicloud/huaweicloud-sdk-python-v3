@@ -37,11 +37,11 @@ class ReclaimToPartnerAccountBalancesReq:
 
         The model defined in huaweicloud sdk
 
-        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
         :type customer_id: str
         :param amount: 回收的金额。 单位：元。取值大于0且精确到小数点后2位。
         :type amount: float
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。 华为云伙伴能力中心（一级经销商）回收精英服务商（二级经销商）的子客户账户余额时，需携带此参数；否则只能回收自己的子客户账户余额。
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 华为云伙伴能力中心（一级经销商）回收精英服务商（二级经销商）的子客户账户余额时，需携带此参数；否则只能回收自己的子客户账户余额。
         :type indirect_partner_id: str
         """
         
@@ -61,7 +61,7 @@ class ReclaimToPartnerAccountBalancesReq:
     def customer_id(self):
         """Gets the customer_id of this ReclaimToPartnerAccountBalancesReq.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
         :return: The customer_id of this ReclaimToPartnerAccountBalancesReq.
         :rtype: str
@@ -72,7 +72,7 @@ class ReclaimToPartnerAccountBalancesReq:
     def customer_id(self, customer_id):
         """Sets the customer_id of this ReclaimToPartnerAccountBalancesReq.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
         :param customer_id: The customer_id of this ReclaimToPartnerAccountBalancesReq.
         :type customer_id: str
@@ -105,7 +105,7 @@ class ReclaimToPartnerAccountBalancesReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ReclaimToPartnerAccountBalancesReq.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。 华为云伙伴能力中心（一级经销商）回收精英服务商（二级经销商）的子客户账户余额时，需携带此参数；否则只能回收自己的子客户账户余额。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 华为云伙伴能力中心（一级经销商）回收精英服务商（二级经销商）的子客户账户余额时，需携带此参数；否则只能回收自己的子客户账户余额。
 
         :return: The indirect_partner_id of this ReclaimToPartnerAccountBalancesReq.
         :rtype: str
@@ -116,7 +116,7 @@ class ReclaimToPartnerAccountBalancesReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ReclaimToPartnerAccountBalancesReq.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。 华为云伙伴能力中心（一级经销商）回收精英服务商（二级经销商）的子客户账户余额时，需携带此参数；否则只能回收自己的子客户账户余额。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 华为云伙伴能力中心（一级经销商）回收精英服务商（二级经销商）的子客户账户余额时，需携带此参数；否则只能回收自己的子客户账户余额。
 
         :param indirect_partner_id: The indirect_partner_id of this ReclaimToPartnerAccountBalancesReq.
         :type indirect_partner_id: str

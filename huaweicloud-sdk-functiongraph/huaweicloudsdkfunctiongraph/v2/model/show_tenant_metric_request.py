@@ -21,29 +21,43 @@ class ShowTenantMetricRequest:
     sensitive_list = []
 
     openapi_types = {
-        'period': 'str'
+        'period': 'str',
+        'start_time': 'str',
+        'end_time': 'str'
     }
 
     attribute_map = {
-        'period': 'period'
+        'period': 'period',
+        'start_time': 'start_time',
+        'end_time': 'end_time'
     }
 
-    def __init__(self, period=None):
+    def __init__(self, period=None, start_time=None, end_time=None):
         """ShowTenantMetricRequest
 
         The model defined in huaweicloud sdk
 
         :param period: 时间段，单位为分钟
         :type period: str
+        :param start_time: 开始时间，精确到ms的时间戳
+        :type start_time: str
+        :param end_time: 结束时间，精确到ms的时间戳
+        :type end_time: str
         """
         
         
 
         self._period = None
+        self._start_time = None
+        self._end_time = None
         self.discriminator = None
 
         if period is not None:
             self.period = period
+        if start_time is not None:
+            self.start_time = start_time
+        if end_time is not None:
+            self.end_time = end_time
 
     @property
     def period(self):
@@ -66,6 +80,50 @@ class ShowTenantMetricRequest:
         :type period: str
         """
         self._period = period
+
+    @property
+    def start_time(self):
+        """Gets the start_time of this ShowTenantMetricRequest.
+
+        开始时间，精确到ms的时间戳
+
+        :return: The start_time of this ShowTenantMetricRequest.
+        :rtype: str
+        """
+        return self._start_time
+
+    @start_time.setter
+    def start_time(self, start_time):
+        """Sets the start_time of this ShowTenantMetricRequest.
+
+        开始时间，精确到ms的时间戳
+
+        :param start_time: The start_time of this ShowTenantMetricRequest.
+        :type start_time: str
+        """
+        self._start_time = start_time
+
+    @property
+    def end_time(self):
+        """Gets the end_time of this ShowTenantMetricRequest.
+
+        结束时间，精确到ms的时间戳
+
+        :return: The end_time of this ShowTenantMetricRequest.
+        :rtype: str
+        """
+        return self._end_time
+
+    @end_time.setter
+    def end_time(self, end_time):
+        """Sets the end_time of this ShowTenantMetricRequest.
+
+        结束时间，精确到ms的时间戳
+
+        :param end_time: The end_time of this ShowTenantMetricRequest.
+        :type end_time: str
+        """
+        self._end_time = end_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

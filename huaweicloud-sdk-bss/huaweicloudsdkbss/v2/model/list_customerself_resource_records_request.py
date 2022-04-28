@@ -63,13 +63,13 @@ class ListCustomerselfResourceRecordsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US。缺省为zh_CN|
+        :param x_language: 语言：中文：zh_CN 英文：en_US。缺省为zh_CN
         :type x_language: str
         :param cycle: 查询的资源消费记录所在账期，格式：YYYY-MM。
         :type cycle: str
-        :param cloud_service_type: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :param cloud_service_type: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。
         :type cloud_service_type: str
-        :param region: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :param region: 云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
         :type region: str
         :param charge_mode: 计费模式。1：包年/包月3：按需10：预留实例
         :type charge_mode: str
@@ -81,7 +81,7 @@ class ListCustomerselfResourceRecordsRequest:
         :type limit: int
         :param resource_id: 资源ID。
         :type resource_id: str
-        :param enterprise_project_id: 企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
         :type enterprise_project_id: str
         :param include_zero_record: 返回是否包含应付金额为0的记录。true：包含false：不包含
         :type include_zero_record: bool
@@ -153,7 +153,7 @@ class ListCustomerselfResourceRecordsRequest:
     def x_language(self):
         """Gets the x_language of this ListCustomerselfResourceRecordsRequest.
 
-        |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US。缺省为zh_CN|
+        语言：中文：zh_CN 英文：en_US。缺省为zh_CN
 
         :return: The x_language of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -164,7 +164,7 @@ class ListCustomerselfResourceRecordsRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListCustomerselfResourceRecordsRequest.
 
-        |参数名称：语言| |参数的约束及描述：中文：zh_CN 英文：en_US。缺省为zh_CN|
+        语言：中文：zh_CN 英文：en_US。缺省为zh_CN
 
         :param x_language: The x_language of this ListCustomerselfResourceRecordsRequest.
         :type x_language: str
@@ -197,7 +197,7 @@ class ListCustomerselfResourceRecordsRequest:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this ListCustomerselfResourceRecordsRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。
 
         :return: The cloud_service_type of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -208,7 +208,7 @@ class ListCustomerselfResourceRecordsRequest:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this ListCustomerselfResourceRecordsRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。
 
         :param cloud_service_type: The cloud_service_type of this ListCustomerselfResourceRecordsRequest.
         :type cloud_service_type: str
@@ -219,7 +219,7 @@ class ListCustomerselfResourceRecordsRequest:
     def region(self):
         """Gets the region of this ListCustomerselfResourceRecordsRequest.
 
-        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
 
         :return: The region of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -230,7 +230,7 @@ class ListCustomerselfResourceRecordsRequest:
     def region(self, region):
         """Sets the region of this ListCustomerselfResourceRecordsRequest.
 
-        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
 
         :param region: The region of this ListCustomerselfResourceRecordsRequest.
         :type region: str
@@ -351,7 +351,7 @@ class ListCustomerselfResourceRecordsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
 
-        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
         :return: The enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
         :rtype: str
@@ -362,7 +362,7 @@ class ListCustomerselfResourceRecordsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
 
-        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见如何获取企业项目ID。
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
         :param enterprise_project_id: The enterprise_project_id of this ListCustomerselfResourceRecordsRequest.
         :type enterprise_project_id: str

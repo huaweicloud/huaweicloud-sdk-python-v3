@@ -10,7 +10,7 @@ import six
 from huaweicloudsdkcore.auth.credentials import Credentials
 from huaweicloudsdkcore.exceptions.exceptions import SdkException, ApiValueError
 from huaweicloudsdkcore.sdk_request import SdkRequest
-from huaweicloudsdkcore.signer.signer import process_canonical_query_string
+from huaweicloudsdkcore.signer.signer import Signer
 
 
 class MeetingCredentials(Credentials):
@@ -55,12 +55,12 @@ class MeetingCredentials(Credentials):
             self._token = content['accessToken']
             self._last_token_date = datetime.datetime.now()
             request.header_params["X-Access-Token"] = self._token
-            canonical_query_string = process_canonical_query_string(request)
+            canonical_query_string = Signer.process_canonical_query_string(request)
             request.uri = request.resource_path + "?" + canonical_query_string if canonical_query_string != "" else request.resource_path
             return request
         else:
             request.header_params["X-Access-Token"] = self._token
-            canonical_query_string = process_canonical_query_string(request)
+            canonical_query_string = Signer.process_canonical_query_string(request)
             request.uri = request.resource_path + "?" + canonical_query_string if canonical_query_string != "" else request.resource_path
             return request
 

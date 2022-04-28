@@ -32,7 +32,8 @@ import simplejson as json
 from six.moves.urllib.parse import quote, urlparse
 from requests_toolbelt import MultipartEncoder
 
-from huaweicloudsdkcore.auth.credentials import BasicCredentials, EnvCredentialHelper, DerivedCredentials
+from huaweicloudsdkcore.auth.credentials import BasicCredentials, DerivedCredentials
+from huaweicloudsdkcore.auth.helper import EnvCredentialHelper, TempCredentialHelper
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.http.http_handler import HttpHandler
@@ -129,20 +130,24 @@ class ClientBuilder(object):
         if self._config is None:
             self._config = HttpConfig.get_default_config()
 
-        if self._credentials is None:
-            self._credentials = EnvCredentialHelper.load_credential_from_env(self._credential_type[0])
-        if self._credentials is None:
-            raise ValueError("credential can not be None, %s credential objects are required"
-                             % ",".join(self._credential_type))
-        if self._credentials.__class__.__name__ not in self._credential_type:
-            raise TypeError("credential type error, supported credential type is %s" % ",".join(self._credential_type))
-
         client = self._client_type() \
             .with_credentials(self._credentials) \
             .with_config(self._config) \
             .with_http_handler(self._http_handler)
 
         client.init_http_client()
+
+        if self._credentials is None:
+            self._credentials = EnvCredentialHelper.load_credential_from_env(self._credential_type[0])
+
+        self._credentials = TempCredentialHelper.process_credential(
+            client.get_http_client(), self._credential_type[0], self._credentials)
+
+        if self._credentials is None:
+            raise ValueError("credential can not be None, %s credential objects are required"
+                             % ",".join(self._credential_type))
+        if self._credentials.__class__.__name__ not in self._credential_type:
+            raise TypeError("credential type error, supported credential type is %s" % ",".join(self._credential_type))
 
         if self._region is not None:
             self._endpoint = self._region.endpoint

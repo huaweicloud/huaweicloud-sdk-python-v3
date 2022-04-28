@@ -18,6 +18,8 @@
  under the LICENSE.
 """
 
+import six
+
 
 class HttpConfig(object):
     def __init__(self, proxy_protocol=None, proxy_host=None, proxy_port=None, proxy_user=None, proxy_password=None,
@@ -89,10 +91,15 @@ class HttpConfig(object):
         if self.proxy_host is None:
             return None
 
+        if six.PY2:
+            from urllib import quote_plus
+        else:
+            from urllib.parse import quote_plus
+
         return {
             "https": "%s://%s%s%s" % (
                 self.proxy_protocol,
-                "%s:%s@" % (self.proxy_user, self.proxy_password) if self.proxy_user is not None else "",
+                "%s:%s@" % (self.proxy_user, quote_plus(self.proxy_password)) if self.proxy_user is not None else "",
                 self.proxy_host,
                 ":%s" % self.proxy_port if self.proxy_port is not None else ""
             )

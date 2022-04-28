@@ -23,16 +23,18 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
     openapi_types = {
         'max_async_event_age_in_seconds': 'int',
         'max_async_retry_attempts': 'int',
-        'destination_config': 'FuncAsyncDestinationConfig'
+        'destination_config': 'FuncAsyncDestinationConfig',
+        'enable_async_status_log': 'bool'
     }
 
     attribute_map = {
         'max_async_event_age_in_seconds': 'max_async_event_age_in_seconds',
         'max_async_retry_attempts': 'max_async_retry_attempts',
-        'destination_config': 'destination_config'
+        'destination_config': 'destination_config',
+        'enable_async_status_log': 'enable_async_status_log'
     }
 
-    def __init__(self, max_async_event_age_in_seconds=None, max_async_retry_attempts=None, destination_config=None):
+    def __init__(self, max_async_event_age_in_seconds=None, max_async_retry_attempts=None, destination_config=None, enable_async_status_log=None):
         """UpdateFunctionAsyncInvokeConfigRequestBody
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
         :type max_async_retry_attempts: int
         :param destination_config: 
         :type destination_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
+        :param enable_async_status_log: 开启异步调用状态持久化
+        :type enable_async_status_log: bool
         """
         
         
@@ -50,6 +54,7 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
         self._max_async_event_age_in_seconds = None
         self._max_async_retry_attempts = None
         self._destination_config = None
+        self._enable_async_status_log = None
         self.discriminator = None
 
         if max_async_event_age_in_seconds is not None:
@@ -58,6 +63,8 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
             self.max_async_retry_attempts = max_async_retry_attempts
         if destination_config is not None:
             self.destination_config = destination_config
+        if enable_async_status_log is not None:
+            self.enable_async_status_log = enable_async_status_log
 
     @property
     def max_async_event_age_in_seconds(self):
@@ -122,6 +129,28 @@ class UpdateFunctionAsyncInvokeConfigRequestBody:
         :type destination_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
         """
         self._destination_config = destination_config
+
+    @property
+    def enable_async_status_log(self):
+        """Gets the enable_async_status_log of this UpdateFunctionAsyncInvokeConfigRequestBody.
+
+        开启异步调用状态持久化
+
+        :return: The enable_async_status_log of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        :rtype: bool
+        """
+        return self._enable_async_status_log
+
+    @enable_async_status_log.setter
+    def enable_async_status_log(self, enable_async_status_log):
+        """Sets the enable_async_status_log of this UpdateFunctionAsyncInvokeConfigRequestBody.
+
+        开启异步调用状态持久化
+
+        :param enable_async_status_log: The enable_async_status_log of this UpdateFunctionAsyncInvokeConfigRequestBody.
+        :type enable_async_status_log: bool
+        """
+        self._enable_async_status_log = enable_async_status_log
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -37,7 +37,7 @@ class TagItem:
 
         :param key: 标签键。最大长度36个unicode字符，不能为null或者空字符串，不能为空格。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
         :type key: str
-        :param value: 标签值。最大长度43个unicode字符，可以为空字符串，不能为空格。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。 - “action”值为“create”时，该参数必选。 - “action”值为“delete”时，如果value有值，按照key/value删除，如果value没值，则按照key删除。
+        :param value: 标签值。最大长度43个unicode字符，可以为空字符串，不能为空格。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。 - “action”值为“create”时，该参数必选。 - “action”值为“delete”时，如果value有值，按照key-value删除，如果value没值，则按照key删除。
         :type value: str
         """
         
@@ -77,7 +77,7 @@ class TagItem:
     def value(self):
         """Gets the value of this TagItem.
 
-        标签值。最大长度43个unicode字符，可以为空字符串，不能为空格。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。 - “action”值为“create”时，该参数必选。 - “action”值为“delete”时，如果value有值，按照key/value删除，如果value没值，则按照key删除。
+        标签值。最大长度43个unicode字符，可以为空字符串，不能为空格。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。 - “action”值为“create”时，该参数必选。 - “action”值为“delete”时，如果value有值，按照key-value删除，如果value没值，则按照key删除。
 
         :return: The value of this TagItem.
         :rtype: str
@@ -88,7 +88,7 @@ class TagItem:
     def value(self, value):
         """Sets the value of this TagItem.
 
-        标签值。最大长度43个unicode字符，可以为空字符串，不能为空格。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。 - “action”值为“create”时，该参数必选。 - “action”值为“delete”时，如果value有值，按照key/value删除，如果value没值，则按照key删除。
+        标签值。最大长度43个unicode字符，可以为空字符串，不能为空格。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。 - “action”值为“create”时，该参数必选。 - “action”值为“delete”时，如果value有值，按照key-value删除，如果value没值，则按照key删除。
 
         :param value: The value of this TagItem.
         :type value: str

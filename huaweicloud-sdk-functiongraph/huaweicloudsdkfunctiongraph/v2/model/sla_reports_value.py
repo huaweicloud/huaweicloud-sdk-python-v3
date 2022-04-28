@@ -22,7 +22,7 @@ class SlaReportsValue:
 
     openapi_types = {
         'timestamp': 'int',
-        'value': 'int'
+        'value': 'float'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class SlaReportsValue:
         :param timestamp: 时间戳
         :type timestamp: int
         :param value: 值
-        :type value: int
+        :type value: float
         """
         
         
@@ -81,7 +81,7 @@ class SlaReportsValue:
         值
 
         :return: The value of this SlaReportsValue.
-        :rtype: int
+        :rtype: float
         """
         return self._value
 
@@ -92,7 +92,7 @@ class SlaReportsValue:
         值
 
         :param value: The value of this SlaReportsValue.
-        :type value: int
+        :type value: float
         """
         self._value = value
 

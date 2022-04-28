@@ -354,6 +354,68 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_ignore_rule(self, request):
+        """创建误报屏蔽规则
+
+        创建误报屏蔽规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateIgnoreRule
+        :type request: :class:`huaweicloudsdkwaf.v1.CreateIgnoreRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.CreateIgnoreRuleResponse`
+        """
+        return self.create_ignore_rule_with_http_info(request)
+
+    def create_ignore_rule_with_http_info(self, request):
+        all_params = ['policy_id', 'create_ignore_rule_request_body', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/policy/{policy_id}/ignore',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateIgnoreRuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_policy(self, request):
         """创建防护策略
 
@@ -897,6 +959,68 @@ class WafClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteHostResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_ignore_rule(self, request):
+        """删除误报屏蔽防护规则
+
+        删除误报屏蔽防护规则
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteIgnoreRule
+        :type request: :class:`huaweicloudsdkwaf.v1.DeleteIgnoreRuleRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.DeleteIgnoreRuleResponse`
+        """
+        return self.delete_ignore_rule_with_http_info(request)
+
+    def delete_ignore_rule_with_http_info(self, request):
+        all_params = ['policy_id', 'rule_id', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+        if 'rule_id' in local_var_params:
+            path_params['rule_id'] = local_var_params['rule_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/policy/{policy_id}/ignore/{rule_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteIgnoreRuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -18,16 +18,20 @@
  under the LICENSE.
 """
 
-import os
 import re
 from abc import ABCMeta, abstractmethod
 from concurrent.futures import ThreadPoolExecutor
 
-from huaweicloudsdkcore.auth.iam_service import get_keystone_list_projects_request, keystone_list_projects, \
-    get_keystone_list_auth_domains_request, keystone_list_auth_domains, DEFAULT_IAM_ENDPOINT
+import six
+
+from huaweicloudsdkcore.auth.internal import Iam, Metadata
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException
 from huaweicloudsdkcore.signer.signer import Signer, DerivationAKSKSigner
 from huaweicloudsdkcore.auth.cache import AuthCache
+from huaweicloudsdkcore.utils import time_utils
+
+if six.PY3:
+    from abc import ABC
 
 
 class Credentials(object):
@@ -61,10 +65,9 @@ class Credentials(object):
         pass
 
 
-class DerivedCredentials:
+class DerivedCredentials(ABC if six.PY3 else object):
     __metaclass__ = ABCMeta
 
-    GLOBAL_REGION_ID = "globe"
     _DEFAULT_ENDPOINT_REG = "^[a-z][a-z0-9-]+(\\.[a-z]{2,}-[a-z]+-\\d{1,2})?\\.(my)?(huaweicloud|myhwclouds).(com|cn)"
 
     @abstractmethod
@@ -84,23 +87,33 @@ class DerivedCredentials:
         return lambda request: False if re.match(cls._DEFAULT_ENDPOINT_REG, request.host) else True
 
 
-class BasicCredentials(Credentials, DerivedCredentials):
-    def __init__(self, ak, sk, project_id=None):
+class TempCredentials(ABC if six.PY3 else object):
+    __metaclass__ = ABCMeta
+    _TIME_FORMAT = "%Y-%m-%dT%H:%M:%S.%fZ"
+
+    @abstractmethod
+    def need_update(self):
+        pass
+
+    @abstractmethod
+    def update_credential(self, http_client):
+        pass
+
+
+class BasicCredentials(Credentials, DerivedCredentials, TempCredentials):
+    def __init__(self, ak=None, sk=None, project_id=None):
         """For regional services' authentication
 
         :param ak: The access key ID for your account
         :param sk: The secret access key for your account
         :param project_id: The ID of your project depending on your region which you want to operate
         """
-        if not ak:
-            raise ApiValueError("AK can not be null.")
-        if not sk:
-            raise ApiValueError("SK can not be null.")
         super(BasicCredentials, self).__init__(ak, sk)
         self.project_id = project_id
         self._region_id = None
         self._derived_auth_service_name = None
         self._derived_predicate = None
+        self._expired_at = None
 
     def get_update_path_params(self):
         path_params = {}
@@ -139,12 +152,12 @@ class BasicCredentials(Credentials, DerivedCredentials):
         self._derived_predicate = None
 
         if self.iam_endpoint is None:
-            self.iam_endpoint = DEFAULT_IAM_ENDPOINT
+            self.iam_endpoint = Iam.DEFAULT_ENDPOINT
         future_request = self.process_auth_request(
-            get_keystone_list_projects_request(self.iam_endpoint, region_id=region_id), http_client)
+            Iam.get_keystone_list_projects_request(self.iam_endpoint, region_id=region_id), http_client)
         request = future_request.result()
         try:
-            self.project_id = keystone_list_projects(http_client, request)
+            self.project_id = Iam.keystone_list_projects(http_client, request)
             AuthCache.put_auth(ak_with_name, self.project_id)
         except ServiceResponseException as e:
             err_msg = e.error_msg if hasattr(e, "error_msg") else "unknown exception."
@@ -154,7 +167,24 @@ class BasicCredentials(Credentials, DerivedCredentials):
 
         return self
 
+    def need_update(self):
+        if not self.ak or not self.sk:
+            return True
+        if not self._expired_at:
+            return False
+        return self._expired_at - time_utils.get_timestamp_utc() < 60
+
+    def update_credential(self, http_client):
+        credential = Metadata.get_temporary_credential(http_client)
+
+        self.ak = credential.get("access")
+        self.sk = credential.get("secret")
+        self.security_token = credential.get("securitytoken")
+        self._expired_at = time_utils.get_timestamp_from_str(credential.get("expires_at"), self._TIME_FORMAT)
+
     def process_auth_request(self, request, http_client):
+        if self.need_update():
+            self.update_credential(http_client)
         return super(BasicCredentials, self).process_auth_request(request, http_client)
 
     def sign_request(self, request):
@@ -171,23 +201,20 @@ class BasicCredentials(Credentials, DerivedCredentials):
             if self._is_derived_auth(request) else Signer(self).sign(request)
 
 
-class GlobalCredentials(Credentials, DerivedCredentials):
-    def __init__(self, ak, sk, domain_id=None):
+class GlobalCredentials(Credentials, DerivedCredentials, TempCredentials):
+    def __init__(self, ak=None, sk=None, domain_id=None):
         """For global services' authentication
 
         :param ak: The access key ID for your account
         :param sk: The secret access key for your account
         :param domain_id: The account ID of Huawei Cloud
         """
-        if not ak:
-            raise ApiValueError("AK can not be null.")
-        if not sk:
-            raise ApiValueError("SK can not be null.")
         super(GlobalCredentials, self).__init__(ak, sk)
         self.domain_id = domain_id
         self._region_id = None
         self._derived_auth_service_name = None
         self._derived_predicate = None
+        self._expired_at = None
 
     def get_update_path_params(self):
         path_params = {}
@@ -208,12 +235,12 @@ class GlobalCredentials(Credentials, DerivedCredentials):
         self._derived_predicate = None
 
         if self.iam_endpoint is None:
-            self.iam_endpoint = DEFAULT_IAM_ENDPOINT
-        future_request = self.process_auth_request(get_keystone_list_auth_domains_request(self.iam_endpoint),
+            self.iam_endpoint = Iam.DEFAULT_ENDPOINT
+        future_request = self.process_auth_request(Iam.get_keystone_list_auth_domains_request(self.iam_endpoint),
                                                    http_client)
         request = future_request.result()
         try:
-            self.domain_id = keystone_list_auth_domains(http_client, request)
+            self.domain_id = Iam.keystone_list_auth_domains(http_client, request)
             AuthCache.put_auth(self.ak, self.domain_id)
         except ServiceResponseException as e:
             err_msg = e.error_msg if hasattr(e, "error_msg") else "unknown exception."
@@ -224,6 +251,8 @@ class GlobalCredentials(Credentials, DerivedCredentials):
         return self
 
     def process_auth_request(self, request, http_client):
+        if self.need_update():
+            self.update_credential(http_client)
         return super(GlobalCredentials, self).process_auth_request(request, http_client)
 
     def sign_request(self, request):
@@ -244,7 +273,7 @@ class GlobalCredentials(Credentials, DerivedCredentials):
             self._derived_auth_service_name = derived_auth_service_name
 
         if not self._region_id:
-            self._region_id = self.GLOBAL_REGION_ID
+            self._region_id = "globe"
 
     def _is_derived_auth(self, request):
         if not self._derived_predicate:
@@ -256,53 +285,17 @@ class GlobalCredentials(Credentials, DerivedCredentials):
         self._derived_predicate = derived_predicate
         return self
 
+    def need_update(self):
+        if not self.ak or not self.sk:
+            return True
+        if not self._expired_at:
+            return False
+        return self._expired_at - time_utils.get_timestamp_utc() < 60
 
-class EnvCredentialHelper(object):
+    def update_credential(self, http_client):
+        credential = Metadata.get_temporary_credential(http_client)
 
-    def __init__(self):
-        pass
-
-    AK_ENV_NAME = "HUAWEICLOUD_SDK_AK"
-    SK_ENV_NAME = "HUAWEICLOUD_SDK_SK"
-    PROJECT_ID_ENV_NAME = "HUAWEICLOUD_SDK_PROJECT_ID"
-    DOMAIN_ID_ENV_NAME = "HUAWEICLOUD_SDK_DOMAIN_ID"
-    IAM_ENDPOINT_ENV_NAME = "HUAWEICLOUD_SDK_IAM_ENDPOINT"
-    REGION_ID_ENV_NAME = "HUAWEICLOUD_SDK_REGION_ID"
-    DERIVED_AUTH_SERVICE_NAME_ENV_NAME = "HUAWEICLOUD_SDK_DERIVED_AUTH_SERVICE_NAME"
-    DERIVED_PREDICATE_ENV_NAME = "HUAWEICLOUD_SDK_DERIVED_PREDICATE"
-    DEFAULT_DERIVED_PREDICATE = "DEFAULT_DERIVED_PREDICATE"
-
-    BASIC_CREDENTIAL_TYPE = "BasicCredentials"
-    GLOBAL_CREDENTIAL_TYPE = "GlobalCredentials"
-
-    @classmethod
-    def load_credential_from_env(cls, default_type):
-
-        credential = None
-
-        ak = os.environ.get(cls.AK_ENV_NAME)
-        sk = os.environ.get(cls.SK_ENV_NAME)
-        iam_endpoint = cls.get_iam_endpoint_env_name()
-
-        region_id = os.environ.get(cls.REGION_ID_ENV_NAME)
-        derived_auth_service_name = os.environ.get(cls.DERIVED_AUTH_SERVICE_NAME_ENV_NAME)
-        derived_predicate = os.environ.get(cls.DERIVED_PREDICATE_ENV_NAME)
-        if derived_predicate and derived_predicate == cls.DEFAULT_DERIVED_PREDICATE:
-            derived_predicate = DerivedCredentials.get_default_derived_predicate()
-
-        if default_type == cls.BASIC_CREDENTIAL_TYPE:
-            project_id = os.environ.get(cls.PROJECT_ID_ENV_NAME)
-            credential = BasicCredentials(ak, sk, project_id).with_derived_predicate(derived_predicate)
-            credential._process_derived_auth_params(derived_auth_service_name, region_id)
-            credential.with_iam_endpoint(iam_endpoint)
-        elif default_type == cls.GLOBAL_CREDENTIAL_TYPE:
-            domain_id = os.environ.get(cls.DOMAIN_ID_ENV_NAME)
-            credential = GlobalCredentials(ak, sk, domain_id).with_derived_predicate(derived_predicate)
-            credential._process_derived_auth_params(derived_auth_service_name, region_id)
-            credential.with_iam_endpoint(iam_endpoint)
-
-        return credential
-
-    @classmethod
-    def get_iam_endpoint_env_name(cls):
-        return os.environ.get(cls.IAM_ENDPOINT_ENV_NAME)
+        self.ak = credential.get("access")
+        self.sk = credential.get("secret")
+        self.security_token = credential.get("securitytoken")
+        self._expired_at = time_utils.get_timestamp_from_str(credential.get("expires_at"), self._TIME_FORMAT)

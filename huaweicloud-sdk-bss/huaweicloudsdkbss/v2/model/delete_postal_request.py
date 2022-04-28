@@ -33,7 +33,7 @@ class DeletePostalRequest:
 
         The model defined in huaweicloud sdk
 
-        :param address_id: |参数名称：邮寄地址ID|
+        :param address_id: 邮寄地址ID
         :type address_id: str
         """
         
@@ -48,7 +48,7 @@ class DeletePostalRequest:
     def address_id(self):
         """Gets the address_id of this DeletePostalRequest.
 
-        |参数名称：邮寄地址ID|
+        邮寄地址ID
 
         :return: The address_id of this DeletePostalRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class DeletePostalRequest:
     def address_id(self, address_id):
         """Sets the address_id of this DeletePostalRequest.
 
-        |参数名称：邮寄地址ID|
+        邮寄地址ID
 
         :param address_id: The address_id of this DeletePostalRequest.
         :type address_id: str

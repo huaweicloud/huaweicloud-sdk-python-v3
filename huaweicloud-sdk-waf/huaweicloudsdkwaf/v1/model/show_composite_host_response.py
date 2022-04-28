@@ -73,7 +73,7 @@ class ShowCompositeHostResponse(SdkResponse):
         :type paid_type: str
         :param flag: 
         :type flag: :class:`huaweicloudsdkwaf.v1.HostFlag`
-        :param waf_type: 域名所属WAF模式
+        :param waf_type: 域名所属WAF模式,cloud为云模式，premium为独享模式
         :type waf_type: str
         """
         
@@ -337,7 +337,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def waf_type(self):
         """Gets the waf_type of this ShowCompositeHostResponse.
 
-        域名所属WAF模式
+        域名所属WAF模式,cloud为云模式，premium为独享模式
 
         :return: The waf_type of this ShowCompositeHostResponse.
         :rtype: str
@@ -348,7 +348,7 @@ class ShowCompositeHostResponse(SdkResponse):
     def waf_type(self, waf_type):
         """Sets the waf_type of this ShowCompositeHostResponse.
 
-        域名所属WAF模式
+        域名所属WAF模式,cloud为云模式，premium为独享模式
 
         :param waf_type: The waf_type of this ShowCompositeHostResponse.
         :type waf_type: str

@@ -33,7 +33,7 @@ class SnapshotResp:
 
         The model defined in huaweicloud sdk
 
-        :param id: 
+        :param id: Snapshot ID
         :type id: str
         """
         
@@ -49,6 +49,7 @@ class SnapshotResp:
     def id(self):
         """Gets the id of this SnapshotResp.
 
+        Snapshot ID
 
         :return: The id of this SnapshotResp.
         :rtype: str
@@ -59,6 +60,7 @@ class SnapshotResp:
     def id(self, id):
         """Sets the id of this SnapshotResp.
 
+        Snapshot ID
 
         :param id: The id of this SnapshotResp.
         :type id: str

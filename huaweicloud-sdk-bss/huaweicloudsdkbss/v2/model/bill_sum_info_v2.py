@@ -59,7 +59,7 @@ class BillSumInfoV2:
 
         :param customer_id: 客户账号ID。
         :type customer_id: str
-        :param cloud_service_type: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :param cloud_service_type: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
         :type cloud_service_type: str
         :param cloud_service_type_name: 云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
         :type cloud_service_type_name: str
@@ -155,7 +155,7 @@ class BillSumInfoV2:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this BillSumInfoV2.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :return: The cloud_service_type of this BillSumInfoV2.
         :rtype: str
@@ -166,7 +166,7 @@ class BillSumInfoV2:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this BillSumInfoV2.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
 
         :param cloud_service_type: The cloud_service_type of this BillSumInfoV2.
         :type cloud_service_type: str

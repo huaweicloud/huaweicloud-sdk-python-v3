@@ -37,7 +37,7 @@ class ReclaimPartnerCouponsReq:
 
         :param coupon_id: 待回收的代金券ID。 请从“发放优惠券”或“查询已发放的优惠券”接口的响应参数中获取。
         :type coupon_id: str
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。 精英服务商回收给子客户发放的优惠券时，需要携带该字段。
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 精英服务商回收给子客户发放的优惠券时，需要携带该字段。
         :type indirect_partner_id: str
         """
         
@@ -77,7 +77,7 @@ class ReclaimPartnerCouponsReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ReclaimPartnerCouponsReq.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。 精英服务商回收给子客户发放的优惠券时，需要携带该字段。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 精英服务商回收给子客户发放的优惠券时，需要携带该字段。
 
         :return: The indirect_partner_id of this ReclaimPartnerCouponsReq.
         :rtype: str
@@ -88,7 +88,7 @@ class ReclaimPartnerCouponsReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ReclaimPartnerCouponsReq.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。 精英服务商回收给子客户发放的优惠券时，需要携带该字段。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 精英服务商回收给子客户发放的优惠券时，需要携带该字段。
 
         :param indirect_partner_id: The indirect_partner_id of this ReclaimPartnerCouponsReq.
         :type indirect_partner_id: str

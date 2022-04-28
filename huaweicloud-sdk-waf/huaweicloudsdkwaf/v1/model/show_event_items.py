@@ -30,16 +30,18 @@ class ShowEventItems:
         'rule': 'str',
         'action': 'str',
         'cookie': 'str',
-        'headers': 'str',
+        'headers': 'object',
         'host_id': 'str',
         'id': 'str',
         'payload': 'str',
         'payload_location': 'str',
         'region': 'str',
+        'process_time': 'int',
         'request_line': 'str',
-        'response_size': 'str',
-        'response_time': 'str',
-        'status': 'str'
+        'response_size': 'int',
+        'response_time': 'int',
+        'status': 'str',
+        'request_body': 'str'
     }
 
     attribute_map = {
@@ -58,13 +60,15 @@ class ShowEventItems:
         'payload': 'payload',
         'payload_location': 'payload_location',
         'region': 'region',
+        'process_time': 'process_time',
         'request_line': 'request_line',
         'response_size': 'response_size',
         'response_time': 'response_time',
-        'status': 'status'
+        'status': 'status',
+        'request_body': 'request_body'
     }
 
-    def __init__(self, time=None, policyid=None, sip=None, host=None, url=None, attack=None, rule=None, action=None, cookie=None, headers=None, host_id=None, id=None, payload=None, payload_location=None, region=None, request_line=None, response_size=None, response_time=None, status=None):
+    def __init__(self, time=None, policyid=None, sip=None, host=None, url=None, attack=None, rule=None, action=None, cookie=None, headers=None, host_id=None, id=None, payload=None, payload_location=None, region=None, process_time=None, request_line=None, response_size=None, response_time=None, status=None, request_body=None):
         """ShowEventItems
 
         The model defined in huaweicloud sdk
@@ -88,10 +92,10 @@ class ShowEventItems:
         :param cookie: 攻击请求的cookie
         :type cookie: str
         :param headers: 攻击请求的headers
-        :type headers: str
+        :type headers: object
         :param host_id: 被攻击的域名id
         :type host_id: str
-        :param id: 攻击请求的id
+        :param id: 防护事件id
         :type id: str
         :param payload: 恶意负载
         :type payload: str
@@ -99,14 +103,18 @@ class ShowEventItems:
         :type payload_location: str
         :param region: 源ip地理位置
         :type region: str
+        :param process_time: 处理时长
+        :type process_time: int
         :param request_line: 攻击请求的请求行
         :type request_line: str
         :param response_size: 返回大小（字节）
-        :type response_size: str
+        :type response_size: int
         :param response_time: 响应时间（毫秒）
-        :type response_time: str
+        :type response_time: int
         :param status: 响应码
         :type status: str
+        :param request_body: 请求体
+        :type request_body: str
         """
         
         
@@ -126,10 +134,12 @@ class ShowEventItems:
         self._payload = None
         self._payload_location = None
         self._region = None
+        self._process_time = None
         self._request_line = None
         self._response_size = None
         self._response_time = None
         self._status = None
+        self._request_body = None
         self.discriminator = None
 
         if time is not None:
@@ -162,6 +172,8 @@ class ShowEventItems:
             self.payload_location = payload_location
         if region is not None:
             self.region = region
+        if process_time is not None:
+            self.process_time = process_time
         if request_line is not None:
             self.request_line = request_line
         if response_size is not None:
@@ -170,6 +182,8 @@ class ShowEventItems:
             self.response_time = response_time
         if status is not None:
             self.status = status
+        if request_body is not None:
+            self.request_body = request_body
 
     @property
     def time(self):
@@ -376,7 +390,7 @@ class ShowEventItems:
         攻击请求的headers
 
         :return: The headers of this ShowEventItems.
-        :rtype: str
+        :rtype: object
         """
         return self._headers
 
@@ -387,7 +401,7 @@ class ShowEventItems:
         攻击请求的headers
 
         :param headers: The headers of this ShowEventItems.
-        :type headers: str
+        :type headers: object
         """
         self._headers = headers
 
@@ -417,7 +431,7 @@ class ShowEventItems:
     def id(self):
         """Gets the id of this ShowEventItems.
 
-        攻击请求的id
+        防护事件id
 
         :return: The id of this ShowEventItems.
         :rtype: str
@@ -428,7 +442,7 @@ class ShowEventItems:
     def id(self, id):
         """Sets the id of this ShowEventItems.
 
-        攻击请求的id
+        防护事件id
 
         :param id: The id of this ShowEventItems.
         :type id: str
@@ -502,6 +516,28 @@ class ShowEventItems:
         self._region = region
 
     @property
+    def process_time(self):
+        """Gets the process_time of this ShowEventItems.
+
+        处理时长
+
+        :return: The process_time of this ShowEventItems.
+        :rtype: int
+        """
+        return self._process_time
+
+    @process_time.setter
+    def process_time(self, process_time):
+        """Sets the process_time of this ShowEventItems.
+
+        处理时长
+
+        :param process_time: The process_time of this ShowEventItems.
+        :type process_time: int
+        """
+        self._process_time = process_time
+
+    @property
     def request_line(self):
         """Gets the request_line of this ShowEventItems.
 
@@ -530,7 +566,7 @@ class ShowEventItems:
         返回大小（字节）
 
         :return: The response_size of this ShowEventItems.
-        :rtype: str
+        :rtype: int
         """
         return self._response_size
 
@@ -541,7 +577,7 @@ class ShowEventItems:
         返回大小（字节）
 
         :param response_size: The response_size of this ShowEventItems.
-        :type response_size: str
+        :type response_size: int
         """
         self._response_size = response_size
 
@@ -552,7 +588,7 @@ class ShowEventItems:
         响应时间（毫秒）
 
         :return: The response_time of this ShowEventItems.
-        :rtype: str
+        :rtype: int
         """
         return self._response_time
 
@@ -563,7 +599,7 @@ class ShowEventItems:
         响应时间（毫秒）
 
         :param response_time: The response_time of this ShowEventItems.
-        :type response_time: str
+        :type response_time: int
         """
         self._response_time = response_time
 
@@ -588,6 +624,28 @@ class ShowEventItems:
         :type status: str
         """
         self._status = status
+
+    @property
+    def request_body(self):
+        """Gets the request_body of this ShowEventItems.
+
+        请求体
+
+        :return: The request_body of this ShowEventItems.
+        :rtype: str
+        """
+        return self._request_body
+
+    @request_body.setter
+    def request_body(self, request_body):
+        """Sets the request_body of this ShowEventItems.
+
+        请求体
+
+        :param request_body: The request_body of this ShowEventItems.
+        :type request_body: str
+        """
+        self._request_body = request_body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

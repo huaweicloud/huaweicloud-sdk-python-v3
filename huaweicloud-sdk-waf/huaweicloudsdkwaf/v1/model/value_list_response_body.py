@@ -24,21 +24,23 @@ class ValueListResponseBody:
         'id': 'str',
         'name': 'str',
         'type': 'str',
-        'description': 'str',
         'timestamp': 'int',
-        'values': 'list[str]'
+        'values': 'list[str]',
+        'producer': 'int',
+        'description': 'str'
     }
 
     attribute_map = {
         'id': 'id',
         'name': 'name',
         'type': 'type',
-        'description': 'description',
         'timestamp': 'timestamp',
-        'values': 'values'
+        'values': 'values',
+        'producer': 'producer',
+        'description': 'description'
     }
 
-    def __init__(self, id=None, name=None, type=None, description=None, timestamp=None, values=None):
+    def __init__(self, id=None, name=None, type=None, timestamp=None, values=None, producer=None, description=None):
         """ValueListResponseBody
 
         The model defined in huaweicloud sdk
@@ -49,12 +51,14 @@ class ValueListResponseBody:
         :type name: str
         :param type: 引用表类型
         :type type: str
-        :param description: 引用表描述
-        :type description: str
         :param timestamp: 引用表时间戳
         :type timestamp: int
         :param values: 引用表的值
         :type values: list[str]
+        :param producer: 引用表来源，1代表用户创建，其它值代表modulleX自动生成
+        :type producer: int
+        :param description: 引用表描述
+        :type description: str
         """
         
         
@@ -62,9 +66,10 @@ class ValueListResponseBody:
         self._id = None
         self._name = None
         self._type = None
-        self._description = None
         self._timestamp = None
         self._values = None
+        self._producer = None
+        self._description = None
         self.discriminator = None
 
         if id is not None:
@@ -73,12 +78,14 @@ class ValueListResponseBody:
             self.name = name
         if type is not None:
             self.type = type
-        if description is not None:
-            self.description = description
         if timestamp is not None:
             self.timestamp = timestamp
         if values is not None:
             self.values = values
+        if producer is not None:
+            self.producer = producer
+        if description is not None:
+            self.description = description
 
     @property
     def id(self):
@@ -147,28 +154,6 @@ class ValueListResponseBody:
         self._type = type
 
     @property
-    def description(self):
-        """Gets the description of this ValueListResponseBody.
-
-        引用表描述
-
-        :return: The description of this ValueListResponseBody.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this ValueListResponseBody.
-
-        引用表描述
-
-        :param description: The description of this ValueListResponseBody.
-        :type description: str
-        """
-        self._description = description
-
-    @property
     def timestamp(self):
         """Gets the timestamp of this ValueListResponseBody.
 
@@ -211,6 +196,50 @@ class ValueListResponseBody:
         :type values: list[str]
         """
         self._values = values
+
+    @property
+    def producer(self):
+        """Gets the producer of this ValueListResponseBody.
+
+        引用表来源，1代表用户创建，其它值代表modulleX自动生成
+
+        :return: The producer of this ValueListResponseBody.
+        :rtype: int
+        """
+        return self._producer
+
+    @producer.setter
+    def producer(self, producer):
+        """Sets the producer of this ValueListResponseBody.
+
+        引用表来源，1代表用户创建，其它值代表modulleX自动生成
+
+        :param producer: The producer of this ValueListResponseBody.
+        :type producer: int
+        """
+        self._producer = producer
+
+    @property
+    def description(self):
+        """Gets the description of this ValueListResponseBody.
+
+        引用表描述
+
+        :return: The description of this ValueListResponseBody.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ValueListResponseBody.
+
+        引用表描述
+
+        :param description: The description of this ValueListResponseBody.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

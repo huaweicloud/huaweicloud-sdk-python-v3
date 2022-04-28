@@ -1,3 +1,163 @@
+# 3.0.86 2022-04-28
+
+### HuaweiCloud SDK All
+
+- _新增特性_
+  - 支持云服务集合包 `huaweicloudsdkall`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`AddOrUpdateServiceDiscoveryRules`请求参数`priority`类型调整 `string` -> `int32`
+  - 接口`ListServiceDiscoveryRules`响应参数`priority`类型调整 `string` -> `int32`
+
+### HuaweiCloud SDK CSE
+
+- _新增特性_
+  - 支持微服务引擎
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DevStar
+
+- _新增特性_
+  - 支持接口`ConfirmDeploymentJob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateDeploymentJobs`新增请求参数 `cci`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 支持接口`CancelAsyncInvocation`、`StartSyncWorkflowExecution`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListFunctionStatistics`:
+    - 响应参数`timestamp`类型调整 `int32` -> `int64`
+    - 响应参数`value`类型调整 `int32` -> `double`
+  - 接口`ListStatistics`:
+    - 响应参数`timestamp`类型调整 `int32` -> `int64`
+    - 响应参数`value`类型调整 `int32` -> `double`
+  - 接口`ListFunctionAsyncInvokeConfig`新增响应参数 `enable_async_status_log`
+  - 接口`ShowFunctionAsyncInvokeConfig`新增响应参数 `enable_async_status_log`
+  - 接口`UpdateFunctionAsyncInvokeConfig`:
+    - 新增请求参数 `enable_async_status_log`
+    - 新增响应参数 `enable_async_status_log`
+  - 接口`CreateWorkflow`:
+    - 新增请求参数 `mode`、`express_config`
+    - 请求参数`type`新增枚举值`End`
+  - 接口`ShowWorkFlow`:
+    - 新增响应参数 `mode`、`express_config`
+    - 响应参数`type`新增枚举值`End`
+  - 接口`UpdateWorkFlow`:
+    - 新增请求参数 `mode`、`express_config`
+    - 请求参数`type`新增枚举值`End`
+  - 接口`ShowTenantMetric`:
+    - 新增请求参数 `start_time`、`end_time`
+    - 响应参数`timestamp`类型调整 `int32` -> `int64`
+    - 响应参数`value`类型调整 `int32` -> `double`
+  - 接口`ShowWorkFlowMetric`:
+    - 新增请求参数 `start_time`、`end_time`
+    - 响应参数`timestamp`类型调整 `int32` -> `int64`
+    - 响应参数`value`类型调整 `int32` -> `double`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持接口`ShowGaussMySqlProxyList`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateGaussMySqlReadonlyNode`:
+    - 新增请求参数 `X-Auth-Token`
+    - 移除请求参数 `x-auth-token`
+  - 接口`ExpandGaussMySqlInstanceVolume`移除响应参数 `size`、`order_id`
+  - 接口`ListGaussMySqlDedicatedResources`:
+    - 新增请求参数 `X-Auth-Token`
+    - 移除请求参数 `x-auth-token`
+  - 接口`DeleteGaussMySqlProxy`新增请求参数 `CloseMysqlProxyRequest`
+  - 接口`CreateGaussMySqlProxy`:
+    - 新增请求参数 `proxy_name`、`proxy_mode`、`nodes_read_weight`
+    - 请求参数`flavor_ref`、`node_num`改为必填
+  - 接口`ExpandGaussMySqlProxy`新增请求参数 `proxy_id`
+  - 接口`ListGaussMySqlErrorLog`:
+    - 新增请求参数 `X-Auth-Token`
+    - 移除请求参数 `x-auth-token`
+    - 请求参数`node_id`改为非必填
+  - 接口`ListGaussMySqlSlowLog`:
+    - 新增请求参数 `X-Auth-Token`
+    - 移除请求参数 `x-auth-token`
+  - 接口`ListGaussMySqlConfigurations`:
+    - 新增请求参数 `X-Auth-Token`
+    - 移除请求参数 `x-auth-token`
+  - 接口`ShowGaussMySqlJobInfo`:
+    - 新增请求参数 `X-Auth-Token`
+    - 移除请求参数 `x-auth-token`
+  - 接口`ListInstanceTags`:
+    - 新增请求参数 `X-Auth-Token`
+    - 移除请求参数 `x-auth-token`
+  - 接口`ListProjectTags`:
+    - 新增请求参数 `X-Auth-Token`
+    - 移除请求参数 `x-auth-token`
+  - 接口`BatchTagAction`:
+    - 新增请求参数 `X-Auth-Token`
+    - 移除请求参数 `x-auth-token`
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+  - 支持接口`ShowDepartment`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`SearchCorpDir`新增响应参数 `deptCodes`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 修复接口`RecognizeMyanmarDriverLicense`的响应体类型错误的问题
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 支持接口`DeleteIgnoreRule`、`CreateIgnoreRule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListIgnoreRule`移除响应参数 `id`、`policyid`、`timestamp`、`description`、`status`、`url`、`rule`、`domain`、`url_logic`、`advanced`
+  - 接口`ListValueList`新增响应参数 `producer`
+  - 接口`ListEvent`新增响应参数 `process_time`、`request_body`
+  - 接口`ShowEvent`:
+    - 新增响应参数 `process_time`、`request_body`
+    - 响应参数`headers`类型调整 `string` -> `object`
+    - 响应参数`response_size`类型调整 `string` -> `int32`
+    - 响应参数`response_time`类型调整 `string` -> `int64`
+  - 接口`ListHost`响应参数`paid_type`类型调整 `string` -> `enum`
+  - 接口`CreateHost`新增响应参数 `flag`、`http2_enable`
+  - 接口`UpdateHostProtectStatus`新增响应参数 `protect_status`
+  - 接口`DeleteHost`响应参数`paid_type`类型调整 `string` -> `enum`
+  - 接口`UpdateHost`响应参数`protocol`类型调整 `string` -> `enum`
+  - 接口`DeletePolicy`新增响应参数 `id`、`name`、`level`、`action`、`options`、`full_detection`、`hosts`、`bind_host`、`timestamp`、`extend`
+  - 接口`UpdatePolicyRuleStatus`新增响应参数 `id`、`policyid`、`timestamp`、`description`、`status`
+  - 接口`DeletePrivacyRule`新增响应参数 `id`、`policyid`、`timestamp`、`description`、`status`、`url`、`category`、`index`
+  - 接口`DeletePremiumHost`新增响应参数 `region`
+
 # 3.0.85 2022-04-21
 
 ### HuaweiCloud SDK AS

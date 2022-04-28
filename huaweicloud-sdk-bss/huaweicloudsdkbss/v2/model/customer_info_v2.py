@@ -33,7 +33,7 @@ class CustomerInfoV2:
 
         The model defined in huaweicloud sdk
 
-        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
         :type customer_id: str
         """
         
@@ -48,7 +48,7 @@ class CustomerInfoV2:
     def customer_id(self):
         """Gets the customer_id of this CustomerInfoV2.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
         :return: The customer_id of this CustomerInfoV2.
         :rtype: str
@@ -59,7 +59,7 @@ class CustomerInfoV2:
     def customer_id(self, customer_id):
         """Sets the customer_id of this CustomerInfoV2.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
         :param customer_id: The customer_id of this CustomerInfoV2.
         :type customer_id: str

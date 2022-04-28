@@ -31,9 +31,11 @@ class CreateHostResponse(SdkResponse):
         'certificateid': 'str',
         'certificatename': 'str',
         'server': 'list[CloudWafServer]',
+        'flag': 'Flag',
         'proxy': 'bool',
         'timestamp': 'int',
-        'exclusive_ip': 'bool'
+        'exclusive_ip': 'bool',
+        'http2_enable': 'bool'
     }
 
     attribute_map = {
@@ -47,12 +49,14 @@ class CreateHostResponse(SdkResponse):
         'certificateid': 'certificateid',
         'certificatename': 'certificatename',
         'server': 'server',
+        'flag': 'flag',
         'proxy': 'proxy',
         'timestamp': 'timestamp',
-        'exclusive_ip': 'exclusive_ip'
+        'exclusive_ip': 'exclusive_ip',
+        'http2_enable': 'http2_enable'
     }
 
-    def __init__(self, id=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, protocol=None, certificateid=None, certificatename=None, server=None, proxy=None, timestamp=None, exclusive_ip=None):
+    def __init__(self, id=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, protocol=None, certificateid=None, certificatename=None, server=None, flag=None, proxy=None, timestamp=None, exclusive_ip=None, http2_enable=None):
         """CreateHostResponse
 
         The model defined in huaweicloud sdk
@@ -77,12 +81,16 @@ class CreateHostResponse(SdkResponse):
         :type certificatename: str
         :param server: 源站信息
         :type server: list[:class:`huaweicloudsdkwaf.v1.CloudWafServer`]
+        :param flag: 
+        :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
         :param proxy: 是否开启了代理
         :type proxy: bool
         :param timestamp: 创建防护域名的时间
         :type timestamp: int
         :param exclusive_ip: 是否使用独享ip
         :type exclusive_ip: bool
+        :param http2_enable: 是否支持http2
+        :type http2_enable: bool
         """
         
         super(CreateHostResponse, self).__init__()
@@ -97,9 +105,11 @@ class CreateHostResponse(SdkResponse):
         self._certificateid = None
         self._certificatename = None
         self._server = None
+        self._flag = None
         self._proxy = None
         self._timestamp = None
         self._exclusive_ip = None
+        self._http2_enable = None
         self.discriminator = None
 
         if id is not None:
@@ -122,12 +132,16 @@ class CreateHostResponse(SdkResponse):
             self.certificatename = certificatename
         if server is not None:
             self.server = server
+        if flag is not None:
+            self.flag = flag
         if proxy is not None:
             self.proxy = proxy
         if timestamp is not None:
             self.timestamp = timestamp
         if exclusive_ip is not None:
             self.exclusive_ip = exclusive_ip
+        if http2_enable is not None:
+            self.http2_enable = http2_enable
 
     @property
     def id(self):
@@ -350,6 +364,26 @@ class CreateHostResponse(SdkResponse):
         self._server = server
 
     @property
+    def flag(self):
+        """Gets the flag of this CreateHostResponse.
+
+
+        :return: The flag of this CreateHostResponse.
+        :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
+        """
+        return self._flag
+
+    @flag.setter
+    def flag(self, flag):
+        """Sets the flag of this CreateHostResponse.
+
+
+        :param flag: The flag of this CreateHostResponse.
+        :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
+        """
+        self._flag = flag
+
+    @property
     def proxy(self):
         """Gets the proxy of this CreateHostResponse.
 
@@ -414,6 +448,28 @@ class CreateHostResponse(SdkResponse):
         :type exclusive_ip: bool
         """
         self._exclusive_ip = exclusive_ip
+
+    @property
+    def http2_enable(self):
+        """Gets the http2_enable of this CreateHostResponse.
+
+        是否支持http2
+
+        :return: The http2_enable of this CreateHostResponse.
+        :rtype: bool
+        """
+        return self._http2_enable
+
+    @http2_enable.setter
+    def http2_enable(self, http2_enable):
+        """Sets the http2_enable of this CreateHostResponse.
+
+        是否支持http2
+
+        :param http2_enable: The http2_enable of this CreateHostResponse.
+        :type http2_enable: bool
+        """
+        self._http2_enable = http2_enable
 
     def to_dict(self):
         """Returns the model properties as a dict"""

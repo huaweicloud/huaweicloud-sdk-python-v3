@@ -35,7 +35,7 @@ class MysqlExtendInstanceVolumeRequest:
 
         The model defined in huaweicloud sdk
 
-        :param size: 扩容后的容量，每次扩容最小容量为10GB，实例所选容量大小必须为10的整数倍
+        :param size: 扩容后的容量，每次扩容最小容量为10GB，实例所选容量大小必须为10的整数倍，最大为128000GB.
         :type size: int
         :param is_auto_pay: 表示是否自动从客户的账户中支付。  - true，为自动支付，默认该方式。 - false，为手动支付。
         :type is_auto_pay: str
@@ -55,7 +55,7 @@ class MysqlExtendInstanceVolumeRequest:
     def size(self):
         """Gets the size of this MysqlExtendInstanceVolumeRequest.
 
-        扩容后的容量，每次扩容最小容量为10GB，实例所选容量大小必须为10的整数倍
+        扩容后的容量，每次扩容最小容量为10GB，实例所选容量大小必须为10的整数倍，最大为128000GB.
 
         :return: The size of this MysqlExtendInstanceVolumeRequest.
         :rtype: int
@@ -66,7 +66,7 @@ class MysqlExtendInstanceVolumeRequest:
     def size(self, size):
         """Sets the size of this MysqlExtendInstanceVolumeRequest.
 
-        扩容后的容量，每次扩容最小容量为10GB，实例所选容量大小必须为10的整数倍
+        扩容后的容量，每次扩容最小容量为10GB，实例所选容量大小必须为10的整数倍，最大为128000GB.
 
         :param size: The size of this MysqlExtendInstanceVolumeRequest.
         :type size: int

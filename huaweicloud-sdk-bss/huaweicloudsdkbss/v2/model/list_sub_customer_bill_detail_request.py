@@ -65,15 +65,15 @@ class ListSubCustomerBillDetailRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_language: |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        :param x_language: 语言。忽略大小写，默认 zh_cn：中文 en_us：英文
         :type x_language: str
         :param bill_cycle: 账期所在月份。格式：YYYY-MM
         :type bill_cycle: str
-        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
         :type customer_id: str
-        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。
         :type service_type_code: str
-        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
         :type region_code: str
         :param charging_mode: 计费模式。不传数据时默认查询所有计费模式下的消费记录。1：包周期3：按需10：预留实例
         :type charging_mode: int
@@ -93,7 +93,7 @@ class ListSubCustomerBillDetailRequest:
         :type offset: int
         :param limit: 每次查询的数量限制。默认值为10。
         :type limit: int
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。 说明： 华为云伙伴能力中心可以查询名下所有子客户消费（包括精英服务商子客户）。如果是普通经销商，那么此处可以为空。
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 说明： 华为云伙伴能力中心可以查询名下所有子客户消费（包括精英服务商子客户）。如果是普通经销商，那么此处可以为空。
         :type indirect_partner_id: str
         :param bill_date_begin: 查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。
         :type bill_date_begin: str
@@ -159,7 +159,7 @@ class ListSubCustomerBillDetailRequest:
     def x_language(self):
         """Gets the x_language of this ListSubCustomerBillDetailRequest.
 
-        |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        语言。忽略大小写，默认 zh_cn：中文 en_us：英文
 
         :return: The x_language of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class ListSubCustomerBillDetailRequest:
     def x_language(self, x_language):
         """Sets the x_language of this ListSubCustomerBillDetailRequest.
 
-        |忽略大小写，默认 zh_cn：中文 en_us：英文|
+        语言。忽略大小写，默认 zh_cn：中文 en_us：英文
 
         :param x_language: The x_language of this ListSubCustomerBillDetailRequest.
         :type x_language: str
@@ -203,7 +203,7 @@ class ListSubCustomerBillDetailRequest:
     def customer_id(self):
         """Gets the customer_id of this ListSubCustomerBillDetailRequest.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
         :return: The customer_id of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -214,7 +214,7 @@ class ListSubCustomerBillDetailRequest:
     def customer_id(self, customer_id):
         """Sets the customer_id of this ListSubCustomerBillDetailRequest.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
         :param customer_id: The customer_id of this ListSubCustomerBillDetailRequest.
         :type customer_id: str
@@ -225,7 +225,7 @@ class ListSubCustomerBillDetailRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListSubCustomerBillDetailRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。
 
         :return: The service_type_code of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -236,7 +236,7 @@ class ListSubCustomerBillDetailRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListSubCustomerBillDetailRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。
 
         :param service_type_code: The service_type_code of this ListSubCustomerBillDetailRequest.
         :type service_type_code: str
@@ -247,7 +247,7 @@ class ListSubCustomerBillDetailRequest:
     def region_code(self):
         """Gets the region_code of this ListSubCustomerBillDetailRequest.
 
-        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
 
         :return: The region_code of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -258,7 +258,7 @@ class ListSubCustomerBillDetailRequest:
     def region_code(self, region_code):
         """Sets the region_code of this ListSubCustomerBillDetailRequest.
 
-        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
 
         :param region_code: The region_code of this ListSubCustomerBillDetailRequest.
         :type region_code: str
@@ -467,7 +467,7 @@ class ListSubCustomerBillDetailRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListSubCustomerBillDetailRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。 说明： 华为云伙伴能力中心可以查询名下所有子客户消费（包括精英服务商子客户）。如果是普通经销商，那么此处可以为空。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 说明： 华为云伙伴能力中心可以查询名下所有子客户消费（包括精英服务商子客户）。如果是普通经销商，那么此处可以为空。
 
         :return: The indirect_partner_id of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -478,7 +478,7 @@ class ListSubCustomerBillDetailRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListSubCustomerBillDetailRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。 说明： 华为云伙伴能力中心可以查询名下所有子客户消费（包括精英服务商子客户）。如果是普通经销商，那么此处可以为空。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 说明： 华为云伙伴能力中心可以查询名下所有子客户消费（包括精英服务商子客户）。如果是普通经销商，那么此处可以为空。
 
         :param indirect_partner_id: The indirect_partner_id of this ListSubCustomerBillDetailRequest.
         :type indirect_partner_id: str

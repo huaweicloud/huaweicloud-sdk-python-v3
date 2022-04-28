@@ -21,20 +21,51 @@ class UpdateHostProtectStatusResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'protect_status': 'int'
     }
 
     attribute_map = {
+        'protect_status': 'protect_status'
     }
 
-    def __init__(self):
+    def __init__(self, protect_status=None):
         """UpdateHostProtectStatusResponse
 
         The model defined in huaweicloud sdk
 
+        :param protect_status: 域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+        :type protect_status: int
         """
         
         super(UpdateHostProtectStatusResponse, self).__init__()
+
+        self._protect_status = None
         self.discriminator = None
+
+        if protect_status is not None:
+            self.protect_status = protect_status
+
+    @property
+    def protect_status(self):
+        """Gets the protect_status of this UpdateHostProtectStatusResponse.
+
+        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+
+        :return: The protect_status of this UpdateHostProtectStatusResponse.
+        :rtype: int
+        """
+        return self._protect_status
+
+    @protect_status.setter
+    def protect_status(self, protect_status):
+        """Sets the protect_status of this UpdateHostProtectStatusResponse.
+
+        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
+
+        :param protect_status: The protect_status of this UpdateHostProtectStatusResponse.
+        :type protect_status: int
+        """
+        self._protect_status = protect_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

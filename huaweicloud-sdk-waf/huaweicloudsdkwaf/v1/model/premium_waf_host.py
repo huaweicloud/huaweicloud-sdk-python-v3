@@ -75,7 +75,7 @@ class PremiumWafHost:
         :type id: str
         :param policyid: 防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
         :type policyid: str
-        :param hostname: 创建的云模式防护域名
+        :param hostname: 创建的独享模式防护域名
         :type hostname: str
         :param domainid: 用户Domain ID
         :type domainid: str
@@ -226,7 +226,7 @@ class PremiumWafHost:
     def hostname(self):
         """Gets the hostname of this PremiumWafHost.
 
-        创建的云模式防护域名
+        创建的独享模式防护域名
 
         :return: The hostname of this PremiumWafHost.
         :rtype: str
@@ -237,7 +237,7 @@ class PremiumWafHost:
     def hostname(self, hostname):
         """Sets the hostname of this PremiumWafHost.
 
-        创建的云模式防护域名
+        创建的独享模式防护域名
 
         :param hostname: The hostname of this PremiumWafHost.
         :type hostname: str

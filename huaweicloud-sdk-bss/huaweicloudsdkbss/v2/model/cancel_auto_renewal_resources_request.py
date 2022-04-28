@@ -33,7 +33,7 @@ class CancelAutoRenewalResourcesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: |参数名称：资源实例ID。您可以调用“查询客户包年/包月资源列表”接口获取资源ID。在取消弹性云服务器自动续费的时候，能够自动将其挂载的硬盘一并取消自动续费。| |参数的约束及描述：|
+        :param resource_id: 资源实例ID。您可以调用[查询客户包年包月资源列表](https://support.huaweicloud.com/api-bpconsole/api_order_00021.html)接口获取资源ID。在取消弹性云服务器自动续费的时候，能够自动将其挂载的硬盘一并取消自动续费。
         :type resource_id: str
         """
         
@@ -48,7 +48,7 @@ class CancelAutoRenewalResourcesRequest:
     def resource_id(self):
         """Gets the resource_id of this CancelAutoRenewalResourcesRequest.
 
-        |参数名称：资源实例ID。您可以调用“查询客户包年/包月资源列表”接口获取资源ID。在取消弹性云服务器自动续费的时候，能够自动将其挂载的硬盘一并取消自动续费。| |参数的约束及描述：|
+        资源实例ID。您可以调用[查询客户包年包月资源列表](https://support.huaweicloud.com/api-bpconsole/api_order_00021.html)接口获取资源ID。在取消弹性云服务器自动续费的时候，能够自动将其挂载的硬盘一并取消自动续费。
 
         :return: The resource_id of this CancelAutoRenewalResourcesRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class CancelAutoRenewalResourcesRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this CancelAutoRenewalResourcesRequest.
 
-        |参数名称：资源实例ID。您可以调用“查询客户包年/包月资源列表”接口获取资源ID。在取消弹性云服务器自动续费的时候，能够自动将其挂载的硬盘一并取消自动续费。| |参数的约束及描述：|
+        资源实例ID。您可以调用[查询客户包年包月资源列表](https://support.huaweicloud.com/api-bpconsole/api_order_00021.html)接口获取资源ID。在取消弹性云服务器自动续费的时候，能够自动将其挂载的硬盘一并取消自动续费。
 
         :param resource_id: The resource_id of this CancelAutoRenewalResourcesRequest.
         :type resource_id: str

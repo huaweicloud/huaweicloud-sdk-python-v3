@@ -26,27 +26,39 @@
 
 您可以使用 pip 安装 SDK 依赖包，也可以使用源码安装 SDK 依赖包。
 
-无论您要使用哪个产品/服务的开发工具包，都必须安装 `huaweicloudsdkcore` 。以使用虚拟私有云 VPC SDK 为例，您需要安装 `huaweicloudsdkcore` 和 `huaweicloudsdkvpc` ：
+### 独立云服务包
+
+以使用虚拟私有云 VPC SDK 为例，您需要安装 `huaweicloudsdkvpc`：
 
 - 使用 pip 安装
 
 ``` bash
-# 安装核心库
-pip install huaweicloudsdkcore
-
-# 安装VPC服务库
+# 安装VPC服务包
 pip install huaweicloudsdkvpc
 ```
 
 - 使用源码安装
 
 ``` bash
-# 安装核心库
-cd huaweicloudsdkcore-${version}
-python setup.py install
-
-# 安装VPC服务库
+# 安装VPC服务包
 cd huaweicloudsdkvpc-${version}
+python setup.py install
+```
+
+### 云服务集合包
+
+您可以安装`huaweicloudsdkall`，这么做会安装所有SDK支持的服务包：
+
+- 使用 pip 安装
+
+``` bash
+pip install huaweicloudsdkall
+```
+
+- 使用源码安装
+
+``` bash
+cd huaweicloudsdkall-${version}
 python setup.py install
 ```
 
@@ -475,7 +487,7 @@ if __name__ == "__main__":
     config = HttpConfig.get_default_config()
     config.ignore_ssl_verification = True
     credentials = BasicCredentials(ak, sk, project_id)
-    dsc_client = DscClient.new_builder()
+    dsc_client = DscClient.new_builder() \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \

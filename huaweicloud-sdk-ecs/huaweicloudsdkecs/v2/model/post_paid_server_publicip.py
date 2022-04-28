@@ -22,15 +22,17 @@ class PostPaidServerPublicip:
 
     openapi_types = {
         'id': 'str',
-        'eip': 'PostPaidServerEip'
+        'eip': 'PostPaidServerEip',
+        'delete_on_termination': 'bool'
     }
 
     attribute_map = {
         'id': 'id',
-        'eip': 'eip'
+        'eip': 'eip',
+        'delete_on_termination': 'delete_on_termination'
     }
 
-    def __init__(self, id=None, eip=None):
+    def __init__(self, id=None, eip=None, delete_on_termination=None):
         """PostPaidServerPublicip
 
         The model defined in huaweicloud sdk
@@ -39,18 +41,23 @@ class PostPaidServerPublicip:
         :type id: str
         :param eip: 
         :type eip: :class:`huaweicloudsdkecs.v2.PostPaidServerEip`
+        :param delete_on_termination: 弹性公网IP随实例释放策略。  true：弹性公网IP随实例释放。 false：弹性公网IP不随实例释放。 默认值：false。
+        :type delete_on_termination: bool
         """
         
         
 
         self._id = None
         self._eip = None
+        self._delete_on_termination = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if eip is not None:
             self.eip = eip
+        if delete_on_termination is not None:
+            self.delete_on_termination = delete_on_termination
 
     @property
     def id(self):
@@ -93,6 +100,28 @@ class PostPaidServerPublicip:
         :type eip: :class:`huaweicloudsdkecs.v2.PostPaidServerEip`
         """
         self._eip = eip
+
+    @property
+    def delete_on_termination(self):
+        """Gets the delete_on_termination of this PostPaidServerPublicip.
+
+        弹性公网IP随实例释放策略。  true：弹性公网IP随实例释放。 false：弹性公网IP不随实例释放。 默认值：false。
+
+        :return: The delete_on_termination of this PostPaidServerPublicip.
+        :rtype: bool
+        """
+        return self._delete_on_termination
+
+    @delete_on_termination.setter
+    def delete_on_termination(self, delete_on_termination):
+        """Sets the delete_on_termination of this PostPaidServerPublicip.
+
+        弹性公网IP随实例释放策略。  true：弹性公网IP随实例释放。 false：弹性公网IP不随实例释放。 默认值：false。
+
+        :param delete_on_termination: The delete_on_termination of this PostPaidServerPublicip.
+        :type delete_on_termination: bool
+        """
+        self._delete_on_termination = delete_on_termination
 
     def to_dict(self):
         """Returns the model properties as a dict"""

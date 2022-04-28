@@ -24,6 +24,7 @@ class DeletePremiumHostResponse(SdkResponse):
         'id': 'str',
         'hostname': 'str',
         'policyid': 'str',
+        'region': 'str',
         'protect_status': 'int',
         'access_status': 'int',
         'flag': 'dict(str, str)',
@@ -35,6 +36,7 @@ class DeletePremiumHostResponse(SdkResponse):
         'id': 'id',
         'hostname': 'hostname',
         'policyid': 'policyid',
+        'region': 'region',
         'protect_status': 'protect_status',
         'access_status': 'access_status',
         'flag': 'flag',
@@ -42,7 +44,7 @@ class DeletePremiumHostResponse(SdkResponse):
         'pool_ids': 'pool_ids'
     }
 
-    def __init__(self, id=None, hostname=None, policyid=None, protect_status=None, access_status=None, flag=None, mode=None, pool_ids=None):
+    def __init__(self, id=None, hostname=None, policyid=None, region=None, protect_status=None, access_status=None, flag=None, mode=None, pool_ids=None):
         """DeletePremiumHostResponse
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class DeletePremiumHostResponse(SdkResponse):
         :type hostname: str
         :param policyid: 策略id
         :type policyid: str
+        :param region: 区域id
+        :type region: str
         :param protect_status: 域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
         :type protect_status: int
         :param access_status: 接入状态
@@ -70,6 +74,7 @@ class DeletePremiumHostResponse(SdkResponse):
         self._id = None
         self._hostname = None
         self._policyid = None
+        self._region = None
         self._protect_status = None
         self._access_status = None
         self._flag = None
@@ -83,6 +88,8 @@ class DeletePremiumHostResponse(SdkResponse):
             self.hostname = hostname
         if policyid is not None:
             self.policyid = policyid
+        if region is not None:
+            self.region = region
         if protect_status is not None:
             self.protect_status = protect_status
         if access_status is not None:
@@ -159,6 +166,28 @@ class DeletePremiumHostResponse(SdkResponse):
         :type policyid: str
         """
         self._policyid = policyid
+
+    @property
+    def region(self):
+        """Gets the region of this DeletePremiumHostResponse.
+
+        区域id
+
+        :return: The region of this DeletePremiumHostResponse.
+        :rtype: str
+        """
+        return self._region
+
+    @region.setter
+    def region(self, region):
+        """Sets the region of this DeletePremiumHostResponse.
+
+        区域id
+
+        :param region: The region of this DeletePremiumHostResponse.
+        :type region: str
+        """
+        self._region = region
 
     @property
     def protect_status(self):

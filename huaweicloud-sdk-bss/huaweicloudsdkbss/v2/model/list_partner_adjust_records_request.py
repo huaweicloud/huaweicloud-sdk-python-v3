@@ -47,9 +47,9 @@ class ListPartnerAdjustRecordsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。为空表示查询所有的调账记录。不为空表示仅查询与该客户相关的调账记录。默认查询所有客户的调账记录。 说明： 此处的客户包含伙伴的子客户，以及华为云伙伴能力中心关联的精英服务商（二级经销商）。
+        :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。为空表示查询所有的调账记录。不为空表示仅查询与该客户相关的调账记录。默认查询所有客户的调账记录。 说明： 此处的客户包含伙伴的子客户，以及华为云伙伴能力中心关联的精英服务商（二级经销商）。
         :type customer_id: str
-        :param operation_type: 操作类型。SOURCE_OPERATION_BEADJUST：拨款SOURCE_OPERATION_BERETRIEVE：回收SOURCE_OPERATION_BEUNBIND：解绑回收不传递默认查询所有类型。
+        :param operation_type: 操作类型。SOURCE_OPERATION_BEADJUST：拨款,SOURCE_OPERATION_BERETRIEVE：回收,SOURCE_OPERATION_BEUNBIND：解绑回收,不传递默认查询所有类型。
         :type operation_type: str
         :param operation_time_begin: 调账起始时间。UTC时间，格式为：2016-03-28T14:45:38Z
         :type operation_time_begin: str
@@ -61,7 +61,7 @@ class ListPartnerAdjustRecordsRequest:
         :type offset: int
         :param limit: 每页的显示条数。默认值为10。
         :type limit: int
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的子客户调账记录时，需携带此参数；否则只能查询自己的子客户调账记录。
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的子客户调账记录时，需携带此参数；否则只能查询自己的子客户调账记录。
         :type indirect_partner_id: str
         """
         
@@ -98,7 +98,7 @@ class ListPartnerAdjustRecordsRequest:
     def customer_id(self):
         """Gets the customer_id of this ListPartnerAdjustRecordsRequest.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。为空表示查询所有的调账记录。不为空表示仅查询与该客户相关的调账记录。默认查询所有客户的调账记录。 说明： 此处的客户包含伙伴的子客户，以及华为云伙伴能力中心关联的精英服务商（二级经销商）。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。为空表示查询所有的调账记录。不为空表示仅查询与该客户相关的调账记录。默认查询所有客户的调账记录。 说明： 此处的客户包含伙伴的子客户，以及华为云伙伴能力中心关联的精英服务商（二级经销商）。
 
         :return: The customer_id of this ListPartnerAdjustRecordsRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class ListPartnerAdjustRecordsRequest:
     def customer_id(self, customer_id):
         """Sets the customer_id of this ListPartnerAdjustRecordsRequest.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。为空表示查询所有的调账记录。不为空表示仅查询与该客户相关的调账记录。默认查询所有客户的调账记录。 说明： 此处的客户包含伙伴的子客户，以及华为云伙伴能力中心关联的精英服务商（二级经销商）。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。为空表示查询所有的调账记录。不为空表示仅查询与该客户相关的调账记录。默认查询所有客户的调账记录。 说明： 此处的客户包含伙伴的子客户，以及华为云伙伴能力中心关联的精英服务商（二级经销商）。
 
         :param customer_id: The customer_id of this ListPartnerAdjustRecordsRequest.
         :type customer_id: str
@@ -120,7 +120,7 @@ class ListPartnerAdjustRecordsRequest:
     def operation_type(self):
         """Gets the operation_type of this ListPartnerAdjustRecordsRequest.
 
-        操作类型。SOURCE_OPERATION_BEADJUST：拨款SOURCE_OPERATION_BERETRIEVE：回收SOURCE_OPERATION_BEUNBIND：解绑回收不传递默认查询所有类型。
+        操作类型。SOURCE_OPERATION_BEADJUST：拨款,SOURCE_OPERATION_BERETRIEVE：回收,SOURCE_OPERATION_BEUNBIND：解绑回收,不传递默认查询所有类型。
 
         :return: The operation_type of this ListPartnerAdjustRecordsRequest.
         :rtype: str
@@ -131,7 +131,7 @@ class ListPartnerAdjustRecordsRequest:
     def operation_type(self, operation_type):
         """Sets the operation_type of this ListPartnerAdjustRecordsRequest.
 
-        操作类型。SOURCE_OPERATION_BEADJUST：拨款SOURCE_OPERATION_BERETRIEVE：回收SOURCE_OPERATION_BEUNBIND：解绑回收不传递默认查询所有类型。
+        操作类型。SOURCE_OPERATION_BEADJUST：拨款,SOURCE_OPERATION_BERETRIEVE：回收,SOURCE_OPERATION_BEUNBIND：解绑回收,不传递默认查询所有类型。
 
         :param operation_type: The operation_type of this ListPartnerAdjustRecordsRequest.
         :type operation_type: str
@@ -252,7 +252,7 @@ class ListPartnerAdjustRecordsRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListPartnerAdjustRecordsRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的子客户调账记录时，需携带此参数；否则只能查询自己的子客户调账记录。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的子客户调账记录时，需携带此参数；否则只能查询自己的子客户调账记录。
 
         :return: The indirect_partner_id of this ListPartnerAdjustRecordsRequest.
         :rtype: str
@@ -263,7 +263,7 @@ class ListPartnerAdjustRecordsRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListPartnerAdjustRecordsRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的子客户调账记录时，需携带此参数；否则只能查询自己的子客户调账记录。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）的子客户调账记录时，需携带此参数；否则只能查询自己的子客户调账记录。
 
         :param indirect_partner_id: The indirect_partner_id of this ListPartnerAdjustRecordsRequest.
         :type indirect_partner_id: str

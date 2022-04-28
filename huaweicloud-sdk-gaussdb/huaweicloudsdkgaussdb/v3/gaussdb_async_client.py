@@ -491,7 +491,7 @@ class GaussDBAsyncClient(Client):
         return self.delete_gauss_my_sql_proxy_with_http_info(request)
 
     def delete_gauss_my_sql_proxy_with_http_info(self, request):
-        all_params = ['instance_id', 'x_language']
+        all_params = ['instance_id', 'x_language', 'close_mysql_proxy_request']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -512,13 +512,15 @@ class GaussDBAsyncClient(Client):
         form_params = {}
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -862,7 +864,7 @@ class GaussDBAsyncClient(Client):
         return self.list_gauss_my_sql_error_log_with_http_info(request)
 
     def list_gauss_my_sql_error_log_with_http_info(self, request):
-        all_params = ['instance_id', 'start_date', 'end_date', 'x_language', 'offset', 'limit', 'level', 'node_id']
+        all_params = ['instance_id', 'start_date', 'end_date', 'node_id', 'x_language', 'offset', 'limit', 'level']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1930,6 +1932,70 @@ class GaussDBAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowGaussMySqlProxyFlavorsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_gauss_my_sql_proxy_list_async(self, request):
+        """查询数据库代理信息列表
+
+        查询数据库代理信息列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowGaussMySqlProxyList
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyListRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyListResponse`
+        """
+        return self.show_gauss_my_sql_proxy_list_with_http_info(request)
+
+    def show_gauss_my_sql_proxy_list_with_http_info(self, request):
+        all_params = ['instance_id', 'x_language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxies',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowGaussMySqlProxyListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

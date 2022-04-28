@@ -61,7 +61,7 @@ class ListPartnerCouponsRecordRequest:
         :type quota_type: int
         :param coupon_ids: 代金券ID列表。请从“发放优惠券”接口的响应参数中获取。
         :type coupon_ids: list[str]
-        :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
         :type customer_id: str
         :param operation_time_begin: 操作时间（开始）。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。输入这个条件，会查询出操作时间大于这个时间的记录。
         :type operation_time_begin: str
@@ -73,7 +73,7 @@ class ListPartnerCouponsRecordRequest:
         :type offset: int
         :param limit: 每页记录数。默认值为10。
         :type limit: int
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
+        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
         :type indirect_partner_id: str
         """
         
@@ -207,7 +207,7 @@ class ListPartnerCouponsRecordRequest:
     def customer_id(self):
         """Gets the customer_id of this ListPartnerCouponsRecordRequest.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
         :return: The customer_id of this ListPartnerCouponsRecordRequest.
         :rtype: str
@@ -218,7 +218,7 @@ class ListPartnerCouponsRecordRequest:
     def customer_id(self, customer_id):
         """Sets the customer_id of this ListPartnerCouponsRecordRequest.
 
-        客户账号ID。您可以调用查询客户列表接口获取customer_id。
+        客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
         :param customer_id: The customer_id of this ListPartnerCouponsRecordRequest.
         :type customer_id: str
@@ -339,7 +339,7 @@ class ListPartnerCouponsRecordRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListPartnerCouponsRecordRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
 
         :return: The indirect_partner_id of this ListPartnerCouponsRecordRequest.
         :rtype: str
@@ -350,7 +350,7 @@ class ListPartnerCouponsRecordRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListPartnerCouponsRecordRequest.
 
-        精英服务商ID。获取方法请参见查询精英服务商列表。华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
+        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云伙伴能力中心（一级经销商）查询精英服务商发放给子客户的优惠券发放记录时，需要携带该参数，否则只能查询发给自己子客户的优惠券发放记录。
 
         :param indirect_partner_id: The indirect_partner_id of this ListPartnerCouponsRecordRequest.
         :type indirect_partner_id: str

@@ -26,15 +26,13 @@ This document introduces how to obtain and use Huawei Cloud Python SDK.
 
 You could use **pip** or **source code** to install dependencies.
 
-You must install `huaweicloudsdkcore` library no matter which product/service development kit you need to use. Take
-using VPC SDK for example, you need to install `huaweicloudsdkcore` library and `huaweicloudsdkvpc` library:
+### Individual Cloud Service
+
+Take using VPC SDK for example, you need to install `huaweicloudsdkcore` library and `huaweicloudsdkvpc` library:
 
 - Use python pip
 
 ``` bash
-# Install the core library
-pip install huaweicloudsdkcore
-
 # Install the VPC management library
 pip install huaweicloudsdkvpc
 ```
@@ -42,12 +40,25 @@ pip install huaweicloudsdkvpc
 - Install from source code
 
 ``` bash
-# Install the core library
-cd huaweicloudsdkcore-${version}
-python setup.py install
-
 # Install the VPC management library
 cd huaweicloudsdkvpc-${version}
+python setup.py install
+```
+
+### Cloud Service Collection Package
+
+You can install `huaweicloudsdkall`, which will install all SDK supported service packages:
+
+- Use python pip
+
+``` bash
+pip install huaweicloudsdkall
+```
+
+- Install from source code
+
+``` bash
+cd huaweicloudsdkall-${version}
 python setup.py install
 ```
 
@@ -487,7 +498,7 @@ if __name__ == "__main__":
     config = HttpConfig.get_default_config()
     config.ignore_ssl_verification = True
     credentials = BasicCredentials(ak, sk, project_id)
-    dsc_client = DscClient.new_builder()
+    dsc_client = DscClient.new_builder() \
         .with_http_config(config) \
         .with_credentials(credentials) \
         .with_endpoint(endpoint) \

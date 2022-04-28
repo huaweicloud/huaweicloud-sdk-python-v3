@@ -18,7 +18,6 @@ from huaweicloudsdkocr.v1.model.chile_id_card_request_body import ChileIdCardReq
 from huaweicloudsdkocr.v1.model.chile_id_card_result import ChileIdCardResult
 from huaweicloudsdkocr.v1.model.driver_license_request_body import DriverLicenseRequestBody
 from huaweicloudsdkocr.v1.model.driver_license_result import DriverLicenseResult
-from huaweicloudsdkocr.v1.model.driver_license_result_status import DriverLicenseResultStatus
 from huaweicloudsdkocr.v1.model.extra_info_list import ExtraInfoList
 from huaweicloudsdkocr.v1.model.financial_statement_request_body import FinancialStatementRequestBody
 from huaweicloudsdkocr.v1.model.financial_statement_result import FinancialStatementResult
