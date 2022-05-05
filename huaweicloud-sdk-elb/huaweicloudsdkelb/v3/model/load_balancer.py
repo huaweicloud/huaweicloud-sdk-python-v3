@@ -45,6 +45,7 @@ class LoadBalancer:
         'ipv6_vip_port_id': 'str',
         'availability_zone_list': 'list[str]',
         'enterprise_project_id': 'str',
+        'billing_info': 'str',
         'l4_flavor_id': 'str',
         'l4_scale_flavor_id': 'str',
         'l7_flavor_id': 'str',
@@ -84,6 +85,7 @@ class LoadBalancer:
         'ipv6_vip_port_id': 'ipv6_vip_port_id',
         'availability_zone_list': 'availability_zone_list',
         'enterprise_project_id': 'enterprise_project_id',
+        'billing_info': 'billing_info',
         'l4_flavor_id': 'l4_flavor_id',
         'l4_scale_flavor_id': 'l4_scale_flavor_id',
         'l7_flavor_id': 'l7_flavor_id',
@@ -98,7 +100,7 @@ class LoadBalancer:
         'autoscaling': 'autoscaling'
     }
 
-    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, ipv6_bandwidth=None, deletion_protection_enable=None, autoscaling=None):
+    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, billing_info=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, ipv6_bandwidth=None, deletion_protection_enable=None, autoscaling=None):
         """LoadBalancer
 
         The model defined in huaweicloud sdk
@@ -151,6 +153,8 @@ class LoadBalancer:
         :type availability_zone_list: list[str]
         :param enterprise_project_id: 企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type enterprise_project_id: str
+        :param billing_info: 资源账单信息。 [取值： - 空：按需计费。  - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584:eu-de:057ef081eb00d2732fd1c01a9be75e6f  使用说明：  - admin权限才能更新此字段。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+        :type billing_info: str
         :param l4_flavor_id: 四层Flavor ID。  [hcso场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hws,hcso)
         :type l4_flavor_id: str
         :param l4_scale_flavor_id: 四层弹性Flavor ID。  不支持该字段，请勿使用。
@@ -203,6 +207,7 @@ class LoadBalancer:
         self._ipv6_vip_port_id = None
         self._availability_zone_list = None
         self._enterprise_project_id = None
+        self._billing_info = None
         self._l4_flavor_id = None
         self._l4_scale_flavor_id = None
         self._l7_flavor_id = None
@@ -241,6 +246,7 @@ class LoadBalancer:
         self.ipv6_vip_port_id = ipv6_vip_port_id
         self.availability_zone_list = availability_zone_list
         self.enterprise_project_id = enterprise_project_id
+        self.billing_info = billing_info
         self.l4_flavor_id = l4_flavor_id
         self.l4_scale_flavor_id = l4_scale_flavor_id
         self.l7_flavor_id = l7_flavor_id
@@ -783,6 +789,28 @@ class LoadBalancer:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def billing_info(self):
+        """Gets the billing_info of this LoadBalancer.
+
+        资源账单信息。 [取值： - 空：按需计费。  - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584:eu-de:057ef081eb00d2732fd1c01a9be75e6f  使用说明：  - admin权限才能更新此字段。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+
+        :return: The billing_info of this LoadBalancer.
+        :rtype: str
+        """
+        return self._billing_info
+
+    @billing_info.setter
+    def billing_info(self, billing_info):
+        """Sets the billing_info of this LoadBalancer.
+
+        资源账单信息。 [取值： - 空：按需计费。  - 非空：包周期计费，  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584:eu-de:057ef081eb00d2732fd1c01a9be75e6f  使用说明：  - admin权限才能更新此字段。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+
+        :param billing_info: The billing_info of this LoadBalancer.
+        :type billing_info: str
+        """
+        self._billing_info = billing_info
 
     @property
     def l4_flavor_id(self):

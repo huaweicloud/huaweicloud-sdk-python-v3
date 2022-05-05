@@ -1,3 +1,31 @@
+# 3.0.87 2022-05-05
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RunImageModeration`请求参数`image`类型调整 `byte` -> `string`
+
+### HuaweiCloud SDK RES
+
+- _新增特性_
+  - 支持接口`CreateResIntelligentScene`、`UpdateResIntelligentScene`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateResScene`:
+    - 响应参数`created_at`类型调整 `int32` -> `int64`
+    - 响应参数`update_at`类型调整 `int32` -> `int64`
+  - 接口`ListResScenes`:
+    - 响应参数`created_at`类型调整 `int32` -> `int64`
+    - 响应参数`update_at`类型调整 `string` -> `int64`
+  - 接口`ShowResScene`:
+    - 响应参数`created_at`类型调整 `int32` -> `int64`
+    - 响应参数`update_at`类型调整 `string` -> `int64`
+
 # 3.0.86 2022-04-28
 
 ### HuaweiCloud SDK All

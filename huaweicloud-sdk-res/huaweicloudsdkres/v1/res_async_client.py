@@ -110,6 +110,68 @@ class ResAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_res_intelligent_scene_async(self, request):
+        """创建智能场景
+
+        在指定工作空间下面创建智能场景。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateResIntelligentScene
+        :type request: :class:`huaweicloudsdkres.v1.CreateResIntelligentSceneRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.CreateResIntelligentSceneResponse`
+        """
+        return self.create_res_intelligent_scene_with_http_info(request)
+
+    def create_res_intelligent_scene_with_http_info(self, request):
+        all_params = ['content_type', 'workspace_id', 'rest_resource_create_intel_scene_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/workspaces/{workspace_id}/intelligent-scenes',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateResIntelligentSceneResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_res_job_async(self, request):
         """新建训练作业
 
@@ -1725,6 +1787,70 @@ class ResAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateResDatastructResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_res_intelligent_scene_async(self, request):
+        """更新智能场景内容
+
+        更新智能场景的内容信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateResIntelligentScene
+        :type request: :class:`huaweicloudsdkres.v1.UpdateResIntelligentSceneRequest`
+        :rtype: :class:`huaweicloudsdkres.v1.UpdateResIntelligentSceneResponse`
+        """
+        return self.update_res_intelligent_scene_with_http_info(request)
+
+    def update_res_intelligent_scene_with_http_info(self, request):
+        all_params = ['content_type', 'scene_id', 'workspace_id', 'rest_resource_put_intel_scene_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'scene_id' in local_var_params:
+            path_params['scene_id'] = local_var_params['scene_id']
+        if 'workspace_id' in local_var_params:
+            path_params['workspace_id'] = local_var_params['workspace_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.0/{project_id}/workspaces/{workspace_id}/intelligent-scenes/{scene_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateResIntelligentSceneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

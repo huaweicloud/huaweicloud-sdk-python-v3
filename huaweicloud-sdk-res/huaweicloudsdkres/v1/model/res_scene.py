@@ -31,7 +31,7 @@ class ResScene:
         'status': 'str',
         'workspace_id': 'str',
         'created_at': 'int',
-        'update_at': 'str',
+        'update_at': 'int',
         'specs_config': 'SpecsConfig'
     }
 
@@ -76,7 +76,7 @@ class ResScene:
         :param created_at: 创建时间。
         :type created_at: int
         :param update_at: 更新时间。
-        :type update_at: str
+        :type update_at: int
         :param specs_config: 
         :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
         """
@@ -347,7 +347,7 @@ class ResScene:
         更新时间。
 
         :return: The update_at of this ResScene.
-        :rtype: str
+        :rtype: int
         """
         return self._update_at
 
@@ -358,7 +358,7 @@ class ResScene:
         更新时间。
 
         :param update_at: The update_at of this ResScene.
-        :type update_at: str
+        :type update_at: int
         """
         self._update_at = update_at
 
