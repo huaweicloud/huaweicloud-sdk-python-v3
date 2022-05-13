@@ -1,3 +1,153 @@
+# 3.0.88 2022-05-12
+
+### HuaweiCloud SDK CodeHub
+
+- _Features_
+  - Support the interfaces `AddProtectBranchV2`, `AddTagV2`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CPTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `UpdateTask`:
+    - Modify the type `string` -> `array` of the request parameter `bodys`
+    - Modify the type `string` -> `object` of the request parameter `data`
+    - Modify the type `string` -> `array` of the response parameter `bodys`
+    - Modify the type `string` -> `object` of the response parameter `data`
+  - Changes of the interface `ShowTask`:
+    - Modify the type `string` -> `array` of the response parameter `bodys`
+    - Modify the type `string` -> `object` of the response parameter `data`
+  - Changes of the interface `UpdateCase`:
+    - Modify the type `string` -> `array` of the request parameter `bodys`
+    - Modify the type `string` -> `object` of the request parameter `data`
+  - Changes of the interface `UpdateTemp`:
+    - Modify the type `string` -> `array` of the request parameter `bodys`
+    - Modify the type `string` -> `object` of the request parameter `data`
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - Support the interface `DownloadCert`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DWS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `nodes` to the interface `ListClusterDetails`
+  - Add the response parameter `nodes` to the interface `ListClusters`
+
+### HuaweiCloud SDK FRS
+
+- _Features_
+  - Support the following interfaces：
+    - `DetectLiveByUrlIntl`
+    - `DetectLiveByFileIntl`
+    - `DetectLiveByBase64Intl`
+    - `DetectFaceByFileIntl`
+    - `DetectFaceByUrlIntl`
+    - `DetectFaceByBase64Intl`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - Support the following interfaces：
+    - `ListBackups`
+    - `CreateManualBackup`
+    - `DeleteManualBackup`
+    - `ListRestoreTimes`
+    - `CreateRestoreInstance`
+    - `CreateDatabase`
+    - `CreateDbUser`
+    - `CreateDatabaseSchemas`
+    - `AllowDbPrivileges`
+    - `SetDbUserPwd`
+    - `ListDatabases`
+    - `ListDbUsers`
+    - `ListDatabaseSchemas`
+    - `ShowBackupPolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListSimCards`:
+    - Add the request parameters `min_used_flow`, `max_used_flow`, `min_left_flow`, `max_left_flow`
+    - Remove the request parameters `min_flow`, `max_flow`
+
+### HuaweiCloud SDK IAM
+
+- _Features_
+  - Support the interface `ShowDomainRoleAssignments`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `RunImageModeration`:
+    - Add the request parameter `show_ocr_text`
+    - Add the response parameter `ocr_text`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - Support the interface `RecognizeHealthCode`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `RestoreExistInstance`:
+    - Add the request parameter `RestoreExistingInstanceRequestBody`
+    - Remove the request parameter `RestoreToExistingInstanceRequest`
+
+### HuaweiCloud SDK RocketMQ
+
+- _Features_
+  - Support the service `RocketMQ`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.0.87 2022-05-05
 
 ### HuaweiCloud SDK Moderation

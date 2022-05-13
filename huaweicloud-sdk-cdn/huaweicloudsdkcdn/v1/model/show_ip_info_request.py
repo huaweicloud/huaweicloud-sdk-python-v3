@@ -37,7 +37,7 @@ class ShowIpInfoRequest:
 
         :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
         :type enterprise_project_id: str
-        :param ips: IP地址列表，以“,”分割，最多20个。
+        :param ips: IP地址列表，以“，”分割，最多20个。
         :type ips: str
         """
         
@@ -77,7 +77,7 @@ class ShowIpInfoRequest:
     def ips(self):
         """Gets the ips of this ShowIpInfoRequest.
 
-        IP地址列表，以“,”分割，最多20个。
+        IP地址列表，以“，”分割，最多20个。
 
         :return: The ips of this ShowIpInfoRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class ShowIpInfoRequest:
     def ips(self, ips):
         """Sets the ips of this ShowIpInfoRequest.
 
-        IP地址列表，以“,”分割，最多20个。
+        IP地址列表，以“，”分割，最多20个。
 
         :param ips: The ips of this ShowIpInfoRequest.
         :type ips: str

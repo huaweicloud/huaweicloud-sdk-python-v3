@@ -33,7 +33,7 @@ class ShowAllFaceSetsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param face_sets_info: 人脸库信息集合，详见[FaceSetInfo](https://support.huaweicloud.com/api-face/face_02_0020.html)。 调用失败时无此字段。
+        :param face_sets_info: [人脸库信息，详见[FaceSetInfo](https://support.huaweicloud.com/api-face/face_02_0020.html)。 调用失败时无此字段。](tag:hc) [人脸库信息，详见[FaceSetInfo](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0020.html)。 调用失败时无此字段。](tag:hk)
         :type face_sets_info: list[:class:`huaweicloudsdkfrs.v2.FaceSetInfo`]
         """
         
@@ -49,7 +49,7 @@ class ShowAllFaceSetsResponse(SdkResponse):
     def face_sets_info(self):
         """Gets the face_sets_info of this ShowAllFaceSetsResponse.
 
-        人脸库信息集合，详见[FaceSetInfo](https://support.huaweicloud.com/api-face/face_02_0020.html)。 调用失败时无此字段。
+        [人脸库信息，详见[FaceSetInfo](https://support.huaweicloud.com/api-face/face_02_0020.html)。 调用失败时无此字段。](tag:hc) [人脸库信息，详见[FaceSetInfo](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0020.html)。 调用失败时无此字段。](tag:hk)
 
         :return: The face_sets_info of this ShowAllFaceSetsResponse.
         :rtype: list[:class:`huaweicloudsdkfrs.v2.FaceSetInfo`]
@@ -60,7 +60,7 @@ class ShowAllFaceSetsResponse(SdkResponse):
     def face_sets_info(self, face_sets_info):
         """Sets the face_sets_info of this ShowAllFaceSetsResponse.
 
-        人脸库信息集合，详见[FaceSetInfo](https://support.huaweicloud.com/api-face/face_02_0020.html)。 调用失败时无此字段。
+        [人脸库信息，详见[FaceSetInfo](https://support.huaweicloud.com/api-face/face_02_0020.html)。 调用失败时无此字段。](tag:hc) [人脸库信息，详见[FaceSetInfo](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0020.html)。 调用失败时无此字段。](tag:hk)
 
         :param face_sets_info: The face_sets_info of this ShowAllFaceSetsResponse.
         :type face_sets_info: list[:class:`huaweicloudsdkfrs.v2.FaceSetInfo`]

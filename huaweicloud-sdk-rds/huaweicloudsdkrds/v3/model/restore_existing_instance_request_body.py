@@ -22,7 +22,7 @@ class RestoreExistingInstanceRequestBody:
 
     openapi_types = {
         'source': 'RestoreExistingInstanceRequestBodySource',
-        'target': 'RestoreToExistingInstanceRequestBodyTarget'
+        'target': 'TargetInstanceRequest'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class RestoreExistingInstanceRequestBody:
         :param source: 
         :type source: :class:`huaweicloudsdkrds.v3.RestoreExistingInstanceRequestBodySource`
         :param target: 
-        :type target: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBodyTarget`
+        :type target: :class:`huaweicloudsdkrds.v3.TargetInstanceRequest`
         """
         
         
@@ -76,7 +76,7 @@ class RestoreExistingInstanceRequestBody:
 
 
         :return: The target of this RestoreExistingInstanceRequestBody.
-        :rtype: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBodyTarget`
+        :rtype: :class:`huaweicloudsdkrds.v3.TargetInstanceRequest`
         """
         return self._target
 
@@ -86,7 +86,7 @@ class RestoreExistingInstanceRequestBody:
 
 
         :param target: The target of this RestoreExistingInstanceRequestBody.
-        :type target: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBodyTarget`
+        :type target: :class:`huaweicloudsdkrds.v3.TargetInstanceRequest`
         """
         self._target = target
 

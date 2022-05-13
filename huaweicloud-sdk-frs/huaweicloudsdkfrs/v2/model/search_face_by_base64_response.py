@@ -33,7 +33,7 @@ class SearchFaceByBase64Response(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param faces: 查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/api-face/face_02_0019.html)。 调用失败时无此字段。
+        :param faces: [查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/api-face/face_02_0019.html)。 调用失败时无此字段。](tag:hc) [查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0019.html)。 调用失败时无此字段。](tag:hk)
         :type faces: list[:class:`huaweicloudsdkfrs.v2.SearchFace`]
         """
         
@@ -49,7 +49,7 @@ class SearchFaceByBase64Response(SdkResponse):
     def faces(self):
         """Gets the faces of this SearchFaceByBase64Response.
 
-        查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/api-face/face_02_0019.html)。 调用失败时无此字段。
+        [查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/api-face/face_02_0019.html)。 调用失败时无此字段。](tag:hc) [查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0019.html)。 调用失败时无此字段。](tag:hk)
 
         :return: The faces of this SearchFaceByBase64Response.
         :rtype: list[:class:`huaweicloudsdkfrs.v2.SearchFace`]
@@ -60,7 +60,7 @@ class SearchFaceByBase64Response(SdkResponse):
     def faces(self, faces):
         """Sets the faces of this SearchFaceByBase64Response.
 
-        查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/api-face/face_02_0019.html)。 调用失败时无此字段。
+        [查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/api-face/face_02_0019.html)。 调用失败时无此字段。](tag:hc) [查找的人脸集合，详见[SearchFace](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0019.html)。 调用失败时无此字段。](tag:hk)
 
         :param faces: The faces of this SearchFaceByBase64Response.
         :type faces: list[:class:`huaweicloudsdkfrs.v2.SearchFace`]

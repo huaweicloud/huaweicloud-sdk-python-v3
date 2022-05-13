@@ -71,6 +71,8 @@ from huaweicloudsdkcss.v1.model.delete_snapshot_response import DeleteSnapshotRe
 from huaweicloudsdkcss.v1.model.delete_template_req import DeleteTemplateReq
 from huaweicloudsdkcss.v1.model.delete_template_request import DeleteTemplateRequest
 from huaweicloudsdkcss.v1.model.delete_template_response import DeleteTemplateResponse
+from huaweicloudsdkcss.v1.model.download_cert_request import DownloadCertRequest
+from huaweicloudsdkcss.v1.model.download_cert_response import DownloadCertResponse
 from huaweicloudsdkcss.v1.model.esflavors_versions_flavors_resp import EsflavorsVersionsFlavorsResp
 from huaweicloudsdkcss.v1.model.esflavors_versions_resp import EsflavorsVersionsResp
 from huaweicloudsdkcss.v1.model.extend_cluster_grow_req import ExtendClusterGrowReq

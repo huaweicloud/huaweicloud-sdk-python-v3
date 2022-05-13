@@ -48,6 +48,254 @@ class GaussDBforopenGaussClient(Client):
 
         return ClientBuilder(clazz)
 
+    def allow_db_privileges(self, request):
+        """授权数据库帐号
+
+        在指定实例的数据库中, 设置帐号的权限。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for AllowDbPrivileges
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.AllowDbPrivilegesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.AllowDbPrivilegesResponse`
+        """
+        return self.allow_db_privileges_with_http_info(request)
+
+    def allow_db_privileges_with_http_info(self, request):
+        all_params = ['instance_id', 'grant_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db-privilege',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AllowDbPrivilegesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_database(self, request):
+        """创建数据库
+
+        在指定实例中创建数据库。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateDatabase
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDatabaseRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDatabaseResponse`
+        """
+        return self.create_database_with_http_info(request)
+
+    def create_database_with_http_info(self, request):
+        all_params = ['instance_id', 'create_database_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/database',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateDatabaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_database_schemas(self, request):
+        """创建数据库SCHEMA
+
+        在指定实例的数据库中, 创建数据库schema。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateDatabaseSchemas
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDatabaseSchemasRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDatabaseSchemasResponse`
+        """
+        return self.create_database_schemas_with_http_info(request)
+
+    def create_database_schemas_with_http_info(self, request):
+        all_params = ['instance_id', 'db_schema_req', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/schema',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateDatabaseSchemasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_db_user(self, request):
+        """创建数据库用户
+
+        在指定实例中创建数据库用户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateDbUser
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDbUserRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateDbUserResponse`
+        """
+        return self.create_db_user_with_http_info(request)
+
+    def create_db_user_with_http_info(self, request):
+        all_params = ['instance_id', 'create_db_user_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db-user',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateDbUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_instance(self, request):
         """创建数据库实例
 
@@ -108,6 +356,126 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_manual_backup(self, request):
+        """创建手动备份
+
+        创建手动备份。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateManualBackup
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateManualBackupRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateManualBackupResponse`
+        """
+        return self.create_manual_backup_with_http_info(request)
+
+    def create_manual_backup_with_http_info(self, request):
+        all_params = ['create_manual_backup_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/backups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateManualBackupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_restore_instance(self, request):
+        """恢复到新实例
+
+        根据备份恢复新实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateRestoreInstance
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateRestoreInstanceRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.CreateRestoreInstanceResponse`
+        """
+        return self.create_restore_instance_with_http_info(request)
+
+    def create_restore_instance_with_http_info(self, request):
+        all_params = ['create_instance_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateRestoreInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_instance(self, request):
         """删除实例
 
@@ -163,6 +531,138 @@ class GaussDBforopenGaussClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteInstanceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_manual_backup(self, request):
+        """删除手动备份
+
+        删除手动备份。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteManualBackup
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteManualBackupRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.DeleteManualBackupResponse`
+        """
+        return self.delete_manual_backup_with_http_info(request)
+
+    def delete_manual_backup_with_http_info(self, request):
+        all_params = ['backup_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'backup_id' in local_var_params:
+            path_params['backup_id'] = local_var_params['backup_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/backups/{backup_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteManualBackupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_backups(self, request):
+        """查询备份列表
+
+        获取备份列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListBackups
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListBackupsRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListBackupsResponse`
+        """
+        return self.list_backups_with_http_info(request)
+
+    def list_backups_with_http_info(self, request):
+        all_params = ['x_language', 'instance_id', 'backup_id', 'backup_type', 'offset', 'limit', 'begin_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+        if 'backup_id' in local_var_params:
+            query_params.append(('backup_id', local_var_params['backup_id']))
+        if 'backup_type' in local_var_params:
+            query_params.append(('backup_type', local_var_params['backup_type']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'begin_time' in local_var_params:
+            query_params.append(('begin_time', local_var_params['begin_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/backups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListBackupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -230,6 +730,136 @@ class GaussDBforopenGaussClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_database_schemas(self, request):
+        """查询数据库SCHEMA列表
+
+        查询指定实例的数据库SCHEMA列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListDatabaseSchemas
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatabaseSchemasRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatabaseSchemasResponse`
+        """
+        return self.list_database_schemas_with_http_info(request)
+
+    def list_database_schemas_with_http_info(self, request):
+        all_params = ['instance_id', 'db_name', 'x_language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'db_name' in local_var_params:
+            query_params.append(('db_name', local_var_params['db_name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/schemas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListDatabaseSchemasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_databases(self, request):
+        """查询数据库列表
+
+        查询指定实例中的数据库列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListDatabases
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatabasesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatabasesResponse`
+        """
+        return self.list_databases_with_http_info(request)
+
+    def list_databases_with_http_info(self, request):
+        all_params = ['instance_id', 'x_language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/databases',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListDatabasesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_datastores(self, request):
         """查询数据库引擎的版本
 
@@ -283,6 +913,70 @@ class GaussDBforopenGaussClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListDatastoresResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_db_users(self, request):
+        """查询数据库用户列表
+
+        在指定实例中查询数据库用户列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListDbUsers
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDbUsersRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDbUsersResponse`
+        """
+        return self.list_db_users_with_http_info(request)
+
+    def list_db_users_with_http_info(self, request):
+        all_params = ['instance_id', 'x_language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db-users',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListDbUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -428,6 +1122,69 @@ class GaussDBforopenGaussClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_restore_times(self, request):
+        """查询可恢复时间段
+
+        查询可恢复时间段。
+        如果您备份策略中的保存天数设置较长，建议您传入查询日期“date”。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListRestoreTimes
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListRestoreTimesRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListRestoreTimesResponse`
+        """
+        return self.list_restore_times_with_http_info(request)
+
+    def list_restore_times_with_http_info(self, request):
+        all_params = ['instance_id', 'date', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'date' in local_var_params:
+            query_params.append(('date', local_var_params['date']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/restore-time',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRestoreTimesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -736,6 +1493,128 @@ class GaussDBforopenGaussClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='SetBackupPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def set_db_user_pwd(self, request):
+        """重置数据库帐号密码
+
+        重置指定数据库帐号的密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SetDbUserPwd
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetDbUserPwdRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SetDbUserPwdResponse`
+        """
+        return self.set_db_user_pwd_with_http_info(request)
+
+    def set_db_user_pwd_with_http_info(self, request):
+        all_params = ['instance_id', 'db_user_pwd_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db-user/password',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetDbUserPwdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_backup_policy(self, request):
+        """查询自动备份策略
+
+        查询自动备份策略。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowBackupPolicy
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowBackupPolicyRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ShowBackupPolicyResponse`
+        """
+        return self.show_backup_policy_with_http_info(request)
+
+    def show_backup_policy_with_http_info(self, request):
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/backups/policy',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowBackupPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

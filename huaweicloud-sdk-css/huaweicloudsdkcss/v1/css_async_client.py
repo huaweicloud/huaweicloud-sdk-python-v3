@@ -700,6 +700,62 @@ class CssAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def download_cert_async(self, request):
+        """下载安全证书
+
+        该接口用于下载安全证书。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DownloadCert
+        :type request: :class:`huaweicloudsdkcss.v1.DownloadCertRequest`
+        :rtype: :class:`huaweicloudsdkcss.v1.DownloadCertResponse`
+        """
+        return self.download_cert_with_http_info(request)
+
+    def download_cert_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/cer/download',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DownloadCertResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_clusters_details_async(self, request):
         """查询集群列表
 

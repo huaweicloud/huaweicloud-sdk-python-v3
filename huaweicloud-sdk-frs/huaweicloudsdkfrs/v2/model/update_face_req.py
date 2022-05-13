@@ -37,7 +37,7 @@ class UpdateFaceReq:
 
         The model defined in huaweicloud sdk
 
-        :param external_fields: Json字符串不校验重复性，自定义字段的key值长度范围为[1,36]，string类型的value长度范围为[1,256]，具体参见[自定义字段](https://support.huaweicloud.com/api-face/face_02_0012.html)。 这里是待修改的参数，external_image_id和external_fields至少选一个。
+        :param external_fields: [Json字符串不校验重复性，自定义字段的key值长度范围为[1,36]，string类型的value长度范围为[1,256]，具体参见[自定义字段](https://support.huaweicloud.com/api-face/face_02_0012.html)。 这里是待修改的参数，external_image_id和external_fields至少选一个。](tag:hc) [Json字符串不校验重复性，自定义字段的key值长度范围为[1,36]，string类型的value长度范围为[1,256]，具体参见[自定义字段](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0012.html)。 这里是待修改的参数，external_image_id和external_fields至少选一个。](tag:hk)
         :type external_fields: object
         :param external_image_id: 用户指定的图片外部ID，与当前图像绑定。用户没提供，系统会生成一个。该ID长度范围为1～36位，可以包含字母、数字、中划线或者下划线，不包含其他的特殊字符。 这里是待修改的参数，external_image_id和external_fields至少选一个。
         :type external_image_id: str
@@ -62,7 +62,7 @@ class UpdateFaceReq:
     def external_fields(self):
         """Gets the external_fields of this UpdateFaceReq.
 
-        Json字符串不校验重复性，自定义字段的key值长度范围为[1,36]，string类型的value长度范围为[1,256]，具体参见[自定义字段](https://support.huaweicloud.com/api-face/face_02_0012.html)。 这里是待修改的参数，external_image_id和external_fields至少选一个。
+        [Json字符串不校验重复性，自定义字段的key值长度范围为[1,36]，string类型的value长度范围为[1,256]，具体参见[自定义字段](https://support.huaweicloud.com/api-face/face_02_0012.html)。 这里是待修改的参数，external_image_id和external_fields至少选一个。](tag:hc) [Json字符串不校验重复性，自定义字段的key值长度范围为[1,36]，string类型的value长度范围为[1,256]，具体参见[自定义字段](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0012.html)。 这里是待修改的参数，external_image_id和external_fields至少选一个。](tag:hk)
 
         :return: The external_fields of this UpdateFaceReq.
         :rtype: object
@@ -73,7 +73,7 @@ class UpdateFaceReq:
     def external_fields(self, external_fields):
         """Sets the external_fields of this UpdateFaceReq.
 
-        Json字符串不校验重复性，自定义字段的key值长度范围为[1,36]，string类型的value长度范围为[1,256]，具体参见[自定义字段](https://support.huaweicloud.com/api-face/face_02_0012.html)。 这里是待修改的参数，external_image_id和external_fields至少选一个。
+        [Json字符串不校验重复性，自定义字段的key值长度范围为[1,36]，string类型的value长度范围为[1,256]，具体参见[自定义字段](https://support.huaweicloud.com/api-face/face_02_0012.html)。 这里是待修改的参数，external_image_id和external_fields至少选一个。](tag:hc) [Json字符串不校验重复性，自定义字段的key值长度范围为[1,36]，string类型的value长度范围为[1,256]，具体参见[自定义字段](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0012.html)。 这里是待修改的参数，external_image_id和external_fields至少选一个。](tag:hk)
 
         :param external_fields: The external_fields of this UpdateFaceReq.
         :type external_fields: object

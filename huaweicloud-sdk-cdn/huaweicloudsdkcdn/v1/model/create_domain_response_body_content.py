@@ -71,7 +71,7 @@ class CreateDomainResponseBodyContent:
         :type id: str
         :param domain_name: 加速域名。
         :type domain_name: str
-        :param business_type: 域名业务类型：-web：网站加速；-download：文件下载加速；-video：点播加速；-wholeSite：全站加速。
+        :param business_type: 域名业务类型:-web:网站加速；-download:文件下载加速；-video:点播加速；-wholeSite:全站加速。
         :type business_type: str
         :param service_area: 域名服务范围，若为mainland_china，则表示服务范围为中国大陆；若为outside_mainland_china，则表示服务范围为中国大陆境外；若为global，则表示服务范围为全球。
         :type service_area: str
@@ -212,7 +212,7 @@ class CreateDomainResponseBodyContent:
     def business_type(self):
         """Gets the business_type of this CreateDomainResponseBodyContent.
 
-        域名业务类型：-web：网站加速；-download：文件下载加速；-video：点播加速；-wholeSite：全站加速。
+        域名业务类型:-web:网站加速；-download:文件下载加速；-video:点播加速；-wholeSite:全站加速。
 
         :return: The business_type of this CreateDomainResponseBodyContent.
         :rtype: str
@@ -223,7 +223,7 @@ class CreateDomainResponseBodyContent:
     def business_type(self, business_type):
         """Sets the business_type of this CreateDomainResponseBodyContent.
 
-        域名业务类型：-web：网站加速；-download：文件下载加速；-video：点播加速；-wholeSite：全站加速。
+        域名业务类型:-web:网站加速；-download:文件下载加速；-video:点播加速；-wholeSite:全站加速。
 
         :param business_type: The business_type of this CreateDomainResponseBodyContent.
         :type business_type: str

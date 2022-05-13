@@ -251,7 +251,7 @@ class GslClient(Client):
         return self.list_sim_cards_with_http_info(request)
 
     def list_sim_cards_with_http_info(self, request):
-        all_params = ['main_search_type', 'main_search_key', 'limit', 'offset', 'sim_status', 'device_status', 'sim_type', 'order', 'sort', 'msisdn', 'customer_attribute1', 'customer_attribute2', 'customer_attribute3', 'customer_attribute4', 'customer_attribute5', 'customer_attribute6', 'min_flow', 'max_flow', 'real_named', 'order_id', 'filter_downtime_period']
+        all_params = ['main_search_type', 'main_search_key', 'limit', 'offset', 'sim_status', 'device_status', 'sim_type', 'order', 'sort', 'msisdn', 'customer_attribute1', 'customer_attribute2', 'customer_attribute3', 'customer_attribute4', 'customer_attribute5', 'customer_attribute6', 'min_used_flow', 'max_used_flow', 'min_left_flow', 'max_left_flow', 'real_named', 'order_id', 'filter_downtime_period']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -294,10 +294,14 @@ class GslClient(Client):
             query_params.append(('customer_attribute5', local_var_params['customer_attribute5']))
         if 'customer_attribute6' in local_var_params:
             query_params.append(('customer_attribute6', local_var_params['customer_attribute6']))
-        if 'min_flow' in local_var_params:
-            query_params.append(('min_flow', local_var_params['min_flow']))
-        if 'max_flow' in local_var_params:
-            query_params.append(('max_flow', local_var_params['max_flow']))
+        if 'min_used_flow' in local_var_params:
+            query_params.append(('min_used_flow', local_var_params['min_used_flow']))
+        if 'max_used_flow' in local_var_params:
+            query_params.append(('max_used_flow', local_var_params['max_used_flow']))
+        if 'min_left_flow' in local_var_params:
+            query_params.append(('min_left_flow', local_var_params['min_left_flow']))
+        if 'max_left_flow' in local_var_params:
+            query_params.append(('max_left_flow', local_var_params['max_left_flow']))
         if 'real_named' in local_var_params:
             query_params.append(('real_named', local_var_params['real_named']))
         if 'order_id' in local_var_params:

@@ -4,7 +4,7 @@ from os import path
 from setuptools import setup, find_packages
 
 NAME = "huaweicloudsdkclouddeploy"
-VERSION = "3.0.87"
+VERSION = "3.0.88"
 AUTHOR = "HuaweiCloud SDK"
 AUTHOR_EMAIL = "hwcloudsdk@huawei.com"
 URL = "https://github.com/huaweicloud/huaweicloud-sdk-python-v3"

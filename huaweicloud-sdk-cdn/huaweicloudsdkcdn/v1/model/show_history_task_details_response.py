@@ -53,9 +53,9 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
 
         :param id: 任务id。
         :type id: str
-        :param task_type: 任务的类型， 其值可以为refresh或preheating。
+        :param task_type: 任务类型，REFRESH：刷新任务；PREHEATING：预热任务。
         :type task_type: str
-        :param status: 任务执行结果。task_done表示成功，task_inprocess表示处理中。
+        :param status: 任务执行结果,task_done:成功，task_inprocess:处理中。
         :type status: str
         :param urls: 本次提交的url列表。
         :type urls: list[:class:`huaweicloudsdkcdn.v1.UrlObject`]
@@ -69,7 +69,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
         :type failed: int
         :param total: 历史任务的url个数。
         :type total: int
-        :param file_type: 默认是文件file,file：文件,directory：目录。
+        :param file_type: 文件类型，file：文件；directory：目录，默认是文件file,
         :type file_type: str
         """
         
@@ -134,7 +134,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     def task_type(self):
         """Gets the task_type of this ShowHistoryTaskDetailsResponse.
 
-        任务的类型， 其值可以为refresh或preheating。
+        任务类型，REFRESH：刷新任务；PREHEATING：预热任务。
 
         :return: The task_type of this ShowHistoryTaskDetailsResponse.
         :rtype: str
@@ -145,7 +145,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     def task_type(self, task_type):
         """Sets the task_type of this ShowHistoryTaskDetailsResponse.
 
-        任务的类型， 其值可以为refresh或preheating。
+        任务类型，REFRESH：刷新任务；PREHEATING：预热任务。
 
         :param task_type: The task_type of this ShowHistoryTaskDetailsResponse.
         :type task_type: str
@@ -156,7 +156,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowHistoryTaskDetailsResponse.
 
-        任务执行结果。task_done表示成功，task_inprocess表示处理中。
+        任务执行结果,task_done:成功，task_inprocess:处理中。
 
         :return: The status of this ShowHistoryTaskDetailsResponse.
         :rtype: str
@@ -167,7 +167,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowHistoryTaskDetailsResponse.
 
-        任务执行结果。task_done表示成功，task_inprocess表示处理中。
+        任务执行结果,task_done:成功，task_inprocess:处理中。
 
         :param status: The status of this ShowHistoryTaskDetailsResponse.
         :type status: str
@@ -310,7 +310,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     def file_type(self):
         """Gets the file_type of this ShowHistoryTaskDetailsResponse.
 
-        默认是文件file,file：文件,directory：目录。
+        文件类型，file：文件；directory：目录，默认是文件file,
 
         :return: The file_type of this ShowHistoryTaskDetailsResponse.
         :rtype: str
@@ -321,7 +321,7 @@ class ShowHistoryTaskDetailsResponse(SdkResponse):
     def file_type(self, file_type):
         """Sets the file_type of this ShowHistoryTaskDetailsResponse.
 
-        默认是文件file,file：文件,directory：目录。
+        文件类型，file：文件；directory：目录，默认是文件file,
 
         :param file_type: The file_type of this ShowHistoryTaskDetailsResponse.
         :type file_type: str

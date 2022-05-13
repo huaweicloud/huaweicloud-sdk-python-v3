@@ -24,7 +24,7 @@ class TempContentInfo:
         'content_id': 'int',
         'content': 'list[Content]',
         'index': 'int',
-        'data': 'str',
+        'data': 'object',
         'data_type': 'int'
     }
 
@@ -48,7 +48,7 @@ class TempContentInfo:
         :param index: index
         :type index: int
         :param data: data
-        :type data: str
+        :type data: object
         :param data_type: data_type
         :type data_type: int
         """
@@ -146,7 +146,7 @@ class TempContentInfo:
         data
 
         :return: The data of this TempContentInfo.
-        :rtype: str
+        :rtype: object
         """
         return self._data
 
@@ -157,7 +157,7 @@ class TempContentInfo:
         data
 
         :param data: The data of this TempContentInfo.
-        :type data: str
+        :type data: object
         """
         self._data = data
 

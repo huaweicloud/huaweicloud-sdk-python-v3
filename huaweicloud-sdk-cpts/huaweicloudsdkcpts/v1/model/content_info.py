@@ -22,7 +22,7 @@ class ContentInfo:
 
     openapi_types = {
         'body_type': 'int',
-        'bodys': 'str',
+        'bodys': 'list[object]',
         'check_end_length': 'str',
         'check_end_str': 'str',
         'check_end_type': 'str',
@@ -64,7 +64,7 @@ class ContentInfo:
         :param body_type: body_type
         :type body_type: int
         :param bodys: bodys
-        :type bodys: str
+        :type bodys: list[object]
         :param check_end_length: check_end_length
         :type check_end_length: str
         :param check_end_str: check_end_str
@@ -172,7 +172,7 @@ class ContentInfo:
         bodys
 
         :return: The bodys of this ContentInfo.
-        :rtype: str
+        :rtype: list[object]
         """
         return self._bodys
 
@@ -183,7 +183,7 @@ class ContentInfo:
         bodys
 
         :param bodys: The bodys of this ContentInfo.
-        :type bodys: str
+        :type bodys: list[object]
         """
         self._bodys = bodys
 

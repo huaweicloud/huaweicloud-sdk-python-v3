@@ -41,7 +41,7 @@ class UrlAuth:
 
         The model defined in huaweicloud sdk
 
-        :param status: A/B/C类防盗链开关（on：开启，off：关闭）。
+        :param status: A/B/C类防盗链开关（\&quot;off\&quot;/\&quot;on\&quot;）。
         :type status: str
         :param type: 鉴权方式 type_a：鉴权方式A type_b：鉴权方式B type_c1：鉴权方式C1 type_c2：鉴权方式C2
         :type type: str
@@ -76,7 +76,7 @@ class UrlAuth:
     def status(self):
         """Gets the status of this UrlAuth.
 
-        A/B/C类防盗链开关（on：开启，off：关闭）。
+        A/B/C类防盗链开关（\"off\"/\"on\"）。
 
         :return: The status of this UrlAuth.
         :rtype: str
@@ -87,7 +87,7 @@ class UrlAuth:
     def status(self, status):
         """Sets the status of this UrlAuth.
 
-        A/B/C类防盗链开关（on：开启，off：关闭）。
+        A/B/C类防盗链开关（\"off\"/\"on\"）。
 
         :param status: The status of this UrlAuth.
         :type status: str

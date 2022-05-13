@@ -768,6 +768,64 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def detect_face_by_base64_intl_async(self, request):
+        """人脸检测
+
+        人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DetectFaceByBase64Intl
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64IntlRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64IntlResponse`
+        """
+        return self.detect_face_by_base64_intl_with_http_info(request)
+
+    def detect_face_by_base64_intl_with_http_info(self, request):
+        all_params = ['face_detect_base64_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/face-detect',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DetectFaceByBase64IntlResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def detect_face_by_file_async(self, request):
         """人脸检测
 
@@ -825,6 +883,66 @@ class FrsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DetectFaceByFileResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def detect_face_by_file_intl_async(self, request):
+        """人脸检测
+
+        人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DetectFaceByFileIntl
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileIntlRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileIntlResponse`
+        """
+        return self.detect_face_by_file_intl_with_http_info(request)
+
+    def detect_face_by_file_intl_with_http_info(self, request):
+        all_params = ['image_file']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'image_file' in local_var_params:
+            form_params['image_file'] = local_var_params['image_file']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/face-detect',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DetectFaceByFileIntlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -888,6 +1006,64 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def detect_face_by_url_intl_async(self, request):
+        """人脸检测
+
+        人脸检测是对输入图片进行人脸检测和分析，输出人脸在图像中的位置、人脸关键点位置和人脸关键属性。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DetectFaceByUrlIntl
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlIntlRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlIntlResponse`
+        """
+        return self.detect_face_by_url_intl_with_http_info(request)
+
+    def detect_face_by_url_intl_with_http_info(self, request):
+        all_params = ['face_detect_url_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/face-detect',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DetectFaceByUrlIntlResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def detect_live_by_base64_async(self, request):
         """动作活体检测
 
@@ -941,6 +1117,64 @@ class FrsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DetectLiveByBase64Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def detect_live_by_base64_intl_async(self, request):
+        """动作活体检测
+
+        动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DetectLiveByBase64Intl
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64IntlRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64IntlResponse`
+        """
+        return self.detect_live_by_base64_intl_with_http_info(request)
+
+    def detect_live_by_base64_intl_with_http_info(self, request):
+        all_params = ['live_detect_base64_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/live-detect',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DetectLiveByBase64IntlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1010,6 +1244,70 @@ class FrsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def detect_live_by_file_intl_async(self, request):
+        """动作活体检测
+
+        动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DetectLiveByFileIntl
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileIntlRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileIntlResponse`
+        """
+        return self.detect_live_by_file_intl_with_http_info(request)
+
+    def detect_live_by_file_intl_with_http_info(self, request):
+        all_params = ['video_file', 'actions', 'action_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'video_file' in local_var_params:
+            form_params['video_file'] = local_var_params['video_file']
+        if 'actions' in local_var_params:
+            form_params['actions'] = local_var_params['actions']
+        if 'action_time' in local_var_params:
+            form_params['action_time'] = local_var_params['action_time']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/live-detect',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DetectLiveByFileIntlResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def detect_live_by_url_async(self, request):
         """动作活体检测
 
@@ -1063,6 +1361,64 @@ class FrsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DetectLiveByUrlResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def detect_live_by_url_intl_async(self, request):
+        """动作活体检测
+
+        动作活体检测是通过判断视频中的人物动作与传入动作列表是否一致来识别视频中人物是否为活体。如果有多张人脸出现，则选取最大的人脸进行判定。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DetectLiveByUrlIntl
+        :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlIntlRequest`
+        :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlIntlResponse`
+        """
+        return self.detect_live_by_url_intl_with_http_info(request)
+
+    def detect_live_by_url_intl_with_http_info(self, request):
+        all_params = ['live_detect_url_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/live-detect',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DetectLiveByUrlIntlResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

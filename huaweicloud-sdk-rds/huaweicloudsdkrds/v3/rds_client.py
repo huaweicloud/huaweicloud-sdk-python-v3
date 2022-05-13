@@ -2544,7 +2544,7 @@ class RdsClient(Client):
         return self.restore_exist_instance_with_http_info(request)
 
     def restore_exist_instance_with_http_info(self, request):
-        all_params = ['restore_to_existing_instance_request', 'x_language']
+        all_params = ['restore_existing_instance_request_body', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

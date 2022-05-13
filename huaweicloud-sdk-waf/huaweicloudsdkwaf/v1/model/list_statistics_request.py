@@ -47,7 +47,7 @@ class ListStatisticsRequest:
         :type _from: int
         :param to: 结束时间(13位时间戳),需要和from同时使用
         :type to: int
-        :param hosts: 要查询域名列表
+        :param hosts: 域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
         :type hosts: str
         :param instances: 要查询实例列表
         :type instances: str
@@ -141,7 +141,7 @@ class ListStatisticsRequest:
     def hosts(self):
         """Gets the hosts of this ListStatisticsRequest.
 
-        要查询域名列表
+        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :return: The hosts of this ListStatisticsRequest.
         :rtype: str
@@ -152,7 +152,7 @@ class ListStatisticsRequest:
     def hosts(self, hosts):
         """Sets the hosts of this ListStatisticsRequest.
 
-        要查询域名列表
+        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :param hosts: The hosts of this ListStatisticsRequest.
         :type hosts: str

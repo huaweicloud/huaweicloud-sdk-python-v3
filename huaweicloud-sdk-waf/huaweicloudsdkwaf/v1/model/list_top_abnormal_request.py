@@ -55,7 +55,7 @@ class ListTopAbnormalRequest:
         :type top: int
         :param code: 状态码
         :type code: int
-        :param hosts: 要查询域名列表（通过ListHost接口查询）
+        :param hosts: 域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
         :type hosts: str
         :param instances: 要查询实例列表（仅独享模式涉及）
         :type instances: str
@@ -199,7 +199,7 @@ class ListTopAbnormalRequest:
     def hosts(self):
         """Gets the hosts of this ListTopAbnormalRequest.
 
-        要查询域名列表（通过ListHost接口查询）
+        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :return: The hosts of this ListTopAbnormalRequest.
         :rtype: str
@@ -210,7 +210,7 @@ class ListTopAbnormalRequest:
     def hosts(self, hosts):
         """Sets the hosts of this ListTopAbnormalRequest.
 
-        要查询域名列表（通过ListHost接口查询）
+        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :param hosts: The hosts of this ListTopAbnormalRequest.
         :type hosts: str

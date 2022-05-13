@@ -37,8 +37,10 @@ class ListSimCardsRequest:
         'customer_attribute4': 'str',
         'customer_attribute5': 'str',
         'customer_attribute6': 'str',
-        'min_flow': 'int',
-        'max_flow': 'int',
+        'min_used_flow': 'int',
+        'max_used_flow': 'int',
+        'min_left_flow': 'int',
+        'max_left_flow': 'int',
         'real_named': 'bool',
         'order_id': 'int',
         'filter_downtime_period': 'bool'
@@ -61,14 +63,16 @@ class ListSimCardsRequest:
         'customer_attribute4': 'customer_attribute4',
         'customer_attribute5': 'customer_attribute5',
         'customer_attribute6': 'customer_attribute6',
-        'min_flow': 'min_flow',
-        'max_flow': 'max_flow',
+        'min_used_flow': 'min_used_flow',
+        'max_used_flow': 'max_used_flow',
+        'min_left_flow': 'min_left_flow',
+        'max_left_flow': 'max_left_flow',
         'real_named': 'real_named',
         'order_id': 'order_id',
         'filter_downtime_period': 'filter_downtime_period'
     }
 
-    def __init__(self, main_search_type=None, main_search_key=None, limit=None, offset=None, sim_status=None, device_status=None, sim_type=None, order=None, sort=None, msisdn=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, min_flow=None, max_flow=None, real_named=None, order_id=None, filter_downtime_period=None):
+    def __init__(self, main_search_type=None, main_search_key=None, limit=None, offset=None, sim_status=None, device_status=None, sim_type=None, order=None, sort=None, msisdn=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None, min_used_flow=None, max_used_flow=None, min_left_flow=None, max_left_flow=None, real_named=None, order_id=None, filter_downtime_period=None):
         """ListSimCardsRequest
 
         The model defined in huaweicloud sdk
@@ -105,10 +109,14 @@ class ListSimCardsRequest:
         :type customer_attribute5: str
         :param customer_attribute6: 自定义属性六
         :type customer_attribute6: str
-        :param min_flow: 最小使用流量(MB)
-        :type min_flow: int
-        :param max_flow: 最大使用流量(MB)
-        :type max_flow: int
+        :param min_used_flow: 最小使用流量(MB)
+        :type min_used_flow: int
+        :param max_used_flow: 最大使用流量(MB)
+        :type max_used_flow: int
+        :param min_left_flow: 最小剩余流量(MB)
+        :type min_left_flow: int
+        :param max_left_flow: 最大剩余流量(MB)
+        :type max_left_flow: int
         :param real_named: 是否已实名认证: true表示是，false表示否，系统SIM卡实名认证状态非实时。
         :type real_named: bool
         :param order_id: 订单号
@@ -135,8 +143,10 @@ class ListSimCardsRequest:
         self._customer_attribute4 = None
         self._customer_attribute5 = None
         self._customer_attribute6 = None
-        self._min_flow = None
-        self._max_flow = None
+        self._min_used_flow = None
+        self._max_used_flow = None
+        self._min_left_flow = None
+        self._max_left_flow = None
         self._real_named = None
         self._order_id = None
         self._filter_downtime_period = None
@@ -174,10 +184,14 @@ class ListSimCardsRequest:
             self.customer_attribute5 = customer_attribute5
         if customer_attribute6 is not None:
             self.customer_attribute6 = customer_attribute6
-        if min_flow is not None:
-            self.min_flow = min_flow
-        if max_flow is not None:
-            self.max_flow = max_flow
+        if min_used_flow is not None:
+            self.min_used_flow = min_used_flow
+        if max_used_flow is not None:
+            self.max_used_flow = max_used_flow
+        if min_left_flow is not None:
+            self.min_left_flow = min_left_flow
+        if max_left_flow is not None:
+            self.max_left_flow = max_left_flow
         if real_named is not None:
             self.real_named = real_named
         if order_id is not None:
@@ -538,48 +552,92 @@ class ListSimCardsRequest:
         self._customer_attribute6 = customer_attribute6
 
     @property
-    def min_flow(self):
-        """Gets the min_flow of this ListSimCardsRequest.
+    def min_used_flow(self):
+        """Gets the min_used_flow of this ListSimCardsRequest.
 
         最小使用流量(MB)
 
-        :return: The min_flow of this ListSimCardsRequest.
+        :return: The min_used_flow of this ListSimCardsRequest.
         :rtype: int
         """
-        return self._min_flow
+        return self._min_used_flow
 
-    @min_flow.setter
-    def min_flow(self, min_flow):
-        """Sets the min_flow of this ListSimCardsRequest.
+    @min_used_flow.setter
+    def min_used_flow(self, min_used_flow):
+        """Sets the min_used_flow of this ListSimCardsRequest.
 
         最小使用流量(MB)
 
-        :param min_flow: The min_flow of this ListSimCardsRequest.
-        :type min_flow: int
+        :param min_used_flow: The min_used_flow of this ListSimCardsRequest.
+        :type min_used_flow: int
         """
-        self._min_flow = min_flow
+        self._min_used_flow = min_used_flow
 
     @property
-    def max_flow(self):
-        """Gets the max_flow of this ListSimCardsRequest.
+    def max_used_flow(self):
+        """Gets the max_used_flow of this ListSimCardsRequest.
 
         最大使用流量(MB)
 
-        :return: The max_flow of this ListSimCardsRequest.
+        :return: The max_used_flow of this ListSimCardsRequest.
         :rtype: int
         """
-        return self._max_flow
+        return self._max_used_flow
 
-    @max_flow.setter
-    def max_flow(self, max_flow):
-        """Sets the max_flow of this ListSimCardsRequest.
+    @max_used_flow.setter
+    def max_used_flow(self, max_used_flow):
+        """Sets the max_used_flow of this ListSimCardsRequest.
 
         最大使用流量(MB)
 
-        :param max_flow: The max_flow of this ListSimCardsRequest.
-        :type max_flow: int
+        :param max_used_flow: The max_used_flow of this ListSimCardsRequest.
+        :type max_used_flow: int
         """
-        self._max_flow = max_flow
+        self._max_used_flow = max_used_flow
+
+    @property
+    def min_left_flow(self):
+        """Gets the min_left_flow of this ListSimCardsRequest.
+
+        最小剩余流量(MB)
+
+        :return: The min_left_flow of this ListSimCardsRequest.
+        :rtype: int
+        """
+        return self._min_left_flow
+
+    @min_left_flow.setter
+    def min_left_flow(self, min_left_flow):
+        """Sets the min_left_flow of this ListSimCardsRequest.
+
+        最小剩余流量(MB)
+
+        :param min_left_flow: The min_left_flow of this ListSimCardsRequest.
+        :type min_left_flow: int
+        """
+        self._min_left_flow = min_left_flow
+
+    @property
+    def max_left_flow(self):
+        """Gets the max_left_flow of this ListSimCardsRequest.
+
+        最大剩余流量(MB)
+
+        :return: The max_left_flow of this ListSimCardsRequest.
+        :rtype: int
+        """
+        return self._max_left_flow
+
+    @max_left_flow.setter
+    def max_left_flow(self, max_left_flow):
+        """Sets the max_left_flow of this ListSimCardsRequest.
+
+        最大剩余流量(MB)
+
+        :param max_left_flow: The max_left_flow of this ListSimCardsRequest.
+        :type max_left_flow: int
+        """
+        self._max_left_flow = max_left_flow
 
     @property
     def real_named(self):

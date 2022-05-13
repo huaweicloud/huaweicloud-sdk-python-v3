@@ -47,9 +47,9 @@ class ConfigsGetBody:
 
         The model defined in huaweicloud sdk
 
-        :param origin_request_header: 回源请求头配置。
+        :param origin_request_header: 回源请求头配置
         :type origin_request_header: list[:class:`huaweicloudsdkcdn.v1.OriginRequestHeader`]
-        :param http_response_header: http header配置。
+        :param http_response_header: http header配置
         :type http_response_header: list[:class:`huaweicloudsdkcdn.v1.HttpResponseHeader`]
         :param url_auth: 
         :type url_auth: :class:`huaweicloudsdkcdn.v1.UrlAuthGetBody`
@@ -98,7 +98,7 @@ class ConfigsGetBody:
     def origin_request_header(self):
         """Gets the origin_request_header of this ConfigsGetBody.
 
-        回源请求头配置。
+        回源请求头配置
 
         :return: The origin_request_header of this ConfigsGetBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.OriginRequestHeader`]
@@ -109,7 +109,7 @@ class ConfigsGetBody:
     def origin_request_header(self, origin_request_header):
         """Sets the origin_request_header of this ConfigsGetBody.
 
-        回源请求头配置。
+        回源请求头配置
 
         :param origin_request_header: The origin_request_header of this ConfigsGetBody.
         :type origin_request_header: list[:class:`huaweicloudsdkcdn.v1.OriginRequestHeader`]
@@ -120,7 +120,7 @@ class ConfigsGetBody:
     def http_response_header(self):
         """Gets the http_response_header of this ConfigsGetBody.
 
-        http header配置。
+        http header配置
 
         :return: The http_response_header of this ConfigsGetBody.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.HttpResponseHeader`]
@@ -131,7 +131,7 @@ class ConfigsGetBody:
     def http_response_header(self, http_response_header):
         """Sets the http_response_header of this ConfigsGetBody.
 
-        http header配置。
+        http header配置
 
         :param http_response_header: The http_response_header of this ConfigsGetBody.
         :type http_response_header: list[:class:`huaweicloudsdkcdn.v1.HttpResponseHeader`]

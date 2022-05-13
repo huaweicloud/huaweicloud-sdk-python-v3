@@ -6145,6 +6145,91 @@ class IamClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_domain_role_assignments(self, request):
+        """查询指定账号中的授权记录
+
+        该接口用于查询指定账号中的授权记录。
+        该接口可以使用全局区域的Endpoint和其他区域的Endpoint调用。IAM的Endpoint请参见：[地区和终端节点](https://developer.huaweicloud.com/endpoint?IAM)。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowDomainRoleAssignments
+        :type request: :class:`huaweicloudsdkiam.v3.ShowDomainRoleAssignmentsRequest`
+        :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainRoleAssignmentsResponse`
+        """
+        return self.show_domain_role_assignments_with_http_info(request)
+
+    def show_domain_role_assignments_with_http_info(self, request):
+        all_params = ['domain_id', 'role_id', 'subject', 'subject_user_id', 'subject_group_id', 'subject_agency_id', 'scope', 'scope_project_id', 'scope_domain_id', 'scope_enterprise_projects_id', 'is_inherited', 'include_group', 'page', 'per_page']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'domain_id' in local_var_params:
+            query_params.append(('domain_id', local_var_params['domain_id']))
+        if 'role_id' in local_var_params:
+            query_params.append(('role_id', local_var_params['role_id']))
+        if 'subject' in local_var_params:
+            query_params.append(('subject', local_var_params['subject']))
+        if 'subject_user_id' in local_var_params:
+            query_params.append(('subject.user_id', local_var_params['subject_user_id']))
+        if 'subject_group_id' in local_var_params:
+            query_params.append(('subject.group_id', local_var_params['subject_group_id']))
+        if 'subject_agency_id' in local_var_params:
+            query_params.append(('subject.agency_id', local_var_params['subject_agency_id']))
+        if 'scope' in local_var_params:
+            query_params.append(('scope', local_var_params['scope']))
+        if 'scope_project_id' in local_var_params:
+            query_params.append(('scope.project_id', local_var_params['scope_project_id']))
+        if 'scope_domain_id' in local_var_params:
+            query_params.append(('scope.domain_id', local_var_params['scope_domain_id']))
+        if 'scope_enterprise_projects_id' in local_var_params:
+            query_params.append(('scope.enterprise_projects_id', local_var_params['scope_enterprise_projects_id']))
+        if 'is_inherited' in local_var_params:
+            query_params.append(('is_inherited', local_var_params['is_inherited']))
+        if 'include_group' in local_var_params:
+            query_params.append(('include_group', local_var_params['include_group']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'per_page' in local_var_params:
+            query_params.append(('per_page', local_var_params['per_page']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3.0/OS-PERMISSION/role-assignments',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDomainRoleAssignmentsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_metadata(self, request):
         """查询Metadata文件
 

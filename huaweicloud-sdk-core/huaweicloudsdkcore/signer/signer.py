@@ -47,7 +47,8 @@ class Signer(object):
         self._sk = credentials.sk
 
     def sign(self, request):
-        request.body = six.ensure_binary(request.body)
+        if isinstance(request.body, six.text_type):
+            request.body = six.ensure_binary(request.body)
 
         t = self.process_header_time(request)
         self.process_header_host(request)

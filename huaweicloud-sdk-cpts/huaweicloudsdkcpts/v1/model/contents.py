@@ -25,7 +25,7 @@ class Contents:
         'content': 'list[Content]',
         'index': 'int',
         'selected_temp_name': 'str',
-        'data': 'str',
+        'data': 'object',
         'data_type': 'int'
     }
 
@@ -52,7 +52,7 @@ class Contents:
         :param selected_temp_name: selected_temp_name
         :type selected_temp_name: str
         :param data: data
-        :type data: str
+        :type data: object
         :param data_type: data_type
         :type data_type: int
         """
@@ -175,7 +175,7 @@ class Contents:
         data
 
         :return: The data of this Contents.
-        :rtype: str
+        :rtype: object
         """
         return self._data
 
@@ -186,7 +186,7 @@ class Contents:
         data
 
         :param data: The data of this Contents.
-        :type data: str
+        :type data: object
         """
         self._data = data
 

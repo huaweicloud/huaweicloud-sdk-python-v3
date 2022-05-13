@@ -49,7 +49,7 @@ class ListBandwidthTimelineRequest:
         :type _from: int
         :param to: 结束时间（13位毫秒时间戳），需要和from同时使用
         :type to: int
-        :param hosts: 要查询域名列表（通过ListHost接口查询）
+        :param hosts: 域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
         :type hosts: str
         :param instances: 要查询实例列表（仅实例化模式涉及）
         :type instances: str
@@ -148,7 +148,7 @@ class ListBandwidthTimelineRequest:
     def hosts(self):
         """Gets the hosts of this ListBandwidthTimelineRequest.
 
-        要查询域名列表（通过ListHost接口查询）
+        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :return: The hosts of this ListBandwidthTimelineRequest.
         :rtype: str
@@ -159,7 +159,7 @@ class ListBandwidthTimelineRequest:
     def hosts(self, hosts):
         """Sets the hosts of this ListBandwidthTimelineRequest.
 
-        要查询域名列表（通过ListHost接口查询）
+        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :param hosts: The hosts of this ListBandwidthTimelineRequest.
         :type hosts: str

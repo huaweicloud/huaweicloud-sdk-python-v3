@@ -27,7 +27,8 @@ class ImageDetectionReq:
         'categories': 'list[str]',
         'ad_glossaries': 'list[str]',
         'ad_categories': 'list[str]',
-        'threshold': 'float'
+        'threshold': 'float',
+        'show_ocr_text': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ImageDetectionReq:
         'categories': 'categories',
         'ad_glossaries': 'ad_glossaries',
         'ad_categories': 'ad_categories',
-        'threshold': 'threshold'
+        'threshold': 'threshold',
+        'show_ocr_text': 'show_ocr_text'
     }
 
-    def __init__(self, url=None, image=None, moderation_rule=None, categories=None, ad_glossaries=None, ad_categories=None, threshold=None):
+    def __init__(self, url=None, image=None, moderation_rule=None, categories=None, ad_glossaries=None, ad_categories=None, threshold=None, show_ocr_text=None):
         """ImageDetectionReq
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ImageDetectionReq:
         :type ad_categories: list[str]
         :param threshold: - 结果过滤门限，只有置信度不低于此门限的结果才会呈现在detail的列表中，取值范围 0-1，当未设置此值时各个检测场景会使用各自的默认值。  - politics检测场景的默认值为0.95。  - terrorism检测场景的默认值为0。  - ad检测场景的默认值为0。  - 无特殊需求直接不传此参数或像示例中一样值设为空字符串即可。  &gt; - 如果检测场景中的最高置信度也未达到threshold，则结果列表为空；反之threshold过小，则会使结果列表中内容过多。 &gt; - threshold参数不支持porn场景筛选。 &gt; -  threshold参数不会影响响应中的suggestion。 
         :type threshold: float
+        :param show_ocr_text: 是否返回ocr识别结果，默认为false。
+        :type show_ocr_text: bool
         """
         
         
@@ -70,6 +74,7 @@ class ImageDetectionReq:
         self._ad_glossaries = None
         self._ad_categories = None
         self._threshold = None
+        self._show_ocr_text = None
         self.discriminator = None
 
         if url is not None:
@@ -86,6 +91,8 @@ class ImageDetectionReq:
             self.ad_categories = ad_categories
         if threshold is not None:
             self.threshold = threshold
+        if show_ocr_text is not None:
+            self.show_ocr_text = show_ocr_text
 
     @property
     def url(self):
@@ -240,6 +247,28 @@ class ImageDetectionReq:
         :type threshold: float
         """
         self._threshold = threshold
+
+    @property
+    def show_ocr_text(self):
+        """Gets the show_ocr_text of this ImageDetectionReq.
+
+        是否返回ocr识别结果，默认为false。
+
+        :return: The show_ocr_text of this ImageDetectionReq.
+        :rtype: bool
+        """
+        return self._show_ocr_text
+
+    @show_ocr_text.setter
+    def show_ocr_text(self, show_ocr_text):
+        """Sets the show_ocr_text of this ImageDetectionReq.
+
+        是否返回ocr识别结果，默认为false。
+
+        :param show_ocr_text: The show_ocr_text of this ImageDetectionReq.
+        :type show_ocr_text: bool
+        """
+        self._show_ocr_text = show_ocr_text
 
     def to_dict(self):
         """Returns the model properties as a dict"""

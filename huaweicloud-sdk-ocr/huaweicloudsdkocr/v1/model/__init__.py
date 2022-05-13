@@ -35,6 +35,8 @@ from huaweicloudsdkocr.v1.model.general_text_words_block_list import GeneralText
 from huaweicloudsdkocr.v1.model.handwriting_request_body import HandwritingRequestBody
 from huaweicloudsdkocr.v1.model.handwriting_result import HandwritingResult
 from huaweicloudsdkocr.v1.model.handwriting_words_block_list import HandwritingWordsBlockList
+from huaweicloudsdkocr.v1.model.health_code_request_body import HealthCodeRequestBody
+from huaweicloudsdkocr.v1.model.health_code_result import HealthCodeResult
 from huaweicloudsdkocr.v1.model.id_card_request_body import IdCardRequestBody
 from huaweicloudsdkocr.v1.model.id_card_result import IdCardResult
 from huaweicloudsdkocr.v1.model.idcard_verification_result import IdcardVerificationResult
@@ -87,6 +89,8 @@ from huaweicloudsdkocr.v1.model.recognize_general_text_request import RecognizeG
 from huaweicloudsdkocr.v1.model.recognize_general_text_response import RecognizeGeneralTextResponse
 from huaweicloudsdkocr.v1.model.recognize_handwriting_request import RecognizeHandwritingRequest
 from huaweicloudsdkocr.v1.model.recognize_handwriting_response import RecognizeHandwritingResponse
+from huaweicloudsdkocr.v1.model.recognize_health_code_request import RecognizeHealthCodeRequest
+from huaweicloudsdkocr.v1.model.recognize_health_code_response import RecognizeHealthCodeResponse
 from huaweicloudsdkocr.v1.model.recognize_id_card_request import RecognizeIdCardRequest
 from huaweicloudsdkocr.v1.model.recognize_id_card_response import RecognizeIdCardResponse
 from huaweicloudsdkocr.v1.model.recognize_insurance_policy_request import RecognizeInsurancePolicyRequest

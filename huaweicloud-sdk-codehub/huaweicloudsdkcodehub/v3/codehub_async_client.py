@@ -976,6 +976,128 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def add_protect_branch_v2_async(self, request):
+        """新建保护分支
+
+        新建保护分支
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for AddProtectBranchV2
+        :type request: :class:`huaweicloudsdkcodehub.v3.AddProtectBranchV2Request`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.AddProtectBranchV2Response`
+        """
+        return self.add_protect_branch_v2_with_http_info(request)
+
+    def add_protect_branch_v2_with_http_info(self, request):
+        all_params = ['repository_id', 'branch_name', 'add_protect_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'branch_name' in local_var_params:
+            path_params['branch_name'] = local_var_params['branch_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/repositories/{repository_id}/branch/{branch_name}/protect',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddProtectBranchV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def add_tag_v2_async(self, request):
+        """新建标签
+
+        新建标签
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for AddTagV2
+        :type request: :class:`huaweicloudsdkcodehub.v3.AddTagV2Request`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.AddTagV2Response`
+        """
+        return self.add_tag_v2_with_http_info(request)
+
+    def add_tag_v2_with_http_info(self, request):
+        all_params = ['repository_id', 'add_tags_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/repositories/{repository_id}/tags',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddTagV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_repository_async(self, request):
         """创建仓库
 

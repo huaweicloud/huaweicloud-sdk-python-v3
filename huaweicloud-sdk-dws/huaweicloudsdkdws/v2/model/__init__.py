@@ -33,6 +33,7 @@ from huaweicloudsdkdws.v2.model.list_snapshots_request import ListSnapshotsReque
 from huaweicloudsdkdws.v2.model.list_snapshots_response import ListSnapshotsResponse
 from huaweicloudsdkdws.v2.model.maintain_window import MaintainWindow
 from huaweicloudsdkdws.v2.model.node_types import NodeTypes
+from huaweicloudsdkdws.v2.model.nodes import Nodes
 from huaweicloudsdkdws.v2.model.parameter_group import ParameterGroup
 from huaweicloudsdkdws.v2.model.public_endpoints import PublicEndpoints
 from huaweicloudsdkdws.v2.model.public_ip import PublicIp
