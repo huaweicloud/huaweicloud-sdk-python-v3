@@ -151,7 +151,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         :type is_protected: bool
         :param group_id: 作业执行组ID。
         :type group_id: str
-        :param jar_path: 执行程序Jar包或sql文件地址，需要满足如下要求：  - 最多为1023字符，不能包含;|&amp;&gt;&lt;&#39;$特殊字符，且不可为空或全空格。  - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
+        :param jar_path: 执行程序Jar包或sql文件地址，需要满足如下要求：   - 最多为1023字符，不能包含;|&amp;&gt;&lt;&#39;$特殊字符，且不可为空或全空格。   - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
         :type jar_path: str
         :param input: 数据输入地址，必须以“/”或“s3a://”开头。请配置为正确的OBS路径，OBS路径不支持KMS加密的文件或程序。  最多为1023字符，不能包含;|&amp;&gt;&#39;&lt;$特殊字符，可为空。
         :type input: str
@@ -717,7 +717,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
     def jar_path(self):
         """Gets the jar_path of this CreateAndExecuteJobResponse.
 
-        执行程序Jar包或sql文件地址，需要满足如下要求：  - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。  - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
+        执行程序Jar包或sql文件地址，需要满足如下要求：   - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。   - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
 
         :return: The jar_path of this CreateAndExecuteJobResponse.
         :rtype: str
@@ -728,7 +728,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
     def jar_path(self, jar_path):
         """Sets the jar_path of this CreateAndExecuteJobResponse.
 
-        执行程序Jar包或sql文件地址，需要满足如下要求：  - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。  - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
+        执行程序Jar包或sql文件地址，需要满足如下要求：   - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。   - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
 
         :param jar_path: The jar_path of this CreateAndExecuteJobResponse.
         :type jar_path: str

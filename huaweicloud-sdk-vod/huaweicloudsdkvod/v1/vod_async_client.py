@@ -579,7 +579,7 @@ class VodAsyncClient(Client):
     def create_extract_audio_task_async(self, request):
         """音频提取
 
-        用于从已有视频文件中提取音频。
+        本接口为异步接口，创建音频提取任务下发成功后会返回asset_id和提取的audio_asset_id，但此时音频提取任务并没有立即完成，可通过消息订阅界面配置的音频提取完成事件来获取音频提取任务完成与否。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -637,7 +637,7 @@ class VodAsyncClient(Client):
     def create_preheating_asset_async(self, request):
         """CDN预热
 
-        媒资发布后，可通过指定媒资ID或URL向CDN预热。用户初次请求时，将由CDN节点提供请求媒资，加快用户下载缓存时间，提高用户体验。
+        媒资发布后，可通过指定媒资ID或URL向CDN预热。用户初次请求时，将由CDN节点提供请求媒资，加快用户下载缓存时间，提高用户体验。单租户每天最多预热1000个。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

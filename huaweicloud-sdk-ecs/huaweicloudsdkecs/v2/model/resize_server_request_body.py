@@ -21,28 +21,35 @@ class ResizeServerRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'resize': 'ResizePrePaidServerOption'
+        'resize': 'ResizePrePaidServerOption',
+        'dry_run': 'bool'
     }
 
     attribute_map = {
-        'resize': 'resize'
+        'resize': 'resize',
+        'dry_run': 'dry_run'
     }
 
-    def __init__(self, resize=None):
+    def __init__(self, resize=None, dry_run=None):
         """ResizeServerRequestBody
 
         The model defined in huaweicloud sdk
 
         :param resize: 
         :type resize: :class:`huaweicloudsdkecs.v2.ResizePrePaidServerOption`
+        :param dry_run: 是否只预检此次请求。  true：发送检查请求，不会变更云服务器规格。检查项包括是否填写了必需参数、请求格式等。  如果检查不通过，则返回对应错误。 如果检查通过，则返回202状态码。 false：发送正常请求，通过检查后并且执行变更云服务器规格请求。
+        :type dry_run: bool
         """
         
         
 
         self._resize = None
+        self._dry_run = None
         self.discriminator = None
 
         self.resize = resize
+        if dry_run is not None:
+            self.dry_run = dry_run
 
     @property
     def resize(self):
@@ -63,6 +70,28 @@ class ResizeServerRequestBody:
         :type resize: :class:`huaweicloudsdkecs.v2.ResizePrePaidServerOption`
         """
         self._resize = resize
+
+    @property
+    def dry_run(self):
+        """Gets the dry_run of this ResizeServerRequestBody.
+
+        是否只预检此次请求。  true：发送检查请求，不会变更云服务器规格。检查项包括是否填写了必需参数、请求格式等。  如果检查不通过，则返回对应错误。 如果检查通过，则返回202状态码。 false：发送正常请求，通过检查后并且执行变更云服务器规格请求。
+
+        :return: The dry_run of this ResizeServerRequestBody.
+        :rtype: bool
+        """
+        return self._dry_run
+
+    @dry_run.setter
+    def dry_run(self, dry_run):
+        """Sets the dry_run of this ResizeServerRequestBody.
+
+        是否只预检此次请求。  true：发送检查请求，不会变更云服务器规格。检查项包括是否填写了必需参数、请求格式等。  如果检查不通过，则返回对应错误。 如果检查通过，则返回202状态码。 false：发送正常请求，通过检查后并且执行变更云服务器规格请求。
+
+        :param dry_run: The dry_run of this ResizeServerRequestBody.
+        :type dry_run: bool
+        """
+        self._dry_run = dry_run
 
     def to_dict(self):
         """Returns the model properties as a dict"""

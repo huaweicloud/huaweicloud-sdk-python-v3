@@ -33,6 +33,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'eip_address': 'str',
         'charging_mode': 'int',
         'cbc_metadata': 'str',
+        'loadbalancer_provider': 'str',
         'description': 'str',
         'vpc_id': 'str',
         'subnet_id': 'str',
@@ -50,7 +51,12 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'virsubnet_id': 'str',
         'roma_eip_address': 'str',
         'listeners': 'object',
-        'supported_features': 'list[str]'
+        'supported_features': 'list[str]',
+        'endpoint_service': 'EndpointService',
+        'endpoint_services': 'list[EndpointService]',
+        'node_ips': 'NodeIps',
+        'publicips': 'list[IpDetails]',
+        'privateips': 'list[IpDetails]'
     }
 
     attribute_map = {
@@ -66,6 +72,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'eip_address': 'eip_address',
         'charging_mode': 'charging_mode',
         'cbc_metadata': 'cbc_metadata',
+        'loadbalancer_provider': 'loadbalancer_provider',
         'description': 'description',
         'vpc_id': 'vpc_id',
         'subnet_id': 'subnet_id',
@@ -83,10 +90,15 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'virsubnet_id': 'virsubnet_id',
         'roma_eip_address': 'roma_eip_address',
         'listeners': 'listeners',
-        'supported_features': 'supported_features'
+        'supported_features': 'supported_features',
+        'endpoint_service': 'endpoint_service',
+        'endpoint_services': 'endpoint_services',
+        'node_ips': 'node_ips',
+        'publicips': 'publicips',
+        'privateips': 'privateips'
     }
 
-    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None):
+    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, loadbalancer_provider=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, endpoint_service=None, endpoint_services=None, node_ips=None, publicips=None, privateips=None):
         """ShowDetailsOfInstanceV2Response
 
         The model defined in huaweicloud sdk
@@ -115,6 +127,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type charging_mode: int
         :param cbc_metadata: 包周期计费订单编号
         :type cbc_metadata: str
+        :param loadbalancer_provider: 实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
+        :type loadbalancer_provider: str
         :param description: 实例描述
         :type description: str
         :param vpc_id: 虚拟私有云ID。  获取方法如下：   - 方法1：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。   - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询VPC列表”章节。 
@@ -151,6 +165,16 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type listeners: object
         :param supported_features: 实例支持的特性列表
         :type supported_features: list[str]
+        :param endpoint_service: 
+        :type endpoint_service: :class:`huaweicloudsdkapig.v2.EndpointService`
+        :param endpoint_services: 终端节点服务列表
+        :type endpoint_services: list[:class:`huaweicloudsdkapig.v2.EndpointService`]
+        :param node_ips: 
+        :type node_ips: :class:`huaweicloudsdkapig.v2.NodeIps`
+        :param publicips: 公网入口地址列表
+        :type publicips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
+        :param privateips: 私网入口地址列表
+        :type privateips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
         """
         
         super(ShowDetailsOfInstanceV2Response, self).__init__()
@@ -167,6 +191,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         self._eip_address = None
         self._charging_mode = None
         self._cbc_metadata = None
+        self._loadbalancer_provider = None
         self._description = None
         self._vpc_id = None
         self._subnet_id = None
@@ -185,6 +210,11 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         self._roma_eip_address = None
         self._listeners = None
         self._supported_features = None
+        self._endpoint_service = None
+        self._endpoint_services = None
+        self._node_ips = None
+        self._publicips = None
+        self._privateips = None
         self.discriminator = None
 
         if id is not None:
@@ -211,6 +241,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
             self.charging_mode = charging_mode
         if cbc_metadata is not None:
             self.cbc_metadata = cbc_metadata
+        if loadbalancer_provider is not None:
+            self.loadbalancer_provider = loadbalancer_provider
         if description is not None:
             self.description = description
         if vpc_id is not None:
@@ -247,6 +279,16 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
             self.listeners = listeners
         if supported_features is not None:
             self.supported_features = supported_features
+        if endpoint_service is not None:
+            self.endpoint_service = endpoint_service
+        if endpoint_services is not None:
+            self.endpoint_services = endpoint_services
+        if node_ips is not None:
+            self.node_ips = node_ips
+        if publicips is not None:
+            self.publicips = publicips
+        if privateips is not None:
+            self.privateips = privateips
 
     @property
     def id(self):
@@ -511,6 +553,28 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type cbc_metadata: str
         """
         self._cbc_metadata = cbc_metadata
+
+    @property
+    def loadbalancer_provider(self):
+        """Gets the loadbalancer_provider of this ShowDetailsOfInstanceV2Response.
+
+        实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
+
+        :return: The loadbalancer_provider of this ShowDetailsOfInstanceV2Response.
+        :rtype: str
+        """
+        return self._loadbalancer_provider
+
+    @loadbalancer_provider.setter
+    def loadbalancer_provider(self, loadbalancer_provider):
+        """Sets the loadbalancer_provider of this ShowDetailsOfInstanceV2Response.
+
+        实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
+
+        :param loadbalancer_provider: The loadbalancer_provider of this ShowDetailsOfInstanceV2Response.
+        :type loadbalancer_provider: str
+        """
+        self._loadbalancer_provider = loadbalancer_provider
 
     @property
     def description(self):
@@ -907,6 +971,112 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type supported_features: list[str]
         """
         self._supported_features = supported_features
+
+    @property
+    def endpoint_service(self):
+        """Gets the endpoint_service of this ShowDetailsOfInstanceV2Response.
+
+
+        :return: The endpoint_service of this ShowDetailsOfInstanceV2Response.
+        :rtype: :class:`huaweicloudsdkapig.v2.EndpointService`
+        """
+        return self._endpoint_service
+
+    @endpoint_service.setter
+    def endpoint_service(self, endpoint_service):
+        """Sets the endpoint_service of this ShowDetailsOfInstanceV2Response.
+
+
+        :param endpoint_service: The endpoint_service of this ShowDetailsOfInstanceV2Response.
+        :type endpoint_service: :class:`huaweicloudsdkapig.v2.EndpointService`
+        """
+        self._endpoint_service = endpoint_service
+
+    @property
+    def endpoint_services(self):
+        """Gets the endpoint_services of this ShowDetailsOfInstanceV2Response.
+
+        终端节点服务列表
+
+        :return: The endpoint_services of this ShowDetailsOfInstanceV2Response.
+        :rtype: list[:class:`huaweicloudsdkapig.v2.EndpointService`]
+        """
+        return self._endpoint_services
+
+    @endpoint_services.setter
+    def endpoint_services(self, endpoint_services):
+        """Sets the endpoint_services of this ShowDetailsOfInstanceV2Response.
+
+        终端节点服务列表
+
+        :param endpoint_services: The endpoint_services of this ShowDetailsOfInstanceV2Response.
+        :type endpoint_services: list[:class:`huaweicloudsdkapig.v2.EndpointService`]
+        """
+        self._endpoint_services = endpoint_services
+
+    @property
+    def node_ips(self):
+        """Gets the node_ips of this ShowDetailsOfInstanceV2Response.
+
+
+        :return: The node_ips of this ShowDetailsOfInstanceV2Response.
+        :rtype: :class:`huaweicloudsdkapig.v2.NodeIps`
+        """
+        return self._node_ips
+
+    @node_ips.setter
+    def node_ips(self, node_ips):
+        """Sets the node_ips of this ShowDetailsOfInstanceV2Response.
+
+
+        :param node_ips: The node_ips of this ShowDetailsOfInstanceV2Response.
+        :type node_ips: :class:`huaweicloudsdkapig.v2.NodeIps`
+        """
+        self._node_ips = node_ips
+
+    @property
+    def publicips(self):
+        """Gets the publicips of this ShowDetailsOfInstanceV2Response.
+
+        公网入口地址列表
+
+        :return: The publicips of this ShowDetailsOfInstanceV2Response.
+        :rtype: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
+        """
+        return self._publicips
+
+    @publicips.setter
+    def publicips(self, publicips):
+        """Sets the publicips of this ShowDetailsOfInstanceV2Response.
+
+        公网入口地址列表
+
+        :param publicips: The publicips of this ShowDetailsOfInstanceV2Response.
+        :type publicips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
+        """
+        self._publicips = publicips
+
+    @property
+    def privateips(self):
+        """Gets the privateips of this ShowDetailsOfInstanceV2Response.
+
+        私网入口地址列表
+
+        :return: The privateips of this ShowDetailsOfInstanceV2Response.
+        :rtype: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
+        """
+        return self._privateips
+
+    @privateips.setter
+    def privateips(self, privateips):
+        """Sets the privateips of this ShowDetailsOfInstanceV2Response.
+
+        私网入口地址列表
+
+        :param privateips: The privateips of this ShowDetailsOfInstanceV2Response.
+        :type privateips: list[:class:`huaweicloudsdkapig.v2.IpDetails`]
+        """
+        self._privateips = privateips
 
     def to_dict(self):
         """Returns the model properties as a dict"""

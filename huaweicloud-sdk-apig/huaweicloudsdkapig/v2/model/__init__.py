@@ -39,7 +39,7 @@ from huaweicloudsdkapig.v2.model.api_func_create import ApiFuncCreate
 from huaweicloudsdkapig.v2.model.api_group_base import ApiGroupBase
 from huaweicloudsdkapig.v2.model.api_group_common_info import ApiGroupCommonInfo
 from huaweicloudsdkapig.v2.model.api_group_create import ApiGroupCreate
-from huaweicloudsdkapig.v2.model.api_group_info_page import ApiGroupInfoPage
+from huaweicloudsdkapig.v2.model.api_group_info import ApiGroupInfo
 from huaweicloudsdkapig.v2.model.api_info import ApiInfo
 from huaweicloudsdkapig.v2.model.api_info_per_page import ApiInfoPerPage
 from huaweicloudsdkapig.v2.model.api_mock import ApiMock
@@ -192,6 +192,7 @@ from huaweicloudsdkapig.v2.model.disassociate_request_throttling_policy_v2_respo
 from huaweicloudsdkapig.v2.model.disassociate_signature_key_v2_request import DisassociateSignatureKeyV2Request
 from huaweicloudsdkapig.v2.model.disassociate_signature_key_v2_response import DisassociateSignatureKeyV2Response
 from huaweicloudsdkapig.v2.model.eip_bind_req import EipBindReq
+from huaweicloudsdkapig.v2.model.endpoint_service import EndpointService
 from huaweicloudsdkapig.v2.model.env_create import EnvCreate
 from huaweicloudsdkapig.v2.model.env_info import EnvInfo
 from huaweicloudsdkapig.v2.model.env_variable_base import EnvVariableBase
@@ -214,6 +215,7 @@ from huaweicloudsdkapig.v2.model.instance_abstract_req import InstanceAbstractRe
 from huaweicloudsdkapig.v2.model.instance_config import InstanceConfig
 from huaweicloudsdkapig.v2.model.instance_create_req import InstanceCreateReq
 from huaweicloudsdkapig.v2.model.instance_mod_req import InstanceModReq
+from huaweicloudsdkapig.v2.model.ip_details import IpDetails
 from huaweicloudsdkapig.v2.model.latency_stats import LatencyStats
 from huaweicloudsdkapig.v2.model.list_acl_policy_binded_to_api_v2_request import ListAclPolicyBindedToApiV2Request
 from huaweicloudsdkapig.v2.model.list_acl_policy_binded_to_api_v2_response import ListAclPolicyBindedToApiV2Response
@@ -301,6 +303,7 @@ from huaweicloudsdkapig.v2.model.member_group_create import MemberGroupCreate
 from huaweicloudsdkapig.v2.model.member_group_info import MemberGroupInfo
 from huaweicloudsdkapig.v2.model.member_info import MemberInfo
 from huaweicloudsdkapig.v2.model.network_traffic_stats import NetworkTrafficStats
+from huaweicloudsdkapig.v2.model.node_ips import NodeIps
 from huaweicloudsdkapig.v2.model.open_engress_eip_req import OpenEngressEipReq
 from huaweicloudsdkapig.v2.model.publish_resp import PublishResp
 from huaweicloudsdkapig.v2.model.remove_eip_v2_request import RemoveEipV2Request

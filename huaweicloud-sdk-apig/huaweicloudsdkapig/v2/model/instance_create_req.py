@@ -34,7 +34,8 @@ class InstanceCreateReq:
         'enterprise_project_id': 'str',
         'available_zone_ids': 'list[str]',
         'bandwidth_size': 'int',
-        'ipv6_enable': 'bool'
+        'ipv6_enable': 'bool',
+        'loadbalancer_provider': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class InstanceCreateReq:
         'enterprise_project_id': 'enterprise_project_id',
         'available_zone_ids': 'available_zone_ids',
         'bandwidth_size': 'bandwidth_size',
-        'ipv6_enable': 'ipv6_enable'
+        'ipv6_enable': 'ipv6_enable',
+        'loadbalancer_provider': 'loadbalancer_provider'
     }
 
-    def __init__(self, description=None, maintain_begin=None, maintain_end=None, instance_name=None, instance_id=None, spec_id=None, vpc_id=None, subnet_id=None, security_group_id=None, eip_id=None, enterprise_project_id=None, available_zone_ids=None, bandwidth_size=None, ipv6_enable=None):
+    def __init__(self, description=None, maintain_begin=None, maintain_end=None, instance_name=None, instance_id=None, spec_id=None, vpc_id=None, subnet_id=None, security_group_id=None, eip_id=None, enterprise_project_id=None, available_zone_ids=None, bandwidth_size=None, ipv6_enable=None, loadbalancer_provider=None):
         """InstanceCreateReq
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class InstanceCreateReq:
         :type bandwidth_size: int
         :param ipv6_enable: 公网访问是否支持IPv6。  当前仅部分region部分可用区支持IPv6
         :type ipv6_enable: bool
+        :param loadbalancer_provider: 实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
+        :type loadbalancer_provider: str
         """
         
         
@@ -105,6 +109,7 @@ class InstanceCreateReq:
         self._available_zone_ids = None
         self._bandwidth_size = None
         self._ipv6_enable = None
+        self._loadbalancer_provider = None
         self.discriminator = None
 
         if description is not None:
@@ -135,6 +140,8 @@ class InstanceCreateReq:
             self.bandwidth_size = bandwidth_size
         if ipv6_enable is not None:
             self.ipv6_enable = ipv6_enable
+        if loadbalancer_provider is not None:
+            self.loadbalancer_provider = loadbalancer_provider
 
     @property
     def description(self):
@@ -443,6 +450,28 @@ class InstanceCreateReq:
         :type ipv6_enable: bool
         """
         self._ipv6_enable = ipv6_enable
+
+    @property
+    def loadbalancer_provider(self):
+        """Gets the loadbalancer_provider of this InstanceCreateReq.
+
+        实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
+
+        :return: The loadbalancer_provider of this InstanceCreateReq.
+        :rtype: str
+        """
+        return self._loadbalancer_provider
+
+    @loadbalancer_provider.setter
+    def loadbalancer_provider(self, loadbalancer_provider):
+        """Sets the loadbalancer_provider of this InstanceCreateReq.
+
+        实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
+
+        :param loadbalancer_provider: The loadbalancer_provider of this InstanceCreateReq.
+        :type loadbalancer_provider: str
+        """
+        self._loadbalancer_provider = loadbalancer_provider
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -23,7 +23,7 @@ class ListApiGroupsV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'groups': 'list[ApiGroupInfoPage]'
+        'groups': 'list[ApiGroupInfo]'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class ListApiGroupsV2Response(SdkResponse):
         :param total: 满足条件的记录数
         :type total: int
         :param groups: 分组列表
-        :type groups: list[:class:`huaweicloudsdkapig.v2.ApiGroupInfoPage`]
+        :type groups: list[:class:`huaweicloudsdkapig.v2.ApiGroupInfo`]
         """
         
         super(ListApiGroupsV2Response, self).__init__()
@@ -108,7 +108,7 @@ class ListApiGroupsV2Response(SdkResponse):
         分组列表
 
         :return: The groups of this ListApiGroupsV2Response.
-        :rtype: list[:class:`huaweicloudsdkapig.v2.ApiGroupInfoPage`]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.ApiGroupInfo`]
         """
         return self._groups
 
@@ -119,7 +119,7 @@ class ListApiGroupsV2Response(SdkResponse):
         分组列表
 
         :param groups: The groups of this ListApiGroupsV2Response.
-        :type groups: list[:class:`huaweicloudsdkapig.v2.ApiGroupInfoPage`]
+        :type groups: list[:class:`huaweicloudsdkapig.v2.ApiGroupInfo`]
         """
         self._groups = groups
 

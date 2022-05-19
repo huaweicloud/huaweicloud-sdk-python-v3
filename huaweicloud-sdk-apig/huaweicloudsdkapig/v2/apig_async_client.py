@@ -2148,7 +2148,7 @@ class ApigAsyncClient(Client):
         return self.list_environment_variables_v2_with_http_info(request)
 
     def list_environment_variables_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'env_id', 'variable_name', 'precise_search']
+        all_params = ['instance_id', 'group_id', 'offset', 'limit', 'env_id', 'variable_name', 'precise_search']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2165,6 +2165,8 @@ class ApigAsyncClient(Client):
             query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
         if 'env_id' in local_var_params:
             query_params.append(('env_id', local_var_params['env_id']))
         if 'variable_name' in local_var_params:
@@ -2289,10 +2291,10 @@ class ApigAsyncClient(Client):
         sign_basic | 签名秘钥是否支持basic类型。| 否 |
         multi_auth | API是否支持双重认证方式。| 否 |
         backend_client_certificate | 是否开启后端双向认证。| 是 |
-        ssl_ciphers | 是否支持https加密套件。 | 是 |
+        ssl_ciphers | 是否支持https加密套件。  | 是 |
         route | 是否支持自定义路由。| 否 |
         cors | 是否支持API使用插件功能。| 否 |
-        real_ip_from_xff | 是否开启使用xff头作为访问控制、流控策略的源ip生效依据。 | 是 |
+        real_ip_from_xff | 是否开启使用xff头作为访问控制、流控策略的源ip生效依据。  | 是 |
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -5235,8 +5237,8 @@ class ApigAsyncClient(Client):
         """删除API分组
 
         删除指定的API分组。
-        
-        删除时，会一并删除直接或间接关联到该分组下的所有资源，包括API、独立域名、SSL证书、上架信息、分组下所有API的授权信息、编排信息、白名单配置、认证增强信息等等。并会将外部域名与子域名的绑定关系进行解除（取决于域名cname方式）。
+        删除API分组前，要先下线并删除分组下的所有API。
+        删除时，会一并删除直接或间接关联到该分组下的所有资源，包括独立域名、SSL证书信息等等。并会将外部域名与子域名的绑定关系进行解除（取决于域名cname方式）。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

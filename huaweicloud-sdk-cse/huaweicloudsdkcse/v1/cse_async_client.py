@@ -249,7 +249,7 @@ class CseAsyncClient(Client):
         return self.list_engines_with_http_info(request)
 
     def list_engines_with_http_info(self, request):
-        all_params = ['x_enterprise_project_id', 'offset', 'limit']
+        all_params = ['offset', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -266,8 +266,6 @@ class CseAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
 
         header_params = {}
-        if 'x_enterprise_project_id' in local_var_params:
-            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
 
         form_params = {}
 

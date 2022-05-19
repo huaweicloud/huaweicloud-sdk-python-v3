@@ -109,7 +109,7 @@ class CreateClusterReq:
         :type cluster_name: str
         :param master_node_num: Master节点数量。启用集群高可用功能时配置为2，不启用集群高可用功能时配置为1。MRS 3.x版本暂时不支持该参数配置为1。
         :type master_node_num: int
-        :param core_node_num: Core节点数量。  取值范围：[1～500]  Core节点默认的最大值为500，如果用户需要的Core节点数大于500，请申请扩大配额。
+        :param core_node_num: Core节点数量。 取值范围：[1～500] Core节点默认的最大值为500，如果用户需要的Core节点数大于500，请申请扩大配额。
         :type core_node_num: int
         :param billing_type: 集群的计费模式。  12：表示按需计费。接口调用仅支持创建按需计费集群。
         :type billing_type: int
@@ -157,9 +157,9 @@ class CreateClusterReq:
         :type bootstrap_scripts: list[:class:`huaweicloudsdkmrs.v1.BootstrapScript`]
         :param node_public_cert_name: 密钥对名称。用户可以使用密钥对方式登录集群节点。当“login_mode”配置为“1”时，请求消息体中包含node_public_cert_name字段。
         :type node_public_cert_name: str
-        :param cluster_admin_secret: 配置MRS Manager管理员用户的密码。 - 密码长度应在8～32个字符之间 - 不能与用户名或者倒序用户名相同 - 必须包含如下4种中至少3种字符的组合     - 至少一个小写字母     - 至少一个大写字母     - 至少一个数字     - 至少一个特殊字符：&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}];:&#39;\&quot;,&lt;.&gt;/?和空格
+        :param cluster_admin_secret: 配置MRS Manager管理员用户的密码。 - 密码长度应在8～26个字符之间 - 不能与用户名或者倒序用户名相同 - 必须包含如下4种字符的组合     - 至少一个小写字母     - 至少一个大写字母     - 至少一个数字     - 至少一个特殊字符：!@$%^-_&#x3D;+[{}]:,./?
         :type cluster_admin_secret: str
-        :param cluster_master_secret: 配置访问集群节点的root密码。当“login_mode”配置为“0”时，请求消息体中包含cluster_master_secret字段。  密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含三种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_&#x3D;+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
+        :param cluster_master_secret: 配置访问集群节点的root密码。当“login_mode”配置为“0”时，请求消息体中包含cluster_master_secret字段。  密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含4种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_&#x3D;+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
         :type cluster_master_secret: str
         :param safe_mode: MRS集群运行模式。 - 0：普通集群，表示Kerberos认证关闭，用户可使用集群提供的所有功能。 - 1：安全集群，表示Kerberos认证开启，普通用户无权限使用MRS集群的“文件管理”和“作业管理”功能，并且无法查看Hadoop、Spark的作业记录以及集群资源使用情况。如果需要使用集群更多功能，需要找MRS Manager的管理员分配权限。
         :type safe_mode: int
@@ -173,7 +173,7 @@ class CreateClusterReq:
         :type tags: list[:class:`huaweicloudsdkmrs.v1.Tag`]
         :param login_mode: 集群登录方式。默认设置为1。  - 当“login_mode”配置为“0”时，请求消息体中包含cluster_master_secret字段。 - 当“login_mode”配置为“1”时，请求消息体中包含node_public_cert_name字段。  枚举值： - 0：密码方式 - 1：密钥对方式
         :type login_mode: int
-        :param node_groups: 节点列表信息。  说明：如下参数和该参数任选一组进行配置即可。  master_node_num、master_node_size、core_node_num、core_node_size、master_data_volume_type、master_data_volume_size、master_data_volume_count、core_data_volume_type、core_data_volume_size、core_data_volume_count、volume_type、volume_size、task_node_groups。
+        :param node_groups: 节点列表信息。   说明：如下参数和该参数任选一组进行配置即可。   master_node_num、master_node_size、core_node_num、core_node_size、master_data_volume_type、master_data_volume_size、master_data_volume_count、core_data_volume_type、core_data_volume_size、core_data_volume_count、volume_type、volume_size、task_node_groups。
         :type node_groups: list[:class:`huaweicloudsdkmrs.v1.NodeGroupV11`]
         """
         
@@ -344,7 +344,7 @@ class CreateClusterReq:
     def core_node_num(self):
         """Gets the core_node_num of this CreateClusterReq.
 
-        Core节点数量。  取值范围：[1～500]  Core节点默认的最大值为500，如果用户需要的Core节点数大于500，请申请扩大配额。
+        Core节点数量。 取值范围：[1～500] Core节点默认的最大值为500，如果用户需要的Core节点数大于500，请申请扩大配额。
 
         :return: The core_node_num of this CreateClusterReq.
         :rtype: int
@@ -355,7 +355,7 @@ class CreateClusterReq:
     def core_node_num(self, core_node_num):
         """Sets the core_node_num of this CreateClusterReq.
 
-        Core节点数量。  取值范围：[1～500]  Core节点默认的最大值为500，如果用户需要的Core节点数大于500，请申请扩大配额。
+        Core节点数量。 取值范围：[1～500] Core节点默认的最大值为500，如果用户需要的Core节点数大于500，请申请扩大配额。
 
         :param core_node_num: The core_node_num of this CreateClusterReq.
         :type core_node_num: int
@@ -872,7 +872,7 @@ class CreateClusterReq:
     def cluster_admin_secret(self):
         """Gets the cluster_admin_secret of this CreateClusterReq.
 
-        配置MRS Manager管理员用户的密码。 - 密码长度应在8～32个字符之间 - 不能与用户名或者倒序用户名相同 - 必须包含如下4种中至少3种字符的组合     - 至少一个小写字母     - 至少一个大写字母     - 至少一个数字     - 至少一个特殊字符：`~!@#$%^&*()-_=+\\|[{}];:'\",<.>/?和空格
+        配置MRS Manager管理员用户的密码。 - 密码长度应在8～26个字符之间 - 不能与用户名或者倒序用户名相同 - 必须包含如下4种字符的组合     - 至少一个小写字母     - 至少一个大写字母     - 至少一个数字     - 至少一个特殊字符：!@$%^-_=+[{}]:,./?
 
         :return: The cluster_admin_secret of this CreateClusterReq.
         :rtype: str
@@ -883,7 +883,7 @@ class CreateClusterReq:
     def cluster_admin_secret(self, cluster_admin_secret):
         """Sets the cluster_admin_secret of this CreateClusterReq.
 
-        配置MRS Manager管理员用户的密码。 - 密码长度应在8～32个字符之间 - 不能与用户名或者倒序用户名相同 - 必须包含如下4种中至少3种字符的组合     - 至少一个小写字母     - 至少一个大写字母     - 至少一个数字     - 至少一个特殊字符：`~!@#$%^&*()-_=+\\|[{}];:'\",<.>/?和空格
+        配置MRS Manager管理员用户的密码。 - 密码长度应在8～26个字符之间 - 不能与用户名或者倒序用户名相同 - 必须包含如下4种字符的组合     - 至少一个小写字母     - 至少一个大写字母     - 至少一个数字     - 至少一个特殊字符：!@$%^-_=+[{}]:,./?
 
         :param cluster_admin_secret: The cluster_admin_secret of this CreateClusterReq.
         :type cluster_admin_secret: str
@@ -894,7 +894,7 @@ class CreateClusterReq:
     def cluster_master_secret(self):
         """Gets the cluster_master_secret of this CreateClusterReq.
 
-        配置访问集群节点的root密码。当“login_mode”配置为“0”时，请求消息体中包含cluster_master_secret字段。  密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含三种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
+        配置访问集群节点的root密码。当“login_mode”配置为“0”时，请求消息体中包含cluster_master_secret字段。  密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含4种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
 
         :return: The cluster_master_secret of this CreateClusterReq.
         :rtype: str
@@ -905,7 +905,7 @@ class CreateClusterReq:
     def cluster_master_secret(self, cluster_master_secret):
         """Sets the cluster_master_secret of this CreateClusterReq.
 
-        配置访问集群节点的root密码。当“login_mode”配置为“0”时，请求消息体中包含cluster_master_secret字段。  密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含三种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
+        配置访问集群节点的root密码。当“login_mode”配置为“0”时，请求消息体中包含cluster_master_secret字段。  密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含4种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
 
         :param cluster_master_secret: The cluster_master_secret of this CreateClusterReq.
         :type cluster_master_secret: str
@@ -1048,7 +1048,7 @@ class CreateClusterReq:
     def node_groups(self):
         """Gets the node_groups of this CreateClusterReq.
 
-        节点列表信息。  说明：如下参数和该参数任选一组进行配置即可。  master_node_num、master_node_size、core_node_num、core_node_size、master_data_volume_type、master_data_volume_size、master_data_volume_count、core_data_volume_type、core_data_volume_size、core_data_volume_count、volume_type、volume_size、task_node_groups。
+        节点列表信息。   说明：如下参数和该参数任选一组进行配置即可。   master_node_num、master_node_size、core_node_num、core_node_size、master_data_volume_type、master_data_volume_size、master_data_volume_count、core_data_volume_type、core_data_volume_size、core_data_volume_count、volume_type、volume_size、task_node_groups。
 
         :return: The node_groups of this CreateClusterReq.
         :rtype: list[:class:`huaweicloudsdkmrs.v1.NodeGroupV11`]
@@ -1059,7 +1059,7 @@ class CreateClusterReq:
     def node_groups(self, node_groups):
         """Sets the node_groups of this CreateClusterReq.
 
-        节点列表信息。  说明：如下参数和该参数任选一组进行配置即可。  master_node_num、master_node_size、core_node_num、core_node_size、master_data_volume_type、master_data_volume_size、master_data_volume_count、core_data_volume_type、core_data_volume_size、core_data_volume_count、volume_type、volume_size、task_node_groups。
+        节点列表信息。   说明：如下参数和该参数任选一组进行配置即可。   master_node_num、master_node_size、core_node_num、core_node_size、master_data_volume_type、master_data_volume_size、master_data_volume_count、core_data_volume_type、core_data_volume_size、core_data_volume_count、volume_type、volume_size、task_node_groups。
 
         :param node_groups: The node_groups of this CreateClusterReq.
         :type node_groups: list[:class:`huaweicloudsdkmrs.v1.NodeGroupV11`]

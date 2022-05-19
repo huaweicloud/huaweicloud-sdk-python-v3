@@ -1,3 +1,80 @@
+# 3.0.89 2022-05-19
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListEnvironmentVariablesV2`新增请求参数 `group_id`
+  - 接口`UpdateSignatureKeyV2`新增响应参数 `update_time`、`create_time`、`id`、`name`、`sign_type`、`sign_key`、`sign_secret`、`sign_algorithm`
+  - 接口`CreateInstanceV2`新增请求参数 `loadbalancer_provider`
+  - 接口`ListInstancesV2`新增响应参数 `loadbalancer_provider`
+  - 接口`ShowDetailsOfInstanceV2`新增响应参数 `endpoint_service`、`endpoint_services`、`node_ips`、`publicips`、`privateips`、`loadbalancer_provider`
+  - 接口`UpdateInstanceV2`新增响应参数 `endpoint_service`、`endpoint_services`、`node_ips`、`publicips`、`privateips`、`loadbalancer_provider`
+
+### HuaweiCloud SDK CSE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListEngines`移除请求参数 `X-Enterprise-Project-ID`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ResizeServer`新增请求参数 `dry_run`
+  - 接口`ResizePostPaidServer`新增请求参数 `dry_run`
+  - 接口`AttachServerVolume`新增请求参数 `dry_run`
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListClusters`:
+    - 新增响应参数 `GroupName`、`NodeNum`、`NodeSize`、`NodeSpecId`、`VmProductId`、`VmSpecCode`、`NodeProductId`、`RootVolumeSize`、`RootVolumeProductId`、`RootVolumeType`、`RootVolumeResourceSpecCode`、`RootVolumeResourceType`、`DataVolumeType`、`DataVolumeCount`、`DataVolumeSize`、`DataVolumeProductId`、`DataVolumeResourceSpecCode`、`DataVolumeResourceType`、`GroupName`、`NodeNum`、`NodeSize`、`NodeSpecId`、`VmProductId`、`VmSpecCode`、`NodeProductId`、`RootVolumeSize`、`RootVolumeProductId`、`RootVolumeType`、`RootVolumeResourceSpecCode`、`RootVolumeResourceType`、`DataVolumeType`、`DataVolumeCount`、`DataVolumeSize`、`DataVolumeProductId`、`DataVolumeResourceSpecCode`、`DataVolumeResourceType`
+    - 移除响应参数 `groupName`、`nodeNum`、`nodeSize`、`nodeSpecId`、`vmProductId`、`vmSpecCode`、`nodeProductId`、`rootVolumeSize`、`rootVolumeProductId`、`rootVolumeType`、`rootVolumeResourceSpecCode`、`rootVolumeResourceType`、`dataVolumeType`、`dataVolumeCount`、`dataVolumeSize`、`dataVolumeProductId`、`dataVolumeResourceSpecCode`、`dataVolumeResourceType`、`groupName`、`nodeNum`、`nodeSize`、`nodeSpecId`、`vmProductId`、`vmSpecCode`、`nodeProductId`、`rootVolumeSize`、`rootVolumeProductId`、`rootVolumeType`、`rootVolumeResourceSpecCode`、`rootVolumeResourceType`、`dataVolumeType`、`dataVolumeCount`、`dataVolumeSize`、`dataVolumeProductId`、`dataVolumeResourceSpecCode`、`dataVolumeResourceType`
+  - 接口`ShowClusterDetails`:
+    - 新增响应参数 `GroupName`、`NodeNum`、`NodeSize`、`NodeSpecId`、`VmProductId`、`VmSpecCode`、`NodeProductId`、`RootVolumeSize`、`RootVolumeProductId`、`RootVolumeType`、`RootVolumeResourceSpecCode`、`RootVolumeResourceType`、`DataVolumeType`、`DataVolumeCount`、`DataVolumeSize`、`DataVolumeProductId`、`DataVolumeResourceSpecCode`、`DataVolumeResourceType`、`GroupName`、`NodeNum`、`NodeSize`、`NodeSpecId`、`VmProductId`、`VmSpecCode`、`NodeProductId`、`RootVolumeSize`、`RootVolumeProductId`、`RootVolumeType`、`RootVolumeResourceSpecCode`、`RootVolumeResourceType`、`DataVolumeType`、`DataVolumeCount`、`DataVolumeSize`、`DataVolumeProductId`、`DataVolumeResourceSpecCode`、`DataVolumeResourceType`
+    - 移除响应参数 `groupName`、`nodeNum`、`nodeSize`、`nodeSpecId`、`vmProductId`、`vmSpecCode`、`nodeProductId`、`rootVolumeSize`、`rootVolumeProductId`、`rootVolumeType`、`rootVolumeResourceSpecCode`、`rootVolumeResourceType`、`dataVolumeType`、`dataVolumeCount`、`dataVolumeSize`、`dataVolumeProductId`、`dataVolumeResourceSpecCode`、`dataVolumeResourceType`、`groupName`、`nodeNum`、`nodeSize`、`nodeSpecId`、`vmProductId`、`vmSpecCode`、`nodeProductId`、`rootVolumeSize`、`rootVolumeProductId`、`rootVolumeType`、`rootVolumeResourceSpecCode`、`rootVolumeResourceType`、`dataVolumeType`、`dataVolumeCount`、`dataVolumeSize`、`dataVolumeProductId`、`dataVolumeResourceSpecCode`、`dataVolumeResourceType`
+  - 接口`UpdateClusterScaling` 的请求参数 `data_volume_type`、`data_volume_count`、`data_volume_size`改为必填
+
+### HuaweiCloud SDK VOD
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UploadMetaDataByUrl`请求参数`video_type`新增枚举值`M3U8`
+  - 接口`PublishAssets`新增响应参数 `sign_url`
+  - 接口`UnpublishAssets`新增响应参数 `sign_url`
+  - 接口`ShowAssetMeta`新增响应参数 `sign_url`
+  - 接口`ShowAssetDetail`新增响应参数 `sign_url`
+  - 接口`ShowTakeOverTaskDetails`新增响应参数 `sign_url`
+  - 接口`ShowTakeOverAssetDetails`新增响应参数 `sign_url`
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListPorts`响应参数`device_owner`新增枚举值`neutron:VIP_PORT`, 移除枚举值`network:VIP_PORT`
+  - 接口`UpdatePort`响应参数`device_owner`新增枚举值`neutron:VIP_PORT`, 移除枚举值`network:VIP_PORT`
+  - 接口`ShowPort`响应参数`device_owner`新增枚举值`neutron:VIP_PORT`, 移除枚举值`network:VIP_PORT`
+
 # 3.0.88 2022-05-12
 
 ### HuaweiCloud SDK CodeHub

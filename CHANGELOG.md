@@ -1,3 +1,80 @@
+# 3.0.89 2022-05-19
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `group_id` to the interface `ListEnvironmentVariablesV2`
+  - Add the response parameters `update_time`, `create_time`, `id`, `name`, `sign_type`, `sign_key`, `sign_secret`, `sign_algorithm` to the interface `UpdateSignatureKeyV2`
+  - Add the request parameter `loadbalancer_provider` to the interface `CreateInstanceV2`
+  - Add the response parameter `loadbalancer_provider` to the interface `ListInstancesV2`
+  - Add the response parameters `endpoint_service`, `endpoint_services`, `node_ips`, `publicips`, `privateips`, `loadbalancer_provider` to the interface `ShowDetailsOfInstanceV2`
+  - Add the response parameters `endpoint_service`, `endpoint_services`, `node_ips`, `publicips`, `privateips`, `loadbalancer_provider` to the interface `UpdateInstanceV2`
+
+### HuaweiCloud SDK CSE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the request parameter `X-Enterprise-Project-ID` from the interface `ListEngines`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `dry_run` to the interface `ResizeServer`
+  - Add the request parameter `dry_run` to the interface `ResizePostPaidServer`
+  - Add the request parameter `dry_run` to the interface `AttachServerVolume`
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListClusters`:
+    - Add the response parameters `GroupName`, `NodeNum`, `NodeSize`, `NodeSpecId`, `VmProductId`, `VmSpecCode`, `NodeProductId`, `RootVolumeSize`, `RootVolumeProductId`, `RootVolumeType`, `RootVolumeResourceSpecCode`, `RootVolumeResourceType`, `DataVolumeType`, `DataVolumeCount`, `DataVolumeSize`, `DataVolumeProductId`, `DataVolumeResourceSpecCode`, `DataVolumeResourceType`, `GroupName`, `NodeNum`, `NodeSize`, `NodeSpecId`, `VmProductId`, `VmSpecCode`, `NodeProductId`, `RootVolumeSize`, `RootVolumeProductId`, `RootVolumeType`, `RootVolumeResourceSpecCode`, `RootVolumeResourceType`, `DataVolumeType`, `DataVolumeCount`, `DataVolumeSize`, `DataVolumeProductId`, `DataVolumeResourceSpecCode`, `DataVolumeResourceType`
+    - Remove the response parameters `groupName`, `nodeNum`, `nodeSize`, `nodeSpecId`, `vmProductId`, `vmSpecCode`, `nodeProductId`, `rootVolumeSize`, `rootVolumeProductId`, `rootVolumeType`, `rootVolumeResourceSpecCode`, `rootVolumeResourceType`, `dataVolumeType`, `dataVolumeCount`, `dataVolumeSize`, `dataVolumeProductId`, `dataVolumeResourceSpecCode`, `dataVolumeResourceType`, `groupName`, `nodeNum`, `nodeSize`, `nodeSpecId`, `vmProductId`, `vmSpecCode`, `nodeProductId`, `rootVolumeSize`, `rootVolumeProductId`, `rootVolumeType`, `rootVolumeResourceSpecCode`, `rootVolumeResourceType`, `dataVolumeType`, `dataVolumeCount`, `dataVolumeSize`, `dataVolumeProductId`, `dataVolumeResourceSpecCode`, `dataVolumeResourceType`
+  - Changes of the interface `ShowClusterDetails`:
+    - Add the response parameters `GroupName`, `NodeNum`, `NodeSize`, `NodeSpecId`, `VmProductId`, `VmSpecCode`, `NodeProductId`, `RootVolumeSize`, `RootVolumeProductId`, `RootVolumeType`, `RootVolumeResourceSpecCode`, `RootVolumeResourceType`, `DataVolumeType`, `DataVolumeCount`, `DataVolumeSize`, `DataVolumeProductId`, `DataVolumeResourceSpecCode`, `DataVolumeResourceType`, `GroupName`, `NodeNum`, `NodeSize`, `NodeSpecId`, `VmProductId`, `VmSpecCode`, `NodeProductId`, `RootVolumeSize`, `RootVolumeProductId`, `RootVolumeType`, `RootVolumeResourceSpecCode`, `RootVolumeResourceType`, `DataVolumeType`, `DataVolumeCount`, `DataVolumeSize`, `DataVolumeProductId`, `DataVolumeResourceSpecCode`, `DataVolumeResourceType`
+    - Remove the response parameters `groupName`, `nodeNum`, `nodeSize`, `nodeSpecId`, `vmProductId`, `vmSpecCode`, `nodeProductId`, `rootVolumeSize`, `rootVolumeProductId`, `rootVolumeType`, `rootVolumeResourceSpecCode`, `rootVolumeResourceType`, `dataVolumeType`, `dataVolumeCount`, `dataVolumeSize`, `dataVolumeProductId`, `dataVolumeResourceSpecCode`, `dataVolumeResourceType`, `groupName`, `nodeNum`, `nodeSize`, `nodeSpecId`, `vmProductId`, `vmSpecCode`, `nodeProductId`, `rootVolumeSize`, `rootVolumeProductId`, `rootVolumeType`, `rootVolumeResourceSpecCode`, `rootVolumeResourceType`, `dataVolumeType`, `dataVolumeCount`, `dataVolumeSize`, `dataVolumeProductId`, `dataVolumeResourceSpecCode`, `dataVolumeResourceType`
+  - The request parameter `data_volume_type`, `data_volume_count`, `data_volume_size` changed to required of the interface `UpdateClusterScaling`
+
+### HuaweiCloud SDK VOD
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `M3U8` to the request parameter `video_type` to the interface `UploadMetaDataByUrl`
+  - Add the response parameter `sign_url` to the interface `PublishAssets`
+  - Add the response parameter `sign_url` to the interface `UnpublishAssets`
+  - Add the response parameter `sign_url` to the interface `ShowAssetMeta`
+  - Add the response parameter `sign_url` to the interface `ShowAssetDetail`
+  - Add the response parameter `sign_url` to the interface `ShowTakeOverTaskDetails`
+  - Add the response parameter `sign_url` to the interface `ShowTakeOverAssetDetails`
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `neutron:VIP_PORT`, Remove the enum values `network:VIP_PORT` from the response parameter `device_owner` to the interface `ListPorts`
+  - Add the enum values `neutron:VIP_PORT`, Remove the enum values `network:VIP_PORT` from the response parameter `device_owner` to the interface `UpdatePort`
+  - Add the enum values `neutron:VIP_PORT`, Remove the enum values `network:VIP_PORT` from the response parameter `device_owner` to the interface `ShowPort`
+
 # 3.0.88 2022-05-12
 
 ### HuaweiCloud SDK CodeHub

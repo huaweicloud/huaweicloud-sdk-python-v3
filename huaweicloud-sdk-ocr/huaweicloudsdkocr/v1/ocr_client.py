@@ -1244,6 +1244,64 @@ class OcrClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def recognize_pcr_test_record(self, request):
+        """核酸检测记录
+
+        识别核酸检测记录中的文字信息，并将识别的结构化结果返回给用户。PCR，全称Polymerase chain reaction,即聚合酶链式反应.PCR-test也为大众所认知为新型冠状病毒核酸检测测试。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RecognizePcrTestRecord
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizePcrTestRecordRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizePcrTestRecordResponse`
+        """
+        return self.recognize_pcr_test_record_with_http_info(request)
+
+    def recognize_pcr_test_record_with_http_info(self, request):
+        all_params = ['pcr_test_record_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/pcr-test-record',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizePcrTestRecordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def recognize_qualification_certificate(self, request):
         """从业资格证识别
 

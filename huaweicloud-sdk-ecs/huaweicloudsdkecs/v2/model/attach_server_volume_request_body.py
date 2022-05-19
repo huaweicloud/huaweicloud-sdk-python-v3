@@ -21,28 +21,35 @@ class AttachServerVolumeRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'volume_attachment': 'AttachServerVolumeOption'
+        'volume_attachment': 'AttachServerVolumeOption',
+        'dry_run': 'bool'
     }
 
     attribute_map = {
-        'volume_attachment': 'volumeAttachment'
+        'volume_attachment': 'volumeAttachment',
+        'dry_run': 'dry_run'
     }
 
-    def __init__(self, volume_attachment=None):
+    def __init__(self, volume_attachment=None, dry_run=None):
         """AttachServerVolumeRequestBody
 
         The model defined in huaweicloud sdk
 
         :param volume_attachment: 
         :type volume_attachment: :class:`huaweicloudsdkecs.v2.AttachServerVolumeOption`
+        :param dry_run: 是否只预检此次请求。  true：发送检查请求，不会挂载磁盘。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应结果。 false：发送正常请求，通过检查后并且进行挂载磁盘请求。 默认值：false
+        :type dry_run: bool
         """
         
         
 
         self._volume_attachment = None
+        self._dry_run = None
         self.discriminator = None
 
         self.volume_attachment = volume_attachment
+        if dry_run is not None:
+            self.dry_run = dry_run
 
     @property
     def volume_attachment(self):
@@ -63,6 +70,28 @@ class AttachServerVolumeRequestBody:
         :type volume_attachment: :class:`huaweicloudsdkecs.v2.AttachServerVolumeOption`
         """
         self._volume_attachment = volume_attachment
+
+    @property
+    def dry_run(self):
+        """Gets the dry_run of this AttachServerVolumeRequestBody.
+
+        是否只预检此次请求。  true：发送检查请求，不会挂载磁盘。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应结果。 false：发送正常请求，通过检查后并且进行挂载磁盘请求。 默认值：false
+
+        :return: The dry_run of this AttachServerVolumeRequestBody.
+        :rtype: bool
+        """
+        return self._dry_run
+
+    @dry_run.setter
+    def dry_run(self, dry_run):
+        """Sets the dry_run of this AttachServerVolumeRequestBody.
+
+        是否只预检此次请求。  true：发送检查请求，不会挂载磁盘。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应结果。 false：发送正常请求，通过检查后并且进行挂载磁盘请求。 默认值：false
+
+        :param dry_run: The dry_run of this AttachServerVolumeRequestBody.
+        :type dry_run: bool
+        """
+        self._dry_run = dry_run
 
     def to_dict(self):
         """Returns the model properties as a dict"""

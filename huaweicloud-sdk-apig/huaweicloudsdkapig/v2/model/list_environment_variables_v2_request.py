@@ -24,6 +24,7 @@ class ListEnvironmentVariablesV2Request:
         'instance_id': 'str',
         'offset': 'int',
         'limit': 'int',
+        'group_id': 'str',
         'env_id': 'str',
         'variable_name': 'str',
         'precise_search': 'str'
@@ -33,12 +34,13 @@ class ListEnvironmentVariablesV2Request:
         'instance_id': 'instance_id',
         'offset': 'offset',
         'limit': 'limit',
+        'group_id': 'group_id',
         'env_id': 'env_id',
         'variable_name': 'variable_name',
         'precise_search': 'precise_search'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, env_id=None, variable_name=None, precise_search=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, group_id=None, env_id=None, variable_name=None, precise_search=None):
         """ListEnvironmentVariablesV2Request
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class ListEnvironmentVariablesV2Request:
         :type offset: int
         :param limit: 每页显示的条目数量
         :type limit: int
+        :param group_id: API分组编号
+        :type group_id: str
         :param env_id: 环境编号
         :type env_id: str
         :param variable_name: 变量名
@@ -62,6 +66,7 @@ class ListEnvironmentVariablesV2Request:
         self._instance_id = None
         self._offset = None
         self._limit = None
+        self._group_id = None
         self._env_id = None
         self._variable_name = None
         self._precise_search = None
@@ -72,6 +77,7 @@ class ListEnvironmentVariablesV2Request:
             self.offset = offset
         if limit is not None:
             self.limit = limit
+        self.group_id = group_id
         if env_id is not None:
             self.env_id = env_id
         if variable_name is not None:
@@ -144,6 +150,28 @@ class ListEnvironmentVariablesV2Request:
         :type limit: int
         """
         self._limit = limit
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this ListEnvironmentVariablesV2Request.
+
+        API分组编号
+
+        :return: The group_id of this ListEnvironmentVariablesV2Request.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this ListEnvironmentVariablesV2Request.
+
+        API分组编号
+
+        :param group_id: The group_id of this ListEnvironmentVariablesV2Request.
+        :type group_id: str
+        """
+        self._group_id = group_id
 
     @property
     def env_id(self):

@@ -22,15 +22,17 @@ class CreateInstanceV2Response(SdkResponse):
 
     openapi_types = {
         'instance_id': 'str',
-        'message': 'str'
+        'message': 'str',
+        'job_id': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
-        'message': 'message'
+        'message': 'message',
+        'job_id': 'job_id'
     }
 
-    def __init__(self, instance_id=None, message=None):
+    def __init__(self, instance_id=None, message=None, job_id=None):
         """CreateInstanceV2Response
 
         The model defined in huaweicloud sdk
@@ -39,18 +41,23 @@ class CreateInstanceV2Response(SdkResponse):
         :type instance_id: str
         :param message: 创建实例任务信息
         :type message: str
+        :param job_id: 任务编号
+        :type job_id: str
         """
         
         super(CreateInstanceV2Response, self).__init__()
 
         self._instance_id = None
         self._message = None
+        self._job_id = None
         self.discriminator = None
 
         if instance_id is not None:
             self.instance_id = instance_id
         if message is not None:
             self.message = message
+        if job_id is not None:
+            self.job_id = job_id
 
     @property
     def instance_id(self):
@@ -95,6 +102,28 @@ class CreateInstanceV2Response(SdkResponse):
         :type message: str
         """
         self._message = message
+
+    @property
+    def job_id(self):
+        """Gets the job_id of this CreateInstanceV2Response.
+
+        任务编号
+
+        :return: The job_id of this CreateInstanceV2Response.
+        :rtype: str
+        """
+        return self._job_id
+
+    @job_id.setter
+    def job_id(self, job_id):
+        """Sets the job_id of this CreateInstanceV2Response.
+
+        任务编号
+
+        :param job_id: The job_id of this CreateInstanceV2Response.
+        :type job_id: str
+        """
+        self._job_id = job_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -21,24 +21,20 @@ class ListEnginesRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_enterprise_project_id': 'str',
         'offset': 'int',
         'limit': 'str'
     }
 
     attribute_map = {
-        'x_enterprise_project_id': 'X-Enterprise-Project-ID',
         'offset': 'offset',
         'limit': 'limit'
     }
 
-    def __init__(self, x_enterprise_project_id=None, offset=None, limit=None):
+    def __init__(self, offset=None, limit=None):
         """ListEnginesRequest
 
         The model defined in huaweicloud sdk
 
-        :param x_enterprise_project_id: 如果不带则默认企业项目为\&quot;default\&quot;，ID为\&quot;0\&quot;。
-        :type x_enterprise_project_id: str
         :param offset: 偏移量。
         :type offset: int
         :param limit: 每页显示的条目数量。
@@ -47,39 +43,14 @@ class ListEnginesRequest:
         
         
 
-        self._x_enterprise_project_id = None
         self._offset = None
         self._limit = None
         self.discriminator = None
 
-        if x_enterprise_project_id is not None:
-            self.x_enterprise_project_id = x_enterprise_project_id
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
-
-    @property
-    def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this ListEnginesRequest.
-
-        如果不带则默认企业项目为\"default\"，ID为\"0\"。
-
-        :return: The x_enterprise_project_id of this ListEnginesRequest.
-        :rtype: str
-        """
-        return self._x_enterprise_project_id
-
-    @x_enterprise_project_id.setter
-    def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this ListEnginesRequest.
-
-        如果不带则默认企业项目为\"default\"，ID为\"0\"。
-
-        :param x_enterprise_project_id: The x_enterprise_project_id of this ListEnginesRequest.
-        :type x_enterprise_project_id: str
-        """
-        self._x_enterprise_project_id = x_enterprise_project_id
 
     @property
     def offset(self):

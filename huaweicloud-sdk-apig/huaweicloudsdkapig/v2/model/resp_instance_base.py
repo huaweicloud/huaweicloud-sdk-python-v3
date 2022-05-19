@@ -32,7 +32,8 @@ class RespInstanceBase:
         'enterprise_project_id': 'str',
         'eip_address': 'str',
         'charging_mode': 'int',
-        'cbc_metadata': 'str'
+        'cbc_metadata': 'str',
+        'loadbalancer_provider': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class RespInstanceBase:
         'enterprise_project_id': 'enterprise_project_id',
         'eip_address': 'eip_address',
         'charging_mode': 'charging_mode',
-        'cbc_metadata': 'cbc_metadata'
+        'cbc_metadata': 'cbc_metadata',
+        'loadbalancer_provider': 'loadbalancer_provider'
     }
 
-    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None):
+    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, loadbalancer_provider=None):
         """RespInstanceBase
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class RespInstanceBase:
         :type charging_mode: int
         :param cbc_metadata: 包周期计费订单编号
         :type cbc_metadata: str
+        :param loadbalancer_provider: 实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
+        :type loadbalancer_provider: str
         """
         
         
@@ -95,6 +99,7 @@ class RespInstanceBase:
         self._eip_address = None
         self._charging_mode = None
         self._cbc_metadata = None
+        self._loadbalancer_provider = None
         self.discriminator = None
 
         if id is not None:
@@ -121,6 +126,8 @@ class RespInstanceBase:
             self.charging_mode = charging_mode
         if cbc_metadata is not None:
             self.cbc_metadata = cbc_metadata
+        if loadbalancer_provider is not None:
+            self.loadbalancer_provider = loadbalancer_provider
 
     @property
     def id(self):
@@ -385,6 +392,28 @@ class RespInstanceBase:
         :type cbc_metadata: str
         """
         self._cbc_metadata = cbc_metadata
+
+    @property
+    def loadbalancer_provider(self):
+        """Gets the loadbalancer_provider of this RespInstanceBase.
+
+        实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
+
+        :return: The loadbalancer_provider of this RespInstanceBase.
+        :rtype: str
+        """
+        return self._loadbalancer_provider
+
+    @loadbalancer_provider.setter
+    def loadbalancer_provider(self, loadbalancer_provider):
+        """Sets the loadbalancer_provider of this RespInstanceBase.
+
+        实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
+
+        :param loadbalancer_provider: The loadbalancer_provider of this RespInstanceBase.
+        :type loadbalancer_provider: str
+        """
+        self._loadbalancer_provider = loadbalancer_provider
 
     def to_dict(self):
         """Returns the model properties as a dict"""

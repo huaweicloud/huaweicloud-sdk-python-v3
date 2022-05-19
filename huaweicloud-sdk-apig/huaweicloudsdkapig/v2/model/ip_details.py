@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ApiGroupInfoPage:
+class IpDetails:
 
     """
     Attributes:
@@ -21,107 +21,80 @@ class ApiGroupInfoPage:
     sensitive_list = []
 
     openapi_types = {
-        'size': 'int',
-        'total': 'int',
-        'groups': 'list[ApiGroupInfoPage]'
+        'ip_address': 'str',
+        'bandwidth_size': 'int'
     }
 
     attribute_map = {
-        'size': 'size',
-        'total': 'total',
-        'groups': 'groups'
+        'ip_address': 'ip_address',
+        'bandwidth_size': 'bandwidth_size'
     }
 
-    def __init__(self, size=None, total=None, groups=None):
-        """ApiGroupInfoPage
+    def __init__(self, ip_address=None, bandwidth_size=None):
+        """IpDetails
 
         The model defined in huaweicloud sdk
 
-        :param size: 本次返回的列表长度
-        :type size: int
-        :param total: 满足条件的记录数
-        :type total: int
-        :param groups: 分组列表
-        :type groups: list[:class:`huaweicloudsdkapig.v2.ApiGroupInfoPage`]
+        :param ip_address: IP地址
+        :type ip_address: str
+        :param bandwidth_size: 带宽大小
+        :type bandwidth_size: int
         """
         
         
 
-        self._size = None
-        self._total = None
-        self._groups = None
+        self._ip_address = None
+        self._bandwidth_size = None
         self.discriminator = None
 
-        self.size = size
-        self.total = total
-        if groups is not None:
-            self.groups = groups
+        if ip_address is not None:
+            self.ip_address = ip_address
+        if bandwidth_size is not None:
+            self.bandwidth_size = bandwidth_size
 
     @property
-    def size(self):
-        """Gets the size of this ApiGroupInfoPage.
+    def ip_address(self):
+        """Gets the ip_address of this IpDetails.
 
-        本次返回的列表长度
+        IP地址
 
-        :return: The size of this ApiGroupInfoPage.
+        :return: The ip_address of this IpDetails.
+        :rtype: str
+        """
+        return self._ip_address
+
+    @ip_address.setter
+    def ip_address(self, ip_address):
+        """Sets the ip_address of this IpDetails.
+
+        IP地址
+
+        :param ip_address: The ip_address of this IpDetails.
+        :type ip_address: str
+        """
+        self._ip_address = ip_address
+
+    @property
+    def bandwidth_size(self):
+        """Gets the bandwidth_size of this IpDetails.
+
+        带宽大小
+
+        :return: The bandwidth_size of this IpDetails.
         :rtype: int
         """
-        return self._size
+        return self._bandwidth_size
 
-    @size.setter
-    def size(self, size):
-        """Sets the size of this ApiGroupInfoPage.
+    @bandwidth_size.setter
+    def bandwidth_size(self, bandwidth_size):
+        """Sets the bandwidth_size of this IpDetails.
 
-        本次返回的列表长度
+        带宽大小
 
-        :param size: The size of this ApiGroupInfoPage.
-        :type size: int
+        :param bandwidth_size: The bandwidth_size of this IpDetails.
+        :type bandwidth_size: int
         """
-        self._size = size
-
-    @property
-    def total(self):
-        """Gets the total of this ApiGroupInfoPage.
-
-        满足条件的记录数
-
-        :return: The total of this ApiGroupInfoPage.
-        :rtype: int
-        """
-        return self._total
-
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ApiGroupInfoPage.
-
-        满足条件的记录数
-
-        :param total: The total of this ApiGroupInfoPage.
-        :type total: int
-        """
-        self._total = total
-
-    @property
-    def groups(self):
-        """Gets the groups of this ApiGroupInfoPage.
-
-        分组列表
-
-        :return: The groups of this ApiGroupInfoPage.
-        :rtype: list[:class:`huaweicloudsdkapig.v2.ApiGroupInfoPage`]
-        """
-        return self._groups
-
-    @groups.setter
-    def groups(self, groups):
-        """Sets the groups of this ApiGroupInfoPage.
-
-        分组列表
-
-        :param groups: The groups of this ApiGroupInfoPage.
-        :type groups: list[:class:`huaweicloudsdkapig.v2.ApiGroupInfoPage`]
-        """
-        self._groups = groups
+        self._bandwidth_size = bandwidth_size
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -165,7 +138,7 @@ class ApiGroupInfoPage:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ApiGroupInfoPage):
+        if not isinstance(other, IpDetails):
             return False
 
         return self.__dict__ == other.__dict__

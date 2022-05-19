@@ -42,24 +42,24 @@ class NodeGroupV10:
     }
 
     attribute_map = {
-        'group_name': 'groupName',
-        'node_num': 'nodeNum',
-        'node_size': 'nodeSize',
-        'node_spec_id': 'nodeSpecId',
-        'vm_product_id': 'vmProductId',
-        'vm_spec_code': 'vmSpecCode',
-        'node_product_id': 'nodeProductId',
-        'root_volume_size': 'rootVolumeSize',
-        'root_volume_product_id': 'rootVolumeProductId',
-        'root_volume_type': 'rootVolumeType',
-        'root_volume_resource_spec_code': 'rootVolumeResourceSpecCode',
-        'root_volume_resource_type': 'rootVolumeResourceType',
-        'data_volume_type': 'dataVolumeType',
-        'data_volume_count': 'dataVolumeCount',
-        'data_volume_size': 'dataVolumeSize',
-        'data_volume_product_id': 'dataVolumeProductId',
-        'data_volume_resource_spec_code': 'dataVolumeResourceSpecCode',
-        'data_volume_resource_type': 'dataVolumeResourceType'
+        'group_name': 'GroupName',
+        'node_num': 'NodeNum',
+        'node_size': 'NodeSize',
+        'node_spec_id': 'NodeSpecId',
+        'vm_product_id': 'VmProductId',
+        'vm_spec_code': 'VmSpecCode',
+        'node_product_id': 'NodeProductId',
+        'root_volume_size': 'RootVolumeSize',
+        'root_volume_product_id': 'RootVolumeProductId',
+        'root_volume_type': 'RootVolumeType',
+        'root_volume_resource_spec_code': 'RootVolumeResourceSpecCode',
+        'root_volume_resource_type': 'RootVolumeResourceType',
+        'data_volume_type': 'DataVolumeType',
+        'data_volume_count': 'DataVolumeCount',
+        'data_volume_size': 'DataVolumeSize',
+        'data_volume_product_id': 'DataVolumeProductId',
+        'data_volume_resource_spec_code': 'DataVolumeResourceSpecCode',
+        'data_volume_resource_type': 'DataVolumeResourceType'
     }
 
     def __init__(self, group_name=None, node_num=None, node_size=None, node_spec_id=None, vm_product_id=None, vm_spec_code=None, node_product_id=None, root_volume_size=None, root_volume_product_id=None, root_volume_type=None, root_volume_resource_spec_code=None, root_volume_resource_type=None, data_volume_type=None, data_volume_count=None, data_volume_size=None, data_volume_product_id=None, data_volume_resource_spec_code=None, data_volume_resource_type=None):

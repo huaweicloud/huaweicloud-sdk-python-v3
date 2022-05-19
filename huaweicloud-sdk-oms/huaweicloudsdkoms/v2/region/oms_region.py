@@ -24,6 +24,12 @@ class OmsRegion:
 
     AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://oms.ap-southeast-3.myhuaweicloud.com")
 
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://oms.la-south-2.myhuaweicloud.com")
+
+    CN_SOUTH_4 = Region(id="cn-south-4", endpoint="https://oms.cn-south-4.myhuaweicloud.com")
+
+    CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://oms.cn-southwest-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-north-1": CN_NORTH_1,
@@ -32,6 +38,9 @@ class OmsRegion:
         "cn-south-1": CN_SOUTH_1,
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        "la-south-2": LA_SOUTH_2,
+        "cn-south-4": CN_SOUTH_4,
+        "cn-southwest-2": CN_SOUTHWEST_2,
     }
 
     @staticmethod

@@ -115,11 +115,11 @@ class CreateClusterReqV2:
         :type auto_create_default_security_group: bool
         :param safe_mode: MRS集群运行模式。 - SIMPLE：普通集群，表示Kerberos认证关闭，用户可使用集群提供的所有功能。 - KERBEROS：安全集群，表示Kerberos认证开启，普通用户无权限使用MRS集群的“文件管理”和“作业管理”功能，并且无法查看Hadoop、Spark的作业记录以及集群资源使用情况。如果需要使用集群更多功能，需要找Manager的管理员分配权限。
         :type safe_mode: str
-        :param manager_admin_password: 配置Manager管理员用户的密码。 - 密码长度应在8～32个字符之间 - 至少包含三种字符组合，如大写字母，小写字母，数字，特殊字符（&#x60;~!@#$%^&amp;*()-_&#x3D;+\\|[{}];:&#39;\&quot;,&lt;.&gt;/?）和空格。 - 不能与用户名或者倒序用户名相同
+        :param manager_admin_password: 配置Manager管理员用户的密码。 - 密码长度应在8～26个字符之间。 - 至少包含四种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_&#x3D;+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
         :type manager_admin_password: str
         :param login_mode: 节点登录方式。 - PASSWORD：密码登录，选择此项时，node_root_password不能为空。 - KEYPAIR：密钥对登录，选择此项时，node_keypair_name不能为空。
         :type login_mode: str
-        :param node_root_password: 配置访问集群节点的root密码。 密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含三种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_&#x3D;+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
+        :param node_root_password: 配置访问集群节点的root密码。 密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含四种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_&#x3D;+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
         :type node_root_password: str
         :param node_keypair_name: 密钥对名称。用户可以使用密钥对方式登录集群节点。
         :type node_keypair_name: str
@@ -532,7 +532,7 @@ class CreateClusterReqV2:
     def manager_admin_password(self):
         """Gets the manager_admin_password of this CreateClusterReqV2.
 
-        配置Manager管理员用户的密码。 - 密码长度应在8～32个字符之间 - 至少包含三种字符组合，如大写字母，小写字母，数字，特殊字符（`~!@#$%^&*()-_=+\\|[{}];:'\",<.>/?）和空格。 - 不能与用户名或者倒序用户名相同
+        配置Manager管理员用户的密码。 - 密码长度应在8～26个字符之间。 - 至少包含四种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
 
         :return: The manager_admin_password of this CreateClusterReqV2.
         :rtype: str
@@ -543,7 +543,7 @@ class CreateClusterReqV2:
     def manager_admin_password(self, manager_admin_password):
         """Sets the manager_admin_password of this CreateClusterReqV2.
 
-        配置Manager管理员用户的密码。 - 密码长度应在8～32个字符之间 - 至少包含三种字符组合，如大写字母，小写字母，数字，特殊字符（`~!@#$%^&*()-_=+\\|[{}];:'\",<.>/?）和空格。 - 不能与用户名或者倒序用户名相同
+        配置Manager管理员用户的密码。 - 密码长度应在8～26个字符之间。 - 至少包含四种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
 
         :param manager_admin_password: The manager_admin_password of this CreateClusterReqV2.
         :type manager_admin_password: str
@@ -576,7 +576,7 @@ class CreateClusterReqV2:
     def node_root_password(self):
         """Gets the node_root_password of this CreateClusterReqV2.
 
-        配置访问集群节点的root密码。 密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含三种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
+        配置访问集群节点的root密码。 密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含四种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
 
         :return: The node_root_password of this CreateClusterReqV2.
         :rtype: str
@@ -587,7 +587,7 @@ class CreateClusterReqV2:
     def node_root_password(self, node_root_password):
         """Sets the node_root_password of this CreateClusterReqV2.
 
-        配置访问集群节点的root密码。 密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含三种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
+        配置访问集群节点的root密码。 密码设置约束如下： - 字符串类型，可输入的字符串长度为8-26。 - 至少包含四种字符组合，如大写字母，小写字母，数字，特殊字符（!@$%^-_=+[{}]:,./?），但不能包含空格。 - 不能与用户名或者倒序用户名相同。
 
         :param node_root_password: The node_root_password of this CreateClusterReqV2.
         :type node_root_password: str

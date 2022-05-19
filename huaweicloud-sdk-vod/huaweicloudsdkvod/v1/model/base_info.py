@@ -32,6 +32,7 @@ class BaseInfo:
         'tags': 'str',
         'meta_data': 'MetaData',
         'video_url': 'str',
+        'sign_url': 'str',
         'cover_info_array': 'list[CoverInfo]',
         'subtitle_info': 'list[SubtitleInfo]',
         'source_path': 'FileAddr',
@@ -50,13 +51,14 @@ class BaseInfo:
         'tags': 'tags',
         'meta_data': 'meta_data',
         'video_url': 'video_url',
+        'sign_url': 'sign_url',
         'cover_info_array': 'cover_info_array',
         'subtitle_info': 'subtitle_info',
         'source_path': 'source_path',
         'output_path': 'output_path'
     }
 
-    def __init__(self, title=None, video_name=None, description=None, category_id=None, category_name=None, create_time=None, last_modified=None, video_type=None, tags=None, meta_data=None, video_url=None, cover_info_array=None, subtitle_info=None, source_path=None, output_path=None):
+    def __init__(self, title=None, video_name=None, description=None, category_id=None, category_name=None, create_time=None, last_modified=None, video_type=None, tags=None, meta_data=None, video_url=None, sign_url=None, cover_info_array=None, subtitle_info=None, source_path=None, output_path=None):
         """BaseInfo
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class BaseInfo:
         :type meta_data: :class:`huaweicloudsdkvod.v1.MetaData`
         :param video_url: 原始视频文件的访问地址。
         :type video_url: str
+        :param sign_url: 原视频文件的OBS临时访问地址,仅媒资详情接口生效
+        :type sign_url: str
         :param cover_info_array: 封面信息。
         :type cover_info_array: list[:class:`huaweicloudsdkvod.v1.CoverInfo`]
         :param subtitle_info: 字幕信息数组
@@ -106,6 +110,7 @@ class BaseInfo:
         self._tags = None
         self._meta_data = None
         self._video_url = None
+        self._sign_url = None
         self._cover_info_array = None
         self._subtitle_info = None
         self._source_path = None
@@ -134,6 +139,8 @@ class BaseInfo:
             self.meta_data = meta_data
         if video_url is not None:
             self.video_url = video_url
+        if sign_url is not None:
+            self.sign_url = sign_url
         if cover_info_array is not None:
             self.cover_info_array = cover_info_array
         if subtitle_info is not None:
@@ -382,6 +389,28 @@ class BaseInfo:
         :type video_url: str
         """
         self._video_url = video_url
+
+    @property
+    def sign_url(self):
+        """Gets the sign_url of this BaseInfo.
+
+        原视频文件的OBS临时访问地址,仅媒资详情接口生效
+
+        :return: The sign_url of this BaseInfo.
+        :rtype: str
+        """
+        return self._sign_url
+
+    @sign_url.setter
+    def sign_url(self, sign_url):
+        """Sets the sign_url of this BaseInfo.
+
+        原视频文件的OBS临时访问地址,仅媒资详情接口生效
+
+        :param sign_url: The sign_url of this BaseInfo.
+        :type sign_url: str
+        """
+        self._sign_url = sign_url
 
     @property
     def cover_info_array(self):

@@ -25,7 +25,7 @@ class TransportationLicenseResult:
         'license_number': 'str',
         'vehicle_number': 'str',
         'vehicle_type': 'str',
-        'vehicle_weight': 'str',
+        'maximum_capacity': 'str',
         'vehicle_size': 'str',
         'issuing_authority': 'str',
         'issue_date': 'str',
@@ -41,7 +41,7 @@ class TransportationLicenseResult:
         'license_number': 'license_number',
         'vehicle_number': 'vehicle_number',
         'vehicle_type': 'vehicle_type',
-        'vehicle_weight': 'vehicle_weight',
+        'maximum_capacity': 'maximum_capacity',
         'vehicle_size': 'vehicle_size',
         'issuing_authority': 'issuing_authority',
         'issue_date': 'issue_date',
@@ -52,7 +52,7 @@ class TransportationLicenseResult:
         'confidence': 'confidence'
     }
 
-    def __init__(self, owner_name=None, license_number=None, vehicle_number=None, vehicle_type=None, vehicle_weight=None, vehicle_size=None, issuing_authority=None, issue_date=None, owner_address=None, economic_type=None, business_certificate=None, business_scope=None, confidence=None):
+    def __init__(self, owner_name=None, license_number=None, vehicle_number=None, vehicle_type=None, maximum_capacity=None, vehicle_size=None, issuing_authority=None, issue_date=None, owner_address=None, economic_type=None, business_certificate=None, business_scope=None, confidence=None):
         """TransportationLicenseResult
 
         The model defined in huaweicloud sdk
@@ -65,8 +65,8 @@ class TransportationLicenseResult:
         :type vehicle_number: str
         :param vehicle_type: 车辆类型。 
         :type vehicle_type: str
-        :param vehicle_weight: 吨(座)位。 
-        :type vehicle_weight: str
+        :param maximum_capacity: 吨(座)位。 
+        :type maximum_capacity: str
         :param vehicle_size: 车辆尺寸。 
         :type vehicle_size: str
         :param issuing_authority: 核发机关（非必有，依赖对应运输证板式）。 
@@ -91,7 +91,7 @@ class TransportationLicenseResult:
         self._license_number = None
         self._vehicle_number = None
         self._vehicle_type = None
-        self._vehicle_weight = None
+        self._maximum_capacity = None
         self._vehicle_size = None
         self._issuing_authority = None
         self._issue_date = None
@@ -110,8 +110,8 @@ class TransportationLicenseResult:
             self.vehicle_number = vehicle_number
         if vehicle_type is not None:
             self.vehicle_type = vehicle_type
-        if vehicle_weight is not None:
-            self.vehicle_weight = vehicle_weight
+        if maximum_capacity is not None:
+            self.maximum_capacity = maximum_capacity
         if vehicle_size is not None:
             self.vehicle_size = vehicle_size
         if issuing_authority is not None:
@@ -218,26 +218,26 @@ class TransportationLicenseResult:
         self._vehicle_type = vehicle_type
 
     @property
-    def vehicle_weight(self):
-        """Gets the vehicle_weight of this TransportationLicenseResult.
+    def maximum_capacity(self):
+        """Gets the maximum_capacity of this TransportationLicenseResult.
 
         吨(座)位。 
 
-        :return: The vehicle_weight of this TransportationLicenseResult.
+        :return: The maximum_capacity of this TransportationLicenseResult.
         :rtype: str
         """
-        return self._vehicle_weight
+        return self._maximum_capacity
 
-    @vehicle_weight.setter
-    def vehicle_weight(self, vehicle_weight):
-        """Sets the vehicle_weight of this TransportationLicenseResult.
+    @maximum_capacity.setter
+    def maximum_capacity(self, maximum_capacity):
+        """Sets the maximum_capacity of this TransportationLicenseResult.
 
         吨(座)位。 
 
-        :param vehicle_weight: The vehicle_weight of this TransportationLicenseResult.
-        :type vehicle_weight: str
+        :param maximum_capacity: The maximum_capacity of this TransportationLicenseResult.
+        :type maximum_capacity: str
         """
-        self._vehicle_weight = vehicle_weight
+        self._maximum_capacity = maximum_capacity
 
     @property
     def vehicle_size(self):

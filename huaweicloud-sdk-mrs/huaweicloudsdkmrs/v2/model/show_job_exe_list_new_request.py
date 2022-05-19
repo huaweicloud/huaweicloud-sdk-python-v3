@@ -59,9 +59,9 @@ class ShowJobExeListNewRequest:
 
         :param cluster_id: 集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
         :type cluster_id: str
-        :param job_name: 作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～36个字符。
+        :param job_name: 作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～128个字符。
         :type job_name: str
-        :param job_id: 作业ID，只能由字母、数字、中划线(-)组成，并且长度为1~36字符。
+        :param job_id: 作业ID，只能由字母、数字、中划线(-)组成，并且长度为1~64字符。
         :type job_id: str
         :param user: 用户名称、只能由字母、数字、特殊字符(-_.)组成，且不能以数字开头，并且长度为1～32字符。
         :type user: str
@@ -154,7 +154,7 @@ class ShowJobExeListNewRequest:
     def job_name(self):
         """Gets the job_name of this ShowJobExeListNewRequest.
 
-        作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～36个字符。
+        作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～128个字符。
 
         :return: The job_name of this ShowJobExeListNewRequest.
         :rtype: str
@@ -165,7 +165,7 @@ class ShowJobExeListNewRequest:
     def job_name(self, job_name):
         """Sets the job_name of this ShowJobExeListNewRequest.
 
-        作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～36个字符。
+        作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～128个字符。
 
         :param job_name: The job_name of this ShowJobExeListNewRequest.
         :type job_name: str
@@ -176,7 +176,7 @@ class ShowJobExeListNewRequest:
     def job_id(self):
         """Gets the job_id of this ShowJobExeListNewRequest.
 
-        作业ID，只能由字母、数字、中划线(-)组成，并且长度为1~36字符。
+        作业ID，只能由字母、数字、中划线(-)组成，并且长度为1~64字符。
 
         :return: The job_id of this ShowJobExeListNewRequest.
         :rtype: str
@@ -187,7 +187,7 @@ class ShowJobExeListNewRequest:
     def job_id(self, job_id):
         """Sets the job_id of this ShowJobExeListNewRequest.
 
-        作业ID，只能由字母、数字、中划线(-)组成，并且长度为1~36字符。
+        作业ID，只能由字母、数字、中划线(-)组成，并且长度为1~64字符。
 
         :param job_id: The job_id of this ShowJobExeListNewRequest.
         :type job_id: str

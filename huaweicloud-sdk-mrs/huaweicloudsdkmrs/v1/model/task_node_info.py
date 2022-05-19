@@ -58,12 +58,9 @@ class TaskNodeInfo:
         self.discriminator = None
 
         self.node_size = node_size
-        if data_volume_type is not None:
-            self.data_volume_type = data_volume_type
-        if data_volume_count is not None:
-            self.data_volume_count = data_volume_count
-        if data_volume_size is not None:
-            self.data_volume_size = data_volume_size
+        self.data_volume_type = data_volume_type
+        self.data_volume_count = data_volume_count
+        self.data_volume_size = data_volume_size
 
     @property
     def node_size(self):

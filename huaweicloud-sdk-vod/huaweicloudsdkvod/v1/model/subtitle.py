@@ -45,7 +45,7 @@ class Subtitle:
         :type id: int
         :param type: 字幕文件类型，目前暂只支持“SRT”。
         :type type: str
-        :param language: 字幕语音类型。  取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
+        :param language: 字幕语言类型。  取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
         :type language: str
         :param md5: 字幕文件的MD5值。
         :type md5: str
@@ -118,7 +118,7 @@ class Subtitle:
     def language(self):
         """Gets the language of this Subtitle.
 
-        字幕语音类型。  取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
+        字幕语言类型。  取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
 
         :return: The language of this Subtitle.
         :rtype: str
@@ -129,7 +129,7 @@ class Subtitle:
     def language(self, language):
         """Sets the language of this Subtitle.
 
-        字幕语音类型。  取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
+        字幕语言类型。  取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
 
         :param language: The language of this Subtitle.
         :type language: str

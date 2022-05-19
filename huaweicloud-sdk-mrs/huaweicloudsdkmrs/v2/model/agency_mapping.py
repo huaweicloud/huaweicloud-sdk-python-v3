@@ -43,9 +43,9 @@ class AgencyMapping:
         :type agency: str
         :param identifier_type: 委托类型，分为“User”和“Group”两种。 - User表示该映射关系为针对用户的映射，identifiers中填写用户名称列表。 - Group表示该映射关系为针对用户组的映射，identifiers中填写用户组名称列表。
         :type identifier_type: str
-        :param identifiers: IAM委托映射的用户（组）名称列表。
+        :param identifiers: IAM委托映射的用户（组）名称列表。请前往IAM，单击“用户（组）”按钮，获取用户（组）名称列表。
         :type identifiers: list[str]
-        :param agency_id: 该映射关系绑定的委托的的唯一标识码。
+        :param agency_id: 该映射关系绑定的委托的的唯一标识码。请前往IAM，单击“委托”按钮，进入委托页面，将鼠标放置委托名称上，在弹窗中获取委托唯一标识码。
         :type agency_id: str
         """
         
@@ -110,7 +110,7 @@ class AgencyMapping:
     def identifiers(self):
         """Gets the identifiers of this AgencyMapping.
 
-        IAM委托映射的用户（组）名称列表。
+        IAM委托映射的用户（组）名称列表。请前往IAM，单击“用户（组）”按钮，获取用户（组）名称列表。
 
         :return: The identifiers of this AgencyMapping.
         :rtype: list[str]
@@ -121,7 +121,7 @@ class AgencyMapping:
     def identifiers(self, identifiers):
         """Sets the identifiers of this AgencyMapping.
 
-        IAM委托映射的用户（组）名称列表。
+        IAM委托映射的用户（组）名称列表。请前往IAM，单击“用户（组）”按钮，获取用户（组）名称列表。
 
         :param identifiers: The identifiers of this AgencyMapping.
         :type identifiers: list[str]
@@ -132,7 +132,7 @@ class AgencyMapping:
     def agency_id(self):
         """Gets the agency_id of this AgencyMapping.
 
-        该映射关系绑定的委托的的唯一标识码。
+        该映射关系绑定的委托的的唯一标识码。请前往IAM，单击“委托”按钮，进入委托页面，将鼠标放置委托名称上，在弹窗中获取委托唯一标识码。
 
         :return: The agency_id of this AgencyMapping.
         :rtype: str
@@ -143,7 +143,7 @@ class AgencyMapping:
     def agency_id(self, agency_id):
         """Sets the agency_id of this AgencyMapping.
 
-        该映射关系绑定的委托的的唯一标识码。
+        该映射关系绑定的委托的的唯一标识码。请前往IAM，单击“委托”按钮，进入委托页面，将鼠标放置委托名称上，在弹窗中获取委托唯一标识码。
 
         :param agency_id: The agency_id of this AgencyMapping.
         :type agency_id: str
