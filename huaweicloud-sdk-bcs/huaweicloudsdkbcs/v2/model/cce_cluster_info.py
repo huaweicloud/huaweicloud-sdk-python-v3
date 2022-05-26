@@ -22,15 +22,17 @@ class CCEClusterInfo:
 
     openapi_types = {
         'cluster_id': 'str',
-        'cluster_name': 'str'
+        'cluster_name': 'str',
+        'cluster_platform_type': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
-        'cluster_name': 'cluster_name'
+        'cluster_name': 'cluster_name',
+        'cluster_platform_type': 'cluster_platform_type'
     }
 
-    def __init__(self, cluster_id=None, cluster_name=None):
+    def __init__(self, cluster_id=None, cluster_name=None, cluster_platform_type=None):
         """CCEClusterInfo
 
         The model defined in huaweicloud sdk
@@ -39,16 +41,20 @@ class CCEClusterInfo:
         :type cluster_id: str
         :param cluster_name: 集群名称
         :type cluster_name: str
+        :param cluster_platform_type: 集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
+        :type cluster_platform_type: str
         """
         
         
 
         self._cluster_id = None
         self._cluster_name = None
+        self._cluster_platform_type = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
         self.cluster_name = cluster_name
+        self.cluster_platform_type = cluster_platform_type
 
     @property
     def cluster_id(self):
@@ -93,6 +99,28 @@ class CCEClusterInfo:
         :type cluster_name: str
         """
         self._cluster_name = cluster_name
+
+    @property
+    def cluster_platform_type(self):
+        """Gets the cluster_platform_type of this CCEClusterInfo.
+
+        集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
+
+        :return: The cluster_platform_type of this CCEClusterInfo.
+        :rtype: str
+        """
+        return self._cluster_platform_type
+
+    @cluster_platform_type.setter
+    def cluster_platform_type(self, cluster_platform_type):
+        """Sets the cluster_platform_type of this CCEClusterInfo.
+
+        集群CPU架构类型：X86（VirtualMachine），ARM（ARM64）
+
+        :param cluster_platform_type: The cluster_platform_type of this CCEClusterInfo.
+        :type cluster_platform_type: str
+        """
+        self._cluster_platform_type = cluster_platform_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

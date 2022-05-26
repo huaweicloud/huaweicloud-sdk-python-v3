@@ -22,15 +22,19 @@ class AttachServerVolumeOption:
 
     openapi_types = {
         'device': 'str',
-        'volume_id': 'str'
+        'volume_id': 'str',
+        'volume_type': 'str',
+        'hwpassthrough': 'str'
     }
 
     attribute_map = {
         'device': 'device',
-        'volume_id': 'volumeId'
+        'volume_id': 'volumeId',
+        'volume_type': 'volume_type',
+        'hwpassthrough': 'hw:passthrough'
     }
 
-    def __init__(self, device=None, volume_id=None):
+    def __init__(self, device=None, volume_id=None, volume_type=None, hwpassthrough=None):
         """AttachServerVolumeOption
 
         The model defined in huaweicloud sdk
@@ -39,17 +43,27 @@ class AttachServerVolumeOption:
         :type device: str
         :param volume_id: 待挂载磁盘的磁盘ID，UUID格式。
         :type volume_id: str
+        :param volume_type: 云硬盘类型。  该字段于dry_run为true并且volumeId不存在时有效且为必选字段。
+        :type volume_type: str
+        :param hwpassthrough: - true: 表示云硬盘的设备类型为SCSI类型，即允许ECS操作系统直接访问底层存储介质。支持SCSI锁命令 - false: 表示云硬盘的设备类型为VBD (虚拟块存储设备 , Virtual Block Device)类型，VBD只能支持简单的SCSI读写命令。 该字段于dry_run为true并且volumeId不存在时有效且为必选字段。
+        :type hwpassthrough: str
         """
         
         
 
         self._device = None
         self._volume_id = None
+        self._volume_type = None
+        self._hwpassthrough = None
         self.discriminator = None
 
         if device is not None:
             self.device = device
         self.volume_id = volume_id
+        if volume_type is not None:
+            self.volume_type = volume_type
+        if hwpassthrough is not None:
+            self.hwpassthrough = hwpassthrough
 
     @property
     def device(self):
@@ -94,6 +108,50 @@ class AttachServerVolumeOption:
         :type volume_id: str
         """
         self._volume_id = volume_id
+
+    @property
+    def volume_type(self):
+        """Gets the volume_type of this AttachServerVolumeOption.
+
+        云硬盘类型。  该字段于dry_run为true并且volumeId不存在时有效且为必选字段。
+
+        :return: The volume_type of this AttachServerVolumeOption.
+        :rtype: str
+        """
+        return self._volume_type
+
+    @volume_type.setter
+    def volume_type(self, volume_type):
+        """Sets the volume_type of this AttachServerVolumeOption.
+
+        云硬盘类型。  该字段于dry_run为true并且volumeId不存在时有效且为必选字段。
+
+        :param volume_type: The volume_type of this AttachServerVolumeOption.
+        :type volume_type: str
+        """
+        self._volume_type = volume_type
+
+    @property
+    def hwpassthrough(self):
+        """Gets the hwpassthrough of this AttachServerVolumeOption.
+
+        - true: 表示云硬盘的设备类型为SCSI类型，即允许ECS操作系统直接访问底层存储介质。支持SCSI锁命令 - false: 表示云硬盘的设备类型为VBD (虚拟块存储设备 , Virtual Block Device)类型，VBD只能支持简单的SCSI读写命令。 该字段于dry_run为true并且volumeId不存在时有效且为必选字段。
+
+        :return: The hwpassthrough of this AttachServerVolumeOption.
+        :rtype: str
+        """
+        return self._hwpassthrough
+
+    @hwpassthrough.setter
+    def hwpassthrough(self, hwpassthrough):
+        """Sets the hwpassthrough of this AttachServerVolumeOption.
+
+        - true: 表示云硬盘的设备类型为SCSI类型，即允许ECS操作系统直接访问底层存储介质。支持SCSI锁命令 - false: 表示云硬盘的设备类型为VBD (虚拟块存储设备 , Virtual Block Device)类型，VBD只能支持简单的SCSI读写命令。 该字段于dry_run为true并且volumeId不存在时有效且为必选字段。
+
+        :param hwpassthrough: The hwpassthrough of this AttachServerVolumeOption.
+        :type hwpassthrough: str
+        """
+        self._hwpassthrough = hwpassthrough
 
     def to_dict(self):
         """Returns the model properties as a dict"""

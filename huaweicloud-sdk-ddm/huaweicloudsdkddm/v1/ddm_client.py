@@ -1515,9 +1515,9 @@ class DdmClient(Client):
             request_type=request.__class__.__name__)
 
     def update_database_info(self, request):
-        """同步数据库实例信息
+        """同步DN信息
 
-        同步当前DDM实例已关的所有数据库实例配置信息。
+        同步当前DDM实例已关联的所有DN实例配置信息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

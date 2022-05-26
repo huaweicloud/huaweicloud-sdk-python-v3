@@ -27,7 +27,8 @@ class ResizeInstanceBody:
         'reserved_ip': 'list[str]',
         'change_type': 'str',
         'available_zones': 'list[str]',
-        'node_list': 'list[str]'
+        'node_list': 'list[str]',
+        'execute_immediately': 'bool'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class ResizeInstanceBody:
         'reserved_ip': 'reserved_ip',
         'change_type': 'change_type',
         'available_zones': 'available_zones',
-        'node_list': 'node_list'
+        'node_list': 'node_list',
+        'execute_immediately': 'execute_immediately'
     }
 
-    def __init__(self, spec_code=None, new_capacity=None, bss_param=None, reserved_ip=None, change_type=None, available_zones=None, node_list=None):
+    def __init__(self, spec_code=None, new_capacity=None, bss_param=None, reserved_ip=None, change_type=None, available_zones=None, node_list=None, execute_immediately=None):
         """ResizeInstanceBody
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ResizeInstanceBody:
         :type available_zones: list[str]
         :param node_list: Redis 4.0或者5.0主备实例进行删除副本时必选，指定需要删除的节点ID，目前仅支持一次删除一个副本。  节点ID查询方法，请参考[查询分片信息](https://support.huaweicloud.com/api-dcs/ListGroupReplicationInfo.html) 
         :type node_list: list[str]
+        :param execute_immediately: 是否立即变更。默认值为true。 - true: 立即变更 - false: 可维护时间窗内进行变更 
+        :type execute_immediately: bool
         """
         
         
@@ -70,6 +74,7 @@ class ResizeInstanceBody:
         self._change_type = None
         self._available_zones = None
         self._node_list = None
+        self._execute_immediately = None
         self.discriminator = None
 
         self.spec_code = spec_code
@@ -84,6 +89,8 @@ class ResizeInstanceBody:
             self.available_zones = available_zones
         if node_list is not None:
             self.node_list = node_list
+        if execute_immediately is not None:
+            self.execute_immediately = execute_immediately
 
     @property
     def spec_code(self):
@@ -236,6 +243,28 @@ class ResizeInstanceBody:
         :type node_list: list[str]
         """
         self._node_list = node_list
+
+    @property
+    def execute_immediately(self):
+        """Gets the execute_immediately of this ResizeInstanceBody.
+
+        是否立即变更。默认值为true。 - true: 立即变更 - false: 可维护时间窗内进行变更 
+
+        :return: The execute_immediately of this ResizeInstanceBody.
+        :rtype: bool
+        """
+        return self._execute_immediately
+
+    @execute_immediately.setter
+    def execute_immediately(self, execute_immediately):
+        """Sets the execute_immediately of this ResizeInstanceBody.
+
+        是否立即变更。默认值为true。 - true: 立即变更 - false: 可维护时间窗内进行变更 
+
+        :param execute_immediately: The execute_immediately of this ResizeInstanceBody.
+        :type execute_immediately: bool
+        """
+        self._execute_immediately = execute_immediately
 
     def to_dict(self):
         """Returns the model properties as a dict"""

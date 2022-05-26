@@ -22,35 +22,35 @@ class ValidateSignatureResponse(SdkResponse):
 
     openapi_types = {
         'key_id': 'str',
-        'signature_vaild': 'bool'
+        'signature_valid': 'str'
     }
 
     attribute_map = {
         'key_id': 'key_id',
-        'signature_vaild': 'signature_vaild'
+        'signature_valid': 'signature_valid'
     }
 
-    def __init__(self, key_id=None, signature_vaild=None):
+    def __init__(self, key_id=None, signature_valid=None):
         """ValidateSignatureResponse
 
         The model defined in huaweicloud sdk
 
         :param key_id: 密钥ID。
         :type key_id: str
-        :param signature_vaild: 签名验证合法性，“true”表示验证签名合法，“false”表示验证签名非法。
-        :type signature_vaild: bool
+        :param signature_valid: 签名验证合法性，“true”表示验证签名合法，“false”表示验证签名非法。
+        :type signature_valid: str
         """
         
         super(ValidateSignatureResponse, self).__init__()
 
         self._key_id = None
-        self._signature_vaild = None
+        self._signature_valid = None
         self.discriminator = None
 
         if key_id is not None:
             self.key_id = key_id
-        if signature_vaild is not None:
-            self.signature_vaild = signature_vaild
+        if signature_valid is not None:
+            self.signature_valid = signature_valid
 
     @property
     def key_id(self):
@@ -75,26 +75,26 @@ class ValidateSignatureResponse(SdkResponse):
         self._key_id = key_id
 
     @property
-    def signature_vaild(self):
-        """Gets the signature_vaild of this ValidateSignatureResponse.
+    def signature_valid(self):
+        """Gets the signature_valid of this ValidateSignatureResponse.
 
         签名验证合法性，“true”表示验证签名合法，“false”表示验证签名非法。
 
-        :return: The signature_vaild of this ValidateSignatureResponse.
-        :rtype: bool
+        :return: The signature_valid of this ValidateSignatureResponse.
+        :rtype: str
         """
-        return self._signature_vaild
+        return self._signature_valid
 
-    @signature_vaild.setter
-    def signature_vaild(self, signature_vaild):
-        """Sets the signature_vaild of this ValidateSignatureResponse.
+    @signature_valid.setter
+    def signature_valid(self, signature_valid):
+        """Sets the signature_valid of this ValidateSignatureResponse.
 
         签名验证合法性，“true”表示验证签名合法，“false”表示验证签名非法。
 
-        :param signature_vaild: The signature_vaild of this ValidateSignatureResponse.
-        :type signature_vaild: bool
+        :param signature_valid: The signature_valid of this ValidateSignatureResponse.
+        :type signature_valid: str
         """
-        self._signature_vaild = signature_vaild
+        self._signature_valid = signature_valid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

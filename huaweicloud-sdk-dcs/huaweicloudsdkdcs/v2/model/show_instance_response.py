@@ -62,7 +62,10 @@ class ShowInstanceResponse(SdkResponse):
         'service_task_id': 'str',
         'enterprise_project_id': 'str',
         'backend_addrs': 'str',
-        'domain_name_info': 'DomainNameInfo'
+        'features': 'Features',
+        'domain_name_info': 'DomainNameInfo',
+        'transparent_client_ip_enable': 'bool',
+        'sub_status': 'str'
     }
 
     attribute_map = {
@@ -107,10 +110,13 @@ class ShowInstanceResponse(SdkResponse):
         'service_task_id': 'service_task_id',
         'enterprise_project_id': 'enterprise_project_id',
         'backend_addrs': 'backend_addrs',
-        'domain_name_info': 'domain_name_info'
+        'features': 'features',
+        'domain_name_info': 'domain_name_info',
+        'transparent_client_ip_enable': 'transparent_client_ip_enable',
+        'sub_status': 'sub_status'
     }
 
-    def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, readonly_domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None, domain_name_info=None):
+    def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, readonly_domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None, features=None, domain_name_info=None, transparent_client_ip_enable=None, sub_status=None):
         """ShowInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -197,8 +203,14 @@ class ShowInstanceResponse(SdkResponse):
         :type enterprise_project_id: str
         :param backend_addrs: 集群实例的后端服务地址。
         :type backend_addrs: str
+        :param features: 
+        :type features: :class:`huaweicloudsdkdcs.v2.Features`
         :param domain_name_info: 
         :type domain_name_info: :class:`huaweicloudsdkdcs.v2.DomainNameInfo`
+        :param transparent_client_ip_enable: 是否开启客户端ip透传。
+        :type transparent_client_ip_enable: bool
+        :param sub_status: 实例子状态。
+        :type sub_status: str
         """
         
         super(ShowInstanceResponse, self).__init__()
@@ -244,7 +256,10 @@ class ShowInstanceResponse(SdkResponse):
         self._service_task_id = None
         self._enterprise_project_id = None
         self._backend_addrs = None
+        self._features = None
         self._domain_name_info = None
+        self._transparent_client_ip_enable = None
+        self._sub_status = None
         self.discriminator = None
 
         if vpc_name is not None:
@@ -329,8 +344,14 @@ class ShowInstanceResponse(SdkResponse):
             self.enterprise_project_id = enterprise_project_id
         if backend_addrs is not None:
             self.backend_addrs = backend_addrs
+        if features is not None:
+            self.features = features
         if domain_name_info is not None:
             self.domain_name_info = domain_name_info
+        if transparent_client_ip_enable is not None:
+            self.transparent_client_ip_enable = transparent_client_ip_enable
+        if sub_status is not None:
+            self.sub_status = sub_status
 
     @property
     def vpc_name(self):
@@ -1233,6 +1254,26 @@ class ShowInstanceResponse(SdkResponse):
         self._backend_addrs = backend_addrs
 
     @property
+    def features(self):
+        """Gets the features of this ShowInstanceResponse.
+
+
+        :return: The features of this ShowInstanceResponse.
+        :rtype: :class:`huaweicloudsdkdcs.v2.Features`
+        """
+        return self._features
+
+    @features.setter
+    def features(self, features):
+        """Sets the features of this ShowInstanceResponse.
+
+
+        :param features: The features of this ShowInstanceResponse.
+        :type features: :class:`huaweicloudsdkdcs.v2.Features`
+        """
+        self._features = features
+
+    @property
     def domain_name_info(self):
         """Gets the domain_name_info of this ShowInstanceResponse.
 
@@ -1251,6 +1292,50 @@ class ShowInstanceResponse(SdkResponse):
         :type domain_name_info: :class:`huaweicloudsdkdcs.v2.DomainNameInfo`
         """
         self._domain_name_info = domain_name_info
+
+    @property
+    def transparent_client_ip_enable(self):
+        """Gets the transparent_client_ip_enable of this ShowInstanceResponse.
+
+        是否开启客户端ip透传。
+
+        :return: The transparent_client_ip_enable of this ShowInstanceResponse.
+        :rtype: bool
+        """
+        return self._transparent_client_ip_enable
+
+    @transparent_client_ip_enable.setter
+    def transparent_client_ip_enable(self, transparent_client_ip_enable):
+        """Sets the transparent_client_ip_enable of this ShowInstanceResponse.
+
+        是否开启客户端ip透传。
+
+        :param transparent_client_ip_enable: The transparent_client_ip_enable of this ShowInstanceResponse.
+        :type transparent_client_ip_enable: bool
+        """
+        self._transparent_client_ip_enable = transparent_client_ip_enable
+
+    @property
+    def sub_status(self):
+        """Gets the sub_status of this ShowInstanceResponse.
+
+        实例子状态。
+
+        :return: The sub_status of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._sub_status
+
+    @sub_status.setter
+    def sub_status(self, sub_status):
+        """Sets the sub_status of this ShowInstanceResponse.
+
+        实例子状态。
+
+        :param sub_status: The sub_status of this ShowInstanceResponse.
+        :type sub_status: str
+        """
+        self._sub_status = sub_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

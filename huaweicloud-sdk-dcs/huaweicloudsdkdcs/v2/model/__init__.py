@@ -80,6 +80,7 @@ from huaweicloudsdkdcs.v2.model.dim_child import DimChild
 from huaweicloudsdkdcs.v2.model.domain_name_entity import DomainNameEntity
 from huaweicloudsdkdcs.v2.model.domain_name_info import DomainNameInfo
 from huaweicloudsdkdcs.v2.model.download_backup_files_req import DownloadBackupFilesReq
+from huaweicloudsdkdcs.v2.model.features import Features
 from huaweicloudsdkdcs.v2.model.files import Files
 from huaweicloudsdkdcs.v2.model.flavor_az_object import FlavorAzObject
 from huaweicloudsdkdcs.v2.model.flavors_items import FlavorsItems

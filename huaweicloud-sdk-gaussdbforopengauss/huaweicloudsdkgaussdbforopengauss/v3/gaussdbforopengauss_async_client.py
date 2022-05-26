@@ -668,6 +668,70 @@ class GaussDBforopenGaussAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_component_infos_async(self, request):
+        """查询实例的组件列表
+
+        查询实例的组件列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListComponentInfos
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListComponentInfosRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListComponentInfosResponse`
+        """
+        return self.list_component_infos_with_http_info(request)
+
+    def list_component_infos_with_http_info(self, request):
+        all_params = ['instance_id', 'x_language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/components',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListComponentInfosResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_configurations_async(self, request):
         """获取参数模板列表
 
@@ -1314,6 +1378,68 @@ class GaussDBforopenGaussAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def resize_instance_flavor_async(self, request):
+        """GaussDB(for openGauss)数据库实例规格变更
+
+        GaussDB(for openGauss)数据库实例规格变更
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ResizeInstanceFlavor
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResizeInstanceFlavorRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ResizeInstanceFlavorResponse`
+        """
+        return self.resize_instance_flavor_with_http_info(request)
+
+    def resize_instance_flavor_with_http_info(self, request):
+        all_params = ['instance_id', 'create_instance_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instance/{instance_id}/flavor',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResizeInstanceFlavorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def restart_instance_async(self, request):
         """重启数据库实例
 
@@ -1675,6 +1801,68 @@ class GaussDBforopenGaussAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowInstanceConfigurationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def switch_shard_async(self, request):
+        """分片节点主备切换。
+
+        支持用户对单个或多个DN分片做主备切换，同一分组内只能指定一个新的备节点进行升主操作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SwitchShard
+        :type request: :class:`huaweicloudsdkgaussdbforopengauss.v3.SwitchShardRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.SwitchShardResponse`
+        """
+        return self.switch_shard_with_http_info(request)
+
+    def switch_shard_with_http_info(self, request):
+        all_params = ['instance_id', 'switch_shard_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/switch-shard',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SwitchShardResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

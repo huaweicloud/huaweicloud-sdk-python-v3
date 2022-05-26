@@ -24,17 +24,23 @@ class DeleteBlockchainRequest:
         'blockchain_id': 'str',
         'is_delete_storage': 'bool',
         'is_delete_obs': 'bool',
-        'is_delete_resource': 'bool'
+        'is_delete_resource': 'bool',
+        'is_delete_ief': 'bool',
+        'is_delete_lightpeer': 'str',
+        'ief_nodes_id': 'str'
     }
 
     attribute_map = {
         'blockchain_id': 'blockchain_id',
         'is_delete_storage': 'is_delete_storage',
         'is_delete_obs': 'is_delete_obs',
-        'is_delete_resource': 'is_delete_resource'
+        'is_delete_resource': 'is_delete_resource',
+        'is_delete_ief': 'is_delete_ief',
+        'is_delete_lightpeer': 'is_delete_lightpeer',
+        'ief_nodes_id': 'ief_nodes_id'
     }
 
-    def __init__(self, blockchain_id=None, is_delete_storage=None, is_delete_obs=None, is_delete_resource=None):
+    def __init__(self, blockchain_id=None, is_delete_storage=None, is_delete_obs=None, is_delete_resource=None, is_delete_ief=None, is_delete_lightpeer=None, ief_nodes_id=None):
         """DeleteBlockchainRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +53,12 @@ class DeleteBlockchainRequest:
         :type is_delete_obs: bool
         :param is_delete_resource: 是否删除底层CCE资源，IEF模式下不用填写
         :type is_delete_resource: bool
+        :param is_delete_ief: 是否删除底层依赖的IEF边缘节点资源，CCE模式下不用填写，IEF模式下必填
+        :type is_delete_ief: bool
+        :param is_delete_lightpeer: CCE模式下选填：是否删除LightPeer轻节点插件使用的IEF边缘节点资源，若需要删除，则填写对应的IEF编译节点名称，否则无需填写。例如：is_delete_lightpeer&#x3D;ief_node_name_1,ief_node_name_2
+        :type is_delete_lightpeer: str
+        :param ief_nodes_id: IEF模式下选填：若需要删除IEF边缘集群所使用的IEF边缘节点资源，则填写IEF节点的id，否则无需填写。例如：ief_nodes_id&#x3D;1356f6f0-c448-4ec2-926f-c13b026369d9，0cdacbf9-2002-41e9-8123-2fa13e8d1449
+        :type ief_nodes_id: str
         """
         
         
@@ -55,6 +67,9 @@ class DeleteBlockchainRequest:
         self._is_delete_storage = None
         self._is_delete_obs = None
         self._is_delete_resource = None
+        self._is_delete_ief = None
+        self._is_delete_lightpeer = None
+        self._ief_nodes_id = None
         self.discriminator = None
 
         self.blockchain_id = blockchain_id
@@ -64,6 +79,12 @@ class DeleteBlockchainRequest:
             self.is_delete_obs = is_delete_obs
         if is_delete_resource is not None:
             self.is_delete_resource = is_delete_resource
+        if is_delete_ief is not None:
+            self.is_delete_ief = is_delete_ief
+        if is_delete_lightpeer is not None:
+            self.is_delete_lightpeer = is_delete_lightpeer
+        if ief_nodes_id is not None:
+            self.ief_nodes_id = ief_nodes_id
 
     @property
     def blockchain_id(self):
@@ -152,6 +173,72 @@ class DeleteBlockchainRequest:
         :type is_delete_resource: bool
         """
         self._is_delete_resource = is_delete_resource
+
+    @property
+    def is_delete_ief(self):
+        """Gets the is_delete_ief of this DeleteBlockchainRequest.
+
+        是否删除底层依赖的IEF边缘节点资源，CCE模式下不用填写，IEF模式下必填
+
+        :return: The is_delete_ief of this DeleteBlockchainRequest.
+        :rtype: bool
+        """
+        return self._is_delete_ief
+
+    @is_delete_ief.setter
+    def is_delete_ief(self, is_delete_ief):
+        """Sets the is_delete_ief of this DeleteBlockchainRequest.
+
+        是否删除底层依赖的IEF边缘节点资源，CCE模式下不用填写，IEF模式下必填
+
+        :param is_delete_ief: The is_delete_ief of this DeleteBlockchainRequest.
+        :type is_delete_ief: bool
+        """
+        self._is_delete_ief = is_delete_ief
+
+    @property
+    def is_delete_lightpeer(self):
+        """Gets the is_delete_lightpeer of this DeleteBlockchainRequest.
+
+        CCE模式下选填：是否删除LightPeer轻节点插件使用的IEF边缘节点资源，若需要删除，则填写对应的IEF编译节点名称，否则无需填写。例如：is_delete_lightpeer=ief_node_name_1,ief_node_name_2
+
+        :return: The is_delete_lightpeer of this DeleteBlockchainRequest.
+        :rtype: str
+        """
+        return self._is_delete_lightpeer
+
+    @is_delete_lightpeer.setter
+    def is_delete_lightpeer(self, is_delete_lightpeer):
+        """Sets the is_delete_lightpeer of this DeleteBlockchainRequest.
+
+        CCE模式下选填：是否删除LightPeer轻节点插件使用的IEF边缘节点资源，若需要删除，则填写对应的IEF编译节点名称，否则无需填写。例如：is_delete_lightpeer=ief_node_name_1,ief_node_name_2
+
+        :param is_delete_lightpeer: The is_delete_lightpeer of this DeleteBlockchainRequest.
+        :type is_delete_lightpeer: str
+        """
+        self._is_delete_lightpeer = is_delete_lightpeer
+
+    @property
+    def ief_nodes_id(self):
+        """Gets the ief_nodes_id of this DeleteBlockchainRequest.
+
+        IEF模式下选填：若需要删除IEF边缘集群所使用的IEF边缘节点资源，则填写IEF节点的id，否则无需填写。例如：ief_nodes_id=1356f6f0-c448-4ec2-926f-c13b026369d9，0cdacbf9-2002-41e9-8123-2fa13e8d1449
+
+        :return: The ief_nodes_id of this DeleteBlockchainRequest.
+        :rtype: str
+        """
+        return self._ief_nodes_id
+
+    @ief_nodes_id.setter
+    def ief_nodes_id(self, ief_nodes_id):
+        """Sets the ief_nodes_id of this DeleteBlockchainRequest.
+
+        IEF模式下选填：若需要删除IEF边缘集群所使用的IEF边缘节点资源，则填写IEF节点的id，否则无需填写。例如：ief_nodes_id=1356f6f0-c448-4ec2-926f-c13b026369d9，0cdacbf9-2002-41e9-8123-2fa13e8d1449
+
+        :param ief_nodes_id: The ief_nodes_id of this DeleteBlockchainRequest.
+        :type ief_nodes_id: str
+        """
+        self._ief_nodes_id = ief_nodes_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

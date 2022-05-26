@@ -1,3 +1,95 @@
+# 3.0.90 2022-05-26
+
+### HuaweiCloud SDK BCS
+
+- _Features_
+  - Support the interfaces `HandleUnionMemberQuitList`, `BatchRemovePeersFromChannel`, `DeleteChannel`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `is_delete_ief`, `is_delete_lightpeer`, `ief_nodes_id` to the interface `DeleteBlockchain`
+  - Changes of the interface `CreateNewBlockchain`:
+    - Add the request parameter `cluster_platform_type`
+    - Remove the request parameters `user_name`, `password`
+    - Modify the type `int64` -> `string` of the request parameter `node_flavor`
+    - Modify the type `int64` -> `string` of the request parameter `cce_flavor`
+    - Modify the type `int64` -> `string` of the request parameter `init_node_pwd`
+    - Modify the type `int64` -> `string` of the request parameter `az`
+    - Modify the type `int64` -> `string` of the request parameter `cluster_platform_type`
+  - Add the request parameter `CreateBlockchainCertByUserNameRequestBody` to the interface `CreateBlockchainCertByUserName`
+  - Add the request parameter `file` to the interface `UnfreezeCert`
+  - Add the request parameter `file` to the interface `FreezeCert`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `features`, `sub_status` to the interface `ListInstances`
+  - Add the response parameters `features`, `transparent_client_ip_enable`, `sub_status` to the interface `ShowInstance`
+  - Add the request parameter `execute_immediately` to the interface `ResizeInstance`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `volume_type`, `hw:passthrough` to the interface `AttachServerVolume`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - Support the interfaces `ListComponentInfos`, `SwitchShard`, `ResizeInstanceFlavor`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameters `rate_limit`, `prefetch_block`, `filesplit_size` from the interface `ShowBackupPolicy`
+  - Modify the type `object` -> `string` of the response parameter `memberof` of the interface `ListDbUsers`
+
+### HuaweiCloud SDK KMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ValidateSignature`:
+    - Add the response parameter `signature_valid`
+    - Remove the response parameter `signature_vaild`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateAomMappingRules`:
+    - Add the request parameter `deployments_prefix`
+    - Add the response parameter `deployments_prefix`
+  - Changes of the interface `UpdateAomMappingRules`:
+    - Add the request parameter `deployments_prefix`
+    - Add the response parameter `deployments_prefix`
+  - Add the response parameter `deployments_prefix` to the interface `ShowAomMappingRules`
+  - Add the response parameter `deployments_prefix` to the interface `ShowAomMappingRule`
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `ocr_text`, `error_code`, `error_msg` to the interface `RunCheckResult`
+  - Changes of the interface `RunImageBatchModeration`:
+    - Add the request parameters `moderation_rule`, `ad_categories`, `show_ocr_text`
+    - Add the response parameters `ocr_text`, `error_code`, `error_msg`
+  - Add the request parameters `moderation_rule`, `ad_categories`, `show_ocr_text` to the interface `RunTaskSumbit`
+
 # 3.0.89 2022-05-19
 
 ### HuaweiCloud SDK APIG
@@ -130,7 +222,7 @@
 ### HuaweiCloud SDK FRS
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `DetectLiveByUrlIntl`
     - `DetectLiveByFileIntl`
     - `DetectLiveByBase64Intl`
@@ -145,7 +237,7 @@
 ### HuaweiCloud SDK GaussDBforopenGauss
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `ListBackups`
     - `CreateManualBackup`
     - `DeleteManualBackup`
@@ -640,7 +732,7 @@
 ### HuaweiCloud SDK IEC
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `ListRelatedRoutetables`
     - `ListRoutetables`
     - `CreateRoutetable`
@@ -774,7 +866,7 @@
 ### HuaweiCloud SDK DSC
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `CreateDocWatermarkByAddress`
     - `ShowDocWatermarkByAddress`
     - `ShowImageWatermarkWithImage`
@@ -1023,7 +1115,7 @@
 ### HuaweiCloud SDK FunctionGraph
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `ListWorkflows`
     - `CreateWorkflow`
     - `BatchDeleteWorkflows`
@@ -1096,7 +1188,7 @@
 ### HuaweiCloud SDK VSS
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `ShowDomainSettings`
     - `UpdateDomainSettings`
     - `ListTaskHistories`
@@ -1147,7 +1239,7 @@
 ### HuaweiCloud SDK DWS
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `ListClusterDetails`
     - `DeleteCluster`
     - `ResetPassword`
@@ -1169,7 +1261,7 @@
 ### HuaweiCloud SDK ELB
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `ListLogtanks`
     - `CreateLogtank`
     - `ShowLogtank`
@@ -1230,7 +1322,7 @@
 ### HuaweiCloud SDK CES
 
 - _Features_
-  - Support the following interfaces (V2)：
+  - Support the following interfaces (V2):
     - `ListAlarms`
     - `CreateAlarm`
     - `DeleteAlarm`
@@ -1487,7 +1579,7 @@
 ### HuaweiCloud SDK CSS
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `UpdateFlavor`
     - `UpdateFlavorByType`
     - `UpdateShrinkNodes`
@@ -1731,7 +1823,7 @@
 ### HuaweiCloud SDK CSS
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `UpdateOndemandClusterToPeriod`
     - `UpdateClusterName`
     - `ResetPassword`
@@ -2367,7 +2459,7 @@
 ### HuaweiCloud SDK DevStar
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `ShowApplicationV3`
     - `UpdateApplication`
     - `ShowApplicationDependentResources`
@@ -2471,7 +2563,7 @@
 ### HuaweiCloud SDK MRS
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `CreateScalingPolicy`
     - `ShowClusterDetails`
     - `UpdateClusterScaling`
@@ -2610,7 +2702,7 @@
 ### HuaweiCloud SDK OCR
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `RecognizeThailandIdcard`
     - `RecognizeMyanmarIdcard`
     - `RecognizeMyanmarDriverLicense`
@@ -2768,7 +2860,7 @@
 ### HuaweiCloud SDK GaussDB
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `ListInstanceTags`
     - `ListProjectTags`
     - `BatchTagAction`
@@ -2829,7 +2921,7 @@
 ### HuaweiCloud SDK LTS
 
 - _Features_
-  - Support the following interfaces：
+  - Support the following interfaces:
     - `ListLogHistogram`
     - `ListHost`
     - `ListHostGroup`
@@ -3636,7 +3728,7 @@
     - `DeleteAlarmRule`
     - `ShowAlarmRule`
 - _Bug Fix_
-  - [Issue #43](https://github.com/huaweicloud/huaweicloud-sdk-java-v3/issues/43)：Fix the issue of incorrect type of the response parameter `offset` of the interface `ListSeries`.
+  - [Issue #43](https://github.com/huaweicloud/huaweicloud-sdk-java-v3/issues/43):Fix the issue of incorrect type of the response parameter `offset` of the interface `ListSeries`.
 - _Change_
   - None
 
@@ -4975,7 +5067,7 @@
     - None
 - _Change_
     - Remove the response parameters `urls`, `task_id` of the interface `ShowHistoryTasks`.
-    - Remove the response parameters `task_id`, `process_reason`, modify the type of the request parameter `process_reason`：`integer`->`string`
+    - Remove the response parameters `task_id`, `process_reason`, modify the type of the request parameter `process_reason`:`integer`->`string`
     - Remove the request parameters `user_domain_id`, `task_id` of the interface `ShowTopUrl`.
 
 ### HuaweiCloud SDK CloudPipeline

@@ -1,3 +1,95 @@
+# 3.0.90 2022-05-26
+
+### HuaweiCloud SDK BCS
+
+- _新增特性_
+  - 支持接口`HandleUnionMemberQuitList`、`BatchRemovePeersFromChannel`、`DeleteChannel`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DeleteBlockchain`新增请求参数 `is_delete_ief`、`is_delete_lightpeer`、`ief_nodes_id`
+  - 接口`CreateNewBlockchain`:
+    - 新增请求参数 `cluster_platform_type`
+    - 移除请求参数 `user_name`、`password`
+    - 请求参数`node_flavor`类型调整 `int64` -> `string`
+    - 请求参数`cce_flavor`类型调整 `int64` -> `string`
+    - 请求参数`init_node_pwd`类型调整 `int64` -> `string`
+    - 请求参数`az`类型调整 `int64` -> `string`
+    - 请求参数`cluster_platform_type`类型调整 `int64` -> `string`
+  - 接口`CreateBlockchainCertByUserName`新增请求参数 `CreateBlockchainCertByUserNameRequestBody`
+  - 接口`UnfreezeCert`新增请求参数 `file`
+  - 接口`FreezeCert`新增请求参数 `file`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`新增响应参数 `features`、`sub_status`
+  - 接口`ShowInstance`新增响应参数 `features`、`transparent_client_ip_enable`、`sub_status`
+  - 接口`ResizeInstance`新增请求参数 `execute_immediately`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`AttachServerVolume`新增请求参数 `volume_type`、`hw:passthrough`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 支持接口`ListComponentInfos`、`SwitchShard`、`ResizeInstanceFlavor`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowBackupPolicy`移除响应参数 `rate_limit`、`prefetch_block`、`filesplit_size`
+  - 接口`ListDbUsers`响应参数`memberof`类型调整 `object` -> `string`
+
+### HuaweiCloud SDK KMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ValidateSignature`:
+    - 新增响应参数 `signature_valid`
+    - 移除响应参数 `signature_vaild`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateAomMappingRules`:
+    - 新增请求参数 `deployments_prefix`
+    - 新增响应参数 `deployments_prefix`
+  - 接口`UpdateAomMappingRules`:
+    - 新增请求参数 `deployments_prefix`
+    - 新增响应参数 `deployments_prefix`
+  - 接口`ShowAomMappingRules`新增响应参数 `deployments_prefix`
+  - 接口`ShowAomMappingRule`新增响应参数 `deployments_prefix`
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RunCheckResult`新增响应参数 `ocr_text`、`error_code`、`error_msg`
+  - 接口`RunImageBatchModeration`:
+    - 新增请求参数 `moderation_rule`、`ad_categories`、`show_ocr_text`
+    - 新增响应参数 `ocr_text`、`error_code`、`error_msg`
+  - 接口`RunTaskSumbit`新增请求参数 `moderation_rule`、`ad_categories`、`show_ocr_text`
+
 # 3.0.89 2022-05-19
 
 ### HuaweiCloud SDK APIG

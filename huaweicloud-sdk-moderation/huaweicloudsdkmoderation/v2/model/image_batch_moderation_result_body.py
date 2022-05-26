@@ -24,17 +24,23 @@ class ImageBatchModerationResultBody:
         'url': 'str',
         'suggestion': 'str',
         'detail': 'ImageDetectionResultDetail',
-        'category_suggestions': 'object'
+        'category_suggestions': 'object',
+        'ocr_text': 'str',
+        'error_code': 'str',
+        'error_msg': 'str'
     }
 
     attribute_map = {
         'url': 'url',
         'suggestion': 'suggestion',
         'detail': 'detail',
-        'category_suggestions': 'category_suggestions'
+        'category_suggestions': 'category_suggestions',
+        'ocr_text': 'ocr_text',
+        'error_code': 'error_code',
+        'error_msg': 'error_msg'
     }
 
-    def __init__(self, url=None, suggestion=None, detail=None, category_suggestions=None):
+    def __init__(self, url=None, suggestion=None, detail=None, category_suggestions=None, ocr_text=None, error_code=None, error_msg=None):
         """ImageBatchModerationResultBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +53,12 @@ class ImageBatchModerationResultBody:
         :type detail: :class:`huaweicloudsdkmoderation.v2.ImageDetectionResultDetail`
         :param category_suggestions: 具体每个场景的检测结果。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检 
         :type category_suggestions: object
+        :param ocr_text: ocr识别结果。
+        :type ocr_text: str
+        :param error_code: 图像审核失败时错误码
+        :type error_code: str
+        :param error_msg: 图像审核失败时错误信息
+        :type error_msg: str
         """
         
         
@@ -55,6 +67,9 @@ class ImageBatchModerationResultBody:
         self._suggestion = None
         self._detail = None
         self._category_suggestions = None
+        self._ocr_text = None
+        self._error_code = None
+        self._error_msg = None
         self.discriminator = None
 
         if url is not None:
@@ -65,6 +80,12 @@ class ImageBatchModerationResultBody:
             self.detail = detail
         if category_suggestions is not None:
             self.category_suggestions = category_suggestions
+        if ocr_text is not None:
+            self.ocr_text = ocr_text
+        if error_code is not None:
+            self.error_code = error_code
+        if error_msg is not None:
+            self.error_msg = error_msg
 
     @property
     def url(self):
@@ -151,6 +172,72 @@ class ImageBatchModerationResultBody:
         :type category_suggestions: object
         """
         self._category_suggestions = category_suggestions
+
+    @property
+    def ocr_text(self):
+        """Gets the ocr_text of this ImageBatchModerationResultBody.
+
+        ocr识别结果。
+
+        :return: The ocr_text of this ImageBatchModerationResultBody.
+        :rtype: str
+        """
+        return self._ocr_text
+
+    @ocr_text.setter
+    def ocr_text(self, ocr_text):
+        """Sets the ocr_text of this ImageBatchModerationResultBody.
+
+        ocr识别结果。
+
+        :param ocr_text: The ocr_text of this ImageBatchModerationResultBody.
+        :type ocr_text: str
+        """
+        self._ocr_text = ocr_text
+
+    @property
+    def error_code(self):
+        """Gets the error_code of this ImageBatchModerationResultBody.
+
+        图像审核失败时错误码
+
+        :return: The error_code of this ImageBatchModerationResultBody.
+        :rtype: str
+        """
+        return self._error_code
+
+    @error_code.setter
+    def error_code(self, error_code):
+        """Sets the error_code of this ImageBatchModerationResultBody.
+
+        图像审核失败时错误码
+
+        :param error_code: The error_code of this ImageBatchModerationResultBody.
+        :type error_code: str
+        """
+        self._error_code = error_code
+
+    @property
+    def error_msg(self):
+        """Gets the error_msg of this ImageBatchModerationResultBody.
+
+        图像审核失败时错误信息
+
+        :return: The error_msg of this ImageBatchModerationResultBody.
+        :rtype: str
+        """
+        return self._error_msg
+
+    @error_msg.setter
+    def error_msg(self, error_msg):
+        """Sets the error_msg of this ImageBatchModerationResultBody.
+
+        图像审核失败时错误信息
+
+        :param error_msg: The error_msg of this ImageBatchModerationResultBody.
+        :type error_msg: str
+        """
+        self._error_msg = error_msg
 
     def to_dict(self):
         """Returns the model properties as a dict"""

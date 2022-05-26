@@ -144,6 +144,7 @@ from huaweicloudsdkosm.v2.model.operate_log import OperateLog
 from huaweicloudsdkosm.v2.model.partners_service_info import PartnersServiceInfo
 from huaweicloudsdkosm.v2.model.query_message_info_v2 import QueryMessageInfoV2
 from huaweicloudsdkosm.v2.model.satisfaction_dimension_simple_info_v2 import SatisfactionDimensionSimpleInfoV2
+from huaweicloudsdkosm.v2.model.send_verify_code_req import SendVerifyCodeReq
 from huaweicloudsdkosm.v2.model.send_verify_codes_request import SendVerifyCodesRequest
 from huaweicloudsdkosm.v2.model.send_verify_codes_response import SendVerifyCodesResponse
 from huaweicloudsdkosm.v2.model.severity_v2_do import SeverityV2Do

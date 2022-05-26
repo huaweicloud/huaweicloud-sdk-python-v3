@@ -37,7 +37,7 @@ class MemberInvitee:
 
         The model defined in huaweicloud sdk
 
-        :param invitee_bcs_id: 被邀请方实例id
+        :param invitee_bcs_id: 被邀请方BCS服务实例id
         :type invitee_bcs_id: str
         :param invitee_user_id: 被邀请方租户id
         :type invitee_user_id: str
@@ -63,7 +63,7 @@ class MemberInvitee:
     def invitee_bcs_id(self):
         """Gets the invitee_bcs_id of this MemberInvitee.
 
-        被邀请方实例id
+        被邀请方BCS服务实例id
 
         :return: The invitee_bcs_id of this MemberInvitee.
         :rtype: str
@@ -74,7 +74,7 @@ class MemberInvitee:
     def invitee_bcs_id(self, invitee_bcs_id):
         """Sets the invitee_bcs_id of this MemberInvitee.
 
-        被邀请方实例id
+        被邀请方BCS服务实例id
 
         :param invitee_bcs_id: The invitee_bcs_id of this MemberInvitee.
         :type invitee_bcs_id: str

@@ -83,7 +83,7 @@ class BasicInfo:
 
         :param id: BCS服务ID
         :type id: str
-        :param name: BCS服务名
+        :param name: 区块链服务名称，支持英文，数字，中文字符和中划线(-)，不能以中划线(-)开头，长度4-24个字符。
         :type name: str
         :param version: BCS服务版本信息
         :type version: str
@@ -239,7 +239,7 @@ class BasicInfo:
     def name(self):
         """Gets the name of this BasicInfo.
 
-        BCS服务名
+        区块链服务名称，支持英文，数字，中文字符和中划线(-)，不能以中划线(-)开头，长度4-24个字符。
 
         :return: The name of this BasicInfo.
         :rtype: str
@@ -250,7 +250,7 @@ class BasicInfo:
     def name(self, name):
         """Sets the name of this BasicInfo.
 
-        BCS服务名
+        区块链服务名称，支持英文，数字，中文字符和中划线(-)，不能以中划线(-)开头，长度4-24个字符。
 
         :param name: The name of this BasicInfo.
         :type name: str

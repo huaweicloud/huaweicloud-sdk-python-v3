@@ -41,7 +41,7 @@ class InvitationDetail:
         :type invited_user: str
         :param status: 邀请状态，可选：已退出（quit），等待中（waiting），已拒绝（reject），已解散（released），其他状态不允许删除
         :type status: str
-        :param invited_bcs_id: 被邀请方bcs实例id
+        :param invited_bcs_id: 被邀请方bcs服务实例id
         :type invited_bcs_id: str
         """
         
@@ -106,7 +106,7 @@ class InvitationDetail:
     def invited_bcs_id(self):
         """Gets the invited_bcs_id of this InvitationDetail.
 
-        被邀请方bcs实例id
+        被邀请方bcs服务实例id
 
         :return: The invited_bcs_id of this InvitationDetail.
         :rtype: str
@@ -117,7 +117,7 @@ class InvitationDetail:
     def invited_bcs_id(self, invited_bcs_id):
         """Sets the invited_bcs_id of this InvitationDetail.
 
-        被邀请方bcs实例id
+        被邀请方bcs服务实例id
 
         :param invited_bcs_id: The invited_bcs_id of this InvitationDetail.
         :type invited_bcs_id: str

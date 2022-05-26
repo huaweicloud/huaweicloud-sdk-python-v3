@@ -39,13 +39,13 @@ class TurboInfo:
 
         The model defined in huaweicloud sdk
 
-        :param share_type: 共享方式
+        :param share_type: 共享方式，固定值为“STANDARD”
         :type share_type: str
-        :param type: 类型
+        :param type: 类型，固定值为“efs-ha”
         :type type: str
-        :param available_zone: 可用区
+        :param available_zone: 可用区，可填空字符串(\&quot;\&quot;)。
         :type available_zone: str
-        :param resource_spec_code: 规格
+        :param resource_spec_code: 规格，固定值为“sfs.turbo.standard”
         :type resource_spec_code: str
         """
         
@@ -66,7 +66,7 @@ class TurboInfo:
     def share_type(self):
         """Gets the share_type of this TurboInfo.
 
-        共享方式
+        共享方式，固定值为“STANDARD”
 
         :return: The share_type of this TurboInfo.
         :rtype: str
@@ -77,7 +77,7 @@ class TurboInfo:
     def share_type(self, share_type):
         """Sets the share_type of this TurboInfo.
 
-        共享方式
+        共享方式，固定值为“STANDARD”
 
         :param share_type: The share_type of this TurboInfo.
         :type share_type: str
@@ -88,7 +88,7 @@ class TurboInfo:
     def type(self):
         """Gets the type of this TurboInfo.
 
-        类型
+        类型，固定值为“efs-ha”
 
         :return: The type of this TurboInfo.
         :rtype: str
@@ -99,7 +99,7 @@ class TurboInfo:
     def type(self, type):
         """Sets the type of this TurboInfo.
 
-        类型
+        类型，固定值为“efs-ha”
 
         :param type: The type of this TurboInfo.
         :type type: str
@@ -110,7 +110,7 @@ class TurboInfo:
     def available_zone(self):
         """Gets the available_zone of this TurboInfo.
 
-        可用区
+        可用区，可填空字符串(\"\")。
 
         :return: The available_zone of this TurboInfo.
         :rtype: str
@@ -121,7 +121,7 @@ class TurboInfo:
     def available_zone(self, available_zone):
         """Sets the available_zone of this TurboInfo.
 
-        可用区
+        可用区，可填空字符串(\"\")。
 
         :param available_zone: The available_zone of this TurboInfo.
         :type available_zone: str
@@ -132,7 +132,7 @@ class TurboInfo:
     def resource_spec_code(self):
         """Gets the resource_spec_code of this TurboInfo.
 
-        规格
+        规格，固定值为“sfs.turbo.standard”
 
         :return: The resource_spec_code of this TurboInfo.
         :rtype: str
@@ -143,7 +143,7 @@ class TurboInfo:
     def resource_spec_code(self, resource_spec_code):
         """Sets the resource_spec_code of this TurboInfo.
 
-        规格
+        规格，固定值为“sfs.turbo.standard”
 
         :param resource_spec_code: The resource_spec_code of this TurboInfo.
         :type resource_spec_code: str

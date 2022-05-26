@@ -288,6 +288,68 @@ class BcsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_remove_peers_from_channel_async(self, request):
+        """BCS某个组织中的节点退出某通道
+
+        该接口用于BCS某个组织中的节点退出某通道。当节点为通道中最后一个节点时，需要使用组织退通道的接口来将通道中的最后一个节点退出。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchRemovePeersFromChannel
+        :type request: :class:`huaweicloudsdkbcs.v2.BatchRemovePeersFromChannelRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.BatchRemovePeersFromChannelResponse`
+        """
+        return self.batch_remove_peers_from_channel_with_http_info(request)
+
+    def batch_remove_peers_from_channel_with_http_info(self, request):
+        all_params = ['blockchain_id', 'channel_id', 'batch_remove_peers_from_channel_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'blockchain_id' in local_var_params:
+            path_params['blockchain_id'] = local_var_params['blockchain_id']
+        if 'channel_id' in local_var_params:
+            path_params['channel_id'] = local_var_params['channel_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/{channel_id}/peers/quit',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchRemovePeersFromChannelResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_blockchain_cert_by_user_name_async(self, request):
         """生成用户证书
 
@@ -303,7 +365,7 @@ class BcsAsyncClient(Client):
         return self.create_blockchain_cert_by_user_name_with_http_info(request)
 
     def create_blockchain_cert_by_user_name_with_http_info(self, request):
-        all_params = ['blockchain_id', 'org_name', 'user_name']
+        all_params = ['blockchain_id', 'org_name', 'user_name', 'create_blockchain_cert_by_user_name_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -326,13 +388,15 @@ class BcsAsyncClient(Client):
         form_params = {}
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['application/json;charset=UTF-8'])
 
         auth_settings = []
 
@@ -423,7 +487,7 @@ class BcsAsyncClient(Client):
         return self.delete_blockchain_with_http_info(request)
 
     def delete_blockchain_with_http_info(self, request):
-        all_params = ['blockchain_id', 'is_delete_storage', 'is_delete_obs', 'is_delete_resource']
+        all_params = ['blockchain_id', 'is_delete_storage', 'is_delete_obs', 'is_delete_resource', 'is_delete_ief', 'is_delete_lightpeer', 'ief_nodes_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -442,6 +506,12 @@ class BcsAsyncClient(Client):
             query_params.append(('is_delete_obs', local_var_params['is_delete_obs']))
         if 'is_delete_resource' in local_var_params:
             query_params.append(('is_delete_resource', local_var_params['is_delete_resource']))
+        if 'is_delete_ief' in local_var_params:
+            query_params.append(('is_delete_ief', local_var_params['is_delete_ief']))
+        if 'is_delete_lightpeer' in local_var_params:
+            query_params.append(('is_delete_lightpeer', local_var_params['is_delete_lightpeer']))
+        if 'ief_nodes_id' in local_var_params:
+            query_params.append(('ief_nodes_id', local_var_params['ief_nodes_id']))
 
         header_params = {}
 
@@ -467,6 +537,66 @@ class BcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteBlockchainResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_channel_async(self, request):
+        """BCS删除某个通道
+
+        该接口用于BCS删除某个通道。仅支持删除空通道
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteChannel
+        :type request: :class:`huaweicloudsdkbcs.v2.DeleteChannelRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.DeleteChannelResponse`
+        """
+        return self.delete_channel_with_http_info(request)
+
+    def delete_channel_with_http_info(self, request):
+        all_params = ['blockchain_id', 'channel_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'blockchain_id' in local_var_params:
+            path_params['blockchain_id'] = local_var_params['blockchain_id']
+        if 'channel_id' in local_var_params:
+            path_params['channel_id'] = local_var_params['channel_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/channel/{channel_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteChannelResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -667,7 +797,7 @@ class BcsAsyncClient(Client):
         return self.freeze_cert_with_http_info(request)
 
     def freeze_cert_with_http_info(self, request):
-        all_params = ['user_name', 'blockchain_id', 'org_name']
+        all_params = ['user_name', 'blockchain_id', 'org_name', 'file']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -688,15 +818,19 @@ class BcsAsyncClient(Client):
         header_params = {}
 
         form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['multipart/form-data'])
 
         auth_settings = []
 
@@ -767,6 +901,64 @@ class BcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='HandleNotificationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def handle_union_member_quit_list_async(self, request):
+        """被邀请方退出指定联盟
+
+        被邀请方退出联盟
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for HandleUnionMemberQuitList
+        :type request: :class:`huaweicloudsdkbcs.v2.HandleUnionMemberQuitListRequest`
+        :rtype: :class:`huaweicloudsdkbcs.v2.HandleUnionMemberQuitListResponse`
+        """
+        return self.handle_union_member_quit_list_with_http_info(request)
+
+    def handle_union_member_quit_list_with_http_info(self, request):
+        all_params = ['handle_union_member_quit_list_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/members/quit',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='HandleUnionMemberQuitListResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1549,7 +1741,7 @@ class BcsAsyncClient(Client):
         return self.unfreeze_cert_with_http_info(request)
 
     def unfreeze_cert_with_http_info(self, request):
-        all_params = ['user_name', 'blockchain_id', 'org_name']
+        all_params = ['user_name', 'blockchain_id', 'org_name', 'file']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1570,15 +1762,19 @@ class BcsAsyncClient(Client):
         header_params = {}
 
         form_params = {}
+        if 'file' in local_var_params:
+            form_params['file'] = local_var_params['file']
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
+            ['multipart/form-data'])
 
         auth_settings = []
 

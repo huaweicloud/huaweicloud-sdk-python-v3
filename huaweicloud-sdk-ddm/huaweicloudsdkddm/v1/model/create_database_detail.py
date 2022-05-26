@@ -41,7 +41,7 @@ class CreateDatabaseDetail:
 
         The model defined in huaweicloud sdk
 
-        :param name: 逻辑库名称，需要满足以下条件：  - 长度为2-48个字符。 - 必须以字母开头，且不区分大小写。 - 可以包含字母、数字、下划线，不能包含其它特殊字符。 - 禁用关键字：  \&quot;information_schema\&quot;、\&quot;mysql\&quot;、\&quot;performance_schema\&quot;、\&quot;sys\&quot;。
+        :param name: 逻辑库名称，需要满足以下条件：  - 长度为2-48个字符。 - 必须以小写字母开头。 - 可以包含小写字母、数字、下划线，不能包含大写字母和其它特殊字符。 - 禁用关键字：  \&quot;information_schema\&quot;、\&quot;mysql\&quot;、\&quot;performance_schema\&quot;、\&quot;sys\&quot;。
         :type name: str
         :param shard_mode: 逻辑库的拆分模式。 - cluster表示逻辑库是拆分模式。 - single表示逻辑库是非拆分模式。
         :type shard_mode: str
@@ -73,7 +73,7 @@ class CreateDatabaseDetail:
     def name(self):
         """Gets the name of this CreateDatabaseDetail.
 
-        逻辑库名称，需要满足以下条件：  - 长度为2-48个字符。 - 必须以字母开头，且不区分大小写。 - 可以包含字母、数字、下划线，不能包含其它特殊字符。 - 禁用关键字：  \"information_schema\"、\"mysql\"、\"performance_schema\"、\"sys\"。
+        逻辑库名称，需要满足以下条件：  - 长度为2-48个字符。 - 必须以小写字母开头。 - 可以包含小写字母、数字、下划线，不能包含大写字母和其它特殊字符。 - 禁用关键字：  \"information_schema\"、\"mysql\"、\"performance_schema\"、\"sys\"。
 
         :return: The name of this CreateDatabaseDetail.
         :rtype: str
@@ -84,7 +84,7 @@ class CreateDatabaseDetail:
     def name(self, name):
         """Sets the name of this CreateDatabaseDetail.
 
-        逻辑库名称，需要满足以下条件：  - 长度为2-48个字符。 - 必须以字母开头，且不区分大小写。 - 可以包含字母、数字、下划线，不能包含其它特殊字符。 - 禁用关键字：  \"information_schema\"、\"mysql\"、\"performance_schema\"、\"sys\"。
+        逻辑库名称，需要满足以下条件：  - 长度为2-48个字符。 - 必须以小写字母开头。 - 可以包含小写字母、数字、下划线，不能包含大写字母和其它特殊字符。 - 禁用关键字：  \"information_schema\"、\"mysql\"、\"performance_schema\"、\"sys\"。
 
         :param name: The name of this CreateDatabaseDetail.
         :type name: str

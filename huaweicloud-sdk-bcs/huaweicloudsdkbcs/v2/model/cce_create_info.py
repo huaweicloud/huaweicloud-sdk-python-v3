@@ -45,7 +45,7 @@ class CCECreateInfo:
 
         :param node_num: 集群节点数
         :type node_num: int
-        :param node_flavor: 集群节点规格
+        :param node_flavor: 集群节点规格ID（支持的规格配置最小为4u8g）
         :type node_flavor: str
         :param cce_flavor: CCE集群规格
         :type cce_flavor: str
@@ -100,7 +100,7 @@ class CCECreateInfo:
     def node_flavor(self):
         """Gets the node_flavor of this CCECreateInfo.
 
-        集群节点规格
+        集群节点规格ID（支持的规格配置最小为4u8g）
 
         :return: The node_flavor of this CCECreateInfo.
         :rtype: str
@@ -111,7 +111,7 @@ class CCECreateInfo:
     def node_flavor(self, node_flavor):
         """Sets the node_flavor of this CCECreateInfo.
 
-        集群节点规格
+        集群节点规格ID（支持的规格配置最小为4u8g）
 
         :param node_flavor: The node_flavor of this CCECreateInfo.
         :type node_flavor: str

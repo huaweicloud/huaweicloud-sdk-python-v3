@@ -58,7 +58,9 @@ class InstanceListInfo:
         'enterprise_project_id': 'str',
         'description': 'str',
         'cpu_type': 'str',
-        'az_codes': 'list[str]'
+        'az_codes': 'list[str]',
+        'features': 'Features',
+        'sub_status': 'str'
     }
 
     attribute_map = {
@@ -99,10 +101,12 @@ class InstanceListInfo:
         'enterprise_project_id': 'enterprise_project_id',
         'description': 'description',
         'cpu_type': 'cpu_type',
-        'az_codes': 'az_codes'
+        'az_codes': 'az_codes',
+        'features': 'features',
+        'sub_status': 'sub_status'
     }
 
-    def __init__(self, publicip_id=None, vpc_name=None, charging_mode=None, vpc_id=None, subnet_id=None, security_group_id=None, created_at=None, enable_ssl=None, max_memory=None, used_memory=None, publicip_address=None, capacity=None, capacity_minor=None, order_id=None, maintain_begin=None, maintain_end=None, engine=None, engine_version=None, service_upgrade=None, no_password_access=None, service_task_id=None, ip=None, access_user=None, instance_id=None, enable_publicip=None, port=None, user_id=None, user_name=None, domain_name=None, readonly_domain_name=None, name=None, spec_code=None, status=None, tags=None, enterprise_project_id=None, description=None, cpu_type=None, az_codes=None):
+    def __init__(self, publicip_id=None, vpc_name=None, charging_mode=None, vpc_id=None, subnet_id=None, security_group_id=None, created_at=None, enable_ssl=None, max_memory=None, used_memory=None, publicip_address=None, capacity=None, capacity_minor=None, order_id=None, maintain_begin=None, maintain_end=None, engine=None, engine_version=None, service_upgrade=None, no_password_access=None, service_task_id=None, ip=None, access_user=None, instance_id=None, enable_publicip=None, port=None, user_id=None, user_name=None, domain_name=None, readonly_domain_name=None, name=None, spec_code=None, status=None, tags=None, enterprise_project_id=None, description=None, cpu_type=None, az_codes=None, features=None, sub_status=None):
         """InstanceListInfo
 
         The model defined in huaweicloud sdk
@@ -183,6 +187,10 @@ class InstanceListInfo:
         :type cpu_type: str
         :param az_codes: 有资源的可用区编码。
         :type az_codes: list[str]
+        :param features: 
+        :type features: :class:`huaweicloudsdkdcs.v2.Features`
+        :param sub_status: 实例子状态。
+        :type sub_status: str
         """
         
         
@@ -225,6 +233,8 @@ class InstanceListInfo:
         self._description = None
         self._cpu_type = None
         self._az_codes = None
+        self._features = None
+        self._sub_status = None
         self.discriminator = None
 
         if publicip_id is not None:
@@ -303,6 +313,10 @@ class InstanceListInfo:
             self.cpu_type = cpu_type
         if az_codes is not None:
             self.az_codes = az_codes
+        if features is not None:
+            self.features = features
+        if sub_status is not None:
+            self.sub_status = sub_status
 
     @property
     def publicip_id(self):
@@ -1139,6 +1153,48 @@ class InstanceListInfo:
         :type az_codes: list[str]
         """
         self._az_codes = az_codes
+
+    @property
+    def features(self):
+        """Gets the features of this InstanceListInfo.
+
+
+        :return: The features of this InstanceListInfo.
+        :rtype: :class:`huaweicloudsdkdcs.v2.Features`
+        """
+        return self._features
+
+    @features.setter
+    def features(self, features):
+        """Sets the features of this InstanceListInfo.
+
+
+        :param features: The features of this InstanceListInfo.
+        :type features: :class:`huaweicloudsdkdcs.v2.Features`
+        """
+        self._features = features
+
+    @property
+    def sub_status(self):
+        """Gets the sub_status of this InstanceListInfo.
+
+        实例子状态。
+
+        :return: The sub_status of this InstanceListInfo.
+        :rtype: str
+        """
+        return self._sub_status
+
+    @sub_status.setter
+    def sub_status(self, sub_status):
+        """Sets the sub_status of this InstanceListInfo.
+
+        实例子状态。
+
+        :param sub_status: The sub_status of this InstanceListInfo.
+        :type sub_status: str
+        """
+        self._sub_status = sub_status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

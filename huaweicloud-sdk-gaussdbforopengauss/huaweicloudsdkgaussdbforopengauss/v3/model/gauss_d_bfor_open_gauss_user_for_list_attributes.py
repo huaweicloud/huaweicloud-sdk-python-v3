@@ -26,7 +26,7 @@ class GaussDBforOpenGaussUserForListAttributes:
         'rolcreaterole': 'bool',
         'rolcreatedb': 'bool',
         'rolcanlogin': 'bool',
-        'rolconnlimit': 'bool',
+        'rolconnlimit': 'int',
         'rolreplication': 'bool',
         'rolbypassrls': 'bool'
     }
@@ -58,7 +58,7 @@ class GaussDBforOpenGaussUserForListAttributes:
         :param rolcanlogin: 用户是否可以登录数据库，取值为“true”或“false”。
         :type rolcanlogin: bool
         :param rolconnlimit: 用户连接实例的最大并发连接数。-1表示没有限制。
-        :type rolconnlimit: bool
+        :type rolconnlimit: int
         :param rolreplication: 用户是否属于复制角色，取值为“true”或“false”。
         :type rolreplication: bool
         :param rolbypassrls: 用户是否绕过每个行级安全策略，取值为“true”或“false”。
@@ -211,7 +211,7 @@ class GaussDBforOpenGaussUserForListAttributes:
         用户连接实例的最大并发连接数。-1表示没有限制。
 
         :return: The rolconnlimit of this GaussDBforOpenGaussUserForListAttributes.
-        :rtype: bool
+        :rtype: int
         """
         return self._rolconnlimit
 
@@ -222,7 +222,7 @@ class GaussDBforOpenGaussUserForListAttributes:
         用户连接实例的最大并发连接数。-1表示没有限制。
 
         :param rolconnlimit: The rolconnlimit of this GaussDBforOpenGaussUserForListAttributes.
-        :type rolconnlimit: bool
+        :type rolconnlimit: int
         """
         self._rolconnlimit = rolconnlimit
 

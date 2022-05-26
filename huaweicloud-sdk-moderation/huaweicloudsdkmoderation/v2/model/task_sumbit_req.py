@@ -22,15 +22,21 @@ class TaskSumbitReq:
 
     openapi_types = {
         'urls': 'list[str]',
-        'categories': 'list[str]'
+        'categories': 'list[str]',
+        'moderation_rule': 'str',
+        'ad_categories': 'list[str]',
+        'show_ocr_text': 'bool'
     }
 
     attribute_map = {
         'urls': 'urls',
-        'categories': 'categories'
+        'categories': 'categories',
+        'moderation_rule': 'moderation_rule',
+        'ad_categories': 'ad_categories',
+        'show_ocr_text': 'show_ocr_text'
     }
 
-    def __init__(self, urls=None, categories=None):
+    def __init__(self, urls=None, categories=None, moderation_rule=None, ad_categories=None, show_ocr_text=None):
         """TaskSumbitReq
 
         The model defined in huaweicloud sdk
@@ -39,17 +45,32 @@ class TaskSumbitReq:
         :type urls: list[str]
         :param categories: 检测场景。  - politics：是否涉及政治人物的检测。  - terrorism：是否包含涉政敏感人物、涉政暴恐元素的检测。  - porn：是否包含涉黄内容元素的检测。  可通过配置上述场景，来完成对应场景元素的检测。  为空或无此参数时默认检测politics和terrorism(不包含porn)。 
         :type categories: list[str]
+        :param moderation_rule: 图像审核规则名称，默认使用default规则。 审核规则的创建和使用请参见[配置审核规则](https://support.huaweicloud.com/api-moderation/moderation_03_0063.html)。 
+        :type moderation_rule: str
+        :param ad_categories: 图文审核检测场景。当categories包含ad时，该参数生效。  当前支持的场景有系统场景和用户自定义场景: - 系统场景为：   - qr_code：二维码   - politics：涉政   - porn：涉黄   - ad：广告   - abuse：辱骂   - contraband：违禁品 - 用户自定义场景为：自定义黑名单词库。  自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)。 
+        :type ad_categories: list[str]
+        :param show_ocr_text: 是否返回ocr识别的结果。
+        :type show_ocr_text: bool
         """
         
         
 
         self._urls = None
         self._categories = None
+        self._moderation_rule = None
+        self._ad_categories = None
+        self._show_ocr_text = None
         self.discriminator = None
 
         self.urls = urls
         if categories is not None:
             self.categories = categories
+        if moderation_rule is not None:
+            self.moderation_rule = moderation_rule
+        if ad_categories is not None:
+            self.ad_categories = ad_categories
+        if show_ocr_text is not None:
+            self.show_ocr_text = show_ocr_text
 
     @property
     def urls(self):
@@ -94,6 +115,72 @@ class TaskSumbitReq:
         :type categories: list[str]
         """
         self._categories = categories
+
+    @property
+    def moderation_rule(self):
+        """Gets the moderation_rule of this TaskSumbitReq.
+
+        图像审核规则名称，默认使用default规则。 审核规则的创建和使用请参见[配置审核规则](https://support.huaweicloud.com/api-moderation/moderation_03_0063.html)。 
+
+        :return: The moderation_rule of this TaskSumbitReq.
+        :rtype: str
+        """
+        return self._moderation_rule
+
+    @moderation_rule.setter
+    def moderation_rule(self, moderation_rule):
+        """Sets the moderation_rule of this TaskSumbitReq.
+
+        图像审核规则名称，默认使用default规则。 审核规则的创建和使用请参见[配置审核规则](https://support.huaweicloud.com/api-moderation/moderation_03_0063.html)。 
+
+        :param moderation_rule: The moderation_rule of this TaskSumbitReq.
+        :type moderation_rule: str
+        """
+        self._moderation_rule = moderation_rule
+
+    @property
+    def ad_categories(self):
+        """Gets the ad_categories of this TaskSumbitReq.
+
+        图文审核检测场景。当categories包含ad时，该参数生效。  当前支持的场景有系统场景和用户自定义场景: - 系统场景为：   - qr_code：二维码   - politics：涉政   - porn：涉黄   - ad：广告   - abuse：辱骂   - contraband：违禁品 - 用户自定义场景为：自定义黑名单词库。  自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)。 
+
+        :return: The ad_categories of this TaskSumbitReq.
+        :rtype: list[str]
+        """
+        return self._ad_categories
+
+    @ad_categories.setter
+    def ad_categories(self, ad_categories):
+        """Sets the ad_categories of this TaskSumbitReq.
+
+        图文审核检测场景。当categories包含ad时，该参数生效。  当前支持的场景有系统场景和用户自定义场景: - 系统场景为：   - qr_code：二维码   - politics：涉政   - porn：涉黄   - ad：广告   - abuse：辱骂   - contraband：违禁品 - 用户自定义场景为：自定义黑名单词库。  自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)。 
+
+        :param ad_categories: The ad_categories of this TaskSumbitReq.
+        :type ad_categories: list[str]
+        """
+        self._ad_categories = ad_categories
+
+    @property
+    def show_ocr_text(self):
+        """Gets the show_ocr_text of this TaskSumbitReq.
+
+        是否返回ocr识别的结果。
+
+        :return: The show_ocr_text of this TaskSumbitReq.
+        :rtype: bool
+        """
+        return self._show_ocr_text
+
+    @show_ocr_text.setter
+    def show_ocr_text(self, show_ocr_text):
+        """Sets the show_ocr_text of this TaskSumbitReq.
+
+        是否返回ocr识别的结果。
+
+        :param show_ocr_text: The show_ocr_text of this TaskSumbitReq.
+        :type show_ocr_text: bool
+        """
+        self._show_ocr_text = show_ocr_text
 
     def to_dict(self):
         """Returns the model properties as a dict"""

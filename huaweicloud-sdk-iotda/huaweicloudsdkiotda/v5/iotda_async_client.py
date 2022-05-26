@@ -41,12 +41,12 @@ class IoTDAAsyncClient(Client):
     @classmethod
     def new_builder(cls, clazz=None):
         if clazz is None:
-            return ClientBuilder(cls, "BasicCredentials,IoTDACredentials")
+            return ClientBuilder(cls, "BasicCredentials,IoTDACredentials")._with_derived_auth_service_name("iotdm")
 
         if clazz.__name__ != "IoTDAClient":
             raise TypeError("client type error, support client type is IoTDAClient")
 
-        return ClientBuilder(clazz, "BasicCredentials,IoTDACredentials")
+        return ClientBuilder(clazz, "BasicCredentials,IoTDACredentials")._with_derived_auth_service_name("iotdm")
 
     def create_access_code_async(self, request):
         """生成接入凭证

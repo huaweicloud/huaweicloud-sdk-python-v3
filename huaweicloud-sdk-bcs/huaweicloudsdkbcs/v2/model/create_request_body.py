@@ -44,7 +44,7 @@ class CreateRequestBody:
         'ief_nodes_info': 'list[IEFNode]',
         'peer_orgs': 'list[OrgPeer]',
         'channels': 'list[ChannelInfoV2]',
-        'couchdb_info': 'Couchdb',
+        'couchdb_info': 'CouchDb',
         'turbo_info': 'TurboInfo',
         'block_info': 'CreateRequestBodyBlockInfo',
         'kafka_create_info': 'KafkaCreateInfo',
@@ -93,11 +93,11 @@ class CreateRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: BCS服务名
+        :param name: 区块链服务名称，支持英文，数字，中文字符和中划线(-)，不能以中划线(-)开头，长度4-24个字符。
         :type name: str
-        :param version_type: BCS服务版本类型，[专业版（4），企业版（2）](tag:g42)[可选：基础版（1），专业版（4），企业版（2），铂金版（3）](tag:online)。被邀请方创建时，和邀请方保持一致。
+        :param version_type: BCS服务版本类型，[专业版（4），企业版（2）](tag:g42)[可选：专业版（4），企业版（2），铂金版（3）](tag:online)。被邀请方创建时，和邀请方保持一致。
         :type version_type: int
-        :param fabric_version: Fabric版本，当前邀请方以及私有链的创建仅可选：2.2 ;被邀请方创建时，和邀请方保持一致，1.4版本服务仅支持1.15及以下版本集群
+        :param fabric_version: Fabric版本，当前邀请方以及私有链的创建仅可选：2.2 ;被邀请方创建时，和邀请方保持一致，1.4版本服务仅支持1.15及以下版本集群. 默认值为2.2.
         :type fabric_version: str
         :param blockchain_type: 区块链类型，默认私有链，可选：联盟链（union），私有链（private）。被邀请方创建时，和邀请方保持一致。
         :type blockchain_type: str
@@ -111,7 +111,7 @@ class CreateRequestBody:
         :type volume_type: str
         :param evs_disk_type: 云硬盘存储卷类型，volume_type选择evs时必填，可选：普通I/O（SATA），高I/O（SAS），超高I/O（SSD）
         :type evs_disk_type: str
-        :param org_disk_size: 节点组织存储容量[，基础版至少40GB，专业版和企业版至少100GB，铂金版至少500GB](tag:online)[，专业版和企业版至少100GB](tag:g42)[节点组织存储容量GB，至少为100GB](tag:hcs)
+        :param org_disk_size: 节点组织存储容量[专业版和企业版至少100GB，铂金版至少500GB](tag:online)[，专业版和企业版至少100GB](tag:g42)[节点组织存储容量GB，至少为100GB](tag:hcs)
         :type org_disk_size: int
         :param database_type: BCS服务数据库类型，包括文件数据库（goleveldb），NoSQL（couchdb），选择couchdb需要填写couchdb_info字段中的信息
         :type database_type: str
@@ -140,7 +140,7 @@ class CreateRequestBody:
         :param channels: 通道列表
         :type channels: list[:class:`huaweicloudsdkbcs.v2.ChannelInfoV2`]
         :param couchdb_info: 
-        :type couchdb_info: :class:`huaweicloudsdkbcs.v2.Couchdb`
+        :type couchdb_info: :class:`huaweicloudsdkbcs.v2.CouchDb`
         :param turbo_info: 
         :type turbo_info: :class:`huaweicloudsdkbcs.v2.TurboInfo`
         :param block_info: 
@@ -151,7 +151,7 @@ class CreateRequestBody:
         :type tc3_need: bool
         :param restful_api_support: 是否添加restful API支持
         :type restful_api_support: bool
-        :param is_invitee: 是否是创建被邀请方实例，创建被邀请方实例需要同时填写invitor_infos字段中的信息
+        :param is_invitee: 是否是创建被邀请方BCS服务实例，创建被邀请方实例需要同时填写invitor_infos字段中的信息
         :type is_invitee: bool
         :param invitor_infos: 
         :type invitor_infos: :class:`huaweicloudsdkbcs.v2.InvitorInfos`
@@ -253,7 +253,7 @@ class CreateRequestBody:
     def name(self):
         """Gets the name of this CreateRequestBody.
 
-        BCS服务名
+        区块链服务名称，支持英文，数字，中文字符和中划线(-)，不能以中划线(-)开头，长度4-24个字符。
 
         :return: The name of this CreateRequestBody.
         :rtype: str
@@ -264,7 +264,7 @@ class CreateRequestBody:
     def name(self, name):
         """Sets the name of this CreateRequestBody.
 
-        BCS服务名
+        区块链服务名称，支持英文，数字，中文字符和中划线(-)，不能以中划线(-)开头，长度4-24个字符。
 
         :param name: The name of this CreateRequestBody.
         :type name: str
@@ -275,7 +275,7 @@ class CreateRequestBody:
     def version_type(self):
         """Gets the version_type of this CreateRequestBody.
 
-        BCS服务版本类型，[专业版（4），企业版（2）](tag:g42)[可选：基础版（1），专业版（4），企业版（2），铂金版（3）](tag:online)。被邀请方创建时，和邀请方保持一致。
+        BCS服务版本类型，[专业版（4），企业版（2）](tag:g42)[可选：专业版（4），企业版（2），铂金版（3）](tag:online)。被邀请方创建时，和邀请方保持一致。
 
         :return: The version_type of this CreateRequestBody.
         :rtype: int
@@ -286,7 +286,7 @@ class CreateRequestBody:
     def version_type(self, version_type):
         """Sets the version_type of this CreateRequestBody.
 
-        BCS服务版本类型，[专业版（4），企业版（2）](tag:g42)[可选：基础版（1），专业版（4），企业版（2），铂金版（3）](tag:online)。被邀请方创建时，和邀请方保持一致。
+        BCS服务版本类型，[专业版（4），企业版（2）](tag:g42)[可选：专业版（4），企业版（2），铂金版（3）](tag:online)。被邀请方创建时，和邀请方保持一致。
 
         :param version_type: The version_type of this CreateRequestBody.
         :type version_type: int
@@ -297,7 +297,7 @@ class CreateRequestBody:
     def fabric_version(self):
         """Gets the fabric_version of this CreateRequestBody.
 
-        Fabric版本，当前邀请方以及私有链的创建仅可选：2.2 ;被邀请方创建时，和邀请方保持一致，1.4版本服务仅支持1.15及以下版本集群
+        Fabric版本，当前邀请方以及私有链的创建仅可选：2.2 ;被邀请方创建时，和邀请方保持一致，1.4版本服务仅支持1.15及以下版本集群. 默认值为2.2.
 
         :return: The fabric_version of this CreateRequestBody.
         :rtype: str
@@ -308,7 +308,7 @@ class CreateRequestBody:
     def fabric_version(self, fabric_version):
         """Sets the fabric_version of this CreateRequestBody.
 
-        Fabric版本，当前邀请方以及私有链的创建仅可选：2.2 ;被邀请方创建时，和邀请方保持一致，1.4版本服务仅支持1.15及以下版本集群
+        Fabric版本，当前邀请方以及私有链的创建仅可选：2.2 ;被邀请方创建时，和邀请方保持一致，1.4版本服务仅支持1.15及以下版本集群. 默认值为2.2.
 
         :param fabric_version: The fabric_version of this CreateRequestBody.
         :type fabric_version: str
@@ -451,7 +451,7 @@ class CreateRequestBody:
     def org_disk_size(self):
         """Gets the org_disk_size of this CreateRequestBody.
 
-        节点组织存储容量[，基础版至少40GB，专业版和企业版至少100GB，铂金版至少500GB](tag:online)[，专业版和企业版至少100GB](tag:g42)[节点组织存储容量GB，至少为100GB](tag:hcs)
+        节点组织存储容量[专业版和企业版至少100GB，铂金版至少500GB](tag:online)[，专业版和企业版至少100GB](tag:g42)[节点组织存储容量GB，至少为100GB](tag:hcs)
 
         :return: The org_disk_size of this CreateRequestBody.
         :rtype: int
@@ -462,7 +462,7 @@ class CreateRequestBody:
     def org_disk_size(self, org_disk_size):
         """Sets the org_disk_size of this CreateRequestBody.
 
-        节点组织存储容量[，基础版至少40GB，专业版和企业版至少100GB，铂金版至少500GB](tag:online)[，专业版和企业版至少100GB](tag:g42)[节点组织存储容量GB，至少为100GB](tag:hcs)
+        节点组织存储容量[专业版和企业版至少100GB，铂金版至少500GB](tag:online)[，专业版和企业版至少100GB](tag:g42)[节点组织存储容量GB，至少为100GB](tag:hcs)
 
         :param org_disk_size: The org_disk_size of this CreateRequestBody.
         :type org_disk_size: int
@@ -757,7 +757,7 @@ class CreateRequestBody:
 
 
         :return: The couchdb_info of this CreateRequestBody.
-        :rtype: :class:`huaweicloudsdkbcs.v2.Couchdb`
+        :rtype: :class:`huaweicloudsdkbcs.v2.CouchDb`
         """
         return self._couchdb_info
 
@@ -767,7 +767,7 @@ class CreateRequestBody:
 
 
         :param couchdb_info: The couchdb_info of this CreateRequestBody.
-        :type couchdb_info: :class:`huaweicloudsdkbcs.v2.Couchdb`
+        :type couchdb_info: :class:`huaweicloudsdkbcs.v2.CouchDb`
         """
         self._couchdb_info = couchdb_info
 
@@ -879,7 +879,7 @@ class CreateRequestBody:
     def is_invitee(self):
         """Gets the is_invitee of this CreateRequestBody.
 
-        是否是创建被邀请方实例，创建被邀请方实例需要同时填写invitor_infos字段中的信息
+        是否是创建被邀请方BCS服务实例，创建被邀请方实例需要同时填写invitor_infos字段中的信息
 
         :return: The is_invitee of this CreateRequestBody.
         :rtype: bool
@@ -890,7 +890,7 @@ class CreateRequestBody:
     def is_invitee(self, is_invitee):
         """Sets the is_invitee of this CreateRequestBody.
 
-        是否是创建被邀请方实例，创建被邀请方实例需要同时填写invitor_infos字段中的信息
+        是否是创建被邀请方BCS服务实例，创建被邀请方实例需要同时填写invitor_infos字段中的信息
 
         :param is_invitee: The is_invitee of this CreateRequestBody.
         :type is_invitee: bool

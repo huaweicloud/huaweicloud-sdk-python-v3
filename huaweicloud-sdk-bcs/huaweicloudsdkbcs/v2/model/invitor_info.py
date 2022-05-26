@@ -59,9 +59,9 @@ class InvitorInfo:
         :type invitor_id: str
         :param invitor_name: 邀请方用户名
         :type invitor_name: str
-        :param invitor_bcs_id: 邀请方的服务id
+        :param invitor_bcs_id: 邀请方的BCS服务实例id
         :type invitor_bcs_id: str
-        :param invitor_bcs_name: 邀请方的服务名
+        :param invitor_bcs_name: 邀请方的BCS服务实例名
         :type invitor_bcs_name: str
         :param invitor_consensus: 邀请方的共识
         :type invitor_consensus: str
@@ -170,7 +170,7 @@ class InvitorInfo:
     def invitor_bcs_id(self):
         """Gets the invitor_bcs_id of this InvitorInfo.
 
-        邀请方的服务id
+        邀请方的BCS服务实例id
 
         :return: The invitor_bcs_id of this InvitorInfo.
         :rtype: str
@@ -181,7 +181,7 @@ class InvitorInfo:
     def invitor_bcs_id(self, invitor_bcs_id):
         """Sets the invitor_bcs_id of this InvitorInfo.
 
-        邀请方的服务id
+        邀请方的BCS服务实例id
 
         :param invitor_bcs_id: The invitor_bcs_id of this InvitorInfo.
         :type invitor_bcs_id: str
@@ -192,7 +192,7 @@ class InvitorInfo:
     def invitor_bcs_name(self):
         """Gets the invitor_bcs_name of this InvitorInfo.
 
-        邀请方的服务名
+        邀请方的BCS服务实例名
 
         :return: The invitor_bcs_name of this InvitorInfo.
         :rtype: str
@@ -203,7 +203,7 @@ class InvitorInfo:
     def invitor_bcs_name(self, invitor_bcs_name):
         """Sets the invitor_bcs_name of this InvitorInfo.
 
-        邀请方的服务名
+        邀请方的BCS服务实例名
 
         :param invitor_bcs_name: The invitor_bcs_name of this InvitorInfo.
         :type invitor_bcs_name: str

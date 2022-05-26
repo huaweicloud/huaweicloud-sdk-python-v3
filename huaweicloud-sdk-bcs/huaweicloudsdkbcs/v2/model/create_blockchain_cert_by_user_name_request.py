@@ -23,16 +23,18 @@ class CreateBlockchainCertByUserNameRequest:
     openapi_types = {
         'blockchain_id': 'str',
         'org_name': 'str',
-        'user_name': 'str'
+        'user_name': 'str',
+        'body': 'CreateBlockchainCertByUserNameRequestBody'
     }
 
     attribute_map = {
         'blockchain_id': 'blockchain_id',
         'org_name': 'org_name',
-        'user_name': 'user_name'
+        'user_name': 'user_name',
+        'body': 'body'
     }
 
-    def __init__(self, blockchain_id=None, org_name=None, user_name=None):
+    def __init__(self, blockchain_id=None, org_name=None, user_name=None, body=None):
         """CreateBlockchainCertByUserNameRequest
 
         The model defined in huaweicloud sdk
@@ -41,8 +43,10 @@ class CreateBlockchainCertByUserNameRequest:
         :type blockchain_id: str
         :param org_name: peer组织名称
         :type org_name: str
-        :param user_name: 用户名称，字符串长度4-24，必须包含a-z，0-9，以小写字母开头，以小写字母或者数字结尾
+        :param user_name: 用户名称，字符串长度4-24，仅支持小写字母和数字，以小写字母开头
         :type user_name: str
+        :param body: Body of the CreateBlockchainCertByUserNameRequest
+        :type body: :class:`huaweicloudsdkbcs.v2.CreateBlockchainCertByUserNameRequestBody`
         """
         
         
@@ -50,11 +54,14 @@ class CreateBlockchainCertByUserNameRequest:
         self._blockchain_id = None
         self._org_name = None
         self._user_name = None
+        self._body = None
         self.discriminator = None
 
         self.blockchain_id = blockchain_id
         self.org_name = org_name
         self.user_name = user_name
+        if body is not None:
+            self.body = body
 
     @property
     def blockchain_id(self):
@@ -104,7 +111,7 @@ class CreateBlockchainCertByUserNameRequest:
     def user_name(self):
         """Gets the user_name of this CreateBlockchainCertByUserNameRequest.
 
-        用户名称，字符串长度4-24，必须包含a-z，0-9，以小写字母开头，以小写字母或者数字结尾
+        用户名称，字符串长度4-24，仅支持小写字母和数字，以小写字母开头
 
         :return: The user_name of this CreateBlockchainCertByUserNameRequest.
         :rtype: str
@@ -115,12 +122,32 @@ class CreateBlockchainCertByUserNameRequest:
     def user_name(self, user_name):
         """Sets the user_name of this CreateBlockchainCertByUserNameRequest.
 
-        用户名称，字符串长度4-24，必须包含a-z，0-9，以小写字母开头，以小写字母或者数字结尾
+        用户名称，字符串长度4-24，仅支持小写字母和数字，以小写字母开头
 
         :param user_name: The user_name of this CreateBlockchainCertByUserNameRequest.
         :type user_name: str
         """
         self._user_name = user_name
+
+    @property
+    def body(self):
+        """Gets the body of this CreateBlockchainCertByUserNameRequest.
+
+
+        :return: The body of this CreateBlockchainCertByUserNameRequest.
+        :rtype: :class:`huaweicloudsdkbcs.v2.CreateBlockchainCertByUserNameRequestBody`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this CreateBlockchainCertByUserNameRequest.
+
+
+        :param body: The body of this CreateBlockchainCertByUserNameRequest.
+        :type body: :class:`huaweicloudsdkbcs.v2.CreateBlockchainCertByUserNameRequestBody`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

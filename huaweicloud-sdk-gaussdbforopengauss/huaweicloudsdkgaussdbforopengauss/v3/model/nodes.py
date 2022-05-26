@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class Couchdb:
+class Nodes:
 
     """
     Attributes:
@@ -21,78 +21,78 @@ class Couchdb:
     sensitive_list = []
 
     openapi_types = {
-        'user_name': 'str',
-        'password': 'str'
+        'id': 'str',
+        'components': 'list[Components]'
     }
 
     attribute_map = {
-        'user_name': 'user_name',
-        'password': 'password'
+        'id': 'id',
+        'components': 'components'
     }
 
-    def __init__(self, user_name=None, password=None):
-        """Couchdb
+    def __init__(self, id=None, components=None):
+        """Nodes
 
         The model defined in huaweicloud sdk
 
-        :param user_name: couchDB用户名
-        :type user_name: str
-        :param password: couchDB密码
-        :type password: str
+        :param id: 节点ID。
+        :type id: str
+        :param components: 组件列表。
+        :type components: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.Components`]
         """
         
         
 
-        self._user_name = None
-        self._password = None
+        self._id = None
+        self._components = None
         self.discriminator = None
 
-        self.user_name = user_name
-        self.password = password
+        self.id = id
+        self.components = components
 
     @property
-    def user_name(self):
-        """Gets the user_name of this Couchdb.
+    def id(self):
+        """Gets the id of this Nodes.
 
-        couchDB用户名
+        节点ID。
 
-        :return: The user_name of this Couchdb.
+        :return: The id of this Nodes.
         :rtype: str
         """
-        return self._user_name
+        return self._id
 
-    @user_name.setter
-    def user_name(self, user_name):
-        """Sets the user_name of this Couchdb.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this Nodes.
 
-        couchDB用户名
+        节点ID。
 
-        :param user_name: The user_name of this Couchdb.
-        :type user_name: str
+        :param id: The id of this Nodes.
+        :type id: str
         """
-        self._user_name = user_name
+        self._id = id
 
     @property
-    def password(self):
-        """Gets the password of this Couchdb.
+    def components(self):
+        """Gets the components of this Nodes.
 
-        couchDB密码
+        组件列表。
 
-        :return: The password of this Couchdb.
-        :rtype: str
+        :return: The components of this Nodes.
+        :rtype: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.Components`]
         """
-        return self._password
+        return self._components
 
-    @password.setter
-    def password(self, password):
-        """Sets the password of this Couchdb.
+    @components.setter
+    def components(self, components):
+        """Sets the components of this Nodes.
 
-        couchDB密码
+        组件列表。
 
-        :param password: The password of this Couchdb.
-        :type password: str
+        :param components: The components of this Nodes.
+        :type components: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.Components`]
         """
-        self._password = password
+        self._components = components
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -136,7 +136,7 @@ class Couchdb:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Couchdb):
+        if not isinstance(other, Nodes):
             return False
 
         return self.__dict__ == other.__dict__

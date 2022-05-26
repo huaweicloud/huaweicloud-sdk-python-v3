@@ -23,16 +23,18 @@ class FreezeCertRequest:
     openapi_types = {
         'user_name': 'str',
         'blockchain_id': 'str',
-        'org_name': 'str'
+        'org_name': 'str',
+        'body': 'FreezeCertRequestBody'
     }
 
     attribute_map = {
         'user_name': 'user_name',
         'blockchain_id': 'blockchain_id',
-        'org_name': 'org_name'
+        'org_name': 'org_name',
+        'body': 'body'
     }
 
-    def __init__(self, user_name=None, blockchain_id=None, org_name=None):
+    def __init__(self, user_name=None, blockchain_id=None, org_name=None, body=None):
         """FreezeCertRequest
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class FreezeCertRequest:
         :type blockchain_id: str
         :param org_name: orgName
         :type org_name: str
+        :param body: Body of the FreezeCertRequest
+        :type body: :class:`huaweicloudsdkbcs.v2.FreezeCertRequestBody`
         """
         
         
@@ -50,11 +54,14 @@ class FreezeCertRequest:
         self._user_name = None
         self._blockchain_id = None
         self._org_name = None
+        self._body = None
         self.discriminator = None
 
         self.user_name = user_name
         self.blockchain_id = blockchain_id
         self.org_name = org_name
+        if body is not None:
+            self.body = body
 
     @property
     def user_name(self):
@@ -121,6 +128,26 @@ class FreezeCertRequest:
         :type org_name: str
         """
         self._org_name = org_name
+
+    @property
+    def body(self):
+        """Gets the body of this FreezeCertRequest.
+
+
+        :return: The body of this FreezeCertRequest.
+        :rtype: :class:`huaweicloudsdkbcs.v2.FreezeCertRequestBody`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this FreezeCertRequest.
+
+
+        :param body: The body of this FreezeCertRequest.
+        :type body: :class:`huaweicloudsdkbcs.v2.FreezeCertRequestBody`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

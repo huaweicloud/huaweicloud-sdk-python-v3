@@ -23,16 +23,22 @@ class ImageBatchModerationReq:
     openapi_types = {
         'urls': 'list[str]',
         'categories': 'list[str]',
-        'threshold': 'float'
+        'threshold': 'float',
+        'moderation_rule': 'str',
+        'ad_categories': 'list[str]',
+        'show_ocr_text': 'bool'
     }
 
     attribute_map = {
         'urls': 'urls',
         'categories': 'categories',
-        'threshold': 'threshold'
+        'threshold': 'threshold',
+        'moderation_rule': 'moderation_rule',
+        'ad_categories': 'ad_categories',
+        'show_ocr_text': 'show_ocr_text'
     }
 
-    def __init__(self, urls=None, categories=None, threshold=None):
+    def __init__(self, urls=None, categories=None, threshold=None, moderation_rule=None, ad_categories=None, show_ocr_text=None):
         """ImageBatchModerationReq
 
         The model defined in huaweicloud sdk
@@ -43,6 +49,12 @@ class ImageBatchModerationReq:
         :type categories: list[str]
         :param threshold: - 结果过滤门限，只有置信度不低于此门限的结果才会呈现在detail的列表中，取值范围 0-1，当未设置此值时各个检测场景会使用各自的默认值。  - politics检测场景的默认值为0.95。  - terrorism检测场景的默认值为0。  - ad检测场景的默认值为0。  - 无特殊需求直接不传此参数或像示例中一样值设为空字符串即可。  &gt; - 如果检测场景中的最高置信度也未达到threshold，则结果列表为空；反之threshold过小，则会使结果列表中内容过多。 &gt; - threshold参数不支持porn场景筛选。 &gt; -  threshold参数不会影响响应中的suggestion。 
         :type threshold: float
+        :param moderation_rule: 图像审核规则名称，默认使用default规则。 审核规则的创建和使用请参见[配置审核规则](https://support.huaweicloud.com/api-moderation/moderation_03_0063.html)。 
+        :type moderation_rule: str
+        :param ad_categories: 图文审核检测场景。当categories包含ad时，该参数生效。  当前支持的场景有系统场景和用户自定义场景: - 系统场景为：   - qr_code：二维码   - politics：涉政   - porn：涉黄   - ad：广告   - abuse：辱骂   - contraband：违禁品 - 用户自定义场景为：自定义黑名单词库。  自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)。 
+        :type ad_categories: list[str]
+        :param show_ocr_text: 是否返回ocr识别的结果。
+        :type show_ocr_text: bool
         """
         
         
@@ -50,6 +62,9 @@ class ImageBatchModerationReq:
         self._urls = None
         self._categories = None
         self._threshold = None
+        self._moderation_rule = None
+        self._ad_categories = None
+        self._show_ocr_text = None
         self.discriminator = None
 
         self.urls = urls
@@ -57,6 +72,12 @@ class ImageBatchModerationReq:
             self.categories = categories
         if threshold is not None:
             self.threshold = threshold
+        if moderation_rule is not None:
+            self.moderation_rule = moderation_rule
+        if ad_categories is not None:
+            self.ad_categories = ad_categories
+        if show_ocr_text is not None:
+            self.show_ocr_text = show_ocr_text
 
     @property
     def urls(self):
@@ -123,6 +144,72 @@ class ImageBatchModerationReq:
         :type threshold: float
         """
         self._threshold = threshold
+
+    @property
+    def moderation_rule(self):
+        """Gets the moderation_rule of this ImageBatchModerationReq.
+
+        图像审核规则名称，默认使用default规则。 审核规则的创建和使用请参见[配置审核规则](https://support.huaweicloud.com/api-moderation/moderation_03_0063.html)。 
+
+        :return: The moderation_rule of this ImageBatchModerationReq.
+        :rtype: str
+        """
+        return self._moderation_rule
+
+    @moderation_rule.setter
+    def moderation_rule(self, moderation_rule):
+        """Sets the moderation_rule of this ImageBatchModerationReq.
+
+        图像审核规则名称，默认使用default规则。 审核规则的创建和使用请参见[配置审核规则](https://support.huaweicloud.com/api-moderation/moderation_03_0063.html)。 
+
+        :param moderation_rule: The moderation_rule of this ImageBatchModerationReq.
+        :type moderation_rule: str
+        """
+        self._moderation_rule = moderation_rule
+
+    @property
+    def ad_categories(self):
+        """Gets the ad_categories of this ImageBatchModerationReq.
+
+        图文审核检测场景。当categories包含ad时，该参数生效。  当前支持的场景有系统场景和用户自定义场景: - 系统场景为：   - qr_code：二维码   - politics：涉政   - porn：涉黄   - ad：广告   - abuse：辱骂   - contraband：违禁品 - 用户自定义场景为：自定义黑名单词库。  自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)。 
+
+        :return: The ad_categories of this ImageBatchModerationReq.
+        :rtype: list[str]
+        """
+        return self._ad_categories
+
+    @ad_categories.setter
+    def ad_categories(self, ad_categories):
+        """Sets the ad_categories of this ImageBatchModerationReq.
+
+        图文审核检测场景。当categories包含ad时，该参数生效。  当前支持的场景有系统场景和用户自定义场景: - 系统场景为：   - qr_code：二维码   - politics：涉政   - porn：涉黄   - ad：广告   - abuse：辱骂   - contraband：违禁品 - 用户自定义场景为：自定义黑名单词库。  自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html)。 
+
+        :param ad_categories: The ad_categories of this ImageBatchModerationReq.
+        :type ad_categories: list[str]
+        """
+        self._ad_categories = ad_categories
+
+    @property
+    def show_ocr_text(self):
+        """Gets the show_ocr_text of this ImageBatchModerationReq.
+
+        是否返回ocr识别的结果。
+
+        :return: The show_ocr_text of this ImageBatchModerationReq.
+        :rtype: bool
+        """
+        return self._show_ocr_text
+
+    @show_ocr_text.setter
+    def show_ocr_text(self, show_ocr_text):
+        """Sets the show_ocr_text of this ImageBatchModerationReq.
+
+        是否返回ocr识别的结果。
+
+        :param show_ocr_text: The show_ocr_text of this ImageBatchModerationReq.
+        :type show_ocr_text: bool
+        """
+        self._show_ocr_text = show_ocr_text
 
     def to_dict(self):
         """Returns the model properties as a dict"""

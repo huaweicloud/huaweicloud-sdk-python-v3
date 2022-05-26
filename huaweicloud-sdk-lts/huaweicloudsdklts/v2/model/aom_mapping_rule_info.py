@@ -23,6 +23,7 @@ class AomMappingRuleInfo:
     openapi_types = {
         'cluster_id': 'str',
         'cluster_name': 'str',
+        'deployments_prefix': 'str',
         'deployments': 'list[str]',
         'namespace': 'str',
         'container_name': 'str',
@@ -32,13 +33,14 @@ class AomMappingRuleInfo:
     attribute_map = {
         'cluster_id': 'cluster_id',
         'cluster_name': 'cluster_name',
+        'deployments_prefix': 'deployments_prefix',
         'deployments': 'deployments',
         'namespace': 'namespace',
         'container_name': 'container_name',
         'files': 'files'
     }
 
-    def __init__(self, cluster_id=None, cluster_name=None, deployments=None, namespace=None, container_name=None, files=None):
+    def __init__(self, cluster_id=None, cluster_name=None, deployments_prefix=None, deployments=None, namespace=None, container_name=None, files=None):
         """AomMappingRuleInfo
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class AomMappingRuleInfo:
         :type cluster_id: str
         :param cluster_name: 集群名称
         :type cluster_name: str
+        :param deployments_prefix: 日志流前缀
+        :type deployments_prefix: str
         :param deployments: 工作负载
         :type deployments: list[str]
         :param namespace: 命名空间
@@ -61,6 +65,7 @@ class AomMappingRuleInfo:
 
         self._cluster_id = None
         self._cluster_name = None
+        self._deployments_prefix = None
         self._deployments = None
         self._namespace = None
         self._container_name = None
@@ -69,6 +74,8 @@ class AomMappingRuleInfo:
 
         self.cluster_id = cluster_id
         self.cluster_name = cluster_name
+        if deployments_prefix is not None:
+            self.deployments_prefix = deployments_prefix
         self.deployments = deployments
         self.namespace = namespace
         if container_name is not None:
@@ -118,6 +125,28 @@ class AomMappingRuleInfo:
         :type cluster_name: str
         """
         self._cluster_name = cluster_name
+
+    @property
+    def deployments_prefix(self):
+        """Gets the deployments_prefix of this AomMappingRuleInfo.
+
+        日志流前缀
+
+        :return: The deployments_prefix of this AomMappingRuleInfo.
+        :rtype: str
+        """
+        return self._deployments_prefix
+
+    @deployments_prefix.setter
+    def deployments_prefix(self, deployments_prefix):
+        """Sets the deployments_prefix of this AomMappingRuleInfo.
+
+        日志流前缀
+
+        :param deployments_prefix: The deployments_prefix of this AomMappingRuleInfo.
+        :type deployments_prefix: str
+        """
+        self._deployments_prefix = deployments_prefix
 
     @property
     def deployments(self):

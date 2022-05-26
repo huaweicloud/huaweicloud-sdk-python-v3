@@ -39,13 +39,13 @@ class HandleNotificationInvitee:
 
         The model defined in huaweicloud sdk
 
-        :param invitee_bcs_id: 被邀请方服务实例id
+        :param invitee_bcs_id: 被邀请方BCS服务实例id
         :type invitee_bcs_id: str
-        :param invitee_bcs_name: 被邀请方服务实例名称，同意联盟邀请时必填
+        :param invitee_bcs_name: 被邀请方BCS服务实例名称，同意联盟邀请时必填
         :type invitee_bcs_name: str
         :param invitee_project_id: 被邀请方project id
         :type invitee_project_id: str
-        :param invitee_user_id: 被邀请方租户id
+        :param invitee_user_id: 被邀请方租户id。控制台-&gt;被邀请方账号-&gt;我的凭证-&gt;API凭证-&gt;账号ID
         :type invitee_user_id: str
         """
         
@@ -66,7 +66,7 @@ class HandleNotificationInvitee:
     def invitee_bcs_id(self):
         """Gets the invitee_bcs_id of this HandleNotificationInvitee.
 
-        被邀请方服务实例id
+        被邀请方BCS服务实例id
 
         :return: The invitee_bcs_id of this HandleNotificationInvitee.
         :rtype: str
@@ -77,7 +77,7 @@ class HandleNotificationInvitee:
     def invitee_bcs_id(self, invitee_bcs_id):
         """Sets the invitee_bcs_id of this HandleNotificationInvitee.
 
-        被邀请方服务实例id
+        被邀请方BCS服务实例id
 
         :param invitee_bcs_id: The invitee_bcs_id of this HandleNotificationInvitee.
         :type invitee_bcs_id: str
@@ -88,7 +88,7 @@ class HandleNotificationInvitee:
     def invitee_bcs_name(self):
         """Gets the invitee_bcs_name of this HandleNotificationInvitee.
 
-        被邀请方服务实例名称，同意联盟邀请时必填
+        被邀请方BCS服务实例名称，同意联盟邀请时必填
 
         :return: The invitee_bcs_name of this HandleNotificationInvitee.
         :rtype: str
@@ -99,7 +99,7 @@ class HandleNotificationInvitee:
     def invitee_bcs_name(self, invitee_bcs_name):
         """Sets the invitee_bcs_name of this HandleNotificationInvitee.
 
-        被邀请方服务实例名称，同意联盟邀请时必填
+        被邀请方BCS服务实例名称，同意联盟邀请时必填
 
         :param invitee_bcs_name: The invitee_bcs_name of this HandleNotificationInvitee.
         :type invitee_bcs_name: str
@@ -132,7 +132,7 @@ class HandleNotificationInvitee:
     def invitee_user_id(self):
         """Gets the invitee_user_id of this HandleNotificationInvitee.
 
-        被邀请方租户id
+        被邀请方租户id。控制台->被邀请方账号->我的凭证->API凭证->账号ID
 
         :return: The invitee_user_id of this HandleNotificationInvitee.
         :rtype: str
@@ -143,7 +143,7 @@ class HandleNotificationInvitee:
     def invitee_user_id(self, invitee_user_id):
         """Sets the invitee_user_id of this HandleNotificationInvitee.
 
-        被邀请方租户id
+        被邀请方租户id。控制台->被邀请方账号->我的凭证->API凭证->账号ID
 
         :param invitee_user_id: The invitee_user_id of this HandleNotificationInvitee.
         :type invitee_user_id: str

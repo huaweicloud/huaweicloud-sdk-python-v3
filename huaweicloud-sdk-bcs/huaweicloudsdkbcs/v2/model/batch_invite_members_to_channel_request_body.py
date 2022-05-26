@@ -39,7 +39,7 @@ class BatchInviteMembersToChannelRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param bcs_id: 邀请实例id
+        :param bcs_id: 发出邀请的BCS服务实例id
         :type bcs_id: str
         :param channel_name: 邀请加入的通道名
         :type channel_name: str
@@ -67,7 +67,7 @@ class BatchInviteMembersToChannelRequestBody:
     def bcs_id(self):
         """Gets the bcs_id of this BatchInviteMembersToChannelRequestBody.
 
-        邀请实例id
+        发出邀请的BCS服务实例id
 
         :return: The bcs_id of this BatchInviteMembersToChannelRequestBody.
         :rtype: str
@@ -78,7 +78,7 @@ class BatchInviteMembersToChannelRequestBody:
     def bcs_id(self, bcs_id):
         """Sets the bcs_id of this BatchInviteMembersToChannelRequestBody.
 
-        邀请实例id
+        发出邀请的BCS服务实例id
 
         :param bcs_id: The bcs_id of this BatchInviteMembersToChannelRequestBody.
         :type bcs_id: str

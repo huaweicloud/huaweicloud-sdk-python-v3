@@ -39,13 +39,13 @@ class HandleNotificationInvitor:
 
         The model defined in huaweicloud sdk
 
-        :param invitor_bcs_id: 邀请方实例id
+        :param invitor_bcs_id: 邀请方BCS服务实例ID
         :type invitor_bcs_id: str
-        :param invitor_bcs_name: 邀请方实例名称
+        :param invitor_bcs_name: 邀请方BCS服务实例名称
         :type invitor_bcs_name: str
         :param invitor_project_id: 邀请方project id
         :type invitor_project_id: str
-        :param invitor_user_id: 邀请方租户id
+        :param invitor_user_id: 邀请方租户id。控制台-&gt;邀请方账号-&gt;我的凭证-&gt;API凭证-&gt;账号ID
         :type invitor_user_id: str
         """
         
@@ -66,7 +66,7 @@ class HandleNotificationInvitor:
     def invitor_bcs_id(self):
         """Gets the invitor_bcs_id of this HandleNotificationInvitor.
 
-        邀请方实例id
+        邀请方BCS服务实例ID
 
         :return: The invitor_bcs_id of this HandleNotificationInvitor.
         :rtype: str
@@ -77,7 +77,7 @@ class HandleNotificationInvitor:
     def invitor_bcs_id(self, invitor_bcs_id):
         """Sets the invitor_bcs_id of this HandleNotificationInvitor.
 
-        邀请方实例id
+        邀请方BCS服务实例ID
 
         :param invitor_bcs_id: The invitor_bcs_id of this HandleNotificationInvitor.
         :type invitor_bcs_id: str
@@ -88,7 +88,7 @@ class HandleNotificationInvitor:
     def invitor_bcs_name(self):
         """Gets the invitor_bcs_name of this HandleNotificationInvitor.
 
-        邀请方实例名称
+        邀请方BCS服务实例名称
 
         :return: The invitor_bcs_name of this HandleNotificationInvitor.
         :rtype: str
@@ -99,7 +99,7 @@ class HandleNotificationInvitor:
     def invitor_bcs_name(self, invitor_bcs_name):
         """Sets the invitor_bcs_name of this HandleNotificationInvitor.
 
-        邀请方实例名称
+        邀请方BCS服务实例名称
 
         :param invitor_bcs_name: The invitor_bcs_name of this HandleNotificationInvitor.
         :type invitor_bcs_name: str
@@ -132,7 +132,7 @@ class HandleNotificationInvitor:
     def invitor_user_id(self):
         """Gets the invitor_user_id of this HandleNotificationInvitor.
 
-        邀请方租户id
+        邀请方租户id。控制台->邀请方账号->我的凭证->API凭证->账号ID
 
         :return: The invitor_user_id of this HandleNotificationInvitor.
         :rtype: str
@@ -143,7 +143,7 @@ class HandleNotificationInvitor:
     def invitor_user_id(self, invitor_user_id):
         """Sets the invitor_user_id of this HandleNotificationInvitor.
 
-        邀请方租户id
+        邀请方租户id。控制台->邀请方账号->我的凭证->API凭证->账号ID
 
         :param invitor_user_id: The invitor_user_id of this HandleNotificationInvitor.
         :type invitor_user_id: str

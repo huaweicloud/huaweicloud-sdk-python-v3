@@ -41,7 +41,7 @@ class InvitorInfos:
         :type tenant_id: str
         :param project_id: 邀请方项目ID
         :type project_id: str
-        :param blockchain_id: 邀请方服务实例ID
+        :param blockchain_id: 邀请方BCS服务实例ID
         :type blockchain_id: str
         """
         
@@ -104,7 +104,7 @@ class InvitorInfos:
     def blockchain_id(self):
         """Gets the blockchain_id of this InvitorInfos.
 
-        邀请方服务实例ID
+        邀请方BCS服务实例ID
 
         :return: The blockchain_id of this InvitorInfos.
         :rtype: str
@@ -115,7 +115,7 @@ class InvitorInfos:
     def blockchain_id(self, blockchain_id):
         """Sets the blockchain_id of this InvitorInfos.
 
-        邀请方服务实例ID
+        邀请方BCS服务实例ID
 
         :param blockchain_id: The blockchain_id of this InvitorInfos.
         :type blockchain_id: str

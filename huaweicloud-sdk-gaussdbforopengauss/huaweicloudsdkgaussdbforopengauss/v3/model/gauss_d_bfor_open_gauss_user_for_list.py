@@ -23,7 +23,7 @@ class GaussDBforOpenGaussUserForList:
     openapi_types = {
         'name': 'str',
         'attributes': 'GaussDBforOpenGaussUserForListAttributes',
-        'memberof': 'object'
+        'memberof': 'str'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class GaussDBforOpenGaussUserForList:
         :param attributes: 
         :type attributes: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussUserForListAttributes`
         :param memberof: 用户的默认权限。
-        :type memberof: object
+        :type memberof: str
         """
         
         
@@ -107,7 +107,7 @@ class GaussDBforOpenGaussUserForList:
         用户的默认权限。
 
         :return: The memberof of this GaussDBforOpenGaussUserForList.
-        :rtype: object
+        :rtype: str
         """
         return self._memberof
 
@@ -118,7 +118,7 @@ class GaussDBforOpenGaussUserForList:
         用户的默认权限。
 
         :param memberof: The memberof of this GaussDBforOpenGaussUserForList.
-        :type memberof: object
+        :type memberof: str
         """
         self._memberof = memberof
 

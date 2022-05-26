@@ -3306,7 +3306,7 @@ class OsmClient(Client):
         return self.send_verify_codes_with_http_info(request)
 
     def send_verify_codes_with_http_info(self, request):
-        all_params = ['contact_value', 'contact_way', 'area_code', 'x_site', 'x_language', 'x_time_zone']
+        all_params = ['x_site', 'x_language', 'x_time_zone', 'send_verify_codes_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3317,12 +3317,6 @@ class OsmClient(Client):
         path_params = {}
 
         query_params = []
-        if 'contact_value' in local_var_params:
-            query_params.append(('contact_value', local_var_params['contact_value']))
-        if 'contact_way' in local_var_params:
-            query_params.append(('contact_way', local_var_params['contact_way']))
-        if 'area_code' in local_var_params:
-            query_params.append(('area_code', local_var_params['area_code']))
 
         header_params = {}
         if 'x_site' in local_var_params:
@@ -3335,6 +3329,8 @@ class OsmClient(Client):
         form_params = {}
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
@@ -3346,8 +3342,8 @@ class OsmClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/servicerequest/verifycodes',
-            method='GET',
+            resource_path='/v2/servicerequest/verifycodes/send',
+            method='POST',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
