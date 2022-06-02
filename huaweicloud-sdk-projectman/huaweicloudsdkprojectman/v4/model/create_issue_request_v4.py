@@ -37,7 +37,8 @@ class CreateIssueRequestV4:
         'priority_id': 'int',
         'severity_id': 'int',
         'status_id': 'int',
-        'tracker_id': 'int'
+        'tracker_id': 'int',
+        'new_custom_fields': 'list[NewCustomField]'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class CreateIssueRequestV4:
         'priority_id': 'priority_id',
         'severity_id': 'severity_id',
         'status_id': 'status_id',
-        'tracker_id': 'tracker_id'
+        'tracker_id': 'tracker_id',
+        'new_custom_fields': 'new_custom_fields'
     }
 
-    def __init__(self, actual_work_hours=None, assigned_id=None, begin_time=None, description=None, developer_id=None, domain_id=None, done_ratio=None, end_time=None, expected_work_hours=None, iteration_id=None, module_id=None, name=None, parent_issue_id=None, priority_id=None, severity_id=None, status_id=None, tracker_id=None):
+    def __init__(self, actual_work_hours=None, assigned_id=None, begin_time=None, description=None, developer_id=None, domain_id=None, done_ratio=None, end_time=None, expected_work_hours=None, iteration_id=None, module_id=None, name=None, parent_issue_id=None, priority_id=None, severity_id=None, status_id=None, tracker_id=None, new_custom_fields=None):
         """CreateIssueRequestV4
 
         The model defined in huaweicloud sdk
@@ -95,10 +97,12 @@ class CreateIssueRequestV4:
         :type priority_id: int
         :param severity_id: 重要程度,   10 关键,   11 重要,   12 一般,   13 提示,
         :type severity_id: int
-        :param status_id: 状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
+        :param status_id: 状态   id, 新建   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
         :type status_id: int
-        :param tracker_id: 工作项类型, 2任务/task,3缺陷/bug,5epic,6feature,7story;     5 只能为 6 的父工作项类型;     6 只能为 7 的父工作项类型;     7 只能为 2,3的父;
+        :param tracker_id: 工作项类型, 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story;     5 只能为 6 的父工作项类型;     6 只能为 7 的父工作项类型;     7 只能为 2,3的父;
         :type tracker_id: int
+        :param new_custom_fields: 用户自定义字段
+        :type new_custom_fields: list[:class:`huaweicloudsdkprojectman.v4.NewCustomField`]
         """
         
         
@@ -120,6 +124,7 @@ class CreateIssueRequestV4:
         self._severity_id = None
         self._status_id = None
         self._tracker_id = None
+        self._new_custom_fields = None
         self.discriminator = None
 
         if actual_work_hours is not None:
@@ -153,6 +158,8 @@ class CreateIssueRequestV4:
         if status_id is not None:
             self.status_id = status_id
         self.tracker_id = tracker_id
+        if new_custom_fields is not None:
+            self.new_custom_fields = new_custom_fields
 
     @property
     def actual_work_hours(self):
@@ -488,7 +495,7 @@ class CreateIssueRequestV4:
     def status_id(self):
         """Gets the status_id of this CreateIssueRequestV4.
 
-        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
+        状态   id, 新建   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
 
         :return: The status_id of this CreateIssueRequestV4.
         :rtype: int
@@ -499,7 +506,7 @@ class CreateIssueRequestV4:
     def status_id(self, status_id):
         """Sets the status_id of this CreateIssueRequestV4.
 
-        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
+        状态   id, 新建   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
 
         :param status_id: The status_id of this CreateIssueRequestV4.
         :type status_id: int
@@ -510,7 +517,7 @@ class CreateIssueRequestV4:
     def tracker_id(self):
         """Gets the tracker_id of this CreateIssueRequestV4.
 
-        工作项类型, 2任务/task,3缺陷/bug,5epic,6feature,7story;     5 只能为 6 的父工作项类型;     6 只能为 7 的父工作项类型;     7 只能为 2,3的父;
+        工作项类型, 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story;     5 只能为 6 的父工作项类型;     6 只能为 7 的父工作项类型;     7 只能为 2,3的父;
 
         :return: The tracker_id of this CreateIssueRequestV4.
         :rtype: int
@@ -521,12 +528,34 @@ class CreateIssueRequestV4:
     def tracker_id(self, tracker_id):
         """Sets the tracker_id of this CreateIssueRequestV4.
 
-        工作项类型, 2任务/task,3缺陷/bug,5epic,6feature,7story;     5 只能为 6 的父工作项类型;     6 只能为 7 的父工作项类型;     7 只能为 2,3的父;
+        工作项类型, 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story;     5 只能为 6 的父工作项类型;     6 只能为 7 的父工作项类型;     7 只能为 2,3的父;
 
         :param tracker_id: The tracker_id of this CreateIssueRequestV4.
         :type tracker_id: int
         """
         self._tracker_id = tracker_id
+
+    @property
+    def new_custom_fields(self):
+        """Gets the new_custom_fields of this CreateIssueRequestV4.
+
+        用户自定义字段
+
+        :return: The new_custom_fields of this CreateIssueRequestV4.
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.NewCustomField`]
+        """
+        return self._new_custom_fields
+
+    @new_custom_fields.setter
+    def new_custom_fields(self, new_custom_fields):
+        """Sets the new_custom_fields of this CreateIssueRequestV4.
+
+        用户自定义字段
+
+        :param new_custom_fields: The new_custom_fields of this CreateIssueRequestV4.
+        :type new_custom_fields: list[:class:`huaweicloudsdkprojectman.v4.NewCustomField`]
+        """
+        self._new_custom_fields = new_custom_fields
 
     def to_dict(self):
         """Returns the model properties as a dict"""

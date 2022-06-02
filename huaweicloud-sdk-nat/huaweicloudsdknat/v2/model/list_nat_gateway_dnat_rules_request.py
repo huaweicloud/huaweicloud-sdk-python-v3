@@ -30,7 +30,7 @@ class ListNatGatewayDnatRulesRequest:
         'limit': 'int',
         'id': 'str',
         'description': 'str',
-        'created_at': 'datetime',
+        'created_at': 'str',
         'nat_gateway_id': 'list[str]',
         'port_id': 'str',
         'private_ip': 'str',
@@ -77,8 +77,8 @@ class ListNatGatewayDnatRulesRequest:
         :type id: str
         :param description: DNAT规则的描述，长度限制为255。
         :type description: str
-        :param created_at: DNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
-        :type created_at: datetime
+        :param created_at: DNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
+        :type created_at: str
         :param nat_gateway_id: 公网NAT网关实例的ID。
         :type nat_gateway_id: list[str]
         :param port_id: 虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
@@ -338,10 +338,10 @@ class ListNatGatewayDnatRulesRequest:
     def created_at(self):
         """Gets the created_at of this ListNatGatewayDnatRulesRequest.
 
-        DNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        DNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :return: The created_at of this ListNatGatewayDnatRulesRequest.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -349,10 +349,10 @@ class ListNatGatewayDnatRulesRequest:
     def created_at(self, created_at):
         """Sets the created_at of this ListNatGatewayDnatRulesRequest.
 
-        DNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        DNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :param created_at: The created_at of this ListNatGatewayDnatRulesRequest.
-        :type created_at: datetime
+        :type created_at: str
         """
         self._created_at = created_at
 

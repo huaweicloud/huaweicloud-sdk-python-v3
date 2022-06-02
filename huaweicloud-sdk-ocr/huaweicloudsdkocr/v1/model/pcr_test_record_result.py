@@ -25,7 +25,7 @@ class PcrTestRecordResult:
         'sampling_time': 'str',
         'test_time': 'str',
         'test_result': 'str',
-        'confidence': 'float',
+        'confidence': 'PcrTestRecordConfidence',
         'words_block_count': 'int',
         'words_block_list': 'list[PcrTestRecordWordsBlockList]'
     }
@@ -53,8 +53,8 @@ class PcrTestRecordResult:
         :type test_time: str
         :param test_result: 核酸检测结果，可选值包括：  - \&quot;positive\&quot;,即阳性  - \&quot;negative\&quot;,即阴性  - \&quot;unknown\&quot;,未知 
         :type test_result: str
-        :param confidence: 各个字段的置信度 
-        :type confidence: float
+        :param confidence: 
+        :type confidence: :class:`huaweicloudsdkocr.v1.PcrTestRecordConfidence`
         :param words_block_count: 代表检测识别出来的文字块数目。 
         :type words_block_count: int
         :param words_block_list: 识别文字块列表，输出顺序从左到右，从上到下。 
@@ -172,10 +172,9 @@ class PcrTestRecordResult:
     def confidence(self):
         """Gets the confidence of this PcrTestRecordResult.
 
-        各个字段的置信度 
 
         :return: The confidence of this PcrTestRecordResult.
-        :rtype: float
+        :rtype: :class:`huaweicloudsdkocr.v1.PcrTestRecordConfidence`
         """
         return self._confidence
 
@@ -183,10 +182,9 @@ class PcrTestRecordResult:
     def confidence(self, confidence):
         """Sets the confidence of this PcrTestRecordResult.
 
-        各个字段的置信度 
 
         :param confidence: The confidence of this PcrTestRecordResult.
-        :type confidence: float
+        :type confidence: :class:`huaweicloudsdkocr.v1.PcrTestRecordConfidence`
         """
         self._confidence = confidence
 

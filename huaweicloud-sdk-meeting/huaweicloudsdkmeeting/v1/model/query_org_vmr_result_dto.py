@@ -26,9 +26,12 @@ class QueryOrgVmrResultDTO:
         'vmr_name': 'str',
         'vmr_pkg_name': 'str',
         'vmr_pkg_parties': 'int',
+        'max_audience_parties': 'int',
         'member': 'IdMarkDTO',
         'device': 'IdMarkDTO',
-        'status': 'int'
+        'status': 'int',
+        'expire_date': 'int',
+        'commercial_max_audience_parties': 'int'
     }
 
     attribute_map = {
@@ -37,12 +40,15 @@ class QueryOrgVmrResultDTO:
         'vmr_name': 'vmrName',
         'vmr_pkg_name': 'vmrPkgName',
         'vmr_pkg_parties': 'vmrPkgParties',
+        'max_audience_parties': 'maxAudienceParties',
         'member': 'member',
         'device': 'device',
-        'status': 'status'
+        'status': 'status',
+        'expire_date': 'expireDate',
+        'commercial_max_audience_parties': 'commercialMaxAudienceParties'
     }
 
-    def __init__(self, id=None, vmr_id=None, vmr_name=None, vmr_pkg_name=None, vmr_pkg_parties=None, member=None, device=None, status=None):
+    def __init__(self, id=None, vmr_id=None, vmr_name=None, vmr_pkg_name=None, vmr_pkg_parties=None, max_audience_parties=None, member=None, device=None, status=None, expire_date=None, commercial_max_audience_parties=None):
         """QueryOrgVmrResultDTO
 
         The model defined in huaweicloud sdk
@@ -57,12 +63,18 @@ class QueryOrgVmrResultDTO:
         :type vmr_pkg_name: str
         :param vmr_pkg_parties: 云会议室套餐会议并发方数。
         :type vmr_pkg_parties: int
+        :param max_audience_parties: 最大观众与会方数（仅网络研讨会有效）
+        :type max_audience_parties: int
         :param member: 
         :type member: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
         :param device: 
         :type device: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
         :param status: 云会议室状态。 * 0：正常 * 1：冻结 * 2：未分配 
         :type status: int
+        :param expire_date: 到期时间，utc时间戳
+        :type expire_date: int
+        :param commercial_max_audience_parties: 按次资源转商后，商用规格最大观众与会方数（仅网络研讨会有效）
+        :type commercial_max_audience_parties: int
         """
         
         
@@ -72,9 +84,12 @@ class QueryOrgVmrResultDTO:
         self._vmr_name = None
         self._vmr_pkg_name = None
         self._vmr_pkg_parties = None
+        self._max_audience_parties = None
         self._member = None
         self._device = None
         self._status = None
+        self._expire_date = None
+        self._commercial_max_audience_parties = None
         self.discriminator = None
 
         if id is not None:
@@ -87,12 +102,18 @@ class QueryOrgVmrResultDTO:
             self.vmr_pkg_name = vmr_pkg_name
         if vmr_pkg_parties is not None:
             self.vmr_pkg_parties = vmr_pkg_parties
+        if max_audience_parties is not None:
+            self.max_audience_parties = max_audience_parties
         if member is not None:
             self.member = member
         if device is not None:
             self.device = device
         if status is not None:
             self.status = status
+        if expire_date is not None:
+            self.expire_date = expire_date
+        if commercial_max_audience_parties is not None:
+            self.commercial_max_audience_parties = commercial_max_audience_parties
 
     @property
     def id(self):
@@ -205,6 +226,28 @@ class QueryOrgVmrResultDTO:
         self._vmr_pkg_parties = vmr_pkg_parties
 
     @property
+    def max_audience_parties(self):
+        """Gets the max_audience_parties of this QueryOrgVmrResultDTO.
+
+        最大观众与会方数（仅网络研讨会有效）
+
+        :return: The max_audience_parties of this QueryOrgVmrResultDTO.
+        :rtype: int
+        """
+        return self._max_audience_parties
+
+    @max_audience_parties.setter
+    def max_audience_parties(self, max_audience_parties):
+        """Sets the max_audience_parties of this QueryOrgVmrResultDTO.
+
+        最大观众与会方数（仅网络研讨会有效）
+
+        :param max_audience_parties: The max_audience_parties of this QueryOrgVmrResultDTO.
+        :type max_audience_parties: int
+        """
+        self._max_audience_parties = max_audience_parties
+
+    @property
     def member(self):
         """Gets the member of this QueryOrgVmrResultDTO.
 
@@ -265,6 +308,50 @@ class QueryOrgVmrResultDTO:
         :type status: int
         """
         self._status = status
+
+    @property
+    def expire_date(self):
+        """Gets the expire_date of this QueryOrgVmrResultDTO.
+
+        到期时间，utc时间戳
+
+        :return: The expire_date of this QueryOrgVmrResultDTO.
+        :rtype: int
+        """
+        return self._expire_date
+
+    @expire_date.setter
+    def expire_date(self, expire_date):
+        """Sets the expire_date of this QueryOrgVmrResultDTO.
+
+        到期时间，utc时间戳
+
+        :param expire_date: The expire_date of this QueryOrgVmrResultDTO.
+        :type expire_date: int
+        """
+        self._expire_date = expire_date
+
+    @property
+    def commercial_max_audience_parties(self):
+        """Gets the commercial_max_audience_parties of this QueryOrgVmrResultDTO.
+
+        按次资源转商后，商用规格最大观众与会方数（仅网络研讨会有效）
+
+        :return: The commercial_max_audience_parties of this QueryOrgVmrResultDTO.
+        :rtype: int
+        """
+        return self._commercial_max_audience_parties
+
+    @commercial_max_audience_parties.setter
+    def commercial_max_audience_parties(self, commercial_max_audience_parties):
+        """Sets the commercial_max_audience_parties of this QueryOrgVmrResultDTO.
+
+        按次资源转商后，商用规格最大观众与会方数（仅网络研讨会有效）
+
+        :param commercial_max_audience_parties: The commercial_max_audience_parties of this QueryOrgVmrResultDTO.
+        :type commercial_max_audience_parties: int
+        """
+        self._commercial_max_audience_parties = commercial_max_audience_parties
 
     def to_dict(self):
         """Returns the model properties as a dict"""

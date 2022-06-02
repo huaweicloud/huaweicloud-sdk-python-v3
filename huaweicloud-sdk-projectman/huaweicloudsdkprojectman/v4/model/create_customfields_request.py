@@ -35,7 +35,7 @@ class CreateCustomfieldsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: devcloud的项目ID
+        :param project_id: devcloud项目的32位id
         :type project_id: str
         :param body: Body of the CreateCustomfieldsRequest
         :type body: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldV1Req`
@@ -55,7 +55,7 @@ class CreateCustomfieldsRequest:
     def project_id(self):
         """Gets the project_id of this CreateCustomfieldsRequest.
 
-        devcloud的项目ID
+        devcloud项目的32位id
 
         :return: The project_id of this CreateCustomfieldsRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class CreateCustomfieldsRequest:
     def project_id(self, project_id):
         """Sets the project_id of this CreateCustomfieldsRequest.
 
-        devcloud的项目ID
+        devcloud项目的32位id
 
         :param project_id: The project_id of this CreateCustomfieldsRequest.
         :type project_id: str

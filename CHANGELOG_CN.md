@@ -1,3 +1,98 @@
+# 3.0.91 2022-06-02
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListFlavors`新增请求参数 `instance_id`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持接口`ChangeGaussMySqlProxySpecification`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`SearchCorpVmr`新增响应参数 `maxAudienceParties`、`expireDate`、`commercialMaxAudienceParties`
+
+### HuaweiCloud SDK NAT
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListNatGateways`:
+    - 请求参数`created_at`类型调整 `date-time` -> `string`
+    - 响应参数`created_at`类型调整 `date-time` -> `string`
+  - 接口`UpdateNatGateway`响应参数`created_at`类型调整 `date-time` -> `string`
+  - 接口`ShowNatGateway`响应参数`created_at`类型调整 `date-time` -> `string`
+  - 接口`ListNatGatewayDnatRules`:
+    - 请求参数`created_at`类型调整 `date-time` -> `string`
+    - 响应参数`created_at`类型调整 `date-time` -> `string`
+  - 接口`UpdateNatGatewayDnatRule`响应参数`created_at`类型调整 `date-time` -> `string`
+  - 接口`ShowNatGatewayDnatRule`响应参数`created_at`类型调整 `date-time` -> `string`
+  - 接口`ListNatGatewaySnatRules`:
+    - 请求参数`created_at`类型调整 `date-time` -> `string`
+    - 响应参数`created_at`类型调整 `date-time` -> `string`
+  - 接口`UpdateNatGatewaySnatRule`响应参数`created_at`类型调整 `date-time` -> `string`
+  - 接口`ShowNatGatewaySnatRule`响应参数`created_at`类型调整 `date-time` -> `string`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeHealthCode`新增响应参数 `words_block_count`、`words_block_list`
+  - 接口`RecognizePcrTestRecord`响应参数`confidence`类型调整 `float` -> `object`
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListIssueCustomFields`
+    - `ListIssuesSfV4`
+    - `ListProjectIssuesRecordsV4`
+    - `ListWorkitemStatusRecordsV4`
+    - `ListWorkitems`
+    - `ShowIssuesWrokFlowConfig`
+    - `ShowWorkItemWrokflowConfig`
+    - `ListAssociatedIssues`
+    - `ListAssociatedWikis`
+    - `ListIssueAssociatedCommits`
+    - `ListAssociatedTestCases`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateIssueV4`:
+    - 新增请求参数 `new_custom_fields`
+    - 新增响应参数 `new_custom_fields`、`new_name`
+  - 接口`ListIssuesV4`:
+    - 新增请求参数 `custom_fields`
+    - 新增响应参数 `new_custom_fields`、`new_name`
+  - 接口`ShowIssueV4`新增响应参数 `new_custom_fields`、`new_name`
+  - 接口`UpdateIssueV4`:
+    - 新增请求参数 `new_custom_fields`
+    - 新增响应参数 `new_custom_fields`、`new_name`
+  - 接口`ListChildIssuesV4`新增响应参数 `new_custom_fields`、`new_name`
+  - 接口`CreateSystemIssueV4`:
+    - 新增请求参数 `new_custom_fields`
+    - 新增响应参数 `new_custom_fields`、`new_name`
+
 # 3.0.90 2022-05-26
 
 ### HuaweiCloud SDK BCS

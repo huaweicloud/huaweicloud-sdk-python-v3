@@ -22,15 +22,17 @@ class CustomField:
 
     openapi_types = {
         'name': 'str',
-        'value': 'str'
+        'value': 'str',
+        'new_name': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'value': 'value'
+        'value': 'value',
+        'new_name': 'new_name'
     }
 
-    def __init__(self, name=None, value=None):
+    def __init__(self, name=None, value=None, new_name=None):
         """CustomField
 
         The model defined in huaweicloud sdk
@@ -39,18 +41,23 @@ class CustomField:
         :type name: str
         :param value: 自定义属性对应的值
         :type value: str
+        :param new_name: 自定义属性名
+        :type new_name: str
         """
         
         
 
         self._name = None
         self._value = None
+        self._new_name = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
         if value is not None:
             self.value = value
+        if new_name is not None:
+            self.new_name = new_name
 
     @property
     def name(self):
@@ -95,6 +102,28 @@ class CustomField:
         :type value: str
         """
         self._value = value
+
+    @property
+    def new_name(self):
+        """Gets the new_name of this CustomField.
+
+        自定义属性名
+
+        :return: The new_name of this CustomField.
+        :rtype: str
+        """
+        return self._new_name
+
+    @new_name.setter
+    def new_name(self, new_name):
+        """Sets the new_name of this CustomField.
+
+        自定义属性名
+
+        :param new_name: The new_name of this CustomField.
+        :type new_name: str
+        """
+        self._new_name = new_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

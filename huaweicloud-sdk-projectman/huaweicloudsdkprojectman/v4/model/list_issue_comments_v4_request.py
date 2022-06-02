@@ -39,7 +39,7 @@ class ListIssueCommentsV4Request:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: devcloud的项目id
+        :param project_id: devcloud项目的32位id
         :type project_id: str
         :param issue_id: 工作项id
         :type issue_id: int
@@ -68,7 +68,7 @@ class ListIssueCommentsV4Request:
     def project_id(self):
         """Gets the project_id of this ListIssueCommentsV4Request.
 
-        devcloud的项目id
+        devcloud项目的32位id
 
         :return: The project_id of this ListIssueCommentsV4Request.
         :rtype: str
@@ -79,7 +79,7 @@ class ListIssueCommentsV4Request:
     def project_id(self, project_id):
         """Sets the project_id of this ListIssueCommentsV4Request.
 
-        devcloud的项目id
+        devcloud项目的32位id
 
         :param project_id: The project_id of this ListIssueCommentsV4Request.
         :type project_id: str

@@ -21,6 +21,7 @@ class ListFlavorsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'instance_id': 'str',
         'spec_code': 'str',
         'cache_mode': 'str',
         'engine': 'str',
@@ -30,6 +31,7 @@ class ListFlavorsRequest:
     }
 
     attribute_map = {
+        'instance_id': 'instance_id',
         'spec_code': 'spec_code',
         'cache_mode': 'cache_mode',
         'engine': 'engine',
@@ -38,11 +40,13 @@ class ListFlavorsRequest:
         'capacity': 'capacity'
     }
 
-    def __init__(self, spec_code=None, cache_mode=None, engine=None, engine_version=None, cpu_type=None, capacity=None):
+    def __init__(self, instance_id=None, spec_code=None, cache_mode=None, engine=None, engine_version=None, cpu_type=None, capacity=None):
         """ListFlavorsRequest
 
         The model defined in huaweicloud sdk
 
+        :param instance_id: 缓存实例ID，根据该字段可查询出实例可变更的规格
+        :type instance_id: str
         :param spec_code: 产品规格编码。
         :type spec_code: str
         :param cache_mode: 缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 - ha_rw_split： 表示读写分离实例 
@@ -59,6 +63,7 @@ class ListFlavorsRequest:
         
         
 
+        self._instance_id = None
         self._spec_code = None
         self._cache_mode = None
         self._engine = None
@@ -67,6 +72,8 @@ class ListFlavorsRequest:
         self._capacity = None
         self.discriminator = None
 
+        if instance_id is not None:
+            self.instance_id = instance_id
         if spec_code is not None:
             self.spec_code = spec_code
         if cache_mode is not None:
@@ -79,6 +86,28 @@ class ListFlavorsRequest:
             self.cpu_type = cpu_type
         if capacity is not None:
             self.capacity = capacity
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this ListFlavorsRequest.
+
+        缓存实例ID，根据该字段可查询出实例可变更的规格
+
+        :return: The instance_id of this ListFlavorsRequest.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ListFlavorsRequest.
+
+        缓存实例ID，根据该字段可查询出实例可变更的规格
+
+        :param instance_id: The instance_id of this ListFlavorsRequest.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     @property
     def spec_code(self):

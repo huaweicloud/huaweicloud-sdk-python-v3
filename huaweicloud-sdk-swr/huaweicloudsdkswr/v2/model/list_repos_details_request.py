@@ -45,7 +45,7 @@ class ListReposDetailsRequest:
         :type name: str
         :param category: 镜像仓库分类，可设置为app_server, linux, framework_app, database, lang, other, windows, arm。
         :type category: str
-        :param filter: 应填写 center::{center}|limit::{limit}|offset::{offset}|order_column::{order_column}|order_type::{order_type} , 其中{center}为self或thirdparty，自己的镜像或第三方镜像，默认值为self,{limit}为返回条数,{offset}为起始索引, {order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型，可设置为desc（降序）、asc（升序）
+        :param filter: 注意：至少要传递一个filter参数。其中{center}为self或thirdparty，自己的镜像或第三方镜像，默认值为self。{namespace}为组织名称，模糊匹配。 {name}为镜像仓库名称，模糊匹配。{category}为镜像仓库分类，可设置为app_server、linux、framework_app、database、lang、other、windows、arm。 {limit}为返回条数,{offset}为起始索引，注意：offset和limit参数需要配套使用。{order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型， 可设置为desc（降序）、asc（升序），注意：order_column和order_type参数需要配套使用。
         :type filter: str
         """
         
@@ -136,7 +136,7 @@ class ListReposDetailsRequest:
     def filter(self):
         """Gets the filter of this ListReposDetailsRequest.
 
-        应填写 center::{center}|limit::{limit}|offset::{offset}|order_column::{order_column}|order_type::{order_type} , 其中{center}为self或thirdparty，自己的镜像或第三方镜像，默认值为self,{limit}为返回条数,{offset}为起始索引, {order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型，可设置为desc（降序）、asc（升序）
+        注意：至少要传递一个filter参数。其中{center}为self或thirdparty，自己的镜像或第三方镜像，默认值为self。{namespace}为组织名称，模糊匹配。 {name}为镜像仓库名称，模糊匹配。{category}为镜像仓库分类，可设置为app_server、linux、framework_app、database、lang、other、windows、arm。 {limit}为返回条数,{offset}为起始索引，注意：offset和limit参数需要配套使用。{order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型， 可设置为desc（降序）、asc（升序），注意：order_column和order_type参数需要配套使用。
 
         :return: The filter of this ListReposDetailsRequest.
         :rtype: str
@@ -147,7 +147,7 @@ class ListReposDetailsRequest:
     def filter(self, filter):
         """Sets the filter of this ListReposDetailsRequest.
 
-        应填写 center::{center}|limit::{limit}|offset::{offset}|order_column::{order_column}|order_type::{order_type} , 其中{center}为self或thirdparty，自己的镜像或第三方镜像，默认值为self,{limit}为返回条数,{offset}为起始索引, {order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型，可设置为desc（降序）、asc（升序）
+        注意：至少要传递一个filter参数。其中{center}为self或thirdparty，自己的镜像或第三方镜像，默认值为self。{namespace}为组织名称，模糊匹配。 {name}为镜像仓库名称，模糊匹配。{category}为镜像仓库分类，可设置为app_server、linux、framework_app、database、lang、other、windows、arm。 {limit}为返回条数,{offset}为起始索引，注意：offset和limit参数需要配套使用。{order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型， 可设置为desc（降序）、asc（升序），注意：order_column和order_type参数需要配套使用。
 
         :param filter: The filter of this ListReposDetailsRequest.
         :type filter: str

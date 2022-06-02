@@ -28,6 +28,7 @@ class IssueResponseV4:
         'created_time': 'str',
         'creator': 'IssueUser',
         'custom_fields': 'list[CustomField]',
+        'new_custom_fields': 'list[NewCustomField]',
         'developer': 'IssueUser',
         'domain': 'IssueItemSfV4Domain',
         'done_ratio': 'int',
@@ -42,7 +43,7 @@ class IssueResponseV4:
         'priority': 'IssueItemSfV4Priority',
         'severity': 'IssueItemSfV4Severity',
         'status': 'IssueItemSfV4Status',
-        'tracker': 'IssueItemSfV4Tracker',
+        'tracker': 'CreateIssueResponseV4Tracker',
         'updated_time': 'str',
         'closed_time': 'str'
     }
@@ -55,6 +56,7 @@ class IssueResponseV4:
         'created_time': 'created_time',
         'creator': 'creator',
         'custom_fields': 'custom_fields',
+        'new_custom_fields': 'new_custom_fields',
         'developer': 'developer',
         'domain': 'domain',
         'done_ratio': 'done_ratio',
@@ -74,7 +76,7 @@ class IssueResponseV4:
         'closed_time': 'closed_time'
     }
 
-    def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, created_time=None, creator=None, custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, module=None, name=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None, updated_time=None, closed_time=None):
+    def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, created_time=None, creator=None, custom_fields=None, new_custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, module=None, name=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None, updated_time=None, closed_time=None):
         """IssueResponseV4
 
         The model defined in huaweicloud sdk
@@ -91,8 +93,10 @@ class IssueResponseV4:
         :type created_time: str
         :param creator: 
         :type creator: :class:`huaweicloudsdkprojectman.v4.IssueUser`
-        :param custom_fields: 自定义属性值
+        :param custom_fields: 自定义属性值,不建议使用，建议参考new_custom_fields字段
         :type custom_fields: list[:class:`huaweicloudsdkprojectman.v4.CustomField`]
+        :param new_custom_fields: 自定义属性值
+        :type new_custom_fields: list[:class:`huaweicloudsdkprojectman.v4.NewCustomField`]
         :param developer: 
         :type developer: :class:`huaweicloudsdkprojectman.v4.IssueUser`
         :param domain: 
@@ -122,7 +126,7 @@ class IssueResponseV4:
         :param status: 
         :type status: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Status`
         :param tracker: 
-        :type tracker: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Tracker`
+        :type tracker: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4Tracker`
         :param updated_time: 更新时间 年-月-日 时:分:秒
         :type updated_time: str
         :param closed_time: 关闭时间 年-月-日 时:分:秒
@@ -138,6 +142,7 @@ class IssueResponseV4:
         self._created_time = None
         self._creator = None
         self._custom_fields = None
+        self._new_custom_fields = None
         self._developer = None
         self._domain = None
         self._done_ratio = None
@@ -171,6 +176,8 @@ class IssueResponseV4:
             self.creator = creator
         if custom_fields is not None:
             self.custom_fields = custom_fields
+        if new_custom_fields is not None:
+            self.new_custom_fields = new_custom_fields
         if developer is not None:
             self.developer = developer
         if domain is not None:
@@ -338,7 +345,7 @@ class IssueResponseV4:
     def custom_fields(self):
         """Gets the custom_fields of this IssueResponseV4.
 
-        自定义属性值
+        自定义属性值,不建议使用，建议参考new_custom_fields字段
 
         :return: The custom_fields of this IssueResponseV4.
         :rtype: list[:class:`huaweicloudsdkprojectman.v4.CustomField`]
@@ -349,12 +356,34 @@ class IssueResponseV4:
     def custom_fields(self, custom_fields):
         """Sets the custom_fields of this IssueResponseV4.
 
-        自定义属性值
+        自定义属性值,不建议使用，建议参考new_custom_fields字段
 
         :param custom_fields: The custom_fields of this IssueResponseV4.
         :type custom_fields: list[:class:`huaweicloudsdkprojectman.v4.CustomField`]
         """
         self._custom_fields = custom_fields
+
+    @property
+    def new_custom_fields(self):
+        """Gets the new_custom_fields of this IssueResponseV4.
+
+        自定义属性值
+
+        :return: The new_custom_fields of this IssueResponseV4.
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.NewCustomField`]
+        """
+        return self._new_custom_fields
+
+    @new_custom_fields.setter
+    def new_custom_fields(self, new_custom_fields):
+        """Sets the new_custom_fields of this IssueResponseV4.
+
+        自定义属性值
+
+        :param new_custom_fields: The new_custom_fields of this IssueResponseV4.
+        :type new_custom_fields: list[:class:`huaweicloudsdkprojectman.v4.NewCustomField`]
+        """
+        self._new_custom_fields = new_custom_fields
 
     @property
     def developer(self):
@@ -652,7 +681,7 @@ class IssueResponseV4:
 
 
         :return: The tracker of this IssueResponseV4.
-        :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Tracker`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4Tracker`
         """
         return self._tracker
 
@@ -662,7 +691,7 @@ class IssueResponseV4:
 
 
         :param tracker: The tracker of this IssueResponseV4.
-        :type tracker: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Tracker`
+        :type tracker: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4Tracker`
         """
         self._tracker = tracker
 

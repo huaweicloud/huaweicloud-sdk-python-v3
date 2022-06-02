@@ -37,7 +37,7 @@ class IssueCompletionRateV4IssueCompletionRates:
 
         :param issue_status: 
         :type issue_status: :class:`huaweicloudsdkprojectman.v4.IssueCompletionRateV4IssueStatus`
-        :param tracker_id: 工作项类型id,1需求,2任务/task,3缺陷/bug,5epic,6feature,7story
+        :param tracker_id: 工作项类型id,1需求,2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
         :type tracker_id: int
         """
         
@@ -76,7 +76,7 @@ class IssueCompletionRateV4IssueCompletionRates:
     def tracker_id(self):
         """Gets the tracker_id of this IssueCompletionRateV4IssueCompletionRates.
 
-        工作项类型id,1需求,2任务/task,3缺陷/bug,5epic,6feature,7story
+        工作项类型id,1需求,2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 
         :return: The tracker_id of this IssueCompletionRateV4IssueCompletionRates.
         :rtype: int
@@ -87,7 +87,7 @@ class IssueCompletionRateV4IssueCompletionRates:
     def tracker_id(self, tracker_id):
         """Sets the tracker_id of this IssueCompletionRateV4IssueCompletionRates.
 
-        工作项类型id,1需求,2任务/task,3缺陷/bug,5epic,6feature,7story
+        工作项类型id,1需求,2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 
         :param tracker_id: The tracker_id of this IssueCompletionRateV4IssueCompletionRates.
         :type tracker_id: int

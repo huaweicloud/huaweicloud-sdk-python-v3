@@ -28,7 +28,7 @@ class ListNatGatewaySnatRulesRequest:
         'floating_ip_id': 'str',
         'id': 'str',
         'description': 'str',
-        'created_at': 'datetime',
+        'created_at': 'str',
         'nat_gateway_id': 'list[str]',
         'network_id': 'str',
         'source_type': 'int',
@@ -69,8 +69,8 @@ class ListNatGatewaySnatRulesRequest:
         :type id: str
         :param description: SNAT规则的描述，长度限制为255。
         :type description: str
-        :param created_at: SNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
-        :type created_at: datetime
+        :param created_at: SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
+        :type created_at: str
         :param nat_gateway_id: 公网NAT网关实例的ID。
         :type nat_gateway_id: list[str]
         :param network_id: 规则使用的网络id。与cidr参数二选一。
@@ -280,10 +280,10 @@ class ListNatGatewaySnatRulesRequest:
     def created_at(self):
         """Gets the created_at of this ListNatGatewaySnatRulesRequest.
 
-        SNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :return: The created_at of this ListNatGatewaySnatRulesRequest.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -291,10 +291,10 @@ class ListNatGatewaySnatRulesRequest:
     def created_at(self, created_at):
         """Sets the created_at of this ListNatGatewaySnatRulesRequest.
 
-        SNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :param created_at: The created_at of this ListNatGatewaySnatRulesRequest.
-        :type created_at: datetime
+        :type created_at: str
         """
         self._created_at = created_at
 

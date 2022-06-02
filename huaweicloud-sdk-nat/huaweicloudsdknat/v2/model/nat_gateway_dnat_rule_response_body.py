@@ -36,7 +36,7 @@ class NatGatewayDnatRuleResponseBody:
         'internal_service_port_range': 'str',
         'external_service_port_range': 'str',
         'protocol': 'str',
-        'created_at': 'datetime'
+        'created_at': 'str'
     }
 
     attribute_map = {
@@ -93,8 +93,8 @@ class NatGatewayDnatRuleResponseBody:
         :type external_service_port_range: str
         :param protocol: 协议类型，目前支持TCP/tcp、UDP/udp、ANY/any。 对应协议号6、17、0。 
         :type protocol: str
-        :param created_at: DNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
-        :type created_at: datetime
+        :param created_at: DNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
+        :type created_at: str
         """
         
         
@@ -472,10 +472,10 @@ class NatGatewayDnatRuleResponseBody:
     def created_at(self):
         """Gets the created_at of this NatGatewayDnatRuleResponseBody.
 
-        DNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        DNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :return: The created_at of this NatGatewayDnatRuleResponseBody.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -483,10 +483,10 @@ class NatGatewayDnatRuleResponseBody:
     def created_at(self, created_at):
         """Sets the created_at of this NatGatewayDnatRuleResponseBody.
 
-        DNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        DNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :param created_at: The created_at of this NatGatewayDnatRuleResponseBody.
-        :type created_at: datetime
+        :type created_at: str
         """
         self._created_at = created_at
 

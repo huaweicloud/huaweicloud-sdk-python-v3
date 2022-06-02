@@ -29,7 +29,7 @@ class NatGatewaySnatRuleResponseBody:
         'floating_ip_id': 'str',
         'description': 'str',
         'status': 'str',
-        'created_at': 'datetime',
+        'created_at': 'str',
         'network_id': 'str',
         'admin_state_up': 'bool',
         'floating_ip_address': 'str',
@@ -73,8 +73,8 @@ class NatGatewaySnatRuleResponseBody:
         :type description: str
         :param status: 功能说明：SNAT规则的状态。
         :type status: str
-        :param created_at: SNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
-        :type created_at: datetime
+        :param created_at: SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
+        :type created_at: str
         :param network_id: 规则使用的网络id。与cidr参数二选一。
         :type network_id: str
         :param admin_state_up: 解冻/冻结状态。 取值范围： - \&quot;true\&quot;：解冻 - \&quot;false\&quot;：冻结
@@ -296,10 +296,10 @@ class NatGatewaySnatRuleResponseBody:
     def created_at(self):
         """Gets the created_at of this NatGatewaySnatRuleResponseBody.
 
-        SNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :return: The created_at of this NatGatewaySnatRuleResponseBody.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -307,10 +307,10 @@ class NatGatewaySnatRuleResponseBody:
     def created_at(self, created_at):
         """Sets the created_at of this NatGatewaySnatRuleResponseBody.
 
-        SNAT规则的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :param created_at: The created_at of this NatGatewaySnatRuleResponseBody.
-        :type created_at: datetime
+        :type created_at: str
         """
         self._created_at = created_at
 

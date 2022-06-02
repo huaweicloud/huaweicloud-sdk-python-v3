@@ -37,7 +37,8 @@ class ListIssueRequestV4:
         'story_point_ids': 'list[int]',
         'tracker_ids': 'list[int]',
         'include_deleted': 'bool',
-        'updated_time_interval': 'str'
+        'updated_time_interval': 'str',
+        'custom_fields': 'list[ListIssueRequestV4CustomFields]'
     }
 
     attribute_map = {
@@ -57,10 +58,11 @@ class ListIssueRequestV4:
         'story_point_ids': 'story_point_ids',
         'tracker_ids': 'tracker_ids',
         'include_deleted': 'include_deleted',
-        'updated_time_interval': 'updated_time_interval'
+        'updated_time_interval': 'updated_time_interval',
+        'custom_fields': 'custom_fields'
     }
 
-    def __init__(self, assigned_ids=None, creator_ids=None, developer_ids=None, domain_ids=None, done_ratios=None, iteration_ids=None, limit=None, offset=None, module_ids=None, priority_ids=None, query_type=None, severity_ids=None, status_ids=None, story_point_ids=None, tracker_ids=None, include_deleted=None, updated_time_interval=None):
+    def __init__(self, assigned_ids=None, creator_ids=None, developer_ids=None, domain_ids=None, done_ratios=None, iteration_ids=None, limit=None, offset=None, module_ids=None, priority_ids=None, query_type=None, severity_ids=None, status_ids=None, story_point_ids=None, tracker_ids=None, include_deleted=None, updated_time_interval=None, custom_fields=None):
         """ListIssueRequestV4
 
         The model defined in huaweicloud sdk
@@ -89,16 +91,18 @@ class ListIssueRequestV4:
         :type query_type: str
         :param severity_ids: 查询类型
         :type severity_ids: list[int]
-        :param status_ids: 状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
+        :param status_ids: 状态   id, 新建   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
         :type status_ids: list[int]
         :param story_point_ids: 故事点id
         :type story_point_ids: list[int]
-        :param tracker_ids: 工作项类型,2任务/task,3缺陷/bug,5epic,6feature,7story
+        :param tracker_ids: 工作项类型,2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
         :type tracker_ids: list[int]
         :param include_deleted: true 查询的工作项包含已经逻辑删除的，false 查询的工作项不包含已经删除的
         :type include_deleted: bool
         :param updated_time_interval: 根据工作项的更新时间查询工作项，(查询的起始时间,查询的结束时间)
         :type updated_time_interval: str
+        :param custom_fields: 自定义字段
+        :type custom_fields: list[:class:`huaweicloudsdkprojectman.v4.ListIssueRequestV4CustomFields`]
         """
         
         
@@ -120,6 +124,7 @@ class ListIssueRequestV4:
         self._tracker_ids = None
         self._include_deleted = None
         self._updated_time_interval = None
+        self._custom_fields = None
         self.discriminator = None
 
         if assigned_ids is not None:
@@ -156,6 +161,8 @@ class ListIssueRequestV4:
             self.include_deleted = include_deleted
         if updated_time_interval is not None:
             self.updated_time_interval = updated_time_interval
+        if custom_fields is not None:
+            self.custom_fields = custom_fields
 
     @property
     def assigned_ids(self):
@@ -425,7 +432,7 @@ class ListIssueRequestV4:
     def status_ids(self):
         """Gets the status_ids of this ListIssueRequestV4.
 
-        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
+        状态   id, 新建   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
 
         :return: The status_ids of this ListIssueRequestV4.
         :rtype: list[int]
@@ -436,7 +443,7 @@ class ListIssueRequestV4:
     def status_ids(self, status_ids):
         """Sets the status_ids of this ListIssueRequestV4.
 
-        状态   id, 开始   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
+        状态   id, 新建   1, 进行中 2, 已解决 3, 测试中 4, 已关闭 5, 已拒绝 6,
 
         :param status_ids: The status_ids of this ListIssueRequestV4.
         :type status_ids: list[int]
@@ -469,7 +476,7 @@ class ListIssueRequestV4:
     def tracker_ids(self):
         """Gets the tracker_ids of this ListIssueRequestV4.
 
-        工作项类型,2任务/task,3缺陷/bug,5epic,6feature,7story
+        工作项类型,2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 
         :return: The tracker_ids of this ListIssueRequestV4.
         :rtype: list[int]
@@ -480,7 +487,7 @@ class ListIssueRequestV4:
     def tracker_ids(self, tracker_ids):
         """Sets the tracker_ids of this ListIssueRequestV4.
 
-        工作项类型,2任务/task,3缺陷/bug,5epic,6feature,7story
+        工作项类型,2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 
         :param tracker_ids: The tracker_ids of this ListIssueRequestV4.
         :type tracker_ids: list[int]
@@ -530,6 +537,28 @@ class ListIssueRequestV4:
         :type updated_time_interval: str
         """
         self._updated_time_interval = updated_time_interval
+
+    @property
+    def custom_fields(self):
+        """Gets the custom_fields of this ListIssueRequestV4.
+
+        自定义字段
+
+        :return: The custom_fields of this ListIssueRequestV4.
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.ListIssueRequestV4CustomFields`]
+        """
+        return self._custom_fields
+
+    @custom_fields.setter
+    def custom_fields(self, custom_fields):
+        """Sets the custom_fields of this ListIssueRequestV4.
+
+        自定义字段
+
+        :param custom_fields: The custom_fields of this ListIssueRequestV4.
+        :type custom_fields: list[:class:`huaweicloudsdkprojectman.v4.ListIssueRequestV4CustomFields`]
+        """
+        self._custom_fields = custom_fields
 
     def to_dict(self):
         """Returns the model properties as a dict"""

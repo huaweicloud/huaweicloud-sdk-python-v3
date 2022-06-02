@@ -23,7 +23,7 @@ class Backup:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'descriprion': 'str',
+        'description': 'str',
         'begin_time': 'str',
         'status': 'str',
         'type': 'str',
@@ -33,14 +33,14 @@ class Backup:
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'descriprion': 'descriprion',
+        'description': 'description',
         'begin_time': 'begin_time',
         'status': 'status',
         'type': 'type',
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, id=None, name=None, descriprion=None, begin_time=None, status=None, type=None, instance_id=None):
+    def __init__(self, id=None, name=None, description=None, begin_time=None, status=None, type=None, instance_id=None):
         """Backup
 
         The model defined in huaweicloud sdk
@@ -49,8 +49,8 @@ class Backup:
         :type id: str
         :param name: 备份名称。
         :type name: str
-        :param descriprion: 备份描述。
-        :type descriprion: str
+        :param description: 备份描述。
+        :type description: str
         :param begin_time: 备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”，其中T指时间字段的开始；Z指时区偏移量。
         :type begin_time: str
         :param status: 备份状态
@@ -65,7 +65,7 @@ class Backup:
 
         self._id = None
         self._name = None
-        self._descriprion = None
+        self._description = None
         self._begin_time = None
         self._status = None
         self._type = None
@@ -76,8 +76,8 @@ class Backup:
             self.id = id
         if name is not None:
             self.name = name
-        if descriprion is not None:
-            self.descriprion = descriprion
+        if description is not None:
+            self.description = description
         if begin_time is not None:
             self.begin_time = begin_time
         if status is not None:
@@ -132,26 +132,26 @@ class Backup:
         self._name = name
 
     @property
-    def descriprion(self):
-        """Gets the descriprion of this Backup.
+    def description(self):
+        """Gets the description of this Backup.
 
         备份描述。
 
-        :return: The descriprion of this Backup.
+        :return: The description of this Backup.
         :rtype: str
         """
-        return self._descriprion
+        return self._description
 
-    @descriprion.setter
-    def descriprion(self, descriprion):
-        """Sets the descriprion of this Backup.
+    @description.setter
+    def description(self, description):
+        """Sets the description of this Backup.
 
         备份描述。
 
-        :param descriprion: The descriprion of this Backup.
-        :type descriprion: str
+        :param description: The description of this Backup.
+        :type description: str
         """
-        self._descriprion = descriprion
+        self._description = description
 
     @property
     def begin_time(self):

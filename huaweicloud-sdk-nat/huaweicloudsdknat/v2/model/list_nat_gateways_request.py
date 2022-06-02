@@ -24,7 +24,7 @@ class ListNatGatewaysRequest:
         'id': 'str',
         'enterprise_project_id': 'str',
         'description': 'str',
-        'created_at': 'datetime',
+        'created_at': 'str',
         'name': 'str',
         'status': 'list[str]',
         'spec': 'list[str]',
@@ -59,8 +59,8 @@ class ListNatGatewaysRequest:
         :type enterprise_project_id: str
         :param description: 公网NAT网关实例的描述，长度限制为255。
         :type description: str
-        :param created_at: 公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
-        :type created_at: datetime
+        :param created_at: 公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
+        :type created_at: str
         :param name: 公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文
         :type name: str
         :param status: 公网NAT网关实例的状态。
@@ -185,10 +185,10 @@ class ListNatGatewaysRequest:
     def created_at(self):
         """Gets the created_at of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :return: The created_at of this ListNatGatewaysRequest.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -196,10 +196,10 @@ class ListNatGatewaysRequest:
     def created_at(self, created_at):
         """Sets the created_at of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :param created_at: The created_at of this ListNatGatewaysRequest.
-        :type created_at: datetime
+        :type created_at: str
         """
         self._created_at = created_at
 

@@ -69,7 +69,7 @@ class CreateCustomfieldsResponse(SdkResponse):
         :type identifier: str
         :param project_id: 项目ID
         :type project_id: int
-        :param tracker_id: 工作项类型id
+        :param tracker_id: 工作项类型id 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
         :type tracker_id: int
         :param custom_field: 系统字段名
         :type custom_field: str
@@ -250,7 +250,7 @@ class CreateCustomfieldsResponse(SdkResponse):
     def tracker_id(self):
         """Gets the tracker_id of this CreateCustomfieldsResponse.
 
-        工作项类型id
+        工作项类型id 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 
         :return: The tracker_id of this CreateCustomfieldsResponse.
         :rtype: int
@@ -261,7 +261,7 @@ class CreateCustomfieldsResponse(SdkResponse):
     def tracker_id(self, tracker_id):
         """Sets the tracker_id of this CreateCustomfieldsResponse.
 
-        工作项类型id
+        工作项类型id 2任务/Task,3缺陷/Bug,5Epic,6Feature,7Story
 
         :param tracker_id: The tracker_id of this CreateCustomfieldsResponse.
         :type tracker_id: int

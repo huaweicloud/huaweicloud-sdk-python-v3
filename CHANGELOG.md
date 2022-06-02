@@ -1,3 +1,98 @@
+# 3.0.91 2022-06-02
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `instance_id` to the interface `ListFlavors`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the interface `ChangeGaussMySqlProxySpecification`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `maxAudienceParties`, `expireDate`, `commercialMaxAudienceParties` to the interface `SearchCorpVmr`
+
+### HuaweiCloud SDK NAT
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListNatGateways`:
+    - Modify the type `date-time` -> `string` of the request parameter `created_at`
+    - Modify the type `date-time` -> `string` of the response parameter `created_at`
+  - Modify the type `date-time` -> `string` of the response parameter `created_at` of the interface `UpdateNatGateway`
+  - Modify the type `date-time` -> `string` of the response parameter `created_at` of the interface `ShowNatGateway`
+  - Changes of the interface `ListNatGatewayDnatRules`:
+    - Modify the type `date-time` -> `string` of the request parameter `created_at`
+    - Modify the type `date-time` -> `string` of the response parameter `created_at`
+  - Modify the type `date-time` -> `string` of the response parameter `created_at` of the interface `UpdateNatGatewayDnatRule`
+  - Modify the type `date-time` -> `string` of the response parameter `created_at` of the interface `ShowNatGatewayDnatRule`
+  - Changes of the interface `ListNatGatewaySnatRules`:
+    - Modify the type `date-time` -> `string` of the request parameter `created_at`
+    - Modify the type `date-time` -> `string` of the response parameter `created_at`
+  - Modify the type `date-time` -> `string` of the response parameter `created_at` of the interface `UpdateNatGatewaySnatRule`
+  - Modify the type `date-time` -> `string` of the response parameter `created_at` of the interface `ShowNatGatewaySnatRule`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `words_block_count`, `words_block_list` to the interface `RecognizeHealthCode`
+  - Modify the type `float` -> `object` of the response parameter `confidence` of the interface `RecognizePcrTestRecord`
+
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
+  - Support the following interfaces:
+    - `ListIssueCustomFields`
+    - `ListIssuesSfV4`
+    - `ListProjectIssuesRecordsV4`
+    - `ListWorkitemStatusRecordsV4`
+    - `ListWorkitems`
+    - `ShowIssuesWrokFlowConfig`
+    - `ShowWorkItemWrokflowConfig`
+    - `ListAssociatedIssues`
+    - `ListAssociatedWikis`
+    - `ListIssueAssociatedCommits`
+    - `ListAssociatedTestCases`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateIssueV4`:
+    - Add the request parameter `new_custom_fields`
+    - Add the response parameters `new_custom_fields`, `new_name`
+  - Changes of the interface `ListIssuesV4`:
+    - Add the request parameter `custom_fields`
+    - Add the response parameters `new_custom_fields`, `new_name`
+  - Add the response parameters `new_custom_fields`, `new_name` to the interface `ShowIssueV4`
+  - Changes of the interface `UpdateIssueV4`:
+    - Add the request parameter `new_custom_fields`
+    - Add the response parameters `new_custom_fields`, `new_name`
+  - Add the response parameters `new_custom_fields`, `new_name` to the interface `ListChildIssuesV4`
+  - Changes of the interface `CreateSystemIssueV4`:
+    - Add the request parameter `new_custom_fields`
+    - Add the response parameters `new_custom_fields`, `new_name`
+
 # 3.0.90 2022-05-26
 
 ### HuaweiCloud SDK BCS

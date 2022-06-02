@@ -33,7 +33,7 @@ class ShowIssueCompletionRateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: devcloud的项目id
+        :param project_id: devcloud项目的32位id
         :type project_id: str
         """
         
@@ -48,7 +48,7 @@ class ShowIssueCompletionRateRequest:
     def project_id(self):
         """Gets the project_id of this ShowIssueCompletionRateRequest.
 
-        devcloud的项目id
+        devcloud项目的32位id
 
         :return: The project_id of this ShowIssueCompletionRateRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ShowIssueCompletionRateRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ShowIssueCompletionRateRequest.
 
-        devcloud的项目id
+        devcloud项目的32位id
 
         :param project_id: The project_id of this ShowIssueCompletionRateRequest.
         :type project_id: str

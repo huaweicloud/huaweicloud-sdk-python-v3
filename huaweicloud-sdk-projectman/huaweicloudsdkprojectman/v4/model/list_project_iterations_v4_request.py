@@ -37,7 +37,7 @@ class ListProjectIterationsV4Request:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: devcloud的项目id
+        :param project_id: devcloud项目的32位id
         :type project_id: str
         :param updated_time_interval: 更新迭代的时间(查询的起始时间,查询的结束时间)
         :type updated_time_interval: str
@@ -62,7 +62,7 @@ class ListProjectIterationsV4Request:
     def project_id(self):
         """Gets the project_id of this ListProjectIterationsV4Request.
 
-        devcloud的项目id
+        devcloud项目的32位id
 
         :return: The project_id of this ListProjectIterationsV4Request.
         :rtype: str
@@ -73,7 +73,7 @@ class ListProjectIterationsV4Request:
     def project_id(self, project_id):
         """Sets the project_id of this ListProjectIterationsV4Request.
 
-        devcloud的项目id
+        devcloud项目的32位id
 
         :param project_id: The project_id of this ListProjectIterationsV4Request.
         :type project_id: str

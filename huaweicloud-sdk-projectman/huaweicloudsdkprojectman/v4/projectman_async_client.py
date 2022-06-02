@@ -830,6 +830,132 @@ class ProjectManAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_workitem_status_records_v4_async(self, request):
+        """查询看板项目下工作项的状态历史记录
+
+        分页查询看板项目下工作项的状态历史记录
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListWorkitemStatusRecordsV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListWorkitemStatusRecordsV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListWorkitemStatusRecordsV4Response`
+        """
+        return self.list_workitem_status_records_v4_with_http_info(request)
+
+    def list_workitem_status_records_v4_with_http_info(self, request):
+        all_params = ['project_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/work-items/status-records',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListWorkitemStatusRecordsV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_workitems_async(self, request):
+        """查询看板项目下的工作项
+
+        查询看板项目下的工作项
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListWorkitems
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListWorkitemsRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListWorkitemsResponse`
+        """
+        return self.list_workitems_with_http_info(request)
+
+    def list_workitems_with_http_info(self, request):
+        all_params = ['project_id', 'offset', 'limit', 'created_time_interval']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'created_time_interval' in local_var_params:
+            query_params.append(('created_time_interval', local_var_params['created_time_interval']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/work-items',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListWorkitemsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def remove_project_async(self, request):
         """主动退出项目
 
@@ -1293,6 +1419,66 @@ class ProjectManAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowProjectSummaryV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_work_item_wrokflow_config_async(self, request):
+        """查询看板项目的工作项流转配置
+
+        查询看板项目的工作项流转配置
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowWorkItemWrokflowConfig
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowWorkItemWrokflowConfigRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowWorkItemWrokflowConfigResponse`
+        """
+        return self.show_work_item_wrokflow_config_with_http_info(request)
+
+    def show_work_item_wrokflow_config_with_http_info(self, request):
+        all_params = ['project_id', 'board_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'board_id' in local_var_params:
+            query_params.append(('board_id', local_var_params['board_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/work-items/workflow/config',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowWorkItemWrokflowConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1956,6 +2142,198 @@ class ProjectManAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_associated_issues_async(self, request):
+        """查询当前工作项已经关联的工作项
+
+        查询当前工作项已经关联的工作项
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListAssociatedIssues
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedIssuesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListAssociatedIssuesResponse`
+        """
+        return self.list_associated_issues_with_http_info(request)
+
+    def list_associated_issues_with_http_info(self, request):
+        all_params = ['project_id', 'issue_id', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/issues/{issue_id}/associated-issues',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAssociatedIssuesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_associated_test_cases_async(self, request):
+        """查询关联Wiki
+
+        查询关联Wiki
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListAssociatedTestCases
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedTestCasesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListAssociatedTestCasesResponse`
+        """
+        return self.list_associated_test_cases_with_http_info(request)
+
+    def list_associated_test_cases_with_http_info(self, request):
+        all_params = ['project_id', 'issue_id', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/issues/{issue_id}/associate-test-cases',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAssociatedTestCasesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_associated_wikis_async(self, request):
+        """查询当前工作项已经关联的关联Wiki
+
+        查询当前工作项已经关联的关联Wiki
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListAssociatedWikis
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedWikisRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListAssociatedWikisResponse`
+        """
+        return self.list_associated_wikis_with_http_info(request)
+
+    def list_associated_wikis_with_http_info(self, request):
+        all_params = ['project_id', 'issue_id', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/issues/{issue_id}/associated-wikis',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAssociatedWikisResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_child_issues_v4_async(self, request):
         """获取子工作项
 
@@ -2011,6 +2389,72 @@ class ProjectManAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListChildIssuesV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_issue_associated_commits_async(self, request):
+        """查询当前工作项已经关联的代码提交记录 / 分支创建记录
+
+        查询当前工作项已经关联的代码提交记录 / 分支创建记录
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListIssueAssociatedCommits
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueAssociatedCommitsRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueAssociatedCommitsResponse`
+        """
+        return self.list_issue_associated_commits_with_http_info(request)
+
+    def list_issue_associated_commits_with_http_info(self, request):
+        all_params = ['project_id', 'issue_id', 'type', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/issues/{issue_id}/associated-commits',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListIssueAssociatedCommitsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2080,6 +2524,66 @@ class ProjectManAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_issue_custom_fields_async(self, request):
+        """查询Scrum工作项自定义字段
+
+        查询Scrum工作项自定义字段的可选列表,符合custom_fields或者names条件的都返回,2个值都不传，返回所有的自定义字段列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListIssueCustomFields
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueCustomFieldsRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueCustomFieldsResponse`
+        """
+        return self.list_issue_custom_fields_with_http_info(request)
+
+    def list_issue_custom_fields_with_http_info(self, request):
+        all_params = ['project_id', 'list_issue_custom_fields_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/issues/custom-fields',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListIssueCustomFieldsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_issue_records_v4_async(self, request):
         """获取工作项历史记录
 
@@ -2139,6 +2643,74 @@ class ProjectManAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListIssueRecordsV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_issues_sf_v4_async(self, request):
+        """查询项目的工作项
+
+        工作项类型id, 分页参数，创建时间查询项目的工作项
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListIssuesSfV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListIssuesSfV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssuesSfV4Response`
+        """
+        return self.list_issues_sf_v4_with_http_info(request)
+
+    def list_issues_sf_v4_with_http_info(self, request):
+        all_params = ['project_id', 'offset', 'limit', 'tracker_id', 'created_time_interval', 'updated_time_interval']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'tracker_id' in local_var_params:
+            query_params.append(('tracker_id', local_var_params['tracker_id']))
+        if 'created_time_interval' in local_var_params:
+            query_params.append(('created_time_interval', local_var_params['created_time_interval']))
+        if 'updated_time_interval' in local_var_params:
+            query_params.append(('updated_time_interval', local_var_params['updated_time_interval']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/issues',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListIssuesSfV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2261,6 +2833,70 @@ class ProjectManAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListIterationHistoriesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_project_issues_records_v4_async(self, request):
+        """查询项目下所有工作项的历史记录
+
+        查询项目下所有工作项的历史记录
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListProjectIssuesRecordsV4
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectIssuesRecordsV4Request`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectIssuesRecordsV4Response`
+        """
+        return self.list_project_issues_records_v4_with_http_info(request)
+
+    def list_project_issues_records_v4_with_http_info(self, request):
+        all_params = ['project_id', 'offset', 'limit', 'operated_time_interval']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'operated_time_interval' in local_var_params:
+            query_params.append(('operated_time_interval', local_var_params['operated_time_interval']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/issues/records',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListProjectIssuesRecordsV4Response',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2499,6 +3135,66 @@ class ProjectManAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowIssueV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_issues_wrok_flow_config_async(self, request):
+        """查询Scrum的工作项流转配置
+
+        查询Scrum的工作项流转配置
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowIssuesWrokFlowConfig
+        :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssuesWrokFlowConfigRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIssuesWrokFlowConfigResponse`
+        """
+        return self.show_issues_wrok_flow_config_with_http_info(request)
+
+    def show_issues_wrok_flow_config_with_http_info(self, request):
+        all_params = ['project_id', 'tracker_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'tracker_id' in local_var_params:
+            query_params.append(('tracker_id', local_var_params['tracker_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/issues/workflow/config',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowIssuesWrokFlowConfigResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

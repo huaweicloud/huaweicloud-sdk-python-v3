@@ -41,7 +41,7 @@ class AddApplyJoinProjectForAgcRequest:
         :type domain_id: str
         :param user_id: 用户id
         :type user_id: str
-        :param project_id: devcloud的项目id
+        :param project_id: devcloud项目的32位id
         :type project_id: str
         """
         
@@ -104,7 +104,7 @@ class AddApplyJoinProjectForAgcRequest:
     def project_id(self):
         """Gets the project_id of this AddApplyJoinProjectForAgcRequest.
 
-        devcloud的项目id
+        devcloud项目的32位id
 
         :return: The project_id of this AddApplyJoinProjectForAgcRequest.
         :rtype: str
@@ -115,7 +115,7 @@ class AddApplyJoinProjectForAgcRequest:
     def project_id(self, project_id):
         """Sets the project_id of this AddApplyJoinProjectForAgcRequest.
 
-        devcloud的项目id
+        devcloud项目的32位id
 
         :param project_id: The project_id of this AddApplyJoinProjectForAgcRequest.
         :type project_id: str

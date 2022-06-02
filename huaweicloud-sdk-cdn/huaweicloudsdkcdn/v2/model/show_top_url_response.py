@@ -22,7 +22,7 @@ class ShowTopUrlResponse(SdkResponse):
 
     openapi_types = {
         'service_area': 'str',
-        'top_url_summary': 'list[dict(str, object)]'
+        'top_url_summary': 'list[TopUrlSummary]'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class ShowTopUrlResponse(SdkResponse):
         :param service_area: 服务区域
         :type service_area: str
         :param top_url_summary: 详情数据对象。
-        :type top_url_summary: list[dict(str, object)]
+        :type top_url_summary: list[:class:`huaweicloudsdkcdn.v2.TopUrlSummary`]
         """
         
         super(ShowTopUrlResponse, self).__init__()
@@ -81,7 +81,7 @@ class ShowTopUrlResponse(SdkResponse):
         详情数据对象。
 
         :return: The top_url_summary of this ShowTopUrlResponse.
-        :rtype: list[dict(str, object)]
+        :rtype: list[:class:`huaweicloudsdkcdn.v2.TopUrlSummary`]
         """
         return self._top_url_summary
 
@@ -92,7 +92,7 @@ class ShowTopUrlResponse(SdkResponse):
         详情数据对象。
 
         :param top_url_summary: The top_url_summary of this ShowTopUrlResponse.
-        :type top_url_summary: list[dict(str, object)]
+        :type top_url_summary: list[:class:`huaweicloudsdkcdn.v2.TopUrlSummary`]
         """
         self._top_url_summary = top_url_summary
 

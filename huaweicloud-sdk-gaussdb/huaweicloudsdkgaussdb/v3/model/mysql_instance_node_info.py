@@ -37,7 +37,7 @@ class MysqlInstanceNodeInfo:
         'vcpus': 'str',
         'ram': 'str',
         'need_restart': 'bool',
-        'priotiry': 'int'
+        'priority': 'int'
     }
 
     attribute_map = {
@@ -57,10 +57,10 @@ class MysqlInstanceNodeInfo:
         'vcpus': 'vcpus',
         'ram': 'ram',
         'need_restart': 'need_restart',
-        'priotiry': 'priotiry'
+        'priority': 'priority'
     }
 
-    def __init__(self, id=None, name=None, type=None, status=None, port=None, private_read_ips=None, volume=None, az_code=None, region_code=None, created=None, updated=None, flavor_ref=None, max_connections=None, vcpus=None, ram=None, need_restart=None, priotiry=None):
+    def __init__(self, id=None, name=None, type=None, status=None, port=None, private_read_ips=None, volume=None, az_code=None, region_code=None, created=None, updated=None, flavor_ref=None, max_connections=None, vcpus=None, ram=None, need_restart=None, priority=None):
         """MysqlInstanceNodeInfo
 
         The model defined in huaweicloud sdk
@@ -97,8 +97,8 @@ class MysqlInstanceNodeInfo:
         :type ram: str
         :param need_restart: 是否需要重启使修改的参数生效。
         :type need_restart: bool
-        :param priotiry: 主备倒换优先级。
-        :type priotiry: int
+        :param priority: 主备倒换优先级。
+        :type priority: int
         """
         
         
@@ -119,7 +119,7 @@ class MysqlInstanceNodeInfo:
         self._vcpus = None
         self._ram = None
         self._need_restart = None
-        self._priotiry = None
+        self._priority = None
         self.discriminator = None
 
         self.id = id
@@ -152,8 +152,8 @@ class MysqlInstanceNodeInfo:
             self.ram = ram
         if need_restart is not None:
             self.need_restart = need_restart
-        if priotiry is not None:
-            self.priotiry = priotiry
+        if priority is not None:
+            self.priority = priority
 
     @property
     def id(self):
@@ -506,26 +506,26 @@ class MysqlInstanceNodeInfo:
         self._need_restart = need_restart
 
     @property
-    def priotiry(self):
-        """Gets the priotiry of this MysqlInstanceNodeInfo.
+    def priority(self):
+        """Gets the priority of this MysqlInstanceNodeInfo.
 
         主备倒换优先级。
 
-        :return: The priotiry of this MysqlInstanceNodeInfo.
+        :return: The priority of this MysqlInstanceNodeInfo.
         :rtype: int
         """
-        return self._priotiry
+        return self._priority
 
-    @priotiry.setter
-    def priotiry(self, priotiry):
-        """Sets the priotiry of this MysqlInstanceNodeInfo.
+    @priority.setter
+    def priority(self, priority):
+        """Sets the priority of this MysqlInstanceNodeInfo.
 
         主备倒换优先级。
 
-        :param priotiry: The priotiry of this MysqlInstanceNodeInfo.
-        :type priotiry: int
+        :param priority: The priority of this MysqlInstanceNodeInfo.
+        :type priority: int
         """
-        self._priotiry = priotiry
+        self._priority = priority
 
     def to_dict(self):
         """Returns the model properties as a dict"""

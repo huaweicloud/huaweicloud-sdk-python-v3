@@ -1245,7 +1245,7 @@ class OcrAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def recognize_pcr_test_record_async(self, request):
-        """核酸检测记录
+        """核酸检测记录识别
 
         识别核酸检测记录中的文字信息，并将识别的结构化结果返回给用户。PCR，全称Polymerase chain reaction,即聚合酶链式反应.PCR-test也为大众所认知为新型冠状病毒核酸检测测试。
         

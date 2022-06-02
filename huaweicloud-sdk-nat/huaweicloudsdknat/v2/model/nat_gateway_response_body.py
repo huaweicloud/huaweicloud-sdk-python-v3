@@ -28,7 +28,7 @@ class NatGatewayResponseBody:
         'spec': 'str',
         'status': 'str',
         'admin_state_up': 'bool',
-        'created_at': 'datetime',
+        'created_at': 'str',
         'router_id': 'str',
         'internal_network_id': 'str',
         'enterprise_project_id': 'str'
@@ -67,8 +67,8 @@ class NatGatewayResponseBody:
         :type status: str
         :param admin_state_up: 解冻/冻结状态。 取值范围： - \&quot;true\&quot;：解冻 - \&quot;false\&quot;：冻结
         :type admin_state_up: bool
-        :param created_at: 公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
-        :type created_at: datetime
+        :param created_at: 公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
+        :type created_at: str
         :param router_id: VPC的id。
         :type router_id: str
         :param internal_network_id: 公网NAT网关下行口（DVR的下一跳）所属的network id。
@@ -262,10 +262,10 @@ class NatGatewayResponseBody:
     def created_at(self):
         """Gets the created_at of this NatGatewayResponseBody.
 
-        公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :return: The created_at of this NatGatewayResponseBody.
-        :rtype: datetime
+        :rtype: str
         """
         return self._created_at
 
@@ -273,10 +273,10 @@ class NatGatewayResponseBody:
     def created_at(self, created_at):
         """Sets the created_at of this NatGatewayResponseBody.
 
-        公网NAT网关实例的创建时间，遵循UTC时间，格式是yyyy-mm-ddThh:mm:ssZ。
+        公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
         :param created_at: The created_at of this NatGatewayResponseBody.
-        :type created_at: datetime
+        :type created_at: str
         """
         self._created_at = created_at
 

@@ -37,7 +37,7 @@ class ListProjectMembersV4Request:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: devcloud的项目id
+        :param project_id: devcloud项目的32位id
         :type project_id: str
         :param offset: 分页索引，偏移量,offset是limit的整数倍，limit&#x3D;10,offset&#x3D;0,10,20...
         :type offset: int
@@ -62,7 +62,7 @@ class ListProjectMembersV4Request:
     def project_id(self):
         """Gets the project_id of this ListProjectMembersV4Request.
 
-        devcloud的项目id
+        devcloud项目的32位id
 
         :return: The project_id of this ListProjectMembersV4Request.
         :rtype: str
@@ -73,7 +73,7 @@ class ListProjectMembersV4Request:
     def project_id(self, project_id):
         """Sets the project_id of this ListProjectMembersV4Request.
 
-        devcloud的项目id
+        devcloud项目的32位id
 
         :param project_id: The project_id of this ListProjectMembersV4Request.
         :type project_id: str

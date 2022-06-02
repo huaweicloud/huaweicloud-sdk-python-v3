@@ -35,7 +35,7 @@ class UpdateProjectV4Request:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: devcloud的项目id
+        :param project_id: devcloud项目的32位id
         :type project_id: str
         :param body: Body of the UpdateProjectV4Request
         :type body: :class:`huaweicloudsdkprojectman.v4.UpdateProjectRequestV4`
@@ -55,7 +55,7 @@ class UpdateProjectV4Request:
     def project_id(self):
         """Gets the project_id of this UpdateProjectV4Request.
 
-        devcloud的项目id
+        devcloud项目的32位id
 
         :return: The project_id of this UpdateProjectV4Request.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateProjectV4Request:
     def project_id(self, project_id):
         """Sets the project_id of this UpdateProjectV4Request.
 
-        devcloud的项目id
+        devcloud项目的32位id
 
         :param project_id: The project_id of this UpdateProjectV4Request.
         :type project_id: str

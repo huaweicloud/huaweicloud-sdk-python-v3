@@ -40,6 +40,7 @@ from huaweicloudsdkocr.v1.model.handwriting_result import HandwritingResult
 from huaweicloudsdkocr.v1.model.handwriting_words_block_list import HandwritingWordsBlockList
 from huaweicloudsdkocr.v1.model.health_code_request_body import HealthCodeRequestBody
 from huaweicloudsdkocr.v1.model.health_code_result import HealthCodeResult
+from huaweicloudsdkocr.v1.model.health_code_words_block_list import HealthCodeWordsBlockList
 from huaweicloudsdkocr.v1.model.id_card_request_body import IdCardRequestBody
 from huaweicloudsdkocr.v1.model.id_card_result import IdCardResult
 from huaweicloudsdkocr.v1.model.idcard_verification_result import IdcardVerificationResult
@@ -63,6 +64,7 @@ from huaweicloudsdkocr.v1.model.myanmar_idcard_request_body import MyanmarIdcard
 from huaweicloudsdkocr.v1.model.myanmar_idcard_result import MyanmarIdcardResult
 from huaweicloudsdkocr.v1.model.passport_request_body import PassportRequestBody
 from huaweicloudsdkocr.v1.model.passport_result import PassportResult
+from huaweicloudsdkocr.v1.model.pcr_test_record_confidence import PcrTestRecordConfidence
 from huaweicloudsdkocr.v1.model.pcr_test_record_request_body import PcrTestRecordRequestBody
 from huaweicloudsdkocr.v1.model.pcr_test_record_result import PcrTestRecordResult
 from huaweicloudsdkocr.v1.model.pcr_test_record_words_block_list import PcrTestRecordWordsBlockList

@@ -1752,7 +1752,7 @@ class DcsAsyncClient(Client):
         return self.list_flavors_with_http_info(request)
 
     def list_flavors_with_http_info(self, request):
-        all_params = ['spec_code', 'cache_mode', 'engine', 'engine_version', 'cpu_type', 'capacity']
+        all_params = ['instance_id', 'spec_code', 'cache_mode', 'engine', 'engine_version', 'cpu_type', 'capacity']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1763,6 +1763,8 @@ class DcsAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
         if 'spec_code' in local_var_params:
             query_params.append(('spec_code', local_var_params['spec_code']))
         if 'cache_mode' in local_var_params:
