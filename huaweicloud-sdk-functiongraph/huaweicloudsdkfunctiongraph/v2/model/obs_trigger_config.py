@@ -57,14 +57,10 @@ class OBSTriggerConfig:
         self._suffix = None
         self.discriminator = None
 
-        if bucket is not None:
-            self.bucket = bucket
-        if events is not None:
-            self.events = events
-        if prefix is not None:
-            self.prefix = prefix
-        if suffix is not None:
-            self.suffix = suffix
+        self.bucket = bucket
+        self.events = events
+        self.prefix = prefix
+        self.suffix = suffix
 
     @property
     def bucket(self):

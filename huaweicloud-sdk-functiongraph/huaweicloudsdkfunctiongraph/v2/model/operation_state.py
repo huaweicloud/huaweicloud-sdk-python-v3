@@ -82,22 +82,16 @@ class OperationState:
         self._on_errors = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
-        if type is not None:
-            self.type = type
-        if end is not None:
-            self.end = end
-        if transition is not None:
-            self.transition = transition
+        self.id = id
+        self.name = name
+        self.type = type
+        self.end = end
+        self.transition = transition
         if state_data_filter is not None:
             self.state_data_filter = state_data_filter
         if action_mode is not None:
             self.action_mode = action_mode
-        if actions is not None:
-            self.actions = actions
+        self.actions = actions
         if on_errors is not None:
             self.on_errors = on_errors
 

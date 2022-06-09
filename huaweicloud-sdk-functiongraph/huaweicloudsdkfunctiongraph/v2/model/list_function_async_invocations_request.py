@@ -24,6 +24,7 @@ class ListFunctionAsyncInvocationsRequest:
         'function_urn': 'str',
         'request_id': 'str',
         'limit': 'str',
+        'marker': 'str',
         'status': 'str',
         'query_begin_time': 'datetime',
         'query_end_time': 'datetime'
@@ -33,12 +34,13 @@ class ListFunctionAsyncInvocationsRequest:
         'function_urn': 'function_urn',
         'request_id': 'request_id',
         'limit': 'limit',
+        'marker': 'marker',
         'status': 'status',
         'query_begin_time': 'query_begin_time',
         'query_end_time': 'query_end_time'
     }
 
-    def __init__(self, function_urn=None, request_id=None, limit=None, status=None, query_begin_time=None, query_end_time=None):
+    def __init__(self, function_urn=None, request_id=None, limit=None, marker=None, status=None, query_begin_time=None, query_end_time=None):
         """ListFunctionAsyncInvocationsRequest
 
         The model defined in huaweicloud sdk
@@ -49,6 +51,8 @@ class ListFunctionAsyncInvocationsRequest:
         :type request_id: str
         :param limit: 本次查询最大返回的数据条数，最大值500，默认值100
         :type limit: str
+        :param marker: 本次查询起始位置，默认值0
+        :type marker: str
         :param status: 本次查询指定的异步调用状态，支持5种状态，如果不指定，则查询所有状态的调用记录 WAIT: 等待 RUNNING: 执行中 SUCCESS: 执行成功 FAIL: 执行失败 DISCARD: 请求丢弃
         :type status: str
         :param query_begin_time: 搜索起始时间（格式为YYYY-MM-DD&#39;T&#39;HH:mm:ss,UTC时间）。如果不指定默认为当前时间前1小时
@@ -62,6 +66,7 @@ class ListFunctionAsyncInvocationsRequest:
         self._function_urn = None
         self._request_id = None
         self._limit = None
+        self._marker = None
         self._status = None
         self._query_begin_time = None
         self._query_end_time = None
@@ -72,6 +77,8 @@ class ListFunctionAsyncInvocationsRequest:
             self.request_id = request_id
         if limit is not None:
             self.limit = limit
+        if marker is not None:
+            self.marker = marker
         if status is not None:
             self.status = status
         if query_begin_time is not None:
@@ -144,6 +151,28 @@ class ListFunctionAsyncInvocationsRequest:
         :type limit: str
         """
         self._limit = limit
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListFunctionAsyncInvocationsRequest.
+
+        本次查询起始位置，默认值0
+
+        :return: The marker of this ListFunctionAsyncInvocationsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListFunctionAsyncInvocationsRequest.
+
+        本次查询起始位置，默认值0
+
+        :param marker: The marker of this ListFunctionAsyncInvocationsRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     @property
     def status(self):

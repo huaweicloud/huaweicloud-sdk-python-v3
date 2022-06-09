@@ -26,6 +26,8 @@ class ShowWorkFlowResponse(SdkResponse):
         'created_time': 'str',
         'updated_time': 'str',
         'created_by': 'str',
+        'lts_group_id': 'str',
+        'lts_stream_id': 'str',
         'definition': 'CreateWorkflowRequestBody'
     }
 
@@ -35,10 +37,12 @@ class ShowWorkFlowResponse(SdkResponse):
         'created_time': 'created_time',
         'updated_time': 'updated_time',
         'created_by': 'created_by',
+        'lts_group_id': 'lts_group_id',
+        'lts_stream_id': 'lts_stream_id',
         'definition': 'definition'
     }
 
-    def __init__(self, id=None, workflow_urn=None, created_time=None, updated_time=None, created_by=None, definition=None):
+    def __init__(self, id=None, workflow_urn=None, created_time=None, updated_time=None, created_by=None, lts_group_id=None, lts_stream_id=None, definition=None):
         """ShowWorkFlowResponse
 
         The model defined in huaweicloud sdk
@@ -53,6 +57,10 @@ class ShowWorkFlowResponse(SdkResponse):
         :type updated_time: str
         :param created_by: 流程创建者
         :type created_by: str
+        :param lts_group_id: 快速函数流日志组ID，仅快速模式函数流且日志级别不为NONE时
+        :type lts_group_id: str
+        :param lts_stream_id: 快速函数流日志流ID，仅快速模式函数流且日志级别不为NONE时返回。
+        :type lts_stream_id: str
         :param definition: 
         :type definition: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequestBody`
         """
@@ -64,6 +72,8 @@ class ShowWorkFlowResponse(SdkResponse):
         self._created_time = None
         self._updated_time = None
         self._created_by = None
+        self._lts_group_id = None
+        self._lts_stream_id = None
         self._definition = None
         self.discriminator = None
 
@@ -77,6 +87,10 @@ class ShowWorkFlowResponse(SdkResponse):
             self.updated_time = updated_time
         if created_by is not None:
             self.created_by = created_by
+        if lts_group_id is not None:
+            self.lts_group_id = lts_group_id
+        if lts_stream_id is not None:
+            self.lts_stream_id = lts_stream_id
         if definition is not None:
             self.definition = definition
 
@@ -189,6 +203,50 @@ class ShowWorkFlowResponse(SdkResponse):
         :type created_by: str
         """
         self._created_by = created_by
+
+    @property
+    def lts_group_id(self):
+        """Gets the lts_group_id of this ShowWorkFlowResponse.
+
+        快速函数流日志组ID，仅快速模式函数流且日志级别不为NONE时
+
+        :return: The lts_group_id of this ShowWorkFlowResponse.
+        :rtype: str
+        """
+        return self._lts_group_id
+
+    @lts_group_id.setter
+    def lts_group_id(self, lts_group_id):
+        """Sets the lts_group_id of this ShowWorkFlowResponse.
+
+        快速函数流日志组ID，仅快速模式函数流且日志级别不为NONE时
+
+        :param lts_group_id: The lts_group_id of this ShowWorkFlowResponse.
+        :type lts_group_id: str
+        """
+        self._lts_group_id = lts_group_id
+
+    @property
+    def lts_stream_id(self):
+        """Gets the lts_stream_id of this ShowWorkFlowResponse.
+
+        快速函数流日志流ID，仅快速模式函数流且日志级别不为NONE时返回。
+
+        :return: The lts_stream_id of this ShowWorkFlowResponse.
+        :rtype: str
+        """
+        return self._lts_stream_id
+
+    @lts_stream_id.setter
+    def lts_stream_id(self, lts_stream_id):
+        """Sets the lts_stream_id of this ShowWorkFlowResponse.
+
+        快速函数流日志流ID，仅快速模式函数流且日志级别不为NONE时返回。
+
+        :param lts_stream_id: The lts_stream_id of this ShowWorkFlowResponse.
+        :type lts_stream_id: str
+        """
+        self._lts_stream_id = lts_stream_id
 
     @property
     def definition(self):

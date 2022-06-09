@@ -4,7 +4,7 @@ from os import path
 from setuptools import setup, find_packages
 
 NAME = "huaweicloudsdkgaussdbforopengauss"
-VERSION = "3.0.91"
+VERSION = "3.0.92"
 AUTHOR = "HuaweiCloud SDK"
 AUTHOR_EMAIL = "hwcloudsdk@huawei.com"
 URL = "https://github.com/huaweicloud/huaweicloud-sdk-python-v3"

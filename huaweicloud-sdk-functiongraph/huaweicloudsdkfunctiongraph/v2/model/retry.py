@@ -52,8 +52,7 @@ class Retry:
         self._max_attempts = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if delay is not None:
             self.delay = delay
         if max_attempts is not None:

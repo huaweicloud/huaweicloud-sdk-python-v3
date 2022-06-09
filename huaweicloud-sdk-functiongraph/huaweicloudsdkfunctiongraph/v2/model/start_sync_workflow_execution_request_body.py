@@ -49,8 +49,7 @@ class StartSyncWorkflowExecutionRequestBody:
 
         if headers is not None:
             self.headers = headers
-        if input is not None:
-            self.input = input
+        self.input = input
 
     @property
     def headers(self):

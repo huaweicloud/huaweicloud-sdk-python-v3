@@ -24,6 +24,8 @@ class HostModel:
         'id': 'str',
         'name': 'str',
         'ip': 'str',
+        'availability_zone_id': 'str',
+        'tags': 'list[TagPlain]',
         'status': 'str',
         'flavor': 'str',
         'type': 'str',
@@ -39,6 +41,8 @@ class HostModel:
         'id': 'id',
         'name': 'name',
         'ip': 'ip',
+        'availability_zone_id': 'availability_zone_id',
+        'tags': 'tags',
         'status': 'status',
         'flavor': 'flavor',
         'type': 'type',
@@ -50,7 +54,7 @@ class HostModel:
         'data_volume_count': 'data_volume_count'
     }
 
-    def __init__(self, id=None, name=None, ip=None, status=None, flavor=None, type=None, mem=None, cpu=None, root_volume_size=None, data_volume_type=None, data_volume_size=None, data_volume_count=None):
+    def __init__(self, id=None, name=None, ip=None, availability_zone_id=None, tags=None, status=None, flavor=None, type=None, mem=None, cpu=None, root_volume_size=None, data_volume_type=None, data_volume_size=None, data_volume_count=None):
         """HostModel
 
         The model defined in huaweicloud sdk
@@ -61,6 +65,10 @@ class HostModel:
         :type name: str
         :param ip: 虚拟机IP地址
         :type ip: str
+        :param availability_zone_id: 可用区域
+        :type availability_zone_id: str
+        :param tags: 标签列表信息
+        :type tags: list[:class:`huaweicloudsdkmrs.v1.TagPlain`]
         :param status: 虚拟机当前状态
         :type status: str
         :param flavor: 虚拟机规格ID
@@ -86,6 +94,8 @@ class HostModel:
         self._id = None
         self._name = None
         self._ip = None
+        self._availability_zone_id = None
+        self._tags = None
         self._status = None
         self._flavor = None
         self._type = None
@@ -103,6 +113,10 @@ class HostModel:
             self.name = name
         if ip is not None:
             self.ip = ip
+        if availability_zone_id is not None:
+            self.availability_zone_id = availability_zone_id
+        if tags is not None:
+            self.tags = tags
         if status is not None:
             self.status = status
         if flavor is not None:
@@ -187,6 +201,50 @@ class HostModel:
         :type ip: str
         """
         self._ip = ip
+
+    @property
+    def availability_zone_id(self):
+        """Gets the availability_zone_id of this HostModel.
+
+        可用区域
+
+        :return: The availability_zone_id of this HostModel.
+        :rtype: str
+        """
+        return self._availability_zone_id
+
+    @availability_zone_id.setter
+    def availability_zone_id(self, availability_zone_id):
+        """Sets the availability_zone_id of this HostModel.
+
+        可用区域
+
+        :param availability_zone_id: The availability_zone_id of this HostModel.
+        :type availability_zone_id: str
+        """
+        self._availability_zone_id = availability_zone_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this HostModel.
+
+        标签列表信息
+
+        :return: The tags of this HostModel.
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.TagPlain`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this HostModel.
+
+        标签列表信息
+
+        :param tags: The tags of this HostModel.
+        :type tags: list[:class:`huaweicloudsdkmrs.v1.TagPlain`]
+        """
+        self._tags = tags
 
     @property
     def status(self):

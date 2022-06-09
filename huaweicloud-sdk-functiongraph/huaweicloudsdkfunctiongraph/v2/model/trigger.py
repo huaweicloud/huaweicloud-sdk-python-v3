@@ -57,10 +57,8 @@ class Trigger:
         self._trigger_config = None
         self.discriminator = None
 
-        if trigger_name is not None:
-            self.trigger_name = trigger_name
-        if trigger_type is not None:
-            self.trigger_type = trigger_type
+        self.trigger_name = trigger_name
+        self.trigger_type = trigger_type
         if enabled is not None:
             self.enabled = enabled
         if trigger_config is not None:

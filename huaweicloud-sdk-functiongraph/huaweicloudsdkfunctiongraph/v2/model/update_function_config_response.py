@@ -57,7 +57,8 @@ class UpdateFunctionConfigResponse(SdkResponse):
         'log_stream_id': 'str',
         'type': 'str',
         'enable_dynamic_memory': 'bool',
-        'is_stateful_function': 'bool'
+        'is_stateful_function': 'bool',
+        'domain_names': 'str'
     }
 
     attribute_map = {
@@ -97,10 +98,11 @@ class UpdateFunctionConfigResponse(SdkResponse):
         'log_stream_id': 'log_stream_id',
         'type': 'type',
         'enable_dynamic_memory': 'enable_dynamic_memory',
-        'is_stateful_function': 'is_stateful_function'
+        'is_stateful_function': 'is_stateful_function',
+        'domain_names': 'domain_names'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, is_stateful_function=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, is_stateful_function=None, domain_names=None):
         """UpdateFunctionConfigResponse
 
         The model defined in huaweicloud sdk
@@ -117,7 +119,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type project_name: str
         :param package: 函数所属的分组Package，用于用户针对函数的自定义分组。
         :type package: str
-        :param runtime: FunctionGraph函数的执行环境 支持Node.js6.10、Python2.7、Python3.6、Java8、Go1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1、PHP7.3。 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Java11、Nodejs14.18、Python3.9在type为v2时支持
+        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本
         :type runtime: str
         :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～900秒
         :type timeout: int
@@ -179,6 +181,8 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type enable_dynamic_memory: bool
         :param is_stateful_function: 是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
         :type is_stateful_function: bool
+        :param domain_names: 函数配置的需要支持域名解析的内网域名。
+        :type domain_names: str
         """
         
         super(UpdateFunctionConfigResponse, self).__init__()
@@ -220,6 +224,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
         self._type = None
         self._enable_dynamic_memory = None
         self._is_stateful_function = None
+        self._domain_names = None
         self.discriminator = None
 
         if func_urn is not None:
@@ -296,6 +301,8 @@ class UpdateFunctionConfigResponse(SdkResponse):
             self.enable_dynamic_memory = enable_dynamic_memory
         if is_stateful_function is not None:
             self.is_stateful_function = is_stateful_function
+        if domain_names is not None:
+            self.domain_names = domain_names
 
     @property
     def func_urn(self):
@@ -433,7 +440,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def runtime(self):
         """Gets the runtime of this UpdateFunctionConfigResponse.
 
-        FunctionGraph函数的执行环境 支持Node.js6.10、Python2.7、Python3.6、Java8、Go1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1、PHP7.3。 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Java11、Nodejs14.18、Python3.9在type为v2时支持
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本
 
         :return: The runtime of this UpdateFunctionConfigResponse.
         :rtype: str
@@ -444,7 +451,7 @@ class UpdateFunctionConfigResponse(SdkResponse):
     def runtime(self, runtime):
         """Sets the runtime of this UpdateFunctionConfigResponse.
 
-        FunctionGraph函数的执行环境 支持Node.js6.10、Python2.7、Python3.6、Java8、Go1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1、PHP7.3。 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Java11、Nodejs14.18、Python3.9在type为v2时支持
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本
 
         :param runtime: The runtime of this UpdateFunctionConfigResponse.
         :type runtime: str
@@ -1104,6 +1111,28 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type is_stateful_function: bool
         """
         self._is_stateful_function = is_stateful_function
+
+    @property
+    def domain_names(self):
+        """Gets the domain_names of this UpdateFunctionConfigResponse.
+
+        函数配置的需要支持域名解析的内网域名。
+
+        :return: The domain_names of this UpdateFunctionConfigResponse.
+        :rtype: str
+        """
+        return self._domain_names
+
+    @domain_names.setter
+    def domain_names(self, domain_names):
+        """Sets the domain_names of this UpdateFunctionConfigResponse.
+
+        函数配置的需要支持域名解析的内网域名。
+
+        :param domain_names: The domain_names of this UpdateFunctionConfigResponse.
+        :type domain_names: str
+        """
+        self._domain_names = domain_names
 
     def to_dict(self):
         """Returns the model properties as a dict"""

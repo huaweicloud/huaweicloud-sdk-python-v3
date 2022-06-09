@@ -53,7 +53,7 @@ class BootstrapScript:
         :type uri: str
         :param parameters: 引导操作脚本参数。
         :type parameters: str
-        :param nodes: 引导操作脚本所执行的节点类型，包含Master、Core和Task三种类型。
+        :param nodes: 引导操作脚本所执行的节点组名称，包含Master、Core和Task三种类型节点组。
         :type nodes: list[str]
         :param active_master: 引导操作脚本是否只运行在主Master节点上。 缺省值为false，表示引导操作脚本可运行在所有Master节点上。
         :type active_master: bool
@@ -160,7 +160,7 @@ class BootstrapScript:
     def nodes(self):
         """Gets the nodes of this BootstrapScript.
 
-        引导操作脚本所执行的节点类型，包含Master、Core和Task三种类型。
+        引导操作脚本所执行的节点组名称，包含Master、Core和Task三种类型节点组。
 
         :return: The nodes of this BootstrapScript.
         :rtype: list[str]
@@ -171,7 +171,7 @@ class BootstrapScript:
     def nodes(self, nodes):
         """Sets the nodes of this BootstrapScript.
 
-        引导操作脚本所执行的节点类型，包含Master、Core和Task三种类型。
+        引导操作脚本所执行的节点组名称，包含Master、Core和Task三种类型节点组。
 
         :param nodes: The nodes of this BootstrapScript.
         :type nodes: list[str]

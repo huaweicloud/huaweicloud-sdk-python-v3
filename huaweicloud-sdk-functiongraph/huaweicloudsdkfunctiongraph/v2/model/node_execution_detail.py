@@ -22,21 +22,29 @@ class NodeExecutionDetail:
 
     openapi_types = {
         'node_id': 'str',
+        'node_name': 'str',
+        'execution_id': 'str',
         'executions': 'list[NodeExecution]'
     }
 
     attribute_map = {
         'node_id': 'node_id',
+        'node_name': 'node_name',
+        'execution_id': 'execution_id',
         'executions': 'executions'
     }
 
-    def __init__(self, node_id=None, executions=None):
+    def __init__(self, node_id=None, node_name=None, execution_id=None, executions=None):
         """NodeExecutionDetail
 
         The model defined in huaweicloud sdk
 
         :param node_id: 流程节点ID
         :type node_id: str
+        :param node_name: 流程节点名称
+        :type node_name: str
+        :param execution_id: 流程节点执行ID
+        :type execution_id: str
         :param executions: 节点执行记录
         :type executions: list[:class:`huaweicloudsdkfunctiongraph.v2.NodeExecution`]
         """
@@ -44,11 +52,17 @@ class NodeExecutionDetail:
         
 
         self._node_id = None
+        self._node_name = None
+        self._execution_id = None
         self._executions = None
         self.discriminator = None
 
         if node_id is not None:
             self.node_id = node_id
+        if node_name is not None:
+            self.node_name = node_name
+        if execution_id is not None:
+            self.execution_id = execution_id
         if executions is not None:
             self.executions = executions
 
@@ -73,6 +87,50 @@ class NodeExecutionDetail:
         :type node_id: str
         """
         self._node_id = node_id
+
+    @property
+    def node_name(self):
+        """Gets the node_name of this NodeExecutionDetail.
+
+        流程节点名称
+
+        :return: The node_name of this NodeExecutionDetail.
+        :rtype: str
+        """
+        return self._node_name
+
+    @node_name.setter
+    def node_name(self, node_name):
+        """Sets the node_name of this NodeExecutionDetail.
+
+        流程节点名称
+
+        :param node_name: The node_name of this NodeExecutionDetail.
+        :type node_name: str
+        """
+        self._node_name = node_name
+
+    @property
+    def execution_id(self):
+        """Gets the execution_id of this NodeExecutionDetail.
+
+        流程节点执行ID
+
+        :return: The execution_id of this NodeExecutionDetail.
+        :rtype: str
+        """
+        return self._execution_id
+
+    @execution_id.setter
+    def execution_id(self, execution_id):
+        """Sets the execution_id of this NodeExecutionDetail.
+
+        流程节点执行ID
+
+        :param execution_id: The execution_id of this NodeExecutionDetail.
+        :type execution_id: str
+        """
+        self._execution_id = execution_id
 
     @property
     def executions(self):

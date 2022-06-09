@@ -22,15 +22,17 @@ class ListStatisticsRequest:
 
     openapi_types = {
         'filter': 'str',
-        'period': 'str'
+        'period': 'str',
+        'option': 'str'
     }
 
     attribute_map = {
         'filter': 'filter',
-        'period': 'period'
+        'period': 'period',
+        'option': 'option'
     }
 
-    def __init__(self, filter=None, period=None):
+    def __init__(self, filter=None, period=None, option=None):
         """ListStatisticsRequest
 
         The model defined in huaweicloud sdk
@@ -39,17 +41,22 @@ class ListStatisticsRequest:
         :type filter: str
         :param period: 时间段单位为分钟，与filter参数配合使用。
         :type period: str
+        :param option: 月度统计的维度，filter参数取值为monthly_report时才生效。 - \&quot;0\&quot;:表示统计本月。 - \&quot;1\&quot;:表示统计上月。 - \&quot;2\&quot;:表示统计最近三个月。 - \&quot;3\&quot;:表示统计最近六个月。 - 当取值不在以上范围时，默认取\&quot;0”。
+        :type option: str
         """
         
         
 
         self._filter = None
         self._period = None
+        self._option = None
         self.discriminator = None
 
         self.filter = filter
         if period is not None:
             self.period = period
+        if option is not None:
+            self.option = option
 
     @property
     def filter(self):
@@ -94,6 +101,28 @@ class ListStatisticsRequest:
         :type period: str
         """
         self._period = period
+
+    @property
+    def option(self):
+        """Gets the option of this ListStatisticsRequest.
+
+        月度统计的维度，filter参数取值为monthly_report时才生效。 - \"0\":表示统计本月。 - \"1\":表示统计上月。 - \"2\":表示统计最近三个月。 - \"3\":表示统计最近六个月。 - 当取值不在以上范围时，默认取\"0”。
+
+        :return: The option of this ListStatisticsRequest.
+        :rtype: str
+        """
+        return self._option
+
+    @option.setter
+    def option(self, option):
+        """Sets the option of this ListStatisticsRequest.
+
+        月度统计的维度，filter参数取值为monthly_report时才生效。 - \"0\":表示统计本月。 - \"1\":表示统计上月。 - \"2\":表示统计最近三个月。 - \"3\":表示统计最近六个月。 - 当取值不在以上范围时，默认取\"0”。
+
+        :param option: The option of this ListStatisticsRequest.
+        :type option: str
+        """
+        self._option = option
 
     def to_dict(self):
         """Returns the model properties as a dict"""

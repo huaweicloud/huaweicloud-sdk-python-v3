@@ -21,80 +21,49 @@ class CreateClusterResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'name': 'str'
+        'schema': 'CreateClusterResp'
     }
 
     attribute_map = {
-        'id': 'id',
-        'name': 'name'
+        'schema': 'schema'
     }
 
-    def __init__(self, id=None, name=None):
+    def __init__(self, schema=None):
         """CreateClusterResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 集群ID。
-        :type id: str
-        :param name: 集群名称。
-        :type name: str
+        :param schema: 
+        :type schema: :class:`huaweicloudsdkcss.v2.CreateClusterResp`
         """
         
         super(CreateClusterResponse, self).__init__()
 
-        self._id = None
-        self._name = None
+        self._schema = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if name is not None:
-            self.name = name
+        if schema is not None:
+            self.schema = schema
 
     @property
-    def id(self):
-        """Gets the id of this CreateClusterResponse.
+    def schema(self):
+        """Gets the schema of this CreateClusterResponse.
 
-        集群ID。
 
-        :return: The id of this CreateClusterResponse.
-        :rtype: str
+        :return: The schema of this CreateClusterResponse.
+        :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterResp`
         """
-        return self._id
+        return self._schema
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this CreateClusterResponse.
+    @schema.setter
+    def schema(self, schema):
+        """Sets the schema of this CreateClusterResponse.
 
-        集群ID。
 
-        :param id: The id of this CreateClusterResponse.
-        :type id: str
+        :param schema: The schema of this CreateClusterResponse.
+        :type schema: :class:`huaweicloudsdkcss.v2.CreateClusterResp`
         """
-        self._id = id
-
-    @property
-    def name(self):
-        """Gets the name of this CreateClusterResponse.
-
-        集群名称。
-
-        :return: The name of this CreateClusterResponse.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this CreateClusterResponse.
-
-        集群名称。
-
-        :param name: The name of this CreateClusterResponse.
-        :type name: str
-        """
-        self._name = name
+        self._schema = schema
 
     def to_dict(self):
         """Returns the model properties as a dict"""

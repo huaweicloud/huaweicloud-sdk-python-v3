@@ -1,3 +1,87 @@
+# 3.0.92 2022-06-09
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateCluster`:
+    - 新增响应参数 `schema`
+    - 移除响应参数 `id`、`name`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateFunctionCode`响应参数`runtime`类型调整 `string` -> `enum`
+  - 接口`ShowFunctionCode`响应参数`runtime`类型调整 `string` -> `enum`
+  - 接口`UpdateFunctionConfig`:
+    - 新增请求参数 `domain_names`
+    - 新增响应参数 `domain_names`
+    - 响应参数`runtime`类型调整 `string` -> `enum`
+  - 接口`ShowFunctionConfig`响应参数`runtime`类型调整 `string` -> `enum`
+  - 接口`CreateFunctionVersion`响应参数`runtime`类型调整 `string` -> `enum`
+  - 接口`ListStatistics`新增请求参数 `option`
+  - 接口`CreateDependency`响应参数`runtime`类型调整 `string` -> `enum`
+  - 接口`ListDependencies`响应参数`runtime`类型调整 `string` -> `enum`
+  - 接口`UpdateDependency`响应参数`runtime`类型调整 `string` -> `enum`
+  - 接口`ShowDependency`响应参数`runtime`类型调整 `string` -> `enum`
+  - 接口`UpdateEvent`请求参数`content`改为必填
+  - 接口`ListFunctionAsyncInvocations`新增请求参数 `marker`
+  - 接口`BatchDeleteWorkflows`请求参数`workflow_urns`改为必填
+  - 接口`CreateWorkflow`请求参数`name`、`trigger_name`、`trigger_type`、`bucket`、`events`、`prefix`、`suffix`、`start`、`name`、`operation`、`id`、`name`、`type`、`end`、`transition`、`ref_name`、`arguments`、`constants`、`name`改为必填
+  - 接口`StartWorkflowExecution`请求参数`input`改为必填
+  - 接口`ShowWorkflowExecution`新增响应参数 `node_name`、`execution_id`、`request_id`
+  - 接口`UpdateWorkFlow`请求参数`name`、`trigger_name`、`trigger_type`、`bucket`、`events`、`prefix`、`suffix`、`start`、`name`、`operation`、`id`、`name`、`type`、`end`、`transition`、`ref_name`、`arguments`、`constants`、`name`改为必填
+  - 接口`ShowWorkFlow`:
+    - 新增响应参数 `lts_group_id`、`lts_stream_id`
+    - 响应参数`name`、`trigger_name`、`trigger_type`、`bucket`、`events`、`prefix`、`suffix`、`start`、`name`、`operation`、`id`、`name`、`type`、`end`、`transition`、`ref_name`、`arguments`、`constants`、`name`改为必填
+  - 接口`StartSyncWorkflowExecution`请求参数`input`改为必填
+
+### HuaweiCloud SDK GSL
+
+- _新增特性_
+  - 支持以下接口：
+    - `BatchSetTags`
+    - `ListTags`
+    - `CreateTag`
+    - `DeleteTag`
+    - `BatchSetAttributes`
+    - `ListAttributes`
+    - `CreateAttribute`
+    - `UpdateAttribute`
+    - `EnableAttribute`
+    - `DisableAttribute`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListSimCards`新增请求参数 `tag_id`
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 支持接口`RunTextModeration`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListClusters`新增响应参数 `availabilityZoneId`
+  - 接口`ShowClusterDetails`新增响应参数 `availabilityZoneId`
+  - 接口`ListHosts`新增响应参数 `availability_zone_id`、`tags`
+
 # 3.0.91 2022-06-02
 
 ### HuaweiCloud SDK DCS

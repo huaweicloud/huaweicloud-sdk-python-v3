@@ -26,7 +26,8 @@ class NodeExecution:
         'output': 'object',
         'begin_time': 'int',
         'end_time': 'int',
-        'error_message': 'object'
+        'error_message': 'object',
+        'request_id': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class NodeExecution:
         'output': 'output',
         'begin_time': 'begin_time',
         'end_time': 'end_time',
-        'error_message': 'error_message'
+        'error_message': 'error_message',
+        'request_id': 'request_id'
     }
 
-    def __init__(self, status=None, input=None, output=None, begin_time=None, end_time=None, error_message=None):
+    def __init__(self, status=None, input=None, output=None, begin_time=None, end_time=None, error_message=None, request_id=None):
         """NodeExecution
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class NodeExecution:
         :type end_time: int
         :param error_message: 节点错误信息，仅在节点出错时非空
         :type error_message: object
+        :param request_id: 流程节点请求ID
+        :type request_id: str
         """
         
         
@@ -65,6 +69,7 @@ class NodeExecution:
         self._begin_time = None
         self._end_time = None
         self._error_message = None
+        self._request_id = None
         self.discriminator = None
 
         if status is not None:
@@ -79,6 +84,8 @@ class NodeExecution:
             self.end_time = end_time
         if error_message is not None:
             self.error_message = error_message
+        if request_id is not None:
+            self.request_id = request_id
 
     @property
     def status(self):
@@ -211,6 +218,28 @@ class NodeExecution:
         :type error_message: object
         """
         self._error_message = error_message
+
+    @property
+    def request_id(self):
+        """Gets the request_id of this NodeExecution.
+
+        流程节点请求ID
+
+        :return: The request_id of this NodeExecution.
+        :rtype: str
+        """
+        return self._request_id
+
+    @request_id.setter
+    def request_id(self, request_id):
+        """Sets the request_id of this NodeExecution.
+
+        流程节点请求ID
+
+        :param request_id: The request_id of this NodeExecution.
+        :type request_id: str
+        """
+        self._request_id = request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

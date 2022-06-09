@@ -1,0 +1,16 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+# import ModerationClient
+from huaweicloudsdkmoderation.v3.moderation_client import ModerationClient
+from huaweicloudsdkmoderation.v3.moderation_async_client import ModerationAsyncClient
+# import models into sdk package
+from huaweicloudsdkmoderation.v3.model.run_text_moderation_request import RunTextModerationRequest
+from huaweicloudsdkmoderation.v3.model.run_text_moderation_response import RunTextModerationResponse
+from huaweicloudsdkmoderation.v3.model.segment_result import SegmentResult
+from huaweicloudsdkmoderation.v3.model.text_detection_data_req import TextDetectionDataReq
+from huaweicloudsdkmoderation.v3.model.text_detection_req import TextDetectionReq
+from huaweicloudsdkmoderation.v3.model.text_detection_result import TextDetectionResult
+from huaweicloudsdkmoderation.v3.model.text_detection_result_detail import TextDetectionResultDetail
+

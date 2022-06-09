@@ -1,3 +1,87 @@
+# 3.0.92 2022-06-09
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateCluster`:
+    - Add the response parameter `schema`
+    - Remove the response parameters `id`, `name`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `string` -> `enum` of the response parameter `runtime` of the interface `UpdateFunctionCode`
+  - Modify the type `string` -> `enum` of the response parameter `runtime` of the interface `ShowFunctionCode`
+  - Changes of the interface `UpdateFunctionConfig`:
+    - Add the request parameter `domain_names`
+    - Add the response parameter `domain_names`
+    - Modify the type `string` -> `enum` of the response parameter `runtime`
+  - Modify the type `string` -> `enum` of the response parameter `runtime` of the interface `ShowFunctionConfig`
+  - Modify the type `string` -> `enum` of the response parameter `runtime` of the interface `CreateFunctionVersion`
+  - Add the request parameter `option` to the interface `ListStatistics`
+  - Modify the type `string` -> `enum` of the response parameter `runtime` of the interface `CreateDependency`
+  - Modify the type `string` -> `enum` of the response parameter `runtime` of the interface `ListDependencies`
+  - Modify the type `string` -> `enum` of the response parameter `runtime` of the interface `UpdateDependency`
+  - Modify the type `string` -> `enum` of the response parameter `runtime` of the interface `ShowDependency`
+  - The request parameter `content` changed to required of the interface `UpdateEvent`
+  - Add the request parameter `marker` to the interface `ListFunctionAsyncInvocations`
+  - The request parameter `workflow_urns` changed to required of the interface `BatchDeleteWorkflows`
+  - The request parameter `name`, `trigger_name`, `trigger_type`, `bucket`, `events`, `prefix`, `suffix`, `start`, `name`, `operation`, `id`, `name`, `type`, `end`, `transition`, `ref_name`, `arguments`, `constants`, `name` changed to required of the interface `CreateWorkflow`
+  - The request parameter `input` changed to required of the interface `StartWorkflowExecution`
+  - Add the response parameters `node_name`, `execution_id`, `request_id` to the interface `ShowWorkflowExecution`
+  - The request parameter `name`, `trigger_name`, `trigger_type`, `bucket`, `events`, `prefix`, `suffix`, `start`, `name`, `operation`, `id`, `name`, `type`, `end`, `transition`, `ref_name`, `arguments`, `constants`, `name` changed to required of the interface `UpdateWorkFlow`
+  - Changes of the interface `ShowWorkFlow`:
+    - Add the response parameters `lts_group_id`, `lts_stream_id`
+    - The response parameter `name`, `trigger_name`, `trigger_type`, `bucket`, `events`, `prefix`, `suffix`, `start`, `name`, `operation`, `id`, `name`, `type`, `end`, `transition`, `ref_name`, `arguments`, `constants`, `name` changed to required
+  - The request parameter `input` changed to required of the interface `StartSyncWorkflowExecution`
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - Support the following interfaces:
+    - `BatchSetTags`
+    - `ListTags`
+    - `CreateTag`
+    - `DeleteTag`
+    - `BatchSetAttributes`
+    - `ListAttributes`
+    - `CreateAttribute`
+    - `UpdateAttribute`
+    - `EnableAttribute`
+    - `DisableAttribute`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `tag_id` to the interface `ListSimCards`
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - Support the interface `RunTextModeration`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `availabilityZoneId` to the interface `ListClusters`
+  - Add the response parameter `availabilityZoneId` to the interface `ShowClusterDetails`
+  - Add the response parameters `availability_zone_id`, `tags` to the interface `ListHosts`
+
 # 3.0.91 2022-06-02
 
 ### HuaweiCloud SDK DCS

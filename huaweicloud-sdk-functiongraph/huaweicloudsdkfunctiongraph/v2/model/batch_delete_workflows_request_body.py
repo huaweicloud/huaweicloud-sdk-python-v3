@@ -42,8 +42,7 @@ class BatchDeleteWorkflowsRequestBody:
         self._workflow_urns = None
         self.discriminator = None
 
-        if workflow_urns is not None:
-            self.workflow_urns = workflow_urns
+        self.workflow_urns = workflow_urns
 
     @property
     def workflow_urns(self):

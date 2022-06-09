@@ -52,12 +52,10 @@ class FunctionRef:
         self._arguments = None
         self.discriminator = None
 
-        if ref_name is not None:
-            self.ref_name = ref_name
+        self.ref_name = ref_name
         if invoke_mode is not None:
             self.invoke_mode = invoke_mode
-        if arguments is not None:
-            self.arguments = arguments
+        self.arguments = arguments
 
     @property
     def ref_name(self):

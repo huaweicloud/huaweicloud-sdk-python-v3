@@ -1203,7 +1203,7 @@ class FunctionGraphAsyncClient(Client):
         return self.list_function_async_invocations_with_http_info(request)
 
     def list_function_async_invocations_with_http_info(self, request):
-        all_params = ['function_urn', 'request_id', 'limit', 'status', 'query_begin_time', 'query_end_time']
+        all_params = ['function_urn', 'request_id', 'limit', 'marker', 'status', 'query_begin_time', 'query_end_time']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1220,6 +1220,8 @@ class FunctionGraphAsyncClient(Client):
             query_params.append(('request_id', local_var_params['request_id']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
         if 'query_begin_time' in local_var_params:
@@ -1576,7 +1578,7 @@ class FunctionGraphAsyncClient(Client):
         return self.list_statistics_with_http_info(request)
 
     def list_statistics_with_http_info(self, request):
-        all_params = ['filter', 'period']
+        all_params = ['filter', 'period', 'option']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1591,6 +1593,8 @@ class FunctionGraphAsyncClient(Client):
             query_params.append(('filter', local_var_params['filter']))
         if 'period' in local_var_params:
             query_params.append(('period', local_var_params['period']))
+        if 'option' in local_var_params:
+            query_params.append(('option', local_var_params['option']))
 
         header_params = {}
 

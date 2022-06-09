@@ -43,13 +43,13 @@ class UpdateDependencyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param depend_file: depend_type为zip类型时必填，为文件流格式。
+        :param depend_file: depend_type为zip类型时必填，为文件流格式,需要base64编码zip文件。
         :type depend_file: str
         :param depend_link: depend_type为obs类型时，依赖包在obs的存储地址。
         :type depend_link: str
         :param depend_type: 导入类型,目前支持obs和zip。
         :type depend_type: str
-        :param runtime: 运行时语言， Java11、Nodejs14:、Python3:在type为v2时支持。
+        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本
         :type runtime: str
         :param name: 依赖包名称。必须以大、小写字母开头，以字母或数字结尾，只能由字母、数字、下划线、点和中划线组成，长度不超过96个字符。
         :type name: str
@@ -81,7 +81,7 @@ class UpdateDependencyRequestBody:
     def depend_file(self):
         """Gets the depend_file of this UpdateDependencyRequestBody.
 
-        depend_type为zip类型时必填，为文件流格式。
+        depend_type为zip类型时必填，为文件流格式,需要base64编码zip文件。
 
         :return: The depend_file of this UpdateDependencyRequestBody.
         :rtype: str
@@ -92,7 +92,7 @@ class UpdateDependencyRequestBody:
     def depend_file(self, depend_file):
         """Sets the depend_file of this UpdateDependencyRequestBody.
 
-        depend_type为zip类型时必填，为文件流格式。
+        depend_type为zip类型时必填，为文件流格式,需要base64编码zip文件。
 
         :param depend_file: The depend_file of this UpdateDependencyRequestBody.
         :type depend_file: str
@@ -147,7 +147,7 @@ class UpdateDependencyRequestBody:
     def runtime(self):
         """Gets the runtime of this UpdateDependencyRequestBody.
 
-        运行时语言， Java11、Nodejs14:、Python3:在type为v2时支持。
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本
 
         :return: The runtime of this UpdateDependencyRequestBody.
         :rtype: str
@@ -158,7 +158,7 @@ class UpdateDependencyRequestBody:
     def runtime(self, runtime):
         """Sets the runtime of this UpdateDependencyRequestBody.
 
-        运行时语言， Java11、Nodejs14:、Python3:在type为v2时支持。
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本
 
         :param runtime: The runtime of this UpdateDependencyRequestBody.
         :type runtime: str

@@ -92,22 +92,16 @@ class UpdateWorkflowRequestBody:
         self._enterprise_project_id = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
         if triggers is not None:
             self.triggers = triggers
-        if start is not None:
-            self.start = start
-        if functions is not None:
-            self.functions = functions
-        if states is not None:
-            self.states = states
-        if constants is not None:
-            self.constants = constants
-        if retries is not None:
-            self.retries = retries
+        self.start = start
+        self.functions = functions
+        self.states = states
+        self.constants = constants
+        self.retries = retries
         if mode is not None:
             self.mode = mode
         if express_config is not None:

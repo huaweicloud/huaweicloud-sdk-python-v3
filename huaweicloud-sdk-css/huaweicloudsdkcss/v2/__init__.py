@@ -20,6 +20,7 @@ from huaweicloudsdkcss.v2.model.create_cluster_public_kibana_elb_white_list impo
 from huaweicloudsdkcss.v2.model.create_cluster_public_kibana_req import CreateClusterPublicKibanaReq
 from huaweicloudsdkcss.v2.model.create_cluster_req import CreateClusterReq
 from huaweicloudsdkcss.v2.model.create_cluster_request import CreateClusterRequest
+from huaweicloudsdkcss.v2.model.create_cluster_resp import CreateClusterResp
 from huaweicloudsdkcss.v2.model.create_cluster_response import CreateClusterResponse
 from huaweicloudsdkcss.v2.model.create_cluster_roles_body import CreateClusterRolesBody
 from huaweicloudsdkcss.v2.model.create_cluster_tags_body import CreateClusterTagsBody

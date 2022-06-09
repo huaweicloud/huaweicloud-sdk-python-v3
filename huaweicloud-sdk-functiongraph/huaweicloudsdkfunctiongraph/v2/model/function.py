@@ -52,10 +52,8 @@ class Function:
         self._metadata = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if operation is not None:
-            self.operation = operation
+        self.name = name
+        self.operation = operation
         if metadata is not None:
             self.metadata = metadata
 

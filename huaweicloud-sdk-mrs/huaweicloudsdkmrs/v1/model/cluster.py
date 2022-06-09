@@ -46,6 +46,7 @@ class Cluster:
         'az_id': 'str',
         'az_name': 'str',
         'az_code': 'str',
+        'availability_zone_id': 'str',
         'instance_id': 'str',
         'vnc': 'str',
         'tenant_id': 'str',
@@ -113,6 +114,7 @@ class Cluster:
         'az_id': 'azId',
         'az_name': 'azName',
         'az_code': 'azCode',
+        'availability_zone_id': 'availabilityZoneId',
         'instance_id': 'instanceId',
         'vnc': 'vnc',
         'tenant_id': 'tenantId',
@@ -154,7 +156,7 @@ class Cluster:
         'task_node_groups': 'taskNodeGroups'
     }
 
-    def __init__(self, cluster_id=None, cluster_name=None, total_node_num=None, cluster_state=None, stage_desc=None, create_at=None, update_at=None, charging_start_time=None, billing_type=None, data_center=None, vpc=None, vpc_id=None, duration=None, fee=None, hadoop_version=None, component_list=None, external_ip=None, external_alternate_ip=None, internal_ip=None, deployment_id=None, remark=None, order_id=None, az_id=None, az_name=None, az_code=None, instance_id=None, vnc=None, tenant_id=None, volume_size=None, volume_type=None, subnet_id=None, subnet_name=None, security_groups_id=None, slave_security_groups_id=None, bootstrap_scripts=None, safe_mode=None, cluster_version=None, node_public_cert_name=None, master_node_ip=None, private_ip_first=None, error_info=None, tags=None, master_node_num=None, core_node_num=None, master_node_size=None, core_node_size=None, master_node_product_id=None, master_node_spec_id=None, core_node_product_id=None, core_node_spec_id=None, master_data_volume_type=None, master_data_volume_size=None, master_data_volume_count=None, core_data_volume_type=None, core_data_volume_size=None, core_data_volume_count=None, enterprise_project_id=None, is_mrs_manager_finish=None, cluster_type=None, log_collection=None, period_type=None, scale=None, node_groups=None, task_node_groups=None):
+    def __init__(self, cluster_id=None, cluster_name=None, total_node_num=None, cluster_state=None, stage_desc=None, create_at=None, update_at=None, charging_start_time=None, billing_type=None, data_center=None, vpc=None, vpc_id=None, duration=None, fee=None, hadoop_version=None, component_list=None, external_ip=None, external_alternate_ip=None, internal_ip=None, deployment_id=None, remark=None, order_id=None, az_id=None, az_name=None, az_code=None, availability_zone_id=None, instance_id=None, vnc=None, tenant_id=None, volume_size=None, volume_type=None, subnet_id=None, subnet_name=None, security_groups_id=None, slave_security_groups_id=None, bootstrap_scripts=None, safe_mode=None, cluster_version=None, node_public_cert_name=None, master_node_ip=None, private_ip_first=None, error_info=None, tags=None, master_node_num=None, core_node_num=None, master_node_size=None, core_node_size=None, master_node_product_id=None, master_node_spec_id=None, core_node_product_id=None, core_node_spec_id=None, master_data_volume_type=None, master_data_volume_size=None, master_data_volume_count=None, core_data_volume_type=None, core_data_volume_size=None, core_data_volume_count=None, enterprise_project_id=None, is_mrs_manager_finish=None, cluster_type=None, log_collection=None, period_type=None, scale=None, node_groups=None, task_node_groups=None):
         """Cluster
 
         The model defined in huaweicloud sdk
@@ -209,6 +211,8 @@ class Cluster:
         :type az_name: str
         :param az_code: 可用区域英文名称
         :type az_code: str
+        :param availability_zone_id: 可用区域
+        :type availability_zone_id: str
         :param instance_id: 实例ID。
         :type instance_id: str
         :param vnc: 远程登录弹性云服务器的URI地址。
@@ -316,6 +320,7 @@ class Cluster:
         self._az_id = None
         self._az_name = None
         self._az_code = None
+        self._availability_zone_id = None
         self._instance_id = None
         self._vnc = None
         self._tenant_id = None
@@ -407,6 +412,8 @@ class Cluster:
             self.az_name = az_name
         if az_code is not None:
             self.az_code = az_code
+        if availability_zone_id is not None:
+            self.availability_zone_id = availability_zone_id
         if instance_id is not None:
             self.instance_id = instance_id
         if vnc is not None:
@@ -1035,6 +1042,28 @@ class Cluster:
         :type az_code: str
         """
         self._az_code = az_code
+
+    @property
+    def availability_zone_id(self):
+        """Gets the availability_zone_id of this Cluster.
+
+        可用区域
+
+        :return: The availability_zone_id of this Cluster.
+        :rtype: str
+        """
+        return self._availability_zone_id
+
+    @availability_zone_id.setter
+    def availability_zone_id(self, availability_zone_id):
+        """Sets the availability_zone_id of this Cluster.
+
+        可用区域
+
+        :param availability_zone_id: The availability_zone_id of this Cluster.
+        :type availability_zone_id: str
+        """
+        self._availability_zone_id = availability_zone_id
 
     @property
     def instance_id(self):
