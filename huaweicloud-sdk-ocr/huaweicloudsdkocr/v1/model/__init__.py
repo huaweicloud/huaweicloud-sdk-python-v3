@@ -40,6 +40,7 @@ from huaweicloudsdkocr.v1.model.health_code_result import HealthCodeResult
 from huaweicloudsdkocr.v1.model.health_code_words_block_list import HealthCodeWordsBlockList
 from huaweicloudsdkocr.v1.model.id_card_request_body import IdCardRequestBody
 from huaweicloudsdkocr.v1.model.id_card_result import IdCardResult
+from huaweicloudsdkocr.v1.model.id_document_request_body import IdDocumentRequestBody
 from huaweicloudsdkocr.v1.model.idcard_verification_result import IdcardVerificationResult
 from huaweicloudsdkocr.v1.model.insurance_item import InsuranceItem
 from huaweicloudsdkocr.v1.model.insurance_policy_detail import InsurancePolicyDetail
@@ -98,6 +99,8 @@ from huaweicloudsdkocr.v1.model.recognize_health_code_request import RecognizeHe
 from huaweicloudsdkocr.v1.model.recognize_health_code_response import RecognizeHealthCodeResponse
 from huaweicloudsdkocr.v1.model.recognize_id_card_request import RecognizeIdCardRequest
 from huaweicloudsdkocr.v1.model.recognize_id_card_response import RecognizeIdCardResponse
+from huaweicloudsdkocr.v1.model.recognize_id_document_request import RecognizeIdDocumentRequest
+from huaweicloudsdkocr.v1.model.recognize_id_document_response import RecognizeIdDocumentResponse
 from huaweicloudsdkocr.v1.model.recognize_insurance_policy_request import RecognizeInsurancePolicyRequest
 from huaweicloudsdkocr.v1.model.recognize_insurance_policy_response import RecognizeInsurancePolicyResponse
 from huaweicloudsdkocr.v1.model.recognize_invoice_verification_request import RecognizeInvoiceVerificationRequest

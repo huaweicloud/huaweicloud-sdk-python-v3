@@ -47,7 +47,7 @@ class ListCertificatesRequest:
 
         :param limit: 每页条目数量，取值如下： - 10：每页显示10条证书信息。 - 20：每页显示20条证书信息。 - 50：每页显示50条证书信息。
         :type limit: int
-        :param offset: 偏移量。取值范围为1~30。
+        :param offset: 偏移量。
         :type offset: int
         :param sort_dir: 排序方式。根据排序参数sort_key进行排序，取值如下： - ASC：升序。 - DESC：降序。
         :type sort_dir: str
@@ -113,7 +113,7 @@ class ListCertificatesRequest:
     def offset(self):
         """Gets the offset of this ListCertificatesRequest.
 
-        偏移量。取值范围为1~30。
+        偏移量。
 
         :return: The offset of this ListCertificatesRequest.
         :rtype: int
@@ -124,7 +124,7 @@ class ListCertificatesRequest:
     def offset(self, offset):
         """Sets the offset of this ListCertificatesRequest.
 
-        偏移量。取值范围为1~30。
+        偏移量。
 
         :param offset: The offset of this ListCertificatesRequest.
         :type offset: int

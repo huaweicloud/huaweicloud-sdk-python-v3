@@ -42,8 +42,7 @@ class Events:
         self._events = None
         self.discriminator = None
 
-        if events is not None:
-            self.events = events
+        self.events = events
 
     @property
     def events(self):

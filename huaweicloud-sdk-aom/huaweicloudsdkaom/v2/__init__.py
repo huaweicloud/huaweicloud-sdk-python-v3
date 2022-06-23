@@ -20,7 +20,6 @@ from huaweicloudsdkaom.v2.model.app_rules_spec import AppRulesSpec
 from huaweicloudsdkaom.v2.model.application_name_rule import ApplicationNameRule
 from huaweicloudsdkaom.v2.model.count_events_request import CountEventsRequest
 from huaweicloudsdkaom.v2.model.count_events_response import CountEventsResponse
-from huaweicloudsdkaom.v2.model.data import Data
 from huaweicloudsdkaom.v2.model.delete_alarm_rule_request import DeleteAlarmRuleRequest
 from huaweicloudsdkaom.v2.model.delete_alarm_rule_response import DeleteAlarmRuleResponse
 from huaweicloudsdkaom.v2.model.delete_alarm_rules_body import DeleteAlarmRulesBody

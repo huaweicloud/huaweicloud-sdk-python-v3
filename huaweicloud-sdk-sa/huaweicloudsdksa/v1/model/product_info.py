@@ -62,16 +62,11 @@ class ProductInfo:
         self._product_name = None
         self.discriminator = None
 
-        if domain_id is not None:
-            self.domain_id = domain_id
-        if project_id is not None:
-            self.project_id = project_id
-        if region is not None:
-            self.region = region
-        if company_name is not None:
-            self.company_name = company_name
-        if product_name is not None:
-            self.product_name = product_name
+        self.domain_id = domain_id
+        self.project_id = project_id
+        self.region = region
+        self.company_name = company_name
+        self.product_name = product_name
 
     @property
     def domain_id(self):

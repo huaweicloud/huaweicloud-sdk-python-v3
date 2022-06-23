@@ -37,9 +37,9 @@ class ShowResourceByIdRequest:
 
         The model defined in huaweicloud sdk
 
-        :param provider: 云服务英文简写
+        :param provider: 云服务名称
         :type provider: str
-        :param type: 云服务资源类型名称
+        :param type: 资源类型名称
         :type type: str
         :param resource_id: 资源ID
         :type resource_id: str
@@ -60,7 +60,7 @@ class ShowResourceByIdRequest:
     def provider(self):
         """Gets the provider of this ShowResourceByIdRequest.
 
-        云服务英文简写
+        云服务名称
 
         :return: The provider of this ShowResourceByIdRequest.
         :rtype: str
@@ -71,7 +71,7 @@ class ShowResourceByIdRequest:
     def provider(self, provider):
         """Sets the provider of this ShowResourceByIdRequest.
 
-        云服务英文简写
+        云服务名称
 
         :param provider: The provider of this ShowResourceByIdRequest.
         :type provider: str
@@ -82,7 +82,7 @@ class ShowResourceByIdRequest:
     def type(self):
         """Gets the type of this ShowResourceByIdRequest.
 
-        云服务资源类型名称
+        资源类型名称
 
         :return: The type of this ShowResourceByIdRequest.
         :rtype: str
@@ -93,7 +93,7 @@ class ShowResourceByIdRequest:
     def type(self, type):
         """Sets the type of this ShowResourceByIdRequest.
 
-        云服务资源类型名称
+        资源类型名称
 
         :param type: The type of this ShowResourceByIdRequest.
         :type type: str

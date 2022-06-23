@@ -72,15 +72,18 @@ class DataSource:
         self._product_feature = None
         self.discriminator = None
 
-        self.type = type
-        self.domain_id = domain_id
+        if type is not None:
+            self.type = type
+        if domain_id is not None:
+            self.domain_id = domain_id
         if project_id is not None:
             self.project_id = project_id
         if region_id is not None:
             self.region_id = region_id
         self.company_name = company_name
         self.product_name = product_name
-        self.product_feature = product_feature
+        if product_feature is not None:
+            self.product_feature = product_feature
 
     @property
     def type(self):

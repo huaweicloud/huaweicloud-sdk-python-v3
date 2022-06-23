@@ -22,7 +22,7 @@ class ListInstantQueryAomPromPostResponse(SdkResponse):
 
     openapi_types = {
         'status': 'str',
-        'data': 'Data'
+        'data': 'object'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class ListInstantQueryAomPromPostResponse(SdkResponse):
         :param status: 响应状态。
         :type status: str
         :param data: 
-        :type data: :class:`huaweicloudsdkaom.v2.Data`
+        :type data: object
         """
         
         super(ListInstantQueryAomPromPostResponse, self).__init__()
@@ -80,7 +80,7 @@ class ListInstantQueryAomPromPostResponse(SdkResponse):
 
 
         :return: The data of this ListInstantQueryAomPromPostResponse.
-        :rtype: :class:`huaweicloudsdkaom.v2.Data`
+        :rtype: object
         """
         return self._data
 
@@ -90,7 +90,7 @@ class ListInstantQueryAomPromPostResponse(SdkResponse):
 
 
         :param data: The data of this ListInstantQueryAomPromPostResponse.
-        :type data: :class:`huaweicloudsdkaom.v2.Data`
+        :type data: object
         """
         self._data = data
 

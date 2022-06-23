@@ -57,10 +57,8 @@ class Environment:
         self._region_id = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
-        if domain_id is not None:
-            self.domain_id = domain_id
+        self.type = type
+        self.domain_id = domain_id
         if project_id is not None:
             self.project_id = project_id
         if region_id is not None:

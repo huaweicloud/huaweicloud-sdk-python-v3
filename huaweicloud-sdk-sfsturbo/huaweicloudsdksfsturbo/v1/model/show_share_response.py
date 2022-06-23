@@ -77,7 +77,7 @@ class ShowShareResponse(SdkResponse):
         :type action_progress: :class:`huaweicloudsdksfsturbo.v1.ActionProgress`
         :param version: SFS Turbo文件系统的版本号。
         :type version: str
-        :param avail_capacity: SFS Turbo文件系统可用容量，单位GB。
+        :param avail_capacity: SFS Turbo文件系统剩余容量，单位GB。
         :type avail_capacity: str
         :param availability_zone: SFS Turbo文件系统所在可用区编码。
         :type availability_zone: str
@@ -107,9 +107,9 @@ class ShowShareResponse(SdkResponse):
         :type share_type: str
         :param size: SFS Turbo文件系统总容量，单位GB。
         :type size: str
-        :param status: SFS Turbo文件系统的状态
+        :param status: SFS Turbo文件系统的状态。&#39;100&#39;表示创建中，&#39;200&#39;表示可用，&#39;400&#39;表示已删除，&#39;303&#39;表示创建失败。
         :type status: str
-        :param sub_status: SFS Turbo文件系统的子状态
+        :param sub_status: SFS Turbo文件系统的子状态。&#39;121&#39;表示扩容中，&#39;221&#39;表示扩容成功，&#39;321&#39;表示扩容失败。
         :type sub_status: str
         :param subnet_id: 用户指定的子网的网络ID。
         :type subnet_id: str
@@ -231,7 +231,7 @@ class ShowShareResponse(SdkResponse):
     def avail_capacity(self):
         """Gets the avail_capacity of this ShowShareResponse.
 
-        SFS Turbo文件系统可用容量，单位GB。
+        SFS Turbo文件系统剩余容量，单位GB。
 
         :return: The avail_capacity of this ShowShareResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class ShowShareResponse(SdkResponse):
     def avail_capacity(self, avail_capacity):
         """Sets the avail_capacity of this ShowShareResponse.
 
-        SFS Turbo文件系统可用容量，单位GB。
+        SFS Turbo文件系统剩余容量，单位GB。
 
         :param avail_capacity: The avail_capacity of this ShowShareResponse.
         :type avail_capacity: str
@@ -561,7 +561,7 @@ class ShowShareResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowShareResponse.
 
-        SFS Turbo文件系统的状态
+        SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'400'表示已删除，'303'表示创建失败。
 
         :return: The status of this ShowShareResponse.
         :rtype: str
@@ -572,7 +572,7 @@ class ShowShareResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowShareResponse.
 
-        SFS Turbo文件系统的状态
+        SFS Turbo文件系统的状态。'100'表示创建中，'200'表示可用，'400'表示已删除，'303'表示创建失败。
 
         :param status: The status of this ShowShareResponse.
         :type status: str
@@ -583,7 +583,7 @@ class ShowShareResponse(SdkResponse):
     def sub_status(self):
         """Gets the sub_status of this ShowShareResponse.
 
-        SFS Turbo文件系统的子状态
+        SFS Turbo文件系统的子状态。'121'表示扩容中，'221'表示扩容成功，'321'表示扩容失败。
 
         :return: The sub_status of this ShowShareResponse.
         :rtype: str
@@ -594,7 +594,7 @@ class ShowShareResponse(SdkResponse):
     def sub_status(self, sub_status):
         """Sets the sub_status of this ShowShareResponse.
 
-        SFS Turbo文件系统的子状态
+        SFS Turbo文件系统的子状态。'121'表示扩容中，'221'表示扩容成功，'321'表示扩容失败。
 
         :param sub_status: The sub_status of this ShowShareResponse.
         :type sub_status: str

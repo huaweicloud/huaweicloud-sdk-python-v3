@@ -69,11 +69,11 @@ class ResourceEntity:
         :type provider: str
         :param type: 资源类型
         :type type: str
-        :param region_id: region id
+        :param region_id: 区域id
         :type region_id: str
-        :param project_id: Openstack中的project id
+        :param project_id: Openstack中的项目id
         :type project_id: str
-        :param project_name: Openstack中的project名称
+        :param project_name: Openstack中的项目名称
         :type project_name: str
         :param ep_id: 企业项目id
         :type ep_id: str
@@ -235,7 +235,7 @@ class ResourceEntity:
     def region_id(self):
         """Gets the region_id of this ResourceEntity.
 
-        region id
+        区域id
 
         :return: The region_id of this ResourceEntity.
         :rtype: str
@@ -246,7 +246,7 @@ class ResourceEntity:
     def region_id(self, region_id):
         """Sets the region_id of this ResourceEntity.
 
-        region id
+        区域id
 
         :param region_id: The region_id of this ResourceEntity.
         :type region_id: str
@@ -257,7 +257,7 @@ class ResourceEntity:
     def project_id(self):
         """Gets the project_id of this ResourceEntity.
 
-        Openstack中的project id
+        Openstack中的项目id
 
         :return: The project_id of this ResourceEntity.
         :rtype: str
@@ -268,7 +268,7 @@ class ResourceEntity:
     def project_id(self, project_id):
         """Sets the project_id of this ResourceEntity.
 
-        Openstack中的project id
+        Openstack中的项目id
 
         :param project_id: The project_id of this ResourceEntity.
         :type project_id: str
@@ -279,7 +279,7 @@ class ResourceEntity:
     def project_name(self):
         """Gets the project_name of this ResourceEntity.
 
-        Openstack中的project名称
+        Openstack中的项目名称
 
         :return: The project_name of this ResourceEntity.
         :rtype: str
@@ -290,7 +290,7 @@ class ResourceEntity:
     def project_name(self, project_name):
         """Sets the project_name of this ResourceEntity.
 
-        Openstack中的project名称
+        Openstack中的项目名称
 
         :param project_name: The project_name of this ResourceEntity.
         :type project_name: str

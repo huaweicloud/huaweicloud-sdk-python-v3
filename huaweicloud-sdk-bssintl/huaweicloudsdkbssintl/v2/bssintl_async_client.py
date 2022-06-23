@@ -108,66 +108,6 @@ class BssintlAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_free_resource_infos_async(self, request):
-        """查询资源包列表
-
-        功能描述：客户在自建平台查询资源包列表。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ListFreeResourceInfos
-        :type request: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceInfosRequest`
-        :rtype: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceInfosResponse`
-        """
-        return self.list_free_resource_infos_with_http_info(request)
-
-    def list_free_resource_infos_with_http_info(self, request):
-        all_params = ['x_language', 'req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/payments/free-resources/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListFreeResourceInfosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def list_free_resource_usages_async(self, request):
         """查询资源内使用量
 
@@ -959,6 +899,66 @@ class BssintlAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCustomerselfResourceRecordsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_free_resource_infos_async(self, request):
+        """查询资源包列表
+
+        功能描述：客户在自建平台查询资源包列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListFreeResourceInfos
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceInfosRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListFreeResourceInfosResponse`
+        """
+        return self.list_free_resource_infos_with_http_info(request)
+
+    def list_free_resource_infos_with_http_info(self, request):
+        all_params = ['x_language', 'req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/payments/free-resources/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListFreeResourceInfosResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

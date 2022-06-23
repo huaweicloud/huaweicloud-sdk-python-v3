@@ -45,7 +45,7 @@ class HistoryItem:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 租户id
+        :param domain_id: 用户id
         :type domain_id: str
         :param resource_id: 资源id
         :type resource_id: str
@@ -91,7 +91,7 @@ class HistoryItem:
     def domain_id(self):
         """Gets the domain_id of this HistoryItem.
 
-        租户id
+        用户id
 
         :return: The domain_id of this HistoryItem.
         :rtype: str
@@ -102,7 +102,7 @@ class HistoryItem:
     def domain_id(self, domain_id):
         """Sets the domain_id of this HistoryItem.
 
-        租户id
+        用户id
 
         :param domain_id: The domain_id of this HistoryItem.
         :type domain_id: str

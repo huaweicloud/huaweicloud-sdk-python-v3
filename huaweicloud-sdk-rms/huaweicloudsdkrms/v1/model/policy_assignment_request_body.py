@@ -62,16 +62,12 @@ class PolicyAssignmentRequestBody:
         self._parameters = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
         if description is not None:
             self.description = description
-        if policy_filter is not None:
-            self.policy_filter = policy_filter
-        if policy_definition_id is not None:
-            self.policy_definition_id = policy_definition_id
-        if parameters is not None:
-            self.parameters = parameters
+        self.policy_filter = policy_filter
+        self.policy_definition_id = policy_definition_id
+        self.parameters = parameters
 
     @property
     def name(self):

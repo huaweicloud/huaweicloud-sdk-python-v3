@@ -37,11 +37,11 @@ class TrackerSMNChannelConfigBody:
 
         The model defined in huaweicloud sdk
 
-        :param region_id: region id
+        :param region_id: 区域id
         :type region_id: str
-        :param project_id: project id
+        :param project_id: 项目id
         :type project_id: str
-        :param topic_urn: SMN 主题urn
+        :param topic_urn: SMN主题urn
         :type topic_urn: str
         """
         
@@ -60,7 +60,7 @@ class TrackerSMNChannelConfigBody:
     def region_id(self):
         """Gets the region_id of this TrackerSMNChannelConfigBody.
 
-        region id
+        区域id
 
         :return: The region_id of this TrackerSMNChannelConfigBody.
         :rtype: str
@@ -71,7 +71,7 @@ class TrackerSMNChannelConfigBody:
     def region_id(self, region_id):
         """Sets the region_id of this TrackerSMNChannelConfigBody.
 
-        region id
+        区域id
 
         :param region_id: The region_id of this TrackerSMNChannelConfigBody.
         :type region_id: str
@@ -82,7 +82,7 @@ class TrackerSMNChannelConfigBody:
     def project_id(self):
         """Gets the project_id of this TrackerSMNChannelConfigBody.
 
-        project id
+        项目id
 
         :return: The project_id of this TrackerSMNChannelConfigBody.
         :rtype: str
@@ -93,7 +93,7 @@ class TrackerSMNChannelConfigBody:
     def project_id(self, project_id):
         """Sets the project_id of this TrackerSMNChannelConfigBody.
 
-        project id
+        项目id
 
         :param project_id: The project_id of this TrackerSMNChannelConfigBody.
         :type project_id: str
@@ -104,7 +104,7 @@ class TrackerSMNChannelConfigBody:
     def topic_urn(self):
         """Gets the topic_urn of this TrackerSMNChannelConfigBody.
 
-        SMN 主题urn
+        SMN主题urn
 
         :return: The topic_urn of this TrackerSMNChannelConfigBody.
         :rtype: str
@@ -115,7 +115,7 @@ class TrackerSMNChannelConfigBody:
     def topic_urn(self, topic_urn):
         """Sets the topic_urn of this TrackerSMNChannelConfigBody.
 
-        SMN 主题urn
+        SMN主题urn
 
         :param topic_urn: The topic_urn of this TrackerSMNChannelConfigBody.
         :type topic_urn: str

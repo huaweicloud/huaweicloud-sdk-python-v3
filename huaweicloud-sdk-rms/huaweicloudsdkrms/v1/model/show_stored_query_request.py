@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class Data:
+class ShowStoredQueryRequest:
 
     """
     Attributes:
@@ -21,80 +21,50 @@ class Data:
     sensitive_list = []
 
     openapi_types = {
-        'result_type': 'str',
-        'result': 'list[str]'
+        'query_id': 'str'
     }
 
     attribute_map = {
-        'result_type': 'resultType',
-        'result': 'result'
+        'query_id': 'query_id'
     }
 
-    def __init__(self, result_type=None, result=None):
-        """Data
+    def __init__(self, query_id=None):
+        """ShowStoredQueryRequest
 
         The model defined in huaweicloud sdk
 
-        :param result_type: 返回值类型。
-        :type result_type: str
-        :param result: 数据信息。
-        :type result: list[str]
+        :param query_id: 查询ID
+        :type query_id: str
         """
         
         
 
-        self._result_type = None
-        self._result = None
+        self._query_id = None
         self.discriminator = None
 
-        if result_type is not None:
-            self.result_type = result_type
-        if result is not None:
-            self.result = result
+        self.query_id = query_id
 
     @property
-    def result_type(self):
-        """Gets the result_type of this Data.
+    def query_id(self):
+        """Gets the query_id of this ShowStoredQueryRequest.
 
-        返回值类型。
+        查询ID
 
-        :return: The result_type of this Data.
+        :return: The query_id of this ShowStoredQueryRequest.
         :rtype: str
         """
-        return self._result_type
+        return self._query_id
 
-    @result_type.setter
-    def result_type(self, result_type):
-        """Sets the result_type of this Data.
+    @query_id.setter
+    def query_id(self, query_id):
+        """Sets the query_id of this ShowStoredQueryRequest.
 
-        返回值类型。
+        查询ID
 
-        :param result_type: The result_type of this Data.
-        :type result_type: str
+        :param query_id: The query_id of this ShowStoredQueryRequest.
+        :type query_id: str
         """
-        self._result_type = result_type
-
-    @property
-    def result(self):
-        """Gets the result of this Data.
-
-        数据信息。
-
-        :return: The result of this Data.
-        :rtype: list[str]
-        """
-        return self._result
-
-    @result.setter
-    def result(self, result):
-        """Sets the result of this Data.
-
-        数据信息。
-
-        :param result: The result of this Data.
-        :type result: list[str]
-        """
-        self._result = result
+        self._query_id = query_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -138,7 +108,7 @@ class Data:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Data):
+        if not isinstance(other, ShowStoredQueryRequest):
             return False
 
         return self.__dict__ == other.__dict__

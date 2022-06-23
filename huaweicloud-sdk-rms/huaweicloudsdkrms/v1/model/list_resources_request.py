@@ -25,6 +25,7 @@ class ListResourcesRequest:
         'type': 'str',
         'region_id': 'str',
         'ep_id': 'str',
+        'tag': 'dict(str, list[str])',
         'limit': 'int',
         'marker': 'str'
     }
@@ -34,23 +35,26 @@ class ListResourcesRequest:
         'type': 'type',
         'region_id': 'region_id',
         'ep_id': 'ep_id',
+        'tag': 'tag',
         'limit': 'limit',
         'marker': 'marker'
     }
 
-    def __init__(self, provider=None, type=None, region_id=None, ep_id=None, limit=None, marker=None):
+    def __init__(self, provider=None, type=None, region_id=None, ep_id=None, tag=None, limit=None, marker=None):
         """ListResourcesRequest
 
         The model defined in huaweicloud sdk
 
-        :param provider: 云服务英文简写
+        :param provider: 云服务名称
         :type provider: str
-        :param type: 云服务资源类型名称
+        :param type: 资源类型名称
         :type type: str
         :param region_id: 区域ID
         :type region_id: str
         :param ep_id: 企业项目ID
         :type ep_id: str
+        :param tag: 标签
+        :type tag: dict(str, list[str])
         :param limit: 最大的返回数量
         :type limit: int
         :param marker: 分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
@@ -63,6 +67,7 @@ class ListResourcesRequest:
         self._type = None
         self._region_id = None
         self._ep_id = None
+        self._tag = None
         self._limit = None
         self._marker = None
         self.discriminator = None
@@ -73,6 +78,8 @@ class ListResourcesRequest:
             self.region_id = region_id
         if ep_id is not None:
             self.ep_id = ep_id
+        if tag is not None:
+            self.tag = tag
         if limit is not None:
             self.limit = limit
         if marker is not None:
@@ -82,7 +89,7 @@ class ListResourcesRequest:
     def provider(self):
         """Gets the provider of this ListResourcesRequest.
 
-        云服务英文简写
+        云服务名称
 
         :return: The provider of this ListResourcesRequest.
         :rtype: str
@@ -93,7 +100,7 @@ class ListResourcesRequest:
     def provider(self, provider):
         """Sets the provider of this ListResourcesRequest.
 
-        云服务英文简写
+        云服务名称
 
         :param provider: The provider of this ListResourcesRequest.
         :type provider: str
@@ -104,7 +111,7 @@ class ListResourcesRequest:
     def type(self):
         """Gets the type of this ListResourcesRequest.
 
-        云服务资源类型名称
+        资源类型名称
 
         :return: The type of this ListResourcesRequest.
         :rtype: str
@@ -115,7 +122,7 @@ class ListResourcesRequest:
     def type(self, type):
         """Sets the type of this ListResourcesRequest.
 
-        云服务资源类型名称
+        资源类型名称
 
         :param type: The type of this ListResourcesRequest.
         :type type: str
@@ -165,6 +172,28 @@ class ListResourcesRequest:
         :type ep_id: str
         """
         self._ep_id = ep_id
+
+    @property
+    def tag(self):
+        """Gets the tag of this ListResourcesRequest.
+
+        标签
+
+        :return: The tag of this ListResourcesRequest.
+        :rtype: dict(str, list[str])
+        """
+        return self._tag
+
+    @tag.setter
+    def tag(self, tag):
+        """Sets the tag of this ListResourcesRequest.
+
+        标签
+
+        :param tag: The tag of this ListResourcesRequest.
+        :type tag: dict(str, list[str])
+        """
+        self._tag = tag
 
     @property
     def limit(self):

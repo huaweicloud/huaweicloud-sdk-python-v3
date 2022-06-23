@@ -37,7 +37,7 @@ class TrackerOBSChannelConfigBody:
 
         :param bucket_name: OBS桶名称
         :type bucket_name: str
-        :param region_id: region id
+        :param region_id: 区域id
         :type region_id: str
         """
         
@@ -76,7 +76,7 @@ class TrackerOBSChannelConfigBody:
     def region_id(self):
         """Gets the region_id of this TrackerOBSChannelConfigBody.
 
-        region id
+        区域id
 
         :return: The region_id of this TrackerOBSChannelConfigBody.
         :rtype: str
@@ -87,7 +87,7 @@ class TrackerOBSChannelConfigBody:
     def region_id(self, region_id):
         """Sets the region_id of this TrackerOBSChannelConfigBody.
 
-        region id
+        区域id
 
         :param region_id: The region_id of this TrackerOBSChannelConfigBody.
         :type region_id: str

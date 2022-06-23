@@ -62,8 +62,7 @@ class Type:
         self._properties = None
         self.discriminator = None
 
-        if business is not None:
-            self.business = business
+        self.business = business
         if category is not None:
             self.category = category
         if classifier is not None:

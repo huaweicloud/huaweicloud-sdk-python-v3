@@ -62,12 +62,9 @@ class Compliance:
         self._properties = None
         self.discriminator = None
 
-        if checkitem_id is not None:
-            self.checkitem_id = checkitem_id
-        if checkpoint_id is not None:
-            self.checkpoint_id = checkpoint_id
-        if spec_id is not None:
-            self.spec_id = spec_id
+        self.checkitem_id = checkitem_id
+        self.checkpoint_id = checkpoint_id
+        self.spec_id = spec_id
         self.status = status
         if properties is not None:
             self.properties = properties

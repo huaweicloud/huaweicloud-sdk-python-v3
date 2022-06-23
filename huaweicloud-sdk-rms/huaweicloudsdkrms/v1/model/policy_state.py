@@ -53,25 +53,25 @@ class PolicyState:
 
         The model defined in huaweicloud sdk
 
-        :param domain_id: 合规状态所属用户ID
+        :param domain_id: 用户ID
         :type domain_id: str
-        :param region_id: 合规状态所属资源区域ID
+        :param region_id: 资源区域ID
         :type region_id: str
-        :param resource_id: 合规状态所属资源ID
+        :param resource_id: 资源ID
         :type resource_id: str
-        :param resource_name: 合规状态所属资源名字
+        :param resource_name: 资源名称
         :type resource_name: str
-        :param resource_provider: 合规状态所属资源provider
+        :param resource_provider: 云服务名称
         :type resource_provider: str
-        :param resource_type: 合规状态所属资源类型
+        :param resource_type: 资源类型
         :type resource_type: str
         :param compliance_state: 合规状态
         :type compliance_state: str
-        :param policy_assignment_id: 合规状态所属规则ID
+        :param policy_assignment_id: 规则ID
         :type policy_assignment_id: str
-        :param policy_assignment_name: 合规状态所属规则名字
+        :param policy_assignment_name: 规则名称
         :type policy_assignment_name: str
-        :param policy_definition_id: 合规状态所属策略ID
+        :param policy_definition_id: 策略ID
         :type policy_definition_id: str
         :param evaluation_time: 合规状态评估时间
         :type evaluation_time: str
@@ -119,7 +119,7 @@ class PolicyState:
     def domain_id(self):
         """Gets the domain_id of this PolicyState.
 
-        合规状态所属用户ID
+        用户ID
 
         :return: The domain_id of this PolicyState.
         :rtype: str
@@ -130,7 +130,7 @@ class PolicyState:
     def domain_id(self, domain_id):
         """Sets the domain_id of this PolicyState.
 
-        合规状态所属用户ID
+        用户ID
 
         :param domain_id: The domain_id of this PolicyState.
         :type domain_id: str
@@ -141,7 +141,7 @@ class PolicyState:
     def region_id(self):
         """Gets the region_id of this PolicyState.
 
-        合规状态所属资源区域ID
+        资源区域ID
 
         :return: The region_id of this PolicyState.
         :rtype: str
@@ -152,7 +152,7 @@ class PolicyState:
     def region_id(self, region_id):
         """Sets the region_id of this PolicyState.
 
-        合规状态所属资源区域ID
+        资源区域ID
 
         :param region_id: The region_id of this PolicyState.
         :type region_id: str
@@ -163,7 +163,7 @@ class PolicyState:
     def resource_id(self):
         """Gets the resource_id of this PolicyState.
 
-        合规状态所属资源ID
+        资源ID
 
         :return: The resource_id of this PolicyState.
         :rtype: str
@@ -174,7 +174,7 @@ class PolicyState:
     def resource_id(self, resource_id):
         """Sets the resource_id of this PolicyState.
 
-        合规状态所属资源ID
+        资源ID
 
         :param resource_id: The resource_id of this PolicyState.
         :type resource_id: str
@@ -185,7 +185,7 @@ class PolicyState:
     def resource_name(self):
         """Gets the resource_name of this PolicyState.
 
-        合规状态所属资源名字
+        资源名称
 
         :return: The resource_name of this PolicyState.
         :rtype: str
@@ -196,7 +196,7 @@ class PolicyState:
     def resource_name(self, resource_name):
         """Sets the resource_name of this PolicyState.
 
-        合规状态所属资源名字
+        资源名称
 
         :param resource_name: The resource_name of this PolicyState.
         :type resource_name: str
@@ -207,7 +207,7 @@ class PolicyState:
     def resource_provider(self):
         """Gets the resource_provider of this PolicyState.
 
-        合规状态所属资源provider
+        云服务名称
 
         :return: The resource_provider of this PolicyState.
         :rtype: str
@@ -218,7 +218,7 @@ class PolicyState:
     def resource_provider(self, resource_provider):
         """Sets the resource_provider of this PolicyState.
 
-        合规状态所属资源provider
+        云服务名称
 
         :param resource_provider: The resource_provider of this PolicyState.
         :type resource_provider: str
@@ -229,7 +229,7 @@ class PolicyState:
     def resource_type(self):
         """Gets the resource_type of this PolicyState.
 
-        合规状态所属资源类型
+        资源类型
 
         :return: The resource_type of this PolicyState.
         :rtype: str
@@ -240,7 +240,7 @@ class PolicyState:
     def resource_type(self, resource_type):
         """Sets the resource_type of this PolicyState.
 
-        合规状态所属资源类型
+        资源类型
 
         :param resource_type: The resource_type of this PolicyState.
         :type resource_type: str
@@ -273,7 +273,7 @@ class PolicyState:
     def policy_assignment_id(self):
         """Gets the policy_assignment_id of this PolicyState.
 
-        合规状态所属规则ID
+        规则ID
 
         :return: The policy_assignment_id of this PolicyState.
         :rtype: str
@@ -284,7 +284,7 @@ class PolicyState:
     def policy_assignment_id(self, policy_assignment_id):
         """Sets the policy_assignment_id of this PolicyState.
 
-        合规状态所属规则ID
+        规则ID
 
         :param policy_assignment_id: The policy_assignment_id of this PolicyState.
         :type policy_assignment_id: str
@@ -295,7 +295,7 @@ class PolicyState:
     def policy_assignment_name(self):
         """Gets the policy_assignment_name of this PolicyState.
 
-        合规状态所属规则名字
+        规则名称
 
         :return: The policy_assignment_name of this PolicyState.
         :rtype: str
@@ -306,7 +306,7 @@ class PolicyState:
     def policy_assignment_name(self, policy_assignment_name):
         """Sets the policy_assignment_name of this PolicyState.
 
-        合规状态所属规则名字
+        规则名称
 
         :param policy_assignment_name: The policy_assignment_name of this PolicyState.
         :type policy_assignment_name: str
@@ -317,7 +317,7 @@ class PolicyState:
     def policy_definition_id(self):
         """Gets the policy_definition_id of this PolicyState.
 
-        合规状态所属策略ID
+        策略ID
 
         :return: The policy_definition_id of this PolicyState.
         :rtype: str
@@ -328,7 +328,7 @@ class PolicyState:
     def policy_definition_id(self, policy_definition_id):
         """Sets the policy_definition_id of this PolicyState.
 
-        合规状态所属策略ID
+        策略ID
 
         :param policy_definition_id: The policy_definition_id of this PolicyState.
         :type policy_definition_id: str

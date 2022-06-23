@@ -954,10 +954,364 @@ class RmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_regions(self, request):
-        """查询租户可见的区域
+    def create_stored_query(self, request):
+        """创建高级查询
 
-        查询租户可见的区域
+        Create Resource Query Language
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateStoredQuery
+        :type request: :class:`huaweicloudsdkrms.v1.CreateStoredQueryRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.CreateStoredQueryResponse`
+        """
+        return self.create_stored_query_with_http_info(request)
+
+    def create_stored_query_with_http_info(self, request):
+        all_params = ['stored_query_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/stored-queries',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateStoredQueryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_stored_query(self, request):
+        """删除资源查询
+
+        Select resources by SQL
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteStoredQuery
+        :type request: :class:`huaweicloudsdkrms.v1.DeleteStoredQueryRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.DeleteStoredQueryResponse`
+        """
+        return self.delete_stored_query_with_http_info(request)
+
+    def delete_stored_query_with_http_info(self, request):
+        all_params = ['query_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'query_id' in local_var_params:
+            path_params['query_id'] = local_var_params['query_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/stored-queries/{query_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteStoredQueryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_stored_queries(self, request):
+        """列出高级查询
+
+        List Resource Query Language
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListStoredQueries
+        :type request: :class:`huaweicloudsdkrms.v1.ListStoredQueriesRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ListStoredQueriesResponse`
+        """
+        return self.list_stored_queries_with_http_info(request)
+
+    def list_stored_queries_with_http_info(self, request):
+        all_params = ['limit', 'marker', 'name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/stored-queries',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListStoredQueriesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def run_query(self, request):
+        """运行高级查询
+
+        Run Resource Query Language
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RunQuery
+        :type request: :class:`huaweicloudsdkrms.v1.RunQueryRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.RunQueryResponse`
+        """
+        return self.run_query_with_http_info(request)
+
+    def run_query_with_http_info(self, request):
+        all_params = ['query_run_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/run-query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RunQueryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_stored_query(self, request):
+        """查询单个高级查询
+
+        Show Resource Query Language
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowStoredQuery
+        :type request: :class:`huaweicloudsdkrms.v1.ShowStoredQueryRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.ShowStoredQueryResponse`
+        """
+        return self.show_stored_query_with_http_info(request)
+
+    def show_stored_query_with_http_info(self, request):
+        all_params = ['query_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'query_id' in local_var_params:
+            path_params['query_id'] = local_var_params['query_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/stored-queries/{query_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowStoredQueryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_stored_query(self, request):
+        """更新单个高级查询
+
+        Update Resource Query Language
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateStoredQuery
+        :type request: :class:`huaweicloudsdkrms.v1.UpdateStoredQueryRequest`
+        :rtype: :class:`huaweicloudsdkrms.v1.UpdateStoredQueryResponse`
+        """
+        return self.update_stored_query_with_http_info(request)
+
+    def update_stored_query_with_http_info(self, request):
+        all_params = ['query_id', 'stored_query_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'query_id' in local_var_params:
+            path_params['query_id'] = local_var_params['query_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['PkiTokenAuth']
+
+        return self.call_api(
+            resource_path='/v1/resource-manager/domains/{domain_id}/stored-queries/{query_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateStoredQueryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_regions(self, request):
+        """查询用户可见的区域
+
+        查询用户可见的区域
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1079,7 +1433,7 @@ class RmsClient(Client):
     def list_all_resources(self, request):
         """列举所有资源
 
-        返回当前租户下所有资源，需要当前用户有rms:resources:list权限。
+        返回当前用户下所有资源，需要当前用户有rms:resources:list权限。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1219,7 +1573,7 @@ class RmsClient(Client):
         return self.list_resources_with_http_info(request)
 
     def list_resources_with_http_info(self, request):
-        all_params = ['provider', 'type', 'region_id', 'ep_id', 'limit', 'marker']
+        all_params = ['provider', 'type', 'region_id', 'ep_id', 'tag', 'limit', 'marker']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1238,6 +1592,8 @@ class RmsClient(Client):
             query_params.append(('region_id', local_var_params['region_id']))
         if 'ep_id' in local_var_params:
             query_params.append(('ep_id', local_var_params['ep_id']))
+        if 'tag' in local_var_params:
+            query_params.append(('tag', local_var_params['tag']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'marker' in local_var_params:

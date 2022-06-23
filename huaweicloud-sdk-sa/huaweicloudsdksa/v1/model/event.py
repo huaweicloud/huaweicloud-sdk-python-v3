@@ -184,7 +184,8 @@ class Event:
         if last_observed_time is not None:
             self.last_observed_time = last_observed_time
         self.create_time = create_time
-        self.arrive_time = arrive_time
+        if arrive_time is not None:
+            self.arrive_time = arrive_time
         self.event_id = event_id
         self.title = title
         self.description = description
@@ -212,7 +213,8 @@ class Event:
             self.remediation = remediation
         if data_source_fields is not None:
             self.data_source_fields = data_source_fields
-        self.verification_state = verification_state
+        if verification_state is not None:
+            self.verification_state = verification_state
         self.handle_status = handle_status
         if phase is not None:
             self.phase = phase

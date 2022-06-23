@@ -1,3 +1,53 @@
+# 3.0.93 2022-06-23
+
+### HuaweiCloud SDK AOM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 修复接口`ListRangeQueryAomPromGet`的响应参数`data`类型错误的问题
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 支持接口`RecognizeIdDocument`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RMS
+
+- _新增特性_
+  - 支持接口`RunQuery`、`CreateStoredQuery`、`ListStoredQueries`、`ShowStoredQuery`、`UpdateStoredQuery`、`DeleteStoredQuery`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CheckProductHealthy`请求参数`domain_id`、`project_id`、`region`、`company_name`、`product_name`改为必填
+  - 接口`ImportEvents`:
+    - 请求参数`type`、`domain_id`、`business`、`checkitem_id`、`checkpoint_id`、`spec_id`、`patch_id`改为必填
+    - 请求参数`type`、`domain_id`、`product_feature`、`arrive_time`、`verification_state`改为非必填
+
+### HuaweiCloud SDK VSS
+
+- _新增特性_
+  - 支持接口`ShowReportStatus`、`DownloadTaskReport`、`ExecuteGenerateReport`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.0.92 2022-06-09
 
 ### HuaweiCloud SDK CSS

@@ -828,6 +828,81 @@ class OcrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def recognize_id_document_async(self, request):
+        """通用证件识别
+
+        识别身份证件图像，并将识别的结构化结果返回给用户。支持多个国家的身份证、驾驶证和护照，具体国家和证件列表详见表1。
+        
+        **表1支持国家列表**
+        
+        | 国家/地区  | 英文名称    | 国家代码  country_region | 支持证件类型  id_type   |
+        | ---------- | ----------- | ------------------------ | ----------------------- |
+        | 越南       | Vietnam     | VNM                      | PP、DL、ID              |
+        | 印度       | India       | IND                      | PP                      |
+        | 菲律宾     | Philippines | PHL                      | PP、DL、ID(仅支持UUMID) |
+        | 阿尔巴尼亚 | Albania     | ALB                      | PP、DL、ID              |
+        | 巴西       | BRAZIL      | BRA                      | PP                      |
+        | 印度尼西亚 | INDONESIA   | IDN                      | PP                      |
+        | 马来西亚   | MALAYSIA    | MYS                      | PP                      |
+        | 尼日利亚   | NIGERIA     | NGA                      | PP                      |
+        | 巴基斯坦   | PAKISTAN    | PAK                      | PP                      |
+        | 俄罗斯     | RUSSIA      | RUS                      | PP(仅支持国际标准版本)  |
+        | 中国台湾   | TAIWAN      | TWN                      | PP                      |
+        | 乌克兰     | UKRAINE     | UKR                      | PP                      |
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RecognizeIdDocument
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeIdDocumentRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeIdDocumentResponse`
+        """
+        return self.recognize_id_document_with_http_info(request)
+
+    def recognize_id_document_with_http_info(self, request):
+        all_params = ['id_document_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/id-document',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeIdDocumentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def recognize_insurance_policy_async(self, request):
         """保险单识别
 

@@ -402,6 +402,122 @@ class VssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def download_task_report(self, request):
+        """下载域名扫描报告
+
+        下载域名扫描任务PDF报告
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DownloadTaskReport
+        :type request: :class:`huaweicloudsdkvss.v3.DownloadTaskReportRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.DownloadTaskReportResponse`
+        """
+        return self.download_task_report_with_http_info(request)
+
+    def download_task_report_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/webscan/report',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DownloadTaskReportResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def execute_generate_report(self, request):
+        """生成域名扫描报告
+
+        生成域名扫描PDF报告
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ExecuteGenerateReport
+        :type request: :class:`huaweicloudsdkvss.v3.ExecuteGenerateReportRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.ExecuteGenerateReportResponse`
+        """
+        return self.execute_generate_report_with_http_info(request)
+
+    def execute_generate_report_with_http_info(self, request):
+        all_params = ['execute_generate_report_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json; charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/webscan/report',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ExecuteGenerateReportResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_business_risks(self, request):
         """获取业务风险扫描结果
 
@@ -521,6 +637,64 @@ class VssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListPortResultsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_report_status(self, request):
+        """获取域名扫描报告状态
+
+        获取域名扫描PDF报告生成状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowReportStatus
+        :type request: :class:`huaweicloudsdkvss.v3.ShowReportStatusRequest`
+        :rtype: :class:`huaweicloudsdkvss.v3.ShowReportStatusResponse`
+        """
+        return self.show_report_status_with_http_info(request)
+
+    def show_report_status_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'task_id' in local_var_params:
+            query_params.append(('task_id', local_var_params['task_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/webscan/report/status',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowReportStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

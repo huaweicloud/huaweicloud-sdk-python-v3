@@ -45,7 +45,7 @@ class PolicyFilterDefinition:
 
         :param region_id: 区域ID
         :type region_id: str
-        :param resource_provider: 资源服务
+        :param resource_provider: 云服务名称
         :type resource_provider: str
         :param resource_type: 资源类型
         :type resource_type: str
@@ -106,7 +106,7 @@ class PolicyFilterDefinition:
     def resource_provider(self):
         """Gets the resource_provider of this PolicyFilterDefinition.
 
-        资源服务
+        云服务名称
 
         :return: The resource_provider of this PolicyFilterDefinition.
         :rtype: str
@@ -117,7 +117,7 @@ class PolicyFilterDefinition:
     def resource_provider(self, resource_provider):
         """Sets the resource_provider of this PolicyFilterDefinition.
 
-        资源服务
+        云服务名称
 
         :param resource_provider: The resource_provider of this PolicyFilterDefinition.
         :type resource_provider: str

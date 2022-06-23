@@ -1,3 +1,53 @@
+# 3.0.93 2022-06-23
+
+### HuaweiCloud SDK AOM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - Fix the problem that the response parameter's type of the interface `ListRangeQueryAomPromGet` is incorrect
+- _Change_
+  - None
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - Support the interface `RecognizeIdDocument`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+  
+### HuaweiCloud SDK RMS
+
+- _Features_
+  - Support the interface `RunQuery`, `CreateStoredQuery`, `ListStoredQueries`, `ShowStoredQuery`, `UpdateStoredQuery`, `DeleteStoredQuery`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `domain_id`, `project_id`, `region`, `company_name`, `product_name` changed to required of the interface `CheckProductHealthy`
+  - Changes of the interface `ImportEvents`:
+    - The request parameter `type`, `domain_id`, `business`, `checkitem_id`, `checkpoint_id`, `spec_id`, `patch_id` changed to required
+    - The request parameter `type`, `domain_id`, `product_feature`, `arrive_time`, `verification_state` changed to not required
+
+### HuaweiCloud SDK VSS
+
+- _Features_
+  - Support the interfaces `ShowReportStatus`, `DownloadTaskReport`, `ExecuteGenerateReport`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.0.92 2022-06-09
 
 ### HuaweiCloud SDK CSS
