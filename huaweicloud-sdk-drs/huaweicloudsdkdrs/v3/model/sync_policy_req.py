@@ -34,7 +34,8 @@ class SyncPolicyReq:
         'partitions_num': 'str',
         'replication_factor': 'str',
         'is_fill_materialized_view': 'bool',
-        'export_snapshot': 'bool'
+        'export_snapshot': 'bool',
+        'slot_name': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class SyncPolicyReq:
         'partitions_num': 'partitions_num',
         'replication_factor': 'replication_factor',
         'is_fill_materialized_view': 'is_fill_materialized_view',
-        'export_snapshot': 'export_snapshot'
+        'export_snapshot': 'export_snapshot',
+        'slot_name': 'slot_name'
     }
 
-    def __init__(self, job_id=None, conflict_policy=None, filter_ddl_policy=None, ddl_trans=None, index_trans=None, topic_policy=None, topic=None, partition_policy=None, kafka_data_format=None, topic_name_format=None, partitions_num=None, replication_factor=None, is_fill_materialized_view=None, export_snapshot=None):
+    def __init__(self, job_id=None, conflict_policy=None, filter_ddl_policy=None, ddl_trans=None, index_trans=None, topic_policy=None, topic=None, partition_policy=None, kafka_data_format=None, topic_name_format=None, partitions_num=None, replication_factor=None, is_fill_materialized_view=None, export_snapshot=None, slot_name=None):
         """SyncPolicyReq
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class SyncPolicyReq:
         :type is_fill_materialized_view: bool
         :param export_snapshot: PostgreSQL同步全量阶段是否使用快照模式导出，不填默认为false
         :type export_snapshot: bool
+        :param slot_name: 复制槽名称，gaussdbv5ha-to-kafka主备任务必填
+        :type slot_name: str
         """
         
         
@@ -105,6 +109,7 @@ class SyncPolicyReq:
         self._replication_factor = None
         self._is_fill_materialized_view = None
         self._export_snapshot = None
+        self._slot_name = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -134,6 +139,8 @@ class SyncPolicyReq:
             self.is_fill_materialized_view = is_fill_materialized_view
         if export_snapshot is not None:
             self.export_snapshot = export_snapshot
+        if slot_name is not None:
+            self.slot_name = slot_name
 
     @property
     def job_id(self):
@@ -442,6 +449,28 @@ class SyncPolicyReq:
         :type export_snapshot: bool
         """
         self._export_snapshot = export_snapshot
+
+    @property
+    def slot_name(self):
+        """Gets the slot_name of this SyncPolicyReq.
+
+        复制槽名称，gaussdbv5ha-to-kafka主备任务必填
+
+        :return: The slot_name of this SyncPolicyReq.
+        :rtype: str
+        """
+        return self._slot_name
+
+    @slot_name.setter
+    def slot_name(self, slot_name):
+        """Sets the slot_name of this SyncPolicyReq.
+
+        复制槽名称，gaussdbv5ha-to-kafka主备任务必填
+
+        :param slot_name: The slot_name of this SyncPolicyReq.
+        :type slot_name: str
+        """
+        self._slot_name = slot_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

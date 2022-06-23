@@ -41,7 +41,7 @@ class Result:
         :type address: str
         :param port: 端口号。
         :type port: int
-        :param status: 测试结果。1表示连接成功，0表示地址不可达，2表示端口不可达，3表示域名无法解析，-2表示位置错误。
+        :param status: 测试结果。 - 1：表示连接成功。 - 0：表示地址不可达。 - 2：表示端口不可达。 - 3：表示域名无法解析。 - -2：表示位置错误。
         :type status: int
         """
         
@@ -107,7 +107,7 @@ class Result:
     def status(self):
         """Gets the status of this Result.
 
-        测试结果。1表示连接成功，0表示地址不可达，2表示端口不可达，3表示域名无法解析，-2表示位置错误。
+        测试结果。 - 1：表示连接成功。 - 0：表示地址不可达。 - 2：表示端口不可达。 - 3：表示域名无法解析。 - -2：表示位置错误。
 
         :return: The status of this Result.
         :rtype: int
@@ -118,7 +118,7 @@ class Result:
     def status(self, status):
         """Sets the status of this Result.
 
-        测试结果。1表示连接成功，0表示地址不可达，2表示端口不可达，3表示域名无法解析，-2表示位置错误。
+        测试结果。 - 1：表示连接成功。 - 0：表示地址不可达。 - 2：表示端口不可达。 - 3：表示域名无法解析。 - -2：表示位置错误。
 
         :param status: The status of this Result.
         :type status: int

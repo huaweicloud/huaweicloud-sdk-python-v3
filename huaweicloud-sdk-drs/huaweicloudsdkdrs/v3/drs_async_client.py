@@ -1499,7 +1499,8 @@ class DrsAsyncClient(Client):
     def batch_validate_clusters_connections_async(self, request):
         """批量测试连接-集群模式
 
-        批量测试连接（集群模式）。
+        - 批量测试连接（集群模式）。
+        - 主备任务测试连接
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1671,6 +1672,66 @@ class DrsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateCompareTaskResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_available_zone_async(self, request):
+        """查询规格未售罄的可用区
+
+        查询规格未售罄的可用区
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListAvailableZone
+        :type request: :class:`huaweicloudsdkdrs.v3.ListAvailableZoneRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v3.ListAvailableZoneResponse`
+        """
+        return self.list_available_zone_with_http_info(request)
+
+    def list_available_zone_with_http_info(self, request):
+        all_params = ['request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/available-zone',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAvailableZoneResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2031,6 +2092,68 @@ class DrsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateParamsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_tuning_params_async(self, request):
+        """高级设置
+
+        修改调优参数的值。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateTuningParams
+        :type request: :class:`huaweicloudsdkdrs.v3.UpdateTuningParamsRequest`
+        :rtype: :class:`huaweicloudsdkdrs.v3.UpdateTuningParamsResponse`
+        """
+        return self.update_tuning_params_with_http_info(request)
+
+    def update_tuning_params_with_http_info(self, request):
+        all_params = ['job_id', 'request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/job/{job_id}/tuning-params/modify-params',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateTuningParamsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -31,7 +31,8 @@ class ShowRecordingDetailResponse(SdkResponse):
         'start_time': 'str',
         'is_decode_finish': 'bool',
         'decode_end_time': 'int',
-        'available': 'bool'
+        'available': 'bool',
+        'record_auth_type': 'int'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class ShowRecordingDetailResponse(SdkResponse):
         'start_time': 'startTime',
         'is_decode_finish': 'isDecodeFinish',
         'decode_end_time': 'decodeEndTime',
-        'available': 'available'
+        'available': 'available',
+        'record_auth_type': 'recordAuthType'
     }
 
-    def __init__(self, conf_uuid=None, conf_id=None, url=None, rcd_time=None, rcd_size=None, subject=None, scheduser_name=None, start_time=None, is_decode_finish=None, decode_end_time=None, available=None):
+    def __init__(self, conf_uuid=None, conf_id=None, url=None, rcd_time=None, rcd_size=None, subject=None, scheduser_name=None, start_time=None, is_decode_finish=None, decode_end_time=None, available=None, record_auth_type=None):
         """ShowRecordingDetailResponse
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class ShowRecordingDetailResponse(SdkResponse):
         :type decode_end_time: int
         :param available: 录播文件是否可观看。
         :type available: bool
+        :param record_auth_type: * 录播鉴权方式，在录播类型为:录播、直播+录播时有效 * 0： 可通过链接观看/下载 * 1： 企业用户可观看/下载 * 2： 与会者可观看/下载
+        :type record_auth_type: int
         """
         
         super(ShowRecordingDetailResponse, self).__init__()
@@ -90,6 +94,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         self._is_decode_finish = None
         self._decode_end_time = None
         self._available = None
+        self._record_auth_type = None
         self.discriminator = None
 
         if conf_uuid is not None:
@@ -114,6 +119,8 @@ class ShowRecordingDetailResponse(SdkResponse):
             self.decode_end_time = decode_end_time
         if available is not None:
             self.available = available
+        if record_auth_type is not None:
+            self.record_auth_type = record_auth_type
 
     @property
     def conf_uuid(self):
@@ -356,6 +363,28 @@ class ShowRecordingDetailResponse(SdkResponse):
         :type available: bool
         """
         self._available = available
+
+    @property
+    def record_auth_type(self):
+        """Gets the record_auth_type of this ShowRecordingDetailResponse.
+
+        * 录播鉴权方式，在录播类型为:录播、直播+录播时有效 * 0： 可通过链接观看/下载 * 1： 企业用户可观看/下载 * 2： 与会者可观看/下载
+
+        :return: The record_auth_type of this ShowRecordingDetailResponse.
+        :rtype: int
+        """
+        return self._record_auth_type
+
+    @record_auth_type.setter
+    def record_auth_type(self, record_auth_type):
+        """Sets the record_auth_type of this ShowRecordingDetailResponse.
+
+        * 录播鉴权方式，在录播类型为:录播、直播+录播时有效 * 0： 可通过链接观看/下载 * 1： 企业用户可观看/下载 * 2： 与会者可观看/下载
+
+        :param record_auth_type: The record_auth_type of this ShowRecordingDetailResponse.
+        :type record_auth_type: int
+        """
+        self._record_auth_type = record_auth_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

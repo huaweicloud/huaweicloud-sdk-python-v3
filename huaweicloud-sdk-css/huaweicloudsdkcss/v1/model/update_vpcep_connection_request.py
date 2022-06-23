@@ -35,7 +35,7 @@ class UpdateVpcepConnectionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待更新的集群ID。
+        :param cluster_id: 指定更新终端节点的集群ID。
         :type cluster_id: str
         :param body: Body of the UpdateVpcepConnectionRequest
         :type body: :class:`huaweicloudsdkcss.v1.UpdateVpcepConnectionReq`
@@ -55,7 +55,7 @@ class UpdateVpcepConnectionRequest:
     def cluster_id(self):
         """Gets the cluster_id of this UpdateVpcepConnectionRequest.
 
-        指定待更新的集群ID。
+        指定更新终端节点的集群ID。
 
         :return: The cluster_id of this UpdateVpcepConnectionRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateVpcepConnectionRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this UpdateVpcepConnectionRequest.
 
-        指定待更新的集群ID。
+        指定更新终端节点的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateVpcepConnectionRequest.
         :type cluster_id: str

@@ -35,9 +35,9 @@ class RollingRestartReq:
 
         The model defined in huaweicloud sdk
 
-        :param type: 操作角色
+        :param type: 操作角色。
         :type type: str
-        :param value: 实例类型。例如，  - ess-master对应Master节点。 - ess-client对应Clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。 - all对应所有节点。
+        :param value: 实例类型（选择实例类型时至少需要一个数据节点）。例如:  - ess-master对应Master节点。 - ess-client对应Clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。 - all对应所有节点。
         :type value: str
         """
         
@@ -54,7 +54,7 @@ class RollingRestartReq:
     def type(self):
         """Gets the type of this RollingRestartReq.
 
-        操作角色
+        操作角色。
 
         :return: The type of this RollingRestartReq.
         :rtype: str
@@ -65,7 +65,7 @@ class RollingRestartReq:
     def type(self, type):
         """Sets the type of this RollingRestartReq.
 
-        操作角色
+        操作角色。
 
         :param type: The type of this RollingRestartReq.
         :type type: str
@@ -76,7 +76,7 @@ class RollingRestartReq:
     def value(self):
         """Gets the value of this RollingRestartReq.
 
-        实例类型。例如，  - ess-master对应Master节点。 - ess-client对应Clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。 - all对应所有节点。
+        实例类型（选择实例类型时至少需要一个数据节点）。例如:  - ess-master对应Master节点。 - ess-client对应Clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。 - all对应所有节点。
 
         :return: The value of this RollingRestartReq.
         :rtype: str
@@ -87,7 +87,7 @@ class RollingRestartReq:
     def value(self, value):
         """Sets the value of this RollingRestartReq.
 
-        实例类型。例如，  - ess-master对应Master节点。 - ess-client对应Clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。 - all对应所有节点。
+        实例类型（选择实例类型时至少需要一个数据节点）。例如:  - ess-master对应Master节点。 - ess-client对应Clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。 - all对应所有节点。
 
         :param value: The value of this RollingRestartReq.
         :type value: str

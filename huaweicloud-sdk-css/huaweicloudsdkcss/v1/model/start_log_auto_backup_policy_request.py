@@ -35,7 +35,7 @@ class StartLogAutoBackupPolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待开启的集群ID。
+        :param cluster_id: 指定开启日志备份的集群ID。
         :type cluster_id: str
         :param body: Body of the StartLogAutoBackupPolicyRequest
         :type body: :class:`huaweicloudsdkcss.v1.StartLogAutoBackupPolicyReq`
@@ -55,7 +55,7 @@ class StartLogAutoBackupPolicyRequest:
     def cluster_id(self):
         """Gets the cluster_id of this StartLogAutoBackupPolicyRequest.
 
-        指定待开启的集群ID。
+        指定开启日志备份的集群ID。
 
         :return: The cluster_id of this StartLogAutoBackupPolicyRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class StartLogAutoBackupPolicyRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this StartLogAutoBackupPolicyRequest.
 
-        指定待开启的集群ID。
+        指定开启日志备份的集群ID。
 
         :param cluster_id: The cluster_id of this StartLogAutoBackupPolicyRequest.
         :type cluster_id: str

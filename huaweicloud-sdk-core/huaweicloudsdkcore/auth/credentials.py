@@ -19,23 +19,17 @@
 """
 
 import re
-from abc import ABCMeta, abstractmethod
+from abc import abstractmethod
 from concurrent.futures import ThreadPoolExecutor
-
-import six
 
 from huaweicloudsdkcore.auth.internal import Iam, Metadata
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException
 from huaweicloudsdkcore.signer.signer import Signer, DerivationAKSKSigner
 from huaweicloudsdkcore.auth.cache import AuthCache
-from huaweicloudsdkcore.utils import time_utils
-
-if six.PY3:
-    from abc import ABC
+from huaweicloudsdkcore.utils import time_utils, six_utils
 
 
 class Credentials(object):
-
     def __init__(self, ak=None, sk=None):
         self.ak = ak
         self.sk = sk
@@ -65,9 +59,7 @@ class Credentials(object):
         pass
 
 
-class DerivedCredentials(ABC if six.PY3 else object):
-    __metaclass__ = ABCMeta
-
+class DerivedCredentials(six_utils.get_abstract_meta_class()):
     _DEFAULT_ENDPOINT_REG = "^[a-z][a-z0-9-]+(\\.[a-z]{2,}-[a-z]+-\\d{1,2})?\\.(my)?(huaweicloud|myhwclouds).(com|cn)"
 
     @abstractmethod
@@ -87,8 +79,7 @@ class DerivedCredentials(ABC if six.PY3 else object):
         return lambda request: False if re.match(cls._DEFAULT_ENDPOINT_REG, request.host) else True
 
 
-class TempCredentials(ABC if six.PY3 else object):
-    __metaclass__ = ABCMeta
+class TempCredentials(six_utils.get_abstract_meta_class()):
     _TIME_FORMAT = "%Y-%m-%dT%H:%M:%S.%fZ"
 
     @abstractmethod
@@ -152,7 +143,7 @@ class BasicCredentials(Credentials, DerivedCredentials, TempCredentials):
         self._derived_predicate = None
 
         if self.iam_endpoint is None:
-            self.iam_endpoint = Iam.DEFAULT_ENDPOINT
+            self.iam_endpoint = Iam.get_iam_endpoint()
         future_request = self.process_auth_request(
             Iam.get_keystone_list_projects_request(self.iam_endpoint, region_id=region_id), http_client)
         request = future_request.result()
@@ -235,7 +226,7 @@ class GlobalCredentials(Credentials, DerivedCredentials, TempCredentials):
         self._derived_predicate = None
 
         if self.iam_endpoint is None:
-            self.iam_endpoint = Iam.DEFAULT_ENDPOINT
+            self.iam_endpoint = Iam.get_iam_endpoint()
         future_request = self.process_auth_request(Iam.get_keystone_list_auth_domains_request(self.iam_endpoint),
                                                    http_client)
         request = future_request.result()

@@ -24,7 +24,7 @@ class CreateConfigurationRequestBody:
         'name': 'str',
         'description': 'str',
         'datastore': 'CreateConfigurationDatastoreOption',
-        'values': 'dict(str, str)'
+        'values': 'CreateConfigurationValuesOption'
     }
 
     attribute_map = {
@@ -45,8 +45,8 @@ class CreateConfigurationRequestBody:
         :type description: str
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationDatastoreOption`
-        :param values: 参数值对象，用户基于默认参数模板自定义的参数值。默认不修改参数值。
-        :type values: dict(str, str)
+        :param values: 
+        :type values: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationValuesOption`
         """
         
         
@@ -132,10 +132,9 @@ class CreateConfigurationRequestBody:
     def values(self):
         """Gets the values of this CreateConfigurationRequestBody.
 
-        参数值对象，用户基于默认参数模板自定义的参数值。默认不修改参数值。
 
         :return: The values of this CreateConfigurationRequestBody.
-        :rtype: dict(str, str)
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationValuesOption`
         """
         return self._values
 
@@ -143,10 +142,9 @@ class CreateConfigurationRequestBody:
     def values(self, values):
         """Sets the values of this CreateConfigurationRequestBody.
 
-        参数值对象，用户基于默认参数模板自定义的参数值。默认不修改参数值。
 
         :param values: The values of this CreateConfigurationRequestBody.
-        :type values: dict(str, str)
+        :type values: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationValuesOption`
         """
         self._values = values
 

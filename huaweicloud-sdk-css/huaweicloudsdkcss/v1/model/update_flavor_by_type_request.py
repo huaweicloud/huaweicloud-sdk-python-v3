@@ -37,9 +37,9 @@ class UpdateFlavorByTypeRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待更改的集群ID。
+        :param cluster_id: 指定待更改规格的集群ID。
         :type cluster_id: str
-        :param types: 指定待更改的集群节点类型。
+        :param types: 指定待更改的集群节点类型。 - ess：数据节点。 - ess-cold：冷数据节点。 - ess-client：Client节点。 - ess-master：Master节点。
         :type types: str
         :param body: Body of the UpdateFlavorByTypeRequest
         :type body: :class:`huaweicloudsdkcss.v1.UpdateFlavorReq`
@@ -61,7 +61,7 @@ class UpdateFlavorByTypeRequest:
     def cluster_id(self):
         """Gets the cluster_id of this UpdateFlavorByTypeRequest.
 
-        指定待更改的集群ID。
+        指定待更改规格的集群ID。
 
         :return: The cluster_id of this UpdateFlavorByTypeRequest.
         :rtype: str
@@ -72,7 +72,7 @@ class UpdateFlavorByTypeRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this UpdateFlavorByTypeRequest.
 
-        指定待更改的集群ID。
+        指定待更改规格的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateFlavorByTypeRequest.
         :type cluster_id: str
@@ -83,7 +83,7 @@ class UpdateFlavorByTypeRequest:
     def types(self):
         """Gets the types of this UpdateFlavorByTypeRequest.
 
-        指定待更改的集群节点类型。
+        指定待更改的集群节点类型。 - ess：数据节点。 - ess-cold：冷数据节点。 - ess-client：Client节点。 - ess-master：Master节点。
 
         :return: The types of this UpdateFlavorByTypeRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class UpdateFlavorByTypeRequest:
     def types(self, types):
         """Sets the types of this UpdateFlavorByTypeRequest.
 
-        指定待更改的集群节点类型。
+        指定待更改的集群节点类型。 - ess：数据节点。 - ess-cold：冷数据节点。 - ess-client：Client节点。 - ess-master：Master节点。
 
         :param types: The types of this UpdateFlavorByTypeRequest.
         :type types: str

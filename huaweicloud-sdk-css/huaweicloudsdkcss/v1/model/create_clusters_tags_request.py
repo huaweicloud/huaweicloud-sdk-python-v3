@@ -35,7 +35,7 @@ class CreateClustersTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待添加的集群ID。
+        :param cluster_id: 指定待添加标签的集群ID。
         :type cluster_id: str
         :param body: Body of the CreateClustersTagsRequest
         :type body: :class:`huaweicloudsdkcss.v1.TagReq`
@@ -55,7 +55,7 @@ class CreateClustersTagsRequest:
     def cluster_id(self):
         """Gets the cluster_id of this CreateClustersTagsRequest.
 
-        指定待添加的集群ID。
+        指定待添加标签的集群ID。
 
         :return: The cluster_id of this CreateClustersTagsRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class CreateClustersTagsRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this CreateClustersTagsRequest.
 
-        指定待添加的集群ID。
+        指定待添加标签的集群ID。
 
         :param cluster_id: The cluster_id of this CreateClustersTagsRequest.
         :type cluster_id: str

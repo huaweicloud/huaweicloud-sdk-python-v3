@@ -35,7 +35,7 @@ class AddFavoriteRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待添加的集群ID。
+        :param cluster_id: 指定添加自定义模板的集群ID。
         :type cluster_id: str
         :param body: Body of the AddFavoriteRequest
         :type body: :class:`huaweicloudsdkcss.v1.AddFavoriteReq`
@@ -55,7 +55,7 @@ class AddFavoriteRequest:
     def cluster_id(self):
         """Gets the cluster_id of this AddFavoriteRequest.
 
-        指定待添加的集群ID。
+        指定添加自定义模板的集群ID。
 
         :return: The cluster_id of this AddFavoriteRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class AddFavoriteRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this AddFavoriteRequest.
 
-        指定待添加的集群ID。
+        指定添加自定义模板的集群ID。
 
         :param cluster_id: The cluster_id of this AddFavoriteRequest.
         :type cluster_id: str

@@ -18,6 +18,7 @@
  under the LICENSE.
 """
 
+import os
 import json
 import six
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException
@@ -63,6 +64,12 @@ class Iam(object):
     DEFAULT_ENDPOINT = "https://iam.myhuaweicloud.com"
     KEYSTONE_LIST_PROJECT_URI = "/v3/projects"
     KEYSTONE_LIST_AUTH_DOMAINS_URI = "/v3/auth/domains"
+    IAM_ENDPOINT_ENV_NAME = "HUAWEICLOUD_SDK_IAM_ENDPOINT"
+
+    @classmethod
+    def get_iam_endpoint(cls):
+        iam_endpoint = os.environ.get(cls.IAM_ENDPOINT_ENV_NAME)
+        return iam_endpoint if iam_endpoint else cls.DEFAULT_ENDPOINT
 
     @classmethod
     def get_keystone_list_projects_request(cls, iam_endpoint=None, region_id=None):

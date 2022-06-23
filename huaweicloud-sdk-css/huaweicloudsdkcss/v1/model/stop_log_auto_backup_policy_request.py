@@ -33,7 +33,7 @@ class StopLogAutoBackupPolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待关闭的集群ID。
+        :param cluster_id: 指定关闭日志自动备份的集群ID。
         :type cluster_id: str
         """
         
@@ -48,7 +48,7 @@ class StopLogAutoBackupPolicyRequest:
     def cluster_id(self):
         """Gets the cluster_id of this StopLogAutoBackupPolicyRequest.
 
-        指定待关闭的集群ID。
+        指定关闭日志自动备份的集群ID。
 
         :return: The cluster_id of this StopLogAutoBackupPolicyRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class StopLogAutoBackupPolicyRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this StopLogAutoBackupPolicyRequest.
 
-        指定待关闭的集群ID。
+        指定关闭日志自动备份的集群ID。
 
         :param cluster_id: The cluster_id of this StopLogAutoBackupPolicyRequest.
         :type cluster_id: str

@@ -35,7 +35,7 @@ class UpdateSnapshotSettingRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待修改的集群ID。
+        :param cluster_id: 指定待操作的集群ID。
         :type cluster_id: str
         :param body: Body of the UpdateSnapshotSettingRequest
         :type body: :class:`huaweicloudsdkcss.v1.UpdateSnapshotSettingReq`
@@ -55,7 +55,7 @@ class UpdateSnapshotSettingRequest:
     def cluster_id(self):
         """Gets the cluster_id of this UpdateSnapshotSettingRequest.
 
-        指定待修改的集群ID。
+        指定待操作的集群ID。
 
         :return: The cluster_id of this UpdateSnapshotSettingRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateSnapshotSettingRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this UpdateSnapshotSettingRequest.
 
-        指定待修改的集群ID。
+        指定待操作的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateSnapshotSettingRequest.
         :type cluster_id: str

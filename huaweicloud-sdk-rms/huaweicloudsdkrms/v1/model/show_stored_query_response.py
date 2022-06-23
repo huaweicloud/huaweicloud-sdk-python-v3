@@ -53,7 +53,7 @@ class ShowStoredQueryResponse(SdkResponse):
         :type expression: str
         :param created: ResourceQL 创建时间
         :type created: str
-        :param updated: ResouerceQL 更新时间
+        :param updated: ResourceQL 更新时间
         :type updated: str
         """
         
@@ -194,7 +194,7 @@ class ShowStoredQueryResponse(SdkResponse):
     def updated(self):
         """Gets the updated of this ShowStoredQueryResponse.
 
-        ResouerceQL 更新时间
+        ResourceQL 更新时间
 
         :return: The updated of this ShowStoredQueryResponse.
         :rtype: str
@@ -205,7 +205,7 @@ class ShowStoredQueryResponse(SdkResponse):
     def updated(self, updated):
         """Sets the updated of this ShowStoredQueryResponse.
 
-        ResouerceQL 更新时间
+        ResourceQL 更新时间
 
         :param updated: The updated of this ShowStoredQueryResponse.
         :type updated: str

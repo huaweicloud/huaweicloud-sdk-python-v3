@@ -131,6 +131,9 @@ if __name__ == "__main__":
 * [3. 客户端初始化](#3-客户端初始化-top)
     * [3.1 指定云服务 Endpoint 方式](#31-指定云服务-endpoint-方式-top)
     * [3.2 指定 Region 方式（推荐）](#32-指定-region-方式-推荐-top)
+    * [3.3 自定义配置](#33-自定义配置-top)
+        * [3.3.1 IAM endpoint配置](#331-IAM-endpoint配置-top)
+        * [3.3.2 Region配置](#332-Region配置-top)
 * [4. 发送请求并查看响应](#4-发送请求并查看响应-top)
     * [4.1 异常处理](#41-异常处理-top)
     * [4.2 获取响应对象](#42-获取响应对象-top)
@@ -287,6 +290,89 @@ client = IamClient.new_builder() \
 | 指定云服务 Endpoint 方式 | 只要接口已在当前环境发布就可以成功调用 | 需要用户自行查找并填写 projectId 和 endpoint
 | 指定 Region 方式 | 无需指定 projectId 和 endpoint，按照要求配置即可自动获取该值并回填 | 支持的服务和 region 有限制
 
+#### 3.3 自定义配置 [:top:](#用户手册-top)
+
+**注：**3.0.93版本起支持
+
+##### 3.3.1 IAM endpoint配置
+
+自动获取用户的 projectId 和 domainId 会分别调用统一身份认证服务的 [KeystoneListProjects](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListProjects) 和 [KeystoneListAuthDomains](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=KeystoneListAuthDomains) 接口，默认访问的endpoint为 https://iam.myhuaweicloud.com
+
+用户可以通过以下两种方式来修改endpoint
+
+###### 3.3.1.1 全局级
+
+全局范围生效，通过环境变量`HUAWEICLOUD_SDK_IAM_ENDPOINT`指定
+
+```
+//linux
+export HUAWEICLOUD_SDK_IAM_ENDPOINT=https://iam.cn-north-4.myhuaweicloud.com
+
+//windows
+set HUAWEICLOUD_SDK_IAM_ENDPOINT=https://iam.cn-north-4.myhuaweicloud.com
+```
+
+###### 3.3.1.2 凭证级
+
+只对单个凭证生效，会覆盖全局配置
+
+```python
+from huaweicloudsdkcore.auth.credentials import BasicCredentials
+
+iam_endpoint = "https://iam.cn-north-4.myhuaweicloud.com"
+credentials = BasicCredentials(ak, sk).with_iam_endpoint(iam_endpoint)
+```
+
+##### 3.3.2 Region配置
+
+###### 3.3.2.1 环境变量
+
+通过环境变量配置，格式为`HUAWEICLOUD_SDK_REGION_{SERIVCE_NAME}_{REGION_ID}={endpoint}`
+
+注：环境变量名全大写，中划线替换为下划线
+
+```
+// 以ECS和IoTDA服务为例
+
+// linux
+export HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_99=https://ecs.cn-north-99.myhuaweicloud.com
+export HUAWEICLOUD_SDK_REGION_IOTDA_AP_SOUTHEAST_10=https://iotda.ap-southwest-10.myhuaweicloud.com
+
+// windows
+set HUAWEICLOUD_SDK_REGION_ECS_CN_NORTH_99=https://ecs.cn-north-99.myhuaweicloud.com
+set HUAWEICLOUD_SDK_REGION_IOTDA_AP_SOUTHEAST_10=https://iotda.ap-southwest-10.myhuaweicloud.com
+```
+
+###### 3.3.2.2 文件配置
+
+通过yaml文件配置，默认会从用户主目录下读取region配置文件，linux为`~/.huaweicloud/regions.yaml`，windows为`C:\Users\USER_NAME\.huaweicloud\regions.yaml`，默认配置文件可以不存在，但是如果配置文件存在且内容格式不对会解析错误抛出异常。
+
+可以通过配置环境变量`HUAWEICLOUD_SDK_REGIONS_FILE`来修改默认文件的路径，如`HUAWEICLOUD_SDK_REGIONS_FILE=/tmp/my_regions.yml`
+
+文件内容格式如下：
+
+```yaml
+# 服务名不区分大小写
+ECS:
+  - id: 'cn-north-10'
+    endpoint: 'https://ecs.cn-north-10.myhuaweicloud.com'
+  - id: 'cn-north-11'
+    endpoint: 'https://ecs.cn-north-11.myhuaweicloud.com'
+IoTDA:
+  - id: 'ap-southwest-9'
+    endpoint: 'https://iotda.ap-southwest-9.myhuaweicloud.com'
+```
+
+###### 3.3.2.3 Region提供链
+
+默认查找顺序为 **环境变量 -> 配置文件 -> SDK中已定义Region**，以上方式都找不到region会抛出异常，获取region示例：
+
+```python
+from huaweicloudsdkecs.v2.region.ecs_region import EcsRegion
+
+region1 = EcsRegion.value_of("cn-north-10")
+region2 = EcsRegion.value_of("cn-north-11")
+```
 
 ### 4. 发送请求并查看响应 [:top:](#用户手册-top)
 

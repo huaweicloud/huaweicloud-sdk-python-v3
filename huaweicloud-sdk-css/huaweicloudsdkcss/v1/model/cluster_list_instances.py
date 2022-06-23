@@ -26,7 +26,8 @@ class ClusterListInstances:
         'id': 'str',
         'name': 'str',
         'spec_code': 'str',
-        'az_code': 'str'
+        'az_code': 'str',
+        'ip': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ClusterListInstances:
         'id': 'id',
         'name': 'name',
         'spec_code': 'specCode',
-        'az_code': 'azCode'
+        'az_code': 'azCode',
+        'ip': 'ip'
     }
 
-    def __init__(self, status=None, type=None, id=None, name=None, spec_code=None, az_code=None):
+    def __init__(self, status=None, type=None, id=None, name=None, spec_code=None, az_code=None, ip=None):
         """ClusterListInstances
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ClusterListInstances:
         :type spec_code: str
         :param az_code: 节点所属AZ信息。
         :type az_code: str
+        :param ip: 实例ip信息。
+        :type ip: str
         """
         
         
@@ -65,6 +69,7 @@ class ClusterListInstances:
         self._name = None
         self._spec_code = None
         self._az_code = None
+        self._ip = None
         self.discriminator = None
 
         if status is not None:
@@ -79,6 +84,8 @@ class ClusterListInstances:
             self.spec_code = spec_code
         if az_code is not None:
             self.az_code = az_code
+        if ip is not None:
+            self.ip = ip
 
     @property
     def status(self):
@@ -211,6 +218,28 @@ class ClusterListInstances:
         :type az_code: str
         """
         self._az_code = az_code
+
+    @property
+    def ip(self):
+        """Gets the ip of this ClusterListInstances.
+
+        实例ip信息。
+
+        :return: The ip of this ClusterListInstances.
+        :rtype: str
+        """
+        return self._ip
+
+    @ip.setter
+    def ip(self, ip):
+        """Sets the ip of this ClusterListInstances.
+
+        实例ip信息。
+
+        :param ip: The ip of this ClusterListInstances.
+        :type ip: str
+        """
+        self._ip = ip
 
     def to_dict(self):
         """Returns the model properties as a dict"""

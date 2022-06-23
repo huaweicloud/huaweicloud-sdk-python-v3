@@ -25,7 +25,7 @@ class UploadKieRequestBody:
     }
 
     attribute_map = {
-        'upload_file': 'UploadFile'
+        'upload_file': 'upload_file'
     }
 
     def __init__(self, upload_file=None):

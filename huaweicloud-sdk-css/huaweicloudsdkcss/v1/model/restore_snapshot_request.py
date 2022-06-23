@@ -37,7 +37,7 @@ class RestoreSnapshotRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 快照所属的集群ID。
+        :param cluster_id: 恢复快照所属的集群ID。
         :type cluster_id: str
         :param snapshot_id: 快照ID。
         :type snapshot_id: str
@@ -61,7 +61,7 @@ class RestoreSnapshotRequest:
     def cluster_id(self):
         """Gets the cluster_id of this RestoreSnapshotRequest.
 
-        快照所属的集群ID。
+        恢复快照所属的集群ID。
 
         :return: The cluster_id of this RestoreSnapshotRequest.
         :rtype: str
@@ -72,7 +72,7 @@ class RestoreSnapshotRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this RestoreSnapshotRequest.
 
-        快照所属的集群ID。
+        恢复快照所属的集群ID。
 
         :param cluster_id: The cluster_id of this RestoreSnapshotRequest.
         :type cluster_id: str

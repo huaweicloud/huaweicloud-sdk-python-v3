@@ -35,7 +35,7 @@ class DeleteClustersTagsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定删除集群ID。
+        :param cluster_id: 指定删除标签的集群ID。
         :type cluster_id: str
         :param key: 需要删除的标签名。
         :type key: str
@@ -54,7 +54,7 @@ class DeleteClustersTagsRequest:
     def cluster_id(self):
         """Gets the cluster_id of this DeleteClustersTagsRequest.
 
-        指定删除集群ID。
+        指定删除标签的集群ID。
 
         :return: The cluster_id of this DeleteClustersTagsRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class DeleteClustersTagsRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this DeleteClustersTagsRequest.
 
-        指定删除集群ID。
+        指定删除标签的集群ID。
 
         :param cluster_id: The cluster_id of this DeleteClustersTagsRequest.
         :type cluster_id: str

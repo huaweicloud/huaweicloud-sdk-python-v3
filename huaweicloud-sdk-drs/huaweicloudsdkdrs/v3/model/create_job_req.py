@@ -39,7 +39,9 @@ class CreateJobReq:
         'customize_sutnet_id': 'str',
         'product_id': 'str',
         'sys_tags': 'list[ResourceTag]',
-        'expired_days': 'str'
+        'expired_days': 'str',
+        'master_az': 'str',
+        'slave_az': 'str'
     }
 
     attribute_map = {
@@ -61,10 +63,12 @@ class CreateJobReq:
         'customize_sutnet_id': 'customize_sutnet_id',
         'product_id': 'product_id',
         'sys_tags': 'sys_tags',
-        'expired_days': 'expired_days'
+        'expired_days': 'expired_days',
+        'master_az': 'master_az',
+        'slave_az': 'slave_az'
     }
 
-    def __init__(self, bind_eip=None, db_use_type=None, name=None, description=None, engine_type=None, is_target_readonly=None, job_direction=None, multi_write=None, net_type=None, node_num=None, node_type=None, source_endpoint=None, target_endpoint=None, tags=None, task_type=None, customize_sutnet_id=None, product_id=None, sys_tags=None, expired_days=None):
+    def __init__(self, bind_eip=None, db_use_type=None, name=None, description=None, engine_type=None, is_target_readonly=None, job_direction=None, multi_write=None, net_type=None, node_num=None, node_type=None, source_endpoint=None, target_endpoint=None, tags=None, task_type=None, customize_sutnet_id=None, product_id=None, sys_tags=None, expired_days=None, master_az=None, slave_az=None):
         """CreateJobReq
 
         The model defined in huaweicloud sdk
@@ -107,6 +111,10 @@ class CreateJobReq:
         :type sys_tags: list[:class:`huaweicloudsdkdrs.v3.ResourceTag`]
         :param expired_days: 任务处于异常状态一段时间后，将会自动结束，单位为天。(范围14-100)，不传默认为14天。
         :type expired_days: str
+        :param master_az: 主备任务主任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
+        :type master_az: str
+        :param slave_az: 主备任务备任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
+        :type slave_az: str
         """
         
         
@@ -130,6 +138,8 @@ class CreateJobReq:
         self._product_id = None
         self._sys_tags = None
         self._expired_days = None
+        self._master_az = None
+        self._slave_az = None
         self.discriminator = None
 
         if bind_eip is not None:
@@ -160,6 +170,10 @@ class CreateJobReq:
             self.sys_tags = sys_tags
         if expired_days is not None:
             self.expired_days = expired_days
+        if master_az is not None:
+            self.master_az = master_az
+        if slave_az is not None:
+            self.slave_az = slave_az
 
     @property
     def bind_eip(self):
@@ -574,6 +588,50 @@ class CreateJobReq:
         :type expired_days: str
         """
         self._expired_days = expired_days
+
+    @property
+    def master_az(self):
+        """Gets the master_az of this CreateJobReq.
+
+        主备任务主任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
+
+        :return: The master_az of this CreateJobReq.
+        :rtype: str
+        """
+        return self._master_az
+
+    @master_az.setter
+    def master_az(self, master_az):
+        """Sets the master_az of this CreateJobReq.
+
+        主备任务主任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
+
+        :param master_az: The master_az of this CreateJobReq.
+        :type master_az: str
+        """
+        self._master_az = master_az
+
+    @property
+    def slave_az(self):
+        """Gets the slave_az of this CreateJobReq.
+
+        主备任务备任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
+
+        :return: The slave_az of this CreateJobReq.
+        :rtype: str
+        """
+        return self._slave_az
+
+    @slave_az.setter
+    def slave_az(self, slave_az):
+        """Sets the slave_az of this CreateJobReq.
+
+        主备任务备任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
+
+        :param slave_az: The slave_az of this CreateJobReq.
+        :type slave_az: str
+        """
+        self._slave_az = slave_az
 
     def to_dict(self):
         """Returns the model properties as a dict"""

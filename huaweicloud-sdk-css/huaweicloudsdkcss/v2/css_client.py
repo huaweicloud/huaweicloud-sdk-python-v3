@@ -51,7 +51,7 @@ class CssClient(Client):
     def create_cluster(self, request):
         """创建集群V2
 
-        该接口用于创建集群V2。
+        该接口用于创建拥有多种不同节点类型（ess，ess-cold，ess-client，ess-master）组合的集群。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -109,7 +109,7 @@ class CssClient(Client):
     def restart_cluster(self, request):
         """重启集群V2
 
-        该接口用于重启集群。
+        该接口可以用于重启当前集群拥有的全部节点类型，或部分节点类型组合的节点。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -121,7 +121,7 @@ class CssClient(Client):
         return self.restart_cluster_with_http_info(request)
 
     def restart_cluster_with_http_info(self, request):
-        all_params = ['cluster_id', 'rolling_restart_req']
+        all_params = ['cluster_id', 'restart_cluster_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -169,7 +169,7 @@ class CssClient(Client):
     def rolling_restart(self, request):
         """滚动重启
 
-        该接口用于滚动重启。
+        该接口会一个一个重启节点，在索引数量比较多的情况下耗时较长
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -229,7 +229,7 @@ class CssClient(Client):
     def start_auto_create_snapshots(self, request):
         """开启自动创建快照功能
 
-        该接口用于打开自动创建快照功能。
+        该接口用于打开自动备份功能
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -289,7 +289,7 @@ class CssClient(Client):
     def stop_auto_create_snapshots(self, request):
         """关闭自动创建快照功能
 
-        该接口用于关闭自动创建快照功能。
+        该接口用于关闭自动备份功能。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

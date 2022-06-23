@@ -1793,7 +1793,7 @@ class ElbClient(Client):
         return self.list_listeners_with_http_info(request)
 
     def list_listeners_with_http_info(self, request):
-        all_params = ['limit', 'marker', 'page_reverse', 'id', 'name', 'description', 'default_pool_id', 'default_tls_container_ref', 'client_ca_tls_container_ref', 'protocol', 'protocol_port', 'tls_ciphers_policy', 'member_timeout', 'client_timeout', 'keepalive_timeout', 'tls_container_id']
+        all_params = ['limit', 'marker', 'page_reverse', 'id', 'name', 'description', 'loadbalancer_id', 'connection_limit', 'admin_state_up', 'default_pool_id', 'default_tls_container_ref', 'client_ca_tls_container_ref', 'protocol', 'protocol_port', 'tls_ciphers_policy', 'tls_container_id', 'http2_enable', 'enterprise_project_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1816,6 +1816,12 @@ class ElbClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'description' in local_var_params:
             query_params.append(('description', local_var_params['description']))
+        if 'loadbalancer_id' in local_var_params:
+            query_params.append(('loadbalancer_id', local_var_params['loadbalancer_id']))
+        if 'connection_limit' in local_var_params:
+            query_params.append(('connection_limit', local_var_params['connection_limit']))
+        if 'admin_state_up' in local_var_params:
+            query_params.append(('admin_state_up', local_var_params['admin_state_up']))
         if 'default_pool_id' in local_var_params:
             query_params.append(('default_pool_id', local_var_params['default_pool_id']))
         if 'default_tls_container_ref' in local_var_params:
@@ -1828,14 +1834,12 @@ class ElbClient(Client):
             query_params.append(('protocol_port', local_var_params['protocol_port']))
         if 'tls_ciphers_policy' in local_var_params:
             query_params.append(('tls_ciphers_policy', local_var_params['tls_ciphers_policy']))
-        if 'member_timeout' in local_var_params:
-            query_params.append(('member_timeout', local_var_params['member_timeout']))
-        if 'client_timeout' in local_var_params:
-            query_params.append(('client_timeout', local_var_params['client_timeout']))
-        if 'keepalive_timeout' in local_var_params:
-            query_params.append(('keepalive_timeout', local_var_params['keepalive_timeout']))
         if 'tls_container_id' in local_var_params:
             query_params.append(('tls_container_id', local_var_params['tls_container_id']))
+        if 'http2_enable' in local_var_params:
+            query_params.append(('http2_enable', local_var_params['http2_enable']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
 
         header_params = {}
 

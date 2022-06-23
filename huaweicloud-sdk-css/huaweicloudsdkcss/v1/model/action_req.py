@@ -33,7 +33,7 @@ class ActionReq:
 
         The model defined in huaweicloud sdk
 
-        :param action: 集群当前行为，REBOOTING表示重启，GROWING表示扩容，RESTORING表示恢复集群，SNAPSHOTTING表示创建快照。
+        :param action: 集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照。
         :type action: str
         """
         
@@ -49,7 +49,7 @@ class ActionReq:
     def action(self):
         """Gets the action of this ActionReq.
 
-        集群当前行为，REBOOTING表示重启，GROWING表示扩容，RESTORING表示恢复集群，SNAPSHOTTING表示创建快照。
+        集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照。
 
         :return: The action of this ActionReq.
         :rtype: str
@@ -60,7 +60,7 @@ class ActionReq:
     def action(self, action):
         """Sets the action of this ActionReq.
 
-        集群当前行为，REBOOTING表示重启，GROWING表示扩容，RESTORING表示恢复集群，SNAPSHOTTING表示创建快照。
+        集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照。
 
         :param action: The action of this ActionReq.
         :type action: str

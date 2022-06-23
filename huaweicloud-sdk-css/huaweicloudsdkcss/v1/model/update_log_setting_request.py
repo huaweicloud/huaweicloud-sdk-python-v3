@@ -35,7 +35,7 @@ class UpdateLogSettingRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待更改的集群ID。
+        :param cluster_id: 指定更改日志基础配置的集群ID。
         :type cluster_id: str
         :param body: Body of the UpdateLogSettingRequest
         :type body: :class:`huaweicloudsdkcss.v1.UpdateLogSettingReq`
@@ -55,7 +55,7 @@ class UpdateLogSettingRequest:
     def cluster_id(self):
         """Gets the cluster_id of this UpdateLogSettingRequest.
 
-        指定待更改的集群ID。
+        指定更改日志基础配置的集群ID。
 
         :return: The cluster_id of this UpdateLogSettingRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateLogSettingRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this UpdateLogSettingRequest.
 
-        指定待更改的集群ID。
+        指定更改日志基础配置的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateLogSettingRequest.
         :type cluster_id: str

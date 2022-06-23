@@ -23,48 +23,60 @@ class ClusterList:
     openapi_types = {
         'datastore': 'ClusterListDatastore',
         'instances': 'list[ClusterListInstances]',
+        'public_kibana_resp': 'KibanaElbWhiteListResp',
+        'elb_white_list': 'ElbWhiteListResp',
         'updated': 'str',
         'name': 'str',
+        'public_ip': 'str',
         'created': 'str',
         'id': 'str',
         'status': 'str',
         'endpoint': 'str',
-        'action_progress': 'ClusterListActionProgress',
-        'actions': 'list[str]',
-        'failed_reasons': 'ClusterListFailedReasons',
-        'authority_enable': 'bool',
         'vpc_id': 'str',
         'subnet_id': 'str',
         'security_group_id': 'str',
-        'enterprise_project_id': 'str',
-        'period': 'bool',
+        'bandwidth_size': 'int',
         'https_enable': 'bool',
-        'tags': 'list[ClusterListTags]'
+        'authority_enable': 'bool',
+        'disk_encrypted': 'bool',
+        'backup_available': 'bool',
+        'action_progress': 'ClusterListActionProgress',
+        'actions': 'list[str]',
+        'enterprise_project_id': 'str',
+        'tags': 'list[ClusterListTags]',
+        'failed_reasons': 'ClusterListFailedReasons',
+        'period': 'bool'
     }
 
     attribute_map = {
         'datastore': 'datastore',
         'instances': 'instances',
+        'public_kibana_resp': 'publicKibanaResp',
+        'elb_white_list': 'elbWhiteList',
         'updated': 'updated',
         'name': 'name',
+        'public_ip': 'publicIp',
         'created': 'created',
         'id': 'id',
         'status': 'status',
         'endpoint': 'endpoint',
-        'action_progress': 'actionProgress',
-        'actions': 'actions',
-        'failed_reasons': 'failed_reasons',
-        'authority_enable': 'authorityEnable',
         'vpc_id': 'vpcId',
         'subnet_id': 'subnetId',
         'security_group_id': 'securityGroupId',
-        'enterprise_project_id': 'enterprise_project_id',
-        'period': 'period',
+        'bandwidth_size': 'bandwidthSize',
         'https_enable': 'httpsEnable',
-        'tags': 'tags'
+        'authority_enable': 'authorityEnable',
+        'disk_encrypted': 'diskEncrypted',
+        'backup_available': 'backupAvailable',
+        'action_progress': 'actionProgress',
+        'actions': 'actions',
+        'enterprise_project_id': 'enterpriseProjectId',
+        'tags': 'tags',
+        'failed_reasons': 'failed_reasons',
+        'period': 'period'
     }
 
-    def __init__(self, datastore=None, instances=None, updated=None, name=None, created=None, id=None, status=None, endpoint=None, action_progress=None, actions=None, failed_reasons=None, authority_enable=None, vpc_id=None, subnet_id=None, security_group_id=None, enterprise_project_id=None, period=None, https_enable=None, tags=None):
+    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, bandwidth_size=None, https_enable=None, authority_enable=None, disk_encrypted=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reasons=None, period=None):
         """ClusterList
 
         The model defined in huaweicloud sdk
@@ -73,11 +85,17 @@ class ClusterList:
         :type datastore: :class:`huaweicloudsdkcss.v1.ClusterListDatastore`
         :param instances: 节点对象列表。
         :type instances: list[:class:`huaweicloudsdkcss.v1.ClusterListInstances`]
+        :param public_kibana_resp: 
+        :type public_kibana_resp: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
+        :param elb_white_list: 
+        :type elb_white_list: :class:`huaweicloudsdkcss.v1.ElbWhiteListResp`
         :param updated: 集群上次修改时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。
         :type updated: str
         :param name: 集群名称。
         :type name: str
-        :param created: 集群创建时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。     说明：返回的集群列表信息按照创建时间降序排序，即创建时间最新的集群排在最前。
+        :param public_ip: 公网IP信息。
+        :type public_ip: str
+        :param created: 集群创建时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。  返回的集群列表信息按照创建时间降序排序，即创建时间最新的集群排在最前。
         :type created: str
         :param id: 集群ID。
         :type id: str
@@ -85,61 +103,79 @@ class ClusterList:
         :type status: str
         :param endpoint: 用户VPC访问IP地址和端口号。
         :type endpoint: str
-        :param action_progress: 
-        :type action_progress: :class:`huaweicloudsdkcss.v1.ClusterListActionProgress`
-        :param actions: 集群当前行为，REBOOTING表示重启，GROWING表示扩容，RESTORING表示恢复集群，SNAPSHOTTING表示创建快照。
-        :type actions: list[str]
-        :param failed_reasons: 
-        :type failed_reasons: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
-        :param authority_enable: 是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。 - true：表示集群开启认证。 - false：表示集群不开启认证。
-        :type authority_enable: bool
         :param vpc_id: VPC ID。
         :type vpc_id: str
         :param subnet_id: 子网ID。
         :type subnet_id: str
         :param security_group_id: 安全组ID。
         :type security_group_id: str
-        :param enterprise_project_id: 集群所属的企业项目ID。  如果集群所属用户没有开通企业项目，则不会返回该参数。
-        :type enterprise_project_id: str
-        :param period: 是为包周期集群。
-        :type period: bool
-        :param https_enable: 是否开启https访问。
+        :param bandwidth_size: 公网带宽大小。
+        :type bandwidth_size: int
+        :param https_enable: 通信加密状态。 - false：未设置通信加密。 - true：已设置通信加密。
         :type https_enable: bool
+        :param authority_enable: 是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。 - true：表示集群开启认证。 - false：表示集群不开启认证。
+        :type authority_enable: bool
+        :param disk_encrypted: 磁盘是否加密。  - true : 磁盘已加密。 - false : 磁盘未加密。
+        :type disk_encrypted: bool
+        :param backup_available: 快照是否开启。
+        :type backup_available: bool
+        :param action_progress: 
+        :type action_progress: :class:`huaweicloudsdkcss.v1.ClusterListActionProgress`
+        :param actions: 集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照。
+        :type actions: list[str]
+        :param enterprise_project_id: 集群所属的企业项目ID。 如果集群所属用户没有开通企业项目，则不会返回该参数。
+        :type enterprise_project_id: str
         :param tags: 集群标签。
         :type tags: list[:class:`huaweicloudsdkcss.v1.ClusterListTags`]
+        :param failed_reasons: 
+        :type failed_reasons: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
+        :param period: 是为包周期集群。 - \&quot;true\&quot; 表示是包周期计费的集群。 - \&quot;false\&quot; 表示是按需计费的集群。
+        :type period: bool
         """
         
         
 
         self._datastore = None
         self._instances = None
+        self._public_kibana_resp = None
+        self._elb_white_list = None
         self._updated = None
         self._name = None
+        self._public_ip = None
         self._created = None
         self._id = None
         self._status = None
         self._endpoint = None
-        self._action_progress = None
-        self._actions = None
-        self._failed_reasons = None
-        self._authority_enable = None
         self._vpc_id = None
         self._subnet_id = None
         self._security_group_id = None
-        self._enterprise_project_id = None
-        self._period = None
+        self._bandwidth_size = None
         self._https_enable = None
+        self._authority_enable = None
+        self._disk_encrypted = None
+        self._backup_available = None
+        self._action_progress = None
+        self._actions = None
+        self._enterprise_project_id = None
         self._tags = None
+        self._failed_reasons = None
+        self._period = None
         self.discriminator = None
 
         if datastore is not None:
             self.datastore = datastore
         if instances is not None:
             self.instances = instances
+        if public_kibana_resp is not None:
+            self.public_kibana_resp = public_kibana_resp
+        if elb_white_list is not None:
+            self.elb_white_list = elb_white_list
         if updated is not None:
             self.updated = updated
         if name is not None:
             self.name = name
+        if public_ip is not None:
+            self.public_ip = public_ip
         if created is not None:
             self.created = created
         if id is not None:
@@ -148,28 +184,34 @@ class ClusterList:
             self.status = status
         if endpoint is not None:
             self.endpoint = endpoint
-        if action_progress is not None:
-            self.action_progress = action_progress
-        if actions is not None:
-            self.actions = actions
-        if failed_reasons is not None:
-            self.failed_reasons = failed_reasons
-        if authority_enable is not None:
-            self.authority_enable = authority_enable
         if vpc_id is not None:
             self.vpc_id = vpc_id
         if subnet_id is not None:
             self.subnet_id = subnet_id
         if security_group_id is not None:
             self.security_group_id = security_group_id
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
-        if period is not None:
-            self.period = period
+        if bandwidth_size is not None:
+            self.bandwidth_size = bandwidth_size
         if https_enable is not None:
             self.https_enable = https_enable
+        if authority_enable is not None:
+            self.authority_enable = authority_enable
+        if disk_encrypted is not None:
+            self.disk_encrypted = disk_encrypted
+        if backup_available is not None:
+            self.backup_available = backup_available
+        if action_progress is not None:
+            self.action_progress = action_progress
+        if actions is not None:
+            self.actions = actions
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
+        if failed_reasons is not None:
+            self.failed_reasons = failed_reasons
+        if period is not None:
+            self.period = period
 
     @property
     def datastore(self):
@@ -212,6 +254,46 @@ class ClusterList:
         :type instances: list[:class:`huaweicloudsdkcss.v1.ClusterListInstances`]
         """
         self._instances = instances
+
+    @property
+    def public_kibana_resp(self):
+        """Gets the public_kibana_resp of this ClusterList.
+
+
+        :return: The public_kibana_resp of this ClusterList.
+        :rtype: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
+        """
+        return self._public_kibana_resp
+
+    @public_kibana_resp.setter
+    def public_kibana_resp(self, public_kibana_resp):
+        """Sets the public_kibana_resp of this ClusterList.
+
+
+        :param public_kibana_resp: The public_kibana_resp of this ClusterList.
+        :type public_kibana_resp: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
+        """
+        self._public_kibana_resp = public_kibana_resp
+
+    @property
+    def elb_white_list(self):
+        """Gets the elb_white_list of this ClusterList.
+
+
+        :return: The elb_white_list of this ClusterList.
+        :rtype: :class:`huaweicloudsdkcss.v1.ElbWhiteListResp`
+        """
+        return self._elb_white_list
+
+    @elb_white_list.setter
+    def elb_white_list(self, elb_white_list):
+        """Sets the elb_white_list of this ClusterList.
+
+
+        :param elb_white_list: The elb_white_list of this ClusterList.
+        :type elb_white_list: :class:`huaweicloudsdkcss.v1.ElbWhiteListResp`
+        """
+        self._elb_white_list = elb_white_list
 
     @property
     def updated(self):
@@ -258,10 +340,32 @@ class ClusterList:
         self._name = name
 
     @property
+    def public_ip(self):
+        """Gets the public_ip of this ClusterList.
+
+        公网IP信息。
+
+        :return: The public_ip of this ClusterList.
+        :rtype: str
+        """
+        return self._public_ip
+
+    @public_ip.setter
+    def public_ip(self, public_ip):
+        """Sets the public_ip of this ClusterList.
+
+        公网IP信息。
+
+        :param public_ip: The public_ip of this ClusterList.
+        :type public_ip: str
+        """
+        self._public_ip = public_ip
+
+    @property
     def created(self):
         """Gets the created of this ClusterList.
 
-        集群创建时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。     说明：返回的集群列表信息按照创建时间降序排序，即创建时间最新的集群排在最前。
+        集群创建时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。  返回的集群列表信息按照创建时间降序排序，即创建时间最新的集群排在最前。
 
         :return: The created of this ClusterList.
         :rtype: str
@@ -272,7 +376,7 @@ class ClusterList:
     def created(self, created):
         """Sets the created of this ClusterList.
 
-        集群创建时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。     说明：返回的集群列表信息按照创建时间降序排序，即创建时间最新的集群排在最前。
+        集群创建时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。  返回的集群列表信息按照创建时间降序排序，即创建时间最新的集群排在最前。
 
         :param created: The created of this ClusterList.
         :type created: str
@@ -346,90 +450,6 @@ class ClusterList:
         self._endpoint = endpoint
 
     @property
-    def action_progress(self):
-        """Gets the action_progress of this ClusterList.
-
-
-        :return: The action_progress of this ClusterList.
-        :rtype: :class:`huaweicloudsdkcss.v1.ClusterListActionProgress`
-        """
-        return self._action_progress
-
-    @action_progress.setter
-    def action_progress(self, action_progress):
-        """Sets the action_progress of this ClusterList.
-
-
-        :param action_progress: The action_progress of this ClusterList.
-        :type action_progress: :class:`huaweicloudsdkcss.v1.ClusterListActionProgress`
-        """
-        self._action_progress = action_progress
-
-    @property
-    def actions(self):
-        """Gets the actions of this ClusterList.
-
-        集群当前行为，REBOOTING表示重启，GROWING表示扩容，RESTORING表示恢复集群，SNAPSHOTTING表示创建快照。
-
-        :return: The actions of this ClusterList.
-        :rtype: list[str]
-        """
-        return self._actions
-
-    @actions.setter
-    def actions(self, actions):
-        """Sets the actions of this ClusterList.
-
-        集群当前行为，REBOOTING表示重启，GROWING表示扩容，RESTORING表示恢复集群，SNAPSHOTTING表示创建快照。
-
-        :param actions: The actions of this ClusterList.
-        :type actions: list[str]
-        """
-        self._actions = actions
-
-    @property
-    def failed_reasons(self):
-        """Gets the failed_reasons of this ClusterList.
-
-
-        :return: The failed_reasons of this ClusterList.
-        :rtype: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
-        """
-        return self._failed_reasons
-
-    @failed_reasons.setter
-    def failed_reasons(self, failed_reasons):
-        """Sets the failed_reasons of this ClusterList.
-
-
-        :param failed_reasons: The failed_reasons of this ClusterList.
-        :type failed_reasons: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
-        """
-        self._failed_reasons = failed_reasons
-
-    @property
-    def authority_enable(self):
-        """Gets the authority_enable of this ClusterList.
-
-        是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。 - true：表示集群开启认证。 - false：表示集群不开启认证。
-
-        :return: The authority_enable of this ClusterList.
-        :rtype: bool
-        """
-        return self._authority_enable
-
-    @authority_enable.setter
-    def authority_enable(self, authority_enable):
-        """Sets the authority_enable of this ClusterList.
-
-        是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。 - true：表示集群开启认证。 - false：表示集群不开启认证。
-
-        :param authority_enable: The authority_enable of this ClusterList.
-        :type authority_enable: bool
-        """
-        self._authority_enable = authority_enable
-
-    @property
     def vpc_id(self):
         """Gets the vpc_id of this ClusterList.
 
@@ -496,54 +516,32 @@ class ClusterList:
         self._security_group_id = security_group_id
 
     @property
-    def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ClusterList.
+    def bandwidth_size(self):
+        """Gets the bandwidth_size of this ClusterList.
 
-        集群所属的企业项目ID。  如果集群所属用户没有开通企业项目，则不会返回该参数。
+        公网带宽大小。
 
-        :return: The enterprise_project_id of this ClusterList.
-        :rtype: str
+        :return: The bandwidth_size of this ClusterList.
+        :rtype: int
         """
-        return self._enterprise_project_id
+        return self._bandwidth_size
 
-    @enterprise_project_id.setter
-    def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ClusterList.
+    @bandwidth_size.setter
+    def bandwidth_size(self, bandwidth_size):
+        """Sets the bandwidth_size of this ClusterList.
 
-        集群所属的企业项目ID。  如果集群所属用户没有开通企业项目，则不会返回该参数。
+        公网带宽大小。
 
-        :param enterprise_project_id: The enterprise_project_id of this ClusterList.
-        :type enterprise_project_id: str
+        :param bandwidth_size: The bandwidth_size of this ClusterList.
+        :type bandwidth_size: int
         """
-        self._enterprise_project_id = enterprise_project_id
-
-    @property
-    def period(self):
-        """Gets the period of this ClusterList.
-
-        是为包周期集群。
-
-        :return: The period of this ClusterList.
-        :rtype: bool
-        """
-        return self._period
-
-    @period.setter
-    def period(self, period):
-        """Sets the period of this ClusterList.
-
-        是为包周期集群。
-
-        :param period: The period of this ClusterList.
-        :type period: bool
-        """
-        self._period = period
+        self._bandwidth_size = bandwidth_size
 
     @property
     def https_enable(self):
         """Gets the https_enable of this ClusterList.
 
-        是否开启https访问。
+        通信加密状态。 - false：未设置通信加密。 - true：已设置通信加密。
 
         :return: The https_enable of this ClusterList.
         :rtype: bool
@@ -554,12 +552,142 @@ class ClusterList:
     def https_enable(self, https_enable):
         """Sets the https_enable of this ClusterList.
 
-        是否开启https访问。
+        通信加密状态。 - false：未设置通信加密。 - true：已设置通信加密。
 
         :param https_enable: The https_enable of this ClusterList.
         :type https_enable: bool
         """
         self._https_enable = https_enable
+
+    @property
+    def authority_enable(self):
+        """Gets the authority_enable of this ClusterList.
+
+        是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。 - true：表示集群开启认证。 - false：表示集群不开启认证。
+
+        :return: The authority_enable of this ClusterList.
+        :rtype: bool
+        """
+        return self._authority_enable
+
+    @authority_enable.setter
+    def authority_enable(self, authority_enable):
+        """Sets the authority_enable of this ClusterList.
+
+        是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。 - true：表示集群开启认证。 - false：表示集群不开启认证。
+
+        :param authority_enable: The authority_enable of this ClusterList.
+        :type authority_enable: bool
+        """
+        self._authority_enable = authority_enable
+
+    @property
+    def disk_encrypted(self):
+        """Gets the disk_encrypted of this ClusterList.
+
+        磁盘是否加密。  - true : 磁盘已加密。 - false : 磁盘未加密。
+
+        :return: The disk_encrypted of this ClusterList.
+        :rtype: bool
+        """
+        return self._disk_encrypted
+
+    @disk_encrypted.setter
+    def disk_encrypted(self, disk_encrypted):
+        """Sets the disk_encrypted of this ClusterList.
+
+        磁盘是否加密。  - true : 磁盘已加密。 - false : 磁盘未加密。
+
+        :param disk_encrypted: The disk_encrypted of this ClusterList.
+        :type disk_encrypted: bool
+        """
+        self._disk_encrypted = disk_encrypted
+
+    @property
+    def backup_available(self):
+        """Gets the backup_available of this ClusterList.
+
+        快照是否开启。
+
+        :return: The backup_available of this ClusterList.
+        :rtype: bool
+        """
+        return self._backup_available
+
+    @backup_available.setter
+    def backup_available(self, backup_available):
+        """Sets the backup_available of this ClusterList.
+
+        快照是否开启。
+
+        :param backup_available: The backup_available of this ClusterList.
+        :type backup_available: bool
+        """
+        self._backup_available = backup_available
+
+    @property
+    def action_progress(self):
+        """Gets the action_progress of this ClusterList.
+
+
+        :return: The action_progress of this ClusterList.
+        :rtype: :class:`huaweicloudsdkcss.v1.ClusterListActionProgress`
+        """
+        return self._action_progress
+
+    @action_progress.setter
+    def action_progress(self, action_progress):
+        """Sets the action_progress of this ClusterList.
+
+
+        :param action_progress: The action_progress of this ClusterList.
+        :type action_progress: :class:`huaweicloudsdkcss.v1.ClusterListActionProgress`
+        """
+        self._action_progress = action_progress
+
+    @property
+    def actions(self):
+        """Gets the actions of this ClusterList.
+
+        集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照。
+
+        :return: The actions of this ClusterList.
+        :rtype: list[str]
+        """
+        return self._actions
+
+    @actions.setter
+    def actions(self, actions):
+        """Sets the actions of this ClusterList.
+
+        集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照。
+
+        :param actions: The actions of this ClusterList.
+        :type actions: list[str]
+        """
+        self._actions = actions
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ClusterList.
+
+        集群所属的企业项目ID。 如果集群所属用户没有开通企业项目，则不会返回该参数。
+
+        :return: The enterprise_project_id of this ClusterList.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ClusterList.
+
+        集群所属的企业项目ID。 如果集群所属用户没有开通企业项目，则不会返回该参数。
+
+        :param enterprise_project_id: The enterprise_project_id of this ClusterList.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     @property
     def tags(self):
@@ -582,6 +710,48 @@ class ClusterList:
         :type tags: list[:class:`huaweicloudsdkcss.v1.ClusterListTags`]
         """
         self._tags = tags
+
+    @property
+    def failed_reasons(self):
+        """Gets the failed_reasons of this ClusterList.
+
+
+        :return: The failed_reasons of this ClusterList.
+        :rtype: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
+        """
+        return self._failed_reasons
+
+    @failed_reasons.setter
+    def failed_reasons(self, failed_reasons):
+        """Sets the failed_reasons of this ClusterList.
+
+
+        :param failed_reasons: The failed_reasons of this ClusterList.
+        :type failed_reasons: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
+        """
+        self._failed_reasons = failed_reasons
+
+    @property
+    def period(self):
+        """Gets the period of this ClusterList.
+
+        是为包周期集群。 - \"true\" 表示是包周期计费的集群。 - \"false\" 表示是按需计费的集群。
+
+        :return: The period of this ClusterList.
+        :rtype: bool
+        """
+        return self._period
+
+    @period.setter
+    def period(self, period):
+        """Sets the period of this ClusterList.
+
+        是为包周期集群。 - \"true\" 表示是包周期计费的集群。 - \"false\" 表示是按需计费的集群。
+
+        :param period: The period of this ClusterList.
+        :type period: bool
+        """
+        self._period = period
 
     def to_dict(self):
         """Returns the model properties as a dict"""

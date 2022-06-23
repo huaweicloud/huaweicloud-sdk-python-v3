@@ -35,7 +35,7 @@ class UpdateAlterKibanaRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待更改的集群ID。
+        :param cluster_id: 指定待修改kibana公网带宽的集群ID。
         :type cluster_id: str
         :param body: Body of the UpdateAlterKibanaRequest
         :type body: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaBandwidthReq`
@@ -55,7 +55,7 @@ class UpdateAlterKibanaRequest:
     def cluster_id(self):
         """Gets the cluster_id of this UpdateAlterKibanaRequest.
 
-        指定待更改的集群ID。
+        指定待修改kibana公网带宽的集群ID。
 
         :return: The cluster_id of this UpdateAlterKibanaRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateAlterKibanaRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this UpdateAlterKibanaRequest.
 
-        指定待更改的集群ID。
+        指定待修改kibana公网带宽的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateAlterKibanaRequest.
         :type cluster_id: str

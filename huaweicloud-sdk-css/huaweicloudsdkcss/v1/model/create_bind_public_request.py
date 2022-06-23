@@ -35,7 +35,7 @@ class CreateBindPublicRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待开启的集群ID。
+        :param cluster_id: 指定开启公网访问的集群ID。
         :type cluster_id: str
         :param body: Body of the CreateBindPublicRequest
         :type body: :class:`huaweicloudsdkcss.v1.BindPublicReq`
@@ -55,7 +55,7 @@ class CreateBindPublicRequest:
     def cluster_id(self):
         """Gets the cluster_id of this CreateBindPublicRequest.
 
-        指定待开启的集群ID。
+        指定开启公网访问的集群ID。
 
         :return: The cluster_id of this CreateBindPublicRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class CreateBindPublicRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this CreateBindPublicRequest.
 
-        指定待开启的集群ID。
+        指定开启公网访问的集群ID。
 
         :param cluster_id: The cluster_id of this CreateBindPublicRequest.
         :type cluster_id: str

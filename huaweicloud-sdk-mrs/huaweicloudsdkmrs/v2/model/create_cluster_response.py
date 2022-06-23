@@ -21,51 +21,51 @@ class CreateClusterResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'type': 'str'
+        'cluster_id': 'str'
     }
 
     attribute_map = {
-        'type': 'type'
+        'cluster_id': 'cluster_id'
     }
 
-    def __init__(self, type=None):
+    def __init__(self, cluster_id=None):
         """CreateClusterResponse
 
         The model defined in huaweicloud sdk
 
-        :param type: 集群创建成功后系统返回的集群ID值。
-        :type type: str
+        :param cluster_id: 集群创建成功后系统返回的集群ID值。
+        :type cluster_id: str
         """
         
         super(CreateClusterResponse, self).__init__()
 
-        self._type = None
+        self._cluster_id = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
+        if cluster_id is not None:
+            self.cluster_id = cluster_id
 
     @property
-    def type(self):
-        """Gets the type of this CreateClusterResponse.
+    def cluster_id(self):
+        """Gets the cluster_id of this CreateClusterResponse.
 
         集群创建成功后系统返回的集群ID值。
 
-        :return: The type of this CreateClusterResponse.
+        :return: The cluster_id of this CreateClusterResponse.
         :rtype: str
         """
-        return self._type
+        return self._cluster_id
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this CreateClusterResponse.
+    @cluster_id.setter
+    def cluster_id(self, cluster_id):
+        """Sets the cluster_id of this CreateClusterResponse.
 
         集群创建成功后系统返回的集群ID值。
 
-        :param type: The type of this CreateClusterResponse.
-        :type type: str
+        :param cluster_id: The cluster_id of this CreateClusterResponse.
+        :type cluster_id: str
         """
-        self._type = type
+        self._cluster_id = cluster_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -33,7 +33,7 @@ class CreateLogBackupRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待备份的集群ID。
+        :param cluster_id: 指定待备份日志的集群ID。
         :type cluster_id: str
         """
         
@@ -48,7 +48,7 @@ class CreateLogBackupRequest:
     def cluster_id(self):
         """Gets the cluster_id of this CreateLogBackupRequest.
 
-        指定待备份的集群ID。
+        指定待备份日志的集群ID。
 
         :return: The cluster_id of this CreateLogBackupRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class CreateLogBackupRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this CreateLogBackupRequest.
 
-        指定待备份的集群ID。
+        指定待备份日志的集群ID。
 
         :param cluster_id: The cluster_id of this CreateLogBackupRequest.
         :type cluster_id: str

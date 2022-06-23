@@ -21,51 +21,51 @@ class ListQuotaDetailsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'type': 'str'
+        'quota_key': 'list[str]'
     }
 
     attribute_map = {
-        'type': 'type'
+        'quota_key': 'quota_key'
     }
 
-    def __init__(self, type=None):
+    def __init__(self, quota_key=None):
         """ListQuotaDetailsRequest
 
         The model defined in huaweicloud sdk
 
-        :param type: 资源类型，取值：loadbalancer、listener、ipgroup、pool、member、members_per_pool、healthmonitor、l7policy、certificate、security_policy，其中members_per_pool表示一个pool下最多可关联的member数量。
-        :type type: str
+        :param quota_key: 资源类型，取值：loadbalancer、listener、ipgroup、pool、member、members_per_pool、healthmonitor、l7policy、certificate、security_policy，其中members_per_pool表示一个pool下最多可关联的member数量。 支持多值查询，查询条件格式：quota_key&#x3D;xxx&amp;quota_key&#x3D;xxx。
+        :type quota_key: list[str]
         """
         
         
 
-        self._type = None
+        self._quota_key = None
         self.discriminator = None
 
-        if type is not None:
-            self.type = type
+        if quota_key is not None:
+            self.quota_key = quota_key
 
     @property
-    def type(self):
-        """Gets the type of this ListQuotaDetailsRequest.
+    def quota_key(self):
+        """Gets the quota_key of this ListQuotaDetailsRequest.
 
-        资源类型，取值：loadbalancer、listener、ipgroup、pool、member、members_per_pool、healthmonitor、l7policy、certificate、security_policy，其中members_per_pool表示一个pool下最多可关联的member数量。
+        资源类型，取值：loadbalancer、listener、ipgroup、pool、member、members_per_pool、healthmonitor、l7policy、certificate、security_policy，其中members_per_pool表示一个pool下最多可关联的member数量。 支持多值查询，查询条件格式：quota_key=xxx&quota_key=xxx。
 
-        :return: The type of this ListQuotaDetailsRequest.
-        :rtype: str
+        :return: The quota_key of this ListQuotaDetailsRequest.
+        :rtype: list[str]
         """
-        return self._type
+        return self._quota_key
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this ListQuotaDetailsRequest.
+    @quota_key.setter
+    def quota_key(self, quota_key):
+        """Sets the quota_key of this ListQuotaDetailsRequest.
 
-        资源类型，取值：loadbalancer、listener、ipgroup、pool、member、members_per_pool、healthmonitor、l7policy、certificate、security_policy，其中members_per_pool表示一个pool下最多可关联的member数量。
+        资源类型，取值：loadbalancer、listener、ipgroup、pool、member、members_per_pool、healthmonitor、l7policy、certificate、security_policy，其中members_per_pool表示一个pool下最多可关联的member数量。 支持多值查询，查询条件格式：quota_key=xxx&quota_key=xxx。
 
-        :param type: The type of this ListQuotaDetailsRequest.
-        :type type: str
+        :param quota_key: The quota_key of this ListQuotaDetailsRequest.
+        :type quota_key: list[str]
         """
-        self._type = type
+        self._quota_key = quota_key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

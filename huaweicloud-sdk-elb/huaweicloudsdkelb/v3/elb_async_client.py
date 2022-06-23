@@ -2637,7 +2637,7 @@ class ElbAsyncClient(Client):
         return self.list_quota_details_with_http_info(request)
 
     def list_quota_details_with_http_info(self, request):
-        all_params = ['type']
+        all_params = ['quota_key']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2648,8 +2648,9 @@ class ElbAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
+        if 'quota_key' in local_var_params:
+            query_params.append(('quota_key', local_var_params['quota_key']))
+            collection_formats['quota_key'] = 'csv'
 
         header_params = {}
 

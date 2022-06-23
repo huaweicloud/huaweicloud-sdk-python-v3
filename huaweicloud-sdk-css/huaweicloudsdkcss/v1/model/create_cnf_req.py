@@ -37,7 +37,7 @@ class CreateCnfReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头
+        :param name: 配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
         :type name: str
         :param conf_content: 配置文件内容。
         :type conf_content: str
@@ -60,7 +60,7 @@ class CreateCnfReq:
     def name(self):
         """Gets the name of this CreateCnfReq.
 
-        配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头
+        配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
 
         :return: The name of this CreateCnfReq.
         :rtype: str
@@ -71,7 +71,7 @@ class CreateCnfReq:
     def name(self, name):
         """Sets the name of this CreateCnfReq.
 
-        配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头
+        配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
 
         :param name: The name of this CreateCnfReq.
         :type name: str

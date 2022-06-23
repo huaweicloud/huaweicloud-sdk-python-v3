@@ -35,9 +35,9 @@ class CreateClusterDatastoreBody:
 
         The model defined in huaweicloud sdk
 
-        :param version: 引擎版本号，支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2和7.9.3，默认为5.5.1。
+        :param version: Esasticsearch引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
         :type version: str
-        :param type: 引擎类型，默认为elasticsearch。目前只支持elasticsearch。
+        :param type: 引擎类型，目前只支持elasticsearch。
         :type type: str
         """
         
@@ -54,7 +54,7 @@ class CreateClusterDatastoreBody:
     def version(self):
         """Gets the version of this CreateClusterDatastoreBody.
 
-        引擎版本号，支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2和7.9.3，默认为5.5.1。
+        Esasticsearch引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
 
         :return: The version of this CreateClusterDatastoreBody.
         :rtype: str
@@ -65,7 +65,7 @@ class CreateClusterDatastoreBody:
     def version(self, version):
         """Sets the version of this CreateClusterDatastoreBody.
 
-        引擎版本号，支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2和7.9.3，默认为5.5.1。
+        Esasticsearch引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
 
         :param version: The version of this CreateClusterDatastoreBody.
         :type version: str
@@ -76,7 +76,7 @@ class CreateClusterDatastoreBody:
     def type(self):
         """Gets the type of this CreateClusterDatastoreBody.
 
-        引擎类型，默认为elasticsearch。目前只支持elasticsearch。
+        引擎类型，目前只支持elasticsearch。
 
         :return: The type of this CreateClusterDatastoreBody.
         :rtype: str
@@ -87,7 +87,7 @@ class CreateClusterDatastoreBody:
     def type(self, type):
         """Sets the type of this CreateClusterDatastoreBody.
 
-        引擎类型，默认为elasticsearch。目前只支持elasticsearch。
+        引擎类型，目前只支持elasticsearch。
 
         :param type: The type of this CreateClusterDatastoreBody.
         :type type: str

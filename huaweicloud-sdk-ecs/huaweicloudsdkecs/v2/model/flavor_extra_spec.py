@@ -97,7 +97,7 @@ class FlavorExtraSpec:
 
         The model defined in huaweicloud sdk
 
-        :param ecsperformancetype: 云服务器规格的分类：  - normal：通用型 - cpuv1：计算I型 - cpuv2：计算II型 - highmem：内存优化型 - gpu：GPU加速型 - entry：通用入门型 - saphana：大内存型 - ultracpu：超高性能计算型 - diskintensive：磁盘增强型 - highio：超高I/O型 - fpga：FPGA加速型  &gt; 说明：  - 早期注册的规格该字段为hws:performancetype。
+        :param ecsperformancetype: 云服务器规格的分类：  - normal：通用型 - entry：通用入门型 - cpuv1：计算I型 - cpuv2：计算II型 - computingv3：通用计算增强型 - kunpeng_computing：鲲鹏通用计算增强型 - kunpeng_highmem：鲲鹏内存优化型 - highmem：内存优化型 - saphana：大内存型 - diskintensive：磁盘增强型 - highio：超高I/O型 - ultracpu：超高性能计算型 - gpu：GPU加速型 - fpga：FPGA加速型 - ascend：AI加速型  &gt; 说明：  - 早期注册的规格该字段为hws:performancetype。
         :type ecsperformancetype: str
         :param hwnuma_nodes: 主机的物理cpu数量。
         :type hwnuma_nodes: str
@@ -273,7 +273,7 @@ class FlavorExtraSpec:
     def ecsperformancetype(self):
         """Gets the ecsperformancetype of this FlavorExtraSpec.
 
-        云服务器规格的分类：  - normal：通用型 - cpuv1：计算I型 - cpuv2：计算II型 - highmem：内存优化型 - gpu：GPU加速型 - entry：通用入门型 - saphana：大内存型 - ultracpu：超高性能计算型 - diskintensive：磁盘增强型 - highio：超高I/O型 - fpga：FPGA加速型  > 说明：  - 早期注册的规格该字段为hws:performancetype。
+        云服务器规格的分类：  - normal：通用型 - entry：通用入门型 - cpuv1：计算I型 - cpuv2：计算II型 - computingv3：通用计算增强型 - kunpeng_computing：鲲鹏通用计算增强型 - kunpeng_highmem：鲲鹏内存优化型 - highmem：内存优化型 - saphana：大内存型 - diskintensive：磁盘增强型 - highio：超高I/O型 - ultracpu：超高性能计算型 - gpu：GPU加速型 - fpga：FPGA加速型 - ascend：AI加速型  > 说明：  - 早期注册的规格该字段为hws:performancetype。
 
         :return: The ecsperformancetype of this FlavorExtraSpec.
         :rtype: str
@@ -284,7 +284,7 @@ class FlavorExtraSpec:
     def ecsperformancetype(self, ecsperformancetype):
         """Sets the ecsperformancetype of this FlavorExtraSpec.
 
-        云服务器规格的分类：  - normal：通用型 - cpuv1：计算I型 - cpuv2：计算II型 - highmem：内存优化型 - gpu：GPU加速型 - entry：通用入门型 - saphana：大内存型 - ultracpu：超高性能计算型 - diskintensive：磁盘增强型 - highio：超高I/O型 - fpga：FPGA加速型  > 说明：  - 早期注册的规格该字段为hws:performancetype。
+        云服务器规格的分类：  - normal：通用型 - entry：通用入门型 - cpuv1：计算I型 - cpuv2：计算II型 - computingv3：通用计算增强型 - kunpeng_computing：鲲鹏通用计算增强型 - kunpeng_highmem：鲲鹏内存优化型 - highmem：内存优化型 - saphana：大内存型 - diskintensive：磁盘增强型 - highio：超高I/O型 - ultracpu：超高性能计算型 - gpu：GPU加速型 - fpga：FPGA加速型 - ascend：AI加速型  > 说明：  - 早期注册的规格该字段为hws:performancetype。
 
         :param ecsperformancetype: The ecsperformancetype of this FlavorExtraSpec.
         :type ecsperformancetype: str

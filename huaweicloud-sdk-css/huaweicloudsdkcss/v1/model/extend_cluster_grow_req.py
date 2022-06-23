@@ -33,7 +33,7 @@ class ExtendClusterGrowReq:
 
         The model defined in huaweicloud sdk
 
-        :param modify_size: 扩容实例个数。  说明：集群已有实例个数和扩容实例个数总和不能超过32。
+        :param modify_size: 扩容实例个数。  集群已有实例个数和扩容实例个数总和不能超过32。
         :type modify_size: int
         """
         
@@ -48,7 +48,7 @@ class ExtendClusterGrowReq:
     def modify_size(self):
         """Gets the modify_size of this ExtendClusterGrowReq.
 
-        扩容实例个数。  说明：集群已有实例个数和扩容实例个数总和不能超过32。
+        扩容实例个数。  集群已有实例个数和扩容实例个数总和不能超过32。
 
         :return: The modify_size of this ExtendClusterGrowReq.
         :rtype: int
@@ -59,7 +59,7 @@ class ExtendClusterGrowReq:
     def modify_size(self, modify_size):
         """Sets the modify_size of this ExtendClusterGrowReq.
 
-        扩容实例个数。  说明：集群已有实例个数和扩容实例个数总和不能超过32。
+        扩容实例个数。  集群已有实例个数和扩容实例个数总和不能超过32。
 
         :param modify_size: The modify_size of this ExtendClusterGrowReq.
         :type modify_size: int

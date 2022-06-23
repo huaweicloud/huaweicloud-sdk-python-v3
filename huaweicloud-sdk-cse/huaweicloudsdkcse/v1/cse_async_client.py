@@ -513,7 +513,7 @@ class CseAsyncClient(Client):
 
         form_params = {}
         if 'upload_file' in local_var_params:
-            form_params['UploadFile'] = local_var_params['upload_file']
+            form_params['upload_file'] = local_var_params['upload_file']
 
         body_params = None
         if 'body' in local_var_params:

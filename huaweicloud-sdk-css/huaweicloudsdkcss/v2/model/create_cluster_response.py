@@ -21,49 +21,49 @@ class CreateClusterResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'schema': 'CreateClusterResp'
+        'cluster': 'CreateClusterResp'
     }
 
     attribute_map = {
-        'schema': 'schema'
+        'cluster': 'cluster'
     }
 
-    def __init__(self, schema=None):
+    def __init__(self, cluster=None):
         """CreateClusterResponse
 
         The model defined in huaweicloud sdk
 
-        :param schema: 
-        :type schema: :class:`huaweicloudsdkcss.v2.CreateClusterResp`
+        :param cluster: 
+        :type cluster: :class:`huaweicloudsdkcss.v2.CreateClusterResp`
         """
         
         super(CreateClusterResponse, self).__init__()
 
-        self._schema = None
+        self._cluster = None
         self.discriminator = None
 
-        if schema is not None:
-            self.schema = schema
+        if cluster is not None:
+            self.cluster = cluster
 
     @property
-    def schema(self):
-        """Gets the schema of this CreateClusterResponse.
+    def cluster(self):
+        """Gets the cluster of this CreateClusterResponse.
 
 
-        :return: The schema of this CreateClusterResponse.
+        :return: The cluster of this CreateClusterResponse.
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterResp`
         """
-        return self._schema
+        return self._cluster
 
-    @schema.setter
-    def schema(self, schema):
-        """Sets the schema of this CreateClusterResponse.
+    @cluster.setter
+    def cluster(self, cluster):
+        """Sets the cluster of this CreateClusterResponse.
 
 
-        :param schema: The schema of this CreateClusterResponse.
-        :type schema: :class:`huaweicloudsdkcss.v2.CreateClusterResp`
+        :param cluster: The cluster of this CreateClusterResponse.
+        :type cluster: :class:`huaweicloudsdkcss.v2.CreateClusterResp`
         """
-        self._schema = schema
+        self._cluster = cluster
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -37,7 +37,7 @@ class UpdateVpcepConnectionReq:
 
         :param action: 期望的操作行为。
         :type action: str
-        :param endpoint_id_list: 终端节点ID列表（用户ID）。
+        :param endpoint_id_list: 终端节点ID列表。
         :type endpoint_id_list: list[str]
         """
         
@@ -76,7 +76,7 @@ class UpdateVpcepConnectionReq:
     def endpoint_id_list(self):
         """Gets the endpoint_id_list of this UpdateVpcepConnectionReq.
 
-        终端节点ID列表（用户ID）。
+        终端节点ID列表。
 
         :return: The endpoint_id_list of this UpdateVpcepConnectionReq.
         :rtype: list[str]
@@ -87,7 +87,7 @@ class UpdateVpcepConnectionReq:
     def endpoint_id_list(self, endpoint_id_list):
         """Sets the endpoint_id_list of this UpdateVpcepConnectionReq.
 
-        终端节点ID列表（用户ID）。
+        终端节点ID列表。
 
         :param endpoint_id_list: The endpoint_id_list of this UpdateVpcepConnectionReq.
         :type endpoint_id_list: list[str]

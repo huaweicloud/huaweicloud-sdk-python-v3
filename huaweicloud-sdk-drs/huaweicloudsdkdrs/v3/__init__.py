@@ -7,6 +7,7 @@ from huaweicloudsdkdrs.v3.drs_client import DrsClient
 from huaweicloudsdkdrs.v3.drs_async_client import DrsAsyncClient
 # import models into sdk package
 from huaweicloudsdkdrs.v3.model.alarm_notify_info import AlarmNotifyInfo
+from huaweicloudsdkdrs.v3.model.az_info_resp import AzInfoResp
 from huaweicloudsdkdrs.v3.model.batch_change_data_request import BatchChangeDataRequest
 from huaweicloudsdkdrs.v3.model.batch_change_data_response import BatchChangeDataResponse
 from huaweicloudsdkdrs.v3.model.batch_check_jobs_request import BatchCheckJobsRequest
@@ -126,6 +127,8 @@ from huaweicloudsdkdrs.v3.model.line_compare_detail import LineCompareDetail
 from huaweicloudsdkdrs.v3.model.line_compare_result import LineCompareResult
 from huaweicloudsdkdrs.v3.model.line_compare_result_details import LineCompareResultDetails
 from huaweicloudsdkdrs.v3.model.line_compare_result_overview import LineCompareResultOverview
+from huaweicloudsdkdrs.v3.model.list_available_zone_request import ListAvailableZoneRequest
+from huaweicloudsdkdrs.v3.model.list_available_zone_response import ListAvailableZoneResponse
 from huaweicloudsdkdrs.v3.model.list_compare_result_request import ListCompareResultRequest
 from huaweicloudsdkdrs.v3.model.list_compare_result_response import ListCompareResultResponse
 from huaweicloudsdkdrs.v3.model.list_users_request import ListUsersRequest
@@ -135,6 +138,7 @@ from huaweicloudsdkdrs.v3.model.modify_job_req import ModifyJobReq
 from huaweicloudsdkdrs.v3.model.modify_job_resp import ModifyJobResp
 from huaweicloudsdkdrs.v3.model.modify_pwd_end_point import ModifyPwdEndPoint
 from huaweicloudsdkdrs.v3.model.modify_target_params_req import ModifyTargetParamsReq
+from huaweicloudsdkdrs.v3.model.modify_tuning_params_req import ModifyTuningParamsReq
 from huaweicloudsdkdrs.v3.model.object_compare_result import ObjectCompareResult
 from huaweicloudsdkdrs.v3.model.object_compare_result_details import ObjectCompareResultDetails
 from huaweicloudsdkdrs.v3.model.object_compare_result_overview import ObjectCompareResultOverview
@@ -148,6 +152,7 @@ from huaweicloudsdkdrs.v3.model.pre_check_info import PreCheckInfo
 from huaweicloudsdkdrs.v3.model.precheck_fail_sub_job_vo import PrecheckFailSubJobVO
 from huaweicloudsdkdrs.v3.model.precheck_result import PrecheckResult
 from huaweicloudsdkdrs.v3.model.progress_info import ProgressInfo
+from huaweicloudsdkdrs.v3.model.query_available_node_type_req import QueryAvailableNodeTypeReq
 from huaweicloudsdkdrs.v3.model.query_compare_result_req import QueryCompareResultReq
 from huaweicloudsdkdrs.v3.model.query_data_guard_monitor_and_chart_resp import QueryDataGuardMonitorAndChartResp
 from huaweicloudsdkdrs.v3.model.query_data_guard_monitor_response import QueryDataGuardMonitorResponse
@@ -191,9 +196,12 @@ from huaweicloudsdkdrs.v3.model.sync_policy_req import SyncPolicyReq
 from huaweicloudsdkdrs.v3.model.sync_policy_resp import SyncPolicyResp
 from huaweicloudsdkdrs.v3.model.test_end_point import TestEndPoint
 from huaweicloudsdkdrs.v3.model.transformation_info import TransformationInfo
+from huaweicloudsdkdrs.v3.model.tuning_parameter import TuningParameter
 from huaweicloudsdkdrs.v3.model.update_database_object_req import UpdateDatabaseObjectReq
 from huaweicloudsdkdrs.v3.model.update_params_request import UpdateParamsRequest
 from huaweicloudsdkdrs.v3.model.update_params_response import UpdateParamsResponse
+from huaweicloudsdkdrs.v3.model.update_tuning_params_request import UpdateTuningParamsRequest
+from huaweicloudsdkdrs.v3.model.update_tuning_params_response import UpdateTuningParamsResponse
 from huaweicloudsdkdrs.v3.model.update_user_req import UpdateUserReq
 from huaweicloudsdkdrs.v3.model.user_account_vo import UserAccountVO
 from huaweicloudsdkdrs.v3.model.user_role_vo import UserRoleVO

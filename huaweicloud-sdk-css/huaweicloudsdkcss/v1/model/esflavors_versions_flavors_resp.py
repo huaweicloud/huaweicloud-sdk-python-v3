@@ -21,86 +21,71 @@ class EsflavorsVersionsFlavorsResp:
     sensitive_list = []
 
     openapi_types = {
-        'ram': 'int',
         'cpu': 'int',
+        'ram': 'int',
         'name': 'str',
         'region': 'str',
         'diskrange': 'str',
+        'available_az': 'str',
         'flavor_id': 'str'
     }
 
     attribute_map = {
-        'ram': 'ram',
         'cpu': 'cpu',
+        'ram': 'ram',
         'name': 'name',
         'region': 'region',
         'diskrange': 'diskrange',
+        'available_az': 'availableAZ',
         'flavor_id': 'flavor_id'
     }
 
-    def __init__(self, ram=None, cpu=None, name=None, region=None, diskrange=None, flavor_id=None):
+    def __init__(self, cpu=None, ram=None, name=None, region=None, diskrange=None, available_az=None, flavor_id=None):
         """EsflavorsVersionsFlavorsResp
 
         The model defined in huaweicloud sdk
 
-        :param ram: 实例的内存大小。单位GB。
-        :type ram: int
         :param cpu: 实例的CPU核数。
         :type cpu: int
+        :param ram: 实例的内存大小。单位GB。
+        :type ram: int
         :param name: 规格名称。
         :type name: str
         :param region: 可用区域。
         :type region: str
         :param diskrange: 实例的硬盘容量范围。
         :type diskrange: str
+        :param available_az: 可用区。
+        :type available_az: str
         :param flavor_id: 规格对应的ID。
         :type flavor_id: str
         """
         
         
 
-        self._ram = None
         self._cpu = None
+        self._ram = None
         self._name = None
         self._region = None
         self._diskrange = None
+        self._available_az = None
         self._flavor_id = None
         self.discriminator = None
 
-        if ram is not None:
-            self.ram = ram
         if cpu is not None:
             self.cpu = cpu
+        if ram is not None:
+            self.ram = ram
         if name is not None:
             self.name = name
         if region is not None:
             self.region = region
         if diskrange is not None:
             self.diskrange = diskrange
+        if available_az is not None:
+            self.available_az = available_az
         if flavor_id is not None:
             self.flavor_id = flavor_id
-
-    @property
-    def ram(self):
-        """Gets the ram of this EsflavorsVersionsFlavorsResp.
-
-        实例的内存大小。单位GB。
-
-        :return: The ram of this EsflavorsVersionsFlavorsResp.
-        :rtype: int
-        """
-        return self._ram
-
-    @ram.setter
-    def ram(self, ram):
-        """Sets the ram of this EsflavorsVersionsFlavorsResp.
-
-        实例的内存大小。单位GB。
-
-        :param ram: The ram of this EsflavorsVersionsFlavorsResp.
-        :type ram: int
-        """
-        self._ram = ram
 
     @property
     def cpu(self):
@@ -123,6 +108,28 @@ class EsflavorsVersionsFlavorsResp:
         :type cpu: int
         """
         self._cpu = cpu
+
+    @property
+    def ram(self):
+        """Gets the ram of this EsflavorsVersionsFlavorsResp.
+
+        实例的内存大小。单位GB。
+
+        :return: The ram of this EsflavorsVersionsFlavorsResp.
+        :rtype: int
+        """
+        return self._ram
+
+    @ram.setter
+    def ram(self, ram):
+        """Sets the ram of this EsflavorsVersionsFlavorsResp.
+
+        实例的内存大小。单位GB。
+
+        :param ram: The ram of this EsflavorsVersionsFlavorsResp.
+        :type ram: int
+        """
+        self._ram = ram
 
     @property
     def name(self):
@@ -189,6 +196,28 @@ class EsflavorsVersionsFlavorsResp:
         :type diskrange: str
         """
         self._diskrange = diskrange
+
+    @property
+    def available_az(self):
+        """Gets the available_az of this EsflavorsVersionsFlavorsResp.
+
+        可用区。
+
+        :return: The available_az of this EsflavorsVersionsFlavorsResp.
+        :rtype: str
+        """
+        return self._available_az
+
+    @available_az.setter
+    def available_az(self, available_az):
+        """Sets the available_az of this EsflavorsVersionsFlavorsResp.
+
+        可用区。
+
+        :param available_az: The available_az of this EsflavorsVersionsFlavorsResp.
+        :type available_az: str
+        """
+        self._available_az = available_az
 
     @property
     def flavor_id(self):

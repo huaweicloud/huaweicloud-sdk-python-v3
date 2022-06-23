@@ -10,6 +10,7 @@ from huaweicloudsdkcss.v1.model.add_favorite_req_template import AddFavoriteReqT
 from huaweicloudsdkcss.v1.model.add_favorite_request import AddFavoriteRequest
 from huaweicloudsdkcss.v1.model.add_favorite_response import AddFavoriteResponse
 from huaweicloudsdkcss.v1.model.address_and_ports import AddressAndPorts
+from huaweicloudsdkcss.v1.model.backup_rsp import BackupRsp
 from huaweicloudsdkcss.v1.model.batch_add_or_delete_tag_on_cluster_req import BatchAddOrDeleteTagOnClusterReq
 from huaweicloudsdkcss.v1.model.bind_public_req import BindPublicReq
 from huaweicloudsdkcss.v1.model.bind_public_req_eip import BindPublicReqEip
@@ -73,11 +74,13 @@ from huaweicloudsdkcss.v1.model.delete_template_request import DeleteTemplateReq
 from huaweicloudsdkcss.v1.model.delete_template_response import DeleteTemplateResponse
 from huaweicloudsdkcss.v1.model.download_cert_request import DownloadCertRequest
 from huaweicloudsdkcss.v1.model.download_cert_response import DownloadCertResponse
+from huaweicloudsdkcss.v1.model.elb_white_list_resp import ElbWhiteListResp
 from huaweicloudsdkcss.v1.model.esflavors_versions_flavors_resp import EsflavorsVersionsFlavorsResp
 from huaweicloudsdkcss.v1.model.esflavors_versions_resp import EsflavorsVersionsResp
 from huaweicloudsdkcss.v1.model.extend_cluster_grow_req import ExtendClusterGrowReq
 from huaweicloudsdkcss.v1.model.extend_cluster_req import ExtendClusterReq
 from huaweicloudsdkcss.v1.model.get_log_backup_req import GetLogBackupReq
+from huaweicloudsdkcss.v1.model.kibana_elb_white_list_resp import KibanaElbWhiteListResp
 from huaweicloudsdkcss.v1.model.list_actions_request import ListActionsRequest
 from huaweicloudsdkcss.v1.model.list_actions_response import ListActionsResponse
 from huaweicloudsdkcss.v1.model.list_clusters_details_request import ListClustersDetailsRequest
@@ -108,6 +111,7 @@ from huaweicloudsdkcss.v1.model.log_list import LogList
 from huaweicloudsdkcss.v1.model.pay_info_body import PayInfoBody
 from huaweicloudsdkcss.v1.model.period_req import PeriodReq
 from huaweicloudsdkcss.v1.model.pipelines import Pipelines
+from huaweicloudsdkcss.v1.model.public_kibana_resp_body import PublicKibanaRespBody
 from huaweicloudsdkcss.v1.model.reset_password_req import ResetPasswordReq
 from huaweicloudsdkcss.v1.model.reset_password_request import ResetPasswordRequest
 from huaweicloudsdkcss.v1.model.reset_password_response import ResetPasswordResponse

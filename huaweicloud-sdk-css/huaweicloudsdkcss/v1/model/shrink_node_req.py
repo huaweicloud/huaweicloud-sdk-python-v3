@@ -35,9 +35,9 @@ class ShrinkNodeReq:
 
         The model defined in huaweicloud sdk
 
-        :param reduced_node_num: 下线节点个数。 没有Master节点的集群，缩容后剩余的数据节点个数(包含冷数据节点和其他类型节点)须大于之前的一半。 有Master节点的集群，缩容后Master节点的总数须为大于等于3的奇数。 跨AZ的集群，缩容后须确保剩余的节点个数大等于AZ个数。
+        :param reduced_node_num: 需要缩容的节点数量。  - 请确保缩容后的集群在每个节点类型中每个AZ的节点数至少为1。  - 关于跨AZ的集群，在不同AZ中同类型节点个数的差值要小于等于1。  - 关于没有Master节点的集群，每次缩容的数据节点个数(包含冷数据节点和其他类型节点)要小于当前数据节点总数的一半，缩容后的数据节点个数要大于索引的最大副本个数。  - 关于有Master节点的集群，每次缩容的Master节点个数要小于当前Master节点总数的一半，缩容后的Master节点个数必须是奇数且不小于3。
         :type reduced_node_num: int
-        :param type: 下线节点类型。（ess、ess-master、ess-client、ess-cold、lgs）
+        :param type: 指定节点类型。 - ess：数据节点。 - ess-cold：冷数据节点。 - ess-client：Client节点。 - ess-master：Master节点。
         :type type: str
         """
         
@@ -54,7 +54,7 @@ class ShrinkNodeReq:
     def reduced_node_num(self):
         """Gets the reduced_node_num of this ShrinkNodeReq.
 
-        下线节点个数。 没有Master节点的集群，缩容后剩余的数据节点个数(包含冷数据节点和其他类型节点)须大于之前的一半。 有Master节点的集群，缩容后Master节点的总数须为大于等于3的奇数。 跨AZ的集群，缩容后须确保剩余的节点个数大等于AZ个数。
+        需要缩容的节点数量。  - 请确保缩容后的集群在每个节点类型中每个AZ的节点数至少为1。  - 关于跨AZ的集群，在不同AZ中同类型节点个数的差值要小于等于1。  - 关于没有Master节点的集群，每次缩容的数据节点个数(包含冷数据节点和其他类型节点)要小于当前数据节点总数的一半，缩容后的数据节点个数要大于索引的最大副本个数。  - 关于有Master节点的集群，每次缩容的Master节点个数要小于当前Master节点总数的一半，缩容后的Master节点个数必须是奇数且不小于3。
 
         :return: The reduced_node_num of this ShrinkNodeReq.
         :rtype: int
@@ -65,7 +65,7 @@ class ShrinkNodeReq:
     def reduced_node_num(self, reduced_node_num):
         """Sets the reduced_node_num of this ShrinkNodeReq.
 
-        下线节点个数。 没有Master节点的集群，缩容后剩余的数据节点个数(包含冷数据节点和其他类型节点)须大于之前的一半。 有Master节点的集群，缩容后Master节点的总数须为大于等于3的奇数。 跨AZ的集群，缩容后须确保剩余的节点个数大等于AZ个数。
+        需要缩容的节点数量。  - 请确保缩容后的集群在每个节点类型中每个AZ的节点数至少为1。  - 关于跨AZ的集群，在不同AZ中同类型节点个数的差值要小于等于1。  - 关于没有Master节点的集群，每次缩容的数据节点个数(包含冷数据节点和其他类型节点)要小于当前数据节点总数的一半，缩容后的数据节点个数要大于索引的最大副本个数。  - 关于有Master节点的集群，每次缩容的Master节点个数要小于当前Master节点总数的一半，缩容后的Master节点个数必须是奇数且不小于3。
 
         :param reduced_node_num: The reduced_node_num of this ShrinkNodeReq.
         :type reduced_node_num: int
@@ -76,7 +76,7 @@ class ShrinkNodeReq:
     def type(self):
         """Gets the type of this ShrinkNodeReq.
 
-        下线节点类型。（ess、ess-master、ess-client、ess-cold、lgs）
+        指定节点类型。 - ess：数据节点。 - ess-cold：冷数据节点。 - ess-client：Client节点。 - ess-master：Master节点。
 
         :return: The type of this ShrinkNodeReq.
         :rtype: str
@@ -87,7 +87,7 @@ class ShrinkNodeReq:
     def type(self, type):
         """Sets the type of this ShrinkNodeReq.
 
-        下线节点类型。（ess、ess-master、ess-client、ess-cold、lgs）
+        指定节点类型。 - ess：数据节点。 - ess-cold：冷数据节点。 - ess-client：Client节点。 - ess-master：Master节点。
 
         :param type: The type of this ShrinkNodeReq.
         :type type: str

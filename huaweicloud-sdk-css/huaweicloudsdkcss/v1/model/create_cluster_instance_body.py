@@ -60,8 +60,7 @@ class CreateClusterInstanceBody:
         self.flavor_ref = flavor_ref
         self.volume = volume
         self.nics = nics
-        if availability_zone is not None:
-            self.availability_zone = availability_zone
+        self.availability_zone = availability_zone
 
     @property
     def flavor_ref(self):

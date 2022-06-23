@@ -35,7 +35,7 @@ class UpdateYmlsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待更改的集群ID。
+        :param cluster_id: 指定修改参数配置的集群ID。
         :type cluster_id: str
         :param body: Body of the UpdateYmlsRequest
         :type body: :class:`huaweicloudsdkcss.v1.UpdateYmlsReq`
@@ -55,7 +55,7 @@ class UpdateYmlsRequest:
     def cluster_id(self):
         """Gets the cluster_id of this UpdateYmlsRequest.
 
-        指定待更改的集群ID。
+        指定修改参数配置的集群ID。
 
         :return: The cluster_id of this UpdateYmlsRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateYmlsRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this UpdateYmlsRequest.
 
-        指定待更改的集群ID。
+        指定修改参数配置的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateYmlsRequest.
         :type cluster_id: str

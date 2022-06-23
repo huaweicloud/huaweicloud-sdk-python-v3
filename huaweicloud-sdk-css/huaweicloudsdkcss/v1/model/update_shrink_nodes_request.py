@@ -35,7 +35,7 @@ class UpdateShrinkNodesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待更改的集群ID。
+        :param cluster_id: 指定待缩容的集群ID。
         :type cluster_id: str
         :param body: Body of the UpdateShrinkNodesRequest
         :type body: :class:`huaweicloudsdkcss.v1.ShrinkNodesReq`
@@ -55,7 +55,7 @@ class UpdateShrinkNodesRequest:
     def cluster_id(self):
         """Gets the cluster_id of this UpdateShrinkNodesRequest.
 
-        指定待更改的集群ID。
+        指定待缩容的集群ID。
 
         :return: The cluster_id of this UpdateShrinkNodesRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateShrinkNodesRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this UpdateShrinkNodesRequest.
 
-        指定待更改的集群ID。
+        指定待缩容的集群ID。
 
         :param cluster_id: The cluster_id of this UpdateShrinkNodesRequest.
         :type cluster_id: str

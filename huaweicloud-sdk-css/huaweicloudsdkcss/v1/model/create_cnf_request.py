@@ -35,7 +35,7 @@ class CreateCnfRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待创建的集群ID。
+        :param cluster_id: 指定创建配置文件的集群ID。
         :type cluster_id: str
         :param body: Body of the CreateCnfRequest
         :type body: :class:`huaweicloudsdkcss.v1.CreateCnfReq`
@@ -55,7 +55,7 @@ class CreateCnfRequest:
     def cluster_id(self):
         """Gets the cluster_id of this CreateCnfRequest.
 
-        指定待创建的集群ID。
+        指定创建配置文件的集群ID。
 
         :return: The cluster_id of this CreateCnfRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class CreateCnfRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this CreateCnfRequest.
 
-        指定待创建的集群ID。
+        指定创建配置文件的集群ID。
 
         :param cluster_id: The cluster_id of this CreateCnfRequest.
         :type cluster_id: str

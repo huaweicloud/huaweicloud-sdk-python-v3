@@ -1,4 +1,109 @@
-# 3.0.93 2022-06-23
+# 3.0.94 2022-06-23
+
+### HuaweiCloud SDK Core
+
+- _Features_
+  - Support configuring custom regions
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - Support Data Lake Insight service.
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CSE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `UploadKie`:
+    - Add the request parameter `upload_file`
+    - Remove the request parameter `UploadFile`
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateCluster`:
+    - Add the request parameters `httpsEnable`, `authorityEnable`, `adminPwd`
+    - The request parameter `availability_zone` changed to required
+  - Changes of the interface `ListClustersDetails`:
+    - Add the response parameters `publicKibanaResp`, `elbWhiteList`, `publicIp`, `bandwidthSize`, `diskEncrypted`, `backupAvailable`, `enterpriseProjectId`, `ip`
+    - Remove the response parameter `enterprise_project_id`
+  - Remove the request parameter `X-Auth-Token` from the interface `DeleteCluster`
+  - Changes of the interface `ShowClusterDetail`:
+    - Add the response parameters `publicKibanaResp`, `elbWhiteList`, `publicIp`, `vpcId`, `subnetId`, `securityGroupId`, `bandwidthSize`, `diskEncrypted`, `backupAvailable`, `enterpriseProjectId`, `period`, `ip`
+    - Remove the response parameter `enterprise_project_id`
+  - Changes of the interface `ListFlavors`:
+    - Add the response parameters `type`, `availableAZ`
+  - Changes of the interface `StartVpecp`:
+    - Modify the type `string` -> `boolean` of the request parameter `endpointWithDnsName`
+  - Changes of the interface `CreateCluster`:
+    - Add the request parameter `payInfo`
+    - Add the response parameter `cluster`
+    - Remove the response parameter `schema`
+  - Changes of the interface `RestartCluster`:
+    - Add the request parameter `RestartClusterRequestBody`
+    - Remove the request parameters `X-Auth-Token`, `RollingRestartReq`
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - Support the interfaces `ListAvailableZone`, `UpdateTuningParams`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `master_az`, `slave_az` to the interface `BatchCreateJobs`
+  - Add the request parameter `slot_name` to the interface `BatchSetPolicy`
+
+### HuaweiCloud SDK ELB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListQuotaDetails`:
+    - Add the request parameter `quota_key`
+    - Remove the request parameter `type`
+  - Changes of the interface `ListListeners`:
+    - Add the request parameters `loadbalancer_id`, `connection_limit`, `admin_state_up`, `http2_enable`, `enterprise_project_id`
+    - Remove the request parameters `member_timeout`, `client_timeout`, `keepalive_timeout`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `subnet_id` to the interface `ListInstances`
+  - Add the request parameter `subnet_id` to the interface `ExpandInstanceNode`
+
+### HuaweiCloud SDK VSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `AuthorizeDomains`:
+    - Add the response parameter `usage_notice`
+    - Add the enum values `free` to the request parameter `auth_mode`
+
+# 3.0.93 2022-06-19
 
 ### HuaweiCloud SDK AOM
 

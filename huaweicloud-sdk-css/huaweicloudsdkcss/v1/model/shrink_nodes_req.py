@@ -33,7 +33,7 @@ class ShrinkNodesReq:
 
         The model defined in huaweicloud sdk
 
-        :param shrink_nodes: 需要下线的节点ID。
+        :param shrink_nodes: 需要缩容的节点ID。  通过[查询集群详情](ShowClusterDetail.xml)获取instances中的id属性。
         :type shrink_nodes: list[str]
         """
         
@@ -48,7 +48,7 @@ class ShrinkNodesReq:
     def shrink_nodes(self):
         """Gets the shrink_nodes of this ShrinkNodesReq.
 
-        需要下线的节点ID。
+        需要缩容的节点ID。  通过[查询集群详情](ShowClusterDetail.xml)获取instances中的id属性。
 
         :return: The shrink_nodes of this ShrinkNodesReq.
         :rtype: list[str]
@@ -59,7 +59,7 @@ class ShrinkNodesReq:
     def shrink_nodes(self, shrink_nodes):
         """Sets the shrink_nodes of this ShrinkNodesReq.
 
-        需要下线的节点ID。
+        需要缩容的节点ID。  通过[查询集群详情](ShowClusterDetail.xml)获取instances中的id属性。
 
         :param shrink_nodes: The shrink_nodes of this ShrinkNodesReq.
         :type shrink_nodes: list[str]

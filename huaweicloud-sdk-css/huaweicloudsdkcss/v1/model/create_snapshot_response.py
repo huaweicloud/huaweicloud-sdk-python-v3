@@ -21,109 +21,49 @@ class CreateSnapshotResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
-        'description': 'str',
-        'indices': 'str'
+        'backup': 'BackupRsp'
     }
 
     attribute_map = {
-        'name': 'name',
-        'description': 'description',
-        'indices': 'indices'
+        'backup': 'backup'
     }
 
-    def __init__(self, name=None, description=None, indices=None):
+    def __init__(self, backup=None):
         """CreateSnapshotResponse
 
         The model defined in huaweicloud sdk
 
-        :param name: 快照名称。
-        :type name: str
-        :param description: 快照描述。
-        :type description: str
-        :param indices: 指定要备份的索引名称。
-        :type indices: str
+        :param backup: 
+        :type backup: :class:`huaweicloudsdkcss.v1.BackupRsp`
         """
         
         super(CreateSnapshotResponse, self).__init__()
 
-        self._name = None
-        self._description = None
-        self._indices = None
+        self._backup = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if description is not None:
-            self.description = description
-        if indices is not None:
-            self.indices = indices
+        if backup is not None:
+            self.backup = backup
 
     @property
-    def name(self):
-        """Gets the name of this CreateSnapshotResponse.
+    def backup(self):
+        """Gets the backup of this CreateSnapshotResponse.
 
-        快照名称。
 
-        :return: The name of this CreateSnapshotResponse.
-        :rtype: str
+        :return: The backup of this CreateSnapshotResponse.
+        :rtype: :class:`huaweicloudsdkcss.v1.BackupRsp`
         """
-        return self._name
+        return self._backup
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this CreateSnapshotResponse.
+    @backup.setter
+    def backup(self, backup):
+        """Sets the backup of this CreateSnapshotResponse.
 
-        快照名称。
 
-        :param name: The name of this CreateSnapshotResponse.
-        :type name: str
+        :param backup: The backup of this CreateSnapshotResponse.
+        :type backup: :class:`huaweicloudsdkcss.v1.BackupRsp`
         """
-        self._name = name
-
-    @property
-    def description(self):
-        """Gets the description of this CreateSnapshotResponse.
-
-        快照描述。
-
-        :return: The description of this CreateSnapshotResponse.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description):
-        """Sets the description of this CreateSnapshotResponse.
-
-        快照描述。
-
-        :param description: The description of this CreateSnapshotResponse.
-        :type description: str
-        """
-        self._description = description
-
-    @property
-    def indices(self):
-        """Gets the indices of this CreateSnapshotResponse.
-
-        指定要备份的索引名称。
-
-        :return: The indices of this CreateSnapshotResponse.
-        :rtype: str
-        """
-        return self._indices
-
-    @indices.setter
-    def indices(self, indices):
-        """Sets the indices of this CreateSnapshotResponse.
-
-        指定要备份的索引名称。
-
-        :param indices: The indices of this CreateSnapshotResponse.
-        :type indices: str
-        """
-        self._indices = indices
+        self._backup = backup
 
     def to_dict(self):
         """Returns the model properties as a dict"""

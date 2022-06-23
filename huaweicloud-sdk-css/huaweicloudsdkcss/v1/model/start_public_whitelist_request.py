@@ -35,7 +35,7 @@ class StartPublicWhitelistRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定查询集群ID。
+        :param cluster_id: 指定开启公网访问控制白名单集群ID。
         :type cluster_id: str
         :param body: Body of the StartPublicWhitelistRequest
         :type body: :class:`huaweicloudsdkcss.v1.StartPublicWhitelistReq`
@@ -55,7 +55,7 @@ class StartPublicWhitelistRequest:
     def cluster_id(self):
         """Gets the cluster_id of this StartPublicWhitelistRequest.
 
-        指定查询集群ID。
+        指定开启公网访问控制白名单集群ID。
 
         :return: The cluster_id of this StartPublicWhitelistRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class StartPublicWhitelistRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this StartPublicWhitelistRequest.
 
-        指定查询集群ID。
+        指定开启公网访问控制白名单集群ID。
 
         :param cluster_id: The cluster_id of this StartPublicWhitelistRequest.
         :type cluster_id: str

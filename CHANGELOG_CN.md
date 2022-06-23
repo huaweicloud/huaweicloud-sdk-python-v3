@@ -1,4 +1,108 @@
-# 3.0.93 2022-06-23
+# 3.0.94 2022-06-23
+
+### HuaweiCloud SDK Core
+
+- _新增特性_
+  - 支持自定义配置Region
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 支持数据湖探索服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CSE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UploadKie`:
+    - 新增请求参数 `upload_file`
+    - 移除请求参数 `UploadFile`
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateCluster`:
+    - 新增请求参数 `httpsEnable`、`authorityEnable`、`adminPwd`
+    - 请求参数`availability_zone`改为必填
+  - 接口`ListClustersDetails`:
+    - 新增响应参数 `publicKibanaResp`、`elbWhiteList`、`publicIp`、`bandwidthSize`、`diskEncrypted`、`backupAvailable`、`enterpriseProjectId`、`ip`
+    - 移除响应参数 `enterprise_project_id`
+  - 接口`ShowClusterDetail`:
+    - 新增响应参数 `publicKibanaResp`、`elbWhiteList`、`publicIp`、`vpcId`、`subnetId`、`securityGroupId`、`bandwidthSize`、`diskEncrypted`、`backupAvailable`、`enterpriseProjectId`、`period`、`ip`
+    - 移除响应参数 `enterprise_project_id`
+  - 接口`ListFlavors`:
+    - 新增响应参数 `type`、`availableAZ`
+  - 接口`StartVpecp`:
+    - 请求参数`endpointWithDnsName`类型调整 `string` -> `boolean`
+  - 接口`CreateCluster`:
+    - 新增请求参数 `payInfo`
+    - 新增响应参数 `cluster`
+    - 移除响应参数 `schema`
+  - 接口`RestartCluster`:
+    - 新增请求参数 `RestartClusterRequestBody`
+    - 移除请求参数 `X-Auth-Token`、`RollingRestartReq`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 支持接口`ListAvailableZone`、`UpdateTuningParams`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`BatchCreateJobs`新增请求参数 `master_az`、`slave_az`
+  - 接口`BatchSetPolicy`新增请求参数 `slot_name`
+
+### HuaweiCloud SDK ELB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListQuotaDetails`:
+    - 新增请求参数 `quota_key`
+    - 移除请求参数 `type`
+  - 接口`ListListeners`:
+    - 新增请求参数 `loadbalancer_id`、`connection_limit`、`admin_state_up`、`http2_enable`、`enterprise_project_id`
+    - 移除请求参数 `member_timeout`、`client_timeout`、`keepalive_timeout`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`新增响应参数 `subnet_id`
+  - 接口`ExpandInstanceNode`新增请求参数 `subnet_id`
+
+### HuaweiCloud SDK VSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`AuthorizeDomains`:
+    - 新增响应参数 `usage_notice`
+    - 请求参数`auth_mode`新增枚举值`free`
+
+# 3.0.93 2022-06-19
 
 ### HuaweiCloud SDK AOM
 

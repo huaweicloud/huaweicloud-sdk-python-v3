@@ -35,7 +35,7 @@ class RollingRestartRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待查询的集群ID。
+        :param cluster_id: 指定重启集群ID。
         :type cluster_id: str
         :param body: Body of the RollingRestartRequest
         :type body: :class:`huaweicloudsdkcss.v2.RollingRestartReq`
@@ -55,7 +55,7 @@ class RollingRestartRequest:
     def cluster_id(self):
         """Gets the cluster_id of this RollingRestartRequest.
 
-        指定待查询的集群ID。
+        指定重启集群ID。
 
         :return: The cluster_id of this RollingRestartRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class RollingRestartRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this RollingRestartRequest.
 
-        指定待查询的集群ID。
+        指定重启集群ID。
 
         :param cluster_id: The cluster_id of this RollingRestartRequest.
         :type cluster_id: str

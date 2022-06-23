@@ -37,7 +37,7 @@ class BatchAddOrDeleteTagOnClusterReq:
 
         The model defined in huaweicloud sdk
 
-        :param action: 操作类型。 说明：通过该属性标识当前所需的操作类型。 - create：批量添加标签。 - delete：批量删除标签。
+        :param action: 操作类型。通过该属性标识当前所需的操作类型。  - create：批量添加标签。 - delete：批量删除标签。
         :type action: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkcss.v1.Tag`]
@@ -61,7 +61,7 @@ class BatchAddOrDeleteTagOnClusterReq:
     def action(self):
         """Gets the action of this BatchAddOrDeleteTagOnClusterReq.
 
-        操作类型。 说明：通过该属性标识当前所需的操作类型。 - create：批量添加标签。 - delete：批量删除标签。
+        操作类型。通过该属性标识当前所需的操作类型。  - create：批量添加标签。 - delete：批量删除标签。
 
         :return: The action of this BatchAddOrDeleteTagOnClusterReq.
         :rtype: str
@@ -72,7 +72,7 @@ class BatchAddOrDeleteTagOnClusterReq:
     def action(self, action):
         """Sets the action of this BatchAddOrDeleteTagOnClusterReq.
 
-        操作类型。 说明：通过该属性标识当前所需的操作类型。 - create：批量添加标签。 - delete：批量删除标签。
+        操作类型。通过该属性标识当前所需的操作类型。  - create：批量添加标签。 - delete：批量删除标签。
 
         :param action: The action of this BatchAddOrDeleteTagOnClusterReq.
         :type action: str

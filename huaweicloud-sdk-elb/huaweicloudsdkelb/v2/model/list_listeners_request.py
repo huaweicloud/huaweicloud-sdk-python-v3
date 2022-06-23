@@ -27,16 +27,18 @@ class ListListenersRequest:
         'id': 'str',
         'name': 'str',
         'description': 'str',
+        'loadbalancer_id': 'str',
+        'connection_limit': 'int',
+        'admin_state_up': 'bool',
         'default_pool_id': 'str',
         'default_tls_container_ref': 'str',
         'client_ca_tls_container_ref': 'str',
         'protocol': 'str',
         'protocol_port': 'int',
         'tls_ciphers_policy': 'str',
-        'member_timeout': 'int',
-        'client_timeout': 'int',
-        'keepalive_timeout': 'int',
-        'tls_container_id': 'str'
+        'tls_container_id': 'str',
+        'http2_enable': 'bool',
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -46,19 +48,21 @@ class ListListenersRequest:
         'id': 'id',
         'name': 'name',
         'description': 'description',
+        'loadbalancer_id': 'loadbalancer_id',
+        'connection_limit': 'connection_limit',
+        'admin_state_up': 'admin_state_up',
         'default_pool_id': 'default_pool_id',
         'default_tls_container_ref': 'default_tls_container_ref',
         'client_ca_tls_container_ref': 'client_ca_tls_container_ref',
         'protocol': 'protocol',
         'protocol_port': 'protocol_port',
         'tls_ciphers_policy': 'tls_ciphers_policy',
-        'member_timeout': 'member_timeout',
-        'client_timeout': 'client_timeout',
-        'keepalive_timeout': 'keepalive_timeout',
-        'tls_container_id': 'tls_container_id'
+        'tls_container_id': 'tls_container_id',
+        'http2_enable': 'http2_enable',
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, limit=None, marker=None, page_reverse=None, id=None, name=None, description=None, default_pool_id=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, protocol=None, protocol_port=None, tls_ciphers_policy=None, member_timeout=None, client_timeout=None, keepalive_timeout=None, tls_container_id=None):
+    def __init__(self, limit=None, marker=None, page_reverse=None, id=None, name=None, description=None, loadbalancer_id=None, connection_limit=None, admin_state_up=None, default_pool_id=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, protocol=None, protocol_port=None, tls_ciphers_policy=None, tls_container_id=None, http2_enable=None, enterprise_project_id=None):
         """ListListenersRequest
 
         The model defined in huaweicloud sdk
@@ -75,6 +79,12 @@ class ListListenersRequest:
         :type name: str
         :param description: 监听器的描述信息。
         :type description: str
+        :param loadbalancer_id: 监听器所在的负载均衡器ID。
+        :type loadbalancer_id: str
+        :param connection_limit: 监听器的最大连接数。
+        :type connection_limit: int
+        :param admin_state_up: 监听器的管理状态。该字段为预留字段，暂未启用。默认为true。
+        :type admin_state_up: bool
         :param default_pool_id: 监听器的默认后端云服务器组ID。
         :type default_pool_id: str
         :param default_tls_container_ref: 监听器使用的服务器证书ID。
@@ -87,14 +97,12 @@ class ListListenersRequest:
         :type protocol_port: int
         :param tls_ciphers_policy: 监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效，且默认值为tls-1-0。取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict四种安全策略。
         :type tls_ciphers_policy: str
-        :param member_timeout: 等待后端服务器请求超时时间，协议为HTTP， TERMINATED_HTTPS时才有意义。取值范围 1-300
-        :type member_timeout: int
-        :param client_timeout: 等待客户端请求超时时间，协议为HTTP， TERMINATED_HTTPS的监听器才有意义。取值范围 1-60
-        :type client_timeout: int
-        :param keepalive_timeout: TCP监听器配置空闲超时时间，取值范围为（10-900s）默认值为300s，TCP监听器配置空闲超时时间，取值范围为（10-900s）默认值为300s，HTTP/TERMINATED_HTTPS监听器为客户端连接空闲超时时间，取值范围为（1-300s）默认值为15s。 UDP此字段无意义
-        :type keepalive_timeout: int
         :param tls_container_id: 查询证书所关联的监听器
         :type tls_container_id: str
+        :param http2_enable: HTTP2功能的开启状态。取值范围：true/false。true：开启。false：关闭。
+        :type http2_enable: bool
+        :param enterprise_project_id: 企业项目ID，仅用于基于企业项目的细粒度鉴权使用。 - 如果参数传递default_pool_id，则以pool对应的企业项目ID鉴权。 - 如果default_pool_id和enterprise_project_id都没有传递 ，则进行细粒度鉴权 ，必须在用户
+        :type enterprise_project_id: str
         """
         
         
@@ -105,16 +113,18 @@ class ListListenersRequest:
         self._id = None
         self._name = None
         self._description = None
+        self._loadbalancer_id = None
+        self._connection_limit = None
+        self._admin_state_up = None
         self._default_pool_id = None
         self._default_tls_container_ref = None
         self._client_ca_tls_container_ref = None
         self._protocol = None
         self._protocol_port = None
         self._tls_ciphers_policy = None
-        self._member_timeout = None
-        self._client_timeout = None
-        self._keepalive_timeout = None
         self._tls_container_id = None
+        self._http2_enable = None
+        self._enterprise_project_id = None
         self.discriminator = None
 
         if limit is not None:
@@ -129,6 +139,12 @@ class ListListenersRequest:
             self.name = name
         if description is not None:
             self.description = description
+        if loadbalancer_id is not None:
+            self.loadbalancer_id = loadbalancer_id
+        if connection_limit is not None:
+            self.connection_limit = connection_limit
+        if admin_state_up is not None:
+            self.admin_state_up = admin_state_up
         if default_pool_id is not None:
             self.default_pool_id = default_pool_id
         if default_tls_container_ref is not None:
@@ -141,14 +157,12 @@ class ListListenersRequest:
             self.protocol_port = protocol_port
         if tls_ciphers_policy is not None:
             self.tls_ciphers_policy = tls_ciphers_policy
-        if member_timeout is not None:
-            self.member_timeout = member_timeout
-        if client_timeout is not None:
-            self.client_timeout = client_timeout
-        if keepalive_timeout is not None:
-            self.keepalive_timeout = keepalive_timeout
         if tls_container_id is not None:
             self.tls_container_id = tls_container_id
+        if http2_enable is not None:
+            self.http2_enable = http2_enable
+        if enterprise_project_id is not None:
+            self.enterprise_project_id = enterprise_project_id
 
     @property
     def limit(self):
@@ -283,6 +297,72 @@ class ListListenersRequest:
         self._description = description
 
     @property
+    def loadbalancer_id(self):
+        """Gets the loadbalancer_id of this ListListenersRequest.
+
+        监听器所在的负载均衡器ID。
+
+        :return: The loadbalancer_id of this ListListenersRequest.
+        :rtype: str
+        """
+        return self._loadbalancer_id
+
+    @loadbalancer_id.setter
+    def loadbalancer_id(self, loadbalancer_id):
+        """Sets the loadbalancer_id of this ListListenersRequest.
+
+        监听器所在的负载均衡器ID。
+
+        :param loadbalancer_id: The loadbalancer_id of this ListListenersRequest.
+        :type loadbalancer_id: str
+        """
+        self._loadbalancer_id = loadbalancer_id
+
+    @property
+    def connection_limit(self):
+        """Gets the connection_limit of this ListListenersRequest.
+
+        监听器的最大连接数。
+
+        :return: The connection_limit of this ListListenersRequest.
+        :rtype: int
+        """
+        return self._connection_limit
+
+    @connection_limit.setter
+    def connection_limit(self, connection_limit):
+        """Sets the connection_limit of this ListListenersRequest.
+
+        监听器的最大连接数。
+
+        :param connection_limit: The connection_limit of this ListListenersRequest.
+        :type connection_limit: int
+        """
+        self._connection_limit = connection_limit
+
+    @property
+    def admin_state_up(self):
+        """Gets the admin_state_up of this ListListenersRequest.
+
+        监听器的管理状态。该字段为预留字段，暂未启用。默认为true。
+
+        :return: The admin_state_up of this ListListenersRequest.
+        :rtype: bool
+        """
+        return self._admin_state_up
+
+    @admin_state_up.setter
+    def admin_state_up(self, admin_state_up):
+        """Sets the admin_state_up of this ListListenersRequest.
+
+        监听器的管理状态。该字段为预留字段，暂未启用。默认为true。
+
+        :param admin_state_up: The admin_state_up of this ListListenersRequest.
+        :type admin_state_up: bool
+        """
+        self._admin_state_up = admin_state_up
+
+    @property
     def default_pool_id(self):
         """Gets the default_pool_id of this ListListenersRequest.
 
@@ -415,72 +495,6 @@ class ListListenersRequest:
         self._tls_ciphers_policy = tls_ciphers_policy
 
     @property
-    def member_timeout(self):
-        """Gets the member_timeout of this ListListenersRequest.
-
-        等待后端服务器请求超时时间，协议为HTTP， TERMINATED_HTTPS时才有意义。取值范围 1-300
-
-        :return: The member_timeout of this ListListenersRequest.
-        :rtype: int
-        """
-        return self._member_timeout
-
-    @member_timeout.setter
-    def member_timeout(self, member_timeout):
-        """Sets the member_timeout of this ListListenersRequest.
-
-        等待后端服务器请求超时时间，协议为HTTP， TERMINATED_HTTPS时才有意义。取值范围 1-300
-
-        :param member_timeout: The member_timeout of this ListListenersRequest.
-        :type member_timeout: int
-        """
-        self._member_timeout = member_timeout
-
-    @property
-    def client_timeout(self):
-        """Gets the client_timeout of this ListListenersRequest.
-
-        等待客户端请求超时时间，协议为HTTP， TERMINATED_HTTPS的监听器才有意义。取值范围 1-60
-
-        :return: The client_timeout of this ListListenersRequest.
-        :rtype: int
-        """
-        return self._client_timeout
-
-    @client_timeout.setter
-    def client_timeout(self, client_timeout):
-        """Sets the client_timeout of this ListListenersRequest.
-
-        等待客户端请求超时时间，协议为HTTP， TERMINATED_HTTPS的监听器才有意义。取值范围 1-60
-
-        :param client_timeout: The client_timeout of this ListListenersRequest.
-        :type client_timeout: int
-        """
-        self._client_timeout = client_timeout
-
-    @property
-    def keepalive_timeout(self):
-        """Gets the keepalive_timeout of this ListListenersRequest.
-
-        TCP监听器配置空闲超时时间，取值范围为（10-900s）默认值为300s，TCP监听器配置空闲超时时间，取值范围为（10-900s）默认值为300s，HTTP/TERMINATED_HTTPS监听器为客户端连接空闲超时时间，取值范围为（1-300s）默认值为15s。 UDP此字段无意义
-
-        :return: The keepalive_timeout of this ListListenersRequest.
-        :rtype: int
-        """
-        return self._keepalive_timeout
-
-    @keepalive_timeout.setter
-    def keepalive_timeout(self, keepalive_timeout):
-        """Sets the keepalive_timeout of this ListListenersRequest.
-
-        TCP监听器配置空闲超时时间，取值范围为（10-900s）默认值为300s，TCP监听器配置空闲超时时间，取值范围为（10-900s）默认值为300s，HTTP/TERMINATED_HTTPS监听器为客户端连接空闲超时时间，取值范围为（1-300s）默认值为15s。 UDP此字段无意义
-
-        :param keepalive_timeout: The keepalive_timeout of this ListListenersRequest.
-        :type keepalive_timeout: int
-        """
-        self._keepalive_timeout = keepalive_timeout
-
-    @property
     def tls_container_id(self):
         """Gets the tls_container_id of this ListListenersRequest.
 
@@ -501,6 +515,50 @@ class ListListenersRequest:
         :type tls_container_id: str
         """
         self._tls_container_id = tls_container_id
+
+    @property
+    def http2_enable(self):
+        """Gets the http2_enable of this ListListenersRequest.
+
+        HTTP2功能的开启状态。取值范围：true/false。true：开启。false：关闭。
+
+        :return: The http2_enable of this ListListenersRequest.
+        :rtype: bool
+        """
+        return self._http2_enable
+
+    @http2_enable.setter
+    def http2_enable(self, http2_enable):
+        """Sets the http2_enable of this ListListenersRequest.
+
+        HTTP2功能的开启状态。取值范围：true/false。true：开启。false：关闭。
+
+        :param http2_enable: The http2_enable of this ListListenersRequest.
+        :type http2_enable: bool
+        """
+        self._http2_enable = http2_enable
+
+    @property
+    def enterprise_project_id(self):
+        """Gets the enterprise_project_id of this ListListenersRequest.
+
+        企业项目ID，仅用于基于企业项目的细粒度鉴权使用。 - 如果参数传递default_pool_id，则以pool对应的企业项目ID鉴权。 - 如果default_pool_id和enterprise_project_id都没有传递 ，则进行细粒度鉴权 ，必须在用户
+
+        :return: The enterprise_project_id of this ListListenersRequest.
+        :rtype: str
+        """
+        return self._enterprise_project_id
+
+    @enterprise_project_id.setter
+    def enterprise_project_id(self, enterprise_project_id):
+        """Sets the enterprise_project_id of this ListListenersRequest.
+
+        企业项目ID，仅用于基于企业项目的细粒度鉴权使用。 - 如果参数传递default_pool_id，则以pool对应的企业项目ID鉴权。 - 如果default_pool_id和enterprise_project_id都没有传递 ，则进行细粒度鉴权 ，必须在用户
+
+        :param enterprise_project_id: The enterprise_project_id of this ListListenersRequest.
+        :type enterprise_project_id: str
+        """
+        self._enterprise_project_id = enterprise_project_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

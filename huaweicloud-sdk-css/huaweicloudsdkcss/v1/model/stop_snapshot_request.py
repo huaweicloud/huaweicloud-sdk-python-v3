@@ -33,7 +33,7 @@ class StopSnapshotRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 快照所属的集群的ID。
+        :param cluster_id: 停用快照所属的集群的ID。
         :type cluster_id: str
         """
         
@@ -48,7 +48,7 @@ class StopSnapshotRequest:
     def cluster_id(self):
         """Gets the cluster_id of this StopSnapshotRequest.
 
-        快照所属的集群的ID。
+        停用快照所属的集群的ID。
 
         :return: The cluster_id of this StopSnapshotRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class StopSnapshotRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this StopSnapshotRequest.
 
-        快照所属的集群的ID。
+        停用快照所属的集群的ID。
 
         :param cluster_id: The cluster_id of this StopSnapshotRequest.
         :type cluster_id: str

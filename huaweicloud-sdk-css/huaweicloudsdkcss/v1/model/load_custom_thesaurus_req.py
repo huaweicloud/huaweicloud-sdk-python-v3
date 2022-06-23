@@ -41,7 +41,7 @@ class LoadCustomThesaurusReq:
 
         :param bucket_name: 词库文件存放的OBS桶（桶类型必须为标准存储或者低频存储，不支持归档存储）。
         :type bucket_name: str
-        :param main_object: 主词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持100M。  mainObject, stopObject, synonymObject三个参数至少要填写一个。 说明：一次只能加载一个主词库，不支持同时加载多个主词库。
+        :param main_object: 主词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持100M。 mainObject, stopObject, synonymObject三个参数至少要填写一个。  &gt;一次只能加载一个主词库，不支持同时加载多个主词库。
         :type main_object: str
         :param stop_object: 停词词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持20M。  mainObject, stopObject, synonymObject三个参数至少要填写一个。
         :type stop_object: str
@@ -88,7 +88,7 @@ class LoadCustomThesaurusReq:
     def main_object(self):
         """Gets the main_object of this LoadCustomThesaurusReq.
 
-        主词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持100M。  mainObject, stopObject, synonymObject三个参数至少要填写一个。 说明：一次只能加载一个主词库，不支持同时加载多个主词库。
+        主词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持100M。 mainObject, stopObject, synonymObject三个参数至少要填写一个。  >一次只能加载一个主词库，不支持同时加载多个主词库。
 
         :return: The main_object of this LoadCustomThesaurusReq.
         :rtype: str
@@ -99,7 +99,7 @@ class LoadCustomThesaurusReq:
     def main_object(self, main_object):
         """Sets the main_object of this LoadCustomThesaurusReq.
 
-        主词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持100M。  mainObject, stopObject, synonymObject三个参数至少要填写一个。 说明：一次只能加载一个主词库，不支持同时加载多个主词库。
+        主词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持100M。 mainObject, stopObject, synonymObject三个参数至少要填写一个。  >一次只能加载一个主词库，不支持同时加载多个主词库。
 
         :param main_object: The main_object of this LoadCustomThesaurusReq.
         :type main_object: str

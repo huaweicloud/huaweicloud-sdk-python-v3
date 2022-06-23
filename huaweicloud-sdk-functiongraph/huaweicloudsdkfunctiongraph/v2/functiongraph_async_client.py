@@ -169,6 +169,126 @@ class FunctionGraphAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_delete_function_triggers_async(self, request):
+        """删除指定函数的所有触发器。
+
+        删除指定函数所有触发器设置。
+        
+        在提供函数版本且非latest的情况下，删除对应函数版本的触发器。
+        在提供函数别名的情况下，删除对应函数别名的触发器。
+        在不提供函数版本（也不提供别名）或版本为latest的情况下，删除该函数所有的触发器（包括所有版本和别名）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteFunctionTriggers
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteFunctionTriggersRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteFunctionTriggersResponse`
+        """
+        return self.batch_delete_function_triggers_with_http_info(request)
+
+    def batch_delete_function_triggers_with_http_info(self, request):
+        all_params = ['function_urn']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteFunctionTriggersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_delete_workflows_async(self, request):
+        """删除工作流列表
+
+        删除工作流列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteWorkflows
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsResponse`
+        """
+        return self.batch_delete_workflows_with_http_info(request)
+
+    def batch_delete_workflows_with_http_info(self, request):
+        all_params = ['batch_delete_workflows_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteWorkflowsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def cancel_async_invocation_async(self, request):
         """停止函数异步调用请求
 
@@ -405,6 +525,70 @@ class FunctionGraphAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_function_trigger_async(self, request):
+        """创建触发器。
+
+        创建触发器。
+        
+        - 可以创建的触发器类型包括TIMER、APIG、CTS、DDS、DMS、DIS、LTS、OBS、SMN、KAFKA。
+        - DDS和KAFKA触发器创建时默认为DISABLED状态，其他触发器默认为ACTIVE状态。
+        - TIMER、DDS、DMS、KAFKA、LTS触发器支持禁用，其他触发器不支持。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateFunctionTrigger
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerResponse`
+        """
+        return self.create_function_trigger_with_http_info(request)
+
+    def create_function_trigger_with_http_info(self, request):
+        all_params = ['function_urn', 'create_function_trigger_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateFunctionTriggerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_function_version_async(self, request):
         """发布函数版本。
 
@@ -520,6 +704,64 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateVersionAliasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_workflow_async(self, request):
+        """创建工作流列表
+
+        创建工作流列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateWorkflow
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowResponse`
+        """
+        return self.create_workflow_with_http_info(request)
+
+    def create_workflow_with_http_info(self, request):
+        all_params = ['create_workflow_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -757,6 +999,68 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteFunctionAsyncInvokeConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_function_trigger_async(self, request):
+        """删除触发器。
+
+        删除触发器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteFunctionTrigger
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionTriggerRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionTriggerResponse`
+        """
+        return self.delete_function_trigger_with_http_info(request)
+
+    def delete_function_trigger_with_http_info(self, request):
+        all_params = ['function_urn', 'trigger_type_code', 'trigger_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+        if 'trigger_type_code' in local_var_params:
+            path_params['trigger_type_code'] = local_var_params['trigger_type_code']
+        if 'trigger_id' in local_var_params:
+            path_params['trigger_id'] = local_var_params['trigger_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{trigger_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteFunctionTriggerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1380,6 +1684,64 @@ class FunctionGraphAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_function_triggers_async(self, request):
+        """获取指定函数的所有触发器。
+
+        获取指定函数的所有触发器设置。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListFunctionTriggers
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionTriggersRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionTriggersResponse`
+        """
+        return self.list_function_triggers_with_http_info(request)
+
+    def list_function_triggers_with_http_info(self, request):
+        all_params = ['function_urn']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListFunctionTriggersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_function_versions_async(self, request):
         """获取指定函数的版本列表。
 
@@ -1683,6 +2045,194 @@ class FunctionGraphAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_workflow_executions_async(self, request):
+        """获取指定函数流执行实例列表
+
+        获取指定函数流执行实例列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListWorkflowExecutions
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionsRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionsResponse`
+        """
+        return self.list_workflow_executions_with_http_info(request)
+
+    def list_workflow_executions_with_http_info(self, request):
+        all_params = ['workflow_id', 'limit', 'status', 'start_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListWorkflowExecutionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_workflows_async(self, request):
+        """查询工作流列表
+
+        查询工作流列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListWorkflows
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowsRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowsResponse`
+        """
+        return self.list_workflows_with_http_info(request)
+
+    def list_workflows_with_http_info(self, request):
+        all_params = ['workflow_name', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'workflow_name' in local_var_params:
+            query_params.append(('workflow_name', local_var_params['workflow_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListWorkflowsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def retry_work_flow_async(self, request):
+        """重试工作流
+
+        重试工作流
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RetryWorkFlow
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.RetryWorkFlowRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.RetryWorkFlowResponse`
+        """
+        return self.retry_work_flow_with_http_info(request)
+
+    def retry_work_flow_with_http_info(self, request):
+        all_params = ['workflow_id', 'execution_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+        if 'execution_id' in local_var_params:
+            path_params['execution_id'] = local_var_params['execution_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions/{execution_id}/retry',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RetryWorkFlowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_dependency_async(self, request):
         """获取指定依赖包
 
@@ -1975,6 +2525,68 @@ class FunctionGraphAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_function_trigger_async(self, request):
+        """获取指定触发器的信息。
+
+        获取特定触发器的信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowFunctionTrigger
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionTriggerRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionTriggerResponse`
+        """
+        return self.show_function_trigger_with_http_info(request)
+
+    def show_function_trigger_with_http_info(self, request):
+        all_params = ['function_urn', 'trigger_type_code', 'trigger_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+        if 'trigger_type_code' in local_var_params:
+            path_params['trigger_type_code'] = local_var_params['trigger_type_code']
+        if 'trigger_id' in local_var_params:
+            path_params['trigger_id'] = local_var_params['trigger_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{trigger_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowFunctionTriggerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_lts_log_details_async(self, request):
         """获取指定函数的lts日志组日志流配置。
 
@@ -2028,6 +2640,68 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowLtsLogDetailsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_tenant_metric_async(self, request):
+        """获取函数流指标
+
+        获取函数流指标
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowTenantMetric
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowTenantMetricRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowTenantMetricResponse`
+        """
+        return self.show_tenant_metric_with_http_info(request)
+
+    def show_tenant_metric_with_http_info(self, request):
+        all_params = ['period', 'start_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflow-statistic',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowTenantMetricResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2146,6 +2820,372 @@ class FunctionGraphAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowVersionAliasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_work_flow_async(self, request):
+        """获取指定函数流实例
+
+        获取指定函数流实例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowWorkFlow
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowResponse`
+        """
+        return self.show_work_flow_with_http_info(request)
+
+    def show_work_flow_with_http_info(self, request):
+        all_params = ['workflow_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowWorkFlowResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_work_flow_metric_async(self, request):
+        """获取指定工作流指标
+
+        获取指定工作流指标
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowWorkFlowMetric
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowMetricRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowMetricResponse`
+        """
+        return self.show_work_flow_metric_with_http_info(request)
+
+    def show_work_flow_metric_with_http_info(self, request):
+        all_params = ['workflow_urn', 'period', 'start_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_urn' in local_var_params:
+            path_params['workflow_urn'] = local_var_params['workflow_urn']
+
+        query_params = []
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflow-statistic/{workflow_urn}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowWorkFlowMetricResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_workflow_execution_async(self, request):
+        """获取指定函数流执行实例
+
+        获取指定函数流执行实例。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowWorkflowExecution
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionResponse`
+        """
+        return self.show_workflow_execution_with_http_info(request)
+
+    def show_workflow_execution_with_http_info(self, request):
+        all_params = ['workflow_id', 'execution_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+        if 'execution_id' in local_var_params:
+            path_params['execution_id'] = local_var_params['execution_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions/{execution_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowWorkflowExecutionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def start_sync_workflow_execution_async(self, request):
+        """同步执行函数流
+
+        同步执行函数流
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for StartSyncWorkflowExecution
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.StartSyncWorkflowExecutionRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StartSyncWorkflowExecutionResponse`
+        """
+        return self.start_sync_workflow_execution_with_http_info(request)
+
+    def start_sync_workflow_execution_with_http_info(self, request):
+        all_params = ['workflow_id', 'start_sync_workflow_execution_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/sync-executions',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartSyncWorkflowExecutionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def start_workflow_execution_async(self, request):
+        """开始执行函数流
+
+        开始执行函数流
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for StartWorkflowExecution
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.StartWorkflowExecutionRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StartWorkflowExecutionResponse`
+        """
+        return self.start_workflow_execution_with_http_info(request)
+
+    def start_workflow_execution_with_http_info(self, request):
+        all_params = ['workflow_id', 'start_workflow_execution_request_body', 'x_create_time', 'x_workflow_run_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_create_time' in local_var_params:
+            header_params['X-Create-Time'] = local_var_params['x_create_time']
+        if 'x_workflow_run_id' in local_var_params:
+            header_params['X-WorkflowRun-ID'] = local_var_params['x_workflow_run_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartWorkflowExecutionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def stop_work_flow_async(self, request):
+        """停止工作流
+
+        停止工作流
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for StopWorkFlow
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.StopWorkFlowRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StopWorkFlowResponse`
+        """
+        return self.stop_work_flow_with_http_info(request)
+
+    def stop_work_flow_with_http_info(self, request):
+        all_params = ['workflow_id', 'execution_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+        if 'execution_id' in local_var_params:
+            path_params['execution_id'] = local_var_params['execution_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions/{execution_id}/terminate',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StopWorkFlowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2573,376 +3613,6 @@ class FunctionGraphAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def update_version_alias_async(self, request):
-        """修改函数版本别名信息。
-
-        修改函数版本别名信息。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for UpdateVersionAlias
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasResponse`
-        """
-        return self.update_version_alias_with_http_info(request)
-
-    def update_version_alias_with_http_info(self, request):
-        all_params = ['function_urn', 'alias_name', 'update_version_alias_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'function_urn' in local_var_params:
-            path_params['function_urn'] = local_var_params['function_urn']
-        if 'alias_name' in local_var_params:
-            path_params['alias_name'] = local_var_params['alias_name']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/aliases/{alias_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='UpdateVersionAliasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def batch_delete_function_triggers_async(self, request):
-        """删除指定函数的所有触发器。
-
-        删除指定函数所有触发器设置。
-        
-        在提供函数版本且非latest的情况下，删除对应函数版本的触发器。
-        在提供函数别名的情况下，删除对应函数别名的触发器。
-        在不提供函数版本（也不提供别名）或版本为latest的情况下，删除该函数所有的触发器（包括所有版本和别名）。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for BatchDeleteFunctionTriggers
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteFunctionTriggersRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteFunctionTriggersResponse`
-        """
-        return self.batch_delete_function_triggers_with_http_info(request)
-
-    def batch_delete_function_triggers_with_http_info(self, request):
-        all_params = ['function_urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'function_urn' in local_var_params:
-            path_params['function_urn'] = local_var_params['function_urn']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='BatchDeleteFunctionTriggersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def create_function_trigger_async(self, request):
-        """创建触发器。
-
-        创建触发器。
-        
-        - 可以创建的触发器类型包括TIMER、APIG、CTS、DDS、DMS、DIS、LTS、OBS、SMN、KAFKA。
-        - DDS和KAFKA触发器创建时默认为DISABLED状态，其他触发器默认为ACTIVE状态。
-        - TIMER、DDS、DMS、KAFKA、LTS触发器支持禁用，其他触发器不支持。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for CreateFunctionTrigger
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateFunctionTriggerResponse`
-        """
-        return self.create_function_trigger_with_http_info(request)
-
-    def create_function_trigger_with_http_info(self, request):
-        all_params = ['function_urn', 'create_function_trigger_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'function_urn' in local_var_params:
-            path_params['function_urn'] = local_var_params['function_urn']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreateFunctionTriggerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def delete_function_trigger_async(self, request):
-        """删除触发器。
-
-        删除触发器。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for DeleteFunctionTrigger
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionTriggerRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.DeleteFunctionTriggerResponse`
-        """
-        return self.delete_function_trigger_with_http_info(request)
-
-    def delete_function_trigger_with_http_info(self, request):
-        all_params = ['function_urn', 'trigger_type_code', 'trigger_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'function_urn' in local_var_params:
-            path_params['function_urn'] = local_var_params['function_urn']
-        if 'trigger_type_code' in local_var_params:
-            path_params['trigger_type_code'] = local_var_params['trigger_type_code']
-        if 'trigger_id' in local_var_params:
-            path_params['trigger_id'] = local_var_params['trigger_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{trigger_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='DeleteFunctionTriggerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def list_function_triggers_async(self, request):
-        """获取指定函数的所有触发器。
-
-        获取指定函数的所有触发器设置。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ListFunctionTriggers
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionTriggersRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionTriggersResponse`
-        """
-        return self.list_function_triggers_with_http_info(request)
-
-    def list_function_triggers_with_http_info(self, request):
-        all_params = ['function_urn']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'function_urn' in local_var_params:
-            path_params['function_urn'] = local_var_params['function_urn']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListFunctionTriggersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_function_trigger_async(self, request):
-        """获取指定触发器的信息。
-
-        获取特定触发器的信息。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ShowFunctionTrigger
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionTriggerRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowFunctionTriggerResponse`
-        """
-        return self.show_function_trigger_with_http_info(request)
-
-    def show_function_trigger_with_http_info(self, request):
-        all_params = ['function_urn', 'trigger_type_code', 'trigger_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'function_urn' in local_var_params:
-            path_params['function_urn'] = local_var_params['function_urn']
-        if 'trigger_type_code' in local_var_params:
-            path_params['trigger_type_code'] = local_var_params['trigger_type_code']
-        if 'trigger_id' in local_var_params:
-            path_params['trigger_id'] = local_var_params['trigger_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/triggers/{function_urn}/{trigger_type_code}/{trigger_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowFunctionTriggerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def update_trigger_async(self, request):
         """更新触发器
 
@@ -3007,22 +3677,22 @@ class FunctionGraphAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def batch_delete_workflows_async(self, request):
-        """删除工作流列表
+    def update_version_alias_async(self, request):
+        """修改函数版本别名信息。
 
-        删除工作流列表
+        修改函数版本别名信息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
-        :param request: Request instance for BatchDeleteWorkflows
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsResponse`
+        :param request: Request instance for UpdateVersionAlias
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateVersionAliasResponse`
         """
-        return self.batch_delete_workflows_with_http_info(request)
+        return self.update_version_alias_with_http_info(request)
 
-    def batch_delete_workflows_with_http_info(self, request):
-        all_params = ['batch_delete_workflows_request_body']
+    def update_version_alias_with_http_info(self, request):
+        all_params = ['function_urn', 'alias_name', 'update_version_alias_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3031,6 +3701,10 @@ class FunctionGraphAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+        if 'alias_name' in local_var_params:
+            path_params['alias_name'] = local_var_params['alias_name']
 
         query_params = []
 
@@ -3052,688 +3726,14 @@ class FunctionGraphAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/fgs/workflows',
-            method='DELETE',
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/aliases/{alias_name}',
+            method='PUT',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='BatchDeleteWorkflowsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def create_workflow_async(self, request):
-        """创建工作流列表
-
-        创建工作流列表
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for CreateWorkflow
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowResponse`
-        """
-        return self.create_workflow_with_http_info(request)
-
-    def create_workflow_with_http_info(self, request):
-        all_params = ['create_workflow_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/workflows',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreateWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def list_workflow_executions_async(self, request):
-        """获取指定函数流执行实例列表
-
-        获取指定函数流执行实例列表
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ListWorkflowExecutions
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionsRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionsResponse`
-        """
-        return self.list_workflow_executions_with_http_info(request)
-
-    def list_workflow_executions_with_http_info(self, request):
-        all_params = ['workflow_id', 'limit', 'status', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'workflow_id' in local_var_params:
-            path_params['workflow_id'] = local_var_params['workflow_id']
-
-        query_params = []
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'start_time' in local_var_params:
-            query_params.append(('start_time', local_var_params['start_time']))
-        if 'end_time' in local_var_params:
-            query_params.append(('end_time', local_var_params['end_time']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListWorkflowExecutionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def list_workflows_async(self, request):
-        """查询工作流列表
-
-        查询工作流列表
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ListWorkflows
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowsRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowsResponse`
-        """
-        return self.list_workflows_with_http_info(request)
-
-    def list_workflows_with_http_info(self, request):
-        all_params = ['workflow_name', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'workflow_name' in local_var_params:
-            query_params.append(('workflow_name', local_var_params['workflow_name']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/workflows',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListWorkflowsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def retry_work_flow_async(self, request):
-        """重试工作流
-
-        重试工作流
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for RetryWorkFlow
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.RetryWorkFlowRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.RetryWorkFlowResponse`
-        """
-        return self.retry_work_flow_with_http_info(request)
-
-    def retry_work_flow_with_http_info(self, request):
-        all_params = ['workflow_id', 'execution_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'workflow_id' in local_var_params:
-            path_params['workflow_id'] = local_var_params['workflow_id']
-        if 'execution_id' in local_var_params:
-            path_params['execution_id'] = local_var_params['execution_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions/{execution_id}/retry',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='RetryWorkFlowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_tenant_metric_async(self, request):
-        """获取函数流指标
-
-        获取函数流指标
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ShowTenantMetric
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowTenantMetricRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowTenantMetricResponse`
-        """
-        return self.show_tenant_metric_with_http_info(request)
-
-    def show_tenant_metric_with_http_info(self, request):
-        all_params = ['period', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'period' in local_var_params:
-            query_params.append(('period', local_var_params['period']))
-        if 'start_time' in local_var_params:
-            query_params.append(('start_time', local_var_params['start_time']))
-        if 'end_time' in local_var_params:
-            query_params.append(('end_time', local_var_params['end_time']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/workflow-statistic',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowTenantMetricResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_work_flow_async(self, request):
-        """获取指定函数流实例
-
-        获取指定函数流实例
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ShowWorkFlow
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowResponse`
-        """
-        return self.show_work_flow_with_http_info(request)
-
-    def show_work_flow_with_http_info(self, request):
-        all_params = ['workflow_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'workflow_id' in local_var_params:
-            path_params['workflow_id'] = local_var_params['workflow_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowWorkFlowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_work_flow_metric_async(self, request):
-        """获取指定工作流指标
-
-        获取指定工作流指标
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ShowWorkFlowMetric
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowMetricRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkFlowMetricResponse`
-        """
-        return self.show_work_flow_metric_with_http_info(request)
-
-    def show_work_flow_metric_with_http_info(self, request):
-        all_params = ['workflow_urn', 'period', 'start_time', 'end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'workflow_urn' in local_var_params:
-            path_params['workflow_urn'] = local_var_params['workflow_urn']
-
-        query_params = []
-        if 'period' in local_var_params:
-            query_params.append(('period', local_var_params['period']))
-        if 'start_time' in local_var_params:
-            query_params.append(('start_time', local_var_params['start_time']))
-        if 'end_time' in local_var_params:
-            query_params.append(('end_time', local_var_params['end_time']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/workflow-statistic/{workflow_urn}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowWorkFlowMetricResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_workflow_execution_async(self, request):
-        """获取指定函数流执行实例
-
-        获取指定函数流执行实例。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ShowWorkflowExecution
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionResponse`
-        """
-        return self.show_workflow_execution_with_http_info(request)
-
-    def show_workflow_execution_with_http_info(self, request):
-        all_params = ['workflow_id', 'execution_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'workflow_id' in local_var_params:
-            path_params['workflow_id'] = local_var_params['workflow_id']
-        if 'execution_id' in local_var_params:
-            path_params['execution_id'] = local_var_params['execution_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions/{execution_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowWorkflowExecutionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def start_sync_workflow_execution_async(self, request):
-        """同步执行函数流
-
-        同步执行函数流
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for StartSyncWorkflowExecution
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.StartSyncWorkflowExecutionRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StartSyncWorkflowExecutionResponse`
-        """
-        return self.start_sync_workflow_execution_with_http_info(request)
-
-    def start_sync_workflow_execution_with_http_info(self, request):
-        all_params = ['workflow_id', 'start_sync_workflow_execution_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'workflow_id' in local_var_params:
-            path_params['workflow_id'] = local_var_params['workflow_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/sync-executions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='StartSyncWorkflowExecutionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def start_workflow_execution_async(self, request):
-        """开始执行函数流
-
-        开始执行函数流
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for StartWorkflowExecution
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.StartWorkflowExecutionRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StartWorkflowExecutionResponse`
-        """
-        return self.start_workflow_execution_with_http_info(request)
-
-    def start_workflow_execution_with_http_info(self, request):
-        all_params = ['workflow_id', 'start_workflow_execution_request_body', 'x_create_time', 'x_workflow_run_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'workflow_id' in local_var_params:
-            path_params['workflow_id'] = local_var_params['workflow_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_create_time' in local_var_params:
-            header_params['X-Create-Time'] = local_var_params['x_create_time']
-        if 'x_workflow_run_id' in local_var_params:
-            header_params['X-WorkflowRun-ID'] = local_var_params['x_workflow_run_id']
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='StartWorkflowExecutionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def stop_work_flow_async(self, request):
-        """停止工作流
-
-        停止工作流
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for StopWorkFlow
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.StopWorkFlowRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StopWorkFlowResponse`
-        """
-        return self.stop_work_flow_with_http_info(request)
-
-    def stop_work_flow_with_http_info(self, request):
-        all_params = ['workflow_id', 'execution_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'workflow_id' in local_var_params:
-            path_params['workflow_id'] = local_var_params['workflow_id']
-        if 'execution_id' in local_var_params:
-            path_params['execution_id'] = local_var_params['execution_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions/{execution_id}/terminate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='StopWorkFlowResponse',
+            response_type='UpdateVersionAliasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

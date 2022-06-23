@@ -55,7 +55,7 @@ class ListFlavorsResult:
         :type ram: str
         :param spec_code: 资源规格编码。例如：geminidb.cassandra.8xlarge.4   - “geminidb.cassandra”表示云数据库GaussDB NoSQL的Cassandra数据库产品。   - “8xlarge.4”表示节点性能规格。
         :type spec_code: str
-        :param availability_zone: 
+        :param availability_zone: 支持该规格的可用区ID。   - 该字段已废弃，请不要使用。
         :type availability_zone: list[str]
         :param az_status: 规格在可用区内的状态，包含以下状态：   - normal，在售。   - unsupported，暂不支持该规格。   - sellout，售罄。
         :type az_status: object
@@ -194,6 +194,7 @@ class ListFlavorsResult:
     def availability_zone(self):
         """Gets the availability_zone of this ListFlavorsResult.
 
+        支持该规格的可用区ID。   - 该字段已废弃，请不要使用。
 
         :return: The availability_zone of this ListFlavorsResult.
         :rtype: list[str]
@@ -204,6 +205,7 @@ class ListFlavorsResult:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this ListFlavorsResult.
 
+        支持该规格的可用区ID。   - 该字段已废弃，请不要使用。
 
         :param availability_zone: The availability_zone of this ListFlavorsResult.
         :type availability_zone: list[str]

@@ -39,7 +39,7 @@ class ShowResourcesDetailResponseBody:
 
         :param type: 配额资源类型，当前配额类型仅支持实例类型（instance）。
         :type type: str
-        :param quota: 当前配额值。
+        :param quota: 当前配额值。 取值为0时，表示不限制当前配额值。
         :type quota: int
         :param used: 已使用的资源数。
         :type used: int
@@ -82,7 +82,7 @@ class ShowResourcesDetailResponseBody:
     def quota(self):
         """Gets the quota of this ShowResourcesDetailResponseBody.
 
-        当前配额值。
+        当前配额值。 取值为0时，表示不限制当前配额值。
 
         :return: The quota of this ShowResourcesDetailResponseBody.
         :rtype: int
@@ -93,7 +93,7 @@ class ShowResourcesDetailResponseBody:
     def quota(self, quota):
         """Sets the quota of this ShowResourcesDetailResponseBody.
 
-        当前配额值。
+        当前配额值。 取值为0时，表示不限制当前配额值。
 
         :param quota: The quota of this ShowResourcesDetailResponseBody.
         :type quota: int

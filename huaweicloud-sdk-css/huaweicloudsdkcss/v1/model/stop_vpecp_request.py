@@ -33,7 +33,7 @@ class StopVpecpRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待关闭的集群ID。
+        :param cluster_id: 指定待关闭终端节点的集群ID。
         :type cluster_id: str
         """
         
@@ -48,7 +48,7 @@ class StopVpecpRequest:
     def cluster_id(self):
         """Gets the cluster_id of this StopVpecpRequest.
 
-        指定待关闭的集群ID。
+        指定待关闭终端节点的集群ID。
 
         :return: The cluster_id of this StopVpecpRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class StopVpecpRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this StopVpecpRequest.
 
-        指定待关闭的集群ID。
+        指定待关闭终端节点的集群ID。
 
         :param cluster_id: The cluster_id of this StopVpecpRequest.
         :type cluster_id: str

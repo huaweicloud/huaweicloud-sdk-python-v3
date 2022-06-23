@@ -35,7 +35,7 @@ class MigrateResourceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 目标企业项目ID，enterprise_project_id为0时表示迁移资源到默认资源组default。
+        :param enterprise_project_id: 目标企业项目ID，enterprise_project_id为0时表示迁移资源到默认资源组default。注：实际迁移时，会将资源所属的【当前企业项目ID】替换为【目标企业项目ID】，所以不需要指定【当前企业项目ID】。
         :type enterprise_project_id: str
         :param body: Body of the MigrateResourceRequest
         :type body: :class:`huaweicloudsdkeps.v1.MigrateResource`
@@ -55,7 +55,7 @@ class MigrateResourceRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this MigrateResourceRequest.
 
-        目标企业项目ID，enterprise_project_id为0时表示迁移资源到默认资源组default。
+        目标企业项目ID，enterprise_project_id为0时表示迁移资源到默认资源组default。注：实际迁移时，会将资源所属的【当前企业项目ID】替换为【目标企业项目ID】，所以不需要指定【当前企业项目ID】。
 
         :return: The enterprise_project_id of this MigrateResourceRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class MigrateResourceRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this MigrateResourceRequest.
 
-        目标企业项目ID，enterprise_project_id为0时表示迁移资源到默认资源组default。
+        目标企业项目ID，enterprise_project_id为0时表示迁移资源到默认资源组default。注：实际迁移时，会将资源所属的【当前企业项目ID】替换为【目标企业项目ID】，所以不需要指定【当前企业项目ID】。
 
         :param enterprise_project_id: The enterprise_project_id of this MigrateResourceRequest.
         :type enterprise_project_id: str

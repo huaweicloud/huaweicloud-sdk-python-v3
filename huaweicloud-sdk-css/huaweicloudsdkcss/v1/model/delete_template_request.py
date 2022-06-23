@@ -21,57 +21,29 @@ class DeleteTemplateRequest:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id': 'str',
         'body': 'DeleteTemplateReq'
     }
 
     attribute_map = {
-        'cluster_id': 'cluster_id',
         'body': 'body'
     }
 
-    def __init__(self, cluster_id=None, body=None):
+    def __init__(self, body=None):
         """DeleteTemplateRequest
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待删除的集群ID。
-        :type cluster_id: str
         :param body: Body of the DeleteTemplateRequest
         :type body: :class:`huaweicloudsdkcss.v1.DeleteTemplateReq`
         """
         
         
 
-        self._cluster_id = None
         self._body = None
         self.discriminator = None
 
-        self.cluster_id = cluster_id
         if body is not None:
             self.body = body
-
-    @property
-    def cluster_id(self):
-        """Gets the cluster_id of this DeleteTemplateRequest.
-
-        指定待删除的集群ID。
-
-        :return: The cluster_id of this DeleteTemplateRequest.
-        :rtype: str
-        """
-        return self._cluster_id
-
-    @cluster_id.setter
-    def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteTemplateRequest.
-
-        指定待删除的集群ID。
-
-        :param cluster_id: The cluster_id of this DeleteTemplateRequest.
-        :type cluster_id: str
-        """
-        self._cluster_id = cluster_id
 
     @property
     def body(self):

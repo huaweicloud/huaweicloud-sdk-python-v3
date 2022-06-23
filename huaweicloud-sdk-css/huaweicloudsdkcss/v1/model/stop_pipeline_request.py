@@ -33,7 +33,7 @@ class StopPipelineRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定待停止的集群ID。
+        :param cluster_id: 指定停止pipeline的集群ID。
         :type cluster_id: str
         """
         
@@ -48,7 +48,7 @@ class StopPipelineRequest:
     def cluster_id(self):
         """Gets the cluster_id of this StopPipelineRequest.
 
-        指定待停止的集群ID。
+        指定停止pipeline的集群ID。
 
         :return: The cluster_id of this StopPipelineRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class StopPipelineRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this StopPipelineRequest.
 
-        指定待停止的集群ID。
+        指定停止pipeline的集群ID。
 
         :param cluster_id: The cluster_id of this StopPipelineRequest.
         :type cluster_id: str

@@ -25,7 +25,9 @@ class PartAttendee:
         'phone': 'str',
         'phone2': 'str',
         'phone3': 'str',
-        'type': 'str'
+        'type': 'str',
+        'role': 'int',
+        'is_mute': 'int'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class PartAttendee:
         'phone': 'phone',
         'phone2': 'phone2',
         'phone3': 'phone3',
-        'type': 'type'
+        'type': 'type',
+        'role': 'role',
+        'is_mute': 'isMute'
     }
 
-    def __init__(self, name=None, phone=None, phone2=None, phone3=None, type=None):
+    def __init__(self, name=None, phone=None, phone2=None, phone3=None, type=None, role=None, is_mute=None):
         """PartAttendee
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class PartAttendee:
         :type phone3: str
         :param type: 默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 用户固定电话。（预留字段） - ideahub: ideahub。
         :type type: str
+        :param role: 会议中的角色。默认为普通与会者。 - 0：普通与会者。 - 1：会议主持人。
+        :type role: int
+        :param is_mute: 用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音。 - 1: 需要静音。
+        :type is_mute: int
         """
         
         
@@ -60,6 +68,8 @@ class PartAttendee:
         self._phone2 = None
         self._phone3 = None
         self._type = None
+        self._role = None
+        self._is_mute = None
         self.discriminator = None
 
         if name is not None:
@@ -72,6 +82,10 @@ class PartAttendee:
             self.phone3 = phone3
         if type is not None:
             self.type = type
+        if role is not None:
+            self.role = role
+        if is_mute is not None:
+            self.is_mute = is_mute
 
     @property
     def name(self):
@@ -182,6 +196,50 @@ class PartAttendee:
         :type type: str
         """
         self._type = type
+
+    @property
+    def role(self):
+        """Gets the role of this PartAttendee.
+
+        会议中的角色。默认为普通与会者。 - 0：普通与会者。 - 1：会议主持人。
+
+        :return: The role of this PartAttendee.
+        :rtype: int
+        """
+        return self._role
+
+    @role.setter
+    def role(self, role):
+        """Sets the role of this PartAttendee.
+
+        会议中的角色。默认为普通与会者。 - 0：普通与会者。 - 1：会议主持人。
+
+        :param role: The role of this PartAttendee.
+        :type role: int
+        """
+        self._role = role
+
+    @property
+    def is_mute(self):
+        """Gets the is_mute of this PartAttendee.
+
+        用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音。 - 1: 需要静音。
+
+        :return: The is_mute of this PartAttendee.
+        :rtype: int
+        """
+        return self._is_mute
+
+    @is_mute.setter
+    def is_mute(self, is_mute):
+        """Sets the is_mute of this PartAttendee.
+
+        用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音。 - 1: 需要静音。
+
+        :param is_mute: The is_mute of this PartAttendee.
+        :type is_mute: int
+        """
+        self._is_mute = is_mute
 
     def to_dict(self):
         """Returns the model properties as a dict"""

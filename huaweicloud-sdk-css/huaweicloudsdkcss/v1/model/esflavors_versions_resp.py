@@ -22,41 +22,48 @@ class EsflavorsVersionsResp:
 
     openapi_types = {
         'version': 'str',
-        'flavors': 'list[EsflavorsVersionsFlavorsResp]'
+        'flavors': 'list[EsflavorsVersionsFlavorsResp]',
+        'type': 'str'
     }
 
     attribute_map = {
         'version': 'version',
-        'flavors': 'flavors'
+        'flavors': 'flavors',
+        'type': 'type'
     }
 
-    def __init__(self, version=None, flavors=None):
+    def __init__(self, version=None, flavors=None, type=None):
         """EsflavorsVersionsResp
 
         The model defined in huaweicloud sdk
 
-        :param version: 引擎版本，支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2、7.9.3。
+        :param version: Esasticsearch引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
         :type version: str
         :param flavors: 规格列表。
         :type flavors: list[:class:`huaweicloudsdkcss.v1.EsflavorsVersionsFlavorsResp`]
+        :param type: 实例类型，包括为ess、ess-cold、ess-master和ess-client。
+        :type type: str
         """
         
         
 
         self._version = None
         self._flavors = None
+        self._type = None
         self.discriminator = None
 
         if version is not None:
             self.version = version
         if flavors is not None:
             self.flavors = flavors
+        if type is not None:
+            self.type = type
 
     @property
     def version(self):
         """Gets the version of this EsflavorsVersionsResp.
 
-        引擎版本，支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2、7.9.3。
+        Esasticsearch引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
 
         :return: The version of this EsflavorsVersionsResp.
         :rtype: str
@@ -67,7 +74,7 @@ class EsflavorsVersionsResp:
     def version(self, version):
         """Sets the version of this EsflavorsVersionsResp.
 
-        引擎版本，支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2、7.9.3。
+        Esasticsearch引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
 
         :param version: The version of this EsflavorsVersionsResp.
         :type version: str
@@ -95,6 +102,28 @@ class EsflavorsVersionsResp:
         :type flavors: list[:class:`huaweicloudsdkcss.v1.EsflavorsVersionsFlavorsResp`]
         """
         self._flavors = flavors
+
+    @property
+    def type(self):
+        """Gets the type of this EsflavorsVersionsResp.
+
+        实例类型，包括为ess、ess-cold、ess-master和ess-client。
+
+        :return: The type of this EsflavorsVersionsResp.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this EsflavorsVersionsResp.
+
+        实例类型，包括为ess、ess-cold、ess-master和ess-client。
+
+        :param type: The type of this EsflavorsVersionsResp.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,15 +22,17 @@ class AuthorizeDomainsResponse(SdkResponse):
 
     openapi_types = {
         'info_code': 'str',
-        'info_description': 'str'
+        'info_description': 'str',
+        'usage_notice': 'str'
     }
 
     attribute_map = {
         'info_code': 'info_code',
-        'info_description': 'info_description'
+        'info_description': 'info_description',
+        'usage_notice': 'usage_notice'
     }
 
-    def __init__(self, info_code=None, info_description=None):
+    def __init__(self, info_code=None, info_description=None, usage_notice=None):
         """AuthorizeDomainsResponse
 
         The model defined in huaweicloud sdk
@@ -39,18 +41,23 @@ class AuthorizeDomainsResponse(SdkResponse):
         :type info_code: str
         :param info_description: 返回的提示信息
         :type info_description: str
+        :param usage_notice: 域名认证使用须知
+        :type usage_notice: str
         """
         
         super(AuthorizeDomainsResponse, self).__init__()
 
         self._info_code = None
         self._info_description = None
+        self._usage_notice = None
         self.discriminator = None
 
         if info_code is not None:
             self.info_code = info_code
         if info_description is not None:
             self.info_description = info_description
+        if usage_notice is not None:
+            self.usage_notice = usage_notice
 
     @property
     def info_code(self):
@@ -95,6 +102,28 @@ class AuthorizeDomainsResponse(SdkResponse):
         :type info_description: str
         """
         self._info_description = info_description
+
+    @property
+    def usage_notice(self):
+        """Gets the usage_notice of this AuthorizeDomainsResponse.
+
+        域名认证使用须知
+
+        :return: The usage_notice of this AuthorizeDomainsResponse.
+        :rtype: str
+        """
+        return self._usage_notice
+
+    @usage_notice.setter
+    def usage_notice(self, usage_notice):
+        """Sets the usage_notice of this AuthorizeDomainsResponse.
+
+        域名认证使用须知
+
+        :param usage_notice: The usage_notice of this AuthorizeDomainsResponse.
+        :type usage_notice: str
+        """
+        self._usage_notice = usage_notice
 
     def to_dict(self):
         """Returns the model properties as a dict"""

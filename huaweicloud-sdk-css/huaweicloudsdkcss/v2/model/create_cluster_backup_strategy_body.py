@@ -53,7 +53,7 @@ class CreateClusterBackupStrategyBody:
         :type bucket: str
         :param base_path: 快照在OBS桶中的存放路径。
         :type base_path: str
-        :param agency: 访问OBS使用的IAM委托名称。   说明：如果bucket、basePath和agency三个参数同时为空，则系统会自动创建OBS桶和IAM代理，否则使用配置的参数值。
+        :param agency: 访问OBS使用的IAM委托名称。   &gt;如果bucket、basePath和agency三个参数同时为空，则系统会自动创建OBS桶和IAM代理，否则使用配置的参数值。
         :type agency: str
         """
         
@@ -191,7 +191,7 @@ class CreateClusterBackupStrategyBody:
     def agency(self):
         """Gets the agency of this CreateClusterBackupStrategyBody.
 
-        访问OBS使用的IAM委托名称。   说明：如果bucket、basePath和agency三个参数同时为空，则系统会自动创建OBS桶和IAM代理，否则使用配置的参数值。
+        访问OBS使用的IAM委托名称。   >如果bucket、basePath和agency三个参数同时为空，则系统会自动创建OBS桶和IAM代理，否则使用配置的参数值。
 
         :return: The agency of this CreateClusterBackupStrategyBody.
         :rtype: str
@@ -202,7 +202,7 @@ class CreateClusterBackupStrategyBody:
     def agency(self, agency):
         """Sets the agency of this CreateClusterBackupStrategyBody.
 
-        访问OBS使用的IAM委托名称。   说明：如果bucket、basePath和agency三个参数同时为空，则系统会自动创建OBS桶和IAM代理，否则使用配置的参数值。
+        访问OBS使用的IAM委托名称。   >如果bucket、basePath和agency三个参数同时为空，则系统会自动创建OBS桶和IAM代理，否则使用配置的参数值。
 
         :param agency: The agency of this CreateClusterBackupStrategyBody.
         :type agency: str

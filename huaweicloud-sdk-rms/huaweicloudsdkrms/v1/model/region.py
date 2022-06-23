@@ -37,7 +37,7 @@ class Region:
 
         :param region_id: 区域ID
         :type region_id: str
-        :param display_name: 显示名称
+        :param display_name: 区域显示名称
         :type display_name: str
         """
         
@@ -78,7 +78,7 @@ class Region:
     def display_name(self):
         """Gets the display_name of this Region.
 
-        显示名称
+        区域显示名称
 
         :return: The display_name of this Region.
         :rtype: str
@@ -89,7 +89,7 @@ class Region:
     def display_name(self, display_name):
         """Sets the display_name of this Region.
 
-        显示名称
+        区域显示名称
 
         :param display_name: The display_name of this Region.
         :type display_name: str

@@ -48,4 +48,3 @@ class Region(object):
     def with_endpoint_override(self, endpoint):
         self._endpoint = endpoint
         return self
-

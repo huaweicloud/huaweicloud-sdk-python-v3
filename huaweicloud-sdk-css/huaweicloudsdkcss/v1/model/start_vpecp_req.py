@@ -21,7 +21,7 @@ class StartVpecpReq:
     sensitive_list = []
 
     openapi_types = {
-        'endpoint_with_dns_name': 'str'
+        'endpoint_with_dns_name': 'bool'
     }
 
     attribute_map = {
@@ -33,8 +33,8 @@ class StartVpecpReq:
 
         The model defined in huaweicloud sdk
 
-        :param endpoint_with_dns_name: 内网域名。
-        :type endpoint_with_dns_name: str
+        :param endpoint_with_dns_name: 开启终端节点。
+        :type endpoint_with_dns_name: bool
         """
         
         
@@ -48,10 +48,10 @@ class StartVpecpReq:
     def endpoint_with_dns_name(self):
         """Gets the endpoint_with_dns_name of this StartVpecpReq.
 
-        内网域名。
+        开启终端节点。
 
         :return: The endpoint_with_dns_name of this StartVpecpReq.
-        :rtype: str
+        :rtype: bool
         """
         return self._endpoint_with_dns_name
 
@@ -59,10 +59,10 @@ class StartVpecpReq:
     def endpoint_with_dns_name(self, endpoint_with_dns_name):
         """Sets the endpoint_with_dns_name of this StartVpecpReq.
 
-        内网域名。
+        开启终端节点。
 
         :param endpoint_with_dns_name: The endpoint_with_dns_name of this StartVpecpReq.
-        :type endpoint_with_dns_name: str
+        :type endpoint_with_dns_name: bool
         """
         self._endpoint_with_dns_name = endpoint_with_dns_name
 

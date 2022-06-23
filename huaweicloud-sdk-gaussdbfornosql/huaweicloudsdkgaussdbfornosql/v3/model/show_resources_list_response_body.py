@@ -33,7 +33,7 @@ class ShowResourcesListResponseBody:
 
         The model defined in huaweicloud sdk
 
-        :param resources: 资源列表对象。
+        :param resources: 资源列表对象
         :type resources: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ShowResourcesDetailResponseBody`]
         """
         
@@ -48,7 +48,7 @@ class ShowResourcesListResponseBody:
     def resources(self):
         """Gets the resources of this ShowResourcesListResponseBody.
 
-        资源列表对象。
+        资源列表对象
 
         :return: The resources of this ShowResourcesListResponseBody.
         :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ShowResourcesDetailResponseBody`]
@@ -59,7 +59,7 @@ class ShowResourcesListResponseBody:
     def resources(self, resources):
         """Sets the resources of this ShowResourcesListResponseBody.
 
-        资源列表对象。
+        资源列表对象
 
         :param resources: The resources of this ShowResourcesListResponseBody.
         :type resources: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ShowResourcesDetailResponseBody`]

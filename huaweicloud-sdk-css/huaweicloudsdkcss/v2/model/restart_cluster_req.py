@@ -35,9 +35,9 @@ class RestartClusterReq:
 
         The model defined in huaweicloud sdk
 
-        :param type: 操作角色
+        :param type: 操作角色。参数范围： - node - role
         :type type: str
-        :param value: 节点类型
+        :param value: 操作参数。参数说明： - 当操作角色为node时，value为节点ID。 - 当操作角色为role时，value为节点类型(ess、ess-master、ess-client、ess-cold)。
         :type value: str
         """
         
@@ -54,7 +54,7 @@ class RestartClusterReq:
     def type(self):
         """Gets the type of this RestartClusterReq.
 
-        操作角色
+        操作角色。参数范围： - node - role
 
         :return: The type of this RestartClusterReq.
         :rtype: str
@@ -65,7 +65,7 @@ class RestartClusterReq:
     def type(self, type):
         """Sets the type of this RestartClusterReq.
 
-        操作角色
+        操作角色。参数范围： - node - role
 
         :param type: The type of this RestartClusterReq.
         :type type: str
@@ -76,7 +76,7 @@ class RestartClusterReq:
     def value(self):
         """Gets the value of this RestartClusterReq.
 
-        节点类型
+        操作参数。参数说明： - 当操作角色为node时，value为节点ID。 - 当操作角色为role时，value为节点类型(ess、ess-master、ess-client、ess-cold)。
 
         :return: The value of this RestartClusterReq.
         :rtype: str
@@ -87,7 +87,7 @@ class RestartClusterReq:
     def value(self, value):
         """Sets the value of this RestartClusterReq.
 
-        节点类型
+        操作参数。参数说明： - 当操作角色为node时，value为节点ID。 - 当操作角色为role时，value为节点类型(ess、ess-master、ess-client、ess-cold)。
 
         :param value: The value of this RestartClusterReq.
         :type value: str

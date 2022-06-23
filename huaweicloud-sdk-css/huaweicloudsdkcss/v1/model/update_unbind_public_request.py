@@ -33,7 +33,7 @@ class UpdateUnbindPublicRequest:
 
         The model defined in huaweicloud sdk
 
-        :param cluster_id: 指定查询集群ID。
+        :param cluster_id: 指定关闭公网访问集群ID。
         :type cluster_id: str
         """
         
@@ -48,7 +48,7 @@ class UpdateUnbindPublicRequest:
     def cluster_id(self):
         """Gets the cluster_id of this UpdateUnbindPublicRequest.
 
-        指定查询集群ID。
+        指定关闭公网访问集群ID。
 
         :return: The cluster_id of this UpdateUnbindPublicRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class UpdateUnbindPublicRequest:
     def cluster_id(self, cluster_id):
         """Sets the cluster_id of this UpdateUnbindPublicRequest.
 
-        指定查询集群ID。
+        指定关闭公网访问集群ID。
 
         :param cluster_id: The cluster_id of this UpdateUnbindPublicRequest.
         :type cluster_id: str

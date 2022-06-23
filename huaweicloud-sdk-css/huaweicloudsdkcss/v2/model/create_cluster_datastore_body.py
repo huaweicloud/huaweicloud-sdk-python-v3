@@ -35,7 +35,7 @@ class CreateClusterDatastoreBody:
 
         The model defined in huaweicloud sdk
 
-        :param version: 引擎版本号。  elasticsearch支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2或7.9.3。  logstash支持5.6.16或7.10.0。
+        :param version: CSS集群引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
         :type version: str
         :param type: 引擎类型，支持elasticsearch和logstash。
         :type type: str
@@ -54,7 +54,7 @@ class CreateClusterDatastoreBody:
     def version(self):
         """Gets the version of this CreateClusterDatastoreBody.
 
-        引擎版本号。  elasticsearch支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2或7.9.3。  logstash支持5.6.16或7.10.0。
+        CSS集群引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
 
         :return: The version of this CreateClusterDatastoreBody.
         :rtype: str
@@ -65,7 +65,7 @@ class CreateClusterDatastoreBody:
     def version(self, version):
         """Sets the version of this CreateClusterDatastoreBody.
 
-        引擎版本号。  elasticsearch支持5.5.1、6.2.3、6.5.4、7.1.1、7.6.2或7.9.3。  logstash支持5.6.16或7.10.0。
+        CSS集群引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
 
         :param version: The version of this CreateClusterDatastoreBody.
         :type version: str
