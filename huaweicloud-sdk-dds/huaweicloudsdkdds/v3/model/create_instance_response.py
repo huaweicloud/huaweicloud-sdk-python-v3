@@ -34,13 +34,16 @@ class CreateInstanceResponse(SdkResponse):
         'port': 'int',
         'disk_encryption_id': 'str',
         'mode': 'str',
+        'configurations': 'list[CreateInstanceConfigurationsOption]',
         'flavor': 'list[CreateInstanceFlavorOption]',
         'backup_strategy': 'BackupStrategy',
         'enterprise_project_id': 'str',
         'ssl_option': 'str',
         'dss_pool_id': 'str',
         'job_id': 'str',
-        'tags': 'list[TagWithKeyValue]'
+        'tags': 'list[TagWithKeyValue]',
+        'order_id': 'str',
+        'charge_info': 'ChargeInfoResult'
     }
 
     attribute_map = {
@@ -57,16 +60,19 @@ class CreateInstanceResponse(SdkResponse):
         'port': 'port',
         'disk_encryption_id': 'disk_encryption_id',
         'mode': 'mode',
+        'configurations': 'configurations',
         'flavor': 'flavor',
         'backup_strategy': 'backup_strategy',
         'enterprise_project_id': 'enterprise_project_id',
         'ssl_option': 'ssl_option',
         'dss_pool_id': 'dss_pool_id',
         'job_id': 'job_id',
-        'tags': 'tags'
+        'tags': 'tags',
+        'order_id': 'order_id',
+        'charge_info': 'charge_info'
     }
 
-    def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, port=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, job_id=None, tags=None):
+    def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, port=None, disk_encryption_id=None, mode=None, configurations=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, job_id=None, tags=None, order_id=None, charge_info=None):
         """CreateInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -97,6 +103,8 @@ class CreateInstanceResponse(SdkResponse):
         :type disk_encryption_id: str
         :param mode: 实例类型，与请求参数相同。
         :type mode: str
+        :param configurations: 参数组配置信息。
+        :type configurations: list[:class:`huaweicloudsdkdds.v3.CreateInstanceConfigurationsOption`]
         :param flavor: 实例规格详情，与请求参数相同。
         :type flavor: list[:class:`huaweicloudsdkdds.v3.CreateInstanceFlavorOption`]
         :param backup_strategy: 
@@ -111,6 +119,10 @@ class CreateInstanceResponse(SdkResponse):
         :type job_id: str
         :param tags: 标签列表，与请求参数相同。
         :type tags: list[:class:`huaweicloudsdkdds.v3.TagWithKeyValue`]
+        :param order_id: 创建实例的订单ID，仅创建包年包月实例时返回该参数。
+        :type order_id: str
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkdds.v3.ChargeInfoResult`
         """
         
         super(CreateInstanceResponse, self).__init__()
@@ -128,6 +140,7 @@ class CreateInstanceResponse(SdkResponse):
         self._port = None
         self._disk_encryption_id = None
         self._mode = None
+        self._configurations = None
         self._flavor = None
         self._backup_strategy = None
         self._enterprise_project_id = None
@@ -135,6 +148,8 @@ class CreateInstanceResponse(SdkResponse):
         self._dss_pool_id = None
         self._job_id = None
         self._tags = None
+        self._order_id = None
+        self._charge_info = None
         self.discriminator = None
 
         if id is not None:
@@ -163,6 +178,8 @@ class CreateInstanceResponse(SdkResponse):
             self.disk_encryption_id = disk_encryption_id
         if mode is not None:
             self.mode = mode
+        if configurations is not None:
+            self.configurations = configurations
         if flavor is not None:
             self.flavor = flavor
         if backup_strategy is not None:
@@ -177,6 +194,10 @@ class CreateInstanceResponse(SdkResponse):
             self.job_id = job_id
         if tags is not None:
             self.tags = tags
+        if order_id is not None:
+            self.order_id = order_id
+        if charge_info is not None:
+            self.charge_info = charge_info
 
     @property
     def id(self):
@@ -463,6 +484,28 @@ class CreateInstanceResponse(SdkResponse):
         self._mode = mode
 
     @property
+    def configurations(self):
+        """Gets the configurations of this CreateInstanceResponse.
+
+        参数组配置信息。
+
+        :return: The configurations of this CreateInstanceResponse.
+        :rtype: list[:class:`huaweicloudsdkdds.v3.CreateInstanceConfigurationsOption`]
+        """
+        return self._configurations
+
+    @configurations.setter
+    def configurations(self, configurations):
+        """Sets the configurations of this CreateInstanceResponse.
+
+        参数组配置信息。
+
+        :param configurations: The configurations of this CreateInstanceResponse.
+        :type configurations: list[:class:`huaweicloudsdkdds.v3.CreateInstanceConfigurationsOption`]
+        """
+        self._configurations = configurations
+
+    @property
     def flavor(self):
         """Gets the flavor of this CreateInstanceResponse.
 
@@ -613,6 +656,48 @@ class CreateInstanceResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdkdds.v3.TagWithKeyValue`]
         """
         self._tags = tags
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this CreateInstanceResponse.
+
+        创建实例的订单ID，仅创建包年包月实例时返回该参数。
+
+        :return: The order_id of this CreateInstanceResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this CreateInstanceResponse.
+
+        创建实例的订单ID，仅创建包年包月实例时返回该参数。
+
+        :param order_id: The order_id of this CreateInstanceResponse.
+        :type order_id: str
+        """
+        self._order_id = order_id
+
+    @property
+    def charge_info(self):
+        """Gets the charge_info of this CreateInstanceResponse.
+
+
+        :return: The charge_info of this CreateInstanceResponse.
+        :rtype: :class:`huaweicloudsdkdds.v3.ChargeInfoResult`
+        """
+        return self._charge_info
+
+    @charge_info.setter
+    def charge_info(self, charge_info):
+        """Sets the charge_info of this CreateInstanceResponse.
+
+
+        :param charge_info: The charge_info of this CreateInstanceResponse.
+        :type charge_info: :class:`huaweicloudsdkdds.v3.ChargeInfoResult`
+        """
+        self._charge_info = charge_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

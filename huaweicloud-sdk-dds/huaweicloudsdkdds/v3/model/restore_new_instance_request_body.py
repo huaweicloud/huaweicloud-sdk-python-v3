@@ -28,13 +28,15 @@ class RestoreNewInstanceRequestBody:
         'security_group_id': 'str',
         'password': 'str',
         'disk_encryption_id': 'str',
+        'configurations': 'list[RestoreNewInstanceConfigurationsOption]',
         'flavor': 'list[RestoreNewInstanceFlavorOption]',
         'backup_strategy': 'BackupStrategy',
         'enterprise_project_id': 'str',
         'ssl_option': 'str',
         'dss_pool_id': 'str',
         'server_group_policies': 'list[str]',
-        'restore_point': 'RestorePoint'
+        'restore_point': 'RestorePoint',
+        'charge_info': 'ChargeInfoOption'
     }
 
     attribute_map = {
@@ -45,16 +47,18 @@ class RestoreNewInstanceRequestBody:
         'security_group_id': 'security_group_id',
         'password': 'password',
         'disk_encryption_id': 'disk_encryption_id',
+        'configurations': 'configurations',
         'flavor': 'flavor',
         'backup_strategy': 'backup_strategy',
         'enterprise_project_id': 'enterprise_project_id',
         'ssl_option': 'ssl_option',
         'dss_pool_id': 'dss_pool_id',
         'server_group_policies': 'server_group_policies',
-        'restore_point': 'restore_point'
+        'restore_point': 'restore_point',
+        'charge_info': 'charge_info'
     }
 
-    def __init__(self, name=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, disk_encryption_id=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, server_group_policies=None, restore_point=None):
+    def __init__(self, name=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, password=None, disk_encryption_id=None, configurations=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, server_group_policies=None, restore_point=None, charge_info=None):
         """RestoreNewInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -73,6 +77,8 @@ class RestoreNewInstanceRequestBody:
         :type password: str
         :param disk_encryption_id: 磁盘加密时的密钥ID，严格UUID正则校验。 不传该参数时，表示不进行磁盘加密。
         :type disk_encryption_id: str
+        :param configurations: 参数组配置信息。
+        :type configurations: list[:class:`huaweicloudsdkdds.v3.RestoreNewInstanceConfigurationsOption`]
         :param flavor: 实例规格详情。
         :type flavor: list[:class:`huaweicloudsdkdds.v3.RestoreNewInstanceFlavorOption`]
         :param backup_strategy: 
@@ -87,6 +93,8 @@ class RestoreNewInstanceRequestBody:
         :type server_group_policies: list[str]
         :param restore_point: 
         :type restore_point: :class:`huaweicloudsdkdds.v3.RestorePoint`
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkdds.v3.ChargeInfoOption`
         """
         
         
@@ -98,6 +106,7 @@ class RestoreNewInstanceRequestBody:
         self._security_group_id = None
         self._password = None
         self._disk_encryption_id = None
+        self._configurations = None
         self._flavor = None
         self._backup_strategy = None
         self._enterprise_project_id = None
@@ -105,6 +114,7 @@ class RestoreNewInstanceRequestBody:
         self._dss_pool_id = None
         self._server_group_policies = None
         self._restore_point = None
+        self._charge_info = None
         self.discriminator = None
 
         self.name = name
@@ -116,6 +126,8 @@ class RestoreNewInstanceRequestBody:
             self.password = password
         if disk_encryption_id is not None:
             self.disk_encryption_id = disk_encryption_id
+        if configurations is not None:
+            self.configurations = configurations
         self.flavor = flavor
         if backup_strategy is not None:
             self.backup_strategy = backup_strategy
@@ -128,6 +140,8 @@ class RestoreNewInstanceRequestBody:
         if server_group_policies is not None:
             self.server_group_policies = server_group_policies
         self.restore_point = restore_point
+        if charge_info is not None:
+            self.charge_info = charge_info
 
     @property
     def name(self):
@@ -284,6 +298,28 @@ class RestoreNewInstanceRequestBody:
         self._disk_encryption_id = disk_encryption_id
 
     @property
+    def configurations(self):
+        """Gets the configurations of this RestoreNewInstanceRequestBody.
+
+        参数组配置信息。
+
+        :return: The configurations of this RestoreNewInstanceRequestBody.
+        :rtype: list[:class:`huaweicloudsdkdds.v3.RestoreNewInstanceConfigurationsOption`]
+        """
+        return self._configurations
+
+    @configurations.setter
+    def configurations(self, configurations):
+        """Sets the configurations of this RestoreNewInstanceRequestBody.
+
+        参数组配置信息。
+
+        :param configurations: The configurations of this RestoreNewInstanceRequestBody.
+        :type configurations: list[:class:`huaweicloudsdkdds.v3.RestoreNewInstanceConfigurationsOption`]
+        """
+        self._configurations = configurations
+
+    @property
     def flavor(self):
         """Gets the flavor of this RestoreNewInstanceRequestBody.
 
@@ -432,6 +468,26 @@ class RestoreNewInstanceRequestBody:
         :type restore_point: :class:`huaweicloudsdkdds.v3.RestorePoint`
         """
         self._restore_point = restore_point
+
+    @property
+    def charge_info(self):
+        """Gets the charge_info of this RestoreNewInstanceRequestBody.
+
+
+        :return: The charge_info of this RestoreNewInstanceRequestBody.
+        :rtype: :class:`huaweicloudsdkdds.v3.ChargeInfoOption`
+        """
+        return self._charge_info
+
+    @charge_info.setter
+    def charge_info(self, charge_info):
+        """Sets the charge_info of this RestoreNewInstanceRequestBody.
+
+
+        :param charge_info: The charge_info of this RestoreNewInstanceRequestBody.
+        :type charge_info: :class:`huaweicloudsdkdds.v3.ChargeInfoOption`
+        """
+        self._charge_info = charge_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

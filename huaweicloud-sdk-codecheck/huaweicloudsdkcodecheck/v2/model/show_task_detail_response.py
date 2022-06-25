@@ -42,12 +42,14 @@ class ShowTaskDetailResponse(SdkResponse):
         'check_type': 'str',
         'created_at': 'str',
         'cyclomatic_complexity_per_method': 'str',
+        'cyclomatic_complexity_per_file': 'str',
         'critical_count': 'str',
         'major_count': 'str',
         'minor_count': 'str',
         'suggestion_count': 'str',
         'is_access': 'str',
-        'trigger_type': 'str'
+        'trigger_type': 'str',
+        'file_duplication_ratio': 'str'
     }
 
     attribute_map = {
@@ -72,15 +74,17 @@ class ShowTaskDetailResponse(SdkResponse):
         'check_type': 'check_type',
         'created_at': 'created_at',
         'cyclomatic_complexity_per_method': 'cyclomatic_complexity_per_method',
+        'cyclomatic_complexity_per_file': 'cyclomatic_complexity_per_file',
         'critical_count': 'critical_count',
         'major_count': 'major_count',
         'minor_count': 'minor_count',
         'suggestion_count': 'suggestion_count',
         'is_access': 'is_access',
-        'trigger_type': 'trigger_type'
+        'trigger_type': 'trigger_type',
+        'file_duplication_ratio': 'file_duplication_ratio'
     }
 
-    def __init__(self, task_id=None, task_name=None, creator_id=None, git_url=None, git_branch=None, last_check_time=None, code_line_total=None, code_line=None, code_quality=None, issue_count=None, risk_coefficient=None, duplication_ratio=None, complexity_count=None, duplicated_lines=None, comment_lines=None, comment_ratio=None, duplicated_blocks=None, last_exec_time=None, check_type=None, created_at=None, cyclomatic_complexity_per_method=None, critical_count=None, major_count=None, minor_count=None, suggestion_count=None, is_access=None, trigger_type=None):
+    def __init__(self, task_id=None, task_name=None, creator_id=None, git_url=None, git_branch=None, last_check_time=None, code_line_total=None, code_line=None, code_quality=None, issue_count=None, risk_coefficient=None, duplication_ratio=None, complexity_count=None, duplicated_lines=None, comment_lines=None, comment_ratio=None, duplicated_blocks=None, last_exec_time=None, check_type=None, created_at=None, cyclomatic_complexity_per_method=None, cyclomatic_complexity_per_file=None, critical_count=None, major_count=None, minor_count=None, suggestion_count=None, is_access=None, trigger_type=None, file_duplication_ratio=None):
         """ShowTaskDetailResponse
 
         The model defined in huaweicloud sdk
@@ -127,6 +131,8 @@ class ShowTaskDetailResponse(SdkResponse):
         :type created_at: str
         :param cyclomatic_complexity_per_method: 代码平均复杂度
         :type cyclomatic_complexity_per_method: str
+        :param cyclomatic_complexity_per_file: 代码平均复杂度(文件)
+        :type cyclomatic_complexity_per_file: str
         :param critical_count: 致命问题数
         :type critical_count: str
         :param major_count: 严重问题数
@@ -139,6 +145,8 @@ class ShowTaskDetailResponse(SdkResponse):
         :type is_access: str
         :param trigger_type: 任务触发方式
         :type trigger_type: str
+        :param file_duplication_ratio: 文件重复率
+        :type file_duplication_ratio: str
         """
         
         super(ShowTaskDetailResponse, self).__init__()
@@ -164,12 +172,14 @@ class ShowTaskDetailResponse(SdkResponse):
         self._check_type = None
         self._created_at = None
         self._cyclomatic_complexity_per_method = None
+        self._cyclomatic_complexity_per_file = None
         self._critical_count = None
         self._major_count = None
         self._minor_count = None
         self._suggestion_count = None
         self._is_access = None
         self._trigger_type = None
+        self._file_duplication_ratio = None
         self.discriminator = None
 
         if task_id is not None:
@@ -214,6 +224,8 @@ class ShowTaskDetailResponse(SdkResponse):
             self.created_at = created_at
         if cyclomatic_complexity_per_method is not None:
             self.cyclomatic_complexity_per_method = cyclomatic_complexity_per_method
+        if cyclomatic_complexity_per_file is not None:
+            self.cyclomatic_complexity_per_file = cyclomatic_complexity_per_file
         if critical_count is not None:
             self.critical_count = critical_count
         if major_count is not None:
@@ -226,6 +238,8 @@ class ShowTaskDetailResponse(SdkResponse):
             self.is_access = is_access
         if trigger_type is not None:
             self.trigger_type = trigger_type
+        if file_duplication_ratio is not None:
+            self.file_duplication_ratio = file_duplication_ratio
 
     @property
     def task_id(self):
@@ -690,6 +704,28 @@ class ShowTaskDetailResponse(SdkResponse):
         self._cyclomatic_complexity_per_method = cyclomatic_complexity_per_method
 
     @property
+    def cyclomatic_complexity_per_file(self):
+        """Gets the cyclomatic_complexity_per_file of this ShowTaskDetailResponse.
+
+        代码平均复杂度(文件)
+
+        :return: The cyclomatic_complexity_per_file of this ShowTaskDetailResponse.
+        :rtype: str
+        """
+        return self._cyclomatic_complexity_per_file
+
+    @cyclomatic_complexity_per_file.setter
+    def cyclomatic_complexity_per_file(self, cyclomatic_complexity_per_file):
+        """Sets the cyclomatic_complexity_per_file of this ShowTaskDetailResponse.
+
+        代码平均复杂度(文件)
+
+        :param cyclomatic_complexity_per_file: The cyclomatic_complexity_per_file of this ShowTaskDetailResponse.
+        :type cyclomatic_complexity_per_file: str
+        """
+        self._cyclomatic_complexity_per_file = cyclomatic_complexity_per_file
+
+    @property
     def critical_count(self):
         """Gets the critical_count of this ShowTaskDetailResponse.
 
@@ -820,6 +856,28 @@ class ShowTaskDetailResponse(SdkResponse):
         :type trigger_type: str
         """
         self._trigger_type = trigger_type
+
+    @property
+    def file_duplication_ratio(self):
+        """Gets the file_duplication_ratio of this ShowTaskDetailResponse.
+
+        文件重复率
+
+        :return: The file_duplication_ratio of this ShowTaskDetailResponse.
+        :rtype: str
+        """
+        return self._file_duplication_ratio
+
+    @file_duplication_ratio.setter
+    def file_duplication_ratio(self, file_duplication_ratio):
+        """Sets the file_duplication_ratio of this ShowTaskDetailResponse.
+
+        文件重复率
+
+        :param file_duplication_ratio: The file_duplication_ratio of this ShowTaskDetailResponse.
+        :type file_duplication_ratio: str
+        """
+        self._file_duplication_ratio = file_duplication_ratio
 
     def to_dict(self):
         """Returns the model properties as a dict"""

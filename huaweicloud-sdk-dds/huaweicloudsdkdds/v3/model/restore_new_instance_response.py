@@ -33,12 +33,15 @@ class RestoreNewInstanceResponse(SdkResponse):
         'security_group_id': 'str',
         'disk_encryption_id': 'str',
         'mode': 'str',
+        'configurations': 'list[RestoreNewInstanceConfigurationsOption]',
         'flavor': 'list[RestoreNewInstanceFlavorOption]',
         'backup_strategy': 'BackupStrategy',
         'enterprise_project_id': 'str',
         'ssl_option': 'str',
         'dss_pool_id': 'str',
-        'job_id': 'str'
+        'job_id': 'str',
+        'order_id': 'str',
+        'charge_info': 'ChargeInfoResult'
     }
 
     attribute_map = {
@@ -54,15 +57,18 @@ class RestoreNewInstanceResponse(SdkResponse):
         'security_group_id': 'security_group_id',
         'disk_encryption_id': 'disk_encryption_id',
         'mode': 'mode',
+        'configurations': 'configurations',
         'flavor': 'flavor',
         'backup_strategy': 'backup_strategy',
         'enterprise_project_id': 'enterprise_project_id',
         'ssl_option': 'ssl_option',
         'dss_pool_id': 'dss_pool_id',
-        'job_id': 'job_id'
+        'job_id': 'job_id',
+        'order_id': 'order_id',
+        'charge_info': 'charge_info'
     }
 
-    def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, job_id=None):
+    def __init__(self, id=None, datastore=None, name=None, created=None, status=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, disk_encryption_id=None, mode=None, configurations=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, job_id=None, order_id=None, charge_info=None):
         """RestoreNewInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -91,6 +97,8 @@ class RestoreNewInstanceResponse(SdkResponse):
         :type disk_encryption_id: str
         :param mode: 实例类型，与请求参数相同。
         :type mode: str
+        :param configurations: 参数组配置信息。
+        :type configurations: list[:class:`huaweicloudsdkdds.v3.RestoreNewInstanceConfigurationsOption`]
         :param flavor: 实例规格详情，与请求参数相同。
         :type flavor: list[:class:`huaweicloudsdkdds.v3.RestoreNewInstanceFlavorOption`]
         :param backup_strategy: 
@@ -103,6 +111,10 @@ class RestoreNewInstanceResponse(SdkResponse):
         :type dss_pool_id: str
         :param job_id: 创建实例的工作流ID。
         :type job_id: str
+        :param order_id: 创建实例的订单ID，仅创建包年包月实例时返回该参数。
+        :type order_id: str
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkdds.v3.ChargeInfoResult`
         """
         
         super(RestoreNewInstanceResponse, self).__init__()
@@ -119,12 +131,15 @@ class RestoreNewInstanceResponse(SdkResponse):
         self._security_group_id = None
         self._disk_encryption_id = None
         self._mode = None
+        self._configurations = None
         self._flavor = None
         self._backup_strategy = None
         self._enterprise_project_id = None
         self._ssl_option = None
         self._dss_pool_id = None
         self._job_id = None
+        self._order_id = None
+        self._charge_info = None
         self.discriminator = None
 
         if id is not None:
@@ -151,6 +166,8 @@ class RestoreNewInstanceResponse(SdkResponse):
             self.disk_encryption_id = disk_encryption_id
         if mode is not None:
             self.mode = mode
+        if configurations is not None:
+            self.configurations = configurations
         if flavor is not None:
             self.flavor = flavor
         if backup_strategy is not None:
@@ -163,6 +180,10 @@ class RestoreNewInstanceResponse(SdkResponse):
             self.dss_pool_id = dss_pool_id
         if job_id is not None:
             self.job_id = job_id
+        if order_id is not None:
+            self.order_id = order_id
+        if charge_info is not None:
+            self.charge_info = charge_info
 
     @property
     def id(self):
@@ -427,6 +448,28 @@ class RestoreNewInstanceResponse(SdkResponse):
         self._mode = mode
 
     @property
+    def configurations(self):
+        """Gets the configurations of this RestoreNewInstanceResponse.
+
+        参数组配置信息。
+
+        :return: The configurations of this RestoreNewInstanceResponse.
+        :rtype: list[:class:`huaweicloudsdkdds.v3.RestoreNewInstanceConfigurationsOption`]
+        """
+        return self._configurations
+
+    @configurations.setter
+    def configurations(self, configurations):
+        """Sets the configurations of this RestoreNewInstanceResponse.
+
+        参数组配置信息。
+
+        :param configurations: The configurations of this RestoreNewInstanceResponse.
+        :type configurations: list[:class:`huaweicloudsdkdds.v3.RestoreNewInstanceConfigurationsOption`]
+        """
+        self._configurations = configurations
+
+    @property
     def flavor(self):
         """Gets the flavor of this RestoreNewInstanceResponse.
 
@@ -555,6 +598,48 @@ class RestoreNewInstanceResponse(SdkResponse):
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this RestoreNewInstanceResponse.
+
+        创建实例的订单ID，仅创建包年包月实例时返回该参数。
+
+        :return: The order_id of this RestoreNewInstanceResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this RestoreNewInstanceResponse.
+
+        创建实例的订单ID，仅创建包年包月实例时返回该参数。
+
+        :param order_id: The order_id of this RestoreNewInstanceResponse.
+        :type order_id: str
+        """
+        self._order_id = order_id
+
+    @property
+    def charge_info(self):
+        """Gets the charge_info of this RestoreNewInstanceResponse.
+
+
+        :return: The charge_info of this RestoreNewInstanceResponse.
+        :rtype: :class:`huaweicloudsdkdds.v3.ChargeInfoResult`
+        """
+        return self._charge_info
+
+    @charge_info.setter
+    def charge_info(self, charge_info):
+        """Sets the charge_info of this RestoreNewInstanceResponse.
+
+
+        :param charge_info: The charge_info of this RestoreNewInstanceResponse.
+        :type charge_info: :class:`huaweicloudsdkdds.v3.ChargeInfoResult`
+        """
+        self._charge_info = charge_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

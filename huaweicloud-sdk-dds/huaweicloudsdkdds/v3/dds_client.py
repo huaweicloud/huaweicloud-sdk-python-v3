@@ -406,6 +406,64 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_configuration(self, request):
+        """创建参数模板
+
+        创建参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateConfiguration
+        :type request: :class:`huaweicloudsdkdds.v3.CreateConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.CreateConfigurationResponse`
+        """
+        return self.create_configuration_with_http_info(request)
+
+    def create_configuration_with_http_info(self, request):
+        all_params = ['create_configuration_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/configurations',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateConfigurationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_database_role(self, request):
         """创建数据库角色
 
@@ -697,6 +755,64 @@ class DdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateManualBackupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_configuration(self, request):
+        """删除参数模板
+
+        删除参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteConfiguration
+        :type request: :class:`huaweicloudsdkdds.v3.DeleteConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.DeleteConfigurationResponse`
+        """
+        return self.delete_configuration_with_http_info(request)
+
+    def delete_configuration_with_http_info(self, request):
+        all_params = ['config_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'config_id' in local_var_params:
+            path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/configurations/{config_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1373,6 +1489,66 @@ class DdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListBackupsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_configurations(self, request):
+        """获取参数模板列表
+
+        获取参数模板列表，包括DDS数据库的所有默认参数模板和用户创建的参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListConfigurations
+        :type request: :class:`huaweicloudsdkdds.v3.ListConfigurationsRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ListConfigurationsResponse`
+        """
+        return self.list_configurations_with_http_info(request)
+
+    def list_configurations_with_http_info(self, request):
+        all_params = ['offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/configurations',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListConfigurationsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3302,6 +3478,64 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_configuration_parameter(self, request):
+        """获取参数模板的详情
+
+        获取参数模板的详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowConfigurationParameter
+        :type request: :class:`huaweicloudsdkdds.v3.ShowConfigurationParameterRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ShowConfigurationParameterResponse`
+        """
+        return self.show_configuration_parameter_with_http_info(request)
+
+    def show_configuration_parameter_with_http_info(self, request):
+        all_params = ['config_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'config_id' in local_var_params:
+            path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/configurations/{config_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowConfigurationParameterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_connection_statistics(self, request):
         """查询实例连接数统计信息
 
@@ -3357,6 +3591,66 @@ class DdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowConnectionStatisticsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_entity_configuration(self, request):
+        """获取指定实例的参数信息
+
+        获取指定实例的参数，可以是实例，组，节点的参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowEntityConfiguration
+        :type request: :class:`huaweicloudsdkdds.v3.ShowEntityConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ShowEntityConfigurationResponse`
+        """
+        return self.show_entity_configuration_with_http_info(request)
+
+    def show_entity_configuration_with_http_info(self, request):
+        all_params = ['instance_id', 'entity_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'entity_id' in local_var_params:
+            query_params.append(('entity_id', local_var_params['entity_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/configurations',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowEntityConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3529,6 +3823,66 @@ class DdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowShardingBalancerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def switch_configuration(self, request):
+        """应用参数模板
+
+        指定实例变更参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SwitchConfiguration
+        :type request: :class:`huaweicloudsdkdds.v3.SwitchConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.SwitchConfigurationResponse`
+        """
+        return self.switch_configuration_with_http_info(request)
+
+    def switch_configuration_with_http_info(self, request):
+        all_params = ['config_id', 'apply_configuration_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'config_id' in local_var_params:
+            path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/configurations/{config_id}/apply',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SwitchConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3767,6 +4121,126 @@ class DdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateClientNetworkResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_configuration_parameter(self, request):
+        """修改参数模板
+
+        修改指定参数模板的参数信息，包括名称、描述、指定参数的值。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateConfigurationParameter
+        :type request: :class:`huaweicloudsdkdds.v3.UpdateConfigurationParameterRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.UpdateConfigurationParameterResponse`
+        """
+        return self.update_configuration_parameter_with_http_info(request)
+
+    def update_configuration_parameter_with_http_info(self, request):
+        all_params = ['config_id', 'update_configuration_parameter_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'config_id' in local_var_params:
+            path_params['config_id'] = local_var_params['config_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/configurations/{config_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateConfigurationParameterResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_entity_configuration(self, request):
+        """修改指定实例的参数
+
+        修改指定实例的参数，可以是实例，组，节点的参数模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateEntityConfiguration
+        :type request: :class:`huaweicloudsdkdds.v3.UpdateEntityConfigurationRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.UpdateEntityConfigurationResponse`
+        """
+        return self.update_entity_configuration_with_http_info(request)
+
+    def update_entity_configuration_with_http_info(self, request):
+        all_params = ['instance_id', 'update_configuration_parameter_result']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/configurations',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateEntityConfigurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

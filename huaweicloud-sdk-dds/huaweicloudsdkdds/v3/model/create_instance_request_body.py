@@ -32,13 +32,15 @@ class CreateInstanceRequestBody:
         'password': 'str',
         'disk_encryption_id': 'str',
         'mode': 'str',
+        'configurations': 'list[CreateInstanceConfigurationsOption]',
         'flavor': 'list[CreateInstanceFlavorOption]',
         'backup_strategy': 'BackupStrategy',
         'enterprise_project_id': 'str',
         'ssl_option': 'str',
         'dss_pool_id': 'str',
         'server_group_policies': 'list[str]',
-        'tags': 'list[TagWithKeyValue]'
+        'tags': 'list[TagWithKeyValue]',
+        'charge_info': 'ChargeInfoOption'
     }
 
     attribute_map = {
@@ -53,16 +55,18 @@ class CreateInstanceRequestBody:
         'password': 'password',
         'disk_encryption_id': 'disk_encryption_id',
         'mode': 'mode',
+        'configurations': 'configurations',
         'flavor': 'flavor',
         'backup_strategy': 'backup_strategy',
         'enterprise_project_id': 'enterprise_project_id',
         'ssl_option': 'ssl_option',
         'dss_pool_id': 'dss_pool_id',
         'server_group_policies': 'server_group_policies',
-        'tags': 'tags'
+        'tags': 'tags',
+        'charge_info': 'charge_info'
     }
 
-    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, port=None, password=None, disk_encryption_id=None, mode=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, server_group_policies=None, tags=None):
+    def __init__(self, name=None, datastore=None, region=None, availability_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, port=None, password=None, disk_encryption_id=None, mode=None, configurations=None, flavor=None, backup_strategy=None, enterprise_project_id=None, ssl_option=None, dss_pool_id=None, server_group_policies=None, tags=None, charge_info=None):
         """CreateInstanceRequestBody
 
         The model defined in huaweicloud sdk
@@ -89,6 +93,8 @@ class CreateInstanceRequestBody:
         :type disk_encryption_id: str
         :param mode: 实例类型。支持集群、副本集、以及单节点。 取值   - Sharding   - ReplicaSet   - Single
         :type mode: str
+        :param configurations: 参数组配置信息。
+        :type configurations: list[:class:`huaweicloudsdkdds.v3.CreateInstanceConfigurationsOption`]
         :param flavor: 实例规格详情。
         :type flavor: list[:class:`huaweicloudsdkdds.v3.CreateInstanceFlavorOption`]
         :param backup_strategy: 
@@ -103,6 +109,8 @@ class CreateInstanceRequestBody:
         :type server_group_policies: list[str]
         :param tags: 标签列表。单个实例总标签数上限20个。
         :type tags: list[:class:`huaweicloudsdkdds.v3.TagWithKeyValue`]
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkdds.v3.ChargeInfoOption`
         """
         
         
@@ -118,6 +126,7 @@ class CreateInstanceRequestBody:
         self._password = None
         self._disk_encryption_id = None
         self._mode = None
+        self._configurations = None
         self._flavor = None
         self._backup_strategy = None
         self._enterprise_project_id = None
@@ -125,6 +134,7 @@ class CreateInstanceRequestBody:
         self._dss_pool_id = None
         self._server_group_policies = None
         self._tags = None
+        self._charge_info = None
         self.discriminator = None
 
         self.name = name
@@ -141,6 +151,8 @@ class CreateInstanceRequestBody:
         if disk_encryption_id is not None:
             self.disk_encryption_id = disk_encryption_id
         self.mode = mode
+        if configurations is not None:
+            self.configurations = configurations
         self.flavor = flavor
         if backup_strategy is not None:
             self.backup_strategy = backup_strategy
@@ -154,6 +166,8 @@ class CreateInstanceRequestBody:
             self.server_group_policies = server_group_policies
         if tags is not None:
             self.tags = tags
+        if charge_info is not None:
+            self.charge_info = charge_info
 
     @property
     def name(self):
@@ -396,6 +410,28 @@ class CreateInstanceRequestBody:
         self._mode = mode
 
     @property
+    def configurations(self):
+        """Gets the configurations of this CreateInstanceRequestBody.
+
+        参数组配置信息。
+
+        :return: The configurations of this CreateInstanceRequestBody.
+        :rtype: list[:class:`huaweicloudsdkdds.v3.CreateInstanceConfigurationsOption`]
+        """
+        return self._configurations
+
+    @configurations.setter
+    def configurations(self, configurations):
+        """Sets the configurations of this CreateInstanceRequestBody.
+
+        参数组配置信息。
+
+        :param configurations: The configurations of this CreateInstanceRequestBody.
+        :type configurations: list[:class:`huaweicloudsdkdds.v3.CreateInstanceConfigurationsOption`]
+        """
+        self._configurations = configurations
+
+    @property
     def flavor(self):
         """Gets the flavor of this CreateInstanceRequestBody.
 
@@ -546,6 +582,26 @@ class CreateInstanceRequestBody:
         :type tags: list[:class:`huaweicloudsdkdds.v3.TagWithKeyValue`]
         """
         self._tags = tags
+
+    @property
+    def charge_info(self):
+        """Gets the charge_info of this CreateInstanceRequestBody.
+
+
+        :return: The charge_info of this CreateInstanceRequestBody.
+        :rtype: :class:`huaweicloudsdkdds.v3.ChargeInfoOption`
+        """
+        return self._charge_info
+
+    @charge_info.setter
+    def charge_info(self, charge_info):
+        """Sets the charge_info of this CreateInstanceRequestBody.
+
+
+        :param charge_info: The charge_info of this CreateInstanceRequestBody.
+        :type charge_info: :class:`huaweicloudsdkdds.v3.ChargeInfoOption`
+        """
+        self._charge_info = charge_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

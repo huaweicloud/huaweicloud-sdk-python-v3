@@ -1,3 +1,50 @@
+# 3.0.95 2022-06-25
+
+### HuaweiCloud SDK Core
+
+- _Features_
+  - None
+- _Bug Fix_
+  - Fix the problem that the cloud service package depended on the lower version of `huaweicloudsdkcore` causing `ModuleNotFoundError`
+- _Change_
+  - None
+
+### HuaweiCloud SDK CodeCheck
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `cyclomatic_complexity_per_file`, `file_duplication_ratio` to the interface `ShowTaskDetail`
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - Support the following interfaces:
+    - `ShowEntityConfiguration`
+    - `UpdateEntityConfiguration`
+    - `ShowConfigurationParameter`
+    - `UpdateConfigurationParameter`
+    - `DeleteConfiguration`
+    - `ListConfigurations`
+    - `CreateConfiguration`
+    - `SwitchConfiguration`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `configurations`, `charge_info` to the interface `CreateInstance`
+  - Changes of the interface `ResizeInstanceVolume`:
+    - Add the request parameter `is_auto_pay`
+    - Add the response parameter `order_id`
+  - Changes of the interface `AddShardingNode`:
+    - Add the request parameter `is_auto_pay`
+    - Add the response parameter `order_id`
+  - Changes of the interface `ResizeInstance`:
+    - Add the request parameter `is_auto_pay`
+    - Add the response parameter `order_id`
+  - Add the request parameters `configurations`, `charge_info` to the interface `RestoreNewInstance`
+
 # 3.0.94 2022-06-23
 
 ### HuaweiCloud SDK Core

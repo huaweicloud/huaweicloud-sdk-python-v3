@@ -21,29 +21,36 @@ class ResizeInstanceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'job_id': 'str'
+        'job_id': 'str',
+        'order_id': 'str'
     }
 
     attribute_map = {
-        'job_id': 'job_id'
+        'job_id': 'job_id',
+        'order_id': 'order_id'
     }
 
-    def __init__(self, job_id=None):
+    def __init__(self, job_id=None, order_id=None):
         """ResizeInstanceResponse
 
         The model defined in huaweicloud sdk
 
         :param job_id: 任务ID。
         :type job_id: str
+        :param order_id: 订单ID，仅变更包年包月实例的规格时返回该参数。
+        :type order_id: str
         """
         
         super(ResizeInstanceResponse, self).__init__()
 
         self._job_id = None
+        self._order_id = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
+        if order_id is not None:
+            self.order_id = order_id
 
     @property
     def job_id(self):
@@ -66,6 +73,28 @@ class ResizeInstanceResponse(SdkResponse):
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this ResizeInstanceResponse.
+
+        订单ID，仅变更包年包月实例的规格时返回该参数。
+
+        :return: The order_id of this ResizeInstanceResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this ResizeInstanceResponse.
+
+        订单ID，仅变更包年包月实例的规格时返回该参数。
+
+        :param order_id: The order_id of this ResizeInstanceResponse.
+        :type order_id: str
+        """
+        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
