@@ -42,7 +42,11 @@ class UpdateHostResponse(SdkResponse):
         'web_tag': 'bool',
         'flag': 'Flag',
         'exclusive_ip': 'bool',
-        'description': 'str'
+        'description': 'str',
+        'http2_enable': 'bool',
+        'ipv6_enable': 'bool',
+        'lb_algorithm': 'str',
+        'timeout_config': 'TimeoutConfig'
     }
 
     attribute_map = {
@@ -67,10 +71,14 @@ class UpdateHostResponse(SdkResponse):
         'web_tag': 'web_tag',
         'flag': 'flag',
         'exclusive_ip': 'exclusive_ip',
-        'description': 'description'
+        'description': 'description',
+        'http2_enable': 'http2_enable',
+        'ipv6_enable': 'ipv6_enable',
+        'lb_algorithm': 'lb_algorithm',
+        'timeout_config': 'timeout_config'
     }
 
-    def __init__(self, id=None, policyid=None, hostname=None, domainid=None, access_code=None, protocol=None, server=None, certificateid=None, certificatename=None, proxy=None, locked=None, protect_status=None, access_status=None, timestamp=None, tls=None, cipher=None, enterprise_project_id=None, block_page=None, web_tag=None, flag=None, exclusive_ip=None, description=None):
+    def __init__(self, id=None, policyid=None, hostname=None, domainid=None, access_code=None, protocol=None, server=None, certificateid=None, certificatename=None, proxy=None, locked=None, protect_status=None, access_status=None, timestamp=None, tls=None, cipher=None, enterprise_project_id=None, block_page=None, web_tag=None, flag=None, exclusive_ip=None, description=None, http2_enable=None, ipv6_enable=None, lb_algorithm=None, timeout_config=None):
         """UpdateHostResponse
 
         The model defined in huaweicloud sdk
@@ -119,6 +127,14 @@ class UpdateHostResponse(SdkResponse):
         :type exclusive_ip: bool
         :param description: 域名描述
         :type description: str
+        :param http2_enable: 是否使用HTTP2
+        :type http2_enable: bool
+        :param ipv6_enable: 是否开启IPv6防护
+        :type ipv6_enable: bool
+        :param lb_algorithm: 负载均衡算法
+        :type lb_algorithm: str
+        :param timeout_config: 
+        :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
         """
         
         super(UpdateHostResponse, self).__init__()
@@ -145,6 +161,10 @@ class UpdateHostResponse(SdkResponse):
         self._flag = None
         self._exclusive_ip = None
         self._description = None
+        self._http2_enable = None
+        self._ipv6_enable = None
+        self._lb_algorithm = None
+        self._timeout_config = None
         self.discriminator = None
 
         if id is not None:
@@ -191,6 +211,14 @@ class UpdateHostResponse(SdkResponse):
             self.exclusive_ip = exclusive_ip
         if description is not None:
             self.description = description
+        if http2_enable is not None:
+            self.http2_enable = http2_enable
+        if ipv6_enable is not None:
+            self.ipv6_enable = ipv6_enable
+        if lb_algorithm is not None:
+            self.lb_algorithm = lb_algorithm
+        if timeout_config is not None:
+            self.timeout_config = timeout_config
 
     @property
     def id(self):
@@ -671,6 +699,92 @@ class UpdateHostResponse(SdkResponse):
         :type description: str
         """
         self._description = description
+
+    @property
+    def http2_enable(self):
+        """Gets the http2_enable of this UpdateHostResponse.
+
+        是否使用HTTP2
+
+        :return: The http2_enable of this UpdateHostResponse.
+        :rtype: bool
+        """
+        return self._http2_enable
+
+    @http2_enable.setter
+    def http2_enable(self, http2_enable):
+        """Sets the http2_enable of this UpdateHostResponse.
+
+        是否使用HTTP2
+
+        :param http2_enable: The http2_enable of this UpdateHostResponse.
+        :type http2_enable: bool
+        """
+        self._http2_enable = http2_enable
+
+    @property
+    def ipv6_enable(self):
+        """Gets the ipv6_enable of this UpdateHostResponse.
+
+        是否开启IPv6防护
+
+        :return: The ipv6_enable of this UpdateHostResponse.
+        :rtype: bool
+        """
+        return self._ipv6_enable
+
+    @ipv6_enable.setter
+    def ipv6_enable(self, ipv6_enable):
+        """Sets the ipv6_enable of this UpdateHostResponse.
+
+        是否开启IPv6防护
+
+        :param ipv6_enable: The ipv6_enable of this UpdateHostResponse.
+        :type ipv6_enable: bool
+        """
+        self._ipv6_enable = ipv6_enable
+
+    @property
+    def lb_algorithm(self):
+        """Gets the lb_algorithm of this UpdateHostResponse.
+
+        负载均衡算法
+
+        :return: The lb_algorithm of this UpdateHostResponse.
+        :rtype: str
+        """
+        return self._lb_algorithm
+
+    @lb_algorithm.setter
+    def lb_algorithm(self, lb_algorithm):
+        """Sets the lb_algorithm of this UpdateHostResponse.
+
+        负载均衡算法
+
+        :param lb_algorithm: The lb_algorithm of this UpdateHostResponse.
+        :type lb_algorithm: str
+        """
+        self._lb_algorithm = lb_algorithm
+
+    @property
+    def timeout_config(self):
+        """Gets the timeout_config of this UpdateHostResponse.
+
+
+        :return: The timeout_config of this UpdateHostResponse.
+        :rtype: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
+        """
+        return self._timeout_config
+
+    @timeout_config.setter
+    def timeout_config(self, timeout_config):
+        """Sets the timeout_config of this UpdateHostResponse.
+
+
+        :param timeout_config: The timeout_config of this UpdateHostResponse.
+        :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
+        """
+        self._timeout_config = timeout_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

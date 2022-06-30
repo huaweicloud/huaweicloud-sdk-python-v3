@@ -1,3 +1,170 @@
+# 3.0.96 2022-06-30
+
+### HuaweiCloud SDK UGO
+
+- _新增特性_
+  - 支持数据库和应用迁移服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`SendVerificationMessageCode`请求参数`mobile_phone`改为必填
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`SendVerificationMessageCode`请求参数`email`改为必填
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowDomainFullConfig`新增响应参数 `cache_url_parameter_filter`
+  - 接口`UpdateDomainFullConfig`新增请求参数 `cache_url_parameter_filter`
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 支持接口`UploadExtensionFile`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DNS
+
+- _新增特性_
+  - 支持接口`CreateRecordSetWithBatchLines`、`BatchUpdateRecordSetWithLine`、`BatchDeleteRecordSetWithLine`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateRecordSetWithLine`请求参数`records`改为非必填
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 支持接口`UpdateFunctionMaxInstanceConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`新增响应参数 `lb_port`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListComponentInfos`新增响应参数 `total_count`
+
+### HuaweiCloud SDK IEF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateTag`:
+    - 新增请求参数 `CreateTagRequestBody`
+    - 移除请求参数 `tag`
+  - 接口`ListEdgeNodes`新增请求参数 `sort`、`state`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 支持接口`RecognizeHkIdCard`、`RecognizeCambodianIdCard`、`RecognizeExitEntryPermit`、`RecognizeMainlandTravelPermit`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeGeneralText`响应参数`direction`类型调整 `int32` -> `float`
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 支持接口`CreateProjectModule`、`ListProjectModules`、`UpdateProjectModule`、`DeleteProjectModule`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK UGO
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListQuotas`
+    - `RunSqlConversion`
+    - `ListEvaluationProjects`
+    - `CreateEvaluationProject`
+    - `ShowEvaluationProjectStatus`
+    - `ShowEvaluationProjectDetail`
+    - `ConfirmTargetDbType`
+    - `DeleteEvaluationProject`
+    - `ListMigrationProjects`
+    - `CreateMigrationProject`
+    - `ShowMigrationProjectStatus`
+    - `CheckPermission`
+    - `ListPermissionCheckResult`
+    - `ShowMigrationProjectDetail`
+    - `CommitSyntaxConversion`
+    - `ListSyntaxConversionProgress`
+    - `CommitVerification`
+    - `ListVerificationProgress`
+    - `DownloadFailureReport`
+    - `DeleteMigrationProject`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`MigrateSqlStatement`
+  - 接口`ListApiVersions`:
+    - 新增请求参数 `X-Auth-Token`
+    - 响应参数`id`、`links`、`version`、`status`、`updated`改为必填
+  - 接口`ShowApiVersionInfo`:
+    - 新增请求参数 `X-Auth-Token`
+    - 响应参数`id`、`links`、`version`、`status`、`updated`改为必填
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 支持接口`ListOverviewsClassification`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListStatistics`新增响应参数 `host`
+  - 接口`ListHost`新增响应参数 `timeout_config`
+  - 接口`ShowHost`新增响应参数 `timeout_config`
+  - 接口`UpdateHost`:
+    - 新增请求参数 `block_page`、`traffic_mark`、`flag`、`extend`、`http2_enable`、`ipv6_enable`、`lb_algorithm`、`timeout_config`
+    - 新增响应参数 `http2_enable`、`ipv6_enable`、`lb_algorithm`、`timeout_config`
+  - 接口`UpdatePremiumHost`:
+    - 新增请求参数 `mode`、`locked`、`protect_status`、`access_status`、`timestamp`、`pool_ids`、`block_page`、`traffic_mark`、`flag`、`extend`、`circuit_breaker`、`timeout_config`
+    - 新增响应参数 `timeout_config`
+  - 接口`ShowPremiumHost`新增响应参数 `timeout_config`
+
 # 3.0.95 2022-06-25
 
 ### HuaweiCloud SDK Core

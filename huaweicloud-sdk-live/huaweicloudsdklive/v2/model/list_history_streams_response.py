@@ -29,7 +29,7 @@ class ListHistoryStreamsResponse(SdkResponse):
     attribute_map = {
         'history_stream_list': 'history_stream_list',
         'total': 'total',
-        'x_request_id': 'X-request-id'
+        'x_request_id': 'X-Request-Id'
     }
 
     def __init__(self, history_stream_list=None, total=None, x_request_id=None):

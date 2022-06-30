@@ -55,7 +55,7 @@ class ListDevicesRequest:
         :type limit: str
         :param offset: 查询的起始位置，取值范围为非负整数，默认为0
         :type offset: str
-        :param is_binding: 是否绑定到边缘节点，为“true”时返回所有已绑定到节点的设备列表，为“false”则返回未绑定节点的设备列表
+        :param is_binding: 是否绑定到边缘节点，为“true”时返回所有已绑定到节点的设备列表；为“false”则返回未绑定节点的设备列表。
         :type is_binding: str
         :param tags: 标签的key和value通过点连接， 多个标签通过逗号连接，如：tags&#x3D;key1.value1,key2.value2
         :type tags: str
@@ -201,7 +201,7 @@ class ListDevicesRequest:
     def is_binding(self):
         """Gets the is_binding of this ListDevicesRequest.
 
-        是否绑定到边缘节点，为“true”时返回所有已绑定到节点的设备列表，为“false”则返回未绑定节点的设备列表
+        是否绑定到边缘节点，为“true”时返回所有已绑定到节点的设备列表；为“false”则返回未绑定节点的设备列表。
 
         :return: The is_binding of this ListDevicesRequest.
         :rtype: str
@@ -212,7 +212,7 @@ class ListDevicesRequest:
     def is_binding(self, is_binding):
         """Sets the is_binding of this ListDevicesRequest.
 
-        是否绑定到边缘节点，为“true”时返回所有已绑定到节点的设备列表，为“false”则返回未绑定节点的设备列表
+        是否绑定到边缘节点，为“true”时返回所有已绑定到节点的设备列表；为“false”则返回未绑定节点的设备列表。
 
         :param is_binding: The is_binding of this ListDevicesRequest.
         :type is_binding: str

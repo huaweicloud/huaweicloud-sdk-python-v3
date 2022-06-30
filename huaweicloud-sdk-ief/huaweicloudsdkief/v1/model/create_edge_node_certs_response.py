@@ -63,7 +63,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
         :type created_at: str
         :param node_id: 节点id
         :type node_id: str
-        :param type: 证书类型，包含： - system：创建节点时会默认创建一套系统证书； - application：应用证书； - device：设备证书；
+        :param type: 证书类型，包含： - system：创建节点时会默认创建一套系统证书 - application：应用证书 - device：设备证书
         :type type: str
         :param serial_num: 证书序列号
         :type serial_num: str
@@ -229,7 +229,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
     def type(self):
         """Gets the type of this CreateEdgeNodeCertsResponse.
 
-        证书类型，包含： - system：创建节点时会默认创建一套系统证书； - application：应用证书； - device：设备证书；
+        证书类型，包含： - system：创建节点时会默认创建一套系统证书 - application：应用证书 - device：设备证书
 
         :return: The type of this CreateEdgeNodeCertsResponse.
         :rtype: str
@@ -240,7 +240,7 @@ class CreateEdgeNodeCertsResponse(SdkResponse):
     def type(self, type):
         """Sets the type of this CreateEdgeNodeCertsResponse.
 
-        证书类型，包含： - system：创建节点时会默认创建一套系统证书； - application：应用证书； - device：设备证书；
+        证书类型，包含： - system：创建节点时会默认创建一套系统证书 - application：应用证书 - device：设备证书
 
         :param type: The type of this CreateEdgeNodeCertsResponse.
         :type type: str

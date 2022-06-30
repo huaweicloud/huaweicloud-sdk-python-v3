@@ -47,13 +47,13 @@ class ListDeploymentsRequest:
 
         :param ief_instance_id: 铂金版实例ID，专业版实例为空值
         :type ief_instance_id: str
-        :param limit: 每页显示的条目数量, 最大 100，默认值 10
+        :param limit: 每页显示的条目数量，最大100，默认值10
         :type limit: int
-        :param offset: 查询的起始位置, 默认值 0
+        :param offset: 查询的起始位置，默认值0
         :type offset: int
         :param sort: 查询结果排序，如按照创建时间降序排序为created_at:desc，升序排序为created_at:asc
         :type sort: str
-        :param name: deployment 名称(支持模糊匹配)
+        :param name: deployment名称（支持模糊匹配）
         :type name: str
         :param node_id: 节点ID，查询部署在该节点下的应用列表，和group_id不可同时请求
         :type node_id: str
@@ -113,7 +113,7 @@ class ListDeploymentsRequest:
     def limit(self):
         """Gets the limit of this ListDeploymentsRequest.
 
-        每页显示的条目数量, 最大 100，默认值 10
+        每页显示的条目数量，最大100，默认值10
 
         :return: The limit of this ListDeploymentsRequest.
         :rtype: int
@@ -124,7 +124,7 @@ class ListDeploymentsRequest:
     def limit(self, limit):
         """Sets the limit of this ListDeploymentsRequest.
 
-        每页显示的条目数量, 最大 100，默认值 10
+        每页显示的条目数量，最大100，默认值10
 
         :param limit: The limit of this ListDeploymentsRequest.
         :type limit: int
@@ -135,7 +135,7 @@ class ListDeploymentsRequest:
     def offset(self):
         """Gets the offset of this ListDeploymentsRequest.
 
-        查询的起始位置, 默认值 0
+        查询的起始位置，默认值0
 
         :return: The offset of this ListDeploymentsRequest.
         :rtype: int
@@ -146,7 +146,7 @@ class ListDeploymentsRequest:
     def offset(self, offset):
         """Sets the offset of this ListDeploymentsRequest.
 
-        查询的起始位置, 默认值 0
+        查询的起始位置，默认值0
 
         :param offset: The offset of this ListDeploymentsRequest.
         :type offset: int
@@ -179,7 +179,7 @@ class ListDeploymentsRequest:
     def name(self):
         """Gets the name of this ListDeploymentsRequest.
 
-        deployment 名称(支持模糊匹配)
+        deployment名称（支持模糊匹配）
 
         :return: The name of this ListDeploymentsRequest.
         :rtype: str
@@ -190,7 +190,7 @@ class ListDeploymentsRequest:
     def name(self, name):
         """Sets the name of this ListDeploymentsRequest.
 
-        deployment 名称(支持模糊匹配)
+        deployment名称（支持模糊匹配）
 
         :param name: The name of this ListDeploymentsRequest.
         :type name: str

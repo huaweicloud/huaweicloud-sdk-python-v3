@@ -43,7 +43,7 @@ class DeviceTemplateUpdateDetail:
 
         The model defined in huaweicloud sdk
 
-        :param description: 设备模板描述,最大长度255
+        :param description: 设备模板描述，最大长度255
         :type description: str
         :param attributes: 终端设备静态属性，最多64个键值。
         :type attributes: dict(str, ValueInAttributes)
@@ -84,7 +84,7 @@ class DeviceTemplateUpdateDetail:
     def description(self):
         """Gets the description of this DeviceTemplateUpdateDetail.
 
-        设备模板描述,最大长度255
+        设备模板描述，最大长度255
 
         :return: The description of this DeviceTemplateUpdateDetail.
         :rtype: str
@@ -95,7 +95,7 @@ class DeviceTemplateUpdateDetail:
     def description(self, description):
         """Sets the description of this DeviceTemplateUpdateDetail.
 
-        设备模板描述,最大长度255
+        设备模板描述，最大长度255
 
         :param description: The description of this DeviceTemplateUpdateDetail.
         :type description: str

@@ -49,7 +49,7 @@ class Deployment:
         :type name: str
         :param description: 部署描述
         :type description: str
-        :param source: 应用部署来源: 边缘市场(iem) or 自定义(userdefined)
+        :param source: 应用部署来源：边缘市场（iem）或自定义()
         :type source: str
         :param group_id: 应用部署到指定节点组，与node_ids二选一
         :type group_id: str
@@ -132,7 +132,7 @@ class Deployment:
     def source(self):
         """Gets the source of this Deployment.
 
-        应用部署来源: 边缘市场(iem) or 自定义(userdefined)
+        应用部署来源：边缘市场（iem）或自定义()
 
         :return: The source of this Deployment.
         :rtype: str
@@ -143,7 +143,7 @@ class Deployment:
     def source(self, source):
         """Sets the source of this Deployment.
 
-        应用部署来源: 边缘市场(iem) or 自定义(userdefined)
+        应用部署来源：边缘市场（iem）或自定义()
 
         :param source: The source of this Deployment.
         :type source: str

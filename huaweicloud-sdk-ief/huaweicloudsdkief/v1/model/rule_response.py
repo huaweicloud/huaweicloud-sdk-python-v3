@@ -69,7 +69,7 @@ class RuleResponse:
         :type id: str
         :param ief_instance_id: 铂金版实例ID，如果为空则表示是专业版实例。
         :type ief_instance_id: str
-        :param in_using: 是否启用规则，默认为true(启用)
+        :param in_using: 是否启用规则，默认为true（启用）
         :type in_using: bool
         :param name: 规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的规则名唯一
         :type name: str
@@ -242,7 +242,7 @@ class RuleResponse:
     def in_using(self):
         """Gets the in_using of this RuleResponse.
 
-        是否启用规则，默认为true(启用)
+        是否启用规则，默认为true（启用）
 
         :return: The in_using of this RuleResponse.
         :rtype: bool
@@ -253,7 +253,7 @@ class RuleResponse:
     def in_using(self, in_using):
         """Sets the in_using of this RuleResponse.
 
-        是否启用规则，默认为true(启用)
+        是否启用规则，默认为true（启用）
 
         :param in_using: The in_using of this RuleResponse.
         :type in_using: bool

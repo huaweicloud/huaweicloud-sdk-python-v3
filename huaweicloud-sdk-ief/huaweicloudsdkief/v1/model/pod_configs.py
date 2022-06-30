@@ -41,15 +41,15 @@ class PodConfigs:
 
         The model defined in huaweicloud sdk
 
-        :param host_network: 应用实例是否启用主机网络，不启用则使用端口映射,默认值false
+        :param host_network: 应用实例是否启用主机网络，不启用则使用端口映射，默认值false
         :type host_network: bool
-        :param host_pid: 应用实例是否与主机共PID命名空间,默认值false
+        :param host_pid: 应用实例是否与主机共PID命名空间，默认值false
         :type host_pid: bool
-        :param migration: 应用实例故障是否迁移,指定节点组部署时必选，默认值false
+        :param migration: 应用实例故障是否迁移，指定节点组部署时必选，默认值false
         :type migration: bool
-        :param restart_policy: 应用实例重启策略,可选值Always、OnFailure、Never
+        :param restart_policy: 应用实例重启策略，可选值Always、OnFailure、Never
         :type restart_policy: str
-        :param toleration_seconds: 应用实例故障容忍时间,容忍时间到达后迁移应用实例，只在指定节点组部署时生效
+        :param toleration_seconds: 应用实例故障容忍时间，容忍时间到达后迁移应用实例，只在指定节点组部署时生效
         :type toleration_seconds: int
         """
         
@@ -75,7 +75,7 @@ class PodConfigs:
     def host_network(self):
         """Gets the host_network of this PodConfigs.
 
-        应用实例是否启用主机网络，不启用则使用端口映射,默认值false
+        应用实例是否启用主机网络，不启用则使用端口映射，默认值false
 
         :return: The host_network of this PodConfigs.
         :rtype: bool
@@ -86,7 +86,7 @@ class PodConfigs:
     def host_network(self, host_network):
         """Sets the host_network of this PodConfigs.
 
-        应用实例是否启用主机网络，不启用则使用端口映射,默认值false
+        应用实例是否启用主机网络，不启用则使用端口映射，默认值false
 
         :param host_network: The host_network of this PodConfigs.
         :type host_network: bool
@@ -97,7 +97,7 @@ class PodConfigs:
     def host_pid(self):
         """Gets the host_pid of this PodConfigs.
 
-        应用实例是否与主机共PID命名空间,默认值false
+        应用实例是否与主机共PID命名空间，默认值false
 
         :return: The host_pid of this PodConfigs.
         :rtype: bool
@@ -108,7 +108,7 @@ class PodConfigs:
     def host_pid(self, host_pid):
         """Sets the host_pid of this PodConfigs.
 
-        应用实例是否与主机共PID命名空间,默认值false
+        应用实例是否与主机共PID命名空间，默认值false
 
         :param host_pid: The host_pid of this PodConfigs.
         :type host_pid: bool
@@ -119,7 +119,7 @@ class PodConfigs:
     def migration(self):
         """Gets the migration of this PodConfigs.
 
-        应用实例故障是否迁移,指定节点组部署时必选，默认值false
+        应用实例故障是否迁移，指定节点组部署时必选，默认值false
 
         :return: The migration of this PodConfigs.
         :rtype: bool
@@ -130,7 +130,7 @@ class PodConfigs:
     def migration(self, migration):
         """Sets the migration of this PodConfigs.
 
-        应用实例故障是否迁移,指定节点组部署时必选，默认值false
+        应用实例故障是否迁移，指定节点组部署时必选，默认值false
 
         :param migration: The migration of this PodConfigs.
         :type migration: bool
@@ -141,7 +141,7 @@ class PodConfigs:
     def restart_policy(self):
         """Gets the restart_policy of this PodConfigs.
 
-        应用实例重启策略,可选值Always、OnFailure、Never
+        应用实例重启策略，可选值Always、OnFailure、Never
 
         :return: The restart_policy of this PodConfigs.
         :rtype: str
@@ -152,7 +152,7 @@ class PodConfigs:
     def restart_policy(self, restart_policy):
         """Sets the restart_policy of this PodConfigs.
 
-        应用实例重启策略,可选值Always、OnFailure、Never
+        应用实例重启策略，可选值Always、OnFailure、Never
 
         :param restart_policy: The restart_policy of this PodConfigs.
         :type restart_policy: str
@@ -163,7 +163,7 @@ class PodConfigs:
     def toleration_seconds(self):
         """Gets the toleration_seconds of this PodConfigs.
 
-        应用实例故障容忍时间,容忍时间到达后迁移应用实例，只在指定节点组部署时生效
+        应用实例故障容忍时间，容忍时间到达后迁移应用实例，只在指定节点组部署时生效
 
         :return: The toleration_seconds of this PodConfigs.
         :rtype: int
@@ -174,7 +174,7 @@ class PodConfigs:
     def toleration_seconds(self, toleration_seconds):
         """Sets the toleration_seconds of this PodConfigs.
 
-        应用实例故障容忍时间,容忍时间到达后迁移应用实例，只在指定节点组部署时生效
+        应用实例故障容忍时间，容忍时间到达后迁移应用实例，只在指定节点组部署时生效
 
         :param toleration_seconds: The toleration_seconds of this PodConfigs.
         :type toleration_seconds: int

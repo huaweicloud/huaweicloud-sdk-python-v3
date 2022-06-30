@@ -60,8 +60,7 @@ class SendVerificationCodeV2Req:
         self.receiver_type = receiver_type
         if timeout is not None:
             self.timeout = timeout
-        if email is not None:
-            self.email = email
+        self.email = email
         if lang is not None:
             self.lang = lang
 

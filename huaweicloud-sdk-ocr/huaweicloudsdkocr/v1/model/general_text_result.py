@@ -21,7 +21,7 @@ class GeneralTextResult:
     sensitive_list = []
 
     openapi_types = {
-        'direction': 'int',
+        'direction': 'float',
         'words_block_count': 'int',
         'words_block_list': 'list[GeneralTextWordsBlockList]'
     }
@@ -37,8 +37,8 @@ class GeneralTextResult:
 
         The model defined in huaweicloud sdk
 
-        :param direction: 图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 359]。当detect_direction为false时，该字段值为 -1。 
-        :type direction: int
+        :param direction: 图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 360)。当detect_direction为false时，该字段值为 -1。 
+        :type direction: float
         :param words_block_count: 识别文字块数目。 
         :type words_block_count: int
         :param words_block_list: 识别文字块列表，输出顺序从左到右，先上后下。 
@@ -60,10 +60,10 @@ class GeneralTextResult:
     def direction(self):
         """Gets the direction of this GeneralTextResult.
 
-        图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 359]。当detect_direction为false时，该字段值为 -1。 
+        图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 360)。当detect_direction为false时，该字段值为 -1。 
 
         :return: The direction of this GeneralTextResult.
-        :rtype: int
+        :rtype: float
         """
         return self._direction
 
@@ -71,10 +71,10 @@ class GeneralTextResult:
     def direction(self, direction):
         """Sets the direction of this GeneralTextResult.
 
-        图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 359]。当detect_direction为false时，该字段值为 -1。 
+        图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 360)。当detect_direction为false时，该字段值为 -1。 
 
         :param direction: The direction of this GeneralTextResult.
-        :type direction: int
+        :type direction: float
         """
         self._direction = direction
 

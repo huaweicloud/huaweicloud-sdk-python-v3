@@ -43,7 +43,7 @@ class EdgeNodeUpdate:
         :type description: str
         :param log_configs: 边缘节点日志配置
         :type log_configs: list[:class:`huaweicloudsdkief.v1.LogConfigs`]
-        :param ntp_servers: ntp服务器地址，每个节点最多仅能配置两个  D310表示D310类型。  D910表示D910类型。  不填表示为D310类型。
+        :param ntp_servers: NTP服务器地址，每个节点最多仅能配置两个。D310表示D310类型；D910表示D910类型；不填表示为D310类型。
         :type ntp_servers: list[str]
         :param attributes: 边缘节点属性，关联属性个数最多为32个
         :type attributes: list[:class:`huaweicloudsdkief.v1.Attributes`]
@@ -114,7 +114,7 @@ class EdgeNodeUpdate:
     def ntp_servers(self):
         """Gets the ntp_servers of this EdgeNodeUpdate.
 
-        ntp服务器地址，每个节点最多仅能配置两个  D310表示D310类型。  D910表示D910类型。  不填表示为D310类型。
+        NTP服务器地址，每个节点最多仅能配置两个。D310表示D310类型；D910表示D910类型；不填表示为D310类型。
 
         :return: The ntp_servers of this EdgeNodeUpdate.
         :rtype: list[str]
@@ -125,7 +125,7 @@ class EdgeNodeUpdate:
     def ntp_servers(self, ntp_servers):
         """Sets the ntp_servers of this EdgeNodeUpdate.
 
-        ntp服务器地址，每个节点最多仅能配置两个  D310表示D310类型。  D910表示D910类型。  不填表示为D310类型。
+        NTP服务器地址，每个节点最多仅能配置两个。D310表示D310类型；D910表示D910类型；不填表示为D310类型。
 
         :param ntp_servers: The ntp_servers of this EdgeNodeUpdate.
         :type ntp_servers: list[str]

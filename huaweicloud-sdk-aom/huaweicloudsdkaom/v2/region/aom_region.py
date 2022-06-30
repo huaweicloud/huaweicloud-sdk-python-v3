@@ -34,6 +34,12 @@ class AomRegion:
 
     RU_NORTHWEST_2 = Region(id="ru-northwest-2", endpoint="https://aom.ru-northwest-2.myhuaweicloud.com")
 
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://aom.la-south-2.myhuaweicloud.com")
+
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://aom.sa-brazil-1.myhuaweicloud.com")
+
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://aom.la-north-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-east-3": CN_EAST_3,
@@ -47,6 +53,9 @@ class AomRegion:
         "ap-southeast-3": AP_SOUTHEAST_3,
         "cn-north-2": CN_NORTH_2,
         "ru-northwest-2": RU_NORTHWEST_2,
+        "la-south-2": LA_SOUTH_2,
+        "sa-brazil-1": SA_BRAZIL_1,
+        "la-north-2": LA_NORTH_2,
     }
 
     @classmethod

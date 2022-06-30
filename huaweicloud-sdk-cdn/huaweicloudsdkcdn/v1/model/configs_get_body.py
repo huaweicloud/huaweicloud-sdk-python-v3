@@ -28,7 +28,8 @@ class ConfigsGetBody:
         'sources': 'list[SourcesConfig]',
         'origin_protocol': 'str',
         'force_redirect': 'ForceRedirectConfig',
-        'compress': 'Compress'
+        'compress': 'Compress',
+        'cache_url_parameter_filter': 'CacheUrlParameterFilter'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ConfigsGetBody:
         'sources': 'sources',
         'origin_protocol': 'origin_protocol',
         'force_redirect': 'force_redirect',
-        'compress': 'compress'
+        'compress': 'compress',
+        'cache_url_parameter_filter': 'cache_url_parameter_filter'
     }
 
-    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, force_redirect=None, compress=None):
+    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, force_redirect=None, compress=None, cache_url_parameter_filter=None):
         """ConfigsGetBody
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ConfigsGetBody:
         :type force_redirect: :class:`huaweicloudsdkcdn.v1.ForceRedirectConfig`
         :param compress: 
         :type compress: :class:`huaweicloudsdkcdn.v1.Compress`
+        :param cache_url_parameter_filter: 
+        :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v1.CacheUrlParameterFilter`
         """
         
         
@@ -75,6 +79,7 @@ class ConfigsGetBody:
         self._origin_protocol = None
         self._force_redirect = None
         self._compress = None
+        self._cache_url_parameter_filter = None
         self.discriminator = None
 
         if origin_request_header is not None:
@@ -93,6 +98,8 @@ class ConfigsGetBody:
             self.force_redirect = force_redirect
         if compress is not None:
             self.compress = compress
+        if cache_url_parameter_filter is not None:
+            self.cache_url_parameter_filter = cache_url_parameter_filter
 
     @property
     def origin_request_header(self):
@@ -261,6 +268,26 @@ class ConfigsGetBody:
         :type compress: :class:`huaweicloudsdkcdn.v1.Compress`
         """
         self._compress = compress
+
+    @property
+    def cache_url_parameter_filter(self):
+        """Gets the cache_url_parameter_filter of this ConfigsGetBody.
+
+
+        :return: The cache_url_parameter_filter of this ConfigsGetBody.
+        :rtype: :class:`huaweicloudsdkcdn.v1.CacheUrlParameterFilter`
+        """
+        return self._cache_url_parameter_filter
+
+    @cache_url_parameter_filter.setter
+    def cache_url_parameter_filter(self, cache_url_parameter_filter):
+        """Sets the cache_url_parameter_filter of this ConfigsGetBody.
+
+
+        :param cache_url_parameter_filter: The cache_url_parameter_filter of this ConfigsGetBody.
+        :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v1.CacheUrlParameterFilter`
+        """
+        self._cache_url_parameter_filter = cache_url_parameter_filter
 
     def to_dict(self):
         """Returns the model properties as a dict"""

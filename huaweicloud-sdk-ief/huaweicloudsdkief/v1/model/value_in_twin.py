@@ -21,7 +21,7 @@ class ValueInTwin:
     sensitive_list = []
 
     openapi_types = {
-        'excepted': 'ValueInTwinExcepted',
+        'excepted': 'Excepted',
         'optional': 'bool',
         'metadata': 'Metadata'
     }
@@ -38,7 +38,7 @@ class ValueInTwin:
         The model defined in huaweicloud sdk
 
         :param excepted: 
-        :type excepted: :class:`huaweicloudsdkief.v1.ValueInTwinExcepted`
+        :type excepted: :class:`huaweicloudsdkief.v1.Excepted`
         :param optional: 动态属性的期望信息
         :type optional: bool
         :param metadata: 
@@ -64,7 +64,7 @@ class ValueInTwin:
 
 
         :return: The excepted of this ValueInTwin.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInTwinExcepted`
+        :rtype: :class:`huaweicloudsdkief.v1.Excepted`
         """
         return self._excepted
 
@@ -74,7 +74,7 @@ class ValueInTwin:
 
 
         :param excepted: The excepted of this ValueInTwin.
-        :type excepted: :class:`huaweicloudsdkief.v1.ValueInTwinExcepted`
+        :type excepted: :class:`huaweicloudsdkief.v1.Excepted`
         """
         self._excepted = excepted
 

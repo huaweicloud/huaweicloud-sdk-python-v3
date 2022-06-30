@@ -29,13 +29,13 @@ class AppVersionDetail:
         'image_url': 'str',
         'envs': 'list[Env]',
         'volumes': 'list[Volumes]',
-        'configs': 'AppVersionDetailConfigs',
+        'configs': 'AppConfigs',
         'resources': 'Resources',
         'arch': 'str',
         'command': 'list[str]',
         'args': 'list[str]',
-        'liveness_probe': 'AppVersionDetailLivenessProbe',
-        'readiness_probe': 'AppVersionDetailReadinessProbe'
+        'liveness_probe': 'ProbeDetail',
+        'readiness_probe': 'ProbeDetail'
     }
 
     attribute_map = {
@@ -78,7 +78,7 @@ class AppVersionDetail:
         :param volumes: 卷配置
         :type volumes: list[:class:`huaweicloudsdkief.v1.Volumes`]
         :param configs: 
-        :type configs: :class:`huaweicloudsdkief.v1.AppVersionDetailConfigs`
+        :type configs: :class:`huaweicloudsdkief.v1.AppConfigs`
         :param resources: 
         :type resources: :class:`huaweicloudsdkief.v1.Resources`
         :param arch: 架构
@@ -88,9 +88,9 @@ class AppVersionDetail:
         :param args: 参数
         :type args: list[str]
         :param liveness_probe: 
-        :type liveness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailLivenessProbe`
+        :type liveness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
         :param readiness_probe: 
-        :type readiness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailReadinessProbe`
+        :type readiness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
         """
         
         
@@ -323,7 +323,7 @@ class AppVersionDetail:
 
 
         :return: The configs of this AppVersionDetail.
-        :rtype: :class:`huaweicloudsdkief.v1.AppVersionDetailConfigs`
+        :rtype: :class:`huaweicloudsdkief.v1.AppConfigs`
         """
         return self._configs
 
@@ -333,7 +333,7 @@ class AppVersionDetail:
 
 
         :param configs: The configs of this AppVersionDetail.
-        :type configs: :class:`huaweicloudsdkief.v1.AppVersionDetailConfigs`
+        :type configs: :class:`huaweicloudsdkief.v1.AppConfigs`
         """
         self._configs = configs
 
@@ -429,7 +429,7 @@ class AppVersionDetail:
 
 
         :return: The liveness_probe of this AppVersionDetail.
-        :rtype: :class:`huaweicloudsdkief.v1.AppVersionDetailLivenessProbe`
+        :rtype: :class:`huaweicloudsdkief.v1.ProbeDetail`
         """
         return self._liveness_probe
 
@@ -439,7 +439,7 @@ class AppVersionDetail:
 
 
         :param liveness_probe: The liveness_probe of this AppVersionDetail.
-        :type liveness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailLivenessProbe`
+        :type liveness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
         """
         self._liveness_probe = liveness_probe
 
@@ -449,7 +449,7 @@ class AppVersionDetail:
 
 
         :return: The readiness_probe of this AppVersionDetail.
-        :rtype: :class:`huaweicloudsdkief.v1.AppVersionDetailReadinessProbe`
+        :rtype: :class:`huaweicloudsdkief.v1.ProbeDetail`
         """
         return self._readiness_probe
 
@@ -459,7 +459,7 @@ class AppVersionDetail:
 
 
         :param readiness_probe: The readiness_probe of this AppVersionDetail.
-        :type readiness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailReadinessProbe`
+        :type readiness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
         """
         self._readiness_probe = readiness_probe
 

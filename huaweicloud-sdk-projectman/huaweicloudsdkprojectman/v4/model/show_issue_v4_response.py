@@ -28,7 +28,7 @@ class ShowIssueV4Response(SdkResponse):
         'created_time': 'str',
         'creator': 'IssueUser',
         'custom_fields': 'list[CustomField]',
-        'new_custom_fields': 'list[NewCustomField]',
+        'new_custom_fields': 'list[IssueDetailCustomField]',
         'developer': 'IssueUser',
         'domain': 'IssueItemSfV4Domain',
         'done_ratio': 'int',
@@ -102,7 +102,7 @@ class ShowIssueV4Response(SdkResponse):
         :param custom_fields: 自定义属性值,不建议使用，建议参考new_custom_fields字段
         :type custom_fields: list[:class:`huaweicloudsdkprojectman.v4.CustomField`]
         :param new_custom_fields: 自定义属性值
-        :type new_custom_fields: list[:class:`huaweicloudsdkprojectman.v4.NewCustomField`]
+        :type new_custom_fields: list[:class:`huaweicloudsdkprojectman.v4.IssueDetailCustomField`]
         :param developer: 
         :type developer: :class:`huaweicloudsdkprojectman.v4.IssueUser`
         :param domain: 
@@ -391,7 +391,7 @@ class ShowIssueV4Response(SdkResponse):
         自定义属性值
 
         :return: The new_custom_fields of this ShowIssueV4Response.
-        :rtype: list[:class:`huaweicloudsdkprojectman.v4.NewCustomField`]
+        :rtype: list[:class:`huaweicloudsdkprojectman.v4.IssueDetailCustomField`]
         """
         return self._new_custom_fields
 
@@ -402,7 +402,7 @@ class ShowIssueV4Response(SdkResponse):
         自定义属性值
 
         :param new_custom_fields: The new_custom_fields of this ShowIssueV4Response.
-        :type new_custom_fields: list[:class:`huaweicloudsdkprojectman.v4.NewCustomField`]
+        :type new_custom_fields: list[:class:`huaweicloudsdkprojectman.v4.IssueDetailCustomField`]
         """
         self._new_custom_fields = new_custom_fields
 

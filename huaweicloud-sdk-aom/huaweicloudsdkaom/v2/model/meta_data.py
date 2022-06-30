@@ -22,7 +22,7 @@ class MetaData:
 
     openapi_types = {
         'count': 'int',
-        'start': 'str',
+        'start': 'int',
         'total': 'int'
     }
 
@@ -40,7 +40,7 @@ class MetaData:
         :param count: 当前返回结果条数。
         :type count: int
         :param start: 下一个开始的标记，用于分页，null表示无更多数据。
-        :type start: str
+        :type start: int
         :param total: 总条数。
         :type total: int
         """
@@ -88,7 +88,7 @@ class MetaData:
         下一个开始的标记，用于分页，null表示无更多数据。
 
         :return: The start of this MetaData.
-        :rtype: str
+        :rtype: int
         """
         return self._start
 
@@ -99,7 +99,7 @@ class MetaData:
         下一个开始的标记，用于分页，null表示无更多数据。
 
         :param start: The start of this MetaData.
-        :type start: str
+        :type start: int
         """
         self._start = start
 

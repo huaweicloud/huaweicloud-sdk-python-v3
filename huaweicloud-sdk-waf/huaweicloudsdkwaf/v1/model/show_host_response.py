@@ -33,7 +33,8 @@ class ShowHostResponse(SdkResponse):
         'server': 'list[CloudWafServer]',
         'proxy': 'bool',
         'timestamp': 'int',
-        'exclusive_ip': 'bool'
+        'exclusive_ip': 'bool',
+        'timeout_config': 'TimeoutConfig'
     }
 
     attribute_map = {
@@ -49,10 +50,11 @@ class ShowHostResponse(SdkResponse):
         'server': 'server',
         'proxy': 'proxy',
         'timestamp': 'timestamp',
-        'exclusive_ip': 'exclusive_ip'
+        'exclusive_ip': 'exclusive_ip',
+        'timeout_config': 'timeout_config'
     }
 
-    def __init__(self, id=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, protocol=None, certificateid=None, certificatename=None, server=None, proxy=None, timestamp=None, exclusive_ip=None):
+    def __init__(self, id=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, protocol=None, certificateid=None, certificatename=None, server=None, proxy=None, timestamp=None, exclusive_ip=None, timeout_config=None):
         """ShowHostResponse
 
         The model defined in huaweicloud sdk
@@ -83,6 +85,8 @@ class ShowHostResponse(SdkResponse):
         :type timestamp: int
         :param exclusive_ip: 是否使用独享ip
         :type exclusive_ip: bool
+        :param timeout_config: 
+        :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
         """
         
         super(ShowHostResponse, self).__init__()
@@ -100,6 +104,7 @@ class ShowHostResponse(SdkResponse):
         self._proxy = None
         self._timestamp = None
         self._exclusive_ip = None
+        self._timeout_config = None
         self.discriminator = None
 
         if id is not None:
@@ -128,6 +133,8 @@ class ShowHostResponse(SdkResponse):
             self.timestamp = timestamp
         if exclusive_ip is not None:
             self.exclusive_ip = exclusive_ip
+        if timeout_config is not None:
+            self.timeout_config = timeout_config
 
     @property
     def id(self):
@@ -414,6 +421,26 @@ class ShowHostResponse(SdkResponse):
         :type exclusive_ip: bool
         """
         self._exclusive_ip = exclusive_ip
+
+    @property
+    def timeout_config(self):
+        """Gets the timeout_config of this ShowHostResponse.
+
+
+        :return: The timeout_config of this ShowHostResponse.
+        :rtype: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
+        """
+        return self._timeout_config
+
+    @timeout_config.setter
+    def timeout_config(self, timeout_config):
+        """Sets the timeout_config of this ShowHostResponse.
+
+
+        :param timeout_config: The timeout_config of this ShowHostResponse.
+        :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
+        """
+        self._timeout_config = timeout_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

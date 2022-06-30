@@ -23,7 +23,7 @@ class Env:
     openapi_types = {
         'name': 'str',
         'value': 'str',
-        'value_from': 'EnvValueFrom',
+        'value_from': 'ValueFrom',
         'field_path': 'str'
     }
 
@@ -44,7 +44,7 @@ class Env:
         :param value: 环境变量的value，最大长度20480个字符。value、value_from和field_path必须三选一使用。
         :type value: str
         :param value_from: 
-        :type value_from: :class:`huaweicloudsdkief.v1.EnvValueFrom`
+        :type value_from: :class:`huaweicloudsdkief.v1.ValueFrom`
         :param field_path: 该参数目前只支持赋值\&quot;status.hostIP\&quot;，即引用边缘节点的IP地址作为环境变量。
         :type field_path: str
         """
@@ -115,7 +115,7 @@ class Env:
 
 
         :return: The value_from of this Env.
-        :rtype: :class:`huaweicloudsdkief.v1.EnvValueFrom`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueFrom`
         """
         return self._value_from
 
@@ -125,7 +125,7 @@ class Env:
 
 
         :param value_from: The value_from of this Env.
-        :type value_from: :class:`huaweicloudsdkief.v1.EnvValueFrom`
+        :type value_from: :class:`huaweicloudsdkief.v1.ValueFrom`
         """
         self._value_from = value_from
 

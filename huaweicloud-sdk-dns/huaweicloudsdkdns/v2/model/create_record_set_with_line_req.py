@@ -95,7 +95,8 @@ class CreateRecordSetWithLineReq:
             self.status = status
         if ttl is not None:
             self.ttl = ttl
-        self.records = records
+        if records is not None:
+            self.records = records
         if line is not None:
             self.line = line
         if tags is not None:

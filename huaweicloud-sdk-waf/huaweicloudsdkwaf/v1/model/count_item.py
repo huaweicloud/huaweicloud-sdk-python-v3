@@ -22,15 +22,17 @@ class CountItem:
 
     openapi_types = {
         'key': 'str',
-        'num': 'int'
+        'num': 'int',
+        'host': 'str'
     }
 
     attribute_map = {
         'key': 'key',
-        'num': 'num'
+        'num': 'num',
+        'host': 'host'
     }
 
-    def __init__(self, key=None, num=None):
+    def __init__(self, key=None, num=None, host=None):
         """CountItem
 
         The model defined in huaweicloud sdk
@@ -39,18 +41,23 @@ class CountItem:
         :type key: str
         :param num: 数量
         :type num: int
+        :param host: 域名
+        :type host: str
         """
         
         
 
         self._key = None
         self._num = None
+        self._host = None
         self.discriminator = None
 
         if key is not None:
             self.key = key
         if num is not None:
             self.num = num
+        if host is not None:
+            self.host = host
 
     @property
     def key(self):
@@ -95,6 +102,28 @@ class CountItem:
         :type num: int
         """
         self._num = num
+
+    @property
+    def host(self):
+        """Gets the host of this CountItem.
+
+        域名
+
+        :return: The host of this CountItem.
+        :rtype: str
+        """
+        return self._host
+
+    @host.setter
+    def host(self, host):
+        """Sets the host of this CountItem.
+
+        域名
+
+        :param host: The host of this CountItem.
+        :type host: str
+        """
+        self._host = host
 
     def to_dict(self):
         """Returns the model properties as a dict"""

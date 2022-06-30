@@ -31,7 +31,7 @@ class EdgeNode:
         'attributes': 'list[Attributes]',
         'enable_docker': 'bool',
         'tags': 'list[NodeResTag]',
-        'mqtt_config': 'EdgeNodeMqttConfig'
+        'mqtt_config': 'MqttConfigs'
     }
 
     attribute_map = {
@@ -65,7 +65,7 @@ class EdgeNode:
         :type device_infos: list[:class:`huaweicloudsdkief.v1.DeviceInfos`]
         :param enable_npu: 边缘节点是否开启NPU，true表示开启，false表示不开启，默认为false
         :type enable_npu: bool
-        :param npu_type: npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        :param npu_type: NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
         :type npu_type: str
         :param attributes: 边缘节点属性，关联属性个数最多为32个
         :type attributes: list[:class:`huaweicloudsdkief.v1.Attributes`]
@@ -74,7 +74,7 @@ class EdgeNode:
         :param tags: 边缘节点标签，标签个数最多为20个
         :type tags: list[:class:`huaweicloudsdkief.v1.NodeResTag`]
         :param mqtt_config: 
-        :type mqtt_config: :class:`huaweicloudsdkief.v1.EdgeNodeMqttConfig`
+        :type mqtt_config: :class:`huaweicloudsdkief.v1.MqttConfigs`
         """
         
         
@@ -250,7 +250,7 @@ class EdgeNode:
     def npu_type(self):
         """Gets the npu_type of this EdgeNode.
 
-        npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :return: The npu_type of this EdgeNode.
         :rtype: str
@@ -261,7 +261,7 @@ class EdgeNode:
     def npu_type(self, npu_type):
         """Sets the npu_type of this EdgeNode.
 
-        npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :param npu_type: The npu_type of this EdgeNode.
         :type npu_type: str
@@ -340,7 +340,7 @@ class EdgeNode:
 
 
         :return: The mqtt_config of this EdgeNode.
-        :rtype: :class:`huaweicloudsdkief.v1.EdgeNodeMqttConfig`
+        :rtype: :class:`huaweicloudsdkief.v1.MqttConfigs`
         """
         return self._mqtt_config
 
@@ -350,7 +350,7 @@ class EdgeNode:
 
 
         :param mqtt_config: The mqtt_config of this EdgeNode.
-        :type mqtt_config: :class:`huaweicloudsdkief.v1.EdgeNodeMqttConfig`
+        :type mqtt_config: :class:`huaweicloudsdkief.v1.MqttConfigs`
         """
         self._mqtt_config = mqtt_config
 

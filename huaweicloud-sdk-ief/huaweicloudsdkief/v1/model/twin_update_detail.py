@@ -21,8 +21,8 @@ class TwinUpdateDetail:
     sensitive_list = []
 
     openapi_types = {
-        'twin': 'ValueInTwin',
-        'property_visitors': 'TwinUpdateDetailPropertyVisitors'
+        'twin': 'dict(str, ValueInTwin)',
+        'property_visitors': 'dict(str, ValueInPropertyVisitors)'
     }
 
     attribute_map = {
@@ -35,10 +35,10 @@ class TwinUpdateDetail:
 
         The model defined in huaweicloud sdk
 
-        :param twin: 
-        :type twin: :class:`huaweicloudsdkief.v1.ValueInTwin`
-        :param property_visitors: 
-        :type property_visitors: :class:`huaweicloudsdkief.v1.TwinUpdateDetailPropertyVisitors`
+        :param twin: 终端设备动态属性
+        :type twin: dict(str, ValueInTwin)
+        :param property_visitors: 孪生属性配置，与access_protocol关联。
+        :type property_visitors: dict(str, ValueInPropertyVisitors)
         """
         
         
@@ -47,18 +47,17 @@ class TwinUpdateDetail:
         self._property_visitors = None
         self.discriminator = None
 
-        if twin is not None:
-            self.twin = twin
-        if property_visitors is not None:
-            self.property_visitors = property_visitors
+        self.twin = twin
+        self.property_visitors = property_visitors
 
     @property
     def twin(self):
         """Gets the twin of this TwinUpdateDetail.
 
+        终端设备动态属性
 
         :return: The twin of this TwinUpdateDetail.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInTwin`
+        :rtype: dict(str, ValueInTwin)
         """
         return self._twin
 
@@ -66,9 +65,10 @@ class TwinUpdateDetail:
     def twin(self, twin):
         """Sets the twin of this TwinUpdateDetail.
 
+        终端设备动态属性
 
         :param twin: The twin of this TwinUpdateDetail.
-        :type twin: :class:`huaweicloudsdkief.v1.ValueInTwin`
+        :type twin: dict(str, ValueInTwin)
         """
         self._twin = twin
 
@@ -76,9 +76,10 @@ class TwinUpdateDetail:
     def property_visitors(self):
         """Gets the property_visitors of this TwinUpdateDetail.
 
+        孪生属性配置，与access_protocol关联。
 
         :return: The property_visitors of this TwinUpdateDetail.
-        :rtype: :class:`huaweicloudsdkief.v1.TwinUpdateDetailPropertyVisitors`
+        :rtype: dict(str, ValueInPropertyVisitors)
         """
         return self._property_visitors
 
@@ -86,9 +87,10 @@ class TwinUpdateDetail:
     def property_visitors(self, property_visitors):
         """Sets the property_visitors of this TwinUpdateDetail.
 
+        孪生属性配置，与access_protocol关联。
 
         :param property_visitors: The property_visitors of this TwinUpdateDetail.
-        :type property_visitors: :class:`huaweicloudsdkief.v1.TwinUpdateDetailPropertyVisitors`
+        :type property_visitors: dict(str, ValueInPropertyVisitors)
         """
         self._property_visitors = property_visitors
 

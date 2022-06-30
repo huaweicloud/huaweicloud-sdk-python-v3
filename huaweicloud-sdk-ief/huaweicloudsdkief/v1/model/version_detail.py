@@ -25,13 +25,13 @@ class VersionDetail:
         'image_url': 'str',
         'envs': 'list[Env]',
         'volumes': 'list[Volumes]',
-        'configs': 'VersionDetailConfigs',
-        'resources': 'VersionDetailResources',
+        'configs': 'AppConfigs',
+        'resources': 'Resources',
         'arch': 'str',
         'command': 'list[str]',
         'args': 'list[str]',
-        'liveness_probe': 'AppVersionDetailLivenessProbe',
-        'readiness_probe': 'AppVersionDetailReadinessProbe',
+        'liveness_probe': 'ProbeDetail',
+        'readiness_probe': 'ProbeDetail',
         'npu_type': 'str'
     }
 
@@ -64,9 +64,9 @@ class VersionDetail:
         :param volumes: 卷配置
         :type volumes: list[:class:`huaweicloudsdkief.v1.Volumes`]
         :param configs: 
-        :type configs: :class:`huaweicloudsdkief.v1.VersionDetailConfigs`
+        :type configs: :class:`huaweicloudsdkief.v1.AppConfigs`
         :param resources: 
-        :type resources: :class:`huaweicloudsdkief.v1.VersionDetailResources`
+        :type resources: :class:`huaweicloudsdkief.v1.Resources`
         :param arch: 架构
         :type arch: str
         :param command: 启动命令
@@ -74,10 +74,10 @@ class VersionDetail:
         :param args: 参数
         :type args: list[str]
         :param liveness_probe: 
-        :type liveness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailLivenessProbe`
+        :type liveness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
         :param readiness_probe: 
-        :type readiness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailReadinessProbe`
-        :param npu_type: npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        :type readiness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
+        :param npu_type: NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
         :type npu_type: str
         """
         
@@ -214,7 +214,7 @@ class VersionDetail:
 
 
         :return: The configs of this VersionDetail.
-        :rtype: :class:`huaweicloudsdkief.v1.VersionDetailConfigs`
+        :rtype: :class:`huaweicloudsdkief.v1.AppConfigs`
         """
         return self._configs
 
@@ -224,7 +224,7 @@ class VersionDetail:
 
 
         :param configs: The configs of this VersionDetail.
-        :type configs: :class:`huaweicloudsdkief.v1.VersionDetailConfigs`
+        :type configs: :class:`huaweicloudsdkief.v1.AppConfigs`
         """
         self._configs = configs
 
@@ -234,7 +234,7 @@ class VersionDetail:
 
 
         :return: The resources of this VersionDetail.
-        :rtype: :class:`huaweicloudsdkief.v1.VersionDetailResources`
+        :rtype: :class:`huaweicloudsdkief.v1.Resources`
         """
         return self._resources
 
@@ -244,7 +244,7 @@ class VersionDetail:
 
 
         :param resources: The resources of this VersionDetail.
-        :type resources: :class:`huaweicloudsdkief.v1.VersionDetailResources`
+        :type resources: :class:`huaweicloudsdkief.v1.Resources`
         """
         self._resources = resources
 
@@ -320,7 +320,7 @@ class VersionDetail:
 
 
         :return: The liveness_probe of this VersionDetail.
-        :rtype: :class:`huaweicloudsdkief.v1.AppVersionDetailLivenessProbe`
+        :rtype: :class:`huaweicloudsdkief.v1.ProbeDetail`
         """
         return self._liveness_probe
 
@@ -330,7 +330,7 @@ class VersionDetail:
 
 
         :param liveness_probe: The liveness_probe of this VersionDetail.
-        :type liveness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailLivenessProbe`
+        :type liveness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
         """
         self._liveness_probe = liveness_probe
 
@@ -340,7 +340,7 @@ class VersionDetail:
 
 
         :return: The readiness_probe of this VersionDetail.
-        :rtype: :class:`huaweicloudsdkief.v1.AppVersionDetailReadinessProbe`
+        :rtype: :class:`huaweicloudsdkief.v1.ProbeDetail`
         """
         return self._readiness_probe
 
@@ -350,7 +350,7 @@ class VersionDetail:
 
 
         :param readiness_probe: The readiness_probe of this VersionDetail.
-        :type readiness_probe: :class:`huaweicloudsdkief.v1.AppVersionDetailReadinessProbe`
+        :type readiness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
         """
         self._readiness_probe = readiness_probe
 
@@ -358,7 +358,7 @@ class VersionDetail:
     def npu_type(self):
         """Gets the npu_type of this VersionDetail.
 
-        npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :return: The npu_type of this VersionDetail.
         :rtype: str
@@ -369,7 +369,7 @@ class VersionDetail:
     def npu_type(self, npu_type):
         """Sets the npu_type of this VersionDetail.
 
-        npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :param npu_type: The npu_type of this VersionDetail.
         :type npu_type: str

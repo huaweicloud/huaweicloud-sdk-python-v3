@@ -21,25 +21,25 @@ class AccessConfig:
     sensitive_list = []
 
     openapi_types = {
-        'protocol_type': 'AccessConfigProtocolType',
-        'protocol_name': 'AccessConfigProtocolName',
-        'slave_id': 'AccessConfigSlaveId',
-        'ip': 'AccessConfigIp',
-        'port': 'AccessConfigPort',
-        'serial_port': 'AccessConfigSerialPort',
-        'baud_rate': 'AccessConfigBaudRate',
-        'data_bits': 'AccessConfigDataBits',
-        'stop_bits': 'AccessConfigStopBits',
-        'parity_bits': 'AccessConfigParityBits',
-        'url': 'AccessConfigUrl',
-        'sec_mode': 'AccessConfigSecMode',
-        'sec_policy': 'AccessConfigSecPolicy',
-        'auth_type': 'AccessConfigAuthType',
-        'username': 'AccessConfigUsername',
-        'password': 'AccessConfigPassword',
-        'private_key': 'AccessConfigPrivateKey',
-        'certificate': 'AccessConfigCertificate',
-        'timeout': 'AccessConfigTimeout'
+        'protocol_type': 'ValueInAttributes',
+        'protocol_name': 'ValueInAttributes',
+        'slave_id': 'ValueInAttributes',
+        'ip': 'ValueInAttributes',
+        'port': 'ValueInAttributes',
+        'serial_port': 'ValueInAttributes',
+        'baud_rate': 'ValueInAttributes',
+        'data_bits': 'ValueInAttributes',
+        'stop_bits': 'ValueInAttributes',
+        'parity_bits': 'ValueInAttributes',
+        'url': 'ValueInAttributes',
+        'sec_mode': 'ValueInAttributes',
+        'sec_policy': 'ValueInAttributes',
+        'auth_type': 'ValueInAttributes',
+        'username': 'ValueInAttributes',
+        'password': 'ValueInAttributes',
+        'private_key': 'ValueInAttributes',
+        'certificate': 'ValueInAttributes',
+        'timeout': 'ValueInAttributes'
     }
 
     attribute_map = {
@@ -70,43 +70,43 @@ class AccessConfig:
         The model defined in huaweicloud sdk
 
         :param protocol_type: 
-        :type protocol_type: :class:`huaweicloudsdkief.v1.AccessConfigProtocolType`
+        :type protocol_type: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param protocol_name: 
-        :type protocol_name: :class:`huaweicloudsdkief.v1.AccessConfigProtocolName`
+        :type protocol_name: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param slave_id: 
-        :type slave_id: :class:`huaweicloudsdkief.v1.AccessConfigSlaveId`
+        :type slave_id: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param ip: 
-        :type ip: :class:`huaweicloudsdkief.v1.AccessConfigIp`
+        :type ip: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param port: 
-        :type port: :class:`huaweicloudsdkief.v1.AccessConfigPort`
+        :type port: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param serial_port: 
-        :type serial_port: :class:`huaweicloudsdkief.v1.AccessConfigSerialPort`
+        :type serial_port: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param baud_rate: 
-        :type baud_rate: :class:`huaweicloudsdkief.v1.AccessConfigBaudRate`
+        :type baud_rate: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param data_bits: 
-        :type data_bits: :class:`huaweicloudsdkief.v1.AccessConfigDataBits`
+        :type data_bits: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param stop_bits: 
-        :type stop_bits: :class:`huaweicloudsdkief.v1.AccessConfigStopBits`
+        :type stop_bits: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param parity_bits: 
-        :type parity_bits: :class:`huaweicloudsdkief.v1.AccessConfigParityBits`
+        :type parity_bits: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param url: 
-        :type url: :class:`huaweicloudsdkief.v1.AccessConfigUrl`
+        :type url: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param sec_mode: 
-        :type sec_mode: :class:`huaweicloudsdkief.v1.AccessConfigSecMode`
+        :type sec_mode: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param sec_policy: 
-        :type sec_policy: :class:`huaweicloudsdkief.v1.AccessConfigSecPolicy`
+        :type sec_policy: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param auth_type: 
-        :type auth_type: :class:`huaweicloudsdkief.v1.AccessConfigAuthType`
+        :type auth_type: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param username: 
-        :type username: :class:`huaweicloudsdkief.v1.AccessConfigUsername`
+        :type username: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param password: 
-        :type password: :class:`huaweicloudsdkief.v1.AccessConfigPassword`
+        :type password: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param private_key: 
-        :type private_key: :class:`huaweicloudsdkief.v1.AccessConfigPrivateKey`
+        :type private_key: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param certificate: 
-        :type certificate: :class:`huaweicloudsdkief.v1.AccessConfigCertificate`
+        :type certificate: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param timeout: 
-        :type timeout: :class:`huaweicloudsdkief.v1.AccessConfigTimeout`
+        :type timeout: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         
         
@@ -176,7 +176,7 @@ class AccessConfig:
 
 
         :return: The protocol_type of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigProtocolType`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._protocol_type
 
@@ -186,7 +186,7 @@ class AccessConfig:
 
 
         :param protocol_type: The protocol_type of this AccessConfig.
-        :type protocol_type: :class:`huaweicloudsdkief.v1.AccessConfigProtocolType`
+        :type protocol_type: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._protocol_type = protocol_type
 
@@ -196,7 +196,7 @@ class AccessConfig:
 
 
         :return: The protocol_name of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigProtocolName`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._protocol_name
 
@@ -206,7 +206,7 @@ class AccessConfig:
 
 
         :param protocol_name: The protocol_name of this AccessConfig.
-        :type protocol_name: :class:`huaweicloudsdkief.v1.AccessConfigProtocolName`
+        :type protocol_name: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._protocol_name = protocol_name
 
@@ -216,7 +216,7 @@ class AccessConfig:
 
 
         :return: The slave_id of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigSlaveId`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._slave_id
 
@@ -226,7 +226,7 @@ class AccessConfig:
 
 
         :param slave_id: The slave_id of this AccessConfig.
-        :type slave_id: :class:`huaweicloudsdkief.v1.AccessConfigSlaveId`
+        :type slave_id: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._slave_id = slave_id
 
@@ -236,7 +236,7 @@ class AccessConfig:
 
 
         :return: The ip of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigIp`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._ip
 
@@ -246,7 +246,7 @@ class AccessConfig:
 
 
         :param ip: The ip of this AccessConfig.
-        :type ip: :class:`huaweicloudsdkief.v1.AccessConfigIp`
+        :type ip: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._ip = ip
 
@@ -256,7 +256,7 @@ class AccessConfig:
 
 
         :return: The port of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigPort`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._port
 
@@ -266,7 +266,7 @@ class AccessConfig:
 
 
         :param port: The port of this AccessConfig.
-        :type port: :class:`huaweicloudsdkief.v1.AccessConfigPort`
+        :type port: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._port = port
 
@@ -276,7 +276,7 @@ class AccessConfig:
 
 
         :return: The serial_port of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigSerialPort`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._serial_port
 
@@ -286,7 +286,7 @@ class AccessConfig:
 
 
         :param serial_port: The serial_port of this AccessConfig.
-        :type serial_port: :class:`huaweicloudsdkief.v1.AccessConfigSerialPort`
+        :type serial_port: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._serial_port = serial_port
 
@@ -296,7 +296,7 @@ class AccessConfig:
 
 
         :return: The baud_rate of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigBaudRate`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._baud_rate
 
@@ -306,7 +306,7 @@ class AccessConfig:
 
 
         :param baud_rate: The baud_rate of this AccessConfig.
-        :type baud_rate: :class:`huaweicloudsdkief.v1.AccessConfigBaudRate`
+        :type baud_rate: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._baud_rate = baud_rate
 
@@ -316,7 +316,7 @@ class AccessConfig:
 
 
         :return: The data_bits of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigDataBits`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._data_bits
 
@@ -326,7 +326,7 @@ class AccessConfig:
 
 
         :param data_bits: The data_bits of this AccessConfig.
-        :type data_bits: :class:`huaweicloudsdkief.v1.AccessConfigDataBits`
+        :type data_bits: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._data_bits = data_bits
 
@@ -336,7 +336,7 @@ class AccessConfig:
 
 
         :return: The stop_bits of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigStopBits`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._stop_bits
 
@@ -346,7 +346,7 @@ class AccessConfig:
 
 
         :param stop_bits: The stop_bits of this AccessConfig.
-        :type stop_bits: :class:`huaweicloudsdkief.v1.AccessConfigStopBits`
+        :type stop_bits: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._stop_bits = stop_bits
 
@@ -356,7 +356,7 @@ class AccessConfig:
 
 
         :return: The parity_bits of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigParityBits`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._parity_bits
 
@@ -366,7 +366,7 @@ class AccessConfig:
 
 
         :param parity_bits: The parity_bits of this AccessConfig.
-        :type parity_bits: :class:`huaweicloudsdkief.v1.AccessConfigParityBits`
+        :type parity_bits: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._parity_bits = parity_bits
 
@@ -376,7 +376,7 @@ class AccessConfig:
 
 
         :return: The url of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigUrl`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._url
 
@@ -386,7 +386,7 @@ class AccessConfig:
 
 
         :param url: The url of this AccessConfig.
-        :type url: :class:`huaweicloudsdkief.v1.AccessConfigUrl`
+        :type url: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._url = url
 
@@ -396,7 +396,7 @@ class AccessConfig:
 
 
         :return: The sec_mode of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigSecMode`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._sec_mode
 
@@ -406,7 +406,7 @@ class AccessConfig:
 
 
         :param sec_mode: The sec_mode of this AccessConfig.
-        :type sec_mode: :class:`huaweicloudsdkief.v1.AccessConfigSecMode`
+        :type sec_mode: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._sec_mode = sec_mode
 
@@ -416,7 +416,7 @@ class AccessConfig:
 
 
         :return: The sec_policy of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigSecPolicy`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._sec_policy
 
@@ -426,7 +426,7 @@ class AccessConfig:
 
 
         :param sec_policy: The sec_policy of this AccessConfig.
-        :type sec_policy: :class:`huaweicloudsdkief.v1.AccessConfigSecPolicy`
+        :type sec_policy: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._sec_policy = sec_policy
 
@@ -436,7 +436,7 @@ class AccessConfig:
 
 
         :return: The auth_type of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigAuthType`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._auth_type
 
@@ -446,7 +446,7 @@ class AccessConfig:
 
 
         :param auth_type: The auth_type of this AccessConfig.
-        :type auth_type: :class:`huaweicloudsdkief.v1.AccessConfigAuthType`
+        :type auth_type: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._auth_type = auth_type
 
@@ -456,7 +456,7 @@ class AccessConfig:
 
 
         :return: The username of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigUsername`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._username
 
@@ -466,7 +466,7 @@ class AccessConfig:
 
 
         :param username: The username of this AccessConfig.
-        :type username: :class:`huaweicloudsdkief.v1.AccessConfigUsername`
+        :type username: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._username = username
 
@@ -476,7 +476,7 @@ class AccessConfig:
 
 
         :return: The password of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigPassword`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._password
 
@@ -486,7 +486,7 @@ class AccessConfig:
 
 
         :param password: The password of this AccessConfig.
-        :type password: :class:`huaweicloudsdkief.v1.AccessConfigPassword`
+        :type password: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._password = password
 
@@ -496,7 +496,7 @@ class AccessConfig:
 
 
         :return: The private_key of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigPrivateKey`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._private_key
 
@@ -506,7 +506,7 @@ class AccessConfig:
 
 
         :param private_key: The private_key of this AccessConfig.
-        :type private_key: :class:`huaweicloudsdkief.v1.AccessConfigPrivateKey`
+        :type private_key: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._private_key = private_key
 
@@ -516,7 +516,7 @@ class AccessConfig:
 
 
         :return: The certificate of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigCertificate`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._certificate
 
@@ -526,7 +526,7 @@ class AccessConfig:
 
 
         :param certificate: The certificate of this AccessConfig.
-        :type certificate: :class:`huaweicloudsdkief.v1.AccessConfigCertificate`
+        :type certificate: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._certificate = certificate
 
@@ -536,7 +536,7 @@ class AccessConfig:
 
 
         :return: The timeout of this AccessConfig.
-        :rtype: :class:`huaweicloudsdkief.v1.AccessConfigTimeout`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._timeout
 
@@ -546,7 +546,7 @@ class AccessConfig:
 
 
         :param timeout: The timeout of this AccessConfig.
-        :type timeout: :class:`huaweicloudsdkief.v1.AccessConfigTimeout`
+        :type timeout: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._timeout = timeout
 

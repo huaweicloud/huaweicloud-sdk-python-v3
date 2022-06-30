@@ -70,8 +70,7 @@ class SendVerificationCodeV2Req:
         self.receiver_type = receiver_type
         if timeout is not None:
             self.timeout = timeout
-        if mobile_phone is not None:
-            self.mobile_phone = mobile_phone
+        self.mobile_phone = mobile_phone
         if lang is not None:
             self.lang = lang
         if scene is not None:

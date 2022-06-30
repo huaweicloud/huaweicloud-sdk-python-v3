@@ -21,9 +21,9 @@ class ValueInTwinResponse:
     sensitive_list = []
 
     openapi_types = {
-        'excepted': 'ValueInTwinResponseExcepted',
-        'actual': 'ValueInTwinResponseActual',
-        'metadata': 'ValueInTwinResponseMetadata',
+        'excepted': 'ExceptedActual',
+        'actual': 'ExceptedActual',
+        'metadata': 'Metadata',
         'optional': 'bool'
     }
 
@@ -40,11 +40,11 @@ class ValueInTwinResponse:
         The model defined in huaweicloud sdk
 
         :param excepted: 
-        :type excepted: :class:`huaweicloudsdkief.v1.ValueInTwinResponseExcepted`
+        :type excepted: :class:`huaweicloudsdkief.v1.ExceptedActual`
         :param actual: 
-        :type actual: :class:`huaweicloudsdkief.v1.ValueInTwinResponseActual`
+        :type actual: :class:`huaweicloudsdkief.v1.ExceptedActual`
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkief.v1.ValueInTwinResponseMetadata`
+        :type metadata: :class:`huaweicloudsdkief.v1.Metadata`
         :param optional: 标识属性是否可选，默认为true，继承模板的属性默认为false
         :type optional: bool
         """
@@ -72,7 +72,7 @@ class ValueInTwinResponse:
 
 
         :return: The excepted of this ValueInTwinResponse.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInTwinResponseExcepted`
+        :rtype: :class:`huaweicloudsdkief.v1.ExceptedActual`
         """
         return self._excepted
 
@@ -82,7 +82,7 @@ class ValueInTwinResponse:
 
 
         :param excepted: The excepted of this ValueInTwinResponse.
-        :type excepted: :class:`huaweicloudsdkief.v1.ValueInTwinResponseExcepted`
+        :type excepted: :class:`huaweicloudsdkief.v1.ExceptedActual`
         """
         self._excepted = excepted
 
@@ -92,7 +92,7 @@ class ValueInTwinResponse:
 
 
         :return: The actual of this ValueInTwinResponse.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInTwinResponseActual`
+        :rtype: :class:`huaweicloudsdkief.v1.ExceptedActual`
         """
         return self._actual
 
@@ -102,7 +102,7 @@ class ValueInTwinResponse:
 
 
         :param actual: The actual of this ValueInTwinResponse.
-        :type actual: :class:`huaweicloudsdkief.v1.ValueInTwinResponseActual`
+        :type actual: :class:`huaweicloudsdkief.v1.ExceptedActual`
         """
         self._actual = actual
 
@@ -112,7 +112,7 @@ class ValueInTwinResponse:
 
 
         :return: The metadata of this ValueInTwinResponse.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInTwinResponseMetadata`
+        :rtype: :class:`huaweicloudsdkief.v1.Metadata`
         """
         return self._metadata
 
@@ -122,7 +122,7 @@ class ValueInTwinResponse:
 
 
         :param metadata: The metadata of this ValueInTwinResponse.
-        :type metadata: :class:`huaweicloudsdkief.v1.ValueInTwinResponseMetadata`
+        :type metadata: :class:`huaweicloudsdkief.v1.Metadata`
         """
         self._metadata = metadata
 

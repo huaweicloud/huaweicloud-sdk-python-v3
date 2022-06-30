@@ -10,10 +10,13 @@ from huaweicloudsdkwaf.v1.model.anti_tamper_rule_response_body import AntiTamper
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_request import ApplyCertificateToHostRequest
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_request_body import ApplyCertificateToHostRequestBody
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_response import ApplyCertificateToHostResponse
+from huaweicloudsdkwaf.v1.model.attack_type_classification_item import AttackTypeClassificationItem
+from huaweicloudsdkwaf.v1.model.attack_type_item import AttackTypeItem
 from huaweicloudsdkwaf.v1.model.bind_host import BindHost
 from huaweicloudsdkwaf.v1.model.block_page import BlockPage
 from huaweicloudsdkwaf.v1.model.certificate_body import CertificateBody
 from huaweicloudsdkwaf.v1.model.certificate_bunding_host_body import CertificateBundingHostBody
+from huaweicloudsdkwaf.v1.model.circuit_breaker import CircuitBreaker
 from huaweicloudsdkwaf.v1.model.cloud_waf_host_item import CloudWafHostItem
 from huaweicloudsdkwaf.v1.model.cloud_waf_server import CloudWafServer
 from huaweicloudsdkwaf.v1.model.composite_host_response import CompositeHostResponse
@@ -71,10 +74,16 @@ from huaweicloudsdkwaf.v1.model.delete_value_list_request import DeleteValueList
 from huaweicloudsdkwaf.v1.model.delete_value_list_response import DeleteValueListResponse
 from huaweicloudsdkwaf.v1.model.delete_white_black_ip_rule_request import DeleteWhiteBlackIpRuleRequest
 from huaweicloudsdkwaf.v1.model.delete_white_black_ip_rule_response import DeleteWhiteBlackIpRuleResponse
+from huaweicloudsdkwaf.v1.model.domain_classification_item import DomainClassificationItem
+from huaweicloudsdkwaf.v1.model.domain_item import DomainItem
 from huaweicloudsdkwaf.v1.model.flag import Flag
 from huaweicloudsdkwaf.v1.model.ge_o_ip_item import GeOIpItem
+from huaweicloudsdkwaf.v1.model.geo_classification_item import GeoClassificationItem
+from huaweicloudsdkwaf.v1.model.geo_item import GeoItem
 from huaweicloudsdkwaf.v1.model.host_flag import HostFlag
 from huaweicloudsdkwaf.v1.model.ignore_rule_body import IgnoreRuleBody
+from huaweicloudsdkwaf.v1.model.ip_classification_item import IpClassificationItem
+from huaweicloudsdkwaf.v1.model.ip_item import IpItem
 from huaweicloudsdkwaf.v1.model.list_antitamper_rule_request import ListAntitamperRuleRequest
 from huaweicloudsdkwaf.v1.model.list_antitamper_rule_response import ListAntitamperRuleResponse
 from huaweicloudsdkwaf.v1.model.list_bandwidth_timeline_request import ListBandwidthTimelineRequest
@@ -94,6 +103,8 @@ from huaweicloudsdkwaf.v1.model.list_host_route_request import ListHostRouteRequ
 from huaweicloudsdkwaf.v1.model.list_host_route_response import ListHostRouteResponse
 from huaweicloudsdkwaf.v1.model.list_ignore_rule_request import ListIgnoreRuleRequest
 from huaweicloudsdkwaf.v1.model.list_ignore_rule_response import ListIgnoreRuleResponse
+from huaweicloudsdkwaf.v1.model.list_overviews_classification_request import ListOverviewsClassificationRequest
+from huaweicloudsdkwaf.v1.model.list_overviews_classification_response import ListOverviewsClassificationResponse
 from huaweicloudsdkwaf.v1.model.list_policy_request import ListPolicyRequest
 from huaweicloudsdkwaf.v1.model.list_policy_response import ListPolicyResponse
 from huaweicloudsdkwaf.v1.model.list_premium_host_request import ListPremiumHostRequest
@@ -136,6 +147,7 @@ from huaweicloudsdkwaf.v1.model.show_premium_host_response import ShowPremiumHos
 from huaweicloudsdkwaf.v1.model.simple_premium_waf_host import SimplePremiumWafHost
 from huaweicloudsdkwaf.v1.model.statistics_timeline_item import StatisticsTimelineItem
 from huaweicloudsdkwaf.v1.model.time_line_item import TimeLineItem
+from huaweicloudsdkwaf.v1.model.timeout_config import TimeoutConfig
 from huaweicloudsdkwaf.v1.model.traffic_mark import TrafficMark
 from huaweicloudsdkwaf.v1.model.update_certificate_request import UpdateCertificateRequest
 from huaweicloudsdkwaf.v1.model.update_certificate_request_body import UpdateCertificateRequestBody
@@ -173,7 +185,9 @@ from huaweicloudsdkwaf.v1.model.update_value_list_response import UpdateValueLis
 from huaweicloudsdkwaf.v1.model.update_white_black_ip_rule_request_body import UpdateWhiteBlackIpRuleRequestBody
 from huaweicloudsdkwaf.v1.model.update_whiteblackip_rule_request import UpdateWhiteblackipRuleRequest
 from huaweicloudsdkwaf.v1.model.update_whiteblackip_rule_response import UpdateWhiteblackipRuleResponse
+from huaweicloudsdkwaf.v1.model.url_classification_item import UrlClassificationItem
 from huaweicloudsdkwaf.v1.model.url_count_item import UrlCountItem
+from huaweicloudsdkwaf.v1.model.url_item import UrlItem
 from huaweicloudsdkwaf.v1.model.value_list_response_body import ValueListResponseBody
 from huaweicloudsdkwaf.v1.model.white_black_ip_response_body import WhiteBlackIpResponseBody
 

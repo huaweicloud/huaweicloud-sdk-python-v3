@@ -43,7 +43,8 @@ class ListInstancesResult:
         'dedicated_resource_id': 'str',
         'time_zone': 'str',
         'actions': 'list[str]',
-        'lb_ip_address': 'str'
+        'lb_ip_address': 'str',
+        'lb_port': 'str'
     }
 
     attribute_map = {
@@ -69,10 +70,11 @@ class ListInstancesResult:
         'dedicated_resource_id': 'dedicated_resource_id',
         'time_zone': 'time_zone',
         'actions': 'actions',
-        'lb_ip_address': 'lb_ip_address'
+        'lb_ip_address': 'lb_ip_address',
+        'lb_port': 'lb_port'
     }
 
-    def __init__(self, id=None, name=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None):
+    def __init__(self, id=None, name=None, status=None, port=None, mode=None, region=None, datastore=None, engine=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, backup_strategy=None, pay_mode=None, maintenance_window=None, groups=None, enterprise_project_id=None, dedicated_resource_id=None, time_zone=None, actions=None, lb_ip_address=None, lb_port=None):
         """ListInstancesResult
 
         The model defined in huaweicloud sdk
@@ -121,8 +123,10 @@ class ListInstancesResult:
         :type time_zone: str
         :param actions: 实例正在执行的动作。
         :type actions: list[str]
-        :param lb_ip_address: 负载均衡ip，只有存在负载均衡ip才会返回该参数。
+        :param lb_ip_address: 负载均衡ip，只有存在负载均衡ip，才会返回该参数。
         :type lb_ip_address: str
+        :param lb_port: 负载均衡端口，只有存在负载均衡ip，才会返回该参数。
+        :type lb_port: str
         """
         
         
@@ -150,6 +154,7 @@ class ListInstancesResult:
         self._time_zone = None
         self._actions = None
         self._lb_ip_address = None
+        self._lb_port = None
         self.discriminator = None
 
         self.id = id
@@ -177,6 +182,8 @@ class ListInstancesResult:
         self.actions = actions
         if lb_ip_address is not None:
             self.lb_ip_address = lb_ip_address
+        if lb_port is not None:
+            self.lb_port = lb_port
 
     @property
     def id(self):
@@ -662,7 +669,7 @@ class ListInstancesResult:
     def lb_ip_address(self):
         """Gets the lb_ip_address of this ListInstancesResult.
 
-        负载均衡ip，只有存在负载均衡ip才会返回该参数。
+        负载均衡ip，只有存在负载均衡ip，才会返回该参数。
 
         :return: The lb_ip_address of this ListInstancesResult.
         :rtype: str
@@ -673,12 +680,34 @@ class ListInstancesResult:
     def lb_ip_address(self, lb_ip_address):
         """Sets the lb_ip_address of this ListInstancesResult.
 
-        负载均衡ip，只有存在负载均衡ip才会返回该参数。
+        负载均衡ip，只有存在负载均衡ip，才会返回该参数。
 
         :param lb_ip_address: The lb_ip_address of this ListInstancesResult.
         :type lb_ip_address: str
         """
         self._lb_ip_address = lb_ip_address
+
+    @property
+    def lb_port(self):
+        """Gets the lb_port of this ListInstancesResult.
+
+        负载均衡端口，只有存在负载均衡ip，才会返回该参数。
+
+        :return: The lb_port of this ListInstancesResult.
+        :rtype: str
+        """
+        return self._lb_port
+
+    @lb_port.setter
+    def lb_port(self, lb_port):
+        """Sets the lb_port of this ListInstancesResult.
+
+        负载均衡端口，只有存在负载均衡ip，才会返回该参数。
+
+        :param lb_port: The lb_port of this ListInstancesResult.
+        :type lb_port: str
+        """
+        self._lb_port = lb_port
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -292,6 +292,64 @@ class OcrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def recognize_cambodian_id_card_async(self, request):
+        """柬文身份证识别
+
+        识别柬文身份证图片中的文字内容，并将识别的结构化结果返回给用户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RecognizeCambodianIdCard
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeCambodianIdCardRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeCambodianIdCardResponse`
+        """
+        return self.recognize_cambodian_id_card_with_http_info(request)
+
+    def recognize_cambodian_id_card_with_http_info(self, request):
+        all_params = ['cambodian_id_card_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/cambodian-idcard',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeCambodianIdCardResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def recognize_chile_id_card_async(self, request):
         """智利身份证识别
 
@@ -407,6 +465,64 @@ class OcrAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='RecognizeDriverLicenseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def recognize_exit_entry_permit_async(self, request):
+        """往来港澳台通行证识别
+
+        识别往来港澳台证件图片中的文字内容，并将识别的结构化结果返回给用户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RecognizeExitEntryPermit
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeExitEntryPermitRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeExitEntryPermitResponse`
+        """
+        return self.recognize_exit_entry_permit_with_http_info(request)
+
+    def recognize_exit_entry_permit_with_http_info(self, request):
+        all_params = ['exit_entry_permit_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/exit-entry-permit',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeExitEntryPermitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -764,6 +880,64 @@ class OcrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def recognize_hk_id_card_async(self, request):
+        """香港身份证识别
+
+        识别香港身份证中的文字内容，并将识别的结果返回给用户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RecognizeHkIdCard
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeHkIdCardRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeHkIdCardResponse`
+        """
+        return self.recognize_hk_id_card_with_http_info(request)
+
+    def recognize_hk_id_card_with_http_info(self, request):
+        all_params = ['hk_id_card_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/hk-id-card',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeHkIdCardResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def recognize_id_card_async(self, request):
         """身份证识别
 
@@ -1072,6 +1246,64 @@ class OcrAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='RecognizeLicensePlateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def recognize_mainland_travel_permit_async(self, request):
+        """港澳台居民来往内地通行证识别
+
+        识别港澳居民来往内地通行证上的文字内容，并将识别的结构化结果返回给用户。支持港澳居民来往内地通行证和台湾居民来往内地通行证两种卡证。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RecognizeMainlandTravelPermit
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeMainlandTravelPermitRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMainlandTravelPermitResponse`
+        """
+        return self.recognize_mainland_travel_permit_with_http_info(request)
+
+    def recognize_mainland_travel_permit_with_http_info(self, request):
+        all_params = ['mainland_travel_permit_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/mainland-travel-permit',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeMainlandTravelPermitResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -73,7 +73,7 @@ class ContainerResp:
         :type args: list[str]
         :param command: 容器启动命令，字符总长度最大为65536。 command支持使用数组定义多条命令，但在IEF控制台界面只会显示第一条命令。
         :type command: list[str]
-        :param name: 容器名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
+        :param name: 容器名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
         :type name: str
         :param envs: 环境变量
         :type envs: list[:class:`huaweicloudsdkief.v1.EnvPods`]
@@ -99,13 +99,13 @@ class ContainerResp:
         :type reason: str
         :param is_ready: 健康检查结果
         :type is_ready: str
-        :param privileged: 是否启用特权容器,默认值false
+        :param privileged: 是否启用特权容器，默认值false
         :type privileged: bool
         :param container_id: 容器ID
         :type container_id: str
         :param state: 容器状态
         :type state: str
-        :param npu_type: npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        :param npu_type: NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
         :type npu_type: str
         """
         
@@ -217,7 +217,7 @@ class ContainerResp:
     def name(self):
         """Gets the name of this ContainerResp.
 
-        容器名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
+        容器名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
         :return: The name of this ContainerResp.
         :rtype: str
@@ -228,7 +228,7 @@ class ContainerResp:
     def name(self, name):
         """Sets the name of this ContainerResp.
 
-        容器名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
+        容器名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
         :param name: The name of this ContainerResp.
         :type name: str
@@ -497,7 +497,7 @@ class ContainerResp:
     def privileged(self):
         """Gets the privileged of this ContainerResp.
 
-        是否启用特权容器,默认值false
+        是否启用特权容器，默认值false
 
         :return: The privileged of this ContainerResp.
         :rtype: bool
@@ -508,7 +508,7 @@ class ContainerResp:
     def privileged(self, privileged):
         """Sets the privileged of this ContainerResp.
 
-        是否启用特权容器,默认值false
+        是否启用特权容器，默认值false
 
         :param privileged: The privileged of this ContainerResp.
         :type privileged: bool
@@ -563,7 +563,7 @@ class ContainerResp:
     def npu_type(self):
         """Gets the npu_type of this ContainerResp.
 
-        npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :return: The npu_type of this ContainerResp.
         :rtype: str
@@ -574,7 +574,7 @@ class ContainerResp:
     def npu_type(self, npu_type):
         """Sets the npu_type of this ContainerResp.
 
-        npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :param npu_type: The npu_type of this ContainerResp.
         :type npu_type: str

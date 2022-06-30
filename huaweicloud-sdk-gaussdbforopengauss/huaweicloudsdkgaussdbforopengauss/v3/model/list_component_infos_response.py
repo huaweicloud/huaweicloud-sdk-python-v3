@@ -21,29 +21,36 @@ class ListComponentInfosResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'nodes': 'list[Nodes]'
+        'nodes': 'list[Nodes]',
+        'total_count': 'int'
     }
 
     attribute_map = {
-        'nodes': 'nodes'
+        'nodes': 'nodes',
+        'total_count': 'total_count'
     }
 
-    def __init__(self, nodes=None):
+    def __init__(self, nodes=None, total_count=None):
         """ListComponentInfosResponse
 
         The model defined in huaweicloud sdk
 
         :param nodes: 组件信息。
         :type nodes: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.Nodes`]
+        :param total_count: 总记录数。
+        :type total_count: int
         """
         
         super(ListComponentInfosResponse, self).__init__()
 
         self._nodes = None
+        self._total_count = None
         self.discriminator = None
 
         if nodes is not None:
             self.nodes = nodes
+        if total_count is not None:
+            self.total_count = total_count
 
     @property
     def nodes(self):
@@ -66,6 +73,28 @@ class ListComponentInfosResponse(SdkResponse):
         :type nodes: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.Nodes`]
         """
         self._nodes = nodes
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListComponentInfosResponse.
+
+        总记录数。
+
+        :return: The total_count of this ListComponentInfosResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListComponentInfosResponse.
+
+        总记录数。
+
+        :param total_count: The total_count of this ListComponentInfosResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

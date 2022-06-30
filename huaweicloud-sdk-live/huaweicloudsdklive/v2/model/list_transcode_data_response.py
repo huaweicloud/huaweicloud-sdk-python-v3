@@ -29,7 +29,7 @@ class ListTranscodeDataResponse(SdkResponse):
     attribute_map = {
         'transcode_data_list': 'transcode_data_list',
         'summary_list': 'summary_list',
-        'x_request_id': 'X-request-id'
+        'x_request_id': 'X-Request-Id'
     }
 
     def __init__(self, transcode_data_list=None, summary_list=None, x_request_id=None):

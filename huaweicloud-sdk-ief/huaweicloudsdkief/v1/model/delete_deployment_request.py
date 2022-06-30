@@ -41,7 +41,7 @@ class DeleteDeploymentRequest:
         :type ief_instance_id: str
         :param deployment_id: 应用部署ID
         :type deployment_id: str
-        :param force_delete: 是否强制删除；默认为false。
+        :param force_delete: 是否强制删除。默认为false。
         :type force_delete: str
         """
         
@@ -106,7 +106,7 @@ class DeleteDeploymentRequest:
     def force_delete(self):
         """Gets the force_delete of this DeleteDeploymentRequest.
 
-        是否强制删除；默认为false。
+        是否强制删除。默认为false。
 
         :return: The force_delete of this DeleteDeploymentRequest.
         :rtype: str
@@ -117,7 +117,7 @@ class DeleteDeploymentRequest:
     def force_delete(self, force_delete):
         """Sets the force_delete of this DeleteDeploymentRequest.
 
-        是否强制删除；默认为false。
+        是否强制删除。默认为false。
 
         :param force_delete: The force_delete of this DeleteDeploymentRequest.
         :type force_delete: str

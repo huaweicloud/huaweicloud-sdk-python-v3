@@ -51,17 +51,17 @@ class RuleConfig:
         :type description: str
         :param ief_instance_id: 铂金版实例ID，如果为空则表示是专业版实例。
         :type ief_instance_id: str
-        :param in_using: 是否启用规则，默认为true(启用)
+        :param in_using: 是否启用规则，默认为true（启用）
         :type in_using: bool
         :param name: 规则名称，只允许中文字符、英文字符、数字、下划线、中划线，最大长度64 同一个帐号中创建的规则名唯一
         :type name: str
         :param source: 源端点ID
         :type source: str
-        :param source_resource: 源端点资源。 示例： - rest: path取值需要为标准URI格式。 {\&quot;path\&quot;:\&quot;/a/b/c\&quot;} - eventbus: {\&quot;topic\&quot;: \&quot;&lt;project id&gt;/nodes/&lt;node id&gt;/user/&lt;租户自定义且满足eventbus topic要求的字符串&gt;\&quot;,\&quot;node_id\&quot;:\&quot;&lt;node id&gt;\&quot;}
+        :param source_resource: 源端点资源。示例： - rest: {\&quot;path\&quot;:\&quot;&lt;standard uri format&gt;\&quot;} - eventbus: {\&quot;topic\&quot;:\&quot;&lt;project id&gt;/nodes/&lt;node id&gt;/user/&lt;租户自定义且满足eventbus topic要求的字符串&gt;\&quot;,\&quot;node_id\&quot;:\&quot;&lt;node id&gt;\&quot;}
         :type source_resource: dict(str, str)
         :param target: 目的端点ID
         :type target: str
-        :param target_resource: 目的端点资源，示例： - dis: {\&quot;channel\&quot;: \&quot;dis channel name\&quot;} - servicebus: {\&quot;path\&quot;: \&quot;/request path\&quot;} - apigw: {\&quot;resource\&quot;: \&quot;http://ssss.com\&quot;} - eventbus: {\&quot;topic\&quot;: \&quot;/xxxx\&quot;}
+        :param target_resource: 目的端点资源。示例： - dis: {\&quot;channel\&quot;: \&quot;dis channel name\&quot;} - servicebus: {\&quot;path\&quot;: \&quot;/request path\&quot;} - apigw: {\&quot;resource\&quot;: \&quot;http://ssss.com\&quot;} - eventbus: {\&quot;topic\&quot;: \&quot;/xxxx\&quot;}
         :type target_resource: dict(str, str)
         """
         
@@ -137,7 +137,7 @@ class RuleConfig:
     def in_using(self):
         """Gets the in_using of this RuleConfig.
 
-        是否启用规则，默认为true(启用)
+        是否启用规则，默认为true（启用）
 
         :return: The in_using of this RuleConfig.
         :rtype: bool
@@ -148,7 +148,7 @@ class RuleConfig:
     def in_using(self, in_using):
         """Sets the in_using of this RuleConfig.
 
-        是否启用规则，默认为true(启用)
+        是否启用规则，默认为true（启用）
 
         :param in_using: The in_using of this RuleConfig.
         :type in_using: bool
@@ -203,7 +203,7 @@ class RuleConfig:
     def source_resource(self):
         """Gets the source_resource of this RuleConfig.
 
-        源端点资源。 示例： - rest: path取值需要为标准URI格式。 {\"path\":\"/a/b/c\"} - eventbus: {\"topic\": \"<project id>/nodes/<node id>/user/<租户自定义且满足eventbus topic要求的字符串>\",\"node_id\":\"<node id>\"}
+        源端点资源。示例： - rest: {\"path\":\"<standard uri format>\"} - eventbus: {\"topic\":\"<project id>/nodes/<node id>/user/<租户自定义且满足eventbus topic要求的字符串>\",\"node_id\":\"<node id>\"}
 
         :return: The source_resource of this RuleConfig.
         :rtype: dict(str, str)
@@ -214,7 +214,7 @@ class RuleConfig:
     def source_resource(self, source_resource):
         """Sets the source_resource of this RuleConfig.
 
-        源端点资源。 示例： - rest: path取值需要为标准URI格式。 {\"path\":\"/a/b/c\"} - eventbus: {\"topic\": \"<project id>/nodes/<node id>/user/<租户自定义且满足eventbus topic要求的字符串>\",\"node_id\":\"<node id>\"}
+        源端点资源。示例： - rest: {\"path\":\"<standard uri format>\"} - eventbus: {\"topic\":\"<project id>/nodes/<node id>/user/<租户自定义且满足eventbus topic要求的字符串>\",\"node_id\":\"<node id>\"}
 
         :param source_resource: The source_resource of this RuleConfig.
         :type source_resource: dict(str, str)
@@ -247,7 +247,7 @@ class RuleConfig:
     def target_resource(self):
         """Gets the target_resource of this RuleConfig.
 
-        目的端点资源，示例： - dis: {\"channel\": \"dis channel name\"} - servicebus: {\"path\": \"/request path\"} - apigw: {\"resource\": \"http://ssss.com\"} - eventbus: {\"topic\": \"/xxxx\"}
+        目的端点资源。示例： - dis: {\"channel\": \"dis channel name\"} - servicebus: {\"path\": \"/request path\"} - apigw: {\"resource\": \"http://ssss.com\"} - eventbus: {\"topic\": \"/xxxx\"}
 
         :return: The target_resource of this RuleConfig.
         :rtype: dict(str, str)
@@ -258,7 +258,7 @@ class RuleConfig:
     def target_resource(self, target_resource):
         """Sets the target_resource of this RuleConfig.
 
-        目的端点资源，示例： - dis: {\"channel\": \"dis channel name\"} - servicebus: {\"path\": \"/request path\"} - apigw: {\"resource\": \"http://ssss.com\"} - eventbus: {\"topic\": \"/xxxx\"}
+        目的端点资源。示例： - dis: {\"channel\": \"dis channel name\"} - servicebus: {\"path\": \"/request path\"} - apigw: {\"resource\": \"http://ssss.com\"} - eventbus: {\"topic\": \"/xxxx\"}
 
         :param target_resource: The target_resource of this RuleConfig.
         :type target_resource: dict(str, str)

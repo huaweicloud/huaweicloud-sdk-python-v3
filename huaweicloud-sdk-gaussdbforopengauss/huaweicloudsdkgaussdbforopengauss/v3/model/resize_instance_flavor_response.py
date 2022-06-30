@@ -21,35 +21,42 @@ class ResizeInstanceFlavorResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'job_id': 'str'
+        'job_id': 'str',
+        'order_id': 'str'
     }
 
     attribute_map = {
-        'job_id': 'job_id'
+        'job_id': 'job_id',
+        'order_id': 'order_id'
     }
 
-    def __init__(self, job_id=None):
+    def __init__(self, job_id=None, order_id=None):
         """ResizeInstanceFlavorResponse
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 任务id。
+        :param job_id: 任务id。按需实例时仅返回任务id。
         :type job_id: str
+        :param order_id: 订单id。仅变更包周期实例会返回该参数。
+        :type order_id: str
         """
         
         super(ResizeInstanceFlavorResponse, self).__init__()
 
         self._job_id = None
+        self._order_id = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
+        if order_id is not None:
+            self.order_id = order_id
 
     @property
     def job_id(self):
         """Gets the job_id of this ResizeInstanceFlavorResponse.
 
-        任务id。
+        任务id。按需实例时仅返回任务id。
 
         :return: The job_id of this ResizeInstanceFlavorResponse.
         :rtype: str
@@ -60,12 +67,34 @@ class ResizeInstanceFlavorResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this ResizeInstanceFlavorResponse.
 
-        任务id。
+        任务id。按需实例时仅返回任务id。
 
         :param job_id: The job_id of this ResizeInstanceFlavorResponse.
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this ResizeInstanceFlavorResponse.
+
+        订单id。仅变更包周期实例会返回该参数。
+
+        :return: The order_id of this ResizeInstanceFlavorResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this ResizeInstanceFlavorResponse.
+
+        订单id。仅变更包周期实例会返回该参数。
+
+        :param order_id: The order_id of this ResizeInstanceFlavorResponse.
+        :type order_id: str
+        """
+        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

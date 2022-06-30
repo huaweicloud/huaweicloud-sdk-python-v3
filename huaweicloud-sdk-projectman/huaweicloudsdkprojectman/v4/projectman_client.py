@@ -1962,6 +1962,66 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_project_module(self, request):
+        """创建项目的模块
+
+        查询项目的模块列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateProjectModule
+        :type request: :class:`huaweicloudsdkprojectman.v4.CreateProjectModuleRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectModuleResponse`
+        """
+        return self.create_project_module_with_http_info(request)
+
+    def create_project_module_with_http_info(self, request):
+        all_params = ['project_id', 'create_project_module_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/module',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateProjectModuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_system_issue_v4(self, request):
         """细粒度权限用户创建工作项
 
@@ -2137,6 +2197,66 @@ class ProjectManClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteIterationV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_project_module(self, request):
+        """删除项目的模块
+
+        删除项目的模块
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteProjectModule
+        :type request: :class:`huaweicloudsdkprojectman.v4.DeleteProjectModuleRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteProjectModuleResponse`
+        """
+        return self.delete_project_module_with_http_info(request)
+
+    def delete_project_module_with_http_info(self, request):
+        all_params = ['project_id', 'module_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'module_id' in local_var_params:
+            path_params['module_id'] = local_var_params['module_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/modules/{module_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteProjectModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2964,6 +3084,68 @@ class ProjectManClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_project_modules(self, request):
+        """查询项目的模块列表
+
+        查询项目的模块列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListProjectModules
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectModulesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectModulesResponse`
+        """
+        return self.list_project_modules_with_http_info(request)
+
+    def list_project_modules_with_http_info(self, request):
+        all_params = ['project_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/modules',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListProjectModulesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_project_work_hours(self, request):
         """按用户查询工时（多项目）
 
@@ -3141,9 +3323,9 @@ class ProjectManClient(Client):
             request_type=request.__class__.__name__)
 
     def show_issues_wrok_flow_config(self, request):
-        """查询Scrum的工作项流转配置
+        """查询Scrum项目的工作项流转配置
 
-        查询Scrum的工作项流转配置
+        查询Scrum项目的工作项流转配置
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3437,6 +3619,68 @@ class ProjectManClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateIterationV4Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_project_module(self, request):
+        """更新项目的模块
+
+        更新项目的模块
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateProjectModule
+        :type request: :class:`huaweicloudsdkprojectman.v4.UpdateProjectModuleRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateProjectModuleResponse`
+        """
+        return self.update_project_module_with_http_info(request)
+
+    def update_project_module_with_http_info(self, request):
+        all_params = ['project_id', 'module_id', 'update_project_module_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'module_id' in local_var_params:
+            path_params['module_id'] = local_var_params['module_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/modules/{module_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateProjectModuleResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -41,7 +41,7 @@ class PodAffinityTerm:
         :type label_selector: :class:`huaweicloudsdkief.v1.PodAffinityTermLabelSelector`
         :param namespaces: 命名空间
         :type namespaces: list[str]
-        :param topology_key: 拓扑标签。 先圈定topologyKey指定的范围，然后再选择labelSelector定义的内容，即亲和调度只会在有topologyKey指定的标签节点上调度。
+        :param topology_key: 拓扑标签。先圈定topologyKey指定的范围，然后再选择labelSelector定义的内容，即亲和调度只会在有topologyKey指定的标签节点上调度。
         :type topology_key: str
         """
         
@@ -105,7 +105,7 @@ class PodAffinityTerm:
     def topology_key(self):
         """Gets the topology_key of this PodAffinityTerm.
 
-        拓扑标签。 先圈定topologyKey指定的范围，然后再选择labelSelector定义的内容，即亲和调度只会在有topologyKey指定的标签节点上调度。
+        拓扑标签。先圈定topologyKey指定的范围，然后再选择labelSelector定义的内容，即亲和调度只会在有topologyKey指定的标签节点上调度。
 
         :return: The topology_key of this PodAffinityTerm.
         :rtype: str
@@ -116,7 +116,7 @@ class PodAffinityTerm:
     def topology_key(self, topology_key):
         """Sets the topology_key of this PodAffinityTerm.
 
-        拓扑标签。 先圈定topologyKey指定的范围，然后再选择labelSelector定义的内容，即亲和调度只会在有topologyKey指定的标签节点上调度。
+        拓扑标签。先圈定topologyKey指定的范围，然后再选择labelSelector定义的内容，即亲和调度只会在有topologyKey指定的标签节点上调度。
 
         :param topology_key: The topology_key of this PodAffinityTerm.
         :type topology_key: str

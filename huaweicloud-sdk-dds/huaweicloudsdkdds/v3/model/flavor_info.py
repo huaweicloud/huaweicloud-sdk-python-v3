@@ -53,7 +53,7 @@ class FlavorInfo:
         :type vcpus: str
         :param ram: 内存大小，单位为兆字节。
         :type ram: str
-        :param spec_code: 资源规格编码。例如：dds.c3.xlarge.2.shard。  - “dds”表示文档数据库服务产品。 - “c3.xlarge.2”表示节点性能规格，为高内存类型。 - “shard”表示节点类型。
+        :param spec_code: 资源规格编码。例如：dds.mongodb.c6.xlarge.2.shard。  - “dds”表示文档数据库服务产品。 - “c6.xlarge.2”表示节点性能规格，为高内存类型。 - “shard”表示节点类型。
         :type spec_code: str
         :param az_status: &#39;支持该规格的可用区ID。&#39; 示例：[\&quot;cn-east-2a\&quot;,\&quot;cn-east-2b\&quot;,\&quot;cn-east-2c\&quot;]。
         :type az_status: object
@@ -172,7 +172,7 @@ class FlavorInfo:
     def spec_code(self):
         """Gets the spec_code of this FlavorInfo.
 
-        资源规格编码。例如：dds.c3.xlarge.2.shard。  - “dds”表示文档数据库服务产品。 - “c3.xlarge.2”表示节点性能规格，为高内存类型。 - “shard”表示节点类型。
+        资源规格编码。例如：dds.mongodb.c6.xlarge.2.shard。  - “dds”表示文档数据库服务产品。 - “c6.xlarge.2”表示节点性能规格，为高内存类型。 - “shard”表示节点类型。
 
         :return: The spec_code of this FlavorInfo.
         :rtype: str
@@ -183,7 +183,7 @@ class FlavorInfo:
     def spec_code(self, spec_code):
         """Sets the spec_code of this FlavorInfo.
 
-        资源规格编码。例如：dds.c3.xlarge.2.shard。  - “dds”表示文档数据库服务产品。 - “c3.xlarge.2”表示节点性能规格，为高内存类型。 - “shard”表示节点类型。
+        资源规格编码。例如：dds.mongodb.c6.xlarge.2.shard。  - “dds”表示文档数据库服务产品。 - “c6.xlarge.2”表示节点性能规格，为高内存类型。 - “shard”表示节点类型。
 
         :param spec_code: The spec_code of this FlavorInfo.
         :type spec_code: str

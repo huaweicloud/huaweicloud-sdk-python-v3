@@ -41,6 +41,7 @@ class ShowPremiumHostResponse(SdkResponse):
         'block_page': 'BlockPage',
         'extend': 'dict(str, str)',
         'traffic_mark': 'TrafficMark',
+        'timeout_config': 'TimeoutConfig',
         'flag': 'dict(str, str)',
         'mode': 'str',
         'pool_ids': 'list[str]'
@@ -67,12 +68,13 @@ class ShowPremiumHostResponse(SdkResponse):
         'block_page': 'block_page',
         'extend': 'extend',
         'traffic_mark': 'traffic_mark',
+        'timeout_config': 'timeout_config',
         'flag': 'flag',
         'mode': 'mode',
         'pool_ids': 'pool_ids'
     }
 
-    def __init__(self, id=None, policyid=None, hostname=None, domainid=None, project_id=None, access_code=None, protocol=None, server=None, certificateid=None, certificatename=None, tls=None, cipher=None, proxy=None, locked=None, protect_status=None, access_status=None, timestamp=None, block_page=None, extend=None, traffic_mark=None, flag=None, mode=None, pool_ids=None):
+    def __init__(self, id=None, policyid=None, hostname=None, domainid=None, project_id=None, access_code=None, protocol=None, server=None, certificateid=None, certificatename=None, tls=None, cipher=None, proxy=None, locked=None, protect_status=None, access_status=None, timestamp=None, block_page=None, extend=None, traffic_mark=None, timeout_config=None, flag=None, mode=None, pool_ids=None):
         """ShowPremiumHostResponse
 
         The model defined in huaweicloud sdk
@@ -117,6 +119,8 @@ class ShowPremiumHostResponse(SdkResponse):
         :type extend: dict(str, str)
         :param traffic_mark: 
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
+        :param timeout_config: 
+        :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
         :param flag: 域名特殊标记
         :type flag: dict(str, str)
         :param mode: 独享模式特殊域名模式（仅特殊模式需要，如elb）
@@ -147,6 +151,7 @@ class ShowPremiumHostResponse(SdkResponse):
         self._block_page = None
         self._extend = None
         self._traffic_mark = None
+        self._timeout_config = None
         self._flag = None
         self._mode = None
         self._pool_ids = None
@@ -192,6 +197,8 @@ class ShowPremiumHostResponse(SdkResponse):
             self.extend = extend
         if traffic_mark is not None:
             self.traffic_mark = traffic_mark
+        if timeout_config is not None:
+            self.timeout_config = timeout_config
         if flag is not None:
             self.flag = flag
         if mode is not None:
@@ -634,6 +641,26 @@ class ShowPremiumHostResponse(SdkResponse):
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
         """
         self._traffic_mark = traffic_mark
+
+    @property
+    def timeout_config(self):
+        """Gets the timeout_config of this ShowPremiumHostResponse.
+
+
+        :return: The timeout_config of this ShowPremiumHostResponse.
+        :rtype: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
+        """
+        return self._timeout_config
+
+    @timeout_config.setter
+    def timeout_config(self, timeout_config):
+        """Sets the timeout_config of this ShowPremiumHostResponse.
+
+
+        :param timeout_config: The timeout_config of this ShowPremiumHostResponse.
+        :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
+        """
+        self._timeout_config = timeout_config
 
     @property
     def flag(self):

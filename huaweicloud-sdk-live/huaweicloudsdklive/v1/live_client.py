@@ -1003,7 +1003,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = ["X-request-id"]
+        response_headers = ["X-Request-Id"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1199,7 +1199,7 @@ class LiveClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Request-Id"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json; charset=UTF-8'])

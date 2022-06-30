@@ -57,7 +57,7 @@ class ContainerDef:
 
         The model defined in huaweicloud sdk
 
-        :param name: 容器名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
+        :param name: 容器名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
         :type name: str
         :param image_url: 容器镜像URL
         :type image_url: str
@@ -81,7 +81,7 @@ class ContainerDef:
         :type version: str
         :param volumes: 卷配置
         :type volumes: list[:class:`huaweicloudsdkief.v1.Volumes`]
-        :param npu_type: npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        :param npu_type: NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
         :type npu_type: str
         """
         
@@ -131,7 +131,7 @@ class ContainerDef:
     def name(self):
         """Gets the name of this ContainerDef.
 
-        容器名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
+        容器名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
         :return: The name of this ContainerDef.
         :rtype: str
@@ -142,7 +142,7 @@ class ContainerDef:
     def name(self, name):
         """Sets the name of this ContainerDef.
 
-        容器名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
+        容器名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
         :param name: The name of this ContainerDef.
         :type name: str
@@ -389,7 +389,7 @@ class ContainerDef:
     def npu_type(self):
         """Gets the npu_type of this ContainerDef.
 
-        npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :return: The npu_type of this ContainerDef.
         :rtype: str
@@ -400,7 +400,7 @@ class ContainerDef:
     def npu_type(self, npu_type):
         """Sets the npu_type of this ContainerDef.
 
-        npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :param npu_type: The npu_type of this ContainerDef.
         :type npu_type: str

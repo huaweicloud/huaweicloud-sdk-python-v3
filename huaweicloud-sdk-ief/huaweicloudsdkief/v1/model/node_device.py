@@ -21,7 +21,7 @@ class NodeDevice:
     sensitive_list = []
 
     openapi_types = {
-        'added': 'DevicesDevicesAdded',
+        'added': 'DeviceInfos',
         'removed': 'list[str]'
     }
 
@@ -36,7 +36,7 @@ class NodeDevice:
         The model defined in huaweicloud sdk
 
         :param added: 
-        :type added: :class:`huaweicloudsdkief.v1.DevicesDevicesAdded`
+        :type added: :class:`huaweicloudsdkief.v1.DeviceInfos`
         :param removed: 要解绑的终端设备ID
         :type removed: list[str]
         """
@@ -58,7 +58,7 @@ class NodeDevice:
 
 
         :return: The added of this NodeDevice.
-        :rtype: :class:`huaweicloudsdkief.v1.DevicesDevicesAdded`
+        :rtype: :class:`huaweicloudsdkief.v1.DeviceInfos`
         """
         return self._added
 
@@ -68,7 +68,7 @@ class NodeDevice:
 
 
         :param added: The added of this NodeDevice.
-        :type added: :class:`huaweicloudsdkief.v1.DevicesDevicesAdded`
+        :type added: :class:`huaweicloudsdkief.v1.DeviceInfos`
         """
         self._added = added
 

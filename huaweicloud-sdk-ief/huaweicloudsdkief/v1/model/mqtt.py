@@ -41,7 +41,7 @@ class Mqtt:
         :type bind_addr: str
         :param port: 端口号。
         :type port: int
-        :param type: 类型。 枚举值： - nic：网卡类型 - ip：IP类型
+        :param type: 类型。枚举值： - nic：网卡类型 - ip：IP类型
         :type type: str
         """
         
@@ -104,7 +104,7 @@ class Mqtt:
     def type(self):
         """Gets the type of this Mqtt.
 
-        类型。 枚举值： - nic：网卡类型 - ip：IP类型
+        类型。枚举值： - nic：网卡类型 - ip：IP类型
 
         :return: The type of this Mqtt.
         :rtype: str
@@ -115,7 +115,7 @@ class Mqtt:
     def type(self, type):
         """Sets the type of this Mqtt.
 
-        类型。 枚举值： - nic：网卡类型 - ip：IP类型
+        类型。枚举值： - nic：网卡类型 - ip：IP类型
 
         :param type: The type of this Mqtt.
         :type type: str

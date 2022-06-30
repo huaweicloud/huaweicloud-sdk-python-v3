@@ -23,6 +23,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
     openapi_types = {
         'project_name': 'str',
         'nick_name': 'str',
+        'user_id': 'str',
         'user_name': 'str',
         'work_date': 'str',
         'work_hours_num': 'str',
@@ -38,6 +39,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
     attribute_map = {
         'project_name': 'project_name',
         'nick_name': 'nick_name',
+        'user_id': 'user_id',
         'user_name': 'user_name',
         'work_date': 'work_date',
         'work_hours_num': 'work_hours_num',
@@ -50,7 +52,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         'closed_time': 'closed_time'
     }
 
-    def __init__(self, project_name=None, nick_name=None, user_name=None, work_date=None, work_hours_num=None, summary=None, work_hours_type_name=None, issue_id=None, issue_type=None, subject=None, created_time=None, closed_time=None):
+    def __init__(self, project_name=None, nick_name=None, user_id=None, user_name=None, work_date=None, work_hours_num=None, summary=None, work_hours_type_name=None, issue_id=None, issue_type=None, subject=None, created_time=None, closed_time=None):
         """ShowProjectWorkHoursResponseBodyWorkHours
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         :type project_name: str
         :param nick_name: 用户昵称
         :type nick_name: str
+        :param user_id: 用户id
+        :type user_id: str
         :param user_name: 用户名
         :type user_name: str
         :param work_date: 工时日期
@@ -85,6 +89,7 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
 
         self._project_name = None
         self._nick_name = None
+        self._user_id = None
         self._user_name = None
         self._work_date = None
         self._work_hours_num = None
@@ -101,6 +106,8 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
             self.project_name = project_name
         if nick_name is not None:
             self.nick_name = nick_name
+        if user_id is not None:
+            self.user_id = user_id
         if user_name is not None:
             self.user_name = user_name
         if work_date is not None:
@@ -165,6 +172,28 @@ class ShowProjectWorkHoursResponseBodyWorkHours:
         :type nick_name: str
         """
         self._nick_name = nick_name
+
+    @property
+    def user_id(self):
+        """Gets the user_id of this ShowProjectWorkHoursResponseBodyWorkHours.
+
+        用户id
+
+        :return: The user_id of this ShowProjectWorkHoursResponseBodyWorkHours.
+        :rtype: str
+        """
+        return self._user_id
+
+    @user_id.setter
+    def user_id(self, user_id):
+        """Sets the user_id of this ShowProjectWorkHoursResponseBodyWorkHours.
+
+        用户id
+
+        :param user_id: The user_id of this ShowProjectWorkHoursResponseBodyWorkHours.
+        :type user_id: str
+        """
+        self._user_id = user_id
 
     @property
     def user_name(self):

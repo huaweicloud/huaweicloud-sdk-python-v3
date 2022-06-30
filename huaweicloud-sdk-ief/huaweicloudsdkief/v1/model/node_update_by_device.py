@@ -21,7 +21,7 @@ class NodeUpdateByDevice:
     sensitive_list = []
 
     openapi_types = {
-        'added': 'EdgeNodeAdded',
+        'added': 'NodeDeviceInfos',
         'removed': 'list[str]'
     }
 
@@ -36,7 +36,7 @@ class NodeUpdateByDevice:
         The model defined in huaweicloud sdk
 
         :param added: 
-        :type added: :class:`huaweicloudsdkief.v1.EdgeNodeAdded`
+        :type added: :class:`huaweicloudsdkief.v1.NodeDeviceInfos`
         :param removed: 要解绑的终端设备ID
         :type removed: list[str]
         """
@@ -58,7 +58,7 @@ class NodeUpdateByDevice:
 
 
         :return: The added of this NodeUpdateByDevice.
-        :rtype: :class:`huaweicloudsdkief.v1.EdgeNodeAdded`
+        :rtype: :class:`huaweicloudsdkief.v1.NodeDeviceInfos`
         """
         return self._added
 
@@ -68,7 +68,7 @@ class NodeUpdateByDevice:
 
 
         :param added: The added of this NodeUpdateByDevice.
-        :type added: :class:`huaweicloudsdkief.v1.EdgeNodeAdded`
+        :type added: :class:`huaweicloudsdkief.v1.NodeDeviceInfos`
         """
         self._added = added
 

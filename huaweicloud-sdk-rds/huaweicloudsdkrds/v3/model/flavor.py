@@ -88,8 +88,7 @@ class Flavor:
         self.spec_code = spec_code
         self.instance_mode = instance_mode
         self.az_status = az_status
-        if az_desc is not None:
-            self.az_desc = az_desc
+        self.az_desc = az_desc
         self.version_name = version_name
         self.group_type = group_type
 

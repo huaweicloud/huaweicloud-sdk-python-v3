@@ -67,7 +67,7 @@ class DeploymentResp:
 
         :param id: 应用部署uuid
         :type id: str
-        :param name: 应用部署名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
+        :param name: 应用部署名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
         :type name: str
         :param replicas: 应用部署总副本数
         :type replicas: int
@@ -83,7 +83,7 @@ class DeploymentResp:
         :type tags: list[:class:`huaweicloudsdkief.v1.Attributes`]
         :param api_version: 应用部署版本
         :type api_version: str
-        :param source: 应用部署来源: 边缘市场(iem) or 自定义(userdefined)
+        :param source: 应用部署来源：边缘市场（iem）或自定义（userdefined）
         :type source: str
         :param project_id: 项目ID
         :type project_id: str
@@ -179,7 +179,7 @@ class DeploymentResp:
     def name(self):
         """Gets the name of this DeploymentResp.
 
-        应用部署名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
+        应用部署名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
         :return: The name of this DeploymentResp.
         :rtype: str
@@ -190,7 +190,7 @@ class DeploymentResp:
     def name(self, name):
         """Sets the name of this DeploymentResp.
 
-        应用部署名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾
+        应用部署名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾
 
         :param name: The name of this DeploymentResp.
         :type name: str
@@ -355,7 +355,7 @@ class DeploymentResp:
     def source(self):
         """Gets the source of this DeploymentResp.
 
-        应用部署来源: 边缘市场(iem) or 自定义(userdefined)
+        应用部署来源：边缘市场（iem）或自定义（userdefined）
 
         :return: The source of this DeploymentResp.
         :rtype: str
@@ -366,7 +366,7 @@ class DeploymentResp:
     def source(self, source):
         """Sets the source of this DeploymentResp.
 
-        应用部署来源: 边缘市场(iem) or 自定义(userdefined)
+        应用部署来源：边缘市场（iem）或自定义（userdefined）
 
         :param source: The source of this DeploymentResp.
         :type source: str

@@ -21,41 +21,63 @@ class ListTagsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'ief_instance_id': 'str',
         'resource_id': 'str',
-        'resource_type': 'str',
-        'ief_instance_id': 'str'
+        'resource_type': 'str'
     }
 
     attribute_map = {
+        'ief_instance_id': 'ief-instance-id',
         'resource_id': 'resource_id',
-        'resource_type': 'resource_type',
-        'ief_instance_id': 'ief-instance-id'
+        'resource_type': 'resource_type'
     }
 
-    def __init__(self, resource_id=None, resource_type=None, ief_instance_id=None):
+    def __init__(self, ief_instance_id=None, resource_id=None, resource_type=None):
         """ListTagsRequest
 
         The model defined in huaweicloud sdk
 
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
         :param resource_id: 资源ID
         :type resource_id: str
         :param resource_type: 资源类型 1. ief-edge_node 2. ief-deployment 3. ief-application 4. ief-device
         :type resource_type: str
-        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
-        :type ief_instance_id: str
         """
         
         
 
+        self._ief_instance_id = None
         self._resource_id = None
         self._resource_type = None
-        self._ief_instance_id = None
         self.discriminator = None
 
-        self.resource_id = resource_id
-        self.resource_type = resource_type
         if ief_instance_id is not None:
             self.ief_instance_id = ief_instance_id
+        self.resource_id = resource_id
+        self.resource_type = resource_type
+
+    @property
+    def ief_instance_id(self):
+        """Gets the ief_instance_id of this ListTagsRequest.
+
+        铂金版实例ID，专业版实例为空值
+
+        :return: The ief_instance_id of this ListTagsRequest.
+        :rtype: str
+        """
+        return self._ief_instance_id
+
+    @ief_instance_id.setter
+    def ief_instance_id(self, ief_instance_id):
+        """Sets the ief_instance_id of this ListTagsRequest.
+
+        铂金版实例ID，专业版实例为空值
+
+        :param ief_instance_id: The ief_instance_id of this ListTagsRequest.
+        :type ief_instance_id: str
+        """
+        self._ief_instance_id = ief_instance_id
 
     @property
     def resource_id(self):
@@ -100,28 +122,6 @@ class ListTagsRequest:
         :type resource_type: str
         """
         self._resource_type = resource_type
-
-    @property
-    def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListTagsRequest.
-
-        铂金版实例ID，专业版实例为空值
-
-        :return: The ief_instance_id of this ListTagsRequest.
-        :rtype: str
-        """
-        return self._ief_instance_id
-
-    @ief_instance_id.setter
-    def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListTagsRequest.
-
-        铂金版实例ID，专业版实例为空值
-
-        :param ief_instance_id: The ief_instance_id of this ListTagsRequest.
-        :type ief_instance_id: str
-        """
-        self._ief_instance_id = ief_instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

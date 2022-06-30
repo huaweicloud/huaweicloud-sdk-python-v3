@@ -39,7 +39,7 @@ class DeleteEdgeNodeCertsRequest:
 
         :param node_id: 边缘节点ID
         :type node_id: str
-        :param cert_id: 证书id
+        :param cert_id: 证书ID
         :type cert_id: str
         :param ief_instance_id: 铂金版实例ID，专业版实例为空值
         :type ief_instance_id: str
@@ -83,7 +83,7 @@ class DeleteEdgeNodeCertsRequest:
     def cert_id(self):
         """Gets the cert_id of this DeleteEdgeNodeCertsRequest.
 
-        证书id
+        证书ID
 
         :return: The cert_id of this DeleteEdgeNodeCertsRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class DeleteEdgeNodeCertsRequest:
     def cert_id(self, cert_id):
         """Sets the cert_id of this DeleteEdgeNodeCertsRequest.
 
-        证书id
+        证书ID
 
         :param cert_id: The cert_id of this DeleteEdgeNodeCertsRequest.
         :type cert_id: str

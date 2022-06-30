@@ -43,7 +43,7 @@ class InvokeFunctionRequest:
         :type function_urn: str
         :param x_cff_log_type: 取值为：tail（返回函数执行后的4K日志），或者为空（不返回日志）。
         :type x_cff_log_type: str
-        :param x_cff_request_version: 返回体格式，取值v0,v1。
+        :param x_cff_request_version: 返回体格式，取值v0,v1。 v0:默认返回文本格式 v1:默认返回json格式，sdk需要使用此值。
         :type x_cff_request_version: str
         :param body: 执行函数请求体，为json格式。
         :type body: dict(str, object)
@@ -113,7 +113,7 @@ class InvokeFunctionRequest:
     def x_cff_request_version(self):
         """Gets the x_cff_request_version of this InvokeFunctionRequest.
 
-        返回体格式，取值v0,v1。
+        返回体格式，取值v0,v1。 v0:默认返回文本格式 v1:默认返回json格式，sdk需要使用此值。
 
         :return: The x_cff_request_version of this InvokeFunctionRequest.
         :rtype: str
@@ -124,7 +124,7 @@ class InvokeFunctionRequest:
     def x_cff_request_version(self, x_cff_request_version):
         """Sets the x_cff_request_version of this InvokeFunctionRequest.
 
-        返回体格式，取值v0,v1。
+        返回体格式，取值v0,v1。 v0:默认返回文本格式 v1:默认返回json格式，sdk需要使用此值。
 
         :param x_cff_request_version: The x_cff_request_version of this InvokeFunctionRequest.
         :type x_cff_request_version: str

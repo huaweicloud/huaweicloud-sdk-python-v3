@@ -836,6 +836,128 @@ class DnsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_delete_record_set_with_line(self, request):
+        """批量删除某个Zone下的Record Set资源。
+
+        批量删除某个Zone下的Record Set资源，当删除的资源不存在时，则默认删除成功。
+        响应结果中只包含本次实际删除的资源。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteRecordSetWithLine
+        :type request: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineResponse`
+        """
+        return self.batch_delete_record_set_with_line_with_http_info(request)
+
+    def batch_delete_record_set_with_line_with_http_info(self, request):
+        all_params = ['zone_id', 'batch_delete_r_set_with_line_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/zones/{zone_id}/recordsets',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteRecordSetWithLineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_update_record_set_with_line(self, request):
+        """批量修改RecordSet。
+
+        批量修改RecordSet。属于原子性操作，请求Record Set将全部完成修改，或不做任何修改。
+        仅公网Zone支持。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchUpdateRecordSetWithLine
+        :type request: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineResponse`
+        """
+        return self.batch_update_record_set_with_line_with_http_info(request)
+
+    def batch_update_record_set_with_line_with_http_info(self, request):
+        all_params = ['zone_id', 'batch_update_record_set_with_line_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/zones/{zone_id}/recordsets',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchUpdateRecordSetWithLineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_record_set(self, request):
         """创建单个Record Set
 
@@ -891,6 +1013,66 @@ class DnsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateRecordSetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_record_set_with_batch_lines(self, request):
+        """批量线路创建RecordSet。仅公网Zone支持。
+
+        批量线路创建RecordSet。属于原子性操作，如果存在一个参数校验不通过，则创建失败。仅公网Zone支持。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateRecordSetWithBatchLines
+        :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithBatchLinesRequest`
+        :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithBatchLinesResponse`
+        """
+        return self.create_record_set_with_batch_lines_with_http_info(request)
+
+    def create_record_set_with_batch_lines_with_http_info(self, request):
+        all_params = ['zone_id', 'create_r_set_batch_lines_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'zone_id' in local_var_params:
+            path_params['zone_id'] = local_var_params['zone_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2.1/zones/{zone_id}/recordsets/batch/lines',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateRecordSetWithBatchLinesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

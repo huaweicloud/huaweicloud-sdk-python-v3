@@ -41,7 +41,7 @@ class AppDetail:
 
         The model defined in huaweicloud sdk
 
-        :param name: 应用模板名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾 Name为必填字段，且本租户中唯一
+        :param name: 应用模板名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾 Name为必填字段，且本租户中唯一
         :type name: str
         :param alias: 应用模板别名，中文英文字母、数字、中划线、下划线，最大64字符
         :type alias: str
@@ -76,7 +76,7 @@ class AppDetail:
     def name(self):
         """Gets the name of this AppDetail.
 
-        应用模板名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾 Name为必填字段，且本租户中唯一
+        应用模板名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾 Name为必填字段，且本租户中唯一
 
         :return: The name of this AppDetail.
         :rtype: str
@@ -87,7 +87,7 @@ class AppDetail:
     def name(self, name):
         """Sets the name of this AppDetail.
 
-        应用模板名称，只允许英文小写字母、数字、中划线，最大长度32, 英文小写字母或数字开头和结尾 Name为必填字段，且本租户中唯一
+        应用模板名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾 Name为必填字段，且本租户中唯一
 
         :param name: The name of this AppDetail.
         :type name: str

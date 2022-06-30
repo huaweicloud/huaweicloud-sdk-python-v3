@@ -21,54 +21,76 @@ class CreateTagRequest:
     sensitive_list = []
 
     openapi_types = {
+        'ief_instance_id': 'str',
         'resource_id': 'str',
         'resource_type': 'str',
-        'ief_instance_id': 'str',
-        'body': 'AddTag'
+        'body': 'CreateTagRequestBody'
     }
 
     attribute_map = {
+        'ief_instance_id': 'ief-instance-id',
         'resource_id': 'resource_id',
         'resource_type': 'resource_type',
-        'ief_instance_id': 'ief-instance-id',
         'body': 'body'
     }
 
-    def __init__(self, resource_id=None, resource_type=None, ief_instance_id=None, body=None):
+    def __init__(self, ief_instance_id=None, resource_id=None, resource_type=None, body=None):
         """CreateTagRequest
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 资源id
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
+        :param resource_id: 资源ID
         :type resource_id: str
         :param resource_type: 资源类型
         :type resource_type: str
-        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
-        :type ief_instance_id: str
         :param body: Body of the CreateTagRequest
-        :type body: :class:`huaweicloudsdkief.v1.AddTag`
+        :type body: :class:`huaweicloudsdkief.v1.CreateTagRequestBody`
         """
         
         
 
+        self._ief_instance_id = None
         self._resource_id = None
         self._resource_type = None
-        self._ief_instance_id = None
         self._body = None
         self.discriminator = None
 
-        self.resource_id = resource_id
-        self.resource_type = resource_type
         if ief_instance_id is not None:
             self.ief_instance_id = ief_instance_id
+        self.resource_id = resource_id
+        self.resource_type = resource_type
         if body is not None:
             self.body = body
+
+    @property
+    def ief_instance_id(self):
+        """Gets the ief_instance_id of this CreateTagRequest.
+
+        铂金版实例ID，专业版实例为空值
+
+        :return: The ief_instance_id of this CreateTagRequest.
+        :rtype: str
+        """
+        return self._ief_instance_id
+
+    @ief_instance_id.setter
+    def ief_instance_id(self, ief_instance_id):
+        """Sets the ief_instance_id of this CreateTagRequest.
+
+        铂金版实例ID，专业版实例为空值
+
+        :param ief_instance_id: The ief_instance_id of this CreateTagRequest.
+        :type ief_instance_id: str
+        """
+        self._ief_instance_id = ief_instance_id
 
     @property
     def resource_id(self):
         """Gets the resource_id of this CreateTagRequest.
 
-        资源id
+        资源ID
 
         :return: The resource_id of this CreateTagRequest.
         :rtype: str
@@ -79,7 +101,7 @@ class CreateTagRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this CreateTagRequest.
 
-        资源id
+        资源ID
 
         :param resource_id: The resource_id of this CreateTagRequest.
         :type resource_id: str
@@ -109,34 +131,12 @@ class CreateTagRequest:
         self._resource_type = resource_type
 
     @property
-    def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateTagRequest.
-
-        铂金版实例ID，专业版实例为空值
-
-        :return: The ief_instance_id of this CreateTagRequest.
-        :rtype: str
-        """
-        return self._ief_instance_id
-
-    @ief_instance_id.setter
-    def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateTagRequest.
-
-        铂金版实例ID，专业版实例为空值
-
-        :param ief_instance_id: The ief_instance_id of this CreateTagRequest.
-        :type ief_instance_id: str
-        """
-        self._ief_instance_id = ief_instance_id
-
-    @property
     def body(self):
         """Gets the body of this CreateTagRequest.
 
 
         :return: The body of this CreateTagRequest.
-        :rtype: :class:`huaweicloudsdkief.v1.AddTag`
+        :rtype: :class:`huaweicloudsdkief.v1.CreateTagRequestBody`
         """
         return self._body
 
@@ -146,7 +146,7 @@ class CreateTagRequest:
 
 
         :param body: The body of this CreateTagRequest.
-        :type body: :class:`huaweicloudsdkief.v1.AddTag`
+        :type body: :class:`huaweicloudsdkief.v1.CreateTagRequestBody`
         """
         self._body = body
 

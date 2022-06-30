@@ -7,6 +7,7 @@ from huaweicloudsdkcdn.v1.model.black_white_list_body import BlackWhiteListBody
 from huaweicloudsdkcdn.v1.model.cache_config import CacheConfig
 from huaweicloudsdkcdn.v1.model.cache_config_request import CacheConfigRequest
 from huaweicloudsdkcdn.v1.model.cache_config_request_body import CacheConfigRequestBody
+from huaweicloudsdkcdn.v1.model.cache_url_parameter_filter import CacheUrlParameterFilter
 from huaweicloudsdkcdn.v1.model.cdn_ips import CdnIps
 from huaweicloudsdkcdn.v1.model.compress import Compress
 from huaweicloudsdkcdn.v1.model.compress_request import CompressRequest

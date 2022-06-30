@@ -21,20 +21,20 @@ class ValueInPropertyVisitors:
     sensitive_list = []
 
     openapi_types = {
-        'register_type': 'ValueInPropertyVisitorsRegisterType',
-        'access_mode': 'ValueInPropertyVisitorsAccessMode',
-        'register_index': 'ValueInPropertyVisitorsRegisterIndex',
-        'register_num': 'ValueInPropertyVisitorsRegisterNum',
-        'scale_index': 'ValueInPropertyVisitorsScaleIndex',
-        'original_datatype': 'ValueInPropertyVisitorsOriginalDatatype',
-        'expected_datatype': 'ValueInPropertyVisitorsExpectedDatatype',
-        'is_registerswap': 'ValueInPropertyVisitorsIsRegisterswap',
-        'is_swap': 'ValueInPropertyVisitorsIsSwap',
-        'sample_interval': 'ValueInPropertyVisitorsSampleInterval',
-        'data_min': 'ValueInPropertyVisitorsDataMin',
-        'data_max': 'ValueInPropertyVisitorsDataMax',
-        'node_id': 'ValueInPropertyVisitorsNodeId',
-        'browse_name': 'ValueInPropertyVisitorsBrowseName'
+        'register_type': 'ValueInAttributes',
+        'access_mode': 'ValueInAttributes',
+        'register_index': 'ValueInAttributes',
+        'register_num': 'ValueInAttributes',
+        'scale_index': 'ValueInAttributes',
+        'original_datatype': 'ValueInAttributes',
+        'expected_datatype': 'ValueInAttributes',
+        'is_registerswap': 'ValueInAttributes',
+        'is_swap': 'ValueInAttributes',
+        'sample_interval': 'ValueInAttributes',
+        'data_min': 'ValueInAttributes',
+        'data_max': 'ValueInAttributes',
+        'node_id': 'ValueInAttributes',
+        'browse_name': 'ValueInAttributes'
     }
 
     attribute_map = {
@@ -60,33 +60,33 @@ class ValueInPropertyVisitors:
         The model defined in huaweicloud sdk
 
         :param register_type: 
-        :type register_type: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterType`
+        :type register_type: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param access_mode: 
-        :type access_mode: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsAccessMode`
+        :type access_mode: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param register_index: 
-        :type register_index: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterIndex`
+        :type register_index: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param register_num: 
-        :type register_num: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterNum`
+        :type register_num: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param scale_index: 
-        :type scale_index: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsScaleIndex`
+        :type scale_index: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param original_datatype: 
-        :type original_datatype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsOriginalDatatype`
+        :type original_datatype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param expected_datatype: 
-        :type expected_datatype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsExpectedDatatype`
+        :type expected_datatype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param is_registerswap: 
-        :type is_registerswap: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsIsRegisterswap`
+        :type is_registerswap: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param is_swap: 
-        :type is_swap: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsIsSwap`
+        :type is_swap: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param sample_interval: 
-        :type sample_interval: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsSampleInterval`
+        :type sample_interval: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param data_min: 
-        :type data_min: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsDataMin`
+        :type data_min: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param data_max: 
-        :type data_max: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsDataMax`
+        :type data_max: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param node_id: 
-        :type node_id: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsNodeId`
+        :type node_id: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         :param browse_name: 
-        :type browse_name: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsBrowseName`
+        :type browse_name: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         
         
@@ -142,7 +142,7 @@ class ValueInPropertyVisitors:
 
 
         :return: The register_type of this ValueInPropertyVisitors.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterType`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._register_type
 
@@ -152,7 +152,7 @@ class ValueInPropertyVisitors:
 
 
         :param register_type: The register_type of this ValueInPropertyVisitors.
-        :type register_type: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterType`
+        :type register_type: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._register_type = register_type
 
@@ -162,7 +162,7 @@ class ValueInPropertyVisitors:
 
 
         :return: The access_mode of this ValueInPropertyVisitors.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsAccessMode`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._access_mode
 
@@ -172,7 +172,7 @@ class ValueInPropertyVisitors:
 
 
         :param access_mode: The access_mode of this ValueInPropertyVisitors.
-        :type access_mode: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsAccessMode`
+        :type access_mode: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._access_mode = access_mode
 
@@ -182,7 +182,7 @@ class ValueInPropertyVisitors:
 
 
         :return: The register_index of this ValueInPropertyVisitors.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterIndex`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._register_index
 
@@ -192,7 +192,7 @@ class ValueInPropertyVisitors:
 
 
         :param register_index: The register_index of this ValueInPropertyVisitors.
-        :type register_index: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterIndex`
+        :type register_index: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._register_index = register_index
 
@@ -202,7 +202,7 @@ class ValueInPropertyVisitors:
 
 
         :return: The register_num of this ValueInPropertyVisitors.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterNum`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._register_num
 
@@ -212,7 +212,7 @@ class ValueInPropertyVisitors:
 
 
         :param register_num: The register_num of this ValueInPropertyVisitors.
-        :type register_num: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterNum`
+        :type register_num: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._register_num = register_num
 
@@ -222,7 +222,7 @@ class ValueInPropertyVisitors:
 
 
         :return: The scale_index of this ValueInPropertyVisitors.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsScaleIndex`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._scale_index
 
@@ -232,7 +232,7 @@ class ValueInPropertyVisitors:
 
 
         :param scale_index: The scale_index of this ValueInPropertyVisitors.
-        :type scale_index: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsScaleIndex`
+        :type scale_index: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._scale_index = scale_index
 
@@ -242,7 +242,7 @@ class ValueInPropertyVisitors:
 
 
         :return: The original_datatype of this ValueInPropertyVisitors.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsOriginalDatatype`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._original_datatype
 
@@ -252,7 +252,7 @@ class ValueInPropertyVisitors:
 
 
         :param original_datatype: The original_datatype of this ValueInPropertyVisitors.
-        :type original_datatype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsOriginalDatatype`
+        :type original_datatype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._original_datatype = original_datatype
 
@@ -262,7 +262,7 @@ class ValueInPropertyVisitors:
 
 
         :return: The expected_datatype of this ValueInPropertyVisitors.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsExpectedDatatype`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._expected_datatype
 
@@ -272,7 +272,7 @@ class ValueInPropertyVisitors:
 
 
         :param expected_datatype: The expected_datatype of this ValueInPropertyVisitors.
-        :type expected_datatype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsExpectedDatatype`
+        :type expected_datatype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._expected_datatype = expected_datatype
 
@@ -282,7 +282,7 @@ class ValueInPropertyVisitors:
 
 
         :return: The is_registerswap of this ValueInPropertyVisitors.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsIsRegisterswap`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._is_registerswap
 
@@ -292,7 +292,7 @@ class ValueInPropertyVisitors:
 
 
         :param is_registerswap: The is_registerswap of this ValueInPropertyVisitors.
-        :type is_registerswap: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsIsRegisterswap`
+        :type is_registerswap: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._is_registerswap = is_registerswap
 
@@ -302,7 +302,7 @@ class ValueInPropertyVisitors:
 
 
         :return: The is_swap of this ValueInPropertyVisitors.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsIsSwap`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._is_swap
 
@@ -312,7 +312,7 @@ class ValueInPropertyVisitors:
 
 
         :param is_swap: The is_swap of this ValueInPropertyVisitors.
-        :type is_swap: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsIsSwap`
+        :type is_swap: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._is_swap = is_swap
 
@@ -322,7 +322,7 @@ class ValueInPropertyVisitors:
 
 
         :return: The sample_interval of this ValueInPropertyVisitors.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsSampleInterval`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._sample_interval
 
@@ -332,7 +332,7 @@ class ValueInPropertyVisitors:
 
 
         :param sample_interval: The sample_interval of this ValueInPropertyVisitors.
-        :type sample_interval: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsSampleInterval`
+        :type sample_interval: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._sample_interval = sample_interval
 
@@ -342,7 +342,7 @@ class ValueInPropertyVisitors:
 
 
         :return: The data_min of this ValueInPropertyVisitors.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsDataMin`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._data_min
 
@@ -352,7 +352,7 @@ class ValueInPropertyVisitors:
 
 
         :param data_min: The data_min of this ValueInPropertyVisitors.
-        :type data_min: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsDataMin`
+        :type data_min: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._data_min = data_min
 
@@ -362,7 +362,7 @@ class ValueInPropertyVisitors:
 
 
         :return: The data_max of this ValueInPropertyVisitors.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsDataMax`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._data_max
 
@@ -372,7 +372,7 @@ class ValueInPropertyVisitors:
 
 
         :param data_max: The data_max of this ValueInPropertyVisitors.
-        :type data_max: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsDataMax`
+        :type data_max: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._data_max = data_max
 
@@ -382,7 +382,7 @@ class ValueInPropertyVisitors:
 
 
         :return: The node_id of this ValueInPropertyVisitors.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsNodeId`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._node_id
 
@@ -392,7 +392,7 @@ class ValueInPropertyVisitors:
 
 
         :param node_id: The node_id of this ValueInPropertyVisitors.
-        :type node_id: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsNodeId`
+        :type node_id: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._node_id = node_id
 
@@ -402,7 +402,7 @@ class ValueInPropertyVisitors:
 
 
         :return: The browse_name of this ValueInPropertyVisitors.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsBrowseName`
+        :rtype: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         return self._browse_name
 
@@ -412,7 +412,7 @@ class ValueInPropertyVisitors:
 
 
         :param browse_name: The browse_name of this ValueInPropertyVisitors.
-        :type browse_name: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsBrowseName`
+        :type browse_name: :class:`huaweicloudsdkief.v1.ValueInAttributes`
         """
         self._browse_name = browse_name
 

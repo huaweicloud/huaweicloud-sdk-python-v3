@@ -23,7 +23,7 @@ class ValueInAttributes:
     openapi_types = {
         'value': 'str',
         'optional': 'bool',
-        'metadata': 'ValueInPropertyVisitorsRegisterTypeMetadata'
+        'metadata': 'Metadata'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class ValueInAttributes:
         :param optional: 标识属性是否可选，默认为true
         :type optional: bool
         :param metadata: 
-        :type metadata: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterTypeMetadata`
+        :type metadata: :class:`huaweicloudsdkief.v1.Metadata`
         """
         
         
@@ -108,7 +108,7 @@ class ValueInAttributes:
 
 
         :return: The metadata of this ValueInAttributes.
-        :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterTypeMetadata`
+        :rtype: :class:`huaweicloudsdkief.v1.Metadata`
         """
         return self._metadata
 
@@ -118,7 +118,7 @@ class ValueInAttributes:
 
 
         :param metadata: The metadata of this ValueInAttributes.
-        :type metadata: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitorsRegisterTypeMetadata`
+        :type metadata: :class:`huaweicloudsdkief.v1.Metadata`
         """
         self._metadata = metadata
 

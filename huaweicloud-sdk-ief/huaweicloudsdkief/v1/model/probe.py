@@ -21,8 +21,8 @@ class Probe:
     sensitive_list = []
 
     openapi_types = {
-        '_exec': 'ProbeExec',
-        'http_get': 'InstancesLivenessProbeHttpGet',
+        '_exec': 'ModelExec',
+        'http_get': 'HttpGetDetail',
         'initial_delay_seconds': 'int',
         'timeout_seconds': 'int'
     }
@@ -40,9 +40,9 @@ class Probe:
         The model defined in huaweicloud sdk
 
         :param _exec: 
-        :type _exec: :class:`huaweicloudsdkief.v1.ProbeExec`
+        :type _exec: :class:`huaweicloudsdkief.v1.ModelExec`
         :param http_get: 
-        :type http_get: :class:`huaweicloudsdkief.v1.InstancesLivenessProbeHttpGet`
+        :type http_get: :class:`huaweicloudsdkief.v1.HttpGetDetail`
         :param initial_delay_seconds: 表示从工作负载启动后从多久开始探测，大于0且不大于3600的整数，默认为10
         :type initial_delay_seconds: int
         :param timeout_seconds: 表示探测超时时间，大于0且不大于3600的整数，默认为1
@@ -72,7 +72,7 @@ class Probe:
 
 
         :return: The _exec of this Probe.
-        :rtype: :class:`huaweicloudsdkief.v1.ProbeExec`
+        :rtype: :class:`huaweicloudsdkief.v1.ModelExec`
         """
         return self.__exec
 
@@ -82,7 +82,7 @@ class Probe:
 
 
         :param _exec: The _exec of this Probe.
-        :type _exec: :class:`huaweicloudsdkief.v1.ProbeExec`
+        :type _exec: :class:`huaweicloudsdkief.v1.ModelExec`
         """
         self.__exec = _exec
 
@@ -92,7 +92,7 @@ class Probe:
 
 
         :return: The http_get of this Probe.
-        :rtype: :class:`huaweicloudsdkief.v1.InstancesLivenessProbeHttpGet`
+        :rtype: :class:`huaweicloudsdkief.v1.HttpGetDetail`
         """
         return self._http_get
 
@@ -102,7 +102,7 @@ class Probe:
 
 
         :param http_get: The http_get of this Probe.
-        :type http_get: :class:`huaweicloudsdkief.v1.InstancesLivenessProbeHttpGet`
+        :type http_get: :class:`huaweicloudsdkief.v1.HttpGetDetail`
         """
         self._http_get = http_get
 

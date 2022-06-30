@@ -67,7 +67,7 @@ class EndpointObjResp:
         :type project_id: str
         :param properties: 端点的属性，端点需要对外展示的属性，示例： - dis: {\&quot;domain_id\&quot;:\&quot;user&#39;s domain id\&quot;} - servicebus: {\&quot;service_port\&quot;:8080} - apigw: {\&quot;domain_id\&quot;:\&quot;user&#39;s domain id\&quot;}
         :type properties: dict(str, object)
-        :param type: 端点类型 枚举值： - dis - servicebus - apigw
+        :param type: 端点类型。枚举值： - dis - servicebus - apigw
         :type type: str
         :param updated_at: 更新时间
         :type updated_at: str
@@ -278,7 +278,7 @@ class EndpointObjResp:
     def type(self):
         """Gets the type of this EndpointObjResp.
 
-        端点类型 枚举值： - dis - servicebus - apigw
+        端点类型。枚举值： - dis - servicebus - apigw
 
         :return: The type of this EndpointObjResp.
         :rtype: str
@@ -289,7 +289,7 @@ class EndpointObjResp:
     def type(self, type):
         """Sets the type of this EndpointObjResp.
 
-        端点类型 枚举值： - dis - servicebus - apigw
+        端点类型。枚举值： - dis - servicebus - apigw
 
         :param type: The type of this EndpointObjResp.
         :type type: str

@@ -27,7 +27,7 @@ class ShowStreamCountResponse(SdkResponse):
 
     attribute_map = {
         'data_list': 'data_list',
-        'x_request_id': 'X-request-id'
+        'x_request_id': 'X-Request-Id'
     }
 
     def __init__(self, data_list=None, x_request_id=None):

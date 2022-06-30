@@ -40,7 +40,8 @@ class PremiumWafHost:
         'timestamp': 'int',
         'block_page': 'BlockPage',
         'extend': 'dict(str, str)',
-        'traffic_mark': 'TrafficMark'
+        'traffic_mark': 'TrafficMark',
+        'timeout_config': 'TimeoutConfig'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class PremiumWafHost:
         'timestamp': 'timestamp',
         'block_page': 'block_page',
         'extend': 'extend',
-        'traffic_mark': 'traffic_mark'
+        'traffic_mark': 'traffic_mark',
+        'timeout_config': 'timeout_config'
     }
 
-    def __init__(self, id=None, policyid=None, hostname=None, domainid=None, project_id=None, access_code=None, protocol=None, server=None, certificateid=None, certificatename=None, tls=None, cipher=None, proxy=None, locked=None, protect_status=None, access_status=None, timestamp=None, block_page=None, extend=None, traffic_mark=None):
+    def __init__(self, id=None, policyid=None, hostname=None, domainid=None, project_id=None, access_code=None, protocol=None, server=None, certificateid=None, certificatename=None, tls=None, cipher=None, proxy=None, locked=None, protect_status=None, access_status=None, timestamp=None, block_page=None, extend=None, traffic_mark=None, timeout_config=None):
         """PremiumWafHost
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class PremiumWafHost:
         :type extend: dict(str, str)
         :param traffic_mark: 
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
+        :param timeout_config: 
+        :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
         """
         
         
@@ -135,6 +139,7 @@ class PremiumWafHost:
         self._block_page = None
         self._extend = None
         self._traffic_mark = None
+        self._timeout_config = None
         self.discriminator = None
 
         if id is not None:
@@ -177,6 +182,8 @@ class PremiumWafHost:
             self.extend = extend
         if traffic_mark is not None:
             self.traffic_mark = traffic_mark
+        if timeout_config is not None:
+            self.timeout_config = timeout_config
 
     @property
     def id(self):
@@ -613,6 +620,26 @@ class PremiumWafHost:
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
         """
         self._traffic_mark = traffic_mark
+
+    @property
+    def timeout_config(self):
+        """Gets the timeout_config of this PremiumWafHost.
+
+
+        :return: The timeout_config of this PremiumWafHost.
+        :rtype: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
+        """
+        return self._timeout_config
+
+    @timeout_config.setter
+    def timeout_config(self, timeout_config):
+        """Sets the timeout_config of this PremiumWafHost.
+
+
+        :param timeout_config: The timeout_config of this PremiumWafHost.
+        :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
+        """
+        self._timeout_config = timeout_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

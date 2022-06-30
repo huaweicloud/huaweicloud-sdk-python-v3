@@ -45,11 +45,11 @@ class ListPodsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param node_id: 指定节点查询应用实例, 可选， 与group_id、deployment_id、deployment_ids四选一
+        :param node_id: 指定节点查询应用实例，可选， 与group_id、deployment_id、deployment_ids四选一
         :type node_id: str
         :param group_id: 指定节点组查询应用实例，可选，与node_id、deployment_id、deployment_ids四选一
         :type group_id: str
-        :param deployment_id: 指定应用部署ID查询应用实例， 可选， 与node_id、group_id、deployment_ids四选一
+        :param deployment_id: 指定应用部署ID查询应用实例，可选， 与node_id、group_id、deployment_ids四选一
         :type deployment_id: str
         :param deployment_ids: 指定应用部署ID列表查询应用实例，多个ID使用逗号分隔，可选， 与node_id、group_id、deployment_id四选一
         :type deployment_ids: str
@@ -91,7 +91,7 @@ class ListPodsRequest:
     def node_id(self):
         """Gets the node_id of this ListPodsRequest.
 
-        指定节点查询应用实例, 可选， 与group_id、deployment_id、deployment_ids四选一
+        指定节点查询应用实例，可选， 与group_id、deployment_id、deployment_ids四选一
 
         :return: The node_id of this ListPodsRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class ListPodsRequest:
     def node_id(self, node_id):
         """Sets the node_id of this ListPodsRequest.
 
-        指定节点查询应用实例, 可选， 与group_id、deployment_id、deployment_ids四选一
+        指定节点查询应用实例，可选， 与group_id、deployment_id、deployment_ids四选一
 
         :param node_id: The node_id of this ListPodsRequest.
         :type node_id: str
@@ -135,7 +135,7 @@ class ListPodsRequest:
     def deployment_id(self):
         """Gets the deployment_id of this ListPodsRequest.
 
-        指定应用部署ID查询应用实例， 可选， 与node_id、group_id、deployment_ids四选一
+        指定应用部署ID查询应用实例，可选， 与node_id、group_id、deployment_ids四选一
 
         :return: The deployment_id of this ListPodsRequest.
         :rtype: str
@@ -146,7 +146,7 @@ class ListPodsRequest:
     def deployment_id(self, deployment_id):
         """Sets the deployment_id of this ListPodsRequest.
 
-        指定应用部署ID查询应用实例， 可选， 与node_id、group_id、deployment_ids四选一
+        指定应用部署ID查询应用实例，可选， 与node_id、group_id、deployment_ids四选一
 
         :param deployment_id: The deployment_id of this ListPodsRequest.
         :type deployment_id: str

@@ -21,8 +21,8 @@ class Resources:
     sensitive_list = []
 
     openapi_types = {
-        'limits': 'ResourcesLimits',
-        'requests': 'ResourcesRequests'
+        'limits': 'LimitsRequests',
+        'requests': 'LimitsRequests'
     }
 
     attribute_map = {
@@ -36,9 +36,9 @@ class Resources:
         The model defined in huaweicloud sdk
 
         :param limits: 
-        :type limits: :class:`huaweicloudsdkief.v1.ResourcesLimits`
+        :type limits: :class:`huaweicloudsdkief.v1.LimitsRequests`
         :param requests: 
-        :type requests: :class:`huaweicloudsdkief.v1.ResourcesRequests`
+        :type requests: :class:`huaweicloudsdkief.v1.LimitsRequests`
         """
         
         
@@ -58,7 +58,7 @@ class Resources:
 
 
         :return: The limits of this Resources.
-        :rtype: :class:`huaweicloudsdkief.v1.ResourcesLimits`
+        :rtype: :class:`huaweicloudsdkief.v1.LimitsRequests`
         """
         return self._limits
 
@@ -68,7 +68,7 @@ class Resources:
 
 
         :param limits: The limits of this Resources.
-        :type limits: :class:`huaweicloudsdkief.v1.ResourcesLimits`
+        :type limits: :class:`huaweicloudsdkief.v1.LimitsRequests`
         """
         self._limits = limits
 
@@ -78,7 +78,7 @@ class Resources:
 
 
         :return: The requests of this Resources.
-        :rtype: :class:`huaweicloudsdkief.v1.ResourcesRequests`
+        :rtype: :class:`huaweicloudsdkief.v1.LimitsRequests`
         """
         return self._requests
 
@@ -88,7 +88,7 @@ class Resources:
 
 
         :param requests: The requests of this Resources.
-        :type requests: :class:`huaweicloudsdkief.v1.ResourcesRequests`
+        :type requests: :class:`huaweicloudsdkief.v1.LimitsRequests`
         """
         self._requests = requests
 

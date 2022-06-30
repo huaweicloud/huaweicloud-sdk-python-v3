@@ -20,6 +20,7 @@ from huaweicloudsdkcloudide.v2.model.create_instance_request import CreateInstan
 from huaweicloudsdkcloudide.v2.model.create_instance_response import CreateInstanceResponse
 from huaweicloudsdkcloudide.v2.model.delete_instance_request import DeleteInstanceRequest
 from huaweicloudsdkcloudide.v2.model.delete_instance_response import DeleteInstanceResponse
+from huaweicloudsdkcloudide.v2.model.error import Error
 from huaweicloudsdkcloudide.v2.model.expire_vo import ExpireVo
 from huaweicloudsdkcloudide.v2.model.extension_authorization import ExtensionAuthorization
 from huaweicloudsdkcloudide.v2.model.instance_edge_param import InstanceEdgeParam
@@ -62,4 +63,7 @@ from huaweicloudsdkcloudide.v2.model.update_instance_activity_request import Upd
 from huaweicloudsdkcloudide.v2.model.update_instance_activity_response import UpdateInstanceActivityResponse
 from huaweicloudsdkcloudide.v2.model.update_instance_request import UpdateInstanceRequest
 from huaweicloudsdkcloudide.v2.model.update_instance_response import UpdateInstanceResponse
+from huaweicloudsdkcloudide.v2.model.upload_extension_file_request import UploadExtensionFileRequest
+from huaweicloudsdkcloudide.v2.model.upload_extension_file_request_body import UploadExtensionFileRequestBody
+from huaweicloudsdkcloudide.v2.model.upload_extension_file_response import UploadExtensionFileResponse
 

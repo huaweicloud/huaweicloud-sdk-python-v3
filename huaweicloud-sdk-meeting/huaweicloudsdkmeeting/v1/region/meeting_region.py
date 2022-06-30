@@ -12,8 +12,11 @@ class MeetingRegion:
 
     CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://api.meeting.huaweicloud.com")
 
+    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://api-intl.meeting.huaweicloud.com")
+
     static_fields = {
         "cn-north-4": CN_NORTH_4,
+        "ap-southeast-1": AP_SOUTHEAST_1,
     }
 
     @classmethod

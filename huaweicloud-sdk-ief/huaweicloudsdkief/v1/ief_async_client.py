@@ -859,7 +859,7 @@ class IefAsyncClient(Client):
         return self.create_tag_with_http_info(request)
 
     def create_tag_with_http_info(self, request):
-        all_params = ['resource_id', 'resource_type', 'tag', 'ief_instance_id']
+        all_params = ['resource_id', 'resource_type', 'create_tag_request_body', 'ief_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2241,7 +2241,7 @@ class IefAsyncClient(Client):
         return self.list_edge_nodes_with_http_info(request)
 
     def list_edge_nodes_with_http_info(self, request):
-        all_params = ['name', 'limit', 'offset', 'device_id', 'device_name', 'app_name', 'tags', 'ief_instance_id']
+        all_params = ['ief_instance_id', 'name', 'limit', 'offset', 'sort', 'device_id', 'device_name', 'app_name', 'state', 'tags']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2258,12 +2258,16 @@ class IefAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
         if 'device_id' in local_var_params:
             query_params.append(('device_id', local_var_params['device_id']))
         if 'device_name' in local_var_params:
             query_params.append(('device_name', local_var_params['device_name']))
         if 'app_name' in local_var_params:
             query_params.append(('app_name', local_var_params['app_name']))
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
 

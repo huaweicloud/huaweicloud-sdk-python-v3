@@ -75,7 +75,7 @@ class ListEventItems:
 
         :param id: 事件id
         :type id: str
-        :param time: 次数
+        :param time: 攻击发生时的时间戳(毫秒)
         :type time: int
         :param policyid: 策略id
         :type policyid: str
@@ -211,7 +211,7 @@ class ListEventItems:
     def time(self):
         """Gets the time of this ListEventItems.
 
-        次数
+        攻击发生时的时间戳(毫秒)
 
         :return: The time of this ListEventItems.
         :rtype: int
@@ -222,7 +222,7 @@ class ListEventItems:
     def time(self, time):
         """Sets the time of this ListEventItems.
 
-        次数
+        攻击发生时的时间戳(毫秒)
 
         :param time: The time of this ListEventItems.
         :type time: int

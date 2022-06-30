@@ -29,7 +29,7 @@ class ListRecordContentsResponse(SdkResponse):
     attribute_map = {
         'total': 'total',
         'record_contents': 'record_contents',
-        'x_request_id': 'X-request-id'
+        'x_request_id': 'X-Request-Id'
     }
 
     def __init__(self, total=None, record_contents=None, x_request_id=None):

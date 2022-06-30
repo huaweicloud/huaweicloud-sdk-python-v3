@@ -34,7 +34,8 @@ class CloudWafHostItem:
         'protect_status': 'int',
         'access_status': 'int',
         'exclusive_ip': 'bool',
-        'paid_type': 'str'
+        'paid_type': 'str',
+        'timeout_config': 'TimeoutConfig'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class CloudWafHostItem:
         'protect_status': 'protect_status',
         'access_status': 'access_status',
         'exclusive_ip': 'exclusive_ip',
-        'paid_type': 'paid_type'
+        'paid_type': 'paid_type',
+        'timeout_config': 'timeout_config'
     }
 
-    def __init__(self, id=None, hostid=None, description=None, type=None, proxy=None, flag=None, hostname=None, access_code=None, policyid=None, timestamp=None, protect_status=None, access_status=None, exclusive_ip=None, paid_type=None):
+    def __init__(self, id=None, hostid=None, description=None, type=None, proxy=None, flag=None, hostname=None, access_code=None, policyid=None, timestamp=None, protect_status=None, access_status=None, exclusive_ip=None, paid_type=None, timeout_config=None):
         """CloudWafHostItem
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class CloudWafHostItem:
         :type exclusive_ip: bool
         :param paid_type: 付费模式，目前只支持prePaid预付款模式
         :type paid_type: str
+        :param timeout_config: 
+        :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
         """
         
         
@@ -105,6 +109,7 @@ class CloudWafHostItem:
         self._access_status = None
         self._exclusive_ip = None
         self._paid_type = None
+        self._timeout_config = None
         self.discriminator = None
 
         if id is not None:
@@ -135,6 +140,8 @@ class CloudWafHostItem:
             self.exclusive_ip = exclusive_ip
         if paid_type is not None:
             self.paid_type = paid_type
+        if timeout_config is not None:
+            self.timeout_config = timeout_config
 
     @property
     def id(self):
@@ -441,6 +448,26 @@ class CloudWafHostItem:
         :type paid_type: str
         """
         self._paid_type = paid_type
+
+    @property
+    def timeout_config(self):
+        """Gets the timeout_config of this CloudWafHostItem.
+
+
+        :return: The timeout_config of this CloudWafHostItem.
+        :rtype: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
+        """
+        return self._timeout_config
+
+    @timeout_config.setter
+    def timeout_config(self, timeout_config):
+        """Sets the timeout_config of this CloudWafHostItem.
+
+
+        :param timeout_config: The timeout_config of this CloudWafHostItem.
+        :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
+        """
+        self._timeout_config = timeout_config
 
     def to_dict(self):
         """Returns the model properties as a dict"""

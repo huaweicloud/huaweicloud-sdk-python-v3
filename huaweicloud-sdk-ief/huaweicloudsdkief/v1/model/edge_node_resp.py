@@ -195,7 +195,7 @@ class EdgeNodeResp:
         :type device_num: int
         :param enable_npu: 边缘节点是否开启NPU，true表示开启，false表示不开启，默认为false
         :type enable_npu: bool
-        :param npu_type: npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        :param npu_type: NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
         :type npu_type: str
         :param nics: 节点网卡和对应IP地址信息
         :type nics: list[:class:`huaweicloudsdkief.v1.Nics`]
@@ -1030,7 +1030,7 @@ class EdgeNodeResp:
     def npu_type(self):
         """Gets the npu_type of this EdgeNodeResp.
 
-        npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :return: The npu_type of this EdgeNodeResp.
         :rtype: str
@@ -1041,7 +1041,7 @@ class EdgeNodeResp:
     def npu_type(self, npu_type):
         """Sets the npu_type of this EdgeNodeResp.
 
-        npu类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
+        NPU类型，支持D310类型和D910类型。 - D310表示D310类型。 - D910表示D910类型。 - 不填表示为D310类型。
 
         :param npu_type: The npu_type of this EdgeNodeResp.
         :type npu_type: str
