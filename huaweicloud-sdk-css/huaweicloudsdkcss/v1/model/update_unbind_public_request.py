@@ -21,28 +21,35 @@ class UpdateUnbindPublicRequest:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'body': 'UnBindPublicReq'
     }
 
     attribute_map = {
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'body': 'body'
     }
 
-    def __init__(self, cluster_id=None):
+    def __init__(self, cluster_id=None, body=None):
         """UpdateUnbindPublicRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 指定关闭公网访问集群ID。
         :type cluster_id: str
+        :param body: Body of the UpdateUnbindPublicRequest
+        :type body: :class:`huaweicloudsdkcss.v1.UnBindPublicReq`
         """
         
         
 
         self._cluster_id = None
+        self._body = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
+        if body is not None:
+            self.body = body
 
     @property
     def cluster_id(self):
@@ -65,6 +72,26 @@ class UpdateUnbindPublicRequest:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def body(self):
+        """Gets the body of this UpdateUnbindPublicRequest.
+
+
+        :return: The body of this UpdateUnbindPublicRequest.
+        :rtype: :class:`huaweicloudsdkcss.v1.UnBindPublicReq`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this UpdateUnbindPublicRequest.
+
+
+        :param body: The body of this UpdateUnbindPublicRequest.
+        :type body: :class:`huaweicloudsdkcss.v1.UnBindPublicReq`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -30,9 +30,11 @@ class CreateEdgeNodeResponse(SdkResponse):
         'state': 'str',
         'type': 'str',
         'installer_version': 'str',
+        'base_path': 'BasePathDTO',
         'resource_ids': 'list[str]',
         'ips': 'list[str]',
-        'create_time': 'str'
+        'create_time': 'str',
+        'hardware_model': 'str'
     }
 
     attribute_map = {
@@ -45,12 +47,14 @@ class CreateEdgeNodeResponse(SdkResponse):
         'state': 'state',
         'type': 'type',
         'installer_version': 'installer_version',
+        'base_path': 'base_path',
         'resource_ids': 'resource_ids',
         'ips': 'ips',
-        'create_time': 'create_time'
+        'create_time': 'create_time',
+        'hardware_model': 'hardware_model'
     }
 
-    def __init__(self, edge_node_id=None, name=None, instance_id=None, space_id=None, product_id=None, product_name=None, state=None, type=None, installer_version=None, resource_ids=None, ips=None, create_time=None):
+    def __init__(self, edge_node_id=None, name=None, instance_id=None, space_id=None, product_id=None, product_name=None, state=None, type=None, installer_version=None, base_path=None, resource_ids=None, ips=None, create_time=None, hardware_model=None):
         """CreateEdgeNodeResponse
 
         The model defined in huaweicloud sdk
@@ -67,18 +71,22 @@ class CreateEdgeNodeResponse(SdkResponse):
         :type product_id: str
         :param product_name: 边缘节点关联的产品名称。
         :type product_name: str
-        :param state: 边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|UPGRADING
+        :param state: 边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|FROZEN
         :type state: str
         :param type: 节点所属资源类型：advanced|standard
         :type type: str
         :param installer_version: 安装文件版本
         :type installer_version: str
+        :param base_path: 
+        :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
         :param resource_ids: 资源id列表，创建节点时需绑定已购买的资源包，可以叠加节点功能。
         :type resource_ids: list[str]
         :param ips: 边缘节点ip列表
         :type ips: list[str]
         :param create_time: 边缘节点创建时间
         :type create_time: str
+        :param hardware_model: 注册节点网关配置
+        :type hardware_model: str
         """
         
         super(CreateEdgeNodeResponse, self).__init__()
@@ -92,9 +100,11 @@ class CreateEdgeNodeResponse(SdkResponse):
         self._state = None
         self._type = None
         self._installer_version = None
+        self._base_path = None
         self._resource_ids = None
         self._ips = None
         self._create_time = None
+        self._hardware_model = None
         self.discriminator = None
 
         if edge_node_id is not None:
@@ -115,12 +125,16 @@ class CreateEdgeNodeResponse(SdkResponse):
             self.type = type
         if installer_version is not None:
             self.installer_version = installer_version
+        if base_path is not None:
+            self.base_path = base_path
         if resource_ids is not None:
             self.resource_ids = resource_ids
         if ips is not None:
             self.ips = ips
         if create_time is not None:
             self.create_time = create_time
+        if hardware_model is not None:
+            self.hardware_model = hardware_model
 
     @property
     def edge_node_id(self):
@@ -258,7 +272,7 @@ class CreateEdgeNodeResponse(SdkResponse):
     def state(self):
         """Gets the state of this CreateEdgeNodeResponse.
 
-        边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|UPGRADING
+        边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|FROZEN
 
         :return: The state of this CreateEdgeNodeResponse.
         :rtype: str
@@ -269,7 +283,7 @@ class CreateEdgeNodeResponse(SdkResponse):
     def state(self, state):
         """Sets the state of this CreateEdgeNodeResponse.
 
-        边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|UPGRADING
+        边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|FROZEN
 
         :param state: The state of this CreateEdgeNodeResponse.
         :type state: str
@@ -319,6 +333,26 @@ class CreateEdgeNodeResponse(SdkResponse):
         :type installer_version: str
         """
         self._installer_version = installer_version
+
+    @property
+    def base_path(self):
+        """Gets the base_path of this CreateEdgeNodeResponse.
+
+
+        :return: The base_path of this CreateEdgeNodeResponse.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
+        """
+        return self._base_path
+
+    @base_path.setter
+    def base_path(self, base_path):
+        """Sets the base_path of this CreateEdgeNodeResponse.
+
+
+        :param base_path: The base_path of this CreateEdgeNodeResponse.
+        :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
+        """
+        self._base_path = base_path
 
     @property
     def resource_ids(self):
@@ -385,6 +419,28 @@ class CreateEdgeNodeResponse(SdkResponse):
         :type create_time: str
         """
         self._create_time = create_time
+
+    @property
+    def hardware_model(self):
+        """Gets the hardware_model of this CreateEdgeNodeResponse.
+
+        注册节点网关配置
+
+        :return: The hardware_model of this CreateEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._hardware_model
+
+    @hardware_model.setter
+    def hardware_model(self, hardware_model):
+        """Sets the hardware_model of this CreateEdgeNodeResponse.
+
+        注册节点网关配置
+
+        :param hardware_model: The hardware_model of this CreateEdgeNodeResponse.
+        :type hardware_model: str
+        """
+        self._hardware_model = hardware_model
 
     def to_dict(self):
         """Returns the model properties as a dict"""

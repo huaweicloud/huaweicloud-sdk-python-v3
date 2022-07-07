@@ -39,7 +39,7 @@ class UpdateListenerIpGroupOption:
 
         :param ipgroup_id: 监听器关联的访问控制组的id。 创建时必选，更新时非必选。 指定的ipgroup必须已存在，不能指定为null，否则与enable_ipgroup冲突。 
         :type ipgroup_id: str
-        :param enable_ipgroup: 访问控制组的状态。 True:开启访问控制； False：关闭访问控制； 开启访问控制的监听器，允许直接删除。
+        :param enable_ipgroup: 访问控制组的状态。 True:开启访问控制； Flase：关闭访问控制； 开启访问控制的监听器，允许直接删除。
         :type enable_ipgroup: bool
         :param type: 访问控制组的类型。 white:白名单，只允许指定ip访问； black:黑名单，不允许指定ip访问； 
         :type type: str
@@ -85,7 +85,7 @@ class UpdateListenerIpGroupOption:
     def enable_ipgroup(self):
         """Gets the enable_ipgroup of this UpdateListenerIpGroupOption.
 
-        访问控制组的状态。 True:开启访问控制； False：关闭访问控制； 开启访问控制的监听器，允许直接删除。
+        访问控制组的状态。 True:开启访问控制； Flase：关闭访问控制； 开启访问控制的监听器，允许直接删除。
 
         :return: The enable_ipgroup of this UpdateListenerIpGroupOption.
         :rtype: bool
@@ -96,7 +96,7 @@ class UpdateListenerIpGroupOption:
     def enable_ipgroup(self, enable_ipgroup):
         """Sets the enable_ipgroup of this UpdateListenerIpGroupOption.
 
-        访问控制组的状态。 True:开启访问控制； False：关闭访问控制； 开启访问控制的监听器，允许直接删除。
+        访问控制组的状态。 True:开启访问控制； Flase：关闭访问控制； 开启访问控制的监听器，允许直接删除。
 
         :param enable_ipgroup: The enable_ipgroup of this UpdateListenerIpGroupOption.
         :type enable_ipgroup: bool

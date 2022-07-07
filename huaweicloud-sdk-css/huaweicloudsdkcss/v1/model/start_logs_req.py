@@ -39,9 +39,9 @@ class StartLogsReq:
 
         :param agency: IAM委托。
         :type agency: str
-        :param log_base_path: 备份路径。
+        :param log_base_path: 日志在OBS桶中的备份路径。
         :type log_base_path: str
-        :param log_bucket: OBS桶。
+        :param log_bucket: 用于存储日志的OBS桶的桶名。
         :type log_bucket: str
         """
         
@@ -82,7 +82,7 @@ class StartLogsReq:
     def log_base_path(self):
         """Gets the log_base_path of this StartLogsReq.
 
-        备份路径。
+        日志在OBS桶中的备份路径。
 
         :return: The log_base_path of this StartLogsReq.
         :rtype: str
@@ -93,7 +93,7 @@ class StartLogsReq:
     def log_base_path(self, log_base_path):
         """Sets the log_base_path of this StartLogsReq.
 
-        备份路径。
+        日志在OBS桶中的备份路径。
 
         :param log_base_path: The log_base_path of this StartLogsReq.
         :type log_base_path: str
@@ -104,7 +104,7 @@ class StartLogsReq:
     def log_bucket(self):
         """Gets the log_bucket of this StartLogsReq.
 
-        OBS桶。
+        用于存储日志的OBS桶的桶名。
 
         :return: The log_bucket of this StartLogsReq.
         :rtype: str
@@ -115,7 +115,7 @@ class StartLogsReq:
     def log_bucket(self, log_bucket):
         """Sets the log_bucket of this StartLogsReq.
 
-        OBS桶。
+        用于存储日志的OBS桶的桶名。
 
         :param log_bucket: The log_bucket of this StartLogsReq.
         :type log_bucket: str

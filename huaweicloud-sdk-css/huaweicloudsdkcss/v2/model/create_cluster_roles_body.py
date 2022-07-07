@@ -39,7 +39,7 @@ class CreateClusterRolesBody:
 
         The model defined in huaweicloud sdk
 
-        :param flavor_ref: 实例规格名称。例如，  - ess.spec-4u32g规格对应的取值范围为40GB～2560GB。 - ess.spec-8u64g规格对应的取值范围为80GB～5120GB。 - ess.spec-16u128g规格对应的取值范围为160GB～10240GB。
+        :param flavor_ref: 实例规格名称。可以使用[获取实例规格列表](ListFlavors.xml)的name属性确认当前拥有的规格信息。
         :type flavor_ref: str
         :param volume: 
         :type volume: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceVolumeBody`
@@ -66,7 +66,7 @@ class CreateClusterRolesBody:
     def flavor_ref(self):
         """Gets the flavor_ref of this CreateClusterRolesBody.
 
-        实例规格名称。例如，  - ess.spec-4u32g规格对应的取值范围为40GB～2560GB。 - ess.spec-8u64g规格对应的取值范围为80GB～5120GB。 - ess.spec-16u128g规格对应的取值范围为160GB～10240GB。
+        实例规格名称。可以使用[获取实例规格列表](ListFlavors.xml)的name属性确认当前拥有的规格信息。
 
         :return: The flavor_ref of this CreateClusterRolesBody.
         :rtype: str
@@ -77,7 +77,7 @@ class CreateClusterRolesBody:
     def flavor_ref(self, flavor_ref):
         """Sets the flavor_ref of this CreateClusterRolesBody.
 
-        实例规格名称。例如，  - ess.spec-4u32g规格对应的取值范围为40GB～2560GB。 - ess.spec-8u64g规格对应的取值范围为80GB～5120GB。 - ess.spec-16u128g规格对应的取值范围为160GB～10240GB。
+        实例规格名称。可以使用[获取实例规格列表](ListFlavors.xml)的name属性确认当前拥有的规格信息。
 
         :param flavor_ref: The flavor_ref of this CreateClusterRolesBody.
         :type flavor_ref: str

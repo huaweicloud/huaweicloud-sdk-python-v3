@@ -51,7 +51,7 @@ class EsflavorsVersionsFlavorsResp:
         :type ram: int
         :param name: 规格名称。
         :type name: str
-        :param region: 可用区域。
+        :param region: 可用region。
         :type region: str
         :param diskrange: 实例的硬盘容量范围。
         :type diskrange: str
@@ -157,7 +157,7 @@ class EsflavorsVersionsFlavorsResp:
     def region(self):
         """Gets the region of this EsflavorsVersionsFlavorsResp.
 
-        可用区域。
+        可用region。
 
         :return: The region of this EsflavorsVersionsFlavorsResp.
         :rtype: str
@@ -168,7 +168,7 @@ class EsflavorsVersionsFlavorsResp:
     def region(self, region):
         """Sets the region of this EsflavorsVersionsFlavorsResp.
 
-        可用区域。
+        可用region。
 
         :param region: The region of this EsflavorsVersionsFlavorsResp.
         :type region: str

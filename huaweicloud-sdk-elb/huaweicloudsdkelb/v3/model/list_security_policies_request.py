@@ -47,11 +47,11 @@ class ListSecurityPoliciesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :param marker: 上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
         :type marker: str
         :param limit: 每页返回的个数。
         :type limit: int
-        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明：必须与limit一起使用。
+        :param page_reverse: 是否反向查询，取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
         :type page_reverse: bool
         :param id: 自定义安全策略的ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
         :type id: list[str]
@@ -98,7 +98,7 @@ class ListSecurityPoliciesRequest:
     def marker(self):
         """Gets the marker of this ListSecurityPoliciesRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :return: The marker of this ListSecurityPoliciesRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class ListSecurityPoliciesRequest:
     def marker(self, marker):
         """Sets the marker of this ListSecurityPoliciesRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListSecurityPoliciesRequest.
         :type marker: str
@@ -142,7 +142,7 @@ class ListSecurityPoliciesRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListSecurityPoliciesRequest.
 
-        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明：必须与limit一起使用。
+        是否反向查询，取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
         :return: The page_reverse of this ListSecurityPoliciesRequest.
         :rtype: bool
@@ -153,7 +153,7 @@ class ListSecurityPoliciesRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListSecurityPoliciesRequest.
 
-        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明：必须与limit一起使用。
+        是否反向查询，取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
         :param page_reverse: The page_reverse of this ListSecurityPoliciesRequest.
         :type page_reverse: bool

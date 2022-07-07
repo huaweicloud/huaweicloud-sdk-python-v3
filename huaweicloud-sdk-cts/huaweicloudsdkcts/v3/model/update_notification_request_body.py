@@ -27,7 +27,8 @@ class UpdateNotificationRequestBody:
         'notify_user_list': 'list[NotificationUsers]',
         'status': 'str',
         'topic_id': 'str',
-        'notification_id': 'str'
+        'notification_id': 'str',
+        'filter': 'Filter'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class UpdateNotificationRequestBody:
         'notify_user_list': 'notify_user_list',
         'status': 'status',
         'topic_id': 'topic_id',
-        'notification_id': 'notification_id'
+        'notification_id': 'notification_id',
+        'filter': 'filter'
     }
 
-    def __init__(self, notification_name=None, operation_type=None, operations=None, notify_user_list=None, status=None, topic_id=None, notification_id=None):
+    def __init__(self, notification_name=None, operation_type=None, operations=None, notify_user_list=None, status=None, topic_id=None, notification_id=None, filter=None):
         """UpdateNotificationRequestBody
 
         The model defined in huaweicloud sdk
@@ -57,8 +59,10 @@ class UpdateNotificationRequestBody:
         :type status: str
         :param topic_id: 消息通知服务的topic_urn或者函数工作流的func_urn，当“status”字段为enabled时，该字段必填。 - 消息通知服务的topic_urn可以通过消息通知服务的查询主题列表API获取，示例：urn:smn:regionId:f96188c7ccaf4ffba0c9aa149ab2bd57:test_topic_v2。 - 函数工作流的func_urn可以通过函数工作流的获取函数列表API获取，示例：urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test。
         :type topic_id: str
-        :param notification_id: 关键操作通知id
+        :param notification_id: 关键操作通知id。
         :type notification_id: str
+        :param filter: 
+        :type filter: :class:`huaweicloudsdkcts.v3.Filter`
         """
         
         
@@ -70,6 +74,7 @@ class UpdateNotificationRequestBody:
         self._status = None
         self._topic_id = None
         self._notification_id = None
+        self._filter = None
         self.discriminator = None
 
         self.notification_name = notification_name
@@ -82,6 +87,8 @@ class UpdateNotificationRequestBody:
         if topic_id is not None:
             self.topic_id = topic_id
         self.notification_id = notification_id
+        if filter is not None:
+            self.filter = filter
 
     @property
     def notification_name(self):
@@ -219,7 +226,7 @@ class UpdateNotificationRequestBody:
     def notification_id(self):
         """Gets the notification_id of this UpdateNotificationRequestBody.
 
-        关键操作通知id
+        关键操作通知id。
 
         :return: The notification_id of this UpdateNotificationRequestBody.
         :rtype: str
@@ -230,12 +237,32 @@ class UpdateNotificationRequestBody:
     def notification_id(self, notification_id):
         """Sets the notification_id of this UpdateNotificationRequestBody.
 
-        关键操作通知id
+        关键操作通知id。
 
         :param notification_id: The notification_id of this UpdateNotificationRequestBody.
         :type notification_id: str
         """
         self._notification_id = notification_id
+
+    @property
+    def filter(self):
+        """Gets the filter of this UpdateNotificationRequestBody.
+
+
+        :return: The filter of this UpdateNotificationRequestBody.
+        :rtype: :class:`huaweicloudsdkcts.v3.Filter`
+        """
+        return self._filter
+
+    @filter.setter
+    def filter(self, filter):
+        """Sets the filter of this UpdateNotificationRequestBody.
+
+
+        :param filter: The filter of this UpdateNotificationRequestBody.
+        :type filter: :class:`huaweicloudsdkcts.v3.Filter`
+        """
+        self._filter = filter
 
     def to_dict(self):
         """Returns the model properties as a dict"""

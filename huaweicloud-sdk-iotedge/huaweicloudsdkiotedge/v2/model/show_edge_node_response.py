@@ -22,6 +22,7 @@ class ShowEdgeNodeResponse(SdkResponse):
 
     openapi_types = {
         'log_configs': 'list[LogConfigDTO]',
+        'ha_config': 'HaConfigDTO',
         'edge_node_id': 'str',
         'instance_id': 'str',
         'product_id': 'str',
@@ -45,11 +46,13 @@ class ShowEdgeNodeResponse(SdkResponse):
         'type': 'str',
         'security_level': 'str',
         'storage_period': 'int',
-        'base_path': 'BasePathDTO'
+        'base_path': 'BasePathDTO',
+        'hardware_model': 'str'
     }
 
     attribute_map = {
         'log_configs': 'log_configs',
+        'ha_config': 'ha_config',
         'edge_node_id': 'edge_node_id',
         'instance_id': 'instance_id',
         'product_id': 'product_id',
@@ -73,16 +76,19 @@ class ShowEdgeNodeResponse(SdkResponse):
         'type': 'type',
         'security_level': 'security_level',
         'storage_period': 'storage_period',
-        'base_path': 'base_path'
+        'base_path': 'base_path',
+        'hardware_model': 'hardware_model'
     }
 
-    def __init__(self, log_configs=None, edge_node_id=None, instance_id=None, product_id=None, product_name=None, space_id=None, resource_spec_types=None, resource_ids=None, ips=None, name=None, state=None, software_version=None, create_time=None, update_time=None, os_name=None, arch=None, host_name=None, nics=None, specification=None, ai_card_type=None, container_version=None, type=None, security_level=None, storage_period=None, base_path=None):
+    def __init__(self, log_configs=None, ha_config=None, edge_node_id=None, instance_id=None, product_id=None, product_name=None, space_id=None, resource_spec_types=None, resource_ids=None, ips=None, name=None, state=None, software_version=None, create_time=None, update_time=None, os_name=None, arch=None, host_name=None, nics=None, specification=None, ai_card_type=None, container_version=None, type=None, security_level=None, storage_period=None, base_path=None, hardware_model=None):
         """ShowEdgeNodeResponse
 
         The model defined in huaweicloud sdk
 
         :param log_configs: 边缘节点在IEF的日志配置
         :type log_configs: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
+        :param ha_config: 
+        :type ha_config: :class:`huaweicloudsdkiotedge.v2.HaConfigDTO`
         :param edge_node_id: 边缘节点Id
         :type edge_node_id: str
         :param instance_id: 实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
@@ -131,11 +137,14 @@ class ShowEdgeNodeResponse(SdkResponse):
         :type storage_period: int
         :param base_path: 
         :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
+        :param hardware_model: 注册节点网关配置
+        :type hardware_model: str
         """
         
         super(ShowEdgeNodeResponse, self).__init__()
 
         self._log_configs = None
+        self._ha_config = None
         self._edge_node_id = None
         self._instance_id = None
         self._product_id = None
@@ -160,10 +169,13 @@ class ShowEdgeNodeResponse(SdkResponse):
         self._security_level = None
         self._storage_period = None
         self._base_path = None
+        self._hardware_model = None
         self.discriminator = None
 
         if log_configs is not None:
             self.log_configs = log_configs
+        if ha_config is not None:
+            self.ha_config = ha_config
         if edge_node_id is not None:
             self.edge_node_id = edge_node_id
         if instance_id is not None:
@@ -212,6 +224,8 @@ class ShowEdgeNodeResponse(SdkResponse):
             self.storage_period = storage_period
         if base_path is not None:
             self.base_path = base_path
+        if hardware_model is not None:
+            self.hardware_model = hardware_model
 
     @property
     def log_configs(self):
@@ -234,6 +248,26 @@ class ShowEdgeNodeResponse(SdkResponse):
         :type log_configs: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
         """
         self._log_configs = log_configs
+
+    @property
+    def ha_config(self):
+        """Gets the ha_config of this ShowEdgeNodeResponse.
+
+
+        :return: The ha_config of this ShowEdgeNodeResponse.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.HaConfigDTO`
+        """
+        return self._ha_config
+
+    @ha_config.setter
+    def ha_config(self, ha_config):
+        """Sets the ha_config of this ShowEdgeNodeResponse.
+
+
+        :param ha_config: The ha_config of this ShowEdgeNodeResponse.
+        :type ha_config: :class:`huaweicloudsdkiotedge.v2.HaConfigDTO`
+        """
+        self._ha_config = ha_config
 
     @property
     def edge_node_id(self):
@@ -760,6 +794,28 @@ class ShowEdgeNodeResponse(SdkResponse):
         :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
         """
         self._base_path = base_path
+
+    @property
+    def hardware_model(self):
+        """Gets the hardware_model of this ShowEdgeNodeResponse.
+
+        注册节点网关配置
+
+        :return: The hardware_model of this ShowEdgeNodeResponse.
+        :rtype: str
+        """
+        return self._hardware_model
+
+    @hardware_model.setter
+    def hardware_model(self, hardware_model):
+        """Sets the hardware_model of this ShowEdgeNodeResponse.
+
+        注册节点网关配置
+
+        :param hardware_model: The hardware_model of this ShowEdgeNodeResponse.
+        :type hardware_model: str
+        """
+        self._hardware_model = hardware_model
 
     def to_dict(self):
         """Returns the model properties as a dict"""

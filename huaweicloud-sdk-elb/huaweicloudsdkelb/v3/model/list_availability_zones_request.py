@@ -21,20 +21,51 @@ class ListAvailabilityZonesRequest:
     sensitive_list = []
 
     openapi_types = {
+        'public_border_group': 'str'
     }
 
     attribute_map = {
+        'public_border_group': 'public_border_group'
     }
 
-    def __init__(self):
+    def __init__(self, public_border_group=None):
         """ListAvailabilityZonesRequest
 
         The model defined in huaweicloud sdk
 
+        :param public_border_group: AZ组。
+        :type public_border_group: str
         """
         
         
+
+        self._public_border_group = None
         self.discriminator = None
+
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
+
+    @property
+    def public_border_group(self):
+        """Gets the public_border_group of this ListAvailabilityZonesRequest.
+
+        AZ组。
+
+        :return: The public_border_group of this ListAvailabilityZonesRequest.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this ListAvailabilityZonesRequest.
+
+        AZ组。
+
+        :param public_border_group: The public_border_group of this ListAvailabilityZonesRequest.
+        :type public_border_group: str
+        """
+        self._public_border_group = public_border_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

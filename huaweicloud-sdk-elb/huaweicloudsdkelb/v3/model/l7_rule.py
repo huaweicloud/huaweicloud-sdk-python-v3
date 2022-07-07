@@ -30,7 +30,9 @@ class L7Rule:
         'provisioning_status': 'str',
         'invert': 'bool',
         'id': 'str',
-        'conditions': 'list[RuleCondition]'
+        'conditions': 'list[RuleCondition]',
+        'created_at': 'str',
+        'updated_at': 'str'
     }
 
     attribute_map = {
@@ -43,34 +45,40 @@ class L7Rule:
         'provisioning_status': 'provisioning_status',
         'invert': 'invert',
         'id': 'id',
-        'conditions': 'conditions'
+        'conditions': 'conditions',
+        'created_at': 'created_at',
+        'updated_at': 'updated_at'
     }
 
-    def __init__(self, admin_state_up=None, compare_type=None, key=None, project_id=None, type=None, value=None, provisioning_status=None, invert=None, id=None, conditions=None):
+    def __init__(self, admin_state_up=None, compare_type=None, key=None, project_id=None, type=None, value=None, provisioning_status=None, invert=None, id=None, conditions=None, created_at=None, updated_at=None):
         """L7Rule
 
         The model defined in huaweicloud sdk
 
         :param admin_state_up: 转发规则的管理状，默认为true。  不支持该字段，请勿使用。
         :type admin_state_up: bool
-        :param compare_type: 转发规则的匹配方式。  - type为HOST_NAME时仅支持EQUAL_TO，支持通配符*。 - type为PATH时可以为Perl类型的REGEX，STARTS_WITH，EQUAL_TO。 [- type为METHOD、SOURCE_IP时，仅支持EQUAL_TO。 - type为HEADER、QUERY_STRING，仅支持EQUAL_TO，支持通配符*、？。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)
+        :param compare_type: 转发规则的匹配方式。type为HOST_NAME时可以为EQUAL_TO。type为PATH时可以为REGEX， STARTS_WITH，EQUAL_TO。
         :type compare_type: str
-        :param key: 匹配内容的键值。[type为HOST_NAME和PATH时，该字段不生效。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :param key: 匹配内容的键值。[type为HOST_NAME和PATH时，该字段不生效。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs)   [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type key: str
         :param project_id: 转发规则所在的项目ID。
         :type project_id: str
-        :param type: 转发规则类别。取值：  - HOST_NAME：匹配域名  - PATH：匹配请求路径  [- METHOD：匹配请求方法  - HEADER：匹配请求头  - QUERY_STRING：匹配请求查询参数  - SOURCE_IP：匹配请求源IP地址](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) 使用说明： [- 一个l7policy下创建的l7rule的HOST_NAME，PATH，METHOD，SOURCE_IP不能重复。HEADER、QUERY_STRING支持重复的rule配置。](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [- 一个l7policy下创建的l7rule的HOST_NAME，PATH不能重复。](tag:dt,dt_test,hcso_dt)
+        :param type: 转发规则类别。取值： - HOST_NAME：匹配域名 - PATH：匹配请求路径 [- METHOD：匹配请求方法 - HEADER：匹配请求头 - QUERY_STRING：匹配请求查询参数 - SOURCE_IP：匹配请求源IP地址](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs)   使用说明： [- 一个l7policy下创建的l7rule的HOST_NAME，PATH，METHOD，SOURCE_IP不能重复。HEADER、QUERY_STRING支持重复的rule配置。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs) [- 一个l7policy下创建的l7rule的HOST_NAME，PATH不能重复。](tag:dt,dt_test,hcso_dt)
         :type type: str
-        :param value: 匹配内容的值。[仅当conditions空时该字段生效。](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  当type为HOST_NAME时，字符串只能包含英文字母、数字、\&quot;-\&quot;、\&quot;.\&quot;或\&quot;*\&quot;，必须以字母、数字或\&quot;*\&quot;开头。若域名中包含\&quot;*\&quot;，则\&quot;*\&quot;只能出现在开头且必须以*.开始。当*开头时表示通配0~任一个字符。  当type为PATH时，当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~&#39;;@^-%#&amp;$.*+?,&#x3D;!:|/()[]{}，且必须以\&quot;/\&quot;开头。  [当type为METHOD、SOURCE_IP、HEADER、QUERY_STRING时，该字段无意义，使用condition_pair来指定key，value。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)
+        :param value: 匹配内容的值。仅当conditions空时该字段生效。  当type为HOST_NAME时，字符串只能包含英文字母、数字、“-”、“.”或“*”，必须以字母、数字或“*”开头。  若域名中包含“*”，则“*”只能出现在开头且必须以*.开始。当*开头时表示通配0~任一个字符。  当type为PATH时，当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~&#39;;@^-%#&amp;$.*+?,&#x3D;!:|\\/()\\[\\]{}，且必须以\&quot;/\&quot;开头。  当type为METHOD、SOURCE_IP、HEADER, QUERY_STRING时，该字段无意义，使用condition_pair来指定key，value。
         :type value: str
         :param provisioning_status: provisioning状态，可以为ACTIVE、PENDING_CREATE 或者ERROR。 说明：该字段无实际含义，默认为ACTIVE。
         :type provisioning_status: str
-        :param invert: 是否反向匹配。 使用说明： - 固定为false。该字段能更新但不会生效。
+        :param invert: 是否反向匹配。 使用说明：固定为false。该字段能更新但不会生效。
         :type invert: bool
         :param id: 规则ID。
         :type id: str
-        :param conditions: 转发规则的匹配条件。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效。 配置了conditions后，字段key、字段value的值无意义。 若指定了conditions，该rule的条件数为conditions列表长度。 列表中key必须相同，value不允许重复。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :param conditions: 转发规则的匹配条件。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效。 配置了conditions后，字段key、字段value的值无意义。 若指定了conditons，该rule的条件数为conditons列表长度。 列表中key必须相同，value不允许重复。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type conditions: list[:class:`huaweicloudsdkelb.v3.RuleCondition`]
+        :param created_at: 创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+        :type created_at: str
+        :param updated_at: 更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+        :type updated_at: str
         """
         
         
@@ -85,6 +93,8 @@ class L7Rule:
         self._invert = None
         self._id = None
         self._conditions = None
+        self._created_at = None
+        self._updated_at = None
         self.discriminator = None
 
         self.admin_state_up = admin_state_up
@@ -97,6 +107,10 @@ class L7Rule:
         self.invert = invert
         self.id = id
         self.conditions = conditions
+        if created_at is not None:
+            self.created_at = created_at
+        if updated_at is not None:
+            self.updated_at = updated_at
 
     @property
     def admin_state_up(self):
@@ -124,7 +138,7 @@ class L7Rule:
     def compare_type(self):
         """Gets the compare_type of this L7Rule.
 
-        转发规则的匹配方式。  - type为HOST_NAME时仅支持EQUAL_TO，支持通配符*。 - type为PATH时可以为Perl类型的REGEX，STARTS_WITH，EQUAL_TO。 [- type为METHOD、SOURCE_IP时，仅支持EQUAL_TO。 - type为HEADER、QUERY_STRING，仅支持EQUAL_TO，支持通配符*、？。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)
+        转发规则的匹配方式。type为HOST_NAME时可以为EQUAL_TO。type为PATH时可以为REGEX， STARTS_WITH，EQUAL_TO。
 
         :return: The compare_type of this L7Rule.
         :rtype: str
@@ -135,7 +149,7 @@ class L7Rule:
     def compare_type(self, compare_type):
         """Sets the compare_type of this L7Rule.
 
-        转发规则的匹配方式。  - type为HOST_NAME时仅支持EQUAL_TO，支持通配符*。 - type为PATH时可以为Perl类型的REGEX，STARTS_WITH，EQUAL_TO。 [- type为METHOD、SOURCE_IP时，仅支持EQUAL_TO。 - type为HEADER、QUERY_STRING，仅支持EQUAL_TO，支持通配符*、？。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)
+        转发规则的匹配方式。type为HOST_NAME时可以为EQUAL_TO。type为PATH时可以为REGEX， STARTS_WITH，EQUAL_TO。
 
         :param compare_type: The compare_type of this L7Rule.
         :type compare_type: str
@@ -146,7 +160,7 @@ class L7Rule:
     def key(self):
         """Gets the key of this L7Rule.
 
-        匹配内容的键值。[type为HOST_NAME和PATH时，该字段不生效。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        匹配内容的键值。[type为HOST_NAME和PATH时，该字段不生效。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs)   [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :return: The key of this L7Rule.
         :rtype: str
@@ -157,7 +171,7 @@ class L7Rule:
     def key(self, key):
         """Sets the key of this L7Rule.
 
-        匹配内容的键值。[type为HOST_NAME和PATH时，该字段不生效。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        匹配内容的键值。[type为HOST_NAME和PATH时，该字段不生效。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs)   [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param key: The key of this L7Rule.
         :type key: str
@@ -190,7 +204,7 @@ class L7Rule:
     def type(self):
         """Gets the type of this L7Rule.
 
-        转发规则类别。取值：  - HOST_NAME：匹配域名  - PATH：匹配请求路径  [- METHOD：匹配请求方法  - HEADER：匹配请求头  - QUERY_STRING：匹配请求查询参数  - SOURCE_IP：匹配请求源IP地址](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) 使用说明： [- 一个l7policy下创建的l7rule的HOST_NAME，PATH，METHOD，SOURCE_IP不能重复。HEADER、QUERY_STRING支持重复的rule配置。](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [- 一个l7policy下创建的l7rule的HOST_NAME，PATH不能重复。](tag:dt,dt_test,hcso_dt)
+        转发规则类别。取值： - HOST_NAME：匹配域名 - PATH：匹配请求路径 [- METHOD：匹配请求方法 - HEADER：匹配请求头 - QUERY_STRING：匹配请求查询参数 - SOURCE_IP：匹配请求源IP地址](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs)   使用说明： [- 一个l7policy下创建的l7rule的HOST_NAME，PATH，METHOD，SOURCE_IP不能重复。HEADER、QUERY_STRING支持重复的rule配置。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs) [- 一个l7policy下创建的l7rule的HOST_NAME，PATH不能重复。](tag:dt,dt_test,hcso_dt)
 
         :return: The type of this L7Rule.
         :rtype: str
@@ -201,7 +215,7 @@ class L7Rule:
     def type(self, type):
         """Sets the type of this L7Rule.
 
-        转发规则类别。取值：  - HOST_NAME：匹配域名  - PATH：匹配请求路径  [- METHOD：匹配请求方法  - HEADER：匹配请求头  - QUERY_STRING：匹配请求查询参数  - SOURCE_IP：匹配请求源IP地址](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) 使用说明： [- 一个l7policy下创建的l7rule的HOST_NAME，PATH，METHOD，SOURCE_IP不能重复。HEADER、QUERY_STRING支持重复的rule配置。](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [- 一个l7policy下创建的l7rule的HOST_NAME，PATH不能重复。](tag:dt,dt_test,hcso_dt)
+        转发规则类别。取值： - HOST_NAME：匹配域名 - PATH：匹配请求路径 [- METHOD：匹配请求方法 - HEADER：匹配请求头 - QUERY_STRING：匹配请求查询参数 - SOURCE_IP：匹配请求源IP地址](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs)   使用说明： [- 一个l7policy下创建的l7rule的HOST_NAME，PATH，METHOD，SOURCE_IP不能重复。HEADER、QUERY_STRING支持重复的rule配置。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs) [- 一个l7policy下创建的l7rule的HOST_NAME，PATH不能重复。](tag:dt,dt_test,hcso_dt)
 
         :param type: The type of this L7Rule.
         :type type: str
@@ -212,7 +226,7 @@ class L7Rule:
     def value(self):
         """Gets the value of this L7Rule.
 
-        匹配内容的值。[仅当conditions空时该字段生效。](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  当type为HOST_NAME时，字符串只能包含英文字母、数字、\"-\"、\".\"或\"*\"，必须以字母、数字或\"*\"开头。若域名中包含\"*\"，则\"*\"只能出现在开头且必须以*.开始。当*开头时表示通配0~任一个字符。  当type为PATH时，当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:|/()[]{}，且必须以\"/\"开头。  [当type为METHOD、SOURCE_IP、HEADER、QUERY_STRING时，该字段无意义，使用condition_pair来指定key，value。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)
+        匹配内容的值。仅当conditions空时该字段生效。  当type为HOST_NAME时，字符串只能包含英文字母、数字、“-”、“.”或“*”，必须以字母、数字或“*”开头。  若域名中包含“*”，则“*”只能出现在开头且必须以*.开始。当*开头时表示通配0~任一个字符。  当type为PATH时，当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:|\\/()\\[\\]{}，且必须以\"/\"开头。  当type为METHOD、SOURCE_IP、HEADER, QUERY_STRING时，该字段无意义，使用condition_pair来指定key，value。
 
         :return: The value of this L7Rule.
         :rtype: str
@@ -223,7 +237,7 @@ class L7Rule:
     def value(self, value):
         """Sets the value of this L7Rule.
 
-        匹配内容的值。[仅当conditions空时该字段生效。](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)  当type为HOST_NAME时，字符串只能包含英文字母、数字、\"-\"、\".\"或\"*\"，必须以字母、数字或\"*\"开头。若域名中包含\"*\"，则\"*\"只能出现在开头且必须以*.开始。当*开头时表示通配0~任一个字符。  当type为PATH时，当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:|/()[]{}，且必须以\"/\"开头。  [当type为METHOD、SOURCE_IP、HEADER、QUERY_STRING时，该字段无意义，使用condition_pair来指定key，value。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)
+        匹配内容的值。仅当conditions空时该字段生效。  当type为HOST_NAME时，字符串只能包含英文字母、数字、“-”、“.”或“*”，必须以字母、数字或“*”开头。  若域名中包含“*”，则“*”只能出现在开头且必须以*.开始。当*开头时表示通配0~任一个字符。  当type为PATH时，当转发规则的compare_type为STARTS_WITH、EQUAL_TO时，字符串只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:|\\/()\\[\\]{}，且必须以\"/\"开头。  当type为METHOD、SOURCE_IP、HEADER, QUERY_STRING时，该字段无意义，使用condition_pair来指定key，value。
 
         :param value: The value of this L7Rule.
         :type value: str
@@ -256,7 +270,7 @@ class L7Rule:
     def invert(self):
         """Gets the invert of this L7Rule.
 
-        是否反向匹配。 使用说明： - 固定为false。该字段能更新但不会生效。
+        是否反向匹配。 使用说明：固定为false。该字段能更新但不会生效。
 
         :return: The invert of this L7Rule.
         :rtype: bool
@@ -267,7 +281,7 @@ class L7Rule:
     def invert(self, invert):
         """Sets the invert of this L7Rule.
 
-        是否反向匹配。 使用说明： - 固定为false。该字段能更新但不会生效。
+        是否反向匹配。 使用说明：固定为false。该字段能更新但不会生效。
 
         :param invert: The invert of this L7Rule.
         :type invert: bool
@@ -300,7 +314,7 @@ class L7Rule:
     def conditions(self):
         """Gets the conditions of this L7Rule.
 
-        转发规则的匹配条件。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效。 配置了conditions后，字段key、字段value的值无意义。 若指定了conditions，该rule的条件数为conditions列表长度。 列表中key必须相同，value不允许重复。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        转发规则的匹配条件。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效。 配置了conditions后，字段key、字段value的值无意义。 若指定了conditons，该rule的条件数为conditons列表长度。 列表中key必须相同，value不允许重复。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :return: The conditions of this L7Rule.
         :rtype: list[:class:`huaweicloudsdkelb.v3.RuleCondition`]
@@ -311,12 +325,56 @@ class L7Rule:
     def conditions(self, conditions):
         """Sets the conditions of this L7Rule.
 
-        转发规则的匹配条件。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效。 配置了conditions后，字段key、字段value的值无意义。 若指定了conditions，该rule的条件数为conditions列表长度。 列表中key必须相同，value不允许重复。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        转发规则的匹配条件。当监听器的高级转发策略功能（enhance_l7policy_enable）开启后才会生效。 配置了conditions后，字段key、字段value的值无意义。 若指定了conditons，该rule的条件数为conditons列表长度。 列表中key必须相同，value不允许重复。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param conditions: The conditions of this L7Rule.
         :type conditions: list[:class:`huaweicloudsdkelb.v3.RuleCondition`]
         """
         self._conditions = conditions
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this L7Rule.
+
+        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+
+        :return: The created_at of this L7Rule.
+        :rtype: str
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this L7Rule.
+
+        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+
+        :param created_at: The created_at of this L7Rule.
+        :type created_at: str
+        """
+        self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        """Gets the updated_at of this L7Rule.
+
+        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+
+        :return: The updated_at of this L7Rule.
+        :rtype: str
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        """Sets the updated_at of this L7Rule.
+
+        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+
+        :param updated_at: The updated_at of this L7Rule.
+        :type updated_at: str
+        """
+        self._updated_at = updated_at
 
     def to_dict(self):
         """Returns the model properties as a dict"""

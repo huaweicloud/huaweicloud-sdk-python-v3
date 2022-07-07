@@ -49,9 +49,9 @@ class ApmAsyncClient(Client):
         return ClientBuilder(clazz)
 
     def list_ak_sk_async(self, request):
-        """获取ak-sk
+        """获取ak/sk
 
-        获取该用户创建的aksk列表
+        获取该用户创建的ak/sk列表。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -160,10 +160,190 @@ class ApmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_env_monitor_item_async(self, request):
+        """list_env_monitor_item
+
+        查询监控项列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListEnvMonitorItem
+        :type request: :class:`huaweicloudsdkapm.v1.ListEnvMonitorItemRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.ListEnvMonitorItemResponse`
+        """
+        return self.list_env_monitor_item_with_http_info(request)
+
+    def list_env_monitor_item_with_http_info(self, request):
+        all_params = ['x_business_id', 'get_env_monitor_item_list_param']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/apm-service/monitor-item-mgr/get-env-monitor-item-list',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEnvMonitorItemResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def save_monitor_item_config_async(self, request):
+        """保存监控项
+
+        保存监控项
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SaveMonitorItemConfig
+        :type request: :class:`huaweicloudsdkapm.v1.SaveMonitorItemConfigRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.SaveMonitorItemConfigResponse`
+        """
+        return self.save_monitor_item_config_with_http_info(request)
+
+    def save_monitor_item_config_with_http_info(self, request):
+        all_params = ['x_business_id', 'save_monitor_item_param']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/apm-service/monitor-item-mgr/save-monitor-item-config',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SaveMonitorItemConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def search_application_async(self, request):
+        """对指定区域下的应用和环境及其探针情况进行搜索
+
+        对指定区域下的应用和环境及其探针情况进行搜索
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SearchApplication
+        :type request: :class:`huaweicloudsdkapm.v1.SearchApplicationRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.SearchApplicationResponse`
+        """
+        return self.search_application_with_http_info(request)
+
+    def search_application_with_http_info(self, request):
+        all_params = ['x_business_id', 'app_search_param']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/apm-service/app-mgr/search',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchApplicationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_master_address_async(self, request):
         """查询master地址
 
-        根据region名称获取该名称下的master服务podlb地址信息
+        根据region名称获取该名称下的master服务podlb地址信息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

@@ -22,8 +22,8 @@ class SystemSecurityPolicy:
 
     openapi_types = {
         'name': 'str',
-        'protocols': 'list[str]',
-        'ciphers': 'list[str]',
+        'protocols': 'str',
+        'ciphers': 'str',
         'project_id': 'str'
     }
 
@@ -42,9 +42,9 @@ class SystemSecurityPolicy:
         :param name: 系统安全策略的名称。
         :type name: str
         :param protocols: 系统安全策略的TLS协议列表。
-        :type protocols: list[str]
+        :type protocols: str
         :param ciphers: 系统安全策略的加密套件列表。
-        :type ciphers: list[str]
+        :type ciphers: str
         :param project_id: 项目id。
         :type project_id: str
         """
@@ -91,7 +91,7 @@ class SystemSecurityPolicy:
         系统安全策略的TLS协议列表。
 
         :return: The protocols of this SystemSecurityPolicy.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._protocols
 
@@ -102,7 +102,7 @@ class SystemSecurityPolicy:
         系统安全策略的TLS协议列表。
 
         :param protocols: The protocols of this SystemSecurityPolicy.
-        :type protocols: list[str]
+        :type protocols: str
         """
         self._protocols = protocols
 
@@ -113,7 +113,7 @@ class SystemSecurityPolicy:
         系统安全策略的加密套件列表。
 
         :return: The ciphers of this SystemSecurityPolicy.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._ciphers
 
@@ -124,7 +124,7 @@ class SystemSecurityPolicy:
         系统安全策略的加密套件列表。
 
         :param ciphers: The ciphers of this SystemSecurityPolicy.
-        :type ciphers: list[str]
+        :type ciphers: str
         """
         self._ciphers = ciphers
 

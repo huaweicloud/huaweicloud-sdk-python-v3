@@ -27,7 +27,9 @@ class UpdatePoolOption:
         'name': 'str',
         'session_persistence': 'UpdatePoolSessionPersistenceOption',
         'slow_start': 'UpdatePoolSlowStartOption',
-        'member_deletion_protection_enable': 'bool'
+        'member_deletion_protection_enable': 'bool',
+        'vpc_id': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -37,19 +39,21 @@ class UpdatePoolOption:
         'name': 'name',
         'session_persistence': 'session_persistence',
         'slow_start': 'slow_start',
-        'member_deletion_protection_enable': 'member_deletion_protection_enable'
+        'member_deletion_protection_enable': 'member_deletion_protection_enable',
+        'vpc_id': 'vpc_id',
+        'type': 'type'
     }
 
-    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, name=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None):
+    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, name=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None):
         """UpdatePoolOption
 
         The model defined in huaweicloud sdk
 
-        :param admin_state_up: 后端云服务器组的管理状态，只支持更新为true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        :param admin_state_up: 后端云服务器组的管理状态，只支持更新为true。 [ 不支持该字段，请勿使用。](tag:dt,dt_test)
         :type admin_state_up: bool
         :param description: 后端云服务器组的描述信息。
         :type description: str
-        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
         :type lb_algorithm: str
         :param name: 后端云服务器组的名称。
         :type name: str
@@ -59,6 +63,10 @@ class UpdatePoolOption:
         :type slow_start: :class:`huaweicloudsdkelb.v3.UpdatePoolSlowStartOption`
         :param member_deletion_protection_enable: 是否开启删除保护。取值：false不开启，true开启。 &gt; 退场时需要先关闭所有资源的删除保护开关。
         :type member_deletion_protection_enable: bool
+        :param vpc_id: 后端云服务器组关联的虚拟私有云的ID。  只有vpc_id为空时允许更新。
+        :type vpc_id: str
+        :param type: 后端服务器组的类型。   取值：  - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。  - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。  - 空字符串（\&quot;\&quot;）：允许任意类型的后端   使用说明：  - 只有type为空时允许更新，不允许从非空更新为空。
+        :type type: str
         """
         
         
@@ -70,6 +78,8 @@ class UpdatePoolOption:
         self._session_persistence = None
         self._slow_start = None
         self._member_deletion_protection_enable = None
+        self._vpc_id = None
+        self._type = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -86,12 +96,16 @@ class UpdatePoolOption:
             self.slow_start = slow_start
         if member_deletion_protection_enable is not None:
             self.member_deletion_protection_enable = member_deletion_protection_enable
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
+        if type is not None:
+            self.type = type
 
     @property
     def admin_state_up(self):
         """Gets the admin_state_up of this UpdatePoolOption.
 
-        后端云服务器组的管理状态，只支持更新为true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        后端云服务器组的管理状态，只支持更新为true。 [ 不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :return: The admin_state_up of this UpdatePoolOption.
         :rtype: bool
@@ -102,7 +116,7 @@ class UpdatePoolOption:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this UpdatePoolOption.
 
-        后端云服务器组的管理状态，只支持更新为true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        后端云服务器组的管理状态，只支持更新为true。 [ 不支持该字段，请勿使用。](tag:dt,dt_test)
 
         :param admin_state_up: The admin_state_up of this UpdatePoolOption.
         :type admin_state_up: bool
@@ -135,7 +149,7 @@ class UpdatePoolOption:
     def lb_algorithm(self):
         """Gets the lb_algorithm of this UpdatePoolOption.
 
-        后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
 
         :return: The lb_algorithm of this UpdatePoolOption.
         :rtype: str
@@ -146,7 +160,7 @@ class UpdatePoolOption:
     def lb_algorithm(self, lb_algorithm):
         """Sets the lb_algorithm of this UpdatePoolOption.
 
-        后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
 
         :param lb_algorithm: The lb_algorithm of this UpdatePoolOption.
         :type lb_algorithm: str
@@ -236,6 +250,50 @@ class UpdatePoolOption:
         :type member_deletion_protection_enable: bool
         """
         self._member_deletion_protection_enable = member_deletion_protection_enable
+
+    @property
+    def vpc_id(self):
+        """Gets the vpc_id of this UpdatePoolOption.
+
+        后端云服务器组关联的虚拟私有云的ID。  只有vpc_id为空时允许更新。
+
+        :return: The vpc_id of this UpdatePoolOption.
+        :rtype: str
+        """
+        return self._vpc_id
+
+    @vpc_id.setter
+    def vpc_id(self, vpc_id):
+        """Sets the vpc_id of this UpdatePoolOption.
+
+        后端云服务器组关联的虚拟私有云的ID。  只有vpc_id为空时允许更新。
+
+        :param vpc_id: The vpc_id of this UpdatePoolOption.
+        :type vpc_id: str
+        """
+        self._vpc_id = vpc_id
+
+    @property
+    def type(self):
+        """Gets the type of this UpdatePoolOption.
+
+        后端服务器组的类型。   取值：  - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。  - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。  - 空字符串（\"\"）：允许任意类型的后端   使用说明：  - 只有type为空时允许更新，不允许从非空更新为空。
+
+        :return: The type of this UpdatePoolOption.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this UpdatePoolOption.
+
+        后端服务器组的类型。   取值：  - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。  - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。  - 空字符串（\"\"）：允许任意类型的后端   使用说明：  - 只有type为空时允许更新，不允许从非空更新为空。
+
+        :param type: The type of this UpdatePoolOption.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

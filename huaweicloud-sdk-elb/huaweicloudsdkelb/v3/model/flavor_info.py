@@ -43,17 +43,17 @@ class FlavorInfo:
 
         The model defined in huaweicloud sdk
 
-        :param connection: 并发数。
+        :param connection: 并发数。单位：个
         :type connection: int
-        :param cps: 新建数。
+        :param cps: 新建数。单位：个
         :type cps: int
-        :param qps: 7层每秒查询数。
+        :param qps: 7层每秒查询数。单位：个
         :type qps: int
-        :param bandwidth: 带宽。
+        :param bandwidth: 带宽。单位：Mbit/s
         :type bandwidth: int
-        :param lcu: 当前flavor对应的lcu数量。LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
+        :param lcu: 当前flavor对应的lcu数量。 LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。单位：个
         :type lcu: int
-        :param https_cps: https新建连接数。
+        :param https_cps: https新建连接数。单位：个
         :type https_cps: int
         """
         
@@ -82,7 +82,7 @@ class FlavorInfo:
     def connection(self):
         """Gets the connection of this FlavorInfo.
 
-        并发数。
+        并发数。单位：个
 
         :return: The connection of this FlavorInfo.
         :rtype: int
@@ -93,7 +93,7 @@ class FlavorInfo:
     def connection(self, connection):
         """Sets the connection of this FlavorInfo.
 
-        并发数。
+        并发数。单位：个
 
         :param connection: The connection of this FlavorInfo.
         :type connection: int
@@ -104,7 +104,7 @@ class FlavorInfo:
     def cps(self):
         """Gets the cps of this FlavorInfo.
 
-        新建数。
+        新建数。单位：个
 
         :return: The cps of this FlavorInfo.
         :rtype: int
@@ -115,7 +115,7 @@ class FlavorInfo:
     def cps(self, cps):
         """Sets the cps of this FlavorInfo.
 
-        新建数。
+        新建数。单位：个
 
         :param cps: The cps of this FlavorInfo.
         :type cps: int
@@ -126,7 +126,7 @@ class FlavorInfo:
     def qps(self):
         """Gets the qps of this FlavorInfo.
 
-        7层每秒查询数。
+        7层每秒查询数。单位：个
 
         :return: The qps of this FlavorInfo.
         :rtype: int
@@ -137,7 +137,7 @@ class FlavorInfo:
     def qps(self, qps):
         """Sets the qps of this FlavorInfo.
 
-        7层每秒查询数。
+        7层每秒查询数。单位：个
 
         :param qps: The qps of this FlavorInfo.
         :type qps: int
@@ -148,7 +148,7 @@ class FlavorInfo:
     def bandwidth(self):
         """Gets the bandwidth of this FlavorInfo.
 
-        带宽。
+        带宽。单位：Mbit/s
 
         :return: The bandwidth of this FlavorInfo.
         :rtype: int
@@ -159,7 +159,7 @@ class FlavorInfo:
     def bandwidth(self, bandwidth):
         """Sets the bandwidth of this FlavorInfo.
 
-        带宽。
+        带宽。单位：Mbit/s
 
         :param bandwidth: The bandwidth of this FlavorInfo.
         :type bandwidth: int
@@ -170,7 +170,7 @@ class FlavorInfo:
     def lcu(self):
         """Gets the lcu of this FlavorInfo.
 
-        当前flavor对应的lcu数量。LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
+        当前flavor对应的lcu数量。 LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。单位：个
 
         :return: The lcu of this FlavorInfo.
         :rtype: int
@@ -181,7 +181,7 @@ class FlavorInfo:
     def lcu(self, lcu):
         """Sets the lcu of this FlavorInfo.
 
-        当前flavor对应的lcu数量。LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。
+        当前flavor对应的lcu数量。 LCU是用来衡量独享型ELB处理性能综合指标，LCU值越大，性能越好。单位：个
 
         :param lcu: The lcu of this FlavorInfo.
         :type lcu: int
@@ -192,7 +192,7 @@ class FlavorInfo:
     def https_cps(self):
         """Gets the https_cps of this FlavorInfo.
 
-        https新建连接数。
+        https新建连接数。单位：个
 
         :return: The https_cps of this FlavorInfo.
         :rtype: int
@@ -203,7 +203,7 @@ class FlavorInfo:
     def https_cps(self, https_cps):
         """Sets the https_cps of this FlavorInfo.
 
-        https新建连接数。
+        https新建连接数。单位：个
 
         :param https_cps: The https_cps of this FlavorInfo.
         :type https_cps: int

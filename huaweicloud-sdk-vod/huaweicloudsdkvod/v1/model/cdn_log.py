@@ -53,7 +53,7 @@ class CdnLog:
         :type name: str
         :param size: 日志大小。  单位：byte。
         :type size: int
-        :param link: 日志下载链接。
+        :param link: 日志下载链接,日志文件[参数说明](https://support.huaweicloud.com/usermanual-cdn/zh-cn_topic_0073337424.html)。
         :type link: str
         """
         
@@ -194,7 +194,7 @@ class CdnLog:
     def link(self):
         """Gets the link of this CdnLog.
 
-        日志下载链接。
+        日志下载链接,日志文件[参数说明](https://support.huaweicloud.com/usermanual-cdn/zh-cn_topic_0073337424.html)。
 
         :return: The link of this CdnLog.
         :rtype: str
@@ -205,7 +205,7 @@ class CdnLog:
     def link(self, link):
         """Sets the link of this CdnLog.
 
-        日志下载链接。
+        日志下载链接,日志文件[参数说明](https://support.huaweicloud.com/usermanual-cdn/zh-cn_topic_0073337424.html)。
 
         :param link: The link of this CdnLog.
         :type link: str

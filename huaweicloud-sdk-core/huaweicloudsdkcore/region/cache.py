@@ -54,7 +54,7 @@ class ProfileRegionCache(six_utils.get_singleton_meta_class()):
         result = {}
 
         path = cls._get_regions_file_path()
-        if not os.path.exists(path):
+        if not path or not os.path.exists(path):
             return result
 
         with open(path, "r") as f:
@@ -78,9 +78,9 @@ class ProfileRegionCache(six_utils.get_singleton_meta_class()):
 
         platform = sys.platform
         if platform.startswith("win32"):
-            home_path = os.environ.get("USERPROFILE")
+            home_path = os.environ.setdefault("USERPROFILE", "")
         elif platform.startswith("linux") or sys.platform.startswith("darwin"):
-            home_path = os.environ.get("HOME")
+            home_path = os.environ.setdefault("HOME", "")
         else:
             home_path = ""
 

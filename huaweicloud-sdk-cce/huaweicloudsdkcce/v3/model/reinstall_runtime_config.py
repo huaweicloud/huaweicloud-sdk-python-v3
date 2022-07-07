@@ -35,7 +35,7 @@ class ReinstallRuntimeConfig:
 
         The model defined in huaweicloud sdk
 
-        :param docker_base_size: Device mapper模式下，节点上Docker单容器的可用磁盘空间大小，OverlayFS模式(CCE Turbo集群中CentOS 7.6和Ubuntu 18.04节点，以及混合集群中Ubuntu 18.04节点)下不支持此字段。Device mapper模式下建议dockerBaseSize配置不超过80G，设置过大时可能会导致docker初始化时间过长而启动失败，若对容器磁盘大小有特殊要求，可考虑使用挂载外部或本地存储方式代替。 
+        :param docker_base_size: 节点上单容器的可用磁盘空间大小，单位G。不配置该值或值为0时将使用默认值，Devicemapper模式下默认值为10；OverlayFS模式默认不限制单容器可用空间大小，且dockerBaseSize设置仅在新版本集群的EulerOS节点上生效。CCE节点容器运行时空间配置请参考[数据盘空间分配说明](cce_01_0341.xml)。Devicemapper模式下建议dockerBaseSize配置不超过80G，设置过大时可能会导致容器运行时初始化时间过长而启动失败，若对容器磁盘大小有特殊要求，可考虑使用挂载外部或本地存储方式代替。 
         :type docker_base_size: int
         :param runtime: 
         :type runtime: :class:`huaweicloudsdkcce.v3.Runtime`
@@ -56,7 +56,7 @@ class ReinstallRuntimeConfig:
     def docker_base_size(self):
         """Gets the docker_base_size of this ReinstallRuntimeConfig.
 
-        Device mapper模式下，节点上Docker单容器的可用磁盘空间大小，OverlayFS模式(CCE Turbo集群中CentOS 7.6和Ubuntu 18.04节点，以及混合集群中Ubuntu 18.04节点)下不支持此字段。Device mapper模式下建议dockerBaseSize配置不超过80G，设置过大时可能会导致docker初始化时间过长而启动失败，若对容器磁盘大小有特殊要求，可考虑使用挂载外部或本地存储方式代替。 
+        节点上单容器的可用磁盘空间大小，单位G。不配置该值或值为0时将使用默认值，Devicemapper模式下默认值为10；OverlayFS模式默认不限制单容器可用空间大小，且dockerBaseSize设置仅在新版本集群的EulerOS节点上生效。CCE节点容器运行时空间配置请参考[数据盘空间分配说明](cce_01_0341.xml)。Devicemapper模式下建议dockerBaseSize配置不超过80G，设置过大时可能会导致容器运行时初始化时间过长而启动失败，若对容器磁盘大小有特殊要求，可考虑使用挂载外部或本地存储方式代替。 
 
         :return: The docker_base_size of this ReinstallRuntimeConfig.
         :rtype: int
@@ -67,7 +67,7 @@ class ReinstallRuntimeConfig:
     def docker_base_size(self, docker_base_size):
         """Sets the docker_base_size of this ReinstallRuntimeConfig.
 
-        Device mapper模式下，节点上Docker单容器的可用磁盘空间大小，OverlayFS模式(CCE Turbo集群中CentOS 7.6和Ubuntu 18.04节点，以及混合集群中Ubuntu 18.04节点)下不支持此字段。Device mapper模式下建议dockerBaseSize配置不超过80G，设置过大时可能会导致docker初始化时间过长而启动失败，若对容器磁盘大小有特殊要求，可考虑使用挂载外部或本地存储方式代替。 
+        节点上单容器的可用磁盘空间大小，单位G。不配置该值或值为0时将使用默认值，Devicemapper模式下默认值为10；OverlayFS模式默认不限制单容器可用空间大小，且dockerBaseSize设置仅在新版本集群的EulerOS节点上生效。CCE节点容器运行时空间配置请参考[数据盘空间分配说明](cce_01_0341.xml)。Devicemapper模式下建议dockerBaseSize配置不超过80G，设置过大时可能会导致容器运行时初始化时间过长而启动失败，若对容器磁盘大小有特殊要求，可考虑使用挂载外部或本地存储方式代替。 
 
         :param docker_base_size: The docker_base_size of this ReinstallRuntimeConfig.
         :type docker_base_size: int

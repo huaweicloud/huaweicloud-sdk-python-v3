@@ -1,3 +1,265 @@
+# 3.0.97 2022-07-07
+
+### HuaweiCloud SDK APM
+
+- _新增特性_
+  - 支持接口`SearchApplication`、`SaveMonitorItemConfig`、`ListEnvMonitorItem`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CCE
+
+- _新增特性_
+  - 支持接口`UpdateClusterEip`、`ShowClusterEndpoints`、`ShowVersion`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListNodes`:
+    - 新增响应参数 `isStatic`、`privateIPv6IP`
+    - 响应参数`key`、`effect`改为必填
+  - 接口`CreateNode`:
+    - 新增请求参数 `isStatic`
+    - 请求参数`key`、`effect`改为必填
+  - 接口`ShowNode`:
+    - 新增响应参数 `isStatic`、`privateIPv6IP`
+    - 响应参数`key`、`effect`改为必填
+  - 接口`DeleteNode`:
+    - 新增响应参数 `isStatic`、`privateIPv6IP`
+    - 响应参数`key`、`effect`改为必填
+  - 接口`UpdateNode`:
+    - 新增响应参数 `isStatic`、`privateIPv6IP`
+    - 响应参数`key`、`effect`改为必填
+  - 接口`AddNode`请求参数`key`、`effect`改为必填
+  - 接口`ResetNode`请求参数`key`、`effect`改为必填
+  - 接口`ListNodePools`:
+    - 新增响应参数 `isStatic`
+    - 响应参数`key`、`effect`改为必填
+  - 接口`CreateNodePool`:
+    - 新增请求参数 `isStatic`
+    - 请求参数`key`、`effect`改为必填
+  - 接口`ShowNodePool`:
+    - 新增响应参数 `isStatic`
+    - 响应参数`key`、`effect`改为必填
+  - 接口`DeleteNodePool`:
+    - 新增响应参数 `isStatic`
+    - 响应参数`key`、`effect`改为必填
+  - 接口`UpdateNodePool`:
+    - 新增响应参数 `isStatic`
+    - 请求参数`key`、`effect`改为必填
+    - 响应参数`key`、`effect`改为必填
+
+### HuaweiCloud SDK CloudRTC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateMixJob`新增请求参数 `filling_policy`
+  - 接口`UpdateMixJob`:
+    - 新增请求参数 `filling_policy`
+    - 新增响应参数 `filling_policy`
+  - 接口`ShowMixJob`新增响应参数 `filling_policy`
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListClustersDetails`移除响应参数 `CREATING`
+  - 接口`ShowClusterDetail`移除响应参数 `CREATING`
+  - 接口`UpdateUnbindPublic`新增请求参数 `unBindPublicReq`
+  - 接口`ListYmlsJob`:
+    - 新增响应参数 `configurations`
+    - 移除响应参数 `configList`
+  - 接口`ListYmls`:
+    - 新增响应参数 `configurations`
+    - 移除响应参数 `configList`
+
+### HuaweiCloud SDK CTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateNotification`:
+    - 新增请求参数 `filter`
+    - 新增响应参数 `filter`
+  - 接口`CreateNotification`新增请求参数 `filter`
+  - 接口`ListNotifications`新增响应参数 `filter`
+
+### HuaweiCloud SDK ELB
+
+- _新增特性_
+  - 支持接口`ListMasterSlavePools`、`CreateMasterSlavePool`、`ShowMasterSlavePool`、`DeleteMasterSlavePool`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListSystemSecurityPolicies`:
+    - 响应参数`protocols`类型调整 `array` -> `string`
+    - 响应参数`ciphers`类型调整 `array` -> `string`
+  - 接口`ListQuotaDetails`新增请求参数 `X-Auth-Token`
+  - 接口`ListAvailabilityZones`新增请求参数 `public_border_group`
+  - 接口`CreateLoadBalancer`:
+    - 新增请求参数 `id`、`global_eip_ids`
+    - 移除请求参数 `min_l4_flavor_id`
+    - 请求参数`X-Auth-Token`改为必填
+  - 接口`ListLoadBalancers`:
+    - 新增响应参数 `global_eips`、`public_border_group`
+    - 移除响应参数 `min_l4_flavor_id`
+    - 请求参数`X-Auth-Token`改为必填
+  - 接口`UpdateLoadBalancer`:
+    - 新增请求参数 `cloud_service_console_url`
+    - 新增响应参数 `global_eips`、`public_border_group`
+    - 移除请求参数 `min_l4_flavor_id`
+    - 移除响应参数 `min_l4_flavor_id`
+  - 接口`ShowLoadBalancer`:
+    - 新增响应参数 `global_eips`、`public_border_group`
+    - 移除响应参数 `min_l4_flavor_id`
+  - 接口`ChangeLoadbalancerChargeMode`新增请求参数 `X-Auth-Token`
+  - 接口`CreateCertificate`移除请求参数 `enc_certificate`、`enc_private_key`
+  - 接口`ListCertificates`移除响应参数 `enc_certificate`、`enc_private_key`
+  - 接口`UpdateCertificate`:
+    - 移除请求参数 `enc_certificate`、`enc_private_key`
+    - 移除响应参数 `enc_certificate`、`enc_private_key`
+  - 接口`ShowCertificate`移除响应参数 `enc_certificate`、`enc_private_key`
+  - 接口`CreateListener`新增请求参数 `quic_config`
+  - 接口`ListListeners`新增响应参数 `quic_config`
+  - 接口`UpdateListener`:
+    - 新增请求参数 `quic_config`
+    - 新增响应参数 `quic_config`
+  - 接口`ShowListener`新增响应参数 `quic_config`
+  - 接口`CreatePool`新增请求参数 `vpc_id`、`type`
+  - 接口`ListPools`:
+    - 新增请求参数 `vpc_id`、`type`
+    - 新增响应参数 `created_at`、`updated_at`、`vpc_id`、`type`
+  - 接口`UpdatePool`:
+    - 新增请求参数 `X-Auth-Token`、`vpc_id`、`type`
+    - 新增响应参数 `created_at`、`updated_at`、`vpc_id`、`type`
+  - 接口`ShowPool`新增响应参数 `created_at`、`updated_at`、`vpc_id`、`type`
+  - 接口`CreateMember`请求参数`project_id`类型调整 `enum` -> `string`
+  - 接口`ListMembers`:
+    - 新增响应参数 `status`、`loadbalancers`、`created_at`、`updated_at`
+    - 移除请求参数 `instance_id`
+  - 接口`UpdateMember`新增响应参数 `status`、`loadbalancers`、`created_at`、`updated_at`
+  - 接口`ShowMember`新增响应参数 `status`、`loadbalancers`、`created_at`、`updated_at`
+  - 接口`ListAllMembers`新增响应参数 `status`、`loadbalancers`、`created_at`、`updated_at`
+  - 接口`ListHealthMonitors`新增响应参数 `created_at`、`updated_at`
+  - 接口`UpdateHealthMonitor`新增响应参数 `created_at`、`updated_at`
+  - 接口`ShowHealthMonitor`新增响应参数 `created_at`、`updated_at`
+  - 接口`CreateL7Policy`新增请求参数 `redirect_pools_config`
+  - 接口`ListL7Policies`新增响应参数 `redirect_pools_config`、`created_at`、`updated_at`
+  - 接口`UpdateL7Policy`:
+    - 新增请求参数 `redirect_pools_config`
+    - 新增响应参数 `redirect_pools_config`、`created_at`、`updated_at`
+  - 接口`ShowL7Policy`新增响应参数 `redirect_pools_config`、`created_at`、`updated_at`
+  - 接口`BatchUpdatePoliciesPriority`新增请求参数 `X-Auth-Token`
+  - 接口`ListL7Rules`新增响应参数 `created_at`、`updated_at`
+  - 接口`UpdateL7Rule`新增响应参数 `created_at`、`updated_at`
+  - 接口`ShowL7Rule`新增响应参数 `created_at`、`updated_at`
+  - 接口`UpdateIpList`:
+    - 移除请求参数 `name`、`ip_list`、`description`
+    - 请求参数`X-Auth-Token`改为必填
+  - 接口`BatchDeleteIpList`:
+    - 新增请求参数 `BatchDeleteIpListRequestBody`
+    - 移除请求参数 `BatchDeleteIpGroupIpListRequestBody`
+    - 请求参数`X-Auth-Token`改为必填
+  - 接口`BatchCreateMembers`:
+    - 新增请求参数 `BatchCreateMembersRequestBody`
+    - 新增响应参数 `status`
+    - 移除请求参数 `BatchCreateMemberRequestBody`
+  - 接口`BatchDeleteMembers`:
+    - 新增请求参数 `BatchDeleteMembersRequestBody`
+    - 移除请求参数 `BatchDeleteMemberRequestBody`
+  - 接口`UpdateLogtank`:
+    - 新增请求参数 `UpdateLogtankRequestBody`
+    - 移除请求参数 `logtank`
+
+### HuaweiCloud SDK IoTEdge
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `CreateAccessCode`
+    - `ShowProtocolMappings`
+    - `UploadProtocolMappings`
+    - `BatchUpdateConfigs`
+    - `ShowExternalEntity`
+  - 接口`CreateEdgeApp`请求参数`function_type`新增枚举值`COMPOSITE_APPLICATION`、`DATA_COLLECTION`
+  - 接口`BatchListEdgeAppVersions`新增响应参数 `sdk_version`、`deploy_multi_instance`
+  - 接口`CreateEdgeApplicationVersion`新增请求参数 `sdk_version`、`deploy_multi_instance`、`ext_devices`、`tcp_socket`、`period_seconds`、`failure_threshold`、`tcp_socket`、`period_seconds`、`failure_threshold`
+  - 接口`UpdateEdgeApplicationVersion`:
+    - 新增请求参数 `deploy_multi_instance`、`sdk_version`、`ext_devices`、`tcp_socket`、`period_seconds`、`failure_threshold`、`tcp_socket`、`period_seconds`、`failure_threshold`
+    - 新增响应参数 `sdk_version`、`deploy_multi_instance`
+    - 请求参数`arch`改为非必填
+  - 接口`ShowEdgeApplicationVersion`新增响应参数 `deploy_multi_instance`、`sdk_version`、`tcp_socket`、`period_seconds`、`failure_threshold`、`tcp_socket`、`period_seconds`、`failure_threshold`、`ext_devices`
+  - 接口`UpdateEdgeApplicationVersionState`新增响应参数 `sdk_version`、`deploy_multi_instance`
+  - 接口`CreateEdgeNode`新增请求参数 `edge_node_id`、`verify_code`、`time_out`、`arch`、`base_path`、`hardware_model`
+  - 接口`ShowEdgeNode`新增响应参数 `ha_config`、`hardware_model`
+  - 接口`CreateInstallCmd`新增请求参数 `CreateInstallCmdRequestBody`
+  - 接口`BatchListModules`:
+    - 新增响应参数 `control_status`、`container_settings`
+    - 响应参数`state`新增枚举值`DELETE_SUCCESS`、`STOPPED`
+    - 响应参数`function_type`新增枚举值`GATEWAY_MANAGER`、`COMPOSITE_APPLICATION`、`DATA_COLLECTION`
+  - 接口`CreateModule`新增请求参数 `module_name`、`container_settings`
+  - 接口`UpdateModule`:
+    - 新增请求参数 `module_name`、`container_settings`
+    - 新增响应参数 `control_status`
+    - 请求参数`app_version`改为非必填
+    - 响应参数`state`新增枚举值`DELETE_SUCCESS`、`STOPPED`
+    - 响应参数`function_type`新增枚举值`GATEWAY_MANAGER`、`COMPOSITE_APPLICATION`、`DATA_COLLECTION`
+  - 接口`ShowModule`:
+    - 新增响应参数 `control_status`、`container_settings`
+    - 响应参数`state`新增枚举值`DELETE_SUCCESS`、`STOPPED`
+    - 响应参数`function_type`新增枚举值`GATEWAY_MANAGER`、`COMPOSITE_APPLICATION`、`DATA_COLLECTION`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeVatInvoice`新增响应参数 `title`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`SetSensitiveSlowLog`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RMS
+
+- _新增特性_
+  - 支持接口`ListSchemas`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SIS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeShortAudio`请求参数`property`新增枚举值`chinese_16k_travel`
+  - 接口`PushTranscriberJobs`请求参数`property`新增枚举值`chinese_16k_media`
+  - 接口`CollectTranscriberJob`新增响应参数 `audio_duration`
+  - 接口`RunTts`请求参数`property`新增枚举值`chinese_huaxiaomei_common`、`chinese_huaxiaofei_common`
+
 # 3.0.96 2022-06-30
 
 ### HuaweiCloud SDK UGO

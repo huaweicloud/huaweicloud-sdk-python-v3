@@ -49,23 +49,23 @@ class LogConfiguration:
 
         The model defined in huaweicloud sdk
 
-        :param id: ID。
+        :param id: 日志备份ID，通过系统UUID生成。
         :type id: str
         :param cluster_id: 集群ID。
         :type cluster_id: str
-        :param obs_bucket: OBS桶。
+        :param obs_bucket: 用于存储日志的OBS桶的桶名。
         :type obs_bucket: str
         :param agency: IAM 委托。
         :type agency: str
-        :param update_at: 更新时间。
+        :param update_at: 更新时间。格式为：Unix时间戳格式
         :type update_at: int
-        :param base_path: 备份路径。
+        :param base_path: 日志在OBS桶中的备份路径。
         :type base_path: str
-        :param auto_enable: 自动备份开关。
+        :param auto_enable: 自动备份开关。 - true: 自动备份开启。 - false: 自动备份关闭。
         :type auto_enable: bool
-        :param period: 备份开始时间。
+        :param period: 自动备份日志开始时间。当autoEnable为false时该字段为null。格式为：格林威治标准时间。
         :type period: str
-        :param log_switch: 日志开关。
+        :param log_switch: 日志开关。 - true: 日志开启。 - false: 日志关闭。
         :type log_switch: bool
         """
         
@@ -105,7 +105,7 @@ class LogConfiguration:
     def id(self):
         """Gets the id of this LogConfiguration.
 
-        ID。
+        日志备份ID，通过系统UUID生成。
 
         :return: The id of this LogConfiguration.
         :rtype: str
@@ -116,7 +116,7 @@ class LogConfiguration:
     def id(self, id):
         """Sets the id of this LogConfiguration.
 
-        ID。
+        日志备份ID，通过系统UUID生成。
 
         :param id: The id of this LogConfiguration.
         :type id: str
@@ -149,7 +149,7 @@ class LogConfiguration:
     def obs_bucket(self):
         """Gets the obs_bucket of this LogConfiguration.
 
-        OBS桶。
+        用于存储日志的OBS桶的桶名。
 
         :return: The obs_bucket of this LogConfiguration.
         :rtype: str
@@ -160,7 +160,7 @@ class LogConfiguration:
     def obs_bucket(self, obs_bucket):
         """Sets the obs_bucket of this LogConfiguration.
 
-        OBS桶。
+        用于存储日志的OBS桶的桶名。
 
         :param obs_bucket: The obs_bucket of this LogConfiguration.
         :type obs_bucket: str
@@ -193,7 +193,7 @@ class LogConfiguration:
     def update_at(self):
         """Gets the update_at of this LogConfiguration.
 
-        更新时间。
+        更新时间。格式为：Unix时间戳格式
 
         :return: The update_at of this LogConfiguration.
         :rtype: int
@@ -204,7 +204,7 @@ class LogConfiguration:
     def update_at(self, update_at):
         """Sets the update_at of this LogConfiguration.
 
-        更新时间。
+        更新时间。格式为：Unix时间戳格式
 
         :param update_at: The update_at of this LogConfiguration.
         :type update_at: int
@@ -215,7 +215,7 @@ class LogConfiguration:
     def base_path(self):
         """Gets the base_path of this LogConfiguration.
 
-        备份路径。
+        日志在OBS桶中的备份路径。
 
         :return: The base_path of this LogConfiguration.
         :rtype: str
@@ -226,7 +226,7 @@ class LogConfiguration:
     def base_path(self, base_path):
         """Sets the base_path of this LogConfiguration.
 
-        备份路径。
+        日志在OBS桶中的备份路径。
 
         :param base_path: The base_path of this LogConfiguration.
         :type base_path: str
@@ -237,7 +237,7 @@ class LogConfiguration:
     def auto_enable(self):
         """Gets the auto_enable of this LogConfiguration.
 
-        自动备份开关。
+        自动备份开关。 - true: 自动备份开启。 - false: 自动备份关闭。
 
         :return: The auto_enable of this LogConfiguration.
         :rtype: bool
@@ -248,7 +248,7 @@ class LogConfiguration:
     def auto_enable(self, auto_enable):
         """Sets the auto_enable of this LogConfiguration.
 
-        自动备份开关。
+        自动备份开关。 - true: 自动备份开启。 - false: 自动备份关闭。
 
         :param auto_enable: The auto_enable of this LogConfiguration.
         :type auto_enable: bool
@@ -259,7 +259,7 @@ class LogConfiguration:
     def period(self):
         """Gets the period of this LogConfiguration.
 
-        备份开始时间。
+        自动备份日志开始时间。当autoEnable为false时该字段为null。格式为：格林威治标准时间。
 
         :return: The period of this LogConfiguration.
         :rtype: str
@@ -270,7 +270,7 @@ class LogConfiguration:
     def period(self, period):
         """Sets the period of this LogConfiguration.
 
-        备份开始时间。
+        自动备份日志开始时间。当autoEnable为false时该字段为null。格式为：格林威治标准时间。
 
         :param period: The period of this LogConfiguration.
         :type period: str
@@ -281,7 +281,7 @@ class LogConfiguration:
     def log_switch(self):
         """Gets the log_switch of this LogConfiguration.
 
-        日志开关。
+        日志开关。 - true: 日志开启。 - false: 日志关闭。
 
         :return: The log_switch of this LogConfiguration.
         :rtype: bool
@@ -292,7 +292,7 @@ class LogConfiguration:
     def log_switch(self, log_switch):
         """Sets the log_switch of this LogConfiguration.
 
-        日志开关。
+        日志开关。 - true: 日志开启。 - false: 日志关闭。
 
         :param log_switch: The log_switch of this LogConfiguration.
         :type log_switch: bool

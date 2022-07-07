@@ -35,7 +35,7 @@ class UpdateVpcepConnectionReq:
 
         The model defined in huaweicloud sdk
 
-        :param action: 期望的操作行为。
+        :param action: 期望的操作行为。 - receive: 允许连接 - reject: 拒绝连接
         :type action: str
         :param endpoint_id_list: 终端节点ID列表。
         :type endpoint_id_list: list[str]
@@ -54,7 +54,7 @@ class UpdateVpcepConnectionReq:
     def action(self):
         """Gets the action of this UpdateVpcepConnectionReq.
 
-        期望的操作行为。
+        期望的操作行为。 - receive: 允许连接 - reject: 拒绝连接
 
         :return: The action of this UpdateVpcepConnectionReq.
         :rtype: str
@@ -65,7 +65,7 @@ class UpdateVpcepConnectionReq:
     def action(self, action):
         """Sets the action of this UpdateVpcepConnectionReq.
 
-        期望的操作行为。
+        期望的操作行为。 - receive: 允许连接 - reject: 拒绝连接
 
         :param action: The action of this UpdateVpcepConnectionReq.
         :type action: str

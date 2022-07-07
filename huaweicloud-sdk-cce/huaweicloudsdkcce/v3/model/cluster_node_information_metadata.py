@@ -33,7 +33,7 @@ class ClusterNodeInformationMetadata:
 
         The model defined in huaweicloud sdk
 
-        :param name: 节点名称  &gt; 修改节点名称后，弹性云服务器名称（虚拟机名称）会同步修改。 &gt; &gt; 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
+        :param name: 节点名称  &gt; 修改节点名称后，弹性云服务器名称（虚拟机名称）会同步修改。 &gt; 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
         :type name: str
         """
         
@@ -48,7 +48,7 @@ class ClusterNodeInformationMetadata:
     def name(self):
         """Gets the name of this ClusterNodeInformationMetadata.
 
-        节点名称  > 修改节点名称后，弹性云服务器名称（虚拟机名称）会同步修改。 > > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
+        节点名称  > 修改节点名称后，弹性云服务器名称（虚拟机名称）会同步修改。 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
 
         :return: The name of this ClusterNodeInformationMetadata.
         :rtype: str
@@ -59,7 +59,7 @@ class ClusterNodeInformationMetadata:
     def name(self, name):
         """Sets the name of this ClusterNodeInformationMetadata.
 
-        节点名称  > 修改节点名称后，弹性云服务器名称（虚拟机名称）会同步修改。 > > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
+        节点名称  > 修改节点名称后，弹性云服务器名称（虚拟机名称）会同步修改。 > 命名规则：以小写字母开头，由小写字母、数字、中划线(-)组成，长度范围1-56位，且不能以中划线(-)结尾。
 
         :param name: The name of this ClusterNodeInformationMetadata.
         :type name: str

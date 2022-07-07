@@ -37,7 +37,7 @@ class CreateClusterDatastoreBody:
 
         :param version: CSS集群引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
         :type version: str
-        :param type: 引擎类型，支持elasticsearch和logstash。
+        :param type: 引擎类型，支持elasticsearch。
         :type type: str
         """
         
@@ -76,7 +76,7 @@ class CreateClusterDatastoreBody:
     def type(self):
         """Gets the type of this CreateClusterDatastoreBody.
 
-        引擎类型，支持elasticsearch和logstash。
+        引擎类型，支持elasticsearch。
 
         :return: The type of this CreateClusterDatastoreBody.
         :rtype: str
@@ -87,7 +87,7 @@ class CreateClusterDatastoreBody:
     def type(self, type):
         """Sets the type of this CreateClusterDatastoreBody.
 
-        引擎类型，支持elasticsearch和logstash。
+        引擎类型，支持elasticsearch。
 
         :param type: The type of this CreateClusterDatastoreBody.
         :type type: str

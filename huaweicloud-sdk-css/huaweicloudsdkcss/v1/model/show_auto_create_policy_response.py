@@ -49,15 +49,15 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
         :type keepday: int
         :param period: 每天快照创建时刻。
         :type period: str
-        :param prefix: 快照命名前缀。
+        :param prefix: 快照命名前缀，需要用户自己手动输入。
         :type prefix: str
-        :param bucket: 快照存放的OBS桶。
+        :param bucket: 快照存放的OBS桶的桶名。
         :type bucket: str
         :param base_path: 快照在OBS桶中的存放路径。
         :type base_path: str
         :param agency: 访问OBS桶用到的委托。
         :type agency: str
-        :param enable: 是否开启自动创建快照策略。
+        :param enable: 是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略。
         :type enable: str
         """
         
@@ -135,7 +135,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
     def prefix(self):
         """Gets the prefix of this ShowAutoCreatePolicyResponse.
 
-        快照命名前缀。
+        快照命名前缀，需要用户自己手动输入。
 
         :return: The prefix of this ShowAutoCreatePolicyResponse.
         :rtype: str
@@ -146,7 +146,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
     def prefix(self, prefix):
         """Sets the prefix of this ShowAutoCreatePolicyResponse.
 
-        快照命名前缀。
+        快照命名前缀，需要用户自己手动输入。
 
         :param prefix: The prefix of this ShowAutoCreatePolicyResponse.
         :type prefix: str
@@ -157,7 +157,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
     def bucket(self):
         """Gets the bucket of this ShowAutoCreatePolicyResponse.
 
-        快照存放的OBS桶。
+        快照存放的OBS桶的桶名。
 
         :return: The bucket of this ShowAutoCreatePolicyResponse.
         :rtype: str
@@ -168,7 +168,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
     def bucket(self, bucket):
         """Sets the bucket of this ShowAutoCreatePolicyResponse.
 
-        快照存放的OBS桶。
+        快照存放的OBS桶的桶名。
 
         :param bucket: The bucket of this ShowAutoCreatePolicyResponse.
         :type bucket: str
@@ -223,7 +223,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
     def enable(self):
         """Gets the enable of this ShowAutoCreatePolicyResponse.
 
-        是否开启自动创建快照策略。
+        是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略。
 
         :return: The enable of this ShowAutoCreatePolicyResponse.
         :rtype: str
@@ -234,7 +234,7 @@ class ShowAutoCreatePolicyResponse(SdkResponse):
     def enable(self, enable):
         """Sets the enable of this ShowAutoCreatePolicyResponse.
 
-        是否开启自动创建快照策略。
+        是否开启自动创建快照策略。 - true：表示开启自动创建快照策略。 - false：表示关闭自动创建快照策略。
 
         :param enable: The enable of this ShowAutoCreatePolicyResponse.
         :type enable: str

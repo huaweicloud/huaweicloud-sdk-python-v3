@@ -37,7 +37,7 @@ class UpdateSnapshotSettingReq:
 
         The model defined in huaweicloud sdk
 
-        :param bucket: 备份使用的OBS桶，如果桶已经存放快照数据了，不可更改。
+        :param bucket: 备份使用的OBS桶的桶名。
         :type bucket: str
         :param agency: 访问OBS使用的IAM委托名称。
         :type agency: str
@@ -60,7 +60,7 @@ class UpdateSnapshotSettingReq:
     def bucket(self):
         """Gets the bucket of this UpdateSnapshotSettingReq.
 
-        备份使用的OBS桶，如果桶已经存放快照数据了，不可更改。
+        备份使用的OBS桶的桶名。
 
         :return: The bucket of this UpdateSnapshotSettingReq.
         :rtype: str
@@ -71,7 +71,7 @@ class UpdateSnapshotSettingReq:
     def bucket(self, bucket):
         """Sets the bucket of this UpdateSnapshotSettingReq.
 
-        备份使用的OBS桶，如果桶已经存放快照数据了，不可更改。
+        备份使用的OBS桶的桶名。
 
         :param bucket: The bucket of this UpdateSnapshotSettingReq.
         :type bucket: str

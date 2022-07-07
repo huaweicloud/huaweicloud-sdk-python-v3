@@ -30,7 +30,8 @@ class UpdateNotificationResponse(SdkResponse):
         'notification_id': 'str',
         'notification_type': 'str',
         'project_id': 'str',
-        'create_time': 'int'
+        'create_time': 'int',
+        'filter': 'Filter'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class UpdateNotificationResponse(SdkResponse):
         'notification_id': 'notification_id',
         'notification_type': 'notification_type',
         'project_id': 'project_id',
-        'create_time': 'create_time'
+        'create_time': 'create_time',
+        'filter': 'filter'
     }
 
-    def __init__(self, notification_name=None, operation_type=None, operations=None, notify_user_list=None, status=None, topic_id=None, notification_id=None, notification_type=None, project_id=None, create_time=None):
+    def __init__(self, notification_name=None, operation_type=None, operations=None, notify_user_list=None, status=None, topic_id=None, notification_id=None, notification_type=None, project_id=None, create_time=None, filter=None):
         """UpdateNotificationResponse
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class UpdateNotificationResponse(SdkResponse):
         :type project_id: str
         :param create_time: 关键操作通知创建时间戳。
         :type create_time: int
+        :param filter: 
+        :type filter: :class:`huaweicloudsdkcts.v3.Filter`
         """
         
         super(UpdateNotificationResponse, self).__init__()
@@ -85,6 +89,7 @@ class UpdateNotificationResponse(SdkResponse):
         self._notification_type = None
         self._project_id = None
         self._create_time = None
+        self._filter = None
         self.discriminator = None
 
         if notification_name is not None:
@@ -107,6 +112,8 @@ class UpdateNotificationResponse(SdkResponse):
             self.project_id = project_id
         if create_time is not None:
             self.create_time = create_time
+        if filter is not None:
+            self.filter = filter
 
     @property
     def notification_name(self):
@@ -327,6 +334,26 @@ class UpdateNotificationResponse(SdkResponse):
         :type create_time: int
         """
         self._create_time = create_time
+
+    @property
+    def filter(self):
+        """Gets the filter of this UpdateNotificationResponse.
+
+
+        :return: The filter of this UpdateNotificationResponse.
+        :rtype: :class:`huaweicloudsdkcts.v3.Filter`
+        """
+        return self._filter
+
+    @filter.setter
+    def filter(self, filter):
+        """Sets the filter of this UpdateNotificationResponse.
+
+
+        :param filter: The filter of this UpdateNotificationResponse.
+        :type filter: :class:`huaweicloudsdkcts.v3.Filter`
+        """
+        self._filter = filter
 
     def to_dict(self):
         """Returns the model properties as a dict"""

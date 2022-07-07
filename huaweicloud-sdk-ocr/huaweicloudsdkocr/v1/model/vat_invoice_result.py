@@ -21,6 +21,7 @@ class VatInvoiceResult:
     sensitive_list = []
 
     openapi_types = {
+        'title': 'str',
         'type': 'str',
         'serial_number': 'str',
         'attribution': 'str',
@@ -56,6 +57,7 @@ class VatInvoiceResult:
     }
 
     attribute_map = {
+        'title': 'title',
         'type': 'type',
         'serial_number': 'serial_number',
         'attribution': 'attribution',
@@ -90,12 +92,14 @@ class VatInvoiceResult:
         'text_location': 'text_location'
     }
 
-    def __init__(self, type=None, serial_number=None, attribution=None, supervision_seal=None, code=None, print_code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, confidence=None, text_location=None):
+    def __init__(self, title=None, type=None, serial_number=None, attribution=None, supervision_seal=None, code=None, print_code=None, machine_number=None, print_number=None, check_code=None, number=None, issue_date=None, encryption_block=None, buyer_name=None, buyer_id=None, buyer_address=None, buyer_bank=None, seller_name=None, seller_id=None, seller_address=None, seller_bank=None, subtotal_amount=None, subtotal_tax=None, total=None, total_in_words=None, remarks=None, receiver=None, reviewer=None, issuer=None, seller_seal=None, item_list=None, confidence=None, text_location=None):
         """VatInvoiceResult
 
         The model defined in huaweicloud sdk
 
-        :param type: 增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - roll：增值税普通发票（卷票） 
+        :param title: 增值税发票标题 
+        :type title: str
+        :param type: 增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic：增值税电子专用发票  - toll：增值税电子普通发票（通行费）  - roll：增值税普通发票（卷票） 
         :type type: str
         :param serial_number: 发票联次。 当“advanced_mode”设置为“true”时才返回。 
         :type serial_number: str
@@ -105,7 +109,7 @@ class VatInvoiceResult:
         :type supervision_seal: list[str]
         :param code: 发票代码。 
         :type code: str
-        :param print_code: 打印发票代码。普通发票和专用发票在右上角，电子发票、通行费发票、卷票无此字段。 
+        :param print_code: 机打代码。当“advanced_mode”设置为“true”时才返回。 
         :type print_code: str
         :param machine_number: 机器编号。 当“advanced_mode”设置为“true”时才返回。 
         :type machine_number: str
@@ -163,6 +167,7 @@ class VatInvoiceResult:
         
         
 
+        self._title = None
         self._type = None
         self._serial_number = None
         self._attribution = None
@@ -197,6 +202,8 @@ class VatInvoiceResult:
         self._text_location = None
         self.discriminator = None
 
+        if title is not None:
+            self.title = title
         if type is not None:
             self.type = type
         if serial_number is not None:
@@ -263,10 +270,32 @@ class VatInvoiceResult:
             self.text_location = text_location
 
     @property
+    def title(self):
+        """Gets the title of this VatInvoiceResult.
+
+        增值税发票标题 
+
+        :return: The title of this VatInvoiceResult.
+        :rtype: str
+        """
+        return self._title
+
+    @title.setter
+    def title(self, title):
+        """Sets the title of this VatInvoiceResult.
+
+        增值税发票标题 
+
+        :param title: The title of this VatInvoiceResult.
+        :type title: str
+        """
+        self._title = title
+
+    @property
     def type(self):
         """Gets the type of this VatInvoiceResult.
 
-        增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - roll：增值税普通发票（卷票） 
+        增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic：增值税电子专用发票  - toll：增值税电子普通发票（通行费）  - roll：增值税普通发票（卷票） 
 
         :return: The type of this VatInvoiceResult.
         :rtype: str
@@ -277,7 +306,7 @@ class VatInvoiceResult:
     def type(self, type):
         """Sets the type of this VatInvoiceResult.
 
-        增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - roll：增值税普通发票（卷票） 
+        增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic：增值税电子专用发票  - toll：增值税电子普通发票（通行费）  - roll：增值税普通发票（卷票） 
 
         :param type: The type of this VatInvoiceResult.
         :type type: str
@@ -376,7 +405,7 @@ class VatInvoiceResult:
     def print_code(self):
         """Gets the print_code of this VatInvoiceResult.
 
-        打印发票代码。普通发票和专用发票在右上角，电子发票、通行费发票、卷票无此字段。 
+        机打代码。当“advanced_mode”设置为“true”时才返回。 
 
         :return: The print_code of this VatInvoiceResult.
         :rtype: str
@@ -387,7 +416,7 @@ class VatInvoiceResult:
     def print_code(self, print_code):
         """Sets the print_code of this VatInvoiceResult.
 
-        打印发票代码。普通发票和专用发票在右上角，电子发票、通行费发票、卷票无此字段。 
+        机打代码。当“advanced_mode”设置为“true”时才返回。 
 
         :param print_code: The print_code of this VatInvoiceResult.
         :type print_code: str

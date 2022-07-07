@@ -23,6 +23,7 @@ class PrepaidUpdateOption:
     openapi_types = {
         'auto_pay': 'bool',
         'change_mode': 'str',
+        'cloud_service_console_url': 'str',
         'period_num': 'int',
         'period_type': 'str'
     }
@@ -30,22 +31,25 @@ class PrepaidUpdateOption:
     attribute_map = {
         'auto_pay': 'auto_pay',
         'change_mode': 'change_mode',
+        'cloud_service_console_url': 'cloud_service_console_url',
         'period_num': 'period_num',
         'period_type': 'period_type'
     }
 
-    def __init__(self, auto_pay=None, change_mode=None, period_num=None, period_type=None):
+    def __init__(self, auto_pay=None, change_mode=None, cloud_service_console_url=None, period_num=None, period_type=None):
         """PrepaidUpdateOption
 
         The model defined in huaweicloud sdk
 
         :param auto_pay: 下单订购后，是否自动从客户的账户中支付； true：自动支付； false：不自动支付（默认）。 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
         :type auto_pay: bool
-        :param change_mode: 规格变更类型。取值： - immediate：即时变更（默认），规格变更立即生效。 - delay：续费变更，当前周期结束后变更为目标规格。
+        :param change_mode: 规格变更类型： immediate：即时变更，规格变更立即生效。（默认） delay：续费变更，当前周期结束后变更为目标规格。
         :type change_mode: str
-        :param period_num: 订购周期数，仅在change_mode为delay时有效。取值： - period_type为month时，为[1,9]，默认1。 - period_type为year时，为[1,3]，默认1。
+        :param cloud_service_console_url: 云服务引导URL。 订购订单支付完成后，支付成功的页面嵌入该url的内容。 console传，用户侧api文档不可见该字段。
+        :type cloud_service_console_url: str
+        :param period_num: 订购周期数（默认1），取值会随运营策略变化。（仅在change_mode为delay时生效） period_type为month时，为[1,9]， period_type为year时，为[1,3]
         :type period_num: int
-        :param period_type: 订购周期类型，仅在change_mode为delay时有效。取值： - month：月（默认）。 - year：年。
+        :param period_type: 订购周期类型，当前支持包月和包年： （仅在change_mode为delay时生效） month：月（默认）； year：年；
         :type period_type: str
         """
         
@@ -53,6 +57,7 @@ class PrepaidUpdateOption:
 
         self._auto_pay = None
         self._change_mode = None
+        self._cloud_service_console_url = None
         self._period_num = None
         self._period_type = None
         self.discriminator = None
@@ -61,6 +66,8 @@ class PrepaidUpdateOption:
             self.auto_pay = auto_pay
         if change_mode is not None:
             self.change_mode = change_mode
+        if cloud_service_console_url is not None:
+            self.cloud_service_console_url = cloud_service_console_url
         if period_num is not None:
             self.period_num = period_num
         if period_type is not None:
@@ -92,7 +99,7 @@ class PrepaidUpdateOption:
     def change_mode(self):
         """Gets the change_mode of this PrepaidUpdateOption.
 
-        规格变更类型。取值： - immediate：即时变更（默认），规格变更立即生效。 - delay：续费变更，当前周期结束后变更为目标规格。
+        规格变更类型： immediate：即时变更，规格变更立即生效。（默认） delay：续费变更，当前周期结束后变更为目标规格。
 
         :return: The change_mode of this PrepaidUpdateOption.
         :rtype: str
@@ -103,7 +110,7 @@ class PrepaidUpdateOption:
     def change_mode(self, change_mode):
         """Sets the change_mode of this PrepaidUpdateOption.
 
-        规格变更类型。取值： - immediate：即时变更（默认），规格变更立即生效。 - delay：续费变更，当前周期结束后变更为目标规格。
+        规格变更类型： immediate：即时变更，规格变更立即生效。（默认） delay：续费变更，当前周期结束后变更为目标规格。
 
         :param change_mode: The change_mode of this PrepaidUpdateOption.
         :type change_mode: str
@@ -111,10 +118,32 @@ class PrepaidUpdateOption:
         self._change_mode = change_mode
 
     @property
+    def cloud_service_console_url(self):
+        """Gets the cloud_service_console_url of this PrepaidUpdateOption.
+
+        云服务引导URL。 订购订单支付完成后，支付成功的页面嵌入该url的内容。 console传，用户侧api文档不可见该字段。
+
+        :return: The cloud_service_console_url of this PrepaidUpdateOption.
+        :rtype: str
+        """
+        return self._cloud_service_console_url
+
+    @cloud_service_console_url.setter
+    def cloud_service_console_url(self, cloud_service_console_url):
+        """Sets the cloud_service_console_url of this PrepaidUpdateOption.
+
+        云服务引导URL。 订购订单支付完成后，支付成功的页面嵌入该url的内容。 console传，用户侧api文档不可见该字段。
+
+        :param cloud_service_console_url: The cloud_service_console_url of this PrepaidUpdateOption.
+        :type cloud_service_console_url: str
+        """
+        self._cloud_service_console_url = cloud_service_console_url
+
+    @property
     def period_num(self):
         """Gets the period_num of this PrepaidUpdateOption.
 
-        订购周期数，仅在change_mode为delay时有效。取值： - period_type为month时，为[1,9]，默认1。 - period_type为year时，为[1,3]，默认1。
+        订购周期数（默认1），取值会随运营策略变化。（仅在change_mode为delay时生效） period_type为month时，为[1,9]， period_type为year时，为[1,3]
 
         :return: The period_num of this PrepaidUpdateOption.
         :rtype: int
@@ -125,7 +154,7 @@ class PrepaidUpdateOption:
     def period_num(self, period_num):
         """Sets the period_num of this PrepaidUpdateOption.
 
-        订购周期数，仅在change_mode为delay时有效。取值： - period_type为month时，为[1,9]，默认1。 - period_type为year时，为[1,3]，默认1。
+        订购周期数（默认1），取值会随运营策略变化。（仅在change_mode为delay时生效） period_type为month时，为[1,9]， period_type为year时，为[1,3]
 
         :param period_num: The period_num of this PrepaidUpdateOption.
         :type period_num: int
@@ -136,7 +165,7 @@ class PrepaidUpdateOption:
     def period_type(self):
         """Gets the period_type of this PrepaidUpdateOption.
 
-        订购周期类型，仅在change_mode为delay时有效。取值： - month：月（默认）。 - year：年。
+        订购周期类型，当前支持包月和包年： （仅在change_mode为delay时生效） month：月（默认）； year：年；
 
         :return: The period_type of this PrepaidUpdateOption.
         :rtype: str
@@ -147,7 +176,7 @@ class PrepaidUpdateOption:
     def period_type(self, period_type):
         """Sets the period_type of this PrepaidUpdateOption.
 
-        订购周期类型，仅在change_mode为delay时有效。取值： - month：月（默认）。 - year：年。
+        订购周期类型，当前支持包月和包年： （仅在change_mode为delay时生效） month：月（默认）； year：年；
 
         :param period_type: The period_type of this PrepaidUpdateOption.
         :type period_type: str

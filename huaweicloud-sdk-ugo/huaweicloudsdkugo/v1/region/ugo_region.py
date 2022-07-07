@@ -12,8 +12,11 @@ class UgoRegion:
 
     CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://ugo.cn-south-1.myhuaweicloud.com")
 
+    AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://ugo.ap-southeast-3.myhuaweicloud.com")
+
     static_fields = {
         "cn-south-1": CN_SOUTH_1,
+        "ap-southeast-3": AP_SOUTHEAST_3,
     }
 
     @classmethod

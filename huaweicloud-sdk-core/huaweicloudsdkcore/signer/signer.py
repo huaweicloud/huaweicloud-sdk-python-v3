@@ -185,7 +185,7 @@ class Signer(object):
         for key in request.header_params:
             key_encoded = key.lower()
             value = request.header_params[key]
-            value_encoded = value.strip()
+            value_encoded = str(value).strip()
             __headers[key_encoded] = value_encoded
             if six.PY3:
                 request.header_params[key] = value_encoded.encode(cls.EncodeUtf8).decode('iso-8859-1')

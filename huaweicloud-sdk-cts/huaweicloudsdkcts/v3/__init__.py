@@ -19,6 +19,7 @@ from huaweicloudsdkcts.v3.model.delete_notification_request import DeleteNotific
 from huaweicloudsdkcts.v3.model.delete_notification_response import DeleteNotificationResponse
 from huaweicloudsdkcts.v3.model.delete_tracker_request import DeleteTrackerRequest
 from huaweicloudsdkcts.v3.model.delete_tracker_response import DeleteTrackerResponse
+from huaweicloudsdkcts.v3.model.filter import Filter
 from huaweicloudsdkcts.v3.model.list_notifications_request import ListNotificationsRequest
 from huaweicloudsdkcts.v3.model.list_notifications_response import ListNotificationsResponse
 from huaweicloudsdkcts.v3.model.list_quotas_request import ListQuotasRequest

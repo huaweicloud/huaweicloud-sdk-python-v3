@@ -32,9 +32,7 @@ class CertificateInfo:
         'created_at': 'str',
         'updated_at': 'str',
         'expire_time': 'str',
-        'project_id': 'str',
-        'enc_certificate': 'str',
-        'enc_private_key': 'str'
+        'project_id': 'str'
     }
 
     attribute_map = {
@@ -49,12 +47,10 @@ class CertificateInfo:
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'expire_time': 'expire_time',
-        'project_id': 'project_id',
-        'enc_certificate': 'enc_certificate',
-        'enc_private_key': 'enc_private_key'
+        'project_id': 'project_id'
     }
 
-    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, id=None, name=None, private_key=None, type=None, created_at=None, updated_at=None, expire_time=None, project_id=None, enc_certificate=None, enc_private_key=None):
+    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, id=None, name=None, private_key=None, type=None, created_at=None, updated_at=None, expire_time=None, project_id=None):
         """CertificateInfo
 
         The model defined in huaweicloud sdk
@@ -65,7 +61,7 @@ class CertificateInfo:
         :type certificate: str
         :param description: 证书的描述。
         :type description: str
-        :param domain: 服务器证书所签域名。该字段仅type为server时有效。 总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分割，不超过30个域名。 普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com； 泛域名：在普通域名的基础上仅允许首字母为\&quot;*\&quot;。例：*.test.com
+        :param domain: 服务器证书所签域名。该字段仅type为server时有效。   总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分割，不超过30个域名。   普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com；   泛域名：在普通域名的基础上仅允许首字母为\&quot;*\&quot;。例：*.test.com
         :type domain: str
         :param id: 证书ID。
         :type id: str
@@ -73,7 +69,7 @@ class CertificateInfo:
         :type name: str
         :param private_key: 服务器证书的私钥。PEM编码格式。 当type为client时，该参数被忽略，不影响证书的创建和使用。且若不符合格式，不报错但会被设置为空。 当type为server时，该字段必须符合格式要求，且私钥必须是有效的。
         :type private_key: str
-        :param type: 证书的类型。分为服务器证书(server)和CA证书(client)。默认值：server。
+        :param type: SSL证书的类型。分为服务器证书(server)、CA证书(client)。默认值：server。
         :type type: str
         :param created_at: 证书创建时间。
         :type created_at: str
@@ -83,10 +79,6 @@ class CertificateInfo:
         :type expire_time: str
         :param project_id: 证书所在项目ID。
         :type project_id: str
-        :param enc_certificate: HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
-        :type enc_certificate: str
-        :param enc_private_key: HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
-        :type enc_private_key: str
         """
         
         
@@ -103,8 +95,6 @@ class CertificateInfo:
         self._updated_at = None
         self._expire_time = None
         self._project_id = None
-        self._enc_certificate = None
-        self._enc_private_key = None
         self.discriminator = None
 
         self.admin_state_up = admin_state_up
@@ -119,10 +109,6 @@ class CertificateInfo:
         self.updated_at = updated_at
         self.expire_time = expire_time
         self.project_id = project_id
-        if enc_certificate is not None:
-            self.enc_certificate = enc_certificate
-        if enc_private_key is not None:
-            self.enc_private_key = enc_private_key
 
     @property
     def admin_state_up(self):
@@ -194,7 +180,7 @@ class CertificateInfo:
     def domain(self):
         """Gets the domain of this CertificateInfo.
 
-        服务器证书所签域名。该字段仅type为server时有效。 总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过30个域名。 普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com； 泛域名：在普通域名的基础上仅允许首字母为\"*\"。例：*.test.com
+        服务器证书所签域名。该字段仅type为server时有效。   总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过30个域名。   普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；   泛域名：在普通域名的基础上仅允许首字母为\"*\"。例：*.test.com
 
         :return: The domain of this CertificateInfo.
         :rtype: str
@@ -205,7 +191,7 @@ class CertificateInfo:
     def domain(self, domain):
         """Sets the domain of this CertificateInfo.
 
-        服务器证书所签域名。该字段仅type为server时有效。 总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过30个域名。 普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com； 泛域名：在普通域名的基础上仅允许首字母为\"*\"。例：*.test.com
+        服务器证书所签域名。该字段仅type为server时有效。   总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\",\"分割，不超过30个域名。   普通域名：由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。例：www.test.com；   泛域名：在普通域名的基础上仅允许首字母为\"*\"。例：*.test.com
 
         :param domain: The domain of this CertificateInfo.
         :type domain: str
@@ -282,7 +268,7 @@ class CertificateInfo:
     def type(self):
         """Gets the type of this CertificateInfo.
 
-        证书的类型。分为服务器证书(server)和CA证书(client)。默认值：server。
+        SSL证书的类型。分为服务器证书(server)、CA证书(client)。默认值：server。
 
         :return: The type of this CertificateInfo.
         :rtype: str
@@ -293,7 +279,7 @@ class CertificateInfo:
     def type(self, type):
         """Sets the type of this CertificateInfo.
 
-        证书的类型。分为服务器证书(server)和CA证书(client)。默认值：server。
+        SSL证书的类型。分为服务器证书(server)、CA证书(client)。默认值：server。
 
         :param type: The type of this CertificateInfo.
         :type type: str
@@ -387,50 +373,6 @@ class CertificateInfo:
         :type project_id: str
         """
         self._project_id = project_id
-
-    @property
-    def enc_certificate(self):
-        """Gets the enc_certificate of this CertificateInfo.
-
-        HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
-
-        :return: The enc_certificate of this CertificateInfo.
-        :rtype: str
-        """
-        return self._enc_certificate
-
-    @enc_certificate.setter
-    def enc_certificate(self, enc_certificate):
-        """Sets the enc_certificate of this CertificateInfo.
-
-        HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
-
-        :param enc_certificate: The enc_certificate of this CertificateInfo.
-        :type enc_certificate: str
-        """
-        self._enc_certificate = enc_certificate
-
-    @property
-    def enc_private_key(self):
-        """Gets the enc_private_key of this CertificateInfo.
-
-        HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
-
-        :return: The enc_private_key of this CertificateInfo.
-        :rtype: str
-        """
-        return self._enc_private_key
-
-    @enc_private_key.setter
-    def enc_private_key(self, enc_private_key):
-        """Sets the enc_private_key of this CertificateInfo.
-
-        HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
-
-        :param enc_private_key: The enc_private_key of this CertificateInfo.
-        :type enc_private_key: str
-        """
-        self._enc_private_key = enc_private_key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

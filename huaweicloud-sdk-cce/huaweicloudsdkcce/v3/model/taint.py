@@ -52,12 +52,10 @@ class Taint:
         self._effect = None
         self.discriminator = None
 
-        if key is not None:
-            self.key = key
+        self.key = key
         if value is not None:
             self.value = value
-        if effect is not None:
-            self.effect = effect
+        self.effect = effect
 
     @property
     def key(self):

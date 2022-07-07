@@ -63,11 +63,11 @@ class CreateHealthMonitorOption:
         :type admin_state_up: bool
         :param delay: 健康检查间隔。取值：1-50s。
         :type delay: int
-        :param domain_name: 发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、&#39;-&#39;、&#39;.&#39;。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明： - 仅当type为HTTP时生效。
+        :param domain_name: 发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
         :type domain_name: str
-        :param expected_codes: 期望响应状态码。支持多种取值格式： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
+        :param expected_codes: 期望响应状态码。取值：   - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。    默认值：200。   仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
         :type expected_codes: str
-        :param http_method: HTTP请求方法，取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。 使用说明：  - 仅当type为HTTP时生效。 不支持该字段，请勿使用。
+        :param http_method: HTTP请求方法，取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。   使用说明：当type为HTTP/HTTPS时生效。   不支持该字段，请勿使用。
         :type http_method: str
         :param max_retries: 健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。
         :type max_retries: int
@@ -83,9 +83,9 @@ class CreateHealthMonitorOption:
         :type project_id: str
         :param timeout: 一次健康检查请求的超时时间。  建议该值小于delay的值。
         :type timeout: int
-        :param type: 健康检查请求协议。 取值：TCP、UDP_CONNECT、HTTP、HTTPS。 使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS。
+        :param type: 健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS。  使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS。
         :type type: str
-        :param url_path: 健康检查请求的请求路径。以\&quot;/\&quot;开头，默认为\&quot;/\&quot;。  使用说明： - 仅当type为HTTP时生效。
+        :param url_path: 健康检查请求的请求路径。以\&quot;/\&quot;开头，默认为\&quot;/\&quot;。  使用说明：当type为HTTP/HTTPS时生效。
         :type url_path: str
         """
         
@@ -179,7 +179,7 @@ class CreateHealthMonitorOption:
     def domain_name(self):
         """Gets the domain_name of this CreateHealthMonitorOption.
 
-        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、'-'、'.'。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明： - 仅当type为HTTP时生效。
+        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
 
         :return: The domain_name of this CreateHealthMonitorOption.
         :rtype: str
@@ -190,7 +190,7 @@ class CreateHealthMonitorOption:
     def domain_name(self, domain_name):
         """Sets the domain_name of this CreateHealthMonitorOption.
 
-        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、'-'、'.'。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明： - 仅当type为HTTP时生效。
+        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
 
         :param domain_name: The domain_name of this CreateHealthMonitorOption.
         :type domain_name: str
@@ -201,7 +201,7 @@ class CreateHealthMonitorOption:
     def expected_codes(self):
         """Gets the expected_codes of this CreateHealthMonitorOption.
 
-        期望响应状态码。支持多种取值格式： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
+        期望响应状态码。取值：   - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。    默认值：200。   仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
 
         :return: The expected_codes of this CreateHealthMonitorOption.
         :rtype: str
@@ -212,7 +212,7 @@ class CreateHealthMonitorOption:
     def expected_codes(self, expected_codes):
         """Sets the expected_codes of this CreateHealthMonitorOption.
 
-        期望响应状态码。支持多种取值格式： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
+        期望响应状态码。取值：   - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。    默认值：200。   仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
 
         :param expected_codes: The expected_codes of this CreateHealthMonitorOption.
         :type expected_codes: str
@@ -223,7 +223,7 @@ class CreateHealthMonitorOption:
     def http_method(self):
         """Gets the http_method of this CreateHealthMonitorOption.
 
-        HTTP请求方法，取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。 使用说明：  - 仅当type为HTTP时生效。 不支持该字段，请勿使用。
+        HTTP请求方法，取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。   使用说明：当type为HTTP/HTTPS时生效。   不支持该字段，请勿使用。
 
         :return: The http_method of this CreateHealthMonitorOption.
         :rtype: str
@@ -234,7 +234,7 @@ class CreateHealthMonitorOption:
     def http_method(self, http_method):
         """Sets the http_method of this CreateHealthMonitorOption.
 
-        HTTP请求方法，取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。 使用说明：  - 仅当type为HTTP时生效。 不支持该字段，请勿使用。
+        HTTP请求方法，取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。   使用说明：当type为HTTP/HTTPS时生效。   不支持该字段，请勿使用。
 
         :param http_method: The http_method of this CreateHealthMonitorOption.
         :type http_method: str
@@ -399,7 +399,7 @@ class CreateHealthMonitorOption:
     def type(self):
         """Gets the type of this CreateHealthMonitorOption.
 
-        健康检查请求协议。 取值：TCP、UDP_CONNECT、HTTP、HTTPS。 使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS。
+        健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS。  使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS。
 
         :return: The type of this CreateHealthMonitorOption.
         :rtype: str
@@ -410,7 +410,7 @@ class CreateHealthMonitorOption:
     def type(self, type):
         """Sets the type of this CreateHealthMonitorOption.
 
-        健康检查请求协议。 取值：TCP、UDP_CONNECT、HTTP、HTTPS。 使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS。
+        健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS。  使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS。
 
         :param type: The type of this CreateHealthMonitorOption.
         :type type: str
@@ -421,7 +421,7 @@ class CreateHealthMonitorOption:
     def url_path(self):
         """Gets the url_path of this CreateHealthMonitorOption.
 
-        健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  使用说明： - 仅当type为HTTP时生效。
+        健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  使用说明：当type为HTTP/HTTPS时生效。
 
         :return: The url_path of this CreateHealthMonitorOption.
         :rtype: str
@@ -432,7 +432,7 @@ class CreateHealthMonitorOption:
     def url_path(self, url_path):
         """Sets the url_path of this CreateHealthMonitorOption.
 
-        健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  使用说明： - 仅当type为HTTP时生效。
+        健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  使用说明：当type为HTTP/HTTPS时生效。
 
         :param url_path: The url_path of this CreateHealthMonitorOption.
         :type url_path: str

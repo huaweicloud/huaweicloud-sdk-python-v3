@@ -37,7 +37,7 @@ class PublicKibanaRespBody:
 
         The model defined in huaweicloud sdk
 
-        :param eip_size: 带宽大小。
+        :param eip_size: 带宽大小。单位：Mbit/s
         :type eip_size: int
         :param elb_white_list: 
         :type elb_white_list: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
@@ -63,7 +63,7 @@ class PublicKibanaRespBody:
     def eip_size(self):
         """Gets the eip_size of this PublicKibanaRespBody.
 
-        带宽大小。
+        带宽大小。单位：Mbit/s
 
         :return: The eip_size of this PublicKibanaRespBody.
         :rtype: int
@@ -74,7 +74,7 @@ class PublicKibanaRespBody:
     def eip_size(self, eip_size):
         """Sets the eip_size of this PublicKibanaRespBody.
 
-        带宽大小。
+        带宽大小。单位：Mbit/s
 
         :param eip_size: The eip_size of this PublicKibanaRespBody.
         :type eip_size: int

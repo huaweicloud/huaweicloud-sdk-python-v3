@@ -33,7 +33,7 @@ class StopVpecpResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param action: 操作行为：已关闭终端节点。
+        :param action: 操作行为。固定为：deleteVpcepservice，表示已关闭终端节点。
         :type action: str
         """
         
@@ -49,7 +49,7 @@ class StopVpecpResponse(SdkResponse):
     def action(self):
         """Gets the action of this StopVpecpResponse.
 
-        操作行为：已关闭终端节点。
+        操作行为。固定为：deleteVpcepservice，表示已关闭终端节点。
 
         :return: The action of this StopVpecpResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class StopVpecpResponse(SdkResponse):
     def action(self, action):
         """Sets the action of this StopVpecpResponse.
 
-        操作行为：已关闭终端节点。
+        操作行为。固定为：deleteVpcepservice，表示已关闭终端节点。
 
         :param action: The action of this StopVpecpResponse.
         :type action: str

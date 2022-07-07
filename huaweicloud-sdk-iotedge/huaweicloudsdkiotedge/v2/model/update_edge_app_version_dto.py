@@ -23,9 +23,11 @@ class UpdateEdgeAppVersionDTO:
     openapi_types = {
         'description': 'str',
         'deploy_type': 'str',
+        'deploy_multi_instance': 'bool',
         'container_settings': 'ContainerSettingsDTO',
         'liveness_probe': 'ProbeDTO',
         'readiness_probe': 'ProbeDTO',
+        'sdk_version': 'str',
         'arch': 'object',
         'command': 'object',
         'args': 'object',
@@ -37,9 +39,11 @@ class UpdateEdgeAppVersionDTO:
     attribute_map = {
         'description': 'description',
         'deploy_type': 'deploy_type',
+        'deploy_multi_instance': 'deploy_multi_instance',
         'container_settings': 'container_settings',
         'liveness_probe': 'liveness_probe',
         'readiness_probe': 'readiness_probe',
+        'sdk_version': 'sdk_version',
         'arch': 'arch',
         'command': 'command',
         'args': 'args',
@@ -48,7 +52,7 @@ class UpdateEdgeAppVersionDTO:
         'services': 'services'
     }
 
-    def __init__(self, description=None, deploy_type=None, container_settings=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, outputs=None, inputs=None, services=None):
+    def __init__(self, description=None, deploy_type=None, deploy_multi_instance=None, container_settings=None, liveness_probe=None, readiness_probe=None, sdk_version=None, arch=None, command=None, args=None, outputs=None, inputs=None, services=None):
         """UpdateEdgeAppVersionDTO
 
         The model defined in huaweicloud sdk
@@ -57,12 +61,16 @@ class UpdateEdgeAppVersionDTO:
         :type description: str
         :param deploy_type: 部署类型docker|process
         :type deploy_type: str
+        :param deploy_multi_instance: 是否允许部署多实例
+        :type deploy_multi_instance: bool
         :param container_settings: 
         :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
         :param liveness_probe: 
         :type liveness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         :param readiness_probe: 
         :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
+        :param sdk_version: 应用集成的边缘升得快版本
+        :type sdk_version: str
         :param arch: 架构
         :type arch: object
         :param command: 启动命令
@@ -81,9 +89,11 @@ class UpdateEdgeAppVersionDTO:
 
         self._description = None
         self._deploy_type = None
+        self._deploy_multi_instance = None
         self._container_settings = None
         self._liveness_probe = None
         self._readiness_probe = None
+        self._sdk_version = None
         self._arch = None
         self._command = None
         self._args = None
@@ -96,12 +106,18 @@ class UpdateEdgeAppVersionDTO:
             self.description = description
         if deploy_type is not None:
             self.deploy_type = deploy_type
-        self.container_settings = container_settings
+        if deploy_multi_instance is not None:
+            self.deploy_multi_instance = deploy_multi_instance
+        if container_settings is not None:
+            self.container_settings = container_settings
         if liveness_probe is not None:
             self.liveness_probe = liveness_probe
         if readiness_probe is not None:
             self.readiness_probe = readiness_probe
-        self.arch = arch
+        if sdk_version is not None:
+            self.sdk_version = sdk_version
+        if arch is not None:
+            self.arch = arch
         if command is not None:
             self.command = command
         if args is not None:
@@ -156,6 +172,28 @@ class UpdateEdgeAppVersionDTO:
         :type deploy_type: str
         """
         self._deploy_type = deploy_type
+
+    @property
+    def deploy_multi_instance(self):
+        """Gets the deploy_multi_instance of this UpdateEdgeAppVersionDTO.
+
+        是否允许部署多实例
+
+        :return: The deploy_multi_instance of this UpdateEdgeAppVersionDTO.
+        :rtype: bool
+        """
+        return self._deploy_multi_instance
+
+    @deploy_multi_instance.setter
+    def deploy_multi_instance(self, deploy_multi_instance):
+        """Sets the deploy_multi_instance of this UpdateEdgeAppVersionDTO.
+
+        是否允许部署多实例
+
+        :param deploy_multi_instance: The deploy_multi_instance of this UpdateEdgeAppVersionDTO.
+        :type deploy_multi_instance: bool
+        """
+        self._deploy_multi_instance = deploy_multi_instance
 
     @property
     def container_settings(self):
@@ -216,6 +254,28 @@ class UpdateEdgeAppVersionDTO:
         :type readiness_probe: :class:`huaweicloudsdkiotedge.v2.ProbeDTO`
         """
         self._readiness_probe = readiness_probe
+
+    @property
+    def sdk_version(self):
+        """Gets the sdk_version of this UpdateEdgeAppVersionDTO.
+
+        应用集成的边缘升得快版本
+
+        :return: The sdk_version of this UpdateEdgeAppVersionDTO.
+        :rtype: str
+        """
+        return self._sdk_version
+
+    @sdk_version.setter
+    def sdk_version(self, sdk_version):
+        """Sets the sdk_version of this UpdateEdgeAppVersionDTO.
+
+        应用集成的边缘升得快版本
+
+        :param sdk_version: The sdk_version of this UpdateEdgeAppVersionDTO.
+        :type sdk_version: str
+        """
+        self._sdk_version = sdk_version
 
     @property
     def arch(self):

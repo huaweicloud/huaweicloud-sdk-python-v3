@@ -25,6 +25,7 @@ class NodeStatus:
         'job_id': 'str',
         'server_id': 'str',
         'private_ip': 'str',
+        'private_i_pv6_ip': 'str',
         'public_ip': 'str',
         'delete_status': 'DeleteStatus'
     }
@@ -34,11 +35,12 @@ class NodeStatus:
         'job_id': 'jobID',
         'server_id': 'serverId',
         'private_ip': 'privateIP',
+        'private_i_pv6_ip': 'privateIPv6IP',
         'public_ip': 'publicIP',
         'delete_status': 'deleteStatus'
     }
 
-    def __init__(self, phase=None, job_id=None, server_id=None, private_ip=None, public_ip=None, delete_status=None):
+    def __init__(self, phase=None, job_id=None, server_id=None, private_ip=None, private_i_pv6_ip=None, public_ip=None, delete_status=None):
         """NodeStatus
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class NodeStatus:
         :type server_id: str
         :param private_ip: 节点主网卡私有网段IP地址。
         :type private_ip: str
+        :param private_i_pv6_ip: 节点主网卡私有网段IPv6地址。
+        :type private_i_pv6_ip: str
         :param public_ip: 节点弹性公网IP地址。如果ECS的数据没有实时同步，可在界面上通过“同步节点信息”手动进行更新。
         :type public_ip: str
         :param delete_status: 
@@ -63,6 +67,7 @@ class NodeStatus:
         self._job_id = None
         self._server_id = None
         self._private_ip = None
+        self._private_i_pv6_ip = None
         self._public_ip = None
         self._delete_status = None
         self.discriminator = None
@@ -75,6 +80,8 @@ class NodeStatus:
             self.server_id = server_id
         if private_ip is not None:
             self.private_ip = private_ip
+        if private_i_pv6_ip is not None:
+            self.private_i_pv6_ip = private_i_pv6_ip
         if public_ip is not None:
             self.public_ip = public_ip
         if delete_status is not None:
@@ -167,6 +174,28 @@ class NodeStatus:
         :type private_ip: str
         """
         self._private_ip = private_ip
+
+    @property
+    def private_i_pv6_ip(self):
+        """Gets the private_i_pv6_ip of this NodeStatus.
+
+        节点主网卡私有网段IPv6地址。
+
+        :return: The private_i_pv6_ip of this NodeStatus.
+        :rtype: str
+        """
+        return self._private_i_pv6_ip
+
+    @private_i_pv6_ip.setter
+    def private_i_pv6_ip(self, private_i_pv6_ip):
+        """Sets the private_i_pv6_ip of this NodeStatus.
+
+        节点主网卡私有网段IPv6地址。
+
+        :param private_i_pv6_ip: The private_i_pv6_ip of this NodeStatus.
+        :type private_i_pv6_ip: str
+        """
+        self._private_i_pv6_ip = private_i_pv6_ip
 
     @property
     def public_ip(self):

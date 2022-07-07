@@ -41,15 +41,15 @@ class CountPreoccupyIpNumRequest:
 
         The model defined in huaweicloud sdk
 
-        :param l7_flavor_id: 负载均衡器七层规格的ID。传入该字段表示计算创建该规格的LB，或变更LB的原七层规格到该规格所需要的预占IP。  适用场景：创建LB，变更LB规格。
+        :param l7_flavor_id: 负载均衡器七层规格的ID。传入该字段表示计算创建该规格的LB，或变更LB的原七层规格到该规格所需要的预占IP。  适用场景：创建负LB，变更LB规格。
         :type l7_flavor_id: str
         :param ip_target_enable: 是否开启跨VPC转发。  取值true表示计算创建或变更为开启跨VPC转发的LB的预占IP。  取值false表示计算创建或变更为不开启跨VPC转发的LB的预占IP。不传等价false。  适用场景：创建LB，变更LB规格。
         :type ip_target_enable: bool
-        :param ip_version: 负载均衡器IP地址类型，取值4，6 。  取值4表示计算创建支持IPv4地址的LB的预占IP。  取值6表示计算创建支持IPv6地址的LB的预占IP。  适用场景：创建LB。   [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        :param ip_version: 负载均衡器IP地址类型，取值4，6 。  取值4表示计算创建支持IPv4地址的LB的预占IP。  取值6表示计算创建支持IPv6地址的LB的预占IP。  适用场景：创建LB。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
         :type ip_version: int
         :param loadbalancer_id: 负载均衡器ID。计算LB规格变更或创建LB中的第一个七层监听器的预占IP。  适用场景：变更LB规格，创建LB中的第一个七层监听器。
         :type loadbalancer_id: str
-        :param availability_zone_id: 计算创建AZ列表为availability_zone_id的负载局衡器实例的预占IP。  适用场景：创建LB。  使用说明： - 传入loadbalancer_id时，该参数无效。
+        :param availability_zone_id: 计算创建AZ列表为availability_zone_id的负载局衡器实例的预占IP。  适用场景：创建LB。  使用说明：传入loadbalancer_id时，该参数无效。
         :type availability_zone_id: list[str]
         """
         
@@ -77,7 +77,7 @@ class CountPreoccupyIpNumRequest:
     def l7_flavor_id(self):
         """Gets the l7_flavor_id of this CountPreoccupyIpNumRequest.
 
-        负载均衡器七层规格的ID。传入该字段表示计算创建该规格的LB，或变更LB的原七层规格到该规格所需要的预占IP。  适用场景：创建LB，变更LB规格。
+        负载均衡器七层规格的ID。传入该字段表示计算创建该规格的LB，或变更LB的原七层规格到该规格所需要的预占IP。  适用场景：创建负LB，变更LB规格。
 
         :return: The l7_flavor_id of this CountPreoccupyIpNumRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class CountPreoccupyIpNumRequest:
     def l7_flavor_id(self, l7_flavor_id):
         """Sets the l7_flavor_id of this CountPreoccupyIpNumRequest.
 
-        负载均衡器七层规格的ID。传入该字段表示计算创建该规格的LB，或变更LB的原七层规格到该规格所需要的预占IP。  适用场景：创建LB，变更LB规格。
+        负载均衡器七层规格的ID。传入该字段表示计算创建该规格的LB，或变更LB的原七层规格到该规格所需要的预占IP。  适用场景：创建负LB，变更LB规格。
 
         :param l7_flavor_id: The l7_flavor_id of this CountPreoccupyIpNumRequest.
         :type l7_flavor_id: str
@@ -121,7 +121,7 @@ class CountPreoccupyIpNumRequest:
     def ip_version(self):
         """Gets the ip_version of this CountPreoccupyIpNumRequest.
 
-        负载均衡器IP地址类型，取值4，6 。  取值4表示计算创建支持IPv4地址的LB的预占IP。  取值6表示计算创建支持IPv6地址的LB的预占IP。  适用场景：创建LB。   [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        负载均衡器IP地址类型，取值4，6 。  取值4表示计算创建支持IPv4地址的LB的预占IP。  取值6表示计算创建支持IPv6地址的LB的预占IP。  适用场景：创建LB。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :return: The ip_version of this CountPreoccupyIpNumRequest.
         :rtype: int
@@ -132,7 +132,7 @@ class CountPreoccupyIpNumRequest:
     def ip_version(self, ip_version):
         """Sets the ip_version of this CountPreoccupyIpNumRequest.
 
-        负载均衡器IP地址类型，取值4，6 。  取值4表示计算创建支持IPv4地址的LB的预占IP。  取值6表示计算创建支持IPv6地址的LB的预占IP。  适用场景：创建LB。   [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        负载均衡器IP地址类型，取值4，6 。  取值4表示计算创建支持IPv4地址的LB的预占IP。  取值6表示计算创建支持IPv6地址的LB的预占IP。  适用场景：创建LB。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this CountPreoccupyIpNumRequest.
         :type ip_version: int
@@ -165,7 +165,7 @@ class CountPreoccupyIpNumRequest:
     def availability_zone_id(self):
         """Gets the availability_zone_id of this CountPreoccupyIpNumRequest.
 
-        计算创建AZ列表为availability_zone_id的负载局衡器实例的预占IP。  适用场景：创建LB。  使用说明： - 传入loadbalancer_id时，该参数无效。
+        计算创建AZ列表为availability_zone_id的负载局衡器实例的预占IP。  适用场景：创建LB。  使用说明：传入loadbalancer_id时，该参数无效。
 
         :return: The availability_zone_id of this CountPreoccupyIpNumRequest.
         :rtype: list[str]
@@ -176,7 +176,7 @@ class CountPreoccupyIpNumRequest:
     def availability_zone_id(self, availability_zone_id):
         """Sets the availability_zone_id of this CountPreoccupyIpNumRequest.
 
-        计算创建AZ列表为availability_zone_id的负载局衡器实例的预占IP。  适用场景：创建LB。  使用说明： - 传入loadbalancer_id时，该参数无效。
+        计算创建AZ列表为availability_zone_id的负载局衡器实例的预占IP。  适用场景：创建LB。  使用说明：传入loadbalancer_id时，该参数无效。
 
         :param availability_zone_id: The availability_zone_id of this CountPreoccupyIpNumRequest.
         :type availability_zone_id: list[str]

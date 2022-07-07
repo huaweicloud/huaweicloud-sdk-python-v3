@@ -33,7 +33,7 @@ class CreateInstallCmdResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param cmd: 标准版节点安装命令
+        :param cmd: 标准版节点安装/升级命令
         :type cmd: str
         """
         
@@ -49,7 +49,7 @@ class CreateInstallCmdResponse(SdkResponse):
     def cmd(self):
         """Gets the cmd of this CreateInstallCmdResponse.
 
-        标准版节点安装命令
+        标准版节点安装/升级命令
 
         :return: The cmd of this CreateInstallCmdResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class CreateInstallCmdResponse(SdkResponse):
     def cmd(self, cmd):
         """Sets the cmd of this CreateInstallCmdResponse.
 
-        标准版节点安装命令
+        标准版节点安装/升级命令
 
         :param cmd: The cmd of this CreateInstallCmdResponse.
         :type cmd: str

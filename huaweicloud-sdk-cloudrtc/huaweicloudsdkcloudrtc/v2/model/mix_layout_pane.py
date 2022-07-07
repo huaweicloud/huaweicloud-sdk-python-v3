@@ -29,7 +29,8 @@ class MixLayoutPane:
         'width': 'float',
         'height': 'float',
         'zorder': 'int',
-        'crop_mode': 'str'
+        'crop_mode': 'str',
+        'filling_policy': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class MixLayoutPane:
         'width': 'width',
         'height': 'height',
         'zorder': 'zorder',
-        'crop_mode': 'crop_mode'
+        'crop_mode': 'crop_mode',
+        'filling_policy': 'filling_policy'
     }
 
-    def __init__(self, id=None, user_id=None, video_type=None, x=None, y=None, width=None, height=None, zorder=None, crop_mode=None):
+    def __init__(self, id=None, user_id=None, video_type=None, x=None, y=None, width=None, height=None, zorder=None, crop_mode=None, filling_policy=None):
         """MixLayoutPane
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class MixLayoutPane:
         :type zorder: int
         :param crop_mode: 裁剪模式，自定义布局场景下填写本字段，支持两种模式：   - KEEP_RATIO_PADDING ：保持比例留边。   - KEEP_RATIO_CROP ：保持比例裁剪。 
         :type crop_mode: str
+        :param filling_policy: 填充策略，仅限屏幕共享模板(包括screen_share_right、screen_share_left)场景下填写本字段，支持两种模式：   - FIXED_USER ：固定用户填充。   - SHARED_SCREEN ：共享屏幕填充。 
+        :type filling_policy: str
         """
         
         
@@ -80,6 +84,7 @@ class MixLayoutPane:
         self._height = None
         self._zorder = None
         self._crop_mode = None
+        self._filling_policy = None
         self.discriminator = None
 
         if id is not None:
@@ -100,6 +105,8 @@ class MixLayoutPane:
             self.zorder = zorder
         if crop_mode is not None:
             self.crop_mode = crop_mode
+        if filling_policy is not None:
+            self.filling_policy = filling_policy
 
     @property
     def id(self):
@@ -298,6 +305,28 @@ class MixLayoutPane:
         :type crop_mode: str
         """
         self._crop_mode = crop_mode
+
+    @property
+    def filling_policy(self):
+        """Gets the filling_policy of this MixLayoutPane.
+
+        填充策略，仅限屏幕共享模板(包括screen_share_right、screen_share_left)场景下填写本字段，支持两种模式：   - FIXED_USER ：固定用户填充。   - SHARED_SCREEN ：共享屏幕填充。 
+
+        :return: The filling_policy of this MixLayoutPane.
+        :rtype: str
+        """
+        return self._filling_policy
+
+    @filling_policy.setter
+    def filling_policy(self, filling_policy):
+        """Sets the filling_policy of this MixLayoutPane.
+
+        填充策略，仅限屏幕共享模板(包括screen_share_right、screen_share_left)场景下填写本字段，支持两种模式：   - FIXED_USER ：固定用户填充。   - SHARED_SCREEN ：共享屏幕填充。 
+
+        :param filling_policy: The filling_policy of this MixLayoutPane.
+        :type filling_policy: str
+        """
+        self._filling_policy = filling_policy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

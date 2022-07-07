@@ -25,7 +25,7 @@ class SecurityPolicy:
         'project_id': 'str',
         'name': 'str',
         'description': 'str',
-        'listeners': 'ListenerRef',
+        'listeners': 'list[ListenerRef]',
         'protocols': 'list[str]',
         'ciphers': 'list[str]',
         'created_at': 'str',
@@ -57,8 +57,8 @@ class SecurityPolicy:
         :type name: str
         :param description: 自定义安全策略的描述。
         :type description: str
-        :param listeners: 
-        :type listeners: :class:`huaweicloudsdkelb.v3.ListenerRef`
+        :param listeners: 自定义安全策略关联的监听器。
+        :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
         :param protocols: 自定义安全策略的TLS协议列表。
         :type protocols: list[str]
         :param ciphers: 自定义安全策略的加密套件列表。
@@ -184,9 +184,10 @@ class SecurityPolicy:
     def listeners(self):
         """Gets the listeners of this SecurityPolicy.
 
+        自定义安全策略关联的监听器。
 
         :return: The listeners of this SecurityPolicy.
-        :rtype: :class:`huaweicloudsdkelb.v3.ListenerRef`
+        :rtype: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
         """
         return self._listeners
 
@@ -194,9 +195,10 @@ class SecurityPolicy:
     def listeners(self, listeners):
         """Sets the listeners of this SecurityPolicy.
 
+        自定义安全策略关联的监听器。
 
         :param listeners: The listeners of this SecurityPolicy.
-        :type listeners: :class:`huaweicloudsdkelb.v3.ListenerRef`
+        :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
         """
         self._listeners = listeners
 

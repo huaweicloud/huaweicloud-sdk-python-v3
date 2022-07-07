@@ -35,7 +35,7 @@ class StartKibanaPublicReqElbWhitelist:
 
         The model defined in huaweicloud sdk
 
-        :param enable_white_list: 开启白名单。
+        :param enable_white_list: 是否开启白名单。 - true: 开启白名单。 - false: 关闭白名单。
         :type enable_white_list: bool
         :param white_list: 白名单。
         :type white_list: str
@@ -54,7 +54,7 @@ class StartKibanaPublicReqElbWhitelist:
     def enable_white_list(self):
         """Gets the enable_white_list of this StartKibanaPublicReqElbWhitelist.
 
-        开启白名单。
+        是否开启白名单。 - true: 开启白名单。 - false: 关闭白名单。
 
         :return: The enable_white_list of this StartKibanaPublicReqElbWhitelist.
         :rtype: bool
@@ -65,7 +65,7 @@ class StartKibanaPublicReqElbWhitelist:
     def enable_white_list(self, enable_white_list):
         """Sets the enable_white_list of this StartKibanaPublicReqElbWhitelist.
 
-        开启白名单。
+        是否开启白名单。 - true: 开启白名单。 - false: 关闭白名单。
 
         :param enable_white_list: The enable_white_list of this StartKibanaPublicReqElbWhitelist.
         :type enable_white_list: bool

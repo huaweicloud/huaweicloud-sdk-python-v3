@@ -22,7 +22,7 @@ class BatchDeleteMembersRequest:
 
     openapi_types = {
         'pool_id': 'str',
-        'body': 'BatchDeleteMemberRequestBody'
+        'body': 'BatchDeleteMembersRequestBody'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class BatchDeleteMembersRequest:
         :param pool_id: 后端服务器组ID。
         :type pool_id: str
         :param body: Body of the BatchDeleteMembersRequest
-        :type body: :class:`huaweicloudsdkelb.v3.BatchDeleteMemberRequestBody`
+        :type body: :class:`huaweicloudsdkelb.v3.BatchDeleteMembersRequestBody`
         """
         
         
@@ -79,7 +79,7 @@ class BatchDeleteMembersRequest:
 
 
         :return: The body of this BatchDeleteMembersRequest.
-        :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteMemberRequestBody`
+        :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteMembersRequestBody`
         """
         return self._body
 
@@ -89,7 +89,7 @@ class BatchDeleteMembersRequest:
 
 
         :param body: The body of this BatchDeleteMembersRequest.
-        :type body: :class:`huaweicloudsdkelb.v3.BatchDeleteMemberRequestBody`
+        :type body: :class:`huaweicloudsdkelb.v3.BatchDeleteMembersRequestBody`
         """
         self._body = body
 

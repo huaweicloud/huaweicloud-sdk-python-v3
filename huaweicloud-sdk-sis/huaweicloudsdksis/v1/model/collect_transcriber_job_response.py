@@ -25,7 +25,8 @@ class CollectTranscriberJobResponse(SdkResponse):
         'create_time': 'str',
         'start_time': 'str',
         'finish_time': 'str',
-        'segments': 'list[Segment]'
+        'segments': 'list[Segment]',
+        'audio_duration': 'int'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class CollectTranscriberJobResponse(SdkResponse):
         'create_time': 'create_time',
         'start_time': 'start_time',
         'finish_time': 'finish_time',
-        'segments': 'segments'
+        'segments': 'segments',
+        'audio_duration': 'audio_duration'
     }
 
-    def __init__(self, status=None, create_time=None, start_time=None, finish_time=None, segments=None):
+    def __init__(self, status=None, create_time=None, start_time=None, finish_time=None, segments=None, audio_duration=None):
         """CollectTranscriberJobResponse
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class CollectTranscriberJobResponse(SdkResponse):
         :type finish_time: str
         :param segments: 转写结果, 多句结果的数组。 
         :type segments: list[:class:`huaweicloudsdksis.v1.Segment`]
+        :param audio_duration: 音频时长，单位ms
+        :type audio_duration: int
         """
         
         super(CollectTranscriberJobResponse, self).__init__()
@@ -60,6 +64,7 @@ class CollectTranscriberJobResponse(SdkResponse):
         self._start_time = None
         self._finish_time = None
         self._segments = None
+        self._audio_duration = None
         self.discriminator = None
 
         if status is not None:
@@ -72,6 +77,8 @@ class CollectTranscriberJobResponse(SdkResponse):
             self.finish_time = finish_time
         if segments is not None:
             self.segments = segments
+        if audio_duration is not None:
+            self.audio_duration = audio_duration
 
     @property
     def status(self):
@@ -182,6 +189,28 @@ class CollectTranscriberJobResponse(SdkResponse):
         :type segments: list[:class:`huaweicloudsdksis.v1.Segment`]
         """
         self._segments = segments
+
+    @property
+    def audio_duration(self):
+        """Gets the audio_duration of this CollectTranscriberJobResponse.
+
+        音频时长，单位ms
+
+        :return: The audio_duration of this CollectTranscriberJobResponse.
+        :rtype: int
+        """
+        return self._audio_duration
+
+    @audio_duration.setter
+    def audio_duration(self, audio_duration):
+        """Sets the audio_duration of this CollectTranscriberJobResponse.
+
+        音频时长，单位ms
+
+        :param audio_duration: The audio_duration of this CollectTranscriberJobResponse.
+        :type audio_duration: int
+        """
+        self._audio_duration = audio_duration
 
     def to_dict(self):
         """Returns the model properties as a dict"""

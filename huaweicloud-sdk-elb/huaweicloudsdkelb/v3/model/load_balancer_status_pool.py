@@ -53,7 +53,7 @@ class LoadBalancerStatusPool:
         :type members: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusMember`]
         :param id: 后端服务器组ID。
         :type id: str
-        :param operating_status: 后端服务器组的操作状态。取值： - ONLINE：创建时默认状态，表后端服务器组正常。  - DEGRADED：该后端服务器组下存在member为的operating_status&#x3D;OFFLINE。  - DISABLED：负载均衡器或后端服务器组的admin_state_up&#x3D;false。 使用说明：  - DEGRADED和DISABLED仅在当前接口返回，查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
+        :param operating_status: 后端服务器组的操作状态。取值：  - ONLINE：创建时默认状态，表后端服务器组正常。  - DEGRADED：该后端服务器组下存在member为的operating_status&#x3D;OFFLINE。  - DISABLED：负载均衡器或后端服务器组的admin_state_up&#x3D;false。   说明：  DEGRADED和DISABLED仅在当前接口返回，查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
         :type operating_status: str
         """
         
@@ -192,7 +192,7 @@ class LoadBalancerStatusPool:
     def operating_status(self):
         """Gets the operating_status of this LoadBalancerStatusPool.
 
-        后端服务器组的操作状态。取值： - ONLINE：创建时默认状态，表后端服务器组正常。  - DEGRADED：该后端服务器组下存在member为的operating_status=OFFLINE。  - DISABLED：负载均衡器或后端服务器组的admin_state_up=false。 使用说明：  - DEGRADED和DISABLED仅在当前接口返回，查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
+        后端服务器组的操作状态。取值：  - ONLINE：创建时默认状态，表后端服务器组正常。  - DEGRADED：该后端服务器组下存在member为的operating_status=OFFLINE。  - DISABLED：负载均衡器或后端服务器组的admin_state_up=false。   说明：  DEGRADED和DISABLED仅在当前接口返回，查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
 
         :return: The operating_status of this LoadBalancerStatusPool.
         :rtype: str
@@ -203,7 +203,7 @@ class LoadBalancerStatusPool:
     def operating_status(self, operating_status):
         """Sets the operating_status of this LoadBalancerStatusPool.
 
-        后端服务器组的操作状态。取值： - ONLINE：创建时默认状态，表后端服务器组正常。  - DEGRADED：该后端服务器组下存在member为的operating_status=OFFLINE。  - DISABLED：负载均衡器或后端服务器组的admin_state_up=false。 使用说明：  - DEGRADED和DISABLED仅在当前接口返回，查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
+        后端服务器组的操作状态。取值：  - ONLINE：创建时默认状态，表后端服务器组正常。  - DEGRADED：该后端服务器组下存在member为的operating_status=OFFLINE。  - DISABLED：负载均衡器或后端服务器组的admin_state_up=false。   说明：  DEGRADED和DISABLED仅在当前接口返回，查询后端服务器组详情等其他接口返回的operating_status字段不存在这两个状态值。
 
         :param operating_status: The operating_status of this LoadBalancerStatusPool.
         :type operating_status: str

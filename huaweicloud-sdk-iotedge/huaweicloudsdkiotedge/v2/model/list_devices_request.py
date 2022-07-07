@@ -43,7 +43,7 @@ class ListDevicesRequest:
 
         :param edge_node_id: 边缘节点ID
         :type edge_node_id: str
-        :param gateway_id: 父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表节点下的
+        :param gateway_id: 父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表查询网关直连设备
         :type gateway_id: str
         :param device_name: 设备名称
         :type device_name: str
@@ -98,7 +98,7 @@ class ListDevicesRequest:
     def gateway_id(self):
         """Gets the gateway_id of this ListDevicesRequest.
 
-        父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表节点下的
+        父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表查询网关直连设备
 
         :return: The gateway_id of this ListDevicesRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class ListDevicesRequest:
     def gateway_id(self, gateway_id):
         """Sets the gateway_id of this ListDevicesRequest.
 
-        父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表节点下的
+        父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表查询网关直连设备
 
         :param gateway_id: The gateway_id of this ListDevicesRequest.
         :type gateway_id: str

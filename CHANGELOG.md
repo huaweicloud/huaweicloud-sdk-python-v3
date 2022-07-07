@@ -1,3 +1,265 @@
+# 3.0.97 2022-07-07
+
+### HuaweiCloud SDK APM
+
+- _Features_
+  - Support the interfaces `SearchApplication`, `SaveMonitorItemConfig`, `ListEnvMonitorItem`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CCE
+
+- _Features_
+  - Support the interfaces `UpdateClusterEip`, `ShowClusterEndpoints`, `ShowVersion`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListNodes`:
+    - Add the response parameters `isStatic`, `privateIPv6IP`
+    - The response parameter `key`, `effect` changed to required
+  - Changes of the interface `CreateNode`:
+    - Add the request parameter `isStatic`
+    - The request parameter `key`, `effect` changed to required
+  - Changes of the interface `ShowNode`:
+    - Add the response parameters `isStatic`, `privateIPv6IP`
+    - The response parameter `key`, `effect` changed to required
+  - Changes of the interface `DeleteNode`:
+    - Add the response parameters `isStatic`, `privateIPv6IP`
+    - The response parameter `key`, `effect` changed to required
+  - Changes of the interface `UpdateNode`:
+    - Add the response parameters `isStatic`, `privateIPv6IP`
+    - The response parameter `key`, `effect` changed to required
+  - The request parameter `key`, `effect` changed to required of the interface `AddNode`
+  - The request parameter `key`, `effect` changed to required of the interface `ResetNode`
+  - Changes of the interface `ListNodePools`:
+    - Add the response parameter `isStatic`
+    - The response parameter `key`, `effect` changed to required
+  - Changes of the interface `CreateNodePool`:
+    - Add the request parameter `isStatic`
+    - The request parameter `key`, `effect` changed to required
+  - Changes of the interface `ShowNodePool`:
+    - Add the response parameter `isStatic`
+    - The response parameter `key`, `effect` changed to required
+  - Changes of the interface `DeleteNodePool`:
+    - Add the response parameter `isStatic`
+    - The response parameter `key`, `effect` changed to required
+  - Changes of the interface `UpdateNodePool`:
+    - Add the response parameter `isStatic`
+    - The request parameter `key`, `effect` changed to required
+    - The response parameter `key`, `effect` changed to required
+
+### HuaweiCloud SDK CloudRTC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `filling_policy` to the interface `CreateMixJob`
+  - Changes of the interface `UpdateMixJob`:
+    - Add the request parameter `filling_policy`
+    - Add the response parameter `filling_policy`
+  - Add the response parameter `filling_policy` to the interface `ShowMixJob`
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameter `CREATING` from the interface `ListClustersDetails`
+  - Remove the response parameter `CREATING` from the interface `ShowClusterDetail`
+  - Add the request parameter `unBindPublicReq` to the interface `UpdateUnbindPublic`
+  - Changes of the interface `ListYmlsJob`:
+    - Add the response parameter `configurations`
+    - Remove the response parameter `configList`
+  - Changes of the interface `ListYmls`:
+    - Add the response parameter `configurations`
+    - Remove the response parameter `configList`
+
+### HuaweiCloud SDK CTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `UpdateNotification`:
+    - Add the request parameter `filter`
+    - Add the response parameter `filter`
+  - Add the request parameter `filter` to the interface `CreateNotification`
+  - Add the response parameter `filter` to the interface `ListNotifications`
+
+### HuaweiCloud SDK ELB
+
+- _Features_
+  - Support the interfaces `ListMasterSlavePools`, `CreateMasterSlavePool`, `ShowMasterSlavePool`, `DeleteMasterSlavePool`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListSystemSecurityPolicies`:
+    - Modify the type `array` -> `string` of the response parameter `protocols`
+    - Modify the type `array` -> `string` of the response parameter `ciphers`
+  - Add the request parameter `X-Auth-Token` to the interface `ListQuotaDetails`
+  - Add the request parameter `public_border_group` to the interface `ListAvailabilityZones`
+  - Changes of the interface `CreateLoadBalancer`:
+    - Add the request parameters `id`, `global_eip_ids`
+    - Remove the request parameter `min_l4_flavor_id`
+    - The request parameter `X-Auth-Token` changed to required
+  - Changes of the interface `ListLoadBalancers`:
+    - Add the response parameters `global_eips`, `public_border_group`
+    - Remove the response parameter `min_l4_flavor_id`
+    - The request parameter `X-Auth-Token` changed to required
+  - Changes of the interface `UpdateLoadBalancer`:
+    - Add the request parameter `cloud_service_console_url`
+    - Add the response parameters `global_eips`, `public_border_group`
+    - Remove the request parameter `min_l4_flavor_id`
+    - Remove the response parameter `min_l4_flavor_id`
+  - Changes of the interface `ShowLoadBalancer`:
+    - Add the response parameters `global_eips`, `public_border_group`
+    - Remove the response parameter `min_l4_flavor_id`
+  - Add the request parameter `X-Auth-Token` to the interface `ChangeLoadbalancerChargeMode`
+  - Remove the request parameters `enc_certificate`, `enc_private_key` from the interface `CreateCertificate`
+  - Remove the response parameters `enc_certificate`, `enc_private_key` from the interface `ListCertificates`
+  - Changes of the interface `UpdateCertificate`:
+    - Remove the request parameters `enc_certificate`, `enc_private_key`
+    - Remove the response parameters `enc_certificate`, `enc_private_key`
+  - Remove the response parameters `enc_certificate`, `enc_private_key` from the interface `ShowCertificate`
+  - Add the request parameter `quic_config` to the interface `CreateListener`
+  - Add the response parameter `quic_config` to the interface `ListListeners`
+  - Changes of the interface `UpdateListener`:
+    - Add the request parameter `quic_config`
+    - Add the response parameter `quic_config`
+  - Add the response parameter `quic_config` to the interface `ShowListener`
+  - Add the request parameters `vpc_id`, `type` to the interface `CreatePool`
+  - Changes of the interface `ListPools`:
+    - Add the request parameters `vpc_id`, `type`
+    - Add the response parameters `created_at`, `updated_at`, `vpc_id`, `type`
+  - Changes of the interface `UpdatePool`:
+    - Add the request parameters `X-Auth-Token`, `vpc_id`, `type`
+    - Add the response parameters `created_at`, `updated_at`, `vpc_id`, `type`
+  - Add the response parameters `created_at`, `updated_at`, `vpc_id`, `type` to the interface `ShowPool`
+  - Modify the type `enum` -> `string` of the request parameter `project_id` of the interface `CreateMember`
+  - Changes of the interface `ListMembers`:
+    - Add the response parameters `status`, `loadbalancers`, `created_at`, `updated_at`
+    - Remove the request parameter `instance_id`
+  - Add the response parameters `status`, `loadbalancers`, `created_at`, `updated_at` to the interface `UpdateMember`
+  - Add the response parameters `status`, `loadbalancers`, `created_at`, `updated_at` to the interface `ShowMember`
+  - Add the response parameters `status`, `loadbalancers`, `created_at`, `updated_at` to the interface `ListAllMembers`
+  - Add the response parameters `created_at`, `updated_at` to the interface `ListHealthMonitors`
+  - Add the response parameters `created_at`, `updated_at` to the interface `UpdateHealthMonitor`
+  - Add the response parameters `created_at`, `updated_at` to the interface `ShowHealthMonitor`
+  - Add the request parameter `redirect_pools_config` to the interface `CreateL7Policy`
+  - Add the response parameters `redirect_pools_config`, `created_at`, `updated_at` to the interface `ListL7Policies`
+  - Changes of the interface `UpdateL7Policy`:
+    - Add the request parameter `redirect_pools_config`
+    - Add the response parameters `redirect_pools_config`, `created_at`, `updated_at`
+  - Add the response parameters `redirect_pools_config`, `created_at`, `updated_at` to the interface `ShowL7Policy`
+  - Add the request parameter `X-Auth-Token` to the interface `BatchUpdatePoliciesPriority`
+  - Add the response parameters `created_at`, `updated_at` to the interface `ListL7Rules`
+  - Add the response parameters `created_at`, `updated_at` to the interface `UpdateL7Rule`
+  - Add the response parameters `created_at`, `updated_at` to the interface `ShowL7Rule`
+  - Changes of the interface `UpdateIpList`:
+    - Remove the request parameters `name`, `ip_list`, `description`
+    - The request parameter `X-Auth-Token` changed to required
+  - Changes of the interface `BatchDeleteIpList`:
+    - Add the request parameter `BatchDeleteIpListRequestBody`
+    - Remove the request parameter `BatchDeleteIpGroupIpListRequestBody`
+    - The request parameter `X-Auth-Token` changed to required
+  - Changes of the interface `BatchCreateMembers`:
+    - Add the request parameter `BatchCreateMembersRequestBody`
+    - Add the response parameter `status`
+    - Remove the request parameter `BatchCreateMemberRequestBody`
+  - Changes of the interface `BatchDeleteMembers`:
+    - Add the request parameter `BatchDeleteMembersRequestBody`
+    - Remove the request parameter `BatchDeleteMemberRequestBody`
+  - Changes of the interface `UpdateLogtank`:
+    - Add the request parameter `UpdateLogtankRequestBody`
+    - Remove the request parameter `logtank`
+
+### HuaweiCloud SDK IoTEdge
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following interfaces:
+    - `CreateAccessCode`
+    - `ShowProtocolMappings`
+    - `UploadProtocolMappings`
+    - `BatchUpdateConfigs`
+    - `ShowExternalEntity`
+  - Add the enum values `COMPOSITE_APPLICATION`, `DATA_COLLECTION` to the request parameter `function_type` to the interface `CreateEdgeApp`
+  - Add the response parameters `sdk_version`, `deploy_multi_instance` to the interface `BatchListEdgeAppVersions`
+  - Add the request parameters `sdk_version`, `deploy_multi_instance`, `ext_devices`, `tcp_socket`, `period_seconds`, `failure_threshold`, `tcp_socket`, `period_seconds`, `failure_threshold` to the interface `CreateEdgeApplicationVersion`
+  - Changes of the interface `UpdateEdgeApplicationVersion`:
+    - Add the request parameters `deploy_multi_instance`, `sdk_version`, `ext_devices`, `tcp_socket`, `period_seconds`, `failure_threshold`, `tcp_socket`, `period_seconds`, `failure_threshold`
+    - Add the response parameters `sdk_version`, `deploy_multi_instance`
+    - The request parameter `arch` changed to not required
+  - Add the response parameters `deploy_multi_instance`, `sdk_version`, `tcp_socket`, `period_seconds`, `failure_threshold`, `tcp_socket`, `period_seconds`, `failure_threshold`, `ext_devices` to the interface `ShowEdgeApplicationVersion`
+  - Add the response parameters `sdk_version`, `deploy_multi_instance` to the interface `UpdateEdgeApplicationVersionState`
+  - Add the request parameters `edge_node_id`, `verify_code`, `time_out`, `arch`, `base_path`, `hardware_model` to the interface `CreateEdgeNode`
+  - Add the response parameters `ha_config`, `hardware_model` to the interface `ShowEdgeNode`
+  - Add the request parameter `CreateInstallCmdRequestBody` to the interface `CreateInstallCmd`
+  - Changes of the interface `BatchListModules`:
+    - Add the response parameters `control_status`, `container_settings`
+    - Add the enum values `DELETE_SUCCESS`, `STOPPED` to the response parameter `state`
+    - Add the enum values `GATEWAY_MANAGER`, `COMPOSITE_APPLICATION`, `DATA_COLLECTION` to the response parameter `function_type`
+  - Add the request parameters `module_name`, `container_settings` to the interface `CreateModule`
+  - Changes of the interface `UpdateModule`:
+    - Add the request parameters `module_name`, `container_settings`
+    - Add the response parameter `control_status`
+    - The request parameter `app_version` changed to not required
+    - Add the enum values `DELETE_SUCCESS`, `STOPPED` to the response parameter `state`
+    - Add the enum values `GATEWAY_MANAGER`, `COMPOSITE_APPLICATION`, `DATA_COLLECTION` to the response parameter `function_type`
+  - Changes of the interface `ShowModule`:
+    - Add the response parameters `control_status`, `container_settings`
+    - Add the enum values `DELETE_SUCCESS`, `STOPPED` to the response parameter `state`
+    - Add the enum values `GATEWAY_MANAGER`, `COMPOSITE_APPLICATION`, `DATA_COLLECTION` to the response parameter `function_type`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `title` to the interface `RecognizeVatInvoice`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interface `SetSensitiveSlowLog`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RMS
+
+- _Features_
+  - Support the interface `ListSchemas`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SIS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `chinese_16k_travel` to the request parameter `property` to the interface `RecognizeShortAudio`
+  - Add the enum values `chinese_16k_media` to the request parameter `property` to the interface `PushTranscriberJobs`
+  - Add the response parameter `audio_duration` to the interface `CollectTranscriberJob`
+  - Add the enum values `chinese_huaxiaomei_common`, `chinese_huaxiaofei_common` to the request parameter `property` to the interface `RunTts`
+
 # 3.0.96 2022-06-30
 
 ### HuaweiCloud SDK UGO

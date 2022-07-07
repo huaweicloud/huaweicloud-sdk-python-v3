@@ -77,7 +77,7 @@ class ClusterExtendParam:
         :type dec_master_flavor: str
         :param docker_umask_mode: 集群默认Docker的UmaskMode配置，可取值为secure或normal，不指定时默认为normal。 
         :type docker_umask_mode: str
-        :param kubernetes_io_cpu_manager_policy: 集群CPU管理策略。取值为none或static，默认为none。 - none：关闭工作负载实例独占CPU核的功能，优点是CPU共享池的可分配核数较多 - static：支持给节点上的工作负载实例配置CPU独占，适用于对CPU缓存和调度延迟敏感的工作负载，Turbo集群下仅对普通容器节点有效，安全容器节点无效。 
+        :param kubernetes_io_cpu_manager_policy: 集群CPU管理策略。取值为none或static，默认为none。 - none：关闭工作负载实例独占CPU核的功能，优点是CPU共享池的可分配核数较多 - static：支持给节点上的工作负载实例配置CPU独占，适用于对CPU缓存和调度延迟敏感的工作负载[，Turbo集群下仅对普通容器节点有效，安全容器节点无效](tag:hws,dt)。 
         :type kubernetes_io_cpu_manager_policy: str
         :param order_id: 订单ID，集群付费类型为自动付费包周期类型时，响应中会返回此字段。
         :type order_id: str
@@ -323,7 +323,7 @@ class ClusterExtendParam:
     def kubernetes_io_cpu_manager_policy(self):
         """Gets the kubernetes_io_cpu_manager_policy of this ClusterExtendParam.
 
-        集群CPU管理策略。取值为none或static，默认为none。 - none：关闭工作负载实例独占CPU核的功能，优点是CPU共享池的可分配核数较多 - static：支持给节点上的工作负载实例配置CPU独占，适用于对CPU缓存和调度延迟敏感的工作负载，Turbo集群下仅对普通容器节点有效，安全容器节点无效。 
+        集群CPU管理策略。取值为none或static，默认为none。 - none：关闭工作负载实例独占CPU核的功能，优点是CPU共享池的可分配核数较多 - static：支持给节点上的工作负载实例配置CPU独占，适用于对CPU缓存和调度延迟敏感的工作负载[，Turbo集群下仅对普通容器节点有效，安全容器节点无效](tag:hws,dt)。 
 
         :return: The kubernetes_io_cpu_manager_policy of this ClusterExtendParam.
         :rtype: str
@@ -334,7 +334,7 @@ class ClusterExtendParam:
     def kubernetes_io_cpu_manager_policy(self, kubernetes_io_cpu_manager_policy):
         """Sets the kubernetes_io_cpu_manager_policy of this ClusterExtendParam.
 
-        集群CPU管理策略。取值为none或static，默认为none。 - none：关闭工作负载实例独占CPU核的功能，优点是CPU共享池的可分配核数较多 - static：支持给节点上的工作负载实例配置CPU独占，适用于对CPU缓存和调度延迟敏感的工作负载，Turbo集群下仅对普通容器节点有效，安全容器节点无效。 
+        集群CPU管理策略。取值为none或static，默认为none。 - none：关闭工作负载实例独占CPU核的功能，优点是CPU共享池的可分配核数较多 - static：支持给节点上的工作负载实例配置CPU独占，适用于对CPU缓存和调度延迟敏感的工作负载[，Turbo集群下仅对普通容器节点有效，安全容器节点无效](tag:hws,dt)。 
 
         :param kubernetes_io_cpu_manager_policy: The kubernetes_io_cpu_manager_policy of this ClusterExtendParam.
         :type kubernetes_io_cpu_manager_policy: str

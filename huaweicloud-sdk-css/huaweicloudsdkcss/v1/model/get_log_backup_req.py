@@ -37,7 +37,7 @@ class GetLogBackupReq:
 
         The model defined in huaweicloud sdk
 
-        :param instance_name: 节点名称
+        :param instance_name: 节点名称。通过[查询集群详情](ShowClusterDetail.xml)获取instances中的name属性。
         :type instance_name: str
         :param level: 日志级别。可查询的日志级别为：INFO，ERROR，DEBUG，WARN。
         :type level: str
@@ -60,7 +60,7 @@ class GetLogBackupReq:
     def instance_name(self):
         """Gets the instance_name of this GetLogBackupReq.
 
-        节点名称
+        节点名称。通过[查询集群详情](ShowClusterDetail.xml)获取instances中的name属性。
 
         :return: The instance_name of this GetLogBackupReq.
         :rtype: str
@@ -71,7 +71,7 @@ class GetLogBackupReq:
     def instance_name(self, instance_name):
         """Sets the instance_name of this GetLogBackupReq.
 
-        节点名称
+        节点名称。通过[查询集群详情](ShowClusterDetail.xml)获取instances中的name属性。
 
         :param instance_name: The instance_name of this GetLogBackupReq.
         :type instance_name: str

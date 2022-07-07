@@ -35,7 +35,7 @@ class ListSnapshotBackupsDatastoreResp:
 
         The model defined in huaweicloud sdk
 
-        :param type: 支持类型：elasticsearch。
+        :param type: 引擎类型，目前只支持elasticsearch。
         :type type: str
         :param version: Esasticsearch引擎版本号。详细请参考CSS[支持的集群版本](css_03_0056.xml)。
         :type version: str
@@ -56,7 +56,7 @@ class ListSnapshotBackupsDatastoreResp:
     def type(self):
         """Gets the type of this ListSnapshotBackupsDatastoreResp.
 
-        支持类型：elasticsearch。
+        引擎类型，目前只支持elasticsearch。
 
         :return: The type of this ListSnapshotBackupsDatastoreResp.
         :rtype: str
@@ -67,7 +67,7 @@ class ListSnapshotBackupsDatastoreResp:
     def type(self, type):
         """Sets the type of this ListSnapshotBackupsDatastoreResp.
 
-        支持类型：elasticsearch。
+        引擎类型，目前只支持elasticsearch。
 
         :param type: The type of this ListSnapshotBackupsDatastoreResp.
         :type type: str

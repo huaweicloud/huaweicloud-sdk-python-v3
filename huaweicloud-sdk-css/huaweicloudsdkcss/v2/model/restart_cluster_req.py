@@ -37,7 +37,7 @@ class RestartClusterReq:
 
         :param type: 操作角色。参数范围： - node - role
         :type type: str
-        :param value: 操作参数。参数说明： - 当操作角色为node时，value为节点ID。 - 当操作角色为role时，value为节点类型(ess、ess-master、ess-client、ess-cold)。
+        :param value: 操作参数。参数说明： - 当操作角色为node时，value为节点ID,通过[查询集群详情](ShowClusterDetail.xml)获取instances中的id属性。 - 当操作角色为role时，value为节点类型(ess、ess-master、ess-client、ess-cold)的多种不同组合。
         :type value: str
         """
         
@@ -76,7 +76,7 @@ class RestartClusterReq:
     def value(self):
         """Gets the value of this RestartClusterReq.
 
-        操作参数。参数说明： - 当操作角色为node时，value为节点ID。 - 当操作角色为role时，value为节点类型(ess、ess-master、ess-client、ess-cold)。
+        操作参数。参数说明： - 当操作角色为node时，value为节点ID,通过[查询集群详情](ShowClusterDetail.xml)获取instances中的id属性。 - 当操作角色为role时，value为节点类型(ess、ess-master、ess-client、ess-cold)的多种不同组合。
 
         :return: The value of this RestartClusterReq.
         :rtype: str
@@ -87,7 +87,7 @@ class RestartClusterReq:
     def value(self, value):
         """Sets the value of this RestartClusterReq.
 
-        操作参数。参数说明： - 当操作角色为node时，value为节点ID。 - 当操作角色为role时，value为节点类型(ess、ess-master、ess-client、ess-cold)。
+        操作参数。参数说明： - 当操作角色为node时，value为节点ID,通过[查询集群详情](ShowClusterDetail.xml)获取instances中的id属性。 - 当操作角色为role时，value为节点类型(ess、ess-master、ess-client、ess-cold)的多种不同组合。
 
         :param value: The value of this RestartClusterReq.
         :type value: str

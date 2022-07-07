@@ -25,7 +25,8 @@ class ContainerSettingsDTO:
         'image_url': 'str',
         'envs': 'object',
         'volumes': 'list[VolumeDTO]',
-        'resources': 'ResourceDTO'
+        'resources': 'ResourceDTO',
+        'ext_devices': 'list[ExtDevice]'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ContainerSettingsDTO:
         'image_url': 'image_url',
         'envs': 'envs',
         'volumes': 'volumes',
-        'resources': 'resources'
+        'resources': 'resources',
+        'ext_devices': 'ext_devices'
     }
 
-    def __init__(self, configs=None, image_url=None, envs=None, volumes=None, resources=None):
+    def __init__(self, configs=None, image_url=None, envs=None, volumes=None, resources=None, ext_devices=None):
         """ContainerSettingsDTO
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ContainerSettingsDTO:
         :type volumes: list[:class:`huaweicloudsdkiotedge.v2.VolumeDTO`]
         :param resources: 
         :type resources: :class:`huaweicloudsdkiotedge.v2.ResourceDTO`
+        :param ext_devices: 外挂设备配置
+        :type ext_devices: list[:class:`huaweicloudsdkiotedge.v2.ExtDevice`]
         """
         
         
@@ -60,6 +64,7 @@ class ContainerSettingsDTO:
         self._envs = None
         self._volumes = None
         self._resources = None
+        self._ext_devices = None
         self.discriminator = None
 
         if configs is not None:
@@ -71,6 +76,8 @@ class ContainerSettingsDTO:
             self.volumes = volumes
         if resources is not None:
             self.resources = resources
+        if ext_devices is not None:
+            self.ext_devices = ext_devices
 
     @property
     def configs(self):
@@ -177,6 +184,28 @@ class ContainerSettingsDTO:
         :type resources: :class:`huaweicloudsdkiotedge.v2.ResourceDTO`
         """
         self._resources = resources
+
+    @property
+    def ext_devices(self):
+        """Gets the ext_devices of this ContainerSettingsDTO.
+
+        外挂设备配置
+
+        :return: The ext_devices of this ContainerSettingsDTO.
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.ExtDevice`]
+        """
+        return self._ext_devices
+
+    @ext_devices.setter
+    def ext_devices(self, ext_devices):
+        """Sets the ext_devices of this ContainerSettingsDTO.
+
+        外挂设备配置
+
+        :param ext_devices: The ext_devices of this ContainerSettingsDTO.
+        :type ext_devices: list[:class:`huaweicloudsdkiotedge.v2.ExtDevice`]
+        """
+        self._ext_devices = ext_devices
 
     def to_dict(self):
         """Returns the model properties as a dict"""

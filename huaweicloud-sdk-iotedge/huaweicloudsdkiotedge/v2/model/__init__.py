@@ -5,6 +5,7 @@ from __future__ import absolute_import
 # import models into model package
 from huaweicloudsdkiotedge.v2.model.access_roma_brief_info import AccessRomaBriefInfo
 from huaweicloudsdkiotedge.v2.model.access_roma_info import AccessRomaInfo
+from huaweicloudsdkiotedge.v2.model.active_standby_config_dto import ActiveStandbyConfigDTO
 from huaweicloudsdkiotedge.v2.model.add_device_request import AddDeviceRequest
 from huaweicloudsdkiotedge.v2.model.add_device_request_body import AddDeviceRequestBody
 from huaweicloudsdkiotedge.v2.model.add_device_response import AddDeviceResponse
@@ -25,16 +26,14 @@ from huaweicloudsdkiotedge.v2.model.batch_list_edge_apps_request import BatchLis
 from huaweicloudsdkiotedge.v2.model.batch_list_edge_apps_response import BatchListEdgeAppsResponse
 from huaweicloudsdkiotedge.v2.model.batch_list_modules_request import BatchListModulesRequest
 from huaweicloudsdkiotedge.v2.model.batch_list_modules_response import BatchListModulesResponse
-from huaweicloudsdkiotedge.v2.model.batch_update_configs import BatchUpdateConfigs
-from huaweicloudsdkiotedge.v2.model.batch_update_configs_request import BatchUpdateConfigsRequest
-from huaweicloudsdkiotedge.v2.model.batch_update_configs_response import BatchUpdateConfigsResponse
 from huaweicloudsdkiotedge.v2.model.confirm_ia_config_request_body import ConfirmIaConfigRequestBody
 from huaweicloudsdkiotedge.v2.model.confirm_ia_configs_request_body import ConfirmIaConfigsRequestBody
 from huaweicloudsdkiotedge.v2.model.container_configs_dto import ContainerConfigsDTO
+from huaweicloudsdkiotedge.v2.model.container_configs_req_dto import ContainerConfigsReqDTO
+from huaweicloudsdkiotedge.v2.model.container_configs_res_dto import ContainerConfigsResDTO
 from huaweicloudsdkiotedge.v2.model.container_port_dto import ContainerPortDTO
 from huaweicloudsdkiotedge.v2.model.container_settings_dto import ContainerSettingsDTO
-from huaweicloudsdkiotedge.v2.model.create_access_code_request import CreateAccessCodeRequest
-from huaweicloudsdkiotedge.v2.model.create_access_code_response import CreateAccessCodeResponse
+from huaweicloudsdkiotedge.v2.model.container_settings_req_dto import ContainerSettingsReqDTO
 from huaweicloudsdkiotedge.v2.model.create_edge_app_request import CreateEdgeAppRequest
 from huaweicloudsdkiotedge.v2.model.create_edge_app_response import CreateEdgeAppResponse
 from huaweicloudsdkiotedge.v2.model.create_edge_application_request_dto import CreateEdgeApplicationRequestDTO
@@ -48,6 +47,7 @@ from huaweicloudsdkiotedge.v2.model.create_external_entity_req_dto import Create
 from huaweicloudsdkiotedge.v2.model.create_external_entity_request import CreateExternalEntityRequest
 from huaweicloudsdkiotedge.v2.model.create_external_entity_response import CreateExternalEntityResponse
 from huaweicloudsdkiotedge.v2.model.create_install_cmd_request import CreateInstallCmdRequest
+from huaweicloudsdkiotedge.v2.model.create_install_cmd_request_dto import CreateInstallCmdRequestDTO
 from huaweicloudsdkiotedge.v2.model.create_install_cmd_response import CreateInstallCmdResponse
 from huaweicloudsdkiotedge.v2.model.create_module_request import CreateModuleRequest
 from huaweicloudsdkiotedge.v2.model.create_module_response import CreateModuleResponse
@@ -70,10 +70,12 @@ from huaweicloudsdkiotedge.v2.model.delete_na_request import DeleteNaRequest
 from huaweicloudsdkiotedge.v2.model.delete_na_response import DeleteNaResponse
 from huaweicloudsdkiotedge.v2.model.edge_app_instance_dto import EdgeAppInstanceDTO
 from huaweicloudsdkiotedge.v2.model.edge_device_auth_info import EdgeDeviceAuthInfo
-from huaweicloudsdkiotedge.v2.model.edge_module_resp_dto import EdgeModuleRespDTO
+from huaweicloudsdkiotedge.v2.model.edge_module_dto import EdgeModuleDTO
 from huaweicloudsdkiotedge.v2.model.edge_node_creation import EdgeNodeCreation
 from huaweicloudsdkiotedge.v2.model.edge_node_dto import EdgeNodeDTO
+from huaweicloudsdkiotedge.v2.model.ext_device import ExtDevice
 from huaweicloudsdkiotedge.v2.model.external_entity_resp_dto import ExternalEntityRespDTO
+from huaweicloudsdkiotedge.v2.model.ha_config_dto import HaConfigDTO
 from huaweicloudsdkiotedge.v2.model.http_get_dto import HttpGetDTO
 from huaweicloudsdkiotedge.v2.model.list_devices_request import ListDevicesRequest
 from huaweicloudsdkiotedge.v2.model.list_devices_response import ListDevicesResponse
@@ -90,7 +92,7 @@ from huaweicloudsdkiotedge.v2.model.list_nas_response import ListNasResponse
 from huaweicloudsdkiotedge.v2.model.list_routes_request import ListRoutesRequest
 from huaweicloudsdkiotedge.v2.model.list_routes_response import ListRoutesResponse
 from huaweicloudsdkiotedge.v2.model.log_config_dto import LogConfigDTO
-from huaweicloudsdkiotedge.v2.model.mqtt_brief_connection_info import MqttBriefConnectionInfo
+from huaweicloudsdkiotedge.v2.model.module_container_settings_res_dto import ModuleContainerSettingsResDTO
 from huaweicloudsdkiotedge.v2.model.mqtt_connection_info import MqttConnectionInfo
 from huaweicloudsdkiotedge.v2.model.nic import Nic
 from huaweicloudsdkiotedge.v2.model.page_info_dto import PageInfoDTO
@@ -111,8 +113,6 @@ from huaweicloudsdkiotedge.v2.model.show_edge_application_version_request import
 from huaweicloudsdkiotedge.v2.model.show_edge_application_version_response import ShowEdgeApplicationVersionResponse
 from huaweicloudsdkiotedge.v2.model.show_edge_node_request import ShowEdgeNodeRequest
 from huaweicloudsdkiotedge.v2.model.show_edge_node_response import ShowEdgeNodeResponse
-from huaweicloudsdkiotedge.v2.model.show_external_entity_request import ShowExternalEntityRequest
-from huaweicloudsdkiotedge.v2.model.show_external_entity_response import ShowExternalEntityResponse
 from huaweicloudsdkiotedge.v2.model.show_ia_config_request import ShowIaConfigRequest
 from huaweicloudsdkiotedge.v2.model.show_ia_config_response import ShowIaConfigResponse
 from huaweicloudsdkiotedge.v2.model.show_module_request import ShowModuleRequest
@@ -121,8 +121,7 @@ from huaweicloudsdkiotedge.v2.model.show_na_request import ShowNaRequest
 from huaweicloudsdkiotedge.v2.model.show_na_response import ShowNaResponse
 from huaweicloudsdkiotedge.v2.model.show_product_config_request import ShowProductConfigRequest
 from huaweicloudsdkiotedge.v2.model.show_product_config_response import ShowProductConfigResponse
-from huaweicloudsdkiotedge.v2.model.show_protocol_mappings_request import ShowProtocolMappingsRequest
-from huaweicloudsdkiotedge.v2.model.show_protocol_mappings_response import ShowProtocolMappingsResponse
+from huaweicloudsdkiotedge.v2.model.tcp_socket_dto import TcpSocketDTO
 from huaweicloudsdkiotedge.v2.model.update_desireds import UpdateDesireds
 from huaweicloudsdkiotedge.v2.model.update_device_request import UpdateDeviceRequest
 from huaweicloudsdkiotedge.v2.model.update_device_response import UpdateDeviceResponse
@@ -146,7 +145,4 @@ from huaweicloudsdkiotedge.v2.model.update_na_request_dto import UpdateNaRequest
 from huaweicloudsdkiotedge.v2.model.update_na_response import UpdateNaResponse
 from huaweicloudsdkiotedge.v2.model.update_routes_request import UpdateRoutesRequest
 from huaweicloudsdkiotedge.v2.model.update_routes_response import UpdateRoutesResponse
-from huaweicloudsdkiotedge.v2.model.upload_protocol_mappings_request import UploadProtocolMappingsRequest
-from huaweicloudsdkiotedge.v2.model.upload_protocol_mappings_request_body import UploadProtocolMappingsRequestBody
-from huaweicloudsdkiotedge.v2.model.upload_protocol_mappings_response import UploadProtocolMappingsResponse
 from huaweicloudsdkiotedge.v2.model.volume_dto import VolumeDTO

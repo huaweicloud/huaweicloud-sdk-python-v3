@@ -41,7 +41,7 @@ class CreateEdgeApplicationRequestDTO:
         :type edge_app_id: str
         :param description: 应用描述
         :type description: str
-        :param function_type: 功能类型,分为数据处理（DATA_PROCESSING）和协议解析（PROTOCOL_PARSING）和IT集成（ON_PREMISE_INTEGRATION），数据默认为DATA_PROCESSING，数据处理模块可以传输消息，协议解析为驱动类型，IT集成为部署南向3rdIA使用
+        :param function_type: 功能类型,分为数据处理（DATA_PROCESSING）、协议解析（PROTOCOL_PARSING）、IT集成（ON_PREMISE_INTEGRATION）和混合应用（COMPOSITE_APPLICATION），数据默认为DATA_PROCESSING，数据处理模块可以传输消息，协议解析为驱动类型，IT集成为部署南向3rdIA使用，混合应用可同时实现数据处理和协议解析。
         :type function_type: str
         """
         
@@ -106,7 +106,7 @@ class CreateEdgeApplicationRequestDTO:
     def function_type(self):
         """Gets the function_type of this CreateEdgeApplicationRequestDTO.
 
-        功能类型,分为数据处理（DATA_PROCESSING）和协议解析（PROTOCOL_PARSING）和IT集成（ON_PREMISE_INTEGRATION），数据默认为DATA_PROCESSING，数据处理模块可以传输消息，协议解析为驱动类型，IT集成为部署南向3rdIA使用
+        功能类型,分为数据处理（DATA_PROCESSING）、协议解析（PROTOCOL_PARSING）、IT集成（ON_PREMISE_INTEGRATION）和混合应用（COMPOSITE_APPLICATION），数据默认为DATA_PROCESSING，数据处理模块可以传输消息，协议解析为驱动类型，IT集成为部署南向3rdIA使用，混合应用可同时实现数据处理和协议解析。
 
         :return: The function_type of this CreateEdgeApplicationRequestDTO.
         :rtype: str
@@ -117,7 +117,7 @@ class CreateEdgeApplicationRequestDTO:
     def function_type(self, function_type):
         """Sets the function_type of this CreateEdgeApplicationRequestDTO.
 
-        功能类型,分为数据处理（DATA_PROCESSING）和协议解析（PROTOCOL_PARSING）和IT集成（ON_PREMISE_INTEGRATION），数据默认为DATA_PROCESSING，数据处理模块可以传输消息，协议解析为驱动类型，IT集成为部署南向3rdIA使用
+        功能类型,分为数据处理（DATA_PROCESSING）、协议解析（PROTOCOL_PARSING）、IT集成（ON_PREMISE_INTEGRATION）和混合应用（COMPOSITE_APPLICATION），数据默认为DATA_PROCESSING，数据处理模块可以传输消息，协议解析为驱动类型，IT集成为部署南向3rdIA使用，混合应用可同时实现数据处理和协议解析。
 
         :param function_type: The function_type of this CreateEdgeApplicationRequestDTO.
         :type function_type: str

@@ -33,7 +33,7 @@ class StartLogAutoBackupPolicyReq:
 
         The model defined in huaweicloud sdk
 
-        :param period: 备份开始时间。
+        :param period: 备份开始时间。格式：格林威治标准时间。
         :type period: str
         """
         
@@ -48,7 +48,7 @@ class StartLogAutoBackupPolicyReq:
     def period(self):
         """Gets the period of this StartLogAutoBackupPolicyReq.
 
-        备份开始时间。
+        备份开始时间。格式：格林威治标准时间。
 
         :return: The period of this StartLogAutoBackupPolicyReq.
         :rtype: str
@@ -59,7 +59,7 @@ class StartLogAutoBackupPolicyReq:
     def period(self, period):
         """Sets the period of this StartLogAutoBackupPolicyReq.
 
-        备份开始时间。
+        备份开始时间。格式：格林威治标准时间。
 
         :param period: The period of this StartLogAutoBackupPolicyReq.
         :type period: str

@@ -29,9 +29,7 @@ class CreateCertificateOption:
         'private_key': 'str',
         'project_id': 'str',
         'type': 'str',
-        'enterprise_project_id': 'str',
-        'enc_certificate': 'str',
-        'enc_private_key': 'str'
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
@@ -43,19 +41,17 @@ class CreateCertificateOption:
         'private_key': 'private_key',
         'project_id': 'project_id',
         'type': 'type',
-        'enterprise_project_id': 'enterprise_project_id',
-        'enc_certificate': 'enc_certificate',
-        'enc_private_key': 'enc_private_key'
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, name=None, private_key=None, project_id=None, type=None, enterprise_project_id=None, enc_certificate=None, enc_private_key=None):
+    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, name=None, private_key=None, project_id=None, type=None, enterprise_project_id=None):
         """CreateCertificateOption
 
         The model defined in huaweicloud sdk
 
         :param admin_state_up: 证书的管理状态。  不支持该字段，请勿使用。
         :type admin_state_up: bool
-        :param certificate: HTTPS协议使用的证书内容。 如果type为server_sm时，该字段填写SM签名证书内容。 取值范围：PEM编码格式。
+        :param certificate: HTTPS协议使用的证书内容。 取值范围：PEM编码格式。 最大长度65536字符。 支持证书链，最大11层(含证书和证书链)。
         :type certificate: str
         :param description: 证书的描述。
         :type description: str
@@ -63,18 +59,14 @@ class CreateCertificateOption:
         :type domain: str
         :param name: 证书的名称。
         :type name: str
-        :param private_key: HTTPS协议使用的私钥。仅type为server或server_sm时有效。type为server或server_sm时必选。 如果type为server_sm时，该字段填写SM签名证书的私钥。 取值范围：PEM编码格式。
+        :param private_key: HTTPS协议使用的私钥。当type为server时有效且必选。 取值范围：PEM编码格式。 最大长度8192字符。
         :type private_key: str
         :param project_id: 证书所在的项目ID。
         :type project_id: str
-        :param type: SSL证书的类型。分为服务器证书(server)、CA证书(client)和服务器SM双证书(server_sm)。 默认值：server
+        :param type: SSL证书的类型。分为服务器证书(server)、CA证书(client)。 默认值：server
         :type type: str
         :param enterprise_project_id: 证书所属的企业项目ID。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type enterprise_project_id: str
-        :param enc_certificate: HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效且必选。
-        :type enc_certificate: str
-        :param enc_private_key: HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效且必选。
-        :type enc_private_key: str
         """
         
         
@@ -88,8 +80,6 @@ class CreateCertificateOption:
         self._project_id = None
         self._type = None
         self._enterprise_project_id = None
-        self._enc_certificate = None
-        self._enc_private_key = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -109,10 +99,6 @@ class CreateCertificateOption:
             self.type = type
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if enc_certificate is not None:
-            self.enc_certificate = enc_certificate
-        if enc_private_key is not None:
-            self.enc_private_key = enc_private_key
 
     @property
     def admin_state_up(self):
@@ -140,7 +126,7 @@ class CreateCertificateOption:
     def certificate(self):
         """Gets the certificate of this CreateCertificateOption.
 
-        HTTPS协议使用的证书内容。 如果type为server_sm时，该字段填写SM签名证书内容。 取值范围：PEM编码格式。
+        HTTPS协议使用的证书内容。 取值范围：PEM编码格式。 最大长度65536字符。 支持证书链，最大11层(含证书和证书链)。
 
         :return: The certificate of this CreateCertificateOption.
         :rtype: str
@@ -151,7 +137,7 @@ class CreateCertificateOption:
     def certificate(self, certificate):
         """Sets the certificate of this CreateCertificateOption.
 
-        HTTPS协议使用的证书内容。 如果type为server_sm时，该字段填写SM签名证书内容。 取值范围：PEM编码格式。
+        HTTPS协议使用的证书内容。 取值范围：PEM编码格式。 最大长度65536字符。 支持证书链，最大11层(含证书和证书链)。
 
         :param certificate: The certificate of this CreateCertificateOption.
         :type certificate: str
@@ -228,7 +214,7 @@ class CreateCertificateOption:
     def private_key(self):
         """Gets the private_key of this CreateCertificateOption.
 
-        HTTPS协议使用的私钥。仅type为server或server_sm时有效。type为server或server_sm时必选。 如果type为server_sm时，该字段填写SM签名证书的私钥。 取值范围：PEM编码格式。
+        HTTPS协议使用的私钥。当type为server时有效且必选。 取值范围：PEM编码格式。 最大长度8192字符。
 
         :return: The private_key of this CreateCertificateOption.
         :rtype: str
@@ -239,7 +225,7 @@ class CreateCertificateOption:
     def private_key(self, private_key):
         """Sets the private_key of this CreateCertificateOption.
 
-        HTTPS协议使用的私钥。仅type为server或server_sm时有效。type为server或server_sm时必选。 如果type为server_sm时，该字段填写SM签名证书的私钥。 取值范围：PEM编码格式。
+        HTTPS协议使用的私钥。当type为server时有效且必选。 取值范围：PEM编码格式。 最大长度8192字符。
 
         :param private_key: The private_key of this CreateCertificateOption.
         :type private_key: str
@@ -272,7 +258,7 @@ class CreateCertificateOption:
     def type(self):
         """Gets the type of this CreateCertificateOption.
 
-        SSL证书的类型。分为服务器证书(server)、CA证书(client)和服务器SM双证书(server_sm)。 默认值：server
+        SSL证书的类型。分为服务器证书(server)、CA证书(client)。 默认值：server
 
         :return: The type of this CreateCertificateOption.
         :rtype: str
@@ -283,7 +269,7 @@ class CreateCertificateOption:
     def type(self, type):
         """Sets the type of this CreateCertificateOption.
 
-        SSL证书的类型。分为服务器证书(server)、CA证书(client)和服务器SM双证书(server_sm)。 默认值：server
+        SSL证书的类型。分为服务器证书(server)、CA证书(client)。 默认值：server
 
         :param type: The type of this CreateCertificateOption.
         :type type: str
@@ -311,50 +297,6 @@ class CreateCertificateOption:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
-
-    @property
-    def enc_certificate(self):
-        """Gets the enc_certificate of this CreateCertificateOption.
-
-        HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效且必选。
-
-        :return: The enc_certificate of this CreateCertificateOption.
-        :rtype: str
-        """
-        return self._enc_certificate
-
-    @enc_certificate.setter
-    def enc_certificate(self, enc_certificate):
-        """Sets the enc_certificate of this CreateCertificateOption.
-
-        HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效且必选。
-
-        :param enc_certificate: The enc_certificate of this CreateCertificateOption.
-        :type enc_certificate: str
-        """
-        self._enc_certificate = enc_certificate
-
-    @property
-    def enc_private_key(self):
-        """Gets the enc_private_key of this CreateCertificateOption.
-
-        HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效且必选。
-
-        :return: The enc_private_key of this CreateCertificateOption.
-        :rtype: str
-        """
-        return self._enc_private_key
-
-    @enc_private_key.setter
-    def enc_private_key(self, enc_private_key):
-        """Sets the enc_private_key of this CreateCertificateOption.
-
-        HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  使用说明： - 仅type为server_sm时有效且必选。
-
-        :param enc_private_key: The enc_private_key of this CreateCertificateOption.
-        :type enc_private_key: str
-        """
-        self._enc_private_key = enc_private_key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

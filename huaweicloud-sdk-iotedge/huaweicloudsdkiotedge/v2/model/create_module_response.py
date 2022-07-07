@@ -24,29 +24,33 @@ class CreateModuleResponse(SdkResponse):
         'edge_app_id': 'str',
         'app_version': 'str',
         'state': 'str',
+        'control_status': 'str',
         'node_id': 'str',
         'module_name': 'str',
         'module_id': 'str',
         'create_time': 'str',
         'update_time': 'str',
         'app_type': 'str',
-        'function_type': 'str'
+        'function_type': 'str',
+        'container_settings': 'ModuleContainerSettingsResDTO'
     }
 
     attribute_map = {
         'edge_app_id': 'edge_app_id',
         'app_version': 'app_version',
         'state': 'state',
+        'control_status': 'control_status',
         'node_id': 'node_id',
         'module_name': 'module_name',
         'module_id': 'module_id',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'app_type': 'app_type',
-        'function_type': 'function_type'
+        'function_type': 'function_type',
+        'container_settings': 'container_settings'
     }
 
-    def __init__(self, edge_app_id=None, app_version=None, state=None, node_id=None, module_name=None, module_id=None, create_time=None, update_time=None, app_type=None, function_type=None):
+    def __init__(self, edge_app_id=None, app_version=None, state=None, control_status=None, node_id=None, module_name=None, module_id=None, create_time=None, update_time=None, app_type=None, function_type=None, container_settings=None):
         """CreateModuleResponse
 
         The model defined in huaweicloud sdk
@@ -55,8 +59,10 @@ class CreateModuleResponse(SdkResponse):
         :type edge_app_id: str
         :param app_version: 应用版本
         :type app_version: str
-        :param state: 模块状态
+        :param state: 模块运行状态
         :type state: str
+        :param control_status: 模块管控状态
+        :type control_status: str
         :param node_id: 边缘节点（同deviceID）ID
         :type node_id: str
         :param module_name: 模块名称
@@ -71,6 +77,8 @@ class CreateModuleResponse(SdkResponse):
         :type app_type: str
         :param function_type: 功能类型
         :type function_type: str
+        :param container_settings: 
+        :type container_settings: :class:`huaweicloudsdkiotedge.v2.ModuleContainerSettingsResDTO`
         """
         
         super(CreateModuleResponse, self).__init__()
@@ -78,6 +86,7 @@ class CreateModuleResponse(SdkResponse):
         self._edge_app_id = None
         self._app_version = None
         self._state = None
+        self._control_status = None
         self._node_id = None
         self._module_name = None
         self._module_id = None
@@ -85,6 +94,7 @@ class CreateModuleResponse(SdkResponse):
         self._update_time = None
         self._app_type = None
         self._function_type = None
+        self._container_settings = None
         self.discriminator = None
 
         if edge_app_id is not None:
@@ -93,6 +103,8 @@ class CreateModuleResponse(SdkResponse):
             self.app_version = app_version
         if state is not None:
             self.state = state
+        if control_status is not None:
+            self.control_status = control_status
         if node_id is not None:
             self.node_id = node_id
         if module_name is not None:
@@ -107,6 +119,8 @@ class CreateModuleResponse(SdkResponse):
             self.app_type = app_type
         if function_type is not None:
             self.function_type = function_type
+        if container_settings is not None:
+            self.container_settings = container_settings
 
     @property
     def edge_app_id(self):
@@ -156,7 +170,7 @@ class CreateModuleResponse(SdkResponse):
     def state(self):
         """Gets the state of this CreateModuleResponse.
 
-        模块状态
+        模块运行状态
 
         :return: The state of this CreateModuleResponse.
         :rtype: str
@@ -167,12 +181,34 @@ class CreateModuleResponse(SdkResponse):
     def state(self, state):
         """Sets the state of this CreateModuleResponse.
 
-        模块状态
+        模块运行状态
 
         :param state: The state of this CreateModuleResponse.
         :type state: str
         """
         self._state = state
+
+    @property
+    def control_status(self):
+        """Gets the control_status of this CreateModuleResponse.
+
+        模块管控状态
+
+        :return: The control_status of this CreateModuleResponse.
+        :rtype: str
+        """
+        return self._control_status
+
+    @control_status.setter
+    def control_status(self, control_status):
+        """Sets the control_status of this CreateModuleResponse.
+
+        模块管控状态
+
+        :param control_status: The control_status of this CreateModuleResponse.
+        :type control_status: str
+        """
+        self._control_status = control_status
 
     @property
     def node_id(self):
@@ -327,6 +363,26 @@ class CreateModuleResponse(SdkResponse):
         :type function_type: str
         """
         self._function_type = function_type
+
+    @property
+    def container_settings(self):
+        """Gets the container_settings of this CreateModuleResponse.
+
+
+        :return: The container_settings of this CreateModuleResponse.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ModuleContainerSettingsResDTO`
+        """
+        return self._container_settings
+
+    @container_settings.setter
+    def container_settings(self, container_settings):
+        """Sets the container_settings of this CreateModuleResponse.
+
+
+        :param container_settings: The container_settings of this CreateModuleResponse.
+        :type container_settings: :class:`huaweicloudsdkiotedge.v2.ModuleContainerSettingsResDTO`
+        """
+        self._container_settings = container_settings
 
     def to_dict(self):
         """Returns the model properties as a dict"""

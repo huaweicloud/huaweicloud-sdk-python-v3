@@ -22,47 +22,68 @@ class ProbeDTO:
 
     openapi_types = {
         'exec_command': 'str',
+        'tcp_socket': 'TcpSocketDTO',
         'http_get': 'HttpGetDTO',
         'initial_delay_seconds': 'int',
-        'timeout_seconds': 'int'
+        'timeout_seconds': 'int',
+        'period_seconds': 'int',
+        'failure_threshold': 'int'
     }
 
     attribute_map = {
         'exec_command': 'exec_command',
+        'tcp_socket': 'tcp_socket',
         'http_get': 'http_get',
         'initial_delay_seconds': 'initial_delay_seconds',
-        'timeout_seconds': 'timeout_seconds'
+        'timeout_seconds': 'timeout_seconds',
+        'period_seconds': 'period_seconds',
+        'failure_threshold': 'failure_threshold'
     }
 
-    def __init__(self, exec_command=None, http_get=None, initial_delay_seconds=None, timeout_seconds=None):
+    def __init__(self, exec_command=None, tcp_socket=None, http_get=None, initial_delay_seconds=None, timeout_seconds=None, period_seconds=None, failure_threshold=None):
         """ProbeDTO
 
         The model defined in huaweicloud sdk
 
         :param exec_command: 执行探测的命令行命令
         :type exec_command: str
+        :param tcp_socket: 
+        :type tcp_socket: :class:`huaweicloudsdkiotedge.v2.TcpSocketDTO`
         :param http_get: 
         :type http_get: :class:`huaweicloudsdkiotedge.v2.HttpGetDTO`
         :param initial_delay_seconds: 表示从工作负载启动后从多久开始探测
         :type initial_delay_seconds: int
         :param timeout_seconds: 表示探测超时时间
         :type timeout_seconds: int
+        :param period_seconds: 检查周期
+        :type period_seconds: int
+        :param failure_threshold: 失败多少次算不健康
+        :type failure_threshold: int
         """
         
         
 
         self._exec_command = None
+        self._tcp_socket = None
         self._http_get = None
         self._initial_delay_seconds = None
         self._timeout_seconds = None
+        self._period_seconds = None
+        self._failure_threshold = None
         self.discriminator = None
 
         if exec_command is not None:
             self.exec_command = exec_command
+        if tcp_socket is not None:
+            self.tcp_socket = tcp_socket
         if http_get is not None:
             self.http_get = http_get
         self.initial_delay_seconds = initial_delay_seconds
         self.timeout_seconds = timeout_seconds
+        if period_seconds is not None:
+            self.period_seconds = period_seconds
+        if failure_threshold is not None:
+            self.failure_threshold = failure_threshold
 
     @property
     def exec_command(self):
@@ -85,6 +106,26 @@ class ProbeDTO:
         :type exec_command: str
         """
         self._exec_command = exec_command
+
+    @property
+    def tcp_socket(self):
+        """Gets the tcp_socket of this ProbeDTO.
+
+
+        :return: The tcp_socket of this ProbeDTO.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.TcpSocketDTO`
+        """
+        return self._tcp_socket
+
+    @tcp_socket.setter
+    def tcp_socket(self, tcp_socket):
+        """Sets the tcp_socket of this ProbeDTO.
+
+
+        :param tcp_socket: The tcp_socket of this ProbeDTO.
+        :type tcp_socket: :class:`huaweicloudsdkiotedge.v2.TcpSocketDTO`
+        """
+        self._tcp_socket = tcp_socket
 
     @property
     def http_get(self):
@@ -149,6 +190,50 @@ class ProbeDTO:
         :type timeout_seconds: int
         """
         self._timeout_seconds = timeout_seconds
+
+    @property
+    def period_seconds(self):
+        """Gets the period_seconds of this ProbeDTO.
+
+        检查周期
+
+        :return: The period_seconds of this ProbeDTO.
+        :rtype: int
+        """
+        return self._period_seconds
+
+    @period_seconds.setter
+    def period_seconds(self, period_seconds):
+        """Sets the period_seconds of this ProbeDTO.
+
+        检查周期
+
+        :param period_seconds: The period_seconds of this ProbeDTO.
+        :type period_seconds: int
+        """
+        self._period_seconds = period_seconds
+
+    @property
+    def failure_threshold(self):
+        """Gets the failure_threshold of this ProbeDTO.
+
+        失败多少次算不健康
+
+        :return: The failure_threshold of this ProbeDTO.
+        :rtype: int
+        """
+        return self._failure_threshold
+
+    @failure_threshold.setter
+    def failure_threshold(self, failure_threshold):
+        """Sets the failure_threshold of this ProbeDTO.
+
+        失败多少次算不健康
+
+        :param failure_threshold: The failure_threshold of this ProbeDTO.
+        :type failure_threshold: int
+        """
+        self._failure_threshold = failure_threshold
 
     def to_dict(self):
         """Returns the model properties as a dict"""

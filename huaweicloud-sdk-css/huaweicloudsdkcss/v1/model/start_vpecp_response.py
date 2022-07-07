@@ -33,7 +33,7 @@ class StartVpecpResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param action: 操作行为。createVpcepservice表示已开启终端节点。
+        :param action: 操作行为。固定为：createVpcepservice，表示已开启终端节点。
         :type action: str
         """
         
@@ -49,7 +49,7 @@ class StartVpecpResponse(SdkResponse):
     def action(self):
         """Gets the action of this StartVpecpResponse.
 
-        操作行为。createVpcepservice表示已开启终端节点。
+        操作行为。固定为：createVpcepservice，表示已开启终端节点。
 
         :return: The action of this StartVpecpResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class StartVpecpResponse(SdkResponse):
     def action(self, action):
         """Sets the action of this StartVpecpResponse.
 
-        操作行为。createVpcepservice表示已开启终端节点。
+        操作行为。固定为：createVpcepservice，表示已开启终端节点。
 
         :param action: The action of this StartVpecpResponse.
         :type action: str

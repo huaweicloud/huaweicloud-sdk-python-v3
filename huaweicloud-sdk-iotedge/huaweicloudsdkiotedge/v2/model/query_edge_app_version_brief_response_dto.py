@@ -23,8 +23,10 @@ class QueryEdgeAppVersionBriefResponseDTO:
     openapi_types = {
         'edge_app_id': 'str',
         'version': 'str',
+        'sdk_version': 'str',
         'description': 'str',
         'deploy_type': 'str',
+        'deploy_multi_instance': 'bool',
         'create_time': 'str',
         'update_time': 'str',
         'state': 'str',
@@ -36,8 +38,10 @@ class QueryEdgeAppVersionBriefResponseDTO:
     attribute_map = {
         'edge_app_id': 'edge_app_id',
         'version': 'version',
+        'sdk_version': 'sdk_version',
         'description': 'description',
         'deploy_type': 'deploy_type',
+        'deploy_multi_instance': 'deploy_multi_instance',
         'create_time': 'create_time',
         'update_time': 'update_time',
         'state': 'state',
@@ -46,7 +50,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
         'off_shelf_time': 'off_shelf_time'
     }
 
-    def __init__(self, edge_app_id=None, version=None, description=None, deploy_type=None, create_time=None, update_time=None, state=None, arch=None, publish_time=None, off_shelf_time=None):
+    def __init__(self, edge_app_id=None, version=None, sdk_version=None, description=None, deploy_type=None, deploy_multi_instance=None, create_time=None, update_time=None, state=None, arch=None, publish_time=None, off_shelf_time=None):
         """QueryEdgeAppVersionBriefResponseDTO
 
         The model defined in huaweicloud sdk
@@ -55,10 +59,14 @@ class QueryEdgeAppVersionBriefResponseDTO:
         :type edge_app_id: str
         :param version: 应用名称
         :type version: str
+        :param sdk_version: 应用集成的边缘升得快版本
+        :type sdk_version: str
         :param description: 应用描述
         :type description: str
         :param deploy_type: 部署类型docker|process
         :type deploy_type: str
+        :param deploy_multi_instance: 是否允许部署多实例
+        :type deploy_multi_instance: bool
         :param create_time: 创建时间
         :type create_time: str
         :param update_time: 最后一次修改时间
@@ -77,8 +85,10 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
         self._edge_app_id = None
         self._version = None
+        self._sdk_version = None
         self._description = None
         self._deploy_type = None
+        self._deploy_multi_instance = None
         self._create_time = None
         self._update_time = None
         self._state = None
@@ -91,10 +101,14 @@ class QueryEdgeAppVersionBriefResponseDTO:
             self.edge_app_id = edge_app_id
         if version is not None:
             self.version = version
+        if sdk_version is not None:
+            self.sdk_version = sdk_version
         if description is not None:
             self.description = description
         if deploy_type is not None:
             self.deploy_type = deploy_type
+        if deploy_multi_instance is not None:
+            self.deploy_multi_instance = deploy_multi_instance
         if create_time is not None:
             self.create_time = create_time
         if update_time is not None:
@@ -153,6 +167,28 @@ class QueryEdgeAppVersionBriefResponseDTO:
         self._version = version
 
     @property
+    def sdk_version(self):
+        """Gets the sdk_version of this QueryEdgeAppVersionBriefResponseDTO.
+
+        应用集成的边缘升得快版本
+
+        :return: The sdk_version of this QueryEdgeAppVersionBriefResponseDTO.
+        :rtype: str
+        """
+        return self._sdk_version
+
+    @sdk_version.setter
+    def sdk_version(self, sdk_version):
+        """Sets the sdk_version of this QueryEdgeAppVersionBriefResponseDTO.
+
+        应用集成的边缘升得快版本
+
+        :param sdk_version: The sdk_version of this QueryEdgeAppVersionBriefResponseDTO.
+        :type sdk_version: str
+        """
+        self._sdk_version = sdk_version
+
+    @property
     def description(self):
         """Gets the description of this QueryEdgeAppVersionBriefResponseDTO.
 
@@ -195,6 +231,28 @@ class QueryEdgeAppVersionBriefResponseDTO:
         :type deploy_type: str
         """
         self._deploy_type = deploy_type
+
+    @property
+    def deploy_multi_instance(self):
+        """Gets the deploy_multi_instance of this QueryEdgeAppVersionBriefResponseDTO.
+
+        是否允许部署多实例
+
+        :return: The deploy_multi_instance of this QueryEdgeAppVersionBriefResponseDTO.
+        :rtype: bool
+        """
+        return self._deploy_multi_instance
+
+    @deploy_multi_instance.setter
+    def deploy_multi_instance(self, deploy_multi_instance):
+        """Sets the deploy_multi_instance of this QueryEdgeAppVersionBriefResponseDTO.
+
+        是否允许部署多实例
+
+        :param deploy_multi_instance: The deploy_multi_instance of this QueryEdgeAppVersionBriefResponseDTO.
+        :type deploy_multi_instance: bool
+        """
+        self._deploy_multi_instance = deploy_multi_instance
 
     @property
     def create_time(self):

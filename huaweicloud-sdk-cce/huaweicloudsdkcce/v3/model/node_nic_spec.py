@@ -37,7 +37,7 @@ class NodeNicSpec:
 
         :param primary_nic: 
         :type primary_nic: :class:`huaweicloudsdkcce.v3.NicSpec`
-        :param ext_nics: 扩展网卡
+        :param ext_nics: 扩展网卡 &gt;创建节点池添加节点时不支持该参数。
         :type ext_nics: list[:class:`huaweicloudsdkcce.v3.NicSpec`]
         """
         
@@ -76,7 +76,7 @@ class NodeNicSpec:
     def ext_nics(self):
         """Gets the ext_nics of this NodeNicSpec.
 
-        扩展网卡
+        扩展网卡 >创建节点池添加节点时不支持该参数。
 
         :return: The ext_nics of this NodeNicSpec.
         :rtype: list[:class:`huaweicloudsdkcce.v3.NicSpec`]
@@ -87,7 +87,7 @@ class NodeNicSpec:
     def ext_nics(self, ext_nics):
         """Sets the ext_nics of this NodeNicSpec.
 
-        扩展网卡
+        扩展网卡 >创建节点池添加节点时不支持该参数。
 
         :param ext_nics: The ext_nics of this NodeNicSpec.
         :type ext_nics: list[:class:`huaweicloudsdkcce.v3.NicSpec`]

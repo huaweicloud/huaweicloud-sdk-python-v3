@@ -23,16 +23,20 @@ class AvailabilityZone:
     openapi_types = {
         'code': 'str',
         'state': 'str',
-        'protocol': 'list[str]'
+        'protocol': 'list[str]',
+        'public_border_group': 'str',
+        'category': 'int'
     }
 
     attribute_map = {
         'code': 'code',
         'state': 'state',
-        'protocol': 'protocol'
+        'protocol': 'protocol',
+        'public_border_group': 'public_border_group',
+        'category': 'category'
     }
 
-    def __init__(self, code=None, state=None, protocol=None):
+    def __init__(self, code=None, state=None, protocol=None, public_border_group=None, category=None):
         """AvailabilityZone
 
         The model defined in huaweicloud sdk
@@ -41,8 +45,12 @@ class AvailabilityZone:
         :type code: str
         :param state: 可用区状态。  取值：ACTIVE。
         :type state: str
-        :param protocol: 未售罄的LB规格类别。取值： - L4：表示网络型LB未售罄。 - L7：表示应用型LB未售罄。
+        :param protocol: 未售罄的LB规格类别。取值：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。
         :type protocol: list[str]
+        :param public_border_group: 可用区组，如：center
+        :type public_border_group: str
+        :param category: 范围编码，0表示center，21表示homezone
+        :type category: int
         """
         
         
@@ -50,12 +58,15 @@ class AvailabilityZone:
         self._code = None
         self._state = None
         self._protocol = None
+        self._public_border_group = None
+        self._category = None
         self.discriminator = None
 
         self.code = code
         self.state = state
-        if protocol is not None:
-            self.protocol = protocol
+        self.protocol = protocol
+        self.public_border_group = public_border_group
+        self.category = category
 
     @property
     def code(self):
@@ -105,7 +116,7 @@ class AvailabilityZone:
     def protocol(self):
         """Gets the protocol of this AvailabilityZone.
 
-        未售罄的LB规格类别。取值： - L4：表示网络型LB未售罄。 - L7：表示应用型LB未售罄。
+        未售罄的LB规格类别。取值：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。
 
         :return: The protocol of this AvailabilityZone.
         :rtype: list[str]
@@ -116,12 +127,56 @@ class AvailabilityZone:
     def protocol(self, protocol):
         """Sets the protocol of this AvailabilityZone.
 
-        未售罄的LB规格类别。取值： - L4：表示网络型LB未售罄。 - L7：表示应用型LB未售罄。
+        未售罄的LB规格类别。取值：L4 表示网络型LB未售罄；L7 表示应用型LB未售罄。
 
         :param protocol: The protocol of this AvailabilityZone.
         :type protocol: list[str]
         """
         self._protocol = protocol
+
+    @property
+    def public_border_group(self):
+        """Gets the public_border_group of this AvailabilityZone.
+
+        可用区组，如：center
+
+        :return: The public_border_group of this AvailabilityZone.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this AvailabilityZone.
+
+        可用区组，如：center
+
+        :param public_border_group: The public_border_group of this AvailabilityZone.
+        :type public_border_group: str
+        """
+        self._public_border_group = public_border_group
+
+    @property
+    def category(self):
+        """Gets the category of this AvailabilityZone.
+
+        范围编码，0表示center，21表示homezone
+
+        :return: The category of this AvailabilityZone.
+        :rtype: int
+        """
+        return self._category
+
+    @category.setter
+    def category(self, category):
+        """Sets the category of this AvailabilityZone.
+
+        范围编码，0表示center，21表示homezone
+
+        :param category: The category of this AvailabilityZone.
+        :type category: int
+        """
+        self._category = category
 
     def to_dict(self):
         """Returns the model properties as a dict"""

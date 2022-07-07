@@ -47,15 +47,15 @@ class Connections:
 
         :param id: 终端节点ID。
         :type id: str
-        :param status: 状态。
+        :param status: 终端节点状态。 - accepted：允许该终端节点连接。 - rejected：拒绝该终端节点连接。
         :type status: str
         :param max_session: 最大连接数。
         :type max_session: str
         :param specification_name: 终端节点名称。
         :type specification_name: str
-        :param created_at: 创建时间。
+        :param created_at: 创建时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
         :type created_at: str
-        :param update_at: 更新时间。
+        :param update_at: 更新时间。默认为null。
         :type update_at: str
         :param domain_id: 拥有者。
         :type domain_id: str
@@ -113,7 +113,7 @@ class Connections:
     def status(self):
         """Gets the status of this Connections.
 
-        状态。
+        终端节点状态。 - accepted：允许该终端节点连接。 - rejected：拒绝该终端节点连接。
 
         :return: The status of this Connections.
         :rtype: str
@@ -124,7 +124,7 @@ class Connections:
     def status(self, status):
         """Sets the status of this Connections.
 
-        状态。
+        终端节点状态。 - accepted：允许该终端节点连接。 - rejected：拒绝该终端节点连接。
 
         :param status: The status of this Connections.
         :type status: str
@@ -179,7 +179,7 @@ class Connections:
     def created_at(self):
         """Gets the created_at of this Connections.
 
-        创建时间。
+        创建时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
 
         :return: The created_at of this Connections.
         :rtype: str
@@ -190,7 +190,7 @@ class Connections:
     def created_at(self, created_at):
         """Sets the created_at of this Connections.
 
-        创建时间。
+        创建时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
 
         :param created_at: The created_at of this Connections.
         :type created_at: str
@@ -201,7 +201,7 @@ class Connections:
     def update_at(self):
         """Gets the update_at of this Connections.
 
-        更新时间。
+        更新时间。默认为null。
 
         :return: The update_at of this Connections.
         :rtype: str
@@ -212,7 +212,7 @@ class Connections:
     def update_at(self, update_at):
         """Sets the update_at of this Connections.
 
-        更新时间。
+        更新时间。默认为null。
 
         :param update_at: The update_at of this Connections.
         :type update_at: str

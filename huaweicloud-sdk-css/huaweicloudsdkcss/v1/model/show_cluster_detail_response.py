@@ -40,7 +40,7 @@ class ShowClusterDetailResponse(SdkResponse):
         'disk_encrypted': 'bool',
         'authority_enable': 'bool',
         'backup_available': 'bool',
-        'action_progress': 'ClusterDetailActionProgress',
+        'action_progress': 'object',
         'actions': 'list[ActionReq]',
         'enterprise_project_id': 'str',
         'tags': 'list[ClusterDetailTags]',
@@ -89,17 +89,17 @@ class ShowClusterDetailResponse(SdkResponse):
         :type public_kibana_resp: :class:`huaweicloudsdkcss.v1.PublicKibanaRespBody`
         :param elb_white_list: 
         :type elb_white_list: :class:`huaweicloudsdkcss.v1.ElbWhiteListResp`
-        :param updated: 集群上次修改时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。
+        :param updated: 集群上次修改时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
         :type updated: str
         :param name: 集群名称。
         :type name: str
         :param public_ip: 公网IP信息。
         :type public_ip: str
-        :param created: 集群创建时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。
+        :param created: 集群创建时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
         :type created: str
         :param id: 集群ID。
         :type id: str
-        :param status: 查询返回值。  - 100：操作进行中，如创建中。 - 200：可用。 - 303：不可用，如创建失败。
+        :param status: 集群状态值。  - 100：操作进行中，如创建中。 - 200：可用。 - 303：不可用，如创建失败。
         :type status: str
         :param endpoint: 用户VPC访问IP地址和端口号。
         :type endpoint: str
@@ -109,18 +109,18 @@ class ShowClusterDetailResponse(SdkResponse):
         :type subnet_id: str
         :param security_group_id: 安全组ID。
         :type security_group_id: str
-        :param bandwidth_size: 公网带宽大小。
+        :param bandwidth_size: 公网带宽大小。单位：Mbit/s
         :type bandwidth_size: int
-        :param https_enable: 通信加密状态。 false：未设置通信加密。 true：已设置通信加密。
+        :param https_enable: 通信加密状态。 - false：未设置通信加密。 - true：已设置通信加密。
         :type https_enable: bool
         :param disk_encrypted: 磁盘是否加密。  - true : 磁盘已加密。 - false : 磁盘未加密。
         :type disk_encrypted: bool
-        :param authority_enable: 是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。 - true：表示集群开启认证。 - false：表示集群不开启认证。
+        :param authority_enable: 是否开启认证，取值范围为true或false。默认关闭认证功能。 - true：表示集群开启认证。 - false：表示集群不开启认证。
         :type authority_enable: bool
-        :param backup_available: 快照是否开启。
+        :param backup_available: 快照是否开启。 - true: 快照开启状态。 - false: 快照关闭状态。
         :type backup_available: bool
-        :param action_progress: 
-        :type action_progress: :class:`huaweicloudsdkcss.v1.ClusterDetailActionProgress`
+        :param action_progress: 集群行为进度，显示创建或扩容进度的百分比。
+        :type action_progress: object
         :param actions: 集群当前行为集合。
         :type actions: list[:class:`huaweicloudsdkcss.v1.ActionReq`]
         :param enterprise_project_id: 集群所属的企业项目ID。  如果集群所属用户没有开通企业项目，则不会返回该参数。
@@ -129,7 +129,7 @@ class ShowClusterDetailResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdkcss.v1.ClusterDetailTags`]
         :param failed_reasons: 
         :type failed_reasons: :class:`huaweicloudsdkcss.v1.ClusterDetailFailedReasons`
-        :param period: 是为包周期集群。 - \&quot;true\&quot; 表示是包周期计费的集群。 - \&quot;false\&quot; 表示是按需计费的集群。
+        :param period: 是否为包周期集群。 - \&quot;true\&quot; 表示是包周期计费的集群。 - \&quot;false\&quot; 表示是按需计费的集群。
         :type period: bool
         """
         
@@ -299,7 +299,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def updated(self):
         """Gets the updated of this ShowClusterDetailResponse.
 
-        集群上次修改时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。
+        集群上次修改时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
 
         :return: The updated of this ShowClusterDetailResponse.
         :rtype: str
@@ -310,7 +310,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def updated(self, updated):
         """Sets the updated of this ShowClusterDetailResponse.
 
-        集群上次修改时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。
+        集群上次修改时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
 
         :param updated: The updated of this ShowClusterDetailResponse.
         :type updated: str
@@ -365,7 +365,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def created(self):
         """Gets the created of this ShowClusterDetailResponse.
 
-        集群创建时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。
+        集群创建时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
 
         :return: The created of this ShowClusterDetailResponse.
         :rtype: str
@@ -376,7 +376,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def created(self, created):
         """Sets the created of this ShowClusterDetailResponse.
 
-        集群创建时间，格式为ISO8601: CCYY-MM-DDThh:mm:ss。
+        集群创建时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
 
         :param created: The created of this ShowClusterDetailResponse.
         :type created: str
@@ -409,7 +409,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowClusterDetailResponse.
 
-        查询返回值。  - 100：操作进行中，如创建中。 - 200：可用。 - 303：不可用，如创建失败。
+        集群状态值。  - 100：操作进行中，如创建中。 - 200：可用。 - 303：不可用，如创建失败。
 
         :return: The status of this ShowClusterDetailResponse.
         :rtype: str
@@ -420,7 +420,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowClusterDetailResponse.
 
-        查询返回值。  - 100：操作进行中，如创建中。 - 200：可用。 - 303：不可用，如创建失败。
+        集群状态值。  - 100：操作进行中，如创建中。 - 200：可用。 - 303：不可用，如创建失败。
 
         :param status: The status of this ShowClusterDetailResponse.
         :type status: str
@@ -519,7 +519,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def bandwidth_size(self):
         """Gets the bandwidth_size of this ShowClusterDetailResponse.
 
-        公网带宽大小。
+        公网带宽大小。单位：Mbit/s
 
         :return: The bandwidth_size of this ShowClusterDetailResponse.
         :rtype: int
@@ -530,7 +530,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def bandwidth_size(self, bandwidth_size):
         """Sets the bandwidth_size of this ShowClusterDetailResponse.
 
-        公网带宽大小。
+        公网带宽大小。单位：Mbit/s
 
         :param bandwidth_size: The bandwidth_size of this ShowClusterDetailResponse.
         :type bandwidth_size: int
@@ -541,7 +541,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def https_enable(self):
         """Gets the https_enable of this ShowClusterDetailResponse.
 
-        通信加密状态。 false：未设置通信加密。 true：已设置通信加密。
+        通信加密状态。 - false：未设置通信加密。 - true：已设置通信加密。
 
         :return: The https_enable of this ShowClusterDetailResponse.
         :rtype: bool
@@ -552,7 +552,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def https_enable(self, https_enable):
         """Sets the https_enable of this ShowClusterDetailResponse.
 
-        通信加密状态。 false：未设置通信加密。 true：已设置通信加密。
+        通信加密状态。 - false：未设置通信加密。 - true：已设置通信加密。
 
         :param https_enable: The https_enable of this ShowClusterDetailResponse.
         :type https_enable: bool
@@ -585,7 +585,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def authority_enable(self):
         """Gets the authority_enable of this ShowClusterDetailResponse.
 
-        是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。 - true：表示集群开启认证。 - false：表示集群不开启认证。
+        是否开启认证，取值范围为true或false。默认关闭认证功能。 - true：表示集群开启认证。 - false：表示集群不开启认证。
 
         :return: The authority_enable of this ShowClusterDetailResponse.
         :rtype: bool
@@ -596,7 +596,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def authority_enable(self, authority_enable):
         """Sets the authority_enable of this ShowClusterDetailResponse.
 
-        是否开启认证，取值范围为true或false。默认关闭认证功能。当开启认证时，httpsEnable需要设置为true。 - true：表示集群开启认证。 - false：表示集群不开启认证。
+        是否开启认证，取值范围为true或false。默认关闭认证功能。 - true：表示集群开启认证。 - false：表示集群不开启认证。
 
         :param authority_enable: The authority_enable of this ShowClusterDetailResponse.
         :type authority_enable: bool
@@ -607,7 +607,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def backup_available(self):
         """Gets the backup_available of this ShowClusterDetailResponse.
 
-        快照是否开启。
+        快照是否开启。 - true: 快照开启状态。 - false: 快照关闭状态。
 
         :return: The backup_available of this ShowClusterDetailResponse.
         :rtype: bool
@@ -618,7 +618,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def backup_available(self, backup_available):
         """Sets the backup_available of this ShowClusterDetailResponse.
 
-        快照是否开启。
+        快照是否开启。 - true: 快照开启状态。 - false: 快照关闭状态。
 
         :param backup_available: The backup_available of this ShowClusterDetailResponse.
         :type backup_available: bool
@@ -629,9 +629,10 @@ class ShowClusterDetailResponse(SdkResponse):
     def action_progress(self):
         """Gets the action_progress of this ShowClusterDetailResponse.
 
+        集群行为进度，显示创建或扩容进度的百分比。
 
         :return: The action_progress of this ShowClusterDetailResponse.
-        :rtype: :class:`huaweicloudsdkcss.v1.ClusterDetailActionProgress`
+        :rtype: object
         """
         return self._action_progress
 
@@ -639,9 +640,10 @@ class ShowClusterDetailResponse(SdkResponse):
     def action_progress(self, action_progress):
         """Sets the action_progress of this ShowClusterDetailResponse.
 
+        集群行为进度，显示创建或扩容进度的百分比。
 
         :param action_progress: The action_progress of this ShowClusterDetailResponse.
-        :type action_progress: :class:`huaweicloudsdkcss.v1.ClusterDetailActionProgress`
+        :type action_progress: object
         """
         self._action_progress = action_progress
 
@@ -735,7 +737,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def period(self):
         """Gets the period of this ShowClusterDetailResponse.
 
-        是为包周期集群。 - \"true\" 表示是包周期计费的集群。 - \"false\" 表示是按需计费的集群。
+        是否为包周期集群。 - \"true\" 表示是包周期计费的集群。 - \"false\" 表示是按需计费的集群。
 
         :return: The period of this ShowClusterDetailResponse.
         :rtype: bool
@@ -746,7 +748,7 @@ class ShowClusterDetailResponse(SdkResponse):
     def period(self, period):
         """Sets the period of this ShowClusterDetailResponse.
 
-        是为包周期集群。 - \"true\" 表示是包周期计费的集群。 - \"false\" 表示是按需计费的集群。
+        是否为包周期集群。 - \"true\" 表示是包周期计费的集群。 - \"false\" 表示是按需计费的集群。
 
         :param period: The period of this ShowClusterDetailResponse.
         :type period: bool

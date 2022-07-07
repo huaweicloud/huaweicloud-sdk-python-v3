@@ -33,7 +33,7 @@ class UpdatePublicKibanaBandwidthReqBandWidth:
 
         The model defined in huaweicloud sdk
 
-        :param size: 修改后的带宽。
+        :param size: 修改后的带宽大小。
         :type size: int
         """
         
@@ -48,7 +48,7 @@ class UpdatePublicKibanaBandwidthReqBandWidth:
     def size(self):
         """Gets the size of this UpdatePublicKibanaBandwidthReqBandWidth.
 
-        修改后的带宽。
+        修改后的带宽大小。
 
         :return: The size of this UpdatePublicKibanaBandwidthReqBandWidth.
         :rtype: int
@@ -59,7 +59,7 @@ class UpdatePublicKibanaBandwidthReqBandWidth:
     def size(self, size):
         """Sets the size of this UpdatePublicKibanaBandwidthReqBandWidth.
 
-        修改后的带宽。
+        修改后的带宽大小。
 
         :param size: The size of this UpdatePublicKibanaBandwidthReqBandWidth.
         :type size: int

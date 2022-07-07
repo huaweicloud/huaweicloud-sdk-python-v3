@@ -22,7 +22,7 @@ class HealthCodeWordsBlockList:
 
     openapi_types = {
         'words': 'str',
-        'location': 'list[int]',
+        'location': 'list[list[int]]',
         'confidence': 'float'
     }
 
@@ -40,7 +40,7 @@ class HealthCodeWordsBlockList:
         :param words: 文字块识别结果。 
         :type words: str
         :param location: 识别到的文字块的区域位置信息，列表形式，分别表示文字块4个顶点的（x,y）坐标。采用图像坐标系，图像坐标原点为图像左上角，x轴沿水平方向，y轴沿竖直方向。 
-        :type location: list[int]
+        :type location: list[list[int]]
         :param confidence: 各个字段的置信度 
         :type confidence: float
         """
@@ -88,7 +88,7 @@ class HealthCodeWordsBlockList:
         识别到的文字块的区域位置信息，列表形式，分别表示文字块4个顶点的（x,y）坐标。采用图像坐标系，图像坐标原点为图像左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :return: The location of this HealthCodeWordsBlockList.
-        :rtype: list[int]
+        :rtype: list[list[int]]
         """
         return self._location
 
@@ -99,7 +99,7 @@ class HealthCodeWordsBlockList:
         识别到的文字块的区域位置信息，列表形式，分别表示文字块4个顶点的（x,y）坐标。采用图像坐标系，图像坐标原点为图像左上角，x轴沿水平方向，y轴沿竖直方向。 
 
         :param location: The location of this HealthCodeWordsBlockList.
-        :type location: list[int]
+        :type location: list[list[int]]
         """
         self._location = location
 

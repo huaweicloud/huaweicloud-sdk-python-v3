@@ -31,7 +31,9 @@ class CreatePoolOption:
         'protocol': 'str',
         'session_persistence': 'CreatePoolSessionPersistenceOption',
         'slow_start': 'CreatePoolSlowStartOption',
-        'member_deletion_protection_enable': 'bool'
+        'member_deletion_protection_enable': 'bool',
+        'vpc_id': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -45,10 +47,12 @@ class CreatePoolOption:
         'protocol': 'protocol',
         'session_persistence': 'session_persistence',
         'slow_start': 'slow_start',
-        'member_deletion_protection_enable': 'member_deletion_protection_enable'
+        'member_deletion_protection_enable': 'member_deletion_protection_enable',
+        'vpc_id': 'vpc_id',
+        'type': 'type'
     }
 
-    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, listener_id=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None):
+    def __init__(self, admin_state_up=None, description=None, lb_algorithm=None, listener_id=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, session_persistence=None, slow_start=None, member_deletion_protection_enable=None, vpc_id=None, type=None):
         """CreatePoolOption
 
         The model defined in huaweicloud sdk
@@ -57,17 +61,17 @@ class CreatePoolOption:
         :type admin_state_up: bool
         :param description: 后端云服务器组的描述信息。
         :type description: str
-        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。   使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
         :type lb_algorithm: str
-        :param listener_id: 后端云服务器组关联的监听器的ID。  使用说明： - listener_id和loadbalancer_id至少指定一个。
+        :param listener_id: 后端云服务器组关联的监听器的ID。   使用说明：listener_id，loadbalancer_id，type至少指定一个。共享型实例只能使用指定loadbalancer_id或指定listener_id的后端服务器组。
         :type listener_id: str
-        :param loadbalancer_id: 后端云服务器组关联的负载均衡器ID。  使用说明： - listener_id和loadbalancer_id中至少指定一个。
+        :param loadbalancer_id: 后端云服务器组关联的负载均衡器ID。   使用说明：listener_id，loadbalancer_id，type中至少指定一个。共享型实例只能使用指定loadbalancer_id或指定listener_id的后端服务器组。
         :type loadbalancer_id: str
         :param name: 后端云服务器组的名称。
         :type name: str
         :param project_id: 后端云服务器组所属的项目ID。
         :type project_id: str
-        :param protocol: 后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
+        :param protocol: 后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。   使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
         :type protocol: str
         :param session_persistence: 
         :type session_persistence: :class:`huaweicloudsdkelb.v3.CreatePoolSessionPersistenceOption`
@@ -75,6 +79,10 @@ class CreatePoolOption:
         :type slow_start: :class:`huaweicloudsdkelb.v3.CreatePoolSlowStartOption`
         :param member_deletion_protection_enable: 是否开启删除保护。取值：false不开启，true开启，默认false。 &gt; 退场时需要先关闭所有资源的删除保护开关。
         :type member_deletion_protection_enable: bool
+        :param vpc_id: 后端云服务器组关联的虚拟私有云的ID。   使用说明： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。   没有指定vpc_id的约束： - 后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。
+        :type vpc_id: str
+        :param type: 后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。  使用说明： - 不传表示允许任意类型的后端，并返回type为空字符串。 - listener_id，loadbalancer_id，type至少指定一个。共享型实例只能使用指定loadbalancer_id或指定listener_id的后端服务器组。
+        :type type: str
         """
         
         
@@ -90,6 +98,8 @@ class CreatePoolOption:
         self._session_persistence = None
         self._slow_start = None
         self._member_deletion_protection_enable = None
+        self._vpc_id = None
+        self._type = None
         self.discriminator = None
 
         if admin_state_up is not None:
@@ -112,6 +122,10 @@ class CreatePoolOption:
             self.slow_start = slow_start
         if member_deletion_protection_enable is not None:
             self.member_deletion_protection_enable = member_deletion_protection_enable
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
+        if type is not None:
+            self.type = type
 
     @property
     def admin_state_up(self):
@@ -161,7 +175,7 @@ class CreatePoolOption:
     def lb_algorithm(self):
         """Gets the lb_algorithm of this CreatePoolOption.
 
-        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。   使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
 
         :return: The lb_algorithm of this CreatePoolOption.
         :rtype: str
@@ -172,7 +186,7 @@ class CreatePoolOption:
     def lb_algorithm(self, lb_algorithm):
         """Sets the lb_algorithm of this CreatePoolOption.
 
-        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。   使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
 
         :param lb_algorithm: The lb_algorithm of this CreatePoolOption.
         :type lb_algorithm: str
@@ -183,7 +197,7 @@ class CreatePoolOption:
     def listener_id(self):
         """Gets the listener_id of this CreatePoolOption.
 
-        后端云服务器组关联的监听器的ID。  使用说明： - listener_id和loadbalancer_id至少指定一个。
+        后端云服务器组关联的监听器的ID。   使用说明：listener_id，loadbalancer_id，type至少指定一个。共享型实例只能使用指定loadbalancer_id或指定listener_id的后端服务器组。
 
         :return: The listener_id of this CreatePoolOption.
         :rtype: str
@@ -194,7 +208,7 @@ class CreatePoolOption:
     def listener_id(self, listener_id):
         """Sets the listener_id of this CreatePoolOption.
 
-        后端云服务器组关联的监听器的ID。  使用说明： - listener_id和loadbalancer_id至少指定一个。
+        后端云服务器组关联的监听器的ID。   使用说明：listener_id，loadbalancer_id，type至少指定一个。共享型实例只能使用指定loadbalancer_id或指定listener_id的后端服务器组。
 
         :param listener_id: The listener_id of this CreatePoolOption.
         :type listener_id: str
@@ -205,7 +219,7 @@ class CreatePoolOption:
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this CreatePoolOption.
 
-        后端云服务器组关联的负载均衡器ID。  使用说明： - listener_id和loadbalancer_id中至少指定一个。
+        后端云服务器组关联的负载均衡器ID。   使用说明：listener_id，loadbalancer_id，type中至少指定一个。共享型实例只能使用指定loadbalancer_id或指定listener_id的后端服务器组。
 
         :return: The loadbalancer_id of this CreatePoolOption.
         :rtype: str
@@ -216,7 +230,7 @@ class CreatePoolOption:
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this CreatePoolOption.
 
-        后端云服务器组关联的负载均衡器ID。  使用说明： - listener_id和loadbalancer_id中至少指定一个。
+        后端云服务器组关联的负载均衡器ID。   使用说明：listener_id，loadbalancer_id，type中至少指定一个。共享型实例只能使用指定loadbalancer_id或指定listener_id的后端服务器组。
 
         :param loadbalancer_id: The loadbalancer_id of this CreatePoolOption.
         :type loadbalancer_id: str
@@ -271,7 +285,7 @@ class CreatePoolOption:
     def protocol(self):
         """Gets the protocol of this CreatePoolOption.
 
-        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
+        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。   使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
 
         :return: The protocol of this CreatePoolOption.
         :rtype: str
@@ -282,7 +296,7 @@ class CreatePoolOption:
     def protocol(self, protocol):
         """Sets the protocol of this CreatePoolOption.
 
-        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
+        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。   使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
 
         :param protocol: The protocol of this CreatePoolOption.
         :type protocol: str
@@ -350,6 +364,50 @@ class CreatePoolOption:
         :type member_deletion_protection_enable: bool
         """
         self._member_deletion_protection_enable = member_deletion_protection_enable
+
+    @property
+    def vpc_id(self):
+        """Gets the vpc_id of this CreatePoolOption.
+
+        后端云服务器组关联的虚拟私有云的ID。   使用说明： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。   没有指定vpc_id的约束： - 后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。
+
+        :return: The vpc_id of this CreatePoolOption.
+        :rtype: str
+        """
+        return self._vpc_id
+
+    @vpc_id.setter
+    def vpc_id(self, vpc_id):
+        """Sets the vpc_id of this CreatePoolOption.
+
+        后端云服务器组关联的虚拟私有云的ID。   使用说明： - 只能挂载到该虚拟私有云下。 - 只能添加该虚拟私有云下的后端服务器或跨VPC的后端服务器。 - type必须指定为instance。   没有指定vpc_id的约束： - 后续添加后端服务器时，vpc_id由后端服务器所在的虚拟私有云确定。
+
+        :param vpc_id: The vpc_id of this CreatePoolOption.
+        :type vpc_id: str
+        """
+        self._vpc_id = vpc_id
+
+    @property
+    def type(self):
+        """Gets the type of this CreatePoolOption.
+
+        后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。  使用说明： - 不传表示允许任意类型的后端，并返回type为空字符串。 - listener_id，loadbalancer_id，type至少指定一个。共享型实例只能使用指定loadbalancer_id或指定listener_id的后端服务器组。
+
+        :return: The type of this CreatePoolOption.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this CreatePoolOption.
+
+        后端服务器组的类型。  取值： - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。 - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。  使用说明： - 不传表示允许任意类型的后端，并返回type为空字符串。 - listener_id，loadbalancer_id，type至少指定一个。共享型实例只能使用指定loadbalancer_id或指定listener_id的后端服务器组。
+
+        :param type: The type of this CreatePoolOption.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -71,7 +71,7 @@ class NodeSpec:
         :type flavor: str
         :param az: 待创建节点所在的可用区，需要指定可用区（AZ）的名称。 [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint?CCE)](tag:hws) [CCE支持的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/intl/zh-cn/endpoint?CCE)](tag:hws_hk) 
         :type az: str
-        :param os: 节点的操作系统类型。  - 对于虚拟机节点，可以配置为“EulerOS”、“CentOS”、“Debian”、“Ubuntu”。默认为\&quot;EulerOS\&quot;。  &gt; 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。  - 对于自动付费包周期的裸金属节点，只支持EulerOS 2.3、EulerOS 2.5、EulerOS 2.8。  - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。
+        :param os: 节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。  &gt; - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。  &gt; - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。
         :type os: str
         :param login: 
         :type login: :class:`huaweicloudsdkcce.v3.Login`
@@ -87,7 +87,7 @@ class NodeSpec:
         :type node_nic_spec: :class:`huaweicloudsdkcce.v3.NodeNicSpec`
         :param count: 批量创建时节点的个数，必须为大于等于1，小于等于最大限额的正整数。作用于节点池时该项可以不填写。
         :type count: int
-        :param billing_mode: 节点的计费模式：取值为 0（按需付费）、1（包周期）、2（已废弃：自动付费包周期）
+        :param billing_mode: 节点的计费模式： -  0: 按需付费 [- 1: 包周期](tag:hws,hws_hk) [- 2: 已废弃：自动付费包周期](tag:hws,hws_hk) 
         :type billing_mode: int
         :param taints: 支持给创建出来的节点加Taints来设置反亲和性，taints配置不超过20条。每条Taints包含以下3个参数：  - Key：必须以字母或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符；另外可以使用DNS子域作为前缀。 - Value：必须以字符或数字开头，可以包含字母、数字、连字符、下划线和点，最长63个字符。 - Effect：只可选NoSchedule，PreferNoSchedule或NoExecute。  示例：  &#x60;&#x60;&#x60; \&quot;taints\&quot;: [{   \&quot;key\&quot;: \&quot;status\&quot;,   \&quot;value\&quot;: \&quot;unavailable\&quot;,   \&quot;effect\&quot;: \&quot;NoSchedule\&quot; }, {   \&quot;key\&quot;: \&quot;looks\&quot;,   \&quot;value\&quot;: \&quot;bad\&quot;,   \&quot;effect\&quot;: \&quot;NoSchedule\&quot; }] &#x60;&#x60;&#x60; 
         :type taints: list[:class:`huaweicloudsdkcce.v3.Taint`]
@@ -95,7 +95,7 @@ class NodeSpec:
         :type k8s_tags: dict(str, str)
         :param ecs_group_id: 云服务器组ID，若指定，将节点创建在该云服务器组下
         :type ecs_group_id: str
-        :param dedicated_host_id: 指定DeH主机的ID，将节点调度到自己的DeH上。\\n&gt;创建节点池添加节点时不支持该参数。 
+        :param dedicated_host_id: 指定DeH主机的ID，将节点调度到自己的DeH上。 &gt;创建节点池添加节点时不支持该参数。 
         :type dedicated_host_id: str
         :param user_tags: 云服务器标签，键必须唯一，CCE支持的最大用户自定义标签数量依region而定，自定义标签数上限为8个。
         :type user_tags: list[:class:`huaweicloudsdkcce.v3.UserTag`]
@@ -207,7 +207,7 @@ class NodeSpec:
     def os(self):
         """Gets the os of this NodeSpec.
 
-        节点的操作系统类型。  - 对于虚拟机节点，可以配置为“EulerOS”、“CentOS”、“Debian”、“Ubuntu”。默认为\"EulerOS\"。  > 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。  - 对于自动付费包周期的裸金属节点，只支持EulerOS 2.3、EulerOS 2.5、EulerOS 2.8。  - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。
+        节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。  > - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。  > - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。
 
         :return: The os of this NodeSpec.
         :rtype: str
@@ -218,7 +218,7 @@ class NodeSpec:
     def os(self, os):
         """Sets the os of this NodeSpec.
 
-        节点的操作系统类型。  - 对于虚拟机节点，可以配置为“EulerOS”、“CentOS”、“Debian”、“Ubuntu”。默认为\"EulerOS\"。  > 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。  - 对于自动付费包周期的裸金属节点，只支持EulerOS 2.3、EulerOS 2.5、EulerOS 2.8。  - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。
+        节点的操作系统类型。具体支持的操作系统请参见[节点操作系统说明](node-os.xml)。  > - 系统会根据集群版本自动选择支持的系统版本。当前集群版本不支持该系统类型，则会报错。  > - 若在创建节点时指定了extendParam中的alpha.cce/NodeImageID参数，可以不填写此参数。
 
         :param os: The os of this NodeSpec.
         :type os: str
@@ -373,7 +373,7 @@ class NodeSpec:
     def billing_mode(self):
         """Gets the billing_mode of this NodeSpec.
 
-        节点的计费模式：取值为 0（按需付费）、1（包周期）、2（已废弃：自动付费包周期）
+        节点的计费模式： -  0: 按需付费 [- 1: 包周期](tag:hws,hws_hk) [- 2: 已废弃：自动付费包周期](tag:hws,hws_hk) 
 
         :return: The billing_mode of this NodeSpec.
         :rtype: int
@@ -384,7 +384,7 @@ class NodeSpec:
     def billing_mode(self, billing_mode):
         """Sets the billing_mode of this NodeSpec.
 
-        节点的计费模式：取值为 0（按需付费）、1（包周期）、2（已废弃：自动付费包周期）
+        节点的计费模式： -  0: 按需付费 [- 1: 包周期](tag:hws,hws_hk) [- 2: 已废弃：自动付费包周期](tag:hws,hws_hk) 
 
         :param billing_mode: The billing_mode of this NodeSpec.
         :type billing_mode: int
@@ -461,7 +461,7 @@ class NodeSpec:
     def dedicated_host_id(self):
         """Gets the dedicated_host_id of this NodeSpec.
 
-        指定DeH主机的ID，将节点调度到自己的DeH上。\\n>创建节点池添加节点时不支持该参数。 
+        指定DeH主机的ID，将节点调度到自己的DeH上。 >创建节点池添加节点时不支持该参数。 
 
         :return: The dedicated_host_id of this NodeSpec.
         :rtype: str
@@ -472,7 +472,7 @@ class NodeSpec:
     def dedicated_host_id(self, dedicated_host_id):
         """Sets the dedicated_host_id of this NodeSpec.
 
-        指定DeH主机的ID，将节点调度到自己的DeH上。\\n>创建节点池添加节点时不支持该参数。 
+        指定DeH主机的ID，将节点调度到自己的DeH上。 >创建节点池添加节点时不支持该参数。 
 
         :param dedicated_host_id: The dedicated_host_id of this NodeSpec.
         :type dedicated_host_id: str

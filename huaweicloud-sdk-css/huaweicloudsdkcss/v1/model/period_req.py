@@ -41,9 +41,9 @@ class PeriodReq:
 
         The model defined in huaweicloud sdk
 
-        :param period_type: 订购周期类型。 - 2: 包月（参数范围：1-9）。 - 3: 包年（参数范围：1-3）。
+        :param period_type: 订购周期类型。 - 2: 包月。 - 3: 包年。
         :type period_type: int
-        :param period_num: 订购周期数。
+        :param period_num: 订购周期数。 - 若选择包月（参数范围：1-9）。 - 若选择包年（参数范围：1-3）。
         :type period_num: int
         :param is_auto_renew: 是否自动续订，为空时表示不自动续订 - 1: 自动续订。 - 2: 不自动续订（默认）。
         :type is_auto_renew: int
@@ -75,7 +75,7 @@ class PeriodReq:
     def period_type(self):
         """Gets the period_type of this PeriodReq.
 
-        订购周期类型。 - 2: 包月（参数范围：1-9）。 - 3: 包年（参数范围：1-3）。
+        订购周期类型。 - 2: 包月。 - 3: 包年。
 
         :return: The period_type of this PeriodReq.
         :rtype: int
@@ -86,7 +86,7 @@ class PeriodReq:
     def period_type(self, period_type):
         """Sets the period_type of this PeriodReq.
 
-        订购周期类型。 - 2: 包月（参数范围：1-9）。 - 3: 包年（参数范围：1-3）。
+        订购周期类型。 - 2: 包月。 - 3: 包年。
 
         :param period_type: The period_type of this PeriodReq.
         :type period_type: int
@@ -97,7 +97,7 @@ class PeriodReq:
     def period_num(self):
         """Gets the period_num of this PeriodReq.
 
-        订购周期数。
+        订购周期数。 - 若选择包月（参数范围：1-9）。 - 若选择包年（参数范围：1-3）。
 
         :return: The period_num of this PeriodReq.
         :rtype: int
@@ -108,7 +108,7 @@ class PeriodReq:
     def period_num(self, period_num):
         """Sets the period_num of this PeriodReq.
 
-        订购周期数。
+        订购周期数。 - 若选择包月（参数范围：1-9）。 - 若选择包年（参数范围：1-3）。
 
         :param period_num: The period_num of this PeriodReq.
         :type period_num: int

@@ -35,7 +35,7 @@ class Login:
 
         The model defined in huaweicloud sdk
 
-        :param ssh_key: 选择密钥对方式登录时的密钥对名称。密钥对和密码登录方式二者必选其一。
+        :param ssh_key: 选择密钥对方式登录时的密钥对名称。
         :type ssh_key: str
         :param user_password: 
         :type user_password: :class:`huaweicloudsdkcce.v3.UserPassword`
@@ -56,7 +56,7 @@ class Login:
     def ssh_key(self):
         """Gets the ssh_key of this Login.
 
-        选择密钥对方式登录时的密钥对名称。密钥对和密码登录方式二者必选其一。
+        选择密钥对方式登录时的密钥对名称。
 
         :return: The ssh_key of this Login.
         :rtype: str
@@ -67,7 +67,7 @@ class Login:
     def ssh_key(self, ssh_key):
         """Sets the ssh_key of this Login.
 
-        选择密钥对方式登录时的密钥对名称。密钥对和密码登录方式二者必选其一。
+        选择密钥对方式登录时的密钥对名称。
 
         :param ssh_key: The ssh_key of this Login.
         :type ssh_key: str

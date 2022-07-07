@@ -22,15 +22,19 @@ class CreateEdgeModuleReqDTO:
 
     openapi_types = {
         'edge_app_id': 'str',
-        'app_version': 'str'
+        'app_version': 'str',
+        'module_name': 'str',
+        'container_settings': 'ContainerSettingsReqDTO'
     }
 
     attribute_map = {
         'edge_app_id': 'edge_app_id',
-        'app_version': 'app_version'
+        'app_version': 'app_version',
+        'module_name': 'module_name',
+        'container_settings': 'container_settings'
     }
 
-    def __init__(self, edge_app_id=None, app_version=None):
+    def __init__(self, edge_app_id=None, app_version=None, module_name=None, container_settings=None):
         """CreateEdgeModuleReqDTO
 
         The model defined in huaweicloud sdk
@@ -39,16 +43,26 @@ class CreateEdgeModuleReqDTO:
         :type edge_app_id: str
         :param app_version: 边缘应用版本
         :type app_version: str
+        :param module_name: 边缘模块名称
+        :type module_name: str
+        :param container_settings: 
+        :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
         """
         
         
 
         self._edge_app_id = None
         self._app_version = None
+        self._module_name = None
+        self._container_settings = None
         self.discriminator = None
 
         self.edge_app_id = edge_app_id
         self.app_version = app_version
+        if module_name is not None:
+            self.module_name = module_name
+        if container_settings is not None:
+            self.container_settings = container_settings
 
     @property
     def edge_app_id(self):
@@ -93,6 +107,48 @@ class CreateEdgeModuleReqDTO:
         :type app_version: str
         """
         self._app_version = app_version
+
+    @property
+    def module_name(self):
+        """Gets the module_name of this CreateEdgeModuleReqDTO.
+
+        边缘模块名称
+
+        :return: The module_name of this CreateEdgeModuleReqDTO.
+        :rtype: str
+        """
+        return self._module_name
+
+    @module_name.setter
+    def module_name(self, module_name):
+        """Sets the module_name of this CreateEdgeModuleReqDTO.
+
+        边缘模块名称
+
+        :param module_name: The module_name of this CreateEdgeModuleReqDTO.
+        :type module_name: str
+        """
+        self._module_name = module_name
+
+    @property
+    def container_settings(self):
+        """Gets the container_settings of this CreateEdgeModuleReqDTO.
+
+
+        :return: The container_settings of this CreateEdgeModuleReqDTO.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
+        """
+        return self._container_settings
+
+    @container_settings.setter
+    def container_settings(self, container_settings):
+        """Sets the container_settings of this CreateEdgeModuleReqDTO.
+
+
+        :param container_settings: The container_settings of this CreateEdgeModuleReqDTO.
+        :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsReqDTO`
+        """
+        self._container_settings = container_settings
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -33,7 +33,7 @@ class UpdatePublicKibanaWhitelistReq:
 
         The model defined in huaweicloud sdk
 
-        :param white_list: 白名单。
+        :param white_list: 允许kibana公网访问的白名单ip或网段，以逗号隔开，不可重复。
         :type white_list: str
         """
         
@@ -48,7 +48,7 @@ class UpdatePublicKibanaWhitelistReq:
     def white_list(self):
         """Gets the white_list of this UpdatePublicKibanaWhitelistReq.
 
-        白名单。
+        允许kibana公网访问的白名单ip或网段，以逗号隔开，不可重复。
 
         :return: The white_list of this UpdatePublicKibanaWhitelistReq.
         :rtype: str
@@ -59,7 +59,7 @@ class UpdatePublicKibanaWhitelistReq:
     def white_list(self, white_list):
         """Sets the white_list of this UpdatePublicKibanaWhitelistReq.
 
-        白名单。
+        允许kibana公网访问的白名单ip或网段，以逗号隔开，不可重复。
 
         :param white_list: The white_list of this UpdatePublicKibanaWhitelistReq.
         :type white_list: str

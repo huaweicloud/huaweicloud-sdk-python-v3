@@ -38,7 +38,9 @@ class ListPoolsRequest:
         'member_device_id': 'list[str]',
         'member_deletion_protection_enable': 'bool',
         'listener_id': 'list[str]',
-        'member_instance_id': 'list[str]'
+        'member_instance_id': 'list[str]',
+        'vpc_id': 'list[str]',
+        'type': 'list[str]'
     }
 
     attribute_map = {
@@ -59,19 +61,21 @@ class ListPoolsRequest:
         'member_device_id': 'member_device_id',
         'member_deletion_protection_enable': 'member_deletion_protection_enable',
         'listener_id': 'listener_id',
-        'member_instance_id': 'member_instance_id'
+        'member_instance_id': 'member_instance_id',
+        'vpc_id': 'vpc_id',
+        'type': 'type'
     }
 
-    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None, listener_id=None, member_instance_id=None):
+    def __init__(self, marker=None, limit=None, page_reverse=None, description=None, admin_state_up=None, healthmonitor_id=None, id=None, name=None, loadbalancer_id=None, protocol=None, lb_algorithm=None, enterprise_project_id=None, ip_version=None, member_address=None, member_device_id=None, member_deletion_protection_enable=None, listener_id=None, member_instance_id=None, vpc_id=None, type=None):
         """ListPoolsRequest
 
         The model defined in huaweicloud sdk
 
-        :param marker: 上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        :param marker: 上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
         :type marker: str
         :param limit: 每页返回的个数。
         :type limit: int
-        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。使用说明：必须与limit一起使用。
+        :param page_reverse: 是否反向查询，取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
         :type page_reverse: bool
         :param description: 后端云服务器组的描述信息。  支持多值查询，查询条件格式：*description&#x3D;xxx&amp;description&#x3D;xxx*。
         :type description: list[str]
@@ -87,11 +91,11 @@ class ListPoolsRequest:
         :type loadbalancer_id: list[str]
         :param protocol: 后端云服务器组的后端协议。取值：TCP、UDP、HTTP、HTTPS和QUIC。  支持多值查询，查询条件格式：*protocol&#x3D;xxx&amp;protocol&#x3D;xxx*。
         :type protocol: list[str]
-        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm&#x3D;xxx&amp;lb_algorithm&#x3D;xxx*。
+        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm&#x3D;xxx&amp;lb_algorithm&#x3D;xxx*。
         :type lb_algorithm: list[str]
-        :param enterprise_project_id: 企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :param enterprise_project_id: 企业项目ID。不传时查询default企业项目\&quot;0\&quot;下的资源，鉴权按照default企业项目鉴权；如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。   支持多值查询，查询条件格式：*enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx*。   [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type enterprise_project_id: list[str]
-        :param ip_version: 后端云服务器组支持的IP版本。取值： [- 共享型LB下的pool：固定为v4； - 独享型LB下的pool：dualstack、v4。当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。当协议为HTTP/HTTPS时，ip_version为v4。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [- dualstack: 当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。 - v4: 当该pool的协议为HTTP/HTTPS时，ip_version为v4。](tag:hcso_dt) 支持多值查询，查询条件格式：*ip_version&#x3D;xxx&amp;ip_version&#x3D;xxx*。
+        :param ip_version: 后端云服务器组支持的IP版本。  支持多值查询，查询条件格式：*ip_version&#x3D;xxx&amp;ip_version&#x3D;xxx*。
         :type ip_version: list[str]
         :param member_address: 后端云服务器的IP地址。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_address&#x3D;xxx&amp;member_address&#x3D;xxx*。
         :type member_address: list[str]
@@ -103,6 +107,10 @@ class ListPoolsRequest:
         :type listener_id: list[str]
         :param member_instance_id: 后端云服务器ID。仅用于查询条件，不作为响应参数字段。  支持多值查询，查询条件格式：*member_instance_id&#x3D;xxx&amp;member_instance_id&#x3D;xxx*。
         :type member_instance_id: list[str]
+        :param vpc_id: 后端云服务器组关联的虚拟私有云的ID。
+        :type vpc_id: list[str]
+        :param type: 后端服务器组的类型。   取值：  - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。  - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。  - 空字符串（\&quot;\&quot;）：允许任意类型的后端
+        :type type: list[str]
         """
         
         
@@ -125,6 +133,8 @@ class ListPoolsRequest:
         self._member_deletion_protection_enable = None
         self._listener_id = None
         self._member_instance_id = None
+        self._vpc_id = None
+        self._type = None
         self.discriminator = None
 
         if marker is not None:
@@ -163,12 +173,16 @@ class ListPoolsRequest:
             self.listener_id = listener_id
         if member_instance_id is not None:
             self.member_instance_id = member_instance_id
+        if vpc_id is not None:
+            self.vpc_id = vpc_id
+        if type is not None:
+            self.type = type
 
     @property
     def marker(self):
         """Gets the marker of this ListPoolsRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :return: The marker of this ListPoolsRequest.
         :rtype: str
@@ -179,7 +193,7 @@ class ListPoolsRequest:
     def marker(self, marker):
         """Sets the marker of this ListPoolsRequest.
 
-        上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
+        上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
         :param marker: The marker of this ListPoolsRequest.
         :type marker: str
@@ -212,7 +226,7 @@ class ListPoolsRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListPoolsRequest.
 
-        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。使用说明：必须与limit一起使用。
+        是否反向查询，取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
         :return: The page_reverse of this ListPoolsRequest.
         :rtype: bool
@@ -223,7 +237,7 @@ class ListPoolsRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListPoolsRequest.
 
-        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。使用说明：必须与limit一起使用。
+        是否反向查询，取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
         :param page_reverse: The page_reverse of this ListPoolsRequest.
         :type page_reverse: bool
@@ -388,7 +402,7 @@ class ListPoolsRequest:
     def lb_algorithm(self):
         """Gets the lb_algorithm of this ListPoolsRequest.
 
-        后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。
 
         :return: The lb_algorithm of this ListPoolsRequest.
         :rtype: list[str]
@@ -399,7 +413,7 @@ class ListPoolsRequest:
     def lb_algorithm(self, lb_algorithm):
         """Sets the lb_algorithm of this ListPoolsRequest.
 
-        后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  支持多值查询，查询条件格式：*lb_algorithm=xxx&lb_algorithm=xxx*。
 
         :param lb_algorithm: The lb_algorithm of this ListPoolsRequest.
         :type lb_algorithm: list[str]
@@ -410,7 +424,7 @@ class ListPoolsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPoolsRequest.
 
-        企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        企业项目ID。不传时查询default企业项目\"0\"下的资源，鉴权按照default企业项目鉴权；如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。   支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。   [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :return: The enterprise_project_id of this ListPoolsRequest.
         :rtype: list[str]
@@ -421,7 +435,7 @@ class ListPoolsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPoolsRequest.
 
-        企业项目ID。  支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        企业项目ID。不传时查询default企业项目\"0\"下的资源，鉴权按照default企业项目鉴权；如果传值，则传已存在的企业项目ID或all_granted_eps（表示查询所有企业项目）进行查询。   支持多值查询，查询条件格式：*enterprise_project_id=xxx&enterprise_project_id=xxx*。   [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListPoolsRequest.
         :type enterprise_project_id: list[str]
@@ -432,7 +446,7 @@ class ListPoolsRequest:
     def ip_version(self):
         """Gets the ip_version of this ListPoolsRequest.
 
-        后端云服务器组支持的IP版本。取值： [- 共享型LB下的pool：固定为v4； - 独享型LB下的pool：dualstack、v4。当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。当协议为HTTP/HTTPS时，ip_version为v4。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [- dualstack: 当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。 - v4: 当该pool的协议为HTTP/HTTPS时，ip_version为v4。](tag:hcso_dt) 支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
+        后端云服务器组支持的IP版本。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
 
         :return: The ip_version of this ListPoolsRequest.
         :rtype: list[str]
@@ -443,7 +457,7 @@ class ListPoolsRequest:
     def ip_version(self, ip_version):
         """Sets the ip_version of this ListPoolsRequest.
 
-        后端云服务器组支持的IP版本。取值： [- 共享型LB下的pool：固定为v4； - 独享型LB下的pool：dualstack、v4。当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。当协议为HTTP/HTTPS时，ip_version为v4。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [- dualstack: 当该pool的协议为TCP/UDP/QUIC时，ip_version为dualstack，表示双栈。 - v4: 当该pool的协议为HTTP/HTTPS时，ip_version为v4。](tag:hcso_dt) 支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
+        后端云服务器组支持的IP版本。  支持多值查询，查询条件格式：*ip_version=xxx&ip_version=xxx*。
 
         :param ip_version: The ip_version of this ListPoolsRequest.
         :type ip_version: list[str]
@@ -559,6 +573,50 @@ class ListPoolsRequest:
         :type member_instance_id: list[str]
         """
         self._member_instance_id = member_instance_id
+
+    @property
+    def vpc_id(self):
+        """Gets the vpc_id of this ListPoolsRequest.
+
+        后端云服务器组关联的虚拟私有云的ID。
+
+        :return: The vpc_id of this ListPoolsRequest.
+        :rtype: list[str]
+        """
+        return self._vpc_id
+
+    @vpc_id.setter
+    def vpc_id(self, vpc_id):
+        """Sets the vpc_id of this ListPoolsRequest.
+
+        后端云服务器组关联的虚拟私有云的ID。
+
+        :param vpc_id: The vpc_id of this ListPoolsRequest.
+        :type vpc_id: list[str]
+        """
+        self._vpc_id = vpc_id
+
+    @property
+    def type(self):
+        """Gets the type of this ListPoolsRequest.
+
+        后端服务器组的类型。   取值：  - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。  - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。  - 空字符串（\"\"）：允许任意类型的后端
+
+        :return: The type of this ListPoolsRequest.
+        :rtype: list[str]
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ListPoolsRequest.
+
+        后端服务器组的类型。   取值：  - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。  - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。  - 空字符串（\"\"）：允许任意类型的后端
+
+        :param type: The type of this ListPoolsRequest.
+        :type type: list[str]
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

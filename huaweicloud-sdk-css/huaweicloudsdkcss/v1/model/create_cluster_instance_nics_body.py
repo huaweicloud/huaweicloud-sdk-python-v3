@@ -39,9 +39,9 @@ class CreateClusterInstanceNicsBody:
 
         :param vpc_id: 指定虚拟私有云ID，用于集群网络配置。
         :type vpc_id: str
-        :param net_id: 子网ID(网络ID)，其中一个搜索集群所有实例的子网和安全组必须相同。
+        :param net_id: 子网ID(网络ID)。
         :type net_id: str
-        :param security_group_id: 安全组ID，其中一个搜索集群所有实例的子网和安全组必须相同。
+        :param security_group_id: 安全组ID。
         :type security_group_id: str
         """
         
@@ -82,7 +82,7 @@ class CreateClusterInstanceNicsBody:
     def net_id(self):
         """Gets the net_id of this CreateClusterInstanceNicsBody.
 
-        子网ID(网络ID)，其中一个搜索集群所有实例的子网和安全组必须相同。
+        子网ID(网络ID)。
 
         :return: The net_id of this CreateClusterInstanceNicsBody.
         :rtype: str
@@ -93,7 +93,7 @@ class CreateClusterInstanceNicsBody:
     def net_id(self, net_id):
         """Sets the net_id of this CreateClusterInstanceNicsBody.
 
-        子网ID(网络ID)，其中一个搜索集群所有实例的子网和安全组必须相同。
+        子网ID(网络ID)。
 
         :param net_id: The net_id of this CreateClusterInstanceNicsBody.
         :type net_id: str
@@ -104,7 +104,7 @@ class CreateClusterInstanceNicsBody:
     def security_group_id(self):
         """Gets the security_group_id of this CreateClusterInstanceNicsBody.
 
-        安全组ID，其中一个搜索集群所有实例的子网和安全组必须相同。
+        安全组ID。
 
         :return: The security_group_id of this CreateClusterInstanceNicsBody.
         :rtype: str
@@ -115,7 +115,7 @@ class CreateClusterInstanceNicsBody:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this CreateClusterInstanceNicsBody.
 
-        安全组ID，其中一个搜索集群所有实例的子网和安全组必须相同。
+        安全组ID。
 
         :param security_group_id: The security_group_id of this CreateClusterInstanceNicsBody.
         :type security_group_id: str

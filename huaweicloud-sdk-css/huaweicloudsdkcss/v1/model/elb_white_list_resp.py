@@ -35,7 +35,7 @@ class ElbWhiteListResp:
 
         The model defined in huaweicloud sdk
 
-        :param enable_white_list: 是否开启访问控制。
+        :param enable_white_list: 是否开启公网访问控制。 - true: 开启公网访问控制。 - false: 关闭公网访问控制。
         :type enable_white_list: bool
         :param white_list: 公网访问白名单。
         :type white_list: str
@@ -56,7 +56,7 @@ class ElbWhiteListResp:
     def enable_white_list(self):
         """Gets the enable_white_list of this ElbWhiteListResp.
 
-        是否开启访问控制。
+        是否开启公网访问控制。 - true: 开启公网访问控制。 - false: 关闭公网访问控制。
 
         :return: The enable_white_list of this ElbWhiteListResp.
         :rtype: bool
@@ -67,7 +67,7 @@ class ElbWhiteListResp:
     def enable_white_list(self, enable_white_list):
         """Sets the enable_white_list of this ElbWhiteListResp.
 
-        是否开启访问控制。
+        是否开启公网访问控制。 - true: 开启公网访问控制。 - false: 关闭公网访问控制。
 
         :param enable_white_list: The enable_white_list of this ElbWhiteListResp.
         :type enable_white_list: bool

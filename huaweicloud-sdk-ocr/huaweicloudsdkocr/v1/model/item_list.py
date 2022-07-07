@@ -65,7 +65,7 @@ class ItemList:
         :type quantity: str
         :param unit_price: 单价。 
         :type unit_price: str
-        :param license_plate_number: 车牌号码。 当“advanced_mode”设置为“true”时才返回。 
+        :param license_plate_number: 车牌号码。 当“type”被识别为“toll”且 “advanced_mode”设置为“true” 时才返回。 
         :type license_plate_number: str
         :param amount: 金额。 
         :type amount: str
@@ -73,11 +73,11 @@ class ItemList:
         :type tax_rate: str
         :param tax: 税额。 
         :type tax: str
-        :param end_date: 通行日期止。 当“advanced_mode”设置为“true”时才返回。 
+        :param end_date: 通行日期止。 当“type”被识别为“toll”且“advanced_mode”设置为“true”时才返回。 
         :type end_date: str
-        :param start_date: 通行日期起。 当“advanced_mode”设置为“true”时才返回。 
+        :param start_date: 通行日期起。 当“type”被识别为“toll”且“advanced_mode”设置为“true”时才返回。 
         :type start_date: str
-        :param vehicle_type: 车辆类型。 当“advanced_mode”设置为“true”时才返回。 
+        :param vehicle_type: 车辆类型。 当“type”被识别为“toll”且“advanced_mode”设置为“true”时才返回。 
         :type vehicle_type: str
         """
         
@@ -236,7 +236,7 @@ class ItemList:
     def license_plate_number(self):
         """Gets the license_plate_number of this ItemList.
 
-        车牌号码。 当“advanced_mode”设置为“true”时才返回。 
+        车牌号码。 当“type”被识别为“toll”且 “advanced_mode”设置为“true” 时才返回。 
 
         :return: The license_plate_number of this ItemList.
         :rtype: str
@@ -247,7 +247,7 @@ class ItemList:
     def license_plate_number(self, license_plate_number):
         """Sets the license_plate_number of this ItemList.
 
-        车牌号码。 当“advanced_mode”设置为“true”时才返回。 
+        车牌号码。 当“type”被识别为“toll”且 “advanced_mode”设置为“true” 时才返回。 
 
         :param license_plate_number: The license_plate_number of this ItemList.
         :type license_plate_number: str
@@ -324,7 +324,7 @@ class ItemList:
     def end_date(self):
         """Gets the end_date of this ItemList.
 
-        通行日期止。 当“advanced_mode”设置为“true”时才返回。 
+        通行日期止。 当“type”被识别为“toll”且“advanced_mode”设置为“true”时才返回。 
 
         :return: The end_date of this ItemList.
         :rtype: str
@@ -335,7 +335,7 @@ class ItemList:
     def end_date(self, end_date):
         """Sets the end_date of this ItemList.
 
-        通行日期止。 当“advanced_mode”设置为“true”时才返回。 
+        通行日期止。 当“type”被识别为“toll”且“advanced_mode”设置为“true”时才返回。 
 
         :param end_date: The end_date of this ItemList.
         :type end_date: str
@@ -346,7 +346,7 @@ class ItemList:
     def start_date(self):
         """Gets the start_date of this ItemList.
 
-        通行日期起。 当“advanced_mode”设置为“true”时才返回。 
+        通行日期起。 当“type”被识别为“toll”且“advanced_mode”设置为“true”时才返回。 
 
         :return: The start_date of this ItemList.
         :rtype: str
@@ -357,7 +357,7 @@ class ItemList:
     def start_date(self, start_date):
         """Sets the start_date of this ItemList.
 
-        通行日期起。 当“advanced_mode”设置为“true”时才返回。 
+        通行日期起。 当“type”被识别为“toll”且“advanced_mode”设置为“true”时才返回。 
 
         :param start_date: The start_date of this ItemList.
         :type start_date: str
@@ -368,7 +368,7 @@ class ItemList:
     def vehicle_type(self):
         """Gets the vehicle_type of this ItemList.
 
-        车辆类型。 当“advanced_mode”设置为“true”时才返回。 
+        车辆类型。 当“type”被识别为“toll”且“advanced_mode”设置为“true”时才返回。 
 
         :return: The vehicle_type of this ItemList.
         :rtype: str
@@ -379,7 +379,7 @@ class ItemList:
     def vehicle_type(self, vehicle_type):
         """Sets the vehicle_type of this ItemList.
 
-        车辆类型。 当“advanced_mode”设置为“true”时才返回。 
+        车辆类型。 当“type”被识别为“toll”且“advanced_mode”设置为“true”时才返回。 
 
         :param vehicle_type: The vehicle_type of this ItemList.
         :type vehicle_type: str

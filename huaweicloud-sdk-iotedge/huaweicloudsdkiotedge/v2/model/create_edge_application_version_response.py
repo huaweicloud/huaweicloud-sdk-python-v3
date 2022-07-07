@@ -24,7 +24,9 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         'edge_app_id': 'str',
         'name': 'str',
         'deploy_type': 'str',
+        'deploy_multi_instance': 'bool',
         'version': 'str',
+        'sdk_version': 'str',
         'description': 'str',
         'create_time': 'str',
         'update_time': 'str',
@@ -46,7 +48,9 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         'edge_app_id': 'edge_app_id',
         'name': 'name',
         'deploy_type': 'deploy_type',
+        'deploy_multi_instance': 'deploy_multi_instance',
         'version': 'version',
+        'sdk_version': 'sdk_version',
         'description': 'description',
         'create_time': 'create_time',
         'update_time': 'update_time',
@@ -64,7 +68,7 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         'off_shelf_time': 'off_shelf_time'
     }
 
-    def __init__(self, edge_app_id=None, name=None, deploy_type=None, version=None, description=None, create_time=None, update_time=None, state=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, container_settings=None, outputs=None, inputs=None, services=None, publish_time=None, off_shelf_time=None):
+    def __init__(self, edge_app_id=None, name=None, deploy_type=None, deploy_multi_instance=None, version=None, sdk_version=None, description=None, create_time=None, update_time=None, state=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, container_settings=None, outputs=None, inputs=None, services=None, publish_time=None, off_shelf_time=None):
         """CreateEdgeApplicationVersionResponse
 
         The model defined in huaweicloud sdk
@@ -75,8 +79,12 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         :type name: str
         :param deploy_type: 部署类型docker|process
         :type deploy_type: str
+        :param deploy_multi_instance: 是否允许部署多实例
+        :type deploy_multi_instance: bool
         :param version: 应用版本
         :type version: str
+        :param sdk_version: 应用集成的边缘升得快版本
+        :type sdk_version: str
         :param description: 应用描述
         :type description: str
         :param create_time: 创建时间
@@ -114,7 +122,9 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         self._edge_app_id = None
         self._name = None
         self._deploy_type = None
+        self._deploy_multi_instance = None
         self._version = None
+        self._sdk_version = None
         self._description = None
         self._create_time = None
         self._update_time = None
@@ -138,8 +148,12 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
             self.name = name
         if deploy_type is not None:
             self.deploy_type = deploy_type
+        if deploy_multi_instance is not None:
+            self.deploy_multi_instance = deploy_multi_instance
         if version is not None:
             self.version = version
+        if sdk_version is not None:
+            self.sdk_version = sdk_version
         if description is not None:
             self.description = description
         if create_time is not None:
@@ -238,6 +252,28 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         self._deploy_type = deploy_type
 
     @property
+    def deploy_multi_instance(self):
+        """Gets the deploy_multi_instance of this CreateEdgeApplicationVersionResponse.
+
+        是否允许部署多实例
+
+        :return: The deploy_multi_instance of this CreateEdgeApplicationVersionResponse.
+        :rtype: bool
+        """
+        return self._deploy_multi_instance
+
+    @deploy_multi_instance.setter
+    def deploy_multi_instance(self, deploy_multi_instance):
+        """Sets the deploy_multi_instance of this CreateEdgeApplicationVersionResponse.
+
+        是否允许部署多实例
+
+        :param deploy_multi_instance: The deploy_multi_instance of this CreateEdgeApplicationVersionResponse.
+        :type deploy_multi_instance: bool
+        """
+        self._deploy_multi_instance = deploy_multi_instance
+
+    @property
     def version(self):
         """Gets the version of this CreateEdgeApplicationVersionResponse.
 
@@ -258,6 +294,28 @@ class CreateEdgeApplicationVersionResponse(SdkResponse):
         :type version: str
         """
         self._version = version
+
+    @property
+    def sdk_version(self):
+        """Gets the sdk_version of this CreateEdgeApplicationVersionResponse.
+
+        应用集成的边缘升得快版本
+
+        :return: The sdk_version of this CreateEdgeApplicationVersionResponse.
+        :rtype: str
+        """
+        return self._sdk_version
+
+    @sdk_version.setter
+    def sdk_version(self, sdk_version):
+        """Sets the sdk_version of this CreateEdgeApplicationVersionResponse.
+
+        应用集成的边缘升得快版本
+
+        :param sdk_version: The sdk_version of this CreateEdgeApplicationVersionResponse.
+        :type sdk_version: str
+        """
+        self._sdk_version = sdk_version
 
     @property
     def description(self):

@@ -23,7 +23,9 @@ class CreateEdgeApplicationVersionDTO:
     openapi_types = {
         'version': 'str',
         'description': 'str',
+        'sdk_version': 'str',
         'deploy_type': 'str',
+        'deploy_multi_instance': 'bool',
         'container_settings': 'ContainerSettingsDTO',
         'liveness_probe': 'ProbeDTO',
         'readiness_probe': 'ProbeDTO',
@@ -38,7 +40,9 @@ class CreateEdgeApplicationVersionDTO:
     attribute_map = {
         'version': 'version',
         'description': 'description',
+        'sdk_version': 'sdk_version',
         'deploy_type': 'deploy_type',
+        'deploy_multi_instance': 'deploy_multi_instance',
         'container_settings': 'container_settings',
         'liveness_probe': 'liveness_probe',
         'readiness_probe': 'readiness_probe',
@@ -50,7 +54,7 @@ class CreateEdgeApplicationVersionDTO:
         'services': 'services'
     }
 
-    def __init__(self, version=None, description=None, deploy_type=None, container_settings=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, outputs=None, inputs=None, services=None):
+    def __init__(self, version=None, description=None, sdk_version=None, deploy_type=None, deploy_multi_instance=None, container_settings=None, liveness_probe=None, readiness_probe=None, arch=None, command=None, args=None, outputs=None, inputs=None, services=None):
         """CreateEdgeApplicationVersionDTO
 
         The model defined in huaweicloud sdk
@@ -59,8 +63,12 @@ class CreateEdgeApplicationVersionDTO:
         :type version: str
         :param description: 应用描述
         :type description: str
+        :param sdk_version: 应用集成的边缘升得快版本
+        :type sdk_version: str
         :param deploy_type: 应用部署类型，分为docker容器部署类型和process进程部署类型，兼容之前数据，此字段可以为空，为空情况为docker类型
         :type deploy_type: str
+        :param deploy_multi_instance: 是否允许部署多实例
+        :type deploy_multi_instance: bool
         :param container_settings: 
         :type container_settings: :class:`huaweicloudsdkiotedge.v2.ContainerSettingsDTO`
         :param liveness_probe: 
@@ -85,7 +93,9 @@ class CreateEdgeApplicationVersionDTO:
 
         self._version = None
         self._description = None
+        self._sdk_version = None
         self._deploy_type = None
+        self._deploy_multi_instance = None
         self._container_settings = None
         self._liveness_probe = None
         self._readiness_probe = None
@@ -100,8 +110,12 @@ class CreateEdgeApplicationVersionDTO:
         self.version = version
         if description is not None:
             self.description = description
+        if sdk_version is not None:
+            self.sdk_version = sdk_version
         if deploy_type is not None:
             self.deploy_type = deploy_type
+        if deploy_multi_instance is not None:
+            self.deploy_multi_instance = deploy_multi_instance
         self.container_settings = container_settings
         if liveness_probe is not None:
             self.liveness_probe = liveness_probe
@@ -164,6 +178,28 @@ class CreateEdgeApplicationVersionDTO:
         self._description = description
 
     @property
+    def sdk_version(self):
+        """Gets the sdk_version of this CreateEdgeApplicationVersionDTO.
+
+        应用集成的边缘升得快版本
+
+        :return: The sdk_version of this CreateEdgeApplicationVersionDTO.
+        :rtype: str
+        """
+        return self._sdk_version
+
+    @sdk_version.setter
+    def sdk_version(self, sdk_version):
+        """Sets the sdk_version of this CreateEdgeApplicationVersionDTO.
+
+        应用集成的边缘升得快版本
+
+        :param sdk_version: The sdk_version of this CreateEdgeApplicationVersionDTO.
+        :type sdk_version: str
+        """
+        self._sdk_version = sdk_version
+
+    @property
     def deploy_type(self):
         """Gets the deploy_type of this CreateEdgeApplicationVersionDTO.
 
@@ -184,6 +220,28 @@ class CreateEdgeApplicationVersionDTO:
         :type deploy_type: str
         """
         self._deploy_type = deploy_type
+
+    @property
+    def deploy_multi_instance(self):
+        """Gets the deploy_multi_instance of this CreateEdgeApplicationVersionDTO.
+
+        是否允许部署多实例
+
+        :return: The deploy_multi_instance of this CreateEdgeApplicationVersionDTO.
+        :rtype: bool
+        """
+        return self._deploy_multi_instance
+
+    @deploy_multi_instance.setter
+    def deploy_multi_instance(self, deploy_multi_instance):
+        """Sets the deploy_multi_instance of this CreateEdgeApplicationVersionDTO.
+
+        是否允许部署多实例
+
+        :param deploy_multi_instance: The deploy_multi_instance of this CreateEdgeApplicationVersionDTO.
+        :type deploy_multi_instance: bool
+        """
+        self._deploy_multi_instance = deploy_multi_instance
 
     @property
     def container_settings(self):

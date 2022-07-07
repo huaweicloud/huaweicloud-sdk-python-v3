@@ -23,7 +23,7 @@ class BatchListModulesResponse(SdkResponse):
     openapi_types = {
         'count': 'int',
         'page_info': 'PageInfoDTO',
-        'modules': 'list[EdgeModuleRespDTO]'
+        'modules': 'list[EdgeModuleDTO]'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class BatchListModulesResponse(SdkResponse):
         :param page_info: 
         :type page_info: :class:`huaweicloudsdkiotedge.v2.PageInfoDTO`
         :param modules: 每页记录数
-        :type modules: list[:class:`huaweicloudsdkiotedge.v2.EdgeModuleRespDTO`]
+        :type modules: list[:class:`huaweicloudsdkiotedge.v2.EdgeModuleDTO`]
         """
         
         super(BatchListModulesResponse, self).__init__()
@@ -108,7 +108,7 @@ class BatchListModulesResponse(SdkResponse):
         每页记录数
 
         :return: The modules of this BatchListModulesResponse.
-        :rtype: list[:class:`huaweicloudsdkiotedge.v2.EdgeModuleRespDTO`]
+        :rtype: list[:class:`huaweicloudsdkiotedge.v2.EdgeModuleDTO`]
         """
         return self._modules
 
@@ -119,7 +119,7 @@ class BatchListModulesResponse(SdkResponse):
         每页记录数
 
         :param modules: The modules of this BatchListModulesResponse.
-        :type modules: list[:class:`huaweicloudsdkiotedge.v2.EdgeModuleRespDTO`]
+        :type modules: list[:class:`huaweicloudsdkiotedge.v2.EdgeModuleDTO`]
         """
         self._modules = modules
 

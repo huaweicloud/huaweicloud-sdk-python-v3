@@ -51,9 +51,9 @@ class ListLogtanksRequest:
         :type limit: int
         :param marker: 上一页最后一条记录的ID。  使用说明：  - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
         :type marker: str
-        :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
+        :param page_reverse: 是否反向查询，取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker
         :type page_reverse: bool
-        :param enterprise_project_id: 企业项目ID。 支持多值查询，查询条件格式：enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx。
+        :param enterprise_project_id: 企业项目ID。 支持多值查询，查询条件格式：enterprise_project_id&#x3D;xxx&amp;enterprise_project_id&#x3D;xxx。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type enterprise_project_id: list[str]
         :param id: 云日志记录ID。 支持多值查询，查询条件格式：id&#x3D;xxx&amp;id&#x3D;xxx。
         :type id: list[str]
@@ -142,7 +142,7 @@ class ListLogtanksRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListLogtanksRequest.
 
-        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
+        是否反向查询，取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker
 
         :return: The page_reverse of this ListLogtanksRequest.
         :rtype: bool
@@ -153,7 +153,7 @@ class ListLogtanksRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListLogtanksRequest.
 
-        分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。  使用说明： - 必须与limit一起使用。
+        是否反向查询，取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker
 
         :param page_reverse: The page_reverse of this ListLogtanksRequest.
         :type page_reverse: bool
@@ -164,7 +164,7 @@ class ListLogtanksRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListLogtanksRequest.
 
-        企业项目ID。 支持多值查询，查询条件格式：enterprise_project_id=xxx&enterprise_project_id=xxx。
+        企业项目ID。 支持多值查询，查询条件格式：enterprise_project_id=xxx&enterprise_project_id=xxx。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :return: The enterprise_project_id of this ListLogtanksRequest.
         :rtype: list[str]
@@ -175,7 +175,7 @@ class ListLogtanksRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListLogtanksRequest.
 
-        企业项目ID。 支持多值查询，查询条件格式：enterprise_project_id=xxx&enterprise_project_id=xxx。
+        企业项目ID。 支持多值查询，查询条件格式：enterprise_project_id=xxx&enterprise_project_id=xxx。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param enterprise_project_id: The enterprise_project_id of this ListLogtanksRequest.
         :type enterprise_project_id: list[str]

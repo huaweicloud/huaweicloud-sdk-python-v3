@@ -34,7 +34,11 @@ class Member:
         'device_owner': 'str',
         'device_id': 'str',
         'operating_status': 'str',
+        'status': 'list[MemberStatus]',
         'loadbalancer_id': 'str',
+        'loadbalancers': 'list[ResourceID]',
+        'created_at': 'str',
+        'updated_at': 'str',
         'member_type': 'str',
         'instance_id': 'str'
     }
@@ -53,47 +57,59 @@ class Member:
         'device_owner': 'device_owner',
         'device_id': 'device_id',
         'operating_status': 'operating_status',
+        'status': 'status',
         'loadbalancer_id': 'loadbalancer_id',
+        'loadbalancers': 'loadbalancers',
+        'created_at': 'created_at',
+        'updated_at': 'updated_at',
         'member_type': 'member_type',
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, pool_id=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, weight=None, address=None, ip_version=None, device_owner=None, device_id=None, operating_status=None, loadbalancer_id=None, member_type=None, instance_id=None):
+    def __init__(self, id=None, name=None, project_id=None, pool_id=None, admin_state_up=None, subnet_cidr_id=None, protocol_port=None, weight=None, address=None, ip_version=None, device_owner=None, device_id=None, operating_status=None, status=None, loadbalancer_id=None, loadbalancers=None, created_at=None, updated_at=None, member_type=None, instance_id=None):
         """Member
 
         The model defined in huaweicloud sdk
 
-        :param id: 后端服务器ID。
+        :param id: 后端服务器ID。 &gt;说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type id: str
         :param name: 后端服务器名称。
         :type name: str
         :param project_id: 后端服务器所在的项目ID。
         :type project_id: str
-        :param pool_id: 所在后端服务器组ID。  不支持该字段，请勿使用。
+        :param pool_id: 所在后端服务器组ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
         :type pool_id: str
         :param admin_state_up: 后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
         :type admin_state_up: bool
-        :param subnet_cidr_id: 后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明：  - 该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        :param subnet_cidr_id: 后端云服务器所在子网的IPv4子网ID或IPv6子网ID。   若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。   使用说明：该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
         :type subnet_cidr_id: str
         :param protocol_port: 后端服务器业务端口号。
         :type protocol_port: int
-        :param weight: 后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 取值：0-100，默认1。 使用说明：  - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
+        :param weight: 后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。   取值：0-100，默认1。   使用说明：若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
         :type weight: int
-        :param address: 后端服务器对应的IP地址。 使用说明：  - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。  - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        :param address: 后端服务器对应的IP地址。  使用说明：  - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。  - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
         :type address: str
         :param ip_version: 当前后端服务器的IP地址版本，由后端系统自动根据传入的address字段确定。取值：v4、v6。
         :type ip_version: str
-        :param device_owner: 设备所有者，取值： - 空，表示后端服务器未关联到ECS。 - compute：{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  不支持该字段，请勿使用。
+        :param device_owner: 设备所有者，取值： - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
         :type device_owner: str
-        :param device_id: 关联的ECS ID，为空表示后端服务器未关联到ECS。
+        :param device_id: 关联的ECS ID，为空表示后端服务器未关联到ECS。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
         :type device_id: str
         :param operating_status: 后端云服务器的健康状态。取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
         :type operating_status: str
-        :param loadbalancer_id: 所属负载均衡器ID。  不支持该字段，请勿使用。
+        :param status: 后端云服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_stauts为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+        :type status: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
+        :param loadbalancer_id: 所属负载均衡器ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
         :type loadbalancer_id: str
+        :param loadbalancers: 后端云服务器关联的负载均衡器ID列表。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+        :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.ResourceID`]
+        :param created_at: 创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+        :type created_at: str
+        :param updated_at: 更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+        :type updated_at: str
         :param member_type: 后端云服务器的类型。取值： - ip：跨VPC的member。 - instance：关联到ECS的member。
         :type member_type: str
-        :param instance_id: member关联的实例ID，空表示跨VPC场景的member。
+        :param instance_id: member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）
         :type instance_id: str
         """
         
@@ -112,7 +128,11 @@ class Member:
         self._device_owner = None
         self._device_id = None
         self._operating_status = None
+        self._status = None
         self._loadbalancer_id = None
+        self._loadbalancers = None
+        self._created_at = None
+        self._updated_at = None
         self._member_type = None
         self._instance_id = None
         self.discriminator = None
@@ -134,8 +154,15 @@ class Member:
         if device_id is not None:
             self.device_id = device_id
         self.operating_status = operating_status
+        self.status = status
         if loadbalancer_id is not None:
             self.loadbalancer_id = loadbalancer_id
+        if loadbalancers is not None:
+            self.loadbalancers = loadbalancers
+        if created_at is not None:
+            self.created_at = created_at
+        if updated_at is not None:
+            self.updated_at = updated_at
         if member_type is not None:
             self.member_type = member_type
         if instance_id is not None:
@@ -145,7 +172,7 @@ class Member:
     def id(self):
         """Gets the id of this Member.
 
-        后端服务器ID。
+        后端服务器ID。 >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :return: The id of this Member.
         :rtype: str
@@ -156,7 +183,7 @@ class Member:
     def id(self, id):
         """Sets the id of this Member.
 
-        后端服务器ID。
+        后端服务器ID。 >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :param id: The id of this Member.
         :type id: str
@@ -211,7 +238,7 @@ class Member:
     def pool_id(self):
         """Gets the pool_id of this Member.
 
-        所在后端服务器组ID。  不支持该字段，请勿使用。
+        所在后端服务器组ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
 
         :return: The pool_id of this Member.
         :rtype: str
@@ -222,7 +249,7 @@ class Member:
     def pool_id(self, pool_id):
         """Sets the pool_id of this Member.
 
-        所在后端服务器组ID。  不支持该字段，请勿使用。
+        所在后端服务器组ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
 
         :param pool_id: The pool_id of this Member.
         :type pool_id: str
@@ -255,7 +282,7 @@ class Member:
     def subnet_cidr_id(self):
         """Gets the subnet_cidr_id of this Member.
 
-        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明：  - 该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。   若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。   使用说明：该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :return: The subnet_cidr_id of this Member.
         :rtype: str
@@ -266,7 +293,7 @@ class Member:
     def subnet_cidr_id(self, subnet_cidr_id):
         """Sets the subnet_cidr_id of this Member.
 
-        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。  若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。  使用说明：  - 该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
+        后端云服务器所在子网的IPv4子网ID或IPv6子网ID。   若所属的LB的跨VPC后端转发特性已开启，则该字段可以不传，表示添加跨VPC的后端服务器。此时address必须为IPv4地址，所在的pool的协议必须为TCP/HTTP/HTTPS。   使用说明：该子网和关联的负载均衡器的子网必须在同一VPC下。  [不支持IPv6，请勿设置为IPv6子网ID。](tag:dt,dt_test)
 
         :param subnet_cidr_id: The subnet_cidr_id of this Member.
         :type subnet_cidr_id: str
@@ -299,7 +326,7 @@ class Member:
     def weight(self):
         """Gets the weight of this Member.
 
-        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 取值：0-100，默认1。 使用说明：  - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
+        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。   取值：0-100，默认1。   使用说明：若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
 
         :return: The weight of this Member.
         :rtype: int
@@ -310,7 +337,7 @@ class Member:
     def weight(self, weight):
         """Sets the weight of this Member.
 
-        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。 取值：0-100，默认1。 使用说明：  - 若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
+        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。   取值：0-100，默认1。   使用说明：若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
 
         :param weight: The weight of this Member.
         :type weight: int
@@ -321,7 +348,7 @@ class Member:
     def address(self):
         """Gets the address of this Member.
 
-        后端服务器对应的IP地址。 使用说明：  - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。  - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        后端服务器对应的IP地址。  使用说明：  - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。  - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :return: The address of this Member.
         :rtype: str
@@ -332,7 +359,7 @@ class Member:
     def address(self, address):
         """Sets the address of this Member.
 
-        后端服务器对应的IP地址。 使用说明：  - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。  - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。 [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
+        后端服务器对应的IP地址。  使用说明：  - 若subnet_cidr_id为空，表示添加跨VPC后端，此时address必须为IPv4地址。  - 若subnet_cidr_id不为空，表示是一个关联到ECS的后端服务器。该IP地址可以是IPv4或IPv6。但必须在subnet_cidr_id对应的子网网段中。且只能指定为关联ECS的主网卡IP。  [不支持IPv6，请勿设置为IPv6地址。](tag:dt,dt_test)
 
         :param address: The address of this Member.
         :type address: str
@@ -365,7 +392,7 @@ class Member:
     def device_owner(self):
         """Gets the device_owner of this Member.
 
-        设备所有者，取值： - 空，表示后端服务器未关联到ECS。 - compute：{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  不支持该字段，请勿使用。
+        设备所有者，取值： - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
 
         :return: The device_owner of this Member.
         :rtype: str
@@ -376,7 +403,7 @@ class Member:
     def device_owner(self, device_owner):
         """Sets the device_owner of this Member.
 
-        设备所有者，取值： - 空，表示后端服务器未关联到ECS。 - compute：{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  不支持该字段，请勿使用。
+        设备所有者，取值： - 空，表示后端服务器未关联到ECS。 - compute:{az_name}，表示关联到ECS，其中{az_name}表示ECS所在可用区名。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
 
         :param device_owner: The device_owner of this Member.
         :type device_owner: str
@@ -387,7 +414,7 @@ class Member:
     def device_id(self):
         """Gets the device_id of this Member.
 
-        关联的ECS ID，为空表示后端服务器未关联到ECS。
+        关联的ECS ID，为空表示后端服务器未关联到ECS。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
 
         :return: The device_id of this Member.
         :rtype: str
@@ -398,7 +425,7 @@ class Member:
     def device_id(self, device_id):
         """Sets the device_id of this Member.
 
-        关联的ECS ID，为空表示后端服务器未关联到ECS。
+        关联的ECS ID，为空表示后端服务器未关联到ECS。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
 
         :param device_id: The device_id of this Member.
         :type device_id: str
@@ -428,10 +455,32 @@ class Member:
         self._operating_status = operating_status
 
     @property
+    def status(self):
+        """Gets the status of this Member.
+
+        后端云服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_stauts为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+
+        :return: The status of this Member.
+        :rtype: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this Member.
+
+        后端云服务器监听器粒度的的健康状态。 若绑定的监听器在该字段中，则以该字段中监听器对应的operating_stauts为准。 若绑定的监听器不在该字段中，则以外层的operating_status为准。
+
+        :param status: The status of this Member.
+        :type status: list[:class:`huaweicloudsdkelb.v3.MemberStatus`]
+        """
+        self._status = status
+
+    @property
     def loadbalancer_id(self):
         """Gets the loadbalancer_id of this Member.
 
-        所属负载均衡器ID。  不支持该字段，请勿使用。
+        所属负载均衡器ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
 
         :return: The loadbalancer_id of this Member.
         :rtype: str
@@ -442,12 +491,78 @@ class Member:
     def loadbalancer_id(self, loadbalancer_id):
         """Sets the loadbalancer_id of this Member.
 
-        所属负载均衡器ID。  不支持该字段，请勿使用。
+        所属负载均衡器ID。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
 
         :param loadbalancer_id: The loadbalancer_id of this Member.
         :type loadbalancer_id: str
         """
         self._loadbalancer_id = loadbalancer_id
+
+    @property
+    def loadbalancers(self):
+        """Gets the loadbalancers of this Member.
+
+        后端云服务器关联的负载均衡器ID列表。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+
+        :return: The loadbalancers of this Member.
+        :rtype: list[:class:`huaweicloudsdkelb.v3.ResourceID`]
+        """
+        return self._loadbalancers
+
+    @loadbalancers.setter
+    def loadbalancers(self, loadbalancers):
+        """Sets the loadbalancers of this Member.
+
+        后端云服务器关联的负载均衡器ID列表。  注意：该字段当前仅GET /v3/{project_id}/elb/members 接口可见。
+
+        :param loadbalancers: The loadbalancers of this Member.
+        :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.ResourceID`]
+        """
+        self._loadbalancers = loadbalancers
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this Member.
+
+        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+
+        :return: The created_at of this Member.
+        :rtype: str
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this Member.
+
+        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+
+        :param created_at: The created_at of this Member.
+        :type created_at: str
+        """
+        self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        """Gets the updated_at of this Member.
+
+        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+
+        :return: The updated_at of this Member.
+        :rtype: str
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        """Sets the updated_at of this Member.
+
+        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+
+        :param updated_at: The updated_at of this Member.
+        :type updated_at: str
+        """
+        self._updated_at = updated_at
 
     @property
     def member_type(self):
@@ -475,7 +590,7 @@ class Member:
     def instance_id(self):
         """Gets the instance_id of this Member.
 
-        member关联的实例ID，空表示跨VPC场景的member。
+        member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）
 
         :return: The instance_id of this Member.
         :rtype: str
@@ -486,7 +601,7 @@ class Member:
     def instance_id(self, instance_id):
         """Sets the instance_id of this Member.
 
-        member关联的实例ID，空表示跨VPC场景的member。
+        member关联的实例ID。空表示member关联的实例为非真实设备 （如：跨VPC场景）
 
         :param instance_id: The instance_id of this Member.
         :type instance_id: str

@@ -45,13 +45,13 @@ class CreateRedirectUrlConfig:
 
         :param protocol: 重定向的协议。默认值${protocol}表示继承原值（即与被转发请求保持一致）。  取值范围： - HTTP - HTTPS - ${protocol}
         :type protocol: str
-        :param host: 重定向的主机名。字符串只能包含英文字母、数字、\&quot;-\&quot;、\&quot;.\&quot;，必须以字母、数字开头。默认值${host}表示继承原值（即与被转发请求保持一致）。
+        :param host: 重定向的主机名。字符串只能包含英文字母、数字、“-”、“.”，必须以字母、数字开头。默认值${host}表示继承原值（即与被转发请求保持一致）。
         :type host: str
         :param port: 重定向到的端口。默认值${port}表示继承原值（即与被转发请求保持一致）。
         :type port: str
-        :param path: 重定向的路径。默认值${path}表示继承原值（即与被转发请求保持一致）。  只能包含英文字母、数字、_~&#39;;@^-%#&amp;$.*+?,&#x3D;!:|/()[]{}，且必须以\&quot;/\&quot;开头。
+        :param path: 重定向的路径。默认值${path}表示继承原值（即与被转发请求保持一致）。  只能包含英文字母、数字、_~&#39;;@^-%#&amp;$.*+?,&#x3D;!:|\\/()\\[\\]{}，且必须以\&quot;/\&quot;开头。
         :type path: str
-        :param query: 重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下： 若该字段被设置为：${query}&amp;name&#x3D;my_name，则在转发符合条件的URL（如https://www.xxx.com:8080/elb?type&#x3D;loadbalancer，此时${query}表示type&#x3D;loadbalancer）时，将会重定向到https://www.xxx.com:8080/elb?type&#x3D;loadbalancer&amp;name&#x3D;my_name。  只能包含英文字母、数字和特殊字符：!$&amp;&#39;()*+,-./:;&#x3D;?@^_&#x60;。字母区分大小写。
+        :param query: 重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下：   若该字段被设置为：${query}&amp;name&#x3D;my_name，则在转发符合条件的URL（如https://www.xxx.com:8080/elb?type&#x3D;loadbalancer，此时${query}表示type&#x3D;loadbalancer）时，将会重定向到https://www.xxx.com:8080/elb?type&#x3D;loadbalancer&amp;name&#x3D;my_name。   只能包含英文字母、数字和特殊字符：!$&amp;&#39;()*+,-./:;&#x3D;?@^_&#x60;。字母区分大小写。
         :type query: str
         :param status_code: 重定向后的返回码。  取值范围： - 301 - 302 - 303 - 307 - 308
         :type status_code: str
@@ -105,7 +105,7 @@ class CreateRedirectUrlConfig:
     def host(self):
         """Gets the host of this CreateRedirectUrlConfig.
 
-        重定向的主机名。字符串只能包含英文字母、数字、\"-\"、\".\"，必须以字母、数字开头。默认值${host}表示继承原值（即与被转发请求保持一致）。
+        重定向的主机名。字符串只能包含英文字母、数字、“-”、“.”，必须以字母、数字开头。默认值${host}表示继承原值（即与被转发请求保持一致）。
 
         :return: The host of this CreateRedirectUrlConfig.
         :rtype: str
@@ -116,7 +116,7 @@ class CreateRedirectUrlConfig:
     def host(self, host):
         """Sets the host of this CreateRedirectUrlConfig.
 
-        重定向的主机名。字符串只能包含英文字母、数字、\"-\"、\".\"，必须以字母、数字开头。默认值${host}表示继承原值（即与被转发请求保持一致）。
+        重定向的主机名。字符串只能包含英文字母、数字、“-”、“.”，必须以字母、数字开头。默认值${host}表示继承原值（即与被转发请求保持一致）。
 
         :param host: The host of this CreateRedirectUrlConfig.
         :type host: str
@@ -149,7 +149,7 @@ class CreateRedirectUrlConfig:
     def path(self):
         """Gets the path of this CreateRedirectUrlConfig.
 
-        重定向的路径。默认值${path}表示继承原值（即与被转发请求保持一致）。  只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:|/()[]{}，且必须以\"/\"开头。
+        重定向的路径。默认值${path}表示继承原值（即与被转发请求保持一致）。  只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:|\\/()\\[\\]{}，且必须以\"/\"开头。
 
         :return: The path of this CreateRedirectUrlConfig.
         :rtype: str
@@ -160,7 +160,7 @@ class CreateRedirectUrlConfig:
     def path(self, path):
         """Sets the path of this CreateRedirectUrlConfig.
 
-        重定向的路径。默认值${path}表示继承原值（即与被转发请求保持一致）。  只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:|/()[]{}，且必须以\"/\"开头。
+        重定向的路径。默认值${path}表示继承原值（即与被转发请求保持一致）。  只能包含英文字母、数字、_~';@^-%#&$.*+?,=!:|\\/()\\[\\]{}，且必须以\"/\"开头。
 
         :param path: The path of this CreateRedirectUrlConfig.
         :type path: str
@@ -171,7 +171,7 @@ class CreateRedirectUrlConfig:
     def query(self):
         """Gets the query of this CreateRedirectUrlConfig.
 
-        重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下： 若该字段被设置为：${query}&name=my_name，则在转发符合条件的URL（如https://www.xxx.com:8080/elb?type=loadbalancer，此时${query}表示type=loadbalancer）时，将会重定向到https://www.xxx.com:8080/elb?type=loadbalancer&name=my_name。  只能包含英文字母、数字和特殊字符：!$&'()*+,-./:;=?@^_`。字母区分大小写。
+        重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下：   若该字段被设置为：${query}&name=my_name，则在转发符合条件的URL（如https://www.xxx.com:8080/elb?type=loadbalancer，此时${query}表示type=loadbalancer）时，将会重定向到https://www.xxx.com:8080/elb?type=loadbalancer&name=my_name。   只能包含英文字母、数字和特殊字符：!$&'()*+,-./:;=?@^_`。字母区分大小写。
 
         :return: The query of this CreateRedirectUrlConfig.
         :rtype: str
@@ -182,7 +182,7 @@ class CreateRedirectUrlConfig:
     def query(self, query):
         """Sets the query of this CreateRedirectUrlConfig.
 
-        重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下： 若该字段被设置为：${query}&name=my_name，则在转发符合条件的URL（如https://www.xxx.com:8080/elb?type=loadbalancer，此时${query}表示type=loadbalancer）时，将会重定向到https://www.xxx.com:8080/elb?type=loadbalancer&name=my_name。  只能包含英文字母、数字和特殊字符：!$&'()*+,-./:;=?@^_`。字母区分大小写。
+        重定向的查询字符串。默认${query}表示继承原值（即与被转发请求保持一致）。举例如下：   若该字段被设置为：${query}&name=my_name，则在转发符合条件的URL（如https://www.xxx.com:8080/elb?type=loadbalancer，此时${query}表示type=loadbalancer）时，将会重定向到https://www.xxx.com:8080/elb?type=loadbalancer&name=my_name。   只能包含英文字母、数字和特殊字符：!$&'()*+,-./:;=?@^_`。字母区分大小写。
 
         :param query: The query of this CreateRedirectUrlConfig.
         :type query: str

@@ -21,51 +21,51 @@ class ListYmlsJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'config_list': 'list[ConfigList]'
+        'configurations': 'list[ConfigurationsRsp]'
     }
 
     attribute_map = {
-        'config_list': 'configList'
+        'configurations': 'configurations'
     }
 
-    def __init__(self, config_list=None):
+    def __init__(self, configurations=None):
         """ListYmlsJobResponse
 
         The model defined in huaweicloud sdk
 
-        :param config_list: 配置列表。
-        :type config_list: list[:class:`huaweicloudsdkcss.v1.ConfigList`]
+        :param configurations: 历史修改配置列表。
+        :type configurations: list[:class:`huaweicloudsdkcss.v1.ConfigurationsRsp`]
         """
         
         super(ListYmlsJobResponse, self).__init__()
 
-        self._config_list = None
+        self._configurations = None
         self.discriminator = None
 
-        if config_list is not None:
-            self.config_list = config_list
+        if configurations is not None:
+            self.configurations = configurations
 
     @property
-    def config_list(self):
-        """Gets the config_list of this ListYmlsJobResponse.
+    def configurations(self):
+        """Gets the configurations of this ListYmlsJobResponse.
 
-        配置列表。
+        历史修改配置列表。
 
-        :return: The config_list of this ListYmlsJobResponse.
-        :rtype: list[:class:`huaweicloudsdkcss.v1.ConfigList`]
+        :return: The configurations of this ListYmlsJobResponse.
+        :rtype: list[:class:`huaweicloudsdkcss.v1.ConfigurationsRsp`]
         """
-        return self._config_list
+        return self._configurations
 
-    @config_list.setter
-    def config_list(self, config_list):
-        """Sets the config_list of this ListYmlsJobResponse.
+    @configurations.setter
+    def configurations(self, configurations):
+        """Sets the configurations of this ListYmlsJobResponse.
 
-        配置列表。
+        历史修改配置列表。
 
-        :param config_list: The config_list of this ListYmlsJobResponse.
-        :type config_list: list[:class:`huaweicloudsdkcss.v1.ConfigList`]
+        :param configurations: The configurations of this ListYmlsJobResponse.
+        :type configurations: list[:class:`huaweicloudsdkcss.v1.ConfigurationsRsp`]
         """
-        self._config_list = config_list
+        self._configurations = configurations
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -10,15 +10,15 @@ from huaweicloudsdkelb.v3.model.batch_create_members_option import BatchCreateMe
 from huaweicloudsdkelb.v3.model.batch_create_members_request import BatchCreateMembersRequest
 from huaweicloudsdkelb.v3.model.batch_create_members_request_body import BatchCreateMembersRequestBody
 from huaweicloudsdkelb.v3.model.batch_create_members_response import BatchCreateMembersResponse
+from huaweicloudsdkelb.v3.model.batch_delete_ip_group_ip_list_request_body import BatchDeleteIpGroupIpListRequestBody
 from huaweicloudsdkelb.v3.model.batch_delete_ip_list_option import BatchDeleteIpListOption
 from huaweicloudsdkelb.v3.model.batch_delete_ip_list_request import BatchDeleteIpListRequest
-from huaweicloudsdkelb.v3.model.batch_delete_ip_list_request_body import BatchDeleteIpListRequestBody
 from huaweicloudsdkelb.v3.model.batch_delete_ip_list_response import BatchDeleteIpListResponse
-from huaweicloudsdkelb.v3.model.batch_delete_member_request_body import BatchDeleteMemberRequestBody
-from huaweicloudsdkelb.v3.model.batch_delete_member_state import BatchDeleteMemberState
 from huaweicloudsdkelb.v3.model.batch_delete_members_option import BatchDeleteMembersOption
 from huaweicloudsdkelb.v3.model.batch_delete_members_request import BatchDeleteMembersRequest
+from huaweicloudsdkelb.v3.model.batch_delete_members_request_body import BatchDeleteMembersRequestBody
 from huaweicloudsdkelb.v3.model.batch_delete_members_response import BatchDeleteMembersResponse
+from huaweicloudsdkelb.v3.model.batch_delete_members_state import BatchDeleteMembersState
 from huaweicloudsdkelb.v3.model.batch_member import BatchMember
 from huaweicloudsdkelb.v3.model.batch_update_policies_priority_request import BatchUpdatePoliciesPriorityRequest
 from huaweicloudsdkelb.v3.model.batch_update_policies_priority_request_body import BatchUpdatePoliciesPriorityRequestBody
@@ -54,6 +54,7 @@ from huaweicloudsdkelb.v3.model.create_l7_rule_request_body import CreateL7RuleR
 from huaweicloudsdkelb.v3.model.create_l7_rule_response import CreateL7RuleResponse
 from huaweicloudsdkelb.v3.model.create_listener_ip_group_option import CreateListenerIpGroupOption
 from huaweicloudsdkelb.v3.model.create_listener_option import CreateListenerOption
+from huaweicloudsdkelb.v3.model.create_listener_quic_config_option import CreateListenerQuicConfigOption
 from huaweicloudsdkelb.v3.model.create_listener_request import CreateListenerRequest
 from huaweicloudsdkelb.v3.model.create_listener_request_body import CreateListenerRequestBody
 from huaweicloudsdkelb.v3.model.create_listener_response import CreateListenerResponse
@@ -68,6 +69,12 @@ from huaweicloudsdkelb.v3.model.create_logtank_option import CreateLogtankOption
 from huaweicloudsdkelb.v3.model.create_logtank_request import CreateLogtankRequest
 from huaweicloudsdkelb.v3.model.create_logtank_request_body import CreateLogtankRequestBody
 from huaweicloudsdkelb.v3.model.create_logtank_response import CreateLogtankResponse
+from huaweicloudsdkelb.v3.model.create_master_slave_health_monitor_option import CreateMasterSlaveHealthMonitorOption
+from huaweicloudsdkelb.v3.model.create_master_slave_member_option import CreateMasterSlaveMemberOption
+from huaweicloudsdkelb.v3.model.create_master_slave_pool_option import CreateMasterSlavePoolOption
+from huaweicloudsdkelb.v3.model.create_master_slave_pool_request import CreateMasterSlavePoolRequest
+from huaweicloudsdkelb.v3.model.create_master_slave_pool_request_body import CreateMasterSlavePoolRequestBody
+from huaweicloudsdkelb.v3.model.create_master_slave_pool_response import CreateMasterSlavePoolResponse
 from huaweicloudsdkelb.v3.model.create_member_option import CreateMemberOption
 from huaweicloudsdkelb.v3.model.create_member_request import CreateMemberRequest
 from huaweicloudsdkelb.v3.model.create_member_request_body import CreateMemberRequestBody
@@ -78,6 +85,7 @@ from huaweicloudsdkelb.v3.model.create_pool_request_body import CreatePoolReques
 from huaweicloudsdkelb.v3.model.create_pool_response import CreatePoolResponse
 from huaweicloudsdkelb.v3.model.create_pool_session_persistence_option import CreatePoolSessionPersistenceOption
 from huaweicloudsdkelb.v3.model.create_pool_slow_start_option import CreatePoolSlowStartOption
+from huaweicloudsdkelb.v3.model.create_redirect_pools_config import CreateRedirectPoolsConfig
 from huaweicloudsdkelb.v3.model.create_redirect_url_config import CreateRedirectUrlConfig
 from huaweicloudsdkelb.v3.model.create_rule_condition import CreateRuleCondition
 from huaweicloudsdkelb.v3.model.create_rule_option import CreateRuleOption
@@ -101,6 +109,8 @@ from huaweicloudsdkelb.v3.model.delete_load_balancer_request import DeleteLoadBa
 from huaweicloudsdkelb.v3.model.delete_load_balancer_response import DeleteLoadBalancerResponse
 from huaweicloudsdkelb.v3.model.delete_logtank_request import DeleteLogtankRequest
 from huaweicloudsdkelb.v3.model.delete_logtank_response import DeleteLogtankResponse
+from huaweicloudsdkelb.v3.model.delete_master_slave_pool_request import DeleteMasterSlavePoolRequest
+from huaweicloudsdkelb.v3.model.delete_master_slave_pool_response import DeleteMasterSlavePoolResponse
 from huaweicloudsdkelb.v3.model.delete_member_request import DeleteMemberRequest
 from huaweicloudsdkelb.v3.model.delete_member_response import DeleteMemberResponse
 from huaweicloudsdkelb.v3.model.delete_pool_request import DeletePoolRequest
@@ -111,6 +121,7 @@ from huaweicloudsdkelb.v3.model.eip_info import EipInfo
 from huaweicloudsdkelb.v3.model.fixted_response_config import FixtedResponseConfig
 from huaweicloudsdkelb.v3.model.flavor import Flavor
 from huaweicloudsdkelb.v3.model.flavor_info import FlavorInfo
+from huaweicloudsdkelb.v3.model.global_eip_info import GlobalEipInfo
 from huaweicloudsdkelb.v3.model.health_monitor import HealthMonitor
 from huaweicloudsdkelb.v3.model.ip_group import IpGroup
 from huaweicloudsdkelb.v3.model.ip_group_ip import IpGroupIp
@@ -141,6 +152,8 @@ from huaweicloudsdkelb.v3.model.list_load_balancers_request import ListLoadBalan
 from huaweicloudsdkelb.v3.model.list_load_balancers_response import ListLoadBalancersResponse
 from huaweicloudsdkelb.v3.model.list_logtanks_request import ListLogtanksRequest
 from huaweicloudsdkelb.v3.model.list_logtanks_response import ListLogtanksResponse
+from huaweicloudsdkelb.v3.model.list_master_slave_pools_request import ListMasterSlavePoolsRequest
+from huaweicloudsdkelb.v3.model.list_master_slave_pools_response import ListMasterSlavePoolsResponse
 from huaweicloudsdkelb.v3.model.list_members_request import ListMembersRequest
 from huaweicloudsdkelb.v3.model.list_members_response import ListMembersResponse
 from huaweicloudsdkelb.v3.model.list_pools_request import ListPoolsRequest
@@ -154,6 +167,8 @@ from huaweicloudsdkelb.v3.model.list_system_security_policies_response import Li
 from huaweicloudsdkelb.v3.model.listener import Listener
 from huaweicloudsdkelb.v3.model.listener_insert_headers import ListenerInsertHeaders
 from huaweicloudsdkelb.v3.model.listener_ip_group import ListenerIpGroup
+from huaweicloudsdkelb.v3.model.listener_member_info import ListenerMemberInfo
+from huaweicloudsdkelb.v3.model.listener_quic_config import ListenerQuicConfig
 from huaweicloudsdkelb.v3.model.listener_ref import ListenerRef
 from huaweicloudsdkelb.v3.model.load_balancer import LoadBalancer
 from huaweicloudsdkelb.v3.model.load_balancer_ref import LoadBalancerRef
@@ -166,8 +181,12 @@ from huaweicloudsdkelb.v3.model.load_balancer_status_policy import LoadBalancerS
 from huaweicloudsdkelb.v3.model.load_balancer_status_pool import LoadBalancerStatusPool
 from huaweicloudsdkelb.v3.model.load_balancer_status_result import LoadBalancerStatusResult
 from huaweicloudsdkelb.v3.model.logtank import Logtank
+from huaweicloudsdkelb.v3.model.master_slave_health_monitor import MasterSlaveHealthMonitor
+from huaweicloudsdkelb.v3.model.master_slave_member import MasterSlaveMember
+from huaweicloudsdkelb.v3.model.master_slave_pool import MasterSlavePool
 from huaweicloudsdkelb.v3.model.member import Member
 from huaweicloudsdkelb.v3.model.member_ref import MemberRef
+from huaweicloudsdkelb.v3.model.member_status import MemberStatus
 from huaweicloudsdkelb.v3.model.page_info import PageInfo
 from huaweicloudsdkelb.v3.model.pool import Pool
 from huaweicloudsdkelb.v3.model.pool_ref import PoolRef
@@ -179,6 +198,7 @@ from huaweicloudsdkelb.v3.model.public_ip_info import PublicIpInfo
 from huaweicloudsdkelb.v3.model.quota import Quota
 from huaweicloudsdkelb.v3.model.quota_info import QuotaInfo
 from huaweicloudsdkelb.v3.model.redirect_url_config import RedirectUrlConfig
+from huaweicloudsdkelb.v3.model.resource_id import ResourceID
 from huaweicloudsdkelb.v3.model.rule_condition import RuleCondition
 from huaweicloudsdkelb.v3.model.rule_ref import RuleRef
 from huaweicloudsdkelb.v3.model.security_policy import SecurityPolicy
@@ -203,6 +223,8 @@ from huaweicloudsdkelb.v3.model.show_load_balancer_status_request import ShowLoa
 from huaweicloudsdkelb.v3.model.show_load_balancer_status_response import ShowLoadBalancerStatusResponse
 from huaweicloudsdkelb.v3.model.show_logtank_request import ShowLogtankRequest
 from huaweicloudsdkelb.v3.model.show_logtank_response import ShowLogtankResponse
+from huaweicloudsdkelb.v3.model.show_master_slave_pool_request import ShowMasterSlavePoolRequest
+from huaweicloudsdkelb.v3.model.show_master_slave_pool_response import ShowMasterSlavePoolResponse
 from huaweicloudsdkelb.v3.model.show_member_request import ShowMemberRequest
 from huaweicloudsdkelb.v3.model.show_member_response import ShowMemberResponse
 from huaweicloudsdkelb.v3.model.show_pool_request import ShowPoolRequest
@@ -224,11 +246,11 @@ from huaweicloudsdkelb.v3.model.update_health_monitor_option import UpdateHealth
 from huaweicloudsdkelb.v3.model.update_health_monitor_request import UpdateHealthMonitorRequest
 from huaweicloudsdkelb.v3.model.update_health_monitor_request_body import UpdateHealthMonitorRequestBody
 from huaweicloudsdkelb.v3.model.update_health_monitor_response import UpdateHealthMonitorResponse
-from huaweicloudsdkelb.v3.model.update_ip_group_ip_list_option import UpdateIpGroupIpListOption
 from huaweicloudsdkelb.v3.model.update_ip_group_option import UpdateIpGroupOption
 from huaweicloudsdkelb.v3.model.update_ip_group_request import UpdateIpGroupRequest
 from huaweicloudsdkelb.v3.model.update_ip_group_request_body import UpdateIpGroupRequestBody
 from huaweicloudsdkelb.v3.model.update_ip_group_response import UpdateIpGroupResponse
+from huaweicloudsdkelb.v3.model.update_ip_list_option import UpdateIpListOption
 from huaweicloudsdkelb.v3.model.update_ip_list_request import UpdateIpListRequest
 from huaweicloudsdkelb.v3.model.update_ip_list_request_body import UpdateIpListRequestBody
 from huaweicloudsdkelb.v3.model.update_ip_list_response import UpdateIpListResponse
@@ -242,6 +264,7 @@ from huaweicloudsdkelb.v3.model.update_l7_rule_request_body import UpdateL7RuleR
 from huaweicloudsdkelb.v3.model.update_l7_rule_response import UpdateL7RuleResponse
 from huaweicloudsdkelb.v3.model.update_listener_ip_group_option import UpdateListenerIpGroupOption
 from huaweicloudsdkelb.v3.model.update_listener_option import UpdateListenerOption
+from huaweicloudsdkelb.v3.model.update_listener_quic_config_option import UpdateListenerQuicConfigOption
 from huaweicloudsdkelb.v3.model.update_listener_request import UpdateListenerRequest
 from huaweicloudsdkelb.v3.model.update_listener_request_body import UpdateListenerRequestBody
 from huaweicloudsdkelb.v3.model.update_listener_response import UpdateListenerResponse

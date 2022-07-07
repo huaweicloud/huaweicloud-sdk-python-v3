@@ -37,7 +37,7 @@ class ListApiVersionsResponse(SdkResponse):
 
         :param id: API版本号。 取值：由高到低版本分别为v3，v2，v2.0。
         :type id: str
-        :param status: API版本的状态。 取值： - CURRENT：当前版本。 - STABLE：稳定版本。 - DEPRECATED：废弃版本。
+        :param status: API版本的状态。 取值： - CURRENT：当前版本。 - STABLE：稳定版本。 - DEPRECATED：废弃版本。  说明： 所有支持的API版本中最高版状态为CURRENT，其他版本状态为STABLE。
         :type status: str
         """
         
@@ -78,7 +78,7 @@ class ListApiVersionsResponse(SdkResponse):
     def status(self):
         """Gets the status of this ListApiVersionsResponse.
 
-        API版本的状态。 取值： - CURRENT：当前版本。 - STABLE：稳定版本。 - DEPRECATED：废弃版本。
+        API版本的状态。 取值： - CURRENT：当前版本。 - STABLE：稳定版本。 - DEPRECATED：废弃版本。  说明： 所有支持的API版本中最高版状态为CURRENT，其他版本状态为STABLE。
 
         :return: The status of this ListApiVersionsResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class ListApiVersionsResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ListApiVersionsResponse.
 
-        API版本的状态。 取值： - CURRENT：当前版本。 - STABLE：稳定版本。 - DEPRECATED：废弃版本。
+        API版本的状态。 取值： - CURRENT：当前版本。 - STABLE：稳定版本。 - DEPRECATED：废弃版本。  说明： 所有支持的API版本中最高版状态为CURRENT，其他版本状态为STABLE。
 
         :param status: The status of this ListApiVersionsResponse.
         :type status: str

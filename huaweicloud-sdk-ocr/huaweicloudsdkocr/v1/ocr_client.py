@@ -2098,11 +2098,13 @@ class OcrClient(Client):
     def recognize_vat_invoice(self, request):
         """增值税发票识别
 
-        识别用户上传的增值税发票图片（或者用户提供的华为云上OBS的增值税发票图片文件的URL）中的文字内容，并将识别的结果返回给用户。
+        识别增值税发票的类别，以及图片中的文字内容，并以json格式返回识别的结构化结果，不支持真伪验证。该接口的使用限制请参见[约束与限制](https://support.huaweicloud.com/productdesc-ocr/ocr_01_0006.html#section15)，详细使用指导请参见[OCR服务使用简介](https://support.huaweicloud.com/qs-ocr/ocr_05_0001.html)章节。
         
         说明：
         
         该增值税发票仅限于中华人民共和国境内使用的增值税发票。
+        
+        支持的增值税发票包括：增值税专用发票、增值税普通发票、增值税电子普通发票、增值税电子专用发票、增值税电子普通发票（通行费）、增值税普通发票（卷票）。
         
         如果图片中包含多张卡证票据，请调用智能分类识别服务。
         

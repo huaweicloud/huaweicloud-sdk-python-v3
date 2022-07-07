@@ -24,6 +24,7 @@ class UpdateModuleResponse(SdkResponse):
         'edge_app_id': 'str',
         'app_version': 'str',
         'state': 'str',
+        'control_status': 'str',
         'node_id': 'str',
         'module_name': 'str',
         'module_id': 'str',
@@ -37,6 +38,7 @@ class UpdateModuleResponse(SdkResponse):
         'edge_app_id': 'edge_app_id',
         'app_version': 'app_version',
         'state': 'state',
+        'control_status': 'control_status',
         'node_id': 'node_id',
         'module_name': 'module_name',
         'module_id': 'module_id',
@@ -46,7 +48,7 @@ class UpdateModuleResponse(SdkResponse):
         'function_type': 'function_type'
     }
 
-    def __init__(self, edge_app_id=None, app_version=None, state=None, node_id=None, module_name=None, module_id=None, create_time=None, update_time=None, app_type=None, function_type=None):
+    def __init__(self, edge_app_id=None, app_version=None, state=None, control_status=None, node_id=None, module_name=None, module_id=None, create_time=None, update_time=None, app_type=None, function_type=None):
         """UpdateModuleResponse
 
         The model defined in huaweicloud sdk
@@ -55,8 +57,10 @@ class UpdateModuleResponse(SdkResponse):
         :type edge_app_id: str
         :param app_version: 应用版本
         :type app_version: str
-        :param state: 模块状态
+        :param state: 模块运行状态
         :type state: str
+        :param control_status: 模块管控状态
+        :type control_status: str
         :param node_id: 边缘节点（同deviceID）ID
         :type node_id: str
         :param module_name: 模块名称
@@ -78,6 +82,7 @@ class UpdateModuleResponse(SdkResponse):
         self._edge_app_id = None
         self._app_version = None
         self._state = None
+        self._control_status = None
         self._node_id = None
         self._module_name = None
         self._module_id = None
@@ -93,6 +98,8 @@ class UpdateModuleResponse(SdkResponse):
             self.app_version = app_version
         if state is not None:
             self.state = state
+        if control_status is not None:
+            self.control_status = control_status
         if node_id is not None:
             self.node_id = node_id
         if module_name is not None:
@@ -156,7 +163,7 @@ class UpdateModuleResponse(SdkResponse):
     def state(self):
         """Gets the state of this UpdateModuleResponse.
 
-        模块状态
+        模块运行状态
 
         :return: The state of this UpdateModuleResponse.
         :rtype: str
@@ -167,12 +174,34 @@ class UpdateModuleResponse(SdkResponse):
     def state(self, state):
         """Sets the state of this UpdateModuleResponse.
 
-        模块状态
+        模块运行状态
 
         :param state: The state of this UpdateModuleResponse.
         :type state: str
         """
         self._state = state
+
+    @property
+    def control_status(self):
+        """Gets the control_status of this UpdateModuleResponse.
+
+        模块管控状态
+
+        :return: The control_status of this UpdateModuleResponse.
+        :rtype: str
+        """
+        return self._control_status
+
+    @control_status.setter
+    def control_status(self, control_status):
+        """Sets the control_status of this UpdateModuleResponse.
+
+        模块管控状态
+
+        :param control_status: The control_status of this UpdateModuleResponse.
+        :type control_status: str
+        """
+        self._control_status = control_status
 
     @property
     def node_id(self):

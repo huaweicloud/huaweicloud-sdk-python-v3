@@ -22,7 +22,7 @@ class BatchDeleteMembersResponse(SdkResponse):
 
     openapi_types = {
         'request_id': 'str',
-        'members': 'list[BatchDeleteMemberState]'
+        'members': 'list[BatchDeleteMembersState]'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class BatchDeleteMembersResponse(SdkResponse):
         :param request_id: 请求ID。  注：自动生成 。
         :type request_id: str
         :param members: 后端服务器对象列表。
-        :type members: list[:class:`huaweicloudsdkelb.v3.BatchDeleteMemberState`]
+        :type members: list[:class:`huaweicloudsdkelb.v3.BatchDeleteMembersState`]
         """
         
         super(BatchDeleteMembersResponse, self).__init__()
@@ -81,7 +81,7 @@ class BatchDeleteMembersResponse(SdkResponse):
         后端服务器对象列表。
 
         :return: The members of this BatchDeleteMembersResponse.
-        :rtype: list[:class:`huaweicloudsdkelb.v3.BatchDeleteMemberState`]
+        :rtype: list[:class:`huaweicloudsdkelb.v3.BatchDeleteMembersState`]
         """
         return self._members
 
@@ -92,7 +92,7 @@ class BatchDeleteMembersResponse(SdkResponse):
         后端服务器对象列表。
 
         :param members: The members of this BatchDeleteMembersResponse.
-        :type members: list[:class:`huaweicloudsdkelb.v3.BatchDeleteMemberState`]
+        :type members: list[:class:`huaweicloudsdkelb.v3.BatchDeleteMembersState`]
         """
         self._members = members
 

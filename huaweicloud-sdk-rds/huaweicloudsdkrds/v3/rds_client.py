@@ -3021,6 +3021,68 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def set_sensitive_slow_log(self, request):
+        """慢日志敏感信息的开关
+
+        V3慢日志敏感信息的开关
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SetSensitiveSlowLog
+        :type request: :class:`huaweicloudsdkrds.v3.SetSensitiveSlowLogRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.SetSensitiveSlowLogResponse`
+        """
+        return self.set_sensitive_slow_log_with_http_info(request)
+
+    def set_sensitive_slow_log_with_http_info(self, request):
+        all_params = ['instance_id', 'status', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'status' in local_var_params:
+            path_params['status'] = local_var_params['status']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/slowlog-sensitization/{status}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetSensitiveSlowLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_auditlog_download_link(self, request):
         """生成审计日志下载链接
 

@@ -480,7 +480,6 @@ class CceAsyncClient(Client):
         该API用于在指定集群下创建节点池。仅支持集群在处于可用、扩容、缩容状态时调用。1.21版本的集群创建节点池时支持绑定安全组，每个节点池最多绑定五个安全组。更新节点池的安全组后，只针对新创的pod生效，建议驱逐节点上原有的pod。
         
         &gt; 若无集群，请先[创建集群](cce_02_0236.xml)。
-        
         &gt; 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
         
         详细说明请参考华为云API Explorer。
@@ -1528,6 +1527,65 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_cluster_endpoints_async(self, request):
+        """获取集群访问的地址
+
+        该API用于通过集群ID获取集群访问的地址，包括PrivateIP(HA集群返回VIP)与PublicIP
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowClusterEndpoints
+        :type request: :class:`huaweicloudsdkcce.v3.ShowClusterEndpointsRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowClusterEndpointsResponse`
+        """
+        return self.show_cluster_endpoints_with_http_info(request)
+
+    def show_cluster_endpoints_with_http_info(self, request):
+        all_params = ['cluster_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/openapi',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowClusterEndpointsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_job_async(self, request):
         """获取任务信息
 
@@ -1713,7 +1771,7 @@ class CceAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_quotas_async(self, request):
-        """查询CCE服务下的资源配额。
+        """查询CCE服务下的资源配额
 
         该API用于查询CCE服务下的资源配额。
         
@@ -1889,6 +1947,67 @@ class CceAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_cluster_eip_async(self, request):
+        """绑定、解绑集群公网apiserver地址
+
+        该API用于通过集群ID绑定、解绑集群公网apiserver地址
+        &gt;集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateClusterEip
+        :type request: :class:`huaweicloudsdkcce.v3.UpdateClusterEipRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.UpdateClusterEipResponse`
+        """
+        return self.update_cluster_eip_with_http_info(request)
+
+    def update_cluster_eip_with_http_info(self, request):
+        all_params = ['cluster_id', 'master_eip_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/mastereip',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateClusterEipResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_node_async(self, request):
         """更新指定的节点
 
@@ -1959,9 +2078,7 @@ class CceAsyncClient(Client):
         该API用于更新指定的节点池。仅支持集群在处于可用、扩容、缩容状态时调用。
         
         &gt; - 集群管理的URL格式为：https://Endpoint/uri。其中uri为资源路径，也即API访问的路径
-        
-        &gt; - 当前仅支持更新节点池名称，spec下的initialNodeCount，k8sTags，
-        taints，login，userTags与节点池的扩缩容配置相关字段。若此次更新未设置相关值，默认更新为初始值。
+        &gt; - 当前仅支持更新节点池名称，spec下的initialNodeCount，k8sTags，taints，login，userTags与节点池的扩缩容配置相关字段。若此次更新未设置相关值，默认更新为初始值。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2015,6 +2132,62 @@ class CceAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateNodePoolResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_version_async(self, request):
+        """查询API版本信息列表。
+
+        该API用于查询CCE服务当前支持的API版本信息列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowVersion
+        :type request: :class:`huaweicloudsdkcce.v3.ShowVersionRequest`
+        :rtype: :class:`huaweicloudsdkcce.v3.ShowVersionResponse`
+        """
+        return self.show_version_with_http_info(request)
+
+    def show_version_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

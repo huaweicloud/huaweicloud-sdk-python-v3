@@ -22,39 +22,32 @@ class AutoscalingRef:
 
     openapi_types = {
         'enable': 'bool',
-        'min_l4_flavor_id': 'str',
         'min_l7_flavor_id': 'str'
     }
 
     attribute_map = {
         'enable': 'enable',
-        'min_l4_flavor_id': 'min_l4_flavor_id',
         'min_l7_flavor_id': 'min_l7_flavor_id'
     }
 
-    def __init__(self, enable=None, min_l4_flavor_id=None, min_l7_flavor_id=None):
+    def __init__(self, enable=None, min_l7_flavor_id=None):
         """AutoscalingRef
 
         The model defined in huaweicloud sdk
 
         :param enable: 当前负载均衡器是否开启弹性扩缩容。 取值： - true：开启。 - false：不开启。
         :type enable: bool
-        :param min_l4_flavor_id: 弹性扩缩容的最小四层规格ID，有四层监听器时，该字段不能为空。
-        :type min_l4_flavor_id: str
-        :param min_l7_flavor_id: 弹性扩缩容的最小七层规格ID，有七层监听器时，该字段不能为空。
+        :param min_l7_flavor_id: 弹性扩缩容的最小七层规格ID（规格类型L7_elastic），有七层监听器时，该字段不能为空。
         :type min_l7_flavor_id: str
         """
         
         
 
         self._enable = None
-        self._min_l4_flavor_id = None
         self._min_l7_flavor_id = None
         self.discriminator = None
 
         self.enable = enable
-        if min_l4_flavor_id is not None:
-            self.min_l4_flavor_id = min_l4_flavor_id
         if min_l7_flavor_id is not None:
             self.min_l7_flavor_id = min_l7_flavor_id
 
@@ -81,32 +74,10 @@ class AutoscalingRef:
         self._enable = enable
 
     @property
-    def min_l4_flavor_id(self):
-        """Gets the min_l4_flavor_id of this AutoscalingRef.
-
-        弹性扩缩容的最小四层规格ID，有四层监听器时，该字段不能为空。
-
-        :return: The min_l4_flavor_id of this AutoscalingRef.
-        :rtype: str
-        """
-        return self._min_l4_flavor_id
-
-    @min_l4_flavor_id.setter
-    def min_l4_flavor_id(self, min_l4_flavor_id):
-        """Sets the min_l4_flavor_id of this AutoscalingRef.
-
-        弹性扩缩容的最小四层规格ID，有四层监听器时，该字段不能为空。
-
-        :param min_l4_flavor_id: The min_l4_flavor_id of this AutoscalingRef.
-        :type min_l4_flavor_id: str
-        """
-        self._min_l4_flavor_id = min_l4_flavor_id
-
-    @property
     def min_l7_flavor_id(self):
         """Gets the min_l7_flavor_id of this AutoscalingRef.
 
-        弹性扩缩容的最小七层规格ID，有七层监听器时，该字段不能为空。
+        弹性扩缩容的最小七层规格ID（规格类型L7_elastic），有七层监听器时，该字段不能为空。
 
         :return: The min_l7_flavor_id of this AutoscalingRef.
         :rtype: str
@@ -117,7 +88,7 @@ class AutoscalingRef:
     def min_l7_flavor_id(self, min_l7_flavor_id):
         """Sets the min_l7_flavor_id of this AutoscalingRef.
 
-        弹性扩缩容的最小七层规格ID，有七层监听器时，该字段不能为空。
+        弹性扩缩容的最小七层规格ID（规格类型L7_elastic），有七层监听器时，该字段不能为空。
 
         :param min_l7_flavor_id: The min_l7_flavor_id of this AutoscalingRef.
         :type min_l7_flavor_id: str

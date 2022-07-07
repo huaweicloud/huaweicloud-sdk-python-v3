@@ -33,7 +33,7 @@ class UpdateYmlsReqEditModify:
 
         The model defined in huaweicloud sdk
 
-        :param elasticsearch_yml: 参数配置列表。
+        :param elasticsearch_yml: 参数配置列表。值为需要修改的json数据。
         :type elasticsearch_yml: object
         """
         
@@ -48,7 +48,7 @@ class UpdateYmlsReqEditModify:
     def elasticsearch_yml(self):
         """Gets the elasticsearch_yml of this UpdateYmlsReqEditModify.
 
-        参数配置列表。
+        参数配置列表。值为需要修改的json数据。
 
         :return: The elasticsearch_yml of this UpdateYmlsReqEditModify.
         :rtype: object
@@ -59,7 +59,7 @@ class UpdateYmlsReqEditModify:
     def elasticsearch_yml(self, elasticsearch_yml):
         """Sets the elasticsearch_yml of this UpdateYmlsReqEditModify.
 
-        参数配置列表。
+        参数配置列表。值为需要修改的json数据。
 
         :param elasticsearch_yml: The elasticsearch_yml of this UpdateYmlsReqEditModify.
         :type elasticsearch_yml: object

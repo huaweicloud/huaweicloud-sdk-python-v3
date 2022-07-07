@@ -53,7 +53,7 @@ class LoadBalancerStatusListener:
         :type l7policies: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusPolicy`]
         :param id: 监听器ID。
         :type id: str
-        :param operating_status: 监听器的操作状态。取值：  - ONLINE：创建时默认状态，表示监听器正常运行。  - DEGRADED：   -该监听器下存在l7policy或l7rule的Provisioning_status&#x3D;ERROR时返回这个状态。   -状态树该监听器下存在member的operating_status&#x3D;OFFLINE。 - DISABLED：负载均衡器或监听器的admin_state_up&#x3D;false。 使用说明：  - DEGRADED和DISABLED状态仅在当前接口返回，查询监听器详情等其他接口返回字段operating_status不存在这两个状态值。
+        :param operating_status: 监听器的操作状态。取值： - ONLINE：创建时默认状态，表示监听器正常运行。 - DEGRADED：  -该监听器下存在l7policy或l7rule的Provisioning_status&#x3D;ERROR时返回这个状态。     -状态树该监听器下存在member的operating_status&#x3D;OFFLINE。 - DISABLED：负载均衡器或监听器的admin_state_up&#x3D;false。  说明： DEGRADED和DISABLED状态仅在当前接口返回，查询监听器详情等其他接口返回字段operating_status不存在这两个状态值。
         :type operating_status: str
         """
         
@@ -194,7 +194,7 @@ class LoadBalancerStatusListener:
     def operating_status(self):
         """Gets the operating_status of this LoadBalancerStatusListener.
 
-        监听器的操作状态。取值：  - ONLINE：创建时默认状态，表示监听器正常运行。  - DEGRADED：   -该监听器下存在l7policy或l7rule的Provisioning_status=ERROR时返回这个状态。   -状态树该监听器下存在member的operating_status=OFFLINE。 - DISABLED：负载均衡器或监听器的admin_state_up=false。 使用说明：  - DEGRADED和DISABLED状态仅在当前接口返回，查询监听器详情等其他接口返回字段operating_status不存在这两个状态值。
+        监听器的操作状态。取值： - ONLINE：创建时默认状态，表示监听器正常运行。 - DEGRADED：  -该监听器下存在l7policy或l7rule的Provisioning_status=ERROR时返回这个状态。     -状态树该监听器下存在member的operating_status=OFFLINE。 - DISABLED：负载均衡器或监听器的admin_state_up=false。  说明： DEGRADED和DISABLED状态仅在当前接口返回，查询监听器详情等其他接口返回字段operating_status不存在这两个状态值。
 
         :return: The operating_status of this LoadBalancerStatusListener.
         :rtype: str
@@ -205,7 +205,7 @@ class LoadBalancerStatusListener:
     def operating_status(self, operating_status):
         """Sets the operating_status of this LoadBalancerStatusListener.
 
-        监听器的操作状态。取值：  - ONLINE：创建时默认状态，表示监听器正常运行。  - DEGRADED：   -该监听器下存在l7policy或l7rule的Provisioning_status=ERROR时返回这个状态。   -状态树该监听器下存在member的operating_status=OFFLINE。 - DISABLED：负载均衡器或监听器的admin_state_up=false。 使用说明：  - DEGRADED和DISABLED状态仅在当前接口返回，查询监听器详情等其他接口返回字段operating_status不存在这两个状态值。
+        监听器的操作状态。取值： - ONLINE：创建时默认状态，表示监听器正常运行。 - DEGRADED：  -该监听器下存在l7policy或l7rule的Provisioning_status=ERROR时返回这个状态。     -状态树该监听器下存在member的operating_status=OFFLINE。 - DISABLED：负载均衡器或监听器的admin_state_up=false。  说明： DEGRADED和DISABLED状态仅在当前接口返回，查询监听器详情等其他接口返回字段operating_status不存在这两个状态值。
 
         :param operating_status: The operating_status of this LoadBalancerStatusListener.
         :type operating_status: str

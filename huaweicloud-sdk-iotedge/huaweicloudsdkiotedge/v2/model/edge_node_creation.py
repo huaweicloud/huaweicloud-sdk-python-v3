@@ -21,74 +21,112 @@ class EdgeNodeCreation:
     sensitive_list = []
 
     openapi_types = {
+        'edge_node_id': 'str',
         'name': 'str',
         'type': 'str',
+        'verify_code': 'str',
+        'time_out': 'int',
+        'arch': 'str',
         'instance_id': 'str',
         'space_id': 'str',
         'resource_ids': 'list[str]',
         'security_level': 'str',
         'storage_period': 'int',
         'ai_card_type': 'str',
+        'base_path': 'BasePathDTO',
         'log_configs': 'list[LogConfigDTO]',
-        'apps': 'list[EdgeAppInstanceDTO]'
+        'apps': 'list[EdgeAppInstanceDTO]',
+        'hardware_model': 'str'
     }
 
     attribute_map = {
+        'edge_node_id': 'edge_node_id',
         'name': 'name',
         'type': 'type',
+        'verify_code': 'verify_code',
+        'time_out': 'time_out',
+        'arch': 'arch',
         'instance_id': 'instance_id',
         'space_id': 'space_id',
         'resource_ids': 'resource_ids',
         'security_level': 'security_level',
         'storage_period': 'storage_period',
         'ai_card_type': 'ai_card_type',
+        'base_path': 'base_path',
         'log_configs': 'log_configs',
-        'apps': 'apps'
+        'apps': 'apps',
+        'hardware_model': 'hardware_model'
     }
 
-    def __init__(self, name=None, type=None, instance_id=None, space_id=None, resource_ids=None, security_level=None, storage_period=None, ai_card_type=None, log_configs=None, apps=None):
+    def __init__(self, edge_node_id=None, name=None, type=None, verify_code=None, time_out=None, arch=None, instance_id=None, space_id=None, resource_ids=None, security_level=None, storage_period=None, ai_card_type=None, base_path=None, log_configs=None, apps=None, hardware_model=None):
         """EdgeNodeCreation
 
         The model defined in huaweicloud sdk
 
+        :param edge_node_id: 边缘节点ID
+        :type edge_node_id: str
         :param name: 边缘节点名称，只允许中、数字、英文大小写、中划线、下划线
         :type name: str
         :param type: 节点所属资源类型：advanced|standard
         :type type: str
+        :param verify_code: 边缘节点注册使用的验证码，如果不输入则平台随机生成。
+        :type verify_code: str
+        :param time_out: 验证码的有效时间单位秒，默认1800秒，范围为1~864000，过期后平台会随机生成。
+        :type time_out: int
+        :param arch: 系统架构。包括：arm64，arm32，x86_64。
+        :type arch: str
         :param instance_id: 实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
         :type instance_id: str
         :param space_id: 资源空间id，对应IOTDA云服务接口参数中的app_id。
         :type space_id: str
-        :param resource_ids: 资源id列表，创建节点时需绑定已购买的资源包，可以叠加节点功能。
+        :param resource_ids: 资源id列表，创建节点时需绑定已购买的资源包，资源可叠加。
         :type resource_ids: list[str]
-        :param security_level: 节点的安全等级，MEDIUM边缘节数据上报不进行加密，HIGH对数据上报进行加密。
+        :param security_level: 节点的安全等级，MEDIUM表示本地明文存储，HIGH表示本地加密存储。
         :type security_level: str
         :param storage_period: 节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
         :type storage_period: int
-        :param ai_card_type: 华为AI加速卡类型，如NPU、GPU
+        :param ai_card_type: 华为AI加速卡类型，如NPU、GPU。
         :type ai_card_type: str
-        :param log_configs: 边缘节点在IEF日志配置参数
+        :param base_path: 
+        :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
+        :param log_configs: 边缘节点在IEF日志配置参数，仅高级版支持。
         :type log_configs: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
         :param apps: 用户预置第三方边缘应用
         :type apps: list[:class:`huaweicloudsdkiotedge.v2.EdgeAppInstanceDTO`]
+        :param hardware_model: 网关型号
+        :type hardware_model: str
         """
         
         
 
+        self._edge_node_id = None
         self._name = None
         self._type = None
+        self._verify_code = None
+        self._time_out = None
+        self._arch = None
         self._instance_id = None
         self._space_id = None
         self._resource_ids = None
         self._security_level = None
         self._storage_period = None
         self._ai_card_type = None
+        self._base_path = None
         self._log_configs = None
         self._apps = None
+        self._hardware_model = None
         self.discriminator = None
 
+        if edge_node_id is not None:
+            self.edge_node_id = edge_node_id
         self.name = name
         self.type = type
+        if verify_code is not None:
+            self.verify_code = verify_code
+        if time_out is not None:
+            self.time_out = time_out
+        if arch is not None:
+            self.arch = arch
         if instance_id is not None:
             self.instance_id = instance_id
         if space_id is not None:
@@ -101,10 +139,36 @@ class EdgeNodeCreation:
             self.storage_period = storage_period
         if ai_card_type is not None:
             self.ai_card_type = ai_card_type
+        if base_path is not None:
+            self.base_path = base_path
         if log_configs is not None:
             self.log_configs = log_configs
         if apps is not None:
             self.apps = apps
+        if hardware_model is not None:
+            self.hardware_model = hardware_model
+
+    @property
+    def edge_node_id(self):
+        """Gets the edge_node_id of this EdgeNodeCreation.
+
+        边缘节点ID
+
+        :return: The edge_node_id of this EdgeNodeCreation.
+        :rtype: str
+        """
+        return self._edge_node_id
+
+    @edge_node_id.setter
+    def edge_node_id(self, edge_node_id):
+        """Sets the edge_node_id of this EdgeNodeCreation.
+
+        边缘节点ID
+
+        :param edge_node_id: The edge_node_id of this EdgeNodeCreation.
+        :type edge_node_id: str
+        """
+        self._edge_node_id = edge_node_id
 
     @property
     def name(self):
@@ -149,6 +213,72 @@ class EdgeNodeCreation:
         :type type: str
         """
         self._type = type
+
+    @property
+    def verify_code(self):
+        """Gets the verify_code of this EdgeNodeCreation.
+
+        边缘节点注册使用的验证码，如果不输入则平台随机生成。
+
+        :return: The verify_code of this EdgeNodeCreation.
+        :rtype: str
+        """
+        return self._verify_code
+
+    @verify_code.setter
+    def verify_code(self, verify_code):
+        """Sets the verify_code of this EdgeNodeCreation.
+
+        边缘节点注册使用的验证码，如果不输入则平台随机生成。
+
+        :param verify_code: The verify_code of this EdgeNodeCreation.
+        :type verify_code: str
+        """
+        self._verify_code = verify_code
+
+    @property
+    def time_out(self):
+        """Gets the time_out of this EdgeNodeCreation.
+
+        验证码的有效时间单位秒，默认1800秒，范围为1~864000，过期后平台会随机生成。
+
+        :return: The time_out of this EdgeNodeCreation.
+        :rtype: int
+        """
+        return self._time_out
+
+    @time_out.setter
+    def time_out(self, time_out):
+        """Sets the time_out of this EdgeNodeCreation.
+
+        验证码的有效时间单位秒，默认1800秒，范围为1~864000，过期后平台会随机生成。
+
+        :param time_out: The time_out of this EdgeNodeCreation.
+        :type time_out: int
+        """
+        self._time_out = time_out
+
+    @property
+    def arch(self):
+        """Gets the arch of this EdgeNodeCreation.
+
+        系统架构。包括：arm64，arm32，x86_64。
+
+        :return: The arch of this EdgeNodeCreation.
+        :rtype: str
+        """
+        return self._arch
+
+    @arch.setter
+    def arch(self, arch):
+        """Sets the arch of this EdgeNodeCreation.
+
+        系统架构。包括：arm64，arm32，x86_64。
+
+        :param arch: The arch of this EdgeNodeCreation.
+        :type arch: str
+        """
+        self._arch = arch
 
     @property
     def instance_id(self):
@@ -198,7 +328,7 @@ class EdgeNodeCreation:
     def resource_ids(self):
         """Gets the resource_ids of this EdgeNodeCreation.
 
-        资源id列表，创建节点时需绑定已购买的资源包，可以叠加节点功能。
+        资源id列表，创建节点时需绑定已购买的资源包，资源可叠加。
 
         :return: The resource_ids of this EdgeNodeCreation.
         :rtype: list[str]
@@ -209,7 +339,7 @@ class EdgeNodeCreation:
     def resource_ids(self, resource_ids):
         """Sets the resource_ids of this EdgeNodeCreation.
 
-        资源id列表，创建节点时需绑定已购买的资源包，可以叠加节点功能。
+        资源id列表，创建节点时需绑定已购买的资源包，资源可叠加。
 
         :param resource_ids: The resource_ids of this EdgeNodeCreation.
         :type resource_ids: list[str]
@@ -220,7 +350,7 @@ class EdgeNodeCreation:
     def security_level(self):
         """Gets the security_level of this EdgeNodeCreation.
 
-        节点的安全等级，MEDIUM边缘节数据上报不进行加密，HIGH对数据上报进行加密。
+        节点的安全等级，MEDIUM表示本地明文存储，HIGH表示本地加密存储。
 
         :return: The security_level of this EdgeNodeCreation.
         :rtype: str
@@ -231,7 +361,7 @@ class EdgeNodeCreation:
     def security_level(self, security_level):
         """Sets the security_level of this EdgeNodeCreation.
 
-        节点的安全等级，MEDIUM边缘节数据上报不进行加密，HIGH对数据上报进行加密。
+        节点的安全等级，MEDIUM表示本地明文存储，HIGH表示本地加密存储。
 
         :param security_level: The security_level of this EdgeNodeCreation.
         :type security_level: str
@@ -264,7 +394,7 @@ class EdgeNodeCreation:
     def ai_card_type(self):
         """Gets the ai_card_type of this EdgeNodeCreation.
 
-        华为AI加速卡类型，如NPU、GPU
+        华为AI加速卡类型，如NPU、GPU。
 
         :return: The ai_card_type of this EdgeNodeCreation.
         :rtype: str
@@ -275,7 +405,7 @@ class EdgeNodeCreation:
     def ai_card_type(self, ai_card_type):
         """Sets the ai_card_type of this EdgeNodeCreation.
 
-        华为AI加速卡类型，如NPU、GPU
+        华为AI加速卡类型，如NPU、GPU。
 
         :param ai_card_type: The ai_card_type of this EdgeNodeCreation.
         :type ai_card_type: str
@@ -283,10 +413,30 @@ class EdgeNodeCreation:
         self._ai_card_type = ai_card_type
 
     @property
+    def base_path(self):
+        """Gets the base_path of this EdgeNodeCreation.
+
+
+        :return: The base_path of this EdgeNodeCreation.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
+        """
+        return self._base_path
+
+    @base_path.setter
+    def base_path(self, base_path):
+        """Sets the base_path of this EdgeNodeCreation.
+
+
+        :param base_path: The base_path of this EdgeNodeCreation.
+        :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
+        """
+        self._base_path = base_path
+
+    @property
     def log_configs(self):
         """Gets the log_configs of this EdgeNodeCreation.
 
-        边缘节点在IEF日志配置参数
+        边缘节点在IEF日志配置参数，仅高级版支持。
 
         :return: The log_configs of this EdgeNodeCreation.
         :rtype: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
@@ -297,7 +447,7 @@ class EdgeNodeCreation:
     def log_configs(self, log_configs):
         """Sets the log_configs of this EdgeNodeCreation.
 
-        边缘节点在IEF日志配置参数
+        边缘节点在IEF日志配置参数，仅高级版支持。
 
         :param log_configs: The log_configs of this EdgeNodeCreation.
         :type log_configs: list[:class:`huaweicloudsdkiotedge.v2.LogConfigDTO`]
@@ -325,6 +475,28 @@ class EdgeNodeCreation:
         :type apps: list[:class:`huaweicloudsdkiotedge.v2.EdgeAppInstanceDTO`]
         """
         self._apps = apps
+
+    @property
+    def hardware_model(self):
+        """Gets the hardware_model of this EdgeNodeCreation.
+
+        网关型号
+
+        :return: The hardware_model of this EdgeNodeCreation.
+        :rtype: str
+        """
+        return self._hardware_model
+
+    @hardware_model.setter
+    def hardware_model(self, hardware_model):
+        """Sets the hardware_model of this EdgeNodeCreation.
+
+        网关型号
+
+        :param hardware_model: The hardware_model of this EdgeNodeCreation.
+        :type hardware_model: str
+        """
+        self._hardware_model = hardware_model
 
     def to_dict(self):
         """Returns the model properties as a dict"""

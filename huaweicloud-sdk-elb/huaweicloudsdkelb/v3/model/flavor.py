@@ -51,13 +51,13 @@ class Flavor:
         :type info: :class:`huaweicloudsdkelb.v3.FlavorInfo`
         :param name: 规格名称。
         :type name: str
-        :param shared: 共享。
+        :param shared: 是否公共规格。取值：  true表示公共规格，所有租户可见。 false表示私有规格，为当前租户所有。
         :type shared: bool
         :param project_id: 项目ID。
         :type project_id: str
-        :param type: L4和L7 分别表示四层和七层flavor。查询支持按type过滤。
+        :param type: 规格类别。取值： - L4和L7 表示四层和七层flavor。 - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max和L7_elastic_max 表示弹性扩缩容实例的上限规格。
         :type type: str
-        :param flavor_sold_out: 是否售罄。
+        :param flavor_sold_out: 是否售罄。取值： - true：已售罄，将无法购买该规格的LB。 - false：未售罄，可购买该规格的LB。
         :type flavor_sold_out: bool
         """
         
@@ -148,7 +148,7 @@ class Flavor:
     def shared(self):
         """Gets the shared of this Flavor.
 
-        共享。
+        是否公共规格。取值：  true表示公共规格，所有租户可见。 false表示私有规格，为当前租户所有。
 
         :return: The shared of this Flavor.
         :rtype: bool
@@ -159,7 +159,7 @@ class Flavor:
     def shared(self, shared):
         """Sets the shared of this Flavor.
 
-        共享。
+        是否公共规格。取值：  true表示公共规格，所有租户可见。 false表示私有规格，为当前租户所有。
 
         :param shared: The shared of this Flavor.
         :type shared: bool
@@ -192,7 +192,7 @@ class Flavor:
     def type(self):
         """Gets the type of this Flavor.
 
-        L4和L7 分别表示四层和七层flavor。查询支持按type过滤。
+        规格类别。取值： - L4和L7 表示四层和七层flavor。 - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max和L7_elastic_max 表示弹性扩缩容实例的上限规格。
 
         :return: The type of this Flavor.
         :rtype: str
@@ -203,7 +203,7 @@ class Flavor:
     def type(self, type):
         """Sets the type of this Flavor.
 
-        L4和L7 分别表示四层和七层flavor。查询支持按type过滤。
+        规格类别。取值： - L4和L7 表示四层和七层flavor。 - L4_elastic和L7_elastic 表示弹性扩缩容实例的下限规格。 - L4_elastic_max和L7_elastic_max 表示弹性扩缩容实例的上限规格。
 
         :param type: The type of this Flavor.
         :type type: str
@@ -214,7 +214,7 @@ class Flavor:
     def flavor_sold_out(self):
         """Gets the flavor_sold_out of this Flavor.
 
-        是否售罄。
+        是否售罄。取值： - true：已售罄，将无法购买该规格的LB。 - false：未售罄，可购买该规格的LB。
 
         :return: The flavor_sold_out of this Flavor.
         :rtype: bool
@@ -225,7 +225,7 @@ class Flavor:
     def flavor_sold_out(self, flavor_sold_out):
         """Sets the flavor_sold_out of this Flavor.
 
-        是否售罄。
+        是否售罄。取值： - true：已售罄，将无法购买该规格的LB。 - false：未售罄，可购买该规格的LB。
 
         :param flavor_sold_out: The flavor_sold_out of this Flavor.
         :type flavor_sold_out: bool

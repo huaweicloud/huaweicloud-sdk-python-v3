@@ -33,7 +33,7 @@ class CreateBindPublicResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param action: 操作行为。
+        :param action: 操作行为。固定为bindZone，表示绑定成功。
         :type action: str
         """
         
@@ -49,7 +49,7 @@ class CreateBindPublicResponse(SdkResponse):
     def action(self):
         """Gets the action of this CreateBindPublicResponse.
 
-        操作行为。
+        操作行为。固定为bindZone，表示绑定成功。
 
         :return: The action of this CreateBindPublicResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class CreateBindPublicResponse(SdkResponse):
     def action(self, action):
         """Sets the action of this CreateBindPublicResponse.
 
-        操作行为。
+        操作行为。固定为bindZone，表示绑定成功。
 
         :param action: The action of this CreateBindPublicResponse.
         :type action: str

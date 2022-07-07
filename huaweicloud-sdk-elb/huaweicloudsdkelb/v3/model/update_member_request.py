@@ -37,7 +37,7 @@ class UpdateMemberRequest:
 
         The model defined in huaweicloud sdk
 
-        :param member_id: 后端服务器ID。
+        :param member_id: 后端服务器ID。 &gt;说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
         :type member_id: str
         :param pool_id: 后端服务器组ID。
         :type pool_id: str
@@ -61,7 +61,7 @@ class UpdateMemberRequest:
     def member_id(self):
         """Gets the member_id of this UpdateMemberRequest.
 
-        后端服务器ID。
+        后端服务器ID。 >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :return: The member_id of this UpdateMemberRequest.
         :rtype: str
@@ -72,7 +72,7 @@ class UpdateMemberRequest:
     def member_id(self, member_id):
         """Sets the member_id of this UpdateMemberRequest.
 
-        后端服务器ID。
+        后端服务器ID。 >说明： 此处并非ECS服务器的ID，而是ELB为绑定的后端服务器自动生成的member ID。
 
         :param member_id: The member_id of this UpdateMemberRequest.
         :type member_id: str

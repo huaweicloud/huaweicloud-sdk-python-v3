@@ -22,15 +22,17 @@ class CreateInstallCmdRequest:
 
     openapi_types = {
         'edge_node_id': 'str',
-        'arch': 'str'
+        'arch': 'str',
+        'body': 'CreateInstallCmdRequestDTO'
     }
 
     attribute_map = {
         'edge_node_id': 'edge_node_id',
-        'arch': 'arch'
+        'arch': 'arch',
+        'body': 'body'
     }
 
-    def __init__(self, edge_node_id=None, arch=None):
+    def __init__(self, edge_node_id=None, arch=None, body=None):
         """CreateInstallCmdRequest
 
         The model defined in huaweicloud sdk
@@ -39,16 +41,21 @@ class CreateInstallCmdRequest:
         :type edge_node_id: str
         :param arch: 节点架构
         :type arch: str
+        :param body: Body of the CreateInstallCmdRequest
+        :type body: :class:`huaweicloudsdkiotedge.v2.CreateInstallCmdRequestDTO`
         """
         
         
 
         self._edge_node_id = None
         self._arch = None
+        self._body = None
         self.discriminator = None
 
         self.edge_node_id = edge_node_id
         self.arch = arch
+        if body is not None:
+            self.body = body
 
     @property
     def edge_node_id(self):
@@ -93,6 +100,26 @@ class CreateInstallCmdRequest:
         :type arch: str
         """
         self._arch = arch
+
+    @property
+    def body(self):
+        """Gets the body of this CreateInstallCmdRequest.
+
+
+        :return: The body of this CreateInstallCmdRequest.
+        :rtype: :class:`huaweicloudsdkiotedge.v2.CreateInstallCmdRequestDTO`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this CreateInstallCmdRequest.
+
+
+        :param body: The body of this CreateInstallCmdRequest.
+        :type body: :class:`huaweicloudsdkiotedge.v2.CreateInstallCmdRequestDTO`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

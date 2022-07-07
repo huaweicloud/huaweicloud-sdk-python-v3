@@ -35,7 +35,7 @@ class KibanaElbWhiteListResp:
 
         The model defined in huaweicloud sdk
 
-        :param enable_white_list: 是否开启访问控制。
+        :param enable_white_list: 是否开启kibana访问控制。 - true: 开启访问控制。 - false: 关闭访问控制
         :type enable_white_list: bool
         :param white_list: kibana公网访问白名单。
         :type white_list: str
@@ -56,7 +56,7 @@ class KibanaElbWhiteListResp:
     def enable_white_list(self):
         """Gets the enable_white_list of this KibanaElbWhiteListResp.
 
-        是否开启访问控制。
+        是否开启kibana访问控制。 - true: 开启访问控制。 - false: 关闭访问控制
 
         :return: The enable_white_list of this KibanaElbWhiteListResp.
         :rtype: bool
@@ -67,7 +67,7 @@ class KibanaElbWhiteListResp:
     def enable_white_list(self, enable_white_list):
         """Sets the enable_white_list of this KibanaElbWhiteListResp.
 
-        是否开启访问控制。
+        是否开启kibana访问控制。 - true: 开启访问控制。 - false: 关闭访问控制
 
         :param enable_white_list: The enable_white_list of this KibanaElbWhiteListResp.
         :type enable_white_list: bool

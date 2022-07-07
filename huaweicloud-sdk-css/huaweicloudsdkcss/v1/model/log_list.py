@@ -39,7 +39,7 @@ class LogList:
 
         :param content: 日志内容。
         :type content: str
-        :param date: 日期。
+        :param date: 当条日志记录时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
         :type date: str
         :param level: 日志级别。
         :type level: str
@@ -85,7 +85,7 @@ class LogList:
     def date(self):
         """Gets the date of this LogList.
 
-        日期。
+        当条日志记录时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
 
         :return: The date of this LogList.
         :rtype: str
@@ -96,7 +96,7 @@ class LogList:
     def date(self, date):
         """Sets the date of this LogList.
 
-        日期。
+        当条日志记录时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
 
         :param date: The date of this LogList.
         :type date: str

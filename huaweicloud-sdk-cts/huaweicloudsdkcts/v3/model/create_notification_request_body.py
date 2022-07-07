@@ -25,7 +25,8 @@ class CreateNotificationRequestBody:
         'operation_type': 'str',
         'operations': 'list[Operations]',
         'notify_user_list': 'list[NotificationUsers]',
-        'topic_id': 'str'
+        'topic_id': 'str',
+        'filter': 'Filter'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class CreateNotificationRequestBody:
         'operation_type': 'operation_type',
         'operations': 'operations',
         'notify_user_list': 'notify_user_list',
-        'topic_id': 'topic_id'
+        'topic_id': 'topic_id',
+        'filter': 'filter'
     }
 
-    def __init__(self, notification_name=None, operation_type=None, operations=None, notify_user_list=None, topic_id=None):
+    def __init__(self, notification_name=None, operation_type=None, operations=None, notify_user_list=None, topic_id=None, filter=None):
         """CreateNotificationRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class CreateNotificationRequestBody:
         :type notify_user_list: list[:class:`huaweicloudsdkcts.v3.NotificationUsers`]
         :param topic_id: 消息通知服务的topic_urn或者函数工作流的func_urn。 - 消息通知服务的topic_urn可以通过消息通知服务的查询主题列表API获取，示例：urn:smn:regionId:f96188c7ccaf4ffba0c9aa149ab2bd57:test_topic_v2。 - 函数工作流的func_urn可以通过函数工作流的获取函数列表API获取，示例：urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test。
         :type topic_id: str
+        :param filter: 
+        :type filter: :class:`huaweicloudsdkcts.v3.Filter`
         """
         
         
@@ -60,6 +64,7 @@ class CreateNotificationRequestBody:
         self._operations = None
         self._notify_user_list = None
         self._topic_id = None
+        self._filter = None
         self.discriminator = None
 
         self.notification_name = notification_name
@@ -70,6 +75,8 @@ class CreateNotificationRequestBody:
             self.notify_user_list = notify_user_list
         if topic_id is not None:
             self.topic_id = topic_id
+        if filter is not None:
+            self.filter = filter
 
     @property
     def notification_name(self):
@@ -180,6 +187,26 @@ class CreateNotificationRequestBody:
         :type topic_id: str
         """
         self._topic_id = topic_id
+
+    @property
+    def filter(self):
+        """Gets the filter of this CreateNotificationRequestBody.
+
+
+        :return: The filter of this CreateNotificationRequestBody.
+        :rtype: :class:`huaweicloudsdkcts.v3.Filter`
+        """
+        return self._filter
+
+    @filter.setter
+    def filter(self, filter):
+        """Sets the filter of this CreateNotificationRequestBody.
+
+
+        :param filter: The filter of this CreateNotificationRequestBody.
+        :type filter: :class:`huaweicloudsdkcts.v3.Filter`
+        """
+        self._filter = filter
 
     def to_dict(self):
         """Returns the model properties as a dict"""

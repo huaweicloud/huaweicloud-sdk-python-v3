@@ -35,7 +35,11 @@ class Pool:
         'session_persistence': 'SessionPersistence',
         'ip_version': 'str',
         'slow_start': 'SlowStart',
-        'member_deletion_protection_enable': 'bool'
+        'member_deletion_protection_enable': 'bool',
+        'created_at': 'str',
+        'updated_at': 'str',
+        'vpc_id': 'str',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -53,10 +57,14 @@ class Pool:
         'session_persistence': 'session_persistence',
         'ip_version': 'ip_version',
         'slow_start': 'slow_start',
-        'member_deletion_protection_enable': 'member_deletion_protection_enable'
+        'member_deletion_protection_enable': 'member_deletion_protection_enable',
+        'created_at': 'created_at',
+        'updated_at': 'updated_at',
+        'vpc_id': 'vpc_id',
+        'type': 'type'
     }
 
-    def __init__(self, admin_state_up=None, description=None, healthmonitor_id=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version=None, slow_start=None, member_deletion_protection_enable=None):
+    def __init__(self, admin_state_up=None, description=None, healthmonitor_id=None, id=None, lb_algorithm=None, listeners=None, loadbalancers=None, members=None, name=None, project_id=None, protocol=None, session_persistence=None, ip_version=None, slow_start=None, member_deletion_protection_enable=None, created_at=None, updated_at=None, vpc_id=None, type=None):
         """Pool
 
         The model defined in huaweicloud sdk
@@ -69,11 +77,11 @@ class Pool:
         :type healthmonitor_id: str
         :param id: 后端云服务器组的ID。
         :type id: str
-        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        :param lb_algorithm: 后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
         :type lb_algorithm: str
-        :param listeners: 后端云服务器组关联的监听器ID列表。实际上只会有一个关联的监听器ID。
+        :param listeners: 后端云服务器组关联的监听器ID列表。
         :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
-        :param loadbalancers: 后端云服务器组关联的负载均衡器ID列表。实际只会有一个关联的负载均衡器ID。
+        :param loadbalancers: 后端云服务器组关联的负载均衡器ID列表。
         :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.LoadBalancerRef`]
         :param members: 后端云服务器组中的后端云服务器ID列表。
         :type members: list[:class:`huaweicloudsdkelb.v3.MemberRef`]
@@ -81,16 +89,24 @@ class Pool:
         :type name: str
         :param project_id: 后端云服务器组所在的项目ID。
         :type project_id: str
-        :param protocol: 后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
+        :param protocol: 后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。   使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
         :type protocol: str
         :param session_persistence: 
         :type session_persistence: :class:`huaweicloudsdkelb.v3.SessionPersistence`
-        :param ip_version: 后端云服务器组支持的IP版本。[取值：  [共享型：默认为v4；](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test)  [独享型：取值范围(dualstack、v4、v6)。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [取值范围(dualstack、v4、v6)。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        :param ip_version: 后端云服务器组支持的IP版本。 [取值： - 共享型：固定为v4； - 独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs) [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)   [不支持IPv6，只会返回v4。](tag:dt,dt_test)
         :type ip_version: str
         :param slow_start: 
         :type slow_start: :class:`huaweicloudsdkelb.v3.SlowStart`
-        :param member_deletion_protection_enable: 是否开启误删保护。取值：false不开启，true开启。  &gt; 退场时需要先关闭所有资源的删除保护开关。
+        :param member_deletion_protection_enable: 是否开启误删保护。取值：false不开启，true开启。 &gt; 退场时需要先关闭所有资源的删除保护开关。
         :type member_deletion_protection_enable: bool
+        :param created_at: 创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+        :type created_at: str
+        :param updated_at: 更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+        :type updated_at: str
+        :param vpc_id: 后端云服务器组关联的虚拟私有云的ID。
+        :type vpc_id: str
+        :param type: 后端服务器组的类型。   取值：  - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。  - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。  - 空字符串：允许任意类型的后端
+        :type type: str
         """
         
         
@@ -110,6 +126,10 @@ class Pool:
         self._ip_version = None
         self._slow_start = None
         self._member_deletion_protection_enable = None
+        self._created_at = None
+        self._updated_at = None
+        self._vpc_id = None
+        self._type = None
         self.discriminator = None
 
         self.admin_state_up = admin_state_up
@@ -127,6 +147,12 @@ class Pool:
         self.ip_version = ip_version
         self.slow_start = slow_start
         self.member_deletion_protection_enable = member_deletion_protection_enable
+        if created_at is not None:
+            self.created_at = created_at
+        if updated_at is not None:
+            self.updated_at = updated_at
+        self.vpc_id = vpc_id
+        self.type = type
 
     @property
     def admin_state_up(self):
@@ -220,7 +246,7 @@ class Pool:
     def lb_algorithm(self):
         """Gets the lb_algorithm of this Pool.
 
-        后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
 
         :return: The lb_algorithm of this Pool.
         :rtype: str
@@ -231,7 +257,7 @@ class Pool:
     def lb_algorithm(self, lb_algorithm):
         """Sets the lb_algorithm of this Pool.
 
-        后端云服务器组的负载均衡算法。  取值： 1、ROUND_ROBIN：加权轮询算法。 2、LEAST_CONNECTIONS：加权最少连接算法。 3、SOURCE_IP：源IP算法。 4、QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
+        后端云服务器组的负载均衡算法。  取值： - ROUND_ROBIN：加权轮询算法。 - LEAST_CONNECTIONS：加权最少连接算法。 - SOURCE_IP：源IP算法。 - QUIC_CID：连接ID算法。  使用说明： - 当该字段的取值为SOURCE_IP时，后端云服务器组绑定的后端云服务器的weight字段无效。 - 只有pool的protocol为QUIC时，才支持QUIC_CID算法。
 
         :param lb_algorithm: The lb_algorithm of this Pool.
         :type lb_algorithm: str
@@ -242,7 +268,7 @@ class Pool:
     def listeners(self):
         """Gets the listeners of this Pool.
 
-        后端云服务器组关联的监听器ID列表。实际上只会有一个关联的监听器ID。
+        后端云服务器组关联的监听器ID列表。
 
         :return: The listeners of this Pool.
         :rtype: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
@@ -253,7 +279,7 @@ class Pool:
     def listeners(self, listeners):
         """Sets the listeners of this Pool.
 
-        后端云服务器组关联的监听器ID列表。实际上只会有一个关联的监听器ID。
+        后端云服务器组关联的监听器ID列表。
 
         :param listeners: The listeners of this Pool.
         :type listeners: list[:class:`huaweicloudsdkelb.v3.ListenerRef`]
@@ -264,7 +290,7 @@ class Pool:
     def loadbalancers(self):
         """Gets the loadbalancers of this Pool.
 
-        后端云服务器组关联的负载均衡器ID列表。实际只会有一个关联的负载均衡器ID。
+        后端云服务器组关联的负载均衡器ID列表。
 
         :return: The loadbalancers of this Pool.
         :rtype: list[:class:`huaweicloudsdkelb.v3.LoadBalancerRef`]
@@ -275,7 +301,7 @@ class Pool:
     def loadbalancers(self, loadbalancers):
         """Sets the loadbalancers of this Pool.
 
-        后端云服务器组关联的负载均衡器ID列表。实际只会有一个关联的负载均衡器ID。
+        后端云服务器组关联的负载均衡器ID列表。
 
         :param loadbalancers: The loadbalancers of this Pool.
         :type loadbalancers: list[:class:`huaweicloudsdkelb.v3.LoadBalancerRef`]
@@ -352,7 +378,7 @@ class Pool:
     def protocol(self):
         """Gets the protocol of this Pool.
 
-        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
+        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。   使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
 
         :return: The protocol of this Pool.
         :rtype: str
@@ -363,7 +389,7 @@ class Pool:
     def protocol(self, protocol):
         """Sets the protocol of this Pool.
 
-        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。  使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
+        后端云服务器组的后端协议。  取值：TCP、UDP、HTTP、HTTPS和QUIC。   使用说明： - listener的protocol为UDP时，pool的protocol必须为UDP或QUIC； - listener的protocol为TCP时pool的protocol必须为TCP； - listener的protocol为HTTP时，pool的protocol必须为HTTP。 - listener的protocol为HTTPS时，pool的protocol必须为HTTP或HTTPS。 - listener的protocol为TERMINATED_HTTPS时，pool的protocol必须为HTTP。
 
         :param protocol: The protocol of this Pool.
         :type protocol: str
@@ -394,7 +420,7 @@ class Pool:
     def ip_version(self):
         """Gets the ip_version of this Pool.
 
-        后端云服务器组支持的IP版本。[取值：  [共享型：默认为v4；](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test)  [独享型：取值范围(dualstack、v4、v6)。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [取值范围(dualstack、v4、v6)。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        后端云服务器组支持的IP版本。 [取值： - 共享型：固定为v4； - 独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs) [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)   [不支持IPv6，只会返回v4。](tag:dt,dt_test)
 
         :return: The ip_version of this Pool.
         :rtype: str
@@ -405,7 +431,7 @@ class Pool:
     def ip_version(self, ip_version):
         """Sets the ip_version of this Pool.
 
-        后端云服务器组支持的IP版本。[取值：  [共享型：默认为v4；](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test)  [独享型：取值范围(dualstack、v4、v6)。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hc,hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test) [取值范围(dualstack、v4、v6)。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)  [不支持IPv6，只会返回v4。](tag:dt,dt_test)
+        后端云服务器组支持的IP版本。 [取值： - 共享型：固定为v4； - 独享型：取值dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs) [取值：dualstack、v4、v6。当协议为TCP/UDP时，ip_version为dualstack，表示双栈。当协议为HTTP时，ip_version为v4。](tag:hcso_dt)   [不支持IPv6，只会返回v4。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this Pool.
         :type ip_version: str
@@ -436,7 +462,7 @@ class Pool:
     def member_deletion_protection_enable(self):
         """Gets the member_deletion_protection_enable of this Pool.
 
-        是否开启误删保护。取值：false不开启，true开启。  > 退场时需要先关闭所有资源的删除保护开关。
+        是否开启误删保护。取值：false不开启，true开启。 > 退场时需要先关闭所有资源的删除保护开关。
 
         :return: The member_deletion_protection_enable of this Pool.
         :rtype: bool
@@ -447,12 +473,100 @@ class Pool:
     def member_deletion_protection_enable(self, member_deletion_protection_enable):
         """Sets the member_deletion_protection_enable of this Pool.
 
-        是否开启误删保护。取值：false不开启，true开启。  > 退场时需要先关闭所有资源的删除保护开关。
+        是否开启误删保护。取值：false不开启，true开启。 > 退场时需要先关闭所有资源的删除保护开关。
 
         :param member_deletion_protection_enable: The member_deletion_protection_enable of this Pool.
         :type member_deletion_protection_enable: bool
         """
         self._member_deletion_protection_enable = member_deletion_protection_enable
+
+    @property
+    def created_at(self):
+        """Gets the created_at of this Pool.
+
+        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+
+        :return: The created_at of this Pool.
+        :rtype: str
+        """
+        return self._created_at
+
+    @created_at.setter
+    def created_at(self, created_at):
+        """Sets the created_at of this Pool.
+
+        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+
+        :param created_at: The created_at of this Pool.
+        :type created_at: str
+        """
+        self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        """Gets the updated_at of this Pool.
+
+        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+
+        :return: The updated_at of this Pool.
+        :rtype: str
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        """Sets the updated_at of this Pool.
+
+        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+
+        :param updated_at: The updated_at of this Pool.
+        :type updated_at: str
+        """
+        self._updated_at = updated_at
+
+    @property
+    def vpc_id(self):
+        """Gets the vpc_id of this Pool.
+
+        后端云服务器组关联的虚拟私有云的ID。
+
+        :return: The vpc_id of this Pool.
+        :rtype: str
+        """
+        return self._vpc_id
+
+    @vpc_id.setter
+    def vpc_id(self, vpc_id):
+        """Sets the vpc_id of this Pool.
+
+        后端云服务器组关联的虚拟私有云的ID。
+
+        :param vpc_id: The vpc_id of this Pool.
+        :type vpc_id: str
+        """
+        self._vpc_id = vpc_id
+
+    @property
+    def type(self):
+        """Gets the type of this Pool.
+
+        后端服务器组的类型。   取值：  - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。  - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。  - 空字符串：允许任意类型的后端
+
+        :return: The type of this Pool.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this Pool.
+
+        后端服务器组的类型。   取值：  - instance：允许任意类型的后端，type指定为该类型时，vpc_id是必选字段。  - ip：只能添加跨VPC后端，type指定为该类型时，vpc_id不允许指定。  - 空字符串：允许任意类型的后端
+
+        :param type: The type of this Pool.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

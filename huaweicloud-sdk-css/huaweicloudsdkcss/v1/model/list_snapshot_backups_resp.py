@@ -91,9 +91,9 @@ class ListSnapshotBackupsResp:
         :type name: str
         :param status: 快照状态。
         :type status: str
-        :param updated: 快照状态是否更新。
+        :param updated: 快照更新时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
         :type updated: str
-        :param backup_type: “0”表示自动创建，“1”表示手动创建。
+        :param backup_type: 快照创建类型： - 0：表示自动创建。 - 1：表示手动创建。
         :type backup_type: str
         :param backup_method: 创建快照方式。
         :type backup_method: str
@@ -117,7 +117,7 @@ class ListSnapshotBackupsResp:
         :type start_time: int
         :param end_time: 快照执行结束的时间戳。
         :type end_time: int
-        :param bucket_name: 保存快照数据的桶。
+        :param bucket_name: 保存快照数据的桶名。
         :type bucket_name: str
         """
         
@@ -370,7 +370,7 @@ class ListSnapshotBackupsResp:
     def updated(self):
         """Gets the updated of this ListSnapshotBackupsResp.
 
-        快照状态是否更新。
+        快照更新时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
 
         :return: The updated of this ListSnapshotBackupsResp.
         :rtype: str
@@ -381,7 +381,7 @@ class ListSnapshotBackupsResp:
     def updated(self, updated):
         """Sets the updated of this ListSnapshotBackupsResp.
 
-        快照状态是否更新。
+        快照更新时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
 
         :param updated: The updated of this ListSnapshotBackupsResp.
         :type updated: str
@@ -392,7 +392,7 @@ class ListSnapshotBackupsResp:
     def backup_type(self):
         """Gets the backup_type of this ListSnapshotBackupsResp.
 
-        “0”表示自动创建，“1”表示手动创建。
+        快照创建类型： - 0：表示自动创建。 - 1：表示手动创建。
 
         :return: The backup_type of this ListSnapshotBackupsResp.
         :rtype: str
@@ -403,7 +403,7 @@ class ListSnapshotBackupsResp:
     def backup_type(self, backup_type):
         """Sets the backup_type of this ListSnapshotBackupsResp.
 
-        “0”表示自动创建，“1”表示手动创建。
+        快照创建类型： - 0：表示自动创建。 - 1：表示手动创建。
 
         :param backup_type: The backup_type of this ListSnapshotBackupsResp.
         :type backup_type: str
@@ -656,7 +656,7 @@ class ListSnapshotBackupsResp:
     def bucket_name(self):
         """Gets the bucket_name of this ListSnapshotBackupsResp.
 
-        保存快照数据的桶。
+        保存快照数据的桶名。
 
         :return: The bucket_name of this ListSnapshotBackupsResp.
         :rtype: str
@@ -667,7 +667,7 @@ class ListSnapshotBackupsResp:
     def bucket_name(self, bucket_name):
         """Sets the bucket_name of this ListSnapshotBackupsResp.
 
-        保存快照数据的桶。
+        保存快照数据的桶名。
 
         :param bucket_name: The bucket_name of this ListSnapshotBackupsResp.
         :type bucket_name: str

@@ -37,9 +37,9 @@ class PageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param previous_marker: 分页查询结果中第一条记录的ID
+        :param previous_marker: 分页查询结果中第一条记录的ID。通常用于配合page_reverse&#x3D;true查询上一页。
         :type previous_marker: str
-        :param next_marker: 分页查询结果中最后一条记录的ID。
+        :param next_marker: 分页查询结果中最后一条记录的ID。通常用于查询下一页。
         :type next_marker: str
         :param current_count: 当前的记录数。
         :type current_count: int
@@ -61,7 +61,7 @@ class PageInfo:
     def previous_marker(self):
         """Gets the previous_marker of this PageInfo.
 
-        分页查询结果中第一条记录的ID
+        分页查询结果中第一条记录的ID。通常用于配合page_reverse=true查询上一页。
 
         :return: The previous_marker of this PageInfo.
         :rtype: str
@@ -72,7 +72,7 @@ class PageInfo:
     def previous_marker(self, previous_marker):
         """Sets the previous_marker of this PageInfo.
 
-        分页查询结果中第一条记录的ID
+        分页查询结果中第一条记录的ID。通常用于配合page_reverse=true查询上一页。
 
         :param previous_marker: The previous_marker of this PageInfo.
         :type previous_marker: str
@@ -83,7 +83,7 @@ class PageInfo:
     def next_marker(self):
         """Gets the next_marker of this PageInfo.
 
-        分页查询结果中最后一条记录的ID。
+        分页查询结果中最后一条记录的ID。通常用于查询下一页。
 
         :return: The next_marker of this PageInfo.
         :rtype: str
@@ -94,7 +94,7 @@ class PageInfo:
     def next_marker(self, next_marker):
         """Sets the next_marker of this PageInfo.
 
-        分页查询结果中最后一条记录的ID。
+        分页查询结果中最后一条记录的ID。通常用于查询下一页。
 
         :param next_marker: The next_marker of this PageInfo.
         :type next_marker: str

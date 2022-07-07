@@ -30,6 +30,22 @@ class CtsRegion:
 
     AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://cts.ap-southeast-3.myhuaweicloud.com")
 
+    CN_NORTH_2 = Region(id="cn-north-2", endpoint="https://cts.cn-north-2.myhuaweicloud.com")
+
+    CN_NORTH_9 = Region(id="cn-north-9", endpoint="https://cts.cn-north-9.myhuaweicloud.com")
+
+    CN_SOUTH_4 = Region(id="cn-south-4", endpoint="https://cts.cn-south-4.myhuaweicloud.com")
+
+    RU_NORTHWEST_2 = Region(id="ru-northwest-2", endpoint="https://cts.ru-northwest-2.myhuaweicloud.com")
+
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://cts.la-south-2.myhuaweicloud.com")
+
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://cts.sa-brazil-1.myhuaweicloud.com")
+
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://cts.la-north-2.myhuaweicloud.com")
+
+    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://cts.na-mexico-1.myhuaweicloud.com")
+
     static_fields = {
         "af-south-1": AF_SOUTH_1,
         "cn-north-4": CN_NORTH_4,
@@ -41,6 +57,14 @@ class CtsRegion:
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        "cn-north-2": CN_NORTH_2,
+        "cn-north-9": CN_NORTH_9,
+        "cn-south-4": CN_SOUTH_4,
+        "ru-northwest-2": RU_NORTHWEST_2,
+        "la-south-2": LA_SOUTH_2,
+        "sa-brazil-1": SA_BRAZIL_1,
+        "la-north-2": LA_NORTH_2,
+        "na-mexico-1": NA_MEXICO_1,
     }
 
     @classmethod

@@ -37,7 +37,7 @@ class StartKibanaPublicReq:
 
         The model defined in huaweicloud sdk
 
-        :param eip_size: 带宽。
+        :param eip_size: 带宽。单位：Mbit/s
         :type eip_size: int
         :param elb_white_list: 
         :type elb_white_list: :class:`huaweicloudsdkcss.v1.StartKibanaPublicReqElbWhitelist`
@@ -61,7 +61,7 @@ class StartKibanaPublicReq:
     def eip_size(self):
         """Gets the eip_size of this StartKibanaPublicReq.
 
-        带宽。
+        带宽。单位：Mbit/s
 
         :return: The eip_size of this StartKibanaPublicReq.
         :rtype: int
@@ -72,7 +72,7 @@ class StartKibanaPublicReq:
     def eip_size(self, eip_size):
         """Sets the eip_size of this StartKibanaPublicReq.
 
-        带宽。
+        带宽。单位：Mbit/s
 
         :param eip_size: The eip_size of this StartKibanaPublicReq.
         :type eip_size: int

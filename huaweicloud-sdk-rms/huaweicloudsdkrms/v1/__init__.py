@@ -42,6 +42,8 @@ from huaweicloudsdkrms.v1.model.list_regions_request import ListRegionsRequest
 from huaweicloudsdkrms.v1.model.list_regions_response import ListRegionsResponse
 from huaweicloudsdkrms.v1.model.list_resources_request import ListResourcesRequest
 from huaweicloudsdkrms.v1.model.list_resources_response import ListResourcesResponse
+from huaweicloudsdkrms.v1.model.list_schemas_request import ListSchemasRequest
+from huaweicloudsdkrms.v1.model.list_schemas_response import ListSchemasResponse
 from huaweicloudsdkrms.v1.model.list_stored_queries_request import ListStoredQueriesRequest
 from huaweicloudsdkrms.v1.model.list_stored_queries_response import ListStoredQueriesResponse
 from huaweicloudsdkrms.v1.model.page_info import PageInfo
@@ -58,6 +60,7 @@ from huaweicloudsdkrms.v1.model.region import Region
 from huaweicloudsdkrms.v1.model.resource_entity import ResourceEntity
 from huaweicloudsdkrms.v1.model.resource_provider_response import ResourceProviderResponse
 from huaweicloudsdkrms.v1.model.resource_relation import ResourceRelation
+from huaweicloudsdkrms.v1.model.resource_schema_response import ResourceSchemaResponse
 from huaweicloudsdkrms.v1.model.resource_type_response import ResourceTypeResponse
 from huaweicloudsdkrms.v1.model.run_evaluation_by_policy_assignment_id_request import RunEvaluationByPolicyAssignmentIdRequest
 from huaweicloudsdkrms.v1.model.run_evaluation_by_policy_assignment_id_response import RunEvaluationByPolicyAssignmentIdResponse

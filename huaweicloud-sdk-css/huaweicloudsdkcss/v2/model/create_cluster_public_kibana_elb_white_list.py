@@ -35,9 +35,9 @@ class CreateClusterPublicKibanaElbWhiteList:
 
         The model defined in huaweicloud sdk
 
-        :param white_list: 白名单。
+        :param white_list: 白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
         :type white_list: str
-        :param enable_white_list: 是否开启访问控制。
+        :param enable_white_list: 是否开启kibana访问控制。
         :type enable_white_list: bool
         """
         
@@ -54,7 +54,7 @@ class CreateClusterPublicKibanaElbWhiteList:
     def white_list(self):
         """Gets the white_list of this CreateClusterPublicKibanaElbWhiteList.
 
-        白名单。
+        白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
 
         :return: The white_list of this CreateClusterPublicKibanaElbWhiteList.
         :rtype: str
@@ -65,7 +65,7 @@ class CreateClusterPublicKibanaElbWhiteList:
     def white_list(self, white_list):
         """Sets the white_list of this CreateClusterPublicKibanaElbWhiteList.
 
-        白名单。
+        白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
 
         :param white_list: The white_list of this CreateClusterPublicKibanaElbWhiteList.
         :type white_list: str
@@ -76,7 +76,7 @@ class CreateClusterPublicKibanaElbWhiteList:
     def enable_white_list(self):
         """Gets the enable_white_list of this CreateClusterPublicKibanaElbWhiteList.
 
-        是否开启访问控制。
+        是否开启kibana访问控制。
 
         :return: The enable_white_list of this CreateClusterPublicKibanaElbWhiteList.
         :rtype: bool
@@ -87,7 +87,7 @@ class CreateClusterPublicKibanaElbWhiteList:
     def enable_white_list(self, enable_white_list):
         """Sets the enable_white_list of this CreateClusterPublicKibanaElbWhiteList.
 
-        是否开启访问控制。
+        是否开启kibana访问控制。
 
         :param enable_white_list: The enable_white_list of this CreateClusterPublicKibanaElbWhiteList.
         :type enable_white_list: bool

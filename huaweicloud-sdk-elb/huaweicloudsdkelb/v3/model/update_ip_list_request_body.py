@@ -21,7 +21,7 @@ class UpdateIpListRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'ipgroup': 'UpdateIpGroupIpListOption'
+        'ipgroup': 'UpdateIpListOption'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UpdateIpListRequestBody:
         The model defined in huaweicloud sdk
 
         :param ipgroup: 
-        :type ipgroup: :class:`huaweicloudsdkelb.v3.UpdateIpGroupIpListOption`
+        :type ipgroup: :class:`huaweicloudsdkelb.v3.UpdateIpListOption`
         """
         
         
@@ -51,7 +51,7 @@ class UpdateIpListRequestBody:
 
 
         :return: The ipgroup of this UpdateIpListRequestBody.
-        :rtype: :class:`huaweicloudsdkelb.v3.UpdateIpGroupIpListOption`
+        :rtype: :class:`huaweicloudsdkelb.v3.UpdateIpListOption`
         """
         return self._ipgroup
 
@@ -61,7 +61,7 @@ class UpdateIpListRequestBody:
 
 
         :param ipgroup: The ipgroup of this UpdateIpListRequestBody.
-        :type ipgroup: :class:`huaweicloudsdkelb.v3.UpdateIpGroupIpListOption`
+        :type ipgroup: :class:`huaweicloudsdkelb.v3.UpdateIpListOption`
         """
         self._ipgroup = ipgroup
 

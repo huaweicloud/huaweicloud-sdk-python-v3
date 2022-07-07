@@ -35,7 +35,7 @@ class CreatePoolSlowStartOption:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 慢启动的开关，取值： - true：开启。 - false：关闭，默认值。 
+        :param enable: 慢启动的开关，默认值：false； true：开启； false：关闭 
         :type enable: bool
         :param duration: 慢启动的持续时间，单位：s。默认：30； 取值范围：30~1200
         :type duration: int
@@ -56,7 +56,7 @@ class CreatePoolSlowStartOption:
     def enable(self):
         """Gets the enable of this CreatePoolSlowStartOption.
 
-        慢启动的开关，取值： - true：开启。 - false：关闭，默认值。 
+        慢启动的开关，默认值：false； true：开启； false：关闭 
 
         :return: The enable of this CreatePoolSlowStartOption.
         :rtype: bool
@@ -67,7 +67,7 @@ class CreatePoolSlowStartOption:
     def enable(self, enable):
         """Sets the enable of this CreatePoolSlowStartOption.
 
-        慢启动的开关，取值： - true：开启。 - false：关闭，默认值。 
+        慢启动的开关，默认值：false； true：开启； false：关闭 
 
         :param enable: The enable of this CreatePoolSlowStartOption.
         :type enable: bool

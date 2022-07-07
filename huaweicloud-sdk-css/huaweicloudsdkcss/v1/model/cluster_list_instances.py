@@ -45,9 +45,9 @@ class ClusterListInstances:
 
         The model defined in huaweicloud sdk
 
-        :param status: 状态。  - 100：创建中。 - 200：可用。 - 303：不可用，如创建失败。
+        :param status: 节点状态值。  - 100：创建中。 - 200：可用。 - 303：不可用，如创建失败。
         :type status: str
-        :param type: 支持类型：ess（Elasticsearch节点）。
+        :param type: 当前节点的类型。
         :type type: str
         :param id: 实例ID。
         :type id: str
@@ -91,7 +91,7 @@ class ClusterListInstances:
     def status(self):
         """Gets the status of this ClusterListInstances.
 
-        状态。  - 100：创建中。 - 200：可用。 - 303：不可用，如创建失败。
+        节点状态值。  - 100：创建中。 - 200：可用。 - 303：不可用，如创建失败。
 
         :return: The status of this ClusterListInstances.
         :rtype: str
@@ -102,7 +102,7 @@ class ClusterListInstances:
     def status(self, status):
         """Sets the status of this ClusterListInstances.
 
-        状态。  - 100：创建中。 - 200：可用。 - 303：不可用，如创建失败。
+        节点状态值。  - 100：创建中。 - 200：可用。 - 303：不可用，如创建失败。
 
         :param status: The status of this ClusterListInstances.
         :type status: str
@@ -113,7 +113,7 @@ class ClusterListInstances:
     def type(self):
         """Gets the type of this ClusterListInstances.
 
-        支持类型：ess（Elasticsearch节点）。
+        当前节点的类型。
 
         :return: The type of this ClusterListInstances.
         :rtype: str
@@ -124,7 +124,7 @@ class ClusterListInstances:
     def type(self, type):
         """Sets the type of this ClusterListInstances.
 
-        支持类型：ess（Elasticsearch节点）。
+        当前节点的类型。
 
         :param type: The type of this ClusterListInstances.
         :type type: str

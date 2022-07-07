@@ -33,7 +33,7 @@ class BindPublicReqEipBandWidth:
 
         The model defined in huaweicloud sdk
 
-        :param size: 带宽大小。
+        :param size: 带宽大小。单位：Mbit/s
         :type size: int
         """
         
@@ -48,7 +48,7 @@ class BindPublicReqEipBandWidth:
     def size(self):
         """Gets the size of this BindPublicReqEipBandWidth.
 
-        带宽大小。
+        带宽大小。单位：Mbit/s
 
         :return: The size of this BindPublicReqEipBandWidth.
         :rtype: int
@@ -59,7 +59,7 @@ class BindPublicReqEipBandWidth:
     def size(self, size):
         """Sets the size of this BindPublicReqEipBandWidth.
 
-        带宽大小。
+        带宽大小。单位：Mbit/s
 
         :param size: The size of this BindPublicReqEipBandWidth.
         :type size: int

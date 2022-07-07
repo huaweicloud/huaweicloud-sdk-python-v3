@@ -39,7 +39,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
 
         :param connections: 
         :type connections: list[:class:`huaweicloudsdkcss.v1.Connections`]
-        :param vpcep_update_switch: 终端节点更新开关。
+        :param vpcep_update_switch: 终端节点更新开关。 - true： 开启终端节点。 - false： 关闭终端节点。
         :type vpcep_update_switch: bool
         :param total_count: 终端节点数量。
         :type total_count: int
@@ -83,7 +83,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
     def vpcep_update_switch(self):
         """Gets the vpcep_update_switch of this ShowVpcepConnectionResponse.
 
-        终端节点更新开关。
+        终端节点更新开关。 - true： 开启终端节点。 - false： 关闭终端节点。
 
         :return: The vpcep_update_switch of this ShowVpcepConnectionResponse.
         :rtype: bool
@@ -94,7 +94,7 @@ class ShowVpcepConnectionResponse(SdkResponse):
     def vpcep_update_switch(self, vpcep_update_switch):
         """Sets the vpcep_update_switch of this ShowVpcepConnectionResponse.
 
-        终端节点更新开关。
+        终端节点更新开关。 - true： 开启终端节点。 - false： 关闭终端节点。
 
         :param vpcep_update_switch: The vpcep_update_switch of this ShowVpcepConnectionResponse.
         :type vpcep_update_switch: bool

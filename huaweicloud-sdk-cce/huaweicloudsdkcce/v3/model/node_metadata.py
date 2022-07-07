@@ -49,7 +49,7 @@ class NodeMetadata:
         :type uid: str
         :param labels: CCE自有节点标签，非Kubernetes原生labels。  标签可用于选择对象并查找满足某些条件的对象集合，格式为key/value键值对。  示例：  &#x60;&#x60;&#x60; \&quot;labels\&quot;: {   \&quot;key\&quot; : \&quot;value\&quot; } &#x60;&#x60;&#x60;
         :type labels: dict(str, str)
-        :param annotations: CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。   示例：  &#x60;&#x60;&#x60;  \&quot;annotations\&quot;: {   \&quot;key1\&quot; : \&quot;value1\&quot;,   \&quot;key2\&quot; : \&quot;value2\&quot; }  &#x60;&#x60;&#x60;   &gt; Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 
+        :param annotations: CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。   示例：  &#x60;&#x60;&#x60;  \&quot;annotations\&quot;: {   \&quot;key1\&quot; : \&quot;value1\&quot;,   \&quot;key2\&quot; : \&quot;value2\&quot; }  &#x60;&#x60;&#x60;   &gt; Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured或unstructured，并且可以包括标签不允许使用的字符。 
         :type annotations: dict(str, str)
         :param creation_timestamp: 创建时间，创建成功后自动生成，填写无效
         :type creation_timestamp: str
@@ -150,7 +150,7 @@ class NodeMetadata:
     def annotations(self):
         """Gets the annotations of this NodeMetadata.
 
-        CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。   示例：  ```  \"annotations\": {   \"key1\" : \"value1\",   \"key2\" : \"value2\" }  ```   > Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 
+        CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。   示例：  ```  \"annotations\": {   \"key1\" : \"value1\",   \"key2\" : \"value2\" }  ```   > Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured或unstructured，并且可以包括标签不允许使用的字符。 
 
         :return: The annotations of this NodeMetadata.
         :rtype: dict(str, str)
@@ -161,7 +161,7 @@ class NodeMetadata:
     def annotations(self, annotations):
         """Sets the annotations of this NodeMetadata.
 
-        CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。   示例：  ```  \"annotations\": {   \"key1\" : \"value1\",   \"key2\" : \"value2\" }  ```   > Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured 或unstructured，并且可以包括标签不允许使用的字符。 
+        CCE自有节点注解，非Kubernetes原生annotations，格式为key/value键值对。   示例：  ```  \"annotations\": {   \"key1\" : \"value1\",   \"key2\" : \"value2\" }  ```   > Annotations不用于标识和选择对象。Annotations中的元数据可以是small 或large，structured或unstructured，并且可以包括标签不允许使用的字符。 
 
         :param annotations: The annotations of this NodeMetadata.
         :type annotations: dict(str, str)

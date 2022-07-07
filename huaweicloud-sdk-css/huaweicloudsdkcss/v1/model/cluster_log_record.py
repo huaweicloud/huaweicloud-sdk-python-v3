@@ -49,21 +49,21 @@ class ClusterLogRecord:
 
         The model defined in huaweicloud sdk
 
-        :param id: 日志任务ID，通过系统uuid生成。
+        :param id: 日志任务ID，通过系统UUID生成。
         :type id: str
         :param cluster_id: 集群ID。
         :type cluster_id: str
-        :param create_at: 创建时间。
+        :param create_at: 创建时间。格式：Unix时间戳格式。
         :type create_at: str
-        :param log_path: 备份路径。
+        :param log_path: 日志在OBS桶中的备份路径。
         :type log_path: str
-        :param status: 任务状态。
+        :param status: 任务状态。 - RUNNING: 备份行中。 - SUCCESS: 备份成功。 - FAIL: 备份失败。
         :type status: str
-        :param finished_at: 结束时间。
+        :param finished_at: 结束时间，当创建未结束时结束时间为null。格式：Unix时间戳格式。
         :type finished_at: int
-        :param job_types: 任务类型。
+        :param job_types: 任务类型。 - Manual: 手动备份。 - Auto： 自动备份。
         :type job_types: str
-        :param failed_msg: 错误信息。
+        :param failed_msg: 错误信息。当任务状态没有处于失败状态时该字段为null。
         :type failed_msg: str
         :param job_id: 任务ID。
         :type job_id: str
@@ -105,7 +105,7 @@ class ClusterLogRecord:
     def id(self):
         """Gets the id of this ClusterLogRecord.
 
-        日志任务ID，通过系统uuid生成。
+        日志任务ID，通过系统UUID生成。
 
         :return: The id of this ClusterLogRecord.
         :rtype: str
@@ -116,7 +116,7 @@ class ClusterLogRecord:
     def id(self, id):
         """Sets the id of this ClusterLogRecord.
 
-        日志任务ID，通过系统uuid生成。
+        日志任务ID，通过系统UUID生成。
 
         :param id: The id of this ClusterLogRecord.
         :type id: str
@@ -149,7 +149,7 @@ class ClusterLogRecord:
     def create_at(self):
         """Gets the create_at of this ClusterLogRecord.
 
-        创建时间。
+        创建时间。格式：Unix时间戳格式。
 
         :return: The create_at of this ClusterLogRecord.
         :rtype: str
@@ -160,7 +160,7 @@ class ClusterLogRecord:
     def create_at(self, create_at):
         """Sets the create_at of this ClusterLogRecord.
 
-        创建时间。
+        创建时间。格式：Unix时间戳格式。
 
         :param create_at: The create_at of this ClusterLogRecord.
         :type create_at: str
@@ -171,7 +171,7 @@ class ClusterLogRecord:
     def log_path(self):
         """Gets the log_path of this ClusterLogRecord.
 
-        备份路径。
+        日志在OBS桶中的备份路径。
 
         :return: The log_path of this ClusterLogRecord.
         :rtype: str
@@ -182,7 +182,7 @@ class ClusterLogRecord:
     def log_path(self, log_path):
         """Sets the log_path of this ClusterLogRecord.
 
-        备份路径。
+        日志在OBS桶中的备份路径。
 
         :param log_path: The log_path of this ClusterLogRecord.
         :type log_path: str
@@ -193,7 +193,7 @@ class ClusterLogRecord:
     def status(self):
         """Gets the status of this ClusterLogRecord.
 
-        任务状态。
+        任务状态。 - RUNNING: 备份行中。 - SUCCESS: 备份成功。 - FAIL: 备份失败。
 
         :return: The status of this ClusterLogRecord.
         :rtype: str
@@ -204,7 +204,7 @@ class ClusterLogRecord:
     def status(self, status):
         """Sets the status of this ClusterLogRecord.
 
-        任务状态。
+        任务状态。 - RUNNING: 备份行中。 - SUCCESS: 备份成功。 - FAIL: 备份失败。
 
         :param status: The status of this ClusterLogRecord.
         :type status: str
@@ -215,7 +215,7 @@ class ClusterLogRecord:
     def finished_at(self):
         """Gets the finished_at of this ClusterLogRecord.
 
-        结束时间。
+        结束时间，当创建未结束时结束时间为null。格式：Unix时间戳格式。
 
         :return: The finished_at of this ClusterLogRecord.
         :rtype: int
@@ -226,7 +226,7 @@ class ClusterLogRecord:
     def finished_at(self, finished_at):
         """Sets the finished_at of this ClusterLogRecord.
 
-        结束时间。
+        结束时间，当创建未结束时结束时间为null。格式：Unix时间戳格式。
 
         :param finished_at: The finished_at of this ClusterLogRecord.
         :type finished_at: int
@@ -237,7 +237,7 @@ class ClusterLogRecord:
     def job_types(self):
         """Gets the job_types of this ClusterLogRecord.
 
-        任务类型。
+        任务类型。 - Manual: 手动备份。 - Auto： 自动备份。
 
         :return: The job_types of this ClusterLogRecord.
         :rtype: str
@@ -248,7 +248,7 @@ class ClusterLogRecord:
     def job_types(self, job_types):
         """Sets the job_types of this ClusterLogRecord.
 
-        任务类型。
+        任务类型。 - Manual: 手动备份。 - Auto： 自动备份。
 
         :param job_types: The job_types of this ClusterLogRecord.
         :type job_types: str
@@ -259,7 +259,7 @@ class ClusterLogRecord:
     def failed_msg(self):
         """Gets the failed_msg of this ClusterLogRecord.
 
-        错误信息。
+        错误信息。当任务状态没有处于失败状态时该字段为null。
 
         :return: The failed_msg of this ClusterLogRecord.
         :rtype: str
@@ -270,7 +270,7 @@ class ClusterLogRecord:
     def failed_msg(self, failed_msg):
         """Sets the failed_msg of this ClusterLogRecord.
 
-        错误信息。
+        错误信息。当任务状态没有处于失败状态时该字段为null。
 
         :param failed_msg: The failed_msg of this ClusterLogRecord.
         :type failed_msg: str

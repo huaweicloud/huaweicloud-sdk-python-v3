@@ -35,9 +35,9 @@ class CreateClusterElbWhiteList:
 
         The model defined in huaweicloud sdk
 
-        :param enable_white_list: 是否开启访问控制。
+        :param enable_white_list: 是否开启公网访问控制。
         :type enable_white_list: bool
-        :param white_list: 访问控制白名单。
+        :param white_list: 公网访问控制白名单。白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
         :type white_list: str
         """
         
@@ -55,7 +55,7 @@ class CreateClusterElbWhiteList:
     def enable_white_list(self):
         """Gets the enable_white_list of this CreateClusterElbWhiteList.
 
-        是否开启访问控制。
+        是否开启公网访问控制。
 
         :return: The enable_white_list of this CreateClusterElbWhiteList.
         :rtype: bool
@@ -66,7 +66,7 @@ class CreateClusterElbWhiteList:
     def enable_white_list(self, enable_white_list):
         """Sets the enable_white_list of this CreateClusterElbWhiteList.
 
-        是否开启访问控制。
+        是否开启公网访问控制。
 
         :param enable_white_list: The enable_white_list of this CreateClusterElbWhiteList.
         :type enable_white_list: bool
@@ -77,7 +77,7 @@ class CreateClusterElbWhiteList:
     def white_list(self):
         """Gets the white_list of this CreateClusterElbWhiteList.
 
-        访问控制白名单。
+        公网访问控制白名单。白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
 
         :return: The white_list of this CreateClusterElbWhiteList.
         :rtype: str
@@ -88,7 +88,7 @@ class CreateClusterElbWhiteList:
     def white_list(self, white_list):
         """Sets the white_list of this CreateClusterElbWhiteList.
 
-        访问控制白名单。
+        公网访问控制白名单。白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
 
         :param white_list: The white_list of this CreateClusterElbWhiteList.
         :type white_list: str

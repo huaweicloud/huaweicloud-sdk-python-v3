@@ -41,7 +41,7 @@ class PublicIpInfo:
         :type publicip_id: str
         :param publicip_address: IP地址
         :type publicip_address: str
-        :param ip_version: IP版本信息。 取值： - 4：IPv4 - 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        :param ip_version: IP版本信息。 取值范围：4和6 4：IPv4 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
         :type ip_version: int
         """
         
@@ -104,7 +104,7 @@ class PublicIpInfo:
     def ip_version(self):
         """Gets the ip_version of this PublicIpInfo.
 
-        IP版本信息。 取值： - 4：IPv4 - 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        IP版本信息。 取值范围：4和6 4：IPv4 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :return: The ip_version of this PublicIpInfo.
         :rtype: int
@@ -115,7 +115,7 @@ class PublicIpInfo:
     def ip_version(self, ip_version):
         """Sets the ip_version of this PublicIpInfo.
 
-        IP版本信息。 取值： - 4：IPv4 - 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        IP版本信息。 取值范围：4和6 4：IPv4 6：IPv6  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this PublicIpInfo.
         :type ip_version: int

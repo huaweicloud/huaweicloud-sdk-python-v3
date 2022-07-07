@@ -21,51 +21,51 @@ class ListYmlsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'config_list': 'list[ConfigList]'
+        'configurations': 'object'
     }
 
     attribute_map = {
-        'config_list': 'configList'
+        'configurations': 'configurations'
     }
 
-    def __init__(self, config_list=None):
+    def __init__(self, configurations=None):
         """ListYmlsResponse
 
         The model defined in huaweicloud sdk
 
-        :param config_list: 配置列表。
-        :type config_list: list[:class:`huaweicloudsdkcss.v1.ConfigList`]
+        :param configurations: 集群参数配置列表。该对象中key值以具体获取为准，value拥有以下属性。 - id:  参数配置ID。 - key: 参数名称。 - vlaue:  参数值。 - defaultValue:  参数默认值。 - regex:  参数约束限制。 - desc:  参数中文描述。 - type:  参数类型描述。 - moduleDesc: 参数功能中文描述。 - modifyEnable: 参数是否可修改 true： 可以修改。 false：不可修改。 - enableValue: 参数支持修改的值。 - fileName: 参数存在的文件名称。默认为elasticsearch.yml。 - version:  版本信息。 - descENG: 参数英文描述。 - moduleDescENG:  参数功能英文描述。
+        :type configurations: object
         """
         
         super(ListYmlsResponse, self).__init__()
 
-        self._config_list = None
+        self._configurations = None
         self.discriminator = None
 
-        if config_list is not None:
-            self.config_list = config_list
+        if configurations is not None:
+            self.configurations = configurations
 
     @property
-    def config_list(self):
-        """Gets the config_list of this ListYmlsResponse.
+    def configurations(self):
+        """Gets the configurations of this ListYmlsResponse.
 
-        配置列表。
+        集群参数配置列表。该对象中key值以具体获取为准，value拥有以下属性。 - id:  参数配置ID。 - key: 参数名称。 - vlaue:  参数值。 - defaultValue:  参数默认值。 - regex:  参数约束限制。 - desc:  参数中文描述。 - type:  参数类型描述。 - moduleDesc: 参数功能中文描述。 - modifyEnable: 参数是否可修改 true： 可以修改。 false：不可修改。 - enableValue: 参数支持修改的值。 - fileName: 参数存在的文件名称。默认为elasticsearch.yml。 - version:  版本信息。 - descENG: 参数英文描述。 - moduleDescENG:  参数功能英文描述。
 
-        :return: The config_list of this ListYmlsResponse.
-        :rtype: list[:class:`huaweicloudsdkcss.v1.ConfigList`]
+        :return: The configurations of this ListYmlsResponse.
+        :rtype: object
         """
-        return self._config_list
+        return self._configurations
 
-    @config_list.setter
-    def config_list(self, config_list):
-        """Sets the config_list of this ListYmlsResponse.
+    @configurations.setter
+    def configurations(self, configurations):
+        """Sets the configurations of this ListYmlsResponse.
 
-        配置列表。
+        集群参数配置列表。该对象中key值以具体获取为准，value拥有以下属性。 - id:  参数配置ID。 - key: 参数名称。 - vlaue:  参数值。 - defaultValue:  参数默认值。 - regex:  参数约束限制。 - desc:  参数中文描述。 - type:  参数类型描述。 - moduleDesc: 参数功能中文描述。 - modifyEnable: 参数是否可修改 true： 可以修改。 false：不可修改。 - enableValue: 参数支持修改的值。 - fileName: 参数存在的文件名称。默认为elasticsearch.yml。 - version:  版本信息。 - descENG: 参数英文描述。 - moduleDescENG:  参数功能英文描述。
 
-        :param config_list: The config_list of this ListYmlsResponse.
-        :type config_list: list[:class:`huaweicloudsdkcss.v1.ConfigList`]
+        :param configurations: The configurations of this ListYmlsResponse.
+        :type configurations: object
         """
-        self._config_list = config_list
+        self._configurations = configurations
 
     def to_dict(self):
         """Returns the model properties as a dict"""

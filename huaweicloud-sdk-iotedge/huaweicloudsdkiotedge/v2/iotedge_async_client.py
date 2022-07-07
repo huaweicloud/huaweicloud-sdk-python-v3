@@ -121,7 +121,7 @@ class IoTEdgeAsyncClient(Client):
         return self.create_install_cmd_with_http_info(request)
 
     def create_install_cmd_with_http_info(self, request):
-        all_params = ['edge_node_id', 'arch']
+        all_params = ['edge_node_id', 'arch', 'create_install_cmd_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -142,6 +142,8 @@ class IoTEdgeAsyncClient(Client):
         form_params = {}
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
@@ -417,124 +419,6 @@ class IoTEdgeAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def batch_update_configs_async(self, request):
-        """批量修改子设备协议配置
-
-        批量修改产品关联的设备，传入product_id修改该产品下所有设备，传入device_id列表，根据device_id修改,两者互斥。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for BatchUpdateConfigs
-        :type request: :class:`huaweicloudsdkiotedge.v2.BatchUpdateConfigsRequest`
-        :rtype: :class:`huaweicloudsdkiotedge.v2.BatchUpdateConfigsResponse`
-        """
-        return self.batch_update_configs_with_http_info(request)
-
-    def batch_update_configs_with_http_info(self, request):
-        all_params = ['batch_update_configs_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/devices/batch-configs',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='BatchUpdateConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def create_access_code_async(self, request):
-        """生成modbus协议设备接入码
-
-        生成modbus协议设备接入码
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for CreateAccessCode
-        :type request: :class:`huaweicloudsdkiotedge.v2.CreateAccessCodeRequest`
-        :rtype: :class:`huaweicloudsdkiotedge.v2.CreateAccessCodeResponse`
-        """
-        return self.create_access_code_with_http_info(request)
-
-    def create_access_code_with_http_info(self, request):
-        all_params = ['edge_node_id', 'device_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'edge_node_id' in local_var_params:
-            path_params['edge_node_id'] = local_var_params['edge_node_id']
-        if 'device_id' in local_var_params:
-            path_params['device_id'] = local_var_params['device_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/devices/{device_id}/access-code',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreateAccessCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def delete_device_async(self, request):
         """删除设备
 
@@ -719,64 +603,6 @@ class IoTEdgeAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def show_protocol_mappings_async(self, request):
-        """获取协议映射文件
-
-        获取协议映射文件
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ShowProtocolMappings
-        :type request: :class:`huaweicloudsdkiotedge.v2.ShowProtocolMappingsRequest`
-        :rtype: :class:`huaweicloudsdkiotedge.v2.ShowProtocolMappingsResponse`
-        """
-        return self.show_protocol_mappings_with_http_info(request)
-
-    def show_protocol_mappings_with_http_info(self, request):
-        all_params = ['product_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'product_id' in local_var_params:
-            path_params['product_id'] = local_var_params['product_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/products/{product_id}/protocol-mappings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowProtocolMappingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def update_device_async(self, request):
         """修改设备
 
@@ -834,68 +660,6 @@ class IoTEdgeAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def upload_protocol_mappings_async(self, request):
-        """上传协议映射文件
-
-        上传协议映射文件
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for UploadProtocolMappings
-        :type request: :class:`huaweicloudsdkiotedge.v2.UploadProtocolMappingsRequest`
-        :rtype: :class:`huaweicloudsdkiotedge.v2.UploadProtocolMappingsResponse`
-        """
-        return self.upload_protocol_mappings_with_http_info(request)
-
-    def upload_protocol_mappings_with_http_info(self, request):
-        all_params = ['product_id', 'file']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'product_id' in local_var_params:
-            path_params['product_id'] = local_var_params['product_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-        if 'file' in local_var_params:
-            form_params['file'] = local_var_params['file']
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['multipart/form-data'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/products/{product_id}/protocol-mappings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='UploadProtocolMappingsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1692,66 +1456,6 @@ class IoTEdgeAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListExternalEntityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_external_entity_async(self, request):
-        """查询指定节点下指定外部实体的详情
-
-        查询指定节点下指定外部实体的详情
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ShowExternalEntity
-        :type request: :class:`huaweicloudsdkiotedge.v2.ShowExternalEntityRequest`
-        :rtype: :class:`huaweicloudsdkiotedge.v2.ShowExternalEntityResponse`
-        """
-        return self.show_external_entity_with_http_info(request)
-
-    def show_external_entity_with_http_info(self, request):
-        all_params = ['edge_node_id', 'external_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'edge_node_id' in local_var_params:
-            path_params['edge_node_id'] = local_var_params['edge_node_id']
-        if 'external_id' in local_var_params:
-            path_params['external_id'] = local_var_params['external_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/externals/{external_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowExternalEntityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

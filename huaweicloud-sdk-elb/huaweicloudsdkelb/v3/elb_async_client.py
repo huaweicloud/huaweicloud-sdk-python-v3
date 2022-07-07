@@ -63,7 +63,7 @@ class ElbAsyncClient(Client):
         return self.batch_create_members_with_http_info(request)
 
     def batch_create_members_with_http_info(self, request):
-        all_params = ['pool_id', 'batch_create_member_request_body']
+        all_params = ['pool_id', 'batch_create_members_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -123,7 +123,7 @@ class ElbAsyncClient(Client):
         return self.batch_delete_members_with_http_info(request)
 
     def batch_delete_members_with_http_info(self, request):
-        all_params = ['pool_id', 'batch_delete_member_request_body']
+        all_params = ['pool_id', 'batch_delete_members_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -227,7 +227,7 @@ class ElbAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def change_loadbalancer_charge_mode_async(self, request):
-        """负载均衡器计费模式变更
+        """变更负载均衡器计费模式
 
         负载均衡器计费模式变更，当前只支持按需计费转包周期计费。
         
@@ -581,19 +581,26 @@ class ElbAsyncClient(Client):
 
         创建负载均衡器。
         
+        
         1.若要创建内网IPv4负载均衡器，则需要设置vip_subnet_cidr_id。
+        
         
         2.若要创建公网IPv4负载均衡器，则需要设置publicip，以及设置vpc_id和vip_subnet_cidr_id这两个参数中的一个。
         
+        
         3.若要绑定有已有公网IPv4地址，需要设置publicip_ids，以及设置vpc_id和vip_subnet_cidr_id这两个参数中的一个。
+        
         
         4.若要创建内网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id。
         
+        
         5.若要创建公网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id和ipv6_bandwidth。
+        
         
         6.不支持绑定已有未使用的内网IPv4、内网IPv6或公网IPv6地址。
         
-        [&gt;不支持创建IPv6地址负载均衡器](tag:dt,dt_test)
+        
+        [&gt; 不支持创建IPv6地址负载均衡器](tag:dt,dt_test)
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -701,6 +708,64 @@ class ElbAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateLogtankResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_master_slave_pool_async(self, request):
+        """创建主备后端服务器组
+
+        创建主备后端服务器组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateMasterSlavePool
+        :type request: :class:`huaweicloudsdkelb.v3.CreateMasterSlavePoolRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.CreateMasterSlavePoolResponse`
+        """
+        return self.create_master_slave_pool_with_http_info(request)
+
+    def create_master_slave_pool_with_http_info(self, request):
+        all_params = ['create_master_slave_pool_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/master-slave-pools',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateMasterSlavePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1290,6 +1355,64 @@ class ElbAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_master_slave_pool_async(self, request):
+        """删除主备后端服务器组
+
+        删除主备后端服务器组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteMasterSlavePool
+        :type request: :class:`huaweicloudsdkelb.v3.DeleteMasterSlavePoolRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.DeleteMasterSlavePoolResponse`
+        """
+        return self.delete_master_slave_pool_with_http_info(request)
+
+    def delete_master_slave_pool_with_http_info(self, request):
+        all_params = ['pool_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/master-slave-pools/{pool_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteMasterSlavePoolResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_member_async(self, request):
         """删除后端服务器
 
@@ -1568,10 +1691,11 @@ class ElbAsyncClient(Client):
 
         返回租户创建LB时可使用的可用区集合列表情况。
         
-        默认情况下，会返回一个可用区集合。在（如创建LB）设置可用区时，填写的可用区必须包含在可用区集合中、为这个可用区集合的子集。
         
-        [特殊场景下，部分客户要求负载均衡只能创建在指定可用区集合中，此时会返回客户定制的可用区集合。返回可用区集合可能为一个也可能为多个，比如列表有两个可用区集合[az1,az2],
-        [az2,az3]。在创建负载均衡器时，可以选择创建在多个可用区，但所选的多个可用区必须同属于其中一个可用区集合，如可以选az2和az3，但不能选择az1和az3。你可以选择多个可用区，只要这些可用区在一个子集中](tag:hws,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)
+        - 默认情况下，会返回一个可用区集合。在（如创建LB）设置可用区时，填写的可用区必须包含在可用区集合中、为这个可用区集合的子集。
+        
+        
+        - 特殊场景下，部分客户要求负载均衡只能创建在指定可用区集合中，此时会返回客户定制的可用区集合。返回可用区集合可能为一个也可能为多个，比如列表有两个可用区集合\\[az1,az2\\], \\[az2, az3\\]。在创建负载均衡器时，可以选择创建在多个可用区，但所选的多个可用区必须同属于其中一个可用区集合，如可以选az2和az3，但不能选择 az1和az3。你可以选择多个可用区，只要这些可用区在一个子集中
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1583,7 +1707,7 @@ class ElbAsyncClient(Client):
         return self.list_availability_zones_with_http_info(request)
 
     def list_availability_zones_with_http_info(self, request):
-        all_params = []
+        all_params = ['public_border_group']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1594,6 +1718,8 @@ class ElbAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'public_border_group' in local_var_params:
+            query_params.append(('public_border_group', local_var_params['public_border_group']))
 
         header_params = {}
 
@@ -1625,7 +1751,7 @@ class ElbAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_certificates_async(self, request):
-        """证书列表
+        """查询证书列表
 
         查询证书列表。
         
@@ -2342,9 +2468,9 @@ class ElbAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_logtanks_async(self, request):
-        """云日志列表
+        """查询云日志列表
 
-        云日志列表
+        查询云日志列表
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2418,8 +2544,115 @@ class ElbAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_master_slave_pools_async(self, request):
+        """查询主备后端服务器组列表
+
+        主备后端服务器组列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListMasterSlavePools
+        :type request: :class:`huaweicloudsdkelb.v3.ListMasterSlavePoolsRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ListMasterSlavePoolsResponse`
+        """
+        return self.list_master_slave_pools_with_http_info(request)
+
+    def list_master_slave_pools_with_http_info(self, request):
+        all_params = ['marker', 'limit', 'page_reverse', 'description', 'healthmonitor_id', 'id', 'name', 'loadbalancer_id', 'protocol', 'lb_algorithm', 'enterprise_project_id', 'ip_version', 'member_address', 'member_device_id', 'listener_id', 'member_instance_id', 'vpc_id', 'type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'page_reverse' in local_var_params:
+            query_params.append(('page_reverse', local_var_params['page_reverse']))
+        if 'description' in local_var_params:
+            query_params.append(('description', local_var_params['description']))
+            collection_formats['description'] = 'multi'
+        if 'healthmonitor_id' in local_var_params:
+            query_params.append(('healthmonitor_id', local_var_params['healthmonitor_id']))
+            collection_formats['healthmonitor_id'] = 'multi'
+        if 'id' in local_var_params:
+            query_params.append(('id', local_var_params['id']))
+            collection_formats['id'] = 'multi'
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+            collection_formats['name'] = 'multi'
+        if 'loadbalancer_id' in local_var_params:
+            query_params.append(('loadbalancer_id', local_var_params['loadbalancer_id']))
+            collection_formats['loadbalancer_id'] = 'multi'
+        if 'protocol' in local_var_params:
+            query_params.append(('protocol', local_var_params['protocol']))
+            collection_formats['protocol'] = 'multi'
+        if 'lb_algorithm' in local_var_params:
+            query_params.append(('lb_algorithm', local_var_params['lb_algorithm']))
+            collection_formats['lb_algorithm'] = 'multi'
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+            collection_formats['enterprise_project_id'] = 'multi'
+        if 'ip_version' in local_var_params:
+            query_params.append(('ip_version', local_var_params['ip_version']))
+            collection_formats['ip_version'] = 'multi'
+        if 'member_address' in local_var_params:
+            query_params.append(('member_address', local_var_params['member_address']))
+            collection_formats['member_address'] = 'multi'
+        if 'member_device_id' in local_var_params:
+            query_params.append(('member_device_id', local_var_params['member_device_id']))
+            collection_formats['member_device_id'] = 'multi'
+        if 'listener_id' in local_var_params:
+            query_params.append(('listener_id', local_var_params['listener_id']))
+            collection_formats['listener_id'] = 'csv'
+        if 'member_instance_id' in local_var_params:
+            query_params.append(('member_instance_id', local_var_params['member_instance_id']))
+            collection_formats['member_instance_id'] = 'csv'
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+            collection_formats['vpc_id'] = 'csv'
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+            collection_formats['type'] = 'csv'
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/master-slave-pools',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListMasterSlavePoolsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_members_async(self, request):
-        """后端服务器列表
+        """查询后端服务器列表
 
         Pool下的后端服务器列表。
         
@@ -2433,7 +2666,7 @@ class ElbAsyncClient(Client):
         return self.list_members_with_http_info(request)
 
     def list_members_with_http_info(self, request):
-        all_params = ['pool_id', 'marker', 'limit', 'page_reverse', 'name', 'weight', 'admin_state_up', 'subnet_cidr_id', 'address', 'protocol_port', 'id', 'operating_status', 'enterprise_project_id', 'ip_version', 'member_type', 'instance_id']
+        all_params = ['pool_id', 'marker', 'limit', 'page_reverse', 'name', 'weight', 'admin_state_up', 'subnet_cidr_id', 'address', 'protocol_port', 'id', 'operating_status', 'enterprise_project_id', 'ip_version', 'member_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2484,9 +2717,6 @@ class ElbAsyncClient(Client):
         if 'member_type' in local_var_params:
             query_params.append(('member_type', local_var_params['member_type']))
             collection_formats['member_type'] = 'csv'
-        if 'instance_id' in local_var_params:
-            query_params.append(('instance_id', local_var_params['instance_id']))
-            collection_formats['instance_id'] = 'csv'
 
         header_params = {}
 
@@ -2532,7 +2762,7 @@ class ElbAsyncClient(Client):
         return self.list_pools_with_http_info(request)
 
     def list_pools_with_http_info(self, request):
-        all_params = ['marker', 'limit', 'page_reverse', 'description', 'admin_state_up', 'healthmonitor_id', 'id', 'name', 'loadbalancer_id', 'protocol', 'lb_algorithm', 'enterprise_project_id', 'ip_version', 'member_address', 'member_device_id', 'member_deletion_protection_enable', 'listener_id', 'member_instance_id']
+        all_params = ['marker', 'limit', 'page_reverse', 'description', 'admin_state_up', 'healthmonitor_id', 'id', 'name', 'loadbalancer_id', 'protocol', 'lb_algorithm', 'enterprise_project_id', 'ip_version', 'member_address', 'member_device_id', 'member_deletion_protection_enable', 'listener_id', 'member_instance_id', 'vpc_id', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2592,6 +2822,12 @@ class ElbAsyncClient(Client):
         if 'member_instance_id' in local_var_params:
             query_params.append(('member_instance_id', local_var_params['member_instance_id']))
             collection_formats['member_instance_id'] = 'csv'
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+            collection_formats['vpc_id'] = 'csv'
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+            collection_formats['type'] = 'csv'
 
         header_params = {}
 
@@ -2817,7 +3053,7 @@ class ElbAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_certificate_async(self, request):
-        """证书详情
+        """查询证书详情
 
         查询证书详情。
         
@@ -3285,7 +3521,7 @@ class ElbAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_logtank_async(self, request):
-        """云日志配置详情
+        """查询云日志详情
 
         云日志详情。
         
@@ -3342,8 +3578,66 @@ class ElbAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_master_slave_pool_async(self, request):
+        """查询主备后端服务器组详情
+
+        主备后端服务器组详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowMasterSlavePool
+        :type request: :class:`huaweicloudsdkelb.v3.ShowMasterSlavePoolRequest`
+        :rtype: :class:`huaweicloudsdkelb.v3.ShowMasterSlavePoolResponse`
+        """
+        return self.show_master_slave_pool_with_http_info(request)
+
+    def show_master_slave_pool_with_http_info(self, request):
+        all_params = ['pool_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'pool_id' in local_var_params:
+            path_params['pool_id'] = local_var_params['pool_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/elb/master-slave-pools/{pool_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowMasterSlavePoolResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_member_async(self, request):
-        """后端服务器详情
+        """查询后端服务器详情
 
         后端服务器详情。
         
@@ -3461,7 +3755,7 @@ class ElbAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_quota_async(self, request):
-        """查询配额
+        """查询配额详情
 
         查询指定项目中负载均衡相关的各类资源的当前配额。
         
@@ -3951,7 +4245,7 @@ class ElbAsyncClient(Client):
         return self.update_logtank_with_http_info(request)
 
     def update_logtank_with_http_info(self, request):
-        all_params = ['logtank_id', 'logtank']
+        all_params = ['logtank_id', 'update_logtank_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4237,7 +4531,7 @@ class ElbAsyncClient(Client):
     def batch_delete_ip_list_async(self, request):
         """删除IP地址组的IP列表项
 
-        批量删除IP地址组的IP列表项。
+        批量删除IP地址组的IP列表信息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -4249,7 +4543,7 @@ class ElbAsyncClient(Client):
         return self.batch_delete_ip_list_with_http_info(request)
 
     def batch_delete_ip_list_with_http_info(self, request):
-        all_params = ['ipgroup_id', 'batch_delete_ip_group_ip_list_request_body']
+        all_params = ['ipgroup_id', 'batch_delete_ip_list_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4298,10 +4592,23 @@ class ElbAsyncClient(Client):
         """计算预占IP数
 
         计算以下几种场景的预占用IP数量：
-        - 计算创建LB的第一个七层监听器后总占用IP数量：传入loadbalancer_id、l7_flavor_id为空、ip_target_enable不传或为false。
-        - 计算LB规格变更或开启跨VPC后总占用IP数量：传入参数loadbalancer_id，及l7_flavor_id不为空或ip_target_enable为true。
-        - 计算创建LB所需IP数量：传入参数availability_zone_id，及可选参数l7_flavor_id、ip_target_enable、ip_version，不能传loadbalancer_id。
-        &gt; 查询出的预占IP数大于等于最终实际占用的IP数。
+        
+        -
+        计算创建LB的第一个七层监听器后总占用IP数量：传入loadbalancer_id、l7_flavor_id为空、ip_target_enable不传或为false。
+        
+        -
+        计算LB规格变更或开启跨VPC后总占用IP数量：传入参数loadbalancer_id，及l7_flavor_id不为空或ip_target_enable为true。
+        
+        -
+        计算创建LB所需IP数量：传入参数availability_zone_id，及可选参数l7_flavor_id、ip_target_enable、ip_version，不能传loadbalancer_id。
+        
+        
+        说明：
+        
+        
+        - 计算出来的预占IP数大于等于最终实际占用的IP数。
+        
+        - 总占用IP数量，即整个LB所占用的IP数量。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -4369,7 +4676,6 @@ class ElbAsyncClient(Client):
         """创建IP地址组
 
         创建IP地址组。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，会只保留其中一个写入。
-        [不支持IPv6，请勿传入IPv6地址。](tag:dt,dt_test)
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -4618,7 +4924,6 @@ class ElbAsyncClient(Client):
         """更新IP地址组
 
         更新IP地址组，只支持全量更新IP。即IP地址组中的ip_list将被全量覆盖，不在请求参数中的IP地址将被移除。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，会只保留其中一个写入。
-        [不支持IPv6，请勿传入IPv6地址。](tag:dt,dt_test)
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

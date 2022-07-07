@@ -53,9 +53,9 @@ class Actions:
         :type conf_content: str
         :param status: 操作状态。
         :type status: str
-        :param update_at: 更新时间。
+        :param update_at: 更新时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
         :type update_at: str
-        :param error_msg: 错误信息。
+        :param error_msg: 错误信息。当操作状态为success时该字段为null。
         :type error_msg: str
         :param message: 内容。
         :type message: str
@@ -179,7 +179,7 @@ class Actions:
     def update_at(self):
         """Gets the update_at of this Actions.
 
-        更新时间。
+        更新时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
 
         :return: The update_at of this Actions.
         :rtype: str
@@ -190,7 +190,7 @@ class Actions:
     def update_at(self, update_at):
         """Sets the update_at of this Actions.
 
-        更新时间。
+        更新时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。
 
         :param update_at: The update_at of this Actions.
         :type update_at: str
@@ -201,7 +201,7 @@ class Actions:
     def error_msg(self):
         """Gets the error_msg of this Actions.
 
-        错误信息。
+        错误信息。当操作状态为success时该字段为null。
 
         :return: The error_msg of this Actions.
         :rtype: str
@@ -212,7 +212,7 @@ class Actions:
     def error_msg(self, error_msg):
         """Sets the error_msg of this Actions.
 
-        错误信息。
+        错误信息。当操作状态为success时该字段为null。
 
         :param error_msg: The error_msg of this Actions.
         :type error_msg: str

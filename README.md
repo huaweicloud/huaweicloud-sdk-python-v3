@@ -13,7 +13,7 @@ This document introduces how to obtain and use Huawei Cloud Python SDK.
 
 ## Requirements
 
-- To use Huawei Cloud Python SDK, you must have Huawei Cloud account as well as the Access Key and Secret Key of the
+- To use Huawei Cloud Python SDK, you must have Huawei Cloud account as well as the Access Key (AK) and Secret key (SK) of the
   Huawei Cloud account. You can create an Access Key in the Huawei Cloud console. For more information,
   see [My Credentials](https://support.huaweicloud.com/en-us/usermanual-ca/en-us_topic_0046606340.html).
 
@@ -28,7 +28,7 @@ You could use **pip** or **source code** to install dependencies.
 
 ### Individual Cloud Service
 
-Take using VPC SDK for example, you need to install `huaweicloudsdkcore` library and `huaweicloudsdkvpc` library:
+Take using VPC SDK for example, you need to install `huaweicloudsdkvpc` library:
 
 - Use python pip
 
@@ -110,6 +110,10 @@ if __name__ == "__main__":
     list_vpc(vpc_client)
 ```
 
+## Online Debugging
+
+[API Explorer](https://apiexplorer.developer.intl.huaweicloud.com/apiexplorer/overview) provides api retrieval and online debugging, supports full fast retrieval, visual debugging, help document viewing, and online consultation.
+
 ## Changelog
 
 Detailed changes for each released version are documented in
@@ -118,22 +122,22 @@ the [CHANGELOG.md](https://github.com/huaweicloud/huaweicloud-sdk-python-v3/blob
 ## User Manual [:top:](#huawei-cloud-python-software-development-kit-python-sdk)
 
 * [1. Client Configuration](#1-client-configuration-top)
-    * [1.1  Default Configuration](#11-default-configuration-top)
-    * [1.2  Network Proxy](#12-network-proxy-top)
-    * [1.3  Connection](#13-connection-top)
-    * [1.4  SSL Certification](#14-ssl-certification-top)
+    * [1.1 Default Configuration](#11-default-configuration-top)
+    * [1.2 Network Proxy](#12-network-proxy-top)
+    * [1.3 Timeout Configuration](#13-timeout-configuration-top)
+    * [1.4 SSL Certification](#14-ssl-certification-top)
 * [2. Credentials Configuration](#2-credentials-configuration-top)
-    * [2.1  Use Permanent AK&SK](#21-use-permanent-aksk-top)
-    * [2.2  Use Temporary AK&SK](#22-use-temporary-aksk-top)
+    * [2.1 Use Permanent AK&SK](#21-use-permanent-aksk-top)
+    * [2.2 Use Temporary AK&SK](#22-use-temporary-aksk-top)
 * [3. Client Initialization](#3-client-initialization-top)
-    * [3.1  Initialize the client with specified Endpoint](#31-initialize-the-serviceclient-with-specified-endpoint-top)
-    * [3.2  Initialize the client with specified Region (Recommended)](#32-initialize-the-serviceclient-with-specified-region-recommended-top)
+    * [3.1 Initialize the client with specified Endpoint](#31-initialize-the-serviceclient-with-specified-endpoint-top)
+    * [3.2 Initialize the client with specified Region (Recommended)](#32-initialize-the-serviceclient-with-specified-region-recommended-top)
     * [3.3 Custom Configuration](#33-custom-configuration-top)
         * [3.3.1 IAM endpoint configuration](#331-iam-endpoint-configuration-top)
         * [3.3.2 Region configuration](#332-region-configuration-top)
 * [4. Send Requests and Handle Responses](#4-send-requests-and-handle-responses-top)
-    * [4.1  Exceptions](#41-exceptions-top)
-    * [4.2  Get Response Object](#42-get-response-object-top)
+    * [4.1 Exceptions](#41-exceptions-top)
+    * [4.2 Get Response Object](#42-get-response-object-top)
 * [5. Use Asynchronous Client](#5-use-asynchronous-client-top)
 * [6. Troubleshooting](#6-troubleshooting-top)
     * [6.1 Access Log](#61-access-log-top)
@@ -145,6 +149,8 @@ the [CHANGELOG.md](https://github.com/huaweicloud/huaweicloud-sdk-python-v3/blob
 #### 1.1 Default Configuration [:top:](#user-manual-top)
 
 ``` python
+from huaweicloudsdkcore.http.http_config import HttpConfig
+
 #  Use default configuration
 config = HttpConfig.get_default_config()
 ```
@@ -160,19 +166,22 @@ config.proxy_user = 'username'
 config.proxy_password = 'password'
 ```
 
-#### 1.3 Connection [:top:](#user-manual-top)
+#### 1.3 Timeout Configuration [:top:](#user-manual-top)
 
 ``` python
-# The default connection timeout is 60 seconds, the default read timeout is 120 seconds. You could specify a unified timeout by using config.timeout=timeout, or specify timeout separately config.timeout=(connect timeout, read timeout)
+# The default connection timeout is 60 seconds, the default read timeout is 120 seconds
+# Set the connection timeout and read timeout to 120 seconds
 config.timeout = 120
+# Set the connection timeout to 60 seconds and the read timeout to 120 seconds
+config.timeout = (60, 120)
 ```
 
 #### 1.4 SSL Certification [:top:](#user-manual-top)
 
 ``` python
-# Skip ssl certifaction checking while using https protocol if needed
+# Skip SSL certifaction checking while using https protocol if needed
 config.ignore_ssl_verification = True
-# Server ca certification if needed
+# Configure the server's CA certificate for the SDK to verify the legitimacy of the server
 config.ssl_ca_cert = ssl_ca_cert
 ```
 
@@ -182,8 +191,9 @@ There are two types of Huawei Cloud services, `regional` services and `global` s
 
 Global services contain BSS, DevStar, EPS, IAM, RMS, TMS.
 
-For `regional` services' authentication, projectId is required to initialize BasicCredentials. For `global` services'
-authentication, domainId is required to initialize GlobalCredentials.
+For `regional` services' authentication, projectId is required to initialize BasicCredentials. 
+
+For `global` services' authentication, domainId is required to initialize GlobalCredentials.
 
 **Parameter description**:
 
@@ -213,16 +223,18 @@ global_credentials = GlobalCredentials(ak, sk, domain_id)
 
 #### 2.2 Use Temporary AK&SK [:top:](#user-manual-top)
 
-It's required to obtain temporary access key, security key and security token first, which could be obtained through
-permanent access key and security key or through an agency.
+It's required to obtain temporary AK&SK and security token first, which could be obtained through
+permanent AK&SK or through an agency.
 
-Obtaining a temporary access key token through permanent access key and security key, you could refer to
+- Obtaining a temporary access key and security token through token, you could refer to
 document: https://support.huaweicloud.com/en-us/api-iam/iam_04_0002.html . The API mentioned in the document above
 corresponds to the method of `CreateTemporaryAccessKeyByToken` in IAM SDK.
 
-Obtaining a temporary access key and security token through an agency, you could refer to
+- Obtaining a temporary access key and security token through an agency, you could refer to
 document: https://support.huaweicloud.com/en-us/api-iam/iam_04_0101.html . The API mentioned in the document above
 corresponds to the method of `CreateTemporaryAccessKeyByAgency` in IAM SDK.
+
+After the temporary AK&SK&SecurityToken is successfully obtained, you can use the following example to initialize the authentication:
 
 ``` python
 # Regional services
@@ -266,10 +278,12 @@ client = VpcClient.new_builder() \
 # dependency for region module
 from huaweicloudsdkiam.v3.region.iam_region import IamRegion
 
-# Initialize the credentials, project_id or domain_id could be unassigned in this situation, take initializing GlobalCredentials for example
+# Initialize the credentials, project_id or domain_id could be unassigned in this situation
+# Take initializing GlobalCredentials for example
 global_credentials = GlobalCredentials(ak, sk)
 
-# initialize specified service client instance, take initializing the global service IAM's IamClient for example
+# Initialize specified service client instance
+# Take initializing the global service IAM's IamClient for example
 client = IamClient.new_builder() \
     .with_http_config(config) \
     .with_credentials(global_credentials) \
@@ -297,7 +311,7 @@ client = IamClient.new_builder() \
 
 #### 3.3 Custom Configuration
 
-**Notice:** Supported since v0.0.92
+**Notice:** Supported since v3.0.93
 
 ##### 3.3.1 IAM endpoint configuration
 
@@ -455,10 +469,9 @@ SDK supports `Access` log and `Debug` log which could be configured manually.
 SDK supports print access log which could be enabled by manual configuration, the log could be output to the console or
 specified files.
 
-For example:
+Initialize specified service client instance, take VpcClient for example:
 
 ``` python
-# Initialize specified service client instance, take VpcClient for example
 client = VpcClient.new_builder() \
     .with_http_config(config) \
     .with_credentials(basic_credentials) \

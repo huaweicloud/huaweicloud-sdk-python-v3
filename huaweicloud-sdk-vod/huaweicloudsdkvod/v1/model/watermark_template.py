@@ -87,9 +87,9 @@ class WatermarkTemplate:
         :type watermark_type: str
         :param image_process: type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
         :type image_process: str
-        :param timeline_start: 水印开始时间。
+        :param timeline_start: 水印开始时间，与\&quot;timeline_duration\&quot;配合使用。 取值范围:[0, END)。\&quot;END\&quot;表示视频结束时间。 单位:秒。 
         :type timeline_start: str
-        :param timeline_duration: 水印持续时间。
+        :param timeline_duration: 水印持续时间，与\&quot;timeline_start\&quot;配合使用。 取值范围:(0,END-开始时间]。\&quot;END\&quot;表示视频结束时间。 单位:秒。 默认:END。 
         :type timeline_duration: str
         """
         
@@ -433,7 +433,7 @@ class WatermarkTemplate:
     def timeline_start(self):
         """Gets the timeline_start of this WatermarkTemplate.
 
-        水印开始时间。
+        水印开始时间，与\"timeline_duration\"配合使用。 取值范围:[0, END)。\"END\"表示视频结束时间。 单位:秒。 
 
         :return: The timeline_start of this WatermarkTemplate.
         :rtype: str
@@ -444,7 +444,7 @@ class WatermarkTemplate:
     def timeline_start(self, timeline_start):
         """Sets the timeline_start of this WatermarkTemplate.
 
-        水印开始时间。
+        水印开始时间，与\"timeline_duration\"配合使用。 取值范围:[0, END)。\"END\"表示视频结束时间。 单位:秒。 
 
         :param timeline_start: The timeline_start of this WatermarkTemplate.
         :type timeline_start: str
@@ -455,7 +455,7 @@ class WatermarkTemplate:
     def timeline_duration(self):
         """Gets the timeline_duration of this WatermarkTemplate.
 
-        水印持续时间。
+        水印持续时间，与\"timeline_start\"配合使用。 取值范围:(0,END-开始时间]。\"END\"表示视频结束时间。 单位:秒。 默认:END。 
 
         :return: The timeline_duration of this WatermarkTemplate.
         :rtype: str
@@ -466,7 +466,7 @@ class WatermarkTemplate:
     def timeline_duration(self, timeline_duration):
         """Sets the timeline_duration of this WatermarkTemplate.
 
-        水印持续时间。
+        水印持续时间，与\"timeline_start\"配合使用。 取值范围:(0,END-开始时间]。\"END\"表示视频结束时间。 单位:秒。 默认:END。 
 
         :param timeline_duration: The timeline_duration of this WatermarkTemplate.
         :type timeline_duration: str

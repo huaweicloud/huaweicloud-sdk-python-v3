@@ -49,7 +49,7 @@ class RecognizeFlashAsrRequest:
 
         The model defined in huaweicloud sdk
 
-        :param _property: 所使用的模型特征串。通常是 “语种_采样率_领域”的形式。 采样率需要与音频采样率保持一致。 当前支持如下模型特征串： chinese_8k_common chinese_16k_common
+        :param _property: 所使用的模型特征串。通常是 “语种_采样率_领域”的形式。 采样率需要与音频采样率保持一致。 当前支持如下模型特征串： chinese_8k_common chinese_16k_conversation
         :type _property: str
         :param audio_format: 音频格式，audio_format取值范围： wav,mp3,m4a,aac,opus
         :type audio_format: str
@@ -103,7 +103,7 @@ class RecognizeFlashAsrRequest:
     def _property(self):
         """Gets the _property of this RecognizeFlashAsrRequest.
 
-        所使用的模型特征串。通常是 “语种_采样率_领域”的形式。 采样率需要与音频采样率保持一致。 当前支持如下模型特征串： chinese_8k_common chinese_16k_common
+        所使用的模型特征串。通常是 “语种_采样率_领域”的形式。 采样率需要与音频采样率保持一致。 当前支持如下模型特征串： chinese_8k_common chinese_16k_conversation
 
         :return: The _property of this RecognizeFlashAsrRequest.
         :rtype: str
@@ -114,7 +114,7 @@ class RecognizeFlashAsrRequest:
     def _property(self, _property):
         """Sets the _property of this RecognizeFlashAsrRequest.
 
-        所使用的模型特征串。通常是 “语种_采样率_领域”的形式。 采样率需要与音频采样率保持一致。 当前支持如下模型特征串： chinese_8k_common chinese_16k_common
+        所使用的模型特征串。通常是 “语种_采样率_领域”的形式。 采样率需要与音频采样率保持一致。 当前支持如下模型特征串： chinese_8k_common chinese_16k_conversation
 
         :param _property: The _property of this RecognizeFlashAsrRequest.
         :type _property: str

@@ -33,7 +33,7 @@ class UpdateUnbindPublicResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param action: 操作行为。
+        :param action: 操作行为。固定为：unbindZone，表示解绑成功。
         :type action: str
         """
         
@@ -49,7 +49,7 @@ class UpdateUnbindPublicResponse(SdkResponse):
     def action(self):
         """Gets the action of this UpdateUnbindPublicResponse.
 
-        操作行为。
+        操作行为。固定为：unbindZone，表示解绑成功。
 
         :return: The action of this UpdateUnbindPublicResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateUnbindPublicResponse(SdkResponse):
     def action(self, action):
         """Sets the action of this UpdateUnbindPublicResponse.
 
-        操作行为。
+        操作行为。固定为：unbindZone，表示解绑成功。
 
         :param action: The action of this UpdateUnbindPublicResponse.
         :type action: str

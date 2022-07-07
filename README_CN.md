@@ -8,7 +8,7 @@
 
 欢迎使用华为云 Python SDK。
 
-华为云 Python SDK让您无需关心请求细节即可快速使用弹性云服务器、虚拟私有云等多个华为云服务。
+华为云 Python SDK让您无需关心请求细节即可快速使用弹性云服务器（ECS）、虚拟私有云（VPC）等多个华为云服务。
 
 这里将向您介绍如何获取并使用华为云 Python SDK 。
 
@@ -125,7 +125,7 @@ if __name__ == "__main__":
     * [1.2 网络代理](#12-网络代理-top)
     * [1.3 超时配置](#13-超时配置-top)
     * [1.4 SSL 配置](#14-ssl-配置-top)
-* [2. 客户端认证信息](#2-客户端认证信息-top)
+* [2. 认证信息配置](#2-认证信息配置-top)
     * [2.1 使用永久 AK 和 SK](#21-使用永久-ak-和-sk-top)
     * [2.2 使用临时 AK 和 SK](#22-使用临时-ak-和-sk-top)
 * [3. 客户端初始化](#3-客户端初始化-top)
@@ -148,6 +148,8 @@ if __name__ == "__main__":
 #### 1.1 默认配置 [:top:](#用户手册-top)
 
 ``` python
+from huaweicloudsdkcore.http.http_config import HttpConfig
+
 # 使用默认配置
 config = HttpConfig.get_default_config()
 ```
@@ -166,8 +168,11 @@ config.proxy_password = 'password'
 #### 1.3 超时配置 [:top:](#用户手册-top)
 
 ``` python
-# 默认连接超时时间为60秒，读取超时时间为120秒，支持统一指定超时时长timeout=timeout，或分别指定超时时长timeout=(connect timeout, read timeout)
+# 默认连接超时时间为60秒，读取超时时间为120秒
+# 将连接超时时间和读取超时时间统一设置为120秒
 config.timeout = 120
+# 将连接超时时间设置为60秒，读取超时时间设置为120秒
+config.timeout = (60, 120)
 ```
 
 #### 1.4 SSL 配置 [:top:](#用户手册-top)
@@ -185,7 +190,9 @@ config.ssl_ca_cert = ssl_ca_cert
 
 Global 级服务有 BSS、DevStar、EPS、IAM、RMS、TMS。
 
-Region 级服务使用 BasicCredentials 初始化，需要提供 projectId 。Global 级服务使用 GlobalCredentials 初始化，需要提供 domainId 。
+Region 级服务使用 BasicCredentials 初始化，需要提供 projectId 。
+
+Global 级服务使用 GlobalCredentials 初始化，需要提供 domainId 。
 
 客户端认证可以使用永久 AK&SK 认证，也可以使用临时 AK&SK&SecurityToken 认证。
 
@@ -263,10 +270,12 @@ client = VpcClient.new_builder() \
 # 增加region依赖
 from huaweicloudsdkiam.v3.region.iam_region import IamRegion
 
-# 初始化客户端认证信息，使用当前客户端初始化方式可不填 project_id/domain_id，以初始化 GlobalCredentials 为例
+# 初始化客户端认证信息，使用当前客户端初始化方式可不填 project_id/domain_id
+# 以初始化 GlobalCredentials 为例
 global_credentials = GlobalCredentials(ak, sk)
 
-# 初始化指定云服务的客户端 {Service}Client ，以初始化 Global 级服务 IAM 的 IamClient 为例
+# 初始化指定云服务的客户端 {Service}Client
+# 以初始化 Global 级服务 IAM 的 IamClient 为例
 client = IamClient.new_builder() \
     .with_http_config(config) \
     .with_credentials(global_credentials) \
@@ -448,7 +457,9 @@ SDK 提供 Access 级别的访问日志及 Debug 级别的原始 HTTP 监听器�
 
 #### 6.1 访问日志 [:top:](#用户手册-top)
 
-SDK 支持打印 Access 级别的访问日志，需要用户手动打开日志开关，支持打印到控制台或者指定的文件。示例如下：
+SDK 支持打印 Access 级别的访问日志，需要用户手动打开日志开关，支持打印到控制台或者指定的文件。
+
+初始化指定服务的客户端实例，以 VpcClient 为例：
 
 ``` python
 client = VpcClient.new_builder() \

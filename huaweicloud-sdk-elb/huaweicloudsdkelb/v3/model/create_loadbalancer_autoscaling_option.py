@@ -22,39 +22,32 @@ class CreateLoadbalancerAutoscalingOption:
 
     openapi_types = {
         'enable': 'bool',
-        'min_l4_flavor_id': 'str',
         'min_l7_flavor_id': 'str'
     }
 
     attribute_map = {
         'enable': 'enable',
-        'min_l4_flavor_id': 'min_l4_flavor_id',
         'min_l7_flavor_id': 'min_l7_flavor_id'
     }
 
-    def __init__(self, enable=None, min_l4_flavor_id=None, min_l7_flavor_id=None):
+    def __init__(self, enable=None, min_l7_flavor_id=None):
         """CreateLoadbalancerAutoscalingOption
 
         The model defined in huaweicloud sdk
 
-        :param enable: 当前负载均衡器是否开启弹性扩缩容。 取值： - true：开启。 - false：不开启。
+        :param enable: 负载均衡器弹性扩缩容开关
         :type enable: bool
-        :param min_l4_flavor_id: 弹性扩缩容的最小四层规格ID，有四层监听器时，该字段不能为空。
-        :type min_l4_flavor_id: str
-        :param min_l7_flavor_id: 弹性扩缩容的最小七层规格ID，有七层监听器时，该字段不能为空。
+        :param min_l7_flavor_id: 弹性扩缩容的最小七层规格ID，类型为L7_Elastic，有七层监听器时，该字段不能为空。
         :type min_l7_flavor_id: str
         """
         
         
 
         self._enable = None
-        self._min_l4_flavor_id = None
         self._min_l7_flavor_id = None
         self.discriminator = None
 
         self.enable = enable
-        if min_l4_flavor_id is not None:
-            self.min_l4_flavor_id = min_l4_flavor_id
         if min_l7_flavor_id is not None:
             self.min_l7_flavor_id = min_l7_flavor_id
 
@@ -62,7 +55,7 @@ class CreateLoadbalancerAutoscalingOption:
     def enable(self):
         """Gets the enable of this CreateLoadbalancerAutoscalingOption.
 
-        当前负载均衡器是否开启弹性扩缩容。 取值： - true：开启。 - false：不开启。
+        负载均衡器弹性扩缩容开关
 
         :return: The enable of this CreateLoadbalancerAutoscalingOption.
         :rtype: bool
@@ -73,7 +66,7 @@ class CreateLoadbalancerAutoscalingOption:
     def enable(self, enable):
         """Sets the enable of this CreateLoadbalancerAutoscalingOption.
 
-        当前负载均衡器是否开启弹性扩缩容。 取值： - true：开启。 - false：不开启。
+        负载均衡器弹性扩缩容开关
 
         :param enable: The enable of this CreateLoadbalancerAutoscalingOption.
         :type enable: bool
@@ -81,32 +74,10 @@ class CreateLoadbalancerAutoscalingOption:
         self._enable = enable
 
     @property
-    def min_l4_flavor_id(self):
-        """Gets the min_l4_flavor_id of this CreateLoadbalancerAutoscalingOption.
-
-        弹性扩缩容的最小四层规格ID，有四层监听器时，该字段不能为空。
-
-        :return: The min_l4_flavor_id of this CreateLoadbalancerAutoscalingOption.
-        :rtype: str
-        """
-        return self._min_l4_flavor_id
-
-    @min_l4_flavor_id.setter
-    def min_l4_flavor_id(self, min_l4_flavor_id):
-        """Sets the min_l4_flavor_id of this CreateLoadbalancerAutoscalingOption.
-
-        弹性扩缩容的最小四层规格ID，有四层监听器时，该字段不能为空。
-
-        :param min_l4_flavor_id: The min_l4_flavor_id of this CreateLoadbalancerAutoscalingOption.
-        :type min_l4_flavor_id: str
-        """
-        self._min_l4_flavor_id = min_l4_flavor_id
-
-    @property
     def min_l7_flavor_id(self):
         """Gets the min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
 
-        弹性扩缩容的最小七层规格ID，有七层监听器时，该字段不能为空。
+        弹性扩缩容的最小七层规格ID，类型为L7_Elastic，有七层监听器时，该字段不能为空。
 
         :return: The min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
         :rtype: str
@@ -117,7 +88,7 @@ class CreateLoadbalancerAutoscalingOption:
     def min_l7_flavor_id(self, min_l7_flavor_id):
         """Sets the min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
 
-        弹性扩缩容的最小七层规格ID，有七层监听器时，该字段不能为空。
+        弹性扩缩容的最小七层规格ID，类型为L7_Elastic，有七层监听器时，该字段不能为空。
 
         :param min_l7_flavor_id: The min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
         :type min_l7_flavor_id: str

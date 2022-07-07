@@ -45,11 +45,11 @@ class CreateClusterBackupStrategyBody:
 
         :param period: 每天自动创建快照的时间点。只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
         :type period: str
-        :param prefix: 自动创建的快照的前缀。
+        :param prefix: 自动创建的快照的前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
         :type prefix: str
         :param keepday: 自动创建快照的保留天数。取值范围：1-90。
         :type keepday: int
-        :param bucket: 备份使用的OBS桶名称，如果桶已经存放快照数据了，不可更改。
+        :param bucket: 备份使用的OBS桶名称。
         :type bucket: str
         :param base_path: 快照在OBS桶中的存放路径。
         :type base_path: str
@@ -103,7 +103,7 @@ class CreateClusterBackupStrategyBody:
     def prefix(self):
         """Gets the prefix of this CreateClusterBackupStrategyBody.
 
-        自动创建的快照的前缀。
+        自动创建的快照的前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
 
         :return: The prefix of this CreateClusterBackupStrategyBody.
         :rtype: str
@@ -114,7 +114,7 @@ class CreateClusterBackupStrategyBody:
     def prefix(self, prefix):
         """Sets the prefix of this CreateClusterBackupStrategyBody.
 
-        自动创建的快照的前缀。
+        自动创建的快照的前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
 
         :param prefix: The prefix of this CreateClusterBackupStrategyBody.
         :type prefix: str
@@ -147,7 +147,7 @@ class CreateClusterBackupStrategyBody:
     def bucket(self):
         """Gets the bucket of this CreateClusterBackupStrategyBody.
 
-        备份使用的OBS桶名称，如果桶已经存放快照数据了，不可更改。
+        备份使用的OBS桶名称。
 
         :return: The bucket of this CreateClusterBackupStrategyBody.
         :rtype: str
@@ -158,7 +158,7 @@ class CreateClusterBackupStrategyBody:
     def bucket(self, bucket):
         """Sets the bucket of this CreateClusterBackupStrategyBody.
 
-        备份使用的OBS桶名称，如果桶已经存放快照数据了，不可更改。
+        备份使用的OBS桶名称。
 
         :param bucket: The bucket of this CreateClusterBackupStrategyBody.
         :type bucket: str

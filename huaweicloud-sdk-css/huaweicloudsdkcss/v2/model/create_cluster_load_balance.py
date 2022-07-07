@@ -35,7 +35,7 @@ class CreateClusterLoadBalance:
 
         The model defined in huaweicloud sdk
 
-        :param endpoint_with_dns_name: 是否开启内网域名。
+        :param endpoint_with_dns_name: 是否开启内网域名。 - true： 开启内网域名。 - false： 关闭内网域名。
         :type endpoint_with_dns_name: bool
         :param vpc_permisssions: 访问控制。
         :type vpc_permisssions: list[str]
@@ -55,7 +55,7 @@ class CreateClusterLoadBalance:
     def endpoint_with_dns_name(self):
         """Gets the endpoint_with_dns_name of this CreateClusterLoadBalance.
 
-        是否开启内网域名。
+        是否开启内网域名。 - true： 开启内网域名。 - false： 关闭内网域名。
 
         :return: The endpoint_with_dns_name of this CreateClusterLoadBalance.
         :rtype: bool
@@ -66,7 +66,7 @@ class CreateClusterLoadBalance:
     def endpoint_with_dns_name(self, endpoint_with_dns_name):
         """Sets the endpoint_with_dns_name of this CreateClusterLoadBalance.
 
-        是否开启内网域名。
+        是否开启内网域名。 - true： 开启内网域名。 - false： 关闭内网域名。
 
         :param endpoint_with_dns_name: The endpoint_with_dns_name of this CreateClusterLoadBalance.
         :type endpoint_with_dns_name: bool

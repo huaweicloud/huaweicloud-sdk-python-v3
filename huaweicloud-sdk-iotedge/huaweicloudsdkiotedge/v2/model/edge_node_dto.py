@@ -55,7 +55,7 @@ class EdgeNodeDTO:
         :type edge_node_id: str
         :param name: 边缘节点名称
         :type name: str
-        :param state: 边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|UPGRADING
+        :param state: 边缘节点状态 UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|FROZEN
         :type state: str
         :param instance_id: 实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
         :type instance_id: str
@@ -156,7 +156,7 @@ class EdgeNodeDTO:
     def state(self):
         """Gets the state of this EdgeNodeDTO.
 
-        边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|UPGRADING
+        边缘节点状态 UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|FROZEN
 
         :return: The state of this EdgeNodeDTO.
         :rtype: str
@@ -167,7 +167,7 @@ class EdgeNodeDTO:
     def state(self, state):
         """Sets the state of this EdgeNodeDTO.
 
-        边缘节点状态UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|UPGRADING
+        边缘节点状态 UNINSTALLED|INSTALLED|OFFLINE|ONLINE|DELETING|FROZEN
 
         :param state: The state of this EdgeNodeDTO.
         :type state: str
