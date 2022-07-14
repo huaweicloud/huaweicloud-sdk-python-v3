@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CsvMappings:
+class DeleteDemoInfoResponse(SdkResponse):
 
     """
     Attributes:
@@ -21,78 +21,51 @@ class CsvMappings:
     sensitive_list = []
 
     openapi_types = {
-        'column_name': 'str',
-        'json_key': 'str'
+        'result': 'str'
     }
 
     attribute_map = {
-        'column_name': 'column_name',
-        'json_key': 'json_key'
+        'result': 'result'
     }
 
-    def __init__(self, column_name=None, json_key=None):
-        """CsvMappings
+    def __init__(self, result=None):
+        """DeleteDemoInfoResponse
 
         The model defined in huaweicloud sdk
 
-        :param column_name: **参数说明**：OBS文件中的列名
-        :type column_name: str
-        :param json_key: **参数说明**：流转数据的属性名
-        :type json_key: str
+        :param result: 返回结果
+        :type result: str
         """
         
-        
+        super(DeleteDemoInfoResponse, self).__init__()
 
-        self._column_name = None
-        self._json_key = None
+        self._result = None
         self.discriminator = None
 
-        self.column_name = column_name
-        self.json_key = json_key
+        if result is not None:
+            self.result = result
 
     @property
-    def column_name(self):
-        """Gets the column_name of this CsvMappings.
+    def result(self):
+        """Gets the result of this DeleteDemoInfoResponse.
 
-        **参数说明**：OBS文件中的列名
+        返回结果
 
-        :return: The column_name of this CsvMappings.
+        :return: The result of this DeleteDemoInfoResponse.
         :rtype: str
         """
-        return self._column_name
+        return self._result
 
-    @column_name.setter
-    def column_name(self, column_name):
-        """Sets the column_name of this CsvMappings.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this DeleteDemoInfoResponse.
 
-        **参数说明**：OBS文件中的列名
+        返回结果
 
-        :param column_name: The column_name of this CsvMappings.
-        :type column_name: str
+        :param result: The result of this DeleteDemoInfoResponse.
+        :type result: str
         """
-        self._column_name = column_name
-
-    @property
-    def json_key(self):
-        """Gets the json_key of this CsvMappings.
-
-        **参数说明**：流转数据的属性名
-
-        :return: The json_key of this CsvMappings.
-        :rtype: str
-        """
-        return self._json_key
-
-    @json_key.setter
-    def json_key(self, json_key):
-        """Sets the json_key of this CsvMappings.
-
-        **参数说明**：流转数据的属性名
-
-        :param json_key: The json_key of this CsvMappings.
-        :type json_key: str
-        """
-        self._json_key = json_key
+        self._result = result
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -136,7 +109,7 @@ class CsvMappings:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CsvMappings):
+        if not isinstance(other, DeleteDemoInfoResponse):
             return False
 
         return self.__dict__ == other.__dict__

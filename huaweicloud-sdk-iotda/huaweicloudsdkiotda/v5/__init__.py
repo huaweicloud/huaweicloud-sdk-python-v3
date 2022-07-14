@@ -65,7 +65,6 @@ from huaweicloudsdkiotda.v5.model.create_rule_action_request import CreateRuleAc
 from huaweicloudsdkiotda.v5.model.create_rule_action_response import CreateRuleActionResponse
 from huaweicloudsdkiotda.v5.model.create_rule_request import CreateRuleRequest
 from huaweicloudsdkiotda.v5.model.create_rule_response import CreateRuleResponse
-from huaweicloudsdkiotda.v5.model.csv_mappings import CsvMappings
 from huaweicloudsdkiotda.v5.model.daily_timer_type import DailyTimerType
 from huaweicloudsdkiotda.v5.model.delete_application_request import DeleteApplicationRequest
 from huaweicloudsdkiotda.v5.model.delete_application_response import DeleteApplicationResponse
@@ -98,7 +97,6 @@ from huaweicloudsdkiotda.v5.model.device_shadow_properties import DeviceShadowPr
 from huaweicloudsdkiotda.v5.model.dis_forwarding import DisForwarding
 from huaweicloudsdkiotda.v5.model.dms_kafka_forwarding import DmsKafkaForwarding
 from huaweicloudsdkiotda.v5.model.error_info import ErrorInfo
-from huaweicloudsdkiotda.v5.model.file_mapping import FileMapping
 from huaweicloudsdkiotda.v5.model.freeze_device_request import FreezeDeviceRequest
 from huaweicloudsdkiotda.v5.model.freeze_device_response import FreezeDeviceResponse
 from huaweicloudsdkiotda.v5.model.http_forwarding import HttpForwarding

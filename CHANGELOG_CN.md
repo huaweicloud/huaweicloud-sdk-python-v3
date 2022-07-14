@@ -1,3 +1,92 @@
+# 3.0.98 2022-07-14
+
+### HuaweiCloud SDK Core
+
+- _新增特性_
+  - 支持联邦认证
+  - 支持认证信息管理
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VCM
+
+- _新增特性_
+  - 支持视频内容审核服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCustomerBillsMonthlyBreakDown`新增响应参数 `effective_tag_pairs`、`cost_unit_pairs`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateDomainFullConfig`新增请求参数 `tls_version`
+  - 接口`ShowDomainFullConfig`新增响应参数 `tls_version`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowInstance`新增响应参数 `tags`、`cpu_type`
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListPublicips`响应参数`create_time`类型调整 `date-time` -> `string`
+  - 接口`ShowPublicip`响应参数`create_time`类型调整 `date-time` -> `string`
+
+### HuaweiCloud SDK Image
+
+- _新增特性_
+  - 支持接口`RunImageMediaTagging`、`RunImageMainObjectDetection`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListPorts`新增响应参数 `port_filter`、`ovs_hybrid_plug`
+  - 接口`UpdatePort`新增响应参数 `port_filter`、`ovs_hybrid_plug`
+  - 接口`ShowPort`新增响应参数 `port_filter`、`ovs_hybrid_plug`
+  - 接口`CreateSecurityGroup`新增响应参数 `remote_address_group_id`
+  - 接口`ListSecurityGroups`新增响应参数 `remote_address_group_id`
+  - 接口`ShowSecurityGroup`新增响应参数 `remote_address_group_id`
+  - 接口`ListSecurityGroupRules`新增响应参数 `remote_address_group_id`
+  - 接口`ShowSecurityGroupRule`新增响应参数 `remote_address_group_id`
+  - 接口`NeutronListSecurityGroups`新增响应参数 `remote_address_group_id`
+  - 接口`NeutronUpdateSecurityGroup`新增响应参数 `remote_address_group_id`
+  - 接口`NeutronShowSecurityGroup`新增响应参数 `remote_address_group_id`
+  - 接口`NeutronListSecurityGroupRules`新增响应参数 `remote_address_group_id`
+  - 接口`NeutronShowSecurityGroupRule`新增响应参数 `remote_address_group_id`
+
 # 3.0.97 2022-07-07
 
 ### HuaweiCloud SDK APM

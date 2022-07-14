@@ -25,8 +25,7 @@ class ObsForwarding:
         'project_id': 'str',
         'bucket_name': 'str',
         'location': 'str',
-        'file_path': 'str',
-        'file_mapping': 'FileMapping'
+        'file_path': 'str'
     }
 
     attribute_map = {
@@ -34,11 +33,10 @@ class ObsForwarding:
         'project_id': 'project_id',
         'bucket_name': 'bucket_name',
         'location': 'location',
-        'file_path': 'file_path',
-        'file_mapping': 'file_mapping'
+        'file_path': 'file_path'
     }
 
-    def __init__(self, region_name=None, project_id=None, bucket_name=None, location=None, file_path=None, file_mapping=None):
+    def __init__(self, region_name=None, project_id=None, bucket_name=None, location=None, file_path=None):
         """ObsForwarding
 
         The model defined in huaweicloud sdk
@@ -53,8 +51,6 @@ class ObsForwarding:
         :type location: str
         :param file_path: **参数说明**：OBS服务中存储通道文件的自定义目录,多级目录可用(/)进行分隔，不可以斜杠(/)开头或结尾，不能包含两个以上相邻的斜杠(/) **取值范围**: 英文字母(a-zA-Z)、数字(0-9)、下划线(_)、中划线(-)、斜杠(/)和大括号({})，最大字符长度256个字符。其中大括号只能用于对应模板参数。 **模板参数**:    - \\{YYYY\\} 年   - \\{MM\\} 月   - \\{DD\\} 日   - \\{HH\\} 小时   - \\{appId\\} 应用ID   - \\{deviceId\\} 设备ID   例如:自定义目录结构为\\{YYYY\\}/\\{MM\\}/\\{DD\\}/\\{HH\\},则会在转发数据时，根据当前时间往对应的目录结构2021&gt;08&gt;11&gt;09下生成对应的数据。 
         :type file_path: str
-        :param file_mapping: 
-        :type file_mapping: :class:`huaweicloudsdkiotda.v5.FileMapping`
         """
         
         
@@ -64,7 +60,6 @@ class ObsForwarding:
         self._bucket_name = None
         self._location = None
         self._file_path = None
-        self._file_mapping = None
         self.discriminator = None
 
         self.region_name = region_name
@@ -74,8 +69,6 @@ class ObsForwarding:
             self.location = location
         if file_path is not None:
             self.file_path = file_path
-        if file_mapping is not None:
-            self.file_mapping = file_mapping
 
     @property
     def region_name(self):
@@ -186,26 +179,6 @@ class ObsForwarding:
         :type file_path: str
         """
         self._file_path = file_path
-
-    @property
-    def file_mapping(self):
-        """Gets the file_mapping of this ObsForwarding.
-
-
-        :return: The file_mapping of this ObsForwarding.
-        :rtype: :class:`huaweicloudsdkiotda.v5.FileMapping`
-        """
-        return self._file_mapping
-
-    @file_mapping.setter
-    def file_mapping(self, file_mapping):
-        """Sets the file_mapping of this ObsForwarding.
-
-
-        :param file_mapping: The file_mapping of this ObsForwarding.
-        :type file_mapping: :class:`huaweicloudsdkiotda.v5.FileMapping`
-        """
-        self._file_mapping = file_mapping
 
     def to_dict(self):
         """Returns the model properties as a dict"""

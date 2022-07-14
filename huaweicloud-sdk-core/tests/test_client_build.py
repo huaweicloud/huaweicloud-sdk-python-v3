@@ -53,7 +53,7 @@ def test_build_client_by_client_builder():
     assert client.get_credentials().sk == "my sk"
 
     assert isinstance(client.get_http_client(), HttpClient)
-    assert client.get_http_client()._timeout == (3, 10)
+    assert client.get_http_client()._timeout == (60, 120)
     assert client.get_http_client()._verify is False
 
 

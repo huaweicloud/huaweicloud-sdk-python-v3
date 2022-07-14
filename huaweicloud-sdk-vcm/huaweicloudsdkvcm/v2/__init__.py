@@ -1,0 +1,55 @@
+# coding: utf-8
+
+from __future__ import absolute_import
+
+# import VcmClient
+from huaweicloudsdkvcm.v2.vcm_client import VcmClient
+from huaweicloudsdkvcm.v2.vcm_async_client import VcmAsyncClient
+# import models into sdk package
+from huaweicloudsdkvcm.v2.model.audio_input_data import AudioInputData
+from huaweicloudsdkvcm.v2.model.audio_output import AudioOutput
+from huaweicloudsdkvcm.v2.model.audio_output_hosting import AudioOutputHosting
+from huaweicloudsdkvcm.v2.model.audio_output_hosting_obs import AudioOutputHostingObs
+from huaweicloudsdkvcm.v2.model.audio_output_obs import AudioOutputObs
+from huaweicloudsdkvcm.v2.model.audio_response_output import AudioResponseOutput
+from huaweicloudsdkvcm.v2.model.audio_response_output_hosting import AudioResponseOutputHosting
+from huaweicloudsdkvcm.v2.model.audio_service_config import AudioServiceConfig
+from huaweicloudsdkvcm.v2.model.audio_service_config_common import AudioServiceConfigCommon
+from huaweicloudsdkvcm.v2.model.check_audio_job_request import CheckAudioJobRequest
+from huaweicloudsdkvcm.v2.model.check_audio_job_response import CheckAudioJobResponse
+from huaweicloudsdkvcm.v2.model.check_audio_job_response_body import CheckAudioJobResponseBody
+from huaweicloudsdkvcm.v2.model.check_audio_job_response_body_input import CheckAudioJobResponseBodyInput
+from huaweicloudsdkvcm.v2.model.check_video_job_request import CheckVideoJobRequest
+from huaweicloudsdkvcm.v2.model.check_video_job_response import CheckVideoJobResponse
+from huaweicloudsdkvcm.v2.model.create_audio_job_request import CreateAudioJobRequest
+from huaweicloudsdkvcm.v2.model.create_audio_job_request_body import CreateAudioJobRequestBody
+from huaweicloudsdkvcm.v2.model.create_audio_job_request_body_input import CreateAudioJobRequestBodyInput
+from huaweicloudsdkvcm.v2.model.create_audio_job_response import CreateAudioJobResponse
+from huaweicloudsdkvcm.v2.model.create_audio_job_response_body import CreateAudioJobResponseBody
+from huaweicloudsdkvcm.v2.model.create_video_job_req import CreateVideoJobReq
+from huaweicloudsdkvcm.v2.model.create_video_job_req_input import CreateVideoJobReqInput
+from huaweicloudsdkvcm.v2.model.create_video_job_request import CreateVideoJobRequest
+from huaweicloudsdkvcm.v2.model.create_video_job_response import CreateVideoJobResponse
+from huaweicloudsdkvcm.v2.model.create_video_job_response_body import CreateVideoJobResponseBody
+from huaweicloudsdkvcm.v2.model.delete_demo_info_request import DeleteDemoInfoRequest
+from huaweicloudsdkvcm.v2.model.delete_demo_info_response import DeleteDemoInfoResponse
+from huaweicloudsdkvcm.v2.model.delete_video_job_request import DeleteVideoJobRequest
+from huaweicloudsdkvcm.v2.model.delete_video_job_response import DeleteVideoJobResponse
+from huaweicloudsdkvcm.v2.model.input_data import InputData
+from huaweicloudsdkvcm.v2.model.input_vcn import InputVcn
+from huaweicloudsdkvcm.v2.model.list_audio_jobs_request import ListAudioJobsRequest
+from huaweicloudsdkvcm.v2.model.list_audio_jobs_response import ListAudioJobsResponse
+from huaweicloudsdkvcm.v2.model.list_video_jobs_request import ListVideoJobsRequest
+from huaweicloudsdkvcm.v2.model.list_video_jobs_response import ListVideoJobsResponse
+from huaweicloudsdkvcm.v2.model.output import Output
+from huaweicloudsdkvcm.v2.model.output_dis import OutputDis
+from huaweicloudsdkvcm.v2.model.output_hosting import OutputHosting
+from huaweicloudsdkvcm.v2.model.output_hosting_obs import OutputHostingObs
+from huaweicloudsdkvcm.v2.model.output_localpath import OutputLocalpath
+from huaweicloudsdkvcm.v2.model.output_obs import OutputObs
+from huaweicloudsdkvcm.v2.model.output_webhook import OutputWebhook
+from huaweicloudsdkvcm.v2.model.service_config import ServiceConfig
+from huaweicloudsdkvcm.v2.model.service_config_common import ServiceConfigCommon
+from huaweicloudsdkvcm.v2.model.video_job_response import VideoJobResponse
+from huaweicloudsdkvcm.v2.model.video_job_response_hosting_result import VideoJobResponseHostingResult
+

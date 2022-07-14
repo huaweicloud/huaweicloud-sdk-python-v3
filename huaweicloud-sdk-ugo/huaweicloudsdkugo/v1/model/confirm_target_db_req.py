@@ -37,11 +37,11 @@ class ConfirmTargetDBReq:
 
         The model defined in huaweicloud sdk
 
-        :param evaluation_project_id: 项目ID。
+        :param evaluation_project_id: 评估项目ID。
         :type evaluation_project_id: str
-        :param target_db_type: 目标库类型。
+        :param target_db_type: 目标数据库类型。
         :type target_db_type: str
-        :param target_db_version: 目标库版本。
+        :param target_db_version: 目标数据库版本。
         :type target_db_version: str
         """
         
@@ -60,7 +60,7 @@ class ConfirmTargetDBReq:
     def evaluation_project_id(self):
         """Gets the evaluation_project_id of this ConfirmTargetDBReq.
 
-        项目ID。
+        评估项目ID。
 
         :return: The evaluation_project_id of this ConfirmTargetDBReq.
         :rtype: str
@@ -71,7 +71,7 @@ class ConfirmTargetDBReq:
     def evaluation_project_id(self, evaluation_project_id):
         """Sets the evaluation_project_id of this ConfirmTargetDBReq.
 
-        项目ID。
+        评估项目ID。
 
         :param evaluation_project_id: The evaluation_project_id of this ConfirmTargetDBReq.
         :type evaluation_project_id: str
@@ -82,7 +82,7 @@ class ConfirmTargetDBReq:
     def target_db_type(self):
         """Gets the target_db_type of this ConfirmTargetDBReq.
 
-        目标库类型。
+        目标数据库类型。
 
         :return: The target_db_type of this ConfirmTargetDBReq.
         :rtype: str
@@ -93,7 +93,7 @@ class ConfirmTargetDBReq:
     def target_db_type(self, target_db_type):
         """Sets the target_db_type of this ConfirmTargetDBReq.
 
-        目标库类型。
+        目标数据库类型。
 
         :param target_db_type: The target_db_type of this ConfirmTargetDBReq.
         :type target_db_type: str
@@ -104,7 +104,7 @@ class ConfirmTargetDBReq:
     def target_db_version(self):
         """Gets the target_db_version of this ConfirmTargetDBReq.
 
-        目标库版本。
+        目标数据库版本。
 
         :return: The target_db_version of this ConfirmTargetDBReq.
         :rtype: str
@@ -115,7 +115,7 @@ class ConfirmTargetDBReq:
     def target_db_version(self, target_db_version):
         """Sets the target_db_version of this ConfirmTargetDBReq.
 
-        目标库版本。
+        目标数据库版本。
 
         :param target_db_version: The target_db_version of this ConfirmTargetDBReq.
         :type target_db_version: str

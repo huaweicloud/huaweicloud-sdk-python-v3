@@ -30,6 +30,7 @@ class NeutronSecurityGroupRule:
         'protocol': 'str',
         'remote_group_id': 'str',
         'remote_ip_prefix': 'str',
+        'remote_address_group_id': 'str',
         'security_group_id': 'str',
         'tenant_id': 'str',
         'project_id': 'str',
@@ -47,6 +48,7 @@ class NeutronSecurityGroupRule:
         'protocol': 'protocol',
         'remote_group_id': 'remote_group_id',
         'remote_ip_prefix': 'remote_ip_prefix',
+        'remote_address_group_id': 'remote_address_group_id',
         'security_group_id': 'security_group_id',
         'tenant_id': 'tenant_id',
         'project_id': 'project_id',
@@ -54,7 +56,7 @@ class NeutronSecurityGroupRule:
         'updated_at': 'updated_at'
     }
 
-    def __init__(self, description=None, direction=None, ethertype=None, id=None, port_range_max=None, port_range_min=None, protocol=None, remote_group_id=None, remote_ip_prefix=None, security_group_id=None, tenant_id=None, project_id=None, created_at=None, updated_at=None):
+    def __init__(self, description=None, direction=None, ethertype=None, id=None, port_range_max=None, port_range_min=None, protocol=None, remote_group_id=None, remote_ip_prefix=None, remote_address_group_id=None, security_group_id=None, tenant_id=None, project_id=None, created_at=None, updated_at=None):
         """NeutronSecurityGroupRule
 
         The model defined in huaweicloud sdk
@@ -77,6 +79,8 @@ class NeutronSecurityGroupRule:
         :type remote_group_id: str
         :param remote_ip_prefix: 对端ip网段
         :type remote_ip_prefix: str
+        :param remote_address_group_id: 功能说明：远端IP地址组ID 约束：和remote_ip_prefix，remote_group_id互斥
+        :type remote_address_group_id: str
         :param security_group_id: 所属安全组ID
         :type security_group_id: str
         :param tenant_id: 项目ID
@@ -100,6 +104,7 @@ class NeutronSecurityGroupRule:
         self._protocol = None
         self._remote_group_id = None
         self._remote_ip_prefix = None
+        self._remote_address_group_id = None
         self._security_group_id = None
         self._tenant_id = None
         self._project_id = None
@@ -116,6 +121,8 @@ class NeutronSecurityGroupRule:
         self.protocol = protocol
         self.remote_group_id = remote_group_id
         self.remote_ip_prefix = remote_ip_prefix
+        if remote_address_group_id is not None:
+            self.remote_address_group_id = remote_address_group_id
         self.security_group_id = security_group_id
         self.tenant_id = tenant_id
         self.project_id = project_id
@@ -319,6 +326,28 @@ class NeutronSecurityGroupRule:
         :type remote_ip_prefix: str
         """
         self._remote_ip_prefix = remote_ip_prefix
+
+    @property
+    def remote_address_group_id(self):
+        """Gets the remote_address_group_id of this NeutronSecurityGroupRule.
+
+        功能说明：远端IP地址组ID 约束：和remote_ip_prefix，remote_group_id互斥
+
+        :return: The remote_address_group_id of this NeutronSecurityGroupRule.
+        :rtype: str
+        """
+        return self._remote_address_group_id
+
+    @remote_address_group_id.setter
+    def remote_address_group_id(self, remote_address_group_id):
+        """Sets the remote_address_group_id of this NeutronSecurityGroupRule.
+
+        功能说明：远端IP地址组ID 约束：和remote_ip_prefix，remote_group_id互斥
+
+        :param remote_address_group_id: The remote_address_group_id of this NeutronSecurityGroupRule.
+        :type remote_address_group_id: str
+        """
+        self._remote_address_group_id = remote_address_group_id
 
     @property
     def security_group_id(self):

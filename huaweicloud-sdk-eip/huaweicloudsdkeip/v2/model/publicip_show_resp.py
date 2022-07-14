@@ -25,7 +25,7 @@ class PublicipShowResp:
         'bandwidth_name': 'str',
         'bandwidth_share_type': 'str',
         'bandwidth_size': 'int',
-        'create_time': 'datetime',
+        'create_time': 'str',
         'enterprise_project_id': 'str',
         'id': 'str',
         'port_id': 'str',
@@ -78,7 +78,7 @@ class PublicipShowResp:
         :param bandwidth_size: 带宽大小，单位为Mbit/s。
         :type bandwidth_size: int
         :param create_time: 弹性公网IP申请时间（UTC）
-        :type create_time: datetime
+        :type create_time: str
         :param enterprise_project_id: 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。  创建弹性公网IP时，给弹性公网IP绑定企业项目ID。
         :type enterprise_project_id: str
         :param id: 弹性公网IP唯一标识
@@ -266,7 +266,7 @@ class PublicipShowResp:
         弹性公网IP申请时间（UTC）
 
         :return: The create_time of this PublicipShowResp.
-        :rtype: datetime
+        :rtype: str
         """
         return self._create_time
 
@@ -277,7 +277,7 @@ class PublicipShowResp:
         弹性公网IP申请时间（UTC）
 
         :param create_time: The create_time of this PublicipShowResp.
-        :type create_time: datetime
+        :type create_time: str
         """
         self._create_time = create_time
 

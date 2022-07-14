@@ -32,14 +32,14 @@ Take using VPC SDK for example, you need to install `huaweicloudsdkvpc` library:
 
 - Use python pip
 
-``` bash
+```bash
 # Install the VPC management library
 pip install huaweicloudsdkvpc
 ```
 
 - Install from source code
 
-``` bash
+```bash
 # Install the VPC management library
 cd huaweicloudsdkvpc-${version}
 python setup.py install
@@ -51,13 +51,13 @@ You can install `huaweicloudsdkall`, which will install all SDK supported servic
 
 - Use python pip
 
-``` bash
+```bash
 pip install huaweicloudsdkall
 ```
 
 - Install from source code
 
-``` bash
+```bash
 cd huaweicloudsdkall-${version}
 python setup.py install
 ```
@@ -68,7 +68,7 @@ python setup.py install
   real `{Service}Client` for `VpcClient` in actual use.
 - Substitute the values for `{your ak string}`, `{your sk string}`, `{your endpoint string}` and `{your project id}`.
 
-``` python
+```python
 # coding: utf-8
 
 
@@ -129,6 +129,12 @@ the [CHANGELOG.md](https://github.com/huaweicloud/huaweicloud-sdk-python-v3/blob
 * [2. Credentials Configuration](#2-credentials-configuration-top)
     * [2.1 Use Permanent AK&SK](#21-use-permanent-aksk-top)
     * [2.2 Use Temporary AK&SK](#22-use-temporary-aksk-top)
+    * [2.3 Use IdpId&IdTokenFile](#23-use-idpididtokenfile-top)
+    * [2.4 Authentication Management](#24-authentication-management-top)
+      * [2.4.1 Environment Variables](#241-environment-variables-top)
+	  * [2.4.2 Profile](#242-profile-top)
+	  * [2.4.3 Metadata](#243-metadata-top)
+	  * [2.4.4 Provider Chain](#244-provider-chain-top)
 * [3. Client Initialization](#3-client-initialization-top)
     * [3.1 Initialize the client with specified Endpoint](#31-initialize-the-serviceclient-with-specified-endpoint-top)
     * [3.2 Initialize the client with specified Region (Recommended)](#32-initialize-the-serviceclient-with-specified-region-recommended-top)
@@ -148,7 +154,7 @@ the [CHANGELOG.md](https://github.com/huaweicloud/huaweicloud-sdk-python-v3/blob
 
 #### 1.1 Default Configuration [:top:](#user-manual-top)
 
-``` python
+```python
 from huaweicloudsdkcore.http.http_config import HttpConfig
 
 #  Use default configuration
@@ -157,7 +163,7 @@ config = HttpConfig.get_default_config()
 
 #### 1.2 Network Proxy [:top:](#user-manual-top)
 
-``` python
+```python
 # Use Proxy if needed
 config.proxy_protocol = 'http'
 config.proxy_host = 'proxy.huaweicloud.com'
@@ -168,7 +174,7 @@ config.proxy_password = 'password'
 
 #### 1.3 Timeout Configuration [:top:](#user-manual-top)
 
-``` python
+```python
 # The default connection timeout is 60 seconds, the default read timeout is 120 seconds
 # Set the connection timeout and read timeout to 120 seconds
 config.timeout = 120
@@ -178,7 +184,7 @@ config.timeout = (60, 120)
 
 #### 1.4 SSL Certification [:top:](#user-manual-top)
 
-``` python
+```python
 # Skip SSL certifaction checking while using https protocol if needed
 config.ignore_ssl_verification = True
 # Configure the server's CA certificate for the SDK to verify the legitimacy of the server
@@ -191,9 +197,17 @@ There are two types of Huawei Cloud services, `regional` services and `global` s
 
 Global services contain BSS, DevStar, EPS, IAM, RMS, TMS.
 
-For `regional` services' authentication, projectId is required to initialize BasicCredentials. 
+For `regional` services' authentication, projectId is required to initialize BasicCredentials.
 
 For `global` services' authentication, domainId is required to initialize GlobalCredentials.
+
+The following authentications are supported:
+
+- permanent AK&SK
+- temporary AK&SK + SecurityToken
+- IdpId&IdTokenFile
+
+#### 2.1 Use Permanent AK&SK [:top:](#user-manual-top)
 
 **Parameter description**:
 
@@ -201,11 +215,8 @@ For `global` services' authentication, domainId is required to initialize Global
 - `sk` is the secret access key for your account.
 - `project_id` is the ID of your project depending on your region which you want to operate.
 - `domain_id` is the account ID of Huawei Cloud.
-- `security_token` is the security token when using temporary AK/SK.
 
-#### 2.1 Use Permanent AK&SK [:top:](#user-manual-top)
-
-``` python
+```python
 # Regional services
 basic_credentials = BasicCredentials(ak, sk, project_id)
 
@@ -234,14 +245,263 @@ corresponds to the method of `CreateTemporaryAccessKeyByToken` in IAM SDK.
 document: https://support.huaweicloud.com/en-us/api-iam/iam_04_0101.html . The API mentioned in the document above
 corresponds to the method of `CreateTemporaryAccessKeyByAgency` in IAM SDK.
 
+**Parameter description**:
+
+- `ak` is the access key ID for your account.
+- `sk` is the secret access key for your account.
+- `security_token` is the security token when using temporary AK/SK.
+- `project_id` is the ID of your project depending on your region which you want to operate.
+- `domain_id` is the account ID of Huawei Cloud.
+
 After the temporary AK&SK&SecurityToken is successfully obtained, you can use the following example to initialize the authentication:
 
-``` python
+```python
 # Regional services
 basic_credentials = BasicCredentials(ak, sk, project_id).with_security_token(security_token)
 
 # Global services
 global_credentials = GlobalCredentials(ak, sk, domain_id).with_security_token(security_token)
+```
+
+#### 2.3 Use IdpId&IdTokenFile [:top:](#user-manual-top)
+
+Obtain a federated identity authentication token using an OpenID Connect ID token, refer to the [Obtaining a Token with an OpenID Connect ID Token](https://support.huaweicloud.com/intl/en-us/api-iam/iam_13_0605.html)
+
+**Parameter description**:
+
+- `idp_id` Identity provider ID.
+- `id_token_file` Id token file path. Id token is constructed by the enterprise IdP to carry the identity information of federated users.
+- `project_id` is the ID of your project depending on your region which you want to operate.
+- `domain_id` is the account ID of Huawei Cloud.
+
+```python
+from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
+
+# Regional service
+basic_cred = BasicCredentials() \
+    .with_idp_id(idp_id) \
+    .with_id_token_file(id_token_file) \
+    .with_project_id(project_id)
+
+# Global service
+global_cred = GlobalCredentials() \
+    .with_idp_id(idp_id) \
+    .with_id_token_file(id_token_file) \
+    .with_domain_id(domain_id)
+```
+
+#### 2.4 Authentication Management [:top:](#user-manual-top)
+
+Getting Authentication from providers is supported since `v3.0.98`
+
+**Regional services** use `XxxCredentialProvider.get_basic_credential_xxx_provider`
+
+**Global services** use `XxxCredentialProvider.get_global_credential_xxx_provider`
+
+##### 2.4.1 Environment Variables [:top:](#user-manual-top)
+
+**AK/SK Auth**
+
+| Environment Variables  |  Notice |
+| ------------ | ------------ |
+| HUAWEICLOUD_SDK_AK  | Required，AccessKey  |
+| HUAWEICLOUD_SDK_SK  |  Required，SecretKey |
+| HUAWEICLOUD_SDK_SECURITY_TOKEN  | Optional, this parameter needs to be specified when using temporary ak/sk  |
+| HUAWEICLOUD_SDK_PROJECT_ID  | Optional, used for regional services, required in multi-ProjectId scenarios  |
+| HUAWEICLOUD_SDK_DOMAIN_ID  | Optional, used for global services  |
+
+Configure environment variables:
+
+```
+// Linux
+export HUAWEICLOUD_SDK_AK=YOUR_AK
+export HUAWEICLOUD_SDK_SK=YOUR_SK
+
+// Windows
+set HUAWEICLOUD_SDK_AK=YOUR_AK
+set HUAWEICLOUD_SDK_SK=YOUR_SK
+```
+
+Get the credentials from configured environment variables:
+
+```python
+from huaweicloudsdkcore.auth.provider import EnvCredentialProvider
+
+# basic
+basic_provider = EnvCredentialProvider.get_basic_credential_env_provider()
+basic_cred = basic_provider.get_credentials()
+
+# global
+global_provider = EnvCredentialProvider.get_global_credential_env_provider()
+global_cred = global_provider.get_credentials()
+```
+
+**IdpId/IdTokenFile Auth**
+
+| Environment Variables  |  Notice |
+| ------------ | ------------ |
+| HUAWEICLOUD_SDK_IDP_ID  | Required, identity provider Id |
+| HUAWEICLOUD_SDK_ID_TOKEN_FILE  |  Required, id token file path |
+| HUAWEICLOUD_SDK_PROJECT_ID  | For basic credentials, this parameter is required  |
+| HUAWEICLOUD_SDK_DOMAIN_ID  | For global credentials, this parameter is required  |
+
+Configure environment variables:
+
+```
+// Linux
+export HUAWEICLOUD_SDK_IDP_ID=YOUR_IDP_ID
+export HUAWEICLOUD_SDK_ID_TOKEN_FILE=/some_path/your_token_file
+export HUAWEICLOUD_SDK_PROJECT_ID=YOUR_PROJECT_ID // For basic credentials, this parameter is required
+export HUAWEICLOUD_SDK_DOMAIN_ID=YOUR_DOMAIN_ID // For global credentials, this parameter is required
+
+// Windows
+set HUAWEICLOUD_SDK_IDP_ID=YOUR_IDP_ID
+set HUAWEICLOUD_SDK_ID_TOKEN_FILE=/some_path/your_token_file
+set HUAWEICLOUD_SDK_PROJECT_ID=YOUR_PROJECT_ID // For basic credentials, this parameter is required
+set HUAWEICLOUD_SDK_DOMAIN_ID=YOUR_DOMAIN_ID // For global credentials, this parameter is required
+```
+
+Get the credentials from configured environment variables:
+
+```python
+from huaweicloudsdkcore.auth.provider import EnvCredentialProvider
+
+# basic
+basic_provider = EnvCredentialProvider.get_basic_credential_env_provider()
+basic_cred = basic_provider.get_credentials()
+
+# global
+global_provider = EnvCredentialProvider.get_global_credential_env_provider()
+global_cred = global_provider.get_credentials()
+```
+
+##### 2.4.2 Profile [:top:](#user-manual-top)
+
+The profile will be read from the user's home directory by default, linux`~/.huaweicloud/credentials`,windows`C:\Users\USER_NAME\.huaweicloud\credentials`, the path to the profile can be modified by configuring the environment variable `HUAWEICLOUD_SDK_CREDENTIALS_FILE`
+
+**AK/SK Auth**
+
+| Configuration Parameters  |  Notice |
+| ------------ | ------------ |
+| ak  | Required，AccessKey  |
+| sk  |  Required，SecretKey |
+| security_token  | Optional, this parameter needs to be specified when using temporary ak/sk  |
+| project_id  | Optional, used for regional services, required in multi-ProjectId scenarios  |
+| domain_id  | Optional, used for global services  |
+| iam_endpoint  | optional, endpoint for authentication, default is `https://iam.myhuaweicloud.com` |
+
+The content of the profile is as follows:
+
+```ini
+[basic]
+ak = your_ak
+sk = your_sk
+
+[global]
+ak = your_ak
+sk = your_sk
+```
+
+Get the credentials from profile:
+
+```python
+from huaweicloudsdkcore.auth.provider import ProfileCredentialProvider
+
+# basic
+basic_provider = ProfileCredentialProvider.get_basic_credential_profile_provider()
+basic_cred = basic_provider.get_credentials()
+
+# global
+global_provider = ProfileCredentialProvider.get_global_credential_profile_provider()
+global_cred = global_provider.get_credentials()
+```
+
+**IdpId/IdTokenFile Auth**
+
+| Configuration Parameters  |  Notice |
+| ------------ | ------------ |
+| idp_id  | Required, identity provider Id |
+| id_token_file  |  Required, id token file path |
+| project_id  | For basic credentials, this parameter is required  |
+| domain_id  | For global credentials, this parameter is required  |
+| iam_endpoint  | optional, endpoint for authentication, default is `https://iam.myhuaweicloud.com` |
+
+The content of the profile is as follows:
+
+```ini
+[basic]
+idp_id = your_idp_id
+id_token_file = /some_path/your_token_file
+project_id = your_project_id
+
+[global]
+idp_id = your_idp_id
+id_token_file = /some_path/your_token_file
+domainId = your_domain_id
+```
+
+Get the credentials from profile:
+
+```python
+from huaweicloudsdkcore.auth.provider import ProfileCredentialProvider
+
+# basic
+basic_provider = ProfileCredentialProvider.get_basic_credential_profile_provider()
+basic_cred = basic_provider.get_credentials()
+
+# global
+global_provider = ProfileCredentialProvider.get_global_credential_profile_provider()
+global_cred = global_provider.get_credentials()
+```
+
+##### 2.4.3 Metadata [:top:](#user-manual-top)
+
+Get temporary AK/SK and securitytoken from instance's metadata. Refer to the [Obtaining Metadata](https://support.huaweicloud.com/intl/en-us/usermanual-ecs/ecs_03_0166.html) for more information.
+
+Manually obtain authentication from instance metadata:
+
+```python
+from huaweicloudsdkcore.auth.provider import MetadataCredentialProvider
+
+# basic
+basic_provider = MetadataCredentialProvider.get_basic_credential_metadata_provider()
+basic_cred = basic_provider.get_credentials()
+
+# global
+global_provider = MetadataCredentialProvider.get_global_credential_metadata_provider()
+global_cred = global_provider.get_credentials()
+```
+
+##### 2.4.4 Provider Chain [:top:](#user-manual-top)
+
+When creating a service client without credentials, try to load authentication in the order **Environment Variables -> Profile -> Metadata**
+
+Get authentication from provider chain:
+
+```python
+from huaweicloudsdkcore.auth.provider import CredentialProviderChain
+
+# basic
+basic_chain = CredentialProviderChain.get_basic_credential_provider_chain()
+basic_cred = basic_chain.get_credentials()
+
+# global
+global_chain = CredentialProviderChain.get_global_credential_provider_chain()
+global_cred = global_chain.get_credentials()
+```
+
+Custom credentials provider chain is supported:
+
+```python
+from huaweicloudsdkcore.auth.provider import CredentialProviderChain, ProfileCredentialProvider, MetadataCredentialProvider
+
+providers = [
+    ProfileCredentialProvider.get_basic_credential_profile_provider(),
+    MetadataCredentialProvider.get_basic_credential_metadata_provider()
+]
+
+chain = CredentialProviderChain(providers)
+credentials = chain.get_credentials()
 ```
 
 ### 3. Client Initialization [:top:](#user-manual-top)
@@ -250,7 +510,7 @@ There are two ways to initialize the {Service}Client, you could choose one you p
 
 #### 3.1 Initialize the {Service}Client with specified Endpoint [:top:](#user-manual-top)
 
-``` python
+```python
 # Specify the endpoint, take the endpoint of VPC service in region of cn-north-4 for example
 endpoint = "https://vpc.cn-north-4.myhuaweicloud.com"
 
@@ -274,7 +534,7 @@ client = VpcClient.new_builder() \
 
 #### 3.2 Initialize the {Service}Client with specified Region **(Recommended)** [:top:](#user-manual-top)
 
-``` python
+```python
 # dependency for region module
 from huaweicloudsdkiam.v3.region.iam_region import IamRegion
 
@@ -393,7 +653,7 @@ region2 = EcsRegion.value_of("cn-north-11")
 
 ### 4. Send Requests and Handle Responses [:top:](#user-manual-top)
 
-``` python
+```python
 # Initialize a request and print response, take interface of ListVpcs for example
 request = ListVpcsRequest(limit=1)
 
@@ -412,7 +672,7 @@ print(response)
 | ServiceResponseException | service response error | ServerResponseException | server inner error, http status code: [500,] |
 | | | ClientRequestException | invalid request, http status code: [400? 500) |
 
-``` python
+```python
 # handle exceptions
 try:
     request = ListVpcsRequest(limit=1)
@@ -430,7 +690,7 @@ except exception.ServiceResponseException as e:
 The default response format of each request is `json string`, if you want to obtain the response object, the Python SDK
 supports using method `to_json_object()` to get it.
 
-``` python
+```python
 request = ListVpcsRequest(limit=1)
 # original response json string
 response = client.list_vpcs(request)
@@ -444,7 +704,7 @@ print(response_obj["vpcs"])
 
 ### 5. Use Asynchronous Client [:top:](#user-manual-top)
 
-``` python
+```python
 # Initialize asynchronous client, take VpcAsyncClient for example
 client = VpcAsyncClient.new_builder() \
     .with_http_config(config) \
@@ -471,7 +731,7 @@ specified files.
 
 Initialize specified service client instance, take VpcClient for example:
 
-``` python
+```python
 client = VpcClient.new_builder() \
     .with_http_config(config) \
     .with_credentials(basic_credentials) \
@@ -494,13 +754,13 @@ client = VpcClient.new_builder() \
 
 After enabled log, the SDK will print the access log by default, every request will be recorded to the console like:
 
-``` text
+```text
 2020-06-16 10:44:02,019 4568 HuaweiCloud-SDK http_handler.py 28 INFO "GET https://vpc.cn-north-1.myhuaweicloud.com/v1/0904f9e1f100d2932f94c01f9aa1cfd7/vpcs" 200 11 0:00:00.543430 b5c927ffdab8401e772e70aa49972037
 ```
 
 The format of access log is:
 
-``` python
+```python
 %(asctime)s %(thread)d %(name)s %(filename)s %(lineno)d %(levelname)s %(message)s
 ```
 
@@ -511,7 +771,7 @@ needed. The SDK provides a listener function to obtain the original encrypted ht
 
 > :warning:  Warning: The original http log information is used in debugging stage only, please do not print the original http header or body in the production environment. These log information is not encrypted and contains sensitive data such as the password of your ECS virtual machine, or the password of your IAM user account, etc. When the response body is binary content, the body will be printed as "***" without detailed information.
 
-``` python
+```python
 import logging
 from huaweicloudsdkcore.http.http_handler import HttpHandler
 

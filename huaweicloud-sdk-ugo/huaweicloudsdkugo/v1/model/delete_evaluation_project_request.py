@@ -33,7 +33,7 @@ class DeleteEvaluationProjectRequest:
 
         The model defined in huaweicloud sdk
 
-        :param evaluation_project_id: 评估项目ID
+        :param evaluation_project_id: 评估项目ID。
         :type evaluation_project_id: str
         """
         
@@ -48,7 +48,7 @@ class DeleteEvaluationProjectRequest:
     def evaluation_project_id(self):
         """Gets the evaluation_project_id of this DeleteEvaluationProjectRequest.
 
-        评估项目ID
+        评估项目ID。
 
         :return: The evaluation_project_id of this DeleteEvaluationProjectRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class DeleteEvaluationProjectRequest:
     def evaluation_project_id(self, evaluation_project_id):
         """Sets the evaluation_project_id of this DeleteEvaluationProjectRequest.
 
-        评估项目ID
+        评估项目ID。
 
         :param evaluation_project_id: The evaluation_project_id of this DeleteEvaluationProjectRequest.
         :type evaluation_project_id: str

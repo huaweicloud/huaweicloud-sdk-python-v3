@@ -43,7 +43,7 @@ class FaceSearchFaceIdReq:
 
         The model defined in huaweicloud sdk
 
-        :param filter: [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc)[过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
+        :param filter: [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc) [过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
         :type filter: str
         :param top_n: 返回查询到的最相似的N张人脸，N默认为10。
         :type top_n: int
@@ -53,7 +53,7 @@ class FaceSearchFaceIdReq:
         :type return_fields: list[str]
         :param threshold: 人脸相似度阈值，低于这个阈值则不返回，取值范围0~1，一般情况下建议取值0.93，默认为0。
         :type threshold: float
-        :param sort: [支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。](tag:hc)[支持字段排序，参考[sort语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0013.html)。](tag:hk)
+        :param sort: [支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。](tag:hc) [支持字段排序，参考[sort语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0013.html)。](tag:hk)
         :type sort: list[dict(str, str)]
         """
         
@@ -83,7 +83,7 @@ class FaceSearchFaceIdReq:
     def filter(self):
         """Gets the filter of this FaceSearchFaceIdReq.
 
-        [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc)[过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
+        [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc) [过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
 
         :return: The filter of this FaceSearchFaceIdReq.
         :rtype: str
@@ -94,7 +94,7 @@ class FaceSearchFaceIdReq:
     def filter(self, filter):
         """Sets the filter of this FaceSearchFaceIdReq.
 
-        [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc)[过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
+        [过滤条件，参考[filter语法](https://support.huaweicloud.com/api-face/face_02_0014.html)。](tag:hc) [过滤条件，参考[filter语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0014.html)。](tag:hk)
 
         :param filter: The filter of this FaceSearchFaceIdReq.
         :type filter: str
@@ -193,7 +193,7 @@ class FaceSearchFaceIdReq:
     def sort(self):
         """Gets the sort of this FaceSearchFaceIdReq.
 
-        [支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。](tag:hc)[支持字段排序，参考[sort语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0013.html)。](tag:hk)
+        [支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。](tag:hc) [支持字段排序，参考[sort语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0013.html)。](tag:hk)
 
         :return: The sort of this FaceSearchFaceIdReq.
         :rtype: list[dict(str, str)]
@@ -204,7 +204,7 @@ class FaceSearchFaceIdReq:
     def sort(self, sort):
         """Sets the sort of this FaceSearchFaceIdReq.
 
-        [支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。](tag:hc)[支持字段排序，参考[sort语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0013.html)。](tag:hk)
+        [支持字段排序，参考[sort语法](https://support.huaweicloud.com/api-face/face_02_0013.html)。](tag:hc) [支持字段排序，参考[sort语法](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0013.html)。](tag:hk)
 
         :param sort: The sort of this FaceSearchFaceIdReq.
         :type sort: list[dict(str, str)]

@@ -45,7 +45,7 @@ def test_upload_download(mocker):
                                       header_params={"Content-Type": "application/octet-stream"}, body=mocked_file(),
                                       response_type="SdkStreamResponse")
 
-    response.consumeDownloadStream(process_stream)
+    response.consume_download_stream(process_stream)
 
 
 if __name__ == "__main__":

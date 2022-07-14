@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class FileMapping:
+class CheckAudioJobResponseBodyInput:
 
     """
     Attributes:
@@ -21,51 +21,80 @@ class FileMapping:
     sensitive_list = []
 
     openapi_types = {
-        'csv_mappings': 'list[CsvMappings]'
+        'type': 'str',
+        'data': 'list[AudioInputData]'
     }
 
     attribute_map = {
-        'csv_mappings': 'csv_mappings'
+        'type': 'type',
+        'data': 'data'
     }
 
-    def __init__(self, csv_mappings=None):
-        """FileMapping
+    def __init__(self, type=None, data=None):
+        """CheckAudioJobResponseBodyInput
 
         The model defined in huaweicloud sdk
 
-        :param csv_mappings: **参数说明**：csv文件格式转换列表。当file_type为csv时，必填。
-        :type csv_mappings: list[:class:`huaweicloudsdkiotda.v5.CsvMappings`]
+        :param type: 视频数据的输入类型： - obs：表示从华为云 OBS 中读取视频数据。 - url：表示从指定的 URL 地址中读取视频数据。 
+        :type type: str
+        :param data: 数据输入内容
+        :type data: list[:class:`huaweicloudsdkvcm.v2.AudioInputData`]
         """
         
         
 
-        self._csv_mappings = None
+        self._type = None
+        self._data = None
         self.discriminator = None
 
-        if csv_mappings is not None:
-            self.csv_mappings = csv_mappings
+        if type is not None:
+            self.type = type
+        if data is not None:
+            self.data = data
 
     @property
-    def csv_mappings(self):
-        """Gets the csv_mappings of this FileMapping.
+    def type(self):
+        """Gets the type of this CheckAudioJobResponseBodyInput.
 
-        **参数说明**：csv文件格式转换列表。当file_type为csv时，必填。
+        视频数据的输入类型： - obs：表示从华为云 OBS 中读取视频数据。 - url：表示从指定的 URL 地址中读取视频数据。 
 
-        :return: The csv_mappings of this FileMapping.
-        :rtype: list[:class:`huaweicloudsdkiotda.v5.CsvMappings`]
+        :return: The type of this CheckAudioJobResponseBodyInput.
+        :rtype: str
         """
-        return self._csv_mappings
+        return self._type
 
-    @csv_mappings.setter
-    def csv_mappings(self, csv_mappings):
-        """Sets the csv_mappings of this FileMapping.
+    @type.setter
+    def type(self, type):
+        """Sets the type of this CheckAudioJobResponseBodyInput.
 
-        **参数说明**：csv文件格式转换列表。当file_type为csv时，必填。
+        视频数据的输入类型： - obs：表示从华为云 OBS 中读取视频数据。 - url：表示从指定的 URL 地址中读取视频数据。 
 
-        :param csv_mappings: The csv_mappings of this FileMapping.
-        :type csv_mappings: list[:class:`huaweicloudsdkiotda.v5.CsvMappings`]
+        :param type: The type of this CheckAudioJobResponseBodyInput.
+        :type type: str
         """
-        self._csv_mappings = csv_mappings
+        self._type = type
+
+    @property
+    def data(self):
+        """Gets the data of this CheckAudioJobResponseBodyInput.
+
+        数据输入内容
+
+        :return: The data of this CheckAudioJobResponseBodyInput.
+        :rtype: list[:class:`huaweicloudsdkvcm.v2.AudioInputData`]
+        """
+        return self._data
+
+    @data.setter
+    def data(self, data):
+        """Sets the data of this CheckAudioJobResponseBodyInput.
+
+        数据输入内容
+
+        :param data: The data of this CheckAudioJobResponseBodyInput.
+        :type data: list[:class:`huaweicloudsdkvcm.v2.AudioInputData`]
+        """
+        self._data = data
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -109,7 +138,7 @@ class FileMapping:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FileMapping):
+        if not isinstance(other, CheckAudioJobResponseBodyInput):
             return False
 
         return self.__dict__ == other.__dict__

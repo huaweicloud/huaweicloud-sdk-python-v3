@@ -31,6 +31,7 @@ class SecurityGroupRule:
         'port_range_max': 'int',
         'remote_ip_prefix': 'str',
         'remote_group_id': 'str',
+        'remote_address_group_id': 'str',
         'tenant_id': 'str'
     }
 
@@ -45,10 +46,11 @@ class SecurityGroupRule:
         'port_range_max': 'port_range_max',
         'remote_ip_prefix': 'remote_ip_prefix',
         'remote_group_id': 'remote_group_id',
+        'remote_address_group_id': 'remote_address_group_id',
         'tenant_id': 'tenant_id'
     }
 
-    def __init__(self, id=None, description=None, security_group_id=None, direction=None, ethertype=None, protocol=None, port_range_min=None, port_range_max=None, remote_ip_prefix=None, remote_group_id=None, tenant_id=None):
+    def __init__(self, id=None, description=None, security_group_id=None, direction=None, ethertype=None, protocol=None, port_range_min=None, port_range_max=None, remote_ip_prefix=None, remote_group_id=None, remote_address_group_id=None, tenant_id=None):
         """SecurityGroupRule
 
         The model defined in huaweicloud sdk
@@ -73,6 +75,8 @@ class SecurityGroupRule:
         :type remote_ip_prefix: str
         :param remote_group_id: 功能说明：对端安全组ID 约束：和remote_ip_prefix互斥
         :type remote_group_id: str
+        :param remote_address_group_id: 功能说明：远端IP地址组ID 约束：和remote_ip_prefix，remote_group_id互斥
+        :type remote_address_group_id: str
         :param tenant_id: 安全组所属项目ID
         :type tenant_id: str
         """
@@ -89,6 +93,7 @@ class SecurityGroupRule:
         self._port_range_max = None
         self._remote_ip_prefix = None
         self._remote_group_id = None
+        self._remote_address_group_id = None
         self._tenant_id = None
         self.discriminator = None
 
@@ -102,6 +107,8 @@ class SecurityGroupRule:
         self.port_range_max = port_range_max
         self.remote_ip_prefix = remote_ip_prefix
         self.remote_group_id = remote_group_id
+        if remote_address_group_id is not None:
+            self.remote_address_group_id = remote_address_group_id
         self.tenant_id = tenant_id
 
     @property
@@ -323,6 +330,28 @@ class SecurityGroupRule:
         :type remote_group_id: str
         """
         self._remote_group_id = remote_group_id
+
+    @property
+    def remote_address_group_id(self):
+        """Gets the remote_address_group_id of this SecurityGroupRule.
+
+        功能说明：远端IP地址组ID 约束：和remote_ip_prefix，remote_group_id互斥
+
+        :return: The remote_address_group_id of this SecurityGroupRule.
+        :rtype: str
+        """
+        return self._remote_address_group_id
+
+    @remote_address_group_id.setter
+    def remote_address_group_id(self, remote_address_group_id):
+        """Sets the remote_address_group_id of this SecurityGroupRule.
+
+        功能说明：远端IP地址组ID 约束：和remote_ip_prefix，remote_group_id互斥
+
+        :param remote_address_group_id: The remote_address_group_id of this SecurityGroupRule.
+        :type remote_address_group_id: str
+        """
+        self._remote_address_group_id = remote_address_group_id
 
     @property
     def tenant_id(self):

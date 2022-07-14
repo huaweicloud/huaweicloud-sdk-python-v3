@@ -23,8 +23,7 @@ import sys
 import yaml
 
 from huaweicloudsdkcore.region.region import Region
-
-from huaweicloudsdkcore.utils import six_utils
+from huaweicloudsdkcore.utils import six_utils, path_utils
 
 
 class EnvRegionCache(six_utils.get_singleton_meta_class()):
@@ -54,7 +53,7 @@ class ProfileRegionCache(six_utils.get_singleton_meta_class()):
         result = {}
 
         path = cls._get_regions_file_path()
-        if not path or not os.path.exists(path):
+        if not path_utils.is_path_exist(path):
             return result
 
         with open(path, "r") as f:
@@ -76,13 +75,6 @@ class ProfileRegionCache(six_utils.get_singleton_meta_class()):
         if regions_file:
             return regions_file
 
-        platform = sys.platform
-        if platform.startswith("win32"):
-            home_path = os.environ.setdefault("USERPROFILE", "")
-        elif platform.startswith("linux") or sys.platform.startswith("darwin"):
-            home_path = os.environ.setdefault("HOME", "")
-        else:
-            home_path = ""
-
+        home_path = path_utils.get_home_path()
         return os.path.join(home_path,
                             cls._DEFAULT_REGIONS_FILE_DIR, cls._DEFAULT_REGIONS_FILE) if home_path else home_path

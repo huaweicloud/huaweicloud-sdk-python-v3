@@ -41,7 +41,7 @@ class AddFacesByBase64Response(SdkResponse):
         :type face_set_id: str
         :param face_set_name: 人脸库名称。 调用失败时无此字段。
         :type face_set_name: str
-        :param faces: [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/api-face/face_02_0018.html)。 调用失败时无此字段。](tag:hc) [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0018.html)。 调用失败时无此字段。](tag:hk)
+        :param faces: [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/api-face/face_02_0018.html)。调用失败时无此字段。](tag:hc) [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0018.html)。调用失败时无此字段。](tag:hk)
         :type faces: list[:class:`huaweicloudsdkfrs.v2.FaceSetFace`]
         """
         
@@ -107,7 +107,7 @@ class AddFacesByBase64Response(SdkResponse):
     def faces(self):
         """Gets the faces of this AddFacesByBase64Response.
 
-        [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/api-face/face_02_0018.html)。 调用失败时无此字段。](tag:hc) [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0018.html)。 调用失败时无此字段。](tag:hk)
+        [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/api-face/face_02_0018.html)。调用失败时无此字段。](tag:hc) [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0018.html)。调用失败时无此字段。](tag:hk)
 
         :return: The faces of this AddFacesByBase64Response.
         :rtype: list[:class:`huaweicloudsdkfrs.v2.FaceSetFace`]
@@ -118,7 +118,7 @@ class AddFacesByBase64Response(SdkResponse):
     def faces(self, faces):
         """Sets the faces of this AddFacesByBase64Response.
 
-        [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/api-face/face_02_0018.html)。 调用失败时无此字段。](tag:hc) [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0018.html)。 调用失败时无此字段。](tag:hk)
+        [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/api-face/face_02_0018.html)。调用失败时无此字段。](tag:hc) [人脸库当中的人脸结构，详见[FaceSetFace](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0018.html)。调用失败时无此字段。](tag:hk)
 
         :param faces: The faces of this AddFacesByBase64Response.
         :type faces: list[:class:`huaweicloudsdkfrs.v2.FaceSetFace`]

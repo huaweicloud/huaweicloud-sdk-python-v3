@@ -25,7 +25,8 @@ class HttpGetBody:
         'certificate_name': 'str',
         'certificate_value': 'str',
         'certificate_source': 'int',
-        'http2_status': 'str'
+        'http2_status': 'str',
+        'tls_version': 'str'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class HttpGetBody:
         'certificate_name': 'certificate_name',
         'certificate_value': 'certificate_value',
         'certificate_source': 'certificate_source',
-        'http2_status': 'http2_status'
+        'http2_status': 'http2_status',
+        'tls_version': 'tls_version'
     }
 
-    def __init__(self, https_status=None, certificate_name=None, certificate_value=None, certificate_source=None, http2_status=None):
+    def __init__(self, https_status=None, certificate_name=None, certificate_value=None, certificate_source=None, http2_status=None, tls_version=None):
         """HttpGetBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class HttpGetBody:
         :type certificate_source: int
         :param http2_status: 是否使用HTTP2.0。（on：是，off：否）
         :type http2_status: str
+        :param tls_version: 传输层安全性协议，目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议。当证书开启时返回该字段，默认全部开启，不可全部关闭。
+        :type tls_version: str
         """
         
         
@@ -60,6 +64,7 @@ class HttpGetBody:
         self._certificate_value = None
         self._certificate_source = None
         self._http2_status = None
+        self._tls_version = None
         self.discriminator = None
 
         if https_status is not None:
@@ -72,6 +77,8 @@ class HttpGetBody:
             self.certificate_source = certificate_source
         if http2_status is not None:
             self.http2_status = http2_status
+        if tls_version is not None:
+            self.tls_version = tls_version
 
     @property
     def https_status(self):
@@ -182,6 +189,28 @@ class HttpGetBody:
         :type http2_status: str
         """
         self._http2_status = http2_status
+
+    @property
+    def tls_version(self):
+        """Gets the tls_version of this HttpGetBody.
+
+        传输层安全性协议，目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议。当证书开启时返回该字段，默认全部开启，不可全部关闭。
+
+        :return: The tls_version of this HttpGetBody.
+        :rtype: str
+        """
+        return self._tls_version
+
+    @tls_version.setter
+    def tls_version(self, tls_version):
+        """Sets the tls_version of this HttpGetBody.
+
+        传输层安全性协议，目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议。当证书开启时返回该字段，默认全部开启，不可全部关闭。
+
+        :param tls_version: The tls_version of this HttpGetBody.
+        :type tls_version: str
+        """
+        self._tls_version = tls_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

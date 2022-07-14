@@ -2545,9 +2545,9 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def disassociate_router_async(self, request):
-        """在Private Zone上解关联VPC
+        """在内网Zone上解关联VPC
 
-        在Private Zone上解关联VPC
+        在内网Zone上解关联VPC
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2807,9 +2807,9 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def show_private_zone_name_server_async(self, request):
-        """查询内网Zone的名称服务器
+        """查询单个内网Zone的名称服务器
 
-        查询内网Zone的名称服务器
+        查询单个内网Zone的名称服务器
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2981,9 +2981,9 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_private_zone_async(self, request):
-        """修改单个Zone
+        """修改单个内网Zone
 
-        修改单个Zone
+        修改单个内网Zone
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3041,9 +3041,9 @@ class DnsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_public_zone_async(self, request):
-        """修改单个Zone
+        """修改单个公网Zone
 
-        修改单个Zone
+        修改单个公网Zone
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

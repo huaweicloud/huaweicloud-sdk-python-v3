@@ -64,7 +64,9 @@ class NvlCostAnalysedBillDetail:
         'sub_resource_type_code': 'str',
         'sub_resource_type_name': 'str',
         'sub_resource_id': 'str',
-        'sub_resource_name': 'str'
+        'sub_resource_name': 'str',
+        'effective_tag_pairs': 'list[TagPair]',
+        'cost_unit_pairs': 'list[CostUnitPair]'
     }
 
     attribute_map = {
@@ -111,10 +113,12 @@ class NvlCostAnalysedBillDetail:
         'sub_resource_type_code': 'sub_resource_type_code',
         'sub_resource_type_name': 'sub_resource_type_name',
         'sub_resource_id': 'sub_resource_id',
-        'sub_resource_name': 'sub_resource_name'
+        'sub_resource_name': 'sub_resource_name',
+        'effective_tag_pairs': 'effective_tag_pairs',
+        'cost_unit_pairs': 'cost_unit_pairs'
     }
 
-    def __init__(self, shared_month=None, bill_cycle=None, bill_type=None, customer_id=None, region_code=None, region_name=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_spec_desc=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, consume_amount=None, past_months_amortized_amount=None, current_month_amortized_amount=None, future_months_amortized_amount=None, amortized_cash_amount=None, amortized_credit_amount=None, amortized_coupon_amount=None, amortized_flexipurchase_coupon_amount=None, amortized_stored_value_card_amount=None, amortized_bonus_amount=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None):
+    def __init__(self, shared_month=None, bill_cycle=None, bill_type=None, customer_id=None, region_code=None, region_name=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, effective_time=None, expire_time=None, resource_id=None, resource_name=None, resource_tag=None, product_spec_desc=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, order_id=None, period_type=None, usage_type=None, usage=None, usage_measure_id=None, free_resource_usage=None, free_resource_measure_id=None, ri_usage=None, ri_usage_measure_id=None, consume_amount=None, past_months_amortized_amount=None, current_month_amortized_amount=None, future_months_amortized_amount=None, amortized_cash_amount=None, amortized_credit_amount=None, amortized_coupon_amount=None, amortized_flexipurchase_coupon_amount=None, amortized_stored_value_card_amount=None, amortized_bonus_amount=None, sub_service_type_code=None, sub_service_type_name=None, sub_resource_type_code=None, sub_resource_type_name=None, sub_resource_id=None, sub_resource_name=None, effective_tag_pairs=None, cost_unit_pairs=None):
         """NvlCostAnalysedBillDetail
 
         The model defined in huaweicloud sdk
@@ -207,6 +211,10 @@ class NvlCostAnalysedBillDetail:
         :type sub_resource_id: str
         :param sub_resource_name: 该字段为预留字段。
         :type sub_resource_name: str
+        :param effective_tag_pairs: 成本标签。
+        :type effective_tag_pairs: list[:class:`huaweicloudsdkbss.v2.TagPair`]
+        :param cost_unit_pairs: 成本单元。
+        :type cost_unit_pairs: list[:class:`huaweicloudsdkbss.v2.CostUnitPair`]
         """
         
         
@@ -255,6 +263,8 @@ class NvlCostAnalysedBillDetail:
         self._sub_resource_type_name = None
         self._sub_resource_id = None
         self._sub_resource_name = None
+        self._effective_tag_pairs = None
+        self._cost_unit_pairs = None
         self.discriminator = None
 
         if shared_month is not None:
@@ -345,6 +355,10 @@ class NvlCostAnalysedBillDetail:
             self.sub_resource_id = sub_resource_id
         if sub_resource_name is not None:
             self.sub_resource_name = sub_resource_name
+        if effective_tag_pairs is not None:
+            self.effective_tag_pairs = effective_tag_pairs
+        if cost_unit_pairs is not None:
+            self.cost_unit_pairs = cost_unit_pairs
 
     @property
     def shared_month(self):
@@ -1313,6 +1327,50 @@ class NvlCostAnalysedBillDetail:
         :type sub_resource_name: str
         """
         self._sub_resource_name = sub_resource_name
+
+    @property
+    def effective_tag_pairs(self):
+        """Gets the effective_tag_pairs of this NvlCostAnalysedBillDetail.
+
+        成本标签。
+
+        :return: The effective_tag_pairs of this NvlCostAnalysedBillDetail.
+        :rtype: list[:class:`huaweicloudsdkbss.v2.TagPair`]
+        """
+        return self._effective_tag_pairs
+
+    @effective_tag_pairs.setter
+    def effective_tag_pairs(self, effective_tag_pairs):
+        """Sets the effective_tag_pairs of this NvlCostAnalysedBillDetail.
+
+        成本标签。
+
+        :param effective_tag_pairs: The effective_tag_pairs of this NvlCostAnalysedBillDetail.
+        :type effective_tag_pairs: list[:class:`huaweicloudsdkbss.v2.TagPair`]
+        """
+        self._effective_tag_pairs = effective_tag_pairs
+
+    @property
+    def cost_unit_pairs(self):
+        """Gets the cost_unit_pairs of this NvlCostAnalysedBillDetail.
+
+        成本单元。
+
+        :return: The cost_unit_pairs of this NvlCostAnalysedBillDetail.
+        :rtype: list[:class:`huaweicloudsdkbss.v2.CostUnitPair`]
+        """
+        return self._cost_unit_pairs
+
+    @cost_unit_pairs.setter
+    def cost_unit_pairs(self, cost_unit_pairs):
+        """Sets the cost_unit_pairs of this NvlCostAnalysedBillDetail.
+
+        成本单元。
+
+        :param cost_unit_pairs: The cost_unit_pairs of this NvlCostAnalysedBillDetail.
+        :type cost_unit_pairs: list[:class:`huaweicloudsdkbss.v2.CostUnitPair`]
+        """
+        self._cost_unit_pairs = cost_unit_pairs
 
     def to_dict(self):
         """Returns the model properties as a dict"""

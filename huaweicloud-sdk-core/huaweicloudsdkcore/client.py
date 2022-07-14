@@ -33,7 +33,7 @@ from six.moves.urllib.parse import quote, urlparse
 from requests_toolbelt import MultipartEncoder
 
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, DerivedCredentials
-from huaweicloudsdkcore.auth.helper import EnvCredentialHelper, TempCredentialHelper
+from huaweicloudsdkcore.auth.provider import CredentialProviderChain
 from huaweicloudsdkcore.http.http_client import HttpClient
 from huaweicloudsdkcore.http.http_config import HttpConfig
 from huaweicloudsdkcore.http.http_handler import HttpHandler
@@ -137,13 +137,11 @@ class ClientBuilder(object):
 
         client.init_http_client()
 
-        if self._credentials is None:
-            self._credentials = EnvCredentialHelper.load_credential_from_env(self._credential_type[0])
+        if not self._credentials:
+            provider = CredentialProviderChain.get_default_credential_provider_chain(self._credential_type[0])
+            self._credentials = provider.get_credentials()
 
-        self._credentials = TempCredentialHelper.process_credential(
-            client.get_http_client(), self._credential_type[0], self._credentials)
-
-        if self._credentials is None:
+        if not self._credentials:
             raise ValueError("credential can not be None, %s credential objects are required"
                              % ",".join(self._credential_type))
         if self._credentials.__class__.__name__ not in self._credential_type:

@@ -32,14 +32,14 @@
 
 - 使用 pip 安装
 
-``` bash
+```bash
 # 安装VPC服务包
 pip install huaweicloudsdkvpc
 ```
 
 - 使用源码安装
 
-``` bash
+```bash
 # 安装VPC服务包
 cd huaweicloudsdkvpc-${version}
 python setup.py install
@@ -51,13 +51,13 @@ python setup.py install
 
 - 使用 pip 安装
 
-``` bash
+```bash
 pip install huaweicloudsdkall
 ```
 
 - 使用源码安装
 
-``` bash
+```bash
 cd huaweicloudsdkall-${version}
 python setup.py install
 ```
@@ -67,7 +67,7 @@ python setup.py install
 - 使用如下代码同步查询指定 Region 下的 VPC 清单，实际使用中请将 `VpcClient` 替换为您使用的产品/服务相应的 `{Service}Client`。
 - 调用前请根据实际情况替换如下变量：`{your ak string}`、 `{your sk string}`、 `{your endpoint}` 以及 `{your project id}`。
 
-``` python
+```python
 # coding: utf-8
 
 
@@ -126,8 +126,14 @@ if __name__ == "__main__":
     * [1.3 超时配置](#13-超时配置-top)
     * [1.4 SSL 配置](#14-ssl-配置-top)
 * [2. 认证信息配置](#2-认证信息配置-top)
-    * [2.1 使用永久 AK 和 SK](#21-使用永久-ak-和-sk-top)
-    * [2.2 使用临时 AK 和 SK](#22-使用临时-ak-和-sk-top)
+  * [2.1 使用永久 AK 和 SK](#21-使用永久-ak-和-sk-top)
+  * [2.2 使用临时 AK 和 SK](#22-使用临时-ak-和-sk-top)
+  * [2.3 使用 IdpId 和 IdTokenFile](#23-使用-idpid-和-idtokenfile-top)
+  * [2.4 认证信息管理](#24-认证信息管理-top)
+    * [2.4.1 环境变量](#241-环境变量-top)
+	* [2.4.2 配置文件](#242-配置文件-top)
+	* [2.4.3 实例元数据](#243-实例元数据-top)
+	* [2.4.4 认证信息提供链](#244-认证信息提供链-top)
 * [3. 客户端初始化](#3-客户端初始化-top)
     * [3.1 指定云服务 Endpoint 方式](#31-指定云服务-endpoint-方式-top)
     * [3.2 指定 Region 方式（推荐）](#32-指定-region-方式-推荐-top)
@@ -147,7 +153,7 @@ if __name__ == "__main__":
 
 #### 1.1 默认配置 [:top:](#用户手册-top)
 
-``` python
+```python
 from huaweicloudsdkcore.http.http_config import HttpConfig
 
 # 使用默认配置
@@ -156,7 +162,7 @@ config = HttpConfig.get_default_config()
 
 #### 1.2 网络代理 [:top:](#用户手册-top)
 
-``` python
+```python
 # 根据需要配置网络代理
 config.proxy_protocol = 'http'
 config.proxy_host = 'proxy.huaweicloud.com'
@@ -167,7 +173,7 @@ config.proxy_password = 'password'
 
 #### 1.3 超时配置 [:top:](#用户手册-top)
 
-``` python
+```python
 # 默认连接超时时间为60秒，读取超时时间为120秒
 # 将连接超时时间和读取超时时间统一设置为120秒
 config.timeout = 120
@@ -177,7 +183,7 @@ config.timeout = (60, 120)
 
 #### 1.4 SSL 配置 [:top:](#用户手册-top)
 
-``` python
+```python
 # 根据需要配置是否跳过SSL证书校验
 config.ignore_ssl_verification = True
 # 配置服务器端CA证书，用于SDK验证服务端证书合法性
@@ -194,7 +200,13 @@ Region 级服务使用 BasicCredentials 初始化，需要提供 projectId 。
 
 Global 级服务使用 GlobalCredentials 初始化，需要提供 domainId 。
 
-客户端认证可以使用永久 AK&SK 认证，也可以使用临时 AK&SK&SecurityToken 认证。
+客户端认证方式支持以下几种：
+
+- 永久 AK&SK 认证
+- 临时 AK&SK&SecurityToken 认证
+- IdpId&IdTokenFile 认证
+
+#### 2.1 使用永久 AK 和 SK [:top:](#用户手册-top)
 
 **认证参数说明**：
 
@@ -202,11 +214,8 @@ Global 级服务使用 GlobalCredentials 初始化，需要提供 domainId 。
 - `sk` 华为云账号 Secret Access Key
 - `project_id` 云服务所在项目 ID ，根据你想操作的项目所属区域选择对应的项目 ID
 - `domain_id` 华为云账号 ID
-- `security_token` 采用临时 AK&SK 认证场景下的安全票据
 
-#### 2.1 使用永久 AK 和 SK [:top:](#用户手册-top)
-
-``` python
+```python
 # Region级服务
 basic_credentials = BasicCredentials(ak, sk, project_id)
 
@@ -227,14 +236,265 @@ global_credentials = GlobalCredentials(ak, sk, domain_id)
 - 通过委托授权获得可以参考文档：https://support.huaweicloud.com/api-iam/iam_04_0101.html ，对应 IAM SDK
   中的 `CreateTemporaryAccessKeyByAgency` 方法。
 
+**认证参数说明**：
+
+- `ak` 华为云账号 Access Key
+- `sk` 华为云账号 Secret Access Key
+- `security_token` 采用临时 AK&SK 认证场景下的安全票据
+- `project_id` 云服务所在项目 ID ，根据你想操作的项目所属区域选择对应的项目 ID
+- `domain_id` 华为云账号 ID
+
 临时 AK&SK&SecurityToken 获取成功后，可使用如下方式初始化认证信息：
 
-``` python
+```python
+from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
+
 # Region级服务
 basic_credentials = BasicCredentials(ak, sk, project_id).with_security_token(security_token)
 
 # Global级服务
 global_credentials = GlobalCredentials(ak, sk, domain_id).with_security_token(security_token)
+```
+
+#### 2.3 使用 IdpId 和 IdTokenFile [:top:](#用户手册-top)
+
+通过OpenID Connect ID token方式获取联邦认证token, 可参考文档：[获取联邦认证token(OpenID Connect ID token方式)](https://support.huaweicloud.com/api-iam/iam_13_0605.html)
+
+**认证参数说明**：
+
+- `Idp_id` 身份提供商ID
+- `Id_token_file` 存放id_token的文件路径，id_token由企业IdP构建，携带联邦用户身份信息
+- `projec_id` 云服务所在项目 ID ，根据你想操作的项目所属区域选择对应的项目 ID
+- `domain_id` 华为云账号 ID
+
+```python
+from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
+
+# Region级服务
+basic_cred = BasicCredentials() \
+    .with_idp_id(idp_id) \
+    .with_id_token_file(id_token_file) \
+    .with_project_id(project_id)
+
+# Global级服务
+global_cred = GlobalCredentials() \
+    .with_idp_id(idp_id) \
+    .with_id_token_file(id_token_file) \
+    .with_domain_id(domain_id)
+```
+
+#### 2.4 认证信息管理 [:top:](#用户手册-top)
+
+从**3.0.98**版本起，支持从各类提供器中获取认证信息
+
+**Region级服务** 请使用 `XxxCredentialProvider.get_basic_credential_xxx_provider`
+
+**Global级服务** 请使用 `XxxCredentialProvider.get_global_credential_xxx_provider`
+
+##### 2.4.1 环境变量 [:top:](#用户手册-top)
+
+**AK/SK认证**
+
+| 环境变量  |  说明 |
+| ------------ | ------------ |
+| HUAWEICLOUD_SDK_AK  | 必填，AccessKey  |
+| HUAWEICLOUD_SDK_SK  |  必填，SecretKey |
+| HUAWEICLOUD_SDK_SECURITY_TOKEN  | 可选, 使用临时ak/sk认证时需要指定该参数  |
+| HUAWEICLOUD_SDK_PROJECT_ID  | 可选，用于Region级服务，多ProjectId场景下必填  |
+| HUAWEICLOUD_SDK_DOMAIN_ID  | 可选，用于Global级服务  |
+
+配置环境变量：
+
+```
+// Linux
+export HUAWEICLOUD_SDK_AK=YOUR_AK
+export HUAWEICLOUD_SDK_SK=YOUR_SK
+
+// Windows
+set HUAWEICLOUD_SDK_AK=YOUR_AK
+set HUAWEICLOUD_SDK_SK=YOUR_SK
+```
+
+从配置的环境变量中获取认证信息：
+
+```python
+from huaweicloudsdkcore.auth.provider import EnvCredentialProvider
+
+# basic
+basic_provider = EnvCredentialProvider.get_basic_credential_env_provider()
+basic_cred = basic_provider.get_credentials()
+
+# global
+global_provider = EnvCredentialProvider.get_global_credential_env_provider()
+global_cred = global_provider.get_credentials()
+```
+
+**IdpId/IdTokenFile认证**
+
+| 环境变量  |  说明 |
+| ------------ | ------------ |
+| HUAWEICLOUD_SDK_IDP_ID  | 必填，身份提供商ID |
+| HUAWEICLOUD_SDK_ID_TOKEN_FILE  |  必填，存放id_token的文件路径 |
+| HUAWEICLOUD_SDK_PROJECT_ID  | basic类型认证时，该参数必填  |
+| HUAWEICLOUD_SDK_DOMAIN_ID  | global类型认证时，该参数必填  |
+
+配置环境变量：
+
+```
+// Linux
+export HUAWEICLOUD_SDK_IDP_ID=YOUR_IDP_ID
+export HUAWEICLOUD_SDK_ID_TOKEN_FILE=/some_path/your_token_file
+export HUAWEICLOUD_SDK_PROJECT_ID=YOUR_PROJECT_ID // basic认证时必填
+export HUAWEICLOUD_SDK_DOMAIN_ID=YOUR_DOMAIN_ID // global认证时必填
+
+// Windows
+set HUAWEICLOUD_SDK_IDP_ID=YOUR_IDP_ID
+set HUAWEICLOUD_SDK_ID_TOKEN_FILE=/some_path/your_token_file
+set HUAWEICLOUD_SDK_PROJECT_ID=YOUR_PROJECT_ID // basic认证时必填
+set HUAWEICLOUD_SDK_DOMAIN_ID=YOUR_DOMAIN_ID // global认证时必填
+```
+
+从配置的环境变量中获取认证信息：
+
+```python
+from huaweicloudsdkcore.auth.provider import EnvCredentialProvider
+
+# basic
+basic_provider = EnvCredentialProvider.get_basic_credential_env_provider()
+basic_cred = basic_provider.get_credentials()
+
+# global
+global_provider = EnvCredentialProvider.get_global_credential_env_provider()
+global_cred = global_provider.get_credentials()
+```
+
+##### 2.4.2 配置文件 [:top:](#用户手册-top)
+
+默认会从用户主目录下读取认证信息配置文件，linux为`~/.huaweicloud/credentials`，windows为`C:\Users\USER_NAME\.huaweicloud\credentials`，可以通过配置环境变量`HUAWEICLOUD_SDK_CREDENTIALS_FILE`来修改默认文件的路径
+
+**AK/SK认证**
+
+| 配置参数  |  说明 |
+| ------------ | ------------ |
+| ak  | 必填，AccessKey  |
+| sk  |  必填，SecretKey |
+| security_token  | 可选, 使用临时ak/sk认证时需要指定该参数  |
+| project_id  | 可选，用于Region级服务，多ProjectId场景下必填  |
+| domain_id  | 可选，用于Global级服务  |
+| iam_endpoint  | 可选，用于身份认证的endpoint，默认为`https://iam.myhuaweicloud.com` |
+
+配置文件内容如下：
+
+```ini
+[basic]
+ak = your_ak
+sk = your_sk
+
+[global]
+ak = your_ak
+sk = your_sk
+```
+
+从配置文件中读取认证信息：
+
+```python
+from huaweicloudsdkcore.auth.provider import ProfileCredentialProvider
+
+# basic
+basic_provider = ProfileCredentialProvider.get_basic_credential_profile_provider()
+basic_cred = basic_provider.get_credentials()
+
+# global
+global_provider = ProfileCredentialProvider.get_global_credential_profile_provider()
+global_cred = global_provider.get_credentials()
+```
+
+**IdpId/IdTokenFile认证**
+
+| 配置参数  |  说明 |
+| ------------ | ------------ |
+| idp_id  | 必填，身份提供商ID |
+| id_token_file  |  必填，存放id_token的文件路径 |
+| project_id  | basic类型认证时，该参数必填  |
+| domain_id  | global类型认证时，该参数必填  |
+| iam_endpoint  | 可选，用于身份认证的endpoint，默认为`https://iam.myhuaweicloud.com` |
+
+配置文件内容如下：
+
+```ini
+[basic]
+idp_id = your_idp_id
+id_token_file = /some_path/your_token_file
+project_id = your_project_id
+
+[global]
+idp_id = your_idp_id
+id_token_file = /some_path/your_token_file
+domainId = your_domain_id
+```
+
+从配置文件中读取认证信息：
+
+```python
+from huaweicloudsdkcore.auth.provider import ProfileCredentialProvider
+
+# basic
+basic_provider = ProfileCredentialProvider.get_basic_credential_profile_provider()
+basic_cred = basic_provider.get_credentials()
+
+# global
+global_provider = ProfileCredentialProvider.get_global_credential_profile_provider()
+global_cred = global_provider.get_credentials()
+```
+
+##### 2.4.3 实例元数据 [:top:](#用户手册-top)
+
+从实例元数据获取临时AK/SK和securitytoken，关于元数据获取请参阅：[元数据获取](https://support.huaweicloud.com/usermanual-ecs/ecs_03_0166.html)
+
+手动获取实例元数据认证信息：
+
+```python
+from huaweicloudsdkcore.auth.provider import MetadataCredentialProvider
+
+# basic
+basic_provider = MetadataCredentialProvider.get_basic_credential_metadata_provider()
+basic_cred = basic_provider.get_credentials()
+
+# global
+global_provider = MetadataCredentialProvider.get_global_credential_metadata_provider()
+global_cred = global_provider.get_credentials()
+```
+
+##### 2.4.4 认证信息提供链 [:top:](#用户手册-top)
+
+在创建服务客户端，未显式指定认证信息时，按照顺序 **环境变量 -> 配置文件 -> 实例元数据** 尝试加载认证信息
+
+通过提供链获取认证信息：
+
+```python
+from huaweicloudsdkcore.auth.provider import CredentialProviderChain
+
+# basic
+basic_chain = CredentialProviderChain.get_basic_credential_provider_chain()
+basic_cred = basic_chain.get_credentials()
+
+# global
+global_chain = CredentialProviderChain.get_global_credential_provider_chain()
+global_cred = global_chain.get_credentials()
+```
+
+支持自定义认证信息提供链：
+
+```python
+from huaweicloudsdkcore.auth.provider import CredentialProviderChain, ProfileCredentialProvider, MetadataCredentialProvider
+
+providers = [
+    ProfileCredentialProvider.get_basic_credential_profile_provider(),
+    MetadataCredentialProvider.get_basic_credential_metadata_provider()
+]
+
+chain = CredentialProviderChain(providers)
+credentials = chain.get_credentials()
 ```
 
 ### 3. 客户端初始化 [:top:](#用户手册-top)
@@ -243,7 +503,7 @@ global_credentials = GlobalCredentials(ak, sk, domain_id).with_security_token(se
 
 #### 3.1 指定云服务 Endpoint 方式 [:top:](#用户手册-top)
 
-``` python
+```python
 # 指定终端节点，以 VPC 服务北京四的 endpoint 为例
 endpoint = "https://vpc.cn-north-4.myhuaweicloud.com"
 
@@ -266,7 +526,7 @@ client = VpcClient.new_builder() \
 
 #### 3.2 指定 Region 方式 **（推荐）** [:top:](#用户手册-top)
 
-``` python
+```python
 # 增加region依赖
 from huaweicloudsdkiam.v3.region.iam_region import IamRegion
 
@@ -385,7 +645,7 @@ region2 = EcsRegion.value_of("cn-north-11")
 
 ### 4. 发送请求并查看响应 [:top:](#用户手册-top)
 
-``` python
+```python
 # 初始化请求，以调用接口 ListVpcs 为例
 request = ListVpcsRequest(limit=1)
 
@@ -404,7 +664,7 @@ print(response)
 | ServiceResponseException | 服务器响应异常 | ServerResponseException | 服务端内部错误，Http响应码：[500,] |
 | | | ClientRequestException | 请求参数不合法，Http响应码：[400， 500) |
 
-``` python
+```python
 # 异常处理
 try:
     request = ListVpcsRequest(limit=1)
@@ -421,7 +681,7 @@ except exception.ServiceResponseException as e:
 
 Python SDK 默认返回的 response 为原始响应的 Json 数据，如果需要获取当前数据对象，可以使用 `to_json_object()` 方法：
 
-``` python
+```python
 request = ListVpcsRequest(limit=1)
 # 原始响应Json
 response = client.list_vpcs(request)
@@ -435,7 +695,7 @@ print(response_obj["vpcs"])
 
 ### 5. 异步客户端使用 [:top:](#用户手册-top)
 
-``` python
+```python
 # 初始化异步客户端，以初始化 VpcAsyncClient 为例
 client = VpcAsyncClient.new_builder() \
     .with_http_config(config) \
@@ -461,7 +721,7 @@ SDK 支持打印 Access 级别的访问日志，需要用户手动打开日志�
 
 初始化指定服务的客户端实例，以 VpcClient 为例：
 
-``` python
+```python
 client = VpcClient.new_builder() \
     .with_http_config(config) \
     .with_credentials(basic_credentials) \
@@ -484,13 +744,13 @@ client = VpcClient.new_builder() \
 
 打开日志开关后，每次请求都会有一条记录，如：
 
-``` text 
+```text 
 2020-06-16 10:44:02,019 4568 HuaweiCloud-SDK http_handler.py 28 INFO "GET https://vpc.cn-north-1.myhuaweicloud.com/v1/0904f9e1f100d2932f94c01f9aa1cfd7/vpcs" 200 11 0:00:00.543430 b5c927ffdab8401e772e70aa49972037
 ```
 
 日志格式为：
 
-``` python
+```python
 %(asctime)s %(thread)d %(name)s %(filename)s %(lineno)d %(levelname)s %(message)s
 ```
 
@@ -500,7 +760,7 @@ client = VpcClient.new_builder() \
 
 > :warning:  Warning: 原始信息打印仅在 Debug 阶段使用，请不要在生产系统中将原始的 HTTP 头和 Body 信息打印到日志，这些信息并未加密且其中包含敏感数据，例如所创建虚拟机的密码，IAM 用户的密码等；当 Body 体为二进制内容，即 Content-Type 标识为二进制时，Body 为"***"，详细内容不输出。
 
-``` python
+```python
 import logging
 from huaweicloudsdkcore.http.http_handler import HttpHandler
 

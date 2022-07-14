@@ -37,7 +37,7 @@ class DetectLiveByUrlResponse(SdkResponse):
 
         :param video_result: 
         :type video_result: :class:`huaweicloudsdkfrs.v2.LiveDetectRespVideoresult`
-        :param warning_list: [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。 调用失败时无此字段](tag:hc) [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0077.html)。 调用失败时无此字段](tag:hk)
+        :param warning_list: [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。调用失败时无此字段](tag:hc) [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0077.html)。调用失败时无此字段](tag:hk)
         :type warning_list: list[:class:`huaweicloudsdkfrs.v2.WarningList`]
         """
         
@@ -76,7 +76,7 @@ class DetectLiveByUrlResponse(SdkResponse):
     def warning_list(self):
         """Gets the warning_list of this DetectLiveByUrlResponse.
 
-        [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。 调用失败时无此字段](tag:hc) [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0077.html)。 调用失败时无此字段](tag:hk)
+        [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。调用失败时无此字段](tag:hc) [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0077.html)。调用失败时无此字段](tag:hk)
 
         :return: The warning_list of this DetectLiveByUrlResponse.
         :rtype: list[:class:`huaweicloudsdkfrs.v2.WarningList`]
@@ -87,7 +87,7 @@ class DetectLiveByUrlResponse(SdkResponse):
     def warning_list(self, warning_list):
         """Sets the warning_list of this DetectLiveByUrlResponse.
 
-        [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。 调用失败时无此字段](tag:hc) [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0077.html)。 调用失败时无此字段](tag:hk)
+        [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/api-face/face_02_0077.html)。调用失败时无此字段](tag:hc) [警告信息列表，WarningList结构见[WarningList](https://support.huaweicloud.com/intl/zh-cn/api-face/face_02_0077.html)。调用失败时无此字段](tag:hk)
 
         :param warning_list: The warning_list of this DetectLiveByUrlResponse.
         :type warning_list: list[:class:`huaweicloudsdkfrs.v2.WarningList`]

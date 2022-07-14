@@ -47,7 +47,7 @@ class ServiceCapability:
 
         :param service_id: **参数说明**：设备的服务ID。注：产品内不允许重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-$等字符的组合。
         :type service_id: str
-        :param service_type: **参数说明**：设备的服务类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-$等字符的组合。
+        :param service_type: **参数说明**：设备的服务类型。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?&#39;#().,&amp;%@!-$等字符的组合。
         :type service_type: str
         :param properties: **参数说明**：设备服务支持的属性列表。 **取值范围**：数组长度大小不超过500。
         :type properties: list[:class:`huaweicloudsdkiotda.v5.ServiceProperty`]
@@ -111,7 +111,7 @@ class ServiceCapability:
     def service_type(self):
         """Gets the service_type of this ServiceCapability.
 
-        **参数说明**：设备的服务类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
+        **参数说明**：设备的服务类型。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
 
         :return: The service_type of this ServiceCapability.
         :rtype: str
@@ -122,7 +122,7 @@ class ServiceCapability:
     def service_type(self, service_type):
         """Sets the service_type of this ServiceCapability.
 
-        **参数说明**：设备的服务类型。 **取值范围**：长度不超过32，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
+        **参数说明**：设备的服务类型。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-$等字符的组合。
 
         :param service_type: The service_type of this ServiceCapability.
         :type service_type: str

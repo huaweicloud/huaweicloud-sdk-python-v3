@@ -45,7 +45,7 @@ class PublicipSingleShowResp:
         'alias': 'str',
         'profile': 'ProfileInfo',
         'fake_network_type': 'bool',
-        'tags': 'list[TagsInfo]',
+        'tags': 'list[str]',
         'associate_instance_metadata': 'str',
         'associate_mode': 'str',
         'allow_share_bandwidth_types': 'list[str]',
@@ -138,7 +138,7 @@ class PublicipSingleShowResp:
         :param fake_network_type: 默认不显示。该字段仅仅用于表示eip的bgp类型是否是真实的静态sbgp * 1. 如果为true，则该eip可以切换bgp类型 * 2. 如果为false，则该eip不可以切换bgp类型
         :type fake_network_type: bool
         :param tags: 默认不显示。用户标签
-        :type tags: list[:class:`huaweicloudsdkeip.v3.TagsInfo`]
+        :type tags: list[str]
         :param associate_instance_metadata: 默认不显示。记录实例的更上一层归属。例如associate_instance_type为PORT，此字段记录PORT的device_id和device_owner信息。仅有限场景记录。
         :type associate_instance_metadata: str
         :param associate_mode: 默认不显示。开启支持直通模式后展示，表示直通模式的标识。
@@ -770,7 +770,7 @@ class PublicipSingleShowResp:
         默认不显示。用户标签
 
         :return: The tags of this PublicipSingleShowResp.
-        :rtype: list[:class:`huaweicloudsdkeip.v3.TagsInfo`]
+        :rtype: list[str]
         """
         return self._tags
 
@@ -781,7 +781,7 @@ class PublicipSingleShowResp:
         默认不显示。用户标签
 
         :param tags: The tags of this PublicipSingleShowResp.
-        :type tags: list[:class:`huaweicloudsdkeip.v3.TagsInfo`]
+        :type tags: list[str]
         """
         self._tags = tags
 

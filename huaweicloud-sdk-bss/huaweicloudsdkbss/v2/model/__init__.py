@@ -36,6 +36,7 @@ from huaweicloudsdkbss.v2.model.check_user_identity_request import CheckUserIden
 from huaweicloudsdkbss.v2.model.check_user_identity_response import CheckUserIdentityResponse
 from huaweicloudsdkbss.v2.model.city import City
 from huaweicloudsdkbss.v2.model.conversion import Conversion
+from huaweicloudsdkbss.v2.model.cost_unit_pair import CostUnitPair
 from huaweicloudsdkbss.v2.model.county import County
 from huaweicloudsdkbss.v2.model.coupon_info_v2 import CouponInfoV2
 from huaweicloudsdkbss.v2.model.coupon_max_use_quantity import CouponMaxUseQuantity
@@ -262,6 +263,7 @@ from huaweicloudsdkbss.v2.model.stat_usage_summary_info import StatUsageSummaryI
 from huaweicloudsdkbss.v2.model.sub_customer_info_v2 import SubCustomerInfoV2
 from huaweicloudsdkbss.v2.model.sub_customer_info_v3 import SubCustomerInfoV3
 from huaweicloudsdkbss.v2.model.sub_customer_monthly_bill_detail import SubCustomerMonthlyBillDetail
+from huaweicloudsdkbss.v2.model.tag_pair import TagPair
 from huaweicloudsdkbss.v2.model.template_args import TemplateArgs
 from huaweicloudsdkbss.v2.model.transfer_amount_info_v2 import TransferAmountInfoV2
 from huaweicloudsdkbss.v2.model.transfer_enterprise_multi_account_req import TransferEnterpriseMultiAccountReq

@@ -65,7 +65,9 @@ class ShowInstanceResponse(SdkResponse):
         'features': 'Features',
         'domain_name_info': 'DomainNameInfo',
         'transparent_client_ip_enable': 'bool',
-        'sub_status': 'str'
+        'sub_status': 'str',
+        'tags': 'list[ResourceTag]',
+        'cpu_type': 'str'
     }
 
     attribute_map = {
@@ -113,10 +115,12 @@ class ShowInstanceResponse(SdkResponse):
         'features': 'features',
         'domain_name_info': 'domain_name_info',
         'transparent_client_ip_enable': 'transparent_client_ip_enable',
-        'sub_status': 'sub_status'
+        'sub_status': 'sub_status',
+        'tags': 'tags',
+        'cpu_type': 'cpu_type'
     }
 
-    def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, readonly_domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None, features=None, domain_name_info=None, transparent_client_ip_enable=None, sub_status=None):
+    def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, readonly_domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None, features=None, domain_name_info=None, transparent_client_ip_enable=None, sub_status=None, tags=None, cpu_type=None):
         """ShowInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -211,6 +215,10 @@ class ShowInstanceResponse(SdkResponse):
         :type transparent_client_ip_enable: bool
         :param sub_status: 实例子状态。
         :type sub_status: str
+        :param tags: 实例标签键值。
+        :type tags: list[:class:`huaweicloudsdkdcs.v2.ResourceTag`]
+        :param cpu_type: 实例CPU类型，通常为x86_64或aarch64
+        :type cpu_type: str
         """
         
         super(ShowInstanceResponse, self).__init__()
@@ -260,6 +268,8 @@ class ShowInstanceResponse(SdkResponse):
         self._domain_name_info = None
         self._transparent_client_ip_enable = None
         self._sub_status = None
+        self._tags = None
+        self._cpu_type = None
         self.discriminator = None
 
         if vpc_name is not None:
@@ -352,6 +362,10 @@ class ShowInstanceResponse(SdkResponse):
             self.transparent_client_ip_enable = transparent_client_ip_enable
         if sub_status is not None:
             self.sub_status = sub_status
+        if tags is not None:
+            self.tags = tags
+        if cpu_type is not None:
+            self.cpu_type = cpu_type
 
     @property
     def vpc_name(self):
@@ -1336,6 +1350,50 @@ class ShowInstanceResponse(SdkResponse):
         :type sub_status: str
         """
         self._sub_status = sub_status
+
+    @property
+    def tags(self):
+        """Gets the tags of this ShowInstanceResponse.
+
+        实例标签键值。
+
+        :return: The tags of this ShowInstanceResponse.
+        :rtype: list[:class:`huaweicloudsdkdcs.v2.ResourceTag`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ShowInstanceResponse.
+
+        实例标签键值。
+
+        :param tags: The tags of this ShowInstanceResponse.
+        :type tags: list[:class:`huaweicloudsdkdcs.v2.ResourceTag`]
+        """
+        self._tags = tags
+
+    @property
+    def cpu_type(self):
+        """Gets the cpu_type of this ShowInstanceResponse.
+
+        实例CPU类型，通常为x86_64或aarch64
+
+        :return: The cpu_type of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._cpu_type
+
+    @cpu_type.setter
+    def cpu_type(self, cpu_type):
+        """Sets the cpu_type of this ShowInstanceResponse.
+
+        实例CPU类型，通常为x86_64或aarch64
+
+        :param cpu_type: The cpu_type of this ShowInstanceResponse.
+        :type cpu_type: str
+        """
+        self._cpu_type = cpu_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

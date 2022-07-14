@@ -26,7 +26,8 @@ class HttpPutBody:
         'certificate_value': 'str',
         'private_key': 'str',
         'certificate_source': 'int',
-        'http2_status': 'str'
+        'http2_status': 'str',
+        'tls_version': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class HttpPutBody:
         'certificate_value': 'certificate_value',
         'private_key': 'private_key',
         'certificate_source': 'certificate_source',
-        'http2_status': 'http2_status'
+        'http2_status': 'http2_status',
+        'tls_version': 'tls_version'
     }
 
-    def __init__(self, https_status=None, certificate_name=None, certificate_value=None, private_key=None, certificate_source=None, http2_status=None):
+    def __init__(self, https_status=None, certificate_name=None, certificate_value=None, private_key=None, certificate_source=None, http2_status=None, tls_version=None):
         """HttpPutBody
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class HttpPutBody:
         :type certificate_source: int
         :param http2_status: 是否使用HTTP2.0。（on：是，off：否。）,默认关闭，https_status&#x3D;off时，该值不生效。
         :type http2_status: str
+        :param tls_version: 传输层安全性协议。目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议。默认全部开启，不可全部关闭，只可开启连续或单个版本号。多版本开启时，使用逗号拼接传输，例：TLSv1.1,TLSv1.2。
+        :type tls_version: str
         """
         
         
@@ -65,6 +69,7 @@ class HttpPutBody:
         self._private_key = None
         self._certificate_source = None
         self._http2_status = None
+        self._tls_version = None
         self.discriminator = None
 
         if https_status is not None:
@@ -79,6 +84,8 @@ class HttpPutBody:
             self.certificate_source = certificate_source
         if http2_status is not None:
             self.http2_status = http2_status
+        if tls_version is not None:
+            self.tls_version = tls_version
 
     @property
     def https_status(self):
@@ -211,6 +218,28 @@ class HttpPutBody:
         :type http2_status: str
         """
         self._http2_status = http2_status
+
+    @property
+    def tls_version(self):
+        """Gets the tls_version of this HttpPutBody.
+
+        传输层安全性协议。目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议。默认全部开启，不可全部关闭，只可开启连续或单个版本号。多版本开启时，使用逗号拼接传输，例：TLSv1.1,TLSv1.2。
+
+        :return: The tls_version of this HttpPutBody.
+        :rtype: str
+        """
+        return self._tls_version
+
+    @tls_version.setter
+    def tls_version(self, tls_version):
+        """Sets the tls_version of this HttpPutBody.
+
+        传输层安全性协议。目前支持TLSv1.0/1.1/1.2/1.3四个版本的协议。默认全部开启，不可全部关闭，只可开启连续或单个版本号。多版本开启时，使用逗号拼接传输，例：TLSv1.1,TLSv1.2。
+
+        :param tls_version: The tls_version of this HttpPutBody.
+        :type tls_version: str
+        """
+        self._tls_version = tls_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

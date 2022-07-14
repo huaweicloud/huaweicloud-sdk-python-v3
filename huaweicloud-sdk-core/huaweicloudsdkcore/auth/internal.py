@@ -21,49 +21,49 @@
 import os
 import json
 import six
-from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException
+import requests
+from requests.exceptions import HTTPError
+from urllib3.exceptions import SSLError, NewConnectionError
+from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.sdk_request import SdkRequest
 from six.moves.urllib.parse import urlparse
 
 
 class Metadata(object):
     TIME_OUT = 3
-    HOST = "169.254.169.254"
-    ERR_MSG = "Unable to get temporary credential."
-    SCHEMA = "http"
-    METHOD = "GET"
-    PATH = "/openstack/latest/securitykey"
+    URL = "http://169.254.169.254/openstack/latest/securitykey"
 
     @classmethod
-    def get_temporary_credential_from_metadata_request(cls):
-        return SdkRequest(method="GET", schema=cls.SCHEMA, host=cls.HOST, resource_path="",
-                          header_params={}, query_params={}, body="", uri=cls.PATH)
+    def get_credential_from_metadata(cls):
+        resp = None
+        try:
+            resp = requests.get(cls.URL, timeout=cls.TIME_OUT)
+            resp.raise_for_status()
+        except ConnectionError as conn_err:
+            for each in conn_err.args:
+                if isinstance(each.reason, SSLError):
+                    raise exceptions.SslHandShakeException(str(each.reason))
+                if isinstance(each.reason, NewConnectionError):
+                    raise exceptions.ConnectionException(str(each.reason))
+        except HTTPError as http_err:
+            sdk_error = exceptions.SdkError("", http_err.response.status_code, http_err.response.text)
+            raise exceptions.ClientRequestException(http_err.response.status_code, sdk_error)
 
-    @classmethod
-    def get_temporary_credential(cls, http_client):
-        time_out = http_client._timeout
-        proxy = http_client._proxy
-
-        http_client._proxy = None
-        http_client._timeout = cls.TIME_OUT
+        if not resp or not resp.content:
+            raise exceptions.ApiValueError("failed to get credential from metadata, metadata is empty")
 
         try:
-            request = cls.get_temporary_credential_from_metadata_request()
-            http_response = http_client.do_request_sync(request)
-        except ServiceResponseException as e:
-            raise e
-
-        http_client._timeout = time_out
-        http_client._proxy = proxy
-
-        credential = json.loads(six.ensure_str(http_response.content)).get("credential")
-        return credential
+            credential = json.loads(resp.content).get("credential")
+            return credential
+        except json.decoder.JSONDecodeError as decode_err:
+            raise exceptions.ApiValueError("failed to get credential from metadata: {}".format(decode_err))
 
 
 class Iam(object):
     DEFAULT_ENDPOINT = "https://iam.myhuaweicloud.com"
     KEYSTONE_LIST_PROJECT_URI = "/v3/projects"
     KEYSTONE_LIST_AUTH_DOMAINS_URI = "/v3/auth/domains"
+    CREATE_TOKEN_BY_ID_TOKEN_URI = "/v3.0/OS-AUTH/id-token/tokens"
     IAM_ENDPOINT_ENV_NAME = "HUAWEICLOUD_SDK_IAM_ENDPOINT"
 
     @classmethod
@@ -84,11 +84,44 @@ class Iam(object):
 
         return sdk_request
 
+    @staticmethod
+    def get_create_token_by_id_token_request(iam_endpoint, idp_id, id_token, project_id=None, domain_id=None):
+        scope, _id = ("project", project_id) if project_id else ("domain", domain_id)
+        request_body = {
+            "auth": {
+                "id_token": {
+                    "id": id_token
+                },
+                "scope": {
+                    scope: {
+                        "id": _id,
+                    }
+                }
+            }
+        }
+        url_parse_result = urlparse(iam_endpoint)
+        schema = url_parse_result.scheme
+        host = url_parse_result.netloc
+        resource_path = Iam.CREATE_TOKEN_BY_ID_TOKEN_URI
+        header_params = {"X-Idp-Id": idp_id, "Content-Type": "application/json;charset=UTF-8"}
+        return SdkRequest(method="POST", schema=schema, host=host, resource_path=resource_path, uri=resource_path,
+                          header_params=header_params, query_params=[], body=json.dumps(request_body), stream=False)
+
+    @classmethod
+    def create_token_by_id_token(cls, http_client, request):
+        resp = http_client.do_request_sync(request)
+        if not resp or not resp.content or "X-Subject-Token" not in resp.headers:
+            raise exceptions.ApiValueError("failed to get token by id_token")
+
+        token = resp.headers.get("X-Subject-Token")
+        expired_str = json.loads(resp.content).get("token").get("expires_at")
+        return token, expired_str
+
     @classmethod
     def keystone_list_projects(cls, http_client, request):
         try:
             http_response = http_client.do_request_sync(request)
-        except ServiceResponseException as e:
+        except exceptions.ServiceResponseException as e:
             raise e
         if http_response and hasattr(http_response, "content"):
             content = getattr(http_response, "content")
@@ -96,14 +129,14 @@ class Iam(object):
             if "projects" in response and len(response["projects"]) == 1:
                 return response["projects"][0]["id"]
             elif "projects" in response and len(response["projects"]) > 1:
-                raise ApiValueError("Multiple project ids have been returned, \
+                raise exceptions.ApiValueError("Multiple project ids have been returned, \
                      please specify one when initializing the credentials.")
             else:
-                raise ApiValueError("No project id found, "
-                                    "please specify project_id manually when initializing the credentials.")
+                raise exceptions.ApiValueError("No project id found, "
+                                               "please specify project_id manually when initializing the credentials.")
         else:
-            raise ApiValueError("No project id found, "
-                                "please specify project_id manually when initializing the credentials.")
+            raise exceptions.ApiValueError("No project id found, "
+                                           "please specify project_id manually when initializing the credentials.")
 
     @classmethod
     def get_keystone_list_auth_domains_request(cls, iam_endpoint=None):
@@ -121,7 +154,7 @@ class Iam(object):
     def keystone_list_auth_domains(cls, http_client, request):
         try:
             http_response = http_client.do_request_sync(request)
-        except ServiceResponseException as e:
+        except exceptions.ServiceResponseException as e:
             raise e
         if http_response and hasattr(http_response, "content"):
             content = getattr(http_response, "content")
@@ -129,14 +162,14 @@ class Iam(object):
             if "domains" in response and len(response["domains"]) == 1:
                 return response["domains"][0]["id"]
             else:
-                raise ApiValueError("No domain id found, please select one of the following solutions:\n\t"
-                                    "1. Manually specify domain_id when initializing the credentials.\n\t"
-                                    "2. Use the domain account to grant the current account permissions "
-                                    "of the IAM service.\n\t"
-                                    "3. Use AK/SK of the domain account.")
+                raise exceptions.ApiValueError("No domain id found, please select one of the following solutions:\n\t"
+                                               "1. Manually specify domain_id when initializing the credentials.\n\t"
+                                               "2. Use the domain account to grant the current account permissions "
+                                               "of the IAM service.\n\t"
+                                               "3. Use AK/SK of the domain account.")
         else:
-            raise ApiValueError("No domain id found, please select one of the following solutions:\n\t"
-                                "1. Manually specify domain_id when initializing the credentials.\n\t"
-                                "2. Use the domain account to grant the current account permissions of the IAM "
-                                "service.\n\t "
-                                "3. Use AK/SK of the domain account.")
+            raise exceptions.ApiValueError("No domain id found, please select one of the following solutions:\n\t"
+                                           "1. Manually specify domain_id when initializing the credentials.\n\t"
+                                           "2. Use the domain account to grant the current account permissions of "
+                                           "the IAM service.\n\t "
+                                           "3. Use AK/SK of the domain account.")

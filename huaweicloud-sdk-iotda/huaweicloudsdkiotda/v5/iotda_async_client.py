@@ -609,7 +609,7 @@ class IoTDAAsyncClient(Client):
         return self.create_async_command_with_http_info(request)
 
     def create_async_command_with_http_info(self, request):
-        all_params = ['device_id', 'create_async_command_request_body', 'sp_auth_token', 'instance_id']
+        all_params = ['device_id', 'create_async_command_request_body', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -624,8 +624,6 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'sp_auth_token' in local_var_params:
-            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -673,7 +671,7 @@ class IoTDAAsyncClient(Client):
         return self.show_async_device_command_with_http_info(request)
 
     def show_async_device_command_with_http_info(self, request):
-        all_params = ['device_id', 'command_id', 'sp_auth_token', 'instance_id']
+        all_params = ['device_id', 'command_id', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -690,8 +688,6 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'sp_auth_token' in local_var_params:
-            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -1301,7 +1297,7 @@ class IoTDAAsyncClient(Client):
         return self.create_command_with_http_info(request)
 
     def create_command_with_http_info(self, request):
-        all_params = ['device_id', 'create_command_request_body', 'sp_auth_token', 'instance_id']
+        all_params = ['device_id', 'create_command_request_body', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1316,8 +1312,6 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'sp_auth_token' in local_var_params:
-            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -3015,7 +3009,7 @@ class IoTDAAsyncClient(Client):
         return self.list_properties_with_http_info(request)
 
     def list_properties_with_http_info(self, request):
-        all_params = ['device_id', 'service_id', 'sp_auth_token', 'instance_id']
+        all_params = ['device_id', 'service_id', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3032,8 +3026,6 @@ class IoTDAAsyncClient(Client):
             query_params.append(('service_id', local_var_params['service_id']))
 
         header_params = {}
-        if 'sp_auth_token' in local_var_params:
-            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
@@ -3067,7 +3059,7 @@ class IoTDAAsyncClient(Client):
     def update_properties_async(self, request):
         """修改设备属性
 
-        设备的产品模型中定义了物联网平台可向设备下发的属性，应用服务器可调用此接口向指定设备下属性。平台负责将属性以同步方式发送给设备，并将设备执行属性结果同步返回。注意：此接口适用于MQTT设备，暂不支持NB-IoT设备。
+        设备的产品模型中定义了物联网平台可向设备下发的属性，应用服务器可调用此接口向指定设备下发属性。平台负责将属性以同步方式发送给设备，并将设备执行属性结果同步返回。注意：此接口适用于MQTT设备，暂不支持NB-IoT设备。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3079,7 +3071,7 @@ class IoTDAAsyncClient(Client):
         return self.update_properties_with_http_info(request)
 
     def update_properties_with_http_info(self, request):
-        all_params = ['device_id', 'update_properties_request_body', 'sp_auth_token', 'instance_id']
+        all_params = ['device_id', 'update_properties_request_body', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3094,8 +3086,6 @@ class IoTDAAsyncClient(Client):
         query_params = []
 
         header_params = {}
-        if 'sp_auth_token' in local_var_params:
-            header_params['Sp-Auth-Token'] = local_var_params['sp_auth_token']
         if 'instance_id' in local_var_params:
             header_params['Instance-Id'] = local_var_params['instance_id']
 
