@@ -59,13 +59,13 @@ class ShowDomainStatsRequest:
         :type domain_name: str
         :param stat_type: - 网络资源消耗：   - bw（带宽）   - flux（流量）   - bs_bw（回源带宽）   - bs_flux（回源流量） - 访问情况   - req_num（请求总数）   - hit_num（请求命中次数）   - bs_num（回源总数）   - bs_fail_num（回源失败数）   - hit_flux（命中流量） - HTTP状态码（组合指标）   - http_code_2xx（状态码汇总2xx）   - http_code_3xx（状态码汇总3xx）   - http_code_4xx（状态码汇总4xx）   - http_code_5xx（状态码汇总5xx）   - bs_http_code_2xx（回源状态码汇总2xx）   - bs_http_code_3xx（回源状态码汇总3xx）   - bs_http_code_4xx（回源状态码汇总4xx）   - bs_http_code_5xx（回源状态码汇总5xx）   - status_code_2xx（状态码详情2xx）   - status_code_3xx（状态码详情3xx）   - status_code_4xx（状态码详情4xx）   - status_code_5xx（状态码详情5xx）   - bs_status_code_2xx（回源状态码详情2xx）   - bs_status_code_3xx（回源状态码详情3xx）   - bs_status_code_4xx（回源状态码详情4xx）   - bs_status_code_5xx（回源状态码详情5xx）   - status_code和bs_status_code不能一起查询
         :type stat_type: str
-        :param interval: 查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),86400(1天)等。
+        :param interval: - 查询时间间隔，单位：秒，取值说明： - 300(5分钟)：最大查询跨度2天 - 3600(1小时)：最大查询跨度7天 - 86400(1天)：最大查询跨度31天 - 如果不传，默认取对应时间跨度的最小间隔。
         :type interval: int
         :param group_by: 数据分组方式，可选domain，默认不分组
         :type group_by: str
         :param service_area: 服务区域：mainland_china（默认）、outside_mainland_china，当查询回源类指标时该参数无效。
         :type service_area: str
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\&quot;all\&quot;表示所有项目。注意：当使用子账号调用接口时，该参数必传。
         :type enterprise_project_id: str
         """
         
@@ -210,7 +210,7 @@ class ShowDomainStatsRequest:
     def interval(self):
         """Gets the interval of this ShowDomainStatsRequest.
 
-        查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),86400(1天)等。
+        - 查询时间间隔，单位：秒，取值说明： - 300(5分钟)：最大查询跨度2天 - 3600(1小时)：最大查询跨度7天 - 86400(1天)：最大查询跨度31天 - 如果不传，默认取对应时间跨度的最小间隔。
 
         :return: The interval of this ShowDomainStatsRequest.
         :rtype: int
@@ -221,7 +221,7 @@ class ShowDomainStatsRequest:
     def interval(self, interval):
         """Sets the interval of this ShowDomainStatsRequest.
 
-        查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),86400(1天)等。
+        - 查询时间间隔，单位：秒，取值说明： - 300(5分钟)：最大查询跨度2天 - 3600(1小时)：最大查询跨度7天 - 86400(1天)：最大查询跨度31天 - 如果不传，默认取对应时间跨度的最小间隔。
 
         :param interval: The interval of this ShowDomainStatsRequest.
         :type interval: int
@@ -276,7 +276,7 @@ class ShowDomainStatsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowDomainStatsRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
         :return: The enterprise_project_id of this ShowDomainStatsRequest.
         :rtype: str
@@ -287,7 +287,7 @@ class ShowDomainStatsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowDomainStatsRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowDomainStatsRequest.
         :type enterprise_project_id: str

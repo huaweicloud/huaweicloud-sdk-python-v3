@@ -63,7 +63,7 @@ class ShowDomainLocationStatsRequest:
         :type domain_name: str
         :param stat_type: - 网络资源消耗   - bw（带宽）   - flux（流量） - 访问情况   - req_num（请求总数） - HTTP状态码（组合指标）   - http_code_2xx(状态码汇总2xx)   - http_code_3xx(状态码汇总3xx)   - http_code_4xx(状态码汇总4xx)   - http_code_5xx(状态码汇总5xx)   - status_code_2xx(状态码详情2xx)   - status_code_3xx(状态码详情3xx)   - status_code_4xx(状态码详情4xx)   - status_code_5xx(状态码详情5xx)
         :type stat_type: str
-        :param interval: 查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),86400(1天)等。
+        :param interval: - 查询时间间隔，单位：秒，取值说明： - 300(5分钟)：最大查询跨度2天 - 3600(1小时)：最大查询跨度7天 - 86400(1天)：最大查询跨度31天 - 如果不传，默认取对应时间跨度的最小间隔。
         :type interval: int
         :param country: 国家编码，多个以英文逗号分隔，all表示全部，取值见附录
         :type country: str
@@ -73,7 +73,7 @@ class ShowDomainLocationStatsRequest:
         :type isp: str
         :param group_by: 数据分组方式，多个以英文逗号分隔，可选domain、country、province、isp，默认不分组
         :type group_by: str
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\&quot;all\&quot;表示所有项目。注意：当使用子账号调用接口时，该参数必传。
         :type enterprise_project_id: str
         """
         
@@ -224,7 +224,7 @@ class ShowDomainLocationStatsRequest:
     def interval(self):
         """Gets the interval of this ShowDomainLocationStatsRequest.
 
-        查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),86400(1天)等。
+        - 查询时间间隔，单位：秒，取值说明： - 300(5分钟)：最大查询跨度2天 - 3600(1小时)：最大查询跨度7天 - 86400(1天)：最大查询跨度31天 - 如果不传，默认取对应时间跨度的最小间隔。
 
         :return: The interval of this ShowDomainLocationStatsRequest.
         :rtype: int
@@ -235,7 +235,7 @@ class ShowDomainLocationStatsRequest:
     def interval(self, interval):
         """Sets the interval of this ShowDomainLocationStatsRequest.
 
-        查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),86400(1天)等。
+        - 查询时间间隔，单位：秒，取值说明： - 300(5分钟)：最大查询跨度2天 - 3600(1小时)：最大查询跨度7天 - 86400(1天)：最大查询跨度31天 - 如果不传，默认取对应时间跨度的最小间隔。
 
         :param interval: The interval of this ShowDomainLocationStatsRequest.
         :type interval: int
@@ -334,7 +334,7 @@ class ShowDomainLocationStatsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowDomainLocationStatsRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
         :return: The enterprise_project_id of this ShowDomainLocationStatsRequest.
         :rtype: str
@@ -345,7 +345,7 @@ class ShowDomainLocationStatsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowDomainLocationStatsRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowDomainLocationStatsRequest.
         :type enterprise_project_id: str

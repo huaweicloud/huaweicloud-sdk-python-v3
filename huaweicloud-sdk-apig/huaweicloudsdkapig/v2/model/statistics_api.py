@@ -41,7 +41,7 @@ class StatisticsAPI:
         'provider': 'str',
         'req_time': 'datetime',
         'register_time': 'datetime',
-        'status': 'str'
+        'status': 'int'
     }
 
     attribute_map = {
@@ -114,7 +114,7 @@ class StatisticsAPI:
         :param register_time: 记录时间
         :type register_time: datetime
         :param status: 状态
-        :type status: str
+        :type status: int
         """
         
         
@@ -632,7 +632,7 @@ class StatisticsAPI:
         状态
 
         :return: The status of this StatisticsAPI.
-        :rtype: str
+        :rtype: int
         """
         return self._status
 
@@ -643,7 +643,7 @@ class StatisticsAPI:
         状态
 
         :param status: The status of this StatisticsAPI.
-        :type status: str
+        :type status: int
         """
         self._status = status
 

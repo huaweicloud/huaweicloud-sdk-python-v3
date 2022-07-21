@@ -39,7 +39,7 @@ class UpdateBlackWhiteListRequest:
 
         :param domain_id: 需要设置IP黑白名单的域名id。获取方法请参见查询加速域名。
         :type domain_id: str
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\&quot;all\&quot;代表所有项目。注意：当使用子账号调用接口时，该参数必传。
         :type enterprise_project_id: str
         :param body: Body of the UpdateBlackWhiteListRequest
         :type body: :class:`huaweicloudsdkcdn.v1.BlackWhiteListBody`
@@ -84,7 +84,7 @@ class UpdateBlackWhiteListRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this UpdateBlackWhiteListRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\"all\"代表所有项目。注意：当使用子账号调用接口时，该参数必传。
 
         :return: The enterprise_project_id of this UpdateBlackWhiteListRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class UpdateBlackWhiteListRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this UpdateBlackWhiteListRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\"all\"代表所有项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateBlackWhiteListRequest.
         :type enterprise_project_id: str

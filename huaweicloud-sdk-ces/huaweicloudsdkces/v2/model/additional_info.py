@@ -37,11 +37,11 @@ class AdditionalInfo:
 
         The model defined in huaweicloud sdk
 
-        :param resource_id: 该条告警历史对应的资源ID；如：22d98f6c-16d2-4c2d-b424-50e79d82838f。
+        :param resource_id: 该条告警记录对应的资源ID；如：22d98f6c-16d2-4c2d-b424-50e79d82838f。
         :type resource_id: str
-        :param resource_name: 该条告警历史对应的资源名称；如：ECS-Test01。
+        :param resource_name: 该条告警记录对应的资源名称；如：ECS-Test01。
         :type resource_name: str
-        :param event_id: 该条告警历史对应的事件监控ID，资源所产生的事件；如：ev16031292300990kKN8p17J。
+        :param event_id: 该条告警记录对应的事件监控ID，资源所产生的事件；如：ev16031292300990kKN8p17J。
         :type event_id: str
         """
         
@@ -63,7 +63,7 @@ class AdditionalInfo:
     def resource_id(self):
         """Gets the resource_id of this AdditionalInfo.
 
-        该条告警历史对应的资源ID；如：22d98f6c-16d2-4c2d-b424-50e79d82838f。
+        该条告警记录对应的资源ID；如：22d98f6c-16d2-4c2d-b424-50e79d82838f。
 
         :return: The resource_id of this AdditionalInfo.
         :rtype: str
@@ -74,7 +74,7 @@ class AdditionalInfo:
     def resource_id(self, resource_id):
         """Sets the resource_id of this AdditionalInfo.
 
-        该条告警历史对应的资源ID；如：22d98f6c-16d2-4c2d-b424-50e79d82838f。
+        该条告警记录对应的资源ID；如：22d98f6c-16d2-4c2d-b424-50e79d82838f。
 
         :param resource_id: The resource_id of this AdditionalInfo.
         :type resource_id: str
@@ -85,7 +85,7 @@ class AdditionalInfo:
     def resource_name(self):
         """Gets the resource_name of this AdditionalInfo.
 
-        该条告警历史对应的资源名称；如：ECS-Test01。
+        该条告警记录对应的资源名称；如：ECS-Test01。
 
         :return: The resource_name of this AdditionalInfo.
         :rtype: str
@@ -96,7 +96,7 @@ class AdditionalInfo:
     def resource_name(self, resource_name):
         """Sets the resource_name of this AdditionalInfo.
 
-        该条告警历史对应的资源名称；如：ECS-Test01。
+        该条告警记录对应的资源名称；如：ECS-Test01。
 
         :param resource_name: The resource_name of this AdditionalInfo.
         :type resource_name: str
@@ -107,7 +107,7 @@ class AdditionalInfo:
     def event_id(self):
         """Gets the event_id of this AdditionalInfo.
 
-        该条告警历史对应的事件监控ID，资源所产生的事件；如：ev16031292300990kKN8p17J。
+        该条告警记录对应的事件监控ID，资源所产生的事件；如：ev16031292300990kKN8p17J。
 
         :return: The event_id of this AdditionalInfo.
         :rtype: str
@@ -118,7 +118,7 @@ class AdditionalInfo:
     def event_id(self, event_id):
         """Sets the event_id of this AdditionalInfo.
 
-        该条告警历史对应的事件监控ID，资源所产生的事件；如：ev16031292300990kKN8p17J。
+        该条告警记录对应的事件监控ID，资源所产生的事件；如：ev16031292300990kKN8p17J。
 
         :param event_id: The event_id of this AdditionalInfo.
         :type event_id: str

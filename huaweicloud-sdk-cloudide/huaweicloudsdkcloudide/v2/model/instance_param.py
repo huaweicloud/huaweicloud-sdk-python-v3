@@ -39,8 +39,6 @@ class InstanceParam:
         'task_type': 'str',
         'token': 'str',
         'vpc_id': 'str',
-        'instance_user_domain_name': 'str',
-        'instance_user_name': 'str',
         'instance_domain_id': 'str',
         'instance_user_id': 'str'
     }
@@ -64,13 +62,11 @@ class InstanceParam:
         'task_type': 'task_type',
         'token': 'token',
         'vpc_id': 'vpc_id',
-        'instance_user_domain_name': 'instance_user_domain_name',
-        'instance_user_name': 'instance_user_name',
         'instance_domain_id': 'instance_domain_id',
         'instance_user_id': 'instance_user_id'
     }
 
-    def __init__(self, agent_id=None, arch=None, cpu_memory=None, description=None, display_name=None, is_temporary=None, label_tag=None, plugin_enable_list=None, plugin_vars=None, port_id=None, private_ip=None, pvc_quantity=None, refresh_interval=None, repository_id=None, stack_id=None, task_type=None, token=None, vpc_id=None, instance_user_domain_name=None, instance_user_name=None, instance_domain_id=None, instance_user_id=None):
+    def __init__(self, agent_id=None, arch=None, cpu_memory=None, description=None, display_name=None, is_temporary=None, label_tag=None, plugin_enable_list=None, plugin_vars=None, port_id=None, private_ip=None, pvc_quantity=None, refresh_interval=None, repository_id=None, stack_id=None, task_type=None, token=None, vpc_id=None, instance_domain_id=None, instance_user_id=None):
         """InstanceParam
 
         The model defined in huaweicloud sdk
@@ -111,10 +107,6 @@ class InstanceParam:
         :type token: str
         :param vpc_id: 云服务器对应的vpcId，小网连接ecs的场景下使用
         :type vpc_id: str
-        :param instance_user_domain_name: 实例授权用户租户名
-        :type instance_user_domain_name: str
-        :param instance_user_name: 实例授权用户名
-        :type instance_user_name: str
         :param instance_domain_id: 实例授权用户租户ID
         :type instance_domain_id: str
         :param instance_user_id: 实例授权用户ID
@@ -141,8 +133,6 @@ class InstanceParam:
         self._task_type = None
         self._token = None
         self._vpc_id = None
-        self._instance_user_domain_name = None
-        self._instance_user_name = None
         self._instance_domain_id = None
         self._instance_user_id = None
         self.discriminator = None
@@ -178,10 +168,6 @@ class InstanceParam:
             self.token = token
         if vpc_id is not None:
             self.vpc_id = vpc_id
-        if instance_user_domain_name is not None:
-            self.instance_user_domain_name = instance_user_domain_name
-        if instance_user_name is not None:
-            self.instance_user_name = instance_user_name
         if instance_domain_id is not None:
             self.instance_domain_id = instance_domain_id
         if instance_user_id is not None:
@@ -582,50 +568,6 @@ class InstanceParam:
         :type vpc_id: str
         """
         self._vpc_id = vpc_id
-
-    @property
-    def instance_user_domain_name(self):
-        """Gets the instance_user_domain_name of this InstanceParam.
-
-        实例授权用户租户名
-
-        :return: The instance_user_domain_name of this InstanceParam.
-        :rtype: str
-        """
-        return self._instance_user_domain_name
-
-    @instance_user_domain_name.setter
-    def instance_user_domain_name(self, instance_user_domain_name):
-        """Sets the instance_user_domain_name of this InstanceParam.
-
-        实例授权用户租户名
-
-        :param instance_user_domain_name: The instance_user_domain_name of this InstanceParam.
-        :type instance_user_domain_name: str
-        """
-        self._instance_user_domain_name = instance_user_domain_name
-
-    @property
-    def instance_user_name(self):
-        """Gets the instance_user_name of this InstanceParam.
-
-        实例授权用户名
-
-        :return: The instance_user_name of this InstanceParam.
-        :rtype: str
-        """
-        return self._instance_user_name
-
-    @instance_user_name.setter
-    def instance_user_name(self, instance_user_name):
-        """Sets the instance_user_name of this InstanceParam.
-
-        实例授权用户名
-
-        :param instance_user_name: The instance_user_name of this InstanceParam.
-        :type instance_user_name: str
-        """
-        self._instance_user_name = instance_user_name
 
     @property
     def instance_domain_id(self):

@@ -59,7 +59,7 @@ class ShowDomainLocationStatsRequest:
         :type start_time: int
         :param end_time: - 查询结束时间戳，时间戳应设置需为整5分钟，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
         :type end_time: int
-        :param interval: 查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),86400(1天)等。
+        :param interval: - 查询时间间隔，单位：秒，取值说明： - 300(5分钟)：最大查询跨度2天 - 3600(1小时)：最大查询跨度7天 - 86400(1天)：最大查询跨度31天 - 如果不传，默认取对应时间跨度的最小间隔。
         :type interval: int
         :param domain_name: 域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com，all表示查询名下全部域名。
         :type domain_name: str
@@ -67,13 +67,13 @@ class ShowDomainLocationStatsRequest:
         :type stat_type: str
         :param group_by: 数据分组方式，多个以英文逗号分隔，可选domain、country、province、isp，默认不分组。
         :type group_by: str
-        :param country: 国家编码，多个以英文逗号分隔，all表示全部。
+        :param country: 国家编码，多个以英文逗号分隔，all表示全部，取值见附录。
         :type country: str
-        :param province: 省份编码，当country为cn（中国）时有效，多个以英文逗号分隔，all表示全部。
+        :param province: 省份编码，当country为cn（中国）时有效，多个以英文逗号分隔，all表示全部，取值见附录。
         :type province: str
-        :param isp: 运营商编码，多个以英文逗号分隔，all表示全部。
+        :param isp: 运营商编码，多个以英文逗号分隔，all表示全部，取值见附录。
         :type isp: str
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\&quot;all\&quot;表示所有项目。注意：当使用子账号调用接口时，该参数必传。
         :type enterprise_project_id: str
         """
         
@@ -180,7 +180,7 @@ class ShowDomainLocationStatsRequest:
     def interval(self):
         """Gets the interval of this ShowDomainLocationStatsRequest.
 
-        查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),86400(1天)等。
+        - 查询时间间隔，单位：秒，取值说明： - 300(5分钟)：最大查询跨度2天 - 3600(1小时)：最大查询跨度7天 - 86400(1天)：最大查询跨度31天 - 如果不传，默认取对应时间跨度的最小间隔。
 
         :return: The interval of this ShowDomainLocationStatsRequest.
         :rtype: int
@@ -191,7 +191,7 @@ class ShowDomainLocationStatsRequest:
     def interval(self, interval):
         """Sets the interval of this ShowDomainLocationStatsRequest.
 
-        查询时间间隔，单位为秒，可设置值300(5分钟),3600(1小时),86400(1天)等。
+        - 查询时间间隔，单位：秒，取值说明： - 300(5分钟)：最大查询跨度2天 - 3600(1小时)：最大查询跨度7天 - 86400(1天)：最大查询跨度31天 - 如果不传，默认取对应时间跨度的最小间隔。
 
         :param interval: The interval of this ShowDomainLocationStatsRequest.
         :type interval: int
@@ -268,7 +268,7 @@ class ShowDomainLocationStatsRequest:
     def country(self):
         """Gets the country of this ShowDomainLocationStatsRequest.
 
-        国家编码，多个以英文逗号分隔，all表示全部。
+        国家编码，多个以英文逗号分隔，all表示全部，取值见附录。
 
         :return: The country of this ShowDomainLocationStatsRequest.
         :rtype: str
@@ -279,7 +279,7 @@ class ShowDomainLocationStatsRequest:
     def country(self, country):
         """Sets the country of this ShowDomainLocationStatsRequest.
 
-        国家编码，多个以英文逗号分隔，all表示全部。
+        国家编码，多个以英文逗号分隔，all表示全部，取值见附录。
 
         :param country: The country of this ShowDomainLocationStatsRequest.
         :type country: str
@@ -290,7 +290,7 @@ class ShowDomainLocationStatsRequest:
     def province(self):
         """Gets the province of this ShowDomainLocationStatsRequest.
 
-        省份编码，当country为cn（中国）时有效，多个以英文逗号分隔，all表示全部。
+        省份编码，当country为cn（中国）时有效，多个以英文逗号分隔，all表示全部，取值见附录。
 
         :return: The province of this ShowDomainLocationStatsRequest.
         :rtype: str
@@ -301,7 +301,7 @@ class ShowDomainLocationStatsRequest:
     def province(self, province):
         """Sets the province of this ShowDomainLocationStatsRequest.
 
-        省份编码，当country为cn（中国）时有效，多个以英文逗号分隔，all表示全部。
+        省份编码，当country为cn（中国）时有效，多个以英文逗号分隔，all表示全部，取值见附录。
 
         :param province: The province of this ShowDomainLocationStatsRequest.
         :type province: str
@@ -312,7 +312,7 @@ class ShowDomainLocationStatsRequest:
     def isp(self):
         """Gets the isp of this ShowDomainLocationStatsRequest.
 
-        运营商编码，多个以英文逗号分隔，all表示全部。
+        运营商编码，多个以英文逗号分隔，all表示全部，取值见附录。
 
         :return: The isp of this ShowDomainLocationStatsRequest.
         :rtype: str
@@ -323,7 +323,7 @@ class ShowDomainLocationStatsRequest:
     def isp(self, isp):
         """Sets the isp of this ShowDomainLocationStatsRequest.
 
-        运营商编码，多个以英文逗号分隔，all表示全部。
+        运营商编码，多个以英文逗号分隔，all表示全部，取值见附录。
 
         :param isp: The isp of this ShowDomainLocationStatsRequest.
         :type isp: str
@@ -334,7 +334,7 @@ class ShowDomainLocationStatsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowDomainLocationStatsRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
         :return: The enterprise_project_id of this ShowDomainLocationStatsRequest.
         :rtype: str
@@ -345,7 +345,7 @@ class ShowDomainLocationStatsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowDomainLocationStatsRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowDomainLocationStatsRequest.
         :type enterprise_project_id: str

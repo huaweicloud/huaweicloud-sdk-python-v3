@@ -21,29 +21,36 @@ class NeutronListSecurityGroupRulesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'security_group_rules': 'list[NeutronSecurityGroupRule]'
+        'security_group_rules': 'list[NeutronSecurityGroupRule]',
+        'security_group_rules_links': 'list[NeutronPageLink]'
     }
 
     attribute_map = {
-        'security_group_rules': 'security_group_rules'
+        'security_group_rules': 'security_group_rules',
+        'security_group_rules_links': 'security_group_rules_links'
     }
 
-    def __init__(self, security_group_rules=None):
+    def __init__(self, security_group_rules=None, security_group_rules_links=None):
         """NeutronListSecurityGroupRulesResponse
 
         The model defined in huaweicloud sdk
 
         :param security_group_rules: 安全组规则对象列表
         :type security_group_rules: list[:class:`huaweicloudsdkvpc.v2.NeutronSecurityGroupRule`]
+        :param security_group_rules_links: 分页信息
+        :type security_group_rules_links: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
         """
         
         super(NeutronListSecurityGroupRulesResponse, self).__init__()
 
         self._security_group_rules = None
+        self._security_group_rules_links = None
         self.discriminator = None
 
         if security_group_rules is not None:
             self.security_group_rules = security_group_rules
+        if security_group_rules_links is not None:
+            self.security_group_rules_links = security_group_rules_links
 
     @property
     def security_group_rules(self):
@@ -66,6 +73,28 @@ class NeutronListSecurityGroupRulesResponse(SdkResponse):
         :type security_group_rules: list[:class:`huaweicloudsdkvpc.v2.NeutronSecurityGroupRule`]
         """
         self._security_group_rules = security_group_rules
+
+    @property
+    def security_group_rules_links(self):
+        """Gets the security_group_rules_links of this NeutronListSecurityGroupRulesResponse.
+
+        分页信息
+
+        :return: The security_group_rules_links of this NeutronListSecurityGroupRulesResponse.
+        :rtype: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
+        """
+        return self._security_group_rules_links
+
+    @security_group_rules_links.setter
+    def security_group_rules_links(self, security_group_rules_links):
+        """Sets the security_group_rules_links of this NeutronListSecurityGroupRulesResponse.
+
+        分页信息
+
+        :param security_group_rules_links: The security_group_rules_links of this NeutronListSecurityGroupRulesResponse.
+        :type security_group_rules_links: list[:class:`huaweicloudsdkvpc.v2.NeutronPageLink`]
+        """
+        self._security_group_rules_links = security_group_rules_links
 
     def to_dict(self):
         """Returns the model properties as a dict"""

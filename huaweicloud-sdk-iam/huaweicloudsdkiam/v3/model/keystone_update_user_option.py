@@ -45,7 +45,7 @@ class KeystoneUpdateUserOption:
 
         :param domain_id: IAM用户所属账号ID。
         :type domain_id: str
-        :param name: IAM用户新用户名，长度5~32之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
+        :param name: 新IAM用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头
         :type name: str
         :param password: IAM用户密码。 - 系统默认密码最小长度为6位字符，在6-32位之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足账户设置中密码策略的要求。 - 新密码不能与当前密码相同。
         :type password: str
@@ -106,7 +106,7 @@ class KeystoneUpdateUserOption:
     def name(self):
         """Gets the name of this KeystoneUpdateUserOption.
 
-        IAM用户新用户名，长度5~32之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
+        新IAM用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头
 
         :return: The name of this KeystoneUpdateUserOption.
         :rtype: str
@@ -117,7 +117,7 @@ class KeystoneUpdateUserOption:
     def name(self, name):
         """Sets the name of this KeystoneUpdateUserOption.
 
-        IAM用户新用户名，长度5~32之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
+        新IAM用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头
 
         :param name: The name of this KeystoneUpdateUserOption.
         :type name: str

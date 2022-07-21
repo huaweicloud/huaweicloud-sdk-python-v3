@@ -37,7 +37,7 @@ class DisableDomainRequest:
 
         :param domain_id: 加速域名ID。获取方法请参见查询加速域名。
         :type domain_id: str
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\&quot;all\&quot;代表所有项目。注意：当使用子账号调用接口时，该参数必传。
         :type enterprise_project_id: str
         """
         
@@ -77,7 +77,7 @@ class DisableDomainRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this DisableDomainRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\"all\"代表所有项目。注意：当使用子账号调用接口时，该参数必传。
 
         :return: The enterprise_project_id of this DisableDomainRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class DisableDomainRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this DisableDomainRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示修改当前企业项目下加速域名的配置，\"all\"代表所有项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this DisableDomainRequest.
         :type enterprise_project_id: str

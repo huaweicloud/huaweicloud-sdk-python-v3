@@ -26,9 +26,7 @@ class InstanceEdgeParam:
         'description': 'str',
         'instance_name': 'str',
         'instance_user_domain_id': 'str',
-        'instance_user_domain_name': 'str',
         'instance_user_id': 'str',
-        'instance_user_name': 'str',
         'is_temporary': 'bool',
         'plugins': 'list[Plugin]',
         'pvc_quantity': 'str',
@@ -42,9 +40,7 @@ class InstanceEdgeParam:
         'description': 'description',
         'instance_name': 'instance_name',
         'instance_user_domain_id': 'instance_user_domain_id',
-        'instance_user_domain_name': 'instance_user_domain_name',
         'instance_user_id': 'instance_user_id',
-        'instance_user_name': 'instance_user_name',
         'is_temporary': 'is_temporary',
         'plugins': 'plugins',
         'pvc_quantity': 'pvc_quantity',
@@ -52,7 +48,7 @@ class InstanceEdgeParam:
         'stack_id': 'stack_id'
     }
 
-    def __init__(self, arch=None, cpu_memory=None, description=None, instance_name=None, instance_user_domain_id=None, instance_user_domain_name=None, instance_user_id=None, instance_user_name=None, is_temporary=None, plugins=None, pvc_quantity=None, refresh_time=None, stack_id=None):
+    def __init__(self, arch=None, cpu_memory=None, description=None, instance_name=None, instance_user_domain_id=None, instance_user_id=None, is_temporary=None, plugins=None, pvc_quantity=None, refresh_time=None, stack_id=None):
         """InstanceEdgeParam
 
         The model defined in huaweicloud sdk
@@ -67,12 +63,8 @@ class InstanceEdgeParam:
         :type instance_name: str
         :param instance_user_domain_id: 租户id（对应华为云帐号的domainId）
         :type instance_user_domain_id: str
-        :param instance_user_domain_name: 用户租户名
-        :type instance_user_domain_name: str
         :param instance_user_id: 用户id
         :type instance_user_id: str
-        :param instance_user_name: 用户名
-        :type instance_user_name: str
         :param is_temporary: 是否页面显示（以标签配置为准）
         :type is_temporary: bool
         :param plugins: 插件列表
@@ -92,9 +84,7 @@ class InstanceEdgeParam:
         self._description = None
         self._instance_name = None
         self._instance_user_domain_id = None
-        self._instance_user_domain_name = None
         self._instance_user_id = None
-        self._instance_user_name = None
         self._is_temporary = None
         self._plugins = None
         self._pvc_quantity = None
@@ -110,12 +100,8 @@ class InstanceEdgeParam:
         self.instance_name = instance_name
         if instance_user_domain_id is not None:
             self.instance_user_domain_id = instance_user_domain_id
-        if instance_user_domain_name is not None:
-            self.instance_user_domain_name = instance_user_domain_name
         if instance_user_id is not None:
             self.instance_user_id = instance_user_id
-        if instance_user_name is not None:
-            self.instance_user_name = instance_user_name
         if is_temporary is not None:
             self.is_temporary = is_temporary
         if plugins is not None:
@@ -236,28 +222,6 @@ class InstanceEdgeParam:
         self._instance_user_domain_id = instance_user_domain_id
 
     @property
-    def instance_user_domain_name(self):
-        """Gets the instance_user_domain_name of this InstanceEdgeParam.
-
-        用户租户名
-
-        :return: The instance_user_domain_name of this InstanceEdgeParam.
-        :rtype: str
-        """
-        return self._instance_user_domain_name
-
-    @instance_user_domain_name.setter
-    def instance_user_domain_name(self, instance_user_domain_name):
-        """Sets the instance_user_domain_name of this InstanceEdgeParam.
-
-        用户租户名
-
-        :param instance_user_domain_name: The instance_user_domain_name of this InstanceEdgeParam.
-        :type instance_user_domain_name: str
-        """
-        self._instance_user_domain_name = instance_user_domain_name
-
-    @property
     def instance_user_id(self):
         """Gets the instance_user_id of this InstanceEdgeParam.
 
@@ -278,28 +242,6 @@ class InstanceEdgeParam:
         :type instance_user_id: str
         """
         self._instance_user_id = instance_user_id
-
-    @property
-    def instance_user_name(self):
-        """Gets the instance_user_name of this InstanceEdgeParam.
-
-        用户名
-
-        :return: The instance_user_name of this InstanceEdgeParam.
-        :rtype: str
-        """
-        return self._instance_user_name
-
-    @instance_user_name.setter
-    def instance_user_name(self, instance_user_name):
-        """Sets the instance_user_name of this InstanceEdgeParam.
-
-        用户名
-
-        :param instance_user_name: The instance_user_name of this InstanceEdgeParam.
-        :type instance_user_name: str
-        """
-        self._instance_user_name = instance_user_name
 
     @property
     def is_temporary(self):

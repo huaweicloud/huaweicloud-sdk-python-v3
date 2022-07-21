@@ -41,7 +41,7 @@ class KeystoneCreateGroupOption:
         :type description: str
         :param domain_id: 用户组所属账号ID，获取方式请参见：[获取账号ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
         :type domain_id: str
-        :param name: 用户组名，长度小于等于64字节。
+        :param name: 用户组名，长度小于等于128字符。
         :type name: str
         """
         
@@ -106,7 +106,7 @@ class KeystoneCreateGroupOption:
     def name(self):
         """Gets the name of this KeystoneCreateGroupOption.
 
-        用户组名，长度小于等于64字节。
+        用户组名，长度小于等于128字符。
 
         :return: The name of this KeystoneCreateGroupOption.
         :rtype: str
@@ -117,7 +117,7 @@ class KeystoneCreateGroupOption:
     def name(self, name):
         """Sets the name of this KeystoneCreateGroupOption.
 
-        用户组名，长度小于等于64字节。
+        用户组名，长度小于等于128字符。
 
         :param name: The name of this KeystoneCreateGroupOption.
         :type name: str

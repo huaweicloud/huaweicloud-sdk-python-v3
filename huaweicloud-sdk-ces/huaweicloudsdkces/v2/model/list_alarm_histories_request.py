@@ -55,21 +55,21 @@ class ListAlarmHistoriesRequest:
         :type alarm_id: str
         :param name: 告警规则名称
         :type name: str
-        :param status: 告警规则状态
+        :param status: 告警规则状态, ok为正常，alarm为告警，invalid为已失效
         :type status: str
-        :param level: 告警规则等级
+        :param level: 告警级别, 1为紧急，2为重要，3为次要，4为提示
         :type level: int
-        :param namespace: 服务的命名空间
+        :param namespace: 查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
         :type namespace: str
-        :param resource_id: 告警资源ID，多维度情况使用逗号分隔
+        :param resource_id: 告警资源ID，多维度情况按字母升序排列并使用逗号分隔
         :type resource_id: str
-        :param _from: 通过时间筛选traces的起始时间(不包括传入时间) 例如：2022-02-10T10:05:46+08:00
+        :param _from: 查询告警记录的起始时间，例如：2022-02-10T10:05:46+08:00
         :type _from: str
-        :param to: 通过时间筛选traces的终止时间(不包括传入时间) 例如：2022-02-10T10:05:47+08:00
+        :param to: 查询告警记录的截止时间，例如：2022-02-10T10:05:47+08:00
         :type to: str
-        :param offset: 偏移量
+        :param offset: 分页偏移量
         :type offset: int
-        :param limit: 希望的查询的数据量
+        :param limit: 分页大小
         :type limit: int
         """
         
@@ -156,7 +156,7 @@ class ListAlarmHistoriesRequest:
     def status(self):
         """Gets the status of this ListAlarmHistoriesRequest.
 
-        告警规则状态
+        告警规则状态, ok为正常，alarm为告警，invalid为已失效
 
         :return: The status of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -167,7 +167,7 @@ class ListAlarmHistoriesRequest:
     def status(self, status):
         """Sets the status of this ListAlarmHistoriesRequest.
 
-        告警规则状态
+        告警规则状态, ok为正常，alarm为告警，invalid为已失效
 
         :param status: The status of this ListAlarmHistoriesRequest.
         :type status: str
@@ -178,7 +178,7 @@ class ListAlarmHistoriesRequest:
     def level(self):
         """Gets the level of this ListAlarmHistoriesRequest.
 
-        告警规则等级
+        告警级别, 1为紧急，2为重要，3为次要，4为提示
 
         :return: The level of this ListAlarmHistoriesRequest.
         :rtype: int
@@ -189,7 +189,7 @@ class ListAlarmHistoriesRequest:
     def level(self, level):
         """Sets the level of this ListAlarmHistoriesRequest.
 
-        告警规则等级
+        告警级别, 1为紧急，2为重要，3为次要，4为提示
 
         :param level: The level of this ListAlarmHistoriesRequest.
         :type level: int
@@ -200,7 +200,7 @@ class ListAlarmHistoriesRequest:
     def namespace(self):
         """Gets the namespace of this ListAlarmHistoriesRequest.
 
-        服务的命名空间
+        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
         :return: The namespace of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -211,7 +211,7 @@ class ListAlarmHistoriesRequest:
     def namespace(self, namespace):
         """Sets the namespace of this ListAlarmHistoriesRequest.
 
-        服务的命名空间
+        查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
         :param namespace: The namespace of this ListAlarmHistoriesRequest.
         :type namespace: str
@@ -222,7 +222,7 @@ class ListAlarmHistoriesRequest:
     def resource_id(self):
         """Gets the resource_id of this ListAlarmHistoriesRequest.
 
-        告警资源ID，多维度情况使用逗号分隔
+        告警资源ID，多维度情况按字母升序排列并使用逗号分隔
 
         :return: The resource_id of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -233,7 +233,7 @@ class ListAlarmHistoriesRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListAlarmHistoriesRequest.
 
-        告警资源ID，多维度情况使用逗号分隔
+        告警资源ID，多维度情况按字母升序排列并使用逗号分隔
 
         :param resource_id: The resource_id of this ListAlarmHistoriesRequest.
         :type resource_id: str
@@ -244,7 +244,7 @@ class ListAlarmHistoriesRequest:
     def _from(self):
         """Gets the _from of this ListAlarmHistoriesRequest.
 
-        通过时间筛选traces的起始时间(不包括传入时间) 例如：2022-02-10T10:05:46+08:00
+        查询告警记录的起始时间，例如：2022-02-10T10:05:46+08:00
 
         :return: The _from of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -255,7 +255,7 @@ class ListAlarmHistoriesRequest:
     def _from(self, _from):
         """Sets the _from of this ListAlarmHistoriesRequest.
 
-        通过时间筛选traces的起始时间(不包括传入时间) 例如：2022-02-10T10:05:46+08:00
+        查询告警记录的起始时间，例如：2022-02-10T10:05:46+08:00
 
         :param _from: The _from of this ListAlarmHistoriesRequest.
         :type _from: str
@@ -266,7 +266,7 @@ class ListAlarmHistoriesRequest:
     def to(self):
         """Gets the to of this ListAlarmHistoriesRequest.
 
-        通过时间筛选traces的终止时间(不包括传入时间) 例如：2022-02-10T10:05:47+08:00
+        查询告警记录的截止时间，例如：2022-02-10T10:05:47+08:00
 
         :return: The to of this ListAlarmHistoriesRequest.
         :rtype: str
@@ -277,7 +277,7 @@ class ListAlarmHistoriesRequest:
     def to(self, to):
         """Sets the to of this ListAlarmHistoriesRequest.
 
-        通过时间筛选traces的终止时间(不包括传入时间) 例如：2022-02-10T10:05:47+08:00
+        查询告警记录的截止时间，例如：2022-02-10T10:05:47+08:00
 
         :param to: The to of this ListAlarmHistoriesRequest.
         :type to: str
@@ -288,7 +288,7 @@ class ListAlarmHistoriesRequest:
     def offset(self):
         """Gets the offset of this ListAlarmHistoriesRequest.
 
-        偏移量
+        分页偏移量
 
         :return: The offset of this ListAlarmHistoriesRequest.
         :rtype: int
@@ -299,7 +299,7 @@ class ListAlarmHistoriesRequest:
     def offset(self, offset):
         """Sets the offset of this ListAlarmHistoriesRequest.
 
-        偏移量
+        分页偏移量
 
         :param offset: The offset of this ListAlarmHistoriesRequest.
         :type offset: int
@@ -310,7 +310,7 @@ class ListAlarmHistoriesRequest:
     def limit(self):
         """Gets the limit of this ListAlarmHistoriesRequest.
 
-        希望的查询的数据量
+        分页大小
 
         :return: The limit of this ListAlarmHistoriesRequest.
         :rtype: int
@@ -321,7 +321,7 @@ class ListAlarmHistoriesRequest:
     def limit(self, limit):
         """Sets the limit of this ListAlarmHistoriesRequest.
 
-        希望的查询的数据量
+        分页大小
 
         :param limit: The limit of this ListAlarmHistoriesRequest.
         :type limit: int

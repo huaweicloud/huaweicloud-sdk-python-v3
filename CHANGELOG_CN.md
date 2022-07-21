@@ -1,3 +1,87 @@
+# 3.0.99 2022-07-21
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListLatelyApiStatisticsV2`响应参数`status`类型调整 `string` -> `int32`
+
+### HuaweiCloud SDK CES
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListAlarmRules`
+    - `CreateAlarmRules`
+    - `BatchDeleteAlarmRules`
+    - `BatchEnableAlarmRules`
+    - `ListAlarmRuleResources`
+    - `DeleteAlarmRuleResources`
+    - `AddAlarmRuleResources`
+    - `ListAlarmRulePolicies`
+    - `UpdateAlarmRulePolicies`
+    - `ListAgentDimensionInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListAlarmHistories`:
+    - 新增响应参数 `datapoints`
+    - 移除响应参数 `data_points`、`type`、`notification_list`、`type`、`notification_list`
+    - 响应参数`status`类型调整 `string` -> `enum`
+    - 响应参数`level`类型调整 `int32` -> `enum`
+    - 响应参数`type`类型调整 `string` -> `enum`
+    - 响应参数`period`类型调整 `integer` -> `enum`
+    - 响应参数`value`类型调整 `float` -> `double`
+    - 响应参数`suppress_duration`类型调整 `integer` -> `enum`
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 支持接口`ShowInstanceStatusInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstance`移除请求参数 `instance_user_domain_name`、`instance_user_name`
+  - 接口`CreateInstanceBy3rd`移除请求参数 `instance_user_domain_name`、`instance_user_name`
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListHostStatus`
+    - `ListPasswordComplexity`
+    - `ListRiskConfigCheckRules`
+    - `ListRiskConfigHosts`
+    - `ListRiskConfigs`
+    - `ListSecurityEvents`
+    - `ListVulnerabilities`
+    - `ListWeakPasswordUsers`
+    - `ShowCheckRuleDetail`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Image
+
+- _新增特性_
+  - 支持接口`RunImageDescription`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VPC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`NeutronListSecurityGroupRules`新增响应参数 `security_group_rules_links`
+
 # 3.0.98 2022-07-14
 
 ### HuaweiCloud SDK Core

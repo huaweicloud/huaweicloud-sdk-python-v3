@@ -37,7 +37,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
 
         :param alarm_histories: alarmHistories列表
         :type alarm_histories: list[:class:`huaweicloudsdkces.v2.AlarmHistoryItemV2`]
-        :param count: 告警历史列表总数
+        :param count: 告警记录列表总数
         :type count: int
         """
         
@@ -78,7 +78,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListAlarmHistoriesResponse.
 
-        告警历史列表总数
+        告警记录列表总数
 
         :return: The count of this ListAlarmHistoriesResponse.
         :rtype: int
@@ -89,7 +89,7 @@ class ListAlarmHistoriesResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListAlarmHistoriesResponse.
 
-        告警历史列表总数
+        告警记录列表总数
 
         :param count: The count of this ListAlarmHistoriesResponse.
         :type count: int

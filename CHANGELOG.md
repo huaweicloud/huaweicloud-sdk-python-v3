@@ -1,3 +1,87 @@
+# 3.0.99 2022-07-21
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `string` -> `int32` of the response parameter `status` of the interface `ListLatelyApiStatisticsV2`
+
+### HuaweiCloud SDK CES
+
+- _Features_
+  - Support the following interfaces：
+    - `ListAlarmRules`
+    - `CreateAlarmRules`
+    - `BatchDeleteAlarmRules`
+    - `BatchEnableAlarmRules`
+    - `ListAlarmRuleResources`
+    - `DeleteAlarmRuleResources`
+    - `AddAlarmRuleResources`
+    - `ListAlarmRulePolicies`
+    - `UpdateAlarmRulePolicies`
+    - `ListAgentDimensionInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListAlarmHistories`:
+    - Add the response parameter `datapoints`
+    - Remove the response parameters `data_points`, `type`, `notification_list`, `type`, `notification_list`
+    - Modify the type `string` -> `enum` of the response parameter `status`
+    - Modify the type `int32` -> `enum` of the response parameter `level`
+    - Modify the type `string` -> `enum` of the response parameter `type`
+    - Modify the type `integer` -> `enum` of the response parameter `period`
+    - Modify the type `float` -> `double` of the response parameter `value`
+    - Modify the type `integer` -> `enum` of the response parameter `suppress_duration`
+
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
+  - Support the interface `ShowInstanceStatusInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the request parameters `instance_user_domain_name`, `instance_user_name` from the interface `CreateInstance`
+  - Remove the request parameters `instance_user_domain_name`, `instance_user_name` from the interface `CreateInstanceBy3rd`
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - Support the interfaces:
+    - `ListHostStatus`
+    - `ListPasswordComplexity`
+    - `ListRiskConfigCheckRules`
+    - `ListRiskConfigHosts`
+    - `ListRiskConfigs`
+    - `ListSecurityEvents`
+    - `ListVulnerabilities`
+    - `ListWeakPasswordUsers`
+    - `ShowCheckRuleDetail`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Image
+
+- _Features_
+  - Support the interface `RunImageDescription`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VPC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `security_group_rules_links` to the interface `NeutronListSecurityGroupRules`
+
 # 3.0.98 2022-07-14
 
 ### HuaweiCloud SDK Core

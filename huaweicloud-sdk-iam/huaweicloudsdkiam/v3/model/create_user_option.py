@@ -57,7 +57,7 @@ class CreateUserOption:
 
         :param access_mode: IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
         :type access_mode: str
-        :param name: IAM用户名。长度5~32字符之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
+        :param name: IAM用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
         :type name: str
         :param domain_id: IAM用户所属的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
         :type domain_id: str
@@ -146,7 +146,7 @@ class CreateUserOption:
     def name(self):
         """Gets the name of this CreateUserOption.
 
-        IAM用户名。长度5~32字符之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
+        IAM用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
 
         :return: The name of this CreateUserOption.
         :rtype: str
@@ -157,7 +157,7 @@ class CreateUserOption:
     def name(self, name):
         """Sets the name of this CreateUserOption.
 
-        IAM用户名。长度5~32字符之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
+        IAM用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
 
         :param name: The name of this CreateUserOption.
         :type name: str

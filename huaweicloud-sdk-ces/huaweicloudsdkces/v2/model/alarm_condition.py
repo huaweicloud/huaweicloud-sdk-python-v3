@@ -45,9 +45,9 @@ class AlarmCondition:
 
         The model defined in huaweicloud sdk
 
-        :param period: 告警条件判断周期，单位为秒，支持的值为1，300，1200，3600，14400，86400。说明：当period设置为1时，表示以原始的指标数据判断告警。当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为0。
+        :param period: 指标周期，单位是秒； 0是默认值，例如事件类告警该字段就用0即可； 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算；如想了解各个云服务的指标原始周期可以参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)， 300代表指标按5分钟聚合周期为一个数据点参与告警计算。
         :type period: int
-        :param filter: 聚合方式
+        :param filter: 聚合方式, 支持的值为(average|min|max|sum)
         :type filter: str
         :param comparison_operator: 阈值符号
         :type comparison_operator: str
@@ -57,7 +57,7 @@ class AlarmCondition:
         :type unit: str
         :param count: 次数
         :type count: int
-        :param suppress_duration: 发送告警的周期，值可为0, 300, 600, 900, 1800, 3600, 10800, 21600, 43200, 86400；0表示只告警一次，300表示每5分钟告警一次，600表示每10分钟告警一次，900表示每15分钟告警一次，1800表示每30分钟告警一次，3600表示每1小时告警一次，10800表示每3小时告警一次，21600表示每6小时告警一次，43200表示每12小时告警一次，86400表示每1天告警一次。
+        :param suppress_duration: 告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题，0代表不抑制，满足条件即告警；300代表满足告警触发条件后每5分钟告警一次；
         :type suppress_duration: int
         """
         
@@ -86,7 +86,7 @@ class AlarmCondition:
     def period(self):
         """Gets the period of this AlarmCondition.
 
-        告警条件判断周期，单位为秒，支持的值为1，300，1200，3600，14400，86400。说明：当period设置为1时，表示以原始的指标数据判断告警。当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为0。
+        指标周期，单位是秒； 0是默认值，例如事件类告警该字段就用0即可； 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算；如想了解各个云服务的指标原始周期可以参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)， 300代表指标按5分钟聚合周期为一个数据点参与告警计算。
 
         :return: The period of this AlarmCondition.
         :rtype: int
@@ -97,7 +97,7 @@ class AlarmCondition:
     def period(self, period):
         """Sets the period of this AlarmCondition.
 
-        告警条件判断周期，单位为秒，支持的值为1，300，1200，3600，14400，86400。说明：当period设置为1时，表示以原始的指标数据判断告警。当alarm_type为（EVENT.SYS| EVENT.CUSTOM）时允许为0。
+        指标周期，单位是秒； 0是默认值，例如事件类告警该字段就用0即可； 1代表指标的原始周期，比如RDS监控指标原始周期是60s，表示该RDS指标按60s周期为一个数据点参与告警计算；如想了解各个云服务的指标原始周期可以参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)， 300代表指标按5分钟聚合周期为一个数据点参与告警计算。
 
         :param period: The period of this AlarmCondition.
         :type period: int
@@ -108,7 +108,7 @@ class AlarmCondition:
     def filter(self):
         """Gets the filter of this AlarmCondition.
 
-        聚合方式
+        聚合方式, 支持的值为(average|min|max|sum)
 
         :return: The filter of this AlarmCondition.
         :rtype: str
@@ -119,7 +119,7 @@ class AlarmCondition:
     def filter(self, filter):
         """Sets the filter of this AlarmCondition.
 
-        聚合方式
+        聚合方式, 支持的值为(average|min|max|sum)
 
         :param filter: The filter of this AlarmCondition.
         :type filter: str
@@ -218,7 +218,7 @@ class AlarmCondition:
     def suppress_duration(self):
         """Gets the suppress_duration of this AlarmCondition.
 
-        发送告警的周期，值可为0, 300, 600, 900, 1800, 3600, 10800, 21600, 43200, 86400；0表示只告警一次，300表示每5分钟告警一次，600表示每10分钟告警一次，900表示每15分钟告警一次，1800表示每30分钟告警一次，3600表示每1小时告警一次，10800表示每3小时告警一次，21600表示每6小时告警一次，43200表示每12小时告警一次，86400表示每1天告警一次。
+        告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题，0代表不抑制，满足条件即告警；300代表满足告警触发条件后每5分钟告警一次；
 
         :return: The suppress_duration of this AlarmCondition.
         :rtype: int
@@ -229,7 +229,7 @@ class AlarmCondition:
     def suppress_duration(self, suppress_duration):
         """Sets the suppress_duration of this AlarmCondition.
 
-        发送告警的周期，值可为0, 300, 600, 900, 1800, 3600, 10800, 21600, 43200, 86400；0表示只告警一次，300表示每5分钟告警一次，600表示每10分钟告警一次，900表示每15分钟告警一次，1800表示每30分钟告警一次，3600表示每1小时告警一次，10800表示每3小时告警一次，21600表示每6小时告警一次，43200表示每12小时告警一次，86400表示每1天告警一次。
+        告警抑制时间，单位为秒，对应页面上创建告警规则时告警策略最后一个字段，该字段主要为解决告警频繁的问题，0代表不抑制，满足条件即告警；300代表满足告警触发条件后每5分钟告警一次；
 
         :param suppress_duration: The suppress_duration of this AlarmCondition.
         :type suppress_duration: int

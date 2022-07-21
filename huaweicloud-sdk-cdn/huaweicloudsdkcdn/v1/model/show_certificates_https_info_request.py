@@ -49,7 +49,7 @@ class ShowCertificatesHttpsInfoRequest:
         :type domain_name: str
         :param user_domain_id: 域名所属用户的domain_id。
         :type user_domain_id: str
-        :param enterprise_project_id: 企业项目ID。该参数仅对开启了企业项目功能的用户生效，不传表示查询default项目。\&quot;ALL\&quot;表示查询所有该用户已授权项目的资源。注意：当使用子账号调用接口时，该参数必传。
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\&quot;all\&quot;表示所有项目。注意：当使用子账号调用接口时，该参数必传。
         :type enterprise_project_id: str
         """
         
@@ -165,7 +165,7 @@ class ShowCertificatesHttpsInfoRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowCertificatesHttpsInfoRequest.
 
-        企业项目ID。该参数仅对开启了企业项目功能的用户生效，不传表示查询default项目。\"ALL\"表示查询所有该用户已授权项目的资源。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
         :return: The enterprise_project_id of this ShowCertificatesHttpsInfoRequest.
         :rtype: str
@@ -176,7 +176,7 @@ class ShowCertificatesHttpsInfoRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowCertificatesHttpsInfoRequest.
 
-        企业项目ID。该参数仅对开启了企业项目功能的用户生效，不传表示查询default项目。\"ALL\"表示查询所有该用户已授权项目的资源。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowCertificatesHttpsInfoRequest.
         :type enterprise_project_id: str

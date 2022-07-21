@@ -22,6 +22,7 @@ from huaweicloudsdkcloudide.v2.model.expire_vo import ExpireVo
 from huaweicloudsdkcloudide.v2.model.extension_authorization import ExtensionAuthorization
 from huaweicloudsdkcloudide.v2.model.instance_edge_param import InstanceEdgeParam
 from huaweicloudsdkcloudide.v2.model.instance_param import InstanceParam
+from huaweicloudsdkcloudide.v2.model.instance_status_response import InstanceStatusResponse
 from huaweicloudsdkcloudide.v2.model.instance_update_param import InstanceUpdateParam
 from huaweicloudsdkcloudide.v2.model.instances_response_instances_vo_result import InstancesResponseInstancesVOResult
 from huaweicloudsdkcloudide.v2.model.instances_vo import InstancesVO
@@ -44,6 +45,8 @@ from huaweicloudsdkcloudide.v2.model.show_extension_authorization_request import
 from huaweicloudsdkcloudide.v2.model.show_extension_authorization_response import ShowExtensionAuthorizationResponse
 from huaweicloudsdkcloudide.v2.model.show_instance_request import ShowInstanceRequest
 from huaweicloudsdkcloudide.v2.model.show_instance_response import ShowInstanceResponse
+from huaweicloudsdkcloudide.v2.model.show_instance_status_info_request import ShowInstanceStatusInfoRequest
+from huaweicloudsdkcloudide.v2.model.show_instance_status_info_response import ShowInstanceStatusInfoResponse
 from huaweicloudsdkcloudide.v2.model.show_price_request import ShowPriceRequest
 from huaweicloudsdkcloudide.v2.model.show_price_response import ShowPriceResponse
 from huaweicloudsdkcloudide.v2.model.source_storage import SourceStorage

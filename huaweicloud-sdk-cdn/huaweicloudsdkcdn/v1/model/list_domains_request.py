@@ -57,7 +57,7 @@ class ListDomainsRequest:
         :type page_size: int
         :param page_number: 查询的页码。取值范围1-65535，不设值时默认值为1。
         :type page_number: int
-        :param enterprise_project_id: 企业项目ID。该参数仅对开启了企业项目功能的用户生效，不传表示查询default项目。\&quot;ALL\&quot;表示查询所有该用户已授权项目的资源。注意：当使用子账号调用接口时，该参数必传。
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\&quot;all\&quot;表示所有项目。注意：当使用子账号调用接口时，该参数必传。
         :type enterprise_project_id: str
         """
         
@@ -223,7 +223,7 @@ class ListDomainsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListDomainsRequest.
 
-        企业项目ID。该参数仅对开启了企业项目功能的用户生效，不传表示查询default项目。\"ALL\"表示查询所有该用户已授权项目的资源。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
         :return: The enterprise_project_id of this ListDomainsRequest.
         :rtype: str
@@ -234,7 +234,7 @@ class ListDomainsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListDomainsRequest.
 
-        企业项目ID。该参数仅对开启了企业项目功能的用户生效，不传表示查询default项目。\"ALL\"表示查询所有该用户已授权项目的资源。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
         :param enterprise_project_id: The enterprise_project_id of this ListDomainsRequest.
         :type enterprise_project_id: str

@@ -69,7 +69,7 @@ class UpdateUserResult:
         :type xuser_type: str
         :param description: IAM用户的新描述信息。
         :type description: str
-        :param name: IAM用户新用户名，长度5~32字符之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
+        :param name: IAM用户新用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
         :type name: str
         :param phone: IAM用户新手机号，纯数字，长度小于等于32字符。必须与国家码同时存在。
         :type phone: str
@@ -245,7 +245,7 @@ class UpdateUserResult:
     def name(self):
         """Gets the name of this UpdateUserResult.
 
-        IAM用户新用户名，长度5~32字符之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
+        IAM用户新用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
 
         :return: The name of this UpdateUserResult.
         :rtype: str
@@ -256,7 +256,7 @@ class UpdateUserResult:
     def name(self, name):
         """Sets the name of this UpdateUserResult.
 
-        IAM用户新用户名，长度5~32字符之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格。
+        IAM用户新用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
 
         :param name: The name of this UpdateUserResult.
         :type name: str
