@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ExecuteTbSessionReq:
+class ShowMonthUsagesResponse(SdkResponse):
 
     """
     Attributes:
@@ -21,79 +21,51 @@ class ExecuteTbSessionReq:
     sensitive_list = []
 
     openapi_types = {
-        'reply': 'str',
-        'type': 'int'
+        'month_usages': 'list[MonthUsageVo]'
     }
 
     attribute_map = {
-        'reply': 'reply',
-        'type': 'type'
+        'month_usages': 'month_usages'
     }
 
-    def __init__(self, reply=None, type=None):
-        """ExecuteTbSessionReq
+    def __init__(self, month_usages=None):
+        """ShowMonthUsagesResponse
 
         The model defined in huaweicloud sdk
 
-        :param reply: 客户回复。
-        :type reply: str
-        :param type: 客户回复属性，0表示通用回复，1表示客户打断， 2表示客户长时未回复。
-        :type type: int
+        :param month_usages: 月用量列表
+        :type month_usages: list[:class:`huaweicloudsdkgsl.v3.MonthUsageVo`]
         """
         
-        
+        super(ShowMonthUsagesResponse, self).__init__()
 
-        self._reply = None
-        self._type = None
+        self._month_usages = None
         self.discriminator = None
 
-        if reply is not None:
-            self.reply = reply
-        self.type = type
+        if month_usages is not None:
+            self.month_usages = month_usages
 
     @property
-    def reply(self):
-        """Gets the reply of this ExecuteTbSessionReq.
+    def month_usages(self):
+        """Gets the month_usages of this ShowMonthUsagesResponse.
 
-        客户回复。
+        月用量列表
 
-        :return: The reply of this ExecuteTbSessionReq.
-        :rtype: str
+        :return: The month_usages of this ShowMonthUsagesResponse.
+        :rtype: list[:class:`huaweicloudsdkgsl.v3.MonthUsageVo`]
         """
-        return self._reply
+        return self._month_usages
 
-    @reply.setter
-    def reply(self, reply):
-        """Sets the reply of this ExecuteTbSessionReq.
+    @month_usages.setter
+    def month_usages(self, month_usages):
+        """Sets the month_usages of this ShowMonthUsagesResponse.
 
-        客户回复。
+        月用量列表
 
-        :param reply: The reply of this ExecuteTbSessionReq.
-        :type reply: str
+        :param month_usages: The month_usages of this ShowMonthUsagesResponse.
+        :type month_usages: list[:class:`huaweicloudsdkgsl.v3.MonthUsageVo`]
         """
-        self._reply = reply
-
-    @property
-    def type(self):
-        """Gets the type of this ExecuteTbSessionReq.
-
-        客户回复属性，0表示通用回复，1表示客户打断， 2表示客户长时未回复。
-
-        :return: The type of this ExecuteTbSessionReq.
-        :rtype: int
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """Sets the type of this ExecuteTbSessionReq.
-
-        客户回复属性，0表示通用回复，1表示客户打断， 2表示客户长时未回复。
-
-        :param type: The type of this ExecuteTbSessionReq.
-        :type type: int
-        """
-        self._type = type
+        self._month_usages = month_usages
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -137,7 +109,7 @@ class ExecuteTbSessionReq:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ExecuteTbSessionReq):
+        if not isinstance(other, ShowMonthUsagesResponse):
             return False
 
         return self.__dict__ == other.__dict__

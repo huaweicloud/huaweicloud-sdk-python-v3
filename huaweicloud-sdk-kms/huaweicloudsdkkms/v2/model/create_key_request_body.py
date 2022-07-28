@@ -27,7 +27,8 @@ class CreateKeyRequestBody:
         'key_description': 'str',
         'origin': 'str',
         'enterprise_project_id': 'str',
-        'sequence': 'str'
+        'sequence': 'str',
+        'keystore_id': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class CreateKeyRequestBody:
         'key_description': 'key_description',
         'origin': 'origin',
         'enterprise_project_id': 'enterprise_project_id',
-        'sequence': 'sequence'
+        'sequence': 'sequence',
+        'keystore_id': 'keystore_id'
     }
 
-    def __init__(self, key_alias=None, key_spec=None, key_usage=None, key_description=None, origin=None, enterprise_project_id=None, sequence=None):
+    def __init__(self, key_alias=None, key_spec=None, key_usage=None, key_description=None, origin=None, enterprise_project_id=None, sequence=None, keystore_id=None):
         """CreateKeyRequestBody
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class CreateKeyRequestBody:
         :type enterprise_project_id: str
         :param sequence: 请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
         :type sequence: str
+        :param keystore_id: 密钥库ID，默认使用KMS默认密钥库
+        :type keystore_id: str
         """
         
         
@@ -70,6 +74,7 @@ class CreateKeyRequestBody:
         self._origin = None
         self._enterprise_project_id = None
         self._sequence = None
+        self._keystore_id = None
         self.discriminator = None
 
         self.key_alias = key_alias
@@ -85,6 +90,8 @@ class CreateKeyRequestBody:
             self.enterprise_project_id = enterprise_project_id
         if sequence is not None:
             self.sequence = sequence
+        if keystore_id is not None:
+            self.keystore_id = keystore_id
 
     @property
     def key_alias(self):
@@ -239,6 +246,28 @@ class CreateKeyRequestBody:
         :type sequence: str
         """
         self._sequence = sequence
+
+    @property
+    def keystore_id(self):
+        """Gets the keystore_id of this CreateKeyRequestBody.
+
+        密钥库ID，默认使用KMS默认密钥库
+
+        :return: The keystore_id of this CreateKeyRequestBody.
+        :rtype: str
+        """
+        return self._keystore_id
+
+    @keystore_id.setter
+    def keystore_id(self, keystore_id):
+        """Sets the keystore_id of this CreateKeyRequestBody.
+
+        密钥库ID，默认使用KMS默认密钥库
+
+        :param keystore_id: The keystore_id of this CreateKeyRequestBody.
+        :type keystore_id: str
+        """
+        self._keystore_id = keystore_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -59,7 +59,7 @@ class ListGaussMySqlErrorLogRequest:
         :type offset: int
         :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100
         :type limit: int
-        :param level: 日志级别
+        :param level: 日志级别。  取值范围：  - ALL - INFO - LOG - WARNING - ERROR - FATAL - PANIC - NOTE
         :type level: str
         :param node_id: 节点ID
         :type node_id: str
@@ -226,7 +226,7 @@ class ListGaussMySqlErrorLogRequest:
     def level(self):
         """Gets the level of this ListGaussMySqlErrorLogRequest.
 
-        日志级别
+        日志级别。  取值范围：  - ALL - INFO - LOG - WARNING - ERROR - FATAL - PANIC - NOTE
 
         :return: The level of this ListGaussMySqlErrorLogRequest.
         :rtype: str
@@ -237,7 +237,7 @@ class ListGaussMySqlErrorLogRequest:
     def level(self, level):
         """Sets the level of this ListGaussMySqlErrorLogRequest.
 
-        日志级别
+        日志级别。  取值范围：  - ALL - INFO - LOG - WARNING - ERROR - FATAL - PANIC - NOTE
 
         :param level: The level of this ListGaussMySqlErrorLogRequest.
         :type level: str

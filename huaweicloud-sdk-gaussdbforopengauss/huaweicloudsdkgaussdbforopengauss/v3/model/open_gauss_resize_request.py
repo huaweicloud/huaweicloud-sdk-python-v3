@@ -22,7 +22,7 @@ class OpenGaussResizeRequest:
 
     openapi_types = {
         'flavor_ref': 'str',
-        'is_auto_pay': 'str'
+        'is_auto_pay': 'bool'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class OpenGaussResizeRequest:
         :param flavor_ref: 规格变更时选定的目标规格。新规格的资源规格编码。参考表1中GaussDB(for openGauss)的“规格编码”列内容获取。
         :type flavor_ref: str
         :param is_auto_pay: 创建包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。true，表示自动从账户中支付。false，表示手动从账户中支付，默认为该方式。
-        :type is_auto_pay: str
+        :type is_auto_pay: bool
         """
         
         
@@ -80,7 +80,7 @@ class OpenGaussResizeRequest:
         创建包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。true，表示自动从账户中支付。false，表示手动从账户中支付，默认为该方式。
 
         :return: The is_auto_pay of this OpenGaussResizeRequest.
-        :rtype: str
+        :rtype: bool
         """
         return self._is_auto_pay
 
@@ -91,7 +91,7 @@ class OpenGaussResizeRequest:
         创建包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。true，表示自动从账户中支付。false，表示手动从账户中支付，默认为该方式。
 
         :param is_auto_pay: The is_auto_pay of this OpenGaussResizeRequest.
-        :type is_auto_pay: str
+        :type is_auto_pay: bool
         """
         self._is_auto_pay = is_auto_pay
 

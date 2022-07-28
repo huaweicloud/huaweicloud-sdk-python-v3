@@ -22,15 +22,17 @@ class OpenGaussInstanceActionRequest:
 
     openapi_types = {
         'expand_cluster': 'OpenGaussExpandCluster',
-        'enlarge_volume': 'OpenGaussEnlargeVolume'
+        'enlarge_volume': 'OpenGaussEnlargeVolume',
+        'is_auto_pay': 'str'
     }
 
     attribute_map = {
         'expand_cluster': 'expand_cluster',
-        'enlarge_volume': 'enlarge_volume'
+        'enlarge_volume': 'enlarge_volume',
+        'is_auto_pay': 'is_auto_pay'
     }
 
-    def __init__(self, expand_cluster=None, enlarge_volume=None):
+    def __init__(self, expand_cluster=None, enlarge_volume=None, is_auto_pay=None):
         """OpenGaussInstanceActionRequest
 
         The model defined in huaweicloud sdk
@@ -39,18 +41,23 @@ class OpenGaussInstanceActionRequest:
         :type expand_cluster: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussExpandCluster`
         :param enlarge_volume: 
         :type enlarge_volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussEnlargeVolume`
+        :param is_auto_pay: 包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。  true，表示自动从账户中支付。 false，表示手动从账户中支付，默认为该方式。
+        :type is_auto_pay: str
         """
         
         
 
         self._expand_cluster = None
         self._enlarge_volume = None
+        self._is_auto_pay = None
         self.discriminator = None
 
         if expand_cluster is not None:
             self.expand_cluster = expand_cluster
         if enlarge_volume is not None:
             self.enlarge_volume = enlarge_volume
+        if is_auto_pay is not None:
+            self.is_auto_pay = is_auto_pay
 
     @property
     def expand_cluster(self):
@@ -91,6 +98,28 @@ class OpenGaussInstanceActionRequest:
         :type enlarge_volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussEnlargeVolume`
         """
         self._enlarge_volume = enlarge_volume
+
+    @property
+    def is_auto_pay(self):
+        """Gets the is_auto_pay of this OpenGaussInstanceActionRequest.
+
+        包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。  true，表示自动从账户中支付。 false，表示手动从账户中支付，默认为该方式。
+
+        :return: The is_auto_pay of this OpenGaussInstanceActionRequest.
+        :rtype: str
+        """
+        return self._is_auto_pay
+
+    @is_auto_pay.setter
+    def is_auto_pay(self, is_auto_pay):
+        """Sets the is_auto_pay of this OpenGaussInstanceActionRequest.
+
+        包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。  true，表示自动从账户中支付。 false，表示手动从账户中支付，默认为该方式。
+
+        :param is_auto_pay: The is_auto_pay of this OpenGaussInstanceActionRequest.
+        :type is_auto_pay: str
+        """
+        self._is_auto_pay = is_auto_pay
 
     def to_dict(self):
         """Returns the model properties as a dict"""

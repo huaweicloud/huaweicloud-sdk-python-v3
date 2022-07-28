@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ExecuteTbSessionResponse(SdkResponse):
+class TaurusModifyProxyWeightReadonlyNode:
 
     """
     Attributes:
@@ -21,51 +21,80 @@ class ExecuteTbSessionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'questions': 'list[ExecuteTbQuestion]'
+        'id': 'str',
+        'weight': 'int'
     }
 
     attribute_map = {
-        'questions': 'questions'
+        'id': 'id',
+        'weight': 'weight'
     }
 
-    def __init__(self, questions=None):
-        """ExecuteTbSessionResponse
+    def __init__(self, id=None, weight=None):
+        """TaurusModifyProxyWeightReadonlyNode
 
         The model defined in huaweicloud sdk
 
-        :param questions: 所有数据的信息。
-        :type questions: list[:class:`huaweicloudsdkcbs.v1.ExecuteTbQuestion`]
+        :param id: 只读节点id
+        :type id: str
+        :param weight: 只读节点权重
+        :type weight: int
         """
         
-        super(ExecuteTbSessionResponse, self).__init__()
+        
 
-        self._questions = None
+        self._id = None
+        self._weight = None
         self.discriminator = None
 
-        if questions is not None:
-            self.questions = questions
+        if id is not None:
+            self.id = id
+        if weight is not None:
+            self.weight = weight
 
     @property
-    def questions(self):
-        """Gets the questions of this ExecuteTbSessionResponse.
+    def id(self):
+        """Gets the id of this TaurusModifyProxyWeightReadonlyNode.
 
-        所有数据的信息。
+        只读节点id
 
-        :return: The questions of this ExecuteTbSessionResponse.
-        :rtype: list[:class:`huaweicloudsdkcbs.v1.ExecuteTbQuestion`]
+        :return: The id of this TaurusModifyProxyWeightReadonlyNode.
+        :rtype: str
         """
-        return self._questions
+        return self._id
 
-    @questions.setter
-    def questions(self, questions):
-        """Sets the questions of this ExecuteTbSessionResponse.
+    @id.setter
+    def id(self, id):
+        """Sets the id of this TaurusModifyProxyWeightReadonlyNode.
 
-        所有数据的信息。
+        只读节点id
 
-        :param questions: The questions of this ExecuteTbSessionResponse.
-        :type questions: list[:class:`huaweicloudsdkcbs.v1.ExecuteTbQuestion`]
+        :param id: The id of this TaurusModifyProxyWeightReadonlyNode.
+        :type id: str
         """
-        self._questions = questions
+        self._id = id
+
+    @property
+    def weight(self):
+        """Gets the weight of this TaurusModifyProxyWeightReadonlyNode.
+
+        只读节点权重
+
+        :return: The weight of this TaurusModifyProxyWeightReadonlyNode.
+        :rtype: int
+        """
+        return self._weight
+
+    @weight.setter
+    def weight(self, weight):
+        """Sets the weight of this TaurusModifyProxyWeightReadonlyNode.
+
+        只读节点权重
+
+        :param weight: The weight of this TaurusModifyProxyWeightReadonlyNode.
+        :type weight: int
+        """
+        self._weight = weight
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -109,7 +138,7 @@ class ExecuteTbSessionResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ExecuteTbSessionResponse):
+        if not isinstance(other, TaurusModifyProxyWeightReadonlyNode):
             return False
 
         return self.__dict__ == other.__dict__

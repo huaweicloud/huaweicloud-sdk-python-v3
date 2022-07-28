@@ -1323,6 +1323,70 @@ class GaussDBAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def set_gauss_my_sql_proxy_weight_async(self, request):
+        """设置读写分离权重
+
+        设置读写分离权重
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SetGaussMySqlProxyWeight
+        :type request: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlProxyWeightRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlProxyWeightResponse`
+        """
+        return self.set_gauss_my_sql_proxy_weight_with_http_info(request)
+
+    def set_gauss_my_sql_proxy_weight_with_http_info(self, request):
+        all_params = ['instance_id', 'proxy_id', 'taurus_modify_proxy_weight_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'proxy_id' in local_var_params:
+            path_params['proxy_id'] = local_var_params['proxy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/weight',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetGaussMySqlProxyWeightResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def set_gauss_my_sql_quotas_async(self, request):
         """设置租户基于企业项目的资源配额
 
@@ -1438,6 +1502,66 @@ class GaussDBAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowAuditLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_dedicated_resource_info_async(self, request):
+        """查询专属资源信息详情
+
+        查询专属资源信息详情。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowDedicatedResourceInfo
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ShowDedicatedResourceInfoRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowDedicatedResourceInfoResponse`
+        """
+        return self.show_dedicated_resource_info_with_http_info(request)
+
+    def show_dedicated_resource_info_with_http_info(self, request):
+        all_params = ['dedicated_resource_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'dedicated_resource_id' in local_var_params:
+            path_params['dedicated_resource_id'] = local_var_params['dedicated_resource_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/dedicated-resource/{dedicated_resource_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDedicatedResourceInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1764,7 +1888,7 @@ class GaussDBAsyncClient(Client):
     def show_gauss_my_sql_job_info_async(self, request):
         """获取指定ID的任务信息
 
-        获取指定ID的任务信息。
+        获取GaussDB(for MySQL)任务中心指定ID的任务信息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

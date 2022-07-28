@@ -63,11 +63,11 @@ class Backups:
         :type begin_time: str
         :param end_time: 备份结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
         :type end_time: str
-        :param status: 备份状态
+        :param status: 备份状态，取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。 - AVAILABLE：备份可用。
         :type status: str
         :param take_up_time: 备份花费时间(单位：minutes)
         :type take_up_time: int
-        :param type: 备份类型
+        :param type: 备份类型，取值： - auto：自动全量备份。 - manual：手动全量备份
         :type type: str
         :param size: 备份大小，(单位：MB)
         :type size: int
@@ -75,7 +75,7 @@ class Backups:
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param backup_level: 备份级别。当开启一级备份开关时，返回该参数。
+        :param backup_level: 备份级别。当开启一级备份开关时，返回该参数。  取值： - 0：备份正在创建中或者备份失败。 - 1：一级备份。 - 2：二级备份。
         :type backup_level: str
         :param description: 备份文件描述信息
         :type description: str
@@ -214,7 +214,7 @@ class Backups:
     def status(self):
         """Gets the status of this Backups.
 
-        备份状态
+        备份状态，取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。 - AVAILABLE：备份可用。
 
         :return: The status of this Backups.
         :rtype: str
@@ -225,7 +225,7 @@ class Backups:
     def status(self, status):
         """Sets the status of this Backups.
 
-        备份状态
+        备份状态，取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。 - AVAILABLE：备份可用。
 
         :param status: The status of this Backups.
         :type status: str
@@ -258,7 +258,7 @@ class Backups:
     def type(self):
         """Gets the type of this Backups.
 
-        备份类型
+        备份类型，取值： - auto：自动全量备份。 - manual：手动全量备份
 
         :return: The type of this Backups.
         :rtype: str
@@ -269,7 +269,7 @@ class Backups:
     def type(self, type):
         """Sets the type of this Backups.
 
-        备份类型
+        备份类型，取值： - auto：自动全量备份。 - manual：手动全量备份
 
         :param type: The type of this Backups.
         :type type: str
@@ -344,7 +344,7 @@ class Backups:
     def backup_level(self):
         """Gets the backup_level of this Backups.
 
-        备份级别。当开启一级备份开关时，返回该参数。
+        备份级别。当开启一级备份开关时，返回该参数。  取值： - 0：备份正在创建中或者备份失败。 - 1：一级备份。 - 2：二级备份。
 
         :return: The backup_level of this Backups.
         :rtype: str
@@ -355,7 +355,7 @@ class Backups:
     def backup_level(self, backup_level):
         """Sets the backup_level of this Backups.
 
-        备份级别。当开启一级备份开关时，返回该参数。
+        备份级别。当开启一级备份开关时，返回该参数。  取值： - 0：备份正在创建中或者备份失败。 - 1：一级备份。 - 2：二级备份。
 
         :param backup_level: The backup_level of this Backups.
         :type backup_level: str

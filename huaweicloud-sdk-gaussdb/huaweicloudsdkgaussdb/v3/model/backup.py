@@ -53,9 +53,9 @@ class Backup:
         :type description: str
         :param begin_time: 备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”，其中T指时间字段的开始；Z指时区偏移量。
         :type begin_time: str
-        :param status: 备份状态
+        :param status: 备份状态，取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。 - AVAILABLE：备份可用。
         :type status: str
-        :param type: 备份类型，取值：
+        :param type: 备份类型，取值： - manual：手动全量备份。
         :type type: str
         :param instance_id: 实例ID。
         :type instance_id: str
@@ -179,7 +179,7 @@ class Backup:
     def status(self):
         """Gets the status of this Backup.
 
-        备份状态
+        备份状态，取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。 - AVAILABLE：备份可用。
 
         :return: The status of this Backup.
         :rtype: str
@@ -190,7 +190,7 @@ class Backup:
     def status(self, status):
         """Sets the status of this Backup.
 
-        备份状态
+        备份状态，取值： - BUILDING：备份中。 - COMPLETED：备份完成。 - FAILED：备份失败。 - AVAILABLE：备份可用。
 
         :param status: The status of this Backup.
         :type status: str
@@ -201,7 +201,7 @@ class Backup:
     def type(self):
         """Gets the type of this Backup.
 
-        备份类型，取值：
+        备份类型，取值： - manual：手动全量备份。
 
         :return: The type of this Backup.
         :rtype: str
@@ -212,7 +212,7 @@ class Backup:
     def type(self, type):
         """Sets the type of this Backup.
 
-        备份类型，取值：
+        备份类型，取值： - manual：手动全量备份。
 
         :param type: The type of this Backup.
         :type type: str

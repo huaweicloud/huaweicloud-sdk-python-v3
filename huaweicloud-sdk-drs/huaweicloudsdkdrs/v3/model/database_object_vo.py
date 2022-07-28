@@ -47,8 +47,10 @@ class DatabaseObjectVO:
         self._select = None
         self.discriminator = None
 
-        self.id = id
-        self.select = select
+        if id is not None:
+            self.id = id
+        if select is not None:
+            self.select = select
 
     @property
     def id(self):

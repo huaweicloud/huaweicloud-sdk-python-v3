@@ -36,7 +36,9 @@ class KeyDetails:
         'expiration_time': 'str',
         'origin': 'str',
         'key_rotation_enabled': 'str',
-        'sys_enterprise_project_id': 'str'
+        'sys_enterprise_project_id': 'str',
+        'keystore_id': 'str',
+        'key_label': 'str'
     }
 
     attribute_map = {
@@ -55,10 +57,12 @@ class KeyDetails:
         'expiration_time': 'expiration_time',
         'origin': 'origin',
         'key_rotation_enabled': 'key_rotation_enabled',
-        'sys_enterprise_project_id': 'sys_enterprise_project_id'
+        'sys_enterprise_project_id': 'sys_enterprise_project_id',
+        'keystore_id': 'keystore_id',
+        'key_label': 'key_label'
     }
 
-    def __init__(self, key_id=None, domain_id=None, key_alias=None, realm=None, key_spec=None, key_usage=None, key_description=None, creation_date=None, scheduled_deletion_date=None, key_state=None, default_key_flag=None, key_type=None, expiration_time=None, origin=None, key_rotation_enabled=None, sys_enterprise_project_id=None):
+    def __init__(self, key_id=None, domain_id=None, key_alias=None, realm=None, key_spec=None, key_usage=None, key_description=None, creation_date=None, scheduled_deletion_date=None, key_state=None, default_key_flag=None, key_type=None, expiration_time=None, origin=None, key_rotation_enabled=None, sys_enterprise_project_id=None, keystore_id=None, key_label=None):
         """KeyDetails
 
         The model defined in huaweicloud sdk
@@ -95,6 +99,10 @@ class KeyDetails:
         :type key_rotation_enabled: str
         :param sys_enterprise_project_id: 企业项目ID，默认为“0”。  - 对于开通企业项目的用户，表示资源处于默认企业项目下。  - 对于未开通企业项目的用户，表示资源未处于企业项目下。
         :type sys_enterprise_project_id: str
+        :param keystore_id: 密钥库ID
+        :type keystore_id: str
+        :param key_label: 密钥在加密机中的标签
+        :type key_label: str
         """
         
         
@@ -115,6 +123,8 @@ class KeyDetails:
         self._origin = None
         self._key_rotation_enabled = None
         self._sys_enterprise_project_id = None
+        self._keystore_id = None
+        self._key_label = None
         self.discriminator = None
 
         if key_id is not None:
@@ -149,6 +159,10 @@ class KeyDetails:
             self.key_rotation_enabled = key_rotation_enabled
         if sys_enterprise_project_id is not None:
             self.sys_enterprise_project_id = sys_enterprise_project_id
+        if keystore_id is not None:
+            self.keystore_id = keystore_id
+        if key_label is not None:
+            self.key_label = key_label
 
     @property
     def key_id(self):
@@ -501,6 +515,50 @@ class KeyDetails:
         :type sys_enterprise_project_id: str
         """
         self._sys_enterprise_project_id = sys_enterprise_project_id
+
+    @property
+    def keystore_id(self):
+        """Gets the keystore_id of this KeyDetails.
+
+        密钥库ID
+
+        :return: The keystore_id of this KeyDetails.
+        :rtype: str
+        """
+        return self._keystore_id
+
+    @keystore_id.setter
+    def keystore_id(self, keystore_id):
+        """Sets the keystore_id of this KeyDetails.
+
+        密钥库ID
+
+        :param keystore_id: The keystore_id of this KeyDetails.
+        :type keystore_id: str
+        """
+        self._keystore_id = keystore_id
+
+    @property
+    def key_label(self):
+        """Gets the key_label of this KeyDetails.
+
+        密钥在加密机中的标签
+
+        :return: The key_label of this KeyDetails.
+        :rtype: str
+        """
+        return self._key_label
+
+    @key_label.setter
+    def key_label(self, key_label):
+        """Sets the key_label of this KeyDetails.
+
+        密钥在加密机中的标签
+
+        :param key_label: The key_label of this KeyDetails.
+        :type key_label: str
+        """
+        self._key_label = key_label
 
     def to_dict(self):
         """Returns the model properties as a dict"""

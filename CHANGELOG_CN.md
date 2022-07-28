@@ -1,3 +1,95 @@
+# 3.0.100 2022-07-28
+
+### HuaweiCloud SDK CBS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`CreateTbSession`、`ExecuteTbSession`、`DeleteTbSession`
+  - 接口`CollectHotQuestions`请求参数`top`类型调整 `string` -> `int32`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`BatchCreateJobs`请求参数`db_type`、`db_type`、`key`、`value`、`key`、`value`改为非必填
+  - 接口`BatchSetObjects`请求参数`id`、`object_type`、`object_name`改为非必填
+  - 接口`BatchUpdateJob`请求参数`name`、`alarm_to_user`、`db_type`、`db_type`、`node_type`、`engine_type`、`net_type`、`store_db_info`、`key`、`value`改为非必填
+  - 接口`BatchListJobDetails`响应参数`db_type`、`db_type`、`db_type`、`db_type`改为非必填
+  - 接口`BatchChangeData`请求参数`id`、`select`改为非必填
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持接口`ShowDedicatedResourceInfo`、`SetGaussMySqlProxyWeight`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowGaussMySqlProxy`新增响应参数 `proxy`、`master_node`、`readonly_nodes`
+  - 接口`ShowGaussMySqlProxyList`新增响应参数 `proxy_list`
+  - 接口`ShowGaussMySqlProxyFlavors`新增响应参数 `proxy_flavor_groups`
+  - 接口`ShowGaussMySqlBackupList`:
+    - 响应参数`status`新增枚举值`BUILDING`、`COMPLETED`、`FAILED`、`AVAILABLE`
+    - 响应参数`type`新增枚举值`auto`、`manual`
+    - 响应参数`backup_level`新增枚举值`0`、`1`、`2`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstance`:
+    - 新增请求参数 `period_type`、`period_num`、`is_auto_renew`、`is_auto_pay`
+    - 请求参数`charge_mode`新增枚举值`prePaid`
+  - 接口`RunInstanceAction`新增请求参数 `is_auto_pay`
+  - 接口`CreateRestoreInstance`:
+    - 新增请求参数 `period_type`、`period_num`、`is_auto_renew`、`is_auto_pay`
+    - 请求参数`charge_mode`新增枚举值`prePaid`
+  - 接口`ResizeInstanceFlavor`请求参数`is_auto_pay`类型调整 `string` -> `boolean`
+
+### HuaweiCloud SDK GSL
+
+- _新增特性_
+  - 支持接口`ShowMonthUsages`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK KMS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListKeyStores`
+    - `CreateKeyStore`
+    - `ShowKeyStore`
+    - `DeleteKeyStore`
+    - `EnableKeyStore`
+    - `DisableKeyStore`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateKey`新增请求参数 `keystore_id`
+  - 接口`ListKeys`新增响应参数 `keystore_id`、`key_label`
+  - 接口`ListKeyDetail`新增响应参数 `keystore_id`、`key_label`
+  - 接口`ListKmsByTags`新增响应参数 `keystore_id`、`key_label`
+
+### HuaweiCloud SDK NLP
+
+- _新增特性_
+  - 支持接口`RunConstituencyParser`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.0.99 2022-07-21
 
 ### HuaweiCloud SDK APIG

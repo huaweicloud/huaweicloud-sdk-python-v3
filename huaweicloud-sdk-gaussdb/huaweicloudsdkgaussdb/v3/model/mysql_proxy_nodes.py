@@ -45,7 +45,7 @@ class MysqlProxyNodes:
 
         :param id: Proxy节点id。
         :type id: str
-        :param status: Proxy节点状态。 取值范围：normal、abnormal、creating和deleted。
+        :param status: Proxy节点状态。 取值范围：ACTIVE、ABNORMAL、BUILD和FAILED。
         :type status: str
         :param name: Proxy节点名称。
         :type name: str
@@ -106,7 +106,7 @@ class MysqlProxyNodes:
     def status(self):
         """Gets the status of this MysqlProxyNodes.
 
-        Proxy节点状态。 取值范围：normal、abnormal、creating和deleted。
+        Proxy节点状态。 取值范围：ACTIVE、ABNORMAL、BUILD和FAILED。
 
         :return: The status of this MysqlProxyNodes.
         :rtype: str
@@ -117,7 +117,7 @@ class MysqlProxyNodes:
     def status(self, status):
         """Sets the status of this MysqlProxyNodes.
 
-        Proxy节点状态。 取值范围：normal、abnormal、creating和deleted。
+        Proxy节点状态。 取值范围：ACTIVE、ABNORMAL、BUILD和FAILED。
 
         :param status: The status of this MysqlProxyNodes.
         :type status: str

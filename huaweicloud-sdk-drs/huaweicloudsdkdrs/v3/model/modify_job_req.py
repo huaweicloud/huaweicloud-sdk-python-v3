@@ -130,17 +130,24 @@ class ModifyJobReq:
         self.job_id = job_id
         if description is not None:
             self.description = description
-        self.name = name
+        if name is not None:
+            self.name = name
         if alarm_notify is not None:
             self.alarm_notify = alarm_notify
         if task_type is not None:
             self.task_type = task_type
-        self.source_endpoint = source_endpoint
-        self.target_endpoint = target_endpoint
-        self.node_type = node_type
-        self.engine_type = engine_type
-        self.net_type = net_type
-        self.store_db_info = store_db_info
+        if source_endpoint is not None:
+            self.source_endpoint = source_endpoint
+        if target_endpoint is not None:
+            self.target_endpoint = target_endpoint
+        if node_type is not None:
+            self.node_type = node_type
+        if engine_type is not None:
+            self.engine_type = engine_type
+        if net_type is not None:
+            self.net_type = net_type
+        if store_db_info is not None:
+            self.store_db_info = store_db_info
         if is_recreate is not None:
             self.is_recreate = is_recreate
         if job_direction is not None:

@@ -41,7 +41,7 @@ class CheckDataTransformationReq:
 
         :param job_id: 任务id
         :type job_id: str
-        :param object_info: 对象信息
+        :param object_info: 对象信息，生成加工规则时需要填写。
         :type object_info: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectVO`]
         :param transformation_info: 
         :type transformation_info: :class:`huaweicloudsdkdrs.v3.TransformationInfo`
@@ -59,7 +59,8 @@ class CheckDataTransformationReq:
 
         if job_id is not None:
             self.job_id = job_id
-        self.object_info = object_info
+        if object_info is not None:
+            self.object_info = object_info
         self.transformation_info = transformation_info
         if config_transformation is not None:
             self.config_transformation = config_transformation
@@ -90,7 +91,7 @@ class CheckDataTransformationReq:
     def object_info(self):
         """Gets the object_info of this CheckDataTransformationReq.
 
-        对象信息
+        对象信息，生成加工规则时需要填写。
 
         :return: The object_info of this CheckDataTransformationReq.
         :rtype: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectVO`]
@@ -101,7 +102,7 @@ class CheckDataTransformationReq:
     def object_info(self, object_info):
         """Sets the object_info of this CheckDataTransformationReq.
 
-        对象信息
+        对象信息，生成加工规则时需要填写。
 
         :param object_info: The object_info of this CheckDataTransformationReq.
         :type object_info: list[:class:`huaweicloudsdkdrs.v3.DatabaseObjectVO`]

@@ -37,7 +37,7 @@ class ListInstancesResponse(SdkResponse):
 
         :param instances: 实例信息。
         :type instances: list[:class:`huaweicloudsdkgaussdbforopengauss.v3.ListInstanceResponse`]
-        :param total_count: 总记录数。
+        :param total_count: 总记录数 。
         :type total_count: int
         """
         
@@ -78,7 +78,7 @@ class ListInstancesResponse(SdkResponse):
     def total_count(self):
         """Gets the total_count of this ListInstancesResponse.
 
-        总记录数。
+        总记录数 。
 
         :return: The total_count of this ListInstancesResponse.
         :rtype: int
@@ -89,7 +89,7 @@ class ListInstancesResponse(SdkResponse):
     def total_count(self, total_count):
         """Sets the total_count of this ListInstancesResponse.
 
-        总记录数。
+        总记录数 。
 
         :param total_count: The total_count of this ListInstancesResponse.
         :type total_count: int

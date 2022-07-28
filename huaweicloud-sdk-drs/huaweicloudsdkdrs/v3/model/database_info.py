@@ -67,11 +67,14 @@ class DatabaseInfo:
         self._select = None
         self.discriminator = None
 
-        self.id = id
+        if id is not None:
+            self.id = id
         if parent_id is not None:
             self.parent_id = parent_id
-        self.object_type = object_type
-        self.object_name = object_name
+        if object_type is not None:
+            self.object_type = object_type
+        if object_name is not None:
+            self.object_name = object_name
         if object_alias_name is not None:
             self.object_alias_name = object_alias_name
         if select is not None:

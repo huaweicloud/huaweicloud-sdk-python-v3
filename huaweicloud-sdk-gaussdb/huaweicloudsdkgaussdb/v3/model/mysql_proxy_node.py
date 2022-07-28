@@ -51,7 +51,7 @@ class MysqlProxyNode:
         :type status: str
         :param name: 节点名称。
         :type name: str
-        :param weight: 节点读写分离权重。
+        :param weight: 节点读写分离读权重。
         :type weight: int
         :param available_zones: 可用区信息。
         :type available_zones: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyAvailable`]
@@ -172,7 +172,7 @@ class MysqlProxyNode:
     def weight(self):
         """Gets the weight of this MysqlProxyNode.
 
-        节点读写分离权重。
+        节点读写分离读权重。
 
         :return: The weight of this MysqlProxyNode.
         :rtype: int
@@ -183,7 +183,7 @@ class MysqlProxyNode:
     def weight(self, weight):
         """Sets the weight of this MysqlProxyNode.
 
-        节点读写分离权重。
+        节点读写分离读权重。
 
         :param weight: The weight of this MysqlProxyNode.
         :type weight: int

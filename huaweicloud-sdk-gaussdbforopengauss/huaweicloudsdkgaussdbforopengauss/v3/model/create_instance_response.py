@@ -22,15 +22,17 @@ class CreateInstanceResponse(SdkResponse):
 
     openapi_types = {
         'instance': 'OpenGaussInstanceResponse',
-        'job_id': 'str'
+        'job_id': 'str',
+        'order_id': 'str'
     }
 
     attribute_map = {
         'instance': 'instance',
-        'job_id': 'job_id'
+        'job_id': 'job_id',
+        'order_id': 'order_id'
     }
 
-    def __init__(self, instance=None, job_id=None):
+    def __init__(self, instance=None, job_id=None, order_id=None):
         """CreateInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -39,18 +41,23 @@ class CreateInstanceResponse(SdkResponse):
         :type instance: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussInstanceResponse`
         :param job_id: 实例创建的任务id。  仅创建按需实例时会返回该参数。
         :type job_id: str
+        :param order_id: 创建实例的订单ID。  仅创建包周期实例时会返回该参数。
+        :type order_id: str
         """
         
         super(CreateInstanceResponse, self).__init__()
 
         self._instance = None
         self._job_id = None
+        self._order_id = None
         self.discriminator = None
 
         if instance is not None:
             self.instance = instance
         if job_id is not None:
             self.job_id = job_id
+        if order_id is not None:
+            self.order_id = order_id
 
     @property
     def instance(self):
@@ -93,6 +100,28 @@ class CreateInstanceResponse(SdkResponse):
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this CreateInstanceResponse.
+
+        创建实例的订单ID。  仅创建包周期实例时会返回该参数。
+
+        :return: The order_id of this CreateInstanceResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this CreateInstanceResponse.
+
+        创建实例的订单ID。  仅创建包周期实例时会返回该参数。
+
+        :param order_id: The order_id of this CreateInstanceResponse.
+        :type order_id: str
+        """
+        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

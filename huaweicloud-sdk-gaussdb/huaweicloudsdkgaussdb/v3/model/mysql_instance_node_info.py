@@ -32,6 +32,7 @@ class MysqlInstanceNodeInfo:
         'region_code': 'str',
         'created': 'str',
         'updated': 'str',
+        'flavor_id': 'str',
         'flavor_ref': 'str',
         'max_connections': 'str',
         'vcpus': 'str',
@@ -52,6 +53,7 @@ class MysqlInstanceNodeInfo:
         'region_code': 'region_code',
         'created': 'created',
         'updated': 'updated',
+        'flavor_id': 'flavor_id',
         'flavor_ref': 'flavor_ref',
         'max_connections': 'max_connections',
         'vcpus': 'vcpus',
@@ -60,7 +62,7 @@ class MysqlInstanceNodeInfo:
         'priority': 'priority'
     }
 
-    def __init__(self, id=None, name=None, type=None, status=None, port=None, private_read_ips=None, volume=None, az_code=None, region_code=None, created=None, updated=None, flavor_ref=None, max_connections=None, vcpus=None, ram=None, need_restart=None, priority=None):
+    def __init__(self, id=None, name=None, type=None, status=None, port=None, private_read_ips=None, volume=None, az_code=None, region_code=None, created=None, updated=None, flavor_id=None, flavor_ref=None, max_connections=None, vcpus=None, ram=None, need_restart=None, priority=None):
         """MysqlInstanceNodeInfo
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class MysqlInstanceNodeInfo:
         :type created: str
         :param updated: 更新时间，格式与\&quot;created\&quot;字段对应格式完全相同。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
         :type updated: str
+        :param flavor_id: 规格ID。
+        :type flavor_id: str
         :param flavor_ref: 规格码。
         :type flavor_ref: str
         :param max_connections: 允许的最大连接数。
@@ -114,6 +118,7 @@ class MysqlInstanceNodeInfo:
         self._region_code = None
         self._created = None
         self._updated = None
+        self._flavor_id = None
         self._flavor_ref = None
         self._max_connections = None
         self._vcpus = None
@@ -142,6 +147,8 @@ class MysqlInstanceNodeInfo:
             self.created = created
         if updated is not None:
             self.updated = updated
+        if flavor_id is not None:
+            self.flavor_id = flavor_id
         if flavor_ref is not None:
             self.flavor_ref = flavor_ref
         if max_connections is not None:
@@ -394,6 +401,28 @@ class MysqlInstanceNodeInfo:
         :type updated: str
         """
         self._updated = updated
+
+    @property
+    def flavor_id(self):
+        """Gets the flavor_id of this MysqlInstanceNodeInfo.
+
+        规格ID。
+
+        :return: The flavor_id of this MysqlInstanceNodeInfo.
+        :rtype: str
+        """
+        return self._flavor_id
+
+    @flavor_id.setter
+    def flavor_id(self, flavor_id):
+        """Sets the flavor_id of this MysqlInstanceNodeInfo.
+
+        规格ID。
+
+        :param flavor_id: The flavor_id of this MysqlInstanceNodeInfo.
+        :type flavor_id: str
+        """
+        self._flavor_id = flavor_id
 
     @property
     def flavor_ref(self):

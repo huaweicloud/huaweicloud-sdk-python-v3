@@ -41,7 +41,7 @@ class UpdateTaskRulesetItem:
 
         :param language: 规则集语言
         :type language: str
-        :param rule_set_id: 规则集ID
+        :param rule_set_id: 规则集ID,通过调用ListTaskRuleset接口，根据响应参数中的template_id获得
         :type rule_set_id: str
         :param if_use: 任务语言和规则集的关系是否启用，1是启用，0是未启用
         :type if_use: str
@@ -88,7 +88,7 @@ class UpdateTaskRulesetItem:
     def rule_set_id(self):
         """Gets the rule_set_id of this UpdateTaskRulesetItem.
 
-        规则集ID
+        规则集ID,通过调用ListTaskRuleset接口，根据响应参数中的template_id获得
 
         :return: The rule_set_id of this UpdateTaskRulesetItem.
         :rtype: str
@@ -99,7 +99,7 @@ class UpdateTaskRulesetItem:
     def rule_set_id(self, rule_set_id):
         """Sets the rule_set_id of this UpdateTaskRulesetItem.
 
-        规则集ID
+        规则集ID,通过调用ListTaskRuleset接口，根据响应参数中的template_id获得
 
         :param rule_set_id: The rule_set_id of this UpdateTaskRulesetItem.
         :type rule_set_id: str

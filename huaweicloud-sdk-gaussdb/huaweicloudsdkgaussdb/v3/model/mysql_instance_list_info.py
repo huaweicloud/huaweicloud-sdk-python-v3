@@ -29,7 +29,7 @@ class MysqlInstanceListInfo:
         'port': 'str',
         'type': 'str',
         'region': 'str',
-        'datastore': 'MysqlDatastore',
+        'datastore': 'MysqlDatastoreWithKernelVersion',
         'created': 'str',
         'updated': 'str',
         'db_user_name': 'str',
@@ -96,7 +96,7 @@ class MysqlInstanceListInfo:
         :param region: 实例所在区域。
         :type region: str
         :param datastore: 
-        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreWithKernelVersion`
         :param created: 创建时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
         :type created: str
         :param updated: 更新时间，格式与\&quot;created\&quot;字段对应格式完全相同。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
@@ -386,7 +386,7 @@ class MysqlInstanceListInfo:
 
 
         :return: The datastore of this MysqlInstanceListInfo.
-        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreWithKernelVersion`
         """
         return self._datastore
 
@@ -396,7 +396,7 @@ class MysqlInstanceListInfo:
 
 
         :param datastore: The datastore of this MysqlInstanceListInfo.
-        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreWithKernelVersion`
         """
         self._datastore = datastore
 

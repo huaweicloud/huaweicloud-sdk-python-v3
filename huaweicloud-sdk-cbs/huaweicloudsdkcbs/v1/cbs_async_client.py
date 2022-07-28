@@ -376,64 +376,6 @@ class CbsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def create_tb_session_async(self, request):
-        """发起会话
-
-        发起话务机器人会话。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for CreateTbSession
-        :type request: :class:`huaweicloudsdkcbs.v1.CreateTbSessionRequest`
-        :rtype: :class:`huaweicloudsdkcbs.v1.CreateTbSessionResponse`
-        """
-        return self.create_tb_session_with_http_info(request)
-
-    def create_tb_session_with_http_info(self, request):
-        all_params = ['bot_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'bot_id' in local_var_params:
-            path_params['bot_id'] = local_var_params['bot_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/taskbot/voicecall/bots/{bot_id}/sessions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreateTbSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def delete_session_async(self, request):
         """关闭会话
 
@@ -489,66 +431,6 @@ class CbsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def delete_tb_session_async(self, request):
-        """结束会话
-
-        结束话务机器人会话。如果会话持续10分钟无会话请求则被清理。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for DeleteTbSession
-        :type request: :class:`huaweicloudsdkcbs.v1.DeleteTbSessionRequest`
-        :rtype: :class:`huaweicloudsdkcbs.v1.DeleteTbSessionResponse`
-        """
-        return self.delete_tb_session_with_http_info(request)
-
-    def delete_tb_session_with_http_info(self, request):
-        all_params = ['bot_id', 'session_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'bot_id' in local_var_params:
-            path_params['bot_id'] = local_var_params['bot_id']
-        if 'session_id' in local_var_params:
-            path_params['session_id'] = local_var_params['session_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/taskbot/voicecall/bots/{bot_id}/sessions/{session_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='DeleteTbSessionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -671,68 +553,6 @@ class CbsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ExecuteSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def execute_tb_session_async(self, request):
-        """进行会话
-
-        进行话务机器人会话。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ExecuteTbSession
-        :type request: :class:`huaweicloudsdkcbs.v1.ExecuteTbSessionRequest`
-        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteTbSessionResponse`
-        """
-        return self.execute_tb_session_with_http_info(request)
-
-    def execute_tb_session_with_http_info(self, request):
-        all_params = ['bot_id', 'session_id', 'execute_tb_session_req']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'bot_id' in local_var_params:
-            path_params['bot_id'] = local_var_params['bot_id']
-        if 'session_id' in local_var_params:
-            path_params['session_id'] = local_var_params['session_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/{project_id}/taskbot/voicecall/bots/{bot_id}/sessions/{session_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ExecuteTbSessionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

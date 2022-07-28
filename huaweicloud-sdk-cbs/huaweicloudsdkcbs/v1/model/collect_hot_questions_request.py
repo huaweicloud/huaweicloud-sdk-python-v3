@@ -24,7 +24,7 @@ class CollectHotQuestionsRequest:
         'qabot_id': 'str',
         'start_time': 'str',
         'end_time': 'str',
-        'top': 'str',
+        'top': 'int',
         'domain': 'str',
         'domain_id': 'str',
         'exclude': 'bool'
@@ -52,7 +52,7 @@ class CollectHotQuestionsRequest:
         :param end_time: 查询的结束时间，long，UTC时间，默认值为当前时间的毫秒数。
         :type end_time: str
         :param top: 热点问题最多显示的个数，默认值为10，取值范围1-20。
-        :type top: str
+        :type top: int
         :param domain: 热点问题所属的领域。如果指定领域为非空字符串则从指定领域中查询热点问题，否则从所有标准问题中查询热点问题。
         :type domain: str
         :param domain_id: 统计的目标问题类别id。
@@ -159,7 +159,7 @@ class CollectHotQuestionsRequest:
         热点问题最多显示的个数，默认值为10，取值范围1-20。
 
         :return: The top of this CollectHotQuestionsRequest.
-        :rtype: str
+        :rtype: int
         """
         return self._top
 
@@ -170,7 +170,7 @@ class CollectHotQuestionsRequest:
         热点问题最多显示的个数，默认值为10，取值范围1-20。
 
         :param top: The top of this CollectHotQuestionsRequest.
-        :type top: str
+        :type top: int
         """
         self._top = top
 

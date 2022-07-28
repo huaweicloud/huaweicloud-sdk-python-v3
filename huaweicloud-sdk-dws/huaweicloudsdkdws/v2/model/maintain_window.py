@@ -37,7 +37,7 @@ class MaintainWindow:
 
         The model defined in huaweicloud sdk
 
-        :param day: 每周的维护时间，以天为粒度，取值如下：  - Mon：星期一 - Tue：星期二 - Wed：星期三 - Thu：星期四 - Fri： 星期五 - Sat：星期六 - Sun：星期日
+        :param day: 每周的维护时间，以天为粒度，取值如下：  - Mon：星期一 - Tue：星期二 - Wed：星期三 - Thu：星期四 - Fri：星期五 - Sat：星期六 - Sun：星期日
         :type day: str
         :param start_time: 维护开始时间，显示格式为 HH：mm，时区为GMT+0。
         :type start_time: str
@@ -63,7 +63,7 @@ class MaintainWindow:
     def day(self):
         """Gets the day of this MaintainWindow.
 
-        每周的维护时间，以天为粒度，取值如下：  - Mon：星期一 - Tue：星期二 - Wed：星期三 - Thu：星期四 - Fri： 星期五 - Sat：星期六 - Sun：星期日
+        每周的维护时间，以天为粒度，取值如下：  - Mon：星期一 - Tue：星期二 - Wed：星期三 - Thu：星期四 - Fri：星期五 - Sat：星期六 - Sun：星期日
 
         :return: The day of this MaintainWindow.
         :rtype: str
@@ -74,7 +74,7 @@ class MaintainWindow:
     def day(self, day):
         """Sets the day of this MaintainWindow.
 
-        每周的维护时间，以天为粒度，取值如下：  - Mon：星期一 - Tue：星期二 - Wed：星期三 - Thu：星期四 - Fri： 星期五 - Sat：星期六 - Sun：星期日
+        每周的维护时间，以天为粒度，取值如下：  - Mon：星期一 - Tue：星期二 - Wed：星期三 - Thu：星期四 - Fri：星期五 - Sat：星期六 - Sun：星期日
 
         :param day: The day of this MaintainWindow.
         :type day: str

@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DeleteTbSessionResponse(SdkResponse):
+class ShowKeyStoreRequest:
 
     """
     Attributes:
@@ -21,20 +21,50 @@ class DeleteTbSessionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'keystore_id': 'str'
     }
 
     attribute_map = {
+        'keystore_id': 'keystore_id'
     }
 
-    def __init__(self):
-        """DeleteTbSessionResponse
+    def __init__(self, keystore_id=None):
+        """ShowKeyStoreRequest
 
         The model defined in huaweicloud sdk
 
+        :param keystore_id: 密钥库ID
+        :type keystore_id: str
         """
         
-        super(DeleteTbSessionResponse, self).__init__()
+        
+
+        self._keystore_id = None
         self.discriminator = None
+
+        self.keystore_id = keystore_id
+
+    @property
+    def keystore_id(self):
+        """Gets the keystore_id of this ShowKeyStoreRequest.
+
+        密钥库ID
+
+        :return: The keystore_id of this ShowKeyStoreRequest.
+        :rtype: str
+        """
+        return self._keystore_id
+
+    @keystore_id.setter
+    def keystore_id(self, keystore_id):
+        """Sets the keystore_id of this ShowKeyStoreRequest.
+
+        密钥库ID
+
+        :param keystore_id: The keystore_id of this ShowKeyStoreRequest.
+        :type keystore_id: str
+        """
+        self._keystore_id = keystore_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -78,7 +108,7 @@ class DeleteTbSessionResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DeleteTbSessionResponse):
+        if not isinstance(other, ShowKeyStoreRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -35,9 +35,9 @@ class ResourceTag:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键，最大长度36，只能包含字母、数字、下划线、中划线和中文。
+        :param key: 标签键，最大长度36，只能包含字母、数字、下划线、中划线和中文，需要修改标签时填写。
         :type key: str
-        :param value: 标签值，最大长度43，只能包含字母、数字、下划线、中划线和中文。
+        :param value: 标签值，最大长度43，只能包含字母、数字、下划线、中划线和中文，需要修改标签时填写。
         :type value: str
         """
         
@@ -47,14 +47,16 @@ class ResourceTag:
         self._value = None
         self.discriminator = None
 
-        self.key = key
-        self.value = value
+        if key is not None:
+            self.key = key
+        if value is not None:
+            self.value = value
 
     @property
     def key(self):
         """Gets the key of this ResourceTag.
 
-        标签键，最大长度36，只能包含字母、数字、下划线、中划线和中文。
+        标签键，最大长度36，只能包含字母、数字、下划线、中划线和中文，需要修改标签时填写。
 
         :return: The key of this ResourceTag.
         :rtype: str
@@ -65,7 +67,7 @@ class ResourceTag:
     def key(self, key):
         """Sets the key of this ResourceTag.
 
-        标签键，最大长度36，只能包含字母、数字、下划线、中划线和中文。
+        标签键，最大长度36，只能包含字母、数字、下划线、中划线和中文，需要修改标签时填写。
 
         :param key: The key of this ResourceTag.
         :type key: str
@@ -76,7 +78,7 @@ class ResourceTag:
     def value(self):
         """Gets the value of this ResourceTag.
 
-        标签值，最大长度43，只能包含字母、数字、下划线、中划线和中文。
+        标签值，最大长度43，只能包含字母、数字、下划线、中划线和中文，需要修改标签时填写。
 
         :return: The value of this ResourceTag.
         :rtype: str
@@ -87,7 +89,7 @@ class ResourceTag:
     def value(self, value):
         """Sets the value of this ResourceTag.
 
-        标签值，最大长度43，只能包含字母、数字、下划线、中划线和中文。
+        标签值，最大长度43，只能包含字母、数字、下划线、中划线和中文，需要修改标签时填写。
 
         :param value: The value of this ResourceTag.
         :type value: str

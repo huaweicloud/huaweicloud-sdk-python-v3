@@ -28,9 +28,10 @@ class MysqlInstanceInfoDetail:
         'port': 'str',
         'alias': 'str',
         'type': 'str',
+        'charge_info': 'MysqlInstanceChargeInfo',
         'node_count': 'int',
-        'datastore': 'MysqlDatastore',
-        'backup_used_space': 'int',
+        'datastore': 'MysqlDatastoreWithKernelVersion',
+        'backup_used_space': 'float',
         'created': 'str',
         'updated': 'str',
         'private_write_ips': 'list[str]',
@@ -60,6 +61,7 @@ class MysqlInstanceInfoDetail:
         'port': 'port',
         'alias': 'alias',
         'type': 'type',
+        'charge_info': 'charge_info',
         'node_count': 'node_count',
         'datastore': 'datastore',
         'backup_used_space': 'backup_used_space',
@@ -84,7 +86,7 @@ class MysqlInstanceInfoDetail:
         'proxies': 'proxies'
     }
 
-    def __init__(self, id=None, name=None, project_id=None, status=None, port=None, alias=None, type=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None, proxies=None):
+    def __init__(self, id=None, name=None, project_id=None, status=None, port=None, alias=None, type=None, charge_info=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None, proxies=None):
         """MysqlInstanceInfoDetail
 
         The model defined in huaweicloud sdk
@@ -103,12 +105,14 @@ class MysqlInstanceInfoDetail:
         :type alias: str
         :param type: 实例类型，取值为“Cluster”。
         :type type: str
+        :param charge_info: 
+        :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceChargeInfo`
         :param node_count: 节点个数。
         :type node_count: int
         :param datastore: 
-        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreWithKernelVersion`
         :param backup_used_space: 备份空间使用大小，单位为GB。
-        :type backup_used_space: int
+        :type backup_used_space: float
         :param created: 创建时间，格式为\&quot;yyyy-mm-ddThh:mm:ssZ\&quot;。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
         :type created: str
         :param updated: 更新时间，格式与\&quot;created\&quot;字段对应格式完全相同。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
@@ -158,6 +162,7 @@ class MysqlInstanceInfoDetail:
         self._port = None
         self._alias = None
         self._type = None
+        self._charge_info = None
         self._node_count = None
         self._datastore = None
         self._backup_used_space = None
@@ -193,6 +198,8 @@ class MysqlInstanceInfoDetail:
             self.alias = alias
         if type is not None:
             self.type = type
+        if charge_info is not None:
+            self.charge_info = charge_info
         if node_count is not None:
             self.node_count = node_count
         if datastore is not None:
@@ -393,6 +400,26 @@ class MysqlInstanceInfoDetail:
         self._type = type
 
     @property
+    def charge_info(self):
+        """Gets the charge_info of this MysqlInstanceInfoDetail.
+
+
+        :return: The charge_info of this MysqlInstanceInfoDetail.
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceChargeInfo`
+        """
+        return self._charge_info
+
+    @charge_info.setter
+    def charge_info(self, charge_info):
+        """Sets the charge_info of this MysqlInstanceInfoDetail.
+
+
+        :param charge_info: The charge_info of this MysqlInstanceInfoDetail.
+        :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceChargeInfo`
+        """
+        self._charge_info = charge_info
+
+    @property
     def node_count(self):
         """Gets the node_count of this MysqlInstanceInfoDetail.
 
@@ -420,7 +447,7 @@ class MysqlInstanceInfoDetail:
 
 
         :return: The datastore of this MysqlInstanceInfoDetail.
-        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreWithKernelVersion`
         """
         return self._datastore
 
@@ -430,7 +457,7 @@ class MysqlInstanceInfoDetail:
 
 
         :param datastore: The datastore of this MysqlInstanceInfoDetail.
-        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastore`
+        :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreWithKernelVersion`
         """
         self._datastore = datastore
 
@@ -441,7 +468,7 @@ class MysqlInstanceInfoDetail:
         备份空间使用大小，单位为GB。
 
         :return: The backup_used_space of this MysqlInstanceInfoDetail.
-        :rtype: int
+        :rtype: float
         """
         return self._backup_used_space
 
@@ -452,7 +479,7 @@ class MysqlInstanceInfoDetail:
         备份空间使用大小，单位为GB。
 
         :param backup_used_space: The backup_used_space of this MysqlInstanceInfoDetail.
-        :type backup_used_space: int
+        :type backup_used_space: float
         """
         self._backup_used_space = backup_used_space
 

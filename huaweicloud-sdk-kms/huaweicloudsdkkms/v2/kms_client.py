@@ -528,6 +528,64 @@ class KmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_key_store(self, request):
+        """创建专属密钥库
+
+        - \&quot;创建租户专属密钥库，专属密钥库使用DHSM实例作为密钥的存储\&quot;
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateKeyStore
+        :type request: :class:`huaweicloudsdkkms.v2.CreateKeyStoreRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.CreateKeyStoreResponse`
+        """
+        return self.create_key_store_with_http_info(request)
+
+    def create_key_store_with_http_info(self, request):
+        all_params = ['create_key_store_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/keystores',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateKeyStoreResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_kms_tag(self, request):
         """添加密钥标签
 
@@ -938,6 +996,64 @@ class KmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_key_store(self, request):
+        """删除专属密钥库
+
+        删除租户专属密钥库
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteKeyStore
+        :type request: :class:`huaweicloudsdkkms.v2.DeleteKeyStoreRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DeleteKeyStoreResponse`
+        """
+        return self.delete_key_store_with_http_info(request)
+
+    def delete_key_store_with_http_info(self, request):
+        all_params = ['keystore_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'keystore_id' in local_var_params:
+            path_params['keystore_id'] = local_var_params['keystore_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/keystores/{keystore_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteKeyStoreResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_tag(self, request):
         """删除密钥标签
 
@@ -1115,6 +1231,64 @@ class KmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def disable_key_store(self, request):
+        """禁用专属密钥库
+
+        禁用租户专属密钥库
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DisableKeyStore
+        :type request: :class:`huaweicloudsdkkms.v2.DisableKeyStoreRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.DisableKeyStoreResponse`
+        """
+        return self.disable_key_store_with_http_info(request)
+
+    def disable_key_store_with_http_info(self, request):
+        all_params = ['keystore_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'keystore_id' in local_var_params:
+            path_params['keystore_id'] = local_var_params['keystore_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/keystores/{keystore_id}/disable',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DisableKeyStoreResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def enable_key(self, request):
         """启用密钥
 
@@ -1230,6 +1404,64 @@ class KmsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='EnableKeyRotationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def enable_key_store(self, request):
+        """启用专属密钥库
+
+        启用租户专属密钥库
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for EnableKeyStore
+        :type request: :class:`huaweicloudsdkkms.v2.EnableKeyStoreRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.EnableKeyStoreResponse`
+        """
+        return self.enable_key_store_with_http_info(request)
+
+    def enable_key_store_with_http_info(self, request):
+        all_params = ['keystore_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'keystore_id' in local_var_params:
+            path_params['keystore_id'] = local_var_params['keystore_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/keystores/{keystore_id}/enable',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='EnableKeyStoreResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1525,6 +1757,66 @@ class KmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_key_stores(self, request):
+        """查询专属密钥库列表
+
+        查询租户专属密钥库列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListKeyStores
+        :type request: :class:`huaweicloudsdkkms.v2.ListKeyStoresRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ListKeyStoresResponse`
+        """
+        return self.list_key_stores_with_http_info(request)
+
+    def list_key_stores_with_http_info(self, request):
+        all_params = ['limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/keystores',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListKeyStoresResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_keys(self, request):
         """查询密钥列表
 
@@ -1810,6 +2102,64 @@ class KmsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowKeyRotationStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_key_store(self, request):
+        """获取专属密钥库
+
+        获取租户专属密钥库
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowKeyStore
+        :type request: :class:`huaweicloudsdkkms.v2.ShowKeyStoreRequest`
+        :rtype: :class:`huaweicloudsdkkms.v2.ShowKeyStoreResponse`
+        """
+        return self.show_key_store_with_http_info(request)
+
+    def show_key_store_with_http_info(self, request):
+        all_params = ['keystore_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'keystore_id' in local_var_params:
+            path_params['keystore_id'] = local_var_params['keystore_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/keystores/{keystore_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowKeyStoreResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

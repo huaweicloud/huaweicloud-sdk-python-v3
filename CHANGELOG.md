@@ -1,3 +1,95 @@
+# 3.0.100 2022-07-28
+
+### HuaweiCloud SDK CBS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interfaces `CreateTbSession`, `ExecuteTbSession`, `DeleteTbSession`
+  - Modify the type `string` -> `int32` of the request parameter `top` of the interface `CollectHotQuestions`
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `db_type`, `db_type`, `key`, `value`, `key`, `value` changed to not required of the interface `BatchCreateJobs`
+  - The request parameter `id`, `object_type`, `object_name` changed to not required of the interface `BatchSetObjects`
+  - The request parameter `name`, `alarm_to_user`, `db_type`, `db_type`, `node_type`, `engine_type`, `net_type`, `store_db_info`, `key`, `value` changed to not required of the interface `BatchUpdateJob`
+  - The response parameter `db_type`, `db_type`, `db_type`, `db_type` changed to not required of the interface `BatchListJobDetails`
+  - The request parameter `id`, `select` changed to not required of the interface `BatchChangeData`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the interfaces `ShowDedicatedResourceInfo`, `SetGaussMySqlProxyWeight`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `proxy`, `master_node`, `readonly_nodes` to the interface `ShowGaussMySqlProxy`
+  - Add the response parameter `proxy_list` to the interface `ShowGaussMySqlProxyList`
+  - Add the response parameter `proxy_flavor_groups` to the interface `ShowGaussMySqlProxyFlavors`
+  - Changes of the interface `ShowGaussMySqlBackupList`:
+    - Add the enum values `BUILDING`, `COMPLETED`, `FAILED`, `AVAILABLE` to the response parameter `status`
+    - Add the enum values `auto`, `manual` to the response parameter `type`
+    - Add the enum values `0`, `1`, `2` to the response parameter `backup_level`
+
+### HuaweiCloud SDK GaussDBforopenGauss
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateInstance`:
+    - Add the request parameters `period_type`, `period_num`, `is_auto_renew`, `is_auto_pay`
+    - Add the enum values `prePaid` to the request parameter `charge_mode`
+  - Add the request parameter `is_auto_pay` to the interface `RunInstanceAction`
+  - Changes of the interface `CreateRestoreInstance`:
+    - Add the request parameters `period_type`, `period_num`, `is_auto_renew`, `is_auto_pay`
+    - Add the enum values `prePaid` to the request parameter `charge_mode`
+  - Modify the type `string` -> `boolean` of the request parameter `is_auto_pay` of the interface `ResizeInstanceFlavor`
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - Support the interface `ShowMonthUsages`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK KMS
+
+- _Features_
+  - Support the following interfaces：
+    - `ListKeyStores`
+    - `CreateKeyStore`
+    - `ShowKeyStore`
+    - `DeleteKeyStore`
+    - `EnableKeyStore`
+    - `DisableKeyStore`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `keystore_id` to the interface `CreateKey`
+  - Add the response parameters `keystore_id`, `key_label` to the interface `ListKeys`
+  - Add the response parameters `keystore_id`, `key_label` to the interface `ListKeyDetail`
+  - Add the response parameters `keystore_id`, `key_label` to the interface `ListKmsByTags`
+
+### HuaweiCloud SDK NLP
+
+- _Features_
+  - Support the interface `RunConstituencyParser`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.0.99 2022-07-21
 
 ### HuaweiCloud SDK APIG

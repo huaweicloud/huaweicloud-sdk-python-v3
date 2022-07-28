@@ -68,7 +68,8 @@ class AlarmNotifyInfo:
             self.rto_delay = rto_delay
         if rpo_delay is not None:
             self.rpo_delay = rpo_delay
-        self.alarm_to_user = alarm_to_user
+        if alarm_to_user is not None:
+            self.alarm_to_user = alarm_to_user
         if subscriptions is not None:
             self.subscriptions = subscriptions
 

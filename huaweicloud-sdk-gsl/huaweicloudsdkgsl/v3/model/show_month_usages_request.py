@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ExecuteTbSessionRequest:
+class ShowMonthUsagesRequest:
 
     """
     Attributes:
@@ -21,103 +21,47 @@ class ExecuteTbSessionRequest:
     sensitive_list = []
 
     openapi_types = {
-        'bot_id': 'str',
-        'session_id': 'str',
-        'body': 'ExecuteTbSessionReq'
+        'body': 'ShowMonthUsageReq'
     }
 
     attribute_map = {
-        'bot_id': 'bot_id',
-        'session_id': 'session_id',
         'body': 'body'
     }
 
-    def __init__(self, bot_id=None, session_id=None, body=None):
-        """ExecuteTbSessionRequest
+    def __init__(self, body=None):
+        """ShowMonthUsagesRequest
 
         The model defined in huaweicloud sdk
 
-        :param bot_id: 话务机器人ID
-        :type bot_id: str
-        :param session_id: 会话ID，在发起会话API的请求结果消息体response当中产生。
-        :type session_id: str
-        :param body: Body of the ExecuteTbSessionRequest
-        :type body: :class:`huaweicloudsdkcbs.v1.ExecuteTbSessionReq`
+        :param body: Body of the ShowMonthUsagesRequest
+        :type body: :class:`huaweicloudsdkgsl.v3.ShowMonthUsageReq`
         """
         
         
 
-        self._bot_id = None
-        self._session_id = None
         self._body = None
         self.discriminator = None
 
-        self.bot_id = bot_id
-        self.session_id = session_id
         if body is not None:
             self.body = body
 
     @property
-    def bot_id(self):
-        """Gets the bot_id of this ExecuteTbSessionRequest.
-
-        话务机器人ID
-
-        :return: The bot_id of this ExecuteTbSessionRequest.
-        :rtype: str
-        """
-        return self._bot_id
-
-    @bot_id.setter
-    def bot_id(self, bot_id):
-        """Sets the bot_id of this ExecuteTbSessionRequest.
-
-        话务机器人ID
-
-        :param bot_id: The bot_id of this ExecuteTbSessionRequest.
-        :type bot_id: str
-        """
-        self._bot_id = bot_id
-
-    @property
-    def session_id(self):
-        """Gets the session_id of this ExecuteTbSessionRequest.
-
-        会话ID，在发起会话API的请求结果消息体response当中产生。
-
-        :return: The session_id of this ExecuteTbSessionRequest.
-        :rtype: str
-        """
-        return self._session_id
-
-    @session_id.setter
-    def session_id(self, session_id):
-        """Sets the session_id of this ExecuteTbSessionRequest.
-
-        会话ID，在发起会话API的请求结果消息体response当中产生。
-
-        :param session_id: The session_id of this ExecuteTbSessionRequest.
-        :type session_id: str
-        """
-        self._session_id = session_id
-
-    @property
     def body(self):
-        """Gets the body of this ExecuteTbSessionRequest.
+        """Gets the body of this ShowMonthUsagesRequest.
 
 
-        :return: The body of this ExecuteTbSessionRequest.
-        :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteTbSessionReq`
+        :return: The body of this ShowMonthUsagesRequest.
+        :rtype: :class:`huaweicloudsdkgsl.v3.ShowMonthUsageReq`
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteTbSessionRequest.
+        """Sets the body of this ShowMonthUsagesRequest.
 
 
-        :param body: The body of this ExecuteTbSessionRequest.
-        :type body: :class:`huaweicloudsdkcbs.v1.ExecuteTbSessionReq`
+        :param body: The body of this ShowMonthUsagesRequest.
+        :type body: :class:`huaweicloudsdkgsl.v3.ShowMonthUsageReq`
         """
         self._body = body
 
@@ -163,7 +107,7 @@ class ExecuteTbSessionRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ExecuteTbSessionRequest):
+        if not isinstance(other, ShowMonthUsagesRequest):
             return False
 
         return self.__dict__ == other.__dict__

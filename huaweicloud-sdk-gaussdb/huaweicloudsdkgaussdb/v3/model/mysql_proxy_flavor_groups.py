@@ -35,7 +35,7 @@ class MysqlProxyFlavorGroups:
 
         The model defined in huaweicloud sdk
 
-        :param group_type: 规格组类型,如x86，arm。
+        :param group_type: 规格组类型，如x86、arm。
         :type group_type: str
         :param proxy_flavors: 规格信息。
         :type proxy_flavors: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyComputeFlavor`]
@@ -56,7 +56,7 @@ class MysqlProxyFlavorGroups:
     def group_type(self):
         """Gets the group_type of this MysqlProxyFlavorGroups.
 
-        规格组类型,如x86，arm。
+        规格组类型，如x86、arm。
 
         :return: The group_type of this MysqlProxyFlavorGroups.
         :rtype: str
@@ -67,7 +67,7 @@ class MysqlProxyFlavorGroups:
     def group_type(self, group_type):
         """Sets the group_type of this MysqlProxyFlavorGroups.
 
-        规格组类型,如x86，arm。
+        规格组类型，如x86、arm。
 
         :param group_type: The group_type of this MysqlProxyFlavorGroups.
         :type group_type: str

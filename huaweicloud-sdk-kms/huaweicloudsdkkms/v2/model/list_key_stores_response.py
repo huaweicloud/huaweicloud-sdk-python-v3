@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class DeleteTbSessionRequest:
+class ListKeyStoresResponse(SdkResponse):
 
     """
     Attributes:
@@ -21,78 +21,80 @@ class DeleteTbSessionRequest:
     sensitive_list = []
 
     openapi_types = {
-        'bot_id': 'str',
-        'session_id': 'str'
+        'total': 'int',
+        'keystores': 'list[KeystoreDetails]'
     }
 
     attribute_map = {
-        'bot_id': 'bot_id',
-        'session_id': 'session_id'
+        'total': 'total',
+        'keystores': 'keystores'
     }
 
-    def __init__(self, bot_id=None, session_id=None):
-        """DeleteTbSessionRequest
+    def __init__(self, total=None, keystores=None):
+        """ListKeyStoresResponse
 
         The model defined in huaweicloud sdk
 
-        :param bot_id: 话务机器人ID。
-        :type bot_id: str
-        :param session_id: 会话ID。
-        :type session_id: str
+        :param total: 密钥库总数
+        :type total: int
+        :param keystores: 密钥详情列表。详情参见KeystoreDetails
+        :type keystores: list[:class:`huaweicloudsdkkms.v2.KeystoreDetails`]
         """
         
-        
+        super(ListKeyStoresResponse, self).__init__()
 
-        self._bot_id = None
-        self._session_id = None
+        self._total = None
+        self._keystores = None
         self.discriminator = None
 
-        self.bot_id = bot_id
-        self.session_id = session_id
+        if total is not None:
+            self.total = total
+        if keystores is not None:
+            self.keystores = keystores
 
     @property
-    def bot_id(self):
-        """Gets the bot_id of this DeleteTbSessionRequest.
+    def total(self):
+        """Gets the total of this ListKeyStoresResponse.
 
-        话务机器人ID。
+        密钥库总数
 
-        :return: The bot_id of this DeleteTbSessionRequest.
-        :rtype: str
+        :return: The total of this ListKeyStoresResponse.
+        :rtype: int
         """
-        return self._bot_id
+        return self._total
 
-    @bot_id.setter
-    def bot_id(self, bot_id):
-        """Sets the bot_id of this DeleteTbSessionRequest.
+    @total.setter
+    def total(self, total):
+        """Sets the total of this ListKeyStoresResponse.
 
-        话务机器人ID。
+        密钥库总数
 
-        :param bot_id: The bot_id of this DeleteTbSessionRequest.
-        :type bot_id: str
+        :param total: The total of this ListKeyStoresResponse.
+        :type total: int
         """
-        self._bot_id = bot_id
+        self._total = total
 
     @property
-    def session_id(self):
-        """Gets the session_id of this DeleteTbSessionRequest.
+    def keystores(self):
+        """Gets the keystores of this ListKeyStoresResponse.
 
-        会话ID。
+        密钥详情列表。详情参见KeystoreDetails
 
-        :return: The session_id of this DeleteTbSessionRequest.
-        :rtype: str
+        :return: The keystores of this ListKeyStoresResponse.
+        :rtype: list[:class:`huaweicloudsdkkms.v2.KeystoreDetails`]
         """
-        return self._session_id
+        return self._keystores
 
-    @session_id.setter
-    def session_id(self, session_id):
-        """Sets the session_id of this DeleteTbSessionRequest.
+    @keystores.setter
+    def keystores(self, keystores):
+        """Sets the keystores of this ListKeyStoresResponse.
 
-        会话ID。
+        密钥详情列表。详情参见KeystoreDetails
 
-        :param session_id: The session_id of this DeleteTbSessionRequest.
-        :type session_id: str
+        :param keystores: The keystores of this ListKeyStoresResponse.
+        :type keystores: list[:class:`huaweicloudsdkkms.v2.KeystoreDetails`]
         """
-        self._session_id = session_id
+        self._keystores = keystores
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -136,7 +138,7 @@ class DeleteTbSessionRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DeleteTbSessionRequest):
+        if not isinstance(other, ListKeyStoresResponse):
             return False
 
         return self.__dict__ == other.__dict__

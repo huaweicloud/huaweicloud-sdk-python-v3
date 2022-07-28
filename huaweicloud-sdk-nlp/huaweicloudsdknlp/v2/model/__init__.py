@@ -9,6 +9,7 @@ from huaweicloudsdknlp.v2.model.aspect_sentiment_advance_request import AspectSe
 from huaweicloudsdknlp.v2.model.aspect_sentiment_request import AspectSentimentRequest
 from huaweicloudsdknlp.v2.model.classification_req import ClassificationReq
 from huaweicloudsdknlp.v2.model.classification_result import ClassificationResult
+from huaweicloudsdknlp.v2.model.constituency_parser_req import ConstituencyParserReq
 from huaweicloudsdknlp.v2.model.create_poem import CreatePoem
 from huaweicloudsdknlp.v2.model.dependency_parser_request import DependencyParserRequest
 from huaweicloudsdknlp.v2.model.dependency_parser_word import DependencyParserWord
@@ -41,6 +42,8 @@ from huaweicloudsdknlp.v2.model.run_aspect_sentiment_request import RunAspectSen
 from huaweicloudsdknlp.v2.model.run_aspect_sentiment_response import RunAspectSentimentResponse
 from huaweicloudsdknlp.v2.model.run_classification_request import RunClassificationRequest
 from huaweicloudsdknlp.v2.model.run_classification_response import RunClassificationResponse
+from huaweicloudsdknlp.v2.model.run_constituency_parser_request import RunConstituencyParserRequest
+from huaweicloudsdknlp.v2.model.run_constituency_parser_response import RunConstituencyParserResponse
 from huaweicloudsdknlp.v2.model.run_dependency_parser_request import RunDependencyParserRequest
 from huaweicloudsdknlp.v2.model.run_dependency_parser_response import RunDependencyParserResponse
 from huaweicloudsdknlp.v2.model.run_doc_classification_request import RunDocClassificationRequest

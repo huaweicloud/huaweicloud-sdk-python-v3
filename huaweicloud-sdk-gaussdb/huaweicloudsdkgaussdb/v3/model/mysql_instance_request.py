@@ -97,7 +97,7 @@ class MysqlInstanceRequest:
         :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
         :param time_zone: 时区。默认时区为UTC。
         :type time_zone: str
-        :param availability_zone_mode: 可用区类型,单可用区Single或多可用区multi。
+        :param availability_zone_mode: 可用区类型,单可用区single或多可用区multi。
         :type availability_zone_mode: str
         :param master_availability_zone: 主可用区。
         :type master_availability_zone: str
@@ -452,7 +452,7 @@ class MysqlInstanceRequest:
     def availability_zone_mode(self):
         """Gets the availability_zone_mode of this MysqlInstanceRequest.
 
-        可用区类型,单可用区Single或多可用区multi。
+        可用区类型,单可用区single或多可用区multi。
 
         :return: The availability_zone_mode of this MysqlInstanceRequest.
         :rtype: str
@@ -463,7 +463,7 @@ class MysqlInstanceRequest:
     def availability_zone_mode(self, availability_zone_mode):
         """Sets the availability_zone_mode of this MysqlInstanceRequest.
 
-        可用区类型,单可用区Single或多可用区multi。
+        可用区类型,单可用区single或多可用区multi。
 
         :param availability_zone_mode: The availability_zone_mode of this MysqlInstanceRequest.
         :type availability_zone_mode: str

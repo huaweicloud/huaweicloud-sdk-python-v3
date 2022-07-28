@@ -77,7 +77,7 @@ class Endpoint:
 
         The model defined in huaweicloud sdk
 
-        :param db_type: 数据库类型
+        :param db_type: 数据库类型，测试连接之后修改调用时必填。
         :type db_type: str
         :param az_code: 数据库所在可用区azCode
         :type az_code: str
@@ -152,7 +152,8 @@ class Endpoint:
         self._cluster_mode = None
         self.discriminator = None
 
-        self.db_type = db_type
+        if db_type is not None:
+            self.db_type = db_type
         if az_code is not None:
             self.az_code = az_code
         if region is not None:
@@ -202,7 +203,7 @@ class Endpoint:
     def db_type(self):
         """Gets the db_type of this Endpoint.
 
-        数据库类型
+        数据库类型，测试连接之后修改调用时必填。
 
         :return: The db_type of this Endpoint.
         :rtype: str
@@ -213,7 +214,7 @@ class Endpoint:
     def db_type(self, db_type):
         """Sets the db_type of this Endpoint.
 
-        数据库类型
+        数据库类型，测试连接之后修改调用时必填。
 
         :param db_type: The db_type of this Endpoint.
         :type db_type: str

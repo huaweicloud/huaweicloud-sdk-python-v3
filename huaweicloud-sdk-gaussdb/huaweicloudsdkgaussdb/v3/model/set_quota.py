@@ -41,11 +41,11 @@ class SetQuota:
 
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
-        :param instance_quota: 实例个数配额。取值范围0~1000。(如果已经存在实例，应该大于已经存在的实例个数)
+        :param instance_quota: 实例个数配额。取值范围0~100000。(如果已经存在实例，应该大于已经存在的实例个数)
         :type instance_quota: int
-        :param vcpus_quota: CPU核数配额。取值范围0~3600000。(如果已经存在实例，应该大于已经占用的cpu个数)
+        :param vcpus_quota: CPU核数配额。取值范围0~2147483646。(如果已经存在实例，应该大于已经占用的cpu个数)
         :type vcpus_quota: int
-        :param ram_quota: 内存使用配额，单位为GB。取值范围0~19200000。(如果已经存在实例，应该大于已经占用的内存数)
+        :param ram_quota: 内存使用配额，单位为GB。取值范围0~2147483646。(如果已经存在实例，应该大于已经占用的内存数)
         :type ram_quota: int
         """
         
@@ -88,7 +88,7 @@ class SetQuota:
     def instance_quota(self):
         """Gets the instance_quota of this SetQuota.
 
-        实例个数配额。取值范围0~1000。(如果已经存在实例，应该大于已经存在的实例个数)
+        实例个数配额。取值范围0~100000。(如果已经存在实例，应该大于已经存在的实例个数)
 
         :return: The instance_quota of this SetQuota.
         :rtype: int
@@ -99,7 +99,7 @@ class SetQuota:
     def instance_quota(self, instance_quota):
         """Sets the instance_quota of this SetQuota.
 
-        实例个数配额。取值范围0~1000。(如果已经存在实例，应该大于已经存在的实例个数)
+        实例个数配额。取值范围0~100000。(如果已经存在实例，应该大于已经存在的实例个数)
 
         :param instance_quota: The instance_quota of this SetQuota.
         :type instance_quota: int
@@ -110,7 +110,7 @@ class SetQuota:
     def vcpus_quota(self):
         """Gets the vcpus_quota of this SetQuota.
 
-        CPU核数配额。取值范围0~3600000。(如果已经存在实例，应该大于已经占用的cpu个数)
+        CPU核数配额。取值范围0~2147483646。(如果已经存在实例，应该大于已经占用的cpu个数)
 
         :return: The vcpus_quota of this SetQuota.
         :rtype: int
@@ -121,7 +121,7 @@ class SetQuota:
     def vcpus_quota(self, vcpus_quota):
         """Sets the vcpus_quota of this SetQuota.
 
-        CPU核数配额。取值范围0~3600000。(如果已经存在实例，应该大于已经占用的cpu个数)
+        CPU核数配额。取值范围0~2147483646。(如果已经存在实例，应该大于已经占用的cpu个数)
 
         :param vcpus_quota: The vcpus_quota of this SetQuota.
         :type vcpus_quota: int
@@ -132,7 +132,7 @@ class SetQuota:
     def ram_quota(self):
         """Gets the ram_quota of this SetQuota.
 
-        内存使用配额，单位为GB。取值范围0~19200000。(如果已经存在实例，应该大于已经占用的内存数)
+        内存使用配额，单位为GB。取值范围0~2147483646。(如果已经存在实例，应该大于已经占用的内存数)
 
         :return: The ram_quota of this SetQuota.
         :rtype: int
@@ -143,7 +143,7 @@ class SetQuota:
     def ram_quota(self, ram_quota):
         """Sets the ram_quota of this SetQuota.
 
-        内存使用配额，单位为GB。取值范围0~19200000。(如果已经存在实例，应该大于已经占用的内存数)
+        内存使用配额，单位为GB。取值范围0~2147483646。(如果已经存在实例，应该大于已经占用的内存数)
 
         :param ram_quota: The ram_quota of this SetQuota.
         :type ram_quota: int
