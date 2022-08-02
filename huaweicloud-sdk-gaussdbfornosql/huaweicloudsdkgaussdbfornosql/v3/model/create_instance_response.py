@@ -101,7 +101,7 @@ class CreateInstanceResponse(SdkResponse):
         :type dedicated_resource_id: str
         :param ssl_option: SSL开关选项，与请求参数相同。
         :type ssl_option: str
-        :param job_id: 创建实例的工作流ID, 仅创建按需实例时会返回该参数。
+        :param job_id: 创建实例的任务ID, 仅创建按需实例时会返回该参数。
         :type job_id: str
         :param order_id: 创建实例的订单ID，仅创建包年包月时返回该参数。
         :type order_id: str
@@ -523,7 +523,7 @@ class CreateInstanceResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this CreateInstanceResponse.
 
-        创建实例的工作流ID, 仅创建按需实例时会返回该参数。
+        创建实例的任务ID, 仅创建按需实例时会返回该参数。
 
         :return: The job_id of this CreateInstanceResponse.
         :rtype: str
@@ -534,7 +534,7 @@ class CreateInstanceResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this CreateInstanceResponse.
 
-        创建实例的工作流ID, 仅创建按需实例时会返回该参数。
+        创建实例的任务ID, 仅创建按需实例时会返回该参数。
 
         :param job_id: The job_id of this CreateInstanceResponse.
         :type job_id: str

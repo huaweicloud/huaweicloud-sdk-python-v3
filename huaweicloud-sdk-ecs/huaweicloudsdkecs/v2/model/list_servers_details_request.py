@@ -59,7 +59,7 @@ class ListServersDetailsRequest:
         :type flavor: str
         :param ip: IPv4地址过滤结果，匹配规则为模糊匹配。
         :type ip: str
-        :param limit: 查询返回云服务器当前页面的大小。每页最多返回1000台云服务器的信息。
+        :param limit: 查询返回云服务器当前页面的大小。每页默认值是25，最多返回1000台云服务器的信息。
         :type limit: int
         :param name: 云服务器名称，匹配规则为模糊匹配。
         :type name: str
@@ -185,7 +185,7 @@ class ListServersDetailsRequest:
     def limit(self):
         """Gets the limit of this ListServersDetailsRequest.
 
-        查询返回云服务器当前页面的大小。每页最多返回1000台云服务器的信息。
+        查询返回云服务器当前页面的大小。每页默认值是25，最多返回1000台云服务器的信息。
 
         :return: The limit of this ListServersDetailsRequest.
         :rtype: int
@@ -196,7 +196,7 @@ class ListServersDetailsRequest:
     def limit(self, limit):
         """Sets the limit of this ListServersDetailsRequest.
 
-        查询返回云服务器当前页面的大小。每页最多返回1000台云服务器的信息。
+        查询返回云服务器当前页面的大小。每页默认值是25，最多返回1000台云服务器的信息。
 
         :param limit: The limit of this ListServersDetailsRequest.
         :type limit: int

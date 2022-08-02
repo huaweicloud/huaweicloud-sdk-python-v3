@@ -25,8 +25,7 @@ class ImageMediaTaggingReq:
         'url': 'str',
         'language': 'str',
         'threshold': 'float',
-        'limit': 'int',
-        'custom_tags': 'list[str]'
+        'limit': 'int'
     }
 
     attribute_map = {
@@ -34,18 +33,17 @@ class ImageMediaTaggingReq:
         'url': 'url',
         'language': 'language',
         'threshold': 'threshold',
-        'limit': 'limit',
-        'custom_tags': 'custom_tags'
+        'limit': 'limit'
     }
 
-    def __init__(self, image=None, url=None, language=None, threshold=None, limit=None, custom_tags=None):
+    def __init__(self, image=None, url=None, language=None, threshold=None, limit=None):
         """ImageMediaTaggingReq
 
         The model defined in huaweicloud sdk
 
         :param image: 与url二选一  图像数据，base64编码，要求base64编码后大小不超过10M，最短边至少15px，最长边最大4096px，支持JPG/PNG/BMP格式。 
         :type image: str
-        :param url: 与image二选一  图片的URL路径，目前支持：  - 公网HTTP/HTTPS URL  - 华为云OBS提供的URL，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详请参见[[配置OBS服务的访问权限](https://support.huaweicloud.com/api-moderation/moderation_03_0020.html)](tag:hc)[[配置OBS服务的访问权限](https://support.huaweicloud.com/intl/zh-cn/api-moderation/moderation_03_0020.html)](tag:hk)。  &gt; - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 &gt; - 请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。 &gt; - lmage不支持跨区域OBS，OBS的区域需要和服务保持一致。 
+        :param url: 与image二选一  图片的URL路径，目前支持：  - 公网HTTP/HTTPS URL  - 华为云OBS提供的URL，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详请参见[[配置OBS服务的访问权限](https://support.huaweicloud.com/api-image/image_03_0037.html)](tag:hc)[[配置OBS服务的访问权限](https://support.huaweicloud.com/api-image/image_03_0037.html)](tag:hk)。  &gt; - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 &gt; - 请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。 &gt; - lmage不支持跨区域OBS，OBS的区域需要和服务保持一致。 
         :type url: str
         :param language: zh：返回标签的语言类型为中文。  en：返回标签的语言类型为英文。  默认值为zh。
         :type language: str
@@ -53,8 +51,6 @@ class ImageMediaTaggingReq:
         :type threshold: float
         :param limit: 最多返回的tag数（取值范围：1~150），默认值： 50
         :type limit: int
-        :param custom_tags: 用户自定义标签列表
-        :type custom_tags: list[str]
         """
         
         
@@ -64,7 +60,6 @@ class ImageMediaTaggingReq:
         self._language = None
         self._threshold = None
         self._limit = None
-        self._custom_tags = None
         self.discriminator = None
 
         if image is not None:
@@ -77,8 +72,6 @@ class ImageMediaTaggingReq:
             self.threshold = threshold
         if limit is not None:
             self.limit = limit
-        if custom_tags is not None:
-            self.custom_tags = custom_tags
 
     @property
     def image(self):
@@ -106,7 +99,7 @@ class ImageMediaTaggingReq:
     def url(self):
         """Gets the url of this ImageMediaTaggingReq.
 
-        与image二选一  图片的URL路径，目前支持：  - 公网HTTP/HTTPS URL  - 华为云OBS提供的URL，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详请参见[[配置OBS服务的访问权限](https://support.huaweicloud.com/api-moderation/moderation_03_0020.html)](tag:hc)[[配置OBS服务的访问权限](https://support.huaweicloud.com/intl/zh-cn/api-moderation/moderation_03_0020.html)](tag:hk)。  > - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 > - 请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。 > - lmage不支持跨区域OBS，OBS的区域需要和服务保持一致。 
+        与image二选一  图片的URL路径，目前支持：  - 公网HTTP/HTTPS URL  - 华为云OBS提供的URL，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详请参见[[配置OBS服务的访问权限](https://support.huaweicloud.com/api-image/image_03_0037.html)](tag:hc)[[配置OBS服务的访问权限](https://support.huaweicloud.com/api-image/image_03_0037.html)](tag:hk)。  > - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 > - 请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。 > - lmage不支持跨区域OBS，OBS的区域需要和服务保持一致。 
 
         :return: The url of this ImageMediaTaggingReq.
         :rtype: str
@@ -117,7 +110,7 @@ class ImageMediaTaggingReq:
     def url(self, url):
         """Sets the url of this ImageMediaTaggingReq.
 
-        与image二选一  图片的URL路径，目前支持：  - 公网HTTP/HTTPS URL  - 华为云OBS提供的URL，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详请参见[[配置OBS服务的访问权限](https://support.huaweicloud.com/api-moderation/moderation_03_0020.html)](tag:hc)[[配置OBS服务的访问权限](https://support.huaweicloud.com/intl/zh-cn/api-moderation/moderation_03_0020.html)](tag:hk)。  > - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 > - 请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。 > - lmage不支持跨区域OBS，OBS的区域需要和服务保持一致。 
+        与image二选一  图片的URL路径，目前支持：  - 公网HTTP/HTTPS URL  - 华为云OBS提供的URL，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权。详请参见[[配置OBS服务的访问权限](https://support.huaweicloud.com/api-image/image_03_0037.html)](tag:hc)[[配置OBS服务的访问权限](https://support.huaweicloud.com/api-image/image_03_0037.html)](tag:hk)。  > - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 > - 请保证被检测图片所在的存储服务稳定可靠，建议您使用华为云OBS存储。 > - lmage不支持跨区域OBS，OBS的区域需要和服务保持一致。 
 
         :param url: The url of this ImageMediaTaggingReq.
         :type url: str
@@ -189,28 +182,6 @@ class ImageMediaTaggingReq:
         :type limit: int
         """
         self._limit = limit
-
-    @property
-    def custom_tags(self):
-        """Gets the custom_tags of this ImageMediaTaggingReq.
-
-        用户自定义标签列表
-
-        :return: The custom_tags of this ImageMediaTaggingReq.
-        :rtype: list[str]
-        """
-        return self._custom_tags
-
-    @custom_tags.setter
-    def custom_tags(self, custom_tags):
-        """Sets the custom_tags of this ImageMediaTaggingReq.
-
-        用户自定义标签列表
-
-        :param custom_tags: The custom_tags of this ImageMediaTaggingReq.
-        :type custom_tags: list[str]
-        """
-        self._custom_tags = custom_tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -69,7 +69,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
         :type ca_id: str
         :param type: CA类型:   - **ROOT**: 根CA   - **SUBORDINATE**: 从属CA
         :type type: str
-        :param status: CA证书状态：   - **EXPIRED** : 待激活，此状态下，不可用于签发证书；   - **ACTIVED** : 已激活，此状态下，可用于签发证书；   - **DISABLED** : 已禁用，此状态下，不可用于签发证书；   - **DELETED** : 计划删除，此状态下，不可用于签发证书；   - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
+        :param status: CA证书状态：   - **PENDING** : 待激活，此状态下，不可用于签发证书；   - **ACTIVED** : 已激活，此状态下，可用于签发证书；   - **DISABLED** : 已禁用，此状态下，不可用于签发证书；   - **DELETED** : 计划删除，此状态下，不可用于签发证书；   - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
         :type status: str
         :param path_length: CA路径长度。 &gt; 注：生成的根CA证书，其路径长度不做限制，但本字段在数据库中统一置为7。从属CA的路径长度在创建时由用户指定，缺省值为0。
         :type path_length: int
@@ -205,7 +205,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowCertificateAuthorityResponse.
 
-        CA证书状态：   - **EXPIRED** : 待激活，此状态下，不可用于签发证书；   - **ACTIVED** : 已激活，此状态下，可用于签发证书；   - **DISABLED** : 已禁用，此状态下，不可用于签发证书；   - **DELETED** : 计划删除，此状态下，不可用于签发证书；   - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
+        CA证书状态：   - **PENDING** : 待激活，此状态下，不可用于签发证书；   - **ACTIVED** : 已激活，此状态下，可用于签发证书；   - **DISABLED** : 已禁用，此状态下，不可用于签发证书；   - **DELETED** : 计划删除，此状态下，不可用于签发证书；   - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
 
         :return: The status of this ShowCertificateAuthorityResponse.
         :rtype: str
@@ -216,7 +216,7 @@ class ShowCertificateAuthorityResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowCertificateAuthorityResponse.
 
-        CA证书状态：   - **EXPIRED** : 待激活，此状态下，不可用于签发证书；   - **ACTIVED** : 已激活，此状态下，可用于签发证书；   - **DISABLED** : 已禁用，此状态下，不可用于签发证书；   - **DELETED** : 计划删除，此状态下，不可用于签发证书；   - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
+        CA证书状态：   - **PENDING** : 待激活，此状态下，不可用于签发证书；   - **ACTIVED** : 已激活，此状态下，可用于签发证书；   - **DISABLED** : 已禁用，此状态下，不可用于签发证书；   - **DELETED** : 计划删除，此状态下，不可用于签发证书；   - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
 
         :param status: The status of this ShowCertificateAuthorityResponse.
         :type status: str

@@ -33,7 +33,7 @@ class UpdateSecurityGroupResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 工作流ID。
+        :param job_id: 任务ID。
         :type job_id: str
         """
         
@@ -49,7 +49,7 @@ class UpdateSecurityGroupResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this UpdateSecurityGroupResponse.
 
-        工作流ID。
+        任务ID。
 
         :return: The job_id of this UpdateSecurityGroupResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateSecurityGroupResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this UpdateSecurityGroupResponse.
 
-        工作流ID。
+        任务ID。
 
         :param job_id: The job_id of this UpdateSecurityGroupResponse.
         :type job_id: str

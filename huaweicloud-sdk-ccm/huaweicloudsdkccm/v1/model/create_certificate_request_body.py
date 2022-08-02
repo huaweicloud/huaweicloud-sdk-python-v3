@@ -28,6 +28,7 @@ class CreateCertificateRequestBody:
         'validity': 'Validity',
         'key_usages': 'list[str]',
         'subject_alternative_names': 'list[SubjectAlternativeName]',
+        'extended_key_usage': 'ExtendedKeyUsage',
         'customized_extension': 'CustomizedExtension'
     }
 
@@ -39,10 +40,11 @@ class CreateCertificateRequestBody:
         'validity': 'validity',
         'key_usages': 'key_usages',
         'subject_alternative_names': 'subject_alternative_names',
+        'extended_key_usage': 'extended_key_usage',
         'customized_extension': 'customized_extension'
     }
 
-    def __init__(self, issuer_id=None, key_algorithm=None, signature_algorithm=None, distinguished_name=None, validity=None, key_usages=None, subject_alternative_names=None, customized_extension=None):
+    def __init__(self, issuer_id=None, key_algorithm=None, signature_algorithm=None, distinguished_name=None, validity=None, key_usages=None, subject_alternative_names=None, extended_key_usage=None, customized_extension=None):
         """CreateCertificateRequestBody
 
         The model defined in huaweicloud sdk
@@ -61,6 +63,8 @@ class CreateCertificateRequestBody:
         :type key_usages: list[str]
         :param subject_alternative_names: 主体备用名称，详情请参见**SubjectAlternativeName**字段数据结构说明。   - array大小：[0,20]。
         :type subject_alternative_names: list[:class:`huaweicloudsdkccm.v1.SubjectAlternativeName`]
+        :param extended_key_usage: 
+        :type extended_key_usage: :class:`huaweicloudsdkccm.v1.ExtendedKeyUsage`
         :param customized_extension: 
         :type customized_extension: :class:`huaweicloudsdkccm.v1.CustomizedExtension`
         """
@@ -74,6 +78,7 @@ class CreateCertificateRequestBody:
         self._validity = None
         self._key_usages = None
         self._subject_alternative_names = None
+        self._extended_key_usage = None
         self._customized_extension = None
         self.discriminator = None
 
@@ -86,6 +91,8 @@ class CreateCertificateRequestBody:
             self.key_usages = key_usages
         if subject_alternative_names is not None:
             self.subject_alternative_names = subject_alternative_names
+        if extended_key_usage is not None:
+            self.extended_key_usage = extended_key_usage
         if customized_extension is not None:
             self.customized_extension = customized_extension
 
@@ -238,6 +245,26 @@ class CreateCertificateRequestBody:
         :type subject_alternative_names: list[:class:`huaweicloudsdkccm.v1.SubjectAlternativeName`]
         """
         self._subject_alternative_names = subject_alternative_names
+
+    @property
+    def extended_key_usage(self):
+        """Gets the extended_key_usage of this CreateCertificateRequestBody.
+
+
+        :return: The extended_key_usage of this CreateCertificateRequestBody.
+        :rtype: :class:`huaweicloudsdkccm.v1.ExtendedKeyUsage`
+        """
+        return self._extended_key_usage
+
+    @extended_key_usage.setter
+    def extended_key_usage(self, extended_key_usage):
+        """Sets the extended_key_usage of this CreateCertificateRequestBody.
+
+
+        :param extended_key_usage: The extended_key_usage of this CreateCertificateRequestBody.
+        :type extended_key_usage: :class:`huaweicloudsdkccm.v1.ExtendedKeyUsage`
+        """
+        self._extended_key_usage = extended_key_usage
 
     @property
     def customized_extension(self):

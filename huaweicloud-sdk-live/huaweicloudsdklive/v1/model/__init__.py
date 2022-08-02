@@ -10,6 +10,8 @@ from huaweicloudsdklive.v1.model.create_domain_request import CreateDomainReques
 from huaweicloudsdklive.v1.model.create_domain_response import CreateDomainResponse
 from huaweicloudsdklive.v1.model.create_record_callback_config_request import CreateRecordCallbackConfigRequest
 from huaweicloudsdklive.v1.model.create_record_callback_config_response import CreateRecordCallbackConfigResponse
+from huaweicloudsdklive.v1.model.create_record_index_request import CreateRecordIndexRequest
+from huaweicloudsdklive.v1.model.create_record_index_response import CreateRecordIndexResponse
 from huaweicloudsdklive.v1.model.create_record_rule_request import CreateRecordRuleRequest
 from huaweicloudsdklive.v1.model.create_record_rule_response import CreateRecordRuleResponse
 from huaweicloudsdklive.v1.model.create_stream_forbidden_request import CreateStreamForbiddenRequest
@@ -55,6 +57,7 @@ from huaweicloudsdklive.v1.model.record_callback_config import RecordCallbackCon
 from huaweicloudsdklive.v1.model.record_callback_config_request import RecordCallbackConfigRequest
 from huaweicloudsdklive.v1.model.record_content_info_v2 import RecordContentInfoV2
 from huaweicloudsdklive.v1.model.record_control_info import RecordControlInfo
+from huaweicloudsdklive.v1.model.record_index_request_body import RecordIndexRequestBody
 from huaweicloudsdklive.v1.model.record_obs_file_addr import RecordObsFileAddr
 from huaweicloudsdklive.v1.model.record_rule import RecordRule
 from huaweicloudsdklive.v1.model.record_rule_request import RecordRuleRequest

@@ -51,7 +51,7 @@ class ListCertificateAuthorityRequest:
         :type name: str
         :param offset: 索引位置，从offset指定的下一条数据开始查询。默认值为0。
         :type offset: int
-        :param status: CA证书状态，通过状态过滤证书集合： - **EXPIRED** : 待激活，此状态下，不可用于签发证书； - **ACTIVED** : 已激活，此状态下，可用于签发证书； - **DISABLED** : 已禁用，此状态下，不可用于签发证书； - **DELETED** : 计划删除，此状态下，不可用于签发证书； - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
+        :param status: CA证书状态，通过状态过滤证书集合： - **PENDING** : 待激活，此状态下，不可用于签发证书； - **ACTIVED** : 已激活，此状态下，可用于签发证书； - **DISABLED** : 已禁用，此状态下，不可用于签发证书； - **DELETED** : 计划删除，此状态下，不可用于签发证书； - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
         :type status: str
         :param type: CA证书类型： - **ROOT** : 根CA证书 - **SUBORDINATE** : 从属CA证书
         :type type: str
@@ -157,7 +157,7 @@ class ListCertificateAuthorityRequest:
     def status(self):
         """Gets the status of this ListCertificateAuthorityRequest.
 
-        CA证书状态，通过状态过滤证书集合： - **EXPIRED** : 待激活，此状态下，不可用于签发证书； - **ACTIVED** : 已激活，此状态下，可用于签发证书； - **DISABLED** : 已禁用，此状态下，不可用于签发证书； - **DELETED** : 计划删除，此状态下，不可用于签发证书； - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
+        CA证书状态，通过状态过滤证书集合： - **PENDING** : 待激活，此状态下，不可用于签发证书； - **ACTIVED** : 已激活，此状态下，可用于签发证书； - **DISABLED** : 已禁用，此状态下，不可用于签发证书； - **DELETED** : 计划删除，此状态下，不可用于签发证书； - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
 
         :return: The status of this ListCertificateAuthorityRequest.
         :rtype: str
@@ -168,7 +168,7 @@ class ListCertificateAuthorityRequest:
     def status(self, status):
         """Sets the status of this ListCertificateAuthorityRequest.
 
-        CA证书状态，通过状态过滤证书集合： - **EXPIRED** : 待激活，此状态下，不可用于签发证书； - **ACTIVED** : 已激活，此状态下，可用于签发证书； - **DISABLED** : 已禁用，此状态下，不可用于签发证书； - **DELETED** : 计划删除，此状态下，不可用于签发证书； - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
+        CA证书状态，通过状态过滤证书集合： - **PENDING** : 待激活，此状态下，不可用于签发证书； - **ACTIVED** : 已激活，此状态下，可用于签发证书； - **DISABLED** : 已禁用，此状态下，不可用于签发证书； - **DELETED** : 计划删除，此状态下，不可用于签发证书； - **EXPIRED** : 已过期，此状态下，不可用于签发证书。
 
         :param status: The status of this ListCertificateAuthorityRequest.
         :type status: str

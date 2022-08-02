@@ -168,23 +168,23 @@ class CcmClient(Client):
 
         通过CSR签发证书。功能约束如下：
         - 1、当前默认参数如下：
-          - （1）CA 默认参数：
+          - CA 默认参数：
               - **keyUsage**: digitalSignature, keyCertSign, cRLSign，优先采用CSR中的参数；
               - **SignatureHashAlgorithm**: SHA384；
               - **PathLength**：0 （可自定义）。
-          - （2）私有证书：
+          - 私有证书：
               - **keyUsage**: digitalSignature keyAgreement，优先采用CSR中的参数；
               - **SignatureHashAlgorithm**: SHA384；
         - 2、当传入的type为**INTERMEDIATE_CA**时，创建出的从属CA证书，有以下限制：
-          - （1）不占用CA配额。在查询CA列表时，不会返回该证书；
-          - （2）只支持通过以下两个接口获取其信息：
+          - 不占用CA配额。在查询CA列表时，不会返回该证书；
+          - 只支持通过以下两个接口获取其信息：
               - GET /v1/private-certificate-authorities/{ca_id} 获取证书详情
               - POST /v1/private-certificate-authorities/{ca_id}/export 导出证书
-          - （3）本接口返回的**certificate_id**即代表从属CA的**ca_id**；
-          - （4）无法用于签发证书，密钥在用户侧。
+          - 本接口返回的**certificate_id**即代表从属CA的**ca_id**；
+          - 无法用于签发证书，密钥在用户侧。
         - 3、当type为**ENTITY_CERT**时，创建出的私有证书，有以下特点：
-          - （1）占用私有证书配额。在查询私有证书列表时，会返回该证书；
-          - （2）除了导出时不包含密钥信息（密钥在用户端），其余用法与其它私有证书一致。
+          - 占用私有证书配额。在查询私有证书列表时，会返回该证书；
+          - 除了导出时不包含密钥信息（密钥在用户端），其余用法与其它私有证书一致。
         &gt; 注：需要使用“\\r\\n”或“\\n”代替换行符，将CSR转换成一串字符，可参考示例请求。注：目前，证书的组织信息、公钥算法以及公钥内容等均来自CSR文件，暂不支持API传入。
         
         详细说明请参考华为云API Explorer。
@@ -303,13 +303,13 @@ class CcmClient(Client):
 
         导出证书。
           - 选择是否压缩时，分以下两种情况：
-           - is_compressed为true时，返回文件压缩包，命名为：证书名称_type字段小写字母.zip，如”test_apache.zip“。
+            - is_compressed为true时，返回文件压缩包，命名为：证书名称_type字段小写字母.zip，如”test_apache.zip“。
               - type &#x3D; \&quot;**APACHE**\&quot;时，压缩包中包含三个文件：**server.key**（密钥文件，内容为PEM格式）、**chain.crt**（证书链，内容为PEM格式）、**server.crt**（证书，内容为PEM格式）；
               - type &#x3D; \&quot;**IIS**\&quot;时，压缩包中包含两个文件：**keystorePass.txt**（keystore口令）、**server.pfx**（PFX证书，证书与证书链包含在同一个文件）；
               - type &#x3D; \&quot;**NGINX**\&quot;时，压缩包中包含两个文件：**server.key**（密钥文件，内容为PEM格式）、**server.crt**（内容为PEM格式，证书与证书链包含在同一个文件）；
               - type &#x3D; \&quot;**TOMCAT**\&quot;时，压缩包中包含两个文件：**keystorePass.txt**（keystore口令）、**server.jks**（JKX证书，证书与证书链包含在同一个文件）；
               - type &#x3D; \&quot;**OTHER**\&quot;时，压缩包中包含三个文件：**server.key**（密钥文件，内容为PEM格式）、**chain.pem**（证书链）、**server.pem**（证书）。
-          - is_compressed为false时，返回json格式，返回的具体参数如下：
+            - is_compressed为false时，返回json格式，返回的具体参数如下：
               - type &#x3D; \&quot;**APACHE**\&quot;或\&quot;**NGINX**\&quot;或\&quot;**OTHER**\&quot;时，返回参数如下：
                 - **certificate**（证书内容，PEM格式）；
                 - **certificate_chain**（证书链，PEM格式）；
@@ -1151,9 +1151,9 @@ class CcmClient(Client):
         导入CA证书，使用本接口需要满足以下条件：
           - （1）证书为“待激活”状态的从属CA；
           - （2）导入的证书体必须满足以下条件：
-            - a、该证书被签发时的证书签名请求必须是从PCA系统中导出；
-            - b、其证书链虽然允许不上传，但后期若想要导出完整的证书链，应导入完整的证书链；
-            - c、证书体与证书链必须为PEM编码。
+              - a、该证书被签发时的证书签名请求必须是从PCA系统中导出；
+              - b、其证书链虽然允许不上传，但后期若想要导出完整的证书链，应导入完整的证书链；
+              - c、证书体与证书链必须为PEM编码。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1258,7 +1258,7 @@ class CcmClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/issue',
+            resource_path='/v1/private-certificate-authorities/{ca_id}/activate',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -1395,6 +1395,67 @@ class CcmClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='RestoreCertificateAuthorityResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def revoke_certificate_authority(self, request):
+        """吊销CA
+
+        吊销子CA。
+        &gt; 注：当不想填写吊销理由时，请求body体请置为\&quot;**{}**\&quot;，否则将会报错。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RevokeCertificateAuthority
+        :type request: :class:`huaweicloudsdkccm.v1.RevokeCertificateAuthorityRequest`
+        :rtype: :class:`huaweicloudsdkccm.v1.RevokeCertificateAuthorityResponse`
+        """
+        return self.revoke_certificate_authority_with_http_info(request)
+
+    def revoke_certificate_authority_with_http_info(self, request):
+        all_params = ['ca_id', 'revoke_certificate_authority_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'ca_id' in local_var_params:
+            path_params['ca_id'] = local_var_params['ca_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/private-certificate-authorities/{ca_id}/revoke',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RevokeCertificateAuthorityResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

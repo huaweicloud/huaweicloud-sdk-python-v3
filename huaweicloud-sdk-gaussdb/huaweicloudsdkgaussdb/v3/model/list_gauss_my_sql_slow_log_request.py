@@ -59,7 +59,7 @@ class ListGaussMySqlSlowLogRequest:
         :type offset: int
         :param limit: 查询记录数。默认为100，不能为负数，最小值为1，最大值为100
         :type limit: int
-        :param type: 语句类型，取空值，表示查询所有语句类型，也可指定如下日志类型：INSERT、UPDATE、SELECT、DELETE和CREATE
+        :param type: 语句类型，取空值，表示查询所有语句类型，也可指定如下日志类型：INSERT、UPDATE、SELECT、DELETE、ALTER、DROP和CREATE
         :type type: str
         :param node_id: 节点ID
         :type node_id: str
@@ -226,7 +226,7 @@ class ListGaussMySqlSlowLogRequest:
     def type(self):
         """Gets the type of this ListGaussMySqlSlowLogRequest.
 
-        语句类型，取空值，表示查询所有语句类型，也可指定如下日志类型：INSERT、UPDATE、SELECT、DELETE和CREATE
+        语句类型，取空值，表示查询所有语句类型，也可指定如下日志类型：INSERT、UPDATE、SELECT、DELETE、ALTER、DROP和CREATE
 
         :return: The type of this ListGaussMySqlSlowLogRequest.
         :rtype: str
@@ -237,7 +237,7 @@ class ListGaussMySqlSlowLogRequest:
     def type(self, type):
         """Sets the type of this ListGaussMySqlSlowLogRequest.
 
-        语句类型，取空值，表示查询所有语句类型，也可指定如下日志类型：INSERT、UPDATE、SELECT、DELETE和CREATE
+        语句类型，取空值，表示查询所有语句类型，也可指定如下日志类型：INSERT、UPDATE、SELECT、DELETE、ALTER、DROP和CREATE
 
         :param type: The type of this ListGaussMySqlSlowLogRequest.
         :type type: str
