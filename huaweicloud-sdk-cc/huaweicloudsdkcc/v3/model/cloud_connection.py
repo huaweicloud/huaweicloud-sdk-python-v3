@@ -71,11 +71,11 @@ class CloudConnection:
         :type status: str
         :param admin_state_up: 云连接实例的管理状态。
         :type admin_state_up: bool
-        :param created_at: 云连接实例的创建时间。
+        :param created_at: 云连接实例的创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss
         :type created_at: datetime
-        :param updated_at: 云连接实例的更新时间。
+        :param updated_at: 云连接实例的更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss
         :type updated_at: datetime
-        :param used_scene: 云连接使用场景。|- VPC：虚拟私有云。 ER：虚拟路由器。
+        :param used_scene: 云连接使用场景。 - VPC：虚拟私有云。 - ER：企业路由器。
         :type used_scene: str
         :param network_instance_number: 云连接实例关联网络实例的个数。
         :type network_instance_number: int
@@ -287,7 +287,7 @@ class CloudConnection:
     def created_at(self):
         """Gets the created_at of this CloudConnection.
 
-        云连接实例的创建时间。
+        云连接实例的创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss
 
         :return: The created_at of this CloudConnection.
         :rtype: datetime
@@ -298,7 +298,7 @@ class CloudConnection:
     def created_at(self, created_at):
         """Sets the created_at of this CloudConnection.
 
-        云连接实例的创建时间。
+        云连接实例的创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss
 
         :param created_at: The created_at of this CloudConnection.
         :type created_at: datetime
@@ -309,7 +309,7 @@ class CloudConnection:
     def updated_at(self):
         """Gets the updated_at of this CloudConnection.
 
-        云连接实例的更新时间。
+        云连接实例的更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss
 
         :return: The updated_at of this CloudConnection.
         :rtype: datetime
@@ -320,7 +320,7 @@ class CloudConnection:
     def updated_at(self, updated_at):
         """Sets the updated_at of this CloudConnection.
 
-        云连接实例的更新时间。
+        云连接实例的更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss
 
         :param updated_at: The updated_at of this CloudConnection.
         :type updated_at: datetime
@@ -331,7 +331,7 @@ class CloudConnection:
     def used_scene(self):
         """Gets the used_scene of this CloudConnection.
 
-        云连接使用场景。|- VPC：虚拟私有云。 ER：虚拟路由器。
+        云连接使用场景。 - VPC：虚拟私有云。 - ER：企业路由器。
 
         :return: The used_scene of this CloudConnection.
         :rtype: str
@@ -342,7 +342,7 @@ class CloudConnection:
     def used_scene(self, used_scene):
         """Sets the used_scene of this CloudConnection.
 
-        云连接使用场景。|- VPC：虚拟私有云。 ER：虚拟路由器。
+        云连接使用场景。 - VPC：虚拟私有云。 - ER：企业路由器。
 
         :param used_scene: The used_scene of this CloudConnection.
         :type used_scene: str

@@ -49,23 +49,23 @@ class CreateNetworkInstance:
 
         The model defined in huaweicloud sdk
 
-        :param name: 网络实例的名字。
+        :param name: 网络实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
         :type name: str
-        :param description: 网络实例的描述。
+        :param description: 网络实例的描述。不支持 &lt;&gt;。
         :type description: str
-        :param type: 添加到云连接网络实例的类型。|- VPC：虚拟私有云。 VGW：虚拟网关。 ER：虚拟路由器。
+        :param type: 添加到云连接网络实例的类型，有效值： - vpc：虚拟私有云。 - vgw：虚拟网关。 - er：企业路由器。
         :type type: str
-        :param instance_id: 添加到云连接网络实例的ID，VPC或者VGW的ID。
+        :param instance_id: 添加到云连接网络实例的ID，VPC、VGW或者ER的ID。
         :type instance_id: str
-        :param instance_domain_id: VPC或者VGW的账户ID。
+        :param instance_domain_id: 网络实例的账户ID。跨账号加载必填；同账号下资源加载不填。
         :type instance_domain_id: str
-        :param project_id: VPC或者VGW的项目ID。
+        :param project_id: 网络实例的项目ID。
         :type project_id: str
-        :param region_id: VPC或者VGW的RegionID。
+        :param region_id: 网络实例的RegionID。
         :type region_id: str
         :param cloud_connection_id: 云连接实例ID。
         :type cloud_connection_id: str
-        :param cidrs: VPC或者VGW发布的网段路由列表，ER场景不需要此字段。
+        :param cidrs: 网络实例发布的网段路由列表，ER场景此字段为空。
         :type cidrs: list[str]
         """
         
@@ -99,7 +99,7 @@ class CreateNetworkInstance:
     def name(self):
         """Gets the name of this CreateNetworkInstance.
 
-        网络实例的名字。
+        网络实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
 
         :return: The name of this CreateNetworkInstance.
         :rtype: str
@@ -110,7 +110,7 @@ class CreateNetworkInstance:
     def name(self, name):
         """Sets the name of this CreateNetworkInstance.
 
-        网络实例的名字。
+        网络实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
 
         :param name: The name of this CreateNetworkInstance.
         :type name: str
@@ -121,7 +121,7 @@ class CreateNetworkInstance:
     def description(self):
         """Gets the description of this CreateNetworkInstance.
 
-        网络实例的描述。
+        网络实例的描述。不支持 <>。
 
         :return: The description of this CreateNetworkInstance.
         :rtype: str
@@ -132,7 +132,7 @@ class CreateNetworkInstance:
     def description(self, description):
         """Sets the description of this CreateNetworkInstance.
 
-        网络实例的描述。
+        网络实例的描述。不支持 <>。
 
         :param description: The description of this CreateNetworkInstance.
         :type description: str
@@ -143,7 +143,7 @@ class CreateNetworkInstance:
     def type(self):
         """Gets the type of this CreateNetworkInstance.
 
-        添加到云连接网络实例的类型。|- VPC：虚拟私有云。 VGW：虚拟网关。 ER：虚拟路由器。
+        添加到云连接网络实例的类型，有效值： - vpc：虚拟私有云。 - vgw：虚拟网关。 - er：企业路由器。
 
         :return: The type of this CreateNetworkInstance.
         :rtype: str
@@ -154,7 +154,7 @@ class CreateNetworkInstance:
     def type(self, type):
         """Sets the type of this CreateNetworkInstance.
 
-        添加到云连接网络实例的类型。|- VPC：虚拟私有云。 VGW：虚拟网关。 ER：虚拟路由器。
+        添加到云连接网络实例的类型，有效值： - vpc：虚拟私有云。 - vgw：虚拟网关。 - er：企业路由器。
 
         :param type: The type of this CreateNetworkInstance.
         :type type: str
@@ -165,7 +165,7 @@ class CreateNetworkInstance:
     def instance_id(self):
         """Gets the instance_id of this CreateNetworkInstance.
 
-        添加到云连接网络实例的ID，VPC或者VGW的ID。
+        添加到云连接网络实例的ID，VPC、VGW或者ER的ID。
 
         :return: The instance_id of this CreateNetworkInstance.
         :rtype: str
@@ -176,7 +176,7 @@ class CreateNetworkInstance:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CreateNetworkInstance.
 
-        添加到云连接网络实例的ID，VPC或者VGW的ID。
+        添加到云连接网络实例的ID，VPC、VGW或者ER的ID。
 
         :param instance_id: The instance_id of this CreateNetworkInstance.
         :type instance_id: str
@@ -187,7 +187,7 @@ class CreateNetworkInstance:
     def instance_domain_id(self):
         """Gets the instance_domain_id of this CreateNetworkInstance.
 
-        VPC或者VGW的账户ID。
+        网络实例的账户ID。跨账号加载必填；同账号下资源加载不填。
 
         :return: The instance_domain_id of this CreateNetworkInstance.
         :rtype: str
@@ -198,7 +198,7 @@ class CreateNetworkInstance:
     def instance_domain_id(self, instance_domain_id):
         """Sets the instance_domain_id of this CreateNetworkInstance.
 
-        VPC或者VGW的账户ID。
+        网络实例的账户ID。跨账号加载必填；同账号下资源加载不填。
 
         :param instance_domain_id: The instance_domain_id of this CreateNetworkInstance.
         :type instance_domain_id: str
@@ -209,7 +209,7 @@ class CreateNetworkInstance:
     def project_id(self):
         """Gets the project_id of this CreateNetworkInstance.
 
-        VPC或者VGW的项目ID。
+        网络实例的项目ID。
 
         :return: The project_id of this CreateNetworkInstance.
         :rtype: str
@@ -220,7 +220,7 @@ class CreateNetworkInstance:
     def project_id(self, project_id):
         """Sets the project_id of this CreateNetworkInstance.
 
-        VPC或者VGW的项目ID。
+        网络实例的项目ID。
 
         :param project_id: The project_id of this CreateNetworkInstance.
         :type project_id: str
@@ -231,7 +231,7 @@ class CreateNetworkInstance:
     def region_id(self):
         """Gets the region_id of this CreateNetworkInstance.
 
-        VPC或者VGW的RegionID。
+        网络实例的RegionID。
 
         :return: The region_id of this CreateNetworkInstance.
         :rtype: str
@@ -242,7 +242,7 @@ class CreateNetworkInstance:
     def region_id(self, region_id):
         """Sets the region_id of this CreateNetworkInstance.
 
-        VPC或者VGW的RegionID。
+        网络实例的RegionID。
 
         :param region_id: The region_id of this CreateNetworkInstance.
         :type region_id: str
@@ -275,7 +275,7 @@ class CreateNetworkInstance:
     def cidrs(self):
         """Gets the cidrs of this CreateNetworkInstance.
 
-        VPC或者VGW发布的网段路由列表，ER场景不需要此字段。
+        网络实例发布的网段路由列表，ER场景此字段为空。
 
         :return: The cidrs of this CreateNetworkInstance.
         :rtype: list[str]
@@ -286,7 +286,7 @@ class CreateNetworkInstance:
     def cidrs(self, cidrs):
         """Sets the cidrs of this CreateNetworkInstance.
 
-        VPC或者VGW发布的网段路由列表，ER场景不需要此字段。
+        网络实例发布的网段路由列表，ER场景此字段为空。
 
         :param cidrs: The cidrs of this CreateNetworkInstance.
         :type cidrs: list[str]

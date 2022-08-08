@@ -39,13 +39,13 @@ class CreateCloudConnection:
 
         The model defined in huaweicloud sdk
 
-        :param name: 云连接实例的名字。
+        :param name: 云连接实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
         :type name: str
-        :param description: 云连接实例的描述。
+        :param description: 云连接实例的描述。不支持 &lt;&gt;。
         :type description: str
-        :param enterprise_project_id: 云连接实例所属的企业项目ID。
+        :param enterprise_project_id: 云连接实例所属的企业项目ID。企业项目账号必填；非企业项目账号不填。
         :type enterprise_project_id: str
-        :param used_scene: 云连接使用场景。|- VPC：虚拟私有云。 ER：虚拟路由器。
+        :param used_scene: 云连接使用场景，有效值： - vpc：虚拟私有云。 - er：企业路由器。
         :type used_scene: str
         """
         
@@ -69,7 +69,7 @@ class CreateCloudConnection:
     def name(self):
         """Gets the name of this CreateCloudConnection.
 
-        云连接实例的名字。
+        云连接实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
 
         :return: The name of this CreateCloudConnection.
         :rtype: str
@@ -80,7 +80,7 @@ class CreateCloudConnection:
     def name(self, name):
         """Sets the name of this CreateCloudConnection.
 
-        云连接实例的名字。
+        云连接实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
 
         :param name: The name of this CreateCloudConnection.
         :type name: str
@@ -91,7 +91,7 @@ class CreateCloudConnection:
     def description(self):
         """Gets the description of this CreateCloudConnection.
 
-        云连接实例的描述。
+        云连接实例的描述。不支持 <>。
 
         :return: The description of this CreateCloudConnection.
         :rtype: str
@@ -102,7 +102,7 @@ class CreateCloudConnection:
     def description(self, description):
         """Sets the description of this CreateCloudConnection.
 
-        云连接实例的描述。
+        云连接实例的描述。不支持 <>。
 
         :param description: The description of this CreateCloudConnection.
         :type description: str
@@ -113,7 +113,7 @@ class CreateCloudConnection:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateCloudConnection.
 
-        云连接实例所属的企业项目ID。
+        云连接实例所属的企业项目ID。企业项目账号必填；非企业项目账号不填。
 
         :return: The enterprise_project_id of this CreateCloudConnection.
         :rtype: str
@@ -124,7 +124,7 @@ class CreateCloudConnection:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateCloudConnection.
 
-        云连接实例所属的企业项目ID。
+        云连接实例所属的企业项目ID。企业项目账号必填；非企业项目账号不填。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateCloudConnection.
         :type enterprise_project_id: str
@@ -135,7 +135,7 @@ class CreateCloudConnection:
     def used_scene(self):
         """Gets the used_scene of this CreateCloudConnection.
 
-        云连接使用场景。|- VPC：虚拟私有云。 ER：虚拟路由器。
+        云连接使用场景，有效值： - vpc：虚拟私有云。 - er：企业路由器。
 
         :return: The used_scene of this CreateCloudConnection.
         :rtype: str
@@ -146,7 +146,7 @@ class CreateCloudConnection:
     def used_scene(self, used_scene):
         """Sets the used_scene of this CreateCloudConnection.
 
-        云连接使用场景。|- VPC：虚拟私有云。 ER：虚拟路由器。
+        云连接使用场景，有效值： - vpc：虚拟私有云。 - er：企业路由器。
 
         :param used_scene: The used_scene of this CreateCloudConnection.
         :type used_scene: str

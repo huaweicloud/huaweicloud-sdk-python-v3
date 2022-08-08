@@ -1,3 +1,19 @@
+# 3.0.102 2022-08-08
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the interfaces:
+    - `UpdateSqlFilterControl`
+    - `ShowSqlFilterControl`
+    - `SetSqlFilterRule`
+    - `ShowSqlFilterRule`
+    - `DeleteSqlFilterRule`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.0.101 2022-08-02
 
 ### HuaweiCloud SDK CCM

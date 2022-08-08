@@ -153,8 +153,7 @@ class CreateScalingGroupOption:
         self.discriminator = None
 
         self.scaling_group_name = scaling_group_name
-        if scaling_configuration_id is not None:
-            self.scaling_configuration_id = scaling_configuration_id
+        self.scaling_configuration_id = scaling_configuration_id
         if desire_instance_number is not None:
             self.desire_instance_number = desire_instance_number
         if min_instance_number is not None:

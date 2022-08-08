@@ -37,11 +37,11 @@ class UpdateNetworkInstance:
 
         The model defined in huaweicloud sdk
 
-        :param name: 网络实例的名字。
+        :param name: 网络实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
         :type name: str
-        :param description: 网络实例的描述。
+        :param description: 网络实例的描述。不支持 &lt;&gt;。
         :type description: str
-        :param cidrs: VPC或者VGW发布的网段路由列表，ER场景不需要此字段。
+        :param cidrs: 网络实例发布的网段路由列表，ER场景此字段为空。
         :type cidrs: list[str]
         """
         
@@ -63,7 +63,7 @@ class UpdateNetworkInstance:
     def name(self):
         """Gets the name of this UpdateNetworkInstance.
 
-        网络实例的名字。
+        网络实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
 
         :return: The name of this UpdateNetworkInstance.
         :rtype: str
@@ -74,7 +74,7 @@ class UpdateNetworkInstance:
     def name(self, name):
         """Sets the name of this UpdateNetworkInstance.
 
-        网络实例的名字。
+        网络实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
 
         :param name: The name of this UpdateNetworkInstance.
         :type name: str
@@ -85,7 +85,7 @@ class UpdateNetworkInstance:
     def description(self):
         """Gets the description of this UpdateNetworkInstance.
 
-        网络实例的描述。
+        网络实例的描述。不支持 <>。
 
         :return: The description of this UpdateNetworkInstance.
         :rtype: str
@@ -96,7 +96,7 @@ class UpdateNetworkInstance:
     def description(self, description):
         """Sets the description of this UpdateNetworkInstance.
 
-        网络实例的描述。
+        网络实例的描述。不支持 <>。
 
         :param description: The description of this UpdateNetworkInstance.
         :type description: str
@@ -107,7 +107,7 @@ class UpdateNetworkInstance:
     def cidrs(self):
         """Gets the cidrs of this UpdateNetworkInstance.
 
-        VPC或者VGW发布的网段路由列表，ER场景不需要此字段。
+        网络实例发布的网段路由列表，ER场景此字段为空。
 
         :return: The cidrs of this UpdateNetworkInstance.
         :rtype: list[str]
@@ -118,7 +118,7 @@ class UpdateNetworkInstance:
     def cidrs(self, cidrs):
         """Sets the cidrs of this UpdateNetworkInstance.
 
-        VPC或者VGW发布的网段路由列表，ER场景不需要此字段。
+        网络实例发布的网段路由列表，ER场景此字段为空。
 
         :param cidrs: The cidrs of this UpdateNetworkInstance.
         :type cidrs: list[str]

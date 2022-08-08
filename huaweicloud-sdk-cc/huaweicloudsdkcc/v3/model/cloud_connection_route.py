@@ -57,7 +57,7 @@ class CloudConnectionRoute:
         :type project_id: str
         :param instance_id: 路由条目下一跳指向的网络实例的ID。
         :type instance_id: str
-        :param type: 路由条目下一跳指向的网络实例的类型。 |- VPC：虚拟私有云。 VGW：虚拟网关。
+        :param type: 路由条目下一跳指向的网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。
         :type type: str
         :param region_id: Region的ID。
         :type region_id: str
@@ -208,7 +208,7 @@ class CloudConnectionRoute:
     def type(self):
         """Gets the type of this CloudConnectionRoute.
 
-        路由条目下一跳指向的网络实例的类型。 |- VPC：虚拟私有云。 VGW：虚拟网关。
+        路由条目下一跳指向的网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。
 
         :return: The type of this CloudConnectionRoute.
         :rtype: str
@@ -219,7 +219,7 @@ class CloudConnectionRoute:
     def type(self, type):
         """Sets the type of this CloudConnectionRoute.
 
-        路由条目下一跳指向的网络实例的类型。 |- VPC：虚拟私有云。 VGW：虚拟网关。
+        路由条目下一跳指向的网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。
 
         :param type: The type of this CloudConnectionRoute.
         :type type: str

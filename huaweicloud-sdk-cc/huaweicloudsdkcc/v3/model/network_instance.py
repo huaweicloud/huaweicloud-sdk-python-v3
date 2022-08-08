@@ -67,25 +67,25 @@ class NetworkInstance:
         :type description: str
         :param domain_id: 帐号ID。
         :type domain_id: str
-        :param status: 网络实例的状态。ACTIVE：表示状态可用。
+        :param status: 网络实例的状态。 - ACTIVE：处理成功。 - PENDING：处理中。 - ERROR：处理失败。
         :type status: str
-        :param created_at: 网络实例的创建时间。
+        :param created_at: 网络实例的创建时间。 UTC时间格式，yyyy-MM-ddTHH:mm:ss
         :type created_at: datetime
-        :param updated_at: 网络实例的更新时间。
+        :param updated_at: 网络实例的更新时间。 UTC时间格式，yyyy-MM-ddTHH:mm:ss
         :type updated_at: datetime
-        :param type: 网络实例的类型。|- VPC：虚拟私有云。 VGW：虚拟网关。 ER：虚拟路由器。
+        :param type: 网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。 - ER：企业路由器。
         :type type: str
         :param cloud_connection_id: 云连接实例ID。
         :type cloud_connection_id: str
-        :param instance_id: VPC或者VGW的ID。
+        :param instance_id: 网络实例的ID。
         :type instance_id: str
-        :param instance_domain_id: VPC或者VGW所属账户ID。
+        :param instance_domain_id: 网络实例所属账户ID。
         :type instance_domain_id: str
-        :param region_id: VPC或者VGW所在Region的ID。
+        :param region_id: 网络实例所在Region的ID。
         :type region_id: str
-        :param project_id: VPC或者VGW所在租户的项目ID。
+        :param project_id: 网络实例所在租户的项目ID。
         :type project_id: str
-        :param cidrs: VPC或者VGW发布的网段路由列表。
+        :param cidrs: 网络实例发布的网段路由列表，ER场景此字段为空。
         :type cidrs: list[str]
         """
         
@@ -228,7 +228,7 @@ class NetworkInstance:
     def status(self):
         """Gets the status of this NetworkInstance.
 
-        网络实例的状态。ACTIVE：表示状态可用。
+        网络实例的状态。 - ACTIVE：处理成功。 - PENDING：处理中。 - ERROR：处理失败。
 
         :return: The status of this NetworkInstance.
         :rtype: str
@@ -239,7 +239,7 @@ class NetworkInstance:
     def status(self, status):
         """Sets the status of this NetworkInstance.
 
-        网络实例的状态。ACTIVE：表示状态可用。
+        网络实例的状态。 - ACTIVE：处理成功。 - PENDING：处理中。 - ERROR：处理失败。
 
         :param status: The status of this NetworkInstance.
         :type status: str
@@ -250,7 +250,7 @@ class NetworkInstance:
     def created_at(self):
         """Gets the created_at of this NetworkInstance.
 
-        网络实例的创建时间。
+        网络实例的创建时间。 UTC时间格式，yyyy-MM-ddTHH:mm:ss
 
         :return: The created_at of this NetworkInstance.
         :rtype: datetime
@@ -261,7 +261,7 @@ class NetworkInstance:
     def created_at(self, created_at):
         """Sets the created_at of this NetworkInstance.
 
-        网络实例的创建时间。
+        网络实例的创建时间。 UTC时间格式，yyyy-MM-ddTHH:mm:ss
 
         :param created_at: The created_at of this NetworkInstance.
         :type created_at: datetime
@@ -272,7 +272,7 @@ class NetworkInstance:
     def updated_at(self):
         """Gets the updated_at of this NetworkInstance.
 
-        网络实例的更新时间。
+        网络实例的更新时间。 UTC时间格式，yyyy-MM-ddTHH:mm:ss
 
         :return: The updated_at of this NetworkInstance.
         :rtype: datetime
@@ -283,7 +283,7 @@ class NetworkInstance:
     def updated_at(self, updated_at):
         """Sets the updated_at of this NetworkInstance.
 
-        网络实例的更新时间。
+        网络实例的更新时间。 UTC时间格式，yyyy-MM-ddTHH:mm:ss
 
         :param updated_at: The updated_at of this NetworkInstance.
         :type updated_at: datetime
@@ -294,7 +294,7 @@ class NetworkInstance:
     def type(self):
         """Gets the type of this NetworkInstance.
 
-        网络实例的类型。|- VPC：虚拟私有云。 VGW：虚拟网关。 ER：虚拟路由器。
+        网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。 - ER：企业路由器。
 
         :return: The type of this NetworkInstance.
         :rtype: str
@@ -305,7 +305,7 @@ class NetworkInstance:
     def type(self, type):
         """Sets the type of this NetworkInstance.
 
-        网络实例的类型。|- VPC：虚拟私有云。 VGW：虚拟网关。 ER：虚拟路由器。
+        网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。 - ER：企业路由器。
 
         :param type: The type of this NetworkInstance.
         :type type: str
@@ -338,7 +338,7 @@ class NetworkInstance:
     def instance_id(self):
         """Gets the instance_id of this NetworkInstance.
 
-        VPC或者VGW的ID。
+        网络实例的ID。
 
         :return: The instance_id of this NetworkInstance.
         :rtype: str
@@ -349,7 +349,7 @@ class NetworkInstance:
     def instance_id(self, instance_id):
         """Sets the instance_id of this NetworkInstance.
 
-        VPC或者VGW的ID。
+        网络实例的ID。
 
         :param instance_id: The instance_id of this NetworkInstance.
         :type instance_id: str
@@ -360,7 +360,7 @@ class NetworkInstance:
     def instance_domain_id(self):
         """Gets the instance_domain_id of this NetworkInstance.
 
-        VPC或者VGW所属账户ID。
+        网络实例所属账户ID。
 
         :return: The instance_domain_id of this NetworkInstance.
         :rtype: str
@@ -371,7 +371,7 @@ class NetworkInstance:
     def instance_domain_id(self, instance_domain_id):
         """Sets the instance_domain_id of this NetworkInstance.
 
-        VPC或者VGW所属账户ID。
+        网络实例所属账户ID。
 
         :param instance_domain_id: The instance_domain_id of this NetworkInstance.
         :type instance_domain_id: str
@@ -382,7 +382,7 @@ class NetworkInstance:
     def region_id(self):
         """Gets the region_id of this NetworkInstance.
 
-        VPC或者VGW所在Region的ID。
+        网络实例所在Region的ID。
 
         :return: The region_id of this NetworkInstance.
         :rtype: str
@@ -393,7 +393,7 @@ class NetworkInstance:
     def region_id(self, region_id):
         """Sets the region_id of this NetworkInstance.
 
-        VPC或者VGW所在Region的ID。
+        网络实例所在Region的ID。
 
         :param region_id: The region_id of this NetworkInstance.
         :type region_id: str
@@ -404,7 +404,7 @@ class NetworkInstance:
     def project_id(self):
         """Gets the project_id of this NetworkInstance.
 
-        VPC或者VGW所在租户的项目ID。
+        网络实例所在租户的项目ID。
 
         :return: The project_id of this NetworkInstance.
         :rtype: str
@@ -415,7 +415,7 @@ class NetworkInstance:
     def project_id(self, project_id):
         """Sets the project_id of this NetworkInstance.
 
-        VPC或者VGW所在租户的项目ID。
+        网络实例所在租户的项目ID。
 
         :param project_id: The project_id of this NetworkInstance.
         :type project_id: str
@@ -426,7 +426,7 @@ class NetworkInstance:
     def cidrs(self):
         """Gets the cidrs of this NetworkInstance.
 
-        VPC或者VGW发布的网段路由列表。
+        网络实例发布的网段路由列表，ER场景此字段为空。
 
         :return: The cidrs of this NetworkInstance.
         :rtype: list[str]
@@ -437,7 +437,7 @@ class NetworkInstance:
     def cidrs(self, cidrs):
         """Sets the cidrs of this NetworkInstance.
 
-        VPC或者VGW发布的网段路由列表。
+        网络实例发布的网段路由列表，ER场景此字段为空。
 
         :param cidrs: The cidrs of this NetworkInstance.
         :type cidrs: list[str]

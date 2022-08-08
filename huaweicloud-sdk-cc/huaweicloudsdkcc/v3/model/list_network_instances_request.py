@@ -67,9 +67,9 @@ class ListNetworkInstancesRequest:
         :type type: list[str]
         :param cloud_connection_id: 根据云连接实例ID过滤网络实例列表。
         :type cloud_connection_id: list[str]
-        :param instance_id: 根据VPC或者VGW的ID过滤网络实例列表。
+        :param instance_id: 根据网络实例ID过滤网络实例列表。
         :type instance_id: list[str]
-        :param region_id: 根据VPC或者VGW所在的Region过滤网络实例列表。
+        :param region_id: 根据网络实例所在的Region过滤网络实例列表。
         :type region_id: list[str]
         """
         
@@ -288,7 +288,7 @@ class ListNetworkInstancesRequest:
     def instance_id(self):
         """Gets the instance_id of this ListNetworkInstancesRequest.
 
-        根据VPC或者VGW的ID过滤网络实例列表。
+        根据网络实例ID过滤网络实例列表。
 
         :return: The instance_id of this ListNetworkInstancesRequest.
         :rtype: list[str]
@@ -299,7 +299,7 @@ class ListNetworkInstancesRequest:
     def instance_id(self, instance_id):
         """Sets the instance_id of this ListNetworkInstancesRequest.
 
-        根据VPC或者VGW的ID过滤网络实例列表。
+        根据网络实例ID过滤网络实例列表。
 
         :param instance_id: The instance_id of this ListNetworkInstancesRequest.
         :type instance_id: list[str]
@@ -310,7 +310,7 @@ class ListNetworkInstancesRequest:
     def region_id(self):
         """Gets the region_id of this ListNetworkInstancesRequest.
 
-        根据VPC或者VGW所在的Region过滤网络实例列表。
+        根据网络实例所在的Region过滤网络实例列表。
 
         :return: The region_id of this ListNetworkInstancesRequest.
         :rtype: list[str]
@@ -321,7 +321,7 @@ class ListNetworkInstancesRequest:
     def region_id(self, region_id):
         """Sets the region_id of this ListNetworkInstancesRequest.
 
-        根据VPC或者VGW所在的Region过滤网络实例列表。
+        根据网络实例所在的Region过滤网络实例列表。
 
         :param region_id: The region_id of this ListNetworkInstancesRequest.
         :type region_id: list[str]

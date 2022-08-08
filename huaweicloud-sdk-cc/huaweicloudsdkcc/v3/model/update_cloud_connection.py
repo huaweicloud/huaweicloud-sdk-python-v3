@@ -35,9 +35,9 @@ class UpdateCloudConnection:
 
         The model defined in huaweicloud sdk
 
-        :param name: 云连接实例的名字。
+        :param name: 云连接实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
         :type name: str
-        :param description: 云连接实例的描述。
+        :param description: 云连接实例的描述。不支持 &lt;&gt;。
         :type description: str
         """
         
@@ -56,7 +56,7 @@ class UpdateCloudConnection:
     def name(self):
         """Gets the name of this UpdateCloudConnection.
 
-        云连接实例的名字。
+        云连接实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
 
         :return: The name of this UpdateCloudConnection.
         :rtype: str
@@ -67,7 +67,7 @@ class UpdateCloudConnection:
     def name(self, name):
         """Sets the name of this UpdateCloudConnection.
 
-        云连接实例的名字。
+        云连接实例的名字。只能由中文、英文字母、数字、下划线、中划线、点组成。
 
         :param name: The name of this UpdateCloudConnection.
         :type name: str
@@ -78,7 +78,7 @@ class UpdateCloudConnection:
     def description(self):
         """Gets the description of this UpdateCloudConnection.
 
-        云连接实例的描述。
+        云连接实例的描述。不支持 <>。
 
         :return: The description of this UpdateCloudConnection.
         :rtype: str
@@ -89,7 +89,7 @@ class UpdateCloudConnection:
     def description(self, description):
         """Sets the description of this UpdateCloudConnection.
 
-        云连接实例的描述。
+        云连接实例的描述。不支持 <>。
 
         :param description: The description of this UpdateCloudConnection.
         :type description: str
