@@ -71,7 +71,7 @@ class PolicyOption:
         :type webattack: bool
         :param common: 常规检测是否开启
         :type common: bool
-        :param crawler: 反爬虫是否开启
+        :param crawler: 预留参数，改参数值一直为true，用户可忽略该参数值
         :type crawler: bool
         :param crawler_engine: 搜索engine是否开启
         :type crawler_engine: bool
@@ -99,7 +99,7 @@ class PolicyOption:
         :type antitamper: bool
         :param antileakage: 防敏感信息泄露规则是否开启
         :type antileakage: bool
-        :param bot_enable: 防网络机器人攻击是否开启
+        :param bot_enable: 网站反爬虫总开关是否开启
         :type bot_enable: bool
         :param modulex_enabled: modulex智能cc防护是否开启，该特性是公测特性，在公测期间，只支持仅记录模式。
         :type modulex_enabled: bool
@@ -212,7 +212,7 @@ class PolicyOption:
     def crawler(self):
         """Gets the crawler of this PolicyOption.
 
-        反爬虫是否开启
+        预留参数，改参数值一直为true，用户可忽略该参数值
 
         :return: The crawler of this PolicyOption.
         :rtype: bool
@@ -223,7 +223,7 @@ class PolicyOption:
     def crawler(self, crawler):
         """Sets the crawler of this PolicyOption.
 
-        反爬虫是否开启
+        预留参数，改参数值一直为true，用户可忽略该参数值
 
         :param crawler: The crawler of this PolicyOption.
         :type crawler: bool
@@ -520,7 +520,7 @@ class PolicyOption:
     def bot_enable(self):
         """Gets the bot_enable of this PolicyOption.
 
-        防网络机器人攻击是否开启
+        网站反爬虫总开关是否开启
 
         :return: The bot_enable of this PolicyOption.
         :rtype: bool
@@ -531,7 +531,7 @@ class PolicyOption:
     def bot_enable(self, bot_enable):
         """Sets the bot_enable of this PolicyOption.
 
-        防网络机器人攻击是否开启
+        网站反爬虫总开关是否开启
 
         :param bot_enable: The bot_enable of this PolicyOption.
         :type bot_enable: bool

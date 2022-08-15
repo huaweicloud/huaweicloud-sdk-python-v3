@@ -39,9 +39,9 @@ class CreateCertificateRequestBody:
 
         :param name: 证书名称，证书名称只能由数字、字母、中划线、下划线和英文句点组成，长度不能超过64位字符
         :type name: str
-        :param content: 证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
+        :param content: 证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换，如请求示例所示
         :type content: str
-        :param key: 证书私钥，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
+        :param key: 证书私钥，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换，如请求示例所示
         :type key: str
         """
         
@@ -82,7 +82,7 @@ class CreateCertificateRequestBody:
     def content(self):
         """Gets the content of this CreateCertificateRequestBody.
 
-        证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
+        证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换，如请求示例所示
 
         :return: The content of this CreateCertificateRequestBody.
         :rtype: str
@@ -93,7 +93,7 @@ class CreateCertificateRequestBody:
     def content(self, content):
         """Sets the content of this CreateCertificateRequestBody.
 
-        证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
+        证书文件，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换，如请求示例所示
 
         :param content: The content of this CreateCertificateRequestBody.
         :type content: str
@@ -104,7 +104,7 @@ class CreateCertificateRequestBody:
     def key(self):
         """Gets the key of this CreateCertificateRequestBody.
 
-        证书私钥，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
+        证书私钥，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换，如请求示例所示
 
         :return: The key of this CreateCertificateRequestBody.
         :rtype: str
@@ -115,7 +115,7 @@ class CreateCertificateRequestBody:
     def key(self, key):
         """Sets the key of this CreateCertificateRequestBody.
 
-        证书私钥，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换
+        证书私钥，仅支持PEM格式的证书和私钥文件，且文件中的换行符应以\\n替换，如请求示例所示
 
         :param key: The key of this CreateCertificateRequestBody.
         :type key: str

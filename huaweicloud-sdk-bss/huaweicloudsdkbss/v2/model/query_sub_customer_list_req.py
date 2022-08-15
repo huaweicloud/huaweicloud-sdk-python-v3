@@ -69,7 +69,7 @@ class QuerySubCustomerListReq:
         :type associated_on_end: str
         :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id，或者可以从创建客户接口的响应获取domain_id。
         :type customer_id: str
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询精英服务商伙伴的子客户列表，必须携带该字段。
+        :param indirect_partner_id: 云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
         :type indirect_partner_id: str
         """
         
@@ -310,7 +310,7 @@ class QuerySubCustomerListReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this QuerySubCustomerListReq.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询精英服务商伙伴的子客户列表，必须携带该字段。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
 
         :return: The indirect_partner_id of this QuerySubCustomerListReq.
         :rtype: str
@@ -321,7 +321,7 @@ class QuerySubCustomerListReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this QuerySubCustomerListReq.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询精英服务商伙伴的子客户列表，必须携带该字段。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
 
         :param indirect_partner_id: The indirect_partner_id of this QuerySubCustomerListReq.
         :type indirect_partner_id: str

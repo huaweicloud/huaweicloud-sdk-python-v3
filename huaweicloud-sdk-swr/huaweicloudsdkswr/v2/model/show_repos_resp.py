@@ -95,7 +95,7 @@ class ShowReposResp:
         :type internal_path: str
         :param domain_name: 租户名
         :type domain_name: str
-        :param namespace: 租户的命名空间名称
+        :param namespace: 租户的组织名称
         :type namespace: str
         :param tags: 镜像版本列表
         :type tags: list[str]
@@ -458,7 +458,7 @@ class ShowReposResp:
     def namespace(self):
         """Gets the namespace of this ShowReposResp.
 
-        租户的命名空间名称
+        租户的组织名称
 
         :return: The namespace of this ShowReposResp.
         :rtype: str
@@ -469,7 +469,7 @@ class ShowReposResp:
     def namespace(self, namespace):
         """Sets the namespace of this ShowReposResp.
 
-        租户的命名空间名称
+        租户的组织名称
 
         :param namespace: The namespace of this ShowReposResp.
         :type namespace: str

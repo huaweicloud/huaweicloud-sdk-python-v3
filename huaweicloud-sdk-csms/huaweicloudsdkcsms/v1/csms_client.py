@@ -528,6 +528,64 @@ class CsmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def download_secret_blob(self, request):
+        """下载凭据备份
+
+        下载指定凭据的备份文件
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DownloadSecretBlob
+        :type request: :class:`huaweicloudsdkcsms.v1.DownloadSecretBlobRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.DownloadSecretBlobResponse`
+        """
+        return self.download_secret_blob_with_http_info(request)
+
+    def download_secret_blob_with_http_info(self, request):
+        all_params = ['secret_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'secret_name' in local_var_params:
+            path_params['secret_name'] = local_var_params['secret_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/secrets/{secret_name}/backup',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DownloadSecretBlobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_project_secrets_tags(self, request):
         """查询项目标签
 
@@ -1004,7 +1062,7 @@ class CsmsClient(Client):
         """查询凭据的版本与凭据值
 
         查询指定凭据版本的信息和版本中的明文凭据值，只能查询ENABLED状态的凭据。
-        通过/v1/{project_id}/secrets/{secret_id}/versions/latest可访问凭据最新版本的凭据值。
+        通过/v1/{project_id}/secrets/{secret_name}/versions/latest （即将当前接口URL中的{version_id}赋值为latest）可访问凭据最新版本的凭据值。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1178,6 +1236,64 @@ class CsmsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateSecretStageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def upload_secret_blob(self, request):
+        """恢复凭据对象
+
+        通过上传凭据备份文件，恢复凭据对象
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UploadSecretBlob
+        :type request: :class:`huaweicloudsdkcsms.v1.UploadSecretBlobRequest`
+        :rtype: :class:`huaweicloudsdkcsms.v1.UploadSecretBlobResponse`
+        """
+        return self.upload_secret_blob_with_http_info(request)
+
+    def upload_secret_blob_with_http_info(self, request):
+        all_params = ['upload_secret_blob_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/secrets/restore',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UploadSecretBlobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

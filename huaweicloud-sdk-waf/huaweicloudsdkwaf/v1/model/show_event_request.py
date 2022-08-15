@@ -35,7 +35,7 @@ class ShowEventRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param eventid: 防护事件id,通过调用查询攻击事件列表(ListEvent)接口获取防护事件id
         :type eventid: str
@@ -55,7 +55,7 @@ class ShowEventRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowEventRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ShowEventRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class ShowEventRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowEventRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ShowEventRequest.
         :type enterprise_project_id: str

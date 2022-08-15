@@ -77,7 +77,7 @@ class ShowEventItems:
         :type time: int
         :param policyid: 策略id
         :type policyid: str
-        :param sip: 源ip
+        :param sip: 源ip，Web访问者的IP地址（攻击者IP地址）
         :type sip: str
         :param host: 域名
         :type host: str
@@ -233,7 +233,7 @@ class ShowEventItems:
     def sip(self):
         """Gets the sip of this ShowEventItems.
 
-        源ip
+        源ip，Web访问者的IP地址（攻击者IP地址）
 
         :return: The sip of this ShowEventItems.
         :rtype: str
@@ -244,7 +244,7 @@ class ShowEventItems:
     def sip(self, sip):
         """Sets the sip of this ShowEventItems.
 
-        源ip
+        源ip，Web访问者的IP地址（攻击者IP地址）
 
         :param sip: The sip of this ShowEventItems.
         :type sip: str

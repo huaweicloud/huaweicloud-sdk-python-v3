@@ -35,7 +35,7 @@ class ShowHostRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param instance_id: 域名id，您可以通过调用查询云模式防护域名列表（ListHost）获取域名id
         :type instance_id: str
@@ -55,7 +55,7 @@ class ShowHostRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowHostRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ShowHostRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class ShowHostRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowHostRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ShowHostRequest.
         :type enterprise_project_id: str

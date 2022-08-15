@@ -37,11 +37,11 @@ class DeletePremiumHostRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param host_id: 独享模式域名ID
         :type host_id: str
-        :param keep_policy: 是否保留规则
+        :param keep_policy: 是否保留规则。false表示不保留该域名的防护策略；true表示保留该域名的防护策略。当要删除的防护域名的防护策略防护多个防护域名时，该参数不传。
         :type keep_policy: bool
         """
         
@@ -62,7 +62,7 @@ class DeletePremiumHostRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this DeletePremiumHostRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this DeletePremiumHostRequest.
         :rtype: str
@@ -73,7 +73,7 @@ class DeletePremiumHostRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this DeletePremiumHostRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this DeletePremiumHostRequest.
         :type enterprise_project_id: str
@@ -106,7 +106,7 @@ class DeletePremiumHostRequest:
     def keep_policy(self):
         """Gets the keep_policy of this DeletePremiumHostRequest.
 
-        是否保留规则
+        是否保留规则。false表示不保留该域名的防护策略；true表示保留该域名的防护策略。当要删除的防护域名的防护策略防护多个防护域名时，该参数不传。
 
         :return: The keep_policy of this DeletePremiumHostRequest.
         :rtype: bool
@@ -117,7 +117,7 @@ class DeletePremiumHostRequest:
     def keep_policy(self, keep_policy):
         """Sets the keep_policy of this DeletePremiumHostRequest.
 
-        是否保留规则
+        是否保留规则。false表示不保留该域名的防护策略；true表示保留该域名的防护策略。当要删除的防护域名的防护策略防护多个防护域名时，该参数不传。
 
         :param keep_policy: The keep_policy of this DeletePremiumHostRequest.
         :type keep_policy: bool

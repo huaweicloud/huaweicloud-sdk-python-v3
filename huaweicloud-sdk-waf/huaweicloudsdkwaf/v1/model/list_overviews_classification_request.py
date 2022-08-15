@@ -25,8 +25,8 @@ class ListOverviewsClassificationRequest:
         '_from': 'int',
         'to': 'int',
         'top': 'int',
-        'hosts': 'str',
-        'instances': 'str'
+        'hosts': 'list[str]',
+        'instances': 'list[str]'
     }
 
     attribute_map = {
@@ -43,18 +43,18 @@ class ListOverviewsClassificationRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param _from: 起始时间（13位毫秒时间戳），需要和to同时使用
         :type _from: int
         :param to: 结束时间（13位毫秒时间戳），需要和from同时使用
         :type to: int
-        :param top: 要查询的前几的结果，最大值为10
+        :param top: 要查询的前几的结果，最大值为10，默认值为5。
         :type top: int
-        :param hosts: 要查询域名列表
-        :type hosts: str
-        :param instances: 要查询实例列表
-        :type instances: str
+        :param hosts: 域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。当有需要传多个域名时，传参参考请求示例。
+        :type hosts: list[str]
+        :param instances: 要查询引擎实例列表
+        :type instances: list[str]
         """
         
         
@@ -82,7 +82,7 @@ class ListOverviewsClassificationRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListOverviewsClassificationRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ListOverviewsClassificationRequest.
         :rtype: str
@@ -93,7 +93,7 @@ class ListOverviewsClassificationRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListOverviewsClassificationRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListOverviewsClassificationRequest.
         :type enterprise_project_id: str
@@ -148,7 +148,7 @@ class ListOverviewsClassificationRequest:
     def top(self):
         """Gets the top of this ListOverviewsClassificationRequest.
 
-        要查询的前几的结果，最大值为10
+        要查询的前几的结果，最大值为10，默认值为5。
 
         :return: The top of this ListOverviewsClassificationRequest.
         :rtype: int
@@ -159,7 +159,7 @@ class ListOverviewsClassificationRequest:
     def top(self, top):
         """Sets the top of this ListOverviewsClassificationRequest.
 
-        要查询的前几的结果，最大值为10
+        要查询的前几的结果，最大值为10，默认值为5。
 
         :param top: The top of this ListOverviewsClassificationRequest.
         :type top: int
@@ -170,10 +170,10 @@ class ListOverviewsClassificationRequest:
     def hosts(self):
         """Gets the hosts of this ListOverviewsClassificationRequest.
 
-        要查询域名列表
+        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。当有需要传多个域名时，传参参考请求示例。
 
         :return: The hosts of this ListOverviewsClassificationRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._hosts
 
@@ -181,10 +181,10 @@ class ListOverviewsClassificationRequest:
     def hosts(self, hosts):
         """Sets the hosts of this ListOverviewsClassificationRequest.
 
-        要查询域名列表
+        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。当有需要传多个域名时，传参参考请求示例。
 
         :param hosts: The hosts of this ListOverviewsClassificationRequest.
-        :type hosts: str
+        :type hosts: list[str]
         """
         self._hosts = hosts
 
@@ -192,10 +192,10 @@ class ListOverviewsClassificationRequest:
     def instances(self):
         """Gets the instances of this ListOverviewsClassificationRequest.
 
-        要查询实例列表
+        要查询引擎实例列表
 
         :return: The instances of this ListOverviewsClassificationRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._instances
 
@@ -203,10 +203,10 @@ class ListOverviewsClassificationRequest:
     def instances(self, instances):
         """Sets the instances of this ListOverviewsClassificationRequest.
 
-        要查询实例列表
+        要查询引擎实例列表
 
         :param instances: The instances of this ListOverviewsClassificationRequest.
-        :type instances: str
+        :type instances: list[str]
         """
         self._instances = instances
 

@@ -30,6 +30,7 @@ class ListEventItems:
         'attack': 'str',
         'rule': 'str',
         'payload': 'str',
+        'payload_location': 'str',
         'action': 'str',
         'request_line': 'str',
         'headers': 'object',
@@ -54,6 +55,7 @@ class ListEventItems:
         'attack': 'attack',
         'rule': 'rule',
         'payload': 'payload',
+        'payload_location': 'payload_location',
         'action': 'action',
         'request_line': 'request_line',
         'headers': 'headers',
@@ -68,7 +70,7 @@ class ListEventItems:
         'request_body': 'request_body'
     }
 
-    def __init__(self, id=None, time=None, policyid=None, sip=None, host=None, url=None, attack=None, rule=None, payload=None, action=None, request_line=None, headers=None, cookie=None, status=None, process_time=None, region=None, host_id=None, response_time=None, response_size=None, response_body=None, request_body=None):
+    def __init__(self, id=None, time=None, policyid=None, sip=None, host=None, url=None, attack=None, rule=None, payload=None, payload_location=None, action=None, request_line=None, headers=None, cookie=None, status=None, process_time=None, region=None, host_id=None, response_time=None, response_size=None, response_body=None, request_body=None):
         """ListEventItems
 
         The model defined in huaweicloud sdk
@@ -79,7 +81,7 @@ class ListEventItems:
         :type time: int
         :param policyid: 策略id
         :type policyid: str
-        :param sip: 源ip
+        :param sip: 源ip，Web访问者的IP地址（攻击者IP地址）
         :type sip: str
         :param host: 域名
         :type host: str
@@ -91,6 +93,8 @@ class ListEventItems:
         :type rule: str
         :param payload: 命中的载荷
         :type payload: str
+        :param payload_location: 命中的载荷位置
+        :type payload_location: str
         :param action: 防护动作
         :type action: str
         :param request_line: 请求方法和路径
@@ -128,6 +132,7 @@ class ListEventItems:
         self._attack = None
         self._rule = None
         self._payload = None
+        self._payload_location = None
         self._action = None
         self._request_line = None
         self._headers = None
@@ -160,6 +165,8 @@ class ListEventItems:
             self.rule = rule
         if payload is not None:
             self.payload = payload
+        if payload_location is not None:
+            self.payload_location = payload_location
         if action is not None:
             self.action = action
         if request_line is not None:
@@ -255,7 +262,7 @@ class ListEventItems:
     def sip(self):
         """Gets the sip of this ListEventItems.
 
-        源ip
+        源ip，Web访问者的IP地址（攻击者IP地址）
 
         :return: The sip of this ListEventItems.
         :rtype: str
@@ -266,7 +273,7 @@ class ListEventItems:
     def sip(self, sip):
         """Sets the sip of this ListEventItems.
 
-        源ip
+        源ip，Web访问者的IP地址（攻击者IP地址）
 
         :param sip: The sip of this ListEventItems.
         :type sip: str
@@ -382,6 +389,28 @@ class ListEventItems:
         :type payload: str
         """
         self._payload = payload
+
+    @property
+    def payload_location(self):
+        """Gets the payload_location of this ListEventItems.
+
+        命中的载荷位置
+
+        :return: The payload_location of this ListEventItems.
+        :rtype: str
+        """
+        return self._payload_location
+
+    @payload_location.setter
+    def payload_location(self, payload_location):
+        """Sets the payload_location of this ListEventItems.
+
+        命中的载荷位置
+
+        :param payload_location: The payload_location of this ListEventItems.
+        :type payload_location: str
+        """
+        self._payload_location = payload_location
 
     @property
     def action(self):

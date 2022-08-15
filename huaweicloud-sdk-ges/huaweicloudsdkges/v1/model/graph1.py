@@ -35,7 +35,7 @@ class Graph1:
         'vertexset_format': 'str',
         'vertexset_default_label': 'str',
         'data_store_version': 'str',
-        'sys_tags': 'list[SysTagsRes]',
+        'sys_tags': 'list[str]',
         'status': 'str',
         'action_progress': 'str',
         'graph_size_type_index': 'str',
@@ -52,7 +52,12 @@ class Graph1:
         'master_key_id': 'str',
         'master_key_name': 'str',
         'enable_rbac': 'bool',
-        'enable_fulltext_index': 'bool'
+        'enable_fulltext_index': 'bool',
+        'enable_hy_g': 'bool',
+        'traffic_ip_list': 'list[str]',
+        'crypt_algorithm': 'str',
+        'enable_https': 'bool',
+        'tags': 'list[object]'
     }
 
     attribute_map = {
@@ -87,10 +92,15 @@ class Graph1:
         'master_key_id': 'masterKeyId',
         'master_key_name': 'masterKeyName',
         'enable_rbac': 'enableRBAC',
-        'enable_fulltext_index': 'enableFulltextIndex'
+        'enable_fulltext_index': 'enableFulltextIndex',
+        'enable_hy_g': 'enableHyG',
+        'traffic_ip_list': 'trafficIpList',
+        'crypt_algorithm': 'cryptAlgorithm',
+        'enable_https': 'enableHttps',
+        'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, created_by=None, is_multi_az=None, region_code=None, az_code=None, schema_path=None, edgeset_path=None, edgeset_format=None, edgeset_default_label=None, vertexset_path=None, vertexset_format=None, vertexset_default_label=None, data_store_version=None, sys_tags=None, status=None, action_progress=None, graph_size_type_index=None, vpc_id=None, subnet_id=None, security_group_id=None, replication=None, created=None, updated=None, private_ip=None, public_ip=None, arch=None, encrypted=None, master_key_id=None, master_key_name=None, enable_rbac=None, enable_fulltext_index=None):
+    def __init__(self, id=None, name=None, created_by=None, is_multi_az=None, region_code=None, az_code=None, schema_path=None, edgeset_path=None, edgeset_format=None, edgeset_default_label=None, vertexset_path=None, vertexset_format=None, vertexset_default_label=None, data_store_version=None, sys_tags=None, status=None, action_progress=None, graph_size_type_index=None, vpc_id=None, subnet_id=None, security_group_id=None, replication=None, created=None, updated=None, private_ip=None, public_ip=None, arch=None, encrypted=None, master_key_id=None, master_key_name=None, enable_rbac=None, enable_fulltext_index=None, enable_hy_g=None, traffic_ip_list=None, crypt_algorithm=None, enable_https=None, tags=None):
         """Graph1
 
         The model defined in huaweicloud sdk
@@ -124,7 +134,7 @@ class Graph1:
         :param data_store_version: 图版本。
         :type data_store_version: str
         :param sys_tags: 企业项目信息，如果未指定则不开启，默认不开启。
-        :type sys_tags: list[:class:`huaweicloudsdkges.v1.SysTagsRes`]
+        :type sys_tags: list[str]
         :param status: 图的状态码。  - 100：准备中 - 200：运行中 - 201：升级中 - 202：导入中 - 203：回滚中 - 204：导出中 - 205：清空中 - 206：扩容准备中 - 207：扩容中 - 208：扩容回退中 - 300：故障 - 303：创建失败 - 400：被删除 - 800：已冻结 - 900：停止 - 901：停止中 - 920：启动中
         :type status: str
         :param action_progress: 图创建进度百分比。 &gt;只有图状态码为100时返回该字段。
@@ -159,6 +169,16 @@ class Graph1:
         :type enable_rbac: bool
         :param enable_fulltext_index: 是否启用全文索引。
         :type enable_fulltext_index: bool
+        :param enable_hy_g: 是否启用HyG，该参数只对千亿规格图生效
+        :type enable_hy_g: bool
+        :param traffic_ip_list: 图实例私有网络访问物理地址列表。为了防止浮动IP切换造成业务闪断，我们推荐您通过轮询的方式使用物理IP访问图实例。
+        :type traffic_ip_list: list[str]
+        :param crypt_algorithm: 图实例加密算法，取值为：  - generalCipher：国际算法 - SMcompatible：商密算法（兼容国际）
+        :type crypt_algorithm: str
+        :param enable_https: 是否开启安全模式，开启安全模式会对性能有较大影响。
+        :type enable_https: bool
+        :param tags: 标签列表，每个标签用&lt;key,value&gt;键值对表示。
+        :type tags: list[object]
         """
         
         
@@ -195,6 +215,11 @@ class Graph1:
         self._master_key_name = None
         self._enable_rbac = None
         self._enable_fulltext_index = None
+        self._enable_hy_g = None
+        self._traffic_ip_list = None
+        self._crypt_algorithm = None
+        self._enable_https = None
+        self._tags = None
         self.discriminator = None
 
         if id is not None:
@@ -261,6 +286,16 @@ class Graph1:
             self.enable_rbac = enable_rbac
         if enable_fulltext_index is not None:
             self.enable_fulltext_index = enable_fulltext_index
+        if enable_hy_g is not None:
+            self.enable_hy_g = enable_hy_g
+        if traffic_ip_list is not None:
+            self.traffic_ip_list = traffic_ip_list
+        if crypt_algorithm is not None:
+            self.crypt_algorithm = crypt_algorithm
+        if enable_https is not None:
+            self.enable_https = enable_https
+        if tags is not None:
+            self.tags = tags
 
     @property
     def id(self):
@@ -577,7 +612,7 @@ class Graph1:
         企业项目信息，如果未指定则不开启，默认不开启。
 
         :return: The sys_tags of this Graph1.
-        :rtype: list[:class:`huaweicloudsdkges.v1.SysTagsRes`]
+        :rtype: list[str]
         """
         return self._sys_tags
 
@@ -588,7 +623,7 @@ class Graph1:
         企业项目信息，如果未指定则不开启，默认不开启。
 
         :param sys_tags: The sys_tags of this Graph1.
-        :type sys_tags: list[:class:`huaweicloudsdkges.v1.SysTagsRes`]
+        :type sys_tags: list[str]
         """
         self._sys_tags = sys_tags
 
@@ -965,6 +1000,116 @@ class Graph1:
         :type enable_fulltext_index: bool
         """
         self._enable_fulltext_index = enable_fulltext_index
+
+    @property
+    def enable_hy_g(self):
+        """Gets the enable_hy_g of this Graph1.
+
+        是否启用HyG，该参数只对千亿规格图生效
+
+        :return: The enable_hy_g of this Graph1.
+        :rtype: bool
+        """
+        return self._enable_hy_g
+
+    @enable_hy_g.setter
+    def enable_hy_g(self, enable_hy_g):
+        """Sets the enable_hy_g of this Graph1.
+
+        是否启用HyG，该参数只对千亿规格图生效
+
+        :param enable_hy_g: The enable_hy_g of this Graph1.
+        :type enable_hy_g: bool
+        """
+        self._enable_hy_g = enable_hy_g
+
+    @property
+    def traffic_ip_list(self):
+        """Gets the traffic_ip_list of this Graph1.
+
+        图实例私有网络访问物理地址列表。为了防止浮动IP切换造成业务闪断，我们推荐您通过轮询的方式使用物理IP访问图实例。
+
+        :return: The traffic_ip_list of this Graph1.
+        :rtype: list[str]
+        """
+        return self._traffic_ip_list
+
+    @traffic_ip_list.setter
+    def traffic_ip_list(self, traffic_ip_list):
+        """Sets the traffic_ip_list of this Graph1.
+
+        图实例私有网络访问物理地址列表。为了防止浮动IP切换造成业务闪断，我们推荐您通过轮询的方式使用物理IP访问图实例。
+
+        :param traffic_ip_list: The traffic_ip_list of this Graph1.
+        :type traffic_ip_list: list[str]
+        """
+        self._traffic_ip_list = traffic_ip_list
+
+    @property
+    def crypt_algorithm(self):
+        """Gets the crypt_algorithm of this Graph1.
+
+        图实例加密算法，取值为：  - generalCipher：国际算法 - SMcompatible：商密算法（兼容国际）
+
+        :return: The crypt_algorithm of this Graph1.
+        :rtype: str
+        """
+        return self._crypt_algorithm
+
+    @crypt_algorithm.setter
+    def crypt_algorithm(self, crypt_algorithm):
+        """Sets the crypt_algorithm of this Graph1.
+
+        图实例加密算法，取值为：  - generalCipher：国际算法 - SMcompatible：商密算法（兼容国际）
+
+        :param crypt_algorithm: The crypt_algorithm of this Graph1.
+        :type crypt_algorithm: str
+        """
+        self._crypt_algorithm = crypt_algorithm
+
+    @property
+    def enable_https(self):
+        """Gets the enable_https of this Graph1.
+
+        是否开启安全模式，开启安全模式会对性能有较大影响。
+
+        :return: The enable_https of this Graph1.
+        :rtype: bool
+        """
+        return self._enable_https
+
+    @enable_https.setter
+    def enable_https(self, enable_https):
+        """Sets the enable_https of this Graph1.
+
+        是否开启安全模式，开启安全模式会对性能有较大影响。
+
+        :param enable_https: The enable_https of this Graph1.
+        :type enable_https: bool
+        """
+        self._enable_https = enable_https
+
+    @property
+    def tags(self):
+        """Gets the tags of this Graph1.
+
+        标签列表，每个标签用<key,value>键值对表示。
+
+        :return: The tags of this Graph1.
+        :rtype: list[object]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this Graph1.
+
+        标签列表，每个标签用<key,value>键值对表示。
+
+        :param tags: The tags of this Graph1.
+        :type tags: list[object]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

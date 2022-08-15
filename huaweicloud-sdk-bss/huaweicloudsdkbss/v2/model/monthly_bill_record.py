@@ -113,7 +113,7 @@ class MonthlyBillRecord:
         :type consume_time: str
         :param trade_time: 交易时间，某条消费记录对应的扣费时间。
         :type trade_time: str
-        :param provider_type: 服务商。 1：华为云2：云市场
+        :param provider_type: 服务商。 1：华为云2：云商店
         :type provider_type: int
         :param trade_id: 订单ID或交易ID，扣费维度的唯一标识。
         :type trade_id: str
@@ -509,7 +509,7 @@ class MonthlyBillRecord:
     def provider_type(self):
         """Gets the provider_type of this MonthlyBillRecord.
 
-        服务商。 1：华为云2：云市场
+        服务商。 1：华为云2：云商店
 
         :return: The provider_type of this MonthlyBillRecord.
         :rtype: int
@@ -520,7 +520,7 @@ class MonthlyBillRecord:
     def provider_type(self, provider_type):
         """Sets the provider_type of this MonthlyBillRecord.
 
-        服务商。 1：华为云2：云市场
+        服务商。 1：华为云2：云商店
 
         :param provider_type: The provider_type of this MonthlyBillRecord.
         :type provider_type: int

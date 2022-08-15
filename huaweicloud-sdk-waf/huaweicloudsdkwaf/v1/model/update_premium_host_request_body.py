@@ -34,8 +34,6 @@ class UpdatePremiumHostRequestBody:
         'pool_ids': 'list[str]',
         'block_page': 'BlockPage',
         'traffic_mark': 'TrafficMark',
-        'flag': 'dict(str, str)',
-        'extend': 'dict(str, str)',
         'circuit_breaker': 'CircuitBreaker',
         'timeout_config': 'TimeoutConfig'
     }
@@ -54,47 +52,41 @@ class UpdatePremiumHostRequestBody:
         'pool_ids': 'pool_ids',
         'block_page': 'block_page',
         'traffic_mark': 'traffic_mark',
-        'flag': 'flag',
-        'extend': 'extend',
         'circuit_breaker': 'circuit_breaker',
         'timeout_config': 'timeout_config'
     }
 
-    def __init__(self, proxy=None, certificateid=None, certificatename=None, tls=None, cipher=None, mode=None, locked=None, protect_status=None, access_status=None, timestamp=None, pool_ids=None, block_page=None, traffic_mark=None, flag=None, extend=None, circuit_breaker=None, timeout_config=None):
+    def __init__(self, proxy=None, certificateid=None, certificatename=None, tls=None, cipher=None, mode=None, locked=None, protect_status=None, access_status=None, timestamp=None, pool_ids=None, block_page=None, traffic_mark=None, circuit_breaker=None, timeout_config=None):
         """UpdatePremiumHostRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param proxy: 是否使用代理
+        :param proxy: 防护域名是否使用代理   - false：不使用代理   - true：使用代理
         :type proxy: bool
-        :param certificateid: https证书id，通过查询证书列表接口（ListCertificates）接口获取证书id
+        :param certificateid: 证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
         :type certificateid: str
-        :param certificatename: https证书名称，通过查询证书列表接口（ListCertificates）接口获取证书id
+        :param certificatename: 证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
         :type certificatename: str
-        :param tls: 支持最低的TLS版本
+        :param tls: 配置的最低TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本，对于低于最低TLS版本的请求，将无法正常访问网站
         :type tls: str
-        :param cipher: 加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
+        :param cipher: 加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  - cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   - cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM   - cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH   - cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH   - cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
         :type cipher: str
         :param mode: 独享模式特殊域名模式（仅特殊模式需要，如elb）
         :type mode: str
-        :param locked: 是否锁定
+        :param locked: 预留参数，用于后期设计冻结域名，解锁域名功能，目前暂不支持
         :type locked: int
-        :param protect_status: 防护状态
+        :param protect_status: 域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
         :type protect_status: int
-        :param access_status: 接入状态
+        :param access_status: 域名接入状态，0表示未接入，1表示已接入
         :type access_status: int
         :param timestamp: 时间戳
         :type timestamp: int
-        :param pool_ids: 域名关联的组ID（仅特殊模式需要，如elb）
+        :param pool_ids: 特殊模式域名所属独享引擎组（仅特殊模式需要，如elb）
         :type pool_ids: list[str]
         :param block_page: 
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
         :param traffic_mark: 
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
-        :param flag: 域名特殊标识
-        :type flag: dict(str, str)
-        :param extend: 可扩展字段
-        :type extend: dict(str, str)
         :param circuit_breaker: 
         :type circuit_breaker: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
         :param timeout_config: 
@@ -116,8 +108,6 @@ class UpdatePremiumHostRequestBody:
         self._pool_ids = None
         self._block_page = None
         self._traffic_mark = None
-        self._flag = None
-        self._extend = None
         self._circuit_breaker = None
         self._timeout_config = None
         self.discriminator = None
@@ -148,10 +138,6 @@ class UpdatePremiumHostRequestBody:
             self.block_page = block_page
         if traffic_mark is not None:
             self.traffic_mark = traffic_mark
-        if flag is not None:
-            self.flag = flag
-        if extend is not None:
-            self.extend = extend
         if circuit_breaker is not None:
             self.circuit_breaker = circuit_breaker
         if timeout_config is not None:
@@ -161,7 +147,7 @@ class UpdatePremiumHostRequestBody:
     def proxy(self):
         """Gets the proxy of this UpdatePremiumHostRequestBody.
 
-        是否使用代理
+        防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
         :return: The proxy of this UpdatePremiumHostRequestBody.
         :rtype: bool
@@ -172,7 +158,7 @@ class UpdatePremiumHostRequestBody:
     def proxy(self, proxy):
         """Sets the proxy of this UpdatePremiumHostRequestBody.
 
-        是否使用代理
+        防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
         :param proxy: The proxy of this UpdatePremiumHostRequestBody.
         :type proxy: bool
@@ -183,7 +169,7 @@ class UpdatePremiumHostRequestBody:
     def certificateid(self):
         """Gets the certificateid of this UpdatePremiumHostRequestBody.
 
-        https证书id，通过查询证书列表接口（ListCertificates）接口获取证书id
+        证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :return: The certificateid of this UpdatePremiumHostRequestBody.
         :rtype: str
@@ -194,7 +180,7 @@ class UpdatePremiumHostRequestBody:
     def certificateid(self, certificateid):
         """Sets the certificateid of this UpdatePremiumHostRequestBody.
 
-        https证书id，通过查询证书列表接口（ListCertificates）接口获取证书id
+        证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificateid: The certificateid of this UpdatePremiumHostRequestBody.
         :type certificateid: str
@@ -205,7 +191,7 @@ class UpdatePremiumHostRequestBody:
     def certificatename(self):
         """Gets the certificatename of this UpdatePremiumHostRequestBody.
 
-        https证书名称，通过查询证书列表接口（ListCertificates）接口获取证书id
+        证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :return: The certificatename of this UpdatePremiumHostRequestBody.
         :rtype: str
@@ -216,7 +202,7 @@ class UpdatePremiumHostRequestBody:
     def certificatename(self, certificatename):
         """Sets the certificatename of this UpdatePremiumHostRequestBody.
 
-        https证书名称，通过查询证书列表接口（ListCertificates）接口获取证书id
+        证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
         :param certificatename: The certificatename of this UpdatePremiumHostRequestBody.
         :type certificatename: str
@@ -227,7 +213,7 @@ class UpdatePremiumHostRequestBody:
     def tls(self):
         """Gets the tls of this UpdatePremiumHostRequestBody.
 
-        支持最低的TLS版本
+        配置的最低TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本，对于低于最低TLS版本的请求，将无法正常访问网站
 
         :return: The tls of this UpdatePremiumHostRequestBody.
         :rtype: str
@@ -238,7 +224,7 @@ class UpdatePremiumHostRequestBody:
     def tls(self, tls):
         """Sets the tls of this UpdatePremiumHostRequestBody.
 
-        支持最低的TLS版本
+        配置的最低TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本，对于低于最低TLS版本的请求，将无法正常访问网站
 
         :param tls: The tls of this UpdatePremiumHostRequestBody.
         :type tls: str
@@ -249,7 +235,7 @@ class UpdatePremiumHostRequestBody:
     def cipher(self):
         """Gets the cipher of this UpdatePremiumHostRequestBody.
 
-        加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
+        加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  - cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   - cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM   - cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH   - cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH   - cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
         :return: The cipher of this UpdatePremiumHostRequestBody.
         :rtype: str
@@ -260,7 +246,7 @@ class UpdatePremiumHostRequestBody:
     def cipher(self, cipher):
         """Sets the cipher of this UpdatePremiumHostRequestBody.
 
-        加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM    cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH    cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
+        加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  - cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   - cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM   - cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH   - cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH   - cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
         :param cipher: The cipher of this UpdatePremiumHostRequestBody.
         :type cipher: str
@@ -293,7 +279,7 @@ class UpdatePremiumHostRequestBody:
     def locked(self):
         """Gets the locked of this UpdatePremiumHostRequestBody.
 
-        是否锁定
+        预留参数，用于后期设计冻结域名，解锁域名功能，目前暂不支持
 
         :return: The locked of this UpdatePremiumHostRequestBody.
         :rtype: int
@@ -304,7 +290,7 @@ class UpdatePremiumHostRequestBody:
     def locked(self, locked):
         """Sets the locked of this UpdatePremiumHostRequestBody.
 
-        是否锁定
+        预留参数，用于后期设计冻结域名，解锁域名功能，目前暂不支持
 
         :param locked: The locked of this UpdatePremiumHostRequestBody.
         :type locked: int
@@ -315,7 +301,7 @@ class UpdatePremiumHostRequestBody:
     def protect_status(self):
         """Gets the protect_status of this UpdatePremiumHostRequestBody.
 
-        防护状态
+        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :return: The protect_status of this UpdatePremiumHostRequestBody.
         :rtype: int
@@ -326,7 +312,7 @@ class UpdatePremiumHostRequestBody:
     def protect_status(self, protect_status):
         """Sets the protect_status of this UpdatePremiumHostRequestBody.
 
-        防护状态
+        域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
         :param protect_status: The protect_status of this UpdatePremiumHostRequestBody.
         :type protect_status: int
@@ -337,7 +323,7 @@ class UpdatePremiumHostRequestBody:
     def access_status(self):
         """Gets the access_status of this UpdatePremiumHostRequestBody.
 
-        接入状态
+        域名接入状态，0表示未接入，1表示已接入
 
         :return: The access_status of this UpdatePremiumHostRequestBody.
         :rtype: int
@@ -348,7 +334,7 @@ class UpdatePremiumHostRequestBody:
     def access_status(self, access_status):
         """Sets the access_status of this UpdatePremiumHostRequestBody.
 
-        接入状态
+        域名接入状态，0表示未接入，1表示已接入
 
         :param access_status: The access_status of this UpdatePremiumHostRequestBody.
         :type access_status: int
@@ -381,7 +367,7 @@ class UpdatePremiumHostRequestBody:
     def pool_ids(self):
         """Gets the pool_ids of this UpdatePremiumHostRequestBody.
 
-        域名关联的组ID（仅特殊模式需要，如elb）
+        特殊模式域名所属独享引擎组（仅特殊模式需要，如elb）
 
         :return: The pool_ids of this UpdatePremiumHostRequestBody.
         :rtype: list[str]
@@ -392,7 +378,7 @@ class UpdatePremiumHostRequestBody:
     def pool_ids(self, pool_ids):
         """Sets the pool_ids of this UpdatePremiumHostRequestBody.
 
-        域名关联的组ID（仅特殊模式需要，如elb）
+        特殊模式域名所属独享引擎组（仅特殊模式需要，如elb）
 
         :param pool_ids: The pool_ids of this UpdatePremiumHostRequestBody.
         :type pool_ids: list[str]
@@ -438,50 +424,6 @@ class UpdatePremiumHostRequestBody:
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
         """
         self._traffic_mark = traffic_mark
-
-    @property
-    def flag(self):
-        """Gets the flag of this UpdatePremiumHostRequestBody.
-
-        域名特殊标识
-
-        :return: The flag of this UpdatePremiumHostRequestBody.
-        :rtype: dict(str, str)
-        """
-        return self._flag
-
-    @flag.setter
-    def flag(self, flag):
-        """Sets the flag of this UpdatePremiumHostRequestBody.
-
-        域名特殊标识
-
-        :param flag: The flag of this UpdatePremiumHostRequestBody.
-        :type flag: dict(str, str)
-        """
-        self._flag = flag
-
-    @property
-    def extend(self):
-        """Gets the extend of this UpdatePremiumHostRequestBody.
-
-        可扩展字段
-
-        :return: The extend of this UpdatePremiumHostRequestBody.
-        :rtype: dict(str, str)
-        """
-        return self._extend
-
-    @extend.setter
-    def extend(self, extend):
-        """Sets the extend of this UpdatePremiumHostRequestBody.
-
-        可扩展字段
-
-        :param extend: The extend of this UpdatePremiumHostRequestBody.
-        :type extend: dict(str, str)
-        """
-        self._extend = extend
 
     @property
     def circuit_breaker(self):

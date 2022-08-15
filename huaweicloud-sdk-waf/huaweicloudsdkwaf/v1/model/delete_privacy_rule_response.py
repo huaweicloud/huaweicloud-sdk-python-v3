@@ -51,15 +51,15 @@ class DeletePrivacyRuleResponse(SdkResponse):
         :type id: str
         :param policyid: 策略id
         :type policyid: str
-        :param timestamp: 创建规则时间戳
+        :param timestamp: 创建规则的时间，格式为13位毫秒时间戳
         :type timestamp: int
-        :param description: 规则描述
+        :param description: 规则描述，可选参数，设置该规则的备注信息。
         :type description: str
-        :param status: 规则状态（0：关闭，1：开启）
+        :param status: 规则状态，0：关闭，1：开启
         :type status: int
-        :param url: 路径
+        :param url: 隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\&quot;*\&quot;号结尾代表路径前缀
         :type url: str
-        :param category: 屏蔽字段
+        :param category: 屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
         :type category: str
         :param index: 屏蔽字段名
         :type index: str
@@ -142,7 +142,7 @@ class DeletePrivacyRuleResponse(SdkResponse):
     def timestamp(self):
         """Gets the timestamp of this DeletePrivacyRuleResponse.
 
-        创建规则时间戳
+        创建规则的时间，格式为13位毫秒时间戳
 
         :return: The timestamp of this DeletePrivacyRuleResponse.
         :rtype: int
@@ -153,7 +153,7 @@ class DeletePrivacyRuleResponse(SdkResponse):
     def timestamp(self, timestamp):
         """Sets the timestamp of this DeletePrivacyRuleResponse.
 
-        创建规则时间戳
+        创建规则的时间，格式为13位毫秒时间戳
 
         :param timestamp: The timestamp of this DeletePrivacyRuleResponse.
         :type timestamp: int
@@ -164,7 +164,7 @@ class DeletePrivacyRuleResponse(SdkResponse):
     def description(self):
         """Gets the description of this DeletePrivacyRuleResponse.
 
-        规则描述
+        规则描述，可选参数，设置该规则的备注信息。
 
         :return: The description of this DeletePrivacyRuleResponse.
         :rtype: str
@@ -175,7 +175,7 @@ class DeletePrivacyRuleResponse(SdkResponse):
     def description(self, description):
         """Sets the description of this DeletePrivacyRuleResponse.
 
-        规则描述
+        规则描述，可选参数，设置该规则的备注信息。
 
         :param description: The description of this DeletePrivacyRuleResponse.
         :type description: str
@@ -186,7 +186,7 @@ class DeletePrivacyRuleResponse(SdkResponse):
     def status(self):
         """Gets the status of this DeletePrivacyRuleResponse.
 
-        规则状态（0：关闭，1：开启）
+        规则状态，0：关闭，1：开启
 
         :return: The status of this DeletePrivacyRuleResponse.
         :rtype: int
@@ -197,7 +197,7 @@ class DeletePrivacyRuleResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this DeletePrivacyRuleResponse.
 
-        规则状态（0：关闭，1：开启）
+        规则状态，0：关闭，1：开启
 
         :param status: The status of this DeletePrivacyRuleResponse.
         :type status: int
@@ -208,7 +208,7 @@ class DeletePrivacyRuleResponse(SdkResponse):
     def url(self):
         """Gets the url of this DeletePrivacyRuleResponse.
 
-        路径
+        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
         :return: The url of this DeletePrivacyRuleResponse.
         :rtype: str
@@ -219,7 +219,7 @@ class DeletePrivacyRuleResponse(SdkResponse):
     def url(self, url):
         """Sets the url of this DeletePrivacyRuleResponse.
 
-        路径
+        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
         :param url: The url of this DeletePrivacyRuleResponse.
         :type url: str
@@ -230,7 +230,7 @@ class DeletePrivacyRuleResponse(SdkResponse):
     def category(self):
         """Gets the category of this DeletePrivacyRuleResponse.
 
-        屏蔽字段
+        屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
 
         :return: The category of this DeletePrivacyRuleResponse.
         :rtype: str
@@ -241,7 +241,7 @@ class DeletePrivacyRuleResponse(SdkResponse):
     def category(self, category):
         """Sets the category of this DeletePrivacyRuleResponse.
 
-        屏蔽字段
+        屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
 
         :param category: The category of this DeletePrivacyRuleResponse.
         :type category: str

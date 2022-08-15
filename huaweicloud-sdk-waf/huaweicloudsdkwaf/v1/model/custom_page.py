@@ -39,9 +39,9 @@ class CustomPage:
 
         :param status_code: 返回状态码
         :type status_code: str
-        :param content_type: 页面内容类型
+        :param content_type: “自定义”告警页面内容类型，可选择text/html、text/xml和application/json三种类型
         :type content_type: str
-        :param content: 页面内容
+        :param content: 根据选择的“页面类型”配置对应的页面内容，具体示例可以参考“Web应用防火墙 WAF”用户手册
         :type content: str
         """
         
@@ -82,7 +82,7 @@ class CustomPage:
     def content_type(self):
         """Gets the content_type of this CustomPage.
 
-        页面内容类型
+        “自定义”告警页面内容类型，可选择text/html、text/xml和application/json三种类型
 
         :return: The content_type of this CustomPage.
         :rtype: str
@@ -93,7 +93,7 @@ class CustomPage:
     def content_type(self, content_type):
         """Sets the content_type of this CustomPage.
 
-        页面内容类型
+        “自定义”告警页面内容类型，可选择text/html、text/xml和application/json三种类型
 
         :param content_type: The content_type of this CustomPage.
         :type content_type: str
@@ -104,7 +104,7 @@ class CustomPage:
     def content(self):
         """Gets the content of this CustomPage.
 
-        页面内容
+        根据选择的“页面类型”配置对应的页面内容，具体示例可以参考“Web应用防火墙 WAF”用户手册
 
         :return: The content of this CustomPage.
         :rtype: str
@@ -115,7 +115,7 @@ class CustomPage:
     def content(self, content):
         """Sets the content of this CustomPage.
 
-        页面内容
+        根据选择的“页面类型”配置对应的页面内容，具体示例可以参考“Web应用防火墙 WAF”用户手册
 
         :param content: The content of this CustomPage.
         :type content: str

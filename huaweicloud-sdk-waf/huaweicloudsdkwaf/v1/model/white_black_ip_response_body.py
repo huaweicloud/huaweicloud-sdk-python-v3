@@ -22,58 +22,70 @@ class WhiteBlackIpResponseBody:
 
     openapi_types = {
         'id': 'str',
+        'name': 'str',
         'policyid': 'str',
         'timestamp': 'int',
         'description': 'str',
         'status': 'int',
         'addr': 'str',
-        'white': 'int'
+        'white': 'int',
+        'ip_group': 'IpGroup'
     }
 
     attribute_map = {
         'id': 'id',
+        'name': 'name',
         'policyid': 'policyid',
         'timestamp': 'timestamp',
         'description': 'description',
         'status': 'status',
         'addr': 'addr',
-        'white': 'white'
+        'white': 'white',
+        'ip_group': 'ip_group'
     }
 
-    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, addr=None, white=None):
+    def __init__(self, id=None, name=None, policyid=None, timestamp=None, description=None, status=None, addr=None, white=None, ip_group=None):
         """WhiteBlackIpResponseBody
 
         The model defined in huaweicloud sdk
 
         :param id: 规则id
         :type id: str
+        :param name: 黑白名单规则名称
+        :type name: str
         :param policyid: 策略id
         :type policyid: str
-        :param timestamp: 创建规则的时间戳
+        :param timestamp: 创建规则的时间戳（毫秒）
         :type timestamp: int
         :param description: 规则描述
         :type description: str
         :param status: 规则状态，0：关闭，1：开启
         :type status: int
-        :param addr: 黑白名单
+        :param addr: Ip/Ip段
         :type addr: str
         :param white: 防护动作：  - 0拦截  - 1放行  - 2仅记录
         :type white: int
+        :param ip_group: 
+        :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
         """
         
         
 
         self._id = None
+        self._name = None
         self._policyid = None
         self._timestamp = None
         self._description = None
         self._status = None
         self._addr = None
         self._white = None
+        self._ip_group = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
+        if name is not None:
+            self.name = name
         if policyid is not None:
             self.policyid = policyid
         if timestamp is not None:
@@ -86,6 +98,8 @@ class WhiteBlackIpResponseBody:
             self.addr = addr
         if white is not None:
             self.white = white
+        if ip_group is not None:
+            self.ip_group = ip_group
 
     @property
     def id(self):
@@ -108,6 +122,28 @@ class WhiteBlackIpResponseBody:
         :type id: str
         """
         self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this WhiteBlackIpResponseBody.
+
+        黑白名单规则名称
+
+        :return: The name of this WhiteBlackIpResponseBody.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this WhiteBlackIpResponseBody.
+
+        黑白名单规则名称
+
+        :param name: The name of this WhiteBlackIpResponseBody.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def policyid(self):
@@ -135,7 +171,7 @@ class WhiteBlackIpResponseBody:
     def timestamp(self):
         """Gets the timestamp of this WhiteBlackIpResponseBody.
 
-        创建规则的时间戳
+        创建规则的时间戳（毫秒）
 
         :return: The timestamp of this WhiteBlackIpResponseBody.
         :rtype: int
@@ -146,7 +182,7 @@ class WhiteBlackIpResponseBody:
     def timestamp(self, timestamp):
         """Sets the timestamp of this WhiteBlackIpResponseBody.
 
-        创建规则的时间戳
+        创建规则的时间戳（毫秒）
 
         :param timestamp: The timestamp of this WhiteBlackIpResponseBody.
         :type timestamp: int
@@ -201,7 +237,7 @@ class WhiteBlackIpResponseBody:
     def addr(self):
         """Gets the addr of this WhiteBlackIpResponseBody.
 
-        黑白名单
+        Ip/Ip段
 
         :return: The addr of this WhiteBlackIpResponseBody.
         :rtype: str
@@ -212,7 +248,7 @@ class WhiteBlackIpResponseBody:
     def addr(self, addr):
         """Sets the addr of this WhiteBlackIpResponseBody.
 
-        黑白名单
+        Ip/Ip段
 
         :param addr: The addr of this WhiteBlackIpResponseBody.
         :type addr: str
@@ -240,6 +276,26 @@ class WhiteBlackIpResponseBody:
         :type white: int
         """
         self._white = white
+
+    @property
+    def ip_group(self):
+        """Gets the ip_group of this WhiteBlackIpResponseBody.
+
+
+        :return: The ip_group of this WhiteBlackIpResponseBody.
+        :rtype: :class:`huaweicloudsdkwaf.v1.IpGroup`
+        """
+        return self._ip_group
+
+    @ip_group.setter
+    def ip_group(self, ip_group):
+        """Sets the ip_group of this WhiteBlackIpResponseBody.
+
+
+        :param ip_group: The ip_group of this WhiteBlackIpResponseBody.
+        :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
+        """
+        self._ip_group = ip_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

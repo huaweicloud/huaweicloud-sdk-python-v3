@@ -63,9 +63,9 @@ class CreatePartnerCouponsReq:
         :type cloud_service_types: list[str]
         :param product_ids: 允许使用的产品列表。 多个产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制）  说明： 如果额度上有限制产品列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定产品ID。 产品ID需要合作伙伴通过线下获得。
         :type product_ids: list[str]
-        :param memo: 发券时的备注信息。
+        :param memo: 发券时的备注信息。 此参数不携带或携带值为null时，不赋值；携带值为空串时，赋值空串。
         :type memo: str
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 精英服务商给子客户发放优惠券时，需要携带该参数。
+        :param indirect_partner_id: 云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。云经销商给子客户发放优惠券时，需要携带该参数。除此之外，此参数不做处理。
         :type indirect_partner_id: str
         """
         
@@ -256,7 +256,7 @@ class CreatePartnerCouponsReq:
     def memo(self):
         """Gets the memo of this CreatePartnerCouponsReq.
 
-        发券时的备注信息。
+        发券时的备注信息。 此参数不携带或携带值为null时，不赋值；携带值为空串时，赋值空串。
 
         :return: The memo of this CreatePartnerCouponsReq.
         :rtype: str
@@ -267,7 +267,7 @@ class CreatePartnerCouponsReq:
     def memo(self, memo):
         """Sets the memo of this CreatePartnerCouponsReq.
 
-        发券时的备注信息。
+        发券时的备注信息。 此参数不携带或携带值为null时，不赋值；携带值为空串时，赋值空串。
 
         :param memo: The memo of this CreatePartnerCouponsReq.
         :type memo: str
@@ -278,7 +278,7 @@ class CreatePartnerCouponsReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this CreatePartnerCouponsReq.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 精英服务商给子客户发放优惠券时，需要携带该参数。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。云经销商给子客户发放优惠券时，需要携带该参数。除此之外，此参数不做处理。
 
         :return: The indirect_partner_id of this CreatePartnerCouponsReq.
         :rtype: str
@@ -289,7 +289,7 @@ class CreatePartnerCouponsReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this CreatePartnerCouponsReq.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 精英服务商给子客户发放优惠券时，需要携带该参数。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。云经销商给子客户发放优惠券时，需要携带该参数。除此之外，此参数不做处理。
 
         :param indirect_partner_id: The indirect_partner_id of this CreatePartnerCouponsReq.
         :type indirect_partner_id: str

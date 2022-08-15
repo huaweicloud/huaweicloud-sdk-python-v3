@@ -105,7 +105,7 @@ class CouponInfoV2:
         :type used_by_order_id: str
         :param coupon_usage: 优惠券用途。
         :type coupon_usage: str
-        :param coupon_group: 优惠券分组。 1：云市场发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
+        :param coupon_group: 优惠券分组。 1：云商店发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
         :type coupon_group: int
         """
         
@@ -571,7 +571,7 @@ class CouponInfoV2:
     def coupon_group(self):
         """Gets the coupon_group of this CouponInfoV2.
 
-        优惠券分组。 1：云市场发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
+        优惠券分组。 1：云商店发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
 
         :return: The coupon_group of this CouponInfoV2.
         :rtype: int
@@ -582,7 +582,7 @@ class CouponInfoV2:
     def coupon_group(self, coupon_group):
         """Sets the coupon_group of this CouponInfoV2.
 
-        优惠券分组。 1：云市场发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
+        优惠券分组。 1：云商店发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
 
         :param coupon_group: The coupon_group of this CouponInfoV2.
         :type coupon_group: int

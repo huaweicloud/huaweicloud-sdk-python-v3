@@ -3,12 +3,16 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkwaf.v1.model.access_progress import AccessProgress
+from huaweicloudsdkwaf.v1.model.action import Action
+from huaweicloudsdkwaf.v1.model.advanced import Advanced
 from huaweicloudsdkwaf.v1.model.anti_tamper_rule_response_body import AntiTamperRuleResponseBody
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_request import ApplyCertificateToHostRequest
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_request_body import ApplyCertificateToHostRequestBody
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_response import ApplyCertificateToHostResponse
 from huaweicloudsdkwaf.v1.model.attack_type_classification_item import AttackTypeClassificationItem
 from huaweicloudsdkwaf.v1.model.attack_type_item import AttackTypeItem
+from huaweicloudsdkwaf.v1.model.bandwidth_statistics_timeline_item import BandwidthStatisticsTimelineItem
 from huaweicloudsdkwaf.v1.model.bind_host import BindHost
 from huaweicloudsdkwaf.v1.model.block_page import BlockPage
 from huaweicloudsdkwaf.v1.model.certificate_body import CertificateBody
@@ -77,9 +81,9 @@ from huaweicloudsdkwaf.v1.model.flag import Flag
 from huaweicloudsdkwaf.v1.model.ge_o_ip_item import GeOIpItem
 from huaweicloudsdkwaf.v1.model.geo_classification_item import GeoClassificationItem
 from huaweicloudsdkwaf.v1.model.geo_item import GeoItem
-from huaweicloudsdkwaf.v1.model.host_flag import HostFlag
 from huaweicloudsdkwaf.v1.model.ignore_rule_body import IgnoreRuleBody
 from huaweicloudsdkwaf.v1.model.ip_classification_item import IpClassificationItem
+from huaweicloudsdkwaf.v1.model.ip_group import IpGroup
 from huaweicloudsdkwaf.v1.model.ip_item import IpItem
 from huaweicloudsdkwaf.v1.model.list_antitamper_rule_request import ListAntitamperRuleRequest
 from huaweicloudsdkwaf.v1.model.list_antitamper_rule_response import ListAntitamperRuleResponse
@@ -121,7 +125,7 @@ from huaweicloudsdkwaf.v1.model.list_whiteblackip_rule_response import ListWhite
 from huaweicloudsdkwaf.v1.model.policy_action import PolicyAction
 from huaweicloudsdkwaf.v1.model.policy_option import PolicyOption
 from huaweicloudsdkwaf.v1.model.policy_response import PolicyResponse
-from huaweicloudsdkwaf.v1.model.premium_waf_host import PremiumWafHost
+from huaweicloudsdkwaf.v1.model.premium_waf_instances import PremiumWafInstances
 from huaweicloudsdkwaf.v1.model.premium_waf_server import PremiumWafServer
 from huaweicloudsdkwaf.v1.model.privacy_response_body import PrivacyResponseBody
 from huaweicloudsdkwaf.v1.model.route_body import RouteBody
@@ -149,7 +153,6 @@ from huaweicloudsdkwaf.v1.model.traffic_mark import TrafficMark
 from huaweicloudsdkwaf.v1.model.update_certificate_request import UpdateCertificateRequest
 from huaweicloudsdkwaf.v1.model.update_certificate_request_body import UpdateCertificateRequestBody
 from huaweicloudsdkwaf.v1.model.update_certificate_response import UpdateCertificateResponse
-from huaweicloudsdkwaf.v1.model.update_cloud_waf_server import UpdateCloudWafServer
 from huaweicloudsdkwaf.v1.model.update_geoip_rule_request import UpdateGeoipRuleRequest
 from huaweicloudsdkwaf.v1.model.update_geoip_rule_request_body import UpdateGeoipRuleRequestBody
 from huaweicloudsdkwaf.v1.model.update_geoip_rule_response import UpdateGeoipRuleResponse

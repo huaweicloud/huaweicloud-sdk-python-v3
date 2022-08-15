@@ -1,3 +1,265 @@
+# 3.0.103 2022-08-11
+
+### HuaweiCloud SDK APM
+
+- _Features_
+  - Support the following interfaces：
+    - `ListOpenRegion`
+    - `ListSupportedRegion`
+    - `ShowTopologyTree`
+    - `ShowMonitorItemViewConfig`
+    - `ListEnvTags`
+    - `ShowTopology`
+    - `ShowEventDetail`
+    - `ShowSpanSearch`
+    - `ShowTraceEvents`
+    - `ShowTrend`
+    - `ShowSumTable`
+    - `ShowRawTable`
+    - `ShowClobDetail`
+    - `ListEnvInstances`
+    - `ShowEnvMonitorItems`
+    - `ListApps`
+    - `ListAppEnvs`
+    - `ShowAkSks`
+    - `CreateAkSk`
+    - `DeleteAkSk`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - Support the interface `ListCosts`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - Support the interface `ShowUrlTaskInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `ipv6_accelerate` to the interface `ShowDomainFullConfig`
+  - Add the request parameter `ipv6_accelerate` to the interface `UpdateDomainFullConfig`
+
+### HuaweiCloud SDK CSMS
+
+- _Features_
+  - Support the interfaces `UploadSecretBlob`, `DownloadSecretBlob`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the following interfaces：
+    - `ListGaussMySqlDatabaseUser`
+    - `CreateGaussMySqlDatabaseUser`
+    - `DeleteGaussMySqlDatabaseUser`
+    - `ResetGaussMySqlDatabasePassword`
+    - `AddDatabasePermission`
+    - `DeleteDatabasePermission`
+    - `ListGaussMySqlDatabaseCharsets`
+    - `ListGaussMySqlDatabase`
+    - `CreateGaussMySqlDatabase`
+    - `DeleteGaussMySqlDatabase`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GES
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `enableHyG`, `trafficIpList`, `cryptAlgorithm`, `enableHttps`, `tags` to the interface `ListGraphs`
+  - Add the response parameters `enableHyG`, `trafficIpList`, `cryptAlgorithm`, `enableHttps`, `tags` to the interface `ShowGraph`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreatePostPaidInstance`:
+    - Add the request parameter `broker_num`
+    - Add the enum values `c6.2u4g.cluster`, `c6.4u8g.cluster`, `c6.8u16g.cluster`, `c6.12u24g.cluster`, `c6.16u32g.cluster` to the request parameter `specification`
+    - Add the enum values `250`, `500`, `1000`, `1500`, `2000` to the request parameter `partition_num`
+    - Add the enum values `dms.physical.storage.high.v2`, `dms.physical.storage.ultra.v2` to the request parameter `storage_spec_code`
+    - The request parameter `specification` changed to not required
+  - Add the response parameters `description`, `access_user`, `ssl_two_way_enable`, `cert_replaced`, `public_boundwidth`, `agent_enable`, `public_access_enabled`, `node_num`, `new_spec_billing_enable`, `broker_num` to the interface `ListInstances`
+  - Add the response parameters `description`, `access_user`, `ssl_two_way_enable`, `cert_replaced`, `public_boundwidth`, `agent_enable`, `public_access_enabled`, `node_num`, `new_spec_billing_enable`, `broker_num` to the interface `ShowInstance`
+  - The request parameter `engine` changed to not required of the interface `ShowInstanceExtendProductInfo`
+  - Changes of the interface `ShowPartitionBeginningMessage`:
+    - Add the response parameter `offset`
+    - Remove the response parameter `message_offset`
+  - Changes of the interface `ShowPartitionEndMessage`:
+    - Add the response parameter `offset`
+    - Remove the response parameter `message_offset`
+  - Add the response parameter `product_alias` to the interface `ListEngineProducts`
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - Support the interfaces `RunCreateAudioModerationJob`, `RunQueryAudioModerationJob`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the request parameter `ad_glossaries` from the interface `RunImageModeration`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - Support the interface `RecognizeMacaoIdCard`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the request parameter `count` from the interface `CreateRestoreInstance`
+
+### HuaweiCloud SDK SWR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `filter` to the interface `ListNamespaces`
+  - Add the request parameters `limit`, `offset`, `order_column`, `order_type` to the interface `ListReposDetails`
+  - Add the request parameter `filter` to the interface `ListRepositoryTags`
+  - Add the request parameters `namespace`, `name`, `center`, `limit`, `offset`, `order_column`, `order_type` to the interface `ListSharedReposDetails`
+  - Changes of the interface `ListRetentionHistories`:
+    - Add the request parameter `filter`
+    - Remove the request parameters `offset`, `limit`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `DeleteIgnoreRule`:
+    - Add the response parameter `advanced`
+    - Remove the response parameter `rule`
+  - Changes of the interface `CreateIgnoreRule`:
+    - Add the request parameter `advanced`
+    - Add the response parameter `advanced`
+  - Add the response parameter `advanced` to the interface `ListIgnoreRule`
+  - Changes of the interface `ListStatistics`:
+    - Remove the response parameter `host`
+    - Modify the type `string` -> `array` of the request parameter `instances`
+    - Modify the type `string` -> `array` of the request parameter `hosts`
+  - Changes of the interface `ListQpsTimeline`:
+    - Modify the type `string` -> `array` of the request parameter `instances`
+    - Modify the type `string` -> `array` of the request parameter `hosts`
+  - Modify the type `string` -> `array` of the request parameter `instances` of the interface `ListBandwidthTimeline`
+  - Changes of the interface `ListTopAbnormal`:
+    - Modify the type `string` -> `array` of the request parameter `instances`
+    - Modify the type `string` -> `array` of the request parameter `hosts`
+  - Changes of the interface `ListOverviewsClassification`:
+    - Modify the type `string` -> `array` of the request parameter `instances`
+    - Modify the type `string` -> `array` of the request parameter `hosts`
+  - Add the response parameters `geoip_enable`, `load_balance_enable`, `ipv6_protection_enable`, `policy_sharing_enable`, `ip_group`, `robot_action_enable`, `http2_enable`, `timeout_config_enable` to the interface `ShowConsoleConfig`
+  - Add the response parameter `producer` to the interface `CreateValueList`
+  - Modify the type `string` -> `enum` of the response parameter `type` of the interface `ListValueList`
+  - Remove the response parameter `timestamp` from the interface `UpdateValueList`
+  - Add the response parameter `payload_location` to the interface `ListEvent`
+  - Changes of the interface `CreateHost`:
+    - Add the request parameters `web_tag`, `exclusive_ip`, `paid_type`, `lb_algorithm`, `weight`
+    - Add the response parameters `lb_algorithm`, `web_tag`, `block_page`, `extend`, `weight`, `ipv6`
+  - Changes of the interface `ListHost`:
+    - Add the response parameters `region`, `web_tag`, `ipv6`
+    - Remove the response parameter `timeout_config`
+  - Modify the type `string` -> `enum` of the response parameter `back_protocol` of the interface `ListHostRoute`
+  - Add the response parameters `web_tag`, `ipv6` to the interface `DeleteHost`
+  - Changes of the interface `UpdateHost`:
+    - Add the request parameters `web_tag`, `exclusive_ip`, `paid_type`, `circuit_breaker`
+    - Add the response parameters `projectid`, `extend`, `traffic_mark`, `circuit_breaker`, `access_progress`, `weight`, `ipv6`
+    - Remove the request parameter `lb_algorithm`
+    - Remove the response parameter `ipv6_enable`
+    - Modify the type `enum` -> `string` of the response parameter `protocol`
+    - Modify the type `boolean` -> `string` of the response parameter `web_tag`
+    - Modify the type `string` -> `enum` of the response parameter `lb_algorithm`
+  - Add the response parameters `domainid`, `projectid`, `enterprise_project_id`, `locked`, `tls`, `cipher`, `block_page`, `extend`, `traffic_mark`, `circuit_breaker`, `lb_algorithm`, `web_tag`, `flag`, `description`, `http2_enable`, `access_progress`, `weight` to the interface `ShowHost`
+  - Add the response parameters `robot_action`, `modulex_options` to the interface `CreatePolicy`
+  - Add the response parameters `robot_action`, `modulex_options`, `hosts` to the interface `ListPolicy`
+  - Add the response parameters `robot_action`, `modulex_options` to the interface `DeletePolicy`
+  - Add the response parameters `robot_action`, `modulex_options`, `hosts` to the interface `UpdatePolicyProtectHost`
+  - Changes of the interface `UpdatePolicy`:
+    - Add the request parameters `level`, `full_detection`, `robot_action`, `modulex_options`, `hosts`, `bind_host`, `extend`
+    - Add the response parameters `robot_action`, `modulex_options`
+  - Add the response parameters `robot_action`, `modulex_options`, `hosts` to the interface `ShowPolicy`
+  - Add the enum values `custom`, `ignore` to the request parameter `ruletype` to the interface `UpdatePolicyRuleStatus`
+  - Changes of the interface `CreateWhiteblackipRule`:
+    - Add the request parameter `ip_group_id`
+    - Add the response parameters `name`, `ip_group`, `status`, `description`
+    - The request parameter `addr` changed to not required
+  - Add the response parameters `name`, `ip_group` to the interface `ListWhiteblackipRule`
+  - Add the response parameter `ip_group` to the interface `DeleteWhiteBlackIpRule`
+  - Changes of the interface `UpdateWhiteblackipRule`:
+    - Add the request parameter `ip_group_id`
+    - Add the response parameters `name`, `ip_group`
+    - The request parameter `addr` changed to not required
+  - Add the response parameters `timestamp`, `status`, `description` to the interface `CreatePrivacyRule`
+  - Add the response parameter `description` to the interface `ListPrivacyRule`
+  - Add the response parameters `timestamp`, `status`, `description` to the interface `UpdatePrivacyRule`
+  - Changes of the interface `CreateGeoipRule`:
+    - Add the request parameters `name`, `status`
+    - Add the response parameters `name`, `status`
+  - Add the response parameters `name`, `status` to the interface `ListGeoipRule`
+  - Add the response parameters `name`, `status` to the interface `DeleteGeoipRule`
+  - Changes of the interface `UpdateGeoipRule`:
+    - Add the request parameter `name`
+    - Add the response parameter `name`
+  - Remove the response parameters `content`, `key` from the interface `ListCertificates`
+  - Changes of the interface `ListCompositeHosts`:
+    - Add the response parameters `hostid`, `web_tag`, `access_progress`, `premium_waf_instances`, `description`, `exclusive_ip`, `region`
+    - Remove the response parameters `pci_dss`, `pci_3ds`, `cname`, `is_dual_az`, `ipv6`
+  - Changes of the interface `ShowCompositeHost`:
+    - Add the response parameters `hostid`, `web_tag`, `access_progress`, `premium_waf_instances`, `description`, `exclusive_ip`, `region`
+    - Remove the response parameters `pci_dss`, `pci_3ds`, `cname`, `is_dual_az`, `ipv6`
+  - Changes of the interface `CreatePremiumHost`:
+    - Add the request parameters `block_page`, `description`, `weight`
+    - Add the response parameters `server`, `proxy`, `locked`, `timestamp`, `tls`, `cipher`, `extend`, `flag`, `description`, `enterprise_project_id`, `protect_status`, `access_status`, `block_page`
+    - Modify the type `string` -> `enum` of the response parameter `protocol`
+  - Changes of the interface `ListPremiumHost`:
+    - Add the response parameters `extend`, `region`, `description`, `web_tag`, `hostid`
+    - Remove the response parameters `mode`, `pool_ids`
+  - Changes of the interface `DeletePremiumHost`:
+    - Add the response parameters `extend`, `description`, `web_tag`, `host_id`
+    - Remove the response parameters `mode`, `pool_ids`
+  - Changes of the interface `UpdatePremiumHost`:
+    - Add the response parameters `description`, `projectid`, `enterprise_project_id`, `web_tag`, `lb_algorithm`, `access_progress`, `weight`
+    - Remove the request parameters `flag`, `extend`
+    - Remove the response parameters `mode`, `pool_ids`, `project_id`, `access_code`
+  - Changes of the interface `ShowPremiumHost`:
+    - Add the response parameters `description`, `projectid`, `enterprise_project_id`, `web_tag`, `access_progress`, `weight`
+    - Remove the response parameters `mode`, `pool_ids`, `project_id`, `access_code`
+  - Changes of the interface `UpdateCertificate`:
+    - Add the request parameters `content`, `key`
+    - The request parameter `name` changed to required
+
 # 3.0.102 2022-08-08
 
 ### HuaweiCloud SDK GaussDB

@@ -25,7 +25,6 @@ class ImageDetectionReq:
         'image': 'str',
         'moderation_rule': 'str',
         'categories': 'list[str]',
-        'ad_glossaries': 'list[str]',
         'ad_categories': 'list[str]',
         'threshold': 'float',
         'show_ocr_text': 'bool'
@@ -36,13 +35,12 @@ class ImageDetectionReq:
         'image': 'image',
         'moderation_rule': 'moderation_rule',
         'categories': 'categories',
-        'ad_glossaries': 'ad_glossaries',
         'ad_categories': 'ad_categories',
         'threshold': 'threshold',
         'show_ocr_text': 'show_ocr_text'
     }
 
-    def __init__(self, url=None, image=None, moderation_rule=None, categories=None, ad_glossaries=None, ad_categories=None, threshold=None, show_ocr_text=None):
+    def __init__(self, url=None, image=None, moderation_rule=None, categories=None, ad_categories=None, threshold=None, show_ocr_text=None):
         """ImageDetectionReq
 
         The model defined in huaweicloud sdk
@@ -55,8 +53,6 @@ class ImageDetectionReq:
         :type moderation_rule: str
         :param categories: 检测场景:  - politics：是否涉及政治人物的检测。  - terrorism：是否包含涉政暴恐元素的检测。  - porn：是否包含涉黄内容元素的检测。  - ad：是否包含广告的检测（公测特性）。  - all：包含politics、terrorism和porn三种场景的检测。  可通过配置上述场景，来完对应场景元素的检测。  为空或无此参数表示politics和terrorism都检测，但不包含porn场景。  &gt; 每个检测场景的检测次数会分类统计。 
         :type categories: list[str]
-        :param ad_glossaries: 检测场景: ad场景自定义词库，配置方式同文本审核自定义词库配置方式 
-        :type ad_glossaries: list[str]
         :param ad_categories: 图文审核检测场景。当categories包含ad时，该参数生效。 当前支持的场景有系统场景和用户自定义场景： - 系统场景为：   - qr_code：二维码   - politics：涉政   - porn：涉黄   - ad：广告   - abuse：辱骂   - contraband：违禁品 - 用户自定义场景为：自定义黑名单词库。   &gt; 自定义词库的创建和使用请参见[配置自定义词库](https://support.huaweicloud.com/api-moderation/moderation_03_0020.html)。 
         :type ad_categories: list[str]
         :param threshold: - 结果过滤门限，只有置信度不低于此门限的结果才会呈现在detail的列表中，取值范围 0-1，当未设置此值时各个检测场景会使用各自的默认值。  - politics检测场景的默认值为0.95。  - terrorism检测场景的默认值为0。  - ad检测场景的默认值为0。  - 无特殊需求直接不传此参数或像示例中一样值设为空字符串即可。  &gt; - 如果检测场景中的最高置信度也未达到threshold，则结果列表为空；反之threshold过小，则会使结果列表中内容过多。 &gt; - threshold参数不支持porn场景筛选。 &gt; -  threshold参数不会影响响应中的suggestion。 
@@ -71,7 +67,6 @@ class ImageDetectionReq:
         self._image = None
         self._moderation_rule = None
         self._categories = None
-        self._ad_glossaries = None
         self._ad_categories = None
         self._threshold = None
         self._show_ocr_text = None
@@ -85,8 +80,6 @@ class ImageDetectionReq:
             self.moderation_rule = moderation_rule
         if categories is not None:
             self.categories = categories
-        if ad_glossaries is not None:
-            self.ad_glossaries = ad_glossaries
         if ad_categories is not None:
             self.ad_categories = ad_categories
         if threshold is not None:
@@ -181,28 +174,6 @@ class ImageDetectionReq:
         :type categories: list[str]
         """
         self._categories = categories
-
-    @property
-    def ad_glossaries(self):
-        """Gets the ad_glossaries of this ImageDetectionReq.
-
-        检测场景: ad场景自定义词库，配置方式同文本审核自定义词库配置方式 
-
-        :return: The ad_glossaries of this ImageDetectionReq.
-        :rtype: list[str]
-        """
-        return self._ad_glossaries
-
-    @ad_glossaries.setter
-    def ad_glossaries(self, ad_glossaries):
-        """Sets the ad_glossaries of this ImageDetectionReq.
-
-        检测场景: ad场景自定义词库，配置方式同文本审核自定义词库配置方式 
-
-        :param ad_glossaries: The ad_glossaries of this ImageDetectionReq.
-        :type ad_glossaries: list[str]
-        """
-        self._ad_glossaries = ad_glossaries
 
     @property
     def ad_categories(self):

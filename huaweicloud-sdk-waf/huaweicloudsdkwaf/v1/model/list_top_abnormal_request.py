@@ -26,8 +26,8 @@ class ListTopAbnormalRequest:
         'to': 'int',
         'top': 'int',
         'code': 'int',
-        'hosts': 'str',
-        'instances': 'str'
+        'hosts': 'list[str]',
+        'instances': 'list[str]'
     }
 
     attribute_map = {
@@ -45,20 +45,20 @@ class ListTopAbnormalRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param _from: 起始时间（13位毫秒时间戳），需要和to同时使用
         :type _from: int
         :param to: 结束时间（13位毫秒时间戳），需要和from同时使用
         :type to: int
-        :param top: 要查询的前几的结果
+        :param top: 要查询的前几的结果，默认值为5，最大值为10。
         :type top: int
-        :param code: 状态码
+        :param code: 要查询的异常状态码，目前支持查询的异常状态码包括404、500以及502。不传该参数默认查询404的状态码。
         :type code: int
-        :param hosts: 域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
-        :type hosts: str
-        :param instances: 要查询实例列表（仅独享模式涉及）
-        :type instances: str
+        :param hosts: 域名id列表，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
+        :type hosts: list[str]
+        :param instances: 要查询引擎实例列表
+        :type instances: list[str]
         """
         
         
@@ -89,7 +89,7 @@ class ListTopAbnormalRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListTopAbnormalRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ListTopAbnormalRequest.
         :rtype: str
@@ -100,7 +100,7 @@ class ListTopAbnormalRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListTopAbnormalRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListTopAbnormalRequest.
         :type enterprise_project_id: str
@@ -155,7 +155,7 @@ class ListTopAbnormalRequest:
     def top(self):
         """Gets the top of this ListTopAbnormalRequest.
 
-        要查询的前几的结果
+        要查询的前几的结果，默认值为5，最大值为10。
 
         :return: The top of this ListTopAbnormalRequest.
         :rtype: int
@@ -166,7 +166,7 @@ class ListTopAbnormalRequest:
     def top(self, top):
         """Sets the top of this ListTopAbnormalRequest.
 
-        要查询的前几的结果
+        要查询的前几的结果，默认值为5，最大值为10。
 
         :param top: The top of this ListTopAbnormalRequest.
         :type top: int
@@ -177,7 +177,7 @@ class ListTopAbnormalRequest:
     def code(self):
         """Gets the code of this ListTopAbnormalRequest.
 
-        状态码
+        要查询的异常状态码，目前支持查询的异常状态码包括404、500以及502。不传该参数默认查询404的状态码。
 
         :return: The code of this ListTopAbnormalRequest.
         :rtype: int
@@ -188,7 +188,7 @@ class ListTopAbnormalRequest:
     def code(self, code):
         """Sets the code of this ListTopAbnormalRequest.
 
-        状态码
+        要查询的异常状态码，目前支持查询的异常状态码包括404、500以及502。不传该参数默认查询404的状态码。
 
         :param code: The code of this ListTopAbnormalRequest.
         :type code: int
@@ -199,10 +199,10 @@ class ListTopAbnormalRequest:
     def hosts(self):
         """Gets the hosts of this ListTopAbnormalRequest.
 
-        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        域名id列表，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
 
         :return: The hosts of this ListTopAbnormalRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._hosts
 
@@ -210,10 +210,10 @@ class ListTopAbnormalRequest:
     def hosts(self, hosts):
         """Sets the hosts of this ListTopAbnormalRequest.
 
-        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        域名id列表，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
 
         :param hosts: The hosts of this ListTopAbnormalRequest.
-        :type hosts: str
+        :type hosts: list[str]
         """
         self._hosts = hosts
 
@@ -221,10 +221,10 @@ class ListTopAbnormalRequest:
     def instances(self):
         """Gets the instances of this ListTopAbnormalRequest.
 
-        要查询实例列表（仅独享模式涉及）
+        要查询引擎实例列表
 
         :return: The instances of this ListTopAbnormalRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._instances
 
@@ -232,10 +232,10 @@ class ListTopAbnormalRequest:
     def instances(self, instances):
         """Sets the instances of this ListTopAbnormalRequest.
 
-        要查询实例列表（仅独享模式涉及）
+        要查询引擎实例列表
 
         :param instances: The instances of this ListTopAbnormalRequest.
-        :type instances: str
+        :type instances: list[str]
         """
         self._instances = instances
 

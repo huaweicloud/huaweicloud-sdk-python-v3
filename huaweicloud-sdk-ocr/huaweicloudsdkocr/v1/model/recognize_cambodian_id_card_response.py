@@ -21,7 +21,7 @@ class RecognizeCambodianIdCardResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'object'
+        'result': 'CambodianIdCardResult'
     }
 
     attribute_map = {
@@ -33,8 +33,8 @@ class RecognizeCambodianIdCardResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 调用成功时表示调用结果。  调用失败时此字段为空。 
-        :type result: object
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.CambodianIdCardResult`
         """
         
         super(RecognizeCambodianIdCardResponse, self).__init__()
@@ -49,10 +49,9 @@ class RecognizeCambodianIdCardResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeCambodianIdCardResponse.
 
-        调用成功时表示调用结果。  调用失败时此字段为空。 
 
         :return: The result of this RecognizeCambodianIdCardResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkocr.v1.CambodianIdCardResult`
         """
         return self._result
 
@@ -60,10 +59,9 @@ class RecognizeCambodianIdCardResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this RecognizeCambodianIdCardResponse.
 
-        调用成功时表示调用结果。  调用失败时此字段为空。 
 
         :param result: The result of this RecognizeCambodianIdCardResponse.
-        :type result: object
+        :type result: :class:`huaweicloudsdkocr.v1.CambodianIdCardResult`
         """
         self._result = result
 

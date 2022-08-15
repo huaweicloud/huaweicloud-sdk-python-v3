@@ -37,11 +37,11 @@ class DeleteGeoipRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
         :type policy_id: str
-        :param rule_id: 地理位置访问控制规则id，通过查询地理位置规则列表接口获取https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;WAF&amp;api&#x3D;ListGeoipRule
+        :param rule_id: 地理位置控制防护规则id，规则id从查询地理位置控制防护规则列表（ListGeoipRule）接口获取，响应体的id字段
         :type rule_id: str
         """
         
@@ -61,7 +61,7 @@ class DeleteGeoipRuleRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this DeleteGeoipRuleRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this DeleteGeoipRuleRequest.
         :rtype: str
@@ -72,7 +72,7 @@ class DeleteGeoipRuleRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this DeleteGeoipRuleRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this DeleteGeoipRuleRequest.
         :type enterprise_project_id: str
@@ -105,7 +105,7 @@ class DeleteGeoipRuleRequest:
     def rule_id(self):
         """Gets the rule_id of this DeleteGeoipRuleRequest.
 
-        地理位置访问控制规则id，通过查询地理位置规则列表接口获取https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=WAF&api=ListGeoipRule
+        地理位置控制防护规则id，规则id从查询地理位置控制防护规则列表（ListGeoipRule）接口获取，响应体的id字段
 
         :return: The rule_id of this DeleteGeoipRuleRequest.
         :rtype: str
@@ -116,7 +116,7 @@ class DeleteGeoipRuleRequest:
     def rule_id(self, rule_id):
         """Sets the rule_id of this DeleteGeoipRuleRequest.
 
-        地理位置访问控制规则id，通过查询地理位置规则列表接口获取https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=WAF&api=ListGeoipRule
+        地理位置控制防护规则id，规则id从查询地理位置控制防护规则列表（ListGeoipRule）接口获取，响应体的id字段
 
         :param rule_id: The rule_id of this DeleteGeoipRuleRequest.
         :type rule_id: str

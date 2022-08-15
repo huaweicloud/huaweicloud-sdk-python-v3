@@ -37,7 +37,7 @@ class ListConversionsRequest:
 
         :param x_language: 语言。zh_CN：中文en_US：英文缺省为zh_CN。
         :type x_language: str
-        :param measure_type: 度量类型。1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量25：测试类型
+        :param measure_type: 度量类型。1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量26：通用资源包抵扣单位此参数不携带或携带值为空或携带值为null时，不作为筛选条件。
         :type measure_type: int
         """
         
@@ -78,7 +78,7 @@ class ListConversionsRequest:
     def measure_type(self):
         """Gets the measure_type of this ListConversionsRequest.
 
-        度量类型。1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量25：测试类型
+        度量类型。1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量26：通用资源包抵扣单位此参数不携带或携带值为空或携带值为null时，不作为筛选条件。
 
         :return: The measure_type of this ListConversionsRequest.
         :rtype: int
@@ -89,7 +89,7 @@ class ListConversionsRequest:
     def measure_type(self, measure_type):
         """Sets the measure_type of this ListConversionsRequest.
 
-        度量类型。1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量25：测试类型
+        度量类型。1：货币2：时长3：流量4：数量7：容量9：行数10：周期11：频率12：个数16：带宽速率17：容量时长18：查询速率19：带宽速率（1000进制）20：性能测试用量21：面积22：视频23：吞吐量26：通用资源包抵扣单位此参数不携带或携带值为空或携带值为null时，不作为筛选条件。
 
         :param measure_type: The measure_type of this ListConversionsRequest.
         :type measure_type: int

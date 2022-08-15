@@ -33,7 +33,7 @@ class ListQpsTimelineResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 安全统计的时间线
+        :param body: 安全总览的Qps时间线统计数据
         :type body: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]
         """
         
@@ -49,7 +49,7 @@ class ListQpsTimelineResponse(SdkResponse):
     def body(self):
         """Gets the body of this ListQpsTimelineResponse.
 
-        安全统计的时间线
+        安全总览的Qps时间线统计数据
 
         :return: The body of this ListQpsTimelineResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]
@@ -60,7 +60,7 @@ class ListQpsTimelineResponse(SdkResponse):
     def body(self, body):
         """Sets the body of this ListQpsTimelineResponse.
 
-        安全统计的时间线
+        安全总览的Qps时间线统计数据
 
         :param body: The body of this ListQpsTimelineResponse.
         :type body: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]

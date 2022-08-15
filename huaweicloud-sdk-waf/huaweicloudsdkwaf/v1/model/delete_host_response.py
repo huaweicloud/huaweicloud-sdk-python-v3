@@ -34,7 +34,8 @@ class DeleteHostResponse(SdkResponse):
         'protect_status': 'int',
         'access_status': 'int',
         'exclusive_ip': 'bool',
-        'paid_type': 'str'
+        'paid_type': 'str',
+        'web_tag': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class DeleteHostResponse(SdkResponse):
         'protect_status': 'protect_status',
         'access_status': 'access_status',
         'exclusive_ip': 'exclusive_ip',
-        'paid_type': 'paid_type'
+        'paid_type': 'paid_type',
+        'web_tag': 'web_tag'
     }
 
-    def __init__(self, id=None, hostid=None, description=None, type=None, proxy=None, flag=None, hostname=None, access_code=None, policyid=None, timestamp=None, protect_status=None, access_status=None, exclusive_ip=None, paid_type=None):
+    def __init__(self, id=None, hostid=None, description=None, type=None, proxy=None, flag=None, hostname=None, access_code=None, policyid=None, timestamp=None, protect_status=None, access_status=None, exclusive_ip=None, paid_type=None, web_tag=None):
         """DeleteHostResponse
 
         The model defined in huaweicloud sdk
@@ -67,7 +69,7 @@ class DeleteHostResponse(SdkResponse):
         :type description: str
         :param type: WAF部署模式，默认是1，目前仅支持反代模式
         :type type: int
-        :param proxy: 是否开启了代理
+        :param proxy: 防护域名是否使用代理    - false：不使用代理   - true：使用代理
         :type proxy: bool
         :param flag: 
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -83,10 +85,12 @@ class DeleteHostResponse(SdkResponse):
         :type protect_status: int
         :param access_status: 接入状态，0： 未接入，1：已接入
         :type access_status: int
-        :param exclusive_ip: 是否使用独享ip
+        :param exclusive_ip: 是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
         :type exclusive_ip: bool
         :param paid_type: 套餐付费模式，目前只支持prePaid预付款模式
         :type paid_type: str
+        :param web_tag: 网站名称，对应WAF控制台域名详情中的网站名称
+        :type web_tag: str
         """
         
         super(DeleteHostResponse, self).__init__()
@@ -105,6 +109,7 @@ class DeleteHostResponse(SdkResponse):
         self._access_status = None
         self._exclusive_ip = None
         self._paid_type = None
+        self._web_tag = None
         self.discriminator = None
 
         if id is not None:
@@ -135,6 +140,8 @@ class DeleteHostResponse(SdkResponse):
             self.exclusive_ip = exclusive_ip
         if paid_type is not None:
             self.paid_type = paid_type
+        if web_tag is not None:
+            self.web_tag = web_tag
 
     @property
     def id(self):
@@ -228,7 +235,7 @@ class DeleteHostResponse(SdkResponse):
     def proxy(self):
         """Gets the proxy of this DeleteHostResponse.
 
-        是否开启了代理
+        防护域名是否使用代理    - false：不使用代理   - true：使用代理
 
         :return: The proxy of this DeleteHostResponse.
         :rtype: bool
@@ -239,7 +246,7 @@ class DeleteHostResponse(SdkResponse):
     def proxy(self, proxy):
         """Sets the proxy of this DeleteHostResponse.
 
-        是否开启了代理
+        防护域名是否使用代理    - false：不使用代理   - true：使用代理
 
         :param proxy: The proxy of this DeleteHostResponse.
         :type proxy: bool
@@ -402,7 +409,7 @@ class DeleteHostResponse(SdkResponse):
     def exclusive_ip(self):
         """Gets the exclusive_ip of this DeleteHostResponse.
 
-        是否使用独享ip
+        是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
         :return: The exclusive_ip of this DeleteHostResponse.
         :rtype: bool
@@ -413,7 +420,7 @@ class DeleteHostResponse(SdkResponse):
     def exclusive_ip(self, exclusive_ip):
         """Sets the exclusive_ip of this DeleteHostResponse.
 
-        是否使用独享ip
+        是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
         :param exclusive_ip: The exclusive_ip of this DeleteHostResponse.
         :type exclusive_ip: bool
@@ -441,6 +448,28 @@ class DeleteHostResponse(SdkResponse):
         :type paid_type: str
         """
         self._paid_type = paid_type
+
+    @property
+    def web_tag(self):
+        """Gets the web_tag of this DeleteHostResponse.
+
+        网站名称，对应WAF控制台域名详情中的网站名称
+
+        :return: The web_tag of this DeleteHostResponse.
+        :rtype: str
+        """
+        return self._web_tag
+
+    @web_tag.setter
+    def web_tag(self, web_tag):
+        """Sets the web_tag of this DeleteHostResponse.
+
+        网站名称，对应WAF控制台域名详情中的网站名称
+
+        :param web_tag: The web_tag of this DeleteHostResponse.
+        :type web_tag: str
+        """
+        self._web_tag = web_tag
 
     def to_dict(self):
         """Returns the model properties as a dict"""

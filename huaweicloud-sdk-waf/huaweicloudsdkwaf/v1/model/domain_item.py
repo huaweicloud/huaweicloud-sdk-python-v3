@@ -41,7 +41,7 @@ class DomainItem:
         :type key: str
         :param num: 数量
         :type num: int
-        :param web_tag: 网站名称
+        :param web_tag: 网站名称，对应WAF控制台域名详情中的网站名称
         :type web_tag: str
         """
         
@@ -107,7 +107,7 @@ class DomainItem:
     def web_tag(self):
         """Gets the web_tag of this DomainItem.
 
-        网站名称
+        网站名称，对应WAF控制台域名详情中的网站名称
 
         :return: The web_tag of this DomainItem.
         :rtype: str
@@ -118,7 +118,7 @@ class DomainItem:
     def web_tag(self, web_tag):
         """Sets the web_tag of this DomainItem.
 
-        网站名称
+        网站名称，对应WAF控制台域名详情中的网站名称
 
         :param web_tag: The web_tag of this DomainItem.
         :type web_tag: str

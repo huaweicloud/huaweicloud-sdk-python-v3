@@ -97,7 +97,7 @@ class OrderInstanceV2:
         :type effective_time: str
         :param expire_time: 资源过期时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
         :type expire_time: str
-        :param expire_policy: 资源到期后的扣费策略： 1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）  说明： 只有“3”表示该资源是自动续订，其他情况下，都是非自动续订下的到期策略。
+        :param expire_policy: 资源到期后的扣费策略： 0：到期进入宽限期1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）  说明： 只有“3”表示该资源是自动续订，其他情况下，都是非自动续订下的到期策略。
         :type expire_policy: int
         """
         
@@ -513,7 +513,7 @@ class OrderInstanceV2:
     def expire_policy(self):
         """Gets the expire_policy of this OrderInstanceV2.
 
-        资源到期后的扣费策略： 1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）  说明： 只有“3”表示该资源是自动续订，其他情况下，都是非自动续订下的到期策略。
+        资源到期后的扣费策略： 0：到期进入宽限期1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）  说明： 只有“3”表示该资源是自动续订，其他情况下，都是非自动续订下的到期策略。
 
         :return: The expire_policy of this OrderInstanceV2.
         :rtype: int
@@ -524,7 +524,7 @@ class OrderInstanceV2:
     def expire_policy(self, expire_policy):
         """Sets the expire_policy of this OrderInstanceV2.
 
-        资源到期后的扣费策略： 1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）  说明： 只有“3”表示该资源是自动续订，其他情况下，都是非自动续订下的到期策略。
+        资源到期后的扣费策略： 0：到期进入宽限期1：到期转按需2：到期后自动删除（从生效中直接删除）3：到期后自动续费4：到期后冻结5：到期后删除（从保留期删除）  说明： 只有“3”表示该资源是自动续订，其他情况下，都是非自动续订下的到期策略。
 
         :param expire_policy: The expire_policy of this OrderInstanceV2.
         :type expire_policy: int

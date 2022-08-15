@@ -21,29 +21,36 @@ class CreateSecretResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'auths': 'dict(str, AuthInfo)'
+        'auths': 'dict(str, AuthInfo)',
+        'x_swr_dockerlogin': 'str'
     }
 
     attribute_map = {
-        'auths': 'auths'
+        'auths': 'auths',
+        'x_swr_dockerlogin': 'X-Swr-Dockerlogin'
     }
 
-    def __init__(self, auths=None):
+    def __init__(self, auths=None, x_swr_dockerlogin=None):
         """CreateSecretResponse
 
         The model defined in huaweicloud sdk
 
         :param auths: 认证信息
         :type auths: dict(str, AuthInfo)
+        :param x_swr_dockerlogin: 
+        :type x_swr_dockerlogin: str
         """
         
         super(CreateSecretResponse, self).__init__()
 
         self._auths = None
+        self._x_swr_dockerlogin = None
         self.discriminator = None
 
         if auths is not None:
             self.auths = auths
+        if x_swr_dockerlogin is not None:
+            self.x_swr_dockerlogin = x_swr_dockerlogin
 
     @property
     def auths(self):
@@ -66,6 +73,26 @@ class CreateSecretResponse(SdkResponse):
         :type auths: dict(str, AuthInfo)
         """
         self._auths = auths
+
+    @property
+    def x_swr_dockerlogin(self):
+        """Gets the x_swr_dockerlogin of this CreateSecretResponse.
+
+
+        :return: The x_swr_dockerlogin of this CreateSecretResponse.
+        :rtype: str
+        """
+        return self._x_swr_dockerlogin
+
+    @x_swr_dockerlogin.setter
+    def x_swr_dockerlogin(self, x_swr_dockerlogin):
+        """Sets the x_swr_dockerlogin of this CreateSecretResponse.
+
+
+        :param x_swr_dockerlogin: The x_swr_dockerlogin of this CreateSecretResponse.
+        :type x_swr_dockerlogin: str
+        """
+        self._x_swr_dockerlogin = x_swr_dockerlogin
 
     def to_dict(self):
         """Returns the model properties as a dict"""

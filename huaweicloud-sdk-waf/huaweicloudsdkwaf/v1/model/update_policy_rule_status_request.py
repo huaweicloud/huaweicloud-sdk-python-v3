@@ -41,7 +41,7 @@ class UpdatePolicyRuleStatusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param policy_id: 策略id（策略id从查询防护策略列表接口获取）
         :type policy_id: str
@@ -74,7 +74,7 @@ class UpdatePolicyRuleStatusRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this UpdatePolicyRuleStatusRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this UpdatePolicyRuleStatusRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class UpdatePolicyRuleStatusRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this UpdatePolicyRuleStatusRequest.
 
-        企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this UpdatePolicyRuleStatusRequest.
         :type enterprise_project_id: str

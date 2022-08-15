@@ -24,8 +24,8 @@ class ListStatisticsRequest:
         'enterprise_project_id': 'str',
         '_from': 'int',
         'to': 'int',
-        'hosts': 'str',
-        'instances': 'str'
+        'hosts': 'list[str]',
+        'instances': 'list[str]'
     }
 
     attribute_map = {
@@ -41,16 +41,16 @@ class ListStatisticsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param _from: 起始时间(13位时间戳)，需要和to同时使用
         :type _from: int
         :param to: 结束时间(13位时间戳),需要和from同时使用
         :type to: int
         :param hosts: 域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
-        :type hosts: str
-        :param instances: 要查询实例列表
-        :type instances: str
+        :type hosts: list[str]
+        :param instances: 要查询引擎实例列表
+        :type instances: list[str]
         """
         
         
@@ -75,7 +75,7 @@ class ListStatisticsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListStatisticsRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ListStatisticsRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class ListStatisticsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListStatisticsRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListStatisticsRequest.
         :type enterprise_project_id: str
@@ -144,7 +144,7 @@ class ListStatisticsRequest:
         域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :return: The hosts of this ListStatisticsRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._hosts
 
@@ -155,7 +155,7 @@ class ListStatisticsRequest:
         域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :param hosts: The hosts of this ListStatisticsRequest.
-        :type hosts: str
+        :type hosts: list[str]
         """
         self._hosts = hosts
 
@@ -163,10 +163,10 @@ class ListStatisticsRequest:
     def instances(self):
         """Gets the instances of this ListStatisticsRequest.
 
-        要查询实例列表
+        要查询引擎实例列表
 
         :return: The instances of this ListStatisticsRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._instances
 
@@ -174,10 +174,10 @@ class ListStatisticsRequest:
     def instances(self, instances):
         """Sets the instances of this ListStatisticsRequest.
 
-        要查询实例列表
+        要查询引擎实例列表
 
         :param instances: The instances of this ListStatisticsRequest.
-        :type instances: str
+        :type instances: list[str]
         """
         self._instances = instances
 

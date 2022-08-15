@@ -21,7 +21,7 @@ class ListBandwidthTimelineResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[StatisticsTimelineItem]'
+        'body': 'list[BandwidthStatisticsTimelineItem]'
     }
 
     attribute_map = {
@@ -33,8 +33,8 @@ class ListBandwidthTimelineResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 安全统计的时间线
-        :type body: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]
+        :param body: 安全统计的带宽时间线数据
+        :type body: list[:class:`huaweicloudsdkwaf.v1.BandwidthStatisticsTimelineItem`]
         """
         
         super(ListBandwidthTimelineResponse, self).__init__()
@@ -49,10 +49,10 @@ class ListBandwidthTimelineResponse(SdkResponse):
     def body(self):
         """Gets the body of this ListBandwidthTimelineResponse.
 
-        安全统计的时间线
+        安全统计的带宽时间线数据
 
         :return: The body of this ListBandwidthTimelineResponse.
-        :rtype: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.BandwidthStatisticsTimelineItem`]
         """
         return self._body
 
@@ -60,10 +60,10 @@ class ListBandwidthTimelineResponse(SdkResponse):
     def body(self, body):
         """Sets the body of this ListBandwidthTimelineResponse.
 
-        安全统计的时间线
+        安全统计的带宽时间线数据
 
         :param body: The body of this ListBandwidthTimelineResponse.
-        :type body: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]
+        :type body: list[:class:`huaweicloudsdkwaf.v1.BandwidthStatisticsTimelineItem`]
         """
         self._body = body
 

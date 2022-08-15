@@ -41,7 +41,7 @@ class ShowSyncJobRequest:
         :type namespace: str
         :param repository: 镜像仓库名称
         :type repository: str
-        :param filter: 应填写 limit::{limit}|offset::{offset}|order::{order} ,其中{limit}为返回条数,{offset}为起始索引,{order}为排序类型，可设置为desc（降序）、asc（升序）
+        :param filter: 应填写 limit::{limit}|offset::{offset}|order::{order} ,其中{limit}为返回条数,{offset}为起始索引,注意：offset和limit参数需要配套使用，且必选。{order}为排序类型（可选），可设置为desc（降序）、asc（升序）
         :type filter: str
         """
         
@@ -104,7 +104,7 @@ class ShowSyncJobRequest:
     def filter(self):
         """Gets the filter of this ShowSyncJobRequest.
 
-        应填写 limit::{limit}|offset::{offset}|order::{order} ,其中{limit}为返回条数,{offset}为起始索引,{order}为排序类型，可设置为desc（降序）、asc（升序）
+        应填写 limit::{limit}|offset::{offset}|order::{order} ,其中{limit}为返回条数,{offset}为起始索引,注意：offset和limit参数需要配套使用，且必选。{order}为排序类型（可选），可设置为desc（降序）、asc（升序）
 
         :return: The filter of this ShowSyncJobRequest.
         :rtype: str
@@ -115,7 +115,7 @@ class ShowSyncJobRequest:
     def filter(self, filter):
         """Sets the filter of this ShowSyncJobRequest.
 
-        应填写 limit::{limit}|offset::{offset}|order::{order} ,其中{limit}为返回条数,{offset}为起始索引,{order}为排序类型，可设置为desc（降序）、asc（升序）
+        应填写 limit::{limit}|offset::{offset}|order::{order} ,其中{limit}为返回条数,{offset}为起始索引,注意：offset和limit参数需要配套使用，且必选。{order}为排序类型（可选），可设置为desc（降序）、asc（升序）
 
         :param filter: The filter of this ShowSyncJobRequest.
         :type filter: str

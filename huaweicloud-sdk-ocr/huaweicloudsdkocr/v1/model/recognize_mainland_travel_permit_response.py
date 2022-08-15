@@ -21,7 +21,7 @@ class RecognizeMainlandTravelPermitResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'object'
+        'result': 'MainlandTravelPermitResult'
     }
 
     attribute_map = {
@@ -33,8 +33,8 @@ class RecognizeMainlandTravelPermitResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 调用成功时表示调用结果。  调用失败时无此字段。 
-        :type result: object
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.MainlandTravelPermitResult`
         """
         
         super(RecognizeMainlandTravelPermitResponse, self).__init__()
@@ -49,10 +49,9 @@ class RecognizeMainlandTravelPermitResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeMainlandTravelPermitResponse.
 
-        调用成功时表示调用结果。  调用失败时无此字段。 
 
         :return: The result of this RecognizeMainlandTravelPermitResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkocr.v1.MainlandTravelPermitResult`
         """
         return self._result
 
@@ -60,10 +59,9 @@ class RecognizeMainlandTravelPermitResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this RecognizeMainlandTravelPermitResponse.
 
-        调用成功时表示调用结果。  调用失败时无此字段。 
 
         :param result: The result of this RecognizeMainlandTravelPermitResponse.
-        :type result: object
+        :type result: :class:`huaweicloudsdkocr.v1.MainlandTravelPermitResult`
         """
         self._result = result
 

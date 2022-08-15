@@ -39,11 +39,11 @@ class UpdateWhiteblackipRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
         :type policy_id: str
-        :param rule_id: 黑白名单规则ID（从查询黑白名单规则列表ListWhiteblackipRule接口获取）
+        :param rule_id: 黑白名单规则id，您可以调用查询黑白名单规则列表（ListWhiteblackipRule）获取黑白名单规则id
         :type rule_id: str
         :param body: Body of the UpdateWhiteblackipRuleRequest
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateWhiteBlackIpRuleRequestBody`
@@ -68,7 +68,7 @@ class UpdateWhiteblackipRuleRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this UpdateWhiteblackipRuleRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this UpdateWhiteblackipRuleRequest.
         :rtype: str
@@ -79,7 +79,7 @@ class UpdateWhiteblackipRuleRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this UpdateWhiteblackipRuleRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this UpdateWhiteblackipRuleRequest.
         :type enterprise_project_id: str
@@ -112,7 +112,7 @@ class UpdateWhiteblackipRuleRequest:
     def rule_id(self):
         """Gets the rule_id of this UpdateWhiteblackipRuleRequest.
 
-        黑白名单规则ID（从查询黑白名单规则列表ListWhiteblackipRule接口获取）
+        黑白名单规则id，您可以调用查询黑白名单规则列表（ListWhiteblackipRule）获取黑白名单规则id
 
         :return: The rule_id of this UpdateWhiteblackipRuleRequest.
         :rtype: str
@@ -123,7 +123,7 @@ class UpdateWhiteblackipRuleRequest:
     def rule_id(self, rule_id):
         """Sets the rule_id of this UpdateWhiteblackipRuleRequest.
 
-        黑白名单规则ID（从查询黑白名单规则列表ListWhiteblackipRule接口获取）
+        黑白名单规则id，您可以调用查询黑白名单规则列表（ListWhiteblackipRule）获取黑白名单规则id
 
         :param rule_id: The rule_id of this UpdateWhiteblackipRuleRequest.
         :type rule_id: str

@@ -22,48 +22,41 @@ class CountItem:
 
     openapi_types = {
         'key': 'str',
-        'num': 'int',
-        'host': 'str'
+        'num': 'int'
     }
 
     attribute_map = {
         'key': 'key',
-        'num': 'num',
-        'host': 'host'
+        'num': 'num'
     }
 
-    def __init__(self, key=None, num=None, host=None):
+    def __init__(self, key=None, num=None):
         """CountItem
 
         The model defined in huaweicloud sdk
 
-        :param key: 类型
+        :param key: 类型，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（TOTAL_ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）以及CC攻击防护（CC）
         :type key: str
         :param num: 数量
         :type num: int
-        :param host: 域名
-        :type host: str
         """
         
         
 
         self._key = None
         self._num = None
-        self._host = None
         self.discriminator = None
 
         if key is not None:
             self.key = key
         if num is not None:
             self.num = num
-        if host is not None:
-            self.host = host
 
     @property
     def key(self):
         """Gets the key of this CountItem.
 
-        类型
+        类型，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（TOTAL_ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）以及CC攻击防护（CC）
 
         :return: The key of this CountItem.
         :rtype: str
@@ -74,7 +67,7 @@ class CountItem:
     def key(self, key):
         """Sets the key of this CountItem.
 
-        类型
+        类型，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（TOTAL_ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）以及CC攻击防护（CC）
 
         :param key: The key of this CountItem.
         :type key: str
@@ -102,28 +95,6 @@ class CountItem:
         :type num: int
         """
         self._num = num
-
-    @property
-    def host(self):
-        """Gets the host of this CountItem.
-
-        域名
-
-        :return: The host of this CountItem.
-        :rtype: str
-        """
-        return self._host
-
-    @host.setter
-    def host(self, host):
-        """Sets the host of this CountItem.
-
-        域名
-
-        :param host: The host of this CountItem.
-        :type host: str
-        """
-        self._host = host
 
     def to_dict(self):
         """Returns the model properties as a dict"""

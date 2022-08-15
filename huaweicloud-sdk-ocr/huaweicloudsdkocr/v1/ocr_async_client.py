@@ -1251,6 +1251,64 @@ class OcrAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def recognize_macao_id_card_async(self, request):
+        """澳门身份证识别
+
+        识别澳门身份证图片中的文字内容，并将识别的结果返回给用户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RecognizeMacaoIdCard
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizeMacaoIdCardRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMacaoIdCardResponse`
+        """
+        return self.recognize_macao_id_card_with_http_info(request)
+
+    def recognize_macao_id_card_with_http_info(self, request):
+        all_params = ['macao_id_card_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/ocr/macao-id-card',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RecognizeMacaoIdCardResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def recognize_mainland_travel_permit_async(self, request):
         """港澳台居民来往内地通行证识别
 

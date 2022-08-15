@@ -37,11 +37,11 @@ class AdjustCouponQuotasReq:
 
         The model defined in huaweicloud sdk
 
-        :param quota_id: 华为云伙伴能力中心发放的代金券额度的ID。获取方法请参见查询优惠券额度。
+        :param quota_id: 华为云总经销商发放的代金券额度的ID。获取方法请参见查询优惠券额度。
         :type quota_id: str
-        :param indirect_partner_ids: 精英服务商ID列表。
+        :param indirect_partner_ids: 云经销商ID列表。
         :type indirect_partner_ids: list[str]
-        :param quota_amount: 华为云伙伴能力中心向精英服务商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
+        :param quota_amount: 华为云总经销商向云经销商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
         :type quota_amount: float
         """
         
@@ -60,7 +60,7 @@ class AdjustCouponQuotasReq:
     def quota_id(self):
         """Gets the quota_id of this AdjustCouponQuotasReq.
 
-        华为云伙伴能力中心发放的代金券额度的ID。获取方法请参见查询优惠券额度。
+        华为云总经销商发放的代金券额度的ID。获取方法请参见查询优惠券额度。
 
         :return: The quota_id of this AdjustCouponQuotasReq.
         :rtype: str
@@ -71,7 +71,7 @@ class AdjustCouponQuotasReq:
     def quota_id(self, quota_id):
         """Sets the quota_id of this AdjustCouponQuotasReq.
 
-        华为云伙伴能力中心发放的代金券额度的ID。获取方法请参见查询优惠券额度。
+        华为云总经销商发放的代金券额度的ID。获取方法请参见查询优惠券额度。
 
         :param quota_id: The quota_id of this AdjustCouponQuotasReq.
         :type quota_id: str
@@ -82,7 +82,7 @@ class AdjustCouponQuotasReq:
     def indirect_partner_ids(self):
         """Gets the indirect_partner_ids of this AdjustCouponQuotasReq.
 
-        精英服务商ID列表。
+        云经销商ID列表。
 
         :return: The indirect_partner_ids of this AdjustCouponQuotasReq.
         :rtype: list[str]
@@ -93,7 +93,7 @@ class AdjustCouponQuotasReq:
     def indirect_partner_ids(self, indirect_partner_ids):
         """Sets the indirect_partner_ids of this AdjustCouponQuotasReq.
 
-        精英服务商ID列表。
+        云经销商ID列表。
 
         :param indirect_partner_ids: The indirect_partner_ids of this AdjustCouponQuotasReq.
         :type indirect_partner_ids: list[str]
@@ -104,7 +104,7 @@ class AdjustCouponQuotasReq:
     def quota_amount(self):
         """Gets the quota_amount of this AdjustCouponQuotasReq.
 
-        华为云伙伴能力中心向精英服务商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
+        华为云总经销商向云经销商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
 
         :return: The quota_amount of this AdjustCouponQuotasReq.
         :rtype: float
@@ -115,7 +115,7 @@ class AdjustCouponQuotasReq:
     def quota_amount(self, quota_amount):
         """Sets the quota_amount of this AdjustCouponQuotasReq.
 
-        华为云伙伴能力中心向精英服务商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
+        华为云总经销商向云经销商发放的代金券额度值。 单位：元。取值大于0且精确到小数点后2位。
 
         :param quota_amount: The quota_amount of this AdjustCouponQuotasReq.
         :type quota_amount: float

@@ -22,7 +22,7 @@ class BatchDeleteRecordSetWithLineResponse(SdkResponse):
 
     openapi_types = {
         'links': 'PageLink',
-        'recordsets': 'list[QueryRecordSetWithLineAndTagsResp]',
+        'recordsets': 'list[QueryRecordSetWithLineResp]',
         'metadata': 'Metedata'
     }
 
@@ -40,7 +40,7 @@ class BatchDeleteRecordSetWithLineResponse(SdkResponse):
         :param links: 
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
         :param recordsets: 
-        :type recordsets: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineAndTagsResp`]
+        :type recordsets: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineResp`]
         :param metadata: 
         :type metadata: :class:`huaweicloudsdkdns.v2.Metedata`
         """
@@ -85,7 +85,7 @@ class BatchDeleteRecordSetWithLineResponse(SdkResponse):
 
 
         :return: The recordsets of this BatchDeleteRecordSetWithLineResponse.
-        :rtype: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineAndTagsResp`]
+        :rtype: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineResp`]
         """
         return self._recordsets
 
@@ -95,7 +95,7 @@ class BatchDeleteRecordSetWithLineResponse(SdkResponse):
 
 
         :param recordsets: The recordsets of this BatchDeleteRecordSetWithLineResponse.
-        :type recordsets: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineAndTagsResp`]
+        :type recordsets: list[:class:`huaweicloudsdkdns.v2.QueryRecordSetWithLineResp`]
         """
         self._recordsets = recordsets
 

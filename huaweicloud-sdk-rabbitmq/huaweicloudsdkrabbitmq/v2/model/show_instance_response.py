@@ -21,6 +21,8 @@ class ShowInstanceResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'access_user': 'str',
+        'broker_num': 'int',
         'name': 'str',
         'engine': 'str',
         'engine_version': 'str',
@@ -65,6 +67,8 @@ class ShowInstanceResponse(SdkResponse):
     }
 
     attribute_map = {
+        'access_user': 'access_user',
+        'broker_num': 'broker_num',
         'name': 'name',
         'engine': 'engine',
         'engine_version': 'engine_version',
@@ -108,11 +112,15 @@ class ShowInstanceResponse(SdkResponse):
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, specification=None, storage_space=None, used_storage_space=None, connect_address=None, port=None, status=None, description=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_address=None, publicip_id=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, storage_resource_id=None, storage_spec_code=None, ipv6_enable=None, ipv6_connect_addresses=None, tags=None):
+    def __init__(self, access_user=None, broker_num=None, name=None, engine=None, engine_version=None, specification=None, storage_space=None, used_storage_space=None, connect_address=None, port=None, status=None, description=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_address=None, publicip_id=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, storage_resource_id=None, storage_spec_code=None, ipv6_enable=None, ipv6_connect_addresses=None, tags=None):
         """ShowInstanceResponse
 
         The model defined in huaweicloud sdk
 
+        :param access_user: 认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
+        :type access_user: str
+        :param broker_num: 代理个数。
+        :type broker_num: int
         :param name: 实例名称。
         :type name: str
         :param engine: 消息引擎。
@@ -199,6 +207,8 @@ class ShowInstanceResponse(SdkResponse):
         
         super(ShowInstanceResponse, self).__init__()
 
+        self._access_user = None
+        self._broker_num = None
         self._name = None
         self._engine = None
         self._engine_version = None
@@ -242,6 +252,10 @@ class ShowInstanceResponse(SdkResponse):
         self._tags = None
         self.discriminator = None
 
+        if access_user is not None:
+            self.access_user = access_user
+        if broker_num is not None:
+            self.broker_num = broker_num
         if name is not None:
             self.name = name
         if engine is not None:
@@ -324,6 +338,50 @@ class ShowInstanceResponse(SdkResponse):
             self.ipv6_connect_addresses = ipv6_connect_addresses
         if tags is not None:
             self.tags = tags
+
+    @property
+    def access_user(self):
+        """Gets the access_user of this ShowInstanceResponse.
+
+        认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
+
+        :return: The access_user of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._access_user
+
+    @access_user.setter
+    def access_user(self, access_user):
+        """Sets the access_user of this ShowInstanceResponse.
+
+        认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
+
+        :param access_user: The access_user of this ShowInstanceResponse.
+        :type access_user: str
+        """
+        self._access_user = access_user
+
+    @property
+    def broker_num(self):
+        """Gets the broker_num of this ShowInstanceResponse.
+
+        代理个数。
+
+        :return: The broker_num of this ShowInstanceResponse.
+        :rtype: int
+        """
+        return self._broker_num
+
+    @broker_num.setter
+    def broker_num(self, broker_num):
+        """Sets the broker_num of this ShowInstanceResponse.
+
+        代理个数。
+
+        :param broker_num: The broker_num of this ShowInstanceResponse.
+        :type broker_num: int
+        """
+        self._broker_num = broker_num
 
     @property
     def name(self):

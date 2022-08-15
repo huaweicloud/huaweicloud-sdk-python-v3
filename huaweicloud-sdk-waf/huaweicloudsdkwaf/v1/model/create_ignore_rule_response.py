@@ -29,6 +29,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
         'rule': 'str',
         'mode': 'int',
         'conditions': 'list[Condition]',
+        'advanced': 'list[Advanced]',
         'domain': 'list[str]'
     }
 
@@ -41,10 +42,11 @@ class CreateIgnoreRuleResponse(SdkResponse):
         'rule': 'rule',
         'mode': 'mode',
         'conditions': 'conditions',
+        'advanced': 'advanced',
         'domain': 'domain'
     }
 
-    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, rule=None, mode=None, conditions=None, domain=None):
+    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, rule=None, mode=None, conditions=None, advanced=None, domain=None):
         """CreateIgnoreRuleResponse
 
         The model defined in huaweicloud sdk
@@ -59,12 +61,14 @@ class CreateIgnoreRuleResponse(SdkResponse):
         :type description: str
         :param status: 规则状态，0：关闭，1：开启
         :type status: int
-        :param rule: 屏蔽的内置规则id（内置规则id通常可以在Web应用防火墙控制台的防护策略-&gt;策略名称-&gt;Web基础防护-&gt;防护规则中查询，也可以从防护事件的事件详情中查询内置规则id）
+        :param rule: 需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略-&gt;策略名称-&gt;Web基础防护的高级设置-&gt;防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xxs攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
         :type rule: str
         :param mode: 版本号固定值为1,代表v2版本误报屏蔽规则，v1版本仅支持兼容旧版本，不支持创建
         :type mode: int
         :param conditions: 条件列表
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.Condition`]
+        :param advanced: 高级配置项
+        :type advanced: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
         :param domain: 防护域名或防护网站
         :type domain: list[str]
         """
@@ -79,6 +83,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
         self._rule = None
         self._mode = None
         self._conditions = None
+        self._advanced = None
         self._domain = None
         self.discriminator = None
 
@@ -98,6 +103,8 @@ class CreateIgnoreRuleResponse(SdkResponse):
             self.mode = mode
         if conditions is not None:
             self.conditions = conditions
+        if advanced is not None:
+            self.advanced = advanced
         if domain is not None:
             self.domain = domain
 
@@ -215,7 +222,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
     def rule(self):
         """Gets the rule of this CreateIgnoreRuleResponse.
 
-        屏蔽的内置规则id（内置规则id通常可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护->防护规则中查询，也可以从防护事件的事件详情中查询内置规则id）
+        需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xxs攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
         :return: The rule of this CreateIgnoreRuleResponse.
         :rtype: str
@@ -226,7 +233,7 @@ class CreateIgnoreRuleResponse(SdkResponse):
     def rule(self, rule):
         """Sets the rule of this CreateIgnoreRuleResponse.
 
-        屏蔽的内置规则id（内置规则id通常可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护->防护规则中查询，也可以从防护事件的事件详情中查询内置规则id）
+        需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xxs攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
         :param rule: The rule of this CreateIgnoreRuleResponse.
         :type rule: str
@@ -276,6 +283,28 @@ class CreateIgnoreRuleResponse(SdkResponse):
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.Condition`]
         """
         self._conditions = conditions
+
+    @property
+    def advanced(self):
+        """Gets the advanced of this CreateIgnoreRuleResponse.
+
+        高级配置项
+
+        :return: The advanced of this CreateIgnoreRuleResponse.
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
+        """
+        return self._advanced
+
+    @advanced.setter
+    def advanced(self, advanced):
+        """Sets the advanced of this CreateIgnoreRuleResponse.
+
+        高级配置项
+
+        :param advanced: The advanced of this CreateIgnoreRuleResponse.
+        :type advanced: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
+        """
+        self._advanced = advanced
 
     @property
     def domain(self):

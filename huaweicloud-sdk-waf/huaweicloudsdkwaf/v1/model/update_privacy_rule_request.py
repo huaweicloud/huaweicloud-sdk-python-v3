@@ -39,11 +39,11 @@ class UpdatePrivacyRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
         :type policy_id: str
-        :param rule_id: privacyRuleId
+        :param rule_id: 隐私屏蔽规则id，您可以通过调用查询隐私屏蔽规则列表（ListPrivacyRule）获取规则id
         :type rule_id: str
         :param body: Body of the UpdatePrivacyRuleRequest
         :type body: :class:`huaweicloudsdkwaf.v1.UpdatePrivacyRuleRequestBody`
@@ -68,7 +68,7 @@ class UpdatePrivacyRuleRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this UpdatePrivacyRuleRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this UpdatePrivacyRuleRequest.
         :rtype: str
@@ -79,7 +79,7 @@ class UpdatePrivacyRuleRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this UpdatePrivacyRuleRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this UpdatePrivacyRuleRequest.
         :type enterprise_project_id: str
@@ -112,7 +112,7 @@ class UpdatePrivacyRuleRequest:
     def rule_id(self):
         """Gets the rule_id of this UpdatePrivacyRuleRequest.
 
-        privacyRuleId
+        隐私屏蔽规则id，您可以通过调用查询隐私屏蔽规则列表（ListPrivacyRule）获取规则id
 
         :return: The rule_id of this UpdatePrivacyRuleRequest.
         :rtype: str
@@ -123,7 +123,7 @@ class UpdatePrivacyRuleRequest:
     def rule_id(self, rule_id):
         """Sets the rule_id of this UpdatePrivacyRuleRequest.
 
-        privacyRuleId
+        隐私屏蔽规则id，您可以通过调用查询隐私屏蔽规则列表（ListPrivacyRule）获取规则id
 
         :param rule_id: The rule_id of this UpdatePrivacyRuleRequest.
         :type rule_id: str

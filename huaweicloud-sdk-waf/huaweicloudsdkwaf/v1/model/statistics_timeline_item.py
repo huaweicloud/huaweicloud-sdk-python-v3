@@ -35,9 +35,9 @@ class StatisticsTimelineItem:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键值
+        :param key: 键值，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（TOTAL_ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）、CC攻击防护（CC）
         :type key: str
-        :param timeline: 对应键值的时间线
+        :param timeline: 对应键值的时间线统计数据
         :type timeline: list[:class:`huaweicloudsdkwaf.v1.TimeLineItem`]
         """
         
@@ -56,7 +56,7 @@ class StatisticsTimelineItem:
     def key(self):
         """Gets the key of this StatisticsTimelineItem.
 
-        键值
+        键值，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（TOTAL_ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）、CC攻击防护（CC）
 
         :return: The key of this StatisticsTimelineItem.
         :rtype: str
@@ -67,7 +67,7 @@ class StatisticsTimelineItem:
     def key(self, key):
         """Sets the key of this StatisticsTimelineItem.
 
-        键值
+        键值，包括请求总量（ACCESS）、Bot攻击防护（CRAWLER）、攻击总量（TOTAL_ATTACK）、Web基础防护（WEB_ATTACK）、精准防护（PRECISE）、CC攻击防护（CC）
 
         :param key: The key of this StatisticsTimelineItem.
         :type key: str
@@ -78,7 +78,7 @@ class StatisticsTimelineItem:
     def timeline(self):
         """Gets the timeline of this StatisticsTimelineItem.
 
-        对应键值的时间线
+        对应键值的时间线统计数据
 
         :return: The timeline of this StatisticsTimelineItem.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.TimeLineItem`]
@@ -89,7 +89,7 @@ class StatisticsTimelineItem:
     def timeline(self, timeline):
         """Sets the timeline of this StatisticsTimelineItem.
 
-        对应键值的时间线
+        对应键值的时间线统计数据
 
         :param timeline: The timeline of this StatisticsTimelineItem.
         :type timeline: list[:class:`huaweicloudsdkwaf.v1.TimeLineItem`]

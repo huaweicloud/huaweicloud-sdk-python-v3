@@ -33,7 +33,7 @@ class PolicyAction:
 
         The model defined in huaweicloud sdk
 
-        :param category: 防护等级（log为仅记录、block为拦截）
+        :param category: web基础防护动作（log为仅记录、block为拦截）
         :type category: str
         """
         
@@ -49,7 +49,7 @@ class PolicyAction:
     def category(self):
         """Gets the category of this PolicyAction.
 
-        防护等级（log为仅记录、block为拦截）
+        web基础防护动作（log为仅记录、block为拦截）
 
         :return: The category of this PolicyAction.
         :rtype: str
@@ -60,7 +60,7 @@ class PolicyAction:
     def category(self, category):
         """Sets the category of this PolicyAction.
 
-        防护等级（log为仅记录、block为拦截）
+        web基础防护动作（log为仅记录、block为拦截）
 
         :param category: The category of this PolicyAction.
         :type category: str

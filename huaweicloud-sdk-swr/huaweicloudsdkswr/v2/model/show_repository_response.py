@@ -69,7 +69,7 @@ class ShowRepositoryResponse(SdkResponse):
 
         :param id: 仓库编号
         :type id: int
-        :param ns_id: 命名空间编号
+        :param ns_id: 组织编号
         :type ns_id: int
         :param name: 仓库名称
         :type name: str
@@ -190,7 +190,7 @@ class ShowRepositoryResponse(SdkResponse):
     def ns_id(self):
         """Gets the ns_id of this ShowRepositoryResponse.
 
-        命名空间编号
+        组织编号
 
         :return: The ns_id of this ShowRepositoryResponse.
         :rtype: int
@@ -201,7 +201,7 @@ class ShowRepositoryResponse(SdkResponse):
     def ns_id(self, ns_id):
         """Sets the ns_id of this ShowRepositoryResponse.
 
-        命名空间编号
+        组织编号
 
         :param ns_id: The ns_id of this ShowRepositoryResponse.
         :type ns_id: int

@@ -35,9 +35,9 @@ class ListWhiteblackipRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 规则条数
+        :param total: 黑白名单规则条数
         :type total: int
-        :param items: 规则
+        :param items: 黑白名单规则列表信息
         :type items: list[:class:`huaweicloudsdkwaf.v1.WhiteBlackIpResponseBody`]
         """
         
@@ -56,7 +56,7 @@ class ListWhiteblackipRuleResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListWhiteblackipRuleResponse.
 
-        规则条数
+        黑白名单规则条数
 
         :return: The total of this ListWhiteblackipRuleResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class ListWhiteblackipRuleResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListWhiteblackipRuleResponse.
 
-        规则条数
+        黑白名单规则条数
 
         :param total: The total of this ListWhiteblackipRuleResponse.
         :type total: int
@@ -78,7 +78,7 @@ class ListWhiteblackipRuleResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListWhiteblackipRuleResponse.
 
-        规则
+        黑白名单规则列表信息
 
         :return: The items of this ListWhiteblackipRuleResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.WhiteBlackIpResponseBody`]
@@ -89,7 +89,7 @@ class ListWhiteblackipRuleResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListWhiteblackipRuleResponse.
 
-        规则
+        黑白名单规则列表信息
 
         :param items: The items of this ListWhiteblackipRuleResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.WhiteBlackIpResponseBody`]

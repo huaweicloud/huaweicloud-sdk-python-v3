@@ -45,19 +45,19 @@ class CircuitBreaker:
 
         The model defined in huaweicloud sdk
 
-        :param switch: 熔断开关
+        :param switch: 熔断开关，是否开启连接保护   - true：开启连接保护   - false: 关闭连接保护 
         :type switch: bool
-        :param dead_num: 源站不可达数量阈值
+        :param dead_num: 502/504数量阈值，每30s累加的502/504数量阈值
         :type dead_num: int
-        :param dead_ratio: 源站不可达比例阈值
+        :param dead_ratio: 502/504数量占比(%)，总请求数量中502/504数量占比达到所设定值，并且与数量阈值同时满足时触发宕机保护
         :type dead_ratio: float
-        :param block_time: 源站不可达熔断时间
+        :param block_time: 初次触发宕机的保护时间，即WAF将停止转发用户请求的时间。
         :type block_time: int
-        :param superposition_num: 熔断阈值叠加次数
+        :param superposition_num: 连续触发时，保护时间延长最大倍数，叠加周期为3600s。例如，“初次保护时间”设置为180s，“连续触发叠加系数”设置为3。   - 当触发次数为2（即小于3）时，保护时间为360s。   - 当次数大于等于3时，保护时间为540s。   - 当累计保护时间超过1小时（3600s），叠加次数会从头计数。
         :type superposition_num: int
-        :param suspend_num: 连接数占用阈值
+        :param suspend_num: 读等待URL请求数量阈值，读等待URL请求数量到达设定值即触发连接保护
         :type suspend_num: int
-        :param sus_block_time: 连接数占用熔断时间
+        :param sus_block_time: 读等待URL请求数量超过阈值后的熔断时间，达到数量阈值所触发的保护时间，即WAF将停止转发用户请求的时间。
         :type sus_block_time: int
         """
         
@@ -91,7 +91,7 @@ class CircuitBreaker:
     def switch(self):
         """Gets the switch of this CircuitBreaker.
 
-        熔断开关
+        熔断开关，是否开启连接保护   - true：开启连接保护   - false: 关闭连接保护 
 
         :return: The switch of this CircuitBreaker.
         :rtype: bool
@@ -102,7 +102,7 @@ class CircuitBreaker:
     def switch(self, switch):
         """Sets the switch of this CircuitBreaker.
 
-        熔断开关
+        熔断开关，是否开启连接保护   - true：开启连接保护   - false: 关闭连接保护 
 
         :param switch: The switch of this CircuitBreaker.
         :type switch: bool
@@ -113,7 +113,7 @@ class CircuitBreaker:
     def dead_num(self):
         """Gets the dead_num of this CircuitBreaker.
 
-        源站不可达数量阈值
+        502/504数量阈值，每30s累加的502/504数量阈值
 
         :return: The dead_num of this CircuitBreaker.
         :rtype: int
@@ -124,7 +124,7 @@ class CircuitBreaker:
     def dead_num(self, dead_num):
         """Sets the dead_num of this CircuitBreaker.
 
-        源站不可达数量阈值
+        502/504数量阈值，每30s累加的502/504数量阈值
 
         :param dead_num: The dead_num of this CircuitBreaker.
         :type dead_num: int
@@ -135,7 +135,7 @@ class CircuitBreaker:
     def dead_ratio(self):
         """Gets the dead_ratio of this CircuitBreaker.
 
-        源站不可达比例阈值
+        502/504数量占比(%)，总请求数量中502/504数量占比达到所设定值，并且与数量阈值同时满足时触发宕机保护
 
         :return: The dead_ratio of this CircuitBreaker.
         :rtype: float
@@ -146,7 +146,7 @@ class CircuitBreaker:
     def dead_ratio(self, dead_ratio):
         """Sets the dead_ratio of this CircuitBreaker.
 
-        源站不可达比例阈值
+        502/504数量占比(%)，总请求数量中502/504数量占比达到所设定值，并且与数量阈值同时满足时触发宕机保护
 
         :param dead_ratio: The dead_ratio of this CircuitBreaker.
         :type dead_ratio: float
@@ -157,7 +157,7 @@ class CircuitBreaker:
     def block_time(self):
         """Gets the block_time of this CircuitBreaker.
 
-        源站不可达熔断时间
+        初次触发宕机的保护时间，即WAF将停止转发用户请求的时间。
 
         :return: The block_time of this CircuitBreaker.
         :rtype: int
@@ -168,7 +168,7 @@ class CircuitBreaker:
     def block_time(self, block_time):
         """Sets the block_time of this CircuitBreaker.
 
-        源站不可达熔断时间
+        初次触发宕机的保护时间，即WAF将停止转发用户请求的时间。
 
         :param block_time: The block_time of this CircuitBreaker.
         :type block_time: int
@@ -179,7 +179,7 @@ class CircuitBreaker:
     def superposition_num(self):
         """Gets the superposition_num of this CircuitBreaker.
 
-        熔断阈值叠加次数
+        连续触发时，保护时间延长最大倍数，叠加周期为3600s。例如，“初次保护时间”设置为180s，“连续触发叠加系数”设置为3。   - 当触发次数为2（即小于3）时，保护时间为360s。   - 当次数大于等于3时，保护时间为540s。   - 当累计保护时间超过1小时（3600s），叠加次数会从头计数。
 
         :return: The superposition_num of this CircuitBreaker.
         :rtype: int
@@ -190,7 +190,7 @@ class CircuitBreaker:
     def superposition_num(self, superposition_num):
         """Sets the superposition_num of this CircuitBreaker.
 
-        熔断阈值叠加次数
+        连续触发时，保护时间延长最大倍数，叠加周期为3600s。例如，“初次保护时间”设置为180s，“连续触发叠加系数”设置为3。   - 当触发次数为2（即小于3）时，保护时间为360s。   - 当次数大于等于3时，保护时间为540s。   - 当累计保护时间超过1小时（3600s），叠加次数会从头计数。
 
         :param superposition_num: The superposition_num of this CircuitBreaker.
         :type superposition_num: int
@@ -201,7 +201,7 @@ class CircuitBreaker:
     def suspend_num(self):
         """Gets the suspend_num of this CircuitBreaker.
 
-        连接数占用阈值
+        读等待URL请求数量阈值，读等待URL请求数量到达设定值即触发连接保护
 
         :return: The suspend_num of this CircuitBreaker.
         :rtype: int
@@ -212,7 +212,7 @@ class CircuitBreaker:
     def suspend_num(self, suspend_num):
         """Sets the suspend_num of this CircuitBreaker.
 
-        连接数占用阈值
+        读等待URL请求数量阈值，读等待URL请求数量到达设定值即触发连接保护
 
         :param suspend_num: The suspend_num of this CircuitBreaker.
         :type suspend_num: int
@@ -223,7 +223,7 @@ class CircuitBreaker:
     def sus_block_time(self):
         """Gets the sus_block_time of this CircuitBreaker.
 
-        连接数占用熔断时间
+        读等待URL请求数量超过阈值后的熔断时间，达到数量阈值所触发的保护时间，即WAF将停止转发用户请求的时间。
 
         :return: The sus_block_time of this CircuitBreaker.
         :rtype: int
@@ -234,7 +234,7 @@ class CircuitBreaker:
     def sus_block_time(self, sus_block_time):
         """Sets the sus_block_time of this CircuitBreaker.
 
-        连接数占用熔断时间
+        读等待URL请求数量超过阈值后的熔断时间，达到数量阈值所触发的保护时间，即WAF将停止转发用户请求的时间。
 
         :param sus_block_time: The sus_block_time of this CircuitBreaker.
         :type sus_block_time: int

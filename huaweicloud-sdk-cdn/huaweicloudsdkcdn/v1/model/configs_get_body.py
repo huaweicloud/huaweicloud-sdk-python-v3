@@ -29,7 +29,8 @@ class ConfigsGetBody:
         'origin_protocol': 'str',
         'force_redirect': 'ForceRedirectConfig',
         'compress': 'Compress',
-        'cache_url_parameter_filter': 'CacheUrlParameterFilter'
+        'cache_url_parameter_filter': 'CacheUrlParameterFilter',
+        'ipv6_accelerate': 'int'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class ConfigsGetBody:
         'origin_protocol': 'origin_protocol',
         'force_redirect': 'force_redirect',
         'compress': 'compress',
-        'cache_url_parameter_filter': 'cache_url_parameter_filter'
+        'cache_url_parameter_filter': 'cache_url_parameter_filter',
+        'ipv6_accelerate': 'ipv6_accelerate'
     }
 
-    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, force_redirect=None, compress=None, cache_url_parameter_filter=None):
+    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None):
         """ConfigsGetBody
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ConfigsGetBody:
         :type compress: :class:`huaweicloudsdkcdn.v1.Compress`
         :param cache_url_parameter_filter: 
         :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v1.CacheUrlParameterFilter`
+        :param ipv6_accelerate: ipv6设置（1：打开；0：关闭）
+        :type ipv6_accelerate: int
         """
         
         
@@ -80,6 +84,7 @@ class ConfigsGetBody:
         self._force_redirect = None
         self._compress = None
         self._cache_url_parameter_filter = None
+        self._ipv6_accelerate = None
         self.discriminator = None
 
         if origin_request_header is not None:
@@ -100,6 +105,8 @@ class ConfigsGetBody:
             self.compress = compress
         if cache_url_parameter_filter is not None:
             self.cache_url_parameter_filter = cache_url_parameter_filter
+        if ipv6_accelerate is not None:
+            self.ipv6_accelerate = ipv6_accelerate
 
     @property
     def origin_request_header(self):
@@ -288,6 +295,28 @@ class ConfigsGetBody:
         :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v1.CacheUrlParameterFilter`
         """
         self._cache_url_parameter_filter = cache_url_parameter_filter
+
+    @property
+    def ipv6_accelerate(self):
+        """Gets the ipv6_accelerate of this ConfigsGetBody.
+
+        ipv6设置（1：打开；0：关闭）
+
+        :return: The ipv6_accelerate of this ConfigsGetBody.
+        :rtype: int
+        """
+        return self._ipv6_accelerate
+
+    @ipv6_accelerate.setter
+    def ipv6_accelerate(self, ipv6_accelerate):
+        """Sets the ipv6_accelerate of this ConfigsGetBody.
+
+        ipv6设置（1：打开；0：关闭）
+
+        :param ipv6_accelerate: The ipv6_accelerate of this ConfigsGetBody.
+        :type ipv6_accelerate: int
+        """
+        self._ipv6_accelerate = ipv6_accelerate
 
     def to_dict(self):
         """Returns the model properties as a dict"""

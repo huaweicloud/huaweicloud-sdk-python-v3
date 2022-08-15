@@ -35,7 +35,7 @@ class CreatePolicyRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param body: Body of the CreatePolicyRequest
         :type body: :class:`huaweicloudsdkwaf.v1.CreatePolicyRequestBody`
@@ -56,7 +56,7 @@ class CreatePolicyRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreatePolicyRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this CreatePolicyRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class CreatePolicyRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreatePolicyRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this CreatePolicyRequest.
         :type enterprise_project_id: str

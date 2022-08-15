@@ -22,33 +22,49 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
+        'name': 'str',
         'policyid': 'str',
         'addr': 'str',
         'white': 'int',
+        'ip_group': 'IpGroup',
+        'status': 'int',
+        'description': 'str',
         'timestamp': 'int'
     }
 
     attribute_map = {
         'id': 'id',
+        'name': 'name',
         'policyid': 'policyid',
         'addr': 'addr',
         'white': 'white',
+        'ip_group': 'ip_group',
+        'status': 'status',
+        'description': 'description',
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, id=None, policyid=None, addr=None, white=None, timestamp=None):
+    def __init__(self, id=None, name=None, policyid=None, addr=None, white=None, ip_group=None, status=None, description=None, timestamp=None):
         """CreateWhiteblackipRuleResponse
 
         The model defined in huaweicloud sdk
 
         :param id: 规则id
         :type id: str
+        :param name: 黑白名单规则名称
+        :type name: str
         :param policyid: 策略id
         :type policyid: str
         :param addr: 黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
         :type addr: str
         :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
         :type white: int
+        :param ip_group: 
+        :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
+        :param status: 规则状态，0：关闭，1：开启
+        :type status: int
+        :param description: 规则描述
+        :type description: str
         :param timestamp: 创建规则的时间戳,13位毫秒时间戳
         :type timestamp: int
         """
@@ -56,20 +72,32 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
         super(CreateWhiteblackipRuleResponse, self).__init__()
 
         self._id = None
+        self._name = None
         self._policyid = None
         self._addr = None
         self._white = None
+        self._ip_group = None
+        self._status = None
+        self._description = None
         self._timestamp = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
+        if name is not None:
+            self.name = name
         if policyid is not None:
             self.policyid = policyid
         if addr is not None:
             self.addr = addr
         if white is not None:
             self.white = white
+        if ip_group is not None:
+            self.ip_group = ip_group
+        if status is not None:
+            self.status = status
+        if description is not None:
+            self.description = description
         if timestamp is not None:
             self.timestamp = timestamp
 
@@ -94,6 +122,28 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
         :type id: str
         """
         self._id = id
+
+    @property
+    def name(self):
+        """Gets the name of this CreateWhiteblackipRuleResponse.
+
+        黑白名单规则名称
+
+        :return: The name of this CreateWhiteblackipRuleResponse.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this CreateWhiteblackipRuleResponse.
+
+        黑白名单规则名称
+
+        :param name: The name of this CreateWhiteblackipRuleResponse.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def policyid(self):
@@ -160,6 +210,70 @@ class CreateWhiteblackipRuleResponse(SdkResponse):
         :type white: int
         """
         self._white = white
+
+    @property
+    def ip_group(self):
+        """Gets the ip_group of this CreateWhiteblackipRuleResponse.
+
+
+        :return: The ip_group of this CreateWhiteblackipRuleResponse.
+        :rtype: :class:`huaweicloudsdkwaf.v1.IpGroup`
+        """
+        return self._ip_group
+
+    @ip_group.setter
+    def ip_group(self, ip_group):
+        """Sets the ip_group of this CreateWhiteblackipRuleResponse.
+
+
+        :param ip_group: The ip_group of this CreateWhiteblackipRuleResponse.
+        :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
+        """
+        self._ip_group = ip_group
+
+    @property
+    def status(self):
+        """Gets the status of this CreateWhiteblackipRuleResponse.
+
+        规则状态，0：关闭，1：开启
+
+        :return: The status of this CreateWhiteblackipRuleResponse.
+        :rtype: int
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this CreateWhiteblackipRuleResponse.
+
+        规则状态，0：关闭，1：开启
+
+        :param status: The status of this CreateWhiteblackipRuleResponse.
+        :type status: int
+        """
+        self._status = status
+
+    @property
+    def description(self):
+        """Gets the description of this CreateWhiteblackipRuleResponse.
+
+        规则描述
+
+        :return: The description of this CreateWhiteblackipRuleResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this CreateWhiteblackipRuleResponse.
+
+        规则描述
+
+        :param description: The description of this CreateWhiteblackipRuleResponse.
+        :type description: str
+        """
+        self._description = description
 
     @property
     def timestamp(self):

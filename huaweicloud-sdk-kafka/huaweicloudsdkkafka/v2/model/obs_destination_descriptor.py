@@ -67,7 +67,7 @@ class ObsDestinationDescriptor:
         :type secret_key: str
         :param obs_bucket_name: 存储该通道数据的OBS桶名称。 
         :type obs_bucket_name: str
-        :param obs_path: 存储在obs的路径，默认可以不填。 取值范围：英文字母、数字、下划线和斜杠，最大长度为50个字符。 默认配置为空。 
+        :param obs_path: 存储在obs的路径，默认可以不填。 取值范围：英文字母、数字、下划线、中划线和斜杠，最大长度为64个字符。 默认配置为空。 
         :type obs_path: str
         :param partition_format: 将转储文件的生成时间使用“yyyy/MM/dd/HH/mm”格式生成分区字符串，用来定义写到OBS的Object文件所在的目录层次结构。   - N/A：置空，不使用日期时间目录。   - yyyy：年   - yyyy/MM：年/月   - yyyy/MM/dd：年/月/日   - yyyy/MM/dd/HH：年/月/日/时   - yyyy/MM/dd/HH/mm：年/月/日/时/分，例如：2017/11/10/14/49，目录结构就是“2017 &gt; 11 &gt; 10 &gt; 14 &gt; 49”，“2017”表示最外层文件夹。  默认值：空 &gt; 数据转储成功后，存储的目录结构为“obs_bucket_path/file_prefix/partition_format”。默认时间是GMT+8 时间 
         :type partition_format: str
@@ -266,7 +266,7 @@ class ObsDestinationDescriptor:
     def obs_path(self):
         """Gets the obs_path of this ObsDestinationDescriptor.
 
-        存储在obs的路径，默认可以不填。 取值范围：英文字母、数字、下划线和斜杠，最大长度为50个字符。 默认配置为空。 
+        存储在obs的路径，默认可以不填。 取值范围：英文字母、数字、下划线、中划线和斜杠，最大长度为64个字符。 默认配置为空。 
 
         :return: The obs_path of this ObsDestinationDescriptor.
         :rtype: str
@@ -277,7 +277,7 @@ class ObsDestinationDescriptor:
     def obs_path(self, obs_path):
         """Sets the obs_path of this ObsDestinationDescriptor.
 
-        存储在obs的路径，默认可以不填。 取值范围：英文字母、数字、下划线和斜杠，最大长度为50个字符。 默认配置为空。 
+        存储在obs的路径，默认可以不填。 取值范围：英文字母、数字、下划线、中划线和斜杠，最大长度为64个字符。 默认配置为空。 
 
         :param obs_path: The obs_path of this ObsDestinationDescriptor.
         :type obs_path: str

@@ -22,7 +22,7 @@ class CreateRestoreInstanceRequest:
 
     openapi_types = {
         'x_language': 'str',
-        'body': 'InstanceRequest'
+        'body': 'CreateRestoreInstanceRequestBody'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class CreateRestoreInstanceRequest:
         :param x_language: 语言
         :type x_language: str
         :param body: Body of the CreateRestoreInstanceRequest
-        :type body: :class:`huaweicloudsdkrds.v3.InstanceRequest`
+        :type body: :class:`huaweicloudsdkrds.v3.CreateRestoreInstanceRequestBody`
         """
         
         
@@ -80,7 +80,7 @@ class CreateRestoreInstanceRequest:
 
 
         :return: The body of this CreateRestoreInstanceRequest.
-        :rtype: :class:`huaweicloudsdkrds.v3.InstanceRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.CreateRestoreInstanceRequestBody`
         """
         return self._body
 
@@ -90,7 +90,7 @@ class CreateRestoreInstanceRequest:
 
 
         :param body: The body of this CreateRestoreInstanceRequest.
-        :type body: :class:`huaweicloudsdkrds.v3.InstanceRequest`
+        :type body: :class:`huaweicloudsdkrds.v3.CreateRestoreInstanceRequestBody`
         """
         self._body = body
 

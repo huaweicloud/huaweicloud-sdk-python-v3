@@ -24,17 +24,19 @@ class UpdateWhiteBlackIpRuleRequestBody:
         'name': 'str',
         'addr': 'str',
         'description': 'str',
-        'white': 'int'
+        'white': 'int',
+        'ip_group_id': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'addr': 'addr',
         'description': 'description',
-        'white': 'white'
+        'white': 'white',
+        'ip_group_id': 'ip_group_id'
     }
 
-    def __init__(self, name=None, addr=None, description=None, white=None):
+    def __init__(self, name=None, addr=None, description=None, white=None, ip_group_id=None):
         """UpdateWhiteBlackIpRuleRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class UpdateWhiteBlackIpRuleRequestBody:
         :type description: str
         :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
         :type white: int
+        :param ip_group_id: 创建的Ip地址组id，该参数与addr参数使用一个即可；Ip地址组可在控制台中对象管理-&gt;地址组管理中添加。
+        :type ip_group_id: str
         """
         
         
@@ -55,13 +59,17 @@ class UpdateWhiteBlackIpRuleRequestBody:
         self._addr = None
         self._description = None
         self._white = None
+        self._ip_group_id = None
         self.discriminator = None
 
         self.name = name
-        self.addr = addr
+        if addr is not None:
+            self.addr = addr
         if description is not None:
             self.description = description
         self.white = white
+        if ip_group_id is not None:
+            self.ip_group_id = ip_group_id
 
     @property
     def name(self):
@@ -150,6 +158,28 @@ class UpdateWhiteBlackIpRuleRequestBody:
         :type white: int
         """
         self._white = white
+
+    @property
+    def ip_group_id(self):
+        """Gets the ip_group_id of this UpdateWhiteBlackIpRuleRequestBody.
+
+        创建的Ip地址组id，该参数与addr参数使用一个即可；Ip地址组可在控制台中对象管理->地址组管理中添加。
+
+        :return: The ip_group_id of this UpdateWhiteBlackIpRuleRequestBody.
+        :rtype: str
+        """
+        return self._ip_group_id
+
+    @ip_group_id.setter
+    def ip_group_id(self, ip_group_id):
+        """Sets the ip_group_id of this UpdateWhiteBlackIpRuleRequestBody.
+
+        创建的Ip地址组id，该参数与addr参数使用一个即可；Ip地址组可在控制台中对象管理->地址组管理中添加。
+
+        :param ip_group_id: The ip_group_id of this UpdateWhiteBlackIpRuleRequestBody.
+        :type ip_group_id: str
+        """
+        self._ip_group_id = ip_group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

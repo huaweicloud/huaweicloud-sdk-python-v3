@@ -23,18 +23,18 @@ class ShowPartitionEndMessageResponse(SdkResponse):
     openapi_types = {
         'topic': 'str',
         'partition': 'int',
-        'message_offset': 'int',
+        'offset': 'int',
         'timestamp': 'int'
     }
 
     attribute_map = {
         'topic': 'topic',
         'partition': 'partition',
-        'message_offset': 'message_offset',
+        'offset': 'offset',
         'timestamp': 'timestamp'
     }
 
-    def __init__(self, topic=None, partition=None, message_offset=None, timestamp=None):
+    def __init__(self, topic=None, partition=None, offset=None, timestamp=None):
         """ShowPartitionEndMessageResponse
 
         The model defined in huaweicloud sdk
@@ -43,8 +43,8 @@ class ShowPartitionEndMessageResponse(SdkResponse):
         :type topic: str
         :param partition: 分区编号。
         :type partition: int
-        :param message_offset: 最新消息位置。
-        :type message_offset: int
+        :param offset: 最新消息位置。
+        :type offset: int
         :param timestamp: 生产消息的时间。 格式为Unix时间戳。单位为毫秒。
         :type timestamp: int
         """
@@ -53,7 +53,7 @@ class ShowPartitionEndMessageResponse(SdkResponse):
 
         self._topic = None
         self._partition = None
-        self._message_offset = None
+        self._offset = None
         self._timestamp = None
         self.discriminator = None
 
@@ -61,8 +61,8 @@ class ShowPartitionEndMessageResponse(SdkResponse):
             self.topic = topic
         if partition is not None:
             self.partition = partition
-        if message_offset is not None:
-            self.message_offset = message_offset
+        if offset is not None:
+            self.offset = offset
         if timestamp is not None:
             self.timestamp = timestamp
 
@@ -111,26 +111,26 @@ class ShowPartitionEndMessageResponse(SdkResponse):
         self._partition = partition
 
     @property
-    def message_offset(self):
-        """Gets the message_offset of this ShowPartitionEndMessageResponse.
+    def offset(self):
+        """Gets the offset of this ShowPartitionEndMessageResponse.
 
         最新消息位置。
 
-        :return: The message_offset of this ShowPartitionEndMessageResponse.
+        :return: The offset of this ShowPartitionEndMessageResponse.
         :rtype: int
         """
-        return self._message_offset
+        return self._offset
 
-    @message_offset.setter
-    def message_offset(self, message_offset):
-        """Sets the message_offset of this ShowPartitionEndMessageResponse.
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ShowPartitionEndMessageResponse.
 
         最新消息位置。
 
-        :param message_offset: The message_offset of this ShowPartitionEndMessageResponse.
-        :type message_offset: int
+        :param offset: The offset of this ShowPartitionEndMessageResponse.
+        :type offset: int
         """
-        self._message_offset = message_offset
+        self._offset = offset
 
     @property
     def timestamp(self):

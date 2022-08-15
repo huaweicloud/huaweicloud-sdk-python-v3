@@ -35,7 +35,7 @@ class QuotaReclaim:
 
         The model defined in huaweicloud sdk
 
-        :param quota_id: 被回收的精英服务商的代金券额度ID。
+        :param quota_id: 被回收的云经销商的代金券额度ID。
         :type quota_id: str
         :param quota_balance: 被回收额度后的代金券额度余额。单位：元。
         :type quota_balance: float
@@ -56,7 +56,7 @@ class QuotaReclaim:
     def quota_id(self):
         """Gets the quota_id of this QuotaReclaim.
 
-        被回收的精英服务商的代金券额度ID。
+        被回收的云经销商的代金券额度ID。
 
         :return: The quota_id of this QuotaReclaim.
         :rtype: str
@@ -67,7 +67,7 @@ class QuotaReclaim:
     def quota_id(self, quota_id):
         """Sets the quota_id of this QuotaReclaim.
 
-        被回收的精英服务商的代金券额度ID。
+        被回收的云经销商的代金券额度ID。
 
         :param quota_id: The quota_id of this QuotaReclaim.
         :type quota_id: str

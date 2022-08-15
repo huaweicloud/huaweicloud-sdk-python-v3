@@ -39,7 +39,7 @@ class CouponMaxUseQuantity:
 
         :param coupon_type: 优惠券类型。 1：代金券2：折扣券3：产品券4：现金券
         :type coupon_type: int
-        :param coupon_group: 优惠券分组。 1：云市场发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
+        :param coupon_group: 优惠券分组。 1：云商店发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
         :type coupon_group: int
         :param use_quantity_value: 优惠券使用数量。
         :type use_quantity_value: int
@@ -85,7 +85,7 @@ class CouponMaxUseQuantity:
     def coupon_group(self):
         """Gets the coupon_group of this CouponMaxUseQuantity.
 
-        优惠券分组。 1：云市场发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
+        优惠券分组。 1：云商店发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
 
         :return: The coupon_group of this CouponMaxUseQuantity.
         :rtype: int
@@ -96,7 +96,7 @@ class CouponMaxUseQuantity:
     def coupon_group(self, coupon_group):
         """Sets the coupon_group of this CouponMaxUseQuantity.
 
-        优惠券分组。 1：云市场发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
+        优惠券分组。 1：云商店发放的券2：华为云券-1024-专用代金券3：华为云券-使用限制-抵扣硬件的券0：华为云服务券（排除上述取值之外的券）
 
         :param coupon_group: The coupon_group of this CouponMaxUseQuantity.
         :type coupon_group: int

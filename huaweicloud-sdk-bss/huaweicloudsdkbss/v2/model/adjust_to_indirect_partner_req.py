@@ -35,9 +35,9 @@ class AdjustToIndirectPartnerReq:
 
         The model defined in huaweicloud sdk
 
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
+        :param indirect_partner_id: 云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
         :type indirect_partner_id: str
-        :param amount: 华为云伙伴能力中心向精英服务商拨款的金额。 单位：元。取值大于0且精确到小数点后2位。
+        :param amount: 华为云总经销商向云经销商拨款的金额。 单位：元。取值大于0且精确到小数点后2位。
         :type amount: float
         """
         
@@ -54,7 +54,7 @@ class AdjustToIndirectPartnerReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this AdjustToIndirectPartnerReq.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
 
         :return: The indirect_partner_id of this AdjustToIndirectPartnerReq.
         :rtype: str
@@ -65,7 +65,7 @@ class AdjustToIndirectPartnerReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this AdjustToIndirectPartnerReq.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
 
         :param indirect_partner_id: The indirect_partner_id of this AdjustToIndirectPartnerReq.
         :type indirect_partner_id: str
@@ -76,7 +76,7 @@ class AdjustToIndirectPartnerReq:
     def amount(self):
         """Gets the amount of this AdjustToIndirectPartnerReq.
 
-        华为云伙伴能力中心向精英服务商拨款的金额。 单位：元。取值大于0且精确到小数点后2位。
+        华为云总经销商向云经销商拨款的金额。 单位：元。取值大于0且精确到小数点后2位。
 
         :return: The amount of this AdjustToIndirectPartnerReq.
         :rtype: float
@@ -87,7 +87,7 @@ class AdjustToIndirectPartnerReq:
     def amount(self, amount):
         """Sets the amount of this AdjustToIndirectPartnerReq.
 
-        华为云伙伴能力中心向精英服务商拨款的金额。 单位：元。取值大于0且精确到小数点后2位。
+        华为云总经销商向云经销商拨款的金额。 单位：元。取值大于0且精确到小数点后2位。
 
         :param amount: The amount of this AdjustToIndirectPartnerReq.
         :type amount: float

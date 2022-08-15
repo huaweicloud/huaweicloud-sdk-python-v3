@@ -35,9 +35,9 @@ class ListHostRouteResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 数量
+        :param total: 路由线路数量
         :type total: int
-        :param items: 路由信息body
+        :param items: 单个路由线路详细信息
         :type items: list[:class:`huaweicloudsdkwaf.v1.RouteBody`]
         """
         
@@ -56,7 +56,7 @@ class ListHostRouteResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListHostRouteResponse.
 
-        数量
+        路由线路数量
 
         :return: The total of this ListHostRouteResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class ListHostRouteResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListHostRouteResponse.
 
-        数量
+        路由线路数量
 
         :param total: The total of this ListHostRouteResponse.
         :type total: int
@@ -78,7 +78,7 @@ class ListHostRouteResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListHostRouteResponse.
 
-        路由信息body
+        单个路由线路详细信息
 
         :return: The items of this ListHostRouteResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.RouteBody`]
@@ -89,7 +89,7 @@ class ListHostRouteResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListHostRouteResponse.
 
-        路由信息body
+        单个路由线路详细信息
 
         :param items: The items of this ListHostRouteResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.RouteBody`]

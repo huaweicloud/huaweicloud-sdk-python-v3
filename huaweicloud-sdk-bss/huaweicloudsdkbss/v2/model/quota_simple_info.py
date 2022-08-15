@@ -35,9 +35,9 @@ class QuotaSimpleInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 精英服务商ID。
+        :param id: 云经销商ID。
         :type id: str
-        :param quota_id: 分配给精英服务商的代金券额度ID。
+        :param quota_id: 分配给云经销商的代金券额度ID。
         :type quota_id: str
         """
         
@@ -54,7 +54,7 @@ class QuotaSimpleInfo:
     def id(self):
         """Gets the id of this QuotaSimpleInfo.
 
-        精英服务商ID。
+        云经销商ID。
 
         :return: The id of this QuotaSimpleInfo.
         :rtype: str
@@ -65,7 +65,7 @@ class QuotaSimpleInfo:
     def id(self, id):
         """Sets the id of this QuotaSimpleInfo.
 
-        精英服务商ID。
+        云经销商ID。
 
         :param id: The id of this QuotaSimpleInfo.
         :type id: str
@@ -76,7 +76,7 @@ class QuotaSimpleInfo:
     def quota_id(self):
         """Gets the quota_id of this QuotaSimpleInfo.
 
-        分配给精英服务商的代金券额度ID。
+        分配给云经销商的代金券额度ID。
 
         :return: The quota_id of this QuotaSimpleInfo.
         :rtype: str
@@ -87,7 +87,7 @@ class QuotaSimpleInfo:
     def quota_id(self, quota_id):
         """Sets the quota_id of this QuotaSimpleInfo.
 
-        分配给精英服务商的代金券额度ID。
+        分配给云经销商的代金券额度ID。
 
         :param quota_id: The quota_id of this QuotaSimpleInfo.
         :type quota_id: str

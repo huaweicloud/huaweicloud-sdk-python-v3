@@ -41,11 +41,11 @@ class ListIssuedCouponQuotasRequest:
 
         The model defined in huaweicloud sdk
 
-        :param quota_id: 精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。
+        :param quota_id: 云经销商的代金券额度ID。获取方法请参见查询优惠券额度。此参数不携带或携带值为空时，不作为筛选条件。
         :type quota_id: str
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
+        :param indirect_partner_id: 云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商伙伴的代金券额度，必须携带该字段。除此之外，此参数不做处理。
         :type indirect_partner_id: str
-        :param parent_quota_id: 父额度ID，即华为云伙伴能力中心用于发放给精英服务商代金券额度的额度ID。
+        :param parent_quota_id: 父额度ID，即华为云总经销商用于发放给云经销商代金券额度的额度ID。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
         :type parent_quota_id: str
         :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
@@ -77,7 +77,7 @@ class ListIssuedCouponQuotasRequest:
     def quota_id(self):
         """Gets the quota_id of this ListIssuedCouponQuotasRequest.
 
-        精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。
+        云经销商的代金券额度ID。获取方法请参见查询优惠券额度。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The quota_id of this ListIssuedCouponQuotasRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class ListIssuedCouponQuotasRequest:
     def quota_id(self, quota_id):
         """Sets the quota_id of this ListIssuedCouponQuotasRequest.
 
-        精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。
+        云经销商的代金券额度ID。获取方法请参见查询优惠券额度。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param quota_id: The quota_id of this ListIssuedCouponQuotasRequest.
         :type quota_id: str
@@ -99,7 +99,7 @@ class ListIssuedCouponQuotasRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListIssuedCouponQuotasRequest.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商伙伴的代金券额度，必须携带该字段。除此之外，此参数不做处理。
 
         :return: The indirect_partner_id of this ListIssuedCouponQuotasRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class ListIssuedCouponQuotasRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListIssuedCouponQuotasRequest.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商伙伴的代金券额度，必须携带该字段。除此之外，此参数不做处理。
 
         :param indirect_partner_id: The indirect_partner_id of this ListIssuedCouponQuotasRequest.
         :type indirect_partner_id: str
@@ -121,7 +121,7 @@ class ListIssuedCouponQuotasRequest:
     def parent_quota_id(self):
         """Gets the parent_quota_id of this ListIssuedCouponQuotasRequest.
 
-        父额度ID，即华为云伙伴能力中心用于发放给精英服务商代金券额度的额度ID。
+        父额度ID，即华为云总经销商用于发放给云经销商代金券额度的额度ID。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
 
         :return: The parent_quota_id of this ListIssuedCouponQuotasRequest.
         :rtype: str
@@ -132,7 +132,7 @@ class ListIssuedCouponQuotasRequest:
     def parent_quota_id(self, parent_quota_id):
         """Sets the parent_quota_id of this ListIssuedCouponQuotasRequest.
 
-        父额度ID，即华为云伙伴能力中心用于发放给精英服务商代金券额度的额度ID。
+        父额度ID，即华为云总经销商用于发放给云经销商代金券额度的额度ID。此参数不携带时，不作为筛选条件；携带值为空或携带值为空串时，作为筛选条件。
 
         :param parent_quota_id: The parent_quota_id of this ListIssuedCouponQuotasRequest.
         :type parent_quota_id: str

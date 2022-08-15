@@ -53,7 +53,7 @@ class ShowRepoDomainsResponse:
 
         The model defined in huaweicloud sdk
 
-        :param namespace: 命名空间
+        :param namespace: 组织
         :type namespace: str
         :param repository: 镜像仓库
         :type repository: str
@@ -108,7 +108,7 @@ class ShowRepoDomainsResponse:
     def namespace(self):
         """Gets the namespace of this ShowRepoDomainsResponse.
 
-        命名空间
+        组织
 
         :return: The namespace of this ShowRepoDomainsResponse.
         :rtype: str
@@ -119,7 +119,7 @@ class ShowRepoDomainsResponse:
     def namespace(self, namespace):
         """Sets the namespace of this ShowRepoDomainsResponse.
 
-        命名空间
+        组织
 
         :param namespace: The namespace of this ShowRepoDomainsResponse.
         :type namespace: str

@@ -47,7 +47,7 @@ class RenewalResourcesReq:
         :type period_type: int
         :param period_num: 周期数目： 如果是月，目前支持1-11如果是年，目前支持1-3
         :type period_num: int
-        :param expire_policy: 到期策略： 1：转按需2：自动退订3：自动续订
+        :param expire_policy: 到期策略： 0：进入宽限期/保留期1：转按需2：自动退订3：自动续订
         :type expire_policy: int
         :param is_auto_pay: 是否自动支付。 0：否1：是 不填写的话，默认值是0，不自动支付。
         :type is_auto_pay: int
@@ -139,7 +139,7 @@ class RenewalResourcesReq:
     def expire_policy(self):
         """Gets the expire_policy of this RenewalResourcesReq.
 
-        到期策略： 1：转按需2：自动退订3：自动续订
+        到期策略： 0：进入宽限期/保留期1：转按需2：自动退订3：自动续订
 
         :return: The expire_policy of this RenewalResourcesReq.
         :rtype: int
@@ -150,7 +150,7 @@ class RenewalResourcesReq:
     def expire_policy(self, expire_policy):
         """Sets the expire_policy of this RenewalResourcesReq.
 
-        到期策略： 1：转按需2：自动退订3：自动续订
+        到期策略： 0：进入宽限期/保留期1：转按需2：自动退订3：自动续订
 
         :param expire_policy: The expire_policy of this RenewalResourcesReq.
         :type expire_policy: int

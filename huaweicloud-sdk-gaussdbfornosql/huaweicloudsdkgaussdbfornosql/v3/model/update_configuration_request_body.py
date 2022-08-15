@@ -23,7 +23,7 @@ class UpdateConfigurationRequestBody:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'values': 'UpdateConfigurationValuesOption'
+        'values': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -41,8 +41,8 @@ class UpdateConfigurationRequestBody:
         :type name: str
         :param description: 参数模板描述。最长256个字符，不支持!&lt;&gt;&#x3D;&amp;\&quot;&#39;特殊字符。默认为空。
         :type description: str
-        :param values: 
-        :type values: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateConfigurationValuesOption`
+        :param values: 参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。
+        :type values: dict(str, str)
         """
         
         
@@ -107,9 +107,10 @@ class UpdateConfigurationRequestBody:
     def values(self):
         """Gets the values of this UpdateConfigurationRequestBody.
 
+        参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。
 
         :return: The values of this UpdateConfigurationRequestBody.
-        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateConfigurationValuesOption`
+        :rtype: dict(str, str)
         """
         return self._values
 
@@ -117,9 +118,10 @@ class UpdateConfigurationRequestBody:
     def values(self, values):
         """Sets the values of this UpdateConfigurationRequestBody.
 
+        参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。
 
         :param values: The values of this UpdateConfigurationRequestBody.
-        :type values: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateConfigurationValuesOption`
+        :type values: dict(str, str)
         """
         self._values = values
 

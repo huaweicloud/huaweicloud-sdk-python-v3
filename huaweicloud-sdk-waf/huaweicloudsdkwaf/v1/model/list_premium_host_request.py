@@ -43,9 +43,9 @@ class ListPremiumHostRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
-        :param page: 分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
+        :param page: 分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
         :type page: str
         :param pagesize: 分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
         :type pagesize: str
@@ -84,7 +84,7 @@ class ListPremiumHostRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPremiumHostRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ListPremiumHostRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class ListPremiumHostRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPremiumHostRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListPremiumHostRequest.
         :type enterprise_project_id: str
@@ -106,7 +106,7 @@ class ListPremiumHostRequest:
     def page(self):
         """Gets the page of this ListPremiumHostRequest.
 
-        分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
+        分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
 
         :return: The page of this ListPremiumHostRequest.
         :rtype: str
@@ -117,7 +117,7 @@ class ListPremiumHostRequest:
     def page(self, page):
         """Sets the page of this ListPremiumHostRequest.
 
-        分页查询时，返回第几页数据。范围0-100000，默认值为1，表示返回第1页数据。
+        分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
 
         :param page: The page of this ListPremiumHostRequest.
         :type page: str

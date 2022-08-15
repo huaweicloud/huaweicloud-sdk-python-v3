@@ -1,3 +1,265 @@
+# 3.0.103 2022-08-11
+
+### HuaweiCloud SDK APM
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListOpenRegion`
+    - `ListSupportedRegion`
+    - `ShowTopologyTree`
+    - `ShowMonitorItemViewConfig`
+    - `ListEnvTags`
+    - `ShowTopology`
+    - `ShowEventDetail`
+    - `ShowSpanSearch`
+    - `ShowTraceEvents`
+    - `ShowTrend`
+    - `ShowSumTable`
+    - `ShowRawTable`
+    - `ShowClobDetail`
+    - `ListEnvInstances`
+    - `ShowEnvMonitorItems`
+    - `ListApps`
+    - `ListAppEnvs`
+    - `ShowAkSks`
+    - `CreateAkSk`
+    - `DeleteAkSk`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 支持接口`ListCosts`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 支持接口`ShowUrlTaskInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowDomainFullConfig`新增响应参数 `ipv6_accelerate`
+  - 接口`UpdateDomainFullConfig`新增请求参数 `ipv6_accelerate`
+
+### HuaweiCloud SDK CSMS
+
+- _新增特性_
+  - 支持接口`UploadSecretBlob`、`DownloadSecretBlob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListGaussMySqlDatabaseUser`
+    - `CreateGaussMySqlDatabaseUser`
+    - `DeleteGaussMySqlDatabaseUser`
+    - `ResetGaussMySqlDatabasePassword`
+    - `AddDatabasePermission`
+    - `DeleteDatabasePermission`
+    - `ListGaussMySqlDatabaseCharsets`
+    - `ListGaussMySqlDatabase`
+    - `CreateGaussMySqlDatabase`
+    - `DeleteGaussMySqlDatabase`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GES
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListGraphs`新增响应参数 `enableHyG`、`trafficIpList`、`cryptAlgorithm`、`enableHttps`、`tags`
+  - 接口`ShowGraph`新增响应参数 `enableHyG`、`trafficIpList`、`cryptAlgorithm`、`enableHttps`、`tags`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreatePostPaidInstance`:
+    - 新增请求参数 `broker_num`
+    - 请求参数`specification`新增枚举值`c6.2u4g.cluster`、`c6.4u8g.cluster`、`c6.8u16g.cluster`、`c6.12u24g.cluster`、`c6.16u32g.cluster`
+    - 请求参数`partition_num`新增枚举值`250`、`500`、`1000`、`1500`、`2000`
+    - 请求参数`storage_spec_code`新增枚举值`dms.physical.storage.high.v2`、`dms.physical.storage.ultra.v2`
+    - 请求参数`specification`改为非必填
+  - 接口`ListInstances`新增响应参数 `description`、`access_user`、`ssl_two_way_enable`、`cert_replaced`、`public_boundwidth`、`agent_enable`、`public_access_enabled`、`node_num`、`new_spec_billing_enable`、`broker_num`
+  - 接口`ShowInstance`新增响应参数 `description`、`access_user`、`ssl_two_way_enable`、`cert_replaced`、`public_boundwidth`、`agent_enable`、`public_access_enabled`、`node_num`、`new_spec_billing_enable`、`broker_num`
+  - 接口`ShowInstanceExtendProductInfo`请求参数`engine`改为非必填
+  - 接口`ShowPartitionBeginningMessage`:
+    - 新增响应参数 `offset`
+    - 移除响应参数 `message_offset`
+  - 接口`ShowPartitionEndMessage`:
+    - 新增响应参数 `offset`
+    - 移除响应参数 `message_offset`
+  - 接口`ListEngineProducts`新增响应参数 `product_alias`
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 支持接口`RunCreateAudioModerationJob`、`RunQueryAudioModerationJob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RunImageModeration`移除请求参数 `ad_glossaries`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 支持接口`RecognizeMacaoIdCard`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateRestoreInstance`移除请求参数 `count`
+
+### HuaweiCloud SDK SWR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListNamespaces`新增请求参数 `filter`
+  - 接口`ListReposDetails`新增请求参数 `limit`、`offset`、`order_column`、`order_type`
+  - 接口`ListRepositoryTags`新增请求参数 `filter`
+  - 接口`ListSharedReposDetails`新增请求参数 `namespace`、`name`、`center`、`limit`、`offset`、`order_column`、`order_type`
+  - 接口`ListRetentionHistories`:
+    - 新增请求参数 `filter`
+    - 移除请求参数 `offset`、`limit`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DeleteIgnoreRule`:
+    - 新增响应参数 `advanced`
+    - 移除响应参数 `rule`
+  - 接口`CreateIgnoreRule`:
+    - 新增请求参数 `advanced`
+    - 新增响应参数 `advanced`
+  - 接口`ListIgnoreRule`新增响应参数 `advanced`
+  - 接口`ListStatistics`:
+    - 移除响应参数 `host`
+    - 请求参数`instances`类型调整 `string` -> `array`
+    - 请求参数`hosts`类型调整 `string` -> `array`
+  - 接口`ListQpsTimeline`:
+    - 请求参数`instances`类型调整 `string` -> `array`
+    - 请求参数`hosts`类型调整 `string` -> `array`
+  - 接口`ListBandwidthTimeline`请求参数`instances`类型调整 `string` -> `array`
+  - 接口`ListTopAbnormal`:
+    - 请求参数`instances`类型调整 `string` -> `array`
+    - 请求参数`hosts`类型调整 `string` -> `array`
+  - 接口`ListOverviewsClassification`:
+    - 请求参数`instances`类型调整 `string` -> `array`
+    - 请求参数`hosts`类型调整 `string` -> `array`
+  - 接口`ShowConsoleConfig`新增响应参数 `geoip_enable`、`load_balance_enable`、`ipv6_protection_enable`、`policy_sharing_enable`、`ip_group`、`robot_action_enable`、`http2_enable`、`timeout_config_enable`
+  - 接口`CreateValueList`新增响应参数 `producer`
+  - 接口`ListValueList`响应参数`type`类型调整 `string` -> `enum`
+  - 接口`UpdateValueList`移除响应参数 `timestamp`
+  - 接口`ListEvent`新增响应参数 `payload_location`
+  - 接口`CreateHost`:
+    - 新增请求参数 `web_tag`、`exclusive_ip`、`paid_type`、`lb_algorithm`、`weight`
+    - 新增响应参数 `lb_algorithm`、`web_tag`、`block_page`、`extend`、`weight`、`ipv6`
+  - 接口`ListHost`:
+    - 新增响应参数 `region`、`web_tag`、`ipv6`
+    - 移除响应参数 `timeout_config`
+  - 接口`ListHostRoute`响应参数`back_protocol`类型调整 `string` -> `enum`
+  - 接口`DeleteHost`新增响应参数 `web_tag`、`ipv6`
+  - 接口`UpdateHost`:
+    - 新增请求参数 `web_tag`、`exclusive_ip`、`paid_type`、`circuit_breaker`
+    - 新增响应参数 `projectid`、`extend`、`traffic_mark`、`circuit_breaker`、`access_progress`、`weight`、`ipv6`
+    - 移除请求参数 `lb_algorithm`
+    - 移除响应参数 `ipv6_enable`
+    - 响应参数`protocol`类型调整 `enum` -> `string`
+    - 响应参数`web_tag`类型调整 `boolean` -> `string`
+    - 响应参数`lb_algorithm`类型调整 `string` -> `enum`
+  - 接口`ShowHost`新增响应参数 `domainid`、`projectid`、`enterprise_project_id`、`locked`、`tls`、`cipher`、`block_page`、`extend`、`traffic_mark`、`circuit_breaker`、`lb_algorithm`、`web_tag`、`flag`、`description`、`http2_enable`、`access_progress`、`weight`
+  - 接口`CreatePolicy`新增响应参数 `robot_action`、`modulex_options`
+  - 接口`ListPolicy`新增响应参数 `robot_action`、`modulex_options`、`hosts`
+  - 接口`DeletePolicy`新增响应参数 `robot_action`、`modulex_options`
+  - 接口`UpdatePolicyProtectHost`新增响应参数 `robot_action`、`modulex_options`、`hosts`
+  - 接口`UpdatePolicy`:
+    - 新增请求参数 `level`、`full_detection`、`robot_action`、`modulex_options`、`hosts`、`bind_host`、`extend`
+    - 新增响应参数 `robot_action`、`modulex_options`
+  - 接口`ShowPolicy`新增响应参数 `robot_action`、`modulex_options`、`hosts`
+  - 接口`UpdatePolicyRuleStatus`请求参数`ruletype`新增枚举值`custom`、`ignore`
+  - 接口`CreateWhiteblackipRule`:
+    - 新增请求参数 `ip_group_id`
+    - 新增响应参数 `name`、`ip_group`、`status`、`description`
+    - 请求参数`addr`改为非必填
+  - 接口`ListWhiteblackipRule`新增响应参数 `name`、`ip_group`
+  - 接口`DeleteWhiteBlackIpRule`新增响应参数 `ip_group`
+  - 接口`UpdateWhiteblackipRule`:
+    - 新增请求参数 `ip_group_id`
+    - 新增响应参数 `name`、`ip_group`
+    - 请求参数`addr`改为非必填
+  - 接口`CreatePrivacyRule`新增响应参数 `timestamp`、`status`、`description`
+  - 接口`ListPrivacyRule`新增响应参数 `description`
+  - 接口`UpdatePrivacyRule`新增响应参数 `timestamp`、`status`、`description`
+  - 接口`CreateGeoipRule`:
+    - 新增请求参数 `name`、`status`
+    - 新增响应参数 `name`、`status`
+  - 接口`ListGeoipRule`新增响应参数 `name`、`status`
+  - 接口`DeleteGeoipRule`新增响应参数 `name`、`status`
+  - 接口`UpdateGeoipRule`:
+    - 新增请求参数 `name`
+    - 新增响应参数 `name`
+  - 接口`ListCertificates`移除响应参数 `content`、`key`
+  - 接口`ListCompositeHosts`:
+    - 新增响应参数 `hostid`、`web_tag`、`access_progress`、`premium_waf_instances`、`description`、`exclusive_ip`、`region`
+    - 移除响应参数 `pci_dss`、`pci_3ds`、`cname`、`is_dual_az`、`ipv6`
+  - 接口`ShowCompositeHost`:
+    - 新增响应参数 `hostid`、`web_tag`、`access_progress`、`premium_waf_instances`、`description`、`exclusive_ip`、`region`
+    - 移除响应参数 `pci_dss`、`pci_3ds`、`cname`、`is_dual_az`、`ipv6`
+  - 接口`CreatePremiumHost`:
+    - 新增请求参数 `block_page`、`description`、`weight`
+    - 新增响应参数 `server`、`proxy`、`locked`、`timestamp`、`tls`、`cipher`、`extend`、`flag`、`description`、`enterprise_project_id`、`protect_status`、`access_status`、`block_page`
+    - 响应参数`protocol`类型调整 `string` -> `enum`
+  - 接口`ListPremiumHost`:
+    - 新增响应参数 `extend`、`region`、`description`、`web_tag`、`hostid`
+    - 移除响应参数 `mode`、`pool_ids`
+  - 接口`DeletePremiumHost`:
+    - 新增响应参数 `extend`、`description`、`web_tag`、`host_id`
+    - 移除响应参数 `mode`、`pool_ids`
+  - 接口`UpdatePremiumHost`:
+    - 新增响应参数 `description`、`projectid`、`enterprise_project_id`、`web_tag`、`lb_algorithm`、`access_progress`、`weight`
+    - 移除请求参数 `flag`、`extend`
+    - 移除响应参数 `mode`、`pool_ids`、`project_id`、`access_code`
+  - 接口`ShowPremiumHost`:
+    - 新增响应参数 `description`、`projectid`、`enterprise_project_id`、`web_tag`、`access_progress`、`weight`
+    - 移除响应参数 `mode`、`pool_ids`、`project_id`、`access_code`
+  - 接口`UpdateCertificate`:
+    - 新增请求参数 `content`、`key`
+    - 请求参数`name`改为必填
+
 # 3.0.102 2022-08-08
 
 ### HuaweiCloud SDK GaussDB

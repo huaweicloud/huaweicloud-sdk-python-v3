@@ -73,7 +73,7 @@ class CustomerOrderV3:
         :type service_type_name: str
         :param source_type: 客户订单来源类型： 1：客户2：代理3：合同4：分销商
         :type source_type: int
-        :param status: 订单状态。 1：待审核3：处理中4：已取消5：已完成6：待付款9：待确认
+        :param status: 订单状态。 1：待审核2：待退款3：处理中4：已取消5：已完成6：待付款9：待确认10：待发货11：待收货12：待上门取货13：换新中
         :type status: int
         :param order_type: 订单类型。 1：开通2：续订3：变更4：退订11：按需转包年/包月13：试用14：转商用15：费用调整
         :type order_type: int
@@ -264,7 +264,7 @@ class CustomerOrderV3:
     def status(self):
         """Gets the status of this CustomerOrderV3.
 
-        订单状态。 1：待审核3：处理中4：已取消5：已完成6：待付款9：待确认
+        订单状态。 1：待审核2：待退款3：处理中4：已取消5：已完成6：待付款9：待确认10：待发货11：待收货12：待上门取货13：换新中
 
         :return: The status of this CustomerOrderV3.
         :rtype: int
@@ -275,7 +275,7 @@ class CustomerOrderV3:
     def status(self, status):
         """Sets the status of this CustomerOrderV3.
 
-        订单状态。 1：待审核3：处理中4：已取消5：已完成6：待付款9：待确认
+        订单状态。 1：待审核2：待退款3：处理中4：已取消5：已完成6：待付款9：待确认10：待发货11：待收货12：待上门取货13：换新中
 
         :param status: The status of this CustomerOrderV3.
         :type status: int

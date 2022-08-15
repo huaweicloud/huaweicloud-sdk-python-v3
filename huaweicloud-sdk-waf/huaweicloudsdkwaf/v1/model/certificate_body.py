@@ -23,8 +23,6 @@ class CertificateBody:
     openapi_types = {
         'id': 'str',
         'name': 'str',
-        'content': 'str',
-        'key': 'str',
         'expire_time': 'int',
         'exp_status': 'int',
         'timestamp': 'int',
@@ -34,15 +32,13 @@ class CertificateBody:
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'content': 'content',
-        'key': 'key',
         'expire_time': 'expire_time',
         'exp_status': 'exp_status',
         'timestamp': 'timestamp',
         'bind_host': 'bind_host'
     }
 
-    def __init__(self, id=None, name=None, content=None, key=None, expire_time=None, exp_status=None, timestamp=None, bind_host=None):
+    def __init__(self, id=None, name=None, expire_time=None, exp_status=None, timestamp=None, bind_host=None):
         """CertificateBody
 
         The model defined in huaweicloud sdk
@@ -51,10 +47,6 @@ class CertificateBody:
         :type id: str
         :param name: 证书名
         :type name: str
-        :param content: 证书文件，PEM编码
-        :type content: str
-        :param key: 证书私钥，PEM编码
-        :type key: str
         :param expire_time: 证书过期时间戳
         :type expire_time: int
         :param exp_status: 证书过期状态，0-未过期，1-已过期，2-即将过期（一个月内即将过期）
@@ -69,8 +61,6 @@ class CertificateBody:
 
         self._id = None
         self._name = None
-        self._content = None
-        self._key = None
         self._expire_time = None
         self._exp_status = None
         self._timestamp = None
@@ -79,10 +69,6 @@ class CertificateBody:
 
         self.id = id
         self.name = name
-        if content is not None:
-            self.content = content
-        if key is not None:
-            self.key = key
         if expire_time is not None:
             self.expire_time = expire_time
         if exp_status is not None:
@@ -134,50 +120,6 @@ class CertificateBody:
         :type name: str
         """
         self._name = name
-
-    @property
-    def content(self):
-        """Gets the content of this CertificateBody.
-
-        证书文件，PEM编码
-
-        :return: The content of this CertificateBody.
-        :rtype: str
-        """
-        return self._content
-
-    @content.setter
-    def content(self, content):
-        """Sets the content of this CertificateBody.
-
-        证书文件，PEM编码
-
-        :param content: The content of this CertificateBody.
-        :type content: str
-        """
-        self._content = content
-
-    @property
-    def key(self):
-        """Gets the key of this CertificateBody.
-
-        证书私钥，PEM编码
-
-        :return: The key of this CertificateBody.
-        :rtype: str
-        """
-        return self._key
-
-    @key.setter
-    def key(self, key):
-        """Sets the key of this CertificateBody.
-
-        证书私钥，PEM编码
-
-        :param key: The key of this CertificateBody.
-        :type key: str
-        """
-        self._key = key
 
     @property
     def expire_time(self):

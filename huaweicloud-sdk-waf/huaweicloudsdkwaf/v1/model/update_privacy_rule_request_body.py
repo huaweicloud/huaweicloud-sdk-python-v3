@@ -39,13 +39,13 @@ class UpdatePrivacyRuleRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param url: 隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\&quot;*\&quot;号结尾代表路径前缀
+        :param url: 隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\&quot;*\&quot;（星号）结尾代表路径前缀
         :type url: str
-        :param category: 屏蔽字段
+        :param category: 屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
         :type category: str
-        :param index: 屏蔽字段名
+        :param index: 屏蔽字段名，根据“屏蔽字段”设置字段名，被屏蔽的字段将不会出现在日志中。屏蔽字段名长度不能超过2048字节，且只能由数字、字母、下划线和中划线组成
         :type index: str
-        :param description: 规则描述
+        :param description: 规则描述，可选参数，设置该规则的备注信息。
         :type description: str
         """
         
@@ -67,7 +67,7 @@ class UpdatePrivacyRuleRequestBody:
     def url(self):
         """Gets the url of this UpdatePrivacyRuleRequestBody.
 
-        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
+        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"（星号）结尾代表路径前缀
 
         :return: The url of this UpdatePrivacyRuleRequestBody.
         :rtype: str
@@ -78,7 +78,7 @@ class UpdatePrivacyRuleRequestBody:
     def url(self, url):
         """Sets the url of this UpdatePrivacyRuleRequestBody.
 
-        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
+        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"（星号）结尾代表路径前缀
 
         :param url: The url of this UpdatePrivacyRuleRequestBody.
         :type url: str
@@ -89,7 +89,7 @@ class UpdatePrivacyRuleRequestBody:
     def category(self):
         """Gets the category of this UpdatePrivacyRuleRequestBody.
 
-        屏蔽字段
+        屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
 
         :return: The category of this UpdatePrivacyRuleRequestBody.
         :rtype: str
@@ -100,7 +100,7 @@ class UpdatePrivacyRuleRequestBody:
     def category(self, category):
         """Sets the category of this UpdatePrivacyRuleRequestBody.
 
-        屏蔽字段
+        屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
 
         :param category: The category of this UpdatePrivacyRuleRequestBody.
         :type category: str
@@ -111,7 +111,7 @@ class UpdatePrivacyRuleRequestBody:
     def index(self):
         """Gets the index of this UpdatePrivacyRuleRequestBody.
 
-        屏蔽字段名
+        屏蔽字段名，根据“屏蔽字段”设置字段名，被屏蔽的字段将不会出现在日志中。屏蔽字段名长度不能超过2048字节，且只能由数字、字母、下划线和中划线组成
 
         :return: The index of this UpdatePrivacyRuleRequestBody.
         :rtype: str
@@ -122,7 +122,7 @@ class UpdatePrivacyRuleRequestBody:
     def index(self, index):
         """Sets the index of this UpdatePrivacyRuleRequestBody.
 
-        屏蔽字段名
+        屏蔽字段名，根据“屏蔽字段”设置字段名，被屏蔽的字段将不会出现在日志中。屏蔽字段名长度不能超过2048字节，且只能由数字、字母、下划线和中划线组成
 
         :param index: The index of this UpdatePrivacyRuleRequestBody.
         :type index: str
@@ -133,7 +133,7 @@ class UpdatePrivacyRuleRequestBody:
     def description(self):
         """Gets the description of this UpdatePrivacyRuleRequestBody.
 
-        规则描述
+        规则描述，可选参数，设置该规则的备注信息。
 
         :return: The description of this UpdatePrivacyRuleRequestBody.
         :rtype: str
@@ -144,7 +144,7 @@ class UpdatePrivacyRuleRequestBody:
     def description(self, description):
         """Sets the description of this UpdatePrivacyRuleRequestBody.
 
-        规则描述
+        规则描述，可选参数，设置该规则的备注信息。
 
         :param description: The description of this UpdatePrivacyRuleRequestBody.
         :type description: str

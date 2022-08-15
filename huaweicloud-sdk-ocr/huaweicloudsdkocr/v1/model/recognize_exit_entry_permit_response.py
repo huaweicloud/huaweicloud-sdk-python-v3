@@ -21,7 +21,7 @@ class RecognizeExitEntryPermitResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'object'
+        'result': 'ExitEntryPermitResult'
     }
 
     attribute_map = {
@@ -33,8 +33,8 @@ class RecognizeExitEntryPermitResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 调用成功时表示调用结果。  调用失败时无此字段。 
-        :type result: object
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.ExitEntryPermitResult`
         """
         
         super(RecognizeExitEntryPermitResponse, self).__init__()
@@ -49,10 +49,9 @@ class RecognizeExitEntryPermitResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeExitEntryPermitResponse.
 
-        调用成功时表示调用结果。  调用失败时无此字段。 
 
         :return: The result of this RecognizeExitEntryPermitResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkocr.v1.ExitEntryPermitResult`
         """
         return self._result
 
@@ -60,10 +59,9 @@ class RecognizeExitEntryPermitResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this RecognizeExitEntryPermitResponse.
 
-        调用成功时表示调用结果。  调用失败时无此字段。 
 
         :param result: The result of this RecognizeExitEntryPermitResponse.
-        :type result: object
+        :type result: :class:`huaweicloudsdkocr.v1.ExitEntryPermitResult`
         """
         self._result = result
 

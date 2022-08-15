@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateConfigurationValuesOption:
+class DeleteDatabasePermissionRequestBody:
 
     """
     Attributes:
@@ -21,78 +21,50 @@ class CreateConfigurationValuesOption:
     sensitive_list = []
 
     openapi_types = {
-        'key': 'str',
-        'value': 'str'
+        'users': 'list[DeleteDatabasePermission]'
     }
 
     attribute_map = {
-        'key': 'key',
-        'value': 'value'
+        'users': 'users'
     }
 
-    def __init__(self, key=None, value=None):
-        """CreateConfigurationValuesOption
+    def __init__(self, users=None):
+        """DeleteDatabasePermissionRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param key: 参数名称。 示例：\&quot;max_connections\&quot;:\&quot;10\&quot;中，key值为“max_connections”。 - key为空时，不修改参数值。 - key不为空时，value也不可为空。
-        :type key: str
-        :param value: 参数值。 - 示例：\&quot;max_connections\&quot;:\&quot;10\&quot;中，value值为“10”。
-        :type value: str
+        :param users: 数据库用户列表，列表最大长度为50。
+        :type users: list[:class:`huaweicloudsdkgaussdb.v3.DeleteDatabasePermission`]
         """
         
         
 
-        self._key = None
-        self._value = None
+        self._users = None
         self.discriminator = None
 
-        self.key = key
-        self.value = value
+        self.users = users
 
     @property
-    def key(self):
-        """Gets the key of this CreateConfigurationValuesOption.
+    def users(self):
+        """Gets the users of this DeleteDatabasePermissionRequestBody.
 
-        参数名称。 示例：\"max_connections\":\"10\"中，key值为“max_connections”。 - key为空时，不修改参数值。 - key不为空时，value也不可为空。
+        数据库用户列表，列表最大长度为50。
 
-        :return: The key of this CreateConfigurationValuesOption.
-        :rtype: str
+        :return: The users of this DeleteDatabasePermissionRequestBody.
+        :rtype: list[:class:`huaweicloudsdkgaussdb.v3.DeleteDatabasePermission`]
         """
-        return self._key
+        return self._users
 
-    @key.setter
-    def key(self, key):
-        """Sets the key of this CreateConfigurationValuesOption.
+    @users.setter
+    def users(self, users):
+        """Sets the users of this DeleteDatabasePermissionRequestBody.
 
-        参数名称。 示例：\"max_connections\":\"10\"中，key值为“max_connections”。 - key为空时，不修改参数值。 - key不为空时，value也不可为空。
+        数据库用户列表，列表最大长度为50。
 
-        :param key: The key of this CreateConfigurationValuesOption.
-        :type key: str
+        :param users: The users of this DeleteDatabasePermissionRequestBody.
+        :type users: list[:class:`huaweicloudsdkgaussdb.v3.DeleteDatabasePermission`]
         """
-        self._key = key
-
-    @property
-    def value(self):
-        """Gets the value of this CreateConfigurationValuesOption.
-
-        参数值。 - 示例：\"max_connections\":\"10\"中，value值为“10”。
-
-        :return: The value of this CreateConfigurationValuesOption.
-        :rtype: str
-        """
-        return self._value
-
-    @value.setter
-    def value(self, value):
-        """Sets the value of this CreateConfigurationValuesOption.
-
-        参数值。 - 示例：\"max_connections\":\"10\"中，value值为“10”。
-
-        :param value: The value of this CreateConfigurationValuesOption.
-        :type value: str
-        """
-        self._value = value
+        self._users = users
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -136,7 +108,7 @@ class CreateConfigurationValuesOption:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateConfigurationValuesOption):
+        if not isinstance(other, DeleteDatabasePermissionRequestBody):
             return False
 
         return self.__dict__ == other.__dict__

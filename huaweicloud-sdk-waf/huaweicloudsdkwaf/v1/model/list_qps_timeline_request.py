@@ -24,8 +24,8 @@ class ListQpsTimelineRequest:
         'enterprise_project_id': 'str',
         '_from': 'int',
         'to': 'int',
-        'hosts': 'str',
-        'instances': 'str',
+        'hosts': 'list[str]',
+        'instances': 'list[str]',
         'group_by': 'str'
     }
 
@@ -50,10 +50,10 @@ class ListQpsTimelineRequest:
         :param to: 结束时间（13位毫秒时间戳），需要和from同时使用
         :type to: int
         :param hosts: 域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
-        :type hosts: str
-        :param instances: 独享实例实例id（仅实例化模式涉及）
-        :type instances: str
-        :param group_by: 展示维度，需要按天展示时传\&quot;DAY\&quot;
+        :type hosts: list[str]
+        :param instances: 要查询引擎实例列表（仅独享或者ELB实例化模式涉及）
+        :type instances: list[str]
+        :param group_by: 展示维度，按天展示时传\&quot;DAY\&quot;；默认不传，按照分钟展示
         :type group_by: str
         """
         
@@ -151,7 +151,7 @@ class ListQpsTimelineRequest:
         域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :return: The hosts of this ListQpsTimelineRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._hosts
 
@@ -162,7 +162,7 @@ class ListQpsTimelineRequest:
         域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :param hosts: The hosts of this ListQpsTimelineRequest.
-        :type hosts: str
+        :type hosts: list[str]
         """
         self._hosts = hosts
 
@@ -170,10 +170,10 @@ class ListQpsTimelineRequest:
     def instances(self):
         """Gets the instances of this ListQpsTimelineRequest.
 
-        独享实例实例id（仅实例化模式涉及）
+        要查询引擎实例列表（仅独享或者ELB实例化模式涉及）
 
         :return: The instances of this ListQpsTimelineRequest.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._instances
 
@@ -181,10 +181,10 @@ class ListQpsTimelineRequest:
     def instances(self, instances):
         """Sets the instances of this ListQpsTimelineRequest.
 
-        独享实例实例id（仅实例化模式涉及）
+        要查询引擎实例列表（仅独享或者ELB实例化模式涉及）
 
         :param instances: The instances of this ListQpsTimelineRequest.
-        :type instances: str
+        :type instances: list[str]
         """
         self._instances = instances
 
@@ -192,7 +192,7 @@ class ListQpsTimelineRequest:
     def group_by(self):
         """Gets the group_by of this ListQpsTimelineRequest.
 
-        展示维度，需要按天展示时传\"DAY\"
+        展示维度，按天展示时传\"DAY\"；默认不传，按照分钟展示
 
         :return: The group_by of this ListQpsTimelineRequest.
         :rtype: str
@@ -203,7 +203,7 @@ class ListQpsTimelineRequest:
     def group_by(self, group_by):
         """Sets the group_by of this ListQpsTimelineRequest.
 
-        展示维度，需要按天展示时传\"DAY\"
+        展示维度，按天展示时传\"DAY\"；默认不传，按照分钟展示
 
         :param group_by: The group_by of this ListQpsTimelineRequest.
         :type group_by: str

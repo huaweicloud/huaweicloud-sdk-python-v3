@@ -65,9 +65,9 @@ class CreateCustomerV2Req:
         :type password: str
         :param is_close_market_ms: 是否关闭营销消息的发送： true：关闭false：不关闭（默认）
         :type is_close_market_ms: str
-        :param cooperation_type: 合作类型。 1：顾问销售。 仅支持1，如果不传递，默认会创建成代售模式的客户。
+        :param cooperation_type: 合作类型。 1：顾问销售。 不传递或传递非1的值，默认会创建成代售模式的客户。
         :type cooperation_type: str
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
+        :param indirect_partner_id: 云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 如果需要创建云经销商的子客户，必须携带该字段。除此之外，此参数不做处理。
         :type indirect_partner_id: str
         :param include_association_result: 是否返回子客户的关联结果。 true：返回子客户和伙伴的关联结果false：不返回子客户和伙伴的关联结果 默认值为false。
         :type include_association_result: bool
@@ -264,7 +264,7 @@ class CreateCustomerV2Req:
     def cooperation_type(self):
         """Gets the cooperation_type of this CreateCustomerV2Req.
 
-        合作类型。 1：顾问销售。 仅支持1，如果不传递，默认会创建成代售模式的客户。
+        合作类型。 1：顾问销售。 不传递或传递非1的值，默认会创建成代售模式的客户。
 
         :return: The cooperation_type of this CreateCustomerV2Req.
         :rtype: str
@@ -275,7 +275,7 @@ class CreateCustomerV2Req:
     def cooperation_type(self, cooperation_type):
         """Sets the cooperation_type of this CreateCustomerV2Req.
 
-        合作类型。 1：顾问销售。 仅支持1，如果不传递，默认会创建成代售模式的客户。
+        合作类型。 1：顾问销售。 不传递或传递非1的值，默认会创建成代售模式的客户。
 
         :param cooperation_type: The cooperation_type of this CreateCustomerV2Req.
         :type cooperation_type: str
@@ -286,7 +286,7 @@ class CreateCustomerV2Req:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this CreateCustomerV2Req.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 如果需要创建云经销商的子客户，必须携带该字段。除此之外，此参数不做处理。
 
         :return: The indirect_partner_id of this CreateCustomerV2Req.
         :rtype: str
@@ -297,7 +297,7 @@ class CreateCustomerV2Req:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this CreateCustomerV2Req.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 如果需要创建云经销商的子客户，必须携带该字段。除此之外，此参数不做处理。
 
         :param indirect_partner_id: The indirect_partner_id of this CreateCustomerV2Req.
         :type indirect_partner_id: str

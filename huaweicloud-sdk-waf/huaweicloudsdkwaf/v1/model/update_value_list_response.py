@@ -25,7 +25,6 @@ class UpdateValueListResponse(SdkResponse):
         'name': 'str',
         'type': 'str',
         'description': 'str',
-        'timestamp': 'int',
         'values': 'list[str]',
         'producer': 'int'
     }
@@ -35,12 +34,11 @@ class UpdateValueListResponse(SdkResponse):
         'name': 'name',
         'type': 'type',
         'description': 'description',
-        'timestamp': 'timestamp',
         'values': 'values',
         'producer': 'producer'
     }
 
-    def __init__(self, id=None, name=None, type=None, description=None, timestamp=None, values=None, producer=None):
+    def __init__(self, id=None, name=None, type=None, description=None, values=None, producer=None):
         """UpdateValueListResponse
 
         The model defined in huaweicloud sdk
@@ -53,11 +51,9 @@ class UpdateValueListResponse(SdkResponse):
         :type type: str
         :param description: 引用表描述
         :type description: str
-        :param timestamp: 引用表时间戳
-        :type timestamp: int
         :param values: 引用表的值
         :type values: list[str]
-        :param producer: 引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于moduleX自动创建
+        :param producer: 引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于智能访问控制自动创建
         :type producer: int
         """
         
@@ -67,7 +63,6 @@ class UpdateValueListResponse(SdkResponse):
         self._name = None
         self._type = None
         self._description = None
-        self._timestamp = None
         self._values = None
         self._producer = None
         self.discriminator = None
@@ -80,8 +75,6 @@ class UpdateValueListResponse(SdkResponse):
             self.type = type
         if description is not None:
             self.description = description
-        if timestamp is not None:
-            self.timestamp = timestamp
         if values is not None:
             self.values = values
         if producer is not None:
@@ -176,28 +169,6 @@ class UpdateValueListResponse(SdkResponse):
         self._description = description
 
     @property
-    def timestamp(self):
-        """Gets the timestamp of this UpdateValueListResponse.
-
-        引用表时间戳
-
-        :return: The timestamp of this UpdateValueListResponse.
-        :rtype: int
-        """
-        return self._timestamp
-
-    @timestamp.setter
-    def timestamp(self, timestamp):
-        """Sets the timestamp of this UpdateValueListResponse.
-
-        引用表时间戳
-
-        :param timestamp: The timestamp of this UpdateValueListResponse.
-        :type timestamp: int
-        """
-        self._timestamp = timestamp
-
-    @property
     def values(self):
         """Gets the values of this UpdateValueListResponse.
 
@@ -223,7 +194,7 @@ class UpdateValueListResponse(SdkResponse):
     def producer(self):
         """Gets the producer of this UpdateValueListResponse.
 
-        引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于moduleX自动创建
+        引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于智能访问控制自动创建
 
         :return: The producer of this UpdateValueListResponse.
         :rtype: int
@@ -234,7 +205,7 @@ class UpdateValueListResponse(SdkResponse):
     def producer(self, producer):
         """Sets the producer of this UpdateValueListResponse.
 
-        引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于moduleX自动创建
+        引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于智能访问控制自动创建
 
         :param producer: The producer of this UpdateValueListResponse.
         :type producer: int

@@ -61,7 +61,7 @@ class ListSubcustomerMonthlyBillsRequest:
         :type limit: int
         :param bill_type: 账单类型。0：消费1：退订2：华为核销
         :type bill_type: str
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
+        :param indirect_partner_id: 云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商伙伴的子客户的消费汇总账单，必须携带该字段。除此之外，此参数不做处理。
         :type indirect_partner_id: str
         """
         
@@ -250,7 +250,7 @@ class ListSubcustomerMonthlyBillsRequest:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this ListSubcustomerMonthlyBillsRequest.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商伙伴的子客户的消费汇总账单，必须携带该字段。除此之外，此参数不做处理。
 
         :return: The indirect_partner_id of this ListSubcustomerMonthlyBillsRequest.
         :rtype: str
@@ -261,7 +261,7 @@ class ListSubcustomerMonthlyBillsRequest:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this ListSubcustomerMonthlyBillsRequest.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商伙伴的子客户的消费汇总账单，必须携带该字段。除此之外，此参数不做处理。
 
         :param indirect_partner_id: The indirect_partner_id of this ListSubcustomerMonthlyBillsRequest.
         :type indirect_partner_id: str

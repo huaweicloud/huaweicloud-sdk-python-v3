@@ -54,8 +54,7 @@ class ShowInstanceExtendProductInfoRequest:
 
         self.instance_id = instance_id
         self.type = type
-        if engine is not None:
-            self.engine = engine
+        self.engine = engine
 
     @property
     def instance_id(self):

@@ -37,11 +37,11 @@ class RouteBody:
 
         The model defined in huaweicloud sdk
 
-        :param cname: cname后缀
+        :param cname: WAF集群的cname后缀
         :type cname: str
-        :param name: 名称
+        :param name: WAF集群名称
         :type name: str
-        :param servers: 路由信息
+        :param servers: 防护域名源站服务器信息列表
         :type servers: list[:class:`huaweicloudsdkwaf.v1.RouteServerBody`]
         """
         
@@ -63,7 +63,7 @@ class RouteBody:
     def cname(self):
         """Gets the cname of this RouteBody.
 
-        cname后缀
+        WAF集群的cname后缀
 
         :return: The cname of this RouteBody.
         :rtype: str
@@ -74,7 +74,7 @@ class RouteBody:
     def cname(self, cname):
         """Sets the cname of this RouteBody.
 
-        cname后缀
+        WAF集群的cname后缀
 
         :param cname: The cname of this RouteBody.
         :type cname: str
@@ -85,7 +85,7 @@ class RouteBody:
     def name(self):
         """Gets the name of this RouteBody.
 
-        名称
+        WAF集群名称
 
         :return: The name of this RouteBody.
         :rtype: str
@@ -96,7 +96,7 @@ class RouteBody:
     def name(self, name):
         """Sets the name of this RouteBody.
 
-        名称
+        WAF集群名称
 
         :param name: The name of this RouteBody.
         :type name: str
@@ -107,7 +107,7 @@ class RouteBody:
     def servers(self):
         """Gets the servers of this RouteBody.
 
-        路由信息
+        防护域名源站服务器信息列表
 
         :return: The servers of this RouteBody.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.RouteServerBody`]
@@ -118,7 +118,7 @@ class RouteBody:
     def servers(self, servers):
         """Sets the servers of this RouteBody.
 
-        路由信息
+        防护域名源站服务器信息列表
 
         :param servers: The servers of this RouteBody.
         :type servers: list[:class:`huaweicloudsdkwaf.v1.RouteServerBody`]

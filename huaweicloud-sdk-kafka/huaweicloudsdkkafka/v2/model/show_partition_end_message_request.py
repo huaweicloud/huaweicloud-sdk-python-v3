@@ -39,7 +39,7 @@ class ShowPartitionEndMessageRequest:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param topic: Topic名称。
+        :param topic: Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
         :type topic: str
         :param partition: 分区编号。
         :type partition: int
@@ -82,7 +82,7 @@ class ShowPartitionEndMessageRequest:
     def topic(self):
         """Gets the topic of this ShowPartitionEndMessageRequest.
 
-        Topic名称。
+        Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
         :return: The topic of this ShowPartitionEndMessageRequest.
         :rtype: str
@@ -93,7 +93,7 @@ class ShowPartitionEndMessageRequest:
     def topic(self, topic):
         """Sets the topic of this ShowPartitionEndMessageRequest.
 
-        Topic名称。
+        Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
         :param topic: The topic of this ShowPartitionEndMessageRequest.
         :type topic: str

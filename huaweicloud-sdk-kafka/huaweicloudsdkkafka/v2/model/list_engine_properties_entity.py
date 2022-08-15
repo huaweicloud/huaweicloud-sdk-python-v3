@@ -28,7 +28,8 @@ class ListEnginePropertiesEntity:
         'min_broker': 'str',
         'max_bandwidth_per_broker': 'str',
         'min_storage_per_node': 'str',
-        'max_tps_per_broker': 'str'
+        'max_tps_per_broker': 'str',
+        'product_alias': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ListEnginePropertiesEntity:
         'min_broker': 'min_broker',
         'max_bandwidth_per_broker': 'max_bandwidth_per_broker',
         'min_storage_per_node': 'min_storage_per_node',
-        'max_tps_per_broker': 'max_tps_per_broker'
+        'max_tps_per_broker': 'max_tps_per_broker',
+        'product_alias': 'product_alias'
     }
 
-    def __init__(self, max_partition_per_broker=None, max_broker=None, max_storage_per_node=None, max_consumer_per_broker=None, min_broker=None, max_bandwidth_per_broker=None, min_storage_per_node=None, max_tps_per_broker=None):
+    def __init__(self, max_partition_per_broker=None, max_broker=None, max_storage_per_node=None, max_consumer_per_broker=None, min_broker=None, max_bandwidth_per_broker=None, min_storage_per_node=None, max_tps_per_broker=None, product_alias=None):
         """ListEnginePropertiesEntity
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ListEnginePropertiesEntity:
         :type min_storage_per_node: str
         :param max_tps_per_broker: 每个Broker的最大TPS。
         :type max_tps_per_broker: str
+        :param product_alias: product_id的别名。
+        :type product_alias: str
         """
         
         
@@ -75,6 +79,7 @@ class ListEnginePropertiesEntity:
         self._max_bandwidth_per_broker = None
         self._min_storage_per_node = None
         self._max_tps_per_broker = None
+        self._product_alias = None
         self.discriminator = None
 
         if max_partition_per_broker is not None:
@@ -93,6 +98,8 @@ class ListEnginePropertiesEntity:
             self.min_storage_per_node = min_storage_per_node
         if max_tps_per_broker is not None:
             self.max_tps_per_broker = max_tps_per_broker
+        if product_alias is not None:
+            self.product_alias = product_alias
 
     @property
     def max_partition_per_broker(self):
@@ -269,6 +276,28 @@ class ListEnginePropertiesEntity:
         :type max_tps_per_broker: str
         """
         self._max_tps_per_broker = max_tps_per_broker
+
+    @property
+    def product_alias(self):
+        """Gets the product_alias of this ListEnginePropertiesEntity.
+
+        product_id的别名。
+
+        :return: The product_alias of this ListEnginePropertiesEntity.
+        :rtype: str
+        """
+        return self._product_alias
+
+    @product_alias.setter
+    def product_alias(self, product_alias):
+        """Sets the product_alias of this ListEnginePropertiesEntity.
+
+        product_id的别名。
+
+        :param product_alias: The product_alias of this ListEnginePropertiesEntity.
+        :type product_alias: str
+        """
+        self._product_alias = product_alias
 
     def to_dict(self):
         """Returns the model properties as a dict"""

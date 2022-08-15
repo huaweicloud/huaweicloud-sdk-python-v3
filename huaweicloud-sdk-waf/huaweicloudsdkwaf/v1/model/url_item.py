@@ -37,7 +37,7 @@ class UrlItem:
 
         The model defined in huaweicloud sdk
 
-        :param key: 路径
+        :param key: url路径
         :type key: str
         :param num: 数量
         :type num: int
@@ -63,7 +63,7 @@ class UrlItem:
     def key(self):
         """Gets the key of this UrlItem.
 
-        路径
+        url路径
 
         :return: The key of this UrlItem.
         :rtype: str
@@ -74,7 +74,7 @@ class UrlItem:
     def key(self, key):
         """Sets the key of this UrlItem.
 
-        路径
+        url路径
 
         :param key: The key of this UrlItem.
         :type key: str

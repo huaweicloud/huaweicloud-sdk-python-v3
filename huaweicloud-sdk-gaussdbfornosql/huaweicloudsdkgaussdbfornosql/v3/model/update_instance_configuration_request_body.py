@@ -21,7 +21,7 @@ class UpdateInstanceConfigurationRequestBody:
     sensitive_list = []
 
     openapi_types = {
-        'values': 'UpdateInstanceConfigurationValuesOption'
+        'values': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -33,8 +33,8 @@ class UpdateInstanceConfigurationRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param values: 
-        :type values: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceConfigurationValuesOption`
+        :param values: 参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。
+        :type values: dict(str, str)
         """
         
         
@@ -48,9 +48,10 @@ class UpdateInstanceConfigurationRequestBody:
     def values(self):
         """Gets the values of this UpdateInstanceConfigurationRequestBody.
 
+        参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。
 
         :return: The values of this UpdateInstanceConfigurationRequestBody.
-        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceConfigurationValuesOption`
+        :rtype: dict(str, str)
         """
         return self._values
 
@@ -58,9 +59,10 @@ class UpdateInstanceConfigurationRequestBody:
     def values(self, values):
         """Sets the values of this UpdateInstanceConfigurationRequestBody.
 
+        参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。
 
         :param values: The values of this UpdateInstanceConfigurationRequestBody.
-        :type values: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceConfigurationValuesOption`
+        :type values: dict(str, str)
         """
         self._values = values
 

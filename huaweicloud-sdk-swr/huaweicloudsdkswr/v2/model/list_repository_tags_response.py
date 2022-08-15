@@ -21,29 +21,36 @@ class ListRepositoryTagsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[ShowReposTagResp]'
+        'body': 'list[ShowReposTagResp]',
+        'content_range': 'str'
     }
 
     attribute_map = {
-        'body': 'body'
+        'body': 'body',
+        'content_range': 'Content-Range'
     }
 
-    def __init__(self, body=None):
+    def __init__(self, body=None, content_range=None):
         """ListRepositoryTagsResponse
 
         The model defined in huaweicloud sdk
 
         :param body: 镜像tag列表
         :type body: list[:class:`huaweicloudsdkswr.v2.ShowReposTagResp`]
+        :param content_range: 
+        :type content_range: str
         """
         
         super(ListRepositoryTagsResponse, self).__init__()
 
         self._body = None
+        self._content_range = None
         self.discriminator = None
 
         if body is not None:
             self.body = body
+        if content_range is not None:
+            self.content_range = content_range
 
     @property
     def body(self):
@@ -66,6 +73,26 @@ class ListRepositoryTagsResponse(SdkResponse):
         :type body: list[:class:`huaweicloudsdkswr.v2.ShowReposTagResp`]
         """
         self._body = body
+
+    @property
+    def content_range(self):
+        """Gets the content_range of this ListRepositoryTagsResponse.
+
+
+        :return: The content_range of this ListRepositoryTagsResponse.
+        :rtype: str
+        """
+        return self._content_range
+
+    @content_range.setter
+    def content_range(self, content_range):
+        """Sets the content_range of this ListRepositoryTagsResponse.
+
+
+        :param content_range: The content_range of this ListRepositoryTagsResponse.
+        :type content_range: str
+        """
+        self._content_range = content_range
 
     def to_dict(self):
         """Returns the model properties as a dict"""

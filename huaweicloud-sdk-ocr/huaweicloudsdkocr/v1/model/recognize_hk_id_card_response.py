@@ -21,7 +21,7 @@ class RecognizeHkIdCardResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'result': 'object'
+        'result': 'HkIdCardResult'
     }
 
     attribute_map = {
@@ -33,8 +33,8 @@ class RecognizeHkIdCardResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result: 调用成功时表示调用结果。  调用失败时无此字段。 
-        :type result: object
+        :param result: 
+        :type result: :class:`huaweicloudsdkocr.v1.HkIdCardResult`
         """
         
         super(RecognizeHkIdCardResponse, self).__init__()
@@ -49,10 +49,9 @@ class RecognizeHkIdCardResponse(SdkResponse):
     def result(self):
         """Gets the result of this RecognizeHkIdCardResponse.
 
-        调用成功时表示调用结果。  调用失败时无此字段。 
 
         :return: The result of this RecognizeHkIdCardResponse.
-        :rtype: object
+        :rtype: :class:`huaweicloudsdkocr.v1.HkIdCardResult`
         """
         return self._result
 
@@ -60,10 +59,9 @@ class RecognizeHkIdCardResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this RecognizeHkIdCardResponse.
 
-        调用成功时表示调用结果。  调用失败时无此字段。 
 
         :param result: The result of this RecognizeHkIdCardResponse.
-        :type result: object
+        :type result: :class:`huaweicloudsdkocr.v1.HkIdCardResult`
         """
         self._result = result
 

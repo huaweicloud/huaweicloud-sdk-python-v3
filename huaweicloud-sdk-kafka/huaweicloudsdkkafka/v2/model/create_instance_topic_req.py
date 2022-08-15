@@ -49,11 +49,11 @@ class CreateInstanceTopicReq:
         :type replication: int
         :param sync_message_flush: 是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
         :type sync_message_flush: bool
-        :param partition: topic分区数，设置消费的并发数。 取值范围：1-100。
+        :param partition: topic分区数，设置消费的并发数。 取值范围：[1-100](tag:hc,hk,hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc)[1-20](tag:cmcc)。
         :type partition: int
         :param sync_replication: 是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks&#x3D;-1，否则不生效，默认关闭。
         :type sync_replication: bool
-        :param retention_time: 消息老化时间。默认值为72。取值范围1~168，单位小时。
+        :param retention_time: 消息老化时间。默认值为72。 取值范围[1~168](tag:hc,hk,hws,hws_hk,hws_ocb,ctc,sbc,hk_sbc)[1-720](tag:ocb,otc)，单位小时。
         :type retention_time: int
         """
         
@@ -149,7 +149,7 @@ class CreateInstanceTopicReq:
     def partition(self):
         """Gets the partition of this CreateInstanceTopicReq.
 
-        topic分区数，设置消费的并发数。 取值范围：1-100。
+        topic分区数，设置消费的并发数。 取值范围：[1-100](tag:hc,hk,hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc)[1-20](tag:cmcc)。
 
         :return: The partition of this CreateInstanceTopicReq.
         :rtype: int
@@ -160,7 +160,7 @@ class CreateInstanceTopicReq:
     def partition(self, partition):
         """Sets the partition of this CreateInstanceTopicReq.
 
-        topic分区数，设置消费的并发数。 取值范围：1-100。
+        topic分区数，设置消费的并发数。 取值范围：[1-100](tag:hc,hk,hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc)[1-20](tag:cmcc)。
 
         :param partition: The partition of this CreateInstanceTopicReq.
         :type partition: int
@@ -193,7 +193,7 @@ class CreateInstanceTopicReq:
     def retention_time(self):
         """Gets the retention_time of this CreateInstanceTopicReq.
 
-        消息老化时间。默认值为72。取值范围1~168，单位小时。
+        消息老化时间。默认值为72。 取值范围[1~168](tag:hc,hk,hws,hws_hk,hws_ocb,ctc,sbc,hk_sbc)[1-720](tag:ocb,otc)，单位小时。
 
         :return: The retention_time of this CreateInstanceTopicReq.
         :rtype: int
@@ -204,7 +204,7 @@ class CreateInstanceTopicReq:
     def retention_time(self, retention_time):
         """Sets the retention_time of this CreateInstanceTopicReq.
 
-        消息老化时间。默认值为72。取值范围1~168，单位小时。
+        消息老化时间。默认值为72。 取值范围[1~168](tag:hc,hk,hws,hws_hk,hws_ocb,ctc,sbc,hk_sbc)[1-720](tag:ocb,otc)，单位小时。
 
         :param retention_time: The retention_time of this CreateInstanceTopicReq.
         :type retention_time: int

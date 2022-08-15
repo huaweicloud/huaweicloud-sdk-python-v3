@@ -37,7 +37,7 @@ class QueryCustomersBalancesReq:
 
         :param customer_infos: 客户信息列表。 具体请参见表1。
         :type customer_infos: list[:class:`huaweicloudsdkbss.v2.CustomerInfoV2`]
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）子客户的账户余额时，需要携带该参数。
+        :param indirect_partner_id: 云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。  华为云总经销商（一级经销商）查询云经销商（二级经销商）子客户的账户余额时，需要携带该参数。除此之外，此参数不做处理。
         :type indirect_partner_id: str
         """
         
@@ -77,7 +77,7 @@ class QueryCustomersBalancesReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this QueryCustomersBalancesReq.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）子客户的账户余额时，需要携带该参数。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。  华为云总经销商（一级经销商）查询云经销商（二级经销商）子客户的账户余额时，需要携带该参数。除此之外，此参数不做处理。
 
         :return: The indirect_partner_id of this QueryCustomersBalancesReq.
         :rtype: str
@@ -88,7 +88,7 @@ class QueryCustomersBalancesReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this QueryCustomersBalancesReq.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。 华为云伙伴能力中心（一级经销商）查询精英服务商（二级经销商）子客户的账户余额时，需要携带该参数。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。  华为云总经销商（一级经销商）查询云经销商（二级经销商）子客户的账户余额时，需要携带该参数。除此之外，此参数不做处理。
 
         :param indirect_partner_id: The indirect_partner_id of this QueryCustomersBalancesReq.
         :type indirect_partner_id: str

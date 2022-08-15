@@ -511,7 +511,7 @@ class SwrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Swr-Dockerlogin"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1281,7 +1281,7 @@ class SwrClient(Client):
         return self.list_namespaces_with_http_info(request)
 
     def list_namespaces_with_http_info(self, request):
-        all_params = ['namespace']
+        all_params = ['namespace', 'filter']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1294,6 +1294,8 @@ class SwrClient(Client):
         query_params = []
         if 'namespace' in local_var_params:
             query_params.append(('namespace', local_var_params['namespace']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
 
         header_params = {}
 
@@ -1455,7 +1457,7 @@ class SwrClient(Client):
         return self.list_repos_details_with_http_info(request)
 
     def list_repos_details_with_http_info(self, request):
-        all_params = ['namespace', 'name', 'category', 'filter']
+        all_params = ['namespace', 'name', 'category', 'limit', 'offset', 'order_column', 'order_type', 'filter']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1472,6 +1474,14 @@ class SwrClient(Client):
             query_params.append(('name', local_var_params['name']))
         if 'category' in local_var_params:
             query_params.append(('category', local_var_params['category']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'order_column' in local_var_params:
+            query_params.append(('order_column', local_var_params['order_column']))
+        if 'order_type' in local_var_params:
+            query_params.append(('order_type', local_var_params['order_type']))
         if 'filter' in local_var_params:
             query_params.append(('filter', local_var_params['filter']))
 
@@ -1519,7 +1529,7 @@ class SwrClient(Client):
         return self.list_repository_tags_with_http_info(request)
 
     def list_repository_tags_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'offset', 'limit', 'order_column', 'order_type', 'tag']
+        all_params = ['namespace', 'repository', 'limit', 'offset', 'order_column', 'order_type', 'tag', 'filter']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1534,16 +1544,18 @@ class SwrClient(Client):
             path_params['repository'] = local_var_params['repository']
 
         query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'order_column' in local_var_params:
             query_params.append(('order_column', local_var_params['order_column']))
         if 'order_type' in local_var_params:
             query_params.append(('order_type', local_var_params['order_type']))
         if 'tag' in local_var_params:
             query_params.append(('tag', local_var_params['tag']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
 
         header_params = {}
 
@@ -1553,7 +1565,7 @@ class SwrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["Content-Range"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1589,7 +1601,7 @@ class SwrClient(Client):
         return self.list_retention_histories_with_http_info(request)
 
     def list_retention_histories_with_http_info(self, request):
-        all_params = ['namespace', 'repository', 'offset', 'limit']
+        all_params = ['namespace', 'repository', 'filter']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1604,10 +1616,8 @@ class SwrClient(Client):
             path_params['repository'] = local_var_params['repository']
 
         query_params = []
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
 
         header_params = {}
 
@@ -1713,7 +1723,7 @@ class SwrClient(Client):
         return self.list_shared_repos_details_with_http_info(request)
 
     def list_shared_repos_details_with_http_info(self, request):
-        all_params = ['filter']
+        all_params = ['namespace', 'name', 'center', 'limit', 'offset', 'order_column', 'order_type', 'filter']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1724,6 +1734,20 @@ class SwrClient(Client):
         path_params = {}
 
         query_params = []
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'center' in local_var_params:
+            query_params.append(('center', local_var_params['center']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'order_column' in local_var_params:
+            query_params.append(('order_column', local_var_params['order_column']))
+        if 'order_type' in local_var_params:
+            query_params.append(('order_type', local_var_params['order_type']))
         if 'filter' in local_var_params:
             query_params.append(('filter', local_var_params['filter']))
 
@@ -2157,7 +2181,7 @@ class SwrClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["Content-Range"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -2363,7 +2387,7 @@ class SwrClient(Client):
     def update_repo(self, request):
         """更新镜像仓库的概要信息
 
-        更新租户命名空间下的镜像概要信息，包括镜像类型、是否公有、描述信息
+        更新租户组织下的镜像概要信息，包括镜像类型、是否公有、描述信息
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

@@ -37,11 +37,11 @@ class RouteServerBody:
 
         The model defined in huaweicloud sdk
 
-        :param back_protocol: 后端协议
+        :param back_protocol: WAF转发客户端请求到防护域名源站服务器的协议
         :type back_protocol: str
-        :param address: 后端ip地址
+        :param address: 客户端访问的源站服务器的IP地址
         :type address: str
-        :param port: 端口信息
+        :param port: WAF转发客户端请求到源站服务的业务端口
         :type port: int
         """
         
@@ -63,7 +63,7 @@ class RouteServerBody:
     def back_protocol(self):
         """Gets the back_protocol of this RouteServerBody.
 
-        后端协议
+        WAF转发客户端请求到防护域名源站服务器的协议
 
         :return: The back_protocol of this RouteServerBody.
         :rtype: str
@@ -74,7 +74,7 @@ class RouteServerBody:
     def back_protocol(self, back_protocol):
         """Sets the back_protocol of this RouteServerBody.
 
-        后端协议
+        WAF转发客户端请求到防护域名源站服务器的协议
 
         :param back_protocol: The back_protocol of this RouteServerBody.
         :type back_protocol: str
@@ -85,7 +85,7 @@ class RouteServerBody:
     def address(self):
         """Gets the address of this RouteServerBody.
 
-        后端ip地址
+        客户端访问的源站服务器的IP地址
 
         :return: The address of this RouteServerBody.
         :rtype: str
@@ -96,7 +96,7 @@ class RouteServerBody:
     def address(self, address):
         """Sets the address of this RouteServerBody.
 
-        后端ip地址
+        客户端访问的源站服务器的IP地址
 
         :param address: The address of this RouteServerBody.
         :type address: str
@@ -107,7 +107,7 @@ class RouteServerBody:
     def port(self):
         """Gets the port of this RouteServerBody.
 
-        端口信息
+        WAF转发客户端请求到源站服务的业务端口
 
         :return: The port of this RouteServerBody.
         :rtype: int
@@ -118,7 +118,7 @@ class RouteServerBody:
     def port(self, port):
         """Sets the port of this RouteServerBody.
 
-        端口信息
+        WAF转发客户端请求到源站服务的业务端口
 
         :param port: The port of this RouteServerBody.
         :type port: int

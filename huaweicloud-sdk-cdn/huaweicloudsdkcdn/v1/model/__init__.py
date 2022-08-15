@@ -107,6 +107,8 @@ from huaweicloudsdkcdn.v1.model.show_response_header_request import ShowResponse
 from huaweicloudsdkcdn.v1.model.show_response_header_response import ShowResponseHeaderResponse
 from huaweicloudsdkcdn.v1.model.show_top_url_request import ShowTopUrlRequest
 from huaweicloudsdkcdn.v1.model.show_top_url_response import ShowTopUrlResponse
+from huaweicloudsdkcdn.v1.model.show_url_task_info_request import ShowUrlTaskInfoRequest
+from huaweicloudsdkcdn.v1.model.show_url_task_info_response import ShowUrlTaskInfoResponse
 from huaweicloudsdkcdn.v1.model.source_with_port import SourceWithPort
 from huaweicloudsdkcdn.v1.model.sources import Sources
 from huaweicloudsdkcdn.v1.model.sources_config import SourcesConfig
@@ -143,3 +145,4 @@ from huaweicloudsdkcdn.v1.model.update_response_header_response import UpdateRes
 from huaweicloudsdkcdn.v1.model.url_auth import UrlAuth
 from huaweicloudsdkcdn.v1.model.url_auth_get_body import UrlAuthGetBody
 from huaweicloudsdkcdn.v1.model.url_object import UrlObject
+from huaweicloudsdkcdn.v1.model.urls import Urls

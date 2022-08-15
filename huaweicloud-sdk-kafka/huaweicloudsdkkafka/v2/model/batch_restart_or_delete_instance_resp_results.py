@@ -35,7 +35,7 @@ class BatchRestartOrDeleteInstanceRespResults:
 
         The model defined in huaweicloud sdk
 
-        :param result: 操作结果。 - &#39;success: 操作成功&#39; - &#39;failed: 操作失败&#39; 
+        :param result: 操作结果。   - success: 操作成功   - failed: 操作失败 
         :type result: str
         :param instance: 实例ID。
         :type instance: str
@@ -56,7 +56,7 @@ class BatchRestartOrDeleteInstanceRespResults:
     def result(self):
         """Gets the result of this BatchRestartOrDeleteInstanceRespResults.
 
-        操作结果。 - 'success: 操作成功' - 'failed: 操作失败' 
+        操作结果。   - success: 操作成功   - failed: 操作失败 
 
         :return: The result of this BatchRestartOrDeleteInstanceRespResults.
         :rtype: str
@@ -67,7 +67,7 @@ class BatchRestartOrDeleteInstanceRespResults:
     def result(self, result):
         """Sets the result of this BatchRestartOrDeleteInstanceRespResults.
 
-        操作结果。 - 'success: 操作成功' - 'failed: 操作失败' 
+        操作结果。   - success: 操作成功   - failed: 操作失败 
 
         :param result: The result of this BatchRestartOrDeleteInstanceRespResults.
         :type result: str

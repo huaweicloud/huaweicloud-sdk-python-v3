@@ -27,7 +27,8 @@ class PrivacyResponseBody:
         'status': 'int',
         'url': 'str',
         'category': 'str',
-        'index': 'str'
+        'index': 'str',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class PrivacyResponseBody:
         'status': 'status',
         'url': 'url',
         'category': 'category',
-        'index': 'index'
+        'index': 'index',
+        'description': 'description'
     }
 
-    def __init__(self, id=None, policyid=None, timestamp=None, status=None, url=None, category=None, index=None):
+    def __init__(self, id=None, policyid=None, timestamp=None, status=None, url=None, category=None, index=None, description=None):
         """PrivacyResponseBody
 
         The model defined in huaweicloud sdk
@@ -53,12 +55,14 @@ class PrivacyResponseBody:
         :type timestamp: int
         :param status: 规则状态，0：关闭，1：开启
         :type status: int
-        :param url: 隐私屏蔽规则应用的url
+        :param url: 隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\&quot;*\&quot;号结尾代表路径前缀
         :type url: str
-        :param category: 屏蔽字段
+        :param category: 屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
         :type category: str
-        :param index: 屏蔽字段名
+        :param index: 屏蔽字段名，根据“屏蔽字段”设置字段名，被屏蔽的字段将不会出现在日志中。
         :type index: str
+        :param description: 规则描述，可选参数，设置该规则的备注信息。
+        :type description: str
         """
         
         
@@ -70,6 +74,7 @@ class PrivacyResponseBody:
         self._url = None
         self._category = None
         self._index = None
+        self._description = None
         self.discriminator = None
 
         if id is not None:
@@ -86,6 +91,8 @@ class PrivacyResponseBody:
             self.category = category
         if index is not None:
             self.index = index
+        if description is not None:
+            self.description = description
 
     @property
     def id(self):
@@ -179,7 +186,7 @@ class PrivacyResponseBody:
     def url(self):
         """Gets the url of this PrivacyResponseBody.
 
-        隐私屏蔽规则应用的url
+        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
         :return: The url of this PrivacyResponseBody.
         :rtype: str
@@ -190,7 +197,7 @@ class PrivacyResponseBody:
     def url(self, url):
         """Sets the url of this PrivacyResponseBody.
 
-        隐私屏蔽规则应用的url
+        隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
         :param url: The url of this PrivacyResponseBody.
         :type url: str
@@ -201,7 +208,7 @@ class PrivacyResponseBody:
     def category(self):
         """Gets the category of this PrivacyResponseBody.
 
-        屏蔽字段
+        屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
 
         :return: The category of this PrivacyResponseBody.
         :rtype: str
@@ -212,7 +219,7 @@ class PrivacyResponseBody:
     def category(self, category):
         """Sets the category of this PrivacyResponseBody.
 
-        屏蔽字段
+        屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
 
         :param category: The category of this PrivacyResponseBody.
         :type category: str
@@ -223,7 +230,7 @@ class PrivacyResponseBody:
     def index(self):
         """Gets the index of this PrivacyResponseBody.
 
-        屏蔽字段名
+        屏蔽字段名，根据“屏蔽字段”设置字段名，被屏蔽的字段将不会出现在日志中。
 
         :return: The index of this PrivacyResponseBody.
         :rtype: str
@@ -234,12 +241,34 @@ class PrivacyResponseBody:
     def index(self, index):
         """Sets the index of this PrivacyResponseBody.
 
-        屏蔽字段名
+        屏蔽字段名，根据“屏蔽字段”设置字段名，被屏蔽的字段将不会出现在日志中。
 
         :param index: The index of this PrivacyResponseBody.
         :type index: str
         """
         self._index = index
+
+    @property
+    def description(self):
+        """Gets the description of this PrivacyResponseBody.
+
+        规则描述，可选参数，设置该规则的备注信息。
+
+        :return: The description of this PrivacyResponseBody.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this PrivacyResponseBody.
+
+        规则描述，可选参数，设置该规则的备注信息。
+
+        :param description: The description of this PrivacyResponseBody.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

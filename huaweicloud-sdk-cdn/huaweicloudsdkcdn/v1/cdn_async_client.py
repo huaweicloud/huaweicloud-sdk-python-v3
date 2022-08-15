@@ -1743,6 +1743,78 @@ class CdnAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_url_task_info_async(self, request):
+        """查询刷新预热URL记录
+
+        查询刷新预热URL记录。如需此接口，请提交工单开通
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowUrlTaskInfo
+        :type request: :class:`huaweicloudsdkcdn.v1.ShowUrlTaskInfoRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v1.ShowUrlTaskInfoResponse`
+        """
+        return self.show_url_task_info_with_http_info(request)
+
+    def show_url_task_info_with_http_info(self, request):
+        all_params = ['start_time', 'end_time', 'offset', 'limit', 'url', 'task_type', 'status', 'file_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'url' in local_var_params:
+            query_params.append(('url', local_var_params['url']))
+        if 'task_type' in local_var_params:
+            query_params.append(('task_type', local_var_params['task_type']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'file_type' in local_var_params:
+            query_params.append(('file_type', local_var_params['file_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/cdn/contentgateway/url-tasks',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowUrlTaskInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_black_white_list_async(self, request):
         """设置IP黑白名单
 

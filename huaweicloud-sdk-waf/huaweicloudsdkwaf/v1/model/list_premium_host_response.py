@@ -37,7 +37,7 @@ class ListPremiumHostResponse(SdkResponse):
 
         :param total: 全部防护域名的数量
         :type total: int
-        :param items: 详细的防护域名信息
+        :param items: 详细的防护域名信息数组
         :type items: list[:class:`huaweicloudsdkwaf.v1.SimplePremiumWafHost`]
         """
         
@@ -78,7 +78,7 @@ class ListPremiumHostResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListPremiumHostResponse.
 
-        详细的防护域名信息
+        详细的防护域名信息数组
 
         :return: The items of this ListPremiumHostResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.SimplePremiumWafHost`]
@@ -89,7 +89,7 @@ class ListPremiumHostResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListPremiumHostResponse.
 
-        详细的防护域名信息
+        详细的防护域名信息数组
 
         :param items: The items of this ListPremiumHostResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.SimplePremiumWafHost`]

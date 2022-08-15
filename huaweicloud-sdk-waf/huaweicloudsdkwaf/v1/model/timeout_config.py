@@ -37,11 +37,11 @@ class TimeoutConfig:
 
         The model defined in huaweicloud sdk
 
-        :param connect_timeout: 连接超时配置(秒)
+        :param connect_timeout: WAF连接源站超时配置
         :type connect_timeout: int
-        :param send_timeout: 发送超时配置(秒)
+        :param send_timeout: WAF发送请求到源站超时配置
         :type send_timeout: int
-        :param read_timeout: 接收超时配置(秒)
+        :param read_timeout: WAF接收源站响应超时配置
         :type read_timeout: int
         """
         
@@ -63,7 +63,7 @@ class TimeoutConfig:
     def connect_timeout(self):
         """Gets the connect_timeout of this TimeoutConfig.
 
-        连接超时配置(秒)
+        WAF连接源站超时配置
 
         :return: The connect_timeout of this TimeoutConfig.
         :rtype: int
@@ -74,7 +74,7 @@ class TimeoutConfig:
     def connect_timeout(self, connect_timeout):
         """Sets the connect_timeout of this TimeoutConfig.
 
-        连接超时配置(秒)
+        WAF连接源站超时配置
 
         :param connect_timeout: The connect_timeout of this TimeoutConfig.
         :type connect_timeout: int
@@ -85,7 +85,7 @@ class TimeoutConfig:
     def send_timeout(self):
         """Gets the send_timeout of this TimeoutConfig.
 
-        发送超时配置(秒)
+        WAF发送请求到源站超时配置
 
         :return: The send_timeout of this TimeoutConfig.
         :rtype: int
@@ -96,7 +96,7 @@ class TimeoutConfig:
     def send_timeout(self, send_timeout):
         """Sets the send_timeout of this TimeoutConfig.
 
-        发送超时配置(秒)
+        WAF发送请求到源站超时配置
 
         :param send_timeout: The send_timeout of this TimeoutConfig.
         :type send_timeout: int
@@ -107,7 +107,7 @@ class TimeoutConfig:
     def read_timeout(self):
         """Gets the read_timeout of this TimeoutConfig.
 
-        接收超时配置(秒)
+        WAF接收源站响应超时配置
 
         :return: The read_timeout of this TimeoutConfig.
         :rtype: int
@@ -118,7 +118,7 @@ class TimeoutConfig:
     def read_timeout(self, read_timeout):
         """Sets the read_timeout of this TimeoutConfig.
 
-        接收超时配置(秒)
+        WAF接收源站响应超时配置
 
         :param read_timeout: The read_timeout of this TimeoutConfig.
         :type read_timeout: int

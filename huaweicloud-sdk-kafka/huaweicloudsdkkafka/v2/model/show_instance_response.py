@@ -24,6 +24,7 @@ class ShowInstanceResponse(SdkResponse):
         'name': 'str',
         'engine': 'str',
         'engine_version': 'str',
+        'description': 'str',
         'specification': 'str',
         'storage_space': 'int',
         'partition_num': 'str',
@@ -39,12 +40,15 @@ class ShowInstanceResponse(SdkResponse):
         'created_at': 'str',
         'user_id': 'str',
         'user_name': 'str',
+        'access_user': 'str',
         'order_id': 'str',
         'maintain_begin': 'str',
         'maintain_end': 'str',
         'enable_publicip': 'bool',
         'management_connect_address': 'str',
         'ssl_enable': 'bool',
+        'ssl_two_way_enable': 'bool',
+        'cert_replaced': 'bool',
         'enterprise_project_id': 'str',
         'is_logical_volume': 'bool',
         'extend_times': 'int',
@@ -73,14 +77,20 @@ class ShowInstanceResponse(SdkResponse):
         'connector_id': 'str',
         'rest_enable': 'bool',
         'rest_connect_address': 'str',
+        'public_boundwidth': 'int',
         'message_query_inst_enable': 'bool',
         'vpc_client_plain': 'bool',
         'support_features': 'str',
         'trace_enable': 'bool',
+        'agent_enable': 'bool',
         'pod_connect_address': 'str',
         'disk_encrypted': 'bool',
         'kafka_private_connect_address': 'str',
         'ces_version': 'str',
+        'public_access_enabled': 'str',
+        'node_num': 'int',
+        'new_spec_billing_enable': 'bool',
+        'broker_num': 'int',
         'tags': 'list[TagEntity]',
         'dr_enable': 'bool'
     }
@@ -89,6 +99,7 @@ class ShowInstanceResponse(SdkResponse):
         'name': 'name',
         'engine': 'engine',
         'engine_version': 'engine_version',
+        'description': 'description',
         'specification': 'specification',
         'storage_space': 'storage_space',
         'partition_num': 'partition_num',
@@ -104,12 +115,15 @@ class ShowInstanceResponse(SdkResponse):
         'created_at': 'created_at',
         'user_id': 'user_id',
         'user_name': 'user_name',
+        'access_user': 'access_user',
         'order_id': 'order_id',
         'maintain_begin': 'maintain_begin',
         'maintain_end': 'maintain_end',
         'enable_publicip': 'enable_publicip',
         'management_connect_address': 'management_connect_address',
         'ssl_enable': 'ssl_enable',
+        'ssl_two_way_enable': 'ssl_two_way_enable',
+        'cert_replaced': 'cert_replaced',
         'enterprise_project_id': 'enterprise_project_id',
         'is_logical_volume': 'is_logical_volume',
         'extend_times': 'extend_times',
@@ -138,19 +152,25 @@ class ShowInstanceResponse(SdkResponse):
         'connector_id': 'connector_id',
         'rest_enable': 'rest_enable',
         'rest_connect_address': 'rest_connect_address',
+        'public_boundwidth': 'public_boundwidth',
         'message_query_inst_enable': 'message_query_inst_enable',
         'vpc_client_plain': 'vpc_client_plain',
         'support_features': 'support_features',
         'trace_enable': 'trace_enable',
+        'agent_enable': 'agent_enable',
         'pod_connect_address': 'pod_connect_address',
         'disk_encrypted': 'disk_encrypted',
         'kafka_private_connect_address': 'kafka_private_connect_address',
         'ces_version': 'ces_version',
+        'public_access_enabled': 'public_access_enabled',
+        'node_num': 'node_num',
+        'new_spec_billing_enable': 'new_spec_billing_enable',
+        'broker_num': 'broker_num',
         'tags': 'tags',
         'dr_enable': 'dr_enable'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, pod_connect_address=None, disk_encrypted=None, kafka_private_connect_address=None, ces_version=None, tags=None, dr_enable=None):
+    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, ssl_two_way_enable=None, cert_replaced=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
         """ShowInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -161,6 +181,8 @@ class ShowInstanceResponse(SdkResponse):
         :type engine: str
         :param engine_version: 版本。
         :type engine_version: str
+        :param description: 实例描述。
+        :type description: str
         :param specification: 实例规格。
         :type specification: str
         :param storage_space: 消息存储空间，单位：GB。
@@ -173,7 +195,7 @@ class ShowInstanceResponse(SdkResponse):
         :type connect_address: str
         :param port: 实例连接端口。
         :type port: int
-        :param status: 实例的状态。
+        :param status: 实例的状态。 [详细状态说明见[实例状态说明](https://support.huaweicloud.com/api-kafka/kafka-api-180514012.html)。](tag:hws)[详细状态说明见[实例状态说明](https://support.huaweicloud.com/intl/zh-cn/api-kafka/kafka-api-180514012.html)。](tag:hws_hk)
         :type status: str
         :param instance_id: 实例ID。
         :type instance_id: str
@@ -191,6 +213,8 @@ class ShowInstanceResponse(SdkResponse):
         :type user_id: str
         :param user_name: 用户名。
         :type user_name: str
+        :param access_user: 实例访问用户名。
+        :type access_user: str
         :param order_id: 订单ID，只有在包周期计费时才会有order_id值，其他计费方式order_id值为空。
         :type order_id: str
         :param maintain_begin: 维护时间窗开始时间，格式为HH:mm:ss。
@@ -199,10 +223,14 @@ class ShowInstanceResponse(SdkResponse):
         :type maintain_end: str
         :param enable_publicip: 实例是否开启公网访问功能。 - true：开启 - false：未开启
         :type enable_publicip: bool
-        :param management_connect_address: Kafka实例的KafkaManager连接地址。
+        :param management_connect_address: Kafka实例的Kafka Manager连接地址。
         :type management_connect_address: str
         :param ssl_enable: 是否开启安全认证。 - true：开启 - false：未开启
         :type ssl_enable: bool
+        :param ssl_two_way_enable: 是否开启双向认证。
+        :type ssl_two_way_enable: bool
+        :param cert_replaced: 是否能够证书替换。
+        :type cert_replaced: bool
         :param enterprise_project_id: 企业项目ID。
         :type enterprise_project_id: str
         :param is_logical_volume: 实例扩容时用于区分老实例与新实例。 - true：新创建的实例，允许磁盘动态扩容不需要重启。 - false：老实例
@@ -239,7 +267,7 @@ class ShowInstanceResponse(SdkResponse):
         :type retention_policy: str
         :param kafka_public_status: Kafka公网开启状态。
         :type kafka_public_status: str
-        :param public_bandwidth: 公网带宽。
+        :param public_bandwidth: kafka公网访问带宽。
         :type public_bandwidth: int
         :param kafka_manager_user: 登录Kafka Manager的用户名。
         :type kafka_manager_user: str
@@ -251,7 +279,7 @@ class ShowInstanceResponse(SdkResponse):
         :type ipv6_enable: bool
         :param ipv6_connect_addresses: IPv6的连接地址。
         :type ipv6_connect_addresses: list[str]
-        :param connector_enable: 是否开启转储。
+        :param connector_enable: 是否开启转储。新规格产品暂不支持开启转储。
         :type connector_enable: bool
         :param connector_id: 转储任务ID。
         :type connector_id: str
@@ -259,6 +287,8 @@ class ShowInstanceResponse(SdkResponse):
         :type rest_enable: bool
         :param rest_connect_address: Kafka rest连接地址。
         :type rest_connect_address: str
+        :param public_boundwidth: kafka公网访问带宽。待删除版本。
+        :type public_boundwidth: int
         :param message_query_inst_enable: 是否开启消息查询功能。
         :type message_query_inst_enable: bool
         :param vpc_client_plain: 是否开启VPC明文访问。
@@ -267,6 +297,8 @@ class ShowInstanceResponse(SdkResponse):
         :type support_features: str
         :param trace_enable: 是否开启消息轨迹功能。
         :type trace_enable: bool
+        :param agent_enable: 是否开启代理。
+        :type agent_enable: bool
         :param pod_connect_address: 租户侧连接地址。
         :type pod_connect_address: str
         :param disk_encrypted: 是否开启磁盘加密。
@@ -275,6 +307,14 @@ class ShowInstanceResponse(SdkResponse):
         :type kafka_private_connect_address: str
         :param ces_version: 云监控版本。
         :type ces_version: str
+        :param public_access_enabled: 区分实例什么时候开启的公网访问：true,actived,closed,false。
+        :type public_access_enabled: str
+        :param node_num: 节点数。
+        :type node_num: int
+        :param new_spec_billing_enable: 是否启用新规格计费。
+        :type new_spec_billing_enable: bool
+        :param broker_num: 节点数量。
+        :type broker_num: int
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkkafka.v2.TagEntity`]
         :param dr_enable: 是否为容灾实例。
@@ -286,6 +326,7 @@ class ShowInstanceResponse(SdkResponse):
         self._name = None
         self._engine = None
         self._engine_version = None
+        self._description = None
         self._specification = None
         self._storage_space = None
         self._partition_num = None
@@ -301,12 +342,15 @@ class ShowInstanceResponse(SdkResponse):
         self._created_at = None
         self._user_id = None
         self._user_name = None
+        self._access_user = None
         self._order_id = None
         self._maintain_begin = None
         self._maintain_end = None
         self._enable_publicip = None
         self._management_connect_address = None
         self._ssl_enable = None
+        self._ssl_two_way_enable = None
+        self._cert_replaced = None
         self._enterprise_project_id = None
         self._is_logical_volume = None
         self._extend_times = None
@@ -335,14 +379,20 @@ class ShowInstanceResponse(SdkResponse):
         self._connector_id = None
         self._rest_enable = None
         self._rest_connect_address = None
+        self._public_boundwidth = None
         self._message_query_inst_enable = None
         self._vpc_client_plain = None
         self._support_features = None
         self._trace_enable = None
+        self._agent_enable = None
         self._pod_connect_address = None
         self._disk_encrypted = None
         self._kafka_private_connect_address = None
         self._ces_version = None
+        self._public_access_enabled = None
+        self._node_num = None
+        self._new_spec_billing_enable = None
+        self._broker_num = None
         self._tags = None
         self._dr_enable = None
         self.discriminator = None
@@ -353,6 +403,8 @@ class ShowInstanceResponse(SdkResponse):
             self.engine = engine
         if engine_version is not None:
             self.engine_version = engine_version
+        if description is not None:
+            self.description = description
         if specification is not None:
             self.specification = specification
         if storage_space is not None:
@@ -383,6 +435,8 @@ class ShowInstanceResponse(SdkResponse):
             self.user_id = user_id
         if user_name is not None:
             self.user_name = user_name
+        if access_user is not None:
+            self.access_user = access_user
         if order_id is not None:
             self.order_id = order_id
         if maintain_begin is not None:
@@ -395,6 +449,10 @@ class ShowInstanceResponse(SdkResponse):
             self.management_connect_address = management_connect_address
         if ssl_enable is not None:
             self.ssl_enable = ssl_enable
+        if ssl_two_way_enable is not None:
+            self.ssl_two_way_enable = ssl_two_way_enable
+        if cert_replaced is not None:
+            self.cert_replaced = cert_replaced
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if is_logical_volume is not None:
@@ -451,6 +509,8 @@ class ShowInstanceResponse(SdkResponse):
             self.rest_enable = rest_enable
         if rest_connect_address is not None:
             self.rest_connect_address = rest_connect_address
+        if public_boundwidth is not None:
+            self.public_boundwidth = public_boundwidth
         if message_query_inst_enable is not None:
             self.message_query_inst_enable = message_query_inst_enable
         if vpc_client_plain is not None:
@@ -459,6 +519,8 @@ class ShowInstanceResponse(SdkResponse):
             self.support_features = support_features
         if trace_enable is not None:
             self.trace_enable = trace_enable
+        if agent_enable is not None:
+            self.agent_enable = agent_enable
         if pod_connect_address is not None:
             self.pod_connect_address = pod_connect_address
         if disk_encrypted is not None:
@@ -467,6 +529,14 @@ class ShowInstanceResponse(SdkResponse):
             self.kafka_private_connect_address = kafka_private_connect_address
         if ces_version is not None:
             self.ces_version = ces_version
+        if public_access_enabled is not None:
+            self.public_access_enabled = public_access_enabled
+        if node_num is not None:
+            self.node_num = node_num
+        if new_spec_billing_enable is not None:
+            self.new_spec_billing_enable = new_spec_billing_enable
+        if broker_num is not None:
+            self.broker_num = broker_num
         if tags is not None:
             self.tags = tags
         if dr_enable is not None:
@@ -537,6 +607,28 @@ class ShowInstanceResponse(SdkResponse):
         :type engine_version: str
         """
         self._engine_version = engine_version
+
+    @property
+    def description(self):
+        """Gets the description of this ShowInstanceResponse.
+
+        实例描述。
+
+        :return: The description of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ShowInstanceResponse.
+
+        实例描述。
+
+        :param description: The description of this ShowInstanceResponse.
+        :type description: str
+        """
+        self._description = description
 
     @property
     def specification(self):
@@ -674,7 +766,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowInstanceResponse.
 
-        实例的状态。
+        实例的状态。 [详细状态说明见[实例状态说明](https://support.huaweicloud.com/api-kafka/kafka-api-180514012.html)。](tag:hws)[详细状态说明见[实例状态说明](https://support.huaweicloud.com/intl/zh-cn/api-kafka/kafka-api-180514012.html)。](tag:hws_hk)
 
         :return: The status of this ShowInstanceResponse.
         :rtype: str
@@ -685,7 +777,7 @@ class ShowInstanceResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowInstanceResponse.
 
-        实例的状态。
+        实例的状态。 [详细状态说明见[实例状态说明](https://support.huaweicloud.com/api-kafka/kafka-api-180514012.html)。](tag:hws)[详细状态说明见[实例状态说明](https://support.huaweicloud.com/intl/zh-cn/api-kafka/kafka-api-180514012.html)。](tag:hws_hk)
 
         :param status: The status of this ShowInstanceResponse.
         :type status: str
@@ -869,6 +961,28 @@ class ShowInstanceResponse(SdkResponse):
         self._user_name = user_name
 
     @property
+    def access_user(self):
+        """Gets the access_user of this ShowInstanceResponse.
+
+        实例访问用户名。
+
+        :return: The access_user of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._access_user
+
+    @access_user.setter
+    def access_user(self, access_user):
+        """Sets the access_user of this ShowInstanceResponse.
+
+        实例访问用户名。
+
+        :param access_user: The access_user of this ShowInstanceResponse.
+        :type access_user: str
+        """
+        self._access_user = access_user
+
+    @property
     def order_id(self):
         """Gets the order_id of this ShowInstanceResponse.
 
@@ -960,7 +1074,7 @@ class ShowInstanceResponse(SdkResponse):
     def management_connect_address(self):
         """Gets the management_connect_address of this ShowInstanceResponse.
 
-        Kafka实例的KafkaManager连接地址。
+        Kafka实例的Kafka Manager连接地址。
 
         :return: The management_connect_address of this ShowInstanceResponse.
         :rtype: str
@@ -971,7 +1085,7 @@ class ShowInstanceResponse(SdkResponse):
     def management_connect_address(self, management_connect_address):
         """Sets the management_connect_address of this ShowInstanceResponse.
 
-        Kafka实例的KafkaManager连接地址。
+        Kafka实例的Kafka Manager连接地址。
 
         :param management_connect_address: The management_connect_address of this ShowInstanceResponse.
         :type management_connect_address: str
@@ -999,6 +1113,50 @@ class ShowInstanceResponse(SdkResponse):
         :type ssl_enable: bool
         """
         self._ssl_enable = ssl_enable
+
+    @property
+    def ssl_two_way_enable(self):
+        """Gets the ssl_two_way_enable of this ShowInstanceResponse.
+
+        是否开启双向认证。
+
+        :return: The ssl_two_way_enable of this ShowInstanceResponse.
+        :rtype: bool
+        """
+        return self._ssl_two_way_enable
+
+    @ssl_two_way_enable.setter
+    def ssl_two_way_enable(self, ssl_two_way_enable):
+        """Sets the ssl_two_way_enable of this ShowInstanceResponse.
+
+        是否开启双向认证。
+
+        :param ssl_two_way_enable: The ssl_two_way_enable of this ShowInstanceResponse.
+        :type ssl_two_way_enable: bool
+        """
+        self._ssl_two_way_enable = ssl_two_way_enable
+
+    @property
+    def cert_replaced(self):
+        """Gets the cert_replaced of this ShowInstanceResponse.
+
+        是否能够证书替换。
+
+        :return: The cert_replaced of this ShowInstanceResponse.
+        :rtype: bool
+        """
+        return self._cert_replaced
+
+    @cert_replaced.setter
+    def cert_replaced(self, cert_replaced):
+        """Sets the cert_replaced of this ShowInstanceResponse.
+
+        是否能够证书替换。
+
+        :param cert_replaced: The cert_replaced of this ShowInstanceResponse.
+        :type cert_replaced: bool
+        """
+        self._cert_replaced = cert_replaced
 
     @property
     def enterprise_project_id(self):
@@ -1400,7 +1558,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_bandwidth(self):
         """Gets the public_bandwidth of this ShowInstanceResponse.
 
-        公网带宽。
+        kafka公网访问带宽。
 
         :return: The public_bandwidth of this ShowInstanceResponse.
         :rtype: int
@@ -1411,7 +1569,7 @@ class ShowInstanceResponse(SdkResponse):
     def public_bandwidth(self, public_bandwidth):
         """Sets the public_bandwidth of this ShowInstanceResponse.
 
-        公网带宽。
+        kafka公网访问带宽。
 
         :param public_bandwidth: The public_bandwidth of this ShowInstanceResponse.
         :type public_bandwidth: int
@@ -1532,7 +1690,7 @@ class ShowInstanceResponse(SdkResponse):
     def connector_enable(self):
         """Gets the connector_enable of this ShowInstanceResponse.
 
-        是否开启转储。
+        是否开启转储。新规格产品暂不支持开启转储。
 
         :return: The connector_enable of this ShowInstanceResponse.
         :rtype: bool
@@ -1543,7 +1701,7 @@ class ShowInstanceResponse(SdkResponse):
     def connector_enable(self, connector_enable):
         """Sets the connector_enable of this ShowInstanceResponse.
 
-        是否开启转储。
+        是否开启转储。新规格产品暂不支持开启转储。
 
         :param connector_enable: The connector_enable of this ShowInstanceResponse.
         :type connector_enable: bool
@@ -1615,6 +1773,28 @@ class ShowInstanceResponse(SdkResponse):
         :type rest_connect_address: str
         """
         self._rest_connect_address = rest_connect_address
+
+    @property
+    def public_boundwidth(self):
+        """Gets the public_boundwidth of this ShowInstanceResponse.
+
+        kafka公网访问带宽。待删除版本。
+
+        :return: The public_boundwidth of this ShowInstanceResponse.
+        :rtype: int
+        """
+        return self._public_boundwidth
+
+    @public_boundwidth.setter
+    def public_boundwidth(self, public_boundwidth):
+        """Sets the public_boundwidth of this ShowInstanceResponse.
+
+        kafka公网访问带宽。待删除版本。
+
+        :param public_boundwidth: The public_boundwidth of this ShowInstanceResponse.
+        :type public_boundwidth: int
+        """
+        self._public_boundwidth = public_boundwidth
 
     @property
     def message_query_inst_enable(self):
@@ -1705,6 +1885,28 @@ class ShowInstanceResponse(SdkResponse):
         self._trace_enable = trace_enable
 
     @property
+    def agent_enable(self):
+        """Gets the agent_enable of this ShowInstanceResponse.
+
+        是否开启代理。
+
+        :return: The agent_enable of this ShowInstanceResponse.
+        :rtype: bool
+        """
+        return self._agent_enable
+
+    @agent_enable.setter
+    def agent_enable(self, agent_enable):
+        """Sets the agent_enable of this ShowInstanceResponse.
+
+        是否开启代理。
+
+        :param agent_enable: The agent_enable of this ShowInstanceResponse.
+        :type agent_enable: bool
+        """
+        self._agent_enable = agent_enable
+
+    @property
     def pod_connect_address(self):
         """Gets the pod_connect_address of this ShowInstanceResponse.
 
@@ -1791,6 +1993,94 @@ class ShowInstanceResponse(SdkResponse):
         :type ces_version: str
         """
         self._ces_version = ces_version
+
+    @property
+    def public_access_enabled(self):
+        """Gets the public_access_enabled of this ShowInstanceResponse.
+
+        区分实例什么时候开启的公网访问：true,actived,closed,false。
+
+        :return: The public_access_enabled of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._public_access_enabled
+
+    @public_access_enabled.setter
+    def public_access_enabled(self, public_access_enabled):
+        """Sets the public_access_enabled of this ShowInstanceResponse.
+
+        区分实例什么时候开启的公网访问：true,actived,closed,false。
+
+        :param public_access_enabled: The public_access_enabled of this ShowInstanceResponse.
+        :type public_access_enabled: str
+        """
+        self._public_access_enabled = public_access_enabled
+
+    @property
+    def node_num(self):
+        """Gets the node_num of this ShowInstanceResponse.
+
+        节点数。
+
+        :return: The node_num of this ShowInstanceResponse.
+        :rtype: int
+        """
+        return self._node_num
+
+    @node_num.setter
+    def node_num(self, node_num):
+        """Sets the node_num of this ShowInstanceResponse.
+
+        节点数。
+
+        :param node_num: The node_num of this ShowInstanceResponse.
+        :type node_num: int
+        """
+        self._node_num = node_num
+
+    @property
+    def new_spec_billing_enable(self):
+        """Gets the new_spec_billing_enable of this ShowInstanceResponse.
+
+        是否启用新规格计费。
+
+        :return: The new_spec_billing_enable of this ShowInstanceResponse.
+        :rtype: bool
+        """
+        return self._new_spec_billing_enable
+
+    @new_spec_billing_enable.setter
+    def new_spec_billing_enable(self, new_spec_billing_enable):
+        """Sets the new_spec_billing_enable of this ShowInstanceResponse.
+
+        是否启用新规格计费。
+
+        :param new_spec_billing_enable: The new_spec_billing_enable of this ShowInstanceResponse.
+        :type new_spec_billing_enable: bool
+        """
+        self._new_spec_billing_enable = new_spec_billing_enable
+
+    @property
+    def broker_num(self):
+        """Gets the broker_num of this ShowInstanceResponse.
+
+        节点数量。
+
+        :return: The broker_num of this ShowInstanceResponse.
+        :rtype: int
+        """
+        return self._broker_num
+
+    @broker_num.setter
+    def broker_num(self, broker_num):
+        """Sets the broker_num of this ShowInstanceResponse.
+
+        节点数量。
+
+        :param broker_num: The broker_num of this ShowInstanceResponse.
+        :type broker_num: int
+        """
+        self._broker_num = broker_num
 
     @property
     def tags(self):

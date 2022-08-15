@@ -37,7 +37,7 @@ class CreateConnectorReq:
 
         The model defined in huaweicloud sdk
 
-        :param specification: 部署connector的规格，基准带宽，表示单位时间内传送的最大数据量，单位Byte/秒。  取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB  可以不填，则默认跟当前实例的规格是一致。  第一阶段实现先不填，保持和当前实例规格一致，后面再扩展可以选择不同的规格。
+        :param specification: 部署connector的规格，基准带宽，表示单位时间内传送的最大数据量，单位Byte/秒。  取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB  可以不填，则默认跟当前实例的规格是一致。  第一阶段实现先不填，保持和当前实例规格一致，后面再扩展可以选择不同的规格。  新规格产品暂不支持转储。
         :type specification: str
         :param node_cnt: 转储节点数量。不能小于2个。 默认是2个。 
         :type node_cnt: str
@@ -62,7 +62,7 @@ class CreateConnectorReq:
     def specification(self):
         """Gets the specification of this CreateConnectorReq.
 
-        部署connector的规格，基准带宽，表示单位时间内传送的最大数据量，单位Byte/秒。  取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB  可以不填，则默认跟当前实例的规格是一致。  第一阶段实现先不填，保持和当前实例规格一致，后面再扩展可以选择不同的规格。
+        部署connector的规格，基准带宽，表示单位时间内传送的最大数据量，单位Byte/秒。  取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB  可以不填，则默认跟当前实例的规格是一致。  第一阶段实现先不填，保持和当前实例规格一致，后面再扩展可以选择不同的规格。  新规格产品暂不支持转储。
 
         :return: The specification of this CreateConnectorReq.
         :rtype: str
@@ -73,7 +73,7 @@ class CreateConnectorReq:
     def specification(self, specification):
         """Sets the specification of this CreateConnectorReq.
 
-        部署connector的规格，基准带宽，表示单位时间内传送的最大数据量，单位Byte/秒。  取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB  可以不填，则默认跟当前实例的规格是一致。  第一阶段实现先不填，保持和当前实例规格一致，后面再扩展可以选择不同的规格。
+        部署connector的规格，基准带宽，表示单位时间内传送的最大数据量，单位Byte/秒。  取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB  可以不填，则默认跟当前实例的规格是一致。  第一阶段实现先不填，保持和当前实例规格一致，后面再扩展可以选择不同的规格。  新规格产品暂不支持转储。
 
         :param specification: The specification of this CreateConnectorReq.
         :type specification: str

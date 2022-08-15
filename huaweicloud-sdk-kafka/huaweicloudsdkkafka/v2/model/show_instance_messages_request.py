@@ -53,7 +53,7 @@ class ShowInstanceMessagesRequest:
 
         :param instance_id: 实例ID。
         :type instance_id: str
-        :param topic: topic名称。
+        :param topic: Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
         :type topic: str
         :param asc: 是否按照时间排序。
         :type asc: bool
@@ -61,7 +61,7 @@ class ShowInstanceMessagesRequest:
         :type start_time: str
         :param end_time: 结束时间。  Unix毫秒时间戳。  查询消息偏移量时，为必选参数。
         :type end_time: str
-        :param limit: 分页大小。
+        :param limit: 分页大小。取值范围为0~50。
         :type limit: str
         :param offset: 偏移量，表示从此偏移量开始查询， offset大于等于0。
         :type offset: str
@@ -132,7 +132,7 @@ class ShowInstanceMessagesRequest:
     def topic(self):
         """Gets the topic of this ShowInstanceMessagesRequest.
 
-        topic名称。
+        Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
         :return: The topic of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -143,7 +143,7 @@ class ShowInstanceMessagesRequest:
     def topic(self, topic):
         """Sets the topic of this ShowInstanceMessagesRequest.
 
-        topic名称。
+        Topic名称。  Topic名称必现以字母开头且只支持大小写字母、中横线、下划线以及数字。
 
         :param topic: The topic of this ShowInstanceMessagesRequest.
         :type topic: str
@@ -220,7 +220,7 @@ class ShowInstanceMessagesRequest:
     def limit(self):
         """Gets the limit of this ShowInstanceMessagesRequest.
 
-        分页大小。
+        分页大小。取值范围为0~50。
 
         :return: The limit of this ShowInstanceMessagesRequest.
         :rtype: str
@@ -231,7 +231,7 @@ class ShowInstanceMessagesRequest:
     def limit(self, limit):
         """Sets the limit of this ShowInstanceMessagesRequest.
 
-        分页大小。
+        分页大小。取值范围为0~50。
 
         :param limit: The limit of this ShowInstanceMessagesRequest.
         :type limit: str

@@ -35,9 +35,9 @@ class ListTopAbnormalResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 攻击类型种类
+        :param total: 异常请求数量
         :type total: int
-        :param items: CountItem详细信息
+        :param items: 异常请求信息数组
         :type items: list[:class:`huaweicloudsdkwaf.v1.UrlCountItem`]
         """
         
@@ -56,7 +56,7 @@ class ListTopAbnormalResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListTopAbnormalResponse.
 
-        攻击类型种类
+        异常请求数量
 
         :return: The total of this ListTopAbnormalResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class ListTopAbnormalResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListTopAbnormalResponse.
 
-        攻击类型种类
+        异常请求数量
 
         :param total: The total of this ListTopAbnormalResponse.
         :type total: int
@@ -78,7 +78,7 @@ class ListTopAbnormalResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListTopAbnormalResponse.
 
-        CountItem详细信息
+        异常请求信息数组
 
         :return: The items of this ListTopAbnormalResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.UrlCountItem`]
@@ -89,7 +89,7 @@ class ListTopAbnormalResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListTopAbnormalResponse.
 
-        CountItem详细信息
+        异常请求信息数组
 
         :param items: The items of this ListTopAbnormalResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.UrlCountItem`]

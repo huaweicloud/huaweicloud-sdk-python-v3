@@ -35,7 +35,7 @@ class ShowCertificateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param certificate_id: https证书id，您可以通过调用查询证书列表（ListCertificates）接口获取证书id
         :type certificate_id: str
@@ -55,7 +55,7 @@ class ShowCertificateRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowCertificateRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ShowCertificateRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class ShowCertificateRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowCertificateRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ShowCertificateRequest.
         :type enterprise_project_id: str

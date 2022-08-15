@@ -47,17 +47,17 @@ class IndirectPartnerInfo:
 
         The model defined in huaweicloud sdk
 
-        :param indirect_partner_id: 精英服务商ID。
+        :param indirect_partner_id: 云经销商ID。
         :type indirect_partner_id: str
-        :param mobile_phone: 精英服务商的手机号码。
+        :param mobile_phone: 云经销商的手机号码。
         :type mobile_phone: str
-        :param email: 精英服务商的邮箱。
+        :param email: 云经销商的邮箱。
         :type email: str
-        :param account_name: 精英服务商的账户名。
+        :param account_name: 云经销商的账户名。
         :type account_name: str
-        :param name: 精英服务商的名称。
+        :param name: 云经销商的名称。
         :type name: str
-        :param associated_on: 精英服务商关联华为云伙伴能力中心的时间。 UTC时间（包括时区），例如2016-03-28T00:00:00Z。
+        :param associated_on: 云经销商关联华为云总经销商的时间。 UTC时间（包括时区），例如2016-03-28T00:00:00Z。
         :type associated_on: str
         :param account_manager_id: 客户经理登录账户名。
         :type account_manager_id: str
@@ -98,7 +98,7 @@ class IndirectPartnerInfo:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this IndirectPartnerInfo.
 
-        精英服务商ID。
+        云经销商ID。
 
         :return: The indirect_partner_id of this IndirectPartnerInfo.
         :rtype: str
@@ -109,7 +109,7 @@ class IndirectPartnerInfo:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this IndirectPartnerInfo.
 
-        精英服务商ID。
+        云经销商ID。
 
         :param indirect_partner_id: The indirect_partner_id of this IndirectPartnerInfo.
         :type indirect_partner_id: str
@@ -120,7 +120,7 @@ class IndirectPartnerInfo:
     def mobile_phone(self):
         """Gets the mobile_phone of this IndirectPartnerInfo.
 
-        精英服务商的手机号码。
+        云经销商的手机号码。
 
         :return: The mobile_phone of this IndirectPartnerInfo.
         :rtype: str
@@ -131,7 +131,7 @@ class IndirectPartnerInfo:
     def mobile_phone(self, mobile_phone):
         """Sets the mobile_phone of this IndirectPartnerInfo.
 
-        精英服务商的手机号码。
+        云经销商的手机号码。
 
         :param mobile_phone: The mobile_phone of this IndirectPartnerInfo.
         :type mobile_phone: str
@@ -142,7 +142,7 @@ class IndirectPartnerInfo:
     def email(self):
         """Gets the email of this IndirectPartnerInfo.
 
-        精英服务商的邮箱。
+        云经销商的邮箱。
 
         :return: The email of this IndirectPartnerInfo.
         :rtype: str
@@ -153,7 +153,7 @@ class IndirectPartnerInfo:
     def email(self, email):
         """Sets the email of this IndirectPartnerInfo.
 
-        精英服务商的邮箱。
+        云经销商的邮箱。
 
         :param email: The email of this IndirectPartnerInfo.
         :type email: str
@@ -164,7 +164,7 @@ class IndirectPartnerInfo:
     def account_name(self):
         """Gets the account_name of this IndirectPartnerInfo.
 
-        精英服务商的账户名。
+        云经销商的账户名。
 
         :return: The account_name of this IndirectPartnerInfo.
         :rtype: str
@@ -175,7 +175,7 @@ class IndirectPartnerInfo:
     def account_name(self, account_name):
         """Sets the account_name of this IndirectPartnerInfo.
 
-        精英服务商的账户名。
+        云经销商的账户名。
 
         :param account_name: The account_name of this IndirectPartnerInfo.
         :type account_name: str
@@ -186,7 +186,7 @@ class IndirectPartnerInfo:
     def name(self):
         """Gets the name of this IndirectPartnerInfo.
 
-        精英服务商的名称。
+        云经销商的名称。
 
         :return: The name of this IndirectPartnerInfo.
         :rtype: str
@@ -197,7 +197,7 @@ class IndirectPartnerInfo:
     def name(self, name):
         """Sets the name of this IndirectPartnerInfo.
 
-        精英服务商的名称。
+        云经销商的名称。
 
         :param name: The name of this IndirectPartnerInfo.
         :type name: str
@@ -208,7 +208,7 @@ class IndirectPartnerInfo:
     def associated_on(self):
         """Gets the associated_on of this IndirectPartnerInfo.
 
-        精英服务商关联华为云伙伴能力中心的时间。 UTC时间（包括时区），例如2016-03-28T00:00:00Z。
+        云经销商关联华为云总经销商的时间。 UTC时间（包括时区），例如2016-03-28T00:00:00Z。
 
         :return: The associated_on of this IndirectPartnerInfo.
         :rtype: str
@@ -219,7 +219,7 @@ class IndirectPartnerInfo:
     def associated_on(self, associated_on):
         """Sets the associated_on of this IndirectPartnerInfo.
 
-        精英服务商关联华为云伙伴能力中心的时间。 UTC时间（包括时区），例如2016-03-28T00:00:00Z。
+        云经销商关联华为云总经销商的时间。 UTC时间（包括时区），例如2016-03-28T00:00:00Z。
 
         :param associated_on: The associated_on of this IndirectPartnerInfo.
         :type associated_on: str

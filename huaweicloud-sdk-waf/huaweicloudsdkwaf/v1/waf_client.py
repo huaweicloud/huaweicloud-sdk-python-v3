@@ -233,9 +233,9 @@ class WafClient(Client):
             request_type=request.__class__.__name__)
 
     def create_geoip_rule(self, request):
-        """创建地理位置规则
+        """创建地理位置控制规则
 
-        创建地理位置规则
+        创建地理位置控制规则
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -355,9 +355,9 @@ class WafClient(Client):
             request_type=request.__class__.__name__)
 
     def create_ignore_rule(self, request):
-        """创建误报屏蔽规则
+        """创建全局白名单(原误报屏蔽)规则
 
-        创建误报屏蔽规则
+        创建全局白名单(原误报屏蔽)规则
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -419,7 +419,7 @@ class WafClient(Client):
     def create_policy(self, request):
         """创建防护策略
 
-        创建防护策略
+        创建防护策略，系统会在生成策略时配置一些默认的配置项，如果需要修改策略的默认配置项需要通过调用更新防护策略接口实现
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -601,7 +601,7 @@ class WafClient(Client):
     def create_value_list(self, request):
         """创建引用表
 
-        创建引用表
+        创建引用表，引用表能够被CC攻击防护规则和精准访问防护中的规则所引用。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -843,9 +843,9 @@ class WafClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_geoip_rule(self, request):
-        """删除地理位置防护规则
+        """删除地理位置控制防护规则
 
-        删除地理位置防护规则
+        删除地理位置控制防护规则
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -965,9 +965,9 @@ class WafClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_ignore_rule(self, request):
-        """删除误报屏蔽防护规则
+        """删除全局白名单(原误报屏蔽)防护规则
 
-        删除误报屏蔽防护规则
+        删除全局白名单(原误报屏蔽)防护规则
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1029,7 +1029,7 @@ class WafClient(Client):
     def delete_policy(self, request):
         """删除防护策略
 
-        删除防护策略
+        删除防护策略，若策略正在使用，则需要先接解除域名与策略的绑定关系才能删除策略。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1399,7 +1399,7 @@ class WafClient(Client):
     def list_bandwidth_timeline(self, request):
         """查询安全统计带宽数据
 
-        查询安全统计带宽数据
+        查询安全统计带宽数据。需要注意的是，安全统计相关的接口，暂时不能支持任意时间的查询。只能支持 console上显示的 昨天，今天，3天，7天和30天 数据查询。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1432,6 +1432,7 @@ class WafClient(Client):
             query_params.append(('hosts', local_var_params['hosts']))
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'csv'
         if 'group_by' in local_var_params:
             query_params.append(('group_by', local_var_params['group_by']))
 
@@ -1535,7 +1536,7 @@ class WafClient(Client):
     def list_composite_hosts(self, request):
         """查询全部防护域名列表
 
-        查询全部防护域名列表
+        查询全部防护域名列表，包括云模式和独享模式
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1619,7 +1620,7 @@ class WafClient(Client):
         return self.list_event_with_http_info(request)
 
     def list_event_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'recent', 'attacks', '_from', 'to', 'hosts', 'page', 'pagesize']
+        all_params = ['enterprise_project_id', 'recent', '_from', 'to', 'attacks', 'hosts', 'page', 'pagesize']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1634,13 +1635,13 @@ class WafClient(Client):
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
         if 'recent' in local_var_params:
             query_params.append(('recent', local_var_params['recent']))
-        if 'attacks' in local_var_params:
-            query_params.append(('attacks', local_var_params['attacks']))
-            collection_formats['attacks'] = 'csv'
         if '_from' in local_var_params:
             query_params.append(('from', local_var_params['_from']))
         if 'to' in local_var_params:
             query_params.append(('to', local_var_params['to']))
+        if 'attacks' in local_var_params:
+            query_params.append(('attacks', local_var_params['attacks']))
+            collection_formats['attacks'] = 'csv'
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
             collection_formats['hosts'] = 'csv'
@@ -1679,9 +1680,9 @@ class WafClient(Client):
             request_type=request.__class__.__name__)
 
     def list_geoip_rule(self, request):
-        """查询地理位置规则列表
+        """查询地理位置访问控制规则列表
 
-        查询地理位置规则列表
+        查询地理位置访问控制规则列表
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1869,9 +1870,9 @@ class WafClient(Client):
             request_type=request.__class__.__name__)
 
     def list_ignore_rule(self, request):
-        """查询误报屏蔽规则列表
+        """查询全局白名单(原误报屏蔽)规则列表
 
-        查询误报屏蔽规则列表
+        查询全局白名单(原误报屏蔽)规则列表
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1935,7 +1936,7 @@ class WafClient(Client):
     def list_overviews_classification(self, request):
         """查询安全总览分类统计top信息
 
-        查询安全总览分类统计top信息，包含受攻击域名 、攻击源ip、受攻击URL、攻击来源区域、事件分布
+        查询安全总览分类统计TOP信息，包含受攻击域名 、攻击源ip、受攻击URL、攻击来源区域、攻击事件分布。需要注意的是，安全总览相关的接口，暂时不能支持任意时间的查询。只能支持 console上显示的 昨天，今天，3天，7天和30天 数据查询。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1968,8 +1969,10 @@ class WafClient(Client):
             query_params.append(('top', local_var_params['top']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'csv'
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'csv'
 
         header_params = {}
 
@@ -2199,7 +2202,7 @@ class WafClient(Client):
     def list_qps_timeline(self, request):
         """查询安全统计qps次数
 
-        查询安全统计qps次数
+        查询安全统计qps次数。需要注意的是，安全统计相关的接口，暂时不能支持任意时间的查询。只能支持 console上显示的 昨天，今天，3天，7天和30天 数据查询。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2230,8 +2233,10 @@ class WafClient(Client):
             query_params.append(('to', local_var_params['to']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'csv'
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'csv'
         if 'group_by' in local_var_params:
             query_params.append(('group_by', local_var_params['group_by']))
 
@@ -2267,7 +2272,7 @@ class WafClient(Client):
     def list_statistics(self, request):
         """查询安全总览请求与攻击数量
 
-        查询安全总览请求与攻击数量
+        查询安全总览请求与攻击数量。需要注意的是，安全总览相关的接口，暂时不能支持任意时间的查询。只能支持 console上显示的 昨天，今天，3天，7天和30天 数据查询。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2298,8 +2303,10 @@ class WafClient(Client):
             query_params.append(('to', local_var_params['to']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'csv'
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'csv'
 
         header_params = {}
 
@@ -2333,7 +2340,7 @@ class WafClient(Client):
     def list_top_abnormal(self, request):
         """查询业务异常数量
 
-        查询业务异常数量
+        查询业务异常TOP统计信息。需要注意的是，安全总览相关的接口，暂时不能支持任意时间的查询。只能支持 console上显示的 昨天，今天，3天，7天和30天 数据查询。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2368,8 +2375,10 @@ class WafClient(Client):
             query_params.append(('code', local_var_params['code']))
         if 'hosts' in local_var_params:
             query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'csv'
         if 'instances' in local_var_params:
             query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'csv'
 
         header_params = {}
 
@@ -2705,9 +2714,9 @@ class WafClient(Client):
             request_type=request.__class__.__name__)
 
     def show_event(self, request):
-        """查询攻击事件详情
+        """查询指定事件id的防护事件详情
 
-        查询攻击事件详情
+        查询指定事件id的防护事件详情
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2765,9 +2774,9 @@ class WafClient(Client):
             request_type=request.__class__.__name__)
 
     def show_host(self, request):
-        """根据Id查询云模式防护域名
+        """根据防护域名Id查询云模式防护域名详细信息
 
-        根据Id查询云模式防护域名
+        根据防护域名Id查询云模式防护域名详细信息
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3007,9 +3016,9 @@ class WafClient(Client):
             request_type=request.__class__.__name__)
 
     def update_geoip_rule(self, request):
-        """更新地理位置防护规则
+        """更新地理位置控制防护规则
 
-        更新地理位置防护规则
+        更新地理位置控制防护规则
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3071,9 +3080,9 @@ class WafClient(Client):
             request_type=request.__class__.__name__)
 
     def update_host(self, request):
-        """更新云模式防护域名
+        """更新云模式防护域名的配置
 
-        更新云模式防护域名配置，在没有填入源站信息server的原始数据的情况下，则新的源站信息server会覆盖源站信息，而不是新增源站
+        更新云模式防护域名配置，在没有填入源站信息server的原始数据的情况下，则新的源站信息server会覆盖源站信息，而不是新增源站。此外，请求体可只传需要更新的部分。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3135,7 +3144,7 @@ class WafClient(Client):
     def update_host_protect_status(self, request):
         """修改域名防护状态
 
-        返回路由信息
+        修改域名防护状态
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3321,7 +3330,7 @@ class WafClient(Client):
     def update_policy_rule_status(self, request):
         """修改单条规则的状态
 
-        修改单条规则的状态
+        修改单条规则的状态，用于开启或者关闭单条规则，比如关闭精准防护中某一条规则
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3387,7 +3396,7 @@ class WafClient(Client):
     def update_premium_host(self, request):
         """修改独享模式域名配置
 
-        修改独享模式域名配置
+        修改独享模式域名配置，在没有填入源站信息server的原始数据的情况下，则新的源站信息server会覆盖源站信息，而不是新增源站。此外，请求体可只传需要更新的部分。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3637,7 +3646,7 @@ class WafClient(Client):
     def update_whiteblackip_rule(self, request):
         """更新黑白名单防护规则
 
-        更新黑白名单防护规则
+        更新黑白名单防护规则，可以更新ip/ip段以及防护动作等信息
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

@@ -33,6 +33,7 @@ class CreateInstanceReq:
         'subnet_id': 'str',
         'available_zones': 'list[str]',
         'product_id': 'str',
+        'broker_num': 'int',
         'maintain_begin': 'str',
         'maintain_end': 'str',
         'enable_publicip': 'bool',
@@ -56,6 +57,7 @@ class CreateInstanceReq:
         'subnet_id': 'subnet_id',
         'available_zones': 'available_zones',
         'product_id': 'product_id',
+        'broker_num': 'broker_num',
         'maintain_begin': 'maintain_begin',
         'maintain_end': 'maintain_end',
         'enable_publicip': 'enable_publicip',
@@ -66,7 +68,7 @@ class CreateInstanceReq:
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, storage_space=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, broker_num=None, maintain_begin=None, maintain_end=None, enable_publicip=None, publicip_id=None, ssl_enable=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
         """CreateInstanceReq
 
         The model defined in huaweicloud sdk
@@ -93,8 +95,10 @@ class CreateInstanceReq:
         :type subnet_id: str
         :param available_zones: 创建节点到指定且有资源的可用区ID。该参数不能为空数组或者数组的值为空。
         :type available_zones: list[str]
-        :param product_id: 产品标识。
+        :param product_id: 产品标识。  产品ID可以从**查询产品规格列表**接口查询。  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
         :type product_id: str
+        :param broker_num: 代理个数。  当产品为单机类型，代理个数只能为1；当产品为集群类型，可选3、5、7个代理个数。  产品类型为single时:   - 1  产品类型为cluster时:   - 3   - 5   - 7
+        :type broker_num: int
         :param maintain_begin: 维护时间窗开始时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 开始时间必须为22:00、02:00、06:00、10:00、14:00和18:00。 - 该参数不能单独为空，若该值为空，则结束时间也为空。系统分配一个默认开始时间02:00。
         :type maintain_begin: str
         :param maintain_end: 维护时间窗结束时间，格式为HH:mm。 - 维护时间窗开始和结束时间必须为指定的时间段。 - 结束时间在开始时间基础上加四个小时，即当开始时间为22:00时，结束时间为02:00。 - 该参数不能单独为空，若该值为空，则开始时间也为空，系统分配一个默认结束时间06:00。
@@ -105,7 +109,7 @@ class CreateInstanceReq:
         :type publicip_id: str
         :param ssl_enable: 是否打开SSL加密访问。 - true：打开SSL加密访问。 - false：不打开SSL加密访问。
         :type ssl_enable: bool
-        :param storage_spec_code: 存储IO规格。  取值范围：   - dms.physical.storage.normal：   - dms.physical.storage.high   - dms.physical.storage.ultra
+        :param storage_spec_code: 存储IO规格。  取值范围：   - dms.physical.storage.high.v2   - dms.physical.storage.ultra.v2   - dms.physical.storage.high.dss.v2   - dms.physical.storage.ultra.dss.v2
         :type storage_spec_code: str
         :param enterprise_project_id: 企业项目ID。若为企业项目帐号，该参数必填。
         :type enterprise_project_id: str
@@ -127,6 +131,7 @@ class CreateInstanceReq:
         self._subnet_id = None
         self._available_zones = None
         self._product_id = None
+        self._broker_num = None
         self._maintain_begin = None
         self._maintain_end = None
         self._enable_publicip = None
@@ -150,6 +155,8 @@ class CreateInstanceReq:
         self.subnet_id = subnet_id
         self.available_zones = available_zones
         self.product_id = product_id
+        if broker_num is not None:
+            self.broker_num = broker_num
         if maintain_begin is not None:
             self.maintain_begin = maintain_begin
         if maintain_end is not None:
@@ -412,7 +419,7 @@ class CreateInstanceReq:
     def product_id(self):
         """Gets the product_id of this CreateInstanceReq.
 
-        产品标识。
+        产品标识。  产品ID可以从**查询产品规格列表**接口查询。  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
 
         :return: The product_id of this CreateInstanceReq.
         :rtype: str
@@ -423,12 +430,34 @@ class CreateInstanceReq:
     def product_id(self, product_id):
         """Sets the product_id of this CreateInstanceReq.
 
-        产品标识。
+        产品标识。  产品ID可以从**查询产品规格列表**接口查询。  如果产品ID为集群类型（即对应的type为cluster），broker_num字段为必选。
 
         :param product_id: The product_id of this CreateInstanceReq.
         :type product_id: str
         """
         self._product_id = product_id
+
+    @property
+    def broker_num(self):
+        """Gets the broker_num of this CreateInstanceReq.
+
+        代理个数。  当产品为单机类型，代理个数只能为1；当产品为集群类型，可选3、5、7个代理个数。  产品类型为single时:   - 1  产品类型为cluster时:   - 3   - 5   - 7
+
+        :return: The broker_num of this CreateInstanceReq.
+        :rtype: int
+        """
+        return self._broker_num
+
+    @broker_num.setter
+    def broker_num(self, broker_num):
+        """Sets the broker_num of this CreateInstanceReq.
+
+        代理个数。  当产品为单机类型，代理个数只能为1；当产品为集群类型，可选3、5、7个代理个数。  产品类型为single时:   - 1  产品类型为cluster时:   - 3   - 5   - 7
+
+        :param broker_num: The broker_num of this CreateInstanceReq.
+        :type broker_num: int
+        """
+        self._broker_num = broker_num
 
     @property
     def maintain_begin(self):
@@ -544,7 +573,7 @@ class CreateInstanceReq:
     def storage_spec_code(self):
         """Gets the storage_spec_code of this CreateInstanceReq.
 
-        存储IO规格。  取值范围：   - dms.physical.storage.normal：   - dms.physical.storage.high   - dms.physical.storage.ultra
+        存储IO规格。  取值范围：   - dms.physical.storage.high.v2   - dms.physical.storage.ultra.v2   - dms.physical.storage.high.dss.v2   - dms.physical.storage.ultra.dss.v2
 
         :return: The storage_spec_code of this CreateInstanceReq.
         :rtype: str
@@ -555,7 +584,7 @@ class CreateInstanceReq:
     def storage_spec_code(self, storage_spec_code):
         """Sets the storage_spec_code of this CreateInstanceReq.
 
-        存储IO规格。  取值范围：   - dms.physical.storage.normal：   - dms.physical.storage.high   - dms.physical.storage.ultra
+        存储IO规格。  取值范围：   - dms.physical.storage.high.v2   - dms.physical.storage.ultra.v2   - dms.physical.storage.high.dss.v2   - dms.physical.storage.ultra.dss.v2
 
         :param storage_spec_code: The storage_spec_code of this CreateInstanceReq.
         :type storage_spec_code: str

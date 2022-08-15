@@ -49,7 +49,7 @@ class ShowClusterRespClusterBrokers:
         :type host: str
         :param port: 端口号。
         :type port: int
-        :param broker_id: 节点id。
+        :param broker_id: 节点ID。
         :type broker_id: str
         :param is_controller: 是否为contoller节点。
         :type is_controller: bool
@@ -135,7 +135,7 @@ class ShowClusterRespClusterBrokers:
     def broker_id(self):
         """Gets the broker_id of this ShowClusterRespClusterBrokers.
 
-        节点id。
+        节点ID。
 
         :return: The broker_id of this ShowClusterRespClusterBrokers.
         :rtype: str
@@ -146,7 +146,7 @@ class ShowClusterRespClusterBrokers:
     def broker_id(self, broker_id):
         """Sets the broker_id of this ShowClusterRespClusterBrokers.
 
-        节点id。
+        节点ID。
 
         :param broker_id: The broker_id of this ShowClusterRespClusterBrokers.
         :type broker_id: str

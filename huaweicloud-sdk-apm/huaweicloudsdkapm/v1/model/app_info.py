@@ -49,7 +49,7 @@ class AppInfo:
         :type env_name: str
         :param env_id: 环境id
         :type env_id: int
-        :param app_name: 应用名称
+        :param app_name: 应用空名称
         :type app_name: str
         :param app_id: 应用id
         :type app_id: int
@@ -135,7 +135,7 @@ class AppInfo:
     def app_name(self):
         """Gets the app_name of this AppInfo.
 
-        应用名称
+        应用空名称
 
         :return: The app_name of this AppInfo.
         :rtype: str
@@ -146,7 +146,7 @@ class AppInfo:
     def app_name(self, app_name):
         """Sets the app_name of this AppInfo.
 
-        应用名称
+        应用空名称
 
         :param app_name: The app_name of this AppInfo.
         :type app_name: str

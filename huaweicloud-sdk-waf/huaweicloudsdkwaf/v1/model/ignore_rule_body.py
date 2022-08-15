@@ -31,7 +31,8 @@ class IgnoreRuleBody:
         'mode': 'int',
         'url_logic': 'str',
         'conditions': 'list[Condition]',
-        'domains': 'list[str]'
+        'domains': 'list[str]',
+        'advanced': 'list[Advanced]'
     }
 
     attribute_map = {
@@ -45,17 +46,18 @@ class IgnoreRuleBody:
         'mode': 'mode',
         'url_logic': 'url_logic',
         'conditions': 'conditions',
-        'domains': 'domains'
+        'domains': 'domains',
+        'advanced': 'advanced'
     }
 
-    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, url=None, rule=None, mode=None, url_logic=None, conditions=None, domains=None):
+    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, url=None, rule=None, mode=None, url_logic=None, conditions=None, domains=None, advanced=None):
         """IgnoreRuleBody
 
         The model defined in huaweicloud sdk
 
         :param id: 规则id
         :type id: str
-        :param policyid: 策略id
+        :param policyid: 该规则属于的防护策略的id
         :type policyid: str
         :param timestamp: 创建规则的时间戳
         :type timestamp: int
@@ -65,7 +67,7 @@ class IgnoreRuleBody:
         :type status: int
         :param url: 误报规则屏蔽路径，仅在mode为0的状态下有该字段
         :type url: str
-        :param rule: 屏蔽的内置规则id（内置规则id通常可以在Web应用防火墙控制台的防护策略-&gt;策略名称-&gt;Web基础防护-&gt;防护规则中查询，也可以在防护事件的事件详情中查询内置规则id）
+        :param rule: 需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略-&gt;策略名称-&gt;Web基础防护的高级设置-&gt;防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xxs攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
         :type rule: str
         :param mode: 版本号，0代表v1旧版本，1代表v2新版本；mode为0时，不存在conditions字段，存在url和url_logic字段；mode为1时，不存在url和url_logic字段，存在conditions字段
         :type mode: int
@@ -75,6 +77,8 @@ class IgnoreRuleBody:
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.Condition`]
         :param domains: 防护域名或防护网站
         :type domains: list[str]
+        :param advanced: 高级配置项
+        :type advanced: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
         """
         
         
@@ -90,6 +94,7 @@ class IgnoreRuleBody:
         self._url_logic = None
         self._conditions = None
         self._domains = None
+        self._advanced = None
         self.discriminator = None
 
         if id is not None:
@@ -114,6 +119,8 @@ class IgnoreRuleBody:
             self.conditions = conditions
         if domains is not None:
             self.domains = domains
+        if advanced is not None:
+            self.advanced = advanced
 
     @property
     def id(self):
@@ -141,7 +148,7 @@ class IgnoreRuleBody:
     def policyid(self):
         """Gets the policyid of this IgnoreRuleBody.
 
-        策略id
+        该规则属于的防护策略的id
 
         :return: The policyid of this IgnoreRuleBody.
         :rtype: str
@@ -152,7 +159,7 @@ class IgnoreRuleBody:
     def policyid(self, policyid):
         """Sets the policyid of this IgnoreRuleBody.
 
-        策略id
+        该规则属于的防护策略的id
 
         :param policyid: The policyid of this IgnoreRuleBody.
         :type policyid: str
@@ -251,7 +258,7 @@ class IgnoreRuleBody:
     def rule(self):
         """Gets the rule of this IgnoreRuleBody.
 
-        屏蔽的内置规则id（内置规则id通常可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护->防护规则中查询，也可以在防护事件的事件详情中查询内置规则id）
+        需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xxs攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
         :return: The rule of this IgnoreRuleBody.
         :rtype: str
@@ -262,7 +269,7 @@ class IgnoreRuleBody:
     def rule(self, rule):
         """Sets the rule of this IgnoreRuleBody.
 
-        屏蔽的内置规则id（内置规则id通常可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护->防护规则中查询，也可以在防护事件的事件详情中查询内置规则id）
+        需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xxs攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
         :param rule: The rule of this IgnoreRuleBody.
         :type rule: str
@@ -356,6 +363,28 @@ class IgnoreRuleBody:
         :type domains: list[str]
         """
         self._domains = domains
+
+    @property
+    def advanced(self):
+        """Gets the advanced of this IgnoreRuleBody.
+
+        高级配置项
+
+        :return: The advanced of this IgnoreRuleBody.
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
+        """
+        return self._advanced
+
+    @advanced.setter
+    def advanced(self, advanced):
+        """Sets the advanced of this IgnoreRuleBody.
+
+        高级配置项
+
+        :param advanced: The advanced of this IgnoreRuleBody.
+        :type advanced: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
+        """
+        self._advanced = advanced
 
     def to_dict(self):
         """Returns the model properties as a dict"""

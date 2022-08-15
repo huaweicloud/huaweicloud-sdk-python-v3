@@ -33,7 +33,7 @@ class ListStatisticsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 安全统计数据
+        :param body: 安全总览请求与攻击数据
         :type body: list[:class:`huaweicloudsdkwaf.v1.CountItem`]
         """
         
@@ -49,7 +49,7 @@ class ListStatisticsResponse(SdkResponse):
     def body(self):
         """Gets the body of this ListStatisticsResponse.
 
-        安全统计数据
+        安全总览请求与攻击数据
 
         :return: The body of this ListStatisticsResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.CountItem`]
@@ -60,7 +60,7 @@ class ListStatisticsResponse(SdkResponse):
     def body(self, body):
         """Sets the body of this ListStatisticsResponse.
 
-        安全统计数据
+        安全总览请求与攻击数据
 
         :param body: The body of this ListStatisticsResponse.
         :type body: list[:class:`huaweicloudsdkwaf.v1.CountItem`]

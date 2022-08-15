@@ -61,9 +61,9 @@ class QuotaRecord:
         :type operator: str
         :param operation_type: 操作类型。 10：发放额度11：回收额度
         :type operation_type: str
-        :param quota_id: 精英服务商的代金券额度ID。 即华为云伙伴能力中心给精英服务商发放代金券额度时，产生的精英服务商的代金券额度ID，或者从精英服务商回收代金券额度时，精英服务商的代金券额度ID。
+        :param quota_id: 云经销商的代金券额度ID。 即华为云总经销商给云经销商发放代金券额度时，产生的云经销商的代金券额度ID，或者从云经销商回收代金券额度时，云经销商的代金券额度ID。
         :type quota_id: str
-        :param parent_quota_id: 父额度ID。 这即华为云伙伴能力中心给精英服务商发放代金券额度时，华为云伙伴能力中心的额度ID，或者从精英服务商回收代金券额度时，回收的华为云伙伴能力中心的额度ID。
+        :param parent_quota_id: 父额度ID。 这即华为云总经销商给云经销商发放代金券额度时，华为云总经销商的额度ID，或者从云经销商回收代金券额度时，回收的华为云总经销商的额度ID。
         :type parent_quota_id: str
         :param amount: 发放回收的金额。 取值大于0且精确到小数点后2位，单位：元。
         :type amount: float
@@ -71,11 +71,11 @@ class QuotaRecord:
         :type operation_time: str
         :param result: 操作结果。 0：成功-1：失败
         :type result: str
-        :param indirect_partner_account_name: 精英服务商的账号名。
+        :param indirect_partner_account_name: 云经销商的账号名。
         :type indirect_partner_account_name: str
-        :param indirect_partner_id: 精英服务商ID。
+        :param indirect_partner_id: 云经销商ID。
         :type indirect_partner_id: str
-        :param indirect_partner_name: 精英服务商的公司名称。
+        :param indirect_partner_name: 云经销商的公司名称。
         :type indirect_partner_name: str
         :param remark: 备注。
         :type remark: str
@@ -192,7 +192,7 @@ class QuotaRecord:
     def quota_id(self):
         """Gets the quota_id of this QuotaRecord.
 
-        精英服务商的代金券额度ID。 即华为云伙伴能力中心给精英服务商发放代金券额度时，产生的精英服务商的代金券额度ID，或者从精英服务商回收代金券额度时，精英服务商的代金券额度ID。
+        云经销商的代金券额度ID。 即华为云总经销商给云经销商发放代金券额度时，产生的云经销商的代金券额度ID，或者从云经销商回收代金券额度时，云经销商的代金券额度ID。
 
         :return: The quota_id of this QuotaRecord.
         :rtype: str
@@ -203,7 +203,7 @@ class QuotaRecord:
     def quota_id(self, quota_id):
         """Sets the quota_id of this QuotaRecord.
 
-        精英服务商的代金券额度ID。 即华为云伙伴能力中心给精英服务商发放代金券额度时，产生的精英服务商的代金券额度ID，或者从精英服务商回收代金券额度时，精英服务商的代金券额度ID。
+        云经销商的代金券额度ID。 即华为云总经销商给云经销商发放代金券额度时，产生的云经销商的代金券额度ID，或者从云经销商回收代金券额度时，云经销商的代金券额度ID。
 
         :param quota_id: The quota_id of this QuotaRecord.
         :type quota_id: str
@@ -214,7 +214,7 @@ class QuotaRecord:
     def parent_quota_id(self):
         """Gets the parent_quota_id of this QuotaRecord.
 
-        父额度ID。 这即华为云伙伴能力中心给精英服务商发放代金券额度时，华为云伙伴能力中心的额度ID，或者从精英服务商回收代金券额度时，回收的华为云伙伴能力中心的额度ID。
+        父额度ID。 这即华为云总经销商给云经销商发放代金券额度时，华为云总经销商的额度ID，或者从云经销商回收代金券额度时，回收的华为云总经销商的额度ID。
 
         :return: The parent_quota_id of this QuotaRecord.
         :rtype: str
@@ -225,7 +225,7 @@ class QuotaRecord:
     def parent_quota_id(self, parent_quota_id):
         """Sets the parent_quota_id of this QuotaRecord.
 
-        父额度ID。 这即华为云伙伴能力中心给精英服务商发放代金券额度时，华为云伙伴能力中心的额度ID，或者从精英服务商回收代金券额度时，回收的华为云伙伴能力中心的额度ID。
+        父额度ID。 这即华为云总经销商给云经销商发放代金券额度时，华为云总经销商的额度ID，或者从云经销商回收代金券额度时，回收的华为云总经销商的额度ID。
 
         :param parent_quota_id: The parent_quota_id of this QuotaRecord.
         :type parent_quota_id: str
@@ -302,7 +302,7 @@ class QuotaRecord:
     def indirect_partner_account_name(self):
         """Gets the indirect_partner_account_name of this QuotaRecord.
 
-        精英服务商的账号名。
+        云经销商的账号名。
 
         :return: The indirect_partner_account_name of this QuotaRecord.
         :rtype: str
@@ -313,7 +313,7 @@ class QuotaRecord:
     def indirect_partner_account_name(self, indirect_partner_account_name):
         """Sets the indirect_partner_account_name of this QuotaRecord.
 
-        精英服务商的账号名。
+        云经销商的账号名。
 
         :param indirect_partner_account_name: The indirect_partner_account_name of this QuotaRecord.
         :type indirect_partner_account_name: str
@@ -324,7 +324,7 @@ class QuotaRecord:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this QuotaRecord.
 
-        精英服务商ID。
+        云经销商ID。
 
         :return: The indirect_partner_id of this QuotaRecord.
         :rtype: str
@@ -335,7 +335,7 @@ class QuotaRecord:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this QuotaRecord.
 
-        精英服务商ID。
+        云经销商ID。
 
         :param indirect_partner_id: The indirect_partner_id of this QuotaRecord.
         :type indirect_partner_id: str
@@ -346,7 +346,7 @@ class QuotaRecord:
     def indirect_partner_name(self):
         """Gets the indirect_partner_name of this QuotaRecord.
 
-        精英服务商的公司名称。
+        云经销商的公司名称。
 
         :return: The indirect_partner_name of this QuotaRecord.
         :rtype: str
@@ -357,7 +357,7 @@ class QuotaRecord:
     def indirect_partner_name(self, indirect_partner_name):
         """Sets the indirect_partner_name of this QuotaRecord.
 
-        精英服务商的公司名称。
+        云经销商的公司名称。
 
         :param indirect_partner_name: The indirect_partner_name of this QuotaRecord.
         :type indirect_partner_name: str

@@ -35,9 +35,9 @@ class ListAntitamperRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 总条数
+        :param total: 网页防篡改规则总条数
         :type total: int
-        :param items: 规则
+        :param items: 网页防篡改规则数组
         :type items: list[:class:`huaweicloudsdkwaf.v1.AntiTamperRuleResponseBody`]
         """
         
@@ -56,7 +56,7 @@ class ListAntitamperRuleResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListAntitamperRuleResponse.
 
-        总条数
+        网页防篡改规则总条数
 
         :return: The total of this ListAntitamperRuleResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class ListAntitamperRuleResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListAntitamperRuleResponse.
 
-        总条数
+        网页防篡改规则总条数
 
         :param total: The total of this ListAntitamperRuleResponse.
         :type total: int
@@ -78,7 +78,7 @@ class ListAntitamperRuleResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListAntitamperRuleResponse.
 
-        规则
+        网页防篡改规则数组
 
         :return: The items of this ListAntitamperRuleResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.AntiTamperRuleResponseBody`]
@@ -89,7 +89,7 @@ class ListAntitamperRuleResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListAntitamperRuleResponse.
 
-        规则
+        网页防篡改规则数组
 
         :param items: The items of this ListAntitamperRuleResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.AntiTamperRuleResponseBody`]

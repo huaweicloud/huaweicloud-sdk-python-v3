@@ -23,6 +23,7 @@ class PremiumWafServer:
     openapi_types = {
         'front_protocol': 'str',
         'back_protocol': 'str',
+        'weight': 'int',
         'address': 'str',
         'port': 'int',
         'type': 'str',
@@ -32,28 +33,31 @@ class PremiumWafServer:
     attribute_map = {
         'front_protocol': 'front_protocol',
         'back_protocol': 'back_protocol',
+        'weight': 'weight',
         'address': 'address',
         'port': 'port',
         'type': 'type',
         'vpc_id': 'vpc_id'
     }
 
-    def __init__(self, front_protocol=None, back_protocol=None, address=None, port=None, type=None, vpc_id=None):
+    def __init__(self, front_protocol=None, back_protocol=None, weight=None, address=None, port=None, type=None, vpc_id=None):
         """PremiumWafServer
 
         The model defined in huaweicloud sdk
 
-        :param front_protocol: 对外协议
+        :param front_protocol: 客户端请求访问防护域名源站服务器的协议
         :type front_protocol: str
-        :param back_protocol: 源站协议
+        :param back_protocol: WAF转发客户端请求到防护域名源站服务器的协议
         :type back_protocol: str
-        :param address: 源站地址
+        :param weight: 源站权重，负载均衡算法将按该权重将请求分配给源站，默认值是1，云模式的冗余字段
+        :type weight: int
+        :param address: 客户端访问的源站服务器的IP地址
         :type address: str
-        :param port: 源站端口
+        :param port: WAF转发客户端请求到源站服务的业务端口
         :type port: int
         :param type: 源站地址为ipv4或ipv6
         :type type: str
-        :param vpc_id: VPC id,通过以下步骤获取VPC id： \\n 1.找到独享引擎所在的虚拟私有云名称，VPC\\子网这一列就是VPC的名称：登录WAF的控制台-&gt;单击系统管理-&gt;独享引擎-&gt;VPC\\子网 \\n 2.登录虚拟私有云 VPC控制台-&gt;虚拟私有云-&gt;单击虚拟私有云的名称-&gt;基本信息的ID
+        :param vpc_id: VPC id,通过以下步骤获取VPC id：   - 1.找到独享引擎所在的虚拟私有云名称，VPC\\子网这一列就是VPC的名称：登录WAF的控制台-&gt;单击系统管理-&gt;独享引擎-&gt;VPC\\子网   - 2.登录虚拟私有云 VPC控制台-&gt;虚拟私有云-&gt;单击虚拟私有云的名称-&gt;基本信息的ID
         :type vpc_id: str
         """
         
@@ -61,6 +65,7 @@ class PremiumWafServer:
 
         self._front_protocol = None
         self._back_protocol = None
+        self._weight = None
         self._address = None
         self._port = None
         self._type = None
@@ -69,6 +74,8 @@ class PremiumWafServer:
 
         self.front_protocol = front_protocol
         self.back_protocol = back_protocol
+        if weight is not None:
+            self.weight = weight
         self.address = address
         self.port = port
         self.type = type
@@ -78,7 +85,7 @@ class PremiumWafServer:
     def front_protocol(self):
         """Gets the front_protocol of this PremiumWafServer.
 
-        对外协议
+        客户端请求访问防护域名源站服务器的协议
 
         :return: The front_protocol of this PremiumWafServer.
         :rtype: str
@@ -89,7 +96,7 @@ class PremiumWafServer:
     def front_protocol(self, front_protocol):
         """Sets the front_protocol of this PremiumWafServer.
 
-        对外协议
+        客户端请求访问防护域名源站服务器的协议
 
         :param front_protocol: The front_protocol of this PremiumWafServer.
         :type front_protocol: str
@@ -100,7 +107,7 @@ class PremiumWafServer:
     def back_protocol(self):
         """Gets the back_protocol of this PremiumWafServer.
 
-        源站协议
+        WAF转发客户端请求到防护域名源站服务器的协议
 
         :return: The back_protocol of this PremiumWafServer.
         :rtype: str
@@ -111,7 +118,7 @@ class PremiumWafServer:
     def back_protocol(self, back_protocol):
         """Sets the back_protocol of this PremiumWafServer.
 
-        源站协议
+        WAF转发客户端请求到防护域名源站服务器的协议
 
         :param back_protocol: The back_protocol of this PremiumWafServer.
         :type back_protocol: str
@@ -119,10 +126,32 @@ class PremiumWafServer:
         self._back_protocol = back_protocol
 
     @property
+    def weight(self):
+        """Gets the weight of this PremiumWafServer.
+
+        源站权重，负载均衡算法将按该权重将请求分配给源站，默认值是1，云模式的冗余字段
+
+        :return: The weight of this PremiumWafServer.
+        :rtype: int
+        """
+        return self._weight
+
+    @weight.setter
+    def weight(self, weight):
+        """Sets the weight of this PremiumWafServer.
+
+        源站权重，负载均衡算法将按该权重将请求分配给源站，默认值是1，云模式的冗余字段
+
+        :param weight: The weight of this PremiumWafServer.
+        :type weight: int
+        """
+        self._weight = weight
+
+    @property
     def address(self):
         """Gets the address of this PremiumWafServer.
 
-        源站地址
+        客户端访问的源站服务器的IP地址
 
         :return: The address of this PremiumWafServer.
         :rtype: str
@@ -133,7 +162,7 @@ class PremiumWafServer:
     def address(self, address):
         """Sets the address of this PremiumWafServer.
 
-        源站地址
+        客户端访问的源站服务器的IP地址
 
         :param address: The address of this PremiumWafServer.
         :type address: str
@@ -144,7 +173,7 @@ class PremiumWafServer:
     def port(self):
         """Gets the port of this PremiumWafServer.
 
-        源站端口
+        WAF转发客户端请求到源站服务的业务端口
 
         :return: The port of this PremiumWafServer.
         :rtype: int
@@ -155,7 +184,7 @@ class PremiumWafServer:
     def port(self, port):
         """Sets the port of this PremiumWafServer.
 
-        源站端口
+        WAF转发客户端请求到源站服务的业务端口
 
         :param port: The port of this PremiumWafServer.
         :type port: int
@@ -188,7 +217,7 @@ class PremiumWafServer:
     def vpc_id(self):
         """Gets the vpc_id of this PremiumWafServer.
 
-        VPC id,通过以下步骤获取VPC id： \\n 1.找到独享引擎所在的虚拟私有云名称，VPC\\子网这一列就是VPC的名称：登录WAF的控制台->单击系统管理->独享引擎->VPC\\子网 \\n 2.登录虚拟私有云 VPC控制台->虚拟私有云->单击虚拟私有云的名称->基本信息的ID
+        VPC id,通过以下步骤获取VPC id：   - 1.找到独享引擎所在的虚拟私有云名称，VPC\\子网这一列就是VPC的名称：登录WAF的控制台->单击系统管理->独享引擎->VPC\\子网   - 2.登录虚拟私有云 VPC控制台->虚拟私有云->单击虚拟私有云的名称->基本信息的ID
 
         :return: The vpc_id of this PremiumWafServer.
         :rtype: str
@@ -199,7 +228,7 @@ class PremiumWafServer:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this PremiumWafServer.
 
-        VPC id,通过以下步骤获取VPC id： \\n 1.找到独享引擎所在的虚拟私有云名称，VPC\\子网这一列就是VPC的名称：登录WAF的控制台->单击系统管理->独享引擎->VPC\\子网 \\n 2.登录虚拟私有云 VPC控制台->虚拟私有云->单击虚拟私有云的名称->基本信息的ID
+        VPC id,通过以下步骤获取VPC id：   - 1.找到独享引擎所在的虚拟私有云名称，VPC\\子网这一列就是VPC的名称：登录WAF的控制台->单击系统管理->独享引擎->VPC\\子网   - 2.登录虚拟私有云 VPC控制台->虚拟私有云->单击虚拟私有云的名称->基本信息的ID
 
         :param vpc_id: The vpc_id of this PremiumWafServer.
         :type vpc_id: str

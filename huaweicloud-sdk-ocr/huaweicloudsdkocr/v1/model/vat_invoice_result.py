@@ -99,7 +99,7 @@ class VatInvoiceResult:
 
         :param title: 增值税发票标题 
         :type title: str
-        :param type: 增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic：增值税电子专用发票  - toll：增值税电子普通发票（通行费）  - roll：增值税普通发票（卷票） 
+        :param type: 增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic: 增值税电子专用发票  - toll: 增值税电子普通发票（通行费）  - roll: 增值税普通发票（卷票） 
         :type type: str
         :param serial_number: 发票联次。 当“advanced_mode”设置为“true”时才返回。 
         :type serial_number: str
@@ -295,7 +295,7 @@ class VatInvoiceResult:
     def type(self):
         """Gets the type of this VatInvoiceResult.
 
-        增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic：增值税电子专用发票  - toll：增值税电子普通发票（通行费）  - roll：增值税普通发票（卷票） 
+        增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic: 增值税电子专用发票  - toll: 增值税电子普通发票（通行费）  - roll: 增值税普通发票（卷票） 
 
         :return: The type of this VatInvoiceResult.
         :rtype: str
@@ -306,7 +306,7 @@ class VatInvoiceResult:
     def type(self, type):
         """Sets the type of this VatInvoiceResult.
 
-        增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic：增值税电子专用发票  - toll：增值税电子普通发票（通行费）  - roll：增值税普通发票（卷票） 
+        增值税发票类型，可选值包括：  - special: 增值税专用发票  - normal: 增值税普通发票  - electronic: 增值税电子普通发票  - special_electronic: 增值税电子专用发票  - toll: 增值税电子普通发票（通行费）  - roll: 增值税普通发票（卷票） 
 
         :param type: The type of this VatInvoiceResult.
         :type type: str

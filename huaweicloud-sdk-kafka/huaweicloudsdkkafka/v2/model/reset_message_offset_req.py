@@ -43,9 +43,9 @@ class ResetMessageOffsetReq:
         :type topic: str
         :param partition: 分区编号，默认值为-1，若传入值为-1，则重置所有分区。
         :type partition: int
-        :param message_offset: 重置的消费进度到指定偏移量。 如果传入offset小于当前最小的offset，则重置到最小的offset。 如果大于最大的offset，则重置到最大的offset。 message_offset、timestamp二者必选其一。 
+        :param message_offset: 重置消费进度到指定偏移量。 - 如果传入offset小于当前最小的offset，则重置到最小的offset。 - 如果大于最大的offset，则重置到最大的offset。  **message_offset、timestamp二者必选其一。** 
         :type message_offset: int
-        :param timestamp: 重置的消费进度到指定时间，格式为unix时间戳，单位为毫秒。 如果传入timestamp早于当前最早的timestamp，则重置到最早的timestamp。 如果晚于最晚的timestamp，则重置到最晚的timestamp。 message_offset、timestamp二者必选其一。 
+        :param timestamp: 重置消费进度到指定时间，格式为unix时间戳，单位为毫秒。 - 如果传入timestamp早于当前最早的timestamp，则重置到最早的timestamp。 - 如果晚于最晚的timestamp，则重置到最晚的timestamp。  **message_offset、timestamp二者必选其一。** 
         :type timestamp: int
         """
         
@@ -113,7 +113,7 @@ class ResetMessageOffsetReq:
     def message_offset(self):
         """Gets the message_offset of this ResetMessageOffsetReq.
 
-        重置的消费进度到指定偏移量。 如果传入offset小于当前最小的offset，则重置到最小的offset。 如果大于最大的offset，则重置到最大的offset。 message_offset、timestamp二者必选其一。 
+        重置消费进度到指定偏移量。 - 如果传入offset小于当前最小的offset，则重置到最小的offset。 - 如果大于最大的offset，则重置到最大的offset。  **message_offset、timestamp二者必选其一。** 
 
         :return: The message_offset of this ResetMessageOffsetReq.
         :rtype: int
@@ -124,7 +124,7 @@ class ResetMessageOffsetReq:
     def message_offset(self, message_offset):
         """Sets the message_offset of this ResetMessageOffsetReq.
 
-        重置的消费进度到指定偏移量。 如果传入offset小于当前最小的offset，则重置到最小的offset。 如果大于最大的offset，则重置到最大的offset。 message_offset、timestamp二者必选其一。 
+        重置消费进度到指定偏移量。 - 如果传入offset小于当前最小的offset，则重置到最小的offset。 - 如果大于最大的offset，则重置到最大的offset。  **message_offset、timestamp二者必选其一。** 
 
         :param message_offset: The message_offset of this ResetMessageOffsetReq.
         :type message_offset: int
@@ -135,7 +135,7 @@ class ResetMessageOffsetReq:
     def timestamp(self):
         """Gets the timestamp of this ResetMessageOffsetReq.
 
-        重置的消费进度到指定时间，格式为unix时间戳，单位为毫秒。 如果传入timestamp早于当前最早的timestamp，则重置到最早的timestamp。 如果晚于最晚的timestamp，则重置到最晚的timestamp。 message_offset、timestamp二者必选其一。 
+        重置消费进度到指定时间，格式为unix时间戳，单位为毫秒。 - 如果传入timestamp早于当前最早的timestamp，则重置到最早的timestamp。 - 如果晚于最晚的timestamp，则重置到最晚的timestamp。  **message_offset、timestamp二者必选其一。** 
 
         :return: The timestamp of this ResetMessageOffsetReq.
         :rtype: int
@@ -146,7 +146,7 @@ class ResetMessageOffsetReq:
     def timestamp(self, timestamp):
         """Sets the timestamp of this ResetMessageOffsetReq.
 
-        重置的消费进度到指定时间，格式为unix时间戳，单位为毫秒。 如果传入timestamp早于当前最早的timestamp，则重置到最早的timestamp。 如果晚于最晚的timestamp，则重置到最晚的timestamp。 message_offset、timestamp二者必选其一。 
+        重置消费进度到指定时间，格式为unix时间戳，单位为毫秒。 - 如果传入timestamp早于当前最早的timestamp，则重置到最早的timestamp。 - 如果晚于最晚的timestamp，则重置到最晚的timestamp。  **message_offset、timestamp二者必选其一。** 
 
         :param timestamp: The timestamp of this ResetMessageOffsetReq.
         :type timestamp: int

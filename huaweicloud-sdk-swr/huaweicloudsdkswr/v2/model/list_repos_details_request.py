@@ -24,6 +24,10 @@ class ListReposDetailsRequest:
         'namespace': 'str',
         'name': 'str',
         'category': 'str',
+        'limit': 'str',
+        'offset': 'str',
+        'order_column': 'str',
+        'order_type': 'str',
         'filter': 'str'
     }
 
@@ -31,10 +35,14 @@ class ListReposDetailsRequest:
         'namespace': 'namespace',
         'name': 'name',
         'category': 'category',
+        'limit': 'limit',
+        'offset': 'offset',
+        'order_column': 'order_column',
+        'order_type': 'order_type',
         'filter': 'filter'
     }
 
-    def __init__(self, namespace=None, name=None, category=None, filter=None):
+    def __init__(self, namespace=None, name=None, category=None, limit=None, offset=None, order_column=None, order_type=None, filter=None):
         """ListReposDetailsRequest
 
         The model defined in huaweicloud sdk
@@ -45,7 +53,15 @@ class ListReposDetailsRequest:
         :type name: str
         :param category: 镜像仓库分类，可设置为app_server, linux, framework_app, database, lang, other, windows, arm。
         :type category: str
-        :param filter: 注意：至少要传递一个filter参数。其中{center}为self或thirdparty，自己的镜像或第三方镜像，默认值为self。{namespace}为组织名称，模糊匹配。 {name}为镜像仓库名称，模糊匹配。{category}为镜像仓库分类，可设置为app_server、linux、framework_app、database、lang、other、windows、arm。 {limit}为返回条数,{offset}为起始索引，注意：offset和limit参数需要配套使用。{order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型， 可设置为desc（降序）、asc（升序），注意：order_column和order_type参数需要配套使用。
+        :param limit: 返回条数。注意：offset和limit参数需要配套使用。
+        :type limit: str
+        :param offset: 起始索引。注意：offset和limit参数需要配套使用。
+        :type offset: str
+        :param order_column: 按列排序，可设置为updated_at（按更新时间排序）。注意：order_column和order_type参数需要配套使用。
+        :type order_column: str
+        :param order_type: 排序类型，可设置为desc（降序）、asc（升序）。注意：order_column和order_type参数需要配套使用。
+        :type order_type: str
+        :param filter: 注意：至少要传递一个filter参数。其中{namespace}为组织名称，模糊匹配。 {name}为镜像仓库名称，模糊匹配。{category}为镜像仓库分类，可设置为app_server、linux、framework_app、database、lang、other、windows、arm。 {limit}为返回条数,{offset}为起始索引，注意：offset和limit参数需要配套使用。{order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型， 可设置为desc（降序）、asc（升序），注意：order_column和order_type参数需要配套使用。
         :type filter: str
         """
         
@@ -54,6 +70,10 @@ class ListReposDetailsRequest:
         self._namespace = None
         self._name = None
         self._category = None
+        self._limit = None
+        self._offset = None
+        self._order_column = None
+        self._order_type = None
         self._filter = None
         self.discriminator = None
 
@@ -63,6 +83,14 @@ class ListReposDetailsRequest:
             self.name = name
         if category is not None:
             self.category = category
+        if limit is not None:
+            self.limit = limit
+        if offset is not None:
+            self.offset = offset
+        if order_column is not None:
+            self.order_column = order_column
+        if order_type is not None:
+            self.order_type = order_type
         if filter is not None:
             self.filter = filter
 
@@ -133,10 +161,98 @@ class ListReposDetailsRequest:
         self._category = category
 
     @property
+    def limit(self):
+        """Gets the limit of this ListReposDetailsRequest.
+
+        返回条数。注意：offset和limit参数需要配套使用。
+
+        :return: The limit of this ListReposDetailsRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListReposDetailsRequest.
+
+        返回条数。注意：offset和limit参数需要配套使用。
+
+        :param limit: The limit of this ListReposDetailsRequest.
+        :type limit: str
+        """
+        self._limit = limit
+
+    @property
+    def offset(self):
+        """Gets the offset of this ListReposDetailsRequest.
+
+        起始索引。注意：offset和limit参数需要配套使用。
+
+        :return: The offset of this ListReposDetailsRequest.
+        :rtype: str
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListReposDetailsRequest.
+
+        起始索引。注意：offset和limit参数需要配套使用。
+
+        :param offset: The offset of this ListReposDetailsRequest.
+        :type offset: str
+        """
+        self._offset = offset
+
+    @property
+    def order_column(self):
+        """Gets the order_column of this ListReposDetailsRequest.
+
+        按列排序，可设置为updated_at（按更新时间排序）。注意：order_column和order_type参数需要配套使用。
+
+        :return: The order_column of this ListReposDetailsRequest.
+        :rtype: str
+        """
+        return self._order_column
+
+    @order_column.setter
+    def order_column(self, order_column):
+        """Sets the order_column of this ListReposDetailsRequest.
+
+        按列排序，可设置为updated_at（按更新时间排序）。注意：order_column和order_type参数需要配套使用。
+
+        :param order_column: The order_column of this ListReposDetailsRequest.
+        :type order_column: str
+        """
+        self._order_column = order_column
+
+    @property
+    def order_type(self):
+        """Gets the order_type of this ListReposDetailsRequest.
+
+        排序类型，可设置为desc（降序）、asc（升序）。注意：order_column和order_type参数需要配套使用。
+
+        :return: The order_type of this ListReposDetailsRequest.
+        :rtype: str
+        """
+        return self._order_type
+
+    @order_type.setter
+    def order_type(self, order_type):
+        """Sets the order_type of this ListReposDetailsRequest.
+
+        排序类型，可设置为desc（降序）、asc（升序）。注意：order_column和order_type参数需要配套使用。
+
+        :param order_type: The order_type of this ListReposDetailsRequest.
+        :type order_type: str
+        """
+        self._order_type = order_type
+
+    @property
     def filter(self):
         """Gets the filter of this ListReposDetailsRequest.
 
-        注意：至少要传递一个filter参数。其中{center}为self或thirdparty，自己的镜像或第三方镜像，默认值为self。{namespace}为组织名称，模糊匹配。 {name}为镜像仓库名称，模糊匹配。{category}为镜像仓库分类，可设置为app_server、linux、framework_app、database、lang、other、windows、arm。 {limit}为返回条数,{offset}为起始索引，注意：offset和limit参数需要配套使用。{order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型， 可设置为desc（降序）、asc（升序），注意：order_column和order_type参数需要配套使用。
+        注意：至少要传递一个filter参数。其中{namespace}为组织名称，模糊匹配。 {name}为镜像仓库名称，模糊匹配。{category}为镜像仓库分类，可设置为app_server、linux、framework_app、database、lang、other、windows、arm。 {limit}为返回条数,{offset}为起始索引，注意：offset和limit参数需要配套使用。{order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型， 可设置为desc（降序）、asc（升序），注意：order_column和order_type参数需要配套使用。
 
         :return: The filter of this ListReposDetailsRequest.
         :rtype: str
@@ -147,7 +263,7 @@ class ListReposDetailsRequest:
     def filter(self, filter):
         """Sets the filter of this ListReposDetailsRequest.
 
-        注意：至少要传递一个filter参数。其中{center}为self或thirdparty，自己的镜像或第三方镜像，默认值为self。{namespace}为组织名称，模糊匹配。 {name}为镜像仓库名称，模糊匹配。{category}为镜像仓库分类，可设置为app_server、linux、framework_app、database、lang、other、windows、arm。 {limit}为返回条数,{offset}为起始索引，注意：offset和limit参数需要配套使用。{order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型， 可设置为desc（降序）、asc（升序），注意：order_column和order_type参数需要配套使用。
+        注意：至少要传递一个filter参数。其中{namespace}为组织名称，模糊匹配。 {name}为镜像仓库名称，模糊匹配。{category}为镜像仓库分类，可设置为app_server、linux、framework_app、database、lang、other、windows、arm。 {limit}为返回条数,{offset}为起始索引，注意：offset和limit参数需要配套使用。{order_column}为按列排序，可设置为name、updated_time、tag_count,{order_type}为排序类型， 可设置为desc（降序）、asc（升序），注意：order_column和order_type参数需要配套使用。
 
         :param filter: The filter of this ListReposDetailsRequest.
         :type filter: str

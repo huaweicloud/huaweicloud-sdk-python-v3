@@ -28,7 +28,8 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         'description': 'str',
         'status': 'int',
         'addr': 'str',
-        'white': 'int'
+        'white': 'int',
+        'ip_group': 'IpGroup'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         'description': 'description',
         'status': 'status',
         'addr': 'addr',
-        'white': 'white'
+        'white': 'white',
+        'ip_group': 'ip_group'
     }
 
-    def __init__(self, id=None, policyid=None, name=None, timestamp=None, description=None, status=None, addr=None, white=None):
+    def __init__(self, id=None, policyid=None, name=None, timestamp=None, description=None, status=None, addr=None, white=None, ip_group=None):
         """DeleteWhiteBlackIpRuleResponse
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         :type addr: str
         :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
         :type white: int
+        :param ip_group: 
+        :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
         """
         
         super(DeleteWhiteBlackIpRuleResponse, self).__init__()
@@ -75,6 +79,7 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         self._status = None
         self._addr = None
         self._white = None
+        self._ip_group = None
         self.discriminator = None
 
         if id is not None:
@@ -93,6 +98,8 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
             self.addr = addr
         if white is not None:
             self.white = white
+        if ip_group is not None:
+            self.ip_group = ip_group
 
     @property
     def id(self):
@@ -269,6 +276,26 @@ class DeleteWhiteBlackIpRuleResponse(SdkResponse):
         :type white: int
         """
         self._white = white
+
+    @property
+    def ip_group(self):
+        """Gets the ip_group of this DeleteWhiteBlackIpRuleResponse.
+
+
+        :return: The ip_group of this DeleteWhiteBlackIpRuleResponse.
+        :rtype: :class:`huaweicloudsdkwaf.v1.IpGroup`
+        """
+        return self._ip_group
+
+    @ip_group.setter
+    def ip_group(self, ip_group):
+        """Sets the ip_group of this DeleteWhiteBlackIpRuleResponse.
+
+
+        :param ip_group: The ip_group of this DeleteWhiteBlackIpRuleResponse.
+        :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`
+        """
+        self._ip_group = ip_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

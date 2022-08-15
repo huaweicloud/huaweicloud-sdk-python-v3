@@ -35,9 +35,9 @@ class ListGeoipRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 该策略下地理位置封禁数量
+        :param total: 该策略下地理位置控制规则数量
         :type total: int
-        :param items: 地理位置封禁列表
+        :param items: 地理位置控制规则数组
         :type items: list[:class:`huaweicloudsdkwaf.v1.GeOIpItem`]
         """
         
@@ -56,7 +56,7 @@ class ListGeoipRuleResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListGeoipRuleResponse.
 
-        该策略下地理位置封禁数量
+        该策略下地理位置控制规则数量
 
         :return: The total of this ListGeoipRuleResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class ListGeoipRuleResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListGeoipRuleResponse.
 
-        该策略下地理位置封禁数量
+        该策略下地理位置控制规则数量
 
         :param total: The total of this ListGeoipRuleResponse.
         :type total: int
@@ -78,7 +78,7 @@ class ListGeoipRuleResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListGeoipRuleResponse.
 
-        地理位置封禁列表
+        地理位置控制规则数组
 
         :return: The items of this ListGeoipRuleResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.GeOIpItem`]
@@ -89,7 +89,7 @@ class ListGeoipRuleResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListGeoipRuleResponse.
 
-        地理位置封禁列表
+        地理位置控制规则数组
 
         :param items: The items of this ListGeoipRuleResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.GeOIpItem`]

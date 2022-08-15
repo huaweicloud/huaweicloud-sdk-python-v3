@@ -26,7 +26,9 @@ class CreatePremiumHostRequestBody:
         'hostname': 'str',
         'proxy': 'bool',
         'policyid': 'str',
-        'server': 'list[PremiumWafServer]'
+        'server': 'list[PremiumWafServer]',
+        'block_page': 'BlockPage',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class CreatePremiumHostRequestBody:
         'hostname': 'hostname',
         'proxy': 'proxy',
         'policyid': 'policyid',
-        'server': 'server'
+        'server': 'server',
+        'block_page': 'block_page',
+        'description': 'description'
     }
 
-    def __init__(self, certificateid=None, certificatename=None, hostname=None, proxy=None, policyid=None, server=None):
+    def __init__(self, certificateid=None, certificatename=None, hostname=None, proxy=None, policyid=None, server=None, block_page=None, description=None):
         """CreatePremiumHostRequestBody
 
         The model defined in huaweicloud sdk
@@ -49,12 +53,16 @@ class CreatePremiumHostRequestBody:
         :type certificatename: str
         :param hostname: 防护域名或IP（可带端口）
         :type hostname: str
-        :param proxy: 是否使用代理
+        :param proxy: 防护域名是否使用代理   - false：不使用代理   - true：使用代理
         :type proxy: bool
-        :param policyid: 防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
+        :param policyid: 防护域名初始绑定的防护策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
         :type policyid: str
-        :param server: 服务器配置
+        :param server: 防护域名的源站服务器配置信息
         :type server: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
+        :param block_page: 
+        :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
+        :param description: 防护域名备注
+        :type description: str
         """
         
         
@@ -65,6 +73,8 @@ class CreatePremiumHostRequestBody:
         self._proxy = None
         self._policyid = None
         self._server = None
+        self._block_page = None
+        self._description = None
         self.discriminator = None
 
         if certificateid is not None:
@@ -76,6 +86,10 @@ class CreatePremiumHostRequestBody:
         if policyid is not None:
             self.policyid = policyid
         self.server = server
+        if block_page is not None:
+            self.block_page = block_page
+        if description is not None:
+            self.description = description
 
     @property
     def certificateid(self):
@@ -147,7 +161,7 @@ class CreatePremiumHostRequestBody:
     def proxy(self):
         """Gets the proxy of this CreatePremiumHostRequestBody.
 
-        是否使用代理
+        防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
         :return: The proxy of this CreatePremiumHostRequestBody.
         :rtype: bool
@@ -158,7 +172,7 @@ class CreatePremiumHostRequestBody:
     def proxy(self, proxy):
         """Sets the proxy of this CreatePremiumHostRequestBody.
 
-        是否使用代理
+        防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
         :param proxy: The proxy of this CreatePremiumHostRequestBody.
         :type proxy: bool
@@ -169,7 +183,7 @@ class CreatePremiumHostRequestBody:
     def policyid(self):
         """Gets the policyid of this CreatePremiumHostRequestBody.
 
-        防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
+        防护域名初始绑定的防护策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
         :return: The policyid of this CreatePremiumHostRequestBody.
         :rtype: str
@@ -180,7 +194,7 @@ class CreatePremiumHostRequestBody:
     def policyid(self, policyid):
         """Sets the policyid of this CreatePremiumHostRequestBody.
 
-        防护域名初始绑定的策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
+        防护域名初始绑定的防护策略ID,可以通过策略名称调用查询防护策略列表（ListPolicy）接口查询到对应的策略id
 
         :param policyid: The policyid of this CreatePremiumHostRequestBody.
         :type policyid: str
@@ -191,7 +205,7 @@ class CreatePremiumHostRequestBody:
     def server(self):
         """Gets the server of this CreatePremiumHostRequestBody.
 
-        服务器配置
+        防护域名的源站服务器配置信息
 
         :return: The server of this CreatePremiumHostRequestBody.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
@@ -202,12 +216,54 @@ class CreatePremiumHostRequestBody:
     def server(self, server):
         """Sets the server of this CreatePremiumHostRequestBody.
 
-        服务器配置
+        防护域名的源站服务器配置信息
 
         :param server: The server of this CreatePremiumHostRequestBody.
         :type server: list[:class:`huaweicloudsdkwaf.v1.PremiumWafServer`]
         """
         self._server = server
+
+    @property
+    def block_page(self):
+        """Gets the block_page of this CreatePremiumHostRequestBody.
+
+
+        :return: The block_page of this CreatePremiumHostRequestBody.
+        :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
+        """
+        return self._block_page
+
+    @block_page.setter
+    def block_page(self, block_page):
+        """Sets the block_page of this CreatePremiumHostRequestBody.
+
+
+        :param block_page: The block_page of this CreatePremiumHostRequestBody.
+        :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
+        """
+        self._block_page = block_page
+
+    @property
+    def description(self):
+        """Gets the description of this CreatePremiumHostRequestBody.
+
+        防护域名备注
+
+        :return: The description of this CreatePremiumHostRequestBody.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this CreatePremiumHostRequestBody.
+
+        防护域名备注
+
+        :param description: The description of this CreatePremiumHostRequestBody.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

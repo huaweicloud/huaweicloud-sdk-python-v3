@@ -39,7 +39,7 @@ class CreateKeyStoreRequestBody:
 
         :param keystore_alias: 专属密钥库别名，取值范围为1到255个字符，满足正则匹配“^[a-zA-Z0-9:/_-]{1,255}$”，且不与已有的专属密钥库别名重名。
         :type keystore_alias: str
-        :param hsm_cluster_id: DHSM集群Id，集群当前未创建专属密钥库。
+        :param hsm_cluster_id: DHSM集群Id，要求集群当前未创建专属密钥库。
         :type hsm_cluster_id: str
         :param hsm_ca_cert: DHSM集群的CA证书
         :type hsm_ca_cert: str
@@ -82,7 +82,7 @@ class CreateKeyStoreRequestBody:
     def hsm_cluster_id(self):
         """Gets the hsm_cluster_id of this CreateKeyStoreRequestBody.
 
-        DHSM集群Id，集群当前未创建专属密钥库。
+        DHSM集群Id，要求集群当前未创建专属密钥库。
 
         :return: The hsm_cluster_id of this CreateKeyStoreRequestBody.
         :rtype: str
@@ -93,7 +93,7 @@ class CreateKeyStoreRequestBody:
     def hsm_cluster_id(self, hsm_cluster_id):
         """Sets the hsm_cluster_id of this CreateKeyStoreRequestBody.
 
-        DHSM集群Id，集群当前未创建专属密钥库。
+        DHSM集群Id，要求集群当前未创建专属密钥库。
 
         :param hsm_cluster_id: The hsm_cluster_id of this CreateKeyStoreRequestBody.
         :type hsm_cluster_id: str

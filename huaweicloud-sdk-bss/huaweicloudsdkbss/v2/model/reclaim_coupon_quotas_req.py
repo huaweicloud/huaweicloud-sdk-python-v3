@@ -35,7 +35,7 @@ class ReclaimCouponQuotasReq:
 
         The model defined in huaweicloud sdk
 
-        :param quota_ids: 被回收的精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。
+        :param quota_ids: 被回收的云经销商的代金券额度ID。获取方法请参见查询优惠券额度。
         :type quota_ids: list[str]
         :param remark: 回收时的备注。
         :type remark: str
@@ -55,7 +55,7 @@ class ReclaimCouponQuotasReq:
     def quota_ids(self):
         """Gets the quota_ids of this ReclaimCouponQuotasReq.
 
-        被回收的精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。
+        被回收的云经销商的代金券额度ID。获取方法请参见查询优惠券额度。
 
         :return: The quota_ids of this ReclaimCouponQuotasReq.
         :rtype: list[str]
@@ -66,7 +66,7 @@ class ReclaimCouponQuotasReq:
     def quota_ids(self, quota_ids):
         """Sets the quota_ids of this ReclaimCouponQuotasReq.
 
-        被回收的精英服务商的代金券额度ID。获取方法请参见查询优惠券额度。
+        被回收的云经销商的代金券额度ID。获取方法请参见查询优惠券额度。
 
         :param quota_ids: The quota_ids of this ReclaimCouponQuotasReq.
         :type quota_ids: list[str]

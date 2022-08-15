@@ -37,11 +37,11 @@ class DeleteWhiteBlackIpRuleRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param policy_id: 防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
         :type policy_id: str
-        :param rule_id: 黑白名单规则id，从查询黑白名单规则列表接口获取https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;WAF&amp;api&#x3D;ListWhiteblackipRule
+        :param rule_id: 黑白名单规则id，您可以通过调用查询黑白名单规则列表（ListWhiteblackipRule）获取黑白名单规则id
         :type rule_id: str
         """
         
@@ -61,7 +61,7 @@ class DeleteWhiteBlackIpRuleRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this DeleteWhiteBlackIpRuleRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this DeleteWhiteBlackIpRuleRequest.
         :rtype: str
@@ -72,7 +72,7 @@ class DeleteWhiteBlackIpRuleRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this DeleteWhiteBlackIpRuleRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this DeleteWhiteBlackIpRuleRequest.
         :type enterprise_project_id: str
@@ -105,7 +105,7 @@ class DeleteWhiteBlackIpRuleRequest:
     def rule_id(self):
         """Gets the rule_id of this DeleteWhiteBlackIpRuleRequest.
 
-        黑白名单规则id，从查询黑白名单规则列表接口获取https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=WAF&api=ListWhiteblackipRule
+        黑白名单规则id，您可以通过调用查询黑白名单规则列表（ListWhiteblackipRule）获取黑白名单规则id
 
         :return: The rule_id of this DeleteWhiteBlackIpRuleRequest.
         :rtype: str
@@ -116,7 +116,7 @@ class DeleteWhiteBlackIpRuleRequest:
     def rule_id(self, rule_id):
         """Sets the rule_id of this DeleteWhiteBlackIpRuleRequest.
 
-        黑白名单规则id，从查询黑白名单规则列表接口获取https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=WAF&api=ListWhiteblackipRule
+        黑白名单规则id，您可以通过调用查询黑白名单规则列表（ListWhiteblackipRule）获取黑白名单规则id
 
         :param rule_id: The rule_id of this DeleteWhiteBlackIpRuleRequest.
         :type rule_id: str

@@ -41,7 +41,7 @@ class BatchAddServerNicOption:
 
         The model defined in huaweicloud sdk
 
-        :param subnet_id: 云服务器添加网卡的信息。  需要指定云服务器所属虚拟私有云下已创建的网络（network）的ID，UUID格式。 指定subnet_id时不能再指定port_id参数。
+        :param subnet_id: 云服务器添加网卡的信息。  需要指定云服务器所属虚拟私有云下已创建的网络（network）的ID，UUID格式。
         :type subnet_id: str
         :param security_groups: 添加网卡的安全组信息
         :type security_groups: list[:class:`huaweicloudsdkecs.v2.ServerNicSecurityGroup`]
@@ -76,7 +76,7 @@ class BatchAddServerNicOption:
     def subnet_id(self):
         """Gets the subnet_id of this BatchAddServerNicOption.
 
-        云服务器添加网卡的信息。  需要指定云服务器所属虚拟私有云下已创建的网络（network）的ID，UUID格式。 指定subnet_id时不能再指定port_id参数。
+        云服务器添加网卡的信息。  需要指定云服务器所属虚拟私有云下已创建的网络（network）的ID，UUID格式。
 
         :return: The subnet_id of this BatchAddServerNicOption.
         :rtype: str
@@ -87,7 +87,7 @@ class BatchAddServerNicOption:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this BatchAddServerNicOption.
 
-        云服务器添加网卡的信息。  需要指定云服务器所属虚拟私有云下已创建的网络（network）的ID，UUID格式。 指定subnet_id时不能再指定port_id参数。
+        云服务器添加网卡的信息。  需要指定云服务器所属虚拟私有云下已创建的网络（network）的ID，UUID格式。
 
         :param subnet_id: The subnet_id of this BatchAddServerNicOption.
         :type subnet_id: str

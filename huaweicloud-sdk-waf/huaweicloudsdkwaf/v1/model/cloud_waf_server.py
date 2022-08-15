@@ -23,6 +23,7 @@ class CloudWafServer:
     openapi_types = {
         'front_protocol': 'str',
         'back_protocol': 'str',
+        'weight': 'int',
         'address': 'str',
         'port': 'int',
         'type': 'str'
@@ -31,23 +32,26 @@ class CloudWafServer:
     attribute_map = {
         'front_protocol': 'front_protocol',
         'back_protocol': 'back_protocol',
+        'weight': 'weight',
         'address': 'address',
         'port': 'port',
         'type': 'type'
     }
 
-    def __init__(self, front_protocol=None, back_protocol=None, address=None, port=None, type=None):
+    def __init__(self, front_protocol=None, back_protocol=None, weight=None, address=None, port=None, type=None):
         """CloudWafServer
 
         The model defined in huaweicloud sdk
 
-        :param front_protocol: 对外协议
+        :param front_protocol: 客户端请求访问防护域名源站服务器的协议
         :type front_protocol: str
-        :param back_protocol: 源站协议
+        :param back_protocol: WAF转发客户端请求到防护域名源站服务器的协议
         :type back_protocol: str
-        :param address: 源站地址
+        :param weight: 源站权重，负载均衡算法将按该权重将请求分配给源站，默认值是1，云模式的冗余字段
+        :type weight: int
+        :param address: 客户端访问的源站服务器的IP地址
         :type address: str
-        :param port: 源站端口
+        :param port: WAF转发客户端请求到源站服务的业务端口
         :type port: int
         :param type: 源站地址为ipv4或ipv6
         :type type: str
@@ -57,6 +61,7 @@ class CloudWafServer:
 
         self._front_protocol = None
         self._back_protocol = None
+        self._weight = None
         self._address = None
         self._port = None
         self._type = None
@@ -64,6 +69,8 @@ class CloudWafServer:
 
         self.front_protocol = front_protocol
         self.back_protocol = back_protocol
+        if weight is not None:
+            self.weight = weight
         self.address = address
         self.port = port
         self.type = type
@@ -72,7 +79,7 @@ class CloudWafServer:
     def front_protocol(self):
         """Gets the front_protocol of this CloudWafServer.
 
-        对外协议
+        客户端请求访问防护域名源站服务器的协议
 
         :return: The front_protocol of this CloudWafServer.
         :rtype: str
@@ -83,7 +90,7 @@ class CloudWafServer:
     def front_protocol(self, front_protocol):
         """Sets the front_protocol of this CloudWafServer.
 
-        对外协议
+        客户端请求访问防护域名源站服务器的协议
 
         :param front_protocol: The front_protocol of this CloudWafServer.
         :type front_protocol: str
@@ -94,7 +101,7 @@ class CloudWafServer:
     def back_protocol(self):
         """Gets the back_protocol of this CloudWafServer.
 
-        源站协议
+        WAF转发客户端请求到防护域名源站服务器的协议
 
         :return: The back_protocol of this CloudWafServer.
         :rtype: str
@@ -105,7 +112,7 @@ class CloudWafServer:
     def back_protocol(self, back_protocol):
         """Sets the back_protocol of this CloudWafServer.
 
-        源站协议
+        WAF转发客户端请求到防护域名源站服务器的协议
 
         :param back_protocol: The back_protocol of this CloudWafServer.
         :type back_protocol: str
@@ -113,10 +120,32 @@ class CloudWafServer:
         self._back_protocol = back_protocol
 
     @property
+    def weight(self):
+        """Gets the weight of this CloudWafServer.
+
+        源站权重，负载均衡算法将按该权重将请求分配给源站，默认值是1，云模式的冗余字段
+
+        :return: The weight of this CloudWafServer.
+        :rtype: int
+        """
+        return self._weight
+
+    @weight.setter
+    def weight(self, weight):
+        """Sets the weight of this CloudWafServer.
+
+        源站权重，负载均衡算法将按该权重将请求分配给源站，默认值是1，云模式的冗余字段
+
+        :param weight: The weight of this CloudWafServer.
+        :type weight: int
+        """
+        self._weight = weight
+
+    @property
     def address(self):
         """Gets the address of this CloudWafServer.
 
-        源站地址
+        客户端访问的源站服务器的IP地址
 
         :return: The address of this CloudWafServer.
         :rtype: str
@@ -127,7 +156,7 @@ class CloudWafServer:
     def address(self, address):
         """Sets the address of this CloudWafServer.
 
-        源站地址
+        客户端访问的源站服务器的IP地址
 
         :param address: The address of this CloudWafServer.
         :type address: str
@@ -138,7 +167,7 @@ class CloudWafServer:
     def port(self):
         """Gets the port of this CloudWafServer.
 
-        源站端口
+        WAF转发客户端请求到源站服务的业务端口
 
         :return: The port of this CloudWafServer.
         :rtype: int
@@ -149,7 +178,7 @@ class CloudWafServer:
     def port(self, port):
         """Sets the port of this CloudWafServer.
 
-        源站端口
+        WAF转发客户端请求到源站服务的业务端口
 
         :param port: The port of this CloudWafServer.
         :type port: int

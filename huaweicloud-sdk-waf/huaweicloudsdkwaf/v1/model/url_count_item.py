@@ -41,7 +41,7 @@ class UrlCountItem:
         :type key: str
         :param num: 数量
         :type num: int
-        :param host: 域名
+        :param host: 防护域名
         :type host: str
         """
         
@@ -107,7 +107,7 @@ class UrlCountItem:
     def host(self):
         """Gets the host of this UrlCountItem.
 
-        域名
+        防护域名
 
         :return: The host of this UrlCountItem.
         :rtype: str
@@ -118,7 +118,7 @@ class UrlCountItem:
     def host(self, host):
         """Sets the host of this UrlCountItem.
 
-        域名
+        防护域名
 
         :param host: The host of this UrlCountItem.
         :type host: str

@@ -26,7 +26,8 @@ class CreateValueListResponse(SdkResponse):
         'type': 'str',
         'description': 'str',
         'timestamp': 'int',
-        'values': 'list[str]'
+        'values': 'list[str]',
+        'producer': 'int'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class CreateValueListResponse(SdkResponse):
         'type': 'type',
         'description': 'description',
         'timestamp': 'timestamp',
-        'values': 'values'
+        'values': 'values',
+        'producer': 'producer'
     }
 
-    def __init__(self, id=None, name=None, type=None, description=None, timestamp=None, values=None):
+    def __init__(self, id=None, name=None, type=None, description=None, timestamp=None, values=None, producer=None):
         """CreateValueListResponse
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class CreateValueListResponse(SdkResponse):
         :type timestamp: int
         :param values: 引用表的值
         :type values: list[str]
+        :param producer: 引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于智能访问控制自动创建
+        :type producer: int
         """
         
         super(CreateValueListResponse, self).__init__()
@@ -65,6 +69,7 @@ class CreateValueListResponse(SdkResponse):
         self._description = None
         self._timestamp = None
         self._values = None
+        self._producer = None
         self.discriminator = None
 
         if id is not None:
@@ -79,6 +84,8 @@ class CreateValueListResponse(SdkResponse):
             self.timestamp = timestamp
         if values is not None:
             self.values = values
+        if producer is not None:
+            self.producer = producer
 
     @property
     def id(self):
@@ -211,6 +218,28 @@ class CreateValueListResponse(SdkResponse):
         :type values: list[str]
         """
         self._values = values
+
+    @property
+    def producer(self):
+        """Gets the producer of this CreateValueListResponse.
+
+        引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于智能访问控制自动创建
+
+        :return: The producer of this CreateValueListResponse.
+        :rtype: int
+        """
+        return self._producer
+
+    @producer.setter
+    def producer(self, producer):
+        """Sets the producer of this CreateValueListResponse.
+
+        引用表来源：  - 1:表示来源于用户手动创建  - 2:表示来源于智能访问控制自动创建
+
+        :param producer: The producer of this CreateValueListResponse.
+        :type producer: int
+        """
+        self._producer = producer
 
     def to_dict(self):
         """Returns the model properties as a dict"""

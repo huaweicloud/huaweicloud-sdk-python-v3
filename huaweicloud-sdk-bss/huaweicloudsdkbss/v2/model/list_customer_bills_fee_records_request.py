@@ -71,7 +71,7 @@ class ListCustomerBillsFeeRecordsRequest:
         :type x_language: str
         :param bill_cycle: 查询的流水账单所在账期，格式为YYYY-MM。
         :type bill_cycle: str
-        :param provider_type: 服务商。1：华为云2：云市场为空时查询包含华为云和云市场在内的全部服务商。
+        :param provider_type: 服务商。1：华为云2：云商店为空时查询包含华为云和云商店在内的全部服务商。此参数不携带或携带值为空时，不作为筛选条件。
         :type provider_type: int
         :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。
         :type service_type_code: str
@@ -211,7 +211,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def provider_type(self):
         """Gets the provider_type of this ListCustomerBillsFeeRecordsRequest.
 
-        服务商。1：华为云2：云市场为空时查询包含华为云和云市场在内的全部服务商。
+        服务商。1：华为云2：云商店为空时查询包含华为云和云商店在内的全部服务商。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The provider_type of this ListCustomerBillsFeeRecordsRequest.
         :rtype: int
@@ -222,7 +222,7 @@ class ListCustomerBillsFeeRecordsRequest:
     def provider_type(self, provider_type):
         """Sets the provider_type of this ListCustomerBillsFeeRecordsRequest.
 
-        服务商。1：华为云2：云市场为空时查询包含华为云和云市场在内的全部服务商。
+        服务商。1：华为云2：云商店为空时查询包含华为云和云商店在内的全部服务商。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param provider_type: The provider_type of this ListCustomerBillsFeeRecordsRequest.
         :type provider_type: int

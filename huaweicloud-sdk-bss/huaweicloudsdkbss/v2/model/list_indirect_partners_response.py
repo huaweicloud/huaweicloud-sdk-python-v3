@@ -37,7 +37,7 @@ class ListIndirectPartnersResponse(SdkResponse):
 
         :param count: 符合条件的记录个数，只有成功的时候出现。
         :type count: int
-        :param indirect_partners: 精英服务商列表，具体参见表1。
+        :param indirect_partners: 云经销商列表，具体参见表1。
         :type indirect_partners: list[:class:`huaweicloudsdkbss.v2.IndirectPartnerInfo`]
         """
         
@@ -78,7 +78,7 @@ class ListIndirectPartnersResponse(SdkResponse):
     def indirect_partners(self):
         """Gets the indirect_partners of this ListIndirectPartnersResponse.
 
-        精英服务商列表，具体参见表1。
+        云经销商列表，具体参见表1。
 
         :return: The indirect_partners of this ListIndirectPartnersResponse.
         :rtype: list[:class:`huaweicloudsdkbss.v2.IndirectPartnerInfo`]
@@ -89,7 +89,7 @@ class ListIndirectPartnersResponse(SdkResponse):
     def indirect_partners(self, indirect_partners):
         """Sets the indirect_partners of this ListIndirectPartnersResponse.
 
-        精英服务商列表，具体参见表1。
+        云经销商列表，具体参见表1。
 
         :param indirect_partners: The indirect_partners of this ListIndirectPartnersResponse.
         :type indirect_partners: list[:class:`huaweicloudsdkbss.v2.IndirectPartnerInfo`]

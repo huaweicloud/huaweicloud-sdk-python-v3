@@ -47,11 +47,11 @@ class AntiTamperRuleResponseBody:
 
         :param id: 规则id
         :type id: str
-        :param policyid: 策略id
+        :param policyid: 该规则所属防护策略的id
         :type policyid: str
-        :param timestamp: 时间戳
+        :param timestamp: 创建规则的时间戳
         :type timestamp: int
-        :param description: 创建规则的时间戳
+        :param description: 该规则备注
         :type description: str
         :param status: 规则状态，0：关闭，1：开启
         :type status: int
@@ -113,7 +113,7 @@ class AntiTamperRuleResponseBody:
     def policyid(self):
         """Gets the policyid of this AntiTamperRuleResponseBody.
 
-        策略id
+        该规则所属防护策略的id
 
         :return: The policyid of this AntiTamperRuleResponseBody.
         :rtype: str
@@ -124,7 +124,7 @@ class AntiTamperRuleResponseBody:
     def policyid(self, policyid):
         """Sets the policyid of this AntiTamperRuleResponseBody.
 
-        策略id
+        该规则所属防护策略的id
 
         :param policyid: The policyid of this AntiTamperRuleResponseBody.
         :type policyid: str
@@ -135,7 +135,7 @@ class AntiTamperRuleResponseBody:
     def timestamp(self):
         """Gets the timestamp of this AntiTamperRuleResponseBody.
 
-        时间戳
+        创建规则的时间戳
 
         :return: The timestamp of this AntiTamperRuleResponseBody.
         :rtype: int
@@ -146,7 +146,7 @@ class AntiTamperRuleResponseBody:
     def timestamp(self, timestamp):
         """Sets the timestamp of this AntiTamperRuleResponseBody.
 
-        时间戳
+        创建规则的时间戳
 
         :param timestamp: The timestamp of this AntiTamperRuleResponseBody.
         :type timestamp: int
@@ -157,7 +157,7 @@ class AntiTamperRuleResponseBody:
     def description(self):
         """Gets the description of this AntiTamperRuleResponseBody.
 
-        创建规则的时间戳
+        该规则备注
 
         :return: The description of this AntiTamperRuleResponseBody.
         :rtype: str
@@ -168,7 +168,7 @@ class AntiTamperRuleResponseBody:
     def description(self, description):
         """Sets the description of this AntiTamperRuleResponseBody.
 
-        创建规则的时间戳
+        该规则备注
 
         :param description: The description of this AntiTamperRuleResponseBody.
         :type description: str

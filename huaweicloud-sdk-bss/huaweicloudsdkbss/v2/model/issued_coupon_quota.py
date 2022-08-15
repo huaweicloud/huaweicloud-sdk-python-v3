@@ -87,13 +87,13 @@ class IssuedCouponQuota:
         :type expire_time: str
         :param limit_infos: 代金券额度上的限制属性，具体参见表3。
         :type limit_infos: list[:class:`huaweicloudsdkbss.v2.QuotaLimitInfo`]
-        :param indirect_partner_id: 精英服务商ID。
+        :param indirect_partner_id: 云经销商ID。
         :type indirect_partner_id: str
-        :param indirect_partner_account_name: 精英服务商账号名。
+        :param indirect_partner_account_name: 云经销商账号名。
         :type indirect_partner_account_name: str
-        :param indirect_partner_name: 精英服务商名称。
+        :param indirect_partner_name: 云经销商名称。
         :type indirect_partner_name: str
-        :param parent_quota_id: 父额度ID，即华为云伙伴能力中心用于发放给精英服务商代金券额度的额度ID。
+        :param parent_quota_id: 父额度ID，即华为云总经销商用于发放给云经销商代金券额度的额度ID。
         :type parent_quota_id: str
         """
         
@@ -418,7 +418,7 @@ class IssuedCouponQuota:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this IssuedCouponQuota.
 
-        精英服务商ID。
+        云经销商ID。
 
         :return: The indirect_partner_id of this IssuedCouponQuota.
         :rtype: str
@@ -429,7 +429,7 @@ class IssuedCouponQuota:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this IssuedCouponQuota.
 
-        精英服务商ID。
+        云经销商ID。
 
         :param indirect_partner_id: The indirect_partner_id of this IssuedCouponQuota.
         :type indirect_partner_id: str
@@ -440,7 +440,7 @@ class IssuedCouponQuota:
     def indirect_partner_account_name(self):
         """Gets the indirect_partner_account_name of this IssuedCouponQuota.
 
-        精英服务商账号名。
+        云经销商账号名。
 
         :return: The indirect_partner_account_name of this IssuedCouponQuota.
         :rtype: str
@@ -451,7 +451,7 @@ class IssuedCouponQuota:
     def indirect_partner_account_name(self, indirect_partner_account_name):
         """Sets the indirect_partner_account_name of this IssuedCouponQuota.
 
-        精英服务商账号名。
+        云经销商账号名。
 
         :param indirect_partner_account_name: The indirect_partner_account_name of this IssuedCouponQuota.
         :type indirect_partner_account_name: str
@@ -462,7 +462,7 @@ class IssuedCouponQuota:
     def indirect_partner_name(self):
         """Gets the indirect_partner_name of this IssuedCouponQuota.
 
-        精英服务商名称。
+        云经销商名称。
 
         :return: The indirect_partner_name of this IssuedCouponQuota.
         :rtype: str
@@ -473,7 +473,7 @@ class IssuedCouponQuota:
     def indirect_partner_name(self, indirect_partner_name):
         """Sets the indirect_partner_name of this IssuedCouponQuota.
 
-        精英服务商名称。
+        云经销商名称。
 
         :param indirect_partner_name: The indirect_partner_name of this IssuedCouponQuota.
         :type indirect_partner_name: str
@@ -484,7 +484,7 @@ class IssuedCouponQuota:
     def parent_quota_id(self):
         """Gets the parent_quota_id of this IssuedCouponQuota.
 
-        父额度ID，即华为云伙伴能力中心用于发放给精英服务商代金券额度的额度ID。
+        父额度ID，即华为云总经销商用于发放给云经销商代金券额度的额度ID。
 
         :return: The parent_quota_id of this IssuedCouponQuota.
         :rtype: str
@@ -495,7 +495,7 @@ class IssuedCouponQuota:
     def parent_quota_id(self, parent_quota_id):
         """Sets the parent_quota_id of this IssuedCouponQuota.
 
-        父额度ID，即华为云伙伴能力中心用于发放给精英服务商代金券额度的额度ID。
+        父额度ID，即华为云总经销商用于发放给云经销商代金券额度的额度ID。
 
         :param parent_quota_id: The parent_quota_id of this IssuedCouponQuota.
         :type parent_quota_id: str

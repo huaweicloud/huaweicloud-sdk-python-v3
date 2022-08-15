@@ -37,11 +37,11 @@ class TrafficMark:
 
         The model defined in huaweicloud sdk
 
-        :param sip: 惩罚ip
+        :param sip: IP标记，客户端最原始的IP地址的HTTP请求头字段。
         :type sip: list[str]
-        :param cookie: cookie
+        :param cookie: Session标记，用于Cookie恶意请求的攻击惩罚功能。在选择Cookie拦截的攻击惩罚功能前，必须配置该标识
         :type cookie: str
-        :param params: 参数
+        :param params: User标记，用于Params恶意请求的攻击惩罚功能。在选择Params拦截的攻击惩罚功能前，必须配置该标识。
         :type params: str
         """
         
@@ -63,7 +63,7 @@ class TrafficMark:
     def sip(self):
         """Gets the sip of this TrafficMark.
 
-        惩罚ip
+        IP标记，客户端最原始的IP地址的HTTP请求头字段。
 
         :return: The sip of this TrafficMark.
         :rtype: list[str]
@@ -74,7 +74,7 @@ class TrafficMark:
     def sip(self, sip):
         """Sets the sip of this TrafficMark.
 
-        惩罚ip
+        IP标记，客户端最原始的IP地址的HTTP请求头字段。
 
         :param sip: The sip of this TrafficMark.
         :type sip: list[str]
@@ -85,7 +85,7 @@ class TrafficMark:
     def cookie(self):
         """Gets the cookie of this TrafficMark.
 
-        cookie
+        Session标记，用于Cookie恶意请求的攻击惩罚功能。在选择Cookie拦截的攻击惩罚功能前，必须配置该标识
 
         :return: The cookie of this TrafficMark.
         :rtype: str
@@ -96,7 +96,7 @@ class TrafficMark:
     def cookie(self, cookie):
         """Sets the cookie of this TrafficMark.
 
-        cookie
+        Session标记，用于Cookie恶意请求的攻击惩罚功能。在选择Cookie拦截的攻击惩罚功能前，必须配置该标识
 
         :param cookie: The cookie of this TrafficMark.
         :type cookie: str
@@ -107,7 +107,7 @@ class TrafficMark:
     def params(self):
         """Gets the params of this TrafficMark.
 
-        参数
+        User标记，用于Params恶意请求的攻击惩罚功能。在选择Params拦截的攻击惩罚功能前，必须配置该标识。
 
         :return: The params of this TrafficMark.
         :rtype: str
@@ -118,7 +118,7 @@ class TrafficMark:
     def params(self, params):
         """Sets the params of this TrafficMark.
 
-        参数
+        User标记，用于Params恶意请求的攻击惩罚功能。在选择Params拦截的攻击惩罚功能前，必须配置该标识。
 
         :param params: The params of this TrafficMark.
         :type params: str

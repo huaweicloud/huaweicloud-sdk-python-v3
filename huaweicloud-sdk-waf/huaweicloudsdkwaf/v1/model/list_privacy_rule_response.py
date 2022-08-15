@@ -37,7 +37,7 @@ class ListPrivacyRuleResponse(SdkResponse):
 
         :param total: 规则条数
         :type total: int
-        :param items: 规则
+        :param items: 规则详情数组
         :type items: list[:class:`huaweicloudsdkwaf.v1.PrivacyResponseBody`]
         """
         
@@ -78,7 +78,7 @@ class ListPrivacyRuleResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListPrivacyRuleResponse.
 
-        规则
+        规则详情数组
 
         :return: The items of this ListPrivacyRuleResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.PrivacyResponseBody`]
@@ -89,7 +89,7 @@ class ListPrivacyRuleResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListPrivacyRuleResponse.
 
-        规则
+        规则详情数组
 
         :param items: The items of this ListPrivacyRuleResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.PrivacyResponseBody`]

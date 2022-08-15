@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class UpdateInstanceConfigurationValuesOption:
+class ListGaussMySqlDatabaseCharsetsRequest:
 
     """
     Attributes:
@@ -21,78 +21,79 @@ class UpdateInstanceConfigurationValuesOption:
     sensitive_list = []
 
     openapi_types = {
-        'key': 'str',
-        'value': 'str'
+        'x_language': 'str',
+        'instance_id': 'str'
     }
 
     attribute_map = {
-        'key': 'key',
-        'value': 'value'
+        'x_language': 'X-Language',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, key=None, value=None):
-        """UpdateInstanceConfigurationValuesOption
+    def __init__(self, x_language=None, instance_id=None):
+        """ListGaussMySqlDatabaseCharsetsRequest
 
         The model defined in huaweicloud sdk
 
-        :param key: 参数名称。 示例：\&quot;concurrent_reads\&quot;:\&quot;64\&quot;中，key值为“concurrent_reads”。
-        :type key: str
-        :param value: 参数值。 示例：\&quot;concurrent_reads\&quot;:\&quot;64\&quot;，value值为“64”。
-        :type value: str
+        :param x_language: 语言。
+        :type x_language: str
+        :param instance_id: 实例ID。
+        :type instance_id: str
         """
         
         
 
-        self._key = None
-        self._value = None
+        self._x_language = None
+        self._instance_id = None
         self.discriminator = None
 
-        self.key = key
-        self.value = value
+        if x_language is not None:
+            self.x_language = x_language
+        self.instance_id = instance_id
 
     @property
-    def key(self):
-        """Gets the key of this UpdateInstanceConfigurationValuesOption.
+    def x_language(self):
+        """Gets the x_language of this ListGaussMySqlDatabaseCharsetsRequest.
 
-        参数名称。 示例：\"concurrent_reads\":\"64\"中，key值为“concurrent_reads”。
+        语言。
 
-        :return: The key of this UpdateInstanceConfigurationValuesOption.
+        :return: The x_language of this ListGaussMySqlDatabaseCharsetsRequest.
         :rtype: str
         """
-        return self._key
+        return self._x_language
 
-    @key.setter
-    def key(self, key):
-        """Sets the key of this UpdateInstanceConfigurationValuesOption.
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this ListGaussMySqlDatabaseCharsetsRequest.
 
-        参数名称。 示例：\"concurrent_reads\":\"64\"中，key值为“concurrent_reads”。
+        语言。
 
-        :param key: The key of this UpdateInstanceConfigurationValuesOption.
-        :type key: str
+        :param x_language: The x_language of this ListGaussMySqlDatabaseCharsetsRequest.
+        :type x_language: str
         """
-        self._key = key
+        self._x_language = x_language
 
     @property
-    def value(self):
-        """Gets the value of this UpdateInstanceConfigurationValuesOption.
+    def instance_id(self):
+        """Gets the instance_id of this ListGaussMySqlDatabaseCharsetsRequest.
 
-        参数值。 示例：\"concurrent_reads\":\"64\"，value值为“64”。
+        实例ID。
 
-        :return: The value of this UpdateInstanceConfigurationValuesOption.
+        :return: The instance_id of this ListGaussMySqlDatabaseCharsetsRequest.
         :rtype: str
         """
-        return self._value
+        return self._instance_id
 
-    @value.setter
-    def value(self, value):
-        """Sets the value of this UpdateInstanceConfigurationValuesOption.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ListGaussMySqlDatabaseCharsetsRequest.
 
-        参数值。 示例：\"concurrent_reads\":\"64\"，value值为“64”。
+        实例ID。
 
-        :param value: The value of this UpdateInstanceConfigurationValuesOption.
-        :type value: str
+        :param instance_id: The instance_id of this ListGaussMySqlDatabaseCharsetsRequest.
+        :type instance_id: str
         """
-        self._value = value
+        self._instance_id = instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -136,7 +137,7 @@ class UpdateInstanceConfigurationValuesOption:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateInstanceConfigurationValuesOption):
+        if not isinstance(other, ListGaussMySqlDatabaseCharsetsRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,10 +27,11 @@ class DeleteIgnoreRuleResponse(SdkResponse):
         'description': 'str',
         'status': 'int',
         'url': 'str',
-        'rule': 'str',
+        'rule': 'object',
         'mode': 'int',
         'url_logic': 'str',
         'conditions': 'list[Condition]',
+        'advanced': 'list[Advanced]',
         'domains': 'list[str]'
     }
 
@@ -45,10 +46,11 @@ class DeleteIgnoreRuleResponse(SdkResponse):
         'mode': 'mode',
         'url_logic': 'url_logic',
         'conditions': 'conditions',
+        'advanced': 'advanced',
         'domains': 'domains'
     }
 
-    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, url=None, rule=None, mode=None, url_logic=None, conditions=None, domains=None):
+    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, url=None, rule=None, mode=None, url_logic=None, conditions=None, advanced=None, domains=None):
         """DeleteIgnoreRuleResponse
 
         The model defined in huaweicloud sdk
@@ -65,14 +67,16 @@ class DeleteIgnoreRuleResponse(SdkResponse):
         :type status: int
         :param url: 误报规则屏蔽路径，仅在mode为0的状态下有该字段
         :type url: str
-        :param rule: 屏蔽的内置规则id（内置规则id通常可以在Web应用防火墙控制台的防护策略-&gt;策略名称-&gt;Web基础防护-&gt;防护规则中查询，也可以再防护事件的事件详情中查询内置规则id）
-        :type rule: str
+        :param rule: 需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略-&gt;策略名称-&gt;Web基础防护的高级设置-&gt;防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xxs攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
+        :type rule: object
         :param mode: 版本号，0代表v1旧版本，1代表v2新版本；mode为0时，不存在conditions字段，存在url和url_logic字段；mode为1时，不存在url和url_logic字段，存在conditions字段
         :type mode: int
         :param url_logic: url匹配逻辑
         :type url_logic: str
         :param conditions: 条件
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.Condition`]
+        :param advanced: 高级配置项
+        :type advanced: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
         :param domains: 防护域名或防护网站
         :type domains: list[str]
         """
@@ -89,6 +93,7 @@ class DeleteIgnoreRuleResponse(SdkResponse):
         self._mode = None
         self._url_logic = None
         self._conditions = None
+        self._advanced = None
         self._domains = None
         self.discriminator = None
 
@@ -112,6 +117,8 @@ class DeleteIgnoreRuleResponse(SdkResponse):
             self.url_logic = url_logic
         if conditions is not None:
             self.conditions = conditions
+        if advanced is not None:
+            self.advanced = advanced
         if domains is not None:
             self.domains = domains
 
@@ -251,10 +258,10 @@ class DeleteIgnoreRuleResponse(SdkResponse):
     def rule(self):
         """Gets the rule of this DeleteIgnoreRuleResponse.
 
-        屏蔽的内置规则id（内置规则id通常可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护->防护规则中查询，也可以再防护事件的事件详情中查询内置规则id）
+        需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xxs攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
         :return: The rule of this DeleteIgnoreRuleResponse.
-        :rtype: str
+        :rtype: object
         """
         return self._rule
 
@@ -262,10 +269,10 @@ class DeleteIgnoreRuleResponse(SdkResponse):
     def rule(self, rule):
         """Sets the rule of this DeleteIgnoreRuleResponse.
 
-        屏蔽的内置规则id（内置规则id通常可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护->防护规则中查询，也可以再防护事件的事件详情中查询内置规则id）
+        需要屏蔽的规则，可屏蔽一个或者多个，屏蔽多个时使用半角符;分隔   - 当需要屏蔽某一条内置规则时，该参数值为该内置规则id,可以在Web应用防火墙控制台的防护策略->策略名称->Web基础防护的高级设置->防护规则中查询；也可以在防护事件的事件详情中查询内置规则id   - 当需要屏蔽web基础防护某一类规则时，该参数值为需要屏蔽的web基础防护某一类规则名。其中，xss：xxs攻击；webshell：网站木马；vuln：其他类型攻击；sqli：sql注入攻击；robot：恶意爬虫；rfi：远程文件包含；lfi：本地文件包含；cmdi：命令注入攻击   - 当需要屏蔽Web基础防护模块，该参数值为：all   - 当需要屏蔽规则为所有检测模块时，该参数值为：bypass
 
         :param rule: The rule of this DeleteIgnoreRuleResponse.
-        :type rule: str
+        :type rule: object
         """
         self._rule = rule
 
@@ -334,6 +341,28 @@ class DeleteIgnoreRuleResponse(SdkResponse):
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.Condition`]
         """
         self._conditions = conditions
+
+    @property
+    def advanced(self):
+        """Gets the advanced of this DeleteIgnoreRuleResponse.
+
+        高级配置项
+
+        :return: The advanced of this DeleteIgnoreRuleResponse.
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
+        """
+        return self._advanced
+
+    @advanced.setter
+    def advanced(self, advanced):
+        """Sets the advanced of this DeleteIgnoreRuleResponse.
+
+        高级配置项
+
+        :param advanced: The advanced of this DeleteIgnoreRuleResponse.
+        :type advanced: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
+        """
+        self._advanced = advanced
 
     @property
     def domains(self):

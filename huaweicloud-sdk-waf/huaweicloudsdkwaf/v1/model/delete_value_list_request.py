@@ -35,9 +35,9 @@ class DeleteValueListRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
-        :param valuelistid: 引用表id，从查询引用表列表接口获取https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;WAF&amp;api&#x3D;ListValueList
+        :param valuelistid: 引用表id，通过查询引用表列表（ListValueList）接口获取
         :type valuelistid: str
         """
         
@@ -55,7 +55,7 @@ class DeleteValueListRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this DeleteValueListRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this DeleteValueListRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class DeleteValueListRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this DeleteValueListRequest.
 
-        您可以通过调用企业项目管理服务（EPS)的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this DeleteValueListRequest.
         :type enterprise_project_id: str
@@ -77,7 +77,7 @@ class DeleteValueListRequest:
     def valuelistid(self):
         """Gets the valuelistid of this DeleteValueListRequest.
 
-        引用表id，从查询引用表列表接口获取https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=WAF&api=ListValueList
+        引用表id，通过查询引用表列表（ListValueList）接口获取
 
         :return: The valuelistid of this DeleteValueListRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class DeleteValueListRequest:
     def valuelistid(self, valuelistid):
         """Sets the valuelistid of this DeleteValueListRequest.
 
-        引用表id，从查询引用表列表接口获取https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=WAF&api=ListValueList
+        引用表id，通过查询引用表列表（ListValueList）接口获取
 
         :param valuelistid: The valuelistid of this DeleteValueListRequest.
         :type valuelistid: str

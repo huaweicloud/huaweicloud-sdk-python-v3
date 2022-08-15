@@ -37,7 +37,7 @@ class ListHostResponse(SdkResponse):
 
         :param total: 云模式防护域名的数量
         :type total: int
-        :param items: 详细的防护域名信息
+        :param items: 详细的云模式防护域名列表信息
         :type items: list[:class:`huaweicloudsdkwaf.v1.CloudWafHostItem`]
         """
         
@@ -78,7 +78,7 @@ class ListHostResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListHostResponse.
 
-        详细的防护域名信息
+        详细的云模式防护域名列表信息
 
         :return: The items of this ListHostResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.CloudWafHostItem`]
@@ -89,7 +89,7 @@ class ListHostResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListHostResponse.
 
-        详细的防护域名信息
+        详细的云模式防护域名列表信息
 
         :param items: The items of this ListHostResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.CloudWafHostItem`]

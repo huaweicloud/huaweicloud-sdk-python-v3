@@ -41,7 +41,7 @@ class BlockPage:
         :type template: str
         :param custom_page: 
         :type custom_page: :class:`huaweicloudsdkwaf.v1.CustomPage`
-        :param redirect_url: 重定向URL
+        :param redirect_url: “重定向”页面URL
         :type redirect_url: str
         """
         
@@ -104,7 +104,7 @@ class BlockPage:
     def redirect_url(self):
         """Gets the redirect_url of this BlockPage.
 
-        重定向URL
+        “重定向”页面URL
 
         :return: The redirect_url of this BlockPage.
         :rtype: str
@@ -115,7 +115,7 @@ class BlockPage:
     def redirect_url(self, redirect_url):
         """Sets the redirect_url of this BlockPage.
 
-        重定向URL
+        “重定向”页面URL
 
         :param redirect_url: The redirect_url of this BlockPage.
         :type redirect_url: str

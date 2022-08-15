@@ -69,7 +69,7 @@ class QueryCustomerOnDemandResourcesReq:
         :type limit: int
         :param status: 资源状态： 1：正常（已开通）2：宽限期3：冻结中4：变更中5：正在关闭6：已关闭
         :type status: int
-        :param indirect_partner_id: 精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询精英服务商子客户的按需资源列表，必须携带该字段，否则只能查询自己的子客户按需资源。
+        :param indirect_partner_id: 云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商子客户的按需资源列表，必须携带该字段，除此之外，此参数不做处理。否则只能查询自己的子客户按需资源。
         :type indirect_partner_id: str
         """
         
@@ -309,7 +309,7 @@ class QueryCustomerOnDemandResourcesReq:
     def indirect_partner_id(self):
         """Gets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询精英服务商子客户的按需资源列表，必须携带该字段，否则只能查询自己的子客户按需资源。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商子客户的按需资源列表，必须携带该字段，除此之外，此参数不做处理。否则只能查询自己的子客户按需资源。
 
         :return: The indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
         :rtype: str
@@ -320,7 +320,7 @@ class QueryCustomerOnDemandResourcesReq:
     def indirect_partner_id(self, indirect_partner_id):
         """Sets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
 
-        精英服务商ID。获取方法请参见[查询精英服务商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询精英服务商子客户的按需资源列表，必须携带该字段，否则只能查询自己的子客户按需资源。
+        云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商子客户的按需资源列表，必须携带该字段，除此之外，此参数不做处理。否则只能查询自己的子客户按需资源。
 
         :param indirect_partner_id: The indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
         :type indirect_partner_id: str

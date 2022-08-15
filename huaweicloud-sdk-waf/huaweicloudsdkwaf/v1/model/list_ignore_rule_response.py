@@ -35,9 +35,9 @@ class ListIgnoreRuleResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 该策略下误报屏蔽规则数量
+        :param total: 该策略下全局白名单规则数量
         :type total: int
-        :param items: 误报屏蔽规则对象列表
+        :param items: 全局白名单规则信息数组
         :type items: list[:class:`huaweicloudsdkwaf.v1.IgnoreRuleBody`]
         """
         
@@ -56,7 +56,7 @@ class ListIgnoreRuleResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListIgnoreRuleResponse.
 
-        该策略下误报屏蔽规则数量
+        该策略下全局白名单规则数量
 
         :return: The total of this ListIgnoreRuleResponse.
         :rtype: int
@@ -67,7 +67,7 @@ class ListIgnoreRuleResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListIgnoreRuleResponse.
 
-        该策略下误报屏蔽规则数量
+        该策略下全局白名单规则数量
 
         :param total: The total of this ListIgnoreRuleResponse.
         :type total: int
@@ -78,7 +78,7 @@ class ListIgnoreRuleResponse(SdkResponse):
     def items(self):
         """Gets the items of this ListIgnoreRuleResponse.
 
-        误报屏蔽规则对象列表
+        全局白名单规则信息数组
 
         :return: The items of this ListIgnoreRuleResponse.
         :rtype: list[:class:`huaweicloudsdkwaf.v1.IgnoreRuleBody`]
@@ -89,7 +89,7 @@ class ListIgnoreRuleResponse(SdkResponse):
     def items(self, items):
         """Sets the items of this ListIgnoreRuleResponse.
 
-        误报屏蔽规则对象列表
+        全局白名单规则信息数组
 
         :param items: The items of this ListIgnoreRuleResponse.
         :type items: list[:class:`huaweicloudsdkwaf.v1.IgnoreRuleBody`]

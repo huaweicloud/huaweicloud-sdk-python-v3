@@ -43,7 +43,7 @@ class ListCompositeHostsResponse(SdkResponse):
         :type total: int
         :param cloud_total: 云模式防护域名的数量
         :type cloud_total: int
-        :param premium_total: 独享防护域名的数量
+        :param premium_total: 独享模式防护域名的数量
         :type premium_total: int
         :param items: 详细的防护域名信息
         :type items: list[:class:`huaweicloudsdkwaf.v1.CompositeHostResponse`]
@@ -114,7 +114,7 @@ class ListCompositeHostsResponse(SdkResponse):
     def premium_total(self):
         """Gets the premium_total of this ListCompositeHostsResponse.
 
-        独享防护域名的数量
+        独享模式防护域名的数量
 
         :return: The premium_total of this ListCompositeHostsResponse.
         :rtype: int
@@ -125,7 +125,7 @@ class ListCompositeHostsResponse(SdkResponse):
     def premium_total(self, premium_total):
         """Sets the premium_total of this ListCompositeHostsResponse.
 
-        独享防护域名的数量
+        独享模式防护域名的数量
 
         :param premium_total: The premium_total of this ListCompositeHostsResponse.
         :type premium_total: int

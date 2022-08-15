@@ -23,24 +23,26 @@ class ListRepositoryTagsRequest:
     openapi_types = {
         'namespace': 'str',
         'repository': 'str',
-        'offset': 'str',
         'limit': 'str',
+        'offset': 'str',
         'order_column': 'str',
         'order_type': 'str',
-        'tag': 'str'
+        'tag': 'str',
+        'filter': 'str'
     }
 
     attribute_map = {
         'namespace': 'namespace',
         'repository': 'repository',
-        'offset': 'offset',
         'limit': 'limit',
+        'offset': 'offset',
         'order_column': 'order_column',
         'order_type': 'order_type',
-        'tag': 'tag'
+        'tag': 'tag',
+        'filter': 'filter'
     }
 
-    def __init__(self, namespace=None, repository=None, offset=None, limit=None, order_column=None, order_type=None, tag=None):
+    def __init__(self, namespace=None, repository=None, limit=None, offset=None, order_column=None, order_type=None, tag=None, filter=None):
         """ListRepositoryTagsRequest
 
         The model defined in huaweicloud sdk
@@ -49,41 +51,46 @@ class ListRepositoryTagsRequest:
         :type namespace: str
         :param repository: 镜像仓库名称
         :type repository: str
-        :param offset: 起始索引。**注意：offset和limit参数需要配套使用** 
-        :type offset: str
-        :param limit: 返回条数。**注意：offset和limit参数需要配套使用* 
+        :param limit: 返回条数。注意：offset和limit参数需要配套使用。
         :type limit: str
-        :param order_column: 按列排序，可设置为updated_at（按更新时间排序） 
+        :param offset: 起始索引。注意：offset和limit参数需要配套使用。
+        :type offset: str
+        :param order_column: 按列排序，可设置为updated_at（按更新时间排序）。注意：order_column和order_type参数需要配套使用。
         :type order_column: str
-        :param order_type: 排序类型，可设置为desc（降序）、asc（升序） 
+        :param order_type: 排序类型，可设置为desc（降序）、asc（升序）。注意：order_column和order_type参数需要配套使用。
         :type order_type: str
-        :param tag: 镜像版本名
+        :param tag: 镜像版本名。
         :type tag: str
+        :param filter: 应填写 offset::{offset}|limit::{limit}|order_column::{order_column}|order_type::{order_type}|tag::{tag} ,其中{limit}为返回条数,{offset}为起始索引,注意：offset和limit参数需要配套使用。 {order_column}为按列排序，可设置为updated_at（按更新时间排序）,{order_type}为排序类型，可设置为desc（降序）、asc（升序），{tag}为镜像版本名。
+        :type filter: str
         """
         
         
 
         self._namespace = None
         self._repository = None
-        self._offset = None
         self._limit = None
+        self._offset = None
         self._order_column = None
         self._order_type = None
         self._tag = None
+        self._filter = None
         self.discriminator = None
 
         self.namespace = namespace
         self.repository = repository
-        if offset is not None:
-            self.offset = offset
         if limit is not None:
             self.limit = limit
+        if offset is not None:
+            self.offset = offset
         if order_column is not None:
             self.order_column = order_column
         if order_type is not None:
             self.order_type = order_type
         if tag is not None:
             self.tag = tag
+        if filter is not None:
+            self.filter = filter
 
     @property
     def namespace(self):
@@ -130,32 +137,10 @@ class ListRepositoryTagsRequest:
         self._repository = repository
 
     @property
-    def offset(self):
-        """Gets the offset of this ListRepositoryTagsRequest.
-
-        起始索引。**注意：offset和limit参数需要配套使用** 
-
-        :return: The offset of this ListRepositoryTagsRequest.
-        :rtype: str
-        """
-        return self._offset
-
-    @offset.setter
-    def offset(self, offset):
-        """Sets the offset of this ListRepositoryTagsRequest.
-
-        起始索引。**注意：offset和limit参数需要配套使用** 
-
-        :param offset: The offset of this ListRepositoryTagsRequest.
-        :type offset: str
-        """
-        self._offset = offset
-
-    @property
     def limit(self):
         """Gets the limit of this ListRepositoryTagsRequest.
 
-        返回条数。**注意：offset和limit参数需要配套使用* 
+        返回条数。注意：offset和limit参数需要配套使用。
 
         :return: The limit of this ListRepositoryTagsRequest.
         :rtype: str
@@ -166,7 +151,7 @@ class ListRepositoryTagsRequest:
     def limit(self, limit):
         """Sets the limit of this ListRepositoryTagsRequest.
 
-        返回条数。**注意：offset和limit参数需要配套使用* 
+        返回条数。注意：offset和limit参数需要配套使用。
 
         :param limit: The limit of this ListRepositoryTagsRequest.
         :type limit: str
@@ -174,10 +159,32 @@ class ListRepositoryTagsRequest:
         self._limit = limit
 
     @property
+    def offset(self):
+        """Gets the offset of this ListRepositoryTagsRequest.
+
+        起始索引。注意：offset和limit参数需要配套使用。
+
+        :return: The offset of this ListRepositoryTagsRequest.
+        :rtype: str
+        """
+        return self._offset
+
+    @offset.setter
+    def offset(self, offset):
+        """Sets the offset of this ListRepositoryTagsRequest.
+
+        起始索引。注意：offset和limit参数需要配套使用。
+
+        :param offset: The offset of this ListRepositoryTagsRequest.
+        :type offset: str
+        """
+        self._offset = offset
+
+    @property
     def order_column(self):
         """Gets the order_column of this ListRepositoryTagsRequest.
 
-        按列排序，可设置为updated_at（按更新时间排序） 
+        按列排序，可设置为updated_at（按更新时间排序）。注意：order_column和order_type参数需要配套使用。
 
         :return: The order_column of this ListRepositoryTagsRequest.
         :rtype: str
@@ -188,7 +195,7 @@ class ListRepositoryTagsRequest:
     def order_column(self, order_column):
         """Sets the order_column of this ListRepositoryTagsRequest.
 
-        按列排序，可设置为updated_at（按更新时间排序） 
+        按列排序，可设置为updated_at（按更新时间排序）。注意：order_column和order_type参数需要配套使用。
 
         :param order_column: The order_column of this ListRepositoryTagsRequest.
         :type order_column: str
@@ -199,7 +206,7 @@ class ListRepositoryTagsRequest:
     def order_type(self):
         """Gets the order_type of this ListRepositoryTagsRequest.
 
-        排序类型，可设置为desc（降序）、asc（升序） 
+        排序类型，可设置为desc（降序）、asc（升序）。注意：order_column和order_type参数需要配套使用。
 
         :return: The order_type of this ListRepositoryTagsRequest.
         :rtype: str
@@ -210,7 +217,7 @@ class ListRepositoryTagsRequest:
     def order_type(self, order_type):
         """Sets the order_type of this ListRepositoryTagsRequest.
 
-        排序类型，可设置为desc（降序）、asc（升序） 
+        排序类型，可设置为desc（降序）、asc（升序）。注意：order_column和order_type参数需要配套使用。
 
         :param order_type: The order_type of this ListRepositoryTagsRequest.
         :type order_type: str
@@ -221,7 +228,7 @@ class ListRepositoryTagsRequest:
     def tag(self):
         """Gets the tag of this ListRepositoryTagsRequest.
 
-        镜像版本名
+        镜像版本名。
 
         :return: The tag of this ListRepositoryTagsRequest.
         :rtype: str
@@ -232,12 +239,34 @@ class ListRepositoryTagsRequest:
     def tag(self, tag):
         """Sets the tag of this ListRepositoryTagsRequest.
 
-        镜像版本名
+        镜像版本名。
 
         :param tag: The tag of this ListRepositoryTagsRequest.
         :type tag: str
         """
         self._tag = tag
+
+    @property
+    def filter(self):
+        """Gets the filter of this ListRepositoryTagsRequest.
+
+        应填写 offset::{offset}|limit::{limit}|order_column::{order_column}|order_type::{order_type}|tag::{tag} ,其中{limit}为返回条数,{offset}为起始索引,注意：offset和limit参数需要配套使用。 {order_column}为按列排序，可设置为updated_at（按更新时间排序）,{order_type}为排序类型，可设置为desc（降序）、asc（升序），{tag}为镜像版本名。
+
+        :return: The filter of this ListRepositoryTagsRequest.
+        :rtype: str
+        """
+        return self._filter
+
+    @filter.setter
+    def filter(self, filter):
+        """Sets the filter of this ListRepositoryTagsRequest.
+
+        应填写 offset::{offset}|limit::{limit}|order_column::{order_column}|order_type::{order_type}|tag::{tag} ,其中{limit}为返回条数,{offset}为起始索引,注意：offset和limit参数需要配套使用。 {order_column}为按列排序，可设置为updated_at（按更新时间排序）,{order_type}为排序类型，可设置为desc（降序）、asc（升序），{tag}为镜像版本名。
+
+        :param filter: The filter of this ListRepositoryTagsRequest.
+        :type filter: str
+        """
+        self._filter = filter
 
     def to_dict(self):
         """Returns the model properties as a dict"""
