@@ -810,6 +810,122 @@ class VodClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_template_group_collection(self, request):
+        """创建转码模板组集合
+
+        创建转码模板组集合
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateTemplateGroupCollection
+        :type request: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupCollectionRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupCollectionResponse`
+        """
+        return self.create_template_group_collection_with_http_info(request)
+
+    def create_template_group_collection_with_http_info(self, request):
+        all_params = ['create_template_group_collection_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/asset/template-collection/transcodings',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateTemplateGroupCollectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_transcode_template(self, request):
+        """创建自定义转码模板
+
+        创建自定义转码模板。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateTranscodeTemplate
+        :type request: :class:`huaweicloudsdkvod.v1.CreateTranscodeTemplateRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.CreateTranscodeTemplateResponse`
+        """
+        return self.create_transcode_template_with_http_info(request)
+
+    def create_transcode_template_with_http_info(self, request):
+        all_params = ['create_transcode_template_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/asset/template/transcodings',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateTranscodeTemplateResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_watermark_template(self, request):
         """创建水印模板
 
@@ -1040,6 +1156,122 @@ class VodClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteTemplateGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_template_group_collection(self, request):
+        """删除转码模板组集合
+
+        删除转码模板组集合
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteTemplateGroupCollection
+        :type request: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupCollectionRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupCollectionResponse`
+        """
+        return self.delete_template_group_collection_with_http_info(request)
+
+    def delete_template_group_collection_with_http_info(self, request):
+        all_params = ['group_collection_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'group_collection_id' in local_var_params:
+            query_params.append(('group_collection_id', local_var_params['group_collection_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/asset/template-collection/transcodings',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteTemplateGroupCollectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_transcode_template(self, request):
+        """删除自定义模板
+
+        删除自定义模板
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteTranscodeTemplate
+        :type request: :class:`huaweicloudsdkvod.v1.DeleteTranscodeTemplateRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.DeleteTranscodeTemplateResponse`
+        """
+        return self.delete_transcode_template_with_http_info(request)
+
+    def delete_transcode_template_with_http_info(self, request):
+        all_params = ['group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/asset/template/transcodings',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteTranscodeTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1370,6 +1602,68 @@ class VodClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_template_group_collection(self, request):
+        """查询自定义模板组集合
+
+        查询转码模板组集合
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListTemplateGroupCollection
+        :type request: :class:`huaweicloudsdkvod.v1.ListTemplateGroupCollectionRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ListTemplateGroupCollectionResponse`
+        """
+        return self.list_template_group_collection_with_http_info(request)
+
+    def list_template_group_collection_with_http_info(self, request):
+        all_params = ['group_collection_id', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'group_collection_id' in local_var_params:
+            query_params.append(('group_collection_id', local_var_params['group_collection_id']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/asset/template-collection/transcodings',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTemplateGroupCollectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_top_statistics(self, request):
         """查询TopN媒资信息
 
@@ -1425,6 +1719,72 @@ class VodClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListTopStatisticsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_transcode_template(self, request):
+        """查询转码模板列表
+
+        查询转码模板列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListTranscodeTemplate
+        :type request: :class:`huaweicloudsdkvod.v1.ListTranscodeTemplateRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.ListTranscodeTemplateResponse`
+        """
+        return self.list_transcode_template_with_http_info(request)
+
+    def list_transcode_template_with_http_info(self, request):
+        all_params = ['group_id', 'is_default', 'offset', 'limit', 'query_string']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'is_default' in local_var_params:
+            query_params.append(('is_default', local_var_params['is_default']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'query_string' in local_var_params:
+            query_params.append(('query_string', local_var_params['query_string']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/asset/template/transcodings',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTranscodeTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2479,6 +2839,122 @@ class VodClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateTemplateGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_template_group_collection(self, request):
+        """修改转码模板组集合
+
+        修改转码模板组结合
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateTemplateGroupCollection
+        :type request: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupCollectionRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupCollectionResponse`
+        """
+        return self.update_template_group_collection_with_http_info(request)
+
+    def update_template_group_collection_with_http_info(self, request):
+        all_params = ['update_template_group_collection_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/asset/template-collection/transcodings',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateTemplateGroupCollectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_transcode_template(self, request):
+        """修改转码模板
+
+        修改转码模板
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateTranscodeTemplate
+        :type request: :class:`huaweicloudsdkvod.v1.UpdateTranscodeTemplateRequest`
+        :rtype: :class:`huaweicloudsdkvod.v1.UpdateTranscodeTemplateResponse`
+        """
+        return self.update_transcode_template_with_http_info(request)
+
+    def update_transcode_template_with_http_info(self, request):
+        all_params = ['update_transcode_template_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/asset/template/transcodings',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateTranscodeTemplateResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -46,7 +46,7 @@ class CreateSQLJobReq:
         'tm_slot_num': 'int',
         'resume_checkpoint': 'bool',
         'resume_max_num': 'int',
-        'runtime_config': 'list[JobsRuntimeConfig]',
+        'runtime_config': 'str',
         'tags': 'list[JobsTags]'
     }
 
@@ -136,7 +136,7 @@ class CreateSQLJobReq:
         :param resume_max_num: 异常重试最大次数，单位：次/小时。取值范围：-1或大于0。默认值为“-1”，表示无限次数。
         :type resume_max_num: int
         :param runtime_config: Flink作业运行时自定义优化参数。
-        :type runtime_config: list[:class:`huaweicloudsdkdli.v1.JobsRuntimeConfig`]
+        :type runtime_config: str
         :param tags: Flink SQL作业的标签。具体请参考表tags。
         :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
         """
@@ -783,7 +783,7 @@ class CreateSQLJobReq:
         Flink作业运行时自定义优化参数。
 
         :return: The runtime_config of this CreateSQLJobReq.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsRuntimeConfig`]
+        :rtype: str
         """
         return self._runtime_config
 
@@ -794,7 +794,7 @@ class CreateSQLJobReq:
         Flink作业运行时自定义优化参数。
 
         :param runtime_config: The runtime_config of this CreateSQLJobReq.
-        :type runtime_config: list[:class:`huaweicloudsdkdli.v1.JobsRuntimeConfig`]
+        :type runtime_config: str
         """
         self._runtime_config = runtime_config
 

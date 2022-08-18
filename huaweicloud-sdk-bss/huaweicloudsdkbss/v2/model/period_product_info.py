@@ -63,13 +63,13 @@ class PeriodProductInfo:
         :type resource_type: str
         :param resource_spec: 云服务类型的资源规格，部分云服务类型和资源规格举例如下： 弹性云服务器：根据操作系统类型在云服务器规格的ID后添加“.win”或“.linux”，例如“s2.small.1.linux”。云服务器规格的ID字段，您可以调用查询规格详情和规格扩展信息列表接口获取。 带宽：12_bgp：动态BGP按流量计费带宽12_sbgp：静态BGP按流量计费带宽19_bgp：动态BGP按带宽计费带宽19_sbgp：静态BGP按带宽计费带宽19_share：按带宽计费共享带宽 IP：5_bgp：动态BGP公网IP5_sbgp：静态BGP公网IP 云数据库：云数据库的资源规格信息，您可以调用查询数据库规格接口获取。 分布式缓存服务：分布式缓存服务的资源规格信息，您可以调用查询产品规格接口获取。
         :type resource_spec: str
-        :param region: 云服务区编码，例如：“cn-north-1”。
+        :param region: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
         :type region: str
-        :param available_zone: 可用区标识，例如：“cn-north-1a”。
+        :param available_zone: 可用区标识，例如：“cn-north-1a”。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
         :type available_zone: str
-        :param resource_size: 资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
+        :param resource_size: 资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。非线性产品时此参数不携带或者携带值为null时，不作为筛选条件。
         :type resource_size: int
-        :param size_measure_id: 资源容量度量标识。 15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
+        :param size_measure_id: 资源容量度量标识。 15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个 线性产品时该参数必填。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。 非线性产品时此参数不携带或者携带值为null时，不作为筛选条件。
         :type size_measure_id: int
         :param period_type: 订购包年/包月产品的周期类型。 0：天2：月3：年4：小时
         :type period_type: int
@@ -77,7 +77,7 @@ class PeriodProductInfo:
         :type period_num: int
         :param subscription_num: 订购包年/包月产品的数量。
         :type subscription_num: int
-        :param fee_installment_mode: 费用分期模式。 HALF_PAY：半付ZERO_PAY：零付NA：不支持费用分期模式  说明： 此参数不传则默认为空，效果等同于“NA：不支持费用分期模式”。暂只支持IES产品。
+        :param fee_installment_mode: 费用分期模式。 HALF_PAY：半付ZERO_PAY：零付NA：不支持费用分期模式  说明： 此参数不携带或携带值为空串或携带值为null时，默认值为“NA”。暂只支持IES产品。
         :type fee_installment_mode: str
         """
         
@@ -206,7 +206,7 @@ class PeriodProductInfo:
     def region(self):
         """Gets the region of this PeriodProductInfo.
 
-        云服务区编码，例如：“cn-north-1”。
+        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :return: The region of this PeriodProductInfo.
         :rtype: str
@@ -217,7 +217,7 @@ class PeriodProductInfo:
     def region(self, region):
         """Sets the region of this PeriodProductInfo.
 
-        云服务区编码，例如：“cn-north-1”。
+        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
         :param region: The region of this PeriodProductInfo.
         :type region: str
@@ -228,7 +228,7 @@ class PeriodProductInfo:
     def available_zone(self):
         """Gets the available_zone of this PeriodProductInfo.
 
-        可用区标识，例如：“cn-north-1a”。
+        可用区标识，例如：“cn-north-1a”。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :return: The available_zone of this PeriodProductInfo.
         :rtype: str
@@ -239,7 +239,7 @@ class PeriodProductInfo:
     def available_zone(self, available_zone):
         """Sets the available_zone of this PeriodProductInfo.
 
-        可用区标识，例如：“cn-north-1a”。
+        可用区标识，例如：“cn-north-1a”。具体请参见地区和终端节点可用分区的“可用分区名称”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :param available_zone: The available_zone of this PeriodProductInfo.
         :type available_zone: str
@@ -250,7 +250,7 @@ class PeriodProductInfo:
     def resource_size(self):
         """Gets the resource_size of this PeriodProductInfo.
 
-        资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
+        资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。非线性产品时此参数不携带或者携带值为null时，不作为筛选条件。
 
         :return: The resource_size of this PeriodProductInfo.
         :rtype: int
@@ -261,7 +261,7 @@ class PeriodProductInfo:
     def resource_size(self, resource_size):
         """Sets the resource_size of this PeriodProductInfo.
 
-        资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
+        资源容量大小，例如购买的卷大小或带宽大小。 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。非线性产品时此参数不携带或者携带值为null时，不作为筛选条件。
 
         :param resource_size: The resource_size of this PeriodProductInfo.
         :type resource_size: int
@@ -272,7 +272,7 @@ class PeriodProductInfo:
     def size_measure_id(self):
         """Gets the size_measure_id of this PeriodProductInfo.
 
-        资源容量度量标识。 15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
+        资源容量度量标识。 15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个 线性产品时该参数必填。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。 非线性产品时此参数不携带或者携带值为null时，不作为筛选条件。
 
         :return: The size_measure_id of this PeriodProductInfo.
         :rtype: int
@@ -283,7 +283,7 @@ class PeriodProductInfo:
     def size_measure_id(self, size_measure_id):
         """Sets the size_measure_id of this PeriodProductInfo.
 
-        资源容量度量标识。 15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个 线性产品时该参数不能为空。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。
+        资源容量度量标识。 15：Mbps（购买带宽时使用）17：GB（购买云硬盘时使用）14：个 线性产品时该参数必填。线性产品为包括硬盘，带宽等在订购时需要指定大小的产品。例如硬盘在订购时需选择10G、20G等不同大小。 非线性产品时此参数不携带或者携带值为null时，不作为筛选条件。
 
         :param size_measure_id: The size_measure_id of this PeriodProductInfo.
         :type size_measure_id: int
@@ -360,7 +360,7 @@ class PeriodProductInfo:
     def fee_installment_mode(self):
         """Gets the fee_installment_mode of this PeriodProductInfo.
 
-        费用分期模式。 HALF_PAY：半付ZERO_PAY：零付NA：不支持费用分期模式  说明： 此参数不传则默认为空，效果等同于“NA：不支持费用分期模式”。暂只支持IES产品。
+        费用分期模式。 HALF_PAY：半付ZERO_PAY：零付NA：不支持费用分期模式  说明： 此参数不携带或携带值为空串或携带值为null时，默认值为“NA”。暂只支持IES产品。
 
         :return: The fee_installment_mode of this PeriodProductInfo.
         :rtype: str
@@ -371,7 +371,7 @@ class PeriodProductInfo:
     def fee_installment_mode(self, fee_installment_mode):
         """Sets the fee_installment_mode of this PeriodProductInfo.
 
-        费用分期模式。 HALF_PAY：半付ZERO_PAY：零付NA：不支持费用分期模式  说明： 此参数不传则默认为空，效果等同于“NA：不支持费用分期模式”。暂只支持IES产品。
+        费用分期模式。 HALF_PAY：半付ZERO_PAY：零付NA：不支持费用分期模式  说明： 此参数不携带或携带值为空串或携带值为null时，默认值为“NA”。暂只支持IES产品。
 
         :param fee_installment_mode: The fee_installment_mode of this PeriodProductInfo.
         :type fee_installment_mode: str

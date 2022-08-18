@@ -35,9 +35,9 @@ class StrategyConfig:
 
         The model defined in huaweicloud sdk
 
-        :param concurrency: 0：函数被禁用;-1：函数被启用。
+        :param concurrency: 单函数最大实例数，v1取值0和-1，v2取值-1到1000
         :type concurrency: int
-        :param concurrent_num: 函数并发数
+        :param concurrent_num: 单实例最大并发数，v2版本才支持，取值-1到200000
         :type concurrent_num: int
         """
         
@@ -48,14 +48,13 @@ class StrategyConfig:
         self.discriminator = None
 
         self.concurrency = concurrency
-        if concurrent_num is not None:
-            self.concurrent_num = concurrent_num
+        self.concurrent_num = concurrent_num
 
     @property
     def concurrency(self):
         """Gets the concurrency of this StrategyConfig.
 
-        0：函数被禁用;-1：函数被启用。
+        单函数最大实例数，v1取值0和-1，v2取值-1到1000
 
         :return: The concurrency of this StrategyConfig.
         :rtype: int
@@ -66,7 +65,7 @@ class StrategyConfig:
     def concurrency(self, concurrency):
         """Sets the concurrency of this StrategyConfig.
 
-        0：函数被禁用;-1：函数被启用。
+        单函数最大实例数，v1取值0和-1，v2取值-1到1000
 
         :param concurrency: The concurrency of this StrategyConfig.
         :type concurrency: int
@@ -77,7 +76,7 @@ class StrategyConfig:
     def concurrent_num(self):
         """Gets the concurrent_num of this StrategyConfig.
 
-        函数并发数
+        单实例最大并发数，v2版本才支持，取值-1到200000
 
         :return: The concurrent_num of this StrategyConfig.
         :rtype: int
@@ -88,7 +87,7 @@ class StrategyConfig:
     def concurrent_num(self, concurrent_num):
         """Sets the concurrent_num of this StrategyConfig.
 
-        函数并发数
+        单实例最大并发数，v2版本才支持，取值-1到200000
 
         :param concurrent_num: The concurrent_num of this StrategyConfig.
         :type concurrent_num: int

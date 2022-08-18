@@ -21,7 +21,7 @@ class CreateWorkflowRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateWorkflowRequestBody'
+        'body': 'WorkflowCreateBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CreateWorkflowRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateWorkflowRequest
-        :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequestBody`
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`
         """
         
         
@@ -51,7 +51,7 @@ class CreateWorkflowRequest:
 
 
         :return: The body of this CreateWorkflowRequest.
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequestBody`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`
         """
         return self._body
 
@@ -61,7 +61,7 @@ class CreateWorkflowRequest:
 
 
         :param body: The body of this CreateWorkflowRequest.
-        :type body: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequestBody`
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`
         """
         self._body = body
 

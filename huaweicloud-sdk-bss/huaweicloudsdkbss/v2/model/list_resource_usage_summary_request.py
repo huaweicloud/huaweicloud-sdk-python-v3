@@ -47,7 +47,7 @@ class ListResourceUsageSummaryRequest:
 
         :param x_language: 语言。en_US：英文；zh_CN：中文。默认：zh_CN：中文
         :type x_language: str
-        :param bill_cycle: 账期，格式为yyyy-MM。
+        :param bill_cycle: 账期，东八区时间，格式为yyyy-MM。
         :type bill_cycle: str
         :param service_type_code: 云服务类型，当前仅支持：hws.service.type.cdn：内容分发网络,hws.service.type.obs：对象存储服务
         :type service_type_code: str
@@ -109,7 +109,7 @@ class ListResourceUsageSummaryRequest:
     def bill_cycle(self):
         """Gets the bill_cycle of this ListResourceUsageSummaryRequest.
 
-        账期，格式为yyyy-MM。
+        账期，东八区时间，格式为yyyy-MM。
 
         :return: The bill_cycle of this ListResourceUsageSummaryRequest.
         :rtype: str
@@ -120,7 +120,7 @@ class ListResourceUsageSummaryRequest:
     def bill_cycle(self, bill_cycle):
         """Sets the bill_cycle of this ListResourceUsageSummaryRequest.
 
-        账期，格式为yyyy-MM。
+        账期，东八区时间，格式为yyyy-MM。
 
         :param bill_cycle: The bill_cycle of this ListResourceUsageSummaryRequest.
         :type bill_cycle: str

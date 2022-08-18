@@ -22,19 +22,15 @@ class CreateEventResponse(SdkResponse):
 
     openapi_types = {
         'id': 'str',
-        'name': 'str',
-        'content': 'str',
-        'last_modified': 'float'
+        'name': 'str'
     }
 
     attribute_map = {
         'id': 'id',
-        'name': 'name',
-        'content': 'content',
-        'last_modified': 'last_modified'
+        'name': 'name'
     }
 
-    def __init__(self, id=None, name=None, content=None, last_modified=None):
+    def __init__(self, id=None, name=None):
         """CreateEventResponse
 
         The model defined in huaweicloud sdk
@@ -43,28 +39,18 @@ class CreateEventResponse(SdkResponse):
         :type id: str
         :param name: 测试事件名称。
         :type name: str
-        :param content: 测试事件content。
-        :type content: str
-        :param last_modified: 上次修改的时间。
-        :type last_modified: float
         """
         
         super(CreateEventResponse, self).__init__()
 
         self._id = None
         self._name = None
-        self._content = None
-        self._last_modified = None
         self.discriminator = None
 
         if id is not None:
             self.id = id
         if name is not None:
             self.name = name
-        if content is not None:
-            self.content = content
-        if last_modified is not None:
-            self.last_modified = last_modified
 
     @property
     def id(self):
@@ -109,50 +95,6 @@ class CreateEventResponse(SdkResponse):
         :type name: str
         """
         self._name = name
-
-    @property
-    def content(self):
-        """Gets the content of this CreateEventResponse.
-
-        测试事件content。
-
-        :return: The content of this CreateEventResponse.
-        :rtype: str
-        """
-        return self._content
-
-    @content.setter
-    def content(self, content):
-        """Sets the content of this CreateEventResponse.
-
-        测试事件content。
-
-        :param content: The content of this CreateEventResponse.
-        :type content: str
-        """
-        self._content = content
-
-    @property
-    def last_modified(self):
-        """Gets the last_modified of this CreateEventResponse.
-
-        上次修改的时间。
-
-        :return: The last_modified of this CreateEventResponse.
-        :rtype: float
-        """
-        return self._last_modified
-
-    @last_modified.setter
-    def last_modified(self, last_modified):
-        """Sets the last_modified of this CreateEventResponse.
-
-        上次修改的时间。
-
-        :param last_modified: The last_modified of this CreateEventResponse.
-        :type last_modified: float
-        """
-        self._last_modified = last_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

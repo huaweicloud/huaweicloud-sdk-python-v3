@@ -58,7 +58,9 @@ class UpdateFunctionConfigResponse(SdkResponse):
         'type': 'str',
         'enable_dynamic_memory': 'bool',
         'is_stateful_function': 'bool',
-        'domain_names': 'str'
+        'domain_names': 'str',
+        'enable_auth_in_header': 'bool',
+        'custom_image': 'CustomImage'
     }
 
     attribute_map = {
@@ -99,10 +101,12 @@ class UpdateFunctionConfigResponse(SdkResponse):
         'type': 'type',
         'enable_dynamic_memory': 'enable_dynamic_memory',
         'is_stateful_function': 'is_stateful_function',
-        'domain_names': 'domain_names'
+        'domain_names': 'domain_names',
+        'enable_auth_in_header': 'enable_auth_in_header',
+        'custom_image': 'custom_image'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, is_stateful_function=None, domain_names=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, is_stateful_function=None, domain_names=None, enable_auth_in_header=None, custom_image=None):
         """UpdateFunctionConfigResponse
 
         The model defined in huaweicloud sdk
@@ -183,6 +187,10 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type is_stateful_function: bool
         :param domain_names: 函数配置的需要支持域名解析的内网域名。
         :type domain_names: str
+        :param enable_auth_in_header: 是否允许在请求头中添加鉴权信息
+        :type enable_auth_in_header: bool
+        :param custom_image: 
+        :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
         """
         
         super(UpdateFunctionConfigResponse, self).__init__()
@@ -225,6 +233,8 @@ class UpdateFunctionConfigResponse(SdkResponse):
         self._enable_dynamic_memory = None
         self._is_stateful_function = None
         self._domain_names = None
+        self._enable_auth_in_header = None
+        self._custom_image = None
         self.discriminator = None
 
         if func_urn is not None:
@@ -303,6 +313,10 @@ class UpdateFunctionConfigResponse(SdkResponse):
             self.is_stateful_function = is_stateful_function
         if domain_names is not None:
             self.domain_names = domain_names
+        if enable_auth_in_header is not None:
+            self.enable_auth_in_header = enable_auth_in_header
+        if custom_image is not None:
+            self.custom_image = custom_image
 
     @property
     def func_urn(self):
@@ -1133,6 +1147,48 @@ class UpdateFunctionConfigResponse(SdkResponse):
         :type domain_names: str
         """
         self._domain_names = domain_names
+
+    @property
+    def enable_auth_in_header(self):
+        """Gets the enable_auth_in_header of this UpdateFunctionConfigResponse.
+
+        是否允许在请求头中添加鉴权信息
+
+        :return: The enable_auth_in_header of this UpdateFunctionConfigResponse.
+        :rtype: bool
+        """
+        return self._enable_auth_in_header
+
+    @enable_auth_in_header.setter
+    def enable_auth_in_header(self, enable_auth_in_header):
+        """Sets the enable_auth_in_header of this UpdateFunctionConfigResponse.
+
+        是否允许在请求头中添加鉴权信息
+
+        :param enable_auth_in_header: The enable_auth_in_header of this UpdateFunctionConfigResponse.
+        :type enable_auth_in_header: bool
+        """
+        self._enable_auth_in_header = enable_auth_in_header
+
+    @property
+    def custom_image(self):
+        """Gets the custom_image of this UpdateFunctionConfigResponse.
+
+
+        :return: The custom_image of this UpdateFunctionConfigResponse.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
+        """
+        return self._custom_image
+
+    @custom_image.setter
+    def custom_image(self, custom_image):
+        """Sets the custom_image of this UpdateFunctionConfigResponse.
+
+
+        :param custom_image: The custom_image of this UpdateFunctionConfigResponse.
+        :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
+        """
+        self._custom_image = custom_image
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -44,7 +44,7 @@ class UpdateSQLJobReq:
         'tm_slot_num': 'int',
         'resume_checkpoint': 'bool',
         'resume_max_num': 'int',
-        'runtime_config': 'list[JobsRuntimeConfig]',
+        'runtime_config': 'str',
         'operator_config': 'str',
         'static_estimator_config': 'str'
     }
@@ -130,7 +130,7 @@ class UpdateSQLJobReq:
         :param resume_max_num: 异常重试最大次数，单位：次/小时。取值范围：-1或大于0。默认值为“-1”，表示无限次数。
         :type resume_max_num: int
         :param runtime_config: Flink作业运行时自定义优化参数。
-        :type runtime_config: list[:class:`huaweicloudsdkdli.v1.JobsRuntimeConfig`]
+        :type runtime_config: str
         :param operator_config: 算子的并行度配置。
         :type operator_config: str
         :param static_estimator_config: 每个算子的流量/命中率配置，json格式的字符串。例如： {\&quot;operator_list\&quot;:[   {\&quot;id\&quot;:\&quot;0a448493b4782967b150582570326227\&quot;,\&quot;rate_factor\&quot;:0.55},   {\&quot;id\&quot;:\&quot;6d2677a0ecc3fd8df0b72ec675edf8f4\&quot;,\&quot;rate_factor\&quot;:1},   {\&quot;id\&quot;:\&quot;ea632d67b7d595e5b851708ae9ad79d6\&quot;,\&quot;rate_factor\&quot;:0.55},   {\&quot;id\&quot;:\&quot;bc764cd8ddf7a0cff126f51c16239658\&quot;,\&quot;output_rate\&quot;:2000} ]}
@@ -733,7 +733,7 @@ class UpdateSQLJobReq:
         Flink作业运行时自定义优化参数。
 
         :return: The runtime_config of this UpdateSQLJobReq.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsRuntimeConfig`]
+        :rtype: str
         """
         return self._runtime_config
 
@@ -744,7 +744,7 @@ class UpdateSQLJobReq:
         Flink作业运行时自定义优化参数。
 
         :param runtime_config: The runtime_config of this UpdateSQLJobReq.
-        :type runtime_config: list[:class:`huaweicloudsdkdli.v1.JobsRuntimeConfig`]
+        :type runtime_config: str
         """
         self._runtime_config = runtime_config
 

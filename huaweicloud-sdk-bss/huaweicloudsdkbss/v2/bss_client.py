@@ -322,7 +322,7 @@ class BssClient(Client):
     def list_free_resource_usages(self, request):
         """查询资源包使用量
 
-        客户在伙伴销售平台查询客户的资源内使用量。
+        客户在伙伴销售平台根据资源项维度查询客户的资源包使用量。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -4840,6 +4840,7 @@ class BssClient(Client):
         &gt;-   注意：如ECS主机挂载新购的云硬盘，但此硬盘不是该ECS主资源的从资源，主从资源信息必须以调用[查询客户包年/包月资源列表](https://support.huaweicloud.com/api-oce/api_order_00021.html)接口获取的信息为准。
         &gt;-   调用该接口后，您还可以调用“[查询退款订单的金额详情](查询退款订单的金额详情.md)”接口查询退订订单对应的金额来自哪些订单。
         &gt;-   该接口支持5天无理由全额退订，具体规则请参见“[退订规则说明](https://support.huaweicloud.com/usermanual-billing/unsubscription_topic_20000081.html)”。
+        &gt;-   您正在退订使用中的资源，请仔细确认资源信息和退款信息。未放入回收站的资源退订后无法恢复，若您要保留资源，仅退订未使用的续费周期，请退订续费周期。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

@@ -39,7 +39,7 @@ class PayCustomerOrderReq:
 
         :param order_id: 订单编号。 取值为调用“查询订单列表”接口时响应消息中的“order_id”字段的值或调用“续订包年/包月资源”接口时响应消息“order_ids”中的订单ID。
         :type order_id: str
-        :param coupon_infos: 优惠券ID列表，目前仅支持传递一个优惠券ID。 请从“查询订单可用优惠券”接口的响应参数中获取。 具体参见表1。
+        :param coupon_infos: 优惠券ID列表，目前支持传递最多三个优惠券ID。 请从“查询订单可用优惠券”接口的响应参数中获取。 具体参见表1。
         :type coupon_infos: list[:class:`huaweicloudsdkbss.v2.CouponSimpleInfoOrderPay`]
         :param discount_infos: 折扣ID列表，目前仅支持传递一个折扣ID。 请从“查询订单可用折扣”接口的响应参数中获取。 具体参见表2。
         :type discount_infos: list[:class:`huaweicloudsdkbss.v2.DiscountSimpleInfo`]
@@ -84,7 +84,7 @@ class PayCustomerOrderReq:
     def coupon_infos(self):
         """Gets the coupon_infos of this PayCustomerOrderReq.
 
-        优惠券ID列表，目前仅支持传递一个优惠券ID。 请从“查询订单可用优惠券”接口的响应参数中获取。 具体参见表1。
+        优惠券ID列表，目前支持传递最多三个优惠券ID。 请从“查询订单可用优惠券”接口的响应参数中获取。 具体参见表1。
 
         :return: The coupon_infos of this PayCustomerOrderReq.
         :rtype: list[:class:`huaweicloudsdkbss.v2.CouponSimpleInfoOrderPay`]
@@ -95,7 +95,7 @@ class PayCustomerOrderReq:
     def coupon_infos(self, coupon_infos):
         """Sets the coupon_infos of this PayCustomerOrderReq.
 
-        优惠券ID列表，目前仅支持传递一个优惠券ID。 请从“查询订单可用优惠券”接口的响应参数中获取。 具体参见表1。
+        优惠券ID列表，目前支持传递最多三个优惠券ID。 请从“查询订单可用优惠券”接口的响应参数中获取。 具体参见表1。
 
         :param coupon_infos: The coupon_infos of this PayCustomerOrderReq.
         :type coupon_infos: list[:class:`huaweicloudsdkbss.v2.CouponSimpleInfoOrderPay`]

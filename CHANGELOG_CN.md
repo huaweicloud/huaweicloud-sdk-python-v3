@@ -1,3 +1,264 @@
+# 3.0.104 2022-08-18
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 支持接口`ListIndirectPartners`、`ListCosts`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListSubCustomers`新增请求参数 `indirect_partner_id`
+  - 接口`CreateSubCustomer`新增请求参数 `indirect_partner_id`
+  - 接口`ShowSubCustomerBudget`新增请求参数 `indirect_partner_id`
+  - 接口`UpdateSubCustomerBudget`新增请求参数 `indirect_partner_id`
+  - 接口`FreezeSubCustomers`新增请求参数 `indirect_partner_id`
+  - 接口`UnfreezeSubCustomers`新增请求参数 `indirect_partner_id`
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListProjectTemplates`新增响应参数 `arch`
+
+### HuaweiCloud SDK CPH
+
+- _新增特性_
+  - 支持云手机服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 支持接口`AssociateQueueToElasticResourcePool`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ChangeFlinkJobStatusReport`请求参数`msg_confirm_topic`改为非必填
+  - 接口`CreateFlinkJar`移除请求参数 `key`、`value`
+  - 接口`UpdateFlinkJar`移除请求参数 `key`、`value`
+  - 接口`CreateFlinkSql`移除请求参数 `key`、`value`
+  - 接口`UpdateFlinkSql`移除请求参数 `key`、`value`
+  - 接口`CreateQueue`新增请求参数 `elastic_resource_pool_name`
+  - 接口`ListQueues`响应参数`labels`类型调整 `string` -> `array`
+  - 接口`ShowQueueDetail`新增响应参数 `queue_id`、`elastic_resource_pool_name`
+  - 接口`CreateQueuePlan`请求参数`repeat_day`改为必填
+  - 接口`ChangeQueuePlan`请求参数`repeat_day`改为必填
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 支持接口`ListServersByTag`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`NovaCreateServers`请求参数`destination_type`改为必填
+
+### HuaweiCloud SDK EG
+
+- _新增特性_
+  - 支持事件网格服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateFunction`:
+    - 新增响应参数 `enable_dynamic_memory`、`is_stateful_function`、`enable_auth_in_header`、`custom_image`
+    - 请求参数`file`、`link`改为必填
+    - 响应参数`user_id`类型调整 `int32` -> `string`
+    - 响应参数`user_group_id`类型调整 `int32` -> `string`
+    - 响应参数`concurrent_num`改为必填
+    - 响应参数`mount_share_path`改为非必填
+  - 接口`ListFunctions`:
+    - 新增响应参数 `fail_count`
+    - 移除请求参数 `X-Auth-Token`
+    - 响应参数`concurrent_num`改为必填
+  - 接口`ShowFunctionCode`:
+    - 移除响应参数 `id`
+    - 响应参数`file`、`link`、`concurrent_num`改为必填
+  - 接口`UpdateFunctionCode`:
+    - 移除响应参数 `id`
+    - 请求参数`file`、`link`改为必填
+    - 响应参数`file`、`link`、`concurrent_num`改为必填
+  - 接口`ShowFunctionConfig`:
+    - 新增响应参数 `is_stateful_function`、`enable_auth_in_header`、`custom_image`
+    - 移除响应参数 `id`
+    - 响应参数`user_id`类型调整 `int32` -> `string`
+    - 响应参数`user_group_id`类型调整 `int32` -> `string`
+    - 响应参数`concurrent_num`改为必填
+    - 响应参数`mount_share_path`改为非必填
+  - 接口`UpdateFunctionConfig`:
+    - 新增响应参数 `enable_auth_in_header`、`custom_image`
+    - 移除请求参数 `X-Auth-Token`
+    - 移除响应参数 `id`
+    - 请求参数`user_id`类型调整 `int32` -> `string`
+    - 请求参数`user_group_id`类型调整 `int32` -> `string`
+    - 请求参数`concurrent_num`改为必填
+    - 请求参数`mount_share_path`改为非必填
+    - 响应参数`user_id`类型调整 `int32` -> `string`
+    - 响应参数`user_group_id`类型调整 `int32` -> `string`
+    - 响应参数`concurrent_num`改为必填
+    - 响应参数`mount_share_path`改为非必填
+  - 接口`UpdateFunctionMaxInstanceConfig`:
+    - 移除响应参数 `id`
+    - 响应参数`user_id`类型调整 `int32` -> `string`
+    - 响应参数`user_group_id`类型调整 `int32` -> `string`
+    - 响应参数`concurrent_num`改为必填
+    - 响应参数`mount_share_path`改为非必填
+  - 接口`CreateFunctionVersion`:
+    - 移除响应参数 `id`
+    - 响应参数`user_id`类型调整 `int32` -> `string`
+    - 响应参数`user_group_id`类型调整 `int32` -> `string`
+    - 响应参数`concurrent_num`改为必填
+    - 响应参数`mount_share_path`改为非必填
+  - 接口`ListFunctionVersions`:
+    - 新增响应参数 `is_stateful_function`、`enable_auth_in_header`、`custom_image`、`reserved_instance_idle_mode`
+    - 移除响应参数 `log_group_id`、`log_stream_id`
+    - 响应参数`concurrent_num`改为必填
+  - 接口`CreateFunctionTrigger`请求参数`trigger_type_code`新增枚举值`SMN`、`RABBITMQ`、`DEDICATEDGATEWAY`、`OPENSOURCEKAFKA`、`APIC`、`GAUSSMONGO`、`EVENTGRID`
+  - 接口`ListFunctionTriggers`:
+    - 响应参数`trigger_type_code`新增枚举值`RABBITMQ`、`DEDICATEDGATEWAY`、`OPENSOURCEKAFKA`、`APIC`、`GAUSSMONGO`、`EVENTGRID`
+    - 响应参数`trigger_status`新增枚举值`DISABLE`, 移除枚举值`DISABLED`
+  - 接口`DeleteFunctionTrigger`请求参数`trigger_type_code`新增枚举值`RABBITMQ`、`DEDICATEDGATEWAY`、`OPENSOURCEKAFKA`、`APIC`、`GAUSSMONGO`、`EVENTGRID`
+  - 接口`ShowFunctionTrigger`:
+    - 请求参数`trigger_type_code`新增枚举值`RABBITMQ`、`DEDICATEDGATEWAY`、`OPENSOURCEKAFKA`、`APIC`、`GAUSSMONGO`、`EVENTGRID`
+    - 响应参数`trigger_type_code`新增枚举值`RABBITMQ`、`DEDICATEDGATEWAY`、`OPENSOURCEKAFKA`、`APIC`、`GAUSSMONGO`、`EVENTGRID`
+    - 响应参数`trigger_status`新增枚举值`DISABLE`, 移除枚举值`DISABLED`
+  - 接口`UpdateTrigger`:
+    - 请求参数`trigger_status`新增枚举值`DISABLE`, 移除枚举值`DISABLED`
+    - 请求参数`trigger_type_code`新增枚举值`RABBITMQ`、`DEDICATEDGATEWAY`、`OPENSOURCEKAFKA`、`APIC`、`GAUSSMONGO`、`EVENTGRID`
+    - 请求参数`trigger_status`改为非必填
+  - 接口`ListStatistics`响应参数`value`类型调整 `float` -> `int32`
+  - 接口`UpdateFunctionReservedInstancesCount`:
+    - 新增请求参数 `UpdateFunctionReservedInstancesCountRequestBody`
+    - 新增响应参数 `idle_mode`、`tactics_config`
+    - 移除请求参数 `UpdateFunctionReservedInstancesRequestBody`
+  - 接口`CreateDependency`:
+    - 新增响应参数 `version`、`last_modified`
+    - 响应参数`runtime`类型调整 `enum` -> `string`
+  - 接口`ListDependencies`:
+    - 新增请求参数 `maxitems`、`ispublic`
+    - 新增响应参数 `version`、`last_modified`
+    - 响应参数`count`类型调整 `int32` -> `int64`
+  - 接口`ShowDependcy`:
+    - 新增响应参数 `version`、`last_modified`
+    - 响应参数`runtime`类型调整 `enum` -> `string`
+  - 接口`UpdateDependcy`:
+    - 新增请求参数 `UpdateDependcyRequestBody`
+    - 移除请求参数 `UpdateDependencyRequestBody`
+    - 响应参数`runtime`类型调整 `enum` -> `string`
+  - 接口`CreateEvent`移除响应参数 `content`、`last_modified`
+  - 接口`UpdateEvent`移除响应参数 `content`、`last_modified`
+  - 接口`ImportFunction`:
+    - 新增请求参数 `package`
+    - 移除请求参数 `X-Auth-Token`
+    - 响应参数`concurrent_num`改为必填
+  - 接口`EnableLtsLogs`新增请求参数 `X-Auth-Token`
+  - 接口`ShowLtsLogDetails`新增响应参数 `group_name`
+  - 接口`CancelAsyncInvocation`请求参数`request_id`改为必填
+  - 接口`CreateWorkflow`:
+    - 新增请求参数 `duration`
+    - 请求参数`trigger_type`新增枚举值`SMN`、`APIG`、`APIG_DE`
+  - 接口`ListWorkflow`:
+    - 新增请求参数 `enterprise_project`、`mode`
+    - 移除响应参数 `id`、`workflow_urn`、`name`、`description`、`created_time`、`updated_time`、`created_by`
+  - 接口`StartWorkflowExecution`新增请求参数 `X-WorkflowRun-MergeFnParameters`
+  - 接口`ListWorkflowExecutions`移除响应参数 `workflow_id`、`workflow_urn`、`execution_id`、`status`、`begin_time`、`end_time`、`last_update_time`、`created_by`
+  - 接口`ShowWorkflowExecution`:
+    - 新增请求参数 `X-Get-Workflow-Full-History-Data`
+    - 响应参数`workflow_urn`类型调整 `string` -> `object`
+  - 接口`ShowWorkFlow`:
+    - 移除响应参数 `name`、`description`、`triggers`、`start`、`functions`、`states`、`constants`、`retries`、`mode`、`express_config`、`enterprise_project_id`
+    - 响应参数`workflow_urn`类型调整 `string` -> `object`
+    - 响应参数`id`、`workflow_urn`、`created_time`、`updated_time`、`created_by`改为必填
+  - 接口`UpdateWorkFlow`:
+    - 新增请求参数 `duration`
+    - 请求参数`trigger_type`新增枚举值`SMN`、`APIG`、`APIG_DE`
+    - 响应参数`workflow_urn`类型调整 `string` -> `object`
+    - 响应参数`id`、`workflow_urn`、`name`、`description`、`created_time`、`updated_time`、`created_by`改为必填
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeIdCard`:
+    - 新增请求参数 `detect_reproduce`
+    - 新增响应参数 `detect_reproduce_result`
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateIssueV4`:
+    - 新增请求参数 `field_name`
+    - 新增响应参数 `field_name`
+  - 接口`ListIssuesV4`新增响应参数 `field_name`
+  - 接口`UpdateIssueV4`:
+    - 新增请求参数 `field_name`
+    - 新增响应参数 `field_name`
+  - 接口`ListChildIssuesV4`新增响应参数 `field_name`
+  - 接口`CreateSystemIssueV4`:
+    - 新增请求参数 `field_name`
+    - 新增响应参数 `field_name`
+
+### HuaweiCloud SDK ROMA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListNotification`新增请求参数 `limit`、`offset`
+
+### HuaweiCloud SDK VOD
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListTranscodeTemplate`
+    - `UpdateTranscodeTemplate`
+    - `CreateTranscodeTemplate`
+    - `DeleteTranscodeTemplate`
+    - `ListTemplateGroupCollection`
+    - `UpdateTemplateGroupCollection`
+    - `CreateTemplateGroupCollection`
+    - `DeleteTemplateGroupCollection`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListIgnoreRule`:
+    - 新增响应参数 `domain`
+    - 移除响应参数 `domains`
+  - 接口`ListGeoipRule`新增响应参数 `policyid`
+  - 接口`UpdateGeoipRule`新增请求参数 `description`
+
 # 3.0.103 2022-08-11
 
 ### HuaweiCloud SDK APM

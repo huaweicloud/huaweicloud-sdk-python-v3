@@ -36,7 +36,7 @@ class ListQueuesRespQueues:
         'resource_mode': 'int',
         'platform': 'str',
         'is_restarting': 'bool',
-        'labels': 'str',
+        'labels': 'list[str]',
         'feature': 'str',
         'queue_resource_type': 'str',
         'cu_spec': 'int',
@@ -104,7 +104,7 @@ class ListQueuesRespQueues:
         :param is_restarting: 是否重启队列。默认值为“false”。
         :type is_restarting: bool
         :param labels: 创建队列的标签信息，目前包括队列是否跨AZ的标签信息的Json字符串。目前只支持值为“2”，即创建两个队列
-        :type labels: str
+        :type labels: list[str]
         :param feature: 队列特性。支持以下两种类型：basic：基础型ai：AI增强型（仅SQL的x86_64专属队列支持选择）默认值为“basic”。
         :type feature: str
         :param queue_resource_type: 队列所属资源类型。
@@ -522,7 +522,7 @@ class ListQueuesRespQueues:
         创建队列的标签信息，目前包括队列是否跨AZ的标签信息的Json字符串。目前只支持值为“2”，即创建两个队列
 
         :return: The labels of this ListQueuesRespQueues.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._labels
 
@@ -533,7 +533,7 @@ class ListQueuesRespQueues:
         创建队列的标签信息，目前包括队列是否跨AZ的标签信息的Json字符串。目前只支持值为“2”，即创建两个队列
 
         :param labels: The labels of this ListQueuesRespQueues.
-        :type labels: str
+        :type labels: list[str]
         """
         self._labels = labels
 

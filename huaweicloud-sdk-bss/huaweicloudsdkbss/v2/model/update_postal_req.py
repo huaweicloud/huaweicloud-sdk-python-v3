@@ -51,21 +51,21 @@ class UpdatePostalReq:
 
         :param address_id: 地址ID，地址的唯一索引。
         :type address_id: str
-        :param recipient: 收件人姓名。
+        :param recipient: 收件人姓名。 此参数不携带或携带值为null时，取值不更新。
         :type recipient: str
-        :param province: 省/自治区/直辖市。例如：江苏省。
+        :param province: 省/自治区/直辖市。例如：江苏省。 此参数不携带或携带值为null时，取值不更新。
         :type province: str
-        :param city: 市/区。例如：南京市。
+        :param city: 市/区。例如：南京市。 此参数不携带或携带值为null时，取值不更新。
         :type city: str
-        :param district: 区。例如：雨花区。
+        :param district: 区。例如：雨花区。 此参数不携带或携带值为null时，取值不更新。
         :type district: str
-        :param address: 邮寄详细地址。
+        :param address: 邮寄详细地址。 此参数不携带或携带值为null时，取值不更新。
         :type address: str
-        :param zipcode: 邮寄地址所在邮编。
+        :param zipcode: 邮寄地址所在邮编。 此参数不携带或携带值为null时，取值不更新。
         :type zipcode: str
-        :param mobile_phone: 手机号码，不带国家码。
+        :param mobile_phone: 手机号码，不带国家码。 此参数不携带或携带值为null时，取值不更新。
         :type mobile_phone: str
-        :param is_default: 是否默认地址，默认为0。 1：默认地址0：非默认地址
+        :param is_default: 是否默认地址，默认值为“0：非默认地址”。 1：默认地址0：非默认地址
         :type is_default: int
         """
         
@@ -126,7 +126,7 @@ class UpdatePostalReq:
     def recipient(self):
         """Gets the recipient of this UpdatePostalReq.
 
-        收件人姓名。
+        收件人姓名。 此参数不携带或携带值为null时，取值不更新。
 
         :return: The recipient of this UpdatePostalReq.
         :rtype: str
@@ -137,7 +137,7 @@ class UpdatePostalReq:
     def recipient(self, recipient):
         """Sets the recipient of this UpdatePostalReq.
 
-        收件人姓名。
+        收件人姓名。 此参数不携带或携带值为null时，取值不更新。
 
         :param recipient: The recipient of this UpdatePostalReq.
         :type recipient: str
@@ -148,7 +148,7 @@ class UpdatePostalReq:
     def province(self):
         """Gets the province of this UpdatePostalReq.
 
-        省/自治区/直辖市。例如：江苏省。
+        省/自治区/直辖市。例如：江苏省。 此参数不携带或携带值为null时，取值不更新。
 
         :return: The province of this UpdatePostalReq.
         :rtype: str
@@ -159,7 +159,7 @@ class UpdatePostalReq:
     def province(self, province):
         """Sets the province of this UpdatePostalReq.
 
-        省/自治区/直辖市。例如：江苏省。
+        省/自治区/直辖市。例如：江苏省。 此参数不携带或携带值为null时，取值不更新。
 
         :param province: The province of this UpdatePostalReq.
         :type province: str
@@ -170,7 +170,7 @@ class UpdatePostalReq:
     def city(self):
         """Gets the city of this UpdatePostalReq.
 
-        市/区。例如：南京市。
+        市/区。例如：南京市。 此参数不携带或携带值为null时，取值不更新。
 
         :return: The city of this UpdatePostalReq.
         :rtype: str
@@ -181,7 +181,7 @@ class UpdatePostalReq:
     def city(self, city):
         """Sets the city of this UpdatePostalReq.
 
-        市/区。例如：南京市。
+        市/区。例如：南京市。 此参数不携带或携带值为null时，取值不更新。
 
         :param city: The city of this UpdatePostalReq.
         :type city: str
@@ -192,7 +192,7 @@ class UpdatePostalReq:
     def district(self):
         """Gets the district of this UpdatePostalReq.
 
-        区。例如：雨花区。
+        区。例如：雨花区。 此参数不携带或携带值为null时，取值不更新。
 
         :return: The district of this UpdatePostalReq.
         :rtype: str
@@ -203,7 +203,7 @@ class UpdatePostalReq:
     def district(self, district):
         """Sets the district of this UpdatePostalReq.
 
-        区。例如：雨花区。
+        区。例如：雨花区。 此参数不携带或携带值为null时，取值不更新。
 
         :param district: The district of this UpdatePostalReq.
         :type district: str
@@ -214,7 +214,7 @@ class UpdatePostalReq:
     def address(self):
         """Gets the address of this UpdatePostalReq.
 
-        邮寄详细地址。
+        邮寄详细地址。 此参数不携带或携带值为null时，取值不更新。
 
         :return: The address of this UpdatePostalReq.
         :rtype: str
@@ -225,7 +225,7 @@ class UpdatePostalReq:
     def address(self, address):
         """Sets the address of this UpdatePostalReq.
 
-        邮寄详细地址。
+        邮寄详细地址。 此参数不携带或携带值为null时，取值不更新。
 
         :param address: The address of this UpdatePostalReq.
         :type address: str
@@ -236,7 +236,7 @@ class UpdatePostalReq:
     def zipcode(self):
         """Gets the zipcode of this UpdatePostalReq.
 
-        邮寄地址所在邮编。
+        邮寄地址所在邮编。 此参数不携带或携带值为null时，取值不更新。
 
         :return: The zipcode of this UpdatePostalReq.
         :rtype: str
@@ -247,7 +247,7 @@ class UpdatePostalReq:
     def zipcode(self, zipcode):
         """Sets the zipcode of this UpdatePostalReq.
 
-        邮寄地址所在邮编。
+        邮寄地址所在邮编。 此参数不携带或携带值为null时，取值不更新。
 
         :param zipcode: The zipcode of this UpdatePostalReq.
         :type zipcode: str
@@ -258,7 +258,7 @@ class UpdatePostalReq:
     def mobile_phone(self):
         """Gets the mobile_phone of this UpdatePostalReq.
 
-        手机号码，不带国家码。
+        手机号码，不带国家码。 此参数不携带或携带值为null时，取值不更新。
 
         :return: The mobile_phone of this UpdatePostalReq.
         :rtype: str
@@ -269,7 +269,7 @@ class UpdatePostalReq:
     def mobile_phone(self, mobile_phone):
         """Sets the mobile_phone of this UpdatePostalReq.
 
-        手机号码，不带国家码。
+        手机号码，不带国家码。 此参数不携带或携带值为null时，取值不更新。
 
         :param mobile_phone: The mobile_phone of this UpdatePostalReq.
         :type mobile_phone: str
@@ -280,7 +280,7 @@ class UpdatePostalReq:
     def is_default(self):
         """Gets the is_default of this UpdatePostalReq.
 
-        是否默认地址，默认为0。 1：默认地址0：非默认地址
+        是否默认地址，默认值为“0：非默认地址”。 1：默认地址0：非默认地址
 
         :return: The is_default of this UpdatePostalReq.
         :rtype: int
@@ -291,7 +291,7 @@ class UpdatePostalReq:
     def is_default(self, is_default):
         """Sets the is_default of this UpdatePostalReq.
 
-        是否默认地址，默认为0。 1：默认地址0：非默认地址
+        是否默认地址，默认值为“0：非默认地址”。 1：默认地址0：非默认地址
 
         :param is_default: The is_default of this UpdatePostalReq.
         :type is_default: int

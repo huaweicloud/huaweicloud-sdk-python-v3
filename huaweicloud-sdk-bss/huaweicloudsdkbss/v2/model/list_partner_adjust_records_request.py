@@ -49,13 +49,13 @@ class ListPartnerAdjustRecordsRequest:
 
         :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)获取customer_id。为空表示查询所有的调账记录。不为空表示仅查询与该客户相关的调账记录。此参数不携带或携带值为空时，默认查询所有客户的调账记录。 说明： 此处的客户包含伙伴的子客户，以及华为云总经销商关联的云经销商（二级经销商）。
         :type customer_id: str
-        :param operation_type: 操作类型。SOURCE_OPERATION_BEADJUST：拨款,SOURCE_OPERATION_BERETRIEVE：回收,SOURCE_OPERATION_BEUNBIND：解绑回收,不传递默认查询所有类型。
+        :param operation_type: 操作类型。SOURCE_OPERATION_BEADJUST：拨款,SOURCE_OPERATION_BERETRIEVE：回收,SOURCE_OPERATION_BEUNBIND：解绑回收,此参数不携带或携带值为空时，默认查询所有类型。
         :type operation_type: str
-        :param operation_time_begin: 调账起始时间。UTC时间，格式为：2016-03-28T14:45:38Z
+        :param operation_time_begin: 调账起始时间。UTC时间，格式为：2016-03-28T14:45:38Z。此参数不携带或携带值为空时，不作为筛选条件。
         :type operation_time_begin: str
-        :param operation_time_end: 调账截止时间。UTC时间，格式为：2016-03-28T14:45:38Z
+        :param operation_time_end: 调账截止时间。UTC时间，格式为：2016-03-28T14:45:38Z。此参数不携带或携带值为空时，不作为筛选条件。
         :type operation_time_end: str
-        :param trans_id: 事务ID。
+        :param trans_id: 事务ID。此参数不携带或携带值为空时，不作为筛选条件。
         :type trans_id: str
         :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
@@ -120,7 +120,7 @@ class ListPartnerAdjustRecordsRequest:
     def operation_type(self):
         """Gets the operation_type of this ListPartnerAdjustRecordsRequest.
 
-        操作类型。SOURCE_OPERATION_BEADJUST：拨款,SOURCE_OPERATION_BERETRIEVE：回收,SOURCE_OPERATION_BEUNBIND：解绑回收,不传递默认查询所有类型。
+        操作类型。SOURCE_OPERATION_BEADJUST：拨款,SOURCE_OPERATION_BERETRIEVE：回收,SOURCE_OPERATION_BEUNBIND：解绑回收,此参数不携带或携带值为空时，默认查询所有类型。
 
         :return: The operation_type of this ListPartnerAdjustRecordsRequest.
         :rtype: str
@@ -131,7 +131,7 @@ class ListPartnerAdjustRecordsRequest:
     def operation_type(self, operation_type):
         """Sets the operation_type of this ListPartnerAdjustRecordsRequest.
 
-        操作类型。SOURCE_OPERATION_BEADJUST：拨款,SOURCE_OPERATION_BERETRIEVE：回收,SOURCE_OPERATION_BEUNBIND：解绑回收,不传递默认查询所有类型。
+        操作类型。SOURCE_OPERATION_BEADJUST：拨款,SOURCE_OPERATION_BERETRIEVE：回收,SOURCE_OPERATION_BEUNBIND：解绑回收,此参数不携带或携带值为空时，默认查询所有类型。
 
         :param operation_type: The operation_type of this ListPartnerAdjustRecordsRequest.
         :type operation_type: str
@@ -142,7 +142,7 @@ class ListPartnerAdjustRecordsRequest:
     def operation_time_begin(self):
         """Gets the operation_time_begin of this ListPartnerAdjustRecordsRequest.
 
-        调账起始时间。UTC时间，格式为：2016-03-28T14:45:38Z
+        调账起始时间。UTC时间，格式为：2016-03-28T14:45:38Z。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The operation_time_begin of this ListPartnerAdjustRecordsRequest.
         :rtype: str
@@ -153,7 +153,7 @@ class ListPartnerAdjustRecordsRequest:
     def operation_time_begin(self, operation_time_begin):
         """Sets the operation_time_begin of this ListPartnerAdjustRecordsRequest.
 
-        调账起始时间。UTC时间，格式为：2016-03-28T14:45:38Z
+        调账起始时间。UTC时间，格式为：2016-03-28T14:45:38Z。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param operation_time_begin: The operation_time_begin of this ListPartnerAdjustRecordsRequest.
         :type operation_time_begin: str
@@ -164,7 +164,7 @@ class ListPartnerAdjustRecordsRequest:
     def operation_time_end(self):
         """Gets the operation_time_end of this ListPartnerAdjustRecordsRequest.
 
-        调账截止时间。UTC时间，格式为：2016-03-28T14:45:38Z
+        调账截止时间。UTC时间，格式为：2016-03-28T14:45:38Z。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The operation_time_end of this ListPartnerAdjustRecordsRequest.
         :rtype: str
@@ -175,7 +175,7 @@ class ListPartnerAdjustRecordsRequest:
     def operation_time_end(self, operation_time_end):
         """Sets the operation_time_end of this ListPartnerAdjustRecordsRequest.
 
-        调账截止时间。UTC时间，格式为：2016-03-28T14:45:38Z
+        调账截止时间。UTC时间，格式为：2016-03-28T14:45:38Z。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param operation_time_end: The operation_time_end of this ListPartnerAdjustRecordsRequest.
         :type operation_time_end: str
@@ -186,7 +186,7 @@ class ListPartnerAdjustRecordsRequest:
     def trans_id(self):
         """Gets the trans_id of this ListPartnerAdjustRecordsRequest.
 
-        事务ID。
+        事务ID。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The trans_id of this ListPartnerAdjustRecordsRequest.
         :rtype: str
@@ -197,7 +197,7 @@ class ListPartnerAdjustRecordsRequest:
     def trans_id(self, trans_id):
         """Sets the trans_id of this ListPartnerAdjustRecordsRequest.
 
-        事务ID。
+        事务ID。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param trans_id: The trans_id of this ListPartnerAdjustRecordsRequest.
         :type trans_id: str

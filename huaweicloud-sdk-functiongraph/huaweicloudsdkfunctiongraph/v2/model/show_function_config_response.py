@@ -57,7 +57,10 @@ class ShowFunctionConfigResponse(SdkResponse):
         'log_group_id': 'str',
         'log_stream_id': 'str',
         'type': 'str',
-        'enable_dynamic_memory': 'bool'
+        'enable_dynamic_memory': 'bool',
+        'is_stateful_function': 'bool',
+        'enable_auth_in_header': 'bool',
+        'custom_image': 'CustomImage'
     }
 
     attribute_map = {
@@ -97,10 +100,13 @@ class ShowFunctionConfigResponse(SdkResponse):
         'log_group_id': 'log_group_id',
         'log_stream_id': 'log_stream_id',
         'type': 'type',
-        'enable_dynamic_memory': 'enable_dynamic_memory'
+        'enable_dynamic_memory': 'enable_dynamic_memory',
+        'is_stateful_function': 'is_stateful_function',
+        'enable_auth_in_header': 'enable_auth_in_header',
+        'custom_image': 'custom_image'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, depend_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc=None, mount_config=None, depend_list=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None):
         """ShowFunctionConfigResponse
 
         The model defined in huaweicloud sdk
@@ -179,6 +185,12 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type type: str
         :param enable_dynamic_memory: 是否允许动态内存配置
         :type enable_dynamic_memory: bool
+        :param is_stateful_function: 是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+        :type is_stateful_function: bool
+        :param enable_auth_in_header: 是否允许在请求头中添加鉴权信息
+        :type enable_auth_in_header: bool
+        :param custom_image: 
+        :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
         """
         
         super(ShowFunctionConfigResponse, self).__init__()
@@ -220,6 +232,9 @@ class ShowFunctionConfigResponse(SdkResponse):
         self._log_stream_id = None
         self._type = None
         self._enable_dynamic_memory = None
+        self._is_stateful_function = None
+        self._enable_auth_in_header = None
+        self._custom_image = None
         self.discriminator = None
 
         if func_urn is not None:
@@ -296,6 +311,12 @@ class ShowFunctionConfigResponse(SdkResponse):
             self.type = type
         if enable_dynamic_memory is not None:
             self.enable_dynamic_memory = enable_dynamic_memory
+        if is_stateful_function is not None:
+            self.is_stateful_function = is_stateful_function
+        if enable_auth_in_header is not None:
+            self.enable_auth_in_header = enable_auth_in_header
+        if custom_image is not None:
+            self.custom_image = custom_image
 
     @property
     def func_urn(self):
@@ -1104,6 +1125,70 @@ class ShowFunctionConfigResponse(SdkResponse):
         :type enable_dynamic_memory: bool
         """
         self._enable_dynamic_memory = enable_dynamic_memory
+
+    @property
+    def is_stateful_function(self):
+        """Gets the is_stateful_function of this ShowFunctionConfigResponse.
+
+        是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+
+        :return: The is_stateful_function of this ShowFunctionConfigResponse.
+        :rtype: bool
+        """
+        return self._is_stateful_function
+
+    @is_stateful_function.setter
+    def is_stateful_function(self, is_stateful_function):
+        """Sets the is_stateful_function of this ShowFunctionConfigResponse.
+
+        是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+
+        :param is_stateful_function: The is_stateful_function of this ShowFunctionConfigResponse.
+        :type is_stateful_function: bool
+        """
+        self._is_stateful_function = is_stateful_function
+
+    @property
+    def enable_auth_in_header(self):
+        """Gets the enable_auth_in_header of this ShowFunctionConfigResponse.
+
+        是否允许在请求头中添加鉴权信息
+
+        :return: The enable_auth_in_header of this ShowFunctionConfigResponse.
+        :rtype: bool
+        """
+        return self._enable_auth_in_header
+
+    @enable_auth_in_header.setter
+    def enable_auth_in_header(self, enable_auth_in_header):
+        """Sets the enable_auth_in_header of this ShowFunctionConfigResponse.
+
+        是否允许在请求头中添加鉴权信息
+
+        :param enable_auth_in_header: The enable_auth_in_header of this ShowFunctionConfigResponse.
+        :type enable_auth_in_header: bool
+        """
+        self._enable_auth_in_header = enable_auth_in_header
+
+    @property
+    def custom_image(self):
+        """Gets the custom_image of this ShowFunctionConfigResponse.
+
+
+        :return: The custom_image of this ShowFunctionConfigResponse.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
+        """
+        return self._custom_image
+
+    @custom_image.setter
+    def custom_image(self, custom_image):
+        """Sets the custom_image of this ShowFunctionConfigResponse.
+
+
+        :param custom_image: The custom_image of this ShowFunctionConfigResponse.
+        :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
+        """
+        self._custom_image = custom_image
 
     def to_dict(self):
         """Returns the model properties as a dict"""

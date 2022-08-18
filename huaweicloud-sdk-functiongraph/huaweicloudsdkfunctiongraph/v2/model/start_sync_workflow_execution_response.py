@@ -43,7 +43,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param execution_id: 错误码
+        :param execution_id: 流程实例ID
         :type execution_id: str
         :param status: 流程执行最终状态
         :type status: str
@@ -84,7 +84,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
     def execution_id(self):
         """Gets the execution_id of this StartSyncWorkflowExecutionResponse.
 
-        错误码
+        流程实例ID
 
         :return: The execution_id of this StartSyncWorkflowExecutionResponse.
         :rtype: str
@@ -95,7 +95,7 @@ class StartSyncWorkflowExecutionResponse(SdkResponse):
     def execution_id(self, execution_id):
         """Sets the execution_id of this StartSyncWorkflowExecutionResponse.
 
-        错误码
+        流程实例ID
 
         :param execution_id: The execution_id of this StartSyncWorkflowExecutionResponse.
         :type execution_id: str

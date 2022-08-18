@@ -118,6 +118,9 @@ from huaweicloudsdkecs.v2.model.list_server_interfaces_request import ListServer
 from huaweicloudsdkecs.v2.model.list_server_interfaces_response import ListServerInterfacesResponse
 from huaweicloudsdkecs.v2.model.list_server_tags_request import ListServerTagsRequest
 from huaweicloudsdkecs.v2.model.list_server_tags_response import ListServerTagsResponse
+from huaweicloudsdkecs.v2.model.list_servers_by_tag_request import ListServersByTagRequest
+from huaweicloudsdkecs.v2.model.list_servers_by_tag_request_body import ListServersByTagRequestBody
+from huaweicloudsdkecs.v2.model.list_servers_by_tag_response import ListServersByTagResponse
 from huaweicloudsdkecs.v2.model.list_servers_details_request import ListServersDetailsRequest
 from huaweicloudsdkecs.v2.model.list_servers_details_response import ListServersDetailsResponse
 from huaweicloudsdkecs.v2.model.migrate_server_option import MigrateServerOption
@@ -239,6 +242,7 @@ from huaweicloudsdkecs.v2.model.resize_server_extend_param import ResizeServerEx
 from huaweicloudsdkecs.v2.model.resize_server_request import ResizeServerRequest
 from huaweicloudsdkecs.v2.model.resize_server_request_body import ResizeServerRequestBody
 from huaweicloudsdkecs.v2.model.resize_server_response import ResizeServerResponse
+from huaweicloudsdkecs.v2.model.resource_tag import ResourceTag
 from huaweicloudsdkecs.v2.model.server_address import ServerAddress
 from huaweicloudsdkecs.v2.model.server_attachable_quantity import ServerAttachableQuantity
 from huaweicloudsdkecs.v2.model.server_block_device import ServerBlockDevice
@@ -253,10 +257,13 @@ from huaweicloudsdkecs.v2.model.server_interface_fixed_ip import ServerInterface
 from huaweicloudsdkecs.v2.model.server_limits import ServerLimits
 from huaweicloudsdkecs.v2.model.server_nic_security_group import ServerNicSecurityGroup
 from huaweicloudsdkecs.v2.model.server_remote_console import ServerRemoteConsole
+from huaweicloudsdkecs.v2.model.server_resource import ServerResource
 from huaweicloudsdkecs.v2.model.server_scheduler_hints import ServerSchedulerHints
 from huaweicloudsdkecs.v2.model.server_security_group import ServerSecurityGroup
 from huaweicloudsdkecs.v2.model.server_system_tag import ServerSystemTag
 from huaweicloudsdkecs.v2.model.server_tag import ServerTag
+from huaweicloudsdkecs.v2.model.server_tag_match import ServerTagMatch
+from huaweicloudsdkecs.v2.model.server_tags import ServerTags
 from huaweicloudsdkecs.v2.model.show_job_request import ShowJobRequest
 from huaweicloudsdkecs.v2.model.show_job_response import ShowJobResponse
 from huaweicloudsdkecs.v2.model.show_reset_password_flag_request import ShowResetPasswordFlagRequest

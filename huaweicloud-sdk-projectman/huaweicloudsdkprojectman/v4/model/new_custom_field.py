@@ -22,21 +22,25 @@ class NewCustomField:
 
     openapi_types = {
         'custom_field': 'str',
+        'field_name': 'str',
         'value': 'str'
     }
 
     attribute_map = {
         'custom_field': 'custom_field',
+        'field_name': 'field_name',
         'value': 'value'
     }
 
-    def __init__(self, custom_field=None, value=None):
+    def __init__(self, custom_field=None, field_name=None, value=None):
         """NewCustomField
 
         The model defined in huaweicloud sdk
 
         :param custom_field: 自定义字段
         :type custom_field: str
+        :param field_name: 自定义字段名称
+        :type field_name: str
         :param value: 自定义属性对应的值，多个值以英文逗号区分开
         :type value: str
         """
@@ -44,11 +48,14 @@ class NewCustomField:
         
 
         self._custom_field = None
+        self._field_name = None
         self._value = None
         self.discriminator = None
 
         if custom_field is not None:
             self.custom_field = custom_field
+        if field_name is not None:
+            self.field_name = field_name
         if value is not None:
             self.value = value
 
@@ -73,6 +80,28 @@ class NewCustomField:
         :type custom_field: str
         """
         self._custom_field = custom_field
+
+    @property
+    def field_name(self):
+        """Gets the field_name of this NewCustomField.
+
+        自定义字段名称
+
+        :return: The field_name of this NewCustomField.
+        :rtype: str
+        """
+        return self._field_name
+
+    @field_name.setter
+    def field_name(self, field_name):
+        """Sets the field_name of this NewCustomField.
+
+        自定义字段名称
+
+        :param field_name: The field_name of this NewCustomField.
+        :type field_name: str
+        """
+        self._field_name = field_name
 
     @property
     def value(self):

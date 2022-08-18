@@ -37,7 +37,7 @@ class ReclaimCouponQuotasReq:
 
         :param quota_ids: 被回收的云经销商的代金券额度ID。获取方法请参见查询优惠券额度。
         :type quota_ids: list[str]
-        :param remark: 回收时的备注。
+        :param remark: 回收时的备注。 此参数不携带或携带值为null时，不赋值；携带值为空串时，赋值空串。
         :type remark: str
         """
         
@@ -77,7 +77,7 @@ class ReclaimCouponQuotasReq:
     def remark(self):
         """Gets the remark of this ReclaimCouponQuotasReq.
 
-        回收时的备注。
+        回收时的备注。 此参数不携带或携带值为null时，不赋值；携带值为空串时，赋值空串。
 
         :return: The remark of this ReclaimCouponQuotasReq.
         :rtype: str
@@ -88,7 +88,7 @@ class ReclaimCouponQuotasReq:
     def remark(self, remark):
         """Sets the remark of this ReclaimCouponQuotasReq.
 
-        回收时的备注。
+        回收时的备注。 此参数不携带或携带值为null时，不赋值；携带值为空串时，赋值空串。
 
         :param remark: The remark of this ReclaimCouponQuotasReq.
         :type remark: str

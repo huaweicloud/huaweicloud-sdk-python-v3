@@ -24,17 +24,19 @@ class ImportFunctionRequestBody:
         'func_name': 'str',
         'file_name': 'str',
         'file_type': 'str',
-        'file_code': 'str'
+        'file_code': 'str',
+        'package': 'str'
     }
 
     attribute_map = {
         'func_name': 'func_name',
         'file_name': 'file_name',
         'file_type': 'file_type',
-        'file_code': 'file_code'
+        'file_code': 'file_code',
+        'package': 'package'
     }
 
-    def __init__(self, func_name=None, file_name=None, file_type=None, file_code=None):
+    def __init__(self, func_name=None, file_name=None, file_type=None, file_code=None, package=None):
         """ImportFunctionRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ImportFunctionRequestBody:
         :type file_type: str
         :param file_code: 函数代码。代码必须要进行base64编码
         :type file_code: str
+        :param package: 应用名称，默认为default
+        :type package: str
         """
         
         
@@ -55,12 +59,15 @@ class ImportFunctionRequestBody:
         self._file_name = None
         self._file_type = None
         self._file_code = None
+        self._package = None
         self.discriminator = None
 
         self.func_name = func_name
         self.file_name = file_name
         self.file_type = file_type
         self.file_code = file_code
+        if package is not None:
+            self.package = package
 
     @property
     def func_name(self):
@@ -149,6 +156,28 @@ class ImportFunctionRequestBody:
         :type file_code: str
         """
         self._file_code = file_code
+
+    @property
+    def package(self):
+        """Gets the package of this ImportFunctionRequestBody.
+
+        应用名称，默认为default
+
+        :return: The package of this ImportFunctionRequestBody.
+        :rtype: str
+        """
+        return self._package
+
+    @package.setter
+    def package(self, package):
+        """Sets the package of this ImportFunctionRequestBody.
+
+        应用名称，默认为default
+
+        :param package: The package of this ImportFunctionRequestBody.
+        :type package: str
+        """
+        self._package = package
 
     def to_dict(self):
         """Returns the model properties as a dict"""

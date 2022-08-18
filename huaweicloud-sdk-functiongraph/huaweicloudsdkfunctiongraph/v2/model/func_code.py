@@ -47,10 +47,8 @@ class FuncCode:
         self._link = None
         self.discriminator = None
 
-        if file is not None:
-            self.file = file
-        if link is not None:
-            self.link = link
+        self.file = file
+        self.link = link
 
     @property
     def file(self):

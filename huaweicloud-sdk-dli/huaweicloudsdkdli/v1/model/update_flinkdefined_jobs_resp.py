@@ -44,7 +44,7 @@ class UpdateFlinkdefinedJobsResp:
         'resume_checkpoint': 'bool',
         'resume_max_num': 'int',
         'checkpoint_path': 'str',
-        'runtime_config': 'list[JobsRuntimeConfig]'
+        'runtime_config': 'str'
     }
 
     attribute_map = {
@@ -126,7 +126,7 @@ class UpdateFlinkdefinedJobsResp:
         :param checkpoint_path: 用户Jar中checkpoint的储存地址，不同作业路径需要保持不同。
         :type checkpoint_path: str
         :param runtime_config: Flink作业运行时自定义优化参数。
-        :type runtime_config: list[:class:`huaweicloudsdkdli.v1.JobsRuntimeConfig`]
+        :type runtime_config: str
         """
         
         
@@ -719,7 +719,7 @@ class UpdateFlinkdefinedJobsResp:
         Flink作业运行时自定义优化参数。
 
         :return: The runtime_config of this UpdateFlinkdefinedJobsResp.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsRuntimeConfig`]
+        :rtype: str
         """
         return self._runtime_config
 
@@ -730,7 +730,7 @@ class UpdateFlinkdefinedJobsResp:
         Flink作业运行时自定义优化参数。
 
         :param runtime_config: The runtime_config of this UpdateFlinkdefinedJobsResp.
-        :type runtime_config: list[:class:`huaweicloudsdkdli.v1.JobsRuntimeConfig`]
+        :type runtime_config: str
         """
         self._runtime_config = runtime_config
 

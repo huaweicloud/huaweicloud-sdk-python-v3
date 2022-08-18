@@ -22,7 +22,7 @@ class UpdateWorkFlowRequest:
 
     openapi_types = {
         'workflow_id': 'str',
-        'body': 'UpdateWorkflowRequestBody'
+        'body': 'WorkflowCreateBody'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class UpdateWorkFlowRequest:
         :param workflow_id: 函数工作流ID
         :type workflow_id: str
         :param body: Body of the UpdateWorkFlowRequest
-        :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateWorkflowRequestBody`
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`
         """
         
         
@@ -79,7 +79,7 @@ class UpdateWorkFlowRequest:
 
 
         :return: The body of this UpdateWorkFlowRequest.
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateWorkflowRequestBody`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`
         """
         return self._body
 
@@ -89,7 +89,7 @@ class UpdateWorkFlowRequest:
 
 
         :param body: The body of this UpdateWorkFlowRequest.
-        :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateWorkflowRequestBody`
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`
         """
         self._body = body
 

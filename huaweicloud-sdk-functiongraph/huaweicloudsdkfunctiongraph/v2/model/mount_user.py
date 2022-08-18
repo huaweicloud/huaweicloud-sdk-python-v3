@@ -21,8 +21,8 @@ class MountUser:
     sensitive_list = []
 
     openapi_types = {
-        'user_id': 'int',
-        'user_group_id': 'int'
+        'user_id': 'str',
+        'user_group_id': 'str'
     }
 
     attribute_map = {
@@ -36,9 +36,9 @@ class MountUser:
         The model defined in huaweicloud sdk
 
         :param user_id: 用户ID(-1~65534的非0整数)
-        :type user_id: int
+        :type user_id: str
         :param user_group_id: 用户组ID(-1~65534的非0整数)
-        :type user_group_id: int
+        :type user_group_id: str
         """
         
         
@@ -57,7 +57,7 @@ class MountUser:
         用户ID(-1~65534的非0整数)
 
         :return: The user_id of this MountUser.
-        :rtype: int
+        :rtype: str
         """
         return self._user_id
 
@@ -68,7 +68,7 @@ class MountUser:
         用户ID(-1~65534的非0整数)
 
         :param user_id: The user_id of this MountUser.
-        :type user_id: int
+        :type user_id: str
         """
         self._user_id = user_id
 
@@ -79,7 +79,7 @@ class MountUser:
         用户组ID(-1~65534的非0整数)
 
         :return: The user_group_id of this MountUser.
-        :rtype: int
+        :rtype: str
         """
         return self._user_group_id
 
@@ -90,7 +90,7 @@ class MountUser:
         用户组ID(-1~65534的非0整数)
 
         :param user_group_id: The user_group_id of this MountUser.
-        :type user_group_id: int
+        :type user_group_id: str
         """
         self._user_group_id = user_group_id
 

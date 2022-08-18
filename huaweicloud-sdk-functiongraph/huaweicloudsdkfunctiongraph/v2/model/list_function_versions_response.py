@@ -41,7 +41,7 @@ class ListFunctionVersionsResponse(SdkResponse):
         :type versions: list[:class:`huaweicloudsdkfunctiongraph.v2.ListFunctionVersionResult`]
         :param next_marker: 下一次记录位置
         :type next_marker: int
-        :param count: 函数版本总数
+        :param count: 版本总数
         :type count: int
         """
         
@@ -107,7 +107,7 @@ class ListFunctionVersionsResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListFunctionVersionsResponse.
 
-        函数版本总数
+        版本总数
 
         :return: The count of this ListFunctionVersionsResponse.
         :rtype: int
@@ -118,7 +118,7 @@ class ListFunctionVersionsResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListFunctionVersionsResponse.
 
-        函数版本总数
+        版本总数
 
         :param count: The count of this ListFunctionVersionsResponse.
         :type count: int

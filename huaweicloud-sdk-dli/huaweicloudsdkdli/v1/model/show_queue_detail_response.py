@@ -23,6 +23,7 @@ class ShowQueueDetailResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
+        'queue_id': 'str',
         'queue_name': 'str',
         'description': 'str',
         'owner': 'str',
@@ -36,12 +37,14 @@ class ShowQueueDetailResponse(SdkResponse):
         'enterprise_project_id': 'str',
         'cu_spec': 'int',
         'cu_scale_out_limit': 'int',
-        'cu_scale_in_limit': 'int'
+        'cu_scale_in_limit': 'int',
+        'elastic_resource_pool_name': 'str'
     }
 
     attribute_map = {
         'is_success': 'is_success',
         'message': 'message',
+        'queue_id': 'queue_id',
         'queue_name': 'queueName',
         'description': 'description',
         'owner': 'owner',
@@ -55,10 +58,11 @@ class ShowQueueDetailResponse(SdkResponse):
         'enterprise_project_id': 'enterprise_project_id',
         'cu_spec': 'cu_spec',
         'cu_scale_out_limit': 'cu_scale_out_limit',
-        'cu_scale_in_limit': 'cu_scale_in_limit'
+        'cu_scale_in_limit': 'cu_scale_in_limit',
+        'elastic_resource_pool_name': 'elastic_resource_pool_name'
     }
 
-    def __init__(self, is_success=None, message=None, queue_name=None, description=None, owner=None, create_time=None, cu_count=None, charging_mode=None, resource_id=None, queue_type=None, resource_type=None, resource_mode=None, enterprise_project_id=None, cu_spec=None, cu_scale_out_limit=None, cu_scale_in_limit=None):
+    def __init__(self, is_success=None, message=None, queue_id=None, queue_name=None, description=None, owner=None, create_time=None, cu_count=None, charging_mode=None, resource_id=None, queue_type=None, resource_type=None, resource_mode=None, enterprise_project_id=None, cu_spec=None, cu_scale_out_limit=None, cu_scale_in_limit=None, elastic_resource_pool_name=None):
         """ShowQueueDetailResponse
 
         The model defined in huaweicloud sdk
@@ -67,6 +71,8 @@ class ShowQueueDetailResponse(SdkResponse):
         :type is_success: bool
         :param message: 系统提示信息，执行成功时，信息可能为空。
         :type message: str
+        :param queue_id: 队列ID。
+        :type queue_id: str
         :param queue_name: 队列名称。
         :type queue_name: str
         :param description: 队列描述信息。
@@ -95,12 +101,15 @@ class ShowQueueDetailResponse(SdkResponse):
         :type cu_scale_out_limit: int
         :param cu_scale_in_limit: 当前队列弹性扩缩容的CU值下限。
         :type cu_scale_in_limit: int
+        :param elastic_resource_pool_name: 弹性资源池名称。
+        :type elastic_resource_pool_name: str
         """
         
         super(ShowQueueDetailResponse, self).__init__()
 
         self._is_success = None
         self._message = None
+        self._queue_id = None
         self._queue_name = None
         self._description = None
         self._owner = None
@@ -115,12 +124,15 @@ class ShowQueueDetailResponse(SdkResponse):
         self._cu_spec = None
         self._cu_scale_out_limit = None
         self._cu_scale_in_limit = None
+        self._elastic_resource_pool_name = None
         self.discriminator = None
 
         if is_success is not None:
             self.is_success = is_success
         if message is not None:
             self.message = message
+        if queue_id is not None:
+            self.queue_id = queue_id
         if queue_name is not None:
             self.queue_name = queue_name
         if description is not None:
@@ -149,6 +161,8 @@ class ShowQueueDetailResponse(SdkResponse):
             self.cu_scale_out_limit = cu_scale_out_limit
         if cu_scale_in_limit is not None:
             self.cu_scale_in_limit = cu_scale_in_limit
+        if elastic_resource_pool_name is not None:
+            self.elastic_resource_pool_name = elastic_resource_pool_name
 
     @property
     def is_success(self):
@@ -193,6 +207,28 @@ class ShowQueueDetailResponse(SdkResponse):
         :type message: str
         """
         self._message = message
+
+    @property
+    def queue_id(self):
+        """Gets the queue_id of this ShowQueueDetailResponse.
+
+        队列ID。
+
+        :return: The queue_id of this ShowQueueDetailResponse.
+        :rtype: str
+        """
+        return self._queue_id
+
+    @queue_id.setter
+    def queue_id(self, queue_id):
+        """Sets the queue_id of this ShowQueueDetailResponse.
+
+        队列ID。
+
+        :param queue_id: The queue_id of this ShowQueueDetailResponse.
+        :type queue_id: str
+        """
+        self._queue_id = queue_id
 
     @property
     def queue_name(self):
@@ -501,6 +537,28 @@ class ShowQueueDetailResponse(SdkResponse):
         :type cu_scale_in_limit: int
         """
         self._cu_scale_in_limit = cu_scale_in_limit
+
+    @property
+    def elastic_resource_pool_name(self):
+        """Gets the elastic_resource_pool_name of this ShowQueueDetailResponse.
+
+        弹性资源池名称。
+
+        :return: The elastic_resource_pool_name of this ShowQueueDetailResponse.
+        :rtype: str
+        """
+        return self._elastic_resource_pool_name
+
+    @elastic_resource_pool_name.setter
+    def elastic_resource_pool_name(self, elastic_resource_pool_name):
+        """Sets the elastic_resource_pool_name of this ShowQueueDetailResponse.
+
+        弹性资源池名称。
+
+        :param elastic_resource_pool_name: The elastic_resource_pool_name of this ShowQueueDetailResponse.
+        :type elastic_resource_pool_name: str
+        """
+        self._elastic_resource_pool_name = elastic_resource_pool_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

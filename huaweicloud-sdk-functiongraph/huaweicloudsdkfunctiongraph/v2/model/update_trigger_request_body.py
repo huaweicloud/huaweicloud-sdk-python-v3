@@ -42,7 +42,8 @@ class UpdateTriggerRequestBody:
         self._trigger_status = None
         self.discriminator = None
 
-        self.trigger_status = trigger_status
+        if trigger_status is not None:
+            self.trigger_status = trigger_status
 
     @property
     def trigger_status(self):

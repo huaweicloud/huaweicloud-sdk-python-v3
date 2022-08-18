@@ -71,7 +71,7 @@ class BillSumRecordInfoV2:
 
         The model defined in huaweicloud sdk
 
-        :param bill_cycle: 消费汇总数据所在账期，格式：YYYY-MM。
+        :param bill_cycle: 消费汇总数据所在账期，东八区时间，格式：YYYY-MM。
         :type bill_cycle: str
         :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
         :type resource_type_code: str
@@ -182,7 +182,7 @@ class BillSumRecordInfoV2:
     def bill_cycle(self):
         """Gets the bill_cycle of this BillSumRecordInfoV2.
 
-        消费汇总数据所在账期，格式：YYYY-MM。
+        消费汇总数据所在账期，东八区时间，格式：YYYY-MM。
 
         :return: The bill_cycle of this BillSumRecordInfoV2.
         :rtype: str
@@ -193,7 +193,7 @@ class BillSumRecordInfoV2:
     def bill_cycle(self, bill_cycle):
         """Sets the bill_cycle of this BillSumRecordInfoV2.
 
-        消费汇总数据所在账期，格式：YYYY-MM。
+        消费汇总数据所在账期，东八区时间，格式：YYYY-MM。
 
         :param bill_cycle: The bill_cycle of this BillSumRecordInfoV2.
         :type bill_cycle: str

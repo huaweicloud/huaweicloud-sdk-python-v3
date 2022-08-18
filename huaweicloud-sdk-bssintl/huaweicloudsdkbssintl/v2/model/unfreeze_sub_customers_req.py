@@ -22,15 +22,17 @@ class UnfreezeSubCustomersReq:
 
     openapi_types = {
         'customer_ids': 'list[str]',
-        'reason': 'str'
+        'reason': 'str',
+        'indirect_partner_id': 'str'
     }
 
     attribute_map = {
         'customer_ids': 'customer_ids',
-        'reason': 'reason'
+        'reason': 'reason',
+        'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, customer_ids=None, reason=None):
+    def __init__(self, customer_ids=None, reason=None, indirect_partner_id=None):
         """UnfreezeSubCustomersReq
 
         The model defined in huaweicloud sdk
@@ -39,16 +41,21 @@ class UnfreezeSubCustomersReq:
         :type customer_ids: list[str]
         :param reason: 解冻原因。
         :type reason: str
+        :param indirect_partner_id: 云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
+        :type indirect_partner_id: str
         """
         
         
 
         self._customer_ids = None
         self._reason = None
+        self._indirect_partner_id = None
         self.discriminator = None
 
         self.customer_ids = customer_ids
         self.reason = reason
+        if indirect_partner_id is not None:
+            self.indirect_partner_id = indirect_partner_id
 
     @property
     def customer_ids(self):
@@ -93,6 +100,28 @@ class UnfreezeSubCustomersReq:
         :type reason: str
         """
         self._reason = reason
+
+    @property
+    def indirect_partner_id(self):
+        """Gets the indirect_partner_id of this UnfreezeSubCustomersReq.
+
+        云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
+
+        :return: The indirect_partner_id of this UnfreezeSubCustomersReq.
+        :rtype: str
+        """
+        return self._indirect_partner_id
+
+    @indirect_partner_id.setter
+    def indirect_partner_id(self, indirect_partner_id):
+        """Sets the indirect_partner_id of this UnfreezeSubCustomersReq.
+
+        云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
+
+        :param indirect_partner_id: The indirect_partner_id of this UnfreezeSubCustomersReq.
+        :type indirect_partner_id: str
+        """
+        self._indirect_partner_id = indirect_partner_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

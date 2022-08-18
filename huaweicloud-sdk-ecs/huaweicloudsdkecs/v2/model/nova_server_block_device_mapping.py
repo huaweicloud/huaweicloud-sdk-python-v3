@@ -83,8 +83,7 @@ class NovaServerBlockDeviceMapping:
         self.discriminator = None
 
         self.source_type = source_type
-        if destination_type is not None:
-            self.destination_type = destination_type
+        self.destination_type = destination_type
         if guest_format is not None:
             self.guest_format = guest_format
         if device_name is not None:

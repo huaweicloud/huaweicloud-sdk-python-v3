@@ -21,35 +21,43 @@ class OperationState:
     sensitive_list = []
 
     openapi_types = {
+        'action_mode': 'str',
+        'actions': 'list[Action]',
+        'on_errors': 'list[OnError]',
         'id': 'str',
         'name': 'str',
         'type': 'str',
         'end': 'bool',
         'transition': 'str',
         'state_data_filter': 'StateDataFilter',
-        'action_mode': 'str',
-        'actions': 'list[Action]',
-        'on_errors': 'list[OnError]'
+        'duration': 'int'
     }
 
     attribute_map = {
+        'action_mode': 'action_mode',
+        'actions': 'actions',
+        'on_errors': 'on_errors',
         'id': 'id',
         'name': 'name',
         'type': 'type',
         'end': 'end',
         'transition': 'transition',
         'state_data_filter': 'state_data_filter',
-        'action_mode': 'action_mode',
-        'actions': 'actions',
-        'on_errors': 'on_errors'
+        'duration': 'duration'
     }
 
-    def __init__(self, id=None, name=None, type=None, end=None, transition=None, state_data_filter=None, action_mode=None, actions=None, on_errors=None):
+    def __init__(self, action_mode=None, actions=None, on_errors=None, id=None, name=None, type=None, end=None, transition=None, state_data_filter=None, duration=None):
         """OperationState
 
         The model defined in huaweicloud sdk
 
-        :param id: 节点ID，需要在当前工作流中唯一
+        :param action_mode: Action执行模式，支持串行，并行两种模式，默认串行
+        :type action_mode: str
+        :param actions: 节点中要执行的操作列表
+        :type actions: list[:class:`huaweicloudsdkfunctiongraph.v2.Action`]
+        :param on_errors: 错误处理策略
+        :type on_errors: list[:class:`huaweicloudsdkfunctiongraph.v2.OnError`]
+        :param id: 节点ID，需要在当前函数流中唯一
         :type id: str
         :param name: 节点名称
         :type name: str
@@ -61,27 +69,29 @@ class OperationState:
         :type transition: str
         :param state_data_filter: 
         :type state_data_filter: :class:`huaweicloudsdkfunctiongraph.v2.StateDataFilter`
-        :param action_mode: Action执行模式，支持串行，并行两种模式，默认串行
-        :type action_mode: str
-        :param actions: 节点中要执行的操作列表
-        :type actions: list[:class:`huaweicloudsdkfunctiongraph.v2.Action`]
-        :param on_errors: 错误处理策略
-        :type on_errors: list[:class:`huaweicloudsdkfunctiongraph.v2.OnError`]
+        :param duration: 时间等待节点等待时间（秒）,节点类型为Sleep时为必填，节点类型不为Sleep时无效
+        :type duration: int
         """
         
         
 
+        self._action_mode = None
+        self._actions = None
+        self._on_errors = None
         self._id = None
         self._name = None
         self._type = None
         self._end = None
         self._transition = None
         self._state_data_filter = None
-        self._action_mode = None
-        self._actions = None
-        self._on_errors = None
+        self._duration = None
         self.discriminator = None
 
+        if action_mode is not None:
+            self.action_mode = action_mode
+        self.actions = actions
+        if on_errors is not None:
+            self.on_errors = on_errors
         self.id = id
         self.name = name
         self.type = type
@@ -89,17 +99,80 @@ class OperationState:
         self.transition = transition
         if state_data_filter is not None:
             self.state_data_filter = state_data_filter
-        if action_mode is not None:
-            self.action_mode = action_mode
-        self.actions = actions
-        if on_errors is not None:
-            self.on_errors = on_errors
+        if duration is not None:
+            self.duration = duration
+
+    @property
+    def action_mode(self):
+        """Gets the action_mode of this OperationState.
+
+        Action执行模式，支持串行，并行两种模式，默认串行
+
+        :return: The action_mode of this OperationState.
+        :rtype: str
+        """
+        return self._action_mode
+
+    @action_mode.setter
+    def action_mode(self, action_mode):
+        """Sets the action_mode of this OperationState.
+
+        Action执行模式，支持串行，并行两种模式，默认串行
+
+        :param action_mode: The action_mode of this OperationState.
+        :type action_mode: str
+        """
+        self._action_mode = action_mode
+
+    @property
+    def actions(self):
+        """Gets the actions of this OperationState.
+
+        节点中要执行的操作列表
+
+        :return: The actions of this OperationState.
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.Action`]
+        """
+        return self._actions
+
+    @actions.setter
+    def actions(self, actions):
+        """Sets the actions of this OperationState.
+
+        节点中要执行的操作列表
+
+        :param actions: The actions of this OperationState.
+        :type actions: list[:class:`huaweicloudsdkfunctiongraph.v2.Action`]
+        """
+        self._actions = actions
+
+    @property
+    def on_errors(self):
+        """Gets the on_errors of this OperationState.
+
+        错误处理策略
+
+        :return: The on_errors of this OperationState.
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.OnError`]
+        """
+        return self._on_errors
+
+    @on_errors.setter
+    def on_errors(self, on_errors):
+        """Sets the on_errors of this OperationState.
+
+        错误处理策略
+
+        :param on_errors: The on_errors of this OperationState.
+        :type on_errors: list[:class:`huaweicloudsdkfunctiongraph.v2.OnError`]
+        """
+        self._on_errors = on_errors
 
     @property
     def id(self):
         """Gets the id of this OperationState.
 
-        节点ID，需要在当前工作流中唯一
+        节点ID，需要在当前函数流中唯一
 
         :return: The id of this OperationState.
         :rtype: str
@@ -110,7 +183,7 @@ class OperationState:
     def id(self, id):
         """Sets the id of this OperationState.
 
-        节点ID，需要在当前工作流中唯一
+        节点ID，需要在当前函数流中唯一
 
         :param id: The id of this OperationState.
         :type id: str
@@ -226,70 +299,26 @@ class OperationState:
         self._state_data_filter = state_data_filter
 
     @property
-    def action_mode(self):
-        """Gets the action_mode of this OperationState.
+    def duration(self):
+        """Gets the duration of this OperationState.
 
-        Action执行模式，支持串行，并行两种模式，默认串行
+        时间等待节点等待时间（秒）,节点类型为Sleep时为必填，节点类型不为Sleep时无效
 
-        :return: The action_mode of this OperationState.
-        :rtype: str
+        :return: The duration of this OperationState.
+        :rtype: int
         """
-        return self._action_mode
+        return self._duration
 
-    @action_mode.setter
-    def action_mode(self, action_mode):
-        """Sets the action_mode of this OperationState.
+    @duration.setter
+    def duration(self, duration):
+        """Sets the duration of this OperationState.
 
-        Action执行模式，支持串行，并行两种模式，默认串行
+        时间等待节点等待时间（秒）,节点类型为Sleep时为必填，节点类型不为Sleep时无效
 
-        :param action_mode: The action_mode of this OperationState.
-        :type action_mode: str
+        :param duration: The duration of this OperationState.
+        :type duration: int
         """
-        self._action_mode = action_mode
-
-    @property
-    def actions(self):
-        """Gets the actions of this OperationState.
-
-        节点中要执行的操作列表
-
-        :return: The actions of this OperationState.
-        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.Action`]
-        """
-        return self._actions
-
-    @actions.setter
-    def actions(self, actions):
-        """Sets the actions of this OperationState.
-
-        节点中要执行的操作列表
-
-        :param actions: The actions of this OperationState.
-        :type actions: list[:class:`huaweicloudsdkfunctiongraph.v2.Action`]
-        """
-        self._actions = actions
-
-    @property
-    def on_errors(self):
-        """Gets the on_errors of this OperationState.
-
-        错误处理策略
-
-        :return: The on_errors of this OperationState.
-        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.OnError`]
-        """
-        return self._on_errors
-
-    @on_errors.setter
-    def on_errors(self, on_errors):
-        """Sets the on_errors of this OperationState.
-
-        错误处理策略
-
-        :param on_errors: The on_errors of this OperationState.
-        :type on_errors: list[:class:`huaweicloudsdkfunctiongraph.v2.OnError`]
-        """
-        self._on_errors = on_errors
+        self._duration = duration
 
     def to_dict(self):
         """Returns the model properties as a dict"""

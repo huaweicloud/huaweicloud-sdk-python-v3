@@ -22,7 +22,7 @@ class StartSyncWorkflowExecutionRequest:
 
     openapi_types = {
         'workflow_id': 'str',
-        'body': 'StartSyncWorkflowExecutionRequestBody'
+        'body': 'FlowExecuteBody'
     }
 
     attribute_map = {
@@ -35,10 +35,10 @@ class StartSyncWorkflowExecutionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param workflow_id: 函数工作流ID
+        :param workflow_id: 函数流定义ID
         :type workflow_id: str
         :param body: Body of the StartSyncWorkflowExecutionRequest
-        :type body: :class:`huaweicloudsdkfunctiongraph.v2.StartSyncWorkflowExecutionRequestBody`
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecuteBody`
         """
         
         
@@ -55,7 +55,7 @@ class StartSyncWorkflowExecutionRequest:
     def workflow_id(self):
         """Gets the workflow_id of this StartSyncWorkflowExecutionRequest.
 
-        函数工作流ID
+        函数流定义ID
 
         :return: The workflow_id of this StartSyncWorkflowExecutionRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class StartSyncWorkflowExecutionRequest:
     def workflow_id(self, workflow_id):
         """Sets the workflow_id of this StartSyncWorkflowExecutionRequest.
 
-        函数工作流ID
+        函数流定义ID
 
         :param workflow_id: The workflow_id of this StartSyncWorkflowExecutionRequest.
         :type workflow_id: str
@@ -79,7 +79,7 @@ class StartSyncWorkflowExecutionRequest:
 
 
         :return: The body of this StartSyncWorkflowExecutionRequest.
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StartSyncWorkflowExecutionRequestBody`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecuteBody`
         """
         return self._body
 
@@ -89,7 +89,7 @@ class StartSyncWorkflowExecutionRequest:
 
 
         :param body: The body of this StartSyncWorkflowExecutionRequest.
-        :type body: :class:`huaweicloudsdkfunctiongraph.v2.StartSyncWorkflowExecutionRequestBody`
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.FlowExecuteBody`
         """
         self._body = body
 

@@ -39,7 +39,7 @@ class StatUsageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param stat_time: 统计时间点，格式为YYYY-MM-DDTHH:MM:SSZ，UTC时间。
+        :param stat_time: 统计时间点，UTC时间，格式为YYYY-MM-DDTHH:MM:SSZ。
         :type stat_time: str
         :param guaranteed_band_width: 保底带宽。  说明： 该字段为预留值，当前始终为空；当场景为95增强时才返回数值。
         :type guaranteed_band_width: str
@@ -70,7 +70,7 @@ class StatUsageInfo:
     def stat_time(self):
         """Gets the stat_time of this StatUsageInfo.
 
-        统计时间点，格式为YYYY-MM-DDTHH:MM:SSZ，UTC时间。
+        统计时间点，UTC时间，格式为YYYY-MM-DDTHH:MM:SSZ。
 
         :return: The stat_time of this StatUsageInfo.
         :rtype: str
@@ -81,7 +81,7 @@ class StatUsageInfo:
     def stat_time(self, stat_time):
         """Sets the stat_time of this StatUsageInfo.
 
-        统计时间点，格式为YYYY-MM-DDTHH:MM:SSZ，UTC时间。
+        统计时间点，UTC时间，格式为YYYY-MM-DDTHH:MM:SSZ。
 
         :param stat_time: The stat_time of this StatUsageInfo.
         :type stat_time: str

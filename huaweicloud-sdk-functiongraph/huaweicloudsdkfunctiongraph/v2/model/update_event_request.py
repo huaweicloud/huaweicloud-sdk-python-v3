@@ -21,69 +21,47 @@ class UpdateEventRequest:
     sensitive_list = []
 
     openapi_types = {
-        'event_id': 'str',
         'function_urn': 'str',
+        'event_id': 'str',
         'body': 'UpdateEventRequestBody'
     }
 
     attribute_map = {
-        'event_id': 'event_id',
         'function_urn': 'function_urn',
+        'event_id': 'event_id',
         'body': 'body'
     }
 
-    def __init__(self, event_id=None, function_urn=None, body=None):
+    def __init__(self, function_urn=None, event_id=None, body=None):
         """UpdateEventRequest
 
         The model defined in huaweicloud sdk
 
-        :param event_id: 事件ID。
-        :type event_id: str
-        :param function_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
         :type function_urn: str
+        :param event_id: 测试事件ID
+        :type event_id: str
         :param body: Body of the UpdateEventRequest
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateEventRequestBody`
         """
         
         
 
-        self._event_id = None
         self._function_urn = None
+        self._event_id = None
         self._body = None
         self.discriminator = None
 
-        self.event_id = event_id
         self.function_urn = function_urn
+        self.event_id = event_id
         if body is not None:
             self.body = body
-
-    @property
-    def event_id(self):
-        """Gets the event_id of this UpdateEventRequest.
-
-        事件ID。
-
-        :return: The event_id of this UpdateEventRequest.
-        :rtype: str
-        """
-        return self._event_id
-
-    @event_id.setter
-    def event_id(self, event_id):
-        """Sets the event_id of this UpdateEventRequest.
-
-        事件ID。
-
-        :param event_id: The event_id of this UpdateEventRequest.
-        :type event_id: str
-        """
-        self._event_id = event_id
 
     @property
     def function_urn(self):
         """Gets the function_urn of this UpdateEventRequest.
 
-        函数的URN（Uniform Resource Name），唯一标识函数。
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :return: The function_urn of this UpdateEventRequest.
         :rtype: str
@@ -94,12 +72,34 @@ class UpdateEventRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this UpdateEventRequest.
 
-        函数的URN（Uniform Resource Name），唯一标识函数。
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this UpdateEventRequest.
         :type function_urn: str
         """
         self._function_urn = function_urn
+
+    @property
+    def event_id(self):
+        """Gets the event_id of this UpdateEventRequest.
+
+        测试事件ID
+
+        :return: The event_id of this UpdateEventRequest.
+        :rtype: str
+        """
+        return self._event_id
+
+    @event_id.setter
+    def event_id(self, event_id):
+        """Sets the event_id of this UpdateEventRequest.
+
+        测试事件ID
+
+        :param event_id: The event_id of this UpdateEventRequest.
+        :type event_id: str
+        """
+        self._event_id = event_id
 
     @property
     def body(self):

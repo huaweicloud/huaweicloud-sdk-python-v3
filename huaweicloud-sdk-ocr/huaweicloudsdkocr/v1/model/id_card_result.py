@@ -31,7 +31,8 @@ class IdCardResult:
         'valid_from': 'str',
         'valid_to': 'str',
         'verification_result': 'IdcardVerificationResult',
-        'text_location': 'object'
+        'text_location': 'object',
+        'detect_reproduce_result': 'bool'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class IdCardResult:
         'valid_from': 'valid_from',
         'valid_to': 'valid_to',
         'verification_result': 'verification_result',
-        'text_location': 'text_location'
+        'text_location': 'text_location',
+        'detect_reproduce_result': 'detect_reproduce_result'
     }
 
-    def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, issue=None, valid_from=None, valid_to=None, verification_result=None, text_location=None):
+    def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, issue=None, valid_from=None, valid_to=None, verification_result=None, text_location=None, detect_reproduce_result=None):
         """IdCardResult
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class IdCardResult:
         :type verification_result: :class:`huaweicloudsdkocr.v1.IdcardVerificationResult`
         :param text_location: 文本框在原图位置。输出左上、右上、右下、左下四个点坐标。当“return_text_location”设置为“true”时才返回。 
         :type text_location: object
+        :param detect_reproduce_result: 判断身份证图像是否经过翻拍，“true”表示是翻拍，“false”表示未经过翻拍。仅在输入参数detect_reproduce为true时，返回该字段。 
+        :type detect_reproduce_result: bool
         """
         
         
@@ -90,6 +94,7 @@ class IdCardResult:
         self._valid_to = None
         self._verification_result = None
         self._text_location = None
+        self._detect_reproduce_result = None
         self.discriminator = None
 
         if name is not None:
@@ -114,6 +119,8 @@ class IdCardResult:
             self.verification_result = verification_result
         if text_location is not None:
             self.text_location = text_location
+        if detect_reproduce_result is not None:
+            self.detect_reproduce_result = detect_reproduce_result
 
     @property
     def name(self):
@@ -354,6 +361,28 @@ class IdCardResult:
         :type text_location: object
         """
         self._text_location = text_location
+
+    @property
+    def detect_reproduce_result(self):
+        """Gets the detect_reproduce_result of this IdCardResult.
+
+        判断身份证图像是否经过翻拍，“true”表示是翻拍，“false”表示未经过翻拍。仅在输入参数detect_reproduce为true时，返回该字段。 
+
+        :return: The detect_reproduce_result of this IdCardResult.
+        :rtype: bool
+        """
+        return self._detect_reproduce_result
+
+    @detect_reproduce_result.setter
+    def detect_reproduce_result(self, detect_reproduce_result):
+        """Sets the detect_reproduce_result of this IdCardResult.
+
+        判断身份证图像是否经过翻拍，“true”表示是翻拍，“false”表示未经过翻拍。仅在输入参数detect_reproduce为true时，返回该字段。 
+
+        :param detect_reproduce_result: The detect_reproduce_result of this IdCardResult.
+        :type detect_reproduce_result: bool
+        """
+        self._detect_reproduce_result = detect_reproduce_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

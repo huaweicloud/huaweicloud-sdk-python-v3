@@ -23,16 +23,18 @@ class UpdateGeoipRuleRequestBody:
     openapi_types = {
         'name': 'str',
         'geoip': 'str',
-        'white': 'int'
+        'white': 'int',
+        'description': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'geoip': 'geoip',
-        'white': 'white'
+        'white': 'white',
+        'description': 'description'
     }
 
-    def __init__(self, name=None, geoip=None, white=None):
+    def __init__(self, name=None, geoip=None, white=None, description=None):
         """UpdateGeoipRuleRequestBody
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class UpdateGeoipRuleRequestBody:
         :type geoip: str
         :param white: 防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
         :type white: int
+        :param description: 规则描述
+        :type description: str
         """
         
         
@@ -50,12 +54,15 @@ class UpdateGeoipRuleRequestBody:
         self._name = None
         self._geoip = None
         self._white = None
+        self._description = None
         self.discriminator = None
 
         if name is not None:
             self.name = name
         self.geoip = geoip
         self.white = white
+        if description is not None:
+            self.description = description
 
     @property
     def name(self):
@@ -122,6 +129,28 @@ class UpdateGeoipRuleRequestBody:
         :type white: int
         """
         self._white = white
+
+    @property
+    def description(self):
+        """Gets the description of this UpdateGeoipRuleRequestBody.
+
+        规则描述
+
+        :return: The description of this UpdateGeoipRuleRequestBody.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this UpdateGeoipRuleRequestBody.
+
+        规则描述
+
+        :param description: The description of this UpdateGeoipRuleRequestBody.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -57,11 +57,11 @@ class AddPostalReq:
         :type district: str
         :param address: 邮寄详细地址。
         :type address: str
-        :param zipcode: 邮寄地址所在邮编。
+        :param zipcode: 邮寄地址所在邮编。 此参数不携带或携带值为null时，不赋值。
         :type zipcode: str
         :param mobile_phone: 手机号码，不带国家码。
         :type mobile_phone: str
-        :param is_default: 是否默认地址，默认为0。 1：默认地址0：非默认地址
+        :param is_default: 是否默认地址，默认值为“0：非默认地址”。 1：默认地址0：非默认地址
         :type is_default: int
         """
         
@@ -202,7 +202,7 @@ class AddPostalReq:
     def zipcode(self):
         """Gets the zipcode of this AddPostalReq.
 
-        邮寄地址所在邮编。
+        邮寄地址所在邮编。 此参数不携带或携带值为null时，不赋值。
 
         :return: The zipcode of this AddPostalReq.
         :rtype: str
@@ -213,7 +213,7 @@ class AddPostalReq:
     def zipcode(self, zipcode):
         """Sets the zipcode of this AddPostalReq.
 
-        邮寄地址所在邮编。
+        邮寄地址所在邮编。 此参数不携带或携带值为null时，不赋值。
 
         :param zipcode: The zipcode of this AddPostalReq.
         :type zipcode: str
@@ -246,7 +246,7 @@ class AddPostalReq:
     def is_default(self):
         """Gets the is_default of this AddPostalReq.
 
-        是否默认地址，默认为0。 1：默认地址0：非默认地址
+        是否默认地址，默认值为“0：非默认地址”。 1：默认地址0：非默认地址
 
         :return: The is_default of this AddPostalReq.
         :rtype: int
@@ -257,7 +257,7 @@ class AddPostalReq:
     def is_default(self, is_default):
         """Sets the is_default of this AddPostalReq.
 
-        是否默认地址，默认为0。 1：默认地址0：非默认地址
+        是否默认地址，默认值为“0：非默认地址”。 1：默认地址0：非默认地址
 
         :param is_default: The is_default of this AddPostalReq.
         :type is_default: int

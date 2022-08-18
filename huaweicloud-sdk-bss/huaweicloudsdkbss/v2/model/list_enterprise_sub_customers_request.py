@@ -43,17 +43,17 @@ class ListEnterpriseSubCustomersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param sub_customer_account_name: 企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。
+        :param sub_customer_account_name: 企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
         :type sub_customer_account_name: str
-        :param sub_customer_display_name: 企业子账号的显示名称。不限制特殊字符。根据fuzzy_query取值决定是否按模糊查询。
+        :param sub_customer_display_name: 企业子账号的显示名称。不限制特殊字符。根据fuzzy_query取值决定是否按模糊查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
         :type sub_customer_display_name: str
-        :param fuzzy_query: 企业子账号的显示名称、用户名是否按模糊查询。0：不按模糊查询1：按模糊查询默认值为0。
+        :param fuzzy_query: 企业子账号的显示名称、用户名是否按模糊查询。默认值为“0：不按模糊查询”。0：不按模糊查询1：按模糊查询
         :type fuzzy_query: int
         :param offset: 偏移量，从0开始，默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
         :param limit: 每次查询记录数，默认值为10。
         :type limit: int
-        :param org_id: 子账号归属的组织单元ID。
+        :param org_id: 子账号归属的组织单元ID。此参数不携带或携带值为空时，不作为筛选条件。
         :type org_id: str
         """
         
@@ -84,7 +84,7 @@ class ListEnterpriseSubCustomersRequest:
     def sub_customer_account_name(self):
         """Gets the sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
 
-        企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。
+        企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
         :return: The sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class ListEnterpriseSubCustomersRequest:
     def sub_customer_account_name(self, sub_customer_account_name):
         """Sets the sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
 
-        企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。
+        企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
         :param sub_customer_account_name: The sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
         :type sub_customer_account_name: str
@@ -106,7 +106,7 @@ class ListEnterpriseSubCustomersRequest:
     def sub_customer_display_name(self):
         """Gets the sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
 
-        企业子账号的显示名称。不限制特殊字符。根据fuzzy_query取值决定是否按模糊查询。
+        企业子账号的显示名称。不限制特殊字符。根据fuzzy_query取值决定是否按模糊查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
         :return: The sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
         :rtype: str
@@ -117,7 +117,7 @@ class ListEnterpriseSubCustomersRequest:
     def sub_customer_display_name(self, sub_customer_display_name):
         """Sets the sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
 
-        企业子账号的显示名称。不限制特殊字符。根据fuzzy_query取值决定是否按模糊查询。
+        企业子账号的显示名称。不限制特殊字符。根据fuzzy_query取值决定是否按模糊查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
         :param sub_customer_display_name: The sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
         :type sub_customer_display_name: str
@@ -128,7 +128,7 @@ class ListEnterpriseSubCustomersRequest:
     def fuzzy_query(self):
         """Gets the fuzzy_query of this ListEnterpriseSubCustomersRequest.
 
-        企业子账号的显示名称、用户名是否按模糊查询。0：不按模糊查询1：按模糊查询默认值为0。
+        企业子账号的显示名称、用户名是否按模糊查询。默认值为“0：不按模糊查询”。0：不按模糊查询1：按模糊查询
 
         :return: The fuzzy_query of this ListEnterpriseSubCustomersRequest.
         :rtype: int
@@ -139,7 +139,7 @@ class ListEnterpriseSubCustomersRequest:
     def fuzzy_query(self, fuzzy_query):
         """Sets the fuzzy_query of this ListEnterpriseSubCustomersRequest.
 
-        企业子账号的显示名称、用户名是否按模糊查询。0：不按模糊查询1：按模糊查询默认值为0。
+        企业子账号的显示名称、用户名是否按模糊查询。默认值为“0：不按模糊查询”。0：不按模糊查询1：按模糊查询
 
         :param fuzzy_query: The fuzzy_query of this ListEnterpriseSubCustomersRequest.
         :type fuzzy_query: int
@@ -194,7 +194,7 @@ class ListEnterpriseSubCustomersRequest:
     def org_id(self):
         """Gets the org_id of this ListEnterpriseSubCustomersRequest.
 
-        子账号归属的组织单元ID。
+        子账号归属的组织单元ID。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The org_id of this ListEnterpriseSubCustomersRequest.
         :rtype: str
@@ -205,7 +205,7 @@ class ListEnterpriseSubCustomersRequest:
     def org_id(self, org_id):
         """Sets the org_id of this ListEnterpriseSubCustomersRequest.
 
-        子账号归属的组织单元ID。
+        子账号归属的组织单元ID。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param org_id: The org_id of this ListEnterpriseSubCustomersRequest.
         :type org_id: str

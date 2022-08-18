@@ -22,31 +22,31 @@ class IssueDetailCustomField:
 
     openapi_types = {
         'custom_field': 'str',
-        'value': 'str',
         'field_name': 'str',
+        'value': 'str',
         'field_type': 'str',
         'description': 'str'
     }
 
     attribute_map = {
         'custom_field': 'custom_field',
-        'value': 'value',
         'field_name': 'field_name',
+        'value': 'value',
         'field_type': 'field_type',
         'description': 'description'
     }
 
-    def __init__(self, custom_field=None, value=None, field_name=None, field_type=None, description=None):
+    def __init__(self, custom_field=None, field_name=None, value=None, field_type=None, description=None):
         """IssueDetailCustomField
 
         The model defined in huaweicloud sdk
 
         :param custom_field: 自定义字段
         :type custom_field: str
-        :param value: 自定义属性对应的值，多个值以英文逗号区分开
-        :type value: str
         :param field_name: 自定义字段名称
         :type field_name: str
+        :param value: 自定义属性对应的值，多个值以英文逗号区分开
+        :type value: str
         :param field_type: 自定义字段类型， textArea 多行文本，text 单行文本，select 下拉框，number 数字，time_date 日期，checkbox 多选框，radio 单选框
         :type field_type: str
         :param description: 自定义字段描述
@@ -56,18 +56,18 @@ class IssueDetailCustomField:
         
 
         self._custom_field = None
-        self._value = None
         self._field_name = None
+        self._value = None
         self._field_type = None
         self._description = None
         self.discriminator = None
 
         if custom_field is not None:
             self.custom_field = custom_field
-        if value is not None:
-            self.value = value
         if field_name is not None:
             self.field_name = field_name
+        if value is not None:
+            self.value = value
         if field_type is not None:
             self.field_type = field_type
         if description is not None:
@@ -96,28 +96,6 @@ class IssueDetailCustomField:
         self._custom_field = custom_field
 
     @property
-    def value(self):
-        """Gets the value of this IssueDetailCustomField.
-
-        自定义属性对应的值，多个值以英文逗号区分开
-
-        :return: The value of this IssueDetailCustomField.
-        :rtype: str
-        """
-        return self._value
-
-    @value.setter
-    def value(self, value):
-        """Sets the value of this IssueDetailCustomField.
-
-        自定义属性对应的值，多个值以英文逗号区分开
-
-        :param value: The value of this IssueDetailCustomField.
-        :type value: str
-        """
-        self._value = value
-
-    @property
     def field_name(self):
         """Gets the field_name of this IssueDetailCustomField.
 
@@ -138,6 +116,28 @@ class IssueDetailCustomField:
         :type field_name: str
         """
         self._field_name = field_name
+
+    @property
+    def value(self):
+        """Gets the value of this IssueDetailCustomField.
+
+        自定义属性对应的值，多个值以英文逗号区分开
+
+        :return: The value of this IssueDetailCustomField.
+        :rtype: str
+        """
+        return self._value
+
+    @value.setter
+    def value(self, value):
+        """Sets the value of this IssueDetailCustomField.
+
+        自定义属性对应的值，多个值以英文逗号区分开
+
+        :param value: The value of this IssueDetailCustomField.
+        :type value: str
+        """
+        self._value = value
 
     @property
     def field_type(self):

@@ -25,7 +25,8 @@ class IdCardRequestBody:
         'url': 'str',
         'side': 'str',
         'return_verification': 'bool',
-        'return_text_location': 'bool'
+        'return_text_location': 'bool',
+        'detect_reproduce': 'bool'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class IdCardRequestBody:
         'url': 'url',
         'side': 'side',
         'return_verification': 'return_verification',
-        'return_text_location': 'return_text_location'
+        'return_text_location': 'return_text_location',
+        'detect_reproduce': 'detect_reproduce'
     }
 
-    def __init__(self, image=None, url=None, side=None, return_verification=None, return_text_location=None):
+    def __init__(self, image=None, url=None, side=None, return_verification=None, return_text_location=None, detect_reproduce=None):
         """IdCardRequestBody
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class IdCardRequestBody:
         :type return_verification: bool
         :param return_text_location: 识别到的文字块的区域位置信息。可选值包括：  - true：返回各个文字块区域  - false：不返回各个文字块区域  如果无该参数，系统默认不返回文字块区域。如果输入参数不是Boolean类型，则会报非法参数错误。 
         :type return_text_location: bool
+        :param detect_reproduce: 返回判断身份证图像是否经过翻拍的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否经过翻拍  - false：不返回身份证图像是否经过翻拍 
+        :type detect_reproduce: bool
         """
         
         
@@ -60,6 +64,7 @@ class IdCardRequestBody:
         self._side = None
         self._return_verification = None
         self._return_text_location = None
+        self._detect_reproduce = None
         self.discriminator = None
 
         if image is not None:
@@ -72,6 +77,8 @@ class IdCardRequestBody:
             self.return_verification = return_verification
         if return_text_location is not None:
             self.return_text_location = return_text_location
+        if detect_reproduce is not None:
+            self.detect_reproduce = detect_reproduce
 
     @property
     def image(self):
@@ -182,6 +189,28 @@ class IdCardRequestBody:
         :type return_text_location: bool
         """
         self._return_text_location = return_text_location
+
+    @property
+    def detect_reproduce(self):
+        """Gets the detect_reproduce of this IdCardRequestBody.
+
+        返回判断身份证图像是否经过翻拍的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否经过翻拍  - false：不返回身份证图像是否经过翻拍 
+
+        :return: The detect_reproduce of this IdCardRequestBody.
+        :rtype: bool
+        """
+        return self._detect_reproduce
+
+    @detect_reproduce.setter
+    def detect_reproduce(self, detect_reproduce):
+        """Sets the detect_reproduce of this IdCardRequestBody.
+
+        返回判断身份证图像是否经过翻拍的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否经过翻拍  - false：不返回身份证图像是否经过翻拍 
+
+        :param detect_reproduce: The detect_reproduce of this IdCardRequestBody.
+        :type detect_reproduce: bool
+        """
+        self._detect_reproduce = detect_reproduce
 
     def to_dict(self):
         """Returns the model properties as a dict"""

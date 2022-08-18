@@ -51,13 +51,15 @@ class ListFunctionVersionResult:
         'initializer_handler': 'str',
         'initializer_timeout': 'int',
         'long_time': 'bool',
-        'log_group_id': 'str',
-        'log_stream_id': 'str',
         'function_async_config': 'FunctionAsyncConfig',
         'type': 'str',
         'enable_cloud_debug': 'str',
         'enable_dynamic_memory': 'bool',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'is_stateful_function': 'bool',
+        'enable_auth_in_header': 'bool',
+        'custom_image': 'CustomImage',
+        'reserved_instance_idle_mode': 'bool'
     }
 
     attribute_map = {
@@ -91,16 +93,18 @@ class ListFunctionVersionResult:
         'initializer_handler': 'initializer_handler',
         'initializer_timeout': 'initializer_timeout',
         'long_time': 'long_time',
-        'log_group_id': 'log_group_id',
-        'log_stream_id': 'log_stream_id',
         'function_async_config': 'function_async_config',
         'type': 'type',
         'enable_cloud_debug': 'enable_cloud_debug',
         'enable_dynamic_memory': 'enable_dynamic_memory',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'is_stateful_function': 'is_stateful_function',
+        'enable_auth_in_header': 'enable_auth_in_header',
+        'custom_image': 'custom_image',
+        'reserved_instance_idle_mode': 'reserved_instance_idle_mode'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, last_modified=None, func_vpc_id=None, concurrency=None, concurrent_num=None, strategy_config=None, initializer_handler=None, initializer_timeout=None, long_time=None, log_group_id=None, log_stream_id=None, function_async_config=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, enterprise_project_id=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, last_modified=None, func_vpc_id=None, concurrency=None, concurrent_num=None, strategy_config=None, initializer_handler=None, initializer_timeout=None, long_time=None, function_async_config=None, type=None, enable_cloud_debug=None, enable_dynamic_memory=None, enterprise_project_id=None, is_stateful_function=None, enable_auth_in_header=None, custom_image=None, reserved_instance_idle_mode=None):
         """ListFunctionVersionResult
 
         The model defined in huaweicloud sdk
@@ -117,7 +121,7 @@ class ListFunctionVersionResult:
         :type project_name: str
         :param package: 函数所属的分组Package，用于用户针对函数的自定义分组。
         :type package: str
-        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本
+        :param runtime: FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Nodejs14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本
         :type runtime: str
         :param timeout: 函数执行超时时间，超时函数将被强行停止，范围3～900秒，可以通过白名单配置延长到12小时，具体可以咨询华为云函数工作流服务进行配置
         :type timeout: int
@@ -153,9 +157,9 @@ class ListFunctionVersionResult:
         :type last_modified: datetime
         :param func_vpc_id: 用户的vpcid
         :type func_vpc_id: str
-        :param concurrency: 
+        :param concurrency: 0：函数被禁用;-1：函数被启用。
         :type concurrency: int
-        :param concurrent_num: 
+        :param concurrent_num: 并发实例数
         :type concurrent_num: int
         :param strategy_config: 
         :type strategy_config: :class:`huaweicloudsdkfunctiongraph.v2.StrategyConfig`
@@ -165,10 +169,6 @@ class ListFunctionVersionResult:
         :type initializer_timeout: int
         :param long_time: 是否是支持长时间运行
         :type long_time: bool
-        :param log_group_id: 自定义日志查询组id
-        :type log_group_id: str
-        :param log_stream_id: 自定义日志查询流id
-        :type log_stream_id: str
         :param function_async_config: 
         :type function_async_config: :class:`huaweicloudsdkfunctiongraph.v2.FunctionAsyncConfig`
         :param type: 函数版本
@@ -179,6 +179,14 @@ class ListFunctionVersionResult:
         :type enable_dynamic_memory: bool
         :param enterprise_project_id: 企业项目ID，在企业用户创建函数时必填。
         :type enterprise_project_id: str
+        :param is_stateful_function: 是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+        :type is_stateful_function: bool
+        :param enable_auth_in_header: 是否允许在请求头中添加鉴权信息
+        :type enable_auth_in_header: bool
+        :param custom_image: 
+        :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
+        :param reserved_instance_idle_mode: 是否开启预留实例闲置模式
+        :type reserved_instance_idle_mode: bool
         """
         
         
@@ -213,13 +221,15 @@ class ListFunctionVersionResult:
         self._initializer_handler = None
         self._initializer_timeout = None
         self._long_time = None
-        self._log_group_id = None
-        self._log_stream_id = None
         self._function_async_config = None
         self._type = None
         self._enable_cloud_debug = None
         self._enable_dynamic_memory = None
         self._enterprise_project_id = None
+        self._is_stateful_function = None
+        self._enable_auth_in_header = None
+        self._custom_image = None
+        self._reserved_instance_idle_mode = None
         self.discriminator = None
 
         self.func_urn = func_urn
@@ -265,10 +275,6 @@ class ListFunctionVersionResult:
             self.initializer_timeout = initializer_timeout
         if long_time is not None:
             self.long_time = long_time
-        if log_group_id is not None:
-            self.log_group_id = log_group_id
-        if log_stream_id is not None:
-            self.log_stream_id = log_stream_id
         if function_async_config is not None:
             self.function_async_config = function_async_config
         if type is not None:
@@ -279,6 +285,14 @@ class ListFunctionVersionResult:
             self.enable_dynamic_memory = enable_dynamic_memory
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if is_stateful_function is not None:
+            self.is_stateful_function = is_stateful_function
+        if enable_auth_in_header is not None:
+            self.enable_auth_in_header = enable_auth_in_header
+        if custom_image is not None:
+            self.custom_image = custom_image
+        if reserved_instance_idle_mode is not None:
+            self.reserved_instance_idle_mode = reserved_instance_idle_mode
 
     @property
     def func_urn(self):
@@ -416,7 +430,7 @@ class ListFunctionVersionResult:
     def runtime(self):
         """Gets the runtime of this ListFunctionVersionResult.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Nodejs14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本
 
         :return: The runtime of this ListFunctionVersionResult.
         :rtype: str
@@ -427,7 +441,7 @@ class ListFunctionVersionResult:
     def runtime(self, runtime):
         """Sets the runtime of this ListFunctionVersionResult.
 
-        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本
+        FunctionGraph函数的执行环境 Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Java8: Java语言8版本。 Java11: Java语言11版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Nodejs14.18: Nodejs语言14.18版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本
 
         :param runtime: The runtime of this ListFunctionVersionResult.
         :type runtime: str
@@ -812,6 +826,7 @@ class ListFunctionVersionResult:
     def concurrency(self):
         """Gets the concurrency of this ListFunctionVersionResult.
 
+        0：函数被禁用;-1：函数被启用。
 
         :return: The concurrency of this ListFunctionVersionResult.
         :rtype: int
@@ -822,6 +837,7 @@ class ListFunctionVersionResult:
     def concurrency(self, concurrency):
         """Sets the concurrency of this ListFunctionVersionResult.
 
+        0：函数被禁用;-1：函数被启用。
 
         :param concurrency: The concurrency of this ListFunctionVersionResult.
         :type concurrency: int
@@ -832,6 +848,7 @@ class ListFunctionVersionResult:
     def concurrent_num(self):
         """Gets the concurrent_num of this ListFunctionVersionResult.
 
+        并发实例数
 
         :return: The concurrent_num of this ListFunctionVersionResult.
         :rtype: int
@@ -842,6 +859,7 @@ class ListFunctionVersionResult:
     def concurrent_num(self, concurrent_num):
         """Sets the concurrent_num of this ListFunctionVersionResult.
 
+        并发实例数
 
         :param concurrent_num: The concurrent_num of this ListFunctionVersionResult.
         :type concurrent_num: int
@@ -933,50 +951,6 @@ class ListFunctionVersionResult:
         :type long_time: bool
         """
         self._long_time = long_time
-
-    @property
-    def log_group_id(self):
-        """Gets the log_group_id of this ListFunctionVersionResult.
-
-        自定义日志查询组id
-
-        :return: The log_group_id of this ListFunctionVersionResult.
-        :rtype: str
-        """
-        return self._log_group_id
-
-    @log_group_id.setter
-    def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ListFunctionVersionResult.
-
-        自定义日志查询组id
-
-        :param log_group_id: The log_group_id of this ListFunctionVersionResult.
-        :type log_group_id: str
-        """
-        self._log_group_id = log_group_id
-
-    @property
-    def log_stream_id(self):
-        """Gets the log_stream_id of this ListFunctionVersionResult.
-
-        自定义日志查询流id
-
-        :return: The log_stream_id of this ListFunctionVersionResult.
-        :rtype: str
-        """
-        return self._log_stream_id
-
-    @log_stream_id.setter
-    def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ListFunctionVersionResult.
-
-        自定义日志查询流id
-
-        :param log_stream_id: The log_stream_id of this ListFunctionVersionResult.
-        :type log_stream_id: str
-        """
-        self._log_stream_id = log_stream_id
 
     @property
     def function_async_config(self):
@@ -1085,6 +1059,92 @@ class ListFunctionVersionResult:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def is_stateful_function(self):
+        """Gets the is_stateful_function of this ListFunctionVersionResult.
+
+        是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+
+        :return: The is_stateful_function of this ListFunctionVersionResult.
+        :rtype: bool
+        """
+        return self._is_stateful_function
+
+    @is_stateful_function.setter
+    def is_stateful_function(self, is_stateful_function):
+        """Sets the is_stateful_function of this ListFunctionVersionResult.
+
+        是否支持有状态，如果需要支持，需要固定传参为true，v2版本支持
+
+        :param is_stateful_function: The is_stateful_function of this ListFunctionVersionResult.
+        :type is_stateful_function: bool
+        """
+        self._is_stateful_function = is_stateful_function
+
+    @property
+    def enable_auth_in_header(self):
+        """Gets the enable_auth_in_header of this ListFunctionVersionResult.
+
+        是否允许在请求头中添加鉴权信息
+
+        :return: The enable_auth_in_header of this ListFunctionVersionResult.
+        :rtype: bool
+        """
+        return self._enable_auth_in_header
+
+    @enable_auth_in_header.setter
+    def enable_auth_in_header(self, enable_auth_in_header):
+        """Sets the enable_auth_in_header of this ListFunctionVersionResult.
+
+        是否允许在请求头中添加鉴权信息
+
+        :param enable_auth_in_header: The enable_auth_in_header of this ListFunctionVersionResult.
+        :type enable_auth_in_header: bool
+        """
+        self._enable_auth_in_header = enable_auth_in_header
+
+    @property
+    def custom_image(self):
+        """Gets the custom_image of this ListFunctionVersionResult.
+
+
+        :return: The custom_image of this ListFunctionVersionResult.
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
+        """
+        return self._custom_image
+
+    @custom_image.setter
+    def custom_image(self, custom_image):
+        """Sets the custom_image of this ListFunctionVersionResult.
+
+
+        :param custom_image: The custom_image of this ListFunctionVersionResult.
+        :type custom_image: :class:`huaweicloudsdkfunctiongraph.v2.CustomImage`
+        """
+        self._custom_image = custom_image
+
+    @property
+    def reserved_instance_idle_mode(self):
+        """Gets the reserved_instance_idle_mode of this ListFunctionVersionResult.
+
+        是否开启预留实例闲置模式
+
+        :return: The reserved_instance_idle_mode of this ListFunctionVersionResult.
+        :rtype: bool
+        """
+        return self._reserved_instance_idle_mode
+
+    @reserved_instance_idle_mode.setter
+    def reserved_instance_idle_mode(self, reserved_instance_idle_mode):
+        """Sets the reserved_instance_idle_mode of this ListFunctionVersionResult.
+
+        是否开启预留实例闲置模式
+
+        :param reserved_instance_idle_mode: The reserved_instance_idle_mode of this ListFunctionVersionResult.
+        :type reserved_instance_idle_mode: bool
+        """
+        self._reserved_instance_idle_mode = reserved_instance_idle_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

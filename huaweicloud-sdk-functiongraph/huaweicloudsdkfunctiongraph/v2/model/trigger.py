@@ -41,9 +41,9 @@ class Trigger:
 
         :param trigger_name: 触发器名称
         :type trigger_name: str
-        :param trigger_type: 触发器类型
+        :param trigger_type: 触发器类型 FLOWTIMER：定时触发器 SMN：SMN触发器 APIG：APIG触发器(共享版) APIG_DE：APIG触发器(专享版) OBS：OBS触发器
         :type trigger_type: str
-        :param enabled: 是否启用
+        :param enabled: 是否启用触发器
         :type enabled: bool
         :param trigger_config: 
         :type trigger_config: :class:`huaweicloudsdkfunctiongraph.v2.OBSTriggerConfig`
@@ -90,7 +90,7 @@ class Trigger:
     def trigger_type(self):
         """Gets the trigger_type of this Trigger.
 
-        触发器类型
+        触发器类型 FLOWTIMER：定时触发器 SMN：SMN触发器 APIG：APIG触发器(共享版) APIG_DE：APIG触发器(专享版) OBS：OBS触发器
 
         :return: The trigger_type of this Trigger.
         :rtype: str
@@ -101,7 +101,7 @@ class Trigger:
     def trigger_type(self, trigger_type):
         """Sets the trigger_type of this Trigger.
 
-        触发器类型
+        触发器类型 FLOWTIMER：定时触发器 SMN：SMN触发器 APIG：APIG触发器(共享版) APIG_DE：APIG触发器(专享版) OBS：OBS触发器
 
         :param trigger_type: The trigger_type of this Trigger.
         :type trigger_type: str
@@ -112,7 +112,7 @@ class Trigger:
     def enabled(self):
         """Gets the enabled of this Trigger.
 
-        是否启用
+        是否启用触发器
 
         :return: The enabled of this Trigger.
         :rtype: bool
@@ -123,7 +123,7 @@ class Trigger:
     def enabled(self, enabled):
         """Sets the enabled of this Trigger.
 
-        是否启用
+        是否启用触发器
 
         :param enabled: The enabled of this Trigger.
         :type enabled: bool

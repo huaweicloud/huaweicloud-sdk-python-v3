@@ -41,7 +41,7 @@ class ListStoredValueCardsRequest:
 
         :param status: 状态：1：可使用2：已用完
         :type status: int
-        :param card_id: 储值卡ID。
+        :param card_id: 储值卡ID。此参数不携带或携带值为空时，不作为筛选条件。
         :type card_id: str
         :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
@@ -91,7 +91,7 @@ class ListStoredValueCardsRequest:
     def card_id(self):
         """Gets the card_id of this ListStoredValueCardsRequest.
 
-        储值卡ID。
+        储值卡ID。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The card_id of this ListStoredValueCardsRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class ListStoredValueCardsRequest:
     def card_id(self, card_id):
         """Sets the card_id of this ListStoredValueCardsRequest.
 
-        储值卡ID。
+        储值卡ID。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param card_id: The card_id of this ListStoredValueCardsRequest.
         :type card_id: str

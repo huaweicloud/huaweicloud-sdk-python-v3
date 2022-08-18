@@ -55,9 +55,9 @@ class CreatePartnerCouponsReq:
         :type customer_ids: list[str]
         :param face_value: 代金券面值。 单位：元。取值大于0且精确到小数点后2位。
         :type face_value: float
-        :param valid_time: 生效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :param valid_time: 生效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。 此参数不携带或携带值为null时，赋值为发放优惠券额度的生效时间。
         :type valid_time: str
-        :param expire_time: 失效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。
+        :param expire_time: 失效时间。 UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。 此参数不携带或携带值为null时，赋值为发放优惠券额度的失效时间。
         :type expire_time: str
         :param cloud_service_types: 允许使用的云服务列表，您可以调用查询云服务类型列表接口获取。 多个云服务产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制）  说明： 如果额度上有限制云服务类型列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定云服务类型。
         :type cloud_service_types: list[str]
@@ -168,7 +168,7 @@ class CreatePartnerCouponsReq:
     def valid_time(self):
         """Gets the valid_time of this CreatePartnerCouponsReq.
 
-        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 此参数不携带或携带值为null时，赋值为发放优惠券额度的生效时间。
 
         :return: The valid_time of this CreatePartnerCouponsReq.
         :rtype: str
@@ -179,7 +179,7 @@ class CreatePartnerCouponsReq:
     def valid_time(self, valid_time):
         """Sets the valid_time of this CreatePartnerCouponsReq.
 
-        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
+        生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 此参数不携带或携带值为null时，赋值为发放优惠券额度的生效时间。
 
         :param valid_time: The valid_time of this CreatePartnerCouponsReq.
         :type valid_time: str
@@ -190,7 +190,7 @@ class CreatePartnerCouponsReq:
     def expire_time(self):
         """Gets the expire_time of this CreatePartnerCouponsReq.
 
-        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 此参数不携带或携带值为null时，赋值为发放优惠券额度的失效时间。
 
         :return: The expire_time of this CreatePartnerCouponsReq.
         :rtype: str
@@ -201,7 +201,7 @@ class CreatePartnerCouponsReq:
     def expire_time(self, expire_time):
         """Sets the expire_time of this CreatePartnerCouponsReq.
 
-        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。
+        失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 此参数不携带或携带值为null时，赋值为发放优惠券额度的失效时间。
 
         :param expire_time: The expire_time of this CreatePartnerCouponsReq.
         :type expire_time: str

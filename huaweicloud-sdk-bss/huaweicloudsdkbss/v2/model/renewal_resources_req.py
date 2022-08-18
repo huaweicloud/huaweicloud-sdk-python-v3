@@ -41,7 +41,7 @@ class RenewalResourcesReq:
 
         The model defined in huaweicloud sdk
 
-        :param resource_ids: 资源ID列表。 只支持传入主资源ID，最多100个资源ID。 哪些资源是主资源请根据“查询客户包年/包月资源列表”接口响应参数中的“is_main_resource”来标识。
+        :param resource_ids: 资源ID列表。 只支持传入主资源ID，最多10个资源ID。 哪些资源是主资源请根据“查询客户包年/包月资源列表”接口响应参数中的“is_main_resource”来标识。
         :type resource_ids: list[str]
         :param period_type: 周期类型： 2：月3：年
         :type period_type: int
@@ -49,7 +49,7 @@ class RenewalResourcesReq:
         :type period_num: int
         :param expire_policy: 到期策略： 0：进入宽限期/保留期1：转按需2：自动退订3：自动续订
         :type expire_policy: int
-        :param is_auto_pay: 是否自动支付。 0：否1：是 不填写的话，默认值是0，不自动支付。
+        :param is_auto_pay: 是否自动支付。 0：否1：是 此参数不携带或携带值为null时，默认值为“0：否”，即不自动支付。
         :type is_auto_pay: int
         """
         
@@ -73,7 +73,7 @@ class RenewalResourcesReq:
     def resource_ids(self):
         """Gets the resource_ids of this RenewalResourcesReq.
 
-        资源ID列表。 只支持传入主资源ID，最多100个资源ID。 哪些资源是主资源请根据“查询客户包年/包月资源列表”接口响应参数中的“is_main_resource”来标识。
+        资源ID列表。 只支持传入主资源ID，最多10个资源ID。 哪些资源是主资源请根据“查询客户包年/包月资源列表”接口响应参数中的“is_main_resource”来标识。
 
         :return: The resource_ids of this RenewalResourcesReq.
         :rtype: list[str]
@@ -84,7 +84,7 @@ class RenewalResourcesReq:
     def resource_ids(self, resource_ids):
         """Sets the resource_ids of this RenewalResourcesReq.
 
-        资源ID列表。 只支持传入主资源ID，最多100个资源ID。 哪些资源是主资源请根据“查询客户包年/包月资源列表”接口响应参数中的“is_main_resource”来标识。
+        资源ID列表。 只支持传入主资源ID，最多10个资源ID。 哪些资源是主资源请根据“查询客户包年/包月资源列表”接口响应参数中的“is_main_resource”来标识。
 
         :param resource_ids: The resource_ids of this RenewalResourcesReq.
         :type resource_ids: list[str]
@@ -161,7 +161,7 @@ class RenewalResourcesReq:
     def is_auto_pay(self):
         """Gets the is_auto_pay of this RenewalResourcesReq.
 
-        是否自动支付。 0：否1：是 不填写的话，默认值是0，不自动支付。
+        是否自动支付。 0：否1：是 此参数不携带或携带值为null时，默认值为“0：否”，即不自动支付。
 
         :return: The is_auto_pay of this RenewalResourcesReq.
         :rtype: int
@@ -172,7 +172,7 @@ class RenewalResourcesReq:
     def is_auto_pay(self, is_auto_pay):
         """Sets the is_auto_pay of this RenewalResourcesReq.
 
-        是否自动支付。 0：否1：是 不填写的话，默认值是0，不自动支付。
+        是否自动支付。 0：否1：是 此参数不携带或携带值为null时，默认值为“0：否”，即不自动支付。
 
         :param is_auto_pay: The is_auto_pay of this RenewalResourcesReq.
         :type is_auto_pay: int

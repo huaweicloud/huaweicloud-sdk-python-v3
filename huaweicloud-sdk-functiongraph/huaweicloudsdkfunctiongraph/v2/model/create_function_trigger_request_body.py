@@ -24,7 +24,7 @@ class CreateFunctionTriggerRequestBody:
         'trigger_type_code': 'str',
         'trigger_status': 'str',
         'event_type_code': 'str',
-        'event_data': 'object'
+        'event_data': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class CreateFunctionTriggerRequestBody:
         :param event_type_code: 消息代码。
         :type event_type_code: str
         :param event_data: 事件结构体。
-        :type event_data: object
+        :type event_data: dict(str, str)
         """
         
         
@@ -137,7 +137,7 @@ class CreateFunctionTriggerRequestBody:
         事件结构体。
 
         :return: The event_data of this CreateFunctionTriggerRequestBody.
-        :rtype: object
+        :rtype: dict(str, str)
         """
         return self._event_data
 
@@ -148,7 +148,7 @@ class CreateFunctionTriggerRequestBody:
         事件结构体。
 
         :param event_data: The event_data of this CreateFunctionTriggerRequestBody.
-        :type event_data: object
+        :type event_data: dict(str, str)
         """
         self._event_data = event_data
 

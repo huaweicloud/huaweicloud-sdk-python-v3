@@ -71,23 +71,23 @@ class ListSubCustomerBillDetailRequest:
         :type bill_cycle: str
         :param customer_id: 客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
         :type customer_id: str
-        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
         :type service_type_code: str
-        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
+        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
         :type region_code: str
-        :param charging_mode: 计费模式。不传数据时默认查询所有计费模式下的消费记录。1：包周期3：按需10：预留实例
+        :param charging_mode: 计费模式。1：包周期3：按需10：预留实例此参数不携带或携带值为空时，默认查询所有计费模式下的消费记录；携带值为空串或携带值为null时，作为筛选条件。
         :type charging_mode: int
-        :param bill_detail_type: 账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        :param bill_detail_type: 账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更 此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
         :type bill_detail_type: int
-        :param resource_id: 资源标识。
+        :param resource_id: 资源标识。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
         :type resource_id: str
-        :param resource_name: 资源名称。
+        :param resource_name: 资源名称。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
         :type resource_name: str
-        :param trade_id: 订单ID或交易ID，扣费维度的唯一标识。账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
+        :param trade_id: 订单ID或交易ID，扣费维度的唯一标识。账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID 此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
         :type trade_id: str
-        :param account_manager_id: 客户经理标识。
+        :param account_manager_id: 客户经理标识。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
         :type account_manager_id: str
-        :param association_type: 子客户的关联类型：1：顾问销售2：代售
+        :param association_type: 子客户的关联类型：1：顾问销售2：代售 此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
         :type association_type: str
         :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
@@ -95,9 +95,9 @@ class ListSubCustomerBillDetailRequest:
         :type limit: int
         :param indirect_partner_id: 云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。  说明： 华为云总经销商可以查询名下所有子客户消费（包括云经销商子客户）。如果是普通经销商，那么此处可以为空。如果华为云总经销商需要查询客户在云经销商关联期间的消费，需要携带该字段；除此之外，此参数不做处理。否则只能查询该客户在与自己关联期间的消费。
         :type indirect_partner_id: str
-        :param bill_date_begin: 查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。
+        :param bill_date_begin: 查询的资源消费记录的开始日期，格式为YYYY-MM-DD。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 必须和cycle（即资源的消费账期）在同一个月。
         :type bill_date_begin: str
-        :param bill_date_end: 查询的资源消费记录的结束日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
+        :param bill_date_end: 查询的资源消费记录的结束日期，格式为YYYY-MM-DD。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
         :type bill_date_end: str
         """
         
@@ -225,7 +225,7 @@ class ListSubCustomerBillDetailRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListSubCustomerBillDetailRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :return: The service_type_code of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -236,7 +236,7 @@ class ListSubCustomerBillDetailRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListSubCustomerBillDetailRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :param service_type_code: The service_type_code of this ListSubCustomerBillDetailRequest.
         :type service_type_code: str
@@ -247,7 +247,7 @@ class ListSubCustomerBillDetailRequest:
     def region_code(self):
         """Gets the region_code of this ListSubCustomerBillDetailRequest.
 
-        云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
+        云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :return: The region_code of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -258,7 +258,7 @@ class ListSubCustomerBillDetailRequest:
     def region_code(self, region_code):
         """Sets the region_code of this ListSubCustomerBillDetailRequest.
 
-        云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
+        云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :param region_code: The region_code of this ListSubCustomerBillDetailRequest.
         :type region_code: str
@@ -269,7 +269,7 @@ class ListSubCustomerBillDetailRequest:
     def charging_mode(self):
         """Gets the charging_mode of this ListSubCustomerBillDetailRequest.
 
-        计费模式。不传数据时默认查询所有计费模式下的消费记录。1：包周期3：按需10：预留实例
+        计费模式。1：包周期3：按需10：预留实例此参数不携带或携带值为空时，默认查询所有计费模式下的消费记录；携带值为空串或携带值为null时，作为筛选条件。
 
         :return: The charging_mode of this ListSubCustomerBillDetailRequest.
         :rtype: int
@@ -280,7 +280,7 @@ class ListSubCustomerBillDetailRequest:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ListSubCustomerBillDetailRequest.
 
-        计费模式。不传数据时默认查询所有计费模式下的消费记录。1：包周期3：按需10：预留实例
+        计费模式。1：包周期3：按需10：预留实例此参数不携带或携带值为空时，默认查询所有计费模式下的消费记录；携带值为空串或携带值为null时，作为筛选条件。
 
         :param charging_mode: The charging_mode of this ListSubCustomerBillDetailRequest.
         :type charging_mode: int
@@ -291,7 +291,7 @@ class ListSubCustomerBillDetailRequest:
     def bill_detail_type(self):
         """Gets the bill_detail_type of this ListSubCustomerBillDetailRequest.
 
-        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更 此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :return: The bill_detail_type of this ListSubCustomerBillDetailRequest.
         :rtype: int
@@ -302,7 +302,7 @@ class ListSubCustomerBillDetailRequest:
     def bill_detail_type(self, bill_detail_type):
         """Sets the bill_detail_type of this ListSubCustomerBillDetailRequest.
 
-        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更 此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :param bill_detail_type: The bill_detail_type of this ListSubCustomerBillDetailRequest.
         :type bill_detail_type: int
@@ -313,7 +313,7 @@ class ListSubCustomerBillDetailRequest:
     def resource_id(self):
         """Gets the resource_id of this ListSubCustomerBillDetailRequest.
 
-        资源标识。
+        资源标识。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :return: The resource_id of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -324,7 +324,7 @@ class ListSubCustomerBillDetailRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListSubCustomerBillDetailRequest.
 
-        资源标识。
+        资源标识。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :param resource_id: The resource_id of this ListSubCustomerBillDetailRequest.
         :type resource_id: str
@@ -335,7 +335,7 @@ class ListSubCustomerBillDetailRequest:
     def resource_name(self):
         """Gets the resource_name of this ListSubCustomerBillDetailRequest.
 
-        资源名称。
+        资源名称。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :return: The resource_name of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -346,7 +346,7 @@ class ListSubCustomerBillDetailRequest:
     def resource_name(self, resource_name):
         """Sets the resource_name of this ListSubCustomerBillDetailRequest.
 
-        资源名称。
+        资源名称。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :param resource_name: The resource_name of this ListSubCustomerBillDetailRequest.
         :type resource_name: str
@@ -357,7 +357,7 @@ class ListSubCustomerBillDetailRequest:
     def trade_id(self):
         """Gets the trade_id of this ListSubCustomerBillDetailRequest.
 
-        订单ID或交易ID，扣费维度的唯一标识。账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
+        订单ID或交易ID，扣费维度的唯一标识。账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID 此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :return: The trade_id of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -368,7 +368,7 @@ class ListSubCustomerBillDetailRequest:
     def trade_id(self, trade_id):
         """Sets the trade_id of this ListSubCustomerBillDetailRequest.
 
-        订单ID或交易ID，扣费维度的唯一标识。账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID
+        订单ID或交易ID，扣费维度的唯一标识。账单类型为1，2，3，4，8时为订单ID。其它场景下为交易ID。非月末扣费：应收ID月末扣费：账单ID 此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :param trade_id: The trade_id of this ListSubCustomerBillDetailRequest.
         :type trade_id: str
@@ -379,7 +379,7 @@ class ListSubCustomerBillDetailRequest:
     def account_manager_id(self):
         """Gets the account_manager_id of this ListSubCustomerBillDetailRequest.
 
-        客户经理标识。
+        客户经理标识。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :return: The account_manager_id of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -390,7 +390,7 @@ class ListSubCustomerBillDetailRequest:
     def account_manager_id(self, account_manager_id):
         """Sets the account_manager_id of this ListSubCustomerBillDetailRequest.
 
-        客户经理标识。
+        客户经理标识。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :param account_manager_id: The account_manager_id of this ListSubCustomerBillDetailRequest.
         :type account_manager_id: str
@@ -401,7 +401,7 @@ class ListSubCustomerBillDetailRequest:
     def association_type(self):
         """Gets the association_type of this ListSubCustomerBillDetailRequest.
 
-        子客户的关联类型：1：顾问销售2：代售
+        子客户的关联类型：1：顾问销售2：代售 此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :return: The association_type of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -412,7 +412,7 @@ class ListSubCustomerBillDetailRequest:
     def association_type(self, association_type):
         """Sets the association_type of this ListSubCustomerBillDetailRequest.
 
-        子客户的关联类型：1：顾问销售2：代售
+        子客户的关联类型：1：顾问销售2：代售 此参数不携带或携带值为空时，不作为筛选条件；携带值为空串或携带值为null时，作为筛选条件。
 
         :param association_type: The association_type of this ListSubCustomerBillDetailRequest.
         :type association_type: str
@@ -489,7 +489,7 @@ class ListSubCustomerBillDetailRequest:
     def bill_date_begin(self):
         """Gets the bill_date_begin of this ListSubCustomerBillDetailRequest.
 
-        查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。
+        查询的资源消费记录的开始日期，格式为YYYY-MM-DD。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 必须和cycle（即资源的消费账期）在同一个月。
 
         :return: The bill_date_begin of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -500,7 +500,7 @@ class ListSubCustomerBillDetailRequest:
     def bill_date_begin(self, bill_date_begin):
         """Sets the bill_date_begin of this ListSubCustomerBillDetailRequest.
 
-        查询的资源消费记录的开始日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。
+        查询的资源消费记录的开始日期，格式为YYYY-MM-DD。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 必须和cycle（即资源的消费账期）在同一个月。
 
         :param bill_date_begin: The bill_date_begin of this ListSubCustomerBillDetailRequest.
         :type bill_date_begin: str
@@ -511,7 +511,7 @@ class ListSubCustomerBillDetailRequest:
     def bill_date_end(self):
         """Gets the bill_date_end of this ListSubCustomerBillDetailRequest.
 
-        查询的资源消费记录的结束日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
+        查询的资源消费记录的结束日期，格式为YYYY-MM-DD。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
         :return: The bill_date_end of this ListSubCustomerBillDetailRequest.
         :rtype: str
@@ -522,7 +522,7 @@ class ListSubCustomerBillDetailRequest:
     def bill_date_end(self, bill_date_end):
         """Sets the bill_date_end of this ListSubCustomerBillDetailRequest.
 
-        查询的资源消费记录的结束日期，格式为YYYY-MM-DD。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
+        查询的资源消费记录的结束日期，格式为YYYY-MM-DD。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 必须和cycle（即资源的消费账期）在同一个月。bill_date_begin和bill_date_end两个参数必须同时出现，否则仅按照cycle（即资源的消费账期）进行查询。
 
         :param bill_date_end: The bill_date_end of this ListSubCustomerBillDetailRequest.
         :type bill_date_end: str

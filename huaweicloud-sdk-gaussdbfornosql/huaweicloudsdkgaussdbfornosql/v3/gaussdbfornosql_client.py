@@ -168,6 +168,67 @@ class GaussDBforNoSQLClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def check_disaster_recovery_operation(self, request):
+        """校验实例是否可以与指定实例建立/解除容灾关系
+
+        校验实例是否可以与指定实例建立/解除容灾关系。若接口返回成功，表示可以与指定实例建立/解除容灾关系。
+        该接口需要对建立/解除容灾关系的两个实例各调用一次，2次调用都响应成功才能进行容灾关系的搭建/解除。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CheckDisasterRecoveryOperation
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CheckDisasterRecoveryOperationRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CheckDisasterRecoveryOperationResponse`
+        """
+        return self.check_disaster_recovery_operation_with_http_info(request)
+
+    def check_disaster_recovery_operation_with_http_info(self, request):
+        all_params = ['instance_id', 'precheck_disaster_recovery_operation_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/disaster-recovery/precheck',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CheckDisasterRecoveryOperationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_configuration(self, request):
         """创建参数模板
 
@@ -221,6 +282,66 @@ class GaussDBforNoSQLClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateConfigurationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_disaster_recovery(self, request):
+        """搭建实例与特定实例的容灾关系
+
+        搭建实例与特定实例的容灾关系。 该接口需要对搭建容灾关系的两个实例分别各调用一次，2次接口都调用成功才能成功搭建容灾关系。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateDisasterRecovery
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateDisasterRecoveryRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateDisasterRecoveryResponse`
+        """
+        return self.create_disaster_recovery_with_http_info(request)
+
+    def create_disaster_recovery_with_http_info(self, request):
+        all_params = ['instance_id', 'construct_disaster_recovery_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/disaster-recovery/construction',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateDisasterRecoveryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -337,6 +458,64 @@ class GaussDBforNoSQLClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteConfigurationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_disaster_recovery(self, request):
+        """解除实例与特定实例的容灾关系
+
+        解除实例与特定实例的容灾关系。 该接口需要对搭建容灾关系的两个实例分别各调用一次，2次接口都调用成功才能成功解除容灾关系。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteDisasterRecovery
+        :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteDisasterRecoveryRequest`
+        :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteDisasterRecoveryResponse`
+        """
+        return self.delete_disaster_recovery_with_http_info(request)
+
+    def delete_disaster_recovery_with_http_info(self, request):
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/disaster-recovery/deconstruction',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteDisasterRecoveryResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -35,9 +35,9 @@ class ListEnterpriseOrganizationsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param recursive_query: 是否递归查询。0：不递归（默认）1：递归如果不递归，只返回起始节点的直接子节点。
+        :param recursive_query: 是否递归查询。0：不递归（默认）1：递归如果不递归，只返回起始节点的直接子节点。此参数不携带或携带值为空时，不作为筛选条件。
         :type recursive_query: int
-        :param parent_id: 指定的节点ID。为空则从根节点查起。
+        :param parent_id: 指定的节点ID。为空则从根节点查起。此参数不携带或携带值为空时，不作为筛选条件。 说明： 此参数须由纯数字组成。
         :type parent_id: str
         """
         
@@ -56,7 +56,7 @@ class ListEnterpriseOrganizationsRequest:
     def recursive_query(self):
         """Gets the recursive_query of this ListEnterpriseOrganizationsRequest.
 
-        是否递归查询。0：不递归（默认）1：递归如果不递归，只返回起始节点的直接子节点。
+        是否递归查询。0：不递归（默认）1：递归如果不递归，只返回起始节点的直接子节点。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The recursive_query of this ListEnterpriseOrganizationsRequest.
         :rtype: int
@@ -67,7 +67,7 @@ class ListEnterpriseOrganizationsRequest:
     def recursive_query(self, recursive_query):
         """Sets the recursive_query of this ListEnterpriseOrganizationsRequest.
 
-        是否递归查询。0：不递归（默认）1：递归如果不递归，只返回起始节点的直接子节点。
+        是否递归查询。0：不递归（默认）1：递归如果不递归，只返回起始节点的直接子节点。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param recursive_query: The recursive_query of this ListEnterpriseOrganizationsRequest.
         :type recursive_query: int
@@ -78,7 +78,7 @@ class ListEnterpriseOrganizationsRequest:
     def parent_id(self):
         """Gets the parent_id of this ListEnterpriseOrganizationsRequest.
 
-        指定的节点ID。为空则从根节点查起。
+        指定的节点ID。为空则从根节点查起。此参数不携带或携带值为空时，不作为筛选条件。 说明： 此参数须由纯数字组成。
 
         :return: The parent_id of this ListEnterpriseOrganizationsRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class ListEnterpriseOrganizationsRequest:
     def parent_id(self, parent_id):
         """Sets the parent_id of this ListEnterpriseOrganizationsRequest.
 
-        指定的节点ID。为空则从根节点查起。
+        指定的节点ID。为空则从根节点查起。此参数不携带或携带值为空时，不作为筛选条件。 说明： 此参数须由纯数字组成。
 
         :param parent_id: The parent_id of this ListEnterpriseOrganizationsRequest.
         :type parent_id: str

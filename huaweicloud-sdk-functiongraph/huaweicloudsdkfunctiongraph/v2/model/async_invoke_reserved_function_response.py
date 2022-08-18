@@ -21,29 +21,36 @@ class AsyncInvokeReservedFunctionResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'instance_id': 'str'
+        'instance_id': 'str',
+        'content_type': 'str'
     }
 
     attribute_map = {
-        'instance_id': 'instance_id'
+        'instance_id': 'instance_id',
+        'content_type': 'Content-Type'
     }
 
-    def __init__(self, instance_id=None):
+    def __init__(self, instance_id=None, content_type=None):
         """AsyncInvokeReservedFunctionResponse
 
         The model defined in huaweicloud sdk
 
         :param instance_id: 预留实例id
         :type instance_id: str
+        :param content_type: 
+        :type content_type: str
         """
         
         super(AsyncInvokeReservedFunctionResponse, self).__init__()
 
         self._instance_id = None
+        self._content_type = None
         self.discriminator = None
 
         if instance_id is not None:
             self.instance_id = instance_id
+        if content_type is not None:
+            self.content_type = content_type
 
     @property
     def instance_id(self):
@@ -66,6 +73,26 @@ class AsyncInvokeReservedFunctionResponse(SdkResponse):
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def content_type(self):
+        """Gets the content_type of this AsyncInvokeReservedFunctionResponse.
+
+
+        :return: The content_type of this AsyncInvokeReservedFunctionResponse.
+        :rtype: str
+        """
+        return self._content_type
+
+    @content_type.setter
+    def content_type(self, content_type):
+        """Sets the content_type of this AsyncInvokeReservedFunctionResponse.
+
+
+        :param content_type: The content_type of this AsyncInvokeReservedFunctionResponse.
+        :type content_type: str
+        """
+        self._content_type = content_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

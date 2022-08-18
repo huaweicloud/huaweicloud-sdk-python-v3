@@ -28,7 +28,7 @@ class ShowWorkFlowResponse(SdkResponse):
         'created_by': 'str',
         'lts_group_id': 'str',
         'lts_stream_id': 'str',
-        'definition': 'CreateWorkflowRequestBody'
+        'definition': 'WorkflowCreateBody'
     }
 
     attribute_map = {
@@ -49,7 +49,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
         :param id: 唯一标识ID，流程定义ID
         :type id: str
-        :param workflow_urn: 唯一标识ID，流程URN
+        :param workflow_urn: 函数工作流URN, 格式为： urn:fss:&lt;region_id&gt;:&lt;project_id&gt;:workflow:\\&lt;package\\&gt;:&lt;workflow_name&gt;:\\&lt;version\\&gt; 注意： package当前只支持default version当前只支持latest
         :type workflow_urn: str
         :param created_time: 流程创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
         :type created_time: str
@@ -62,7 +62,7 @@ class ShowWorkFlowResponse(SdkResponse):
         :param lts_stream_id: 快速函数流日志流ID，仅快速模式函数流且日志级别不为NONE时返回。
         :type lts_stream_id: str
         :param definition: 
-        :type definition: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequestBody`
+        :type definition: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`
         """
         
         super(ShowWorkFlowResponse, self).__init__()
@@ -120,7 +120,7 @@ class ShowWorkFlowResponse(SdkResponse):
     def workflow_urn(self):
         """Gets the workflow_urn of this ShowWorkFlowResponse.
 
-        唯一标识ID，流程URN
+        函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
         :return: The workflow_urn of this ShowWorkFlowResponse.
         :rtype: str
@@ -131,7 +131,7 @@ class ShowWorkFlowResponse(SdkResponse):
     def workflow_urn(self, workflow_urn):
         """Sets the workflow_urn of this ShowWorkFlowResponse.
 
-        唯一标识ID，流程URN
+        函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
         :param workflow_urn: The workflow_urn of this ShowWorkFlowResponse.
         :type workflow_urn: str
@@ -254,7 +254,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
 
         :return: The definition of this ShowWorkFlowResponse.
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequestBody`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`
         """
         return self._definition
 
@@ -264,7 +264,7 @@ class ShowWorkFlowResponse(SdkResponse):
 
 
         :param definition: The definition of this ShowWorkFlowResponse.
-        :type definition: :class:`huaweicloudsdkfunctiongraph.v2.CreateWorkflowRequestBody`
+        :type definition: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`
         """
         self._definition = definition
 

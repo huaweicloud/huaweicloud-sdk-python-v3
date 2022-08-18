@@ -123,9 +123,9 @@ class NvlCostAnalysedBillDetail:
 
         The model defined in huaweicloud sdk
 
-        :param shared_month: 查询分摊成本的月份。 格式为YYYY-MM，按照东八区截取。
+        :param shared_month: 查询分摊成本的月份。 格式为YYYY-MM，按照东八区时间截取。
         :type shared_month: str
-        :param bill_cycle: 账期。 格式：YYYY-MM。按照东八区截取。
+        :param bill_cycle: 账期。 格式：YYYY-MM。按照东八区时间截取。
         :type bill_cycle: str
         :param bill_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
         :type bill_type: int
@@ -364,7 +364,7 @@ class NvlCostAnalysedBillDetail:
     def shared_month(self):
         """Gets the shared_month of this NvlCostAnalysedBillDetail.
 
-        查询分摊成本的月份。 格式为YYYY-MM，按照东八区截取。
+        查询分摊成本的月份。 格式为YYYY-MM，按照东八区时间截取。
 
         :return: The shared_month of this NvlCostAnalysedBillDetail.
         :rtype: str
@@ -375,7 +375,7 @@ class NvlCostAnalysedBillDetail:
     def shared_month(self, shared_month):
         """Sets the shared_month of this NvlCostAnalysedBillDetail.
 
-        查询分摊成本的月份。 格式为YYYY-MM，按照东八区截取。
+        查询分摊成本的月份。 格式为YYYY-MM，按照东八区时间截取。
 
         :param shared_month: The shared_month of this NvlCostAnalysedBillDetail.
         :type shared_month: str
@@ -386,7 +386,7 @@ class NvlCostAnalysedBillDetail:
     def bill_cycle(self):
         """Gets the bill_cycle of this NvlCostAnalysedBillDetail.
 
-        账期。 格式：YYYY-MM。按照东八区截取。
+        账期。 格式：YYYY-MM。按照东八区时间截取。
 
         :return: The bill_cycle of this NvlCostAnalysedBillDetail.
         :rtype: str
@@ -397,7 +397,7 @@ class NvlCostAnalysedBillDetail:
     def bill_cycle(self, bill_cycle):
         """Sets the bill_cycle of this NvlCostAnalysedBillDetail.
 
-        账期。 格式：YYYY-MM。按照东八区截取。
+        账期。 格式：YYYY-MM。按照东八区时间截取。
 
         :param bill_cycle: The bill_cycle of this NvlCostAnalysedBillDetail.
         :type bill_cycle: str

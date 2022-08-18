@@ -51,7 +51,7 @@ class ListSubcustomerMonthlyBillsRequest:
         :type customer_id: str
         :param cycle: 消费时间。格式固定为YYYY-MM。示例：2018-08
         :type cycle: str
-        :param cloud_service_type: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。
+        :param cloud_service_type: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件。
         :type cloud_service_type: str
         :param charge_mode: 计费模式。1：包年/包月3：按需
         :type charge_mode: str
@@ -59,7 +59,7 @@ class ListSubcustomerMonthlyBillsRequest:
         :type offset: int
         :param limit: 每页个数。默认值为10。
         :type limit: int
-        :param bill_type: 账单类型。0：消费1：退订2：华为核销
+        :param bill_type: 账单类型。0：消费1：退订2：华为核销 此参数不携带或携带值为空时，不作为筛选条件。
         :type bill_type: str
         :param indirect_partner_id: 云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。如果需要查询云经销商伙伴的子客户的消费汇总账单，必须携带该字段。除此之外，此参数不做处理。
         :type indirect_partner_id: str
@@ -140,7 +140,7 @@ class ListSubcustomerMonthlyBillsRequest:
     def cloud_service_type(self):
         """Gets the cloud_service_type of this ListSubcustomerMonthlyBillsRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The cloud_service_type of this ListSubcustomerMonthlyBillsRequest.
         :rtype: str
@@ -151,7 +151,7 @@ class ListSubcustomerMonthlyBillsRequest:
     def cloud_service_type(self, cloud_service_type):
         """Sets the cloud_service_type of this ListSubcustomerMonthlyBillsRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0000001256679455.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param cloud_service_type: The cloud_service_type of this ListSubcustomerMonthlyBillsRequest.
         :type cloud_service_type: str
@@ -228,7 +228,7 @@ class ListSubcustomerMonthlyBillsRequest:
     def bill_type(self):
         """Gets the bill_type of this ListSubcustomerMonthlyBillsRequest.
 
-        账单类型。0：消费1：退订2：华为核销
+        账单类型。0：消费1：退订2：华为核销 此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The bill_type of this ListSubcustomerMonthlyBillsRequest.
         :rtype: str
@@ -239,7 +239,7 @@ class ListSubcustomerMonthlyBillsRequest:
     def bill_type(self, bill_type):
         """Sets the bill_type of this ListSubcustomerMonthlyBillsRequest.
 
-        账单类型。0：消费1：退订2：华为核销
+        账单类型。0：消费1：退订2：华为核销 此参数不携带或携带值为空时，不作为筛选条件。
 
         :param bill_type: The bill_type of this ListSubcustomerMonthlyBillsRequest.
         :type bill_type: str

@@ -21,28 +21,35 @@ class ShowSubCustomerBudgetRequest:
     sensitive_list = []
 
     openapi_types = {
-        'customer_id': 'str'
+        'customer_id': 'str',
+        'indirect_partner_id': 'str'
     }
 
     attribute_map = {
-        'customer_id': 'customer_id'
+        'customer_id': 'customer_id',
+        'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, customer_id=None):
+    def __init__(self, customer_id=None, indirect_partner_id=None):
         """ShowSubCustomerBudgetRequest
 
         The model defined in huaweicloud sdk
 
         :param customer_id: 客户账号ID。您可以调用查询客户列表接口获取customer_id。
         :type customer_id: str
+        :param indirect_partner_id: 云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
+        :type indirect_partner_id: str
         """
         
         
 
         self._customer_id = None
+        self._indirect_partner_id = None
         self.discriminator = None
 
         self.customer_id = customer_id
+        if indirect_partner_id is not None:
+            self.indirect_partner_id = indirect_partner_id
 
     @property
     def customer_id(self):
@@ -65,6 +72,28 @@ class ShowSubCustomerBudgetRequest:
         :type customer_id: str
         """
         self._customer_id = customer_id
+
+    @property
+    def indirect_partner_id(self):
+        """Gets the indirect_partner_id of this ShowSubCustomerBudgetRequest.
+
+        云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
+
+        :return: The indirect_partner_id of this ShowSubCustomerBudgetRequest.
+        :rtype: str
+        """
+        return self._indirect_partner_id
+
+    @indirect_partner_id.setter
+    def indirect_partner_id(self, indirect_partner_id):
+        """Sets the indirect_partner_id of this ShowSubCustomerBudgetRequest.
+
+        云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
+
+        :param indirect_partner_id: The indirect_partner_id of this ShowSubCustomerBudgetRequest.
+        :type indirect_partner_id: str
+        """
+        self._indirect_partner_id = indirect_partner_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

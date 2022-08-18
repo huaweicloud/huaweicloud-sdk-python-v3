@@ -54,7 +54,8 @@ class ListFunctionResult:
         'long_time': 'bool',
         'log_group_id': 'str',
         'log_stream_id': 'str',
-        'type': 'str'
+        'type': 'str',
+        'fail_count': 'int'
     }
 
     attribute_map = {
@@ -91,10 +92,11 @@ class ListFunctionResult:
         'long_time': 'long_time',
         'log_group_id': 'log_group_id',
         'log_stream_id': 'log_stream_id',
-        'type': 'type'
+        'type': 'type',
+        'fail_count': 'fail_count'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc_id=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None):
+    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc_id=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, fail_count=None):
         """ListFunctionResult
 
         The model defined in huaweicloud sdk
@@ -167,6 +169,8 @@ class ListFunctionResult:
         :type log_stream_id: str
         :param type: v2表示为公测版本,v1为原来版本。
         :type type: str
+        :param fail_count: 函数最近1天内执行失败的次数。
+        :type fail_count: int
         """
         
         
@@ -205,6 +209,7 @@ class ListFunctionResult:
         self._log_group_id = None
         self._log_stream_id = None
         self._type = None
+        self._fail_count = None
         self.discriminator = None
 
         self.func_urn = func_urn
@@ -258,6 +263,8 @@ class ListFunctionResult:
             self.log_stream_id = log_stream_id
         if type is not None:
             self.type = type
+        if fail_count is not None:
+            self.fail_count = fail_count
 
     @property
     def func_urn(self):
@@ -1004,6 +1011,28 @@ class ListFunctionResult:
         :type type: str
         """
         self._type = type
+
+    @property
+    def fail_count(self):
+        """Gets the fail_count of this ListFunctionResult.
+
+        函数最近1天内执行失败的次数。
+
+        :return: The fail_count of this ListFunctionResult.
+        :rtype: int
+        """
+        return self._fail_count
+
+    @fail_count.setter
+    def fail_count(self, fail_count):
+        """Sets the fail_count of this ListFunctionResult.
+
+        函数最近1天内执行失败的次数。
+
+        :param fail_count: The fail_count of this ListFunctionResult.
+        :type fail_count: int
+        """
+        self._fail_count = fail_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

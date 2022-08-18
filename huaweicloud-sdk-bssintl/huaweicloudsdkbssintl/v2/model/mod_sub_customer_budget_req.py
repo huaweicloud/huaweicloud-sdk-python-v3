@@ -23,16 +23,18 @@ class ModSubCustomerBudgetReq:
     openapi_types = {
         'customer_id': 'str',
         'budget_amount': 'float',
-        'cancel_partner_frozen': 'str'
+        'cancel_partner_frozen': 'str',
+        'indirect_partner_id': 'str'
     }
 
     attribute_map = {
         'customer_id': 'customer_id',
         'budget_amount': 'budget_amount',
-        'cancel_partner_frozen': 'cancel_partner_frozen'
+        'cancel_partner_frozen': 'cancel_partner_frozen',
+        'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, customer_id=None, budget_amount=None, cancel_partner_frozen=None):
+    def __init__(self, customer_id=None, budget_amount=None, cancel_partner_frozen=None, indirect_partner_id=None):
         """ModSubCustomerBudgetReq
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class ModSubCustomerBudgetReq:
         :type budget_amount: float
         :param cancel_partner_frozen: 是否在设置客户预算的同时解除账号冻结： 0：否1：是 默认值为0。
         :type cancel_partner_frozen: str
+        :param indirect_partner_id: 云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
+        :type indirect_partner_id: str
         """
         
         
@@ -50,12 +54,15 @@ class ModSubCustomerBudgetReq:
         self._customer_id = None
         self._budget_amount = None
         self._cancel_partner_frozen = None
+        self._indirect_partner_id = None
         self.discriminator = None
 
         self.customer_id = customer_id
         self.budget_amount = budget_amount
         if cancel_partner_frozen is not None:
             self.cancel_partner_frozen = cancel_partner_frozen
+        if indirect_partner_id is not None:
+            self.indirect_partner_id = indirect_partner_id
 
     @property
     def customer_id(self):
@@ -122,6 +129,28 @@ class ModSubCustomerBudgetReq:
         :type cancel_partner_frozen: str
         """
         self._cancel_partner_frozen = cancel_partner_frozen
+
+    @property
+    def indirect_partner_id(self):
+        """Gets the indirect_partner_id of this ModSubCustomerBudgetReq.
+
+        云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
+
+        :return: The indirect_partner_id of this ModSubCustomerBudgetReq.
+        :rtype: str
+        """
+        return self._indirect_partner_id
+
+    @indirect_partner_id.setter
+    def indirect_partner_id(self, indirect_partner_id):
+        """Sets the indirect_partner_id of this ModSubCustomerBudgetReq.
+
+        云经销商ID。获取方法请参见查询云经销商列表。如果需要查询云经销商的子客户列表，必须携带该字段。除此之外，此参数不做处理。
+
+        :param indirect_partner_id: The indirect_partner_id of this ModSubCustomerBudgetReq.
+        :type indirect_partner_id: str
+        """
+        self._indirect_partner_id = indirect_partner_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

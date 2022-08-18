@@ -37,11 +37,11 @@ class ListStatisticsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param filter: 参数过滤器。
+        :param filter: 参数过滤器。 monitor_data: 查询统计信息。 monthly_report：查询月度统计信息。
         :type filter: str
-        :param period: 时间段单位为分钟，与filter参数配合使用。
+        :param period: 时间段单位为分钟，与filter参数metric配合使用。
         :type period: str
-        :param option: 月度统计的维度，filter参数取值为monthly_report时才生效。 - \&quot;0\&quot;:表示统计本月。 - \&quot;1\&quot;:表示统计上月。 - \&quot;2\&quot;:表示统计最近三个月。 - \&quot;3\&quot;:表示统计最近六个月。 - 当取值不在以上范围时，默认取\&quot;0”。
+        :param option: 月度统计的维度，filter参数取值为monthly_report时才生效。 当取值不在以上范围时，默认取\&quot;0\&quot;。 - \&quot;0\&quot;: 表示统计本月。 - \&quot;1\&quot;: 表示统计上月。 - \&quot;2\&quot;: 表示统计最近三个月。 - \&quot;3\&quot;: 表示统计最近六个月。
         :type option: str
         """
         
@@ -62,7 +62,7 @@ class ListStatisticsRequest:
     def filter(self):
         """Gets the filter of this ListStatisticsRequest.
 
-        参数过滤器。
+        参数过滤器。 monitor_data: 查询统计信息。 monthly_report：查询月度统计信息。
 
         :return: The filter of this ListStatisticsRequest.
         :rtype: str
@@ -73,7 +73,7 @@ class ListStatisticsRequest:
     def filter(self, filter):
         """Sets the filter of this ListStatisticsRequest.
 
-        参数过滤器。
+        参数过滤器。 monitor_data: 查询统计信息。 monthly_report：查询月度统计信息。
 
         :param filter: The filter of this ListStatisticsRequest.
         :type filter: str
@@ -84,7 +84,7 @@ class ListStatisticsRequest:
     def period(self):
         """Gets the period of this ListStatisticsRequest.
 
-        时间段单位为分钟，与filter参数配合使用。
+        时间段单位为分钟，与filter参数metric配合使用。
 
         :return: The period of this ListStatisticsRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class ListStatisticsRequest:
     def period(self, period):
         """Sets the period of this ListStatisticsRequest.
 
-        时间段单位为分钟，与filter参数配合使用。
+        时间段单位为分钟，与filter参数metric配合使用。
 
         :param period: The period of this ListStatisticsRequest.
         :type period: str
@@ -106,7 +106,7 @@ class ListStatisticsRequest:
     def option(self):
         """Gets the option of this ListStatisticsRequest.
 
-        月度统计的维度，filter参数取值为monthly_report时才生效。 - \"0\":表示统计本月。 - \"1\":表示统计上月。 - \"2\":表示统计最近三个月。 - \"3\":表示统计最近六个月。 - 当取值不在以上范围时，默认取\"0”。
+        月度统计的维度，filter参数取值为monthly_report时才生效。 当取值不在以上范围时，默认取\"0\"。 - \"0\": 表示统计本月。 - \"1\": 表示统计上月。 - \"2\": 表示统计最近三个月。 - \"3\": 表示统计最近六个月。
 
         :return: The option of this ListStatisticsRequest.
         :rtype: str
@@ -117,7 +117,7 @@ class ListStatisticsRequest:
     def option(self, option):
         """Sets the option of this ListStatisticsRequest.
 
-        月度统计的维度，filter参数取值为monthly_report时才生效。 - \"0\":表示统计本月。 - \"1\":表示统计上月。 - \"2\":表示统计最近三个月。 - \"3\":表示统计最近六个月。 - 当取值不在以上范围时，默认取\"0”。
+        月度统计的维度，filter参数取值为monthly_report时才生效。 当取值不在以上范围时，默认取\"0\"。 - \"0\": 表示统计本月。 - \"1\": 表示统计上月。 - \"2\": 表示统计最近三个月。 - \"3\": 表示统计最近六个月。
 
         :param option: The option of this ListStatisticsRequest.
         :type option: str

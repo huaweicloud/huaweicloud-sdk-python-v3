@@ -1950,6 +1950,64 @@ class EcsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_servers_by_tag(self, request):
+        """按标签查询云服务器列表
+
+        使用标签过滤弹性云服务器，并返回云服务器使用的所有标签和资源列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListServersByTag
+        :type request: :class:`huaweicloudsdkecs.v2.ListServersByTagRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.ListServersByTagResponse`
+        """
+        return self.list_servers_by_tag_with_http_info(request)
+
+    def list_servers_by_tag_with_http_info(self, request):
+        all_params = ['list_servers_by_tag_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/resource_instances/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListServersByTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_servers_details(self, request):
         """查询云服务器详情列表
 

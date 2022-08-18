@@ -30,7 +30,8 @@ class ProjectTemplates:
         'region': 'str',
         'source': 'SourceStorage',
         'tags': 'list[str]',
-        'template_id': 'int'
+        'template_id': 'int',
+        'arch': 'str'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class ProjectTemplates:
         'region': 'region',
         'source': 'source',
         'tags': 'tags',
-        'template_id': 'template_id'
+        'template_id': 'template_id',
+        'arch': 'arch'
     }
 
-    def __init__(self, description=None, display_name=None, logo=None, name=None, path=None, project_type=None, region=None, source=None, tags=None, template_id=None):
+    def __init__(self, description=None, display_name=None, logo=None, name=None, path=None, project_type=None, region=None, source=None, tags=None, template_id=None, arch=None):
         """ProjectTemplates
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class ProjectTemplates:
         :type tags: list[str]
         :param template_id: 模板id
         :type template_id: int
+        :param arch: cpu架构
+        :type arch: str
         """
         
         
@@ -85,6 +89,7 @@ class ProjectTemplates:
         self._source = None
         self._tags = None
         self._template_id = None
+        self._arch = None
         self.discriminator = None
 
         if description is not None:
@@ -107,6 +112,8 @@ class ProjectTemplates:
             self.tags = tags
         if template_id is not None:
             self.template_id = template_id
+        if arch is not None:
+            self.arch = arch
 
     @property
     def description(self):
@@ -325,6 +332,28 @@ class ProjectTemplates:
         :type template_id: int
         """
         self._template_id = template_id
+
+    @property
+    def arch(self):
+        """Gets the arch of this ProjectTemplates.
+
+        cpu架构
+
+        :return: The arch of this ProjectTemplates.
+        :rtype: str
+        """
+        return self._arch
+
+    @arch.setter
+    def arch(self, arch):
+        """Sets the arch of this ProjectTemplates.
+
+        cpu架构
+
+        :param arch: The arch of this ProjectTemplates.
+        :type arch: str
+        """
+        self._arch = arch
 
     def to_dict(self):
         """Returns the model properties as a dict"""

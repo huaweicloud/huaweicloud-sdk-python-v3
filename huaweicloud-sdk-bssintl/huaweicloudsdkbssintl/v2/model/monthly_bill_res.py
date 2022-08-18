@@ -91,9 +91,9 @@ class MonthlyBillRes:
 
         The model defined in huaweicloud sdk
 
-        :param cycle: 资源详单数据所在账期，格式为YYYY-MM。 例如2020-01。
+        :param cycle: 资源详单数据所在账期，东八区时间，格式为YYYY-MM。 例如2020-01。
         :type cycle: str
-        :param bill_date: 消费日期，格式为YYYY-MM-DD。  说明： 当statistic_type&#x3D;2时该字段才有值，否则返回null。
+        :param bill_date: 消费日期，东八区时间，格式为YYYY-MM-DD。  说明： 当statistic_type&#x3D;2时该字段才有值，否则返回null。
         :type bill_date: str
         :param bill_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费15：消费-税金16：调账-扣费17：消费-保底差额 说明： 保底差额&#x3D;客户签约保底合同后，如果没有达到保底消费，客户需要补交的费用，仅限于直销或者伙伴顾问销售类子客户，且为后付费用户。 20：退款-变更100：退款-退订税金101：调账-补偿税金102：调账-扣费税金
         :type bill_type: int
@@ -252,7 +252,7 @@ class MonthlyBillRes:
     def cycle(self):
         """Gets the cycle of this MonthlyBillRes.
 
-        资源详单数据所在账期，格式为YYYY-MM。 例如2020-01。
+        资源详单数据所在账期，东八区时间，格式为YYYY-MM。 例如2020-01。
 
         :return: The cycle of this MonthlyBillRes.
         :rtype: str
@@ -263,7 +263,7 @@ class MonthlyBillRes:
     def cycle(self, cycle):
         """Sets the cycle of this MonthlyBillRes.
 
-        资源详单数据所在账期，格式为YYYY-MM。 例如2020-01。
+        资源详单数据所在账期，东八区时间，格式为YYYY-MM。 例如2020-01。
 
         :param cycle: The cycle of this MonthlyBillRes.
         :type cycle: str
@@ -274,7 +274,7 @@ class MonthlyBillRes:
     def bill_date(self):
         """Gets the bill_date of this MonthlyBillRes.
 
-        消费日期，格式为YYYY-MM-DD。  说明： 当statistic_type=2时该字段才有值，否则返回null。
+        消费日期，东八区时间，格式为YYYY-MM-DD。  说明： 当statistic_type=2时该字段才有值，否则返回null。
 
         :return: The bill_date of this MonthlyBillRes.
         :rtype: str
@@ -285,7 +285,7 @@ class MonthlyBillRes:
     def bill_date(self, bill_date):
         """Sets the bill_date of this MonthlyBillRes.
 
-        消费日期，格式为YYYY-MM-DD。  说明： 当statistic_type=2时该字段才有值，否则返回null。
+        消费日期，东八区时间，格式为YYYY-MM-DD。  说明： 当statistic_type=2时该字段才有值，否则返回null。
 
         :param bill_date: The bill_date of this MonthlyBillRes.
         :type bill_date: str

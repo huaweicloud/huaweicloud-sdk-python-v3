@@ -61,31 +61,31 @@ class ListCustomerBillsMonthlyBreakDownRequest:
 
         :param x_language: 语言。en_US：英文。zh_CN：中文
         :type x_language: str
-        :param shared_month: 查询分摊成本的月份，格式：YYYY-MM。
+        :param shared_month: 查询分摊成本的月份，东八区时间，格式：YYYY-MM。
         :type shared_month: str
-        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。
+        :param service_type_code: 云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
         :type service_type_code: str
-        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用[查询资源类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256519451.html)接口获取。
+        :param resource_type_code: 资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用[查询资源类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256519451.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
         :type resource_type_code: str
-        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
+        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。此参数不携带或携带值为空时，不作为筛选条件。
         :type region_code: str
-        :param charging_mode: 计费模式。1：包年/包月3：按需10：预留实例
+        :param charging_mode: 计费模式。1：包年/包月3：按需10：预留实例此参数不携带或携带值为空时，不作为筛选条件。
         :type charging_mode: int
-        :param bill_type: 账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        :param bill_type: 账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更 此参数不携带或携带值为空时，不作为筛选条件。
         :type bill_type: int
         :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
         :param limit: 每次查询的数量限制。默认值为10。
         :type limit: int
-        :param resource_id: 资源ID。
+        :param resource_id: 资源ID。此参数不携带或携带值为空时，不作为筛选条件。
         :type resource_id: str
-        :param resource_name: 资源名称
+        :param resource_name: 资源名称。此参数不携带或携带值为空时，不作为筛选条件。
         :type resource_name: str
-        :param enterprise_project_id: 企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
+        :param enterprise_project_id: 企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空时，不作为筛选条件。
         :type enterprise_project_id: str
-        :param method: 查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。
+        :param method: 查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。此参数不携带，不作为筛选条件。
         :type method: str
-        :param sub_customer_id: 企业子账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
+        :param sub_customer_id: 企业子账号ID。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
         :type sub_customer_id: str
         """
         
@@ -161,7 +161,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def shared_month(self):
         """Gets the shared_month of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        查询分摊成本的月份，格式：YYYY-MM。
+        查询分摊成本的月份，东八区时间，格式：YYYY-MM。
 
         :return: The shared_month of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -172,7 +172,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def shared_month(self, shared_month):
         """Sets the shared_month of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        查询分摊成本的月份，格式：YYYY-MM。
+        查询分摊成本的月份，东八区时间，格式：YYYY-MM。
 
         :param shared_month: The shared_month of this ListCustomerBillsMonthlyBreakDownRequest.
         :type shared_month: str
@@ -183,7 +183,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def service_type_code(self):
         """Gets the service_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
         :return: The service_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -194,7 +194,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def service_type_code(self, service_type_code):
         """Sets the service_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。
+        云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
         :param service_type_code: The service_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
         :type service_type_code: str
@@ -205,7 +205,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def resource_type_code(self):
         """Gets the resource_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用[查询资源类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256519451.html)接口获取。
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用[查询资源类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256519451.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
         :return: The resource_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -216,7 +216,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def resource_type_code(self, resource_type_code):
         """Sets the resource_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用[查询资源类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256519451.html)接口获取。
+        资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用[查询资源类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256519451.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
         :param resource_type_code: The resource_type_code of this ListCustomerBillsMonthlyBreakDownRequest.
         :type resource_type_code: str
@@ -227,7 +227,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def region_code(self):
         """Gets the region_code of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
+        云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The region_code of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -238,7 +238,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def region_code(self, region_code):
         """Sets the region_code of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。
+        云服务区编码，例如：“cn-north-1”。具体请参见[地区和终端节点](https://developer.huaweicloud.com/endpoint)对应云服务的“区域”列的值。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param region_code: The region_code of this ListCustomerBillsMonthlyBreakDownRequest.
         :type region_code: str
@@ -249,7 +249,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def charging_mode(self):
         """Gets the charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        计费模式。1：包年/包月3：按需10：预留实例
+        计费模式。1：包年/包月3：按需10：预留实例此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: int
@@ -260,7 +260,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        计费模式。1：包年/包月3：按需10：预留实例
+        计费模式。1：包年/包月3：按需10：预留实例此参数不携带或携带值为空时，不作为筛选条件。
 
         :param charging_mode: The charging_mode of this ListCustomerBillsMonthlyBreakDownRequest.
         :type charging_mode: int
@@ -271,7 +271,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def bill_type(self):
         """Gets the bill_type of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更 此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The bill_type of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: int
@@ -282,7 +282,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def bill_type(self, bill_type):
         """Sets the bill_type of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
+        账单类型。1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更 此参数不携带或携带值为空时，不作为筛选条件。
 
         :param bill_type: The bill_type of this ListCustomerBillsMonthlyBreakDownRequest.
         :type bill_type: int
@@ -337,7 +337,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def resource_id(self):
         """Gets the resource_id of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        资源ID。
+        资源ID。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The resource_id of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -348,7 +348,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def resource_id(self, resource_id):
         """Sets the resource_id of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        资源ID。
+        资源ID。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param resource_id: The resource_id of this ListCustomerBillsMonthlyBreakDownRequest.
         :type resource_id: str
@@ -359,7 +359,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def resource_name(self):
         """Gets the resource_name of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        资源名称
+        资源名称。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The resource_name of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -370,7 +370,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def resource_name(self, resource_name):
         """Sets the resource_name of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        资源名称
+        资源名称。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param resource_name: The resource_name of this ListCustomerBillsMonthlyBreakDownRequest.
         :type resource_name: str
@@ -381,7 +381,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -392,7 +392,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
+        企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空时，不作为筛选条件。
 
         :param enterprise_project_id: The enterprise_project_id of this ListCustomerBillsMonthlyBreakDownRequest.
         :type enterprise_project_id: str
@@ -403,7 +403,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def method(self):
         """Gets the method of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。
+        查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。此参数不携带，不作为筛选条件。
 
         :return: The method of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -414,7 +414,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def method(self, method):
         """Sets the method of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。
+        查询资源消费记录的方式。oneself：客户自己sub_customer：企业子客户all：客户自己和企业子客户默认为all，如果没有企业子客户，取值为all时查询的是客户自己的资源消费记录。此参数不携带，不作为筛选条件。
 
         :param method: The method of this ListCustomerBillsMonthlyBreakDownRequest.
         :type method: str
@@ -425,7 +425,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def sub_customer_id(self):
         """Gets the sub_customer_id of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        企业子账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
+        企业子账号ID。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
         :return: The sub_customer_id of this ListCustomerBillsMonthlyBreakDownRequest.
         :rtype: str
@@ -436,7 +436,7 @@ class ListCustomerBillsMonthlyBreakDownRequest:
     def sub_customer_id(self, sub_customer_id):
         """Sets the sub_customer_id of this ListCustomerBillsMonthlyBreakDownRequest.
 
-        企业子账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
+        企业子账号ID。此参数不携带或携带值为空或携带值为空串时，不作为筛选条件。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
         :param sub_customer_id: The sub_customer_id of this ListCustomerBillsMonthlyBreakDownRequest.
         :type sub_customer_id: str

@@ -1,3 +1,264 @@
+# 3.0.104 2022-08-18
+
+### HuaweiCloud SDK BSSINTL
+
+- _Features_
+  - Support the interfaces `ListIndirectPartners`, `ListCosts`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `indirect_partner_id` to the interface `ListSubCustomers`
+  - Add the request parameter `indirect_partner_id` to the interface `CreateSubCustomer`
+  - Add the request parameter `indirect_partner_id` to the interface `ShowSubCustomerBudget`
+  - Add the request parameter `indirect_partner_id` to the interface `UpdateSubCustomerBudget`
+  - Add the request parameter `indirect_partner_id` to the interface `FreezeSubCustomers`
+  - Add the request parameter `indirect_partner_id` to the interface `UnfreezeSubCustomers`
+
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `arch` to the interface `ListProjectTemplates`
+
+### HuaweiCloud SDK CPH
+
+- _Features_
+  - Support the service `Cloud Phone`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - Support the interface `AssociateQueueToElasticResourcePool`
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `msg_confirm_topic` changed to not required of the interface `ChangeFlinkJobStatusReport`
+  - Remove the request parameters `key`, `value` from the interface `CreateFlinkJar`
+  - Remove the request parameters `key`, `value` from the interface `UpdateFlinkJar`
+  - Remove the request parameters `key`, `value` from the interface `CreateFlinkSql`
+  - Remove the request parameters `key`, `value` from the interface `UpdateFlinkSql`
+  - Add the request parameter `elastic_resource_pool_name` to the interface `CreateQueue`
+  - Modify the type `string` -> `array` of the response parameter `labels` of the interface `ListQueues`
+  - Add the response parameters `queue_id`, `elastic_resource_pool_name` to the interface `ShowQueueDetail`
+  - The request parameter `repeat_day` changed to required of the interface `CreateQueuePlan`
+  - The request parameter `repeat_day` changed to required of the interface `ChangeQueuePlan`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - Support the interface `ListServersByTag`
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `destination_type` changed to required of the interface `NovaCreateServers`
+
+### HuaweiCloud SDK EG
+
+- _Features_
+  - Support the service `EventGrid`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateFunction`:
+    - Add the response parameters `enable_dynamic_memory`, `is_stateful_function`, `enable_auth_in_header`, `custom_image`
+    - The request parameter `file`, `link` changed to required
+    - Modify the type `int32` -> `string` of the response parameter `user_id`
+    - Modify the type `int32` -> `string` of the response parameter `user_group_id`
+    - The response parameter `concurrent_num` changed to required
+    - The response parameter `mount_share_path` changed to not required
+  - Changes of the interface `ListFunctions`:
+    - Add the response parameter `fail_count`
+    - Remove the request parameter `X-Auth-Token`
+    - The response parameter `concurrent_num` changed to required
+  - Changes of the interface `ShowFunctionCode`:
+    - Remove the response parameter `id`
+    - The response parameter `file`, `link`, `concurrent_num` changed to required
+  - Changes of the interface `UpdateFunctionCode`:
+    - Remove the response parameter `id`
+    - The request parameter `file`, `link` changed to required
+    - The response parameter `file`, `link`, `concurrent_num` changed to required
+  - Changes of the interface `ShowFunctionConfig`:
+    - Add the response parameters `is_stateful_function`, `enable_auth_in_header`, `custom_image`
+    - Remove the response parameter `id`
+    - Modify the type `int32` -> `string` of the response parameter `user_id`
+    - Modify the type `int32` -> `string` of the response parameter `user_group_id`
+    - The response parameter `concurrent_num` changed to required
+    - The response parameter `mount_share_path` changed to not required
+  - Changes of the interface `UpdateFunctionConfig`:
+    - Add the response parameters `enable_auth_in_header`, `custom_image`
+    - Remove the request parameter `X-Auth-Token`
+    - Remove the response parameter `id`
+    - Modify the type `int32` -> `string` of the request parameter `user_id`
+    - Modify the type `int32` -> `string` of the request parameter `user_group_id`
+    - The request parameter `concurrent_num` changed to required
+    - The request parameter `mount_share_path` changed to not required
+    - Modify the type `int32` -> `string` of the response parameter `user_id`
+    - Modify the type `int32` -> `string` of the response parameter `user_group_id`
+    - The response parameter `concurrent_num` changed to required
+    - The response parameter `mount_share_path` changed to not required
+  - Changes of the interface `UpdateFunctionMaxInstanceConfig`:
+    - Remove the response parameter `id`
+    - Modify the type `int32` -> `string` of the response parameter `user_id`
+    - Modify the type `int32` -> `string` of the response parameter `user_group_id`
+    - The response parameter `concurrent_num` changed to required
+    - The response parameter `mount_share_path` changed to not required
+  - Changes of the interface `CreateFunctionVersion`:
+    - Remove the response parameter `id`
+    - Modify the type `int32` -> `string` of the response parameter `user_id`
+    - Modify the type `int32` -> `string` of the response parameter `user_group_id`
+    - The response parameter `concurrent_num` changed to required
+    - The response parameter `mount_share_path` changed to not required
+  - Changes of the interface `ListFunctionVersions`:
+    - Add the response parameters `is_stateful_function`, `enable_auth_in_header`, `custom_image`, `reserved_instance_idle_mode`
+    - Remove the response parameters `log_group_id`, `log_stream_id`
+    - The response parameter `concurrent_num` changed to required
+  - Add the enum values `SMN`, `RABBITMQ`, `DEDICATEDGATEWAY`, `OPENSOURCEKAFKA`, `APIC`, `GAUSSMONGO`, `EVENTGRID` to the request parameter `trigger_type_code` to the interface `CreateFunctionTrigger`
+  - Changes of the interface `ListFunctionTriggers`:
+    - Add the enum values `RABBITMQ`, `DEDICATEDGATEWAY`, `OPENSOURCEKAFKA`, `APIC`, `GAUSSMONGO`, `EVENTGRID` to the response parameter `trigger_type_code`
+    - Add the enum values `DISABLE`, Remove the enum values `DISABLED` from the response parameter `trigger_status`
+  - Add the enum values `RABBITMQ`, `DEDICATEDGATEWAY`, `OPENSOURCEKAFKA`, `APIC`, `GAUSSMONGO`, `EVENTGRID` to the request parameter `trigger_type_code` to the interface `DeleteFunctionTrigger`
+  - Changes of the interface `ShowFunctionTrigger`:
+    - Add the enum values `RABBITMQ`, `DEDICATEDGATEWAY`, `OPENSOURCEKAFKA`, `APIC`, `GAUSSMONGO`, `EVENTGRID` to the request parameter `trigger_type_code`
+    - Add the enum values `RABBITMQ`, `DEDICATEDGATEWAY`, `OPENSOURCEKAFKA`, `APIC`, `GAUSSMONGO`, `EVENTGRID` to the response parameter `trigger_type_code`
+    - Add the enum values `DISABLE`, Remove the enum values `DISABLED` from the response parameter `trigger_status`
+  - Changes of the interface `UpdateTrigger`:
+    - Add the enum values `DISABLE`, Remove the enum values `DISABLED` from the request parameter `trigger_status`
+    - Add the enum values `RABBITMQ`, `DEDICATEDGATEWAY`, `OPENSOURCEKAFKA`, `APIC`, `GAUSSMONGO`, `EVENTGRID` to the request parameter `trigger_type_code`
+    - The request parameter `trigger_status` changed to not required
+  - Modify the type `float` -> `int32` of the response parameter `value` of the interface `ListStatistics`
+  - Changes of the interface `UpdateFunctionReservedInstancesCount`:
+    - Add the request parameter `UpdateFunctionReservedInstancesCountRequestBody`
+    - Add the response parameters `idle_mode`, `tactics_config`
+    - Remove the request parameter `UpdateFunctionReservedInstancesRequestBody`
+  - Changes of the interface `CreateDependency`:
+    - Add the response parameters `version`, `last_modified`
+    - Modify the type `enum` -> `string` of the response parameter `runtime`
+  - Changes of the interface `ListDependencies`:
+    - Add the request parameters `maxitems`, `ispublic`
+    - Add the response parameters `version`, `last_modified`
+    - Modify the type `int32` -> `int64` of the response parameter `count`
+  - Changes of the interface `ShowDependcy`:
+    - Add the response parameters `version`, `last_modified`
+    - Modify the type `enum` -> `string` of the response parameter `runtime`
+  - Changes of the interface `UpdateDependcy`:
+    - Add the request parameter `UpdateDependcyRequestBody`
+    - Remove the request parameter `UpdateDependencyRequestBody`
+    - Modify the type `enum` -> `string` of the response parameter `runtime`
+  - Remove the response parameters `content`, `last_modified` from the interface `CreateEvent`
+  - Remove the response parameters `content`, `last_modified` from the interface `UpdateEvent`
+  - Changes of the interface `ImportFunction`:
+    - Add the request parameter `package`
+    - Remove the request parameter `X-Auth-Token`
+    - The response parameter `concurrent_num` changed to required
+  - Add the request parameter `X-Auth-Token` to the interface `EnableLtsLogs`
+  - Add the response parameter `group_name` to the interface `ShowLtsLogDetails`
+  - The request parameter `request_id` changed to required of the interface `CancelAsyncInvocation`
+  - Changes of the interface `CreateWorkflow`:
+    - Add the request parameter `duration`
+    - Add the enum values `SMN`, `APIG`, `APIG_DE` to the request parameter `trigger_type`
+  - Changes of the interface `ListWorkflow`:
+    - Add the request parameters `enterprise_project`, `mode`
+    - Remove the response parameters `id`, `workflow_urn`, `name`, `description`, `created_time`, `updated_time`, `created_by`
+  - Add the request parameter `X-WorkflowRun-MergeFnParameters` to the interface `StartWorkflowExecution`
+  - Remove the response parameters `workflow_id`, `workflow_urn`, `execution_id`, `status`, `begin_time`, `end_time`, `last_update_time`, `created_by` from the interface `ListWorkflowExecutions`
+  - Changes of the interface `ShowWorkflowExecution`:
+    - Add the request parameter `X-Get-Workflow-Full-History-Data`
+    - Modify the type `string` -> `object` of the response parameter `workflow_urn`
+  - Changes of the interface `ShowWorkFlow`:
+    - Remove the response parameters `name`, `description`, `triggers`, `start`, `functions`, `states`, `constants`, `retries`, `mode`, `express_config`, `enterprise_project_id`
+    - Modify the type `string` -> `object` of the response parameter `workflow_urn`
+    - The response parameter `id`, `workflow_urn`, `created_time`, `updated_time`, `created_by` changed to required
+  - Changes of the interface `UpdateWorkFlow`:
+    - Add the request parameter `duration`
+    - Add the enum values `SMN`, `APIG`, `APIG_DE` to the request parameter `trigger_type`
+    - Modify the type `string` -> `object` of the response parameter `workflow_urn`
+    - The response parameter `id`, `workflow_urn`, `name`, `description`, `created_time`, `updated_time`, `created_by` changed to required
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `RecognizeIdCard`:
+    - Add the request parameter `detect_reproduce`
+    - Add the response parameter `detect_reproduce_result`
+
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateIssueV4`:
+    - Add the request parameter `field_name`
+    - Add the response parameter `field_name`
+  - Add the response parameter `field_name` to the interface `ListIssuesV4`
+  - Changes of the interface `UpdateIssueV4`:
+    - Add the request parameter `field_name`
+    - Add the response parameter `field_name`
+  - Add the response parameter `field_name` to the interface `ListChildIssuesV4`
+  - Changes of the interface `CreateSystemIssueV4`:
+    - Add the request parameter `field_name`
+    - Add the response parameter `field_name`
+
+### HuaweiCloud SDK ROMA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `limit`, `offset` to the interface `ListNotification`
+
+### HuaweiCloud SDK VOD
+
+- _Features_
+  - Support the following interfaces：
+    - `ListTranscodeTemplate`
+    - `UpdateTranscodeTemplate`
+    - `CreateTranscodeTemplate`
+    - `DeleteTranscodeTemplate`
+    - `ListTemplateGroupCollection`
+    - `UpdateTemplateGroupCollection`
+    - `CreateTemplateGroupCollection`
+    - `DeleteTemplateGroupCollection`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListIgnoreRule`:
+    - Add the response parameter `domain`
+    - Remove the response parameter `domains`
+  - Add the response parameter `policyid` to the interface `ListGeoipRule`
+  - Add the request parameter `description` to the interface `UpdateGeoipRule`
+
 # 3.0.103 2022-08-11
 
 ### HuaweiCloud SDK APM

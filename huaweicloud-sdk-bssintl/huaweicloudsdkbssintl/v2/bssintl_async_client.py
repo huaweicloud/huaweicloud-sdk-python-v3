@@ -108,6 +108,66 @@ class BssintlAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_costs_async(self, request):
+        """查询成本数据
+
+        客户在自建平台查询成本分析数据。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListCosts
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListCostsRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListCostsResponse`
+        """
+        return self.list_costs_with_http_info(request)
+
+    def list_costs_with_http_info(self, request):
+        all_params = ['req', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v4/costs/cost-analysed-bills/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListCostsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_free_resource_usages_async(self, request):
         """查询资源内使用量
 
@@ -964,6 +1024,66 @@ class BssintlAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_indirect_partners_async(self, request):
+        """查询云经销商列表
+
+        华为云总经销商（一级经销商）可以查询云经销商（二级经销商）列表。
+        
+        一级经销商在伙伴中心查询二级经销商列表的方式请参见[这里](https://support.huaweicloud.com/usermanual-bpconsole/dp_120210.html)。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListIndirectPartners
+        :type request: :class:`huaweicloudsdkbssintl.v2.ListIndirectPartnersRequest`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.ListIndirectPartnersResponse`
+        """
+        return self.list_indirect_partners_with_http_info(request)
+
+    def list_indirect_partners_with_http_info(self, request):
+        all_params = ['req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/partners/indirect-partners/query',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListIndirectPartnersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_invoices_async(self, request):
         """查询发票列表
 
@@ -1773,7 +1893,7 @@ class BssintlAsyncClient(Client):
         return self.show_sub_customer_budget_with_http_info(request)
 
     def show_sub_customer_budget_with_http_info(self, request):
-        all_params = ['customer_id']
+        all_params = ['customer_id', 'indirect_partner_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1786,6 +1906,8 @@ class BssintlAsyncClient(Client):
         query_params = []
         if 'customer_id' in local_var_params:
             query_params.append(('customer_id', local_var_params['customer_id']))
+        if 'indirect_partner_id' in local_var_params:
+            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
 
         header_params = {}
 

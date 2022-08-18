@@ -7275,7 +7275,7 @@ class RomaClient(Client):
         return self.list_notification_with_http_info(request)
 
     def list_notification_with_http_info(self, request):
-        all_params = ['instance_id', 'app_id']
+        all_params = ['instance_id', 'limit', 'offset', 'app_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -7288,6 +7288,10 @@ class RomaClient(Client):
             path_params['instance_id'] = local_var_params['instance_id']
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'app_id' in local_var_params:
             query_params.append(('app_id', local_var_params['app_id']))
 

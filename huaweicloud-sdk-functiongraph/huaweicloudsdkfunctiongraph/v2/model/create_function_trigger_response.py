@@ -47,7 +47,7 @@ class CreateFunctionTriggerResponse(SdkResponse):
         :type trigger_id: str
         :param trigger_type_code: 触发器类型。  - TIMER: \&quot;定时触发器。\&quot; - APIG: \&quot;APIG触发器。\&quot; - CTS: \&quot;云审计服务触发器。\&quot; - DDS: \&quot;文档数据库服务触发器。\&quot; - DMS: \&quot;分布式服务触发器。\&quot; - DIS: \&quot;数据接入服务触发器。\&quot; - LTS: \&quot;云日志服务触发器。\&quot; - OBS: \&quot;对象存储触发器。\&quot; - SMN: \&quot;消息通知服务触发器。\&quot; - KAFKA: \&quot;专享版消息通知服务触发器。\&quot;
         :type trigger_type_code: str
-        :param trigger_status: \&quot;触发器状态\&quot;  - ACTIVE: 启用状态。 - DISABLED: 禁用状态。
+        :param trigger_status: \&quot;触发器状态\&quot;  - ACTIVE: 启用状态。 - DISABLE: 禁用状态。
         :type trigger_status: str
         :param event_data: 触发器源事件。
         :type event_data: object
@@ -128,7 +128,7 @@ class CreateFunctionTriggerResponse(SdkResponse):
     def trigger_status(self):
         """Gets the trigger_status of this CreateFunctionTriggerResponse.
 
-        \"触发器状态\"  - ACTIVE: 启用状态。 - DISABLED: 禁用状态。
+        \"触发器状态\"  - ACTIVE: 启用状态。 - DISABLE: 禁用状态。
 
         :return: The trigger_status of this CreateFunctionTriggerResponse.
         :rtype: str
@@ -139,7 +139,7 @@ class CreateFunctionTriggerResponse(SdkResponse):
     def trigger_status(self, trigger_status):
         """Sets the trigger_status of this CreateFunctionTriggerResponse.
 
-        \"触发器状态\"  - ACTIVE: 启用状态。 - DISABLED: 禁用状态。
+        \"触发器状态\"  - ACTIVE: 启用状态。 - DISABLE: 禁用状态。
 
         :param trigger_status: The trigger_status of this CreateFunctionTriggerResponse.
         :type trigger_status: str

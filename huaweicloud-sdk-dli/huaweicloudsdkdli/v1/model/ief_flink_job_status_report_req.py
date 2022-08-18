@@ -53,7 +53,8 @@ class IefFlinkJobStatusReportReq:
         self.discriminator = None
 
         self.jobs = jobs
-        self.msg_confirm_topic = msg_confirm_topic
+        if msg_confirm_topic is not None:
+            self.msg_confirm_topic = msg_confirm_topic
         self.message_id = message_id
 
     @property

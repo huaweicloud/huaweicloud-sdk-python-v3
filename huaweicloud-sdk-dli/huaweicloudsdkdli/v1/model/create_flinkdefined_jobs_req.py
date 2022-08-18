@@ -44,7 +44,7 @@ class CreateFlinkdefinedJobsReq:
         'resume_checkpoint': 'bool',
         'resume_max_num': 'int',
         'checkpoint_path': 'str',
-        'runtime_config': 'list[JobsRuntimeConfig]',
+        'runtime_config': 'str',
         'tags': 'list[JobsTags]'
     }
 
@@ -128,7 +128,7 @@ class CreateFlinkdefinedJobsReq:
         :param checkpoint_path: 用户Jar中checkpoint的储存地址，不同作业路径需要保持不同。
         :type checkpoint_path: str
         :param runtime_config: Flink作业运行时自定义优化参数。
-        :type runtime_config: list[:class:`huaweicloudsdkdli.v1.JobsRuntimeConfig`]
+        :type runtime_config: str
         :param tags: Flink jar作业的标签。具体请参考表tags。
         :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
         """
@@ -725,7 +725,7 @@ class CreateFlinkdefinedJobsReq:
         Flink作业运行时自定义优化参数。
 
         :return: The runtime_config of this CreateFlinkdefinedJobsReq.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsRuntimeConfig`]
+        :rtype: str
         """
         return self._runtime_config
 
@@ -736,7 +736,7 @@ class CreateFlinkdefinedJobsReq:
         Flink作业运行时自定义优化参数。
 
         :param runtime_config: The runtime_config of this CreateFlinkdefinedJobsReq.
-        :type runtime_config: list[:class:`huaweicloudsdkdli.v1.JobsRuntimeConfig`]
+        :type runtime_config: str
         """
         self._runtime_config = runtime_config
 

@@ -39,7 +39,7 @@ class ExportFunctionRequest:
 
         The model defined in huaweicloud sdk
 
-        :param function_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
+        :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
         :type function_urn: str
         :param config: 是否导出函数配置
         :type config: bool
@@ -69,7 +69,7 @@ class ExportFunctionRequest:
     def function_urn(self):
         """Gets the function_urn of this ExportFunctionRequest.
 
-        函数的URN（Uniform Resource Name），唯一标识函数。
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :return: The function_urn of this ExportFunctionRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class ExportFunctionRequest:
     def function_urn(self, function_urn):
         """Sets the function_urn of this ExportFunctionRequest.
 
-        函数的URN（Uniform Resource Name），唯一标识函数。
+        函数的URN，详细解释见FunctionGraph函数模型的描述。
 
         :param function_urn: The function_urn of this ExportFunctionRequest.
         :type function_urn: str

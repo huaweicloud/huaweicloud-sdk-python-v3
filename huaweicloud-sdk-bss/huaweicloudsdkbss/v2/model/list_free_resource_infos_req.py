@@ -47,17 +47,17 @@ class ListFreeResourceInfosReq:
 
         The model defined in huaweicloud sdk
 
-        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        :param region_code: 云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
         :type region_code: str
-        :param order_id: 订单ID。
+        :param order_id: 订单ID。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
         :type order_id: str
-        :param product_id: 产品ID，即资源包ID。
+        :param product_id: 产品ID，即资源包ID。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
         :type product_id: str
-        :param product_name: 产品名称，即资源包名称。
+        :param product_name: 产品名称，即资源包名称。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
         :type product_name: str
-        :param enterprise_project_id: 企业项目ID。
+        :param enterprise_project_id: 企业项目ID。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
         :type enterprise_project_id: str
-        :param status: 状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
+        :param status: 状态： 0：未生效1：生效中2：已用完3：已失效4：已退订 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
         :type status: int
         :param offset: 偏移量，从0开始，默认为0。  说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。 例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
@@ -98,7 +98,7 @@ class ListFreeResourceInfosReq:
     def region_code(self):
         """Gets the region_code of this ListFreeResourceInfosReq.
 
-        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :return: The region_code of this ListFreeResourceInfosReq.
         :rtype: str
@@ -109,7 +109,7 @@ class ListFreeResourceInfosReq:
     def region_code(self, region_code):
         """Sets the region_code of this ListFreeResourceInfosReq.
 
-        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
+        云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :param region_code: The region_code of this ListFreeResourceInfosReq.
         :type region_code: str
@@ -120,7 +120,7 @@ class ListFreeResourceInfosReq:
     def order_id(self):
         """Gets the order_id of this ListFreeResourceInfosReq.
 
-        订单ID。
+        订单ID。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :return: The order_id of this ListFreeResourceInfosReq.
         :rtype: str
@@ -131,7 +131,7 @@ class ListFreeResourceInfosReq:
     def order_id(self, order_id):
         """Sets the order_id of this ListFreeResourceInfosReq.
 
-        订单ID。
+        订单ID。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :param order_id: The order_id of this ListFreeResourceInfosReq.
         :type order_id: str
@@ -142,7 +142,7 @@ class ListFreeResourceInfosReq:
     def product_id(self):
         """Gets the product_id of this ListFreeResourceInfosReq.
 
-        产品ID，即资源包ID。
+        产品ID，即资源包ID。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :return: The product_id of this ListFreeResourceInfosReq.
         :rtype: str
@@ -153,7 +153,7 @@ class ListFreeResourceInfosReq:
     def product_id(self, product_id):
         """Sets the product_id of this ListFreeResourceInfosReq.
 
-        产品ID，即资源包ID。
+        产品ID，即资源包ID。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :param product_id: The product_id of this ListFreeResourceInfosReq.
         :type product_id: str
@@ -164,7 +164,7 @@ class ListFreeResourceInfosReq:
     def product_name(self):
         """Gets the product_name of this ListFreeResourceInfosReq.
 
-        产品名称，即资源包名称。
+        产品名称，即资源包名称。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :return: The product_name of this ListFreeResourceInfosReq.
         :rtype: str
@@ -175,7 +175,7 @@ class ListFreeResourceInfosReq:
     def product_name(self, product_name):
         """Sets the product_name of this ListFreeResourceInfosReq.
 
-        产品名称，即资源包名称。
+        产品名称，即资源包名称。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :param product_name: The product_name of this ListFreeResourceInfosReq.
         :type product_name: str
@@ -186,7 +186,7 @@ class ListFreeResourceInfosReq:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListFreeResourceInfosReq.
 
-        企业项目ID。
+        企业项目ID。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :return: The enterprise_project_id of this ListFreeResourceInfosReq.
         :rtype: str
@@ -197,7 +197,7 @@ class ListFreeResourceInfosReq:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListFreeResourceInfosReq.
 
-        企业项目ID。
+        企业项目ID。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :param enterprise_project_id: The enterprise_project_id of this ListFreeResourceInfosReq.
         :type enterprise_project_id: str
@@ -208,7 +208,7 @@ class ListFreeResourceInfosReq:
     def status(self):
         """Gets the status of this ListFreeResourceInfosReq.
 
-        状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
+        状态： 0：未生效1：生效中2：已用完3：已失效4：已退订 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :return: The status of this ListFreeResourceInfosReq.
         :rtype: int
@@ -219,7 +219,7 @@ class ListFreeResourceInfosReq:
     def status(self, status):
         """Sets the status of this ListFreeResourceInfosReq.
 
-        状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
+        状态： 0：未生效1：生效中2：已用完3：已失效4：已退订 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件。
 
         :param status: The status of this ListFreeResourceInfosReq.
         :type status: int

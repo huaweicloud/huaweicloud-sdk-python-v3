@@ -49,7 +49,7 @@ class FunctionGraphClient(Client):
         return ClientBuilder(clazz)
 
     def async_invoke_function(self, request):
-        """异步执行函数。
+        """异步执行函数
 
         异步执行函数。
         
@@ -109,10 +109,9 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def async_invoke_reserved_function(self, request):
-        """函数异步执行并返回预留实例ID。
+        """函数异步执行并返回预留实例ID
 
-        函数异步执行并返回预留实例ID用于场景指客户端请求执行比较费时任务，不需要同步等待执行完成返回结果，该方法提前返回任务执行对应的预留实例ID, 如果预留实例有异常，
-        可以通过该实例ID把对应实例删除（该接口主要针对白名单用户）。
+        函数异步执行并返回预留实例ID用于场景指客户端请求执行比较费时任务，不需要同步等待执行完成返回结果，该方法提前返回任务执行对应的预留实例ID, 如果预留实例有异常，可以通过该实例ID把对应实例删除（该接口主要针对白名单用户）。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -148,7 +147,7 @@ class FunctionGraphClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["Content-Type"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -170,7 +169,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def batch_delete_function_triggers(self, request):
-        """删除指定函数的所有触发器。
+        """删除指定函数的所有触发器
 
         删除指定函数所有触发器设置。
         
@@ -232,9 +231,9 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def batch_delete_workflows(self, request):
-        """删除工作流列表
+        """删除函数流
 
-        删除工作流列表
+        删除函数流
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -352,7 +351,7 @@ class FunctionGraphClient(Client):
     def create_dependency(self, request):
         """创建依赖包
 
-        创建依赖包。
+        创建依赖包
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -410,7 +409,7 @@ class FunctionGraphClient(Client):
     def create_event(self, request):
         """创建测试事件
 
-        创建测试事件。
+        创建测试事件
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -468,7 +467,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def create_function(self, request):
-        """创建函数。
+        """创建函数
 
         创建指定的函数。
         
@@ -526,12 +525,12 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def create_function_trigger(self, request):
-        """创建触发器。
+        """创建触发器
 
         创建触发器。
         
         - 可以创建的触发器类型包括TIMER、APIG、CTS、DDS、DMS、DIS、LTS、OBS、SMN、KAFKA。
-        - DDS和KAFKA触发器创建时默认为DISABLED状态，其他触发器默认为ACTIVE状态。
+        - DDS和KAFKA触发器创建时默认为DISABLE状态，其他触发器默认为ACTIVE状态。
         - TIMER、DDS、DMS、KAFKA、LTS触发器支持禁用，其他触发器不支持。
         
         详细说明请参考华为云API Explorer。
@@ -590,7 +589,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def create_function_version(self, request):
-        """发布函数版本。
+        """发布函数版本
 
         发布函数版本。
         
@@ -650,7 +649,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def create_version_alias(self, request):
-        """创建函数版本别名。
+        """创建函数版本别名
 
         创建函数灰度版本别名。
         
@@ -710,9 +709,9 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def create_workflow(self, request):
-        """创建工作流列表
+        """创建函数流
 
-        创建工作流列表
+        创建函数流
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -768,9 +767,9 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_dependency(self, request):
-        """删除依赖包
+        """删除指定的依赖包
 
-        删除指定的依赖包。
+        删除指定的依赖包
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -826,9 +825,9 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_event(self, request):
-        """删除测试事件
+        """删除指定测试事件
 
-        删除测试事件。
+        删除指定测试事件
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -840,7 +839,7 @@ class FunctionGraphClient(Client):
         return self.delete_event_with_http_info(request)
 
     def delete_event_with_http_info(self, request):
-        all_params = ['event_id', 'function_urn']
+        all_params = ['function_urn', 'event_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -849,10 +848,10 @@ class FunctionGraphClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'event_id' in local_var_params:
-            path_params['event_id'] = local_var_params['event_id']
         if 'function_urn' in local_var_params:
             path_params['function_urn'] = local_var_params['function_urn']
+        if 'event_id' in local_var_params:
+            path_params['event_id'] = local_var_params['event_id']
 
         query_params = []
 
@@ -886,7 +885,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_function(self, request):
-        """删除函数/版本。
+        """删除函数/版本
 
         删除指定的函数或者特定的版本（不允许删除latest版本）。
         
@@ -947,7 +946,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_function_async_invoke_config(self, request):
-        """删除函数异步配置信息。
+        """删除函数异步配置信息
 
         删除函数异步配置信息。
         
@@ -1005,7 +1004,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_function_trigger(self, request):
-        """删除触发器。
+        """删除触发器
 
         删除触发器。
         
@@ -1067,7 +1066,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def delete_version_alias(self, request):
-        """删除函数版本别名。
+        """删除函数版本别名
 
         删除函数版本别名。
         
@@ -1127,7 +1126,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def enable_lts_logs(self, request):
-        """开通lts日志上报功能。
+        """开通lts日志上报功能
 
         开通lts日志上报功能。
         
@@ -1183,9 +1182,9 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def export_function(self, request):
-        """导出函数。
+        """导出函数
 
-        导出函数。
+        导出函数
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1247,9 +1246,9 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def import_function(self, request):
-        """导入函数。
+        """导入函数
 
-        导入函数。
+        导入函数
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1305,7 +1304,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def invoke_function(self, request):
-        """同步执行函数。
+        """同步执行函数
 
         同步调用指的是客户端请求需要明确等到响应结果，也就是说这样的请求必须得调用到用户的函数，并且等到调用完成才返回。
         
@@ -1368,10 +1367,80 @@ class FunctionGraphClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_async_invocations(self, request):
+        """获取函数异步调用请求列表
+
+        获取函数异步调用请求列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListAsyncInvocations
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListAsyncInvocationsRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListAsyncInvocationsResponse`
+        """
+        return self.list_async_invocations_with_http_info(request)
+
+    def list_async_invocations_with_http_info(self, request):
+        all_params = ['function_urn', 'request_id', 'marker', 'limit', 'status', 'query_begin_time', 'query_end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'function_urn' in local_var_params:
+            path_params['function_urn'] = local_var_params['function_urn']
+
+        query_params = []
+        if 'request_id' in local_var_params:
+            query_params.append(('request_id', local_var_params['request_id']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'query_begin_time' in local_var_params:
+            query_params.append(('query_begin_time', local_var_params['query_begin_time']))
+        if 'query_end_time' in local_var_params:
+            query_params.append(('query_end_time', local_var_params['query_end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/async-invocations',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAsyncInvocationsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_dependencies(self, request):
         """获取依赖包列表
 
-        获取依赖包列表。
+        获取依赖包列表
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1383,7 +1452,7 @@ class FunctionGraphClient(Client):
         return self.list_dependencies_with_http_info(request)
 
     def list_dependencies_with_http_info(self, request):
-        all_params = ['dependency_type', 'runtime', 'name', 'marker', 'limit']
+        all_params = ['marker', 'maxitems', 'ispublic', 'dependency_type', 'runtime', 'name', 'limit']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1394,14 +1463,18 @@ class FunctionGraphClient(Client):
         path_params = {}
 
         query_params = []
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
+        if 'maxitems' in local_var_params:
+            query_params.append(('maxitems', local_var_params['maxitems']))
+        if 'ispublic' in local_var_params:
+            query_params.append(('ispublic', local_var_params['ispublic']))
         if 'dependency_type' in local_var_params:
             query_params.append(('dependency_type', local_var_params['dependency_type']))
         if 'runtime' in local_var_params:
             query_params.append(('runtime', local_var_params['runtime']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
 
@@ -1435,9 +1508,9 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def list_events(self, request):
-        """获取测试事件列表
+        """获取指定函数的测试事件列表
 
-        获取指定函数的测试事件列表。
+        获取指定函数的测试事件列表
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1492,80 +1565,10 @@ class FunctionGraphClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_function_async_invocations(self, request):
-        """获取函数异步调用请求列表
-
-        获取函数异步调用请求列表
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ListFunctionAsyncInvocations
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvocationsRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListFunctionAsyncInvocationsResponse`
-        """
-        return self.list_function_async_invocations_with_http_info(request)
-
-    def list_function_async_invocations_with_http_info(self, request):
-        all_params = ['function_urn', 'request_id', 'limit', 'marker', 'status', 'query_begin_time', 'query_end_time']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'function_urn' in local_var_params:
-            path_params['function_urn'] = local_var_params['function_urn']
-
-        query_params = []
-        if 'request_id' in local_var_params:
-            query_params.append(('request_id', local_var_params['request_id']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
-        if 'query_begin_time' in local_var_params:
-            query_params.append(('query_begin_time', local_var_params['query_begin_time']))
-        if 'query_end_time' in local_var_params:
-            query_params.append(('query_end_time', local_var_params['query_end_time']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/functions/{function_urn}/async-invocations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListFunctionAsyncInvocationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def list_function_async_invoke_config(self, request):
         """获取函数异步配置列表
 
-        获取函数异步配置列表。
+        获取指定函数所有版本的异步配置列表。。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1685,7 +1688,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def list_function_triggers(self, request):
-        """获取指定函数的所有触发器。
+        """获取指定函数的所有触发器
 
         获取指定函数的所有触发器设置。
         
@@ -1743,7 +1746,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def list_function_versions(self, request):
-        """获取指定函数的版本列表。
+        """获取指定函数的版本列表
 
         获取指定函数的版本列表。
         
@@ -1988,7 +1991,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def list_version_aliases(self, request):
-        """获取指定函数所有版本别名列表。
+        """获取指定函数所有版本别名列表
 
         获取函数版本别名列表。
         
@@ -2040,6 +2043,72 @@ class FunctionGraphClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListVersionAliasesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_workflow(self, request):
+        """查询函数流
+
+        查询函数流
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListWorkflow
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowResponse`
+        """
+        return self.list_workflow_with_http_info(request)
+
+    def list_workflow_with_http_info(self, request):
+        all_params = ['workflow_name', 'limit', 'offset', 'enterprise_project', 'mode']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'workflow_name' in local_var_params:
+            query_params.append(('workflow_name', local_var_params['workflow_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'enterprise_project' in local_var_params:
+            query_params.append(('enterprise_project', local_var_params['enterprise_project']))
+        if 'mode' in local_var_params:
+            query_params.append(('mode', local_var_params['mode']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListWorkflowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2111,72 +2180,10 @@ class FunctionGraphClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_workflows(self, request):
-        """查询工作流列表
-
-        查询工作流列表
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ListWorkflows
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowsRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowsResponse`
-        """
-        return self.list_workflows_with_http_info(request)
-
-    def list_workflows_with_http_info(self, request):
-        all_params = ['workflow_name', 'limit', 'offset']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'workflow_name' in local_var_params:
-            query_params.append(('workflow_name', local_var_params['workflow_name']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/fgs/workflows',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListWorkflowsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def retry_work_flow(self, request):
-        """重试工作流
+        """重试函数流
 
-        重试工作流
+        重试函数流
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2233,21 +2240,21 @@ class FunctionGraphClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def show_dependency(self, request):
+    def show_dependcy(self, request):
         """获取指定依赖包
 
-        获取指定依赖包。
+        获取指定依赖包
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
-        :param request: Request instance for ShowDependency
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependencyRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependencyResponse`
+        :param request: Request instance for ShowDependcy
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependcyRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowDependcyResponse`
         """
-        return self.show_dependency_with_http_info(request)
+        return self.show_dependcy_with_http_info(request)
 
-    def show_dependency_with_http_info(self, request):
+    def show_dependcy_with_http_info(self, request):
         all_params = ['depend_id']
         local_var_params = {}
         for attr in request.attribute_map:
@@ -2285,7 +2292,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='ShowDependencyResponse',
+            response_type='ShowDependcyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2294,7 +2301,7 @@ class FunctionGraphClient(Client):
     def show_event(self, request):
         """获取测试事件详细信息
 
-        获取测试事件详细信息。
+        获取测试事件详细信息
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2306,7 +2313,7 @@ class FunctionGraphClient(Client):
         return self.show_event_with_http_info(request)
 
     def show_event_with_http_info(self, request):
-        all_params = ['event_id', 'function_urn']
+        all_params = ['function_urn', 'event_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2315,10 +2322,10 @@ class FunctionGraphClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'event_id' in local_var_params:
-            path_params['event_id'] = local_var_params['event_id']
         if 'function_urn' in local_var_params:
             path_params['function_urn'] = local_var_params['function_urn']
+        if 'event_id' in local_var_params:
+            path_params['event_id'] = local_var_params['event_id']
 
         query_params = []
 
@@ -2352,9 +2359,9 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def show_function_async_invoke_config(self, request):
-        """获取函数异步配置信息。
+        """获取函数异步配置信息
 
-        获取函数异步配置信息。
+        获取指定函数某一版本的异步配置信息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2410,7 +2417,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def show_function_code(self, request):
-        """获取指定函数代码。
+        """获取指定函数代码
 
         获取指定函数的代码。
         
@@ -2468,7 +2475,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def show_function_config(self, request):
-        """获取函数的metadata。
+        """获取函数的metadata
 
         获取指定函数的metadata。
         
@@ -2526,7 +2533,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def show_function_trigger(self, request):
-        """获取指定触发器的信息。
+        """获取指定触发器的信息
 
         获取特定触发器的信息。
         
@@ -2588,7 +2595,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def show_lts_log_details(self, request):
-        """获取指定函数的lts日志组日志流配置。
+        """获取指定函数的lts日志组日志流配置
 
         获取指定函数的lts日志组日志流配置。
         
@@ -2766,7 +2773,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def show_version_alias(self, request):
-        """获取函数版本的指定别名信息。
+        """获取函数版本的指定别名信息
 
         获取函数指定的版本别名信息。
         
@@ -2826,9 +2833,9 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def show_work_flow(self, request):
-        """获取指定函数流实例
+        """获取指定函数流实例的元数据
 
-        获取指定函数流实例
+        获取指定函数流实例的元数据
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2884,9 +2891,9 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def show_work_flow_metric(self, request):
-        """获取指定工作流指标
+        """获取指定函数流指标
 
-        获取指定工作流指标
+        获取指定函数流指标
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2962,7 +2969,7 @@ class FunctionGraphClient(Client):
         return self.show_workflow_execution_with_http_info(request)
 
     def show_workflow_execution_with_http_info(self, request):
-        all_params = ['workflow_id', 'execution_id']
+        all_params = ['workflow_id', 'execution_id', 'x_get_workflow_full_history_data']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2979,6 +2986,8 @@ class FunctionGraphClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_get_workflow_full_history_data' in local_var_params:
+            header_params['X-Get-Workflow-Full-History-Data'] = local_var_params['x_get_workflow_full_history_data']
 
         form_params = {}
 
@@ -3010,7 +3019,7 @@ class FunctionGraphClient(Client):
     def start_sync_workflow_execution(self, request):
         """同步执行函数流
 
-        同步执行函数流
+        以同步执行方式启动函数流（仅快速模式函数流支持）
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3070,7 +3079,7 @@ class FunctionGraphClient(Client):
     def start_workflow_execution(self, request):
         """开始执行函数流
 
-        开始执行函数流
+        以异步执行方式启动函数流
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3082,7 +3091,7 @@ class FunctionGraphClient(Client):
         return self.start_workflow_execution_with_http_info(request)
 
     def start_workflow_execution_with_http_info(self, request):
-        all_params = ['workflow_id', 'start_workflow_execution_request_body', 'x_create_time', 'x_workflow_run_id']
+        all_params = ['workflow_id', 'start_workflow_execution_request_body', 'x_create_time', 'x_workflow_run_id', 'x_workflow_run_merge_fn_parameters']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3101,6 +3110,8 @@ class FunctionGraphClient(Client):
             header_params['X-Create-Time'] = local_var_params['x_create_time']
         if 'x_workflow_run_id' in local_var_params:
             header_params['X-WorkflowRun-ID'] = local_var_params['x_workflow_run_id']
+        if 'x_workflow_run_merge_fn_parameters' in local_var_params:
+            header_params['X-WorkflowRun-MergeFnParameters'] = local_var_params['x_workflow_run_merge_fn_parameters']
 
         form_params = {}
 
@@ -3132,9 +3143,9 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def stop_work_flow(self, request):
-        """停止工作流
+        """停止函数流
 
-        停止工作流
+        停止函数流
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3191,22 +3202,22 @@ class FunctionGraphClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def update_dependency(self, request):
-        """更新依赖包指定依赖包
+    def update_dependcy(self, request):
+        """更新指定依赖包
 
-        更新依赖包指定依赖包。
+        更新指定依赖包
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
-        :param request: Request instance for UpdateDependency
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependencyRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependencyResponse`
+        :param request: Request instance for UpdateDependcy
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependcyRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateDependcyResponse`
         """
-        return self.update_dependency_with_http_info(request)
+        return self.update_dependcy_with_http_info(request)
 
-    def update_dependency_with_http_info(self, request):
-        all_params = ['depend_id', 'update_dependency_request_body']
+    def update_dependcy_with_http_info(self, request):
+        all_params = ['depend_id', 'update_dependcy_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3245,16 +3256,16 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='UpdateDependencyResponse',
+            response_type='UpdateDependcyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
     def update_event(self, request):
-        """更新测试事件
+        """更新测试事件详细信息
 
-        更新测试事件。
+        更新测试事件详细信息
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3266,7 +3277,7 @@ class FunctionGraphClient(Client):
         return self.update_event_with_http_info(request)
 
     def update_event_with_http_info(self, request):
-        all_params = ['event_id', 'function_urn', 'update_event_request_body']
+        all_params = ['function_urn', 'event_id', 'update_event_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3275,10 +3286,10 @@ class FunctionGraphClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'event_id' in local_var_params:
-            path_params['event_id'] = local_var_params['event_id']
         if 'function_urn' in local_var_params:
             path_params['function_urn'] = local_var_params['function_urn']
+        if 'event_id' in local_var_params:
+            path_params['event_id'] = local_var_params['event_id']
 
         query_params = []
 
@@ -3314,7 +3325,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def update_function_async_invoke_config(self, request):
-        """设置函数异步配置信息。
+        """设置函数异步配置信息
 
         设置函数异步配置信息。
         
@@ -3374,7 +3385,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def update_function_code(self, request):
-        """修改函数代码。
+        """修改函数代码
 
         修改指定的函数的代码。
         
@@ -3434,7 +3445,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def update_function_config(self, request):
-        """修改函数的metadata信息。
+        """修改函数的metadata信息
 
         修改指定的函数的metadata信息。
         
@@ -3553,22 +3564,22 @@ class FunctionGraphClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def update_function_reserved_instances(self, request):
-        """更新函数预留实例个数
+    def update_function_reserved_instances_count(self, request):
+        """修改函数预留实例数量
 
-        为函数绑定预留实例
+        修改函数预留实例数量。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
-        :param request: Request instance for UpdateFunctionReservedInstances
-        :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionReservedInstancesRequest`
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionReservedInstancesResponse`
+        :param request: Request instance for UpdateFunctionReservedInstancesCount
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionReservedInstancesCountRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionReservedInstancesCountResponse`
         """
-        return self.update_function_reserved_instances_with_http_info(request)
+        return self.update_function_reserved_instances_count_with_http_info(request)
 
-    def update_function_reserved_instances_with_http_info(self, request):
-        all_params = ['function_urn', 'update_function_reserved_instances_request_body']
+    def update_function_reserved_instances_count_with_http_info(self, request):
+        all_params = ['function_urn', 'update_function_reserved_instances_count_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3607,7 +3618,7 @@ class FunctionGraphClient(Client):
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='UpdateFunctionReservedInstancesResponse',
+            response_type='UpdateFunctionReservedInstancesCountResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3738,7 +3749,7 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def update_version_alias(self, request):
-        """修改函数版本别名信息。
+        """修改函数版本别名信息
 
         修改函数版本别名信息。
         
@@ -3800,9 +3811,9 @@ class FunctionGraphClient(Client):
             request_type=request.__class__.__name__)
 
     def update_work_flow(self, request):
-        """修改指定函数流实例
+        """修改指定函数流实例的元数据
 
-        修改指定函数流实例
+        修改指定函数流实例的元数据
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

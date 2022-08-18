@@ -89,7 +89,7 @@ class MonthlyBillRecord:
 
         The model defined in huaweicloud sdk
 
-        :param bill_cycle: 流水账单所在账期，格式为YYYY-MM。
+        :param bill_cycle: 流水账单所在账期，东八区时间，格式为YYYY-MM。
         :type bill_cycle: str
         :param customer_id: 消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
         :type customer_id: str
@@ -245,7 +245,7 @@ class MonthlyBillRecord:
     def bill_cycle(self):
         """Gets the bill_cycle of this MonthlyBillRecord.
 
-        流水账单所在账期，格式为YYYY-MM。
+        流水账单所在账期，东八区时间，格式为YYYY-MM。
 
         :return: The bill_cycle of this MonthlyBillRecord.
         :rtype: str
@@ -256,7 +256,7 @@ class MonthlyBillRecord:
     def bill_cycle(self, bill_cycle):
         """Sets the bill_cycle of this MonthlyBillRecord.
 
-        流水账单所在账期，格式为YYYY-MM。
+        流水账单所在账期，东八区时间，格式为YYYY-MM。
 
         :param bill_cycle: The bill_cycle of this MonthlyBillRecord.
         :type bill_cycle: str

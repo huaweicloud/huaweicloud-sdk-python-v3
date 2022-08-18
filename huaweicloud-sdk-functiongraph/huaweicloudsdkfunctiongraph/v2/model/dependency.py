@@ -21,7 +21,6 @@ class Dependency:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
         'owner': 'str',
         'link': 'str',
         'runtime': 'str',
@@ -33,7 +32,6 @@ class Dependency:
     }
 
     attribute_map = {
-        'id': 'id',
         'owner': 'owner',
         'link': 'link',
         'runtime': 'runtime',
@@ -44,13 +42,11 @@ class Dependency:
         'file_name': 'file_name'
     }
 
-    def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None):
+    def __init__(self, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None):
         """Dependency
 
         The model defined in huaweicloud sdk
 
-        :param id: 依赖包id。
-        :type id: str
         :param owner: 依赖包属主的domainId。
         :type owner: str
         :param link: 依赖包在OBS上的链接。
@@ -71,7 +67,6 @@ class Dependency:
         
         
 
-        self._id = None
         self._owner = None
         self._link = None
         self._runtime = None
@@ -82,7 +77,6 @@ class Dependency:
         self._file_name = None
         self.discriminator = None
 
-        self.id = id
         self.owner = owner
         self.link = link
         self.runtime = runtime
@@ -92,28 +86,6 @@ class Dependency:
         self.description = description
         if file_name is not None:
             self.file_name = file_name
-
-    @property
-    def id(self):
-        """Gets the id of this Dependency.
-
-        依赖包id。
-
-        :return: The id of this Dependency.
-        :rtype: str
-        """
-        return self._id
-
-    @id.setter
-    def id(self, id):
-        """Sets the id of this Dependency.
-
-        依赖包id。
-
-        :param id: The id of this Dependency.
-        :type id: str
-        """
-        self._id = id
 
     @property
     def owner(self):

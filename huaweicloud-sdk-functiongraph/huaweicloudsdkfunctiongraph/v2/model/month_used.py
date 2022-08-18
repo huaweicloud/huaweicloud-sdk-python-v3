@@ -22,7 +22,7 @@ class MonthUsed:
 
     openapi_types = {
         'date': 'str',
-        'value': 'float'
+        'value': 'int'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class MonthUsed:
         :param date: 日期
         :type date: str
         :param value: 使用量
-        :type value: float
+        :type value: int
         """
         
         
@@ -81,7 +81,7 @@ class MonthUsed:
         使用量
 
         :return: The value of this MonthUsed.
-        :rtype: float
+        :rtype: int
         """
         return self._value
 
@@ -92,7 +92,7 @@ class MonthUsed:
         使用量
 
         :param value: The value of this MonthUsed.
-        :type value: float
+        :type value: int
         """
         self._value = value
 

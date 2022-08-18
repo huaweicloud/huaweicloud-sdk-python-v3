@@ -127,7 +127,7 @@ class ResFeeRecordV2:
 
         The model defined in huaweicloud sdk
 
-        :param bill_date: 资源消费记录的日期。 格式：YYYY-MM-DD。按照东八区截取。
+        :param bill_date: 资源消费记录的日期。 格式：YYYY-MM-DD。按照东八区时间截取。
         :type bill_date: str
         :param bill_type: 账单类型。 1：消费-新购2：消费-续订3：消费-变更4：退款-退订5：消费-使用8：消费-自动续订9：调账-补偿14：消费-服务支持计划月末扣费16：调账-扣费18：消费-按月付费20：退款-变更
         :type bill_type: int
@@ -378,7 +378,7 @@ class ResFeeRecordV2:
     def bill_date(self):
         """Gets the bill_date of this ResFeeRecordV2.
 
-        资源消费记录的日期。 格式：YYYY-MM-DD。按照东八区截取。
+        资源消费记录的日期。 格式：YYYY-MM-DD。按照东八区时间截取。
 
         :return: The bill_date of this ResFeeRecordV2.
         :rtype: str
@@ -389,7 +389,7 @@ class ResFeeRecordV2:
     def bill_date(self, bill_date):
         """Sets the bill_date of this ResFeeRecordV2.
 
-        资源消费记录的日期。 格式：YYYY-MM-DD。按照东八区截取。
+        资源消费记录的日期。 格式：YYYY-MM-DD。按照东八区时间截取。
 
         :param bill_date: The bill_date of this ResFeeRecordV2.
         :type bill_date: str

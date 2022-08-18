@@ -31,7 +31,7 @@ class IgnoreRuleBody:
         'mode': 'int',
         'url_logic': 'str',
         'conditions': 'list[Condition]',
-        'domains': 'list[str]',
+        'domain': 'list[str]',
         'advanced': 'list[Advanced]'
     }
 
@@ -46,11 +46,11 @@ class IgnoreRuleBody:
         'mode': 'mode',
         'url_logic': 'url_logic',
         'conditions': 'conditions',
-        'domains': 'domains',
+        'domain': 'domain',
         'advanced': 'advanced'
     }
 
-    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, url=None, rule=None, mode=None, url_logic=None, conditions=None, domains=None, advanced=None):
+    def __init__(self, id=None, policyid=None, timestamp=None, description=None, status=None, url=None, rule=None, mode=None, url_logic=None, conditions=None, domain=None, advanced=None):
         """IgnoreRuleBody
 
         The model defined in huaweicloud sdk
@@ -75,8 +75,8 @@ class IgnoreRuleBody:
         :type url_logic: str
         :param conditions: 条件列表
         :type conditions: list[:class:`huaweicloudsdkwaf.v1.Condition`]
-        :param domains: 防护域名或防护网站
-        :type domains: list[str]
+        :param domain: 防护域名或防护网站
+        :type domain: list[str]
         :param advanced: 高级配置项
         :type advanced: list[:class:`huaweicloudsdkwaf.v1.Advanced`]
         """
@@ -93,7 +93,7 @@ class IgnoreRuleBody:
         self._mode = None
         self._url_logic = None
         self._conditions = None
-        self._domains = None
+        self._domain = None
         self._advanced = None
         self.discriminator = None
 
@@ -117,8 +117,8 @@ class IgnoreRuleBody:
             self.url_logic = url_logic
         if conditions is not None:
             self.conditions = conditions
-        if domains is not None:
-            self.domains = domains
+        if domain is not None:
+            self.domain = domain
         if advanced is not None:
             self.advanced = advanced
 
@@ -343,26 +343,26 @@ class IgnoreRuleBody:
         self._conditions = conditions
 
     @property
-    def domains(self):
-        """Gets the domains of this IgnoreRuleBody.
+    def domain(self):
+        """Gets the domain of this IgnoreRuleBody.
 
         防护域名或防护网站
 
-        :return: The domains of this IgnoreRuleBody.
+        :return: The domain of this IgnoreRuleBody.
         :rtype: list[str]
         """
-        return self._domains
+        return self._domain
 
-    @domains.setter
-    def domains(self, domains):
-        """Sets the domains of this IgnoreRuleBody.
+    @domain.setter
+    def domain(self, domain):
+        """Sets the domain of this IgnoreRuleBody.
 
         防护域名或防护网站
 
-        :param domains: The domains of this IgnoreRuleBody.
-        :type domains: list[str]
+        :param domain: The domain of this IgnoreRuleBody.
+        :type domain: list[str]
         """
-        self._domains = domains
+        self._domain = domain
 
     @property
     def advanced(self):

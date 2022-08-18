@@ -21,71 +21,49 @@ class ListDependenciesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'count': 'int',
         'dependencies': 'list[ListDependenciesResult]',
-        'next_marker': 'int'
+        'next_marker': 'int',
+        'count': 'int'
     }
 
     attribute_map = {
-        'count': 'count',
         'dependencies': 'dependencies',
-        'next_marker': 'next_marker'
+        'next_marker': 'next_marker',
+        'count': 'count'
     }
 
-    def __init__(self, count=None, dependencies=None, next_marker=None):
+    def __init__(self, dependencies=None, next_marker=None, count=None):
         """ListDependenciesResponse
 
         The model defined in huaweicloud sdk
 
-        :param count: 依赖包总数。
-        :type count: int
-        :param dependencies: 依赖包列表。
+        :param dependencies: 依赖包列表
         :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.ListDependenciesResult`]
-        :param next_marker: 下次读取位置。
+        :param next_marker: 下次读取位置
         :type next_marker: int
+        :param count: 依赖包总数
+        :type count: int
         """
         
         super(ListDependenciesResponse, self).__init__()
 
-        self._count = None
         self._dependencies = None
         self._next_marker = None
+        self._count = None
         self.discriminator = None
 
-        if count is not None:
-            self.count = count
         if dependencies is not None:
             self.dependencies = dependencies
         if next_marker is not None:
             self.next_marker = next_marker
-
-    @property
-    def count(self):
-        """Gets the count of this ListDependenciesResponse.
-
-        依赖包总数。
-
-        :return: The count of this ListDependenciesResponse.
-        :rtype: int
-        """
-        return self._count
-
-    @count.setter
-    def count(self, count):
-        """Sets the count of this ListDependenciesResponse.
-
-        依赖包总数。
-
-        :param count: The count of this ListDependenciesResponse.
-        :type count: int
-        """
-        self._count = count
+        if count is not None:
+            self.count = count
 
     @property
     def dependencies(self):
         """Gets the dependencies of this ListDependenciesResponse.
 
-        依赖包列表。
+        依赖包列表
 
         :return: The dependencies of this ListDependenciesResponse.
         :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ListDependenciesResult`]
@@ -96,7 +74,7 @@ class ListDependenciesResponse(SdkResponse):
     def dependencies(self, dependencies):
         """Sets the dependencies of this ListDependenciesResponse.
 
-        依赖包列表。
+        依赖包列表
 
         :param dependencies: The dependencies of this ListDependenciesResponse.
         :type dependencies: list[:class:`huaweicloudsdkfunctiongraph.v2.ListDependenciesResult`]
@@ -107,7 +85,7 @@ class ListDependenciesResponse(SdkResponse):
     def next_marker(self):
         """Gets the next_marker of this ListDependenciesResponse.
 
-        下次读取位置。
+        下次读取位置
 
         :return: The next_marker of this ListDependenciesResponse.
         :rtype: int
@@ -118,12 +96,34 @@ class ListDependenciesResponse(SdkResponse):
     def next_marker(self, next_marker):
         """Sets the next_marker of this ListDependenciesResponse.
 
-        下次读取位置。
+        下次读取位置
 
         :param next_marker: The next_marker of this ListDependenciesResponse.
         :type next_marker: int
         """
         self._next_marker = next_marker
+
+    @property
+    def count(self):
+        """Gets the count of this ListDependenciesResponse.
+
+        依赖包总数
+
+        :return: The count of this ListDependenciesResponse.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListDependenciesResponse.
+
+        依赖包总数
+
+        :param count: The count of this ListDependenciesResponse.
+        :type count: int
+        """
+        self._count = count
 
     def to_dict(self):
         """Returns the model properties as a dict"""

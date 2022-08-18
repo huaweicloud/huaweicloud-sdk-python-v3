@@ -73,7 +73,7 @@ class CustomerPostalAddressV2:
         :type areacode: str
         :param mobile_phone: 手机号码，不带国家码。
         :type mobile_phone: str
-        :param is_default: 是否默认地址，默认为0。 1：默认地址0：非默认地址
+        :param is_default: 是否默认地址，默认值为“0：非默认地址”。 1：默认地址0：非默认地址
         :type is_default: int
         """
         
@@ -339,7 +339,7 @@ class CustomerPostalAddressV2:
     def is_default(self):
         """Gets the is_default of this CustomerPostalAddressV2.
 
-        是否默认地址，默认为0。 1：默认地址0：非默认地址
+        是否默认地址，默认值为“0：非默认地址”。 1：默认地址0：非默认地址
 
         :return: The is_default of this CustomerPostalAddressV2.
         :rtype: int
@@ -350,7 +350,7 @@ class CustomerPostalAddressV2:
     def is_default(self, is_default):
         """Sets the is_default of this CustomerPostalAddressV2.
 
-        是否默认地址，默认为0。 1：默认地址0：非默认地址
+        是否默认地址，默认值为“0：非默认地址”。 1：默认地址0：非默认地址
 
         :param is_default: The is_default of this CustomerPostalAddressV2.
         :type is_default: int

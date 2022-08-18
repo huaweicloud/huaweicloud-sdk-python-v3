@@ -39,9 +39,9 @@ class ShowFunctionTriggerRequest:
 
         :param function_urn: 函数的URN，详细解释见FunctionGraph函数模型的描述。
         :type function_urn: str
-        :param trigger_type_code: 
+        :param trigger_type_code: 触发器类型代码。
         :type trigger_type_code: str
-        :param trigger_id: 
+        :param trigger_id: 触发器编码。
         :type trigger_id: str
         """
         
@@ -82,6 +82,7 @@ class ShowFunctionTriggerRequest:
     def trigger_type_code(self):
         """Gets the trigger_type_code of this ShowFunctionTriggerRequest.
 
+        触发器类型代码。
 
         :return: The trigger_type_code of this ShowFunctionTriggerRequest.
         :rtype: str
@@ -92,6 +93,7 @@ class ShowFunctionTriggerRequest:
     def trigger_type_code(self, trigger_type_code):
         """Sets the trigger_type_code of this ShowFunctionTriggerRequest.
 
+        触发器类型代码。
 
         :param trigger_type_code: The trigger_type_code of this ShowFunctionTriggerRequest.
         :type trigger_type_code: str
@@ -102,6 +104,7 @@ class ShowFunctionTriggerRequest:
     def trigger_id(self):
         """Gets the trigger_id of this ShowFunctionTriggerRequest.
 
+        触发器编码。
 
         :return: The trigger_id of this ShowFunctionTriggerRequest.
         :rtype: str
@@ -112,6 +115,7 @@ class ShowFunctionTriggerRequest:
     def trigger_id(self, trigger_id):
         """Sets the trigger_id of this ShowFunctionTriggerRequest.
 
+        触发器编码。
 
         :param trigger_id: The trigger_id of this ShowFunctionTriggerRequest.
         :type trigger_id: str

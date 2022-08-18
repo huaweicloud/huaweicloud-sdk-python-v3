@@ -31,7 +31,8 @@ class CreateQueueReq:
         'resource_mode': 'int',
         'labels': 'list[object]',
         'feature': 'str',
-        'tags': 'list[JobsTags]'
+        'tags': 'list[JobsTags]',
+        'elastic_resource_pool_name': 'str'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class CreateQueueReq:
         'resource_mode': 'resource_mode',
         'labels': 'labels',
         'feature': 'feature',
-        'tags': 'tags'
+        'tags': 'tags',
+        'elastic_resource_pool_name': 'elastic_resource_pool_name'
     }
 
-    def __init__(self, queue_name=None, queue_type=None, description=None, cu_count=None, charging_mode=None, enterprise_project_id=None, platform=None, resource_mode=None, labels=None, feature=None, tags=None):
+    def __init__(self, queue_name=None, queue_type=None, description=None, cu_count=None, charging_mode=None, enterprise_project_id=None, platform=None, resource_mode=None, labels=None, feature=None, tags=None, elastic_resource_pool_name=None):
         """CreateQueueReq
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class CreateQueueReq:
         :type feature: str
         :param tags: 队列的标签。具体请参考表tags。
         :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :param elastic_resource_pool_name: 新建的弹性资源池名称，名称只能包含数字、小写英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。
+        :type elastic_resource_pool_name: str
         """
         
         
@@ -90,6 +94,7 @@ class CreateQueueReq:
         self._labels = None
         self._feature = None
         self._tags = None
+        self._elastic_resource_pool_name = None
         self.discriminator = None
 
         self.queue_name = queue_name
@@ -112,6 +117,8 @@ class CreateQueueReq:
             self.feature = feature
         if tags is not None:
             self.tags = tags
+        if elastic_resource_pool_name is not None:
+            self.elastic_resource_pool_name = elastic_resource_pool_name
 
     @property
     def queue_name(self):
@@ -354,6 +361,28 @@ class CreateQueueReq:
         :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
         """
         self._tags = tags
+
+    @property
+    def elastic_resource_pool_name(self):
+        """Gets the elastic_resource_pool_name of this CreateQueueReq.
+
+        新建的弹性资源池名称，名称只能包含数字、小写英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。
+
+        :return: The elastic_resource_pool_name of this CreateQueueReq.
+        :rtype: str
+        """
+        return self._elastic_resource_pool_name
+
+    @elastic_resource_pool_name.setter
+    def elastic_resource_pool_name(self, elastic_resource_pool_name):
+        """Sets the elastic_resource_pool_name of this CreateQueueReq.
+
+        新建的弹性资源池名称，名称只能包含数字、小写英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。
+
+        :param elastic_resource_pool_name: The elastic_resource_pool_name of this CreateQueueReq.
+        :type elastic_resource_pool_name: str
+        """
+        self._elastic_resource_pool_name = elastic_resource_pool_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

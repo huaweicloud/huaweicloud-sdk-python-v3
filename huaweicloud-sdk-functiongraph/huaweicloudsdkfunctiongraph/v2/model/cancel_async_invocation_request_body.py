@@ -47,8 +47,7 @@ class CancelAsyncInvocationRequestBody:
         self._type = None
         self.discriminator = None
 
-        if request_id is not None:
-            self.request_id = request_id
+        self.request_id = request_id
         if type is not None:
             self.type = type
 

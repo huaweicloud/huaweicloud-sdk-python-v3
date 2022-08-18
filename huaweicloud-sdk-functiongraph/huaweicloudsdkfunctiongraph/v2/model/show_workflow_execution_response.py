@@ -57,7 +57,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
 
         :param workflow_id: 流程定义ID
         :type workflow_id: str
-        :param workflow_urn: 唯一标识ID，流程URN
+        :param workflow_urn: 函数工作流URN, 格式为： urn:fss:&lt;region_id&gt;:&lt;project_id&gt;:workflow:\\&lt;package\\&gt;:&lt;workflow_name&gt;:\\&lt;version\\&gt; 注意： package当前只支持default version当前只支持latest
         :type workflow_urn: str
         :param execution_id: 流程执行实例ID
         :type execution_id: str
@@ -148,7 +148,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
     def workflow_urn(self):
         """Gets the workflow_urn of this ShowWorkflowExecutionResponse.
 
-        唯一标识ID，流程URN
+        函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
         :return: The workflow_urn of this ShowWorkflowExecutionResponse.
         :rtype: str
@@ -159,7 +159,7 @@ class ShowWorkflowExecutionResponse(SdkResponse):
     def workflow_urn(self, workflow_urn):
         """Sets the workflow_urn of this ShowWorkflowExecutionResponse.
 
-        唯一标识ID，流程URN
+        函数工作流URN, 格式为： urn:fss:<region_id>:<project_id>:workflow:\\<package\\>:<workflow_name>:\\<version\\> 注意： package当前只支持default version当前只支持latest
 
         :param workflow_urn: The workflow_urn of this ShowWorkflowExecutionResponse.
         :type workflow_urn: str

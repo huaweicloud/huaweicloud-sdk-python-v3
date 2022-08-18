@@ -41,9 +41,9 @@ class SendSmVerificationCodeReq:
 
         :param mobile_phone: 接受短信验证码的手机号码。
         :type mobile_phone: str
-        :param timeout: 超时时间，不指定时默认为10分钟。 单位：分钟
+        :param timeout: 超时时间，默认值为10分钟。 单位：分钟
         :type timeout: int
-        :param language: 发送的短信的语言。 zh-cn: 中文en-us: 英语 不设置默认为偏好设置的默认语言。
+        :param language: 发送的短信的语言。 zh-cn: 中文en-us: 英语 默认为偏好设置的默认语言。
         :type language: str
         :param sm_template_args: 短信发送模板中的变量，具体参见表1。
         :type sm_template_args: list[:class:`huaweicloudsdkbss.v2.TemplateArgs`]
@@ -91,7 +91,7 @@ class SendSmVerificationCodeReq:
     def timeout(self):
         """Gets the timeout of this SendSmVerificationCodeReq.
 
-        超时时间，不指定时默认为10分钟。 单位：分钟
+        超时时间，默认值为10分钟。 单位：分钟
 
         :return: The timeout of this SendSmVerificationCodeReq.
         :rtype: int
@@ -102,7 +102,7 @@ class SendSmVerificationCodeReq:
     def timeout(self, timeout):
         """Sets the timeout of this SendSmVerificationCodeReq.
 
-        超时时间，不指定时默认为10分钟。 单位：分钟
+        超时时间，默认值为10分钟。 单位：分钟
 
         :param timeout: The timeout of this SendSmVerificationCodeReq.
         :type timeout: int
@@ -113,7 +113,7 @@ class SendSmVerificationCodeReq:
     def language(self):
         """Gets the language of this SendSmVerificationCodeReq.
 
-        发送的短信的语言。 zh-cn: 中文en-us: 英语 不设置默认为偏好设置的默认语言。
+        发送的短信的语言。 zh-cn: 中文en-us: 英语 默认为偏好设置的默认语言。
 
         :return: The language of this SendSmVerificationCodeReq.
         :rtype: str
@@ -124,7 +124,7 @@ class SendSmVerificationCodeReq:
     def language(self, language):
         """Sets the language of this SendSmVerificationCodeReq.
 
-        发送的短信的语言。 zh-cn: 中文en-us: 英语 不设置默认为偏好设置的默认语言。
+        发送的短信的语言。 zh-cn: 中文en-us: 英语 默认为偏好设置的默认语言。
 
         :param language: The language of this SendSmVerificationCodeReq.
         :type language: str

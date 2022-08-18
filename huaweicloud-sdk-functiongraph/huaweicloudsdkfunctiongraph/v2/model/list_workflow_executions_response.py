@@ -21,7 +21,7 @@ class ListWorkflowExecutionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'executions': 'list[ListWorkflowExecutionResult]'
+        'executions': 'list[FlowExecutionBrief]'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class ListWorkflowExecutionsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param executions: 流程执行信息列表
-        :type executions: list[:class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionResult`]
+        :type executions: list[:class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBrief`]
         """
         
         super(ListWorkflowExecutionsResponse, self).__init__()
@@ -52,7 +52,7 @@ class ListWorkflowExecutionsResponse(SdkResponse):
         流程执行信息列表
 
         :return: The executions of this ListWorkflowExecutionsResponse.
-        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionResult`]
+        :rtype: list[:class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBrief`]
         """
         return self._executions
 
@@ -63,7 +63,7 @@ class ListWorkflowExecutionsResponse(SdkResponse):
         流程执行信息列表
 
         :param executions: The executions of this ListWorkflowExecutionsResponse.
-        :type executions: list[:class:`huaweicloudsdkfunctiongraph.v2.ListWorkflowExecutionResult`]
+        :type executions: list[:class:`huaweicloudsdkfunctiongraph.v2.FlowExecutionBrief`]
         """
         self._executions = executions
 

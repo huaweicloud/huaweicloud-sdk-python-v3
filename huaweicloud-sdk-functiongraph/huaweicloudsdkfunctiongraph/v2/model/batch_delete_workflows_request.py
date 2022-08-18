@@ -21,7 +21,7 @@ class BatchDeleteWorkflowsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'BatchDeleteWorkflowsRequestBody'
+        'body': 'WorkflowDeleteBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class BatchDeleteWorkflowsRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the BatchDeleteWorkflowsRequest
-        :type body: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsRequestBody`
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowDeleteBody`
         """
         
         
@@ -51,7 +51,7 @@ class BatchDeleteWorkflowsRequest:
 
 
         :return: The body of this BatchDeleteWorkflowsRequest.
-        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsRequestBody`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowDeleteBody`
         """
         return self._body
 
@@ -61,7 +61,7 @@ class BatchDeleteWorkflowsRequest:
 
 
         :param body: The body of this BatchDeleteWorkflowsRequest.
-        :type body: :class:`huaweicloudsdkfunctiongraph.v2.BatchDeleteWorkflowsRequestBody`
+        :type body: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowDeleteBody`
         """
         self._body = body
 

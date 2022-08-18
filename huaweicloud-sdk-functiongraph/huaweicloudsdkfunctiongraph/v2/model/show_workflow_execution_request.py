@@ -22,15 +22,17 @@ class ShowWorkflowExecutionRequest:
 
     openapi_types = {
         'workflow_id': 'str',
-        'execution_id': 'str'
+        'execution_id': 'str',
+        'x_get_workflow_full_history_data': 'bool'
     }
 
     attribute_map = {
         'workflow_id': 'workflow_id',
-        'execution_id': 'execution_id'
+        'execution_id': 'execution_id',
+        'x_get_workflow_full_history_data': 'X-Get-Workflow-Full-History-Data'
     }
 
-    def __init__(self, workflow_id=None, execution_id=None):
+    def __init__(self, workflow_id=None, execution_id=None, x_get_workflow_full_history_data=None):
         """ShowWorkflowExecutionRequest
 
         The model defined in huaweicloud sdk
@@ -39,16 +41,21 @@ class ShowWorkflowExecutionRequest:
         :type workflow_id: str
         :param execution_id: 函数流执行实例ID
         :type execution_id: str
+        :param x_get_workflow_full_history_data: 获取函数流执行详情完整输出值
+        :type x_get_workflow_full_history_data: bool
         """
         
         
 
         self._workflow_id = None
         self._execution_id = None
+        self._x_get_workflow_full_history_data = None
         self.discriminator = None
 
         self.workflow_id = workflow_id
         self.execution_id = execution_id
+        if x_get_workflow_full_history_data is not None:
+            self.x_get_workflow_full_history_data = x_get_workflow_full_history_data
 
     @property
     def workflow_id(self):
@@ -93,6 +100,28 @@ class ShowWorkflowExecutionRequest:
         :type execution_id: str
         """
         self._execution_id = execution_id
+
+    @property
+    def x_get_workflow_full_history_data(self):
+        """Gets the x_get_workflow_full_history_data of this ShowWorkflowExecutionRequest.
+
+        获取函数流执行详情完整输出值
+
+        :return: The x_get_workflow_full_history_data of this ShowWorkflowExecutionRequest.
+        :rtype: bool
+        """
+        return self._x_get_workflow_full_history_data
+
+    @x_get_workflow_full_history_data.setter
+    def x_get_workflow_full_history_data(self, x_get_workflow_full_history_data):
+        """Sets the x_get_workflow_full_history_data of this ShowWorkflowExecutionRequest.
+
+        获取函数流执行详情完整输出值
+
+        :param x_get_workflow_full_history_data: The x_get_workflow_full_history_data of this ShowWorkflowExecutionRequest.
+        :type x_get_workflow_full_history_data: bool
+        """
+        self._x_get_workflow_full_history_data = x_get_workflow_full_history_data
 
     def to_dict(self):
         """Returns the model properties as a dict"""
