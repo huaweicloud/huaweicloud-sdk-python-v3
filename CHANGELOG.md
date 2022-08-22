@@ -1,3 +1,14 @@
+# 3.0.105 2022-08-22
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `uri` -> `string` of the request parameter `object` of the interface `CreateRecordIndex`
+
 # 3.0.104 2022-08-18
 
 ### HuaweiCloud SDK BSSINTL

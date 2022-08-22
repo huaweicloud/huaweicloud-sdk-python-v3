@@ -12,8 +12,11 @@ class CcRegion:
 
     CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://cc.myhuaweicloud.com")
 
+    CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://ccaas.cn-north-1.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-4": CN_NORTH_4,
+        "cn-north-1": CN_NORTH_1,
     }
 
     @classmethod
