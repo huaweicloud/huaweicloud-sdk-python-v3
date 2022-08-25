@@ -47,7 +47,8 @@ class CreateSQLJobReq:
         'resume_checkpoint': 'bool',
         'resume_max_num': 'int',
         'runtime_config': 'str',
-        'tags': 'list[JobsTags]'
+        'tags': 'list[JobsTags]',
+        'flink_version': 'str'
     }
 
     attribute_map = {
@@ -77,10 +78,11 @@ class CreateSQLJobReq:
         'resume_checkpoint': 'resume_checkpoint',
         'resume_max_num': 'resume_max_num',
         'runtime_config': 'runtime_config',
-        'tags': 'tags'
+        'tags': 'tags',
+        'flink_version': 'flink_version'
     }
 
-    def __init__(self, name=None, desc=None, template_id=None, queue_name=None, sql_body=None, run_mode=None, cu_number=None, parallel_number=None, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, obs_bucket=None, log_enabled=None, smn_topic=None, restart_when_exception=None, idle_state_retention=None, job_type=None, edge_group_ids=None, dirty_data_strategy=None, udf_jar_url=None, manager_cu_number=None, tm_cus=None, tm_slot_num=None, resume_checkpoint=None, resume_max_num=None, runtime_config=None, tags=None):
+    def __init__(self, name=None, desc=None, template_id=None, queue_name=None, sql_body=None, run_mode=None, cu_number=None, parallel_number=None, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, obs_bucket=None, log_enabled=None, smn_topic=None, restart_when_exception=None, idle_state_retention=None, job_type=None, edge_group_ids=None, dirty_data_strategy=None, udf_jar_url=None, manager_cu_number=None, tm_cus=None, tm_slot_num=None, resume_checkpoint=None, resume_max_num=None, runtime_config=None, tags=None, flink_version=None):
         """CreateSQLJobReq
 
         The model defined in huaweicloud sdk
@@ -139,6 +141,8 @@ class CreateSQLJobReq:
         :type runtime_config: str
         :param tags: Flink SQL作业的标签。具体请参考表tags。
         :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :param flink_version: Flink版本。当前只支持1.10和1.12。
+        :type flink_version: str
         """
         
         
@@ -170,6 +174,7 @@ class CreateSQLJobReq:
         self._resume_max_num = None
         self._runtime_config = None
         self._tags = None
+        self._flink_version = None
         self.discriminator = None
 
         self.name = name
@@ -225,6 +230,8 @@ class CreateSQLJobReq:
             self.runtime_config = runtime_config
         if tags is not None:
             self.tags = tags
+        if flink_version is not None:
+            self.flink_version = flink_version
 
     @property
     def name(self):
@@ -819,6 +826,28 @@ class CreateSQLJobReq:
         :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
         """
         self._tags = tags
+
+    @property
+    def flink_version(self):
+        """Gets the flink_version of this CreateSQLJobReq.
+
+        Flink版本。当前只支持1.10和1.12。
+
+        :return: The flink_version of this CreateSQLJobReq.
+        :rtype: str
+        """
+        return self._flink_version
+
+    @flink_version.setter
+    def flink_version(self, flink_version):
+        """Sets the flink_version of this CreateSQLJobReq.
+
+        Flink版本。当前只支持1.10和1.12。
+
+        :param flink_version: The flink_version of this CreateSQLJobReq.
+        :type flink_version: str
+        """
+        self._flink_version = flink_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

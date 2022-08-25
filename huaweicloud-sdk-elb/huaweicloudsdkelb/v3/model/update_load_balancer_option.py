@@ -34,7 +34,8 @@ class UpdateLoadBalancerOption:
         'elb_virsubnet_ids': 'list[str]',
         'deletion_protection_enable': 'bool',
         'prepaid_options': 'PrepaidUpdateOption',
-        'autoscaling': 'UpdateLoadbalancerAutoscalingOption'
+        'autoscaling': 'UpdateLoadbalancerAutoscalingOption',
+        'waf_failure_action': 'str'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class UpdateLoadBalancerOption:
         'elb_virsubnet_ids': 'elb_virsubnet_ids',
         'deletion_protection_enable': 'deletion_protection_enable',
         'prepaid_options': 'prepaid_options',
-        'autoscaling': 'autoscaling'
+        'autoscaling': 'autoscaling',
+        'waf_failure_action': 'waf_failure_action'
     }
 
-    def __init__(self, name=None, admin_state_up=None, description=None, ipv6_vip_virsubnet_id=None, vip_subnet_cidr_id=None, vip_address=None, l4_flavor_id=None, l7_flavor_id=None, ipv6_bandwidth=None, ip_target_enable=None, elb_virsubnet_ids=None, deletion_protection_enable=None, prepaid_options=None, autoscaling=None):
+    def __init__(self, name=None, admin_state_up=None, description=None, ipv6_vip_virsubnet_id=None, vip_subnet_cidr_id=None, vip_address=None, l4_flavor_id=None, l7_flavor_id=None, ipv6_bandwidth=None, ip_target_enable=None, elb_virsubnet_ids=None, deletion_protection_enable=None, prepaid_options=None, autoscaling=None, waf_failure_action=None):
         """UpdateLoadBalancerOption
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class UpdateLoadBalancerOption:
         :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidUpdateOption`
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkelb.v3.UpdateLoadbalancerAutoscalingOption`
+        :param waf_failure_action: WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）   使用说明：只有绑定了waf的LB实例，该字段才会生效。
+        :type waf_failure_action: str
         """
         
         
@@ -105,6 +109,7 @@ class UpdateLoadBalancerOption:
         self._deletion_protection_enable = None
         self._prepaid_options = None
         self._autoscaling = None
+        self._waf_failure_action = None
         self.discriminator = None
 
         if name is not None:
@@ -135,6 +140,8 @@ class UpdateLoadBalancerOption:
             self.prepaid_options = prepaid_options
         if autoscaling is not None:
             self.autoscaling = autoscaling
+        if waf_failure_action is not None:
+            self.waf_failure_action = waf_failure_action
 
     @property
     def name(self):
@@ -437,6 +444,28 @@ class UpdateLoadBalancerOption:
         :type autoscaling: :class:`huaweicloudsdkelb.v3.UpdateLoadbalancerAutoscalingOption`
         """
         self._autoscaling = autoscaling
+
+    @property
+    def waf_failure_action(self):
+        """Gets the waf_failure_action of this UpdateLoadBalancerOption.
+
+        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）   使用说明：只有绑定了waf的LB实例，该字段才会生效。
+
+        :return: The waf_failure_action of this UpdateLoadBalancerOption.
+        :rtype: str
+        """
+        return self._waf_failure_action
+
+    @waf_failure_action.setter
+    def waf_failure_action(self, waf_failure_action):
+        """Sets the waf_failure_action of this UpdateLoadBalancerOption.
+
+        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）   使用说明：只有绑定了waf的LB实例，该字段才会生效。
+
+        :param waf_failure_action: The waf_failure_action of this UpdateLoadBalancerOption.
+        :type waf_failure_action: str
+        """
+        self._waf_failure_action = waf_failure_action
 
     def to_dict(self):
         """Returns the model properties as a dict"""

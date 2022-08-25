@@ -130,7 +130,8 @@ class InstanceConfig:
             self.user_data = user_data
         if metadata is not None:
             self.metadata = metadata
-        self.security_groups = security_groups
+        if security_groups is not None:
+            self.security_groups = security_groups
         if server_group_id is not None:
             self.server_group_id = server_group_id
         if tenancy is not None:

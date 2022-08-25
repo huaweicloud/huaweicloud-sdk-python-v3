@@ -45,7 +45,7 @@ class CdmRestartClusterReqRestart:
 
         :param restart_delay_time: 重启时延，单位：秒
         :type restart_delay_time: int
-        :param restart_mode: 重启类型： - IMMEDIATELY：立即重启。 - GRACEFULL：优雅重启。 - FORCELY：强制重启。 - SOFTLY：一般重启。  默认值为“IMMEDIATELY”。优雅重启等作业执行完后，有序的释放资源再重启，并且只重启CDM服务的进程，不会重启集群虚拟机。强制重启业务进程会中断，并重启集群的虚拟机。
+        :param restart_mode: 重启类型： - IMMEDIATELY：立即重启。 - FORCELY：强制重启。 - SOFTLY：一般重启。  默认值为“IMMEDIATELY”。强制重启业务进程会中断，并重启集群的虚拟机。
         :type restart_mode: str
         :param restart_level: 重启级别： - SERVICE：重启服务。 - VM：重启虚拟机。  默认值为“SERVICE”。
         :type restart_level: str
@@ -105,7 +105,7 @@ class CdmRestartClusterReqRestart:
     def restart_mode(self):
         """Gets the restart_mode of this CdmRestartClusterReqRestart.
 
-        重启类型： - IMMEDIATELY：立即重启。 - GRACEFULL：优雅重启。 - FORCELY：强制重启。 - SOFTLY：一般重启。  默认值为“IMMEDIATELY”。优雅重启等作业执行完后，有序的释放资源再重启，并且只重启CDM服务的进程，不会重启集群虚拟机。强制重启业务进程会中断，并重启集群的虚拟机。
+        重启类型： - IMMEDIATELY：立即重启。 - FORCELY：强制重启。 - SOFTLY：一般重启。  默认值为“IMMEDIATELY”。强制重启业务进程会中断，并重启集群的虚拟机。
 
         :return: The restart_mode of this CdmRestartClusterReqRestart.
         :rtype: str
@@ -116,7 +116,7 @@ class CdmRestartClusterReqRestart:
     def restart_mode(self, restart_mode):
         """Sets the restart_mode of this CdmRestartClusterReqRestart.
 
-        重启类型： - IMMEDIATELY：立即重启。 - GRACEFULL：优雅重启。 - FORCELY：强制重启。 - SOFTLY：一般重启。  默认值为“IMMEDIATELY”。优雅重启等作业执行完后，有序的释放资源再重启，并且只重启CDM服务的进程，不会重启集群虚拟机。强制重启业务进程会中断，并重启集群的虚拟机。
+        重启类型： - IMMEDIATELY：立即重启。 - FORCELY：强制重启。 - SOFTLY：一般重启。  默认值为“IMMEDIATELY”。强制重启业务进程会中断，并重启集群的虚拟机。
 
         :param restart_mode: The restart_mode of this CdmRestartClusterReqRestart.
         :type restart_mode: str

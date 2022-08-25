@@ -37,6 +37,7 @@ class Listener:
         'protocol': 'str',
         'protocol_port': 'int',
         'sni_container_refs': 'list[str]',
+        'sni_match_algo': 'str',
         'tags': 'list[Tag]',
         'updated_at': 'str',
         'tls_ciphers_policy': 'str',
@@ -68,6 +69,7 @@ class Listener:
         'protocol': 'protocol',
         'protocol_port': 'protocol_port',
         'sni_container_refs': 'sni_container_refs',
+        'sni_match_algo': 'sni_match_algo',
         'tags': 'tags',
         'updated_at': 'updated_at',
         'tls_ciphers_policy': 'tls_ciphers_policy',
@@ -82,7 +84,7 @@ class Listener:
         'quic_config': 'quic_config'
     }
 
-    def __init__(self, admin_state_up=None, client_ca_tls_container_ref=None, connection_limit=None, created_at=None, default_pool_id=None, default_tls_container_ref=None, description=None, http2_enable=None, id=None, insert_headers=None, loadbalancers=None, name=None, project_id=None, protocol=None, protocol_port=None, sni_container_refs=None, tags=None, updated_at=None, tls_ciphers_policy=None, security_policy_id=None, enable_member_retry=None, keepalive_timeout=None, client_timeout=None, member_timeout=None, ipgroup=None, transparent_client_ip_enable=None, enhance_l7policy_enable=None, quic_config=None):
+    def __init__(self, admin_state_up=None, client_ca_tls_container_ref=None, connection_limit=None, created_at=None, default_pool_id=None, default_tls_container_ref=None, description=None, http2_enable=None, id=None, insert_headers=None, loadbalancers=None, name=None, project_id=None, protocol=None, protocol_port=None, sni_container_refs=None, sni_match_algo=None, tags=None, updated_at=None, tls_ciphers_policy=None, security_policy_id=None, enable_member_retry=None, keepalive_timeout=None, client_timeout=None, member_timeout=None, ipgroup=None, transparent_client_ip_enable=None, enhance_l7policy_enable=None, quic_config=None):
         """Listener
 
         The model defined in huaweicloud sdk
@@ -119,6 +121,8 @@ class Listener:
         :type protocol_port: int
         :param sni_container_refs: 监听器使用的SNI证书（带域名的服务器证书）ID列表。  使用说明： - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过30。
         :type sni_container_refs: list[str]
+        :param sni_match_algo: 监听器使用的SNI证书泛域名匹配方式。 longest_suffix表示最长尾缀匹配，wildcard表示标准域名分级匹配。 默认为wildcard。
+        :type sni_match_algo: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
         :param updated_at: 监听器的更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如：2021-07-30T12:03:44Z
@@ -163,6 +167,7 @@ class Listener:
         self._protocol = None
         self._protocol_port = None
         self._sni_container_refs = None
+        self._sni_match_algo = None
         self._tags = None
         self._updated_at = None
         self._tls_ciphers_policy = None
@@ -193,6 +198,7 @@ class Listener:
         self.protocol = protocol
         self.protocol_port = protocol_port
         self.sni_container_refs = sni_container_refs
+        self.sni_match_algo = sni_match_algo
         self.tags = tags
         self.updated_at = updated_at
         self.tls_ciphers_policy = tls_ciphers_policy
@@ -556,6 +562,28 @@ class Listener:
         :type sni_container_refs: list[str]
         """
         self._sni_container_refs = sni_container_refs
+
+    @property
+    def sni_match_algo(self):
+        """Gets the sni_match_algo of this Listener.
+
+        监听器使用的SNI证书泛域名匹配方式。 longest_suffix表示最长尾缀匹配，wildcard表示标准域名分级匹配。 默认为wildcard。
+
+        :return: The sni_match_algo of this Listener.
+        :rtype: str
+        """
+        return self._sni_match_algo
+
+    @sni_match_algo.setter
+    def sni_match_algo(self, sni_match_algo):
+        """Sets the sni_match_algo of this Listener.
+
+        监听器使用的SNI证书泛域名匹配方式。 longest_suffix表示最长尾缀匹配，wildcard表示标准域名分级匹配。 默认为wildcard。
+
+        :param sni_match_algo: The sni_match_algo of this Listener.
+        :type sni_match_algo: str
+        """
+        self._sni_match_algo = sni_match_algo
 
     @property
     def tags(self):

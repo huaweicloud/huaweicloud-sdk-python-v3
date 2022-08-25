@@ -50,7 +50,9 @@ class Job:
         'bytes_read': 'int',
         'execute_update_date': 'int',
         'write_rows': 'int',
-        'files_writte': 'int',
+        'rows_written': 'int',
+        'rows_read': 'int',
+        'files_written': 'int',
         'is_incrementing': 'bool',
         'execute_create_date': 'int',
         'status': 'str'
@@ -86,13 +88,15 @@ class Job:
         'bytes_read': 'bytes_read',
         'execute_update_date': 'execute_update_date',
         'write_rows': 'write_rows',
-        'files_writte': 'files_writte',
+        'rows_written': 'rows_written',
+        'rows_read': 'rows_read',
+        'files_written': 'files_written',
         'is_incrementing': 'is_incrementing',
         'execute_create_date': 'execute_create_date',
         'status': 'status'
     }
 
-    def __init__(self, job_type=None, from_connector_name=None, to_config_values=None, to_link_name=None, driver_config_values=None, from_config_values=None, to_connector_name=None, name=None, from_link_name=None, creation_user=None, creation_date=None, update_date=None, is_incre_job=None, flag=None, files_read=None, update_user=None, external_id=None, type=None, execute_start_date=None, delete_rows=None, enabled=None, bytes_written=None, id=None, is_use_sql=None, update_rows=None, group_name=None, bytes_read=None, execute_update_date=None, write_rows=None, files_writte=None, is_incrementing=None, execute_create_date=None, status=None):
+    def __init__(self, job_type=None, from_connector_name=None, to_config_values=None, to_link_name=None, driver_config_values=None, from_config_values=None, to_connector_name=None, name=None, from_link_name=None, creation_user=None, creation_date=None, update_date=None, is_incre_job=None, flag=None, files_read=None, update_user=None, external_id=None, type=None, execute_start_date=None, delete_rows=None, enabled=None, bytes_written=None, id=None, is_use_sql=None, update_rows=None, group_name=None, bytes_read=None, execute_update_date=None, write_rows=None, rows_written=None, rows_read=None, files_written=None, is_incrementing=None, execute_create_date=None, status=None):
         """Job
 
         The model defined in huaweicloud sdk
@@ -153,10 +157,14 @@ class Job:
         :type bytes_read: int
         :param execute_update_date: 执行_更新_日期。
         :type execute_update_date: int
-        :param write_rows: 写入行数
+        :param write_rows: 写入数据行数
         :type write_rows: int
-        :param files_writte: 写入文件数
-        :type files_writte: int
+        :param rows_written: 写入行数
+        :type rows_written: int
+        :param rows_read: 读取的行数
+        :type rows_read: int
+        :param files_written: 写入文件数
+        :type files_written: int
         :param is_incrementing: 是否增量
         :type is_incrementing: bool
         :param execute_create_date: 执行_创建_日期
@@ -196,7 +204,9 @@ class Job:
         self._bytes_read = None
         self._execute_update_date = None
         self._write_rows = None
-        self._files_writte = None
+        self._rows_written = None
+        self._rows_read = None
+        self._files_written = None
         self._is_incrementing = None
         self._execute_create_date = None
         self._status = None
@@ -255,8 +265,12 @@ class Job:
             self.execute_update_date = execute_update_date
         if write_rows is not None:
             self.write_rows = write_rows
-        if files_writte is not None:
-            self.files_writte = files_writte
+        if rows_written is not None:
+            self.rows_written = rows_written
+        if rows_read is not None:
+            self.rows_read = rows_read
+        if files_written is not None:
+            self.files_written = files_written
         if is_incrementing is not None:
             self.is_incrementing = is_incrementing
         if execute_create_date is not None:
@@ -878,7 +892,7 @@ class Job:
     def write_rows(self):
         """Gets the write_rows of this Job.
 
-        写入行数
+        写入数据行数
 
         :return: The write_rows of this Job.
         :rtype: int
@@ -889,7 +903,7 @@ class Job:
     def write_rows(self, write_rows):
         """Sets the write_rows of this Job.
 
-        写入行数
+        写入数据行数
 
         :param write_rows: The write_rows of this Job.
         :type write_rows: int
@@ -897,26 +911,70 @@ class Job:
         self._write_rows = write_rows
 
     @property
-    def files_writte(self):
-        """Gets the files_writte of this Job.
+    def rows_written(self):
+        """Gets the rows_written of this Job.
 
-        写入文件数
+        写入行数
 
-        :return: The files_writte of this Job.
+        :return: The rows_written of this Job.
         :rtype: int
         """
-        return self._files_writte
+        return self._rows_written
 
-    @files_writte.setter
-    def files_writte(self, files_writte):
-        """Sets the files_writte of this Job.
+    @rows_written.setter
+    def rows_written(self, rows_written):
+        """Sets the rows_written of this Job.
+
+        写入行数
+
+        :param rows_written: The rows_written of this Job.
+        :type rows_written: int
+        """
+        self._rows_written = rows_written
+
+    @property
+    def rows_read(self):
+        """Gets the rows_read of this Job.
+
+        读取的行数
+
+        :return: The rows_read of this Job.
+        :rtype: int
+        """
+        return self._rows_read
+
+    @rows_read.setter
+    def rows_read(self, rows_read):
+        """Sets the rows_read of this Job.
+
+        读取的行数
+
+        :param rows_read: The rows_read of this Job.
+        :type rows_read: int
+        """
+        self._rows_read = rows_read
+
+    @property
+    def files_written(self):
+        """Gets the files_written of this Job.
 
         写入文件数
 
-        :param files_writte: The files_writte of this Job.
-        :type files_writte: int
+        :return: The files_written of this Job.
+        :rtype: int
         """
-        self._files_writte = files_writte
+        return self._files_written
+
+    @files_written.setter
+    def files_written(self, files_written):
+        """Sets the files_written of this Job.
+
+        写入文件数
+
+        :param files_written: The files_written of this Job.
+        :type files_written: int
+        """
+        self._files_written = files_written
 
     @property
     def is_incrementing(self):

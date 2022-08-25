@@ -47,17 +47,17 @@ class ListCostsReq:
 
         :param time_condition: 
         :type time_condition: :class:`huaweicloudsdkbss.v2.TimeCondition`
-        :param groupby: |参数名称：查询维度，具体请参见表 GroupBy。| |参数约束以及描述：查询维度，具体请参见表 GroupBy。|
+        :param groupby: 查询维度，具体请参见表 GroupBy。
         :type groupby: list[:class:`huaweicloudsdkbss.v2.GroupBy`]
-        :param cost_type: |参数名称：成本类型UNBLENDED_COST：原始成本AMORTIZED_COST：摊销成本| |参数约束及描述：成本类型UNBLENDED_COST：原始成本AMORTIZED_COST：摊销成本|
+        :param cost_type: 成本类型。UNBLENDED_COST：原始成本AMORTIZED_COST：摊销成本
         :type cost_type: str
-        :param amount_type: |参数名称：展示的金额类型PAYMENT_AMOUNT：应付NET_AMOUNT：实付| |参数约束及描述：展示的金额类型PAYMENT_AMOUNT：应付NET_AMOUNT：实付|
+        :param amount_type: 展示的金额类型。PAYMENT_AMOUNT：应付NET_AMOUNT：实付
         :type amount_type: str
-        :param offset: |参数名称：偏移量| |参数的约束及描述：从0开始，默认为0|
+        :param offset: 偏移量。从0开始，默认为0
         :type offset: int
-        :param limit: |参数名称：每次查询的记录数| |参数的约束及描述：默认为10|
+        :param limit: 每次查询的记录数，默认为10
         :type limit: int
-        :param filters: |参数名称：过滤条件，具体请参见表 过滤条件。| |参数约束以及描述：此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件。|
+        :param filters: 过滤条件，具体请参见表 过滤条件。此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件。
         :type filters: list[:class:`huaweicloudsdkbss.v2.FilterV2`]
         """
         
@@ -107,7 +107,7 @@ class ListCostsReq:
     def groupby(self):
         """Gets the groupby of this ListCostsReq.
 
-        |参数名称：查询维度，具体请参见表 GroupBy。| |参数约束以及描述：查询维度，具体请参见表 GroupBy。|
+        查询维度，具体请参见表 GroupBy。
 
         :return: The groupby of this ListCostsReq.
         :rtype: list[:class:`huaweicloudsdkbss.v2.GroupBy`]
@@ -118,7 +118,7 @@ class ListCostsReq:
     def groupby(self, groupby):
         """Sets the groupby of this ListCostsReq.
 
-        |参数名称：查询维度，具体请参见表 GroupBy。| |参数约束以及描述：查询维度，具体请参见表 GroupBy。|
+        查询维度，具体请参见表 GroupBy。
 
         :param groupby: The groupby of this ListCostsReq.
         :type groupby: list[:class:`huaweicloudsdkbss.v2.GroupBy`]
@@ -129,7 +129,7 @@ class ListCostsReq:
     def cost_type(self):
         """Gets the cost_type of this ListCostsReq.
 
-        |参数名称：成本类型UNBLENDED_COST：原始成本AMORTIZED_COST：摊销成本| |参数约束及描述：成本类型UNBLENDED_COST：原始成本AMORTIZED_COST：摊销成本|
+        成本类型。UNBLENDED_COST：原始成本AMORTIZED_COST：摊销成本
 
         :return: The cost_type of this ListCostsReq.
         :rtype: str
@@ -140,7 +140,7 @@ class ListCostsReq:
     def cost_type(self, cost_type):
         """Sets the cost_type of this ListCostsReq.
 
-        |参数名称：成本类型UNBLENDED_COST：原始成本AMORTIZED_COST：摊销成本| |参数约束及描述：成本类型UNBLENDED_COST：原始成本AMORTIZED_COST：摊销成本|
+        成本类型。UNBLENDED_COST：原始成本AMORTIZED_COST：摊销成本
 
         :param cost_type: The cost_type of this ListCostsReq.
         :type cost_type: str
@@ -151,7 +151,7 @@ class ListCostsReq:
     def amount_type(self):
         """Gets the amount_type of this ListCostsReq.
 
-        |参数名称：展示的金额类型PAYMENT_AMOUNT：应付NET_AMOUNT：实付| |参数约束及描述：展示的金额类型PAYMENT_AMOUNT：应付NET_AMOUNT：实付|
+        展示的金额类型。PAYMENT_AMOUNT：应付NET_AMOUNT：实付
 
         :return: The amount_type of this ListCostsReq.
         :rtype: str
@@ -162,7 +162,7 @@ class ListCostsReq:
     def amount_type(self, amount_type):
         """Sets the amount_type of this ListCostsReq.
 
-        |参数名称：展示的金额类型PAYMENT_AMOUNT：应付NET_AMOUNT：实付| |参数约束及描述：展示的金额类型PAYMENT_AMOUNT：应付NET_AMOUNT：实付|
+        展示的金额类型。PAYMENT_AMOUNT：应付NET_AMOUNT：实付
 
         :param amount_type: The amount_type of this ListCostsReq.
         :type amount_type: str
@@ -173,7 +173,7 @@ class ListCostsReq:
     def offset(self):
         """Gets the offset of this ListCostsReq.
 
-        |参数名称：偏移量| |参数的约束及描述：从0开始，默认为0|
+        偏移量。从0开始，默认为0
 
         :return: The offset of this ListCostsReq.
         :rtype: int
@@ -184,7 +184,7 @@ class ListCostsReq:
     def offset(self, offset):
         """Sets the offset of this ListCostsReq.
 
-        |参数名称：偏移量| |参数的约束及描述：从0开始，默认为0|
+        偏移量。从0开始，默认为0
 
         :param offset: The offset of this ListCostsReq.
         :type offset: int
@@ -195,7 +195,7 @@ class ListCostsReq:
     def limit(self):
         """Gets the limit of this ListCostsReq.
 
-        |参数名称：每次查询的记录数| |参数的约束及描述：默认为10|
+        每次查询的记录数，默认为10
 
         :return: The limit of this ListCostsReq.
         :rtype: int
@@ -206,7 +206,7 @@ class ListCostsReq:
     def limit(self, limit):
         """Sets the limit of this ListCostsReq.
 
-        |参数名称：每次查询的记录数| |参数的约束及描述：默认为10|
+        每次查询的记录数，默认为10
 
         :param limit: The limit of this ListCostsReq.
         :type limit: int
@@ -217,7 +217,7 @@ class ListCostsReq:
     def filters(self):
         """Gets the filters of this ListCostsReq.
 
-        |参数名称：过滤条件，具体请参见表 过滤条件。| |参数约束以及描述：此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件。|
+        过滤条件，具体请参见表 过滤条件。此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件。
 
         :return: The filters of this ListCostsReq.
         :rtype: list[:class:`huaweicloudsdkbss.v2.FilterV2`]
@@ -228,7 +228,7 @@ class ListCostsReq:
     def filters(self, filters):
         """Sets the filters of this ListCostsReq.
 
-        |参数名称：过滤条件，具体请参见表 过滤条件。| |参数约束以及描述：此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件。|
+        过滤条件，具体请参见表 过滤条件。此参数不携带或携带值为空列表或携带值为null时，不作为筛选条件。
 
         :param filters: The filters of this ListCostsReq.
         :type filters: list[:class:`huaweicloudsdkbss.v2.FilterV2`]

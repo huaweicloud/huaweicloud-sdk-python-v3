@@ -34,7 +34,9 @@ class WebImageWordsBlockList:
         'province': 'str',
         'city': 'str',
         'district': 'str',
-        'detail_address': 'str'
+        'detail_address': 'str',
+        'font_list': 'list[str]',
+        'font_scores': 'list[float]'
     }
 
     attribute_map = {
@@ -51,10 +53,12 @@ class WebImageWordsBlockList:
         'province': 'province',
         'city': 'city',
         'district': 'district',
-        'detail_address': 'detail_address'
+        'detail_address': 'detail_address',
+        'font_list': 'font_list',
+        'font_scores': 'font_scores'
     }
 
-    def __init__(self, words=None, confidence=None, location=None, extracted_data=None, contact_info=None, image_size=None, height=None, width=None, name=None, phone=None, province=None, city=None, district=None, detail_address=None):
+    def __init__(self, words=None, confidence=None, location=None, extracted_data=None, contact_info=None, image_size=None, height=None, width=None, name=None, phone=None, province=None, city=None, district=None, detail_address=None, font_list=None, font_scores=None):
         """WebImageWordsBlockList
 
         The model defined in huaweicloud sdk
@@ -87,6 +91,10 @@ class WebImageWordsBlockList:
         :type district: str
         :param detail_address: 传入contact_info时的返回，详细地址（不含省市区）。 
         :type detail_address: str
+        :param font_list: 文字块所属字体类型，列表形式，表示与文字块的文字最接近的字体类型。 
+        :type font_list: list[str]
+        :param font_scores: 文字块所属字体类型的概率，列表形式，与font_list一一对应，表示文字块的文字属于某种字体类型的概率。 
+        :type font_scores: list[float]
         """
         
         
@@ -105,6 +113,8 @@ class WebImageWordsBlockList:
         self._city = None
         self._district = None
         self._detail_address = None
+        self._font_list = None
+        self._font_scores = None
         self.discriminator = None
 
         if words is not None:
@@ -135,6 +145,10 @@ class WebImageWordsBlockList:
             self.district = district
         if detail_address is not None:
             self.detail_address = detail_address
+        if font_list is not None:
+            self.font_list = font_list
+        if font_scores is not None:
+            self.font_scores = font_scores
 
     @property
     def words(self):
@@ -443,6 +457,50 @@ class WebImageWordsBlockList:
         :type detail_address: str
         """
         self._detail_address = detail_address
+
+    @property
+    def font_list(self):
+        """Gets the font_list of this WebImageWordsBlockList.
+
+        文字块所属字体类型，列表形式，表示与文字块的文字最接近的字体类型。 
+
+        :return: The font_list of this WebImageWordsBlockList.
+        :rtype: list[str]
+        """
+        return self._font_list
+
+    @font_list.setter
+    def font_list(self, font_list):
+        """Sets the font_list of this WebImageWordsBlockList.
+
+        文字块所属字体类型，列表形式，表示与文字块的文字最接近的字体类型。 
+
+        :param font_list: The font_list of this WebImageWordsBlockList.
+        :type font_list: list[str]
+        """
+        self._font_list = font_list
+
+    @property
+    def font_scores(self):
+        """Gets the font_scores of this WebImageWordsBlockList.
+
+        文字块所属字体类型的概率，列表形式，与font_list一一对应，表示文字块的文字属于某种字体类型的概率。 
+
+        :return: The font_scores of this WebImageWordsBlockList.
+        :rtype: list[float]
+        """
+        return self._font_scores
+
+    @font_scores.setter
+    def font_scores(self, font_scores):
+        """Sets the font_scores of this WebImageWordsBlockList.
+
+        文字块所属字体类型的概率，列表形式，与font_list一一对应，表示文字块的文字属于某种字体类型的概率。 
+
+        :param font_scores: The font_scores of this WebImageWordsBlockList.
+        :type font_scores: list[float]
+        """
+        self._font_scores = font_scores
 
     def to_dict(self):
         """Returns the model properties as a dict"""

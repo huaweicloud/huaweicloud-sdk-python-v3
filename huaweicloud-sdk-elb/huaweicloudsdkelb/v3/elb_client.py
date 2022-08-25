@@ -713,64 +713,6 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def create_master_slave_pool(self, request):
-        """创建主备后端服务器组
-
-        创建主备后端服务器组。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for CreateMasterSlavePool
-        :type request: :class:`huaweicloudsdkelb.v3.CreateMasterSlavePoolRequest`
-        :rtype: :class:`huaweicloudsdkelb.v3.CreateMasterSlavePoolResponse`
-        """
-        return self.create_master_slave_pool_with_http_info(request)
-
-    def create_master_slave_pool_with_http_info(self, request):
-        all_params = ['create_master_slave_pool_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json;charset=UTF-8'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/master-slave-pools',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='CreateMasterSlavePoolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def create_member(self, request):
         """创建后端服务器
 
@@ -1350,64 +1292,6 @@ class ElbClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteLogtankResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def delete_master_slave_pool(self, request):
-        """删除主备后端服务器组
-
-        删除主备后端服务器组。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for DeleteMasterSlavePool
-        :type request: :class:`huaweicloudsdkelb.v3.DeleteMasterSlavePoolRequest`
-        :rtype: :class:`huaweicloudsdkelb.v3.DeleteMasterSlavePoolResponse`
-        """
-        return self.delete_master_slave_pool_with_http_info(request)
-
-    def delete_master_slave_pool_with_http_info(self, request):
-        all_params = ['pool_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'pool_id' in local_var_params:
-            path_params['pool_id'] = local_var_params['pool_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/master-slave-pools/{pool_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='DeleteMasterSlavePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2544,113 +2428,6 @@ class ElbClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_master_slave_pools(self, request):
-        """查询主备后端服务器组列表
-
-        主备后端服务器组列表。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ListMasterSlavePools
-        :type request: :class:`huaweicloudsdkelb.v3.ListMasterSlavePoolsRequest`
-        :rtype: :class:`huaweicloudsdkelb.v3.ListMasterSlavePoolsResponse`
-        """
-        return self.list_master_slave_pools_with_http_info(request)
-
-    def list_master_slave_pools_with_http_info(self, request):
-        all_params = ['marker', 'limit', 'page_reverse', 'description', 'healthmonitor_id', 'id', 'name', 'loadbalancer_id', 'protocol', 'lb_algorithm', 'enterprise_project_id', 'ip_version', 'member_address', 'member_device_id', 'listener_id', 'member_instance_id', 'vpc_id', 'type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-        if 'marker' in local_var_params:
-            query_params.append(('marker', local_var_params['marker']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'page_reverse' in local_var_params:
-            query_params.append(('page_reverse', local_var_params['page_reverse']))
-        if 'description' in local_var_params:
-            query_params.append(('description', local_var_params['description']))
-            collection_formats['description'] = 'multi'
-        if 'healthmonitor_id' in local_var_params:
-            query_params.append(('healthmonitor_id', local_var_params['healthmonitor_id']))
-            collection_formats['healthmonitor_id'] = 'multi'
-        if 'id' in local_var_params:
-            query_params.append(('id', local_var_params['id']))
-            collection_formats['id'] = 'multi'
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-            collection_formats['name'] = 'multi'
-        if 'loadbalancer_id' in local_var_params:
-            query_params.append(('loadbalancer_id', local_var_params['loadbalancer_id']))
-            collection_formats['loadbalancer_id'] = 'multi'
-        if 'protocol' in local_var_params:
-            query_params.append(('protocol', local_var_params['protocol']))
-            collection_formats['protocol'] = 'multi'
-        if 'lb_algorithm' in local_var_params:
-            query_params.append(('lb_algorithm', local_var_params['lb_algorithm']))
-            collection_formats['lb_algorithm'] = 'multi'
-        if 'enterprise_project_id' in local_var_params:
-            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-            collection_formats['enterprise_project_id'] = 'multi'
-        if 'ip_version' in local_var_params:
-            query_params.append(('ip_version', local_var_params['ip_version']))
-            collection_formats['ip_version'] = 'multi'
-        if 'member_address' in local_var_params:
-            query_params.append(('member_address', local_var_params['member_address']))
-            collection_formats['member_address'] = 'multi'
-        if 'member_device_id' in local_var_params:
-            query_params.append(('member_device_id', local_var_params['member_device_id']))
-            collection_formats['member_device_id'] = 'multi'
-        if 'listener_id' in local_var_params:
-            query_params.append(('listener_id', local_var_params['listener_id']))
-            collection_formats['listener_id'] = 'csv'
-        if 'member_instance_id' in local_var_params:
-            query_params.append(('member_instance_id', local_var_params['member_instance_id']))
-            collection_formats['member_instance_id'] = 'csv'
-        if 'vpc_id' in local_var_params:
-            query_params.append(('vpc_id', local_var_params['vpc_id']))
-            collection_formats['vpc_id'] = 'csv'
-        if 'type' in local_var_params:
-            query_params.append(('type', local_var_params['type']))
-            collection_formats['type'] = 'csv'
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/master-slave-pools',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListMasterSlavePoolsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def list_members(self, request):
         """查询后端服务器列表
 
@@ -2666,7 +2443,7 @@ class ElbClient(Client):
         return self.list_members_with_http_info(request)
 
     def list_members_with_http_info(self, request):
-        all_params = ['pool_id', 'marker', 'limit', 'page_reverse', 'name', 'weight', 'admin_state_up', 'subnet_cidr_id', 'address', 'protocol_port', 'id', 'operating_status', 'enterprise_project_id', 'ip_version', 'member_type']
+        all_params = ['pool_id', 'marker', 'limit', 'page_reverse', 'name', 'weight', 'admin_state_up', 'subnet_cidr_id', 'address', 'protocol_port', 'id', 'operating_status', 'enterprise_project_id', 'ip_version', 'member_type', 'instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2717,6 +2494,9 @@ class ElbClient(Client):
         if 'member_type' in local_var_params:
             query_params.append(('member_type', local_var_params['member_type']))
             collection_formats['member_type'] = 'csv'
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+            collection_formats['instance_id'] = 'csv'
 
         header_params = {}
 
@@ -3573,64 +3353,6 @@ class ElbClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowLogtankResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_master_slave_pool(self, request):
-        """查询主备后端服务器组详情
-
-        主备后端服务器组详情。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ShowMasterSlavePool
-        :type request: :class:`huaweicloudsdkelb.v3.ShowMasterSlavePoolRequest`
-        :rtype: :class:`huaweicloudsdkelb.v3.ShowMasterSlavePoolResponse`
-        """
-        return self.show_master_slave_pool_with_http_info(request)
-
-    def show_master_slave_pool_with_http_info(self, request):
-        all_params = ['pool_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'pool_id' in local_var_params:
-            path_params['pool_id'] = local_var_params['pool_id']
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/master-slave-pools/{pool_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowMasterSlavePoolResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

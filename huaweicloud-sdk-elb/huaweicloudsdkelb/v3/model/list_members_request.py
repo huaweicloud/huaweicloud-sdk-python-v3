@@ -35,7 +35,8 @@ class ListMembersRequest:
         'operating_status': 'list[str]',
         'enterprise_project_id': 'list[str]',
         'ip_version': 'list[str]',
-        'member_type': 'list[str]'
+        'member_type': 'list[str]',
+        'instance_id': 'list[str]'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class ListMembersRequest:
         'operating_status': 'operating_status',
         'enterprise_project_id': 'enterprise_project_id',
         'ip_version': 'ip_version',
-        'member_type': 'member_type'
+        'member_type': 'member_type',
+        'instance_id': 'instance_id'
     }
 
-    def __init__(self, pool_id=None, marker=None, limit=None, page_reverse=None, name=None, weight=None, admin_state_up=None, subnet_cidr_id=None, address=None, protocol_port=None, id=None, operating_status=None, enterprise_project_id=None, ip_version=None, member_type=None):
+    def __init__(self, pool_id=None, marker=None, limit=None, page_reverse=None, name=None, weight=None, admin_state_up=None, subnet_cidr_id=None, address=None, protocol_port=None, id=None, operating_status=None, enterprise_project_id=None, ip_version=None, member_type=None, instance_id=None):
         """ListMembersRequest
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class ListMembersRequest:
         :type ip_version: list[str]
         :param member_type: 后端云服务器的类型。取值： - ip：跨VPC的member。 - instance：关联到ECS的member。  支持多值查询，查询条件格式：*member_type&#x3D;xxx&amp;member_type&#x3D;xxx*。
         :type member_type: list[str]
+        :param instance_id: member关联的ECS实例ID，空表示跨VPC场景的member。  支持多值查询，查询条件格式：*instance_id&#x3D;xxx&amp;instance_id&#x3D;xxx*。
+        :type instance_id: list[str]
         """
         
         
@@ -110,6 +114,7 @@ class ListMembersRequest:
         self._enterprise_project_id = None
         self._ip_version = None
         self._member_type = None
+        self._instance_id = None
         self.discriminator = None
 
         self.pool_id = pool_id
@@ -141,6 +146,8 @@ class ListMembersRequest:
             self.ip_version = ip_version
         if member_type is not None:
             self.member_type = member_type
+        if instance_id is not None:
+            self.instance_id = instance_id
 
     @property
     def pool_id(self):
@@ -471,6 +478,28 @@ class ListMembersRequest:
         :type member_type: list[str]
         """
         self._member_type = member_type
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this ListMembersRequest.
+
+        member关联的ECS实例ID，空表示跨VPC场景的member。  支持多值查询，查询条件格式：*instance_id=xxx&instance_id=xxx*。
+
+        :return: The instance_id of this ListMembersRequest.
+        :rtype: list[str]
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ListMembersRequest.
+
+        member关联的ECS实例ID，空表示跨VPC场景的member。  支持多值查询，查询条件格式：*instance_id=xxx&instance_id=xxx*。
+
+        :param instance_id: The instance_id of this ListMembersRequest.
+        :type instance_id: list[str]
+        """
+        self._instance_id = instance_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

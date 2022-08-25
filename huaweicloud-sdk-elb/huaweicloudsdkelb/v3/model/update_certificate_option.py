@@ -25,7 +25,9 @@ class UpdateCertificateOption:
         'description': 'str',
         'name': 'str',
         'private_key': 'str',
-        'domain': 'str'
+        'domain': 'str',
+        'enc_certificate': 'str',
+        'enc_private_key': 'str'
     }
 
     attribute_map = {
@@ -33,10 +35,12 @@ class UpdateCertificateOption:
         'description': 'description',
         'name': 'name',
         'private_key': 'private_key',
-        'domain': 'domain'
+        'domain': 'domain',
+        'enc_certificate': 'enc_certificate',
+        'enc_private_key': 'enc_private_key'
     }
 
-    def __init__(self, certificate=None, description=None, name=None, private_key=None, domain=None):
+    def __init__(self, certificate=None, description=None, name=None, private_key=None, domain=None, enc_certificate=None, enc_private_key=None):
         """UpdateCertificateOption
 
         The model defined in huaweicloud sdk
@@ -51,6 +55,10 @@ class UpdateCertificateOption:
         :type private_key: str
         :param domain: 服务器证书所签域名。该字段仅type为server时有效。   总长度为0-1024，由若干普通域名或泛域名组成，域名之间以\&quot;,\&quot;分割，不超过30个域名。   普通域名：由若干字符串组成，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。例：www.test.com；   泛域名：在普通域名的基础上仅允许首字母为\&quot;*\&quot;。例：*.test.com
         :type domain: str
+        :param enc_certificate: HTTPS协议使用的SM加密证书内容。 取值：PEM编码格式。 使用说明：仅type为server_sm时有效。 最大长度65536字符。 支持证书链，最大11层(含证书和证书链)。
+        :type enc_certificate: str
+        :param enc_private_key: HTTPS协议使用的SM加密证书内容。 取值：PEM编码格式。 使用说明：仅type为server_sm时有效。 最大长度8192字符。
+        :type enc_private_key: str
         """
         
         
@@ -60,6 +68,8 @@ class UpdateCertificateOption:
         self._name = None
         self._private_key = None
         self._domain = None
+        self._enc_certificate = None
+        self._enc_private_key = None
         self.discriminator = None
 
         if certificate is not None:
@@ -72,6 +82,10 @@ class UpdateCertificateOption:
             self.private_key = private_key
         if domain is not None:
             self.domain = domain
+        if enc_certificate is not None:
+            self.enc_certificate = enc_certificate
+        if enc_private_key is not None:
+            self.enc_private_key = enc_private_key
 
     @property
     def certificate(self):
@@ -182,6 +196,50 @@ class UpdateCertificateOption:
         :type domain: str
         """
         self._domain = domain
+
+    @property
+    def enc_certificate(self):
+        """Gets the enc_certificate of this UpdateCertificateOption.
+
+        HTTPS协议使用的SM加密证书内容。 取值：PEM编码格式。 使用说明：仅type为server_sm时有效。 最大长度65536字符。 支持证书链，最大11层(含证书和证书链)。
+
+        :return: The enc_certificate of this UpdateCertificateOption.
+        :rtype: str
+        """
+        return self._enc_certificate
+
+    @enc_certificate.setter
+    def enc_certificate(self, enc_certificate):
+        """Sets the enc_certificate of this UpdateCertificateOption.
+
+        HTTPS协议使用的SM加密证书内容。 取值：PEM编码格式。 使用说明：仅type为server_sm时有效。 最大长度65536字符。 支持证书链，最大11层(含证书和证书链)。
+
+        :param enc_certificate: The enc_certificate of this UpdateCertificateOption.
+        :type enc_certificate: str
+        """
+        self._enc_certificate = enc_certificate
+
+    @property
+    def enc_private_key(self):
+        """Gets the enc_private_key of this UpdateCertificateOption.
+
+        HTTPS协议使用的SM加密证书内容。 取值：PEM编码格式。 使用说明：仅type为server_sm时有效。 最大长度8192字符。
+
+        :return: The enc_private_key of this UpdateCertificateOption.
+        :rtype: str
+        """
+        return self._enc_private_key
+
+    @enc_private_key.setter
+    def enc_private_key(self, enc_private_key):
+        """Sets the enc_private_key of this UpdateCertificateOption.
+
+        HTTPS协议使用的SM加密证书内容。 取值：PEM编码格式。 使用说明：仅type为server_sm时有效。 最大长度8192字符。
+
+        :param enc_private_key: The enc_private_key of this UpdateCertificateOption.
+        :type enc_private_key: str
+        """
+        self._enc_private_key = enc_private_key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

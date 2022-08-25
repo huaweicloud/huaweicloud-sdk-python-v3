@@ -24,17 +24,23 @@ class ListQueuesRequest:
         'with_priv': 'bool',
         'with_charge_info': 'bool',
         'queue_type': 'str',
-        'tags': 'str'
+        'tags': 'str',
+        'page_size': 'int',
+        'current_page': 'int',
+        'order': 'str'
     }
 
     attribute_map = {
         'with_priv': 'with-priv',
         'with_charge_info': 'with-charge-info',
         'queue_type': 'queue_type',
-        'tags': 'tags'
+        'tags': 'tags',
+        'page_size': 'page-size',
+        'current_page': 'current-page',
+        'order': 'order'
     }
 
-    def __init__(self, with_priv=None, with_charge_info=None, queue_type=None, tags=None):
+    def __init__(self, with_priv=None, with_charge_info=None, queue_type=None, tags=None, page_size=None, current_page=None, order=None):
         """ListQueuesRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +53,12 @@ class ListQueuesRequest:
         :type queue_type: str
         :param tags: 查询根据标签进行过滤
         :type tags: str
+        :param page_size: 每页显示的最大结果行数，默认值Integer.MAX_VALUE（也即不分页）
+        :type page_size: int
+        :param current_page: 当前页码，默认为第一页。
+        :type current_page: int
+        :param order: 指定队列排序方式，默认为queue_name_asc（队列名称升序），支持queue_name_asc（队列名称升序）、queue_name_desc（队列名称降序）、cu_asc（CU数升序）、cu_desc（CU数降序）四种排序方式。
+        :type order: str
         """
         
         
@@ -55,6 +67,9 @@ class ListQueuesRequest:
         self._with_charge_info = None
         self._queue_type = None
         self._tags = None
+        self._page_size = None
+        self._current_page = None
+        self._order = None
         self.discriminator = None
 
         if with_priv is not None:
@@ -65,6 +80,12 @@ class ListQueuesRequest:
             self.queue_type = queue_type
         if tags is not None:
             self.tags = tags
+        if page_size is not None:
+            self.page_size = page_size
+        if current_page is not None:
+            self.current_page = current_page
+        if order is not None:
+            self.order = order
 
     @property
     def with_priv(self):
@@ -153,6 +174,72 @@ class ListQueuesRequest:
         :type tags: str
         """
         self._tags = tags
+
+    @property
+    def page_size(self):
+        """Gets the page_size of this ListQueuesRequest.
+
+        每页显示的最大结果行数，默认值Integer.MAX_VALUE（也即不分页）
+
+        :return: The page_size of this ListQueuesRequest.
+        :rtype: int
+        """
+        return self._page_size
+
+    @page_size.setter
+    def page_size(self, page_size):
+        """Sets the page_size of this ListQueuesRequest.
+
+        每页显示的最大结果行数，默认值Integer.MAX_VALUE（也即不分页）
+
+        :param page_size: The page_size of this ListQueuesRequest.
+        :type page_size: int
+        """
+        self._page_size = page_size
+
+    @property
+    def current_page(self):
+        """Gets the current_page of this ListQueuesRequest.
+
+        当前页码，默认为第一页。
+
+        :return: The current_page of this ListQueuesRequest.
+        :rtype: int
+        """
+        return self._current_page
+
+    @current_page.setter
+    def current_page(self, current_page):
+        """Sets the current_page of this ListQueuesRequest.
+
+        当前页码，默认为第一页。
+
+        :param current_page: The current_page of this ListQueuesRequest.
+        :type current_page: int
+        """
+        self._current_page = current_page
+
+    @property
+    def order(self):
+        """Gets the order of this ListQueuesRequest.
+
+        指定队列排序方式，默认为queue_name_asc（队列名称升序），支持queue_name_asc（队列名称升序）、queue_name_desc（队列名称降序）、cu_asc（CU数升序）、cu_desc（CU数降序）四种排序方式。
+
+        :return: The order of this ListQueuesRequest.
+        :rtype: str
+        """
+        return self._order
+
+    @order.setter
+    def order(self, order):
+        """Sets the order of this ListQueuesRequest.
+
+        指定队列排序方式，默认为queue_name_asc（队列名称升序），支持queue_name_asc（队列名称升序）、queue_name_desc（队列名称降序）、cu_asc（CU数升序）、cu_desc（CU数降序）四种排序方式。
+
+        :param order: The order of this ListQueuesRequest.
+        :type order: str
+        """
+        self._order = order
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -37,7 +37,7 @@ class ListCostsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param currency: 货币。 USD：美元
+        :param currency: 货币。 CNY：人民币
         :type currency: str
         :param total_count: 总条数。
         :type total_count: int
@@ -63,7 +63,7 @@ class ListCostsResponse(SdkResponse):
     def currency(self):
         """Gets the currency of this ListCostsResponse.
 
-        货币。 USD：美元
+        货币。 CNY：人民币
 
         :return: The currency of this ListCostsResponse.
         :rtype: str
@@ -74,7 +74,7 @@ class ListCostsResponse(SdkResponse):
     def currency(self, currency):
         """Sets the currency of this ListCostsResponse.
 
-        货币。 USD：美元
+        货币。 CNY：人民币
 
         :param currency: The currency of this ListCostsResponse.
         :type currency: str

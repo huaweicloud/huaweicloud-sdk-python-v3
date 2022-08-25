@@ -30,6 +30,10 @@ class CptsRegion:
 
     AF_SOUTH_1 = Region(id="af-south-1", endpoint="https://cpts.af-south-1.myhuaweicloud.com")
 
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://cpts.la-south-2.myhuaweicloud.com")
+
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://cpts.sa-brazil-1.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-1": CN_NORTH_1,
         "cn-north-4": CN_NORTH_4,
@@ -41,6 +45,8 @@ class CptsRegion:
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-3": AP_SOUTHEAST_3,
         "af-south-1": AF_SOUTH_1,
+        "la-south-2": LA_SOUTH_2,
+        "sa-brazil-1": SA_BRAZIL_1,
     }
 
     @classmethod

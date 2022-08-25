@@ -1005,11 +1005,11 @@ class OcrClient(Client):
     def recognize_id_document(self, request):
         """通用证件识别
 
-        识别身份证件图像，并将识别的结构化结果返回给用户。支持多个国家的身份证、驾驶证和护照，具体国家和证件列表详见表1。
+        识别身份证件图像，并将识别的结构化结果返回给用户。支持多个国家/地区的身份证、驾驶证和护照，具体国家/地区和证件列表详见表1国家/地区和证件列表。
         
-        **表1支持国家列表**
+        **表1国家/地区和证件列表**
         
-        | 国家/地区  | 英文名称    | 国家代码  country_region | 支持证件类型  id_type   |
+        | 国家/地区  | 英文名称    | 国家/地区代码  country_region | 支持证件类型  id_type   |
         | ---------- | ----------- | ------------------------ | ----------------------- |
         | 越南       | Vietnam     | VNM                      | PP、DL、ID              |
         | 印度       | India       | IND                      | PP                      |
@@ -1023,6 +1023,10 @@ class OcrClient(Client):
         | 俄罗斯     | RUSSIA      | RUS                      | PP(仅支持国际标准版本)  |
         | 中国台湾   | TAIWAN      | TWN                      | PP                      |
         | 乌克兰     | UKRAINE     | UKR                      | PP                      |
+        
+        - PP: passport,国际护照
+        - DL: driving license,驾驶证
+        - ID: identification card,各国颁发的身份证类型证件，比如身份证、选民证、社保卡等。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

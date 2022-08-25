@@ -48,6 +48,8 @@ from huaweicloudsdkcdm.v1.model.delete_job_request import DeleteJobRequest
 from huaweicloudsdkcdm.v1.model.delete_job_response import DeleteJobResponse
 from huaweicloudsdkcdm.v1.model.delete_link_request import DeleteLinkRequest
 from huaweicloudsdkcdm.v1.model.delete_link_response import DeleteLinkResponse
+from huaweicloudsdkcdm.v1.model.extended_configs import ExtendedConfigs
+from huaweicloudsdkcdm.v1.model.extended_properties import ExtendedProperties
 from huaweicloudsdkcdm.v1.model.failed_reasons import FailedReasons
 from huaweicloudsdkcdm.v1.model.failed_reasons_createfailed import FailedReasonsCREATEFAILED
 from huaweicloudsdkcdm.v1.model.input import Input

@@ -37,7 +37,9 @@ class ElasticResourcePoolsResponse:
         'fail_reason': 'str',
         'enterprise_project_id': 'str',
         'prepay_cu': 'int',
-        'charging_mode': 'int'
+        'charging_mode': 'int',
+        'manager': 'str',
+        'label': 'dict(str, str)'
     }
 
     attribute_map = {
@@ -57,10 +59,12 @@ class ElasticResourcePoolsResponse:
         'fail_reason': 'fail_reason',
         'enterprise_project_id': 'enterprise_project_id',
         'prepay_cu': 'prepay_cu',
-        'charging_mode': 'charging_mode'
+        'charging_mode': 'charging_mode',
+        'manager': 'manager',
+        'label': 'label'
     }
 
-    def __init__(self, update_time=None, queues=None, owner=None, elastic_resource_pool_name=None, description=None, max_cu=None, min_cu=None, actual_cu=None, cidr_in_vpc=None, create_time=None, current_cu=None, status=None, resource_id=None, fail_reason=None, enterprise_project_id=None, prepay_cu=None, charging_mode=None):
+    def __init__(self, update_time=None, queues=None, owner=None, elastic_resource_pool_name=None, description=None, max_cu=None, min_cu=None, actual_cu=None, cidr_in_vpc=None, create_time=None, current_cu=None, status=None, resource_id=None, fail_reason=None, enterprise_project_id=None, prepay_cu=None, charging_mode=None, manager=None, label=None):
         """ElasticResourcePoolsResponse
 
         The model defined in huaweicloud sdk
@@ -99,6 +103,10 @@ class ElasticResourcePoolsResponse:
         :type prepay_cu: int
         :param charging_mode: 计费类型
         :type charging_mode: int
+        :param manager: 弹性资源池类型
+        :type manager: str
+        :param label: 标识弹性资源池，目前只支持 开发者标签，\&quot;label\&quot;: {\&quot;billing_spec_code\&quot;:\&quot;developer\&quot;}
+        :type label: dict(str, str)
         """
         
         
@@ -120,6 +128,8 @@ class ElasticResourcePoolsResponse:
         self._enterprise_project_id = None
         self._prepay_cu = None
         self._charging_mode = None
+        self._manager = None
+        self._label = None
         self.discriminator = None
 
         if update_time is not None:
@@ -156,6 +166,10 @@ class ElasticResourcePoolsResponse:
             self.prepay_cu = prepay_cu
         if charging_mode is not None:
             self.charging_mode = charging_mode
+        if manager is not None:
+            self.manager = manager
+        if label is not None:
+            self.label = label
 
     @property
     def update_time(self):
@@ -530,6 +544,50 @@ class ElasticResourcePoolsResponse:
         :type charging_mode: int
         """
         self._charging_mode = charging_mode
+
+    @property
+    def manager(self):
+        """Gets the manager of this ElasticResourcePoolsResponse.
+
+        弹性资源池类型
+
+        :return: The manager of this ElasticResourcePoolsResponse.
+        :rtype: str
+        """
+        return self._manager
+
+    @manager.setter
+    def manager(self, manager):
+        """Sets the manager of this ElasticResourcePoolsResponse.
+
+        弹性资源池类型
+
+        :param manager: The manager of this ElasticResourcePoolsResponse.
+        :type manager: str
+        """
+        self._manager = manager
+
+    @property
+    def label(self):
+        """Gets the label of this ElasticResourcePoolsResponse.
+
+        标识弹性资源池，目前只支持 开发者标签，\"label\": {\"billing_spec_code\":\"developer\"}
+
+        :return: The label of this ElasticResourcePoolsResponse.
+        :rtype: dict(str, str)
+        """
+        return self._label
+
+    @label.setter
+    def label(self, label):
+        """Sets the label of this ElasticResourcePoolsResponse.
+
+        标识弹性资源池，目前只支持 开发者标签，\"label\": {\"billing_spec_code\":\"developer\"}
+
+        :param label: The label of this ElasticResourcePoolsResponse.
+        :type label: dict(str, str)
+        """
+        self._label = label
 
     def to_dict(self):
         """Returns the model properties as a dict"""

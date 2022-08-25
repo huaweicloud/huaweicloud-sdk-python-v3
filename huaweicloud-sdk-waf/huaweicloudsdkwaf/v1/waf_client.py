@@ -2269,6 +2269,76 @@ class WafClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_request_timeline(self, request):
+        """查询安全总览中请求次数时间线统计数据
+
+        查询安全总览中请求次数时间线统计数据。需要注意的是，安全总览相关的接口，暂时不能支持任意时间的查询。只能支持 console上显示的 昨天，今天，3天，7天和30天 数据查询。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListRequestTimeline
+        :type request: :class:`huaweicloudsdkwaf.v1.ListRequestTimelineRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListRequestTimelineResponse`
+        """
+        return self.list_request_timeline_with_http_info(request)
+
+    def list_request_timeline_with_http_info(self, request):
+        all_params = ['_from', 'to', 'enterprise_project_id', 'hosts', 'instances', 'group_by']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'hosts' in local_var_params:
+            query_params.append(('hosts', local_var_params['hosts']))
+            collection_formats['hosts'] = 'csv'
+        if 'instances' in local_var_params:
+            query_params.append(('instances', local_var_params['instances']))
+            collection_formats['instances'] = 'csv'
+        if 'group_by' in local_var_params:
+            query_params.append(('group_by', local_var_params['group_by']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/overviews/request/timeline',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRequestTimelineResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_statistics(self, request):
         """查询安全总览请求与攻击数量
 

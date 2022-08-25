@@ -4316,7 +4316,7 @@ class DliClient(Client):
         return self.list_queues_with_http_info(request)
 
     def list_queues_with_http_info(self, request):
-        all_params = ['with_priv', 'with_charge_info', 'queue_type', 'tags']
+        all_params = ['with_priv', 'with_charge_info', 'queue_type', 'tags', 'page_size', 'current_page', 'order']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4335,6 +4335,12 @@ class DliClient(Client):
             query_params.append(('queue_type', local_var_params['queue_type']))
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page-size', local_var_params['page_size']))
+        if 'current_page' in local_var_params:
+            query_params.append(('current-page', local_var_params['current_page']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
 
         header_params = {}
 

@@ -21,6 +21,7 @@ class ListQueuesRespQueues:
     sensitive_list = []
 
     openapi_types = {
+        'queue_id': 'str',
         'queue_name': 'str',
         'description': 'str',
         'owner': 'str',
@@ -41,10 +42,12 @@ class ListQueuesRespQueues:
         'queue_resource_type': 'str',
         'cu_spec': 'int',
         'cu_scale_out_limit': 'int',
-        'cu_scale_in_limit': 'int'
+        'cu_scale_in_limit': 'int',
+        'elastic_resource_pool_name': 'str'
     }
 
     attribute_map = {
+        'queue_id': 'queue_id',
         'queue_name': 'queue_name',
         'description': 'description',
         'owner': 'owner',
@@ -65,14 +68,17 @@ class ListQueuesRespQueues:
         'queue_resource_type': 'queue_resource_type',
         'cu_spec': 'cu_spec',
         'cu_scale_out_limit': 'cu_scale_out_limit',
-        'cu_scale_in_limit': 'cu_scale_in_limit'
+        'cu_scale_in_limit': 'cu_scale_in_limit',
+        'elastic_resource_pool_name': 'elastic_resource_pool_name'
     }
 
-    def __init__(self, queue_name=None, description=None, owner=None, create_time=None, queue_type=None, cu_count=None, charging_mode=None, resource_id=None, enterprise_project_id=None, cidr_in_vpc=None, cidr_in_mgntsubnet=None, cidr_in_subnet=None, resource_mode=None, platform=None, is_restarting=None, labels=None, feature=None, queue_resource_type=None, cu_spec=None, cu_scale_out_limit=None, cu_scale_in_limit=None):
+    def __init__(self, queue_id=None, queue_name=None, description=None, owner=None, create_time=None, queue_type=None, cu_count=None, charging_mode=None, resource_id=None, enterprise_project_id=None, cidr_in_vpc=None, cidr_in_mgntsubnet=None, cidr_in_subnet=None, resource_mode=None, platform=None, is_restarting=None, labels=None, feature=None, queue_resource_type=None, cu_spec=None, cu_scale_out_limit=None, cu_scale_in_limit=None, elastic_resource_pool_name=None):
         """ListQueuesRespQueues
 
         The model defined in huaweicloud sdk
 
+        :param queue_id: 队列ID。
+        :type queue_id: str
         :param queue_name: 队列名称。
         :type queue_name: str
         :param description: 队列描述信息。
@@ -115,10 +121,13 @@ class ListQueuesRespQueues:
         :type cu_scale_out_limit: int
         :param cu_scale_in_limit: 当前队列弹性扩缩容的CU值下限。
         :type cu_scale_in_limit: int
+        :param elastic_resource_pool_name: 弹性资源池名称。
+        :type elastic_resource_pool_name: str
         """
         
         
 
+        self._queue_id = None
         self._queue_name = None
         self._description = None
         self._owner = None
@@ -140,8 +149,11 @@ class ListQueuesRespQueues:
         self._cu_spec = None
         self._cu_scale_out_limit = None
         self._cu_scale_in_limit = None
+        self._elastic_resource_pool_name = None
         self.discriminator = None
 
+        if queue_id is not None:
+            self.queue_id = queue_id
         if queue_name is not None:
             self.queue_name = queue_name
         if description is not None:
@@ -184,6 +196,30 @@ class ListQueuesRespQueues:
             self.cu_scale_out_limit = cu_scale_out_limit
         if cu_scale_in_limit is not None:
             self.cu_scale_in_limit = cu_scale_in_limit
+        if elastic_resource_pool_name is not None:
+            self.elastic_resource_pool_name = elastic_resource_pool_name
+
+    @property
+    def queue_id(self):
+        """Gets the queue_id of this ListQueuesRespQueues.
+
+        队列ID。
+
+        :return: The queue_id of this ListQueuesRespQueues.
+        :rtype: str
+        """
+        return self._queue_id
+
+    @queue_id.setter
+    def queue_id(self, queue_id):
+        """Sets the queue_id of this ListQueuesRespQueues.
+
+        队列ID。
+
+        :param queue_id: The queue_id of this ListQueuesRespQueues.
+        :type queue_id: str
+        """
+        self._queue_id = queue_id
 
     @property
     def queue_name(self):
@@ -646,6 +682,28 @@ class ListQueuesRespQueues:
         :type cu_scale_in_limit: int
         """
         self._cu_scale_in_limit = cu_scale_in_limit
+
+    @property
+    def elastic_resource_pool_name(self):
+        """Gets the elastic_resource_pool_name of this ListQueuesRespQueues.
+
+        弹性资源池名称。
+
+        :return: The elastic_resource_pool_name of this ListQueuesRespQueues.
+        :rtype: str
+        """
+        return self._elastic_resource_pool_name
+
+    @elastic_resource_pool_name.setter
+    def elastic_resource_pool_name(self, elastic_resource_pool_name):
+        """Sets the elastic_resource_pool_name of this ListQueuesRespQueues.
+
+        弹性资源池名称。
+
+        :param elastic_resource_pool_name: The elastic_resource_pool_name of this ListQueuesRespQueues.
+        :type elastic_resource_pool_name: str
+        """
+        self._elastic_resource_pool_name = elastic_resource_pool_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

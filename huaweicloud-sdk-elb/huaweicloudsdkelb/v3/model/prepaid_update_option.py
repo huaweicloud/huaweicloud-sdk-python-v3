@@ -23,7 +23,6 @@ class PrepaidUpdateOption:
     openapi_types = {
         'auto_pay': 'bool',
         'change_mode': 'str',
-        'cloud_service_console_url': 'str',
         'period_num': 'int',
         'period_type': 'str'
     }
@@ -31,12 +30,11 @@ class PrepaidUpdateOption:
     attribute_map = {
         'auto_pay': 'auto_pay',
         'change_mode': 'change_mode',
-        'cloud_service_console_url': 'cloud_service_console_url',
         'period_num': 'period_num',
         'period_type': 'period_type'
     }
 
-    def __init__(self, auto_pay=None, change_mode=None, cloud_service_console_url=None, period_num=None, period_type=None):
+    def __init__(self, auto_pay=None, change_mode=None, period_num=None, period_type=None):
         """PrepaidUpdateOption
 
         The model defined in huaweicloud sdk
@@ -45,8 +43,6 @@ class PrepaidUpdateOption:
         :type auto_pay: bool
         :param change_mode: 规格变更类型： immediate：即时变更，规格变更立即生效。（默认） delay：续费变更，当前周期结束后变更为目标规格。
         :type change_mode: str
-        :param cloud_service_console_url: 云服务引导URL。 订购订单支付完成后，支付成功的页面嵌入该url的内容。 console传，用户侧api文档不可见该字段。
-        :type cloud_service_console_url: str
         :param period_num: 订购周期数（默认1），取值会随运营策略变化。（仅在change_mode为delay时生效） period_type为month时，为[1,9]， period_type为year时，为[1,3]
         :type period_num: int
         :param period_type: 订购周期类型，当前支持包月和包年： （仅在change_mode为delay时生效） month：月（默认）； year：年；
@@ -57,7 +53,6 @@ class PrepaidUpdateOption:
 
         self._auto_pay = None
         self._change_mode = None
-        self._cloud_service_console_url = None
         self._period_num = None
         self._period_type = None
         self.discriminator = None
@@ -66,8 +61,6 @@ class PrepaidUpdateOption:
             self.auto_pay = auto_pay
         if change_mode is not None:
             self.change_mode = change_mode
-        if cloud_service_console_url is not None:
-            self.cloud_service_console_url = cloud_service_console_url
         if period_num is not None:
             self.period_num = period_num
         if period_type is not None:
@@ -116,28 +109,6 @@ class PrepaidUpdateOption:
         :type change_mode: str
         """
         self._change_mode = change_mode
-
-    @property
-    def cloud_service_console_url(self):
-        """Gets the cloud_service_console_url of this PrepaidUpdateOption.
-
-        云服务引导URL。 订购订单支付完成后，支付成功的页面嵌入该url的内容。 console传，用户侧api文档不可见该字段。
-
-        :return: The cloud_service_console_url of this PrepaidUpdateOption.
-        :rtype: str
-        """
-        return self._cloud_service_console_url
-
-    @cloud_service_console_url.setter
-    def cloud_service_console_url(self, cloud_service_console_url):
-        """Sets the cloud_service_console_url of this PrepaidUpdateOption.
-
-        云服务引导URL。 订购订单支付完成后，支付成功的页面嵌入该url的内容。 console传，用户侧api文档不可见该字段。
-
-        :param cloud_service_console_url: The cloud_service_console_url of this PrepaidUpdateOption.
-        :type cloud_service_console_url: str
-        """
-        self._cloud_service_console_url = cloud_service_console_url
 
     @property
     def period_num(self):

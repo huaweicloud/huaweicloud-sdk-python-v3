@@ -8,7 +8,7 @@ from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class CreateMasterSlavePoolResponse(SdkResponse):
+class SetDatabaseUserPrivilegeResponse(SdkResponse):
 
     """
     Attributes:
@@ -21,78 +21,20 @@ class CreateMasterSlavePoolResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'request_id': 'str',
-        'pool': 'MasterSlavePool'
     }
 
     attribute_map = {
-        'request_id': 'request_id',
-        'pool': 'pool'
     }
 
-    def __init__(self, request_id=None, pool=None):
-        """CreateMasterSlavePoolResponse
+    def __init__(self):
+        """SetDatabaseUserPrivilegeResponse
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求ID。  注：自动生成 。
-        :type request_id: str
-        :param pool: 
-        :type pool: :class:`huaweicloudsdkelb.v3.MasterSlavePool`
         """
         
-        super(CreateMasterSlavePoolResponse, self).__init__()
-
-        self._request_id = None
-        self._pool = None
+        super(SetDatabaseUserPrivilegeResponse, self).__init__()
         self.discriminator = None
-
-        if request_id is not None:
-            self.request_id = request_id
-        if pool is not None:
-            self.pool = pool
-
-    @property
-    def request_id(self):
-        """Gets the request_id of this CreateMasterSlavePoolResponse.
-
-        请求ID。  注：自动生成 。
-
-        :return: The request_id of this CreateMasterSlavePoolResponse.
-        :rtype: str
-        """
-        return self._request_id
-
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this CreateMasterSlavePoolResponse.
-
-        请求ID。  注：自动生成 。
-
-        :param request_id: The request_id of this CreateMasterSlavePoolResponse.
-        :type request_id: str
-        """
-        self._request_id = request_id
-
-    @property
-    def pool(self):
-        """Gets the pool of this CreateMasterSlavePoolResponse.
-
-
-        :return: The pool of this CreateMasterSlavePoolResponse.
-        :rtype: :class:`huaweicloudsdkelb.v3.MasterSlavePool`
-        """
-        return self._pool
-
-    @pool.setter
-    def pool(self, pool):
-        """Sets the pool of this CreateMasterSlavePoolResponse.
-
-
-        :param pool: The pool of this CreateMasterSlavePoolResponse.
-        :type pool: :class:`huaweicloudsdkelb.v3.MasterSlavePool`
-        """
-        self._pool = pool
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -136,7 +78,7 @@ class CreateMasterSlavePoolResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateMasterSlavePoolResponse):
+        if not isinstance(other, SetDatabaseUserPrivilegeResponse):
             return False
 
         return self.__dict__ == other.__dict__

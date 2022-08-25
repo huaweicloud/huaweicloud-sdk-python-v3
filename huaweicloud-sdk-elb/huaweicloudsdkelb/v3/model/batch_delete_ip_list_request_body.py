@@ -4,11 +4,11 @@ import re
 import six
 
 
-from huaweicloudsdkcore.sdk_response import SdkResponse
+
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowMasterSlavePoolResponse(SdkResponse):
+class BatchDeleteIpListRequestBody:
 
     """
     Attributes:
@@ -21,78 +21,49 @@ class ShowMasterSlavePoolResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'request_id': 'str',
-        'pool': 'MasterSlavePool'
+        'ipgroup': 'BatchDeleteIpListOption'
     }
 
     attribute_map = {
-        'request_id': 'request_id',
-        'pool': 'pool'
+        'ipgroup': 'ipgroup'
     }
 
-    def __init__(self, request_id=None, pool=None):
-        """ShowMasterSlavePoolResponse
+    def __init__(self, ipgroup=None):
+        """BatchDeleteIpListRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求ID。  注：自动生成 。
-        :type request_id: str
-        :param pool: 
-        :type pool: :class:`huaweicloudsdkelb.v3.MasterSlavePool`
+        :param ipgroup: 
+        :type ipgroup: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListOption`
         """
         
-        super(ShowMasterSlavePoolResponse, self).__init__()
+        
 
-        self._request_id = None
-        self._pool = None
+        self._ipgroup = None
         self.discriminator = None
 
-        if request_id is not None:
-            self.request_id = request_id
-        if pool is not None:
-            self.pool = pool
+        if ipgroup is not None:
+            self.ipgroup = ipgroup
 
     @property
-    def request_id(self):
-        """Gets the request_id of this ShowMasterSlavePoolResponse.
+    def ipgroup(self):
+        """Gets the ipgroup of this BatchDeleteIpListRequestBody.
 
-        请求ID。  注：自动生成 。
 
-        :return: The request_id of this ShowMasterSlavePoolResponse.
-        :rtype: str
+        :return: The ipgroup of this BatchDeleteIpListRequestBody.
+        :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListOption`
         """
-        return self._request_id
+        return self._ipgroup
 
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this ShowMasterSlavePoolResponse.
+    @ipgroup.setter
+    def ipgroup(self, ipgroup):
+        """Sets the ipgroup of this BatchDeleteIpListRequestBody.
 
-        请求ID。  注：自动生成 。
 
-        :param request_id: The request_id of this ShowMasterSlavePoolResponse.
-        :type request_id: str
+        :param ipgroup: The ipgroup of this BatchDeleteIpListRequestBody.
+        :type ipgroup: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListOption`
         """
-        self._request_id = request_id
-
-    @property
-    def pool(self):
-        """Gets the pool of this ShowMasterSlavePoolResponse.
-
-
-        :return: The pool of this ShowMasterSlavePoolResponse.
-        :rtype: :class:`huaweicloudsdkelb.v3.MasterSlavePool`
-        """
-        return self._pool
-
-    @pool.setter
-    def pool(self, pool):
-        """Sets the pool of this ShowMasterSlavePoolResponse.
-
-
-        :param pool: The pool of this ShowMasterSlavePoolResponse.
-        :type pool: :class:`huaweicloudsdkelb.v3.MasterSlavePool`
-        """
-        self._pool = pool
+        self._ipgroup = ipgroup
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -136,7 +107,7 @@ class ShowMasterSlavePoolResponse(SdkResponse):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowMasterSlavePoolResponse):
+        if not isinstance(other, BatchDeleteIpListRequestBody):
             return False
 
         return self.__dict__ == other.__dict__

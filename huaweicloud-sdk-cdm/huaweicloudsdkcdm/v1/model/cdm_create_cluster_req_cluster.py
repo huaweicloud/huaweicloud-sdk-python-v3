@@ -25,6 +25,7 @@ class CdmCreateClusterReqCluster:
         'is_schedule_boot_off': 'bool',
         'instances': 'list[Instance]',
         'datastore': 'Datastore',
+        'extended_properties': 'ExtendedProperties',
         'schedule_off_time': 'str',
         'vpc_id': 'str',
         'name': 'str',
@@ -37,6 +38,7 @@ class CdmCreateClusterReqCluster:
         'is_schedule_boot_off': 'isScheduleBootOff',
         'instances': 'instances',
         'datastore': 'datastore',
+        'extended_properties': 'extended_properties',
         'schedule_off_time': 'scheduleOffTime',
         'vpc_id': 'vpcId',
         'name': 'name',
@@ -44,7 +46,7 @@ class CdmCreateClusterReqCluster:
         'is_auto_off': 'isAutoOff'
     }
 
-    def __init__(self, schedule_boot_time=None, is_schedule_boot_off=None, instances=None, datastore=None, schedule_off_time=None, vpc_id=None, name=None, sys_tags=None, is_auto_off=None):
+    def __init__(self, schedule_boot_time=None, is_schedule_boot_off=None, instances=None, datastore=None, extended_properties=None, schedule_off_time=None, vpc_id=None, name=None, sys_tags=None, is_auto_off=None):
         """CdmCreateClusterReqCluster
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class CdmCreateClusterReqCluster:
         :type instances: list[:class:`huaweicloudsdkcdm.v1.Instance`]
         :param datastore: 
         :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
+        :param extended_properties: 
+        :type extended_properties: :class:`huaweicloudsdkcdm.v1.ExtendedProperties`
         :param schedule_off_time: 定时关机的时间，定时关机时系统不会等待未完成的作业执行完成
         :type schedule_off_time: str
         :param vpc_id: 指定虚拟私有云ID，用于集群网络配置
@@ -75,6 +79,7 @@ class CdmCreateClusterReqCluster:
         self._is_schedule_boot_off = None
         self._instances = None
         self._datastore = None
+        self._extended_properties = None
         self._schedule_off_time = None
         self._vpc_id = None
         self._name = None
@@ -90,6 +95,8 @@ class CdmCreateClusterReqCluster:
             self.instances = instances
         if datastore is not None:
             self.datastore = datastore
+        if extended_properties is not None:
+            self.extended_properties = extended_properties
         if schedule_off_time is not None:
             self.schedule_off_time = schedule_off_time
         if vpc_id is not None:
@@ -186,6 +193,26 @@ class CdmCreateClusterReqCluster:
         :type datastore: :class:`huaweicloudsdkcdm.v1.Datastore`
         """
         self._datastore = datastore
+
+    @property
+    def extended_properties(self):
+        """Gets the extended_properties of this CdmCreateClusterReqCluster.
+
+
+        :return: The extended_properties of this CdmCreateClusterReqCluster.
+        :rtype: :class:`huaweicloudsdkcdm.v1.ExtendedProperties`
+        """
+        return self._extended_properties
+
+    @extended_properties.setter
+    def extended_properties(self, extended_properties):
+        """Sets the extended_properties of this CdmCreateClusterReqCluster.
+
+
+        :param extended_properties: The extended_properties of this CdmCreateClusterReqCluster.
+        :type extended_properties: :class:`huaweicloudsdkcdm.v1.ExtendedProperties`
+        """
+        self._extended_properties = extended_properties
 
     @property
     def schedule_off_time(self):

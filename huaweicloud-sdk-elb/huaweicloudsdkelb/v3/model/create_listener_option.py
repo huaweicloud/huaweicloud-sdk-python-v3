@@ -34,6 +34,7 @@ class CreateListenerOption:
         'protocol': 'str',
         'protocol_port': 'int',
         'sni_container_refs': 'list[str]',
+        'sni_match_algo': 'str',
         'tags': 'list[Tag]',
         'tls_ciphers_policy': 'str',
         'security_policy_id': 'str',
@@ -61,6 +62,7 @@ class CreateListenerOption:
         'protocol': 'protocol',
         'protocol_port': 'protocol_port',
         'sni_container_refs': 'sni_container_refs',
+        'sni_match_algo': 'sni_match_algo',
         'tags': 'tags',
         'tls_ciphers_policy': 'tls_ciphers_policy',
         'security_policy_id': 'security_policy_id',
@@ -74,7 +76,7 @@ class CreateListenerOption:
         'quic_config': 'quic_config'
     }
 
-    def __init__(self, admin_state_up=None, default_pool_id=None, client_ca_tls_container_ref=None, default_tls_container_ref=None, description=None, http2_enable=None, insert_headers=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, protocol_port=None, sni_container_refs=None, tags=None, tls_ciphers_policy=None, security_policy_id=None, enable_member_retry=None, keepalive_timeout=None, client_timeout=None, member_timeout=None, ipgroup=None, transparent_client_ip_enable=None, enhance_l7policy_enable=None, quic_config=None):
+    def __init__(self, admin_state_up=None, default_pool_id=None, client_ca_tls_container_ref=None, default_tls_container_ref=None, description=None, http2_enable=None, insert_headers=None, loadbalancer_id=None, name=None, project_id=None, protocol=None, protocol_port=None, sni_container_refs=None, sni_match_algo=None, tags=None, tls_ciphers_policy=None, security_policy_id=None, enable_member_retry=None, keepalive_timeout=None, client_timeout=None, member_timeout=None, ipgroup=None, transparent_client_ip_enable=None, enhance_l7policy_enable=None, quic_config=None):
         """CreateListenerOption
 
         The model defined in huaweicloud sdk
@@ -105,6 +107,8 @@ class CreateListenerOption:
         :type protocol_port: int
         :param sni_container_refs: 监听器使用的SNI证书（带域名的服务器证书）ID列表。  使用说明： - 列表对应的所有SNI证书的域名不允许存在重复。 - 列表对应的所有SNI证书的域名总数不超过30。 - QUIC监听器仅支持RSA证书。
         :type sni_container_refs: list[str]
+        :param sni_match_algo: 监听器使用的SNI证书泛域名匹配方式。 longest_suffix表示最长尾缀匹配，wildcard表示标准域名分级匹配。 默认为wildcard。
+        :type sni_match_algo: str
         :param tags: 标签列表
         :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
         :param tls_ciphers_policy: 监听器使用的安全策略。  [取值：tls-1-0-inherit,tls-1-0, tls-1-1, tls-1-2,tls-1-2-strict，tls-1-2-fs，tls-1-0-with-1-3, tls-1-2-fs-with-1-3, hybrid-policy-1-0，默认：tls-1-0。](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [取值：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict，默认：tls-1-0。](tag:dt,dt_test,hcso_dt)  [使用说明：  - 仅对HTTPS协议类型的监听器且关联LB为独享型时有效。  - QUIC监听器不支持该字段。  - 若同时设置了security_policy_id和tls_ciphers_policy，则仅security_policy_id生效。  - 加密套件的优先顺序为ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa）](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42,dt,dt_test)  [使用说明： - 仅对HTTPS协议类型的监听器有效](tag:hcso_dt)
@@ -144,6 +148,7 @@ class CreateListenerOption:
         self._protocol = None
         self._protocol_port = None
         self._sni_container_refs = None
+        self._sni_match_algo = None
         self._tags = None
         self._tls_ciphers_policy = None
         self._security_policy_id = None
@@ -180,6 +185,8 @@ class CreateListenerOption:
         self.protocol_port = protocol_port
         if sni_container_refs is not None:
             self.sni_container_refs = sni_container_refs
+        if sni_match_algo is not None:
+            self.sni_match_algo = sni_match_algo
         if tags is not None:
             self.tags = tags
         if tls_ciphers_policy is not None:
@@ -486,6 +493,28 @@ class CreateListenerOption:
         :type sni_container_refs: list[str]
         """
         self._sni_container_refs = sni_container_refs
+
+    @property
+    def sni_match_algo(self):
+        """Gets the sni_match_algo of this CreateListenerOption.
+
+        监听器使用的SNI证书泛域名匹配方式。 longest_suffix表示最长尾缀匹配，wildcard表示标准域名分级匹配。 默认为wildcard。
+
+        :return: The sni_match_algo of this CreateListenerOption.
+        :rtype: str
+        """
+        return self._sni_match_algo
+
+    @sni_match_algo.setter
+    def sni_match_algo(self, sni_match_algo):
+        """Sets the sni_match_algo of this CreateListenerOption.
+
+        监听器使用的SNI证书泛域名匹配方式。 longest_suffix表示最长尾缀匹配，wildcard表示标准域名分级匹配。 默认为wildcard。
+
+        :param sni_match_algo: The sni_match_algo of this CreateListenerOption.
+        :type sni_match_algo: str
+        """
+        self._sni_match_algo = sni_match_algo
 
     @property
     def tags(self):

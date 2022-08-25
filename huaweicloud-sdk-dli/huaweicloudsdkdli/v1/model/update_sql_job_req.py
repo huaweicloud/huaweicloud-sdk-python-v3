@@ -46,7 +46,8 @@ class UpdateSQLJobReq:
         'resume_max_num': 'int',
         'runtime_config': 'str',
         'operator_config': 'str',
-        'static_estimator_config': 'str'
+        'static_estimator_config': 'str',
+        'flink_version': 'str'
     }
 
     attribute_map = {
@@ -75,10 +76,11 @@ class UpdateSQLJobReq:
         'resume_max_num': 'resume_max_num',
         'runtime_config': 'runtime_config',
         'operator_config': 'operator_config',
-        'static_estimator_config': 'static_estimator_config'
+        'static_estimator_config': 'static_estimator_config',
+        'flink_version': 'flink_version'
     }
 
-    def __init__(self, name=None, desc=None, queue_name=None, sql_body=None, run_mode=None, cu_number=None, parallel_number=None, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, obs_bucket=None, log_enabled=None, smn_topic=None, restart_when_exception=None, idle_state_retention=None, edge_group_ids=None, dirty_data_strategy=None, udf_jar_url=None, manager_cu_number=None, tm_cus=None, tm_slot_num=None, resume_checkpoint=None, resume_max_num=None, runtime_config=None, operator_config=None, static_estimator_config=None):
+    def __init__(self, name=None, desc=None, queue_name=None, sql_body=None, run_mode=None, cu_number=None, parallel_number=None, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, obs_bucket=None, log_enabled=None, smn_topic=None, restart_when_exception=None, idle_state_retention=None, edge_group_ids=None, dirty_data_strategy=None, udf_jar_url=None, manager_cu_number=None, tm_cus=None, tm_slot_num=None, resume_checkpoint=None, resume_max_num=None, runtime_config=None, operator_config=None, static_estimator_config=None, flink_version=None):
         """UpdateSQLJobReq
 
         The model defined in huaweicloud sdk
@@ -135,6 +137,8 @@ class UpdateSQLJobReq:
         :type operator_config: str
         :param static_estimator_config: 每个算子的流量/命中率配置，json格式的字符串。例如： {\&quot;operator_list\&quot;:[   {\&quot;id\&quot;:\&quot;0a448493b4782967b150582570326227\&quot;,\&quot;rate_factor\&quot;:0.55},   {\&quot;id\&quot;:\&quot;6d2677a0ecc3fd8df0b72ec675edf8f4\&quot;,\&quot;rate_factor\&quot;:1},   {\&quot;id\&quot;:\&quot;ea632d67b7d595e5b851708ae9ad79d6\&quot;,\&quot;rate_factor\&quot;:0.55},   {\&quot;id\&quot;:\&quot;bc764cd8ddf7a0cff126f51c16239658\&quot;,\&quot;output_rate\&quot;:2000} ]}
         :type static_estimator_config: str
+        :param flink_version: Flink版本。当前只支持1.10和1.12。
+        :type flink_version: str
         """
         
         
@@ -165,6 +169,7 @@ class UpdateSQLJobReq:
         self._runtime_config = None
         self._operator_config = None
         self._static_estimator_config = None
+        self._flink_version = None
         self.discriminator = None
 
         if name is not None:
@@ -219,6 +224,8 @@ class UpdateSQLJobReq:
             self.operator_config = operator_config
         if static_estimator_config is not None:
             self.static_estimator_config = static_estimator_config
+        if flink_version is not None:
+            self.flink_version = flink_version
 
     @property
     def name(self):
@@ -791,6 +798,28 @@ class UpdateSQLJobReq:
         :type static_estimator_config: str
         """
         self._static_estimator_config = static_estimator_config
+
+    @property
+    def flink_version(self):
+        """Gets the flink_version of this UpdateSQLJobReq.
+
+        Flink版本。当前只支持1.10和1.12。
+
+        :return: The flink_version of this UpdateSQLJobReq.
+        :rtype: str
+        """
+        return self._flink_version
+
+    @flink_version.setter
+    def flink_version(self, flink_version):
+        """Sets the flink_version of this UpdateSQLJobReq.
+
+        Flink版本。当前只支持1.10和1.12。
+
+        :param flink_version: The flink_version of this UpdateSQLJobReq.
+        :type flink_version: str
+        """
+        self._flink_version = flink_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

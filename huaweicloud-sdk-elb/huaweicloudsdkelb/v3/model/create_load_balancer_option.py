@@ -46,7 +46,8 @@ class CreateLoadBalancerOption:
         'ip_target_enable': 'bool',
         'deletion_protection_enable': 'bool',
         'prepaid_options': 'PrepaidCreateOption',
-        'autoscaling': 'CreateLoadbalancerAutoscalingOption'
+        'autoscaling': 'CreateLoadbalancerAutoscalingOption',
+        'waf_failure_action': 'str'
     }
 
     attribute_map = {
@@ -75,10 +76,11 @@ class CreateLoadBalancerOption:
         'ip_target_enable': 'ip_target_enable',
         'deletion_protection_enable': 'deletion_protection_enable',
         'prepaid_options': 'prepaid_options',
-        'autoscaling': 'autoscaling'
+        'autoscaling': 'autoscaling',
+        'waf_failure_action': 'waf_failure_action'
     }
 
-    def __init__(self, id=None, project_id=None, name=None, description=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_virsubnet_id=None, provider=None, l4_flavor_id=None, l7_flavor_id=None, guaranteed=None, vpc_id=None, availability_zone_list=None, enterprise_project_id=None, tags=None, admin_state_up=None, billing_info=None, ipv6_bandwidth=None, global_eip_ids=None, publicip_ids=None, publicip=None, elb_virsubnet_ids=None, ip_target_enable=None, deletion_protection_enable=None, prepaid_options=None, autoscaling=None):
+    def __init__(self, id=None, project_id=None, name=None, description=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_virsubnet_id=None, provider=None, l4_flavor_id=None, l7_flavor_id=None, guaranteed=None, vpc_id=None, availability_zone_list=None, enterprise_project_id=None, tags=None, admin_state_up=None, billing_info=None, ipv6_bandwidth=None, global_eip_ids=None, publicip_ids=None, publicip=None, elb_virsubnet_ids=None, ip_target_enable=None, deletion_protection_enable=None, prepaid_options=None, autoscaling=None, waf_failure_action=None):
         """CreateLoadBalancerOption
 
         The model defined in huaweicloud sdk
@@ -135,6 +137,8 @@ class CreateLoadBalancerOption:
         :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidCreateOption`
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkelb.v3.CreateLoadbalancerAutoscalingOption`
+        :param waf_failure_action: WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）   使用说明：只有绑定了waf的LB实例，该字段才会生效。
+        :type waf_failure_action: str
         """
         
         
@@ -165,6 +169,7 @@ class CreateLoadBalancerOption:
         self._deletion_protection_enable = None
         self._prepaid_options = None
         self._autoscaling = None
+        self._waf_failure_action = None
         self.discriminator = None
 
         if id is not None:
@@ -218,6 +223,8 @@ class CreateLoadBalancerOption:
             self.prepaid_options = prepaid_options
         if autoscaling is not None:
             self.autoscaling = autoscaling
+        if waf_failure_action is not None:
+            self.waf_failure_action = waf_failure_action
 
     @property
     def id(self):
@@ -782,6 +789,28 @@ class CreateLoadBalancerOption:
         :type autoscaling: :class:`huaweicloudsdkelb.v3.CreateLoadbalancerAutoscalingOption`
         """
         self._autoscaling = autoscaling
+
+    @property
+    def waf_failure_action(self):
+        """Gets the waf_failure_action of this CreateLoadBalancerOption.
+
+        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）   使用说明：只有绑定了waf的LB实例，该字段才会生效。
+
+        :return: The waf_failure_action of this CreateLoadBalancerOption.
+        :rtype: str
+        """
+        return self._waf_failure_action
+
+    @waf_failure_action.setter
+    def waf_failure_action(self, waf_failure_action):
+        """Sets the waf_failure_action of this CreateLoadBalancerOption.
+
+        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）   使用说明：只有绑定了waf的LB实例，该字段才会生效。
+
+        :param waf_failure_action: The waf_failure_action of this CreateLoadBalancerOption.
+        :type waf_failure_action: str
+        """
+        self._waf_failure_action = waf_failure_action
 
     def to_dict(self):
         """Returns the model properties as a dict"""

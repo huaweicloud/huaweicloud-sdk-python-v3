@@ -1,3 +1,111 @@
+# 3.0.106 2022-08-25
+
+### HuaweiCloud SDK CDM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `UpdateJob`:
+    - Add the request parameters `rows_written`, `rows_read`, `files_written`, `extended-configs`, `value`, `extended-configs`, `value`, `extended-configs`, `value`
+    - Remove the request parameters `files_writte`, `values`, `values`, `values`
+  - Changes of the interface `ShowJobs`:
+    - Add the response parameters `rows_written`, `rows_read`, `files_written`, `extended-configs`, `value`, `extended-configs`, `value`, `extended-configs`, `value`
+    - Remove the response parameters `files_writte`, `values`, `values`, `values`
+  - Changes of the interface `CreateAndStartRandomClusterJob`:
+    - Add the request parameters `rows_written`, `rows_read`, `files_written`, `extended-configs`, `value`, `extended-configs`, `value`, `extended-configs`, `value`
+    - Remove the request parameters `files_writte`, `values`, `values`, `values`
+  - Changes of the interface `CreateJob`:
+    - Add the request parameters `rows_written`, `rows_read`, `files_written`, `extended-configs`, `value`, `extended-configs`, `value`, `extended-configs`, `value`
+    - Remove the request parameters `files_writte`, `values`, `values`, `values`
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `flink_version` to the interface `CreateFlinkSql`
+  - Add the request parameter `flink_version` to the interface `UpdateFlinkSql`
+  - The request parameter `key`, `value` changed to required of the interface `CreateElasticResourcePool`
+  - Add the response parameters `elastic_resource_pool_name`, `manager`, `label` to the interface `ListElasticResourcePools`
+  - Changes of the interface `ListQueues`:
+    - Add the request parameters `page-size`, `current-page`, `order`
+    - Add the response parameters `queue_id`, `elastic_resource_pool_name`
+
+### HuaweiCloud SDK ELB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the following interfaces：
+    - `ListMasterSlavePools`
+    - `CreateMasterSlavePool`
+    - `ShowMasterSlavePool`
+    - `DeleteMasterSlavePool`
+  - Add the response parameter `waf_failure_action` to the interface `ListLoadBalancers`
+  - Add the request parameter `waf_failure_action` to the interface `CreateLoadBalancer`
+  - Add the response parameter `waf_failure_action` to the interface `ShowLoadBalancer`
+  - Changes of the interface `UpdateLoadBalancer`:
+    - Add the request parameter `waf_failure_action`
+    - Add the response parameter `waf_failure_action`
+    - Remove the request parameter `cloud_service_console_url`
+  - Add the response parameters `enc_certificate`, `enc_private_key` to the interface `ListCertificates`
+  - Add the request parameters `enc_certificate`, `enc_private_key` to the interface `CreateCertificate`
+  - Add the response parameters `enc_certificate`, `enc_private_key` to the interface `ShowCertificate`
+  - Changes of the interface `UpdateCertificate`:
+    - Add the request parameters `enc_certificate`, `enc_private_key`
+    - Add the response parameters `enc_certificate`, `enc_private_key`
+  - Add the response parameter `sni_match_algo` to the interface `ListListeners`
+  - Add the request parameter `sni_match_algo` to the interface `CreateListener`
+  - Add the response parameter `sni_match_algo` to the interface `ShowListener`
+  - Changes of the interface `UpdateListener`:
+    - Add the request parameter `sni_match_algo`
+    - Add the response parameter `sni_match_algo`
+  - Add the request parameter `instance_id` to the interface `ListMembers`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `RecognizeWebImage`:
+    - Add the request parameter `detect_font`
+    - Add the response parameters `font_list`, `font_scores`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interface `SetDatabaseUserPrivilege`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK VOD
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `int32` -> `int64` of the request parameter `size` of the interface `CheckMd5Duplication`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - Support the interface `ListRequestTimeline`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `description` to the interface `UpdateGeoipRule`
+
 # 3.0.105 2022-08-22
 
 ### HuaweiCloud SDK Live

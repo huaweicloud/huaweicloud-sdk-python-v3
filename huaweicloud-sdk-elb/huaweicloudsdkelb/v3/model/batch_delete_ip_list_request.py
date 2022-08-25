@@ -22,7 +22,7 @@ class BatchDeleteIpListRequest:
 
     openapi_types = {
         'ipgroup_id': 'str',
-        'body': 'BatchDeleteIpGroupIpListRequestBody'
+        'body': 'BatchDeleteIpListRequestBody'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class BatchDeleteIpListRequest:
         :param ipgroup_id: IP地址组ID。
         :type ipgroup_id: str
         :param body: Body of the BatchDeleteIpListRequest
-        :type body: :class:`huaweicloudsdkelb.v3.BatchDeleteIpGroupIpListRequestBody`
+        :type body: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListRequestBody`
         """
         
         
@@ -79,7 +79,7 @@ class BatchDeleteIpListRequest:
 
 
         :return: The body of this BatchDeleteIpListRequest.
-        :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteIpGroupIpListRequestBody`
+        :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListRequestBody`
         """
         return self._body
 
@@ -89,7 +89,7 @@ class BatchDeleteIpListRequest:
 
 
         :param body: The body of this BatchDeleteIpListRequest.
-        :type body: :class:`huaweicloudsdkelb.v3.BatchDeleteIpGroupIpListRequestBody`
+        :type body: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListRequestBody`
         """
         self._body = body
 

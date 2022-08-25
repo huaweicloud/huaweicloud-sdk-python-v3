@@ -58,7 +58,8 @@ class LoadBalancer:
         'ipv6_bandwidth': 'BandwidthRef',
         'deletion_protection_enable': 'bool',
         'autoscaling': 'AutoscalingRef',
-        'public_border_group': 'str'
+        'public_border_group': 'str',
+        'waf_failure_action': 'str'
     }
 
     attribute_map = {
@@ -99,10 +100,11 @@ class LoadBalancer:
         'ipv6_bandwidth': 'ipv6_bandwidth',
         'deletion_protection_enable': 'deletion_protection_enable',
         'autoscaling': 'autoscaling',
-        'public_border_group': 'public_border_group'
+        'public_border_group': 'public_border_group',
+        'waf_failure_action': 'waf_failure_action'
     }
 
-    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, global_eips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, ipv6_bandwidth=None, deletion_protection_enable=None, autoscaling=None, public_border_group=None):
+    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, global_eips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, ipv6_bandwidth=None, deletion_protection_enable=None, autoscaling=None, public_border_group=None, waf_failure_action=None):
         """LoadBalancer
 
         The model defined in huaweicloud sdk
@@ -167,7 +169,7 @@ class LoadBalancer:
         :type publicips: list[:class:`huaweicloudsdkelb.v3.PublicIpInfo`]
         :param global_eips: 负载均衡器绑定的global eip。只支持绑定一个global eip。
         :type global_eips: list[:class:`huaweicloudsdkelb.v3.GlobalEipInfo`]
-        :param elb_virsubnet_ids: 下联面子网网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets  响应参数中的id得到。  [  若不指定该字段，则会在当前负载均衡器所在的VPC中任意选一个子网，优选双栈网络。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs)   若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。   下联面子网必须属于该LB所在的VPC。
+        :param elb_virsubnet_ids: 下联面子网的网络ID列表。
         :type elb_virsubnet_ids: list[str]
         :param elb_virsubnet_type: 下联面子网类型 - ipv4：ipv4 - dualstack：双栈
         :type elb_virsubnet_type: str
@@ -183,6 +185,8 @@ class LoadBalancer:
         :type autoscaling: :class:`huaweicloudsdkelb.v3.AutoscalingRef`
         :param public_border_group: LB所属AZ组
         :type public_border_group: str
+        :param waf_failure_action: WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）   使用说明：只有绑定了waf的LB实例，该字段才会生效。
+        :type waf_failure_action: str
         """
         
         
@@ -225,6 +229,7 @@ class LoadBalancer:
         self._deletion_protection_enable = None
         self._autoscaling = None
         self._public_border_group = None
+        self._waf_failure_action = None
         self.discriminator = None
 
         self.id = id
@@ -268,6 +273,8 @@ class LoadBalancer:
             self.autoscaling = autoscaling
         if public_border_group is not None:
             self.public_border_group = public_border_group
+        if waf_failure_action is not None:
+            self.waf_failure_action = waf_failure_action
 
     @property
     def id(self):
@@ -933,7 +940,7 @@ class LoadBalancer:
     def elb_virsubnet_ids(self):
         """Gets the elb_virsubnet_ids of this LoadBalancer.
 
-        下联面子网网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets  响应参数中的id得到。  [  若不指定该字段，则会在当前负载均衡器所在的VPC中任意选一个子网，优选双栈网络。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs)   若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。   下联面子网必须属于该LB所在的VPC。
+        下联面子网的网络ID列表。
 
         :return: The elb_virsubnet_ids of this LoadBalancer.
         :rtype: list[str]
@@ -944,7 +951,7 @@ class LoadBalancer:
     def elb_virsubnet_ids(self, elb_virsubnet_ids):
         """Sets the elb_virsubnet_ids of this LoadBalancer.
 
-        下联面子网网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets  响应参数中的id得到。  [  若不指定该字段，则会在当前负载均衡器所在的VPC中任意选一个子网，优选双栈网络。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs)   若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。   下联面子网必须属于该LB所在的VPC。
+        下联面子网的网络ID列表。
 
         :param elb_virsubnet_ids: The elb_virsubnet_ids of this LoadBalancer.
         :type elb_virsubnet_ids: list[str]
@@ -1100,6 +1107,28 @@ class LoadBalancer:
         :type public_border_group: str
         """
         self._public_border_group = public_border_group
+
+    @property
+    def waf_failure_action(self):
+        """Gets the waf_failure_action of this LoadBalancer.
+
+        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）   使用说明：只有绑定了waf的LB实例，该字段才会生效。
+
+        :return: The waf_failure_action of this LoadBalancer.
+        :rtype: str
+        """
+        return self._waf_failure_action
+
+    @waf_failure_action.setter
+    def waf_failure_action(self, waf_failure_action):
+        """Sets the waf_failure_action of this LoadBalancer.
+
+        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）   使用说明：只有绑定了waf的LB实例，该字段才会生效。
+
+        :param waf_failure_action: The waf_failure_action of this LoadBalancer.
+        :type waf_failure_action: str
+        """
+        self._waf_failure_action = waf_failure_action
 
     def to_dict(self):
         """Returns the model properties as a dict"""

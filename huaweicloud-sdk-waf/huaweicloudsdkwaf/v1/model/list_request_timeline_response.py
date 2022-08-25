@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowMasterSlavePoolRequest:
+class ListRequestTimelineResponse(SdkResponse):
 
     """
     Attributes:
@@ -21,50 +21,51 @@ class ShowMasterSlavePoolRequest:
     sensitive_list = []
 
     openapi_types = {
-        'pool_id': 'str'
+        'body': 'list[StatisticsTimelineItem]'
     }
 
     attribute_map = {
-        'pool_id': 'pool_id'
+        'body': 'body'
     }
 
-    def __init__(self, pool_id=None):
-        """ShowMasterSlavePoolRequest
+    def __init__(self, body=None):
+        """ListRequestTimelineResponse
 
         The model defined in huaweicloud sdk
 
-        :param pool_id: 后端服务器组ID。
-        :type pool_id: str
+        :param body: 安全统计的请求时间线数据
+        :type body: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]
         """
         
-        
+        super(ListRequestTimelineResponse, self).__init__()
 
-        self._pool_id = None
+        self._body = None
         self.discriminator = None
 
-        self.pool_id = pool_id
+        if body is not None:
+            self.body = body
 
     @property
-    def pool_id(self):
-        """Gets the pool_id of this ShowMasterSlavePoolRequest.
+    def body(self):
+        """Gets the body of this ListRequestTimelineResponse.
 
-        后端服务器组ID。
+        安全统计的请求时间线数据
 
-        :return: The pool_id of this ShowMasterSlavePoolRequest.
-        :rtype: str
+        :return: The body of this ListRequestTimelineResponse.
+        :rtype: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]
         """
-        return self._pool_id
+        return self._body
 
-    @pool_id.setter
-    def pool_id(self, pool_id):
-        """Sets the pool_id of this ShowMasterSlavePoolRequest.
+    @body.setter
+    def body(self, body):
+        """Sets the body of this ListRequestTimelineResponse.
 
-        后端服务器组ID。
+        安全统计的请求时间线数据
 
-        :param pool_id: The pool_id of this ShowMasterSlavePoolRequest.
-        :type pool_id: str
+        :param body: The body of this ListRequestTimelineResponse.
+        :type body: list[:class:`huaweicloudsdkwaf.v1.StatisticsTimelineItem`]
         """
-        self._pool_id = pool_id
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -108,7 +109,7 @@ class ShowMasterSlavePoolRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowMasterSlavePoolRequest):
+        if not isinstance(other, ListRequestTimelineResponse):
             return False
 
         return self.__dict__ == other.__dict__

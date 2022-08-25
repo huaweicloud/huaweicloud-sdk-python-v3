@@ -32,7 +32,9 @@ class CertificateInfo:
         'created_at': 'str',
         'updated_at': 'str',
         'expire_time': 'str',
-        'project_id': 'str'
+        'project_id': 'str',
+        'enc_certificate': 'str',
+        'enc_private_key': 'str'
     }
 
     attribute_map = {
@@ -47,10 +49,12 @@ class CertificateInfo:
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'expire_time': 'expire_time',
-        'project_id': 'project_id'
+        'project_id': 'project_id',
+        'enc_certificate': 'enc_certificate',
+        'enc_private_key': 'enc_private_key'
     }
 
-    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, id=None, name=None, private_key=None, type=None, created_at=None, updated_at=None, expire_time=None, project_id=None):
+    def __init__(self, admin_state_up=None, certificate=None, description=None, domain=None, id=None, name=None, private_key=None, type=None, created_at=None, updated_at=None, expire_time=None, project_id=None, enc_certificate=None, enc_private_key=None):
         """CertificateInfo
 
         The model defined in huaweicloud sdk
@@ -79,6 +83,10 @@ class CertificateInfo:
         :type expire_time: str
         :param project_id: 证书所在项目ID。
         :type project_id: str
+        :param enc_certificate: HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
+        :type enc_certificate: str
+        :param enc_private_key: HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
+        :type enc_private_key: str
         """
         
         
@@ -95,6 +103,8 @@ class CertificateInfo:
         self._updated_at = None
         self._expire_time = None
         self._project_id = None
+        self._enc_certificate = None
+        self._enc_private_key = None
         self.discriminator = None
 
         self.admin_state_up = admin_state_up
@@ -109,6 +119,10 @@ class CertificateInfo:
         self.updated_at = updated_at
         self.expire_time = expire_time
         self.project_id = project_id
+        if enc_certificate is not None:
+            self.enc_certificate = enc_certificate
+        if enc_private_key is not None:
+            self.enc_private_key = enc_private_key
 
     @property
     def admin_state_up(self):
@@ -373,6 +387,50 @@ class CertificateInfo:
         :type project_id: str
         """
         self._project_id = project_id
+
+    @property
+    def enc_certificate(self):
+        """Gets the enc_certificate of this CertificateInfo.
+
+        HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
+
+        :return: The enc_certificate of this CertificateInfo.
+        :rtype: str
+        """
+        return self._enc_certificate
+
+    @enc_certificate.setter
+    def enc_certificate(self, enc_certificate):
+        """Sets the enc_certificate of this CertificateInfo.
+
+        HTTPS协议使用的SM加密证书内容。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
+
+        :param enc_certificate: The enc_certificate of this CertificateInfo.
+        :type enc_certificate: str
+        """
+        self._enc_certificate = enc_certificate
+
+    @property
+    def enc_private_key(self):
+        """Gets the enc_private_key of this CertificateInfo.
+
+        HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
+
+        :return: The enc_private_key of this CertificateInfo.
+        :rtype: str
+        """
+        return self._enc_private_key
+
+    @enc_private_key.setter
+    def enc_private_key(self, enc_private_key):
+        """Sets the enc_private_key of this CertificateInfo.
+
+        HTTPS协议使用的SM加密证书私钥。  取值：PEM编码格式。  注意：仅在当前局点的SM加密证书特性开启才会返回该字段。
+
+        :param enc_private_key: The enc_private_key of this CertificateInfo.
+        :type enc_private_key: str
+        """
+        self._enc_private_key = enc_private_key
 
     def to_dict(self):
         """Returns the model properties as a dict"""

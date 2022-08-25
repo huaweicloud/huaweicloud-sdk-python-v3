@@ -35,7 +35,7 @@ class FilterV2:
 
         The model defined in huaweicloud sdk
 
-        :param operator: |参数名称：运算符| |参数的约束及描述：0：仅包含1：仅排除 此参数不携带或携带值为null时，不作为筛选条件。|
+        :param operator: 运算符。0：仅包含1：仅排除 此参数不携带或携带值为null时，不作为筛选条件。
         :type operator: int
         :param filter_factor: 
         :type filter_factor: :class:`huaweicloudsdkbss.v2.FilterFactor`
@@ -56,7 +56,7 @@ class FilterV2:
     def operator(self):
         """Gets the operator of this FilterV2.
 
-        |参数名称：运算符| |参数的约束及描述：0：仅包含1：仅排除 此参数不携带或携带值为null时，不作为筛选条件。|
+        运算符。0：仅包含1：仅排除 此参数不携带或携带值为null时，不作为筛选条件。
 
         :return: The operator of this FilterV2.
         :rtype: int
@@ -67,7 +67,7 @@ class FilterV2:
     def operator(self, operator):
         """Sets the operator of this FilterV2.
 
-        |参数名称：运算符| |参数的约束及描述：0：仅包含1：仅排除 此参数不携带或携带值为null时，不作为筛选条件。|
+        运算符。0：仅包含1：仅排除 此参数不携带或携带值为null时，不作为筛选条件。
 
         :param operator: The operator of this FilterV2.
         :type operator: int

@@ -22,25 +22,25 @@ class Input:
 
     openapi_types = {
         'name': 'str',
-        'values': 'str',
+        'value': 'str',
         'type': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'values': 'values',
+        'value': 'value',
         'type': 'type'
     }
 
-    def __init__(self, name=None, values=None, type=None):
+    def __init__(self, name=None, value=None, type=None):
         """Input
 
         The model defined in huaweicloud sdk
 
         :param name: 参数名
         :type name: str
-        :param values: 参数值
-        :type values: str
+        :param value: 参数值
+        :type value: str
         :param type: 值类型
         :type type: str
         """
@@ -48,12 +48,12 @@ class Input:
         
 
         self._name = None
-        self._values = None
+        self._value = None
         self._type = None
         self.discriminator = None
 
         self.name = name
-        self.values = values
+        self.value = value
         if type is not None:
             self.type = type
 
@@ -80,26 +80,26 @@ class Input:
         self._name = name
 
     @property
-    def values(self):
-        """Gets the values of this Input.
+    def value(self):
+        """Gets the value of this Input.
 
         参数值
 
-        :return: The values of this Input.
+        :return: The value of this Input.
         :rtype: str
         """
-        return self._values
+        return self._value
 
-    @values.setter
-    def values(self, values):
-        """Sets the values of this Input.
+    @value.setter
+    def value(self, value):
+        """Sets the value of this Input.
 
         参数值
 
-        :param values: The values of this Input.
-        :type values: str
+        :param value: The value of this Input.
+        :type value: str
         """
-        self._values = values
+        self._value = value
 
     @property
     def type(self):

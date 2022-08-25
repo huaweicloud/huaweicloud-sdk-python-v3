@@ -24,17 +24,19 @@ class WebImageRequestBody:
         'image': 'str',
         'url': 'str',
         'detect_direction': 'bool',
-        'extract_type': 'list[str]'
+        'extract_type': 'list[str]',
+        'detect_font': 'bool'
     }
 
     attribute_map = {
         'image': 'image',
         'url': 'url',
         'detect_direction': 'detect_direction',
-        'extract_type': 'extract_type'
+        'extract_type': 'extract_type',
+        'detect_font': 'detect_font'
     }
 
-    def __init__(self, image=None, url=None, detect_direction=None, extract_type=None):
+    def __init__(self, image=None, url=None, detect_direction=None, extract_type=None, detect_font=None):
         """WebImageRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class WebImageRequestBody:
         :type detect_direction: bool
         :param extract_type: 结构化数据提取参数列表，目前只支持联系人信息、图像宽高，其入参值分别为\&quot;contact_info\&quot;，\&quot;image_size\&quot;，若该字段为空列表或缺失该字段，默认不提取。 
         :type extract_type: list[str]
+        :param detect_font: 为Boolean类型，若不传该字段，默认不检测切片字体，为True时，将检测切片的字体类型，并返回最相似的5种字体名称。 
+        :type detect_font: bool
         """
         
         
@@ -55,6 +59,7 @@ class WebImageRequestBody:
         self._url = None
         self._detect_direction = None
         self._extract_type = None
+        self._detect_font = None
         self.discriminator = None
 
         if image is not None:
@@ -65,6 +70,8 @@ class WebImageRequestBody:
             self.detect_direction = detect_direction
         if extract_type is not None:
             self.extract_type = extract_type
+        if detect_font is not None:
+            self.detect_font = detect_font
 
     @property
     def image(self):
@@ -153,6 +160,28 @@ class WebImageRequestBody:
         :type extract_type: list[str]
         """
         self._extract_type = extract_type
+
+    @property
+    def detect_font(self):
+        """Gets the detect_font of this WebImageRequestBody.
+
+        为Boolean类型，若不传该字段，默认不检测切片字体，为True时，将检测切片的字体类型，并返回最相似的5种字体名称。 
+
+        :return: The detect_font of this WebImageRequestBody.
+        :rtype: bool
+        """
+        return self._detect_font
+
+    @detect_font.setter
+    def detect_font(self, detect_font):
+        """Sets the detect_font of this WebImageRequestBody.
+
+        为Boolean类型，若不传该字段，默认不检测切片字体，为True时，将检测切片的字体类型，并返回最相似的5种字体名称。 
+
+        :param detect_font: The detect_font of this WebImageRequestBody.
+        :type detect_font: bool
+        """
+        self._detect_font = detect_font
 
     def to_dict(self):
         """Returns the model properties as a dict"""

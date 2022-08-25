@@ -12,8 +12,11 @@ class CcmRegion:
 
     CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://ccm.cn-north-4.myhuaweicloud.com")
 
+    AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://ccm.ap-southeast-3.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-4": CN_NORTH_4,
+        "ap-southeast-3": AP_SOUTHEAST_3,
     }
 
     @classmethod

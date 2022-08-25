@@ -37,11 +37,11 @@ class TimeCondition:
 
         The model defined in huaweicloud sdk
 
-        :param time_measure_id: |参数名称：时间单位1：天2：月| |参数的约束及描述：时间单位1：天2：月|
+        :param time_measure_id: 时间单位。1：天2：月
         :type time_measure_id: int
-        :param begin_time: |参数名称：查询开始时间，必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM| |参数约束及描述：查询开始时间，必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM|
+        :param begin_time: 查询开始时间，必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM
         :type begin_time: str
-        :param end_time: |参数名称：查询结束时间：必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM| |参数约束及描述：查询结束时间：必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM|
+        :param end_time: 查询结束时间：必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM
         :type end_time: str
         """
         
@@ -60,7 +60,7 @@ class TimeCondition:
     def time_measure_id(self):
         """Gets the time_measure_id of this TimeCondition.
 
-        |参数名称：时间单位1：天2：月| |参数的约束及描述：时间单位1：天2：月|
+        时间单位。1：天2：月
 
         :return: The time_measure_id of this TimeCondition.
         :rtype: int
@@ -71,7 +71,7 @@ class TimeCondition:
     def time_measure_id(self, time_measure_id):
         """Sets the time_measure_id of this TimeCondition.
 
-        |参数名称：时间单位1：天2：月| |参数的约束及描述：时间单位1：天2：月|
+        时间单位。1：天2：月
 
         :param time_measure_id: The time_measure_id of this TimeCondition.
         :type time_measure_id: int
@@ -82,7 +82,7 @@ class TimeCondition:
     def begin_time(self):
         """Gets the begin_time of this TimeCondition.
 
-        |参数名称：查询开始时间，必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM| |参数约束及描述：查询开始时间，必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM|
+        查询开始时间，必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM
 
         :return: The begin_time of this TimeCondition.
         :rtype: str
@@ -93,7 +93,7 @@ class TimeCondition:
     def begin_time(self, begin_time):
         """Sets the begin_time of this TimeCondition.
 
-        |参数名称：查询开始时间，必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM| |参数约束及描述：查询开始时间，必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM|
+        查询开始时间，必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM
 
         :param begin_time: The begin_time of this TimeCondition.
         :type begin_time: str
@@ -104,7 +104,7 @@ class TimeCondition:
     def end_time(self):
         """Gets the end_time of this TimeCondition.
 
-        |参数名称：查询结束时间：必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM| |参数约束及描述：查询结束时间：必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM|
+        查询结束时间：必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM
 
         :return: The end_time of this TimeCondition.
         :rtype: str
@@ -115,7 +115,7 @@ class TimeCondition:
     def end_time(self, end_time):
         """Sets the end_time of this TimeCondition.
 
-        |参数名称：查询结束时间：必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM| |参数约束及描述：查询结束时间：必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM|
+        查询结束时间：必须是日期格式。当time_measure_id值为1或为空时，格式为YYYY-MM-DD当time_measure_id值为2时，格式为YYYY-MM
 
         :param end_time: The end_time of this TimeCondition.
         :type end_time: str

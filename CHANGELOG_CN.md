@@ -1,3 +1,111 @@
+# 3.0.106 2022-08-25
+
+### HuaweiCloud SDK CDM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateJob`:
+    - 新增请求参数 `rows_written`、`rows_read`、`files_written`、`extended-configs`、`value`、`extended-configs`、`value`、`extended-configs`、`value`
+    - 移除请求参数 `files_writte`、`values`、`values`、`values`
+  - 接口`ShowJobs`:
+    - 新增响应参数 `rows_written`、`rows_read`、`files_written`、`extended-configs`、`value`、`extended-configs`、`value`、`extended-configs`、`value`
+    - 移除响应参数 `files_writte`、`values`、`values`、`values`
+  - 接口`CreateAndStartRandomClusterJob`:
+    - 新增请求参数 `rows_written`、`rows_read`、`files_written`、`extended-configs`、`value`、`extended-configs`、`value`、`extended-configs`、`value`
+    - 移除请求参数 `files_writte`、`values`、`values`、`values`
+  - 接口`CreateJob`:
+    - 新增请求参数 `rows_written`、`rows_read`、`files_written`、`extended-configs`、`value`、`extended-configs`、`value`、`extended-configs`、`value`
+    - 移除请求参数 `files_writte`、`values`、`values`、`values`
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateFlinkSql`新增请求参数 `flink_version`
+  - 接口`UpdateFlinkSql`新增请求参数 `flink_version`
+  - 接口`CreateElasticResourcePool`请求参数`key`、`value`改为必填
+  - 接口`ListElasticResourcePools`新增响应参数 `elastic_resource_pool_name`、`manager`、`label`
+  - 接口`ListQueues`:
+    - 新增请求参数 `page-size`、`current-page`、`order`
+    - 新增响应参数 `queue_id`、`elastic_resource_pool_name`
+
+### HuaweiCloud SDK ELB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除以下接口：
+    - `ListMasterSlavePools`
+    - `CreateMasterSlavePool`
+    - `ShowMasterSlavePool`
+    - `DeleteMasterSlavePool`
+  - 接口`ListLoadBalancers`新增响应参数 `waf_failure_action`
+  - 接口`CreateLoadBalancer`新增请求参数 `waf_failure_action`
+  - 接口`ShowLoadBalancer`新增响应参数 `waf_failure_action`
+  - 接口`UpdateLoadBalancer`:
+    - 新增请求参数 `waf_failure_action`
+    - 新增响应参数 `waf_failure_action`
+    - 移除请求参数 `cloud_service_console_url`
+  - 接口`ListCertificates`新增响应参数 `enc_certificate`、`enc_private_key`
+  - 接口`CreateCertificate`新增请求参数 `enc_certificate`、`enc_private_key`
+  - 接口`ShowCertificate`新增响应参数 `enc_certificate`、`enc_private_key`
+  - 接口`UpdateCertificate`:
+    - 新增请求参数 `enc_certificate`、`enc_private_key`
+    - 新增响应参数 `enc_certificate`、`enc_private_key`
+  - 接口`ListListeners`新增响应参数 `sni_match_algo`
+  - 接口`CreateListener`新增请求参数 `sni_match_algo`
+  - 接口`ShowListener`新增响应参数 `sni_match_algo`
+  - 接口`UpdateListener`:
+    - 新增请求参数 `sni_match_algo`
+    - 新增响应参数 `sni_match_algo`
+  - 接口`ListMembers`新增请求参数 `instance_id`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeWebImage`:
+    - 新增请求参数 `detect_font`
+    - 新增响应参数 `font_list`、`font_scores`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`SetDatabaseUserPrivilege`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK VOD
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CheckMd5Duplication`请求参数`size`类型调整 `int32` -> `int64`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 支持接口`ListRequestTimeline`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateGeoipRule`新增响应参数 `description`
+
 # 3.0.105 2022-08-22
 
 ### HuaweiCloud SDK Live

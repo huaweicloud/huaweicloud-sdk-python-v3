@@ -21,29 +21,36 @@ class ConfigValues:
     sensitive_list = []
 
     openapi_types = {
-        'configs': 'list[Configs]'
+        'configs': 'list[Configs]',
+        'extended_configs': 'ExtendedConfigs'
     }
 
     attribute_map = {
-        'configs': 'configs'
+        'configs': 'configs',
+        'extended_configs': 'extended-configs'
     }
 
-    def __init__(self, configs=None):
+    def __init__(self, configs=None, extended_configs=None):
         """ConfigValues
 
         The model defined in huaweicloud sdk
 
         :param configs: 源连接参数、目的连接参数和作业任务参数，它们的配置数据结构相同，其中“inputs”里的参数不一样，详细请参见configs数据结构说明
         :type configs: list[:class:`huaweicloudsdkcdm.v1.Configs`]
+        :param extended_configs: 
+        :type extended_configs: :class:`huaweicloudsdkcdm.v1.ExtendedConfigs`
         """
         
         
 
         self._configs = None
+        self._extended_configs = None
         self.discriminator = None
 
         if configs is not None:
             self.configs = configs
+        if extended_configs is not None:
+            self.extended_configs = extended_configs
 
     @property
     def configs(self):
@@ -66,6 +73,26 @@ class ConfigValues:
         :type configs: list[:class:`huaweicloudsdkcdm.v1.Configs`]
         """
         self._configs = configs
+
+    @property
+    def extended_configs(self):
+        """Gets the extended_configs of this ConfigValues.
+
+
+        :return: The extended_configs of this ConfigValues.
+        :rtype: :class:`huaweicloudsdkcdm.v1.ExtendedConfigs`
+        """
+        return self._extended_configs
+
+    @extended_configs.setter
+    def extended_configs(self, extended_configs):
+        """Sets the extended_configs of this ConfigValues.
+
+
+        :param extended_configs: The extended_configs of this ConfigValues.
+        :type extended_configs: :class:`huaweicloudsdkcdm.v1.ExtendedConfigs`
+        """
+        self._extended_configs = extended_configs
 
     def to_dict(self):
         """Returns the model properties as a dict"""
