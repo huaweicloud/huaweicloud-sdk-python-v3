@@ -24,6 +24,7 @@ class PostPaidServer:
         'auto_terminate_time': 'str',
         'admin_pass': 'str',
         'availability_zone': 'str',
+        'batch_create_in_multi_az': 'bool',
         'count': 'int',
         'data_volumes': 'list[PostPaidServerDataVolume]',
         'extendparam': 'PostPaidServerExtendParam',
@@ -49,6 +50,7 @@ class PostPaidServer:
         'auto_terminate_time': 'auto_terminate_time',
         'admin_pass': 'adminPass',
         'availability_zone': 'availability_zone',
+        'batch_create_in_multi_az': 'batch_create_in_multi_az',
         'count': 'count',
         'data_volumes': 'data_volumes',
         'extendparam': 'extendparam',
@@ -70,7 +72,7 @@ class PostPaidServer:
         'description': 'description'
     }
 
-    def __init__(self, auto_terminate_time=None, admin_pass=None, availability_zone=None, count=None, data_volumes=None, extendparam=None, flavor_ref=None, image_ref=None, is_auto_rename=None, key_name=None, metadata=None, name=None, nics=None, osscheduler_hints=None, publicip=None, root_volume=None, security_groups=None, server_tags=None, tags=None, user_data=None, vpcid=None, description=None):
+    def __init__(self, auto_terminate_time=None, admin_pass=None, availability_zone=None, batch_create_in_multi_az=None, count=None, data_volumes=None, extendparam=None, flavor_ref=None, image_ref=None, is_auto_rename=None, key_name=None, metadata=None, name=None, nics=None, osscheduler_hints=None, publicip=None, root_volume=None, security_groups=None, server_tags=None, tags=None, user_data=None, vpcid=None, description=None):
         """PostPaidServer
 
         The model defined in huaweicloud sdk
@@ -81,6 +83,8 @@ class PostPaidServer:
         :type admin_pass: str
         :param availability_zone: 待创建云服务器所在的可用分区，需要指定可用分区（AZ）的名称。  可通过接口 [查询可用区列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;ECS&amp;api&#x3D;NovaListAvailabilityZones) 获取，也可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
         :type availability_zone: str
+        :param batch_create_in_multi_az: 是否支持随机多AZ部署。  - “true”：批量创建的ecs部署在多个AZ上 - “false”：批量创建的ecs部署在单个AZ上  &gt; 说明： &gt;  &gt; 当availability_zone为空时该字段生效。
+        :type batch_create_in_multi_az: bool
         :param count: 创建云服务器数量。  约束：  - 不传该字段时默认取值为1。 - 租户的配额足够时，最大值为500。
         :type count: int
         :param data_volumes: 云服务器对应数据盘相关配置。每一个数据结构代表一块待创建的数据盘。 约束：目前新创建的弹性云服务器最多可挂载23块数据盘。
@@ -126,6 +130,7 @@ class PostPaidServer:
         self._auto_terminate_time = None
         self._admin_pass = None
         self._availability_zone = None
+        self._batch_create_in_multi_az = None
         self._count = None
         self._data_volumes = None
         self._extendparam = None
@@ -153,6 +158,8 @@ class PostPaidServer:
             self.admin_pass = admin_pass
         if availability_zone is not None:
             self.availability_zone = availability_zone
+        if batch_create_in_multi_az is not None:
+            self.batch_create_in_multi_az = batch_create_in_multi_az
         if count is not None:
             self.count = count
         if data_volumes is not None:
@@ -251,6 +258,28 @@ class PostPaidServer:
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def batch_create_in_multi_az(self):
+        """Gets the batch_create_in_multi_az of this PostPaidServer.
+
+        是否支持随机多AZ部署。  - “true”：批量创建的ecs部署在多个AZ上 - “false”：批量创建的ecs部署在单个AZ上  > 说明： >  > 当availability_zone为空时该字段生效。
+
+        :return: The batch_create_in_multi_az of this PostPaidServer.
+        :rtype: bool
+        """
+        return self._batch_create_in_multi_az
+
+    @batch_create_in_multi_az.setter
+    def batch_create_in_multi_az(self, batch_create_in_multi_az):
+        """Sets the batch_create_in_multi_az of this PostPaidServer.
+
+        是否支持随机多AZ部署。  - “true”：批量创建的ecs部署在多个AZ上 - “false”：批量创建的ecs部署在单个AZ上  > 说明： >  > 当availability_zone为空时该字段生效。
+
+        :param batch_create_in_multi_az: The batch_create_in_multi_az of this PostPaidServer.
+        :type batch_create_in_multi_az: bool
+        """
+        self._batch_create_in_multi_az = batch_create_in_multi_az
 
     @property
     def count(self):

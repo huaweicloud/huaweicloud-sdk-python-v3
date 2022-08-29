@@ -37,7 +37,7 @@ class BaremetalServerTag:
 
         :param key: 键。  - 最大长度127个unicode字符。  - key不能为空。
         :type key: str
-        :param value: 值列表。  - 最多10个value。  - value不允许重复。  - 每个值最大长度255个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
+        :param value: 值列表。  - 最多20个value。  - value不允许重复。  - 每个值最大长度255个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
         :type value: str
         """
         
@@ -76,7 +76,7 @@ class BaremetalServerTag:
     def value(self):
         """Gets the value of this BaremetalServerTag.
 
-        值列表。  - 最多10个value。  - value不允许重复。  - 每个值最大长度255个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
+        值列表。  - 最多20个value。  - value不允许重复。  - 每个值最大长度255个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
 
         :return: The value of this BaremetalServerTag.
         :rtype: str
@@ -87,7 +87,7 @@ class BaremetalServerTag:
     def value(self, value):
         """Sets the value of this BaremetalServerTag.
 
-        值列表。  - 最多10个value。  - value不允许重复。  - 每个值最大长度255个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
+        值列表。  - 最多20个value。  - value不允许重复。  - 每个值最大长度255个unicode字符。  - 如果values为空则表示any_value。  - value之间为或的关系。
 
         :param value: The value of this BaremetalServerTag.
         :type value: str

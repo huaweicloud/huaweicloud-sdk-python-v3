@@ -90,6 +90,7 @@ from huaweicloudsdkims.v2.model.import_image_quick_request import ImportImageQui
 from huaweicloudsdkims.v2.model.import_image_quick_response import ImportImageQuickResponse
 from huaweicloudsdkims.v2.model.job_entities import JobEntities
 from huaweicloudsdkims.v2.model.job_entities_result import JobEntitiesResult
+from huaweicloudsdkims.v2.model.job_progress_entities import JobProgressEntities
 from huaweicloudsdkims.v2.model.links import Links
 from huaweicloudsdkims.v2.model.list_image_by_tags_request import ListImageByTagsRequest
 from huaweicloudsdkims.v2.model.list_image_by_tags_request_body import ListImageByTagsRequestBody
@@ -120,6 +121,8 @@ from huaweicloudsdkims.v2.model.resource_tag import ResourceTag
 from huaweicloudsdkims.v2.model.show_image_by_tags_resource import ShowImageByTagsResource
 from huaweicloudsdkims.v2.model.show_image_quota_request import ShowImageQuotaRequest
 from huaweicloudsdkims.v2.model.show_image_quota_response import ShowImageQuotaResponse
+from huaweicloudsdkims.v2.model.show_job_progress_request import ShowJobProgressRequest
+from huaweicloudsdkims.v2.model.show_job_progress_response import ShowJobProgressResponse
 from huaweicloudsdkims.v2.model.show_job_request import ShowJobRequest
 from huaweicloudsdkims.v2.model.show_job_response import ShowJobResponse
 from huaweicloudsdkims.v2.model.show_version_request import ShowVersionRequest

@@ -117,6 +117,7 @@ from huaweicloudsdkrds.v3.model.enlarge_volume_object import EnlargeVolumeObject
 from huaweicloudsdkrds.v3.model.error_log import ErrorLog
 from huaweicloudsdkrds.v3.model.error_response import ErrorResponse
 from huaweicloudsdkrds.v3.model.failover_mode_request import FailoverModeRequest
+from huaweicloudsdkrds.v3.model.failover_request import FailoverRequest
 from huaweicloudsdkrds.v3.model.failover_strategy_request import FailoverStrategyRequest
 from huaweicloudsdkrds.v3.model.flavor import Flavor
 from huaweicloudsdkrds.v3.model.follower_migrate_request import FollowerMigrateRequest
@@ -207,6 +208,7 @@ from huaweicloudsdkrds.v3.model.migrate_follower_response import MigrateFollower
 from huaweicloudsdkrds.v3.model.modifiy_instance_name_request import ModifiyInstanceNameRequest
 from huaweicloudsdkrds.v3.model.modify_dns_name_request_body import ModifyDnsNameRequestBody
 from huaweicloudsdkrds.v3.model.modify_proxy_weight_request import ModifyProxyWeightRequest
+from huaweicloudsdkrds.v3.model.mysql_read_only_switch import MysqlReadOnlySwitch
 from huaweicloudsdkrds.v3.model.node_response import NodeResponse
 from huaweicloudsdkrds.v3.model.off_site_backup_for_list import OffSiteBackupForList
 from huaweicloudsdkrds.v3.model.off_site_backup_policy import OffSiteBackupPolicy
@@ -284,6 +286,8 @@ from huaweicloudsdkrds.v3.model.set_off_site_backup_policy_request_body import S
 from huaweicloudsdkrds.v3.model.set_off_site_backup_policy_response import SetOffSiteBackupPolicyResponse
 from huaweicloudsdkrds.v3.model.set_postgresql_db_user_pwd_request import SetPostgresqlDbUserPwdRequest
 from huaweicloudsdkrds.v3.model.set_postgresql_db_user_pwd_response import SetPostgresqlDbUserPwdResponse
+from huaweicloudsdkrds.v3.model.set_read_only_switch_request import SetReadOnlySwitchRequest
+from huaweicloudsdkrds.v3.model.set_read_only_switch_response import SetReadOnlySwitchResponse
 from huaweicloudsdkrds.v3.model.set_security_group_request import SetSecurityGroupRequest
 from huaweicloudsdkrds.v3.model.set_security_group_response import SetSecurityGroupResponse
 from huaweicloudsdkrds.v3.model.set_sensitive_slow_log_request import SetSensitiveSlowLogRequest

@@ -1,3 +1,32 @@
+# 3.0.107 2022-08-29
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `batch_create_in_multi_az` to the interface `CreatePostPaidServers`
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+  - Support the interface `ShowJobProgress`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interface `SetReadOnlySwitch`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `FailoverRequestBody` to the interface `StartFailover`
+
 # 3.0.106 2022-08-25
 
 ### HuaweiCloud SDK CDM
