@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ActionReq:
+class RulesLocalGroup:
 
     """
     Attributes:
@@ -21,51 +21,50 @@ class ActionReq:
     sensitive_list = []
 
     openapi_types = {
-        'action': 'str'
+        'name': 'str'
     }
 
     attribute_map = {
-        'action': 'action'
+        'name': 'name'
     }
 
-    def __init__(self, action=None):
-        """ActionReq
+    def __init__(self, name=None):
+        """RulesLocalGroup
 
         The model defined in huaweicloud sdk
 
-        :param action: 集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照。当集群没有任何操作时该值为空。
-        :type action: str
+        :param name: 联邦用户在本系统中所属用户组
+        :type name: str
         """
         
         
 
-        self._action = None
+        self._name = None
         self.discriminator = None
 
-        if action is not None:
-            self.action = action
+        self.name = name
 
     @property
-    def action(self):
-        """Gets the action of this ActionReq.
+    def name(self):
+        """Gets the name of this RulesLocalGroup.
 
-        集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照。当集群没有任何操作时该值为空。
+        联邦用户在本系统中所属用户组
 
-        :return: The action of this ActionReq.
+        :return: The name of this RulesLocalGroup.
         :rtype: str
         """
-        return self._action
+        return self._name
 
-    @action.setter
-    def action(self, action):
-        """Sets the action of this ActionReq.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this RulesLocalGroup.
 
-        集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照。当集群没有任何操作时该值为空。
+        联邦用户在本系统中所属用户组
 
-        :param action: The action of this ActionReq.
-        :type action: str
+        :param name: The name of this RulesLocalGroup.
+        :type name: str
         """
-        self._action = action
+        self._name = name
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -109,7 +108,7 @@ class ActionReq:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ActionReq):
+        if not isinstance(other, RulesLocalGroup):
             return False
 
         return self.__dict__ == other.__dict__

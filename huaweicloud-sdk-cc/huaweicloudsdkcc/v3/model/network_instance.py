@@ -73,7 +73,7 @@ class NetworkInstance:
         :type created_at: datetime
         :param updated_at: 网络实例的更新时间。 UTC时间格式，yyyy-MM-ddTHH:mm:ss
         :type updated_at: datetime
-        :param type: 网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。 - ER：企业路由器。
+        :param type: 网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。
         :type type: str
         :param cloud_connection_id: 云连接实例ID。
         :type cloud_connection_id: str
@@ -85,7 +85,7 @@ class NetworkInstance:
         :type region_id: str
         :param project_id: 网络实例所在租户的项目ID。
         :type project_id: str
-        :param cidrs: 网络实例发布的网段路由列表，ER场景此字段为空。
+        :param cidrs: 网络实例发布的网段路由列表。
         :type cidrs: list[str]
         """
         
@@ -294,7 +294,7 @@ class NetworkInstance:
     def type(self):
         """Gets the type of this NetworkInstance.
 
-        网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。 - ER：企业路由器。
+        网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。
 
         :return: The type of this NetworkInstance.
         :rtype: str
@@ -305,7 +305,7 @@ class NetworkInstance:
     def type(self, type):
         """Sets the type of this NetworkInstance.
 
-        网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。 - ER：企业路由器。
+        网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。
 
         :param type: The type of this NetworkInstance.
         :type type: str
@@ -426,7 +426,7 @@ class NetworkInstance:
     def cidrs(self):
         """Gets the cidrs of this NetworkInstance.
 
-        网络实例发布的网段路由列表，ER场景此字段为空。
+        网络实例发布的网段路由列表。
 
         :return: The cidrs of this NetworkInstance.
         :rtype: list[str]
@@ -437,7 +437,7 @@ class NetworkInstance:
     def cidrs(self, cidrs):
         """Sets the cidrs of this NetworkInstance.
 
-        网络实例发布的网段路由列表，ER场景此字段为空。
+        网络实例发布的网段路由列表。
 
         :param cidrs: The cidrs of this NetworkInstance.
         :type cidrs: list[str]

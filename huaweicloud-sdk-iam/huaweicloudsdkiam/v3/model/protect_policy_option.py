@@ -21,28 +21,63 @@ class ProtectPolicyOption:
     sensitive_list = []
 
     openapi_types = {
-        'operation_protection': 'bool'
+        'operation_protection': 'bool',
+        'allow_user': 'AllowUserBody',
+        'mobile': 'str',
+        'admin_check': 'str',
+        'email': 'str',
+        'scene': 'str'
     }
 
     attribute_map = {
-        'operation_protection': 'operation_protection'
+        'operation_protection': 'operation_protection',
+        'allow_user': 'allow_user',
+        'mobile': 'mobile',
+        'admin_check': 'admin_check',
+        'email': 'email',
+        'scene': 'scene'
     }
 
-    def __init__(self, operation_protection=None):
+    def __init__(self, operation_protection=None, allow_user=None, mobile=None, admin_check=None, email=None, scene=None):
         """ProtectPolicyOption
 
         The model defined in huaweicloud sdk
 
         :param operation_protection: 是否开启操作保护，开启为\&quot;true\&quot;，未开启为\&quot;false\&quot;。
         :type operation_protection: bool
+        :param allow_user: 
+        :type allow_user: :class:`huaweicloudsdkiam.v3.AllowUserBody`
+        :param mobile: 操作保护验证指定手机号码。示例：0086-123456789。
+        :type mobile: str
+        :param admin_check: 是否指定人员验证。on为指定人员验证，必须填写scene参数。off为操作员验证。
+        :type admin_check: str
+        :param email: 操作保护验证指定邮件地址。示例：example@email.com。
+        :type email: str
+        :param scene: 操作保护指定人员验证方式，admin_check为on时，必须填写。包括mobile、email。
+        :type scene: str
         """
         
         
 
         self._operation_protection = None
+        self._allow_user = None
+        self._mobile = None
+        self._admin_check = None
+        self._email = None
+        self._scene = None
         self.discriminator = None
 
         self.operation_protection = operation_protection
+        if allow_user is not None:
+            self.allow_user = allow_user
+        if mobile is not None:
+            self.mobile = mobile
+        if admin_check is not None:
+            self.admin_check = admin_check
+        if email is not None:
+            self.email = email
+        if scene is not None:
+            self.scene = scene
 
     @property
     def operation_protection(self):
@@ -65,6 +100,114 @@ class ProtectPolicyOption:
         :type operation_protection: bool
         """
         self._operation_protection = operation_protection
+
+    @property
+    def allow_user(self):
+        """Gets the allow_user of this ProtectPolicyOption.
+
+
+        :return: The allow_user of this ProtectPolicyOption.
+        :rtype: :class:`huaweicloudsdkiam.v3.AllowUserBody`
+        """
+        return self._allow_user
+
+    @allow_user.setter
+    def allow_user(self, allow_user):
+        """Sets the allow_user of this ProtectPolicyOption.
+
+
+        :param allow_user: The allow_user of this ProtectPolicyOption.
+        :type allow_user: :class:`huaweicloudsdkiam.v3.AllowUserBody`
+        """
+        self._allow_user = allow_user
+
+    @property
+    def mobile(self):
+        """Gets the mobile of this ProtectPolicyOption.
+
+        操作保护验证指定手机号码。示例：0086-123456789。
+
+        :return: The mobile of this ProtectPolicyOption.
+        :rtype: str
+        """
+        return self._mobile
+
+    @mobile.setter
+    def mobile(self, mobile):
+        """Sets the mobile of this ProtectPolicyOption.
+
+        操作保护验证指定手机号码。示例：0086-123456789。
+
+        :param mobile: The mobile of this ProtectPolicyOption.
+        :type mobile: str
+        """
+        self._mobile = mobile
+
+    @property
+    def admin_check(self):
+        """Gets the admin_check of this ProtectPolicyOption.
+
+        是否指定人员验证。on为指定人员验证，必须填写scene参数。off为操作员验证。
+
+        :return: The admin_check of this ProtectPolicyOption.
+        :rtype: str
+        """
+        return self._admin_check
+
+    @admin_check.setter
+    def admin_check(self, admin_check):
+        """Sets the admin_check of this ProtectPolicyOption.
+
+        是否指定人员验证。on为指定人员验证，必须填写scene参数。off为操作员验证。
+
+        :param admin_check: The admin_check of this ProtectPolicyOption.
+        :type admin_check: str
+        """
+        self._admin_check = admin_check
+
+    @property
+    def email(self):
+        """Gets the email of this ProtectPolicyOption.
+
+        操作保护验证指定邮件地址。示例：example@email.com。
+
+        :return: The email of this ProtectPolicyOption.
+        :rtype: str
+        """
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        """Sets the email of this ProtectPolicyOption.
+
+        操作保护验证指定邮件地址。示例：example@email.com。
+
+        :param email: The email of this ProtectPolicyOption.
+        :type email: str
+        """
+        self._email = email
+
+    @property
+    def scene(self):
+        """Gets the scene of this ProtectPolicyOption.
+
+        操作保护指定人员验证方式，admin_check为on时，必须填写。包括mobile、email。
+
+        :return: The scene of this ProtectPolicyOption.
+        :rtype: str
+        """
+        return self._scene
+
+    @scene.setter
+    def scene(self, scene):
+        """Sets the scene of this ProtectPolicyOption.
+
+        操作保护指定人员验证方式，admin_check为on时，必须填写。包括mobile、email。
+
+        :param scene: The scene of this ProtectPolicyOption.
+        :type scene: str
+        """
+        self._scene = scene
 
     def to_dict(self):
         """Returns the model properties as a dict"""

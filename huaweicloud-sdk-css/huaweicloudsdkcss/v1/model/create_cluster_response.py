@@ -21,29 +21,36 @@ class CreateClusterResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'cluster': 'CreateClusterClusterResponse'
+        'cluster': 'CreateClusterClusterResponse',
+        'orde_id': 'str'
     }
 
     attribute_map = {
-        'cluster': 'cluster'
+        'cluster': 'cluster',
+        'orde_id': 'ordeId'
     }
 
-    def __init__(self, cluster=None):
+    def __init__(self, cluster=None, orde_id=None):
         """CreateClusterResponse
 
         The model defined in huaweicloud sdk
 
         :param cluster: 
         :type cluster: :class:`huaweicloudsdkcss.v1.CreateClusterClusterResponse`
+        :param orde_id: 订单号。只有包周期集群拥有该参数。
+        :type orde_id: str
         """
         
         super(CreateClusterResponse, self).__init__()
 
         self._cluster = None
+        self._orde_id = None
         self.discriminator = None
 
         if cluster is not None:
             self.cluster = cluster
+        if orde_id is not None:
+            self.orde_id = orde_id
 
     @property
     def cluster(self):
@@ -64,6 +71,28 @@ class CreateClusterResponse(SdkResponse):
         :type cluster: :class:`huaweicloudsdkcss.v1.CreateClusterClusterResponse`
         """
         self._cluster = cluster
+
+    @property
+    def orde_id(self):
+        """Gets the orde_id of this CreateClusterResponse.
+
+        订单号。只有包周期集群拥有该参数。
+
+        :return: The orde_id of this CreateClusterResponse.
+        :rtype: str
+        """
+        return self._orde_id
+
+    @orde_id.setter
+    def orde_id(self, orde_id):
+        """Sets the orde_id of this CreateClusterResponse.
+
+        订单号。只有包周期集群拥有该参数。
+
+        :param orde_id: The orde_id of this CreateClusterResponse.
+        :type orde_id: str
+        """
+        self._orde_id = orde_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

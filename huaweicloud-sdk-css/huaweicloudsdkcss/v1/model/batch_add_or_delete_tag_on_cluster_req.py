@@ -41,7 +41,7 @@ class BatchAddOrDeleteTagOnClusterReq:
         :type action: str
         :param tags: 标签列表。
         :type tags: list[:class:`huaweicloudsdkcss.v1.Tag`]
-        :param sys_tags: 系统标签列表。 - op_service权限可以访问，和tags二选一。 - 目前TMS调用时只包含一个resource_tag结构体 ，key固定为：_sys_enterprise_project_id。 - value是UUID或0,value为0表示默认企业项目。 - 现在仅支持create操作。
+        :param sys_tags: 系统标签列表。 - key固定为：_sys_enterprise_project_id。 - value是UUID或0,value为0表示默认企业项目。
         :type sys_tags: list[:class:`huaweicloudsdkcss.v1.SysTags`]
         """
         
@@ -105,7 +105,7 @@ class BatchAddOrDeleteTagOnClusterReq:
     def sys_tags(self):
         """Gets the sys_tags of this BatchAddOrDeleteTagOnClusterReq.
 
-        系统标签列表。 - op_service权限可以访问，和tags二选一。 - 目前TMS调用时只包含一个resource_tag结构体 ，key固定为：_sys_enterprise_project_id。 - value是UUID或0,value为0表示默认企业项目。 - 现在仅支持create操作。
+        系统标签列表。 - key固定为：_sys_enterprise_project_id。 - value是UUID或0,value为0表示默认企业项目。
 
         :return: The sys_tags of this BatchAddOrDeleteTagOnClusterReq.
         :rtype: list[:class:`huaweicloudsdkcss.v1.SysTags`]
@@ -116,7 +116,7 @@ class BatchAddOrDeleteTagOnClusterReq:
     def sys_tags(self, sys_tags):
         """Sets the sys_tags of this BatchAddOrDeleteTagOnClusterReq.
 
-        系统标签列表。 - op_service权限可以访问，和tags二选一。 - 目前TMS调用时只包含一个resource_tag结构体 ，key固定为：_sys_enterprise_project_id。 - value是UUID或0,value为0表示默认企业项目。 - 现在仅支持create操作。
+        系统标签列表。 - key固定为：_sys_enterprise_project_id。 - value是UUID或0,value为0表示默认企业项目。
 
         :param sys_tags: The sys_tags of this BatchAddOrDeleteTagOnClusterReq.
         :type sys_tags: list[:class:`huaweicloudsdkcss.v1.SysTags`]

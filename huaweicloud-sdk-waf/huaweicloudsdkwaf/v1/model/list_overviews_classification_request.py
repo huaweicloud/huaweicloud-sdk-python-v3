@@ -25,8 +25,8 @@ class ListOverviewsClassificationRequest:
         '_from': 'int',
         'to': 'int',
         'top': 'int',
-        'hosts': 'list[str]',
-        'instances': 'list[str]'
+        'hosts': 'str',
+        'instances': 'str'
     }
 
     attribute_map = {
@@ -51,10 +51,10 @@ class ListOverviewsClassificationRequest:
         :type to: int
         :param top: 要查询的前几的结果，最大值为10，默认值为5。
         :type top: int
-        :param hosts: 域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。当有需要传多个域名时，传参参考请求示例。
-        :type hosts: list[str]
-        :param instances: 要查询引擎实例列表
-        :type instances: list[str]
+        :param hosts: 域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
+        :type hosts: str
+        :param instances: 要查询引擎实例id
+        :type instances: str
         """
         
         
@@ -170,10 +170,10 @@ class ListOverviewsClassificationRequest:
     def hosts(self):
         """Gets the hosts of this ListOverviewsClassificationRequest.
 
-        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。当有需要传多个域名时，传参参考请求示例。
+        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
 
         :return: The hosts of this ListOverviewsClassificationRequest.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._hosts
 
@@ -181,10 +181,10 @@ class ListOverviewsClassificationRequest:
     def hosts(self, hosts):
         """Sets the hosts of this ListOverviewsClassificationRequest.
 
-        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。当有需要传多个域名时，传参参考请求示例。
+        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
 
         :param hosts: The hosts of this ListOverviewsClassificationRequest.
-        :type hosts: list[str]
+        :type hosts: str
         """
         self._hosts = hosts
 
@@ -192,10 +192,10 @@ class ListOverviewsClassificationRequest:
     def instances(self):
         """Gets the instances of this ListOverviewsClassificationRequest.
 
-        要查询引擎实例列表
+        要查询引擎实例id
 
         :return: The instances of this ListOverviewsClassificationRequest.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._instances
 
@@ -203,10 +203,10 @@ class ListOverviewsClassificationRequest:
     def instances(self, instances):
         """Sets the instances of this ListOverviewsClassificationRequest.
 
-        要查询引擎实例列表
+        要查询引擎实例id
 
         :param instances: The instances of this ListOverviewsClassificationRequest.
-        :type instances: list[str]
+        :type instances: str
         """
         self._instances = instances
 

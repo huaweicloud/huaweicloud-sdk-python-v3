@@ -71,7 +71,6 @@ from huaweicloudsdkroma.v2.model.api_resp_base_info import ApiRespBaseInfo
 from huaweicloudsdkroma.v2.model.api_version import ApiVersion
 from huaweicloudsdkroma.v2.model.api_version_resp import ApiVersionResp
 from huaweicloudsdkroma.v2.model.app_acl_create import AppAclCreate
-from huaweicloudsdkroma.v2.model.app_asset import AppAsset
 from huaweicloudsdkroma.v2.model.app_base_info import AppBaseInfo
 from huaweicloudsdkroma.v2.model.app_code_base_info import AppCodeBaseInfo
 from huaweicloudsdkroma.v2.model.app_code_create import AppCodeCreate
@@ -448,6 +447,7 @@ from huaweicloudsdkroma.v2.model.import_api_definitions_v2_request import Import
 from huaweicloudsdkroma.v2.model.import_api_definitions_v2_request_body import ImportApiDefinitionsV2RequestBody
 from huaweicloudsdkroma.v2.model.import_api_definitions_v2_response import ImportApiDefinitionsV2Response
 from huaweicloudsdkroma.v2.model.import_asset_request import ImportAssetRequest
+from huaweicloudsdkroma.v2.model.import_asset_request_body import ImportAssetRequestBody
 from huaweicloudsdkroma.v2.model.import_asset_response import ImportAssetResponse
 from huaweicloudsdkroma.v2.model.import_base_result import ImportBaseResult
 from huaweicloudsdkroma.v2.model.import_live_data_api_definitions_v2_request import ImportLiveDataApiDefinitionsV2Request

@@ -22,7 +22,7 @@ class ImportAssetRequest:
 
     openapi_types = {
         'instance_id': 'str',
-        'body': 'str'
+        'body': 'ImportAssetRequestBody'
     }
 
     attribute_map = {
@@ -37,8 +37,8 @@ class ImportAssetRequest:
 
         :param instance_id: 实例ID
         :type instance_id: str
-        :param body: 
-        :type body: str
+        :param body: Body of the ImportAssetRequest
+        :type body: :class:`huaweicloudsdkroma.v2.ImportAssetRequestBody`
         """
         
         
@@ -79,7 +79,7 @@ class ImportAssetRequest:
 
 
         :return: The body of this ImportAssetRequest.
-        :rtype: str
+        :rtype: :class:`huaweicloudsdkroma.v2.ImportAssetRequestBody`
         """
         return self._body
 
@@ -89,7 +89,7 @@ class ImportAssetRequest:
 
 
         :param body: The body of this ImportAssetRequest.
-        :type body: str
+        :type body: :class:`huaweicloudsdkroma.v2.ImportAssetRequestBody`
         """
         self._body = body
 

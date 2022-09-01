@@ -24,17 +24,19 @@ class InvokeFunctionResponse(SdkResponse):
         'request_id': 'str',
         'result': 'str',
         'log': 'str',
-        'status': 'int'
+        'status': 'int',
+        'x_cff_request_id': 'str'
     }
 
     attribute_map = {
         'request_id': 'request_id',
         'result': 'result',
         'log': 'log',
-        'status': 'status'
+        'status': 'status',
+        'x_cff_request_id': 'X-Cff-Request-Id'
     }
 
-    def __init__(self, request_id=None, result=None, log=None, status=None):
+    def __init__(self, request_id=None, result=None, log=None, status=None, x_cff_request_id=None):
         """InvokeFunctionResponse
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class InvokeFunctionResponse(SdkResponse):
         :type log: str
         :param status: 函数执行返回状态
         :type status: int
+        :param x_cff_request_id: 
+        :type x_cff_request_id: str
         """
         
         super(InvokeFunctionResponse, self).__init__()
@@ -55,6 +59,7 @@ class InvokeFunctionResponse(SdkResponse):
         self._result = None
         self._log = None
         self._status = None
+        self._x_cff_request_id = None
         self.discriminator = None
 
         if request_id is not None:
@@ -65,6 +70,8 @@ class InvokeFunctionResponse(SdkResponse):
             self.log = log
         if status is not None:
             self.status = status
+        if x_cff_request_id is not None:
+            self.x_cff_request_id = x_cff_request_id
 
     @property
     def request_id(self):
@@ -153,6 +160,26 @@ class InvokeFunctionResponse(SdkResponse):
         :type status: int
         """
         self._status = status
+
+    @property
+    def x_cff_request_id(self):
+        """Gets the x_cff_request_id of this InvokeFunctionResponse.
+
+
+        :return: The x_cff_request_id of this InvokeFunctionResponse.
+        :rtype: str
+        """
+        return self._x_cff_request_id
+
+    @x_cff_request_id.setter
+    def x_cff_request_id(self, x_cff_request_id):
+        """Sets the x_cff_request_id of this InvokeFunctionResponse.
+
+
+        :param x_cff_request_id: The x_cff_request_id of this InvokeFunctionResponse.
+        :type x_cff_request_id: str
+        """
+        self._x_cff_request_id = x_cff_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

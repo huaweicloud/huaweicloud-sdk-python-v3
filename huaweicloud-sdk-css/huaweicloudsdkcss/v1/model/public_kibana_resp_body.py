@@ -22,25 +22,25 @@ class PublicKibanaRespBody:
 
     openapi_types = {
         'eip_size': 'int',
-        'elb_white_list': 'KibanaElbWhiteListResp',
+        'elb_white_list_resp': 'KibanaElbWhiteListResp',
         'public_kibana_ip': 'str'
     }
 
     attribute_map = {
         'eip_size': 'eipSize',
-        'elb_white_list': 'elbWhiteList',
+        'elb_white_list_resp': 'elbWhiteListResp',
         'public_kibana_ip': 'publicKibanaIp'
     }
 
-    def __init__(self, eip_size=None, elb_white_list=None, public_kibana_ip=None):
+    def __init__(self, eip_size=None, elb_white_list_resp=None, public_kibana_ip=None):
         """PublicKibanaRespBody
 
         The model defined in huaweicloud sdk
 
         :param eip_size: 带宽大小。单位：Mbit/s
         :type eip_size: int
-        :param elb_white_list: 
-        :type elb_white_list: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
+        :param elb_white_list_resp: 
+        :type elb_white_list_resp: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
         :param public_kibana_ip: kibana访问IP。
         :type public_kibana_ip: str
         """
@@ -48,14 +48,14 @@ class PublicKibanaRespBody:
         
 
         self._eip_size = None
-        self._elb_white_list = None
+        self._elb_white_list_resp = None
         self._public_kibana_ip = None
         self.discriminator = None
 
         if eip_size is not None:
             self.eip_size = eip_size
-        if elb_white_list is not None:
-            self.elb_white_list = elb_white_list
+        if elb_white_list_resp is not None:
+            self.elb_white_list_resp = elb_white_list_resp
         if public_kibana_ip is not None:
             self.public_kibana_ip = public_kibana_ip
 
@@ -82,24 +82,24 @@ class PublicKibanaRespBody:
         self._eip_size = eip_size
 
     @property
-    def elb_white_list(self):
-        """Gets the elb_white_list of this PublicKibanaRespBody.
+    def elb_white_list_resp(self):
+        """Gets the elb_white_list_resp of this PublicKibanaRespBody.
 
 
-        :return: The elb_white_list of this PublicKibanaRespBody.
+        :return: The elb_white_list_resp of this PublicKibanaRespBody.
         :rtype: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
         """
-        return self._elb_white_list
+        return self._elb_white_list_resp
 
-    @elb_white_list.setter
-    def elb_white_list(self, elb_white_list):
-        """Sets the elb_white_list of this PublicKibanaRespBody.
+    @elb_white_list_resp.setter
+    def elb_white_list_resp(self, elb_white_list_resp):
+        """Sets the elb_white_list_resp of this PublicKibanaRespBody.
 
 
-        :param elb_white_list: The elb_white_list of this PublicKibanaRespBody.
-        :type elb_white_list: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
+        :param elb_white_list_resp: The elb_white_list_resp of this PublicKibanaRespBody.
+        :type elb_white_list_resp: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
         """
-        self._elb_white_list = elb_white_list
+        self._elb_white_list_resp = elb_white_list_resp
 
     @property
     def public_kibana_ip(self):

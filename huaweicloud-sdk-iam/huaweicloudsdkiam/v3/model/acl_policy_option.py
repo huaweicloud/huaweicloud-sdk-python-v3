@@ -47,8 +47,10 @@ class AclPolicyOption:
         self._allow_ip_ranges = None
         self.discriminator = None
 
-        self.allow_address_netmasks = allow_address_netmasks
-        self.allow_ip_ranges = allow_ip_ranges
+        if allow_address_netmasks is not None:
+            self.allow_address_netmasks = allow_address_netmasks
+        if allow_ip_ranges is not None:
+            self.allow_ip_ranges = allow_ip_ranges
 
     @property
     def allow_address_netmasks(self):

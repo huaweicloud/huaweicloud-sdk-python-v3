@@ -24,17 +24,19 @@ class ShowCustomerOrderDetailsRequest:
         'x_language': 'str',
         'order_id': 'str',
         'limit': 'int',
-        'offset': 'int'
+        'offset': 'int',
+        'indirect_partner_id': 'str'
     }
 
     attribute_map = {
         'x_language': 'X-Language',
         'order_id': 'order_id',
         'limit': 'limit',
-        'offset': 'offset'
+        'offset': 'offset',
+        'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, x_language=None, order_id=None, limit=None, offset=None):
+    def __init__(self, x_language=None, order_id=None, limit=None, offset=None, indirect_partner_id=None):
         """ShowCustomerOrderDetailsRequest
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class ShowCustomerOrderDetailsRequest:
         :type limit: int
         :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
+        :param indirect_partner_id: 云经销商ID。华为云总经销商（一级经销商）查询云经销商的客户订单详情时，需要携带该参数；除此之外，此参数不做处理。否则只能查询自己客户的订单详情。
+        :type indirect_partner_id: str
         """
         
         
@@ -55,6 +59,7 @@ class ShowCustomerOrderDetailsRequest:
         self._order_id = None
         self._limit = None
         self._offset = None
+        self._indirect_partner_id = None
         self.discriminator = None
 
         if x_language is not None:
@@ -64,6 +69,8 @@ class ShowCustomerOrderDetailsRequest:
             self.limit = limit
         if offset is not None:
             self.offset = offset
+        if indirect_partner_id is not None:
+            self.indirect_partner_id = indirect_partner_id
 
     @property
     def x_language(self):
@@ -152,6 +159,28 @@ class ShowCustomerOrderDetailsRequest:
         :type offset: int
         """
         self._offset = offset
+
+    @property
+    def indirect_partner_id(self):
+        """Gets the indirect_partner_id of this ShowCustomerOrderDetailsRequest.
+
+        云经销商ID。华为云总经销商（一级经销商）查询云经销商的客户订单详情时，需要携带该参数；除此之外，此参数不做处理。否则只能查询自己客户的订单详情。
+
+        :return: The indirect_partner_id of this ShowCustomerOrderDetailsRequest.
+        :rtype: str
+        """
+        return self._indirect_partner_id
+
+    @indirect_partner_id.setter
+    def indirect_partner_id(self, indirect_partner_id):
+        """Sets the indirect_partner_id of this ShowCustomerOrderDetailsRequest.
+
+        云经销商ID。华为云总经销商（一级经销商）查询云经销商的客户订单详情时，需要携带该参数；除此之外，此参数不做处理。否则只能查询自己客户的订单详情。
+
+        :param indirect_partner_id: The indirect_partner_id of this ShowCustomerOrderDetailsRequest.
+        :type indirect_partner_id: str
+        """
+        self._indirect_partner_id = indirect_partner_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

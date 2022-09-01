@@ -25,7 +25,7 @@ class ListBandwidthTimelineRequest:
         '_from': 'int',
         'to': 'int',
         'hosts': 'str',
-        'instances': 'list[str]',
+        'instances': 'str',
         'group_by': 'str'
     }
 
@@ -49,10 +49,10 @@ class ListBandwidthTimelineRequest:
         :type _from: int
         :param to: 结束时间（13位毫秒时间戳），需要和from同时使用
         :type to: int
-        :param hosts: 域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        :param hosts: 域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
         :type hosts: str
-        :param instances: 要查询引擎实例列表
-        :type instances: list[str]
+        :param instances: 要查询引擎实例id
+        :type instances: str
         :param group_by: 展示维度，按天展示时传\&quot;DAY\&quot;；默认不传，按照分钟展示
         :type group_by: str
         """
@@ -148,7 +148,7 @@ class ListBandwidthTimelineRequest:
     def hosts(self):
         """Gets the hosts of this ListBandwidthTimelineRequest.
 
-        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :return: The hosts of this ListBandwidthTimelineRequest.
         :rtype: str
@@ -159,7 +159,7 @@ class ListBandwidthTimelineRequest:
     def hosts(self, hosts):
         """Sets the hosts of this ListBandwidthTimelineRequest.
 
-        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :param hosts: The hosts of this ListBandwidthTimelineRequest.
         :type hosts: str
@@ -170,10 +170,10 @@ class ListBandwidthTimelineRequest:
     def instances(self):
         """Gets the instances of this ListBandwidthTimelineRequest.
 
-        要查询引擎实例列表
+        要查询引擎实例id
 
         :return: The instances of this ListBandwidthTimelineRequest.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._instances
 
@@ -181,10 +181,10 @@ class ListBandwidthTimelineRequest:
     def instances(self, instances):
         """Sets the instances of this ListBandwidthTimelineRequest.
 
-        要查询引擎实例列表
+        要查询引擎实例id
 
         :param instances: The instances of this ListBandwidthTimelineRequest.
-        :type instances: list[str]
+        :type instances: str
         """
         self._instances = instances
 

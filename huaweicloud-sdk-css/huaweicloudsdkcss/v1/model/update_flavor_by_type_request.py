@@ -23,7 +23,7 @@ class UpdateFlavorByTypeRequest:
     openapi_types = {
         'cluster_id': 'str',
         'types': 'str',
-        'body': 'UpdateFlavorReq'
+        'body': 'UpdateFlavorByTypeReq'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class UpdateFlavorByTypeRequest:
         :param types: 指定待更改的集群节点类型。 - ess：数据节点。 - ess-cold：冷数据节点。 - ess-client：Client节点。 - ess-master：Master节点。
         :type types: str
         :param body: Body of the UpdateFlavorByTypeRequest
-        :type body: :class:`huaweicloudsdkcss.v1.UpdateFlavorReq`
+        :type body: :class:`huaweicloudsdkcss.v1.UpdateFlavorByTypeReq`
         """
         
         
@@ -107,7 +107,7 @@ class UpdateFlavorByTypeRequest:
 
 
         :return: The body of this UpdateFlavorByTypeRequest.
-        :rtype: :class:`huaweicloudsdkcss.v1.UpdateFlavorReq`
+        :rtype: :class:`huaweicloudsdkcss.v1.UpdateFlavorByTypeReq`
         """
         return self._body
 
@@ -117,7 +117,7 @@ class UpdateFlavorByTypeRequest:
 
 
         :param body: The body of this UpdateFlavorByTypeRequest.
-        :type body: :class:`huaweicloudsdkcss.v1.UpdateFlavorReq`
+        :type body: :class:`huaweicloudsdkcss.v1.UpdateFlavorByTypeReq`
         """
         self._body = body
 

@@ -241,7 +241,7 @@ class CssClient(Client):
         return self.create_clusters_tags_with_http_info(request)
 
     def create_clusters_tags_with_http_info(self, request):
-        all_params = ['cluster_id', 'tag']
+        all_params = ['cluster_id', 'resource_type', 'tag']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -252,6 +252,8 @@ class CssClient(Client):
         path_params = {}
         if 'cluster_id' in local_var_params:
             path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
 
         query_params = []
 
@@ -273,7 +275,7 @@ class CssClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/{project_id}/css-cluster/{cluster_id}/tags',
+            resource_path='/v1.0/{project_id}/{resource_type}/{cluster_id}/tags',
             method='POST',
             path_params=path_params,
             query_params=query_params,
@@ -539,7 +541,7 @@ class CssClient(Client):
         return self.delete_clusters_tags_with_http_info(request)
 
     def delete_clusters_tags_with_http_info(self, request):
-        all_params = ['cluster_id', 'key']
+        all_params = ['cluster_id', 'resource_type', 'key']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -550,6 +552,8 @@ class CssClient(Client):
         path_params = {}
         if 'cluster_id' in local_var_params:
             path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
         if 'key' in local_var_params:
             path_params['key'] = local_var_params['key']
 
@@ -571,7 +575,7 @@ class CssClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/{project_id}/css-cluster/{cluster_id}/tags/{key}',
+            resource_path='/v1.0/{project_id}/{resource_type}/{cluster_id}/tags/{key}',
             method='DELETE',
             path_params=path_params,
             query_params=query_params,
@@ -833,7 +837,7 @@ class CssClient(Client):
         return self.list_clusters_tags_with_http_info(request)
 
     def list_clusters_tags_with_http_info(self, request):
-        all_params = []
+        all_params = ['resource_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -842,6 +846,8 @@ class CssClient(Client):
         collection_formats = {}
 
         path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
 
         query_params = []
 
@@ -861,7 +867,7 @@ class CssClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/{project_id}/css-cluster/tags',
+            resource_path='/v1.0/{project_id}/{resource_type}/tags',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -1343,7 +1349,7 @@ class CssClient(Client):
             request_type=request.__class__.__name__)
 
     def show_auto_create_policy(self, request):
-        """查询集群的自动创建快照策略
+        """查询自动创建快照的策略
 
         该接口用于查询自动创建快照策略。
         
@@ -1473,7 +1479,7 @@ class CssClient(Client):
         return self.show_cluster_tag_with_http_info(request)
 
     def show_cluster_tag_with_http_info(self, request):
-        all_params = ['cluster_id']
+        all_params = ['cluster_id', 'resource_type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1484,6 +1490,8 @@ class CssClient(Client):
         path_params = {}
         if 'cluster_id' in local_var_params:
             path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
 
         query_params = []
 
@@ -1503,7 +1511,7 @@ class CssClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/{project_id}/css-cluster/{cluster_id}/tags',
+            resource_path='/v1.0/{project_id}/{resource_type}/{cluster_id}/tags',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -2359,7 +2367,7 @@ class CssClient(Client):
         return self.update_batch_clusters_tags_with_http_info(request)
 
     def update_batch_clusters_tags_with_http_info(self, request):
-        all_params = ['cluster_id', 'batch_add_or_delete_tag_on_cluster_req']
+        all_params = ['cluster_id', 'resource_type', 'batch_add_or_delete_tag_on_cluster_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2370,6 +2378,8 @@ class CssClient(Client):
         path_params = {}
         if 'cluster_id' in local_var_params:
             path_params['cluster_id'] = local_var_params['cluster_id']
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
 
         query_params = []
 
@@ -2391,7 +2401,7 @@ class CssClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/{project_id}/css-cluster/{cluster_id}/tags/action',
+            resource_path='/v1.0/{project_id}/{resource_type}/{cluster_id}/tags/action',
             method='POST',
             path_params=path_params,
             query_params=query_params,

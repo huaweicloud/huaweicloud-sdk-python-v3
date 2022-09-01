@@ -2359,7 +2359,7 @@ class BssintlAsyncClient(Client):
         return self.list_customer_orders_with_http_info(request)
 
     def list_customer_orders_with_http_info(self, request):
-        all_params = ['order_id', 'customer_id', 'create_time_begin', 'create_time_end', 'service_type_code', 'status', 'order_type', 'limit', 'offset', 'order_by', 'payment_time_begin', 'payment_time_end']
+        all_params = ['order_id', 'customer_id', 'create_time_begin', 'create_time_end', 'service_type_code', 'status', 'order_type', 'limit', 'offset', 'order_by', 'payment_time_begin', 'payment_time_end', 'indirect_partner_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2394,6 +2394,8 @@ class BssintlAsyncClient(Client):
             query_params.append(('payment_time_begin', local_var_params['payment_time_begin']))
         if 'payment_time_end' in local_var_params:
             query_params.append(('payment_time_end', local_var_params['payment_time_end']))
+        if 'indirect_partner_id' in local_var_params:
+            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
 
         header_params = {}
 
@@ -2613,7 +2615,7 @@ class BssintlAsyncClient(Client):
         return self.show_customer_order_details_with_http_info(request)
 
     def show_customer_order_details_with_http_info(self, request):
-        all_params = ['order_id', 'x_language', 'limit', 'offset']
+        all_params = ['order_id', 'x_language', 'limit', 'offset', 'indirect_partner_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2630,6 +2632,8 @@ class BssintlAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'indirect_partner_id' in local_var_params:
+            query_params.append(('indirect_partner_id', local_var_params['indirect_partner_id']))
 
         header_params = {}
         if 'x_language' in local_var_params:

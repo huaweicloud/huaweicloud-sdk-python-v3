@@ -41,7 +41,7 @@ class UpdateNetworkInstance:
         :type name: str
         :param description: 网络实例的描述。不支持 &lt;&gt;。
         :type description: str
-        :param cidrs: 网络实例发布的网段路由列表，ER场景此字段为空。
+        :param cidrs: 网络实例发布的网段路由列表。
         :type cidrs: list[str]
         """
         
@@ -107,7 +107,7 @@ class UpdateNetworkInstance:
     def cidrs(self):
         """Gets the cidrs of this UpdateNetworkInstance.
 
-        网络实例发布的网段路由列表，ER场景此字段为空。
+        网络实例发布的网段路由列表。
 
         :return: The cidrs of this UpdateNetworkInstance.
         :rtype: list[str]
@@ -118,7 +118,7 @@ class UpdateNetworkInstance:
     def cidrs(self, cidrs):
         """Sets the cidrs of this UpdateNetworkInstance.
 
-        网络实例发布的网段路由列表，ER场景此字段为空。
+        网络实例发布的网段路由列表。
 
         :param cidrs: The cidrs of this UpdateNetworkInstance.
         :type cidrs: list[str]

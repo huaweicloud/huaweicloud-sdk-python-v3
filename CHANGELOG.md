@@ -1,3 +1,115 @@
+# 3.0.108 2022-09-01
+
+### HuaweiCloud SDK BSSINTL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `indirect_partner_id` to the interface `ListCustomerOrders`
+  - Add the request parameter `indirect_partner_id` to the interface `ShowCustomerOrderDetails`
+  - Add the request parameter `indirect_partner_id` to the interface `ListCustomerOnDemandResources`
+
+### HuaweiCloud SDK CC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the enum values `er` from the response parameter `used_scene` from the interface `ListCloudConnections`
+  - Remove the request parameter `used_scene` from the interface `CreateCloudConnection`
+  - Remove the enum values `er` from the response parameter `used_scene` from the interface `ShowCloudConnection`
+  - Remove the enum values `er` from the response parameter `used_scene` from the interface `UpdateCloudConnection`
+  - Remove the enum values `er` from the response parameter `type` from the interface `ListNetworkInstances`
+  - Remove the enum values `er` from the request parameter `type` from the interface `CreateNetworkInstance`
+  - Remove the enum values `er` from the response parameter `type` from the interface `ShowNetworkInstance`
+  - Remove the enum values `er` from the response parameter `type` from the interface `UpdateNetworkInstance`
+
+### HuaweiCloud SDK CDM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The response parameter `id`, `type` changed to not required of the interface `ShowJobs`
+  - The request parameter `id`, `type` changed to not required of the interface `UpdateJob`
+  - The request parameter `id`, `type` changed to not required of the interface `CreateAndStartRandomClusterJob`
+  - The request parameter  `id`, `type` changed to not required of the interface `CreateJob`
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `ordeId` to the interface `CreateCluster`
+  - Changes of the interface `ShowClusterDetail`:
+    - Add the response parameters `vpcepIp`, `elbWhiteListResp`
+    - Remove the response parameters `elbWhiteList`, `action`
+  - Remove the request parameter `isAutoPay` from the interface `UpdateUnbindPublic`
+  - Changes of the interface `ListYmlsJob`:
+    - Add the response parameter `configList`
+    - Remove the response parameter `configurations`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameters `version`, `last_modified` from the interface `CreateDependency`
+  - Remove the response parameters `version`, `last_modified` from the interface `ListDependencies`
+
+### HuaweiCloud SDK IAM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `UpdateDomainProtectPolicy`:
+    - Add the request parameters `allow_user`, `mobile`, `admin_check`, `email`, `scene`
+    - Remove the response parameter `operation_protection`
+  - Remove the response parameter `operation_protection` from the interface `ShowDomainProtectPolicy`
+  - The request parameter `maximum_consecutive_identical_chars`, `minimum_password_age`, `minimum_password_length`, `number_of_recent_passwords_disallowed`, `password_not_username_or_invert`, `password_validity_period`, `password_char_combination` changed to not required of the interface `UpdateDomainPasswordPolicy`
+  - The request parameter `account_validity_period`, `custom_info_for_login`, `lockout_duration`, `login_failed_times`, `period_with_login_failures`, `session_timeout`, `show_recent_login_info` changed to not required of the interface `UpdateDomainLoginPolicy`
+  - Add the enum values `mapping` to the request parameter `type` to the interface `ShowDomainQuota`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interface `UpdateDbUserComment`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `comment` to the interface `CreateDbUser`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListStatistics`:
+    - Modify the type `array` -> `string` of the request parameter `hosts`
+    - Modify the type `array` -> `string` of the request parameter `instances`
+  - Changes of the interface `ListQpsTimeline`:
+    - Modify the type `array` -> `string` of the request parameter `hosts`
+    - Modify the type `array` -> `string` of the request parameter `instances`
+  - Modify the type `array` -> `string` of the request parameter `instances` of the interface `ListBandwidthTimeline`
+  - Changes of the interface `ListTopAbnormal`:
+    - Modify the type `array` -> `string` of the request parameter `hosts`
+    - Modify the type `array` -> `string` of the request parameter `instances`
+  - Changes of the interface `ListOverviewsClassification`:
+    - Modify the type `array` -> `string` of the request parameter `hosts`
+    - Modify the type `array` -> `string` of the request parameter `instances`
+
 # 3.0.107 2022-08-29
 
 ### HuaweiCloud SDK ECS

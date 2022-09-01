@@ -23,18 +23,16 @@ class CreateCloudConnection:
     openapi_types = {
         'name': 'str',
         'description': 'str',
-        'enterprise_project_id': 'str',
-        'used_scene': 'str'
+        'enterprise_project_id': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
-        'enterprise_project_id': 'enterprise_project_id',
-        'used_scene': 'used_scene'
+        'enterprise_project_id': 'enterprise_project_id'
     }
 
-    def __init__(self, name=None, description=None, enterprise_project_id=None, used_scene=None):
+    def __init__(self, name=None, description=None, enterprise_project_id=None):
         """CreateCloudConnection
 
         The model defined in huaweicloud sdk
@@ -45,8 +43,6 @@ class CreateCloudConnection:
         :type description: str
         :param enterprise_project_id: 云连接实例所属的企业项目ID。企业项目账号必填；非企业项目账号不填。
         :type enterprise_project_id: str
-        :param used_scene: 云连接使用场景，有效值： - vpc：虚拟私有云。 - er：企业路由器。
-        :type used_scene: str
         """
         
         
@@ -54,7 +50,6 @@ class CreateCloudConnection:
         self._name = None
         self._description = None
         self._enterprise_project_id = None
-        self._used_scene = None
         self.discriminator = None
 
         self.name = name
@@ -62,8 +57,6 @@ class CreateCloudConnection:
             self.description = description
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if used_scene is not None:
-            self.used_scene = used_scene
 
     @property
     def name(self):
@@ -130,28 +123,6 @@ class CreateCloudConnection:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
-
-    @property
-    def used_scene(self):
-        """Gets the used_scene of this CreateCloudConnection.
-
-        云连接使用场景，有效值： - vpc：虚拟私有云。 - er：企业路由器。
-
-        :return: The used_scene of this CreateCloudConnection.
-        :rtype: str
-        """
-        return self._used_scene
-
-    @used_scene.setter
-    def used_scene(self, used_scene):
-        """Sets the used_scene of this CreateCloudConnection.
-
-        云连接使用场景，有效值： - vpc：虚拟私有云。 - er：企业路由器。
-
-        :param used_scene: The used_scene of this CreateCloudConnection.
-        :type used_scene: str
-        """
-        self._used_scene = used_scene
 
     def to_dict(self):
         """Returns the model properties as a dict"""

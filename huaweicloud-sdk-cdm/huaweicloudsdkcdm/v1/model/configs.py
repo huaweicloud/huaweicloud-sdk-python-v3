@@ -59,8 +59,10 @@ class Configs:
 
         self.inputs = inputs
         self.name = name
-        self.id = id
-        self.type = type
+        if id is not None:
+            self.id = id
+        if type is not None:
+            self.type = type
 
     @property
     def inputs(self):

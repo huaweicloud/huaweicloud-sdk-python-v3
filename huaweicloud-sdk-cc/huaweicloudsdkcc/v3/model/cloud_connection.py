@@ -75,7 +75,7 @@ class CloudConnection:
         :type created_at: datetime
         :param updated_at: 云连接实例的更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss
         :type updated_at: datetime
-        :param used_scene: 云连接使用场景。 - VPC：虚拟私有云。 - ER：企业路由器。
+        :param used_scene: 云连接使用场景。 - VPC：虚拟私有云。
         :type used_scene: str
         :param network_instance_number: 云连接实例关联网络实例的个数。
         :type network_instance_number: int
@@ -331,7 +331,7 @@ class CloudConnection:
     def used_scene(self):
         """Gets the used_scene of this CloudConnection.
 
-        云连接使用场景。 - VPC：虚拟私有云。 - ER：企业路由器。
+        云连接使用场景。 - VPC：虚拟私有云。
 
         :return: The used_scene of this CloudConnection.
         :rtype: str
@@ -342,7 +342,7 @@ class CloudConnection:
     def used_scene(self, used_scene):
         """Sets the used_scene of this CloudConnection.
 
-        云连接使用场景。 - VPC：虚拟私有云。 - ER：企业路由器。
+        云连接使用场景。 - VPC：虚拟私有云。
 
         :param used_scene: The used_scene of this CloudConnection.
         :type used_scene: str

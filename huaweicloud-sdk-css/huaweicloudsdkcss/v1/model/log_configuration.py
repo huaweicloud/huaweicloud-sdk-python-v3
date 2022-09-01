@@ -57,7 +57,7 @@ class LogConfiguration:
         :type obs_bucket: str
         :param agency: IAM 委托。
         :type agency: str
-        :param update_at: 更新时间。格式为：Unix时间戳格式
+        :param update_at: 更新时间。格式为：Unix时间戳格式。
         :type update_at: int
         :param base_path: 日志在OBS桶中的备份路径。
         :type base_path: str
@@ -193,7 +193,7 @@ class LogConfiguration:
     def update_at(self):
         """Gets the update_at of this LogConfiguration.
 
-        更新时间。格式为：Unix时间戳格式
+        更新时间。格式为：Unix时间戳格式。
 
         :return: The update_at of this LogConfiguration.
         :rtype: int
@@ -204,7 +204,7 @@ class LogConfiguration:
     def update_at(self, update_at):
         """Sets the update_at of this LogConfiguration.
 
-        更新时间。格式为：Unix时间戳格式
+        更新时间。格式为：Unix时间戳格式。
 
         :param update_at: The update_at of this LogConfiguration.
         :type update_at: int

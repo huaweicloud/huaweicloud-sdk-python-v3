@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ProtectPolicyResult:
+class RulesLocalUser:
 
     """
     Attributes:
@@ -21,50 +21,50 @@ class ProtectPolicyResult:
     sensitive_list = []
 
     openapi_types = {
-        'operation_protection': 'bool'
+        'name': 'str'
     }
 
     attribute_map = {
-        'operation_protection': 'operation_protection'
+        'name': 'name'
     }
 
-    def __init__(self, operation_protection=None):
-        """ProtectPolicyResult
+    def __init__(self, name=None):
+        """RulesLocalUser
 
         The model defined in huaweicloud sdk
 
-        :param operation_protection: 是否开启操作保护，开启为\&quot;true\&quot;，未开启为\&quot;false\&quot;。
-        :type operation_protection: bool
+        :param name: 联邦用户在本系统中的用户名称
+        :type name: str
         """
         
         
 
-        self._operation_protection = None
+        self._name = None
         self.discriminator = None
 
-        self.operation_protection = operation_protection
+        self.name = name
 
     @property
-    def operation_protection(self):
-        """Gets the operation_protection of this ProtectPolicyResult.
+    def name(self):
+        """Gets the name of this RulesLocalUser.
 
-        是否开启操作保护，开启为\"true\"，未开启为\"false\"。
+        联邦用户在本系统中的用户名称
 
-        :return: The operation_protection of this ProtectPolicyResult.
-        :rtype: bool
+        :return: The name of this RulesLocalUser.
+        :rtype: str
         """
-        return self._operation_protection
+        return self._name
 
-    @operation_protection.setter
-    def operation_protection(self, operation_protection):
-        """Sets the operation_protection of this ProtectPolicyResult.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this RulesLocalUser.
 
-        是否开启操作保护，开启为\"true\"，未开启为\"false\"。
+        联邦用户在本系统中的用户名称
 
-        :param operation_protection: The operation_protection of this ProtectPolicyResult.
-        :type operation_protection: bool
+        :param name: The name of this RulesLocalUser.
+        :type name: str
         """
-        self._operation_protection = operation_protection
+        self._name = name
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -108,7 +108,7 @@ class ProtectPolicyResult:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ProtectPolicyResult):
+        if not isinstance(other, RulesLocalUser):
             return False
 
         return self.__dict__ == other.__dict__

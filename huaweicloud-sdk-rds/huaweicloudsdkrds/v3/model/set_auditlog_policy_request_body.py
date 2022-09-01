@@ -37,7 +37,7 @@ class SetAuditlogPolicyRequestBody:
 
         :param keep_days: 审计日志保存天数，取值范围0~732。0表示关闭审计日志策略。
         :type keep_days: int
-        :param reserve_auditlogs: 仅关闭审计日志策略时有效。  - true（默认），表示关闭审计日志策略的同时，保留历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
+        :param reserve_auditlogs: 仅关闭审计日志策略时有效。  - true（默认），表示关闭审计日志策略的同时，延迟删除已有的历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
         :type reserve_auditlogs: bool
         """
         
@@ -77,7 +77,7 @@ class SetAuditlogPolicyRequestBody:
     def reserve_auditlogs(self):
         """Gets the reserve_auditlogs of this SetAuditlogPolicyRequestBody.
 
-        仅关闭审计日志策略时有效。  - true（默认），表示关闭审计日志策略的同时，保留历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
+        仅关闭审计日志策略时有效。  - true（默认），表示关闭审计日志策略的同时，延迟删除已有的历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
 
         :return: The reserve_auditlogs of this SetAuditlogPolicyRequestBody.
         :rtype: bool
@@ -88,7 +88,7 @@ class SetAuditlogPolicyRequestBody:
     def reserve_auditlogs(self, reserve_auditlogs):
         """Sets the reserve_auditlogs of this SetAuditlogPolicyRequestBody.
 
-        仅关闭审计日志策略时有效。  - true（默认），表示关闭审计日志策略的同时，保留历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
+        仅关闭审计日志策略时有效。  - true（默认），表示关闭审计日志策略的同时，延迟删除已有的历史审计日志。 - false，表示关闭审计日志策略的同时，删除已有的历史审计日志。
 
         :param reserve_auditlogs: The reserve_auditlogs of this SetAuditlogPolicyRequestBody.
         :type reserve_auditlogs: bool

@@ -29,9 +29,7 @@ class CreateDependencyResponse(SdkResponse):
         'size': 'int',
         'name': 'str',
         'description': 'str',
-        'file_name': 'str',
-        'version': 'int',
-        'last_modified': 'int'
+        'file_name': 'str'
     }
 
     attribute_map = {
@@ -43,12 +41,10 @@ class CreateDependencyResponse(SdkResponse):
         'size': 'size',
         'name': 'name',
         'description': 'description',
-        'file_name': 'file_name',
-        'version': 'version',
-        'last_modified': 'last_modified'
+        'file_name': 'file_name'
     }
 
-    def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None, version=None, last_modified=None):
+    def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, description=None, file_name=None):
         """CreateDependencyResponse
 
         The model defined in huaweicloud sdk
@@ -71,10 +67,6 @@ class CreateDependencyResponse(SdkResponse):
         :type description: str
         :param file_name: 依赖包文件名。
         :type file_name: str
-        :param version: 依赖包版本号
-        :type version: int
-        :param last_modified: 依赖包更新时间
-        :type last_modified: int
         """
         
         super(CreateDependencyResponse, self).__init__()
@@ -88,8 +80,6 @@ class CreateDependencyResponse(SdkResponse):
         self._name = None
         self._description = None
         self._file_name = None
-        self._version = None
-        self._last_modified = None
         self.discriminator = None
 
         if id is not None:
@@ -110,10 +100,6 @@ class CreateDependencyResponse(SdkResponse):
             self.description = description
         if file_name is not None:
             self.file_name = file_name
-        if version is not None:
-            self.version = version
-        if last_modified is not None:
-            self.last_modified = last_modified
 
     @property
     def id(self):
@@ -312,50 +298,6 @@ class CreateDependencyResponse(SdkResponse):
         :type file_name: str
         """
         self._file_name = file_name
-
-    @property
-    def version(self):
-        """Gets the version of this CreateDependencyResponse.
-
-        依赖包版本号
-
-        :return: The version of this CreateDependencyResponse.
-        :rtype: int
-        """
-        return self._version
-
-    @version.setter
-    def version(self, version):
-        """Sets the version of this CreateDependencyResponse.
-
-        依赖包版本号
-
-        :param version: The version of this CreateDependencyResponse.
-        :type version: int
-        """
-        self._version = version
-
-    @property
-    def last_modified(self):
-        """Gets the last_modified of this CreateDependencyResponse.
-
-        依赖包更新时间
-
-        :return: The last_modified of this CreateDependencyResponse.
-        :rtype: int
-        """
-        return self._last_modified
-
-    @last_modified.setter
-    def last_modified(self, last_modified):
-        """Sets the last_modified of this CreateDependencyResponse.
-
-        依赖包更新时间
-
-        :param last_modified: The last_modified of this CreateDependencyResponse.
-        :type last_modified: int
-        """
-        self._last_modified = last_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -26,8 +26,8 @@ class ListTopAbnormalRequest:
         'to': 'int',
         'top': 'int',
         'code': 'int',
-        'hosts': 'list[str]',
-        'instances': 'list[str]'
+        'hosts': 'str',
+        'instances': 'str'
     }
 
     attribute_map = {
@@ -55,10 +55,10 @@ class ListTopAbnormalRequest:
         :type top: int
         :param code: 要查询的异常状态码，目前支持查询的异常状态码包括404、500以及502。不传该参数默认查询404的状态码。
         :type code: int
-        :param hosts: 域名id列表，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
-        :type hosts: list[str]
-        :param instances: 要查询引擎实例列表
-        :type instances: list[str]
+        :param hosts: 域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
+        :type hosts: str
+        :param instances: 要查询引擎实例id
+        :type instances: str
         """
         
         
@@ -199,10 +199,10 @@ class ListTopAbnormalRequest:
     def hosts(self):
         """Gets the hosts of this ListTopAbnormalRequest.
 
-        域名id列表，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
+        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
 
         :return: The hosts of this ListTopAbnormalRequest.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._hosts
 
@@ -210,10 +210,10 @@ class ListTopAbnormalRequest:
     def hosts(self, hosts):
         """Sets the hosts of this ListTopAbnormalRequest.
 
-        域名id列表，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
+        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
 
         :param hosts: The hosts of this ListTopAbnormalRequest.
-        :type hosts: list[str]
+        :type hosts: str
         """
         self._hosts = hosts
 
@@ -221,10 +221,10 @@ class ListTopAbnormalRequest:
     def instances(self):
         """Gets the instances of this ListTopAbnormalRequest.
 
-        要查询引擎实例列表
+        要查询引擎实例id
 
         :return: The instances of this ListTopAbnormalRequest.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._instances
 
@@ -232,10 +232,10 @@ class ListTopAbnormalRequest:
     def instances(self, instances):
         """Sets the instances of this ListTopAbnormalRequest.
 
-        要查询引擎实例列表
+        要查询引擎实例id
 
         :param instances: The instances of this ListTopAbnormalRequest.
-        :type instances: list[str]
+        :type instances: str
         """
         self._instances = instances
 

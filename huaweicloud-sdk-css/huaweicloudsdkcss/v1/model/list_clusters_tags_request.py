@@ -21,20 +21,50 @@ class ListClustersTagsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'resource_type': 'str'
     }
 
     attribute_map = {
+        'resource_type': 'resource_type'
     }
 
-    def __init__(self):
+    def __init__(self, resource_type=None):
         """ListClustersTagsRequest
 
         The model defined in huaweicloud sdk
 
+        :param resource_type: 资源类型，当前固定值为“css-cluster”，表示是集群类型。
+        :type resource_type: str
         """
         
         
+
+        self._resource_type = None
         self.discriminator = None
+
+        self.resource_type = resource_type
+
+    @property
+    def resource_type(self):
+        """Gets the resource_type of this ListClustersTagsRequest.
+
+        资源类型，当前固定值为“css-cluster”，表示是集群类型。
+
+        :return: The resource_type of this ListClustersTagsRequest.
+        :rtype: str
+        """
+        return self._resource_type
+
+    @resource_type.setter
+    def resource_type(self, resource_type):
+        """Sets the resource_type of this ListClustersTagsRequest.
+
+        资源类型，当前固定值为“css-cluster”，表示是集群类型。
+
+        :param resource_type: The resource_type of this ListClustersTagsRequest.
+        :type resource_type: str
+        """
+        self._resource_type = resource_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -17003,6 +17003,8 @@ class RomaClient(Client):
         header_params = {}
 
         form_params = {}
+        if 'import_asset_request_body' in local_var_params:
+            form_params['ImportAssetRequestBody'] = local_var_params['import_asset_request_body']
 
         body_params = None
         if 'body' in local_var_params:
@@ -17013,7 +17015,7 @@ class RomaClient(Client):
         response_headers = []
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/zip'])
+            ['multipart/form-data'])
 
         auth_settings = []
 
@@ -17078,7 +17080,7 @@ class RomaClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
+            resource_path='/v2{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -17198,7 +17200,7 @@ class RomaClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
+            resource_path='/v2{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
             method='DELETE',
             path_params=path_params,
             query_params=query_params,
@@ -17328,7 +17330,7 @@ class RomaClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
+            resource_path='/v2{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
             method='PUT',
             path_params=path_params,
             query_params=query_params,

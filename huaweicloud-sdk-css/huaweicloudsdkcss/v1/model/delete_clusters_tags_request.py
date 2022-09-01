@@ -22,21 +22,25 @@ class DeleteClustersTagsRequest:
 
     openapi_types = {
         'cluster_id': 'str',
+        'resource_type': 'str',
         'key': 'str'
     }
 
     attribute_map = {
         'cluster_id': 'cluster_id',
+        'resource_type': 'resource_type',
         'key': 'key'
     }
 
-    def __init__(self, cluster_id=None, key=None):
+    def __init__(self, cluster_id=None, resource_type=None, key=None):
         """DeleteClustersTagsRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 指定删除标签的集群ID。
         :type cluster_id: str
+        :param resource_type: 资源类型，当前固定值为“css-cluster”，表示是集群类型。
+        :type resource_type: str
         :param key: 需要删除的标签名。
         :type key: str
         """
@@ -44,10 +48,12 @@ class DeleteClustersTagsRequest:
         
 
         self._cluster_id = None
+        self._resource_type = None
         self._key = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
+        self.resource_type = resource_type
         self.key = key
 
     @property
@@ -71,6 +77,28 @@ class DeleteClustersTagsRequest:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def resource_type(self):
+        """Gets the resource_type of this DeleteClustersTagsRequest.
+
+        资源类型，当前固定值为“css-cluster”，表示是集群类型。
+
+        :return: The resource_type of this DeleteClustersTagsRequest.
+        :rtype: str
+        """
+        return self._resource_type
+
+    @resource_type.setter
+    def resource_type(self, resource_type):
+        """Sets the resource_type of this DeleteClustersTagsRequest.
+
+        资源类型，当前固定值为“css-cluster”，表示是集群类型。
+
+        :param resource_type: The resource_type of this DeleteClustersTagsRequest.
+        :type resource_type: str
+        """
+        self._resource_type = resource_type
 
     @property
     def key(self):

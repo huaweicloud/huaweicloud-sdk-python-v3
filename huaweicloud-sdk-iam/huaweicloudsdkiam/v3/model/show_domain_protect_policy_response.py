@@ -21,7 +21,7 @@ class ShowDomainProtectPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'protect_policy': 'ProtectPolicyResult'
+        'protect_policy': 'ShowDomainProtectPolicyResponseBodyProtectPolicy'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class ShowDomainProtectPolicyResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param protect_policy: 
-        :type protect_policy: :class:`huaweicloudsdkiam.v3.ProtectPolicyResult`
+        :type protect_policy: :class:`huaweicloudsdkiam.v3.ShowDomainProtectPolicyResponseBodyProtectPolicy`
         """
         
         super(ShowDomainProtectPolicyResponse, self).__init__()
@@ -51,7 +51,7 @@ class ShowDomainProtectPolicyResponse(SdkResponse):
 
 
         :return: The protect_policy of this ShowDomainProtectPolicyResponse.
-        :rtype: :class:`huaweicloudsdkiam.v3.ProtectPolicyResult`
+        :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainProtectPolicyResponseBodyProtectPolicy`
         """
         return self._protect_policy
 
@@ -61,7 +61,7 @@ class ShowDomainProtectPolicyResponse(SdkResponse):
 
 
         :param protect_policy: The protect_policy of this ShowDomainProtectPolicyResponse.
-        :type protect_policy: :class:`huaweicloudsdkiam.v3.ProtectPolicyResult`
+        :type protect_policy: :class:`huaweicloudsdkiam.v3.ShowDomainProtectPolicyResponseBodyProtectPolicy`
         """
         self._protect_policy = protect_policy
 

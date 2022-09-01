@@ -47,8 +47,7 @@ class ConfigValues:
         self._extended_configs = None
         self.discriminator = None
 
-        if configs is not None:
-            self.configs = configs
+        self.configs = configs
         if extended_configs is not None:
             self.extended_configs = extended_configs
 

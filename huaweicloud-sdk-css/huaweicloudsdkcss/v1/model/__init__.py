@@ -3,7 +3,6 @@
 from __future__ import absolute_import
 
 # import models into model package
-from huaweicloudsdkcss.v1.model.action_req import ActionReq
 from huaweicloudsdkcss.v1.model.actions import Actions
 from huaweicloudsdkcss.v1.model.add_favorite_req import AddFavoriteReq
 from huaweicloudsdkcss.v1.model.add_favorite_req_template import AddFavoriteReqTemplate
@@ -15,6 +14,7 @@ from huaweicloudsdkcss.v1.model.batch_add_or_delete_tag_on_cluster_req import Ba
 from huaweicloudsdkcss.v1.model.bind_public_req import BindPublicReq
 from huaweicloudsdkcss.v1.model.bind_public_req_eip import BindPublicReqEip
 from huaweicloudsdkcss.v1.model.bind_public_req_eip_band_width import BindPublicReqEipBandWidth
+from huaweicloudsdkcss.v1.model.bind_public_req_eip_req import BindPublicReqEipReq
 from huaweicloudsdkcss.v1.model.cluster_detail_datastore import ClusterDetailDatastore
 from huaweicloudsdkcss.v1.model.cluster_detail_failed_reasons import ClusterDetailFailedReasons
 from huaweicloudsdkcss.v1.model.cluster_detail_instances import ClusterDetailInstances
@@ -25,7 +25,7 @@ from huaweicloudsdkcss.v1.model.cluster_list_failed_reasons import ClusterListFa
 from huaweicloudsdkcss.v1.model.cluster_list_instances import ClusterListInstances
 from huaweicloudsdkcss.v1.model.cluster_list_tags import ClusterListTags
 from huaweicloudsdkcss.v1.model.cluster_log_record import ClusterLogRecord
-from huaweicloudsdkcss.v1.model.configurations_rsp import ConfigurationsRsp
+from huaweicloudsdkcss.v1.model.config_list_rsp import ConfigListRsp
 from huaweicloudsdkcss.v1.model.confs import Confs
 from huaweicloudsdkcss.v1.model.connections import Connections
 from huaweicloudsdkcss.v1.model.create_auto_create_policy_request import CreateAutoCreatePolicyRequest
@@ -202,6 +202,7 @@ from huaweicloudsdkcss.v1.model.update_extend_cluster_request import UpdateExten
 from huaweicloudsdkcss.v1.model.update_extend_cluster_response import UpdateExtendClusterResponse
 from huaweicloudsdkcss.v1.model.update_extend_instance_storage_request import UpdateExtendInstanceStorageRequest
 from huaweicloudsdkcss.v1.model.update_extend_instance_storage_response import UpdateExtendInstanceStorageResponse
+from huaweicloudsdkcss.v1.model.update_flavor_by_type_req import UpdateFlavorByTypeReq
 from huaweicloudsdkcss.v1.model.update_flavor_by_type_request import UpdateFlavorByTypeRequest
 from huaweicloudsdkcss.v1.model.update_flavor_by_type_response import UpdateFlavorByTypeResponse
 from huaweicloudsdkcss.v1.model.update_flavor_req import UpdateFlavorReq

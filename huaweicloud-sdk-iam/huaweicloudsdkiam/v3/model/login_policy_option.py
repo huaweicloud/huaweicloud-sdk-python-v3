@@ -72,13 +72,20 @@ class LoginPolicyOption:
         self._show_recent_login_info = None
         self.discriminator = None
 
-        self.account_validity_period = account_validity_period
-        self.custom_info_for_login = custom_info_for_login
-        self.lockout_duration = lockout_duration
-        self.login_failed_times = login_failed_times
-        self.period_with_login_failures = period_with_login_failures
-        self.session_timeout = session_timeout
-        self.show_recent_login_info = show_recent_login_info
+        if account_validity_period is not None:
+            self.account_validity_period = account_validity_period
+        if custom_info_for_login is not None:
+            self.custom_info_for_login = custom_info_for_login
+        if lockout_duration is not None:
+            self.lockout_duration = lockout_duration
+        if login_failed_times is not None:
+            self.login_failed_times = login_failed_times
+        if period_with_login_failures is not None:
+            self.period_with_login_failures = period_with_login_failures
+        if session_timeout is not None:
+            self.session_timeout = session_timeout
+        if show_recent_login_info is not None:
+            self.show_recent_login_info = show_recent_login_info
 
     @property
     def account_validity_period(self):

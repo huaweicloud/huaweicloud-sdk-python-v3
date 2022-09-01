@@ -72,13 +72,20 @@ class PasswordPolicyOption:
         self._password_char_combination = None
         self.discriminator = None
 
-        self.maximum_consecutive_identical_chars = maximum_consecutive_identical_chars
-        self.minimum_password_age = minimum_password_age
-        self.minimum_password_length = minimum_password_length
-        self.number_of_recent_passwords_disallowed = number_of_recent_passwords_disallowed
-        self.password_not_username_or_invert = password_not_username_or_invert
-        self.password_validity_period = password_validity_period
-        self.password_char_combination = password_char_combination
+        if maximum_consecutive_identical_chars is not None:
+            self.maximum_consecutive_identical_chars = maximum_consecutive_identical_chars
+        if minimum_password_age is not None:
+            self.minimum_password_age = minimum_password_age
+        if minimum_password_length is not None:
+            self.minimum_password_length = minimum_password_length
+        if number_of_recent_passwords_disallowed is not None:
+            self.number_of_recent_passwords_disallowed = number_of_recent_passwords_disallowed
+        if password_not_username_or_invert is not None:
+            self.password_not_username_or_invert = password_not_username_or_invert
+        if password_validity_period is not None:
+            self.password_validity_period = password_validity_period
+        if password_char_combination is not None:
+            self.password_char_combination = password_char_combination
 
     @property
     def maximum_consecutive_identical_chars(self):

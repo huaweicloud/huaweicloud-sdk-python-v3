@@ -41,7 +41,7 @@ class UpdateYmlsResponse(SdkResponse):
         :type acknowledged: bool
         :param external_message: 错误信息描述。当acknowledged为true时，该字段返回null。
         :type external_message: str
-        :param http_error_response: HTTTP错误信息。默认为null。
+        :param http_error_response: HTTP错误信息。默认为null。
         :type http_error_response: str
         """
         
@@ -107,7 +107,7 @@ class UpdateYmlsResponse(SdkResponse):
     def http_error_response(self):
         """Gets the http_error_response of this UpdateYmlsResponse.
 
-        HTTTP错误信息。默认为null。
+        HTTP错误信息。默认为null。
 
         :return: The http_error_response of this UpdateYmlsResponse.
         :rtype: str
@@ -118,7 +118,7 @@ class UpdateYmlsResponse(SdkResponse):
     def http_error_response(self, http_error_response):
         """Sets the http_error_response of this UpdateYmlsResponse.
 
-        HTTTP错误信息。默认为null。
+        HTTP错误信息。默认为null。
 
         :param http_error_response: The http_error_response of this UpdateYmlsResponse.
         :type http_error_response: str

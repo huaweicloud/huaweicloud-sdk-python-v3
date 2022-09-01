@@ -21,7 +21,7 @@ class MappingRules:
     sensitive_list = []
 
     openapi_types = {
-        'local': 'list[dict(str, RulesLocalAdditional)]',
+        'local': 'list[RulesLocal]',
         'remote': 'list[RulesRemote]'
     }
 
@@ -35,8 +35,8 @@ class MappingRules:
 
         The model defined in huaweicloud sdk
 
-        :param local: 表示联邦用户在本系统中的用户信息。 user：联邦用户在本系统中的用户名称。group：联邦用户在本系统中所属用户组。 
-        :type local: list[dict(str, RulesLocalAdditional)]
+        :param local: 表示联邦用户在本系统中的用户信息。 user：联邦用户在本系统中的用户名称。group：联邦用户在本系统中所属用户组。
+        :type local: list[:class:`huaweicloudsdkiam.v3.RulesLocal`]
         :param remote: 表示联邦用户在IdP中的用户信息。由断言属性及运算符组成的表达式，取值由断言决定。
         :type remote: list[:class:`huaweicloudsdkiam.v3.RulesRemote`]
         """
@@ -54,10 +54,10 @@ class MappingRules:
     def local(self):
         """Gets the local of this MappingRules.
 
-        表示联邦用户在本系统中的用户信息。 user：联邦用户在本系统中的用户名称。group：联邦用户在本系统中所属用户组。 
+        表示联邦用户在本系统中的用户信息。 user：联邦用户在本系统中的用户名称。group：联邦用户在本系统中所属用户组。
 
         :return: The local of this MappingRules.
-        :rtype: list[dict(str, RulesLocalAdditional)]
+        :rtype: list[:class:`huaweicloudsdkiam.v3.RulesLocal`]
         """
         return self._local
 
@@ -65,10 +65,10 @@ class MappingRules:
     def local(self, local):
         """Sets the local of this MappingRules.
 
-        表示联邦用户在本系统中的用户信息。 user：联邦用户在本系统中的用户名称。group：联邦用户在本系统中所属用户组。 
+        表示联邦用户在本系统中的用户信息。 user：联邦用户在本系统中的用户名称。group：联邦用户在本系统中所属用户组。
 
         :param local: The local of this MappingRules.
-        :type local: list[dict(str, RulesLocalAdditional)]
+        :type local: list[:class:`huaweicloudsdkiam.v3.RulesLocal`]
         """
         self._local = local
 

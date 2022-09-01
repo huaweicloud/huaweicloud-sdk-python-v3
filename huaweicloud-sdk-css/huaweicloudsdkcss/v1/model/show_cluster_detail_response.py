@@ -35,13 +35,14 @@ class ShowClusterDetailResponse(SdkResponse):
         'vpc_id': 'str',
         'subnet_id': 'str',
         'security_group_id': 'str',
+        'vpcep_ip': 'str',
         'bandwidth_size': 'int',
         'https_enable': 'bool',
         'disk_encrypted': 'bool',
         'authority_enable': 'bool',
         'backup_available': 'bool',
         'action_progress': 'object',
-        'actions': 'list[ActionReq]',
+        'actions': 'list[object]',
         'enterprise_project_id': 'str',
         'tags': 'list[ClusterDetailTags]',
         'failed_reasons': 'ClusterDetailFailedReasons',
@@ -63,6 +64,7 @@ class ShowClusterDetailResponse(SdkResponse):
         'vpc_id': 'vpcId',
         'subnet_id': 'subnetId',
         'security_group_id': 'securityGroupId',
+        'vpcep_ip': 'vpcepIp',
         'bandwidth_size': 'bandwidthSize',
         'https_enable': 'httpsEnable',
         'disk_encrypted': 'diskEncrypted',
@@ -76,7 +78,7 @@ class ShowClusterDetailResponse(SdkResponse):
         'period': 'period'
     }
 
-    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, bandwidth_size=None, https_enable=None, disk_encrypted=None, authority_enable=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reasons=None, period=None):
+    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, vpcep_ip=None, bandwidth_size=None, https_enable=None, disk_encrypted=None, authority_enable=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reasons=None, period=None):
         """ShowClusterDetailResponse
 
         The model defined in huaweicloud sdk
@@ -109,6 +111,8 @@ class ShowClusterDetailResponse(SdkResponse):
         :type subnet_id: str
         :param security_group_id: 安全组ID。
         :type security_group_id: str
+        :param vpcep_ip: 终端节点IP。
+        :type vpcep_ip: str
         :param bandwidth_size: 公网带宽大小。单位：Mbit/s
         :type bandwidth_size: int
         :param https_enable: 通信加密状态。 - false：未设置通信加密。 - true：已设置通信加密。
@@ -121,8 +125,8 @@ class ShowClusterDetailResponse(SdkResponse):
         :type backup_available: bool
         :param action_progress: 集群行为进度，显示创建或扩容进度的百分比。
         :type action_progress: object
-        :param actions: 集群当前行为集合。
-        :type actions: list[:class:`huaweicloudsdkcss.v1.ActionReq`]
+        :param actions: 集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照等。
+        :type actions: list[object]
         :param enterprise_project_id: 集群所属的企业项目ID。  如果集群所属用户没有开通企业项目，则不会返回该参数。
         :type enterprise_project_id: str
         :param tags: 集群标签。
@@ -149,6 +153,7 @@ class ShowClusterDetailResponse(SdkResponse):
         self._vpc_id = None
         self._subnet_id = None
         self._security_group_id = None
+        self._vpcep_ip = None
         self._bandwidth_size = None
         self._https_enable = None
         self._disk_encrypted = None
@@ -190,6 +195,8 @@ class ShowClusterDetailResponse(SdkResponse):
             self.subnet_id = subnet_id
         if security_group_id is not None:
             self.security_group_id = security_group_id
+        if vpcep_ip is not None:
+            self.vpcep_ip = vpcep_ip
         if bandwidth_size is not None:
             self.bandwidth_size = bandwidth_size
         if https_enable is not None:
@@ -516,6 +523,28 @@ class ShowClusterDetailResponse(SdkResponse):
         self._security_group_id = security_group_id
 
     @property
+    def vpcep_ip(self):
+        """Gets the vpcep_ip of this ShowClusterDetailResponse.
+
+        终端节点IP。
+
+        :return: The vpcep_ip of this ShowClusterDetailResponse.
+        :rtype: str
+        """
+        return self._vpcep_ip
+
+    @vpcep_ip.setter
+    def vpcep_ip(self, vpcep_ip):
+        """Sets the vpcep_ip of this ShowClusterDetailResponse.
+
+        终端节点IP。
+
+        :param vpcep_ip: The vpcep_ip of this ShowClusterDetailResponse.
+        :type vpcep_ip: str
+        """
+        self._vpcep_ip = vpcep_ip
+
+    @property
     def bandwidth_size(self):
         """Gets the bandwidth_size of this ShowClusterDetailResponse.
 
@@ -651,10 +680,10 @@ class ShowClusterDetailResponse(SdkResponse):
     def actions(self):
         """Gets the actions of this ShowClusterDetailResponse.
 
-        集群当前行为集合。
+        集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照等。
 
         :return: The actions of this ShowClusterDetailResponse.
-        :rtype: list[:class:`huaweicloudsdkcss.v1.ActionReq`]
+        :rtype: list[object]
         """
         return self._actions
 
@@ -662,10 +691,10 @@ class ShowClusterDetailResponse(SdkResponse):
     def actions(self, actions):
         """Sets the actions of this ShowClusterDetailResponse.
 
-        集群当前行为集合。
+        集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照等。
 
         :param actions: The actions of this ShowClusterDetailResponse.
-        :type actions: list[:class:`huaweicloudsdkcss.v1.ActionReq`]
+        :type actions: list[object]
         """
         self._actions = actions
 

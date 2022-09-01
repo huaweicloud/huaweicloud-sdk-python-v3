@@ -35,7 +35,7 @@ class CreateMfaDevice:
 
         The model defined in huaweicloud sdk
 
-        :param name: 设备名称。
+        :param name: 设备名称。 最小长度：1 最大长度：64
         :type name: str
         :param user_id: 创建MFA设备的IAM用户ID。
         :type user_id: str
@@ -54,7 +54,7 @@ class CreateMfaDevice:
     def name(self):
         """Gets the name of this CreateMfaDevice.
 
-        设备名称。
+        设备名称。 最小长度：1 最大长度：64
 
         :return: The name of this CreateMfaDevice.
         :rtype: str
@@ -65,7 +65,7 @@ class CreateMfaDevice:
     def name(self, name):
         """Sets the name of this CreateMfaDevice.
 
-        设备名称。
+        设备名称。 最小长度：1 最大长度：64
 
         :param name: The name of this CreateMfaDevice.
         :type name: str

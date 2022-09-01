@@ -21,35 +21,28 @@ class BindPublicReqEip:
     sensitive_list = []
 
     openapi_types = {
-        'band_width': 'BindPublicReqEipBandWidth',
-        'is_auto_pay': 'int'
+        'band_width': 'BindPublicReqEipBandWidth'
     }
 
     attribute_map = {
-        'band_width': 'bandWidth',
-        'is_auto_pay': 'isAutoPay'
+        'band_width': 'bandWidth'
     }
 
-    def __init__(self, band_width=None, is_auto_pay=None):
+    def __init__(self, band_width=None):
         """BindPublicReqEip
 
         The model defined in huaweicloud sdk
 
         :param band_width: 
         :type band_width: :class:`huaweicloudsdkcss.v1.BindPublicReqEipBandWidth`
-        :param is_auto_pay: 是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。 - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。 - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
-        :type is_auto_pay: int
         """
         
         
 
         self._band_width = None
-        self._is_auto_pay = None
         self.discriminator = None
 
         self.band_width = band_width
-        if is_auto_pay is not None:
-            self.is_auto_pay = is_auto_pay
 
     @property
     def band_width(self):
@@ -70,28 +63,6 @@ class BindPublicReqEip:
         :type band_width: :class:`huaweicloudsdkcss.v1.BindPublicReqEipBandWidth`
         """
         self._band_width = band_width
-
-    @property
-    def is_auto_pay(self):
-        """Gets the is_auto_pay of this BindPublicReqEip.
-
-        是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。 - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。 - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
-
-        :return: The is_auto_pay of this BindPublicReqEip.
-        :rtype: int
-        """
-        return self._is_auto_pay
-
-    @is_auto_pay.setter
-    def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this BindPublicReqEip.
-
-        是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。 - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。 - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
-
-        :param is_auto_pay: The is_auto_pay of this BindPublicReqEip.
-        :type is_auto_pay: int
-        """
-        self._is_auto_pay = is_auto_pay
 
     def to_dict(self):
         """Returns the model properties as a dict"""

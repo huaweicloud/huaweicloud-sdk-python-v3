@@ -32,7 +32,8 @@ class ListCustomerOrdersRequest:
         'offset': 'int',
         'order_by': 'str',
         'payment_time_begin': 'str',
-        'payment_time_end': 'str'
+        'payment_time_end': 'str',
+        'indirect_partner_id': 'str'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class ListCustomerOrdersRequest:
         'offset': 'offset',
         'order_by': 'order_by',
         'payment_time_begin': 'payment_time_begin',
-        'payment_time_end': 'payment_time_end'
+        'payment_time_end': 'payment_time_end',
+        'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, order_id=None, customer_id=None, create_time_begin=None, create_time_end=None, service_type_code=None, status=None, order_type=None, limit=None, offset=None, order_by=None, payment_time_begin=None, payment_time_end=None):
+    def __init__(self, order_id=None, customer_id=None, create_time_begin=None, create_time_end=None, service_type_code=None, status=None, order_type=None, limit=None, offset=None, order_by=None, payment_time_begin=None, payment_time_end=None, indirect_partner_id=None):
         """ListCustomerOrdersRequest
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class ListCustomerOrdersRequest:
         :type payment_time_begin: str
         :param payment_time_end: 订单支付结束时间。UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。其中，HH范围是0～23，mm和ss范围是0～59。
         :type payment_time_end: str
+        :param indirect_partner_id: 云经销商ID。华为云总经销商（一级经销商）查询云经销商的客户订单列表时，需要携带该参数；除此之外，此参数不做处理。否则只能查询自己客户的订单列表。
+        :type indirect_partner_id: str
         """
         
         
@@ -95,6 +99,7 @@ class ListCustomerOrdersRequest:
         self._order_by = None
         self._payment_time_begin = None
         self._payment_time_end = None
+        self._indirect_partner_id = None
         self.discriminator = None
 
         if order_id is not None:
@@ -121,6 +126,8 @@ class ListCustomerOrdersRequest:
             self.payment_time_begin = payment_time_begin
         if payment_time_end is not None:
             self.payment_time_end = payment_time_end
+        if indirect_partner_id is not None:
+            self.indirect_partner_id = indirect_partner_id
 
     @property
     def order_id(self):
@@ -385,6 +392,28 @@ class ListCustomerOrdersRequest:
         :type payment_time_end: str
         """
         self._payment_time_end = payment_time_end
+
+    @property
+    def indirect_partner_id(self):
+        """Gets the indirect_partner_id of this ListCustomerOrdersRequest.
+
+        云经销商ID。华为云总经销商（一级经销商）查询云经销商的客户订单列表时，需要携带该参数；除此之外，此参数不做处理。否则只能查询自己客户的订单列表。
+
+        :return: The indirect_partner_id of this ListCustomerOrdersRequest.
+        :rtype: str
+        """
+        return self._indirect_partner_id
+
+    @indirect_partner_id.setter
+    def indirect_partner_id(self, indirect_partner_id):
+        """Sets the indirect_partner_id of this ListCustomerOrdersRequest.
+
+        云经销商ID。华为云总经销商（一级经销商）查询云经销商的客户订单列表时，需要携带该参数；除此之外，此参数不做处理。否则只能查询自己客户的订单列表。
+
+        :param indirect_partner_id: The indirect_partner_id of this ListCustomerOrdersRequest.
+        :type indirect_partner_id: str
+        """
+        self._indirect_partner_id = indirect_partner_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

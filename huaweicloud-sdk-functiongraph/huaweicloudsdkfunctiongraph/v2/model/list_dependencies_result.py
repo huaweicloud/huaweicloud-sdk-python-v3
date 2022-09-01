@@ -29,9 +29,7 @@ class ListDependenciesResult:
         'size': 'int',
         'name': 'str',
         'file_name': 'str',
-        'description': 'str',
-        'version': 'int',
-        'last_modified': 'int'
+        'description': 'str'
     }
 
     attribute_map = {
@@ -43,12 +41,10 @@ class ListDependenciesResult:
         'size': 'size',
         'name': 'name',
         'file_name': 'file_name',
-        'description': 'description',
-        'version': 'version',
-        'last_modified': 'last_modified'
+        'description': 'description'
     }
 
-    def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, file_name=None, description=None, version=None, last_modified=None):
+    def __init__(self, id=None, owner=None, link=None, runtime=None, etag=None, size=None, name=None, file_name=None, description=None):
         """ListDependenciesResult
 
         The model defined in huaweicloud sdk
@@ -71,10 +67,6 @@ class ListDependenciesResult:
         :type file_name: str
         :param description: 依赖包描述。
         :type description: str
-        :param version: 依赖包版本号
-        :type version: int
-        :param last_modified: 依赖包更新时间
-        :type last_modified: int
         """
         
         
@@ -88,8 +80,6 @@ class ListDependenciesResult:
         self._name = None
         self._file_name = None
         self._description = None
-        self._version = None
-        self._last_modified = None
         self.discriminator = None
 
         self.id = id
@@ -103,10 +93,6 @@ class ListDependenciesResult:
             self.file_name = file_name
         if description is not None:
             self.description = description
-        if version is not None:
-            self.version = version
-        if last_modified is not None:
-            self.last_modified = last_modified
 
     @property
     def id(self):
@@ -305,50 +291,6 @@ class ListDependenciesResult:
         :type description: str
         """
         self._description = description
-
-    @property
-    def version(self):
-        """Gets the version of this ListDependenciesResult.
-
-        依赖包版本号
-
-        :return: The version of this ListDependenciesResult.
-        :rtype: int
-        """
-        return self._version
-
-    @version.setter
-    def version(self, version):
-        """Sets the version of this ListDependenciesResult.
-
-        依赖包版本号
-
-        :param version: The version of this ListDependenciesResult.
-        :type version: int
-        """
-        self._version = version
-
-    @property
-    def last_modified(self):
-        """Gets the last_modified of this ListDependenciesResult.
-
-        依赖包更新时间
-
-        :return: The last_modified of this ListDependenciesResult.
-        :rtype: int
-        """
-        return self._last_modified
-
-    @last_modified.setter
-    def last_modified(self, last_modified):
-        """Sets the last_modified of this ListDependenciesResult.
-
-        依赖包更新时间
-
-        :param last_modified: The last_modified of this ListDependenciesResult.
-        :type last_modified: int
-        """
-        self._last_modified = last_modified
 
     def to_dict(self):
         """Returns the model properties as a dict"""

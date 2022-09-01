@@ -22,7 +22,7 @@ class UpdatePublicBandWidthRequest:
 
     openapi_types = {
         'cluster_id': 'str',
-        'body': 'BindPublicReqEip'
+        'body': 'BindPublicReqEipReq'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class UpdatePublicBandWidthRequest:
         :param cluster_id: 指定修改公网访问带宽集群ID。
         :type cluster_id: str
         :param body: Body of the UpdatePublicBandWidthRequest
-        :type body: :class:`huaweicloudsdkcss.v1.BindPublicReqEip`
+        :type body: :class:`huaweicloudsdkcss.v1.BindPublicReqEipReq`
         """
         
         
@@ -79,7 +79,7 @@ class UpdatePublicBandWidthRequest:
 
 
         :return: The body of this UpdatePublicBandWidthRequest.
-        :rtype: :class:`huaweicloudsdkcss.v1.BindPublicReqEip`
+        :rtype: :class:`huaweicloudsdkcss.v1.BindPublicReqEipReq`
         """
         return self._body
 
@@ -89,7 +89,7 @@ class UpdatePublicBandWidthRequest:
 
 
         :param body: The body of this UpdatePublicBandWidthRequest.
-        :type body: :class:`huaweicloudsdkcss.v1.BindPublicReqEip`
+        :type body: :class:`huaweicloudsdkcss.v1.BindPublicReqEipReq`
         """
         self._body = body
 

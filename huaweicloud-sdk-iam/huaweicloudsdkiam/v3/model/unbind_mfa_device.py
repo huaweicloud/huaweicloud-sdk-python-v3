@@ -39,7 +39,7 @@ class UnbindMfaDevice:
 
         :param user_id: 待解绑MFA设备的IAM用户ID。
         :type user_id: str
-        :param authentication_code: • 管理员为IAM用户解绑MFA设备：填写6位任意验证码，不做校验。 • IAM用户为自己解绑MFA设备：填写虚拟MFA验证码。
+        :param authentication_code: 管理员为IAM用户解绑MFA设备：填写6位任意验证码，不做校验。IAM用户为自己解绑MFA设备：填写虚拟MFA验证码。
         :type authentication_code: str
         :param serial_number: MFA设备序列号。
         :type serial_number: str
@@ -82,7 +82,7 @@ class UnbindMfaDevice:
     def authentication_code(self):
         """Gets the authentication_code of this UnbindMfaDevice.
 
-        • 管理员为IAM用户解绑MFA设备：填写6位任意验证码，不做校验。 • IAM用户为自己解绑MFA设备：填写虚拟MFA验证码。
+        管理员为IAM用户解绑MFA设备：填写6位任意验证码，不做校验。IAM用户为自己解绑MFA设备：填写虚拟MFA验证码。
 
         :return: The authentication_code of this UnbindMfaDevice.
         :rtype: str
@@ -93,7 +93,7 @@ class UnbindMfaDevice:
     def authentication_code(self, authentication_code):
         """Sets the authentication_code of this UnbindMfaDevice.
 
-        • 管理员为IAM用户解绑MFA设备：填写6位任意验证码，不做校验。 • IAM用户为自己解绑MFA设备：填写虚拟MFA验证码。
+        管理员为IAM用户解绑MFA设备：填写6位任意验证码，不做校验。IAM用户为自己解绑MFA设备：填写虚拟MFA验证码。
 
         :param authentication_code: The authentication_code of this UnbindMfaDevice.
         :type authentication_code: str

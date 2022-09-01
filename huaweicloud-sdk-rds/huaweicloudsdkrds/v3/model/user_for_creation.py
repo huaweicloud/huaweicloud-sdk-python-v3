@@ -22,15 +22,17 @@ class UserForCreation:
 
     openapi_types = {
         'name': 'str',
-        'password': 'str'
+        'password': 'str',
+        'comment': 'str'
     }
 
     attribute_map = {
         'name': 'name',
-        'password': 'password'
+        'password': 'password',
+        'comment': 'comment'
     }
 
-    def __init__(self, name=None, password=None):
+    def __init__(self, name=None, password=None, comment=None):
         """UserForCreation
 
         The model defined in huaweicloud sdk
@@ -39,16 +41,21 @@ class UserForCreation:
         :type name: str
         :param password: 数据库帐号密码。  取值范围：  非空，由大小写字母、数字和特殊符号~!@#%^*-_&#x3D;+?组成，长度8~32个字符，不能和数据库帐号“name”或“name”的逆序相同。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
         :type password: str
+        :param comment: 数据库用户备注。 取值范围：长度1~512个字符。目前仅支持MySQL 8.0.25及以上版本。
+        :type comment: str
         """
         
         
 
         self._name = None
         self._password = None
+        self._comment = None
         self.discriminator = None
 
         self.name = name
         self.password = password
+        if comment is not None:
+            self.comment = comment
 
     @property
     def name(self):
@@ -93,6 +100,28 @@ class UserForCreation:
         :type password: str
         """
         self._password = password
+
+    @property
+    def comment(self):
+        """Gets the comment of this UserForCreation.
+
+        数据库用户备注。 取值范围：长度1~512个字符。目前仅支持MySQL 8.0.25及以上版本。
+
+        :return: The comment of this UserForCreation.
+        :rtype: str
+        """
+        return self._comment
+
+    @comment.setter
+    def comment(self, comment):
+        """Sets the comment of this UserForCreation.
+
+        数据库用户备注。 取值范围：长度1~512个字符。目前仅支持MySQL 8.0.25及以上版本。
+
+        :param comment: The comment of this UserForCreation.
+        :type comment: str
+        """
+        self._comment = comment
 
     def to_dict(self):
         """Returns the model properties as a dict"""

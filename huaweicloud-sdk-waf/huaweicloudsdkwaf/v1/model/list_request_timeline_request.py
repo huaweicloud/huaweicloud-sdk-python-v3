@@ -49,9 +49,9 @@ class ListRequestTimelineRequest:
         :type _from: int
         :param to: 结束时间（13位毫秒时间戳），需要和from同时使用
         :type to: int
-        :param hosts: 域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。当有需要传多个域名时，传参参考请求示例。
+        :param hosts: 域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
         :type hosts: list[str]
-        :param instances: 要查询引擎实例列表
+        :param instances: 要查询引擎实例id
         :type instances: list[str]
         :param group_by: 展示维度，按天展示时传\&quot;DAY\&quot;；默认不传，按照分钟展示
         :type group_by: str
@@ -148,7 +148,7 @@ class ListRequestTimelineRequest:
     def hosts(self):
         """Gets the hosts of this ListRequestTimelineRequest.
 
-        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。当有需要传多个域名时，传参参考请求示例。
+        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
 
         :return: The hosts of this ListRequestTimelineRequest.
         :rtype: list[str]
@@ -159,7 +159,7 @@ class ListRequestTimelineRequest:
     def hosts(self, hosts):
         """Sets the hosts of this ListRequestTimelineRequest.
 
-        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。当有需要传多个域名时，传参参考请求示例。
+        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id。默认不传，查询该项目下所有防护域名的top业务异常统计信息。
 
         :param hosts: The hosts of this ListRequestTimelineRequest.
         :type hosts: list[str]
@@ -170,7 +170,7 @@ class ListRequestTimelineRequest:
     def instances(self):
         """Gets the instances of this ListRequestTimelineRequest.
 
-        要查询引擎实例列表
+        要查询引擎实例id
 
         :return: The instances of this ListRequestTimelineRequest.
         :rtype: list[str]
@@ -181,7 +181,7 @@ class ListRequestTimelineRequest:
     def instances(self, instances):
         """Sets the instances of this ListRequestTimelineRequest.
 
-        要查询引擎实例列表
+        要查询引擎实例id
 
         :param instances: The instances of this ListRequestTimelineRequest.
         :type instances: list[str]

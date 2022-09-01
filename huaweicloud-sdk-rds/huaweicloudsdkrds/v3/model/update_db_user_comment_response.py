@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class AppAsset:
+class UpdateDbUserCommentResponse(SdkResponse):
 
     """
     Attributes:
@@ -21,20 +21,51 @@ class AppAsset:
     sensitive_list = []
 
     openapi_types = {
+        'resp': 'str'
     }
 
     attribute_map = {
+        'resp': 'resp'
     }
 
-    def __init__(self):
-        """AppAsset
+    def __init__(self, resp=None):
+        """UpdateDbUserCommentResponse
 
         The model defined in huaweicloud sdk
 
+        :param resp: 操作结果。
+        :type resp: str
         """
         
-        
+        super(UpdateDbUserCommentResponse, self).__init__()
+
+        self._resp = None
         self.discriminator = None
+
+        if resp is not None:
+            self.resp = resp
+
+    @property
+    def resp(self):
+        """Gets the resp of this UpdateDbUserCommentResponse.
+
+        操作结果。
+
+        :return: The resp of this UpdateDbUserCommentResponse.
+        :rtype: str
+        """
+        return self._resp
+
+    @resp.setter
+    def resp(self, resp):
+        """Sets the resp of this UpdateDbUserCommentResponse.
+
+        操作结果。
+
+        :param resp: The resp of this UpdateDbUserCommentResponse.
+        :type resp: str
+        """
+        self._resp = resp
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -78,7 +109,7 @@ class AppAsset:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AppAsset):
+        if not isinstance(other, UpdateDbUserCommentResponse):
             return False
 
         return self.__dict__ == other.__dict__

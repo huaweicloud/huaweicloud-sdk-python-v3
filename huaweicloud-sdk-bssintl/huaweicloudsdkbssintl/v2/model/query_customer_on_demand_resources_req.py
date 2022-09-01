@@ -29,7 +29,8 @@ class QueryCustomerOnDemandResourcesReq:
         'effective_time_end': 'str',
         'offset': 'int',
         'limit': 'int',
-        'status': 'int'
+        'status': 'int',
+        'indirect_partner_id': 'str'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class QueryCustomerOnDemandResourcesReq:
         'effective_time_end': 'effective_time_end',
         'offset': 'offset',
         'limit': 'limit',
-        'status': 'status'
+        'status': 'status',
+        'indirect_partner_id': 'indirect_partner_id'
     }
 
-    def __init__(self, customer_id=None, region_code=None, service_type_code=None, resource_ids=None, effective_time_begin=None, effective_time_end=None, offset=None, limit=None, status=None):
+    def __init__(self, customer_id=None, region_code=None, service_type_code=None, resource_ids=None, effective_time_begin=None, effective_time_end=None, offset=None, limit=None, status=None, indirect_partner_id=None):
         """QueryCustomerOnDemandResourcesReq
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class QueryCustomerOnDemandResourcesReq:
         :type limit: int
         :param status: 资源状态： 1：正常（已开通）2：宽限期3：冻结中4：变更中5：正在关闭6：已关闭
         :type status: int
+        :param indirect_partner_id: 云经销商ID。如果需要查询云经销商子客户的按需资源列表，必须携带该字段，除此之外，此参数不做处理。否则只能查询自己的子客户按需资源。
+        :type indirect_partner_id: str
         """
         
         
@@ -80,6 +84,7 @@ class QueryCustomerOnDemandResourcesReq:
         self._offset = None
         self._limit = None
         self._status = None
+        self._indirect_partner_id = None
         self.discriminator = None
 
         self.customer_id = customer_id
@@ -99,6 +104,8 @@ class QueryCustomerOnDemandResourcesReq:
             self.limit = limit
         if status is not None:
             self.status = status
+        if indirect_partner_id is not None:
+            self.indirect_partner_id = indirect_partner_id
 
     @property
     def customer_id(self):
@@ -297,6 +304,28 @@ class QueryCustomerOnDemandResourcesReq:
         :type status: int
         """
         self._status = status
+
+    @property
+    def indirect_partner_id(self):
+        """Gets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
+
+        云经销商ID。如果需要查询云经销商子客户的按需资源列表，必须携带该字段，除此之外，此参数不做处理。否则只能查询自己的子客户按需资源。
+
+        :return: The indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
+        :rtype: str
+        """
+        return self._indirect_partner_id
+
+    @indirect_partner_id.setter
+    def indirect_partner_id(self, indirect_partner_id):
+        """Sets the indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
+
+        云经销商ID。如果需要查询云经销商子客户的按需资源列表，必须携带该字段，除此之外，此参数不做处理。否则只能查询自己的子客户按需资源。
+
+        :param indirect_partner_id: The indirect_partner_id of this QueryCustomerOnDemandResourcesReq.
+        :type indirect_partner_id: str
+        """
+        self._indirect_partner_id = indirect_partner_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

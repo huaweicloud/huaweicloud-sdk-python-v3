@@ -5843,6 +5843,68 @@ class RdsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_db_user_comment_async(self, request):
+        """修改数据库用户名备注
+
+        修改数据库用户名备注
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateDbUserComment
+        :type request: :class:`huaweicloudsdkrds.v3.UpdateDbUserCommentRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdateDbUserCommentResponse`
+        """
+        return self.update_db_user_comment_with_http_info(request)
+
+    def update_db_user_comment_with_http_info(self, request):
+        all_params = ['instance_id', 'user_name', 'update_db_user_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'user_name' in local_var_params:
+            path_params['user_name'] = local_var_params['user_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db-users/{user_name}/comment',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateDbUserCommentResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def allow_db_privilege_async(self, request):
         """授权数据库帐号
 

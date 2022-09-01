@@ -53,9 +53,9 @@ class CreateNetworkInstance:
         :type name: str
         :param description: 网络实例的描述。不支持 &lt;&gt;。
         :type description: str
-        :param type: 添加到云连接网络实例的类型，有效值： - vpc：虚拟私有云。 - vgw：虚拟网关。 - er：企业路由器。
+        :param type: 添加到云连接网络实例的类型，有效值： - vpc：虚拟私有云。 - vgw：虚拟网关。
         :type type: str
-        :param instance_id: 添加到云连接网络实例的ID，VPC、VGW或者ER的ID。
+        :param instance_id: 添加到云连接网络实例的ID，VPC或者VGW的ID。
         :type instance_id: str
         :param instance_domain_id: 网络实例的账户ID。跨账号加载必填；同账号下资源加载不填。
         :type instance_domain_id: str
@@ -65,7 +65,7 @@ class CreateNetworkInstance:
         :type region_id: str
         :param cloud_connection_id: 云连接实例ID。
         :type cloud_connection_id: str
-        :param cidrs: 网络实例发布的网段路由列表，ER场景此字段为空。
+        :param cidrs: 网络实例发布的网段路由列表。
         :type cidrs: list[str]
         """
         
@@ -143,7 +143,7 @@ class CreateNetworkInstance:
     def type(self):
         """Gets the type of this CreateNetworkInstance.
 
-        添加到云连接网络实例的类型，有效值： - vpc：虚拟私有云。 - vgw：虚拟网关。 - er：企业路由器。
+        添加到云连接网络实例的类型，有效值： - vpc：虚拟私有云。 - vgw：虚拟网关。
 
         :return: The type of this CreateNetworkInstance.
         :rtype: str
@@ -154,7 +154,7 @@ class CreateNetworkInstance:
     def type(self, type):
         """Sets the type of this CreateNetworkInstance.
 
-        添加到云连接网络实例的类型，有效值： - vpc：虚拟私有云。 - vgw：虚拟网关。 - er：企业路由器。
+        添加到云连接网络实例的类型，有效值： - vpc：虚拟私有云。 - vgw：虚拟网关。
 
         :param type: The type of this CreateNetworkInstance.
         :type type: str
@@ -165,7 +165,7 @@ class CreateNetworkInstance:
     def instance_id(self):
         """Gets the instance_id of this CreateNetworkInstance.
 
-        添加到云连接网络实例的ID，VPC、VGW或者ER的ID。
+        添加到云连接网络实例的ID，VPC或者VGW的ID。
 
         :return: The instance_id of this CreateNetworkInstance.
         :rtype: str
@@ -176,7 +176,7 @@ class CreateNetworkInstance:
     def instance_id(self, instance_id):
         """Sets the instance_id of this CreateNetworkInstance.
 
-        添加到云连接网络实例的ID，VPC、VGW或者ER的ID。
+        添加到云连接网络实例的ID，VPC或者VGW的ID。
 
         :param instance_id: The instance_id of this CreateNetworkInstance.
         :type instance_id: str
@@ -275,7 +275,7 @@ class CreateNetworkInstance:
     def cidrs(self):
         """Gets the cidrs of this CreateNetworkInstance.
 
-        网络实例发布的网段路由列表，ER场景此字段为空。
+        网络实例发布的网段路由列表。
 
         :return: The cidrs of this CreateNetworkInstance.
         :rtype: list[str]
@@ -286,7 +286,7 @@ class CreateNetworkInstance:
     def cidrs(self, cidrs):
         """Sets the cidrs of this CreateNetworkInstance.
 
-        网络实例发布的网段路由列表，ER场景此字段为空。
+        网络实例发布的网段路由列表。
 
         :param cidrs: The cidrs of this CreateNetworkInstance.
         :type cidrs: list[str]

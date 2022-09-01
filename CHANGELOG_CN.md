@@ -1,3 +1,115 @@
+# 3.0.108 2022-09-01
+
+### HuaweiCloud SDK BSSINTL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCustomerOrders`新增请求参数 `indirect_partner_id`
+  - 接口`ShowCustomerOrderDetails`新增请求参数 `indirect_partner_id`
+  - 接口`ListCustomerOnDemandResources`新增请求参数 `indirect_partner_id`
+
+### HuaweiCloud SDK CC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCloudConnections`响应参数`used_scene`移除枚举值`er`
+  - 接口`CreateCloudConnection`移除请求参数 `used_scene`
+  - 接口`ShowCloudConnection`响应参数`used_scene`移除枚举值`er`
+  - 接口`UpdateCloudConnection`响应参数`used_scene`移除枚举值`er`
+  - 接口`ListNetworkInstances`响应参数`type`移除枚举值`er`
+  - 接口`CreateNetworkInstance`请求参数`type`移除枚举值`er`
+  - 接口`ShowNetworkInstance`响应参数`type`移除枚举值`er`
+  - 接口`UpdateNetworkInstance`响应参数`type`移除枚举值`er`
+
+### HuaweiCloud SDK CDM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowJobs`响应参数`id`、`type`改为非必填
+  - 接口`UpdateJob`请求参数`id`、`type`改为非必填
+  - 接口`CreateAndStartRandomClusterJob`请求参数`id`、`type`改为非必填
+  - 接口`CreateJob`请求参数`id`、`type`改为非必填
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateCluster`新增响应参数 `ordeId`
+  - 接口`ShowClusterDetail`:
+    - 新增响应参数 `vpcepIp`、`elbWhiteListResp`
+    - 移除响应参数 `elbWhiteList`、`action`
+  - 接口`UpdateUnbindPublic`移除请求参数 `isAutoPay`
+  - 接口`ListYmlsJob`:
+    - 新增响应参数 `configList`
+    - 移除响应参数 `configurations`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateDependency`移除响应参数 `version`、`last_modified`
+  - 接口`ListDependencies`移除响应参数 `version`、`last_modified`
+
+### HuaweiCloud SDK IAM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateDomainProtectPolicy`:
+    - 新增请求参数 `allow_user`、`mobile`、`admin_check`、`email`、`scene`
+    - 移除响应参数 `operation_protection`
+  - 接口`ShowDomainProtectPolicy`移除响应参数 `operation_protection`
+  - 接口`UpdateDomainPasswordPolicy`请求参数`maximum_consecutive_identical_chars`、`minimum_password_age`、`minimum_password_length`、`number_of_recent_passwords_disallowed`、`password_not_username_or_invert`、`password_validity_period`、`password_char_combination`改为非必填
+  - 接口`UpdateDomainLoginPolicy`请求参数`account_validity_period`、`custom_info_for_login`、`lockout_duration`、`login_failed_times`、`period_with_login_failures`、`session_timeout`、`show_recent_login_info`改为非必填
+  - 接口`ShowDomainQuota`请求参数`type`新增枚举值`mapping`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`UpdateDbUserComment`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateDbUser`新增请求参数 `comment`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListStatistics`:
+    - 请求参数`hosts`类型调整 `array` -> `string`
+    - 请求参数`instances`类型调整 `array` -> `string`
+  - 接口`ListQpsTimeline`:
+    - 请求参数`hosts`类型调整 `array` -> `string`
+    - 请求参数`instances`类型调整 `array` -> `string`
+  - 接口`ListBandwidthTimeline`请求参数`instances`类型调整 `array` -> `string`
+  - 接口`ListTopAbnormal`:
+    - 请求参数`hosts`类型调整 `array` -> `string`
+    - 请求参数`instances`类型调整 `array` -> `string`
+  - 接口`ListOverviewsClassification`:
+    - 请求参数`hosts`类型调整 `array` -> `string`
+    - 请求参数`instances`类型调整 `array` -> `string`
+
 # 3.0.107 2022-08-29
 
 ### HuaweiCloud SDK ECS

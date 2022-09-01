@@ -23,7 +23,7 @@ class ClusterList:
     openapi_types = {
         'datastore': 'ClusterListDatastore',
         'instances': 'list[ClusterListInstances]',
-        'public_kibana_resp': 'KibanaElbWhiteListResp',
+        'public_kibana_resp': 'PublicKibanaRespBody',
         'elb_white_list': 'ElbWhiteListResp',
         'updated': 'str',
         'name': 'str',
@@ -86,7 +86,7 @@ class ClusterList:
         :param instances: 节点对象列表。
         :type instances: list[:class:`huaweicloudsdkcss.v1.ClusterListInstances`]
         :param public_kibana_resp: 
-        :type public_kibana_resp: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
+        :type public_kibana_resp: :class:`huaweicloudsdkcss.v1.PublicKibanaRespBody`
         :param elb_white_list: 
         :type elb_white_list: :class:`huaweicloudsdkcss.v1.ElbWhiteListResp`
         :param updated: 集群上次修改时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
@@ -261,7 +261,7 @@ class ClusterList:
 
 
         :return: The public_kibana_resp of this ClusterList.
-        :rtype: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
+        :rtype: :class:`huaweicloudsdkcss.v1.PublicKibanaRespBody`
         """
         return self._public_kibana_resp
 
@@ -271,7 +271,7 @@ class ClusterList:
 
 
         :param public_kibana_resp: The public_kibana_resp of this ClusterList.
-        :type public_kibana_resp: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
+        :type public_kibana_resp: :class:`huaweicloudsdkcss.v1.PublicKibanaRespBody`
         """
         self._public_kibana_resp = public_kibana_resp
 

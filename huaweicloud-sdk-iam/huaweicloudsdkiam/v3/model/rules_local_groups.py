@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class RulesLocalAdditional:
+class RulesLocalGroups:
 
     """
     Attributes:
@@ -29,11 +29,11 @@ class RulesLocalAdditional:
     }
 
     def __init__(self, name=None):
-        """RulesLocalAdditional
+        """RulesLocalGroups
 
         The model defined in huaweicloud sdk
 
-        :param name: user：联邦用户在本系统中的用户名称。 &#x60;&#x60;&#x60; \&quot;user\&quot;:{\&quot;name\&quot;:\&quot;{0}\&quot;} &#x60;&#x60;&#x60;  group：联邦用户在本系统中所属用户组。 &#x60;&#x60;&#x60; \&quot;group\&quot;:{\&quot;name\&quot;:\&quot;0cd5e9\&quot;} &#x60;&#x60;&#x60;
+        :param name: 联邦用户在本系统中所属用户组列表
         :type name: str
         """
         
@@ -42,27 +42,26 @@ class RulesLocalAdditional:
         self._name = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
+        self.name = name
 
     @property
     def name(self):
-        """Gets the name of this RulesLocalAdditional.
+        """Gets the name of this RulesLocalGroups.
 
-        user：联邦用户在本系统中的用户名称。 ``` \"user\":{\"name\":\"{0}\"} ```  group：联邦用户在本系统中所属用户组。 ``` \"group\":{\"name\":\"0cd5e9\"} ```
+        联邦用户在本系统中所属用户组列表
 
-        :return: The name of this RulesLocalAdditional.
+        :return: The name of this RulesLocalGroups.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RulesLocalAdditional.
+        """Sets the name of this RulesLocalGroups.
 
-        user：联邦用户在本系统中的用户名称。 ``` \"user\":{\"name\":\"{0}\"} ```  group：联邦用户在本系统中所属用户组。 ``` \"group\":{\"name\":\"0cd5e9\"} ```
+        联邦用户在本系统中所属用户组列表
 
-        :param name: The name of this RulesLocalAdditional.
+        :param name: The name of this RulesLocalGroups.
         :type name: str
         """
         self._name = name
@@ -109,7 +108,7 @@ class RulesLocalAdditional:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RulesLocalAdditional):
+        if not isinstance(other, RulesLocalGroups):
             return False
 
         return self.__dict__ == other.__dict__

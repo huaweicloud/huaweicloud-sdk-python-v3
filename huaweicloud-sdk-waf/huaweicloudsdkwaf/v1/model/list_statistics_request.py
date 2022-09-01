@@ -24,8 +24,8 @@ class ListStatisticsRequest:
         'enterprise_project_id': 'str',
         '_from': 'int',
         'to': 'int',
-        'hosts': 'list[str]',
-        'instances': 'list[str]'
+        'hosts': 'str',
+        'instances': 'str'
     }
 
     attribute_map = {
@@ -47,10 +47,10 @@ class ListStatisticsRequest:
         :type _from: int
         :param to: 结束时间(13位时间戳),需要和from同时使用
         :type to: int
-        :param hosts: 域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
-        :type hosts: list[str]
-        :param instances: 要查询引擎实例列表
-        :type instances: list[str]
+        :param hosts: 域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        :type hosts: str
+        :param instances: 要查询引擎实例id
+        :type instances: str
         """
         
         
@@ -141,10 +141,10 @@ class ListStatisticsRequest:
     def hosts(self):
         """Gets the hosts of this ListStatisticsRequest.
 
-        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :return: The hosts of this ListStatisticsRequest.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._hosts
 
@@ -152,10 +152,10 @@ class ListStatisticsRequest:
     def hosts(self, hosts):
         """Sets the hosts of this ListStatisticsRequest.
 
-        域名id数组，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
+        域名id，通过查询云模式防护域名列表（ListHost）获取域名id或者通过独享模式域名列表（ListPremiumHost）获取域名id
 
         :param hosts: The hosts of this ListStatisticsRequest.
-        :type hosts: list[str]
+        :type hosts: str
         """
         self._hosts = hosts
 
@@ -163,10 +163,10 @@ class ListStatisticsRequest:
     def instances(self):
         """Gets the instances of this ListStatisticsRequest.
 
-        要查询引擎实例列表
+        要查询引擎实例id
 
         :return: The instances of this ListStatisticsRequest.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._instances
 
@@ -174,10 +174,10 @@ class ListStatisticsRequest:
     def instances(self, instances):
         """Sets the instances of this ListStatisticsRequest.
 
-        要查询引擎实例列表
+        要查询引擎实例id
 
         :param instances: The instances of this ListStatisticsRequest.
-        :type instances: list[str]
+        :type instances: str
         """
         self._instances = instances
 
