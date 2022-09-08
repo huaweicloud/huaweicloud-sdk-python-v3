@@ -34,6 +34,16 @@ class IamRegion:
 
     AF_SOUTH_1 = Region(id="af-south-1", endpoint="https://iam.af-south-1.myhuaweicloud.com")
 
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://iam.sa-brazil-1.myhuaweicloud.com")
+
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://iam.la-south-2.myhuaweicloud.com")
+
+    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://iam.na-mexico-1.myhuaweicloud.com")
+
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://iam.la-north-2.myhuaweicloud.com")
+
+    CN_NORTH_9 = Region(id="cn-north-9", endpoint="https://iam.cn-north-9.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-2": CN_NORTH_2,
         "cn-north-4": CN_NORTH_4,
@@ -47,6 +57,11 @@ class IamRegion:
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-3": AP_SOUTHEAST_3,
         "af-south-1": AF_SOUTH_1,
+        "sa-brazil-1": SA_BRAZIL_1,
+        "la-south-2": LA_SOUTH_2,
+        "na-mexico-1": NA_MEXICO_1,
+        "la-north-2": LA_NORTH_2,
+        "cn-north-9": CN_NORTH_9,
     }
 
     @classmethod

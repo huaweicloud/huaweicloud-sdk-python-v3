@@ -71,9 +71,9 @@ class Quota:
         :type member: int
         :param members_per_pool: 单个pool下的member的配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type members_per_pool: int
-        :param ipgroup: IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :param ipgroup: IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type ipgroup: int
-        :param security_policy: 自定义安全策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        :param security_policy: 自定义安全策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type security_policy: int
         """
         
@@ -306,7 +306,7 @@ class Quota:
     def ipgroup(self):
         """Gets the ipgroup of this Quota.
 
-        IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :return: The ipgroup of this Quota.
         :rtype: int
@@ -317,7 +317,7 @@ class Quota:
     def ipgroup(self, ipgroup):
         """Sets the ipgroup of this Quota.
 
-        IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :param ipgroup: The ipgroup of this Quota.
         :type ipgroup: int
@@ -328,7 +328,7 @@ class Quota:
     def security_policy(self):
         """Gets the security_policy of this Quota.
 
-        自定义安全策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        自定义安全策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :return: The security_policy of this Quota.
         :rtype: int
@@ -339,7 +339,7 @@ class Quota:
     def security_policy(self, security_policy):
         """Sets the security_policy of this Quota.
 
-        自定义安全策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
+        自定义安全策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :param security_policy: The security_policy of this Quota.
         :type security_policy: int

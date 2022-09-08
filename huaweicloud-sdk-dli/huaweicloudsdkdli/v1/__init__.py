@@ -43,6 +43,8 @@ from huaweicloudsdkdli.v1.model.create_datasource_connection_request import Crea
 from huaweicloudsdkdli.v1.model.create_datasource_connection_response import CreateDatasourceConnectionResponse
 from huaweicloudsdkdli.v1.model.create_dli_agency_request import CreateDliAgencyRequest
 from huaweicloudsdkdli.v1.model.create_dli_agency_response import CreateDliAgencyResponse
+from huaweicloudsdkdli.v1.model.create_download_job_request import CreateDownloadJobRequest
+from huaweicloudsdkdli.v1.model.create_download_job_response import CreateDownloadJobResponse
 from huaweicloudsdkdli.v1.model.create_elastic_resource_pool_info import CreateElasticResourcePoolInfo
 from huaweicloudsdkdli.v1.model.create_elastic_resource_pool_request import CreateElasticResourcePoolRequest
 from huaweicloudsdkdli.v1.model.create_elastic_resource_pool_response import CreateElasticResourcePoolResponse
@@ -56,7 +58,6 @@ from huaweicloudsdkdli.v1.model.create_flink_sql_response import CreateFlinkSqlR
 from huaweicloudsdkdli.v1.model.create_flink_template_request import CreateFlinkTemplateRequest
 from huaweicloudsdkdli.v1.model.create_flink_template_response import CreateFlinkTemplateResponse
 from huaweicloudsdkdli.v1.model.create_flinkdefined_jobs_req import CreateFlinkdefinedJobsReq
-from huaweicloudsdkdli.v1.model.create_global_value import CreateGlobalValue
 from huaweicloudsdkdli.v1.model.create_global_value_req import CreateGlobalValueReq
 from huaweicloudsdkdli.v1.model.create_globle_value_request import CreateGlobleValueRequest
 from huaweicloudsdkdli.v1.model.create_globle_value_response import CreateGlobleValueResponse
@@ -66,8 +67,6 @@ from huaweicloudsdkdli.v1.model.create_ief_message_channel_response import Creat
 from huaweicloudsdkdli.v1.model.create_ief_system_events_request import CreateIefSystemEventsRequest
 from huaweicloudsdkdli.v1.model.create_ief_system_events_response import CreateIefSystemEventsResponse
 from huaweicloudsdkdli.v1.model.create_job_resp_job import CreateJobRespJob
-from huaweicloudsdkdli.v1.model.create_job_result_request import CreateJobResultRequest
-from huaweicloudsdkdli.v1.model.create_job_result_response import CreateJobResultResponse
 from huaweicloudsdkdli.v1.model.create_queue_plan_request import CreateQueuePlanRequest
 from huaweicloudsdkdli.v1.model.create_queue_plan_response import CreateQueuePlanResponse
 from huaweicloudsdkdli.v1.model.create_queue_req import CreateQueueReq
@@ -120,6 +119,8 @@ from huaweicloudsdkdli.v1.model.export_data_request import ExportDataRequest
 from huaweicloudsdkdli.v1.model.export_data_response import ExportDataResponse
 from huaweicloudsdkdli.v1.model.export_flink_job_request import ExportFlinkJobRequest
 from huaweicloudsdkdli.v1.model.export_flink_job_response import ExportFlinkJobResponse
+from huaweicloudsdkdli.v1.model.export_job_result_request import ExportJobResultRequest
+from huaweicloudsdkdli.v1.model.export_job_result_response import ExportJobResultResponse
 from huaweicloudsdkdli.v1.model.export_req import ExportReq
 from huaweicloudsdkdli.v1.model.export_result_req import ExportResultReq
 from huaweicloudsdkdli.v1.model.export_table_req import ExportTableReq
@@ -139,7 +140,8 @@ from huaweicloudsdkdli.v1.model.import_req import ImportReq
 from huaweicloudsdkdli.v1.model.import_rsp_job import ImportRspJob
 from huaweicloudsdkdli.v1.model.import_table_req import ImportTableReq
 from huaweicloudsdkdli.v1.model.jobs import Jobs
-from huaweicloudsdkdli.v1.model.jobs_tags import JobsTags
+from huaweicloudsdkdli.v1.model.list_all_tables_request import ListAllTablesRequest
+from huaweicloudsdkdli.v1.model.list_all_tables_response import ListAllTablesResponse
 from huaweicloudsdkdli.v1.model.list_batches_request import ListBatchesRequest
 from huaweicloudsdkdli.v1.model.list_batches_response import ListBatchesResponse
 from huaweicloudsdkdli.v1.model.list_database_users_request import ListDatabaseUsersRequest
@@ -160,6 +162,7 @@ from huaweicloudsdkdli.v1.model.list_flink_jobs_request import ListFlinkJobsRequ
 from huaweicloudsdkdli.v1.model.list_flink_jobs_response import ListFlinkJobsResponse
 from huaweicloudsdkdli.v1.model.list_flink_templates_request import ListFlinkTemplatesRequest
 from huaweicloudsdkdli.v1.model.list_flink_templates_response import ListFlinkTemplatesResponse
+from huaweicloudsdkdli.v1.model.list_global_value import ListGlobalValue
 from huaweicloudsdkdli.v1.model.list_global_values_request import ListGlobalValuesRequest
 from huaweicloudsdkdli.v1.model.list_global_values_response import ListGlobalValuesResponse
 from huaweicloudsdkdli.v1.model.list_group_packages_resource import ListGroupPackagesResource
@@ -182,9 +185,7 @@ from huaweicloudsdkdli.v1.model.list_table_privileges_request import ListTablePr
 from huaweicloudsdkdli.v1.model.list_table_privileges_response import ListTablePrivilegesResponse
 from huaweicloudsdkdli.v1.model.list_table_users_request import ListTableUsersRequest
 from huaweicloudsdkdli.v1.model.list_table_users_response import ListTableUsersResponse
-from huaweicloudsdkdli.v1.model.list_tables_request import ListTablesRequest
 from huaweicloudsdkdli.v1.model.list_tables_resp_table import ListTablesRespTable
-from huaweicloudsdkdli.v1.model.list_tables_response import ListTablesResponse
 from huaweicloudsdkdli.v1.model.list_templates_resp_list import ListTemplatesRespList
 from huaweicloudsdkdli.v1.model.list_templates_resp_payload_templates import ListTemplatesRespPayloadTemplates
 from huaweicloudsdkdli.v1.model.obs_buckets import ObsBuckets
@@ -221,9 +222,8 @@ from huaweicloudsdkdli.v1.model.show_batch_state_request import ShowBatchStateRe
 from huaweicloudsdkdli.v1.model.show_batch_state_response import ShowBatchStateResponse
 from huaweicloudsdkdli.v1.model.show_database_users_privilege import ShowDatabaseUsersPrivilege
 from huaweicloudsdkdli.v1.model.show_datasource_connection_request import ShowDatasourceConnectionRequest
-from huaweicloudsdkdli.v1.model.show_datasource_connection_resp_available_queue_info import ShowDatasourceConnectionRespAvailableQueueInfo
+from huaweicloudsdkdli.v1.model.show_datasource_connection_resp import ShowDatasourceConnectionResp
 from huaweicloudsdkdli.v1.model.show_datasource_connection_response import ShowDatasourceConnectionResponse
-from huaweicloudsdkdli.v1.model.show_datasource_connection_resps import ShowDatasourceConnectionResps
 from huaweicloudsdkdli.v1.model.show_describe_table_request import ShowDescribeTableRequest
 from huaweicloudsdkdli.v1.model.show_describe_table_response import ShowDescribeTableResponse
 from huaweicloudsdkdli.v1.model.show_detail_info_request import ShowDetailInfoRequest
@@ -275,6 +275,7 @@ from huaweicloudsdkdli.v1.model.stop_flink_job_response import StopFlinkJobRespo
 from huaweicloudsdkdli.v1.model.sub_job_datas import SubJobDatas
 from huaweicloudsdkdli.v1.model.table_user_permissions_resp_privilege import TableUserPermissionsRespPrivilege
 from huaweicloudsdkdli.v1.model.tms_tag import TmsTag
+from huaweicloudsdkdli.v1.model.tms_tag_entity import TmsTagEntity
 from huaweicloudsdkdli.v1.model.update_database_owner_req import UpdateDatabaseOwnerReq
 from huaweicloudsdkdli.v1.model.update_database_owner_request import UpdateDatabaseOwnerRequest
 from huaweicloudsdkdli.v1.model.update_database_owner_response import UpdateDatabaseOwnerResponse
@@ -305,6 +306,8 @@ from huaweicloudsdkdli.v1.model.update_queue_cidr_request import UpdateQueueCidr
 from huaweicloudsdkdli.v1.model.update_queue_cidr_response import UpdateQueueCidrResponse
 from huaweicloudsdkdli.v1.model.update_resource_owner import UpdateResourceOwner
 from huaweicloudsdkdli.v1.model.update_sql_job_req import UpdateSQLJobReq
+from huaweicloudsdkdli.v1.model.update_table_owner_request import UpdateTableOwnerRequest
+from huaweicloudsdkdli.v1.model.update_table_owner_response import UpdateTableOwnerResponse
 from huaweicloudsdkdli.v1.model.update_template_req import UpdateTemplateReq
 from huaweicloudsdkdli.v1.model.upload_files_request import UploadFilesRequest
 from huaweicloudsdkdli.v1.model.upload_files_response import UploadFilesResponse

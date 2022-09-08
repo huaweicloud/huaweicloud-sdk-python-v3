@@ -81,7 +81,8 @@ class SetQueuePlanReq:
         self.target_cu = target_cu
         self.start_hour = start_hour
         self.start_minute = start_minute
-        self.repeat_day = repeat_day
+        if repeat_day is not None:
+            self.repeat_day = repeat_day
         if valid_date_begin is not None:
             self.valid_date_begin = valid_date_begin
         if valid_date_end is not None:

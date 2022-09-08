@@ -22,49 +22,56 @@ class ListEnhancedConnectionsRequest:
 
     openapi_types = {
         'limit': 'str',
+        'name': 'str',
         'offset': 'str',
         'status': 'str',
-        'name': 'str'
+        'tags': 'str'
     }
 
     attribute_map = {
         'limit': 'limit',
+        'name': 'name',
         'offset': 'offset',
         'status': 'status',
-        'name': 'name'
+        'tags': 'tags'
     }
 
-    def __init__(self, limit=None, offset=None, status=None, name=None):
+    def __init__(self, limit=None, name=None, offset=None, status=None, tags=None):
         """ListEnhancedConnectionsRequest
 
         The model defined in huaweicloud sdk
 
         :param limit: 查询最大连接个数，默认100。
         :type limit: str
+        :param name: 连接名。
+        :type name: str
         :param offset: 查询结果偏移量，默认为0（连接以创建时间进行排序）
         :type offset: str
         :param status: 连接状态，包括以下两种状态： ACTIVE：已激活 DELETED：已删除
         :type status: str
-        :param name: 连接名。
-        :type name: str
+        :param tags: 标签
+        :type tags: str
         """
         
         
 
         self._limit = None
+        self._name = None
         self._offset = None
         self._status = None
-        self._name = None
+        self._tags = None
         self.discriminator = None
 
         if limit is not None:
             self.limit = limit
+        if name is not None:
+            self.name = name
         if offset is not None:
             self.offset = offset
         if status is not None:
             self.status = status
-        if name is not None:
-            self.name = name
+        if tags is not None:
+            self.tags = tags
 
     @property
     def limit(self):
@@ -87,6 +94,28 @@ class ListEnhancedConnectionsRequest:
         :type limit: str
         """
         self._limit = limit
+
+    @property
+    def name(self):
+        """Gets the name of this ListEnhancedConnectionsRequest.
+
+        连接名。
+
+        :return: The name of this ListEnhancedConnectionsRequest.
+        :rtype: str
+        """
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListEnhancedConnectionsRequest.
+
+        连接名。
+
+        :param name: The name of this ListEnhancedConnectionsRequest.
+        :type name: str
+        """
+        self._name = name
 
     @property
     def offset(self):
@@ -133,26 +162,26 @@ class ListEnhancedConnectionsRequest:
         self._status = status
 
     @property
-    def name(self):
-        """Gets the name of this ListEnhancedConnectionsRequest.
+    def tags(self):
+        """Gets the tags of this ListEnhancedConnectionsRequest.
 
-        连接名。
+        标签
 
-        :return: The name of this ListEnhancedConnectionsRequest.
+        :return: The tags of this ListEnhancedConnectionsRequest.
         :rtype: str
         """
-        return self._name
+        return self._tags
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ListEnhancedConnectionsRequest.
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListEnhancedConnectionsRequest.
 
-        连接名。
+        标签
 
-        :param name: The name of this ListEnhancedConnectionsRequest.
-        :type name: str
+        :param tags: The tags of this ListEnhancedConnectionsRequest.
+        :type tags: str
         """
-        self._name = name
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

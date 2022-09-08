@@ -9,6 +9,7 @@ from huaweicloudsdkcse.v1.model.create_engine_response import CreateEngineRespon
 from huaweicloudsdkcse.v1.model.create_kie_req import CreateKieReq
 from huaweicloudsdkcse.v1.model.delete_engine_request import DeleteEngineRequest
 from huaweicloudsdkcse.v1.model.delete_engine_response import DeleteEngineResponse
+from huaweicloudsdkcse.v1.model.doc_failed_of_upload import DocFailedOfUpload
 from huaweicloudsdkcse.v1.model.download_kie_req_body import DownloadKieReqBody
 from huaweicloudsdkcse.v1.model.download_kie_request import DownloadKieRequest
 from huaweicloudsdkcse.v1.model.download_kie_response import DownloadKieResponse
@@ -36,5 +37,4 @@ from huaweicloudsdkcse.v1.model.task_executor_brief import TaskExecutorBrief
 from huaweicloudsdkcse.v1.model.task_steps import TaskSteps
 from huaweicloudsdkcse.v1.model.upload_kie_request import UploadKieRequest
 from huaweicloudsdkcse.v1.model.upload_kie_request_body import UploadKieRequestBody
-from huaweicloudsdkcse.v1.model.upload_kie_resp_failure import UploadKieRespFailure
 from huaweicloudsdkcse.v1.model.upload_kie_response import UploadKieResponse

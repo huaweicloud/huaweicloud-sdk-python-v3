@@ -45,6 +45,7 @@ class LoadBalancer:
         'ipv6_vip_port_id': 'str',
         'availability_zone_list': 'list[str]',
         'enterprise_project_id': 'str',
+        'billing_info': 'str',
         'l4_flavor_id': 'str',
         'l4_scale_flavor_id': 'str',
         'l7_flavor_id': 'str',
@@ -87,6 +88,7 @@ class LoadBalancer:
         'ipv6_vip_port_id': 'ipv6_vip_port_id',
         'availability_zone_list': 'availability_zone_list',
         'enterprise_project_id': 'enterprise_project_id',
+        'billing_info': 'billing_info',
         'l4_flavor_id': 'l4_flavor_id',
         'l4_scale_flavor_id': 'l4_scale_flavor_id',
         'l7_flavor_id': 'l7_flavor_id',
@@ -104,7 +106,7 @@ class LoadBalancer:
         'waf_failure_action': 'waf_failure_action'
     }
 
-    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, global_eips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, ipv6_bandwidth=None, deletion_protection_enable=None, autoscaling=None, public_border_group=None, waf_failure_action=None):
+    def __init__(self, id=None, description=None, provisioning_status=None, admin_state_up=None, provider=None, pools=None, listeners=None, operating_status=None, name=None, project_id=None, vip_subnet_cidr_id=None, vip_address=None, vip_port_id=None, tags=None, created_at=None, updated_at=None, guaranteed=None, vpc_id=None, eips=None, ipv6_vip_address=None, ipv6_vip_virsubnet_id=None, ipv6_vip_port_id=None, availability_zone_list=None, enterprise_project_id=None, billing_info=None, l4_flavor_id=None, l4_scale_flavor_id=None, l7_flavor_id=None, l7_scale_flavor_id=None, publicips=None, global_eips=None, elb_virsubnet_ids=None, elb_virsubnet_type=None, ip_target_enable=None, frozen_scene=None, ipv6_bandwidth=None, deletion_protection_enable=None, autoscaling=None, public_border_group=None, waf_failure_action=None):
         """LoadBalancer
 
         The model defined in huaweicloud sdk
@@ -141,22 +143,24 @@ class LoadBalancer:
         :type created_at: str
         :param updated_at: 负载均衡器的更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;
         :type updated_at: str
-        :param guaranteed: 是否独享型LB，取值： - false：共享型。 - true：独享型。
+        :param guaranteed: 是否独享型LB。取值： - false：共享型。 - true：独享型。
         :type guaranteed: bool
         :param vpc_id: 负载均衡器所在VPC ID。
         :type vpc_id: str
         :param eips: 负载均衡器绑定的EIP。只支持绑定一个EIP。  注：该字段与publicips一致。
         :type eips: list[:class:`huaweicloudsdkelb.v3.EipInfo`]
-        :param ipv6_vip_address: 双栈类型负载均衡器的IPv6地址。 [ 不支持IPv6，请勿使用。](tag:dt,dt_test)
+        :param ipv6_vip_address: 双栈类型负载均衡器的IPv6地址。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
         :type ipv6_vip_address: str
-        :param ipv6_vip_virsubnet_id: 双栈类型负载均衡器所在子网的IPv6网络ID。 [ 不支持IPv6，请勿使用。](tag:dt,dt_test)
+        :param ipv6_vip_virsubnet_id: 双栈类型负载均衡器所在子网的IPv6网络ID。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
         :type ipv6_vip_virsubnet_id: str
-        :param ipv6_vip_port_id: 双栈类型负载均衡器的IPv6对应的port ID。 [ 不支持IPv6，请勿使用。](tag:dt,dt_test)
+        :param ipv6_vip_port_id: 双栈类型负载均衡器的IPv6对应的port ID。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
         :type ipv6_vip_port_id: str
         :param availability_zone_list: 负载均衡器所在的可用区列表。
         :type availability_zone_list: list[str]
         :param enterprise_project_id: 企业项目ID。创建时不传则返回\&quot;0\&quot;，表示资源属于default企业项目。  注：\&quot;0\&quot;并不是真实存在的企业项目ID，在创建、更新和查询时不能作为请求参数传入。  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
         :type enterprise_project_id: str
+        :param billing_info: 资源账单信息。取值： - 空：按需计费。 - 非空：包周期计费， 包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如： CS2107161019CDJZZ:OFFI569702121789763584:az:057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+        :type billing_info: str
         :param l4_flavor_id: 四层Flavor ID。  对于弹性扩缩容实例，表示上限规格。  [hsco场景下所有LB实例共享带宽，该字段无效，请勿使用。](tag:hcso)
         :type l4_flavor_id: str
         :param l4_scale_flavor_id: 四层弹性Flavor ID。  不支持该字段，请勿使用。
@@ -173,13 +177,13 @@ class LoadBalancer:
         :type elb_virsubnet_ids: list[str]
         :param elb_virsubnet_type: 下联面子网类型 - ipv4：ipv4 - dualstack：双栈
         :type elb_virsubnet_type: str
-        :param ip_target_enable: 是否启用跨VPC后端转发。取值： - true：开启、 - false：不开启。  仅独享型负载均衡器支持该特性。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。 [ 不支持该字段，请勿使用。](tag:dt,dt_test)
+        :param ip_target_enable: 是否启用跨VPC后端转发。取值： - true：开启、 - false：不开启。  [仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs,dt,dt_test)  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  使用说明： - 开启不能关闭。
         :type ip_target_enable: bool
-        :param frozen_scene: 负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - RTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - REAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        :param frozen_scene: 负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - RTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - REAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type frozen_scene: str
         :param ipv6_bandwidth: 
         :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
-        :param deletion_protection_enable: 是否开启删除保护，取值： - false：不开启。 - true：开启。 &gt;退场时需要先关闭所有资源的删除保护开关。  仅当前局点启用删除保护特性后才会返回该字段。
+        :param deletion_protection_enable: 是否开启删除保护。取值： - false：不开启。 - true：开启。 &gt;退场时需要先关闭所有资源的删除保护开关。  仅当前局点启用删除保护特性后才会返回该字段。
         :type deletion_protection_enable: bool
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkelb.v3.AutoscalingRef`
@@ -215,6 +219,7 @@ class LoadBalancer:
         self._ipv6_vip_port_id = None
         self._availability_zone_list = None
         self._enterprise_project_id = None
+        self._billing_info = None
         self._l4_flavor_id = None
         self._l4_scale_flavor_id = None
         self._l7_flavor_id = None
@@ -256,6 +261,7 @@ class LoadBalancer:
         self.ipv6_vip_port_id = ipv6_vip_port_id
         self.availability_zone_list = availability_zone_list
         self.enterprise_project_id = enterprise_project_id
+        self.billing_info = billing_info
         self.l4_flavor_id = l4_flavor_id
         self.l4_scale_flavor_id = l4_scale_flavor_id
         self.l7_flavor_id = l7_flavor_id
@@ -632,7 +638,7 @@ class LoadBalancer:
     def guaranteed(self):
         """Gets the guaranteed of this LoadBalancer.
 
-        是否独享型LB，取值： - false：共享型。 - true：独享型。
+        是否独享型LB。取值： - false：共享型。 - true：独享型。
 
         :return: The guaranteed of this LoadBalancer.
         :rtype: bool
@@ -643,7 +649,7 @@ class LoadBalancer:
     def guaranteed(self, guaranteed):
         """Sets the guaranteed of this LoadBalancer.
 
-        是否独享型LB，取值： - false：共享型。 - true：独享型。
+        是否独享型LB。取值： - false：共享型。 - true：独享型。
 
         :param guaranteed: The guaranteed of this LoadBalancer.
         :type guaranteed: bool
@@ -698,7 +704,7 @@ class LoadBalancer:
     def ipv6_vip_address(self):
         """Gets the ipv6_vip_address of this LoadBalancer.
 
-        双栈类型负载均衡器的IPv6地址。 [ 不支持IPv6，请勿使用。](tag:dt,dt_test)
+        双栈类型负载均衡器的IPv6地址。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :return: The ipv6_vip_address of this LoadBalancer.
         :rtype: str
@@ -709,7 +715,7 @@ class LoadBalancer:
     def ipv6_vip_address(self, ipv6_vip_address):
         """Sets the ipv6_vip_address of this LoadBalancer.
 
-        双栈类型负载均衡器的IPv6地址。 [ 不支持IPv6，请勿使用。](tag:dt,dt_test)
+        双栈类型负载均衡器的IPv6地址。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :param ipv6_vip_address: The ipv6_vip_address of this LoadBalancer.
         :type ipv6_vip_address: str
@@ -720,7 +726,7 @@ class LoadBalancer:
     def ipv6_vip_virsubnet_id(self):
         """Gets the ipv6_vip_virsubnet_id of this LoadBalancer.
 
-        双栈类型负载均衡器所在子网的IPv6网络ID。 [ 不支持IPv6，请勿使用。](tag:dt,dt_test)
+        双栈类型负载均衡器所在子网的IPv6网络ID。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :return: The ipv6_vip_virsubnet_id of this LoadBalancer.
         :rtype: str
@@ -731,7 +737,7 @@ class LoadBalancer:
     def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
         """Sets the ipv6_vip_virsubnet_id of this LoadBalancer.
 
-        双栈类型负载均衡器所在子网的IPv6网络ID。 [ 不支持IPv6，请勿使用。](tag:dt,dt_test)
+        双栈类型负载均衡器所在子网的IPv6网络ID。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this LoadBalancer.
         :type ipv6_vip_virsubnet_id: str
@@ -742,7 +748,7 @@ class LoadBalancer:
     def ipv6_vip_port_id(self):
         """Gets the ipv6_vip_port_id of this LoadBalancer.
 
-        双栈类型负载均衡器的IPv6对应的port ID。 [ 不支持IPv6，请勿使用。](tag:dt,dt_test)
+        双栈类型负载均衡器的IPv6对应的port ID。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :return: The ipv6_vip_port_id of this LoadBalancer.
         :rtype: str
@@ -753,7 +759,7 @@ class LoadBalancer:
     def ipv6_vip_port_id(self, ipv6_vip_port_id):
         """Sets the ipv6_vip_port_id of this LoadBalancer.
 
-        双栈类型负载均衡器的IPv6对应的port ID。 [ 不支持IPv6，请勿使用。](tag:dt,dt_test)
+        双栈类型负载均衡器的IPv6对应的port ID。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :param ipv6_vip_port_id: The ipv6_vip_port_id of this LoadBalancer.
         :type ipv6_vip_port_id: str
@@ -803,6 +809,28 @@ class LoadBalancer:
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def billing_info(self):
+        """Gets the billing_info of this LoadBalancer.
+
+        资源账单信息。取值： - 空：按需计费。 - 非空：包周期计费， 包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如： CS2107161019CDJZZ:OFFI569702121789763584:az:057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+
+        :return: The billing_info of this LoadBalancer.
+        :rtype: str
+        """
+        return self._billing_info
+
+    @billing_info.setter
+    def billing_info(self, billing_info):
+        """Sets the billing_info of this LoadBalancer.
+
+        资源账单信息。取值： - 空：按需计费。 - 非空：包周期计费， 包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如： CS2107161019CDJZZ:OFFI569702121789763584:az:057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+
+        :param billing_info: The billing_info of this LoadBalancer.
+        :type billing_info: str
+        """
+        self._billing_info = billing_info
 
     @property
     def l4_flavor_id(self):
@@ -984,7 +1012,7 @@ class LoadBalancer:
     def ip_target_enable(self):
         """Gets the ip_target_enable of this LoadBalancer.
 
-        是否启用跨VPC后端转发。取值： - true：开启、 - false：不开启。  仅独享型负载均衡器支持该特性。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。 [ 不支持该字段，请勿使用。](tag:dt,dt_test)
+        是否启用跨VPC后端转发。取值： - true：开启、 - false：不开启。  [仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs,dt,dt_test)  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  使用说明： - 开启不能关闭。
 
         :return: The ip_target_enable of this LoadBalancer.
         :rtype: bool
@@ -995,7 +1023,7 @@ class LoadBalancer:
     def ip_target_enable(self, ip_target_enable):
         """Sets the ip_target_enable of this LoadBalancer.
 
-        是否启用跨VPC后端转发。取值： - true：开启、 - false：不开启。  仅独享型负载均衡器支持该特性。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。 [ 不支持该字段，请勿使用。](tag:dt,dt_test)
+        是否启用跨VPC后端转发。取值： - true：开启、 - false：不开启。  [仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs,dt,dt_test)  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  使用说明： - 开启不能关闭。
 
         :param ip_target_enable: The ip_target_enable of this LoadBalancer.
         :type ip_target_enable: bool
@@ -1006,7 +1034,7 @@ class LoadBalancer:
     def frozen_scene(self):
         """Gets the frozen_scene of this LoadBalancer.
 
-        负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - RTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - REAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - RTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - REAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :return: The frozen_scene of this LoadBalancer.
         :rtype: str
@@ -1017,7 +1045,7 @@ class LoadBalancer:
     def frozen_scene(self, frozen_scene):
         """Sets the frozen_scene of this LoadBalancer.
 
-        负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - RTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - REAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:dt,dt_test)
+        负载均衡器的冻结场景。若负载均衡器有多个冻结场景，用逗号分隔。取值： - POLICE：公安冻结场景。 - ILLEGAL：违规冻结场景。 - VERIFY：客户未实名认证冻结场景。 - RTNER：合作伙伴冻结（合作伙伴冻结子客户资源）。 - REAR：欠费冻结场景。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
 
         :param frozen_scene: The frozen_scene of this LoadBalancer.
         :type frozen_scene: str
@@ -1048,7 +1076,7 @@ class LoadBalancer:
     def deletion_protection_enable(self):
         """Gets the deletion_protection_enable of this LoadBalancer.
 
-        是否开启删除保护，取值： - false：不开启。 - true：开启。 >退场时需要先关闭所有资源的删除保护开关。  仅当前局点启用删除保护特性后才会返回该字段。
+        是否开启删除保护。取值： - false：不开启。 - true：开启。 >退场时需要先关闭所有资源的删除保护开关。  仅当前局点启用删除保护特性后才会返回该字段。
 
         :return: The deletion_protection_enable of this LoadBalancer.
         :rtype: bool
@@ -1059,7 +1087,7 @@ class LoadBalancer:
     def deletion_protection_enable(self, deletion_protection_enable):
         """Sets the deletion_protection_enable of this LoadBalancer.
 
-        是否开启删除保护，取值： - false：不开启。 - true：开启。 >退场时需要先关闭所有资源的删除保护开关。  仅当前局点启用删除保护特性后才会返回该字段。
+        是否开启删除保护。取值： - false：不开启。 - true：开启。 >退场时需要先关闭所有资源的删除保护开关。  仅当前局点启用删除保护特性后才会返回该字段。
 
         :param deletion_protection_enable: The deletion_protection_enable of this LoadBalancer.
         :type deletion_protection_enable: bool

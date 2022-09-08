@@ -28,7 +28,7 @@ class CreateCommitRequestBody:
         'author_email': 'str',
         'author_name': 'str',
         'stats': 'bool',
-        'force': 'str'
+        'force': 'bool'
     }
 
     attribute_map = {
@@ -62,7 +62,7 @@ class CreateCommitRequestBody:
         :param stats: 是否包括提交统计信息。默认值为true
         :type stats: bool
         :param force: 是否覆盖目标分支。当true时，使用基于start_branch的新提交覆盖目标分支
-        :type force: str
+        :type force: bool
         """
         
         
@@ -252,7 +252,7 @@ class CreateCommitRequestBody:
         是否覆盖目标分支。当true时，使用基于start_branch的新提交覆盖目标分支
 
         :return: The force of this CreateCommitRequestBody.
-        :rtype: str
+        :rtype: bool
         """
         return self._force
 
@@ -263,7 +263,7 @@ class CreateCommitRequestBody:
         是否覆盖目标分支。当true时，使用基于start_branch的新提交覆盖目标分支
 
         :param force: The force of this CreateCommitRequestBody.
-        :type force: str
+        :type force: bool
         """
         self._force = force
 

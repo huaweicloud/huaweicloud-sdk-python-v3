@@ -22,41 +22,41 @@ class DeleteDatabaseRequest:
 
     openapi_types = {
         'database_name': 'str',
-        'cascade': 'bool',
-        '_async': 'bool'
+        '_async': 'bool',
+        'cascade': 'bool'
     }
 
     attribute_map = {
         'database_name': 'database_name',
-        'cascade': 'cascade',
-        '_async': 'async'
+        '_async': 'async',
+        'cascade': 'cascade'
     }
 
-    def __init__(self, database_name=None, cascade=None, _async=None):
+    def __init__(self, database_name=None, _async=None, cascade=None):
         """DeleteDatabaseRequest
 
         The model defined in huaweicloud sdk
 
         :param database_name: 删除的数据库名称。
         :type database_name: str
-        :param cascade: 
-        :type cascade: bool
         :param _async: 
         :type _async: bool
+        :param cascade: 
+        :type cascade: bool
         """
         
         
 
         self._database_name = None
-        self._cascade = None
         self.__async = None
+        self._cascade = None
         self.discriminator = None
 
         self.database_name = database_name
-        if cascade is not None:
-            self.cascade = cascade
         if _async is not None:
             self._async = _async
+        if cascade is not None:
+            self.cascade = cascade
 
     @property
     def database_name(self):
@@ -81,26 +81,6 @@ class DeleteDatabaseRequest:
         self._database_name = database_name
 
     @property
-    def cascade(self):
-        """Gets the cascade of this DeleteDatabaseRequest.
-
-
-        :return: The cascade of this DeleteDatabaseRequest.
-        :rtype: bool
-        """
-        return self._cascade
-
-    @cascade.setter
-    def cascade(self, cascade):
-        """Sets the cascade of this DeleteDatabaseRequest.
-
-
-        :param cascade: The cascade of this DeleteDatabaseRequest.
-        :type cascade: bool
-        """
-        self._cascade = cascade
-
-    @property
     def _async(self):
         """Gets the _async of this DeleteDatabaseRequest.
 
@@ -119,6 +99,26 @@ class DeleteDatabaseRequest:
         :type _async: bool
         """
         self.__async = _async
+
+    @property
+    def cascade(self):
+        """Gets the cascade of this DeleteDatabaseRequest.
+
+
+        :return: The cascade of this DeleteDatabaseRequest.
+        :rtype: bool
+        """
+        return self._cascade
+
+    @cascade.setter
+    def cascade(self, cascade):
+        """Sets the cascade of this DeleteDatabaseRequest.
+
+
+        :param cascade: The cascade of this DeleteDatabaseRequest.
+        :type cascade: bool
+        """
+        self._cascade = cascade
 
     def to_dict(self):
         """Returns the model properties as a dict"""

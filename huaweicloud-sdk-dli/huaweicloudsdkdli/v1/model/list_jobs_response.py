@@ -45,7 +45,7 @@ class ListJobsResponse(SdkResponse):
         :type message: str
         :param job_count: 作业总个数。
         :type job_count: int
-        :param jobs: 作业信息。具体参数请参见表jobs
+        :param jobs: 作业信息。
         :type jobs: list[:class:`huaweicloudsdkdli.v1.ListJobsJobs`]
         """
         
@@ -136,7 +136,7 @@ class ListJobsResponse(SdkResponse):
     def jobs(self):
         """Gets the jobs of this ListJobsResponse.
 
-        作业信息。具体参数请参见表jobs
+        作业信息。
 
         :return: The jobs of this ListJobsResponse.
         :rtype: list[:class:`huaweicloudsdkdli.v1.ListJobsJobs`]
@@ -147,7 +147,7 @@ class ListJobsResponse(SdkResponse):
     def jobs(self, jobs):
         """Sets the jobs of this ListJobsResponse.
 
-        作业信息。具体参数请参见表jobs
+        作业信息。
 
         :param jobs: The jobs of this ListJobsResponse.
         :type jobs: list[:class:`huaweicloudsdkdli.v1.ListJobsJobs`]

@@ -48,8 +48,7 @@ class UploadGroupPackageReq:
         self.discriminator = None
 
         self.paths = paths
-        if group is not None:
-            self.group = group
+        self.group = group
 
     @property
     def paths(self):

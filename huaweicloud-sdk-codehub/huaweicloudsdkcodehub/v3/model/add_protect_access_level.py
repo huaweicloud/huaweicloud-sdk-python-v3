@@ -35,9 +35,9 @@ class AddProtectAccessLevel:
 
         The model defined in huaweicloud sdk
 
-        :param push_access_level: 提交权限
+        :param push_access_level: 提交权限 0:任何人不允许提交，30:开发者及管理员可提交，40:管理员可提交
         :type push_access_level: int
-        :param merge_access_level: 合并权限
+        :param merge_access_level: 合并权限 0:任何人不允许合并，30:开发者及管理员可合并，40:管理员可合并,合并权限必须大于等于提交权限
         :type merge_access_level: int
         """
         
@@ -54,7 +54,7 @@ class AddProtectAccessLevel:
     def push_access_level(self):
         """Gets the push_access_level of this AddProtectAccessLevel.
 
-        提交权限
+        提交权限 0:任何人不允许提交，30:开发者及管理员可提交，40:管理员可提交
 
         :return: The push_access_level of this AddProtectAccessLevel.
         :rtype: int
@@ -65,7 +65,7 @@ class AddProtectAccessLevel:
     def push_access_level(self, push_access_level):
         """Sets the push_access_level of this AddProtectAccessLevel.
 
-        提交权限
+        提交权限 0:任何人不允许提交，30:开发者及管理员可提交，40:管理员可提交
 
         :param push_access_level: The push_access_level of this AddProtectAccessLevel.
         :type push_access_level: int
@@ -76,7 +76,7 @@ class AddProtectAccessLevel:
     def merge_access_level(self):
         """Gets the merge_access_level of this AddProtectAccessLevel.
 
-        合并权限
+        合并权限 0:任何人不允许合并，30:开发者及管理员可合并，40:管理员可合并,合并权限必须大于等于提交权限
 
         :return: The merge_access_level of this AddProtectAccessLevel.
         :rtype: int
@@ -87,7 +87,7 @@ class AddProtectAccessLevel:
     def merge_access_level(self, merge_access_level):
         """Sets the merge_access_level of this AddProtectAccessLevel.
 
-        合并权限
+        合并权限 0:任何人不允许合并，30:开发者及管理员可合并，40:管理员可合并,合并权限必须大于等于提交权限
 
         :param merge_access_level: The merge_access_level of this AddProtectAccessLevel.
         :type merge_access_level: int

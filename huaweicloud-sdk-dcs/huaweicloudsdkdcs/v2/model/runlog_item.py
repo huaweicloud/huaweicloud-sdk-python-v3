@@ -26,7 +26,8 @@ class RunlogItem:
         'group_name': 'str',
         'replication_ip': 'str',
         'status': 'str',
-        'time': 'str'
+        'time': 'str',
+        'backup_id': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class RunlogItem:
         'group_name': 'group_name',
         'replication_ip': 'replication_ip',
         'status': 'status',
-        'time': 'time'
+        'time': 'time',
+        'backup_id': 'backupId'
     }
 
-    def __init__(self, id=None, file_name=None, group_name=None, replication_ip=None, status=None, time=None):
+    def __init__(self, id=None, file_name=None, group_name=None, replication_ip=None, status=None, time=None, backup_id=None):
         """RunlogItem
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class RunlogItem:
         :type status: str
         :param time: 运行日志采集的日期，格式为\&quot;yyyy-MM-dd\&quot;
         :type time: str
+        :param backup_id: 日志文件的ID
+        :type backup_id: str
         """
         
         
@@ -65,6 +69,7 @@ class RunlogItem:
         self._replication_ip = None
         self._status = None
         self._time = None
+        self._backup_id = None
         self.discriminator = None
 
         if id is not None:
@@ -79,6 +84,8 @@ class RunlogItem:
             self.status = status
         if time is not None:
             self.time = time
+        if backup_id is not None:
+            self.backup_id = backup_id
 
     @property
     def id(self):
@@ -211,6 +218,28 @@ class RunlogItem:
         :type time: str
         """
         self._time = time
+
+    @property
+    def backup_id(self):
+        """Gets the backup_id of this RunlogItem.
+
+        日志文件的ID
+
+        :return: The backup_id of this RunlogItem.
+        :rtype: str
+        """
+        return self._backup_id
+
+    @backup_id.setter
+    def backup_id(self, backup_id):
+        """Sets the backup_id of this RunlogItem.
+
+        日志文件的ID
+
+        :param backup_id: The backup_id of this RunlogItem.
+        :type backup_id: str
+        """
+        self._backup_id = backup_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

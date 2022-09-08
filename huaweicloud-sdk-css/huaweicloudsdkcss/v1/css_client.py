@@ -3517,7 +3517,7 @@ class CssClient(Client):
         return self.update_close_kibana_with_http_info(request)
 
     def update_close_kibana_with_http_info(self, request):
-        all_params = ['cluster_id']
+        all_params = ['cluster_id', 'close_kibana_public_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3536,6 +3536,8 @@ class CssClient(Client):
         form_params = {}
 
         body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 

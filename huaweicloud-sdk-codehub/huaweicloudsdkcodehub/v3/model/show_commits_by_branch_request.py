@@ -41,7 +41,7 @@ class ShowCommitsByBranchRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 仓库组名
+        :param group_name: 仓库组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
         :type group_name: str
         :param page_index: 分页索引
         :type page_index: int
@@ -74,7 +74,7 @@ class ShowCommitsByBranchRequest:
     def group_name(self):
         """Gets the group_name of this ShowCommitsByBranchRequest.
 
-        仓库组名
+        仓库组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
         :return: The group_name of this ShowCommitsByBranchRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class ShowCommitsByBranchRequest:
     def group_name(self, group_name):
         """Sets the group_name of this ShowCommitsByBranchRequest.
 
-        仓库组名
+        仓库组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
         :param group_name: The group_name of this ShowCommitsByBranchRequest.
         :type group_name: str

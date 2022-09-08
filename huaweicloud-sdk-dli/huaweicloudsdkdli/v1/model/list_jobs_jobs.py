@@ -37,7 +37,9 @@ class ListJobsJobs:
         'with_column_header': 'bool',
         'detail': 'str',
         'statement': 'str',
-        'tags': 'list[JobsTags]'
+        'tags': 'list[TmsTagEntity]',
+        'message': 'str',
+        'end_time': 'int'
     }
 
     attribute_map = {
@@ -57,10 +59,12 @@ class ListJobsJobs:
         'with_column_header': 'with_column_header',
         'detail': 'detail',
         'statement': 'statement',
-        'tags': 'tags'
+        'tags': 'tags',
+        'message': 'message',
+        'end_time': 'end_time'
     }
 
-    def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, with_column_header=None, detail=None, statement=None, tags=None):
+    def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, with_column_header=None, detail=None, statement=None, tags=None, message=None, end_time=None):
         """ListJobsJobs
 
         The model defined in huaweicloud sdk
@@ -97,8 +101,12 @@ class ListJobsJobs:
         :type detail: str
         :param statement: 作业执行的SQL语句。
         :type statement: str
-        :param tags: 作业标签。具体请参考表tags。
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :param tags: 作业标签
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :param message: 系统提示信息。
+        :type message: str
+        :param end_time: 作业结束的时间。是单位为“毫秒”的时间戳。
+        :type end_time: int
         """
         
         
@@ -120,6 +128,8 @@ class ListJobsJobs:
         self._detail = None
         self._statement = None
         self._tags = None
+        self._message = None
+        self._end_time = None
         self.discriminator = None
 
         self.job_id = job_id
@@ -146,6 +156,10 @@ class ListJobsJobs:
         self.statement = statement
         if tags is not None:
             self.tags = tags
+        if message is not None:
+            self.message = message
+        if end_time is not None:
+            self.end_time = end_time
 
     @property
     def job_id(self):
@@ -503,10 +517,10 @@ class ListJobsJobs:
     def tags(self):
         """Gets the tags of this ListJobsJobs.
 
-        作业标签。具体请参考表tags。
+        作业标签
 
         :return: The tags of this ListJobsJobs.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         return self._tags
 
@@ -514,12 +528,56 @@ class ListJobsJobs:
     def tags(self, tags):
         """Sets the tags of this ListJobsJobs.
 
-        作业标签。具体请参考表tags。
+        作业标签
 
         :param tags: The tags of this ListJobsJobs.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         self._tags = tags
+
+    @property
+    def message(self):
+        """Gets the message of this ListJobsJobs.
+
+        系统提示信息。
+
+        :return: The message of this ListJobsJobs.
+        :rtype: str
+        """
+        return self._message
+
+    @message.setter
+    def message(self, message):
+        """Sets the message of this ListJobsJobs.
+
+        系统提示信息。
+
+        :param message: The message of this ListJobsJobs.
+        :type message: str
+        """
+        self._message = message
+
+    @property
+    def end_time(self):
+        """Gets the end_time of this ListJobsJobs.
+
+        作业结束的时间。是单位为“毫秒”的时间戳。
+
+        :return: The end_time of this ListJobsJobs.
+        :rtype: int
+        """
+        return self._end_time
+
+    @end_time.setter
+    def end_time(self, end_time):
+        """Sets the end_time of this ListJobsJobs.
+
+        作业结束的时间。是单位为“毫秒”的时间戳。
+
+        :param end_time: The end_time of this ListJobsJobs.
+        :type end_time: int
+        """
+        self._end_time = end_time
 
     def to_dict(self):
         """Returns the model properties as a dict"""

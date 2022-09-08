@@ -24,7 +24,6 @@ import importlib
 import logging
 import re
 import sys
-from concurrent.futures import ThreadPoolExecutor
 from logging.handlers import RotatingFileHandler
 
 import six
@@ -370,13 +369,11 @@ class Client(object):
         if "Authorization" not in header_params:
             future_request = self._credentials.process_auth_request(sdk_request, self._http_client)
         else:
-            executor = ThreadPoolExecutor(max_workers=8)
-            future_request = executor.submit(lambda req: req, sdk_request)
+            future_request = self._http_client.executor.submit(lambda: sdk_request)
 
         if async_request:
-            executor = ThreadPoolExecutor(max_workers=8)
-            future_response = executor.submit(self._do_http_request_async, future_request, response_type,
-                                              response_headers)
+            future_response = self._http_client.executor.submit(self._do_http_request_async, future_request,
+                                                                response_type, response_headers)
             return FutureSdkResponse(future_response, self._logger)
         else:
             request = future_request.result()

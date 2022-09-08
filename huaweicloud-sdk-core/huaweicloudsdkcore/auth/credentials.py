@@ -21,7 +21,6 @@
 import re
 import os
 from abc import abstractmethod
-from concurrent.futures import ThreadPoolExecutor
 
 from huaweicloudsdkcore.auth.internal import Iam, Metadata
 from huaweicloudsdkcore.exceptions.exceptions import ApiValueError, ServiceResponseException
@@ -124,9 +123,7 @@ class Credentials(DerivedCredentials, TempCredentials, FederalCredentials):
         elif self._need_update_security_token():
             self.update_security_token_from_metadata()
 
-        executor = ThreadPoolExecutor(max_workers=8)
-        future = executor.submit(self.sign_request, request)
-        return future
+        return http_client.executor.submit(self.sign_request, request)
 
     def sign_request(self, request):
         if self._auth_token:

@@ -18,6 +18,7 @@ from huaweicloudsdkcss.v1.model.bind_public_req import BindPublicReq
 from huaweicloudsdkcss.v1.model.bind_public_req_eip import BindPublicReqEip
 from huaweicloudsdkcss.v1.model.bind_public_req_eip_band_width import BindPublicReqEipBandWidth
 from huaweicloudsdkcss.v1.model.bind_public_req_eip_req import BindPublicReqEipReq
+from huaweicloudsdkcss.v1.model.close_kibana_public_req import CloseKibanaPublicReq
 from huaweicloudsdkcss.v1.model.cluster_detail_datastore import ClusterDetailDatastore
 from huaweicloudsdkcss.v1.model.cluster_detail_failed_reasons import ClusterDetailFailedReasons
 from huaweicloudsdkcss.v1.model.cluster_detail_instances import ClusterDetailInstances

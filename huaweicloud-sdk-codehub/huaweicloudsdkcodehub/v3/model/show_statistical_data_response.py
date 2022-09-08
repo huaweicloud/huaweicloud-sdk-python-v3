@@ -21,225 +21,105 @@ class ShowStatisticalDataResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'repo_name': 'str',
-        'commit_count': 'int',
-        'repo_size': 'str',
-        'last_commit_time': 'str',
-        'code_lines': 'int',
-        'branch_count': 'int',
-        'archive_url': 'str'
+        'error': 'Error',
+        'result': 'RepositoryStatisticsVO',
+        'status': 'str'
     }
 
     attribute_map = {
-        'repo_name': 'repoName',
-        'commit_count': 'commitCount',
-        'repo_size': 'repoSize',
-        'last_commit_time': 'lastCommitTime',
-        'code_lines': 'codeLines',
-        'branch_count': 'branchCount',
-        'archive_url': 'archiveUrl'
+        'error': 'error',
+        'result': 'result',
+        'status': 'status'
     }
 
-    def __init__(self, repo_name=None, commit_count=None, repo_size=None, last_commit_time=None, code_lines=None, branch_count=None, archive_url=None):
+    def __init__(self, error=None, result=None, status=None):
         """ShowStatisticalDataResponse
 
         The model defined in huaweicloud sdk
 
-        :param repo_name: 仓库名称
-        :type repo_name: str
-        :param commit_count: 提交次数
-        :type commit_count: int
-        :param repo_size: 仓库容量
-        :type repo_size: str
-        :param last_commit_time: 最近一次提交时间
-        :type last_commit_time: str
-        :param code_lines: 代码行数
-        :type code_lines: int
-        :param branch_count: 分支数量
-        :type branch_count: int
-        :param archive_url: 代码仓下载地址
-        :type archive_url: str
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.RepositoryStatisticsVO`
+        :param status: 响应状态
+        :type status: str
         """
         
         super(ShowStatisticalDataResponse, self).__init__()
 
-        self._repo_name = None
-        self._commit_count = None
-        self._repo_size = None
-        self._last_commit_time = None
-        self._code_lines = None
-        self._branch_count = None
-        self._archive_url = None
+        self._error = None
+        self._result = None
+        self._status = None
         self.discriminator = None
 
-        if repo_name is not None:
-            self.repo_name = repo_name
-        if commit_count is not None:
-            self.commit_count = commit_count
-        if repo_size is not None:
-            self.repo_size = repo_size
-        if last_commit_time is not None:
-            self.last_commit_time = last_commit_time
-        if code_lines is not None:
-            self.code_lines = code_lines
-        if branch_count is not None:
-            self.branch_count = branch_count
-        if archive_url is not None:
-            self.archive_url = archive_url
+        if error is not None:
+            self.error = error
+        if result is not None:
+            self.result = result
+        if status is not None:
+            self.status = status
 
     @property
-    def repo_name(self):
-        """Gets the repo_name of this ShowStatisticalDataResponse.
+    def error(self):
+        """Gets the error of this ShowStatisticalDataResponse.
 
-        仓库名称
 
-        :return: The repo_name of this ShowStatisticalDataResponse.
+        :return: The error of this ShowStatisticalDataResponse.
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
+        """
+        return self._error
+
+    @error.setter
+    def error(self, error):
+        """Sets the error of this ShowStatisticalDataResponse.
+
+
+        :param error: The error of this ShowStatisticalDataResponse.
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        """
+        self._error = error
+
+    @property
+    def result(self):
+        """Gets the result of this ShowStatisticalDataResponse.
+
+
+        :return: The result of this ShowStatisticalDataResponse.
+        :rtype: :class:`huaweicloudsdkcodehub.v3.RepositoryStatisticsVO`
+        """
+        return self._result
+
+    @result.setter
+    def result(self, result):
+        """Sets the result of this ShowStatisticalDataResponse.
+
+
+        :param result: The result of this ShowStatisticalDataResponse.
+        :type result: :class:`huaweicloudsdkcodehub.v3.RepositoryStatisticsVO`
+        """
+        self._result = result
+
+    @property
+    def status(self):
+        """Gets the status of this ShowStatisticalDataResponse.
+
+        响应状态
+
+        :return: The status of this ShowStatisticalDataResponse.
         :rtype: str
         """
-        return self._repo_name
+        return self._status
 
-    @repo_name.setter
-    def repo_name(self, repo_name):
-        """Sets the repo_name of this ShowStatisticalDataResponse.
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ShowStatisticalDataResponse.
 
-        仓库名称
+        响应状态
 
-        :param repo_name: The repo_name of this ShowStatisticalDataResponse.
-        :type repo_name: str
+        :param status: The status of this ShowStatisticalDataResponse.
+        :type status: str
         """
-        self._repo_name = repo_name
-
-    @property
-    def commit_count(self):
-        """Gets the commit_count of this ShowStatisticalDataResponse.
-
-        提交次数
-
-        :return: The commit_count of this ShowStatisticalDataResponse.
-        :rtype: int
-        """
-        return self._commit_count
-
-    @commit_count.setter
-    def commit_count(self, commit_count):
-        """Sets the commit_count of this ShowStatisticalDataResponse.
-
-        提交次数
-
-        :param commit_count: The commit_count of this ShowStatisticalDataResponse.
-        :type commit_count: int
-        """
-        self._commit_count = commit_count
-
-    @property
-    def repo_size(self):
-        """Gets the repo_size of this ShowStatisticalDataResponse.
-
-        仓库容量
-
-        :return: The repo_size of this ShowStatisticalDataResponse.
-        :rtype: str
-        """
-        return self._repo_size
-
-    @repo_size.setter
-    def repo_size(self, repo_size):
-        """Sets the repo_size of this ShowStatisticalDataResponse.
-
-        仓库容量
-
-        :param repo_size: The repo_size of this ShowStatisticalDataResponse.
-        :type repo_size: str
-        """
-        self._repo_size = repo_size
-
-    @property
-    def last_commit_time(self):
-        """Gets the last_commit_time of this ShowStatisticalDataResponse.
-
-        最近一次提交时间
-
-        :return: The last_commit_time of this ShowStatisticalDataResponse.
-        :rtype: str
-        """
-        return self._last_commit_time
-
-    @last_commit_time.setter
-    def last_commit_time(self, last_commit_time):
-        """Sets the last_commit_time of this ShowStatisticalDataResponse.
-
-        最近一次提交时间
-
-        :param last_commit_time: The last_commit_time of this ShowStatisticalDataResponse.
-        :type last_commit_time: str
-        """
-        self._last_commit_time = last_commit_time
-
-    @property
-    def code_lines(self):
-        """Gets the code_lines of this ShowStatisticalDataResponse.
-
-        代码行数
-
-        :return: The code_lines of this ShowStatisticalDataResponse.
-        :rtype: int
-        """
-        return self._code_lines
-
-    @code_lines.setter
-    def code_lines(self, code_lines):
-        """Sets the code_lines of this ShowStatisticalDataResponse.
-
-        代码行数
-
-        :param code_lines: The code_lines of this ShowStatisticalDataResponse.
-        :type code_lines: int
-        """
-        self._code_lines = code_lines
-
-    @property
-    def branch_count(self):
-        """Gets the branch_count of this ShowStatisticalDataResponse.
-
-        分支数量
-
-        :return: The branch_count of this ShowStatisticalDataResponse.
-        :rtype: int
-        """
-        return self._branch_count
-
-    @branch_count.setter
-    def branch_count(self, branch_count):
-        """Sets the branch_count of this ShowStatisticalDataResponse.
-
-        分支数量
-
-        :param branch_count: The branch_count of this ShowStatisticalDataResponse.
-        :type branch_count: int
-        """
-        self._branch_count = branch_count
-
-    @property
-    def archive_url(self):
-        """Gets the archive_url of this ShowStatisticalDataResponse.
-
-        代码仓下载地址
-
-        :return: The archive_url of this ShowStatisticalDataResponse.
-        :rtype: str
-        """
-        return self._archive_url
-
-    @archive_url.setter
-    def archive_url(self, archive_url):
-        """Sets the archive_url of this ShowStatisticalDataResponse.
-
-        代码仓下载地址
-
-        :param archive_url: The archive_url of this ShowStatisticalDataResponse.
-        :type archive_url: str
-        """
-        self._archive_url = archive_url
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

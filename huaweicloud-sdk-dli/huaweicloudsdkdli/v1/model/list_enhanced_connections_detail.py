@@ -28,8 +28,8 @@ class ListEnhancedConnectionsDetail:
         'dest_vpc_id': 'str',
         'dest_network_id': 'str',
         'create_time': 'int',
-        'is_privis': 'bool',
-        'hosts': 'list[EnhancedConnectionsHost]'
+        'hosts': 'list[EnhancedConnectionsHost]',
+        'is_privis': 'bool'
     }
 
     attribute_map = {
@@ -40,11 +40,11 @@ class ListEnhancedConnectionsDetail:
         'dest_vpc_id': 'dest_vpc_id',
         'dest_network_id': 'dest_network_id',
         'create_time': 'create_time',
-        'is_privis': 'isPrivis',
-        'hosts': 'hosts'
+        'hosts': 'hosts',
+        'is_privis': 'isPrivis'
     }
 
-    def __init__(self, id=None, name=None, status=None, available_queue_info=None, dest_vpc_id=None, dest_network_id=None, create_time=None, is_privis=None, hosts=None):
+    def __init__(self, id=None, name=None, status=None, available_queue_info=None, dest_vpc_id=None, dest_network_id=None, create_time=None, hosts=None, is_privis=None):
         """ListEnhancedConnectionsDetail
 
         The model defined in huaweicloud sdk
@@ -63,10 +63,10 @@ class ListEnhancedConnectionsDetail:
         :type dest_network_id: str
         :param create_time: 创建连接的时间。为UTC的时间戳。
         :type create_time: int
-        :param is_privis: 该增强跨源连接如果做过项目赋权，则该字段是\&quot;false\&quot;，否则为\&quot;true\&quot;。
-        :type is_privis: bool
         :param hosts: 用户自定义主机信息
         :type hosts: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionsHost`]
+        :param is_privis: 该增强跨源连接如果做过项目赋权，则该字段是\&quot;false\&quot;，否则为\&quot;true\&quot;。
+        :type is_privis: bool
         """
         
         
@@ -78,8 +78,8 @@ class ListEnhancedConnectionsDetail:
         self._dest_vpc_id = None
         self._dest_network_id = None
         self._create_time = None
-        self._is_privis = None
         self._hosts = None
+        self._is_privis = None
         self.discriminator = None
 
         if id is not None:
@@ -96,10 +96,10 @@ class ListEnhancedConnectionsDetail:
             self.dest_network_id = dest_network_id
         if create_time is not None:
             self.create_time = create_time
-        if is_privis is not None:
-            self.is_privis = is_privis
         if hosts is not None:
             self.hosts = hosts
+        if is_privis is not None:
+            self.is_privis = is_privis
 
     @property
     def id(self):
@@ -256,28 +256,6 @@ class ListEnhancedConnectionsDetail:
         self._create_time = create_time
 
     @property
-    def is_privis(self):
-        """Gets the is_privis of this ListEnhancedConnectionsDetail.
-
-        该增强跨源连接如果做过项目赋权，则该字段是\"false\"，否则为\"true\"。
-
-        :return: The is_privis of this ListEnhancedConnectionsDetail.
-        :rtype: bool
-        """
-        return self._is_privis
-
-    @is_privis.setter
-    def is_privis(self, is_privis):
-        """Sets the is_privis of this ListEnhancedConnectionsDetail.
-
-        该增强跨源连接如果做过项目赋权，则该字段是\"false\"，否则为\"true\"。
-
-        :param is_privis: The is_privis of this ListEnhancedConnectionsDetail.
-        :type is_privis: bool
-        """
-        self._is_privis = is_privis
-
-    @property
     def hosts(self):
         """Gets the hosts of this ListEnhancedConnectionsDetail.
 
@@ -298,6 +276,28 @@ class ListEnhancedConnectionsDetail:
         :type hosts: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionsHost`]
         """
         self._hosts = hosts
+
+    @property
+    def is_privis(self):
+        """Gets the is_privis of this ListEnhancedConnectionsDetail.
+
+        该增强跨源连接如果做过项目赋权，则该字段是\"false\"，否则为\"true\"。
+
+        :return: The is_privis of this ListEnhancedConnectionsDetail.
+        :rtype: bool
+        """
+        return self._is_privis
+
+    @is_privis.setter
+    def is_privis(self, is_privis):
+        """Sets the is_privis of this ListEnhancedConnectionsDetail.
+
+        该增强跨源连接如果做过项目赋权，则该字段是\"false\"，否则为\"true\"。
+
+        :param is_privis: The is_privis of this ListEnhancedConnectionsDetail.
+        :type is_privis: bool
+        """
+        self._is_privis = is_privis
 
     def to_dict(self):
         """Returns the model properties as a dict"""

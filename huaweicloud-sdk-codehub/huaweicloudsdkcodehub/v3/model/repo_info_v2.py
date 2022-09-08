@@ -79,7 +79,7 @@ class RepoInfoV2:
         :type creator_name: str
         :param domain_name: 创建者的租户名
         :type domain_name: str
-        :param group_name: 仓库组名
+        :param group_name: 仓库组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
         :type group_name: str
         :param https_url: 使用 https 克隆仓库时所使用的 url
         :type https_url: str
@@ -99,7 +99,7 @@ class RepoInfoV2:
         :type repository_name: str
         :param repository_size: 仓库总容量 &#x3D; 仓库 LFS 容量 + git 库容量，单位为M，大于 1024M 则单位为 G
         :type repository_size: str
-        :param repository_uuid: 仓库uuid
+        :param repository_uuid: 仓库uuid(由CreateRepository接口返回)
         :type repository_uuid: str
         :param ssh_url: 使用 ssh 方式克隆仓库时所使用的 url
         :type ssh_url: str
@@ -255,7 +255,7 @@ class RepoInfoV2:
     def group_name(self):
         """Gets the group_name of this RepoInfoV2.
 
-        仓库组名
+        仓库组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
         :return: The group_name of this RepoInfoV2.
         :rtype: str
@@ -266,7 +266,7 @@ class RepoInfoV2:
     def group_name(self, group_name):
         """Sets the group_name of this RepoInfoV2.
 
-        仓库组名
+        仓库组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
         :param group_name: The group_name of this RepoInfoV2.
         :type group_name: str
@@ -475,7 +475,7 @@ class RepoInfoV2:
     def repository_uuid(self):
         """Gets the repository_uuid of this RepoInfoV2.
 
-        仓库uuid
+        仓库uuid(由CreateRepository接口返回)
 
         :return: The repository_uuid of this RepoInfoV2.
         :rtype: str
@@ -486,7 +486,7 @@ class RepoInfoV2:
     def repository_uuid(self, repository_uuid):
         """Sets the repository_uuid of this RepoInfoV2.
 
-        仓库uuid
+        仓库uuid(由CreateRepository接口返回)
 
         :param repository_uuid: The repository_uuid of this RepoInfoV2.
         :type repository_uuid: str

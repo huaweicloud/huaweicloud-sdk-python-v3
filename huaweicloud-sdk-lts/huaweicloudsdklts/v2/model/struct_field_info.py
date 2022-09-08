@@ -67,7 +67,8 @@ class StructFieldInfo:
         self._index = None
         self.discriminator = None
 
-        self.is_analysis = is_analysis
+        if is_analysis is not None:
+            self.is_analysis = is_analysis
         if content is not None:
             self.content = content
         if field_name is not None:

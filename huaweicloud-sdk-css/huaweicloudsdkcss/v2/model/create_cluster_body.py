@@ -34,7 +34,8 @@ class CreateClusterBody:
         'admin_pwd': 'str',
         'public_ip_req': 'CreateClusterPublicIpReq',
         'load_balance': 'CreateClusterLoadBalance',
-        'public_kibana_req': 'CreateClusterPublicKibanaReq'
+        'public_kibana_req': 'CreateClusterPublicKibanaReq',
+        'pay_info': 'PayInfoBody'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class CreateClusterBody:
         'admin_pwd': 'adminPwd',
         'public_ip_req': 'publicIPReq',
         'load_balance': 'loadBalance',
-        'public_kibana_req': 'publicKibanaReq'
+        'public_kibana_req': 'publicKibanaReq',
+        'pay_info': 'payInfo'
     }
 
-    def __init__(self, name=None, backup_strategy=None, roles=None, nics=None, enterprise_project_id=None, tags=None, availability_zone=None, datastore=None, authority_enable=None, https_enable=None, admin_pwd=None, public_ip_req=None, load_balance=None, public_kibana_req=None):
+    def __init__(self, name=None, backup_strategy=None, roles=None, nics=None, enterprise_project_id=None, tags=None, availability_zone=None, datastore=None, authority_enable=None, https_enable=None, admin_pwd=None, public_ip_req=None, load_balance=None, public_kibana_req=None, pay_info=None):
         """CreateClusterBody
 
         The model defined in huaweicloud sdk
@@ -79,7 +81,7 @@ class CreateClusterBody:
         :type authority_enable: bool
         :param https_enable: 设置是否进行通信加密。取值范围为true或false。默认关闭通信加密功能。当httpsEnable设置为true时，authorityEnable字段需要设置为true。  - true：表示集群进行通信加密。 - false：表示集群不进行通信加密。  &gt;此参数只有6.5.4及之后版本支持。
         :type https_enable: bool
-        :param admin_pwd: 安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时需要设置此参数。。 - 参数范围：8~32个字符。 - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&amp;*()-_&#x3D;|[{}];:,&lt;.&gt;/?
+        :param admin_pwd: 安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时需要设置此参数。 - 参数范围：8~32个字符。 - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&amp;*()-_&#x3D;|[{}];:,&lt;.&gt;/?
         :type admin_pwd: str
         :param public_ip_req: 
         :type public_ip_req: :class:`huaweicloudsdkcss.v2.CreateClusterPublicIpReq`
@@ -87,6 +89,8 @@ class CreateClusterBody:
         :type load_balance: :class:`huaweicloudsdkcss.v2.CreateClusterLoadBalance`
         :param public_kibana_req: 
         :type public_kibana_req: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaReq`
+        :param pay_info: 
+        :type pay_info: :class:`huaweicloudsdkcss.v2.PayInfoBody`
         """
         
         
@@ -105,6 +109,7 @@ class CreateClusterBody:
         self._public_ip_req = None
         self._load_balance = None
         self._public_kibana_req = None
+        self._pay_info = None
         self.discriminator = None
 
         self.name = name
@@ -131,6 +136,8 @@ class CreateClusterBody:
             self.load_balance = load_balance
         if public_kibana_req is not None:
             self.public_kibana_req = public_kibana_req
+        if pay_info is not None:
+            self.pay_info = pay_info
 
     @property
     def name(self):
@@ -348,7 +355,7 @@ class CreateClusterBody:
     def admin_pwd(self):
         """Gets the admin_pwd of this CreateClusterBody.
 
-        安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时需要设置此参数。。 - 参数范围：8~32个字符。 - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&*()-_=|[{}];:,<.>/?
+        安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时需要设置此参数。 - 参数范围：8~32个字符。 - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&*()-_=|[{}];:,<.>/?
 
         :return: The admin_pwd of this CreateClusterBody.
         :rtype: str
@@ -359,7 +366,7 @@ class CreateClusterBody:
     def admin_pwd(self, admin_pwd):
         """Sets the admin_pwd of this CreateClusterBody.
 
-        安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时需要设置此参数。。 - 参数范围：8~32个字符。 - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&*()-_=|[{}];:,<.>/?
+        安全模式下集群管理员admin的密码，只有在创建集群时authorityEnable设置为true时需要设置此参数。 - 参数范围：8~32个字符。 - 参数要求：密码至少包含大写字母，小写字母，数字、特殊字符四类中的三类，其中可输入的特殊字符为：~!@#$%&*()-_=|[{}];:,<.>/?
 
         :param admin_pwd: The admin_pwd of this CreateClusterBody.
         :type admin_pwd: str
@@ -425,6 +432,26 @@ class CreateClusterBody:
         :type public_kibana_req: :class:`huaweicloudsdkcss.v2.CreateClusterPublicKibanaReq`
         """
         self._public_kibana_req = public_kibana_req
+
+    @property
+    def pay_info(self):
+        """Gets the pay_info of this CreateClusterBody.
+
+
+        :return: The pay_info of this CreateClusterBody.
+        :rtype: :class:`huaweicloudsdkcss.v2.PayInfoBody`
+        """
+        return self._pay_info
+
+    @pay_info.setter
+    def pay_info(self, pay_info):
+        """Sets the pay_info of this CreateClusterBody.
+
+
+        :param pay_info: The pay_info of this CreateClusterBody.
+        :type pay_info: :class:`huaweicloudsdkcss.v2.PayInfoBody`
+        """
+        self._pay_info = pay_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

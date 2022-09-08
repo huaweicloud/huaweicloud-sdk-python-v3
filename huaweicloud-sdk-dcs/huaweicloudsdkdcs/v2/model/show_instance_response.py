@@ -67,7 +67,18 @@ class ShowInstanceResponse(SdkResponse):
         'transparent_client_ip_enable': 'bool',
         'sub_status': 'str',
         'tags': 'list[ResourceTag]',
-        'cpu_type': 'str'
+        'cpu_type': 'str',
+        'enterprise_project_name': 'str',
+        'update_at': 'str',
+        'product_type': 'str',
+        'storage_type': 'str',
+        'launched_at': 'str',
+        'cache_mode': 'str',
+        'support_slow_log_flag': 'str',
+        'db_number': 'int',
+        'replica_count': 'int',
+        'sharding_count': 'int',
+        'bandwidth_info': 'BandwidthInfo'
     }
 
     attribute_map = {
@@ -117,10 +128,21 @@ class ShowInstanceResponse(SdkResponse):
         'transparent_client_ip_enable': 'transparent_client_ip_enable',
         'sub_status': 'sub_status',
         'tags': 'tags',
-        'cpu_type': 'cpu_type'
+        'cpu_type': 'cpu_type',
+        'enterprise_project_name': 'enterprise_project_name',
+        'update_at': 'update_at',
+        'product_type': 'product_type',
+        'storage_type': 'storage_type',
+        'launched_at': 'launched_at',
+        'cache_mode': 'cache_mode',
+        'support_slow_log_flag': 'support_slow_log_flag',
+        'db_number': 'db_number',
+        'replica_count': 'replica_count',
+        'sharding_count': 'sharding_count',
+        'bandwidth_info': 'bandwidth_info'
     }
 
-    def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, readonly_domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None, features=None, domain_name_info=None, transparent_client_ip_enable=None, sub_status=None, tags=None, cpu_type=None):
+    def __init__(self, vpc_name=None, charging_mode=None, vpc_id=None, user_name=None, created_at=None, description=None, security_group_id=None, security_group_name=None, max_memory=None, used_memory=None, capacity=None, capacity_minor=None, maintain_begin=None, maintain_end=None, engine=None, no_password_access=None, ip=None, instance_backup_policy=None, az_codes=None, access_user=None, instance_id=None, port=None, user_id=None, name=None, spec_code=None, subnet_id=None, subnet_name=None, subnet_cidr=None, engine_version=None, order_id=None, status=None, domain_name=None, readonly_domain_name=None, enable_publicip=None, publicip_id=None, publicip_address=None, enable_ssl=None, service_upgrade=None, service_task_id=None, enterprise_project_id=None, backend_addrs=None, features=None, domain_name_info=None, transparent_client_ip_enable=None, sub_status=None, tags=None, cpu_type=None, enterprise_project_name=None, update_at=None, product_type=None, storage_type=None, launched_at=None, cache_mode=None, support_slow_log_flag=None, db_number=None, replica_count=None, sharding_count=None, bandwidth_info=None):
         """ShowInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -219,6 +241,28 @@ class ShowInstanceResponse(SdkResponse):
         :type tags: list[:class:`huaweicloudsdkdcs.v2.ResourceTag`]
         :param cpu_type: 实例CPU类型，通常为x86_64或aarch64
         :type cpu_type: str
+        :param enterprise_project_name: 企业项目名称。
+        :type enterprise_project_name: str
+        :param update_at: 更新时间，形如2022-07-06T09:32:16.502Z
+        :type update_at: str
+        :param product_type: 版本类型：社区版、企业版
+        :type product_type: str
+        :param storage_type: 存储类型：内存存储
+        :type storage_type: str
+        :param launched_at: 启动时间，形如2022-07-06T09:32:16.502Z
+        :type launched_at: str
+        :param cache_mode: 缓存类型：单机类型，主备类型，主备读写分离，Proxy集群类型，原生集群类型
+        :type cache_mode: str
+        :param support_slow_log_flag: 是否支持慢日志
+        :type support_slow_log_flag: str
+        :param db_number: 数据库数量
+        :type db_number: int
+        :param replica_count: 副本数
+        :type replica_count: int
+        :param sharding_count: 集群实例分片个数
+        :type sharding_count: int
+        :param bandwidth_info: 
+        :type bandwidth_info: :class:`huaweicloudsdkdcs.v2.BandwidthInfo`
         """
         
         super(ShowInstanceResponse, self).__init__()
@@ -270,6 +314,17 @@ class ShowInstanceResponse(SdkResponse):
         self._sub_status = None
         self._tags = None
         self._cpu_type = None
+        self._enterprise_project_name = None
+        self._update_at = None
+        self._product_type = None
+        self._storage_type = None
+        self._launched_at = None
+        self._cache_mode = None
+        self._support_slow_log_flag = None
+        self._db_number = None
+        self._replica_count = None
+        self._sharding_count = None
+        self._bandwidth_info = None
         self.discriminator = None
 
         if vpc_name is not None:
@@ -366,6 +421,28 @@ class ShowInstanceResponse(SdkResponse):
             self.tags = tags
         if cpu_type is not None:
             self.cpu_type = cpu_type
+        if enterprise_project_name is not None:
+            self.enterprise_project_name = enterprise_project_name
+        if update_at is not None:
+            self.update_at = update_at
+        if product_type is not None:
+            self.product_type = product_type
+        if storage_type is not None:
+            self.storage_type = storage_type
+        if launched_at is not None:
+            self.launched_at = launched_at
+        if cache_mode is not None:
+            self.cache_mode = cache_mode
+        if support_slow_log_flag is not None:
+            self.support_slow_log_flag = support_slow_log_flag
+        if db_number is not None:
+            self.db_number = db_number
+        if replica_count is not None:
+            self.replica_count = replica_count
+        if sharding_count is not None:
+            self.sharding_count = sharding_count
+        if bandwidth_info is not None:
+            self.bandwidth_info = bandwidth_info
 
     @property
     def vpc_name(self):
@@ -1394,6 +1471,246 @@ class ShowInstanceResponse(SdkResponse):
         :type cpu_type: str
         """
         self._cpu_type = cpu_type
+
+    @property
+    def enterprise_project_name(self):
+        """Gets the enterprise_project_name of this ShowInstanceResponse.
+
+        企业项目名称。
+
+        :return: The enterprise_project_name of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._enterprise_project_name
+
+    @enterprise_project_name.setter
+    def enterprise_project_name(self, enterprise_project_name):
+        """Sets the enterprise_project_name of this ShowInstanceResponse.
+
+        企业项目名称。
+
+        :param enterprise_project_name: The enterprise_project_name of this ShowInstanceResponse.
+        :type enterprise_project_name: str
+        """
+        self._enterprise_project_name = enterprise_project_name
+
+    @property
+    def update_at(self):
+        """Gets the update_at of this ShowInstanceResponse.
+
+        更新时间，形如2022-07-06T09:32:16.502Z
+
+        :return: The update_at of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._update_at
+
+    @update_at.setter
+    def update_at(self, update_at):
+        """Sets the update_at of this ShowInstanceResponse.
+
+        更新时间，形如2022-07-06T09:32:16.502Z
+
+        :param update_at: The update_at of this ShowInstanceResponse.
+        :type update_at: str
+        """
+        self._update_at = update_at
+
+    @property
+    def product_type(self):
+        """Gets the product_type of this ShowInstanceResponse.
+
+        版本类型：社区版、企业版
+
+        :return: The product_type of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._product_type
+
+    @product_type.setter
+    def product_type(self, product_type):
+        """Sets the product_type of this ShowInstanceResponse.
+
+        版本类型：社区版、企业版
+
+        :param product_type: The product_type of this ShowInstanceResponse.
+        :type product_type: str
+        """
+        self._product_type = product_type
+
+    @property
+    def storage_type(self):
+        """Gets the storage_type of this ShowInstanceResponse.
+
+        存储类型：内存存储
+
+        :return: The storage_type of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._storage_type
+
+    @storage_type.setter
+    def storage_type(self, storage_type):
+        """Sets the storage_type of this ShowInstanceResponse.
+
+        存储类型：内存存储
+
+        :param storage_type: The storage_type of this ShowInstanceResponse.
+        :type storage_type: str
+        """
+        self._storage_type = storage_type
+
+    @property
+    def launched_at(self):
+        """Gets the launched_at of this ShowInstanceResponse.
+
+        启动时间，形如2022-07-06T09:32:16.502Z
+
+        :return: The launched_at of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._launched_at
+
+    @launched_at.setter
+    def launched_at(self, launched_at):
+        """Sets the launched_at of this ShowInstanceResponse.
+
+        启动时间，形如2022-07-06T09:32:16.502Z
+
+        :param launched_at: The launched_at of this ShowInstanceResponse.
+        :type launched_at: str
+        """
+        self._launched_at = launched_at
+
+    @property
+    def cache_mode(self):
+        """Gets the cache_mode of this ShowInstanceResponse.
+
+        缓存类型：单机类型，主备类型，主备读写分离，Proxy集群类型，原生集群类型
+
+        :return: The cache_mode of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._cache_mode
+
+    @cache_mode.setter
+    def cache_mode(self, cache_mode):
+        """Sets the cache_mode of this ShowInstanceResponse.
+
+        缓存类型：单机类型，主备类型，主备读写分离，Proxy集群类型，原生集群类型
+
+        :param cache_mode: The cache_mode of this ShowInstanceResponse.
+        :type cache_mode: str
+        """
+        self._cache_mode = cache_mode
+
+    @property
+    def support_slow_log_flag(self):
+        """Gets the support_slow_log_flag of this ShowInstanceResponse.
+
+        是否支持慢日志
+
+        :return: The support_slow_log_flag of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._support_slow_log_flag
+
+    @support_slow_log_flag.setter
+    def support_slow_log_flag(self, support_slow_log_flag):
+        """Sets the support_slow_log_flag of this ShowInstanceResponse.
+
+        是否支持慢日志
+
+        :param support_slow_log_flag: The support_slow_log_flag of this ShowInstanceResponse.
+        :type support_slow_log_flag: str
+        """
+        self._support_slow_log_flag = support_slow_log_flag
+
+    @property
+    def db_number(self):
+        """Gets the db_number of this ShowInstanceResponse.
+
+        数据库数量
+
+        :return: The db_number of this ShowInstanceResponse.
+        :rtype: int
+        """
+        return self._db_number
+
+    @db_number.setter
+    def db_number(self, db_number):
+        """Sets the db_number of this ShowInstanceResponse.
+
+        数据库数量
+
+        :param db_number: The db_number of this ShowInstanceResponse.
+        :type db_number: int
+        """
+        self._db_number = db_number
+
+    @property
+    def replica_count(self):
+        """Gets the replica_count of this ShowInstanceResponse.
+
+        副本数
+
+        :return: The replica_count of this ShowInstanceResponse.
+        :rtype: int
+        """
+        return self._replica_count
+
+    @replica_count.setter
+    def replica_count(self, replica_count):
+        """Sets the replica_count of this ShowInstanceResponse.
+
+        副本数
+
+        :param replica_count: The replica_count of this ShowInstanceResponse.
+        :type replica_count: int
+        """
+        self._replica_count = replica_count
+
+    @property
+    def sharding_count(self):
+        """Gets the sharding_count of this ShowInstanceResponse.
+
+        集群实例分片个数
+
+        :return: The sharding_count of this ShowInstanceResponse.
+        :rtype: int
+        """
+        return self._sharding_count
+
+    @sharding_count.setter
+    def sharding_count(self, sharding_count):
+        """Sets the sharding_count of this ShowInstanceResponse.
+
+        集群实例分片个数
+
+        :param sharding_count: The sharding_count of this ShowInstanceResponse.
+        :type sharding_count: int
+        """
+        self._sharding_count = sharding_count
+
+    @property
+    def bandwidth_info(self):
+        """Gets the bandwidth_info of this ShowInstanceResponse.
+
+
+        :return: The bandwidth_info of this ShowInstanceResponse.
+        :rtype: :class:`huaweicloudsdkdcs.v2.BandwidthInfo`
+        """
+        return self._bandwidth_info
+
+    @bandwidth_info.setter
+    def bandwidth_info(self, bandwidth_info):
+        """Sets the bandwidth_info of this ShowInstanceResponse.
+
+
+        :param bandwidth_info: The bandwidth_info of this ShowInstanceResponse.
+        :type bandwidth_info: :class:`huaweicloudsdkdcs.v2.BandwidthInfo`
+        """
+        self._bandwidth_info = bandwidth_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

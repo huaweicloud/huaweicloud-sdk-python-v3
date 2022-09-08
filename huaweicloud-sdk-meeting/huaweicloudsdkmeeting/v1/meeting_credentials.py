@@ -2,7 +2,6 @@ import base64
 import datetime
 import json
 import time
-from concurrent.futures.thread import ThreadPoolExecutor
 
 import six
 import uuid
@@ -84,10 +83,8 @@ class MeetingCredentials(Credentials):
         pass
 
     def process_auth_request(self, request, http_client, executor=None):
-        if executor is None:
-            executor = ThreadPoolExecutor(max_workers=1)
-        future = executor.submit(self.process_request, request, http_client)
-        return future
+        executor = http_client.executor if executor is None else executor
+        return executor.submit(self.process_request, request, http_client)
 
     def process_request(self, request, http_client):
         now_time = datetime.datetime.now()

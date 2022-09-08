@@ -6,6 +6,8 @@ from __future__ import absolute_import
 from huaweicloudsdkcdn.v1.cdn_client import CdnClient
 from huaweicloudsdkcdn.v1.cdn_async_client import CdnAsyncClient
 # import models into sdk package
+from huaweicloudsdkcdn.v1.model.batch_delete_tags_request import BatchDeleteTagsRequest
+from huaweicloudsdkcdn.v1.model.batch_delete_tags_response import BatchDeleteTagsResponse
 from huaweicloudsdkcdn.v1.model.black_white_list_body import BlackWhiteListBody
 from huaweicloudsdkcdn.v1.model.cache_config import CacheConfig
 from huaweicloudsdkcdn.v1.model.cache_config_request import CacheConfigRequest
@@ -26,8 +28,12 @@ from huaweicloudsdkcdn.v1.model.create_preheating_tasks_request import CreatePre
 from huaweicloudsdkcdn.v1.model.create_preheating_tasks_response import CreatePreheatingTasksResponse
 from huaweicloudsdkcdn.v1.model.create_refresh_tasks_request import CreateRefreshTasksRequest
 from huaweicloudsdkcdn.v1.model.create_refresh_tasks_response import CreateRefreshTasksResponse
+from huaweicloudsdkcdn.v1.model.create_tags_request import CreateTagsRequest
+from huaweicloudsdkcdn.v1.model.create_tags_request_body import CreateTagsRequestBody
+from huaweicloudsdkcdn.v1.model.create_tags_response import CreateTagsResponse
 from huaweicloudsdkcdn.v1.model.delete_domain_request import DeleteDomainRequest
 from huaweicloudsdkcdn.v1.model.delete_domain_response import DeleteDomainResponse
+from huaweicloudsdkcdn.v1.model.delete_tags_request_body import DeleteTagsRequestBody
 from huaweicloudsdkcdn.v1.model.disable_domain_request import DisableDomainRequest
 from huaweicloudsdkcdn.v1.model.disable_domain_response import DisableDomainResponse
 from huaweicloudsdkcdn.v1.model.domain_body import DomainBody
@@ -39,6 +45,7 @@ from huaweicloudsdkcdn.v1.model.domains import Domains
 from huaweicloudsdkcdn.v1.model.domains_with_port import DomainsWithPort
 from huaweicloudsdkcdn.v1.model.enable_domain_request import EnableDomainRequest
 from huaweicloudsdkcdn.v1.model.enable_domain_response import EnableDomainResponse
+from huaweicloudsdkcdn.v1.model.error_code_cache import ErrorCodeCache
 from huaweicloudsdkcdn.v1.model.follow302_status_body import Follow302StatusBody
 from huaweicloudsdkcdn.v1.model.follow302_status_request import Follow302StatusRequest
 from huaweicloudsdkcdn.v1.model.force_redirect import ForceRedirect
@@ -55,6 +62,7 @@ from huaweicloudsdkcdn.v1.model.https_detail import HttpsDetail
 from huaweicloudsdkcdn.v1.model.list_domains_request import ListDomainsRequest
 from huaweicloudsdkcdn.v1.model.list_domains_response import ListDomainsResponse
 from huaweicloudsdkcdn.v1.model.log_object import LogObject
+from huaweicloudsdkcdn.v1.model.map import Map
 from huaweicloudsdkcdn.v1.model.modify_domain_config_request_body import ModifyDomainConfigRequestBody
 from huaweicloudsdkcdn.v1.model.origin_host_body import OriginHostBody
 from huaweicloudsdkcdn.v1.model.origin_host_request import OriginHostRequest
@@ -108,6 +116,8 @@ from huaweicloudsdkcdn.v1.model.show_refer_request import ShowReferRequest
 from huaweicloudsdkcdn.v1.model.show_refer_response import ShowReferResponse
 from huaweicloudsdkcdn.v1.model.show_response_header_request import ShowResponseHeaderRequest
 from huaweicloudsdkcdn.v1.model.show_response_header_response import ShowResponseHeaderResponse
+from huaweicloudsdkcdn.v1.model.show_tags_request import ShowTagsRequest
+from huaweicloudsdkcdn.v1.model.show_tags_response import ShowTagsResponse
 from huaweicloudsdkcdn.v1.model.show_top_url_request import ShowTopUrlRequest
 from huaweicloudsdkcdn.v1.model.show_top_url_response import ShowTopUrlResponse
 from huaweicloudsdkcdn.v1.model.show_url_task_info_request import ShowUrlTaskInfoRequest

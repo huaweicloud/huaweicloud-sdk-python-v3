@@ -43,7 +43,7 @@ class CreateClusterRolesBody:
         :type flavor_ref: str
         :param volume: 
         :type volume: :class:`huaweicloudsdkcss.v2.CreateClusterInstanceVolumeBody`
-        :param type: 实例类型(选择实例类型时应至少选择一个ess类型)。例如，  - ess-master对应Master节点。 - ess-client对应Clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。
+        :param type: 实例类型(选择实例类型时应至少选择一个ess类型)。例如，  - ess-master对应Master节点。 - ess-client对应clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。
         :type type: str
         :param instance_num: 实例个数。 - ess节点，选择范围：1~32个节点数量。    - 若同时选择ess和ess-master时，可以选择1~200个节点数量。    - 若同时选择ess和ess-client时，可以选择1~32个节点数量。    - 若同时选择ess和ess-cold时，可以选择1~32个节点数量。 - ess-master节点，选择范围：3~10内的奇数个节点数量。 - ess-client节点，选择范围：1~32个节点数量。 - ess-cold节点，选择范围：1~32个节点数量。
         :type instance_num: int
@@ -108,7 +108,7 @@ class CreateClusterRolesBody:
     def type(self):
         """Gets the type of this CreateClusterRolesBody.
 
-        实例类型(选择实例类型时应至少选择一个ess类型)。例如，  - ess-master对应Master节点。 - ess-client对应Clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。
+        实例类型(选择实例类型时应至少选择一个ess类型)。例如，  - ess-master对应Master节点。 - ess-client对应clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。
 
         :return: The type of this CreateClusterRolesBody.
         :rtype: str
@@ -119,7 +119,7 @@ class CreateClusterRolesBody:
     def type(self, type):
         """Sets the type of this CreateClusterRolesBody.
 
-        实例类型(选择实例类型时应至少选择一个ess类型)。例如，  - ess-master对应Master节点。 - ess-client对应Clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。
+        实例类型(选择实例类型时应至少选择一个ess类型)。例如，  - ess-master对应Master节点。 - ess-client对应clinet节点。 - ess-cold对应冷数据节点。 - ess对应数据节点。
 
         :param type: The type of this CreateClusterRolesBody.
         :type type: str

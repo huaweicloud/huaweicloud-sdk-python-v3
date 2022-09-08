@@ -34,7 +34,8 @@ class CreateBatchJobResponse(SdkResponse):
         'kind': 'str',
         'queue': 'str',
         'image': 'str',
-        'update_time': 'int'
+        'update_time': 'int',
+        'duration': 'int'
     }
 
     attribute_map = {
@@ -51,10 +52,11 @@ class CreateBatchJobResponse(SdkResponse):
         'kind': 'kind',
         'queue': 'queue',
         'image': 'image',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'duration': 'duration'
     }
 
-    def __init__(self, id=None, state=None, app_id=None, log=None, sc_type=None, cluster_name=None, create_time=None, name=None, owner=None, proxy_user=None, kind=None, queue=None, image=None, update_time=None):
+    def __init__(self, id=None, state=None, app_id=None, log=None, sc_type=None, cluster_name=None, create_time=None, name=None, owner=None, proxy_user=None, kind=None, queue=None, image=None, update_time=None, duration=None):
         """CreateBatchJobResponse
 
         The model defined in huaweicloud sdk
@@ -87,6 +89,8 @@ class CreateBatchJobResponse(SdkResponse):
         :type image: str
         :param update_time: 更新时间
         :type update_time: int
+        :param duration: 作业运行时长，单位毫秒。
+        :type duration: int
         """
         
         super(CreateBatchJobResponse, self).__init__()
@@ -105,6 +109,7 @@ class CreateBatchJobResponse(SdkResponse):
         self._queue = None
         self._image = None
         self._update_time = None
+        self._duration = None
         self.discriminator = None
 
         if id is not None:
@@ -135,6 +140,8 @@ class CreateBatchJobResponse(SdkResponse):
             self.image = image
         if update_time is not None:
             self.update_time = update_time
+        if duration is not None:
+            self.duration = duration
 
     @property
     def id(self):
@@ -443,6 +450,28 @@ class CreateBatchJobResponse(SdkResponse):
         :type update_time: int
         """
         self._update_time = update_time
+
+    @property
+    def duration(self):
+        """Gets the duration of this CreateBatchJobResponse.
+
+        作业运行时长，单位毫秒。
+
+        :return: The duration of this CreateBatchJobResponse.
+        :rtype: int
+        """
+        return self._duration
+
+    @duration.setter
+    def duration(self, duration):
+        """Sets the duration of this CreateBatchJobResponse.
+
+        作业运行时长，单位毫秒。
+
+        :param duration: The duration of this CreateBatchJobResponse.
+        :type duration: int
+        """
+        self._duration = duration
 
     def to_dict(self):
         """Returns the model properties as a dict"""

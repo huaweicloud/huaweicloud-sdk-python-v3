@@ -39,7 +39,7 @@ class ShowJobStatusResponse(SdkResponse):
         'is_success': 'bool',
         'message': 'str',
         'job_mode': 'str',
-        'tags': 'list[JobsTags]'
+        'tags': 'list[TmsTagEntity]'
     }
 
     attribute_map = {
@@ -105,8 +105,8 @@ class ShowJobStatusResponse(SdkResponse):
         :type message: str
         :param job_mode: 作业执行方式
         :type job_mode: str
-        :param tags: 作业的标签。具体请参考表tags
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :param tags: 作业标签
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         
         super(ShowJobStatusResponse, self).__init__()
@@ -571,10 +571,10 @@ class ShowJobStatusResponse(SdkResponse):
     def tags(self):
         """Gets the tags of this ShowJobStatusResponse.
 
-        作业的标签。具体请参考表tags
+        作业标签
 
         :return: The tags of this ShowJobStatusResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         return self._tags
 
@@ -582,10 +582,10 @@ class ShowJobStatusResponse(SdkResponse):
     def tags(self, tags):
         """Sets the tags of this ShowJobStatusResponse.
 
-        作业的标签。具体请参考表tags
+        作业标签
 
         :param tags: The tags of this ShowJobStatusResponse.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         self._tags = tags
 

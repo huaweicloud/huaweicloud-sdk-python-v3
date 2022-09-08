@@ -22,15 +22,17 @@ class CreateLogStreamParams:
 
     openapi_types = {
         'log_stream_name': 'str',
-        'enterprise_project_name': 'str'
+        'enterprise_project_name': 'str',
+        'ttl_in_days': 'int'
     }
 
     attribute_map = {
         'log_stream_name': 'log_stream_name',
-        'enterprise_project_name': 'enterprise_project_name'
+        'enterprise_project_name': 'enterprise_project_name',
+        'ttl_in_days': 'ttl_in_days'
     }
 
-    def __init__(self, log_stream_name=None, enterprise_project_name=None):
+    def __init__(self, log_stream_name=None, enterprise_project_name=None, ttl_in_days=None):
         """CreateLogStreamParams
 
         The model defined in huaweicloud sdk
@@ -39,17 +41,22 @@ class CreateLogStreamParams:
         :type log_stream_name: str
         :param enterprise_project_name: 企业项目名称。
         :type enterprise_project_name: str
+        :param ttl_in_days: 日志存储时间（天），取值范围：1-365。
+        :type ttl_in_days: int
         """
         
         
 
         self._log_stream_name = None
         self._enterprise_project_name = None
+        self._ttl_in_days = None
         self.discriminator = None
 
         self.log_stream_name = log_stream_name
         if enterprise_project_name is not None:
             self.enterprise_project_name = enterprise_project_name
+        if ttl_in_days is not None:
+            self.ttl_in_days = ttl_in_days
 
     @property
     def log_stream_name(self):
@@ -94,6 +101,28 @@ class CreateLogStreamParams:
         :type enterprise_project_name: str
         """
         self._enterprise_project_name = enterprise_project_name
+
+    @property
+    def ttl_in_days(self):
+        """Gets the ttl_in_days of this CreateLogStreamParams.
+
+        日志存储时间（天），取值范围：1-365。
+
+        :return: The ttl_in_days of this CreateLogStreamParams.
+        :rtype: int
+        """
+        return self._ttl_in_days
+
+    @ttl_in_days.setter
+    def ttl_in_days(self, ttl_in_days):
+        """Sets the ttl_in_days of this CreateLogStreamParams.
+
+        日志存储时间（天），取值范围：1-365。
+
+        :param ttl_in_days: The ttl_in_days of this CreateLogStreamParams.
+        :type ttl_in_days: int
+        """
+        self._ttl_in_days = ttl_in_days
 
     def to_dict(self):
         """Returns the model properties as a dict"""

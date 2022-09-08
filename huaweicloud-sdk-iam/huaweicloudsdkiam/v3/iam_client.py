@@ -41,12 +41,12 @@ class IamClient(Client):
     @classmethod
     def new_builder(cls, clazz=None):
         if clazz is None:
-            return ClientBuilder(cls, "GlobalCredentials,BasicCredentials")
+            return ClientBuilder(cls, "GlobalCredentials,BasicCredentials,IamCredentials")
 
         if clazz.__name__ != "IamClient":
             raise TypeError("client type error, support client type is IamClient")
 
-        return ClientBuilder(clazz, "GlobalCredentials,BasicCredentials")
+        return ClientBuilder(clazz, "GlobalCredentials,BasicCredentials,IamCredentials")
 
     def associate_agency_with_all_projects_permission(self, request):
         """为委托授予所有项目服务权限

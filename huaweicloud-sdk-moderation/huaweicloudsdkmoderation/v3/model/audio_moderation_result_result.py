@@ -22,7 +22,7 @@ class AudioModerationResultResult:
 
     openapi_types = {
         'suggestion': 'str',
-        'details': 'list[AudioModerationResultResultDetails]',
+        'details': 'list[AudioModerationResultDetail]',
         'audio_text': 'str'
     }
 
@@ -40,7 +40,7 @@ class AudioModerationResultResult:
         :param suggestion: 音频审核结果是否通过。 block：包含敏感信息，不通过 pass：不包含敏感信息，通过 review：需要人工复检
         :type suggestion: str
         :param details: 审核详情
-        :type details: list[:class:`huaweicloudsdkmoderation.v3.AudioModerationResultResultDetails`]
+        :type details: list[:class:`huaweicloudsdkmoderation.v3.AudioModerationResultDetail`]
         :param audio_text: 音频文本内容
         :type audio_text: str
         """
@@ -88,7 +88,7 @@ class AudioModerationResultResult:
         审核详情
 
         :return: The details of this AudioModerationResultResult.
-        :rtype: list[:class:`huaweicloudsdkmoderation.v3.AudioModerationResultResultDetails`]
+        :rtype: list[:class:`huaweicloudsdkmoderation.v3.AudioModerationResultDetail`]
         """
         return self._details
 
@@ -99,7 +99,7 @@ class AudioModerationResultResult:
         审核详情
 
         :param details: The details of this AudioModerationResultResult.
-        :type details: list[:class:`huaweicloudsdkmoderation.v3.AudioModerationResultResultDetails`]
+        :type details: list[:class:`huaweicloudsdkmoderation.v3.AudioModerationResultDetail`]
         """
         self._details = details
 

@@ -32,7 +32,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
         'cluster_name': 'str',
         'service': 'str',
         'create_time': 'int',
-        'available_queue_info': 'list[ShowDatasourceConnectionRespAvailableQueueInfo]'
+        'queue_list': 'list[str]'
     }
 
     attribute_map = {
@@ -47,10 +47,10 @@ class ShowDatasourceConnectionResponse(SdkResponse):
         'cluster_name': 'cluster_name',
         'service': 'service',
         'create_time': 'create_time',
-        'available_queue_info': 'available_queue_info'
+        'queue_list': 'queueList'
     }
 
-    def __init__(self, is_success=None, message=None, connection_id=None, destination=None, state=None, process=None, name=None, connection_url=None, cluster_name=None, service=None, create_time=None, available_queue_info=None):
+    def __init__(self, is_success=None, message=None, connection_id=None, destination=None, state=None, process=None, name=None, connection_url=None, cluster_name=None, service=None, create_time=None, queue_list=None):
         """ShowDatasourceConnectionResponse
 
         The model defined in huaweicloud sdk
@@ -77,8 +77,8 @@ class ShowDatasourceConnectionResponse(SdkResponse):
         :type service: str
         :param create_time: 创建连接的时间。为UTC的时间戳。
         :type create_time: int
-        :param available_queue_info: 各个队列创建跨源连接的信息，详细信息请参考表available_queue_info参数说明。
-        :type available_queue_info: list[:class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionRespAvailableQueueInfo`]
+        :param queue_list: 当前跨源已绑定的队列名
+        :type queue_list: list[str]
         """
         
         super(ShowDatasourceConnectionResponse, self).__init__()
@@ -94,7 +94,7 @@ class ShowDatasourceConnectionResponse(SdkResponse):
         self._cluster_name = None
         self._service = None
         self._create_time = None
-        self._available_queue_info = None
+        self._queue_list = None
         self.discriminator = None
 
         if is_success is not None:
@@ -119,8 +119,8 @@ class ShowDatasourceConnectionResponse(SdkResponse):
             self.service = service
         if create_time is not None:
             self.create_time = create_time
-        if available_queue_info is not None:
-            self.available_queue_info = available_queue_info
+        if queue_list is not None:
+            self.queue_list = queue_list
 
     @property
     def is_success(self):
@@ -365,26 +365,26 @@ class ShowDatasourceConnectionResponse(SdkResponse):
         self._create_time = create_time
 
     @property
-    def available_queue_info(self):
-        """Gets the available_queue_info of this ShowDatasourceConnectionResponse.
+    def queue_list(self):
+        """Gets the queue_list of this ShowDatasourceConnectionResponse.
 
-        各个队列创建跨源连接的信息，详细信息请参考表available_queue_info参数说明。
+        当前跨源已绑定的队列名
 
-        :return: The available_queue_info of this ShowDatasourceConnectionResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionRespAvailableQueueInfo`]
+        :return: The queue_list of this ShowDatasourceConnectionResponse.
+        :rtype: list[str]
         """
-        return self._available_queue_info
+        return self._queue_list
 
-    @available_queue_info.setter
-    def available_queue_info(self, available_queue_info):
-        """Sets the available_queue_info of this ShowDatasourceConnectionResponse.
+    @queue_list.setter
+    def queue_list(self, queue_list):
+        """Sets the queue_list of this ShowDatasourceConnectionResponse.
 
-        各个队列创建跨源连接的信息，详细信息请参考表available_queue_info参数说明。
+        当前跨源已绑定的队列名
 
-        :param available_queue_info: The available_queue_info of this ShowDatasourceConnectionResponse.
-        :type available_queue_info: list[:class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionRespAvailableQueueInfo`]
+        :param queue_list: The queue_list of this ShowDatasourceConnectionResponse.
+        :type queue_list: list[str]
         """
-        self._available_queue_info = available_queue_info
+        self._queue_list = queue_list
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -21,7 +21,7 @@ class ListQueuesRespQueues:
     sensitive_list = []
 
     openapi_types = {
-        'queue_id': 'str',
+        'queue_id': 'int',
         'queue_name': 'str',
         'description': 'str',
         'owner': 'str',
@@ -37,13 +37,9 @@ class ListQueuesRespQueues:
         'resource_mode': 'int',
         'platform': 'str',
         'is_restarting': 'bool',
-        'labels': 'list[str]',
+        'labels': 'str',
         'feature': 'str',
-        'queue_resource_type': 'str',
-        'cu_spec': 'int',
-        'cu_scale_out_limit': 'int',
-        'cu_scale_in_limit': 'int',
-        'elastic_resource_pool_name': 'str'
+        'resource_type': 'str'
     }
 
     attribute_map = {
@@ -65,20 +61,16 @@ class ListQueuesRespQueues:
         'is_restarting': 'is_restarting',
         'labels': 'labels',
         'feature': 'feature',
-        'queue_resource_type': 'queue_resource_type',
-        'cu_spec': 'cu_spec',
-        'cu_scale_out_limit': 'cu_scale_out_limit',
-        'cu_scale_in_limit': 'cu_scale_in_limit',
-        'elastic_resource_pool_name': 'elastic_resource_pool_name'
+        'resource_type': 'resource_type'
     }
 
-    def __init__(self, queue_id=None, queue_name=None, description=None, owner=None, create_time=None, queue_type=None, cu_count=None, charging_mode=None, resource_id=None, enterprise_project_id=None, cidr_in_vpc=None, cidr_in_mgntsubnet=None, cidr_in_subnet=None, resource_mode=None, platform=None, is_restarting=None, labels=None, feature=None, queue_resource_type=None, cu_spec=None, cu_scale_out_limit=None, cu_scale_in_limit=None, elastic_resource_pool_name=None):
+    def __init__(self, queue_id=None, queue_name=None, description=None, owner=None, create_time=None, queue_type=None, cu_count=None, charging_mode=None, resource_id=None, enterprise_project_id=None, cidr_in_vpc=None, cidr_in_mgntsubnet=None, cidr_in_subnet=None, resource_mode=None, platform=None, is_restarting=None, labels=None, feature=None, resource_type=None):
         """ListQueuesRespQueues
 
         The model defined in huaweicloud sdk
 
         :param queue_id: 队列ID。
-        :type queue_id: str
+        :type queue_id: int
         :param queue_name: 队列名称。
         :type queue_name: str
         :param description: 队列描述信息。
@@ -110,19 +102,11 @@ class ListQueuesRespQueues:
         :param is_restarting: 是否重启队列。默认值为“false”。
         :type is_restarting: bool
         :param labels: 创建队列的标签信息，目前包括队列是否跨AZ的标签信息的Json字符串。目前只支持值为“2”，即创建两个队列
-        :type labels: list[str]
+        :type labels: str
         :param feature: 队列特性。支持以下两种类型：basic：基础型ai：AI增强型（仅SQL的x86_64专属队列支持选择）默认值为“basic”。
         :type feature: str
-        :param queue_resource_type: 队列所属资源类型。
-        :type queue_resource_type: str
-        :param cu_spec: 队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值。
-        :type cu_spec: int
-        :param cu_scale_out_limit: 当前队列弹性扩缩容的CU值上限。
-        :type cu_scale_out_limit: int
-        :param cu_scale_in_limit: 当前队列弹性扩缩容的CU值下限。
-        :type cu_scale_in_limit: int
-        :param elastic_resource_pool_name: 弹性资源池名称。
-        :type elastic_resource_pool_name: str
+        :param resource_type: 队列所属资源类型。
+        :type resource_type: str
         """
         
         
@@ -145,11 +129,7 @@ class ListQueuesRespQueues:
         self._is_restarting = None
         self._labels = None
         self._feature = None
-        self._queue_resource_type = None
-        self._cu_spec = None
-        self._cu_scale_out_limit = None
-        self._cu_scale_in_limit = None
-        self._elastic_resource_pool_name = None
+        self._resource_type = None
         self.discriminator = None
 
         if queue_id is not None:
@@ -188,16 +168,8 @@ class ListQueuesRespQueues:
             self.labels = labels
         if feature is not None:
             self.feature = feature
-        if queue_resource_type is not None:
-            self.queue_resource_type = queue_resource_type
-        if cu_spec is not None:
-            self.cu_spec = cu_spec
-        if cu_scale_out_limit is not None:
-            self.cu_scale_out_limit = cu_scale_out_limit
-        if cu_scale_in_limit is not None:
-            self.cu_scale_in_limit = cu_scale_in_limit
-        if elastic_resource_pool_name is not None:
-            self.elastic_resource_pool_name = elastic_resource_pool_name
+        if resource_type is not None:
+            self.resource_type = resource_type
 
     @property
     def queue_id(self):
@@ -206,7 +178,7 @@ class ListQueuesRespQueues:
         队列ID。
 
         :return: The queue_id of this ListQueuesRespQueues.
-        :rtype: str
+        :rtype: int
         """
         return self._queue_id
 
@@ -217,7 +189,7 @@ class ListQueuesRespQueues:
         队列ID。
 
         :param queue_id: The queue_id of this ListQueuesRespQueues.
-        :type queue_id: str
+        :type queue_id: int
         """
         self._queue_id = queue_id
 
@@ -558,7 +530,7 @@ class ListQueuesRespQueues:
         创建队列的标签信息，目前包括队列是否跨AZ的标签信息的Json字符串。目前只支持值为“2”，即创建两个队列
 
         :return: The labels of this ListQueuesRespQueues.
-        :rtype: list[str]
+        :rtype: str
         """
         return self._labels
 
@@ -569,7 +541,7 @@ class ListQueuesRespQueues:
         创建队列的标签信息，目前包括队列是否跨AZ的标签信息的Json字符串。目前只支持值为“2”，即创建两个队列
 
         :param labels: The labels of this ListQueuesRespQueues.
-        :type labels: list[str]
+        :type labels: str
         """
         self._labels = labels
 
@@ -596,114 +568,26 @@ class ListQueuesRespQueues:
         self._feature = feature
 
     @property
-    def queue_resource_type(self):
-        """Gets the queue_resource_type of this ListQueuesRespQueues.
+    def resource_type(self):
+        """Gets the resource_type of this ListQueuesRespQueues.
 
         队列所属资源类型。
 
-        :return: The queue_resource_type of this ListQueuesRespQueues.
+        :return: The resource_type of this ListQueuesRespQueues.
         :rtype: str
         """
-        return self._queue_resource_type
+        return self._resource_type
 
-    @queue_resource_type.setter
-    def queue_resource_type(self, queue_resource_type):
-        """Sets the queue_resource_type of this ListQueuesRespQueues.
+    @resource_type.setter
+    def resource_type(self, resource_type):
+        """Sets the resource_type of this ListQueuesRespQueues.
 
         队列所属资源类型。
 
-        :param queue_resource_type: The queue_resource_type of this ListQueuesRespQueues.
-        :type queue_resource_type: str
+        :param resource_type: The resource_type of this ListQueuesRespQueues.
+        :type resource_type: str
         """
-        self._queue_resource_type = queue_resource_type
-
-    @property
-    def cu_spec(self):
-        """Gets the cu_spec of this ListQueuesRespQueues.
-
-        队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值。
-
-        :return: The cu_spec of this ListQueuesRespQueues.
-        :rtype: int
-        """
-        return self._cu_spec
-
-    @cu_spec.setter
-    def cu_spec(self, cu_spec):
-        """Sets the cu_spec of this ListQueuesRespQueues.
-
-        队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值。
-
-        :param cu_spec: The cu_spec of this ListQueuesRespQueues.
-        :type cu_spec: int
-        """
-        self._cu_spec = cu_spec
-
-    @property
-    def cu_scale_out_limit(self):
-        """Gets the cu_scale_out_limit of this ListQueuesRespQueues.
-
-        当前队列弹性扩缩容的CU值上限。
-
-        :return: The cu_scale_out_limit of this ListQueuesRespQueues.
-        :rtype: int
-        """
-        return self._cu_scale_out_limit
-
-    @cu_scale_out_limit.setter
-    def cu_scale_out_limit(self, cu_scale_out_limit):
-        """Sets the cu_scale_out_limit of this ListQueuesRespQueues.
-
-        当前队列弹性扩缩容的CU值上限。
-
-        :param cu_scale_out_limit: The cu_scale_out_limit of this ListQueuesRespQueues.
-        :type cu_scale_out_limit: int
-        """
-        self._cu_scale_out_limit = cu_scale_out_limit
-
-    @property
-    def cu_scale_in_limit(self):
-        """Gets the cu_scale_in_limit of this ListQueuesRespQueues.
-
-        当前队列弹性扩缩容的CU值下限。
-
-        :return: The cu_scale_in_limit of this ListQueuesRespQueues.
-        :rtype: int
-        """
-        return self._cu_scale_in_limit
-
-    @cu_scale_in_limit.setter
-    def cu_scale_in_limit(self, cu_scale_in_limit):
-        """Sets the cu_scale_in_limit of this ListQueuesRespQueues.
-
-        当前队列弹性扩缩容的CU值下限。
-
-        :param cu_scale_in_limit: The cu_scale_in_limit of this ListQueuesRespQueues.
-        :type cu_scale_in_limit: int
-        """
-        self._cu_scale_in_limit = cu_scale_in_limit
-
-    @property
-    def elastic_resource_pool_name(self):
-        """Gets the elastic_resource_pool_name of this ListQueuesRespQueues.
-
-        弹性资源池名称。
-
-        :return: The elastic_resource_pool_name of this ListQueuesRespQueues.
-        :rtype: str
-        """
-        return self._elastic_resource_pool_name
-
-    @elastic_resource_pool_name.setter
-    def elastic_resource_pool_name(self, elastic_resource_pool_name):
-        """Sets the elastic_resource_pool_name of this ListQueuesRespQueues.
-
-        弹性资源池名称。
-
-        :param elastic_resource_pool_name: The elastic_resource_pool_name of this ListQueuesRespQueues.
-        :type elastic_resource_pool_name: str
-        """
-        self._elastic_resource_pool_name = elastic_resource_pool_name
+        self._resource_type = resource_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -30,7 +30,8 @@ class Configs:
         'force_redirect': 'ForceRedirectConfig',
         'compress': 'Compress',
         'cache_url_parameter_filter': 'CacheUrlParameterFilter',
-        'ipv6_accelerate': 'int'
+        'ipv6_accelerate': 'int',
+        'error_code_cache': 'ErrorCodeCache'
     }
 
     attribute_map = {
@@ -43,10 +44,11 @@ class Configs:
         'force_redirect': 'force_redirect',
         'compress': 'compress',
         'cache_url_parameter_filter': 'cache_url_parameter_filter',
-        'ipv6_accelerate': 'ipv6_accelerate'
+        'ipv6_accelerate': 'ipv6_accelerate',
+        'error_code_cache': 'error_code_cache'
     }
 
-    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None):
+    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None):
         """Configs
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class Configs:
         :type cache_url_parameter_filter: :class:`huaweicloudsdkcdn.v1.CacheUrlParameterFilter`
         :param ipv6_accelerate: ipv6设置（1：打开；0：关闭）
         :type ipv6_accelerate: int
+        :param error_code_cache: 
+        :type error_code_cache: :class:`huaweicloudsdkcdn.v1.ErrorCodeCache`
         """
         
         
@@ -85,6 +89,7 @@ class Configs:
         self._compress = None
         self._cache_url_parameter_filter = None
         self._ipv6_accelerate = None
+        self._error_code_cache = None
         self.discriminator = None
 
         if origin_request_header is not None:
@@ -107,6 +112,8 @@ class Configs:
             self.cache_url_parameter_filter = cache_url_parameter_filter
         if ipv6_accelerate is not None:
             self.ipv6_accelerate = ipv6_accelerate
+        if error_code_cache is not None:
+            self.error_code_cache = error_code_cache
 
     @property
     def origin_request_header(self):
@@ -317,6 +324,26 @@ class Configs:
         :type ipv6_accelerate: int
         """
         self._ipv6_accelerate = ipv6_accelerate
+
+    @property
+    def error_code_cache(self):
+        """Gets the error_code_cache of this Configs.
+
+
+        :return: The error_code_cache of this Configs.
+        :rtype: :class:`huaweicloudsdkcdn.v1.ErrorCodeCache`
+        """
+        return self._error_code_cache
+
+    @error_code_cache.setter
+    def error_code_cache(self, error_code_cache):
+        """Sets the error_code_cache of this Configs.
+
+
+        :param error_code_cache: The error_code_cache of this Configs.
+        :type error_code_cache: :class:`huaweicloudsdkcdn.v1.ErrorCodeCache`
+        """
+        self._error_code_cache = error_code_cache
 
     def to_dict(self):
         """Returns the model properties as a dict"""

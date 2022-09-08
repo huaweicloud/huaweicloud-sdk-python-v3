@@ -23,7 +23,7 @@ class ListDatasourceConnectionsResponse(SdkResponse):
     openapi_types = {
         'is_success': 'bool',
         'message': 'str',
-        'connections': 'list[ShowDatasourceConnectionResps]',
+        'connections': 'list[ShowDatasourceConnectionResp]',
         'count': 'int'
     }
 
@@ -44,7 +44,7 @@ class ListDatasourceConnectionsResponse(SdkResponse):
         :param message: 系统提示信息，执行成功时，信息可能为空。
         :type message: str
         :param connections: 跨源连接信息列表。
-        :type connections: list[:class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionResps`]
+        :type connections: list[:class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionResp`]
         :param count: 总数
         :type count: int
         """
@@ -117,7 +117,7 @@ class ListDatasourceConnectionsResponse(SdkResponse):
         跨源连接信息列表。
 
         :return: The connections of this ListDatasourceConnectionsResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionResps`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionResp`]
         """
         return self._connections
 
@@ -128,7 +128,7 @@ class ListDatasourceConnectionsResponse(SdkResponse):
         跨源连接信息列表。
 
         :param connections: The connections of this ListDatasourceConnectionsResponse.
-        :type connections: list[:class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionResps`]
+        :type connections: list[:class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionResp`]
         """
         self._connections = connections
 

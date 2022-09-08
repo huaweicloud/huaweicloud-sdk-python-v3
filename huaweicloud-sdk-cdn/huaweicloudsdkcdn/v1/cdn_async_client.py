@@ -48,6 +48,64 @@ class CdnAsyncClient(Client):
 
         return ClientBuilder(clazz, "GlobalCredentials")
 
+    def batch_delete_tags_async(self, request):
+        """删除资源标签配置接口
+
+        用于删除资源标签
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchDeleteTags
+        :type request: :class:`huaweicloudsdkcdn.v1.BatchDeleteTagsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v1.BatchDeleteTagsResponse`
+        """
+        return self.batch_delete_tags_with_http_info(request)
+
+    def batch_delete_tags_with_http_info(self, request):
+        all_params = ['batch_delete_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/cdn/configuration/tags/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDeleteTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_domain_async(self, request):
         """创建加速域名
 
@@ -221,6 +279,64 @@ class CdnAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateRefreshTasksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_tags_async(self, request):
+        """创建资源标签配置接口
+
+        用于创建资源标签
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateTags
+        :type request: :class:`huaweicloudsdkcdn.v1.CreateTagsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v1.CreateTagsResponse`
+        """
+        return self.create_tags_with_http_info(request)
+
+    def create_tags_with_http_info(self, request):
+        all_params = ['create_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/cdn/configuration/tags',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1664,6 +1780,64 @@ class CdnAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowResponseHeaderResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_tags_async(self, request):
+        """查询资源标签列表配置接口
+
+        用于查询资源标签列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowTags
+        :type request: :class:`huaweicloudsdkcdn.v1.ShowTagsRequest`
+        :rtype: :class:`huaweicloudsdkcdn.v1.ShowTagsResponse`
+        """
+        return self.show_tags_with_http_info(request)
+
+    def show_tags_with_http_info(self, request):
+        all_params = ['resource_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/cdn/configuration/tags',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowTagsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

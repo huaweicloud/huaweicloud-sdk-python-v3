@@ -11,6 +11,7 @@ from huaweicloudsdkdcs.v2.model.backup_instance_body import BackupInstanceBody
 from huaweicloudsdkdcs.v2.model.backup_plan import BackupPlan
 from huaweicloudsdkdcs.v2.model.backup_policy import BackupPolicy
 from huaweicloudsdkdcs.v2.model.backup_record_response import BackupRecordResponse
+from huaweicloudsdkdcs.v2.model.bandwidth_info import BandwidthInfo
 from huaweicloudsdkdcs.v2.model.batch_create_or_delete_tags_request import BatchCreateOrDeleteTagsRequest
 from huaweicloudsdkdcs.v2.model.batch_create_or_delete_tags_response import BatchCreateOrDeleteTagsResponse
 from huaweicloudsdkdcs.v2.model.batch_delete_body import BatchDeleteBody

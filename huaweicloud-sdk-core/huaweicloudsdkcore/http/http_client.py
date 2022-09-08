@@ -28,6 +28,7 @@ from requests.exceptions import ConnectionError
 from requests.packages.urllib3.util import Retry
 from requests_futures.sessions import FuturesSession
 from urllib3.exceptions import SSLError, NewConnectionError
+from concurrent.futures import ThreadPoolExecutor
 
 from huaweicloudsdkcore.exceptions import exceptions
 
@@ -55,6 +56,8 @@ class HttpClient(object):
         self._retry_status_list = [429]
         self._session = self._init_session()
 
+        self._executor = ThreadPoolExecutor(max_workers=8)
+
     def _init_session(self):
         sdk_session = requests.Session()
         sdk_adapter = HTTPAdapter(pool_connections=self._pool_connections, pool_maxsize=self._pool_maxsize,
@@ -62,6 +65,10 @@ class HttpClient(object):
         sdk_session.mount('https://', sdk_adapter)
         sdk_session.mount('http://', sdk_adapter)
         return sdk_session
+
+    @property
+    def executor(self):
+        return self._executor
 
     def do_request_sync(self, request):
         fun = getattr(self._session, request.method.lower())

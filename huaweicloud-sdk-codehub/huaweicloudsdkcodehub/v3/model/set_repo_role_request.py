@@ -39,7 +39,7 @@ class SetRepoRoleRequest:
 
         :param member_id: 用户id
         :type member_id: str
-        :param repository_uuid: 仓库uuid
+        :param repository_uuid: 仓库uuid(由CreateRepository接口返回)
         :type repository_uuid: str
         :param body: Body of the SetRepoRoleRequest
         :type body: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleRequestBody`
@@ -83,7 +83,7 @@ class SetRepoRoleRequest:
     def repository_uuid(self):
         """Gets the repository_uuid of this SetRepoRoleRequest.
 
-        仓库uuid
+        仓库uuid(由CreateRepository接口返回)
 
         :return: The repository_uuid of this SetRepoRoleRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class SetRepoRoleRequest:
     def repository_uuid(self, repository_uuid):
         """Sets the repository_uuid of this SetRepoRoleRequest.
 
-        仓库uuid
+        仓库uuid(由CreateRepository接口返回)
 
         :param repository_uuid: The repository_uuid of this SetRepoRoleRequest.
         :type repository_uuid: str

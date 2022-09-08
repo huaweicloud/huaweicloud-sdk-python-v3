@@ -45,7 +45,7 @@ class CreateFlinkdefinedJobsReq:
         'resume_max_num': 'int',
         'checkpoint_path': 'str',
         'runtime_config': 'str',
-        'tags': 'list[JobsTags]'
+        'tags': 'list[TmsTagEntity]'
     }
 
     attribute_map = {
@@ -129,8 +129,8 @@ class CreateFlinkdefinedJobsReq:
         :type checkpoint_path: str
         :param runtime_config: Flink作业运行时自定义优化参数。
         :type runtime_config: str
-        :param tags: Flink jar作业的标签。具体请参考表tags。
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         
         
@@ -744,10 +744,10 @@ class CreateFlinkdefinedJobsReq:
     def tags(self):
         """Gets the tags of this CreateFlinkdefinedJobsReq.
 
-        Flink jar作业的标签。具体请参考表tags。
+        标签
 
         :return: The tags of this CreateFlinkdefinedJobsReq.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         return self._tags
 
@@ -755,10 +755,10 @@ class CreateFlinkdefinedJobsReq:
     def tags(self, tags):
         """Sets the tags of this CreateFlinkdefinedJobsReq.
 
-        Flink jar作业的标签。具体请参考表tags。
+        标签
 
         :param tags: The tags of this CreateFlinkdefinedJobsReq.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         self._tags = tags
 

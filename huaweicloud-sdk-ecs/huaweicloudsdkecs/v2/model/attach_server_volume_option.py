@@ -24,6 +24,7 @@ class AttachServerVolumeOption:
         'device': 'str',
         'volume_id': 'str',
         'volume_type': 'str',
+        'count': 'int',
         'hwpassthrough': 'str'
     }
 
@@ -31,10 +32,11 @@ class AttachServerVolumeOption:
         'device': 'device',
         'volume_id': 'volumeId',
         'volume_type': 'volume_type',
+        'count': 'count',
         'hwpassthrough': 'hw:passthrough'
     }
 
-    def __init__(self, device=None, volume_id=None, volume_type=None, hwpassthrough=None):
+    def __init__(self, device=None, volume_id=None, volume_type=None, count=None, hwpassthrough=None):
         """AttachServerVolumeOption
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class AttachServerVolumeOption:
         :type volume_id: str
         :param volume_type: 云硬盘类型。  该字段于dry_run为true并且volumeId不存在时有效且为必选字段。
         :type volume_type: str
+        :param count: 云硬盘的个数。  该字段于dry_run为true并且volumeId不存在时有效，如果该字段不存在，默认为1。
+        :type count: int
         :param hwpassthrough: - true: 表示云硬盘的设备类型为SCSI类型，即允许ECS操作系统直接访问底层存储介质。支持SCSI锁命令 - false: 表示云硬盘的设备类型为VBD (虚拟块存储设备 , Virtual Block Device)类型，VBD只能支持简单的SCSI读写命令。 该字段于dry_run为true并且volumeId不存在时有效且为必选字段。
         :type hwpassthrough: str
         """
@@ -54,6 +58,7 @@ class AttachServerVolumeOption:
         self._device = None
         self._volume_id = None
         self._volume_type = None
+        self._count = None
         self._hwpassthrough = None
         self.discriminator = None
 
@@ -62,6 +67,8 @@ class AttachServerVolumeOption:
         self.volume_id = volume_id
         if volume_type is not None:
             self.volume_type = volume_type
+        if count is not None:
+            self.count = count
         if hwpassthrough is not None:
             self.hwpassthrough = hwpassthrough
 
@@ -130,6 +137,28 @@ class AttachServerVolumeOption:
         :type volume_type: str
         """
         self._volume_type = volume_type
+
+    @property
+    def count(self):
+        """Gets the count of this AttachServerVolumeOption.
+
+        云硬盘的个数。  该字段于dry_run为true并且volumeId不存在时有效，如果该字段不存在，默认为1。
+
+        :return: The count of this AttachServerVolumeOption.
+        :rtype: int
+        """
+        return self._count
+
+    @count.setter
+    def count(self, count):
+        """Sets the count of this AttachServerVolumeOption.
+
+        云硬盘的个数。  该字段于dry_run为true并且volumeId不存在时有效，如果该字段不存在，默认为1。
+
+        :param count: The count of this AttachServerVolumeOption.
+        :type count: int
+        """
+        self._count = count
 
     @property
     def hwpassthrough(self):

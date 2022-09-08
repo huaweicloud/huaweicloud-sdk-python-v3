@@ -26,7 +26,7 @@ class UploadFilesRequest:
     }
 
     attribute_map = {
-        'user_id': 'USER_ID',
+        'user_id': 'USER-ID',
         'body': 'body'
     }
 

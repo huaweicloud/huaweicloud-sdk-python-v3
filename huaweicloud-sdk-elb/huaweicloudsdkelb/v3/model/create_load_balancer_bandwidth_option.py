@@ -47,11 +47,11 @@ class CreateLoadBalancerBandwidthOption:
         :type name: str
         :param size: 带宽大小 取值范围:默认1Mbit/s~2000Mbit/s(具体范围以各区域配置为准,请参见控制台对应页面显示)。  注意:调整带宽时的最小单位会根据带宽范围不同存在差异。 小于等于300Mbit/s:默认最小单位为1Mbit/s。 300Mbit/s~1000Mbit/s:默认最小单位为50Mbit/s。 大于1000Mbit/s:默认最小单位为500Mbit/s。  使用说明：当id字段为null时，size是必须的。
         :type size: int
-        :param charge_mode: 计费模式。   [取值范围：bandwidth 表示按带宽计费，traffic表示按流量计费。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs)   [当前仅支持traffic按流量计费](tag:dt,dt_test,hcso_dt)   使用说明：当id字段为null时，charge_mode是必须的。
+        :param charge_mode: 计费模式。 [取值：bandwidth表示按带宽计费，traffic表示按流量计费。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs) [当前仅支持traffic按流量计费](tag:dt,dt_test,hcso_dt) 使用说明：当id字段为null时，charge_mode是必须的。
         :type charge_mode: str
         :param share_type: 带宽类型。 取值： - PER：独享带宽。 - WHOLE：共享带宽。  使用说明： 1. 当id字段为null时，share_type是必须的。当id不为null时，该字段被忽略。 2. 该字段为WHOLE时,必须指定带宽ID。 3. IPv6的EIP不支持WHOLE类型带宽。
         :type share_type: str
-        :param billing_info: 资源账单信息。  [如果billing_info不为空，说明是包周期计费的带宽，否则为按需计费的带宽](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)   [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+        :param billing_info: 资源账单信息。 [如果billing_info不为空，说明是包周期计费的带宽，否则为按需计费的带宽](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
         :type billing_info: str
         :param id: 功能说明：使用已有的共享带宽创建IP 取值范围：共享带宽ID 使用说明： WHOLE类型的带宽ID； 在预付费的情况下，不填该值。该字段取空字符串时，会被忽略。
         :type id: str
@@ -128,7 +128,7 @@ class CreateLoadBalancerBandwidthOption:
     def charge_mode(self):
         """Gets the charge_mode of this CreateLoadBalancerBandwidthOption.
 
-        计费模式。   [取值范围：bandwidth 表示按带宽计费，traffic表示按流量计费。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs)   [当前仅支持traffic按流量计费](tag:dt,dt_test,hcso_dt)   使用说明：当id字段为null时，charge_mode是必须的。
+        计费模式。 [取值：bandwidth表示按带宽计费，traffic表示按流量计费。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs) [当前仅支持traffic按流量计费](tag:dt,dt_test,hcso_dt) 使用说明：当id字段为null时，charge_mode是必须的。
 
         :return: The charge_mode of this CreateLoadBalancerBandwidthOption.
         :rtype: str
@@ -139,7 +139,7 @@ class CreateLoadBalancerBandwidthOption:
     def charge_mode(self, charge_mode):
         """Sets the charge_mode of this CreateLoadBalancerBandwidthOption.
 
-        计费模式。   [取值范围：bandwidth 表示按带宽计费，traffic表示按流量计费。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs)   [当前仅支持traffic按流量计费](tag:dt,dt_test,hcso_dt)   使用说明：当id字段为null时，charge_mode是必须的。
+        计费模式。 [取值：bandwidth表示按带宽计费，traffic表示按流量计费。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs) [当前仅支持traffic按流量计费](tag:dt,dt_test,hcso_dt) 使用说明：当id字段为null时，charge_mode是必须的。
 
         :param charge_mode: The charge_mode of this CreateLoadBalancerBandwidthOption.
         :type charge_mode: str
@@ -172,7 +172,7 @@ class CreateLoadBalancerBandwidthOption:
     def billing_info(self):
         """Gets the billing_info of this CreateLoadBalancerBandwidthOption.
 
-        资源账单信息。  [如果billing_info不为空，说明是包周期计费的带宽，否则为按需计费的带宽](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)   [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+        资源账单信息。 [如果billing_info不为空，说明是包周期计费的带宽，否则为按需计费的带宽](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
 
         :return: The billing_info of this CreateLoadBalancerBandwidthOption.
         :rtype: str
@@ -183,7 +183,7 @@ class CreateLoadBalancerBandwidthOption:
     def billing_info(self, billing_info):
         """Sets the billing_info of this CreateLoadBalancerBandwidthOption.
 
-        资源账单信息。  [如果billing_info不为空，说明是包周期计费的带宽，否则为按需计费的带宽](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42)   [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+        资源账单信息。 [如果billing_info不为空，说明是包周期计费的带宽，否则为按需计费的带宽](tag:hws,hws_hk,ocb,tlf,ctc,hcso,sbc,g42,tm,cmcc,hk-g42) [不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
 
         :param billing_info: The billing_info of this CreateLoadBalancerBandwidthOption.
         :type billing_info: str

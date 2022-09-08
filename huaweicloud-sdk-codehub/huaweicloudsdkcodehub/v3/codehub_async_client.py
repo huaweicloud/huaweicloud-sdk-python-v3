@@ -300,6 +300,68 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_files_by_query_async(self, request):
+        """查询某个仓库的文件信息
+
+        获取仓库中文件的信息，如名称、大小、内容。请注意，文件内容是Base64编码的。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListFilesByQuery
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListFilesByQueryRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListFilesByQueryResponse`
+        """
+        return self.list_files_by_query_with_http_info(request)
+
+    def list_files_by_query_with_http_info(self, request):
+        all_params = ['repo_id', 'file_path', 'ref']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repo_id' in local_var_params:
+            path_params['repo_id'] = local_var_params['repo_id']
+
+        query_params = []
+        if 'file_path' in local_var_params:
+            query_params.append(('file_path', local_var_params['file_path']))
+        if 'ref' in local_var_params:
+            query_params.append(('ref', local_var_params['ref']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/projects/{repo_id}/repository/files',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListFilesByQueryResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_file_async(self, request):
         """查询某个仓库的文件信息
 
@@ -553,7 +615,7 @@ class CodeHubAsyncClient(Client):
     def show_repository_name_exist_async(self, request):
         """校验指定项目下的仓库名
 
-        一般创建仓库时调用。通过传入项目uuid,仓库名，调用CoudeHubAdapter接口，查询数据库来判断仓库是否重名。
+        一般创建仓库时调用。通过传入项目uuid,仓库名，来判断仓库是否重名。仓库存在result:false,仓库不存在result:true。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1470,6 +1532,70 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_branches_by_repository_id_async(self, request):
+        """获取仓库分支列表
+
+        获取仓库分支列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListBranchesByRepositoryId
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListBranchesByRepositoryIdRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListBranchesByRepositoryIdResponse`
+        """
+        return self.list_branches_by_repository_id_with_http_info(request)
+
+    def list_branches_by_repository_id_with_http_info(self, request):
+        all_params = ['repository_id', 'page', 'per_page', 'match']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'per_page' in local_var_params:
+            query_params.append(('per_page', local_var_params['per_page']))
+        if 'match' in local_var_params:
+            query_params.append(('match', local_var_params['match']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/repositories/{repository_id}/branches',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListBranchesByRepositoryIdResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_commit_statistics_async(self, request):
         """获取仓库上一次的提交统计信息
 
@@ -1587,6 +1713,72 @@ class CodeHubAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListFilesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_merge_request_async(self, request):
+        """获取仓库合并请求列表
+
+        获取仓库合并请求列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListMergeRequest
+        :type request: :class:`huaweicloudsdkcodehub.v3.ListMergeRequestRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ListMergeRequestResponse`
+        """
+        return self.list_merge_request_with_http_info(request)
+
+    def list_merge_request_with_http_info(self, request):
+        all_params = ['repository_id', 'state', 'page', 'per_page', 'search']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+        if 'state' in local_var_params:
+            query_params.append(('state', local_var_params['state']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'per_page' in local_var_params:
+            query_params.append(('per_page', local_var_params['per_page']))
+        if 'search' in local_var_params:
+            query_params.append(('search', local_var_params['search']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/repositories/{repository_id}/merge_request',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListMergeRequestResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2350,6 +2542,66 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_merge_request_async(self, request):
+        """获取仓库合并请求详情
+
+        获取仓库合并请求详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowMergeRequest
+        :type request: :class:`huaweicloudsdkcodehub.v3.ShowMergeRequestRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.ShowMergeRequestResponse`
+        """
+        return self.show_merge_request_with_http_info(request)
+
+    def show_merge_request_with_http_info(self, request):
+        all_params = ['repository_id', 'merge_request_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+        if 'merge_request_id' in local_var_params:
+            path_params['merge_request_id'] = local_var_params['merge_request_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/repositories/{repository_id}/merge_request/{merge_request_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowMergeRequestResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_repo_id_async(self, request):
         """根据仓库名组名获取仓库短id，用以拼接与commitid对应提交详情页面url
 
@@ -2475,7 +2727,7 @@ class CodeHubAsyncClient(Client):
     def show_repository_by_uuid_async(self, request):
         """查询某个仓库的详细信息
 
-        根据仓库UUID获取仓库信息仓库信息。返回 包含id，name，组名，仓库访问URL。
+        根据仓库UUID(由CreateRepository接口返回)获取仓库信息仓库信息。返回 包含id，name，组名，仓库访问URL。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3126,6 +3378,64 @@ class CodeHubAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def associate_issues_async(self, request):
+        """分支关联工作项
+
+        分支关联工作项
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for AssociateIssues
+        :type request: :class:`huaweicloudsdkcodehub.v3.AssociateIssuesRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.AssociateIssuesResponse`
+        """
+        return self.associate_issues_with_http_info(request)
+
+    def associate_issues_with_http_info(self, request):
+        all_params = ['associate_issues_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/projects/issues',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AssociateIssuesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_project_and_repositories_async(self, request):
         """创建项目、仓库
 
@@ -3549,6 +3859,66 @@ class CodeHubAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListHooksResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_new_branch_async(self, request):
+        """创建分支
+
+        根据仓库id在指定仓库中创建分支
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateNewBranch
+        :type request: :class:`huaweicloudsdkcodehub.v3.CreateNewBranchRequest`
+        :rtype: :class:`huaweicloudsdkcodehub.v3.CreateNewBranchResponse`
+        """
+        return self.create_new_branch_with_http_info(request)
+
+    def create_new_branch_with_http_info(self, request):
+        all_params = ['repository_id', 'branch_info']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'repository_id' in local_var_params:
+            path_params['repository_id'] = local_var_params['repository_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/repositories/{repository_id}/branches',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateNewBranchResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

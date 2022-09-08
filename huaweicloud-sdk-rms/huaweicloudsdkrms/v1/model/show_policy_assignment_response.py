@@ -25,6 +25,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         'name': 'str',
         'description': 'str',
         'policy_filter': 'PolicyFilterDefinition',
+        'period': 'str',
         'state': 'str',
         'created': 'str',
         'updated': 'str',
@@ -37,6 +38,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         'name': 'name',
         'description': 'description',
         'policy_filter': 'policy_filter',
+        'period': 'period',
         'state': 'state',
         'created': 'created',
         'updated': 'updated',
@@ -44,7 +46,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         'parameters': 'parameters'
     }
 
-    def __init__(self, id=None, name=None, description=None, policy_filter=None, state=None, created=None, updated=None, policy_definition_id=None, parameters=None):
+    def __init__(self, id=None, name=None, description=None, policy_filter=None, period=None, state=None, created=None, updated=None, policy_definition_id=None, parameters=None):
         """ShowPolicyAssignmentResponse
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         :type description: str
         :param policy_filter: 
         :type policy_filter: :class:`huaweicloudsdkrms.v1.PolicyFilterDefinition`
+        :param period: 触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
+        :type period: str
         :param state: 规则状态
         :type state: str
         :param created: 规则创建时间
@@ -75,6 +79,7 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         self._name = None
         self._description = None
         self._policy_filter = None
+        self._period = None
         self._state = None
         self._created = None
         self._updated = None
@@ -90,6 +95,8 @@ class ShowPolicyAssignmentResponse(SdkResponse):
             self.description = description
         if policy_filter is not None:
             self.policy_filter = policy_filter
+        if period is not None:
+            self.period = period
         if state is not None:
             self.state = state
         if created is not None:
@@ -186,6 +193,28 @@ class ShowPolicyAssignmentResponse(SdkResponse):
         :type policy_filter: :class:`huaweicloudsdkrms.v1.PolicyFilterDefinition`
         """
         self._policy_filter = policy_filter
+
+    @property
+    def period(self):
+        """Gets the period of this ShowPolicyAssignmentResponse.
+
+        触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
+
+        :return: The period of this ShowPolicyAssignmentResponse.
+        :rtype: str
+        """
+        return self._period
+
+    @period.setter
+    def period(self, period):
+        """Sets the period of this ShowPolicyAssignmentResponse.
+
+        触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
+
+        :param period: The period of this ShowPolicyAssignmentResponse.
+        :type period: str
+        """
+        self._period = period
 
     @property
     def state(self):

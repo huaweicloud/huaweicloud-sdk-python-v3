@@ -24,19 +24,19 @@ class CreateTemplateReq:
         'name': 'str',
         'desc': 'str',
         'sql_body': 'str',
-        'job_type': 'str',
-        'tags': 'list[JobsTags]'
+        'tags': 'list[TmsTagEntity]',
+        'job_type': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'desc': 'desc',
         'sql_body': 'sql_body',
-        'job_type': 'job_type',
-        'tags': 'tags'
+        'tags': 'tags',
+        'job_type': 'job_type'
     }
 
-    def __init__(self, name=None, desc=None, sql_body=None, job_type=None, tags=None):
+    def __init__(self, name=None, desc=None, sql_body=None, tags=None, job_type=None):
         """CreateTemplateReq
 
         The model defined in huaweicloud sdk
@@ -47,10 +47,10 @@ class CreateTemplateReq:
         :type desc: str
         :param sql_body: Stream SQL语句，至少包含source，query，sink三个部分, 长度限制：0-2048个字符。
         :type sql_body: str
-        :param job_type: Flink作业模板类型。默认值为\&quot;flink_sql_job\&quot;，若填写则只能为\&quot;flink_sql_job\&quot;或者\&quot;flink_opensource_sql_job\&quot;。
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        :param job_type: 作业模板的类型，默认为flink_sql_job，仅支持flink_sql_job和flink_opensource_sql_job
         :type job_type: str
-        :param tags: Flink作业模板的标签。具体请参考表tags。
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
         """
         
         
@@ -58,8 +58,8 @@ class CreateTemplateReq:
         self._name = None
         self._desc = None
         self._sql_body = None
-        self._job_type = None
         self._tags = None
+        self._job_type = None
         self.discriminator = None
 
         self.name = name
@@ -67,10 +67,10 @@ class CreateTemplateReq:
             self.desc = desc
         if sql_body is not None:
             self.sql_body = sql_body
-        if job_type is not None:
-            self.job_type = job_type
         if tags is not None:
             self.tags = tags
+        if job_type is not None:
+            self.job_type = job_type
 
     @property
     def name(self):
@@ -139,10 +139,32 @@ class CreateTemplateReq:
         self._sql_body = sql_body
 
     @property
+    def tags(self):
+        """Gets the tags of this CreateTemplateReq.
+
+        标签
+
+        :return: The tags of this CreateTemplateReq.
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateTemplateReq.
+
+        标签
+
+        :param tags: The tags of this CreateTemplateReq.
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        """
+        self._tags = tags
+
+    @property
     def job_type(self):
         """Gets the job_type of this CreateTemplateReq.
 
-        Flink作业模板类型。默认值为\"flink_sql_job\"，若填写则只能为\"flink_sql_job\"或者\"flink_opensource_sql_job\"。
+        作业模板的类型，默认为flink_sql_job，仅支持flink_sql_job和flink_opensource_sql_job
 
         :return: The job_type of this CreateTemplateReq.
         :rtype: str
@@ -153,34 +175,12 @@ class CreateTemplateReq:
     def job_type(self, job_type):
         """Sets the job_type of this CreateTemplateReq.
 
-        Flink作业模板类型。默认值为\"flink_sql_job\"，若填写则只能为\"flink_sql_job\"或者\"flink_opensource_sql_job\"。
+        作业模板的类型，默认为flink_sql_job，仅支持flink_sql_job和flink_opensource_sql_job
 
         :param job_type: The job_type of this CreateTemplateReq.
         :type job_type: str
         """
         self._job_type = job_type
-
-    @property
-    def tags(self):
-        """Gets the tags of this CreateTemplateReq.
-
-        Flink作业模板的标签。具体请参考表tags。
-
-        :return: The tags of this CreateTemplateReq.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
-        """
-        return self._tags
-
-    @tags.setter
-    def tags(self, tags):
-        """Sets the tags of this CreateTemplateReq.
-
-        Flink作业模板的标签。具体请参考表tags。
-
-        :param tags: The tags of this CreateTemplateReq.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
-        """
-        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

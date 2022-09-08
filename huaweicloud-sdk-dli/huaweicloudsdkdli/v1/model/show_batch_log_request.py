@@ -23,20 +23,20 @@ class ShowBatchLogRequest:
     openapi_types = {
         'batch_id': 'str',
         '_from': 'int',
+        'index': 'int',
         'size': 'int',
-        'type': 'str',
-        'index': 'int'
+        'type': 'str'
     }
 
     attribute_map = {
         'batch_id': 'batch_id',
         '_from': 'from',
+        'index': 'index',
         'size': 'size',
-        'type': 'type',
-        'index': 'index'
+        'type': 'type'
     }
 
-    def __init__(self, batch_id=None, _from=None, size=None, type=None, index=None):
+    def __init__(self, batch_id=None, _from=None, index=None, size=None, type=None):
         """ShowBatchLogRequest
 
         The model defined in huaweicloud sdk
@@ -45,32 +45,32 @@ class ShowBatchLogRequest:
         :type batch_id: str
         :param _from: 起始日志的行号，默认显示最后100行日志。如果日志不足100行，从0行开始显示。
         :type _from: int
+        :param index: 当提交的作业进行重试时，会有多个driver日志。index用于指定driver日志的索引号，默认为0。需与type参数一起使用。
+        :type index: int
         :param size: 查询日志的数量。
         :type size: int
         :param type: 当type填写driver时，输出Spark Driver日志。
         :type type: str
-        :param index: 当提交的作业进行重试时，会有多个driver日志。index用于指定driver日志的索引号，默认为0。需与type参数一起使用。
-        :type index: int
         """
         
         
 
         self._batch_id = None
         self.__from = None
+        self._index = None
         self._size = None
         self._type = None
-        self._index = None
         self.discriminator = None
 
         self.batch_id = batch_id
         if _from is not None:
             self._from = _from
+        if index is not None:
+            self.index = index
         if size is not None:
             self.size = size
         if type is not None:
             self.type = type
-        if index is not None:
-            self.index = index
 
     @property
     def batch_id(self):
@@ -117,6 +117,28 @@ class ShowBatchLogRequest:
         self.__from = _from
 
     @property
+    def index(self):
+        """Gets the index of this ShowBatchLogRequest.
+
+        当提交的作业进行重试时，会有多个driver日志。index用于指定driver日志的索引号，默认为0。需与type参数一起使用。
+
+        :return: The index of this ShowBatchLogRequest.
+        :rtype: int
+        """
+        return self._index
+
+    @index.setter
+    def index(self, index):
+        """Sets the index of this ShowBatchLogRequest.
+
+        当提交的作业进行重试时，会有多个driver日志。index用于指定driver日志的索引号，默认为0。需与type参数一起使用。
+
+        :param index: The index of this ShowBatchLogRequest.
+        :type index: int
+        """
+        self._index = index
+
+    @property
     def size(self):
         """Gets the size of this ShowBatchLogRequest.
 
@@ -159,28 +181,6 @@ class ShowBatchLogRequest:
         :type type: str
         """
         self._type = type
-
-    @property
-    def index(self):
-        """Gets the index of this ShowBatchLogRequest.
-
-        当提交的作业进行重试时，会有多个driver日志。index用于指定driver日志的索引号，默认为0。需与type参数一起使用。
-
-        :return: The index of this ShowBatchLogRequest.
-        :rtype: int
-        """
-        return self._index
-
-    @index.setter
-    def index(self, index):
-        """Sets the index of this ShowBatchLogRequest.
-
-        当提交的作业进行重试时，会有多个driver日志。index用于指定driver日志的索引号，默认为0。需与type参数一起使用。
-
-        :param index: The index of this ShowBatchLogRequest.
-        :type index: int
-        """
-        self._index = index
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -24,7 +24,7 @@ class ListStreamJobJob:
         'job_id': 'int',
         'name': 'str',
         'desc': 'str',
-        'username': 'str',
+        'user_name': 'str',
         'job_type': 'str',
         'status': 'str',
         'status_desc': 'str',
@@ -49,7 +49,7 @@ class ListStreamJobJob:
         'job_id': 'job_id',
         'name': 'name',
         'desc': 'desc',
-        'username': 'username',
+        'user_name': 'user_name',
         'job_type': 'job_type',
         'status': 'status',
         'status_desc': 'status_desc',
@@ -70,7 +70,7 @@ class ListStreamJobJob:
         'has_savepoint': 'has_savepoint'
     }
 
-    def __init__(self, job_id=None, name=None, desc=None, username=None, job_type=None, status=None, status_desc=None, create_time=None, start_time=None, duration=None, root_id=None, user_id=None, project_id=None, sql_body=None, run_mode=None, job_config=None, main_class=None, entrypoint_args=None, execution_graph=None, update_time=None, graph_editor_enabled=None, has_savepoint=None):
+    def __init__(self, job_id=None, name=None, desc=None, user_name=None, job_type=None, status=None, status_desc=None, create_time=None, start_time=None, duration=None, root_id=None, user_id=None, project_id=None, sql_body=None, run_mode=None, job_config=None, main_class=None, entrypoint_args=None, execution_graph=None, update_time=None, graph_editor_enabled=None, has_savepoint=None):
         """ListStreamJobJob
 
         The model defined in huaweicloud sdk
@@ -81,8 +81,8 @@ class ListStreamJobJob:
         :type name: str
         :param desc: 作业描述。长度限制：0-2048个字符。
         :type desc: str
-        :param username: 用户名，当“show_detail”为“false”时独有。
-        :type username: str
+        :param user_name: 用户名，当“show_detail”为“false”时独有。
+        :type user_name: str
         :param job_type: 作业类型。
         :type job_type: str
         :param status: 作业状态。
@@ -126,7 +126,7 @@ class ListStreamJobJob:
         self._job_id = None
         self._name = None
         self._desc = None
-        self._username = None
+        self._user_name = None
         self._job_type = None
         self._status = None
         self._status_desc = None
@@ -152,8 +152,8 @@ class ListStreamJobJob:
             self.name = name
         if desc is not None:
             self.desc = desc
-        if username is not None:
-            self.username = username
+        if user_name is not None:
+            self.user_name = user_name
         if job_type is not None:
             self.job_type = job_type
         if status is not None:
@@ -257,26 +257,26 @@ class ListStreamJobJob:
         self._desc = desc
 
     @property
-    def username(self):
-        """Gets the username of this ListStreamJobJob.
+    def user_name(self):
+        """Gets the user_name of this ListStreamJobJob.
 
         用户名，当“show_detail”为“false”时独有。
 
-        :return: The username of this ListStreamJobJob.
+        :return: The user_name of this ListStreamJobJob.
         :rtype: str
         """
-        return self._username
+        return self._user_name
 
-    @username.setter
-    def username(self, username):
-        """Sets the username of this ListStreamJobJob.
+    @user_name.setter
+    def user_name(self, user_name):
+        """Sets the user_name of this ListStreamJobJob.
 
         用户名，当“show_detail”为“false”时独有。
 
-        :param username: The username of this ListStreamJobJob.
-        :type username: str
+        :param user_name: The user_name of this ListStreamJobJob.
+        :type user_name: str
         """
-        self._username = username
+        self._user_name = user_name
 
     @property
     def job_type(self):

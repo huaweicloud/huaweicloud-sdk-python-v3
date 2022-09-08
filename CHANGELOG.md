@@ -1,3 +1,235 @@
+# 3.1.1 2022-09-08
+
+### HuaweiCloud SDK IAM
+
+- _Features_
+  - Support the custom credential `IamCredentials`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK BSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `root_resource_id`, `parent_resource_id`, `trade_id`, `product_spec_desc` to the interface `ListCustomerselfResourceRecordDetails`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - Support the interfaces `ShowTags`, `CreateTags`, `BatchDeleteTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShowUrlTaskInfo`:
+    - Add the response parameter `result`
+    - Remove the response parameter `results`
+  - Add the response parameter `error_code_cache` to the interface `ShowDomainFullConfig`
+  - Add the request parameter `error_code_cache` to the interface `UpdateDomainFullConfig`
+
+### HuaweiCloud SDK CodeHub
+
+- _Features_
+  - Support the following interfaces：
+    - `ListFilesByQuery`
+    - `ListBranchesByRepositoryId`
+    - `CreateNewBranch`
+    - `AssociateIssues`
+    - `ListMergeRequest`
+    - `ShowMergeRequest`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListSubfiles`:
+    - Add the response parameters `error`, `result`, `status`
+    - Remove the response parameters `trees`, `total`
+  - Changes of the interface `ShowStatisticalData`:
+    - Add the response parameters `error`, `result`, `status`
+    - Remove the response parameters `repoName`, `commitCount`, `repoSize`, `lastCommitTime`, `codeLines`, `branchCount`, `archiveUrl`
+  - Modify the type `string` -> `boolean` of the request parameter `force` of the interface `CreateCommit`
+  - Changes of the interface `AddProtectBranchV2`:
+    - Modify the type `int32` -> `enum` of the request parameter `push_access_level`
+    - Modify the type `int32` -> `enum` of the request parameter `merge_access_level`
+
+### HuaweiCloud SDK CSE
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `create_revision`, `update_revision` to the interface `UploadKie`
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `CloseKibanaPublicReq` to the interface `UpdateCloseKibana`
+  - Add the request parameter `payInfo` to the interface `CreateCluster`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `enterprise_project_name`, `update_at`, `product_type`, `storage_type`, `launched_at`, `cache_mode`, `support_slow_log_flag`, `db_number`, `replica_count`, `sharding_count`, `bandwidth_info` to the interface `ShowInstance`
+  - Add the response parameter `backupId` to the interface `ListRedislog`
+  - Add the response parameter `instance_id` to the interface `ShowIpWhitelist`
+  - Add the request parameter `instance_id` to the interface `UpdateIpWhitelist`
+  - Add the response parameters `updated_at`, `created_at`, `status` to the interface `ListBackgroundTask`
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - Support the interfaces `CreateDownloadJob`, `UpdateTableOwner`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListGlobalValues`:
+    - Add the response parameter `is_sensitive`
+    - Modify the type `int32` -> `string` of the response parameter `id`
+  - Changes of the interface `CreateGlobleValue`:
+    - Add the request parameter `CreateGlobalValueReq`
+    - Remove the request parameter `createGlobaleValueReq`
+  - Remove the request parameter `var_name` from the interface `UpdateGlobalValue`
+  - Remove the request parameters `event_type`, `operation`, `timestamp`, `topic`, `name`, `attributes` from the interface `CreateIefSystemEvents`
+  - Changes of the interface `ListJobs`:
+    - Add the request parameters `owner`, `tags`
+    - Add the response parameters `message`, `end_time`
+    - Remove the response parameters `key`, `value`
+  - Modify the type `object` -> `string` of the request parameter `partition_spec` of the interface `ImportData`
+  - Remove the request parameters `key`, `value` from the interface `RunJob`
+  - Remove the response parameters `key`, `value` from the interface `ShowDetailInfo`
+  - Remove the response parameters `key`, `value` from the interface `ShowJobStatus`
+  - Remove the request parameters `key`, `value` from the interface `CreateDatabase`
+  - Modify the type `int64` -> `int32` of the response parameter `create_time` of the interface `ListAllTables`
+  - Remove the request parameters `limit`, `offset` from the interface `ShowObjectUser`
+  - Remove the request parameters `key`, `value` from the interface `CreateFlinkJar`
+  - Add the request parameter `job_type` to the interface `UpdateFlinkJar`
+  - Changes of the interface `ListFlinkJobs`:
+    - Add the response parameter `user_name`
+    - Remove the response parameter `username`
+  - Remove the request parameters `key`, `value` from the interface `CreateFlinkSql`
+  - Changes of the interface `CreateFlinkTemplate`:
+    - Remove the request parameters `key`, `value`
+    - Modify the type `string` -> `enum` of the request parameter `job_type`
+  - Modify the type `int32` -> `int64` of the response parameter `update_time` of the interface `ListResources`
+  - Changes of the interface `UploadResources`:
+    - Add the request parameter `USER-ID`
+    - Remove the request parameters `USER_ID`, `key`, `value`
+    - The request parameter `group` changed to required
+  - Changes of the interface `UploadFiles`:
+    - Add the request parameter `USER-ID`
+    - Remove the request parameter `USER_ID`
+    - The request parameter `group` changed to required
+  - Changes of the interface `UploadJars`:
+    - Add the request parameter `USER-ID`
+    - Remove the request parameter `USER_ID`
+    - The request parameter `group` changed to required
+  - Changes of the interface `UploadPythonFiles`:
+    - Add the request parameter `USER-ID`
+    - Remove the request parameter `USER_ID`
+    - The request parameter `group` changed to required
+  - Changes of the interface `ListBatches`:
+    - Add the request parameters `end`, `order`, `start`
+    - Add the response parameter `duration`
+  - Changes of the interface `CreateBatchJob`:
+    - Add the request parameter `USER-ID`
+    - Remove the request parameter `USER_ID`
+    - The request parameter `queue` changed to not required
+  - Changes of the interface `ListElasticResourcePools`:
+    - Modify the type `int32` -> `int64` of the response parameter `update_time`
+    - Modify the type `int32` -> `int64` of the response parameter `create_time`
+  - Add the request parameter `tags` to the interface `ListEnhancedConnections`
+  - Remove the request parameters `key`, `value` from the interface `CreateEnhancedConnection`
+  - Changes of the interface `ListDatasourceConnections`:
+    - Add the request parameter `tags`
+    - Remove the response parameters `is_success`, `message`, `connection_id`, `destination`, `state`, `process`, `name`, `connection_url`, `cluster_name`, `service`, `create_time`
+  - Remove the request parameters `key`, `value` from the interface `CreateDatasourceConnection`
+  - Changes of the interface `ShowDatasourceConnection`:
+    - Add the response parameter `queueList`
+    - Remove the response parameter `available_queue_info`
+  - Changes of the interface `ListQueues`:
+    - Add the response parameter `resource_type`
+    - Remove the request parameters `page-size`, `current-page`, `order`
+    - Remove the response parameters `queue_resource_type`, `cu_spec`, `cu_scale_out_limit`, `cu_scale_in_limit`, `elastic_resource_pool_name`
+    - Modify the type `string` -> `int64` of the response parameter `queue_id`
+    - Modify the type `array` -> `string` of the response parameter `labels`
+  - Remove the request parameters `key`, `value` from the interface `CreateQueue`
+  - Changes of the interface `ShowQueueDetail`:
+    - Add the response parameters `queue_name`, `cu_count`, `charging_mode`
+    - Remove the request parameter `queue_type`
+    - Remove the response parameters `queueName`, `cuCount`, `chargingMode`, `queueType`, `resource_type`, `cu_spec`, `cu_scale_out_limit`, `cu_scale_in_limit`, `elastic_resource_pool_name`
+    - Modify the type `string` -> `int64` of the response parameter `queue_id`
+  - Changes of the interface `RunQueueAction`:
+    - Add the request parameter `RunQueueActionReq`
+    - Remove the request parameter `body`
+  - The request parameter `repeat_day` changed to not required of the interface `CreateQueuePlan`
+  - The request parameter `repeat_day` changed to not required of the interface `ChangeQueuePlan`
+
+### HuaweiCloud SDK EVS
+
+- _Features_
+  - Support the following interfaces：
+    - `ShowVersion`
+    - `ListVersions`
+    - `CinderShowVolumeTransfer`
+    - `CinderDeleteVolumeTransfer`
+    - `CinderListVolumeTransfers`
+    - `CinderCreateVolumeTransfer`
+    - `CinderAcceptVolumeTransfer`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IEF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `cpu`, `memory`, `gpu`, `npu`, `cpu`, `memory`, `gpu`, `npu` to the interface `ListApps`
+  - Add the response parameters `cpu`, `memory`, `gpu`, `npu`, `cpu`, `memory`, `gpu`, `npu` to the interface `UpdateApp`
+  - Add the response parameters `cpu`, `memory`, `gpu`, `npu`, `cpu`, `memory`, `gpu`, `npu` to the interface `ShowAppDetail`
+  - Add the response parameters `cpu`, `memory`, `gpu`, `npu`, `cpu`, `memory`, `gpu`, `npu` to the interface `ListAppVersions`
+  - Add the request parameters `cpu`, `memory`, `gpu`, `npu`, `cpu`, `memory`, `gpu`, `npu` to the interface `CreateAppVersions`
+  - Changes of the interface `UpdateAppVersion`:
+    - Add the request parameters `cpu`, `memory`, `gpu`, `npu`, `cpu`, `memory`, `gpu`, `npu`
+    - Add the response parameters `cpu`, `memory`, `gpu`, `npu`, `cpu`, `memory`, `gpu`, `npu`
+  - Add the response parameters `cpu`, `memory`, `gpu`, `npu`, `cpu`, `memory`, `gpu`, `npu` to the interface `ShowAppVersionDetail`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `ttl_in_days` to the interface `CreateLogStream`
+  - Add the request parameter `whether_to_rows` to the interface `ListStructuredLogsWithTimeRange`
+  - The request parameter `isAnalysis` changed to not required of the interface `UpdateStructTemplate`
+  - The request parameter `isAnalysis` changed to not required of the interface `CreateStructTemplate`
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - Support the interfaces `RunCreateVideoModerationJob`, `RunQueryVideoModerationJob`
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `url` changed to not required of the interface `RunCreateAudioModerationJob`
+
 # 3.0.108 2022-09-01
 
 ### HuaweiCloud SDK BSSINTL

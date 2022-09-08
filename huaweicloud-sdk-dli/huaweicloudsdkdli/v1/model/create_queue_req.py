@@ -31,7 +31,7 @@ class CreateQueueReq:
         'resource_mode': 'int',
         'labels': 'list[object]',
         'feature': 'str',
-        'tags': 'list[JobsTags]',
+        'tags': 'list[TmsTagEntity]',
         'elastic_resource_pool_name': 'str'
     }
 
@@ -55,7 +55,7 @@ class CreateQueueReq:
 
         The model defined in huaweicloud sdk
 
-        :param queue_name: 新建的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。 说明：  队列名称不区分大小写，系统会自动转换为小写。
+        :param queue_name: 新建的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。\\n说明： \\n队列名称不区分大小写，系统会自动转换为小写。
         :type queue_name: str
         :param queue_type: 队列的类型,。有如下两种类型： sql general 如果不指定，默认为sql。
         :type queue_type: str
@@ -75,8 +75,8 @@ class CreateQueueReq:
         :type labels: list[object]
         :param feature: 队列特性。支持以下两种类型：basic：基础型ai：AI增强型（仅SQL的x86_64专属队列支持选择）默认值为“basic”。
         :type feature: str
-        :param tags: 队列的标签。具体请参考表tags。
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         :param elastic_resource_pool_name: 新建的弹性资源池名称，名称只能包含数字、小写英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。
         :type elastic_resource_pool_name: str
         """
@@ -124,7 +124,7 @@ class CreateQueueReq:
     def queue_name(self):
         """Gets the queue_name of this CreateQueueReq.
 
-        新建的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。 说明：  队列名称不区分大小写，系统会自动转换为小写。
+        新建的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。\\n说明： \\n队列名称不区分大小写，系统会自动转换为小写。
 
         :return: The queue_name of this CreateQueueReq.
         :rtype: str
@@ -135,7 +135,7 @@ class CreateQueueReq:
     def queue_name(self, queue_name):
         """Sets the queue_name of this CreateQueueReq.
 
-        新建的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。 说明：  队列名称不区分大小写，系统会自动转换为小写。
+        新建的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。\\n说明： \\n队列名称不区分大小写，系统会自动转换为小写。
 
         :param queue_name: The queue_name of this CreateQueueReq.
         :type queue_name: str
@@ -344,10 +344,10 @@ class CreateQueueReq:
     def tags(self):
         """Gets the tags of this CreateQueueReq.
 
-        队列的标签。具体请参考表tags。
+        标签
 
         :return: The tags of this CreateQueueReq.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         return self._tags
 
@@ -355,10 +355,10 @@ class CreateQueueReq:
     def tags(self, tags):
         """Sets the tags of this CreateQueueReq.
 
-        队列的标签。具体请参考表tags。
+        标签
 
         :param tags: The tags of this CreateQueueReq.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         self._tags = tags
 

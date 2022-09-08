@@ -21,63 +21,41 @@ class ChangeQueuePlanRequest:
     sensitive_list = []
 
     openapi_types = {
-        'queue_name': 'str',
         'plan_id': 'str',
+        'queue_name': 'str',
         'body': 'SetQueuePlanReq'
     }
 
     attribute_map = {
-        'queue_name': 'queue_name',
         'plan_id': 'plan_id',
+        'queue_name': 'queue_name',
         'body': 'body'
     }
 
-    def __init__(self, queue_name=None, plan_id=None, body=None):
+    def __init__(self, plan_id=None, queue_name=None, body=None):
         """ChangeQueuePlanRequest
 
         The model defined in huaweicloud sdk
 
-        :param queue_name: 待删除定时扩缩计划的队列名称
-        :type queue_name: str
         :param plan_id: 待修改的队列扩缩容计划的ID
         :type plan_id: str
+        :param queue_name: 待删除定时扩缩计划的队列名称
+        :type queue_name: str
         :param body: Body of the ChangeQueuePlanRequest
         :type body: :class:`huaweicloudsdkdli.v1.SetQueuePlanReq`
         """
         
         
 
-        self._queue_name = None
         self._plan_id = None
+        self._queue_name = None
         self._body = None
         self.discriminator = None
 
-        self.queue_name = queue_name
         self.plan_id = plan_id
+        self.queue_name = queue_name
         if body is not None:
             self.body = body
-
-    @property
-    def queue_name(self):
-        """Gets the queue_name of this ChangeQueuePlanRequest.
-
-        待删除定时扩缩计划的队列名称
-
-        :return: The queue_name of this ChangeQueuePlanRequest.
-        :rtype: str
-        """
-        return self._queue_name
-
-    @queue_name.setter
-    def queue_name(self, queue_name):
-        """Sets the queue_name of this ChangeQueuePlanRequest.
-
-        待删除定时扩缩计划的队列名称
-
-        :param queue_name: The queue_name of this ChangeQueuePlanRequest.
-        :type queue_name: str
-        """
-        self._queue_name = queue_name
 
     @property
     def plan_id(self):
@@ -100,6 +78,28 @@ class ChangeQueuePlanRequest:
         :type plan_id: str
         """
         self._plan_id = plan_id
+
+    @property
+    def queue_name(self):
+        """Gets the queue_name of this ChangeQueuePlanRequest.
+
+        待删除定时扩缩计划的队列名称
+
+        :return: The queue_name of this ChangeQueuePlanRequest.
+        :rtype: str
+        """
+        return self._queue_name
+
+    @queue_name.setter
+    def queue_name(self, queue_name):
+        """Sets the queue_name of this ChangeQueuePlanRequest.
+
+        待删除定时扩缩计划的队列名称
+
+        :param queue_name: The queue_name of this ChangeQueuePlanRequest.
+        :type queue_name: str
+        """
+        self._queue_name = queue_name
 
     @property
     def body(self):

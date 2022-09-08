@@ -25,7 +25,6 @@ class CreateTableReq:
         'data_location': 'str',
         'description': 'str',
         'columns': 'list[CreateTableReqColumn]',
-        'select_statement': 'str',
         'data_type': 'str',
         'data_path': 'str',
         'with_column_header': 'bool',
@@ -33,7 +32,8 @@ class CreateTableReq:
         'quote_char': 'str',
         'escape_char': 'str',
         'date_format': 'str',
-        'timestamp_format': 'str'
+        'timestamp_format': 'str',
+        'select_statement': 'str'
     }
 
     attribute_map = {
@@ -41,7 +41,6 @@ class CreateTableReq:
         'data_location': 'data_location',
         'description': 'description',
         'columns': 'columns',
-        'select_statement': 'select_statement',
         'data_type': 'data_type',
         'data_path': 'data_path',
         'with_column_header': 'with_column_header',
@@ -49,24 +48,23 @@ class CreateTableReq:
         'quote_char': 'quote_char',
         'escape_char': 'escape_char',
         'date_format': 'date_format',
-        'timestamp_format': 'timestamp_format'
+        'timestamp_format': 'timestamp_format',
+        'select_statement': 'select_statement'
     }
 
-    def __init__(self, table_name=None, data_location=None, description=None, columns=None, select_statement=None, data_type=None, data_path=None, with_column_header=None, delimiter=None, quote_char=None, escape_char=None, date_format=None, timestamp_format=None):
+    def __init__(self, table_name=None, data_location=None, description=None, columns=None, data_type=None, data_path=None, with_column_header=None, delimiter=None, quote_char=None, escape_char=None, date_format=None, timestamp_format=None, select_statement=None):
         """CreateTableReq
 
         The model defined in huaweicloud sdk
 
         :param table_name: 新增表名称。
         :type table_name: str
-        :param data_location: 数据存储的地方，分OBS表和DLI表。
+        :param data_location: 数据存储的地方，分VIEW视图，OBS表和DLI表。
         :type data_location: str
         :param description: 新增表的描述信息。
         :type description: str
-        :param columns: 新增表的列。
+        :param columns: OBS表和DLI表必选参数。新增表的列。
         :type columns: list[:class:`huaweicloudsdkdli.v1.CreateTableReqColumn`]
-        :param select_statement: 创建视图时依赖的查找语句。查找语句中的表需要附加所属数据库，即 “数据库.数据表”格式。data_location为VIEW时填写。
-        :type select_statement: str
         :param data_type: OBS表必选参数。新增OBS表数据的类型，目前支持：Parquet、ORC、CSV、JSON、Carbon和Avro格式。
         :type data_type: str
         :param data_path: OBS表必选参数。新增OBS表数据的存储路径，必须是OBS上的路径，以s3a开头。
@@ -83,6 +81,8 @@ class CreateTableReq:
         :type date_format: str
         :param timestamp_format: OBS表非必选参数。用户自定义时间类型。默认格式为“yyyy-MM-dd HH:mm:ss”。只有CSV和JSON类型数据具有该属性。
         :type timestamp_format: str
+        :param select_statement: VIEW视图必选参数，创建视图时的数据选择语句。语句中涉及表需要使用“表&#x3D;库名.表名”的格式
+        :type select_statement: str
         """
         
         
@@ -91,7 +91,6 @@ class CreateTableReq:
         self._data_location = None
         self._description = None
         self._columns = None
-        self._select_statement = None
         self._data_type = None
         self._data_path = None
         self._with_column_header = None
@@ -100,6 +99,7 @@ class CreateTableReq:
         self._escape_char = None
         self._date_format = None
         self._timestamp_format = None
+        self._select_statement = None
         self.discriminator = None
 
         self.table_name = table_name
@@ -107,8 +107,6 @@ class CreateTableReq:
         if description is not None:
             self.description = description
         self.columns = columns
-        if select_statement is not None:
-            self.select_statement = select_statement
         if data_type is not None:
             self.data_type = data_type
         if data_path is not None:
@@ -125,6 +123,8 @@ class CreateTableReq:
             self.date_format = date_format
         if timestamp_format is not None:
             self.timestamp_format = timestamp_format
+        if select_statement is not None:
+            self.select_statement = select_statement
 
     @property
     def table_name(self):
@@ -152,7 +152,7 @@ class CreateTableReq:
     def data_location(self):
         """Gets the data_location of this CreateTableReq.
 
-        数据存储的地方，分OBS表和DLI表。
+        数据存储的地方，分VIEW视图，OBS表和DLI表。
 
         :return: The data_location of this CreateTableReq.
         :rtype: str
@@ -163,7 +163,7 @@ class CreateTableReq:
     def data_location(self, data_location):
         """Sets the data_location of this CreateTableReq.
 
-        数据存储的地方，分OBS表和DLI表。
+        数据存储的地方，分VIEW视图，OBS表和DLI表。
 
         :param data_location: The data_location of this CreateTableReq.
         :type data_location: str
@@ -196,7 +196,7 @@ class CreateTableReq:
     def columns(self):
         """Gets the columns of this CreateTableReq.
 
-        新增表的列。
+        OBS表和DLI表必选参数。新增表的列。
 
         :return: The columns of this CreateTableReq.
         :rtype: list[:class:`huaweicloudsdkdli.v1.CreateTableReqColumn`]
@@ -207,34 +207,12 @@ class CreateTableReq:
     def columns(self, columns):
         """Sets the columns of this CreateTableReq.
 
-        新增表的列。
+        OBS表和DLI表必选参数。新增表的列。
 
         :param columns: The columns of this CreateTableReq.
         :type columns: list[:class:`huaweicloudsdkdli.v1.CreateTableReqColumn`]
         """
         self._columns = columns
-
-    @property
-    def select_statement(self):
-        """Gets the select_statement of this CreateTableReq.
-
-        创建视图时依赖的查找语句。查找语句中的表需要附加所属数据库，即 “数据库.数据表”格式。data_location为VIEW时填写。
-
-        :return: The select_statement of this CreateTableReq.
-        :rtype: str
-        """
-        return self._select_statement
-
-    @select_statement.setter
-    def select_statement(self, select_statement):
-        """Sets the select_statement of this CreateTableReq.
-
-        创建视图时依赖的查找语句。查找语句中的表需要附加所属数据库，即 “数据库.数据表”格式。data_location为VIEW时填写。
-
-        :param select_statement: The select_statement of this CreateTableReq.
-        :type select_statement: str
-        """
-        self._select_statement = select_statement
 
     @property
     def data_type(self):
@@ -411,6 +389,28 @@ class CreateTableReq:
         :type timestamp_format: str
         """
         self._timestamp_format = timestamp_format
+
+    @property
+    def select_statement(self):
+        """Gets the select_statement of this CreateTableReq.
+
+        VIEW视图必选参数，创建视图时的数据选择语句。语句中涉及表需要使用“表=库名.表名”的格式
+
+        :return: The select_statement of this CreateTableReq.
+        :rtype: str
+        """
+        return self._select_statement
+
+    @select_statement.setter
+    def select_statement(self, select_statement):
+        """Sets the select_statement of this CreateTableReq.
+
+        VIEW视图必选参数，创建视图时的数据选择语句。语句中涉及表需要使用“表=库名.表名”的格式
+
+        :param select_statement: The select_statement of this CreateTableReq.
+        :type select_statement: str
+        """
+        self._select_statement = select_statement
 
     def to_dict(self):
         """Returns the model properties as a dict"""

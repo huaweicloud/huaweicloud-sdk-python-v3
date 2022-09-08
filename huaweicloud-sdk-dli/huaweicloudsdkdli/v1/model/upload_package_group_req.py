@@ -25,7 +25,7 @@ class UploadPackageGroupReq:
         'kind': 'str',
         'group': 'str',
         'is_async': 'bool',
-        'tags': 'list[JobsTags]'
+        'tags': 'list[TmsTagEntity]'
     }
 
     attribute_map = {
@@ -50,7 +50,7 @@ class UploadPackageGroupReq:
         :param is_async: 是否异步上传资源包
         :type is_async: bool
         :param tags: 资源标签。具体请参考表tags。
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         
         
@@ -64,8 +64,7 @@ class UploadPackageGroupReq:
 
         self.paths = paths
         self.kind = kind
-        if group is not None:
-            self.group = group
+        self.group = group
         if is_async is not None:
             self.is_async = is_async
         if tags is not None:
@@ -166,7 +165,7 @@ class UploadPackageGroupReq:
         资源标签。具体请参考表tags。
 
         :return: The tags of this UploadPackageGroupReq.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         return self._tags
 
@@ -177,7 +176,7 @@ class UploadPackageGroupReq:
         资源标签。具体请参考表tags。
 
         :param tags: The tags of this UploadPackageGroupReq.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         self._tags = tags
 

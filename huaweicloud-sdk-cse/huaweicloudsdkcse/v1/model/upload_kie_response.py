@@ -22,7 +22,7 @@ class UploadKieResponse(SdkResponse):
 
     openapi_types = {
         'success': 'list[GetKieConfigs]',
-        'failure': 'list[UploadKieRespFailure]'
+        'failure': 'list[DocFailedOfUpload]'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class UploadKieResponse(SdkResponse):
         :param success: 导入成功的配置项列表。
         :type success: list[:class:`huaweicloudsdkcse.v1.GetKieConfigs`]
         :param failure: 导入失败的配置项及其错误列表。
-        :type failure: list[:class:`huaweicloudsdkcse.v1.UploadKieRespFailure`]
+        :type failure: list[:class:`huaweicloudsdkcse.v1.DocFailedOfUpload`]
         """
         
         super(UploadKieResponse, self).__init__()
@@ -81,7 +81,7 @@ class UploadKieResponse(SdkResponse):
         导入失败的配置项及其错误列表。
 
         :return: The failure of this UploadKieResponse.
-        :rtype: list[:class:`huaweicloudsdkcse.v1.UploadKieRespFailure`]
+        :rtype: list[:class:`huaweicloudsdkcse.v1.DocFailedOfUpload`]
         """
         return self._failure
 
@@ -92,7 +92,7 @@ class UploadKieResponse(SdkResponse):
         导入失败的配置项及其错误列表。
 
         :param failure: The failure of this UploadKieResponse.
-        :type failure: list[:class:`huaweicloudsdkcse.v1.UploadKieRespFailure`]
+        :type failure: list[:class:`huaweicloudsdkcse.v1.DocFailedOfUpload`]
         """
         self._failure = failure
 

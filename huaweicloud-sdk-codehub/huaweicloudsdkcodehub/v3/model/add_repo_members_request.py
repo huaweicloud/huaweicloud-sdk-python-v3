@@ -35,7 +35,7 @@ class AddRepoMembersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param repository_uuid: 仓库uuid
+        :param repository_uuid: 仓库uuid(由CreateRepository接口返回)
         :type repository_uuid: str
         :param body: Body of the AddRepoMembersRequest
         :type body: :class:`huaweicloudsdkcodehub.v3.CreateRepoMemberRequest`
@@ -55,7 +55,7 @@ class AddRepoMembersRequest:
     def repository_uuid(self):
         """Gets the repository_uuid of this AddRepoMembersRequest.
 
-        仓库uuid
+        仓库uuid(由CreateRepository接口返回)
 
         :return: The repository_uuid of this AddRepoMembersRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class AddRepoMembersRequest:
     def repository_uuid(self, repository_uuid):
         """Sets the repository_uuid of this AddRepoMembersRequest.
 
-        仓库uuid
+        仓库uuid(由CreateRepository接口返回)
 
         :param repository_uuid: The repository_uuid of this AddRepoMembersRequest.
         :type repository_uuid: str

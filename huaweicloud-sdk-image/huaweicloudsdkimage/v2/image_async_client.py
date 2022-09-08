@@ -165,7 +165,7 @@ class ImageAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def run_image_main_object_detection_async(self, request):
-        """图像主体识别
+        """主体识别
 
         检测图像中的主要内容，返回主要内容的坐标信息，这里的主要内容包括两方面：bounding_box和main_object_box
         

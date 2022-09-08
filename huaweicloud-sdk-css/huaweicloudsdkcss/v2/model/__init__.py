@@ -21,6 +21,7 @@ from huaweicloudsdkcss.v2.model.create_cluster_resp import CreateClusterResp
 from huaweicloudsdkcss.v2.model.create_cluster_response import CreateClusterResponse
 from huaweicloudsdkcss.v2.model.create_cluster_roles_body import CreateClusterRolesBody
 from huaweicloudsdkcss.v2.model.create_cluster_tags_body import CreateClusterTagsBody
+from huaweicloudsdkcss.v2.model.pay_info_body import PayInfoBody
 from huaweicloudsdkcss.v2.model.restart_cluster_req import RestartClusterReq
 from huaweicloudsdkcss.v2.model.restart_cluster_request import RestartClusterRequest
 from huaweicloudsdkcss.v2.model.restart_cluster_response import RestartClusterResponse

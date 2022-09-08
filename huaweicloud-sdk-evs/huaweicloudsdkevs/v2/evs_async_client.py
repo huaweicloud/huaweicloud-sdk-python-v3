@@ -171,6 +171,183 @@ class EvsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def cinder_accept_volume_transfer_async(self, request):
+        """接受云硬盘过户
+
+        通过云硬盘过户记录ID以及身份认证密钥来接受云硬盘过户。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CinderAcceptVolumeTransfer
+        :type request: :class:`huaweicloudsdkevs.v2.CinderAcceptVolumeTransferRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.CinderAcceptVolumeTransferResponse`
+        """
+        return self.cinder_accept_volume_transfer_with_http_info(request)
+
+    def cinder_accept_volume_transfer_with_http_info(self, request):
+        all_params = ['transfer_id', 'cinder_accept_volume_transfer_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'transfer_id' in local_var_params:
+            path_params['transfer_id'] = local_var_params['transfer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/os-volume-transfer/{transfer_id}/accept',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CinderAcceptVolumeTransferResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def cinder_create_volume_transfer_async(self, request):
+        """创建云硬盘过户
+
+        指定云硬盘来创建云硬盘过户记录，创建成功后，会返回过户记录ID以及身份认证密钥。
+        云硬盘在过户过程中的状态变化如下：创建云硬盘过户后，云硬盘状态由“available”变为“awaiting-transfer”。当云硬盘过户被接收后，云硬盘状态变为“available”。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CinderCreateVolumeTransfer
+        :type request: :class:`huaweicloudsdkevs.v2.CinderCreateVolumeTransferRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.CinderCreateVolumeTransferResponse`
+        """
+        return self.cinder_create_volume_transfer_with_http_info(request)
+
+    def cinder_create_volume_transfer_with_http_info(self, request):
+        all_params = ['cinder_create_volume_transfer_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/os-volume-transfer',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CinderCreateVolumeTransferResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def cinder_delete_volume_transfer_async(self, request):
+        """删除云硬盘过户
+
+        当云硬盘过户未被接受时，您可以删除云硬盘过户记录，接受后则无法执行删除操作。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CinderDeleteVolumeTransfer
+        :type request: :class:`huaweicloudsdkevs.v2.CinderDeleteVolumeTransferRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.CinderDeleteVolumeTransferResponse`
+        """
+        return self.cinder_delete_volume_transfer_with_http_info(request)
+
+    def cinder_delete_volume_transfer_with_http_info(self, request):
+        all_params = ['transfer_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'transfer_id' in local_var_params:
+            path_params['transfer_id'] = local_var_params['transfer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/os-volume-transfer/{transfer_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CinderDeleteVolumeTransferResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def cinder_list_availability_zones_async(self, request):
         """查询所有的可用分区信息
 
@@ -287,6 +464,66 @@ class EvsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def cinder_list_volume_transfers_async(self, request):
+        """查询云硬盘过户记录列表概要
+
+        查询当前租户下所有云硬盘的过户记录列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CinderListVolumeTransfers
+        :type request: :class:`huaweicloudsdkevs.v2.CinderListVolumeTransfersRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.CinderListVolumeTransfersResponse`
+        """
+        return self.cinder_list_volume_transfers_with_http_info(request)
+
+    def cinder_list_volume_transfers_with_http_info(self, request):
+        all_params = ['limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/os-volume-transfer',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CinderListVolumeTransfersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def cinder_list_volume_types_async(self, request):
         """查询云硬盘类型列表
 
@@ -338,6 +575,64 @@ class EvsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CinderListVolumeTypesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def cinder_show_volume_transfer_async(self, request):
+        """查询单个云硬盘过户记录详情
+
+        查询单个云硬盘的过户记录详情，比如过户记录创建时间、ID以及名称等信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CinderShowVolumeTransfer
+        :type request: :class:`huaweicloudsdkevs.v2.CinderShowVolumeTransferRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.CinderShowVolumeTransferResponse`
+        """
+        return self.cinder_show_volume_transfer_with_http_info(request)
+
+    def cinder_show_volume_transfer_with_http_info(self, request):
+        all_params = ['transfer_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'transfer_id' in local_var_params:
+            path_params['transfer_id'] = local_var_params['transfer_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/os-volume-transfer/{transfer_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CinderShowVolumeTransferResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1337,6 +1632,120 @@ class EvsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateVolumeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_versions_async(self, request):
+        """查询接口版本信息列表
+
+        查询接口版本信息列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListVersions
+        :type request: :class:`huaweicloudsdkevs.v2.ListVersionsRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ListVersionsResponse`
+        """
+        return self.list_versions_with_http_info(request)
+
+    def list_versions_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListVersionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_version_async(self, request):
+        """查询API接口的版本信息
+
+        查询接口的指定版本信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowVersion
+        :type request: :class:`huaweicloudsdkevs.v2.ShowVersionRequest`
+        :rtype: :class:`huaweicloudsdkevs.v2.ShowVersionResponse`
+        """
+        return self.show_version_with_http_info(request)
+
+    def show_version_with_http_info(self, request):
+        all_params = ['version']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'version' in local_var_params:
+            path_params['version'] = local_var_params['version']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/{version}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

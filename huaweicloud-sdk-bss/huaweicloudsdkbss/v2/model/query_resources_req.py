@@ -59,9 +59,9 @@ class QueryResourcesReq:
         :type offset: int
         :param limit: 每次查询的条数。默认值为10。
         :type limit: int
-        :param expire_time_begin: 查询指定时间段内失效的资源列表，时间段的起始时间，UTC时间。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
+        :param expire_time_begin: 查询指定时间段内失效的资源列表，时间段的起始时间，UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
         :type expire_time_begin: str
-        :param expire_time_end: 查询指定时间段内失效的资源列表，时间段的结束时间，UTC时间。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
+        :param expire_time_end: 查询指定时间段内失效的资源列表，时间段的结束时间，UTC时间，格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
         :type expire_time_end: str
         """
         
@@ -230,7 +230,7 @@ class QueryResourcesReq:
     def expire_time_begin(self):
         """Gets the expire_time_begin of this QueryResourcesReq.
 
-        查询指定时间段内失效的资源列表，时间段的起始时间，UTC时间。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
+        查询指定时间段内失效的资源列表，时间段的起始时间，UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
 
         :return: The expire_time_begin of this QueryResourcesReq.
         :rtype: str
@@ -241,7 +241,7 @@ class QueryResourcesReq:
     def expire_time_begin(self, expire_time_begin):
         """Sets the expire_time_begin of this QueryResourcesReq.
 
-        查询指定时间段内失效的资源列表，时间段的起始时间，UTC时间。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
+        查询指定时间段内失效的资源列表，时间段的起始时间，UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
 
         :param expire_time_begin: The expire_time_begin of this QueryResourcesReq.
         :type expire_time_begin: str
@@ -252,7 +252,7 @@ class QueryResourcesReq:
     def expire_time_end(self):
         """Gets the expire_time_end of this QueryResourcesReq.
 
-        查询指定时间段内失效的资源列表，时间段的结束时间，UTC时间。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
+        查询指定时间段内失效的资源列表，时间段的结束时间，UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
 
         :return: The expire_time_end of this QueryResourcesReq.
         :rtype: str
@@ -263,7 +263,7 @@ class QueryResourcesReq:
     def expire_time_end(self, expire_time_end):
         """Sets the expire_time_end of this QueryResourcesReq.
 
-        查询指定时间段内失效的资源列表，时间段的结束时间，UTC时间。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
+        查询指定时间段内失效的资源列表，时间段的结束时间，UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 其中，HH范围是0～23，mm和ss范围是0～59。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。
 
         :param expire_time_end: The expire_time_end of this QueryResourcesReq.
         :type expire_time_end: str

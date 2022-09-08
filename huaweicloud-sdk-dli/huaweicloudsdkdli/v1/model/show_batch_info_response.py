@@ -33,10 +33,10 @@ class ShowBatchInfoResponse(SdkResponse):
         'proxy_user': 'str',
         'kind': 'str',
         'queue': 'str',
-        'spark_version': 'str',
         'image': 'str',
         'update_time': 'int',
-        'feature': 'str'
+        'feature': 'str',
+        'spark_version': 'str'
     }
 
     attribute_map = {
@@ -52,13 +52,13 @@ class ShowBatchInfoResponse(SdkResponse):
         'proxy_user': 'proxyUser',
         'kind': 'kind',
         'queue': 'queue',
-        'spark_version': 'spark_version',
         'image': 'image',
         'update_time': 'update_time',
-        'feature': 'feature'
+        'feature': 'feature',
+        'spark_version': 'spark_version'
     }
 
-    def __init__(self, id=None, state=None, app_id=None, log=None, sc_type=None, cluster_name=None, create_time=None, name=None, owner=None, proxy_user=None, kind=None, queue=None, spark_version=None, image=None, update_time=None, feature=None):
+    def __init__(self, id=None, state=None, app_id=None, log=None, sc_type=None, cluster_name=None, create_time=None, name=None, owner=None, proxy_user=None, kind=None, queue=None, image=None, update_time=None, feature=None, spark_version=None):
         """ShowBatchInfoResponse
 
         The model defined in huaweicloud sdk
@@ -87,14 +87,14 @@ class ShowBatchInfoResponse(SdkResponse):
         :type kind: str
         :param queue: 用于指定队列，填写已创建DLI的队列名
         :type queue: str
-        :param spark_version: 作业使用spark组件的版本号，在“feature”为“basic”或“ai”时填写，若不填写，则使用默认的spark组件版本号2.3.2。
-        :type spark_version: str
         :param image: 自定义镜像。格式为：组织名/镜像名:镜像版本。
         :type image: str
         :param update_time: 更新时间
         :type update_time: int
         :param feature: 作业特性。表示用户作业使用的Spark镜像类型。  basic：表示使用DLI提供的基础Spark镜像。 custom：表示使用用户自定义的Spark镜像。 ai：表示使用DLI提供的AI镜像。
         :type feature: str
+        :param spark_version: 作业使用spark组件的版本号，在“feature”为“basic”或“ai”时填写，若不填写，则使用默认的spark组件版本号2.3.2。
+        :type spark_version: str
         """
         
         super(ShowBatchInfoResponse, self).__init__()
@@ -111,10 +111,10 @@ class ShowBatchInfoResponse(SdkResponse):
         self._proxy_user = None
         self._kind = None
         self._queue = None
-        self._spark_version = None
         self._image = None
         self._update_time = None
         self._feature = None
+        self._spark_version = None
         self.discriminator = None
 
         if id is not None:
@@ -141,14 +141,14 @@ class ShowBatchInfoResponse(SdkResponse):
             self.kind = kind
         if queue is not None:
             self.queue = queue
-        if spark_version is not None:
-            self.spark_version = spark_version
         if image is not None:
             self.image = image
         if update_time is not None:
             self.update_time = update_time
         if feature is not None:
             self.feature = feature
+        if spark_version is not None:
+            self.spark_version = spark_version
 
     @property
     def id(self):
@@ -415,28 +415,6 @@ class ShowBatchInfoResponse(SdkResponse):
         self._queue = queue
 
     @property
-    def spark_version(self):
-        """Gets the spark_version of this ShowBatchInfoResponse.
-
-        作业使用spark组件的版本号，在“feature”为“basic”或“ai”时填写，若不填写，则使用默认的spark组件版本号2.3.2。
-
-        :return: The spark_version of this ShowBatchInfoResponse.
-        :rtype: str
-        """
-        return self._spark_version
-
-    @spark_version.setter
-    def spark_version(self, spark_version):
-        """Sets the spark_version of this ShowBatchInfoResponse.
-
-        作业使用spark组件的版本号，在“feature”为“basic”或“ai”时填写，若不填写，则使用默认的spark组件版本号2.3.2。
-
-        :param spark_version: The spark_version of this ShowBatchInfoResponse.
-        :type spark_version: str
-        """
-        self._spark_version = spark_version
-
-    @property
     def image(self):
         """Gets the image of this ShowBatchInfoResponse.
 
@@ -501,6 +479,28 @@ class ShowBatchInfoResponse(SdkResponse):
         :type feature: str
         """
         self._feature = feature
+
+    @property
+    def spark_version(self):
+        """Gets the spark_version of this ShowBatchInfoResponse.
+
+        作业使用spark组件的版本号，在“feature”为“basic”或“ai”时填写，若不填写，则使用默认的spark组件版本号2.3.2。
+
+        :return: The spark_version of this ShowBatchInfoResponse.
+        :rtype: str
+        """
+        return self._spark_version
+
+    @spark_version.setter
+    def spark_version(self, spark_version):
+        """Sets the spark_version of this ShowBatchInfoResponse.
+
+        作业使用spark组件的版本号，在“feature”为“basic”或“ai”时填写，若不填写，则使用默认的spark组件版本号2.3.2。
+
+        :param spark_version: The spark_version of this ShowBatchInfoResponse.
+        :type spark_version: str
+        """
+        self._spark_version = spark_version
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -22,15 +22,17 @@ class CreateGlobalValueReq:
 
     openapi_types = {
         'var_name': 'str',
-        'var_value': 'str'
+        'var_value': 'str',
+        'is_sensitive': 'bool'
     }
 
     attribute_map = {
         'var_name': 'var_name',
-        'var_value': 'var_value'
+        'var_value': 'var_value',
+        'is_sensitive': 'is_sensitive'
     }
 
-    def __init__(self, var_name=None, var_value=None):
+    def __init__(self, var_name=None, var_value=None, is_sensitive=None):
         """CreateGlobalValueReq
 
         The model defined in huaweicloud sdk
@@ -39,16 +41,21 @@ class CreateGlobalValueReq:
         :type var_name: str
         :param var_value: 变量的值
         :type var_value: str
+        :param is_sensitive: 是否为敏感变量
+        :type is_sensitive: bool
         """
         
         
 
         self._var_name = None
         self._var_value = None
+        self._is_sensitive = None
         self.discriminator = None
 
         self.var_name = var_name
         self.var_value = var_value
+        if is_sensitive is not None:
+            self.is_sensitive = is_sensitive
 
     @property
     def var_name(self):
@@ -93,6 +100,28 @@ class CreateGlobalValueReq:
         :type var_value: str
         """
         self._var_value = var_value
+
+    @property
+    def is_sensitive(self):
+        """Gets the is_sensitive of this CreateGlobalValueReq.
+
+        是否为敏感变量
+
+        :return: The is_sensitive of this CreateGlobalValueReq.
+        :rtype: bool
+        """
+        return self._is_sensitive
+
+    @is_sensitive.setter
+    def is_sensitive(self, is_sensitive):
+        """Sets the is_sensitive of this CreateGlobalValueReq.
+
+        是否为敏感变量
+
+        :param is_sensitive: The is_sensitive of this CreateGlobalValueReq.
+        :type is_sensitive: bool
+        """
+        self._is_sensitive = is_sensitive
 
     def to_dict(self):
         """Returns the model properties as a dict"""

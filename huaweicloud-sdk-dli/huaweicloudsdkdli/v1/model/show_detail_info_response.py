@@ -39,7 +39,7 @@ class ShowDetailInfoResponse(SdkResponse):
         'date_format': 'str',
         'timestamp_format': 'str',
         'compress': 'str',
-        'tags': 'list[JobsTags]'
+        'tags': 'list[TmsTagEntity]'
     }
 
     attribute_map = {
@@ -105,8 +105,8 @@ class ShowDetailInfoResponse(SdkResponse):
         :type timestamp_format: str
         :param compress:   导出作业时，用户指定的压缩方式。
         :type compress: str
-        :param tags: 作业的标签。具体请参考表tags。
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :param tags: 作业标签
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         
         super(ShowDetailInfoResponse, self).__init__()
@@ -571,10 +571,10 @@ class ShowDetailInfoResponse(SdkResponse):
     def tags(self):
         """Gets the tags of this ShowDetailInfoResponse.
 
-        作业的标签。具体请参考表tags。
+        作业标签
 
         :return: The tags of this ShowDetailInfoResponse.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         return self._tags
 
@@ -582,10 +582,10 @@ class ShowDetailInfoResponse(SdkResponse):
     def tags(self, tags):
         """Sets the tags of this ShowDetailInfoResponse.
 
-        作业的标签。具体请参考表tags。
+        作业标签
 
         :param tags: The tags of this ShowDetailInfoResponse.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         self._tags = tags
 

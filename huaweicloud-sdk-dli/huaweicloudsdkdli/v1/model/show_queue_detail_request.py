@@ -21,57 +21,28 @@ class ShowQueueDetailRequest:
     sensitive_list = []
 
     openapi_types = {
-        'queue_type': 'str',
         'queue_name': 'str'
     }
 
     attribute_map = {
-        'queue_type': 'queue_type',
         'queue_name': 'queue_name'
     }
 
-    def __init__(self, queue_type=None, queue_name=None):
+    def __init__(self, queue_name=None):
         """ShowQueueDetailRequest
 
         The model defined in huaweicloud sdk
 
-        :param queue_type: 队列的类型,。有如下三种类型： sql general all 如果不指定，默认为sql。
-        :type queue_type: str
         :param queue_name: 指定查询的队列名称。
         :type queue_name: str
         """
         
         
 
-        self._queue_type = None
         self._queue_name = None
         self.discriminator = None
 
-        if queue_type is not None:
-            self.queue_type = queue_type
         self.queue_name = queue_name
-
-    @property
-    def queue_type(self):
-        """Gets the queue_type of this ShowQueueDetailRequest.
-
-        队列的类型,。有如下三种类型： sql general all 如果不指定，默认为sql。
-
-        :return: The queue_type of this ShowQueueDetailRequest.
-        :rtype: str
-        """
-        return self._queue_type
-
-    @queue_type.setter
-    def queue_type(self, queue_type):
-        """Sets the queue_type of this ShowQueueDetailRequest.
-
-        队列的类型,。有如下三种类型： sql general all 如果不指定，默认为sql。
-
-        :param queue_type: The queue_type of this ShowQueueDetailRequest.
-        :type queue_type: str
-        """
-        self._queue_type = queue_type
 
     @property
     def queue_name(self):

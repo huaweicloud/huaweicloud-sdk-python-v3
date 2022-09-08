@@ -35,7 +35,7 @@ class PrivateKeyVerify:
 
         The model defined in huaweicloud sdk
 
-        :param repository_uuid: 仓库UUID
+        :param repository_uuid: 仓库UUID(由CreateRepository接口返回)
         :type repository_uuid: str
         :param private_key: 私钥
         :type private_key: str
@@ -54,7 +54,7 @@ class PrivateKeyVerify:
     def repository_uuid(self):
         """Gets the repository_uuid of this PrivateKeyVerify.
 
-        仓库UUID
+        仓库UUID(由CreateRepository接口返回)
 
         :return: The repository_uuid of this PrivateKeyVerify.
         :rtype: str
@@ -65,7 +65,7 @@ class PrivateKeyVerify:
     def repository_uuid(self, repository_uuid):
         """Sets the repository_uuid of this PrivateKeyVerify.
 
-        仓库UUID
+        仓库UUID(由CreateRepository接口返回)
 
         :param repository_uuid: The repository_uuid of this PrivateKeyVerify.
         :type repository_uuid: str

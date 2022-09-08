@@ -38,9 +38,13 @@ class AntiDDoSRegion:
 
     LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://antiddos.la-south-2.myhuaweicloud.com")
 
-    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://antiddos.sa-peru-1.myhuaweicloud.com")
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://antiddos.sa-brazil-1.myhuaweicloud.com")
 
-    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://antiddos.sa-peru-1.myhuaweicloud.com")
+    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://antiddos.na-mexico-1.myhuaweicloud.com")
+
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://antiddos.la-north-2.myhuaweicloud.com")
+
+    CN_NORTH_9 = Region(id="cn-north-9", endpoint="https://antiddos.cn-north-9.myhuaweicloud.com")
 
     static_fields = {
         "cn-north-1": CN_NORTH_1,
@@ -59,6 +63,8 @@ class AntiDDoSRegion:
         "la-south-2": LA_SOUTH_2,
         "sa-brazil-1": SA_BRAZIL_1,
         "na-mexico-1": NA_MEXICO_1,
+        "la-north-2": LA_NORTH_2,
+        "cn-north-9": CN_NORTH_9,
     }
 
     @classmethod

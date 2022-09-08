@@ -1009,20 +1009,23 @@ class OcrClient(Client):
         
         **表1国家/地区和证件列表**
         
-        | 国家/地区  | 英文名称    | 国家/地区代码  country_region | 支持证件类型  id_type   |
-        | ---------- | ----------- | ------------------------ | ----------------------- |
-        | 越南       | Vietnam     | VNM                      | PP、DL、ID              |
-        | 印度       | India       | IND                      | PP                      |
-        | 菲律宾     | Philippines | PHL                      | PP、DL、ID(仅支持UUMID) |
-        | 阿尔巴尼亚 | Albania     | ALB                      | PP、DL、ID              |
-        | 巴西       | BRAZIL      | BRA                      | PP                      |
-        | 印度尼西亚 | INDONESIA   | IDN                      | PP                      |
-        | 马来西亚   | MALAYSIA    | MYS                      | PP                      |
-        | 尼日利亚   | NIGERIA     | NGA                      | PP                      |
-        | 巴基斯坦   | PAKISTAN    | PAK                      | PP                      |
-        | 俄罗斯     | RUSSIA      | RUS                      | PP(仅支持国际标准版本)  |
-        | 中国台湾   | TAIWAN      | TWN                      | PP                      |
-        | 乌克兰     | UKRAINE     | UKR                      | PP                      |
+        | 国家/地区  | 英文名称    | 国家/地区代码 country_region | 支持证件类型 id_type      |
+        | ---------- | ----------- | ---------------------------- | ------------------------- |
+        | 越南       | Vietnam     | VNM                          | PP、DL、ID                |
+        | 印度       | India       | IND                          | PP                        |
+        | 菲律宾     | Philippines | PHL                          | PP、DL、ID（仅支持UUMID） |
+        | 阿尔巴尼亚 | Albania     | ALB                          | PP、DL、ID                |
+        | 巴西       | BRAZIL      | BRA                          | PP                        |
+        | 印度尼西亚 | INDONESIA   | IDN                          | PP                        |
+        | 马来西亚   | MALAYSIA    | MYS                          | PP                        |
+        | 尼日利亚   | NIGERIA     | NGA                          | PP                        |
+        | 巴基斯坦   | PAKISTAN    | PAK                          | PP                        |
+        | 俄罗斯     | RUSSIA      | RUS                          | PP（仅支持国际标准版本）  |
+        | 中国台湾   | TAIWAN      | TWN                          | PP                        |
+        | 乌克兰     | UKRAINE     | UKR                          | PP                        |
+        | 泰国       | THAILAND    | THA                          | ID、PP                    |
+        | 智利       | CHILE       | CHL                          | ID、PP                    |
+        | 中国香港   | HONGKONG    | HKG                          | ID                        |
         
         - PP: passport,国际护照
         - DL: driving license,驾驶证

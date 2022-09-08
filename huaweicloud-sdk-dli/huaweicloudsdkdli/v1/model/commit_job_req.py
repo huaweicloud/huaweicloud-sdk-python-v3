@@ -25,7 +25,7 @@ class CommitJobReq:
         'currentdb': 'str',
         'queue_name': 'str',
         'conf': 'list[str]',
-        'tags': 'list[JobsTags]'
+        'tags': 'list[TmsTagEntity]'
     }
 
     attribute_map = {
@@ -45,12 +45,12 @@ class CommitJobReq:
         :type sql: str
         :param currentdb: SQL语句执行所在的数据库。当创建新数据库时，不需要提供此参数。
         :type currentdb: str
-        :param queue_name: 待提交作业的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。 说明：  队列名称不区分大小写，系统会自动转换为小写。
+        :param queue_name: 待提交作业的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
         :type queue_name: str
         :param conf: 用户以“key/value”的形式设置用于此作业的配置参数。目前支持的配置项请参考表3。
         :type conf: list[str]
-        :param tags: 作业的标签。具体请参考表tags。
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :param tags: 作业标签
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         
         
@@ -120,7 +120,7 @@ class CommitJobReq:
     def queue_name(self):
         """Gets the queue_name of this CommitJobReq.
 
-        待提交作业的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。 说明：  队列名称不区分大小写，系统会自动转换为小写。
+        待提交作业的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
 
         :return: The queue_name of this CommitJobReq.
         :rtype: str
@@ -131,7 +131,7 @@ class CommitJobReq:
     def queue_name(self, queue_name):
         """Sets the queue_name of this CommitJobReq.
 
-        待提交作业的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。 说明：  队列名称不区分大小写，系统会自动转换为小写。
+        待提交作业的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
 
         :param queue_name: The queue_name of this CommitJobReq.
         :type queue_name: str
@@ -164,10 +164,10 @@ class CommitJobReq:
     def tags(self):
         """Gets the tags of this CommitJobReq.
 
-        作业的标签。具体请参考表tags。
+        作业标签
 
         :return: The tags of this CommitJobReq.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         return self._tags
 
@@ -175,10 +175,10 @@ class CommitJobReq:
     def tags(self, tags):
         """Sets the tags of this CommitJobReq.
 
-        作业的标签。具体请参考表tags。
+        作业标签
 
         :param tags: The tags of this CommitJobReq.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         self._tags = tags
 

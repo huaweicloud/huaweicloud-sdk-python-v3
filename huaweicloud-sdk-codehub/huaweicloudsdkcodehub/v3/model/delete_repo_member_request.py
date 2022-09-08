@@ -37,7 +37,7 @@ class DeleteRepoMemberRequest:
 
         :param member_id: 仓库成员id
         :type member_id: str
-        :param repository_uuid: 仓库uuid
+        :param repository_uuid: 仓库uuid(由CreateRepository接口返回)
         :type repository_uuid: str
         """
         
@@ -76,7 +76,7 @@ class DeleteRepoMemberRequest:
     def repository_uuid(self):
         """Gets the repository_uuid of this DeleteRepoMemberRequest.
 
-        仓库uuid
+        仓库uuid(由CreateRepository接口返回)
 
         :return: The repository_uuid of this DeleteRepoMemberRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class DeleteRepoMemberRequest:
     def repository_uuid(self, repository_uuid):
         """Sets the repository_uuid of this DeleteRepoMemberRequest.
 
-        仓库uuid
+        仓库uuid(由CreateRepository接口返回)
 
         :param repository_uuid: The repository_uuid of this DeleteRepoMemberRequest.
         :type repository_uuid: str

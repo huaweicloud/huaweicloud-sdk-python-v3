@@ -57,7 +57,7 @@ class ListTemplatesRespPayloadTemplates:
         :type update_time: int
         :param sql_body: Stream SQL语句, 至少包含source, query, sink三个部分。
         :type sql_body: str
-        :param job_type: 作业模板类型。
+        :param job_type: 作业模板的类型。
         :type job_type: str
         """
         
@@ -223,7 +223,7 @@ class ListTemplatesRespPayloadTemplates:
     def job_type(self):
         """Gets the job_type of this ListTemplatesRespPayloadTemplates.
 
-        作业模板类型。
+        作业模板的类型。
 
         :return: The job_type of this ListTemplatesRespPayloadTemplates.
         :rtype: str
@@ -234,7 +234,7 @@ class ListTemplatesRespPayloadTemplates:
     def job_type(self, job_type):
         """Sets the job_type of this ListTemplatesRespPayloadTemplates.
 
-        作业模板类型。
+        作业模板的类型。
 
         :param job_type: The job_type of this ListTemplatesRespPayloadTemplates.
         :type job_type: str

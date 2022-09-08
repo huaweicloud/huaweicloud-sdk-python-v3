@@ -34,7 +34,7 @@ class ImportTableReq:
         'timestamp_format': 'str',
         'queue_name': 'str',
         'overwrite': 'bool',
-        'partition_spec': 'object',
+        'partition_spec': 'str',
         'conf': 'list[str]'
     }
 
@@ -88,7 +88,7 @@ class ImportTableReq:
         :param overwrite: 是否覆盖之前的数据
         :type overwrite: bool
         :param partition_spec: 表示需要导入到哪个分区
-        :type partition_spec: object
+        :type partition_spec: str
         :param conf: 用于定义此配置项的参数
         :type conf: list[str]
         """
@@ -432,7 +432,7 @@ class ImportTableReq:
         表示需要导入到哪个分区
 
         :return: The partition_spec of this ImportTableReq.
-        :rtype: object
+        :rtype: str
         """
         return self._partition_spec
 
@@ -443,7 +443,7 @@ class ImportTableReq:
         表示需要导入到哪个分区
 
         :param partition_spec: The partition_spec of this ImportTableReq.
-        :type partition_spec: object
+        :type partition_spec: str
         """
         self._partition_spec = partition_spec
 

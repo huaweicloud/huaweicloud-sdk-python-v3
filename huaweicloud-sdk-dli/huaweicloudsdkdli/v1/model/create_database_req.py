@@ -24,7 +24,7 @@ class CreateDatabaseReq:
         'database_name': 'str',
         'description': 'str',
         'enterprise_project_id': 'str',
-        'tags': 'list[JobsTags]'
+        'tags': 'list[TmsTagEntity]'
     }
 
     attribute_map = {
@@ -45,8 +45,8 @@ class CreateDatabaseReq:
         :type description: str
         :param enterprise_project_id: 企业项目ID，“0”表示default，即默认的企业项目。关于如何设置企业项目请参考《企业管理用户指南》。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
         :type enterprise_project_id: str
-        :param tags: 数据库的标签。具体请参考表tags。
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         
         
@@ -135,10 +135,10 @@ class CreateDatabaseReq:
     def tags(self):
         """Gets the tags of this CreateDatabaseReq.
 
-        数据库的标签。具体请参考表tags。
+        标签
 
         :return: The tags of this CreateDatabaseReq.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         return self._tags
 
@@ -146,10 +146,10 @@ class CreateDatabaseReq:
     def tags(self, tags):
         """Sets the tags of this CreateDatabaseReq.
 
-        数据库的标签。具体请参考表tags。
+        标签
 
         :param tags: The tags of this CreateDatabaseReq.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         self._tags = tags
 

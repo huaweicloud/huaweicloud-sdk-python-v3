@@ -43,7 +43,7 @@ class ListRepoMembersRequest:
         :type page_index: int
         :param page_size: 每页显示size
         :type page_size: int
-        :param repository_uuid: 仓库uuid
+        :param repository_uuid: 仓库uuid(由CreateRepository接口返回)
         :type repository_uuid: str
         :param subject: 搜索关键字
         :type subject: str
@@ -113,7 +113,7 @@ class ListRepoMembersRequest:
     def repository_uuid(self):
         """Gets the repository_uuid of this ListRepoMembersRequest.
 
-        仓库uuid
+        仓库uuid(由CreateRepository接口返回)
 
         :return: The repository_uuid of this ListRepoMembersRequest.
         :rtype: str
@@ -124,7 +124,7 @@ class ListRepoMembersRequest:
     def repository_uuid(self, repository_uuid):
         """Sets the repository_uuid of this ListRepoMembersRequest.
 
-        仓库uuid
+        仓库uuid(由CreateRepository接口返回)
 
         :param repository_uuid: The repository_uuid of this ListRepoMembersRequest.
         :type repository_uuid: str

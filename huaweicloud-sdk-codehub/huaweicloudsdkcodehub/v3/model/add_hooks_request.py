@@ -37,7 +37,7 @@ class AddHooksRequest:
 
         The model defined in huaweicloud sdk
 
-        :param group_name: 组名
+        :param group_name: 组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
         :type group_name: str
         :param repository_name: 仓库名
         :type repository_name: str
@@ -61,7 +61,7 @@ class AddHooksRequest:
     def group_name(self):
         """Gets the group_name of this AddHooksRequest.
 
-        组名
+        组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
         :return: The group_name of this AddHooksRequest.
         :rtype: str
@@ -72,7 +72,7 @@ class AddHooksRequest:
     def group_name(self, group_name):
         """Sets the group_name of this AddHooksRequest.
 
-        组名
+        组名(克隆地址中域名后面项目名前的一段 示例：git@codehub.alpha.devcloud.inhuawei.com:Demo00228/testword.git  组名：Demo00228 )
 
         :param group_name: The group_name of this AddHooksRequest.
         :type group_name: str

@@ -37,7 +37,7 @@ class CreateClusterResponse(SdkResponse):
 
         :param cluster: 
         :type cluster: :class:`huaweicloudsdkcss.v2.CreateClusterResp`
-        :param orde_id: 订单号。只有包周期集群拥有该参数。
+        :param orde_id: 订单号。若创建的是包周期集群，则只返回ordeld参数。
         :type orde_id: str
         """
         
@@ -76,7 +76,7 @@ class CreateClusterResponse(SdkResponse):
     def orde_id(self):
         """Gets the orde_id of this CreateClusterResponse.
 
-        订单号。只有包周期集群拥有该参数。
+        订单号。若创建的是包周期集群，则只返回ordeld参数。
 
         :return: The orde_id of this CreateClusterResponse.
         :rtype: str
@@ -87,7 +87,7 @@ class CreateClusterResponse(SdkResponse):
     def orde_id(self, orde_id):
         """Sets the orde_id of this CreateClusterResponse.
 
-        订单号。只有包周期集群拥有该参数。
+        订单号。若创建的是包周期集群，则只返回ordeld参数。
 
         :param orde_id: The orde_id of this CreateClusterResponse.
         :type orde_id: str

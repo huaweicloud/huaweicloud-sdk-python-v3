@@ -37,7 +37,7 @@ class CreateClusterElbWhiteList:
 
         :param enable_white_list: 是否开启公网访问控制。
         :type enable_white_list: bool
-        :param white_list: 公网访问控制白名单。白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
+        :param white_list: 公网访问控制白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
         :type white_list: str
         """
         
@@ -77,7 +77,7 @@ class CreateClusterElbWhiteList:
     def white_list(self):
         """Gets the white_list of this CreateClusterElbWhiteList.
 
-        公网访问控制白名单。白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
+        公网访问控制白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
 
         :return: The white_list of this CreateClusterElbWhiteList.
         :rtype: str
@@ -88,7 +88,7 @@ class CreateClusterElbWhiteList:
     def white_list(self, white_list):
         """Sets the white_list of this CreateClusterElbWhiteList.
 
-        公网访问控制白名单。白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
+        公网访问控制白名单。需要添加白名单的网段或ip，以逗号隔开，不可重复。
 
         :param white_list: The white_list of this CreateClusterElbWhiteList.
         :type white_list: str

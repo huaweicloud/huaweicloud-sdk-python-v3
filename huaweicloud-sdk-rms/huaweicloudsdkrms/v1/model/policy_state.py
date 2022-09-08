@@ -27,6 +27,7 @@ class PolicyState:
         'resource_name': 'str',
         'resource_provider': 'str',
         'resource_type': 'str',
+        'trigger_type': 'str',
         'compliance_state': 'str',
         'policy_assignment_id': 'str',
         'policy_assignment_name': 'str',
@@ -41,6 +42,7 @@ class PolicyState:
         'resource_name': 'resource_name',
         'resource_provider': 'resource_provider',
         'resource_type': 'resource_type',
+        'trigger_type': 'trigger_type',
         'compliance_state': 'compliance_state',
         'policy_assignment_id': 'policy_assignment_id',
         'policy_assignment_name': 'policy_assignment_name',
@@ -48,7 +50,7 @@ class PolicyState:
         'evaluation_time': 'evaluation_time'
     }
 
-    def __init__(self, domain_id=None, region_id=None, resource_id=None, resource_name=None, resource_provider=None, resource_type=None, compliance_state=None, policy_assignment_id=None, policy_assignment_name=None, policy_definition_id=None, evaluation_time=None):
+    def __init__(self, domain_id=None, region_id=None, resource_id=None, resource_name=None, resource_provider=None, resource_type=None, trigger_type=None, compliance_state=None, policy_assignment_id=None, policy_assignment_name=None, policy_definition_id=None, evaluation_time=None):
         """PolicyState
 
         The model defined in huaweicloud sdk
@@ -65,6 +67,8 @@ class PolicyState:
         :type resource_provider: str
         :param resource_type: 资源类型
         :type resource_type: str
+        :param trigger_type: 触发器类型，可选值：resource, period
+        :type trigger_type: str
         :param compliance_state: 合规状态
         :type compliance_state: str
         :param policy_assignment_id: 规则ID
@@ -85,6 +89,7 @@ class PolicyState:
         self._resource_name = None
         self._resource_provider = None
         self._resource_type = None
+        self._trigger_type = None
         self._compliance_state = None
         self._policy_assignment_id = None
         self._policy_assignment_name = None
@@ -104,6 +109,8 @@ class PolicyState:
             self.resource_provider = resource_provider
         if resource_type is not None:
             self.resource_type = resource_type
+        if trigger_type is not None:
+            self.trigger_type = trigger_type
         if compliance_state is not None:
             self.compliance_state = compliance_state
         if policy_assignment_id is not None:
@@ -246,6 +253,28 @@ class PolicyState:
         :type resource_type: str
         """
         self._resource_type = resource_type
+
+    @property
+    def trigger_type(self):
+        """Gets the trigger_type of this PolicyState.
+
+        触发器类型，可选值：resource, period
+
+        :return: The trigger_type of this PolicyState.
+        :rtype: str
+        """
+        return self._trigger_type
+
+    @trigger_type.setter
+    def trigger_type(self, trigger_type):
+        """Sets the trigger_type of this PolicyState.
+
+        触发器类型，可选值：resource, period
+
+        :param trigger_type: The trigger_type of this PolicyState.
+        :type trigger_type: str
+        """
+        self._trigger_type = trigger_type
 
     @property
     def compliance_state(self):

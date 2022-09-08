@@ -106,6 +106,64 @@ class ModerationClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def run_create_video_moderation_job(self, request):
+        """创建视频内容审核作业
+
+        创建视频内容审核作业，创建成功会将作业ID返回给用户
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RunCreateVideoModerationJob
+        :type request: :class:`huaweicloudsdkmoderation.v3.RunCreateVideoModerationJobRequest`
+        :rtype: :class:`huaweicloudsdkmoderation.v3.RunCreateVideoModerationJobResponse`
+        """
+        return self.run_create_video_moderation_job_with_http_info(request)
+
+    def run_create_video_moderation_job_with_http_info(self, request):
+        all_params = ['run_video_moderation_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/moderation/video/jobs',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RunCreateVideoModerationJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def run_query_audio_moderation_job(self, request):
         """查询音频内容审核作业
 
@@ -158,6 +216,64 @@ class ModerationClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='RunQueryAudioModerationJobResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def run_query_video_moderation_job(self, request):
+        """查询视频内容审核作业
+
+        查询视频审核作业处理状态与结果，并将识别结果返回给用户
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RunQueryVideoModerationJob
+        :type request: :class:`huaweicloudsdkmoderation.v3.RunQueryVideoModerationJobRequest`
+        :rtype: :class:`huaweicloudsdkmoderation.v3.RunQueryVideoModerationJobResponse`
+        """
+        return self.run_query_video_moderation_job_with_http_info(request)
+
+    def run_query_video_moderation_job_with_http_info(self, request):
+        all_params = ['job_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/moderation/video/jobs/{job_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RunQueryVideoModerationJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

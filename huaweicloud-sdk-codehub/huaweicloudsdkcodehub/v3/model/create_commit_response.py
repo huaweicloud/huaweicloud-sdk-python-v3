@@ -22,7 +22,7 @@ class CreateCommitResponse(SdkResponse):
 
     openapi_types = {
         'error': 'Error',
-        'result': 'list[CreateCommitResponseBody]',
+        'result': 'CreateCommitResponseBody',
         'status': 'str'
     }
 
@@ -39,8 +39,8 @@ class CreateCommitResponse(SdkResponse):
 
         :param error: 
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
-        :param result: 差异列表
-        :type result: list[:class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBody`]
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBody`
         :param status: 响应状态
         :type status: str
         """
@@ -83,10 +83,9 @@ class CreateCommitResponse(SdkResponse):
     def result(self):
         """Gets the result of this CreateCommitResponse.
 
-        差异列表
 
         :return: The result of this CreateCommitResponse.
-        :rtype: list[:class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBody`]
+        :rtype: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBody`
         """
         return self._result
 
@@ -94,10 +93,9 @@ class CreateCommitResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this CreateCommitResponse.
 
-        差异列表
 
         :param result: The result of this CreateCommitResponse.
-        :type result: list[:class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBody`]
+        :type result: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBody`
         """
         self._result = result
 

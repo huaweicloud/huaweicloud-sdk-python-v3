@@ -27,7 +27,7 @@ class CreateEnhancedConnectionsReq:
         'queues': 'list[str]',
         'hosts': 'list[EnhancedConnectionsHost]',
         'routetable_id': 'str',
-        'tags': 'list[JobsTags]'
+        'tags': 'list[TmsTagEntity]'
     }
 
     attribute_map = {
@@ -57,8 +57,8 @@ class CreateEnhancedConnectionsReq:
         :type hosts: list[:class:`huaweicloudsdkdli.v1.EnhancedConnectionsHost`]
         :param routetable_id: 对应服务的子网关联的路由表。
         :type routetable_id: str
-        :param tags: 作业的标签。具体请参考表tags。
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         
         
@@ -220,10 +220,10 @@ class CreateEnhancedConnectionsReq:
     def tags(self):
         """Gets the tags of this CreateEnhancedConnectionsReq.
 
-        作业的标签。具体请参考表tags。
+        标签
 
         :return: The tags of this CreateEnhancedConnectionsReq.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         return self._tags
 
@@ -231,10 +231,10 @@ class CreateEnhancedConnectionsReq:
     def tags(self, tags):
         """Sets the tags of this CreateEnhancedConnectionsReq.
 
-        作业的标签。具体请参考表tags。
+        标签
 
         :param tags: The tags of this CreateEnhancedConnectionsReq.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         self._tags = tags
 

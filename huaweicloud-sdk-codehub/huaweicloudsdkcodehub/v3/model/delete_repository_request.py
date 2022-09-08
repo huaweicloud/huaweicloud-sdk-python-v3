@@ -33,7 +33,7 @@ class DeleteRepositoryRequest:
 
         The model defined in huaweicloud sdk
 
-        :param repository_uuid: 仓库uuid，用来指定删除的仓库
+        :param repository_uuid: 仓库uuid(由CreateRepository接口返回)，用来指定删除的仓库
         :type repository_uuid: str
         """
         
@@ -48,7 +48,7 @@ class DeleteRepositoryRequest:
     def repository_uuid(self):
         """Gets the repository_uuid of this DeleteRepositoryRequest.
 
-        仓库uuid，用来指定删除的仓库
+        仓库uuid(由CreateRepository接口返回)，用来指定删除的仓库
 
         :return: The repository_uuid of this DeleteRepositoryRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class DeleteRepositoryRequest:
     def repository_uuid(self, repository_uuid):
         """Sets the repository_uuid of this DeleteRepositoryRequest.
 
-        仓库uuid，用来指定删除的仓库
+        仓库uuid(由CreateRepository接口返回)，用来指定删除的仓库
 
         :param repository_uuid: The repository_uuid of this DeleteRepositoryRequest.
         :type repository_uuid: str

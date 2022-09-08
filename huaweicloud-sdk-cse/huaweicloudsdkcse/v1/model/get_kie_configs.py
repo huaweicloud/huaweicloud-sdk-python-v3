@@ -28,7 +28,9 @@ class GetKieConfigs:
         'value_type': 'str',
         'status': 'str',
         'create_time': 'int',
-        'update_time': 'int'
+        'update_time': 'int',
+        'create_revision': 'int',
+        'update_revision': 'int'
     }
 
     attribute_map = {
@@ -39,10 +41,12 @@ class GetKieConfigs:
         'value_type': 'value_type',
         'status': 'status',
         'create_time': 'create_time',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'create_revision': 'create_revision',
+        'update_revision': 'update_revision'
     }
 
-    def __init__(self, id=None, key=None, labels=None, value=None, value_type=None, status=None, create_time=None, update_time=None):
+    def __init__(self, id=None, key=None, labels=None, value=None, value_type=None, status=None, create_time=None, update_time=None, create_revision=None, update_revision=None):
         """GetKieConfigs
 
         The model defined in huaweicloud sdk
@@ -63,6 +67,10 @@ class GetKieConfigs:
         :type create_time: int
         :param update_time: 更新时间。
         :type update_time: int
+        :param create_revision: 创建配置的版本号
+        :type create_revision: int
+        :param update_revision: 修改配置的版本号
+        :type update_revision: int
         """
         
         
@@ -75,6 +83,8 @@ class GetKieConfigs:
         self._status = None
         self._create_time = None
         self._update_time = None
+        self._create_revision = None
+        self._update_revision = None
         self.discriminator = None
 
         if id is not None:
@@ -93,6 +103,10 @@ class GetKieConfigs:
             self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
+        if create_revision is not None:
+            self.create_revision = create_revision
+        if update_revision is not None:
+            self.update_revision = update_revision
 
     @property
     def id(self):
@@ -269,6 +283,50 @@ class GetKieConfigs:
         :type update_time: int
         """
         self._update_time = update_time
+
+    @property
+    def create_revision(self):
+        """Gets the create_revision of this GetKieConfigs.
+
+        创建配置的版本号
+
+        :return: The create_revision of this GetKieConfigs.
+        :rtype: int
+        """
+        return self._create_revision
+
+    @create_revision.setter
+    def create_revision(self, create_revision):
+        """Sets the create_revision of this GetKieConfigs.
+
+        创建配置的版本号
+
+        :param create_revision: The create_revision of this GetKieConfigs.
+        :type create_revision: int
+        """
+        self._create_revision = create_revision
+
+    @property
+    def update_revision(self):
+        """Gets the update_revision of this GetKieConfigs.
+
+        修改配置的版本号
+
+        :return: The update_revision of this GetKieConfigs.
+        :rtype: int
+        """
+        return self._update_revision
+
+    @update_revision.setter
+    def update_revision(self, update_revision):
+        """Sets the update_revision of this GetKieConfigs.
+
+        修改配置的版本号
+
+        :param update_revision: The update_revision of this GetKieConfigs.
+        :type update_revision: int
+        """
+        self._update_revision = update_revision
 
     def to_dict(self):
         """Returns the model properties as a dict"""

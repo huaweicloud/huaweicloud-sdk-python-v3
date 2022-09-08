@@ -42,7 +42,8 @@ class AudioInputBody:
         self._url = None
         self.discriminator = None
 
-        self.url = url
+        if url is not None:
+            self.url = url
 
     @property
     def url(self):

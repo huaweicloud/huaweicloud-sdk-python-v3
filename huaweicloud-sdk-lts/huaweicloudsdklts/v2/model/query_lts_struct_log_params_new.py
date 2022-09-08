@@ -23,16 +23,18 @@ class QueryLtsStructLogParamsNew:
     openapi_types = {
         'query': 'str',
         'format': 'str',
-        'time_range': 'TimeRange'
+        'time_range': 'TimeRange',
+        'whether_to_rows': 'bool'
     }
 
     attribute_map = {
         'query': 'query',
         'format': 'format',
-        'time_range': 'time_range'
+        'time_range': 'time_range',
+        'whether_to_rows': 'whether_to_rows'
     }
 
-    def __init__(self, query=None, format=None, time_range=None):
+    def __init__(self, query=None, format=None, time_range=None, whether_to_rows=None):
         """QueryLtsStructLogParamsNew
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class QueryLtsStructLogParamsNew:
         :type format: str
         :param time_range: 
         :type time_range: :class:`huaweicloudsdklts.v2.TimeRange`
+        :param whether_to_rows: 返回数据格式，是否为行数据，默认为false。
+        :type whether_to_rows: bool
         """
         
         
@@ -50,11 +54,14 @@ class QueryLtsStructLogParamsNew:
         self._query = None
         self._format = None
         self._time_range = None
+        self._whether_to_rows = None
         self.discriminator = None
 
         self.query = query
         self.format = format
         self.time_range = time_range
+        if whether_to_rows is not None:
+            self.whether_to_rows = whether_to_rows
 
     @property
     def query(self):
@@ -119,6 +126,28 @@ class QueryLtsStructLogParamsNew:
         :type time_range: :class:`huaweicloudsdklts.v2.TimeRange`
         """
         self._time_range = time_range
+
+    @property
+    def whether_to_rows(self):
+        """Gets the whether_to_rows of this QueryLtsStructLogParamsNew.
+
+        返回数据格式，是否为行数据，默认为false。
+
+        :return: The whether_to_rows of this QueryLtsStructLogParamsNew.
+        :rtype: bool
+        """
+        return self._whether_to_rows
+
+    @whether_to_rows.setter
+    def whether_to_rows(self, whether_to_rows):
+        """Sets the whether_to_rows of this QueryLtsStructLogParamsNew.
+
+        返回数据格式，是否为行数据，默认为false。
+
+        :param whether_to_rows: The whether_to_rows of this QueryLtsStructLogParamsNew.
+        :type whether_to_rows: bool
+        """
+        self._whether_to_rows = whether_to_rows
 
     def to_dict(self):
         """Returns the model properties as a dict"""

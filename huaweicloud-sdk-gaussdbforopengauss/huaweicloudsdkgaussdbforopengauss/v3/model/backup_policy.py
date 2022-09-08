@@ -24,17 +24,23 @@ class BackupPolicy:
         'keep_days': 'int',
         'start_time': 'str',
         'period': 'str',
-        'differential_period': 'str'
+        'differential_period': 'str',
+        'rate_limit': 'int',
+        'prefetch_block': 'int',
+        'filesplit_size': 'int'
     }
 
     attribute_map = {
         'keep_days': 'keep_days',
         'start_time': 'start_time',
         'period': 'period',
-        'differential_period': 'differential_period'
+        'differential_period': 'differential_period',
+        'rate_limit': 'rate_limit',
+        'prefetch_block': 'prefetch_block',
+        'filesplit_size': 'filesplit_size'
     }
 
-    def __init__(self, keep_days=None, start_time=None, period=None, differential_period=None):
+    def __init__(self, keep_days=None, start_time=None, period=None, differential_period=None, rate_limit=None, prefetch_block=None, filesplit_size=None):
         """BackupPolicy
 
         The model defined in huaweicloud sdk
@@ -47,6 +53,12 @@ class BackupPolicy:
         :type period: str
         :param differential_period: 差异备份间隔时间配置。每次自动差异备份的间隔时间。  取值范围：15、30、60、180、360、720、1440。单位：分钟。  取值示例：30
         :type differential_period: str
+        :param rate_limit: 备份限速  取值范围：0 ~ 1024
+        :type rate_limit: int
+        :param prefetch_block: 控制差量备份时读取磁盘上表文件差量修改页面的预取页面个数。当差量修改页面非常集中时（如数据导入场景），可以适当调大该值；当差量修改页面非常分散时（如随机更新），可以适当调小该值。  取值范围：1 ~ 8192
+        :type prefetch_block: int
+        :param filesplit_size: 全量、差量备份时产生的备份文件会根据分片大小进行拆分，可设置范围为0~1024GB，设置需为4的倍数，默认4GB，0GB表示不限制大小。  取值范围：0 ~ 1024
+        :type filesplit_size: int
         """
         
         
@@ -55,12 +67,21 @@ class BackupPolicy:
         self._start_time = None
         self._period = None
         self._differential_period = None
+        self._rate_limit = None
+        self._prefetch_block = None
+        self._filesplit_size = None
         self.discriminator = None
 
         self.keep_days = keep_days
         self.start_time = start_time
         self.period = period
         self.differential_period = differential_period
+        if rate_limit is not None:
+            self.rate_limit = rate_limit
+        if prefetch_block is not None:
+            self.prefetch_block = prefetch_block
+        if filesplit_size is not None:
+            self.filesplit_size = filesplit_size
 
     @property
     def keep_days(self):
@@ -149,6 +170,72 @@ class BackupPolicy:
         :type differential_period: str
         """
         self._differential_period = differential_period
+
+    @property
+    def rate_limit(self):
+        """Gets the rate_limit of this BackupPolicy.
+
+        备份限速  取值范围：0 ~ 1024
+
+        :return: The rate_limit of this BackupPolicy.
+        :rtype: int
+        """
+        return self._rate_limit
+
+    @rate_limit.setter
+    def rate_limit(self, rate_limit):
+        """Sets the rate_limit of this BackupPolicy.
+
+        备份限速  取值范围：0 ~ 1024
+
+        :param rate_limit: The rate_limit of this BackupPolicy.
+        :type rate_limit: int
+        """
+        self._rate_limit = rate_limit
+
+    @property
+    def prefetch_block(self):
+        """Gets the prefetch_block of this BackupPolicy.
+
+        控制差量备份时读取磁盘上表文件差量修改页面的预取页面个数。当差量修改页面非常集中时（如数据导入场景），可以适当调大该值；当差量修改页面非常分散时（如随机更新），可以适当调小该值。  取值范围：1 ~ 8192
+
+        :return: The prefetch_block of this BackupPolicy.
+        :rtype: int
+        """
+        return self._prefetch_block
+
+    @prefetch_block.setter
+    def prefetch_block(self, prefetch_block):
+        """Sets the prefetch_block of this BackupPolicy.
+
+        控制差量备份时读取磁盘上表文件差量修改页面的预取页面个数。当差量修改页面非常集中时（如数据导入场景），可以适当调大该值；当差量修改页面非常分散时（如随机更新），可以适当调小该值。  取值范围：1 ~ 8192
+
+        :param prefetch_block: The prefetch_block of this BackupPolicy.
+        :type prefetch_block: int
+        """
+        self._prefetch_block = prefetch_block
+
+    @property
+    def filesplit_size(self):
+        """Gets the filesplit_size of this BackupPolicy.
+
+        全量、差量备份时产生的备份文件会根据分片大小进行拆分，可设置范围为0~1024GB，设置需为4的倍数，默认4GB，0GB表示不限制大小。  取值范围：0 ~ 1024
+
+        :return: The filesplit_size of this BackupPolicy.
+        :rtype: int
+        """
+        return self._filesplit_size
+
+    @filesplit_size.setter
+    def filesplit_size(self, filesplit_size):
+        """Sets the filesplit_size of this BackupPolicy.
+
+        全量、差量备份时产生的备份文件会根据分片大小进行拆分，可设置范围为0~1024GB，设置需为4的倍数，默认4GB，0GB表示不限制大小。  取值范围：0 ~ 1024
+
+        :param filesplit_size: The filesplit_size of this BackupPolicy.
+        :type filesplit_size: int
+        """
+        self._filesplit_size = filesplit_size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

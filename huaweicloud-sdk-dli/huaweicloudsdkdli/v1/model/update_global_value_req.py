@@ -21,63 +21,34 @@ class UpdateGlobalValueReq:
     sensitive_list = []
 
     openapi_types = {
-        'var_name': 'str',
         'var_value': 'str'
     }
 
     attribute_map = {
-        'var_name': 'var_name',
         'var_value': 'var_value'
     }
 
-    def __init__(self, var_name=None, var_value=None):
+    def __init__(self, var_value=None):
         """UpdateGlobalValueReq
 
         The model defined in huaweicloud sdk
 
-        :param var_name: 变量名称
-        :type var_name: str
-        :param var_value: 变量的值
+        :param var_value: 变量值
         :type var_value: str
         """
         
         
 
-        self._var_name = None
         self._var_value = None
         self.discriminator = None
 
-        if var_name is not None:
-            self.var_name = var_name
         self.var_value = var_value
-
-    @property
-    def var_name(self):
-        """Gets the var_name of this UpdateGlobalValueReq.
-
-        变量名称
-
-        :return: The var_name of this UpdateGlobalValueReq.
-        :rtype: str
-        """
-        return self._var_name
-
-    @var_name.setter
-    def var_name(self, var_name):
-        """Sets the var_name of this UpdateGlobalValueReq.
-
-        变量名称
-
-        :param var_name: The var_name of this UpdateGlobalValueReq.
-        :type var_name: str
-        """
-        self._var_name = var_name
 
     @property
     def var_value(self):
         """Gets the var_value of this UpdateGlobalValueReq.
 
-        变量的值
+        变量值
 
         :return: The var_value of this UpdateGlobalValueReq.
         :rtype: str
@@ -88,7 +59,7 @@ class UpdateGlobalValueReq:
     def var_value(self, var_value):
         """Sets the var_value of this UpdateGlobalValueReq.
 
-        变量的值
+        变量值
 
         :param var_value: The var_value of this UpdateGlobalValueReq.
         :type var_value: str

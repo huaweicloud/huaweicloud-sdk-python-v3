@@ -21,20 +21,24 @@ class ModifyIpWhitelistBody:
     sensitive_list = []
 
     openapi_types = {
+        'instance_id': 'str',
         'enable_whitelist': 'bool',
         'whitelist': 'list[Whitelist]'
     }
 
     attribute_map = {
+        'instance_id': 'instance_id',
         'enable_whitelist': 'enable_whitelist',
         'whitelist': 'whitelist'
     }
 
-    def __init__(self, enable_whitelist=None, whitelist=None):
+    def __init__(self, instance_id=None, enable_whitelist=None, whitelist=None):
         """ModifyIpWhitelistBody
 
         The model defined in huaweicloud sdk
 
+        :param instance_id: 实例ID
+        :type instance_id: str
         :param enable_whitelist: 是否启用白名单（true/false）。
         :type enable_whitelist: bool
         :param whitelist: IP白名单分组列表。
@@ -43,12 +47,37 @@ class ModifyIpWhitelistBody:
         
         
 
+        self._instance_id = None
         self._enable_whitelist = None
         self._whitelist = None
         self.discriminator = None
 
+        if instance_id is not None:
+            self.instance_id = instance_id
         self.enable_whitelist = enable_whitelist
         self.whitelist = whitelist
+
+    @property
+    def instance_id(self):
+        """Gets the instance_id of this ModifyIpWhitelistBody.
+
+        实例ID
+
+        :return: The instance_id of this ModifyIpWhitelistBody.
+        :rtype: str
+        """
+        return self._instance_id
+
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this ModifyIpWhitelistBody.
+
+        实例ID
+
+        :param instance_id: The instance_id of this ModifyIpWhitelistBody.
+        :type instance_id: str
+        """
+        self._instance_id = instance_id
 
     @property
     def enable_whitelist(self):

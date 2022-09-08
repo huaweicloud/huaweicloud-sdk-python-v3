@@ -45,7 +45,7 @@ class StartAutoCreateSnapshotsReq:
         :type keepday: int
         :param period: 每天创建快照的时刻，只支持整点，后面需加上时区，格式为“HH:mm z”，“HH:mm”表示整点时间，“z”表示时区。比如“00:00 GMT+08:00”、“01:00 GMT+08:00”等。
         :type period: str
-        :param prefix: 自动创建的快照名称前缀。
+        :param prefix: 自动创建的快照名称前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
         :type prefix: str
         """
         
@@ -133,7 +133,7 @@ class StartAutoCreateSnapshotsReq:
     def prefix(self):
         """Gets the prefix of this StartAutoCreateSnapshotsReq.
 
-        自动创建的快照名称前缀。
+        自动创建的快照名称前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
 
         :return: The prefix of this StartAutoCreateSnapshotsReq.
         :rtype: str
@@ -144,7 +144,7 @@ class StartAutoCreateSnapshotsReq:
     def prefix(self, prefix):
         """Sets the prefix of this StartAutoCreateSnapshotsReq.
 
-        自动创建的快照名称前缀。
+        自动创建的快照名称前缀，需要用户自己手动输入。只能包含1~32位小写字母、数字、中划线或者下划线，并且以小写字母开头。
 
         :param prefix: The prefix of this StartAutoCreateSnapshotsReq.
         :type prefix: str

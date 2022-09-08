@@ -39,13 +39,13 @@ class AddDeployKeyRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param application: 部署key的来源
+        :param application: 部署使用的SSH密钥的来源
         :type application: str
-        :param can_push: 部署key是否可以推送代码
+        :param can_push: 部署使用的SSH密钥是否可以推送代码
         :type can_push: bool
-        :param key: 部署key
+        :param key: 部署使用的SSH密钥
         :type key: str
-        :param key_title: 部署key名称
+        :param key_title: 部署使用的SSH密钥名称
         :type key_title: str
         """
         
@@ -66,7 +66,7 @@ class AddDeployKeyRequestBody:
     def application(self):
         """Gets the application of this AddDeployKeyRequestBody.
 
-        部署key的来源
+        部署使用的SSH密钥的来源
 
         :return: The application of this AddDeployKeyRequestBody.
         :rtype: str
@@ -77,7 +77,7 @@ class AddDeployKeyRequestBody:
     def application(self, application):
         """Sets the application of this AddDeployKeyRequestBody.
 
-        部署key的来源
+        部署使用的SSH密钥的来源
 
         :param application: The application of this AddDeployKeyRequestBody.
         :type application: str
@@ -88,7 +88,7 @@ class AddDeployKeyRequestBody:
     def can_push(self):
         """Gets the can_push of this AddDeployKeyRequestBody.
 
-        部署key是否可以推送代码
+        部署使用的SSH密钥是否可以推送代码
 
         :return: The can_push of this AddDeployKeyRequestBody.
         :rtype: bool
@@ -99,7 +99,7 @@ class AddDeployKeyRequestBody:
     def can_push(self, can_push):
         """Sets the can_push of this AddDeployKeyRequestBody.
 
-        部署key是否可以推送代码
+        部署使用的SSH密钥是否可以推送代码
 
         :param can_push: The can_push of this AddDeployKeyRequestBody.
         :type can_push: bool
@@ -110,7 +110,7 @@ class AddDeployKeyRequestBody:
     def key(self):
         """Gets the key of this AddDeployKeyRequestBody.
 
-        部署key
+        部署使用的SSH密钥
 
         :return: The key of this AddDeployKeyRequestBody.
         :rtype: str
@@ -121,7 +121,7 @@ class AddDeployKeyRequestBody:
     def key(self, key):
         """Sets the key of this AddDeployKeyRequestBody.
 
-        部署key
+        部署使用的SSH密钥
 
         :param key: The key of this AddDeployKeyRequestBody.
         :type key: str
@@ -132,7 +132,7 @@ class AddDeployKeyRequestBody:
     def key_title(self):
         """Gets the key_title of this AddDeployKeyRequestBody.
 
-        部署key名称
+        部署使用的SSH密钥名称
 
         :return: The key_title of this AddDeployKeyRequestBody.
         :rtype: str
@@ -143,7 +143,7 @@ class AddDeployKeyRequestBody:
     def key_title(self, key_title):
         """Sets the key_title of this AddDeployKeyRequestBody.
 
-        部署key名称
+        部署使用的SSH密钥名称
 
         :param key_title: The key_title of this AddDeployKeyRequestBody.
         :type key_title: str

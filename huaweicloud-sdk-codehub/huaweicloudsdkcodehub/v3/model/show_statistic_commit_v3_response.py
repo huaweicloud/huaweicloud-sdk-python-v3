@@ -22,7 +22,7 @@ class ShowStatisticCommitV3Response(SdkResponse):
 
     openapi_types = {
         'error': 'Error',
-        'result': 'list[CommitStatistic]',
+        'result': 'CommitStatistic',
         'status': 'str'
     }
 
@@ -39,8 +39,8 @@ class ShowStatisticCommitV3Response(SdkResponse):
 
         :param error: 
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
-        :param result: 代码增加和删除的行数
-        :type result: list[:class:`huaweicloudsdkcodehub.v3.CommitStatistic`]
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.CommitStatistic`
         :param status: 响应状态
         :type status: str
         """
@@ -83,10 +83,9 @@ class ShowStatisticCommitV3Response(SdkResponse):
     def result(self):
         """Gets the result of this ShowStatisticCommitV3Response.
 
-        代码增加和删除的行数
 
         :return: The result of this ShowStatisticCommitV3Response.
-        :rtype: list[:class:`huaweicloudsdkcodehub.v3.CommitStatistic`]
+        :rtype: :class:`huaweicloudsdkcodehub.v3.CommitStatistic`
         """
         return self._result
 
@@ -94,10 +93,9 @@ class ShowStatisticCommitV3Response(SdkResponse):
     def result(self, result):
         """Sets the result of this ShowStatisticCommitV3Response.
 
-        代码增加和删除的行数
 
         :param result: The result of this ShowStatisticCommitV3Response.
-        :type result: list[:class:`huaweicloudsdkcodehub.v3.CommitStatistic`]
+        :type result: :class:`huaweicloudsdkcodehub.v3.CommitStatistic`
         """
         self._result = result
 

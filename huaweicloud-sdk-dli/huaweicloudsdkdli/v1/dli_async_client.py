@@ -121,7 +121,7 @@ class DliAsyncClient(Client):
         return self.create_globle_value_with_http_info(request)
 
     def create_globle_value_with_http_info(self, request):
-        all_params = ['create_globale_value_req']
+        all_params = ['create_global_value_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -295,7 +295,7 @@ class DliAsyncClient(Client):
         return self.list_flink_templates_with_http_info(request)
 
     def list_flink_templates_with_http_info(self, request):
-        all_params = ['name', 'tags', 'offset', 'order', 'limit']
+        all_params = ['limit', 'name', 'offset', 'order', 'tags']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -306,16 +306,16 @@ class DliAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'order' in local_var_params:
             query_params.append(('order', local_var_params['order']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -708,7 +708,7 @@ class DliAsyncClient(Client):
         """创建经典型跨源连接
 
         该API用于创建与其他服务的经典型跨源连接。
-        说明： 
+        说明：
         如果需要了解Console界面的使用方法，可参考经典型跨源连接。
         系统default队列不支持创建跨源连接。
         
@@ -882,7 +882,7 @@ class DliAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_flink_jar_async(self, request):
-        """新建Flink Jar作业
+        """新建flink自定义作业
 
         用户自定义作业目前支持jar格式，运行在独享集群中。
         
@@ -1235,7 +1235,7 @@ class DliAsyncClient(Client):
         """删除经典型跨源连接
 
         该API用于删除已创建的经典型跨源连接。
-        说明： 
+        说明：
         创建中的连接，无法删除。
         
         详细说明请参考华为云API Explorer。
@@ -1656,7 +1656,7 @@ class DliAsyncClient(Client):
         return self.list_datasource_connections_with_http_info(request)
 
     def list_datasource_connections_with_http_info(self, request):
-        all_params = []
+        all_params = ['tags']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1667,6 +1667,8 @@ class DliAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -1842,7 +1844,7 @@ class DliAsyncClient(Client):
         return self.list_enhanced_connections_with_http_info(request)
 
     def list_enhanced_connections_with_http_info(self, request):
-        all_params = ['limit', 'offset', 'status', 'name']
+        all_params = ['limit', 'name', 'offset', 'status', 'tags']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1855,12 +1857,14 @@ class DliAsyncClient(Client):
         query_params = []
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
         if 'status' in local_var_params:
             query_params.append(('status', local_var_params['status']))
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -1906,7 +1910,7 @@ class DliAsyncClient(Client):
         return self.list_flink_jobs_with_http_info(request)
 
     def list_flink_jobs_with_http_info(self, request):
-        all_params = ['name', 'user_name', 'queue_name', 'status', 'job_type', 'tags', 'sys_enterprise_project_name', 'show_detail', 'order', 'offset', 'limit', 'root_job_id']
+        all_params = ['job_type', 'limit', 'name', 'offset', 'order', 'queue_name', 'root_job_id', 'show_detail', 'status', 'sys_enterprise_project_name', 'tags', 'user_name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1917,30 +1921,30 @@ class DliAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'name' in local_var_params:
-            query_params.append(('name', local_var_params['name']))
-        if 'user_name' in local_var_params:
-            query_params.append(('user_name', local_var_params['user_name']))
-        if 'queue_name' in local_var_params:
-            query_params.append(('queue_name', local_var_params['queue_name']))
-        if 'status' in local_var_params:
-            query_params.append(('status', local_var_params['status']))
         if 'job_type' in local_var_params:
             query_params.append(('job_type', local_var_params['job_type']))
-        if 'tags' in local_var_params:
-            query_params.append(('tags', local_var_params['tags']))
-        if 'sys_enterprise_project_name' in local_var_params:
-            query_params.append(('sys_enterprise_project_name', local_var_params['sys_enterprise_project_name']))
-        if 'show_detail' in local_var_params:
-            query_params.append(('show_detail', local_var_params['show_detail']))
-        if 'order' in local_var_params:
-            query_params.append(('order', local_var_params['order']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
+        if 'queue_name' in local_var_params:
+            query_params.append(('queue_name', local_var_params['queue_name']))
         if 'root_job_id' in local_var_params:
             query_params.append(('root_job_id', local_var_params['root_job_id']))
+        if 'show_detail' in local_var_params:
+            query_params.append(('show_detail', local_var_params['show_detail']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+        if 'sys_enterprise_project_name' in local_var_params:
+            query_params.append(('sys_enterprise_project_name', local_var_params['sys_enterprise_project_name']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
 
         header_params = {}
 
@@ -2674,7 +2678,7 @@ class DliAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def update_flink_jar_async(self, request):
-        """更新Flink Jar作业
+        """更新flink自定义作业
 
         更新用户自定义作业，目前支持jar格式，运行在独享集群中。
         
@@ -3089,7 +3093,7 @@ class DliAsyncClient(Client):
         """数据赋权
 
         该API用于将数据库或数据表的数据权限赋给指定的其他用户。
-        说明： 
+        说明：
         被赋权用户所在用户组的所属区域需具有Tenant Guest权限。
         
         详细说明请参考华为云API Explorer。
@@ -3160,7 +3164,7 @@ class DliAsyncClient(Client):
         return self.change_queue_plan_with_http_info(request)
 
     def change_queue_plan_with_http_info(self, request):
-        all_params = ['queue_name', 'plan_id', 'body']
+        all_params = ['plan_id', 'queue_name', 'body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3169,10 +3173,10 @@ class DliAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'queue_name' in local_var_params:
-            path_params['queue_name'] = local_var_params['queue_name']
         if 'plan_id' in local_var_params:
             path_params['plan_id'] = local_var_params['plan_id']
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
 
         query_params = []
 
@@ -3383,22 +3387,22 @@ class DliAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def create_job_result_async(self, request):
-        """导出查询结果
+    def create_download_job_async(self, request):
+        """创建数据下载作业
 
-        该API用于将SQL语句的查询结果导出到OBS对象存储中，只支持导出“QUERY”类型作业的查询结果。
+        该API用于创建数据下载作业。在DLI内部创建一个赋权给用户的额桶并返回
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
 
-        :param request: Request instance for CreateJobResult
-        :type request: :class:`huaweicloudsdkdli.v1.CreateJobResultRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.CreateJobResultResponse`
+        :param request: Request instance for CreateDownloadJob
+        :type request: :class:`huaweicloudsdkdli.v1.CreateDownloadJobRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.CreateDownloadJobResponse`
         """
-        return self.create_job_result_with_http_info(request)
+        return self.create_download_job_with_http_info(request)
 
-    def create_job_result_with_http_info(self, request):
-        all_params = ['job_id', 'body']
+    def create_download_job_with_http_info(self, request):
+        all_params = ['body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3407,8 +3411,6 @@ class DliAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'job_id' in local_var_params:
-            path_params['job_id'] = local_var_params['job_id']
 
         query_params = []
 
@@ -3430,14 +3432,14 @@ class DliAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v1.0/{project_id}/jobs/{job_id}/export-result',
+            resource_path='/v1/{project_id}/downloaders',
             method='POST',
             path_params=path_params,
             query_params=query_params,
             header_params=header_params,
             body=body_params,
             post_params=form_params,
-            response_type='CreateJobResultResponse',
+            response_type='CreateDownloadJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3636,7 +3638,7 @@ class DliAsyncClient(Client):
         return self.delete_database_with_http_info(request)
 
     def delete_database_with_http_info(self, request):
-        all_params = ['database_name', 'cascade', '_async']
+        all_params = ['database_name', '_async', 'cascade']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3649,10 +3651,10 @@ class DliAsyncClient(Client):
             path_params['database_name'] = local_var_params['database_name']
 
         query_params = []
-        if 'cascade' in local_var_params:
-            query_params.append(('cascade', local_var_params['cascade']))
         if '_async' in local_var_params:
             query_params.append(('async', local_var_params['_async']))
+        if 'cascade' in local_var_params:
+            query_params.append(('cascade', local_var_params['cascade']))
 
         header_params = {}
 
@@ -3687,7 +3689,7 @@ class DliAsyncClient(Client):
         """删除队列
 
         该API用于删除指定队列。
-        说明： 
+        说明：
         若指定队列正在执行任务，则不允许删除。
         
         详细说明请参考华为云API Explorer。
@@ -3758,7 +3760,7 @@ class DliAsyncClient(Client):
         return self.delete_queue_plan_with_http_info(request)
 
     def delete_queue_plan_with_http_info(self, request):
-        all_params = ['queue_name', 'plan_id']
+        all_params = ['plan_id', 'queue_name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3767,10 +3769,10 @@ class DliAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'queue_name' in local_var_params:
-            path_params['queue_name'] = local_var_params['queue_name']
         if 'plan_id' in local_var_params:
             path_params['plan_id'] = local_var_params['plan_id']
+        if 'queue_name' in local_var_params:
+            path_params['queue_name'] = local_var_params['queue_name']
 
         query_params = []
 
@@ -3923,6 +3925,66 @@ class DliAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def export_job_result_async(self, request):
+        """导出查询结果
+
+        该API用于将SQL语句的查询结果导出到OBS对象存储中，只支持导出“QUERY”类型作业的查询结果。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ExportJobResult
+        :type request: :class:`huaweicloudsdkdli.v1.ExportJobResultRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ExportJobResultResponse`
+        """
+        return self.export_job_result_with_http_info(request)
+
+    def export_job_result_with_http_info(self, request):
+        all_params = ['job_id', 'body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/jobs/{job_id}/export-result',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ExportJobResultResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def import_data_async(self, request):
         """导入数据
 
@@ -3976,6 +4038,76 @@ class DliAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ImportDataResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_all_tables_async(self, request):
+        """查询所有表
+
+        该API用于查询指定数据库下符合过滤条件的或所有的表信息。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListAllTables
+        :type request: :class:`huaweicloudsdkdli.v1.ListAllTablesRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.ListAllTablesResponse`
+        """
+        return self.list_all_tables_with_http_info(request)
+
+    def list_all_tables_with_http_info(self, request):
+        all_params = ['database_name', 'current_page', 'keyword', 'page_size', 'table_type', 'with_detail', 'with_priv']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+
+        query_params = []
+        if 'current_page' in local_var_params:
+            query_params.append(('current-page', local_var_params['current_page']))
+        if 'keyword' in local_var_params:
+            query_params.append(('keyword', local_var_params['keyword']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page-size', local_var_params['page_size']))
+        if 'table_type' in local_var_params:
+            query_params.append(('table-type', local_var_params['table_type']))
+        if 'with_detail' in local_var_params:
+            query_params.append(('with-detail', local_var_params['with_detail']))
+        if 'with_priv' in local_var_params:
+            query_params.append(('with-priv', local_var_params['with_priv']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/databases/{database_name}/tables',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAllTablesResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4054,7 +4186,7 @@ class DliAsyncClient(Client):
         return self.list_databases_with_http_info(request)
 
     def list_databases_with_http_info(self, request):
-        all_params = ['with_priv', 'offset', 'limit', 'keyword', 'tags']
+        all_params = ['keyword', 'limit', 'offset', 'tags', 'with_priv']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4065,16 +4197,16 @@ class DliAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'with_priv' in local_var_params:
-            query_params.append(('with-priv', local_var_params['with_priv']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
         if 'keyword' in local_var_params:
             query_params.append(('keyword', local_var_params['keyword']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
+        if 'with_priv' in local_var_params:
+            query_params.append(('with-priv', local_var_params['with_priv']))
 
         header_params = {}
 
@@ -4120,7 +4252,7 @@ class DliAsyncClient(Client):
         return self.list_jobs_with_http_info(request)
 
     def list_jobs_with_http_info(self, request):
-        all_params = ['page_size', 'current_page', 'start', 'end', 'job_type', 'job_status', 'db_name', 'table_name', 'queue_name', 'sql_pattern', 'order', 'engine_type']
+        all_params = ['current_page', 'db_name', 'end', 'engine_type', 'job_status', 'job_type', 'order', 'owner', 'page_size', 'queue_name', 'sql_pattern', 'start', 'table_name', 'tags']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4131,30 +4263,34 @@ class DliAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'page_size' in local_var_params:
-            query_params.append(('page-size', local_var_params['page_size']))
         if 'current_page' in local_var_params:
             query_params.append(('current-page', local_var_params['current_page']))
-        if 'start' in local_var_params:
-            query_params.append(('start', local_var_params['start']))
-        if 'end' in local_var_params:
-            query_params.append(('end', local_var_params['end']))
-        if 'job_type' in local_var_params:
-            query_params.append(('job-type', local_var_params['job_type']))
-        if 'job_status' in local_var_params:
-            query_params.append(('job-status', local_var_params['job_status']))
         if 'db_name' in local_var_params:
             query_params.append(('db_name', local_var_params['db_name']))
-        if 'table_name' in local_var_params:
-            query_params.append(('table_name', local_var_params['table_name']))
+        if 'end' in local_var_params:
+            query_params.append(('end', local_var_params['end']))
+        if 'engine_type' in local_var_params:
+            query_params.append(('engine-type', local_var_params['engine_type']))
+        if 'job_status' in local_var_params:
+            query_params.append(('job-status', local_var_params['job_status']))
+        if 'job_type' in local_var_params:
+            query_params.append(('job-type', local_var_params['job_type']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
+        if 'owner' in local_var_params:
+            query_params.append(('owner', local_var_params['owner']))
+        if 'page_size' in local_var_params:
+            query_params.append(('page-size', local_var_params['page_size']))
         if 'queue_name' in local_var_params:
             query_params.append(('queue_name', local_var_params['queue_name']))
         if 'sql_pattern' in local_var_params:
             query_params.append(('sql_pattern', local_var_params['sql_pattern']))
-        if 'order' in local_var_params:
-            query_params.append(('order', local_var_params['order']))
-        if 'engine_type' in local_var_params:
-            query_params.append(('engine-type', local_var_params['engine_type']))
+        if 'start' in local_var_params:
+            query_params.append(('start', local_var_params['start']))
+        if 'table_name' in local_var_params:
+            query_params.append(('table_name', local_var_params['table_name']))
+        if 'tags' in local_var_params:
+            query_params.append(('tags', local_var_params['tags']))
 
         header_params = {}
 
@@ -4316,7 +4452,7 @@ class DliAsyncClient(Client):
         return self.list_queues_with_http_info(request)
 
     def list_queues_with_http_info(self, request):
-        all_params = ['with_priv', 'with_charge_info', 'queue_type', 'tags', 'page_size', 'current_page', 'order']
+        all_params = ['queue_type', 'tags', 'with_charge_info', 'with_priv']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4327,20 +4463,14 @@ class DliAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'with_priv' in local_var_params:
-            query_params.append(('with-priv', local_var_params['with_priv']))
-        if 'with_charge_info' in local_var_params:
-            query_params.append(('with-charge-info', local_var_params['with_charge_info']))
         if 'queue_type' in local_var_params:
             query_params.append(('queue_type', local_var_params['queue_type']))
         if 'tags' in local_var_params:
             query_params.append(('tags', local_var_params['tags']))
-        if 'page_size' in local_var_params:
-            query_params.append(('page-size', local_var_params['page_size']))
-        if 'current_page' in local_var_params:
-            query_params.append(('current-page', local_var_params['current_page']))
-        if 'order' in local_var_params:
-            query_params.append(('order', local_var_params['order']))
+        if 'with_charge_info' in local_var_params:
+            query_params.append(('with-charge-info', local_var_params['with_charge_info']))
+        if 'with_priv' in local_var_params:
+            query_params.append(('with-priv', local_var_params['with_priv']))
 
         header_params = {}
 
@@ -4493,76 +4623,6 @@ class DliAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def list_tables_async(self, request):
-        """查询所有表
-
-        该API用于查询指定数据库下符合过滤条件的或所有的表信息。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ListTables
-        :type request: :class:`huaweicloudsdkdli.v1.ListTablesRequest`
-        :rtype: :class:`huaweicloudsdkdli.v1.ListTablesResponse`
-        """
-        return self.list_tables_with_http_info(request)
-
-    def list_tables_with_http_info(self, request):
-        all_params = ['database_name', 'keyword', 'with_detail', 'page_size', 'current_page', 'with_priv', 'table_type']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'database_name' in local_var_params:
-            path_params['database_name'] = local_var_params['database_name']
-
-        query_params = []
-        if 'keyword' in local_var_params:
-            query_params.append(('keyword', local_var_params['keyword']))
-        if 'with_detail' in local_var_params:
-            query_params.append(('with-detail', local_var_params['with_detail']))
-        if 'page_size' in local_var_params:
-            query_params.append(('page-size', local_var_params['page_size']))
-        if 'current_page' in local_var_params:
-            query_params.append(('current-page', local_var_params['current_page']))
-        if 'with_priv' in local_var_params:
-            query_params.append(('with-priv', local_var_params['with_priv']))
-        if 'table_type' in local_var_params:
-            query_params.append(('table-type', local_var_params['table_type']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases/{database_name}/tables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ListTablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def register_authorized_queue_async(self, request):
         """队列赋权
 
@@ -4696,7 +4756,7 @@ class DliAsyncClient(Client):
         return self.run_queue_action_with_http_info(request)
 
     def run_queue_action_with_http_info(self, request):
-        all_params = ['queue_name', 'body']
+        all_params = ['queue_name', 'run_queue_action_req']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -5051,7 +5111,7 @@ class DliAsyncClient(Client):
         return self.show_node_connectivity_with_http_info(request)
 
     def show_node_connectivity_with_http_info(self, request):
-        all_params = ['task_id', 'queue_name']
+        all_params = ['queue_name', 'task_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -5060,10 +5120,10 @@ class DliAsyncClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'task_id' in local_var_params:
-            path_params['task_id'] = local_var_params['task_id']
         if 'queue_name' in local_var_params:
             path_params['queue_name'] = local_var_params['queue_name']
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
 
         query_params = []
 
@@ -5111,7 +5171,7 @@ class DliAsyncClient(Client):
         return self.show_object_user_with_http_info(request)
 
     def show_object_user_with_http_info(self, request):
-        all_params = ['object', 'limit', 'offset']
+        all_params = ['object']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -5124,10 +5184,6 @@ class DliAsyncClient(Client):
         query_params = []
         if 'object' in local_var_params:
             query_params.append(('object', local_var_params['object']))
-        if 'limit' in local_var_params:
-            query_params.append(('limit', local_var_params['limit']))
-        if 'offset' in local_var_params:
-            query_params.append(('offset', local_var_params['offset']))
 
         header_params = {}
 
@@ -5236,7 +5292,7 @@ class DliAsyncClient(Client):
         return self.show_queue_detail_with_http_info(request)
 
     def show_queue_detail_with_http_info(self, request):
-        all_params = ['queue_name', 'queue_type']
+        all_params = ['queue_name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -5249,8 +5305,6 @@ class DliAsyncClient(Client):
             path_params['queue_name'] = local_var_params['queue_name']
 
         query_params = []
-        if 'queue_type' in local_var_params:
-            query_params.append(('queue_type', local_var_params['queue_type']))
 
         header_params = {}
 
@@ -5407,7 +5461,7 @@ class DliAsyncClient(Client):
         """修改队列网段
 
         该功能用于修改包年包月队列网段。
-        说明： 
+        说明：
         如果待修改网段的队列中有正在提交或正在运行的作业，或者改队列已经绑定了增强型跨源，将不支持修改网段操作。
         
         详细说明请参考华为云API Explorer。
@@ -5460,6 +5514,68 @@ class DliAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateQueueCidrResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_table_owner_async(self, request):
+        """修改表用户
+
+        用于修改表的owner。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateTableOwner
+        :type request: :class:`huaweicloudsdkdli.v1.UpdateTableOwnerRequest`
+        :rtype: :class:`huaweicloudsdkdli.v1.UpdateTableOwnerResponse`
+        """
+        return self.update_table_owner_with_http_info(request)
+
+    def update_table_owner_with_http_info(self, request):
+        all_params = ['database_name', 'table_name', 'body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'database_name' in local_var_params:
+            path_params['database_name'] = local_var_params['database_name']
+        if 'table_name' in local_var_params:
+            path_params['table_name'] = local_var_params['table_name']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/owner',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateTableOwnerResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -5552,7 +5668,7 @@ class DliAsyncClient(Client):
 
         header_params = {}
         if 'user_id' in local_var_params:
-            header_params['USER_ID'] = local_var_params['user_id']
+            header_params['USER-ID'] = local_var_params['user_id']
 
         form_params = {}
 
@@ -5658,7 +5774,7 @@ class DliAsyncClient(Client):
         return self.list_batches_with_http_info(request)
 
     def list_batches_with_http_info(self, request):
-        all_params = ['cluster_name', 'queue_name', 'job_id', '_from', 'size', 'state']
+        all_params = ['cluster_name', 'end', '_from', 'job_id', 'order', 'queue_name', 'size', 'start', 'state']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -5671,14 +5787,20 @@ class DliAsyncClient(Client):
         query_params = []
         if 'cluster_name' in local_var_params:
             query_params.append(('cluster_name', local_var_params['cluster_name']))
-        if 'queue_name' in local_var_params:
-            query_params.append(('queue_name', local_var_params['queue_name']))
-        if 'job_id' in local_var_params:
-            query_params.append(('job-id', local_var_params['job_id']))
+        if 'end' in local_var_params:
+            query_params.append(('end', local_var_params['end']))
         if '_from' in local_var_params:
             query_params.append(('from', local_var_params['_from']))
+        if 'job_id' in local_var_params:
+            query_params.append(('job-id', local_var_params['job_id']))
+        if 'order' in local_var_params:
+            query_params.append(('order', local_var_params['order']))
+        if 'queue_name' in local_var_params:
+            query_params.append(('queue_name', local_var_params['queue_name']))
         if 'size' in local_var_params:
             query_params.append(('size', local_var_params['size']))
+        if 'start' in local_var_params:
+            query_params.append(('start', local_var_params['start']))
         if 'state' in local_var_params:
             query_params.append(('state', local_var_params['state']))
 
@@ -5844,7 +5966,7 @@ class DliAsyncClient(Client):
         return self.show_batch_log_with_http_info(request)
 
     def show_batch_log_with_http_info(self, request):
-        all_params = ['batch_id', '_from', 'size', 'type', 'index']
+        all_params = ['batch_id', '_from', 'index', 'size', 'type']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -5859,12 +5981,12 @@ class DliAsyncClient(Client):
         query_params = []
         if '_from' in local_var_params:
             query_params.append(('from', local_var_params['_from']))
+        if 'index' in local_var_params:
+            query_params.append(('index', local_var_params['index']))
         if 'size' in local_var_params:
             query_params.append(('size', local_var_params['size']))
         if 'type' in local_var_params:
             query_params.append(('type', local_var_params['type']))
-        if 'index' in local_var_params:
-            query_params.append(('index', local_var_params['index']))
 
         header_params = {}
 
@@ -6101,7 +6223,7 @@ class DliAsyncClient(Client):
 
         header_params = {}
         if 'user_id' in local_var_params:
-            header_params['USER_ID'] = local_var_params['user_id']
+            header_params['USER-ID'] = local_var_params['user_id']
 
         form_params = {}
 
@@ -6162,7 +6284,7 @@ class DliAsyncClient(Client):
 
         header_params = {}
         if 'user_id' in local_var_params:
-            header_params['USER_ID'] = local_var_params['user_id']
+            header_params['USER-ID'] = local_var_params['user_id']
 
         form_params = {}
 
@@ -6223,7 +6345,7 @@ class DliAsyncClient(Client):
 
         header_params = {}
         if 'user_id' in local_var_params:
-            header_params['USER_ID'] = local_var_params['user_id']
+            header_params['USER-ID'] = local_var_params['user_id']
 
         form_params = {}
 
@@ -6283,7 +6405,7 @@ class DliAsyncClient(Client):
 
         header_params = {}
         if 'user_id' in local_var_params:
-            header_params['USER_ID'] = local_var_params['user_id']
+            header_params['USER-ID'] = local_var_params['user_id']
 
         form_params = {}
 

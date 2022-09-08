@@ -23,18 +23,18 @@ class ShowUrlTaskInfoResponse(SdkResponse):
     openapi_types = {
         'total': 'int',
         'count': 'int',
-        'results': 'list[Urls]',
+        'result': 'list[Urls]',
         'x_request_id': 'str'
     }
 
     attribute_map = {
         'total': 'total',
         'count': 'count',
-        'results': 'results',
+        'result': 'result',
         'x_request_id': 'X-request-id'
     }
 
-    def __init__(self, total=None, count=None, results=None, x_request_id=None):
+    def __init__(self, total=None, count=None, result=None, x_request_id=None):
         """ShowUrlTaskInfoResponse
 
         The model defined in huaweicloud sdk
@@ -43,8 +43,8 @@ class ShowUrlTaskInfoResponse(SdkResponse):
         :type total: int
         :param count: 查询当前页总数
         :type count: int
-        :param results: url信息
-        :type results: list[:class:`huaweicloudsdkcdn.v1.Urls`]
+        :param result: url信息
+        :type result: list[:class:`huaweicloudsdkcdn.v1.Urls`]
         :param x_request_id: 
         :type x_request_id: str
         """
@@ -53,7 +53,7 @@ class ShowUrlTaskInfoResponse(SdkResponse):
 
         self._total = None
         self._count = None
-        self._results = None
+        self._result = None
         self._x_request_id = None
         self.discriminator = None
 
@@ -61,8 +61,8 @@ class ShowUrlTaskInfoResponse(SdkResponse):
             self.total = total
         if count is not None:
             self.count = count
-        if results is not None:
-            self.results = results
+        if result is not None:
+            self.result = result
         if x_request_id is not None:
             self.x_request_id = x_request_id
 
@@ -111,26 +111,26 @@ class ShowUrlTaskInfoResponse(SdkResponse):
         self._count = count
 
     @property
-    def results(self):
-        """Gets the results of this ShowUrlTaskInfoResponse.
+    def result(self):
+        """Gets the result of this ShowUrlTaskInfoResponse.
 
         url信息
 
-        :return: The results of this ShowUrlTaskInfoResponse.
+        :return: The result of this ShowUrlTaskInfoResponse.
         :rtype: list[:class:`huaweicloudsdkcdn.v1.Urls`]
         """
-        return self._results
+        return self._result
 
-    @results.setter
-    def results(self, results):
-        """Sets the results of this ShowUrlTaskInfoResponse.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this ShowUrlTaskInfoResponse.
 
         url信息
 
-        :param results: The results of this ShowUrlTaskInfoResponse.
-        :type results: list[:class:`huaweicloudsdkcdn.v1.Urls`]
+        :param result: The result of this ShowUrlTaskInfoResponse.
+        :type result: list[:class:`huaweicloudsdkcdn.v1.Urls`]
         """
-        self._results = results
+        self._result = result
 
     @property
     def x_request_id(self):

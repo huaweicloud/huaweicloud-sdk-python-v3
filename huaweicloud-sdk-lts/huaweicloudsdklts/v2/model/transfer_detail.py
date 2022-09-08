@@ -35,7 +35,8 @@ class TransferDetail:
         'kafka_id': 'str',
         'kafka_topic': 'str',
         'obs_time_zone': 'str',
-        'obs_time_zone_id': 'str'
+        'obs_time_zone_id': 'str',
+        'tags': 'list[str]'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class TransferDetail:
         'kafka_id': 'kafka_id',
         'kafka_topic': 'kafka_topic',
         'obs_time_zone': 'obs_time_zone',
-        'obs_time_zone_id': 'obs_time_zone_id'
+        'obs_time_zone_id': 'obs_time_zone_id',
+        'tags': 'tags'
     }
 
-    def __init__(self, obs_period=None, obs_encrypted_id=None, obs_prefix_name=None, obs_period_unit=None, obs_transfer_path=None, obs_eps_id=None, obs_bucket_name=None, obs_encrypted_enable=None, obs_dir_pre_fix_name=None, dis_id=None, dis_name=None, kafka_id=None, kafka_topic=None, obs_time_zone=None, obs_time_zone_id=None):
+    def __init__(self, obs_period=None, obs_encrypted_id=None, obs_prefix_name=None, obs_period_unit=None, obs_transfer_path=None, obs_eps_id=None, obs_bucket_name=None, obs_encrypted_enable=None, obs_dir_pre_fix_name=None, dis_id=None, dis_name=None, kafka_id=None, kafka_topic=None, obs_time_zone=None, obs_time_zone_id=None, tags=None):
         """TransferDetail
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class TransferDetail:
         :type obs_time_zone: str
         :param obs_time_zone_id: OBS转储时区ID。参数选择参考OBS转储时区表。如果选择该参数，则必须选择obs_time_zone。
         :type obs_time_zone_id: str
+        :param tags: 若开启tag投递，该字段必须包含主机信息：hostIP、hostId、hostName、pathFile、collectTime；  公共字段有：logStreamName、regionName、logGroupName、projectId，为可选填；  开启转储标签：streamTag，可选填
+        :type tags: list[str]
         """
         
         
@@ -110,6 +114,7 @@ class TransferDetail:
         self._kafka_topic = None
         self._obs_time_zone = None
         self._obs_time_zone_id = None
+        self._tags = None
         self.discriminator = None
 
         self.obs_period = obs_period
@@ -139,6 +144,8 @@ class TransferDetail:
             self.obs_time_zone = obs_time_zone
         if obs_time_zone_id is not None:
             self.obs_time_zone_id = obs_time_zone_id
+        if tags is not None:
+            self.tags = tags
 
     @property
     def obs_period(self):
@@ -469,6 +476,28 @@ class TransferDetail:
         :type obs_time_zone_id: str
         """
         self._obs_time_zone_id = obs_time_zone_id
+
+    @property
+    def tags(self):
+        """Gets the tags of this TransferDetail.
+
+        若开启tag投递，该字段必须包含主机信息：hostIP、hostId、hostName、pathFile、collectTime；  公共字段有：logStreamName、regionName、logGroupName、projectId，为可选填；  开启转储标签：streamTag，可选填
+
+        :return: The tags of this TransferDetail.
+        :rtype: list[str]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this TransferDetail.
+
+        若开启tag投递，该字段必须包含主机信息：hostIP、hostId、hostName、pathFile、collectTime；  公共字段有：logStreamName、regionName、logGroupName、projectId，为可选填；  开启转储标签：streamTag，可选填
+
+        :param tags: The tags of this TransferDetail.
+        :type tags: list[str]
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -44,10 +44,10 @@ class CreateSQLJobReq:
         'manager_cu_number': 'int',
         'tm_cus': 'int',
         'tm_slot_num': 'int',
+        'tags': 'list[TmsTagEntity]',
         'resume_checkpoint': 'bool',
         'resume_max_num': 'int',
         'runtime_config': 'str',
-        'tags': 'list[JobsTags]',
         'flink_version': 'str'
     }
 
@@ -75,14 +75,14 @@ class CreateSQLJobReq:
         'manager_cu_number': 'manager_cu_number',
         'tm_cus': 'tm_cus',
         'tm_slot_num': 'tm_slot_num',
+        'tags': 'tags',
         'resume_checkpoint': 'resume_checkpoint',
         'resume_max_num': 'resume_max_num',
         'runtime_config': 'runtime_config',
-        'tags': 'tags',
         'flink_version': 'flink_version'
     }
 
-    def __init__(self, name=None, desc=None, template_id=None, queue_name=None, sql_body=None, run_mode=None, cu_number=None, parallel_number=None, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, obs_bucket=None, log_enabled=None, smn_topic=None, restart_when_exception=None, idle_state_retention=None, job_type=None, edge_group_ids=None, dirty_data_strategy=None, udf_jar_url=None, manager_cu_number=None, tm_cus=None, tm_slot_num=None, resume_checkpoint=None, resume_max_num=None, runtime_config=None, tags=None, flink_version=None):
+    def __init__(self, name=None, desc=None, template_id=None, queue_name=None, sql_body=None, run_mode=None, cu_number=None, parallel_number=None, checkpoint_enabled=None, checkpoint_mode=None, checkpoint_interval=None, obs_bucket=None, log_enabled=None, smn_topic=None, restart_when_exception=None, idle_state_retention=None, job_type=None, edge_group_ids=None, dirty_data_strategy=None, udf_jar_url=None, manager_cu_number=None, tm_cus=None, tm_slot_num=None, tags=None, resume_checkpoint=None, resume_max_num=None, runtime_config=None, flink_version=None):
         """CreateSQLJobReq
 
         The model defined in huaweicloud sdk
@@ -91,7 +91,7 @@ class CreateSQLJobReq:
         :type name: str
         :param desc: 作业描述。长度限制：0-2048个字符。
         :type desc: str
-        :param template_id: 模板Id。 如果template_id和sql_body都不为空，优先sql_body；如果template_id不空，sql_body为空，以template_id内容填充sql_body。
+        :param template_id: 模板Id。  如果template_id和sql_body都不为空，优先sql_body；如果template_id不空，sql_body为空，以template_id内容填充sql_body。
         :type template_id: int
         :param queue_name: 队列名称。长度限制：1-128个字符。
         :type queue_name: str
@@ -133,14 +133,14 @@ class CreateSQLJobReq:
         :type tm_cus: int
         :param tm_slot_num: 每个taskmanager的slot数，默认值为“(parallel_number*tm_cus)/(cu_number-manager_cu_number)”
         :type tm_slot_num: int
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         :param resume_checkpoint: 异常重启是否从checkpoint恢复。
         :type resume_checkpoint: bool
         :param resume_max_num: 异常重试最大次数，单位：次/小时。取值范围：-1或大于0。默认值为“-1”，表示无限次数。
         :type resume_max_num: int
         :param runtime_config: Flink作业运行时自定义优化参数。
         :type runtime_config: str
-        :param tags: Flink SQL作业的标签。具体请参考表tags。
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
         :param flink_version: Flink版本。当前只支持1.10和1.12。
         :type flink_version: str
         """
@@ -170,10 +170,10 @@ class CreateSQLJobReq:
         self._manager_cu_number = None
         self._tm_cus = None
         self._tm_slot_num = None
+        self._tags = None
         self._resume_checkpoint = None
         self._resume_max_num = None
         self._runtime_config = None
-        self._tags = None
         self._flink_version = None
         self.discriminator = None
 
@@ -222,14 +222,14 @@ class CreateSQLJobReq:
             self.tm_cus = tm_cus
         if tm_slot_num is not None:
             self.tm_slot_num = tm_slot_num
+        if tags is not None:
+            self.tags = tags
         if resume_checkpoint is not None:
             self.resume_checkpoint = resume_checkpoint
         if resume_max_num is not None:
             self.resume_max_num = resume_max_num
         if runtime_config is not None:
             self.runtime_config = runtime_config
-        if tags is not None:
-            self.tags = tags
         if flink_version is not None:
             self.flink_version = flink_version
 
@@ -281,7 +281,7 @@ class CreateSQLJobReq:
     def template_id(self):
         """Gets the template_id of this CreateSQLJobReq.
 
-        模板Id。 如果template_id和sql_body都不为空，优先sql_body；如果template_id不空，sql_body为空，以template_id内容填充sql_body。
+        模板Id。  如果template_id和sql_body都不为空，优先sql_body；如果template_id不空，sql_body为空，以template_id内容填充sql_body。
 
         :return: The template_id of this CreateSQLJobReq.
         :rtype: int
@@ -292,7 +292,7 @@ class CreateSQLJobReq:
     def template_id(self, template_id):
         """Sets the template_id of this CreateSQLJobReq.
 
-        模板Id。 如果template_id和sql_body都不为空，优先sql_body；如果template_id不空，sql_body为空，以template_id内容填充sql_body。
+        模板Id。  如果template_id和sql_body都不为空，优先sql_body；如果template_id不空，sql_body为空，以template_id内容填充sql_body。
 
         :param template_id: The template_id of this CreateSQLJobReq.
         :type template_id: int
@@ -740,6 +740,28 @@ class CreateSQLJobReq:
         self._tm_slot_num = tm_slot_num
 
     @property
+    def tags(self):
+        """Gets the tags of this CreateSQLJobReq.
+
+        标签
+
+        :return: The tags of this CreateSQLJobReq.
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this CreateSQLJobReq.
+
+        标签
+
+        :param tags: The tags of this CreateSQLJobReq.
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
+        """
+        self._tags = tags
+
+    @property
     def resume_checkpoint(self):
         """Gets the resume_checkpoint of this CreateSQLJobReq.
 
@@ -804,28 +826,6 @@ class CreateSQLJobReq:
         :type runtime_config: str
         """
         self._runtime_config = runtime_config
-
-    @property
-    def tags(self):
-        """Gets the tags of this CreateSQLJobReq.
-
-        Flink SQL作业的标签。具体请参考表tags。
-
-        :return: The tags of this CreateSQLJobReq.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
-        """
-        return self._tags
-
-    @tags.setter
-    def tags(self, tags):
-        """Sets the tags of this CreateSQLJobReq.
-
-        Flink SQL作业的标签。具体请参考表tags。
-
-        :param tags: The tags of this CreateSQLJobReq.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
-        """
-        self._tags = tags
 
     @property
     def flink_version(self):

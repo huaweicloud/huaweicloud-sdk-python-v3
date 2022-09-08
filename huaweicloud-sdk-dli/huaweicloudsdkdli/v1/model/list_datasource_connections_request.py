@@ -21,20 +21,51 @@ class ListDatasourceConnectionsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'tags': 'str'
     }
 
     attribute_map = {
+        'tags': 'tags'
     }
 
-    def __init__(self):
+    def __init__(self, tags=None):
         """ListDatasourceConnectionsRequest
 
         The model defined in huaweicloud sdk
 
+        :param tags: 标签
+        :type tags: str
         """
         
         
+
+        self._tags = None
         self.discriminator = None
+
+        if tags is not None:
+            self.tags = tags
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListDatasourceConnectionsRequest.
+
+        标签
+
+        :return: The tags of this ListDatasourceConnectionsRequest.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListDatasourceConnectionsRequest.
+
+        标签
+
+        :param tags: The tags of this ListDatasourceConnectionsRequest.
+        :type tags: str
+        """
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

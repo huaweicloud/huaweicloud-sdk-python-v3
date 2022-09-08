@@ -581,24 +581,12 @@ class ElbAsyncClient(Client):
 
         创建负载均衡器。
         
-        
         1.若要创建内网IPv4负载均衡器，则需要设置vip_subnet_cidr_id。
-        
-        
         2.若要创建公网IPv4负载均衡器，则需要设置publicip，以及设置vpc_id和vip_subnet_cidr_id这两个参数中的一个。
-        
-        
         3.若要绑定有已有公网IPv4地址，需要设置publicip_ids，以及设置vpc_id和vip_subnet_cidr_id这两个参数中的一个。
-        
-        
         4.若要创建内网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id。
-        
-        
         5.若要创建公网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id和ipv6_bandwidth。
-        
-        
         6.不支持绑定已有未使用的内网IPv4、内网IPv6或公网IPv6地址。
-        
         
         [&gt; 不支持创建IPv6地址负载均衡器](tag:dt,dt_test)
         

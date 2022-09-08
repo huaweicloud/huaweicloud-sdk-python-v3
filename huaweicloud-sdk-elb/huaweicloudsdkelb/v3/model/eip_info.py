@@ -41,7 +41,7 @@ class EipInfo:
         :type eip_id: str
         :param eip_address: eip_address
         :type eip_address: str
-        :param ip_version: IP版本号，取值：4表示IPv4,6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        :param ip_version: IP版本号。取值：4表示IPv4,6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
         :type ip_version: int
         """
         
@@ -107,7 +107,7 @@ class EipInfo:
     def ip_version(self):
         """Gets the ip_version of this EipInfo.
 
-        IP版本号，取值：4表示IPv4,6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        IP版本号。取值：4表示IPv4,6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :return: The ip_version of this EipInfo.
         :rtype: int
@@ -118,7 +118,7 @@ class EipInfo:
     def ip_version(self, ip_version):
         """Sets the ip_version of this EipInfo.
 
-        IP版本号，取值：4表示IPv4,6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
+        IP版本号。取值：4表示IPv4,6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt,dt_test)
 
         :param ip_version: The ip_version of this EipInfo.
         :type ip_version: int

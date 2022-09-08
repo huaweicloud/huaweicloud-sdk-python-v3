@@ -27,6 +27,7 @@ class PolicyDefinition:
         'description': 'str',
         'policy_rule_type': 'str',
         'policy_rule': 'object',
+        'trigger_type': 'str',
         'keywords': 'list[str]',
         'parameters': 'dict(str, PolicyParameterDefinition)'
     }
@@ -38,11 +39,12 @@ class PolicyDefinition:
         'description': 'description',
         'policy_rule_type': 'policy_rule_type',
         'policy_rule': 'policy_rule',
+        'trigger_type': 'trigger_type',
         'keywords': 'keywords',
         'parameters': 'parameters'
     }
 
-    def __init__(self, id=None, name=None, policy_type=None, description=None, policy_rule_type=None, policy_rule=None, keywords=None, parameters=None):
+    def __init__(self, id=None, name=None, policy_type=None, description=None, policy_rule_type=None, policy_rule=None, trigger_type=None, keywords=None, parameters=None):
         """PolicyDefinition
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class PolicyDefinition:
         :type policy_rule_type: str
         :param policy_rule: 策略规则
         :type policy_rule: object
+        :param trigger_type: 触发器类型，可选值：resource, period
+        :type trigger_type: str
         :param keywords: 关键词列表
         :type keywords: list[str]
         :param parameters: 策略参数
@@ -73,6 +77,7 @@ class PolicyDefinition:
         self._description = None
         self._policy_rule_type = None
         self._policy_rule = None
+        self._trigger_type = None
         self._keywords = None
         self._parameters = None
         self.discriminator = None
@@ -89,6 +94,8 @@ class PolicyDefinition:
             self.policy_rule_type = policy_rule_type
         if policy_rule is not None:
             self.policy_rule = policy_rule
+        if trigger_type is not None:
+            self.trigger_type = trigger_type
         if keywords is not None:
             self.keywords = keywords
         if parameters is not None:
@@ -225,6 +232,28 @@ class PolicyDefinition:
         :type policy_rule: object
         """
         self._policy_rule = policy_rule
+
+    @property
+    def trigger_type(self):
+        """Gets the trigger_type of this PolicyDefinition.
+
+        触发器类型，可选值：resource, period
+
+        :return: The trigger_type of this PolicyDefinition.
+        :rtype: str
+        """
+        return self._trigger_type
+
+    @trigger_type.setter
+    def trigger_type(self, trigger_type):
+        """Sets the trigger_type of this PolicyDefinition.
+
+        触发器类型，可选值：resource, period
+
+        :param trigger_type: The trigger_type of this PolicyDefinition.
+        :type trigger_type: str
+        """
+        self._trigger_type = trigger_type
 
     @property
     def keywords(self):

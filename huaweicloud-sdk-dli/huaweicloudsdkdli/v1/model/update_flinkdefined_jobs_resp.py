@@ -44,7 +44,8 @@ class UpdateFlinkdefinedJobsResp:
         'resume_checkpoint': 'bool',
         'resume_max_num': 'int',
         'checkpoint_path': 'str',
-        'runtime_config': 'str'
+        'runtime_config': 'str',
+        'job_type': 'str'
     }
 
     attribute_map = {
@@ -71,10 +72,11 @@ class UpdateFlinkdefinedJobsResp:
         'resume_checkpoint': 'resume_checkpoint',
         'resume_max_num': 'resume_max_num',
         'checkpoint_path': 'checkpoint_path',
-        'runtime_config': 'runtime_config'
+        'runtime_config': 'runtime_config',
+        'job_type': 'job_type'
     }
 
-    def __init__(self, name=None, desc=None, queue_name=None, cu_number=None, manager_cu_number=None, parallel_number=None, log_enabled=None, obs_bucket=None, smn_topic=None, main_class=None, entrypoint_args=None, restart_when_exception=None, entrypoint=None, dependency_jars=None, dependency_files=None, tm_cus=None, tm_slot_num=None, feature=None, flink_version=None, image=None, resume_checkpoint=None, resume_max_num=None, checkpoint_path=None, runtime_config=None):
+    def __init__(self, name=None, desc=None, queue_name=None, cu_number=None, manager_cu_number=None, parallel_number=None, log_enabled=None, obs_bucket=None, smn_topic=None, main_class=None, entrypoint_args=None, restart_when_exception=None, entrypoint=None, dependency_jars=None, dependency_files=None, tm_cus=None, tm_slot_num=None, feature=None, flink_version=None, image=None, resume_checkpoint=None, resume_max_num=None, checkpoint_path=None, runtime_config=None, job_type=None):
         """UpdateFlinkdefinedJobsResp
 
         The model defined in huaweicloud sdk
@@ -127,6 +129,8 @@ class UpdateFlinkdefinedJobsResp:
         :type checkpoint_path: str
         :param runtime_config: Flink作业运行时自定义优化参数。
         :type runtime_config: str
+        :param job_type: 作业类型。
+        :type job_type: str
         """
         
         
@@ -155,6 +159,7 @@ class UpdateFlinkdefinedJobsResp:
         self._resume_max_num = None
         self._checkpoint_path = None
         self._runtime_config = None
+        self._job_type = None
         self.discriminator = None
 
         if name is not None:
@@ -205,6 +210,8 @@ class UpdateFlinkdefinedJobsResp:
             self.checkpoint_path = checkpoint_path
         if runtime_config is not None:
             self.runtime_config = runtime_config
+        if job_type is not None:
+            self.job_type = job_type
 
     @property
     def name(self):
@@ -733,6 +740,28 @@ class UpdateFlinkdefinedJobsResp:
         :type runtime_config: str
         """
         self._runtime_config = runtime_config
+
+    @property
+    def job_type(self):
+        """Gets the job_type of this UpdateFlinkdefinedJobsResp.
+
+        作业类型。
+
+        :return: The job_type of this UpdateFlinkdefinedJobsResp.
+        :rtype: str
+        """
+        return self._job_type
+
+    @job_type.setter
+    def job_type(self, job_type):
+        """Sets the job_type of this UpdateFlinkdefinedJobsResp.
+
+        作业类型。
+
+        :param job_type: The job_type of this UpdateFlinkdefinedJobsResp.
+        :type job_type: str
+        """
+        self._job_type = job_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

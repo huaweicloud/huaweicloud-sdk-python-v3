@@ -21,28 +21,35 @@ class UpdateCloseKibanaRequest:
     sensitive_list = []
 
     openapi_types = {
-        'cluster_id': 'str'
+        'cluster_id': 'str',
+        'body': 'CloseKibanaPublicReq'
     }
 
     attribute_map = {
-        'cluster_id': 'cluster_id'
+        'cluster_id': 'cluster_id',
+        'body': 'body'
     }
 
-    def __init__(self, cluster_id=None):
+    def __init__(self, cluster_id=None, body=None):
         """UpdateCloseKibanaRequest
 
         The model defined in huaweicloud sdk
 
         :param cluster_id: 指定待关闭的kibana公网访问的集群ID。
         :type cluster_id: str
+        :param body: Body of the UpdateCloseKibanaRequest
+        :type body: :class:`huaweicloudsdkcss.v1.CloseKibanaPublicReq`
         """
         
         
 
         self._cluster_id = None
+        self._body = None
         self.discriminator = None
 
         self.cluster_id = cluster_id
+        if body is not None:
+            self.body = body
 
     @property
     def cluster_id(self):
@@ -65,6 +72,26 @@ class UpdateCloseKibanaRequest:
         :type cluster_id: str
         """
         self._cluster_id = cluster_id
+
+    @property
+    def body(self):
+        """Gets the body of this UpdateCloseKibanaRequest.
+
+
+        :return: The body of this UpdateCloseKibanaRequest.
+        :rtype: :class:`huaweicloudsdkcss.v1.CloseKibanaPublicReq`
+        """
+        return self._body
+
+    @body.setter
+    def body(self, body):
+        """Sets the body of this UpdateCloseKibanaRequest.
+
+
+        :param body: The body of this UpdateCloseKibanaRequest.
+        :type body: :class:`huaweicloudsdkcss.v1.CloseKibanaPublicReq`
+        """
+        self._body = body
 
     def to_dict(self):
         """Returns the model properties as a dict"""

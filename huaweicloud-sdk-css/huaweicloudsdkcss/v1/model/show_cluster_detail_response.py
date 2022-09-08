@@ -42,7 +42,7 @@ class ShowClusterDetailResponse(SdkResponse):
         'authority_enable': 'bool',
         'backup_available': 'bool',
         'action_progress': 'object',
-        'actions': 'list[object]',
+        'actions': 'list[str]',
         'enterprise_project_id': 'str',
         'tags': 'list[ClusterDetailTags]',
         'failed_reasons': 'ClusterDetailFailedReasons',
@@ -126,7 +126,7 @@ class ShowClusterDetailResponse(SdkResponse):
         :param action_progress: 集群行为进度，显示创建或扩容进度的百分比。
         :type action_progress: object
         :param actions: 集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照等。
-        :type actions: list[object]
+        :type actions: list[str]
         :param enterprise_project_id: 集群所属的企业项目ID。  如果集群所属用户没有开通企业项目，则不会返回该参数。
         :type enterprise_project_id: str
         :param tags: 集群标签。
@@ -683,7 +683,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照等。
 
         :return: The actions of this ShowClusterDetailResponse.
-        :rtype: list[object]
+        :rtype: list[str]
         """
         return self._actions
 
@@ -694,7 +694,7 @@ class ShowClusterDetailResponse(SdkResponse):
         集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照等。
 
         :param actions: The actions of this ShowClusterDetailResponse.
-        :type actions: list[object]
+        :type actions: list[str]
         """
         self._actions = actions
 

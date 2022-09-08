@@ -35,7 +35,7 @@ class CreateQueuePlanRequest:
 
         The model defined in huaweicloud sdk
 
-        :param queue_name: 需要设置定时扩缩计划的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。 说明：  队列名称不区分大小写，系统会自动转换为小写。
+        :param queue_name: 需要设置定时扩缩计划的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
         :type queue_name: str
         :param body: Body of the CreateQueuePlanRequest
         :type body: :class:`huaweicloudsdkdli.v1.SetQueuePlanReq`
@@ -55,7 +55,7 @@ class CreateQueuePlanRequest:
     def queue_name(self):
         """Gets the queue_name of this CreateQueuePlanRequest.
 
-        需要设置定时扩缩计划的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。 说明：  队列名称不区分大小写，系统会自动转换为小写。
+        需要设置定时扩缩计划的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
 
         :return: The queue_name of this CreateQueuePlanRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class CreateQueuePlanRequest:
     def queue_name(self, queue_name):
         """Sets the queue_name of this CreateQueuePlanRequest.
 
-        需要设置定时扩缩计划的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。长度限制：1~128个字符。 说明：  队列名称不区分大小写，系统会自动转换为小写。
+        需要设置定时扩缩计划的队列名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
 
         :param queue_name: The queue_name of this CreateQueuePlanRequest.
         :type queue_name: str

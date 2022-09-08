@@ -21,57 +21,79 @@ class ListFlinkTemplatesRequest:
     sensitive_list = []
 
     openapi_types = {
+        'limit': 'int',
         'name': 'str',
-        'tags': 'str',
         'offset': 'int',
         'order': 'str',
-        'limit': 'int'
+        'tags': 'str'
     }
 
     attribute_map = {
+        'limit': 'limit',
         'name': 'name',
-        'tags': 'tags',
         'offset': 'offset',
         'order': 'order',
-        'limit': 'limit'
+        'tags': 'tags'
     }
 
-    def __init__(self, name=None, tags=None, offset=None, order=None, limit=None):
+    def __init__(self, limit=None, name=None, offset=None, order=None, tags=None):
         """ListFlinkTemplatesRequest
 
         The model defined in huaweicloud sdk
 
+        :param limit: 返回的数据条数。默认为10。
+        :type limit: int
         :param name: 模板名字
         :type name: str
-        :param tags: 
-        :type tags: str
         :param offset: 作业偏移量。
         :type offset: int
         :param order: 查询结果排序，升序asc和降序desc两种可选，默认降序。
         :type order: str
-        :param limit: 返回的数据条数。默认为10。
-        :type limit: int
+        :param tags: 
+        :type tags: str
         """
         
         
 
+        self._limit = None
         self._name = None
-        self._tags = None
         self._offset = None
         self._order = None
-        self._limit = None
+        self._tags = None
         self.discriminator = None
 
+        if limit is not None:
+            self.limit = limit
         if name is not None:
             self.name = name
-        if tags is not None:
-            self.tags = tags
         if offset is not None:
             self.offset = offset
         if order is not None:
             self.order = order
-        if limit is not None:
-            self.limit = limit
+        if tags is not None:
+            self.tags = tags
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListFlinkTemplatesRequest.
+
+        返回的数据条数。默认为10。
+
+        :return: The limit of this ListFlinkTemplatesRequest.
+        :rtype: int
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListFlinkTemplatesRequest.
+
+        返回的数据条数。默认为10。
+
+        :param limit: The limit of this ListFlinkTemplatesRequest.
+        :type limit: int
+        """
+        self._limit = limit
 
     @property
     def name(self):
@@ -94,26 +116,6 @@ class ListFlinkTemplatesRequest:
         :type name: str
         """
         self._name = name
-
-    @property
-    def tags(self):
-        """Gets the tags of this ListFlinkTemplatesRequest.
-
-
-        :return: The tags of this ListFlinkTemplatesRequest.
-        :rtype: str
-        """
-        return self._tags
-
-    @tags.setter
-    def tags(self, tags):
-        """Sets the tags of this ListFlinkTemplatesRequest.
-
-
-        :param tags: The tags of this ListFlinkTemplatesRequest.
-        :type tags: str
-        """
-        self._tags = tags
 
     @property
     def offset(self):
@@ -160,26 +162,24 @@ class ListFlinkTemplatesRequest:
         self._order = order
 
     @property
-    def limit(self):
-        """Gets the limit of this ListFlinkTemplatesRequest.
+    def tags(self):
+        """Gets the tags of this ListFlinkTemplatesRequest.
 
-        返回的数据条数。默认为10。
 
-        :return: The limit of this ListFlinkTemplatesRequest.
-        :rtype: int
+        :return: The tags of this ListFlinkTemplatesRequest.
+        :rtype: str
         """
-        return self._limit
+        return self._tags
 
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListFlinkTemplatesRequest.
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListFlinkTemplatesRequest.
 
-        返回的数据条数。默认为10。
 
-        :param limit: The limit of this ListFlinkTemplatesRequest.
-        :type limit: int
+        :param tags: The tags of this ListFlinkTemplatesRequest.
+        :type tags: str
         """
-        self._limit = limit
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

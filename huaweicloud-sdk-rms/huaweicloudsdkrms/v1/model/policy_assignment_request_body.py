@@ -23,6 +23,7 @@ class PolicyAssignmentRequestBody:
     openapi_types = {
         'name': 'str',
         'description': 'str',
+        'period': 'str',
         'policy_filter': 'PolicyFilterDefinition',
         'policy_definition_id': 'str',
         'parameters': 'dict(str, PolicyParameterValue)'
@@ -31,12 +32,13 @@ class PolicyAssignmentRequestBody:
     attribute_map = {
         'name': 'name',
         'description': 'description',
+        'period': 'period',
         'policy_filter': 'policy_filter',
         'policy_definition_id': 'policy_definition_id',
         'parameters': 'parameters'
     }
 
-    def __init__(self, name=None, description=None, policy_filter=None, policy_definition_id=None, parameters=None):
+    def __init__(self, name=None, description=None, period=None, policy_filter=None, policy_definition_id=None, parameters=None):
         """PolicyAssignmentRequestBody
 
         The model defined in huaweicloud sdk
@@ -45,6 +47,8 @@ class PolicyAssignmentRequestBody:
         :type name: str
         :param description: 规则描述
         :type description: str
+        :param period: 触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
+        :type period: str
         :param policy_filter: 
         :type policy_filter: :class:`huaweicloudsdkrms.v1.PolicyFilterDefinition`
         :param policy_definition_id: 策略定义ID
@@ -57,6 +61,7 @@ class PolicyAssignmentRequestBody:
 
         self._name = None
         self._description = None
+        self._period = None
         self._policy_filter = None
         self._policy_definition_id = None
         self._parameters = None
@@ -65,9 +70,13 @@ class PolicyAssignmentRequestBody:
         self.name = name
         if description is not None:
             self.description = description
-        self.policy_filter = policy_filter
+        if period is not None:
+            self.period = period
+        if policy_filter is not None:
+            self.policy_filter = policy_filter
         self.policy_definition_id = policy_definition_id
-        self.parameters = parameters
+        if parameters is not None:
+            self.parameters = parameters
 
     @property
     def name(self):
@@ -112,6 +121,28 @@ class PolicyAssignmentRequestBody:
         :type description: str
         """
         self._description = description
+
+    @property
+    def period(self):
+        """Gets the period of this PolicyAssignmentRequestBody.
+
+        触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
+
+        :return: The period of this PolicyAssignmentRequestBody.
+        :rtype: str
+        """
+        return self._period
+
+    @period.setter
+    def period(self, period):
+        """Sets the period of this PolicyAssignmentRequestBody.
+
+        触发周期值，可选值：One_Hour, Three_Hours, Six_Hours, Twelve_Hours, TwentyFour_Hours
+
+        :param period: The period of this PolicyAssignmentRequestBody.
+        :type period: str
+        """
+        self._period = period
 
     @property
     def policy_filter(self):

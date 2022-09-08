@@ -21,54 +21,34 @@ class ShowNodeConnectivityRequest:
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'str',
-        'queue_name': 'str'
+        'queue_name': 'str',
+        'task_id': 'str'
     }
 
     attribute_map = {
-        'task_id': 'task_id',
-        'queue_name': 'queue_name'
+        'queue_name': 'queue_name',
+        'task_id': 'task_id'
     }
 
-    def __init__(self, task_id=None, queue_name=None):
+    def __init__(self, queue_name=None, task_id=None):
         """ShowNodeConnectivityRequest
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 
-        :type task_id: str
         :param queue_name: 
         :type queue_name: str
-        """
-        
-        
-
-        self._task_id = None
-        self._queue_name = None
-        self.discriminator = None
-
-        self.task_id = task_id
-        self.queue_name = queue_name
-
-    @property
-    def task_id(self):
-        """Gets the task_id of this ShowNodeConnectivityRequest.
-
-
-        :return: The task_id of this ShowNodeConnectivityRequest.
-        :rtype: str
-        """
-        return self._task_id
-
-    @task_id.setter
-    def task_id(self, task_id):
-        """Sets the task_id of this ShowNodeConnectivityRequest.
-
-
-        :param task_id: The task_id of this ShowNodeConnectivityRequest.
+        :param task_id: 
         :type task_id: str
         """
-        self._task_id = task_id
+        
+        
+
+        self._queue_name = None
+        self._task_id = None
+        self.discriminator = None
+
+        self.queue_name = queue_name
+        self.task_id = task_id
 
     @property
     def queue_name(self):
@@ -89,6 +69,26 @@ class ShowNodeConnectivityRequest:
         :type queue_name: str
         """
         self._queue_name = queue_name
+
+    @property
+    def task_id(self):
+        """Gets the task_id of this ShowNodeConnectivityRequest.
+
+
+        :return: The task_id of this ShowNodeConnectivityRequest.
+        :rtype: str
+        """
+        return self._task_id
+
+    @task_id.setter
+    def task_id(self, task_id):
+        """Sets the task_id of this ShowNodeConnectivityRequest.
+
+
+        :param task_id: The task_id of this ShowNodeConnectivityRequest.
+        :type task_id: str
+        """
+        self._task_id = task_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

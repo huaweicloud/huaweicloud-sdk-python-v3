@@ -21,80 +21,105 @@ class ListSubfilesResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'trees': 'list[LogsTree]',
-        'total': 'int'
+        'error': 'Error',
+        'result': 'LogsTreeList',
+        'status': 'str'
     }
 
     attribute_map = {
-        'trees': 'trees',
-        'total': 'total'
+        'error': 'error',
+        'result': 'result',
+        'status': 'status'
     }
 
-    def __init__(self, trees=None, total=None):
+    def __init__(self, error=None, result=None, status=None):
         """ListSubfilesResponse
 
         The model defined in huaweicloud sdk
 
-        :param trees: 文件日志树
-        :type trees: list[:class:`huaweicloudsdkcodehub.v3.LogsTree`]
-        :param total: 记录总数
-        :type total: int
+        :param error: 
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.LogsTreeList`
+        :param status: 响应状态
+        :type status: str
         """
         
         super(ListSubfilesResponse, self).__init__()
 
-        self._trees = None
-        self._total = None
+        self._error = None
+        self._result = None
+        self._status = None
         self.discriminator = None
 
-        if trees is not None:
-            self.trees = trees
-        if total is not None:
-            self.total = total
+        if error is not None:
+            self.error = error
+        if result is not None:
+            self.result = result
+        if status is not None:
+            self.status = status
 
     @property
-    def trees(self):
-        """Gets the trees of this ListSubfilesResponse.
+    def error(self):
+        """Gets the error of this ListSubfilesResponse.
 
-        文件日志树
 
-        :return: The trees of this ListSubfilesResponse.
-        :rtype: list[:class:`huaweicloudsdkcodehub.v3.LogsTree`]
+        :return: The error of this ListSubfilesResponse.
+        :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
         """
-        return self._trees
+        return self._error
 
-    @trees.setter
-    def trees(self, trees):
-        """Sets the trees of this ListSubfilesResponse.
+    @error.setter
+    def error(self, error):
+        """Sets the error of this ListSubfilesResponse.
 
-        文件日志树
 
-        :param trees: The trees of this ListSubfilesResponse.
-        :type trees: list[:class:`huaweicloudsdkcodehub.v3.LogsTree`]
+        :param error: The error of this ListSubfilesResponse.
+        :type error: :class:`huaweicloudsdkcodehub.v3.Error`
         """
-        self._trees = trees
+        self._error = error
 
     @property
-    def total(self):
-        """Gets the total of this ListSubfilesResponse.
+    def result(self):
+        """Gets the result of this ListSubfilesResponse.
 
-        记录总数
 
-        :return: The total of this ListSubfilesResponse.
-        :rtype: int
+        :return: The result of this ListSubfilesResponse.
+        :rtype: :class:`huaweicloudsdkcodehub.v3.LogsTreeList`
         """
-        return self._total
+        return self._result
 
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ListSubfilesResponse.
+    @result.setter
+    def result(self, result):
+        """Sets the result of this ListSubfilesResponse.
 
-        记录总数
 
-        :param total: The total of this ListSubfilesResponse.
-        :type total: int
+        :param result: The result of this ListSubfilesResponse.
+        :type result: :class:`huaweicloudsdkcodehub.v3.LogsTreeList`
         """
-        self._total = total
+        self._result = result
+
+    @property
+    def status(self):
+        """Gets the status of this ListSubfilesResponse.
+
+        响应状态
+
+        :return: The status of this ListSubfilesResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListSubfilesResponse.
+
+        响应状态
+
+        :param status: The status of this ListSubfilesResponse.
+        :type status: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

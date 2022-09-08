@@ -26,7 +26,7 @@ class CreateDatasourceConnectionReq:
         'security_group_id': 'str',
         'network_id': 'str',
         'url': 'str',
-        'tags': 'list[JobsTags]'
+        'tags': 'list[TmsTagEntity]'
     }
 
     attribute_map = {
@@ -53,8 +53,8 @@ class CreateDatasourceConnectionReq:
         :type network_id: str
         :param url: 对应服务对外提供的访问url。长度不能超过512个字符。
         :type url: str
-        :param tags: 队列的标签。具体请参考表tags。
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :param tags: 标签
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         
         
@@ -189,10 +189,10 @@ class CreateDatasourceConnectionReq:
     def tags(self):
         """Gets the tags of this CreateDatasourceConnectionReq.
 
-        队列的标签。具体请参考表tags。
+        标签
 
         :return: The tags of this CreateDatasourceConnectionReq.
-        :rtype: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :rtype: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         return self._tags
 
@@ -200,10 +200,10 @@ class CreateDatasourceConnectionReq:
     def tags(self, tags):
         """Sets the tags of this CreateDatasourceConnectionReq.
 
-        队列的标签。具体请参考表tags。
+        标签
 
         :param tags: The tags of this CreateDatasourceConnectionReq.
-        :type tags: list[:class:`huaweicloudsdkdli.v1.JobsTags`]
+        :type tags: list[:class:`huaweicloudsdkdli.v1.TmsTagEntity`]
         """
         self._tags = tags
 

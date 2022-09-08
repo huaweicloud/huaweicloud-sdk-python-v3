@@ -1,3 +1,235 @@
+# 3.1.1 2022-09-08
+
+### HuaweiCloud SDK IAM
+
+- _新增特性_
+  - 支持自定义认证凭据 `IamCredentials`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK BSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCustomerselfResourceRecordDetails`新增响应参数 `root_resource_id`、`parent_resource_id`、`trade_id`、`product_spec_desc`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 支持接口`ShowTags`、`CreateTags`、`BatchDeleteTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowUrlTaskInfo`:
+    - 新增响应参数 `result`
+    - 移除响应参数 `results`
+  - 接口`ShowDomainFullConfig`新增响应参数 `error_code_cache`
+  - 接口`UpdateDomainFullConfig`新增请求参数 `error_code_cache`
+
+### HuaweiCloud SDK CodeHub
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListFilesByQuery`
+    - `ListBranchesByRepositoryId`
+    - `CreateNewBranch`
+    - `AssociateIssues`
+    - `ListMergeRequest`
+    - `ShowMergeRequest`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListSubfiles`:
+    - 新增响应参数 `error`、`result`、`status`
+    - 移除响应参数 `trees`、`total`
+  - 接口`ShowStatisticalData`:
+    - 新增响应参数 `error`、`result`、`status`
+    - 移除响应参数 `repoName`、`commitCount`、`repoSize`、`lastCommitTime`、`codeLines`、`branchCount`、`archiveUrl`
+  - 接口`CreateCommit`请求参数`force`类型调整 `string` -> `boolean`
+  - 接口`AddProtectBranchV2`:
+    - 请求参数`push_access_level`类型调整 `int32` -> `enum`
+    - 请求参数`merge_access_level`类型调整 `int32` -> `enum`
+
+### HuaweiCloud SDK CSE
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UploadKie`新增响应参数 `create_revision`、`update_revision`
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`UpdateCloseKibana`新增请求参数 `CloseKibanaPublicReq`
+  - 接口`CreateCluster`新增请求参数 `payInfo`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowInstance`新增响应参数 `enterprise_project_name`、`update_at`、`product_type`、`storage_type`、`launched_at`、`cache_mode`、`support_slow_log_flag`、`db_number`、`replica_count`、`sharding_count`、`bandwidth_info`
+  - 接口`ListRedislog`新增响应参数 `backupId`
+  - 接口`ShowIpWhitelist`新增响应参数 `instance_id`
+  - 接口`UpdateIpWhitelist`新增请求参数 `instance_id`
+  - 接口`ListBackgroundTask`新增响应参数 `updated_at`、`created_at`、`status`
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 支持接口`CreateDownloadJob`、`UpdateTableOwner`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListGlobalValues`:
+    - 新增响应参数 `is_sensitive`
+    - 响应参数`id`类型调整 `int32` -> `string`
+  - 接口`CreateGlobleValue`:
+    - 新增请求参数 `CreateGlobalValueReq`
+    - 移除请求参数 `createGlobaleValueReq`
+  - 接口`UpdateGlobalValue`移除请求参数 `var_name`
+  - 接口`CreateIefSystemEvents`移除请求参数 `event_type`、`operation`、`timestamp`、`topic`、`name`、`attributes`
+  - 接口`ListJobs`:
+    - 新增请求参数 `owner`、`tags`
+    - 新增响应参数 `message`、`end_time`
+    - 移除响应参数 `key`、`value`
+  - 接口`ImportData`请求参数`partition_spec`类型调整 `object` -> `string`
+  - 接口`RunJob`移除请求参数 `key`、`value`
+  - 接口`ShowDetailInfo`移除响应参数 `key`、`value`
+  - 接口`ShowJobStatus`移除响应参数 `key`、`value`
+  - 接口`CreateDatabase`移除请求参数 `key`、`value`
+  - 接口`ListAllTables`响应参数`create_time`类型调整 `int64` -> `int32`
+  - 接口`ShowObjectUser`移除请求参数 `limit`、`offset`
+  - 接口`CreateFlinkJar`移除请求参数 `key`、`value`
+  - 接口`UpdateFlinkJar`新增请求参数 `job_type`
+  - 接口`ListFlinkJobs`:
+    - 新增响应参数 `user_name`
+    - 移除响应参数 `username`
+  - 接口`CreateFlinkSql`移除请求参数 `key`、`value`
+  - 接口`CreateFlinkTemplate`:
+    - 移除请求参数 `key`、`value`
+    - 请求参数`job_type`类型调整 `string` -> `enum`
+  - 接口`ListResources`响应参数`update_time`类型调整 `int32` -> `int64`
+  - 接口`UploadResources`:
+    - 新增请求参数 `USER-ID`
+    - 移除请求参数 `USER_ID`、`key`、`value`
+    - 请求参数`group`改为必填
+  - 接口`UploadFiles`:
+    - 新增请求参数 `USER-ID`
+    - 移除请求参数 `USER_ID`
+    - 请求参数`group`改为必填
+  - 接口`UploadJars`:
+    - 新增请求参数 `USER-ID`
+    - 移除请求参数 `USER_ID`
+    - 请求参数`group`改为必填
+  - 接口`UploadPythonFiles`:
+    - 新增请求参数 `USER-ID`
+    - 移除请求参数 `USER_ID`
+    - 请求参数`group`改为必填
+  - 接口`ListBatches`:
+    - 新增请求参数 `end`、`order`、`start`
+    - 新增响应参数 `duration`
+  - 接口`CreateBatchJob`:
+    - 新增请求参数 `USER-ID`
+    - 移除请求参数 `USER_ID`
+    - 请求参数`queue`改为非必填
+  - 接口`ListElasticResourcePools`:
+    - 响应参数`update_time`类型调整 `int32` -> `int64`
+    - 响应参数`create_time`类型调整 `int32` -> `int64`
+  - 接口`ListEnhancedConnections`新增请求参数 `tags`
+  - 接口`CreateEnhancedConnection`移除请求参数 `key`、`value`
+  - 接口`ListDatasourceConnections`:
+    - 新增请求参数 `tags`
+    - 移除响应参数 `is_success`、`message`、`connection_id`、`destination`、`state`、`process`、`name`、`connection_url`、`cluster_name`、`service`、`create_time`
+  - 接口`CreateDatasourceConnection`移除请求参数 `key`、`value`
+  - 接口`ShowDatasourceConnection`:
+    - 新增响应参数 `queueList`
+    - 移除响应参数 `available_queue_info`
+  - 接口`ListQueues`:
+    - 新增响应参数 `resource_type`
+    - 移除请求参数 `page-size`、`current-page`、`order`
+    - 移除响应参数 `queue_resource_type`、`cu_spec`、`cu_scale_out_limit`、`cu_scale_in_limit`、`elastic_resource_pool_name`
+    - 响应参数`queue_id`类型调整 `string` -> `int64`
+    - 响应参数`labels`类型调整 `array` -> `string`
+  - 接口`CreateQueue`移除请求参数 `key`、`value`
+  - 接口`ShowQueueDetail`:
+    - 新增响应参数 `queue_name`、`cu_count`、`charging_mode`
+    - 移除请求参数 `queue_type`
+    - 移除响应参数 `queueName`、`cuCount`、`chargingMode`、`queueType`、`resource_type`、`cu_spec`、`cu_scale_out_limit`、`cu_scale_in_limit`、`elastic_resource_pool_name`
+    - 响应参数`queue_id`类型调整 `string` -> `int64`
+  - 接口`RunQueueAction`:
+    - 新增请求参数 `RunQueueActionReq`
+    - 移除请求参数 `body`
+  - 接口`CreateQueuePlan`请求参数`repeat_day`改为非必填
+  - 接口`ChangeQueuePlan`请求参数`repeat_day`改为非必填
+
+### HuaweiCloud SDK EVS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowVersion`
+    - `ListVersions`
+    - `CinderShowVolumeTransfer`
+    - `CinderDeleteVolumeTransfer`
+    - `CinderListVolumeTransfers`
+    - `CinderCreateVolumeTransfer`
+    - `CinderAcceptVolumeTransfer`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IEF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListApps`新增响应参数 `cpu`、`memory`、`gpu`、`npu`、`cpu`、`memory`、`gpu`、`npu`
+  - 接口`UpdateApp`新增响应参数 `cpu`、`memory`、`gpu`、`npu`、`cpu`、`memory`、`gpu`、`npu`
+  - 接口`ShowAppDetail`新增响应参数 `cpu`、`memory`、`gpu`、`npu`、`cpu`、`memory`、`gpu`、`npu`
+  - 接口`ListAppVersions`新增响应参数 `cpu`、`memory`、`gpu`、`npu`、`cpu`、`memory`、`gpu`、`npu`
+  - 接口`CreateAppVersions`新增请求参数 `cpu`、`memory`、`gpu`、`npu`、`cpu`、`memory`、`gpu`、`npu`
+  - 接口`UpdateAppVersion`:
+    - 新增请求参数 `cpu`、`memory`、`gpu`、`npu`、`cpu`、`memory`、`gpu`、`npu`
+    - 新增响应参数 `cpu`、`memory`、`gpu`、`npu`、`cpu`、`memory`、`gpu`、`npu`
+  - 接口`ShowAppVersionDetail`新增响应参数 `cpu`、`memory`、`gpu`、`npu`、`cpu`、`memory`、`gpu`、`npu`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateLogStream`新增请求参数 `ttl_in_days`
+  - 接口`ListStructuredLogsWithTimeRange`新增请求参数 `whether_to_rows`
+  - 接口`UpdateStructTemplate`请求参数`isAnalysis`改为非必填
+  - 接口`CreateStructTemplate`请求参数`isAnalysis`改为非必填
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 支持接口`RunCreateVideoModerationJob`、`RunQueryVideoModerationJob`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RunCreateAudioModerationJob`请求参数`url`改为非必填
+
 # 3.0.108 2022-09-01
 
 ### HuaweiCloud SDK BSSINTL

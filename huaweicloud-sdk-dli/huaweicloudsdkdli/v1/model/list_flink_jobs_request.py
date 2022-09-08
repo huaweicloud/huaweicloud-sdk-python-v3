@@ -21,194 +21,106 @@ class ListFlinkJobsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'name': 'str',
-        'user_name': 'str',
-        'queue_name': 'str',
-        'status': 'str',
         'job_type': 'str',
-        'tags': 'str',
-        'sys_enterprise_project_name': 'str',
-        'show_detail': 'bool',
-        'order': 'str',
-        'offset': 'int',
         'limit': 'int',
-        'root_job_id': 'int'
+        'name': 'str',
+        'offset': 'int',
+        'order': 'str',
+        'queue_name': 'str',
+        'root_job_id': 'int',
+        'show_detail': 'bool',
+        'status': 'str',
+        'sys_enterprise_project_name': 'str',
+        'tags': 'str',
+        'user_name': 'str'
     }
 
     attribute_map = {
-        'name': 'name',
-        'user_name': 'user_name',
-        'queue_name': 'queue_name',
-        'status': 'status',
         'job_type': 'job_type',
-        'tags': 'tags',
-        'sys_enterprise_project_name': 'sys_enterprise_project_name',
-        'show_detail': 'show_detail',
-        'order': 'order',
-        'offset': 'offset',
         'limit': 'limit',
-        'root_job_id': 'root_job_id'
+        'name': 'name',
+        'offset': 'offset',
+        'order': 'order',
+        'queue_name': 'queue_name',
+        'root_job_id': 'root_job_id',
+        'show_detail': 'show_detail',
+        'status': 'status',
+        'sys_enterprise_project_name': 'sys_enterprise_project_name',
+        'tags': 'tags',
+        'user_name': 'user_name'
     }
 
-    def __init__(self, name=None, user_name=None, queue_name=None, status=None, job_type=None, tags=None, sys_enterprise_project_name=None, show_detail=None, order=None, offset=None, limit=None, root_job_id=None):
+    def __init__(self, job_type=None, limit=None, name=None, offset=None, order=None, queue_name=None, root_job_id=None, show_detail=None, status=None, sys_enterprise_project_name=None, tags=None, user_name=None):
         """ListFlinkJobsRequest
 
         The model defined in huaweicloud sdk
 
-        :param name: 作业名称。长度限制：0-57个字符。
-        :type name: str
-        :param user_name: 用户名，可作为筛选条件
-        :type user_name: str
-        :param queue_name: 队列名称。
-        :type queue_name: str
-        :param status: 作业状态码。
-        :type status: str
         :param job_type: 作业类型
         :type job_type: str
-        :param tags: 
-        :type tags: str
-        :param sys_enterprise_project_name: 
-        :type sys_enterprise_project_name: str
-        :param show_detail: 是否返回作业详情信息。默认为false。
-        :type show_detail: bool
-        :param order: 查询结果排序，升序asc和降序desc两种可选，默认降序。
-        :type order: str
-        :param offset: 作业偏移量。
-        :type offset: int
         :param limit: 返回的数据条数。默认为10。
         :type limit: int
+        :param name: 作业名称。长度限制：0-57个字符。
+        :type name: str
+        :param offset: 作业偏移量。
+        :type offset: int
+        :param order: 查询结果排序，升序asc和降序desc两种可选，默认降序。
+        :type order: str
+        :param queue_name: 队列名称。
+        :type queue_name: str
         :param root_job_id: 边缘父作业ID, 用于查询指定边缘作业的子作业。不带该参数时, 查询所有非边缘作业和边缘父作业, 不包括边缘子作业。
         :type root_job_id: int
-        """
-        
-        
-
-        self._name = None
-        self._user_name = None
-        self._queue_name = None
-        self._status = None
-        self._job_type = None
-        self._tags = None
-        self._sys_enterprise_project_name = None
-        self._show_detail = None
-        self._order = None
-        self._offset = None
-        self._limit = None
-        self._root_job_id = None
-        self.discriminator = None
-
-        if name is not None:
-            self.name = name
-        if user_name is not None:
-            self.user_name = user_name
-        if queue_name is not None:
-            self.queue_name = queue_name
-        if status is not None:
-            self.status = status
-        if job_type is not None:
-            self.job_type = job_type
-        if tags is not None:
-            self.tags = tags
-        if sys_enterprise_project_name is not None:
-            self.sys_enterprise_project_name = sys_enterprise_project_name
-        if show_detail is not None:
-            self.show_detail = show_detail
-        if order is not None:
-            self.order = order
-        if offset is not None:
-            self.offset = offset
-        if limit is not None:
-            self.limit = limit
-        if root_job_id is not None:
-            self.root_job_id = root_job_id
-
-    @property
-    def name(self):
-        """Gets the name of this ListFlinkJobsRequest.
-
-        作业名称。长度限制：0-57个字符。
-
-        :return: The name of this ListFlinkJobsRequest.
-        :rtype: str
-        """
-        return self._name
-
-    @name.setter
-    def name(self, name):
-        """Sets the name of this ListFlinkJobsRequest.
-
-        作业名称。长度限制：0-57个字符。
-
-        :param name: The name of this ListFlinkJobsRequest.
-        :type name: str
-        """
-        self._name = name
-
-    @property
-    def user_name(self):
-        """Gets the user_name of this ListFlinkJobsRequest.
-
-        用户名，可作为筛选条件
-
-        :return: The user_name of this ListFlinkJobsRequest.
-        :rtype: str
-        """
-        return self._user_name
-
-    @user_name.setter
-    def user_name(self, user_name):
-        """Sets the user_name of this ListFlinkJobsRequest.
-
-        用户名，可作为筛选条件
-
-        :param user_name: The user_name of this ListFlinkJobsRequest.
+        :param show_detail: 是否返回作业详情信息。默认为false。
+        :type show_detail: bool
+        :param status: 作业状态码。
+        :type status: str
+        :param sys_enterprise_project_name: 
+        :type sys_enterprise_project_name: str
+        :param tags: 
+        :type tags: str
+        :param user_name: 用户名，可作为筛选条件
         :type user_name: str
         """
-        self._user_name = user_name
+        
+        
 
-    @property
-    def queue_name(self):
-        """Gets the queue_name of this ListFlinkJobsRequest.
+        self._job_type = None
+        self._limit = None
+        self._name = None
+        self._offset = None
+        self._order = None
+        self._queue_name = None
+        self._root_job_id = None
+        self._show_detail = None
+        self._status = None
+        self._sys_enterprise_project_name = None
+        self._tags = None
+        self._user_name = None
+        self.discriminator = None
 
-        队列名称。
-
-        :return: The queue_name of this ListFlinkJobsRequest.
-        :rtype: str
-        """
-        return self._queue_name
-
-    @queue_name.setter
-    def queue_name(self, queue_name):
-        """Sets the queue_name of this ListFlinkJobsRequest.
-
-        队列名称。
-
-        :param queue_name: The queue_name of this ListFlinkJobsRequest.
-        :type queue_name: str
-        """
-        self._queue_name = queue_name
-
-    @property
-    def status(self):
-        """Gets the status of this ListFlinkJobsRequest.
-
-        作业状态码。
-
-        :return: The status of this ListFlinkJobsRequest.
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this ListFlinkJobsRequest.
-
-        作业状态码。
-
-        :param status: The status of this ListFlinkJobsRequest.
-        :type status: str
-        """
-        self._status = status
+        if job_type is not None:
+            self.job_type = job_type
+        if limit is not None:
+            self.limit = limit
+        if name is not None:
+            self.name = name
+        if offset is not None:
+            self.offset = offset
+        if order is not None:
+            self.order = order
+        if queue_name is not None:
+            self.queue_name = queue_name
+        if root_job_id is not None:
+            self.root_job_id = root_job_id
+        if show_detail is not None:
+            self.show_detail = show_detail
+        if status is not None:
+            self.status = status
+        if sys_enterprise_project_name is not None:
+            self.sys_enterprise_project_name = sys_enterprise_project_name
+        if tags is not None:
+            self.tags = tags
+        if user_name is not None:
+            self.user_name = user_name
 
     @property
     def job_type(self):
@@ -233,88 +145,48 @@ class ListFlinkJobsRequest:
         self._job_type = job_type
 
     @property
-    def tags(self):
-        """Gets the tags of this ListFlinkJobsRequest.
+    def limit(self):
+        """Gets the limit of this ListFlinkJobsRequest.
 
+        返回的数据条数。默认为10。
 
-        :return: The tags of this ListFlinkJobsRequest.
-        :rtype: str
+        :return: The limit of this ListFlinkJobsRequest.
+        :rtype: int
         """
-        return self._tags
+        return self._limit
 
-    @tags.setter
-    def tags(self, tags):
-        """Sets the tags of this ListFlinkJobsRequest.
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListFlinkJobsRequest.
 
+        返回的数据条数。默认为10。
 
-        :param tags: The tags of this ListFlinkJobsRequest.
-        :type tags: str
+        :param limit: The limit of this ListFlinkJobsRequest.
+        :type limit: int
         """
-        self._tags = tags
+        self._limit = limit
 
     @property
-    def sys_enterprise_project_name(self):
-        """Gets the sys_enterprise_project_name of this ListFlinkJobsRequest.
+    def name(self):
+        """Gets the name of this ListFlinkJobsRequest.
 
+        作业名称。长度限制：0-57个字符。
 
-        :return: The sys_enterprise_project_name of this ListFlinkJobsRequest.
+        :return: The name of this ListFlinkJobsRequest.
         :rtype: str
         """
-        return self._sys_enterprise_project_name
+        return self._name
 
-    @sys_enterprise_project_name.setter
-    def sys_enterprise_project_name(self, sys_enterprise_project_name):
-        """Sets the sys_enterprise_project_name of this ListFlinkJobsRequest.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this ListFlinkJobsRequest.
 
+        作业名称。长度限制：0-57个字符。
 
-        :param sys_enterprise_project_name: The sys_enterprise_project_name of this ListFlinkJobsRequest.
-        :type sys_enterprise_project_name: str
+        :param name: The name of this ListFlinkJobsRequest.
+        :type name: str
         """
-        self._sys_enterprise_project_name = sys_enterprise_project_name
-
-    @property
-    def show_detail(self):
-        """Gets the show_detail of this ListFlinkJobsRequest.
-
-        是否返回作业详情信息。默认为false。
-
-        :return: The show_detail of this ListFlinkJobsRequest.
-        :rtype: bool
-        """
-        return self._show_detail
-
-    @show_detail.setter
-    def show_detail(self, show_detail):
-        """Sets the show_detail of this ListFlinkJobsRequest.
-
-        是否返回作业详情信息。默认为false。
-
-        :param show_detail: The show_detail of this ListFlinkJobsRequest.
-        :type show_detail: bool
-        """
-        self._show_detail = show_detail
-
-    @property
-    def order(self):
-        """Gets the order of this ListFlinkJobsRequest.
-
-        查询结果排序，升序asc和降序desc两种可选，默认降序。
-
-        :return: The order of this ListFlinkJobsRequest.
-        :rtype: str
-        """
-        return self._order
-
-    @order.setter
-    def order(self, order):
-        """Sets the order of this ListFlinkJobsRequest.
-
-        查询结果排序，升序asc和降序desc两种可选，默认降序。
-
-        :param order: The order of this ListFlinkJobsRequest.
-        :type order: str
-        """
-        self._order = order
+        self._name = name
 
     @property
     def offset(self):
@@ -339,26 +211,48 @@ class ListFlinkJobsRequest:
         self._offset = offset
 
     @property
-    def limit(self):
-        """Gets the limit of this ListFlinkJobsRequest.
+    def order(self):
+        """Gets the order of this ListFlinkJobsRequest.
 
-        返回的数据条数。默认为10。
+        查询结果排序，升序asc和降序desc两种可选，默认降序。
 
-        :return: The limit of this ListFlinkJobsRequest.
-        :rtype: int
+        :return: The order of this ListFlinkJobsRequest.
+        :rtype: str
         """
-        return self._limit
+        return self._order
 
-    @limit.setter
-    def limit(self, limit):
-        """Sets the limit of this ListFlinkJobsRequest.
+    @order.setter
+    def order(self, order):
+        """Sets the order of this ListFlinkJobsRequest.
 
-        返回的数据条数。默认为10。
+        查询结果排序，升序asc和降序desc两种可选，默认降序。
 
-        :param limit: The limit of this ListFlinkJobsRequest.
-        :type limit: int
+        :param order: The order of this ListFlinkJobsRequest.
+        :type order: str
         """
-        self._limit = limit
+        self._order = order
+
+    @property
+    def queue_name(self):
+        """Gets the queue_name of this ListFlinkJobsRequest.
+
+        队列名称。
+
+        :return: The queue_name of this ListFlinkJobsRequest.
+        :rtype: str
+        """
+        return self._queue_name
+
+    @queue_name.setter
+    def queue_name(self, queue_name):
+        """Sets the queue_name of this ListFlinkJobsRequest.
+
+        队列名称。
+
+        :param queue_name: The queue_name of this ListFlinkJobsRequest.
+        :type queue_name: str
+        """
+        self._queue_name = queue_name
 
     @property
     def root_job_id(self):
@@ -381,6 +275,112 @@ class ListFlinkJobsRequest:
         :type root_job_id: int
         """
         self._root_job_id = root_job_id
+
+    @property
+    def show_detail(self):
+        """Gets the show_detail of this ListFlinkJobsRequest.
+
+        是否返回作业详情信息。默认为false。
+
+        :return: The show_detail of this ListFlinkJobsRequest.
+        :rtype: bool
+        """
+        return self._show_detail
+
+    @show_detail.setter
+    def show_detail(self, show_detail):
+        """Sets the show_detail of this ListFlinkJobsRequest.
+
+        是否返回作业详情信息。默认为false。
+
+        :param show_detail: The show_detail of this ListFlinkJobsRequest.
+        :type show_detail: bool
+        """
+        self._show_detail = show_detail
+
+    @property
+    def status(self):
+        """Gets the status of this ListFlinkJobsRequest.
+
+        作业状态码。
+
+        :return: The status of this ListFlinkJobsRequest.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this ListFlinkJobsRequest.
+
+        作业状态码。
+
+        :param status: The status of this ListFlinkJobsRequest.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def sys_enterprise_project_name(self):
+        """Gets the sys_enterprise_project_name of this ListFlinkJobsRequest.
+
+
+        :return: The sys_enterprise_project_name of this ListFlinkJobsRequest.
+        :rtype: str
+        """
+        return self._sys_enterprise_project_name
+
+    @sys_enterprise_project_name.setter
+    def sys_enterprise_project_name(self, sys_enterprise_project_name):
+        """Sets the sys_enterprise_project_name of this ListFlinkJobsRequest.
+
+
+        :param sys_enterprise_project_name: The sys_enterprise_project_name of this ListFlinkJobsRequest.
+        :type sys_enterprise_project_name: str
+        """
+        self._sys_enterprise_project_name = sys_enterprise_project_name
+
+    @property
+    def tags(self):
+        """Gets the tags of this ListFlinkJobsRequest.
+
+
+        :return: The tags of this ListFlinkJobsRequest.
+        :rtype: str
+        """
+        return self._tags
+
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListFlinkJobsRequest.
+
+
+        :param tags: The tags of this ListFlinkJobsRequest.
+        :type tags: str
+        """
+        self._tags = tags
+
+    @property
+    def user_name(self):
+        """Gets the user_name of this ListFlinkJobsRequest.
+
+        用户名，可作为筛选条件
+
+        :return: The user_name of this ListFlinkJobsRequest.
+        :rtype: str
+        """
+        return self._user_name
+
+    @user_name.setter
+    def user_name(self, user_name):
+        """Sets the user_name of this ListFlinkJobsRequest.
+
+        用户名，可作为筛选条件
+
+        :param user_name: The user_name of this ListFlinkJobsRequest.
+        :type user_name: str
+        """
+        self._user_name = user_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

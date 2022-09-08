@@ -99,7 +99,7 @@ class CreateBatchJobReq:
         :type python_files: list[str]
         :param files: 用户已上传到DLI资源管理系统的类型为file的资源包名。
         :type files: list[str]
-        :param modules: 依赖的系统资源模块名，具体模块名可通过查询所有资源包接口查看。 DLI系统提供了用于执行跨源作业的依赖模块，各个不同的服务对应的模块列表如下：  CloudTable/MRS HBase: sys.datasource.hbase CloudTable/MRS OpenTSDB: sys.datasource.opentsdb RDS MySQL: sys.datasource.rds RDS PostGre: 不需要选 DWS: 不需要选 CSS: sys.datasource.css
+        :param modules: 依赖的系统资源模块名，具体模块名可通过查询所有资源包接口查看。 DLI系统提供了用于执行跨源作业的依赖模块，各个不同的服务对应的模块列表如下： CloudTable/MRS HBase: sys.datasource.hbase CloudTable/MRS OpenTSDB: sys.datasource.opentsdb RDS MySQL: sys.datasource.rds RDS PostGre: 不需要选 DWS: 不需要选 CSS: sys.datasource.css
         :type modules: list[str]
         :param resources: JSON对象列表，填写用户已上传到队列的类型为JSON的资源包名和类型。
         :type resources: list[:class:`huaweicloudsdkdli.v1.CreateSessionReqResource`]
@@ -205,7 +205,8 @@ class CreateBatchJobReq:
             self.feature = feature
         if spark_version is not None:
             self.spark_version = spark_version
-        self.queue = queue
+        if queue is not None:
+            self.queue = queue
         if auto_recovery is not None:
             self.auto_recovery = auto_recovery
         if max_retry_times is not None:
@@ -397,7 +398,7 @@ class CreateBatchJobReq:
     def modules(self):
         """Gets the modules of this CreateBatchJobReq.
 
-        依赖的系统资源模块名，具体模块名可通过查询所有资源包接口查看。 DLI系统提供了用于执行跨源作业的依赖模块，各个不同的服务对应的模块列表如下：  CloudTable/MRS HBase: sys.datasource.hbase CloudTable/MRS OpenTSDB: sys.datasource.opentsdb RDS MySQL: sys.datasource.rds RDS PostGre: 不需要选 DWS: 不需要选 CSS: sys.datasource.css
+        依赖的系统资源模块名，具体模块名可通过查询所有资源包接口查看。 DLI系统提供了用于执行跨源作业的依赖模块，各个不同的服务对应的模块列表如下： CloudTable/MRS HBase: sys.datasource.hbase CloudTable/MRS OpenTSDB: sys.datasource.opentsdb RDS MySQL: sys.datasource.rds RDS PostGre: 不需要选 DWS: 不需要选 CSS: sys.datasource.css
 
         :return: The modules of this CreateBatchJobReq.
         :rtype: list[str]
@@ -408,7 +409,7 @@ class CreateBatchJobReq:
     def modules(self, modules):
         """Sets the modules of this CreateBatchJobReq.
 
-        依赖的系统资源模块名，具体模块名可通过查询所有资源包接口查看。 DLI系统提供了用于执行跨源作业的依赖模块，各个不同的服务对应的模块列表如下：  CloudTable/MRS HBase: sys.datasource.hbase CloudTable/MRS OpenTSDB: sys.datasource.opentsdb RDS MySQL: sys.datasource.rds RDS PostGre: 不需要选 DWS: 不需要选 CSS: sys.datasource.css
+        依赖的系统资源模块名，具体模块名可通过查询所有资源包接口查看。 DLI系统提供了用于执行跨源作业的依赖模块，各个不同的服务对应的模块列表如下： CloudTable/MRS HBase: sys.datasource.hbase CloudTable/MRS OpenTSDB: sys.datasource.opentsdb RDS MySQL: sys.datasource.rds RDS PostGre: 不需要选 DWS: 不需要选 CSS: sys.datasource.css
 
         :param modules: The modules of this CreateBatchJobReq.
         :type modules: list[str]
