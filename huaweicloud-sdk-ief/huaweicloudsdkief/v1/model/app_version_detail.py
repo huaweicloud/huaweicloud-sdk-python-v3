@@ -35,7 +35,8 @@ class AppVersionDetail:
         'command': 'list[str]',
         'args': 'list[str]',
         'liveness_probe': 'ProbeDetail',
-        'readiness_probe': 'ProbeDetail'
+        'readiness_probe': 'ProbeDetail',
+        'npu_type': 'str'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class AppVersionDetail:
         'command': 'command',
         'args': 'args',
         'liveness_probe': 'liveness_probe',
-        'readiness_probe': 'readiness_probe'
+        'readiness_probe': 'readiness_probe',
+        'npu_type': 'npu_type'
     }
 
-    def __init__(self, id=None, version=None, created_at=None, updated_at=None, project_id=None, image_url=None, envs=None, volumes=None, configs=None, resources=None, arch=None, command=None, args=None, liveness_probe=None, readiness_probe=None):
+    def __init__(self, id=None, version=None, created_at=None, updated_at=None, project_id=None, image_url=None, envs=None, volumes=None, configs=None, resources=None, arch=None, command=None, args=None, liveness_probe=None, readiness_probe=None, npu_type=None):
         """AppVersionDetail
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class AppVersionDetail:
         :type liveness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
         :param readiness_probe: 
         :type readiness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
+        :param npu_type: NPU芯片类型，可填：D310，D910
+        :type npu_type: str
         """
         
         
@@ -110,6 +114,7 @@ class AppVersionDetail:
         self._args = None
         self._liveness_probe = None
         self._readiness_probe = None
+        self._npu_type = None
         self.discriminator = None
 
         if id is not None:
@@ -140,6 +145,8 @@ class AppVersionDetail:
             self.liveness_probe = liveness_probe
         if readiness_probe is not None:
             self.readiness_probe = readiness_probe
+        if npu_type is not None:
+            self.npu_type = npu_type
 
     @property
     def id(self):
@@ -462,6 +469,28 @@ class AppVersionDetail:
         :type readiness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
         """
         self._readiness_probe = readiness_probe
+
+    @property
+    def npu_type(self):
+        """Gets the npu_type of this AppVersionDetail.
+
+        NPU芯片类型，可填：D310，D910
+
+        :return: The npu_type of this AppVersionDetail.
+        :rtype: str
+        """
+        return self._npu_type
+
+    @npu_type.setter
+    def npu_type(self, npu_type):
+        """Sets the npu_type of this AppVersionDetail.
+
+        NPU芯片类型，可填：D310，D910
+
+        :param npu_type: The npu_type of this AppVersionDetail.
+        :type npu_type: str
+        """
+        self._npu_type = npu_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

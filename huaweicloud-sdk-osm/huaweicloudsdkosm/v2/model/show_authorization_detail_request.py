@@ -21,7 +21,7 @@ class ShowAuthorizationDetailRequest:
     sensitive_list = []
 
     openapi_types = {
-        'authorization_id': 'int',
+        'authorization_id': 'str',
         'group_id': 'str',
         'x_site': 'int',
         'x_language': 'str',
@@ -42,7 +42,7 @@ class ShowAuthorizationDetailRequest:
         The model defined in huaweicloud sdk
 
         :param authorization_id: 授权id
-        :type authorization_id: int
+        :type authorization_id: str
         :param group_id: 组id
         :type group_id: str
         :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
@@ -79,7 +79,7 @@ class ShowAuthorizationDetailRequest:
         授权id
 
         :return: The authorization_id of this ShowAuthorizationDetailRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._authorization_id
 
@@ -90,7 +90,7 @@ class ShowAuthorizationDetailRequest:
         授权id
 
         :param authorization_id: The authorization_id of this ShowAuthorizationDetailRequest.
-        :type authorization_id: int
+        :type authorization_id: str
         """
         self._authorization_id = authorization_id
 

@@ -23,7 +23,7 @@ class UpdateAppRequest:
     openapi_types = {
         'ief_instance_id': 'str',
         'app_id': 'str',
-        'body': 'AppUpdate'
+        'body': 'UpdateAppBody'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class UpdateAppRequest:
         :param app_id: 应用模板ID
         :type app_id: str
         :param body: Body of the UpdateAppRequest
-        :type body: :class:`huaweicloudsdkief.v1.AppUpdate`
+        :type body: :class:`huaweicloudsdkief.v1.UpdateAppBody`
         """
         
         
@@ -108,7 +108,7 @@ class UpdateAppRequest:
 
 
         :return: The body of this UpdateAppRequest.
-        :rtype: :class:`huaweicloudsdkief.v1.AppUpdate`
+        :rtype: :class:`huaweicloudsdkief.v1.UpdateAppBody`
         """
         return self._body
 
@@ -118,7 +118,7 @@ class UpdateAppRequest:
 
 
         :param body: The body of this UpdateAppRequest.
-        :type body: :class:`huaweicloudsdkief.v1.AppUpdate`
+        :type body: :class:`huaweicloudsdkief.v1.UpdateAppBody`
         """
         self._body = body
 

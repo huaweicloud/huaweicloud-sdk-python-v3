@@ -495,7 +495,7 @@ class IefClient(Client):
         return self.create_edge_node_with_http_info(request)
 
     def create_edge_node_with_http_info(self, request):
-        all_params = ['create_edge_node', 'ief_instance_id']
+        all_params = ['create_edge_node_request_body', 'ief_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3745,7 +3745,7 @@ class IefClient(Client):
         return self.update_app_with_http_info(request)
 
     def update_app_with_http_info(self, request):
-        all_params = ['app_id', 'update_app', 'ief_instance_id']
+        all_params = ['app_id', 'update_app_body', 'ief_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -3807,7 +3807,7 @@ class IefClient(Client):
         return self.update_app_version_with_http_info(request)
 
     def update_app_version_with_http_info(self, request):
-        all_params = ['app_id', 'version_id', 'version', 'ief_instance_id']
+        all_params = ['app_id', 'version_id', 'updata_app_version_body', 'ief_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4181,7 +4181,7 @@ class IefClient(Client):
         return self.update_edge_node_with_http_info(request)
 
     def update_edge_node_with_http_info(self, request):
-        all_params = ['node_id', 'ief_instance_id', 'node']
+        all_params = ['node_id', 'ief_instance_id', 'update_edge_node_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

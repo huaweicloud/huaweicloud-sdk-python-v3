@@ -312,6 +312,72 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_case_extends_param_async(self, request):
+        """提交工单扩展参数
+
+        提交工单扩展参数
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateCaseExtendsParam
+        :type request: :class:`huaweicloudsdkosm.v2.CreateCaseExtendsParamRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.CreateCaseExtendsParamResponse`
+        """
+        return self.create_case_extends_param_with_http_info(request)
+
+    def create_case_extends_param_with_http_info(self, request):
+        all_params = ['case_id', 'create_case_extends_param_request_body', 'x_site', 'x_language', 'x_time_zone']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'case_id' in local_var_params:
+            path_params['case_id'] = local_var_params['case_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_site' in local_var_params:
+            header_params['X-Site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_time_zone' in local_var_params:
+            header_params['X-Time-Zone'] = local_var_params['x_time_zone']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/cases/{case_id}/extends-param',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateCaseExtendsParamResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_case_labels_async(self, request):
         """添加工单关联标签接口
 
@@ -1255,6 +1321,73 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_accessory_access_urls_async(self, request):
+        """租户批量获取下载链接
+
+        租户批量获取下载链接
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListAccessoryAccessUrls
+        :type request: :class:`huaweicloudsdkosm.v2.ListAccessoryAccessUrlsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListAccessoryAccessUrlsResponse`
+        """
+        return self.list_accessory_access_urls_with_http_info(request)
+
+    def list_accessory_access_urls_with_http_info(self, request):
+        all_params = ['group_id', 'accessory_ids', 'x_site', 'x_language', 'x_time_zone']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+        if 'accessory_ids' in local_var_params:
+            query_params.append(('accessory_ids', local_var_params['accessory_ids']))
+            collection_formats['accessory_ids'] = 'csv'
+
+        header_params = {}
+        if 'x_site' in local_var_params:
+            header_params['X-Site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_time_zone' in local_var_params:
+            header_params['X-Time-Zone'] = local_var_params['x_time_zone']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/accessorys/access-urls',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAccessoryAccessUrlsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_agencies_async(self, request):
         """查询委托
 
@@ -2054,6 +2187,68 @@ class OsmAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListCasesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_customers_regions_async(self, request):
+        """查询用户关联的region
+
+        查询用户关联的region
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListCustomersRegions
+        :type request: :class:`huaweicloudsdkosm.v2.ListCustomersRegionsRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ListCustomersRegionsResponse`
+        """
+        return self.list_customers_regions_with_http_info(request)
+
+    def list_customers_regions_with_http_info(self, request):
+        all_params = ['x_site', 'x_language', 'x_time_zone']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_site' in local_var_params:
+            header_params['X-Site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_time_zone' in local_var_params:
+            header_params['X-Time-Zone'] = local_var_params['x_time_zone']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/customers/regions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListCustomersRegionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3549,6 +3744,72 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_case_extends_param_async(self, request):
+        """查询工单扩展参数
+
+        查询工单扩展参数
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowCaseExtendsParam
+        :type request: :class:`huaweicloudsdkosm.v2.ShowCaseExtendsParamRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowCaseExtendsParamResponse`
+        """
+        return self.show_case_extends_param_with_http_info(request)
+
+    def show_case_extends_param_with_http_info(self, request):
+        all_params = ['group_id', 'case_id', 'x_site', 'x_language', 'x_time_zone']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'case_id' in local_var_params:
+            path_params['case_id'] = local_var_params['case_id']
+
+        query_params = []
+        if 'group_id' in local_var_params:
+            query_params.append(('group_id', local_var_params['group_id']))
+
+        header_params = {}
+        if 'x_site' in local_var_params:
+            header_params['X-Site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_time_zone' in local_var_params:
+            header_params['X-Time-Zone'] = local_var_params['x_time_zone']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/cases/{case_id}/extends-param',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowCaseExtendsParamResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_case_status_async(self, request):
         """查询某个工单状态
 
@@ -3608,6 +3869,132 @@ class OsmAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowCaseStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_customer_privilege_policy_async(self, request):
+        """查询提单权限
+
+        查询提单权限
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowCustomerPrivilegePolicy
+        :type request: :class:`huaweicloudsdkosm.v2.ShowCustomerPrivilegePolicyRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowCustomerPrivilegePolicyResponse`
+        """
+        return self.show_customer_privilege_policy_with_http_info(request)
+
+    def show_customer_privilege_policy_with_http_info(self, request):
+        all_params = ['x_site', 'x_language', 'x_time_zone']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_site' in local_var_params:
+            header_params['X-Site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_time_zone' in local_var_params:
+            header_params['X-Time-Zone'] = local_var_params['x_time_zone']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/privileges/privilege-policy',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowCustomerPrivilegePolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_latest_published_agreement_async(self, request):
+        """查看最新发布版本协议详情
+
+        查看最新发布版本协议详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowLatestPublishedAgreement
+        :type request: :class:`huaweicloudsdkosm.v2.ShowLatestPublishedAgreementRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowLatestPublishedAgreementResponse`
+        """
+        return self.show_latest_published_agreement_with_http_info(request)
+
+    def show_latest_published_agreement_with_http_info(self, request):
+        all_params = ['agreement_type', 'x_site', 'x_language', 'x_time_zone']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'agreement_type' in local_var_params:
+            query_params.append(('agreement_type', local_var_params['agreement_type']))
+
+        header_params = {}
+        if 'x_site' in local_var_params:
+            header_params['X-Site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_time_zone' in local_var_params:
+            header_params['X-Time-Zone'] = local_var_params['x_time_zone']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/agreements/published-agreement',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowLatestPublishedAgreementResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3741,6 +4128,136 @@ class OsmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_signed_latest_published_agreement_async(self, request):
+        """查询用户是否签署最新协议
+
+        查询用户是否签署最新协议
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowSignedLatestPublishedAgreement
+        :type request: :class:`huaweicloudsdkosm.v2.ShowSignedLatestPublishedAgreementRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.ShowSignedLatestPublishedAgreementResponse`
+        """
+        return self.show_signed_latest_published_agreement_with_http_info(request)
+
+    def show_signed_latest_published_agreement_with_http_info(self, request):
+        all_params = ['agreement_type', 'x_site', 'x_language', 'x_time_zone']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'agreement_type' in local_var_params:
+            query_params.append(('agreement_type', local_var_params['agreement_type']))
+
+        header_params = {}
+        if 'x_site' in local_var_params:
+            header_params['X-Site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_time_zone' in local_var_params:
+            header_params['X-Time-Zone'] = local_var_params['x_time_zone']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/agreements/signed-latest',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowSignedLatestPublishedAgreementResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def sign_published_agreement_async(self, request):
+        """签署协议
+
+        签署协议
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SignPublishedAgreement
+        :type request: :class:`huaweicloudsdkosm.v2.SignPublishedAgreementRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.SignPublishedAgreementResponse`
+        """
+        return self.sign_published_agreement_with_http_info(request)
+
+    def sign_published_agreement_with_http_info(self, request):
+        all_params = ['id', 'x_site', 'x_language', 'x_time_zone', 'sign_published_agreement_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_site' in local_var_params:
+            header_params['X-Site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_time_zone' in local_var_params:
+            header_params['X-Time-Zone'] = local_var_params['x_time_zone']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/agreements/{id}/signed',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SignPublishedAgreementResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_authorizations_async(self, request):
         """拒绝|撤销授权
 
@@ -3804,6 +4321,72 @@ class OsmAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateAuthorizationsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_case_contact_info_async(self, request):
+        """修改联系方式
+
+        修改联系方式
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateCaseContactInfo
+        :type request: :class:`huaweicloudsdkosm.v2.UpdateCaseContactInfoRequest`
+        :rtype: :class:`huaweicloudsdkosm.v2.UpdateCaseContactInfoResponse`
+        """
+        return self.update_case_contact_info_with_http_info(request)
+
+    def update_case_contact_info_with_http_info(self, request):
+        all_params = ['case_id', 'update_case_contact_info_request_body', 'x_site', 'x_language', 'x_time_zone']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'case_id' in local_var_params:
+            path_params['case_id'] = local_var_params['case_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_site' in local_var_params:
+            header_params['X-Site'] = local_var_params['x_site']
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+        if 'x_time_zone' in local_var_params:
+            header_params['X-Time-Zone'] = local_var_params['x_time_zone']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/servicerequest/cases/{case_id}/contact-info',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateCaseContactInfoResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

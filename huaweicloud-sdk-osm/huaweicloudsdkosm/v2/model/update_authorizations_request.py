@@ -21,7 +21,7 @@ class UpdateAuthorizationsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'authorization_id': 'int',
+        'authorization_id': 'str',
         'action_id': 'str',
         'x_site': 'int',
         'x_language': 'str',
@@ -44,7 +44,7 @@ class UpdateAuthorizationsRequest:
         The model defined in huaweicloud sdk
 
         :param authorization_id: 授权id
-        :type authorization_id: int
+        :type authorization_id: str
         :param action_id: 操作id，reject，cancel
         :type action_id: str
         :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
@@ -86,7 +86,7 @@ class UpdateAuthorizationsRequest:
         授权id
 
         :return: The authorization_id of this UpdateAuthorizationsRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._authorization_id
 
@@ -97,7 +97,7 @@ class UpdateAuthorizationsRequest:
         授权id
 
         :param authorization_id: The authorization_id of this UpdateAuthorizationsRequest.
-        :type authorization_id: int
+        :type authorization_id: str
         """
         self._authorization_id = authorization_id
 

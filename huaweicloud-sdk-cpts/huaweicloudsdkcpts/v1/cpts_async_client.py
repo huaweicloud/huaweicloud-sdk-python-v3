@@ -520,6 +520,66 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_variable_async(self, request):
+        """删除全局变量
+
+        删除全局变量
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteVariable
+        :type request: :class:`huaweicloudsdkcpts.v1.DeleteVariableRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.DeleteVariableResponse`
+        """
+        return self.delete_variable_with_http_info(request)
+
+    def delete_variable_with_http_info(self, request):
+        all_params = ['variable_id', 'test_suite_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'variable_id' in local_var_params:
+            query_params.append(('variable_id', local_var_params['variable_id']))
+        if 'test_suite_id' in local_var_params:
+            query_params.append(('test_suite_id', local_var_params['test_suite_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/variables',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteVariableResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_variables_async(self, request):
         """查询全局变量
 
@@ -1062,6 +1122,66 @@ class CptsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_task_related_test_case_async(self, request):
+        """修改任务关联用例
+
+        修改任务关联用例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateTaskRelatedTestCase
+        :type request: :class:`huaweicloudsdkcpts.v1.UpdateTaskRelatedTestCaseRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.UpdateTaskRelatedTestCaseResponse`
+        """
+        return self.update_task_related_test_case_with_http_info(request)
+
+    def update_task_related_test_case_with_http_info(self, request):
+        all_params = ['task_id', 'update_task_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/tasks/{task_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateTaskRelatedTestCaseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_task_status_async(self, request):
         """更新任务状态
 
@@ -1415,6 +1535,64 @@ class CptsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListProjectSetsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_project_test_case_async(self, request):
+        """查询用例树
+
+        查询用例树
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListProjectTestCase
+        :type request: :class:`huaweicloudsdkcpts.v1.ListProjectTestCaseRequest`
+        :rtype: :class:`huaweicloudsdkcpts.v1.ListProjectTestCaseResponse`
+        """
+        return self.list_project_test_case_with_http_info(request)
+
+    def list_project_test_case_with_http_info(self, request):
+        all_params = ['test_suite_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'test_suite_id' in local_var_params:
+            path_params['test_suite_id'] = local_var_params['test_suite_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/test-suites/{test_suite_id}/directory',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListProjectTestCaseResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

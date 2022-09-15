@@ -27,6 +27,7 @@ class PipelineExecuteStates:
         'executor': 'str',
         'pipeline_name': 'str',
         'pipeline_id': 'str',
+        'build_id': 'str',
         'detail_url': 'str',
         'modify_url': 'str',
         'start_time': 'str',
@@ -40,20 +41,21 @@ class PipelineExecuteStates:
         'executor': 'executor',
         'pipeline_name': 'pipeline_name',
         'pipeline_id': 'pipeline_id',
+        'build_id': 'build_id',
         'detail_url': 'detail_url',
         'modify_url': 'modify_url',
         'start_time': 'start_time',
         'end_time': 'end_time'
     }
 
-    def __init__(self, result=None, status=None, stages=None, executor=None, pipeline_name=None, pipeline_id=None, detail_url=None, modify_url=None, start_time=None, end_time=None):
+    def __init__(self, result=None, status=None, stages=None, executor=None, pipeline_name=None, pipeline_id=None, build_id=None, detail_url=None, modify_url=None, start_time=None, end_time=None):
         """PipelineExecuteStates
 
         The model defined in huaweicloud sdk
 
-        :param result: 流水线执行结果
+        :param result: 流水线执行结果。取值及含义：success：成功；error：失败；aborted：终止
         :type result: str
-        :param status: 流水线执行状态
+        :param status: 流水线执行状态.取值和含义:waiting:等待;running:执行中;verifying:待审核;suspending:挂起;completed:完成
         :type status: str
         :param stages: 阶段执行情况
         :type stages: list[:class:`huaweicloudsdkcloudpipeline.v2.Stages`]
@@ -63,6 +65,8 @@ class PipelineExecuteStates:
         :type pipeline_name: str
         :param pipeline_id: 流水线ID
         :type pipeline_id: str
+        :param build_id: 流水线执行ID
+        :type build_id: str
         :param detail_url: 流水线详情页URL
         :type detail_url: str
         :param modify_url: 流水线编辑页URL
@@ -81,6 +85,7 @@ class PipelineExecuteStates:
         self._executor = None
         self._pipeline_name = None
         self._pipeline_id = None
+        self._build_id = None
         self._detail_url = None
         self._modify_url = None
         self._start_time = None
@@ -93,6 +98,7 @@ class PipelineExecuteStates:
         self.executor = executor
         self.pipeline_name = pipeline_name
         self.pipeline_id = pipeline_id
+        self.build_id = build_id
         self.detail_url = detail_url
         self.modify_url = modify_url
         self.start_time = start_time
@@ -102,7 +108,7 @@ class PipelineExecuteStates:
     def result(self):
         """Gets the result of this PipelineExecuteStates.
 
-        流水线执行结果
+        流水线执行结果。取值及含义：success：成功；error：失败；aborted：终止
 
         :return: The result of this PipelineExecuteStates.
         :rtype: str
@@ -113,7 +119,7 @@ class PipelineExecuteStates:
     def result(self, result):
         """Sets the result of this PipelineExecuteStates.
 
-        流水线执行结果
+        流水线执行结果。取值及含义：success：成功；error：失败；aborted：终止
 
         :param result: The result of this PipelineExecuteStates.
         :type result: str
@@ -124,7 +130,7 @@ class PipelineExecuteStates:
     def status(self):
         """Gets the status of this PipelineExecuteStates.
 
-        流水线执行状态
+        流水线执行状态.取值和含义:waiting:等待;running:执行中;verifying:待审核;suspending:挂起;completed:完成
 
         :return: The status of this PipelineExecuteStates.
         :rtype: str
@@ -135,7 +141,7 @@ class PipelineExecuteStates:
     def status(self, status):
         """Sets the status of this PipelineExecuteStates.
 
-        流水线执行状态
+        流水线执行状态.取值和含义:waiting:等待;running:执行中;verifying:待审核;suspending:挂起;completed:完成
 
         :param status: The status of this PipelineExecuteStates.
         :type status: str
@@ -229,6 +235,28 @@ class PipelineExecuteStates:
         :type pipeline_id: str
         """
         self._pipeline_id = pipeline_id
+
+    @property
+    def build_id(self):
+        """Gets the build_id of this PipelineExecuteStates.
+
+        流水线执行ID
+
+        :return: The build_id of this PipelineExecuteStates.
+        :rtype: str
+        """
+        return self._build_id
+
+    @build_id.setter
+    def build_id(self, build_id):
+        """Sets the build_id of this PipelineExecuteStates.
+
+        流水线执行ID
+
+        :param build_id: The build_id of this PipelineExecuteStates.
+        :type build_id: str
+        """
+        self._build_id = build_id
 
     @property
     def detail_url(self):

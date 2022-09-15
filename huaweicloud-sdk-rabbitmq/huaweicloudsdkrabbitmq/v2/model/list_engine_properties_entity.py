@@ -21,6 +21,9 @@ class ListEnginePropertiesEntity:
     sensitive_list = []
 
     openapi_types = {
+        'step_length': 'str',
+        'max_queue_per_broker': 'str',
+        'max_connection_per_broker': 'str',
         'max_partition_per_broker': 'str',
         'max_broker': 'str',
         'max_storage_per_node': 'str',
@@ -32,6 +35,9 @@ class ListEnginePropertiesEntity:
     }
 
     attribute_map = {
+        'step_length': 'step_length',
+        'max_queue_per_broker': 'max_queue_per_broker',
+        'max_connection_per_broker': 'max_connection_per_broker',
         'max_partition_per_broker': 'max_partition_per_broker',
         'max_broker': 'max_broker',
         'max_storage_per_node': 'max_storage_per_node',
@@ -42,11 +48,17 @@ class ListEnginePropertiesEntity:
         'max_tps_per_broker': 'max_tps_per_broker'
     }
 
-    def __init__(self, max_partition_per_broker=None, max_broker=None, max_storage_per_node=None, max_consumer_per_broker=None, min_broker=None, max_bandwidth_per_broker=None, min_storage_per_node=None, max_tps_per_broker=None):
+    def __init__(self, step_length=None, max_queue_per_broker=None, max_connection_per_broker=None, max_partition_per_broker=None, max_broker=None, max_storage_per_node=None, max_consumer_per_broker=None, min_broker=None, max_bandwidth_per_broker=None, min_storage_per_node=None, max_tps_per_broker=None):
         """ListEnginePropertiesEntity
 
         The model defined in huaweicloud sdk
 
+        :param step_length: 节点增长步长。
+        :type step_length: str
+        :param max_queue_per_broker: 每个Broker的最大对列。
+        :type max_queue_per_broker: str
+        :param max_connection_per_broker: 每个Broker的最大连接数。
+        :type max_connection_per_broker: str
         :param max_partition_per_broker: 每个Broker的最大分区数。
         :type max_partition_per_broker: str
         :param max_broker: Broker的最大个数。
@@ -67,6 +79,9 @@ class ListEnginePropertiesEntity:
         
         
 
+        self._step_length = None
+        self._max_queue_per_broker = None
+        self._max_connection_per_broker = None
         self._max_partition_per_broker = None
         self._max_broker = None
         self._max_storage_per_node = None
@@ -77,6 +92,12 @@ class ListEnginePropertiesEntity:
         self._max_tps_per_broker = None
         self.discriminator = None
 
+        if step_length is not None:
+            self.step_length = step_length
+        if max_queue_per_broker is not None:
+            self.max_queue_per_broker = max_queue_per_broker
+        if max_connection_per_broker is not None:
+            self.max_connection_per_broker = max_connection_per_broker
         if max_partition_per_broker is not None:
             self.max_partition_per_broker = max_partition_per_broker
         if max_broker is not None:
@@ -93,6 +114,72 @@ class ListEnginePropertiesEntity:
             self.min_storage_per_node = min_storage_per_node
         if max_tps_per_broker is not None:
             self.max_tps_per_broker = max_tps_per_broker
+
+    @property
+    def step_length(self):
+        """Gets the step_length of this ListEnginePropertiesEntity.
+
+        节点增长步长。
+
+        :return: The step_length of this ListEnginePropertiesEntity.
+        :rtype: str
+        """
+        return self._step_length
+
+    @step_length.setter
+    def step_length(self, step_length):
+        """Sets the step_length of this ListEnginePropertiesEntity.
+
+        节点增长步长。
+
+        :param step_length: The step_length of this ListEnginePropertiesEntity.
+        :type step_length: str
+        """
+        self._step_length = step_length
+
+    @property
+    def max_queue_per_broker(self):
+        """Gets the max_queue_per_broker of this ListEnginePropertiesEntity.
+
+        每个Broker的最大对列。
+
+        :return: The max_queue_per_broker of this ListEnginePropertiesEntity.
+        :rtype: str
+        """
+        return self._max_queue_per_broker
+
+    @max_queue_per_broker.setter
+    def max_queue_per_broker(self, max_queue_per_broker):
+        """Sets the max_queue_per_broker of this ListEnginePropertiesEntity.
+
+        每个Broker的最大对列。
+
+        :param max_queue_per_broker: The max_queue_per_broker of this ListEnginePropertiesEntity.
+        :type max_queue_per_broker: str
+        """
+        self._max_queue_per_broker = max_queue_per_broker
+
+    @property
+    def max_connection_per_broker(self):
+        """Gets the max_connection_per_broker of this ListEnginePropertiesEntity.
+
+        每个Broker的最大连接数。
+
+        :return: The max_connection_per_broker of this ListEnginePropertiesEntity.
+        :rtype: str
+        """
+        return self._max_connection_per_broker
+
+    @max_connection_per_broker.setter
+    def max_connection_per_broker(self, max_connection_per_broker):
+        """Sets the max_connection_per_broker of this ListEnginePropertiesEntity.
+
+        每个Broker的最大连接数。
+
+        :param max_connection_per_broker: The max_connection_per_broker of this ListEnginePropertiesEntity.
+        :type max_connection_per_broker: str
+        """
+        self._max_connection_per_broker = max_connection_per_broker
 
     @property
     def max_partition_per_broker(self):

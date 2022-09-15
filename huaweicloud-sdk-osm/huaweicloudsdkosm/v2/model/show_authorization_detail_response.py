@@ -21,7 +21,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'status': 'int',
         'incident_id': 'str',
         'simple_description': 'str',
@@ -68,7 +68,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param id: 授权id
-        :type id: int
+        :type id: str
         :param status: 授权状态
         :type status: int
         :param incident_id: 工单id
@@ -171,7 +171,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权id
 
         :return: The id of this ShowAuthorizationDetailResponse.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -182,7 +182,7 @@ class ShowAuthorizationDetailResponse(SdkResponse):
         授权id
 
         :param id: The id of this ShowAuthorizationDetailResponse.
-        :type id: int
+        :type id: str
         """
         self._id = id
 

@@ -22,6 +22,7 @@ class ListAccessPolicyRespPolicies:
 
     openapi_types = {
         'access_key': 'str',
+        'secret_key': 'str',
         'white_remote_address': 'str',
         'admin': 'bool',
         'perm': 'str'
@@ -29,18 +30,21 @@ class ListAccessPolicyRespPolicies:
 
     attribute_map = {
         'access_key': 'access_key',
+        'secret_key': 'secret_key',
         'white_remote_address': 'white_remote_address',
         'admin': 'admin',
         'perm': 'perm'
     }
 
-    def __init__(self, access_key=None, white_remote_address=None, admin=None, perm=None):
+    def __init__(self, access_key=None, secret_key=None, white_remote_address=None, admin=None, perm=None):
         """ListAccessPolicyRespPolicies
 
         The model defined in huaweicloud sdk
 
-        :param access_key: 秘钥。
+        :param access_key: 用户名。
         :type access_key: str
+        :param secret_key: 秘钥。
+        :type secret_key: str
         :param white_remote_address: IP白名单。
         :type white_remote_address: str
         :param admin: 是否为管理员。
@@ -52,6 +56,7 @@ class ListAccessPolicyRespPolicies:
         
 
         self._access_key = None
+        self._secret_key = None
         self._white_remote_address = None
         self._admin = None
         self._perm = None
@@ -59,6 +64,8 @@ class ListAccessPolicyRespPolicies:
 
         if access_key is not None:
             self.access_key = access_key
+        if secret_key is not None:
+            self.secret_key = secret_key
         if white_remote_address is not None:
             self.white_remote_address = white_remote_address
         if admin is not None:
@@ -70,7 +77,7 @@ class ListAccessPolicyRespPolicies:
     def access_key(self):
         """Gets the access_key of this ListAccessPolicyRespPolicies.
 
-        秘钥。
+        用户名。
 
         :return: The access_key of this ListAccessPolicyRespPolicies.
         :rtype: str
@@ -81,12 +88,34 @@ class ListAccessPolicyRespPolicies:
     def access_key(self, access_key):
         """Sets the access_key of this ListAccessPolicyRespPolicies.
 
-        秘钥。
+        用户名。
 
         :param access_key: The access_key of this ListAccessPolicyRespPolicies.
         :type access_key: str
         """
         self._access_key = access_key
+
+    @property
+    def secret_key(self):
+        """Gets the secret_key of this ListAccessPolicyRespPolicies.
+
+        秘钥。
+
+        :return: The secret_key of this ListAccessPolicyRespPolicies.
+        :rtype: str
+        """
+        return self._secret_key
+
+    @secret_key.setter
+    def secret_key(self, secret_key):
+        """Sets the secret_key of this ListAccessPolicyRespPolicies.
+
+        秘钥。
+
+        :param secret_key: The secret_key of this ListAccessPolicyRespPolicies.
+        :type secret_key: str
+        """
+        self._secret_key = secret_key
 
     @property
     def white_remote_address(self):

@@ -24,7 +24,7 @@ class UpdateAppVersionRequest:
         'ief_instance_id': 'str',
         'app_id': 'str',
         'version_id': 'str',
-        'body': 'VersionUpdate'
+        'body': 'UpdataAppVersionBody'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class UpdateAppVersionRequest:
         :param version_id: 应用模板版本ID
         :type version_id: str
         :param body: Body of the UpdateAppVersionRequest
-        :type body: :class:`huaweicloudsdkief.v1.VersionUpdate`
+        :type body: :class:`huaweicloudsdkief.v1.UpdataAppVersionBody`
         """
         
         
@@ -136,7 +136,7 @@ class UpdateAppVersionRequest:
 
 
         :return: The body of this UpdateAppVersionRequest.
-        :rtype: :class:`huaweicloudsdkief.v1.VersionUpdate`
+        :rtype: :class:`huaweicloudsdkief.v1.UpdataAppVersionBody`
         """
         return self._body
 
@@ -146,7 +146,7 @@ class UpdateAppVersionRequest:
 
 
         :param body: The body of this UpdateAppVersionRequest.
-        :type body: :class:`huaweicloudsdkief.v1.VersionUpdate`
+        :type body: :class:`huaweicloudsdkief.v1.UpdataAppVersionBody`
         """
         self._body = body
 

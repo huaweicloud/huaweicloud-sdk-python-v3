@@ -537,7 +537,7 @@ class KafkaClient(Client):
     def create_post_paid_instance(self, request):
         """创建实例
 
-        [创建按需计费类型的Kafka实例。](tag:hc,hk,hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc,cmcc)[创建kafka实例。](tag:ocb)
+        [创建按需计费类型的Kafka实例。](tag:hc,hk,hws,hws_hk,otc,hws_ocb,ctc,sbc,hk_sbc,cmcc,hws_eu)[创建kafka实例。](tag:ocb)
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1007,6 +1007,70 @@ class KafkaClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListEngineProductsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_instance_consumer_groups(self, request):
+        """查询所有消费组
+
+        查询所有消费组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListInstanceConsumerGroups
+        :type request: :class:`huaweicloudsdkkafka.v2.ListInstanceConsumerGroupsRequest`
+        :rtype: :class:`huaweicloudsdkkafka.v2.ListInstanceConsumerGroupsResponse`
+        """
+        return self.list_instance_consumer_groups_with_http_info(request)
+
+    def list_instance_consumer_groups_with_http_info(self, request):
+        all_params = ['instance_id', 'offset', 'limit', 'group']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'group' in local_var_params:
+            query_params.append(('group', local_var_params['group']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/instances/{instance_id}/groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListInstanceConsumerGroupsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

@@ -45,13 +45,13 @@ class Stages:
 
         The model defined in huaweicloud sdk
 
-        :param result: 阶段执行结果
+        :param result: 阶段执行结果。取值及含义：success：成功；error：失败；aborted：终止
         :type result: str
-        :param status: 阶段执行状态
+        :param status: 阶段执行状态。取值和含义:waiting:等待;running:执行中;verifying:待审核;suspending:挂起;completed:完成
         :type status: str
         :param name: 阶段名字
         :type name: str
-        :param parameters: 任务参数
+        :param parameters: -
         :type parameters: object
         :param order: 阶段顺序
         :type order: int
@@ -84,7 +84,7 @@ class Stages:
     def result(self):
         """Gets the result of this Stages.
 
-        阶段执行结果
+        阶段执行结果。取值及含义：success：成功；error：失败；aborted：终止
 
         :return: The result of this Stages.
         :rtype: str
@@ -95,7 +95,7 @@ class Stages:
     def result(self, result):
         """Sets the result of this Stages.
 
-        阶段执行结果
+        阶段执行结果。取值及含义：success：成功；error：失败；aborted：终止
 
         :param result: The result of this Stages.
         :type result: str
@@ -106,7 +106,7 @@ class Stages:
     def status(self):
         """Gets the status of this Stages.
 
-        阶段执行状态
+        阶段执行状态。取值和含义:waiting:等待;running:执行中;verifying:待审核;suspending:挂起;completed:完成
 
         :return: The status of this Stages.
         :rtype: str
@@ -117,7 +117,7 @@ class Stages:
     def status(self, status):
         """Sets the status of this Stages.
 
-        阶段执行状态
+        阶段执行状态。取值和含义:waiting:等待;running:执行中;verifying:待审核;suspending:挂起;completed:完成
 
         :param status: The status of this Stages.
         :type status: str
@@ -150,7 +150,7 @@ class Stages:
     def parameters(self):
         """Gets the parameters of this Stages.
 
-        任务参数
+        -
 
         :return: The parameters of this Stages.
         :rtype: object
@@ -161,7 +161,7 @@ class Stages:
     def parameters(self, parameters):
         """Sets the parameters of this Stages.
 
-        任务参数
+        -
 
         :param parameters: The parameters of this Stages.
         :type parameters: object

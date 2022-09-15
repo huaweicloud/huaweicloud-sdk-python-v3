@@ -21,58 +21,58 @@ class ListAuthorizationsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'total': 'int',
+        'count': 'int',
         'incident_auth_list': 'list[IncidentOrderAuthV2]'
     }
 
     attribute_map = {
-        'total': 'total',
+        'count': 'count',
         'incident_auth_list': 'incident_auth_list'
     }
 
-    def __init__(self, total=None, incident_auth_list=None):
+    def __init__(self, count=None, incident_auth_list=None):
         """ListAuthorizationsResponse
 
         The model defined in huaweicloud sdk
 
-        :param total: 总数
-        :type total: int
+        :param count: 总数
+        :type count: int
         :param incident_auth_list: 授权列表
         :type incident_auth_list: list[:class:`huaweicloudsdkosm.v2.IncidentOrderAuthV2`]
         """
         
         super(ListAuthorizationsResponse, self).__init__()
 
-        self._total = None
+        self._count = None
         self._incident_auth_list = None
         self.discriminator = None
 
-        if total is not None:
-            self.total = total
+        if count is not None:
+            self.count = count
         if incident_auth_list is not None:
             self.incident_auth_list = incident_auth_list
 
     @property
-    def total(self):
-        """Gets the total of this ListAuthorizationsResponse.
+    def count(self):
+        """Gets the count of this ListAuthorizationsResponse.
 
         总数
 
-        :return: The total of this ListAuthorizationsResponse.
+        :return: The count of this ListAuthorizationsResponse.
         :rtype: int
         """
-        return self._total
+        return self._count
 
-    @total.setter
-    def total(self, total):
-        """Sets the total of this ListAuthorizationsResponse.
+    @count.setter
+    def count(self, count):
+        """Sets the count of this ListAuthorizationsResponse.
 
         总数
 
-        :param total: The total of this ListAuthorizationsResponse.
-        :type total: int
+        :param count: The count of this ListAuthorizationsResponse.
+        :type count: int
         """
-        self._total = total
+        self._count = count
 
     @property
     def incident_auth_list(self):

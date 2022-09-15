@@ -201,7 +201,7 @@ class ShowInstanceResp:
         :type instance_id: str
         :param resource_spec_code: 资源规格标识。   - dms.instance.kafka.cluster.c3.mini：Kafka实例的基准带宽为100MByte/秒。   - dms.instance.kafka.cluster.c3.small.2：Kafka实例的基准带宽为300MByte/秒。   - dms.instance.kafka.cluster.c3.middle.2：Kafka实例的基准带宽为600MByte/秒。   - dms.instance.kafka.cluster.c3.high.2：Kafka实例的基准带宽为1200MByte/秒。
         :type resource_spec_code: str
-        :param charging_mode: 付费模式，1表示按需计费，0表示包年/包月计费。
+        :param charging_mode: [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,otc,ctc,sbc,hk_sbc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb)[付费模式，1表示按需计费](tag:hws_eu)
         :type charging_mode: int
         :param vpc_id: VPC ID。
         :type vpc_id: str
@@ -832,7 +832,7 @@ class ShowInstanceResp:
     def charging_mode(self):
         """Gets the charging_mode of this ShowInstanceResp.
 
-        付费模式，1表示按需计费，0表示包年/包月计费。
+        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,otc,ctc,sbc,hk_sbc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb)[付费模式，1表示按需计费](tag:hws_eu)
 
         :return: The charging_mode of this ShowInstanceResp.
         :rtype: int
@@ -843,7 +843,7 @@ class ShowInstanceResp:
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ShowInstanceResp.
 
-        付费模式，1表示按需计费，0表示包年/包月计费。
+        [付费模式，1表示按需计费，0表示包年/包月计费。](tag:hc,hk,hws,hws_hk,otc,ctc,sbc,hk_sbc,cmcc)[付费模式，暂未使用。](tag:hws_ocb,ocb)[付费模式，1表示按需计费](tag:hws_eu)
 
         :param charging_mode: The charging_mode of this ShowInstanceResp.
         :type charging_mode: int

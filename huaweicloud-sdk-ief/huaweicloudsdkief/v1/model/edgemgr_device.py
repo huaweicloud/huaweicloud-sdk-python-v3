@@ -29,6 +29,7 @@ class EdgemgrDevice:
         'twin': 'dict(str, ValueInTwinResponse)',
         'project_id': 'str',
         'created_at': 'str',
+        'updated_at': 'str',
         'property_visitors': 'dict(str, ValueInPropertyVisitors)',
         'tags': 'ResourceTag'
     }
@@ -42,11 +43,12 @@ class EdgemgrDevice:
         'twin': 'twin',
         'project_id': 'project_id',
         'created_at': 'created_at',
+        'updated_at': 'updated_at',
         'property_visitors': 'property_visitors',
         'tags': 'tags'
     }
 
-    def __init__(self, id=None, name=None, access_protocol=None, description=None, attributes=None, twin=None, project_id=None, created_at=None, property_visitors=None, tags=None):
+    def __init__(self, id=None, name=None, access_protocol=None, description=None, attributes=None, twin=None, project_id=None, created_at=None, updated_at=None, property_visitors=None, tags=None):
         """EdgemgrDevice
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class EdgemgrDevice:
         :type project_id: str
         :param created_at: 创建时间
         :type created_at: str
+        :param updated_at: 更新时间
+        :type updated_at: str
         :param property_visitors: 孪生属性配置
         :type property_visitors: dict(str, ValueInPropertyVisitors)
         :param tags: 
@@ -83,6 +87,7 @@ class EdgemgrDevice:
         self._twin = None
         self._project_id = None
         self._created_at = None
+        self._updated_at = None
         self._property_visitors = None
         self._tags = None
         self.discriminator = None
@@ -95,6 +100,8 @@ class EdgemgrDevice:
         self.twin = twin
         self.project_id = project_id
         self.created_at = created_at
+        if updated_at is not None:
+            self.updated_at = updated_at
         self.property_visitors = property_visitors
         self.tags = tags
 
@@ -273,6 +280,28 @@ class EdgemgrDevice:
         :type created_at: str
         """
         self._created_at = created_at
+
+    @property
+    def updated_at(self):
+        """Gets the updated_at of this EdgemgrDevice.
+
+        更新时间
+
+        :return: The updated_at of this EdgemgrDevice.
+        :rtype: str
+        """
+        return self._updated_at
+
+    @updated_at.setter
+    def updated_at(self, updated_at):
+        """Sets the updated_at of this EdgemgrDevice.
+
+        更新时间
+
+        :param updated_at: The updated_at of this EdgemgrDevice.
+        :type updated_at: str
+        """
+        self._updated_at = updated_at
 
     @property
     def property_visitors(self):

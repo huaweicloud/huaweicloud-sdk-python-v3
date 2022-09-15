@@ -21,11 +21,14 @@ class IncidentOrderAuthV2:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'int',
+        'id': 'str',
         'status': 'int',
         'incident_id': 'str',
         'simple_description': 'str',
+        'auth_describe': 'str',
+        'resource_type_id': 'object',
         'resource_type_name': 'str',
+        'visit_type_id': 'str',
         'visit_type_name': 'str',
         'create_time': 'datetime',
         'auth_effective_time': 'datetime',
@@ -33,7 +36,8 @@ class IncidentOrderAuthV2:
         'reject_reason': 'str',
         'customer_id': 'str',
         'x_customer_id': 'str',
-        'x_customer_name': 'str'
+        'xcustomer_name': 'str',
+        'content_of_auth_letter': 'str'
     }
 
     attribute_map = {
@@ -41,7 +45,10 @@ class IncidentOrderAuthV2:
         'status': 'status',
         'incident_id': 'incident_id',
         'simple_description': 'simple_description',
+        'auth_describe': 'auth_describe',
+        'resource_type_id': 'resource_type_id',
         'resource_type_name': 'resource_type_name',
+        'visit_type_id': 'visit_type_id',
         'visit_type_name': 'visit_type_name',
         'create_time': 'create_time',
         'auth_effective_time': 'auth_effective_time',
@@ -49,24 +56,31 @@ class IncidentOrderAuthV2:
         'reject_reason': 'reject_reason',
         'customer_id': 'customer_id',
         'x_customer_id': 'x_customer_id',
-        'x_customer_name': 'x_customer_name'
+        'xcustomer_name': 'xcustomer_name',
+        'content_of_auth_letter': 'content_of_auth_letter'
     }
 
-    def __init__(self, id=None, status=None, incident_id=None, simple_description=None, resource_type_name=None, visit_type_name=None, create_time=None, auth_effective_time=None, auth_expire_time=None, reject_reason=None, customer_id=None, x_customer_id=None, x_customer_name=None):
+    def __init__(self, id=None, status=None, incident_id=None, simple_description=None, auth_describe=None, resource_type_id=None, resource_type_name=None, visit_type_id=None, visit_type_name=None, create_time=None, auth_effective_time=None, auth_expire_time=None, reject_reason=None, customer_id=None, x_customer_id=None, xcustomer_name=None, content_of_auth_letter=None):
         """IncidentOrderAuthV2
 
         The model defined in huaweicloud sdk
 
         :param id: 授权id
-        :type id: int
+        :type id: str
         :param status: 授权状态
         :type status: int
         :param incident_id: 工单id
         :type incident_id: str
         :param simple_description: 简要描述
         :type simple_description: str
+        :param auth_describe: 授权描述
+        :type auth_describe: str
+        :param resource_type_id: 授权资源类型id
+        :type resource_type_id: object
         :param resource_type_name: 授权资源类型名称
         :type resource_type_name: str
+        :param visit_type_id: 授权访问类型id
+        :type visit_type_id: str
         :param visit_type_name: 授权访问类型名称
         :type visit_type_name: str
         :param create_time: 创建时间
@@ -81,8 +95,10 @@ class IncidentOrderAuthV2:
         :type customer_id: str
         :param x_customer_id: 子用户id
         :type x_customer_id: str
-        :param x_customer_name: 子用户名称
-        :type x_customer_name: str
+        :param xcustomer_name: 子用户名称
+        :type xcustomer_name: str
+        :param content_of_auth_letter: 承诺书内容
+        :type content_of_auth_letter: str
         """
         
         
@@ -91,7 +107,10 @@ class IncidentOrderAuthV2:
         self._status = None
         self._incident_id = None
         self._simple_description = None
+        self._auth_describe = None
+        self._resource_type_id = None
         self._resource_type_name = None
+        self._visit_type_id = None
         self._visit_type_name = None
         self._create_time = None
         self._auth_effective_time = None
@@ -99,7 +118,8 @@ class IncidentOrderAuthV2:
         self._reject_reason = None
         self._customer_id = None
         self._x_customer_id = None
-        self._x_customer_name = None
+        self._xcustomer_name = None
+        self._content_of_auth_letter = None
         self.discriminator = None
 
         if id is not None:
@@ -110,8 +130,14 @@ class IncidentOrderAuthV2:
             self.incident_id = incident_id
         if simple_description is not None:
             self.simple_description = simple_description
+        if auth_describe is not None:
+            self.auth_describe = auth_describe
+        if resource_type_id is not None:
+            self.resource_type_id = resource_type_id
         if resource_type_name is not None:
             self.resource_type_name = resource_type_name
+        if visit_type_id is not None:
+            self.visit_type_id = visit_type_id
         if visit_type_name is not None:
             self.visit_type_name = visit_type_name
         if create_time is not None:
@@ -126,8 +152,10 @@ class IncidentOrderAuthV2:
             self.customer_id = customer_id
         if x_customer_id is not None:
             self.x_customer_id = x_customer_id
-        if x_customer_name is not None:
-            self.x_customer_name = x_customer_name
+        if xcustomer_name is not None:
+            self.xcustomer_name = xcustomer_name
+        if content_of_auth_letter is not None:
+            self.content_of_auth_letter = content_of_auth_letter
 
     @property
     def id(self):
@@ -136,7 +164,7 @@ class IncidentOrderAuthV2:
         授权id
 
         :return: The id of this IncidentOrderAuthV2.
-        :rtype: int
+        :rtype: str
         """
         return self._id
 
@@ -147,7 +175,7 @@ class IncidentOrderAuthV2:
         授权id
 
         :param id: The id of this IncidentOrderAuthV2.
-        :type id: int
+        :type id: str
         """
         self._id = id
 
@@ -218,6 +246,50 @@ class IncidentOrderAuthV2:
         self._simple_description = simple_description
 
     @property
+    def auth_describe(self):
+        """Gets the auth_describe of this IncidentOrderAuthV2.
+
+        授权描述
+
+        :return: The auth_describe of this IncidentOrderAuthV2.
+        :rtype: str
+        """
+        return self._auth_describe
+
+    @auth_describe.setter
+    def auth_describe(self, auth_describe):
+        """Sets the auth_describe of this IncidentOrderAuthV2.
+
+        授权描述
+
+        :param auth_describe: The auth_describe of this IncidentOrderAuthV2.
+        :type auth_describe: str
+        """
+        self._auth_describe = auth_describe
+
+    @property
+    def resource_type_id(self):
+        """Gets the resource_type_id of this IncidentOrderAuthV2.
+
+        授权资源类型id
+
+        :return: The resource_type_id of this IncidentOrderAuthV2.
+        :rtype: object
+        """
+        return self._resource_type_id
+
+    @resource_type_id.setter
+    def resource_type_id(self, resource_type_id):
+        """Sets the resource_type_id of this IncidentOrderAuthV2.
+
+        授权资源类型id
+
+        :param resource_type_id: The resource_type_id of this IncidentOrderAuthV2.
+        :type resource_type_id: object
+        """
+        self._resource_type_id = resource_type_id
+
+    @property
     def resource_type_name(self):
         """Gets the resource_type_name of this IncidentOrderAuthV2.
 
@@ -238,6 +310,28 @@ class IncidentOrderAuthV2:
         :type resource_type_name: str
         """
         self._resource_type_name = resource_type_name
+
+    @property
+    def visit_type_id(self):
+        """Gets the visit_type_id of this IncidentOrderAuthV2.
+
+        授权访问类型id
+
+        :return: The visit_type_id of this IncidentOrderAuthV2.
+        :rtype: str
+        """
+        return self._visit_type_id
+
+    @visit_type_id.setter
+    def visit_type_id(self, visit_type_id):
+        """Sets the visit_type_id of this IncidentOrderAuthV2.
+
+        授权访问类型id
+
+        :param visit_type_id: The visit_type_id of this IncidentOrderAuthV2.
+        :type visit_type_id: str
+        """
+        self._visit_type_id = visit_type_id
 
     @property
     def visit_type_name(self):
@@ -394,26 +488,48 @@ class IncidentOrderAuthV2:
         self._x_customer_id = x_customer_id
 
     @property
-    def x_customer_name(self):
-        """Gets the x_customer_name of this IncidentOrderAuthV2.
+    def xcustomer_name(self):
+        """Gets the xcustomer_name of this IncidentOrderAuthV2.
 
         子用户名称
 
-        :return: The x_customer_name of this IncidentOrderAuthV2.
+        :return: The xcustomer_name of this IncidentOrderAuthV2.
         :rtype: str
         """
-        return self._x_customer_name
+        return self._xcustomer_name
 
-    @x_customer_name.setter
-    def x_customer_name(self, x_customer_name):
-        """Sets the x_customer_name of this IncidentOrderAuthV2.
+    @xcustomer_name.setter
+    def xcustomer_name(self, xcustomer_name):
+        """Sets the xcustomer_name of this IncidentOrderAuthV2.
 
         子用户名称
 
-        :param x_customer_name: The x_customer_name of this IncidentOrderAuthV2.
-        :type x_customer_name: str
+        :param xcustomer_name: The xcustomer_name of this IncidentOrderAuthV2.
+        :type xcustomer_name: str
         """
-        self._x_customer_name = x_customer_name
+        self._xcustomer_name = xcustomer_name
+
+    @property
+    def content_of_auth_letter(self):
+        """Gets the content_of_auth_letter of this IncidentOrderAuthV2.
+
+        承诺书内容
+
+        :return: The content_of_auth_letter of this IncidentOrderAuthV2.
+        :rtype: str
+        """
+        return self._content_of_auth_letter
+
+    @content_of_auth_letter.setter
+    def content_of_auth_letter(self, content_of_auth_letter):
+        """Sets the content_of_auth_letter of this IncidentOrderAuthV2.
+
+        承诺书内容
+
+        :param content_of_auth_letter: The content_of_auth_letter of this IncidentOrderAuthV2.
+        :type content_of_auth_letter: str
+        """
+        self._content_of_auth_letter = content_of_auth_letter
 
     def to_dict(self):
         """Returns the model properties as a dict"""

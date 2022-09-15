@@ -31,7 +31,8 @@ class LtsStructTemplateInfo:
         'regex_rules': 'str',
         'layers': 'int',
         'tokenizer': 'str',
-        'log_format': 'str'
+        'log_format': 'str',
+        'rule': 'list[Rule]'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class LtsStructTemplateInfo:
         'regex_rules': 'regex_rules',
         'layers': 'layers',
         'tokenizer': 'tokenizer',
-        'log_format': 'log_format'
+        'log_format': 'log_format',
+        'rule': 'rule'
     }
 
-    def __init__(self, demo_fields=None, tag_fields=None, content=None, log_group_id=None, parse_type=None, log_stream_id=None, project_id=None, regex_rules=None, layers=None, tokenizer=None, log_format=None):
+    def __init__(self, demo_fields=None, tag_fields=None, content=None, log_group_id=None, parse_type=None, log_stream_id=None, project_id=None, regex_rules=None, layers=None, tokenizer=None, log_format=None, rule=None):
         """LtsStructTemplateInfo
 
         The model defined in huaweicloud sdk
@@ -75,6 +77,8 @@ class LtsStructTemplateInfo:
         :type tokenizer: str
         :param log_format: parse_type为nginx类型时必填，nginx日志格式模板
         :type log_format: str
+        :param rule: 结构化方式
+        :type rule: list[:class:`huaweicloudsdklts.v2.Rule`]
         """
         
         
@@ -90,6 +94,7 @@ class LtsStructTemplateInfo:
         self._layers = None
         self._tokenizer = None
         self._log_format = None
+        self._rule = None
         self.discriminator = None
 
         self.demo_fields = demo_fields
@@ -107,6 +112,8 @@ class LtsStructTemplateInfo:
             self.tokenizer = tokenizer
         if log_format is not None:
             self.log_format = log_format
+        if rule is not None:
+            self.rule = rule
 
     @property
     def demo_fields(self):
@@ -349,6 +356,28 @@ class LtsStructTemplateInfo:
         :type log_format: str
         """
         self._log_format = log_format
+
+    @property
+    def rule(self):
+        """Gets the rule of this LtsStructTemplateInfo.
+
+        结构化方式
+
+        :return: The rule of this LtsStructTemplateInfo.
+        :rtype: list[:class:`huaweicloudsdklts.v2.Rule`]
+        """
+        return self._rule
+
+    @rule.setter
+    def rule(self, rule):
+        """Sets the rule of this LtsStructTemplateInfo.
+
+        结构化方式
+
+        :param rule: The rule of this LtsStructTemplateInfo.
+        :type rule: list[:class:`huaweicloudsdklts.v2.Rule`]
+        """
+        self._rule = rule
 
     def to_dict(self):
         """Returns the model properties as a dict"""

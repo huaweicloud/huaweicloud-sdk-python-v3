@@ -21,7 +21,7 @@ class ListHistorySessionsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'authorization_id': 'int',
+        'authorization_id': 'str',
         'authorization_detail_id': 'int',
         'group_id': 'str',
         'offset': 'int',
@@ -48,7 +48,7 @@ class ListHistorySessionsRequest:
         The model defined in huaweicloud sdk
 
         :param authorization_id: 授权id
-        :type authorization_id: int
+        :type authorization_id: str
         :param authorization_detail_id: 授权详情id
         :type authorization_detail_id: int
         :param group_id: 组id
@@ -99,7 +99,7 @@ class ListHistorySessionsRequest:
         授权id
 
         :return: The authorization_id of this ListHistorySessionsRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._authorization_id
 
@@ -110,7 +110,7 @@ class ListHistorySessionsRequest:
         授权id
 
         :param authorization_id: The authorization_id of this ListHistorySessionsRequest.
-        :type authorization_id: int
+        :type authorization_id: str
         """
         self._authorization_id = authorization_id
 

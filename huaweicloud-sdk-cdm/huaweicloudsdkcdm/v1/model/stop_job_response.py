@@ -21,51 +21,51 @@ class StopJobResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'submissions': 'list[StartJobSubmission]'
+        'validation_result': 'list[JobValidationResult]'
     }
 
     attribute_map = {
-        'submissions': 'submissions'
+        'validation_result': 'validation-result'
     }
 
-    def __init__(self, submissions=None):
+    def __init__(self, validation_result=None):
         """StopJobResponse
 
         The model defined in huaweicloud sdk
 
-        :param submissions: 作业运行信息，请参见submission参数说明
-        :type submissions: list[:class:`huaweicloudsdkcdm.v1.StartJobSubmission`]
+        :param validation_result: 校验结构：如果停止作业接失败，返回失败原因，请参见validation-result参数说明。如果停止成功，返回空列表。
+        :type validation_result: list[:class:`huaweicloudsdkcdm.v1.JobValidationResult`]
         """
         
         super(StopJobResponse, self).__init__()
 
-        self._submissions = None
+        self._validation_result = None
         self.discriminator = None
 
-        if submissions is not None:
-            self.submissions = submissions
+        if validation_result is not None:
+            self.validation_result = validation_result
 
     @property
-    def submissions(self):
-        """Gets the submissions of this StopJobResponse.
+    def validation_result(self):
+        """Gets the validation_result of this StopJobResponse.
 
-        作业运行信息，请参见submission参数说明
+        校验结构：如果停止作业接失败，返回失败原因，请参见validation-result参数说明。如果停止成功，返回空列表。
 
-        :return: The submissions of this StopJobResponse.
-        :rtype: list[:class:`huaweicloudsdkcdm.v1.StartJobSubmission`]
+        :return: The validation_result of this StopJobResponse.
+        :rtype: list[:class:`huaweicloudsdkcdm.v1.JobValidationResult`]
         """
-        return self._submissions
+        return self._validation_result
 
-    @submissions.setter
-    def submissions(self, submissions):
-        """Sets the submissions of this StopJobResponse.
+    @validation_result.setter
+    def validation_result(self, validation_result):
+        """Sets the validation_result of this StopJobResponse.
 
-        作业运行信息，请参见submission参数说明
+        校验结构：如果停止作业接失败，返回失败原因，请参见validation-result参数说明。如果停止成功，返回空列表。
 
-        :param submissions: The submissions of this StopJobResponse.
-        :type submissions: list[:class:`huaweicloudsdkcdm.v1.StartJobSubmission`]
+        :param validation_result: The validation_result of this StopJobResponse.
+        :type validation_result: list[:class:`huaweicloudsdkcdm.v1.JobValidationResult`]
         """
-        self._submissions = submissions
+        self._validation_result = validation_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

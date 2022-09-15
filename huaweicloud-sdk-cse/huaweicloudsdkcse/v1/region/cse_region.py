@@ -40,6 +40,8 @@ class CseRegion:
 
     LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://cse.la-south-2.myhuaweicloud.com")
 
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://cse.la-north-2.myhuaweicloud.com")
+
     static_fields = {
         "af-south-1": AF_SOUTH_1,
         "cn-north-4": CN_NORTH_4,
@@ -56,6 +58,7 @@ class CseRegion:
         "cn-north-9": CN_NORTH_9,
         "sa-brazil-1": SA_BRAZIL_1,
         "la-south-2": LA_SOUTH_2,
+        "la-north-2": LA_NORTH_2,
     }
 
     @classmethod

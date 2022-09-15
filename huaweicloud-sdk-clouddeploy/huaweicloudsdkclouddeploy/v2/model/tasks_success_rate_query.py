@@ -52,12 +52,9 @@ class TasksSuccessRateQuery:
         self._task_ids = None
         self.discriminator = None
 
-        if start_date is not None:
-            self.start_date = start_date
-        if end_date is not None:
-            self.end_date = end_date
-        if task_ids is not None:
-            self.task_ids = task_ids
+        self.start_date = start_date
+        self.end_date = end_date
+        self.task_ids = task_ids
 
     @property
     def start_date(self):

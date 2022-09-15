@@ -79,7 +79,7 @@ class CreateClusterInfo:
         :type user_pwd: str
         :param public_ip: 
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`
-        :param number_of_cn: CN部署量，取值范围为2~集群节点数-1，最大值为20，默认值为3。
+        :param number_of_cn: CN部署量，取值范围为2~集群节点数，最大值为20，默认值为3。
         :type number_of_cn: int
         :param enterprise_project_id: 企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
         :type enterprise_project_id: str
@@ -365,7 +365,7 @@ class CreateClusterInfo:
     def number_of_cn(self):
         """Gets the number_of_cn of this CreateClusterInfo.
 
-        CN部署量，取值范围为2~集群节点数-1，最大值为20，默认值为3。
+        CN部署量，取值范围为2~集群节点数，最大值为20，默认值为3。
 
         :return: The number_of_cn of this CreateClusterInfo.
         :rtype: int
@@ -376,7 +376,7 @@ class CreateClusterInfo:
     def number_of_cn(self, number_of_cn):
         """Sets the number_of_cn of this CreateClusterInfo.
 
-        CN部署量，取值范围为2~集群节点数-1，最大值为20，默认值为3。
+        CN部署量，取值范围为2~集群节点数，最大值为20，默认值为3。
 
         :param number_of_cn: The number_of_cn of this CreateClusterInfo.
         :type number_of_cn: int

@@ -21,7 +21,7 @@ class ConfirmAuthorizationsRequest:
     sensitive_list = []
 
     openapi_types = {
-        'authorization_id': 'int',
+        'authorization_id': 'str',
         'x_site': 'int',
         'x_language': 'str',
         'x_time_zone': 'str',
@@ -41,8 +41,8 @@ class ConfirmAuthorizationsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param authorization_id: 授权详情Id
-        :type authorization_id: int
+        :param authorization_id: 授权id
+        :type authorization_id: str
         :param x_site: 对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
         :type x_site: int
         :param x_language: 语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
@@ -76,10 +76,10 @@ class ConfirmAuthorizationsRequest:
     def authorization_id(self):
         """Gets the authorization_id of this ConfirmAuthorizationsRequest.
 
-        授权详情Id
+        授权id
 
         :return: The authorization_id of this ConfirmAuthorizationsRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._authorization_id
 
@@ -87,10 +87,10 @@ class ConfirmAuthorizationsRequest:
     def authorization_id(self, authorization_id):
         """Sets the authorization_id of this ConfirmAuthorizationsRequest.
 
-        授权详情Id
+        授权id
 
         :param authorization_id: The authorization_id of this ConfirmAuthorizationsRequest.
-        :type authorization_id: int
+        :type authorization_id: str
         """
         self._authorization_id = authorization_id
 

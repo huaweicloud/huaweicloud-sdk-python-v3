@@ -47,7 +47,7 @@ class ShowDatasourceConnectionResp:
         'cluster_name': 'cluster_name',
         'service': 'service',
         'create_time': 'create_time',
-        'queue_list': 'queueList'
+        'queue_list': 'queue_list'
     }
 
     def __init__(self, is_success=None, message=None, connection_id=None, destination=None, state=None, process=None, name=None, connection_url=None, cluster_name=None, service=None, create_time=None, queue_list=None):

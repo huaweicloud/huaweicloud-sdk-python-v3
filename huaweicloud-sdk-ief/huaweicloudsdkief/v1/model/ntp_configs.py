@@ -22,35 +22,35 @@ class NtpConfigs:
 
     openapi_types = {
         'ntp_enabled': 'bool',
-        'ntpservers': 'list[str]'
+        'ntp_servers': 'list[str]'
     }
 
     attribute_map = {
         'ntp_enabled': 'ntp_enabled',
-        'ntpservers': 'ntpservers'
+        'ntp_servers': 'ntp_servers'
     }
 
-    def __init__(self, ntp_enabled=None, ntpservers=None):
+    def __init__(self, ntp_enabled=None, ntp_servers=None):
         """NtpConfigs
 
         The model defined in huaweicloud sdk
 
         :param ntp_enabled: ntp服务是否开启
         :type ntp_enabled: bool
-        :param ntpservers: ntp server地址
-        :type ntpservers: list[str]
+        :param ntp_servers: ntp server地址
+        :type ntp_servers: list[str]
         """
         
         
 
         self._ntp_enabled = None
-        self._ntpservers = None
+        self._ntp_servers = None
         self.discriminator = None
 
         if ntp_enabled is not None:
             self.ntp_enabled = ntp_enabled
-        if ntpservers is not None:
-            self.ntpservers = ntpservers
+        if ntp_servers is not None:
+            self.ntp_servers = ntp_servers
 
     @property
     def ntp_enabled(self):
@@ -75,26 +75,26 @@ class NtpConfigs:
         self._ntp_enabled = ntp_enabled
 
     @property
-    def ntpservers(self):
-        """Gets the ntpservers of this NtpConfigs.
+    def ntp_servers(self):
+        """Gets the ntp_servers of this NtpConfigs.
 
         ntp server地址
 
-        :return: The ntpservers of this NtpConfigs.
+        :return: The ntp_servers of this NtpConfigs.
         :rtype: list[str]
         """
-        return self._ntpservers
+        return self._ntp_servers
 
-    @ntpservers.setter
-    def ntpservers(self, ntpservers):
-        """Sets the ntpservers of this NtpConfigs.
+    @ntp_servers.setter
+    def ntp_servers(self, ntp_servers):
+        """Sets the ntp_servers of this NtpConfigs.
 
         ntp server地址
 
-        :param ntpservers: The ntpservers of this NtpConfigs.
-        :type ntpservers: list[str]
+        :param ntp_servers: The ntp_servers of this NtpConfigs.
+        :type ntp_servers: list[str]
         """
-        self._ntpservers = ntpservers
+        self._ntp_servers = ntp_servers
 
     def to_dict(self):
         """Returns the model properties as a dict"""

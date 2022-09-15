@@ -50,7 +50,11 @@ class MonthlyBillRes:
         'official_amount': 'float',
         'discount_amount': 'float',
         'measure_id': 'int',
-        'period_type': 'int'
+        'period_type': 'int',
+        'root_resource_id': 'str',
+        'parent_resource_id': 'str',
+        'trade_id': 'str',
+        'product_spec_desc': 'str'
     }
 
     attribute_map = {
@@ -83,10 +87,14 @@ class MonthlyBillRes:
         'official_amount': 'official_amount',
         'discount_amount': 'discount_amount',
         'measure_id': 'measure_id',
-        'period_type': 'period_type'
+        'period_type': 'period_type',
+        'root_resource_id': 'root_resource_id',
+        'parent_resource_id': 'parent_resource_id',
+        'trade_id': 'trade_id',
+        'product_spec_desc': 'product_spec_desc'
     }
 
-    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None):
+    def __init__(self, cycle=None, bill_date=None, bill_type=None, customer_id=None, region=None, region_name=None, cloud_service_type=None, resource_type_code=None, cloud_service_type_name=None, resource_type_name=None, res_instance_id=None, resource_name=None, resource_tag=None, sku_code=None, enterprise_project_id=None, enterprise_project_name=None, charge_mode=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_card_amount=None, bonus_amount=None, debt_amount=None, adjustment_amount=None, official_amount=None, discount_amount=None, measure_id=None, period_type=None, root_resource_id=None, parent_resource_id=None, trade_id=None, product_spec_desc=None):
         """MonthlyBillRes
 
         The model defined in huaweicloud sdk
@@ -151,6 +159,14 @@ class MonthlyBillRes:
         :type measure_id: int
         :param period_type: 周期类型： 19：年20：月24：天25：小时5：一次性
         :type period_type: int
+        :param root_resource_id: 根资源标识。
+        :type root_resource_id: str
+        :param parent_resource_id: 父资源标识。
+        :type parent_resource_id: str
+        :param trade_id: 订单ID 或 交易ID。 账单类型为1，2，3，4，8时为订单ID；其它场景下为： 交易ID(非月末扣费：应收ID；月末扣费：账单ID)。
+        :type trade_id: str
+        :param product_spec_desc: 产品的规格描述。
+        :type product_spec_desc: str
         """
         
         
@@ -185,6 +201,10 @@ class MonthlyBillRes:
         self._discount_amount = None
         self._measure_id = None
         self._period_type = None
+        self._root_resource_id = None
+        self._parent_resource_id = None
+        self._trade_id = None
+        self._product_spec_desc = None
         self.discriminator = None
 
         if cycle is not None:
@@ -247,6 +267,14 @@ class MonthlyBillRes:
             self.measure_id = measure_id
         if period_type is not None:
             self.period_type = period_type
+        if root_resource_id is not None:
+            self.root_resource_id = root_resource_id
+        if parent_resource_id is not None:
+            self.parent_resource_id = parent_resource_id
+        if trade_id is not None:
+            self.trade_id = trade_id
+        if product_spec_desc is not None:
+            self.product_spec_desc = product_spec_desc
 
     @property
     def cycle(self):
@@ -907,6 +935,94 @@ class MonthlyBillRes:
         :type period_type: int
         """
         self._period_type = period_type
+
+    @property
+    def root_resource_id(self):
+        """Gets the root_resource_id of this MonthlyBillRes.
+
+        根资源标识。
+
+        :return: The root_resource_id of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._root_resource_id
+
+    @root_resource_id.setter
+    def root_resource_id(self, root_resource_id):
+        """Sets the root_resource_id of this MonthlyBillRes.
+
+        根资源标识。
+
+        :param root_resource_id: The root_resource_id of this MonthlyBillRes.
+        :type root_resource_id: str
+        """
+        self._root_resource_id = root_resource_id
+
+    @property
+    def parent_resource_id(self):
+        """Gets the parent_resource_id of this MonthlyBillRes.
+
+        父资源标识。
+
+        :return: The parent_resource_id of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._parent_resource_id
+
+    @parent_resource_id.setter
+    def parent_resource_id(self, parent_resource_id):
+        """Sets the parent_resource_id of this MonthlyBillRes.
+
+        父资源标识。
+
+        :param parent_resource_id: The parent_resource_id of this MonthlyBillRes.
+        :type parent_resource_id: str
+        """
+        self._parent_resource_id = parent_resource_id
+
+    @property
+    def trade_id(self):
+        """Gets the trade_id of this MonthlyBillRes.
+
+        订单ID 或 交易ID。 账单类型为1，2，3，4，8时为订单ID；其它场景下为： 交易ID(非月末扣费：应收ID；月末扣费：账单ID)。
+
+        :return: The trade_id of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._trade_id
+
+    @trade_id.setter
+    def trade_id(self, trade_id):
+        """Sets the trade_id of this MonthlyBillRes.
+
+        订单ID 或 交易ID。 账单类型为1，2，3，4，8时为订单ID；其它场景下为： 交易ID(非月末扣费：应收ID；月末扣费：账单ID)。
+
+        :param trade_id: The trade_id of this MonthlyBillRes.
+        :type trade_id: str
+        """
+        self._trade_id = trade_id
+
+    @property
+    def product_spec_desc(self):
+        """Gets the product_spec_desc of this MonthlyBillRes.
+
+        产品的规格描述。
+
+        :return: The product_spec_desc of this MonthlyBillRes.
+        :rtype: str
+        """
+        return self._product_spec_desc
+
+    @product_spec_desc.setter
+    def product_spec_desc(self, product_spec_desc):
+        """Sets the product_spec_desc of this MonthlyBillRes.
+
+        产品的规格描述。
+
+        :param product_spec_desc: The product_spec_desc of this MonthlyBillRes.
+        :type product_spec_desc: str
+        """
+        self._product_spec_desc = product_spec_desc
 
     def to_dict(self):
         """Returns the model properties as a dict"""

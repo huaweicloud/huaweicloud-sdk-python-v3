@@ -35,9 +35,9 @@ class DeploymentResources:
 
         The model defined in huaweicloud sdk
 
-        :param limits: 允许容器使用的最大资源
+        :param limits: 允许容器使用的最大资源，key值支持填写：cpu, memory, gpu, npu, D310, D910
         :type limits: dict(str, str)
-        :param requests: 容器需要使用的最小资源
+        :param requests: 容器需要使用的最小资源，key值支持填写：cpu, memory, gpu, npu, D310, D910
         :type requests: dict(str, str)
         """
         
@@ -56,7 +56,7 @@ class DeploymentResources:
     def limits(self):
         """Gets the limits of this DeploymentResources.
 
-        允许容器使用的最大资源
+        允许容器使用的最大资源，key值支持填写：cpu, memory, gpu, npu, D310, D910
 
         :return: The limits of this DeploymentResources.
         :rtype: dict(str, str)
@@ -67,7 +67,7 @@ class DeploymentResources:
     def limits(self, limits):
         """Sets the limits of this DeploymentResources.
 
-        允许容器使用的最大资源
+        允许容器使用的最大资源，key值支持填写：cpu, memory, gpu, npu, D310, D910
 
         :param limits: The limits of this DeploymentResources.
         :type limits: dict(str, str)
@@ -78,7 +78,7 @@ class DeploymentResources:
     def requests(self):
         """Gets the requests of this DeploymentResources.
 
-        容器需要使用的最小资源
+        容器需要使用的最小资源，key值支持填写：cpu, memory, gpu, npu, D310, D910
 
         :return: The requests of this DeploymentResources.
         :rtype: dict(str, str)
@@ -89,7 +89,7 @@ class DeploymentResources:
     def requests(self, requests):
         """Sets the requests of this DeploymentResources.
 
-        容器需要使用的最小资源
+        容器需要使用的最小资源，key值支持填写：cpu, memory, gpu, npu, D310, D910
 
         :param requests: The requests of this DeploymentResources.
         :type requests: dict(str, str)

@@ -24,7 +24,7 @@ class LimitsRequests:
         'cpu': 'float',
         'memory': 'float',
         'gpu': 'float',
-        'npu': 'float'
+        'npu': 'int'
     }
 
     attribute_map = {
@@ -46,7 +46,7 @@ class LimitsRequests:
         :param gpu: Gpu显存大小，单位兆，大于等于0.01，最大1024000；请求不需要带单位
         :type gpu: float
         :param npu: Npu个数，大于0，最大1000；请求不需要带单位
-        :type npu: float
+        :type npu: int
         """
         
         
@@ -139,7 +139,7 @@ class LimitsRequests:
         Npu个数，大于0，最大1000；请求不需要带单位
 
         :return: The npu of this LimitsRequests.
-        :rtype: float
+        :rtype: int
         """
         return self._npu
 
@@ -150,7 +150,7 @@ class LimitsRequests:
         Npu个数，大于0，最大1000；请求不需要带单位
 
         :param npu: The npu of this LimitsRequests.
-        :type npu: float
+        :type npu: int
         """
         self._npu = npu
 

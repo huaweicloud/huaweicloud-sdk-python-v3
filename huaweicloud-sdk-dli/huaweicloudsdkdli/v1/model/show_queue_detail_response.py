@@ -28,29 +28,41 @@ class ShowQueueDetailResponse(SdkResponse):
         'description': 'str',
         'owner': 'str',
         'create_time': 'int',
+        'queue_type': 'str',
         'cu_count': 'int',
         'charging_mode': 'int',
         'resource_id': 'str',
         'resource_mode': 'int',
-        'enterprise_project_id': 'str'
+        'enterprise_project_id': 'str',
+        'resource_type': 'str',
+        'cu_spec': 'int',
+        'cu_scale_out_limit': 'int',
+        'cu_scale_in_limit': 'int',
+        'elastic_resource_pool_name': 'str'
     }
 
     attribute_map = {
         'is_success': 'is_success',
         'message': 'message',
         'queue_id': 'queue_id',
-        'queue_name': 'queue_name',
+        'queue_name': 'queueName',
         'description': 'description',
         'owner': 'owner',
         'create_time': 'create_time',
-        'cu_count': 'cu_count',
-        'charging_mode': 'charging_mode',
+        'queue_type': 'queueType',
+        'cu_count': 'cuCount',
+        'charging_mode': 'chargingMode',
         'resource_id': 'resource_id',
         'resource_mode': 'resource_mode',
-        'enterprise_project_id': 'enterprise_project_id'
+        'enterprise_project_id': 'enterprise_project_id',
+        'resource_type': 'resource_type',
+        'cu_spec': 'cu_spec',
+        'cu_scale_out_limit': 'cu_scale_out_limit',
+        'cu_scale_in_limit': 'cu_scale_in_limit',
+        'elastic_resource_pool_name': 'elastic_resource_pool_name'
     }
 
-    def __init__(self, is_success=None, message=None, queue_id=None, queue_name=None, description=None, owner=None, create_time=None, cu_count=None, charging_mode=None, resource_id=None, resource_mode=None, enterprise_project_id=None):
+    def __init__(self, is_success=None, message=None, queue_id=None, queue_name=None, description=None, owner=None, create_time=None, queue_type=None, cu_count=None, charging_mode=None, resource_id=None, resource_mode=None, enterprise_project_id=None, resource_type=None, cu_spec=None, cu_scale_out_limit=None, cu_scale_in_limit=None, elastic_resource_pool_name=None):
         """ShowQueueDetailResponse
 
         The model defined in huaweicloud sdk
@@ -61,7 +73,7 @@ class ShowQueueDetailResponse(SdkResponse):
         :type message: str
         :param queue_id: 队列ID。
         :type queue_id: int
-        :param queue_name: 队列名称。
+        :param queue_name: 队列名称。说明：队列名称不区分大小写，系统会自动转换为小写。
         :type queue_name: str
         :param description: 队列描述信息。
         :type description: str
@@ -69,6 +81,8 @@ class ShowQueueDetailResponse(SdkResponse):
         :type owner: str
         :param create_time: 创建队列的时间。是单位为“毫秒”的时间戳。
         :type create_time: int
+        :param queue_type: 队列类型。sql/general/all, 如果不指定，默认为“sql”。
+        :type queue_type: str
         :param cu_count: 与队列绑定的最小计算单元个数。设置值当前只支持16，64，256。
         :type cu_count: int
         :param charging_mode: 队列的收费模式。 “1”表示按照CU时收费。 “2”表示按照包年包月收费。
@@ -79,6 +93,16 @@ class ShowQueueDetailResponse(SdkResponse):
         :type resource_mode: int
         :param enterprise_project_id: 企业项目ID。\&quot;0”表示default，即默认的企业项目。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
         :type enterprise_project_id: str
+        :param resource_type: 资源类型。 vm：ecf集群 container：容器化集群（k8s）
+        :type resource_type: str
+        :param cu_spec: 队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值。
+        :type cu_spec: int
+        :param cu_scale_out_limit: 当前队列弹性扩缩容的CU值上限。
+        :type cu_scale_out_limit: int
+        :param cu_scale_in_limit: 当前队列弹性扩缩容的CU值下限。
+        :type cu_scale_in_limit: int
+        :param elastic_resource_pool_name: 弹性资源池名称。
+        :type elastic_resource_pool_name: str
         """
         
         super(ShowQueueDetailResponse, self).__init__()
@@ -90,11 +114,17 @@ class ShowQueueDetailResponse(SdkResponse):
         self._description = None
         self._owner = None
         self._create_time = None
+        self._queue_type = None
         self._cu_count = None
         self._charging_mode = None
         self._resource_id = None
         self._resource_mode = None
         self._enterprise_project_id = None
+        self._resource_type = None
+        self._cu_spec = None
+        self._cu_scale_out_limit = None
+        self._cu_scale_in_limit = None
+        self._elastic_resource_pool_name = None
         self.discriminator = None
 
         if is_success is not None:
@@ -111,6 +141,8 @@ class ShowQueueDetailResponse(SdkResponse):
             self.owner = owner
         if create_time is not None:
             self.create_time = create_time
+        if queue_type is not None:
+            self.queue_type = queue_type
         if cu_count is not None:
             self.cu_count = cu_count
         if charging_mode is not None:
@@ -121,6 +153,16 @@ class ShowQueueDetailResponse(SdkResponse):
             self.resource_mode = resource_mode
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
+        if resource_type is not None:
+            self.resource_type = resource_type
+        if cu_spec is not None:
+            self.cu_spec = cu_spec
+        if cu_scale_out_limit is not None:
+            self.cu_scale_out_limit = cu_scale_out_limit
+        if cu_scale_in_limit is not None:
+            self.cu_scale_in_limit = cu_scale_in_limit
+        if elastic_resource_pool_name is not None:
+            self.elastic_resource_pool_name = elastic_resource_pool_name
 
     @property
     def is_success(self):
@@ -192,7 +234,7 @@ class ShowQueueDetailResponse(SdkResponse):
     def queue_name(self):
         """Gets the queue_name of this ShowQueueDetailResponse.
 
-        队列名称。
+        队列名称。说明：队列名称不区分大小写，系统会自动转换为小写。
 
         :return: The queue_name of this ShowQueueDetailResponse.
         :rtype: str
@@ -203,7 +245,7 @@ class ShowQueueDetailResponse(SdkResponse):
     def queue_name(self, queue_name):
         """Sets the queue_name of this ShowQueueDetailResponse.
 
-        队列名称。
+        队列名称。说明：队列名称不区分大小写，系统会自动转换为小写。
 
         :param queue_name: The queue_name of this ShowQueueDetailResponse.
         :type queue_name: str
@@ -275,6 +317,28 @@ class ShowQueueDetailResponse(SdkResponse):
         :type create_time: int
         """
         self._create_time = create_time
+
+    @property
+    def queue_type(self):
+        """Gets the queue_type of this ShowQueueDetailResponse.
+
+        队列类型。sql/general/all, 如果不指定，默认为“sql”。
+
+        :return: The queue_type of this ShowQueueDetailResponse.
+        :rtype: str
+        """
+        return self._queue_type
+
+    @queue_type.setter
+    def queue_type(self, queue_type):
+        """Sets the queue_type of this ShowQueueDetailResponse.
+
+        队列类型。sql/general/all, 如果不指定，默认为“sql”。
+
+        :param queue_type: The queue_type of this ShowQueueDetailResponse.
+        :type queue_type: str
+        """
+        self._queue_type = queue_type
 
     @property
     def cu_count(self):
@@ -385,6 +449,116 @@ class ShowQueueDetailResponse(SdkResponse):
         :type enterprise_project_id: str
         """
         self._enterprise_project_id = enterprise_project_id
+
+    @property
+    def resource_type(self):
+        """Gets the resource_type of this ShowQueueDetailResponse.
+
+        资源类型。 vm：ecf集群 container：容器化集群（k8s）
+
+        :return: The resource_type of this ShowQueueDetailResponse.
+        :rtype: str
+        """
+        return self._resource_type
+
+    @resource_type.setter
+    def resource_type(self, resource_type):
+        """Sets the resource_type of this ShowQueueDetailResponse.
+
+        资源类型。 vm：ecf集群 container：容器化集群（k8s）
+
+        :param resource_type: The resource_type of this ShowQueueDetailResponse.
+        :type resource_type: str
+        """
+        self._resource_type = resource_type
+
+    @property
+    def cu_spec(self):
+        """Gets the cu_spec of this ShowQueueDetailResponse.
+
+        队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值。
+
+        :return: The cu_spec of this ShowQueueDetailResponse.
+        :rtype: int
+        """
+        return self._cu_spec
+
+    @cu_spec.setter
+    def cu_spec(self, cu_spec):
+        """Sets the cu_spec of this ShowQueueDetailResponse.
+
+        队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值。
+
+        :param cu_spec: The cu_spec of this ShowQueueDetailResponse.
+        :type cu_spec: int
+        """
+        self._cu_spec = cu_spec
+
+    @property
+    def cu_scale_out_limit(self):
+        """Gets the cu_scale_out_limit of this ShowQueueDetailResponse.
+
+        当前队列弹性扩缩容的CU值上限。
+
+        :return: The cu_scale_out_limit of this ShowQueueDetailResponse.
+        :rtype: int
+        """
+        return self._cu_scale_out_limit
+
+    @cu_scale_out_limit.setter
+    def cu_scale_out_limit(self, cu_scale_out_limit):
+        """Sets the cu_scale_out_limit of this ShowQueueDetailResponse.
+
+        当前队列弹性扩缩容的CU值上限。
+
+        :param cu_scale_out_limit: The cu_scale_out_limit of this ShowQueueDetailResponse.
+        :type cu_scale_out_limit: int
+        """
+        self._cu_scale_out_limit = cu_scale_out_limit
+
+    @property
+    def cu_scale_in_limit(self):
+        """Gets the cu_scale_in_limit of this ShowQueueDetailResponse.
+
+        当前队列弹性扩缩容的CU值下限。
+
+        :return: The cu_scale_in_limit of this ShowQueueDetailResponse.
+        :rtype: int
+        """
+        return self._cu_scale_in_limit
+
+    @cu_scale_in_limit.setter
+    def cu_scale_in_limit(self, cu_scale_in_limit):
+        """Sets the cu_scale_in_limit of this ShowQueueDetailResponse.
+
+        当前队列弹性扩缩容的CU值下限。
+
+        :param cu_scale_in_limit: The cu_scale_in_limit of this ShowQueueDetailResponse.
+        :type cu_scale_in_limit: int
+        """
+        self._cu_scale_in_limit = cu_scale_in_limit
+
+    @property
+    def elastic_resource_pool_name(self):
+        """Gets the elastic_resource_pool_name of this ShowQueueDetailResponse.
+
+        弹性资源池名称。
+
+        :return: The elastic_resource_pool_name of this ShowQueueDetailResponse.
+        :rtype: str
+        """
+        return self._elastic_resource_pool_name
+
+    @elastic_resource_pool_name.setter
+    def elastic_resource_pool_name(self, elastic_resource_pool_name):
+        """Sets the elastic_resource_pool_name of this ShowQueueDetailResponse.
+
+        弹性资源池名称。
+
+        :param elastic_resource_pool_name: The elastic_resource_pool_name of this ShowQueueDetailResponse.
+        :type elastic_resource_pool_name: str
+        """
+        self._elastic_resource_pool_name = elastic_resource_pool_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

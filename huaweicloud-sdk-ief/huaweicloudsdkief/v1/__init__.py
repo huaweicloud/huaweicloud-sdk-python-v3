@@ -236,6 +236,8 @@ from huaweicloudsdkief.v1.model.svc_spec import SvcSpec
 from huaweicloudsdkief.v1.model.tag import Tag
 from huaweicloudsdkief.v1.model.tags import Tags
 from huaweicloudsdkief.v1.model.twin_update_detail import TwinUpdateDetail
+from huaweicloudsdkief.v1.model.updata_app_version_body import UpdataAppVersionBody
+from huaweicloudsdkief.v1.model.update_app_body import UpdateAppBody
 from huaweicloudsdkief.v1.model.update_app_request import UpdateAppRequest
 from huaweicloudsdkief.v1.model.update_app_response import UpdateAppResponse
 from huaweicloudsdkief.v1.model.update_app_version_request import UpdateAppVersionRequest
@@ -253,6 +255,7 @@ from huaweicloudsdkief.v1.model.update_device_template_by_id_request import Upda
 from huaweicloudsdkief.v1.model.update_device_template_by_id_response import UpdateDeviceTemplateByIdResponse
 from huaweicloudsdkief.v1.model.update_device_twin_request import UpdateDeviceTwinRequest
 from huaweicloudsdkief.v1.model.update_device_twin_response import UpdateDeviceTwinResponse
+from huaweicloudsdkief.v1.model.update_edge_node_body import UpdateEdgeNodeBody
 from huaweicloudsdkief.v1.model.update_edge_node_device_request import UpdateEdgeNodeDeviceRequest
 from huaweicloudsdkief.v1.model.update_edge_node_device_response import UpdateEdgeNodeDeviceResponse
 from huaweicloudsdkief.v1.model.update_edge_node_request import UpdateEdgeNodeRequest

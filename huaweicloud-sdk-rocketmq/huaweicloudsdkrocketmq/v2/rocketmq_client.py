@@ -51,7 +51,7 @@ class RocketMQClient(Client):
     def batch_delete_instances(self, request):
         """批量删除实例
 
-        批量删除实例。**实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操。**
+        批量删除实例。**实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操作。**
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

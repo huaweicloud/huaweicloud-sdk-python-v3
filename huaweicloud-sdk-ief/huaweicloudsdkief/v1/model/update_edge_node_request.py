@@ -23,7 +23,7 @@ class UpdateEdgeNodeRequest:
     openapi_types = {
         'node_id': 'str',
         'ief_instance_id': 'str',
-        'body': 'EdgeNodeUpdate'
+        'body': 'UpdateEdgeNodeBody'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class UpdateEdgeNodeRequest:
         :param ief_instance_id: 铂金版实例ID，专业版实例为空值
         :type ief_instance_id: str
         :param body: Body of the UpdateEdgeNodeRequest
-        :type body: :class:`huaweicloudsdkief.v1.EdgeNodeUpdate`
+        :type body: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeBody`
         """
         
         
@@ -108,7 +108,7 @@ class UpdateEdgeNodeRequest:
 
 
         :return: The body of this UpdateEdgeNodeRequest.
-        :rtype: :class:`huaweicloudsdkief.v1.EdgeNodeUpdate`
+        :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeBody`
         """
         return self._body
 
@@ -118,7 +118,7 @@ class UpdateEdgeNodeRequest:
 
 
         :param body: The body of this UpdateEdgeNodeRequest.
-        :type body: :class:`huaweicloudsdkief.v1.EdgeNodeUpdate`
+        :type body: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeBody`
         """
         self._body = body
 

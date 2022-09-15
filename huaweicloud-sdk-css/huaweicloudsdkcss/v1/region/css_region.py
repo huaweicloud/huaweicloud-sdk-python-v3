@@ -32,6 +32,20 @@ class CssRegion:
 
     AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://css.ap-southeast-3.myhuaweicloud.com")
 
+    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://css.ap-southeast-1.myhuaweicloud.com")
+
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://css.sa-brazil-1.myhuaweicloud.com")
+
+    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://css.na-mexico-1.myhuaweicloud.com")
+
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://css.la-north-2.myhuaweicloud.com")
+
+    AF_SOUTH_1 = Region(id="af-south-1", endpoint="https://css.af-south-1.myhuaweicloud.com")
+
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://css.la-south-2.myhuaweicloud.com")
+
+    CN_SOUTH_2 = Region(id="cn-south-2", endpoint="https://css.cn-south-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-south-1": CN_SOUTH_1,
         "cn-east-3": CN_EAST_3,
@@ -44,6 +58,13 @@ class CssRegion:
         "cn-southwest-2": CN_SOUTHWEST_2,
         "ap-southeast-2": AP_SOUTHEAST_2,
         "ap-southeast-3": AP_SOUTHEAST_3,
+        "ap-southeast-1": AP_SOUTHEAST_1,
+        "sa-brazil-1": SA_BRAZIL_1,
+        "na-mexico-1": NA_MEXICO_1,
+        "la-north-2": LA_NORTH_2,
+        "af-south-1": AF_SOUTH_1,
+        "la-south-2": LA_SOUTH_2,
+        "cn-south-2": CN_SOUTH_2,
     }
 
     @classmethod
