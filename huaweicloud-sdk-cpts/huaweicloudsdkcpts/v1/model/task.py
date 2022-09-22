@@ -27,7 +27,8 @@ class Task:
         'name': 'str',
         'operate_mode': 'int',
         'task_run_info': 'TaskRunInfo',
-        'update_time': 'str'
+        'update_time': 'str',
+        'parallel': 'bool'
     }
 
     attribute_map = {
@@ -37,28 +38,31 @@ class Task:
         'name': 'name',
         'operate_mode': 'operate_mode',
         'task_run_info': 'task_run_info',
-        'update_time': 'update_time'
+        'update_time': 'update_time',
+        'parallel': 'parallel'
     }
 
-    def __init__(self, bench_concurrent=None, description=None, id=None, name=None, operate_mode=None, task_run_info=None, update_time=None):
+    def __init__(self, bench_concurrent=None, description=None, id=None, name=None, operate_mode=None, task_run_info=None, update_time=None, parallel=None):
         """Task
 
         The model defined in huaweicloud sdk
 
-        :param bench_concurrent: bench_concurrent
+        :param bench_concurrent: 基准并发
         :type bench_concurrent: int
-        :param description: description
+        :param description: 描述信息
         :type description: str
-        :param id: id
+        :param id: 任务Id
         :type id: int
-        :param name: name
+        :param name: 任务名称
         :type name: str
-        :param operate_mode: operate_mode
+        :param operate_mode: 任务压测模式
         :type operate_mode: int
         :param task_run_info: 
         :type task_run_info: :class:`huaweicloudsdkcpts.v1.TaskRunInfo`
-        :param update_time: update_time
+        :param update_time: 更新时间
         :type update_time: str
+        :param parallel: 任务间用例是否并行执行
+        :type parallel: bool
         """
         
         
@@ -70,6 +74,7 @@ class Task:
         self._operate_mode = None
         self._task_run_info = None
         self._update_time = None
+        self._parallel = None
         self.discriminator = None
 
         if bench_concurrent is not None:
@@ -86,12 +91,14 @@ class Task:
             self.task_run_info = task_run_info
         if update_time is not None:
             self.update_time = update_time
+        if parallel is not None:
+            self.parallel = parallel
 
     @property
     def bench_concurrent(self):
         """Gets the bench_concurrent of this Task.
 
-        bench_concurrent
+        基准并发
 
         :return: The bench_concurrent of this Task.
         :rtype: int
@@ -102,7 +109,7 @@ class Task:
     def bench_concurrent(self, bench_concurrent):
         """Sets the bench_concurrent of this Task.
 
-        bench_concurrent
+        基准并发
 
         :param bench_concurrent: The bench_concurrent of this Task.
         :type bench_concurrent: int
@@ -113,7 +120,7 @@ class Task:
     def description(self):
         """Gets the description of this Task.
 
-        description
+        描述信息
 
         :return: The description of this Task.
         :rtype: str
@@ -124,7 +131,7 @@ class Task:
     def description(self, description):
         """Sets the description of this Task.
 
-        description
+        描述信息
 
         :param description: The description of this Task.
         :type description: str
@@ -135,7 +142,7 @@ class Task:
     def id(self):
         """Gets the id of this Task.
 
-        id
+        任务Id
 
         :return: The id of this Task.
         :rtype: int
@@ -146,7 +153,7 @@ class Task:
     def id(self, id):
         """Sets the id of this Task.
 
-        id
+        任务Id
 
         :param id: The id of this Task.
         :type id: int
@@ -157,7 +164,7 @@ class Task:
     def name(self):
         """Gets the name of this Task.
 
-        name
+        任务名称
 
         :return: The name of this Task.
         :rtype: str
@@ -168,7 +175,7 @@ class Task:
     def name(self, name):
         """Sets the name of this Task.
 
-        name
+        任务名称
 
         :param name: The name of this Task.
         :type name: str
@@ -179,7 +186,7 @@ class Task:
     def operate_mode(self):
         """Gets the operate_mode of this Task.
 
-        operate_mode
+        任务压测模式
 
         :return: The operate_mode of this Task.
         :rtype: int
@@ -190,7 +197,7 @@ class Task:
     def operate_mode(self, operate_mode):
         """Sets the operate_mode of this Task.
 
-        operate_mode
+        任务压测模式
 
         :param operate_mode: The operate_mode of this Task.
         :type operate_mode: int
@@ -221,7 +228,7 @@ class Task:
     def update_time(self):
         """Gets the update_time of this Task.
 
-        update_time
+        更新时间
 
         :return: The update_time of this Task.
         :rtype: str
@@ -232,12 +239,34 @@ class Task:
     def update_time(self, update_time):
         """Sets the update_time of this Task.
 
-        update_time
+        更新时间
 
         :param update_time: The update_time of this Task.
         :type update_time: str
         """
         self._update_time = update_time
+
+    @property
+    def parallel(self):
+        """Gets the parallel of this Task.
+
+        任务间用例是否并行执行
+
+        :return: The parallel of this Task.
+        :rtype: bool
+        """
+        return self._parallel
+
+    @parallel.setter
+    def parallel(self, parallel):
+        """Sets the parallel of this Task.
+
+        任务间用例是否并行执行
+
+        :param parallel: The parallel of this Task.
+        :type parallel: bool
+        """
+        self._parallel = parallel
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -26,7 +26,8 @@ class IdCardRequestBody:
         'side': 'str',
         'return_verification': 'bool',
         'return_text_location': 'bool',
-        'detect_reproduce': 'bool'
+        'detect_reproduce': 'bool',
+        'detect_copy': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class IdCardRequestBody:
         'side': 'side',
         'return_verification': 'return_verification',
         'return_text_location': 'return_text_location',
-        'detect_reproduce': 'detect_reproduce'
+        'detect_reproduce': 'detect_reproduce',
+        'detect_copy': 'detect_copy'
     }
 
-    def __init__(self, image=None, url=None, side=None, return_verification=None, return_text_location=None, detect_reproduce=None):
+    def __init__(self, image=None, url=None, side=None, return_verification=None, return_text_location=None, detect_reproduce=None, detect_copy=None):
         """IdCardRequestBody
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class IdCardRequestBody:
         :type return_text_location: bool
         :param detect_reproduce: 返回判断身份证图像是否经过翻拍的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否经过翻拍  - false：不返回身份证图像是否经过翻拍 
         :type detect_reproduce: bool
+        :param detect_copy: 返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否是复印件  - false : 不返回身份证图像是否是复印件             
+        :type detect_copy: bool
         """
         
         
@@ -65,6 +69,7 @@ class IdCardRequestBody:
         self._return_verification = None
         self._return_text_location = None
         self._detect_reproduce = None
+        self._detect_copy = None
         self.discriminator = None
 
         if image is not None:
@@ -79,6 +84,8 @@ class IdCardRequestBody:
             self.return_text_location = return_text_location
         if detect_reproduce is not None:
             self.detect_reproduce = detect_reproduce
+        if detect_copy is not None:
+            self.detect_copy = detect_copy
 
     @property
     def image(self):
@@ -211,6 +218,28 @@ class IdCardRequestBody:
         :type detect_reproduce: bool
         """
         self._detect_reproduce = detect_reproduce
+
+    @property
+    def detect_copy(self):
+        """Gets the detect_copy of this IdCardRequestBody.
+
+        返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否是复印件  - false : 不返回身份证图像是否是复印件             
+
+        :return: The detect_copy of this IdCardRequestBody.
+        :rtype: bool
+        """
+        return self._detect_copy
+
+    @detect_copy.setter
+    def detect_copy(self, detect_copy):
+        """Sets the detect_copy of this IdCardRequestBody.
+
+        返回判断身份证图像是否是黑白复印件的开关，默认false，可选值如下所示：  - true ：返回身份证图像是否是复印件  - false : 不返回身份证图像是否是复印件             
+
+        :param detect_copy: The detect_copy of this IdCardRequestBody.
+        :type detect_copy: bool
+        """
+        self._detect_copy = detect_copy
 
     def to_dict(self):
         """Returns the model properties as a dict"""

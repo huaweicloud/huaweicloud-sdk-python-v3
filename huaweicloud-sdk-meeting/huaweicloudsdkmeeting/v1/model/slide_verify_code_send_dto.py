@@ -37,11 +37,11 @@ class SlideVerifyCodeSendDTO:
 
         The model defined in huaweicloud sdk
 
-        :param user: 用户身份信息（手机号码或邮箱账号或用户真实账号） maxLength：255 minLength：1 
+        :param user: 用户身份信息（手机号码或邮箱帐号或用户真实帐号）。 
         :type user: str
-        :param client_type: 登录客户端类型。 * 0：Web客户端类型； * 5：cloudlink pc； * 6：cloudlink mobile； * 16：workplace pc 
+        :param client_type: 登录客户端类型。 * 0：Web客户端类型 * 5：cloudlink pc * 6：cloudlink mobile 
         :type client_type: int
-        :param check_type: 校验类型。 * 0：登录； * 1：忘记密码； 默认值：0 
+        :param check_type: 校验类型。默认值：0。 * 0：登录 * 1：忘记密码 
         :type check_type: int
         """
         
@@ -61,7 +61,7 @@ class SlideVerifyCodeSendDTO:
     def user(self):
         """Gets the user of this SlideVerifyCodeSendDTO.
 
-        用户身份信息（手机号码或邮箱账号或用户真实账号） maxLength：255 minLength：1 
+        用户身份信息（手机号码或邮箱帐号或用户真实帐号）。 
 
         :return: The user of this SlideVerifyCodeSendDTO.
         :rtype: str
@@ -72,7 +72,7 @@ class SlideVerifyCodeSendDTO:
     def user(self, user):
         """Sets the user of this SlideVerifyCodeSendDTO.
 
-        用户身份信息（手机号码或邮箱账号或用户真实账号） maxLength：255 minLength：1 
+        用户身份信息（手机号码或邮箱帐号或用户真实帐号）。 
 
         :param user: The user of this SlideVerifyCodeSendDTO.
         :type user: str
@@ -83,7 +83,7 @@ class SlideVerifyCodeSendDTO:
     def client_type(self):
         """Gets the client_type of this SlideVerifyCodeSendDTO.
 
-        登录客户端类型。 * 0：Web客户端类型； * 5：cloudlink pc； * 6：cloudlink mobile； * 16：workplace pc 
+        登录客户端类型。 * 0：Web客户端类型 * 5：cloudlink pc * 6：cloudlink mobile 
 
         :return: The client_type of this SlideVerifyCodeSendDTO.
         :rtype: int
@@ -94,7 +94,7 @@ class SlideVerifyCodeSendDTO:
     def client_type(self, client_type):
         """Sets the client_type of this SlideVerifyCodeSendDTO.
 
-        登录客户端类型。 * 0：Web客户端类型； * 5：cloudlink pc； * 6：cloudlink mobile； * 16：workplace pc 
+        登录客户端类型。 * 0：Web客户端类型 * 5：cloudlink pc * 6：cloudlink mobile 
 
         :param client_type: The client_type of this SlideVerifyCodeSendDTO.
         :type client_type: int
@@ -105,7 +105,7 @@ class SlideVerifyCodeSendDTO:
     def check_type(self):
         """Gets the check_type of this SlideVerifyCodeSendDTO.
 
-        校验类型。 * 0：登录； * 1：忘记密码； 默认值：0 
+        校验类型。默认值：0。 * 0：登录 * 1：忘记密码 
 
         :return: The check_type of this SlideVerifyCodeSendDTO.
         :rtype: int
@@ -116,7 +116,7 @@ class SlideVerifyCodeSendDTO:
     def check_type(self, check_type):
         """Sets the check_type of this SlideVerifyCodeSendDTO.
 
-        校验类型。 * 0：登录； * 1：忘记密码； 默认值：0 
+        校验类型。默认值：0。 * 0：登录 * 1：忘记密码 
 
         :param check_type: The check_type of this SlideVerifyCodeSendDTO.
         :type check_type: int

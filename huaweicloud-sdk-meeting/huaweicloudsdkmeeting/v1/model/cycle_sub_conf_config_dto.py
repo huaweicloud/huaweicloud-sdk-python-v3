@@ -41,13 +41,13 @@ class CycleSubConfConfigDTO:
 
         The model defined in huaweicloud sdk
 
-        :param call_in_restriction: |参数名称：允许呼入的范围| |参数描述：允许呼入的范围。 0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户| |取值范围：[0,3]|
+        :param call_in_restriction: 允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户 
         :type call_in_restriction: int
-        :param audience_call_in_restriction: |参数名称：网络研讨会观众允许呼入的范围| |参数描述：允许呼入的范围。 0: 所有用户 2: 企业内用户和被邀请用户|
+        :param audience_call_in_restriction: 允许加入网络研讨会的观众范围。 - 0：所有用户 - 2：企业内用户和被邀请用户 
         :type audience_call_in_restriction: int
-        :param allow_guest_start_conf: 参数名称：是否允许来宾启动会议(随机会议) false:禁止来宾启动会议 true：允许来宾启动会议
+        :param allow_guest_start_conf: 是否允许来宾启动会议。 - false:禁止来宾启动会议 - true：允许来宾启动会议 &gt; 仅随机会议ID的会议生效。 
         :type allow_guest_start_conf: bool
-        :param enable_waiting_room: 是否启用等候室
+        :param enable_waiting_room: 是否启用等候室。
         :type enable_waiting_room: bool
         :param show_audience_count_info: 
         :type show_audience_count_info: :class:`huaweicloudsdkmeeting.v1.ShowAudienceCountInfo`
@@ -77,7 +77,7 @@ class CycleSubConfConfigDTO:
     def call_in_restriction(self):
         """Gets the call_in_restriction of this CycleSubConfConfigDTO.
 
-        |参数名称：允许呼入的范围| |参数描述：允许呼入的范围。 0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户| |取值范围：[0,3]|
+        允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户 
 
         :return: The call_in_restriction of this CycleSubConfConfigDTO.
         :rtype: int
@@ -88,7 +88,7 @@ class CycleSubConfConfigDTO:
     def call_in_restriction(self, call_in_restriction):
         """Sets the call_in_restriction of this CycleSubConfConfigDTO.
 
-        |参数名称：允许呼入的范围| |参数描述：允许呼入的范围。 0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户| |取值范围：[0,3]|
+        允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户 
 
         :param call_in_restriction: The call_in_restriction of this CycleSubConfConfigDTO.
         :type call_in_restriction: int
@@ -99,7 +99,7 @@ class CycleSubConfConfigDTO:
     def audience_call_in_restriction(self):
         """Gets the audience_call_in_restriction of this CycleSubConfConfigDTO.
 
-        |参数名称：网络研讨会观众允许呼入的范围| |参数描述：允许呼入的范围。 0: 所有用户 2: 企业内用户和被邀请用户|
+        允许加入网络研讨会的观众范围。 - 0：所有用户 - 2：企业内用户和被邀请用户 
 
         :return: The audience_call_in_restriction of this CycleSubConfConfigDTO.
         :rtype: int
@@ -110,7 +110,7 @@ class CycleSubConfConfigDTO:
     def audience_call_in_restriction(self, audience_call_in_restriction):
         """Sets the audience_call_in_restriction of this CycleSubConfConfigDTO.
 
-        |参数名称：网络研讨会观众允许呼入的范围| |参数描述：允许呼入的范围。 0: 所有用户 2: 企业内用户和被邀请用户|
+        允许加入网络研讨会的观众范围。 - 0：所有用户 - 2：企业内用户和被邀请用户 
 
         :param audience_call_in_restriction: The audience_call_in_restriction of this CycleSubConfConfigDTO.
         :type audience_call_in_restriction: int
@@ -121,7 +121,7 @@ class CycleSubConfConfigDTO:
     def allow_guest_start_conf(self):
         """Gets the allow_guest_start_conf of this CycleSubConfConfigDTO.
 
-        参数名称：是否允许来宾启动会议(随机会议) false:禁止来宾启动会议 true：允许来宾启动会议
+        是否允许来宾启动会议。 - false:禁止来宾启动会议 - true：允许来宾启动会议 > 仅随机会议ID的会议生效。 
 
         :return: The allow_guest_start_conf of this CycleSubConfConfigDTO.
         :rtype: bool
@@ -132,7 +132,7 @@ class CycleSubConfConfigDTO:
     def allow_guest_start_conf(self, allow_guest_start_conf):
         """Sets the allow_guest_start_conf of this CycleSubConfConfigDTO.
 
-        参数名称：是否允许来宾启动会议(随机会议) false:禁止来宾启动会议 true：允许来宾启动会议
+        是否允许来宾启动会议。 - false:禁止来宾启动会议 - true：允许来宾启动会议 > 仅随机会议ID的会议生效。 
 
         :param allow_guest_start_conf: The allow_guest_start_conf of this CycleSubConfConfigDTO.
         :type allow_guest_start_conf: bool
@@ -143,7 +143,7 @@ class CycleSubConfConfigDTO:
     def enable_waiting_room(self):
         """Gets the enable_waiting_room of this CycleSubConfConfigDTO.
 
-        是否启用等候室
+        是否启用等候室。
 
         :return: The enable_waiting_room of this CycleSubConfConfigDTO.
         :rtype: bool
@@ -154,7 +154,7 @@ class CycleSubConfConfigDTO:
     def enable_waiting_room(self, enable_waiting_room):
         """Sets the enable_waiting_room of this CycleSubConfConfigDTO.
 
-        是否启用等候室
+        是否启用等候室。
 
         :param enable_waiting_room: The enable_waiting_room of this CycleSubConfConfigDTO.
         :type enable_waiting_room: bool

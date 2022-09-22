@@ -39,9 +39,9 @@ class RestMixedPictureBody:
 
         The model defined in huaweicloud sdk
 
-        :param manual_set: 是否为手工设置多画面。 - 0: 系统自动多画面。 - 1: 手工设置多画面。
+        :param manual_set: 是否为手工设置多画面。 - 0: 系统自动多画面 - 1: 手工设置多画面
         :type manual_set: int
-        :param image_type: 多画面数目。手工设置多画面时有效。 - Single: 单画面。 - Two: 二画面。 - Three: 三画面。 - Four: 四画面。 - Six: 六画面。 - Nine: 九画面。 - Sixteen: 十六画面。
+        :param image_type: 多画面数目。手工设置多画面时有效。 - Single: 单画面 - Two: 二画面 - Three: 三画面 - Four: 四画面 - Six: 六画面 - Nine: 九画面 - Sixteen: 十六画面
         :type image_type: str
         :param subscriber_in_pics: 子画面列表（手工设置多画面时必填）。
         :type subscriber_in_pics: list[:class:`huaweicloudsdkmeeting.v1.SubscriberInPic`]
@@ -69,7 +69,7 @@ class RestMixedPictureBody:
     def manual_set(self):
         """Gets the manual_set of this RestMixedPictureBody.
 
-        是否为手工设置多画面。 - 0: 系统自动多画面。 - 1: 手工设置多画面。
+        是否为手工设置多画面。 - 0: 系统自动多画面 - 1: 手工设置多画面
 
         :return: The manual_set of this RestMixedPictureBody.
         :rtype: int
@@ -80,7 +80,7 @@ class RestMixedPictureBody:
     def manual_set(self, manual_set):
         """Sets the manual_set of this RestMixedPictureBody.
 
-        是否为手工设置多画面。 - 0: 系统自动多画面。 - 1: 手工设置多画面。
+        是否为手工设置多画面。 - 0: 系统自动多画面 - 1: 手工设置多画面
 
         :param manual_set: The manual_set of this RestMixedPictureBody.
         :type manual_set: int
@@ -91,7 +91,7 @@ class RestMixedPictureBody:
     def image_type(self):
         """Gets the image_type of this RestMixedPictureBody.
 
-        多画面数目。手工设置多画面时有效。 - Single: 单画面。 - Two: 二画面。 - Three: 三画面。 - Four: 四画面。 - Six: 六画面。 - Nine: 九画面。 - Sixteen: 十六画面。
+        多画面数目。手工设置多画面时有效。 - Single: 单画面 - Two: 二画面 - Three: 三画面 - Four: 四画面 - Six: 六画面 - Nine: 九画面 - Sixteen: 十六画面
 
         :return: The image_type of this RestMixedPictureBody.
         :rtype: str
@@ -102,7 +102,7 @@ class RestMixedPictureBody:
     def image_type(self, image_type):
         """Sets the image_type of this RestMixedPictureBody.
 
-        多画面数目。手工设置多画面时有效。 - Single: 单画面。 - Two: 二画面。 - Three: 三画面。 - Four: 四画面。 - Six: 六画面。 - Nine: 九画面。 - Sixteen: 十六画面。
+        多画面数目。手工设置多画面时有效。 - Single: 单画面 - Two: 二画面 - Three: 三画面 - Four: 四画面 - Six: 六画面 - Nine: 九画面 - Sixteen: 十六画面
 
         :param image_type: The image_type of this RestMixedPictureBody.
         :type image_type: str

@@ -35,7 +35,7 @@ class UpdateServerNameRequest:
 
         The model defined in huaweicloud sdk
 
-        :param source_id: 源端服务器在主机迁移服务中的id
+        :param source_id: 源端服务器在主机迁移服务中的ID
         :type source_id: str
         :param body: Body of the UpdateServerNameRequest
         :type body: :class:`huaweicloudsdksms.v3.PutSourceServerBody`
@@ -55,7 +55,7 @@ class UpdateServerNameRequest:
     def source_id(self):
         """Gets the source_id of this UpdateServerNameRequest.
 
-        源端服务器在主机迁移服务中的id
+        源端服务器在主机迁移服务中的ID
 
         :return: The source_id of this UpdateServerNameRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateServerNameRequest:
     def source_id(self, source_id):
         """Sets the source_id of this UpdateServerNameRequest.
 
-        源端服务器在主机迁移服务中的id
+        源端服务器在主机迁移服务中的ID
 
         :param source_id: The source_id of this UpdateServerNameRequest.
         :type source_id: str

@@ -21,6 +21,7 @@ class TargetPhysicalVolumes:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'int',
         'device_use': 'str',
         'file_system': 'str',
         'index': 'int',
@@ -28,10 +29,13 @@ class TargetPhysicalVolumes:
         'name': 'str',
         'size': 'int',
         'used_size': 'int',
-        'uuid': 'str'
+        'uuid': 'str',
+        'relation_name': 'str',
+        'free_size': 'int'
     }
 
     attribute_map = {
+        'id': 'id',
         'device_use': 'device_use',
         'file_system': 'file_system',
         'index': 'index',
@@ -39,15 +43,19 @@ class TargetPhysicalVolumes:
         'name': 'name',
         'size': 'size',
         'used_size': 'used_size',
-        'uuid': 'uuid'
+        'uuid': 'uuid',
+        'relation_name': 'relation_name',
+        'free_size': 'free_size'
     }
 
-    def __init__(self, device_use=None, file_system=None, index=None, mount_point=None, name=None, size=None, used_size=None, uuid=None):
+    def __init__(self, id=None, device_use=None, file_system=None, index=None, mount_point=None, name=None, size=None, used_size=None, uuid=None, relation_name=None, free_size=None):
         """TargetPhysicalVolumes
 
         The model defined in huaweicloud sdk
 
-        :param device_use: 分区类型
+        :param id: 逻辑卷ID
+        :type id: int
+        :param device_use: 分区类型 NORMAL:平常 OS：系统设备 BOOT：BOOT设备
         :type device_use: str
         :param file_system: 文件系统
         :type file_system: str
@@ -63,10 +71,15 @@ class TargetPhysicalVolumes:
         :type used_size: int
         :param uuid: uuid
         :type uuid: str
+        :param relation_name: Linux系统 目的端ECS中与源端关联的磁盘名称
+        :type relation_name: str
+        :param free_size: 分区空闲大小
+        :type free_size: int
         """
         
         
 
+        self._id = None
         self._device_use = None
         self._file_system = None
         self._index = None
@@ -75,8 +88,12 @@ class TargetPhysicalVolumes:
         self._size = None
         self._used_size = None
         self._uuid = None
+        self._relation_name = None
+        self._free_size = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if device_use is not None:
             self.device_use = device_use
         if file_system is not None:
@@ -93,12 +110,38 @@ class TargetPhysicalVolumes:
             self.used_size = used_size
         if uuid is not None:
             self.uuid = uuid
+        if relation_name is not None:
+            self.relation_name = relation_name
+        if free_size is not None:
+            self.free_size = free_size
+
+    @property
+    def id(self):
+        """Gets the id of this TargetPhysicalVolumes.
+
+        逻辑卷ID
+
+        :return: The id of this TargetPhysicalVolumes.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this TargetPhysicalVolumes.
+
+        逻辑卷ID
+
+        :param id: The id of this TargetPhysicalVolumes.
+        :type id: int
+        """
+        self._id = id
 
     @property
     def device_use(self):
         """Gets the device_use of this TargetPhysicalVolumes.
 
-        分区类型
+        分区类型 NORMAL:平常 OS：系统设备 BOOT：BOOT设备
 
         :return: The device_use of this TargetPhysicalVolumes.
         :rtype: str
@@ -109,7 +152,7 @@ class TargetPhysicalVolumes:
     def device_use(self, device_use):
         """Sets the device_use of this TargetPhysicalVolumes.
 
-        分区类型
+        分区类型 NORMAL:平常 OS：系统设备 BOOT：BOOT设备
 
         :param device_use: The device_use of this TargetPhysicalVolumes.
         :type device_use: str
@@ -269,6 +312,50 @@ class TargetPhysicalVolumes:
         :type uuid: str
         """
         self._uuid = uuid
+
+    @property
+    def relation_name(self):
+        """Gets the relation_name of this TargetPhysicalVolumes.
+
+        Linux系统 目的端ECS中与源端关联的磁盘名称
+
+        :return: The relation_name of this TargetPhysicalVolumes.
+        :rtype: str
+        """
+        return self._relation_name
+
+    @relation_name.setter
+    def relation_name(self, relation_name):
+        """Sets the relation_name of this TargetPhysicalVolumes.
+
+        Linux系统 目的端ECS中与源端关联的磁盘名称
+
+        :param relation_name: The relation_name of this TargetPhysicalVolumes.
+        :type relation_name: str
+        """
+        self._relation_name = relation_name
+
+    @property
+    def free_size(self):
+        """Gets the free_size of this TargetPhysicalVolumes.
+
+        分区空闲大小
+
+        :return: The free_size of this TargetPhysicalVolumes.
+        :rtype: int
+        """
+        return self._free_size
+
+    @free_size.setter
+    def free_size(self, free_size):
+        """Sets the free_size of this TargetPhysicalVolumes.
+
+        分区空闲大小
+
+        :param free_size: The free_size of this TargetPhysicalVolumes.
+        :type free_size: int
+        """
+        self._free_size = free_size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -45,19 +45,19 @@ class PartAttendee:
 
         The model defined in huaweicloud sdk
 
-        :param name: 与会者名称或昵称。长度限制为96个字符。
+        :param name: 与会者名称。
         :type name: str
-        :param phone: 电话号码(可支持SIP、TEL号码格式)。最大不超过127个字符。 当type为telepresence时，且设备为三屏智真，则该字段填写中屏号码。
+        :param phone: 号码。SIP号码或者手机号码。
         :type phone: str
-        :param phone2: 取值类型同参数phone。（预留字段） 当type为telepresence时，且设备为三屏智真，则该字段填写左屏号码。
+        :param phone2: 预留字段，取值类型同参数“phone”。
         :type phone2: str
-        :param phone3: 取值类型同参数phone。（预留字段） 当type为telepresence时，且设备为三屏智真，则该字段填写右屏号码。
+        :param phone3: 预留字段，取值类型同参数“phone”。
         :type phone3: str
-        :param type: 默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 用户固定电话。（预留字段） - ideahub: ideahub。
+        :param type: 终端类型，类型枚举如下： * normal：软终端 * terminal：硬终端 * outside：外部与会人 * mobile：用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms）。含Maxhub、海信大屏、IdeaHub B2hwvision：华为智慧屏TV
         :type type: str
-        :param role: 会议中的角色。默认为普通与会者。 - 0：普通与会者。 - 1：会议主持人。
+        :param role: 用户入会时是否需要自动静音 。默认不静音。 * 0： 不需要静音 * 1： 需要静音
         :type role: int
-        :param is_mute: 用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音。 - 1: 需要静音。
+        :param is_mute: 用户入会时是否需要自动静音。默认不静音。 * 0: 不需要静音。 * 1: 需要静音。
         :type is_mute: int
         """
         
@@ -91,7 +91,7 @@ class PartAttendee:
     def name(self):
         """Gets the name of this PartAttendee.
 
-        与会者名称或昵称。长度限制为96个字符。
+        与会者名称。
 
         :return: The name of this PartAttendee.
         :rtype: str
@@ -102,7 +102,7 @@ class PartAttendee:
     def name(self, name):
         """Sets the name of this PartAttendee.
 
-        与会者名称或昵称。长度限制为96个字符。
+        与会者名称。
 
         :param name: The name of this PartAttendee.
         :type name: str
@@ -113,7 +113,7 @@ class PartAttendee:
     def phone(self):
         """Gets the phone of this PartAttendee.
 
-        电话号码(可支持SIP、TEL号码格式)。最大不超过127个字符。 当type为telepresence时，且设备为三屏智真，则该字段填写中屏号码。
+        号码。SIP号码或者手机号码。
 
         :return: The phone of this PartAttendee.
         :rtype: str
@@ -124,7 +124,7 @@ class PartAttendee:
     def phone(self, phone):
         """Sets the phone of this PartAttendee.
 
-        电话号码(可支持SIP、TEL号码格式)。最大不超过127个字符。 当type为telepresence时，且设备为三屏智真，则该字段填写中屏号码。
+        号码。SIP号码或者手机号码。
 
         :param phone: The phone of this PartAttendee.
         :type phone: str
@@ -135,7 +135,7 @@ class PartAttendee:
     def phone2(self):
         """Gets the phone2 of this PartAttendee.
 
-        取值类型同参数phone。（预留字段） 当type为telepresence时，且设备为三屏智真，则该字段填写左屏号码。
+        预留字段，取值类型同参数“phone”。
 
         :return: The phone2 of this PartAttendee.
         :rtype: str
@@ -146,7 +146,7 @@ class PartAttendee:
     def phone2(self, phone2):
         """Sets the phone2 of this PartAttendee.
 
-        取值类型同参数phone。（预留字段） 当type为telepresence时，且设备为三屏智真，则该字段填写左屏号码。
+        预留字段，取值类型同参数“phone”。
 
         :param phone2: The phone2 of this PartAttendee.
         :type phone2: str
@@ -157,7 +157,7 @@ class PartAttendee:
     def phone3(self):
         """Gets the phone3 of this PartAttendee.
 
-        取值类型同参数phone。（预留字段） 当type为telepresence时，且设备为三屏智真，则该字段填写右屏号码。
+        预留字段，取值类型同参数“phone”。
 
         :return: The phone3 of this PartAttendee.
         :rtype: str
@@ -168,7 +168,7 @@ class PartAttendee:
     def phone3(self, phone3):
         """Sets the phone3 of this PartAttendee.
 
-        取值类型同参数phone。（预留字段） 当type为telepresence时，且设备为三屏智真，则该字段填写右屏号码。
+        预留字段，取值类型同参数“phone”。
 
         :param phone3: The phone3 of this PartAttendee.
         :type phone3: str
@@ -179,7 +179,7 @@ class PartAttendee:
     def type(self):
         """Gets the type of this PartAttendee.
 
-        默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 用户固定电话。（预留字段） - ideahub: ideahub。
+        终端类型，类型枚举如下： * normal：软终端 * terminal：硬终端 * outside：外部与会人 * mobile：用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms）。含Maxhub、海信大屏、IdeaHub B2hwvision：华为智慧屏TV
 
         :return: The type of this PartAttendee.
         :rtype: str
@@ -190,7 +190,7 @@ class PartAttendee:
     def type(self, type):
         """Sets the type of this PartAttendee.
 
-        默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 用户固定电话。（预留字段） - ideahub: ideahub。
+        终端类型，类型枚举如下： * normal：软终端 * terminal：硬终端 * outside：外部与会人 * mobile：用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms）。含Maxhub、海信大屏、IdeaHub B2hwvision：华为智慧屏TV
 
         :param type: The type of this PartAttendee.
         :type type: str
@@ -201,7 +201,7 @@ class PartAttendee:
     def role(self):
         """Gets the role of this PartAttendee.
 
-        会议中的角色。默认为普通与会者。 - 0：普通与会者。 - 1：会议主持人。
+        用户入会时是否需要自动静音 。默认不静音。 * 0： 不需要静音 * 1： 需要静音
 
         :return: The role of this PartAttendee.
         :rtype: int
@@ -212,7 +212,7 @@ class PartAttendee:
     def role(self, role):
         """Sets the role of this PartAttendee.
 
-        会议中的角色。默认为普通与会者。 - 0：普通与会者。 - 1：会议主持人。
+        用户入会时是否需要自动静音 。默认不静音。 * 0： 不需要静音 * 1： 需要静音
 
         :param role: The role of this PartAttendee.
         :type role: int
@@ -223,7 +223,7 @@ class PartAttendee:
     def is_mute(self):
         """Gets the is_mute of this PartAttendee.
 
-        用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音。 - 1: 需要静音。
+        用户入会时是否需要自动静音。默认不静音。 * 0: 不需要静音。 * 1: 需要静音。
 
         :return: The is_mute of this PartAttendee.
         :rtype: int
@@ -234,7 +234,7 @@ class PartAttendee:
     def is_mute(self, is_mute):
         """Sets the is_mute of this PartAttendee.
 
-        用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音。 - 1: 需要静音。
+        用户入会时是否需要自动静音。默认不静音。 * 0: 不需要静音。 * 1: 需要静音。
 
         :param is_mute: The is_mute of this PartAttendee.
         :type is_mute: int

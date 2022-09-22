@@ -59,7 +59,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         :type conf_uuid: str
         :param conf_id: 会议ID。
         :type conf_id: str
-        :param url: 点播地址。
+        :param url: 录播观看地址。
         :type url: list[str]
         :param rcd_time: 录制时长（单位秒）。
         :type rcd_time: int
@@ -67,7 +67,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         :type rcd_size: int
         :param subject: 会议主题。
         :type subject: str
-        :param scheduser_name: 会议预订者。
+        :param scheduser_name: 会议预订者名称。
         :type scheduser_name: str
         :param start_time: 会议开始时间。
         :type start_time: str
@@ -77,7 +77,7 @@ class ShowRecordingDetailResponse(SdkResponse):
         :type decode_end_time: int
         :param available: 录播文件是否可观看。
         :type available: bool
-        :param record_auth_type: * 录播鉴权方式，在录播类型为:录播、直播+录播时有效 * 0： 可通过链接观看/下载 * 1： 企业用户可观看/下载 * 2： 与会者可观看/下载
+        :param record_auth_type: 观看/下载录播的鉴权方式。 - 0: 可通过链接观看/下载 - 1: 企业用户可观看/下载 - 2: 与会者可观看/下载
         :type record_auth_type: int
         """
         
@@ -170,7 +170,7 @@ class ShowRecordingDetailResponse(SdkResponse):
     def url(self):
         """Gets the url of this ShowRecordingDetailResponse.
 
-        点播地址。
+        录播观看地址。
 
         :return: The url of this ShowRecordingDetailResponse.
         :rtype: list[str]
@@ -181,7 +181,7 @@ class ShowRecordingDetailResponse(SdkResponse):
     def url(self, url):
         """Sets the url of this ShowRecordingDetailResponse.
 
-        点播地址。
+        录播观看地址。
 
         :param url: The url of this ShowRecordingDetailResponse.
         :type url: list[str]
@@ -258,7 +258,7 @@ class ShowRecordingDetailResponse(SdkResponse):
     def scheduser_name(self):
         """Gets the scheduser_name of this ShowRecordingDetailResponse.
 
-        会议预订者。
+        会议预订者名称。
 
         :return: The scheduser_name of this ShowRecordingDetailResponse.
         :rtype: str
@@ -269,7 +269,7 @@ class ShowRecordingDetailResponse(SdkResponse):
     def scheduser_name(self, scheduser_name):
         """Sets the scheduser_name of this ShowRecordingDetailResponse.
 
-        会议预订者。
+        会议预订者名称。
 
         :param scheduser_name: The scheduser_name of this ShowRecordingDetailResponse.
         :type scheduser_name: str
@@ -368,7 +368,7 @@ class ShowRecordingDetailResponse(SdkResponse):
     def record_auth_type(self):
         """Gets the record_auth_type of this ShowRecordingDetailResponse.
 
-        * 录播鉴权方式，在录播类型为:录播、直播+录播时有效 * 0： 可通过链接观看/下载 * 1： 企业用户可观看/下载 * 2： 与会者可观看/下载
+        观看/下载录播的鉴权方式。 - 0: 可通过链接观看/下载 - 1: 企业用户可观看/下载 - 2: 与会者可观看/下载
 
         :return: The record_auth_type of this ShowRecordingDetailResponse.
         :rtype: int
@@ -379,7 +379,7 @@ class ShowRecordingDetailResponse(SdkResponse):
     def record_auth_type(self, record_auth_type):
         """Sets the record_auth_type of this ShowRecordingDetailResponse.
 
-        * 录播鉴权方式，在录播类型为:录播、直播+录播时有效 * 0： 可通过链接观看/下载 * 1： 企业用户可观看/下载 * 2： 与会者可观看/下载
+        观看/下载录播的鉴权方式。 - 0: 可通过链接观看/下载 - 1: 企业用户可观看/下载 - 2: 与会者可观看/下载
 
         :param record_auth_type: The record_auth_type of this ShowRecordingDetailResponse.
         :type record_auth_type: int

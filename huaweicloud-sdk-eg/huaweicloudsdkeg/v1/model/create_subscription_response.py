@@ -31,7 +31,8 @@ class CreateSubscriptionResponse(SdkResponse):
         'sources': 'list[SubscriptionSourceInfo]',
         'targets': 'list[SubscriptionTargetInfo]',
         'created_time': 'str',
-        'updated_time': 'str'
+        'updated_time': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
@@ -45,23 +46,24 @@ class CreateSubscriptionResponse(SdkResponse):
         'sources': 'sources',
         'targets': 'targets',
         'created_time': 'created_time',
-        'updated_time': 'updated_time'
+        'updated_time': 'updated_time',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, id=None, name=None, description=None, type=None, status=None, channel_id=None, channel_name=None, sources=None, targets=None, created_time=None, updated_time=None):
+    def __init__(self, id=None, name=None, description=None, type=None, status=None, channel_id=None, channel_name=None, sources=None, targets=None, created_time=None, updated_time=None, x_request_id=None):
         """CreateSubscriptionResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: 事件订阅ID
+        :param id: 订阅ID
         :type id: str
-        :param name: 事件订阅名称
+        :param name: 订阅名称
         :type name: str
-        :param description: 事件订阅描述
+        :param description: 订阅描述
         :type description: str
-        :param type: 事件订阅类型
+        :param type: 类型
         :type type: str
-        :param status: 事件订阅状态
+        :param status: 状态
         :type status: str
         :param channel_id: 通道ID
         :type channel_id: str
@@ -75,6 +77,8 @@ class CreateSubscriptionResponse(SdkResponse):
         :type created_time: str
         :param updated_time: 更新时间
         :type updated_time: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(CreateSubscriptionResponse, self).__init__()
@@ -90,6 +94,7 @@ class CreateSubscriptionResponse(SdkResponse):
         self._targets = None
         self._created_time = None
         self._updated_time = None
+        self._x_request_id = None
         self.discriminator = None
 
         if id is not None:
@@ -114,12 +119,14 @@ class CreateSubscriptionResponse(SdkResponse):
             self.created_time = created_time
         if updated_time is not None:
             self.updated_time = updated_time
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def id(self):
         """Gets the id of this CreateSubscriptionResponse.
 
-        事件订阅ID
+        订阅ID
 
         :return: The id of this CreateSubscriptionResponse.
         :rtype: str
@@ -130,7 +137,7 @@ class CreateSubscriptionResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this CreateSubscriptionResponse.
 
-        事件订阅ID
+        订阅ID
 
         :param id: The id of this CreateSubscriptionResponse.
         :type id: str
@@ -141,7 +148,7 @@ class CreateSubscriptionResponse(SdkResponse):
     def name(self):
         """Gets the name of this CreateSubscriptionResponse.
 
-        事件订阅名称
+        订阅名称
 
         :return: The name of this CreateSubscriptionResponse.
         :rtype: str
@@ -152,7 +159,7 @@ class CreateSubscriptionResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this CreateSubscriptionResponse.
 
-        事件订阅名称
+        订阅名称
 
         :param name: The name of this CreateSubscriptionResponse.
         :type name: str
@@ -163,7 +170,7 @@ class CreateSubscriptionResponse(SdkResponse):
     def description(self):
         """Gets the description of this CreateSubscriptionResponse.
 
-        事件订阅描述
+        订阅描述
 
         :return: The description of this CreateSubscriptionResponse.
         :rtype: str
@@ -174,7 +181,7 @@ class CreateSubscriptionResponse(SdkResponse):
     def description(self, description):
         """Sets the description of this CreateSubscriptionResponse.
 
-        事件订阅描述
+        订阅描述
 
         :param description: The description of this CreateSubscriptionResponse.
         :type description: str
@@ -185,7 +192,7 @@ class CreateSubscriptionResponse(SdkResponse):
     def type(self):
         """Gets the type of this CreateSubscriptionResponse.
 
-        事件订阅类型
+        类型
 
         :return: The type of this CreateSubscriptionResponse.
         :rtype: str
@@ -196,7 +203,7 @@ class CreateSubscriptionResponse(SdkResponse):
     def type(self, type):
         """Sets the type of this CreateSubscriptionResponse.
 
-        事件订阅类型
+        类型
 
         :param type: The type of this CreateSubscriptionResponse.
         :type type: str
@@ -207,7 +214,7 @@ class CreateSubscriptionResponse(SdkResponse):
     def status(self):
         """Gets the status of this CreateSubscriptionResponse.
 
-        事件订阅状态
+        状态
 
         :return: The status of this CreateSubscriptionResponse.
         :rtype: str
@@ -218,7 +225,7 @@ class CreateSubscriptionResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this CreateSubscriptionResponse.
 
-        事件订阅状态
+        状态
 
         :param status: The status of this CreateSubscriptionResponse.
         :type status: str
@@ -356,6 +363,26 @@ class CreateSubscriptionResponse(SdkResponse):
         :type updated_time: str
         """
         self._updated_time = updated_time
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this CreateSubscriptionResponse.
+
+
+        :return: The x_request_id of this CreateSubscriptionResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this CreateSubscriptionResponse.
+
+
+        :param x_request_id: The x_request_id of this CreateSubscriptionResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

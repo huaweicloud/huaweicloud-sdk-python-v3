@@ -33,7 +33,7 @@ class UpdateMaterialRequestDTO:
 
         The model defined in huaweicloud sdk
 
-        :param material_name: 素材名称
+        :param material_name: 素材名称。
         :type material_name: str
         """
         
@@ -49,7 +49,7 @@ class UpdateMaterialRequestDTO:
     def material_name(self):
         """Gets the material_name of this UpdateMaterialRequestDTO.
 
-        素材名称
+        素材名称。
 
         :return: The material_name of this UpdateMaterialRequestDTO.
         :rtype: str
@@ -60,7 +60,7 @@ class UpdateMaterialRequestDTO:
     def material_name(self, material_name):
         """Sets the material_name of this UpdateMaterialRequestDTO.
 
-        素材名称
+        素材名称。
 
         :param material_name: The material_name of this UpdateMaterialRequestDTO.
         :type material_name: str

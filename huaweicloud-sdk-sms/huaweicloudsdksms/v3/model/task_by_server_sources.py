@@ -40,7 +40,11 @@ class TaskByServerSources:
         'exist_server': 'bool',
         'use_public_ip': 'bool',
         'clone_server': 'CloneServer',
-        'remain_seconds': 'int'
+        'remain_seconds': 'int',
+        'log_bucket': 'str',
+        'log_expire': 'int',
+        'log_upload_time': 'int',
+        'log_share_url': 'str'
     }
 
     attribute_map = {
@@ -63,15 +67,19 @@ class TaskByServerSources:
         'exist_server': 'exist_server',
         'use_public_ip': 'use_public_ip',
         'clone_server': 'clone_server',
-        'remain_seconds': 'remain_seconds'
+        'remain_seconds': 'remain_seconds',
+        'log_bucket': 'log_bucket',
+        'log_expire': 'log_expire',
+        'log_upload_time': 'log_upload_time',
+        'log_share_url': 'log_share_url'
     }
 
-    def __init__(self, id=None, name=None, type=None, state=None, estimate_complete_time=None, start_date=None, speed_limit=None, migrate_speed=None, compress_rate=None, start_target_server=None, vm_template_id=None, region_id=None, project_name=None, project_id=None, target_server=None, log_collect_status=None, exist_server=None, use_public_ip=None, clone_server=None, remain_seconds=None):
+    def __init__(self, id=None, name=None, type=None, state=None, estimate_complete_time=None, start_date=None, speed_limit=None, migrate_speed=None, compress_rate=None, start_target_server=None, vm_template_id=None, region_id=None, project_name=None, project_id=None, target_server=None, log_collect_status=None, exist_server=None, use_public_ip=None, clone_server=None, remain_seconds=None, log_bucket=None, log_expire=None, log_upload_time=None, log_share_url=None):
         """TaskByServerSources
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务id
+        :param id: 任务ID
         :type id: str
         :param name: 任务名称
         :type name: str
@@ -91,13 +99,13 @@ class TaskByServerSources:
         :type compress_rate: float
         :param start_target_server: 是否启动虚拟机
         :type start_target_server: bool
-        :param vm_template_id: 虚拟机模板id
+        :param vm_template_id: 虚拟机模板ID
         :type vm_template_id: str
         :param region_id: region_id
         :type region_id: str
         :param project_name: 项目名称
         :type project_name: str
-        :param project_id: 项目id
+        :param project_id: 项目ID
         :type project_id: str
         :param target_server: 
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServerById`
@@ -105,12 +113,20 @@ class TaskByServerSources:
         :type log_collect_status: str
         :param exist_server: 是否使用已有虚拟机
         :type exist_server: bool
-        :param use_public_ip: 是否使用公网ip
+        :param use_public_ip: 是否使用公网IP
         :type use_public_ip: bool
         :param clone_server: 
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
         :param remain_seconds: 已迁移时长
         :type remain_seconds: int
+        :param log_bucket: 上传日志指定桶名称
+        :type log_bucket: str
+        :param log_expire: 分享链接有效期
+        :type log_expire: int
+        :param log_upload_time: 日志上传时间
+        :type log_upload_time: int
+        :param log_share_url: 分享链接url
+        :type log_share_url: str
         """
         
         
@@ -135,6 +151,10 @@ class TaskByServerSources:
         self._use_public_ip = None
         self._clone_server = None
         self._remain_seconds = None
+        self._log_bucket = None
+        self._log_expire = None
+        self._log_upload_time = None
+        self._log_share_url = None
         self.discriminator = None
 
         if id is not None:
@@ -177,12 +197,20 @@ class TaskByServerSources:
             self.clone_server = clone_server
         if remain_seconds is not None:
             self.remain_seconds = remain_seconds
+        if log_bucket is not None:
+            self.log_bucket = log_bucket
+        if log_expire is not None:
+            self.log_expire = log_expire
+        if log_upload_time is not None:
+            self.log_upload_time = log_upload_time
+        if log_share_url is not None:
+            self.log_share_url = log_share_url
 
     @property
     def id(self):
         """Gets the id of this TaskByServerSources.
 
-        任务id
+        任务ID
 
         :return: The id of this TaskByServerSources.
         :rtype: str
@@ -193,7 +221,7 @@ class TaskByServerSources:
     def id(self, id):
         """Sets the id of this TaskByServerSources.
 
-        任务id
+        任务ID
 
         :param id: The id of this TaskByServerSources.
         :type id: str
@@ -402,7 +430,7 @@ class TaskByServerSources:
     def vm_template_id(self):
         """Gets the vm_template_id of this TaskByServerSources.
 
-        虚拟机模板id
+        虚拟机模板ID
 
         :return: The vm_template_id of this TaskByServerSources.
         :rtype: str
@@ -413,7 +441,7 @@ class TaskByServerSources:
     def vm_template_id(self, vm_template_id):
         """Sets the vm_template_id of this TaskByServerSources.
 
-        虚拟机模板id
+        虚拟机模板ID
 
         :param vm_template_id: The vm_template_id of this TaskByServerSources.
         :type vm_template_id: str
@@ -468,7 +496,7 @@ class TaskByServerSources:
     def project_id(self):
         """Gets the project_id of this TaskByServerSources.
 
-        项目id
+        项目ID
 
         :return: The project_id of this TaskByServerSources.
         :rtype: str
@@ -479,7 +507,7 @@ class TaskByServerSources:
     def project_id(self, project_id):
         """Sets the project_id of this TaskByServerSources.
 
-        项目id
+        项目ID
 
         :param project_id: The project_id of this TaskByServerSources.
         :type project_id: str
@@ -554,7 +582,7 @@ class TaskByServerSources:
     def use_public_ip(self):
         """Gets the use_public_ip of this TaskByServerSources.
 
-        是否使用公网ip
+        是否使用公网IP
 
         :return: The use_public_ip of this TaskByServerSources.
         :rtype: bool
@@ -565,7 +593,7 @@ class TaskByServerSources:
     def use_public_ip(self, use_public_ip):
         """Sets the use_public_ip of this TaskByServerSources.
 
-        是否使用公网ip
+        是否使用公网IP
 
         :param use_public_ip: The use_public_ip of this TaskByServerSources.
         :type use_public_ip: bool
@@ -613,6 +641,94 @@ class TaskByServerSources:
         :type remain_seconds: int
         """
         self._remain_seconds = remain_seconds
+
+    @property
+    def log_bucket(self):
+        """Gets the log_bucket of this TaskByServerSources.
+
+        上传日志指定桶名称
+
+        :return: The log_bucket of this TaskByServerSources.
+        :rtype: str
+        """
+        return self._log_bucket
+
+    @log_bucket.setter
+    def log_bucket(self, log_bucket):
+        """Sets the log_bucket of this TaskByServerSources.
+
+        上传日志指定桶名称
+
+        :param log_bucket: The log_bucket of this TaskByServerSources.
+        :type log_bucket: str
+        """
+        self._log_bucket = log_bucket
+
+    @property
+    def log_expire(self):
+        """Gets the log_expire of this TaskByServerSources.
+
+        分享链接有效期
+
+        :return: The log_expire of this TaskByServerSources.
+        :rtype: int
+        """
+        return self._log_expire
+
+    @log_expire.setter
+    def log_expire(self, log_expire):
+        """Sets the log_expire of this TaskByServerSources.
+
+        分享链接有效期
+
+        :param log_expire: The log_expire of this TaskByServerSources.
+        :type log_expire: int
+        """
+        self._log_expire = log_expire
+
+    @property
+    def log_upload_time(self):
+        """Gets the log_upload_time of this TaskByServerSources.
+
+        日志上传时间
+
+        :return: The log_upload_time of this TaskByServerSources.
+        :rtype: int
+        """
+        return self._log_upload_time
+
+    @log_upload_time.setter
+    def log_upload_time(self, log_upload_time):
+        """Sets the log_upload_time of this TaskByServerSources.
+
+        日志上传时间
+
+        :param log_upload_time: The log_upload_time of this TaskByServerSources.
+        :type log_upload_time: int
+        """
+        self._log_upload_time = log_upload_time
+
+    @property
+    def log_share_url(self):
+        """Gets the log_share_url of this TaskByServerSources.
+
+        分享链接url
+
+        :return: The log_share_url of this TaskByServerSources.
+        :rtype: str
+        """
+        return self._log_share_url
+
+    @log_share_url.setter
+    def log_share_url(self, log_share_url):
+        """Sets the log_share_url of this TaskByServerSources.
+
+        分享链接url
+
+        :param log_share_url: The log_share_url of this TaskByServerSources.
+        :type log_share_url: str
+        """
+        self._log_share_url = log_share_url
 
     def to_dict(self):
         """Returns the model properties as a dict"""

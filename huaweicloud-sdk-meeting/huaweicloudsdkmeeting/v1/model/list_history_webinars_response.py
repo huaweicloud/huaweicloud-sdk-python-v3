@@ -41,11 +41,11 @@ class ListHistoryWebinarsResponse(SdkResponse):
 
         :param offset: 偏移量。
         :type offset: int
-        :param limit: 查询个数。
+        :param limit: 每页的记录数。
         :type limit: int
-        :param count: 总记录数
+        :param count: 总记录数。
         :type count: int
-        :param data: 
+        :param data: 历史网络研讨会信息列表。
         :type data: list[:class:`huaweicloudsdkmeeting.v1.OpenWebinarHistoryInfo`]
         """
         
@@ -89,7 +89,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
     def limit(self):
         """Gets the limit of this ListHistoryWebinarsResponse.
 
-        查询个数。
+        每页的记录数。
 
         :return: The limit of this ListHistoryWebinarsResponse.
         :rtype: int
@@ -100,7 +100,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
     def limit(self, limit):
         """Sets the limit of this ListHistoryWebinarsResponse.
 
-        查询个数。
+        每页的记录数。
 
         :param limit: The limit of this ListHistoryWebinarsResponse.
         :type limit: int
@@ -111,7 +111,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
     def count(self):
         """Gets the count of this ListHistoryWebinarsResponse.
 
-        总记录数
+        总记录数。
 
         :return: The count of this ListHistoryWebinarsResponse.
         :rtype: int
@@ -122,7 +122,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
     def count(self, count):
         """Sets the count of this ListHistoryWebinarsResponse.
 
-        总记录数
+        总记录数。
 
         :param count: The count of this ListHistoryWebinarsResponse.
         :type count: int
@@ -133,6 +133,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
     def data(self):
         """Gets the data of this ListHistoryWebinarsResponse.
 
+        历史网络研讨会信息列表。
 
         :return: The data of this ListHistoryWebinarsResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.OpenWebinarHistoryInfo`]
@@ -143,6 +144,7 @@ class ListHistoryWebinarsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this ListHistoryWebinarsResponse.
 
+        历史网络研讨会信息列表。
 
         :param data: The data of this ListHistoryWebinarsResponse.
         :type data: list[:class:`huaweicloudsdkmeeting.v1.OpenWebinarHistoryInfo`]

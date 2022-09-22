@@ -41,15 +41,15 @@ class SubscriptionCreateReq:
 
         The model defined in huaweicloud sdk
 
-        :param name: 事件订阅名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头，长度为1~128字符。
+        :param name: 订阅名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头
         :type name: str
-        :param description: 事件订阅描述
+        :param description: 订阅描述
         :type description: str
         :param channel_id: 所属事件通道ID
         :type channel_id: str
-        :param sources: 事件订阅的事件源列表，当前仅支持订阅一个事件源。
+        :param sources: 订阅的事件源列表， 当前仅支持订阅一个事件源
         :type sources: list[:class:`huaweicloudsdkeg.v1.SubscriptionSource`]
-        :param targets: 事件目标列表，至少订阅一个，最多五个事件目标。
+        :param targets: 事件目标列表，至少订阅一个事件目标
         :type targets: list[:class:`huaweicloudsdkeg.v1.SubscriptionTarget`]
         """
         
@@ -73,7 +73,7 @@ class SubscriptionCreateReq:
     def name(self):
         """Gets the name of this SubscriptionCreateReq.
 
-        事件订阅名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头，长度为1~128字符。
+        订阅名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头
 
         :return: The name of this SubscriptionCreateReq.
         :rtype: str
@@ -84,7 +84,7 @@ class SubscriptionCreateReq:
     def name(self, name):
         """Sets the name of this SubscriptionCreateReq.
 
-        事件订阅名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头，长度为1~128字符。
+        订阅名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头
 
         :param name: The name of this SubscriptionCreateReq.
         :type name: str
@@ -95,7 +95,7 @@ class SubscriptionCreateReq:
     def description(self):
         """Gets the description of this SubscriptionCreateReq.
 
-        事件订阅描述
+        订阅描述
 
         :return: The description of this SubscriptionCreateReq.
         :rtype: str
@@ -106,7 +106,7 @@ class SubscriptionCreateReq:
     def description(self, description):
         """Sets the description of this SubscriptionCreateReq.
 
-        事件订阅描述
+        订阅描述
 
         :param description: The description of this SubscriptionCreateReq.
         :type description: str
@@ -139,7 +139,7 @@ class SubscriptionCreateReq:
     def sources(self):
         """Gets the sources of this SubscriptionCreateReq.
 
-        事件订阅的事件源列表，当前仅支持订阅一个事件源。
+        订阅的事件源列表， 当前仅支持订阅一个事件源
 
         :return: The sources of this SubscriptionCreateReq.
         :rtype: list[:class:`huaweicloudsdkeg.v1.SubscriptionSource`]
@@ -150,7 +150,7 @@ class SubscriptionCreateReq:
     def sources(self, sources):
         """Sets the sources of this SubscriptionCreateReq.
 
-        事件订阅的事件源列表，当前仅支持订阅一个事件源。
+        订阅的事件源列表， 当前仅支持订阅一个事件源
 
         :param sources: The sources of this SubscriptionCreateReq.
         :type sources: list[:class:`huaweicloudsdkeg.v1.SubscriptionSource`]
@@ -161,7 +161,7 @@ class SubscriptionCreateReq:
     def targets(self):
         """Gets the targets of this SubscriptionCreateReq.
 
-        事件目标列表，至少订阅一个，最多五个事件目标。
+        事件目标列表，至少订阅一个事件目标
 
         :return: The targets of this SubscriptionCreateReq.
         :rtype: list[:class:`huaweicloudsdkeg.v1.SubscriptionTarget`]
@@ -172,7 +172,7 @@ class SubscriptionCreateReq:
     def targets(self, targets):
         """Sets the targets of this SubscriptionCreateReq.
 
-        事件目标列表，至少订阅一个，最多五个事件目标。
+        事件目标列表，至少订阅一个事件目标
 
         :param targets: The targets of this SubscriptionCreateReq.
         :type targets: list[:class:`huaweicloudsdkeg.v1.SubscriptionTarget`]

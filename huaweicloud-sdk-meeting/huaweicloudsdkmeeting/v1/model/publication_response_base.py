@@ -49,23 +49,23 @@ class PublicationResponseBase:
 
         The model defined in huaweicloud sdk
 
-        :param id: 发布ID
+        :param id: 发布ID。
         :type id: str
-        :param last_updated_by: 更新者
+        :param last_updated_by: 更新者。
         :type last_updated_by: str
-        :param create_time: 创建时间
+        :param create_time: 创建时间。
         :type create_time: int
-        :param update_time: 更新时间
+        :param update_time: 更新时间。
         :type update_time: int
-        :param publish_name: 发布名称
+        :param publish_name: 发布名称。
         :type publish_name: str
-        :param publish_scope: 发布范围
+        :param publish_scope: 发布范围。
         :type publish_scope: str
-        :param start_time: 开始时间
+        :param start_time: 开始时间。
         :type start_time: int
-        :param end_time: 结束时间
+        :param end_time: 结束时间。
         :type end_time: int
-        :param publish_status: 根据当前时间确定发布状态 - NOT_ONLINE-未上线 - PUBLISHING-发布中 - ALREADY_OFFLINE-已下线
+        :param publish_status: 根据当前时间确定发布状态。 - NOT_ONLINE-未上线 - PUBLISHING-发布中 - ALREADY_OFFLINE-已下线
         :type publish_status: str
         """
         
@@ -105,7 +105,7 @@ class PublicationResponseBase:
     def id(self):
         """Gets the id of this PublicationResponseBase.
 
-        发布ID
+        发布ID。
 
         :return: The id of this PublicationResponseBase.
         :rtype: str
@@ -116,7 +116,7 @@ class PublicationResponseBase:
     def id(self, id):
         """Sets the id of this PublicationResponseBase.
 
-        发布ID
+        发布ID。
 
         :param id: The id of this PublicationResponseBase.
         :type id: str
@@ -127,7 +127,7 @@ class PublicationResponseBase:
     def last_updated_by(self):
         """Gets the last_updated_by of this PublicationResponseBase.
 
-        更新者
+        更新者。
 
         :return: The last_updated_by of this PublicationResponseBase.
         :rtype: str
@@ -138,7 +138,7 @@ class PublicationResponseBase:
     def last_updated_by(self, last_updated_by):
         """Sets the last_updated_by of this PublicationResponseBase.
 
-        更新者
+        更新者。
 
         :param last_updated_by: The last_updated_by of this PublicationResponseBase.
         :type last_updated_by: str
@@ -149,7 +149,7 @@ class PublicationResponseBase:
     def create_time(self):
         """Gets the create_time of this PublicationResponseBase.
 
-        创建时间
+        创建时间。
 
         :return: The create_time of this PublicationResponseBase.
         :rtype: int
@@ -160,7 +160,7 @@ class PublicationResponseBase:
     def create_time(self, create_time):
         """Sets the create_time of this PublicationResponseBase.
 
-        创建时间
+        创建时间。
 
         :param create_time: The create_time of this PublicationResponseBase.
         :type create_time: int
@@ -171,7 +171,7 @@ class PublicationResponseBase:
     def update_time(self):
         """Gets the update_time of this PublicationResponseBase.
 
-        更新时间
+        更新时间。
 
         :return: The update_time of this PublicationResponseBase.
         :rtype: int
@@ -182,7 +182,7 @@ class PublicationResponseBase:
     def update_time(self, update_time):
         """Sets the update_time of this PublicationResponseBase.
 
-        更新时间
+        更新时间。
 
         :param update_time: The update_time of this PublicationResponseBase.
         :type update_time: int
@@ -193,7 +193,7 @@ class PublicationResponseBase:
     def publish_name(self):
         """Gets the publish_name of this PublicationResponseBase.
 
-        发布名称
+        发布名称。
 
         :return: The publish_name of this PublicationResponseBase.
         :rtype: str
@@ -204,7 +204,7 @@ class PublicationResponseBase:
     def publish_name(self, publish_name):
         """Sets the publish_name of this PublicationResponseBase.
 
-        发布名称
+        发布名称。
 
         :param publish_name: The publish_name of this PublicationResponseBase.
         :type publish_name: str
@@ -215,7 +215,7 @@ class PublicationResponseBase:
     def publish_scope(self):
         """Gets the publish_scope of this PublicationResponseBase.
 
-        发布范围
+        发布范围。
 
         :return: The publish_scope of this PublicationResponseBase.
         :rtype: str
@@ -226,7 +226,7 @@ class PublicationResponseBase:
     def publish_scope(self, publish_scope):
         """Sets the publish_scope of this PublicationResponseBase.
 
-        发布范围
+        发布范围。
 
         :param publish_scope: The publish_scope of this PublicationResponseBase.
         :type publish_scope: str
@@ -237,7 +237,7 @@ class PublicationResponseBase:
     def start_time(self):
         """Gets the start_time of this PublicationResponseBase.
 
-        开始时间
+        开始时间。
 
         :return: The start_time of this PublicationResponseBase.
         :rtype: int
@@ -248,7 +248,7 @@ class PublicationResponseBase:
     def start_time(self, start_time):
         """Sets the start_time of this PublicationResponseBase.
 
-        开始时间
+        开始时间。
 
         :param start_time: The start_time of this PublicationResponseBase.
         :type start_time: int
@@ -259,7 +259,7 @@ class PublicationResponseBase:
     def end_time(self):
         """Gets the end_time of this PublicationResponseBase.
 
-        结束时间
+        结束时间。
 
         :return: The end_time of this PublicationResponseBase.
         :rtype: int
@@ -270,7 +270,7 @@ class PublicationResponseBase:
     def end_time(self, end_time):
         """Sets the end_time of this PublicationResponseBase.
 
-        结束时间
+        结束时间。
 
         :param end_time: The end_time of this PublicationResponseBase.
         :type end_time: int
@@ -281,7 +281,7 @@ class PublicationResponseBase:
     def publish_status(self):
         """Gets the publish_status of this PublicationResponseBase.
 
-        根据当前时间确定发布状态 - NOT_ONLINE-未上线 - PUBLISHING-发布中 - ALREADY_OFFLINE-已下线
+        根据当前时间确定发布状态。 - NOT_ONLINE-未上线 - PUBLISHING-发布中 - ALREADY_OFFLINE-已下线
 
         :return: The publish_status of this PublicationResponseBase.
         :rtype: str
@@ -292,7 +292,7 @@ class PublicationResponseBase:
     def publish_status(self, publish_status):
         """Sets the publish_status of this PublicationResponseBase.
 
-        根据当前时间确定发布状态 - NOT_ONLINE-未上线 - PUBLISHING-发布中 - ALREADY_OFFLINE-已下线
+        根据当前时间确定发布状态。 - NOT_ONLINE-未上线 - PUBLISHING-发布中 - ALREADY_OFFLINE-已下线
 
         :param publish_status: The publish_status of this PublicationResponseBase.
         :type publish_status: str

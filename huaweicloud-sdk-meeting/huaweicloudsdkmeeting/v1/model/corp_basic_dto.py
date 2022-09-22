@@ -53,27 +53,27 @@ class CorpBasicDTO:
 
         The model defined in huaweicloud sdk
 
-        :param name: 企业名称，格式必须满足^[^#%&amp;&#39;+;&lt;&gt;&#x3D;\&quot;&#39;？?\\\\……/]*$
+        :param name: 企业名称，格式必须满足^[^#%&amp;&#39;+;&lt;&gt;&#x3D;\\\&quot;&#39;？?\\\\\\\\……/]*$。
         :type name: str
-        :param domain: 企业域名
+        :param domain: 企业域名。
         :type domain: str
-        :param phone: 手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时， “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)
+        :param phone: 手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时， “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)。
         :type phone: str
-        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
-        :param fax: 传真号码,格式必须满足(^$|^[+]?[0-9]+$)
+        :param fax: 传真号码,格式必须满足(^$|^[+]?[0-9]+$)。
         :type fax: str
-        :param email: 邮箱地址,格式必须满足(^$|^[\\w-+]+(\\.[\\w-+]+)*@[\\w-]+(\\.[\\w-]+)*(\\.[\\w-]{1,})$)
+        :param email: 邮箱地址,格式必须满足(^$|^[\\\\w-+]+(\\\\.[\\\\w-+]+)*@[\\\\w-]+(\\\\.[\\\\w-]+)*(\\\\.[\\\\w-]{1,})$)。
         :type email: str
-        :param address: 地址
+        :param address: 地址。
         :type address: str
-        :param description: 备注
+        :param description: 备注。
         :type description: str
-        :param sp_id: 仅在查询时返回
+        :param sp_id: 企业归属的SP ID。仅在查询时返回。
         :type sp_id: str
-        :param language: 企业提示音语言设置,zh-CN或en-US
+        :param language: 企业提示音语言设置,zh-CN或en-US。
         :type language: str
-        :param time_zone_id: 时区Id设置,例如北京东8区timeZoneId值为56,时区Id和时区的对应关系请参考: https://support.huaweicloud.com/api-meeting/meeting_21_0110.html
+        :param time_zone_id: 时区Id设置,例如北京东8区timeZoneId值为56,时区Id和时区的对应关系请参考: [[时区表](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html)](tag:hws)[[时区表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html)](tag:hk) 。 
         :type time_zone_id: str
         """
         
@@ -118,7 +118,7 @@ class CorpBasicDTO:
     def name(self):
         """Gets the name of this CorpBasicDTO.
 
-        企业名称，格式必须满足^[^#%&'+;<>=\"'？?\\\\……/]*$
+        企业名称，格式必须满足^[^#%&'+;<>=\\\"'？?\\\\\\\\……/]*$。
 
         :return: The name of this CorpBasicDTO.
         :rtype: str
@@ -129,7 +129,7 @@ class CorpBasicDTO:
     def name(self, name):
         """Sets the name of this CorpBasicDTO.
 
-        企业名称，格式必须满足^[^#%&'+;<>=\"'？?\\\\……/]*$
+        企业名称，格式必须满足^[^#%&'+;<>=\\\"'？?\\\\\\\\……/]*$。
 
         :param name: The name of this CorpBasicDTO.
         :type name: str
@@ -140,7 +140,7 @@ class CorpBasicDTO:
     def domain(self):
         """Gets the domain of this CorpBasicDTO.
 
-        企业域名
+        企业域名。
 
         :return: The domain of this CorpBasicDTO.
         :rtype: str
@@ -151,7 +151,7 @@ class CorpBasicDTO:
     def domain(self, domain):
         """Sets the domain of this CorpBasicDTO.
 
-        企业域名
+        企业域名。
 
         :param domain: The domain of this CorpBasicDTO.
         :type domain: str
@@ -162,7 +162,7 @@ class CorpBasicDTO:
     def phone(self):
         """Gets the phone of this CorpBasicDTO.
 
-        手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时， “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)
+        手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时， “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)。
 
         :return: The phone of this CorpBasicDTO.
         :rtype: str
@@ -173,7 +173,7 @@ class CorpBasicDTO:
     def phone(self, phone):
         """Sets the phone of this CorpBasicDTO.
 
-        手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时， “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)
+        手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时， “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)。
 
         :param phone: The phone of this CorpBasicDTO.
         :type phone: str
@@ -184,7 +184,7 @@ class CorpBasicDTO:
     def country(self):
         """Gets the country of this CorpBasicDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this CorpBasicDTO.
         :rtype: str
@@ -195,7 +195,7 @@ class CorpBasicDTO:
     def country(self, country):
         """Sets the country of this CorpBasicDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this CorpBasicDTO.
         :type country: str
@@ -206,7 +206,7 @@ class CorpBasicDTO:
     def fax(self):
         """Gets the fax of this CorpBasicDTO.
 
-        传真号码,格式必须满足(^$|^[+]?[0-9]+$)
+        传真号码,格式必须满足(^$|^[+]?[0-9]+$)。
 
         :return: The fax of this CorpBasicDTO.
         :rtype: str
@@ -217,7 +217,7 @@ class CorpBasicDTO:
     def fax(self, fax):
         """Sets the fax of this CorpBasicDTO.
 
-        传真号码,格式必须满足(^$|^[+]?[0-9]+$)
+        传真号码,格式必须满足(^$|^[+]?[0-9]+$)。
 
         :param fax: The fax of this CorpBasicDTO.
         :type fax: str
@@ -228,7 +228,7 @@ class CorpBasicDTO:
     def email(self):
         """Gets the email of this CorpBasicDTO.
 
-        邮箱地址,格式必须满足(^$|^[\\w-+]+(\\.[\\w-+]+)*@[\\w-]+(\\.[\\w-]+)*(\\.[\\w-]{1,})$)
+        邮箱地址,格式必须满足(^$|^[\\\\w-+]+(\\\\.[\\\\w-+]+)*@[\\\\w-]+(\\\\.[\\\\w-]+)*(\\\\.[\\\\w-]{1,})$)。
 
         :return: The email of this CorpBasicDTO.
         :rtype: str
@@ -239,7 +239,7 @@ class CorpBasicDTO:
     def email(self, email):
         """Sets the email of this CorpBasicDTO.
 
-        邮箱地址,格式必须满足(^$|^[\\w-+]+(\\.[\\w-+]+)*@[\\w-]+(\\.[\\w-]+)*(\\.[\\w-]{1,})$)
+        邮箱地址,格式必须满足(^$|^[\\\\w-+]+(\\\\.[\\\\w-+]+)*@[\\\\w-]+(\\\\.[\\\\w-]+)*(\\\\.[\\\\w-]{1,})$)。
 
         :param email: The email of this CorpBasicDTO.
         :type email: str
@@ -250,7 +250,7 @@ class CorpBasicDTO:
     def address(self):
         """Gets the address of this CorpBasicDTO.
 
-        地址
+        地址。
 
         :return: The address of this CorpBasicDTO.
         :rtype: str
@@ -261,7 +261,7 @@ class CorpBasicDTO:
     def address(self, address):
         """Sets the address of this CorpBasicDTO.
 
-        地址
+        地址。
 
         :param address: The address of this CorpBasicDTO.
         :type address: str
@@ -272,7 +272,7 @@ class CorpBasicDTO:
     def description(self):
         """Gets the description of this CorpBasicDTO.
 
-        备注
+        备注。
 
         :return: The description of this CorpBasicDTO.
         :rtype: str
@@ -283,7 +283,7 @@ class CorpBasicDTO:
     def description(self, description):
         """Sets the description of this CorpBasicDTO.
 
-        备注
+        备注。
 
         :param description: The description of this CorpBasicDTO.
         :type description: str
@@ -294,7 +294,7 @@ class CorpBasicDTO:
     def sp_id(self):
         """Gets the sp_id of this CorpBasicDTO.
 
-        仅在查询时返回
+        企业归属的SP ID。仅在查询时返回。
 
         :return: The sp_id of this CorpBasicDTO.
         :rtype: str
@@ -305,7 +305,7 @@ class CorpBasicDTO:
     def sp_id(self, sp_id):
         """Sets the sp_id of this CorpBasicDTO.
 
-        仅在查询时返回
+        企业归属的SP ID。仅在查询时返回。
 
         :param sp_id: The sp_id of this CorpBasicDTO.
         :type sp_id: str
@@ -316,7 +316,7 @@ class CorpBasicDTO:
     def language(self):
         """Gets the language of this CorpBasicDTO.
 
-        企业提示音语言设置,zh-CN或en-US
+        企业提示音语言设置,zh-CN或en-US。
 
         :return: The language of this CorpBasicDTO.
         :rtype: str
@@ -327,7 +327,7 @@ class CorpBasicDTO:
     def language(self, language):
         """Sets the language of this CorpBasicDTO.
 
-        企业提示音语言设置,zh-CN或en-US
+        企业提示音语言设置,zh-CN或en-US。
 
         :param language: The language of this CorpBasicDTO.
         :type language: str
@@ -338,7 +338,7 @@ class CorpBasicDTO:
     def time_zone_id(self):
         """Gets the time_zone_id of this CorpBasicDTO.
 
-        时区Id设置,例如北京东8区timeZoneId值为56,时区Id和时区的对应关系请参考: https://support.huaweicloud.com/api-meeting/meeting_21_0110.html
+        时区Id设置,例如北京东8区timeZoneId值为56,时区Id和时区的对应关系请参考: [[时区表](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html)](tag:hws)[[时区表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html)](tag:hk) 。 
 
         :return: The time_zone_id of this CorpBasicDTO.
         :rtype: str
@@ -349,7 +349,7 @@ class CorpBasicDTO:
     def time_zone_id(self, time_zone_id):
         """Sets the time_zone_id of this CorpBasicDTO.
 
-        时区Id设置,例如北京东8区timeZoneId值为56,时区Id和时区的对应关系请参考: https://support.huaweicloud.com/api-meeting/meeting_21_0110.html
+        时区Id设置,例如北京东8区timeZoneId值为56,时区Id和时区的对应关系请参考: [[时区表](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html)](tag:hws)[[时区表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html)](tag:hk) 。 
 
         :param time_zone_id: The time_zone_id of this CorpBasicDTO.
         :type time_zone_id: str

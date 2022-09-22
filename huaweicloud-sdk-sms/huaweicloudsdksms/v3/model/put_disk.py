@@ -41,7 +41,7 @@ class PutDisk:
 
         :param need_migration: 磁盘名称
         :type need_migration: bool
-        :param id: 磁盘id
+        :param id: 磁盘ID
         :type id: str
         :param adjust_size: 调整大小
         :type adjust_size: int
@@ -90,7 +90,7 @@ class PutDisk:
     def id(self):
         """Gets the id of this PutDisk.
 
-        磁盘id
+        磁盘ID
 
         :return: The id of this PutDisk.
         :rtype: str
@@ -101,7 +101,7 @@ class PutDisk:
     def id(self, id):
         """Sets the id of this PutDisk.
 
-        磁盘id
+        磁盘ID
 
         :param id: The id of this PutDisk.
         :type id: str

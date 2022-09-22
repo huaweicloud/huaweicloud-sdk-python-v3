@@ -1090,6 +1090,66 @@ class DdmClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def reset_administrator(self, request):
+        """DDM管理员账号密码管理
+
+        首次调用时新建DDM管理员帐号并设置密码。后续调用时仅更新管理员密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ResetAdministrator
+        :type request: :class:`huaweicloudsdkddm.v1.ResetAdministratorRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ResetAdministratorResponse`
+        """
+        return self.reset_administrator_with_http_info(request)
+
+    def reset_administrator_with_http_info(self, request):
+        all_params = ['instance_id', 'admin_user_info_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/admin-user',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResetAdministratorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def reset_user_password(self, request):
         """重置DDM账号密码
 
@@ -1147,6 +1207,66 @@ class DdmClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ResetUserPasswordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def resize_flavor(self, request):
+        """变更DDM实例规格
+
+        变更DDM实例规格。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ResizeFlavor
+        :type request: :class:`huaweicloudsdkddm.v1.ResizeFlavorRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ResizeFlavorResponse`
+        """
+        return self.resize_flavor_with_http_info(request)
+
+    def resize_flavor_with_http_info(self, request):
+        all_params = ['instance_id', 'resize_flavor_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/flavor',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ResizeFlavorResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1871,6 +1991,64 @@ class DdmClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateUserResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def validate_weak_password(self, request):
+        """弱密码校验
+
+        弱密码校验
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ValidateWeakPassword
+        :type request: :class:`huaweicloudsdkddm.v1.ValidateWeakPasswordRequest`
+        :rtype: :class:`huaweicloudsdkddm.v1.ValidateWeakPasswordResponse`
+        """
+        return self.validate_weak_password_with_http_info(request)
+
+    def validate_weak_password_with_http_info(self, request):
+        all_params = ['weak_password_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/weak-password-verification',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ValidateWeakPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

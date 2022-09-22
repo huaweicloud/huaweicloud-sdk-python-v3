@@ -33,7 +33,7 @@ class AddCorpResDTO:
 
         The model defined in huaweicloud sdk
 
-        :param resource: 企业待添加的资源列表
+        :param resource: 企业待添加的资源列表。
         :type resource: list[:class:`huaweicloudsdkmeeting.v1.ResourceDTO`]
         """
         
@@ -49,7 +49,7 @@ class AddCorpResDTO:
     def resource(self):
         """Gets the resource of this AddCorpResDTO.
 
-        企业待添加的资源列表
+        企业待添加的资源列表。
 
         :return: The resource of this AddCorpResDTO.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.ResourceDTO`]
@@ -60,7 +60,7 @@ class AddCorpResDTO:
     def resource(self, resource):
         """Sets the resource of this AddCorpResDTO.
 
-        企业待添加的资源列表
+        企业待添加的资源列表。
 
         :param resource: The resource of this AddCorpResDTO.
         :type resource: list[:class:`huaweicloudsdkmeeting.v1.ResourceDTO`]

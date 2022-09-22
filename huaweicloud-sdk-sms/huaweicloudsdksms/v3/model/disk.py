@@ -51,9 +51,9 @@ class Disk:
 
         :param name: 磁盘名称
         :type name: str
-        :param partition_style: 磁盘的分区类型，添加源端时源端磁盘必选
+        :param partition_style: 磁盘的分区类型，添加源端时源端磁盘必选 MBR：mbr格式 GPT：gpt格式
         :type partition_style: str
-        :param device_use: 磁盘类型
+        :param device_use: 磁盘类型 BOOT：BOOT设备 OS：系统设备
         :type device_use: str
         :param size: 磁盘总大小，以字节为单位
         :type size: int
@@ -122,7 +122,7 @@ class Disk:
     def partition_style(self):
         """Gets the partition_style of this Disk.
 
-        磁盘的分区类型，添加源端时源端磁盘必选
+        磁盘的分区类型，添加源端时源端磁盘必选 MBR：mbr格式 GPT：gpt格式
 
         :return: The partition_style of this Disk.
         :rtype: str
@@ -133,7 +133,7 @@ class Disk:
     def partition_style(self, partition_style):
         """Sets the partition_style of this Disk.
 
-        磁盘的分区类型，添加源端时源端磁盘必选
+        磁盘的分区类型，添加源端时源端磁盘必选 MBR：mbr格式 GPT：gpt格式
 
         :param partition_style: The partition_style of this Disk.
         :type partition_style: str
@@ -144,7 +144,7 @@ class Disk:
     def device_use(self):
         """Gets the device_use of this Disk.
 
-        磁盘类型
+        磁盘类型 BOOT：BOOT设备 OS：系统设备
 
         :return: The device_use of this Disk.
         :rtype: str
@@ -155,7 +155,7 @@ class Disk:
     def device_use(self, device_use):
         """Sets the device_use of this Disk.
 
-        磁盘类型
+        磁盘类型 BOOT：BOOT设备 OS：系统设备
 
         :param device_use: The device_use of this Disk.
         :type device_use: str

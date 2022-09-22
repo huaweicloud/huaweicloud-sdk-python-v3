@@ -75,49 +75,49 @@ class CreateWebinarResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param conference_id: 会议ID。长度限制为32个字符。
+        :param conference_id: 网络研讨会ID。
         :type conference_id: str
-        :param corp_id: 企业id
+        :param corp_id: 企业ID。
         :type corp_id: str
-        :param subject: 主题
+        :param subject: 网络研讨会主题。
         :type subject: str
-        :param description: 描述
+        :param description: 网络研讨会描述。
         :type description: str
-        :param start_time: 开始时间
+        :param start_time: 网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
         :type start_time: str
-        :param duration: 时长，单位分钟
+        :param duration: 网络研讨会持续时长，单位分钟，取值范围[15,1440]。
         :type duration: int
-        :param time_zone_id: 时区ID
+        :param time_zone_id: 会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 &gt; * 举例：“timeZoneID”:\&quot;26\&quot;，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
         :type time_zone_id: int
         :param state: 
         :type state: :class:`huaweicloudsdkmeeting.v1.MeetingStatus`
-        :param scheduser_id: 会议预订者ID
+        :param scheduser_id: 网络研讨会预订者的用户UUID。
         :type scheduser_id: str
-        :param dept_name: 预订人部门
+        :param dept_name: 预订者部门命名。
         :type dept_name: str
-        :param scheduser_name: 会议预订者帐号名称。长度最大限制为96个字符。
+        :param scheduser_name: 预订者名称。
         :type scheduser_name: str
-        :param vmr_pkg_name: 网络研讨会资源名
+        :param vmr_pkg_name: 网络研讨会VMR名称。
         :type vmr_pkg_name: str
-        :param call_restriction: 入会范围开关
+        :param call_restriction: 入会范围开关。
         :type call_restriction: bool
-        :param scope: 主持人、嘉宾入会范围  0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户。
+        :param scope: 主持人、嘉宾入会范围。 * 0: 所有用户 * 2: 企业内用户 * 3: 被邀请用户 
         :type scope: int
-        :param audience_scope: 观众入会范围 0: 所有用户 2: 企业内用户和被邀请用户。
+        :param audience_scope: 观众入会范围。 * 0: 所有用户 * 2: 企业内用户 
         :type audience_scope: int
         :param chair_join_uri: 主持人入会地址。
         :type chair_join_uri: str
-        :param chair_passwd: 主持人密码。
+        :param chair_passwd: 主持人入会密码。
         :type chair_passwd: str
         :param guest_join_uri: 嘉宾入会地址。
         :type guest_join_uri: str
-        :param guest_passwd: 嘉宾密码。
+        :param guest_passwd: 嘉宾入会密码。
         :type guest_passwd: str
         :param audience_join_uri: 观众入会地址。
         :type audience_join_uri: str
-        :param audience_passwd: 观众密码。
+        :param audience_passwd: 观众入会密码。
         :type audience_passwd: str
-        :param attendees: 
+        :param attendees: 与会嘉宾名称列表。
         :type attendees: list[str]
         """
         
@@ -196,7 +196,7 @@ class CreateWebinarResponse(SdkResponse):
     def conference_id(self):
         """Gets the conference_id of this CreateWebinarResponse.
 
-        会议ID。长度限制为32个字符。
+        网络研讨会ID。
 
         :return: The conference_id of this CreateWebinarResponse.
         :rtype: str
@@ -207,7 +207,7 @@ class CreateWebinarResponse(SdkResponse):
     def conference_id(self, conference_id):
         """Sets the conference_id of this CreateWebinarResponse.
 
-        会议ID。长度限制为32个字符。
+        网络研讨会ID。
 
         :param conference_id: The conference_id of this CreateWebinarResponse.
         :type conference_id: str
@@ -218,7 +218,7 @@ class CreateWebinarResponse(SdkResponse):
     def corp_id(self):
         """Gets the corp_id of this CreateWebinarResponse.
 
-        企业id
+        企业ID。
 
         :return: The corp_id of this CreateWebinarResponse.
         :rtype: str
@@ -229,7 +229,7 @@ class CreateWebinarResponse(SdkResponse):
     def corp_id(self, corp_id):
         """Sets the corp_id of this CreateWebinarResponse.
 
-        企业id
+        企业ID。
 
         :param corp_id: The corp_id of this CreateWebinarResponse.
         :type corp_id: str
@@ -240,7 +240,7 @@ class CreateWebinarResponse(SdkResponse):
     def subject(self):
         """Gets the subject of this CreateWebinarResponse.
 
-        主题
+        网络研讨会主题。
 
         :return: The subject of this CreateWebinarResponse.
         :rtype: str
@@ -251,7 +251,7 @@ class CreateWebinarResponse(SdkResponse):
     def subject(self, subject):
         """Sets the subject of this CreateWebinarResponse.
 
-        主题
+        网络研讨会主题。
 
         :param subject: The subject of this CreateWebinarResponse.
         :type subject: str
@@ -262,7 +262,7 @@ class CreateWebinarResponse(SdkResponse):
     def description(self):
         """Gets the description of this CreateWebinarResponse.
 
-        描述
+        网络研讨会描述。
 
         :return: The description of this CreateWebinarResponse.
         :rtype: str
@@ -273,7 +273,7 @@ class CreateWebinarResponse(SdkResponse):
     def description(self, description):
         """Sets the description of this CreateWebinarResponse.
 
-        描述
+        网络研讨会描述。
 
         :param description: The description of this CreateWebinarResponse.
         :type description: str
@@ -284,7 +284,7 @@ class CreateWebinarResponse(SdkResponse):
     def start_time(self):
         """Gets the start_time of this CreateWebinarResponse.
 
-        开始时间
+        网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :return: The start_time of this CreateWebinarResponse.
         :rtype: str
@@ -295,7 +295,7 @@ class CreateWebinarResponse(SdkResponse):
     def start_time(self, start_time):
         """Sets the start_time of this CreateWebinarResponse.
 
-        开始时间
+        网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :param start_time: The start_time of this CreateWebinarResponse.
         :type start_time: str
@@ -306,7 +306,7 @@ class CreateWebinarResponse(SdkResponse):
     def duration(self):
         """Gets the duration of this CreateWebinarResponse.
 
-        时长，单位分钟
+        网络研讨会持续时长，单位分钟，取值范围[15,1440]。
 
         :return: The duration of this CreateWebinarResponse.
         :rtype: int
@@ -317,7 +317,7 @@ class CreateWebinarResponse(SdkResponse):
     def duration(self, duration):
         """Sets the duration of this CreateWebinarResponse.
 
-        时长，单位分钟
+        网络研讨会持续时长，单位分钟，取值范围[15,1440]。
 
         :param duration: The duration of this CreateWebinarResponse.
         :type duration: int
@@ -328,7 +328,7 @@ class CreateWebinarResponse(SdkResponse):
     def time_zone_id(self):
         """Gets the time_zone_id of this CreateWebinarResponse.
 
-        时区ID
+        会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
         :return: The time_zone_id of this CreateWebinarResponse.
         :rtype: int
@@ -339,7 +339,7 @@ class CreateWebinarResponse(SdkResponse):
     def time_zone_id(self, time_zone_id):
         """Sets the time_zone_id of this CreateWebinarResponse.
 
-        时区ID
+        会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
         :param time_zone_id: The time_zone_id of this CreateWebinarResponse.
         :type time_zone_id: int
@@ -370,7 +370,7 @@ class CreateWebinarResponse(SdkResponse):
     def scheduser_id(self):
         """Gets the scheduser_id of this CreateWebinarResponse.
 
-        会议预订者ID
+        网络研讨会预订者的用户UUID。
 
         :return: The scheduser_id of this CreateWebinarResponse.
         :rtype: str
@@ -381,7 +381,7 @@ class CreateWebinarResponse(SdkResponse):
     def scheduser_id(self, scheduser_id):
         """Sets the scheduser_id of this CreateWebinarResponse.
 
-        会议预订者ID
+        网络研讨会预订者的用户UUID。
 
         :param scheduser_id: The scheduser_id of this CreateWebinarResponse.
         :type scheduser_id: str
@@ -392,7 +392,7 @@ class CreateWebinarResponse(SdkResponse):
     def dept_name(self):
         """Gets the dept_name of this CreateWebinarResponse.
 
-        预订人部门
+        预订者部门命名。
 
         :return: The dept_name of this CreateWebinarResponse.
         :rtype: str
@@ -403,7 +403,7 @@ class CreateWebinarResponse(SdkResponse):
     def dept_name(self, dept_name):
         """Sets the dept_name of this CreateWebinarResponse.
 
-        预订人部门
+        预订者部门命名。
 
         :param dept_name: The dept_name of this CreateWebinarResponse.
         :type dept_name: str
@@ -414,7 +414,7 @@ class CreateWebinarResponse(SdkResponse):
     def scheduser_name(self):
         """Gets the scheduser_name of this CreateWebinarResponse.
 
-        会议预订者帐号名称。长度最大限制为96个字符。
+        预订者名称。
 
         :return: The scheduser_name of this CreateWebinarResponse.
         :rtype: str
@@ -425,7 +425,7 @@ class CreateWebinarResponse(SdkResponse):
     def scheduser_name(self, scheduser_name):
         """Sets the scheduser_name of this CreateWebinarResponse.
 
-        会议预订者帐号名称。长度最大限制为96个字符。
+        预订者名称。
 
         :param scheduser_name: The scheduser_name of this CreateWebinarResponse.
         :type scheduser_name: str
@@ -436,7 +436,7 @@ class CreateWebinarResponse(SdkResponse):
     def vmr_pkg_name(self):
         """Gets the vmr_pkg_name of this CreateWebinarResponse.
 
-        网络研讨会资源名
+        网络研讨会VMR名称。
 
         :return: The vmr_pkg_name of this CreateWebinarResponse.
         :rtype: str
@@ -447,7 +447,7 @@ class CreateWebinarResponse(SdkResponse):
     def vmr_pkg_name(self, vmr_pkg_name):
         """Sets the vmr_pkg_name of this CreateWebinarResponse.
 
-        网络研讨会资源名
+        网络研讨会VMR名称。
 
         :param vmr_pkg_name: The vmr_pkg_name of this CreateWebinarResponse.
         :type vmr_pkg_name: str
@@ -458,7 +458,7 @@ class CreateWebinarResponse(SdkResponse):
     def call_restriction(self):
         """Gets the call_restriction of this CreateWebinarResponse.
 
-        入会范围开关
+        入会范围开关。
 
         :return: The call_restriction of this CreateWebinarResponse.
         :rtype: bool
@@ -469,7 +469,7 @@ class CreateWebinarResponse(SdkResponse):
     def call_restriction(self, call_restriction):
         """Sets the call_restriction of this CreateWebinarResponse.
 
-        入会范围开关
+        入会范围开关。
 
         :param call_restriction: The call_restriction of this CreateWebinarResponse.
         :type call_restriction: bool
@@ -480,7 +480,7 @@ class CreateWebinarResponse(SdkResponse):
     def scope(self):
         """Gets the scope of this CreateWebinarResponse.
 
-        主持人、嘉宾入会范围  0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户。
+        主持人、嘉宾入会范围。 * 0: 所有用户 * 2: 企业内用户 * 3: 被邀请用户 
 
         :return: The scope of this CreateWebinarResponse.
         :rtype: int
@@ -491,7 +491,7 @@ class CreateWebinarResponse(SdkResponse):
     def scope(self, scope):
         """Sets the scope of this CreateWebinarResponse.
 
-        主持人、嘉宾入会范围  0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户。
+        主持人、嘉宾入会范围。 * 0: 所有用户 * 2: 企业内用户 * 3: 被邀请用户 
 
         :param scope: The scope of this CreateWebinarResponse.
         :type scope: int
@@ -502,7 +502,7 @@ class CreateWebinarResponse(SdkResponse):
     def audience_scope(self):
         """Gets the audience_scope of this CreateWebinarResponse.
 
-        观众入会范围 0: 所有用户 2: 企业内用户和被邀请用户。
+        观众入会范围。 * 0: 所有用户 * 2: 企业内用户 
 
         :return: The audience_scope of this CreateWebinarResponse.
         :rtype: int
@@ -513,7 +513,7 @@ class CreateWebinarResponse(SdkResponse):
     def audience_scope(self, audience_scope):
         """Sets the audience_scope of this CreateWebinarResponse.
 
-        观众入会范围 0: 所有用户 2: 企业内用户和被邀请用户。
+        观众入会范围。 * 0: 所有用户 * 2: 企业内用户 
 
         :param audience_scope: The audience_scope of this CreateWebinarResponse.
         :type audience_scope: int
@@ -546,7 +546,7 @@ class CreateWebinarResponse(SdkResponse):
     def chair_passwd(self):
         """Gets the chair_passwd of this CreateWebinarResponse.
 
-        主持人密码。
+        主持人入会密码。
 
         :return: The chair_passwd of this CreateWebinarResponse.
         :rtype: str
@@ -557,7 +557,7 @@ class CreateWebinarResponse(SdkResponse):
     def chair_passwd(self, chair_passwd):
         """Sets the chair_passwd of this CreateWebinarResponse.
 
-        主持人密码。
+        主持人入会密码。
 
         :param chair_passwd: The chair_passwd of this CreateWebinarResponse.
         :type chair_passwd: str
@@ -590,7 +590,7 @@ class CreateWebinarResponse(SdkResponse):
     def guest_passwd(self):
         """Gets the guest_passwd of this CreateWebinarResponse.
 
-        嘉宾密码。
+        嘉宾入会密码。
 
         :return: The guest_passwd of this CreateWebinarResponse.
         :rtype: str
@@ -601,7 +601,7 @@ class CreateWebinarResponse(SdkResponse):
     def guest_passwd(self, guest_passwd):
         """Sets the guest_passwd of this CreateWebinarResponse.
 
-        嘉宾密码。
+        嘉宾入会密码。
 
         :param guest_passwd: The guest_passwd of this CreateWebinarResponse.
         :type guest_passwd: str
@@ -634,7 +634,7 @@ class CreateWebinarResponse(SdkResponse):
     def audience_passwd(self):
         """Gets the audience_passwd of this CreateWebinarResponse.
 
-        观众密码。
+        观众入会密码。
 
         :return: The audience_passwd of this CreateWebinarResponse.
         :rtype: str
@@ -645,7 +645,7 @@ class CreateWebinarResponse(SdkResponse):
     def audience_passwd(self, audience_passwd):
         """Sets the audience_passwd of this CreateWebinarResponse.
 
-        观众密码。
+        观众入会密码。
 
         :param audience_passwd: The audience_passwd of this CreateWebinarResponse.
         :type audience_passwd: str
@@ -656,6 +656,7 @@ class CreateWebinarResponse(SdkResponse):
     def attendees(self):
         """Gets the attendees of this CreateWebinarResponse.
 
+        与会嘉宾名称列表。
 
         :return: The attendees of this CreateWebinarResponse.
         :rtype: list[str]
@@ -666,6 +667,7 @@ class CreateWebinarResponse(SdkResponse):
     def attendees(self, attendees):
         """Sets the attendees of this CreateWebinarResponse.
 
+        与会嘉宾名称列表。
 
         :param attendees: The attendees of this CreateWebinarResponse.
         :type attendees: list[str]

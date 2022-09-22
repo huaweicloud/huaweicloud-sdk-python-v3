@@ -23,16 +23,16 @@ class ListTagsV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'responses': 'list[str]'
+        'tags': 'list[str]'
     }
 
     attribute_map = {
         'size': 'size',
         'total': 'total',
-        'responses': 'responses'
+        'tags': 'tags'
     }
 
-    def __init__(self, size=None, total=None, responses=None):
+    def __init__(self, size=None, total=None, tags=None):
         """ListTagsV2Response
 
         The model defined in huaweicloud sdk
@@ -41,21 +41,21 @@ class ListTagsV2Response(SdkResponse):
         :type size: int
         :param total: 满足条件的记录数
         :type total: int
-        :param responses: 标签列表
-        :type responses: list[str]
+        :param tags: 标签列表
+        :type tags: list[str]
         """
         
         super(ListTagsV2Response, self).__init__()
 
         self._size = None
         self._total = None
-        self._responses = None
+        self._tags = None
         self.discriminator = None
 
         self.size = size
         self.total = total
-        if responses is not None:
-            self.responses = responses
+        if tags is not None:
+            self.tags = tags
 
     @property
     def size(self):
@@ -102,26 +102,26 @@ class ListTagsV2Response(SdkResponse):
         self._total = total
 
     @property
-    def responses(self):
-        """Gets the responses of this ListTagsV2Response.
+    def tags(self):
+        """Gets the tags of this ListTagsV2Response.
 
         标签列表
 
-        :return: The responses of this ListTagsV2Response.
+        :return: The tags of this ListTagsV2Response.
         :rtype: list[str]
         """
-        return self._responses
+        return self._tags
 
-    @responses.setter
-    def responses(self, responses):
-        """Sets the responses of this ListTagsV2Response.
+    @tags.setter
+    def tags(self, tags):
+        """Sets the tags of this ListTagsV2Response.
 
         标签列表
 
-        :param responses: The responses of this ListTagsV2Response.
-        :type responses: list[str]
+        :param tags: The tags of this ListTagsV2Response.
+        :type tags: list[str]
         """
-        self._responses = responses
+        self._tags = tags
 
     def to_dict(self):
         """Returns the model properties as a dict"""

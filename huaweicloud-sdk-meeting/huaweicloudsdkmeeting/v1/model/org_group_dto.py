@@ -35,9 +35,9 @@ class OrgGroupDTO:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 分组Id
+        :param group_id: 分组Id。
         :type group_id: str
-        :param group_name: 分组名称
+        :param group_name: 分组名称。
         :type group_name: str
         """
         
@@ -56,7 +56,7 @@ class OrgGroupDTO:
     def group_id(self):
         """Gets the group_id of this OrgGroupDTO.
 
-        分组Id
+        分组Id。
 
         :return: The group_id of this OrgGroupDTO.
         :rtype: str
@@ -67,7 +67,7 @@ class OrgGroupDTO:
     def group_id(self, group_id):
         """Sets the group_id of this OrgGroupDTO.
 
-        分组Id
+        分组Id。
 
         :param group_id: The group_id of this OrgGroupDTO.
         :type group_id: str
@@ -78,7 +78,7 @@ class OrgGroupDTO:
     def group_name(self):
         """Gets the group_name of this OrgGroupDTO.
 
-        分组名称
+        分组名称。
 
         :return: The group_name of this OrgGroupDTO.
         :rtype: str
@@ -89,7 +89,7 @@ class OrgGroupDTO:
     def group_name(self, group_name):
         """Sets the group_name of this OrgGroupDTO.
 
-        分组名称
+        分组名称。
 
         :param group_name: The group_name of this OrgGroupDTO.
         :type group_name: str

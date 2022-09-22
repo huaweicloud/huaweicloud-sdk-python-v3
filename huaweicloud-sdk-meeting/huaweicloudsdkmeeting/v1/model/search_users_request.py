@@ -59,33 +59,33 @@ class SearchUsersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param offset: 查询偏移量,若超过最大数量，则返回最后一页
+        :param offset: 查询偏移量,若超过最大数量，则返回最后一页。
         :type offset: int
-        :param limit: 查询数量 默认值：0 
+        :param limit: 查询数量。 默认值：10。 
         :type limit: int
-        :param search_key: 搜索条件，支持姓名、手机、邮箱、账号、第三方账号模糊搜索。
+        :param search_key: 搜索条件，支持名称、手机、邮箱、帐号、第三方帐号模糊搜索。
         :type search_key: str
-        :param sort_field: 排序字段名称  约束 - 长度范围为0到64个字符  支持的取值 - userType - adminType - ldapAccount - deptCode - status - sortLevel
+        :param sort_field: 排序字段名称 支持的取值： - userType - adminType - ldapAccount - deptCode - status - sortLevel
         :type sort_field: str
-        :param is_asc: 是否按升序排序
+        :param is_asc: 是否按升序排序。
         :type is_asc: bool
         :param dept_code: 部门编码，不带则查询所有。
         :type dept_code: str
-        :param enable_sub_dept: 是否查询子部门 默认值: true 
+        :param enable_sub_dept: 是否查询子部门。 默认值: true 
         :type enable_sub_dept: bool
-        :param admin_type: 根据管理员类型查询 * 1：普通管理员； * 2：非管理员。 
+        :param admin_type: 根据管理员类型查询。 * 1：普通管理员 * 2：非管理员 
         :type admin_type: int
-        :param enable_room: 是否开启智能协同白板功能功能位，不带则搜索所有。
+        :param enable_room: 是否开启智能协同白板功能功能位，不带则搜索所有。 &gt; 该参数将废弃，请勿使用。 
         :type enable_room: bool
-        :param user_type: 用户类型 * 2：普通用户； * 12：智慧屏用户； * 13：ideaHub用户； * 若不携带，则默认查询普通用户。 
+        :param user_type: 用户类型。默认2。 * 2：普通用户 * 12：智慧屏用户 * 13：ideaHub用户 * 14: SmartRooms用户 
         :type user_type: list[int]
-        :param status: 用户状态 * 0：正常； * 1：停用。不带则查询所有 
+        :param status: 用户状态。不带则查询所有。 * 0：正常 * 1：停用。 
         :type status: int
-        :param contains_un_active: 是否查询未激活的终端 默认值: false 
+        :param contains_un_active: 是否查询未激活的终端。 默认值: false 
         :type contains_un_active: bool
         """
         
@@ -140,7 +140,7 @@ class SearchUsersRequest:
     def x_request_id(self):
         """Gets the x_request_id of this SearchUsersRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this SearchUsersRequest.
         :rtype: str
@@ -151,7 +151,7 @@ class SearchUsersRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this SearchUsersRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this SearchUsersRequest.
         :type x_request_id: str
@@ -162,7 +162,7 @@ class SearchUsersRequest:
     def accept_language(self):
         """Gets the accept_language of this SearchUsersRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this SearchUsersRequest.
         :rtype: str
@@ -173,7 +173,7 @@ class SearchUsersRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this SearchUsersRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this SearchUsersRequest.
         :type accept_language: str
@@ -184,7 +184,7 @@ class SearchUsersRequest:
     def offset(self):
         """Gets the offset of this SearchUsersRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页
+        查询偏移量,若超过最大数量，则返回最后一页。
 
         :return: The offset of this SearchUsersRequest.
         :rtype: int
@@ -195,7 +195,7 @@ class SearchUsersRequest:
     def offset(self, offset):
         """Sets the offset of this SearchUsersRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页
+        查询偏移量,若超过最大数量，则返回最后一页。
 
         :param offset: The offset of this SearchUsersRequest.
         :type offset: int
@@ -206,7 +206,7 @@ class SearchUsersRequest:
     def limit(self):
         """Gets the limit of this SearchUsersRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :return: The limit of this SearchUsersRequest.
         :rtype: int
@@ -217,7 +217,7 @@ class SearchUsersRequest:
     def limit(self, limit):
         """Sets the limit of this SearchUsersRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :param limit: The limit of this SearchUsersRequest.
         :type limit: int
@@ -228,7 +228,7 @@ class SearchUsersRequest:
     def search_key(self):
         """Gets the search_key of this SearchUsersRequest.
 
-        搜索条件，支持姓名、手机、邮箱、账号、第三方账号模糊搜索。
+        搜索条件，支持名称、手机、邮箱、帐号、第三方帐号模糊搜索。
 
         :return: The search_key of this SearchUsersRequest.
         :rtype: str
@@ -239,7 +239,7 @@ class SearchUsersRequest:
     def search_key(self, search_key):
         """Sets the search_key of this SearchUsersRequest.
 
-        搜索条件，支持姓名、手机、邮箱、账号、第三方账号模糊搜索。
+        搜索条件，支持名称、手机、邮箱、帐号、第三方帐号模糊搜索。
 
         :param search_key: The search_key of this SearchUsersRequest.
         :type search_key: str
@@ -250,7 +250,7 @@ class SearchUsersRequest:
     def sort_field(self):
         """Gets the sort_field of this SearchUsersRequest.
 
-        排序字段名称  约束 - 长度范围为0到64个字符  支持的取值 - userType - adminType - ldapAccount - deptCode - status - sortLevel
+        排序字段名称 支持的取值： - userType - adminType - ldapAccount - deptCode - status - sortLevel
 
         :return: The sort_field of this SearchUsersRequest.
         :rtype: str
@@ -261,7 +261,7 @@ class SearchUsersRequest:
     def sort_field(self, sort_field):
         """Sets the sort_field of this SearchUsersRequest.
 
-        排序字段名称  约束 - 长度范围为0到64个字符  支持的取值 - userType - adminType - ldapAccount - deptCode - status - sortLevel
+        排序字段名称 支持的取值： - userType - adminType - ldapAccount - deptCode - status - sortLevel
 
         :param sort_field: The sort_field of this SearchUsersRequest.
         :type sort_field: str
@@ -272,7 +272,7 @@ class SearchUsersRequest:
     def is_asc(self):
         """Gets the is_asc of this SearchUsersRequest.
 
-        是否按升序排序
+        是否按升序排序。
 
         :return: The is_asc of this SearchUsersRequest.
         :rtype: bool
@@ -283,7 +283,7 @@ class SearchUsersRequest:
     def is_asc(self, is_asc):
         """Sets the is_asc of this SearchUsersRequest.
 
-        是否按升序排序
+        是否按升序排序。
 
         :param is_asc: The is_asc of this SearchUsersRequest.
         :type is_asc: bool
@@ -316,7 +316,7 @@ class SearchUsersRequest:
     def enable_sub_dept(self):
         """Gets the enable_sub_dept of this SearchUsersRequest.
 
-        是否查询子部门 默认值: true 
+        是否查询子部门。 默认值: true 
 
         :return: The enable_sub_dept of this SearchUsersRequest.
         :rtype: bool
@@ -327,7 +327,7 @@ class SearchUsersRequest:
     def enable_sub_dept(self, enable_sub_dept):
         """Sets the enable_sub_dept of this SearchUsersRequest.
 
-        是否查询子部门 默认值: true 
+        是否查询子部门。 默认值: true 
 
         :param enable_sub_dept: The enable_sub_dept of this SearchUsersRequest.
         :type enable_sub_dept: bool
@@ -338,7 +338,7 @@ class SearchUsersRequest:
     def admin_type(self):
         """Gets the admin_type of this SearchUsersRequest.
 
-        根据管理员类型查询 * 1：普通管理员； * 2：非管理员。 
+        根据管理员类型查询。 * 1：普通管理员 * 2：非管理员 
 
         :return: The admin_type of this SearchUsersRequest.
         :rtype: int
@@ -349,7 +349,7 @@ class SearchUsersRequest:
     def admin_type(self, admin_type):
         """Sets the admin_type of this SearchUsersRequest.
 
-        根据管理员类型查询 * 1：普通管理员； * 2：非管理员。 
+        根据管理员类型查询。 * 1：普通管理员 * 2：非管理员 
 
         :param admin_type: The admin_type of this SearchUsersRequest.
         :type admin_type: int
@@ -360,7 +360,7 @@ class SearchUsersRequest:
     def enable_room(self):
         """Gets the enable_room of this SearchUsersRequest.
 
-        是否开启智能协同白板功能功能位，不带则搜索所有。
+        是否开启智能协同白板功能功能位，不带则搜索所有。 > 该参数将废弃，请勿使用。 
 
         :return: The enable_room of this SearchUsersRequest.
         :rtype: bool
@@ -371,7 +371,7 @@ class SearchUsersRequest:
     def enable_room(self, enable_room):
         """Sets the enable_room of this SearchUsersRequest.
 
-        是否开启智能协同白板功能功能位，不带则搜索所有。
+        是否开启智能协同白板功能功能位，不带则搜索所有。 > 该参数将废弃，请勿使用。 
 
         :param enable_room: The enable_room of this SearchUsersRequest.
         :type enable_room: bool
@@ -382,7 +382,7 @@ class SearchUsersRequest:
     def user_type(self):
         """Gets the user_type of this SearchUsersRequest.
 
-        用户类型 * 2：普通用户； * 12：智慧屏用户； * 13：ideaHub用户； * 若不携带，则默认查询普通用户。 
+        用户类型。默认2。 * 2：普通用户 * 12：智慧屏用户 * 13：ideaHub用户 * 14: SmartRooms用户 
 
         :return: The user_type of this SearchUsersRequest.
         :rtype: list[int]
@@ -393,7 +393,7 @@ class SearchUsersRequest:
     def user_type(self, user_type):
         """Sets the user_type of this SearchUsersRequest.
 
-        用户类型 * 2：普通用户； * 12：智慧屏用户； * 13：ideaHub用户； * 若不携带，则默认查询普通用户。 
+        用户类型。默认2。 * 2：普通用户 * 12：智慧屏用户 * 13：ideaHub用户 * 14: SmartRooms用户 
 
         :param user_type: The user_type of this SearchUsersRequest.
         :type user_type: list[int]
@@ -404,7 +404,7 @@ class SearchUsersRequest:
     def status(self):
         """Gets the status of this SearchUsersRequest.
 
-        用户状态 * 0：正常； * 1：停用。不带则查询所有 
+        用户状态。不带则查询所有。 * 0：正常 * 1：停用。 
 
         :return: The status of this SearchUsersRequest.
         :rtype: int
@@ -415,7 +415,7 @@ class SearchUsersRequest:
     def status(self, status):
         """Sets the status of this SearchUsersRequest.
 
-        用户状态 * 0：正常； * 1：停用。不带则查询所有 
+        用户状态。不带则查询所有。 * 0：正常 * 1：停用。 
 
         :param status: The status of this SearchUsersRequest.
         :type status: int
@@ -426,7 +426,7 @@ class SearchUsersRequest:
     def contains_un_active(self):
         """Gets the contains_un_active of this SearchUsersRequest.
 
-        是否查询未激活的终端 默认值: false 
+        是否查询未激活的终端。 默认值: false 
 
         :return: The contains_un_active of this SearchUsersRequest.
         :rtype: bool
@@ -437,7 +437,7 @@ class SearchUsersRequest:
     def contains_un_active(self, contains_un_active):
         """Sets the contains_un_active of this SearchUsersRequest.
 
-        是否查询未激活的终端 默认值: false 
+        是否查询未激活的终端。 默认值: false 
 
         :param contains_un_active: The contains_un_active of this SearchUsersRequest.
         :type contains_un_active: bool

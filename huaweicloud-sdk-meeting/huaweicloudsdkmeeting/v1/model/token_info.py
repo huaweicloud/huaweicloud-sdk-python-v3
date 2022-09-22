@@ -53,27 +53,27 @@ class TokenInfo:
 
         The model defined in huaweicloud sdk
 
-        :param token: 会控鉴权Token。
+        :param token: 会控Token。有效期半个小时。
         :type token: str
-        :param tmp_ws_token: websocket建链鉴权Token，成功时必带。
+        :param tmp_ws_token: 会控WebSocket建链鉴权Token。
         :type tmp_ws_token: str
-        :param ws_url: websocket建链URL。
+        :param ws_url: 会控WebSocket建链URL。
         :type ws_url: str
-        :param role: 会议中的角色 1：会议主席 0：普通与会者
+        :param role: 会议中的角色。 * 0 ：普通与会者 * 1 ：会议主持人 
         :type role: int
-        :param expire_time: 会话过期时间。UTC时间毫秒数。
+        :param expire_time: 会控Token过期时间戳（单位：毫秒）。
         :type expire_time: int
-        :param user_id: 会议预定人ID。
+        :param user_id: 会议预定者的用户UUID。
         :type user_id: str
         :param org_id: 会议所属企业ID。
         :type org_id: str
-        :param participant_id: 终端请求时，返回终端入会后会场ID。
+        :param participant_id: 终端请求时，返回终端入会后会场ID。 &gt; 该参数将废弃，请勿使用。 
         :type participant_id: str
-        :param conf_token_expire_time: 会控token失效的时间。（单位秒）
+        :param conf_token_expire_time: 会控Token有效时长（单位秒）。
         :type conf_token_expire_time: int
         :param vmr_current_conf_id: 云会议室会议的当前会议ID。
         :type vmr_current_conf_id: str
-        :param support_notify_type: websocket消息推送支持类型。
+        :param support_notify_type: 会控WebSocket消息推送支持类型。
         :type support_notify_type: list[str]
         """
         
@@ -119,7 +119,7 @@ class TokenInfo:
     def token(self):
         """Gets the token of this TokenInfo.
 
-        会控鉴权Token。
+        会控Token。有效期半个小时。
 
         :return: The token of this TokenInfo.
         :rtype: str
@@ -130,7 +130,7 @@ class TokenInfo:
     def token(self, token):
         """Sets the token of this TokenInfo.
 
-        会控鉴权Token。
+        会控Token。有效期半个小时。
 
         :param token: The token of this TokenInfo.
         :type token: str
@@ -141,7 +141,7 @@ class TokenInfo:
     def tmp_ws_token(self):
         """Gets the tmp_ws_token of this TokenInfo.
 
-        websocket建链鉴权Token，成功时必带。
+        会控WebSocket建链鉴权Token。
 
         :return: The tmp_ws_token of this TokenInfo.
         :rtype: str
@@ -152,7 +152,7 @@ class TokenInfo:
     def tmp_ws_token(self, tmp_ws_token):
         """Sets the tmp_ws_token of this TokenInfo.
 
-        websocket建链鉴权Token，成功时必带。
+        会控WebSocket建链鉴权Token。
 
         :param tmp_ws_token: The tmp_ws_token of this TokenInfo.
         :type tmp_ws_token: str
@@ -163,7 +163,7 @@ class TokenInfo:
     def ws_url(self):
         """Gets the ws_url of this TokenInfo.
 
-        websocket建链URL。
+        会控WebSocket建链URL。
 
         :return: The ws_url of this TokenInfo.
         :rtype: str
@@ -174,7 +174,7 @@ class TokenInfo:
     def ws_url(self, ws_url):
         """Sets the ws_url of this TokenInfo.
 
-        websocket建链URL。
+        会控WebSocket建链URL。
 
         :param ws_url: The ws_url of this TokenInfo.
         :type ws_url: str
@@ -185,7 +185,7 @@ class TokenInfo:
     def role(self):
         """Gets the role of this TokenInfo.
 
-        会议中的角色 1：会议主席 0：普通与会者
+        会议中的角色。 * 0 ：普通与会者 * 1 ：会议主持人 
 
         :return: The role of this TokenInfo.
         :rtype: int
@@ -196,7 +196,7 @@ class TokenInfo:
     def role(self, role):
         """Sets the role of this TokenInfo.
 
-        会议中的角色 1：会议主席 0：普通与会者
+        会议中的角色。 * 0 ：普通与会者 * 1 ：会议主持人 
 
         :param role: The role of this TokenInfo.
         :type role: int
@@ -207,7 +207,7 @@ class TokenInfo:
     def expire_time(self):
         """Gets the expire_time of this TokenInfo.
 
-        会话过期时间。UTC时间毫秒数。
+        会控Token过期时间戳（单位：毫秒）。
 
         :return: The expire_time of this TokenInfo.
         :rtype: int
@@ -218,7 +218,7 @@ class TokenInfo:
     def expire_time(self, expire_time):
         """Sets the expire_time of this TokenInfo.
 
-        会话过期时间。UTC时间毫秒数。
+        会控Token过期时间戳（单位：毫秒）。
 
         :param expire_time: The expire_time of this TokenInfo.
         :type expire_time: int
@@ -229,7 +229,7 @@ class TokenInfo:
     def user_id(self):
         """Gets the user_id of this TokenInfo.
 
-        会议预定人ID。
+        会议预定者的用户UUID。
 
         :return: The user_id of this TokenInfo.
         :rtype: str
@@ -240,7 +240,7 @@ class TokenInfo:
     def user_id(self, user_id):
         """Sets the user_id of this TokenInfo.
 
-        会议预定人ID。
+        会议预定者的用户UUID。
 
         :param user_id: The user_id of this TokenInfo.
         :type user_id: str
@@ -273,7 +273,7 @@ class TokenInfo:
     def participant_id(self):
         """Gets the participant_id of this TokenInfo.
 
-        终端请求时，返回终端入会后会场ID。
+        终端请求时，返回终端入会后会场ID。 > 该参数将废弃，请勿使用。 
 
         :return: The participant_id of this TokenInfo.
         :rtype: str
@@ -284,7 +284,7 @@ class TokenInfo:
     def participant_id(self, participant_id):
         """Sets the participant_id of this TokenInfo.
 
-        终端请求时，返回终端入会后会场ID。
+        终端请求时，返回终端入会后会场ID。 > 该参数将废弃，请勿使用。 
 
         :param participant_id: The participant_id of this TokenInfo.
         :type participant_id: str
@@ -295,7 +295,7 @@ class TokenInfo:
     def conf_token_expire_time(self):
         """Gets the conf_token_expire_time of this TokenInfo.
 
-        会控token失效的时间。（单位秒）
+        会控Token有效时长（单位秒）。
 
         :return: The conf_token_expire_time of this TokenInfo.
         :rtype: int
@@ -306,7 +306,7 @@ class TokenInfo:
     def conf_token_expire_time(self, conf_token_expire_time):
         """Sets the conf_token_expire_time of this TokenInfo.
 
-        会控token失效的时间。（单位秒）
+        会控Token有效时长（单位秒）。
 
         :param conf_token_expire_time: The conf_token_expire_time of this TokenInfo.
         :type conf_token_expire_time: int
@@ -339,7 +339,7 @@ class TokenInfo:
     def support_notify_type(self):
         """Gets the support_notify_type of this TokenInfo.
 
-        websocket消息推送支持类型。
+        会控WebSocket消息推送支持类型。
 
         :return: The support_notify_type of this TokenInfo.
         :rtype: list[str]
@@ -350,7 +350,7 @@ class TokenInfo:
     def support_notify_type(self, support_notify_type):
         """Sets the support_notify_type of this TokenInfo.
 
-        websocket消息推送支持类型。
+        会控WebSocket消息推送支持类型。
 
         :param support_notify_type: The support_notify_type of this TokenInfo.
         :type support_notify_type: list[str]

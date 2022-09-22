@@ -39,13 +39,13 @@ class ModAdminDTO:
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称
+        :param name: 名称。
         :type name: str
-        :param email: 邮箱
+        :param email: 邮箱地址。
         :type email: str
-        :param phone: 手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填
+        :param phone: 手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填。
         :type phone: str
-        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
         """
         
@@ -70,7 +70,7 @@ class ModAdminDTO:
     def name(self):
         """Gets the name of this ModAdminDTO.
 
-        名称
+        名称。
 
         :return: The name of this ModAdminDTO.
         :rtype: str
@@ -81,7 +81,7 @@ class ModAdminDTO:
     def name(self, name):
         """Sets the name of this ModAdminDTO.
 
-        名称
+        名称。
 
         :param name: The name of this ModAdminDTO.
         :type name: str
@@ -92,7 +92,7 @@ class ModAdminDTO:
     def email(self):
         """Gets the email of this ModAdminDTO.
 
-        邮箱
+        邮箱地址。
 
         :return: The email of this ModAdminDTO.
         :rtype: str
@@ -103,7 +103,7 @@ class ModAdminDTO:
     def email(self, email):
         """Sets the email of this ModAdminDTO.
 
-        邮箱
+        邮箱地址。
 
         :param email: The email of this ModAdminDTO.
         :type email: str
@@ -114,7 +114,7 @@ class ModAdminDTO:
     def phone(self):
         """Gets the phone of this ModAdminDTO.
 
-        手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填
+        手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填。
 
         :return: The phone of this ModAdminDTO.
         :rtype: str
@@ -125,7 +125,7 @@ class ModAdminDTO:
     def phone(self, phone):
         """Sets the phone of this ModAdminDTO.
 
-        手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填
+        手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填。
 
         :param phone: The phone of this ModAdminDTO.
         :type phone: str
@@ -136,7 +136,7 @@ class ModAdminDTO:
     def country(self):
         """Gets the country of this ModAdminDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this ModAdminDTO.
         :rtype: str
@@ -147,7 +147,7 @@ class ModAdminDTO:
     def country(self, country):
         """Sets the country of this ModAdminDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this ModAdminDTO.
         :type country: str

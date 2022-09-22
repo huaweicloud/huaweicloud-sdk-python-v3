@@ -33,7 +33,7 @@ class CreateWebSocketTokenResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param web_socket_token: websocket建链Token。
+        :param web_socket_token: WebSocket建链Token(有效期1分钟，且一次有效)。
         :type web_socket_token: str
         """
         
@@ -49,7 +49,7 @@ class CreateWebSocketTokenResponse(SdkResponse):
     def web_socket_token(self):
         """Gets the web_socket_token of this CreateWebSocketTokenResponse.
 
-        websocket建链Token。
+        WebSocket建链Token(有效期1分钟，且一次有效)。
 
         :return: The web_socket_token of this CreateWebSocketTokenResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class CreateWebSocketTokenResponse(SdkResponse):
     def web_socket_token(self, web_socket_token):
         """Sets the web_socket_token of this CreateWebSocketTokenResponse.
 
-        websocket建链Token。
+        WebSocket建链Token(有效期1分钟，且一次有效)。
 
         :param web_socket_token: The web_socket_token of this CreateWebSocketTokenResponse.
         :type web_socket_token: str

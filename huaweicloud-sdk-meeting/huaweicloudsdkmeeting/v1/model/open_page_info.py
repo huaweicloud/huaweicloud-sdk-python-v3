@@ -39,9 +39,9 @@ class OpenPageInfo:
 
         :param offset: 偏移量。
         :type offset: int
-        :param limit: 查询个数。
+        :param limit: 每页的记录数。
         :type limit: int
-        :param count: 总记录数
+        :param count: 总记录数。
         :type count: int
         """
         
@@ -82,7 +82,7 @@ class OpenPageInfo:
     def limit(self):
         """Gets the limit of this OpenPageInfo.
 
-        查询个数。
+        每页的记录数。
 
         :return: The limit of this OpenPageInfo.
         :rtype: int
@@ -93,7 +93,7 @@ class OpenPageInfo:
     def limit(self, limit):
         """Sets the limit of this OpenPageInfo.
 
-        查询个数。
+        每页的记录数。
 
         :param limit: The limit of this OpenPageInfo.
         :type limit: int
@@ -104,7 +104,7 @@ class OpenPageInfo:
     def count(self):
         """Gets the count of this OpenPageInfo.
 
-        总记录数
+        总记录数。
 
         :return: The count of this OpenPageInfo.
         :rtype: int
@@ -115,7 +115,7 @@ class OpenPageInfo:
     def count(self, count):
         """Sets the count of this OpenPageInfo.
 
-        总记录数
+        总记录数。
 
         :param count: The count of this OpenPageInfo.
         :type count: int

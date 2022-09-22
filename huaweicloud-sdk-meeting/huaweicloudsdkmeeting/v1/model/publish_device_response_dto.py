@@ -35,9 +35,9 @@ class PublishDeviceResponseDTO:
 
         The model defined in huaweicloud sdk
 
-        :param device_user_id: 设备用户ID
+        :param device_user_id: 设备用户ID。
         :type device_user_id: str
-        :param device_name: 设备名称
+        :param device_name: 设备名称。
         :type device_name: str
         """
         
@@ -56,7 +56,7 @@ class PublishDeviceResponseDTO:
     def device_user_id(self):
         """Gets the device_user_id of this PublishDeviceResponseDTO.
 
-        设备用户ID
+        设备用户ID。
 
         :return: The device_user_id of this PublishDeviceResponseDTO.
         :rtype: str
@@ -67,7 +67,7 @@ class PublishDeviceResponseDTO:
     def device_user_id(self, device_user_id):
         """Sets the device_user_id of this PublishDeviceResponseDTO.
 
-        设备用户ID
+        设备用户ID。
 
         :param device_user_id: The device_user_id of this PublishDeviceResponseDTO.
         :type device_user_id: str
@@ -78,7 +78,7 @@ class PublishDeviceResponseDTO:
     def device_name(self):
         """Gets the device_name of this PublishDeviceResponseDTO.
 
-        设备名称
+        设备名称。
 
         :return: The device_name of this PublishDeviceResponseDTO.
         :rtype: str
@@ -89,7 +89,7 @@ class PublishDeviceResponseDTO:
     def device_name(self, device_name):
         """Sets the device_name of this PublishDeviceResponseDTO.
 
-        设备名称
+        设备名称。
 
         :param device_name: The device_name of this PublishDeviceResponseDTO.
         :type device_name: str

@@ -47,9 +47,9 @@ class BtrfsSubvolumn:
         :type uuid: str
         :param is_snapshot: 子卷是否为快照
         :type is_snapshot: str
-        :param subvol_id: 子卷的id
+        :param subvol_id: 子卷的ID
         :type subvol_id: str
-        :param parent_id: 父卷id
+        :param parent_id: 父卷ID
         :type parent_id: str
         :param subvol_name: 子卷的名称
         :type subvol_name: str
@@ -122,7 +122,7 @@ class BtrfsSubvolumn:
     def subvol_id(self):
         """Gets the subvol_id of this BtrfsSubvolumn.
 
-        子卷的id
+        子卷的ID
 
         :return: The subvol_id of this BtrfsSubvolumn.
         :rtype: str
@@ -133,7 +133,7 @@ class BtrfsSubvolumn:
     def subvol_id(self, subvol_id):
         """Sets the subvol_id of this BtrfsSubvolumn.
 
-        子卷的id
+        子卷的ID
 
         :param subvol_id: The subvol_id of this BtrfsSubvolumn.
         :type subvol_id: str
@@ -144,7 +144,7 @@ class BtrfsSubvolumn:
     def parent_id(self):
         """Gets the parent_id of this BtrfsSubvolumn.
 
-        父卷id
+        父卷ID
 
         :return: The parent_id of this BtrfsSubvolumn.
         :rtype: str
@@ -155,7 +155,7 @@ class BtrfsSubvolumn:
     def parent_id(self, parent_id):
         """Sets the parent_id of this BtrfsSubvolumn.
 
-        父卷id
+        父卷ID
 
         :param parent_id: The parent_id of this BtrfsSubvolumn.
         :type parent_id: str

@@ -35,7 +35,7 @@ class UpdateMigprojectRequest:
 
         The model defined in huaweicloud sdk
 
-        :param mig_project_id: 迁移项目id
+        :param mig_project_id: 迁移项目ID
         :type mig_project_id: str
         :param body: Body of the UpdateMigprojectRequest
         :type body: :class:`huaweicloudsdksms.v3.MigProject`
@@ -55,7 +55,7 @@ class UpdateMigprojectRequest:
     def mig_project_id(self):
         """Gets the mig_project_id of this UpdateMigprojectRequest.
 
-        迁移项目id
+        迁移项目ID
 
         :return: The mig_project_id of this UpdateMigprojectRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateMigprojectRequest:
     def mig_project_id(self, mig_project_id):
         """Sets the mig_project_id of this UpdateMigprojectRequest.
 
-        迁移项目id
+        迁移项目ID
 
         :param mig_project_id: The mig_project_id of this UpdateMigprojectRequest.
         :type mig_project_id: str

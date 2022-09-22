@@ -30,7 +30,9 @@ class UnbindApiForAcl:
         'run_env_name': 'str',
         'run_env_id': 'str',
         'publish_id': 'str',
-        'acl_name': 'str'
+        'acl_name': 'str',
+        'req_uri': 'str',
+        'auth_type': 'str'
     }
 
     attribute_map = {
@@ -43,10 +45,12 @@ class UnbindApiForAcl:
         'run_env_name': 'run_env_name',
         'run_env_id': 'run_env_id',
         'publish_id': 'publish_id',
-        'acl_name': 'acl_name'
+        'acl_name': 'acl_name',
+        'req_uri': 'req_uri',
+        'auth_type': 'auth_type'
     }
 
-    def __init__(self, id=None, name=None, group_id=None, group_name=None, type=None, remark=None, run_env_name=None, run_env_id=None, publish_id=None, acl_name=None):
+    def __init__(self, id=None, name=None, group_id=None, group_name=None, type=None, remark=None, run_env_name=None, run_env_id=None, publish_id=None, acl_name=None, req_uri=None, auth_type=None):
         """UnbindApiForAcl
 
         The model defined in huaweicloud sdk
@@ -71,6 +75,10 @@ class UnbindApiForAcl:
         :type publish_id: str
         :param acl_name: 绑定的其他同类型的ACL策略名称
         :type acl_name: str
+        :param req_uri: API的请求地址
+        :type req_uri: str
+        :param auth_type: API的认证方式
+        :type auth_type: str
         """
         
         
@@ -85,6 +93,8 @@ class UnbindApiForAcl:
         self._run_env_id = None
         self._publish_id = None
         self._acl_name = None
+        self._req_uri = None
+        self._auth_type = None
         self.discriminator = None
 
         if id is not None:
@@ -107,6 +117,10 @@ class UnbindApiForAcl:
             self.publish_id = publish_id
         if acl_name is not None:
             self.acl_name = acl_name
+        if req_uri is not None:
+            self.req_uri = req_uri
+        if auth_type is not None:
+            self.auth_type = auth_type
 
     @property
     def id(self):
@@ -327,6 +341,50 @@ class UnbindApiForAcl:
         :type acl_name: str
         """
         self._acl_name = acl_name
+
+    @property
+    def req_uri(self):
+        """Gets the req_uri of this UnbindApiForAcl.
+
+        API的请求地址
+
+        :return: The req_uri of this UnbindApiForAcl.
+        :rtype: str
+        """
+        return self._req_uri
+
+    @req_uri.setter
+    def req_uri(self, req_uri):
+        """Sets the req_uri of this UnbindApiForAcl.
+
+        API的请求地址
+
+        :param req_uri: The req_uri of this UnbindApiForAcl.
+        :type req_uri: str
+        """
+        self._req_uri = req_uri
+
+    @property
+    def auth_type(self):
+        """Gets the auth_type of this UnbindApiForAcl.
+
+        API的认证方式
+
+        :return: The auth_type of this UnbindApiForAcl.
+        :rtype: str
+        """
+        return self._auth_type
+
+    @auth_type.setter
+    def auth_type(self, auth_type):
+        """Sets the auth_type of this UnbindApiForAcl.
+
+        API的认证方式
+
+        :param auth_type: The auth_type of this UnbindApiForAcl.
+        :type auth_type: str
+        """
+        self._auth_type = auth_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

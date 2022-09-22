@@ -35,9 +35,9 @@ class StartRequest:
 
         The model defined in huaweicloud sdk
 
-        :param conference_id: 会议ID
+        :param conference_id: 会议ID。
         :type conference_id: str
-        :param password: 主席密码
+        :param password: 会议密码。
         :type password: str
         """
         
@@ -54,7 +54,7 @@ class StartRequest:
     def conference_id(self):
         """Gets the conference_id of this StartRequest.
 
-        会议ID
+        会议ID。
 
         :return: The conference_id of this StartRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class StartRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this StartRequest.
 
-        会议ID
+        会议ID。
 
         :param conference_id: The conference_id of this StartRequest.
         :type conference_id: str
@@ -76,7 +76,7 @@ class StartRequest:
     def password(self):
         """Gets the password of this StartRequest.
 
-        主席密码
+        会议密码。
 
         :return: The password of this StartRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class StartRequest:
     def password(self, password):
         """Sets the password of this StartRequest.
 
-        主席密码
+        会议密码。
 
         :param password: The password of this StartRequest.
         :type password: str

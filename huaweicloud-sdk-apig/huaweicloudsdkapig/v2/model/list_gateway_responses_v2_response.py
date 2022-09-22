@@ -23,7 +23,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
     openapi_types = {
         'size': 'int',
         'total': 'int',
-        'responses': 'list[ResponseInfoResp]'
+        'responses': 'list[ResponsesInfo]'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
         :param total: 满足条件的记录数
         :type total: int
         :param responses: 响应列表
-        :type responses: list[:class:`huaweicloudsdkapig.v2.ResponseInfoResp`]
+        :type responses: list[:class:`huaweicloudsdkapig.v2.ResponsesInfo`]
         """
         
         super(ListGatewayResponsesV2Response, self).__init__()
@@ -108,7 +108,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
         响应列表
 
         :return: The responses of this ListGatewayResponsesV2Response.
-        :rtype: list[:class:`huaweicloudsdkapig.v2.ResponseInfoResp`]
+        :rtype: list[:class:`huaweicloudsdkapig.v2.ResponsesInfo`]
         """
         return self._responses
 
@@ -119,7 +119,7 @@ class ListGatewayResponsesV2Response(SdkResponse):
         响应列表
 
         :param responses: The responses of this ListGatewayResponsesV2Response.
-        :type responses: list[:class:`huaweicloudsdkapig.v2.ResponseInfoResp`]
+        :type responses: list[:class:`huaweicloudsdkapig.v2.ResponsesInfo`]
         """
         self._responses = responses
 

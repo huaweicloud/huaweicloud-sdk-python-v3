@@ -35,7 +35,7 @@ class OpenUploadFileInfo:
 
         The model defined in huaweicloud sdk
 
-        :param file_id: 文件Id
+        :param file_id: 文件Id。
         :type file_id: str
         :param image_moderation: 
         :type image_moderation: :class:`huaweicloudsdkmeeting.v1.ImageModerationResult`
@@ -56,7 +56,7 @@ class OpenUploadFileInfo:
     def file_id(self):
         """Gets the file_id of this OpenUploadFileInfo.
 
-        文件Id
+        文件Id。
 
         :return: The file_id of this OpenUploadFileInfo.
         :rtype: str
@@ -67,7 +67,7 @@ class OpenUploadFileInfo:
     def file_id(self, file_id):
         """Sets the file_id of this OpenUploadFileInfo.
 
-        文件Id
+        文件Id。
 
         :param file_id: The file_id of this OpenUploadFileInfo.
         :type file_id: str

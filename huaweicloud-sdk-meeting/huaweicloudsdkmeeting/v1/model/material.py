@@ -45,19 +45,19 @@ class Material:
 
         The model defined in huaweicloud sdk
 
-        :param id: 素材ID
+        :param id: 素材ID。
         :type id: str
-        :param last_updated_by: 更新者
+        :param last_updated_by: 更新者。
         :type last_updated_by: str
-        :param update_time: 更新时间
+        :param update_time: 更新时间。
         :type update_time: int
-        :param material_name: 素材名称
+        :param material_name: 素材名称。
         :type material_name: str
-        :param material_resolution: 素材分辨率
+        :param material_resolution: 素材分辨率。
         :type material_resolution: str
-        :param material_size_str: 素材大小（含单位）
+        :param material_size_str: 素材大小（含单位）。
         :type material_size_str: str
-        :param file_path: 素材云盘存储文件下载地址
+        :param file_path: 素材云盘存储文件下载地址。
         :type file_path: str
         """
         
@@ -91,7 +91,7 @@ class Material:
     def id(self):
         """Gets the id of this Material.
 
-        素材ID
+        素材ID。
 
         :return: The id of this Material.
         :rtype: str
@@ -102,7 +102,7 @@ class Material:
     def id(self, id):
         """Sets the id of this Material.
 
-        素材ID
+        素材ID。
 
         :param id: The id of this Material.
         :type id: str
@@ -113,7 +113,7 @@ class Material:
     def last_updated_by(self):
         """Gets the last_updated_by of this Material.
 
-        更新者
+        更新者。
 
         :return: The last_updated_by of this Material.
         :rtype: str
@@ -124,7 +124,7 @@ class Material:
     def last_updated_by(self, last_updated_by):
         """Sets the last_updated_by of this Material.
 
-        更新者
+        更新者。
 
         :param last_updated_by: The last_updated_by of this Material.
         :type last_updated_by: str
@@ -135,7 +135,7 @@ class Material:
     def update_time(self):
         """Gets the update_time of this Material.
 
-        更新时间
+        更新时间。
 
         :return: The update_time of this Material.
         :rtype: int
@@ -146,7 +146,7 @@ class Material:
     def update_time(self, update_time):
         """Sets the update_time of this Material.
 
-        更新时间
+        更新时间。
 
         :param update_time: The update_time of this Material.
         :type update_time: int
@@ -157,7 +157,7 @@ class Material:
     def material_name(self):
         """Gets the material_name of this Material.
 
-        素材名称
+        素材名称。
 
         :return: The material_name of this Material.
         :rtype: str
@@ -168,7 +168,7 @@ class Material:
     def material_name(self, material_name):
         """Sets the material_name of this Material.
 
-        素材名称
+        素材名称。
 
         :param material_name: The material_name of this Material.
         :type material_name: str
@@ -179,7 +179,7 @@ class Material:
     def material_resolution(self):
         """Gets the material_resolution of this Material.
 
-        素材分辨率
+        素材分辨率。
 
         :return: The material_resolution of this Material.
         :rtype: str
@@ -190,7 +190,7 @@ class Material:
     def material_resolution(self, material_resolution):
         """Sets the material_resolution of this Material.
 
-        素材分辨率
+        素材分辨率。
 
         :param material_resolution: The material_resolution of this Material.
         :type material_resolution: str
@@ -201,7 +201,7 @@ class Material:
     def material_size_str(self):
         """Gets the material_size_str of this Material.
 
-        素材大小（含单位）
+        素材大小（含单位）。
 
         :return: The material_size_str of this Material.
         :rtype: str
@@ -212,7 +212,7 @@ class Material:
     def material_size_str(self, material_size_str):
         """Sets the material_size_str of this Material.
 
-        素材大小（含单位）
+        素材大小（含单位）。
 
         :param material_size_str: The material_size_str of this Material.
         :type material_size_str: str
@@ -223,7 +223,7 @@ class Material:
     def file_path(self):
         """Gets the file_path of this Material.
 
-        素材云盘存储文件下载地址
+        素材云盘存储文件下载地址。
 
         :return: The file_path of this Material.
         :rtype: str
@@ -234,7 +234,7 @@ class Material:
     def file_path(self, file_path):
         """Sets the file_path of this Material.
 
-        素材云盘存储文件下载地址
+        素材云盘存储文件下载地址。
 
         :param file_path: The file_path of this Material.
         :type file_path: str

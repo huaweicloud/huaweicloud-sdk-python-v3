@@ -33,7 +33,7 @@ class RestVideoBody:
 
         The model defined in huaweicloud sdk
 
-        :param status: 1：关闭视频 0：开启视频
+        :param status: 主持人邀请与会者开启/关闭摄像头请求。 * 1：关闭视频 * 0：开启视频 
         :type status: int
         """
         
@@ -48,7 +48,7 @@ class RestVideoBody:
     def status(self):
         """Gets the status of this RestVideoBody.
 
-        1：关闭视频 0：开启视频
+        主持人邀请与会者开启/关闭摄像头请求。 * 1：关闭视频 * 0：开启视频 
 
         :return: The status of this RestVideoBody.
         :rtype: int
@@ -59,7 +59,7 @@ class RestVideoBody:
     def status(self, status):
         """Sets the status of this RestVideoBody.
 
-        1：关闭视频 0：开启视频
+        主持人邀请与会者开启/关闭摄像头请求。 * 1：关闭视频 * 0：开启视频 
 
         :param status: The status of this RestVideoBody.
         :type status: int

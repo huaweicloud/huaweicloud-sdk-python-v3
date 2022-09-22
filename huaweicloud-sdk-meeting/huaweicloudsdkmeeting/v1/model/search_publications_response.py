@@ -39,7 +39,7 @@ class SearchPublicationsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 页面起始页，从0开始
+        :param offset: 页面起始页，从0开始。
         :type offset: int
         :param limit: 每页显示的条目数量。 默认值：10。 
         :type limit: int
@@ -70,7 +70,7 @@ class SearchPublicationsResponse(SdkResponse):
     def offset(self):
         """Gets the offset of this SearchPublicationsResponse.
 
-        页面起始页，从0开始
+        页面起始页，从0开始。
 
         :return: The offset of this SearchPublicationsResponse.
         :rtype: int
@@ -81,7 +81,7 @@ class SearchPublicationsResponse(SdkResponse):
     def offset(self, offset):
         """Sets the offset of this SearchPublicationsResponse.
 
-        页面起始页，从0开始
+        页面起始页，从0开始。
 
         :param offset: The offset of this SearchPublicationsResponse.
         :type offset: int

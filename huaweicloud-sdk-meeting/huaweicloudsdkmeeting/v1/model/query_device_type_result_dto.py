@@ -43,17 +43,17 @@ class QueryDeviceTypeResultDTO:
 
         The model defined in huaweicloud sdk
 
-        :param type: 终端类型，区分自研和第三方终端
+        :param type: 终端类型，区分自研和第三方终端。 * TE：华为自研硬终端 * 3rd：第三方硬终端 
         :type type: str
-        :param model: 终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
+        :param model: 终端型号，枚举类型。 * TE10 * TE20 * TE30 * TE40 * TE50 * TE60 * HUAWEI Box 300 * HUAWEI Box 500 * HUAWEI Box 600 * HUAWEI Box 700 * HUAWEI Box 900 * DP300 * HUAWEI Box 200 * HUAWEI Box 300 * HUAWEI Box 500 * HUAWEI Board * polycomcisco 
         :type model: str
-        :param enable_active_code: 是否支持激活码
+        :param enable_active_code: 是否支持激活码。
         :type enable_active_code: bool
         :param resolution: 屏幕分辨率。1080P、720P等。
         :type resolution: str
-        :param support_projection_code: 是否支持投影码
+        :param support_projection_code: 是否支持投影码。
         :type support_projection_code: bool
-        :param support_svc: 是否支持SVC
+        :param support_svc: 是否支持SVC。
         :type support_svc: bool
         """
         
@@ -84,7 +84,7 @@ class QueryDeviceTypeResultDTO:
     def type(self):
         """Gets the type of this QueryDeviceTypeResultDTO.
 
-        终端类型，区分自研和第三方终端
+        终端类型，区分自研和第三方终端。 * TE：华为自研硬终端 * 3rd：第三方硬终端 
 
         :return: The type of this QueryDeviceTypeResultDTO.
         :rtype: str
@@ -95,7 +95,7 @@ class QueryDeviceTypeResultDTO:
     def type(self, type):
         """Sets the type of this QueryDeviceTypeResultDTO.
 
-        终端类型，区分自研和第三方终端
+        终端类型，区分自研和第三方终端。 * TE：华为自研硬终端 * 3rd：第三方硬终端 
 
         :param type: The type of this QueryDeviceTypeResultDTO.
         :type type: str
@@ -106,7 +106,7 @@ class QueryDeviceTypeResultDTO:
     def model(self):
         """Gets the model of this QueryDeviceTypeResultDTO.
 
-        终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
+        终端型号，枚举类型。 * TE10 * TE20 * TE30 * TE40 * TE50 * TE60 * HUAWEI Box 300 * HUAWEI Box 500 * HUAWEI Box 600 * HUAWEI Box 700 * HUAWEI Box 900 * DP300 * HUAWEI Box 200 * HUAWEI Box 300 * HUAWEI Box 500 * HUAWEI Board * polycomcisco 
 
         :return: The model of this QueryDeviceTypeResultDTO.
         :rtype: str
@@ -117,7 +117,7 @@ class QueryDeviceTypeResultDTO:
     def model(self, model):
         """Sets the model of this QueryDeviceTypeResultDTO.
 
-        终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
+        终端型号，枚举类型。 * TE10 * TE20 * TE30 * TE40 * TE50 * TE60 * HUAWEI Box 300 * HUAWEI Box 500 * HUAWEI Box 600 * HUAWEI Box 700 * HUAWEI Box 900 * DP300 * HUAWEI Box 200 * HUAWEI Box 300 * HUAWEI Box 500 * HUAWEI Board * polycomcisco 
 
         :param model: The model of this QueryDeviceTypeResultDTO.
         :type model: str
@@ -128,7 +128,7 @@ class QueryDeviceTypeResultDTO:
     def enable_active_code(self):
         """Gets the enable_active_code of this QueryDeviceTypeResultDTO.
 
-        是否支持激活码
+        是否支持激活码。
 
         :return: The enable_active_code of this QueryDeviceTypeResultDTO.
         :rtype: bool
@@ -139,7 +139,7 @@ class QueryDeviceTypeResultDTO:
     def enable_active_code(self, enable_active_code):
         """Sets the enable_active_code of this QueryDeviceTypeResultDTO.
 
-        是否支持激活码
+        是否支持激活码。
 
         :param enable_active_code: The enable_active_code of this QueryDeviceTypeResultDTO.
         :type enable_active_code: bool
@@ -172,7 +172,7 @@ class QueryDeviceTypeResultDTO:
     def support_projection_code(self):
         """Gets the support_projection_code of this QueryDeviceTypeResultDTO.
 
-        是否支持投影码
+        是否支持投影码。
 
         :return: The support_projection_code of this QueryDeviceTypeResultDTO.
         :rtype: bool
@@ -183,7 +183,7 @@ class QueryDeviceTypeResultDTO:
     def support_projection_code(self, support_projection_code):
         """Sets the support_projection_code of this QueryDeviceTypeResultDTO.
 
-        是否支持投影码
+        是否支持投影码。
 
         :param support_projection_code: The support_projection_code of this QueryDeviceTypeResultDTO.
         :type support_projection_code: bool
@@ -194,7 +194,7 @@ class QueryDeviceTypeResultDTO:
     def support_svc(self):
         """Gets the support_svc of this QueryDeviceTypeResultDTO.
 
-        是否支持SVC
+        是否支持SVC。
 
         :return: The support_svc of this QueryDeviceTypeResultDTO.
         :rtype: bool
@@ -205,7 +205,7 @@ class QueryDeviceTypeResultDTO:
     def support_svc(self, support_svc):
         """Sets the support_svc of this QueryDeviceTypeResultDTO.
 
-        是否支持SVC
+        是否支持SVC。
 
         :param support_svc: The support_svc of this QueryDeviceTypeResultDTO.
         :type support_svc: bool

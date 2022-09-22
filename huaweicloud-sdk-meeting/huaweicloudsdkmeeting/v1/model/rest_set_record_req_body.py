@@ -33,7 +33,7 @@ class RestSetRecordReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param is_record: 默认值为0。 - 0: 停止会议录制。 - 1: 启动会议录制。
+        :param is_record: 录制启停开关。默认值为0。 - 0: 停止会议录制 - 1: 启动会议录制
         :type is_record: int
         """
         
@@ -48,7 +48,7 @@ class RestSetRecordReqBody:
     def is_record(self):
         """Gets the is_record of this RestSetRecordReqBody.
 
-        默认值为0。 - 0: 停止会议录制。 - 1: 启动会议录制。
+        录制启停开关。默认值为0。 - 0: 停止会议录制 - 1: 启动会议录制
 
         :return: The is_record of this RestSetRecordReqBody.
         :rtype: int
@@ -59,7 +59,7 @@ class RestSetRecordReqBody:
     def is_record(self, is_record):
         """Sets the is_record of this RestSetRecordReqBody.
 
-        默认值为0。 - 0: 停止会议录制。 - 1: 启动会议录制。
+        录制启停开关。默认值为0。 - 0: 停止会议录制 - 1: 启动会议录制
 
         :param is_record: The is_record of this RestSetRecordReqBody.
         :type is_record: int

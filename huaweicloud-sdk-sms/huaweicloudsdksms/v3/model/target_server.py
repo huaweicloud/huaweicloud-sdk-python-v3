@@ -87,7 +87,7 @@ class TargetServer:
 
         :param id: 源端在SMS数据库中的ID
         :type id: str
-        :param ip: 源端服务器ip，注册源端时必选，更新非必选
+        :param ip: 源端服务器IP，注册源端时必选，更新非必选
         :type ip: str
         :param name: 目的端服务器名称
         :type name: str
@@ -133,11 +133,11 @@ class TargetServer:
         :type vm_id: str
         :param flavor: 目的端服务器的规格
         :type flavor: str
-        :param image_disk_id: 目的端代理镜像磁盘id
+        :param image_disk_id: 目的端代理镜像磁盘ID
         :type image_disk_id: str
-        :param snapshot_ids: 目的端快照id
+        :param snapshot_ids: 目的端快照ID
         :type snapshot_ids: str
-        :param cutovered_snapshot_ids: 目的端回滚快照id
+        :param cutovered_snapshot_ids: 目的端回滚快照ID
         :type cutovered_snapshot_ids: str
         """
         
@@ -249,7 +249,7 @@ class TargetServer:
     def ip(self):
         """Gets the ip of this TargetServer.
 
-        源端服务器ip，注册源端时必选，更新非必选
+        源端服务器IP，注册源端时必选，更新非必选
 
         :return: The ip of this TargetServer.
         :rtype: str
@@ -260,7 +260,7 @@ class TargetServer:
     def ip(self, ip):
         """Sets the ip of this TargetServer.
 
-        源端服务器ip，注册源端时必选，更新非必选
+        源端服务器IP，注册源端时必选，更新非必选
 
         :param ip: The ip of this TargetServer.
         :type ip: str
@@ -755,7 +755,7 @@ class TargetServer:
     def image_disk_id(self):
         """Gets the image_disk_id of this TargetServer.
 
-        目的端代理镜像磁盘id
+        目的端代理镜像磁盘ID
 
         :return: The image_disk_id of this TargetServer.
         :rtype: str
@@ -766,7 +766,7 @@ class TargetServer:
     def image_disk_id(self, image_disk_id):
         """Sets the image_disk_id of this TargetServer.
 
-        目的端代理镜像磁盘id
+        目的端代理镜像磁盘ID
 
         :param image_disk_id: The image_disk_id of this TargetServer.
         :type image_disk_id: str
@@ -777,7 +777,7 @@ class TargetServer:
     def snapshot_ids(self):
         """Gets the snapshot_ids of this TargetServer.
 
-        目的端快照id
+        目的端快照ID
 
         :return: The snapshot_ids of this TargetServer.
         :rtype: str
@@ -788,7 +788,7 @@ class TargetServer:
     def snapshot_ids(self, snapshot_ids):
         """Sets the snapshot_ids of this TargetServer.
 
-        目的端快照id
+        目的端快照ID
 
         :param snapshot_ids: The snapshot_ids of this TargetServer.
         :type snapshot_ids: str
@@ -799,7 +799,7 @@ class TargetServer:
     def cutovered_snapshot_ids(self):
         """Gets the cutovered_snapshot_ids of this TargetServer.
 
-        目的端回滚快照id
+        目的端回滚快照ID
 
         :return: The cutovered_snapshot_ids of this TargetServer.
         :rtype: str
@@ -810,7 +810,7 @@ class TargetServer:
     def cutovered_snapshot_ids(self, cutovered_snapshot_ids):
         """Sets the cutovered_snapshot_ids of this TargetServer.
 
-        目的端回滚快照id
+        目的端回滚快照ID
 
         :param cutovered_snapshot_ids: The cutovered_snapshot_ids of this TargetServer.
         :type cutovered_snapshot_ids: str

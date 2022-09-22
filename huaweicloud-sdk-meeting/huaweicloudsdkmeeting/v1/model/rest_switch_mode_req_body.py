@@ -35,9 +35,9 @@ class RestSwitchModeReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param switch_mode: 会议显示策略。 - Fixed: 固定广播与会者。 - VAS: 声控切换。
+        :param switch_mode: 会议显示策略。 - Fixed: 固定广播与会者 - VAS: 声控切换
         :type switch_mode: str
-        :param image_type: 画面类型。单画面设置只针对声控模式。 - 0: 单画面。 - 1: 多画面。
+        :param image_type: 画面类型。单画面设置只针对声控模式。 - 0: 单画面 - 1: 多画面
         :type image_type: int
         """
         
@@ -54,7 +54,7 @@ class RestSwitchModeReqBody:
     def switch_mode(self):
         """Gets the switch_mode of this RestSwitchModeReqBody.
 
-        会议显示策略。 - Fixed: 固定广播与会者。 - VAS: 声控切换。
+        会议显示策略。 - Fixed: 固定广播与会者 - VAS: 声控切换
 
         :return: The switch_mode of this RestSwitchModeReqBody.
         :rtype: str
@@ -65,7 +65,7 @@ class RestSwitchModeReqBody:
     def switch_mode(self, switch_mode):
         """Sets the switch_mode of this RestSwitchModeReqBody.
 
-        会议显示策略。 - Fixed: 固定广播与会者。 - VAS: 声控切换。
+        会议显示策略。 - Fixed: 固定广播与会者 - VAS: 声控切换
 
         :param switch_mode: The switch_mode of this RestSwitchModeReqBody.
         :type switch_mode: str
@@ -76,7 +76,7 @@ class RestSwitchModeReqBody:
     def image_type(self):
         """Gets the image_type of this RestSwitchModeReqBody.
 
-        画面类型。单画面设置只针对声控模式。 - 0: 单画面。 - 1: 多画面。
+        画面类型。单画面设置只针对声控模式。 - 0: 单画面 - 1: 多画面
 
         :return: The image_type of this RestSwitchModeReqBody.
         :rtype: int
@@ -87,7 +87,7 @@ class RestSwitchModeReqBody:
     def image_type(self, image_type):
         """Sets the image_type of this RestSwitchModeReqBody.
 
-        画面类型。单画面设置只针对声控模式。 - 0: 单画面。 - 1: 多画面。
+        画面类型。单画面设置只针对声控模式。 - 0: 单画面 - 1: 多画面
 
         :param image_type: The image_type of this RestSwitchModeReqBody.
         :type image_type: int

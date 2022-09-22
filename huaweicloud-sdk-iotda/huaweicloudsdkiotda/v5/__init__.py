@@ -97,6 +97,7 @@ from huaweicloudsdkiotda.v5.model.device_shadow_properties import DeviceShadowPr
 from huaweicloudsdkiotda.v5.model.dis_forwarding import DisForwarding
 from huaweicloudsdkiotda.v5.model.dms_kafka_forwarding import DmsKafkaForwarding
 from huaweicloudsdkiotda.v5.model.error_info import ErrorInfo
+from huaweicloudsdkiotda.v5.model.error_info_dto import ErrorInfoDTO
 from huaweicloudsdkiotda.v5.model.freeze_device_request import FreezeDeviceRequest
 from huaweicloudsdkiotda.v5.model.freeze_device_response import FreezeDeviceResponse
 from huaweicloudsdkiotda.v5.model.http_forwarding import HttpForwarding

@@ -33,7 +33,7 @@ class RestHandsUpReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param hands_state: - 0: 放下手。 - 1: 举手。
+        :param hands_state: - 0: 放下手 - 1: 举手
         :type hands_state: int
         """
         
@@ -48,7 +48,7 @@ class RestHandsUpReqBody:
     def hands_state(self):
         """Gets the hands_state of this RestHandsUpReqBody.
 
-        - 0: 放下手。 - 1: 举手。
+        - 0: 放下手 - 1: 举手
 
         :return: The hands_state of this RestHandsUpReqBody.
         :rtype: int
@@ -59,7 +59,7 @@ class RestHandsUpReqBody:
     def hands_state(self, hands_state):
         """Sets the hands_state of this RestHandsUpReqBody.
 
-        - 0: 放下手。 - 1: 举手。
+        - 0: 放下手 - 1: 举手
 
         :param hands_state: The hands_state of this RestHandsUpReqBody.
         :type hands_state: int

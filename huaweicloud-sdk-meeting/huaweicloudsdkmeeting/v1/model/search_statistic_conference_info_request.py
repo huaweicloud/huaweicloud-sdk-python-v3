@@ -43,15 +43,15 @@ class SearchStatisticConferenceInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页数据，页数根据总条目数和limit计算得出。
+        :param offset: 查询偏移量。 * 取值：大于等于0，默认值为0 * 大于等于最大条目数量，则返回最后一页数据，页数根据总条目数和limit计算得出
         :type offset: int
-        :param limit: 查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
+        :param limit: 查询的条目数量。 * 取值：1-500，默认值为20
         :type limit: int
-        :param time_unit: 查询时间维度，取值： * D: 按日查询 * M: 按月查询。
+        :param time_unit: 查询时间维度，取值： * D: 按日查询 * M: 按月查询
         :type time_unit: str
-        :param start_time: 查询时间范围的开始时间，格式根据timeUnit的取值而定。 * timeUnit &#x3D; D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日。 * timeUnit &#x3D; M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月。
+        :param start_time: 查询时间范围的开始时间，格式根据timeUnit的取值而定。 * timeUnit &#x3D; D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日 * timeUnit &#x3D; M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月
         :type start_time: str
-        :param end_time: 查询时间范围的结束时间，格式根据timeUnit的取值而定。 * timeUnit &#x3D; D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日。 * timeUnit &#x3D; M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月。
+        :param end_time: 查询时间范围的结束时间，格式根据timeUnit的取值而定。 * timeUnit &#x3D; D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日 * timeUnit &#x3D; M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月
         :type end_time: str
         :param category: 查询分类，取值： * conference_info: 会议总体数据 * conference_hourly_info: 单日内会议总体数据 * category &#x3D; conference_hourly_info的情况，timeUnit只能取值&#39;D&#39;，且startTime与endTime必须为同一天
         :type category: str
@@ -80,7 +80,7 @@ class SearchStatisticConferenceInfoRequest:
     def offset(self):
         """Gets the offset of this SearchStatisticConferenceInfoRequest.
 
-        查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页数据，页数根据总条目数和limit计算得出。
+        查询偏移量。 * 取值：大于等于0，默认值为0 * 大于等于最大条目数量，则返回最后一页数据，页数根据总条目数和limit计算得出
 
         :return: The offset of this SearchStatisticConferenceInfoRequest.
         :rtype: int
@@ -91,7 +91,7 @@ class SearchStatisticConferenceInfoRequest:
     def offset(self, offset):
         """Sets the offset of this SearchStatisticConferenceInfoRequest.
 
-        查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页数据，页数根据总条目数和limit计算得出。
+        查询偏移量。 * 取值：大于等于0，默认值为0 * 大于等于最大条目数量，则返回最后一页数据，页数根据总条目数和limit计算得出
 
         :param offset: The offset of this SearchStatisticConferenceInfoRequest.
         :type offset: int
@@ -102,7 +102,7 @@ class SearchStatisticConferenceInfoRequest:
     def limit(self):
         """Gets the limit of this SearchStatisticConferenceInfoRequest.
 
-        查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
+        查询的条目数量。 * 取值：1-500，默认值为20
 
         :return: The limit of this SearchStatisticConferenceInfoRequest.
         :rtype: int
@@ -113,7 +113,7 @@ class SearchStatisticConferenceInfoRequest:
     def limit(self, limit):
         """Sets the limit of this SearchStatisticConferenceInfoRequest.
 
-        查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
+        查询的条目数量。 * 取值：1-500，默认值为20
 
         :param limit: The limit of this SearchStatisticConferenceInfoRequest.
         :type limit: int
@@ -124,7 +124,7 @@ class SearchStatisticConferenceInfoRequest:
     def time_unit(self):
         """Gets the time_unit of this SearchStatisticConferenceInfoRequest.
 
-        查询时间维度，取值： * D: 按日查询 * M: 按月查询。
+        查询时间维度，取值： * D: 按日查询 * M: 按月查询
 
         :return: The time_unit of this SearchStatisticConferenceInfoRequest.
         :rtype: str
@@ -135,7 +135,7 @@ class SearchStatisticConferenceInfoRequest:
     def time_unit(self, time_unit):
         """Sets the time_unit of this SearchStatisticConferenceInfoRequest.
 
-        查询时间维度，取值： * D: 按日查询 * M: 按月查询。
+        查询时间维度，取值： * D: 按日查询 * M: 按月查询
 
         :param time_unit: The time_unit of this SearchStatisticConferenceInfoRequest.
         :type time_unit: str
@@ -146,7 +146,7 @@ class SearchStatisticConferenceInfoRequest:
     def start_time(self):
         """Gets the start_time of this SearchStatisticConferenceInfoRequest.
 
-        查询时间范围的开始时间，格式根据timeUnit的取值而定。 * timeUnit = D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日。 * timeUnit = M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月。
+        查询时间范围的开始时间，格式根据timeUnit的取值而定。 * timeUnit = D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日 * timeUnit = M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月
 
         :return: The start_time of this SearchStatisticConferenceInfoRequest.
         :rtype: str
@@ -157,7 +157,7 @@ class SearchStatisticConferenceInfoRequest:
     def start_time(self, start_time):
         """Sets the start_time of this SearchStatisticConferenceInfoRequest.
 
-        查询时间范围的开始时间，格式根据timeUnit的取值而定。 * timeUnit = D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日。 * timeUnit = M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月。
+        查询时间范围的开始时间，格式根据timeUnit的取值而定。 * timeUnit = D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日 * timeUnit = M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月
 
         :param start_time: The start_time of this SearchStatisticConferenceInfoRequest.
         :type start_time: str
@@ -168,7 +168,7 @@ class SearchStatisticConferenceInfoRequest:
     def end_time(self):
         """Gets the end_time of this SearchStatisticConferenceInfoRequest.
 
-        查询时间范围的结束时间，格式根据timeUnit的取值而定。 * timeUnit = D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日。 * timeUnit = M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月。
+        查询时间范围的结束时间，格式根据timeUnit的取值而定。 * timeUnit = D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日 * timeUnit = M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月
 
         :return: The end_time of this SearchStatisticConferenceInfoRequest.
         :rtype: str
@@ -179,7 +179,7 @@ class SearchStatisticConferenceInfoRequest:
     def end_time(self, end_time):
         """Sets the end_time of this SearchStatisticConferenceInfoRequest.
 
-        查询时间范围的结束时间，格式根据timeUnit的取值而定。 * timeUnit = D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日。 * timeUnit = M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月。
+        查询时间范围的结束时间，格式根据timeUnit的取值而定。 * timeUnit = D，格式：yyyy-MM-dd，此情况下startTime与endTime间隔最多31日 * timeUnit = M，格式：yyyy-MM，此情况下startTime与endTime间隔最多12个月
 
         :param end_time: The end_time of this SearchStatisticConferenceInfoRequest.
         :type end_time: str

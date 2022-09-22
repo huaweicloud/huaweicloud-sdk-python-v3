@@ -35,9 +35,9 @@ class ShowWebHookConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param corp_id: 企业ID，与spId二者必填一个
+        :param corp_id: 企业ID。按企业注册回调时需要填写。
         :type corp_id: str
-        :param sp_id: sp管理员ID，与corpId二者必填一个
+        :param sp_id: SP ID。多租户场景下，按SP注册回调时需要填写。
         :type sp_id: str
         """
         
@@ -56,7 +56,7 @@ class ShowWebHookConfigRequest:
     def corp_id(self):
         """Gets the corp_id of this ShowWebHookConfigRequest.
 
-        企业ID，与spId二者必填一个
+        企业ID。按企业注册回调时需要填写。
 
         :return: The corp_id of this ShowWebHookConfigRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowWebHookConfigRequest:
     def corp_id(self, corp_id):
         """Sets the corp_id of this ShowWebHookConfigRequest.
 
-        企业ID，与spId二者必填一个
+        企业ID。按企业注册回调时需要填写。
 
         :param corp_id: The corp_id of this ShowWebHookConfigRequest.
         :type corp_id: str
@@ -78,7 +78,7 @@ class ShowWebHookConfigRequest:
     def sp_id(self):
         """Gets the sp_id of this ShowWebHookConfigRequest.
 
-        sp管理员ID，与corpId二者必填一个
+        SP ID。多租户场景下，按SP注册回调时需要填写。
 
         :return: The sp_id of this ShowWebHookConfigRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class ShowWebHookConfigRequest:
     def sp_id(self, sp_id):
         """Sets the sp_id of this ShowWebHookConfigRequest.
 
-        sp管理员ID，与corpId二者必填一个
+        SP ID。多租户场景下，按SP注册回调时需要填写。
 
         :param sp_id: The sp_id of this ShowWebHookConfigRequest.
         :type sp_id: str

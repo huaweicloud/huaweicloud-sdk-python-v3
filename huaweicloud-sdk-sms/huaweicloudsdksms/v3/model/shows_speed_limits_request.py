@@ -33,7 +33,7 @@ class ShowsSpeedLimitsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 查询限速信息的任务id
+        :param task_id: 查询限速信息的任务ID
         :type task_id: str
         """
         
@@ -48,7 +48,7 @@ class ShowsSpeedLimitsRequest:
     def task_id(self):
         """Gets the task_id of this ShowsSpeedLimitsRequest.
 
-        查询限速信息的任务id
+        查询限速信息的任务ID
 
         :return: The task_id of this ShowsSpeedLimitsRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ShowsSpeedLimitsRequest:
     def task_id(self, task_id):
         """Sets the task_id of this ShowsSpeedLimitsRequest.
 
-        查询限速信息的任务id
+        查询限速信息的任务ID
 
         :param task_id: The task_id of this ShowsSpeedLimitsRequest.
         :type task_id: str

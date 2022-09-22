@@ -65,31 +65,31 @@ class AddDeviceResponse(SdkResponse):
         :type name: str
         :param type: 终端类型，区分自研和第三方终端。
         :type type: str
-        :param model: 终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
+        :param model: 终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过[[获取所有终端类型](https://support.huaweicloud.com/api-meeting/meeting_21_0092.html)](tag:hws)[[获取所有终端类型](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0092.html)](tag:hk)接口查询。
         :type model: str
         :param sn: 终端SN号，仅可包含数字、字母和下划线。
         :type sn: str
-        :param account: 硬终端对应的内置账号。
+        :param account: 硬终端对应的内置帐号。
         :type account: str
-        :param number: 终端绑定的号码
+        :param number: 终端绑定的号码。
         :type number: str
-        :param prj_code_mode: 投影码生成模式 * 0、自动(该模式下根据消息上报的IP地址内部控制复杂度：私网地址配置成简单模式；公网地址配置成复杂模式) * 1、简单 * 2、复杂 
+        :param prj_code_mode: 投影码生成模式。 * 0：自动(该模式下根据消息上报的IP地址内部控制复杂度：私网地址配置成简单模式；公网地址配置成复杂模式) * 1：简单 * 2：复杂 
         :type prj_code_mode: int
-        :param dept_code: 部门编号
+        :param dept_code: 部门编码。
         :type dept_code: str
-        :param dept_name: 部门名称
+        :param dept_name: 部门名称。
         :type dept_name: str
-        :param dept_name_path: 部门名称路径
+        :param dept_name_path: 部门名称路径。
         :type dept_name_path: str
-        :param phone: 手机号
+        :param phone: 手机号。
         :type phone: str
-        :param country: 手机号所属的国家
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
-        :param email: 邮箱
+        :param email: 邮箱地址。
         :type email: str
-        :param description: 终端描述
+        :param description: 终端描述。
         :type description: str
-        :param status: 终端状态 * 0、正常 * 1、停用\&quot; 
+        :param status: 终端状态。 * 0、正常 * 1、停用\&quot; 
         :type status: int
         """
         
@@ -191,7 +191,7 @@ class AddDeviceResponse(SdkResponse):
     def model(self):
         """Gets the model of this AddDeviceResponse.
 
-        终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
+        终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过[[获取所有终端类型](https://support.huaweicloud.com/api-meeting/meeting_21_0092.html)](tag:hws)[[获取所有终端类型](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0092.html)](tag:hk)接口查询。
 
         :return: The model of this AddDeviceResponse.
         :rtype: str
@@ -202,7 +202,7 @@ class AddDeviceResponse(SdkResponse):
     def model(self, model):
         """Sets the model of this AddDeviceResponse.
 
-        终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
+        终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过[[获取所有终端类型](https://support.huaweicloud.com/api-meeting/meeting_21_0092.html)](tag:hws)[[获取所有终端类型](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0092.html)](tag:hk)接口查询。
 
         :param model: The model of this AddDeviceResponse.
         :type model: str
@@ -235,7 +235,7 @@ class AddDeviceResponse(SdkResponse):
     def account(self):
         """Gets the account of this AddDeviceResponse.
 
-        硬终端对应的内置账号。
+        硬终端对应的内置帐号。
 
         :return: The account of this AddDeviceResponse.
         :rtype: str
@@ -246,7 +246,7 @@ class AddDeviceResponse(SdkResponse):
     def account(self, account):
         """Sets the account of this AddDeviceResponse.
 
-        硬终端对应的内置账号。
+        硬终端对应的内置帐号。
 
         :param account: The account of this AddDeviceResponse.
         :type account: str
@@ -257,7 +257,7 @@ class AddDeviceResponse(SdkResponse):
     def number(self):
         """Gets the number of this AddDeviceResponse.
 
-        终端绑定的号码
+        终端绑定的号码。
 
         :return: The number of this AddDeviceResponse.
         :rtype: str
@@ -268,7 +268,7 @@ class AddDeviceResponse(SdkResponse):
     def number(self, number):
         """Sets the number of this AddDeviceResponse.
 
-        终端绑定的号码
+        终端绑定的号码。
 
         :param number: The number of this AddDeviceResponse.
         :type number: str
@@ -279,7 +279,7 @@ class AddDeviceResponse(SdkResponse):
     def prj_code_mode(self):
         """Gets the prj_code_mode of this AddDeviceResponse.
 
-        投影码生成模式 * 0、自动(该模式下根据消息上报的IP地址内部控制复杂度：私网地址配置成简单模式；公网地址配置成复杂模式) * 1、简单 * 2、复杂 
+        投影码生成模式。 * 0：自动(该模式下根据消息上报的IP地址内部控制复杂度：私网地址配置成简单模式；公网地址配置成复杂模式) * 1：简单 * 2：复杂 
 
         :return: The prj_code_mode of this AddDeviceResponse.
         :rtype: int
@@ -290,7 +290,7 @@ class AddDeviceResponse(SdkResponse):
     def prj_code_mode(self, prj_code_mode):
         """Sets the prj_code_mode of this AddDeviceResponse.
 
-        投影码生成模式 * 0、自动(该模式下根据消息上报的IP地址内部控制复杂度：私网地址配置成简单模式；公网地址配置成复杂模式) * 1、简单 * 2、复杂 
+        投影码生成模式。 * 0：自动(该模式下根据消息上报的IP地址内部控制复杂度：私网地址配置成简单模式；公网地址配置成复杂模式) * 1：简单 * 2：复杂 
 
         :param prj_code_mode: The prj_code_mode of this AddDeviceResponse.
         :type prj_code_mode: int
@@ -301,7 +301,7 @@ class AddDeviceResponse(SdkResponse):
     def dept_code(self):
         """Gets the dept_code of this AddDeviceResponse.
 
-        部门编号
+        部门编码。
 
         :return: The dept_code of this AddDeviceResponse.
         :rtype: str
@@ -312,7 +312,7 @@ class AddDeviceResponse(SdkResponse):
     def dept_code(self, dept_code):
         """Sets the dept_code of this AddDeviceResponse.
 
-        部门编号
+        部门编码。
 
         :param dept_code: The dept_code of this AddDeviceResponse.
         :type dept_code: str
@@ -323,7 +323,7 @@ class AddDeviceResponse(SdkResponse):
     def dept_name(self):
         """Gets the dept_name of this AddDeviceResponse.
 
-        部门名称
+        部门名称。
 
         :return: The dept_name of this AddDeviceResponse.
         :rtype: str
@@ -334,7 +334,7 @@ class AddDeviceResponse(SdkResponse):
     def dept_name(self, dept_name):
         """Sets the dept_name of this AddDeviceResponse.
 
-        部门名称
+        部门名称。
 
         :param dept_name: The dept_name of this AddDeviceResponse.
         :type dept_name: str
@@ -345,7 +345,7 @@ class AddDeviceResponse(SdkResponse):
     def dept_name_path(self):
         """Gets the dept_name_path of this AddDeviceResponse.
 
-        部门名称路径
+        部门名称路径。
 
         :return: The dept_name_path of this AddDeviceResponse.
         :rtype: str
@@ -356,7 +356,7 @@ class AddDeviceResponse(SdkResponse):
     def dept_name_path(self, dept_name_path):
         """Sets the dept_name_path of this AddDeviceResponse.
 
-        部门名称路径
+        部门名称路径。
 
         :param dept_name_path: The dept_name_path of this AddDeviceResponse.
         :type dept_name_path: str
@@ -367,7 +367,7 @@ class AddDeviceResponse(SdkResponse):
     def phone(self):
         """Gets the phone of this AddDeviceResponse.
 
-        手机号
+        手机号。
 
         :return: The phone of this AddDeviceResponse.
         :rtype: str
@@ -378,7 +378,7 @@ class AddDeviceResponse(SdkResponse):
     def phone(self, phone):
         """Sets the phone of this AddDeviceResponse.
 
-        手机号
+        手机号。
 
         :param phone: The phone of this AddDeviceResponse.
         :type phone: str
@@ -389,7 +389,7 @@ class AddDeviceResponse(SdkResponse):
     def country(self):
         """Gets the country of this AddDeviceResponse.
 
-        手机号所属的国家
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this AddDeviceResponse.
         :rtype: str
@@ -400,7 +400,7 @@ class AddDeviceResponse(SdkResponse):
     def country(self, country):
         """Sets the country of this AddDeviceResponse.
 
-        手机号所属的国家
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this AddDeviceResponse.
         :type country: str
@@ -411,7 +411,7 @@ class AddDeviceResponse(SdkResponse):
     def email(self):
         """Gets the email of this AddDeviceResponse.
 
-        邮箱
+        邮箱地址。
 
         :return: The email of this AddDeviceResponse.
         :rtype: str
@@ -422,7 +422,7 @@ class AddDeviceResponse(SdkResponse):
     def email(self, email):
         """Sets the email of this AddDeviceResponse.
 
-        邮箱
+        邮箱地址。
 
         :param email: The email of this AddDeviceResponse.
         :type email: str
@@ -433,7 +433,7 @@ class AddDeviceResponse(SdkResponse):
     def description(self):
         """Gets the description of this AddDeviceResponse.
 
-        终端描述
+        终端描述。
 
         :return: The description of this AddDeviceResponse.
         :rtype: str
@@ -444,7 +444,7 @@ class AddDeviceResponse(SdkResponse):
     def description(self, description):
         """Sets the description of this AddDeviceResponse.
 
-        终端描述
+        终端描述。
 
         :param description: The description of this AddDeviceResponse.
         :type description: str
@@ -455,7 +455,7 @@ class AddDeviceResponse(SdkResponse):
     def status(self):
         """Gets the status of this AddDeviceResponse.
 
-        终端状态 * 0、正常 * 1、停用\" 
+        终端状态。 * 0、正常 * 1、停用\" 
 
         :return: The status of this AddDeviceResponse.
         :rtype: int
@@ -466,7 +466,7 @@ class AddDeviceResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this AddDeviceResponse.
 
-        终端状态 * 0、正常 * 1、停用\" 
+        终端状态。 * 0、正常 * 1、停用\" 
 
         :param status: The status of this AddDeviceResponse.
         :type status: int

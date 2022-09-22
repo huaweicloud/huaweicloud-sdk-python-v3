@@ -55,29 +55,29 @@ class RestConfConfigDTO:
 
         The model defined in huaweicloud sdk
 
-        :param is_send_notify: 是否需要发送会议邮件通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
+        :param is_send_notify: 是否需要发送会议邮件通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要
         :type is_send_notify: bool
-        :param is_send_sms: 是否需要发送会议短信通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
+        :param is_send_sms: 是否需要发送会议短信通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要 &gt; 只有正式商用企业才有发送会议短信通知的权限，免费企业即使isSendSms设置成true也不会发送会议短信通知。
         :type is_send_sms: bool
-        :param is_send_calendar: 是否需要发送会议通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
+        :param is_send_calendar: 是否需要发送会议邮件日历通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要
         :type is_send_calendar: bool
-        :param is_auto_mute: 来宾入会,软终端是否自动静音。默认值由企业级配置决定。 - True: 自动静音。 - False: 不自动静音。
+        :param is_auto_mute: 来宾入会,软终端是否自动静音。默认值由企业级配置决定。 - true: 自动静音 - false: 不自动静音
         :type is_auto_mute: bool
-        :param is_hard_terminal_auto_mute: 来宾入会,硬终端是否自动静音。默认值由企业级配置决定。 - True: 自动静音。 - False: 不自动静音。
+        :param is_hard_terminal_auto_mute: 来宾入会,硬终端是否自动静音。默认值由企业级配置决定。 - true: 自动静音 - false: 不自动静音
         :type is_hard_terminal_auto_mute: bool
-        :param is_guest_free_pwd: 是否来宾免密（仅随机会议有效）。 - True: 免密。 - False: 需要密码。
+        :param is_guest_free_pwd: 是否来宾免密。 - true: 免密 - false: 需要密码 &gt; 仅随机会议ID的会议生效。
         :type is_guest_free_pwd: bool
-        :param call_in_restriction: 允许呼入的范围。 - 0: 所有用户。 - 2: 企业内用户。 - 3: 被邀请用户。
+        :param call_in_restriction: 允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户
         :type call_in_restriction: int
-        :param allow_guest_start_conf: 是否允许来宾启动会议(随机会议)。 - True: 允许来宾启动会议。 - False: 禁止来宾启动会议。
+        :param allow_guest_start_conf: 是否允许来宾启动会议。 - true: 允许来宾启动会议 - false: 禁止来宾启动会议 &gt; 仅随机会议ID的会议生效。
         :type allow_guest_start_conf: bool
-        :param guest_pwd: 来宾密码
+        :param guest_pwd: 来宾密码（4-16位长度的纯数字）。
         :type guest_pwd: str
-        :param vmr_id_type: |参数名称：专用VMR会议ID类型 |参数描述：专用VMR会议ID类型 0: 固定ID 1: 随机ID |取值范围：[0,1]|
+        :param vmr_id_type: 云会议室的会议ID模式。 * 0：固定会议ID * 1：随机会议ID
         :type vmr_id_type: int
-        :param prolong_length: |参数名称：自动延长会议时长，0表示会议不延长 |建议取值范围：[0,60]|
+        :param prolong_length: 自动延长会议时长（取值范围0-60）。 * 0：表示会议到点自动结束，不延长会议 * 其他：表示自动延长的时长 &gt; * 自动结束会议是按照会议时长计算。比如预定的会议是9:00开始11:00结束，会议时长2个小时，如果与会者8:00就加入会议了，那会议在10:00就会自动结束 &gt; * 设置成其他值时，只要会中还有与会者，会议自动多次延迟
         :type prolong_length: int
-        :param enable_waiting_room: 开启或者关闭等候室
+        :param enable_waiting_room: 开启或者关闭等候室。 * true：开启 * false：不开启
         :type enable_waiting_room: bool
         """
         
@@ -126,7 +126,7 @@ class RestConfConfigDTO:
     def is_send_notify(self):
         """Gets the is_send_notify of this RestConfConfigDTO.
 
-        是否需要发送会议邮件通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
+        是否需要发送会议邮件通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要
 
         :return: The is_send_notify of this RestConfConfigDTO.
         :rtype: bool
@@ -137,7 +137,7 @@ class RestConfConfigDTO:
     def is_send_notify(self, is_send_notify):
         """Sets the is_send_notify of this RestConfConfigDTO.
 
-        是否需要发送会议邮件通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
+        是否需要发送会议邮件通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要
 
         :param is_send_notify: The is_send_notify of this RestConfConfigDTO.
         :type is_send_notify: bool
@@ -148,7 +148,7 @@ class RestConfConfigDTO:
     def is_send_sms(self):
         """Gets the is_send_sms of this RestConfConfigDTO.
 
-        是否需要发送会议短信通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
+        是否需要发送会议短信通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要 > 只有正式商用企业才有发送会议短信通知的权限，免费企业即使isSendSms设置成true也不会发送会议短信通知。
 
         :return: The is_send_sms of this RestConfConfigDTO.
         :rtype: bool
@@ -159,7 +159,7 @@ class RestConfConfigDTO:
     def is_send_sms(self, is_send_sms):
         """Sets the is_send_sms of this RestConfConfigDTO.
 
-        是否需要发送会议短信通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
+        是否需要发送会议短信通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要 > 只有正式商用企业才有发送会议短信通知的权限，免费企业即使isSendSms设置成true也不会发送会议短信通知。
 
         :param is_send_sms: The is_send_sms of this RestConfConfigDTO.
         :type is_send_sms: bool
@@ -170,7 +170,7 @@ class RestConfConfigDTO:
     def is_send_calendar(self):
         """Gets the is_send_calendar of this RestConfConfigDTO.
 
-        是否需要发送会议通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
+        是否需要发送会议邮件日历通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要
 
         :return: The is_send_calendar of this RestConfConfigDTO.
         :rtype: bool
@@ -181,7 +181,7 @@ class RestConfConfigDTO:
     def is_send_calendar(self, is_send_calendar):
         """Sets the is_send_calendar of this RestConfConfigDTO.
 
-        是否需要发送会议通知。默认值由企业级配置决定。 - True: 需要。 - False: 不需要。
+        是否需要发送会议邮件日历通知。默认值由企业级配置决定。 - true: 需要 - false: 不需要
 
         :param is_send_calendar: The is_send_calendar of this RestConfConfigDTO.
         :type is_send_calendar: bool
@@ -192,7 +192,7 @@ class RestConfConfigDTO:
     def is_auto_mute(self):
         """Gets the is_auto_mute of this RestConfConfigDTO.
 
-        来宾入会,软终端是否自动静音。默认值由企业级配置决定。 - True: 自动静音。 - False: 不自动静音。
+        来宾入会,软终端是否自动静音。默认值由企业级配置决定。 - true: 自动静音 - false: 不自动静音
 
         :return: The is_auto_mute of this RestConfConfigDTO.
         :rtype: bool
@@ -203,7 +203,7 @@ class RestConfConfigDTO:
     def is_auto_mute(self, is_auto_mute):
         """Sets the is_auto_mute of this RestConfConfigDTO.
 
-        来宾入会,软终端是否自动静音。默认值由企业级配置决定。 - True: 自动静音。 - False: 不自动静音。
+        来宾入会,软终端是否自动静音。默认值由企业级配置决定。 - true: 自动静音 - false: 不自动静音
 
         :param is_auto_mute: The is_auto_mute of this RestConfConfigDTO.
         :type is_auto_mute: bool
@@ -214,7 +214,7 @@ class RestConfConfigDTO:
     def is_hard_terminal_auto_mute(self):
         """Gets the is_hard_terminal_auto_mute of this RestConfConfigDTO.
 
-        来宾入会,硬终端是否自动静音。默认值由企业级配置决定。 - True: 自动静音。 - False: 不自动静音。
+        来宾入会,硬终端是否自动静音。默认值由企业级配置决定。 - true: 自动静音 - false: 不自动静音
 
         :return: The is_hard_terminal_auto_mute of this RestConfConfigDTO.
         :rtype: bool
@@ -225,7 +225,7 @@ class RestConfConfigDTO:
     def is_hard_terminal_auto_mute(self, is_hard_terminal_auto_mute):
         """Sets the is_hard_terminal_auto_mute of this RestConfConfigDTO.
 
-        来宾入会,硬终端是否自动静音。默认值由企业级配置决定。 - True: 自动静音。 - False: 不自动静音。
+        来宾入会,硬终端是否自动静音。默认值由企业级配置决定。 - true: 自动静音 - false: 不自动静音
 
         :param is_hard_terminal_auto_mute: The is_hard_terminal_auto_mute of this RestConfConfigDTO.
         :type is_hard_terminal_auto_mute: bool
@@ -236,7 +236,7 @@ class RestConfConfigDTO:
     def is_guest_free_pwd(self):
         """Gets the is_guest_free_pwd of this RestConfConfigDTO.
 
-        是否来宾免密（仅随机会议有效）。 - True: 免密。 - False: 需要密码。
+        是否来宾免密。 - true: 免密 - false: 需要密码 > 仅随机会议ID的会议生效。
 
         :return: The is_guest_free_pwd of this RestConfConfigDTO.
         :rtype: bool
@@ -247,7 +247,7 @@ class RestConfConfigDTO:
     def is_guest_free_pwd(self, is_guest_free_pwd):
         """Sets the is_guest_free_pwd of this RestConfConfigDTO.
 
-        是否来宾免密（仅随机会议有效）。 - True: 免密。 - False: 需要密码。
+        是否来宾免密。 - true: 免密 - false: 需要密码 > 仅随机会议ID的会议生效。
 
         :param is_guest_free_pwd: The is_guest_free_pwd of this RestConfConfigDTO.
         :type is_guest_free_pwd: bool
@@ -258,7 +258,7 @@ class RestConfConfigDTO:
     def call_in_restriction(self):
         """Gets the call_in_restriction of this RestConfConfigDTO.
 
-        允许呼入的范围。 - 0: 所有用户。 - 2: 企业内用户。 - 3: 被邀请用户。
+        允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户
 
         :return: The call_in_restriction of this RestConfConfigDTO.
         :rtype: int
@@ -269,7 +269,7 @@ class RestConfConfigDTO:
     def call_in_restriction(self, call_in_restriction):
         """Sets the call_in_restriction of this RestConfConfigDTO.
 
-        允许呼入的范围。 - 0: 所有用户。 - 2: 企业内用户。 - 3: 被邀请用户。
+        允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户
 
         :param call_in_restriction: The call_in_restriction of this RestConfConfigDTO.
         :type call_in_restriction: int
@@ -280,7 +280,7 @@ class RestConfConfigDTO:
     def allow_guest_start_conf(self):
         """Gets the allow_guest_start_conf of this RestConfConfigDTO.
 
-        是否允许来宾启动会议(随机会议)。 - True: 允许来宾启动会议。 - False: 禁止来宾启动会议。
+        是否允许来宾启动会议。 - true: 允许来宾启动会议 - false: 禁止来宾启动会议 > 仅随机会议ID的会议生效。
 
         :return: The allow_guest_start_conf of this RestConfConfigDTO.
         :rtype: bool
@@ -291,7 +291,7 @@ class RestConfConfigDTO:
     def allow_guest_start_conf(self, allow_guest_start_conf):
         """Sets the allow_guest_start_conf of this RestConfConfigDTO.
 
-        是否允许来宾启动会议(随机会议)。 - True: 允许来宾启动会议。 - False: 禁止来宾启动会议。
+        是否允许来宾启动会议。 - true: 允许来宾启动会议 - false: 禁止来宾启动会议 > 仅随机会议ID的会议生效。
 
         :param allow_guest_start_conf: The allow_guest_start_conf of this RestConfConfigDTO.
         :type allow_guest_start_conf: bool
@@ -302,7 +302,7 @@ class RestConfConfigDTO:
     def guest_pwd(self):
         """Gets the guest_pwd of this RestConfConfigDTO.
 
-        来宾密码
+        来宾密码（4-16位长度的纯数字）。
 
         :return: The guest_pwd of this RestConfConfigDTO.
         :rtype: str
@@ -313,7 +313,7 @@ class RestConfConfigDTO:
     def guest_pwd(self, guest_pwd):
         """Sets the guest_pwd of this RestConfConfigDTO.
 
-        来宾密码
+        来宾密码（4-16位长度的纯数字）。
 
         :param guest_pwd: The guest_pwd of this RestConfConfigDTO.
         :type guest_pwd: str
@@ -324,7 +324,7 @@ class RestConfConfigDTO:
     def vmr_id_type(self):
         """Gets the vmr_id_type of this RestConfConfigDTO.
 
-        |参数名称：专用VMR会议ID类型 |参数描述：专用VMR会议ID类型 0: 固定ID 1: 随机ID |取值范围：[0,1]|
+        云会议室的会议ID模式。 * 0：固定会议ID * 1：随机会议ID
 
         :return: The vmr_id_type of this RestConfConfigDTO.
         :rtype: int
@@ -335,7 +335,7 @@ class RestConfConfigDTO:
     def vmr_id_type(self, vmr_id_type):
         """Sets the vmr_id_type of this RestConfConfigDTO.
 
-        |参数名称：专用VMR会议ID类型 |参数描述：专用VMR会议ID类型 0: 固定ID 1: 随机ID |取值范围：[0,1]|
+        云会议室的会议ID模式。 * 0：固定会议ID * 1：随机会议ID
 
         :param vmr_id_type: The vmr_id_type of this RestConfConfigDTO.
         :type vmr_id_type: int
@@ -346,7 +346,7 @@ class RestConfConfigDTO:
     def prolong_length(self):
         """Gets the prolong_length of this RestConfConfigDTO.
 
-        |参数名称：自动延长会议时长，0表示会议不延长 |建议取值范围：[0,60]|
+        自动延长会议时长（取值范围0-60）。 * 0：表示会议到点自动结束，不延长会议 * 其他：表示自动延长的时长 > * 自动结束会议是按照会议时长计算。比如预定的会议是9:00开始11:00结束，会议时长2个小时，如果与会者8:00就加入会议了，那会议在10:00就会自动结束 > * 设置成其他值时，只要会中还有与会者，会议自动多次延迟
 
         :return: The prolong_length of this RestConfConfigDTO.
         :rtype: int
@@ -357,7 +357,7 @@ class RestConfConfigDTO:
     def prolong_length(self, prolong_length):
         """Sets the prolong_length of this RestConfConfigDTO.
 
-        |参数名称：自动延长会议时长，0表示会议不延长 |建议取值范围：[0,60]|
+        自动延长会议时长（取值范围0-60）。 * 0：表示会议到点自动结束，不延长会议 * 其他：表示自动延长的时长 > * 自动结束会议是按照会议时长计算。比如预定的会议是9:00开始11:00结束，会议时长2个小时，如果与会者8:00就加入会议了，那会议在10:00就会自动结束 > * 设置成其他值时，只要会中还有与会者，会议自动多次延迟
 
         :param prolong_length: The prolong_length of this RestConfConfigDTO.
         :type prolong_length: int
@@ -368,7 +368,7 @@ class RestConfConfigDTO:
     def enable_waiting_room(self):
         """Gets the enable_waiting_room of this RestConfConfigDTO.
 
-        开启或者关闭等候室
+        开启或者关闭等候室。 * true：开启 * false：不开启
 
         :return: The enable_waiting_room of this RestConfConfigDTO.
         :rtype: bool
@@ -379,7 +379,7 @@ class RestConfConfigDTO:
     def enable_waiting_room(self, enable_waiting_room):
         """Sets the enable_waiting_room of this RestConfConfigDTO.
 
-        开启或者关闭等候室
+        开启或者关闭等候室。 * true：开启 * false：不开启
 
         :param enable_waiting_room: The enable_waiting_room of this RestConfConfigDTO.
         :type enable_waiting_room: bool

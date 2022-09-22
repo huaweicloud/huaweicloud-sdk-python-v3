@@ -47,7 +47,7 @@ class AddCorpDTO:
         :type admin_info: :class:`huaweicloudsdkmeeting.v1.AdminDTO`
         :param res_info: 
         :type res_info: :class:`huaweicloudsdkmeeting.v1.AddCorpResDTO`
-        :param group_id: 媒体接入（包括SBC和MCU）分组id, 可通过企业资源管理下的SP管理员查询资源信息接口获取。
+        :param group_id: 媒体接入（包括SBC和MCU）分组id，可通过[[SP管理员查询资源信息](https://support.huaweicloud.com/api-meeting/meeting_21_1537.html)](tag:hws)[[SP管理员查询资源信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1537.html)](tag:hk)接口查询获取。
         :type group_id: str
         :param property_info: 可配置项信息。
         :type property_info: list[:class:`huaweicloudsdkmeeting.v1.OrgPropertyDTO`]
@@ -135,7 +135,7 @@ class AddCorpDTO:
     def group_id(self):
         """Gets the group_id of this AddCorpDTO.
 
-        媒体接入（包括SBC和MCU）分组id, 可通过企业资源管理下的SP管理员查询资源信息接口获取。
+        媒体接入（包括SBC和MCU）分组id，可通过[[SP管理员查询资源信息](https://support.huaweicloud.com/api-meeting/meeting_21_1537.html)](tag:hws)[[SP管理员查询资源信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1537.html)](tag:hk)接口查询获取。
 
         :return: The group_id of this AddCorpDTO.
         :rtype: str
@@ -146,7 +146,7 @@ class AddCorpDTO:
     def group_id(self, group_id):
         """Sets the group_id of this AddCorpDTO.
 
-        媒体接入（包括SBC和MCU）分组id, 可通过企业资源管理下的SP管理员查询资源信息接口获取。
+        媒体接入（包括SBC和MCU）分组id，可通过[[SP管理员查询资源信息](https://support.huaweicloud.com/api-meeting/meeting_21_1537.html)](tag:hws)[[SP管理员查询资源信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1537.html)](tag:hk)接口查询获取。
 
         :param group_id: The group_id of this AddCorpDTO.
         :type group_id: str

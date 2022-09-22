@@ -33,6 +33,8 @@ class TrackerResponseBody:
         'status': 'str',
         'detail': 'str',
         'is_support_trace_files_encryption': 'bool',
+        'group_id': 'str',
+        'stream_id': 'str',
         'obs_info': 'ObsInfo',
         'data_bucket': 'DataBucketQuery'
     }
@@ -50,11 +52,13 @@ class TrackerResponseBody:
         'status': 'status',
         'detail': 'detail',
         'is_support_trace_files_encryption': 'is_support_trace_files_encryption',
+        'group_id': 'group_id',
+        'stream_id': 'stream_id',
         'obs_info': 'obs_info',
         'data_bucket': 'data_bucket'
     }
 
-    def __init__(self, id=None, create_time=None, kms_id=None, is_support_validate=None, lts=None, tracker_type=None, domain_id=None, project_id=None, tracker_name=None, status=None, detail=None, is_support_trace_files_encryption=None, obs_info=None, data_bucket=None):
+    def __init__(self, id=None, create_time=None, kms_id=None, is_support_validate=None, lts=None, tracker_type=None, domain_id=None, project_id=None, tracker_name=None, status=None, detail=None, is_support_trace_files_encryption=None, group_id=None, stream_id=None, obs_info=None, data_bucket=None):
         """TrackerResponseBody
 
         The model defined in huaweicloud sdk
@@ -65,7 +69,7 @@ class TrackerResponseBody:
         :type create_time: int
         :param kms_id: 事件文件转储加密所采用的秘钥id（从KMS获取）。 当\&quot;tracker_type\&quot;参数值为\&quot;system\&quot;和\&quot;is_support_trace_files_encryption\&quot;参数值为“是”时，此参数为必选项。
         :type kms_id: str
-        :param is_support_validate: 是否打开事件文件校验。当前环境仅\&quot;tracker_type\&quot;参数值为\&quot;system\&quot;时支持该功能。
+        :param is_support_validate: 是否打开事件文件校验。
         :type is_support_validate: bool
         :param lts: 
         :type lts: :class:`huaweicloudsdkcts.v3.Lts`
@@ -83,6 +87,10 @@ class TrackerResponseBody:
         :type detail: str
         :param is_support_trace_files_encryption: 事件文件转储加密功能开关。 该参数必须与kms_id参数同时使用。 当前环境仅\&quot;tracker_type\&quot;参数值为\&quot;system\&quot;时支持该功能。
         :type is_support_trace_files_encryption: bool
+        :param group_id: LTS服务日志组的ID。
+        :type group_id: str
+        :param stream_id: LTS服务日志流的ID。
+        :type stream_id: str
         :param obs_info: 
         :type obs_info: :class:`huaweicloudsdkcts.v3.ObsInfo`
         :param data_bucket: 
@@ -103,6 +111,8 @@ class TrackerResponseBody:
         self._status = None
         self._detail = None
         self._is_support_trace_files_encryption = None
+        self._group_id = None
+        self._stream_id = None
         self._obs_info = None
         self._data_bucket = None
         self.discriminator = None
@@ -131,6 +141,10 @@ class TrackerResponseBody:
             self.detail = detail
         if is_support_trace_files_encryption is not None:
             self.is_support_trace_files_encryption = is_support_trace_files_encryption
+        if group_id is not None:
+            self.group_id = group_id
+        if stream_id is not None:
+            self.stream_id = stream_id
         if obs_info is not None:
             self.obs_info = obs_info
         if data_bucket is not None:
@@ -206,7 +220,7 @@ class TrackerResponseBody:
     def is_support_validate(self):
         """Gets the is_support_validate of this TrackerResponseBody.
 
-        是否打开事件文件校验。当前环境仅\"tracker_type\"参数值为\"system\"时支持该功能。
+        是否打开事件文件校验。
 
         :return: The is_support_validate of this TrackerResponseBody.
         :rtype: bool
@@ -217,7 +231,7 @@ class TrackerResponseBody:
     def is_support_validate(self, is_support_validate):
         """Sets the is_support_validate of this TrackerResponseBody.
 
-        是否打开事件文件校验。当前环境仅\"tracker_type\"参数值为\"system\"时支持该功能。
+        是否打开事件文件校验。
 
         :param is_support_validate: The is_support_validate of this TrackerResponseBody.
         :type is_support_validate: bool
@@ -397,6 +411,50 @@ class TrackerResponseBody:
         :type is_support_trace_files_encryption: bool
         """
         self._is_support_trace_files_encryption = is_support_trace_files_encryption
+
+    @property
+    def group_id(self):
+        """Gets the group_id of this TrackerResponseBody.
+
+        LTS服务日志组的ID。
+
+        :return: The group_id of this TrackerResponseBody.
+        :rtype: str
+        """
+        return self._group_id
+
+    @group_id.setter
+    def group_id(self, group_id):
+        """Sets the group_id of this TrackerResponseBody.
+
+        LTS服务日志组的ID。
+
+        :param group_id: The group_id of this TrackerResponseBody.
+        :type group_id: str
+        """
+        self._group_id = group_id
+
+    @property
+    def stream_id(self):
+        """Gets the stream_id of this TrackerResponseBody.
+
+        LTS服务日志流的ID。
+
+        :return: The stream_id of this TrackerResponseBody.
+        :rtype: str
+        """
+        return self._stream_id
+
+    @stream_id.setter
+    def stream_id(self, stream_id):
+        """Sets the stream_id of this TrackerResponseBody.
+
+        LTS服务日志流的ID。
+
+        :param stream_id: The stream_id of this TrackerResponseBody.
+        :type stream_id: str
+        """
+        self._stream_id = stream_id
 
     @property
     def obs_info(self):

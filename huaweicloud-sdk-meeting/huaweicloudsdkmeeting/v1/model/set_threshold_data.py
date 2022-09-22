@@ -35,9 +35,9 @@ class SetThresholdData:
 
         The model defined in huaweicloud sdk
 
-        :param receiving: 接收方向阈值设定值，单位为毫秒(ms) 取值范围：0 - 10000
+        :param receiving: 接收方向阈值设定值，单位为毫秒(ms)。 取值范围：0 - 10000。
         :type receiving: int
-        :param sending: 发送方向阈值设定值，单位为毫秒(ms) 取值范围：0 - 10000
+        :param sending: 发送方向阈值设定值，单位为毫秒(ms)。 取值范围：0 - 10000。
         :type sending: int
         """
         
@@ -56,7 +56,7 @@ class SetThresholdData:
     def receiving(self):
         """Gets the receiving of this SetThresholdData.
 
-        接收方向阈值设定值，单位为毫秒(ms) 取值范围：0 - 10000
+        接收方向阈值设定值，单位为毫秒(ms)。 取值范围：0 - 10000。
 
         :return: The receiving of this SetThresholdData.
         :rtype: int
@@ -67,7 +67,7 @@ class SetThresholdData:
     def receiving(self, receiving):
         """Sets the receiving of this SetThresholdData.
 
-        接收方向阈值设定值，单位为毫秒(ms) 取值范围：0 - 10000
+        接收方向阈值设定值，单位为毫秒(ms)。 取值范围：0 - 10000。
 
         :param receiving: The receiving of this SetThresholdData.
         :type receiving: int
@@ -78,7 +78,7 @@ class SetThresholdData:
     def sending(self):
         """Gets the sending of this SetThresholdData.
 
-        发送方向阈值设定值，单位为毫秒(ms) 取值范围：0 - 10000
+        发送方向阈值设定值，单位为毫秒(ms)。 取值范围：0 - 10000。
 
         :return: The sending of this SetThresholdData.
         :rtype: int
@@ -89,7 +89,7 @@ class SetThresholdData:
     def sending(self, sending):
         """Sets the sending of this SetThresholdData.
 
-        发送方向阈值设定值，单位为毫秒(ms) 取值范围：0 - 10000
+        发送方向阈值设定值，单位为毫秒(ms)。 取值范围：0 - 10000。
 
         :param sending: The sending of this SetThresholdData.
         :type sending: int

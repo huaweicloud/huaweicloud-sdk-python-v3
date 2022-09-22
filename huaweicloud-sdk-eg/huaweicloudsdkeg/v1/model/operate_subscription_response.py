@@ -22,35 +22,42 @@ class OperateSubscriptionResponse(SdkResponse):
 
     openapi_types = {
         'failed_count': 'int',
-        'events': 'list[SubscriptionOperateRespEvents]'
+        'events': 'list[SubscriptionOperateRespEvents]',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
         'failed_count': 'failed_count',
-        'events': 'events'
+        'events': 'events',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, failed_count=None, events=None):
+    def __init__(self, failed_count=None, events=None, x_request_id=None):
         """OperateSubscriptionResponse
 
         The model defined in huaweicloud sdk
 
         :param failed_count: 操作失败的订阅个数
         :type failed_count: int
-        :param events: 失败信息
+        :param events: 
         :type events: list[:class:`huaweicloudsdkeg.v1.SubscriptionOperateRespEvents`]
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(OperateSubscriptionResponse, self).__init__()
 
         self._failed_count = None
         self._events = None
+        self._x_request_id = None
         self.discriminator = None
 
         if failed_count is not None:
             self.failed_count = failed_count
         if events is not None:
             self.events = events
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def failed_count(self):
@@ -78,7 +85,6 @@ class OperateSubscriptionResponse(SdkResponse):
     def events(self):
         """Gets the events of this OperateSubscriptionResponse.
 
-        失败信息
 
         :return: The events of this OperateSubscriptionResponse.
         :rtype: list[:class:`huaweicloudsdkeg.v1.SubscriptionOperateRespEvents`]
@@ -89,12 +95,31 @@ class OperateSubscriptionResponse(SdkResponse):
     def events(self, events):
         """Sets the events of this OperateSubscriptionResponse.
 
-        失败信息
 
         :param events: The events of this OperateSubscriptionResponse.
         :type events: list[:class:`huaweicloudsdkeg.v1.SubscriptionOperateRespEvents`]
         """
         self._events = events
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this OperateSubscriptionResponse.
+
+
+        :return: The x_request_id of this OperateSubscriptionResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this OperateSubscriptionResponse.
+
+
+        :param x_request_id: The x_request_id of this OperateSubscriptionResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -47,15 +47,15 @@ class SearchCtlRecordsOfHisMeetingRequest:
 
         :param conf_uuid: 会议UUID。
         :type conf_uuid: str
-        :param offset: 指定返回的记录索引。该值必须大于等于0； 默认为0。
+        :param offset: 查询偏移量。默认为0。
         :type offset: int
-        :param limit: 指定返回的记录数，默认是20，最大500条。
+        :param limit: 查询数量。默认值20，最大500条。
         :type limit: int
-        :param user_uuid: 用户的UUID（已在USG注册过的）。
+        :param user_uuid: 用户的UUID。 &gt; 该参数将废弃，请勿使用。 
         :type user_uuid: str
-        :param x_authorization_type: 标识是否为第三方portal过来的请求。
+        :param x_authorization_type: 标识是否为第三方portal过来的请求。 &gt; 该参数将废弃，请勿使用。 
         :type x_authorization_type: str
-        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。 &gt; 该参数将废弃，请勿使用。 
         :type x_site_id: str
         :param accept_language: 语言。默认简体中文。 - zh-CN: 简体中文。 - en-US: 美国英文。
         :type accept_language: str
@@ -112,7 +112,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def offset(self):
         """Gets the offset of this SearchCtlRecordsOfHisMeetingRequest.
 
-        指定返回的记录索引。该值必须大于等于0； 默认为0。
+        查询偏移量。默认为0。
 
         :return: The offset of this SearchCtlRecordsOfHisMeetingRequest.
         :rtype: int
@@ -123,7 +123,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def offset(self, offset):
         """Sets the offset of this SearchCtlRecordsOfHisMeetingRequest.
 
-        指定返回的记录索引。该值必须大于等于0； 默认为0。
+        查询偏移量。默认为0。
 
         :param offset: The offset of this SearchCtlRecordsOfHisMeetingRequest.
         :type offset: int
@@ -134,7 +134,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def limit(self):
         """Gets the limit of this SearchCtlRecordsOfHisMeetingRequest.
 
-        指定返回的记录数，默认是20，最大500条。
+        查询数量。默认值20，最大500条。
 
         :return: The limit of this SearchCtlRecordsOfHisMeetingRequest.
         :rtype: int
@@ -145,7 +145,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def limit(self, limit):
         """Sets the limit of this SearchCtlRecordsOfHisMeetingRequest.
 
-        指定返回的记录数，默认是20，最大500条。
+        查询数量。默认值20，最大500条。
 
         :param limit: The limit of this SearchCtlRecordsOfHisMeetingRequest.
         :type limit: int
@@ -156,7 +156,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def user_uuid(self):
         """Gets the user_uuid of this SearchCtlRecordsOfHisMeetingRequest.
 
-        用户的UUID（已在USG注册过的）。
+        用户的UUID。 > 该参数将废弃，请勿使用。 
 
         :return: The user_uuid of this SearchCtlRecordsOfHisMeetingRequest.
         :rtype: str
@@ -167,7 +167,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def user_uuid(self, user_uuid):
         """Sets the user_uuid of this SearchCtlRecordsOfHisMeetingRequest.
 
-        用户的UUID（已在USG注册过的）。
+        用户的UUID。 > 该参数将废弃，请勿使用。 
 
         :param user_uuid: The user_uuid of this SearchCtlRecordsOfHisMeetingRequest.
         :type user_uuid: str
@@ -178,7 +178,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def x_authorization_type(self):
         """Gets the x_authorization_type of this SearchCtlRecordsOfHisMeetingRequest.
 
-        标识是否为第三方portal过来的请求。
+        标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
         :return: The x_authorization_type of this SearchCtlRecordsOfHisMeetingRequest.
         :rtype: str
@@ -189,7 +189,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def x_authorization_type(self, x_authorization_type):
         """Sets the x_authorization_type of this SearchCtlRecordsOfHisMeetingRequest.
 
-        标识是否为第三方portal过来的请求。
+        标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
         :param x_authorization_type: The x_authorization_type of this SearchCtlRecordsOfHisMeetingRequest.
         :type x_authorization_type: str
@@ -200,7 +200,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def x_site_id(self):
         """Gets the x_site_id of this SearchCtlRecordsOfHisMeetingRequest.
 
-        用于区分到哪个HCSO站点鉴权。
+        用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
         :return: The x_site_id of this SearchCtlRecordsOfHisMeetingRequest.
         :rtype: str
@@ -211,7 +211,7 @@ class SearchCtlRecordsOfHisMeetingRequest:
     def x_site_id(self, x_site_id):
         """Sets the x_site_id of this SearchCtlRecordsOfHisMeetingRequest.
 
-        用于区分到哪个HCSO站点鉴权。
+        用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
         :param x_site_id: The x_site_id of this SearchCtlRecordsOfHisMeetingRequest.
         :type x_site_id: str

@@ -53,25 +53,25 @@ class SearchResourceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
         :type offset: int
-        :param limit: 查询数量 默认值：0 
+        :param limit: 查询数量。 默认值：10。 
         :type limit: int
-        :param search_key: 搜索条件
+        :param search_key: 搜索条件。
         :type search_key: str
-        :param corp_id: 企业id
+        :param corp_id: 企业id。
         :type corp_id: str
-        :param start_expire_date: 查询过期时间在该时间戳之后的资源项
+        :param start_expire_date: 查询过期时间在该时间戳之后的资源项。
         :type start_expire_date: int
-        :param end_expire_date: 查询过期时间在该时间戳之前的资源项
+        :param end_expire_date: 查询过期时间在该时间戳之前的资源项。
         :type end_expire_date: int
-        :param type: 资源类型
+        :param type: 资源类型。
         :type type: str
-        :param type_id: 资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id
+        :param type_id: 资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id。
         :type type_id: str
         :param status: 订单状态: - 0：正常 - 1：到期，仅查询时返回 - 2：停用
         :type status: int
@@ -118,7 +118,7 @@ class SearchResourceRequest:
     def x_request_id(self):
         """Gets the x_request_id of this SearchResourceRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this SearchResourceRequest.
         :rtype: str
@@ -129,7 +129,7 @@ class SearchResourceRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this SearchResourceRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this SearchResourceRequest.
         :type x_request_id: str
@@ -140,7 +140,7 @@ class SearchResourceRequest:
     def accept_language(self):
         """Gets the accept_language of this SearchResourceRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this SearchResourceRequest.
         :rtype: str
@@ -151,7 +151,7 @@ class SearchResourceRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this SearchResourceRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this SearchResourceRequest.
         :type accept_language: str
@@ -162,7 +162,7 @@ class SearchResourceRequest:
     def offset(self):
         """Gets the offset of this SearchResourceRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
         :return: The offset of this SearchResourceRequest.
         :rtype: int
@@ -173,7 +173,7 @@ class SearchResourceRequest:
     def offset(self, offset):
         """Sets the offset of this SearchResourceRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
         :param offset: The offset of this SearchResourceRequest.
         :type offset: int
@@ -184,7 +184,7 @@ class SearchResourceRequest:
     def limit(self):
         """Gets the limit of this SearchResourceRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :return: The limit of this SearchResourceRequest.
         :rtype: int
@@ -195,7 +195,7 @@ class SearchResourceRequest:
     def limit(self, limit):
         """Sets the limit of this SearchResourceRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :param limit: The limit of this SearchResourceRequest.
         :type limit: int
@@ -206,7 +206,7 @@ class SearchResourceRequest:
     def search_key(self):
         """Gets the search_key of this SearchResourceRequest.
 
-        搜索条件
+        搜索条件。
 
         :return: The search_key of this SearchResourceRequest.
         :rtype: str
@@ -217,7 +217,7 @@ class SearchResourceRequest:
     def search_key(self, search_key):
         """Sets the search_key of this SearchResourceRequest.
 
-        搜索条件
+        搜索条件。
 
         :param search_key: The search_key of this SearchResourceRequest.
         :type search_key: str
@@ -228,7 +228,7 @@ class SearchResourceRequest:
     def corp_id(self):
         """Gets the corp_id of this SearchResourceRequest.
 
-        企业id
+        企业id。
 
         :return: The corp_id of this SearchResourceRequest.
         :rtype: str
@@ -239,7 +239,7 @@ class SearchResourceRequest:
     def corp_id(self, corp_id):
         """Sets the corp_id of this SearchResourceRequest.
 
-        企业id
+        企业id。
 
         :param corp_id: The corp_id of this SearchResourceRequest.
         :type corp_id: str
@@ -250,7 +250,7 @@ class SearchResourceRequest:
     def start_expire_date(self):
         """Gets the start_expire_date of this SearchResourceRequest.
 
-        查询过期时间在该时间戳之后的资源项
+        查询过期时间在该时间戳之后的资源项。
 
         :return: The start_expire_date of this SearchResourceRequest.
         :rtype: int
@@ -261,7 +261,7 @@ class SearchResourceRequest:
     def start_expire_date(self, start_expire_date):
         """Sets the start_expire_date of this SearchResourceRequest.
 
-        查询过期时间在该时间戳之后的资源项
+        查询过期时间在该时间戳之后的资源项。
 
         :param start_expire_date: The start_expire_date of this SearchResourceRequest.
         :type start_expire_date: int
@@ -272,7 +272,7 @@ class SearchResourceRequest:
     def end_expire_date(self):
         """Gets the end_expire_date of this SearchResourceRequest.
 
-        查询过期时间在该时间戳之前的资源项
+        查询过期时间在该时间戳之前的资源项。
 
         :return: The end_expire_date of this SearchResourceRequest.
         :rtype: int
@@ -283,7 +283,7 @@ class SearchResourceRequest:
     def end_expire_date(self, end_expire_date):
         """Sets the end_expire_date of this SearchResourceRequest.
 
-        查询过期时间在该时间戳之前的资源项
+        查询过期时间在该时间戳之前的资源项。
 
         :param end_expire_date: The end_expire_date of this SearchResourceRequest.
         :type end_expire_date: int
@@ -294,7 +294,7 @@ class SearchResourceRequest:
     def type(self):
         """Gets the type of this SearchResourceRequest.
 
-        资源类型
+        资源类型。
 
         :return: The type of this SearchResourceRequest.
         :rtype: str
@@ -305,7 +305,7 @@ class SearchResourceRequest:
     def type(self, type):
         """Sets the type of this SearchResourceRequest.
 
-        资源类型
+        资源类型。
 
         :param type: The type of this SearchResourceRequest.
         :type type: str
@@ -316,7 +316,7 @@ class SearchResourceRequest:
     def type_id(self):
         """Gets the type_id of this SearchResourceRequest.
 
-        资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id
+        资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id。
 
         :return: The type_id of this SearchResourceRequest.
         :rtype: str
@@ -327,7 +327,7 @@ class SearchResourceRequest:
     def type_id(self, type_id):
         """Sets the type_id of this SearchResourceRequest.
 
-        资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id
+        资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id。
 
         :param type_id: The type_id of this SearchResourceRequest.
         :type type_id: str

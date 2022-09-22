@@ -35,7 +35,7 @@ class RestChairTokenReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param apply_chair: - 0: 释放主持人。 - 1: 申请主持人。
+        :param apply_chair: - 0: 释放主持人 - 1: 申请主持人
         :type apply_chair: int
         :param chairman_pwd: 当申请主持人时，携带主持人密码。
         :type chairman_pwd: str
@@ -55,7 +55,7 @@ class RestChairTokenReqBody:
     def apply_chair(self):
         """Gets the apply_chair of this RestChairTokenReqBody.
 
-        - 0: 释放主持人。 - 1: 申请主持人。
+        - 0: 释放主持人 - 1: 申请主持人
 
         :return: The apply_chair of this RestChairTokenReqBody.
         :rtype: int
@@ -66,7 +66,7 @@ class RestChairTokenReqBody:
     def apply_chair(self, apply_chair):
         """Sets the apply_chair of this RestChairTokenReqBody.
 
-        - 0: 释放主持人。 - 1: 申请主持人。
+        - 0: 释放主持人 - 1: 申请主持人
 
         :param apply_chair: The apply_chair of this RestChairTokenReqBody.
         :type apply_chair: int

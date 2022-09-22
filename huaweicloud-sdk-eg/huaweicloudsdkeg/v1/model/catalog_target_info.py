@@ -26,7 +26,7 @@ class CatalogTargetInfo:
         'label': 'str',
         'description': 'str',
         'provider_type': 'str',
-        'parameters': 'list[CatalogTargetParameters]',
+        'parameters': 'list[object]',
         'created_time': 'str',
         'updated_time': 'str'
     }
@@ -57,8 +57,8 @@ class CatalogTargetInfo:
         :type description: str
         :param provider_type: 提供方类型，OFFICIAL：官方云服务事件目标；CUSTOM：第三方事件目标
         :type provider_type: str
-        :param parameters: 事件目标参数
-        :type parameters: list[:class:`huaweicloudsdkeg.v1.CatalogTargetParameters`]
+        :param parameters: 
+        :type parameters: list[object]
         :param created_time: 创建UTC时间
         :type created_time: str
         :param updated_time: 更新UTC时间
@@ -208,10 +208,9 @@ class CatalogTargetInfo:
     def parameters(self):
         """Gets the parameters of this CatalogTargetInfo.
 
-        事件目标参数
 
         :return: The parameters of this CatalogTargetInfo.
-        :rtype: list[:class:`huaweicloudsdkeg.v1.CatalogTargetParameters`]
+        :rtype: list[object]
         """
         return self._parameters
 
@@ -219,10 +218,9 @@ class CatalogTargetInfo:
     def parameters(self, parameters):
         """Sets the parameters of this CatalogTargetInfo.
 
-        事件目标参数
 
         :param parameters: The parameters of this CatalogTargetInfo.
-        :type parameters: list[:class:`huaweicloudsdkeg.v1.CatalogTargetParameters`]
+        :type parameters: list[object]
         """
         self._parameters = parameters
 

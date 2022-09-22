@@ -33,7 +33,7 @@ class AdminResetPwdReqDTO:
 
         The model defined in huaweicloud sdk
 
-        :param account: 被修改密码的用户账号 maxLength：255 minLength：1 
+        :param account: 被修改密码的用户帐号。 
         :type account: str
         """
         
@@ -48,7 +48,7 @@ class AdminResetPwdReqDTO:
     def account(self):
         """Gets the account of this AdminResetPwdReqDTO.
 
-        被修改密码的用户账号 maxLength：255 minLength：1 
+        被修改密码的用户帐号。 
 
         :return: The account of this AdminResetPwdReqDTO.
         :rtype: str
@@ -59,7 +59,7 @@ class AdminResetPwdReqDTO:
     def account(self, account):
         """Sets the account of this AdminResetPwdReqDTO.
 
-        被修改密码的用户账号 maxLength：255 minLength：1 
+        被修改密码的用户帐号。 
 
         :param account: The account of this AdminResetPwdReqDTO.
         :type account: str

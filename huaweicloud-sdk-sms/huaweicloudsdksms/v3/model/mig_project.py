@@ -21,9 +21,11 @@ class MigProject:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'name': 'str',
         'description': 'str',
         'isdefault': 'bool',
+        'template': 'TemplateResponseBody',
         'region': 'str',
         'start_target_server': 'bool',
         'speed_limit': 'int',
@@ -35,9 +37,11 @@ class MigProject:
     }
 
     attribute_map = {
+        'id': 'id',
         'name': 'name',
         'description': 'description',
         'isdefault': 'isdefault',
+        'template': 'template',
         'region': 'region',
         'start_target_server': 'start_target_server',
         'speed_limit': 'speed_limit',
@@ -48,17 +52,21 @@ class MigProject:
         'syncing': 'syncing'
     }
 
-    def __init__(self, name=None, description=None, isdefault=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None):
+    def __init__(self, id=None, name=None, description=None, isdefault=None, template=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None):
         """MigProject
 
         The model defined in huaweicloud sdk
 
+        :param id: 迁移项目ID
+        :type id: str
         :param name: 迁移项目名称
         :type name: str
         :param description: 迁移项目描述
         :type description: str
         :param isdefault: 是否为默认模板
         :type isdefault: bool
+        :param template: 
+        :type template: :class:`huaweicloudsdksms.v3.TemplateResponseBody`
         :param region: 区域名称
         :type region: str
         :param start_target_server: 迁移后是否启动目的端虚拟机
@@ -69,7 +77,7 @@ class MigProject:
         :type use_public_ip: bool
         :param exist_server: 是否是已经存在的服务器
         :type exist_server: bool
-        :param type: 迁移项目类型
+        :param type: 迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
         :type type: str
         :param enterprise_project: 企业项目名称
         :type enterprise_project: str
@@ -79,9 +87,11 @@ class MigProject:
         
         
 
+        self._id = None
         self._name = None
         self._description = None
         self._isdefault = None
+        self._template = None
         self._region = None
         self._start_target_server = None
         self._speed_limit = None
@@ -92,11 +102,15 @@ class MigProject:
         self._syncing = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         self.name = name
         if description is not None:
             self.description = description
         if isdefault is not None:
             self.isdefault = isdefault
+        if template is not None:
+            self.template = template
         self.region = region
         if start_target_server is not None:
             self.start_target_server = start_target_server
@@ -108,6 +122,28 @@ class MigProject:
         if enterprise_project is not None:
             self.enterprise_project = enterprise_project
         self.syncing = syncing
+
+    @property
+    def id(self):
+        """Gets the id of this MigProject.
+
+        迁移项目ID
+
+        :return: The id of this MigProject.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this MigProject.
+
+        迁移项目ID
+
+        :param id: The id of this MigProject.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def name(self):
@@ -174,6 +210,26 @@ class MigProject:
         :type isdefault: bool
         """
         self._isdefault = isdefault
+
+    @property
+    def template(self):
+        """Gets the template of this MigProject.
+
+
+        :return: The template of this MigProject.
+        :rtype: :class:`huaweicloudsdksms.v3.TemplateResponseBody`
+        """
+        return self._template
+
+    @template.setter
+    def template(self, template):
+        """Sets the template of this MigProject.
+
+
+        :param template: The template of this MigProject.
+        :type template: :class:`huaweicloudsdksms.v3.TemplateResponseBody`
+        """
+        self._template = template
 
     @property
     def region(self):
@@ -289,7 +345,7 @@ class MigProject:
     def type(self):
         """Gets the type of this MigProject.
 
-        迁移项目类型
+        迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
         :return: The type of this MigProject.
         :rtype: str
@@ -300,7 +356,7 @@ class MigProject:
     def type(self, type):
         """Sets the type of this MigProject.
 
-        迁移项目类型
+        迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
         :param type: The type of this MigProject.
         :type type: str

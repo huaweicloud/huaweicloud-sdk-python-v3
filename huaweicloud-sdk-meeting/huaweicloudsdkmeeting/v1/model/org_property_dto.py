@@ -35,9 +35,9 @@ class OrgPropertyDTO:
 
         The model defined in huaweicloud sdk
 
-        :param property_key: 配置项key。 开通本地录制功能，参数填写：enableClientRecord 
+        :param property_key: 配置项key。 开通本地录制功能，参数填写：enableClientRecord。 
         :type property_key: str
-        :param property_value: 配置项值。 开通本地录制功能，参数填写：true 
+        :param property_value: 配置项值。 开通本地录制功能，参数填写：true。 
         :type property_value: str
         """
         
@@ -56,7 +56,7 @@ class OrgPropertyDTO:
     def property_key(self):
         """Gets the property_key of this OrgPropertyDTO.
 
-        配置项key。 开通本地录制功能，参数填写：enableClientRecord 
+        配置项key。 开通本地录制功能，参数填写：enableClientRecord。 
 
         :return: The property_key of this OrgPropertyDTO.
         :rtype: str
@@ -67,7 +67,7 @@ class OrgPropertyDTO:
     def property_key(self, property_key):
         """Sets the property_key of this OrgPropertyDTO.
 
-        配置项key。 开通本地录制功能，参数填写：enableClientRecord 
+        配置项key。 开通本地录制功能，参数填写：enableClientRecord。 
 
         :param property_key: The property_key of this OrgPropertyDTO.
         :type property_key: str
@@ -78,7 +78,7 @@ class OrgPropertyDTO:
     def property_value(self):
         """Gets the property_value of this OrgPropertyDTO.
 
-        配置项值。 开通本地录制功能，参数填写：true 
+        配置项值。 开通本地录制功能，参数填写：true。 
 
         :return: The property_value of this OrgPropertyDTO.
         :rtype: str
@@ -89,7 +89,7 @@ class OrgPropertyDTO:
     def property_value(self, property_value):
         """Sets the property_value of this OrgPropertyDTO.
 
-        配置项值。 开通本地录制功能，参数填写：true 
+        配置项值。 开通本地录制功能，参数填写：true。 
 
         :param property_value: The property_value of this OrgPropertyDTO.
         :type property_value: str

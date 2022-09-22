@@ -33,7 +33,7 @@ class SourceServerByTask:
 
         The model defined in huaweicloud sdk
 
-        :param id: 源端服务器id
+        :param id: 源端服务器ID
         :type id: str
         """
         
@@ -48,7 +48,7 @@ class SourceServerByTask:
     def id(self):
         """Gets the id of this SourceServerByTask.
 
-        源端服务器id
+        源端服务器ID
 
         :return: The id of this SourceServerByTask.
         :rtype: str
@@ -59,7 +59,7 @@ class SourceServerByTask:
     def id(self, id):
         """Sets the id of this SourceServerByTask.
 
-        源端服务器id
+        源端服务器ID
 
         :param id: The id of this SourceServerByTask.
         :type id: str

@@ -97,17 +97,17 @@ class QosParticipantInfo:
         :type conf_uuid: str
         :param conference_id: 会议ID。
         :type conference_id: str
-        :param participant_id: 入会UUID。
+        :param participant_id: 与会者标识。
         :type participant_id: str
         :param user_uuid: 用户UUID。
         :type user_uuid: str
-        :param display_name: 与会者的名称（昵称）。
+        :param display_name: 与会者的名称。
         :type display_name: str
-        :param dept_name: 部门。
+        :param dept_name: 部门名称。
         :type dept_name: str
-        :param terminal_type: 入会终端类型。 - PC: PC机。 - MOBILE: 手机。 - PAD：PAD设备。 - MAC：MAC设备。 - WEB：WEB方式入会，如通过WebRTC入会。 - ROOM: 会议室。 - 硬件终端：显示具体的硬件设备类型，如TE50, HUAWEI IDEAHUB, CISCO等。 - OTHER: 其他设备。
+        :param terminal_type: 入会终端类型。 - PC: PC机 - MOBILE: 手机 - PAD：PAD设备 - MAC：MAC设备 - WEB：WEB方式入会，如通过WebRTC入会 - ROOM: 会议室 - 硬件终端：显示具体的硬件设备类型，如TE50, HUAWEI IDEAHUB, CISCO等 - OTHER: 其他设备
         :type terminal_type: str
-        :param role: 与会者角色。 - host：主持人。 - guest：来宾。 - audience：观众。
+        :param role: 与会者角色。 - host：主持人 - guest：来宾 - audience：观众
         :type role: str
         :param ip_address: 与会者的IP地址。
         :type ip_address: str
@@ -121,27 +121,27 @@ class QosParticipantInfo:
         :type app_version: str
         :param join_time: 入会时间(UTC时间), Unix时间戳（单位毫秒）。
         :type join_time: int
-        :param left_time: 离会时间(UTC时间), Unix时间戳（单位毫秒）。 说明： * 与会者未离会：leftTime &#x3D; 0。 * 与会者已离会：leftTime &#x3D; 实际离会时间。
+        :param left_time: 离会时间(UTC时间), Unix时间戳（单位毫秒）。 &gt; * 与会者未离会：leftTime &#x3D; 0 &gt; * 与会者已离会：leftTime &#x3D; 实际离会时间
         :type left_time: int
-        :param system_info: 系统信息。
+        :param system_info: 终端操作系统信息。
         :type system_info: str
         :param network_type: 网络类型。
         :type network_type: str
-        :param alarm: 总体告警 YES/NO。 说明： * 音频（发送/接收），视频（发送/接收），屏幕共享（发送/接收），CPU任一项产生告警，总体告警状态即为 YES。
+        :param alarm: 总体告警。 * YES：音频（发送/接收），视频（发送/接收），屏幕共享（发送/接收），CPU任一项产生告警，总体告警状态即为 YES * NO：无告警
         :type alarm: str
-        :param audio_alarm_send: 音频发送告警 YES / NO。 说明： * 发送音频的抖动，时延，丢包率任一项产生阈值告警，则音频发送告警状态为YES。
+        :param audio_alarm_send: 音频发送告警。 * YES ：发送音频的抖动，时延，丢包率任一项产生阈值告警，则音频发送告警状态为YES * NO：发送音频无告警
         :type audio_alarm_send: str
-        :param video_alarm_send: 视频发送告警 YES / NO。 说明： * 发送视频的抖动，时延，丢包率，分辨率任一项产生阈值告警，则视频发送告警状态为YES。
+        :param video_alarm_send: 视频发送告警。 * YES ：发送视频的抖动，时延，丢包率任一项产生阈值告警，则视频发送告警状态为YES * NO：发送视频无告警
         :type video_alarm_send: str
-        :param screen_alarm_send: 屏幕共享发送告警 YES / NO。 说明： * 发送屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享发送告警状态为YES。
+        :param screen_alarm_send: 屏幕共享发送告警。 * YES：发送屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享发送告警状态为YES * NO：发送屏幕共享无告警
         :type screen_alarm_send: str
-        :param audio_alarm_rec: 音频接收告警 YES / NO。 说明： * 接收音频的抖动，时延，丢包率任一项产生阈值告警，则音频接收告警状态为YES。
+        :param audio_alarm_rec: 音频接收告警。 * YES：接收音频的抖动，时延，丢包率任一项产生阈值告警，则音频接收告警状态为YES * NO：接收音频无告警
         :type audio_alarm_rec: str
-        :param video_alarm_rec: 视频接收告警 YES / NO。 说明： * 接收视频的抖动，时延，丢包率任一项产生阈值告警，则视频接收告警状态为YES。
+        :param video_alarm_rec: 视频接收告警。 * YES：接收视频的抖动，时延，丢包率任一项产生阈值告警，则视频接收告警状态为YES * NO：接收视频无告警
         :type video_alarm_rec: str
-        :param screen_alarm_rec: 屏幕共享接收告警 YES / NO。 说明： * 接收屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享接收告警状态为YES。
+        :param screen_alarm_rec: 屏幕共享接收告警。 * YES：接收屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享接收告警状态为YES * NO：接收屏幕共享无告警
         :type screen_alarm_rec: str
-        :param cpu_alarm: CPU告警 YES / NO。 说明： * 端侧的APP最大CPU使用率或系统最大CPU使用率任一项产生阈值告警，则CPU告警状态为YES。
+        :param cpu_alarm: CPU告警。 * YES：端侧的APP最大CPU使用率或系统最大CPU使用率任一项产生阈值告警，则CPU告警状态为YES * NO：CPU无告警
         :type cpu_alarm: str
         :param microphone_info: 麦克风。
         :type microphone_info: str
@@ -151,9 +151,9 @@ class QosParticipantInfo:
         :type camera_info: str
         :param data_center: 数据中心。
         :type data_center: str
-        :param left_reason: 离会原因。此字段仅标识离会原因，不做为是否已离会的判断依据。正在与会人员的离会原因初始值 &#x3D; 0。 说明： * 0：正常离会。 * 1：网络异常离会。
+        :param left_reason: 离会原因。此字段仅标识离会原因，不做为是否已离会的判断依据。正在与会人员的离会原因初始值 &#x3D; 0。 * 0：正常离会 * 1：网络异常离会
         :type left_reason: int
-        :param exist_qos: 与会者是否存在QoS数据。 true：存在QoS数据。 false：不存在QoS数据。
+        :param exist_qos: 与会者是否存在QoS数据。 * true：存在QoS数据 * false：不存在QoS数据
         :type exist_qos: bool
         """
         
@@ -303,7 +303,7 @@ class QosParticipantInfo:
     def participant_id(self):
         """Gets the participant_id of this QosParticipantInfo.
 
-        入会UUID。
+        与会者标识。
 
         :return: The participant_id of this QosParticipantInfo.
         :rtype: str
@@ -314,7 +314,7 @@ class QosParticipantInfo:
     def participant_id(self, participant_id):
         """Sets the participant_id of this QosParticipantInfo.
 
-        入会UUID。
+        与会者标识。
 
         :param participant_id: The participant_id of this QosParticipantInfo.
         :type participant_id: str
@@ -347,7 +347,7 @@ class QosParticipantInfo:
     def display_name(self):
         """Gets the display_name of this QosParticipantInfo.
 
-        与会者的名称（昵称）。
+        与会者的名称。
 
         :return: The display_name of this QosParticipantInfo.
         :rtype: str
@@ -358,7 +358,7 @@ class QosParticipantInfo:
     def display_name(self, display_name):
         """Sets the display_name of this QosParticipantInfo.
 
-        与会者的名称（昵称）。
+        与会者的名称。
 
         :param display_name: The display_name of this QosParticipantInfo.
         :type display_name: str
@@ -369,7 +369,7 @@ class QosParticipantInfo:
     def dept_name(self):
         """Gets the dept_name of this QosParticipantInfo.
 
-        部门。
+        部门名称。
 
         :return: The dept_name of this QosParticipantInfo.
         :rtype: str
@@ -380,7 +380,7 @@ class QosParticipantInfo:
     def dept_name(self, dept_name):
         """Sets the dept_name of this QosParticipantInfo.
 
-        部门。
+        部门名称。
 
         :param dept_name: The dept_name of this QosParticipantInfo.
         :type dept_name: str
@@ -391,7 +391,7 @@ class QosParticipantInfo:
     def terminal_type(self):
         """Gets the terminal_type of this QosParticipantInfo.
 
-        入会终端类型。 - PC: PC机。 - MOBILE: 手机。 - PAD：PAD设备。 - MAC：MAC设备。 - WEB：WEB方式入会，如通过WebRTC入会。 - ROOM: 会议室。 - 硬件终端：显示具体的硬件设备类型，如TE50, HUAWEI IDEAHUB, CISCO等。 - OTHER: 其他设备。
+        入会终端类型。 - PC: PC机 - MOBILE: 手机 - PAD：PAD设备 - MAC：MAC设备 - WEB：WEB方式入会，如通过WebRTC入会 - ROOM: 会议室 - 硬件终端：显示具体的硬件设备类型，如TE50, HUAWEI IDEAHUB, CISCO等 - OTHER: 其他设备
 
         :return: The terminal_type of this QosParticipantInfo.
         :rtype: str
@@ -402,7 +402,7 @@ class QosParticipantInfo:
     def terminal_type(self, terminal_type):
         """Sets the terminal_type of this QosParticipantInfo.
 
-        入会终端类型。 - PC: PC机。 - MOBILE: 手机。 - PAD：PAD设备。 - MAC：MAC设备。 - WEB：WEB方式入会，如通过WebRTC入会。 - ROOM: 会议室。 - 硬件终端：显示具体的硬件设备类型，如TE50, HUAWEI IDEAHUB, CISCO等。 - OTHER: 其他设备。
+        入会终端类型。 - PC: PC机 - MOBILE: 手机 - PAD：PAD设备 - MAC：MAC设备 - WEB：WEB方式入会，如通过WebRTC入会 - ROOM: 会议室 - 硬件终端：显示具体的硬件设备类型，如TE50, HUAWEI IDEAHUB, CISCO等 - OTHER: 其他设备
 
         :param terminal_type: The terminal_type of this QosParticipantInfo.
         :type terminal_type: str
@@ -413,7 +413,7 @@ class QosParticipantInfo:
     def role(self):
         """Gets the role of this QosParticipantInfo.
 
-        与会者角色。 - host：主持人。 - guest：来宾。 - audience：观众。
+        与会者角色。 - host：主持人 - guest：来宾 - audience：观众
 
         :return: The role of this QosParticipantInfo.
         :rtype: str
@@ -424,7 +424,7 @@ class QosParticipantInfo:
     def role(self, role):
         """Sets the role of this QosParticipantInfo.
 
-        与会者角色。 - host：主持人。 - guest：来宾。 - audience：观众。
+        与会者角色。 - host：主持人 - guest：来宾 - audience：观众
 
         :param role: The role of this QosParticipantInfo.
         :type role: str
@@ -567,7 +567,7 @@ class QosParticipantInfo:
     def left_time(self):
         """Gets the left_time of this QosParticipantInfo.
 
-        离会时间(UTC时间), Unix时间戳（单位毫秒）。 说明： * 与会者未离会：leftTime = 0。 * 与会者已离会：leftTime = 实际离会时间。
+        离会时间(UTC时间), Unix时间戳（单位毫秒）。 > * 与会者未离会：leftTime = 0 > * 与会者已离会：leftTime = 实际离会时间
 
         :return: The left_time of this QosParticipantInfo.
         :rtype: int
@@ -578,7 +578,7 @@ class QosParticipantInfo:
     def left_time(self, left_time):
         """Sets the left_time of this QosParticipantInfo.
 
-        离会时间(UTC时间), Unix时间戳（单位毫秒）。 说明： * 与会者未离会：leftTime = 0。 * 与会者已离会：leftTime = 实际离会时间。
+        离会时间(UTC时间), Unix时间戳（单位毫秒）。 > * 与会者未离会：leftTime = 0 > * 与会者已离会：leftTime = 实际离会时间
 
         :param left_time: The left_time of this QosParticipantInfo.
         :type left_time: int
@@ -589,7 +589,7 @@ class QosParticipantInfo:
     def system_info(self):
         """Gets the system_info of this QosParticipantInfo.
 
-        系统信息。
+        终端操作系统信息。
 
         :return: The system_info of this QosParticipantInfo.
         :rtype: str
@@ -600,7 +600,7 @@ class QosParticipantInfo:
     def system_info(self, system_info):
         """Sets the system_info of this QosParticipantInfo.
 
-        系统信息。
+        终端操作系统信息。
 
         :param system_info: The system_info of this QosParticipantInfo.
         :type system_info: str
@@ -633,7 +633,7 @@ class QosParticipantInfo:
     def alarm(self):
         """Gets the alarm of this QosParticipantInfo.
 
-        总体告警 YES/NO。 说明： * 音频（发送/接收），视频（发送/接收），屏幕共享（发送/接收），CPU任一项产生告警，总体告警状态即为 YES。
+        总体告警。 * YES：音频（发送/接收），视频（发送/接收），屏幕共享（发送/接收），CPU任一项产生告警，总体告警状态即为 YES * NO：无告警
 
         :return: The alarm of this QosParticipantInfo.
         :rtype: str
@@ -644,7 +644,7 @@ class QosParticipantInfo:
     def alarm(self, alarm):
         """Sets the alarm of this QosParticipantInfo.
 
-        总体告警 YES/NO。 说明： * 音频（发送/接收），视频（发送/接收），屏幕共享（发送/接收），CPU任一项产生告警，总体告警状态即为 YES。
+        总体告警。 * YES：音频（发送/接收），视频（发送/接收），屏幕共享（发送/接收），CPU任一项产生告警，总体告警状态即为 YES * NO：无告警
 
         :param alarm: The alarm of this QosParticipantInfo.
         :type alarm: str
@@ -655,7 +655,7 @@ class QosParticipantInfo:
     def audio_alarm_send(self):
         """Gets the audio_alarm_send of this QosParticipantInfo.
 
-        音频发送告警 YES / NO。 说明： * 发送音频的抖动，时延，丢包率任一项产生阈值告警，则音频发送告警状态为YES。
+        音频发送告警。 * YES ：发送音频的抖动，时延，丢包率任一项产生阈值告警，则音频发送告警状态为YES * NO：发送音频无告警
 
         :return: The audio_alarm_send of this QosParticipantInfo.
         :rtype: str
@@ -666,7 +666,7 @@ class QosParticipantInfo:
     def audio_alarm_send(self, audio_alarm_send):
         """Sets the audio_alarm_send of this QosParticipantInfo.
 
-        音频发送告警 YES / NO。 说明： * 发送音频的抖动，时延，丢包率任一项产生阈值告警，则音频发送告警状态为YES。
+        音频发送告警。 * YES ：发送音频的抖动，时延，丢包率任一项产生阈值告警，则音频发送告警状态为YES * NO：发送音频无告警
 
         :param audio_alarm_send: The audio_alarm_send of this QosParticipantInfo.
         :type audio_alarm_send: str
@@ -677,7 +677,7 @@ class QosParticipantInfo:
     def video_alarm_send(self):
         """Gets the video_alarm_send of this QosParticipantInfo.
 
-        视频发送告警 YES / NO。 说明： * 发送视频的抖动，时延，丢包率，分辨率任一项产生阈值告警，则视频发送告警状态为YES。
+        视频发送告警。 * YES ：发送视频的抖动，时延，丢包率任一项产生阈值告警，则视频发送告警状态为YES * NO：发送视频无告警
 
         :return: The video_alarm_send of this QosParticipantInfo.
         :rtype: str
@@ -688,7 +688,7 @@ class QosParticipantInfo:
     def video_alarm_send(self, video_alarm_send):
         """Sets the video_alarm_send of this QosParticipantInfo.
 
-        视频发送告警 YES / NO。 说明： * 发送视频的抖动，时延，丢包率，分辨率任一项产生阈值告警，则视频发送告警状态为YES。
+        视频发送告警。 * YES ：发送视频的抖动，时延，丢包率任一项产生阈值告警，则视频发送告警状态为YES * NO：发送视频无告警
 
         :param video_alarm_send: The video_alarm_send of this QosParticipantInfo.
         :type video_alarm_send: str
@@ -699,7 +699,7 @@ class QosParticipantInfo:
     def screen_alarm_send(self):
         """Gets the screen_alarm_send of this QosParticipantInfo.
 
-        屏幕共享发送告警 YES / NO。 说明： * 发送屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享发送告警状态为YES。
+        屏幕共享发送告警。 * YES：发送屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享发送告警状态为YES * NO：发送屏幕共享无告警
 
         :return: The screen_alarm_send of this QosParticipantInfo.
         :rtype: str
@@ -710,7 +710,7 @@ class QosParticipantInfo:
     def screen_alarm_send(self, screen_alarm_send):
         """Sets the screen_alarm_send of this QosParticipantInfo.
 
-        屏幕共享发送告警 YES / NO。 说明： * 发送屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享发送告警状态为YES。
+        屏幕共享发送告警。 * YES：发送屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享发送告警状态为YES * NO：发送屏幕共享无告警
 
         :param screen_alarm_send: The screen_alarm_send of this QosParticipantInfo.
         :type screen_alarm_send: str
@@ -721,7 +721,7 @@ class QosParticipantInfo:
     def audio_alarm_rec(self):
         """Gets the audio_alarm_rec of this QosParticipantInfo.
 
-        音频接收告警 YES / NO。 说明： * 接收音频的抖动，时延，丢包率任一项产生阈值告警，则音频接收告警状态为YES。
+        音频接收告警。 * YES：接收音频的抖动，时延，丢包率任一项产生阈值告警，则音频接收告警状态为YES * NO：接收音频无告警
 
         :return: The audio_alarm_rec of this QosParticipantInfo.
         :rtype: str
@@ -732,7 +732,7 @@ class QosParticipantInfo:
     def audio_alarm_rec(self, audio_alarm_rec):
         """Sets the audio_alarm_rec of this QosParticipantInfo.
 
-        音频接收告警 YES / NO。 说明： * 接收音频的抖动，时延，丢包率任一项产生阈值告警，则音频接收告警状态为YES。
+        音频接收告警。 * YES：接收音频的抖动，时延，丢包率任一项产生阈值告警，则音频接收告警状态为YES * NO：接收音频无告警
 
         :param audio_alarm_rec: The audio_alarm_rec of this QosParticipantInfo.
         :type audio_alarm_rec: str
@@ -743,7 +743,7 @@ class QosParticipantInfo:
     def video_alarm_rec(self):
         """Gets the video_alarm_rec of this QosParticipantInfo.
 
-        视频接收告警 YES / NO。 说明： * 接收视频的抖动，时延，丢包率任一项产生阈值告警，则视频接收告警状态为YES。
+        视频接收告警。 * YES：接收视频的抖动，时延，丢包率任一项产生阈值告警，则视频接收告警状态为YES * NO：接收视频无告警
 
         :return: The video_alarm_rec of this QosParticipantInfo.
         :rtype: str
@@ -754,7 +754,7 @@ class QosParticipantInfo:
     def video_alarm_rec(self, video_alarm_rec):
         """Sets the video_alarm_rec of this QosParticipantInfo.
 
-        视频接收告警 YES / NO。 说明： * 接收视频的抖动，时延，丢包率任一项产生阈值告警，则视频接收告警状态为YES。
+        视频接收告警。 * YES：接收视频的抖动，时延，丢包率任一项产生阈值告警，则视频接收告警状态为YES * NO：接收视频无告警
 
         :param video_alarm_rec: The video_alarm_rec of this QosParticipantInfo.
         :type video_alarm_rec: str
@@ -765,7 +765,7 @@ class QosParticipantInfo:
     def screen_alarm_rec(self):
         """Gets the screen_alarm_rec of this QosParticipantInfo.
 
-        屏幕共享接收告警 YES / NO。 说明： * 接收屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享接收告警状态为YES。
+        屏幕共享接收告警。 * YES：接收屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享接收告警状态为YES * NO：接收屏幕共享无告警
 
         :return: The screen_alarm_rec of this QosParticipantInfo.
         :rtype: str
@@ -776,7 +776,7 @@ class QosParticipantInfo:
     def screen_alarm_rec(self, screen_alarm_rec):
         """Sets the screen_alarm_rec of this QosParticipantInfo.
 
-        屏幕共享接收告警 YES / NO。 说明： * 接收屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享接收告警状态为YES。
+        屏幕共享接收告警。 * YES：接收屏幕共享的抖动，时延，丢包率任一项产生阈值告警，则屏幕共享接收告警状态为YES * NO：接收屏幕共享无告警
 
         :param screen_alarm_rec: The screen_alarm_rec of this QosParticipantInfo.
         :type screen_alarm_rec: str
@@ -787,7 +787,7 @@ class QosParticipantInfo:
     def cpu_alarm(self):
         """Gets the cpu_alarm of this QosParticipantInfo.
 
-        CPU告警 YES / NO。 说明： * 端侧的APP最大CPU使用率或系统最大CPU使用率任一项产生阈值告警，则CPU告警状态为YES。
+        CPU告警。 * YES：端侧的APP最大CPU使用率或系统最大CPU使用率任一项产生阈值告警，则CPU告警状态为YES * NO：CPU无告警
 
         :return: The cpu_alarm of this QosParticipantInfo.
         :rtype: str
@@ -798,7 +798,7 @@ class QosParticipantInfo:
     def cpu_alarm(self, cpu_alarm):
         """Sets the cpu_alarm of this QosParticipantInfo.
 
-        CPU告警 YES / NO。 说明： * 端侧的APP最大CPU使用率或系统最大CPU使用率任一项产生阈值告警，则CPU告警状态为YES。
+        CPU告警。 * YES：端侧的APP最大CPU使用率或系统最大CPU使用率任一项产生阈值告警，则CPU告警状态为YES * NO：CPU无告警
 
         :param cpu_alarm: The cpu_alarm of this QosParticipantInfo.
         :type cpu_alarm: str
@@ -897,7 +897,7 @@ class QosParticipantInfo:
     def left_reason(self):
         """Gets the left_reason of this QosParticipantInfo.
 
-        离会原因。此字段仅标识离会原因，不做为是否已离会的判断依据。正在与会人员的离会原因初始值 = 0。 说明： * 0：正常离会。 * 1：网络异常离会。
+        离会原因。此字段仅标识离会原因，不做为是否已离会的判断依据。正在与会人员的离会原因初始值 = 0。 * 0：正常离会 * 1：网络异常离会
 
         :return: The left_reason of this QosParticipantInfo.
         :rtype: int
@@ -908,7 +908,7 @@ class QosParticipantInfo:
     def left_reason(self, left_reason):
         """Sets the left_reason of this QosParticipantInfo.
 
-        离会原因。此字段仅标识离会原因，不做为是否已离会的判断依据。正在与会人员的离会原因初始值 = 0。 说明： * 0：正常离会。 * 1：网络异常离会。
+        离会原因。此字段仅标识离会原因，不做为是否已离会的判断依据。正在与会人员的离会原因初始值 = 0。 * 0：正常离会 * 1：网络异常离会
 
         :param left_reason: The left_reason of this QosParticipantInfo.
         :type left_reason: int
@@ -919,7 +919,7 @@ class QosParticipantInfo:
     def exist_qos(self):
         """Gets the exist_qos of this QosParticipantInfo.
 
-        与会者是否存在QoS数据。 true：存在QoS数据。 false：不存在QoS数据。
+        与会者是否存在QoS数据。 * true：存在QoS数据 * false：不存在QoS数据
 
         :return: The exist_qos of this QosParticipantInfo.
         :rtype: bool
@@ -930,7 +930,7 @@ class QosParticipantInfo:
     def exist_qos(self, exist_qos):
         """Sets the exist_qos of this QosParticipantInfo.
 
-        与会者是否存在QoS数据。 true：存在QoS数据。 false：不存在QoS数据。
+        与会者是否存在QoS数据。 * true：存在QoS数据 * false：不存在QoS数据
 
         :param exist_qos: The exist_qos of this QosParticipantInfo.
         :type exist_qos: bool

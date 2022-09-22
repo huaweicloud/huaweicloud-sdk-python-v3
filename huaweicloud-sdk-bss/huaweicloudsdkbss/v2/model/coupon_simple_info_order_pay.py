@@ -35,9 +35,9 @@ class CouponSimpleInfoOrderPay:
 
         The model defined in huaweicloud sdk
 
-        :param id: 折扣ID。
+        :param id: 优惠券ID。
         :type id: str
-        :param type: 折扣类型： 0：促销折扣 1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
+        :param type: 折扣类型：300:折扣券 301:促销代金券 302:促销现金券
         :type type: int
         """
         
@@ -54,7 +54,7 @@ class CouponSimpleInfoOrderPay:
     def id(self):
         """Gets the id of this CouponSimpleInfoOrderPay.
 
-        折扣ID。
+        优惠券ID。
 
         :return: The id of this CouponSimpleInfoOrderPay.
         :rtype: str
@@ -65,7 +65,7 @@ class CouponSimpleInfoOrderPay:
     def id(self, id):
         """Sets the id of this CouponSimpleInfoOrderPay.
 
-        折扣ID。
+        优惠券ID。
 
         :param id: The id of this CouponSimpleInfoOrderPay.
         :type id: str
@@ -76,7 +76,7 @@ class CouponSimpleInfoOrderPay:
     def type(self):
         """Gets the type of this CouponSimpleInfoOrderPay.
 
-        折扣类型： 0：促销折扣 1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
+        折扣类型：300:折扣券 301:促销代金券 302:促销现金券
 
         :return: The type of this CouponSimpleInfoOrderPay.
         :rtype: int
@@ -87,7 +87,7 @@ class CouponSimpleInfoOrderPay:
     def type(self, type):
         """Sets the type of this CouponSimpleInfoOrderPay.
 
-        折扣类型： 0：促销折扣 1：合同折扣2：商务优惠3：合作伙伴授予折扣609：订单调价折扣 说明： 订单支付时，如果包含609折扣（订单调价折扣），则必须使用，不能再更换折扣类型。
+        折扣类型：300:折扣券 301:促销代金券 302:促销现金券
 
         :param type: The type of this CouponSimpleInfoOrderPay.
         :type type: int

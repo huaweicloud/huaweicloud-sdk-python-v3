@@ -43,7 +43,7 @@ class SubTaskAssociatedWithTask:
 
         The model defined in huaweicloud sdk
 
-        :param id: 子任务id
+        :param id: 子任务ID
         :type id: int
         :param name: 子任务名称
         :type name: str
@@ -84,7 +84,7 @@ class SubTaskAssociatedWithTask:
     def id(self):
         """Gets the id of this SubTaskAssociatedWithTask.
 
-        子任务id
+        子任务ID
 
         :return: The id of this SubTaskAssociatedWithTask.
         :rtype: int
@@ -95,7 +95,7 @@ class SubTaskAssociatedWithTask:
     def id(self, id):
         """Sets the id of this SubTaskAssociatedWithTask.
 
-        子任务id
+        子任务ID
 
         :param id: The id of this SubTaskAssociatedWithTask.
         :type id: int

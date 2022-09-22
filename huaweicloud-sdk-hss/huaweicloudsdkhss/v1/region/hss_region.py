@@ -10,6 +10,8 @@ class HssRegion:
     _PROVIDER = RegionProviderChain.get_default_region_provider_chain("HSS")
 
 
+    CN_NORTH_9 = Region(id="cn-north-9", endpoint="https://hss.cn-north-9.myhuaweicloud.com")
+
     CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://hss.cn-north-1.myhuaweicloud.com")
 
     CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://hss.cn-north-4.myhuaweicloud.com")
@@ -41,6 +43,7 @@ class HssRegion:
     CN_SOUTH_4 = Region(id="cn-south-4", endpoint="https://hss.cn-south-4.myhuaweicloud.com")
 
     static_fields = {
+        "cn-north-9": CN_NORTH_9,
         "cn-north-1": CN_NORTH_1,
         "cn-north-4": CN_NORTH_4,
         "cn-southwest-2": CN_SOUTHWEST_2,

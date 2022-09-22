@@ -87,61 +87,61 @@ class UserInfo:
 
         The model defined in huaweicloud sdk
 
-        :param user_id: 用户ID
+        :param user_id: 用户UUID。
         :type user_id: str
-        :param uclogin_account: 用户UC帐号
+        :param uclogin_account: 华为云会议帐号。
         :type uclogin_account: str
-        :param service_account: 用户关联的号码，sip格式。 登录类型不一样获取到的号码也不同，如软终端和硬终端客户端登录获取的号码不同。若未关联号码，则为空。 例如：sip:+8675590121000@domain5.huawei.com 
+        :param service_account: 用户关联的SIP号码。 
         :type service_account: str
-        :param number_ha1: 号码对应的HA1
+        :param number_ha1: 号码对应的HA1。
         :type number_ha1: str
-        :param alias1: 用户别名1
+        :param alias1: 用户别名。
         :type alias1: str
-        :param company_id: 企业ID
+        :param company_id: 用户归属的企业ID。
         :type company_id: str
-        :param sp_id: SP ID
+        :param sp_id: 用户所在企业归属的SP ID。
         :type sp_id: str
-        :param company_domain: 企业域名
+        :param company_domain: 企业域名。
         :type company_domain: str
-        :param realm: 本地鉴权：realm
+        :param realm: 本地鉴权。
         :type realm: str
-        :param user_type: 用户类型。 * 0：系统管理用户 * 1：SP管理用户 * 2：企业用户 * 3：upath用户 * 4：硬终端默认用户 * 5：TE终端用户 * 6：顾客用户 * 7：公共设备用户 * 8：集群群组用户 * 9：USM用户 
+        :param user_type: 用户类型。 * 1：SP管理用户 * 2：企业用户 * 3：免费注册用户 * 10：企业设备用户 * 11：匿名用户 * 12：智慧屏用户 * 13：IdeaHub用户 * 14：电子白板（SmartRooms）用户 
         :type user_type: int
-        :param admin_type: 管理员类型： * 0：默认管理员 * 1：普通管理员 * 2：非管理员，即普通企业成员，USERTYPE为2时有效 
+        :param admin_type: 管理员类型。 * 0：默认管理员 * 1：普通管理员 * 2：非管理员，即普通企业成员，userType为2时有效 
         :type admin_type: int
-        :param name: 用户姓名
+        :param name: 用户名称。
         :type name: str
-        :param name_en: 用户英文姓名
+        :param name_en: 用户英文名称。
         :type name_en: str
-        :param is_bind_phone: 标识是否绑定手机
+        :param is_bind_phone: 标识是否绑定手机。
         :type is_bind_phone: bool
-        :param free_user: 标识是否是免费试用用户
+        :param free_user: 标识是否是免费试用用户。
         :type free_user: bool
-        :param third_account: 用户的第三方账号，例如华为账号登录时获取到的union_id
+        :param third_account: 第三方的用户帐号。
         :type third_account: str
-        :param vision_account: 智慧屏设备id
+        :param vision_account: 智慧屏设备ID。
         :type vision_account: str
-        :param head_picture_url: 头像链接
+        :param head_picture_url: 头像链接。
         :type head_picture_url: str
-        :param password: 机机密码，用于智慧屏登录
+        :param password: 机机密码，用于智慧屏登录。
         :type password: str
         :param status: 用户状态。 * 0：正常 * 1：停用 
         :type status: int
-        :param paid_account: 付费用户机机账号，用于智慧屏登录
+        :param paid_account: 付费用户机机帐号，用于智慧屏登录。
         :type paid_account: str
-        :param paid_password: 付费用户机机密码，用于智慧屏登录
+        :param paid_password: 付费用户机机密码，用于智慧屏登录。
         :type paid_password: str
-        :param we_link_user: 标识是否是WeLink用户
+        :param we_link_user: 标识是否是WeLink用户。
         :type we_link_user: bool
-        :param app_id: 应用ID
+        :param app_id: 应用ID。
         :type app_id: str
-        :param tr069_account: tr069帐号
+        :param tr069_account: tr069帐号。
         :type tr069_account: str
-        :param corp_type: 企业类型。 * 0：企业版 * 1：公共企业，手机、邮箱注册时会放到该企业内 * 2：公共企业，智慧屏用户自动开户时会放到该企业内 * 3：公共企业，大屏用户自动开户时会放到该企业内 * 4：公共TOC消费者企业 * 5：免费版 * 6：专业版 
+        :param corp_type: 企业类型。 * 0：旗舰版 * 5：免费版 * 6：标准版 
         :type corp_type: int
-        :param cloud_user_id: 华为云账号ID
+        :param cloud_user_id: 华为云帐号ID。
         :type cloud_user_id: str
-        :param gray_user: 标识是否是灰度用户
+        :param gray_user: 标识是否是灰度用户。
         :type gray_user: bool
         """
         
@@ -237,7 +237,7 @@ class UserInfo:
     def user_id(self):
         """Gets the user_id of this UserInfo.
 
-        用户ID
+        用户UUID。
 
         :return: The user_id of this UserInfo.
         :rtype: str
@@ -248,7 +248,7 @@ class UserInfo:
     def user_id(self, user_id):
         """Sets the user_id of this UserInfo.
 
-        用户ID
+        用户UUID。
 
         :param user_id: The user_id of this UserInfo.
         :type user_id: str
@@ -259,7 +259,7 @@ class UserInfo:
     def uclogin_account(self):
         """Gets the uclogin_account of this UserInfo.
 
-        用户UC帐号
+        华为云会议帐号。
 
         :return: The uclogin_account of this UserInfo.
         :rtype: str
@@ -270,7 +270,7 @@ class UserInfo:
     def uclogin_account(self, uclogin_account):
         """Sets the uclogin_account of this UserInfo.
 
-        用户UC帐号
+        华为云会议帐号。
 
         :param uclogin_account: The uclogin_account of this UserInfo.
         :type uclogin_account: str
@@ -281,7 +281,7 @@ class UserInfo:
     def service_account(self):
         """Gets the service_account of this UserInfo.
 
-        用户关联的号码，sip格式。 登录类型不一样获取到的号码也不同，如软终端和硬终端客户端登录获取的号码不同。若未关联号码，则为空。 例如：sip:+8675590121000@domain5.huawei.com 
+        用户关联的SIP号码。 
 
         :return: The service_account of this UserInfo.
         :rtype: str
@@ -292,7 +292,7 @@ class UserInfo:
     def service_account(self, service_account):
         """Sets the service_account of this UserInfo.
 
-        用户关联的号码，sip格式。 登录类型不一样获取到的号码也不同，如软终端和硬终端客户端登录获取的号码不同。若未关联号码，则为空。 例如：sip:+8675590121000@domain5.huawei.com 
+        用户关联的SIP号码。 
 
         :param service_account: The service_account of this UserInfo.
         :type service_account: str
@@ -303,7 +303,7 @@ class UserInfo:
     def number_ha1(self):
         """Gets the number_ha1 of this UserInfo.
 
-        号码对应的HA1
+        号码对应的HA1。
 
         :return: The number_ha1 of this UserInfo.
         :rtype: str
@@ -314,7 +314,7 @@ class UserInfo:
     def number_ha1(self, number_ha1):
         """Sets the number_ha1 of this UserInfo.
 
-        号码对应的HA1
+        号码对应的HA1。
 
         :param number_ha1: The number_ha1 of this UserInfo.
         :type number_ha1: str
@@ -325,7 +325,7 @@ class UserInfo:
     def alias1(self):
         """Gets the alias1 of this UserInfo.
 
-        用户别名1
+        用户别名。
 
         :return: The alias1 of this UserInfo.
         :rtype: str
@@ -336,7 +336,7 @@ class UserInfo:
     def alias1(self, alias1):
         """Sets the alias1 of this UserInfo.
 
-        用户别名1
+        用户别名。
 
         :param alias1: The alias1 of this UserInfo.
         :type alias1: str
@@ -347,7 +347,7 @@ class UserInfo:
     def company_id(self):
         """Gets the company_id of this UserInfo.
 
-        企业ID
+        用户归属的企业ID。
 
         :return: The company_id of this UserInfo.
         :rtype: str
@@ -358,7 +358,7 @@ class UserInfo:
     def company_id(self, company_id):
         """Sets the company_id of this UserInfo.
 
-        企业ID
+        用户归属的企业ID。
 
         :param company_id: The company_id of this UserInfo.
         :type company_id: str
@@ -369,7 +369,7 @@ class UserInfo:
     def sp_id(self):
         """Gets the sp_id of this UserInfo.
 
-        SP ID
+        用户所在企业归属的SP ID。
 
         :return: The sp_id of this UserInfo.
         :rtype: str
@@ -380,7 +380,7 @@ class UserInfo:
     def sp_id(self, sp_id):
         """Sets the sp_id of this UserInfo.
 
-        SP ID
+        用户所在企业归属的SP ID。
 
         :param sp_id: The sp_id of this UserInfo.
         :type sp_id: str
@@ -391,7 +391,7 @@ class UserInfo:
     def company_domain(self):
         """Gets the company_domain of this UserInfo.
 
-        企业域名
+        企业域名。
 
         :return: The company_domain of this UserInfo.
         :rtype: str
@@ -402,7 +402,7 @@ class UserInfo:
     def company_domain(self, company_domain):
         """Sets the company_domain of this UserInfo.
 
-        企业域名
+        企业域名。
 
         :param company_domain: The company_domain of this UserInfo.
         :type company_domain: str
@@ -413,7 +413,7 @@ class UserInfo:
     def realm(self):
         """Gets the realm of this UserInfo.
 
-        本地鉴权：realm
+        本地鉴权。
 
         :return: The realm of this UserInfo.
         :rtype: str
@@ -424,7 +424,7 @@ class UserInfo:
     def realm(self, realm):
         """Sets the realm of this UserInfo.
 
-        本地鉴权：realm
+        本地鉴权。
 
         :param realm: The realm of this UserInfo.
         :type realm: str
@@ -435,7 +435,7 @@ class UserInfo:
     def user_type(self):
         """Gets the user_type of this UserInfo.
 
-        用户类型。 * 0：系统管理用户 * 1：SP管理用户 * 2：企业用户 * 3：upath用户 * 4：硬终端默认用户 * 5：TE终端用户 * 6：顾客用户 * 7：公共设备用户 * 8：集群群组用户 * 9：USM用户 
+        用户类型。 * 1：SP管理用户 * 2：企业用户 * 3：免费注册用户 * 10：企业设备用户 * 11：匿名用户 * 12：智慧屏用户 * 13：IdeaHub用户 * 14：电子白板（SmartRooms）用户 
 
         :return: The user_type of this UserInfo.
         :rtype: int
@@ -446,7 +446,7 @@ class UserInfo:
     def user_type(self, user_type):
         """Sets the user_type of this UserInfo.
 
-        用户类型。 * 0：系统管理用户 * 1：SP管理用户 * 2：企业用户 * 3：upath用户 * 4：硬终端默认用户 * 5：TE终端用户 * 6：顾客用户 * 7：公共设备用户 * 8：集群群组用户 * 9：USM用户 
+        用户类型。 * 1：SP管理用户 * 2：企业用户 * 3：免费注册用户 * 10：企业设备用户 * 11：匿名用户 * 12：智慧屏用户 * 13：IdeaHub用户 * 14：电子白板（SmartRooms）用户 
 
         :param user_type: The user_type of this UserInfo.
         :type user_type: int
@@ -457,7 +457,7 @@ class UserInfo:
     def admin_type(self):
         """Gets the admin_type of this UserInfo.
 
-        管理员类型： * 0：默认管理员 * 1：普通管理员 * 2：非管理员，即普通企业成员，USERTYPE为2时有效 
+        管理员类型。 * 0：默认管理员 * 1：普通管理员 * 2：非管理员，即普通企业成员，userType为2时有效 
 
         :return: The admin_type of this UserInfo.
         :rtype: int
@@ -468,7 +468,7 @@ class UserInfo:
     def admin_type(self, admin_type):
         """Sets the admin_type of this UserInfo.
 
-        管理员类型： * 0：默认管理员 * 1：普通管理员 * 2：非管理员，即普通企业成员，USERTYPE为2时有效 
+        管理员类型。 * 0：默认管理员 * 1：普通管理员 * 2：非管理员，即普通企业成员，userType为2时有效 
 
         :param admin_type: The admin_type of this UserInfo.
         :type admin_type: int
@@ -479,7 +479,7 @@ class UserInfo:
     def name(self):
         """Gets the name of this UserInfo.
 
-        用户姓名
+        用户名称。
 
         :return: The name of this UserInfo.
         :rtype: str
@@ -490,7 +490,7 @@ class UserInfo:
     def name(self, name):
         """Sets the name of this UserInfo.
 
-        用户姓名
+        用户名称。
 
         :param name: The name of this UserInfo.
         :type name: str
@@ -501,7 +501,7 @@ class UserInfo:
     def name_en(self):
         """Gets the name_en of this UserInfo.
 
-        用户英文姓名
+        用户英文名称。
 
         :return: The name_en of this UserInfo.
         :rtype: str
@@ -512,7 +512,7 @@ class UserInfo:
     def name_en(self, name_en):
         """Sets the name_en of this UserInfo.
 
-        用户英文姓名
+        用户英文名称。
 
         :param name_en: The name_en of this UserInfo.
         :type name_en: str
@@ -523,7 +523,7 @@ class UserInfo:
     def is_bind_phone(self):
         """Gets the is_bind_phone of this UserInfo.
 
-        标识是否绑定手机
+        标识是否绑定手机。
 
         :return: The is_bind_phone of this UserInfo.
         :rtype: bool
@@ -534,7 +534,7 @@ class UserInfo:
     def is_bind_phone(self, is_bind_phone):
         """Sets the is_bind_phone of this UserInfo.
 
-        标识是否绑定手机
+        标识是否绑定手机。
 
         :param is_bind_phone: The is_bind_phone of this UserInfo.
         :type is_bind_phone: bool
@@ -545,7 +545,7 @@ class UserInfo:
     def free_user(self):
         """Gets the free_user of this UserInfo.
 
-        标识是否是免费试用用户
+        标识是否是免费试用用户。
 
         :return: The free_user of this UserInfo.
         :rtype: bool
@@ -556,7 +556,7 @@ class UserInfo:
     def free_user(self, free_user):
         """Sets the free_user of this UserInfo.
 
-        标识是否是免费试用用户
+        标识是否是免费试用用户。
 
         :param free_user: The free_user of this UserInfo.
         :type free_user: bool
@@ -567,7 +567,7 @@ class UserInfo:
     def third_account(self):
         """Gets the third_account of this UserInfo.
 
-        用户的第三方账号，例如华为账号登录时获取到的union_id
+        第三方的用户帐号。
 
         :return: The third_account of this UserInfo.
         :rtype: str
@@ -578,7 +578,7 @@ class UserInfo:
     def third_account(self, third_account):
         """Sets the third_account of this UserInfo.
 
-        用户的第三方账号，例如华为账号登录时获取到的union_id
+        第三方的用户帐号。
 
         :param third_account: The third_account of this UserInfo.
         :type third_account: str
@@ -589,7 +589,7 @@ class UserInfo:
     def vision_account(self):
         """Gets the vision_account of this UserInfo.
 
-        智慧屏设备id
+        智慧屏设备ID。
 
         :return: The vision_account of this UserInfo.
         :rtype: str
@@ -600,7 +600,7 @@ class UserInfo:
     def vision_account(self, vision_account):
         """Sets the vision_account of this UserInfo.
 
-        智慧屏设备id
+        智慧屏设备ID。
 
         :param vision_account: The vision_account of this UserInfo.
         :type vision_account: str
@@ -611,7 +611,7 @@ class UserInfo:
     def head_picture_url(self):
         """Gets the head_picture_url of this UserInfo.
 
-        头像链接
+        头像链接。
 
         :return: The head_picture_url of this UserInfo.
         :rtype: str
@@ -622,7 +622,7 @@ class UserInfo:
     def head_picture_url(self, head_picture_url):
         """Sets the head_picture_url of this UserInfo.
 
-        头像链接
+        头像链接。
 
         :param head_picture_url: The head_picture_url of this UserInfo.
         :type head_picture_url: str
@@ -633,7 +633,7 @@ class UserInfo:
     def password(self):
         """Gets the password of this UserInfo.
 
-        机机密码，用于智慧屏登录
+        机机密码，用于智慧屏登录。
 
         :return: The password of this UserInfo.
         :rtype: str
@@ -644,7 +644,7 @@ class UserInfo:
     def password(self, password):
         """Sets the password of this UserInfo.
 
-        机机密码，用于智慧屏登录
+        机机密码，用于智慧屏登录。
 
         :param password: The password of this UserInfo.
         :type password: str
@@ -677,7 +677,7 @@ class UserInfo:
     def paid_account(self):
         """Gets the paid_account of this UserInfo.
 
-        付费用户机机账号，用于智慧屏登录
+        付费用户机机帐号，用于智慧屏登录。
 
         :return: The paid_account of this UserInfo.
         :rtype: str
@@ -688,7 +688,7 @@ class UserInfo:
     def paid_account(self, paid_account):
         """Sets the paid_account of this UserInfo.
 
-        付费用户机机账号，用于智慧屏登录
+        付费用户机机帐号，用于智慧屏登录。
 
         :param paid_account: The paid_account of this UserInfo.
         :type paid_account: str
@@ -699,7 +699,7 @@ class UserInfo:
     def paid_password(self):
         """Gets the paid_password of this UserInfo.
 
-        付费用户机机密码，用于智慧屏登录
+        付费用户机机密码，用于智慧屏登录。
 
         :return: The paid_password of this UserInfo.
         :rtype: str
@@ -710,7 +710,7 @@ class UserInfo:
     def paid_password(self, paid_password):
         """Sets the paid_password of this UserInfo.
 
-        付费用户机机密码，用于智慧屏登录
+        付费用户机机密码，用于智慧屏登录。
 
         :param paid_password: The paid_password of this UserInfo.
         :type paid_password: str
@@ -721,7 +721,7 @@ class UserInfo:
     def we_link_user(self):
         """Gets the we_link_user of this UserInfo.
 
-        标识是否是WeLink用户
+        标识是否是WeLink用户。
 
         :return: The we_link_user of this UserInfo.
         :rtype: bool
@@ -732,7 +732,7 @@ class UserInfo:
     def we_link_user(self, we_link_user):
         """Sets the we_link_user of this UserInfo.
 
-        标识是否是WeLink用户
+        标识是否是WeLink用户。
 
         :param we_link_user: The we_link_user of this UserInfo.
         :type we_link_user: bool
@@ -743,7 +743,7 @@ class UserInfo:
     def app_id(self):
         """Gets the app_id of this UserInfo.
 
-        应用ID
+        应用ID。
 
         :return: The app_id of this UserInfo.
         :rtype: str
@@ -754,7 +754,7 @@ class UserInfo:
     def app_id(self, app_id):
         """Sets the app_id of this UserInfo.
 
-        应用ID
+        应用ID。
 
         :param app_id: The app_id of this UserInfo.
         :type app_id: str
@@ -765,7 +765,7 @@ class UserInfo:
     def tr069_account(self):
         """Gets the tr069_account of this UserInfo.
 
-        tr069帐号
+        tr069帐号。
 
         :return: The tr069_account of this UserInfo.
         :rtype: str
@@ -776,7 +776,7 @@ class UserInfo:
     def tr069_account(self, tr069_account):
         """Sets the tr069_account of this UserInfo.
 
-        tr069帐号
+        tr069帐号。
 
         :param tr069_account: The tr069_account of this UserInfo.
         :type tr069_account: str
@@ -787,7 +787,7 @@ class UserInfo:
     def corp_type(self):
         """Gets the corp_type of this UserInfo.
 
-        企业类型。 * 0：企业版 * 1：公共企业，手机、邮箱注册时会放到该企业内 * 2：公共企业，智慧屏用户自动开户时会放到该企业内 * 3：公共企业，大屏用户自动开户时会放到该企业内 * 4：公共TOC消费者企业 * 5：免费版 * 6：专业版 
+        企业类型。 * 0：旗舰版 * 5：免费版 * 6：标准版 
 
         :return: The corp_type of this UserInfo.
         :rtype: int
@@ -798,7 +798,7 @@ class UserInfo:
     def corp_type(self, corp_type):
         """Sets the corp_type of this UserInfo.
 
-        企业类型。 * 0：企业版 * 1：公共企业，手机、邮箱注册时会放到该企业内 * 2：公共企业，智慧屏用户自动开户时会放到该企业内 * 3：公共企业，大屏用户自动开户时会放到该企业内 * 4：公共TOC消费者企业 * 5：免费版 * 6：专业版 
+        企业类型。 * 0：旗舰版 * 5：免费版 * 6：标准版 
 
         :param corp_type: The corp_type of this UserInfo.
         :type corp_type: int
@@ -809,7 +809,7 @@ class UserInfo:
     def cloud_user_id(self):
         """Gets the cloud_user_id of this UserInfo.
 
-        华为云账号ID
+        华为云帐号ID。
 
         :return: The cloud_user_id of this UserInfo.
         :rtype: str
@@ -820,7 +820,7 @@ class UserInfo:
     def cloud_user_id(self, cloud_user_id):
         """Sets the cloud_user_id of this UserInfo.
 
-        华为云账号ID
+        华为云帐号ID。
 
         :param cloud_user_id: The cloud_user_id of this UserInfo.
         :type cloud_user_id: str
@@ -831,7 +831,7 @@ class UserInfo:
     def gray_user(self):
         """Gets the gray_user of this UserInfo.
 
-        标识是否是灰度用户
+        标识是否是灰度用户。
 
         :return: The gray_user of this UserInfo.
         :rtype: bool
@@ -842,7 +842,7 @@ class UserInfo:
     def gray_user(self, gray_user):
         """Sets the gray_user of this UserInfo.
 
-        标识是否是灰度用户
+        标识是否是灰度用户。
 
         :param gray_user: The gray_user of this UserInfo.
         :type gray_user: bool

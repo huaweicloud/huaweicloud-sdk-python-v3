@@ -59,8 +59,7 @@ class AudioCreateRequest:
 
         self.data = data
         self.event_type = event_type
-        if categories is not None:
-            self.categories = categories
+        self.categories = categories
         if param_callback is not None:
             self.param_callback = param_callback
 

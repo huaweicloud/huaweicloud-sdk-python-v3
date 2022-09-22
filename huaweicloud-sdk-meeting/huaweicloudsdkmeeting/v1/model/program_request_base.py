@@ -33,7 +33,7 @@ class ProgramRequestBase:
 
         The model defined in huaweicloud sdk
 
-        :param program_name: 节目名称
+        :param program_name: 节目名称。
         :type program_name: str
         """
         
@@ -48,7 +48,7 @@ class ProgramRequestBase:
     def program_name(self):
         """Gets the program_name of this ProgramRequestBase.
 
-        节目名称
+        节目名称。
 
         :return: The program_name of this ProgramRequestBase.
         :rtype: str
@@ -59,7 +59,7 @@ class ProgramRequestBase:
     def program_name(self, program_name):
         """Sets the program_name of this ProgramRequestBase.
 
-        节目名称
+        节目名称。
 
         :param program_name: The program_name of this ProgramRequestBase.
         :type program_name: str

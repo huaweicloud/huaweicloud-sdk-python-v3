@@ -35,9 +35,9 @@ class UpdateStartedConfigReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param lock_sharing: 锁定共享标志位 0:不锁定  1:锁定
+        :param lock_sharing: 锁定共享标志位。 * 0: 不锁定 * 1: 锁定 
         :type lock_sharing: int
-        :param call_in_restriction: 允许呼入的范围 0：所有用户  2：企业内用户  3：被邀请用户
+        :param call_in_restriction: 允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户 
         :type call_in_restriction: int
         """
         
@@ -56,7 +56,7 @@ class UpdateStartedConfigReqBody:
     def lock_sharing(self):
         """Gets the lock_sharing of this UpdateStartedConfigReqBody.
 
-        锁定共享标志位 0:不锁定  1:锁定
+        锁定共享标志位。 * 0: 不锁定 * 1: 锁定 
 
         :return: The lock_sharing of this UpdateStartedConfigReqBody.
         :rtype: int
@@ -67,7 +67,7 @@ class UpdateStartedConfigReqBody:
     def lock_sharing(self, lock_sharing):
         """Sets the lock_sharing of this UpdateStartedConfigReqBody.
 
-        锁定共享标志位 0:不锁定  1:锁定
+        锁定共享标志位。 * 0: 不锁定 * 1: 锁定 
 
         :param lock_sharing: The lock_sharing of this UpdateStartedConfigReqBody.
         :type lock_sharing: int
@@ -78,7 +78,7 @@ class UpdateStartedConfigReqBody:
     def call_in_restriction(self):
         """Gets the call_in_restriction of this UpdateStartedConfigReqBody.
 
-        允许呼入的范围 0：所有用户  2：企业内用户  3：被邀请用户
+        允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户 
 
         :return: The call_in_restriction of this UpdateStartedConfigReqBody.
         :rtype: int
@@ -89,7 +89,7 @@ class UpdateStartedConfigReqBody:
     def call_in_restriction(self, call_in_restriction):
         """Sets the call_in_restriction of this UpdateStartedConfigReqBody.
 
-        允许呼入的范围 0：所有用户  2：企业内用户  3：被邀请用户
+        允许加入会议的范围。 - 0: 所有用户 - 2: 企业内用户 - 3: 被邀请用户 
 
         :param call_in_restriction: The call_in_restriction of this UpdateStartedConfigReqBody.
         :type call_in_restriction: int

@@ -47,7 +47,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
         :type cut_image: str
         :param point_y: 抠出图形的Y轴座标。
         :type point_y: int
-        :param token: 验证码token字符串。
+        :param token: 验证码Token字符串。
         :type token: str
         :param expire: 验证码有效时间，单位：秒。
         :type expire: int
@@ -143,7 +143,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
     def token(self):
         """Gets the token of this SendSlideVerifyCodeResponse.
 
-        验证码token字符串。
+        验证码Token字符串。
 
         :return: The token of this SendSlideVerifyCodeResponse.
         :rtype: str
@@ -154,7 +154,7 @@ class SendSlideVerifyCodeResponse(SdkResponse):
     def token(self, token):
         """Sets the token of this SendSlideVerifyCodeResponse.
 
-        验证码token字符串。
+        验证码Token字符串。
 
         :param token: The token of this SendSlideVerifyCodeResponse.
         :type token: str

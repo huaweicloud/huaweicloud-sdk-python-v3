@@ -67,41 +67,41 @@ class UpdateTokenResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param access_token: 接入token字符串。
+        :param access_token: Access Token字符串。
         :type access_token: str
         :param token_ip: 用户IP。
         :type token_ip: str
-        :param valid_period: token有效时长，单位：秒。
+        :param valid_period: Access Token有效时长，单位：秒。
         :type valid_period: int
-        :param expire_time: token的失效时间戳，单位：秒。
+        :param expire_time: Access Token的失效时间戳，单位：秒。
         :type expire_time: int
-        :param create_time: 业务token的创建时间戳，单位：毫秒。
+        :param create_time: Access Token的创建时间戳，单位：毫秒。
         :type create_time: int
         :param user: 
         :type user: :class:`huaweicloudsdkmeeting.v1.UserInfo`
         :param client_type: 登录帐号类型。 * 72：API调用类型 
         :type client_type: int
-        :param force_login_ind: 抢占登录标识 * 0：非抢占 * 1：抢占  未启用 
+        :param force_login_ind: 抢占登录标识。 * 0： 非抢占 * 1： 抢占 
         :type force_login_ind: int
-        :param first_login: 是否首次登录（说明：首次登录表示尚未修改过密码。首次登录时，系统会提醒用户需要修改密码），默认值：false。
+        :param first_login: 是否首次登录。 &gt; 首次登录表示尚未修改过密码。首次登录时，系统会提醒用户需要修改密码。 默认值：false。 
         :type first_login: bool
         :param pwd_expired: 密码是否过期，默认值：false。
         :type pwd_expired: bool
-        :param days_pwd_available: 密码有效天数
+        :param days_pwd_available: 密码有效天数。
         :type days_pwd_available: int
         :param proxy_token: 
         :type proxy_token: :class:`huaweicloudsdkmeeting.v1.ProxyTokenDTO`
-        :param delay_delete: 是否延时删除状态
+        :param delay_delete: 是否延时删除状态。
         :type delay_delete: bool
-        :param token_type: token类型 * 0：用户ACCESS TOKEN； * 1：会控TOKEN * 2：一次性TOKEN 
+        :param token_type: Token类型。 * 0：用户Access Token * 1：会控TOKEN * 2：一次性TOKEN 
         :type token_type: int
-        :param refresh_token: 刷新token字符串。
+        :param refresh_token: Refresh Token字符串。
         :type refresh_token: str
-        :param refresh_valid_period: 刷新token有效时长，单位：秒。
+        :param refresh_valid_period: Refresh Token有效时长，单位：秒。
         :type refresh_valid_period: int
-        :param refresh_expire_time: 刷新token的失效时间戳，单位：秒。
+        :param refresh_expire_time: Refresh Token的失效时间戳，单位：秒。
         :type refresh_expire_time: int
-        :param refresh_create_time: 刷新token的创建时间戳，单位：毫秒。
+        :param refresh_create_time: Refresh Token的创建时间戳，单位：毫秒。
         :type refresh_create_time: int
         """
         
@@ -168,7 +168,7 @@ class UpdateTokenResponse(SdkResponse):
     def access_token(self):
         """Gets the access_token of this UpdateTokenResponse.
 
-        接入token字符串。
+        Access Token字符串。
 
         :return: The access_token of this UpdateTokenResponse.
         :rtype: str
@@ -179,7 +179,7 @@ class UpdateTokenResponse(SdkResponse):
     def access_token(self, access_token):
         """Sets the access_token of this UpdateTokenResponse.
 
-        接入token字符串。
+        Access Token字符串。
 
         :param access_token: The access_token of this UpdateTokenResponse.
         :type access_token: str
@@ -212,7 +212,7 @@ class UpdateTokenResponse(SdkResponse):
     def valid_period(self):
         """Gets the valid_period of this UpdateTokenResponse.
 
-        token有效时长，单位：秒。
+        Access Token有效时长，单位：秒。
 
         :return: The valid_period of this UpdateTokenResponse.
         :rtype: int
@@ -223,7 +223,7 @@ class UpdateTokenResponse(SdkResponse):
     def valid_period(self, valid_period):
         """Sets the valid_period of this UpdateTokenResponse.
 
-        token有效时长，单位：秒。
+        Access Token有效时长，单位：秒。
 
         :param valid_period: The valid_period of this UpdateTokenResponse.
         :type valid_period: int
@@ -234,7 +234,7 @@ class UpdateTokenResponse(SdkResponse):
     def expire_time(self):
         """Gets the expire_time of this UpdateTokenResponse.
 
-        token的失效时间戳，单位：秒。
+        Access Token的失效时间戳，单位：秒。
 
         :return: The expire_time of this UpdateTokenResponse.
         :rtype: int
@@ -245,7 +245,7 @@ class UpdateTokenResponse(SdkResponse):
     def expire_time(self, expire_time):
         """Sets the expire_time of this UpdateTokenResponse.
 
-        token的失效时间戳，单位：秒。
+        Access Token的失效时间戳，单位：秒。
 
         :param expire_time: The expire_time of this UpdateTokenResponse.
         :type expire_time: int
@@ -256,7 +256,7 @@ class UpdateTokenResponse(SdkResponse):
     def create_time(self):
         """Gets the create_time of this UpdateTokenResponse.
 
-        业务token的创建时间戳，单位：毫秒。
+        Access Token的创建时间戳，单位：毫秒。
 
         :return: The create_time of this UpdateTokenResponse.
         :rtype: int
@@ -267,7 +267,7 @@ class UpdateTokenResponse(SdkResponse):
     def create_time(self, create_time):
         """Sets the create_time of this UpdateTokenResponse.
 
-        业务token的创建时间戳，单位：毫秒。
+        Access Token的创建时间戳，单位：毫秒。
 
         :param create_time: The create_time of this UpdateTokenResponse.
         :type create_time: int
@@ -320,7 +320,7 @@ class UpdateTokenResponse(SdkResponse):
     def force_login_ind(self):
         """Gets the force_login_ind of this UpdateTokenResponse.
 
-        抢占登录标识 * 0：非抢占 * 1：抢占  未启用 
+        抢占登录标识。 * 0： 非抢占 * 1： 抢占 
 
         :return: The force_login_ind of this UpdateTokenResponse.
         :rtype: int
@@ -331,7 +331,7 @@ class UpdateTokenResponse(SdkResponse):
     def force_login_ind(self, force_login_ind):
         """Sets the force_login_ind of this UpdateTokenResponse.
 
-        抢占登录标识 * 0：非抢占 * 1：抢占  未启用 
+        抢占登录标识。 * 0： 非抢占 * 1： 抢占 
 
         :param force_login_ind: The force_login_ind of this UpdateTokenResponse.
         :type force_login_ind: int
@@ -342,7 +342,7 @@ class UpdateTokenResponse(SdkResponse):
     def first_login(self):
         """Gets the first_login of this UpdateTokenResponse.
 
-        是否首次登录（说明：首次登录表示尚未修改过密码。首次登录时，系统会提醒用户需要修改密码），默认值：false。
+        是否首次登录。 > 首次登录表示尚未修改过密码。首次登录时，系统会提醒用户需要修改密码。 默认值：false。 
 
         :return: The first_login of this UpdateTokenResponse.
         :rtype: bool
@@ -353,7 +353,7 @@ class UpdateTokenResponse(SdkResponse):
     def first_login(self, first_login):
         """Sets the first_login of this UpdateTokenResponse.
 
-        是否首次登录（说明：首次登录表示尚未修改过密码。首次登录时，系统会提醒用户需要修改密码），默认值：false。
+        是否首次登录。 > 首次登录表示尚未修改过密码。首次登录时，系统会提醒用户需要修改密码。 默认值：false。 
 
         :param first_login: The first_login of this UpdateTokenResponse.
         :type first_login: bool
@@ -386,7 +386,7 @@ class UpdateTokenResponse(SdkResponse):
     def days_pwd_available(self):
         """Gets the days_pwd_available of this UpdateTokenResponse.
 
-        密码有效天数
+        密码有效天数。
 
         :return: The days_pwd_available of this UpdateTokenResponse.
         :rtype: int
@@ -397,7 +397,7 @@ class UpdateTokenResponse(SdkResponse):
     def days_pwd_available(self, days_pwd_available):
         """Sets the days_pwd_available of this UpdateTokenResponse.
 
-        密码有效天数
+        密码有效天数。
 
         :param days_pwd_available: The days_pwd_available of this UpdateTokenResponse.
         :type days_pwd_available: int
@@ -428,7 +428,7 @@ class UpdateTokenResponse(SdkResponse):
     def delay_delete(self):
         """Gets the delay_delete of this UpdateTokenResponse.
 
-        是否延时删除状态
+        是否延时删除状态。
 
         :return: The delay_delete of this UpdateTokenResponse.
         :rtype: bool
@@ -439,7 +439,7 @@ class UpdateTokenResponse(SdkResponse):
     def delay_delete(self, delay_delete):
         """Sets the delay_delete of this UpdateTokenResponse.
 
-        是否延时删除状态
+        是否延时删除状态。
 
         :param delay_delete: The delay_delete of this UpdateTokenResponse.
         :type delay_delete: bool
@@ -450,7 +450,7 @@ class UpdateTokenResponse(SdkResponse):
     def token_type(self):
         """Gets the token_type of this UpdateTokenResponse.
 
-        token类型 * 0：用户ACCESS TOKEN； * 1：会控TOKEN * 2：一次性TOKEN 
+        Token类型。 * 0：用户Access Token * 1：会控TOKEN * 2：一次性TOKEN 
 
         :return: The token_type of this UpdateTokenResponse.
         :rtype: int
@@ -461,7 +461,7 @@ class UpdateTokenResponse(SdkResponse):
     def token_type(self, token_type):
         """Sets the token_type of this UpdateTokenResponse.
 
-        token类型 * 0：用户ACCESS TOKEN； * 1：会控TOKEN * 2：一次性TOKEN 
+        Token类型。 * 0：用户Access Token * 1：会控TOKEN * 2：一次性TOKEN 
 
         :param token_type: The token_type of this UpdateTokenResponse.
         :type token_type: int
@@ -472,7 +472,7 @@ class UpdateTokenResponse(SdkResponse):
     def refresh_token(self):
         """Gets the refresh_token of this UpdateTokenResponse.
 
-        刷新token字符串。
+        Refresh Token字符串。
 
         :return: The refresh_token of this UpdateTokenResponse.
         :rtype: str
@@ -483,7 +483,7 @@ class UpdateTokenResponse(SdkResponse):
     def refresh_token(self, refresh_token):
         """Sets the refresh_token of this UpdateTokenResponse.
 
-        刷新token字符串。
+        Refresh Token字符串。
 
         :param refresh_token: The refresh_token of this UpdateTokenResponse.
         :type refresh_token: str
@@ -494,7 +494,7 @@ class UpdateTokenResponse(SdkResponse):
     def refresh_valid_period(self):
         """Gets the refresh_valid_period of this UpdateTokenResponse.
 
-        刷新token有效时长，单位：秒。
+        Refresh Token有效时长，单位：秒。
 
         :return: The refresh_valid_period of this UpdateTokenResponse.
         :rtype: int
@@ -505,7 +505,7 @@ class UpdateTokenResponse(SdkResponse):
     def refresh_valid_period(self, refresh_valid_period):
         """Sets the refresh_valid_period of this UpdateTokenResponse.
 
-        刷新token有效时长，单位：秒。
+        Refresh Token有效时长，单位：秒。
 
         :param refresh_valid_period: The refresh_valid_period of this UpdateTokenResponse.
         :type refresh_valid_period: int
@@ -516,7 +516,7 @@ class UpdateTokenResponse(SdkResponse):
     def refresh_expire_time(self):
         """Gets the refresh_expire_time of this UpdateTokenResponse.
 
-        刷新token的失效时间戳，单位：秒。
+        Refresh Token的失效时间戳，单位：秒。
 
         :return: The refresh_expire_time of this UpdateTokenResponse.
         :rtype: int
@@ -527,7 +527,7 @@ class UpdateTokenResponse(SdkResponse):
     def refresh_expire_time(self, refresh_expire_time):
         """Sets the refresh_expire_time of this UpdateTokenResponse.
 
-        刷新token的失效时间戳，单位：秒。
+        Refresh Token的失效时间戳，单位：秒。
 
         :param refresh_expire_time: The refresh_expire_time of this UpdateTokenResponse.
         :type refresh_expire_time: int
@@ -538,7 +538,7 @@ class UpdateTokenResponse(SdkResponse):
     def refresh_create_time(self):
         """Gets the refresh_create_time of this UpdateTokenResponse.
 
-        刷新token的创建时间戳，单位：毫秒。
+        Refresh Token的创建时间戳，单位：毫秒。
 
         :return: The refresh_create_time of this UpdateTokenResponse.
         :rtype: int
@@ -549,7 +549,7 @@ class UpdateTokenResponse(SdkResponse):
     def refresh_create_time(self, refresh_create_time):
         """Sets the refresh_create_time of this UpdateTokenResponse.
 
-        刷新token的创建时间戳，单位：毫秒。
+        Refresh Token的创建时间戳，单位：毫秒。
 
         :param refresh_create_time: The refresh_create_time of this UpdateTokenResponse.
         :type refresh_create_time: int

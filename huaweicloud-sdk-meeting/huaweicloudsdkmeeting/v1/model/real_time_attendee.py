@@ -43,17 +43,17 @@ class RealTimeAttendee:
 
         The model defined in huaweicloud sdk
 
-        :param account_id: 与会者帐号（AAPID用户，代表第三方账号）。
+        :param account_id: 与会者的华为云会议帐号。
         :type account_id: str
         :param user_uuid: 与会者的用户UUID。
         :type user_uuid: str
-        :param name: 与会者名称或昵称，长度限制为96个字符。
+        :param name: 与会者名称。
         :type name: str
-        :param phone: 与会者设备的注册号码（可支持SIP、TEL号码格式）。最大不超过127个字符。 设备为三屏智真时的中屏号码。
+        :param phone: 与会者号码。
         :type phone: str
-        :param phone_left: 设备为三屏智真时的左屏号码（预留）。
+        :param phone_left: 设备为三屏智真时的左屏号码。 &gt; 该参数将废弃，请勿使用。 
         :type phone_left: str
-        :param phone_right: 设备为三屏智真时的右屏号码（预留）。
+        :param phone_right: 设备为三屏智真时的右屏号码。 &gt; 该参数将废弃，请勿使用。 
         :type phone_right: str
         """
         
@@ -84,7 +84,7 @@ class RealTimeAttendee:
     def account_id(self):
         """Gets the account_id of this RealTimeAttendee.
 
-        与会者帐号（AAPID用户，代表第三方账号）。
+        与会者的华为云会议帐号。
 
         :return: The account_id of this RealTimeAttendee.
         :rtype: str
@@ -95,7 +95,7 @@ class RealTimeAttendee:
     def account_id(self, account_id):
         """Sets the account_id of this RealTimeAttendee.
 
-        与会者帐号（AAPID用户，代表第三方账号）。
+        与会者的华为云会议帐号。
 
         :param account_id: The account_id of this RealTimeAttendee.
         :type account_id: str
@@ -128,7 +128,7 @@ class RealTimeAttendee:
     def name(self):
         """Gets the name of this RealTimeAttendee.
 
-        与会者名称或昵称，长度限制为96个字符。
+        与会者名称。
 
         :return: The name of this RealTimeAttendee.
         :rtype: str
@@ -139,7 +139,7 @@ class RealTimeAttendee:
     def name(self, name):
         """Sets the name of this RealTimeAttendee.
 
-        与会者名称或昵称，长度限制为96个字符。
+        与会者名称。
 
         :param name: The name of this RealTimeAttendee.
         :type name: str
@@ -150,7 +150,7 @@ class RealTimeAttendee:
     def phone(self):
         """Gets the phone of this RealTimeAttendee.
 
-        与会者设备的注册号码（可支持SIP、TEL号码格式）。最大不超过127个字符。 设备为三屏智真时的中屏号码。
+        与会者号码。
 
         :return: The phone of this RealTimeAttendee.
         :rtype: str
@@ -161,7 +161,7 @@ class RealTimeAttendee:
     def phone(self, phone):
         """Sets the phone of this RealTimeAttendee.
 
-        与会者设备的注册号码（可支持SIP、TEL号码格式）。最大不超过127个字符。 设备为三屏智真时的中屏号码。
+        与会者号码。
 
         :param phone: The phone of this RealTimeAttendee.
         :type phone: str
@@ -172,7 +172,7 @@ class RealTimeAttendee:
     def phone_left(self):
         """Gets the phone_left of this RealTimeAttendee.
 
-        设备为三屏智真时的左屏号码（预留）。
+        设备为三屏智真时的左屏号码。 > 该参数将废弃，请勿使用。 
 
         :return: The phone_left of this RealTimeAttendee.
         :rtype: str
@@ -183,7 +183,7 @@ class RealTimeAttendee:
     def phone_left(self, phone_left):
         """Sets the phone_left of this RealTimeAttendee.
 
-        设备为三屏智真时的左屏号码（预留）。
+        设备为三屏智真时的左屏号码。 > 该参数将废弃，请勿使用。 
 
         :param phone_left: The phone_left of this RealTimeAttendee.
         :type phone_left: str
@@ -194,7 +194,7 @@ class RealTimeAttendee:
     def phone_right(self):
         """Gets the phone_right of this RealTimeAttendee.
 
-        设备为三屏智真时的右屏号码（预留）。
+        设备为三屏智真时的右屏号码。 > 该参数将废弃，请勿使用。 
 
         :return: The phone_right of this RealTimeAttendee.
         :rtype: str
@@ -205,7 +205,7 @@ class RealTimeAttendee:
     def phone_right(self, phone_right):
         """Sets the phone_right of this RealTimeAttendee.
 
-        设备为三屏智真时的右屏号码（预留）。
+        设备为三屏智真时的右屏号码。 > 该参数将废弃，请勿使用。 
 
         :param phone_right: The phone_right of this RealTimeAttendee.
         :type phone_right: str

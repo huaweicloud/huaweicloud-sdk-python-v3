@@ -33,7 +33,7 @@ class RestLockReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param is_lock: - 0: 解锁。 - 1: 锁定。
+        :param is_lock: - 0: 解锁 - 1: 锁定
         :type is_lock: int
         """
         
@@ -48,7 +48,7 @@ class RestLockReqBody:
     def is_lock(self):
         """Gets the is_lock of this RestLockReqBody.
 
-        - 0: 解锁。 - 1: 锁定。
+        - 0: 解锁 - 1: 锁定
 
         :return: The is_lock of this RestLockReqBody.
         :rtype: int
@@ -59,7 +59,7 @@ class RestLockReqBody:
     def is_lock(self, is_lock):
         """Sets the is_lock of this RestLockReqBody.
 
-        - 0: 解锁。 - 1: 锁定。
+        - 0: 解锁 - 1: 锁定
 
         :param is_lock: The is_lock of this RestLockReqBody.
         :type is_lock: int

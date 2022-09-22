@@ -31,6 +31,7 @@ class PutTaskReq:
         'enterprise_project_id': 'str',
         'migration_ip': 'str',
         'region_name': 'str',
+        'speed_limit': 'int',
         'project_name': 'str',
         'project_id': 'str',
         'vm_template_id': 'str',
@@ -63,6 +64,7 @@ class PutTaskReq:
         'enterprise_project_id': 'enterprise_project_id',
         'migration_ip': 'migration_ip',
         'region_name': 'region_name',
+        'speed_limit': 'speed_limit',
         'project_name': 'project_name',
         'project_id': 'project_id',
         'vm_template_id': 'vm_template_id',
@@ -84,18 +86,18 @@ class PutTaskReq:
         'sub_tasks': 'sub_tasks'
     }
 
-    def __init__(self, name=None, type=None, os_type=None, id=None, priority=None, region_id=None, start_target_server=None, enterprise_project_id=None, migration_ip=None, region_name=None, project_name=None, project_id=None, vm_template_id=None, source_server=None, target_server=None, state=None, estimate_complete_time=None, connected=None, create_date=None, start_date=None, finish_date=None, migrate_speed=None, error_json=None, total_time=None, float_ip=None, remain_seconds=None, target_snapshot_id=None, clone_server=None, sub_tasks=None):
+    def __init__(self, name=None, type=None, os_type=None, id=None, priority=None, region_id=None, start_target_server=None, enterprise_project_id=None, migration_ip=None, region_name=None, speed_limit=None, project_name=None, project_id=None, vm_template_id=None, source_server=None, target_server=None, state=None, estimate_complete_time=None, connected=None, create_date=None, start_date=None, finish_date=None, migrate_speed=None, error_json=None, total_time=None, float_ip=None, remain_seconds=None, target_snapshot_id=None, clone_server=None, sub_tasks=None):
         """PutTaskReq
 
         The model defined in huaweicloud sdk
 
         :param name: 任务名称（用户自定义）
         :type name: str
-        :param type: 任务类型，创建时必选，更新时可选 
+        :param type: 任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
         :type type: str
         :param os_type: 操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
         :type os_type: str
-        :param id: 迁移任务id
+        :param id: 迁移任务ID
         :type id: str
         :param priority: 进程优先级  0：低  1：标准（默认）  2：高 
         :type priority: int
@@ -103,12 +105,14 @@ class PutTaskReq:
         :type region_id: str
         :param start_target_server: 迁移完成后是否启动目的端服务器  true：启动  false：停止 
         :type start_target_server: bool
-        :param enterprise_project_id: 企业项目id
+        :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
         :param migration_ip: 目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址 
         :type migration_ip: str
         :param region_name: 目的端服务器的区域名称
         :type region_name: str
+        :param speed_limit: 限制迁移速率，单位：Mbps
+        :type speed_limit: int
         :param project_name: 目的端服务器所在项目名称
         :type project_name: str
         :param project_id: 目的端服务器所在项目ID
@@ -141,7 +145,7 @@ class PutTaskReq:
         :type float_ip: str
         :param remain_seconds: 迁移剩余时间（秒）
         :type remain_seconds: int
-        :param target_snapshot_id: 目的端的快照id
+        :param target_snapshot_id: 目的端的快照ID
         :type target_snapshot_id: str
         :param clone_server: 
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
@@ -161,6 +165,7 @@ class PutTaskReq:
         self._enterprise_project_id = None
         self._migration_ip = None
         self._region_name = None
+        self._speed_limit = None
         self._project_name = None
         self._project_id = None
         self._vm_template_id = None
@@ -202,6 +207,8 @@ class PutTaskReq:
             self.migration_ip = migration_ip
         if region_name is not None:
             self.region_name = region_name
+        if speed_limit is not None:
+            self.speed_limit = speed_limit
         if project_name is not None:
             self.project_name = project_name
         if project_id is not None:
@@ -267,7 +274,7 @@ class PutTaskReq:
     def type(self):
         """Gets the type of this PutTaskReq.
 
-        任务类型，创建时必选，更新时可选 
+        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
 
         :return: The type of this PutTaskReq.
         :rtype: str
@@ -278,7 +285,7 @@ class PutTaskReq:
     def type(self, type):
         """Sets the type of this PutTaskReq.
 
-        任务类型，创建时必选，更新时可选 
+        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
 
         :param type: The type of this PutTaskReq.
         :type type: str
@@ -311,7 +318,7 @@ class PutTaskReq:
     def id(self):
         """Gets the id of this PutTaskReq.
 
-        迁移任务id
+        迁移任务ID
 
         :return: The id of this PutTaskReq.
         :rtype: str
@@ -322,7 +329,7 @@ class PutTaskReq:
     def id(self, id):
         """Sets the id of this PutTaskReq.
 
-        迁移任务id
+        迁移任务ID
 
         :param id: The id of this PutTaskReq.
         :type id: str
@@ -399,7 +406,7 @@ class PutTaskReq:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this PutTaskReq.
 
-        企业项目id
+        企业项目ID
 
         :return: The enterprise_project_id of this PutTaskReq.
         :rtype: str
@@ -410,7 +417,7 @@ class PutTaskReq:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this PutTaskReq.
 
-        企业项目id
+        企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this PutTaskReq.
         :type enterprise_project_id: str
@@ -460,6 +467,28 @@ class PutTaskReq:
         :type region_name: str
         """
         self._region_name = region_name
+
+    @property
+    def speed_limit(self):
+        """Gets the speed_limit of this PutTaskReq.
+
+        限制迁移速率，单位：Mbps
+
+        :return: The speed_limit of this PutTaskReq.
+        :rtype: int
+        """
+        return self._speed_limit
+
+    @speed_limit.setter
+    def speed_limit(self, speed_limit):
+        """Sets the speed_limit of this PutTaskReq.
+
+        限制迁移速率，单位：Mbps
+
+        :param speed_limit: The speed_limit of this PutTaskReq.
+        :type speed_limit: int
+        """
+        self._speed_limit = speed_limit
 
     @property
     def project_name(self):
@@ -813,7 +842,7 @@ class PutTaskReq:
     def target_snapshot_id(self):
         """Gets the target_snapshot_id of this PutTaskReq.
 
-        目的端的快照id
+        目的端的快照ID
 
         :return: The target_snapshot_id of this PutTaskReq.
         :rtype: str
@@ -824,7 +853,7 @@ class PutTaskReq:
     def target_snapshot_id(self, target_snapshot_id):
         """Sets the target_snapshot_id of this PutTaskReq.
 
-        目的端的快照id
+        目的端的快照ID
 
         :param target_snapshot_id: The target_snapshot_id of this PutTaskReq.
         :type target_snapshot_id: str

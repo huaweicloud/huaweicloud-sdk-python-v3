@@ -41,7 +41,8 @@ class ShowInstanceResponse(SdkResponse):
         'order_id': 'str',
         'enterprise_project_id': 'str',
         'engine_version': 'str',
-        'nodes': 'list[GetDetailfNodesInfo]'
+        'nodes': 'list[GetDetailfNodesInfo]',
+        'admin_user_name': 'str'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class ShowInstanceResponse(SdkResponse):
         'order_id': 'order_id',
         'enterprise_project_id': 'enterprise_project_id',
         'engine_version': 'engine_version',
-        'nodes': 'nodes'
+        'nodes': 'nodes',
+        'admin_user_name': 'admin_user_name'
     }
 
-    def __init__(self, id=None, status=None, name=None, created=None, updated=None, available_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, node_count=None, access_ip=None, access_port=None, node_status=None, core_count=None, ram_capacity=None, error_msg=None, project_id=None, order_id=None, enterprise_project_id=None, engine_version=None, nodes=None):
+    def __init__(self, id=None, status=None, name=None, created=None, updated=None, available_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, node_count=None, access_ip=None, access_port=None, node_status=None, core_count=None, ram_capacity=None, error_msg=None, project_id=None, order_id=None, enterprise_project_id=None, engine_version=None, nodes=None, admin_user_name=None):
         """ShowInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -115,6 +117,8 @@ class ShowInstanceResponse(SdkResponse):
         :type engine_version: str
         :param nodes: 节点信息。
         :type nodes: list[:class:`huaweicloudsdkddm.v1.GetDetailfNodesInfo`]
+        :param admin_user_name: 管理员账号用户名。 - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
+        :type admin_user_name: str
         """
         
         super(ShowInstanceResponse, self).__init__()
@@ -140,6 +144,7 @@ class ShowInstanceResponse(SdkResponse):
         self._enterprise_project_id = None
         self._engine_version = None
         self._nodes = None
+        self._admin_user_name = None
         self.discriminator = None
 
         if id is not None:
@@ -184,6 +189,8 @@ class ShowInstanceResponse(SdkResponse):
             self.engine_version = engine_version
         if nodes is not None:
             self.nodes = nodes
+        if admin_user_name is not None:
+            self.admin_user_name = admin_user_name
 
     @property
     def id(self):
@@ -646,6 +653,28 @@ class ShowInstanceResponse(SdkResponse):
         :type nodes: list[:class:`huaweicloudsdkddm.v1.GetDetailfNodesInfo`]
         """
         self._nodes = nodes
+
+    @property
+    def admin_user_name(self):
+        """Gets the admin_user_name of this ShowInstanceResponse.
+
+        管理员账号用户名。 - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
+
+        :return: The admin_user_name of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._admin_user_name
+
+    @admin_user_name.setter
+    def admin_user_name(self, admin_user_name):
+        """Sets the admin_user_name of this ShowInstanceResponse.
+
+        管理员账号用户名。 - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
+
+        :param admin_user_name: The admin_user_name of this ShowInstanceResponse.
+        :type admin_user_name: str
+        """
+        self._admin_user_name = admin_user_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

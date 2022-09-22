@@ -43,17 +43,17 @@ class QueryCorpGroupDTO:
 
         The model defined in huaweicloud sdk
 
-        :param group_id: 分组Id
+        :param group_id: 媒体接入分组id。
         :type group_id: str
-        :param group_name: 分组名称
+        :param group_name: 分组名称。
         :type group_name: str
-        :param group_type: 分组类型
+        :param group_type: 分组类型。
         :type group_type: int
-        :param remarks: 分组备注信息
+        :param remarks: 分组备注信息。
         :type remarks: str
-        :param region_id: 区域ID，仅服务列表类型场景必填
+        :param region_id: 区域ID，仅服务列表类型场景必填。
         :type region_id: str
-        :param status: 分组状态 - 0: 正常 - 1: 停用，服务列表类型停用后创建企业就不会再自动分配到该分组 
+        :param status: 分组状态。 - 0: 正常 - 1: 停用，服务列表类型停用后创建企业就不会再自动分配到该分组 
         :type status: int
         """
         
@@ -84,7 +84,7 @@ class QueryCorpGroupDTO:
     def group_id(self):
         """Gets the group_id of this QueryCorpGroupDTO.
 
-        分组Id
+        媒体接入分组id。
 
         :return: The group_id of this QueryCorpGroupDTO.
         :rtype: str
@@ -95,7 +95,7 @@ class QueryCorpGroupDTO:
     def group_id(self, group_id):
         """Sets the group_id of this QueryCorpGroupDTO.
 
-        分组Id
+        媒体接入分组id。
 
         :param group_id: The group_id of this QueryCorpGroupDTO.
         :type group_id: str
@@ -106,7 +106,7 @@ class QueryCorpGroupDTO:
     def group_name(self):
         """Gets the group_name of this QueryCorpGroupDTO.
 
-        分组名称
+        分组名称。
 
         :return: The group_name of this QueryCorpGroupDTO.
         :rtype: str
@@ -117,7 +117,7 @@ class QueryCorpGroupDTO:
     def group_name(self, group_name):
         """Sets the group_name of this QueryCorpGroupDTO.
 
-        分组名称
+        分组名称。
 
         :param group_name: The group_name of this QueryCorpGroupDTO.
         :type group_name: str
@@ -128,7 +128,7 @@ class QueryCorpGroupDTO:
     def group_type(self):
         """Gets the group_type of this QueryCorpGroupDTO.
 
-        分组类型
+        分组类型。
 
         :return: The group_type of this QueryCorpGroupDTO.
         :rtype: int
@@ -139,7 +139,7 @@ class QueryCorpGroupDTO:
     def group_type(self, group_type):
         """Sets the group_type of this QueryCorpGroupDTO.
 
-        分组类型
+        分组类型。
 
         :param group_type: The group_type of this QueryCorpGroupDTO.
         :type group_type: int
@@ -150,7 +150,7 @@ class QueryCorpGroupDTO:
     def remarks(self):
         """Gets the remarks of this QueryCorpGroupDTO.
 
-        分组备注信息
+        分组备注信息。
 
         :return: The remarks of this QueryCorpGroupDTO.
         :rtype: str
@@ -161,7 +161,7 @@ class QueryCorpGroupDTO:
     def remarks(self, remarks):
         """Sets the remarks of this QueryCorpGroupDTO.
 
-        分组备注信息
+        分组备注信息。
 
         :param remarks: The remarks of this QueryCorpGroupDTO.
         :type remarks: str
@@ -172,7 +172,7 @@ class QueryCorpGroupDTO:
     def region_id(self):
         """Gets the region_id of this QueryCorpGroupDTO.
 
-        区域ID，仅服务列表类型场景必填
+        区域ID，仅服务列表类型场景必填。
 
         :return: The region_id of this QueryCorpGroupDTO.
         :rtype: str
@@ -183,7 +183,7 @@ class QueryCorpGroupDTO:
     def region_id(self, region_id):
         """Sets the region_id of this QueryCorpGroupDTO.
 
-        区域ID，仅服务列表类型场景必填
+        区域ID，仅服务列表类型场景必填。
 
         :param region_id: The region_id of this QueryCorpGroupDTO.
         :type region_id: str
@@ -194,7 +194,7 @@ class QueryCorpGroupDTO:
     def status(self):
         """Gets the status of this QueryCorpGroupDTO.
 
-        分组状态 - 0: 正常 - 1: 停用，服务列表类型停用后创建企业就不会再自动分配到该分组 
+        分组状态。 - 0: 正常 - 1: 停用，服务列表类型停用后创建企业就不会再自动分配到该分组 
 
         :return: The status of this QueryCorpGroupDTO.
         :rtype: int
@@ -205,7 +205,7 @@ class QueryCorpGroupDTO:
     def status(self, status):
         """Sets the status of this QueryCorpGroupDTO.
 
-        分组状态 - 0: 正常 - 1: 停用，服务列表类型停用后创建企业就不会再自动分配到该分组 
+        分组状态。 - 0: 正常 - 1: 停用，服务列表类型停用后创建企业就不会再自动分配到该分组 
 
         :param status: The status of this QueryCorpGroupDTO.
         :type status: int

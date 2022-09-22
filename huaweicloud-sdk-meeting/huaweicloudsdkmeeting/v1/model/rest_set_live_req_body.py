@@ -33,7 +33,7 @@ class RestSetLiveReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param is_live: 默认值为0。 - 0: 停止会议直播。 - 1: 启动会议直播。
+        :param is_live: 会议直播开关。默认值为0。 - 0: 停止会议直播 - 1: 启动会议直播
         :type is_live: int
         """
         
@@ -48,7 +48,7 @@ class RestSetLiveReqBody:
     def is_live(self):
         """Gets the is_live of this RestSetLiveReqBody.
 
-        默认值为0。 - 0: 停止会议直播。 - 1: 启动会议直播。
+        会议直播开关。默认值为0。 - 0: 停止会议直播 - 1: 启动会议直播
 
         :return: The is_live of this RestSetLiveReqBody.
         :rtype: int
@@ -59,7 +59,7 @@ class RestSetLiveReqBody:
     def is_live(self, is_live):
         """Sets the is_live of this RestSetLiveReqBody.
 
-        默认值为0。 - 0: 停止会议直播。 - 1: 启动会议直播。
+        会议直播开关。默认值为0。 - 0: 停止会议直播 - 1: 启动会议直播
 
         :param is_live: The is_live of this RestSetLiveReqBody.
         :type is_live: int

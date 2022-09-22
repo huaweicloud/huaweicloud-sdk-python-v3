@@ -39,13 +39,13 @@ class ShowDepartmentResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param dept_code: 部门编码
+        :param dept_code: 部门编码。
         :type dept_code: str
-        :param dept_name: 部门名称
+        :param dept_name: 部门名称。
         :type dept_name: str
-        :param is_leaf_nodes: 是否为叶子节点（没有子部门的称为叶子节点）
+        :param is_leaf_nodes: 是否为叶子节点（没有子部门的称为叶子节点）。
         :type is_leaf_nodes: bool
-        :param child_depts: 子部门详情
+        :param child_depts: 子部门详情。
         :type child_depts: list[:class:`huaweicloudsdkmeeting.v1.ChildDeptDTO`]
         """
         
@@ -70,7 +70,7 @@ class ShowDepartmentResponse(SdkResponse):
     def dept_code(self):
         """Gets the dept_code of this ShowDepartmentResponse.
 
-        部门编码
+        部门编码。
 
         :return: The dept_code of this ShowDepartmentResponse.
         :rtype: str
@@ -81,7 +81,7 @@ class ShowDepartmentResponse(SdkResponse):
     def dept_code(self, dept_code):
         """Sets the dept_code of this ShowDepartmentResponse.
 
-        部门编码
+        部门编码。
 
         :param dept_code: The dept_code of this ShowDepartmentResponse.
         :type dept_code: str
@@ -92,7 +92,7 @@ class ShowDepartmentResponse(SdkResponse):
     def dept_name(self):
         """Gets the dept_name of this ShowDepartmentResponse.
 
-        部门名称
+        部门名称。
 
         :return: The dept_name of this ShowDepartmentResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowDepartmentResponse(SdkResponse):
     def dept_name(self, dept_name):
         """Sets the dept_name of this ShowDepartmentResponse.
 
-        部门名称
+        部门名称。
 
         :param dept_name: The dept_name of this ShowDepartmentResponse.
         :type dept_name: str
@@ -114,7 +114,7 @@ class ShowDepartmentResponse(SdkResponse):
     def is_leaf_nodes(self):
         """Gets the is_leaf_nodes of this ShowDepartmentResponse.
 
-        是否为叶子节点（没有子部门的称为叶子节点）
+        是否为叶子节点（没有子部门的称为叶子节点）。
 
         :return: The is_leaf_nodes of this ShowDepartmentResponse.
         :rtype: bool
@@ -125,7 +125,7 @@ class ShowDepartmentResponse(SdkResponse):
     def is_leaf_nodes(self, is_leaf_nodes):
         """Sets the is_leaf_nodes of this ShowDepartmentResponse.
 
-        是否为叶子节点（没有子部门的称为叶子节点）
+        是否为叶子节点（没有子部门的称为叶子节点）。
 
         :param is_leaf_nodes: The is_leaf_nodes of this ShowDepartmentResponse.
         :type is_leaf_nodes: bool
@@ -136,7 +136,7 @@ class ShowDepartmentResponse(SdkResponse):
     def child_depts(self):
         """Gets the child_depts of this ShowDepartmentResponse.
 
-        子部门详情
+        子部门详情。
 
         :return: The child_depts of this ShowDepartmentResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.ChildDeptDTO`]
@@ -147,7 +147,7 @@ class ShowDepartmentResponse(SdkResponse):
     def child_depts(self, child_depts):
         """Sets the child_depts of this ShowDepartmentResponse.
 
-        子部门详情
+        子部门详情。
 
         :param child_depts: The child_depts of this ShowDepartmentResponse.
         :type child_depts: list[:class:`huaweicloudsdkmeeting.v1.ChildDeptDTO`]

@@ -33,7 +33,7 @@ class UpdateRecurringMeetingResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param body: 会议信息列表
+        :param body: 会议信息列表。
         :type body: list[:class:`huaweicloudsdkmeeting.v1.ConferenceInfo`]
         """
         
@@ -49,7 +49,7 @@ class UpdateRecurringMeetingResponse(SdkResponse):
     def body(self):
         """Gets the body of this UpdateRecurringMeetingResponse.
 
-        会议信息列表
+        会议信息列表。
 
         :return: The body of this UpdateRecurringMeetingResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.ConferenceInfo`]
@@ -60,7 +60,7 @@ class UpdateRecurringMeetingResponse(SdkResponse):
     def body(self, body):
         """Sets the body of this UpdateRecurringMeetingResponse.
 
-        会议信息列表
+        会议信息列表。
 
         :param body: The body of this UpdateRecurringMeetingResponse.
         :type body: list[:class:`huaweicloudsdkmeeting.v1.ConferenceInfo`]

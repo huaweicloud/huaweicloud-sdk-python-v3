@@ -37,11 +37,11 @@ class VerifyCodeSendDTOV1:
 
         The model defined in huaweicloud sdk
 
-        :param user: 用户身份信息（手机号码或邮箱账号或用户真实账号） 说明：必须和发送滑块验证码时带的用户身份信息相同。 maxLength：255 minLength：1 
+        :param user: 用户身份信息（手机号码或邮箱帐号或用户真实帐号）。 &gt; 必须和发送滑块验证码时带的用户身份信息相同。 
         :type user: str
-        :param send_method: 验证码发送方式 user类型是用户真实账号时必选；如果没有选择的话，优先短信方式。 * sms：短信方式 * email：邮件方式 
+        :param send_method: 验证码发送方式。 user类型是用户真实帐号时必选；如果没有选择的话，优先短信方式。 * sms：短信方式 * email：邮件方式 
         :type send_method: str
-        :param token: 校验滑块验证码返回的token字符串。
+        :param token: 访问Token字符串。通过[[校验滑块验证码](https://support.huaweicloud.com/api-meeting/meeting_21_0101.html)](tag:hws)[[校验滑块验证码](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0101.html)](tag:hk) 接口获取。
         :type token: str
         """
         
@@ -62,7 +62,7 @@ class VerifyCodeSendDTOV1:
     def user(self):
         """Gets the user of this VerifyCodeSendDTOV1.
 
-        用户身份信息（手机号码或邮箱账号或用户真实账号） 说明：必须和发送滑块验证码时带的用户身份信息相同。 maxLength：255 minLength：1 
+        用户身份信息（手机号码或邮箱帐号或用户真实帐号）。 > 必须和发送滑块验证码时带的用户身份信息相同。 
 
         :return: The user of this VerifyCodeSendDTOV1.
         :rtype: str
@@ -73,7 +73,7 @@ class VerifyCodeSendDTOV1:
     def user(self, user):
         """Sets the user of this VerifyCodeSendDTOV1.
 
-        用户身份信息（手机号码或邮箱账号或用户真实账号） 说明：必须和发送滑块验证码时带的用户身份信息相同。 maxLength：255 minLength：1 
+        用户身份信息（手机号码或邮箱帐号或用户真实帐号）。 > 必须和发送滑块验证码时带的用户身份信息相同。 
 
         :param user: The user of this VerifyCodeSendDTOV1.
         :type user: str
@@ -84,7 +84,7 @@ class VerifyCodeSendDTOV1:
     def send_method(self):
         """Gets the send_method of this VerifyCodeSendDTOV1.
 
-        验证码发送方式 user类型是用户真实账号时必选；如果没有选择的话，优先短信方式。 * sms：短信方式 * email：邮件方式 
+        验证码发送方式。 user类型是用户真实帐号时必选；如果没有选择的话，优先短信方式。 * sms：短信方式 * email：邮件方式 
 
         :return: The send_method of this VerifyCodeSendDTOV1.
         :rtype: str
@@ -95,7 +95,7 @@ class VerifyCodeSendDTOV1:
     def send_method(self, send_method):
         """Sets the send_method of this VerifyCodeSendDTOV1.
 
-        验证码发送方式 user类型是用户真实账号时必选；如果没有选择的话，优先短信方式。 * sms：短信方式 * email：邮件方式 
+        验证码发送方式。 user类型是用户真实帐号时必选；如果没有选择的话，优先短信方式。 * sms：短信方式 * email：邮件方式 
 
         :param send_method: The send_method of this VerifyCodeSendDTOV1.
         :type send_method: str
@@ -106,7 +106,7 @@ class VerifyCodeSendDTOV1:
     def token(self):
         """Gets the token of this VerifyCodeSendDTOV1.
 
-        校验滑块验证码返回的token字符串。
+        访问Token字符串。通过[[校验滑块验证码](https://support.huaweicloud.com/api-meeting/meeting_21_0101.html)](tag:hws)[[校验滑块验证码](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0101.html)](tag:hk) 接口获取。
 
         :return: The token of this VerifyCodeSendDTOV1.
         :rtype: str
@@ -117,7 +117,7 @@ class VerifyCodeSendDTOV1:
     def token(self, token):
         """Sets the token of this VerifyCodeSendDTOV1.
 
-        校验滑块验证码返回的token字符串。
+        访问Token字符串。通过[[校验滑块验证码](https://support.huaweicloud.com/api-meeting/meeting_21_0101.html)](tag:hws)[[校验滑块验证码](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0101.html)](tag:hk) 接口获取。
 
         :param token: The token of this VerifyCodeSendDTOV1.
         :type token: str

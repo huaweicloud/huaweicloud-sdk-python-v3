@@ -33,7 +33,7 @@ class CreateTemplateResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 服务端返回的新添加的模板的id
+        :param id: 服务端返回的新添加的模板的ID
         :type id: str
         """
         
@@ -49,7 +49,7 @@ class CreateTemplateResponse(SdkResponse):
     def id(self):
         """Gets the id of this CreateTemplateResponse.
 
-        服务端返回的新添加的模板的id
+        服务端返回的新添加的模板的ID
 
         :return: The id of this CreateTemplateResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class CreateTemplateResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this CreateTemplateResponse.
 
-        服务端返回的新添加的模板的id
+        服务端返回的新添加的模板的ID
 
         :param id: The id of this CreateTemplateResponse.
         :type id: str

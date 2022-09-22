@@ -35,7 +35,7 @@ class ImageModerationResult:
 
         The model defined in huaweicloud sdk
 
-        :param suggestion: 审核情况
+        :param suggestion: 审核情况。
         :type suggestion: str
         :param category_suggestions: 
         :type category_suggestions: :class:`huaweicloudsdkmeeting.v1.CategorySuggestions`
@@ -56,7 +56,7 @@ class ImageModerationResult:
     def suggestion(self):
         """Gets the suggestion of this ImageModerationResult.
 
-        审核情况
+        审核情况。
 
         :return: The suggestion of this ImageModerationResult.
         :rtype: str
@@ -67,7 +67,7 @@ class ImageModerationResult:
     def suggestion(self, suggestion):
         """Sets the suggestion of this ImageModerationResult.
 
-        审核情况
+        审核情况。
 
         :param suggestion: The suggestion of this ImageModerationResult.
         :type suggestion: str

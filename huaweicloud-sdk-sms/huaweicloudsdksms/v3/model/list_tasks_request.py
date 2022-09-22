@@ -45,7 +45,7 @@ class ListTasksRequest:
 
         The model defined in huaweicloud sdk
 
-        :param state: 迁移任务状态
+        :param state: 迁移任务状态 READY:准备就绪 RUNNING:迁移中 SYNCING:同步中 MIGRATE_SUCCESS:迁移成功 MIGRATE_FAIL:迁移失败 ABORTING:中止中 ABORT:中止 DELETING::删除中 SYNC_F_ROLLBACKING:同步失败回滚中 SYNC_F_ROLLBACK_SUCCESS:同步失败回滚成功
         :type state: str
         :param name: 任务的名称
         :type name: str
@@ -57,7 +57,7 @@ class ListTasksRequest:
         :type limit: int
         :param offset: 偏移量
         :type offset: int
-        :param enterprise_project_id: 需要查询的企业项目id
+        :param enterprise_project_id: 需要查询的企业项目ID
         :type enterprise_project_id: str
         """
         
@@ -91,7 +91,7 @@ class ListTasksRequest:
     def state(self):
         """Gets the state of this ListTasksRequest.
 
-        迁移任务状态
+        迁移任务状态 READY:准备就绪 RUNNING:迁移中 SYNCING:同步中 MIGRATE_SUCCESS:迁移成功 MIGRATE_FAIL:迁移失败 ABORTING:中止中 ABORT:中止 DELETING::删除中 SYNC_F_ROLLBACKING:同步失败回滚中 SYNC_F_ROLLBACK_SUCCESS:同步失败回滚成功
 
         :return: The state of this ListTasksRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class ListTasksRequest:
     def state(self, state):
         """Sets the state of this ListTasksRequest.
 
-        迁移任务状态
+        迁移任务状态 READY:准备就绪 RUNNING:迁移中 SYNCING:同步中 MIGRATE_SUCCESS:迁移成功 MIGRATE_FAIL:迁移失败 ABORTING:中止中 ABORT:中止 DELETING::删除中 SYNC_F_ROLLBACKING:同步失败回滚中 SYNC_F_ROLLBACK_SUCCESS:同步失败回滚成功
 
         :param state: The state of this ListTasksRequest.
         :type state: str
@@ -223,7 +223,7 @@ class ListTasksRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListTasksRequest.
 
-        需要查询的企业项目id
+        需要查询的企业项目ID
 
         :return: The enterprise_project_id of this ListTasksRequest.
         :rtype: str
@@ -234,7 +234,7 @@ class ListTasksRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListTasksRequest.
 
-        需要查询的企业项目id
+        需要查询的企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ListTasksRequest.
         :type enterprise_project_id: str

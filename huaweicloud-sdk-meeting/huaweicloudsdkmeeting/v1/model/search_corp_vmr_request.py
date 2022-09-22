@@ -45,19 +45,19 @@ class SearchCorpVmrRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
         :type offset: int
-        :param limit: 查询数量 默认值：0 
+        :param limit: 查询数量。 默认值：10。 
         :type limit: int
         :param search_key: 搜索条件。支持云会议室名称、ID及分配的用户、硬终端名称模糊搜索。
         :type search_key: str
-        :param vmr_mode: VMR模式，不填则默认为公共云会议室。 - 1：云会议室 - 2：网络研讨会。 
+        :param vmr_mode: VMR模式。不填则默认为云会议室。 - 1：云会议室 - 2：网络研讨会 
         :type vmr_mode: int
-        :param status: 云会议室状态，为null则查询是所有 * 0、正常 * 1、停用 * 2、未分配 
+        :param status: 云会议室状态。不填则查询所有。 * 0：正常 * 1：停用 * 2：未分配 
         :type status: int
         """
         
@@ -91,7 +91,7 @@ class SearchCorpVmrRequest:
     def x_request_id(self):
         """Gets the x_request_id of this SearchCorpVmrRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this SearchCorpVmrRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class SearchCorpVmrRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this SearchCorpVmrRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this SearchCorpVmrRequest.
         :type x_request_id: str
@@ -113,7 +113,7 @@ class SearchCorpVmrRequest:
     def accept_language(self):
         """Gets the accept_language of this SearchCorpVmrRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this SearchCorpVmrRequest.
         :rtype: str
@@ -124,7 +124,7 @@ class SearchCorpVmrRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this SearchCorpVmrRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this SearchCorpVmrRequest.
         :type accept_language: str
@@ -135,7 +135,7 @@ class SearchCorpVmrRequest:
     def offset(self):
         """Gets the offset of this SearchCorpVmrRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
         :return: The offset of this SearchCorpVmrRequest.
         :rtype: int
@@ -146,7 +146,7 @@ class SearchCorpVmrRequest:
     def offset(self, offset):
         """Sets the offset of this SearchCorpVmrRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
         :param offset: The offset of this SearchCorpVmrRequest.
         :type offset: int
@@ -157,7 +157,7 @@ class SearchCorpVmrRequest:
     def limit(self):
         """Gets the limit of this SearchCorpVmrRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :return: The limit of this SearchCorpVmrRequest.
         :rtype: int
@@ -168,7 +168,7 @@ class SearchCorpVmrRequest:
     def limit(self, limit):
         """Sets the limit of this SearchCorpVmrRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :param limit: The limit of this SearchCorpVmrRequest.
         :type limit: int
@@ -201,7 +201,7 @@ class SearchCorpVmrRequest:
     def vmr_mode(self):
         """Gets the vmr_mode of this SearchCorpVmrRequest.
 
-        VMR模式，不填则默认为公共云会议室。 - 1：云会议室 - 2：网络研讨会。 
+        VMR模式。不填则默认为云会议室。 - 1：云会议室 - 2：网络研讨会 
 
         :return: The vmr_mode of this SearchCorpVmrRequest.
         :rtype: int
@@ -212,7 +212,7 @@ class SearchCorpVmrRequest:
     def vmr_mode(self, vmr_mode):
         """Sets the vmr_mode of this SearchCorpVmrRequest.
 
-        VMR模式，不填则默认为公共云会议室。 - 1：云会议室 - 2：网络研讨会。 
+        VMR模式。不填则默认为云会议室。 - 1：云会议室 - 2：网络研讨会 
 
         :param vmr_mode: The vmr_mode of this SearchCorpVmrRequest.
         :type vmr_mode: int
@@ -223,7 +223,7 @@ class SearchCorpVmrRequest:
     def status(self):
         """Gets the status of this SearchCorpVmrRequest.
 
-        云会议室状态，为null则查询是所有 * 0、正常 * 1、停用 * 2、未分配 
+        云会议室状态。不填则查询所有。 * 0：正常 * 1：停用 * 2：未分配 
 
         :return: The status of this SearchCorpVmrRequest.
         :rtype: int
@@ -234,7 +234,7 @@ class SearchCorpVmrRequest:
     def status(self, status):
         """Sets the status of this SearchCorpVmrRequest.
 
-        云会议室状态，为null则查询是所有 * 0、正常 * 1、停用 * 2、未分配 
+        云会议室状态。不填则查询所有。 * 0：正常 * 1：停用 * 2：未分配 
 
         :param status: The status of this SearchCorpVmrRequest.
         :type status: int

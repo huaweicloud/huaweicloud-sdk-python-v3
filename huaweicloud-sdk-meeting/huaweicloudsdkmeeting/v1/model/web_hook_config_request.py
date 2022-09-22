@@ -41,15 +41,15 @@ class WebHookConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param corp_id: 企业ID，与spId二者必填一个
+        :param corp_id: 企业ID。按企业注册回调时需要填写。
         :type corp_id: str
-        :param sp_id: sp管理员ID，与corpId二者必填一个
+        :param sp_id: SP ID。多租户场景下，按SP注册回调时需要填写。
         :type sp_id: str
-        :param subscriber_id: 订阅者ID
+        :param subscriber_id: 订阅者ID。
         :type subscriber_id: str
-        :param subscriber_key: 订阅者秘钥
+        :param subscriber_key: 订阅者秘钥。
         :type subscriber_key: str
-        :param url: 订阅url，建议使用HTTPS
+        :param url: 订阅url。 &gt; 必须使用HTTPS。 
         :type url: str
         """
         
@@ -74,7 +74,7 @@ class WebHookConfigRequest:
     def corp_id(self):
         """Gets the corp_id of this WebHookConfigRequest.
 
-        企业ID，与spId二者必填一个
+        企业ID。按企业注册回调时需要填写。
 
         :return: The corp_id of this WebHookConfigRequest.
         :rtype: str
@@ -85,7 +85,7 @@ class WebHookConfigRequest:
     def corp_id(self, corp_id):
         """Sets the corp_id of this WebHookConfigRequest.
 
-        企业ID，与spId二者必填一个
+        企业ID。按企业注册回调时需要填写。
 
         :param corp_id: The corp_id of this WebHookConfigRequest.
         :type corp_id: str
@@ -96,7 +96,7 @@ class WebHookConfigRequest:
     def sp_id(self):
         """Gets the sp_id of this WebHookConfigRequest.
 
-        sp管理员ID，与corpId二者必填一个
+        SP ID。多租户场景下，按SP注册回调时需要填写。
 
         :return: The sp_id of this WebHookConfigRequest.
         :rtype: str
@@ -107,7 +107,7 @@ class WebHookConfigRequest:
     def sp_id(self, sp_id):
         """Sets the sp_id of this WebHookConfigRequest.
 
-        sp管理员ID，与corpId二者必填一个
+        SP ID。多租户场景下，按SP注册回调时需要填写。
 
         :param sp_id: The sp_id of this WebHookConfigRequest.
         :type sp_id: str
@@ -118,7 +118,7 @@ class WebHookConfigRequest:
     def subscriber_id(self):
         """Gets the subscriber_id of this WebHookConfigRequest.
 
-        订阅者ID
+        订阅者ID。
 
         :return: The subscriber_id of this WebHookConfigRequest.
         :rtype: str
@@ -129,7 +129,7 @@ class WebHookConfigRequest:
     def subscriber_id(self, subscriber_id):
         """Sets the subscriber_id of this WebHookConfigRequest.
 
-        订阅者ID
+        订阅者ID。
 
         :param subscriber_id: The subscriber_id of this WebHookConfigRequest.
         :type subscriber_id: str
@@ -140,7 +140,7 @@ class WebHookConfigRequest:
     def subscriber_key(self):
         """Gets the subscriber_key of this WebHookConfigRequest.
 
-        订阅者秘钥
+        订阅者秘钥。
 
         :return: The subscriber_key of this WebHookConfigRequest.
         :rtype: str
@@ -151,7 +151,7 @@ class WebHookConfigRequest:
     def subscriber_key(self, subscriber_key):
         """Sets the subscriber_key of this WebHookConfigRequest.
 
-        订阅者秘钥
+        订阅者秘钥。
 
         :param subscriber_key: The subscriber_key of this WebHookConfigRequest.
         :type subscriber_key: str
@@ -162,7 +162,7 @@ class WebHookConfigRequest:
     def url(self):
         """Gets the url of this WebHookConfigRequest.
 
-        订阅url，建议使用HTTPS
+        订阅url。 > 必须使用HTTPS。 
 
         :return: The url of this WebHookConfigRequest.
         :rtype: str
@@ -173,7 +173,7 @@ class WebHookConfigRequest:
     def url(self, url):
         """Sets the url of this WebHookConfigRequest.
 
-        订阅url，建议使用HTTPS
+        订阅url。 > 必须使用HTTPS。 
 
         :param url: The url of this WebHookConfigRequest.
         :type url: str

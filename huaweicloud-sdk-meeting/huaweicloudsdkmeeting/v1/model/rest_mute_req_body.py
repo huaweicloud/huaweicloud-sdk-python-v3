@@ -35,9 +35,9 @@ class RestMuteReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param is_mute: - 0: 取消静音。 - 1: 静音。
+        :param is_mute: - 0: 取消静音 - 1: 静音
         :type is_mute: int
-        :param allow_unmute_by_oneself: 是否允许自己解除静音（仅静音时有效），默认为允许。 - 0: 不允许。 - 1: 允许。
+        :param allow_unmute_by_oneself: 是否允许自己解除静音（仅静音时有效），默认为允许。 - 0: 不允许 - 1: 允许
         :type allow_unmute_by_oneself: int
         """
         
@@ -55,7 +55,7 @@ class RestMuteReqBody:
     def is_mute(self):
         """Gets the is_mute of this RestMuteReqBody.
 
-        - 0: 取消静音。 - 1: 静音。
+        - 0: 取消静音 - 1: 静音
 
         :return: The is_mute of this RestMuteReqBody.
         :rtype: int
@@ -66,7 +66,7 @@ class RestMuteReqBody:
     def is_mute(self, is_mute):
         """Sets the is_mute of this RestMuteReqBody.
 
-        - 0: 取消静音。 - 1: 静音。
+        - 0: 取消静音 - 1: 静音
 
         :param is_mute: The is_mute of this RestMuteReqBody.
         :type is_mute: int
@@ -77,7 +77,7 @@ class RestMuteReqBody:
     def allow_unmute_by_oneself(self):
         """Gets the allow_unmute_by_oneself of this RestMuteReqBody.
 
-        是否允许自己解除静音（仅静音时有效），默认为允许。 - 0: 不允许。 - 1: 允许。
+        是否允许自己解除静音（仅静音时有效），默认为允许。 - 0: 不允许 - 1: 允许
 
         :return: The allow_unmute_by_oneself of this RestMuteReqBody.
         :rtype: int
@@ -88,7 +88,7 @@ class RestMuteReqBody:
     def allow_unmute_by_oneself(self, allow_unmute_by_oneself):
         """Sets the allow_unmute_by_oneself of this RestMuteReqBody.
 
-        是否允许自己解除静音（仅静音时有效），默认为允许。 - 0: 不允许。 - 1: 允许。
+        是否允许自己解除静音（仅静音时有效），默认为允许。 - 0: 不允许 - 1: 允许
 
         :param allow_unmute_by_oneself: The allow_unmute_by_oneself of this RestMuteReqBody.
         :type allow_unmute_by_oneself: int

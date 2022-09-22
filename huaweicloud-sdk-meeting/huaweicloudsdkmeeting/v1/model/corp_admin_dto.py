@@ -33,7 +33,7 @@ class CorpAdminDTO:
 
         The model defined in huaweicloud sdk
 
-        :param account: 企业用户账号。 maxLength：64 minLength：1
+        :param account: 企业用户帐号。 * 如果是帐号/密码鉴权方式，是指华为云会议帐号 * 如果是App ID鉴权方式，是指第三方User ID
         :type account: str
         """
         
@@ -48,7 +48,7 @@ class CorpAdminDTO:
     def account(self):
         """Gets the account of this CorpAdminDTO.
 
-        企业用户账号。 maxLength：64 minLength：1
+        企业用户帐号。 * 如果是帐号/密码鉴权方式，是指华为云会议帐号 * 如果是App ID鉴权方式，是指第三方User ID
 
         :return: The account of this CorpAdminDTO.
         :rtype: str
@@ -59,7 +59,7 @@ class CorpAdminDTO:
     def account(self, account):
         """Sets the account of this CorpAdminDTO.
 
-        企业用户账号。 maxLength：64 minLength：1
+        企业用户帐号。 * 如果是帐号/密码鉴权方式，是指华为云会议帐号 * 如果是App ID鉴权方式，是指第三方User ID
 
         :param account: The account of this CorpAdminDTO.
         :type account: str

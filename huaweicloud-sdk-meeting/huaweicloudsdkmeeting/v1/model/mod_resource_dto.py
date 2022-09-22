@@ -39,13 +39,13 @@ class ModResourceDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 资源标识
+        :param id: 资源标识。
         :type id: str
-        :param type: 资源类型，企业内ID和TYPE唯一标识一个资源项，若只传资源ID可能会修改多个资源的信息. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏
+        :param type: 资源类型，企业内ID和TYPE唯一标识一个资源项，若只传资源ID可能会修改多个资源的信息。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏
         :type type: str
-        :param expire_date: 到期时间
+        :param expire_date: 到期时间。
         :type expire_date: int
-        :param is_disabled: 资源是否被停用
+        :param is_disabled: 资源是否被停用。
         :type is_disabled: bool
         """
         
@@ -69,7 +69,7 @@ class ModResourceDTO:
     def id(self):
         """Gets the id of this ModResourceDTO.
 
-        资源标识
+        资源标识。
 
         :return: The id of this ModResourceDTO.
         :rtype: str
@@ -80,7 +80,7 @@ class ModResourceDTO:
     def id(self, id):
         """Sets the id of this ModResourceDTO.
 
-        资源标识
+        资源标识。
 
         :param id: The id of this ModResourceDTO.
         :type id: str
@@ -91,7 +91,7 @@ class ModResourceDTO:
     def type(self):
         """Gets the type of this ModResourceDTO.
 
-        资源类型，企业内ID和TYPE唯一标识一个资源项，若只传资源ID可能会修改多个资源的信息. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏
+        资源类型，企业内ID和TYPE唯一标识一个资源项，若只传资源ID可能会修改多个资源的信息。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏
 
         :return: The type of this ModResourceDTO.
         :rtype: str
@@ -102,7 +102,7 @@ class ModResourceDTO:
     def type(self, type):
         """Sets the type of this ModResourceDTO.
 
-        资源类型，企业内ID和TYPE唯一标识一个资源项，若只传资源ID可能会修改多个资源的信息. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏
+        资源类型，企业内ID和TYPE唯一标识一个资源项，若只传资源ID可能会修改多个资源的信息。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏
 
         :param type: The type of this ModResourceDTO.
         :type type: str
@@ -113,7 +113,7 @@ class ModResourceDTO:
     def expire_date(self):
         """Gets the expire_date of this ModResourceDTO.
 
-        到期时间
+        到期时间。
 
         :return: The expire_date of this ModResourceDTO.
         :rtype: int
@@ -124,7 +124,7 @@ class ModResourceDTO:
     def expire_date(self, expire_date):
         """Sets the expire_date of this ModResourceDTO.
 
-        到期时间
+        到期时间。
 
         :param expire_date: The expire_date of this ModResourceDTO.
         :type expire_date: int
@@ -135,7 +135,7 @@ class ModResourceDTO:
     def is_disabled(self):
         """Gets the is_disabled of this ModResourceDTO.
 
-        资源是否被停用
+        资源是否被停用。
 
         :return: The is_disabled of this ModResourceDTO.
         :rtype: bool
@@ -146,7 +146,7 @@ class ModResourceDTO:
     def is_disabled(self, is_disabled):
         """Sets the is_disabled of this ModResourceDTO.
 
-        资源是否被停用
+        资源是否被停用。
 
         :param is_disabled: The is_disabled of this ModResourceDTO.
         :type is_disabled: bool

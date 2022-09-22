@@ -28,6 +28,7 @@ class DeviceMessage:
         'payload_format': 'str',
         'topic': 'str',
         'status': 'str',
+        'error_info': 'ErrorInfoDTO',
         'created_time': 'str',
         'finished_time': 'str'
     }
@@ -40,11 +41,12 @@ class DeviceMessage:
         'payload_format': 'payload_format',
         'topic': 'topic',
         'status': 'status',
+        'error_info': 'error_info',
         'created_time': 'created_time',
         'finished_time': 'finished_time'
     }
 
-    def __init__(self, message_id=None, name=None, message=None, encoding=None, payload_format=None, topic=None, status=None, created_time=None, finished_time=None):
+    def __init__(self, message_id=None, name=None, message=None, encoding=None, payload_format=None, topic=None, status=None, error_info=None, created_time=None, finished_time=None):
         """DeviceMessage
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class DeviceMessage:
         :type topic: str
         :param status: 消息状态，包含PENDING，DELIVERED，FAILED和TIMEOUT，PENDING指设备不在线，消息被缓存起来，等设备上线之后下发； DELIVERED指消息发送成功；FAILED消息发送失败；TIMEOUT指消息在平台默认时间内（1天）还没有下发送给设备，则平台会将消息设置为超时，状态为TIMEOUT。
         :type status: str
+        :param error_info: 
+        :type error_info: :class:`huaweicloudsdkiotda.v5.ErrorInfoDTO`
         :param created_time: 消息的创建时间，\&quot;yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;\&quot;格式的UTC字符串。
         :type created_time: str
         :param finished_time: 消息结束时间, \&quot;yyyyMMdd&#39;T&#39;HHmmss&#39;Z&#39;\&quot;格式的UTC字符串，包含消息转换到DELIVERED和TIMEOUT两个状态的时间。
@@ -78,6 +82,7 @@ class DeviceMessage:
         self._payload_format = None
         self._topic = None
         self._status = None
+        self._error_info = None
         self._created_time = None
         self._finished_time = None
         self.discriminator = None
@@ -96,6 +101,8 @@ class DeviceMessage:
             self.topic = topic
         if status is not None:
             self.status = status
+        if error_info is not None:
+            self.error_info = error_info
         if created_time is not None:
             self.created_time = created_time
         if finished_time is not None:
@@ -254,6 +261,26 @@ class DeviceMessage:
         :type status: str
         """
         self._status = status
+
+    @property
+    def error_info(self):
+        """Gets the error_info of this DeviceMessage.
+
+
+        :return: The error_info of this DeviceMessage.
+        :rtype: :class:`huaweicloudsdkiotda.v5.ErrorInfoDTO`
+        """
+        return self._error_info
+
+    @error_info.setter
+    def error_info(self, error_info):
+        """Sets the error_info of this DeviceMessage.
+
+
+        :param error_info: The error_info of this DeviceMessage.
+        :type error_info: :class:`huaweicloudsdkiotda.v5.ErrorInfoDTO`
+        """
+        self._error_info = error_info
 
     @property
     def created_time(self):

@@ -236,7 +236,7 @@ class ApigClient(Client):
     def associate_domain_v2(self, request):
         """绑定域名
 
-        用户自定义的域名，需要CNAME到API分组的子域名上才能生效，具体方法请参见《云解析服务用户指南》的“添加CANME类型记录集”章节。
+        用户自定义的域名，需要增加A记录才能生效，具体方法请参见《云解析服务用户指南》的“添加A类型记录集”章节。
         每个API分组下最多可绑定5个域名。绑定域名后，用户可通过自定义域名调用API。
         
         详细说明请参考华为云API Explorer。
@@ -489,13 +489,16 @@ class ApigClient(Client):
 
         将API发布到不同的环境后，对于不同的环境，可能会有不同的环境变量，比如，API的服务部署地址，请求的版本号等。
         
+        
         用户可以定义不同的环境变量，用户在定义API时，在API的定义中使用这些变量，当调用API时，API网关会将这些变量替换成真实的变量值，以达到不同环境的区分效果。
         
+        
         环境变量定义在API分组上，该分组下的所有API都可以使用这些变量。
-        &gt; 1.环境变量的变量名称必须保持唯一，即一个分组在同一个环境上不能有两个同名的变量
-          2.环境变量区分大小写，即变量ABC与变量abc是两个不同的变量
-          3.设置了环境变量后，使用到该变量的API的调试功能将不可使用。
-          4.定义了环境变量后，使用到环境变量的地方应该以对称的#标识环境变量，当API发布到相应的环境后，会对环境变量的值进行替换，如：定义的API的URL为：https://#address#:8080，环境变量address在RELEASE环境上的值为：192.168.1.5，则API发布到RELEASE环境后的真实的URL为：https://192.168.1.5:8080。
+        
+        &gt; 1. 环境变量的变量名称必须保持唯一，即一个分组在同一个环境上不能有两个同名的变量。
+        &gt; 2. 环境变量区分大小写，即变量ABC与变量abc是两个不同的变量。
+        &gt; 3. 设置了环境变量后，使用到该变量的API的调试功能将不可使用。
+        &gt; 4. 定义了环境变量后，使用到环境变量的地方应该以对称的#标识环境变量，当API发布到相应的环境后，会对环境变量的值进行替换，如：定义的API的URL为：https://#address#:8080，环境变量address在RELEASE环境上的值为：192.168.1.5，则API发布到RELEASE环境后的真实的URL为：https://192.168.1.5:8080。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -559,36 +562,29 @@ class ApigClient(Client):
         
         支持配置的特性列表及特性配置示例如下：
         
-        | 特性名称 | 特性描述 | 特性配置示例 | 特性配置参数 |  |  |  |
+        | 特性名称 | 特性描述 | 特性配置示例 | 特性参数名称 | 参数描述 | 参数默认值 | 参数范围 | 
         --------| :------- | :-------| :-------| :-------| :-------| :-------
-        |  |  |  | 参数名称 | 参数描述 | 参数默认值 | 参数范围 |
-        | lts | 是否支持shubao访问日志上报功能。|{\&quot;name\&quot;:\&quot;lts\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;group_id\\\\\&quot;: \\\&quot;\\,\\\\\&quot;topic_id\\\\\&quot;:\\\\\&quot;\\\\\&quot;,\\\\\&quot;log_group\\\\\&quot;:\\\\\&quot;\\\\\&quot;,\\\\\&quot;log_stream\\\\\&quot;:\\\\\&quot;\\\\\&quot;}\&quot;} | group_id | 日志组ID | | |
-        |  |  |  | topic_id | 日志流ID | | |
-        |  |  |  | log_group | 日志组名称 | | |
-        |  |  |  | log_stream | 日志流名称 | | |
+        | lts | 是否支持shubao访问日志上报功能。|{\&quot;name\&quot;:\&quot;lts\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;group_id\\\\\&quot;: \\\&quot;\\,\\\\\&quot;topic_id\\\\\&quot;:\\\\\&quot;\\\\\&quot;,\\\\\&quot;log_group\\\\\&quot;:\\\\\&quot;\\\\\&quot;,\\\\\&quot;log_stream\\\\\&quot;:\\\\\&quot;\\\\\&quot;}\&quot;} | (1) group_id &lt;br/&gt;(2) topic_id &lt;br/&gt;(3) log_group &lt;br/&gt;(4) log_stream | (1) 日志组ID &lt;br/&gt;(2) 日志流ID &lt;br/&gt;(3) 日志组名称 &lt;br/&gt;(4) 日志流名称 | - | - |
         | ratelimit | 是否支持自定义流控值。|{\&quot;name\&quot;:\&quot;ratelimit\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;api_limits\\\\\&quot;: 500}\&quot;} | api_limits | API全局默认流控值。注意：如果配置过小会导致业务持续被流控，请根据业务谨慎修改。 | 200 次/秒 | 1-1000000 次/秒 |
-        | request_body_size | 是否支持指定最大请求Body大小。|{\&quot;name\&quot;:\&quot;request_body_size\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;104857600\&quot;} | request_body_size | 请求中允许携带的Body大小上限。 | 12 M | 1-9536 M |
+        | request_body_size | 是否支持设置请求体大小上限。|{\&quot;name\&quot;:\&quot;request_body_size\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;104857600\&quot;} | request_body_size | 请求中允许携带的Body大小上限。 | 12 M | 1-9536 M |
         | backend_timeout | 是否支持配置后端API最大超时时间。|{\&quot;name\&quot;:\&quot;backend_timeout\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\&quot;max_timeout\\\&quot;: 500}\&quot;} | max_timeout | API网关到后端服务的超时时间上限。 | 60000 ms | 1-600000 ms |
-        | app_token | 是否开启app_token认证方式。|{\&quot;name\&quot;:\&quot;app_token\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;, \\\\\&quot;app_token_expire_time\\\\\&quot;: 3600, \\\\\&quot;app_token_uri\\\\\&quot;: \\\\\&quot;/v1/apigw/oauth2/token\\\\\&quot;, \\\\\&quot;refresh_token_expire_time\\\\\&quot;: 7200}\&quot;} | enable | 是否开启 | off | on/off |
-        |  |  |  | app_token_expire_time | access token的有效时间 | 3600 s | 1-72000 s |
-        |  |  |  | refresh_token_expire_time | refresh token的有效时间 | 7200 s | 1-72000 s |
-        |  |  |  | app_token_uri | 获取token的uri | /v1/apigw/oauth2/token |  |
-        |  |  |  | app_token_key | token的加密key |  |  |
-        | app_api_key | 是否开启app_api_key认证方式。|{\&quot;name\&quot;:\&quot;app_api_key\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} |  |  | off | on/off |
-        | app_basic | 是否开启app_basic认证方式。|{\&quot;name\&quot;:\&quot;app_basic\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} |  |  | off | on/off |
-        | app_secret | 是否支持app_secret认证方式。|{\&quot;name\&quot;:\&quot;app_secret\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} |  |  | off | on/off |
-        | app_jwt | 是否支持app_jwt认证方式。|{\&quot;name\&quot;:\&quot;app_jwt\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;, \\\\\&quot;auth_header\\\\\&quot;: \\\\\&quot;Authorization\\\\\&quot;}\&quot;}| enable | 是否开启app_jwt认证方式。 | off | on/off |
-        |  |  |  | auth_header | app_jwt认证头 | Authorization |  |
-        | public_key | 是否支持public_key类型的后端签名。|{\&quot;name\&quot;:\&quot;public_key\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;, \\\\\&quot;public_key_uri_prefix\\\\\&quot;: \\\\\&quot;/apigw/authadv/v2/public-key/\\\\\&quot;}\&quot;}| enable | 是否开启app_jwt认证方式。 | off | on/off |
-        |  |  |  | public_key_uri_prefix | 获取public key的uri前缀 | /apigw/authadv/v2/public-key/ |  |
-        | backend_token_allow | 是否支持普通租户透传token到后端。|{\&quot;name\&quot;:\&quot;backend_token_allow\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;backend_token_allow_users\\\\\&quot;: [\\\\\&quot;paas_apig_wwx548366_01\\\\\&quot;]}\&quot;} | backend_token_allow_users | 透传token到后端普通租户白名单，匹配普通租户domain name正则表达式 |  |  |
-        | backend_client_certificate | 是否开启后端双向认证。|{\&quot;name\&quot;:\&quot;backend_client_certificate\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;ca\\\\\&quot;: \\\\\&quot;\\\\\&quot;,\\\\\&quot;content\\\\\&quot;: \\\\\&quot;\\\\\&quot;,\\\\\&quot;key\\\\\&quot;: \\\\\&quot;\\\\\&quot;}\&quot;} | enable | 是否开启 | off | on/off |
-        |  |  |  | ca | 双向认证信任证书 |  |  |
-        |  |  |  | content | 双向认证证书 |  |  |
-        |  |  |  | key | 双向认证信任私钥 |  |  |
-        | ssl_ciphers | 是否支持https加密套件。|{\&quot;name\&quot;:\&quot;ssl_ciphers\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;config\&quot;: \&quot;{\\\\\&quot;ssl_ciphers\\\\\&quot;: [\\\\\&quot;ECDHE-ECDSA-AES256-GCM-SHA384\\\\\&quot;]}\&quot;} | ssl_ciphers | 支持的加解密套件。ssl_ciphers数组中只允许出现默认值中的字符串，且数组不能为空。 |  | ECDHE-ECDSA-AES256-GCM-SHA384,ECDHE-RSA-AES256-GCM-SHA384,ECDHE-ECDSA-AES128-GCM-SHA256,ECDHE-RSA-AES128-GCM-SHA256,ECDHE-ECDSA-AES256-SHA384,ECDHE-RSA-AES256-SHA384,ECDHE-ECDSA-AES128-SHA256,ECDHE-RSA-AES128-SHA256 |
-        | real_ip_from_xff | 是否开启使用xff头作为访问控制、流控策略的源ip生效依据。|{\&quot;name\&quot;:\&quot;real_ip_from_xff\&quot;,\&quot;enable\&quot;: true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;xff_index\\\\\&quot;: 1}\&quot;} | enable | 是否开启 | off | on/off |
-        |  |  |  | xff_index | 源ip所在xff头的索引位置（支持负数，-1为最后一位，以此类推） | -1 | int32有效值 |
+        | app_token | 是否开启app_token认证方式。|{\&quot;name\&quot;:\&quot;app_token\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;, \\\\\&quot;app_token_expire_time\\\\\&quot;: 3600, \\\\\&quot;app_token_uri\\\\\&quot;: \\\\\&quot;/v1/apigw/oauth2/token\\\\\&quot;, \\\\\&quot;refresh_token_expire_time\\\\\&quot;: 7200}\&quot;} | (1) enable &lt;br/&gt;(2) app_token_expire_time &lt;br/&gt;(3) refresh_token_expire_time &lt;br/&gt;(4) app_token_uri &lt;br/&gt;(5) app_token_key | (1) 是否开启 &lt;br/&gt;(2) access token的有效时间 &lt;br/&gt;(3) refresh token的有效时间 &lt;br/&gt;(4) 获取token的uri &lt;br/&gt;(5) token的加密key | (1) off &lt;br/&gt;(2) 3600 s &lt;br/&gt;(3) 7200 s &lt;br/&gt;(4) /v1/apigw/oauth2/token | (1) on/off &lt;br/&gt;(2) 1-72000 s &lt;br/&gt;(3) 1-72000 s |
+        | app_api_key | 是否开启app_api_key认证方式。|{\&quot;name\&quot;:\&quot;app_api_key\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off | 
+        | app_basic | 是否开启app_basic认证方式。|{\&quot;name\&quot;:\&quot;app_basic\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off | 
+        | app_secret | 是否支持app_secret认证方式。|{\&quot;name\&quot;:\&quot;app_secret\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off | 
+        | app_jwt | 是否支持app_jwt认证方式。|{\&quot;name\&quot;:\&quot;app_jwt\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;, \\\\\&quot;auth_header\\\\\&quot;: \\\\\&quot;Authorization\\\\\&quot;}\&quot;}| (1) enable &lt;br/&gt;(2) auth_header | (1) 是否开启app_jwt认证方式。 &lt;br/&gt;(2) app_jwt认证头 | (1) off &lt;br/&gt;(2) Authorization | (1) on/off | 
+        | public_key | 是否支持public_key类型的后端签名。|{\&quot;name\&quot;:\&quot;public_key\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;, \\\\\&quot;public_key_uri_prefix\\\\\&quot;: \\\\\&quot;/apigw/authadv/v2/public-key/\\\\\&quot;}\&quot;}| (1) enable &lt;br/&gt;(2) public_key_uri_prefix | (1)  是否开启app_jwt认证方式。 &lt;br/&gt;(2) 获取public key的uri前缀 | (1) off&lt;br/&gt;(2) /apigw/authadv/v2/public-key/ | (1) on/off | 
+        | backend_token_allow | 是否支持普通租户透传token到后端。|{\&quot;name\&quot;:\&quot;backend_token_allow\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;backend_token_allow_users\\\\\&quot;: [\\\\\&quot;user_name\\\\\&quot;]}\&quot;} | backend_token_allow_users | 透传token到后端普通租户白名单，匹配普通租户domain name正则表达式 | - | - |
+        | backend_client_certificate | 是否开启后端双向认证。|{\&quot;name\&quot;:\&quot;backend_client_certificate\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;ca\\\\\&quot;: \\\\\&quot;\\\\\&quot;,\\\\\&quot;content\\\\\&quot;: \\\\\&quot;\\\\\&quot;,\\\\\&quot;key\\\\\&quot;: \\\\\&quot;\\\\\&quot;}\&quot;} | (1) enable &lt;br/&gt;(2) ca &lt;br/&gt;(3)  content &lt;br/&gt;(4) key | (1) 是否开启 &lt;br/&gt;(2) 双向认证信任证书 &lt;br/&gt;(3) 双向认证证书 &lt;br/&gt;(4) 双向认证信任私钥 | (1) off | (1) on/off | 
+        | ssl_ciphers | 是否支持https加密套件。|{\&quot;name\&quot;:\&quot;ssl_ciphers\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;config\&quot;: \&quot;{\\\\\&quot;ssl_ciphers\\\\\&quot;: [\\\\\&quot;ECDHE-ECDSA-AES256-GCM-SHA384\\\\\&quot;]}\&quot;} | ssl_ciphers | 支持的加解密套件。ssl_ciphers数组中只允许出现默认值中的字符串，且数组不能为空。 | - | ECDHE-ECDSA-AES256-GCM-SHA384,ECDHE-RSA-AES256-GCM-SHA384,ECDHE-ECDSA-AES128-GCM-SHA256,ECDHE-RSA-AES128-GCM-SHA256,ECDHE-ECDSA-AES256-SHA384,ECDHE-RSA-AES256-SHA384,ECDHE-ECDSA-AES128-SHA256,ECDHE-RSA-AES128-SHA256 |
+        | real_ip_from_xff | 是否开启使用xff头作为访问控制、流控策略的源ip生效依据。|{\&quot;name\&quot;:\&quot;real_ip_from_xff\&quot;,\&quot;enable\&quot;: true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;xff_index\\\\\&quot;: 1}\&quot;} | (1) enable &lt;br/&gt;(2) xff_index | (1) 是否开启 &lt;br/&gt;(2)  源ip所在xff头的索引位置（支持负数，-1为最后一位，以此类推） | (1) off &lt;br/&gt;(2) -1 | (1) on/off &lt;br/&gt;(2) int32有效值 | 
+        | app_route | 是否支持ip访问。|{\&quot;name\&quot;:\&quot;app_route\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off | 
+        | vpc_name_modifiable | 是否支持修改负载通道名称。 |{\&quot;name\&quot;:\&quot;vpc_name_modifiable\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | on | on/off | 
+        | default_group_host_trustlist | DEFAULT分组是否支持配置非本实例IP访问。|{\&quot;name\&quot;:\&quot;default_group_host_trustlist\&quot;,\&quot;enable\&quot;: true,\&quot;config\&quot;:  \&quot;{\\\\\&quot;enable\\\\\&quot;:\\\\\&quot;on\\\\\&quot;,\\\\\&quot;hosts\\\\\&quot;:[\\\\\&quot;123.2.2.2\\\\\&quot;,\\\\\&quot;202.2.2.2\\\\\&quot;]}\&quot;} | (1) enable &lt;br/&gt;(2) hosts | (1) 是否开启 &lt;br/&gt;(2) 非本实例IP列表 | - | (1) on/off | 
+        | throttle_strategy | 是否启用流控模式。 |{\&quot;name\&quot;:\&quot;throttle_strategy\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;strategy\\\\\&quot;: \\\\\&quot;local\\\\\&quot;}\&quot;} | (1) enable &lt;br/&gt;(2) strategy | (1) 是否开启&lt;br/&gt;(2) 流控模式 | (1) off | (1) on/off &lt;br/&gt;(2) cluster/local | 
+        | custom_log | 是否支持用户自定义API请求中的HEADER、QUERY、COOKIE参数值打印到日志。 |{\&quot;name\&quot;:\&quot;custom_log\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;custom_logs\\\\\&quot;:[{\\\\\&quot;location\\\\\&quot;:\\\\\&quot;header\\\\\&quot;,\\\\\&quot;name\\\\\&quot;:\\\\\&quot;a1234\\\\\&quot;}]}\&quot;} | (1) custom_logs &lt;br/&gt;(2) location &lt;br/&gt;(3) name | (1) 自定义日志 &lt;br/&gt;(2) 位置&lt;br/&gt;(3) 名称 | - | (1) 数量不超过10个 &lt;br/&gt;(2) header/query/cookie | 
+        | real_ip_header_getter | 是否开启通过用户自定义的Header获取用户源IP地址。 |{\&quot;name\&quot;:\&quot;real_ip_header_getter\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;header_getter\\\\\&quot;: \\\\\&quot;header:testIP\\\\\&quot;}\&quot;} | (1) enable &lt;br/&gt;(2) header_getter | (1) 是否开启 &lt;br/&gt;(2) 获取用户源IP地址的自定义Header | (1) off | (1) on/off | 
+        | policy_cookie_param | 是否开启策略后端条件支持cookie类型。 |{\&quot;name\&quot;:\&quot;policy_cookie_param\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off |  
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1326,7 +1322,7 @@ class ApigClient(Client):
     def delete_request_throttling_policy_v2(self, request):
         """删除流控策略
 
-        删除指定的流控策略,以及该流控策略与API的所有绑定关系。
+        删除指定的流控策略，以及该流控策略与API的所有绑定关系。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1386,7 +1382,7 @@ class ApigClient(Client):
     def delete_signature_key_v2(self, request):
         """删除签名密钥
 
-        删除指定的签名密钥,删除签名密钥时，其配置的绑定关系会一并删除，相应的签名密钥会失效。
+        删除指定的签名密钥，删除签名密钥时，其配置的绑定关系会一并删除，相应的签名密钥会失效。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2279,7 +2275,7 @@ class ApigClient(Client):
         lts | 是否支持shubao访问日志上报功能。| 是 |
         gateway_responses | 是否支持网关自定义响应。| 否 |
         ratelimit | 是否支持自定义流控值。| 是 |
-        request_body_size | 是否支持指定最大请求Body大小。| 是 |
+        request_body_size | 是否支持设置请求体大小上限。| 是 |
         backend_timeout | 是否支持配置后端API最大超时时间。| 是 |
         app_token | 是否开启app_token认证方式。| 是 |
         app_api_key | 是否开启app_api_key认证方式。| 是 |
@@ -2295,6 +2291,27 @@ class ApigClient(Client):
         route | 是否支持自定义路由。| 否 |
         cors | 是否支持API使用插件功能。| 否 |
         real_ip_from_xff | 是否开启使用xff头作为访问控制、流控策略的源ip生效依据。  | 是 |
+        app_route | 是否支持ip访问。| 是 |
+        vpc_name_modifiable | 是否支持修改负载通道名称。 | 是 |
+        default_group_host_trustlist | DEFAULT分组是否支持配置非本实例IP访问。 | 是 |
+        throttle_strategy | 是否支持配置流控算法策略。 | 是 |
+        custom_log | 是否支持用户自定义API请求中的HEADER、QUERY、COOKIE参数值打印到日志。 | 是 |
+        real_ip_header_getter | 是否开启通过用户自定义的Header获取用户源IP地址。 | 是 |
+        policy_cookie_param | 是否开启策略后端条件支持cookie类型。 | 是 |
+        app_quota | 是否支持客户端配额策略。 | 否 |
+        app_acl | 是否支持流控策略。 | 否 |
+        set_resp_headers | 是否支持响应header插件。 | 否 |
+        vpc_backup | 是否支持VPC通道的主备配置。 | 否 |
+        sign_aes | 签名秘钥是否支持AES加密方式。 | 否 |
+        kafka_log | 是否支持增删改查kafka日志插件。 | 否 |
+        backend_retry_count | 是否支持API配置重试次数。 | 否 |
+        policy_sys_param | 策略后端条件来源是否支持系统参数。 | 否 |
+        breaker | 是否支持断路器。 | 否 |
+        content_type_configurable | 获取API列表的接口返回信息中是否存在API的请求参数类型信息（Content-Type）。 | 否 |
+        rate_limit_plugin | 是否支持流控插件。 | 否 |
+        breakerv2 | 是否支持断路器，能够实现过载情况下服务能力降级。 | 否 |
+        sm_cipher_type | 加密本地敏感数据时，是否支持应用商密加密算法。 | 否 |
+        rate_limit_algorithm | 是否支持切换流控算法。 | 否 |
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -5422,7 +5439,7 @@ class ApigClient(Client):
 
         查询API分组列表。
         
-        如果是租户操作，则查询该租户下所有的分组；如果是管理员操作，则查询的是所有租户的分组。
+        如果是租户操作，则查询该租户下所有的分组；如果是管理员权限帐号操作，则查询的是所有租户的分组。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -7052,7 +7069,7 @@ class ApigClient(Client):
         """删除APP
 
         删除指定的APP。
-        APP删除后，将无法再调用任何API；其中，云市场自动创建的APP无法被删除。
+        APP删除后，将无法再调用任何API[；其中，云商店自动创建的APP无法被删除](tag:hws)。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -7186,7 +7203,7 @@ class ApigClient(Client):
     def list_apis_unbinded_to_app_v2(self, request):
         """查看APP未绑定的API列表
 
-        查询指定环境上某个APP未绑定的API列表，包括自有API和从云市场购买的API。
+        查询指定环境上某个APP未绑定的API列表[，包括自有API和从云商店购买的API](tag:hws)。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

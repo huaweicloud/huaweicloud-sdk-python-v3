@@ -67,29 +67,29 @@ class OpenWebinarOngoingInfo:
 
         The model defined in huaweicloud sdk
 
-        :param online_attendee_count: 实时在线人数
+        :param online_attendee_count: 实时在线人数。
         :type online_attendee_count: int
-        :param conf_uuid: 会议UUID
+        :param conf_uuid: 网络研讨会UUID。
         :type conf_uuid: str
-        :param dept_name: 预订人部门
+        :param dept_name: 预订人部门名称。
         :type dept_name: str
-        :param conference_id: 会议ID。长度限制为32个字符。
+        :param conference_id: 网络研讨会ID。
         :type conference_id: str
-        :param corp_id: 企业id
+        :param corp_id: 企业ID。
         :type corp_id: str
-        :param subject: 主题
+        :param subject: 网络研讨会主题。
         :type subject: str
-        :param description: 描述
+        :param description: 网络研讨会描述。
         :type description: str
-        :param start_time: 会议召开时间
+        :param start_time: 网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
         :type start_time: str
-        :param time_zone_id: 时区ID
+        :param time_zone_id: 会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 &gt; * 举例：“timeZoneID”:\&quot;26\&quot;，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
         :type time_zone_id: int
-        :param scheduser_id: 会议预订者ID
+        :param scheduser_id: 网络研讨会预订者的用户UUID。
         :type scheduser_id: str
-        :param scheduser_name: 会议预订者帐号名称。长度最大限制为96个字符。
+        :param scheduser_name: 预订者名称。
         :type scheduser_name: str
-        :param vmr_pkg_name: 网络研讨会资源名
+        :param vmr_pkg_name: 网络研讨会VMR名称。
         :type vmr_pkg_name: str
         :param chair_join_uri: 主持人入会地址。
         :type chair_join_uri: str
@@ -168,7 +168,7 @@ class OpenWebinarOngoingInfo:
     def online_attendee_count(self):
         """Gets the online_attendee_count of this OpenWebinarOngoingInfo.
 
-        实时在线人数
+        实时在线人数。
 
         :return: The online_attendee_count of this OpenWebinarOngoingInfo.
         :rtype: int
@@ -179,7 +179,7 @@ class OpenWebinarOngoingInfo:
     def online_attendee_count(self, online_attendee_count):
         """Sets the online_attendee_count of this OpenWebinarOngoingInfo.
 
-        实时在线人数
+        实时在线人数。
 
         :param online_attendee_count: The online_attendee_count of this OpenWebinarOngoingInfo.
         :type online_attendee_count: int
@@ -190,7 +190,7 @@ class OpenWebinarOngoingInfo:
     def conf_uuid(self):
         """Gets the conf_uuid of this OpenWebinarOngoingInfo.
 
-        会议UUID
+        网络研讨会UUID。
 
         :return: The conf_uuid of this OpenWebinarOngoingInfo.
         :rtype: str
@@ -201,7 +201,7 @@ class OpenWebinarOngoingInfo:
     def conf_uuid(self, conf_uuid):
         """Sets the conf_uuid of this OpenWebinarOngoingInfo.
 
-        会议UUID
+        网络研讨会UUID。
 
         :param conf_uuid: The conf_uuid of this OpenWebinarOngoingInfo.
         :type conf_uuid: str
@@ -212,7 +212,7 @@ class OpenWebinarOngoingInfo:
     def dept_name(self):
         """Gets the dept_name of this OpenWebinarOngoingInfo.
 
-        预订人部门
+        预订人部门名称。
 
         :return: The dept_name of this OpenWebinarOngoingInfo.
         :rtype: str
@@ -223,7 +223,7 @@ class OpenWebinarOngoingInfo:
     def dept_name(self, dept_name):
         """Sets the dept_name of this OpenWebinarOngoingInfo.
 
-        预订人部门
+        预订人部门名称。
 
         :param dept_name: The dept_name of this OpenWebinarOngoingInfo.
         :type dept_name: str
@@ -234,7 +234,7 @@ class OpenWebinarOngoingInfo:
     def conference_id(self):
         """Gets the conference_id of this OpenWebinarOngoingInfo.
 
-        会议ID。长度限制为32个字符。
+        网络研讨会ID。
 
         :return: The conference_id of this OpenWebinarOngoingInfo.
         :rtype: str
@@ -245,7 +245,7 @@ class OpenWebinarOngoingInfo:
     def conference_id(self, conference_id):
         """Sets the conference_id of this OpenWebinarOngoingInfo.
 
-        会议ID。长度限制为32个字符。
+        网络研讨会ID。
 
         :param conference_id: The conference_id of this OpenWebinarOngoingInfo.
         :type conference_id: str
@@ -256,7 +256,7 @@ class OpenWebinarOngoingInfo:
     def corp_id(self):
         """Gets the corp_id of this OpenWebinarOngoingInfo.
 
-        企业id
+        企业ID。
 
         :return: The corp_id of this OpenWebinarOngoingInfo.
         :rtype: str
@@ -267,7 +267,7 @@ class OpenWebinarOngoingInfo:
     def corp_id(self, corp_id):
         """Sets the corp_id of this OpenWebinarOngoingInfo.
 
-        企业id
+        企业ID。
 
         :param corp_id: The corp_id of this OpenWebinarOngoingInfo.
         :type corp_id: str
@@ -278,7 +278,7 @@ class OpenWebinarOngoingInfo:
     def subject(self):
         """Gets the subject of this OpenWebinarOngoingInfo.
 
-        主题
+        网络研讨会主题。
 
         :return: The subject of this OpenWebinarOngoingInfo.
         :rtype: str
@@ -289,7 +289,7 @@ class OpenWebinarOngoingInfo:
     def subject(self, subject):
         """Sets the subject of this OpenWebinarOngoingInfo.
 
-        主题
+        网络研讨会主题。
 
         :param subject: The subject of this OpenWebinarOngoingInfo.
         :type subject: str
@@ -300,7 +300,7 @@ class OpenWebinarOngoingInfo:
     def description(self):
         """Gets the description of this OpenWebinarOngoingInfo.
 
-        描述
+        网络研讨会描述。
 
         :return: The description of this OpenWebinarOngoingInfo.
         :rtype: str
@@ -311,7 +311,7 @@ class OpenWebinarOngoingInfo:
     def description(self, description):
         """Sets the description of this OpenWebinarOngoingInfo.
 
-        描述
+        网络研讨会描述。
 
         :param description: The description of this OpenWebinarOngoingInfo.
         :type description: str
@@ -322,7 +322,7 @@ class OpenWebinarOngoingInfo:
     def start_time(self):
         """Gets the start_time of this OpenWebinarOngoingInfo.
 
-        会议召开时间
+        网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :return: The start_time of this OpenWebinarOngoingInfo.
         :rtype: str
@@ -333,7 +333,7 @@ class OpenWebinarOngoingInfo:
     def start_time(self, start_time):
         """Sets the start_time of this OpenWebinarOngoingInfo.
 
-        会议召开时间
+        网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :param start_time: The start_time of this OpenWebinarOngoingInfo.
         :type start_time: str
@@ -344,7 +344,7 @@ class OpenWebinarOngoingInfo:
     def time_zone_id(self):
         """Gets the time_zone_id of this OpenWebinarOngoingInfo.
 
-        时区ID
+        会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
         :return: The time_zone_id of this OpenWebinarOngoingInfo.
         :rtype: int
@@ -355,7 +355,7 @@ class OpenWebinarOngoingInfo:
     def time_zone_id(self, time_zone_id):
         """Sets the time_zone_id of this OpenWebinarOngoingInfo.
 
-        时区ID
+        会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
         :param time_zone_id: The time_zone_id of this OpenWebinarOngoingInfo.
         :type time_zone_id: int
@@ -366,7 +366,7 @@ class OpenWebinarOngoingInfo:
     def scheduser_id(self):
         """Gets the scheduser_id of this OpenWebinarOngoingInfo.
 
-        会议预订者ID
+        网络研讨会预订者的用户UUID。
 
         :return: The scheduser_id of this OpenWebinarOngoingInfo.
         :rtype: str
@@ -377,7 +377,7 @@ class OpenWebinarOngoingInfo:
     def scheduser_id(self, scheduser_id):
         """Sets the scheduser_id of this OpenWebinarOngoingInfo.
 
-        会议预订者ID
+        网络研讨会预订者的用户UUID。
 
         :param scheduser_id: The scheduser_id of this OpenWebinarOngoingInfo.
         :type scheduser_id: str
@@ -388,7 +388,7 @@ class OpenWebinarOngoingInfo:
     def scheduser_name(self):
         """Gets the scheduser_name of this OpenWebinarOngoingInfo.
 
-        会议预订者帐号名称。长度最大限制为96个字符。
+        预订者名称。
 
         :return: The scheduser_name of this OpenWebinarOngoingInfo.
         :rtype: str
@@ -399,7 +399,7 @@ class OpenWebinarOngoingInfo:
     def scheduser_name(self, scheduser_name):
         """Sets the scheduser_name of this OpenWebinarOngoingInfo.
 
-        会议预订者帐号名称。长度最大限制为96个字符。
+        预订者名称。
 
         :param scheduser_name: The scheduser_name of this OpenWebinarOngoingInfo.
         :type scheduser_name: str
@@ -410,7 +410,7 @@ class OpenWebinarOngoingInfo:
     def vmr_pkg_name(self):
         """Gets the vmr_pkg_name of this OpenWebinarOngoingInfo.
 
-        网络研讨会资源名
+        网络研讨会VMR名称。
 
         :return: The vmr_pkg_name of this OpenWebinarOngoingInfo.
         :rtype: str
@@ -421,7 +421,7 @@ class OpenWebinarOngoingInfo:
     def vmr_pkg_name(self, vmr_pkg_name):
         """Sets the vmr_pkg_name of this OpenWebinarOngoingInfo.
 
-        网络研讨会资源名
+        网络研讨会VMR名称。
 
         :param vmr_pkg_name: The vmr_pkg_name of this OpenWebinarOngoingInfo.
         :type vmr_pkg_name: str

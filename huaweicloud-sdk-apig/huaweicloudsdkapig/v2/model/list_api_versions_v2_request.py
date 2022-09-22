@@ -22,35 +22,35 @@ class ListApiVersionsV2Request:
 
     openapi_types = {
         'instance_id': 'str',
+        'api_id': 'str',
         'offset': 'int',
         'limit': 'int',
-        'api_id': 'str',
         'env_id': 'str',
         'env_name': 'str'
     }
 
     attribute_map = {
         'instance_id': 'instance_id',
+        'api_id': 'api_id',
         'offset': 'offset',
         'limit': 'limit',
-        'api_id': 'api_id',
         'env_id': 'env_id',
         'env_name': 'env_name'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, api_id=None, env_id=None, env_name=None):
+    def __init__(self, instance_id=None, api_id=None, offset=None, limit=None, env_id=None, env_name=None):
         """ListApiVersionsV2Request
 
         The model defined in huaweicloud sdk
 
         :param instance_id: 实例ID
         :type instance_id: str
+        :param api_id: API的编号
+        :type api_id: str
         :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
         :type offset: int
         :param limit: 每页显示的条目数量
         :type limit: int
-        :param api_id: API的编号
-        :type api_id: str
         :param env_id: 环境的编号
         :type env_id: str
         :param env_name: 环境的名称
@@ -60,19 +60,19 @@ class ListApiVersionsV2Request:
         
 
         self._instance_id = None
+        self._api_id = None
         self._offset = None
         self._limit = None
-        self._api_id = None
         self._env_id = None
         self._env_name = None
         self.discriminator = None
 
         self.instance_id = instance_id
+        self.api_id = api_id
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
-        self.api_id = api_id
         if env_id is not None:
             self.env_id = env_id
         if env_name is not None:
@@ -99,6 +99,28 @@ class ListApiVersionsV2Request:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def api_id(self):
+        """Gets the api_id of this ListApiVersionsV2Request.
+
+        API的编号
+
+        :return: The api_id of this ListApiVersionsV2Request.
+        :rtype: str
+        """
+        return self._api_id
+
+    @api_id.setter
+    def api_id(self, api_id):
+        """Sets the api_id of this ListApiVersionsV2Request.
+
+        API的编号
+
+        :param api_id: The api_id of this ListApiVersionsV2Request.
+        :type api_id: str
+        """
+        self._api_id = api_id
 
     @property
     def offset(self):
@@ -143,28 +165,6 @@ class ListApiVersionsV2Request:
         :type limit: int
         """
         self._limit = limit
-
-    @property
-    def api_id(self):
-        """Gets the api_id of this ListApiVersionsV2Request.
-
-        API的编号
-
-        :return: The api_id of this ListApiVersionsV2Request.
-        :rtype: str
-        """
-        return self._api_id
-
-    @api_id.setter
-    def api_id(self, api_id):
-        """Sets the api_id of this ListApiVersionsV2Request.
-
-        API的编号
-
-        :param api_id: The api_id of this ListApiVersionsV2Request.
-        :type api_id: str
-        """
-        self._api_id = api_id
 
     @property
     def env_id(self):

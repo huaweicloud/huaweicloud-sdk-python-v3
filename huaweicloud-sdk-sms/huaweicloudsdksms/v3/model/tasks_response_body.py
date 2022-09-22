@@ -75,11 +75,11 @@ class TasksResponseBody:
 
         The model defined in huaweicloud sdk
 
-        :param id: 迁移任务id
+        :param id: 迁移任务ID
         :type id: str
         :param name: 任务名称（用户自定义）
         :type name: str
-        :param type: 任务类型，创建迁移任务时必选，更新迁移任务时可选
+        :param type: 任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
         :type type: str
         :param os_type: 操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
         :type os_type: str
@@ -109,11 +109,11 @@ class TasksResponseBody:
         :type sub_tasks: list[:class:`huaweicloudsdksms.v3.SubTaskAssociatedWithTask`]
         :param source_server: 
         :type source_server: :class:`huaweicloudsdksms.v3.SourceServerAssociatedWithTask`
-        :param enterprise_project_id: 迁移项目id
+        :param enterprise_project_id: 迁移项目ID
         :type enterprise_project_id: str
         :param target_server: 
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServerAssociatedWithTask`
-        :param log_collect_status: 日志收集状态
+        :param log_collect_status: 日志收集状态 INIT TELL_AGENT_TO_COLLECT WAIT_AGENT_COLLECT_ACK AGENT_COLLECT_FAIL AGENT_COLLECT_SUCCESS WAIT_SERVER_COLLECT SERVER_COLLECT_FAIL SERVER_COLLECT_SUCCESS TELL_AGENT_RESET_ACL WAIT_AGENT_RESET_ACL_ACK 
         :type log_collect_status: str
         :param clone_server: 
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServerBrief`
@@ -196,7 +196,7 @@ class TasksResponseBody:
     def id(self):
         """Gets the id of this TasksResponseBody.
 
-        迁移任务id
+        迁移任务ID
 
         :return: The id of this TasksResponseBody.
         :rtype: str
@@ -207,7 +207,7 @@ class TasksResponseBody:
     def id(self, id):
         """Sets the id of this TasksResponseBody.
 
-        迁移任务id
+        迁移任务ID
 
         :param id: The id of this TasksResponseBody.
         :type id: str
@@ -240,7 +240,7 @@ class TasksResponseBody:
     def type(self):
         """Gets the type of this TasksResponseBody.
 
-        任务类型，创建迁移任务时必选，更新迁移任务时可选
+        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
 
         :return: The type of this TasksResponseBody.
         :rtype: str
@@ -251,7 +251,7 @@ class TasksResponseBody:
     def type(self, type):
         """Sets the type of this TasksResponseBody.
 
-        任务类型，创建迁移任务时必选，更新迁移任务时可选
+        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
 
         :param type: The type of this TasksResponseBody.
         :type type: str
@@ -568,7 +568,7 @@ class TasksResponseBody:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this TasksResponseBody.
 
-        迁移项目id
+        迁移项目ID
 
         :return: The enterprise_project_id of this TasksResponseBody.
         :rtype: str
@@ -579,7 +579,7 @@ class TasksResponseBody:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this TasksResponseBody.
 
-        迁移项目id
+        迁移项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this TasksResponseBody.
         :type enterprise_project_id: str
@@ -610,7 +610,7 @@ class TasksResponseBody:
     def log_collect_status(self):
         """Gets the log_collect_status of this TasksResponseBody.
 
-        日志收集状态
+        日志收集状态 INIT TELL_AGENT_TO_COLLECT WAIT_AGENT_COLLECT_ACK AGENT_COLLECT_FAIL AGENT_COLLECT_SUCCESS WAIT_SERVER_COLLECT SERVER_COLLECT_FAIL SERVER_COLLECT_SUCCESS TELL_AGENT_RESET_ACL WAIT_AGENT_RESET_ACL_ACK 
 
         :return: The log_collect_status of this TasksResponseBody.
         :rtype: str
@@ -621,7 +621,7 @@ class TasksResponseBody:
     def log_collect_status(self, log_collect_status):
         """Sets the log_collect_status of this TasksResponseBody.
 
-        日志收集状态
+        日志收集状态 INIT TELL_AGENT_TO_COLLECT WAIT_AGENT_COLLECT_ACK AGENT_COLLECT_FAIL AGENT_COLLECT_SUCCESS WAIT_SERVER_COLLECT SERVER_COLLECT_FAIL SERVER_COLLECT_SUCCESS TELL_AGENT_RESET_ACL WAIT_AGENT_RESET_ACL_ACK 
 
         :param log_collect_status: The log_collect_status of this TasksResponseBody.
         :type log_collect_status: str

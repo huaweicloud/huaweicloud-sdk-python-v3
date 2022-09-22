@@ -37,11 +37,11 @@ class CategorySuggestions:
 
         The model defined in huaweicloud sdk
 
-        :param politics: 政治人物审核
+        :param politics: 政治人物审核。
         :type politics: str
-        :param terrorism: 暴恐内容审核
+        :param terrorism: 暴恐内容审核。
         :type terrorism: str
-        :param porn: 情色内容审核
+        :param porn: 情色内容审核。
         :type porn: str
         """
         
@@ -63,7 +63,7 @@ class CategorySuggestions:
     def politics(self):
         """Gets the politics of this CategorySuggestions.
 
-        政治人物审核
+        政治人物审核。
 
         :return: The politics of this CategorySuggestions.
         :rtype: str
@@ -74,7 +74,7 @@ class CategorySuggestions:
     def politics(self, politics):
         """Sets the politics of this CategorySuggestions.
 
-        政治人物审核
+        政治人物审核。
 
         :param politics: The politics of this CategorySuggestions.
         :type politics: str
@@ -85,7 +85,7 @@ class CategorySuggestions:
     def terrorism(self):
         """Gets the terrorism of this CategorySuggestions.
 
-        暴恐内容审核
+        暴恐内容审核。
 
         :return: The terrorism of this CategorySuggestions.
         :rtype: str
@@ -96,7 +96,7 @@ class CategorySuggestions:
     def terrorism(self, terrorism):
         """Sets the terrorism of this CategorySuggestions.
 
-        暴恐内容审核
+        暴恐内容审核。
 
         :param terrorism: The terrorism of this CategorySuggestions.
         :type terrorism: str
@@ -107,7 +107,7 @@ class CategorySuggestions:
     def porn(self):
         """Gets the porn of this CategorySuggestions.
 
-        情色内容审核
+        情色内容审核。
 
         :return: The porn of this CategorySuggestions.
         :rtype: str
@@ -118,7 +118,7 @@ class CategorySuggestions:
     def porn(self, porn):
         """Sets the porn of this CategorySuggestions.
 
-        情色内容审核
+        情色内容审核。
 
         :param porn: The porn of this CategorySuggestions.
         :type porn: str

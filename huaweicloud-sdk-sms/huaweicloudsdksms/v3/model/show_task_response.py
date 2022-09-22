@@ -26,6 +26,7 @@ class ShowTaskResponse(SdkResponse):
         'os_type': 'str',
         'id': 'str',
         'priority': 'int',
+        'speed_limit': 'int',
         'region_id': 'str',
         'start_target_server': 'bool',
         'enterprise_project_id': 'str',
@@ -34,7 +35,7 @@ class ShowTaskResponse(SdkResponse):
         'project_name': 'str',
         'project_id': 'str',
         'vm_template_id': 'str',
-        'source_server': 'SourceServer',
+        'source_server': 'SourceServerResponse',
         'target_server': 'TaskTargetServer',
         'state': 'str',
         'estimate_complete_time': 'int',
@@ -59,6 +60,7 @@ class ShowTaskResponse(SdkResponse):
         'os_type': 'os_type',
         'id': 'id',
         'priority': 'priority',
+        'speed_limit': 'speed_limit',
         'region_id': 'region_id',
         'start_target_server': 'start_target_server',
         'enterprise_project_id': 'enterprise_project_id',
@@ -86,26 +88,28 @@ class ShowTaskResponse(SdkResponse):
         'sub_tasks': 'sub_tasks'
     }
 
-    def __init__(self, name=None, type=None, os_type=None, id=None, priority=None, region_id=None, start_target_server=None, enterprise_project_id=None, migration_ip=None, region_name=None, project_name=None, project_id=None, vm_template_id=None, source_server=None, target_server=None, state=None, estimate_complete_time=None, connected=None, create_date=None, start_date=None, finish_date=None, migrate_speed=None, compress_rate=None, error_json=None, total_time=None, float_ip=None, remain_seconds=None, target_snapshot_id=None, clone_server=None, sub_tasks=None):
+    def __init__(self, name=None, type=None, os_type=None, id=None, priority=None, speed_limit=None, region_id=None, start_target_server=None, enterprise_project_id=None, migration_ip=None, region_name=None, project_name=None, project_id=None, vm_template_id=None, source_server=None, target_server=None, state=None, estimate_complete_time=None, connected=None, create_date=None, start_date=None, finish_date=None, migrate_speed=None, compress_rate=None, error_json=None, total_time=None, float_ip=None, remain_seconds=None, target_snapshot_id=None, clone_server=None, sub_tasks=None):
         """ShowTaskResponse
 
         The model defined in huaweicloud sdk
 
         :param name: 任务名称（用户自定义）
         :type name: str
-        :param type: 任务类型，创建时必选，更新时可选
+        :param type: 任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
         :type type: str
         :param os_type: 操作系统类型，分为WINDOWS和LINUX，创建时必选，更新时可选
         :type os_type: str
-        :param id: 迁移任务id
+        :param id: 迁移任务ID
         :type id: str
         :param priority: 进程优先级  0：低  1：标准（默认）  2：高
         :type priority: int
+        :param speed_limit: 迁移限速
+        :type speed_limit: int
         :param region_id: 目的端服务器的区域ID
         :type region_id: str
         :param start_target_server: 迁移完成后是否启动目的端服务器  true：启动  false：停止
         :type start_target_server: bool
-        :param enterprise_project_id: 企业项目id
+        :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
         :param migration_ip: 目的端服务器的IP地址。  公网迁移时请填写弹性IP地址  专线迁移时请填写私有IP地址
         :type migration_ip: str
@@ -118,7 +122,7 @@ class ShowTaskResponse(SdkResponse):
         :param vm_template_id: 模板ID
         :type vm_template_id: str
         :param source_server: 
-        :type source_server: :class:`huaweicloudsdksms.v3.SourceServer`
+        :type source_server: :class:`huaweicloudsdksms.v3.SourceServerResponse`
         :param target_server: 
         :type target_server: :class:`huaweicloudsdksms.v3.TaskTargetServer`
         :param state: 任务状态
@@ -145,7 +149,7 @@ class ShowTaskResponse(SdkResponse):
         :type float_ip: str
         :param remain_seconds: 迁移剩余时间（秒）
         :type remain_seconds: int
-        :param target_snapshot_id: 目的端的快照id
+        :param target_snapshot_id: 目的端的快照ID
         :type target_snapshot_id: str
         :param clone_server: 
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
@@ -160,6 +164,7 @@ class ShowTaskResponse(SdkResponse):
         self._os_type = None
         self._id = None
         self._priority = None
+        self._speed_limit = None
         self._region_id = None
         self._start_target_server = None
         self._enterprise_project_id = None
@@ -197,6 +202,8 @@ class ShowTaskResponse(SdkResponse):
             self.id = id
         if priority is not None:
             self.priority = priority
+        if speed_limit is not None:
+            self.speed_limit = speed_limit
         if region_id is not None:
             self.region_id = region_id
         if start_target_server is not None:
@@ -274,7 +281,7 @@ class ShowTaskResponse(SdkResponse):
     def type(self):
         """Gets the type of this ShowTaskResponse.
 
-        任务类型，创建时必选，更新时可选
+        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
 
         :return: The type of this ShowTaskResponse.
         :rtype: str
@@ -285,7 +292,7 @@ class ShowTaskResponse(SdkResponse):
     def type(self, type):
         """Sets the type of this ShowTaskResponse.
 
-        任务类型，创建时必选，更新时可选
+        任务类型，创建时必选，更新时可选 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
 
         :param type: The type of this ShowTaskResponse.
         :type type: str
@@ -318,7 +325,7 @@ class ShowTaskResponse(SdkResponse):
     def id(self):
         """Gets the id of this ShowTaskResponse.
 
-        迁移任务id
+        迁移任务ID
 
         :return: The id of this ShowTaskResponse.
         :rtype: str
@@ -329,7 +336,7 @@ class ShowTaskResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this ShowTaskResponse.
 
-        迁移任务id
+        迁移任务ID
 
         :param id: The id of this ShowTaskResponse.
         :type id: str
@@ -357,6 +364,28 @@ class ShowTaskResponse(SdkResponse):
         :type priority: int
         """
         self._priority = priority
+
+    @property
+    def speed_limit(self):
+        """Gets the speed_limit of this ShowTaskResponse.
+
+        迁移限速
+
+        :return: The speed_limit of this ShowTaskResponse.
+        :rtype: int
+        """
+        return self._speed_limit
+
+    @speed_limit.setter
+    def speed_limit(self, speed_limit):
+        """Sets the speed_limit of this ShowTaskResponse.
+
+        迁移限速
+
+        :param speed_limit: The speed_limit of this ShowTaskResponse.
+        :type speed_limit: int
+        """
+        self._speed_limit = speed_limit
 
     @property
     def region_id(self):
@@ -406,7 +435,7 @@ class ShowTaskResponse(SdkResponse):
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowTaskResponse.
 
-        企业项目id
+        企业项目ID
 
         :return: The enterprise_project_id of this ShowTaskResponse.
         :rtype: str
@@ -417,7 +446,7 @@ class ShowTaskResponse(SdkResponse):
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowTaskResponse.
 
-        企业项目id
+        企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ShowTaskResponse.
         :type enterprise_project_id: str
@@ -540,7 +569,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :return: The source_server of this ShowTaskResponse.
-        :rtype: :class:`huaweicloudsdksms.v3.SourceServer`
+        :rtype: :class:`huaweicloudsdksms.v3.SourceServerResponse`
         """
         return self._source_server
 
@@ -550,7 +579,7 @@ class ShowTaskResponse(SdkResponse):
 
 
         :param source_server: The source_server of this ShowTaskResponse.
-        :type source_server: :class:`huaweicloudsdksms.v3.SourceServer`
+        :type source_server: :class:`huaweicloudsdksms.v3.SourceServerResponse`
         """
         self._source_server = source_server
 
@@ -842,7 +871,7 @@ class ShowTaskResponse(SdkResponse):
     def target_snapshot_id(self):
         """Gets the target_snapshot_id of this ShowTaskResponse.
 
-        目的端的快照id
+        目的端的快照ID
 
         :return: The target_snapshot_id of this ShowTaskResponse.
         :rtype: str
@@ -853,7 +882,7 @@ class ShowTaskResponse(SdkResponse):
     def target_snapshot_id(self, target_snapshot_id):
         """Sets the target_snapshot_id of this ShowTaskResponse.
 
-        目的端的快照id
+        目的端的快照ID
 
         :param target_snapshot_id: The target_snapshot_id of this ShowTaskResponse.
         :type target_snapshot_id: str

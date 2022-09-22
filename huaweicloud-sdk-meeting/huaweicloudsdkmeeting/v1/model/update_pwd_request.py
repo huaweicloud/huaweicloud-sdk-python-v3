@@ -37,9 +37,9 @@ class UpdatePwdRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
         :param body: Body of the UpdatePwdRequest
         :type body: :class:`huaweicloudsdkmeeting.v1.ModPwdReqDTO`
@@ -63,7 +63,7 @@ class UpdatePwdRequest:
     def x_request_id(self):
         """Gets the x_request_id of this UpdatePwdRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this UpdatePwdRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class UpdatePwdRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this UpdatePwdRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this UpdatePwdRequest.
         :type x_request_id: str
@@ -85,7 +85,7 @@ class UpdatePwdRequest:
     def accept_language(self):
         """Gets the accept_language of this UpdatePwdRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this UpdatePwdRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class UpdatePwdRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this UpdatePwdRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this UpdatePwdRequest.
         :type accept_language: str

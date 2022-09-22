@@ -45,19 +45,19 @@ class OpenRoomSettingReq:
 
         The model defined in huaweicloud sdk
 
-        :param room_introduce: 直播介绍, 最大不超过500个字符
+        :param room_introduce: 网络研讨会介绍。
         :type room_introduce: str
-        :param crop_logo_id: 企业Logo（文件id）,不超过32字符
+        :param crop_logo_id: 企业Logo的文件id。
         :type crop_logo_id: str
-        :param cover_picture_id: 封面内容(文件id)，不超过32字符
+        :param cover_picture_id: 欢迎界面的文件id。
         :type cover_picture_id: str
-        :param show_audience_mode: 显示观众人数的模式。默认值为real_time - none:不显示 - real_time:实时显示 
+        :param show_audience_mode: 显示观众人数的模式。默认值为real_time。 - none: 不显示 - real_time: 实时显示 
         :type show_audience_mode: str
-        :param is_redouble_open: 智能倍增开关。默认值为Y - Y 开启智能倍增 - N 关闭智能倍增 
+        :param is_redouble_open: 智能倍增开关。默认值为Y。 - Y 开启智能倍增 - N 关闭智能倍增 
         :type is_redouble_open: str
-        :param base_audience_count: 基础设置人数(直播间没人时显示的人数). 取值范围为[0, 10000]。默认值为0
+        :param base_audience_count: 基础设置人数(网络研讨会没人时显示的人数)。默认值为0。取值范围为[0, 10000]。
         :type base_audience_count: int
-        :param multiple: 设置倍数(基础人数+真实人数*倍数). 取值范围为[0, 10]，取1位小数。默认值为1.0
+        :param multiple: 设置倍数(基础人数+真实人数*倍数)。默认值为1.0。 取值范围为[0, 10]，取1位小数。
         :type multiple: float
         """
         
@@ -91,7 +91,7 @@ class OpenRoomSettingReq:
     def room_introduce(self):
         """Gets the room_introduce of this OpenRoomSettingReq.
 
-        直播介绍, 最大不超过500个字符
+        网络研讨会介绍。
 
         :return: The room_introduce of this OpenRoomSettingReq.
         :rtype: str
@@ -102,7 +102,7 @@ class OpenRoomSettingReq:
     def room_introduce(self, room_introduce):
         """Sets the room_introduce of this OpenRoomSettingReq.
 
-        直播介绍, 最大不超过500个字符
+        网络研讨会介绍。
 
         :param room_introduce: The room_introduce of this OpenRoomSettingReq.
         :type room_introduce: str
@@ -113,7 +113,7 @@ class OpenRoomSettingReq:
     def crop_logo_id(self):
         """Gets the crop_logo_id of this OpenRoomSettingReq.
 
-        企业Logo（文件id）,不超过32字符
+        企业Logo的文件id。
 
         :return: The crop_logo_id of this OpenRoomSettingReq.
         :rtype: str
@@ -124,7 +124,7 @@ class OpenRoomSettingReq:
     def crop_logo_id(self, crop_logo_id):
         """Sets the crop_logo_id of this OpenRoomSettingReq.
 
-        企业Logo（文件id）,不超过32字符
+        企业Logo的文件id。
 
         :param crop_logo_id: The crop_logo_id of this OpenRoomSettingReq.
         :type crop_logo_id: str
@@ -135,7 +135,7 @@ class OpenRoomSettingReq:
     def cover_picture_id(self):
         """Gets the cover_picture_id of this OpenRoomSettingReq.
 
-        封面内容(文件id)，不超过32字符
+        欢迎界面的文件id。
 
         :return: The cover_picture_id of this OpenRoomSettingReq.
         :rtype: str
@@ -146,7 +146,7 @@ class OpenRoomSettingReq:
     def cover_picture_id(self, cover_picture_id):
         """Sets the cover_picture_id of this OpenRoomSettingReq.
 
-        封面内容(文件id)，不超过32字符
+        欢迎界面的文件id。
 
         :param cover_picture_id: The cover_picture_id of this OpenRoomSettingReq.
         :type cover_picture_id: str
@@ -157,7 +157,7 @@ class OpenRoomSettingReq:
     def show_audience_mode(self):
         """Gets the show_audience_mode of this OpenRoomSettingReq.
 
-        显示观众人数的模式。默认值为real_time - none:不显示 - real_time:实时显示 
+        显示观众人数的模式。默认值为real_time。 - none: 不显示 - real_time: 实时显示 
 
         :return: The show_audience_mode of this OpenRoomSettingReq.
         :rtype: str
@@ -168,7 +168,7 @@ class OpenRoomSettingReq:
     def show_audience_mode(self, show_audience_mode):
         """Sets the show_audience_mode of this OpenRoomSettingReq.
 
-        显示观众人数的模式。默认值为real_time - none:不显示 - real_time:实时显示 
+        显示观众人数的模式。默认值为real_time。 - none: 不显示 - real_time: 实时显示 
 
         :param show_audience_mode: The show_audience_mode of this OpenRoomSettingReq.
         :type show_audience_mode: str
@@ -179,7 +179,7 @@ class OpenRoomSettingReq:
     def is_redouble_open(self):
         """Gets the is_redouble_open of this OpenRoomSettingReq.
 
-        智能倍增开关。默认值为Y - Y 开启智能倍增 - N 关闭智能倍增 
+        智能倍增开关。默认值为Y。 - Y 开启智能倍增 - N 关闭智能倍增 
 
         :return: The is_redouble_open of this OpenRoomSettingReq.
         :rtype: str
@@ -190,7 +190,7 @@ class OpenRoomSettingReq:
     def is_redouble_open(self, is_redouble_open):
         """Sets the is_redouble_open of this OpenRoomSettingReq.
 
-        智能倍增开关。默认值为Y - Y 开启智能倍增 - N 关闭智能倍增 
+        智能倍增开关。默认值为Y。 - Y 开启智能倍增 - N 关闭智能倍增 
 
         :param is_redouble_open: The is_redouble_open of this OpenRoomSettingReq.
         :type is_redouble_open: str
@@ -201,7 +201,7 @@ class OpenRoomSettingReq:
     def base_audience_count(self):
         """Gets the base_audience_count of this OpenRoomSettingReq.
 
-        基础设置人数(直播间没人时显示的人数). 取值范围为[0, 10000]。默认值为0
+        基础设置人数(网络研讨会没人时显示的人数)。默认值为0。取值范围为[0, 10000]。
 
         :return: The base_audience_count of this OpenRoomSettingReq.
         :rtype: int
@@ -212,7 +212,7 @@ class OpenRoomSettingReq:
     def base_audience_count(self, base_audience_count):
         """Sets the base_audience_count of this OpenRoomSettingReq.
 
-        基础设置人数(直播间没人时显示的人数). 取值范围为[0, 10000]。默认值为0
+        基础设置人数(网络研讨会没人时显示的人数)。默认值为0。取值范围为[0, 10000]。
 
         :param base_audience_count: The base_audience_count of this OpenRoomSettingReq.
         :type base_audience_count: int
@@ -223,7 +223,7 @@ class OpenRoomSettingReq:
     def multiple(self):
         """Gets the multiple of this OpenRoomSettingReq.
 
-        设置倍数(基础人数+真实人数*倍数). 取值范围为[0, 10]，取1位小数。默认值为1.0
+        设置倍数(基础人数+真实人数*倍数)。默认值为1.0。 取值范围为[0, 10]，取1位小数。
 
         :return: The multiple of this OpenRoomSettingReq.
         :rtype: float
@@ -234,7 +234,7 @@ class OpenRoomSettingReq:
     def multiple(self, multiple):
         """Sets the multiple of this OpenRoomSettingReq.
 
-        设置倍数(基础人数+真实人数*倍数). 取值范围为[0, 10]，取1位小数。默认值为1.0
+        设置倍数(基础人数+真实人数*倍数)。默认值为1.0。 取值范围为[0, 10]，取1位小数。
 
         :param multiple: The multiple of this OpenRoomSettingReq.
         :type multiple: float

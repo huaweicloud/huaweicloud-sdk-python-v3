@@ -45,19 +45,19 @@ class QueryVisionActiveCodeResultDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 激活码唯一标识
+        :param id: 激活码唯一标识。
         :type id: str
-        :param active_code: 激活码
+        :param active_code: 激活码。
         :type active_code: str
-        :param dev_name: 终端名称
+        :param dev_name: 终端名称。
         :type dev_name: str
-        :param dev_type: 终端类型
+        :param dev_type: 终端类型。
         :type dev_type: str
-        :param dept_code: 部门编码
+        :param dept_code: 部门编码。
         :type dept_code: str
-        :param dept_name: 部门名称
+        :param dept_name: 部门名称。
         :type dept_name: str
-        :param expire_date: 失效时间戳
+        :param expire_date: 失效时间戳。
         :type expire_date: int
         """
         
@@ -91,7 +91,7 @@ class QueryVisionActiveCodeResultDTO:
     def id(self):
         """Gets the id of this QueryVisionActiveCodeResultDTO.
 
-        激活码唯一标识
+        激活码唯一标识。
 
         :return: The id of this QueryVisionActiveCodeResultDTO.
         :rtype: str
@@ -102,7 +102,7 @@ class QueryVisionActiveCodeResultDTO:
     def id(self, id):
         """Sets the id of this QueryVisionActiveCodeResultDTO.
 
-        激活码唯一标识
+        激活码唯一标识。
 
         :param id: The id of this QueryVisionActiveCodeResultDTO.
         :type id: str
@@ -113,7 +113,7 @@ class QueryVisionActiveCodeResultDTO:
     def active_code(self):
         """Gets the active_code of this QueryVisionActiveCodeResultDTO.
 
-        激活码
+        激活码。
 
         :return: The active_code of this QueryVisionActiveCodeResultDTO.
         :rtype: str
@@ -124,7 +124,7 @@ class QueryVisionActiveCodeResultDTO:
     def active_code(self, active_code):
         """Sets the active_code of this QueryVisionActiveCodeResultDTO.
 
-        激活码
+        激活码。
 
         :param active_code: The active_code of this QueryVisionActiveCodeResultDTO.
         :type active_code: str
@@ -135,7 +135,7 @@ class QueryVisionActiveCodeResultDTO:
     def dev_name(self):
         """Gets the dev_name of this QueryVisionActiveCodeResultDTO.
 
-        终端名称
+        终端名称。
 
         :return: The dev_name of this QueryVisionActiveCodeResultDTO.
         :rtype: str
@@ -146,7 +146,7 @@ class QueryVisionActiveCodeResultDTO:
     def dev_name(self, dev_name):
         """Sets the dev_name of this QueryVisionActiveCodeResultDTO.
 
-        终端名称
+        终端名称。
 
         :param dev_name: The dev_name of this QueryVisionActiveCodeResultDTO.
         :type dev_name: str
@@ -157,7 +157,7 @@ class QueryVisionActiveCodeResultDTO:
     def dev_type(self):
         """Gets the dev_type of this QueryVisionActiveCodeResultDTO.
 
-        终端类型
+        终端类型。
 
         :return: The dev_type of this QueryVisionActiveCodeResultDTO.
         :rtype: str
@@ -168,7 +168,7 @@ class QueryVisionActiveCodeResultDTO:
     def dev_type(self, dev_type):
         """Sets the dev_type of this QueryVisionActiveCodeResultDTO.
 
-        终端类型
+        终端类型。
 
         :param dev_type: The dev_type of this QueryVisionActiveCodeResultDTO.
         :type dev_type: str
@@ -179,7 +179,7 @@ class QueryVisionActiveCodeResultDTO:
     def dept_code(self):
         """Gets the dept_code of this QueryVisionActiveCodeResultDTO.
 
-        部门编码
+        部门编码。
 
         :return: The dept_code of this QueryVisionActiveCodeResultDTO.
         :rtype: str
@@ -190,7 +190,7 @@ class QueryVisionActiveCodeResultDTO:
     def dept_code(self, dept_code):
         """Sets the dept_code of this QueryVisionActiveCodeResultDTO.
 
-        部门编码
+        部门编码。
 
         :param dept_code: The dept_code of this QueryVisionActiveCodeResultDTO.
         :type dept_code: str
@@ -201,7 +201,7 @@ class QueryVisionActiveCodeResultDTO:
     def dept_name(self):
         """Gets the dept_name of this QueryVisionActiveCodeResultDTO.
 
-        部门名称
+        部门名称。
 
         :return: The dept_name of this QueryVisionActiveCodeResultDTO.
         :rtype: str
@@ -212,7 +212,7 @@ class QueryVisionActiveCodeResultDTO:
     def dept_name(self, dept_name):
         """Sets the dept_name of this QueryVisionActiveCodeResultDTO.
 
-        部门名称
+        部门名称。
 
         :param dept_name: The dept_name of this QueryVisionActiveCodeResultDTO.
         :type dept_name: str
@@ -223,7 +223,7 @@ class QueryVisionActiveCodeResultDTO:
     def expire_date(self):
         """Gets the expire_date of this QueryVisionActiveCodeResultDTO.
 
-        失效时间戳
+        失效时间戳。
 
         :return: The expire_date of this QueryVisionActiveCodeResultDTO.
         :rtype: int
@@ -234,7 +234,7 @@ class QueryVisionActiveCodeResultDTO:
     def expire_date(self, expire_date):
         """Sets the expire_date of this QueryVisionActiveCodeResultDTO.
 
-        失效时间戳
+        失效时间戳。
 
         :param expire_date: The expire_date of this QueryVisionActiveCodeResultDTO.
         :type expire_date: int

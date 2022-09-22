@@ -25,6 +25,7 @@ class ReleaseRepository:
         'name': 'str',
         'download_path': 'str',
         'size': 'str',
+        'category_name': 'str',
         'file_type': 'str',
         'created': 'str',
         'updated': 'str'
@@ -35,12 +36,13 @@ class ReleaseRepository:
         'name': 'name',
         'download_path': 'download_path',
         'size': 'size',
+        'category_name': 'category_name',
         'file_type': 'file_type',
         'created': 'created',
         'updated': 'updated'
     }
 
-    def __init__(self, id=None, name=None, download_path=None, size=None, file_type=None, created=None, updated=None):
+    def __init__(self, id=None, name=None, download_path=None, size=None, category_name=None, file_type=None, created=None, updated=None):
         """ReleaseRepository
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class ReleaseRepository:
         :type download_path: str
         :param size: 软件包大小
         :type size: str
+        :param category_name: 软件包类型名称
+        :type category_name: str
         :param file_type: 文件类型
         :type file_type: str
         :param created: 创建时间
@@ -67,6 +71,7 @@ class ReleaseRepository:
         self._name = None
         self._download_path = None
         self._size = None
+        self._category_name = None
         self._file_type = None
         self._created = None
         self._updated = None
@@ -80,6 +85,8 @@ class ReleaseRepository:
             self.download_path = download_path
         if size is not None:
             self.size = size
+        if category_name is not None:
+            self.category_name = category_name
         if file_type is not None:
             self.file_type = file_type
         if created is not None:
@@ -174,6 +181,28 @@ class ReleaseRepository:
         :type size: str
         """
         self._size = size
+
+    @property
+    def category_name(self):
+        """Gets the category_name of this ReleaseRepository.
+
+        软件包类型名称
+
+        :return: The category_name of this ReleaseRepository.
+        :rtype: str
+        """
+        return self._category_name
+
+    @category_name.setter
+    def category_name(self, category_name):
+        """Sets the category_name of this ReleaseRepository.
+
+        软件包类型名称
+
+        :param category_name: The category_name of this ReleaseRepository.
+        :type category_name: str
+        """
+        self._category_name = category_name
 
     @property
     def file_type(self):

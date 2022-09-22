@@ -21,6 +21,7 @@ class MetaData:
     sensitive_list = []
 
     openapi_types = {
+        'pack_type': 'str',
         'codec': 'str',
         'duration': 'int',
         'video_size': 'int',
@@ -33,6 +34,7 @@ class MetaData:
     }
 
     attribute_map = {
+        'pack_type': 'pack_type',
         'codec': 'codec',
         'duration': 'duration',
         'video_size': 'video_size',
@@ -44,11 +46,13 @@ class MetaData:
         'audio_channels': 'audio_channels'
     }
 
-    def __init__(self, codec=None, duration=None, video_size=None, width=None, hight=None, bit_rate=None, frame_rate=None, quality=None, audio_channels=None):
+    def __init__(self, pack_type=None, codec=None, duration=None, video_size=None, width=None, hight=None, bit_rate=None, frame_rate=None, quality=None, audio_channels=None):
         """MetaData
 
         The model defined in huaweicloud sdk
 
+        :param pack_type: 视频封装格式。  取值如下： - MP4 - TS - MOV - MXF - MPG - FLV - WMV - MP3 - WMA - APE - FLAC - AAC - AC3 - MMF - AMR - M4A - M4R - OGG - WAV - WV - MP2 - AVI - F4V - M4V - MPEG - HLS - DASH
+        :type pack_type: str
         :param codec: 视频编码格式。  取值如下： - MPEG-2 - MPEG-4 - H.264 - H.265 - WMV - Vorbis - AAC - AC-3 - AMR - APE - FLAC - MP3 - MP2 - WMA - PCM - ADPCM - WavPack
         :type codec: str
         :param duration: 视频时长。  若视频的原时长为非整数，则该字段值为原时长的向上取整。
@@ -71,6 +75,7 @@ class MetaData:
         
         
 
+        self._pack_type = None
         self._codec = None
         self._duration = None
         self._video_size = None
@@ -82,6 +87,8 @@ class MetaData:
         self._audio_channels = None
         self.discriminator = None
 
+        if pack_type is not None:
+            self.pack_type = pack_type
         if codec is not None:
             self.codec = codec
         if duration is not None:
@@ -100,6 +107,28 @@ class MetaData:
             self.quality = quality
         if audio_channels is not None:
             self.audio_channels = audio_channels
+
+    @property
+    def pack_type(self):
+        """Gets the pack_type of this MetaData.
+
+        视频封装格式。  取值如下： - MP4 - TS - MOV - MXF - MPG - FLV - WMV - MP3 - WMA - APE - FLAC - AAC - AC3 - MMF - AMR - M4A - M4R - OGG - WAV - WV - MP2 - AVI - F4V - M4V - MPEG - HLS - DASH
+
+        :return: The pack_type of this MetaData.
+        :rtype: str
+        """
+        return self._pack_type
+
+    @pack_type.setter
+    def pack_type(self, pack_type):
+        """Sets the pack_type of this MetaData.
+
+        视频封装格式。  取值如下： - MP4 - TS - MOV - MXF - MPG - FLV - WMV - MP3 - WMA - APE - FLAC - AAC - AC3 - MMF - AMR - M4A - M4R - OGG - WAV - WV - MP2 - AVI - F4V - M4V - MPEG - HLS - DASH
+
+        :param pack_type: The pack_type of this MetaData.
+        :type pack_type: str
+        """
+        self._pack_type = pack_type
 
     @property
     def codec(self):

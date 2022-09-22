@@ -37,11 +37,11 @@ class ModPwdReqDTO:
 
         The model defined in huaweicloud sdk
 
-        :param account: 帐号，必须是携带域名的帐号 maxLength: 255 minLength: 1 
+        :param account: 帐号，必须是携带域名的帐号。 
         :type account: str
-        :param old_pwd: 用户旧的登录密码 maxLength: 255 minLength: 1 
+        :param old_pwd: 用户旧的登录密码。 
         :type old_pwd: str
-        :param new_pwd: 用户新的登录密码 密码要求： * 长度范围要求8~32 * 至少包含大小写字母、数字 * 旧密码和新密码不能相同 * 上次修改密码后5分钟内不能更新密码 * 不能与最近使用的旧密码相同 * 不能包含3个以上重复字符 * 密码不能包含与其对应的用户名（不区分大小写）以及逆序的用户名（不区分大小写） * 新密码与旧密码之间允许的最少不相同字符数为2个 
+        :param new_pwd: 用户新的登录密码。 密码要求： * 长度范围要求8~32 * 至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（&#x60; ~ ! @ # $ % ^ &amp; * ( ) - _ &#x3D; + \\ | [ { } ] ; : \&quot; ,&#39; &lt; . &gt; / ?） * 旧密码和新密码不能相同 * 上次修改密码后5分钟内不能更新密码 * 不能与最近使用的旧密码相同 * 不能包含3个以上重复字符 * 密码不能包含与其对应的用户名（不区分大小写）以及逆序的用户名（不区分大小写） * 新密码与旧密码之间允许的最少不相同字符数为2个 
         :type new_pwd: str
         """
         
@@ -60,7 +60,7 @@ class ModPwdReqDTO:
     def account(self):
         """Gets the account of this ModPwdReqDTO.
 
-        帐号，必须是携带域名的帐号 maxLength: 255 minLength: 1 
+        帐号，必须是携带域名的帐号。 
 
         :return: The account of this ModPwdReqDTO.
         :rtype: str
@@ -71,7 +71,7 @@ class ModPwdReqDTO:
     def account(self, account):
         """Sets the account of this ModPwdReqDTO.
 
-        帐号，必须是携带域名的帐号 maxLength: 255 minLength: 1 
+        帐号，必须是携带域名的帐号。 
 
         :param account: The account of this ModPwdReqDTO.
         :type account: str
@@ -82,7 +82,7 @@ class ModPwdReqDTO:
     def old_pwd(self):
         """Gets the old_pwd of this ModPwdReqDTO.
 
-        用户旧的登录密码 maxLength: 255 minLength: 1 
+        用户旧的登录密码。 
 
         :return: The old_pwd of this ModPwdReqDTO.
         :rtype: str
@@ -93,7 +93,7 @@ class ModPwdReqDTO:
     def old_pwd(self, old_pwd):
         """Sets the old_pwd of this ModPwdReqDTO.
 
-        用户旧的登录密码 maxLength: 255 minLength: 1 
+        用户旧的登录密码。 
 
         :param old_pwd: The old_pwd of this ModPwdReqDTO.
         :type old_pwd: str
@@ -104,7 +104,7 @@ class ModPwdReqDTO:
     def new_pwd(self):
         """Gets the new_pwd of this ModPwdReqDTO.
 
-        用户新的登录密码 密码要求： * 长度范围要求8~32 * 至少包含大小写字母、数字 * 旧密码和新密码不能相同 * 上次修改密码后5分钟内不能更新密码 * 不能与最近使用的旧密码相同 * 不能包含3个以上重复字符 * 密码不能包含与其对应的用户名（不区分大小写）以及逆序的用户名（不区分大小写） * 新密码与旧密码之间允许的最少不相同字符数为2个 
+        用户新的登录密码。 密码要求： * 长度范围要求8~32 * 至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（` ~ ! @ # $ % ^ & * ( ) - _ = + \\ | [ { } ] ; : \" ,' < . > / ?） * 旧密码和新密码不能相同 * 上次修改密码后5分钟内不能更新密码 * 不能与最近使用的旧密码相同 * 不能包含3个以上重复字符 * 密码不能包含与其对应的用户名（不区分大小写）以及逆序的用户名（不区分大小写） * 新密码与旧密码之间允许的最少不相同字符数为2个 
 
         :return: The new_pwd of this ModPwdReqDTO.
         :rtype: str
@@ -115,7 +115,7 @@ class ModPwdReqDTO:
     def new_pwd(self, new_pwd):
         """Sets the new_pwd of this ModPwdReqDTO.
 
-        用户新的登录密码 密码要求： * 长度范围要求8~32 * 至少包含大小写字母、数字 * 旧密码和新密码不能相同 * 上次修改密码后5分钟内不能更新密码 * 不能与最近使用的旧密码相同 * 不能包含3个以上重复字符 * 密码不能包含与其对应的用户名（不区分大小写）以及逆序的用户名（不区分大小写） * 新密码与旧密码之间允许的最少不相同字符数为2个 
+        用户新的登录密码。 密码要求： * 长度范围要求8~32 * 至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（` ~ ! @ # $ % ^ & * ( ) - _ = + \\ | [ { } ] ; : \" ,' < . > / ?） * 旧密码和新密码不能相同 * 上次修改密码后5分钟内不能更新密码 * 不能与最近使用的旧密码相同 * 不能包含3个以上重复字符 * 密码不能包含与其对应的用户名（不区分大小写）以及逆序的用户名（不区分大小写） * 新密码与旧密码之间允许的最少不相同字符数为2个 
 
         :param new_pwd: The new_pwd of this ModPwdReqDTO.
         :type new_pwd: str

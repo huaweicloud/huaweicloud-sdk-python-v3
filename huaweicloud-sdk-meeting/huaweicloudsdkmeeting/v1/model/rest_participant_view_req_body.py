@@ -35,7 +35,7 @@ class RestParticipantViewReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param view_type: 选看类型。 - 2: 选看会场。
+        :param view_type: 选看类型。 - 2: 选看会场
         :type view_type: int
         :param participant_id: 被选看的与会者标识。
         :type participant_id: str
@@ -54,7 +54,7 @@ class RestParticipantViewReqBody:
     def view_type(self):
         """Gets the view_type of this RestParticipantViewReqBody.
 
-        选看类型。 - 2: 选看会场。
+        选看类型。 - 2: 选看会场
 
         :return: The view_type of this RestParticipantViewReqBody.
         :rtype: int
@@ -65,7 +65,7 @@ class RestParticipantViewReqBody:
     def view_type(self, view_type):
         """Sets the view_type of this RestParticipantViewReqBody.
 
-        选看类型。 - 2: 选看会场。
+        选看类型。 - 2: 选看会场
 
         :param view_type: The view_type of this RestParticipantViewReqBody.
         :type view_type: int

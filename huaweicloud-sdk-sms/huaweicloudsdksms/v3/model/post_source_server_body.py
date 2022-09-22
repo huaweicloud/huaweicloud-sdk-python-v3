@@ -27,6 +27,8 @@ class PostSourceServerBody:
         'hostname': 'str',
         'os_type': 'str',
         'os_version': 'str',
+        'virtualization_type': 'str',
+        'linux_block_check': 'str',
         'firmware': 'str',
         'cpu_quantity': 'int',
         'memory': 'int',
@@ -43,7 +45,11 @@ class PostSourceServerBody:
         'boot_loader': 'str',
         'system_dir': 'str',
         'volume_groups': 'list[VolumeGroups]',
-        'agent_version': 'str'
+        'agent_version': 'str',
+        'kernel_version': 'str',
+        'migration_cycle': 'str',
+        'state': 'str',
+        'oem_system': 'bool'
     }
 
     attribute_map = {
@@ -53,6 +59,8 @@ class PostSourceServerBody:
         'hostname': 'hostname',
         'os_type': 'os_type',
         'os_version': 'os_version',
+        'virtualization_type': 'virtualization_type',
+        'linux_block_check': 'linux_block_check',
         'firmware': 'firmware',
         'cpu_quantity': 'cpu_quantity',
         'memory': 'memory',
@@ -69,10 +77,14 @@ class PostSourceServerBody:
         'boot_loader': 'boot_loader',
         'system_dir': 'system_dir',
         'volume_groups': 'volume_groups',
-        'agent_version': 'agent_version'
+        'agent_version': 'agent_version',
+        'kernel_version': 'kernel_version',
+        'migration_cycle': 'migration_cycle',
+        'state': 'state',
+        'oem_system': 'oem_system'
     }
 
-    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, agent_version=None):
+    def __init__(self, id=None, ip=None, name=None, hostname=None, os_type=None, os_version=None, virtualization_type=None, linux_block_check=None, firmware=None, cpu_quantity=None, memory=None, disks=None, btrfs_list=None, networks=None, domain_id=None, has_rsync=None, paravirtualization=None, raw_devices=None, driver_files=None, system_services=None, account_rights=None, boot_loader=None, system_dir=None, volume_groups=None, agent_version=None, kernel_version=None, migration_cycle=None, state=None, oem_system=None):
         """PostSourceServerBody
 
         The model defined in huaweicloud sdk
@@ -89,6 +101,10 @@ class PostSourceServerBody:
         :type os_type: str
         :param os_version: 操作系统版本，注册必选，更新非必选
         :type os_version: str
+        :param virtualization_type: 操作系统虚拟化方式
+        :type virtualization_type: str
+        :param linux_block_check: Linux操作系统块检查
+        :type linux_block_check: str
         :param firmware: 源端服务器启动类型，如BIOS或者UEFI
         :type firmware: str
         :param cpu_quantity: CPU个数，单位vCPU
@@ -123,6 +139,14 @@ class PostSourceServerBody:
         :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
         :param agent_version: Agent版本
         :type agent_version: str
+        :param kernel_version: 内核版本信息
+        :type kernel_version: str
+        :param migration_cycle: 迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
+        :type migration_cycle: str
+        :param state: 源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成
+        :type state: str
+        :param oem_system: 是否是OEM操作系统(Windows)
+        :type oem_system: bool
         """
         
         
@@ -133,6 +157,8 @@ class PostSourceServerBody:
         self._hostname = None
         self._os_type = None
         self._os_version = None
+        self._virtualization_type = None
+        self._linux_block_check = None
         self._firmware = None
         self._cpu_quantity = None
         self._memory = None
@@ -150,6 +176,10 @@ class PostSourceServerBody:
         self._system_dir = None
         self._volume_groups = None
         self._agent_version = None
+        self._kernel_version = None
+        self._migration_cycle = None
+        self._state = None
+        self._oem_system = None
         self.discriminator = None
 
         if id is not None:
@@ -161,6 +191,10 @@ class PostSourceServerBody:
         self.os_type = os_type
         if os_version is not None:
             self.os_version = os_version
+        if virtualization_type is not None:
+            self.virtualization_type = virtualization_type
+        if linux_block_check is not None:
+            self.linux_block_check = linux_block_check
         if firmware is not None:
             self.firmware = firmware
         if cpu_quantity is not None:
@@ -194,6 +228,14 @@ class PostSourceServerBody:
         if volume_groups is not None:
             self.volume_groups = volume_groups
         self.agent_version = agent_version
+        if kernel_version is not None:
+            self.kernel_version = kernel_version
+        if migration_cycle is not None:
+            self.migration_cycle = migration_cycle
+        if state is not None:
+            self.state = state
+        if oem_system is not None:
+            self.oem_system = oem_system
 
     @property
     def id(self):
@@ -326,6 +368,50 @@ class PostSourceServerBody:
         :type os_version: str
         """
         self._os_version = os_version
+
+    @property
+    def virtualization_type(self):
+        """Gets the virtualization_type of this PostSourceServerBody.
+
+        操作系统虚拟化方式
+
+        :return: The virtualization_type of this PostSourceServerBody.
+        :rtype: str
+        """
+        return self._virtualization_type
+
+    @virtualization_type.setter
+    def virtualization_type(self, virtualization_type):
+        """Sets the virtualization_type of this PostSourceServerBody.
+
+        操作系统虚拟化方式
+
+        :param virtualization_type: The virtualization_type of this PostSourceServerBody.
+        :type virtualization_type: str
+        """
+        self._virtualization_type = virtualization_type
+
+    @property
+    def linux_block_check(self):
+        """Gets the linux_block_check of this PostSourceServerBody.
+
+        Linux操作系统块检查
+
+        :return: The linux_block_check of this PostSourceServerBody.
+        :rtype: str
+        """
+        return self._linux_block_check
+
+    @linux_block_check.setter
+    def linux_block_check(self, linux_block_check):
+        """Sets the linux_block_check of this PostSourceServerBody.
+
+        Linux操作系统块检查
+
+        :param linux_block_check: The linux_block_check of this PostSourceServerBody.
+        :type linux_block_check: str
+        """
+        self._linux_block_check = linux_block_check
 
     @property
     def firmware(self):
@@ -700,6 +786,94 @@ class PostSourceServerBody:
         :type agent_version: str
         """
         self._agent_version = agent_version
+
+    @property
+    def kernel_version(self):
+        """Gets the kernel_version of this PostSourceServerBody.
+
+        内核版本信息
+
+        :return: The kernel_version of this PostSourceServerBody.
+        :rtype: str
+        """
+        return self._kernel_version
+
+    @kernel_version.setter
+    def kernel_version(self, kernel_version):
+        """Sets the kernel_version of this PostSourceServerBody.
+
+        内核版本信息
+
+        :param kernel_version: The kernel_version of this PostSourceServerBody.
+        :type kernel_version: str
+        """
+        self._kernel_version = kernel_version
+
+    @property
+    def migration_cycle(self):
+        """Gets the migration_cycle of this PostSourceServerBody.
+
+        迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
+
+        :return: The migration_cycle of this PostSourceServerBody.
+        :rtype: str
+        """
+        return self._migration_cycle
+
+    @migration_cycle.setter
+    def migration_cycle(self, migration_cycle):
+        """Sets the migration_cycle of this PostSourceServerBody.
+
+        迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
+
+        :param migration_cycle: The migration_cycle of this PostSourceServerBody.
+        :type migration_cycle: str
+        """
+        self._migration_cycle = migration_cycle
+
+    @property
+    def state(self):
+        """Gets the state of this PostSourceServerBody.
+
+        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成
+
+        :return: The state of this PostSourceServerBody.
+        :rtype: str
+        """
+        return self._state
+
+    @state.setter
+    def state(self, state):
+        """Sets the state of this PostSourceServerBody.
+
+        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成
+
+        :param state: The state of this PostSourceServerBody.
+        :type state: str
+        """
+        self._state = state
+
+    @property
+    def oem_system(self):
+        """Gets the oem_system of this PostSourceServerBody.
+
+        是否是OEM操作系统(Windows)
+
+        :return: The oem_system of this PostSourceServerBody.
+        :rtype: bool
+        """
+        return self._oem_system
+
+    @oem_system.setter
+    def oem_system(self, oem_system):
+        """Sets the oem_system of this PostSourceServerBody.
+
+        是否是OEM操作系统(Windows)
+
+        :param oem_system: The oem_system of this PostSourceServerBody.
+        :type oem_system: bool
+        """
+        self._oem_system = oem_system
 
     def to_dict(self):
         """Returns the model properties as a dict"""

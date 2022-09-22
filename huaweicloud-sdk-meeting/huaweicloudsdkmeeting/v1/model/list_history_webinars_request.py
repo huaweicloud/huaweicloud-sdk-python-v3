@@ -47,21 +47,21 @@ class ListHistoryWebinarsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
         :type offset: int
-        :param limit: 查询数量 默认值：0 
+        :param limit: 查询数量。 默认值：10。 
         :type limit: int
-        :param search_key: 搜索条件。支持账号、姓名、手机、邮箱模糊搜索
+        :param search_key: 搜索条件。支持帐号、名称、手机、邮箱模糊搜索。
         :type search_key: str
-        :param sort_type: ASC_StartTIME：按会议开始时间升序排序。DSC_StartTIME：按会议开始时间降序排序
+        :param sort_type: 查询结果排序。默认升序。 * ASC_StartTIME：按会议开始时间升序排序 * DSC_StartTIME：按会议开始时间降序排序 
         :type sort_type: str
-        :param start_time: 开始时间, 格式：yyyy-MM-dd HH:mm。
+        :param start_time: 开始时间（UTC时间）, 格式：yyyy-MM-dd HH:mm。
         :type start_time: str
-        :param end_time: 结束时间, 格式：yyyy-MM-dd HH:mm。
+        :param end_time: 结束时间（UTC时间）, 格式：yyyy-MM-dd HH:mm。
         :type end_time: str
         """
         
@@ -98,7 +98,7 @@ class ListHistoryWebinarsRequest:
     def x_request_id(self):
         """Gets the x_request_id of this ListHistoryWebinarsRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this ListHistoryWebinarsRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class ListHistoryWebinarsRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this ListHistoryWebinarsRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this ListHistoryWebinarsRequest.
         :type x_request_id: str
@@ -120,7 +120,7 @@ class ListHistoryWebinarsRequest:
     def accept_language(self):
         """Gets the accept_language of this ListHistoryWebinarsRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this ListHistoryWebinarsRequest.
         :rtype: str
@@ -131,7 +131,7 @@ class ListHistoryWebinarsRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this ListHistoryWebinarsRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this ListHistoryWebinarsRequest.
         :type accept_language: str
@@ -142,7 +142,7 @@ class ListHistoryWebinarsRequest:
     def offset(self):
         """Gets the offset of this ListHistoryWebinarsRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
         :return: The offset of this ListHistoryWebinarsRequest.
         :rtype: int
@@ -153,7 +153,7 @@ class ListHistoryWebinarsRequest:
     def offset(self, offset):
         """Sets the offset of this ListHistoryWebinarsRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
         :param offset: The offset of this ListHistoryWebinarsRequest.
         :type offset: int
@@ -164,7 +164,7 @@ class ListHistoryWebinarsRequest:
     def limit(self):
         """Gets the limit of this ListHistoryWebinarsRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :return: The limit of this ListHistoryWebinarsRequest.
         :rtype: int
@@ -175,7 +175,7 @@ class ListHistoryWebinarsRequest:
     def limit(self, limit):
         """Sets the limit of this ListHistoryWebinarsRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :param limit: The limit of this ListHistoryWebinarsRequest.
         :type limit: int
@@ -186,7 +186,7 @@ class ListHistoryWebinarsRequest:
     def search_key(self):
         """Gets the search_key of this ListHistoryWebinarsRequest.
 
-        搜索条件。支持账号、姓名、手机、邮箱模糊搜索
+        搜索条件。支持帐号、名称、手机、邮箱模糊搜索。
 
         :return: The search_key of this ListHistoryWebinarsRequest.
         :rtype: str
@@ -197,7 +197,7 @@ class ListHistoryWebinarsRequest:
     def search_key(self, search_key):
         """Sets the search_key of this ListHistoryWebinarsRequest.
 
-        搜索条件。支持账号、姓名、手机、邮箱模糊搜索
+        搜索条件。支持帐号、名称、手机、邮箱模糊搜索。
 
         :param search_key: The search_key of this ListHistoryWebinarsRequest.
         :type search_key: str
@@ -208,7 +208,7 @@ class ListHistoryWebinarsRequest:
     def sort_type(self):
         """Gets the sort_type of this ListHistoryWebinarsRequest.
 
-        ASC_StartTIME：按会议开始时间升序排序。DSC_StartTIME：按会议开始时间降序排序
+        查询结果排序。默认升序。 * ASC_StartTIME：按会议开始时间升序排序 * DSC_StartTIME：按会议开始时间降序排序 
 
         :return: The sort_type of this ListHistoryWebinarsRequest.
         :rtype: str
@@ -219,7 +219,7 @@ class ListHistoryWebinarsRequest:
     def sort_type(self, sort_type):
         """Sets the sort_type of this ListHistoryWebinarsRequest.
 
-        ASC_StartTIME：按会议开始时间升序排序。DSC_StartTIME：按会议开始时间降序排序
+        查询结果排序。默认升序。 * ASC_StartTIME：按会议开始时间升序排序 * DSC_StartTIME：按会议开始时间降序排序 
 
         :param sort_type: The sort_type of this ListHistoryWebinarsRequest.
         :type sort_type: str
@@ -230,7 +230,7 @@ class ListHistoryWebinarsRequest:
     def start_time(self):
         """Gets the start_time of this ListHistoryWebinarsRequest.
 
-        开始时间, 格式：yyyy-MM-dd HH:mm。
+        开始时间（UTC时间）, 格式：yyyy-MM-dd HH:mm。
 
         :return: The start_time of this ListHistoryWebinarsRequest.
         :rtype: str
@@ -241,7 +241,7 @@ class ListHistoryWebinarsRequest:
     def start_time(self, start_time):
         """Sets the start_time of this ListHistoryWebinarsRequest.
 
-        开始时间, 格式：yyyy-MM-dd HH:mm。
+        开始时间（UTC时间）, 格式：yyyy-MM-dd HH:mm。
 
         :param start_time: The start_time of this ListHistoryWebinarsRequest.
         :type start_time: str
@@ -252,7 +252,7 @@ class ListHistoryWebinarsRequest:
     def end_time(self):
         """Gets the end_time of this ListHistoryWebinarsRequest.
 
-        结束时间, 格式：yyyy-MM-dd HH:mm。
+        结束时间（UTC时间）, 格式：yyyy-MM-dd HH:mm。
 
         :return: The end_time of this ListHistoryWebinarsRequest.
         :rtype: str
@@ -263,7 +263,7 @@ class ListHistoryWebinarsRequest:
     def end_time(self, end_time):
         """Sets the end_time of this ListHistoryWebinarsRequest.
 
-        结束时间, 格式：yyyy-MM-dd HH:mm。
+        结束时间（UTC时间）, 格式：yyyy-MM-dd HH:mm。
 
         :param end_time: The end_time of this ListHistoryWebinarsRequest.
         :type end_time: str

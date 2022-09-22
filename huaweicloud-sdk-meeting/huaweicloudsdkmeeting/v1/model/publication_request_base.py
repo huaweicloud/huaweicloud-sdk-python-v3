@@ -41,15 +41,15 @@ class PublicationRequestBase:
 
         The model defined in huaweicloud sdk
 
-        :param publish_name: 发布名称
+        :param publish_name: 发布名称。
         :type publish_name: str
-        :param start_time: 开始时间
+        :param start_time: 开始时间。
         :type start_time: int
-        :param end_time: 结束时间
+        :param end_time: 结束时间。
         :type end_time: int
-        :param dept_list: 发布到部门编码列表
+        :param dept_list: 发布到部门编码列表。
         :type dept_list: list[str]
-        :param device_list: 发布到设备用户ID列表
+        :param device_list: 发布到设备用户ID列表。
         :type device_list: list[str]
         """
         
@@ -72,7 +72,7 @@ class PublicationRequestBase:
     def publish_name(self):
         """Gets the publish_name of this PublicationRequestBase.
 
-        发布名称
+        发布名称。
 
         :return: The publish_name of this PublicationRequestBase.
         :rtype: str
@@ -83,7 +83,7 @@ class PublicationRequestBase:
     def publish_name(self, publish_name):
         """Sets the publish_name of this PublicationRequestBase.
 
-        发布名称
+        发布名称。
 
         :param publish_name: The publish_name of this PublicationRequestBase.
         :type publish_name: str
@@ -94,7 +94,7 @@ class PublicationRequestBase:
     def start_time(self):
         """Gets the start_time of this PublicationRequestBase.
 
-        开始时间
+        开始时间。
 
         :return: The start_time of this PublicationRequestBase.
         :rtype: int
@@ -105,7 +105,7 @@ class PublicationRequestBase:
     def start_time(self, start_time):
         """Sets the start_time of this PublicationRequestBase.
 
-        开始时间
+        开始时间。
 
         :param start_time: The start_time of this PublicationRequestBase.
         :type start_time: int
@@ -116,7 +116,7 @@ class PublicationRequestBase:
     def end_time(self):
         """Gets the end_time of this PublicationRequestBase.
 
-        结束时间
+        结束时间。
 
         :return: The end_time of this PublicationRequestBase.
         :rtype: int
@@ -127,7 +127,7 @@ class PublicationRequestBase:
     def end_time(self, end_time):
         """Sets the end_time of this PublicationRequestBase.
 
-        结束时间
+        结束时间。
 
         :param end_time: The end_time of this PublicationRequestBase.
         :type end_time: int
@@ -138,7 +138,7 @@ class PublicationRequestBase:
     def dept_list(self):
         """Gets the dept_list of this PublicationRequestBase.
 
-        发布到部门编码列表
+        发布到部门编码列表。
 
         :return: The dept_list of this PublicationRequestBase.
         :rtype: list[str]
@@ -149,7 +149,7 @@ class PublicationRequestBase:
     def dept_list(self, dept_list):
         """Sets the dept_list of this PublicationRequestBase.
 
-        发布到部门编码列表
+        发布到部门编码列表。
 
         :param dept_list: The dept_list of this PublicationRequestBase.
         :type dept_list: list[str]
@@ -160,7 +160,7 @@ class PublicationRequestBase:
     def device_list(self):
         """Gets the device_list of this PublicationRequestBase.
 
-        发布到设备用户ID列表
+        发布到设备用户ID列表。
 
         :return: The device_list of this PublicationRequestBase.
         :rtype: list[str]
@@ -171,7 +171,7 @@ class PublicationRequestBase:
     def device_list(self, device_list):
         """Sets the device_list of this PublicationRequestBase.
 
-        发布到设备用户ID列表
+        发布到设备用户ID列表。
 
         :param device_list: The device_list of this PublicationRequestBase.
         :type device_list: list[str]

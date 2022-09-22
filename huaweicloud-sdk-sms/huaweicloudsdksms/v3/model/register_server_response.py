@@ -33,7 +33,7 @@ class RegisterServerResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 源端id
+        :param id: 源端ID
         :type id: str
         """
         
@@ -49,7 +49,7 @@ class RegisterServerResponse(SdkResponse):
     def id(self):
         """Gets the id of this RegisterServerResponse.
 
-        源端id
+        源端ID
 
         :return: The id of this RegisterServerResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class RegisterServerResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this RegisterServerResponse.
 
-        源端id
+        源端ID
 
         :param id: The id of this RegisterServerResponse.
         :type id: str

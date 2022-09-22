@@ -37,11 +37,11 @@ class ChildDeptDTO:
 
         The model defined in huaweicloud sdk
 
-        :param dept_code: 部门编码
+        :param dept_code: 部门编码。
         :type dept_code: str
-        :param dept_name: 部门名称
+        :param dept_name: 部门名称。
         :type dept_name: str
-        :param is_leaf_nodes: 是否为叶子节点（没有子部门的称为叶子节点）
+        :param is_leaf_nodes: 是否为叶子节点（没有子部门的称为叶子节点）。
         :type is_leaf_nodes: bool
         """
         
@@ -63,7 +63,7 @@ class ChildDeptDTO:
     def dept_code(self):
         """Gets the dept_code of this ChildDeptDTO.
 
-        部门编码
+        部门编码。
 
         :return: The dept_code of this ChildDeptDTO.
         :rtype: str
@@ -74,7 +74,7 @@ class ChildDeptDTO:
     def dept_code(self, dept_code):
         """Sets the dept_code of this ChildDeptDTO.
 
-        部门编码
+        部门编码。
 
         :param dept_code: The dept_code of this ChildDeptDTO.
         :type dept_code: str
@@ -85,7 +85,7 @@ class ChildDeptDTO:
     def dept_name(self):
         """Gets the dept_name of this ChildDeptDTO.
 
-        部门名称
+        部门名称。
 
         :return: The dept_name of this ChildDeptDTO.
         :rtype: str
@@ -96,7 +96,7 @@ class ChildDeptDTO:
     def dept_name(self, dept_name):
         """Sets the dept_name of this ChildDeptDTO.
 
-        部门名称
+        部门名称。
 
         :param dept_name: The dept_name of this ChildDeptDTO.
         :type dept_name: str
@@ -107,7 +107,7 @@ class ChildDeptDTO:
     def is_leaf_nodes(self):
         """Gets the is_leaf_nodes of this ChildDeptDTO.
 
-        是否为叶子节点（没有子部门的称为叶子节点）
+        是否为叶子节点（没有子部门的称为叶子节点）。
 
         :return: The is_leaf_nodes of this ChildDeptDTO.
         :rtype: bool
@@ -118,7 +118,7 @@ class ChildDeptDTO:
     def is_leaf_nodes(self, is_leaf_nodes):
         """Sets the is_leaf_nodes of this ChildDeptDTO.
 
-        是否为叶子节点（没有子部门的称为叶子节点）
+        是否为叶子节点（没有子部门的称为叶子节点）。
 
         :param is_leaf_nodes: The is_leaf_nodes of this ChildDeptDTO.
         :type is_leaf_nodes: bool

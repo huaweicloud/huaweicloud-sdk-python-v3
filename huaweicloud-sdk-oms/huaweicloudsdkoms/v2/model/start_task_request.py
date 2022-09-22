@@ -21,7 +21,7 @@ class StartTaskRequest:
     sensitive_list = []
 
     openapi_types = {
-        'task_id': 'int',
+        'task_id': 'str',
         'body': 'StartTaskReq'
     }
 
@@ -36,7 +36,7 @@ class StartTaskRequest:
         The model defined in huaweicloud sdk
 
         :param task_id: 迁移任务ID。
-        :type task_id: int
+        :type task_id: str
         :param body: Body of the StartTaskRequest
         :type body: :class:`huaweicloudsdkoms.v2.StartTaskReq`
         """
@@ -58,7 +58,7 @@ class StartTaskRequest:
         迁移任务ID。
 
         :return: The task_id of this StartTaskRequest.
-        :rtype: int
+        :rtype: str
         """
         return self._task_id
 
@@ -69,7 +69,7 @@ class StartTaskRequest:
         迁移任务ID。
 
         :param task_id: The task_id of this StartTaskRequest.
-        :type task_id: int
+        :type task_id: str
         """
         self._task_id = task_id
 

@@ -26,7 +26,8 @@ class CreateChannelResponse(SdkResponse):
         'description': 'str',
         'provider_type': 'str',
         'created_time': 'str',
-        'updated_time': 'str'
+        'updated_time': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class CreateChannelResponse(SdkResponse):
         'description': 'description',
         'provider_type': 'provider_type',
         'created_time': 'created_time',
-        'updated_time': 'updated_time'
+        'updated_time': 'updated_time',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, id=None, name=None, description=None, provider_type=None, created_time=None, updated_time=None):
+    def __init__(self, id=None, name=None, description=None, provider_type=None, created_time=None, updated_time=None, x_request_id=None):
         """CreateChannelResponse
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class CreateChannelResponse(SdkResponse):
         :type created_time: str
         :param updated_time: 更新UTC时间
         :type updated_time: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(CreateChannelResponse, self).__init__()
@@ -65,6 +69,7 @@ class CreateChannelResponse(SdkResponse):
         self._provider_type = None
         self._created_time = None
         self._updated_time = None
+        self._x_request_id = None
         self.discriminator = None
 
         if id is not None:
@@ -79,6 +84,8 @@ class CreateChannelResponse(SdkResponse):
             self.created_time = created_time
         if updated_time is not None:
             self.updated_time = updated_time
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def id(self):
@@ -211,6 +218,26 @@ class CreateChannelResponse(SdkResponse):
         :type updated_time: str
         """
         self._updated_time = updated_time
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this CreateChannelResponse.
+
+
+        :return: The x_request_id of this CreateChannelResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this CreateChannelResponse.
+
+
+        :param x_request_id: The x_request_id of this CreateChannelResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

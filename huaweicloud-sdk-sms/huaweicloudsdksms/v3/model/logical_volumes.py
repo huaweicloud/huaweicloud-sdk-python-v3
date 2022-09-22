@@ -25,6 +25,7 @@ class LogicalVolumes:
         'block_size': 'int',
         'file_system': 'str',
         'inode_size': 'int',
+        'device_use': 'int',
         'mount_point': 'str',
         'name': 'str',
         'size': 'int',
@@ -37,6 +38,7 @@ class LogicalVolumes:
         'block_size': 'block_size',
         'file_system': 'file_system',
         'inode_size': 'inode_size',
+        'device_use': 'device_use',
         'mount_point': 'mount_point',
         'name': 'name',
         'size': 'size',
@@ -44,7 +46,7 @@ class LogicalVolumes:
         'free_size': 'free_size'
     }
 
-    def __init__(self, block_count=None, block_size=None, file_system=None, inode_size=None, mount_point=None, name=None, size=None, used_size=None, free_size=None):
+    def __init__(self, block_count=None, block_size=None, file_system=None, inode_size=None, device_use=None, mount_point=None, name=None, size=None, used_size=None, free_size=None):
         """LogicalVolumes
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class LogicalVolumes:
         :type file_system: str
         :param inode_size: inode数量
         :type inode_size: int
+        :param device_use: 已使用大小
+        :type device_use: int
         :param mount_point: 挂载点
         :type mount_point: str
         :param name: 名称
@@ -75,6 +79,7 @@ class LogicalVolumes:
         self._block_size = None
         self._file_system = None
         self._inode_size = None
+        self._device_use = None
         self._mount_point = None
         self._name = None
         self._size = None
@@ -88,6 +93,8 @@ class LogicalVolumes:
             self.block_size = block_size
         self.file_system = file_system
         self.inode_size = inode_size
+        if device_use is not None:
+            self.device_use = device_use
         self.mount_point = mount_point
         self.name = name
         self.size = size
@@ -181,6 +188,28 @@ class LogicalVolumes:
         :type inode_size: int
         """
         self._inode_size = inode_size
+
+    @property
+    def device_use(self):
+        """Gets the device_use of this LogicalVolumes.
+
+        已使用大小
+
+        :return: The device_use of this LogicalVolumes.
+        :rtype: int
+        """
+        return self._device_use
+
+    @device_use.setter
+    def device_use(self, device_use):
+        """Sets the device_use of this LogicalVolumes.
+
+        已使用大小
+
+        :param device_use: The device_use of this LogicalVolumes.
+        :type device_use: int
+        """
+        self._device_use = device_use
 
     @property
     def mount_point(self):

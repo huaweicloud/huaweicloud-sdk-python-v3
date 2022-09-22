@@ -368,64 +368,6 @@ class CloudPipelineClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def register_agent(self, request):
-        """register注册Slave接口
-
-        注册创建Slave接口
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for RegisterAgent
-        :type request: :class:`huaweicloudsdkcloudpipeline.v2.RegisterAgentRequest`
-        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.RegisterAgentResponse`
-        """
-        return self.register_agent_with_http_info(request)
-
-    def register_agent_with_http_info(self, request):
-        all_params = ['register_agent_request_body']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        return self.call_api(
-            resource_path='/agentregister/v1/agent/register',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='RegisterAgentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
     def remove_pipeline(self, request):
         """删除流水线
 
@@ -481,66 +423,6 @@ class CloudPipelineClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='RemovePipelineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_agent_status(self, request):
-        """Agent状态查询
-
-        Agent状态查询
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ShowAgentStatus
-        :type request: :class:`huaweicloudsdkcloudpipeline.v2.ShowAgentStatusRequest`
-        :rtype: :class:`huaweicloudsdkcloudpipeline.v2.ShowAgentStatusResponse`
-        """
-        return self.show_agent_status_with_http_info(request)
-
-    def show_agent_status_with_http_info(self, request):
-        all_params = ['agent_id', 'x_language']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'agent_id' in local_var_params:
-            path_params['agent_id'] = local_var_params['agent_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'x_language' in local_var_params:
-            header_params['X-Language'] = local_var_params['x_language']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = ['apig-auth-iam']
-
-        return self.call_api(
-            resource_path='/v1/agents/{agent_id}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowAgentStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

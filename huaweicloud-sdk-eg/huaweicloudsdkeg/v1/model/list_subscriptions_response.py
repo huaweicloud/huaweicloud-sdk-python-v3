@@ -37,7 +37,7 @@ class ListSubscriptionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param total: 事件订阅总数
+        :param total: 总数
         :type total: int
         :param size: 本页数量
         :type size: int
@@ -63,7 +63,7 @@ class ListSubscriptionsResponse(SdkResponse):
     def total(self):
         """Gets the total of this ListSubscriptionsResponse.
 
-        事件订阅总数
+        总数
 
         :return: The total of this ListSubscriptionsResponse.
         :rtype: int
@@ -74,7 +74,7 @@ class ListSubscriptionsResponse(SdkResponse):
     def total(self, total):
         """Sets the total of this ListSubscriptionsResponse.
 
-        事件订阅总数
+        总数
 
         :param total: The total of this ListSubscriptionsResponse.
         :type total: int

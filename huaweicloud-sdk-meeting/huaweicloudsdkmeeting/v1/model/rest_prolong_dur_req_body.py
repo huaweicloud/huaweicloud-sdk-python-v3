@@ -35,7 +35,7 @@ class RestProlongDurReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param auto: - 0: 手动延长。 - 1: 自动延长（未携带延长时间时，默认每次延长15分钟）。
+        :param auto: - 0: 手动延长 - 1: 自动延长（未携带延长时间时，默认每次延长15分钟）
         :type auto: int
         :param duration: 延长时间，单位为分钟。 默认值：15
         :type duration: int
@@ -55,7 +55,7 @@ class RestProlongDurReqBody:
     def auto(self):
         """Gets the auto of this RestProlongDurReqBody.
 
-        - 0: 手动延长。 - 1: 自动延长（未携带延长时间时，默认每次延长15分钟）。
+        - 0: 手动延长 - 1: 自动延长（未携带延长时间时，默认每次延长15分钟）
 
         :return: The auto of this RestProlongDurReqBody.
         :rtype: int
@@ -66,7 +66,7 @@ class RestProlongDurReqBody:
     def auto(self, auto):
         """Sets the auto of this RestProlongDurReqBody.
 
-        - 0: 手动延长。 - 1: 自动延长（未携带延长时间时，默认每次延长15分钟）。
+        - 0: 手动延长 - 1: 自动延长（未携带延长时间时，默认每次延长15分钟）
 
         :param auto: The auto of this RestProlongDurReqBody.
         :type auto: int

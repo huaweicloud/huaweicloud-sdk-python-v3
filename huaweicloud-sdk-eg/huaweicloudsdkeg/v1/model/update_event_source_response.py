@@ -26,10 +26,15 @@ class UpdateEventSourceResponse(SdkResponse):
         'label': 'str',
         'description': 'str',
         'provider_type': 'str',
+        'event_types': 'list[CustomizeSourceInfoEventTypes]',
         'created_time': 'str',
         'updated_time': 'str',
         'channel_id': 'str',
-        'channel_name': 'str'
+        'channel_name': 'str',
+        'type': 'str',
+        'detail': 'object',
+        'status': 'str',
+        'x_request_id': 'str'
     }
 
     attribute_map = {
@@ -38,13 +43,18 @@ class UpdateEventSourceResponse(SdkResponse):
         'label': 'label',
         'description': 'description',
         'provider_type': 'provider_type',
+        'event_types': 'event_types',
         'created_time': 'created_time',
         'updated_time': 'updated_time',
         'channel_id': 'channel_id',
-        'channel_name': 'channel_name'
+        'channel_name': 'channel_name',
+        'type': 'type',
+        'detail': 'detail',
+        'status': 'status',
+        'x_request_id': 'X-Request-Id'
     }
 
-    def __init__(self, id=None, name=None, label=None, description=None, provider_type=None, created_time=None, updated_time=None, channel_id=None, channel_name=None):
+    def __init__(self, id=None, name=None, label=None, description=None, provider_type=None, event_types=None, created_time=None, updated_time=None, channel_id=None, channel_name=None, type=None, detail=None, status=None, x_request_id=None):
         """UpdateEventSourceResponse
 
         The model defined in huaweicloud sdk
@@ -59,6 +69,8 @@ class UpdateEventSourceResponse(SdkResponse):
         :type description: str
         :param provider_type: 事件源提供方类型，OFFICIAL：官方云服务事件源；CUSTOM：用户创建的自定义事件源
         :type provider_type: str
+        :param event_types: 事件源提供的事件类型列表，只有官方云服务事件源提供事件类型
+        :type event_types: list[:class:`huaweicloudsdkeg.v1.CustomizeSourceInfoEventTypes`]
         :param created_time: 创建UTC时间
         :type created_time: str
         :param updated_time: 更新UTC时间
@@ -67,6 +79,14 @@ class UpdateEventSourceResponse(SdkResponse):
         :type channel_id: str
         :param channel_name: 事件源归属的事件通道名称
         :type channel_name: str
+        :param type: 事件源类型
+        :type type: str
+        :param detail: json格式封装消息实例链接信息：如RabbitMQ实例的instance_id字段、虚拟主机vhost字段、队列queue字段、用户名、密码等
+        :type detail: object
+        :param status: 自定义事件源状态
+        :type status: str
+        :param x_request_id: 
+        :type x_request_id: str
         """
         
         super(UpdateEventSourceResponse, self).__init__()
@@ -76,10 +96,15 @@ class UpdateEventSourceResponse(SdkResponse):
         self._label = None
         self._description = None
         self._provider_type = None
+        self._event_types = None
         self._created_time = None
         self._updated_time = None
         self._channel_id = None
         self._channel_name = None
+        self._type = None
+        self._detail = None
+        self._status = None
+        self._x_request_id = None
         self.discriminator = None
 
         if id is not None:
@@ -92,6 +117,8 @@ class UpdateEventSourceResponse(SdkResponse):
             self.description = description
         if provider_type is not None:
             self.provider_type = provider_type
+        if event_types is not None:
+            self.event_types = event_types
         if created_time is not None:
             self.created_time = created_time
         if updated_time is not None:
@@ -100,6 +127,14 @@ class UpdateEventSourceResponse(SdkResponse):
             self.channel_id = channel_id
         if channel_name is not None:
             self.channel_name = channel_name
+        if type is not None:
+            self.type = type
+        if detail is not None:
+            self.detail = detail
+        if status is not None:
+            self.status = status
+        if x_request_id is not None:
+            self.x_request_id = x_request_id
 
     @property
     def id(self):
@@ -212,6 +247,28 @@ class UpdateEventSourceResponse(SdkResponse):
         self._provider_type = provider_type
 
     @property
+    def event_types(self):
+        """Gets the event_types of this UpdateEventSourceResponse.
+
+        事件源提供的事件类型列表，只有官方云服务事件源提供事件类型
+
+        :return: The event_types of this UpdateEventSourceResponse.
+        :rtype: list[:class:`huaweicloudsdkeg.v1.CustomizeSourceInfoEventTypes`]
+        """
+        return self._event_types
+
+    @event_types.setter
+    def event_types(self, event_types):
+        """Sets the event_types of this UpdateEventSourceResponse.
+
+        事件源提供的事件类型列表，只有官方云服务事件源提供事件类型
+
+        :param event_types: The event_types of this UpdateEventSourceResponse.
+        :type event_types: list[:class:`huaweicloudsdkeg.v1.CustomizeSourceInfoEventTypes`]
+        """
+        self._event_types = event_types
+
+    @property
     def created_time(self):
         """Gets the created_time of this UpdateEventSourceResponse.
 
@@ -298,6 +355,92 @@ class UpdateEventSourceResponse(SdkResponse):
         :type channel_name: str
         """
         self._channel_name = channel_name
+
+    @property
+    def type(self):
+        """Gets the type of this UpdateEventSourceResponse.
+
+        事件源类型
+
+        :return: The type of this UpdateEventSourceResponse.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this UpdateEventSourceResponse.
+
+        事件源类型
+
+        :param type: The type of this UpdateEventSourceResponse.
+        :type type: str
+        """
+        self._type = type
+
+    @property
+    def detail(self):
+        """Gets the detail of this UpdateEventSourceResponse.
+
+        json格式封装消息实例链接信息：如RabbitMQ实例的instance_id字段、虚拟主机vhost字段、队列queue字段、用户名、密码等
+
+        :return: The detail of this UpdateEventSourceResponse.
+        :rtype: object
+        """
+        return self._detail
+
+    @detail.setter
+    def detail(self, detail):
+        """Sets the detail of this UpdateEventSourceResponse.
+
+        json格式封装消息实例链接信息：如RabbitMQ实例的instance_id字段、虚拟主机vhost字段、队列queue字段、用户名、密码等
+
+        :param detail: The detail of this UpdateEventSourceResponse.
+        :type detail: object
+        """
+        self._detail = detail
+
+    @property
+    def status(self):
+        """Gets the status of this UpdateEventSourceResponse.
+
+        自定义事件源状态
+
+        :return: The status of this UpdateEventSourceResponse.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this UpdateEventSourceResponse.
+
+        自定义事件源状态
+
+        :param status: The status of this UpdateEventSourceResponse.
+        :type status: str
+        """
+        self._status = status
+
+    @property
+    def x_request_id(self):
+        """Gets the x_request_id of this UpdateEventSourceResponse.
+
+
+        :return: The x_request_id of this UpdateEventSourceResponse.
+        :rtype: str
+        """
+        return self._x_request_id
+
+    @x_request_id.setter
+    def x_request_id(self, x_request_id):
+        """Sets the x_request_id of this UpdateEventSourceResponse.
+
+
+        :param x_request_id: The x_request_id of this UpdateEventSourceResponse.
+        :type x_request_id: str
+        """
+        self._x_request_id = x_request_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

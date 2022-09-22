@@ -43,17 +43,17 @@ class SearchVisionActiveCodeRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
         :type offset: int
-        :param limit: 查询数量 默认值：0 
+        :param limit: 查询数量。 默认值：10。 
         :type limit: int
         :param search_key: 搜索条件,支持激活码、终端名称模糊搜索。
         :type search_key: str
-        :param dev_type: 终端类型 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):电子白板 
+        :param dev_type: 终端类型。 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):SmartRooms会议版 - smart-rooms：SmartRooms完整版 
         :type dev_type: str
         """
         
@@ -84,7 +84,7 @@ class SearchVisionActiveCodeRequest:
     def x_request_id(self):
         """Gets the x_request_id of this SearchVisionActiveCodeRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this SearchVisionActiveCodeRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class SearchVisionActiveCodeRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this SearchVisionActiveCodeRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this SearchVisionActiveCodeRequest.
         :type x_request_id: str
@@ -106,7 +106,7 @@ class SearchVisionActiveCodeRequest:
     def accept_language(self):
         """Gets the accept_language of this SearchVisionActiveCodeRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this SearchVisionActiveCodeRequest.
         :rtype: str
@@ -117,7 +117,7 @@ class SearchVisionActiveCodeRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this SearchVisionActiveCodeRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this SearchVisionActiveCodeRequest.
         :type accept_language: str
@@ -128,7 +128,7 @@ class SearchVisionActiveCodeRequest:
     def offset(self):
         """Gets the offset of this SearchVisionActiveCodeRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
         :return: The offset of this SearchVisionActiveCodeRequest.
         :rtype: int
@@ -139,7 +139,7 @@ class SearchVisionActiveCodeRequest:
     def offset(self, offset):
         """Sets the offset of this SearchVisionActiveCodeRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
         :param offset: The offset of this SearchVisionActiveCodeRequest.
         :type offset: int
@@ -150,7 +150,7 @@ class SearchVisionActiveCodeRequest:
     def limit(self):
         """Gets the limit of this SearchVisionActiveCodeRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :return: The limit of this SearchVisionActiveCodeRequest.
         :rtype: int
@@ -161,7 +161,7 @@ class SearchVisionActiveCodeRequest:
     def limit(self, limit):
         """Sets the limit of this SearchVisionActiveCodeRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :param limit: The limit of this SearchVisionActiveCodeRequest.
         :type limit: int
@@ -194,7 +194,7 @@ class SearchVisionActiveCodeRequest:
     def dev_type(self):
         """Gets the dev_type of this SearchVisionActiveCodeRequest.
 
-        终端类型 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):电子白板 
+        终端类型。 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):SmartRooms会议版 - smart-rooms：SmartRooms完整版 
 
         :return: The dev_type of this SearchVisionActiveCodeRequest.
         :rtype: str
@@ -205,7 +205,7 @@ class SearchVisionActiveCodeRequest:
     def dev_type(self, dev_type):
         """Sets the dev_type of this SearchVisionActiveCodeRequest.
 
-        终端类型 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):电子白板 
+        终端类型。 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):SmartRooms会议版 - smart-rooms：SmartRooms完整版 
 
         :param dev_type: The dev_type of this SearchVisionActiveCodeRequest.
         :type dev_type: str

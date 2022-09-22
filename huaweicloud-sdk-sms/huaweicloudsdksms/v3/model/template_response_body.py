@@ -36,7 +36,8 @@ class TemplateResponseBody:
         'publicip': 'PublicIp',
         'disk': 'list[TemplateDisk]',
         'data_volume_type': 'str',
-        'target_password': 'str'
+        'target_password': 'str',
+        'image_id': 'str'
     }
 
     attribute_map = {
@@ -55,10 +56,11 @@ class TemplateResponseBody:
         'publicip': 'publicip',
         'disk': 'disk',
         'data_volume_type': 'data_volume_type',
-        'target_password': 'target_password'
+        'target_password': 'target_password',
+        'image_id': 'image_id'
     }
 
-    def __init__(self, id=None, name=None, is_template=None, region=None, projectid=None, target_server_name=None, availability_zone=None, volumetype=None, flavor=None, vpc=None, nics=None, security_groups=None, publicip=None, disk=None, data_volume_type=None, target_password=None):
+    def __init__(self, id=None, name=None, is_template=None, region=None, projectid=None, target_server_name=None, availability_zone=None, volumetype=None, flavor=None, vpc=None, nics=None, security_groups=None, publicip=None, disk=None, data_volume_type=None, target_password=None, image_id=None):
         """TemplateResponseBody
 
         The model defined in huaweicloud sdk
@@ -77,24 +79,26 @@ class TemplateResponseBody:
         :type target_server_name: str
         :param availability_zone: 可用区
         :type availability_zone: str
-        :param volumetype: 磁盘类型
+        :param volumetype: 数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
         :type volumetype: str
         :param flavor: 虚拟机规格
         :type flavor: str
         :param vpc: 
         :type vpc: :class:`huaweicloudsdksms.v3.VpcObject`
-        :param nics: 网卡信息，支持多个网卡，如果是自动创建，只填一个，id使用“autoCreate”
+        :param nics: 网卡信息，支持多个网卡，如果是自动创建，只填一个，ID使用“autoCreate”
         :type nics: list[:class:`huaweicloudsdksms.v3.Nics`]
-        :param security_groups: 安全组，支持多个安全组，如果是自动创建，只填一个，id使用“autoCreate”
+        :param security_groups: 安全组，支持多个安全组，如果是自动创建，只填一个，ID使用“autoCreate”
         :type security_groups: list[:class:`huaweicloudsdksms.v3.SgObject`]
         :param publicip: 
         :type publicip: :class:`huaweicloudsdksms.v3.PublicIp`
         :param disk: 磁盘信息
         :type disk: list[:class:`huaweicloudsdksms.v3.TemplateDisk`]
-        :param data_volume_type: 数据盘磁盘类型
+        :param data_volume_type: 数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
         :type data_volume_type: str
         :param target_password: 目的端密码
         :type target_password: str
+        :param image_id: 用户选择镜像版本Id值
+        :type image_id: str
         """
         
         
@@ -115,6 +119,7 @@ class TemplateResponseBody:
         self._disk = None
         self._data_volume_type = None
         self._target_password = None
+        self._image_id = None
         self.discriminator = None
 
         if id is not None:
@@ -135,6 +140,8 @@ class TemplateResponseBody:
         self.disk = disk
         self.data_volume_type = data_volume_type
         self.target_password = target_password
+        if image_id is not None:
+            self.image_id = image_id
 
     @property
     def id(self):
@@ -294,7 +301,7 @@ class TemplateResponseBody:
     def volumetype(self):
         """Gets the volumetype of this TemplateResponseBody.
 
-        磁盘类型
+        数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
 
         :return: The volumetype of this TemplateResponseBody.
         :rtype: str
@@ -305,7 +312,7 @@ class TemplateResponseBody:
     def volumetype(self, volumetype):
         """Sets the volumetype of this TemplateResponseBody.
 
-        磁盘类型
+        数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
 
         :param volumetype: The volumetype of this TemplateResponseBody.
         :type volumetype: str
@@ -358,7 +365,7 @@ class TemplateResponseBody:
     def nics(self):
         """Gets the nics of this TemplateResponseBody.
 
-        网卡信息，支持多个网卡，如果是自动创建，只填一个，id使用“autoCreate”
+        网卡信息，支持多个网卡，如果是自动创建，只填一个，ID使用“autoCreate”
 
         :return: The nics of this TemplateResponseBody.
         :rtype: list[:class:`huaweicloudsdksms.v3.Nics`]
@@ -369,7 +376,7 @@ class TemplateResponseBody:
     def nics(self, nics):
         """Sets the nics of this TemplateResponseBody.
 
-        网卡信息，支持多个网卡，如果是自动创建，只填一个，id使用“autoCreate”
+        网卡信息，支持多个网卡，如果是自动创建，只填一个，ID使用“autoCreate”
 
         :param nics: The nics of this TemplateResponseBody.
         :type nics: list[:class:`huaweicloudsdksms.v3.Nics`]
@@ -380,7 +387,7 @@ class TemplateResponseBody:
     def security_groups(self):
         """Gets the security_groups of this TemplateResponseBody.
 
-        安全组，支持多个安全组，如果是自动创建，只填一个，id使用“autoCreate”
+        安全组，支持多个安全组，如果是自动创建，只填一个，ID使用“autoCreate”
 
         :return: The security_groups of this TemplateResponseBody.
         :rtype: list[:class:`huaweicloudsdksms.v3.SgObject`]
@@ -391,7 +398,7 @@ class TemplateResponseBody:
     def security_groups(self, security_groups):
         """Sets the security_groups of this TemplateResponseBody.
 
-        安全组，支持多个安全组，如果是自动创建，只填一个，id使用“autoCreate”
+        安全组，支持多个安全组，如果是自动创建，只填一个，ID使用“autoCreate”
 
         :param security_groups: The security_groups of this TemplateResponseBody.
         :type security_groups: list[:class:`huaweicloudsdksms.v3.SgObject`]
@@ -444,7 +451,7 @@ class TemplateResponseBody:
     def data_volume_type(self):
         """Gets the data_volume_type of this TemplateResponseBody.
 
-        数据盘磁盘类型
+        数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
 
         :return: The data_volume_type of this TemplateResponseBody.
         :rtype: str
@@ -455,7 +462,7 @@ class TemplateResponseBody:
     def data_volume_type(self, data_volume_type):
         """Sets the data_volume_type of this TemplateResponseBody.
 
-        数据盘磁盘类型
+        数据盘磁盘类型 SAS:串行连接SCSI SSD:固态硬盘 SATA:串口硬盘 
 
         :param data_volume_type: The data_volume_type of this TemplateResponseBody.
         :type data_volume_type: str
@@ -483,6 +490,28 @@ class TemplateResponseBody:
         :type target_password: str
         """
         self._target_password = target_password
+
+    @property
+    def image_id(self):
+        """Gets the image_id of this TemplateResponseBody.
+
+        用户选择镜像版本Id值
+
+        :return: The image_id of this TemplateResponseBody.
+        :rtype: str
+        """
+        return self._image_id
+
+    @image_id.setter
+    def image_id(self, image_id):
+        """Sets the image_id of this TemplateResponseBody.
+
+        用户选择镜像版本Id值
+
+        :param image_id: The image_id of this TemplateResponseBody.
+        :type image_id: str
+        """
+        self._image_id = image_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

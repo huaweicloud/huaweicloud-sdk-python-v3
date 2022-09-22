@@ -43,9 +43,9 @@ class ListErrorServersRequest:
         :type limit: int
         :param offset: 偏移量
         :type offset: int
-        :param migproject: 需要查询的迁移项目id，添加此字段将只查询对应id下的迁移任务报错信息
+        :param migproject: 需要查询的迁移项目ID，添加此字段将只查询对应ID下的迁移任务报错信息
         :type migproject: str
-        :param enterprise_project_id: 需要查询的企业项目id
+        :param enterprise_project_id: 需要查询的企业项目ID
         :type enterprise_project_id: str
         """
         
@@ -113,7 +113,7 @@ class ListErrorServersRequest:
     def migproject(self):
         """Gets the migproject of this ListErrorServersRequest.
 
-        需要查询的迁移项目id，添加此字段将只查询对应id下的迁移任务报错信息
+        需要查询的迁移项目ID，添加此字段将只查询对应ID下的迁移任务报错信息
 
         :return: The migproject of this ListErrorServersRequest.
         :rtype: str
@@ -124,7 +124,7 @@ class ListErrorServersRequest:
     def migproject(self, migproject):
         """Sets the migproject of this ListErrorServersRequest.
 
-        需要查询的迁移项目id，添加此字段将只查询对应id下的迁移任务报错信息
+        需要查询的迁移项目ID，添加此字段将只查询对应ID下的迁移任务报错信息
 
         :param migproject: The migproject of this ListErrorServersRequest.
         :type migproject: str
@@ -135,7 +135,7 @@ class ListErrorServersRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListErrorServersRequest.
 
-        需要查询的企业项目id
+        需要查询的企业项目ID
 
         :return: The enterprise_project_id of this ListErrorServersRequest.
         :rtype: str
@@ -146,7 +146,7 @@ class ListErrorServersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListErrorServersRequest.
 
-        需要查询的企业项目id
+        需要查询的企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ListErrorServersRequest.
         :type enterprise_project_id: str

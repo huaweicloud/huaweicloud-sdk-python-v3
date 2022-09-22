@@ -39,13 +39,13 @@ class SearchHisMeetingsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 第几条。
+        :param offset: 查询偏移量。
         :type offset: int
         :param limit: 每页的记录数。
         :type limit: int
         :param count: 总记录数。
         :type count: int
-        :param data: 会议信息列表。
+        :param data: 会议列表。
         :type data: list[:class:`huaweicloudsdkmeeting.v1.ConferenceInfo`]
         """
         
@@ -70,7 +70,7 @@ class SearchHisMeetingsResponse(SdkResponse):
     def offset(self):
         """Gets the offset of this SearchHisMeetingsResponse.
 
-        第几条。
+        查询偏移量。
 
         :return: The offset of this SearchHisMeetingsResponse.
         :rtype: int
@@ -81,7 +81,7 @@ class SearchHisMeetingsResponse(SdkResponse):
     def offset(self, offset):
         """Sets the offset of this SearchHisMeetingsResponse.
 
-        第几条。
+        查询偏移量。
 
         :param offset: The offset of this SearchHisMeetingsResponse.
         :type offset: int
@@ -136,7 +136,7 @@ class SearchHisMeetingsResponse(SdkResponse):
     def data(self):
         """Gets the data of this SearchHisMeetingsResponse.
 
-        会议信息列表。
+        会议列表。
 
         :return: The data of this SearchHisMeetingsResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.ConferenceInfo`]
@@ -147,7 +147,7 @@ class SearchHisMeetingsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this SearchHisMeetingsResponse.
 
-        会议信息列表。
+        会议列表。
 
         :param data: The data of this SearchHisMeetingsResponse.
         :type data: list[:class:`huaweicloudsdkmeeting.v1.ConferenceInfo`]

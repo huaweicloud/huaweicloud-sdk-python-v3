@@ -43,17 +43,17 @@ class ShowWebHookConfigResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param return_code: 结果码
+        :param return_code: 结果码。
         :type return_code: int
-        :param return_desc: 结果描述
+        :param return_desc: 结果描述。
         :type return_desc: str
-        :param id: 配置记录id
+        :param id: 订阅配置记录ID。
         :type id: str
-        :param subscriber_id: 订阅ID
+        :param subscriber_id: 订阅ID。
         :type subscriber_id: str
-        :param url: 订阅url
+        :param url: 订阅url。
         :type url: str
-        :param status: 连接状态： 0表示已启用 ；1表示未启动； 2表示已锁定
+        :param status: 事件推送状态。 * 0：已启用 * 1：未启动 * 2：已锁定 
         :type status: int
         """
         
@@ -83,7 +83,7 @@ class ShowWebHookConfigResponse(SdkResponse):
     def return_code(self):
         """Gets the return_code of this ShowWebHookConfigResponse.
 
-        结果码
+        结果码。
 
         :return: The return_code of this ShowWebHookConfigResponse.
         :rtype: int
@@ -94,7 +94,7 @@ class ShowWebHookConfigResponse(SdkResponse):
     def return_code(self, return_code):
         """Sets the return_code of this ShowWebHookConfigResponse.
 
-        结果码
+        结果码。
 
         :param return_code: The return_code of this ShowWebHookConfigResponse.
         :type return_code: int
@@ -105,7 +105,7 @@ class ShowWebHookConfigResponse(SdkResponse):
     def return_desc(self):
         """Gets the return_desc of this ShowWebHookConfigResponse.
 
-        结果描述
+        结果描述。
 
         :return: The return_desc of this ShowWebHookConfigResponse.
         :rtype: str
@@ -116,7 +116,7 @@ class ShowWebHookConfigResponse(SdkResponse):
     def return_desc(self, return_desc):
         """Sets the return_desc of this ShowWebHookConfigResponse.
 
-        结果描述
+        结果描述。
 
         :param return_desc: The return_desc of this ShowWebHookConfigResponse.
         :type return_desc: str
@@ -127,7 +127,7 @@ class ShowWebHookConfigResponse(SdkResponse):
     def id(self):
         """Gets the id of this ShowWebHookConfigResponse.
 
-        配置记录id
+        订阅配置记录ID。
 
         :return: The id of this ShowWebHookConfigResponse.
         :rtype: str
@@ -138,7 +138,7 @@ class ShowWebHookConfigResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this ShowWebHookConfigResponse.
 
-        配置记录id
+        订阅配置记录ID。
 
         :param id: The id of this ShowWebHookConfigResponse.
         :type id: str
@@ -149,7 +149,7 @@ class ShowWebHookConfigResponse(SdkResponse):
     def subscriber_id(self):
         """Gets the subscriber_id of this ShowWebHookConfigResponse.
 
-        订阅ID
+        订阅ID。
 
         :return: The subscriber_id of this ShowWebHookConfigResponse.
         :rtype: str
@@ -160,7 +160,7 @@ class ShowWebHookConfigResponse(SdkResponse):
     def subscriber_id(self, subscriber_id):
         """Sets the subscriber_id of this ShowWebHookConfigResponse.
 
-        订阅ID
+        订阅ID。
 
         :param subscriber_id: The subscriber_id of this ShowWebHookConfigResponse.
         :type subscriber_id: str
@@ -171,7 +171,7 @@ class ShowWebHookConfigResponse(SdkResponse):
     def url(self):
         """Gets the url of this ShowWebHookConfigResponse.
 
-        订阅url
+        订阅url。
 
         :return: The url of this ShowWebHookConfigResponse.
         :rtype: str
@@ -182,7 +182,7 @@ class ShowWebHookConfigResponse(SdkResponse):
     def url(self, url):
         """Sets the url of this ShowWebHookConfigResponse.
 
-        订阅url
+        订阅url。
 
         :param url: The url of this ShowWebHookConfigResponse.
         :type url: str
@@ -193,7 +193,7 @@ class ShowWebHookConfigResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowWebHookConfigResponse.
 
-        连接状态： 0表示已启用 ；1表示未启动； 2表示已锁定
+        事件推送状态。 * 0：已启用 * 1：未启动 * 2：已锁定 
 
         :return: The status of this ShowWebHookConfigResponse.
         :rtype: int
@@ -204,7 +204,7 @@ class ShowWebHookConfigResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowWebHookConfigResponse.
 
-        连接状态： 0表示已启用 ；1表示未启动； 2表示已锁定
+        事件推送状态。 * 0：已启用 * 1：未启动 * 2：已锁定 
 
         :param status: The status of this ShowWebHookConfigResponse.
         :type status: int

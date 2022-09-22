@@ -35,9 +35,9 @@ class CreateProgramRequestDTO:
 
         The model defined in huaweicloud sdk
 
-        :param program_name: 节目名称
+        :param program_name: 节目名称。
         :type program_name: str
-        :param program_item_list: 节目素材列表
+        :param program_item_list: 节目素材列表。
         :type program_item_list: list[:class:`huaweicloudsdkmeeting.v1.ProgramItemRequestBase`]
         """
         
@@ -55,7 +55,7 @@ class CreateProgramRequestDTO:
     def program_name(self):
         """Gets the program_name of this CreateProgramRequestDTO.
 
-        节目名称
+        节目名称。
 
         :return: The program_name of this CreateProgramRequestDTO.
         :rtype: str
@@ -66,7 +66,7 @@ class CreateProgramRequestDTO:
     def program_name(self, program_name):
         """Sets the program_name of this CreateProgramRequestDTO.
 
-        节目名称
+        节目名称。
 
         :param program_name: The program_name of this CreateProgramRequestDTO.
         :type program_name: str
@@ -77,7 +77,7 @@ class CreateProgramRequestDTO:
     def program_item_list(self):
         """Gets the program_item_list of this CreateProgramRequestDTO.
 
-        节目素材列表
+        节目素材列表。
 
         :return: The program_item_list of this CreateProgramRequestDTO.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.ProgramItemRequestBase`]
@@ -88,7 +88,7 @@ class CreateProgramRequestDTO:
     def program_item_list(self, program_item_list):
         """Sets the program_item_list of this CreateProgramRequestDTO.
 
-        节目素材列表
+        节目素材列表。
 
         :param program_item_list: The program_item_list of this CreateProgramRequestDTO.
         :type program_item_list: list[:class:`huaweicloudsdkmeeting.v1.ProgramItemRequestBase`]

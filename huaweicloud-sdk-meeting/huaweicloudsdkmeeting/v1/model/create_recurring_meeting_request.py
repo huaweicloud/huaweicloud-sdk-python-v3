@@ -39,11 +39,11 @@ class CreateRecurringMeetingRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_authorization_type: 标识是否为第三方portal过来的请求
+        :param x_authorization_type: 标识是否为第三方portal过来的请求。 &gt; 该参数将废弃，请勿使用。 
         :type x_authorization_type: str
-        :param user_uuid: 用户的uuid（已在USG注册过的）
+        :param user_uuid: 用户的UUID。 &gt; 该参数将废弃，请勿使用。 
         :type user_uuid: str
-        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。 &gt; 该参数将废弃，请勿使用。 
         :type x_site_id: str
         :param body: Body of the CreateRecurringMeetingRequest
         :type body: :class:`huaweicloudsdkmeeting.v1.RestScheduleConfDTO`
@@ -70,7 +70,7 @@ class CreateRecurringMeetingRequest:
     def x_authorization_type(self):
         """Gets the x_authorization_type of this CreateRecurringMeetingRequest.
 
-        标识是否为第三方portal过来的请求
+        标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
         :return: The x_authorization_type of this CreateRecurringMeetingRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class CreateRecurringMeetingRequest:
     def x_authorization_type(self, x_authorization_type):
         """Sets the x_authorization_type of this CreateRecurringMeetingRequest.
 
-        标识是否为第三方portal过来的请求
+        标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
         :param x_authorization_type: The x_authorization_type of this CreateRecurringMeetingRequest.
         :type x_authorization_type: str
@@ -92,7 +92,7 @@ class CreateRecurringMeetingRequest:
     def user_uuid(self):
         """Gets the user_uuid of this CreateRecurringMeetingRequest.
 
-        用户的uuid（已在USG注册过的）
+        用户的UUID。 > 该参数将废弃，请勿使用。 
 
         :return: The user_uuid of this CreateRecurringMeetingRequest.
         :rtype: str
@@ -103,7 +103,7 @@ class CreateRecurringMeetingRequest:
     def user_uuid(self, user_uuid):
         """Sets the user_uuid of this CreateRecurringMeetingRequest.
 
-        用户的uuid（已在USG注册过的）
+        用户的UUID。 > 该参数将废弃，请勿使用。 
 
         :param user_uuid: The user_uuid of this CreateRecurringMeetingRequest.
         :type user_uuid: str
@@ -114,7 +114,7 @@ class CreateRecurringMeetingRequest:
     def x_site_id(self):
         """Gets the x_site_id of this CreateRecurringMeetingRequest.
 
-        用于区分到哪个HCSO站点鉴权。
+        用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
         :return: The x_site_id of this CreateRecurringMeetingRequest.
         :rtype: str
@@ -125,7 +125,7 @@ class CreateRecurringMeetingRequest:
     def x_site_id(self, x_site_id):
         """Sets the x_site_id of this CreateRecurringMeetingRequest.
 
-        用于区分到哪个HCSO站点鉴权。
+        用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
         :param x_site_id: The x_site_id of this CreateRecurringMeetingRequest.
         :type x_site_id: str

@@ -319,6 +319,7 @@ from huaweicloudsdkapig.v2.model.resp_instance_base import RespInstanceBase
 from huaweicloudsdkapig.v2.model.response_info import ResponseInfo
 from huaweicloudsdkapig.v2.model.response_info_resp import ResponseInfoResp
 from huaweicloudsdkapig.v2.model.responses_create import ResponsesCreate
+from huaweicloudsdkapig.v2.model.responses_info import ResponsesInfo
 from huaweicloudsdkapig.v2.model.show_details_of_acl_policy_v2_request import ShowDetailsOfAclPolicyV2Request
 from huaweicloudsdkapig.v2.model.show_details_of_acl_policy_v2_response import ShowDetailsOfAclPolicyV2Response
 from huaweicloudsdkapig.v2.model.show_details_of_api_group_v2_request import ShowDetailsOfApiGroupV2Request

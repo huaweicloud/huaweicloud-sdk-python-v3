@@ -35,9 +35,9 @@ class PublishDeptResponseDTO:
 
         The model defined in huaweicloud sdk
 
-        :param dept_code: 部门编码
+        :param dept_code: 部门编码。
         :type dept_code: str
-        :param dept_name: 部门名称
+        :param dept_name: 部门名称。
         :type dept_name: str
         """
         
@@ -56,7 +56,7 @@ class PublishDeptResponseDTO:
     def dept_code(self):
         """Gets the dept_code of this PublishDeptResponseDTO.
 
-        部门编码
+        部门编码。
 
         :return: The dept_code of this PublishDeptResponseDTO.
         :rtype: str
@@ -67,7 +67,7 @@ class PublishDeptResponseDTO:
     def dept_code(self, dept_code):
         """Sets the dept_code of this PublishDeptResponseDTO.
 
-        部门编码
+        部门编码。
 
         :param dept_code: The dept_code of this PublishDeptResponseDTO.
         :type dept_code: str
@@ -78,7 +78,7 @@ class PublishDeptResponseDTO:
     def dept_name(self):
         """Gets the dept_name of this PublishDeptResponseDTO.
 
-        部门名称
+        部门名称。
 
         :return: The dept_name of this PublishDeptResponseDTO.
         :rtype: str
@@ -89,7 +89,7 @@ class PublishDeptResponseDTO:
     def dept_name(self, dept_name):
         """Sets the dept_name of this PublishDeptResponseDTO.
 
-        部门名称
+        部门名称。
 
         :param dept_name: The dept_name of this PublishDeptResponseDTO.
         :type dept_name: str

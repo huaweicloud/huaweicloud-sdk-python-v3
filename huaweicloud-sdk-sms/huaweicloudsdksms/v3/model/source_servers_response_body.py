@@ -73,13 +73,13 @@ class SourceServersResponseBody:
 
         The model defined in huaweicloud sdk
 
-        :param id: 源端服务器id
+        :param id: 源端服务器ID
         :type id: str
-        :param ip: 源端服务器的ip地址
+        :param ip: 源端服务器的IP地址
         :type ip: str
         :param name: 源端服务器名称
         :type name: str
-        :param enterprise_project_id: 企业项目id
+        :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
         :param add_date: 源端服务器的注册时间
         :type add_date: int
@@ -89,7 +89,7 @@ class SourceServersResponseBody:
         :type os_version: str
         :param oem_system: 是否是OEM操作系统(Windows)
         :type oem_system: bool
-        :param state: 源端服务器状态
+        :param state: 源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成
         :type state: str
         :param connected: 源端服务器与主机迁移服务端是否连接
         :type connected: bool
@@ -111,7 +111,7 @@ class SourceServersResponseBody:
         :type totalsize: int
         :param last_visit_time: Agent上一次连接状态发生变化的时间
         :type last_visit_time: int
-        :param migration_cycle: 迁移周期
+        :param migration_cycle: 迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
         :type migration_cycle: str
         :param state_action_time: 源端状态（state）上次发生变化的时间
         :type state_action_time: int
@@ -189,7 +189,7 @@ class SourceServersResponseBody:
     def id(self):
         """Gets the id of this SourceServersResponseBody.
 
-        源端服务器id
+        源端服务器ID
 
         :return: The id of this SourceServersResponseBody.
         :rtype: str
@@ -200,7 +200,7 @@ class SourceServersResponseBody:
     def id(self, id):
         """Sets the id of this SourceServersResponseBody.
 
-        源端服务器id
+        源端服务器ID
 
         :param id: The id of this SourceServersResponseBody.
         :type id: str
@@ -211,7 +211,7 @@ class SourceServersResponseBody:
     def ip(self):
         """Gets the ip of this SourceServersResponseBody.
 
-        源端服务器的ip地址
+        源端服务器的IP地址
 
         :return: The ip of this SourceServersResponseBody.
         :rtype: str
@@ -222,7 +222,7 @@ class SourceServersResponseBody:
     def ip(self, ip):
         """Sets the ip of this SourceServersResponseBody.
 
-        源端服务器的ip地址
+        源端服务器的IP地址
 
         :param ip: The ip of this SourceServersResponseBody.
         :type ip: str
@@ -255,7 +255,7 @@ class SourceServersResponseBody:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this SourceServersResponseBody.
 
-        企业项目id
+        企业项目ID
 
         :return: The enterprise_project_id of this SourceServersResponseBody.
         :rtype: str
@@ -266,7 +266,7 @@ class SourceServersResponseBody:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this SourceServersResponseBody.
 
-        企业项目id
+        企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this SourceServersResponseBody.
         :type enterprise_project_id: str
@@ -365,7 +365,7 @@ class SourceServersResponseBody:
     def state(self):
         """Gets the state of this SourceServersResponseBody.
 
-        源端服务器状态
+        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成
 
         :return: The state of this SourceServersResponseBody.
         :rtype: str
@@ -376,7 +376,7 @@ class SourceServersResponseBody:
     def state(self, state):
         """Sets the state of this SourceServersResponseBody.
 
-        源端服务器状态
+        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成
 
         :param state: The state of this SourceServersResponseBody.
         :type state: str
@@ -603,7 +603,7 @@ class SourceServersResponseBody:
     def migration_cycle(self):
         """Gets the migration_cycle of this SourceServersResponseBody.
 
-        迁移周期
+        迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
 
         :return: The migration_cycle of this SourceServersResponseBody.
         :rtype: str
@@ -614,7 +614,7 @@ class SourceServersResponseBody:
     def migration_cycle(self, migration_cycle):
         """Sets the migration_cycle of this SourceServersResponseBody.
 
-        迁移周期
+        迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
 
         :param migration_cycle: The migration_cycle of this SourceServersResponseBody.
         :type migration_cycle: str

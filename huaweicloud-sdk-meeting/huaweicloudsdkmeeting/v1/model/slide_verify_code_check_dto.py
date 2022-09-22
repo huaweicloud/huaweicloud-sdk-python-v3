@@ -43,13 +43,13 @@ class SlideVerifyCodeCheckDTO:
 
         The model defined in huaweicloud sdk
 
-        :param user: 必须和发送验证码时带的用户身份信息相同 maxLength：255 minLength：1 
+        :param user: 必须和发送验证码时带的用户身份信息相同。 
         :type user: str
-        :param client_type: 登录客户端类型。 * 0：Web客户端类型； * 5：cloudlink pc； * 6：cloudlink mobile； * 16：workplace pc； * 18：workplace mobile 
+        :param client_type: 登录客户端类型。 * 0：Web客户端类型 * 5：PC客户端 * 6：移动客户端 
         :type client_type: int
-        :param check_type: 校验类型。 * 0：登录； * 1：忘记密码; 默认值：0 
+        :param check_type: 校验类型。默认值：0。 * 0：登录； * 1：忘记密码; 
         :type check_type: int
-        :param token: 发送滑块验证码返回的token字符串 maxLength：255 minLength：1 
+        :param token: 验证码Token字符串。通过[[发送滑块验证码](https://support.huaweicloud.com/api-meeting/meeting_21_0100.html)](tag:hws)[[发送滑块验证码](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0100.html)](tag:hk) 接口获取。 
         :type token: str
         :param point_x: 抠出图形的X轴坐标。
         :type point_x: int
@@ -79,7 +79,7 @@ class SlideVerifyCodeCheckDTO:
     def user(self):
         """Gets the user of this SlideVerifyCodeCheckDTO.
 
-        必须和发送验证码时带的用户身份信息相同 maxLength：255 minLength：1 
+        必须和发送验证码时带的用户身份信息相同。 
 
         :return: The user of this SlideVerifyCodeCheckDTO.
         :rtype: str
@@ -90,7 +90,7 @@ class SlideVerifyCodeCheckDTO:
     def user(self, user):
         """Sets the user of this SlideVerifyCodeCheckDTO.
 
-        必须和发送验证码时带的用户身份信息相同 maxLength：255 minLength：1 
+        必须和发送验证码时带的用户身份信息相同。 
 
         :param user: The user of this SlideVerifyCodeCheckDTO.
         :type user: str
@@ -101,7 +101,7 @@ class SlideVerifyCodeCheckDTO:
     def client_type(self):
         """Gets the client_type of this SlideVerifyCodeCheckDTO.
 
-        登录客户端类型。 * 0：Web客户端类型； * 5：cloudlink pc； * 6：cloudlink mobile； * 16：workplace pc； * 18：workplace mobile 
+        登录客户端类型。 * 0：Web客户端类型 * 5：PC客户端 * 6：移动客户端 
 
         :return: The client_type of this SlideVerifyCodeCheckDTO.
         :rtype: int
@@ -112,7 +112,7 @@ class SlideVerifyCodeCheckDTO:
     def client_type(self, client_type):
         """Sets the client_type of this SlideVerifyCodeCheckDTO.
 
-        登录客户端类型。 * 0：Web客户端类型； * 5：cloudlink pc； * 6：cloudlink mobile； * 16：workplace pc； * 18：workplace mobile 
+        登录客户端类型。 * 0：Web客户端类型 * 5：PC客户端 * 6：移动客户端 
 
         :param client_type: The client_type of this SlideVerifyCodeCheckDTO.
         :type client_type: int
@@ -123,7 +123,7 @@ class SlideVerifyCodeCheckDTO:
     def check_type(self):
         """Gets the check_type of this SlideVerifyCodeCheckDTO.
 
-        校验类型。 * 0：登录； * 1：忘记密码; 默认值：0 
+        校验类型。默认值：0。 * 0：登录； * 1：忘记密码; 
 
         :return: The check_type of this SlideVerifyCodeCheckDTO.
         :rtype: int
@@ -134,7 +134,7 @@ class SlideVerifyCodeCheckDTO:
     def check_type(self, check_type):
         """Sets the check_type of this SlideVerifyCodeCheckDTO.
 
-        校验类型。 * 0：登录； * 1：忘记密码; 默认值：0 
+        校验类型。默认值：0。 * 0：登录； * 1：忘记密码; 
 
         :param check_type: The check_type of this SlideVerifyCodeCheckDTO.
         :type check_type: int
@@ -145,7 +145,7 @@ class SlideVerifyCodeCheckDTO:
     def token(self):
         """Gets the token of this SlideVerifyCodeCheckDTO.
 
-        发送滑块验证码返回的token字符串 maxLength：255 minLength：1 
+        验证码Token字符串。通过[[发送滑块验证码](https://support.huaweicloud.com/api-meeting/meeting_21_0100.html)](tag:hws)[[发送滑块验证码](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0100.html)](tag:hk) 接口获取。 
 
         :return: The token of this SlideVerifyCodeCheckDTO.
         :rtype: str
@@ -156,7 +156,7 @@ class SlideVerifyCodeCheckDTO:
     def token(self, token):
         """Sets the token of this SlideVerifyCodeCheckDTO.
 
-        发送滑块验证码返回的token字符串 maxLength：255 minLength：1 
+        验证码Token字符串。通过[[发送滑块验证码](https://support.huaweicloud.com/api-meeting/meeting_21_0100.html)](tag:hws)[[发送滑块验证码](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0100.html)](tag:hk) 接口获取。 
 
         :param token: The token of this SlideVerifyCodeCheckDTO.
         :type token: str

@@ -34,7 +34,8 @@ class PostTask:
         'project_id': 'str',
         'vm_template_id': 'str',
         'use_public_ip': 'bool',
-        'syncing': 'bool'
+        'syncing': 'bool',
+        'exist_server': 'bool'
     }
 
     attribute_map = {
@@ -51,17 +52,18 @@ class PostTask:
         'project_id': 'project_id',
         'vm_template_id': 'vm_template_id',
         'use_public_ip': 'use_public_ip',
-        'syncing': 'syncing'
+        'syncing': 'syncing',
+        'exist_server': 'exist_server'
     }
 
-    def __init__(self, name=None, type=None, start_target_server=None, os_type=None, source_server=None, target_server=None, migration_ip=None, region_name=None, region_id=None, project_name=None, project_id=None, vm_template_id=None, use_public_ip=None, syncing=None):
+    def __init__(self, name=None, type=None, start_target_server=None, os_type=None, source_server=None, target_server=None, migration_ip=None, region_name=None, region_id=None, project_name=None, project_id=None, vm_template_id=None, use_public_ip=None, syncing=None, exist_server=None):
         """PostTask
 
         The model defined in huaweicloud sdk
 
         :param name: 任务名称
         :type name: str
-        :param type: 任务类型
+        :param type: 任务类型 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
         :type type: str
         :param start_target_server: 迁移后是否启动目的端虚拟机
         :type start_target_server: bool
@@ -71,15 +73,15 @@ class PostTask:
         :type source_server: :class:`huaweicloudsdksms.v3.SourceServerByTask`
         :param target_server: 
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServerByTask`
-        :param migration_ip: 迁移ip，如果是自动创建虚拟机，不需要此参数
+        :param migration_ip: 迁移IP，如果是自动创建虚拟机，不需要此参数
         :type migration_ip: str
         :param region_name: region的名称
         :type region_name: str
-        :param region_id: region id
+        :param region_id: region ID
         :type region_id: str
         :param project_name: 项目名称
         :type project_name: str
-        :param project_id: 项目id
+        :param project_id: 项目ID
         :type project_id: str
         :param vm_template_id: 自动创建虚拟机使用模板
         :type vm_template_id: str
@@ -87,6 +89,8 @@ class PostTask:
         :type use_public_ip: bool
         :param syncing: 复制或者同步后是否会继续持续同步，不添加则默认是false
         :type syncing: bool
+        :param exist_server: 是否存在服务，如果存在，则创建任务
+        :type exist_server: bool
         """
         
         
@@ -105,6 +109,7 @@ class PostTask:
         self._vm_template_id = None
         self._use_public_ip = None
         self._syncing = None
+        self._exist_server = None
         self.discriminator = None
 
         self.name = name
@@ -126,6 +131,8 @@ class PostTask:
             self.use_public_ip = use_public_ip
         if syncing is not None:
             self.syncing = syncing
+        if exist_server is not None:
+            self.exist_server = exist_server
 
     @property
     def name(self):
@@ -153,7 +160,7 @@ class PostTask:
     def type(self):
         """Gets the type of this PostTask.
 
-        任务类型
+        任务类型 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
 
         :return: The type of this PostTask.
         :rtype: str
@@ -164,7 +171,7 @@ class PostTask:
     def type(self, type):
         """Sets the type of this PostTask.
 
-        任务类型
+        任务类型 MIGRATE_FILE:文件级迁移 MIGRATE_BLOCK:块级迁移 
 
         :param type: The type of this PostTask.
         :type type: str
@@ -259,7 +266,7 @@ class PostTask:
     def migration_ip(self):
         """Gets the migration_ip of this PostTask.
 
-        迁移ip，如果是自动创建虚拟机，不需要此参数
+        迁移IP，如果是自动创建虚拟机，不需要此参数
 
         :return: The migration_ip of this PostTask.
         :rtype: str
@@ -270,7 +277,7 @@ class PostTask:
     def migration_ip(self, migration_ip):
         """Sets the migration_ip of this PostTask.
 
-        迁移ip，如果是自动创建虚拟机，不需要此参数
+        迁移IP，如果是自动创建虚拟机，不需要此参数
 
         :param migration_ip: The migration_ip of this PostTask.
         :type migration_ip: str
@@ -303,7 +310,7 @@ class PostTask:
     def region_id(self):
         """Gets the region_id of this PostTask.
 
-        region id
+        region ID
 
         :return: The region_id of this PostTask.
         :rtype: str
@@ -314,7 +321,7 @@ class PostTask:
     def region_id(self, region_id):
         """Sets the region_id of this PostTask.
 
-        region id
+        region ID
 
         :param region_id: The region_id of this PostTask.
         :type region_id: str
@@ -347,7 +354,7 @@ class PostTask:
     def project_id(self):
         """Gets the project_id of this PostTask.
 
-        项目id
+        项目ID
 
         :return: The project_id of this PostTask.
         :rtype: str
@@ -358,7 +365,7 @@ class PostTask:
     def project_id(self, project_id):
         """Sets the project_id of this PostTask.
 
-        项目id
+        项目ID
 
         :param project_id: The project_id of this PostTask.
         :type project_id: str
@@ -430,6 +437,28 @@ class PostTask:
         :type syncing: bool
         """
         self._syncing = syncing
+
+    @property
+    def exist_server(self):
+        """Gets the exist_server of this PostTask.
+
+        是否存在服务，如果存在，则创建任务
+
+        :return: The exist_server of this PostTask.
+        :rtype: bool
+        """
+        return self._exist_server
+
+    @exist_server.setter
+    def exist_server(self, exist_server):
+        """Sets the exist_server of this PostTask.
+
+        是否存在服务，如果存在，则创建任务
+
+        :param exist_server: The exist_server of this PostTask.
+        :type exist_server: bool
+        """
+        self._exist_server = exist_server
 
     def to_dict(self):
         """Returns the model properties as a dict"""

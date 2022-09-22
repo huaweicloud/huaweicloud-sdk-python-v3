@@ -39,13 +39,13 @@ class RestChairViewReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param view_type: 主持人观看的画面类型。 - 0: 主持人轮询。 - 1: 主持人观看多画面。 - 2: 主持人选看会场。
+        :param view_type: 主持人观看的画面类型。 - 0: 主持人轮询 - 1: 主持人观看多画面 - 2: 主持人选看会场
         :type view_type: int
         :param participant_id: 被主持人选看的会场。 当为主持人选看会场时为必填参数。
         :type participant_id: str
-        :param switch_time: 主持人轮询时，必填字段。 表示轮询间隔，单位：秒。 范围:[10-120]，默认值：30
+        :param switch_time: 轮询间隔，单位：秒。 主持人轮询时，必填字段。 范围:[10-120]，默认值：10。
         :type switch_time: int
-        :param status: 主持人轮询时，必填字段。 - 0: 停止轮询。 - 1: 启动轮询。
+        :param status: 启动/停止轮询。 主持人轮询时，必填字段。 - 0: 停止轮询 - 1: 启动轮询
         :type status: int
         """
         
@@ -69,7 +69,7 @@ class RestChairViewReqBody:
     def view_type(self):
         """Gets the view_type of this RestChairViewReqBody.
 
-        主持人观看的画面类型。 - 0: 主持人轮询。 - 1: 主持人观看多画面。 - 2: 主持人选看会场。
+        主持人观看的画面类型。 - 0: 主持人轮询 - 1: 主持人观看多画面 - 2: 主持人选看会场
 
         :return: The view_type of this RestChairViewReqBody.
         :rtype: int
@@ -80,7 +80,7 @@ class RestChairViewReqBody:
     def view_type(self, view_type):
         """Sets the view_type of this RestChairViewReqBody.
 
-        主持人观看的画面类型。 - 0: 主持人轮询。 - 1: 主持人观看多画面。 - 2: 主持人选看会场。
+        主持人观看的画面类型。 - 0: 主持人轮询 - 1: 主持人观看多画面 - 2: 主持人选看会场
 
         :param view_type: The view_type of this RestChairViewReqBody.
         :type view_type: int
@@ -113,7 +113,7 @@ class RestChairViewReqBody:
     def switch_time(self):
         """Gets the switch_time of this RestChairViewReqBody.
 
-        主持人轮询时，必填字段。 表示轮询间隔，单位：秒。 范围:[10-120]，默认值：30
+        轮询间隔，单位：秒。 主持人轮询时，必填字段。 范围:[10-120]，默认值：10。
 
         :return: The switch_time of this RestChairViewReqBody.
         :rtype: int
@@ -124,7 +124,7 @@ class RestChairViewReqBody:
     def switch_time(self, switch_time):
         """Sets the switch_time of this RestChairViewReqBody.
 
-        主持人轮询时，必填字段。 表示轮询间隔，单位：秒。 范围:[10-120]，默认值：30
+        轮询间隔，单位：秒。 主持人轮询时，必填字段。 范围:[10-120]，默认值：10。
 
         :param switch_time: The switch_time of this RestChairViewReqBody.
         :type switch_time: int
@@ -135,7 +135,7 @@ class RestChairViewReqBody:
     def status(self):
         """Gets the status of this RestChairViewReqBody.
 
-        主持人轮询时，必填字段。 - 0: 停止轮询。 - 1: 启动轮询。
+        启动/停止轮询。 主持人轮询时，必填字段。 - 0: 停止轮询 - 1: 启动轮询
 
         :return: The status of this RestChairViewReqBody.
         :rtype: int
@@ -146,7 +146,7 @@ class RestChairViewReqBody:
     def status(self, status):
         """Sets the status of this RestChairViewReqBody.
 
-        主持人轮询时，必填字段。 - 0: 停止轮询。 - 1: 启动轮询。
+        启动/停止轮询。 主持人轮询时，必填字段。 - 0: 停止轮询 - 1: 启动轮询
 
         :param status: The status of this RestChairViewReqBody.
         :type status: int

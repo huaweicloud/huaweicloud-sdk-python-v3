@@ -45,19 +45,19 @@ class VisionActiveCodeDTO:
 
         The model defined in huaweicloud sdk
 
-        :param dev_type: 终端类型 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):电子白板 
+        :param dev_type: 终端类型。 - idea-hub：智能协作大屏 - huawei-vision：智慧屏TV - welink-desktop(iwb)：SmartRooms会议版 - smart-rooms：SmartRooms完整版 
         :type dev_type: str
-        :param dept_code: 部门编号，若不携带则默认根部门
+        :param dept_code: 部门编码，若不携带则默认根部门。
         :type dept_code: str
-        :param dev_name: 终端的名称
+        :param dev_name: 终端的名称。
         :type dev_name: str
-        :param description: 描述信息
+        :param description: 描述信息。
         :type description: str
         :param sms_number: 号码信息，如果为手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$) 
         :type sms_number: str
-        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
-        :param email_addr: 邮箱地址
+        :param email_addr: 邮箱地址。 &gt; 如无中国大陆手机号，则邮箱必填。 
         :type email_addr: str
         """
         
@@ -89,7 +89,7 @@ class VisionActiveCodeDTO:
     def dev_type(self):
         """Gets the dev_type of this VisionActiveCodeDTO.
 
-        终端类型 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):电子白板 
+        终端类型。 - idea-hub：智能协作大屏 - huawei-vision：智慧屏TV - welink-desktop(iwb)：SmartRooms会议版 - smart-rooms：SmartRooms完整版 
 
         :return: The dev_type of this VisionActiveCodeDTO.
         :rtype: str
@@ -100,7 +100,7 @@ class VisionActiveCodeDTO:
     def dev_type(self, dev_type):
         """Sets the dev_type of this VisionActiveCodeDTO.
 
-        终端类型 - idea-hub:智能协作大屏 - huawei-vision:智慧屏TV - welink-desktop(iwb):电子白板 
+        终端类型。 - idea-hub：智能协作大屏 - huawei-vision：智慧屏TV - welink-desktop(iwb)：SmartRooms会议版 - smart-rooms：SmartRooms完整版 
 
         :param dev_type: The dev_type of this VisionActiveCodeDTO.
         :type dev_type: str
@@ -111,7 +111,7 @@ class VisionActiveCodeDTO:
     def dept_code(self):
         """Gets the dept_code of this VisionActiveCodeDTO.
 
-        部门编号，若不携带则默认根部门
+        部门编码，若不携带则默认根部门。
 
         :return: The dept_code of this VisionActiveCodeDTO.
         :rtype: str
@@ -122,7 +122,7 @@ class VisionActiveCodeDTO:
     def dept_code(self, dept_code):
         """Sets the dept_code of this VisionActiveCodeDTO.
 
-        部门编号，若不携带则默认根部门
+        部门编码，若不携带则默认根部门。
 
         :param dept_code: The dept_code of this VisionActiveCodeDTO.
         :type dept_code: str
@@ -133,7 +133,7 @@ class VisionActiveCodeDTO:
     def dev_name(self):
         """Gets the dev_name of this VisionActiveCodeDTO.
 
-        终端的名称
+        终端的名称。
 
         :return: The dev_name of this VisionActiveCodeDTO.
         :rtype: str
@@ -144,7 +144,7 @@ class VisionActiveCodeDTO:
     def dev_name(self, dev_name):
         """Sets the dev_name of this VisionActiveCodeDTO.
 
-        终端的名称
+        终端的名称。
 
         :param dev_name: The dev_name of this VisionActiveCodeDTO.
         :type dev_name: str
@@ -155,7 +155,7 @@ class VisionActiveCodeDTO:
     def description(self):
         """Gets the description of this VisionActiveCodeDTO.
 
-        描述信息
+        描述信息。
 
         :return: The description of this VisionActiveCodeDTO.
         :rtype: str
@@ -166,7 +166,7 @@ class VisionActiveCodeDTO:
     def description(self, description):
         """Sets the description of this VisionActiveCodeDTO.
 
-        描述信息
+        描述信息。
 
         :param description: The description of this VisionActiveCodeDTO.
         :type description: str
@@ -199,7 +199,7 @@ class VisionActiveCodeDTO:
     def country(self):
         """Gets the country of this VisionActiveCodeDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this VisionActiveCodeDTO.
         :rtype: str
@@ -210,7 +210,7 @@ class VisionActiveCodeDTO:
     def country(self, country):
         """Sets the country of this VisionActiveCodeDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this VisionActiveCodeDTO.
         :type country: str
@@ -221,7 +221,7 @@ class VisionActiveCodeDTO:
     def email_addr(self):
         """Gets the email_addr of this VisionActiveCodeDTO.
 
-        邮箱地址
+        邮箱地址。 > 如无中国大陆手机号，则邮箱必填。 
 
         :return: The email_addr of this VisionActiveCodeDTO.
         :rtype: str
@@ -232,7 +232,7 @@ class VisionActiveCodeDTO:
     def email_addr(self, email_addr):
         """Sets the email_addr of this VisionActiveCodeDTO.
 
-        邮箱地址
+        邮箱地址。 > 如无中国大陆手机号，则邮箱必填。 
 
         :param email_addr: The email_addr of this VisionActiveCodeDTO.
         :type email_addr: str

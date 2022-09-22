@@ -41,7 +41,7 @@ class PutVolumeGroups:
 
         :param logical_volumes: lv信息
         :type logical_volumes: list[:class:`huaweicloudsdksms.v3.PutLogicalVolume`]
-        :param id: 卷组id
+        :param id: 卷组ID
         :type id: str
         :param need_migration: 是否迁移
         :type need_migration: bool
@@ -91,7 +91,7 @@ class PutVolumeGroups:
     def id(self):
         """Gets the id of this PutVolumeGroups.
 
-        卷组id
+        卷组ID
 
         :return: The id of this PutVolumeGroups.
         :rtype: str
@@ -102,7 +102,7 @@ class PutVolumeGroups:
     def id(self, id):
         """Sets the id of this PutVolumeGroups.
 
-        卷组id
+        卷组ID
 
         :param id: The id of this PutVolumeGroups.
         :type id: str

@@ -35,7 +35,7 @@ class UpdateCommandResultRequest:
 
         The model defined in huaweicloud sdk
 
-        :param server_id: 上报命令执行结果的命令所对应的服务端id
+        :param server_id: 上报命令执行结果的命令所对应的服务端ID
         :type server_id: str
         :param body: Body of the UpdateCommandResultRequest
         :type body: :class:`huaweicloudsdksms.v3.CommandBody`
@@ -55,7 +55,7 @@ class UpdateCommandResultRequest:
     def server_id(self):
         """Gets the server_id of this UpdateCommandResultRequest.
 
-        上报命令执行结果的命令所对应的服务端id
+        上报命令执行结果的命令所对应的服务端ID
 
         :return: The server_id of this UpdateCommandResultRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateCommandResultRequest:
     def server_id(self, server_id):
         """Sets the server_id of this UpdateCommandResultRequest.
 
-        上报命令执行结果的命令所对应的服务端id
+        上报命令执行结果的命令所对应的服务端ID
 
         :param server_id: The server_id of this UpdateCommandResultRequest.
         :type server_id: str

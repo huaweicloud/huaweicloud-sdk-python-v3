@@ -35,9 +35,9 @@ class CheckVerifyCodeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param token: 访问token字符串
+        :param token: 访问token字符串。
         :type token: str
-        :param expire: 过期时间，单位：秒
+        :param expire: 过期时间，单位：秒。
         :type expire: int
         """
         
@@ -56,7 +56,7 @@ class CheckVerifyCodeResponse(SdkResponse):
     def token(self):
         """Gets the token of this CheckVerifyCodeResponse.
 
-        访问token字符串
+        访问token字符串。
 
         :return: The token of this CheckVerifyCodeResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class CheckVerifyCodeResponse(SdkResponse):
     def token(self, token):
         """Sets the token of this CheckVerifyCodeResponse.
 
-        访问token字符串
+        访问token字符串。
 
         :param token: The token of this CheckVerifyCodeResponse.
         :type token: str
@@ -78,7 +78,7 @@ class CheckVerifyCodeResponse(SdkResponse):
     def expire(self):
         """Gets the expire of this CheckVerifyCodeResponse.
 
-        过期时间，单位：秒
+        过期时间，单位：秒。
 
         :return: The expire of this CheckVerifyCodeResponse.
         :rtype: int
@@ -89,7 +89,7 @@ class CheckVerifyCodeResponse(SdkResponse):
     def expire(self, expire):
         """Sets the expire of this CheckVerifyCodeResponse.
 
-        过期时间，单位：秒
+        过期时间，单位：秒。
 
         :param expire: The expire of this CheckVerifyCodeResponse.
         :type expire: int

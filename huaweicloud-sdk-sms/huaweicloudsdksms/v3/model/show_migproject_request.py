@@ -33,7 +33,7 @@ class ShowMigprojectRequest:
 
         The model defined in huaweicloud sdk
 
-        :param mig_project_id: 迁移项目id
+        :param mig_project_id: 迁移项目ID
         :type mig_project_id: str
         """
         
@@ -48,7 +48,7 @@ class ShowMigprojectRequest:
     def mig_project_id(self):
         """Gets the mig_project_id of this ShowMigprojectRequest.
 
-        迁移项目id
+        迁移项目ID
 
         :return: The mig_project_id of this ShowMigprojectRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ShowMigprojectRequest:
     def mig_project_id(self, mig_project_id):
         """Sets the mig_project_id of this ShowMigprojectRequest.
 
-        迁移项目id
+        迁移项目ID
 
         :param mig_project_id: The mig_project_id of this ShowMigprojectRequest.
         :type mig_project_id: str

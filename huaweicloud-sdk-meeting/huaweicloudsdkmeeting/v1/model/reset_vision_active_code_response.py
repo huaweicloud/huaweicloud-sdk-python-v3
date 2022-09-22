@@ -33,7 +33,7 @@ class ResetVisionActiveCodeResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param active_code: 激活码
+        :param active_code: 激活码。
         :type active_code: str
         """
         
@@ -49,7 +49,7 @@ class ResetVisionActiveCodeResponse(SdkResponse):
     def active_code(self):
         """Gets the active_code of this ResetVisionActiveCodeResponse.
 
-        激活码
+        激活码。
 
         :return: The active_code of this ResetVisionActiveCodeResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class ResetVisionActiveCodeResponse(SdkResponse):
     def active_code(self, active_code):
         """Sets the active_code of this ResetVisionActiveCodeResponse.
 
-        激活码
+        激活码。
 
         :param active_code: The active_code of this ResetVisionActiveCodeResponse.
         :type active_code: str

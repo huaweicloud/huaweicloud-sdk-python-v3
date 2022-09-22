@@ -33,7 +33,7 @@ class ShowRegionInfoOfMeetingRequest:
 
         The model defined in huaweicloud sdk
 
-        :param conference_id: 会议ID。
+        :param conference_id: 会议ID。 &gt; 创建会议时返回的conferenceID。不是vmrConferenceID。 
         :type conference_id: str
         """
         
@@ -48,7 +48,7 @@ class ShowRegionInfoOfMeetingRequest:
     def conference_id(self):
         """Gets the conference_id of this ShowRegionInfoOfMeetingRequest.
 
-        会议ID。
+        会议ID。 > 创建会议时返回的conferenceID。不是vmrConferenceID。 
 
         :return: The conference_id of this ShowRegionInfoOfMeetingRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ShowRegionInfoOfMeetingRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this ShowRegionInfoOfMeetingRequest.
 
-        会议ID。
+        会议ID。 > 创建会议时返回的conferenceID。不是vmrConferenceID。 
 
         :param conference_id: The conference_id of this ShowRegionInfoOfMeetingRequest.
         :type conference_id: str

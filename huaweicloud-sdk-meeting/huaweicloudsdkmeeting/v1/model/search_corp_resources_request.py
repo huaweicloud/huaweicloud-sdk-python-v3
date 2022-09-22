@@ -55,27 +55,27 @@ class SearchCorpResourcesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
         :type offset: int
-        :param limit: 查询数量 默认值：0 
+        :param limit: 查询数量。 默认值：10。 
         :type limit: int
         :param search_key: 搜索条件，支持resourceId模糊查询。
         :type search_key: str
-        :param start_expire_date: 查询过期时间在该时间戳之后的资源项
+        :param start_expire_date: 查询过期时间在该时间戳之后的资源项。
         :type start_expire_date: int
-        :param end_expire_date: 查询过期时间在该时间戳之前的资源项
+        :param end_expire_date: 查询过期时间在该时间戳之前的资源项。
         :type end_expire_date: int
-        :param type: 资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏 说明：查询网络研讨会资源时type字段需上送VMR 
+        :param type: 资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏 &gt; 查询网络研讨会资源时type字段为VMR。 
         :type type: str
-        :param vmr_mode: VMR模式，type为vmr时传递该参数 * 0：个人会议ID * 1：云会议室 * 2：网络研讨会 
+        :param vmr_mode: VMR模式，type为VMR时传递该参数 * 0：个人会议ID * 1：云会议室 * 2：网络研讨会 
         :type vmr_mode: int
-        :param type_id: 资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id
+        :param type_id: 资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id。
         :type type_id: str
-        :param order_id: 订单Id
+        :param order_id: 订单Id。
         :type order_id: str
         :param status: 订单状态。 - 0：正常 - 1：到期 - 2：停用 
         :type status: int
@@ -126,7 +126,7 @@ class SearchCorpResourcesRequest:
     def x_request_id(self):
         """Gets the x_request_id of this SearchCorpResourcesRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this SearchCorpResourcesRequest.
         :rtype: str
@@ -137,7 +137,7 @@ class SearchCorpResourcesRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this SearchCorpResourcesRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this SearchCorpResourcesRequest.
         :type x_request_id: str
@@ -148,7 +148,7 @@ class SearchCorpResourcesRequest:
     def accept_language(self):
         """Gets the accept_language of this SearchCorpResourcesRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this SearchCorpResourcesRequest.
         :rtype: str
@@ -159,7 +159,7 @@ class SearchCorpResourcesRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this SearchCorpResourcesRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this SearchCorpResourcesRequest.
         :type accept_language: str
@@ -170,7 +170,7 @@ class SearchCorpResourcesRequest:
     def offset(self):
         """Gets the offset of this SearchCorpResourcesRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
         :return: The offset of this SearchCorpResourcesRequest.
         :rtype: int
@@ -181,7 +181,7 @@ class SearchCorpResourcesRequest:
     def offset(self, offset):
         """Sets the offset of this SearchCorpResourcesRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
         :param offset: The offset of this SearchCorpResourcesRequest.
         :type offset: int
@@ -192,7 +192,7 @@ class SearchCorpResourcesRequest:
     def limit(self):
         """Gets the limit of this SearchCorpResourcesRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :return: The limit of this SearchCorpResourcesRequest.
         :rtype: int
@@ -203,7 +203,7 @@ class SearchCorpResourcesRequest:
     def limit(self, limit):
         """Sets the limit of this SearchCorpResourcesRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :param limit: The limit of this SearchCorpResourcesRequest.
         :type limit: int
@@ -236,7 +236,7 @@ class SearchCorpResourcesRequest:
     def start_expire_date(self):
         """Gets the start_expire_date of this SearchCorpResourcesRequest.
 
-        查询过期时间在该时间戳之后的资源项
+        查询过期时间在该时间戳之后的资源项。
 
         :return: The start_expire_date of this SearchCorpResourcesRequest.
         :rtype: int
@@ -247,7 +247,7 @@ class SearchCorpResourcesRequest:
     def start_expire_date(self, start_expire_date):
         """Sets the start_expire_date of this SearchCorpResourcesRequest.
 
-        查询过期时间在该时间戳之后的资源项
+        查询过期时间在该时间戳之后的资源项。
 
         :param start_expire_date: The start_expire_date of this SearchCorpResourcesRequest.
         :type start_expire_date: int
@@ -258,7 +258,7 @@ class SearchCorpResourcesRequest:
     def end_expire_date(self):
         """Gets the end_expire_date of this SearchCorpResourcesRequest.
 
-        查询过期时间在该时间戳之前的资源项
+        查询过期时间在该时间戳之前的资源项。
 
         :return: The end_expire_date of this SearchCorpResourcesRequest.
         :rtype: int
@@ -269,7 +269,7 @@ class SearchCorpResourcesRequest:
     def end_expire_date(self, end_expire_date):
         """Sets the end_expire_date of this SearchCorpResourcesRequest.
 
-        查询过期时间在该时间戳之前的资源项
+        查询过期时间在该时间戳之前的资源项。
 
         :param end_expire_date: The end_expire_date of this SearchCorpResourcesRequest.
         :type end_expire_date: int
@@ -280,7 +280,7 @@ class SearchCorpResourcesRequest:
     def type(self):
         """Gets the type of this SearchCorpResourcesRequest.
 
-        资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏 说明：查询网络研讨会资源时type字段需上送VMR 
+        资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏 > 查询网络研讨会资源时type字段为VMR。 
 
         :return: The type of this SearchCorpResourcesRequest.
         :rtype: str
@@ -291,7 +291,7 @@ class SearchCorpResourcesRequest:
     def type(self, type):
         """Sets the type of this SearchCorpResourcesRequest.
 
-        资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏 说明：查询网络研讨会资源时type字段需上送VMR 
+        资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏 > 查询网络研讨会资源时type字段为VMR。 
 
         :param type: The type of this SearchCorpResourcesRequest.
         :type type: str
@@ -302,7 +302,7 @@ class SearchCorpResourcesRequest:
     def vmr_mode(self):
         """Gets the vmr_mode of this SearchCorpResourcesRequest.
 
-        VMR模式，type为vmr时传递该参数 * 0：个人会议ID * 1：云会议室 * 2：网络研讨会 
+        VMR模式，type为VMR时传递该参数 * 0：个人会议ID * 1：云会议室 * 2：网络研讨会 
 
         :return: The vmr_mode of this SearchCorpResourcesRequest.
         :rtype: int
@@ -313,7 +313,7 @@ class SearchCorpResourcesRequest:
     def vmr_mode(self, vmr_mode):
         """Sets the vmr_mode of this SearchCorpResourcesRequest.
 
-        VMR模式，type为vmr时传递该参数 * 0：个人会议ID * 1：云会议室 * 2：网络研讨会 
+        VMR模式，type为VMR时传递该参数 * 0：个人会议ID * 1：云会议室 * 2：网络研讨会 
 
         :param vmr_mode: The vmr_mode of this SearchCorpResourcesRequest.
         :type vmr_mode: int
@@ -324,7 +324,7 @@ class SearchCorpResourcesRequest:
     def type_id(self):
         """Gets the type_id of this SearchCorpResourcesRequest.
 
-        资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id
+        资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id。
 
         :return: The type_id of this SearchCorpResourcesRequest.
         :rtype: str
@@ -335,7 +335,7 @@ class SearchCorpResourcesRequest:
     def type_id(self, type_id):
         """Sets the type_id of this SearchCorpResourcesRequest.
 
-        资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id
+        资源类型Id,若想搜索5方VMR时，需携带5方vmrpkg对应的id。
 
         :param type_id: The type_id of this SearchCorpResourcesRequest.
         :type type_id: str
@@ -346,7 +346,7 @@ class SearchCorpResourcesRequest:
     def order_id(self):
         """Gets the order_id of this SearchCorpResourcesRequest.
 
-        订单Id
+        订单Id。
 
         :return: The order_id of this SearchCorpResourcesRequest.
         :rtype: str
@@ -357,7 +357,7 @@ class SearchCorpResourcesRequest:
     def order_id(self, order_id):
         """Sets the order_id of this SearchCorpResourcesRequest.
 
-        订单Id
+        订单Id。
 
         :param order_id: The order_id of this SearchCorpResourcesRequest.
         :type order_id: str

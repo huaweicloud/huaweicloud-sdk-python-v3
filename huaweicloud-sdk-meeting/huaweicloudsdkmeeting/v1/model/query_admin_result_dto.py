@@ -45,19 +45,19 @@ class QueryAdminResultDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 用户id
+        :param id: 用户UUID。
         :type id: str
-        :param account: 用户账号
+        :param account: 用户华为云会议帐号。
         :type account: str
-        :param name: 名称
+        :param name: 名称。
         :type name: str
-        :param admin_type: 管理员类型 - 0：默认管理员 - 1：普通管理员
+        :param admin_type: 管理员类型。 - 0：默认管理员 - 1：普通管理员
         :type admin_type: int
-        :param email: 邮箱
+        :param email: 邮箱地址。
         :type email: str
-        :param phone: 联系电话
+        :param phone: 联系电话。
         :type phone: str
-        :param country: 联系电话所属的国家
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
         """
         
@@ -91,7 +91,7 @@ class QueryAdminResultDTO:
     def id(self):
         """Gets the id of this QueryAdminResultDTO.
 
-        用户id
+        用户UUID。
 
         :return: The id of this QueryAdminResultDTO.
         :rtype: str
@@ -102,7 +102,7 @@ class QueryAdminResultDTO:
     def id(self, id):
         """Sets the id of this QueryAdminResultDTO.
 
-        用户id
+        用户UUID。
 
         :param id: The id of this QueryAdminResultDTO.
         :type id: str
@@ -113,7 +113,7 @@ class QueryAdminResultDTO:
     def account(self):
         """Gets the account of this QueryAdminResultDTO.
 
-        用户账号
+        用户华为云会议帐号。
 
         :return: The account of this QueryAdminResultDTO.
         :rtype: str
@@ -124,7 +124,7 @@ class QueryAdminResultDTO:
     def account(self, account):
         """Sets the account of this QueryAdminResultDTO.
 
-        用户账号
+        用户华为云会议帐号。
 
         :param account: The account of this QueryAdminResultDTO.
         :type account: str
@@ -135,7 +135,7 @@ class QueryAdminResultDTO:
     def name(self):
         """Gets the name of this QueryAdminResultDTO.
 
-        名称
+        名称。
 
         :return: The name of this QueryAdminResultDTO.
         :rtype: str
@@ -146,7 +146,7 @@ class QueryAdminResultDTO:
     def name(self, name):
         """Sets the name of this QueryAdminResultDTO.
 
-        名称
+        名称。
 
         :param name: The name of this QueryAdminResultDTO.
         :type name: str
@@ -157,7 +157,7 @@ class QueryAdminResultDTO:
     def admin_type(self):
         """Gets the admin_type of this QueryAdminResultDTO.
 
-        管理员类型 - 0：默认管理员 - 1：普通管理员
+        管理员类型。 - 0：默认管理员 - 1：普通管理员
 
         :return: The admin_type of this QueryAdminResultDTO.
         :rtype: int
@@ -168,7 +168,7 @@ class QueryAdminResultDTO:
     def admin_type(self, admin_type):
         """Sets the admin_type of this QueryAdminResultDTO.
 
-        管理员类型 - 0：默认管理员 - 1：普通管理员
+        管理员类型。 - 0：默认管理员 - 1：普通管理员
 
         :param admin_type: The admin_type of this QueryAdminResultDTO.
         :type admin_type: int
@@ -179,7 +179,7 @@ class QueryAdminResultDTO:
     def email(self):
         """Gets the email of this QueryAdminResultDTO.
 
-        邮箱
+        邮箱地址。
 
         :return: The email of this QueryAdminResultDTO.
         :rtype: str
@@ -190,7 +190,7 @@ class QueryAdminResultDTO:
     def email(self, email):
         """Sets the email of this QueryAdminResultDTO.
 
-        邮箱
+        邮箱地址。
 
         :param email: The email of this QueryAdminResultDTO.
         :type email: str
@@ -201,7 +201,7 @@ class QueryAdminResultDTO:
     def phone(self):
         """Gets the phone of this QueryAdminResultDTO.
 
-        联系电话
+        联系电话。
 
         :return: The phone of this QueryAdminResultDTO.
         :rtype: str
@@ -212,7 +212,7 @@ class QueryAdminResultDTO:
     def phone(self, phone):
         """Sets the phone of this QueryAdminResultDTO.
 
-        联系电话
+        联系电话。
 
         :param phone: The phone of this QueryAdminResultDTO.
         :type phone: str
@@ -223,7 +223,7 @@ class QueryAdminResultDTO:
     def country(self):
         """Gets the country of this QueryAdminResultDTO.
 
-        联系电话所属的国家
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this QueryAdminResultDTO.
         :rtype: str
@@ -234,7 +234,7 @@ class QueryAdminResultDTO:
     def country(self, country):
         """Sets the country of this QueryAdminResultDTO.
 
-        联系电话所属的国家
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this QueryAdminResultDTO.
         :type country: str

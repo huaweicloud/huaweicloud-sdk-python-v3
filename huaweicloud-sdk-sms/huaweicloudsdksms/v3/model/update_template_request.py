@@ -35,7 +35,7 @@ class UpdateTemplateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 需要修改信息的模板的id
+        :param id: 需要修改信息的模板的ID
         :type id: str
         :param body: Body of the UpdateTemplateRequest
         :type body: :class:`huaweicloudsdksms.v3.UpdateTemplateReq`
@@ -55,7 +55,7 @@ class UpdateTemplateRequest:
     def id(self):
         """Gets the id of this UpdateTemplateRequest.
 
-        需要修改信息的模板的id
+        需要修改信息的模板的ID
 
         :return: The id of this UpdateTemplateRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateTemplateRequest:
     def id(self, id):
         """Sets the id of this UpdateTemplateRequest.
 
-        需要修改信息的模板的id
+        需要修改信息的模板的ID
 
         :param id: The id of this UpdateTemplateRequest.
         :type id: str

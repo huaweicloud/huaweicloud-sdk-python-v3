@@ -39,13 +39,13 @@ class SearchMeetingFileListResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 页面起始页，从0开始
+        :param offset: 页面起始页，从0开始。
         :type offset: int
         :param limit: 每页显示的条目数量。 默认值：10。 
         :type limit: int
         :param count: 总数量。
         :type count: int
-        :param data: IdeaHub、终端“查看会议纪要列表”响应
+        :param data: 会议纪要列表。
         :type data: list[:class:`huaweicloudsdkmeeting.v1.ListMeetingFileResponseDTO`]
         """
         
@@ -70,7 +70,7 @@ class SearchMeetingFileListResponse(SdkResponse):
     def offset(self):
         """Gets the offset of this SearchMeetingFileListResponse.
 
-        页面起始页，从0开始
+        页面起始页，从0开始。
 
         :return: The offset of this SearchMeetingFileListResponse.
         :rtype: int
@@ -81,7 +81,7 @@ class SearchMeetingFileListResponse(SdkResponse):
     def offset(self, offset):
         """Sets the offset of this SearchMeetingFileListResponse.
 
-        页面起始页，从0开始
+        页面起始页，从0开始。
 
         :param offset: The offset of this SearchMeetingFileListResponse.
         :type offset: int
@@ -136,7 +136,7 @@ class SearchMeetingFileListResponse(SdkResponse):
     def data(self):
         """Gets the data of this SearchMeetingFileListResponse.
 
-        IdeaHub、终端“查看会议纪要列表”响应
+        会议纪要列表。
 
         :return: The data of this SearchMeetingFileListResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.ListMeetingFileResponseDTO`]
@@ -147,7 +147,7 @@ class SearchMeetingFileListResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this SearchMeetingFileListResponse.
 
-        IdeaHub、终端“查看会议纪要列表”响应
+        会议纪要列表。
 
         :param data: The data of this SearchMeetingFileListResponse.
         :type data: list[:class:`huaweicloudsdkmeeting.v1.ListMeetingFileResponseDTO`]

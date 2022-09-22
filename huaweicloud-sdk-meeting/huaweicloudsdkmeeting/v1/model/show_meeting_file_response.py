@@ -61,35 +61,35 @@ class ShowMeetingFileResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param file_code: 会议纪要文件码
+        :param file_code: 会议纪要文件码。
         :type file_code: str
-        :param topic: 文件主题
+        :param topic: 文件主题。
         :type topic: str
-        :param file_id: 文件Id
+        :param file_id: 文件Id。
         :type file_id: str
-        :param file_name: 文件名
+        :param file_name: 文件名。
         :type file_name: str
-        :param file_size: 文件大小，单位字节
+        :param file_size: 文件大小，单位字节。
         :type file_size: int
-        :param thumbnail_file_id: 缩略图文件Id
+        :param thumbnail_file_id: 缩略图文件Id。
         :type thumbnail_file_id: str
-        :param thumbnail_file_name: 缩略图文件名
+        :param thumbnail_file_name: 缩略图文件名。
         :type thumbnail_file_name: str
-        :param thumbnail_file_size: 缩略图文件大小，单位字节
+        :param thumbnail_file_size: 缩略图文件大小，单位字节。
         :type thumbnail_file_size: int
-        :param pdf_file_id: pdf文件Id
+        :param pdf_file_id: pdf文件Id。
         :type pdf_file_id: str
-        :param pdf_file_name: pdf文件名
+        :param pdf_file_name: pdf文件名。
         :type pdf_file_name: str
-        :param pdf_file_size: pdf文件大小，单位字节
+        :param pdf_file_size: pdf文件大小，单位字节。
         :type pdf_file_size: int
-        :param file_url: 文件url
+        :param file_url: 文件url。
         :type file_url: str
-        :param thumbnail_url: 缩略图文件url
+        :param thumbnail_url: 缩略图文件url。
         :type thumbnail_url: str
-        :param pdf_url: pdf文件url
+        :param pdf_url: pdf文件url。
         :type pdf_url: str
-        :param creation_timestamp: 文件创建时间戳
+        :param creation_timestamp: 文件创建时间戳。
         :type creation_timestamp: int
         """
         
@@ -147,7 +147,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def file_code(self):
         """Gets the file_code of this ShowMeetingFileResponse.
 
-        会议纪要文件码
+        会议纪要文件码。
 
         :return: The file_code of this ShowMeetingFileResponse.
         :rtype: str
@@ -158,7 +158,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def file_code(self, file_code):
         """Sets the file_code of this ShowMeetingFileResponse.
 
-        会议纪要文件码
+        会议纪要文件码。
 
         :param file_code: The file_code of this ShowMeetingFileResponse.
         :type file_code: str
@@ -169,7 +169,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def topic(self):
         """Gets the topic of this ShowMeetingFileResponse.
 
-        文件主题
+        文件主题。
 
         :return: The topic of this ShowMeetingFileResponse.
         :rtype: str
@@ -180,7 +180,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def topic(self, topic):
         """Sets the topic of this ShowMeetingFileResponse.
 
-        文件主题
+        文件主题。
 
         :param topic: The topic of this ShowMeetingFileResponse.
         :type topic: str
@@ -191,7 +191,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def file_id(self):
         """Gets the file_id of this ShowMeetingFileResponse.
 
-        文件Id
+        文件Id。
 
         :return: The file_id of this ShowMeetingFileResponse.
         :rtype: str
@@ -202,7 +202,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def file_id(self, file_id):
         """Sets the file_id of this ShowMeetingFileResponse.
 
-        文件Id
+        文件Id。
 
         :param file_id: The file_id of this ShowMeetingFileResponse.
         :type file_id: str
@@ -213,7 +213,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def file_name(self):
         """Gets the file_name of this ShowMeetingFileResponse.
 
-        文件名
+        文件名。
 
         :return: The file_name of this ShowMeetingFileResponse.
         :rtype: str
@@ -224,7 +224,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def file_name(self, file_name):
         """Sets the file_name of this ShowMeetingFileResponse.
 
-        文件名
+        文件名。
 
         :param file_name: The file_name of this ShowMeetingFileResponse.
         :type file_name: str
@@ -235,7 +235,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def file_size(self):
         """Gets the file_size of this ShowMeetingFileResponse.
 
-        文件大小，单位字节
+        文件大小，单位字节。
 
         :return: The file_size of this ShowMeetingFileResponse.
         :rtype: int
@@ -246,7 +246,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def file_size(self, file_size):
         """Sets the file_size of this ShowMeetingFileResponse.
 
-        文件大小，单位字节
+        文件大小，单位字节。
 
         :param file_size: The file_size of this ShowMeetingFileResponse.
         :type file_size: int
@@ -257,7 +257,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def thumbnail_file_id(self):
         """Gets the thumbnail_file_id of this ShowMeetingFileResponse.
 
-        缩略图文件Id
+        缩略图文件Id。
 
         :return: The thumbnail_file_id of this ShowMeetingFileResponse.
         :rtype: str
@@ -268,7 +268,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def thumbnail_file_id(self, thumbnail_file_id):
         """Sets the thumbnail_file_id of this ShowMeetingFileResponse.
 
-        缩略图文件Id
+        缩略图文件Id。
 
         :param thumbnail_file_id: The thumbnail_file_id of this ShowMeetingFileResponse.
         :type thumbnail_file_id: str
@@ -279,7 +279,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def thumbnail_file_name(self):
         """Gets the thumbnail_file_name of this ShowMeetingFileResponse.
 
-        缩略图文件名
+        缩略图文件名。
 
         :return: The thumbnail_file_name of this ShowMeetingFileResponse.
         :rtype: str
@@ -290,7 +290,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def thumbnail_file_name(self, thumbnail_file_name):
         """Sets the thumbnail_file_name of this ShowMeetingFileResponse.
 
-        缩略图文件名
+        缩略图文件名。
 
         :param thumbnail_file_name: The thumbnail_file_name of this ShowMeetingFileResponse.
         :type thumbnail_file_name: str
@@ -301,7 +301,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def thumbnail_file_size(self):
         """Gets the thumbnail_file_size of this ShowMeetingFileResponse.
 
-        缩略图文件大小，单位字节
+        缩略图文件大小，单位字节。
 
         :return: The thumbnail_file_size of this ShowMeetingFileResponse.
         :rtype: int
@@ -312,7 +312,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def thumbnail_file_size(self, thumbnail_file_size):
         """Sets the thumbnail_file_size of this ShowMeetingFileResponse.
 
-        缩略图文件大小，单位字节
+        缩略图文件大小，单位字节。
 
         :param thumbnail_file_size: The thumbnail_file_size of this ShowMeetingFileResponse.
         :type thumbnail_file_size: int
@@ -323,7 +323,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def pdf_file_id(self):
         """Gets the pdf_file_id of this ShowMeetingFileResponse.
 
-        pdf文件Id
+        pdf文件Id。
 
         :return: The pdf_file_id of this ShowMeetingFileResponse.
         :rtype: str
@@ -334,7 +334,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def pdf_file_id(self, pdf_file_id):
         """Sets the pdf_file_id of this ShowMeetingFileResponse.
 
-        pdf文件Id
+        pdf文件Id。
 
         :param pdf_file_id: The pdf_file_id of this ShowMeetingFileResponse.
         :type pdf_file_id: str
@@ -345,7 +345,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def pdf_file_name(self):
         """Gets the pdf_file_name of this ShowMeetingFileResponse.
 
-        pdf文件名
+        pdf文件名。
 
         :return: The pdf_file_name of this ShowMeetingFileResponse.
         :rtype: str
@@ -356,7 +356,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def pdf_file_name(self, pdf_file_name):
         """Sets the pdf_file_name of this ShowMeetingFileResponse.
 
-        pdf文件名
+        pdf文件名。
 
         :param pdf_file_name: The pdf_file_name of this ShowMeetingFileResponse.
         :type pdf_file_name: str
@@ -367,7 +367,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def pdf_file_size(self):
         """Gets the pdf_file_size of this ShowMeetingFileResponse.
 
-        pdf文件大小，单位字节
+        pdf文件大小，单位字节。
 
         :return: The pdf_file_size of this ShowMeetingFileResponse.
         :rtype: int
@@ -378,7 +378,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def pdf_file_size(self, pdf_file_size):
         """Sets the pdf_file_size of this ShowMeetingFileResponse.
 
-        pdf文件大小，单位字节
+        pdf文件大小，单位字节。
 
         :param pdf_file_size: The pdf_file_size of this ShowMeetingFileResponse.
         :type pdf_file_size: int
@@ -389,7 +389,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def file_url(self):
         """Gets the file_url of this ShowMeetingFileResponse.
 
-        文件url
+        文件url。
 
         :return: The file_url of this ShowMeetingFileResponse.
         :rtype: str
@@ -400,7 +400,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def file_url(self, file_url):
         """Sets the file_url of this ShowMeetingFileResponse.
 
-        文件url
+        文件url。
 
         :param file_url: The file_url of this ShowMeetingFileResponse.
         :type file_url: str
@@ -411,7 +411,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def thumbnail_url(self):
         """Gets the thumbnail_url of this ShowMeetingFileResponse.
 
-        缩略图文件url
+        缩略图文件url。
 
         :return: The thumbnail_url of this ShowMeetingFileResponse.
         :rtype: str
@@ -422,7 +422,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def thumbnail_url(self, thumbnail_url):
         """Sets the thumbnail_url of this ShowMeetingFileResponse.
 
-        缩略图文件url
+        缩略图文件url。
 
         :param thumbnail_url: The thumbnail_url of this ShowMeetingFileResponse.
         :type thumbnail_url: str
@@ -433,7 +433,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def pdf_url(self):
         """Gets the pdf_url of this ShowMeetingFileResponse.
 
-        pdf文件url
+        pdf文件url。
 
         :return: The pdf_url of this ShowMeetingFileResponse.
         :rtype: str
@@ -444,7 +444,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def pdf_url(self, pdf_url):
         """Sets the pdf_url of this ShowMeetingFileResponse.
 
-        pdf文件url
+        pdf文件url。
 
         :param pdf_url: The pdf_url of this ShowMeetingFileResponse.
         :type pdf_url: str
@@ -455,7 +455,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def creation_timestamp(self):
         """Gets the creation_timestamp of this ShowMeetingFileResponse.
 
-        文件创建时间戳
+        文件创建时间戳。
 
         :return: The creation_timestamp of this ShowMeetingFileResponse.
         :rtype: int
@@ -466,7 +466,7 @@ class ShowMeetingFileResponse(SdkResponse):
     def creation_timestamp(self, creation_timestamp):
         """Sets the creation_timestamp of this ShowMeetingFileResponse.
 
-        文件创建时间戳
+        文件创建时间戳。
 
         :param creation_timestamp: The creation_timestamp of this ShowMeetingFileResponse.
         :type creation_timestamp: int

@@ -41,15 +41,15 @@ class ShowRecordingFileDownloadUrlsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param conf_uuid: 会议的ConfUUID(通过查询录制文件列表获取)。
+        :param conf_uuid: 会议UUID(通过[[查询录制列表](https://support.huaweicloud.com/api-meeting/meeting_21_0048.html)](tag:hws)[[查询录制列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0048.html)](tag:hk)获取)。
         :type conf_uuid: str
-        :param offset: 数据偏移记录。
+        :param offset: 查询偏移量。默认为0。
         :type offset: int
-        :param limit: 指定返回的记录数，最大500条。
+        :param limit: 查询数量。默认是20，最大500条。
         :type limit: int
-        :param x_authorization_type: 标识是否为第三方portal过来的请求。
+        :param x_authorization_type: 标识是否为第三方portal过来的请求。 &gt; 该参数将废弃，请勿使用。 
         :type x_authorization_type: str
-        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。 &gt; 该参数将废弃，请勿使用。 
         :type x_site_id: str
         """
         
@@ -76,7 +76,7 @@ class ShowRecordingFileDownloadUrlsRequest:
     def conf_uuid(self):
         """Gets the conf_uuid of this ShowRecordingFileDownloadUrlsRequest.
 
-        会议的ConfUUID(通过查询录制文件列表获取)。
+        会议UUID(通过[[查询录制列表](https://support.huaweicloud.com/api-meeting/meeting_21_0048.html)](tag:hws)[[查询录制列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0048.html)](tag:hk)获取)。
 
         :return: The conf_uuid of this ShowRecordingFileDownloadUrlsRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class ShowRecordingFileDownloadUrlsRequest:
     def conf_uuid(self, conf_uuid):
         """Sets the conf_uuid of this ShowRecordingFileDownloadUrlsRequest.
 
-        会议的ConfUUID(通过查询录制文件列表获取)。
+        会议UUID(通过[[查询录制列表](https://support.huaweicloud.com/api-meeting/meeting_21_0048.html)](tag:hws)[[查询录制列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0048.html)](tag:hk)获取)。
 
         :param conf_uuid: The conf_uuid of this ShowRecordingFileDownloadUrlsRequest.
         :type conf_uuid: str
@@ -98,7 +98,7 @@ class ShowRecordingFileDownloadUrlsRequest:
     def offset(self):
         """Gets the offset of this ShowRecordingFileDownloadUrlsRequest.
 
-        数据偏移记录。
+        查询偏移量。默认为0。
 
         :return: The offset of this ShowRecordingFileDownloadUrlsRequest.
         :rtype: int
@@ -109,7 +109,7 @@ class ShowRecordingFileDownloadUrlsRequest:
     def offset(self, offset):
         """Sets the offset of this ShowRecordingFileDownloadUrlsRequest.
 
-        数据偏移记录。
+        查询偏移量。默认为0。
 
         :param offset: The offset of this ShowRecordingFileDownloadUrlsRequest.
         :type offset: int
@@ -120,7 +120,7 @@ class ShowRecordingFileDownloadUrlsRequest:
     def limit(self):
         """Gets the limit of this ShowRecordingFileDownloadUrlsRequest.
 
-        指定返回的记录数，最大500条。
+        查询数量。默认是20，最大500条。
 
         :return: The limit of this ShowRecordingFileDownloadUrlsRequest.
         :rtype: int
@@ -131,7 +131,7 @@ class ShowRecordingFileDownloadUrlsRequest:
     def limit(self, limit):
         """Sets the limit of this ShowRecordingFileDownloadUrlsRequest.
 
-        指定返回的记录数，最大500条。
+        查询数量。默认是20，最大500条。
 
         :param limit: The limit of this ShowRecordingFileDownloadUrlsRequest.
         :type limit: int
@@ -142,7 +142,7 @@ class ShowRecordingFileDownloadUrlsRequest:
     def x_authorization_type(self):
         """Gets the x_authorization_type of this ShowRecordingFileDownloadUrlsRequest.
 
-        标识是否为第三方portal过来的请求。
+        标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
         :return: The x_authorization_type of this ShowRecordingFileDownloadUrlsRequest.
         :rtype: str
@@ -153,7 +153,7 @@ class ShowRecordingFileDownloadUrlsRequest:
     def x_authorization_type(self, x_authorization_type):
         """Sets the x_authorization_type of this ShowRecordingFileDownloadUrlsRequest.
 
-        标识是否为第三方portal过来的请求。
+        标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
         :param x_authorization_type: The x_authorization_type of this ShowRecordingFileDownloadUrlsRequest.
         :type x_authorization_type: str
@@ -164,7 +164,7 @@ class ShowRecordingFileDownloadUrlsRequest:
     def x_site_id(self):
         """Gets the x_site_id of this ShowRecordingFileDownloadUrlsRequest.
 
-        用于区分到哪个HCSO站点鉴权。
+        用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
         :return: The x_site_id of this ShowRecordingFileDownloadUrlsRequest.
         :rtype: str
@@ -175,7 +175,7 @@ class ShowRecordingFileDownloadUrlsRequest:
     def x_site_id(self, x_site_id):
         """Sets the x_site_id of this ShowRecordingFileDownloadUrlsRequest.
 
-        用于区分到哪个HCSO站点鉴权。
+        用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
         :param x_site_id: The x_site_id of this ShowRecordingFileDownloadUrlsRequest.
         :type x_site_id: str

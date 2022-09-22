@@ -22,15 +22,17 @@ class PublicIp:
 
     openapi_types = {
         'type': 'str',
-        'bandwidth_size': 'int'
+        'bandwidth_size': 'int',
+        'bandwidth_share_type': 'str'
     }
 
     attribute_map = {
         'type': 'type',
-        'bandwidth_size': 'bandwidth_size'
+        'bandwidth_size': 'bandwidth_size',
+        'bandwidth_share_type': 'bandwidth_share_type'
     }
 
-    def __init__(self, type=None, bandwidth_size=None):
+    def __init__(self, type=None, bandwidth_size=None, bandwidth_share_type=None):
         """PublicIp
 
         The model defined in huaweicloud sdk
@@ -39,16 +41,21 @@ class PublicIp:
         :type type: str
         :param bandwidth_size: 带宽大小，单位：Mbit/s  调整带宽时的最小单位会根据带宽范围不同存在差异。  小于等于300Mbit/s，默认最小单位为1Mbit/s。300Mbit/s~1000Mbit/s，默认最小单位为50Mbit/s。大于1000Mbit/s：默认最小单位为500Mbit/s。 
         :type bandwidth_size: int
+        :param bandwidth_share_type: 带宽共享类型
+        :type bandwidth_share_type: str
         """
         
         
 
         self._type = None
         self._bandwidth_size = None
+        self._bandwidth_share_type = None
         self.discriminator = None
 
         self.type = type
         self.bandwidth_size = bandwidth_size
+        if bandwidth_share_type is not None:
+            self.bandwidth_share_type = bandwidth_share_type
 
     @property
     def type(self):
@@ -93,6 +100,28 @@ class PublicIp:
         :type bandwidth_size: int
         """
         self._bandwidth_size = bandwidth_size
+
+    @property
+    def bandwidth_share_type(self):
+        """Gets the bandwidth_share_type of this PublicIp.
+
+        带宽共享类型
+
+        :return: The bandwidth_share_type of this PublicIp.
+        :rtype: str
+        """
+        return self._bandwidth_share_type
+
+    @bandwidth_share_type.setter
+    def bandwidth_share_type(self, bandwidth_share_type):
+        """Sets the bandwidth_share_type of this PublicIp.
+
+        带宽共享类型
+
+        :param bandwidth_share_type: The bandwidth_share_type of this PublicIp.
+        :type bandwidth_share_type: str
+        """
+        self._bandwidth_share_type = bandwidth_share_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

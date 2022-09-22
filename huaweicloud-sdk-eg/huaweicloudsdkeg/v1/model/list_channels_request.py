@@ -45,7 +45,7 @@ class ListChannelsRequest:
 
         :param offset: 偏移量，表示从此偏移量开始查询，偏移量不能小于0
         :type offset: int
-        :param limit: 每页显示的条目数量，不能小于0。
+        :param limit: 每页显示的条目数量，不能小于0
         :type limit: int
         :param sort: 指定查询排序
         :type sort: str
@@ -106,7 +106,7 @@ class ListChannelsRequest:
     def limit(self):
         """Gets the limit of this ListChannelsRequest.
 
-        每页显示的条目数量，不能小于0。
+        每页显示的条目数量，不能小于0
 
         :return: The limit of this ListChannelsRequest.
         :rtype: int
@@ -117,7 +117,7 @@ class ListChannelsRequest:
     def limit(self, limit):
         """Sets the limit of this ListChannelsRequest.
 
-        每页显示的条目数量，不能小于0。
+        每页显示的条目数量，不能小于0
 
         :param limit: The limit of this ListChannelsRequest.
         :type limit: int

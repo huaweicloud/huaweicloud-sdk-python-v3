@@ -27,7 +27,8 @@ class SlowLogList:
         'log_time': 'str',
         'time': 'str',
         'shards': 'str',
-        'rows_examined': 'str'
+        'rows_examined': 'str',
+        'host': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class SlowLogList:
         'log_time': 'logTime',
         'time': 'time',
         'shards': 'shards',
-        'rows_examined': 'rowsExamined'
+        'rows_examined': 'rowsExamined',
+        'host': 'host'
     }
 
-    def __init__(self, users=None, database=None, query_sample=None, log_time=None, time=None, shards=None, rows_examined=None):
+    def __init__(self, users=None, database=None, query_sample=None, log_time=None, time=None, shards=None, rows_examined=None, host=None):
         """SlowLogList
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class SlowLogList:
         :type shards: str
         :param rows_examined: 慢sql影响行数。
         :type rows_examined: str
+        :param host: 客户端ip，该IP地址可能涉及个人数据，建议用户依据实际IP地址的敏感性做查询后脱敏处理。
+        :type host: str
         """
         
         
@@ -70,6 +74,7 @@ class SlowLogList:
         self._time = None
         self._shards = None
         self._rows_examined = None
+        self._host = None
         self.discriminator = None
 
         if users is not None:
@@ -86,6 +91,8 @@ class SlowLogList:
             self.shards = shards
         if rows_examined is not None:
             self.rows_examined = rows_examined
+        if host is not None:
+            self.host = host
 
     @property
     def users(self):
@@ -240,6 +247,28 @@ class SlowLogList:
         :type rows_examined: str
         """
         self._rows_examined = rows_examined
+
+    @property
+    def host(self):
+        """Gets the host of this SlowLogList.
+
+        客户端ip，该IP地址可能涉及个人数据，建议用户依据实际IP地址的敏感性做查询后脱敏处理。
+
+        :return: The host of this SlowLogList.
+        :rtype: str
+        """
+        return self._host
+
+    @host.setter
+    def host(self, host):
+        """Sets the host of this SlowLogList.
+
+        客户端ip，该IP地址可能涉及个人数据，建议用户依据实际IP地址的敏感性做查询后脱敏处理。
+
+        :param host: The host of this SlowLogList.
+        :type host: str
+        """
+        self._host = host
 
     def to_dict(self):
         """Returns the model properties as a dict"""

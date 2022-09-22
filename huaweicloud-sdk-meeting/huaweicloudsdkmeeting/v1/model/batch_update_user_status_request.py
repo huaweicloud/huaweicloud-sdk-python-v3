@@ -41,15 +41,15 @@ class BatchUpdateUserStatusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param value: 用户的新状态 - 0，启用 - 1，停用
+        :param value: 用户的新状态。 - 0，启用 - 1，停用
         :type value: int
-        :param account_type: 账号类型 * 0：会议账号； * 1：第三方账号。 默认0 
+        :param account_type: 帐号类型。默认0。 * 0：华为云会议帐号。用于帐号/密码鉴权方式 * 1：第三方User ID，用于App ID鉴权方式 
         :type account_type: int
-        :param body: 企业用户帐号列表
+        :param body: Body of the BatchUpdateUserStatusRequest
         :type body: list[str]
         """
         
@@ -76,7 +76,7 @@ class BatchUpdateUserStatusRequest:
     def x_request_id(self):
         """Gets the x_request_id of this BatchUpdateUserStatusRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this BatchUpdateUserStatusRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class BatchUpdateUserStatusRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this BatchUpdateUserStatusRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this BatchUpdateUserStatusRequest.
         :type x_request_id: str
@@ -98,7 +98,7 @@ class BatchUpdateUserStatusRequest:
     def accept_language(self):
         """Gets the accept_language of this BatchUpdateUserStatusRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this BatchUpdateUserStatusRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class BatchUpdateUserStatusRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this BatchUpdateUserStatusRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this BatchUpdateUserStatusRequest.
         :type accept_language: str
@@ -120,7 +120,7 @@ class BatchUpdateUserStatusRequest:
     def value(self):
         """Gets the value of this BatchUpdateUserStatusRequest.
 
-        用户的新状态 - 0，启用 - 1，停用
+        用户的新状态。 - 0，启用 - 1，停用
 
         :return: The value of this BatchUpdateUserStatusRequest.
         :rtype: int
@@ -131,7 +131,7 @@ class BatchUpdateUserStatusRequest:
     def value(self, value):
         """Sets the value of this BatchUpdateUserStatusRequest.
 
-        用户的新状态 - 0，启用 - 1，停用
+        用户的新状态。 - 0，启用 - 1，停用
 
         :param value: The value of this BatchUpdateUserStatusRequest.
         :type value: int
@@ -142,7 +142,7 @@ class BatchUpdateUserStatusRequest:
     def account_type(self):
         """Gets the account_type of this BatchUpdateUserStatusRequest.
 
-        账号类型 * 0：会议账号； * 1：第三方账号。 默认0 
+        帐号类型。默认0。 * 0：华为云会议帐号。用于帐号/密码鉴权方式 * 1：第三方User ID，用于App ID鉴权方式 
 
         :return: The account_type of this BatchUpdateUserStatusRequest.
         :rtype: int
@@ -153,7 +153,7 @@ class BatchUpdateUserStatusRequest:
     def account_type(self, account_type):
         """Sets the account_type of this BatchUpdateUserStatusRequest.
 
-        账号类型 * 0：会议账号； * 1：第三方账号。 默认0 
+        帐号类型。默认0。 * 0：华为云会议帐号。用于帐号/密码鉴权方式 * 1：第三方User ID，用于App ID鉴权方式 
 
         :param account_type: The account_type of this BatchUpdateUserStatusRequest.
         :type account_type: int
@@ -164,7 +164,6 @@ class BatchUpdateUserStatusRequest:
     def body(self):
         """Gets the body of this BatchUpdateUserStatusRequest.
 
-        企业用户帐号列表
 
         :return: The body of this BatchUpdateUserStatusRequest.
         :rtype: list[str]
@@ -175,7 +174,6 @@ class BatchUpdateUserStatusRequest:
     def body(self, body):
         """Sets the body of this BatchUpdateUserStatusRequest.
 
-        企业用户帐号列表
 
         :param body: The body of this BatchUpdateUserStatusRequest.
         :type body: list[str]

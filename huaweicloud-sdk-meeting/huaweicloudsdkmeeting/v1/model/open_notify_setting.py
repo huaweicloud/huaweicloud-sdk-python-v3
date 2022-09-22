@@ -37,11 +37,11 @@ class OpenNotifySetting:
 
         The model defined in huaweicloud sdk
 
-        :param enable_calendar: 发送邮件日历是否开启，\&quot;Y\&quot; 开启，\&quot;N\&quot; 不开启。
+        :param enable_calendar: 发送邮件日历是否开启。 * Y：开启 * N： 不开启 
         :type enable_calendar: str
-        :param enable_sms: 短信通知是否开启，\&quot;Y\&quot; 开启，\&quot;N\&quot; 不开启。
+        :param enable_sms: 发送短信通知是否开启。 * Y：开启 * N： 不开启 
         :type enable_sms: str
-        :param enable_email: 短信通知是否开启，\&quot;Y\&quot; 开启，\&quot;N\&quot; 不开启。
+        :param enable_email: 发送邮件是否开启。 * Y：开启 * N： 不开启 
         :type enable_email: str
         """
         
@@ -60,7 +60,7 @@ class OpenNotifySetting:
     def enable_calendar(self):
         """Gets the enable_calendar of this OpenNotifySetting.
 
-        发送邮件日历是否开启，\"Y\" 开启，\"N\" 不开启。
+        发送邮件日历是否开启。 * Y：开启 * N： 不开启 
 
         :return: The enable_calendar of this OpenNotifySetting.
         :rtype: str
@@ -71,7 +71,7 @@ class OpenNotifySetting:
     def enable_calendar(self, enable_calendar):
         """Sets the enable_calendar of this OpenNotifySetting.
 
-        发送邮件日历是否开启，\"Y\" 开启，\"N\" 不开启。
+        发送邮件日历是否开启。 * Y：开启 * N： 不开启 
 
         :param enable_calendar: The enable_calendar of this OpenNotifySetting.
         :type enable_calendar: str
@@ -82,7 +82,7 @@ class OpenNotifySetting:
     def enable_sms(self):
         """Gets the enable_sms of this OpenNotifySetting.
 
-        短信通知是否开启，\"Y\" 开启，\"N\" 不开启。
+        发送短信通知是否开启。 * Y：开启 * N： 不开启 
 
         :return: The enable_sms of this OpenNotifySetting.
         :rtype: str
@@ -93,7 +93,7 @@ class OpenNotifySetting:
     def enable_sms(self, enable_sms):
         """Sets the enable_sms of this OpenNotifySetting.
 
-        短信通知是否开启，\"Y\" 开启，\"N\" 不开启。
+        发送短信通知是否开启。 * Y：开启 * N： 不开启 
 
         :param enable_sms: The enable_sms of this OpenNotifySetting.
         :type enable_sms: str
@@ -104,7 +104,7 @@ class OpenNotifySetting:
     def enable_email(self):
         """Gets the enable_email of this OpenNotifySetting.
 
-        短信通知是否开启，\"Y\" 开启，\"N\" 不开启。
+        发送邮件是否开启。 * Y：开启 * N： 不开启 
 
         :return: The enable_email of this OpenNotifySetting.
         :rtype: str
@@ -115,7 +115,7 @@ class OpenNotifySetting:
     def enable_email(self, enable_email):
         """Sets the enable_email of this OpenNotifySetting.
 
-        短信通知是否开启，\"Y\" 开启，\"N\" 不开启。
+        发送邮件是否开启。 * Y：开启 * N： 不开启 
 
         :param enable_email: The enable_email of this OpenNotifySetting.
         :type enable_email: str

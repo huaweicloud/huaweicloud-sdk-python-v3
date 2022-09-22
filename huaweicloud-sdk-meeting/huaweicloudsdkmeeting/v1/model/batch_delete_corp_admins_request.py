@@ -39,13 +39,13 @@ class BatchDeleteCorpAdminsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param account_type: 账号类型 * 0：会议账号； * 1：第三方账号。 默认0 
+        :param account_type: 帐号类型。默认0。 * 0：华为云会议帐号。用于帐号/密码鉴权方式 * 1：第三方User ID，用于App ID鉴权方式 
         :type account_type: int
-        :param body: 用户的帐号列表。 maxLength：100 minLength：1
+        :param body: Body of the BatchDeleteCorpAdminsRequest
         :type body: list[str]
         """
         
@@ -70,7 +70,7 @@ class BatchDeleteCorpAdminsRequest:
     def x_request_id(self):
         """Gets the x_request_id of this BatchDeleteCorpAdminsRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this BatchDeleteCorpAdminsRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class BatchDeleteCorpAdminsRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this BatchDeleteCorpAdminsRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this BatchDeleteCorpAdminsRequest.
         :type x_request_id: str
@@ -92,7 +92,7 @@ class BatchDeleteCorpAdminsRequest:
     def accept_language(self):
         """Gets the accept_language of this BatchDeleteCorpAdminsRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this BatchDeleteCorpAdminsRequest.
         :rtype: str
@@ -103,7 +103,7 @@ class BatchDeleteCorpAdminsRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this BatchDeleteCorpAdminsRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this BatchDeleteCorpAdminsRequest.
         :type accept_language: str
@@ -114,7 +114,7 @@ class BatchDeleteCorpAdminsRequest:
     def account_type(self):
         """Gets the account_type of this BatchDeleteCorpAdminsRequest.
 
-        账号类型 * 0：会议账号； * 1：第三方账号。 默认0 
+        帐号类型。默认0。 * 0：华为云会议帐号。用于帐号/密码鉴权方式 * 1：第三方User ID，用于App ID鉴权方式 
 
         :return: The account_type of this BatchDeleteCorpAdminsRequest.
         :rtype: int
@@ -125,7 +125,7 @@ class BatchDeleteCorpAdminsRequest:
     def account_type(self, account_type):
         """Sets the account_type of this BatchDeleteCorpAdminsRequest.
 
-        账号类型 * 0：会议账号； * 1：第三方账号。 默认0 
+        帐号类型。默认0。 * 0：华为云会议帐号。用于帐号/密码鉴权方式 * 1：第三方User ID，用于App ID鉴权方式 
 
         :param account_type: The account_type of this BatchDeleteCorpAdminsRequest.
         :type account_type: int
@@ -136,7 +136,6 @@ class BatchDeleteCorpAdminsRequest:
     def body(self):
         """Gets the body of this BatchDeleteCorpAdminsRequest.
 
-        用户的帐号列表。 maxLength：100 minLength：1
 
         :return: The body of this BatchDeleteCorpAdminsRequest.
         :rtype: list[str]
@@ -147,7 +146,6 @@ class BatchDeleteCorpAdminsRequest:
     def body(self, body):
         """Sets the body of this BatchDeleteCorpAdminsRequest.
 
-        用户的帐号列表。 maxLength：100 minLength：1
 
         :param body: The body of this BatchDeleteCorpAdminsRequest.
         :type body: list[str]

@@ -43,17 +43,17 @@ class ProgramResponseBase:
 
         The model defined in huaweicloud sdk
 
-        :param id: 节目ID
+        :param id: 节目ID。
         :type id: str
-        :param last_updated_by: 更新者
+        :param last_updated_by: 更新者。
         :type last_updated_by: str
-        :param update_time: 更新时间
+        :param update_time: 更新时间。
         :type update_time: int
-        :param program_name: 节目名称
+        :param program_name: 节目名称。
         :type program_name: str
-        :param material_size_str: 节目的总素材大小（含单位）
+        :param material_size_str: 节目的总素材大小（含单位）。
         :type material_size_str: str
-        :param play_time: 节目的总播放时长，单位秒
+        :param play_time: 节目的总播放时长，单位秒。
         :type play_time: int
         """
         
@@ -84,7 +84,7 @@ class ProgramResponseBase:
     def id(self):
         """Gets the id of this ProgramResponseBase.
 
-        节目ID
+        节目ID。
 
         :return: The id of this ProgramResponseBase.
         :rtype: str
@@ -95,7 +95,7 @@ class ProgramResponseBase:
     def id(self, id):
         """Sets the id of this ProgramResponseBase.
 
-        节目ID
+        节目ID。
 
         :param id: The id of this ProgramResponseBase.
         :type id: str
@@ -106,7 +106,7 @@ class ProgramResponseBase:
     def last_updated_by(self):
         """Gets the last_updated_by of this ProgramResponseBase.
 
-        更新者
+        更新者。
 
         :return: The last_updated_by of this ProgramResponseBase.
         :rtype: str
@@ -117,7 +117,7 @@ class ProgramResponseBase:
     def last_updated_by(self, last_updated_by):
         """Sets the last_updated_by of this ProgramResponseBase.
 
-        更新者
+        更新者。
 
         :param last_updated_by: The last_updated_by of this ProgramResponseBase.
         :type last_updated_by: str
@@ -128,7 +128,7 @@ class ProgramResponseBase:
     def update_time(self):
         """Gets the update_time of this ProgramResponseBase.
 
-        更新时间
+        更新时间。
 
         :return: The update_time of this ProgramResponseBase.
         :rtype: int
@@ -139,7 +139,7 @@ class ProgramResponseBase:
     def update_time(self, update_time):
         """Sets the update_time of this ProgramResponseBase.
 
-        更新时间
+        更新时间。
 
         :param update_time: The update_time of this ProgramResponseBase.
         :type update_time: int
@@ -150,7 +150,7 @@ class ProgramResponseBase:
     def program_name(self):
         """Gets the program_name of this ProgramResponseBase.
 
-        节目名称
+        节目名称。
 
         :return: The program_name of this ProgramResponseBase.
         :rtype: str
@@ -161,7 +161,7 @@ class ProgramResponseBase:
     def program_name(self, program_name):
         """Sets the program_name of this ProgramResponseBase.
 
-        节目名称
+        节目名称。
 
         :param program_name: The program_name of this ProgramResponseBase.
         :type program_name: str
@@ -172,7 +172,7 @@ class ProgramResponseBase:
     def material_size_str(self):
         """Gets the material_size_str of this ProgramResponseBase.
 
-        节目的总素材大小（含单位）
+        节目的总素材大小（含单位）。
 
         :return: The material_size_str of this ProgramResponseBase.
         :rtype: str
@@ -183,7 +183,7 @@ class ProgramResponseBase:
     def material_size_str(self, material_size_str):
         """Sets the material_size_str of this ProgramResponseBase.
 
-        节目的总素材大小（含单位）
+        节目的总素材大小（含单位）。
 
         :param material_size_str: The material_size_str of this ProgramResponseBase.
         :type material_size_str: str
@@ -194,7 +194,7 @@ class ProgramResponseBase:
     def play_time(self):
         """Gets the play_time of this ProgramResponseBase.
 
-        节目的总播放时长，单位秒
+        节目的总播放时长，单位秒。
 
         :return: The play_time of this ProgramResponseBase.
         :rtype: int
@@ -205,7 +205,7 @@ class ProgramResponseBase:
     def play_time(self, play_time):
         """Sets the play_time of this ProgramResponseBase.
 
-        节目的总播放时长，单位秒
+        节目的总播放时长，单位秒。
 
         :param play_time: The play_time of this ProgramResponseBase.
         :type play_time: int

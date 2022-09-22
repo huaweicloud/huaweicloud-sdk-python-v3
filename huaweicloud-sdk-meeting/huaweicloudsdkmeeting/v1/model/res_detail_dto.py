@@ -41,13 +41,13 @@ class ResDetailDTO:
 
         The model defined in huaweicloud sdk
 
-        :param sum_count: 总数
+        :param sum_count: 总数。
         :type sum_count: int
-        :param trial_count: 赠送数量
+        :param trial_count: 赠送数量。
         :type trial_count: int
-        :param expired_count: 到期数量
+        :param expired_count: 到期数量。
         :type expired_count: int
-        :param expiring_count: 即将到期数量，到期时间在30天内
+        :param expiring_count: 即将到期数量，到期时间在30天内。
         :type expiring_count: int
         :param used_count: 已使用数（录播存储空间、会议并发、推流并发方数暂无法查询）。
         :type used_count: int
@@ -77,7 +77,7 @@ class ResDetailDTO:
     def sum_count(self):
         """Gets the sum_count of this ResDetailDTO.
 
-        总数
+        总数。
 
         :return: The sum_count of this ResDetailDTO.
         :rtype: int
@@ -88,7 +88,7 @@ class ResDetailDTO:
     def sum_count(self, sum_count):
         """Sets the sum_count of this ResDetailDTO.
 
-        总数
+        总数。
 
         :param sum_count: The sum_count of this ResDetailDTO.
         :type sum_count: int
@@ -99,7 +99,7 @@ class ResDetailDTO:
     def trial_count(self):
         """Gets the trial_count of this ResDetailDTO.
 
-        赠送数量
+        赠送数量。
 
         :return: The trial_count of this ResDetailDTO.
         :rtype: int
@@ -110,7 +110,7 @@ class ResDetailDTO:
     def trial_count(self, trial_count):
         """Sets the trial_count of this ResDetailDTO.
 
-        赠送数量
+        赠送数量。
 
         :param trial_count: The trial_count of this ResDetailDTO.
         :type trial_count: int
@@ -121,7 +121,7 @@ class ResDetailDTO:
     def expired_count(self):
         """Gets the expired_count of this ResDetailDTO.
 
-        到期数量
+        到期数量。
 
         :return: The expired_count of this ResDetailDTO.
         :rtype: int
@@ -132,7 +132,7 @@ class ResDetailDTO:
     def expired_count(self, expired_count):
         """Sets the expired_count of this ResDetailDTO.
 
-        到期数量
+        到期数量。
 
         :param expired_count: The expired_count of this ResDetailDTO.
         :type expired_count: int
@@ -143,7 +143,7 @@ class ResDetailDTO:
     def expiring_count(self):
         """Gets the expiring_count of this ResDetailDTO.
 
-        即将到期数量，到期时间在30天内
+        即将到期数量，到期时间在30天内。
 
         :return: The expiring_count of this ResDetailDTO.
         :rtype: int
@@ -154,7 +154,7 @@ class ResDetailDTO:
     def expiring_count(self, expiring_count):
         """Sets the expiring_count of this ResDetailDTO.
 
-        即将到期数量，到期时间在30天内
+        即将到期数量，到期时间在30天内。
 
         :param expiring_count: The expiring_count of this ResDetailDTO.
         :type expiring_count: int

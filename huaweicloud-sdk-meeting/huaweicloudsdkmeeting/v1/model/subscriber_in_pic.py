@@ -39,9 +39,9 @@ class SubscriberInPic:
 
         :param index: 多画面中每个画面的编号。编号从1开始。 默认值为1。
         :type index: int
-        :param subscriber: 每个画面中与会者标识列表。
+        :param subscriber: 每个画面中与会者标识列表，从[[查询会议实时信息](https://support.huaweicloud.com/api-meeting/meeting_21_0029.html)](tag:hws)[[查询会议实时信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0029.html)](tag:hk)接口返回的pid中获取。
         :type subscriber: list[str]
-        :param is_assist_stream: 是否为辅流。默认值为0。 - 0: 不是辅流。 - 1: 是辅流。
+        :param is_assist_stream: 是否为辅流。默认值为0。 - 0: 不是辅流 - 1: 是辅流
         :type is_assist_stream: int
         """
         
@@ -84,7 +84,7 @@ class SubscriberInPic:
     def subscriber(self):
         """Gets the subscriber of this SubscriberInPic.
 
-        每个画面中与会者标识列表。
+        每个画面中与会者标识列表，从[[查询会议实时信息](https://support.huaweicloud.com/api-meeting/meeting_21_0029.html)](tag:hws)[[查询会议实时信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0029.html)](tag:hk)接口返回的pid中获取。
 
         :return: The subscriber of this SubscriberInPic.
         :rtype: list[str]
@@ -95,7 +95,7 @@ class SubscriberInPic:
     def subscriber(self, subscriber):
         """Sets the subscriber of this SubscriberInPic.
 
-        每个画面中与会者标识列表。
+        每个画面中与会者标识列表，从[[查询会议实时信息](https://support.huaweicloud.com/api-meeting/meeting_21_0029.html)](tag:hws)[[查询会议实时信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0029.html)](tag:hk)接口返回的pid中获取。
 
         :param subscriber: The subscriber of this SubscriberInPic.
         :type subscriber: list[str]
@@ -106,7 +106,7 @@ class SubscriberInPic:
     def is_assist_stream(self):
         """Gets the is_assist_stream of this SubscriberInPic.
 
-        是否为辅流。默认值为0。 - 0: 不是辅流。 - 1: 是辅流。
+        是否为辅流。默认值为0。 - 0: 不是辅流 - 1: 是辅流
 
         :return: The is_assist_stream of this SubscriberInPic.
         :rtype: int
@@ -117,7 +117,7 @@ class SubscriberInPic:
     def is_assist_stream(self, is_assist_stream):
         """Sets the is_assist_stream of this SubscriberInPic.
 
-        是否为辅流。默认值为0。 - 0: 不是辅流。 - 1: 是辅流。
+        是否为辅流。默认值为0。 - 0: 不是辅流 - 1: 是辅流
 
         :param is_assist_stream: The is_assist_stream of this SubscriberInPic.
         :type is_assist_stream: int

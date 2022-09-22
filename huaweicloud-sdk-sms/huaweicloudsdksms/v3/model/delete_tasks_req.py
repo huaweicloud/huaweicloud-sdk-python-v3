@@ -33,7 +33,7 @@ class DeleteTasksReq:
 
         The model defined in huaweicloud sdk
 
-        :param ids: 待删除的任务id列表
+        :param ids: 待删除的任务ID列表
         :type ids: list[str]
         """
         
@@ -48,7 +48,7 @@ class DeleteTasksReq:
     def ids(self):
         """Gets the ids of this DeleteTasksReq.
 
-        待删除的任务id列表
+        待删除的任务ID列表
 
         :return: The ids of this DeleteTasksReq.
         :rtype: list[str]
@@ -59,7 +59,7 @@ class DeleteTasksReq:
     def ids(self, ids):
         """Sets the ids of this DeleteTasksReq.
 
-        待删除的任务id列表
+        待删除的任务ID列表
 
         :param ids: The ids of this DeleteTasksReq.
         :type ids: list[str]

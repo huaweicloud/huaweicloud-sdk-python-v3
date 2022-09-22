@@ -35,7 +35,7 @@ class UpdateDiskInfoRequest:
 
         The model defined in huaweicloud sdk
 
-        :param source_id: 源端服务器id
+        :param source_id: 源端服务器ID
         :type source_id: str
         :param body: Body of the UpdateDiskInfoRequest
         :type body: :class:`huaweicloudsdksms.v3.PutDiskInfoReq`
@@ -55,7 +55,7 @@ class UpdateDiskInfoRequest:
     def source_id(self):
         """Gets the source_id of this UpdateDiskInfoRequest.
 
-        源端服务器id
+        源端服务器ID
 
         :return: The source_id of this UpdateDiskInfoRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateDiskInfoRequest:
     def source_id(self, source_id):
         """Sets the source_id of this UpdateDiskInfoRequest.
 
-        源端服务器id
+        源端服务器ID
 
         :param source_id: The source_id of this UpdateDiskInfoRequest.
         :type source_id: str

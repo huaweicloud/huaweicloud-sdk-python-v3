@@ -45,19 +45,19 @@ class ModCorpBasicDTO:
 
         The model defined in huaweicloud sdk
 
-        :param name: 企业名称，格式必须满足^[^#%&amp;&#39;+;&lt;&gt;&#x3D;\&quot;&#39;？?\\\\……/]*$
+        :param name: 企业名称，格式必须满足^[^#%&amp;&#39;+;&lt;&gt;&#x3D;\\\&quot;&#39;？?\\\\\\\\……/]*$。
         :type name: str
-        :param phone: 手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)
+        :param phone: 手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时“country”参数必填，手机格式必须满足(^$|^[+]?[0-9]+$)。
         :type phone: str
-        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
-        :param fax: 传真号码,格式必须满足(^$|^[+]?[0-9]+$)
+        :param fax: 传真号码,格式必须满足(^$|^[+]?[0-9]+$)。
         :type fax: str
-        :param email: 邮箱地址,格式必须满足(^$|^[\\w-+]+(\\.[\\w-+]+)*@[\\w-]+(\\.[\\w-]+)*(\\.[\\w-]{1,})$)
+        :param email: 邮箱地址,格式必须满足(^$|^[\\\\w-+]+(\\\\.[\\\\w-+]+)*@[\\\\w-]+(\\\\.[\\\\w-]+)*(\\\\.[\\\\w-]{1,})$)。
         :type email: str
-        :param address: 地址
+        :param address: 地址。
         :type address: str
-        :param description: 备注
+        :param description: 备注。
         :type description: str
         """
         
@@ -91,7 +91,7 @@ class ModCorpBasicDTO:
     def name(self):
         """Gets the name of this ModCorpBasicDTO.
 
-        企业名称，格式必须满足^[^#%&'+;<>=\"'？?\\\\……/]*$
+        企业名称，格式必须满足^[^#%&'+;<>=\\\"'？?\\\\\\\\……/]*$。
 
         :return: The name of this ModCorpBasicDTO.
         :rtype: str
@@ -102,7 +102,7 @@ class ModCorpBasicDTO:
     def name(self, name):
         """Sets the name of this ModCorpBasicDTO.
 
-        企业名称，格式必须满足^[^#%&'+;<>=\"'？?\\\\……/]*$
+        企业名称，格式必须满足^[^#%&'+;<>=\\\"'？?\\\\\\\\……/]*$。
 
         :param name: The name of this ModCorpBasicDTO.
         :type name: str
@@ -113,7 +113,7 @@ class ModCorpBasicDTO:
     def phone(self):
         """Gets the phone of this ModCorpBasicDTO.
 
-        手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)
+        手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时“country”参数必填，手机格式必须满足(^$|^[+]?[0-9]+$)。
 
         :return: The phone of this ModCorpBasicDTO.
         :rtype: str
@@ -124,7 +124,7 @@ class ModCorpBasicDTO:
     def phone(self, phone):
         """Sets the phone of this ModCorpBasicDTO.
 
-        手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时 “country”参数必填,手机格式必须满足(^$|^[+]?[0-9]+$)
+        手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时“country”参数必填，手机格式必须满足(^$|^[+]?[0-9]+$)。
 
         :param phone: The phone of this ModCorpBasicDTO.
         :type phone: str
@@ -135,7 +135,7 @@ class ModCorpBasicDTO:
     def country(self):
         """Gets the country of this ModCorpBasicDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this ModCorpBasicDTO.
         :rtype: str
@@ -146,7 +146,7 @@ class ModCorpBasicDTO:
     def country(self, country):
         """Sets the country of this ModCorpBasicDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this ModCorpBasicDTO.
         :type country: str
@@ -157,7 +157,7 @@ class ModCorpBasicDTO:
     def fax(self):
         """Gets the fax of this ModCorpBasicDTO.
 
-        传真号码,格式必须满足(^$|^[+]?[0-9]+$)
+        传真号码,格式必须满足(^$|^[+]?[0-9]+$)。
 
         :return: The fax of this ModCorpBasicDTO.
         :rtype: str
@@ -168,7 +168,7 @@ class ModCorpBasicDTO:
     def fax(self, fax):
         """Sets the fax of this ModCorpBasicDTO.
 
-        传真号码,格式必须满足(^$|^[+]?[0-9]+$)
+        传真号码,格式必须满足(^$|^[+]?[0-9]+$)。
 
         :param fax: The fax of this ModCorpBasicDTO.
         :type fax: str
@@ -179,7 +179,7 @@ class ModCorpBasicDTO:
     def email(self):
         """Gets the email of this ModCorpBasicDTO.
 
-        邮箱地址,格式必须满足(^$|^[\\w-+]+(\\.[\\w-+]+)*@[\\w-]+(\\.[\\w-]+)*(\\.[\\w-]{1,})$)
+        邮箱地址,格式必须满足(^$|^[\\\\w-+]+(\\\\.[\\\\w-+]+)*@[\\\\w-]+(\\\\.[\\\\w-]+)*(\\\\.[\\\\w-]{1,})$)。
 
         :return: The email of this ModCorpBasicDTO.
         :rtype: str
@@ -190,7 +190,7 @@ class ModCorpBasicDTO:
     def email(self, email):
         """Sets the email of this ModCorpBasicDTO.
 
-        邮箱地址,格式必须满足(^$|^[\\w-+]+(\\.[\\w-+]+)*@[\\w-]+(\\.[\\w-]+)*(\\.[\\w-]{1,})$)
+        邮箱地址,格式必须满足(^$|^[\\\\w-+]+(\\\\.[\\\\w-+]+)*@[\\\\w-]+(\\\\.[\\\\w-]+)*(\\\\.[\\\\w-]{1,})$)。
 
         :param email: The email of this ModCorpBasicDTO.
         :type email: str
@@ -201,7 +201,7 @@ class ModCorpBasicDTO:
     def address(self):
         """Gets the address of this ModCorpBasicDTO.
 
-        地址
+        地址。
 
         :return: The address of this ModCorpBasicDTO.
         :rtype: str
@@ -212,7 +212,7 @@ class ModCorpBasicDTO:
     def address(self, address):
         """Sets the address of this ModCorpBasicDTO.
 
-        地址
+        地址。
 
         :param address: The address of this ModCorpBasicDTO.
         :type address: str
@@ -223,7 +223,7 @@ class ModCorpBasicDTO:
     def description(self):
         """Gets the description of this ModCorpBasicDTO.
 
-        备注
+        备注。
 
         :return: The description of this ModCorpBasicDTO.
         :rtype: str
@@ -234,7 +234,7 @@ class ModCorpBasicDTO:
     def description(self, description):
         """Sets the description of this ModCorpBasicDTO.
 
-        备注
+        备注。
 
         :param description: The description of this ModCorpBasicDTO.
         :type description: str

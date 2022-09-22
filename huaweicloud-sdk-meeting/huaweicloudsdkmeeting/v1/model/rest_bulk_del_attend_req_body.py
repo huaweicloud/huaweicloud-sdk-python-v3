@@ -33,7 +33,7 @@ class RestBulkDelAttendReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param bulk_del_attend_info: 待删除列表
+        :param bulk_del_attend_info: 待删除会场列表。
         :type bulk_del_attend_info: list[:class:`huaweicloudsdkmeeting.v1.DelAttendInfo`]
         """
         
@@ -48,7 +48,7 @@ class RestBulkDelAttendReqBody:
     def bulk_del_attend_info(self):
         """Gets the bulk_del_attend_info of this RestBulkDelAttendReqBody.
 
-        待删除列表
+        待删除会场列表。
 
         :return: The bulk_del_attend_info of this RestBulkDelAttendReqBody.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.DelAttendInfo`]
@@ -59,7 +59,7 @@ class RestBulkDelAttendReqBody:
     def bulk_del_attend_info(self, bulk_del_attend_info):
         """Sets the bulk_del_attend_info of this RestBulkDelAttendReqBody.
 
-        待删除列表
+        待删除会场列表。
 
         :param bulk_del_attend_info: The bulk_del_attend_info of this RestBulkDelAttendReqBody.
         :type bulk_del_attend_info: list[:class:`huaweicloudsdkmeeting.v1.DelAttendInfo`]

@@ -24,6 +24,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         'id': 'str',
         'name': 'str',
         'provider_type': 'str',
+        'connection_id': 'str',
         'detail': 'object',
         'transform': 'SubscriptionTargetInfoTransform',
         'created_time': 'str',
@@ -34,13 +35,14 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         'id': 'id',
         'name': 'name',
         'provider_type': 'provider_type',
+        'connection_id': 'connection_id',
         'detail': 'detail',
         'transform': 'transform',
         'created_time': 'created_time',
         'updated_time': 'updated_time'
     }
 
-    def __init__(self, id=None, name=None, provider_type=None, detail=None, transform=None, created_time=None, updated_time=None):
+    def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, transform=None, created_time=None, updated_time=None):
         """ShowDetailOfSubscriptionTargetResponse
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         :type name: str
         :param provider_type: 订阅的事件目标的提供方类型
         :type provider_type: str
+        :param connection_id: 订阅的事件目标使用的目标链接ID
+        :type connection_id: str
         :param detail: 订阅的事件目标参数列表
         :type detail: object
         :param transform: 
@@ -66,6 +70,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         self._id = None
         self._name = None
         self._provider_type = None
+        self._connection_id = None
         self._detail = None
         self._transform = None
         self._created_time = None
@@ -78,6 +83,8 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
             self.name = name
         if provider_type is not None:
             self.provider_type = provider_type
+        if connection_id is not None:
+            self.connection_id = connection_id
         if detail is not None:
             self.detail = detail
         if transform is not None:
@@ -152,6 +159,28 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
         :type provider_type: str
         """
         self._provider_type = provider_type
+
+    @property
+    def connection_id(self):
+        """Gets the connection_id of this ShowDetailOfSubscriptionTargetResponse.
+
+        订阅的事件目标使用的目标链接ID
+
+        :return: The connection_id of this ShowDetailOfSubscriptionTargetResponse.
+        :rtype: str
+        """
+        return self._connection_id
+
+    @connection_id.setter
+    def connection_id(self, connection_id):
+        """Sets the connection_id of this ShowDetailOfSubscriptionTargetResponse.
+
+        订阅的事件目标使用的目标链接ID
+
+        :param connection_id: The connection_id of this ShowDetailOfSubscriptionTargetResponse.
+        :type connection_id: str
+        """
+        self._connection_id = connection_id
 
     @property
     def detail(self):

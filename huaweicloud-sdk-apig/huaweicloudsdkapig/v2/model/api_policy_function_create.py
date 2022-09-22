@@ -23,7 +23,9 @@ class ApiPolicyFunctionCreate:
     openapi_types = {
         'function_urn': 'str',
         'invocation_type': 'str',
+        'network_type': 'str',
         'version': 'str',
+        'alias_urn': 'str',
         'timeout': 'int',
         'effect_mode': 'str',
         'name': 'str',
@@ -35,7 +37,9 @@ class ApiPolicyFunctionCreate:
     attribute_map = {
         'function_urn': 'function_urn',
         'invocation_type': 'invocation_type',
+        'network_type': 'network_type',
         'version': 'version',
+        'alias_urn': 'alias_urn',
         'timeout': 'timeout',
         'effect_mode': 'effect_mode',
         'name': 'name',
@@ -44,7 +48,7 @@ class ApiPolicyFunctionCreate:
         'authorizer_id': 'authorizer_id'
     }
 
-    def __init__(self, function_urn=None, invocation_type=None, version=None, timeout=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None):
+    def __init__(self, function_urn=None, invocation_type=None, network_type=None, version=None, alias_urn=None, timeout=None, effect_mode=None, name=None, backend_params=None, conditions=None, authorizer_id=None):
         """ApiPolicyFunctionCreate
 
         The model defined in huaweicloud sdk
@@ -53,8 +57,12 @@ class ApiPolicyFunctionCreate:
         :type function_urn: str
         :param invocation_type: 调用类型 - async： 异步 - sync：同步
         :type invocation_type: str
-        :param version: 版本。字符长度不超过64
+        :param network_type: 对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
+        :type network_type: str
+        :param version: 函数版本  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
         :type version: str
+        :param alias_urn: 函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        :type alias_urn: str
         :param timeout: API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
         :param effect_mode: 关联的策略组合模式： - ALL：满足全部条件 - ANY：满足任一条件
@@ -73,7 +81,9 @@ class ApiPolicyFunctionCreate:
 
         self._function_urn = None
         self._invocation_type = None
+        self._network_type = None
         self._version = None
+        self._alias_urn = None
         self._timeout = None
         self._effect_mode = None
         self._name = None
@@ -84,8 +94,11 @@ class ApiPolicyFunctionCreate:
 
         self.function_urn = function_urn
         self.invocation_type = invocation_type
+        self.network_type = network_type
         if version is not None:
             self.version = version
+        if alias_urn is not None:
+            self.alias_urn = alias_urn
         if timeout is not None:
             self.timeout = timeout
         self.effect_mode = effect_mode
@@ -141,10 +154,32 @@ class ApiPolicyFunctionCreate:
         self._invocation_type = invocation_type
 
     @property
+    def network_type(self):
+        """Gets the network_type of this ApiPolicyFunctionCreate.
+
+        对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
+
+        :return: The network_type of this ApiPolicyFunctionCreate.
+        :rtype: str
+        """
+        return self._network_type
+
+    @network_type.setter
+    def network_type(self, network_type):
+        """Sets the network_type of this ApiPolicyFunctionCreate.
+
+        对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
+
+        :param network_type: The network_type of this ApiPolicyFunctionCreate.
+        :type network_type: str
+        """
+        self._network_type = network_type
+
+    @property
     def version(self):
         """Gets the version of this ApiPolicyFunctionCreate.
 
-        版本。字符长度不超过64
+        函数版本  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
         :return: The version of this ApiPolicyFunctionCreate.
         :rtype: str
@@ -155,12 +190,34 @@ class ApiPolicyFunctionCreate:
     def version(self, version):
         """Sets the version of this ApiPolicyFunctionCreate.
 
-        版本。字符长度不超过64
+        函数版本  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
         :param version: The version of this ApiPolicyFunctionCreate.
         :type version: str
         """
         self._version = version
+
+    @property
+    def alias_urn(self):
+        """Gets the alias_urn of this ApiPolicyFunctionCreate.
+
+        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :return: The alias_urn of this ApiPolicyFunctionCreate.
+        :rtype: str
+        """
+        return self._alias_urn
+
+    @alias_urn.setter
+    def alias_urn(self, alias_urn):
+        """Sets the alias_urn of this ApiPolicyFunctionCreate.
+
+        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :param alias_urn: The alias_urn of this ApiPolicyFunctionCreate.
+        :type alias_urn: str
+        """
+        self._alias_urn = alias_urn
 
     @property
     def timeout(self):

@@ -43,17 +43,17 @@ class CreatePublicationRequestDTO:
 
         The model defined in huaweicloud sdk
 
-        :param publish_name: 发布名称
+        :param publish_name: 发布名称。
         :type publish_name: str
-        :param start_time: 开始时间
+        :param start_time: 开始时间。
         :type start_time: int
-        :param end_time: 结束时间
+        :param end_time: 结束时间。
         :type end_time: int
-        :param dept_list: 发布到部门编码列表
+        :param dept_list: 发布到部门编码列表。
         :type dept_list: list[str]
-        :param device_list: 发布到设备用户ID列表
+        :param device_list: 发布到设备用户ID列表。
         :type device_list: list[str]
-        :param program_list: 发布节目ID列表
+        :param program_list: 发布节目ID列表。
         :type program_list: list[str]
         """
         
@@ -79,7 +79,7 @@ class CreatePublicationRequestDTO:
     def publish_name(self):
         """Gets the publish_name of this CreatePublicationRequestDTO.
 
-        发布名称
+        发布名称。
 
         :return: The publish_name of this CreatePublicationRequestDTO.
         :rtype: str
@@ -90,7 +90,7 @@ class CreatePublicationRequestDTO:
     def publish_name(self, publish_name):
         """Sets the publish_name of this CreatePublicationRequestDTO.
 
-        发布名称
+        发布名称。
 
         :param publish_name: The publish_name of this CreatePublicationRequestDTO.
         :type publish_name: str
@@ -101,7 +101,7 @@ class CreatePublicationRequestDTO:
     def start_time(self):
         """Gets the start_time of this CreatePublicationRequestDTO.
 
-        开始时间
+        开始时间。
 
         :return: The start_time of this CreatePublicationRequestDTO.
         :rtype: int
@@ -112,7 +112,7 @@ class CreatePublicationRequestDTO:
     def start_time(self, start_time):
         """Sets the start_time of this CreatePublicationRequestDTO.
 
-        开始时间
+        开始时间。
 
         :param start_time: The start_time of this CreatePublicationRequestDTO.
         :type start_time: int
@@ -123,7 +123,7 @@ class CreatePublicationRequestDTO:
     def end_time(self):
         """Gets the end_time of this CreatePublicationRequestDTO.
 
-        结束时间
+        结束时间。
 
         :return: The end_time of this CreatePublicationRequestDTO.
         :rtype: int
@@ -134,7 +134,7 @@ class CreatePublicationRequestDTO:
     def end_time(self, end_time):
         """Sets the end_time of this CreatePublicationRequestDTO.
 
-        结束时间
+        结束时间。
 
         :param end_time: The end_time of this CreatePublicationRequestDTO.
         :type end_time: int
@@ -145,7 +145,7 @@ class CreatePublicationRequestDTO:
     def dept_list(self):
         """Gets the dept_list of this CreatePublicationRequestDTO.
 
-        发布到部门编码列表
+        发布到部门编码列表。
 
         :return: The dept_list of this CreatePublicationRequestDTO.
         :rtype: list[str]
@@ -156,7 +156,7 @@ class CreatePublicationRequestDTO:
     def dept_list(self, dept_list):
         """Sets the dept_list of this CreatePublicationRequestDTO.
 
-        发布到部门编码列表
+        发布到部门编码列表。
 
         :param dept_list: The dept_list of this CreatePublicationRequestDTO.
         :type dept_list: list[str]
@@ -167,7 +167,7 @@ class CreatePublicationRequestDTO:
     def device_list(self):
         """Gets the device_list of this CreatePublicationRequestDTO.
 
-        发布到设备用户ID列表
+        发布到设备用户ID列表。
 
         :return: The device_list of this CreatePublicationRequestDTO.
         :rtype: list[str]
@@ -178,7 +178,7 @@ class CreatePublicationRequestDTO:
     def device_list(self, device_list):
         """Sets the device_list of this CreatePublicationRequestDTO.
 
-        发布到设备用户ID列表
+        发布到设备用户ID列表。
 
         :param device_list: The device_list of this CreatePublicationRequestDTO.
         :type device_list: list[str]
@@ -189,7 +189,7 @@ class CreatePublicationRequestDTO:
     def program_list(self):
         """Gets the program_list of this CreatePublicationRequestDTO.
 
-        发布节目ID列表
+        发布节目ID列表。
 
         :return: The program_list of this CreatePublicationRequestDTO.
         :rtype: list[str]
@@ -200,7 +200,7 @@ class CreatePublicationRequestDTO:
     def program_list(self, program_list):
         """Sets the program_list of this CreatePublicationRequestDTO.
 
-        发布节目ID列表
+        发布节目ID列表。
 
         :param program_list: The program_list of this CreatePublicationRequestDTO.
         :type program_list: list[str]

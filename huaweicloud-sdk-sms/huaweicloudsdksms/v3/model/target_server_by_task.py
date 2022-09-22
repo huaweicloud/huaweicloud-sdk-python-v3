@@ -47,7 +47,7 @@ class TargetServerByTask:
         :type disks: list[:class:`huaweicloudsdksms.v3.TargetDisks`]
         :param name: 名称
         :type name: str
-        :param vm_id: 虚拟机id
+        :param vm_id: 虚拟机ID
         :type vm_id: str
         :param volume_groups: 卷组，数据从源端获取
         :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
@@ -140,7 +140,7 @@ class TargetServerByTask:
     def vm_id(self):
         """Gets the vm_id of this TargetServerByTask.
 
-        虚拟机id
+        虚拟机ID
 
         :return: The vm_id of this TargetServerByTask.
         :rtype: str
@@ -151,7 +151,7 @@ class TargetServerByTask:
     def vm_id(self, vm_id):
         """Sets the vm_id of this TargetServerByTask.
 
-        虚拟机id
+        虚拟机ID
 
         :param vm_id: The vm_id of this TargetServerByTask.
         :type vm_id: str

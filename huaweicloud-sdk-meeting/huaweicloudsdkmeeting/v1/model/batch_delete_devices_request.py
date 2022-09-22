@@ -37,11 +37,11 @@ class BatchDeleteDevicesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param body: 终端序列号列表。 maxLength：100 minLength：1
+        :param body: Body of the BatchDeleteDevicesRequest
         :type body: list[str]
         """
         
@@ -63,7 +63,7 @@ class BatchDeleteDevicesRequest:
     def x_request_id(self):
         """Gets the x_request_id of this BatchDeleteDevicesRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this BatchDeleteDevicesRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class BatchDeleteDevicesRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this BatchDeleteDevicesRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this BatchDeleteDevicesRequest.
         :type x_request_id: str
@@ -85,7 +85,7 @@ class BatchDeleteDevicesRequest:
     def accept_language(self):
         """Gets the accept_language of this BatchDeleteDevicesRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this BatchDeleteDevicesRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class BatchDeleteDevicesRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this BatchDeleteDevicesRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this BatchDeleteDevicesRequest.
         :type accept_language: str
@@ -107,7 +107,6 @@ class BatchDeleteDevicesRequest:
     def body(self):
         """Gets the body of this BatchDeleteDevicesRequest.
 
-        终端序列号列表。 maxLength：100 minLength：1
 
         :return: The body of this BatchDeleteDevicesRequest.
         :rtype: list[str]
@@ -118,7 +117,6 @@ class BatchDeleteDevicesRequest:
     def body(self, body):
         """Sets the body of this BatchDeleteDevicesRequest.
 
-        终端序列号列表。 maxLength：100 minLength：1
 
         :param body: The body of this BatchDeleteDevicesRequest.
         :type body: list[str]

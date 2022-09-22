@@ -35,9 +35,9 @@ class ProgramItemRequestBase:
 
         The model defined in huaweicloud sdk
 
-        :param material_id: 素材ID
+        :param material_id: 素材ID。
         :type material_id: str
-        :param play_time: 播放时长
+        :param play_time: 播放时长。
         :type play_time: int
         """
         
@@ -54,7 +54,7 @@ class ProgramItemRequestBase:
     def material_id(self):
         """Gets the material_id of this ProgramItemRequestBase.
 
-        素材ID
+        素材ID。
 
         :return: The material_id of this ProgramItemRequestBase.
         :rtype: str
@@ -65,7 +65,7 @@ class ProgramItemRequestBase:
     def material_id(self, material_id):
         """Sets the material_id of this ProgramItemRequestBase.
 
-        素材ID
+        素材ID。
 
         :param material_id: The material_id of this ProgramItemRequestBase.
         :type material_id: str
@@ -76,7 +76,7 @@ class ProgramItemRequestBase:
     def play_time(self):
         """Gets the play_time of this ProgramItemRequestBase.
 
-        播放时长
+        播放时长。
 
         :return: The play_time of this ProgramItemRequestBase.
         :rtype: int
@@ -87,7 +87,7 @@ class ProgramItemRequestBase:
     def play_time(self, play_time):
         """Sets the play_time of this ProgramItemRequestBase.
 
-        播放时长
+        播放时长。
 
         :param play_time: The play_time of this ProgramItemRequestBase.
         :type play_time: int

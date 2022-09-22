@@ -41,7 +41,7 @@ class BatchRestartOrDeleteInstanceReq:
         :type instances: list[str]
         :param action: 对实例的操作：restart、delete
         :type action: str
-        :param all_failure: 是否批量删除创建失败的实例。  当参数值为“true”时，删除租户所有创建失败的实例，此时请求参数instances可为空。
+        :param all_failure: 是否批量删除创建失败的实例。  当参数值为“rabbitmq”时，删除租户所有创建失败的实例，此时请求参数instances可为空。
         :type all_failure: str
         """
         
@@ -106,7 +106,7 @@ class BatchRestartOrDeleteInstanceReq:
     def all_failure(self):
         """Gets the all_failure of this BatchRestartOrDeleteInstanceReq.
 
-        是否批量删除创建失败的实例。  当参数值为“true”时，删除租户所有创建失败的实例，此时请求参数instances可为空。
+        是否批量删除创建失败的实例。  当参数值为“rabbitmq”时，删除租户所有创建失败的实例，此时请求参数instances可为空。
 
         :return: The all_failure of this BatchRestartOrDeleteInstanceReq.
         :rtype: str
@@ -117,7 +117,7 @@ class BatchRestartOrDeleteInstanceReq:
     def all_failure(self, all_failure):
         """Sets the all_failure of this BatchRestartOrDeleteInstanceReq.
 
-        是否批量删除创建失败的实例。  当参数值为“true”时，删除租户所有创建失败的实例，此时请求参数instances可为空。
+        是否批量删除创建失败的实例。  当参数值为“rabbitmq”时，删除租户所有创建失败的实例，此时请求参数instances可为空。
 
         :param all_failure: The all_failure of this BatchRestartOrDeleteInstanceReq.
         :type all_failure: str

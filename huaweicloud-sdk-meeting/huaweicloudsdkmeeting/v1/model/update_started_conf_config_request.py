@@ -39,7 +39,7 @@ class UpdateStartedConfConfigRequest:
 
         :param conference_id: 会议ID。
         :type conference_id: str
-        :param x_conference_authorization: 会控正式Token。 该头域统一为BASE64编码。
+        :param x_conference_authorization: 会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
         :type x_conference_authorization: str
         :param body: Body of the UpdateStartedConfConfigRequest
         :type body: :class:`huaweicloudsdkmeeting.v1.UpdateStartedConfigReqBody`
@@ -83,7 +83,7 @@ class UpdateStartedConfConfigRequest:
     def x_conference_authorization(self):
         """Gets the x_conference_authorization of this UpdateStartedConfConfigRequest.
 
-        会控正式Token。 该头域统一为BASE64编码。
+        会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
         :return: The x_conference_authorization of this UpdateStartedConfConfigRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class UpdateStartedConfConfigRequest:
     def x_conference_authorization(self, x_conference_authorization):
         """Sets the x_conference_authorization of this UpdateStartedConfConfigRequest.
 
-        会控正式Token。 该头域统一为BASE64编码。
+        会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
         :param x_conference_authorization: The x_conference_authorization of this UpdateStartedConfConfigRequest.
         :type x_conference_authorization: str

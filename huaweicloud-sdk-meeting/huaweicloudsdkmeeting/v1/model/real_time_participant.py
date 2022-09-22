@@ -47,17 +47,17 @@ class RealTimeParticipant:
 
         :param pid: 与会者标识。
         :type pid: str
-        :param name: 与会者名称或昵称，长度限制为96个字符。
+        :param name: 与会者名称。
         :type name: str
-        :param phone: 与会者设备的注册号码（可支持SIP、TEL号码格式）。最大不超过127个字符。。
+        :param phone: 与会者号码。
         :type phone: str
-        :param state: 用户状态。若会场未入会或已离会，则不会显示于在线会场列表。 - 0: 会议中。 - 1: 正在呼叫。 - 2: 正在加入会议。
+        :param state: 用户状态。 - 0: 会议中 - 1: 正在呼叫 - 2: 正在加入会议 &gt; 若会场未入会或已离会，则不会显示于在线会场列表。
         :type state: int
-        :param video: 音视频能力。 - 0: 音频。 - 1: 视频。
+        :param video: 音视频能力。 - 0: 音频 - 1: 视频
         :type video: int
-        :param mute: 麦克风状态。 - 0: 麦克风打开。 - 1: 麦克风关闭。
+        :param mute: 麦克风状态。 - 0: 麦克风打开 - 1: 麦克风关闭
         :type mute: int
-        :param hand: 与会者举手状态。 - 0: 未举手。 - 1: 举手。
+        :param hand: 与会者举手状态。 - 0: 未举手 - 1: 举手
         :type hand: int
         """
         
@@ -113,7 +113,7 @@ class RealTimeParticipant:
     def name(self):
         """Gets the name of this RealTimeParticipant.
 
-        与会者名称或昵称，长度限制为96个字符。
+        与会者名称。
 
         :return: The name of this RealTimeParticipant.
         :rtype: str
@@ -124,7 +124,7 @@ class RealTimeParticipant:
     def name(self, name):
         """Sets the name of this RealTimeParticipant.
 
-        与会者名称或昵称，长度限制为96个字符。
+        与会者名称。
 
         :param name: The name of this RealTimeParticipant.
         :type name: str
@@ -135,7 +135,7 @@ class RealTimeParticipant:
     def phone(self):
         """Gets the phone of this RealTimeParticipant.
 
-        与会者设备的注册号码（可支持SIP、TEL号码格式）。最大不超过127个字符。。
+        与会者号码。
 
         :return: The phone of this RealTimeParticipant.
         :rtype: str
@@ -146,7 +146,7 @@ class RealTimeParticipant:
     def phone(self, phone):
         """Sets the phone of this RealTimeParticipant.
 
-        与会者设备的注册号码（可支持SIP、TEL号码格式）。最大不超过127个字符。。
+        与会者号码。
 
         :param phone: The phone of this RealTimeParticipant.
         :type phone: str
@@ -157,7 +157,7 @@ class RealTimeParticipant:
     def state(self):
         """Gets the state of this RealTimeParticipant.
 
-        用户状态。若会场未入会或已离会，则不会显示于在线会场列表。 - 0: 会议中。 - 1: 正在呼叫。 - 2: 正在加入会议。
+        用户状态。 - 0: 会议中 - 1: 正在呼叫 - 2: 正在加入会议 > 若会场未入会或已离会，则不会显示于在线会场列表。
 
         :return: The state of this RealTimeParticipant.
         :rtype: int
@@ -168,7 +168,7 @@ class RealTimeParticipant:
     def state(self, state):
         """Sets the state of this RealTimeParticipant.
 
-        用户状态。若会场未入会或已离会，则不会显示于在线会场列表。 - 0: 会议中。 - 1: 正在呼叫。 - 2: 正在加入会议。
+        用户状态。 - 0: 会议中 - 1: 正在呼叫 - 2: 正在加入会议 > 若会场未入会或已离会，则不会显示于在线会场列表。
 
         :param state: The state of this RealTimeParticipant.
         :type state: int
@@ -179,7 +179,7 @@ class RealTimeParticipant:
     def video(self):
         """Gets the video of this RealTimeParticipant.
 
-        音视频能力。 - 0: 音频。 - 1: 视频。
+        音视频能力。 - 0: 音频 - 1: 视频
 
         :return: The video of this RealTimeParticipant.
         :rtype: int
@@ -190,7 +190,7 @@ class RealTimeParticipant:
     def video(self, video):
         """Sets the video of this RealTimeParticipant.
 
-        音视频能力。 - 0: 音频。 - 1: 视频。
+        音视频能力。 - 0: 音频 - 1: 视频
 
         :param video: The video of this RealTimeParticipant.
         :type video: int
@@ -201,7 +201,7 @@ class RealTimeParticipant:
     def mute(self):
         """Gets the mute of this RealTimeParticipant.
 
-        麦克风状态。 - 0: 麦克风打开。 - 1: 麦克风关闭。
+        麦克风状态。 - 0: 麦克风打开 - 1: 麦克风关闭
 
         :return: The mute of this RealTimeParticipant.
         :rtype: int
@@ -212,7 +212,7 @@ class RealTimeParticipant:
     def mute(self, mute):
         """Sets the mute of this RealTimeParticipant.
 
-        麦克风状态。 - 0: 麦克风打开。 - 1: 麦克风关闭。
+        麦克风状态。 - 0: 麦克风打开 - 1: 麦克风关闭
 
         :param mute: The mute of this RealTimeParticipant.
         :type mute: int
@@ -223,7 +223,7 @@ class RealTimeParticipant:
     def hand(self):
         """Gets the hand of this RealTimeParticipant.
 
-        与会者举手状态。 - 0: 未举手。 - 1: 举手。
+        与会者举手状态。 - 0: 未举手 - 1: 举手
 
         :return: The hand of this RealTimeParticipant.
         :rtype: int
@@ -234,7 +234,7 @@ class RealTimeParticipant:
     def hand(self, hand):
         """Sets the hand of this RealTimeParticipant.
 
-        与会者举手状态。 - 0: 未举手。 - 1: 举手。
+        与会者举手状态。 - 0: 未举手 - 1: 举手
 
         :param hand: The hand of this RealTimeParticipant.
         :type hand: int

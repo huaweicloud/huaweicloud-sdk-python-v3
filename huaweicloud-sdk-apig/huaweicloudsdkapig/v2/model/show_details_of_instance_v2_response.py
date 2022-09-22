@@ -41,6 +41,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'maintain_begin': 'str',
         'maintain_end': 'str',
         'ingress_ip': 'str',
+        'ingress_ip_v6': 'str',
         'user_id': 'str',
         'nat_eip_ipv6_cidr': 'str',
         'eip_ipv6_address': 'str',
@@ -80,6 +81,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'maintain_begin': 'maintain_begin',
         'maintain_end': 'maintain_end',
         'ingress_ip': 'ingress_ip',
+        'ingress_ip_v6': 'ingress_ip_v6',
         'user_id': 'user_id',
         'nat_eip_ipv6_cidr': 'nat_eip_ipv6_cidr',
         'eip_ipv6_address': 'eip_ipv6_address',
@@ -98,7 +100,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         'privateips': 'privateips'
     }
 
-    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, loadbalancer_provider=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, endpoint_service=None, endpoint_services=None, node_ips=None, publicips=None, privateips=None):
+    def __init__(self, id=None, project_id=None, instance_name=None, status=None, instance_status=None, type=None, spec=None, create_time=None, enterprise_project_id=None, eip_address=None, charging_mode=None, cbc_metadata=None, loadbalancer_provider=None, description=None, vpc_id=None, subnet_id=None, security_group_id=None, maintain_begin=None, maintain_end=None, ingress_ip=None, ingress_ip_v6=None, user_id=None, nat_eip_ipv6_cidr=None, eip_ipv6_address=None, nat_eip_address=None, bandwidth_size=None, available_zone_ids=None, instance_version=None, virsubnet_id=None, roma_eip_address=None, listeners=None, supported_features=None, endpoint_service=None, endpoint_services=None, node_ips=None, publicips=None, privateips=None):
         """ShowDetailsOfInstanceV2Response
 
         The model defined in huaweicloud sdk
@@ -123,9 +125,9 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type enterprise_project_id: str
         :param eip_address: 实例绑定的弹性IP地址
         :type eip_address: str
-        :param charging_mode: 实例计费方式： - 0：按需计费 - 1：包周期计费
+        :param charging_mode: 实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws,hws_hk)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
         :type charging_mode: int
-        :param cbc_metadata: 包周期计费订单编号
+        :param cbc_metadata: [包周期计费订单编号](tag:hws,hws_hk)[计费订单编号参数暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
         :type cbc_metadata: str
         :param loadbalancer_provider: 实例使用的负载均衡器类型 - lvs Linux虚拟服务器 - elb 弹性负载均衡，elb仅部分region支持
         :type loadbalancer_provider: str
@@ -143,6 +145,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type maintain_end: str
         :param ingress_ip: 实例入口，虚拟私有云访问地址
         :type ingress_ip: str
+        :param ingress_ip_v6: 实例入口，虚拟私有云访问地址 (IPv6) 
+        :type ingress_ip_v6: str
         :param user_id: 实例所属用户ID
         :type user_id: str
         :param nat_eip_ipv6_cidr: 出公网网段 (IPv6)  。  当前仅部分region部分可用区支持IPv6
@@ -199,6 +203,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         self._maintain_begin = None
         self._maintain_end = None
         self._ingress_ip = None
+        self._ingress_ip_v6 = None
         self._user_id = None
         self._nat_eip_ipv6_cidr = None
         self._eip_ipv6_address = None
@@ -257,6 +262,8 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
             self.maintain_end = maintain_end
         if ingress_ip is not None:
             self.ingress_ip = ingress_ip
+        if ingress_ip_v6 is not None:
+            self.ingress_ip_v6 = ingress_ip_v6
         if user_id is not None:
             self.user_id = user_id
         if nat_eip_ipv6_cidr is not None:
@@ -514,7 +521,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def charging_mode(self):
         """Gets the charging_mode of this ShowDetailsOfInstanceV2Response.
 
-        实例计费方式： - 0：按需计费 - 1：包周期计费
+        实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws,hws_hk)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
 
         :return: The charging_mode of this ShowDetailsOfInstanceV2Response.
         :rtype: int
@@ -525,7 +532,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def charging_mode(self, charging_mode):
         """Sets the charging_mode of this ShowDetailsOfInstanceV2Response.
 
-        实例计费方式： - 0：按需计费 - 1：包周期计费
+        实例计费方式： - 0：按需计费 - 1：[包周期计费](tag:hws,hws_hk)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
 
         :param charging_mode: The charging_mode of this ShowDetailsOfInstanceV2Response.
         :type charging_mode: int
@@ -536,7 +543,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def cbc_metadata(self):
         """Gets the cbc_metadata of this ShowDetailsOfInstanceV2Response.
 
-        包周期计费订单编号
+        [包周期计费订单编号](tag:hws,hws_hk)[计费订单编号参数暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
 
         :return: The cbc_metadata of this ShowDetailsOfInstanceV2Response.
         :rtype: str
@@ -547,7 +554,7 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
     def cbc_metadata(self, cbc_metadata):
         """Sets the cbc_metadata of this ShowDetailsOfInstanceV2Response.
 
-        包周期计费订单编号
+        [包周期计费订单编号](tag:hws,hws_hk)[计费订单编号参数暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm)
 
         :param cbc_metadata: The cbc_metadata of this ShowDetailsOfInstanceV2Response.
         :type cbc_metadata: str
@@ -729,6 +736,28 @@ class ShowDetailsOfInstanceV2Response(SdkResponse):
         :type ingress_ip: str
         """
         self._ingress_ip = ingress_ip
+
+    @property
+    def ingress_ip_v6(self):
+        """Gets the ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
+
+        实例入口，虚拟私有云访问地址 (IPv6) 
+
+        :return: The ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
+        :rtype: str
+        """
+        return self._ingress_ip_v6
+
+    @ingress_ip_v6.setter
+    def ingress_ip_v6(self, ingress_ip_v6):
+        """Sets the ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
+
+        实例入口，虚拟私有云访问地址 (IPv6) 
+
+        :param ingress_ip_v6: The ingress_ip_v6 of this ShowDetailsOfInstanceV2Response.
+        :type ingress_ip_v6: str
+        """
+        self._ingress_ip_v6 = ingress_ip_v6
 
     @property
     def user_id(self):

@@ -7,9 +7,7 @@ from huaweicloudsdkcodecheck.v2.codecheck_client import CodeCheckClient
 from huaweicloudsdkcodecheck.v2.codecheck_async_client import CodeCheckAsyncClient
 # import models into sdk package
 from huaweicloudsdkcodecheck.v2.model.check_config_info import CheckConfigInfo
-from huaweicloudsdkcodecheck.v2.model.check_configs_item import CheckConfigsItem
 from huaweicloudsdkcodecheck.v2.model.check_parameters_request import CheckParametersRequest
-from huaweicloudsdkcodecheck.v2.model.check_parameters_res import CheckParametersRes
 from huaweicloudsdkcodecheck.v2.model.check_parameters_response import CheckParametersResponse
 from huaweicloudsdkcodecheck.v2.model.check_record_data_info import CheckRecordDataInfo
 from huaweicloudsdkcodecheck.v2.model.check_record_issue_counts_info import CheckRecordIssueCountsInfo
@@ -25,6 +23,7 @@ from huaweicloudsdkcodecheck.v2.model.create_task_request_v2 import CreateTaskRe
 from huaweicloudsdkcodecheck.v2.model.create_task_response import CreateTaskResponse
 from huaweicloudsdkcodecheck.v2.model.custom_attributes import CustomAttributes
 from huaweicloudsdkcodecheck.v2.model.custom_attributes_rule import CustomAttributesRule
+from huaweicloudsdkcodecheck.v2.model.defect_events import DefectEvents
 from huaweicloudsdkcodecheck.v2.model.defect_fragment_v2 import DefectFragmentV2
 from huaweicloudsdkcodecheck.v2.model.defect_info_v2 import DefectInfoV2
 from huaweicloudsdkcodecheck.v2.model.delete_ruleset_request import DeleteRulesetRequest
@@ -39,7 +38,6 @@ from huaweicloudsdkcodecheck.v2.model.list_rulesets_response import ListRulesets
 from huaweicloudsdkcodecheck.v2.model.list_task_parameter_request import ListTaskParameterRequest
 from huaweicloudsdkcodecheck.v2.model.list_task_parameter_response import ListTaskParameterResponse
 from huaweicloudsdkcodecheck.v2.model.list_task_ruleset_request import ListTaskRulesetRequest
-from huaweicloudsdkcodecheck.v2.model.list_task_ruleset_res import ListTaskRulesetRes
 from huaweicloudsdkcodecheck.v2.model.list_task_ruleset_response import ListTaskRulesetResponse
 from huaweicloudsdkcodecheck.v2.model.list_template_rules_request import ListTemplateRulesRequest
 from huaweicloudsdkcodecheck.v2.model.list_template_rules_response import ListTemplateRulesResponse

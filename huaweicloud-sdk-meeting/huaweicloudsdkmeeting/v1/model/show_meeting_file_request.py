@@ -37,11 +37,11 @@ class ShowMeetingFileRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param file_code: 会议纪要文件码
+        :param file_code: 会议纪要文件码。
         :type file_code: str
         """
         
@@ -62,7 +62,7 @@ class ShowMeetingFileRequest:
     def x_request_id(self):
         """Gets the x_request_id of this ShowMeetingFileRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this ShowMeetingFileRequest.
         :rtype: str
@@ -73,7 +73,7 @@ class ShowMeetingFileRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this ShowMeetingFileRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this ShowMeetingFileRequest.
         :type x_request_id: str
@@ -84,7 +84,7 @@ class ShowMeetingFileRequest:
     def accept_language(self):
         """Gets the accept_language of this ShowMeetingFileRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this ShowMeetingFileRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class ShowMeetingFileRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this ShowMeetingFileRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this ShowMeetingFileRequest.
         :type accept_language: str
@@ -106,7 +106,7 @@ class ShowMeetingFileRequest:
     def file_code(self):
         """Gets the file_code of this ShowMeetingFileRequest.
 
-        会议纪要文件码
+        会议纪要文件码。
 
         :return: The file_code of this ShowMeetingFileRequest.
         :rtype: str
@@ -117,7 +117,7 @@ class ShowMeetingFileRequest:
     def file_code(self, file_code):
         """Sets the file_code of this ShowMeetingFileRequest.
 
-        会议纪要文件码
+        会议纪要文件码。
 
         :param file_code: The file_code of this ShowMeetingFileRequest.
         :type file_code: str

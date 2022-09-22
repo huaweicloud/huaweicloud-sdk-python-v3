@@ -39,9 +39,9 @@ class UserStatusDTO:
 
         :param number: 终端号码
         :type number: str
-        :param reg_status: 注册状态。 * 1是未注册上 * 0是已注册 
+        :param reg_status: 注册状态。 * 1：是未注册上 * 0：是已注册 
         :type reg_status: str
-        :param call_status: 呼叫状态。 * 0:未上线 * 1:空闲中 * 2:使用中 * 3:非会议硬终端统一的无效值 
+        :param call_status: 呼叫状态。 * 0：未上线 * 1：空闲中 * 2：使用中 * 3：非会议硬终端统一的无效值 
         :type call_status: str
         """
         
@@ -85,7 +85,7 @@ class UserStatusDTO:
     def reg_status(self):
         """Gets the reg_status of this UserStatusDTO.
 
-        注册状态。 * 1是未注册上 * 0是已注册 
+        注册状态。 * 1：是未注册上 * 0：是已注册 
 
         :return: The reg_status of this UserStatusDTO.
         :rtype: str
@@ -96,7 +96,7 @@ class UserStatusDTO:
     def reg_status(self, reg_status):
         """Sets the reg_status of this UserStatusDTO.
 
-        注册状态。 * 1是未注册上 * 0是已注册 
+        注册状态。 * 1：是未注册上 * 0：是已注册 
 
         :param reg_status: The reg_status of this UserStatusDTO.
         :type reg_status: str
@@ -107,7 +107,7 @@ class UserStatusDTO:
     def call_status(self):
         """Gets the call_status of this UserStatusDTO.
 
-        呼叫状态。 * 0:未上线 * 1:空闲中 * 2:使用中 * 3:非会议硬终端统一的无效值 
+        呼叫状态。 * 0：未上线 * 1：空闲中 * 2：使用中 * 3：非会议硬终端统一的无效值 
 
         :return: The call_status of this UserStatusDTO.
         :rtype: str
@@ -118,7 +118,7 @@ class UserStatusDTO:
     def call_status(self, call_status):
         """Sets the call_status of this UserStatusDTO.
 
-        呼叫状态。 * 0:未上线 * 1:空闲中 * 2:使用中 * 3:非会议硬终端统一的无效值 
+        呼叫状态。 * 0：未上线 * 1：空闲中 * 2：使用中 * 3：非会议硬终端统一的无效值 
 
         :param call_status: The call_status of this UserStatusDTO.
         :type call_status: str

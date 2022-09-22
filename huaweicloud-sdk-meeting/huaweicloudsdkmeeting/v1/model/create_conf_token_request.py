@@ -42,11 +42,11 @@ class CreateConfTokenRequest:
 
         The model defined in huaweicloud sdk
 
-        :param conference_id: 会议ID。
+        :param conference_id: 会议ID。 &gt; 创建会议时返回的conferenceID。不是vmrConferenceID。 
         :type conference_id: str
-        :param x_conference_authorization: 如果携带该值，则表示是保活消息，如果会话已过期并且请求中携带了密码，则进行重新鉴权并回复新的会话标识。 该头域统一为BASE64编码。
+        :param x_conference_authorization: 会控Token。 &gt; * 仅会控Token保活场景需要携带 &gt; * 如果会话已过期并且请求中携带了密码，则进行重新鉴权并回复新的会控Token
         :type x_conference_authorization: str
-        :param x_password: 会议的主持人密码。 从创建会议的返回响应参数获取。 对于会控Token保活场景，可以不携带会议密码。
+        :param x_password: 会议的主持人密码。 &gt; 对于会控Token保活场景，不对主持人密码鉴权。
         :type x_password: str
         :param x_login_type: 请求类型。 - 1: 业务固定为1。
         :type x_login_type: int
@@ -75,7 +75,7 @@ class CreateConfTokenRequest:
     def conference_id(self):
         """Gets the conference_id of this CreateConfTokenRequest.
 
-        会议ID。
+        会议ID。 > 创建会议时返回的conferenceID。不是vmrConferenceID。 
 
         :return: The conference_id of this CreateConfTokenRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class CreateConfTokenRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this CreateConfTokenRequest.
 
-        会议ID。
+        会议ID。 > 创建会议时返回的conferenceID。不是vmrConferenceID。 
 
         :param conference_id: The conference_id of this CreateConfTokenRequest.
         :type conference_id: str
@@ -97,7 +97,7 @@ class CreateConfTokenRequest:
     def x_conference_authorization(self):
         """Gets the x_conference_authorization of this CreateConfTokenRequest.
 
-        如果携带该值，则表示是保活消息，如果会话已过期并且请求中携带了密码，则进行重新鉴权并回复新的会话标识。 该头域统一为BASE64编码。
+        会控Token。 > * 仅会控Token保活场景需要携带 > * 如果会话已过期并且请求中携带了密码，则进行重新鉴权并回复新的会控Token
 
         :return: The x_conference_authorization of this CreateConfTokenRequest.
         :rtype: str
@@ -108,7 +108,7 @@ class CreateConfTokenRequest:
     def x_conference_authorization(self, x_conference_authorization):
         """Sets the x_conference_authorization of this CreateConfTokenRequest.
 
-        如果携带该值，则表示是保活消息，如果会话已过期并且请求中携带了密码，则进行重新鉴权并回复新的会话标识。 该头域统一为BASE64编码。
+        会控Token。 > * 仅会控Token保活场景需要携带 > * 如果会话已过期并且请求中携带了密码，则进行重新鉴权并回复新的会控Token
 
         :param x_conference_authorization: The x_conference_authorization of this CreateConfTokenRequest.
         :type x_conference_authorization: str
@@ -119,7 +119,7 @@ class CreateConfTokenRequest:
     def x_password(self):
         """Gets the x_password of this CreateConfTokenRequest.
 
-        会议的主持人密码。 从创建会议的返回响应参数获取。 对于会控Token保活场景，可以不携带会议密码。
+        会议的主持人密码。 > 对于会控Token保活场景，不对主持人密码鉴权。
 
         :return: The x_password of this CreateConfTokenRequest.
         :rtype: str
@@ -130,7 +130,7 @@ class CreateConfTokenRequest:
     def x_password(self, x_password):
         """Sets the x_password of this CreateConfTokenRequest.
 
-        会议的主持人密码。 从创建会议的返回响应参数获取。 对于会控Token保活场景，可以不携带会议密码。
+        会议的主持人密码。 > 对于会控Token保活场景，不对主持人密码鉴权。
 
         :param x_password: The x_password of this CreateConfTokenRequest.
         :type x_password: str

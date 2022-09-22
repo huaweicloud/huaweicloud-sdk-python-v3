@@ -57,7 +57,7 @@ class NetWork:
         :type mtu: int
         :param mac: Mac地址
         :type mac: str
-        :param id: 数据库Id
+        :param id: 数据库ID
         :type id: str
         """
         
@@ -218,7 +218,7 @@ class NetWork:
     def id(self):
         """Gets the id of this NetWork.
 
-        数据库Id
+        数据库ID
 
         :return: The id of this NetWork.
         :rtype: str
@@ -229,7 +229,7 @@ class NetWork:
     def id(self, id):
         """Sets the id of this NetWork.
 
-        数据库Id
+        数据库ID
 
         :param id: The id of this NetWork.
         :type id: str

@@ -41,15 +41,15 @@ class SubscriptionSource:
 
         The model defined in huaweicloud sdk
 
-        :param id: 订阅源ID，需保证全局唯一。指定ID的订阅源存在时则进行更新，否则进行创建；未指定时由系统自动生成。  由小写字母、数字、中划线组成，必须字母或数字开头，长度为32~64字符。
+        :param id: 订阅源ID，需保证全局唯一。指定ID的订阅源存在时则进行更新，否则进行创建；未指定时由系统自动生成。由小写字母、数字、中划线组成，必须字母或数字开头。
         :type id: str
         :param name: 订阅的事件源名称
         :type name: str
         :param provider_type: 订阅的事件源的提供方类型
         :type provider_type: str
-        :param detail: 订阅的事件源参数列表，该字段序列化后总长度不超过1024字节。
+        :param detail: 订阅的事件源参数列表, 该字段序列化后总长度不超过1024字节
         :type detail: object
-        :param filter: 订阅事件源的匹配过滤规则，该字段序列化后总长度不超过2048字节。
+        :param filter: 订阅事件源的匹配过滤规则, 该字段序列化后总长度不超过2048字节
         :type filter: object
         """
         
@@ -74,7 +74,7 @@ class SubscriptionSource:
     def id(self):
         """Gets the id of this SubscriptionSource.
 
-        订阅源ID，需保证全局唯一。指定ID的订阅源存在时则进行更新，否则进行创建；未指定时由系统自动生成。  由小写字母、数字、中划线组成，必须字母或数字开头，长度为32~64字符。
+        订阅源ID，需保证全局唯一。指定ID的订阅源存在时则进行更新，否则进行创建；未指定时由系统自动生成。由小写字母、数字、中划线组成，必须字母或数字开头。
 
         :return: The id of this SubscriptionSource.
         :rtype: str
@@ -85,7 +85,7 @@ class SubscriptionSource:
     def id(self, id):
         """Sets the id of this SubscriptionSource.
 
-        订阅源ID，需保证全局唯一。指定ID的订阅源存在时则进行更新，否则进行创建；未指定时由系统自动生成。  由小写字母、数字、中划线组成，必须字母或数字开头，长度为32~64字符。
+        订阅源ID，需保证全局唯一。指定ID的订阅源存在时则进行更新，否则进行创建；未指定时由系统自动生成。由小写字母、数字、中划线组成，必须字母或数字开头。
 
         :param id: The id of this SubscriptionSource.
         :type id: str
@@ -140,7 +140,7 @@ class SubscriptionSource:
     def detail(self):
         """Gets the detail of this SubscriptionSource.
 
-        订阅的事件源参数列表，该字段序列化后总长度不超过1024字节。
+        订阅的事件源参数列表, 该字段序列化后总长度不超过1024字节
 
         :return: The detail of this SubscriptionSource.
         :rtype: object
@@ -151,7 +151,7 @@ class SubscriptionSource:
     def detail(self, detail):
         """Sets the detail of this SubscriptionSource.
 
-        订阅的事件源参数列表，该字段序列化后总长度不超过1024字节。
+        订阅的事件源参数列表, 该字段序列化后总长度不超过1024字节
 
         :param detail: The detail of this SubscriptionSource.
         :type detail: object
@@ -162,7 +162,7 @@ class SubscriptionSource:
     def filter(self):
         """Gets the filter of this SubscriptionSource.
 
-        订阅事件源的匹配过滤规则，该字段序列化后总长度不超过2048字节。
+        订阅事件源的匹配过滤规则, 该字段序列化后总长度不超过2048字节
 
         :return: The filter of this SubscriptionSource.
         :rtype: object
@@ -173,7 +173,7 @@ class SubscriptionSource:
     def filter(self, filter):
         """Sets the filter of this SubscriptionSource.
 
-        订阅事件源的匹配过滤规则，该字段序列化后总长度不超过2048字节。
+        订阅事件源的匹配过滤规则, 该字段序列化后总长度不超过2048字节
 
         :param filter: The filter of this SubscriptionSource.
         :type filter: object

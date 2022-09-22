@@ -33,7 +33,7 @@ class ShowCommandRequest:
 
         The model defined in huaweicloud sdk
 
-        :param server_id: 命令对应的服务器id
+        :param server_id: 命令对应的服务器ID
         :type server_id: str
         """
         
@@ -48,7 +48,7 @@ class ShowCommandRequest:
     def server_id(self):
         """Gets the server_id of this ShowCommandRequest.
 
-        命令对应的服务器id
+        命令对应的服务器ID
 
         :return: The server_id of this ShowCommandRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ShowCommandRequest:
     def server_id(self, server_id):
         """Sets the server_id of this ShowCommandRequest.
 
-        命令对应的服务器id
+        命令对应的服务器ID
 
         :param server_id: The server_id of this ShowCommandRequest.
         :type server_id: str

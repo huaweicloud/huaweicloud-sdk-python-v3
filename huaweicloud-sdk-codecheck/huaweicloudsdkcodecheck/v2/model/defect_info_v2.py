@@ -32,7 +32,8 @@ class DefectInfoV2:
         'file_path': 'str',
         'created_at': 'str',
         'issue_key': 'str',
-        'fragment': 'list[DefectFragmentV2]'
+        'fragment': 'list[DefectFragmentV2]',
+        'events': 'list[DefectEvents]'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class DefectInfoV2:
         'file_path': 'file_path',
         'created_at': 'created_at',
         'issue_key': 'issue_key',
-        'fragment': 'fragment'
+        'fragment': 'fragment',
+        'events': 'events'
     }
 
-    def __init__(self, defect_id=None, defect_checker_name=None, defect_status=None, rule_system_tags=None, rule_name=None, line_number=None, defect_content=None, defect_level=None, file_path=None, created_at=None, issue_key=None, fragment=None):
+    def __init__(self, defect_id=None, defect_checker_name=None, defect_status=None, rule_system_tags=None, rule_name=None, line_number=None, defect_content=None, defect_level=None, file_path=None, created_at=None, issue_key=None, fragment=None, events=None):
         """DefectInfoV2
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class DefectInfoV2:
         :type issue_key: str
         :param fragment: 缺陷代码片段详情
         :type fragment: list[:class:`huaweicloudsdkcodecheck.v2.DefectFragmentV2`]
+        :param events: 调用链信息
+        :type events: list[:class:`huaweicloudsdkcodecheck.v2.DefectEvents`]
         """
         
         
@@ -95,6 +99,7 @@ class DefectInfoV2:
         self._created_at = None
         self._issue_key = None
         self._fragment = None
+        self._events = None
         self.discriminator = None
 
         if defect_id is not None:
@@ -121,6 +126,8 @@ class DefectInfoV2:
             self.issue_key = issue_key
         if fragment is not None:
             self.fragment = fragment
+        if events is not None:
+            self.events = events
 
     @property
     def defect_id(self):
@@ -385,6 +392,28 @@ class DefectInfoV2:
         :type fragment: list[:class:`huaweicloudsdkcodecheck.v2.DefectFragmentV2`]
         """
         self._fragment = fragment
+
+    @property
+    def events(self):
+        """Gets the events of this DefectInfoV2.
+
+        调用链信息
+
+        :return: The events of this DefectInfoV2.
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.DefectEvents`]
+        """
+        return self._events
+
+    @events.setter
+    def events(self, events):
+        """Sets the events of this DefectInfoV2.
+
+        调用链信息
+
+        :param events: The events of this DefectInfoV2.
+        :type events: list[:class:`huaweicloudsdkcodecheck.v2.DefectEvents`]
+        """
+        self._events = events
 
     def to_dict(self):
         """Returns the model properties as a dict"""

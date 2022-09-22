@@ -41,7 +41,7 @@ class PutSourceServerBody:
 
         :param name: 源端服务器修改后的名字
         :type name: str
-        :param migprojectid: 源端服务器修改后所属的迁移项目id
+        :param migprojectid: 源端服务器修改后所属的迁移项目ID
         :type migprojectid: str
         :param disks: 磁盘
         :type disks: list[:class:`huaweicloudsdksms.v3.PutDisk`]
@@ -92,7 +92,7 @@ class PutSourceServerBody:
     def migprojectid(self):
         """Gets the migprojectid of this PutSourceServerBody.
 
-        源端服务器修改后所属的迁移项目id
+        源端服务器修改后所属的迁移项目ID
 
         :return: The migprojectid of this PutSourceServerBody.
         :rtype: str
@@ -103,7 +103,7 @@ class PutSourceServerBody:
     def migprojectid(self, migprojectid):
         """Sets the migprojectid of this PutSourceServerBody.
 
-        源端服务器修改后所属的迁移项目id
+        源端服务器修改后所属的迁移项目ID
 
         :param migprojectid: The migprojectid of this PutSourceServerBody.
         :type migprojectid: str

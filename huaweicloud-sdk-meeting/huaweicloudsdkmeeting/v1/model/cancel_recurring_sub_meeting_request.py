@@ -43,15 +43,15 @@ class CancelRecurringSubMeetingRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_authorization_type: 标识是否为第三方portal过来的请求
+        :param x_authorization_type: 标识是否为第三方portal过来的请求。 &gt; 该参数将废弃，请勿使用。 
         :type x_authorization_type: str
-        :param user_uuid: 用户的uuid（已在USG注册过的）
+        :param user_uuid: 用户的UUID。 &gt; 该参数将废弃，请勿使用。 
         :type user_uuid: str
-        :param x_site_id: 用于区分到哪个HCSO站点鉴权。
+        :param x_site_id: 用于区分到哪个HCSO站点鉴权。 &gt; 该参数将废弃，请勿使用。 
         :type x_site_id: str
-        :param conference_id: 会议标识
+        :param conference_id: 会议ID。
         :type conference_id: str
-        :param type: 取消会议操作类型,1表示需要结束在线会议
+        :param type: 取消会议操作类型。默认已召开的会议不能取消。 * 1：需要结束正在召开的会议 
         :type type: int
         :param body: Body of the CancelRecurringSubMeetingRequest
         :type body: :class:`huaweicloudsdkmeeting.v1.RestCancelSingleRecordCycleConfListReqBody`
@@ -83,7 +83,7 @@ class CancelRecurringSubMeetingRequest:
     def x_authorization_type(self):
         """Gets the x_authorization_type of this CancelRecurringSubMeetingRequest.
 
-        标识是否为第三方portal过来的请求
+        标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
         :return: The x_authorization_type of this CancelRecurringSubMeetingRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class CancelRecurringSubMeetingRequest:
     def x_authorization_type(self, x_authorization_type):
         """Sets the x_authorization_type of this CancelRecurringSubMeetingRequest.
 
-        标识是否为第三方portal过来的请求
+        标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
         :param x_authorization_type: The x_authorization_type of this CancelRecurringSubMeetingRequest.
         :type x_authorization_type: str
@@ -105,7 +105,7 @@ class CancelRecurringSubMeetingRequest:
     def user_uuid(self):
         """Gets the user_uuid of this CancelRecurringSubMeetingRequest.
 
-        用户的uuid（已在USG注册过的）
+        用户的UUID。 > 该参数将废弃，请勿使用。 
 
         :return: The user_uuid of this CancelRecurringSubMeetingRequest.
         :rtype: str
@@ -116,7 +116,7 @@ class CancelRecurringSubMeetingRequest:
     def user_uuid(self, user_uuid):
         """Sets the user_uuid of this CancelRecurringSubMeetingRequest.
 
-        用户的uuid（已在USG注册过的）
+        用户的UUID。 > 该参数将废弃，请勿使用。 
 
         :param user_uuid: The user_uuid of this CancelRecurringSubMeetingRequest.
         :type user_uuid: str
@@ -127,7 +127,7 @@ class CancelRecurringSubMeetingRequest:
     def x_site_id(self):
         """Gets the x_site_id of this CancelRecurringSubMeetingRequest.
 
-        用于区分到哪个HCSO站点鉴权。
+        用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
         :return: The x_site_id of this CancelRecurringSubMeetingRequest.
         :rtype: str
@@ -138,7 +138,7 @@ class CancelRecurringSubMeetingRequest:
     def x_site_id(self, x_site_id):
         """Sets the x_site_id of this CancelRecurringSubMeetingRequest.
 
-        用于区分到哪个HCSO站点鉴权。
+        用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
         :param x_site_id: The x_site_id of this CancelRecurringSubMeetingRequest.
         :type x_site_id: str
@@ -149,7 +149,7 @@ class CancelRecurringSubMeetingRequest:
     def conference_id(self):
         """Gets the conference_id of this CancelRecurringSubMeetingRequest.
 
-        会议标识
+        会议ID。
 
         :return: The conference_id of this CancelRecurringSubMeetingRequest.
         :rtype: str
@@ -160,7 +160,7 @@ class CancelRecurringSubMeetingRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this CancelRecurringSubMeetingRequest.
 
-        会议标识
+        会议ID。
 
         :param conference_id: The conference_id of this CancelRecurringSubMeetingRequest.
         :type conference_id: str
@@ -171,7 +171,7 @@ class CancelRecurringSubMeetingRequest:
     def type(self):
         """Gets the type of this CancelRecurringSubMeetingRequest.
 
-        取消会议操作类型,1表示需要结束在线会议
+        取消会议操作类型。默认已召开的会议不能取消。 * 1：需要结束正在召开的会议 
 
         :return: The type of this CancelRecurringSubMeetingRequest.
         :rtype: int
@@ -182,7 +182,7 @@ class CancelRecurringSubMeetingRequest:
     def type(self, type):
         """Sets the type of this CancelRecurringSubMeetingRequest.
 
-        取消会议操作类型,1表示需要结束在线会议
+        取消会议操作类型。默认已召开的会议不能取消。 * 1：需要结束正在召开的会议 
 
         :param type: The type of this CancelRecurringSubMeetingRequest.
         :type type: int

@@ -43,13 +43,13 @@ class InstanceModReq:
 
         :param description: 实例描述
         :type description: str
-        :param maintain_begin: &#39;维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。&#39;  &#39;在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。&#39;
+        :param maintain_begin: 维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
         :type maintain_begin: str
-        :param maintain_end: &#39;维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。&#39;  &#39;在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次&#39;。
+        :param maintain_end: 维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
         :type maintain_end: str
         :param instance_name: 实例名称
         :type instance_name: str
-        :param security_group_id: 指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。。 
+        :param security_group_id: 指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
         :type security_group_id: str
         """
         
@@ -99,7 +99,7 @@ class InstanceModReq:
     def maintain_begin(self):
         """Gets the maintain_begin of this InstanceModReq.
 
-        '维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。'
+        维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
         :return: The maintain_begin of this InstanceModReq.
         :rtype: str
@@ -110,7 +110,7 @@ class InstanceModReq:
     def maintain_begin(self, maintain_begin):
         """Sets the maintain_begin of this InstanceModReq.
 
-        '维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。'
+        维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
         :param maintain_begin: The maintain_begin of this InstanceModReq.
         :type maintain_begin: str
@@ -121,7 +121,7 @@ class InstanceModReq:
     def maintain_end(self):
         """Gets the maintain_end of this InstanceModReq.
 
-        '维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次'。
+        维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
         :return: The maintain_end of this InstanceModReq.
         :rtype: str
@@ -132,7 +132,7 @@ class InstanceModReq:
     def maintain_end(self, maintain_end):
         """Sets the maintain_end of this InstanceModReq.
 
-        '维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次'。
+        维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
         :param maintain_end: The maintain_end of this InstanceModReq.
         :type maintain_end: str
@@ -165,7 +165,7 @@ class InstanceModReq:
     def security_group_id(self):
         """Gets the security_group_id of this InstanceModReq.
 
-        指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。。 
+        指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
 
         :return: The security_group_id of this InstanceModReq.
         :rtype: str
@@ -176,7 +176,7 @@ class InstanceModReq:
     def security_group_id(self, security_group_id):
         """Sets the security_group_id of this InstanceModReq.
 
-        指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。。 
+        指定实例所属的安全组。  获取方法如下： - 方法1：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。 - 方法2：通过虚拟私有云服务的API接口查询，具体方法请参见《虚拟私有云服务API参考》的“查询安全组列表”章节。 
 
         :param security_group_id: The security_group_id of this InstanceModReq.
         :type security_group_id: str

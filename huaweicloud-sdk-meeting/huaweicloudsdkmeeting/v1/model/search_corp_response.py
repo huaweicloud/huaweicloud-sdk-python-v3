@@ -39,13 +39,13 @@ class SearchCorpResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 页面起始页，从0开始
+        :param offset: 页面起始页，从0开始。
         :type offset: int
         :param limit: 每页显示的条目数量。 默认值：10。 
         :type limit: int
         :param count: 总数量。
         :type count: int
-        :param data: 分页查询企业信息
+        :param data: 分页查询企业信息。
         :type data: list[:class:`huaweicloudsdkmeeting.v1.QueryCorpResultDTO`]
         """
         
@@ -70,7 +70,7 @@ class SearchCorpResponse(SdkResponse):
     def offset(self):
         """Gets the offset of this SearchCorpResponse.
 
-        页面起始页，从0开始
+        页面起始页，从0开始。
 
         :return: The offset of this SearchCorpResponse.
         :rtype: int
@@ -81,7 +81,7 @@ class SearchCorpResponse(SdkResponse):
     def offset(self, offset):
         """Sets the offset of this SearchCorpResponse.
 
-        页面起始页，从0开始
+        页面起始页，从0开始。
 
         :param offset: The offset of this SearchCorpResponse.
         :type offset: int
@@ -136,7 +136,7 @@ class SearchCorpResponse(SdkResponse):
     def data(self):
         """Gets the data of this SearchCorpResponse.
 
-        分页查询企业信息
+        分页查询企业信息。
 
         :return: The data of this SearchCorpResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.QueryCorpResultDTO`]
@@ -147,7 +147,7 @@ class SearchCorpResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this SearchCorpResponse.
 
-        分页查询企业信息
+        分页查询企业信息。
 
         :param data: The data of this SearchCorpResponse.
         :type data: list[:class:`huaweicloudsdkmeeting.v1.QueryCorpResultDTO`]

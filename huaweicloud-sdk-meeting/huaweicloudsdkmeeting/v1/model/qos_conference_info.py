@@ -71,27 +71,27 @@ class QosConferenceInfo:
         :type subject: str
         :param scheduser_name: 会议预订者名称。
         :type scheduser_name: str
-        :param dept_name: 部门。
+        :param dept_name: 部门名称。
         :type dept_name: str
-        :param alarm: 总体告警 YES/NO。 说明： * 会议的音频，视频，屏幕共享，CPU任一项产生告警，总体告警就为YES。
+        :param alarm: 总体告警 。 * YES：会议的音频、视频、屏幕共享、CPU任一项产生告警，总体告警就为YES * NO：无告警
         :type alarm: str
-        :param audio_alarm: 音频告警 YES/NO。 说明： * 会议中任一与会者存在音频告警，会议音频告警就为YES。
+        :param audio_alarm: 音频告警 。 * YES：会议中任一与会者存在音频告警，会议音频告警就为YES * NO：无音频告警
         :type audio_alarm: str
-        :param video_alarm: 视频告警 YES/NO。 说明： * 会议中任一与会者存在视频告警，会议视频告警就为YES。
+        :param video_alarm: 视频告警。 * YES：会议中任一与会者存在视频告警，会议视频告警就为YES * NO：无音视频警
         :type video_alarm: str
-        :param screen_alarm: 屏幕共享告警 YES/NO。 说明： * 会议中任一与会者存在屏幕共享告警，会议屏幕共享告警就为YES。
+        :param screen_alarm: 屏幕共享告警 YES/NO。 * YES：会议中任一与会者存在屏幕共享告警，会议屏幕共享告警就为YES * NO：无屏幕共享告警
         :type screen_alarm: str
-        :param cpu_alarm: CPU告警 YES/NO。 说明： * 会议中任一与会者存在CPU告警，会议CPU告警就为YES。&#39;
+        :param cpu_alarm: CPU告警。 * YES：会议中任一与会者存在CPU告警，会议CPU告警就为YES * NO：无CPU告警
         :type cpu_alarm: str
-        :param time_zone_id: 时区。详情参考时区表（云会议帮助中心-&gt;服务端API参考-&gt;附录-&gt;时区表），中国默认时区56-东八区。
+        :param time_zone_id: 时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 &gt; 举例：“timeZoneID”:\&quot;26\&quot;，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
         :type time_zone_id: str
         :param start_time: 会议开始时间(UTC时间), Unix时间戳（单位毫秒）。
         :type start_time: int
-        :param end_time: 会议结束时间(UTC时间), Unix时间戳（单位毫秒）。 说明： * 在线会议：会议召开中，endTime &#x3D; 会议预计结束时间。 * 历史会议：会议已结束，endTime &#x3D; 会议实际结束时间。
+        :param end_time: 会议结束时间(UTC时间), Unix时间戳（单位毫秒）。 &gt; * 在线会议：会议召开中，endTime &#x3D; 会议预计结束时间 &gt; * 历史会议：会议已结束，endTime &#x3D; 会议实际结束时间
         :type end_time: int
-        :param duration: 会议召开时长（分钟）。 说明： * 在线会议：会议召开中，duration &#x3D; 0。 * 历史会议：会议已结束，duration &#x3D; 会议实际召开时间。
+        :param duration: 会议召开时长（分钟）。 &gt; * 在线会议：会议召开中，duration &#x3D; 0 &gt; * 历史会议：会议已结束，duration &#x3D; 会议实际召开时间
         :type duration: int
-        :param participants: 与会方数。 说明： * 同一用户多次进出会议属于不同的与会，与会方数计算多次。
+        :param participants: 与会方数。 &gt; 同一用户多次进出会议属于不同的与会方，与会方数计算多次。
         :type participants: int
         :param webinar: 是否网络研讨会。
         :type webinar: bool
@@ -242,7 +242,7 @@ class QosConferenceInfo:
     def dept_name(self):
         """Gets the dept_name of this QosConferenceInfo.
 
-        部门。
+        部门名称。
 
         :return: The dept_name of this QosConferenceInfo.
         :rtype: str
@@ -253,7 +253,7 @@ class QosConferenceInfo:
     def dept_name(self, dept_name):
         """Sets the dept_name of this QosConferenceInfo.
 
-        部门。
+        部门名称。
 
         :param dept_name: The dept_name of this QosConferenceInfo.
         :type dept_name: str
@@ -264,7 +264,7 @@ class QosConferenceInfo:
     def alarm(self):
         """Gets the alarm of this QosConferenceInfo.
 
-        总体告警 YES/NO。 说明： * 会议的音频，视频，屏幕共享，CPU任一项产生告警，总体告警就为YES。
+        总体告警 。 * YES：会议的音频、视频、屏幕共享、CPU任一项产生告警，总体告警就为YES * NO：无告警
 
         :return: The alarm of this QosConferenceInfo.
         :rtype: str
@@ -275,7 +275,7 @@ class QosConferenceInfo:
     def alarm(self, alarm):
         """Sets the alarm of this QosConferenceInfo.
 
-        总体告警 YES/NO。 说明： * 会议的音频，视频，屏幕共享，CPU任一项产生告警，总体告警就为YES。
+        总体告警 。 * YES：会议的音频、视频、屏幕共享、CPU任一项产生告警，总体告警就为YES * NO：无告警
 
         :param alarm: The alarm of this QosConferenceInfo.
         :type alarm: str
@@ -286,7 +286,7 @@ class QosConferenceInfo:
     def audio_alarm(self):
         """Gets the audio_alarm of this QosConferenceInfo.
 
-        音频告警 YES/NO。 说明： * 会议中任一与会者存在音频告警，会议音频告警就为YES。
+        音频告警 。 * YES：会议中任一与会者存在音频告警，会议音频告警就为YES * NO：无音频告警
 
         :return: The audio_alarm of this QosConferenceInfo.
         :rtype: str
@@ -297,7 +297,7 @@ class QosConferenceInfo:
     def audio_alarm(self, audio_alarm):
         """Sets the audio_alarm of this QosConferenceInfo.
 
-        音频告警 YES/NO。 说明： * 会议中任一与会者存在音频告警，会议音频告警就为YES。
+        音频告警 。 * YES：会议中任一与会者存在音频告警，会议音频告警就为YES * NO：无音频告警
 
         :param audio_alarm: The audio_alarm of this QosConferenceInfo.
         :type audio_alarm: str
@@ -308,7 +308,7 @@ class QosConferenceInfo:
     def video_alarm(self):
         """Gets the video_alarm of this QosConferenceInfo.
 
-        视频告警 YES/NO。 说明： * 会议中任一与会者存在视频告警，会议视频告警就为YES。
+        视频告警。 * YES：会议中任一与会者存在视频告警，会议视频告警就为YES * NO：无音视频警
 
         :return: The video_alarm of this QosConferenceInfo.
         :rtype: str
@@ -319,7 +319,7 @@ class QosConferenceInfo:
     def video_alarm(self, video_alarm):
         """Sets the video_alarm of this QosConferenceInfo.
 
-        视频告警 YES/NO。 说明： * 会议中任一与会者存在视频告警，会议视频告警就为YES。
+        视频告警。 * YES：会议中任一与会者存在视频告警，会议视频告警就为YES * NO：无音视频警
 
         :param video_alarm: The video_alarm of this QosConferenceInfo.
         :type video_alarm: str
@@ -330,7 +330,7 @@ class QosConferenceInfo:
     def screen_alarm(self):
         """Gets the screen_alarm of this QosConferenceInfo.
 
-        屏幕共享告警 YES/NO。 说明： * 会议中任一与会者存在屏幕共享告警，会议屏幕共享告警就为YES。
+        屏幕共享告警 YES/NO。 * YES：会议中任一与会者存在屏幕共享告警，会议屏幕共享告警就为YES * NO：无屏幕共享告警
 
         :return: The screen_alarm of this QosConferenceInfo.
         :rtype: str
@@ -341,7 +341,7 @@ class QosConferenceInfo:
     def screen_alarm(self, screen_alarm):
         """Sets the screen_alarm of this QosConferenceInfo.
 
-        屏幕共享告警 YES/NO。 说明： * 会议中任一与会者存在屏幕共享告警，会议屏幕共享告警就为YES。
+        屏幕共享告警 YES/NO。 * YES：会议中任一与会者存在屏幕共享告警，会议屏幕共享告警就为YES * NO：无屏幕共享告警
 
         :param screen_alarm: The screen_alarm of this QosConferenceInfo.
         :type screen_alarm: str
@@ -352,7 +352,7 @@ class QosConferenceInfo:
     def cpu_alarm(self):
         """Gets the cpu_alarm of this QosConferenceInfo.
 
-        CPU告警 YES/NO。 说明： * 会议中任一与会者存在CPU告警，会议CPU告警就为YES。'
+        CPU告警。 * YES：会议中任一与会者存在CPU告警，会议CPU告警就为YES * NO：无CPU告警
 
         :return: The cpu_alarm of this QosConferenceInfo.
         :rtype: str
@@ -363,7 +363,7 @@ class QosConferenceInfo:
     def cpu_alarm(self, cpu_alarm):
         """Sets the cpu_alarm of this QosConferenceInfo.
 
-        CPU告警 YES/NO。 说明： * 会议中任一与会者存在CPU告警，会议CPU告警就为YES。'
+        CPU告警。 * YES：会议中任一与会者存在CPU告警，会议CPU告警就为YES * NO：无CPU告警
 
         :param cpu_alarm: The cpu_alarm of this QosConferenceInfo.
         :type cpu_alarm: str
@@ -374,7 +374,7 @@ class QosConferenceInfo:
     def time_zone_id(self):
         """Gets the time_zone_id of this QosConferenceInfo.
 
-        时区。详情参考时区表（云会议帮助中心->服务端API参考->附录->时区表），中国默认时区56-东八区。
+        时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
         :return: The time_zone_id of this QosConferenceInfo.
         :rtype: str
@@ -385,7 +385,7 @@ class QosConferenceInfo:
     def time_zone_id(self, time_zone_id):
         """Sets the time_zone_id of this QosConferenceInfo.
 
-        时区。详情参考时区表（云会议帮助中心->服务端API参考->附录->时区表），中国默认时区56-东八区。
+        时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
         :param time_zone_id: The time_zone_id of this QosConferenceInfo.
         :type time_zone_id: str
@@ -418,7 +418,7 @@ class QosConferenceInfo:
     def end_time(self):
         """Gets the end_time of this QosConferenceInfo.
 
-        会议结束时间(UTC时间), Unix时间戳（单位毫秒）。 说明： * 在线会议：会议召开中，endTime = 会议预计结束时间。 * 历史会议：会议已结束，endTime = 会议实际结束时间。
+        会议结束时间(UTC时间), Unix时间戳（单位毫秒）。 > * 在线会议：会议召开中，endTime = 会议预计结束时间 > * 历史会议：会议已结束，endTime = 会议实际结束时间
 
         :return: The end_time of this QosConferenceInfo.
         :rtype: int
@@ -429,7 +429,7 @@ class QosConferenceInfo:
     def end_time(self, end_time):
         """Sets the end_time of this QosConferenceInfo.
 
-        会议结束时间(UTC时间), Unix时间戳（单位毫秒）。 说明： * 在线会议：会议召开中，endTime = 会议预计结束时间。 * 历史会议：会议已结束，endTime = 会议实际结束时间。
+        会议结束时间(UTC时间), Unix时间戳（单位毫秒）。 > * 在线会议：会议召开中，endTime = 会议预计结束时间 > * 历史会议：会议已结束，endTime = 会议实际结束时间
 
         :param end_time: The end_time of this QosConferenceInfo.
         :type end_time: int
@@ -440,7 +440,7 @@ class QosConferenceInfo:
     def duration(self):
         """Gets the duration of this QosConferenceInfo.
 
-        会议召开时长（分钟）。 说明： * 在线会议：会议召开中，duration = 0。 * 历史会议：会议已结束，duration = 会议实际召开时间。
+        会议召开时长（分钟）。 > * 在线会议：会议召开中，duration = 0 > * 历史会议：会议已结束，duration = 会议实际召开时间
 
         :return: The duration of this QosConferenceInfo.
         :rtype: int
@@ -451,7 +451,7 @@ class QosConferenceInfo:
     def duration(self, duration):
         """Sets the duration of this QosConferenceInfo.
 
-        会议召开时长（分钟）。 说明： * 在线会议：会议召开中，duration = 0。 * 历史会议：会议已结束，duration = 会议实际召开时间。
+        会议召开时长（分钟）。 > * 在线会议：会议召开中，duration = 0 > * 历史会议：会议已结束，duration = 会议实际召开时间
 
         :param duration: The duration of this QosConferenceInfo.
         :type duration: int
@@ -462,7 +462,7 @@ class QosConferenceInfo:
     def participants(self):
         """Gets the participants of this QosConferenceInfo.
 
-        与会方数。 说明： * 同一用户多次进出会议属于不同的与会，与会方数计算多次。
+        与会方数。 > 同一用户多次进出会议属于不同的与会方，与会方数计算多次。
 
         :return: The participants of this QosConferenceInfo.
         :rtype: int
@@ -473,7 +473,7 @@ class QosConferenceInfo:
     def participants(self, participants):
         """Sets the participants of this QosConferenceInfo.
 
-        与会方数。 说明： * 同一用户多次进出会议属于不同的与会，与会方数计算多次。
+        与会方数。 > 同一用户多次进出会议属于不同的与会方，与会方数计算多次。
 
         :param participants: The participants of this QosConferenceInfo.
         :type participants: int

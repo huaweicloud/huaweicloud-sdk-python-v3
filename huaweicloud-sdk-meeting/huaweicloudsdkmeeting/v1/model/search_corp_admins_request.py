@@ -41,15 +41,15 @@ class SearchCorpAdminsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param offset: 查询偏移量,若超过最大数量，则返回最后一页
+        :param offset: 查询偏移量,若超过最大数量，则返回最后一页。
         :type offset: int
-        :param limit: 查询数量 默认值：0 
+        :param limit: 查询数量。 默认值：10。 
         :type limit: int
-        :param search_key: 搜索条件，支持姓名、手机、邮箱、账号、第三方账号模糊搜索。
+        :param search_key: 搜索条件，支持名称、手机、邮箱、帐号、第三方帐号模糊搜索。
         :type search_key: str
         """
         
@@ -77,7 +77,7 @@ class SearchCorpAdminsRequest:
     def x_request_id(self):
         """Gets the x_request_id of this SearchCorpAdminsRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this SearchCorpAdminsRequest.
         :rtype: str
@@ -88,7 +88,7 @@ class SearchCorpAdminsRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this SearchCorpAdminsRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this SearchCorpAdminsRequest.
         :type x_request_id: str
@@ -99,7 +99,7 @@ class SearchCorpAdminsRequest:
     def accept_language(self):
         """Gets the accept_language of this SearchCorpAdminsRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this SearchCorpAdminsRequest.
         :rtype: str
@@ -110,7 +110,7 @@ class SearchCorpAdminsRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this SearchCorpAdminsRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this SearchCorpAdminsRequest.
         :type accept_language: str
@@ -121,7 +121,7 @@ class SearchCorpAdminsRequest:
     def offset(self):
         """Gets the offset of this SearchCorpAdminsRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页
+        查询偏移量,若超过最大数量，则返回最后一页。
 
         :return: The offset of this SearchCorpAdminsRequest.
         :rtype: int
@@ -132,7 +132,7 @@ class SearchCorpAdminsRequest:
     def offset(self, offset):
         """Sets the offset of this SearchCorpAdminsRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页
+        查询偏移量,若超过最大数量，则返回最后一页。
 
         :param offset: The offset of this SearchCorpAdminsRequest.
         :type offset: int
@@ -143,7 +143,7 @@ class SearchCorpAdminsRequest:
     def limit(self):
         """Gets the limit of this SearchCorpAdminsRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :return: The limit of this SearchCorpAdminsRequest.
         :rtype: int
@@ -154,7 +154,7 @@ class SearchCorpAdminsRequest:
     def limit(self, limit):
         """Sets the limit of this SearchCorpAdminsRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :param limit: The limit of this SearchCorpAdminsRequest.
         :type limit: int
@@ -165,7 +165,7 @@ class SearchCorpAdminsRequest:
     def search_key(self):
         """Gets the search_key of this SearchCorpAdminsRequest.
 
-        搜索条件，支持姓名、手机、邮箱、账号、第三方账号模糊搜索。
+        搜索条件，支持名称、手机、邮箱、帐号、第三方帐号模糊搜索。
 
         :return: The search_key of this SearchCorpAdminsRequest.
         :rtype: str
@@ -176,7 +176,7 @@ class SearchCorpAdminsRequest:
     def search_key(self, search_key):
         """Sets the search_key of this SearchCorpAdminsRequest.
 
-        搜索条件，支持姓名、手机、邮箱、账号、第三方账号模糊搜索。
+        搜索条件，支持名称、手机、邮箱、帐号、第三方帐号模糊搜索。
 
         :param search_key: The search_key of this SearchCorpAdminsRequest.
         :type search_key: str

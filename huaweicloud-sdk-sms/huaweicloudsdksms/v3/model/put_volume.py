@@ -37,7 +37,7 @@ class PutVolume:
 
         The model defined in huaweicloud sdk
 
-        :param id: 数据库id
+        :param id: 数据库ID
         :type id: str
         :param need_migration: 是否迁移
         :type need_migration: bool
@@ -63,7 +63,7 @@ class PutVolume:
     def id(self):
         """Gets the id of this PutVolume.
 
-        数据库id
+        数据库ID
 
         :return: The id of this PutVolume.
         :rtype: str
@@ -74,7 +74,7 @@ class PutVolume:
     def id(self, id):
         """Sets the id of this PutVolume.
 
-        数据库id
+        数据库ID
 
         :param id: The id of this PutVolume.
         :type id: str

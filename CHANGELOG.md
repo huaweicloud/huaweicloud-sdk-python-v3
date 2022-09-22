@@ -1,3 +1,303 @@
+# 3.1.3 2022-09-22
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `network_type`, `alias_urn`, `network_type`, `alias_urn` to the interface `CreateApiV2`
+  - Add the response parameters `network_type`, `alias_urn`, `network_type`, `alias_urn` to the interface `ShowDetailsOfApiV2`
+  - Changes of the interface `UpdateApiV2`:
+    - Add the request parameters `network_type`, `alias_urn`, `network_type`, `alias_urn`
+    - Add the response parameters `network_type`, `alias_urn`, `network_type`, `alias_urn`
+  - Add the response parameters `network_type`, `alias_urn`, `network_type`, `alias_urn` to the interface `ListApiVersionDetailV2`
+  - Remove the response parameters `url_domain`, `id`, `status`, `min_ssl_version` from the interface `UpdateDomainV2`
+  - Add the response parameters `req_uri`, `auth_type` to the interface `ListApisUnbindedToAclPolicyV2`
+  - Add the response parameters `authorizer_version`, `authorizer_alias_uri` to the interface `ListCustomAuthorizersV2`
+  - Add the request parameters `authorizer_version`, `authorizer_alias_uri` to the interface `CreateCustomAuthorizerV2`
+  - Add the response parameters `authorizer_version`, `authorizer_alias_uri` to the interface `ShowDetailsOfCustomAuthorizersV2`
+  - Changes of the interface `UpdateCustomAuthorizerV2`:
+    - Add the request parameters `authorizer_version`, `authorizer_alias_uri`
+    - Add the response parameters `authorizer_version`, `authorizer_alias_uri`
+  - The request parameter `env_id` changed to required of the interface `ExportApiDefinitionsV2`
+  - Changes of the interface `ListTagsV2`:
+    - Add the response parameter `tags`
+    - Remove the response parameter `responses`
+  - Remove the response parameters `id`, `name`, `enable`, `config`, `instance_id`, `update_time` from the interface `CreateFeatureV2`
+  - Add the response parameter `ingress_ip_v6` to the interface `ShowDetailsOfInstanceV2`
+  - Add the response parameter `ingress_ip_v6` to the interface `UpdateInstanceV2`
+
+### HuaweiCloud SDK CES
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `event_type` to the interface `CreateEvents`
+  - Add the response parameter `event_type` to the interface `ListEventDetail`
+
+### HuaweiCloud SDK CloudPipeline
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interfaces `ShowAgentStatus`, `RegisterAgent`
+
+### HuaweiCloud SDK CodeCheck
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `check_end_time` to the interface `CheckRecord`
+  - Add the response parameter `events` to the interface `ShowTaskDefects`
+  - Remove the response parameters `name`, `cfg_key`, `default_value`, `option_value`, `is_required`, `description`, `type`, `status` from the interface `CheckParameters`
+  - Add the response parameter `value` to the interface `CheckRulesetParameters`
+
+### HuaweiCloud SDK CPTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListProjectSets`:
+    - Add the response parameter `source`
+    - Remove the response parameter `status`
+  - Add the response parameter `parallel` to the interface `ShowTaskSet`
+
+### HuaweiCloud SDK CTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `group_id`, `stream_id` to the interface `ListTrackers`
+
+### HuaweiCloud SDK DDM
+
+- _Features_
+  - Support the interfaces `ResetAdministrator`, `ValidateWeakPassword`, `ResizeFlavor`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `admin_user_name`, `admin_user_password` to the interface `CreateInstance`
+  - Add the response parameter `admin_user_name` to the interface `ShowInstance`
+  - Add the response parameter `host` to the interface `ListSlowLog`
+
+### HuaweiCloud SDK DevStar
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `none` to the response parameter `deploy_type` to the interface `ShowApplicationV3`
+  - Add the response parameter `subscribe_guide` to the interface `ShowApplicationDependentResources`
+  - Add the enum values `none` to the response parameter `deploy_type` to the interface `ListApplicationsV6`
+  - Add the response parameter `category_name` to the interface `ShowApplicationReleaseRepositories`
+  - Add the response parameter `subscribe_guide` to the interface `ShowTemplateV3`
+  - Add the response parameter `subscribe_guide` to the interface `ListTemplatesV2`
+  - Add the response parameter `subscribe_guide` to the interface `ListTemplates`
+
+### HuaweiCloud SDK EG
+
+- _Features_
+  - Support the following interfaces：
+    - `ListApiVersions`
+    - `ListEventSchema`
+    - `CreateEventSchema`
+    - `ShowDetailOfEventSchema`
+    - `UpdateEventSchema`
+    - `DeleteEventSchema`
+    - `ListEventSchemaVersions`
+    - `CreateEventSchemaVersion`
+    - `ShowDetailOfEventSchemaVersion`
+    - `DeleteEventSchemaVersion`
+    - `DiscoverEventSchemaFromData`
+    - `ListConnections`
+    - `CreateConnection`
+    - `ShowDetailOfConnection`
+    - `UpdateConnection`
+    - `DeleteConnection`
+    - `ListAgencies`
+    - `CreateAgencies`
+    - `ListTriggers`
+    - `UpdateEndpoint`
+    - `DeleteEndpoint`
+    - `ListEndpoints`
+    - `CreateEndpoint`
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameters `id`, `name`, `label`, `description`, `provider_type`, `event_types`, `created_time`, `updated_time`, `channel_id`, `channel_name` from the interface `ListEventSources`
+  - Changes of the interface `CreateEventSource`:
+    - Add the request parameters `type`, `detail`
+    - Add the response parameters `event_types`, `type`, `detail`, `status`
+  - Add the response parameters `event_types`, `type`, `detail`, `status` to the interface `ShowDetailOfEventSource`
+  - Changes of the interface `UpdateEventSource`:
+    - Add the request parameter `detail`
+    - Add the response parameters `event_types`, `type`, `detail`, `status`
+  - Remove the response parameters `name`, `label`, `metadata` from the interface `ListEventTarget`
+  - Add the response parameter `connection_id` to the interface `ListSubscriptions`
+  - Changes of the interface `CreateSubscription`:
+    - Add the request parameter `connection_id`
+    - Add the response parameter `connection_id`
+  - Add the response parameter `connection_id` to the interface `ShowDetailOfSubscription`
+  - Changes of the interface `UpdateSubscription`:
+    - Add the request parameter `connection_id`
+    - Add the response parameter `connection_id`
+  - Changes of the interface `CreateSubscriptionTarget`:
+    - Add the request parameter `connection_id`
+    - Add the response parameter `connection_id`
+  - Add the response parameter `connection_id to the interface `ShowDetailOfSubscriptionTarget`
+  - Changes of the interface `UpdateSubscriptionTarget`:
+    - Add the request parameter `connection_id`
+    - Add the response parameter `connection_id`
+  - Changes of the interface `ListQuotas`:
+    - Add the enum values `CONNECTION`, `PRIVATE_ENDPOINT`, `SOURCE_RABBITMQ` to the request parameter `type`
+    - Add the enum values `CONNECTION`, `PRIVATE_ENDPOINT`, `SOURCE_RABBITMQ` to the response parameter `type`
+    - Modify the type `string` -> `int32` of the response parameter `max`
+    - Modify the type `string` -> `int32` of the response parameter `min`
+    - Modify the type `string` -> `int32` of the response parameter `quota`
+    - Modify the type `string` -> `int32` of the response parameter `used`
+
+### HuaweiCloud SDK EIP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `port_id` to the interface `CreatePublicip`
+  - Add the request parameter `port_id` to the interface `CreatePrePaidPublicip`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the interface `ListGaussMySqlInstanceDetailInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `error_info` to the interface `ListDeviceMessages`
+  - Add the response parameter `error_info` to the interface `ShowDeviceMessage`
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - Support the interface `CheckImageModeration`
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `url`, `categories` changed to required of the interface `RunCreateAudioModerationJob`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `RecognizeIdCard`:
+    - Add the request parameter `detect_copy`
+    - Add the response parameter `detect_copy_result`
+
+### HuaweiCloud SDK OMS
+
+- _Features_
+  - Support the following interfaces：
+    - `ListTaskGroup`
+    - `CreateTaskGroup`
+    - `ShowTaskGroup`
+    - `DeleteTaskGroup`
+    - `StopTaskGroup`
+    - `StartTaskGroup`
+    - `RetryTaskGroup`
+    - `UpdateTaskGroup`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `enable_metadata_migration`, `object_overwrite_mode`, `consistency_check`, `enable_requester_pays` to the interface `ListTasks`
+  - Changes of the interface `CreateTask`:
+    - Add the request parameters `enable_metadata_migration`, `object_overwrite_mode`, `consistency_check`, `enable_requester_pays`
+    - Add the response parameters `id`, `task_name`
+  - Changes of the interface `ShowTask`:
+    - Add the response parameters `enable_metadata_migration`, `object_overwrite_mode`, `consistency_check`, `enable_requester_pays`
+    - Modify the type `int64` -> `string` of the request parameter `task_id`
+  - Modify the type `int64` -> `string` of the request parameter `task_id` of the interface `DeleteTask`
+  - Modify the type `int64` -> `string` of the request parameter `task_id` of the interface `StopTask`
+  - Modify the type `int64` -> `string` of the request parameter `task_id` of the interface `StartTask`
+  - Modify the type `int64` -> `string` of the request parameter `task_id` of the interface `UpdateBandwidthPolicy`
+
+### HuaweiCloud SDK ProjectMan
+
+- _Features_
+  - Support the interfaces `DownloadImageFile`, `ListScrumProjectStatuses`, `UploadAttachments`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RabbitMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `rabbitmq`, Remove the enum values `true`, `false` from the request parameter `all_failure` to the interface `BatchRestartOrDeleteInstances`
+
+### HuaweiCloud SDK SMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the response parameter `disks` from the interface `ListTemplates`
+  - Remove the response parameter `disks` from the interface `ShowTemplate`
+  - Remove the request parameter `disks` from the interface `UpdateMigproject`
+  - Remove the response parameter `disks` from the interface `ShowMigproject`
+
+### HuaweiCloud SDK VOD
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `pack_type`, `pack_type` to the interface `PublishAssets`
+  - Add the response parameters `pack_type`, `pack_type` to the interface `UnpublishAssets`
+  - Add the response parameters `pack_type`, `pack_type` to the interface `ShowAssetMeta`
+  - Add the response parameters `pack_type`, `pack_type` to the interface `ShowAssetDetail`
+  - Add the response parameters `pack_type`, `pack_type` to the interface `ShowTakeOverTaskDetails`
+  - Add the response parameters `pack_type`, `pack_type` to the interface `ShowTakeOverAssetDetails`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `rule` to the interface `DeleteIgnoreRule`
+
 # 3.1.2 2022-09-15
 
 ### HuaweiCloud SDK BSS

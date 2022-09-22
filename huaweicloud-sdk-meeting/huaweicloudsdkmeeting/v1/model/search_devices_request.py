@@ -47,21 +47,21 @@ class SearchDevicesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
         :param offset: 查询偏移量，若超过最大数量，则返回最后一页。
         :type offset: int
-        :param limit: 查询数量 默认值：0 
+        :param limit: 查询数量。 默认值：10。 
         :type limit: int
         :param search_key: 搜索条件。支持名称、SN模糊查询。
         :type search_key: str
-        :param model: 终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。 maxLength：128 minLength：0
+        :param model: 终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
         :type model: str
-        :param dept_code: 部门编号，默认为根部门 默认值：1 maxLength：32 minLength：0
+        :param dept_code: 部门编码，默认为根部门。 默认值：1。
         :type dept_code: str
-        :param enable_sub_dept: 是否查询子部门 默认值：true 
+        :param enable_sub_dept: 是否查询子部门。 默认值：true。 
         :type enable_sub_dept: bool
         """
         
@@ -98,7 +98,7 @@ class SearchDevicesRequest:
     def x_request_id(self):
         """Gets the x_request_id of this SearchDevicesRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this SearchDevicesRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class SearchDevicesRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this SearchDevicesRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this SearchDevicesRequest.
         :type x_request_id: str
@@ -120,7 +120,7 @@ class SearchDevicesRequest:
     def accept_language(self):
         """Gets the accept_language of this SearchDevicesRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this SearchDevicesRequest.
         :rtype: str
@@ -131,7 +131,7 @@ class SearchDevicesRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this SearchDevicesRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this SearchDevicesRequest.
         :type accept_language: str
@@ -164,7 +164,7 @@ class SearchDevicesRequest:
     def limit(self):
         """Gets the limit of this SearchDevicesRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :return: The limit of this SearchDevicesRequest.
         :rtype: int
@@ -175,7 +175,7 @@ class SearchDevicesRequest:
     def limit(self, limit):
         """Sets the limit of this SearchDevicesRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :param limit: The limit of this SearchDevicesRequest.
         :type limit: int
@@ -208,7 +208,7 @@ class SearchDevicesRequest:
     def model(self):
         """Gets the model of this SearchDevicesRequest.
 
-        终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。 maxLength：128 minLength：0
+        终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
 
         :return: The model of this SearchDevicesRequest.
         :rtype: str
@@ -219,7 +219,7 @@ class SearchDevicesRequest:
     def model(self, model):
         """Sets the model of this SearchDevicesRequest.
 
-        终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。 maxLength：128 minLength：0
+        终端型号，枚举类型。当前支持TE系列硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。
 
         :param model: The model of this SearchDevicesRequest.
         :type model: str
@@ -230,7 +230,7 @@ class SearchDevicesRequest:
     def dept_code(self):
         """Gets the dept_code of this SearchDevicesRequest.
 
-        部门编号，默认为根部门 默认值：1 maxLength：32 minLength：0
+        部门编码，默认为根部门。 默认值：1。
 
         :return: The dept_code of this SearchDevicesRequest.
         :rtype: str
@@ -241,7 +241,7 @@ class SearchDevicesRequest:
     def dept_code(self, dept_code):
         """Sets the dept_code of this SearchDevicesRequest.
 
-        部门编号，默认为根部门 默认值：1 maxLength：32 minLength：0
+        部门编码，默认为根部门。 默认值：1。
 
         :param dept_code: The dept_code of this SearchDevicesRequest.
         :type dept_code: str
@@ -252,7 +252,7 @@ class SearchDevicesRequest:
     def enable_sub_dept(self):
         """Gets the enable_sub_dept of this SearchDevicesRequest.
 
-        是否查询子部门 默认值：true 
+        是否查询子部门。 默认值：true。 
 
         :return: The enable_sub_dept of this SearchDevicesRequest.
         :rtype: bool
@@ -263,7 +263,7 @@ class SearchDevicesRequest:
     def enable_sub_dept(self, enable_sub_dept):
         """Sets the enable_sub_dept of this SearchDevicesRequest.
 
-        是否查询子部门 默认值：true 
+        是否查询子部门。 默认值：true。 
 
         :param enable_sub_dept: The enable_sub_dept of this SearchDevicesRequest.
         :type enable_sub_dept: bool

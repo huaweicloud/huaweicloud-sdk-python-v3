@@ -23,7 +23,7 @@ class ListEventSourcesResponse(SdkResponse):
     openapi_types = {
         'total': 'int',
         'size': 'int',
-        'items': 'list[SourceInfo]'
+        'items': 'list[CustomizeSourceInfo]'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class ListEventSourcesResponse(SdkResponse):
         :param size: 本页数量
         :type size: int
         :param items: 对象列表
-        :type items: list[:class:`huaweicloudsdkeg.v1.SourceInfo`]
+        :type items: list[:class:`huaweicloudsdkeg.v1.CustomizeSourceInfo`]
         """
         
         super(ListEventSourcesResponse, self).__init__()
@@ -110,7 +110,7 @@ class ListEventSourcesResponse(SdkResponse):
         对象列表
 
         :return: The items of this ListEventSourcesResponse.
-        :rtype: list[:class:`huaweicloudsdkeg.v1.SourceInfo`]
+        :rtype: list[:class:`huaweicloudsdkeg.v1.CustomizeSourceInfo`]
         """
         return self._items
 
@@ -121,7 +121,7 @@ class ListEventSourcesResponse(SdkResponse):
         对象列表
 
         :param items: The items of this ListEventSourcesResponse.
-        :type items: list[:class:`huaweicloudsdkeg.v1.SourceInfo`]
+        :type items: list[:class:`huaweicloudsdkeg.v1.CustomizeSourceInfo`]
         """
         self._items = items
 

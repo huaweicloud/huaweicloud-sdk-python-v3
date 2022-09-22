@@ -35,9 +35,9 @@ class StartMeetingResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param uuid: 会议主席鉴权uuid
+        :param uuid: uuid。 &gt; 废弃参数，请勿使用。 
         :type uuid: str
-        :param region_ip: 区域公网IP地址
+        :param region_ip: 会议所在区域的公网IP地址。
         :type region_ip: str
         """
         
@@ -56,7 +56,7 @@ class StartMeetingResponse(SdkResponse):
     def uuid(self):
         """Gets the uuid of this StartMeetingResponse.
 
-        会议主席鉴权uuid
+        uuid。 > 废弃参数，请勿使用。 
 
         :return: The uuid of this StartMeetingResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class StartMeetingResponse(SdkResponse):
     def uuid(self, uuid):
         """Sets the uuid of this StartMeetingResponse.
 
-        会议主席鉴权uuid
+        uuid。 > 废弃参数，请勿使用。 
 
         :param uuid: The uuid of this StartMeetingResponse.
         :type uuid: str
@@ -78,7 +78,7 @@ class StartMeetingResponse(SdkResponse):
     def region_ip(self):
         """Gets the region_ip of this StartMeetingResponse.
 
-        区域公网IP地址
+        会议所在区域的公网IP地址。
 
         :return: The region_ip of this StartMeetingResponse.
         :rtype: str
@@ -89,7 +89,7 @@ class StartMeetingResponse(SdkResponse):
     def region_ip(self, region_ip):
         """Sets the region_ip of this StartMeetingResponse.
 
-        区域公网IP地址
+        会议所在区域的公网IP地址。
 
         :param region_ip: The region_ip of this StartMeetingResponse.
         :type region_ip: str

@@ -28,7 +28,8 @@ class ServerDisk:
         'used_size': 'int',
         'physical_volumes': 'list[PhysicalVolume]',
         'os_disk': 'bool',
-        'relation_name': 'str'
+        'relation_name': 'str',
+        'inode_size': 'int'
     }
 
     attribute_map = {
@@ -39,19 +40,20 @@ class ServerDisk:
         'used_size': 'used_size',
         'physical_volumes': 'physical_volumes',
         'os_disk': 'os_disk',
-        'relation_name': 'relation_name'
+        'relation_name': 'relation_name',
+        'inode_size': 'inode_size'
     }
 
-    def __init__(self, name=None, partition_style=None, device_use=None, size=None, used_size=None, physical_volumes=None, os_disk=None, relation_name=None):
+    def __init__(self, name=None, partition_style=None, device_use=None, size=None, used_size=None, physical_volumes=None, os_disk=None, relation_name=None, inode_size=None):
         """ServerDisk
 
         The model defined in huaweicloud sdk
 
         :param name: 磁盘名称
         :type name: str
-        :param partition_style: 磁盘的分区类型，添加源端时源端磁盘必选
+        :param partition_style: 磁盘的分区类型，添加源端时源端磁盘必选 MBR：mbr格式 GPT：gpt格式
         :type partition_style: str
-        :param device_use: 磁盘类型
+        :param device_use: 磁盘类型 BOOT：BOOT设备 OS：系统设备
         :type device_use: str
         :param size: 磁盘总大小，以字节为单位
         :type size: int
@@ -63,6 +65,8 @@ class ServerDisk:
         :type os_disk: bool
         :param relation_name: Linux系统 目的端ECS中与源端关联的磁盘名称
         :type relation_name: str
+        :param inode_size: inode数量
+        :type inode_size: int
         """
         
         
@@ -75,6 +79,7 @@ class ServerDisk:
         self._physical_volumes = None
         self._os_disk = None
         self._relation_name = None
+        self._inode_size = None
         self.discriminator = None
 
         self.name = name
@@ -88,6 +93,8 @@ class ServerDisk:
             self.os_disk = os_disk
         if relation_name is not None:
             self.relation_name = relation_name
+        if inode_size is not None:
+            self.inode_size = inode_size
 
     @property
     def name(self):
@@ -115,7 +122,7 @@ class ServerDisk:
     def partition_style(self):
         """Gets the partition_style of this ServerDisk.
 
-        磁盘的分区类型，添加源端时源端磁盘必选
+        磁盘的分区类型，添加源端时源端磁盘必选 MBR：mbr格式 GPT：gpt格式
 
         :return: The partition_style of this ServerDisk.
         :rtype: str
@@ -126,7 +133,7 @@ class ServerDisk:
     def partition_style(self, partition_style):
         """Sets the partition_style of this ServerDisk.
 
-        磁盘的分区类型，添加源端时源端磁盘必选
+        磁盘的分区类型，添加源端时源端磁盘必选 MBR：mbr格式 GPT：gpt格式
 
         :param partition_style: The partition_style of this ServerDisk.
         :type partition_style: str
@@ -137,7 +144,7 @@ class ServerDisk:
     def device_use(self):
         """Gets the device_use of this ServerDisk.
 
-        磁盘类型
+        磁盘类型 BOOT：BOOT设备 OS：系统设备
 
         :return: The device_use of this ServerDisk.
         :rtype: str
@@ -148,7 +155,7 @@ class ServerDisk:
     def device_use(self, device_use):
         """Sets the device_use of this ServerDisk.
 
-        磁盘类型
+        磁盘类型 BOOT：BOOT设备 OS：系统设备
 
         :param device_use: The device_use of this ServerDisk.
         :type device_use: str
@@ -264,6 +271,28 @@ class ServerDisk:
         :type relation_name: str
         """
         self._relation_name = relation_name
+
+    @property
+    def inode_size(self):
+        """Gets the inode_size of this ServerDisk.
+
+        inode数量
+
+        :return: The inode_size of this ServerDisk.
+        :rtype: int
+        """
+        return self._inode_size
+
+    @inode_size.setter
+    def inode_size(self, inode_size):
+        """Sets the inode_size of this ServerDisk.
+
+        inode数量
+
+        :param inode_size: The inode_size of this ServerDisk.
+        :type inode_size: int
+        """
+        self._inode_size = inode_size
 
     def to_dict(self):
         """Returns the model properties as a dict"""

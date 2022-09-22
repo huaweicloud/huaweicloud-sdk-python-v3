@@ -39,7 +39,7 @@ class SearchRecordingsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 第几条。
+        :param offset: 查询偏移量。
         :type offset: int
         :param limit: 每页的记录数。
         :type limit: int
@@ -70,7 +70,7 @@ class SearchRecordingsResponse(SdkResponse):
     def offset(self):
         """Gets the offset of this SearchRecordingsResponse.
 
-        第几条。
+        查询偏移量。
 
         :return: The offset of this SearchRecordingsResponse.
         :rtype: int
@@ -81,7 +81,7 @@ class SearchRecordingsResponse(SdkResponse):
     def offset(self, offset):
         """Sets the offset of this SearchRecordingsResponse.
 
-        第几条。
+        查询偏移量。
 
         :param offset: The offset of this SearchRecordingsResponse.
         :type offset: int

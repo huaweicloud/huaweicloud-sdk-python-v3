@@ -33,7 +33,7 @@ class ShowRecordingFileDownloadUrlsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param record_urls: 录制文件下载URL
+        :param record_urls: 录制文件下载链接。
         :type record_urls: list[:class:`huaweicloudsdkmeeting.v1.RecordDownloadInfoBO`]
         """
         
@@ -49,7 +49,7 @@ class ShowRecordingFileDownloadUrlsResponse(SdkResponse):
     def record_urls(self):
         """Gets the record_urls of this ShowRecordingFileDownloadUrlsResponse.
 
-        录制文件下载URL
+        录制文件下载链接。
 
         :return: The record_urls of this ShowRecordingFileDownloadUrlsResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.RecordDownloadInfoBO`]
@@ -60,7 +60,7 @@ class ShowRecordingFileDownloadUrlsResponse(SdkResponse):
     def record_urls(self, record_urls):
         """Sets the record_urls of this ShowRecordingFileDownloadUrlsResponse.
 
-        录制文件下载URL
+        录制文件下载链接。
 
         :param record_urls: The record_urls of this ShowRecordingFileDownloadUrlsResponse.
         :type record_urls: list[:class:`huaweicloudsdkmeeting.v1.RecordDownloadInfoBO`]

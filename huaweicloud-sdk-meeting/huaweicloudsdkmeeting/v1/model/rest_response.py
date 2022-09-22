@@ -35,9 +35,9 @@ class RestResponse:
 
         The model defined in huaweicloud sdk
 
-        :param return_code: 结果码
+        :param return_code: 结果码。
         :type return_code: int
-        :param return_desc: 结果描述
+        :param return_desc: 结果描述。
         :type return_desc: str
         """
         
@@ -55,7 +55,7 @@ class RestResponse:
     def return_code(self):
         """Gets the return_code of this RestResponse.
 
-        结果码
+        结果码。
 
         :return: The return_code of this RestResponse.
         :rtype: int
@@ -66,7 +66,7 @@ class RestResponse:
     def return_code(self, return_code):
         """Sets the return_code of this RestResponse.
 
-        结果码
+        结果码。
 
         :param return_code: The return_code of this RestResponse.
         :type return_code: int
@@ -77,7 +77,7 @@ class RestResponse:
     def return_desc(self):
         """Gets the return_desc of this RestResponse.
 
-        结果描述
+        结果描述。
 
         :return: The return_desc of this RestResponse.
         :rtype: str
@@ -88,7 +88,7 @@ class RestResponse:
     def return_desc(self, return_desc):
         """Sets the return_desc of this RestResponse.
 
-        结果描述
+        结果描述。
 
         :param return_desc: The return_desc of this RestResponse.
         :type return_desc: str

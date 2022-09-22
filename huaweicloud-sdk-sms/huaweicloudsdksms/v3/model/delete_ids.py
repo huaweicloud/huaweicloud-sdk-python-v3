@@ -33,7 +33,7 @@ class DeleteIds:
 
         The model defined in huaweicloud sdk
 
-        :param ids: 所有删除对象id的集合
+        :param ids: 所有删除对象ID的集合
         :type ids: list[str]
         """
         
@@ -48,7 +48,7 @@ class DeleteIds:
     def ids(self):
         """Gets the ids of this DeleteIds.
 
-        所有删除对象id的集合
+        所有删除对象ID的集合
 
         :return: The ids of this DeleteIds.
         :rtype: list[str]
@@ -59,7 +59,7 @@ class DeleteIds:
     def ids(self, ids):
         """Sets the ids of this DeleteIds.
 
-        所有删除对象id的集合
+        所有删除对象ID的集合
 
         :param ids: The ids of this DeleteIds.
         :type ids: list[str]

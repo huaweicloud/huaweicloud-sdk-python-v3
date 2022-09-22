@@ -35,7 +35,7 @@ class UpdateSpeedRequest:
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 主机迁移任务的id
+        :param task_id: 主机迁移任务的ID
         :type task_id: str
         :param body: Body of the UpdateSpeedRequest
         :type body: :class:`huaweicloudsdksms.v3.SpeedLimit`
@@ -55,7 +55,7 @@ class UpdateSpeedRequest:
     def task_id(self):
         """Gets the task_id of this UpdateSpeedRequest.
 
-        主机迁移任务的id
+        主机迁移任务的ID
 
         :return: The task_id of this UpdateSpeedRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateSpeedRequest:
     def task_id(self, task_id):
         """Sets the task_id of this UpdateSpeedRequest.
 
-        主机迁移任务的id
+        主机迁移任务的ID
 
         :param task_id: The task_id of this UpdateSpeedRequest.
         :type task_id: str

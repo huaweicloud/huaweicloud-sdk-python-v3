@@ -69,43 +69,43 @@ class OpenWebinarHistoryInfo:
 
         The model defined in huaweicloud sdk
 
-        :param conference_id: 会议id
+        :param conference_id: 网络研讨会ID。
         :type conference_id: str
-        :param conf_uuid: 会议UUID
+        :param conf_uuid: 网络研讨会UUID。
         :type conf_uuid: str
-        :param subject: 主题
+        :param subject: 网络研讨会主题。
         :type subject: str
-        :param scheduser_name: 会议订阅者
+        :param scheduser_name: 网络研讨会预定者名称。
         :type scheduser_name: str
-        :param moderator: 会议主持人
+        :param moderator: 网络研讨主持人名称。
         :type moderator: str
-        :param dept_name: 部门名称
+        :param dept_name: 预订人部门名称。
         :type dept_name: str
-        :param time_zone_id: 时区ID
+        :param time_zone_id: 会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 &gt; * 举例：“timeZoneID”:\&quot;26\&quot;，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
         :type time_zone_id: int
-        :param start_time: 会议预约时间
+        :param start_time: 网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
         :type start_time: str
-        :param duration: 预约会议时长，单位分钟
+        :param duration: 网络研讨会持续时长，单位分钟。
         :type duration: int
-        :param actual_start_time: 会议开始时间
+        :param actual_start_time: 网络研讨会实际召开时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
         :type actual_start_time: str
-        :param end_time: 会议结束时间
+        :param end_time: 网络研讨会结束时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
         :type end_time: str
-        :param actual_duration: 实际会议时长，单位分钟
+        :param actual_duration: 网络研讨会实际时长，单位分钟。
         :type actual_duration: int
-        :param attendee_count: 与会人数
+        :param attendee_count: 与会人数。
         :type attendee_count: int
-        :param chair_count: 主持人人数
+        :param chair_count: 主持人数。
         :type chair_count: int
-        :param guest_count: 嘉宾人数
+        :param guest_count: 嘉宾数。
         :type guest_count: int
-        :param audience_count: 观众人数
+        :param audience_count: 观众人数。
         :type audience_count: int
-        :param vmr_id: VMR ID
+        :param vmr_id: VMR ID。
         :type vmr_id: str
-        :param vmr_pkg_audience_parties: VMR资源规格-最大观众数
+        :param vmr_pkg_audience_parties: 网络研讨会VMR最大观众数。
         :type vmr_pkg_audience_parties: int
-        :param vmr_pkg_name: 网络研讨会资源名
+        :param vmr_pkg_name: 网络研讨会VMR名称。
         :type vmr_pkg_name: str
         """
         
@@ -175,7 +175,7 @@ class OpenWebinarHistoryInfo:
     def conference_id(self):
         """Gets the conference_id of this OpenWebinarHistoryInfo.
 
-        会议id
+        网络研讨会ID。
 
         :return: The conference_id of this OpenWebinarHistoryInfo.
         :rtype: str
@@ -186,7 +186,7 @@ class OpenWebinarHistoryInfo:
     def conference_id(self, conference_id):
         """Sets the conference_id of this OpenWebinarHistoryInfo.
 
-        会议id
+        网络研讨会ID。
 
         :param conference_id: The conference_id of this OpenWebinarHistoryInfo.
         :type conference_id: str
@@ -197,7 +197,7 @@ class OpenWebinarHistoryInfo:
     def conf_uuid(self):
         """Gets the conf_uuid of this OpenWebinarHistoryInfo.
 
-        会议UUID
+        网络研讨会UUID。
 
         :return: The conf_uuid of this OpenWebinarHistoryInfo.
         :rtype: str
@@ -208,7 +208,7 @@ class OpenWebinarHistoryInfo:
     def conf_uuid(self, conf_uuid):
         """Sets the conf_uuid of this OpenWebinarHistoryInfo.
 
-        会议UUID
+        网络研讨会UUID。
 
         :param conf_uuid: The conf_uuid of this OpenWebinarHistoryInfo.
         :type conf_uuid: str
@@ -219,7 +219,7 @@ class OpenWebinarHistoryInfo:
     def subject(self):
         """Gets the subject of this OpenWebinarHistoryInfo.
 
-        主题
+        网络研讨会主题。
 
         :return: The subject of this OpenWebinarHistoryInfo.
         :rtype: str
@@ -230,7 +230,7 @@ class OpenWebinarHistoryInfo:
     def subject(self, subject):
         """Sets the subject of this OpenWebinarHistoryInfo.
 
-        主题
+        网络研讨会主题。
 
         :param subject: The subject of this OpenWebinarHistoryInfo.
         :type subject: str
@@ -241,7 +241,7 @@ class OpenWebinarHistoryInfo:
     def scheduser_name(self):
         """Gets the scheduser_name of this OpenWebinarHistoryInfo.
 
-        会议订阅者
+        网络研讨会预定者名称。
 
         :return: The scheduser_name of this OpenWebinarHistoryInfo.
         :rtype: str
@@ -252,7 +252,7 @@ class OpenWebinarHistoryInfo:
     def scheduser_name(self, scheduser_name):
         """Sets the scheduser_name of this OpenWebinarHistoryInfo.
 
-        会议订阅者
+        网络研讨会预定者名称。
 
         :param scheduser_name: The scheduser_name of this OpenWebinarHistoryInfo.
         :type scheduser_name: str
@@ -263,7 +263,7 @@ class OpenWebinarHistoryInfo:
     def moderator(self):
         """Gets the moderator of this OpenWebinarHistoryInfo.
 
-        会议主持人
+        网络研讨主持人名称。
 
         :return: The moderator of this OpenWebinarHistoryInfo.
         :rtype: str
@@ -274,7 +274,7 @@ class OpenWebinarHistoryInfo:
     def moderator(self, moderator):
         """Sets the moderator of this OpenWebinarHistoryInfo.
 
-        会议主持人
+        网络研讨主持人名称。
 
         :param moderator: The moderator of this OpenWebinarHistoryInfo.
         :type moderator: str
@@ -285,7 +285,7 @@ class OpenWebinarHistoryInfo:
     def dept_name(self):
         """Gets the dept_name of this OpenWebinarHistoryInfo.
 
-        部门名称
+        预订人部门名称。
 
         :return: The dept_name of this OpenWebinarHistoryInfo.
         :rtype: str
@@ -296,7 +296,7 @@ class OpenWebinarHistoryInfo:
     def dept_name(self, dept_name):
         """Sets the dept_name of this OpenWebinarHistoryInfo.
 
-        部门名称
+        预订人部门名称。
 
         :param dept_name: The dept_name of this OpenWebinarHistoryInfo.
         :type dept_name: str
@@ -307,7 +307,7 @@ class OpenWebinarHistoryInfo:
     def time_zone_id(self):
         """Gets the time_zone_id of this OpenWebinarHistoryInfo.
 
-        时区ID
+        会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
         :return: The time_zone_id of this OpenWebinarHistoryInfo.
         :rtype: int
@@ -318,7 +318,7 @@ class OpenWebinarHistoryInfo:
     def time_zone_id(self, time_zone_id):
         """Sets the time_zone_id of this OpenWebinarHistoryInfo.
 
-        时区ID
+        会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
         :param time_zone_id: The time_zone_id of this OpenWebinarHistoryInfo.
         :type time_zone_id: int
@@ -329,7 +329,7 @@ class OpenWebinarHistoryInfo:
     def start_time(self):
         """Gets the start_time of this OpenWebinarHistoryInfo.
 
-        会议预约时间
+        网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :return: The start_time of this OpenWebinarHistoryInfo.
         :rtype: str
@@ -340,7 +340,7 @@ class OpenWebinarHistoryInfo:
     def start_time(self, start_time):
         """Sets the start_time of this OpenWebinarHistoryInfo.
 
-        会议预约时间
+        网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :param start_time: The start_time of this OpenWebinarHistoryInfo.
         :type start_time: str
@@ -351,7 +351,7 @@ class OpenWebinarHistoryInfo:
     def duration(self):
         """Gets the duration of this OpenWebinarHistoryInfo.
 
-        预约会议时长，单位分钟
+        网络研讨会持续时长，单位分钟。
 
         :return: The duration of this OpenWebinarHistoryInfo.
         :rtype: int
@@ -362,7 +362,7 @@ class OpenWebinarHistoryInfo:
     def duration(self, duration):
         """Sets the duration of this OpenWebinarHistoryInfo.
 
-        预约会议时长，单位分钟
+        网络研讨会持续时长，单位分钟。
 
         :param duration: The duration of this OpenWebinarHistoryInfo.
         :type duration: int
@@ -373,7 +373,7 @@ class OpenWebinarHistoryInfo:
     def actual_start_time(self):
         """Gets the actual_start_time of this OpenWebinarHistoryInfo.
 
-        会议开始时间
+        网络研讨会实际召开时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :return: The actual_start_time of this OpenWebinarHistoryInfo.
         :rtype: str
@@ -384,7 +384,7 @@ class OpenWebinarHistoryInfo:
     def actual_start_time(self, actual_start_time):
         """Sets the actual_start_time of this OpenWebinarHistoryInfo.
 
-        会议开始时间
+        网络研讨会实际召开时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :param actual_start_time: The actual_start_time of this OpenWebinarHistoryInfo.
         :type actual_start_time: str
@@ -395,7 +395,7 @@ class OpenWebinarHistoryInfo:
     def end_time(self):
         """Gets the end_time of this OpenWebinarHistoryInfo.
 
-        会议结束时间
+        网络研讨会结束时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :return: The end_time of this OpenWebinarHistoryInfo.
         :rtype: str
@@ -406,7 +406,7 @@ class OpenWebinarHistoryInfo:
     def end_time(self, end_time):
         """Sets the end_time of this OpenWebinarHistoryInfo.
 
-        会议结束时间
+        网络研讨会结束时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :param end_time: The end_time of this OpenWebinarHistoryInfo.
         :type end_time: str
@@ -417,7 +417,7 @@ class OpenWebinarHistoryInfo:
     def actual_duration(self):
         """Gets the actual_duration of this OpenWebinarHistoryInfo.
 
-        实际会议时长，单位分钟
+        网络研讨会实际时长，单位分钟。
 
         :return: The actual_duration of this OpenWebinarHistoryInfo.
         :rtype: int
@@ -428,7 +428,7 @@ class OpenWebinarHistoryInfo:
     def actual_duration(self, actual_duration):
         """Sets the actual_duration of this OpenWebinarHistoryInfo.
 
-        实际会议时长，单位分钟
+        网络研讨会实际时长，单位分钟。
 
         :param actual_duration: The actual_duration of this OpenWebinarHistoryInfo.
         :type actual_duration: int
@@ -439,7 +439,7 @@ class OpenWebinarHistoryInfo:
     def attendee_count(self):
         """Gets the attendee_count of this OpenWebinarHistoryInfo.
 
-        与会人数
+        与会人数。
 
         :return: The attendee_count of this OpenWebinarHistoryInfo.
         :rtype: int
@@ -450,7 +450,7 @@ class OpenWebinarHistoryInfo:
     def attendee_count(self, attendee_count):
         """Sets the attendee_count of this OpenWebinarHistoryInfo.
 
-        与会人数
+        与会人数。
 
         :param attendee_count: The attendee_count of this OpenWebinarHistoryInfo.
         :type attendee_count: int
@@ -461,7 +461,7 @@ class OpenWebinarHistoryInfo:
     def chair_count(self):
         """Gets the chair_count of this OpenWebinarHistoryInfo.
 
-        主持人人数
+        主持人数。
 
         :return: The chair_count of this OpenWebinarHistoryInfo.
         :rtype: int
@@ -472,7 +472,7 @@ class OpenWebinarHistoryInfo:
     def chair_count(self, chair_count):
         """Sets the chair_count of this OpenWebinarHistoryInfo.
 
-        主持人人数
+        主持人数。
 
         :param chair_count: The chair_count of this OpenWebinarHistoryInfo.
         :type chair_count: int
@@ -483,7 +483,7 @@ class OpenWebinarHistoryInfo:
     def guest_count(self):
         """Gets the guest_count of this OpenWebinarHistoryInfo.
 
-        嘉宾人数
+        嘉宾数。
 
         :return: The guest_count of this OpenWebinarHistoryInfo.
         :rtype: int
@@ -494,7 +494,7 @@ class OpenWebinarHistoryInfo:
     def guest_count(self, guest_count):
         """Sets the guest_count of this OpenWebinarHistoryInfo.
 
-        嘉宾人数
+        嘉宾数。
 
         :param guest_count: The guest_count of this OpenWebinarHistoryInfo.
         :type guest_count: int
@@ -505,7 +505,7 @@ class OpenWebinarHistoryInfo:
     def audience_count(self):
         """Gets the audience_count of this OpenWebinarHistoryInfo.
 
-        观众人数
+        观众人数。
 
         :return: The audience_count of this OpenWebinarHistoryInfo.
         :rtype: int
@@ -516,7 +516,7 @@ class OpenWebinarHistoryInfo:
     def audience_count(self, audience_count):
         """Sets the audience_count of this OpenWebinarHistoryInfo.
 
-        观众人数
+        观众人数。
 
         :param audience_count: The audience_count of this OpenWebinarHistoryInfo.
         :type audience_count: int
@@ -527,7 +527,7 @@ class OpenWebinarHistoryInfo:
     def vmr_id(self):
         """Gets the vmr_id of this OpenWebinarHistoryInfo.
 
-        VMR ID
+        VMR ID。
 
         :return: The vmr_id of this OpenWebinarHistoryInfo.
         :rtype: str
@@ -538,7 +538,7 @@ class OpenWebinarHistoryInfo:
     def vmr_id(self, vmr_id):
         """Sets the vmr_id of this OpenWebinarHistoryInfo.
 
-        VMR ID
+        VMR ID。
 
         :param vmr_id: The vmr_id of this OpenWebinarHistoryInfo.
         :type vmr_id: str
@@ -549,7 +549,7 @@ class OpenWebinarHistoryInfo:
     def vmr_pkg_audience_parties(self):
         """Gets the vmr_pkg_audience_parties of this OpenWebinarHistoryInfo.
 
-        VMR资源规格-最大观众数
+        网络研讨会VMR最大观众数。
 
         :return: The vmr_pkg_audience_parties of this OpenWebinarHistoryInfo.
         :rtype: int
@@ -560,7 +560,7 @@ class OpenWebinarHistoryInfo:
     def vmr_pkg_audience_parties(self, vmr_pkg_audience_parties):
         """Sets the vmr_pkg_audience_parties of this OpenWebinarHistoryInfo.
 
-        VMR资源规格-最大观众数
+        网络研讨会VMR最大观众数。
 
         :param vmr_pkg_audience_parties: The vmr_pkg_audience_parties of this OpenWebinarHistoryInfo.
         :type vmr_pkg_audience_parties: int
@@ -571,7 +571,7 @@ class OpenWebinarHistoryInfo:
     def vmr_pkg_name(self):
         """Gets the vmr_pkg_name of this OpenWebinarHistoryInfo.
 
-        网络研讨会资源名
+        网络研讨会VMR名称。
 
         :return: The vmr_pkg_name of this OpenWebinarHistoryInfo.
         :rtype: str
@@ -582,7 +582,7 @@ class OpenWebinarHistoryInfo:
     def vmr_pkg_name(self, vmr_pkg_name):
         """Sets the vmr_pkg_name of this OpenWebinarHistoryInfo.
 
-        网络研讨会资源名
+        网络研讨会VMR名称。
 
         :param vmr_pkg_name: The vmr_pkg_name of this OpenWebinarHistoryInfo.
         :type vmr_pkg_name: str

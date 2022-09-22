@@ -37,11 +37,11 @@ class ShowRoomSettingRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param conference_id: 会议id
+        :param conference_id: 网络研讨会ID
         :type conference_id: str
         """
         
@@ -62,7 +62,7 @@ class ShowRoomSettingRequest:
     def x_request_id(self):
         """Gets the x_request_id of this ShowRoomSettingRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this ShowRoomSettingRequest.
         :rtype: str
@@ -73,7 +73,7 @@ class ShowRoomSettingRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this ShowRoomSettingRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this ShowRoomSettingRequest.
         :type x_request_id: str
@@ -84,7 +84,7 @@ class ShowRoomSettingRequest:
     def accept_language(self):
         """Gets the accept_language of this ShowRoomSettingRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this ShowRoomSettingRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class ShowRoomSettingRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this ShowRoomSettingRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this ShowRoomSettingRequest.
         :type accept_language: str
@@ -106,7 +106,7 @@ class ShowRoomSettingRequest:
     def conference_id(self):
         """Gets the conference_id of this ShowRoomSettingRequest.
 
-        会议id
+        网络研讨会ID
 
         :return: The conference_id of this ShowRoomSettingRequest.
         :rtype: str
@@ -117,7 +117,7 @@ class ShowRoomSettingRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this ShowRoomSettingRequest.
 
-        会议id
+        网络研讨会ID
 
         :param conference_id: The conference_id of this ShowRoomSettingRequest.
         :type conference_id: str

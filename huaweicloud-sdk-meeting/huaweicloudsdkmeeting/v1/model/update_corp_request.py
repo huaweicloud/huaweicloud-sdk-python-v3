@@ -39,11 +39,11 @@ class UpdateCorpRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param id: 企业id
+        :param id: 企业id。
         :type id: str
         :param body: Body of the UpdateCorpRequest
         :type body: :class:`huaweicloudsdkmeeting.v1.ModCorpDTO`
@@ -69,7 +69,7 @@ class UpdateCorpRequest:
     def x_request_id(self):
         """Gets the x_request_id of this UpdateCorpRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this UpdateCorpRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class UpdateCorpRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this UpdateCorpRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this UpdateCorpRequest.
         :type x_request_id: str
@@ -91,7 +91,7 @@ class UpdateCorpRequest:
     def accept_language(self):
         """Gets the accept_language of this UpdateCorpRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this UpdateCorpRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class UpdateCorpRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this UpdateCorpRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this UpdateCorpRequest.
         :type accept_language: str
@@ -113,7 +113,7 @@ class UpdateCorpRequest:
     def id(self):
         """Gets the id of this UpdateCorpRequest.
 
-        企业id
+        企业id。
 
         :return: The id of this UpdateCorpRequest.
         :rtype: str
@@ -124,7 +124,7 @@ class UpdateCorpRequest:
     def id(self, id):
         """Sets the id of this UpdateCorpRequest.
 
-        企业id
+        企业id。
 
         :param id: The id of this UpdateCorpRequest.
         :type id: str

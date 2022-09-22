@@ -33,7 +33,7 @@ class ShowSpResResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param used_accounts_count: 已用的企业并发数
+        :param used_accounts_count: SP下所有企业已使用的会议并发数量。
         :type used_accounts_count: int
         """
         
@@ -49,7 +49,7 @@ class ShowSpResResponse(SdkResponse):
     def used_accounts_count(self):
         """Gets the used_accounts_count of this ShowSpResResponse.
 
-        已用的企业并发数
+        SP下所有企业已使用的会议并发数量。
 
         :return: The used_accounts_count of this ShowSpResResponse.
         :rtype: int
@@ -60,7 +60,7 @@ class ShowSpResResponse(SdkResponse):
     def used_accounts_count(self, used_accounts_count):
         """Sets the used_accounts_count of this ShowSpResResponse.
 
-        已用的企业并发数
+        SP下所有企业已使用的会议并发数量。
 
         :param used_accounts_count: The used_accounts_count of this ShowSpResResponse.
         :type used_accounts_count: int

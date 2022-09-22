@@ -27,7 +27,8 @@ class EventItemDetail:
         'resource_name': 'str',
         'event_state': 'str',
         'event_level': 'str',
-        'event_user': 'str'
+        'event_user': 'str',
+        'event_type': 'str'
     }
 
     attribute_map = {
@@ -37,10 +38,11 @@ class EventItemDetail:
         'resource_name': 'resource_name',
         'event_state': 'event_state',
         'event_level': 'event_level',
-        'event_user': 'event_user'
+        'event_user': 'event_user',
+        'event_type': 'event_type'
     }
 
-    def __init__(self, content=None, group_id=None, resource_id=None, resource_name=None, event_state=None, event_level=None, event_user=None):
+    def __init__(self, content=None, group_id=None, resource_id=None, resource_name=None, event_state=None, event_level=None, event_user=None, event_type=None):
         """EventItemDetail
 
         The model defined in huaweicloud sdk
@@ -59,6 +61,8 @@ class EventItemDetail:
         :type event_level: str
         :param event_user: 事件用户。  支持字母 数字_ -/空格 ，最大长度64。
         :type event_user: str
+        :param event_type: 事件类型。 枚举类型，EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，用户自已不能上报，只能传EVENT.CUSTOM。
+        :type event_type: str
         """
         
         
@@ -70,6 +74,7 @@ class EventItemDetail:
         self._event_state = None
         self._event_level = None
         self._event_user = None
+        self._event_type = None
         self.discriminator = None
 
         if content is not None:
@@ -86,6 +91,8 @@ class EventItemDetail:
             self.event_level = event_level
         if event_user is not None:
             self.event_user = event_user
+        if event_type is not None:
+            self.event_type = event_type
 
     @property
     def content(self):
@@ -240,6 +247,28 @@ class EventItemDetail:
         :type event_user: str
         """
         self._event_user = event_user
+
+    @property
+    def event_type(self):
+        """Gets the event_type of this EventItemDetail.
+
+        事件类型。 枚举类型，EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，用户自已不能上报，只能传EVENT.CUSTOM。
+
+        :return: The event_type of this EventItemDetail.
+        :rtype: str
+        """
+        return self._event_type
+
+    @event_type.setter
+    def event_type(self, event_type):
+        """Sets the event_type of this EventItemDetail.
+
+        事件类型。 枚举类型，EVENT.SYS或EVENT.CUSTOM，EVENT.SYS为系统事件，用户自已不能上报，只能传EVENT.CUSTOM。
+
+        :param event_type: The event_type of this EventItemDetail.
+        :type event_type: str
+        """
+        self._event_type = event_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

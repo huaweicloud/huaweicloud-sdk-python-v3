@@ -57,31 +57,31 @@ class QueryDeptResultDTO:
 
         The model defined in huaweicloud sdk
 
-        :param dept_code: 部门编码，企业内唯一
+        :param dept_code: 部门编码，企业内唯一。
         :type dept_code: str
-        :param dept_level: 部门层级
+        :param dept_level: 部门层级。
         :type dept_level: int
-        :param dept_name: 部门名称
+        :param dept_name: 部门名称。
         :type dept_name: str
-        :param dept_name_path: 部门名路径
+        :param dept_name_path: 部门名路径。
         :type dept_name_path: str
-        :param is_leaf_node: 是否叶子
+        :param is_leaf_node: 是否叶子节点。
         :type is_leaf_node: bool
-        :param parent_dept_code: 父部门编号
+        :param parent_dept_code: 父部门编码。
         :type parent_dept_code: str
-        :param dept_code_path: 部门编码路径
+        :param dept_code_path: 部门编码路径。
         :type dept_code_path: str
-        :param note: 备注
+        :param note: 备注。
         :type note: str
-        :param corp_id: 企业id
+        :param corp_id: 企业ID。
         :type corp_id: str
-        :param in_permission: 其他用户对该部门下用户的访问权限
+        :param in_permission: 其他用户对该部门下用户的访问权限。
         :type in_permission: str
-        :param out_permission: 该部门下用户访问权限控制
+        :param out_permission: 该部门下用户访问权限控制。
         :type out_permission: str
-        :param designated_out_dept_codes: 允许访问的部门列表，id为部门编码。
+        :param designated_out_dept_codes: 允许访问的部门列表。
         :type designated_out_dept_codes: list[:class:`huaweicloudsdkmeeting.v1.IdMarkDTO`]
-        :param sort_level: 部门排序号
+        :param sort_level: 部门排序号。
         :type sort_level: int
         """
         
@@ -133,7 +133,7 @@ class QueryDeptResultDTO:
     def dept_code(self):
         """Gets the dept_code of this QueryDeptResultDTO.
 
-        部门编码，企业内唯一
+        部门编码，企业内唯一。
 
         :return: The dept_code of this QueryDeptResultDTO.
         :rtype: str
@@ -144,7 +144,7 @@ class QueryDeptResultDTO:
     def dept_code(self, dept_code):
         """Sets the dept_code of this QueryDeptResultDTO.
 
-        部门编码，企业内唯一
+        部门编码，企业内唯一。
 
         :param dept_code: The dept_code of this QueryDeptResultDTO.
         :type dept_code: str
@@ -155,7 +155,7 @@ class QueryDeptResultDTO:
     def dept_level(self):
         """Gets the dept_level of this QueryDeptResultDTO.
 
-        部门层级
+        部门层级。
 
         :return: The dept_level of this QueryDeptResultDTO.
         :rtype: int
@@ -166,7 +166,7 @@ class QueryDeptResultDTO:
     def dept_level(self, dept_level):
         """Sets the dept_level of this QueryDeptResultDTO.
 
-        部门层级
+        部门层级。
 
         :param dept_level: The dept_level of this QueryDeptResultDTO.
         :type dept_level: int
@@ -177,7 +177,7 @@ class QueryDeptResultDTO:
     def dept_name(self):
         """Gets the dept_name of this QueryDeptResultDTO.
 
-        部门名称
+        部门名称。
 
         :return: The dept_name of this QueryDeptResultDTO.
         :rtype: str
@@ -188,7 +188,7 @@ class QueryDeptResultDTO:
     def dept_name(self, dept_name):
         """Sets the dept_name of this QueryDeptResultDTO.
 
-        部门名称
+        部门名称。
 
         :param dept_name: The dept_name of this QueryDeptResultDTO.
         :type dept_name: str
@@ -199,7 +199,7 @@ class QueryDeptResultDTO:
     def dept_name_path(self):
         """Gets the dept_name_path of this QueryDeptResultDTO.
 
-        部门名路径
+        部门名路径。
 
         :return: The dept_name_path of this QueryDeptResultDTO.
         :rtype: str
@@ -210,7 +210,7 @@ class QueryDeptResultDTO:
     def dept_name_path(self, dept_name_path):
         """Sets the dept_name_path of this QueryDeptResultDTO.
 
-        部门名路径
+        部门名路径。
 
         :param dept_name_path: The dept_name_path of this QueryDeptResultDTO.
         :type dept_name_path: str
@@ -221,7 +221,7 @@ class QueryDeptResultDTO:
     def is_leaf_node(self):
         """Gets the is_leaf_node of this QueryDeptResultDTO.
 
-        是否叶子
+        是否叶子节点。
 
         :return: The is_leaf_node of this QueryDeptResultDTO.
         :rtype: bool
@@ -232,7 +232,7 @@ class QueryDeptResultDTO:
     def is_leaf_node(self, is_leaf_node):
         """Sets the is_leaf_node of this QueryDeptResultDTO.
 
-        是否叶子
+        是否叶子节点。
 
         :param is_leaf_node: The is_leaf_node of this QueryDeptResultDTO.
         :type is_leaf_node: bool
@@ -243,7 +243,7 @@ class QueryDeptResultDTO:
     def parent_dept_code(self):
         """Gets the parent_dept_code of this QueryDeptResultDTO.
 
-        父部门编号
+        父部门编码。
 
         :return: The parent_dept_code of this QueryDeptResultDTO.
         :rtype: str
@@ -254,7 +254,7 @@ class QueryDeptResultDTO:
     def parent_dept_code(self, parent_dept_code):
         """Sets the parent_dept_code of this QueryDeptResultDTO.
 
-        父部门编号
+        父部门编码。
 
         :param parent_dept_code: The parent_dept_code of this QueryDeptResultDTO.
         :type parent_dept_code: str
@@ -265,7 +265,7 @@ class QueryDeptResultDTO:
     def dept_code_path(self):
         """Gets the dept_code_path of this QueryDeptResultDTO.
 
-        部门编码路径
+        部门编码路径。
 
         :return: The dept_code_path of this QueryDeptResultDTO.
         :rtype: str
@@ -276,7 +276,7 @@ class QueryDeptResultDTO:
     def dept_code_path(self, dept_code_path):
         """Sets the dept_code_path of this QueryDeptResultDTO.
 
-        部门编码路径
+        部门编码路径。
 
         :param dept_code_path: The dept_code_path of this QueryDeptResultDTO.
         :type dept_code_path: str
@@ -287,7 +287,7 @@ class QueryDeptResultDTO:
     def note(self):
         """Gets the note of this QueryDeptResultDTO.
 
-        备注
+        备注。
 
         :return: The note of this QueryDeptResultDTO.
         :rtype: str
@@ -298,7 +298,7 @@ class QueryDeptResultDTO:
     def note(self, note):
         """Sets the note of this QueryDeptResultDTO.
 
-        备注
+        备注。
 
         :param note: The note of this QueryDeptResultDTO.
         :type note: str
@@ -309,7 +309,7 @@ class QueryDeptResultDTO:
     def corp_id(self):
         """Gets the corp_id of this QueryDeptResultDTO.
 
-        企业id
+        企业ID。
 
         :return: The corp_id of this QueryDeptResultDTO.
         :rtype: str
@@ -320,7 +320,7 @@ class QueryDeptResultDTO:
     def corp_id(self, corp_id):
         """Sets the corp_id of this QueryDeptResultDTO.
 
-        企业id
+        企业ID。
 
         :param corp_id: The corp_id of this QueryDeptResultDTO.
         :type corp_id: str
@@ -331,7 +331,7 @@ class QueryDeptResultDTO:
     def in_permission(self):
         """Gets the in_permission of this QueryDeptResultDTO.
 
-        其他用户对该部门下用户的访问权限
+        其他用户对该部门下用户的访问权限。
 
         :return: The in_permission of this QueryDeptResultDTO.
         :rtype: str
@@ -342,7 +342,7 @@ class QueryDeptResultDTO:
     def in_permission(self, in_permission):
         """Sets the in_permission of this QueryDeptResultDTO.
 
-        其他用户对该部门下用户的访问权限
+        其他用户对该部门下用户的访问权限。
 
         :param in_permission: The in_permission of this QueryDeptResultDTO.
         :type in_permission: str
@@ -353,7 +353,7 @@ class QueryDeptResultDTO:
     def out_permission(self):
         """Gets the out_permission of this QueryDeptResultDTO.
 
-        该部门下用户访问权限控制
+        该部门下用户访问权限控制。
 
         :return: The out_permission of this QueryDeptResultDTO.
         :rtype: str
@@ -364,7 +364,7 @@ class QueryDeptResultDTO:
     def out_permission(self, out_permission):
         """Sets the out_permission of this QueryDeptResultDTO.
 
-        该部门下用户访问权限控制
+        该部门下用户访问权限控制。
 
         :param out_permission: The out_permission of this QueryDeptResultDTO.
         :type out_permission: str
@@ -375,7 +375,7 @@ class QueryDeptResultDTO:
     def designated_out_dept_codes(self):
         """Gets the designated_out_dept_codes of this QueryDeptResultDTO.
 
-        允许访问的部门列表，id为部门编码。
+        允许访问的部门列表。
 
         :return: The designated_out_dept_codes of this QueryDeptResultDTO.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.IdMarkDTO`]
@@ -386,7 +386,7 @@ class QueryDeptResultDTO:
     def designated_out_dept_codes(self, designated_out_dept_codes):
         """Sets the designated_out_dept_codes of this QueryDeptResultDTO.
 
-        允许访问的部门列表，id为部门编码。
+        允许访问的部门列表。
 
         :param designated_out_dept_codes: The designated_out_dept_codes of this QueryDeptResultDTO.
         :type designated_out_dept_codes: list[:class:`huaweicloudsdkmeeting.v1.IdMarkDTO`]
@@ -397,7 +397,7 @@ class QueryDeptResultDTO:
     def sort_level(self):
         """Gets the sort_level of this QueryDeptResultDTO.
 
-        部门排序号
+        部门排序号。
 
         :return: The sort_level of this QueryDeptResultDTO.
         :rtype: int
@@ -408,7 +408,7 @@ class QueryDeptResultDTO:
     def sort_level(self, sort_level):
         """Sets the sort_level of this QueryDeptResultDTO.
 
-        部门排序号
+        部门排序号。
 
         :param sort_level: The sort_level of this QueryDeptResultDTO.
         :type sort_level: int

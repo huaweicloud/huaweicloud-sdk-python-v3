@@ -73,7 +73,7 @@ class UpdateRequestThrottlingPolicyV2Response(SdkResponse):
         :type type: int
         :param enable_adaptive_control: 是否开启动态流控： - TRUE - FALSE  暂不支持
         :type enable_adaptive_control: str
-        :param user_call_limits: [用户流量限制是指一个API在时长之内每一个用户能访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。](tag:hws,hws_hk,hcs,fcs,g42)[site不支持用户流量限制,输入值为0](tag:Site)
+        :param user_call_limits: 用户流量限制是指一个API在时长之内每一个用户能访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。
         :type user_call_limits: int
         :param time_interval: 流量控制的时长单位。与“流量限制次数”配合使用，表示单位时间内的API请求次数上限。输入的值不超过2147483647。正整数。
         :type time_interval: int
@@ -290,7 +290,7 @@ class UpdateRequestThrottlingPolicyV2Response(SdkResponse):
     def user_call_limits(self):
         """Gets the user_call_limits of this UpdateRequestThrottlingPolicyV2Response.
 
-        [用户流量限制是指一个API在时长之内每一个用户能访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。](tag:hws,hws_hk,hcs,fcs,g42)[site不支持用户流量限制,输入值为0](tag:Site)
+        用户流量限制是指一个API在时长之内每一个用户能访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。
 
         :return: The user_call_limits of this UpdateRequestThrottlingPolicyV2Response.
         :rtype: int
@@ -301,7 +301,7 @@ class UpdateRequestThrottlingPolicyV2Response(SdkResponse):
     def user_call_limits(self, user_call_limits):
         """Sets the user_call_limits of this UpdateRequestThrottlingPolicyV2Response.
 
-        [用户流量限制是指一个API在时长之内每一个用户能访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。](tag:hws,hws_hk,hcs,fcs,g42)[site不支持用户流量限制,输入值为0](tag:Site)
+        用户流量限制是指一个API在时长之内每一个用户能访问的次数上限，该数值不超过API流量限制值。输入的值不超过2147483647。正整数。
 
         :param user_call_limits: The user_call_limits of this UpdateRequestThrottlingPolicyV2Response.
         :type user_call_limits: int

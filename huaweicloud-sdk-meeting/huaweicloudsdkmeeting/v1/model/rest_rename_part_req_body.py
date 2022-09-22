@@ -41,7 +41,7 @@ class RestRenamePartReqBody:
         :type participant_id: str
         :param number: 与会者号码。
         :type number: str
-        :param new_name: 新名字。
+        :param new_name: 新名称。
         :type new_name: str
         """
         
@@ -105,7 +105,7 @@ class RestRenamePartReqBody:
     def new_name(self):
         """Gets the new_name of this RestRenamePartReqBody.
 
-        新名字。
+        新名称。
 
         :return: The new_name of this RestRenamePartReqBody.
         :rtype: str
@@ -116,7 +116,7 @@ class RestRenamePartReqBody:
     def new_name(self, new_name):
         """Sets the new_name of this RestRenamePartReqBody.
 
-        新名字。
+        新名称。
 
         :param new_name: The new_name of this RestRenamePartReqBody.
         :type new_name: str

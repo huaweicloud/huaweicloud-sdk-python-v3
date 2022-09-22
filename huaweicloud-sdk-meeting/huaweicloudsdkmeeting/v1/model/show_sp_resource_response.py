@@ -81,11 +81,11 @@ class ShowSpResourceResponse(SdkResponse):
         :type hw_vision_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         :param idea_hub_count: 
         :type idea_hub_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
-        :param enable_pstn: 在创建SP的时候设置的pstn权限开关
+        :param enable_pstn: 在创建企业的时候设置的pstn权限开关。
         :type enable_pstn: bool
-        :param enable_sms: 在创建SP的时候设置发送短信开关
+        :param enable_sms: 企业是否通过短信形式发送会议通知。
         :type enable_sms: bool
-        :param group_list: sp管理员绑定的分组列表
+        :param group_list: SP管理员绑定的分组列表。
         :type group_list: list[:class:`huaweicloudsdkmeeting.v1.QueryCorpGroupDTO`]
         """
         
@@ -360,7 +360,7 @@ class ShowSpResourceResponse(SdkResponse):
     def enable_pstn(self):
         """Gets the enable_pstn of this ShowSpResourceResponse.
 
-        在创建SP的时候设置的pstn权限开关
+        在创建企业的时候设置的pstn权限开关。
 
         :return: The enable_pstn of this ShowSpResourceResponse.
         :rtype: bool
@@ -371,7 +371,7 @@ class ShowSpResourceResponse(SdkResponse):
     def enable_pstn(self, enable_pstn):
         """Sets the enable_pstn of this ShowSpResourceResponse.
 
-        在创建SP的时候设置的pstn权限开关
+        在创建企业的时候设置的pstn权限开关。
 
         :param enable_pstn: The enable_pstn of this ShowSpResourceResponse.
         :type enable_pstn: bool
@@ -382,7 +382,7 @@ class ShowSpResourceResponse(SdkResponse):
     def enable_sms(self):
         """Gets the enable_sms of this ShowSpResourceResponse.
 
-        在创建SP的时候设置发送短信开关
+        企业是否通过短信形式发送会议通知。
 
         :return: The enable_sms of this ShowSpResourceResponse.
         :rtype: bool
@@ -393,7 +393,7 @@ class ShowSpResourceResponse(SdkResponse):
     def enable_sms(self, enable_sms):
         """Sets the enable_sms of this ShowSpResourceResponse.
 
-        在创建SP的时候设置发送短信开关
+        企业是否通过短信形式发送会议通知。
 
         :param enable_sms: The enable_sms of this ShowSpResourceResponse.
         :type enable_sms: bool
@@ -404,7 +404,7 @@ class ShowSpResourceResponse(SdkResponse):
     def group_list(self):
         """Gets the group_list of this ShowSpResourceResponse.
 
-        sp管理员绑定的分组列表
+        SP管理员绑定的分组列表。
 
         :return: The group_list of this ShowSpResourceResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.QueryCorpGroupDTO`]
@@ -415,7 +415,7 @@ class ShowSpResourceResponse(SdkResponse):
     def group_list(self, group_list):
         """Sets the group_list of this ShowSpResourceResponse.
 
-        sp管理员绑定的分组列表
+        SP管理员绑定的分组列表。
 
         :param group_list: The group_list of this ShowSpResourceResponse.
         :type group_list: list[:class:`huaweicloudsdkmeeting.v1.QueryCorpGroupDTO`]

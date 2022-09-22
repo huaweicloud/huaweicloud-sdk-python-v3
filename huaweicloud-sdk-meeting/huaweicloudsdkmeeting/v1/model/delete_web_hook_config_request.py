@@ -33,7 +33,7 @@ class DeleteWebHookConfigRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 订阅配置记录id
+        :param id: 订阅配置记录ID。
         :type id: str
         """
         
@@ -48,7 +48,7 @@ class DeleteWebHookConfigRequest:
     def id(self):
         """Gets the id of this DeleteWebHookConfigRequest.
 
-        订阅配置记录id
+        订阅配置记录ID。
 
         :return: The id of this DeleteWebHookConfigRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class DeleteWebHookConfigRequest:
     def id(self, id):
         """Sets the id of this DeleteWebHookConfigRequest.
 
-        订阅配置记录id
+        订阅配置记录ID。
 
         :param id: The id of this DeleteWebHookConfigRequest.
         :type id: str

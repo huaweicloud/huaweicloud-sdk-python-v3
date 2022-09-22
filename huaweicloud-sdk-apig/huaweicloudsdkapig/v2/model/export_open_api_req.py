@@ -67,8 +67,7 @@ class ExportOpenApiReq:
         self._apis = None
         self.discriminator = None
 
-        if env_id is not None:
-            self.env_id = env_id
+        self.env_id = env_id
         self.group_id = group_id
         if define is not None:
             self.define = define

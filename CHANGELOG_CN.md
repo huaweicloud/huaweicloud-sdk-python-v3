@@ -1,3 +1,303 @@
+# 3.1.3 2022-09-22
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateApiV2`新增请求参数 `network_type`、`alias_urn`、`network_type`、`alias_urn`
+  - 接口`ShowDetailsOfApiV2`新增响应参数 `network_type`、`alias_urn`、`network_type`、`alias_urn`
+  - 接口`UpdateApiV2`:
+    - 新增请求参数 `network_type`、`alias_urn`、`network_type`、`alias_urn`
+    - 新增响应参数 `network_type`、`alias_urn`、`network_type`、`alias_urn`
+  - 接口`ListApiVersionDetailV2`新增响应参数 `network_type`、`alias_urn`、`network_type`、`alias_urn`
+  - 接口`UpdateDomainV2`移除响应参数 `url_domain`、`id`、`status`、`min_ssl_version`
+  - 接口`ListApisUnbindedToAclPolicyV2`新增响应参数 `req_uri`、`auth_type`
+  - 接口`ListCustomAuthorizersV2`新增响应参数 `authorizer_version`、`authorizer_alias_uri`
+  - 接口`CreateCustomAuthorizerV2`新增请求参数 `authorizer_version`、`authorizer_alias_uri`
+  - 接口`ShowDetailsOfCustomAuthorizersV2`新增响应参数 `authorizer_version`、`authorizer_alias_uri`
+  - 接口`UpdateCustomAuthorizerV2`:
+    - 新增请求参数 `authorizer_version`、`authorizer_alias_uri`
+    - 新增响应参数 `authorizer_version`、`authorizer_alias_uri`
+  - 接口`ExportApiDefinitionsV2`请求参数`env_id`改为必填
+  - 接口`ListTagsV2`:
+    - 新增响应参数 `tags`
+    - 移除响应参数 `responses`
+  - 接口`CreateFeatureV2`移除响应参数 `id`、`name`、`enable`、`config`、`instance_id`、`update_time`
+  - 接口`ShowDetailsOfInstanceV2`新增响应参数 `ingress_ip_v6`
+  - 接口`UpdateInstanceV2`新增响应参数 `ingress_ip_v6`
+
+### HuaweiCloud SDK CES
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateEvents`新增请求参数 `event_type`
+  - 接口`ListEventDetail`新增响应参数 `event_type`
+
+### HuaweiCloud SDK CloudPipeline
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowAgentStatus`、`RegisterAgent`
+
+### HuaweiCloud SDK CodeCheck
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CheckRecord`新增响应参数 `check_end_time`
+  - 接口`ShowTaskDefects`新增响应参数 `events`
+  - 接口`CheckParameters`移除响应参数 `name`、`cfg_key`、`default_value`、`option_value`、`is_required`、`description`、`type`、`status`
+  - 接口`CheckRulesetParameters`新增响应参数 `value`
+
+### HuaweiCloud SDK CPTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListProjectSets`:
+    - 新增响应参数 `source`
+    - 移除响应参数 `status`
+  - 接口`ShowTaskSet`新增响应参数 `parallel`
+
+### HuaweiCloud SDK CTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListTrackers`新增响应参数 `group_id`、`stream_id`
+
+### HuaweiCloud SDK DDM
+
+- _新增特性_
+  - 支持接口`ResetAdministrator`、`ValidateWeakPassword`、`ResizeFlavor`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstance`新增请求参数 `admin_user_name`、`admin_user_password`
+  - 接口`ShowInstance`新增响应参数 `admin_user_name`
+  - 接口`ListSlowLog`新增响应参数 `host`
+
+### HuaweiCloud SDK DevStar
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowApplicationV3`响应参数`deploy_type`新增枚举值`none`
+  - 接口`ShowApplicationDependentResources`新增响应参数 `subscribe_guide`
+  - 接口`ListApplicationsV6`响应参数`deploy_type`新增枚举值`none`
+  - 接口`ShowApplicationReleaseRepositories`新增响应参数 `category_name`
+  - 接口`ShowTemplateV3`新增响应参数 `subscribe_guide`
+  - 接口`ListTemplatesV2`新增响应参数 `subscribe_guide`
+  - 接口`ListTemplates`新增响应参数 `subscribe_guide`
+
+### HuaweiCloud SDK EG
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListApiVersions`
+    - `ListEventSchema`
+    - `CreateEventSchema`
+    - `ShowDetailOfEventSchema`
+    - `UpdateEventSchema`
+    - `DeleteEventSchema`
+    - `ListEventSchemaVersions`
+    - `CreateEventSchemaVersion`
+    - `ShowDetailOfEventSchemaVersion`
+    - `DeleteEventSchemaVersion`
+    - `DiscoverEventSchemaFromData`
+    - `ListConnections`
+    - `CreateConnection`
+    - `ShowDetailOfConnection`
+    - `UpdateConnection`
+    - `DeleteConnection`
+    - `ListAgencies`
+    - `CreateAgencies`
+    - `ListTriggers`
+    - `UpdateEndpoint`
+    - `DeleteEndpoint`
+    - `ListEndpoints`
+    - `CreateEndpoint`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListEventSources` 移除响应参数 `id`、`name`、`label`、`description`、`provider_type`、`event_types`、`created_time`、`updated_time`、`channel_id`、`channel_name`
+  - 接口`CreateEventSource`:
+    - 新增请求参数 `type`、`detail`
+    - 新增响应参数 `event_types`、`type`、`detail`、`status`
+  - 接口`ShowDetailOfEventSource` 新增响应参数 `event_types`、`type`、`detail`、`status`
+  - 接口`UpdateEventSource`:
+    - 新增请求参数 `detail`
+    - 新增响应参数 `event_types`、`type`、`detail`、`status`
+  - 接口`ListEventTarget`移除响应参数 `name`、`label`、`metadata`
+  - 接口`ListSubscriptions`新增响应参数 `connection_id`
+  - 接口`CreateSubscription`:
+    - 新增请求参数 `connection_id`
+    - 新增响应参数 `connection_id`
+  - 接口`ShowDetailOfSubscription` 新增响应参数 `connection_id`
+  - 接口`UpdateSubscription`:
+    - 新增请求参数 `connection_id`
+    - 新增响应参数 `connection_id`
+  - 接口`CreateSubscriptionTarget`:
+    - 新增请求参数 `connection_id`
+    - 新增响应参数 `connection_id`
+  - 接口`ShowDetailOfSubscriptionTarget` 新增响应参数 `connection_id`
+  - 接口`UpdateSubscriptionTarget`:
+    - 新增请求参数 `connection_id`
+    - 新增响应参数 `connection_id`
+  - 接口`ListQuotas`:
+    - 请求参数`type`新增枚举值`CONNECTION`、`PRIVATE_ENDPOINT`、`SOURCE_RABBITMQ`
+    - 响应参数`type`新增枚举值`CONNECTION`、`PRIVATE_ENDPOINT`、`SOURCE_RABBITMQ`
+    - 响应参数`max`类型调整 `string` -> `int32`
+    - 响应参数`min`类型调整 `string` -> `int32`
+    - 响应参数`quota`类型调整 `string` -> `int32`
+    - 响应参数`used`类型调整 `string` -> `int32`
+
+### HuaweiCloud SDK EIP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreatePublicip`新增请求参数 `port_id`
+  - 接口`CreatePrePaidPublicip`新增请求参数 `port_id`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持接口`ListGaussMySqlInstanceDetailInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListDeviceMessages`新增响应参数 `error_info`
+  - 接口`ShowDeviceMessage`新增响应参数 `error_info`
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 支持接口`CheckImageModeration`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RunCreateAudioModerationJob`请求参数`url`、`categories`改为必填
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeIdCard`:
+    - 新增请求参数 `detect_copy`
+    - 新增响应参数 `detect_copy_result`
+
+### HuaweiCloud SDK OMS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListTaskGroup`
+    - `CreateTaskGroup`
+    - `ShowTaskGroup`
+    - `DeleteTaskGroup`
+    - `StopTaskGroup`
+    - `StartTaskGroup`
+    - `RetryTaskGroup`
+    - `UpdateTaskGroup`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListTasks`新增响应参数 `enable_metadata_migration`、`object_overwrite_mode`、`consistency_check`、`enable_requester_pays`
+  - 接口`CreateTask`:
+    - 新增请求参数 `enable_metadata_migration`、`object_overwrite_mode`、`consistency_check`、`enable_requester_pays`
+    - 新增响应参数 `id`、`task_name`
+  - 接口`ShowTask`:
+    - 新增响应参数 `enable_metadata_migration`、`object_overwrite_mode`、`consistency_check`、`enable_requester_pays`
+    - 请求参数`task_id`类型调整 `int64` -> `string`
+  - 接口`DeleteTask`请求参数`task_id`类型调整 `int64` -> `string`
+  - 接口`StopTask`请求参数`task_id`类型调整 `int64` -> `string`
+  - 接口`StartTask`请求参数`task_id`类型调整 `int64` -> `string`
+  - 接口`UpdateBandwidthPolicy`请求参数`task_id`类型调整 `int64` -> `string`
+
+### HuaweiCloud SDK ProjectMan
+
+- _新增特性_
+  - 支持接口`DownloadImageFile`、`ListScrumProjectStatuses`、`UploadAttachments`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RabbitMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`BatchRestartOrDeleteInstances`请求参数`all_failure`新增枚举值`rabbitmq`, 移除枚举值`true`、`false`
+
+### HuaweiCloud SDK SMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListTemplates`移除响应参数 `disks`
+  - 接口`ShowTemplate`移除响应参数 `disks`
+  - 接口`UpdateMigproject`移除请求参数 `disks`
+  - 接口`ShowMigproject`移除响应参数 `disks`
+
+### HuaweiCloud SDK VOD
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`PublishAssets`新增响应参数 `pack_type`、`pack_type`
+  - 接口`UnpublishAssets`新增响应参数 `pack_type`、`pack_type`
+  - 接口`ShowAssetMeta`新增响应参数 `pack_type`、`pack_type`
+  - 接口`ShowAssetDetail`新增响应参数 `pack_type`、`pack_type`
+  - 接口`ShowTakeOverTaskDetails`新增响应参数 `pack_type`、`pack_type`
+  - 接口`ShowTakeOverAssetDetails`新增响应参数 `pack_type`、`pack_type`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DeleteIgnoreRule`新增响应参数 `rule`
+
 # 3.1.2 2022-09-15
 
 ### HuaweiCloud SDK BSS

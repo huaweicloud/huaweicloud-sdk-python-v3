@@ -63,9 +63,9 @@ class InstanceCreateReq:
 
         :param description: 实例描述
         :type description: str
-        :param maintain_begin: &#39;维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。&#39;  &#39;在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。&#39;
+        :param maintain_begin: 维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
         :type maintain_begin: str
-        :param maintain_end: &#39;维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。&#39;  &#39;在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次&#39;。
+        :param maintain_end: 维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
         :type maintain_end: str
         :param instance_name: 实例名称
         :type instance_name: str
@@ -169,7 +169,7 @@ class InstanceCreateReq:
     def maintain_begin(self):
         """Gets the maintain_begin of this InstanceCreateReq.
 
-        '维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。'
+        维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
         :return: The maintain_begin of this InstanceCreateReq.
         :rtype: str
@@ -180,7 +180,7 @@ class InstanceCreateReq:
     def maintain_begin(self, maintain_begin):
         """Sets the maintain_begin of this InstanceCreateReq.
 
-        '维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。'
+        维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
         :param maintain_begin: The maintain_begin of this InstanceCreateReq.
         :type maintain_begin: str
@@ -191,7 +191,7 @@ class InstanceCreateReq:
     def maintain_end(self):
         """Gets the maintain_end of this InstanceCreateReq.
 
-        '维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次'。
+        维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
         :return: The maintain_end of this InstanceCreateReq.
         :rtype: str
@@ -202,7 +202,7 @@ class InstanceCreateReq:
     def maintain_end(self, maintain_end):
         """Sets the maintain_end of this InstanceCreateReq.
 
-        '维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。'  '在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次'。
+        维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
         :param maintain_end: The maintain_end of this InstanceCreateReq.
         :type maintain_end: str

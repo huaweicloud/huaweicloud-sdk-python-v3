@@ -39,9 +39,9 @@ class PageParticipant:
 
         The model defined in huaweicloud sdk
 
-        :param data: 与会者信息。
+        :param data: 被邀请的与会者信息。包含预约会议时邀请的与会者和会中主持人邀请的与会者。
         :type data: list[:class:`huaweicloudsdkmeeting.v1.ParticipantInfo`]
-        :param offset: 记录数偏移，这一页之前共有多少条。
+        :param offset: 查询偏移量。
         :type offset: int
         :param limit: 每页的记录数。
         :type limit: int
@@ -70,7 +70,7 @@ class PageParticipant:
     def data(self):
         """Gets the data of this PageParticipant.
 
-        与会者信息。
+        被邀请的与会者信息。包含预约会议时邀请的与会者和会中主持人邀请的与会者。
 
         :return: The data of this PageParticipant.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.ParticipantInfo`]
@@ -81,7 +81,7 @@ class PageParticipant:
     def data(self, data):
         """Sets the data of this PageParticipant.
 
-        与会者信息。
+        被邀请的与会者信息。包含预约会议时邀请的与会者和会中主持人邀请的与会者。
 
         :param data: The data of this PageParticipant.
         :type data: list[:class:`huaweicloudsdkmeeting.v1.ParticipantInfo`]
@@ -92,7 +92,7 @@ class PageParticipant:
     def offset(self):
         """Gets the offset of this PageParticipant.
 
-        记录数偏移，这一页之前共有多少条。
+        查询偏移量。
 
         :return: The offset of this PageParticipant.
         :rtype: int
@@ -103,7 +103,7 @@ class PageParticipant:
     def offset(self, offset):
         """Sets the offset of this PageParticipant.
 
-        记录数偏移，这一页之前共有多少条。
+        查询偏移量。
 
         :param offset: The offset of this PageParticipant.
         :type offset: int

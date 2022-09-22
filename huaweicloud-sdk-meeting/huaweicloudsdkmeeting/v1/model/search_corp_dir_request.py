@@ -47,21 +47,21 @@ class SearchCorpDirRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        :param offset: 查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
         :type offset: int
-        :param limit: 查询数量 默认值：0 
+        :param limit: 查询数量。 默认值：10。 
         :type limit: int
-        :param search_key: 搜索条件。支持账号、姓名、手机、邮箱模糊搜索
+        :param search_key: 搜索条件。支持帐号、名称、手机、邮箱模糊搜索。
         :type search_key: str
-        :param dept_code: 部门编码 maxLength：32 minLength：0 
+        :param dept_code: 部门编码。 
         :type dept_code: str
-        :param query_sub_dept: 是否查询子部门下的用户 默认值：true 
+        :param query_sub_dept: 是否查询子部门下的用户。 默认值：true。 
         :type query_sub_dept: bool
-        :param search_scope: * 搜索范围 * NORMAL_USER表示查询普通用户。返回普通用户（响应中isHardTerminal&#x3D;false，type&#x3D;NORMAL_USER） * HARD_TERMINAL表示查询硬终端用户。返回大屏用户（响应中isHardTerminal&#x3D;false，type&#x3D;WHITE_BOARD）和硬终端用户（响应中isHardTerminal&#x3D;true，type&#x3D;HARD_TERMINAL） * ALL表示查询所有用户。 * 默认值为ALL 
+        :param search_scope: 搜索范围。默认值为ALL。 * NORMAL_USER - 查询普通用户。返回普通用户（响应中isHardTerminal&#x3D;false，type&#x3D;NORMAL_USER） * HARD_TERMINAL - 查询硬终端用户。返回大屏用户（响应中isHardTerminal&#x3D;false，type&#x3D;WHITE_BOARD）和硬终端用户（响应中isHardTerminal&#x3D;true，type&#x3D;HARD_TERMINAL） * ALL - 查询所有用户。 
         :type search_scope: str
         """
         
@@ -98,7 +98,7 @@ class SearchCorpDirRequest:
     def x_request_id(self):
         """Gets the x_request_id of this SearchCorpDirRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this SearchCorpDirRequest.
         :rtype: str
@@ -109,7 +109,7 @@ class SearchCorpDirRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this SearchCorpDirRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this SearchCorpDirRequest.
         :type x_request_id: str
@@ -120,7 +120,7 @@ class SearchCorpDirRequest:
     def accept_language(self):
         """Gets the accept_language of this SearchCorpDirRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this SearchCorpDirRequest.
         :rtype: str
@@ -131,7 +131,7 @@ class SearchCorpDirRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this SearchCorpDirRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this SearchCorpDirRequest.
         :type accept_language: str
@@ -142,7 +142,7 @@ class SearchCorpDirRequest:
     def offset(self):
         """Gets the offset of this SearchCorpDirRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
         :return: The offset of this SearchCorpDirRequest.
         :rtype: int
@@ -153,7 +153,7 @@ class SearchCorpDirRequest:
     def offset(self, offset):
         """Sets the offset of this SearchCorpDirRequest.
 
-        查询偏移量,若超过最大数量，则返回最后一页的数据 默认值：0 
+        查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
         :param offset: The offset of this SearchCorpDirRequest.
         :type offset: int
@@ -164,7 +164,7 @@ class SearchCorpDirRequest:
     def limit(self):
         """Gets the limit of this SearchCorpDirRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :return: The limit of this SearchCorpDirRequest.
         :rtype: int
@@ -175,7 +175,7 @@ class SearchCorpDirRequest:
     def limit(self, limit):
         """Sets the limit of this SearchCorpDirRequest.
 
-        查询数量 默认值：0 
+        查询数量。 默认值：10。 
 
         :param limit: The limit of this SearchCorpDirRequest.
         :type limit: int
@@ -186,7 +186,7 @@ class SearchCorpDirRequest:
     def search_key(self):
         """Gets the search_key of this SearchCorpDirRequest.
 
-        搜索条件。支持账号、姓名、手机、邮箱模糊搜索
+        搜索条件。支持帐号、名称、手机、邮箱模糊搜索。
 
         :return: The search_key of this SearchCorpDirRequest.
         :rtype: str
@@ -197,7 +197,7 @@ class SearchCorpDirRequest:
     def search_key(self, search_key):
         """Sets the search_key of this SearchCorpDirRequest.
 
-        搜索条件。支持账号、姓名、手机、邮箱模糊搜索
+        搜索条件。支持帐号、名称、手机、邮箱模糊搜索。
 
         :param search_key: The search_key of this SearchCorpDirRequest.
         :type search_key: str
@@ -208,7 +208,7 @@ class SearchCorpDirRequest:
     def dept_code(self):
         """Gets the dept_code of this SearchCorpDirRequest.
 
-        部门编码 maxLength：32 minLength：0 
+        部门编码。 
 
         :return: The dept_code of this SearchCorpDirRequest.
         :rtype: str
@@ -219,7 +219,7 @@ class SearchCorpDirRequest:
     def dept_code(self, dept_code):
         """Sets the dept_code of this SearchCorpDirRequest.
 
-        部门编码 maxLength：32 minLength：0 
+        部门编码。 
 
         :param dept_code: The dept_code of this SearchCorpDirRequest.
         :type dept_code: str
@@ -230,7 +230,7 @@ class SearchCorpDirRequest:
     def query_sub_dept(self):
         """Gets the query_sub_dept of this SearchCorpDirRequest.
 
-        是否查询子部门下的用户 默认值：true 
+        是否查询子部门下的用户。 默认值：true。 
 
         :return: The query_sub_dept of this SearchCorpDirRequest.
         :rtype: bool
@@ -241,7 +241,7 @@ class SearchCorpDirRequest:
     def query_sub_dept(self, query_sub_dept):
         """Sets the query_sub_dept of this SearchCorpDirRequest.
 
-        是否查询子部门下的用户 默认值：true 
+        是否查询子部门下的用户。 默认值：true。 
 
         :param query_sub_dept: The query_sub_dept of this SearchCorpDirRequest.
         :type query_sub_dept: bool
@@ -252,7 +252,7 @@ class SearchCorpDirRequest:
     def search_scope(self):
         """Gets the search_scope of this SearchCorpDirRequest.
 
-        * 搜索范围 * NORMAL_USER表示查询普通用户。返回普通用户（响应中isHardTerminal=false，type=NORMAL_USER） * HARD_TERMINAL表示查询硬终端用户。返回大屏用户（响应中isHardTerminal=false，type=WHITE_BOARD）和硬终端用户（响应中isHardTerminal=true，type=HARD_TERMINAL） * ALL表示查询所有用户。 * 默认值为ALL 
+        搜索范围。默认值为ALL。 * NORMAL_USER - 查询普通用户。返回普通用户（响应中isHardTerminal=false，type=NORMAL_USER） * HARD_TERMINAL - 查询硬终端用户。返回大屏用户（响应中isHardTerminal=false，type=WHITE_BOARD）和硬终端用户（响应中isHardTerminal=true，type=HARD_TERMINAL） * ALL - 查询所有用户。 
 
         :return: The search_scope of this SearchCorpDirRequest.
         :rtype: str
@@ -263,7 +263,7 @@ class SearchCorpDirRequest:
     def search_scope(self, search_scope):
         """Sets the search_scope of this SearchCorpDirRequest.
 
-        * 搜索范围 * NORMAL_USER表示查询普通用户。返回普通用户（响应中isHardTerminal=false，type=NORMAL_USER） * HARD_TERMINAL表示查询硬终端用户。返回大屏用户（响应中isHardTerminal=false，type=WHITE_BOARD）和硬终端用户（响应中isHardTerminal=true，type=HARD_TERMINAL） * ALL表示查询所有用户。 * 默认值为ALL 
+        搜索范围。默认值为ALL。 * NORMAL_USER - 查询普通用户。返回普通用户（响应中isHardTerminal=false，type=NORMAL_USER） * HARD_TERMINAL - 查询硬终端用户。返回大屏用户（响应中isHardTerminal=false，type=WHITE_BOARD）和硬终端用户（响应中isHardTerminal=true，type=HARD_TERMINAL） * ALL - 查询所有用户。 
 
         :param search_scope: The search_scope of this SearchCorpDirRequest.
         :type search_scope: str

@@ -45,19 +45,19 @@ class AddUserRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 用户名称
+        :param name: 企业用户名称。
         :type name: str
-        :param contact: 后台自动识别是手机还是邮箱,若为手机号，则要求和国家码匹配
+        :param contact: 后台自动识别是手机还是邮箱，若为手机号，则要求和国家码匹配。 &gt; * 当前中国站点企业支持使用邮箱或手机号进行邀请，手机仅支持+86开头的手机号。 &gt; * 当前国际站点企业仅支持使用邮箱进行邀请。 
         :type contact: str
-        :param country: 国家码。 国家和国家码的对应关系请参考:https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
-        :param dept_code: 部门编号，若不携带则默认根部门
+        :param dept_code: 部门编码，若不携带则默认根部门。
         :type dept_code: str
-        :param title: 职位
+        :param title: 职位。
         :type title: str
-        :param sort_level: 通讯录排序等级，序号越低优先级越高
+        :param sort_level: 通讯录排序等级，序号越低优先级越高。
         :type sort_level: int
-        :param desc: 备注
+        :param desc: 备注。
         :type desc: str
         """
         
@@ -89,7 +89,7 @@ class AddUserRequestBody:
     def name(self):
         """Gets the name of this AddUserRequestBody.
 
-        用户名称
+        企业用户名称。
 
         :return: The name of this AddUserRequestBody.
         :rtype: str
@@ -100,7 +100,7 @@ class AddUserRequestBody:
     def name(self, name):
         """Sets the name of this AddUserRequestBody.
 
-        用户名称
+        企业用户名称。
 
         :param name: The name of this AddUserRequestBody.
         :type name: str
@@ -111,7 +111,7 @@ class AddUserRequestBody:
     def contact(self):
         """Gets the contact of this AddUserRequestBody.
 
-        后台自动识别是手机还是邮箱,若为手机号，则要求和国家码匹配
+        后台自动识别是手机还是邮箱，若为手机号，则要求和国家码匹配。 > * 当前中国站点企业支持使用邮箱或手机号进行邀请，手机仅支持+86开头的手机号。 > * 当前国际站点企业仅支持使用邮箱进行邀请。 
 
         :return: The contact of this AddUserRequestBody.
         :rtype: str
@@ -122,7 +122,7 @@ class AddUserRequestBody:
     def contact(self, contact):
         """Sets the contact of this AddUserRequestBody.
 
-        后台自动识别是手机还是邮箱,若为手机号，则要求和国家码匹配
+        后台自动识别是手机还是邮箱，若为手机号，则要求和国家码匹配。 > * 当前中国站点企业支持使用邮箱或手机号进行邀请，手机仅支持+86开头的手机号。 > * 当前国际站点企业仅支持使用邮箱进行邀请。 
 
         :param contact: The contact of this AddUserRequestBody.
         :type contact: str
@@ -133,7 +133,7 @@ class AddUserRequestBody:
     def country(self):
         """Gets the country of this AddUserRequestBody.
 
-        国家码。 国家和国家码的对应关系请参考:https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this AddUserRequestBody.
         :rtype: str
@@ -144,7 +144,7 @@ class AddUserRequestBody:
     def country(self, country):
         """Sets the country of this AddUserRequestBody.
 
-        国家码。 国家和国家码的对应关系请参考:https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this AddUserRequestBody.
         :type country: str
@@ -155,7 +155,7 @@ class AddUserRequestBody:
     def dept_code(self):
         """Gets the dept_code of this AddUserRequestBody.
 
-        部门编号，若不携带则默认根部门
+        部门编码，若不携带则默认根部门。
 
         :return: The dept_code of this AddUserRequestBody.
         :rtype: str
@@ -166,7 +166,7 @@ class AddUserRequestBody:
     def dept_code(self, dept_code):
         """Sets the dept_code of this AddUserRequestBody.
 
-        部门编号，若不携带则默认根部门
+        部门编码，若不携带则默认根部门。
 
         :param dept_code: The dept_code of this AddUserRequestBody.
         :type dept_code: str
@@ -177,7 +177,7 @@ class AddUserRequestBody:
     def title(self):
         """Gets the title of this AddUserRequestBody.
 
-        职位
+        职位。
 
         :return: The title of this AddUserRequestBody.
         :rtype: str
@@ -188,7 +188,7 @@ class AddUserRequestBody:
     def title(self, title):
         """Sets the title of this AddUserRequestBody.
 
-        职位
+        职位。
 
         :param title: The title of this AddUserRequestBody.
         :type title: str
@@ -199,7 +199,7 @@ class AddUserRequestBody:
     def sort_level(self):
         """Gets the sort_level of this AddUserRequestBody.
 
-        通讯录排序等级，序号越低优先级越高
+        通讯录排序等级，序号越低优先级越高。
 
         :return: The sort_level of this AddUserRequestBody.
         :rtype: int
@@ -210,7 +210,7 @@ class AddUserRequestBody:
     def sort_level(self, sort_level):
         """Sets the sort_level of this AddUserRequestBody.
 
-        通讯录排序等级，序号越低优先级越高
+        通讯录排序等级，序号越低优先级越高。
 
         :param sort_level: The sort_level of this AddUserRequestBody.
         :type sort_level: int
@@ -221,7 +221,7 @@ class AddUserRequestBody:
     def desc(self):
         """Gets the desc of this AddUserRequestBody.
 
-        备注
+        备注。
 
         :return: The desc of this AddUserRequestBody.
         :rtype: str
@@ -232,7 +232,7 @@ class AddUserRequestBody:
     def desc(self, desc):
         """Sets the desc of this AddUserRequestBody.
 
-        备注
+        备注。
 
         :param desc: The desc of this AddUserRequestBody.
         :type desc: str

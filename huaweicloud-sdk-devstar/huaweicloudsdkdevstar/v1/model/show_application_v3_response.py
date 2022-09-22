@@ -93,7 +93,7 @@ class ShowApplicationV3Response(SdkResponse):
         :type template_types: list[:class:`huaweicloudsdkdevstar.v1.TemplateType`]
         :param template_deployment: 模板部署信息
         :type template_deployment: str
-        :param deploy_type: 部署类型, function:函数部署,cci:cci容器部署,ServiceStage(Jar):ServiceStage jar包部署,ServiceStage(Docker):ServiceStage Docker容器部署
+        :param deploy_type: 部署类型, function:函数部署,cci:cci容器部署,ServiceStage(Jar):ServiceStage jar包部署,ServiceStage(Docker):ServiceStage Docker容器部署,none不支持部署
         :type deploy_type: str
         :param creator_name: 创建者名称
         :type creator_name: str
@@ -447,7 +447,7 @@ class ShowApplicationV3Response(SdkResponse):
     def deploy_type(self):
         """Gets the deploy_type of this ShowApplicationV3Response.
 
-        部署类型, function:函数部署,cci:cci容器部署,ServiceStage(Jar):ServiceStage jar包部署,ServiceStage(Docker):ServiceStage Docker容器部署
+        部署类型, function:函数部署,cci:cci容器部署,ServiceStage(Jar):ServiceStage jar包部署,ServiceStage(Docker):ServiceStage Docker容器部署,none不支持部署
 
         :return: The deploy_type of this ShowApplicationV3Response.
         :rtype: str
@@ -458,7 +458,7 @@ class ShowApplicationV3Response(SdkResponse):
     def deploy_type(self, deploy_type):
         """Sets the deploy_type of this ShowApplicationV3Response.
 
-        部署类型, function:函数部署,cci:cci容器部署,ServiceStage(Jar):ServiceStage jar包部署,ServiceStage(Docker):ServiceStage Docker容器部署
+        部署类型, function:函数部署,cci:cci容器部署,ServiceStage(Jar):ServiceStage jar包部署,ServiceStage(Docker):ServiceStage Docker容器部署,none不支持部署
 
         :param deploy_type: The deploy_type of this ShowApplicationV3Response.
         :type deploy_type: str

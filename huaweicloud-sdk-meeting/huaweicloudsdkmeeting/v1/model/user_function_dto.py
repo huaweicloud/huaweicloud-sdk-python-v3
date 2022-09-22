@@ -33,7 +33,7 @@ class UserFunctionDTO:
 
         The model defined in huaweicloud sdk
 
-        :param enable_room: 是否开启智能协同白板功能。如果开启，表示该帐号是给智能协同白板使用，占用企业智能协同白板的资源，如果资源不足，则无法开启。 默认值：false。 
+        :param enable_room: 是否开启智能协同白板功能。如果开启，表示该帐号是给智能协同白板使用，占用企业智能协同白板的资源，如果资源不足，则无法开启。 默认值：false。 &gt; 该参数将废弃，请勿使用。 
         :type enable_room: bool
         """
         
@@ -49,7 +49,7 @@ class UserFunctionDTO:
     def enable_room(self):
         """Gets the enable_room of this UserFunctionDTO.
 
-        是否开启智能协同白板功能。如果开启，表示该帐号是给智能协同白板使用，占用企业智能协同白板的资源，如果资源不足，则无法开启。 默认值：false。 
+        是否开启智能协同白板功能。如果开启，表示该帐号是给智能协同白板使用，占用企业智能协同白板的资源，如果资源不足，则无法开启。 默认值：false。 > 该参数将废弃，请勿使用。 
 
         :return: The enable_room of this UserFunctionDTO.
         :rtype: bool
@@ -60,7 +60,7 @@ class UserFunctionDTO:
     def enable_room(self, enable_room):
         """Sets the enable_room of this UserFunctionDTO.
 
-        是否开启智能协同白板功能。如果开启，表示该帐号是给智能协同白板使用，占用企业智能协同白板的资源，如果资源不足，则无法开启。 默认值：false。 
+        是否开启智能协同白板功能。如果开启，表示该帐号是给智能协同白板使用，占用企业智能协同白板的资源，如果资源不足，则无法开启。 默认值：false。 > 该参数将废弃，请勿使用。 
 
         :param enable_room: The enable_room of this UserFunctionDTO.
         :type enable_room: bool

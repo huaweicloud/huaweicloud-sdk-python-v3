@@ -32,7 +32,8 @@ class IdCardResult:
         'valid_to': 'str',
         'verification_result': 'IdcardVerificationResult',
         'text_location': 'object',
-        'detect_reproduce_result': 'bool'
+        'detect_reproduce_result': 'bool',
+        'detect_copy_result': 'bool'
     }
 
     attribute_map = {
@@ -47,10 +48,11 @@ class IdCardResult:
         'valid_to': 'valid_to',
         'verification_result': 'verification_result',
         'text_location': 'text_location',
-        'detect_reproduce_result': 'detect_reproduce_result'
+        'detect_reproduce_result': 'detect_reproduce_result',
+        'detect_copy_result': 'detect_copy_result'
     }
 
-    def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, issue=None, valid_from=None, valid_to=None, verification_result=None, text_location=None, detect_reproduce_result=None):
+    def __init__(self, name=None, sex=None, birth=None, ethnicity=None, address=None, number=None, issue=None, valid_from=None, valid_to=None, verification_result=None, text_location=None, detect_reproduce_result=None, detect_copy_result=None):
         """IdCardResult
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class IdCardResult:
         :type text_location: object
         :param detect_reproduce_result: 判断身份证图像是否经过翻拍，“true”表示是翻拍，“false”表示未经过翻拍。仅在输入参数detect_reproduce为true时，返回该字段。 
         :type detect_reproduce_result: bool
+        :param detect_copy_result: 判断身份证图像是黑白复印件还是原件，“true”表示是复印件，“false”表示是原件。仅在输入参数detect_copy为true时，返回该字段。           
+        :type detect_copy_result: bool
         """
         
         
@@ -95,6 +99,7 @@ class IdCardResult:
         self._verification_result = None
         self._text_location = None
         self._detect_reproduce_result = None
+        self._detect_copy_result = None
         self.discriminator = None
 
         if name is not None:
@@ -121,6 +126,8 @@ class IdCardResult:
             self.text_location = text_location
         if detect_reproduce_result is not None:
             self.detect_reproduce_result = detect_reproduce_result
+        if detect_copy_result is not None:
+            self.detect_copy_result = detect_copy_result
 
     @property
     def name(self):
@@ -383,6 +390,28 @@ class IdCardResult:
         :type detect_reproduce_result: bool
         """
         self._detect_reproduce_result = detect_reproduce_result
+
+    @property
+    def detect_copy_result(self):
+        """Gets the detect_copy_result of this IdCardResult.
+
+        判断身份证图像是黑白复印件还是原件，“true”表示是复印件，“false”表示是原件。仅在输入参数detect_copy为true时，返回该字段。           
+
+        :return: The detect_copy_result of this IdCardResult.
+        :rtype: bool
+        """
+        return self._detect_copy_result
+
+    @detect_copy_result.setter
+    def detect_copy_result(self, detect_copy_result):
+        """Sets the detect_copy_result of this IdCardResult.
+
+        判断身份证图像是黑白复印件还是原件，“true”表示是复印件，“false”表示是原件。仅在输入参数detect_copy为true时，返回该字段。           
+
+        :param detect_copy_result: The detect_copy_result of this IdCardResult.
+        :type detect_copy_result: bool
+        """
+        self._detect_copy_result = detect_copy_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""

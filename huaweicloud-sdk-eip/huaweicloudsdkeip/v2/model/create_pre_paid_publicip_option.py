@@ -23,16 +23,18 @@ class CreatePrePaidPublicipOption:
     openapi_types = {
         'type': 'str',
         'ip_version': 'int',
-        'alias': 'str'
+        'alias': 'str',
+        'port_id': 'str'
     }
 
     attribute_map = {
         'type': 'type',
         'ip_version': 'ip_version',
-        'alias': 'alias'
+        'alias': 'alias',
+        'port_id': 'port_id'
     }
 
-    def __init__(self, type=None, ip_version=None, alias=None):
+    def __init__(self, type=None, ip_version=None, alias=None, port_id=None):
         """CreatePrePaidPublicipOption
 
         The model defined in huaweicloud sdk
@@ -43,6 +45,8 @@ class CreatePrePaidPublicipOption:
         :type ip_version: int
         :param alias: 功能说明：弹性公网IP名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
         :type alias: str
+        :param port_id: 功能说明：端口id  约束：必须是存在的端口id，如果该端口不存在或端口已绑定EIP则会提示出错。
+        :type port_id: str
         """
         
         
@@ -50,6 +54,7 @@ class CreatePrePaidPublicipOption:
         self._type = None
         self._ip_version = None
         self._alias = None
+        self._port_id = None
         self.discriminator = None
 
         self.type = type
@@ -57,6 +62,8 @@ class CreatePrePaidPublicipOption:
             self.ip_version = ip_version
         if alias is not None:
             self.alias = alias
+        if port_id is not None:
+            self.port_id = port_id
 
     @property
     def type(self):
@@ -123,6 +130,28 @@ class CreatePrePaidPublicipOption:
         :type alias: str
         """
         self._alias = alias
+
+    @property
+    def port_id(self):
+        """Gets the port_id of this CreatePrePaidPublicipOption.
+
+        功能说明：端口id  约束：必须是存在的端口id，如果该端口不存在或端口已绑定EIP则会提示出错。
+
+        :return: The port_id of this CreatePrePaidPublicipOption.
+        :rtype: str
+        """
+        return self._port_id
+
+    @port_id.setter
+    def port_id(self, port_id):
+        """Sets the port_id of this CreatePrePaidPublicipOption.
+
+        功能说明：端口id  约束：必须是存在的端口id，如果该端口不存在或端口已绑定EIP则会提示出错。
+
+        :param port_id: The port_id of this CreatePrePaidPublicipOption.
+        :type port_id: str
+        """
+        self._port_id = port_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

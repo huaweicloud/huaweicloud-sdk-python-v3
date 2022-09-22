@@ -57,31 +57,31 @@ class ShowCorpBasicInfoResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 企业id
+        :param id: 企业id。
         :type id: str
-        :param name: 企业名称
+        :param name: 企业名称。
         :type name: str
-        :param address: 企业所在地
+        :param address: 企业所在地。
         :type address: str
-        :param admin_name: 管理员名称
+        :param admin_name: 管理员名称。
         :type admin_name: str
-        :param account: 管理员账号
+        :param account: 管理员的华为云会议帐号。
         :type account: str
-        :param phone: 管理员手机
+        :param phone: 管理员手机。
         :type phone: str
-        :param country: 管理员手机所属的国家
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
-        :param email: 管理员邮箱
+        :param email: 管理员邮箱。
         :type email: str
-        :param enable_sms: 是否发送短信
+        :param enable_sms: 是否通过短信形式发送会议通知。
         :type enable_sms: bool
-        :param enable_cloud_disk: 是否开启云盘
+        :param enable_cloud_disk: 是否开启云盘。
         :type enable_cloud_disk: bool
-        :param enable_pstn: 是否具有pstn功能
+        :param enable_pstn: 是否具有pstn功能。
         :type enable_pstn: bool
-        :param auto_user_create: 是否支持自动开户
+        :param auto_user_create: 是否支持自动开户。
         :type auto_user_create: bool
-        :param corp_type: 企业类型
+        :param corp_type: 企业类型。 * 0：旗舰版 * 5：免费版 * 6：标准版 
         :type corp_type: int
         """
         
@@ -133,7 +133,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def id(self):
         """Gets the id of this ShowCorpBasicInfoResponse.
 
-        企业id
+        企业id。
 
         :return: The id of this ShowCorpBasicInfoResponse.
         :rtype: str
@@ -144,7 +144,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this ShowCorpBasicInfoResponse.
 
-        企业id
+        企业id。
 
         :param id: The id of this ShowCorpBasicInfoResponse.
         :type id: str
@@ -155,7 +155,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def name(self):
         """Gets the name of this ShowCorpBasicInfoResponse.
 
-        企业名称
+        企业名称。
 
         :return: The name of this ShowCorpBasicInfoResponse.
         :rtype: str
@@ -166,7 +166,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this ShowCorpBasicInfoResponse.
 
-        企业名称
+        企业名称。
 
         :param name: The name of this ShowCorpBasicInfoResponse.
         :type name: str
@@ -177,7 +177,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def address(self):
         """Gets the address of this ShowCorpBasicInfoResponse.
 
-        企业所在地
+        企业所在地。
 
         :return: The address of this ShowCorpBasicInfoResponse.
         :rtype: str
@@ -188,7 +188,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def address(self, address):
         """Sets the address of this ShowCorpBasicInfoResponse.
 
-        企业所在地
+        企业所在地。
 
         :param address: The address of this ShowCorpBasicInfoResponse.
         :type address: str
@@ -199,7 +199,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def admin_name(self):
         """Gets the admin_name of this ShowCorpBasicInfoResponse.
 
-        管理员名称
+        管理员名称。
 
         :return: The admin_name of this ShowCorpBasicInfoResponse.
         :rtype: str
@@ -210,7 +210,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def admin_name(self, admin_name):
         """Sets the admin_name of this ShowCorpBasicInfoResponse.
 
-        管理员名称
+        管理员名称。
 
         :param admin_name: The admin_name of this ShowCorpBasicInfoResponse.
         :type admin_name: str
@@ -221,7 +221,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def account(self):
         """Gets the account of this ShowCorpBasicInfoResponse.
 
-        管理员账号
+        管理员的华为云会议帐号。
 
         :return: The account of this ShowCorpBasicInfoResponse.
         :rtype: str
@@ -232,7 +232,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def account(self, account):
         """Sets the account of this ShowCorpBasicInfoResponse.
 
-        管理员账号
+        管理员的华为云会议帐号。
 
         :param account: The account of this ShowCorpBasicInfoResponse.
         :type account: str
@@ -243,7 +243,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def phone(self):
         """Gets the phone of this ShowCorpBasicInfoResponse.
 
-        管理员手机
+        管理员手机。
 
         :return: The phone of this ShowCorpBasicInfoResponse.
         :rtype: str
@@ -254,7 +254,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def phone(self, phone):
         """Sets the phone of this ShowCorpBasicInfoResponse.
 
-        管理员手机
+        管理员手机。
 
         :param phone: The phone of this ShowCorpBasicInfoResponse.
         :type phone: str
@@ -265,7 +265,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def country(self):
         """Gets the country of this ShowCorpBasicInfoResponse.
 
-        管理员手机所属的国家
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this ShowCorpBasicInfoResponse.
         :rtype: str
@@ -276,7 +276,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def country(self, country):
         """Sets the country of this ShowCorpBasicInfoResponse.
 
-        管理员手机所属的国家
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this ShowCorpBasicInfoResponse.
         :type country: str
@@ -287,7 +287,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def email(self):
         """Gets the email of this ShowCorpBasicInfoResponse.
 
-        管理员邮箱
+        管理员邮箱。
 
         :return: The email of this ShowCorpBasicInfoResponse.
         :rtype: str
@@ -298,7 +298,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def email(self, email):
         """Sets the email of this ShowCorpBasicInfoResponse.
 
-        管理员邮箱
+        管理员邮箱。
 
         :param email: The email of this ShowCorpBasicInfoResponse.
         :type email: str
@@ -309,7 +309,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def enable_sms(self):
         """Gets the enable_sms of this ShowCorpBasicInfoResponse.
 
-        是否发送短信
+        是否通过短信形式发送会议通知。
 
         :return: The enable_sms of this ShowCorpBasicInfoResponse.
         :rtype: bool
@@ -320,7 +320,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def enable_sms(self, enable_sms):
         """Sets the enable_sms of this ShowCorpBasicInfoResponse.
 
-        是否发送短信
+        是否通过短信形式发送会议通知。
 
         :param enable_sms: The enable_sms of this ShowCorpBasicInfoResponse.
         :type enable_sms: bool
@@ -331,7 +331,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def enable_cloud_disk(self):
         """Gets the enable_cloud_disk of this ShowCorpBasicInfoResponse.
 
-        是否开启云盘
+        是否开启云盘。
 
         :return: The enable_cloud_disk of this ShowCorpBasicInfoResponse.
         :rtype: bool
@@ -342,7 +342,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def enable_cloud_disk(self, enable_cloud_disk):
         """Sets the enable_cloud_disk of this ShowCorpBasicInfoResponse.
 
-        是否开启云盘
+        是否开启云盘。
 
         :param enable_cloud_disk: The enable_cloud_disk of this ShowCorpBasicInfoResponse.
         :type enable_cloud_disk: bool
@@ -353,7 +353,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def enable_pstn(self):
         """Gets the enable_pstn of this ShowCorpBasicInfoResponse.
 
-        是否具有pstn功能
+        是否具有pstn功能。
 
         :return: The enable_pstn of this ShowCorpBasicInfoResponse.
         :rtype: bool
@@ -364,7 +364,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def enable_pstn(self, enable_pstn):
         """Sets the enable_pstn of this ShowCorpBasicInfoResponse.
 
-        是否具有pstn功能
+        是否具有pstn功能。
 
         :param enable_pstn: The enable_pstn of this ShowCorpBasicInfoResponse.
         :type enable_pstn: bool
@@ -375,7 +375,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def auto_user_create(self):
         """Gets the auto_user_create of this ShowCorpBasicInfoResponse.
 
-        是否支持自动开户
+        是否支持自动开户。
 
         :return: The auto_user_create of this ShowCorpBasicInfoResponse.
         :rtype: bool
@@ -386,7 +386,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def auto_user_create(self, auto_user_create):
         """Sets the auto_user_create of this ShowCorpBasicInfoResponse.
 
-        是否支持自动开户
+        是否支持自动开户。
 
         :param auto_user_create: The auto_user_create of this ShowCorpBasicInfoResponse.
         :type auto_user_create: bool
@@ -397,7 +397,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def corp_type(self):
         """Gets the corp_type of this ShowCorpBasicInfoResponse.
 
-        企业类型
+        企业类型。 * 0：旗舰版 * 5：免费版 * 6：标准版 
 
         :return: The corp_type of this ShowCorpBasicInfoResponse.
         :rtype: int
@@ -408,7 +408,7 @@ class ShowCorpBasicInfoResponse(SdkResponse):
     def corp_type(self, corp_type):
         """Sets the corp_type of this ShowCorpBasicInfoResponse.
 
-        企业类型
+        企业类型。 * 0：旗舰版 * 5：免费版 * 6：标准版 
 
         :param corp_type: The corp_type of this ShowCorpBasicInfoResponse.
         :type corp_type: int

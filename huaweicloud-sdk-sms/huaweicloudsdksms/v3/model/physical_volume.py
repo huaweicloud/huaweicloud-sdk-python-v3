@@ -28,6 +28,7 @@ class PhysicalVolume:
         'name': 'str',
         'size': 'int',
         'used_size': 'int',
+        'inode_size': 'int',
         'uuid': 'str',
         'size_per_cluster': 'int'
     }
@@ -40,11 +41,12 @@ class PhysicalVolume:
         'name': 'name',
         'size': 'size',
         'used_size': 'used_size',
+        'inode_size': 'inode_size',
         'uuid': 'uuid',
         'size_per_cluster': 'size_per_cluster'
     }
 
-    def __init__(self, device_use=None, file_system=None, index=None, mount_point=None, name=None, size=None, used_size=None, uuid=None, size_per_cluster=None):
+    def __init__(self, device_use=None, file_system=None, index=None, mount_point=None, name=None, size=None, used_size=None, inode_size=None, uuid=None, size_per_cluster=None):
         """PhysicalVolume
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class PhysicalVolume:
         :type size: int
         :param used_size: 使用大小
         :type used_size: int
+        :param inode_size: inode数量
+        :type inode_size: int
         :param uuid: GUID，可从源端查询
         :type uuid: str
         :param size_per_cluster: 每个cluster大小
@@ -78,6 +82,7 @@ class PhysicalVolume:
         self._name = None
         self._size = None
         self._used_size = None
+        self._inode_size = None
         self._uuid = None
         self._size_per_cluster = None
         self.discriminator = None
@@ -96,6 +101,8 @@ class PhysicalVolume:
             self.size = size
         if used_size is not None:
             self.used_size = used_size
+        if inode_size is not None:
+            self.inode_size = inode_size
         if uuid is not None:
             self.uuid = uuid
         if size_per_cluster is not None:
@@ -254,6 +261,28 @@ class PhysicalVolume:
         :type used_size: int
         """
         self._used_size = used_size
+
+    @property
+    def inode_size(self):
+        """Gets the inode_size of this PhysicalVolume.
+
+        inode数量
+
+        :return: The inode_size of this PhysicalVolume.
+        :rtype: int
+        """
+        return self._inode_size
+
+    @inode_size.setter
+    def inode_size(self, inode_size):
+        """Sets the inode_size of this PhysicalVolume.
+
+        inode数量
+
+        :param inode_size: The inode_size of this PhysicalVolume.
+        :type inode_size: int
+        """
+        self._inode_size = inode_size
 
     @property
     def uuid(self):

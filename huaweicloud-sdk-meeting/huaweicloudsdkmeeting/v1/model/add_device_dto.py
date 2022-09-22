@@ -53,25 +53,25 @@ class AddDeviceDTO:
 
         The model defined in huaweicloud sdk
 
-        :param name: 终端名称，可以自定义，建议为具体位置，方便识别。 maxLength：64 minLength：1
+        :param name: 终端名称，可以自定义，建议为具体位置，方便识别。
         :type name: str
-        :param model: 终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。 maxLength：128 minLength：1
+        :param model: 终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过[[获取所有终端类型](https://support.huaweicloud.com/api-meeting/meeting_21_0092.html)](tag:hws)[[获取所有终端类型](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0092.html)](tag:hk)接口查询。
         :type model: str
-        :param sn: 终端SN码，仅可包含数字、字母和下划线。 maxLength：30 minLength：1
+        :param sn: 终端SN码，仅可包含数字、字母和下划线。
         :type sn: str
-        :param prj_code_mode: 投影码生成模式，默认为自动 - 0、自动(该模式下根据消息上报的IP地址内部控制复杂度：   私网地址配置成简单模式；公网地址配置成复杂模式) - 1、简单 - 2、复杂
+        :param prj_code_mode: 投影码生成模式，默认为自动。 - 0：自动(该模式下根据消息上报的IP地址内部控制复杂度。   私网地址配置成简单模式，公网地址配置成复杂模式) - 1：简单 - 2：复杂
         :type prj_code_mode: int
-        :param dept_code: 部门编号，默认为根部门 默认值：1 maxLength：32 minLength：1
+        :param dept_code: 部门编码，默认为根部门。 默认值：1。
         :type dept_code: str
-        :param phone: 手机号，必须加上国家码，例如中国大陆手机为“+86xxxxxxxxxxx”。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 maxLength：32 minLength：0 说明： - 手机号或者邮箱至少填写一个。
+        :param phone: 手机号，必须加上国家码，例如中国大陆手机为“+86xxxxxxxxxxx”。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 &gt; 手机号或者邮箱至少填写一个。
         :type phone: str
-        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
-        :param email: 统一邮箱格式 maxLength：255 minLength：0
+        :param email: 邮箱地址。
         :type email: str
-        :param description: 终端描述 maxLength：128 minLength：0
+        :param description: 终端描述。
         :type description: str
-        :param status: 终端状态 * 0、正常 * 1、冻结\&quot; 默认值：0。 
+        :param status: 终端状态。默认值：0。 * 0：正常 * 1：冻结 
         :type status: int
         :param send_notify: 是否发送邮件和短信通知。 * 0：不发送 * 不填或者其他值就发送
         :type send_notify: str
@@ -117,7 +117,7 @@ class AddDeviceDTO:
     def name(self):
         """Gets the name of this AddDeviceDTO.
 
-        终端名称，可以自定义，建议为具体位置，方便识别。 maxLength：64 minLength：1
+        终端名称，可以自定义，建议为具体位置，方便识别。
 
         :return: The name of this AddDeviceDTO.
         :rtype: str
@@ -128,7 +128,7 @@ class AddDeviceDTO:
     def name(self, name):
         """Sets the name of this AddDeviceDTO.
 
-        终端名称，可以自定义，建议为具体位置，方便识别。 maxLength：64 minLength：1
+        终端名称，可以自定义，建议为具体位置，方便识别。
 
         :param name: The name of this AddDeviceDTO.
         :type name: str
@@ -139,7 +139,7 @@ class AddDeviceDTO:
     def model(self):
         """Gets the model of this AddDeviceDTO.
 
-        终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。 maxLength：128 minLength：1
+        终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过[[获取所有终端类型](https://support.huaweicloud.com/api-meeting/meeting_21_0092.html)](tag:hws)[[获取所有终端类型](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0092.html)](tag:hk)接口查询。
 
         :return: The model of this AddDeviceDTO.
         :rtype: str
@@ -150,7 +150,7 @@ class AddDeviceDTO:
     def model(self, model):
         """Sets the model of this AddDeviceDTO.
 
-        终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过获取所有终端类型接口查询。 maxLength：128 minLength：1
+        终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过[[获取所有终端类型](https://support.huaweicloud.com/api-meeting/meeting_21_0092.html)](tag:hws)[[获取所有终端类型](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0092.html)](tag:hk)接口查询。
 
         :param model: The model of this AddDeviceDTO.
         :type model: str
@@ -161,7 +161,7 @@ class AddDeviceDTO:
     def sn(self):
         """Gets the sn of this AddDeviceDTO.
 
-        终端SN码，仅可包含数字、字母和下划线。 maxLength：30 minLength：1
+        终端SN码，仅可包含数字、字母和下划线。
 
         :return: The sn of this AddDeviceDTO.
         :rtype: str
@@ -172,7 +172,7 @@ class AddDeviceDTO:
     def sn(self, sn):
         """Sets the sn of this AddDeviceDTO.
 
-        终端SN码，仅可包含数字、字母和下划线。 maxLength：30 minLength：1
+        终端SN码，仅可包含数字、字母和下划线。
 
         :param sn: The sn of this AddDeviceDTO.
         :type sn: str
@@ -183,7 +183,7 @@ class AddDeviceDTO:
     def prj_code_mode(self):
         """Gets the prj_code_mode of this AddDeviceDTO.
 
-        投影码生成模式，默认为自动 - 0、自动(该模式下根据消息上报的IP地址内部控制复杂度：   私网地址配置成简单模式；公网地址配置成复杂模式) - 1、简单 - 2、复杂
+        投影码生成模式，默认为自动。 - 0：自动(该模式下根据消息上报的IP地址内部控制复杂度。   私网地址配置成简单模式，公网地址配置成复杂模式) - 1：简单 - 2：复杂
 
         :return: The prj_code_mode of this AddDeviceDTO.
         :rtype: int
@@ -194,7 +194,7 @@ class AddDeviceDTO:
     def prj_code_mode(self, prj_code_mode):
         """Sets the prj_code_mode of this AddDeviceDTO.
 
-        投影码生成模式，默认为自动 - 0、自动(该模式下根据消息上报的IP地址内部控制复杂度：   私网地址配置成简单模式；公网地址配置成复杂模式) - 1、简单 - 2、复杂
+        投影码生成模式，默认为自动。 - 0：自动(该模式下根据消息上报的IP地址内部控制复杂度。   私网地址配置成简单模式，公网地址配置成复杂模式) - 1：简单 - 2：复杂
 
         :param prj_code_mode: The prj_code_mode of this AddDeviceDTO.
         :type prj_code_mode: int
@@ -205,7 +205,7 @@ class AddDeviceDTO:
     def dept_code(self):
         """Gets the dept_code of this AddDeviceDTO.
 
-        部门编号，默认为根部门 默认值：1 maxLength：32 minLength：1
+        部门编码，默认为根部门。 默认值：1。
 
         :return: The dept_code of this AddDeviceDTO.
         :rtype: str
@@ -216,7 +216,7 @@ class AddDeviceDTO:
     def dept_code(self, dept_code):
         """Sets the dept_code of this AddDeviceDTO.
 
-        部门编号，默认为根部门 默认值：1 maxLength：32 minLength：1
+        部门编码，默认为根部门。 默认值：1。
 
         :param dept_code: The dept_code of this AddDeviceDTO.
         :type dept_code: str
@@ -227,7 +227,7 @@ class AddDeviceDTO:
     def phone(self):
         """Gets the phone of this AddDeviceDTO.
 
-        手机号，必须加上国家码，例如中国大陆手机为“+86xxxxxxxxxxx”。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 maxLength：32 minLength：0 说明： - 手机号或者邮箱至少填写一个。
+        手机号，必须加上国家码，例如中国大陆手机为“+86xxxxxxxxxxx”。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 > 手机号或者邮箱至少填写一个。
 
         :return: The phone of this AddDeviceDTO.
         :rtype: str
@@ -238,7 +238,7 @@ class AddDeviceDTO:
     def phone(self, phone):
         """Sets the phone of this AddDeviceDTO.
 
-        手机号，必须加上国家码，例如中国大陆手机为“+86xxxxxxxxxxx”。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 maxLength：32 minLength：0 说明： - 手机号或者邮箱至少填写一个。
+        手机号，必须加上国家码，例如中国大陆手机为“+86xxxxxxxxxxx”。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 > 手机号或者邮箱至少填写一个。
 
         :param phone: The phone of this AddDeviceDTO.
         :type phone: str
@@ -249,7 +249,7 @@ class AddDeviceDTO:
     def country(self):
         """Gets the country of this AddDeviceDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this AddDeviceDTO.
         :rtype: str
@@ -260,7 +260,7 @@ class AddDeviceDTO:
     def country(self, country):
         """Sets the country of this AddDeviceDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this AddDeviceDTO.
         :type country: str
@@ -271,7 +271,7 @@ class AddDeviceDTO:
     def email(self):
         """Gets the email of this AddDeviceDTO.
 
-        统一邮箱格式 maxLength：255 minLength：0
+        邮箱地址。
 
         :return: The email of this AddDeviceDTO.
         :rtype: str
@@ -282,7 +282,7 @@ class AddDeviceDTO:
     def email(self, email):
         """Sets the email of this AddDeviceDTO.
 
-        统一邮箱格式 maxLength：255 minLength：0
+        邮箱地址。
 
         :param email: The email of this AddDeviceDTO.
         :type email: str
@@ -293,7 +293,7 @@ class AddDeviceDTO:
     def description(self):
         """Gets the description of this AddDeviceDTO.
 
-        终端描述 maxLength：128 minLength：0
+        终端描述。
 
         :return: The description of this AddDeviceDTO.
         :rtype: str
@@ -304,7 +304,7 @@ class AddDeviceDTO:
     def description(self, description):
         """Sets the description of this AddDeviceDTO.
 
-        终端描述 maxLength：128 minLength：0
+        终端描述。
 
         :param description: The description of this AddDeviceDTO.
         :type description: str
@@ -315,7 +315,7 @@ class AddDeviceDTO:
     def status(self):
         """Gets the status of this AddDeviceDTO.
 
-        终端状态 * 0、正常 * 1、冻结\" 默认值：0。 
+        终端状态。默认值：0。 * 0：正常 * 1：冻结 
 
         :return: The status of this AddDeviceDTO.
         :rtype: int
@@ -326,7 +326,7 @@ class AddDeviceDTO:
     def status(self, status):
         """Sets the status of this AddDeviceDTO.
 
-        终端状态 * 0、正常 * 1、冻结\" 默认值：0。 
+        终端状态。默认值：0。 * 0：正常 * 1：冻结 
 
         :param status: The status of this AddDeviceDTO.
         :type status: int

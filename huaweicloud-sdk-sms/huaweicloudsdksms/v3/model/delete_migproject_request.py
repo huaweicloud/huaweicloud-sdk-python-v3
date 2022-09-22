@@ -33,7 +33,7 @@ class DeleteMigprojectRequest:
 
         The model defined in huaweicloud sdk
 
-        :param mig_project_id: 需要删除的迁移项目的id
+        :param mig_project_id: 需要删除的迁移项目的ID
         :type mig_project_id: str
         """
         
@@ -48,7 +48,7 @@ class DeleteMigprojectRequest:
     def mig_project_id(self):
         """Gets the mig_project_id of this DeleteMigprojectRequest.
 
-        需要删除的迁移项目的id
+        需要删除的迁移项目的ID
 
         :return: The mig_project_id of this DeleteMigprojectRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class DeleteMigprojectRequest:
     def mig_project_id(self, mig_project_id):
         """Sets the mig_project_id of this DeleteMigprojectRequest.
 
-        需要删除的迁移项目的id
+        需要删除的迁移项目的ID
 
         :param mig_project_id: The mig_project_id of this DeleteMigprojectRequest.
         :type mig_project_id: str

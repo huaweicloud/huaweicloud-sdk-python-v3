@@ -37,11 +37,11 @@ class BatchDeleteProgramsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param body: 节目ID列表
+        :param body: Body of the BatchDeleteProgramsRequest
         :type body: list[str]
         """
         
@@ -63,7 +63,7 @@ class BatchDeleteProgramsRequest:
     def x_request_id(self):
         """Gets the x_request_id of this BatchDeleteProgramsRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this BatchDeleteProgramsRequest.
         :rtype: str
@@ -74,7 +74,7 @@ class BatchDeleteProgramsRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this BatchDeleteProgramsRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this BatchDeleteProgramsRequest.
         :type x_request_id: str
@@ -85,7 +85,7 @@ class BatchDeleteProgramsRequest:
     def accept_language(self):
         """Gets the accept_language of this BatchDeleteProgramsRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this BatchDeleteProgramsRequest.
         :rtype: str
@@ -96,7 +96,7 @@ class BatchDeleteProgramsRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this BatchDeleteProgramsRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this BatchDeleteProgramsRequest.
         :type accept_language: str
@@ -107,7 +107,6 @@ class BatchDeleteProgramsRequest:
     def body(self):
         """Gets the body of this BatchDeleteProgramsRequest.
 
-        节目ID列表
 
         :return: The body of this BatchDeleteProgramsRequest.
         :rtype: list[str]
@@ -118,7 +117,6 @@ class BatchDeleteProgramsRequest:
     def body(self, body):
         """Sets the body of this BatchDeleteProgramsRequest.
 
-        节目ID列表
 
         :param body: The body of this BatchDeleteProgramsRequest.
         :type body: list[str]

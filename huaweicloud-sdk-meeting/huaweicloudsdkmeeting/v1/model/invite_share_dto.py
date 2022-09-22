@@ -33,7 +33,7 @@ class InviteShareDTO:
 
         The model defined in huaweicloud sdk
 
-        :param share: 0:取消邀请 1:邀请 
+        :param share: 邀请标志。 * 0：取消邀请 * 1：邀请 
         :type share: int
         """
         
@@ -48,7 +48,7 @@ class InviteShareDTO:
     def share(self):
         """Gets the share of this InviteShareDTO.
 
-        0:取消邀请 1:邀请 
+        邀请标志。 * 0：取消邀请 * 1：邀请 
 
         :return: The share of this InviteShareDTO.
         :rtype: int
@@ -59,7 +59,7 @@ class InviteShareDTO:
     def share(self, share):
         """Sets the share of this InviteShareDTO.
 
-        0:取消邀请 1:邀请 
+        邀请标志。 * 0：取消邀请 * 1：邀请 
 
         :param share: The share of this InviteShareDTO.
         :type share: int

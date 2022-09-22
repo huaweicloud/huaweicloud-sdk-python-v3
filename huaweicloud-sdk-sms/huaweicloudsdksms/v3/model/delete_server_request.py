@@ -33,7 +33,7 @@ class DeleteServerRequest:
 
         The model defined in huaweicloud sdk
 
-        :param source_id: 源端服务器在主机迁移服务中的id
+        :param source_id: 源端服务器在主机迁移服务中的ID
         :type source_id: str
         """
         
@@ -48,7 +48,7 @@ class DeleteServerRequest:
     def source_id(self):
         """Gets the source_id of this DeleteServerRequest.
 
-        源端服务器在主机迁移服务中的id
+        源端服务器在主机迁移服务中的ID
 
         :return: The source_id of this DeleteServerRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class DeleteServerRequest:
     def source_id(self, source_id):
         """Sets the source_id of this DeleteServerRequest.
 
-        源端服务器在主机迁移服务中的id
+        源端服务器在主机迁移服务中的ID
 
         :param source_id: The source_id of this DeleteServerRequest.
         :type source_id: str

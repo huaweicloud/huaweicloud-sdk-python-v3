@@ -22,21 +22,25 @@ class CheckRecordDataInfo:
 
     openapi_types = {
         'check_time': 'str',
+        'check_end_time': 'str',
         'issue_counts': 'CheckRecordIssueCountsInfo'
     }
 
     attribute_map = {
         'check_time': 'check_time',
+        'check_end_time': 'check_end_time',
         'issue_counts': 'issue_counts'
     }
 
-    def __init__(self, check_time=None, issue_counts=None):
+    def __init__(self, check_time=None, check_end_time=None, issue_counts=None):
         """CheckRecordDataInfo
 
         The model defined in huaweicloud sdk
 
-        :param check_time: 检查时间
+        :param check_time: 检查任务执行开始时间
         :type check_time: str
+        :param check_end_time: 检查任务执行结束时间
+        :type check_end_time: str
         :param issue_counts: 
         :type issue_counts: :class:`huaweicloudsdkcodecheck.v2.CheckRecordIssueCountsInfo`
         """
@@ -44,11 +48,14 @@ class CheckRecordDataInfo:
         
 
         self._check_time = None
+        self._check_end_time = None
         self._issue_counts = None
         self.discriminator = None
 
         if check_time is not None:
             self.check_time = check_time
+        if check_end_time is not None:
+            self.check_end_time = check_end_time
         if issue_counts is not None:
             self.issue_counts = issue_counts
 
@@ -56,7 +63,7 @@ class CheckRecordDataInfo:
     def check_time(self):
         """Gets the check_time of this CheckRecordDataInfo.
 
-        检查时间
+        检查任务执行开始时间
 
         :return: The check_time of this CheckRecordDataInfo.
         :rtype: str
@@ -67,12 +74,34 @@ class CheckRecordDataInfo:
     def check_time(self, check_time):
         """Sets the check_time of this CheckRecordDataInfo.
 
-        检查时间
+        检查任务执行开始时间
 
         :param check_time: The check_time of this CheckRecordDataInfo.
         :type check_time: str
         """
         self._check_time = check_time
+
+    @property
+    def check_end_time(self):
+        """Gets the check_end_time of this CheckRecordDataInfo.
+
+        检查任务执行结束时间
+
+        :return: The check_end_time of this CheckRecordDataInfo.
+        :rtype: str
+        """
+        return self._check_end_time
+
+    @check_end_time.setter
+    def check_end_time(self, check_end_time):
+        """Sets the check_end_time of this CheckRecordDataInfo.
+
+        检查任务执行结束时间
+
+        :param check_end_time: The check_end_time of this CheckRecordDataInfo.
+        :type check_end_time: str
+        """
+        self._check_end_time = check_end_time
 
     @property
     def issue_counts(self):

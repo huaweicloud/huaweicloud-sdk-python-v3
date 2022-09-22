@@ -41,7 +41,7 @@ class ApiAuthCreate:
         :type env_id: str
         :param app_ids: APP的编号列表
         :type app_ids: list[str]
-        :param api_ids: API的编号列表，可以选择租户自己的API，也可以选择从云市场上购买的API。
+        :param api_ids: API的编号列表[，可以选择租户自己的API，也可以选择从云商店上购买的API](tag:hws)。
         :type api_ids: list[str]
         """
         
@@ -104,7 +104,7 @@ class ApiAuthCreate:
     def api_ids(self):
         """Gets the api_ids of this ApiAuthCreate.
 
-        API的编号列表，可以选择租户自己的API，也可以选择从云市场上购买的API。
+        API的编号列表[，可以选择租户自己的API，也可以选择从云商店上购买的API](tag:hws)。
 
         :return: The api_ids of this ApiAuthCreate.
         :rtype: list[str]
@@ -115,7 +115,7 @@ class ApiAuthCreate:
     def api_ids(self, api_ids):
         """Sets the api_ids of this ApiAuthCreate.
 
-        API的编号列表，可以选择租户自己的API，也可以选择从云市场上购买的API。
+        API的编号列表[，可以选择租户自己的API，也可以选择从云商店上购买的API](tag:hws)。
 
         :param api_ids: The api_ids of this ApiAuthCreate.
         :type api_ids: list[str]

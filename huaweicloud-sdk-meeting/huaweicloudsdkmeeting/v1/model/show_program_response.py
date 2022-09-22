@@ -45,19 +45,19 @@ class ShowProgramResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 节目ID
+        :param id: 节目ID。
         :type id: str
-        :param last_updated_by: 更新者
+        :param last_updated_by: 更新者。
         :type last_updated_by: str
-        :param update_time: 更新时间
+        :param update_time: 更新时间。
         :type update_time: int
-        :param program_name: 节目名称
+        :param program_name: 节目名称。
         :type program_name: str
-        :param material_size_str: 节目的总素材大小（含单位）
+        :param material_size_str: 节目的总素材大小（含单位）。
         :type material_size_str: str
-        :param play_time: 节目的总播放时长，单位秒
+        :param play_time: 节目的总播放时长，单位秒。
         :type play_time: int
-        :param program_item_list: 节目素材列表
+        :param program_item_list: 节目素材列表。
         :type program_item_list: list[:class:`huaweicloudsdkmeeting.v1.ProgramItemResponseBase`]
         """
         
@@ -91,7 +91,7 @@ class ShowProgramResponse(SdkResponse):
     def id(self):
         """Gets the id of this ShowProgramResponse.
 
-        节目ID
+        节目ID。
 
         :return: The id of this ShowProgramResponse.
         :rtype: str
@@ -102,7 +102,7 @@ class ShowProgramResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this ShowProgramResponse.
 
-        节目ID
+        节目ID。
 
         :param id: The id of this ShowProgramResponse.
         :type id: str
@@ -113,7 +113,7 @@ class ShowProgramResponse(SdkResponse):
     def last_updated_by(self):
         """Gets the last_updated_by of this ShowProgramResponse.
 
-        更新者
+        更新者。
 
         :return: The last_updated_by of this ShowProgramResponse.
         :rtype: str
@@ -124,7 +124,7 @@ class ShowProgramResponse(SdkResponse):
     def last_updated_by(self, last_updated_by):
         """Sets the last_updated_by of this ShowProgramResponse.
 
-        更新者
+        更新者。
 
         :param last_updated_by: The last_updated_by of this ShowProgramResponse.
         :type last_updated_by: str
@@ -135,7 +135,7 @@ class ShowProgramResponse(SdkResponse):
     def update_time(self):
         """Gets the update_time of this ShowProgramResponse.
 
-        更新时间
+        更新时间。
 
         :return: The update_time of this ShowProgramResponse.
         :rtype: int
@@ -146,7 +146,7 @@ class ShowProgramResponse(SdkResponse):
     def update_time(self, update_time):
         """Sets the update_time of this ShowProgramResponse.
 
-        更新时间
+        更新时间。
 
         :param update_time: The update_time of this ShowProgramResponse.
         :type update_time: int
@@ -157,7 +157,7 @@ class ShowProgramResponse(SdkResponse):
     def program_name(self):
         """Gets the program_name of this ShowProgramResponse.
 
-        节目名称
+        节目名称。
 
         :return: The program_name of this ShowProgramResponse.
         :rtype: str
@@ -168,7 +168,7 @@ class ShowProgramResponse(SdkResponse):
     def program_name(self, program_name):
         """Sets the program_name of this ShowProgramResponse.
 
-        节目名称
+        节目名称。
 
         :param program_name: The program_name of this ShowProgramResponse.
         :type program_name: str
@@ -179,7 +179,7 @@ class ShowProgramResponse(SdkResponse):
     def material_size_str(self):
         """Gets the material_size_str of this ShowProgramResponse.
 
-        节目的总素材大小（含单位）
+        节目的总素材大小（含单位）。
 
         :return: The material_size_str of this ShowProgramResponse.
         :rtype: str
@@ -190,7 +190,7 @@ class ShowProgramResponse(SdkResponse):
     def material_size_str(self, material_size_str):
         """Sets the material_size_str of this ShowProgramResponse.
 
-        节目的总素材大小（含单位）
+        节目的总素材大小（含单位）。
 
         :param material_size_str: The material_size_str of this ShowProgramResponse.
         :type material_size_str: str
@@ -201,7 +201,7 @@ class ShowProgramResponse(SdkResponse):
     def play_time(self):
         """Gets the play_time of this ShowProgramResponse.
 
-        节目的总播放时长，单位秒
+        节目的总播放时长，单位秒。
 
         :return: The play_time of this ShowProgramResponse.
         :rtype: int
@@ -212,7 +212,7 @@ class ShowProgramResponse(SdkResponse):
     def play_time(self, play_time):
         """Sets the play_time of this ShowProgramResponse.
 
-        节目的总播放时长，单位秒
+        节目的总播放时长，单位秒。
 
         :param play_time: The play_time of this ShowProgramResponse.
         :type play_time: int
@@ -223,7 +223,7 @@ class ShowProgramResponse(SdkResponse):
     def program_item_list(self):
         """Gets the program_item_list of this ShowProgramResponse.
 
-        节目素材列表
+        节目素材列表。
 
         :return: The program_item_list of this ShowProgramResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.ProgramItemResponseBase`]
@@ -234,7 +234,7 @@ class ShowProgramResponse(SdkResponse):
     def program_item_list(self, program_item_list):
         """Sets the program_item_list of this ShowProgramResponse.
 
-        节目素材列表
+        节目素材列表。
 
         :param program_item_list: The program_item_list of this ShowProgramResponse.
         :type program_item_list: list[:class:`huaweicloudsdkmeeting.v1.ProgramItemResponseBase`]

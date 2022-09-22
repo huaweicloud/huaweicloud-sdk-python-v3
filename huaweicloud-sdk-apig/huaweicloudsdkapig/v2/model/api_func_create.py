@@ -24,7 +24,9 @@ class ApiFuncCreate:
         'function_urn': 'str',
         'remark': 'str',
         'invocation_type': 'str',
+        'network_type': 'str',
         'version': 'str',
+        'alias_urn': 'str',
         'timeout': 'int',
         'authorizer_id': 'str'
     }
@@ -33,12 +35,14 @@ class ApiFuncCreate:
         'function_urn': 'function_urn',
         'remark': 'remark',
         'invocation_type': 'invocation_type',
+        'network_type': 'network_type',
         'version': 'version',
+        'alias_urn': 'alias_urn',
         'timeout': 'timeout',
         'authorizer_id': 'authorizer_id'
     }
 
-    def __init__(self, function_urn=None, remark=None, invocation_type=None, version=None, timeout=None, authorizer_id=None):
+    def __init__(self, function_urn=None, remark=None, invocation_type=None, network_type=None, version=None, alias_urn=None, timeout=None, authorizer_id=None):
         """ApiFuncCreate
 
         The model defined in huaweicloud sdk
@@ -49,8 +53,12 @@ class ApiFuncCreate:
         :type remark: str
         :param invocation_type: 调用类型 - async： 异步 - sync：同步
         :type invocation_type: str
-        :param version: 版本。
+        :param network_type: 对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
+        :type network_type: str
+        :param version: 函数版本  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
         :type version: str
+        :param alias_urn: 函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+        :type alias_urn: str
         :param timeout: API网关请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000。  单位：毫秒。
         :type timeout: int
         :param authorizer_id: 后端自定义认证ID
@@ -62,7 +70,9 @@ class ApiFuncCreate:
         self._function_urn = None
         self._remark = None
         self._invocation_type = None
+        self._network_type = None
         self._version = None
+        self._alias_urn = None
         self._timeout = None
         self._authorizer_id = None
         self.discriminator = None
@@ -71,8 +81,11 @@ class ApiFuncCreate:
         if remark is not None:
             self.remark = remark
         self.invocation_type = invocation_type
+        self.network_type = network_type
         if version is not None:
             self.version = version
+        if alias_urn is not None:
+            self.alias_urn = alias_urn
         self.timeout = timeout
         if authorizer_id is not None:
             self.authorizer_id = authorizer_id
@@ -144,10 +157,32 @@ class ApiFuncCreate:
         self._invocation_type = invocation_type
 
     @property
+    def network_type(self):
+        """Gets the network_type of this ApiFuncCreate.
+
+        对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
+
+        :return: The network_type of this ApiFuncCreate.
+        :rtype: str
+        """
+        return self._network_type
+
+    @network_type.setter
+    def network_type(self, network_type):
+        """Sets the network_type of this ApiFuncCreate.
+
+        对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
+
+        :param network_type: The network_type of this ApiFuncCreate.
+        :type network_type: str
+        """
+        self._network_type = network_type
+
+    @property
     def version(self):
         """Gets the version of this ApiFuncCreate.
 
-        版本。
+        函数版本  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
         :return: The version of this ApiFuncCreate.
         :rtype: str
@@ -158,12 +193,34 @@ class ApiFuncCreate:
     def version(self, version):
         """Sets the version of this ApiFuncCreate.
 
-        版本。
+        函数版本  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
         :param version: The version of this ApiFuncCreate.
         :type version: str
         """
         self._version = version
+
+    @property
+    def alias_urn(self):
+        """Gets the alias_urn of this ApiFuncCreate.
+
+        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :return: The alias_urn of this ApiFuncCreate.
+        :rtype: str
+        """
+        return self._alias_urn
+
+    @alias_urn.setter
+    def alias_urn(self, alias_urn):
+        """Sets the alias_urn of this ApiFuncCreate.
+
+        函数别名URN  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
+
+        :param alias_urn: The alias_urn of this ApiFuncCreate.
+        :type alias_urn: str
+        """
+        self._alias_urn = alias_urn
 
     @property
     def timeout(self):

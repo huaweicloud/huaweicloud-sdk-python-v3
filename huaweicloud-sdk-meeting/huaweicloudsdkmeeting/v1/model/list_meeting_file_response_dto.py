@@ -57,31 +57,31 @@ class ListMeetingFileResponseDTO:
 
         The model defined in huaweicloud sdk
 
-        :param file_code: 会议纪要文件码
+        :param file_code: 会议纪要文件码。
         :type file_code: str
-        :param topic: 文件主题
+        :param topic: 文件主题。
         :type topic: str
-        :param file_id: 文件Id
+        :param file_id: 文件Id。
         :type file_id: str
-        :param file_name: 文件名
+        :param file_name: 文件名。
         :type file_name: str
-        :param file_size: 文件大小，单位字节
+        :param file_size: 文件大小，单位字节。
         :type file_size: int
-        :param thumbnail_file_id: 缩略图文件Id
+        :param thumbnail_file_id: 缩略图文件Id。
         :type thumbnail_file_id: str
-        :param thumbnail_file_name: 缩略图文件名
+        :param thumbnail_file_name: 缩略图文件名。
         :type thumbnail_file_name: str
-        :param thumbnail_file_size: 缩略图文件大小，单位字节
+        :param thumbnail_file_size: 缩略图文件大小，单位字节。
         :type thumbnail_file_size: int
-        :param pdf_file_id: pdf文件Id
+        :param pdf_file_id: pdf文件Id。
         :type pdf_file_id: str
-        :param pdf_file_name: pdf文件名
+        :param pdf_file_name: pdf文件名。
         :type pdf_file_name: str
-        :param pdf_file_size: pdf文件大小，单位字节
+        :param pdf_file_size: pdf文件大小，单位字节。
         :type pdf_file_size: int
-        :param user_id: 用户ID
+        :param user_id: 用户UUID。
         :type user_id: str
-        :param creation_timestamp: 文件创建时间戳
+        :param creation_timestamp: 文件创建时间戳。
         :type creation_timestamp: int
         """
         
@@ -133,7 +133,7 @@ class ListMeetingFileResponseDTO:
     def file_code(self):
         """Gets the file_code of this ListMeetingFileResponseDTO.
 
-        会议纪要文件码
+        会议纪要文件码。
 
         :return: The file_code of this ListMeetingFileResponseDTO.
         :rtype: str
@@ -144,7 +144,7 @@ class ListMeetingFileResponseDTO:
     def file_code(self, file_code):
         """Sets the file_code of this ListMeetingFileResponseDTO.
 
-        会议纪要文件码
+        会议纪要文件码。
 
         :param file_code: The file_code of this ListMeetingFileResponseDTO.
         :type file_code: str
@@ -155,7 +155,7 @@ class ListMeetingFileResponseDTO:
     def topic(self):
         """Gets the topic of this ListMeetingFileResponseDTO.
 
-        文件主题
+        文件主题。
 
         :return: The topic of this ListMeetingFileResponseDTO.
         :rtype: str
@@ -166,7 +166,7 @@ class ListMeetingFileResponseDTO:
     def topic(self, topic):
         """Sets the topic of this ListMeetingFileResponseDTO.
 
-        文件主题
+        文件主题。
 
         :param topic: The topic of this ListMeetingFileResponseDTO.
         :type topic: str
@@ -177,7 +177,7 @@ class ListMeetingFileResponseDTO:
     def file_id(self):
         """Gets the file_id of this ListMeetingFileResponseDTO.
 
-        文件Id
+        文件Id。
 
         :return: The file_id of this ListMeetingFileResponseDTO.
         :rtype: str
@@ -188,7 +188,7 @@ class ListMeetingFileResponseDTO:
     def file_id(self, file_id):
         """Sets the file_id of this ListMeetingFileResponseDTO.
 
-        文件Id
+        文件Id。
 
         :param file_id: The file_id of this ListMeetingFileResponseDTO.
         :type file_id: str
@@ -199,7 +199,7 @@ class ListMeetingFileResponseDTO:
     def file_name(self):
         """Gets the file_name of this ListMeetingFileResponseDTO.
 
-        文件名
+        文件名。
 
         :return: The file_name of this ListMeetingFileResponseDTO.
         :rtype: str
@@ -210,7 +210,7 @@ class ListMeetingFileResponseDTO:
     def file_name(self, file_name):
         """Sets the file_name of this ListMeetingFileResponseDTO.
 
-        文件名
+        文件名。
 
         :param file_name: The file_name of this ListMeetingFileResponseDTO.
         :type file_name: str
@@ -221,7 +221,7 @@ class ListMeetingFileResponseDTO:
     def file_size(self):
         """Gets the file_size of this ListMeetingFileResponseDTO.
 
-        文件大小，单位字节
+        文件大小，单位字节。
 
         :return: The file_size of this ListMeetingFileResponseDTO.
         :rtype: int
@@ -232,7 +232,7 @@ class ListMeetingFileResponseDTO:
     def file_size(self, file_size):
         """Sets the file_size of this ListMeetingFileResponseDTO.
 
-        文件大小，单位字节
+        文件大小，单位字节。
 
         :param file_size: The file_size of this ListMeetingFileResponseDTO.
         :type file_size: int
@@ -243,7 +243,7 @@ class ListMeetingFileResponseDTO:
     def thumbnail_file_id(self):
         """Gets the thumbnail_file_id of this ListMeetingFileResponseDTO.
 
-        缩略图文件Id
+        缩略图文件Id。
 
         :return: The thumbnail_file_id of this ListMeetingFileResponseDTO.
         :rtype: str
@@ -254,7 +254,7 @@ class ListMeetingFileResponseDTO:
     def thumbnail_file_id(self, thumbnail_file_id):
         """Sets the thumbnail_file_id of this ListMeetingFileResponseDTO.
 
-        缩略图文件Id
+        缩略图文件Id。
 
         :param thumbnail_file_id: The thumbnail_file_id of this ListMeetingFileResponseDTO.
         :type thumbnail_file_id: str
@@ -265,7 +265,7 @@ class ListMeetingFileResponseDTO:
     def thumbnail_file_name(self):
         """Gets the thumbnail_file_name of this ListMeetingFileResponseDTO.
 
-        缩略图文件名
+        缩略图文件名。
 
         :return: The thumbnail_file_name of this ListMeetingFileResponseDTO.
         :rtype: str
@@ -276,7 +276,7 @@ class ListMeetingFileResponseDTO:
     def thumbnail_file_name(self, thumbnail_file_name):
         """Sets the thumbnail_file_name of this ListMeetingFileResponseDTO.
 
-        缩略图文件名
+        缩略图文件名。
 
         :param thumbnail_file_name: The thumbnail_file_name of this ListMeetingFileResponseDTO.
         :type thumbnail_file_name: str
@@ -287,7 +287,7 @@ class ListMeetingFileResponseDTO:
     def thumbnail_file_size(self):
         """Gets the thumbnail_file_size of this ListMeetingFileResponseDTO.
 
-        缩略图文件大小，单位字节
+        缩略图文件大小，单位字节。
 
         :return: The thumbnail_file_size of this ListMeetingFileResponseDTO.
         :rtype: int
@@ -298,7 +298,7 @@ class ListMeetingFileResponseDTO:
     def thumbnail_file_size(self, thumbnail_file_size):
         """Sets the thumbnail_file_size of this ListMeetingFileResponseDTO.
 
-        缩略图文件大小，单位字节
+        缩略图文件大小，单位字节。
 
         :param thumbnail_file_size: The thumbnail_file_size of this ListMeetingFileResponseDTO.
         :type thumbnail_file_size: int
@@ -309,7 +309,7 @@ class ListMeetingFileResponseDTO:
     def pdf_file_id(self):
         """Gets the pdf_file_id of this ListMeetingFileResponseDTO.
 
-        pdf文件Id
+        pdf文件Id。
 
         :return: The pdf_file_id of this ListMeetingFileResponseDTO.
         :rtype: str
@@ -320,7 +320,7 @@ class ListMeetingFileResponseDTO:
     def pdf_file_id(self, pdf_file_id):
         """Sets the pdf_file_id of this ListMeetingFileResponseDTO.
 
-        pdf文件Id
+        pdf文件Id。
 
         :param pdf_file_id: The pdf_file_id of this ListMeetingFileResponseDTO.
         :type pdf_file_id: str
@@ -331,7 +331,7 @@ class ListMeetingFileResponseDTO:
     def pdf_file_name(self):
         """Gets the pdf_file_name of this ListMeetingFileResponseDTO.
 
-        pdf文件名
+        pdf文件名。
 
         :return: The pdf_file_name of this ListMeetingFileResponseDTO.
         :rtype: str
@@ -342,7 +342,7 @@ class ListMeetingFileResponseDTO:
     def pdf_file_name(self, pdf_file_name):
         """Sets the pdf_file_name of this ListMeetingFileResponseDTO.
 
-        pdf文件名
+        pdf文件名。
 
         :param pdf_file_name: The pdf_file_name of this ListMeetingFileResponseDTO.
         :type pdf_file_name: str
@@ -353,7 +353,7 @@ class ListMeetingFileResponseDTO:
     def pdf_file_size(self):
         """Gets the pdf_file_size of this ListMeetingFileResponseDTO.
 
-        pdf文件大小，单位字节
+        pdf文件大小，单位字节。
 
         :return: The pdf_file_size of this ListMeetingFileResponseDTO.
         :rtype: int
@@ -364,7 +364,7 @@ class ListMeetingFileResponseDTO:
     def pdf_file_size(self, pdf_file_size):
         """Sets the pdf_file_size of this ListMeetingFileResponseDTO.
 
-        pdf文件大小，单位字节
+        pdf文件大小，单位字节。
 
         :param pdf_file_size: The pdf_file_size of this ListMeetingFileResponseDTO.
         :type pdf_file_size: int
@@ -375,7 +375,7 @@ class ListMeetingFileResponseDTO:
     def user_id(self):
         """Gets the user_id of this ListMeetingFileResponseDTO.
 
-        用户ID
+        用户UUID。
 
         :return: The user_id of this ListMeetingFileResponseDTO.
         :rtype: str
@@ -386,7 +386,7 @@ class ListMeetingFileResponseDTO:
     def user_id(self, user_id):
         """Sets the user_id of this ListMeetingFileResponseDTO.
 
-        用户ID
+        用户UUID。
 
         :param user_id: The user_id of this ListMeetingFileResponseDTO.
         :type user_id: str
@@ -397,7 +397,7 @@ class ListMeetingFileResponseDTO:
     def creation_timestamp(self):
         """Gets the creation_timestamp of this ListMeetingFileResponseDTO.
 
-        文件创建时间戳
+        文件创建时间戳。
 
         :return: The creation_timestamp of this ListMeetingFileResponseDTO.
         :rtype: int
@@ -408,7 +408,7 @@ class ListMeetingFileResponseDTO:
     def creation_timestamp(self, creation_timestamp):
         """Sets the creation_timestamp of this ListMeetingFileResponseDTO.
 
-        文件创建时间戳
+        文件创建时间戳。
 
         :param creation_timestamp: The creation_timestamp of this ListMeetingFileResponseDTO.
         :type creation_timestamp: int

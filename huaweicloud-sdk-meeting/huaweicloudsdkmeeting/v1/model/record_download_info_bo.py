@@ -35,9 +35,9 @@ class RecordDownloadInfoBO:
 
         The model defined in huaweicloud sdk
 
-        :param conf_uuid: 会议UUID
+        :param conf_uuid: 会议UUID。
         :type conf_uuid: str
-        :param urls: 录制文件下载URL
+        :param urls: 下载链接信息。
         :type urls: list[:class:`huaweicloudsdkmeeting.v1.RecordDownloadUrlDO`]
         """
         
@@ -56,7 +56,7 @@ class RecordDownloadInfoBO:
     def conf_uuid(self):
         """Gets the conf_uuid of this RecordDownloadInfoBO.
 
-        会议UUID
+        会议UUID。
 
         :return: The conf_uuid of this RecordDownloadInfoBO.
         :rtype: str
@@ -67,7 +67,7 @@ class RecordDownloadInfoBO:
     def conf_uuid(self, conf_uuid):
         """Sets the conf_uuid of this RecordDownloadInfoBO.
 
-        会议UUID
+        会议UUID。
 
         :param conf_uuid: The conf_uuid of this RecordDownloadInfoBO.
         :type conf_uuid: str
@@ -78,7 +78,7 @@ class RecordDownloadInfoBO:
     def urls(self):
         """Gets the urls of this RecordDownloadInfoBO.
 
-        录制文件下载URL
+        下载链接信息。
 
         :return: The urls of this RecordDownloadInfoBO.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.RecordDownloadUrlDO`]
@@ -89,7 +89,7 @@ class RecordDownloadInfoBO:
     def urls(self, urls):
         """Sets the urls of this RecordDownloadInfoBO.
 
-        录制文件下载URL
+        下载链接信息。
 
         :param urls: The urls of this RecordDownloadInfoBO.
         :type urls: list[:class:`huaweicloudsdkmeeting.v1.RecordDownloadUrlDO`]

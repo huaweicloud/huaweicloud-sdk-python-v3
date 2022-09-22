@@ -31,7 +31,9 @@ class CreateInstanceDetail:
         'security_group_id': 'str',
         'subnet_id': 'str',
         'param_group_id': 'str',
-        'time_zone': 'str'
+        'time_zone': 'str',
+        'admin_user_name': 'str',
+        'admin_user_password': 'str'
     }
 
     attribute_map = {
@@ -45,10 +47,12 @@ class CreateInstanceDetail:
         'security_group_id': 'security_group_id',
         'subnet_id': 'subnet_id',
         'param_group_id': 'param_group_id',
-        'time_zone': 'time_zone'
+        'time_zone': 'time_zone',
+        'admin_user_name': 'admin_user_name',
+        'admin_user_password': 'admin_user_password'
     }
 
-    def __init__(self, name=None, flavor_id=None, node_num=None, engine_id=None, enterprise_project_id=None, available_zones=None, vpc_id=None, security_group_id=None, subnet_id=None, param_group_id=None, time_zone=None):
+    def __init__(self, name=None, flavor_id=None, node_num=None, engine_id=None, enterprise_project_id=None, available_zones=None, vpc_id=None, security_group_id=None, subnet_id=None, param_group_id=None, time_zone=None, admin_user_name=None, admin_user_password=None):
         """CreateInstanceDetail
 
         The model defined in huaweicloud sdk
@@ -75,6 +79,10 @@ class CreateInstanceDetail:
         :type param_group_id: str
         :param time_zone: UTC时区。默认为UTC。取值范围：\&quot;UTC\&quot;,\&quot;UTC-12:00\&quot;,\&quot;UTC-11:00\&quot;,\&quot;UTC-10:00\&quot;,\&quot;UTC-09:00\&quot;, \&quot;UTC-08:00\&quot;, \&quot;UTC-07:00\&quot;, \&quot;UTC-06:00\&quot;, \&quot;UTC-05:00\&quot;, \&quot;UTC-04:00\&quot;, \&quot;UTC-03:00\&quot;, \&quot;UTC-02:00\&quot;, \&quot;UTC-01:00\&quot;, \&quot;UTC+01:00\&quot;, \&quot;UTC+02:00\&quot;, \&quot;UTC+03:00\&quot;, \&quot;UTC+04:00\&quot;, \&quot;UTC+05:00\&quot;, \&quot;UTC+06:00\&quot;, \&quot;UTC+07:00\&quot;, \&quot;UTC+08:00\&quot;, \&quot;UTC+09:00\&quot;, \&quot;UTC+10:00\&quot;, \&quot;UTC+11:00\&quot;, \&quot;UTC+12:00\&quot;
         :type time_zone: str
+        :param admin_user_name: 管理员账号用户名。 - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
+        :type admin_user_name: str
+        :param admin_user_password: 管理员账号密码。 - 长度为8~32位。 - 必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_&#x3D;+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+        :type admin_user_password: str
         """
         
         
@@ -90,6 +98,8 @@ class CreateInstanceDetail:
         self._subnet_id = None
         self._param_group_id = None
         self._time_zone = None
+        self._admin_user_name = None
+        self._admin_user_password = None
         self.discriminator = None
 
         self.name = name
@@ -106,6 +116,10 @@ class CreateInstanceDetail:
             self.param_group_id = param_group_id
         if time_zone is not None:
             self.time_zone = time_zone
+        if admin_user_name is not None:
+            self.admin_user_name = admin_user_name
+        if admin_user_password is not None:
+            self.admin_user_password = admin_user_password
 
     @property
     def name(self):
@@ -348,6 +362,50 @@ class CreateInstanceDetail:
         :type time_zone: str
         """
         self._time_zone = time_zone
+
+    @property
+    def admin_user_name(self):
+        """Gets the admin_user_name of this CreateInstanceDetail.
+
+        管理员账号用户名。 - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
+
+        :return: The admin_user_name of this CreateInstanceDetail.
+        :rtype: str
+        """
+        return self._admin_user_name
+
+    @admin_user_name.setter
+    def admin_user_name(self, admin_user_name):
+        """Sets the admin_user_name of this CreateInstanceDetail.
+
+        管理员账号用户名。 - 长度为1-32个字符。 - 必须以字母开头。 - 可以包含字母，数字、下划线，不能包含其它特殊字符。
+
+        :param admin_user_name: The admin_user_name of this CreateInstanceDetail.
+        :type admin_user_name: str
+        """
+        self._admin_user_name = admin_user_name
+
+    @property
+    def admin_user_password(self):
+        """Gets the admin_user_password of this CreateInstanceDetail.
+
+        管理员账号密码。 - 长度为8~32位。 - 必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+
+        :return: The admin_user_password of this CreateInstanceDetail.
+        :rtype: str
+        """
+        return self._admin_user_password
+
+    @admin_user_password.setter
+    def admin_user_password(self, admin_user_password):
+        """Sets the admin_user_password of this CreateInstanceDetail.
+
+        管理员账号密码。 - 长度为8~32位。 - 必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。 建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
+
+        :param admin_user_password: The admin_user_password of this CreateInstanceDetail.
+        :type admin_user_password: str
+        """
+        self._admin_user_password = admin_user_password
 
     def to_dict(self):
         """Returns the model properties as a dict"""

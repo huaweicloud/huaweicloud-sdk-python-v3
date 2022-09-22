@@ -65,35 +65,35 @@ class RestAttendeeDTO:
 
         :param user_uuid: 与会者的用户UUID。
         :type user_uuid: str
-        :param account_id: 与会者的账号ID。 如果是账号/密码鉴权场景，选填，表示华为云会议帐号ID。 如果是APPID鉴权场景，必填，表示第三方的User ID，同时需要携带appid参数。
+        :param account_id: 与会者的帐号。 * 如果是帐号/密码鉴权场景：选填，表示华为云会议帐号 * 如果是APPID鉴权场景：必填，表示第三方的User ID，同时需要携带参数appId
         :type account_id: str
-        :param name: 与会者名称或昵称，长度限制为96个字符。
+        :param name: 与会者名称。长度限制为96个字符。
         :type name: str
-        :param role: 会议中的角色。默认为普通与会者。 - 0: 普通与会者。 - 1: 会议主席。 - 2: 预留字段，暂不对外开放。
+        :param role: 会议中的角色。默认为普通与会者。 - 0: 普通与会者 - 1: 会议主持人
         :type role: int
-        :param phone: 如果是账号/密码鉴权场景，必填，号码（可支持SIP、TEL号码格式）。 如果是APP ID鉴权场景，选填。 最大不超过127个字符。phone、email和sms三者需至少填写一个。
+        :param phone: 号码。支持SIP号码或者手机号码。 * 如果是帐号/密码鉴权场景：必填 * 如果是APP ID鉴权场景：选填 &gt; * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 &gt; * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 &gt; * 呼叫手机需要开通PSTN权限，否则无法呼叫
         :type phone: str
         :param phone2: 预留字段，取值类型同phone。
         :type phone2: str
         :param phone3: 预留字段，取值类型同phone。
         :type phone3: str
-        :param email: 邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个。
+        :param email: 邮箱地址。需要发邮件通知时填写。
         :type email: str
-        :param sms: 短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。
+        :param sms: 短信通知的手机号码。需要发短信通知时填写。
         :type sms: str
-        :param is_mute: 用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音。 - 1: 需要静音。
+        :param is_mute: 用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音 - 1: 需要静音 &gt; 仅会中邀请与会者时生效。
         :type is_mute: int
-        :param is_auto_invite: 会议开始时是否自动邀请该与会者。默认值由企业级配置决定。 - 0: 不自动邀请 - 1: 自动邀请
+        :param is_auto_invite: 会议开始时是否自动邀请该与会者。默认值由企业级配置决定。 - 0: 不自动邀请 - 1: 自动邀请 &gt; 仅并发会议资源的随机会议ID会议才生效。
         :type is_auto_invite: int
-        :param type: 默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 软终端用户固定电话，暂不使用。
+        :param type: 终端类型，类型枚举如下： * normal: 软终端 * terminal: 会议室或硬终端 * outside: 外部与会人 * mobile: 用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms），含Maxhub、海信大屏、IdeaHub B2 * hwvision：华为智慧屏TV
         :type type: str
-        :param address: 终端所在会议室信息。（预留字段）
+        :param address: 预留字段，终端所在会议室信息。
         :type address: str
-        :param dept_uuid: 部门ID。最大不超过64个字符。
+        :param dept_uuid: 部门ID。
         :type dept_uuid: str
         :param dept_name: 部门名称。最大不超过128个字符。
         :type dept_name: str
-        :param app_id: App ID，应用标识，一个应用只需创建一次。如果是APP ID鉴权场景，此项必填。
+        :param app_id: App ID。如果是APP ID鉴权场景，此项必填。参考[[App ID的申请](https://support.huaweicloud.com/devg-meeting/meeting_20_0011.html#section1)](tag:hws)[[App ID的申请](https://support.huaweicloud.com/intl/zh-cn/devg-meeting/meeting_20_0011.html#section1)](tag:hk)。
         :type app_id: str
         """
         
@@ -176,7 +176,7 @@ class RestAttendeeDTO:
     def account_id(self):
         """Gets the account_id of this RestAttendeeDTO.
 
-        与会者的账号ID。 如果是账号/密码鉴权场景，选填，表示华为云会议帐号ID。 如果是APPID鉴权场景，必填，表示第三方的User ID，同时需要携带appid参数。
+        与会者的帐号。 * 如果是帐号/密码鉴权场景：选填，表示华为云会议帐号 * 如果是APPID鉴权场景：必填，表示第三方的User ID，同时需要携带参数appId
 
         :return: The account_id of this RestAttendeeDTO.
         :rtype: str
@@ -187,7 +187,7 @@ class RestAttendeeDTO:
     def account_id(self, account_id):
         """Sets the account_id of this RestAttendeeDTO.
 
-        与会者的账号ID。 如果是账号/密码鉴权场景，选填，表示华为云会议帐号ID。 如果是APPID鉴权场景，必填，表示第三方的User ID，同时需要携带appid参数。
+        与会者的帐号。 * 如果是帐号/密码鉴权场景：选填，表示华为云会议帐号 * 如果是APPID鉴权场景：必填，表示第三方的User ID，同时需要携带参数appId
 
         :param account_id: The account_id of this RestAttendeeDTO.
         :type account_id: str
@@ -198,7 +198,7 @@ class RestAttendeeDTO:
     def name(self):
         """Gets the name of this RestAttendeeDTO.
 
-        与会者名称或昵称，长度限制为96个字符。
+        与会者名称。长度限制为96个字符。
 
         :return: The name of this RestAttendeeDTO.
         :rtype: str
@@ -209,7 +209,7 @@ class RestAttendeeDTO:
     def name(self, name):
         """Sets the name of this RestAttendeeDTO.
 
-        与会者名称或昵称，长度限制为96个字符。
+        与会者名称。长度限制为96个字符。
 
         :param name: The name of this RestAttendeeDTO.
         :type name: str
@@ -220,7 +220,7 @@ class RestAttendeeDTO:
     def role(self):
         """Gets the role of this RestAttendeeDTO.
 
-        会议中的角色。默认为普通与会者。 - 0: 普通与会者。 - 1: 会议主席。 - 2: 预留字段，暂不对外开放。
+        会议中的角色。默认为普通与会者。 - 0: 普通与会者 - 1: 会议主持人
 
         :return: The role of this RestAttendeeDTO.
         :rtype: int
@@ -231,7 +231,7 @@ class RestAttendeeDTO:
     def role(self, role):
         """Sets the role of this RestAttendeeDTO.
 
-        会议中的角色。默认为普通与会者。 - 0: 普通与会者。 - 1: 会议主席。 - 2: 预留字段，暂不对外开放。
+        会议中的角色。默认为普通与会者。 - 0: 普通与会者 - 1: 会议主持人
 
         :param role: The role of this RestAttendeeDTO.
         :type role: int
@@ -242,7 +242,7 @@ class RestAttendeeDTO:
     def phone(self):
         """Gets the phone of this RestAttendeeDTO.
 
-        如果是账号/密码鉴权场景，必填，号码（可支持SIP、TEL号码格式）。 如果是APP ID鉴权场景，选填。 最大不超过127个字符。phone、email和sms三者需至少填写一个。
+        号码。支持SIP号码或者手机号码。 * 如果是帐号/密码鉴权场景：必填 * 如果是APP ID鉴权场景：选填 > * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 > * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 > * 呼叫手机需要开通PSTN权限，否则无法呼叫
 
         :return: The phone of this RestAttendeeDTO.
         :rtype: str
@@ -253,7 +253,7 @@ class RestAttendeeDTO:
     def phone(self, phone):
         """Sets the phone of this RestAttendeeDTO.
 
-        如果是账号/密码鉴权场景，必填，号码（可支持SIP、TEL号码格式）。 如果是APP ID鉴权场景，选填。 最大不超过127个字符。phone、email和sms三者需至少填写一个。
+        号码。支持SIP号码或者手机号码。 * 如果是帐号/密码鉴权场景：必填 * 如果是APP ID鉴权场景：选填 > * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 > * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 > * 呼叫手机需要开通PSTN权限，否则无法呼叫
 
         :param phone: The phone of this RestAttendeeDTO.
         :type phone: str
@@ -308,7 +308,7 @@ class RestAttendeeDTO:
     def email(self):
         """Gets the email of this RestAttendeeDTO.
 
-        邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个。
+        邮箱地址。需要发邮件通知时填写。
 
         :return: The email of this RestAttendeeDTO.
         :rtype: str
@@ -319,7 +319,7 @@ class RestAttendeeDTO:
     def email(self, email):
         """Sets the email of this RestAttendeeDTO.
 
-        邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个。
+        邮箱地址。需要发邮件通知时填写。
 
         :param email: The email of this RestAttendeeDTO.
         :type email: str
@@ -330,7 +330,7 @@ class RestAttendeeDTO:
     def sms(self):
         """Gets the sms of this RestAttendeeDTO.
 
-        短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。
+        短信通知的手机号码。需要发短信通知时填写。
 
         :return: The sms of this RestAttendeeDTO.
         :rtype: str
@@ -341,7 +341,7 @@ class RestAttendeeDTO:
     def sms(self, sms):
         """Sets the sms of this RestAttendeeDTO.
 
-        短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。
+        短信通知的手机号码。需要发短信通知时填写。
 
         :param sms: The sms of this RestAttendeeDTO.
         :type sms: str
@@ -352,7 +352,7 @@ class RestAttendeeDTO:
     def is_mute(self):
         """Gets the is_mute of this RestAttendeeDTO.
 
-        用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音。 - 1: 需要静音。
+        用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音 - 1: 需要静音 > 仅会中邀请与会者时生效。
 
         :return: The is_mute of this RestAttendeeDTO.
         :rtype: int
@@ -363,7 +363,7 @@ class RestAttendeeDTO:
     def is_mute(self, is_mute):
         """Sets the is_mute of this RestAttendeeDTO.
 
-        用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音。 - 1: 需要静音。
+        用户入会时是否需要自动静音。默认不静音。 - 0: 不需要静音 - 1: 需要静音 > 仅会中邀请与会者时生效。
 
         :param is_mute: The is_mute of this RestAttendeeDTO.
         :type is_mute: int
@@ -374,7 +374,7 @@ class RestAttendeeDTO:
     def is_auto_invite(self):
         """Gets the is_auto_invite of this RestAttendeeDTO.
 
-        会议开始时是否自动邀请该与会者。默认值由企业级配置决定。 - 0: 不自动邀请 - 1: 自动邀请
+        会议开始时是否自动邀请该与会者。默认值由企业级配置决定。 - 0: 不自动邀请 - 1: 自动邀请 > 仅并发会议资源的随机会议ID会议才生效。
 
         :return: The is_auto_invite of this RestAttendeeDTO.
         :rtype: int
@@ -385,7 +385,7 @@ class RestAttendeeDTO:
     def is_auto_invite(self, is_auto_invite):
         """Sets the is_auto_invite of this RestAttendeeDTO.
 
-        会议开始时是否自动邀请该与会者。默认值由企业级配置决定。 - 0: 不自动邀请 - 1: 自动邀请
+        会议开始时是否自动邀请该与会者。默认值由企业级配置决定。 - 0: 不自动邀请 - 1: 自动邀请 > 仅并发会议资源的随机会议ID会议才生效。
 
         :param is_auto_invite: The is_auto_invite of this RestAttendeeDTO.
         :type is_auto_invite: int
@@ -396,7 +396,7 @@ class RestAttendeeDTO:
     def type(self):
         """Gets the type of this RestAttendeeDTO.
 
-        默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 软终端用户固定电话，暂不使用。
+        终端类型，类型枚举如下： * normal: 软终端 * terminal: 会议室或硬终端 * outside: 外部与会人 * mobile: 用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms），含Maxhub、海信大屏、IdeaHub B2 * hwvision：华为智慧屏TV
 
         :return: The type of this RestAttendeeDTO.
         :rtype: str
@@ -407,7 +407,7 @@ class RestAttendeeDTO:
     def type(self, type):
         """Sets the type of this RestAttendeeDTO.
 
-        默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 软终端用户固定电话，暂不使用。
+        终端类型，类型枚举如下： * normal: 软终端 * terminal: 会议室或硬终端 * outside: 外部与会人 * mobile: 用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms），含Maxhub、海信大屏、IdeaHub B2 * hwvision：华为智慧屏TV
 
         :param type: The type of this RestAttendeeDTO.
         :type type: str
@@ -418,7 +418,7 @@ class RestAttendeeDTO:
     def address(self):
         """Gets the address of this RestAttendeeDTO.
 
-        终端所在会议室信息。（预留字段）
+        预留字段，终端所在会议室信息。
 
         :return: The address of this RestAttendeeDTO.
         :rtype: str
@@ -429,7 +429,7 @@ class RestAttendeeDTO:
     def address(self, address):
         """Sets the address of this RestAttendeeDTO.
 
-        终端所在会议室信息。（预留字段）
+        预留字段，终端所在会议室信息。
 
         :param address: The address of this RestAttendeeDTO.
         :type address: str
@@ -440,7 +440,7 @@ class RestAttendeeDTO:
     def dept_uuid(self):
         """Gets the dept_uuid of this RestAttendeeDTO.
 
-        部门ID。最大不超过64个字符。
+        部门ID。
 
         :return: The dept_uuid of this RestAttendeeDTO.
         :rtype: str
@@ -451,7 +451,7 @@ class RestAttendeeDTO:
     def dept_uuid(self, dept_uuid):
         """Sets the dept_uuid of this RestAttendeeDTO.
 
-        部门ID。最大不超过64个字符。
+        部门ID。
 
         :param dept_uuid: The dept_uuid of this RestAttendeeDTO.
         :type dept_uuid: str
@@ -484,7 +484,7 @@ class RestAttendeeDTO:
     def app_id(self):
         """Gets the app_id of this RestAttendeeDTO.
 
-        App ID，应用标识，一个应用只需创建一次。如果是APP ID鉴权场景，此项必填。
+        App ID。如果是APP ID鉴权场景，此项必填。参考[[App ID的申请](https://support.huaweicloud.com/devg-meeting/meeting_20_0011.html#section1)](tag:hws)[[App ID的申请](https://support.huaweicloud.com/intl/zh-cn/devg-meeting/meeting_20_0011.html#section1)](tag:hk)。
 
         :return: The app_id of this RestAttendeeDTO.
         :rtype: str
@@ -495,7 +495,7 @@ class RestAttendeeDTO:
     def app_id(self, app_id):
         """Sets the app_id of this RestAttendeeDTO.
 
-        App ID，应用标识，一个应用只需创建一次。如果是APP ID鉴权场景，此项必填。
+        App ID。如果是APP ID鉴权场景，此项必填。参考[[App ID的申请](https://support.huaweicloud.com/devg-meeting/meeting_20_0011.html#section1)](tag:hws)[[App ID的申请](https://support.huaweicloud.com/intl/zh-cn/devg-meeting/meeting_20_0011.html#section1)](tag:hk)。
 
         :param app_id: The app_id of this RestAttendeeDTO.
         :type app_id: str

@@ -2382,6 +2382,66 @@ class ProjectManAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def download_image_file_async(self, request):
+        """下载图片
+
+        下载图片
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DownloadImageFile
+        :type request: :class:`huaweicloudsdkprojectman.v4.DownloadImageFileRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.DownloadImageFileResponse`
+        """
+        return self.download_image_file_with_http_info(request)
+
+    def download_image_file_with_http_info(self, request):
+        all_params = ['project_id', 'image_uri']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'image_uri' in local_var_params:
+            query_params.append(('image_uri', local_var_params['image_uri']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/image-file',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DownloadImageFileResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_associated_issues_async(self, request):
         """查询当前工作项已经关联的工作项
 
@@ -2447,9 +2507,9 @@ class ProjectManAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def list_associated_test_cases_async(self, request):
-        """查询关联Wiki
+        """查询关联用例
 
-        查询关联Wiki
+        查询关联用例
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3386,6 +3446,70 @@ class ProjectManAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_scrum_project_statuses_async(self, request):
+        """查询项目的状态列表
+
+        查询项目的状态列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListScrumProjectStatuses
+        :type request: :class:`huaweicloudsdkprojectman.v4.ListScrumProjectStatusesRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.ListScrumProjectStatusesResponse`
+        """
+        return self.list_scrum_project_statuses_with_http_info(request)
+
+    def list_scrum_project_statuses_with_http_info(self, request):
+        all_params = ['project_id', 'offset', 'limit', 'tracker_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'tracker_id' in local_var_params:
+            query_params.append(('tracker_id', local_var_params['tracker_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = ['apig-auth-iam']
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/statuses',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListScrumProjectStatusesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_issue_completion_rate_async(self, request):
         """获取工作项完成率
 
@@ -3925,6 +4049,70 @@ class ProjectManAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateProjectModuleResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def upload_attachments_async(self, request):
+        """上传工作项附件
+
+        上传工作项附件
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UploadAttachments
+        :type request: :class:`huaweicloudsdkprojectman.v4.UploadAttachmentsRequest`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.UploadAttachmentsResponse`
+        """
+        return self.upload_attachments_with_http_info(request)
+
+    def upload_attachments_with_http_info(self, request):
+        all_params = ['project_id', 'issue_id', 'attachment']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'issue_id' in local_var_params:
+            path_params['issue_id'] = local_var_params['issue_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+        if 'attachment' in local_var_params:
+            form_params['attachment'] = local_var_params['attachment']
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['multipart/form-data'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v4/projects/{project_id}/issues/{issue_id}/attachments/upload',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UploadAttachmentsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

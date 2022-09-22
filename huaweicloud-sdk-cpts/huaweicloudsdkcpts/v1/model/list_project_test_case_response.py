@@ -41,7 +41,7 @@ class ListProjectTestCaseResponse(SdkResponse):
         :type code: str
         :param message: 描述
         :type message: str
-        :param directory: 目录集
+        :param directory: 用例集
         :type directory: list[:class:`huaweicloudsdkcpts.v1.ProjectDirectory`]
         """
         
@@ -107,7 +107,7 @@ class ListProjectTestCaseResponse(SdkResponse):
     def directory(self):
         """Gets the directory of this ListProjectTestCaseResponse.
 
-        目录集
+        用例集
 
         :return: The directory of this ListProjectTestCaseResponse.
         :rtype: list[:class:`huaweicloudsdkcpts.v1.ProjectDirectory`]
@@ -118,7 +118,7 @@ class ListProjectTestCaseResponse(SdkResponse):
     def directory(self, directory):
         """Sets the directory of this ListProjectTestCaseResponse.
 
-        目录集
+        用例集
 
         :param directory: The directory of this ListProjectTestCaseResponse.
         :type directory: list[:class:`huaweicloudsdkcpts.v1.ProjectDirectory`]

@@ -51,7 +51,7 @@ class OmsClient(Client):
     def create_sync_events(self, request):
         """创建同步事件
 
-        源端有对象需要进行同步时，调用该接口创建一个同步事件，系统将根据同步事件中包含的对象名称进行同步（目前只支持华北-北京四、华东-上海一地区）
+        源端有对象需要进行同步时，调用该接口创建一个同步事件，系统将根据同步事件中包含的对象名称进行同步(目前只支持华北-北京四、华东-上海一地区)。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -520,6 +520,481 @@ class OmsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateBandwidthPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_task_group(self, request):
+        """创建迁移任务组
+
+        创建迁移任务组，创建成功后，迁移任务组会自动创建迁移任务，不需要额外调用启动任务命令（目前只支持华南-广州用户友好环境、西南-贵阳一、亚太-香港和亚太-新加坡地区）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateTaskGroup
+        :type request: :class:`huaweicloudsdkoms.v2.CreateTaskGroupRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.CreateTaskGroupResponse`
+        """
+        return self.create_task_group_with_http_info(request)
+
+    def create_task_group_with_http_info(self, request):
+        all_params = ['create_task_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/taskgroups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateTaskGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_task_group(self, request):
+        """删除指定ID的迁移任务组
+
+        删除指定的迁移任务组.（目前只支持华南-广州用户友好环境、西南-贵阳一、亚太-香港和亚太-新加坡地区）
+        创建任务中、监控中、暂停中状态的任务不允许删除，如果删除会返回失败；若要删除，请先行暂停任务。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteTaskGroup
+        :type request: :class:`huaweicloudsdkoms.v2.DeleteTaskGroupRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.DeleteTaskGroupResponse`
+        """
+        return self.delete_task_group_with_http_info(request)
+
+    def delete_task_group_with_http_info(self, request):
+        all_params = ['group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/taskgroups/{group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteTaskGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_task_group(self, request):
+        """查询迁移任务组列表
+
+        查询用户账户下的任务组信息（目前只支持华南-广州用户友好环境、西南-贵阳一、亚太-香港和亚太-新加坡地区）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListTaskGroup
+        :type request: :class:`huaweicloudsdkoms.v2.ListTaskGroupRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.ListTaskGroupResponse`
+        """
+        return self.list_task_group_with_http_info(request)
+
+    def list_task_group_with_http_info(self, request):
+        all_params = ['limit', 'offset', 'status']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'status' in local_var_params:
+            query_params.append(('status', local_var_params['status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/taskgroups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTaskGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def retry_task_group(self, request):
+        """对已经失败的指定ID迁移任务组进行重启
+
+        当迁移任务组处于迁移失败状态时，调用该接口重启指定ID的迁移任务组（目前只支持华南-广州用户友好环境、西南-贵阳一、亚太-香港和亚太-新加坡地区）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RetryTaskGroup
+        :type request: :class:`huaweicloudsdkoms.v2.RetryTaskGroupRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.RetryTaskGroupResponse`
+        """
+        return self.retry_task_group_with_http_info(request)
+
+    def retry_task_group_with_http_info(self, request):
+        all_params = ['group_id', 'retry_task_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/taskgroups/{group_id}/retry',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RetryTaskGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_task_group(self, request):
+        """获取指定ID的taskgroup信息
+
+        获取指定ID的taskgroup信息（目前只支持华南-广州用户友好环境、西南-贵阳一、亚太-香港和亚太-新加坡地区）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowTaskGroup
+        :type request: :class:`huaweicloudsdkoms.v2.ShowTaskGroupRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.ShowTaskGroupResponse`
+        """
+        return self.show_task_group_with_http_info(request)
+
+    def show_task_group_with_http_info(self, request):
+        all_params = ['group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/taskgroups/{group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowTaskGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def start_task_group(self, request):
+        """恢复指定ID的迁移任务组
+
+        当迁移任务组处于暂停状态时，调用该接口启动指定ID的迁移任务组（目前只支持华南-广州用户友好环境、西南-贵阳一、亚太-香港和亚太-新加坡地区）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for StartTaskGroup
+        :type request: :class:`huaweicloudsdkoms.v2.StartTaskGroupRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.StartTaskGroupResponse`
+        """
+        return self.start_task_group_with_http_info(request)
+
+    def start_task_group_with_http_info(self, request):
+        all_params = ['group_id', 'start_task_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/taskgroups/{group_id}/start',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StartTaskGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def stop_task_group(self, request):
+        """暂停指定ID的迁移任务组
+
+        当迁移任务组处于创建任务中或监控中时，调用该接口暂停指定迁移任务组（目前只支持华南-广州用户友好环境、西南-贵阳一、亚太-香港和亚太-新加坡地区）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for StopTaskGroup
+        :type request: :class:`huaweicloudsdkoms.v2.StopTaskGroupRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.StopTaskGroupResponse`
+        """
+        return self.stop_task_group_with_http_info(request)
+
+    def stop_task_group_with_http_info(self, request):
+        all_params = ['group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/taskgroups/{group_id}/stop',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='StopTaskGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_task_group(self, request):
+        """更新指定ID的迁移任务组的流控策略
+
+        当迁移任务组未执行完成时，修改迁移任务组的流量控制策略（目前只支持华南-广州用户友好环境、西南-贵阳一、亚太-香港和亚太-新加坡地区）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateTaskGroup
+        :type request: :class:`huaweicloudsdkoms.v2.UpdateTaskGroupRequest`
+        :rtype: :class:`huaweicloudsdkoms.v2.UpdateTaskGroupResponse`
+        """
+        return self.update_task_group_with_http_info(request)
+
+    def update_task_group_with_http_info(self, request):
+        all_params = ['group_id', 'update_task_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/taskgroups/{group_id}/update',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateTaskGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

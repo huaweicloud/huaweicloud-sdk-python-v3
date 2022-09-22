@@ -35,9 +35,9 @@ class UpdateWebHookConfigStatusRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 订阅配置记录id
+        :param id: 订阅配置记录ID。
         :type id: str
-        :param status: 连接状态： 0表示已启用 ；1表示未启动； 2表示已锁定
+        :param status: 事件推送状态。 * 0：启用 * 1：禁用 * 2：锁定 
         :type status: int
         """
         
@@ -54,7 +54,7 @@ class UpdateWebHookConfigStatusRequest:
     def id(self):
         """Gets the id of this UpdateWebHookConfigStatusRequest.
 
-        订阅配置记录id
+        订阅配置记录ID。
 
         :return: The id of this UpdateWebHookConfigStatusRequest.
         :rtype: str
@@ -65,7 +65,7 @@ class UpdateWebHookConfigStatusRequest:
     def id(self, id):
         """Sets the id of this UpdateWebHookConfigStatusRequest.
 
-        订阅配置记录id
+        订阅配置记录ID。
 
         :param id: The id of this UpdateWebHookConfigStatusRequest.
         :type id: str
@@ -76,7 +76,7 @@ class UpdateWebHookConfigStatusRequest:
     def status(self):
         """Gets the status of this UpdateWebHookConfigStatusRequest.
 
-        连接状态： 0表示已启用 ；1表示未启动； 2表示已锁定
+        事件推送状态。 * 0：启用 * 1：禁用 * 2：锁定 
 
         :return: The status of this UpdateWebHookConfigStatusRequest.
         :rtype: int
@@ -87,7 +87,7 @@ class UpdateWebHookConfigStatusRequest:
     def status(self, status):
         """Sets the status of this UpdateWebHookConfigStatusRequest.
 
-        连接状态： 0表示已启用 ；1表示未启动； 2表示已锁定
+        事件推送状态。 * 0：启用 * 1：禁用 * 2：锁定 
 
         :param status: The status of this UpdateWebHookConfigStatusRequest.
         :type status: int

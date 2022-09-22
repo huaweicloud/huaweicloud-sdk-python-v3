@@ -49,7 +49,7 @@ class MigrationErrors:
         :type host_name: str
         :param name: 源端在主机迁移服务中的名称
         :type name: str
-        :param source_id: 源端服务器id
+        :param source_id: 源端服务器ID
         :type source_id: str
         :param source_ip: 源端服务器的ip
         :type source_ip: str
@@ -150,7 +150,7 @@ class MigrationErrors:
     def source_id(self):
         """Gets the source_id of this MigrationErrors.
 
-        源端服务器id
+        源端服务器ID
 
         :return: The source_id of this MigrationErrors.
         :rtype: str
@@ -161,7 +161,7 @@ class MigrationErrors:
     def source_id(self, source_id):
         """Sets the source_id of this MigrationErrors.
 
-        源端服务器id
+        源端服务器ID
 
         :param source_id: The source_id of this MigrationErrors.
         :type source_id: str

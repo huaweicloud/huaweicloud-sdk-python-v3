@@ -1545,6 +1545,66 @@ class GaussDBClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_gauss_my_sql_instance_detail_info(self, request):
+        """批量查询实例详情
+
+        批量查询实例详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListGaussMySqlInstanceDetailInfo
+        :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstanceDetailInfoRequest`
+        :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstanceDetailInfoResponse`
+        """
+        return self.list_gauss_my_sql_instance_detail_info_with_http_info(request)
+
+    def list_gauss_my_sql_instance_detail_info_with_http_info(self, request):
+        all_params = ['instance_ids', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'instance_ids' in local_var_params:
+            query_params.append(('instance_ids', local_var_params['instance_ids']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/details',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListGaussMySqlInstanceDetailInfoResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_gauss_my_sql_instances(self, request):
         """查询实例列表
 

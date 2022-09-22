@@ -37,11 +37,11 @@ class QueryDeviceInfoResultDTO:
 
         The model defined in huaweicloud sdk
 
-        :param model: 终端型号
+        :param model: 终端型号。
         :type model: str
-        :param device_size: 设备终端产品尺寸
+        :param device_size: 设备终端产品尺寸。
         :type device_size: str
-        :param purchase_channel: 终端设备购买渠道
+        :param purchase_channel: 终端设备购买渠道。
         :type purchase_channel: str
         """
         
@@ -63,7 +63,7 @@ class QueryDeviceInfoResultDTO:
     def model(self):
         """Gets the model of this QueryDeviceInfoResultDTO.
 
-        终端型号
+        终端型号。
 
         :return: The model of this QueryDeviceInfoResultDTO.
         :rtype: str
@@ -74,7 +74,7 @@ class QueryDeviceInfoResultDTO:
     def model(self, model):
         """Sets the model of this QueryDeviceInfoResultDTO.
 
-        终端型号
+        终端型号。
 
         :param model: The model of this QueryDeviceInfoResultDTO.
         :type model: str
@@ -85,7 +85,7 @@ class QueryDeviceInfoResultDTO:
     def device_size(self):
         """Gets the device_size of this QueryDeviceInfoResultDTO.
 
-        设备终端产品尺寸
+        设备终端产品尺寸。
 
         :return: The device_size of this QueryDeviceInfoResultDTO.
         :rtype: str
@@ -96,7 +96,7 @@ class QueryDeviceInfoResultDTO:
     def device_size(self, device_size):
         """Sets the device_size of this QueryDeviceInfoResultDTO.
 
-        设备终端产品尺寸
+        设备终端产品尺寸。
 
         :param device_size: The device_size of this QueryDeviceInfoResultDTO.
         :type device_size: str
@@ -107,7 +107,7 @@ class QueryDeviceInfoResultDTO:
     def purchase_channel(self):
         """Gets the purchase_channel of this QueryDeviceInfoResultDTO.
 
-        终端设备购买渠道
+        终端设备购买渠道。
 
         :return: The purchase_channel of this QueryDeviceInfoResultDTO.
         :rtype: str
@@ -118,7 +118,7 @@ class QueryDeviceInfoResultDTO:
     def purchase_channel(self, purchase_channel):
         """Sets the purchase_channel of this QueryDeviceInfoResultDTO.
 
-        终端设备购买渠道
+        终端设备购买渠道。
 
         :param purchase_channel: The purchase_channel of this QueryDeviceInfoResultDTO.
         :type purchase_channel: str

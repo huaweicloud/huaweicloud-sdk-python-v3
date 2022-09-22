@@ -35,7 +35,7 @@ class ComandParam:
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 任务id
+        :param task_id: 任务ID
         :type task_id: str
         :param bucket: 桶名
         :type bucket: str
@@ -56,7 +56,7 @@ class ComandParam:
     def task_id(self):
         """Gets the task_id of this ComandParam.
 
-        任务id
+        任务ID
 
         :return: The task_id of this ComandParam.
         :rtype: str
@@ -67,7 +67,7 @@ class ComandParam:
     def task_id(self, task_id):
         """Sets the task_id of this ComandParam.
 
-        任务id
+        任务ID
 
         :param task_id: The task_id of this ComandParam.
         :type task_id: str

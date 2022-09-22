@@ -25,6 +25,7 @@ class ResouceInfo:
         'description': 'str',
         'home_link': 'str',
         'subscribe_link': 'str',
+        'subscribe_guide': 'str',
         'type': 'str',
         'reference_price': 'str',
         'price_details_link': 'str',
@@ -36,13 +37,14 @@ class ResouceInfo:
         'description': 'description',
         'home_link': 'home_link',
         'subscribe_link': 'subscribe_link',
+        'subscribe_guide': 'subscribe_guide',
         'type': 'type',
         'reference_price': 'reference_price',
         'price_details_link': 'price_details_link',
         'specifications': 'specifications'
     }
 
-    def __init__(self, name=None, description=None, home_link=None, subscribe_link=None, type=None, reference_price=None, price_details_link=None, specifications=None):
+    def __init__(self, name=None, description=None, home_link=None, subscribe_link=None, subscribe_guide=None, type=None, reference_price=None, price_details_link=None, specifications=None):
         """ResouceInfo
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ResouceInfo:
         :type home_link: str
         :param subscribe_link: 开通链接。
         :type subscribe_link: str
+        :param subscribe_guide: 开通指导。
+        :type subscribe_guide: str
         :param type: 服务类型。
         :type type: str
         :param reference_price: 参考价格。
@@ -71,6 +75,7 @@ class ResouceInfo:
         self._description = None
         self._home_link = None
         self._subscribe_link = None
+        self._subscribe_guide = None
         self._type = None
         self._reference_price = None
         self._price_details_link = None
@@ -85,6 +90,8 @@ class ResouceInfo:
             self.home_link = home_link
         if subscribe_link is not None:
             self.subscribe_link = subscribe_link
+        if subscribe_guide is not None:
+            self.subscribe_guide = subscribe_guide
         if type is not None:
             self.type = type
         if reference_price is not None:
@@ -181,6 +188,28 @@ class ResouceInfo:
         :type subscribe_link: str
         """
         self._subscribe_link = subscribe_link
+
+    @property
+    def subscribe_guide(self):
+        """Gets the subscribe_guide of this ResouceInfo.
+
+        开通指导。
+
+        :return: The subscribe_guide of this ResouceInfo.
+        :rtype: str
+        """
+        return self._subscribe_guide
+
+    @subscribe_guide.setter
+    def subscribe_guide(self, subscribe_guide):
+        """Sets the subscribe_guide of this ResouceInfo.
+
+        开通指导。
+
+        :param subscribe_guide: The subscribe_guide of this ResouceInfo.
+        :type subscribe_guide: str
+        """
+        self._subscribe_guide = subscribe_guide
 
     @property
     def type(self):

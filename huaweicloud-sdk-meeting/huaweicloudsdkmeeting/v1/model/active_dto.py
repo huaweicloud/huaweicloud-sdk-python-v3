@@ -37,11 +37,11 @@ class ActiveDTO:
 
         The model defined in huaweicloud sdk
 
-        :param sms_number: 手机号，如果为手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxxxxxx，当填写手机号时 “country”参数必填。 maxLength：32 minLength：0
+        :param sms_number: 手机号。 例如中国大陆手机+86xxxxxxxxxxx。当填写手机号时 “country”参数必填。 &gt; 号码和邮箱必须填一个，若企业未开启短信功能，则邮箱必填。 
         :type sms_number: str
-        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
-        :param email_addr: 邮件地址。 maxLength：255 minLength：0
+        :param email_addr: 邮件地址。 &gt; 号码和邮箱必须填一个，若企业未开启短信功能，则邮箱必填。 
         :type email_addr: str
         """
         
@@ -63,7 +63,7 @@ class ActiveDTO:
     def sms_number(self):
         """Gets the sms_number of this ActiveDTO.
 
-        手机号，如果为手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxxxxxx，当填写手机号时 “country”参数必填。 maxLength：32 minLength：0
+        手机号。 例如中国大陆手机+86xxxxxxxxxxx。当填写手机号时 “country”参数必填。 > 号码和邮箱必须填一个，若企业未开启短信功能，则邮箱必填。 
 
         :return: The sms_number of this ActiveDTO.
         :rtype: str
@@ -74,7 +74,7 @@ class ActiveDTO:
     def sms_number(self, sms_number):
         """Sets the sms_number of this ActiveDTO.
 
-        手机号，如果为手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxxxxxx，当填写手机号时 “country”参数必填。 maxLength：32 minLength：0
+        手机号。 例如中国大陆手机+86xxxxxxxxxxx。当填写手机号时 “country”参数必填。 > 号码和邮箱必须填一个，若企业未开启短信功能，则邮箱必填。 
 
         :param sms_number: The sms_number of this ActiveDTO.
         :type sms_number: str
@@ -85,7 +85,7 @@ class ActiveDTO:
     def country(self):
         """Gets the country of this ActiveDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this ActiveDTO.
         :rtype: str
@@ -96,7 +96,7 @@ class ActiveDTO:
     def country(self, country):
         """Sets the country of this ActiveDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this ActiveDTO.
         :type country: str
@@ -107,7 +107,7 @@ class ActiveDTO:
     def email_addr(self):
         """Gets the email_addr of this ActiveDTO.
 
-        邮件地址。 maxLength：255 minLength：0
+        邮件地址。 > 号码和邮箱必须填一个，若企业未开启短信功能，则邮箱必填。 
 
         :return: The email_addr of this ActiveDTO.
         :rtype: str
@@ -118,7 +118,7 @@ class ActiveDTO:
     def email_addr(self, email_addr):
         """Sets the email_addr of this ActiveDTO.
 
-        邮件地址。 maxLength：255 minLength：0
+        邮件地址。 > 号码和邮箱必须填一个，若企业未开启短信功能，则邮箱必填。 
 
         :param email_addr: The email_addr of this ActiveDTO.
         :type email_addr: str

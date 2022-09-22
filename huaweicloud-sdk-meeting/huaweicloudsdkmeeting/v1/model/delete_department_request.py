@@ -37,11 +37,11 @@ class DeleteDepartmentRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param dept_code: 部门编码 最小值：1
+        :param dept_code: 部门编码。 &gt; 部门编码为1的根部门不能删除。
         :type dept_code: str
         """
         
@@ -62,7 +62,7 @@ class DeleteDepartmentRequest:
     def x_request_id(self):
         """Gets the x_request_id of this DeleteDepartmentRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this DeleteDepartmentRequest.
         :rtype: str
@@ -73,7 +73,7 @@ class DeleteDepartmentRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this DeleteDepartmentRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this DeleteDepartmentRequest.
         :type x_request_id: str
@@ -84,7 +84,7 @@ class DeleteDepartmentRequest:
     def accept_language(self):
         """Gets the accept_language of this DeleteDepartmentRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this DeleteDepartmentRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class DeleteDepartmentRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this DeleteDepartmentRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this DeleteDepartmentRequest.
         :type accept_language: str
@@ -106,7 +106,7 @@ class DeleteDepartmentRequest:
     def dept_code(self):
         """Gets the dept_code of this DeleteDepartmentRequest.
 
-        部门编码 最小值：1
+        部门编码。 > 部门编码为1的根部门不能删除。
 
         :return: The dept_code of this DeleteDepartmentRequest.
         :rtype: str
@@ -117,7 +117,7 @@ class DeleteDepartmentRequest:
     def dept_code(self, dept_code):
         """Sets the dept_code of this DeleteDepartmentRequest.
 
-        部门编码 最小值：1
+        部门编码。 > 部门编码为1的根部门不能删除。
 
         :param dept_code: The dept_code of this DeleteDepartmentRequest.
         :type dept_code: str

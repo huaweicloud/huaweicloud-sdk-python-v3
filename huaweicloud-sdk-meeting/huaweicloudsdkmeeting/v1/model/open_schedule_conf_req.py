@@ -57,31 +57,31 @@ class OpenScheduleConfReq:
 
         The model defined in huaweicloud sdk
 
-        :param subject: 主题
+        :param subject: 网络研讨会主题。长度限制为128个字符。
         :type subject: str
-        :param description: 描述
+        :param description: 网络研讨会描述，长度限制为1000个字符。
         :type description: str
-        :param start_time: 会议开始时间（UTC时间）， 格式：yyyy-MM-dd HH:mm。
+        :param start_time: 网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
         :type start_time: str
-        :param duration: 会议持续时长，单位分钟，取值范围[15,1440]。
+        :param duration: 网络研讨会持续时长，单位分钟，取值范围[15,1440]。
         :type duration: int
-        :param time_zone_id: 开始时间的时区信息。时区信息，参考时区映射关系。
+        :param time_zone_id: 会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 &gt; * 举例：“timeZoneID”:\&quot;26\&quot;，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
         :type time_zone_id: int
-        :param attendees: 与会者列表。该列表可以用于发送会议通知、会议提醒、会议开始时候进行自动邀请。
+        :param attendees: 与会嘉宾列表。 &gt; 观众只能自己通过链接或者会议ID+密码加入，不支持被邀请。 
         :type attendees: list[:class:`huaweicloudsdkmeeting.v1.OpenAttendeeEntity`]
         :param notify_setting: 
         :type notify_setting: :class:`huaweicloudsdkmeeting.v1.OpenNotifySetting`
-        :param vmr_id: VMR ID, 用于识别用户开会时绑定的云会议室。最大长度不超过128个字符。
+        :param vmr_id: 绑定给当前创建网络研讨会帐号的VMR ID。通过[[查询云会议室及个人会议ID](https://support.huaweicloud.com/api-meeting/meeting_21_1106.html)](tag:hws)[[查询云会议室及个人会议ID](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1106.html)](tag:hk)接口获取。 &gt; * vmrID取上述查询接口中返回的id，不是vmrId。 &gt; * 创建网络研讨会时，使用vmrMode&#x3D;2的VMR。 
         :type vmr_id: str
-        :param guest_passwd: 自定义嘉宾入会密码, 4-16位数字，不能与观众密码相同；不指定则系统自动创建。
+        :param guest_passwd: 嘉宾密码（4-16位长度的纯数字)。不指定则系统自动生成。
         :type guest_passwd: str
-        :param audience_passwd: 自定义观众入会密码, 4-16位数字，不能与嘉宾密码相同；不指定则系统自动创建。
+        :param audience_passwd: 观众密码（4-16位长度的纯数字)。不指定则系统自动生成。
         :type audience_passwd: str
-        :param call_restriction: 入会范围开关
+        :param call_restriction: 入会范围开关。 * false：不限制入会范围 * true：限制入会范围 
         :type call_restriction: bool
-        :param scope: 主持人、嘉宾入会范围  0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户; 默认值 0。
+        :param scope: 主持人、嘉宾入会范围 。仅callRestriction设置成true后生效。 * 0: 所有用户 * 2: 企业内用户 * 3: 被邀请用户 
         :type scope: int
-        :param audience_scope: 观众入会范围 0: 所有用户 2: 企业内用户和被邀请用户; 默认值 0。
+        :param audience_scope: 观众入会范围。仅callRestriction设置成true后生效。 * 0: 所有用户 * 2: 企业内用户和被邀请用户 
         :type audience_scope: int
         """
         
@@ -128,7 +128,7 @@ class OpenScheduleConfReq:
     def subject(self):
         """Gets the subject of this OpenScheduleConfReq.
 
-        主题
+        网络研讨会主题。长度限制为128个字符。
 
         :return: The subject of this OpenScheduleConfReq.
         :rtype: str
@@ -139,7 +139,7 @@ class OpenScheduleConfReq:
     def subject(self, subject):
         """Sets the subject of this OpenScheduleConfReq.
 
-        主题
+        网络研讨会主题。长度限制为128个字符。
 
         :param subject: The subject of this OpenScheduleConfReq.
         :type subject: str
@@ -150,7 +150,7 @@ class OpenScheduleConfReq:
     def description(self):
         """Gets the description of this OpenScheduleConfReq.
 
-        描述
+        网络研讨会描述，长度限制为1000个字符。
 
         :return: The description of this OpenScheduleConfReq.
         :rtype: str
@@ -161,7 +161,7 @@ class OpenScheduleConfReq:
     def description(self, description):
         """Sets the description of this OpenScheduleConfReq.
 
-        描述
+        网络研讨会描述，长度限制为1000个字符。
 
         :param description: The description of this OpenScheduleConfReq.
         :type description: str
@@ -172,7 +172,7 @@ class OpenScheduleConfReq:
     def start_time(self):
         """Gets the start_time of this OpenScheduleConfReq.
 
-        会议开始时间（UTC时间）， 格式：yyyy-MM-dd HH:mm。
+        网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :return: The start_time of this OpenScheduleConfReq.
         :rtype: str
@@ -183,7 +183,7 @@ class OpenScheduleConfReq:
     def start_time(self, start_time):
         """Sets the start_time of this OpenScheduleConfReq.
 
-        会议开始时间（UTC时间）， 格式：yyyy-MM-dd HH:mm。
+        网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :param start_time: The start_time of this OpenScheduleConfReq.
         :type start_time: str
@@ -194,7 +194,7 @@ class OpenScheduleConfReq:
     def duration(self):
         """Gets the duration of this OpenScheduleConfReq.
 
-        会议持续时长，单位分钟，取值范围[15,1440]。
+        网络研讨会持续时长，单位分钟，取值范围[15,1440]。
 
         :return: The duration of this OpenScheduleConfReq.
         :rtype: int
@@ -205,7 +205,7 @@ class OpenScheduleConfReq:
     def duration(self, duration):
         """Sets the duration of this OpenScheduleConfReq.
 
-        会议持续时长，单位分钟，取值范围[15,1440]。
+        网络研讨会持续时长，单位分钟，取值范围[15,1440]。
 
         :param duration: The duration of this OpenScheduleConfReq.
         :type duration: int
@@ -216,7 +216,7 @@ class OpenScheduleConfReq:
     def time_zone_id(self):
         """Gets the time_zone_id of this OpenScheduleConfReq.
 
-        开始时间的时区信息。时区信息，参考时区映射关系。
+        会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
         :return: The time_zone_id of this OpenScheduleConfReq.
         :rtype: int
@@ -227,7 +227,7 @@ class OpenScheduleConfReq:
     def time_zone_id(self, time_zone_id):
         """Sets the time_zone_id of this OpenScheduleConfReq.
 
-        开始时间的时区信息。时区信息，参考时区映射关系。
+        会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
         :param time_zone_id: The time_zone_id of this OpenScheduleConfReq.
         :type time_zone_id: int
@@ -238,7 +238,7 @@ class OpenScheduleConfReq:
     def attendees(self):
         """Gets the attendees of this OpenScheduleConfReq.
 
-        与会者列表。该列表可以用于发送会议通知、会议提醒、会议开始时候进行自动邀请。
+        与会嘉宾列表。 > 观众只能自己通过链接或者会议ID+密码加入，不支持被邀请。 
 
         :return: The attendees of this OpenScheduleConfReq.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.OpenAttendeeEntity`]
@@ -249,7 +249,7 @@ class OpenScheduleConfReq:
     def attendees(self, attendees):
         """Sets the attendees of this OpenScheduleConfReq.
 
-        与会者列表。该列表可以用于发送会议通知、会议提醒、会议开始时候进行自动邀请。
+        与会嘉宾列表。 > 观众只能自己通过链接或者会议ID+密码加入，不支持被邀请。 
 
         :param attendees: The attendees of this OpenScheduleConfReq.
         :type attendees: list[:class:`huaweicloudsdkmeeting.v1.OpenAttendeeEntity`]
@@ -280,7 +280,7 @@ class OpenScheduleConfReq:
     def vmr_id(self):
         """Gets the vmr_id of this OpenScheduleConfReq.
 
-        VMR ID, 用于识别用户开会时绑定的云会议室。最大长度不超过128个字符。
+        绑定给当前创建网络研讨会帐号的VMR ID。通过[[查询云会议室及个人会议ID](https://support.huaweicloud.com/api-meeting/meeting_21_1106.html)](tag:hws)[[查询云会议室及个人会议ID](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1106.html)](tag:hk)接口获取。 > * vmrID取上述查询接口中返回的id，不是vmrId。 > * 创建网络研讨会时，使用vmrMode=2的VMR。 
 
         :return: The vmr_id of this OpenScheduleConfReq.
         :rtype: str
@@ -291,7 +291,7 @@ class OpenScheduleConfReq:
     def vmr_id(self, vmr_id):
         """Sets the vmr_id of this OpenScheduleConfReq.
 
-        VMR ID, 用于识别用户开会时绑定的云会议室。最大长度不超过128个字符。
+        绑定给当前创建网络研讨会帐号的VMR ID。通过[[查询云会议室及个人会议ID](https://support.huaweicloud.com/api-meeting/meeting_21_1106.html)](tag:hws)[[查询云会议室及个人会议ID](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_1106.html)](tag:hk)接口获取。 > * vmrID取上述查询接口中返回的id，不是vmrId。 > * 创建网络研讨会时，使用vmrMode=2的VMR。 
 
         :param vmr_id: The vmr_id of this OpenScheduleConfReq.
         :type vmr_id: str
@@ -302,7 +302,7 @@ class OpenScheduleConfReq:
     def guest_passwd(self):
         """Gets the guest_passwd of this OpenScheduleConfReq.
 
-        自定义嘉宾入会密码, 4-16位数字，不能与观众密码相同；不指定则系统自动创建。
+        嘉宾密码（4-16位长度的纯数字)。不指定则系统自动生成。
 
         :return: The guest_passwd of this OpenScheduleConfReq.
         :rtype: str
@@ -313,7 +313,7 @@ class OpenScheduleConfReq:
     def guest_passwd(self, guest_passwd):
         """Sets the guest_passwd of this OpenScheduleConfReq.
 
-        自定义嘉宾入会密码, 4-16位数字，不能与观众密码相同；不指定则系统自动创建。
+        嘉宾密码（4-16位长度的纯数字)。不指定则系统自动生成。
 
         :param guest_passwd: The guest_passwd of this OpenScheduleConfReq.
         :type guest_passwd: str
@@ -324,7 +324,7 @@ class OpenScheduleConfReq:
     def audience_passwd(self):
         """Gets the audience_passwd of this OpenScheduleConfReq.
 
-        自定义观众入会密码, 4-16位数字，不能与嘉宾密码相同；不指定则系统自动创建。
+        观众密码（4-16位长度的纯数字)。不指定则系统自动生成。
 
         :return: The audience_passwd of this OpenScheduleConfReq.
         :rtype: str
@@ -335,7 +335,7 @@ class OpenScheduleConfReq:
     def audience_passwd(self, audience_passwd):
         """Sets the audience_passwd of this OpenScheduleConfReq.
 
-        自定义观众入会密码, 4-16位数字，不能与嘉宾密码相同；不指定则系统自动创建。
+        观众密码（4-16位长度的纯数字)。不指定则系统自动生成。
 
         :param audience_passwd: The audience_passwd of this OpenScheduleConfReq.
         :type audience_passwd: str
@@ -346,7 +346,7 @@ class OpenScheduleConfReq:
     def call_restriction(self):
         """Gets the call_restriction of this OpenScheduleConfReq.
 
-        入会范围开关
+        入会范围开关。 * false：不限制入会范围 * true：限制入会范围 
 
         :return: The call_restriction of this OpenScheduleConfReq.
         :rtype: bool
@@ -357,7 +357,7 @@ class OpenScheduleConfReq:
     def call_restriction(self, call_restriction):
         """Sets the call_restriction of this OpenScheduleConfReq.
 
-        入会范围开关
+        入会范围开关。 * false：不限制入会范围 * true：限制入会范围 
 
         :param call_restriction: The call_restriction of this OpenScheduleConfReq.
         :type call_restriction: bool
@@ -368,7 +368,7 @@ class OpenScheduleConfReq:
     def scope(self):
         """Gets the scope of this OpenScheduleConfReq.
 
-        主持人、嘉宾入会范围  0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户; 默认值 0。
+        主持人、嘉宾入会范围 。仅callRestriction设置成true后生效。 * 0: 所有用户 * 2: 企业内用户 * 3: 被邀请用户 
 
         :return: The scope of this OpenScheduleConfReq.
         :rtype: int
@@ -379,7 +379,7 @@ class OpenScheduleConfReq:
     def scope(self, scope):
         """Sets the scope of this OpenScheduleConfReq.
 
-        主持人、嘉宾入会范围  0: 所有用户 1: 非匿名用户（手机pstn入会视为匿名入会） 2: 企业内用户 3: 被邀请用户; 默认值 0。
+        主持人、嘉宾入会范围 。仅callRestriction设置成true后生效。 * 0: 所有用户 * 2: 企业内用户 * 3: 被邀请用户 
 
         :param scope: The scope of this OpenScheduleConfReq.
         :type scope: int
@@ -390,7 +390,7 @@ class OpenScheduleConfReq:
     def audience_scope(self):
         """Gets the audience_scope of this OpenScheduleConfReq.
 
-        观众入会范围 0: 所有用户 2: 企业内用户和被邀请用户; 默认值 0。
+        观众入会范围。仅callRestriction设置成true后生效。 * 0: 所有用户 * 2: 企业内用户和被邀请用户 
 
         :return: The audience_scope of this OpenScheduleConfReq.
         :rtype: int
@@ -401,7 +401,7 @@ class OpenScheduleConfReq:
     def audience_scope(self, audience_scope):
         """Sets the audience_scope of this OpenScheduleConfReq.
 
-        观众入会范围 0: 所有用户 2: 企业内用户和被邀请用户; 默认值 0。
+        观众入会范围。仅callRestriction设置成true后生效。 * 0: 所有用户 * 2: 企业内用户和被邀请用户 
 
         :param audience_scope: The audience_scope of this OpenScheduleConfReq.
         :type audience_scope: int

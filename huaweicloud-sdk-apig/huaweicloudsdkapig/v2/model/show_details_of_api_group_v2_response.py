@@ -77,7 +77,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
         :type register_time: datetime
         :param update_time: 最近修改时间
         :type update_time: datetime
-        :param on_sell_status: 是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中
+        :param on_sell_status: 是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中
         :type on_sell_status: int
         :param url_domains: 分组上绑定的独立域名列表
         :type url_domains: list[:class:`huaweicloudsdkapig.v2.UrlDomain`]
@@ -286,7 +286,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
     def on_sell_status(self):
         """Gets the on_sell_status of this ShowDetailsOfApiGroupV2Response.
 
-        是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中
+        是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中
 
         :return: The on_sell_status of this ShowDetailsOfApiGroupV2Response.
         :rtype: int
@@ -297,7 +297,7 @@ class ShowDetailsOfApiGroupV2Response(SdkResponse):
     def on_sell_status(self, on_sell_status):
         """Sets the on_sell_status of this ShowDetailsOfApiGroupV2Response.
 
-        是否已上架云市场： - 1：已上架 - 2：未上架 - 3：审核中
+        是否已上架云商店： - 1：已上架 - 2：未上架 - 3：审核中
 
         :param on_sell_status: The on_sell_status of this ShowDetailsOfApiGroupV2Response.
         :type on_sell_status: int

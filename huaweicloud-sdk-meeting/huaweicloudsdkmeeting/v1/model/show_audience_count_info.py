@@ -37,11 +37,11 @@ class ShowAudienceCountInfo:
 
         The model defined in huaweicloud sdk
 
-        :param show_audience_mode: 观众显示策略：服务端用来计算观众人数、下发给客户端控制观众显示 * 0：不显示 * 1：倍增显示与会人数，基于实时与会人数或累计与会人次（假设为N），可以再进行倍增设置。 * ---支持设置倍增倍数X和基础人数Y，设置后，显示的人数为：N*X+Y。 * ---X支持设置到小数点后1位，当N*X计算非整数时，向下取整。X的范围是1~10，Y的范围是0~10000。 * 2：按累计与会人数显示（当前不做）
+        :param show_audience_mode: 观众显示策略。 * 0：不显示 * 1：倍增显示与会人数。基于实时与会人数或累计与会人次（假设为N），可以再进行倍增设置。支持设置倍增倍数X和基础人数Y，设置后，显示的人数为：N*X+Y 
         :type show_audience_mode: int
-        :param base_audience_count: 基础人数，范围是0~10000
+        :param base_audience_count: 基础人数。范围是0~10000。
         :type base_audience_count: int
-        :param multiple: 倍增倍数，范围是1~10, 支持设置到小数点后1位
+        :param multiple: 倍增倍数。范围是1~10, 支持设置到小数点后1位。
         :type multiple: float
         """
         
@@ -63,7 +63,7 @@ class ShowAudienceCountInfo:
     def show_audience_mode(self):
         """Gets the show_audience_mode of this ShowAudienceCountInfo.
 
-        观众显示策略：服务端用来计算观众人数、下发给客户端控制观众显示 * 0：不显示 * 1：倍增显示与会人数，基于实时与会人数或累计与会人次（假设为N），可以再进行倍增设置。 * ---支持设置倍增倍数X和基础人数Y，设置后，显示的人数为：N*X+Y。 * ---X支持设置到小数点后1位，当N*X计算非整数时，向下取整。X的范围是1~10，Y的范围是0~10000。 * 2：按累计与会人数显示（当前不做）
+        观众显示策略。 * 0：不显示 * 1：倍增显示与会人数。基于实时与会人数或累计与会人次（假设为N），可以再进行倍增设置。支持设置倍增倍数X和基础人数Y，设置后，显示的人数为：N*X+Y 
 
         :return: The show_audience_mode of this ShowAudienceCountInfo.
         :rtype: int
@@ -74,7 +74,7 @@ class ShowAudienceCountInfo:
     def show_audience_mode(self, show_audience_mode):
         """Sets the show_audience_mode of this ShowAudienceCountInfo.
 
-        观众显示策略：服务端用来计算观众人数、下发给客户端控制观众显示 * 0：不显示 * 1：倍增显示与会人数，基于实时与会人数或累计与会人次（假设为N），可以再进行倍增设置。 * ---支持设置倍增倍数X和基础人数Y，设置后，显示的人数为：N*X+Y。 * ---X支持设置到小数点后1位，当N*X计算非整数时，向下取整。X的范围是1~10，Y的范围是0~10000。 * 2：按累计与会人数显示（当前不做）
+        观众显示策略。 * 0：不显示 * 1：倍增显示与会人数。基于实时与会人数或累计与会人次（假设为N），可以再进行倍增设置。支持设置倍增倍数X和基础人数Y，设置后，显示的人数为：N*X+Y 
 
         :param show_audience_mode: The show_audience_mode of this ShowAudienceCountInfo.
         :type show_audience_mode: int
@@ -85,7 +85,7 @@ class ShowAudienceCountInfo:
     def base_audience_count(self):
         """Gets the base_audience_count of this ShowAudienceCountInfo.
 
-        基础人数，范围是0~10000
+        基础人数。范围是0~10000。
 
         :return: The base_audience_count of this ShowAudienceCountInfo.
         :rtype: int
@@ -96,7 +96,7 @@ class ShowAudienceCountInfo:
     def base_audience_count(self, base_audience_count):
         """Sets the base_audience_count of this ShowAudienceCountInfo.
 
-        基础人数，范围是0~10000
+        基础人数。范围是0~10000。
 
         :param base_audience_count: The base_audience_count of this ShowAudienceCountInfo.
         :type base_audience_count: int
@@ -107,7 +107,7 @@ class ShowAudienceCountInfo:
     def multiple(self):
         """Gets the multiple of this ShowAudienceCountInfo.
 
-        倍增倍数，范围是1~10, 支持设置到小数点后1位
+        倍增倍数。范围是1~10, 支持设置到小数点后1位。
 
         :return: The multiple of this ShowAudienceCountInfo.
         :rtype: float
@@ -118,7 +118,7 @@ class ShowAudienceCountInfo:
     def multiple(self, multiple):
         """Sets the multiple of this ShowAudienceCountInfo.
 
-        倍增倍数，范围是1~10, 支持设置到小数点后1位
+        倍增倍数。范围是1~10, 支持设置到小数点后1位。
 
         :param multiple: The multiple of this ShowAudienceCountInfo.
         :type multiple: float

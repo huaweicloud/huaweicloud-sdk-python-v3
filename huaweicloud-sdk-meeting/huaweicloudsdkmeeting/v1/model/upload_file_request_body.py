@@ -33,7 +33,7 @@ class UploadFileRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param file: 需要上传的文件
+        :param file: 需要上传的图片文件。
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         
@@ -48,7 +48,7 @@ class UploadFileRequestBody:
     def file(self):
         """Gets the file of this UploadFileRequestBody.
 
-        需要上传的文件
+        需要上传的图片文件。
 
         :return: The file of this UploadFileRequestBody.
         :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
@@ -59,7 +59,7 @@ class UploadFileRequestBody:
     def file(self, file):
         """Sets the file of this UploadFileRequestBody.
 
-        需要上传的文件
+        需要上传的图片文件。
 
         :param file: The file of this UploadFileRequestBody.
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`

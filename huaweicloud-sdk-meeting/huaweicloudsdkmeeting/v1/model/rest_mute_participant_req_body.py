@@ -33,7 +33,7 @@ class RestMuteParticipantReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param is_mute: - 0: 取消静音。 - 1: 静音。
+        :param is_mute: - 0: 取消静音 - 1: 静音
         :type is_mute: int
         """
         
@@ -48,7 +48,7 @@ class RestMuteParticipantReqBody:
     def is_mute(self):
         """Gets the is_mute of this RestMuteParticipantReqBody.
 
-        - 0: 取消静音。 - 1: 静音。
+        - 0: 取消静音 - 1: 静音
 
         :return: The is_mute of this RestMuteParticipantReqBody.
         :rtype: int
@@ -59,7 +59,7 @@ class RestMuteParticipantReqBody:
     def is_mute(self, is_mute):
         """Sets the is_mute of this RestMuteParticipantReqBody.
 
-        - 0: 取消静音。 - 1: 静音。
+        - 0: 取消静音 - 1: 静音
 
         :param is_mute: The is_mute of this RestMuteParticipantReqBody.
         :type is_mute: int

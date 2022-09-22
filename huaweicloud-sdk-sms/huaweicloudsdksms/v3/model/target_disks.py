@@ -43,9 +43,9 @@ class TargetDisks:
 
         The model defined in huaweicloud sdk
 
-        :param device_use: 磁盘类型，普通磁盘，OS所在磁盘，BOOT所在磁盘
+        :param device_use: 磁盘类型，普通磁盘，OS所在磁盘，BOOT所在磁盘 BOOT：BOOT设备 OS：系统设备 NORMAL:平常
         :type device_use: str
-        :param disk_id: 磁盘id,自动创建虚拟机不用设置
+        :param disk_id: 磁盘ID,自动创建虚拟机不用设置
         :type disk_id: str
         :param name: 名称，根据磁盘顺序设置为disk X
         :type name: str
@@ -80,7 +80,7 @@ class TargetDisks:
     def device_use(self):
         """Gets the device_use of this TargetDisks.
 
-        磁盘类型，普通磁盘，OS所在磁盘，BOOT所在磁盘
+        磁盘类型，普通磁盘，OS所在磁盘，BOOT所在磁盘 BOOT：BOOT设备 OS：系统设备 NORMAL:平常
 
         :return: The device_use of this TargetDisks.
         :rtype: str
@@ -91,7 +91,7 @@ class TargetDisks:
     def device_use(self, device_use):
         """Sets the device_use of this TargetDisks.
 
-        磁盘类型，普通磁盘，OS所在磁盘，BOOT所在磁盘
+        磁盘类型，普通磁盘，OS所在磁盘，BOOT所在磁盘 BOOT：BOOT设备 OS：系统设备 NORMAL:平常
 
         :param device_use: The device_use of this TargetDisks.
         :type device_use: str
@@ -102,7 +102,7 @@ class TargetDisks:
     def disk_id(self):
         """Gets the disk_id of this TargetDisks.
 
-        磁盘id,自动创建虚拟机不用设置
+        磁盘ID,自动创建虚拟机不用设置
 
         :return: The disk_id of this TargetDisks.
         :rtype: str
@@ -113,7 +113,7 @@ class TargetDisks:
     def disk_id(self, disk_id):
         """Sets the disk_id of this TargetDisks.
 
-        磁盘id,自动创建虚拟机不用设置
+        磁盘ID,自动创建虚拟机不用设置
 
         :param disk_id: The disk_id of this TargetDisks.
         :type disk_id: str

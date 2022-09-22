@@ -22,9 +22,9 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     openapi_types = {
         'instance_id': 'str',
+        'throttle_id': 'str',
         'offset': 'int',
         'limit': 'int',
-        'throttle_id': 'str',
         'object_type': 'str',
         'app_name': 'str',
         'user': 'str'
@@ -32,28 +32,28 @@ class ListSpecialThrottlingConfigurationsV2Request:
 
     attribute_map = {
         'instance_id': 'instance_id',
+        'throttle_id': 'throttle_id',
         'offset': 'offset',
         'limit': 'limit',
-        'throttle_id': 'throttle_id',
         'object_type': 'object_type',
         'app_name': 'app_name',
         'user': 'user'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, throttle_id=None, object_type=None, app_name=None, user=None):
+    def __init__(self, instance_id=None, throttle_id=None, offset=None, limit=None, object_type=None, app_name=None, user=None):
         """ListSpecialThrottlingConfigurationsV2Request
 
         The model defined in huaweicloud sdk
 
         :param instance_id: 实例ID
         :type instance_id: str
+        :param throttle_id: 流控策略的编号
+        :type throttle_id: str
         :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
         :type offset: int
         :param limit: 每页显示的条目数量
         :type limit: int
-        :param throttle_id: 流控策略的编号
-        :type throttle_id: str
-        :param object_type: 特殊流控类型：APP, USER
+        :param object_type: 特殊流控类型：APP，USER
         :type object_type: str
         :param app_name: 筛选的特殊应用名称
         :type app_name: str
@@ -64,20 +64,20 @@ class ListSpecialThrottlingConfigurationsV2Request:
         
 
         self._instance_id = None
+        self._throttle_id = None
         self._offset = None
         self._limit = None
-        self._throttle_id = None
         self._object_type = None
         self._app_name = None
         self._user = None
         self.discriminator = None
 
         self.instance_id = instance_id
+        self.throttle_id = throttle_id
         if offset is not None:
             self.offset = offset
         if limit is not None:
             self.limit = limit
-        self.throttle_id = throttle_id
         if object_type is not None:
             self.object_type = object_type
         if app_name is not None:
@@ -106,6 +106,28 @@ class ListSpecialThrottlingConfigurationsV2Request:
         :type instance_id: str
         """
         self._instance_id = instance_id
+
+    @property
+    def throttle_id(self):
+        """Gets the throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
+
+        流控策略的编号
+
+        :return: The throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
+        :rtype: str
+        """
+        return self._throttle_id
+
+    @throttle_id.setter
+    def throttle_id(self, throttle_id):
+        """Sets the throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
+
+        流控策略的编号
+
+        :param throttle_id: The throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
+        :type throttle_id: str
+        """
+        self._throttle_id = throttle_id
 
     @property
     def offset(self):
@@ -152,32 +174,10 @@ class ListSpecialThrottlingConfigurationsV2Request:
         self._limit = limit
 
     @property
-    def throttle_id(self):
-        """Gets the throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
-
-        流控策略的编号
-
-        :return: The throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
-        :rtype: str
-        """
-        return self._throttle_id
-
-    @throttle_id.setter
-    def throttle_id(self, throttle_id):
-        """Sets the throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
-
-        流控策略的编号
-
-        :param throttle_id: The throttle_id of this ListSpecialThrottlingConfigurationsV2Request.
-        :type throttle_id: str
-        """
-        self._throttle_id = throttle_id
-
-    @property
     def object_type(self):
         """Gets the object_type of this ListSpecialThrottlingConfigurationsV2Request.
 
-        特殊流控类型：APP, USER
+        特殊流控类型：APP，USER
 
         :return: The object_type of this ListSpecialThrottlingConfigurationsV2Request.
         :rtype: str
@@ -188,7 +188,7 @@ class ListSpecialThrottlingConfigurationsV2Request:
     def object_type(self, object_type):
         """Sets the object_type of this ListSpecialThrottlingConfigurationsV2Request.
 
-        特殊流控类型：APP, USER
+        特殊流控类型：APP，USER
 
         :param object_type: The object_type of this ListSpecialThrottlingConfigurationsV2Request.
         :type object_type: str

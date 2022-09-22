@@ -65,39 +65,39 @@ class AddUserDTO:
 
         The model defined in huaweicloud sdk
 
-        :param name: 企业用户姓名。 maxLength：64 minLength：1
+        :param name: 企业用户名称。
         :type name: str
-        :param english_name: 企业用户的英文姓名。 maxLength：64 minLength：0
+        :param english_name: 企业用户的英文名称。
         :type english_name: str
-        :param account: 企业用户帐号，若携带则以携带为准，否则后台自动生成。账号整系统唯一 帐号只能包含大小写字母、数字、_、-、.、@符号，不能为纯数字和@后面带.号。 maxLength：64 minLength：0
+        :param account: 企业用户帐号，若携带则以携带为准，否则后台自动生成。帐号整系统唯一。 帐号只能包含大小写字母、数字、_、-、.、@符号，不能为纯数字和@后面带.号。 &gt; 帐号/密码鉴权方式时需要填写。
         :type account: str
-        :param third_account: 指定第三方账号开户
+        :param third_account: 第三方User ID。 &gt; App ID鉴权方式时需要填写。第三方User ID需要企业内唯一。
         :type third_account: str
-        :param phone: 手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 说明：手机号或者邮箱至少填写一个 maxLength：32 minLength：0
+        :param phone: 手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 说明：手机号或者邮箱至少填写一个
         :type phone: str
-        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
-        :param pwd: 企业用户帐号的密码。若携带则以实际携带为准，否则后台默认生成，密码必须满足： 1、8-32位 2、不能和账号的正序和倒序一致 3、至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（&#x60; ~ ! @ # $ % ^ &amp; * ( ) - _ &#x3D; + | [ { } ] ; : \&quot; ,’ &lt; . &gt; / ?）
+        :param pwd: 企业用户帐号的密码。若携带则以实际携带为准，否则后台默认生成，密码必须满足： 1、8-32位 2、不能和帐号的正序和倒序一致 3、至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（&#x60; ~ ! @ # $ % ^ &amp; * ( ) - _ &#x3D; + | [ { } ] ; : \&quot; ,’ &lt; . &gt; / ?）
         :type pwd: str
-        :param email: 邮箱 maxLength：255 minLength：0
+        :param email: 邮箱地址。
         :type email: str
-        :param dept_code: 部门编号，若不携带则默认根部门 默认值：1 maxLength：32 minLength：0
+        :param dept_code: 部门编码，若不携带则默认根部门。 默认值：1
         :type dept_code: str
-        :param signature: 签名 maxLength：512 minLength：0
+        :param signature: 签名。
         :type signature: str
-        :param title: 职位 maxLength：32 minLength：0
+        :param title: 职位。
         :type title: str
-        :param desc: 备注 maxLength：128 minLength：0
+        :param desc: 备注。
         :type desc: str
-        :param status: 用户状态 * 0、正常 * 1、停用 默认值：0
+        :param status: 用户状态。默认值：0 * 0：正常 * 1：停用
         :type status: int
         :param function: 
         :type function: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
-        :param send_notify: 是否发送邮件和短信通知， - 0 不发送 - 不填或者其他值就发送, 默认发送  约束 - 长度范围为0到32个字符
+        :param send_notify: 是否发送开户的邮件和短信通知。 - 0 不发送 - 不填或者其他值就发送, 默认发送
         :type send_notify: str
-        :param sort_level: 通讯录排序等级，序号越低优先级越高。 默认值：10000 maximum：10000 minimum：1
+        :param sort_level: 通讯录排序等级，序号越低优先级越高。 默认值：10000
         :type sort_level: int
-        :param hide_phone: 是否隐藏手机号码 默认值：false 
+        :param hide_phone: 是否隐藏手机号码。默认值：false。 * true：在通讯录和会议中不显示手机号码 * false：在通讯录和会议中显示手机号码 
         :type hide_phone: bool
         """
         
@@ -160,7 +160,7 @@ class AddUserDTO:
     def name(self):
         """Gets the name of this AddUserDTO.
 
-        企业用户姓名。 maxLength：64 minLength：1
+        企业用户名称。
 
         :return: The name of this AddUserDTO.
         :rtype: str
@@ -171,7 +171,7 @@ class AddUserDTO:
     def name(self, name):
         """Sets the name of this AddUserDTO.
 
-        企业用户姓名。 maxLength：64 minLength：1
+        企业用户名称。
 
         :param name: The name of this AddUserDTO.
         :type name: str
@@ -182,7 +182,7 @@ class AddUserDTO:
     def english_name(self):
         """Gets the english_name of this AddUserDTO.
 
-        企业用户的英文姓名。 maxLength：64 minLength：0
+        企业用户的英文名称。
 
         :return: The english_name of this AddUserDTO.
         :rtype: str
@@ -193,7 +193,7 @@ class AddUserDTO:
     def english_name(self, english_name):
         """Sets the english_name of this AddUserDTO.
 
-        企业用户的英文姓名。 maxLength：64 minLength：0
+        企业用户的英文名称。
 
         :param english_name: The english_name of this AddUserDTO.
         :type english_name: str
@@ -204,7 +204,7 @@ class AddUserDTO:
     def account(self):
         """Gets the account of this AddUserDTO.
 
-        企业用户帐号，若携带则以携带为准，否则后台自动生成。账号整系统唯一 帐号只能包含大小写字母、数字、_、-、.、@符号，不能为纯数字和@后面带.号。 maxLength：64 minLength：0
+        企业用户帐号，若携带则以携带为准，否则后台自动生成。帐号整系统唯一。 帐号只能包含大小写字母、数字、_、-、.、@符号，不能为纯数字和@后面带.号。 > 帐号/密码鉴权方式时需要填写。
 
         :return: The account of this AddUserDTO.
         :rtype: str
@@ -215,7 +215,7 @@ class AddUserDTO:
     def account(self, account):
         """Sets the account of this AddUserDTO.
 
-        企业用户帐号，若携带则以携带为准，否则后台自动生成。账号整系统唯一 帐号只能包含大小写字母、数字、_、-、.、@符号，不能为纯数字和@后面带.号。 maxLength：64 minLength：0
+        企业用户帐号，若携带则以携带为准，否则后台自动生成。帐号整系统唯一。 帐号只能包含大小写字母、数字、_、-、.、@符号，不能为纯数字和@后面带.号。 > 帐号/密码鉴权方式时需要填写。
 
         :param account: The account of this AddUserDTO.
         :type account: str
@@ -226,7 +226,7 @@ class AddUserDTO:
     def third_account(self):
         """Gets the third_account of this AddUserDTO.
 
-        指定第三方账号开户
+        第三方User ID。 > App ID鉴权方式时需要填写。第三方User ID需要企业内唯一。
 
         :return: The third_account of this AddUserDTO.
         :rtype: str
@@ -237,7 +237,7 @@ class AddUserDTO:
     def third_account(self, third_account):
         """Sets the third_account of this AddUserDTO.
 
-        指定第三方账号开户
+        第三方User ID。 > App ID鉴权方式时需要填写。第三方User ID需要企业内唯一。
 
         :param third_account: The third_account of this AddUserDTO.
         :type third_account: str
@@ -248,7 +248,7 @@ class AddUserDTO:
     def phone(self):
         """Gets the phone of this AddUserDTO.
 
-        手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 说明：手机号或者邮箱至少填写一个 maxLength：32 minLength：0
+        手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 说明：手机号或者邮箱至少填写一个
 
         :return: The phone of this AddUserDTO.
         :rtype: str
@@ -259,7 +259,7 @@ class AddUserDTO:
     def phone(self, phone):
         """Sets the phone of this AddUserDTO.
 
-        手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 说明：手机号或者邮箱至少填写一个 maxLength：32 minLength：0
+        手机号，必须加上国家码。 例如中国大陆手机+86xxxxxxx。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 说明：手机号或者邮箱至少填写一个
 
         :param phone: The phone of this AddUserDTO.
         :type phone: str
@@ -270,7 +270,7 @@ class AddUserDTO:
     def country(self):
         """Gets the country of this AddUserDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this AddUserDTO.
         :rtype: str
@@ -281,7 +281,7 @@ class AddUserDTO:
     def country(self, country):
         """Sets the country of this AddUserDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this AddUserDTO.
         :type country: str
@@ -292,7 +292,7 @@ class AddUserDTO:
     def pwd(self):
         """Gets the pwd of this AddUserDTO.
 
-        企业用户帐号的密码。若携带则以实际携带为准，否则后台默认生成，密码必须满足： 1、8-32位 2、不能和账号的正序和倒序一致 3、至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（` ~ ! @ # $ % ^ & * ( ) - _ = + | [ { } ] ; : \" ,’ < . > / ?）
+        企业用户帐号的密码。若携带则以实际携带为准，否则后台默认生成，密码必须满足： 1、8-32位 2、不能和帐号的正序和倒序一致 3、至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（` ~ ! @ # $ % ^ & * ( ) - _ = + | [ { } ] ; : \" ,’ < . > / ?）
 
         :return: The pwd of this AddUserDTO.
         :rtype: str
@@ -303,7 +303,7 @@ class AddUserDTO:
     def pwd(self, pwd):
         """Sets the pwd of this AddUserDTO.
 
-        企业用户帐号的密码。若携带则以实际携带为准，否则后台默认生成，密码必须满足： 1、8-32位 2、不能和账号的正序和倒序一致 3、至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（` ~ ! @ # $ % ^ & * ( ) - _ = + | [ { } ] ; : \" ,’ < . > / ?）
+        企业用户帐号的密码。若携带则以实际携带为准，否则后台默认生成，密码必须满足： 1、8-32位 2、不能和帐号的正序和倒序一致 3、至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（` ~ ! @ # $ % ^ & * ( ) - _ = + | [ { } ] ; : \" ,’ < . > / ?）
 
         :param pwd: The pwd of this AddUserDTO.
         :type pwd: str
@@ -314,7 +314,7 @@ class AddUserDTO:
     def email(self):
         """Gets the email of this AddUserDTO.
 
-        邮箱 maxLength：255 minLength：0
+        邮箱地址。
 
         :return: The email of this AddUserDTO.
         :rtype: str
@@ -325,7 +325,7 @@ class AddUserDTO:
     def email(self, email):
         """Sets the email of this AddUserDTO.
 
-        邮箱 maxLength：255 minLength：0
+        邮箱地址。
 
         :param email: The email of this AddUserDTO.
         :type email: str
@@ -336,7 +336,7 @@ class AddUserDTO:
     def dept_code(self):
         """Gets the dept_code of this AddUserDTO.
 
-        部门编号，若不携带则默认根部门 默认值：1 maxLength：32 minLength：0
+        部门编码，若不携带则默认根部门。 默认值：1
 
         :return: The dept_code of this AddUserDTO.
         :rtype: str
@@ -347,7 +347,7 @@ class AddUserDTO:
     def dept_code(self, dept_code):
         """Sets the dept_code of this AddUserDTO.
 
-        部门编号，若不携带则默认根部门 默认值：1 maxLength：32 minLength：0
+        部门编码，若不携带则默认根部门。 默认值：1
 
         :param dept_code: The dept_code of this AddUserDTO.
         :type dept_code: str
@@ -358,7 +358,7 @@ class AddUserDTO:
     def signature(self):
         """Gets the signature of this AddUserDTO.
 
-        签名 maxLength：512 minLength：0
+        签名。
 
         :return: The signature of this AddUserDTO.
         :rtype: str
@@ -369,7 +369,7 @@ class AddUserDTO:
     def signature(self, signature):
         """Sets the signature of this AddUserDTO.
 
-        签名 maxLength：512 minLength：0
+        签名。
 
         :param signature: The signature of this AddUserDTO.
         :type signature: str
@@ -380,7 +380,7 @@ class AddUserDTO:
     def title(self):
         """Gets the title of this AddUserDTO.
 
-        职位 maxLength：32 minLength：0
+        职位。
 
         :return: The title of this AddUserDTO.
         :rtype: str
@@ -391,7 +391,7 @@ class AddUserDTO:
     def title(self, title):
         """Sets the title of this AddUserDTO.
 
-        职位 maxLength：32 minLength：0
+        职位。
 
         :param title: The title of this AddUserDTO.
         :type title: str
@@ -402,7 +402,7 @@ class AddUserDTO:
     def desc(self):
         """Gets the desc of this AddUserDTO.
 
-        备注 maxLength：128 minLength：0
+        备注。
 
         :return: The desc of this AddUserDTO.
         :rtype: str
@@ -413,7 +413,7 @@ class AddUserDTO:
     def desc(self, desc):
         """Sets the desc of this AddUserDTO.
 
-        备注 maxLength：128 minLength：0
+        备注。
 
         :param desc: The desc of this AddUserDTO.
         :type desc: str
@@ -424,7 +424,7 @@ class AddUserDTO:
     def status(self):
         """Gets the status of this AddUserDTO.
 
-        用户状态 * 0、正常 * 1、停用 默认值：0
+        用户状态。默认值：0 * 0：正常 * 1：停用
 
         :return: The status of this AddUserDTO.
         :rtype: int
@@ -435,7 +435,7 @@ class AddUserDTO:
     def status(self, status):
         """Sets the status of this AddUserDTO.
 
-        用户状态 * 0、正常 * 1、停用 默认值：0
+        用户状态。默认值：0 * 0：正常 * 1：停用
 
         :param status: The status of this AddUserDTO.
         :type status: int
@@ -466,7 +466,7 @@ class AddUserDTO:
     def send_notify(self):
         """Gets the send_notify of this AddUserDTO.
 
-        是否发送邮件和短信通知， - 0 不发送 - 不填或者其他值就发送, 默认发送  约束 - 长度范围为0到32个字符
+        是否发送开户的邮件和短信通知。 - 0 不发送 - 不填或者其他值就发送, 默认发送
 
         :return: The send_notify of this AddUserDTO.
         :rtype: str
@@ -477,7 +477,7 @@ class AddUserDTO:
     def send_notify(self, send_notify):
         """Sets the send_notify of this AddUserDTO.
 
-        是否发送邮件和短信通知， - 0 不发送 - 不填或者其他值就发送, 默认发送  约束 - 长度范围为0到32个字符
+        是否发送开户的邮件和短信通知。 - 0 不发送 - 不填或者其他值就发送, 默认发送
 
         :param send_notify: The send_notify of this AddUserDTO.
         :type send_notify: str
@@ -488,7 +488,7 @@ class AddUserDTO:
     def sort_level(self):
         """Gets the sort_level of this AddUserDTO.
 
-        通讯录排序等级，序号越低优先级越高。 默认值：10000 maximum：10000 minimum：1
+        通讯录排序等级，序号越低优先级越高。 默认值：10000
 
         :return: The sort_level of this AddUserDTO.
         :rtype: int
@@ -499,7 +499,7 @@ class AddUserDTO:
     def sort_level(self, sort_level):
         """Sets the sort_level of this AddUserDTO.
 
-        通讯录排序等级，序号越低优先级越高。 默认值：10000 maximum：10000 minimum：1
+        通讯录排序等级，序号越低优先级越高。 默认值：10000
 
         :param sort_level: The sort_level of this AddUserDTO.
         :type sort_level: int
@@ -510,7 +510,7 @@ class AddUserDTO:
     def hide_phone(self):
         """Gets the hide_phone of this AddUserDTO.
 
-        是否隐藏手机号码 默认值：false 
+        是否隐藏手机号码。默认值：false。 * true：在通讯录和会议中不显示手机号码 * false：在通讯录和会议中显示手机号码 
 
         :return: The hide_phone of this AddUserDTO.
         :rtype: bool
@@ -521,7 +521,7 @@ class AddUserDTO:
     def hide_phone(self, hide_phone):
         """Sets the hide_phone of this AddUserDTO.
 
-        是否隐藏手机号码 默认值：false 
+        是否隐藏手机号码。默认值：false。 * true：在通讯录和会议中不显示手机号码 * false：在通讯录和会议中显示手机号码 
 
         :param hide_phone: The hide_phone of this AddUserDTO.
         :type hide_phone: bool

@@ -35,7 +35,7 @@ class RestLockSiteViewReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param status: - 0: 取消锁定。 - 1: 锁定。
+        :param status: 锁定标志。 - 0: 取消锁定 - 1: 锁定
         :type status: int
         :param participant_id: 被锁定视频源的与会者标识。
         :type participant_id: str
@@ -54,7 +54,7 @@ class RestLockSiteViewReqBody:
     def status(self):
         """Gets the status of this RestLockSiteViewReqBody.
 
-        - 0: 取消锁定。 - 1: 锁定。
+        锁定标志。 - 0: 取消锁定 - 1: 锁定
 
         :return: The status of this RestLockSiteViewReqBody.
         :rtype: int
@@ -65,7 +65,7 @@ class RestLockSiteViewReqBody:
     def status(self, status):
         """Sets the status of this RestLockSiteViewReqBody.
 
-        - 0: 取消锁定。 - 1: 锁定。
+        锁定标志。 - 0: 取消锁定 - 1: 锁定
 
         :param status: The status of this RestLockSiteViewReqBody.
         :type status: int

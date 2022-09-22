@@ -73,7 +73,7 @@ class MigprojectsResponseBody:
         :type exist_server: bool
         :param description: 迁移项目描述
         :type description: str
-        :param type: 迁移项目默认迁移类型
+        :param type: 迁移项目默认迁移类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移 
         :type type: str
         :param enterprise_project: 迁移项目所属的企业项目名称
         :type enterprise_project: str
@@ -324,7 +324,7 @@ class MigprojectsResponseBody:
     def type(self):
         """Gets the type of this MigprojectsResponseBody.
 
-        迁移项目默认迁移类型
+        迁移项目默认迁移类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移 
 
         :return: The type of this MigprojectsResponseBody.
         :rtype: str
@@ -335,7 +335,7 @@ class MigprojectsResponseBody:
     def type(self, type):
         """Sets the type of this MigprojectsResponseBody.
 
-        迁移项目默认迁移类型
+        迁移项目默认迁移类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移 
 
         :param type: The type of this MigprojectsResponseBody.
         :type type: str

@@ -33,7 +33,7 @@ class AddDepartmentResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param value: 返回结果
+        :param value: 返回结果。
         :type value: str
         """
         
@@ -49,7 +49,7 @@ class AddDepartmentResponse(SdkResponse):
     def value(self):
         """Gets the value of this AddDepartmentResponse.
 
-        返回结果
+        返回结果。
 
         :return: The value of this AddDepartmentResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class AddDepartmentResponse(SdkResponse):
     def value(self, value):
         """Sets the value of this AddDepartmentResponse.
 
-        返回结果
+        返回结果。
 
         :param value: The value of this AddDepartmentResponse.
         :type value: str

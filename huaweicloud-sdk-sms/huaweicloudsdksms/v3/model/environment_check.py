@@ -26,6 +26,7 @@ class EnvironmentCheck:
         'name': 'str',
         'result': 'str',
         'error_code': 'str',
+        'error_or_warn': 'str',
         'error_params': 'str'
     }
 
@@ -35,10 +36,11 @@ class EnvironmentCheck:
         'name': 'name',
         'result': 'result',
         'error_code': 'error_code',
+        'error_or_warn': 'error_or_warn',
         'error_params': 'error_params'
     }
 
-    def __init__(self, id=None, params=None, name=None, result=None, error_code=None, error_params=None):
+    def __init__(self, id=None, params=None, name=None, result=None, error_code=None, error_or_warn=None, error_params=None):
         """EnvironmentCheck
 
         The model defined in huaweicloud sdk
@@ -49,10 +51,12 @@ class EnvironmentCheck:
         :type params: list[str]
         :param name: 检查项名称
         :type name: str
-        :param result: 检查结果
+        :param result: 检查结果 OK：检查通过 WARN：警告 ERROR:检查不通过
         :type result: str
         :param error_code: 检查不通过的错误码
         :type error_code: str
+        :param error_or_warn: 检查的错误或者警告
+        :type error_or_warn: str
         :param error_params: 检查不通过的错误参数
         :type error_params: str
         """
@@ -64,6 +68,7 @@ class EnvironmentCheck:
         self._name = None
         self._result = None
         self._error_code = None
+        self._error_or_warn = None
         self._error_params = None
         self.discriminator = None
 
@@ -74,6 +79,8 @@ class EnvironmentCheck:
         self.result = result
         if error_code is not None:
             self.error_code = error_code
+        if error_or_warn is not None:
+            self.error_or_warn = error_or_warn
         if error_params is not None:
             self.error_params = error_params
 
@@ -147,7 +154,7 @@ class EnvironmentCheck:
     def result(self):
         """Gets the result of this EnvironmentCheck.
 
-        检查结果
+        检查结果 OK：检查通过 WARN：警告 ERROR:检查不通过
 
         :return: The result of this EnvironmentCheck.
         :rtype: str
@@ -158,7 +165,7 @@ class EnvironmentCheck:
     def result(self, result):
         """Sets the result of this EnvironmentCheck.
 
-        检查结果
+        检查结果 OK：检查通过 WARN：警告 ERROR:检查不通过
 
         :param result: The result of this EnvironmentCheck.
         :type result: str
@@ -186,6 +193,28 @@ class EnvironmentCheck:
         :type error_code: str
         """
         self._error_code = error_code
+
+    @property
+    def error_or_warn(self):
+        """Gets the error_or_warn of this EnvironmentCheck.
+
+        检查的错误或者警告
+
+        :return: The error_or_warn of this EnvironmentCheck.
+        :rtype: str
+        """
+        return self._error_or_warn
+
+    @error_or_warn.setter
+    def error_or_warn(self, error_or_warn):
+        """Sets the error_or_warn of this EnvironmentCheck.
+
+        检查的错误或者警告
+
+        :param error_or_warn: The error_or_warn of this EnvironmentCheck.
+        :type error_or_warn: str
+        """
+        self._error_or_warn = error_or_warn
 
     @property
     def error_params(self):

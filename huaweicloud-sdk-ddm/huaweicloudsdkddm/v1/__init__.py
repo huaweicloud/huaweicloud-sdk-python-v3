@@ -6,6 +6,7 @@ from __future__ import absolute_import
 from huaweicloudsdkddm.v1.ddm_client import DdmClient
 from huaweicloudsdkddm.v1.ddm_async_client import DdmAsyncClient
 # import models into sdk package
+from huaweicloudsdkddm.v1.model.admin_user_info_req import AdminUserInfoReq
 from huaweicloudsdkddm.v1.model.compute_flavor_groups_info import ComputeFlavorGroupsInfo
 from huaweicloudsdkddm.v1.model.compute_flavors import ComputeFlavors
 from huaweicloudsdkddm.v1.model.configuration_parameter_list import ConfigurationParameterList
@@ -34,6 +35,7 @@ from huaweicloudsdkddm.v1.model.delete_user_request import DeleteUserRequest
 from huaweicloudsdkddm.v1.model.delete_user_response import DeleteUserResponse
 from huaweicloudsdkddm.v1.model.engine_groups_info import EngineGroupsInfo
 from huaweicloudsdkddm.v1.model.enlarge_request import EnlargeRequest
+from huaweicloudsdkddm.v1.model.error_response import ErrorResponse
 from huaweicloudsdkddm.v1.model.expand_instance_nodes_request import ExpandInstanceNodesRequest
 from huaweicloudsdkddm.v1.model.expand_instance_nodes_response import ExpandInstanceNodesResponse
 from huaweicloudsdkddm.v1.model.get_database_info import GetDatabaseInfo
@@ -70,9 +72,14 @@ from huaweicloudsdkddm.v1.model.read_write_ratio_list import ReadWriteRatioList
 from huaweicloudsdkddm.v1.model.rebuild_config_request import RebuildConfigRequest
 from huaweicloudsdkddm.v1.model.rebuild_config_response import RebuildConfigResponse
 from huaweicloudsdkddm.v1.model.reduce_request import ReduceRequest
+from huaweicloudsdkddm.v1.model.reset_administrator_request import ResetAdministratorRequest
+from huaweicloudsdkddm.v1.model.reset_administrator_response import ResetAdministratorResponse
 from huaweicloudsdkddm.v1.model.reset_user_password_req import ResetUserPasswordReq
 from huaweicloudsdkddm.v1.model.reset_user_password_request import ResetUserPasswordRequest
 from huaweicloudsdkddm.v1.model.reset_user_password_response import ResetUserPasswordResponse
+from huaweicloudsdkddm.v1.model.resize_flavor_req import ResizeFlavorReq
+from huaweicloudsdkddm.v1.model.resize_flavor_request import ResizeFlavorRequest
+from huaweicloudsdkddm.v1.model.resize_flavor_response import ResizeFlavorResponse
 from huaweicloudsdkddm.v1.model.restar_instance_info import RestarInstanceInfo
 from huaweicloudsdkddm.v1.model.restart_instance_req import RestartInstanceReq
 from huaweicloudsdkddm.v1.model.restart_instance_request import RestartInstanceRequest
@@ -107,4 +114,7 @@ from huaweicloudsdkddm.v1.model.update_user_req import UpdateUserReq
 from huaweicloudsdkddm.v1.model.update_user_request import UpdateUserRequest
 from huaweicloudsdkddm.v1.model.update_user_response import UpdateUserResponse
 from huaweicloudsdkddm.v1.model.update_users_databases import UpdateUsersDatabases
+from huaweicloudsdkddm.v1.model.validate_weak_password_request import ValidateWeakPasswordRequest
+from huaweicloudsdkddm.v1.model.validate_weak_password_response import ValidateWeakPasswordResponse
+from huaweicloudsdkddm.v1.model.weak_password_req import WeakPasswordReq
 

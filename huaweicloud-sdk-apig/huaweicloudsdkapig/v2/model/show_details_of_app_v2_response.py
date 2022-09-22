@@ -59,7 +59,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
         :type name: str
         :param remark: 描述
         :type remark: str
-        :param creator: APP的创建者 - USER：用户自行创建 - MARKET：云市场分配  暂不支持MARKET
+        :param creator: APP的创建者 - USER：用户自行创建 - MARKET：云商店分配  暂不支持MARKET
         :type creator: str
         :param update_time: 更新时间
         :type update_time: datetime
@@ -185,7 +185,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
     def creator(self):
         """Gets the creator of this ShowDetailsOfAppV2Response.
 
-        APP的创建者 - USER：用户自行创建 - MARKET：云市场分配  暂不支持MARKET
+        APP的创建者 - USER：用户自行创建 - MARKET：云商店分配  暂不支持MARKET
 
         :return: The creator of this ShowDetailsOfAppV2Response.
         :rtype: str
@@ -196,7 +196,7 @@ class ShowDetailsOfAppV2Response(SdkResponse):
     def creator(self, creator):
         """Sets the creator of this ShowDetailsOfAppV2Response.
 
-        APP的创建者 - USER：用户自行创建 - MARKET：云市场分配  暂不支持MARKET
+        APP的创建者 - USER：用户自行创建 - MARKET：云商店分配  暂不支持MARKET
 
         :param creator: The creator of this ShowDetailsOfAppV2Response.
         :type creator: str

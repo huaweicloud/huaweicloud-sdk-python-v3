@@ -28,7 +28,8 @@ class CheckConfigInfo:
         'is_required': 'int',
         'description': 'str',
         'type': 'int',
-        'status': 'str'
+        'status': 'str',
+        'value': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class CheckConfigInfo:
         'is_required': 'is_required',
         'description': 'description',
         'type': 'type',
-        'status': 'status'
+        'status': 'status',
+        'value': 'value'
     }
 
-    def __init__(self, name=None, cfg_key=None, default_value=None, option_value=None, is_required=None, description=None, type=None, status=None):
+    def __init__(self, name=None, cfg_key=None, default_value=None, option_value=None, is_required=None, description=None, type=None, status=None, value=None):
         """CheckConfigInfo
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class CheckConfigInfo:
         :type type: int
         :param status: 参数状态，on：启用，off：未启用
         :type status: str
+        :param value: 检查参数值
+        :type value: str
         """
         
         
@@ -75,6 +79,7 @@ class CheckConfigInfo:
         self._description = None
         self._type = None
         self._status = None
+        self._value = None
         self.discriminator = None
 
         if name is not None:
@@ -93,6 +98,8 @@ class CheckConfigInfo:
             self.type = type
         if status is not None:
             self.status = status
+        if value is not None:
+            self.value = value
 
     @property
     def name(self):
@@ -269,6 +276,28 @@ class CheckConfigInfo:
         :type status: str
         """
         self._status = status
+
+    @property
+    def value(self):
+        """Gets the value of this CheckConfigInfo.
+
+        检查参数值
+
+        :return: The value of this CheckConfigInfo.
+        :rtype: str
+        """
+        return self._value
+
+    @value.setter
+    def value(self, value):
+        """Sets the value of this CheckConfigInfo.
+
+        检查参数值
+
+        :param value: The value of this CheckConfigInfo.
+        :type value: str
+        """
+        self._value = value
 
     def to_dict(self):
         """Returns the model properties as a dict"""

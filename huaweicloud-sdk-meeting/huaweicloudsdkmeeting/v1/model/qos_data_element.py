@@ -43,7 +43,7 @@ class QosDataElement:
         :type time: str
         :param value: QoS值。
         :type value: int
-        :param alarm: 该时间点是否有阈值告警. true: 阈值告警 false: 无阈值告警。
+        :param alarm: 该时间点是否有阈值告警。 * true: 阈值告警 * false: 无阈值告警 
         :type alarm: bool
         :param threshold: 该时间点的阈值。
         :type threshold: int
@@ -114,7 +114,7 @@ class QosDataElement:
     def alarm(self):
         """Gets the alarm of this QosDataElement.
 
-        该时间点是否有阈值告警. true: 阈值告警 false: 无阈值告警。
+        该时间点是否有阈值告警。 * true: 阈值告警 * false: 无阈值告警 
 
         :return: The alarm of this QosDataElement.
         :rtype: bool
@@ -125,7 +125,7 @@ class QosDataElement:
     def alarm(self, alarm):
         """Sets the alarm of this QosDataElement.
 
-        该时间点是否有阈值告警. true: 阈值告警 false: 无阈值告警。
+        该时间点是否有阈值告警。 * true: 阈值告警 * false: 无阈值告警 
 
         :param alarm: The alarm of this QosDataElement.
         :type alarm: bool

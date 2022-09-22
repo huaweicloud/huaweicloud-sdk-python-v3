@@ -48,10 +48,134 @@ class SmsClient(Client):
 
         return ClientBuilder(clazz)
 
+    def check_net_acl(self, request):
+        """检查网卡安全组端口是否符合要求
+
+        检查网卡安全组。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CheckNetAcl
+        :type request: :class:`huaweicloudsdksms.v3.CheckNetAclRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.CheckNetAclResponse`
+        """
+        return self.check_net_acl_with_http_info(request)
+
+    def check_net_acl_with_http_info(self, request):
+        all_params = ['t_project_id', 't_network_id', 'region_id', 'os_type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 't_project_id' in local_var_params:
+            path_params['t_project_id'] = local_var_params['t_project_id']
+        if 't_network_id' in local_var_params:
+            path_params['t_network_id'] = local_var_params['t_network_id']
+
+        query_params = []
+        if 'region_id' in local_var_params:
+            query_params.append(('region_id', local_var_params['region_id']))
+        if 'os_type' in local_var_params:
+            query_params.append(('os_type', local_var_params['os_type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/tasks/{t_project_id}/networkacl/{t_network_id}/check',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CheckNetAclResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def collect_log(self, request):
+        """上传迁移任务的日志
+
+        上传迁移任务的日志。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CollectLog
+        :type request: :class:`huaweicloudsdksms.v3.CollectLogRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.CollectLogResponse`
+        """
+        return self.collect_log_with_http_info(request)
+
+    def collect_log_with_http_info(self, request):
+        all_params = ['task_id', 'collect_log_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/tasks/{task_id}/log',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CollectLogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_migproject(self, request):
         """新建迁移项目
 
-        新建迁移项目
+        新建迁移项目。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -167,7 +291,7 @@ class SmsClient(Client):
     def create_template(self, request):
         """新增模板信息
 
-        新增源端模板信息
+        新增源端模板信息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -225,7 +349,7 @@ class SmsClient(Client):
     def delete_migproject(self, request):
         """删除迁移项目
 
-        删除指定ID的迁移项目
+        删除指定ID的迁移项目。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1022,6 +1146,64 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_cert_key(self, request):
+        """获取SSL目的端证书和私钥
+
+        当源端服务器为Windows操作系统时，安装在源端服务器上的迁移Agent通过SSLSocket同目的端服务器通信，该接口用于下载目的端服务器所需要的证书和私钥(PEM格式)。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowCertKey
+        :type request: :class:`huaweicloudsdksms.v3.ShowCertKeyRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowCertKeyResponse`
+        """
+        return self.show_cert_key_with_http_info(request)
+
+    def show_cert_key_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/tasks/{task_id}/certkey',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowCertKeyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_command(self, request):
         """获取服务端命令
 
@@ -1194,6 +1376,64 @@ class SmsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_passphrase(self, request):
+        """查询指定任务ID的安全传输通道的证书passphrase
+
+        查询指定任务ID的安全传输通道的证书passphrase。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowPassphrase
+        :type request: :class:`huaweicloudsdksms.v3.ShowPassphraseRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowPassphraseResponse`
+        """
+        return self.show_passphrase_with_http_info(request)
+
+    def show_passphrase_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/tasks/{task_id}/passphrase',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowPassphraseResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_server(self, request):
         """查询指定ID的源端服务器
 
@@ -1247,6 +1487,122 @@ class SmsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowServerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_sha256(self, request):
+        """计算sha256
+
+        计算sha256
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowSha256
+        :type request: :class:`huaweicloudsdksms.v3.ShowSha256Request`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowSha256Response`
+        """
+        return self.show_sha256_with_http_info(request)
+
+    def show_sha256_with_http_info(self, request):
+        all_params = ['key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/sha256/{key}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowSha256Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_target_password(self, request):
+        """查询指定ID的模板中的目的端服务器的密码
+
+        查询指定ID的模板中的目的端服务器的密码。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowTargetPassword
+        :type request: :class:`huaweicloudsdksms.v3.ShowTargetPasswordRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.ShowTargetPasswordResponse`
+        """
+        return self.show_target_password_with_http_info(request)
+
+    def show_target_password_with_http_info(self, request):
+        all_params = ['id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'id' in local_var_params:
+            path_params['id'] = local_var_params['id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/vm/templates/{id}/target-password',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowTargetPasswordResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1371,7 +1727,7 @@ class SmsClient(Client):
     def shows_speed_limits(self, request):
         """查询任务限速规则
 
-        按时间段查询迁移任务的迁移速率
+        按时间段查询迁移任务的迁移速率。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1421,6 +1777,64 @@ class SmsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowsSpeedLimitsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def unlock_target_ecs(self, request):
+        """解锁指定任务的目的端服务器
+
+        解锁指定任务的目的端服务器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UnlockTargetEcs
+        :type request: :class:`huaweicloudsdksms.v3.UnlockTargetEcsRequest`
+        :rtype: :class:`huaweicloudsdksms.v3.UnlockTargetEcsResponse`
+        """
+        return self.unlock_target_ecs_with_http_info(request)
+
+    def unlock_target_ecs_with_http_info(self, request):
+        all_params = ['task_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'task_id' in local_var_params:
+            path_params['task_id'] = local_var_params['task_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/tasks/{task_id}/unlock',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UnlockTargetEcsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1489,7 +1903,7 @@ class SmsClient(Client):
     def update_copy_state(self, request):
         """更新任务对应源端复制状态
 
-        更新任务对应源端复制状态
+        更新任务对应源端复制状态。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1607,7 +2021,7 @@ class SmsClient(Client):
     def update_disk_info(self, request):
         """更新磁盘信息
 
-        更新服务器的磁盘信息，此接口会把服务器原有磁盘信息清空，然后更新成新磁盘信息
+        更新服务器的磁盘信息，此接口会把服务器原有磁盘信息清空，然后更新成新磁盘信息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1667,7 +2081,7 @@ class SmsClient(Client):
     def update_migproject(self, request):
         """更新迁移项目信息
 
-        更新迁移项目的信息
+        更新迁移项目的信息。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1908,7 +2322,7 @@ class SmsClient(Client):
         """上报数据迁移进度和速率
 
         此接口由安装在源端服务器上的迁移Agent在数据迁移阶段调用，用来将迁移的具体进度上报给SMS服务端。
-         
+        
         迁移Agent自动调用此接口用于上报数据迁移进度，您无需调用此接口。
         
         详细说明请参考华为云API Explorer。
@@ -1969,7 +2383,7 @@ class SmsClient(Client):
     def update_task_status(self, request):
         """管理迁移任务
 
-        管理迁移任务，包括启动任务，暂停任务，同步任务，日志上传，回滚失败迁移任务
+        管理迁移任务，包括启动任务，暂停任务，同步任务，日志上传，回滚失败迁移任务。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

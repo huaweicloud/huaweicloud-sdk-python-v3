@@ -53,9 +53,9 @@ class QueryOrgVmrResultDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 唯一标识。 说明：对应会议管理-&gt;创建会议接口中的vmrID。 
+        :param id: 云会议室的ID。 &gt; 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrID。 
         :type id: str
-        :param vmr_id: 云会议室ID。 说明：对应会议管理-&gt;创建会议接口中当vmrIDType等于0（固定ID）时返回数据的conferenceID 。 
+        :param vmr_id: 云会议室的固定会议ID。 &gt; 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrConferenceID。 
         :type vmr_id: str
         :param vmr_name: 云会议室名称。
         :type vmr_name: str
@@ -63,7 +63,7 @@ class QueryOrgVmrResultDTO:
         :type vmr_pkg_name: str
         :param vmr_pkg_parties: 云会议室套餐会议并发方数。
         :type vmr_pkg_parties: int
-        :param max_audience_parties: 最大观众与会方数（仅网络研讨会有效）
+        :param max_audience_parties: 最大观众与会方数（仅网络研讨会有效）。
         :type max_audience_parties: int
         :param member: 
         :type member: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
@@ -71,9 +71,9 @@ class QueryOrgVmrResultDTO:
         :type device: :class:`huaweicloudsdkmeeting.v1.IdMarkDTO`
         :param status: 云会议室状态。 * 0：正常 * 1：冻结 * 2：未分配 
         :type status: int
-        :param expire_date: 到期时间，utc时间戳
+        :param expire_date: 到期时间的时间戳，单位毫秒。
         :type expire_date: int
-        :param commercial_max_audience_parties: 按次资源转商后，商用规格最大观众与会方数（仅网络研讨会有效）
+        :param commercial_max_audience_parties: 按次资源转商后，商用规格最大观众与会方数（仅网络研讨会有效）。
         :type commercial_max_audience_parties: int
         """
         
@@ -119,7 +119,7 @@ class QueryOrgVmrResultDTO:
     def id(self):
         """Gets the id of this QueryOrgVmrResultDTO.
 
-        唯一标识。 说明：对应会议管理->创建会议接口中的vmrID。 
+        云会议室的ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrID。 
 
         :return: The id of this QueryOrgVmrResultDTO.
         :rtype: str
@@ -130,7 +130,7 @@ class QueryOrgVmrResultDTO:
     def id(self, id):
         """Sets the id of this QueryOrgVmrResultDTO.
 
-        唯一标识。 说明：对应会议管理->创建会议接口中的vmrID。 
+        云会议室的ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrID。 
 
         :param id: The id of this QueryOrgVmrResultDTO.
         :type id: str
@@ -141,7 +141,7 @@ class QueryOrgVmrResultDTO:
     def vmr_id(self):
         """Gets the vmr_id of this QueryOrgVmrResultDTO.
 
-        云会议室ID。 说明：对应会议管理->创建会议接口中当vmrIDType等于0（固定ID）时返回数据的conferenceID 。 
+        云会议室的固定会议ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrConferenceID。 
 
         :return: The vmr_id of this QueryOrgVmrResultDTO.
         :rtype: str
@@ -152,7 +152,7 @@ class QueryOrgVmrResultDTO:
     def vmr_id(self, vmr_id):
         """Sets the vmr_id of this QueryOrgVmrResultDTO.
 
-        云会议室ID。 说明：对应会议管理->创建会议接口中当vmrIDType等于0（固定ID）时返回数据的conferenceID 。 
+        云会议室的固定会议ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrConferenceID。 
 
         :param vmr_id: The vmr_id of this QueryOrgVmrResultDTO.
         :type vmr_id: str
@@ -229,7 +229,7 @@ class QueryOrgVmrResultDTO:
     def max_audience_parties(self):
         """Gets the max_audience_parties of this QueryOrgVmrResultDTO.
 
-        最大观众与会方数（仅网络研讨会有效）
+        最大观众与会方数（仅网络研讨会有效）。
 
         :return: The max_audience_parties of this QueryOrgVmrResultDTO.
         :rtype: int
@@ -240,7 +240,7 @@ class QueryOrgVmrResultDTO:
     def max_audience_parties(self, max_audience_parties):
         """Sets the max_audience_parties of this QueryOrgVmrResultDTO.
 
-        最大观众与会方数（仅网络研讨会有效）
+        最大观众与会方数（仅网络研讨会有效）。
 
         :param max_audience_parties: The max_audience_parties of this QueryOrgVmrResultDTO.
         :type max_audience_parties: int
@@ -313,7 +313,7 @@ class QueryOrgVmrResultDTO:
     def expire_date(self):
         """Gets the expire_date of this QueryOrgVmrResultDTO.
 
-        到期时间，utc时间戳
+        到期时间的时间戳，单位毫秒。
 
         :return: The expire_date of this QueryOrgVmrResultDTO.
         :rtype: int
@@ -324,7 +324,7 @@ class QueryOrgVmrResultDTO:
     def expire_date(self, expire_date):
         """Sets the expire_date of this QueryOrgVmrResultDTO.
 
-        到期时间，utc时间戳
+        到期时间的时间戳，单位毫秒。
 
         :param expire_date: The expire_date of this QueryOrgVmrResultDTO.
         :type expire_date: int
@@ -335,7 +335,7 @@ class QueryOrgVmrResultDTO:
     def commercial_max_audience_parties(self):
         """Gets the commercial_max_audience_parties of this QueryOrgVmrResultDTO.
 
-        按次资源转商后，商用规格最大观众与会方数（仅网络研讨会有效）
+        按次资源转商后，商用规格最大观众与会方数（仅网络研讨会有效）。
 
         :return: The commercial_max_audience_parties of this QueryOrgVmrResultDTO.
         :rtype: int
@@ -346,7 +346,7 @@ class QueryOrgVmrResultDTO:
     def commercial_max_audience_parties(self, commercial_max_audience_parties):
         """Sets the commercial_max_audience_parties of this QueryOrgVmrResultDTO.
 
-        按次资源转商后，商用规格最大观众与会方数（仅网络研讨会有效）
+        按次资源转商后，商用规格最大观众与会方数（仅网络研讨会有效）。
 
         :param commercial_max_audience_parties: The commercial_max_audience_parties of this QueryOrgVmrResultDTO.
         :type commercial_max_audience_parties: int

@@ -45,19 +45,19 @@ class ShowOrgResResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param used_rec_storage: 已用录制存储空间(单位G)
+        :param used_rec_storage: 企业管理员查询所属企业的资源使用信息。
         :type used_rec_storage: float
-        :param used_accounts_count: 已用的企业并发数
+        :param used_accounts_count: 当前已用的会议并发数量。
         :type used_accounts_count: int
-        :param used_live_count: 已用的直播推流资源
+        :param used_live_count: 当前已用的直播推流资源。
         :type used_live_count: int
-        :param conf_count: 会议总次数
+        :param conf_count: 当前已用的直播推流资源。
         :type conf_count: int
-        :param conf_length: 会议总时长
+        :param conf_length: 当日会议总时长。
         :type conf_length: int
-        :param active_attendee_count: 活跃用户数
+        :param active_attendee_count: 当日活跃用户数。
         :type active_attendee_count: int
-        :param total_attendee_count: 总与会人数
+        :param total_attendee_count: 当日总与会人数。
         :type total_attendee_count: int
         """
         
@@ -91,7 +91,7 @@ class ShowOrgResResponse(SdkResponse):
     def used_rec_storage(self):
         """Gets the used_rec_storage of this ShowOrgResResponse.
 
-        已用录制存储空间(单位G)
+        企业管理员查询所属企业的资源使用信息。
 
         :return: The used_rec_storage of this ShowOrgResResponse.
         :rtype: float
@@ -102,7 +102,7 @@ class ShowOrgResResponse(SdkResponse):
     def used_rec_storage(self, used_rec_storage):
         """Sets the used_rec_storage of this ShowOrgResResponse.
 
-        已用录制存储空间(单位G)
+        企业管理员查询所属企业的资源使用信息。
 
         :param used_rec_storage: The used_rec_storage of this ShowOrgResResponse.
         :type used_rec_storage: float
@@ -113,7 +113,7 @@ class ShowOrgResResponse(SdkResponse):
     def used_accounts_count(self):
         """Gets the used_accounts_count of this ShowOrgResResponse.
 
-        已用的企业并发数
+        当前已用的会议并发数量。
 
         :return: The used_accounts_count of this ShowOrgResResponse.
         :rtype: int
@@ -124,7 +124,7 @@ class ShowOrgResResponse(SdkResponse):
     def used_accounts_count(self, used_accounts_count):
         """Sets the used_accounts_count of this ShowOrgResResponse.
 
-        已用的企业并发数
+        当前已用的会议并发数量。
 
         :param used_accounts_count: The used_accounts_count of this ShowOrgResResponse.
         :type used_accounts_count: int
@@ -135,7 +135,7 @@ class ShowOrgResResponse(SdkResponse):
     def used_live_count(self):
         """Gets the used_live_count of this ShowOrgResResponse.
 
-        已用的直播推流资源
+        当前已用的直播推流资源。
 
         :return: The used_live_count of this ShowOrgResResponse.
         :rtype: int
@@ -146,7 +146,7 @@ class ShowOrgResResponse(SdkResponse):
     def used_live_count(self, used_live_count):
         """Sets the used_live_count of this ShowOrgResResponse.
 
-        已用的直播推流资源
+        当前已用的直播推流资源。
 
         :param used_live_count: The used_live_count of this ShowOrgResResponse.
         :type used_live_count: int
@@ -157,7 +157,7 @@ class ShowOrgResResponse(SdkResponse):
     def conf_count(self):
         """Gets the conf_count of this ShowOrgResResponse.
 
-        会议总次数
+        当前已用的直播推流资源。
 
         :return: The conf_count of this ShowOrgResResponse.
         :rtype: int
@@ -168,7 +168,7 @@ class ShowOrgResResponse(SdkResponse):
     def conf_count(self, conf_count):
         """Sets the conf_count of this ShowOrgResResponse.
 
-        会议总次数
+        当前已用的直播推流资源。
 
         :param conf_count: The conf_count of this ShowOrgResResponse.
         :type conf_count: int
@@ -179,7 +179,7 @@ class ShowOrgResResponse(SdkResponse):
     def conf_length(self):
         """Gets the conf_length of this ShowOrgResResponse.
 
-        会议总时长
+        当日会议总时长。
 
         :return: The conf_length of this ShowOrgResResponse.
         :rtype: int
@@ -190,7 +190,7 @@ class ShowOrgResResponse(SdkResponse):
     def conf_length(self, conf_length):
         """Sets the conf_length of this ShowOrgResResponse.
 
-        会议总时长
+        当日会议总时长。
 
         :param conf_length: The conf_length of this ShowOrgResResponse.
         :type conf_length: int
@@ -201,7 +201,7 @@ class ShowOrgResResponse(SdkResponse):
     def active_attendee_count(self):
         """Gets the active_attendee_count of this ShowOrgResResponse.
 
-        活跃用户数
+        当日活跃用户数。
 
         :return: The active_attendee_count of this ShowOrgResResponse.
         :rtype: int
@@ -212,7 +212,7 @@ class ShowOrgResResponse(SdkResponse):
     def active_attendee_count(self, active_attendee_count):
         """Sets the active_attendee_count of this ShowOrgResResponse.
 
-        活跃用户数
+        当日活跃用户数。
 
         :param active_attendee_count: The active_attendee_count of this ShowOrgResResponse.
         :type active_attendee_count: int
@@ -223,7 +223,7 @@ class ShowOrgResResponse(SdkResponse):
     def total_attendee_count(self):
         """Gets the total_attendee_count of this ShowOrgResResponse.
 
-        总与会人数
+        当日总与会人数。
 
         :return: The total_attendee_count of this ShowOrgResResponse.
         :rtype: int
@@ -234,7 +234,7 @@ class ShowOrgResResponse(SdkResponse):
     def total_attendee_count(self, total_attendee_count):
         """Sets the total_attendee_count of this ShowOrgResResponse.
 
-        总与会人数
+        当日总与会人数。
 
         :param total_attendee_count: The total_attendee_count of this ShowOrgResResponse.
         :type total_attendee_count: int

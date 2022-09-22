@@ -39,9 +39,9 @@ class CreateConfTokenResponse(SdkResponse):
 
         :param data: 
         :type data: :class:`huaweicloudsdkmeeting.v1.TokenInfo`
-        :param address_token: 地址本查询临时Token。
+        :param address_token: 企业通讯录查询临时Token。
         :type address_token: str
-        :param gloabl_public_ip: global外网IP。
+        :param gloabl_public_ip: 华为云会议Portal地址。
         :type gloabl_public_ip: str
         """
         
@@ -83,7 +83,7 @@ class CreateConfTokenResponse(SdkResponse):
     def address_token(self):
         """Gets the address_token of this CreateConfTokenResponse.
 
-        地址本查询临时Token。
+        企业通讯录查询临时Token。
 
         :return: The address_token of this CreateConfTokenResponse.
         :rtype: str
@@ -94,7 +94,7 @@ class CreateConfTokenResponse(SdkResponse):
     def address_token(self, address_token):
         """Sets the address_token of this CreateConfTokenResponse.
 
-        地址本查询临时Token。
+        企业通讯录查询临时Token。
 
         :param address_token: The address_token of this CreateConfTokenResponse.
         :type address_token: str
@@ -105,7 +105,7 @@ class CreateConfTokenResponse(SdkResponse):
     def gloabl_public_ip(self):
         """Gets the gloabl_public_ip of this CreateConfTokenResponse.
 
-        global外网IP。
+        华为云会议Portal地址。
 
         :return: The gloabl_public_ip of this CreateConfTokenResponse.
         :rtype: str
@@ -116,7 +116,7 @@ class CreateConfTokenResponse(SdkResponse):
     def gloabl_public_ip(self, gloabl_public_ip):
         """Sets the gloabl_public_ip of this CreateConfTokenResponse.
 
-        global外网IP。
+        华为云会议Portal地址。
 
         :param gloabl_public_ip: The gloabl_public_ip of this CreateConfTokenResponse.
         :type gloabl_public_ip: str

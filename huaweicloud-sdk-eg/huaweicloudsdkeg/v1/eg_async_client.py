@@ -48,10 +48,68 @@ class EgAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def create_agencies_async(self, request):
+        """创建服务委托
+
+        按照业务场景，一键创建服务委托授权
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateAgencies
+        :type request: :class:`huaweicloudsdkeg.v1.CreateAgenciesRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.CreateAgenciesResponse`
+        """
+        return self.create_agencies_with_http_info(request)
+
+    def create_agencies_with_http_info(self, request):
+        all_params = ['agency_create_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/service-agencies',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateAgenciesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_channel_async(self, request):
         """创建自定义事件通道
 
-        创建自定义事件通道。
+        创建自定义事件通道
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -85,7 +143,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Request-Id"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -106,10 +164,244 @@ class EgAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_connection_async(self, request):
+        """创建目标连接
+
+        创建目标连接
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateConnection
+        :type request: :class:`huaweicloudsdkeg.v1.CreateConnectionRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.CreateConnectionResponse`
+        """
+        return self.create_connection_with_http_info(request)
+
+    def create_connection_with_http_info(self, request):
+        all_params = ['create_connecton_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/connections',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateConnectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_endpoint_async(self, request):
+        """创建访问端点
+
+        create endpoint
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateEndpoint
+        :type request: :class:`huaweicloudsdkeg.v1.CreateEndpointRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.CreateEndpointResponse`
+        """
+        return self.create_endpoint_with_http_info(request)
+
+    def create_endpoint_with_http_info(self, request):
+        all_params = ['create_endpoint_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/endpoints',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateEndpointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_event_schema_async(self, request):
+        """创建自定义事件模型
+
+        创建自定义事件模型
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateEventSchema
+        :type request: :class:`huaweicloudsdkeg.v1.CreateEventSchemaRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.CreateEventSchemaResponse`
+        """
+        return self.create_event_schema_with_http_info(request)
+
+    def create_event_schema_with_http_info(self, request):
+        all_params = ['create_event_schema_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/schemas',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateEventSchemaResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_event_schema_version_async(self, request):
+        """创建自定义事件模型版本
+
+        创建自定义事件模型版本，版本号后台自动生成
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateEventSchemaVersion
+        :type request: :class:`huaweicloudsdkeg.v1.CreateEventSchemaVersionRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.CreateEventSchemaVersionResponse`
+        """
+        return self.create_event_schema_version_with_http_info(request)
+
+    def create_event_schema_version_with_http_info(self, request):
+        all_params = ['schema_id', 'create_event_schema_version_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'schema_id' in local_var_params:
+            path_params['schema_id'] = local_var_params['schema_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/schemas/{schema_id}/versions',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateEventSchemaVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_event_source_async(self, request):
         """创建自定义事件源
 
-        创建用户自定义类型的事件源，只能指定自定义通道，不能指定官方通道。
+        创建用户自定义类型的事件源，只能指定自定义通道，不能指定系统通道
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -143,7 +435,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Request-Id"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -167,7 +459,7 @@ class EgAsyncClient(Client):
     def create_subscription_async(self, request):
         """创建事件订阅
 
-        创建事件订阅。
+        创建事件订阅
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -201,7 +493,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Request-Id"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -225,7 +517,7 @@ class EgAsyncClient(Client):
     def create_subscription_target_async(self, request):
         """创建事件订阅目标
 
-        在事件订阅中增加一个事件目标。
+        创建单个事件订阅目标
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -261,7 +553,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Request-Id"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -285,7 +577,7 @@ class EgAsyncClient(Client):
     def delete_channel_async(self, request):
         """删除自定义事件通道
 
-        删除指定自定义事件通道。
+        删除指定自定义事件通道
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -340,10 +632,243 @@ class EgAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_connection_async(self, request):
+        """删除目标连接
+
+        删除目标连接
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteConnection
+        :type request: :class:`huaweicloudsdkeg.v1.DeleteConnectionRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.DeleteConnectionResponse`
+        """
+        return self.delete_connection_with_http_info(request)
+
+    def delete_connection_with_http_info(self, request):
+        all_params = ['connection_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/connections/{connection_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteConnectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_endpoint_async(self, request):
+        """删除访问端点
+
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEndpoint
+        :type request: :class:`huaweicloudsdkeg.v1.DeleteEndpointRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.DeleteEndpointResponse`
+        """
+        return self.delete_endpoint_with_http_info(request)
+
+    def delete_endpoint_with_http_info(self, request):
+        all_params = ['endpoint_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'endpoint_id' in local_var_params:
+            path_params['endpoint_id'] = local_var_params['endpoint_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/endpoints/{endpoint_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteEndpointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_event_schema_async(self, request):
+        """删除事件模型
+
+        删除事件模型
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEventSchema
+        :type request: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaResponse`
+        """
+        return self.delete_event_schema_with_http_info(request)
+
+    def delete_event_schema_with_http_info(self, request):
+        all_params = ['schema_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'schema_id' in local_var_params:
+            path_params['schema_id'] = local_var_params['schema_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/schemas/{schema_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteEventSchemaResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_event_schema_version_async(self, request):
+        """删除事件模型版本
+
+        删除事件模型指定版本
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEventSchemaVersion
+        :type request: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaVersionRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.DeleteEventSchemaVersionResponse`
+        """
+        return self.delete_event_schema_version_with_http_info(request)
+
+    def delete_event_schema_version_with_http_info(self, request):
+        all_params = ['schema_id', 'version']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'schema_id' in local_var_params:
+            path_params['schema_id'] = local_var_params['schema_id']
+        if 'version' in local_var_params:
+            path_params['version'] = local_var_params['version']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/schemas/{schema_id}/versions/{version}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteEventSchemaVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_event_source_async(self, request):
         """删除自定义事件源
 
-        删除指定的自定义事件源。
+        删除指定的自定义事件源
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -401,7 +926,7 @@ class EgAsyncClient(Client):
     def delete_subscription_async(self, request):
         """删除事件订阅
 
-        删除事件订阅。
+        删除事件订阅
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -459,7 +984,7 @@ class EgAsyncClient(Client):
     def delete_subscription_target_async(self, request):
         """删除事件订阅目标
 
-        删除事件订阅中的事件目标。
+        删除事件订阅目标
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -516,10 +1041,125 @@ class EgAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def discover_event_schema_from_data_async(self, request):
+        """事件模型自动发现
+
+        事件模型自动发现
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DiscoverEventSchemaFromData
+        :type request: :class:`huaweicloudsdkeg.v1.DiscoverEventSchemaFromDataRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.DiscoverEventSchemaFromDataResponse`
+        """
+        return self.discover_event_schema_from_data_with_http_info(request)
+
+    def discover_event_schema_from_data_with_http_info(self, request):
+        all_params = ['discover_event_schema_from_data_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/schema-discover',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DiscoverEventSchemaFromDataResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_agencies_async(self, request):
+        """查询服务委托
+
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListAgencies
+        :type request: :class:`huaweicloudsdkeg.v1.ListAgenciesRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ListAgenciesResponse`
+        """
+        return self.list_agencies_with_http_info(request)
+
+    def list_agencies_with_http_info(self, request):
+        all_params = ['type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/service-agencies',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAgenciesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_channels_async(self, request):
         """查询事件通道列表
 
-        查询事件通道列表，包括官方通道和自定义通道。
+        查询事件通道列表，包括系统通道和自定义通道
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -584,10 +1224,278 @@ class EgAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_connections_async(self, request):
+        """查询目标连接列表
+
+        查询目标连接列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListConnections
+        :type request: :class:`huaweicloudsdkeg.v1.ListConnectionsRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ListConnectionsResponse`
+        """
+        return self.list_connections_with_http_info(request)
+
+    def list_connections_with_http_info(self, request):
+        all_params = ['offset', 'limit', 'sort', 'name', 'fuzzy_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'fuzzy_name' in local_var_params:
+            query_params.append(('fuzzy_name', local_var_params['fuzzy_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/connections',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListConnectionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_endpoints_async(self, request):
+        """查询访问端点
+
+        list all endpoints
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListEndpoints
+        :type request: :class:`huaweicloudsdkeg.v1.ListEndpointsRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ListEndpointsResponse`
+        """
+        return self.list_endpoints_with_http_info(request)
+
+    def list_endpoints_with_http_info(self, request):
+        all_params = ['offset', 'limit', 'sort', 'type', 'name', 'vpc_id', 'fuzzy_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'vpc_id' in local_var_params:
+            query_params.append(('vpc_id', local_var_params['vpc_id']))
+        if 'fuzzy_name' in local_var_params:
+            query_params.append(('fuzzy_name', local_var_params['fuzzy_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/endpoints',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEndpointsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_event_schema_async(self, request):
+        """查询事件模型列表
+
+        查询事件模型列表，包括系统事件模型和自定义事件模型
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListEventSchema
+        :type request: :class:`huaweicloudsdkeg.v1.ListEventSchemaRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ListEventSchemaResponse`
+        """
+        return self.list_event_schema_with_http_info(request)
+
+    def list_event_schema_with_http_info(self, request):
+        all_params = ['offset', 'limit', 'sort', 'provider_type', 'name', 'fuzzy_name']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+        if 'provider_type' in local_var_params:
+            query_params.append(('provider_type', local_var_params['provider_type']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'fuzzy_name' in local_var_params:
+            query_params.append(('fuzzy_name', local_var_params['fuzzy_name']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/schemas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEventSchemaResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_event_schema_versions_async(self, request):
+        """查询事件模型版本列表
+
+        查询事件模型版本列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListEventSchemaVersions
+        :type request: :class:`huaweicloudsdkeg.v1.ListEventSchemaVersionsRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ListEventSchemaVersionsResponse`
+        """
+        return self.list_event_schema_versions_with_http_info(request)
+
+    def list_event_schema_versions_with_http_info(self, request):
+        all_params = ['schema_id', 'offset', 'limit', 'sort']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'schema_id' in local_var_params:
+            path_params['schema_id'] = local_var_params['schema_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/schemas/{schema_id}/versions',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEventSchemaVersionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_event_sources_async(self, request):
         """查询事件源列表
 
-        查询事件源列表，支持条件查询，如可以指定事件通道ID来查询某个事件通道下的所有事件源。
+        支持条件查询，如可以指定事件通道ID来查询某个事件通道下的所有事件源
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -659,7 +1567,7 @@ class EgAsyncClient(Client):
     def list_event_target_async(self, request):
         """查询事件目标分类
 
-        查询预置的事件目标分类，获取每个事件目标分类的字段定义。
+        查询预置的事件目标分类，获取每个事件目标分类的字段定义
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -723,7 +1631,7 @@ class EgAsyncClient(Client):
     def list_quotas_async(self, request):
         """查询配额
 
-        查询当前租户的配额，未特殊配置过的会返回默认配额。
+        查询当前租户的配额，未特殊配置过的会返回默认配额
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -781,7 +1689,7 @@ class EgAsyncClient(Client):
     def list_subscriptions_async(self, request):
         """查询事件订阅列表
 
-        查询事件订阅列表，支持指定事件通道。
+        查询事件订阅列表，支持指定事件通道
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -846,10 +1754,74 @@ class EgAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def operate_subscription_async(self, request):
-        """启用/禁用事件订阅
+    def list_triggers_async(self, request):
+        """查询事件订阅列表
 
-        启用/禁用事件订阅。
+        查询触发器，支持指定函数urn。一个以函数urn为目标的订阅为一个触发器。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListTriggers
+        :type request: :class:`huaweicloudsdkeg.v1.ListTriggersRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ListTriggersResponse`
+        """
+        return self.list_triggers_with_http_info(request)
+
+    def list_triggers_with_http_info(self, request):
+        all_params = ['func_urn', 'offset', 'limit', 'sort']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'func_urn' in local_var_params:
+            path_params['func_urn'] = local_var_params['func_urn']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'sort' in local_var_params:
+            query_params.append(('sort', local_var_params['sort']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/subscription-triggers/{func_urn}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListTriggersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def operate_subscription_async(self, request):
+        """操作事件订阅
+
+        操作事件订阅，支持启用、禁用
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -883,7 +1855,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Request-Id"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -907,7 +1879,7 @@ class EgAsyncClient(Client):
     def put_events_async(self, request):
         """发布事件到事件通道
 
-        发布事件到事件通道。
+        发布事件到事件通道
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -943,7 +1915,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Request-Id"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -967,7 +1939,6 @@ class EgAsyncClient(Client):
     def show_detail_of_channel_async(self, request):
         """查询事件通道详情
 
-        查询事件通道详情。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1022,10 +1993,185 @@ class EgAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_detail_of_connection_async(self, request):
+        """查询目标连接详情
+
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowDetailOfConnection
+        :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfConnectionRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfConnectionResponse`
+        """
+        return self.show_detail_of_connection_with_http_info(request)
+
+    def show_detail_of_connection_with_http_info(self, request):
+        all_params = ['connection_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/connections/{connection_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDetailOfConnectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_detail_of_event_schema_async(self, request):
+        """查询事件模型详情
+
+        查询事件模型详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowDetailOfEventSchema
+        :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaResponse`
+        """
+        return self.show_detail_of_event_schema_with_http_info(request)
+
+    def show_detail_of_event_schema_with_http_info(self, request):
+        all_params = ['schema_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'schema_id' in local_var_params:
+            path_params['schema_id'] = local_var_params['schema_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/schemas/{schema_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDetailOfEventSchemaResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_detail_of_event_schema_version_async(self, request):
+        """查询事件模型版本详情
+
+        查询事件模型指定版本详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowDetailOfEventSchemaVersion
+        :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaVersionRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSchemaVersionResponse`
+        """
+        return self.show_detail_of_event_schema_version_with_http_info(request)
+
+    def show_detail_of_event_schema_version_with_http_info(self, request):
+        all_params = ['schema_id', 'version']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'schema_id' in local_var_params:
+            path_params['schema_id'] = local_var_params['schema_id']
+        if 'version' in local_var_params:
+            path_params['version'] = local_var_params['version']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/schemas/{schema_id}/versions/{version}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDetailOfEventSchemaVersionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_detail_of_event_source_async(self, request):
         """查询事件源详情
 
-        查询事件源详情信息。
+        查询事件源详情信息
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1083,7 +2229,7 @@ class EgAsyncClient(Client):
     def show_detail_of_subscription_async(self, request):
         """查询事件订阅详情
 
-        查询事件订阅详情。
+        查询事件订阅详情
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1141,7 +2287,7 @@ class EgAsyncClient(Client):
     def show_detail_of_subscription_target_async(self, request):
         """查询事件订阅目标详情
 
-        查询事件订阅中事件目标的详情。
+        查询事件订阅目标详情
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1201,7 +2347,7 @@ class EgAsyncClient(Client):
     def update_channel_async(self, request):
         """更新自定义事件通道
 
-        修改自定义事件通道的描述信息。
+        更新自定义事件通道定义
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1237,7 +2383,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Request-Id"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1258,10 +2404,190 @@ class EgAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_connection_async(self, request):
+        """更新目标连接
+
+        更新目标连接
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateConnection
+        :type request: :class:`huaweicloudsdkeg.v1.UpdateConnectionRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.UpdateConnectionResponse`
+        """
+        return self.update_connection_with_http_info(request)
+
+    def update_connection_with_http_info(self, request):
+        all_params = ['connection_id', 'update_connection_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'connection_id' in local_var_params:
+            path_params['connection_id'] = local_var_params['connection_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/connections/{connection_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateConnectionResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_endpoint_async(self, request):
+        """更新访问端点
+
+        update endpoint
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateEndpoint
+        :type request: :class:`huaweicloudsdkeg.v1.UpdateEndpointRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.UpdateEndpointResponse`
+        """
+        return self.update_endpoint_with_http_info(request)
+
+    def update_endpoint_with_http_info(self, request):
+        all_params = ['endpoint_id', 'update_endpoint_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'endpoint_id' in local_var_params:
+            path_params['endpoint_id'] = local_var_params['endpoint_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/endpoints/{endpoint_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateEndpointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_event_schema_async(self, request):
+        """更新自定义事件模型
+
+        更新自定义事件模型定义
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateEventSchema
+        :type request: :class:`huaweicloudsdkeg.v1.UpdateEventSchemaRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.UpdateEventSchemaResponse`
+        """
+        return self.update_event_schema_with_http_info(request)
+
+    def update_event_schema_with_http_info(self, request):
+        all_params = ['schema_id', 'update_event_schema_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'schema_id' in local_var_params:
+            path_params['schema_id'] = local_var_params['schema_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-Request-Id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/schemas/{schema_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateEventSchemaResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_event_source_async(self, request):
         """更新自定义事件源
 
-        修改自定义事件源的描述信息。
+        更新自定义事件源定义
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1297,7 +2623,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Request-Id"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1321,7 +2647,7 @@ class EgAsyncClient(Client):
     def update_subscription_async(self, request):
         """更新事件订阅
 
-        更新事件订阅描述信息、事件源参数或者事件目标参数。
+        更新事件订阅定义
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1357,7 +2683,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Request-Id"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1381,7 +2707,7 @@ class EgAsyncClient(Client):
     def update_subscription_source_async(self, request):
         """更新事件订阅源
 
-        更新事件订阅中事件源的参数。
+        更新事件订阅源定义
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1419,7 +2745,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Request-Id"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1443,7 +2769,7 @@ class EgAsyncClient(Client):
     def update_subscription_target_async(self, request):
         """更新事件订阅目标
 
-        更新事件订阅中事件目标的参数。
+        更新事件订阅目标定义
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1481,7 +2807,7 @@ class EgAsyncClient(Client):
         if isinstance(request, SdkStreamRequest):
             body_params = request.get_file_stream()
 
-        response_headers = []
+        response_headers = ["X-Request-Id"]
 
         header_params['Content-Type'] = http_utils.select_header_content_type(
             ['application/json'])
@@ -1497,6 +2823,62 @@ class EgAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateSubscriptionTargetResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_api_versions_async(self, request):
+        """获取API版本列表
+
+        获取服务支持的API版本列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListApiVersions
+        :type request: :class:`huaweicloudsdkeg.v1.ListApiVersionsRequest`
+        :rtype: :class:`huaweicloudsdkeg.v1.ListApiVersionsResponse`
+        """
+        return self.list_api_versions_with_http_info(request)
+
+    def list_api_versions_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListApiVersionsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

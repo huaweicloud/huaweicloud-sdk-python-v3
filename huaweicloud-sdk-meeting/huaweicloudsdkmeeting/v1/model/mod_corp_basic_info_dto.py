@@ -35,9 +35,9 @@ class ModCorpBasicInfoDTO:
 
         The model defined in huaweicloud sdk
 
-        :param address: 企业所在地,最大长度为255个字符。 maxLength：255。 
+        :param address: 企业所在地，最大长度为255个字符。 
         :type address: str
-        :param auto_user_create: 企业自动开户开关
+        :param auto_user_create: 企业自动开户开关。
         :type auto_user_create: bool
         """
         
@@ -56,7 +56,7 @@ class ModCorpBasicInfoDTO:
     def address(self):
         """Gets the address of this ModCorpBasicInfoDTO.
 
-        企业所在地,最大长度为255个字符。 maxLength：255。 
+        企业所在地，最大长度为255个字符。 
 
         :return: The address of this ModCorpBasicInfoDTO.
         :rtype: str
@@ -67,7 +67,7 @@ class ModCorpBasicInfoDTO:
     def address(self, address):
         """Sets the address of this ModCorpBasicInfoDTO.
 
-        企业所在地,最大长度为255个字符。 maxLength：255。 
+        企业所在地，最大长度为255个字符。 
 
         :param address: The address of this ModCorpBasicInfoDTO.
         :type address: str
@@ -78,7 +78,7 @@ class ModCorpBasicInfoDTO:
     def auto_user_create(self):
         """Gets the auto_user_create of this ModCorpBasicInfoDTO.
 
-        企业自动开户开关
+        企业自动开户开关。
 
         :return: The auto_user_create of this ModCorpBasicInfoDTO.
         :rtype: bool
@@ -89,7 +89,7 @@ class ModCorpBasicInfoDTO:
     def auto_user_create(self, auto_user_create):
         """Sets the auto_user_create of this ModCorpBasicInfoDTO.
 
-        企业自动开户开关
+        企业自动开户开关。
 
         :param auto_user_create: The auto_user_create of this ModCorpBasicInfoDTO.
         :type auto_user_create: bool

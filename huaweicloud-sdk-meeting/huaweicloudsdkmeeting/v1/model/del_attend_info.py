@@ -35,7 +35,7 @@ class DelAttendInfo:
 
         The model defined in huaweicloud sdk
 
-        :param number: 会场呼叫号码。
+        :param number: 会场号码。
         :type number: str
         :param participant_id: 与会者标识，已入会的必须填写该字段。
         :type participant_id: str
@@ -55,7 +55,7 @@ class DelAttendInfo:
     def number(self):
         """Gets the number of this DelAttendInfo.
 
-        会场呼叫号码。
+        会场号码。
 
         :return: The number of this DelAttendInfo.
         :rtype: str
@@ -66,7 +66,7 @@ class DelAttendInfo:
     def number(self, number):
         """Sets the number of this DelAttendInfo.
 
-        会场呼叫号码。
+        会场号码。
 
         :param number: The number of this DelAttendInfo.
         :type number: str

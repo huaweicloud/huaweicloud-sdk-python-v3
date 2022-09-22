@@ -35,7 +35,7 @@ class UpdateTaskRequest:
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 迁移任务id
+        :param task_id: 迁移任务ID
         :type task_id: str
         :param body: Body of the UpdateTaskRequest
         :type body: :class:`huaweicloudsdksms.v3.PutTaskReq`
@@ -55,7 +55,7 @@ class UpdateTaskRequest:
     def task_id(self):
         """Gets the task_id of this UpdateTaskRequest.
 
-        迁移任务id
+        迁移任务ID
 
         :return: The task_id of this UpdateTaskRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class UpdateTaskRequest:
     def task_id(self, task_id):
         """Sets the task_id of this UpdateTaskRequest.
 
-        迁移任务id
+        迁移任务ID
 
         :param task_id: The task_id of this UpdateTaskRequest.
         :type task_id: str

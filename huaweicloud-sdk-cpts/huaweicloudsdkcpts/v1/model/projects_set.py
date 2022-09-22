@@ -26,7 +26,7 @@ class ProjectsSet:
         'description': 'str',
         'id': 'int',
         'name': 'str',
-        'status': 'int',
+        'source': 'int',
         'external_params': 'object',
         'variables_no_file': 'list[str]'
     }
@@ -37,12 +37,12 @@ class ProjectsSet:
         'description': 'description',
         'id': 'id',
         'name': 'name',
-        'status': 'status',
+        'source': 'source',
         'external_params': 'external_params',
         'variables_no_file': 'variables_no_file'
     }
 
-    def __init__(self, create_time=None, update_time=None, description=None, id=None, name=None, status=None, external_params=None, variables_no_file=None):
+    def __init__(self, create_time=None, update_time=None, description=None, id=None, name=None, source=None, external_params=None, variables_no_file=None):
         """ProjectsSet
 
         The model defined in huaweicloud sdk
@@ -57,8 +57,8 @@ class ProjectsSet:
         :type id: int
         :param name: 工程名字
         :type name: str
-        :param status: 工程状态
-        :type status: int
+        :param source: 工程来源 0:CPTS,2:CloudTest
+        :type source: int
         :param external_params: 外部参数
         :type external_params: object
         :param variables_no_file: 文件变量
@@ -72,7 +72,7 @@ class ProjectsSet:
         self._description = None
         self._id = None
         self._name = None
-        self._status = None
+        self._source = None
         self._external_params = None
         self._variables_no_file = None
         self.discriminator = None
@@ -87,8 +87,8 @@ class ProjectsSet:
             self.id = id
         if name is not None:
             self.name = name
-        if status is not None:
-            self.status = status
+        if source is not None:
+            self.source = source
         if external_params is not None:
             self.external_params = external_params
         if variables_no_file is not None:
@@ -205,26 +205,26 @@ class ProjectsSet:
         self._name = name
 
     @property
-    def status(self):
-        """Gets the status of this ProjectsSet.
+    def source(self):
+        """Gets the source of this ProjectsSet.
 
-        工程状态
+        工程来源 0:CPTS,2:CloudTest
 
-        :return: The status of this ProjectsSet.
+        :return: The source of this ProjectsSet.
         :rtype: int
         """
-        return self._status
+        return self._source
 
-    @status.setter
-    def status(self, status):
-        """Sets the status of this ProjectsSet.
+    @source.setter
+    def source(self, source):
+        """Sets the source of this ProjectsSet.
 
-        工程状态
+        工程来源 0:CPTS,2:CloudTest
 
-        :param status: The status of this ProjectsSet.
-        :type status: int
+        :param source: The source of this ProjectsSet.
+        :type source: int
         """
-        self._status = status
+        self._source = source
 
     @property
     def external_params(self):

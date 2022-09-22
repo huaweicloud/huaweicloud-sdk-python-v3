@@ -81,55 +81,55 @@ class SearchUserResultDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 用户id
+        :param id: 用户UUID。
         :type id: str
-        :param user_account: 账号
+        :param user_account: 华为云会议帐号。
         :type user_account: str
-        :param name: 姓名
+        :param name: 名称。
         :type name: str
-        :param english_name: 英文名称
+        :param english_name: 英文名称。
         :type english_name: str
-        :param phone: 手机
+        :param phone: 联系电话。
         :type phone: str
-        :param country: 手机所属国家
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
-        :param email: 邮箱
+        :param email: 邮箱地址。
         :type email: str
-        :param vmr_id: 个人会议室Id
+        :param vmr_id: 个人会议ID。
         :type vmr_id: str
-        :param dept_code: 部门编码
+        :param dept_code: 部门编码。
         :type dept_code: str
-        :param dept_name_path: 部门完整名称
+        :param dept_name_path: 部门完整名称。
         :type dept_name_path: str
-        :param user_type: 用户类型 - 0：系统管理员账户 - 1：SP管理员账户 - 2：企业成员账户 - 3：注册用户 - 10：硬终端用户
+        :param user_type: 用户类型。 * 2：普通用户 * 12：智慧屏用户 * 13：IdeaHub用户 * 14：SmartRooms用户
         :type user_type: int
-        :param admin_type: 管理员类型 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
+        :param admin_type: 管理员类型。 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
         :type admin_type: int
-        :param signature: 签名
+        :param signature: 签名。
         :type signature: str
-        :param title: 职位
+        :param title: 职位。
         :type title: str
-        :param desc: 备注
+        :param desc: 备注。
         :type desc: str
-        :param status: 用户状态 * 0：正常 * 1：停用 
+        :param status: 用户状态。 * 0：正常 * 1：停用 
         :type status: int
-        :param sort_level: 通讯录排序等级，序号越低优先级越高
+        :param sort_level: 通讯录排序等级，序号越低优先级越高。
         :type sort_level: int
-        :param hide_phone: 是否隐藏手机号码
+        :param hide_phone: 是否隐藏手机号码。
         :type hide_phone: bool
-        :param third_account: 第三方账号自动开户的第三方账号、Ideahub账号的sn等
+        :param third_account: 第三方User ID。
         :type third_account: str
-        :param vision_account: 智慧屏账号
+        :param vision_account: 智慧屏帐号。
         :type vision_account: str
-        :param license: 许可证 * 0：商用 * 1：免费试用 
+        :param license: 许可证。 * 0：商用 * 1：免费试用 
         :type license: int
-        :param active_time: 激活时间，utc时间戳
+        :param active_time: 激活时间，utc时间戳。
         :type active_time: int
-        :param active_code_expire_time: 激活码到期时间,utc时间戳
+        :param active_code_expire_time: 激活码到期时间,utc时间戳。
         :type active_code_expire_time: int
-        :param expire_time: 已激活的终端到期时间,utc时间戳
+        :param expire_time: 已激活的终端到期时间,utc时间戳。
         :type expire_time: int
-        :param active_code: 激活码
+        :param active_code: 激活码。
         :type active_code: str
         """
         
@@ -217,7 +217,7 @@ class SearchUserResultDTO:
     def id(self):
         """Gets the id of this SearchUserResultDTO.
 
-        用户id
+        用户UUID。
 
         :return: The id of this SearchUserResultDTO.
         :rtype: str
@@ -228,7 +228,7 @@ class SearchUserResultDTO:
     def id(self, id):
         """Sets the id of this SearchUserResultDTO.
 
-        用户id
+        用户UUID。
 
         :param id: The id of this SearchUserResultDTO.
         :type id: str
@@ -239,7 +239,7 @@ class SearchUserResultDTO:
     def user_account(self):
         """Gets the user_account of this SearchUserResultDTO.
 
-        账号
+        华为云会议帐号。
 
         :return: The user_account of this SearchUserResultDTO.
         :rtype: str
@@ -250,7 +250,7 @@ class SearchUserResultDTO:
     def user_account(self, user_account):
         """Sets the user_account of this SearchUserResultDTO.
 
-        账号
+        华为云会议帐号。
 
         :param user_account: The user_account of this SearchUserResultDTO.
         :type user_account: str
@@ -261,7 +261,7 @@ class SearchUserResultDTO:
     def name(self):
         """Gets the name of this SearchUserResultDTO.
 
-        姓名
+        名称。
 
         :return: The name of this SearchUserResultDTO.
         :rtype: str
@@ -272,7 +272,7 @@ class SearchUserResultDTO:
     def name(self, name):
         """Sets the name of this SearchUserResultDTO.
 
-        姓名
+        名称。
 
         :param name: The name of this SearchUserResultDTO.
         :type name: str
@@ -283,7 +283,7 @@ class SearchUserResultDTO:
     def english_name(self):
         """Gets the english_name of this SearchUserResultDTO.
 
-        英文名称
+        英文名称。
 
         :return: The english_name of this SearchUserResultDTO.
         :rtype: str
@@ -294,7 +294,7 @@ class SearchUserResultDTO:
     def english_name(self, english_name):
         """Sets the english_name of this SearchUserResultDTO.
 
-        英文名称
+        英文名称。
 
         :param english_name: The english_name of this SearchUserResultDTO.
         :type english_name: str
@@ -305,7 +305,7 @@ class SearchUserResultDTO:
     def phone(self):
         """Gets the phone of this SearchUserResultDTO.
 
-        手机
+        联系电话。
 
         :return: The phone of this SearchUserResultDTO.
         :rtype: str
@@ -316,7 +316,7 @@ class SearchUserResultDTO:
     def phone(self, phone):
         """Sets the phone of this SearchUserResultDTO.
 
-        手机
+        联系电话。
 
         :param phone: The phone of this SearchUserResultDTO.
         :type phone: str
@@ -327,7 +327,7 @@ class SearchUserResultDTO:
     def country(self):
         """Gets the country of this SearchUserResultDTO.
 
-        手机所属国家
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this SearchUserResultDTO.
         :rtype: str
@@ -338,7 +338,7 @@ class SearchUserResultDTO:
     def country(self, country):
         """Sets the country of this SearchUserResultDTO.
 
-        手机所属国家
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this SearchUserResultDTO.
         :type country: str
@@ -349,7 +349,7 @@ class SearchUserResultDTO:
     def email(self):
         """Gets the email of this SearchUserResultDTO.
 
-        邮箱
+        邮箱地址。
 
         :return: The email of this SearchUserResultDTO.
         :rtype: str
@@ -360,7 +360,7 @@ class SearchUserResultDTO:
     def email(self, email):
         """Sets the email of this SearchUserResultDTO.
 
-        邮箱
+        邮箱地址。
 
         :param email: The email of this SearchUserResultDTO.
         :type email: str
@@ -371,7 +371,7 @@ class SearchUserResultDTO:
     def vmr_id(self):
         """Gets the vmr_id of this SearchUserResultDTO.
 
-        个人会议室Id
+        个人会议ID。
 
         :return: The vmr_id of this SearchUserResultDTO.
         :rtype: str
@@ -382,7 +382,7 @@ class SearchUserResultDTO:
     def vmr_id(self, vmr_id):
         """Sets the vmr_id of this SearchUserResultDTO.
 
-        个人会议室Id
+        个人会议ID。
 
         :param vmr_id: The vmr_id of this SearchUserResultDTO.
         :type vmr_id: str
@@ -393,7 +393,7 @@ class SearchUserResultDTO:
     def dept_code(self):
         """Gets the dept_code of this SearchUserResultDTO.
 
-        部门编码
+        部门编码。
 
         :return: The dept_code of this SearchUserResultDTO.
         :rtype: str
@@ -404,7 +404,7 @@ class SearchUserResultDTO:
     def dept_code(self, dept_code):
         """Sets the dept_code of this SearchUserResultDTO.
 
-        部门编码
+        部门编码。
 
         :param dept_code: The dept_code of this SearchUserResultDTO.
         :type dept_code: str
@@ -415,7 +415,7 @@ class SearchUserResultDTO:
     def dept_name_path(self):
         """Gets the dept_name_path of this SearchUserResultDTO.
 
-        部门完整名称
+        部门完整名称。
 
         :return: The dept_name_path of this SearchUserResultDTO.
         :rtype: str
@@ -426,7 +426,7 @@ class SearchUserResultDTO:
     def dept_name_path(self, dept_name_path):
         """Sets the dept_name_path of this SearchUserResultDTO.
 
-        部门完整名称
+        部门完整名称。
 
         :param dept_name_path: The dept_name_path of this SearchUserResultDTO.
         :type dept_name_path: str
@@ -437,7 +437,7 @@ class SearchUserResultDTO:
     def user_type(self):
         """Gets the user_type of this SearchUserResultDTO.
 
-        用户类型 - 0：系统管理员账户 - 1：SP管理员账户 - 2：企业成员账户 - 3：注册用户 - 10：硬终端用户
+        用户类型。 * 2：普通用户 * 12：智慧屏用户 * 13：IdeaHub用户 * 14：SmartRooms用户
 
         :return: The user_type of this SearchUserResultDTO.
         :rtype: int
@@ -448,7 +448,7 @@ class SearchUserResultDTO:
     def user_type(self, user_type):
         """Sets the user_type of this SearchUserResultDTO.
 
-        用户类型 - 0：系统管理员账户 - 1：SP管理员账户 - 2：企业成员账户 - 3：注册用户 - 10：硬终端用户
+        用户类型。 * 2：普通用户 * 12：智慧屏用户 * 13：IdeaHub用户 * 14：SmartRooms用户
 
         :param user_type: The user_type of this SearchUserResultDTO.
         :type user_type: int
@@ -459,7 +459,7 @@ class SearchUserResultDTO:
     def admin_type(self):
         """Gets the admin_type of this SearchUserResultDTO.
 
-        管理员类型 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
+        管理员类型。 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
 
         :return: The admin_type of this SearchUserResultDTO.
         :rtype: int
@@ -470,7 +470,7 @@ class SearchUserResultDTO:
     def admin_type(self, admin_type):
         """Sets the admin_type of this SearchUserResultDTO.
 
-        管理员类型 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
+        管理员类型。 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
 
         :param admin_type: The admin_type of this SearchUserResultDTO.
         :type admin_type: int
@@ -481,7 +481,7 @@ class SearchUserResultDTO:
     def signature(self):
         """Gets the signature of this SearchUserResultDTO.
 
-        签名
+        签名。
 
         :return: The signature of this SearchUserResultDTO.
         :rtype: str
@@ -492,7 +492,7 @@ class SearchUserResultDTO:
     def signature(self, signature):
         """Sets the signature of this SearchUserResultDTO.
 
-        签名
+        签名。
 
         :param signature: The signature of this SearchUserResultDTO.
         :type signature: str
@@ -503,7 +503,7 @@ class SearchUserResultDTO:
     def title(self):
         """Gets the title of this SearchUserResultDTO.
 
-        职位
+        职位。
 
         :return: The title of this SearchUserResultDTO.
         :rtype: str
@@ -514,7 +514,7 @@ class SearchUserResultDTO:
     def title(self, title):
         """Sets the title of this SearchUserResultDTO.
 
-        职位
+        职位。
 
         :param title: The title of this SearchUserResultDTO.
         :type title: str
@@ -525,7 +525,7 @@ class SearchUserResultDTO:
     def desc(self):
         """Gets the desc of this SearchUserResultDTO.
 
-        备注
+        备注。
 
         :return: The desc of this SearchUserResultDTO.
         :rtype: str
@@ -536,7 +536,7 @@ class SearchUserResultDTO:
     def desc(self, desc):
         """Sets the desc of this SearchUserResultDTO.
 
-        备注
+        备注。
 
         :param desc: The desc of this SearchUserResultDTO.
         :type desc: str
@@ -547,7 +547,7 @@ class SearchUserResultDTO:
     def status(self):
         """Gets the status of this SearchUserResultDTO.
 
-        用户状态 * 0：正常 * 1：停用 
+        用户状态。 * 0：正常 * 1：停用 
 
         :return: The status of this SearchUserResultDTO.
         :rtype: int
@@ -558,7 +558,7 @@ class SearchUserResultDTO:
     def status(self, status):
         """Sets the status of this SearchUserResultDTO.
 
-        用户状态 * 0：正常 * 1：停用 
+        用户状态。 * 0：正常 * 1：停用 
 
         :param status: The status of this SearchUserResultDTO.
         :type status: int
@@ -569,7 +569,7 @@ class SearchUserResultDTO:
     def sort_level(self):
         """Gets the sort_level of this SearchUserResultDTO.
 
-        通讯录排序等级，序号越低优先级越高
+        通讯录排序等级，序号越低优先级越高。
 
         :return: The sort_level of this SearchUserResultDTO.
         :rtype: int
@@ -580,7 +580,7 @@ class SearchUserResultDTO:
     def sort_level(self, sort_level):
         """Sets the sort_level of this SearchUserResultDTO.
 
-        通讯录排序等级，序号越低优先级越高
+        通讯录排序等级，序号越低优先级越高。
 
         :param sort_level: The sort_level of this SearchUserResultDTO.
         :type sort_level: int
@@ -591,7 +591,7 @@ class SearchUserResultDTO:
     def hide_phone(self):
         """Gets the hide_phone of this SearchUserResultDTO.
 
-        是否隐藏手机号码
+        是否隐藏手机号码。
 
         :return: The hide_phone of this SearchUserResultDTO.
         :rtype: bool
@@ -602,7 +602,7 @@ class SearchUserResultDTO:
     def hide_phone(self, hide_phone):
         """Sets the hide_phone of this SearchUserResultDTO.
 
-        是否隐藏手机号码
+        是否隐藏手机号码。
 
         :param hide_phone: The hide_phone of this SearchUserResultDTO.
         :type hide_phone: bool
@@ -613,7 +613,7 @@ class SearchUserResultDTO:
     def third_account(self):
         """Gets the third_account of this SearchUserResultDTO.
 
-        第三方账号自动开户的第三方账号、Ideahub账号的sn等
+        第三方User ID。
 
         :return: The third_account of this SearchUserResultDTO.
         :rtype: str
@@ -624,7 +624,7 @@ class SearchUserResultDTO:
     def third_account(self, third_account):
         """Sets the third_account of this SearchUserResultDTO.
 
-        第三方账号自动开户的第三方账号、Ideahub账号的sn等
+        第三方User ID。
 
         :param third_account: The third_account of this SearchUserResultDTO.
         :type third_account: str
@@ -635,7 +635,7 @@ class SearchUserResultDTO:
     def vision_account(self):
         """Gets the vision_account of this SearchUserResultDTO.
 
-        智慧屏账号
+        智慧屏帐号。
 
         :return: The vision_account of this SearchUserResultDTO.
         :rtype: str
@@ -646,7 +646,7 @@ class SearchUserResultDTO:
     def vision_account(self, vision_account):
         """Sets the vision_account of this SearchUserResultDTO.
 
-        智慧屏账号
+        智慧屏帐号。
 
         :param vision_account: The vision_account of this SearchUserResultDTO.
         :type vision_account: str
@@ -657,7 +657,7 @@ class SearchUserResultDTO:
     def license(self):
         """Gets the license of this SearchUserResultDTO.
 
-        许可证 * 0：商用 * 1：免费试用 
+        许可证。 * 0：商用 * 1：免费试用 
 
         :return: The license of this SearchUserResultDTO.
         :rtype: int
@@ -668,7 +668,7 @@ class SearchUserResultDTO:
     def license(self, license):
         """Sets the license of this SearchUserResultDTO.
 
-        许可证 * 0：商用 * 1：免费试用 
+        许可证。 * 0：商用 * 1：免费试用 
 
         :param license: The license of this SearchUserResultDTO.
         :type license: int
@@ -679,7 +679,7 @@ class SearchUserResultDTO:
     def active_time(self):
         """Gets the active_time of this SearchUserResultDTO.
 
-        激活时间，utc时间戳
+        激活时间，utc时间戳。
 
         :return: The active_time of this SearchUserResultDTO.
         :rtype: int
@@ -690,7 +690,7 @@ class SearchUserResultDTO:
     def active_time(self, active_time):
         """Sets the active_time of this SearchUserResultDTO.
 
-        激活时间，utc时间戳
+        激活时间，utc时间戳。
 
         :param active_time: The active_time of this SearchUserResultDTO.
         :type active_time: int
@@ -701,7 +701,7 @@ class SearchUserResultDTO:
     def active_code_expire_time(self):
         """Gets the active_code_expire_time of this SearchUserResultDTO.
 
-        激活码到期时间,utc时间戳
+        激活码到期时间,utc时间戳。
 
         :return: The active_code_expire_time of this SearchUserResultDTO.
         :rtype: int
@@ -712,7 +712,7 @@ class SearchUserResultDTO:
     def active_code_expire_time(self, active_code_expire_time):
         """Sets the active_code_expire_time of this SearchUserResultDTO.
 
-        激活码到期时间,utc时间戳
+        激活码到期时间,utc时间戳。
 
         :param active_code_expire_time: The active_code_expire_time of this SearchUserResultDTO.
         :type active_code_expire_time: int
@@ -723,7 +723,7 @@ class SearchUserResultDTO:
     def expire_time(self):
         """Gets the expire_time of this SearchUserResultDTO.
 
-        已激活的终端到期时间,utc时间戳
+        已激活的终端到期时间,utc时间戳。
 
         :return: The expire_time of this SearchUserResultDTO.
         :rtype: int
@@ -734,7 +734,7 @@ class SearchUserResultDTO:
     def expire_time(self, expire_time):
         """Sets the expire_time of this SearchUserResultDTO.
 
-        已激活的终端到期时间,utc时间戳
+        已激活的终端到期时间,utc时间戳。
 
         :param expire_time: The expire_time of this SearchUserResultDTO.
         :type expire_time: int
@@ -745,7 +745,7 @@ class SearchUserResultDTO:
     def active_code(self):
         """Gets the active_code of this SearchUserResultDTO.
 
-        激活码
+        激活码。
 
         :return: The active_code of this SearchUserResultDTO.
         :rtype: str
@@ -756,7 +756,7 @@ class SearchUserResultDTO:
     def active_code(self, active_code):
         """Sets the active_code of this SearchUserResultDTO.
 
-        激活码
+        激活码。
 
         :param active_code: The active_code of this SearchUserResultDTO.
         :type active_code: str

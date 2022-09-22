@@ -47,21 +47,21 @@ class ModDeviceDTO:
 
         The model defined in huaweicloud sdk
 
-        :param name: 终端名称，建议为具体位置。 maxLength：64 minLength：0
+        :param name: 终端名称，建议为具体位置。
         :type name: str
-        :param prj_code_mode: 投影码生成模式，默认为自动 - 0、自动(该模式下根据消息上报的IP地址内部控制复杂度：   私网地址配置成简单模式；公网地址配置成复杂模式) - 1、简单 - 2、复杂
+        :param prj_code_mode: 投影码生成模式，默认为自动。 * 0：自动(该模式下根据消息上报的IP地址内部控制复杂度。   私网地址配置成简单模式，公网地址配置成复杂模式) * 1：简单 * 2：复杂
         :type prj_code_mode: int
-        :param dept_code: 部门编号，默认为根部门 默认值：1 maxLength：32 minLength：0
+        :param dept_code: 部门编码，默认为根部门。 默认值：1。
         :type dept_code: str
-        :param phone: 手机号，必须加上国家码。 例如中国大陆手机为“+86xxxxxxxxxxx”，当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 maxLength：32 minLength：0 说明： - 手机号或者邮箱至少填写一个。
+        :param phone: 手机号，必须加上国家码。 例如中国大陆手机为“+86xxxxxxxxxxx”，当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 &gt; 手机号或者邮箱至少填写一个。
         :type phone: str
-        :param country: 若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
-        :param email: 统一邮箱格式 maxLength：255 minLength：0
+        :param email: 邮箱地址。
         :type email: str
-        :param description: 终端描述 maxLength：128 minLength：0
+        :param description: 终端描述。
         :type description: str
-        :param status: 终端状态。 * 0、正常 * 1、冻结 
+        :param status: 终端状态。 * 0：正常 * 1：冻结 
         :type status: int
         """
         
@@ -98,7 +98,7 @@ class ModDeviceDTO:
     def name(self):
         """Gets the name of this ModDeviceDTO.
 
-        终端名称，建议为具体位置。 maxLength：64 minLength：0
+        终端名称，建议为具体位置。
 
         :return: The name of this ModDeviceDTO.
         :rtype: str
@@ -109,7 +109,7 @@ class ModDeviceDTO:
     def name(self, name):
         """Sets the name of this ModDeviceDTO.
 
-        终端名称，建议为具体位置。 maxLength：64 minLength：0
+        终端名称，建议为具体位置。
 
         :param name: The name of this ModDeviceDTO.
         :type name: str
@@ -120,7 +120,7 @@ class ModDeviceDTO:
     def prj_code_mode(self):
         """Gets the prj_code_mode of this ModDeviceDTO.
 
-        投影码生成模式，默认为自动 - 0、自动(该模式下根据消息上报的IP地址内部控制复杂度：   私网地址配置成简单模式；公网地址配置成复杂模式) - 1、简单 - 2、复杂
+        投影码生成模式，默认为自动。 * 0：自动(该模式下根据消息上报的IP地址内部控制复杂度。   私网地址配置成简单模式，公网地址配置成复杂模式) * 1：简单 * 2：复杂
 
         :return: The prj_code_mode of this ModDeviceDTO.
         :rtype: int
@@ -131,7 +131,7 @@ class ModDeviceDTO:
     def prj_code_mode(self, prj_code_mode):
         """Sets the prj_code_mode of this ModDeviceDTO.
 
-        投影码生成模式，默认为自动 - 0、自动(该模式下根据消息上报的IP地址内部控制复杂度：   私网地址配置成简单模式；公网地址配置成复杂模式) - 1、简单 - 2、复杂
+        投影码生成模式，默认为自动。 * 0：自动(该模式下根据消息上报的IP地址内部控制复杂度。   私网地址配置成简单模式，公网地址配置成复杂模式) * 1：简单 * 2：复杂
 
         :param prj_code_mode: The prj_code_mode of this ModDeviceDTO.
         :type prj_code_mode: int
@@ -142,7 +142,7 @@ class ModDeviceDTO:
     def dept_code(self):
         """Gets the dept_code of this ModDeviceDTO.
 
-        部门编号，默认为根部门 默认值：1 maxLength：32 minLength：0
+        部门编码，默认为根部门。 默认值：1。
 
         :return: The dept_code of this ModDeviceDTO.
         :rtype: str
@@ -153,7 +153,7 @@ class ModDeviceDTO:
     def dept_code(self, dept_code):
         """Sets the dept_code of this ModDeviceDTO.
 
-        部门编号，默认为根部门 默认值：1 maxLength：32 minLength：0
+        部门编码，默认为根部门。 默认值：1。
 
         :param dept_code: The dept_code of this ModDeviceDTO.
         :type dept_code: str
@@ -164,7 +164,7 @@ class ModDeviceDTO:
     def phone(self):
         """Gets the phone of this ModDeviceDTO.
 
-        手机号，必须加上国家码。 例如中国大陆手机为“+86xxxxxxxxxxx”，当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 maxLength：32 minLength：0 说明： - 手机号或者邮箱至少填写一个。
+        手机号，必须加上国家码。 例如中国大陆手机为“+86xxxxxxxxxxx”，当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 > 手机号或者邮箱至少填写一个。
 
         :return: The phone of this ModDeviceDTO.
         :rtype: str
@@ -175,7 +175,7 @@ class ModDeviceDTO:
     def phone(self, phone):
         """Sets the phone of this ModDeviceDTO.
 
-        手机号，必须加上国家码。 例如中国大陆手机为“+86xxxxxxxxxxx”，当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 maxLength：32 minLength：0 说明： - 手机号或者邮箱至少填写一个。
+        手机号，必须加上国家码。 例如中国大陆手机为“+86xxxxxxxxxxx”，当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 > 手机号或者邮箱至少填写一个。
 
         :param phone: The phone of this ModDeviceDTO.
         :type phone: str
@@ -186,7 +186,7 @@ class ModDeviceDTO:
     def country(self):
         """Gets the country of this ModDeviceDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this ModDeviceDTO.
         :rtype: str
@@ -197,7 +197,7 @@ class ModDeviceDTO:
     def country(self, country):
         """Sets the country of this ModDeviceDTO.
 
-        若smsNumber为手机号,则需带上手机号所属的国家。 例如国家为中国大陆则country参数取值为chinaPR 国家和国家码的对应关系请参考：https://support.huaweicloud.com/api-meeting/meeting_21_0109.html 
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this ModDeviceDTO.
         :type country: str
@@ -208,7 +208,7 @@ class ModDeviceDTO:
     def email(self):
         """Gets the email of this ModDeviceDTO.
 
-        统一邮箱格式 maxLength：255 minLength：0
+        邮箱地址。
 
         :return: The email of this ModDeviceDTO.
         :rtype: str
@@ -219,7 +219,7 @@ class ModDeviceDTO:
     def email(self, email):
         """Sets the email of this ModDeviceDTO.
 
-        统一邮箱格式 maxLength：255 minLength：0
+        邮箱地址。
 
         :param email: The email of this ModDeviceDTO.
         :type email: str
@@ -230,7 +230,7 @@ class ModDeviceDTO:
     def description(self):
         """Gets the description of this ModDeviceDTO.
 
-        终端描述 maxLength：128 minLength：0
+        终端描述。
 
         :return: The description of this ModDeviceDTO.
         :rtype: str
@@ -241,7 +241,7 @@ class ModDeviceDTO:
     def description(self, description):
         """Sets the description of this ModDeviceDTO.
 
-        终端描述 maxLength：128 minLength：0
+        终端描述。
 
         :param description: The description of this ModDeviceDTO.
         :type description: str
@@ -252,7 +252,7 @@ class ModDeviceDTO:
     def status(self):
         """Gets the status of this ModDeviceDTO.
 
-        终端状态。 * 0、正常 * 1、冻结 
+        终端状态。 * 0：正常 * 1：冻结 
 
         :return: The status of this ModDeviceDTO.
         :rtype: int
@@ -263,7 +263,7 @@ class ModDeviceDTO:
     def status(self, status):
         """Sets the status of this ModDeviceDTO.
 
-        终端状态。 * 0、正常 * 1、冻结 
+        终端状态。 * 0：正常 * 1：冻结 
 
         :param status: The status of this ModDeviceDTO.
         :type status: int

@@ -45,7 +45,7 @@ class ConfAttendeeRecordInfo:
 
         The model defined in huaweicloud sdk
 
-        :param display_name: 名称。
+        :param display_name: 与会者名称。
         :type display_name: str
         :param call_number: 号码。
         :type call_number: str
@@ -91,7 +91,7 @@ class ConfAttendeeRecordInfo:
     def display_name(self):
         """Gets the display_name of this ConfAttendeeRecordInfo.
 
-        名称。
+        与会者名称。
 
         :return: The display_name of this ConfAttendeeRecordInfo.
         :rtype: str
@@ -102,7 +102,7 @@ class ConfAttendeeRecordInfo:
     def display_name(self, display_name):
         """Sets the display_name of this ConfAttendeeRecordInfo.
 
-        名称。
+        与会者名称。
 
         :param display_name: The display_name of this ConfAttendeeRecordInfo.
         :type display_name: str

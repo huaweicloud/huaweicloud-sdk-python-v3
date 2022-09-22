@@ -21,7 +21,7 @@ class ListTaskRulesetResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'body': 'list[ListTaskRulesetRes]'
+        'body': 'list[TaskRulesetInfo]'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class ListTaskRulesetResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param body: 
-        :type body: list[:class:`huaweicloudsdkcodecheck.v2.ListTaskRulesetRes`]
+        :type body: list[:class:`huaweicloudsdkcodecheck.v2.TaskRulesetInfo`]
         """
         
         super(ListTaskRulesetResponse, self).__init__()
@@ -51,7 +51,7 @@ class ListTaskRulesetResponse(SdkResponse):
 
 
         :return: The body of this ListTaskRulesetResponse.
-        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.ListTaskRulesetRes`]
+        :rtype: list[:class:`huaweicloudsdkcodecheck.v2.TaskRulesetInfo`]
         """
         return self._body
 
@@ -61,7 +61,7 @@ class ListTaskRulesetResponse(SdkResponse):
 
 
         :param body: The body of this ListTaskRulesetResponse.
-        :type body: list[:class:`huaweicloudsdkcodecheck.v2.ListTaskRulesetRes`]
+        :type body: list[:class:`huaweicloudsdkcodecheck.v2.TaskRulesetInfo`]
         """
         self._body = body
 

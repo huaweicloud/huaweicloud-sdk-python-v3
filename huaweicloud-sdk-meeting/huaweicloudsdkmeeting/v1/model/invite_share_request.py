@@ -39,11 +39,11 @@ class InviteShareRequest:
 
         The model defined in huaweicloud sdk
 
-        :param conference_id: 会议id，创建会议时生成
+        :param conference_id: 会议ID。
         :type conference_id: str
-        :param participant_id: 会场id,可以通过查询会场id接口获取
+        :param participant_id: 被邀请的与会者标识。
         :type participant_id: str
-        :param x_conference_authorization: 会控授权令牌，通过调用申请会控token的接口生成
+        :param x_conference_authorization: 会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
         :type x_conference_authorization: str
         :param body: Body of the InviteShareRequest
         :type body: :class:`huaweicloudsdkmeeting.v1.InviteShareDTO`
@@ -67,7 +67,7 @@ class InviteShareRequest:
     def conference_id(self):
         """Gets the conference_id of this InviteShareRequest.
 
-        会议id，创建会议时生成
+        会议ID。
 
         :return: The conference_id of this InviteShareRequest.
         :rtype: str
@@ -78,7 +78,7 @@ class InviteShareRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this InviteShareRequest.
 
-        会议id，创建会议时生成
+        会议ID。
 
         :param conference_id: The conference_id of this InviteShareRequest.
         :type conference_id: str
@@ -89,7 +89,7 @@ class InviteShareRequest:
     def participant_id(self):
         """Gets the participant_id of this InviteShareRequest.
 
-        会场id,可以通过查询会场id接口获取
+        被邀请的与会者标识。
 
         :return: The participant_id of this InviteShareRequest.
         :rtype: str
@@ -100,7 +100,7 @@ class InviteShareRequest:
     def participant_id(self, participant_id):
         """Sets the participant_id of this InviteShareRequest.
 
-        会场id,可以通过查询会场id接口获取
+        被邀请的与会者标识。
 
         :param participant_id: The participant_id of this InviteShareRequest.
         :type participant_id: str
@@ -111,7 +111,7 @@ class InviteShareRequest:
     def x_conference_authorization(self):
         """Gets the x_conference_authorization of this InviteShareRequest.
 
-        会控授权令牌，通过调用申请会控token的接口生成
+        会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
         :return: The x_conference_authorization of this InviteShareRequest.
         :rtype: str
@@ -122,7 +122,7 @@ class InviteShareRequest:
     def x_conference_authorization(self, x_conference_authorization):
         """Sets the x_conference_authorization of this InviteShareRequest.
 
-        会控授权令牌，通过调用申请会控token的接口生成
+        会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
         :param x_conference_authorization: The x_conference_authorization of this InviteShareRequest.
         :type x_conference_authorization: str

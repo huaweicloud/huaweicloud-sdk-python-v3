@@ -22,7 +22,7 @@ class ListTemplatesResponse(SdkResponse):
 
     openapi_types = {
         'count': 'int',
-        'templates': 'list[TemplateResponse]'
+        'templates': 'list[TemplateResponseBody]'
     }
 
     attribute_map = {
@@ -38,7 +38,7 @@ class ListTemplatesResponse(SdkResponse):
         :param count: 模板个数
         :type count: int
         :param templates: 模板信息
-        :type templates: list[:class:`huaweicloudsdksms.v3.TemplateResponse`]
+        :type templates: list[:class:`huaweicloudsdksms.v3.TemplateResponseBody`]
         """
         
         super(ListTemplatesResponse, self).__init__()
@@ -81,7 +81,7 @@ class ListTemplatesResponse(SdkResponse):
         模板信息
 
         :return: The templates of this ListTemplatesResponse.
-        :rtype: list[:class:`huaweicloudsdksms.v3.TemplateResponse`]
+        :rtype: list[:class:`huaweicloudsdksms.v3.TemplateResponseBody`]
         """
         return self._templates
 
@@ -92,7 +92,7 @@ class ListTemplatesResponse(SdkResponse):
         模板信息
 
         :param templates: The templates of this ListTemplatesResponse.
-        :type templates: list[:class:`huaweicloudsdksms.v3.TemplateResponse`]
+        :type templates: list[:class:`huaweicloudsdksms.v3.TemplateResponseBody`]
         """
         self._templates = templates
 

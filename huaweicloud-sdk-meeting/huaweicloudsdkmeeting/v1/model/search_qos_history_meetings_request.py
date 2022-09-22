@@ -45,11 +45,11 @@ class SearchQosHistoryMeetingsRequest:
         :type start_date: int
         :param end_date: 查询的截止日期，Unix时间戳（单位毫秒）。
         :type end_date: int
-        :param offset: 查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页的数据。
+        :param offset: 查询偏移量。 * 取值：大于等于0，默认值为0 * 大于等于最大条目数量，则返回最后一页的数据
         :type offset: int
-        :param limit: 查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
+        :param limit: 查询的条目数量。 * 取值：1-500，默认值为20
         :type limit: int
-        :param search_key: 根据会议主题,预定人和会议id作为关键词，模糊查询会议列表。最大不超过512个字节。
+        :param search_key: 查询条件。会议主题、会议预约人和会议ID等可作为搜索内容。长度限制为1-512个字符。
         :type search_key: str
         """
         
@@ -119,7 +119,7 @@ class SearchQosHistoryMeetingsRequest:
     def offset(self):
         """Gets the offset of this SearchQosHistoryMeetingsRequest.
 
-        查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页的数据。
+        查询偏移量。 * 取值：大于等于0，默认值为0 * 大于等于最大条目数量，则返回最后一页的数据
 
         :return: The offset of this SearchQosHistoryMeetingsRequest.
         :rtype: int
@@ -130,7 +130,7 @@ class SearchQosHistoryMeetingsRequest:
     def offset(self, offset):
         """Sets the offset of this SearchQosHistoryMeetingsRequest.
 
-        查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页的数据。
+        查询偏移量。 * 取值：大于等于0，默认值为0 * 大于等于最大条目数量，则返回最后一页的数据
 
         :param offset: The offset of this SearchQosHistoryMeetingsRequest.
         :type offset: int
@@ -141,7 +141,7 @@ class SearchQosHistoryMeetingsRequest:
     def limit(self):
         """Gets the limit of this SearchQosHistoryMeetingsRequest.
 
-        查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
+        查询的条目数量。 * 取值：1-500，默认值为20
 
         :return: The limit of this SearchQosHistoryMeetingsRequest.
         :rtype: int
@@ -152,7 +152,7 @@ class SearchQosHistoryMeetingsRequest:
     def limit(self, limit):
         """Sets the limit of this SearchQosHistoryMeetingsRequest.
 
-        查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
+        查询的条目数量。 * 取值：1-500，默认值为20
 
         :param limit: The limit of this SearchQosHistoryMeetingsRequest.
         :type limit: int
@@ -163,7 +163,7 @@ class SearchQosHistoryMeetingsRequest:
     def search_key(self):
         """Gets the search_key of this SearchQosHistoryMeetingsRequest.
 
-        根据会议主题,预定人和会议id作为关键词，模糊查询会议列表。最大不超过512个字节。
+        查询条件。会议主题、会议预约人和会议ID等可作为搜索内容。长度限制为1-512个字符。
 
         :return: The search_key of this SearchQosHistoryMeetingsRequest.
         :rtype: str
@@ -174,7 +174,7 @@ class SearchQosHistoryMeetingsRequest:
     def search_key(self, search_key):
         """Sets the search_key of this SearchQosHistoryMeetingsRequest.
 
-        根据会议主题,预定人和会议id作为关键词，模糊查询会议列表。最大不超过512个字节。
+        查询条件。会议主题、会议预约人和会议ID等可作为搜索内容。长度限制为1-512个字符。
 
         :param search_key: The search_key of this SearchQosHistoryMeetingsRequest.
         :type search_key: str

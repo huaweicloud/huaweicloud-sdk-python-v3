@@ -39,13 +39,13 @@ class SearchMaterialsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param offset: 页面起始页，从0开始
+        :param offset: 页面起始页，从0开始。
         :type offset: int
         :param limit: 每页显示的条目数量。 默认值：10。 
         :type limit: int
         :param count: 总数量。
         :type count: int
-        :param data: 素材信息
+        :param data: 素材信息。
         :type data: list[:class:`huaweicloudsdkmeeting.v1.Material`]
         """
         
@@ -70,7 +70,7 @@ class SearchMaterialsResponse(SdkResponse):
     def offset(self):
         """Gets the offset of this SearchMaterialsResponse.
 
-        页面起始页，从0开始
+        页面起始页，从0开始。
 
         :return: The offset of this SearchMaterialsResponse.
         :rtype: int
@@ -81,7 +81,7 @@ class SearchMaterialsResponse(SdkResponse):
     def offset(self, offset):
         """Sets the offset of this SearchMaterialsResponse.
 
-        页面起始页，从0开始
+        页面起始页，从0开始。
 
         :param offset: The offset of this SearchMaterialsResponse.
         :type offset: int
@@ -136,7 +136,7 @@ class SearchMaterialsResponse(SdkResponse):
     def data(self):
         """Gets the data of this SearchMaterialsResponse.
 
-        素材信息
+        素材信息。
 
         :return: The data of this SearchMaterialsResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.Material`]
@@ -147,7 +147,7 @@ class SearchMaterialsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this SearchMaterialsResponse.
 
-        素材信息
+        素材信息。
 
         :param data: The data of this SearchMaterialsResponse.
         :type data: list[:class:`huaweicloudsdkmeeting.v1.Material`]

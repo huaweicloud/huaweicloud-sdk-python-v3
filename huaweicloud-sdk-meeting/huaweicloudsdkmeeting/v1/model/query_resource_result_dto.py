@@ -51,25 +51,25 @@ class QueryResourceResultDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 唯一标识若携带则以携带为准，企业内保证唯一，否则后台自动生成UUID
+        :param id: 唯一标识若携带则以携带为准，企业内保证唯一，否则后台自动生成UUID。
         :type id: str
-        :param type: 资源类型，前台通过查询接口返回该sp支持售卖的资源在界面上做相应屏蔽，当前为枚举类型. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
+        :param type: 资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
         :type type: str
-        :param type_id: 资源标识，比如资源类型为vmrpkg，则该参数为vmrPkgId
+        :param type_id: 资源标识，比如资源类型为VMR，则该参数为vmrPkgId。
         :type type_id: str
-        :param type_desc: 资源标识对应的回显描述,比如资源类型为vmrpkg，则该参数为vmrPkgName
+        :param type_desc: 资源标识对应的回显描述,比如资源类型为VMR，则该参数为vmrPkgName。
         :type type_desc: str
-        :param vmr_mode: VMR模式. 0：个人会议ID 1：云会议室 2：网络研讨会
+        :param vmr_mode: VMR模式。 - 0：个人会议ID - 1：云会议室 - 2：网络研讨会
         :type vmr_mode: int
-        :param count: 资源数量
+        :param count: 资源数量。
         :type count: int
-        :param expire_date: 到期时间,utc时间戳
+        :param expire_date: 到期时间,utc时间戳。
         :type expire_date: int
-        :param order_id: 资源对应的订单id
+        :param order_id: 资源对应的订单id。
         :type order_id: str
         :param status: 资源状态: - 0：正常 - 1：到期 - 2：停用
         :type status: int
-        :param editable: 标识资源是否可以编辑或删除
+        :param editable: 标识资源是否可以编辑或删除。
         :type editable: bool
         """
         
@@ -112,7 +112,7 @@ class QueryResourceResultDTO:
     def id(self):
         """Gets the id of this QueryResourceResultDTO.
 
-        唯一标识若携带则以携带为准，企业内保证唯一，否则后台自动生成UUID
+        唯一标识若携带则以携带为准，企业内保证唯一，否则后台自动生成UUID。
 
         :return: The id of this QueryResourceResultDTO.
         :rtype: str
@@ -123,7 +123,7 @@ class QueryResourceResultDTO:
     def id(self, id):
         """Sets the id of this QueryResourceResultDTO.
 
-        唯一标识若携带则以携带为准，企业内保证唯一，否则后台自动生成UUID
+        唯一标识若携带则以携带为准，企业内保证唯一，否则后台自动生成UUID。
 
         :param id: The id of this QueryResourceResultDTO.
         :type id: str
@@ -134,7 +134,7 @@ class QueryResourceResultDTO:
     def type(self):
         """Gets the type of this QueryResourceResultDTO.
 
-        资源类型，前台通过查询接口返回该sp支持售卖的资源在界面上做相应屏蔽，当前为枚举类型. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
+        资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
 
         :return: The type of this QueryResourceResultDTO.
         :rtype: str
@@ -145,7 +145,7 @@ class QueryResourceResultDTO:
     def type(self, type):
         """Sets the type of this QueryResourceResultDTO.
 
-        资源类型，前台通过查询接口返回该sp支持售卖的资源在界面上做相应屏蔽，当前为枚举类型. - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端账号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
+        资源类型。 - VMR        - 云会议室 - CONF_CALL  - 会议并发数 - HARD_1080P - 1080P硬终端 - HARD_720P  - 720P硬终端 - SOFT       - 软终端用户数 - ROOM       - 大屏软终端 - LIVE       - 直播推流 - RECORD     - 录播空间 - HARD_THIRD_PARTY - 第三方硬终端帐号 - HUAWEI_VISION -智慧屏 - IDEA_HUB   - ideahub
 
         :param type: The type of this QueryResourceResultDTO.
         :type type: str
@@ -156,7 +156,7 @@ class QueryResourceResultDTO:
     def type_id(self):
         """Gets the type_id of this QueryResourceResultDTO.
 
-        资源标识，比如资源类型为vmrpkg，则该参数为vmrPkgId
+        资源标识，比如资源类型为VMR，则该参数为vmrPkgId。
 
         :return: The type_id of this QueryResourceResultDTO.
         :rtype: str
@@ -167,7 +167,7 @@ class QueryResourceResultDTO:
     def type_id(self, type_id):
         """Sets the type_id of this QueryResourceResultDTO.
 
-        资源标识，比如资源类型为vmrpkg，则该参数为vmrPkgId
+        资源标识，比如资源类型为VMR，则该参数为vmrPkgId。
 
         :param type_id: The type_id of this QueryResourceResultDTO.
         :type type_id: str
@@ -178,7 +178,7 @@ class QueryResourceResultDTO:
     def type_desc(self):
         """Gets the type_desc of this QueryResourceResultDTO.
 
-        资源标识对应的回显描述,比如资源类型为vmrpkg，则该参数为vmrPkgName
+        资源标识对应的回显描述,比如资源类型为VMR，则该参数为vmrPkgName。
 
         :return: The type_desc of this QueryResourceResultDTO.
         :rtype: str
@@ -189,7 +189,7 @@ class QueryResourceResultDTO:
     def type_desc(self, type_desc):
         """Sets the type_desc of this QueryResourceResultDTO.
 
-        资源标识对应的回显描述,比如资源类型为vmrpkg，则该参数为vmrPkgName
+        资源标识对应的回显描述,比如资源类型为VMR，则该参数为vmrPkgName。
 
         :param type_desc: The type_desc of this QueryResourceResultDTO.
         :type type_desc: str
@@ -200,7 +200,7 @@ class QueryResourceResultDTO:
     def vmr_mode(self):
         """Gets the vmr_mode of this QueryResourceResultDTO.
 
-        VMR模式. 0：个人会议ID 1：云会议室 2：网络研讨会
+        VMR模式。 - 0：个人会议ID - 1：云会议室 - 2：网络研讨会
 
         :return: The vmr_mode of this QueryResourceResultDTO.
         :rtype: int
@@ -211,7 +211,7 @@ class QueryResourceResultDTO:
     def vmr_mode(self, vmr_mode):
         """Sets the vmr_mode of this QueryResourceResultDTO.
 
-        VMR模式. 0：个人会议ID 1：云会议室 2：网络研讨会
+        VMR模式。 - 0：个人会议ID - 1：云会议室 - 2：网络研讨会
 
         :param vmr_mode: The vmr_mode of this QueryResourceResultDTO.
         :type vmr_mode: int
@@ -222,7 +222,7 @@ class QueryResourceResultDTO:
     def count(self):
         """Gets the count of this QueryResourceResultDTO.
 
-        资源数量
+        资源数量。
 
         :return: The count of this QueryResourceResultDTO.
         :rtype: int
@@ -233,7 +233,7 @@ class QueryResourceResultDTO:
     def count(self, count):
         """Sets the count of this QueryResourceResultDTO.
 
-        资源数量
+        资源数量。
 
         :param count: The count of this QueryResourceResultDTO.
         :type count: int
@@ -244,7 +244,7 @@ class QueryResourceResultDTO:
     def expire_date(self):
         """Gets the expire_date of this QueryResourceResultDTO.
 
-        到期时间,utc时间戳
+        到期时间,utc时间戳。
 
         :return: The expire_date of this QueryResourceResultDTO.
         :rtype: int
@@ -255,7 +255,7 @@ class QueryResourceResultDTO:
     def expire_date(self, expire_date):
         """Sets the expire_date of this QueryResourceResultDTO.
 
-        到期时间,utc时间戳
+        到期时间,utc时间戳。
 
         :param expire_date: The expire_date of this QueryResourceResultDTO.
         :type expire_date: int
@@ -266,7 +266,7 @@ class QueryResourceResultDTO:
     def order_id(self):
         """Gets the order_id of this QueryResourceResultDTO.
 
-        资源对应的订单id
+        资源对应的订单id。
 
         :return: The order_id of this QueryResourceResultDTO.
         :rtype: str
@@ -277,7 +277,7 @@ class QueryResourceResultDTO:
     def order_id(self, order_id):
         """Sets the order_id of this QueryResourceResultDTO.
 
-        资源对应的订单id
+        资源对应的订单id。
 
         :param order_id: The order_id of this QueryResourceResultDTO.
         :type order_id: str
@@ -310,7 +310,7 @@ class QueryResourceResultDTO:
     def editable(self):
         """Gets the editable of this QueryResourceResultDTO.
 
-        标识资源是否可以编辑或删除
+        标识资源是否可以编辑或删除。
 
         :return: The editable of this QueryResourceResultDTO.
         :rtype: bool
@@ -321,7 +321,7 @@ class QueryResourceResultDTO:
     def editable(self, editable):
         """Sets the editable of this QueryResourceResultDTO.
 
-        标识资源是否可以编辑或删除
+        标识资源是否可以编辑或删除。
 
         :param editable: The editable of this QueryResourceResultDTO.
         :type editable: bool

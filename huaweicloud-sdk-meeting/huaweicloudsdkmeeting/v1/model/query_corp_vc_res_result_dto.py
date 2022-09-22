@@ -53,27 +53,27 @@ class QueryCorpVcResResultDTO:
 
         The model defined in huaweicloud sdk
 
-        :param vmr_pkg_list: 虚拟会议室类型列表,最多支持8个，暂不限制
+        :param vmr_pkg_list: 云会议室类型列表。
         :type vmr_pkg_list: list[:class:`huaweicloudsdkmeeting.v1.QueryVmrPkgResResultDTO`]
-        :param te1080p_hard_count: 1080P硬终端账户数
+        :param te1080p_hard_count: 1080P硬终端接入帐号数量。
         :type te1080p_hard_count: int
-        :param te720p_hard_count: 720P硬终端账户数
+        :param te720p_hard_count: 720P硬终端接入帐号数量。
         :type te720p_hard_count: int
-        :param te_soft_count: 软终端账户数
+        :param te_soft_count: 软终端账户数量。
         :type te_soft_count: int
-        :param room_count: 大屏软终端数量
+        :param room_count: 电子白板（SmartRooms）接入帐号数量。
         :type room_count: int
-        :param record_capability: 录播存储空间 （单位：G）
+        :param record_capability: 录播存储空间 (单位:G)。
         :type record_capability: int
-        :param conf_call_count: 会议并发方数
+        :param conf_call_count: 会议并发方数量。
         :type conf_call_count: int
-        :param live_count: 推流并发数量
+        :param live_count: 直播端口数量。
         :type live_count: int
-        :param third_party_hard_count: 第三方硬终端接入数
+        :param third_party_hard_count: 第三方硬终端接入帐号数量。
         :type third_party_hard_count: int
-        :param hw_vision_count: 智慧屏终端接入数
+        :param hw_vision_count: 智慧屏终端接入帐号数量。
         :type hw_vision_count: int
-        :param idea_hub_count: ideahub终端接入数
+        :param idea_hub_count: IdeaHub终端接入帐号数量。
         :type idea_hub_count: int
         """
         
@@ -119,7 +119,7 @@ class QueryCorpVcResResultDTO:
     def vmr_pkg_list(self):
         """Gets the vmr_pkg_list of this QueryCorpVcResResultDTO.
 
-        虚拟会议室类型列表,最多支持8个，暂不限制
+        云会议室类型列表。
 
         :return: The vmr_pkg_list of this QueryCorpVcResResultDTO.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.QueryVmrPkgResResultDTO`]
@@ -130,7 +130,7 @@ class QueryCorpVcResResultDTO:
     def vmr_pkg_list(self, vmr_pkg_list):
         """Sets the vmr_pkg_list of this QueryCorpVcResResultDTO.
 
-        虚拟会议室类型列表,最多支持8个，暂不限制
+        云会议室类型列表。
 
         :param vmr_pkg_list: The vmr_pkg_list of this QueryCorpVcResResultDTO.
         :type vmr_pkg_list: list[:class:`huaweicloudsdkmeeting.v1.QueryVmrPkgResResultDTO`]
@@ -141,7 +141,7 @@ class QueryCorpVcResResultDTO:
     def te1080p_hard_count(self):
         """Gets the te1080p_hard_count of this QueryCorpVcResResultDTO.
 
-        1080P硬终端账户数
+        1080P硬终端接入帐号数量。
 
         :return: The te1080p_hard_count of this QueryCorpVcResResultDTO.
         :rtype: int
@@ -152,7 +152,7 @@ class QueryCorpVcResResultDTO:
     def te1080p_hard_count(self, te1080p_hard_count):
         """Sets the te1080p_hard_count of this QueryCorpVcResResultDTO.
 
-        1080P硬终端账户数
+        1080P硬终端接入帐号数量。
 
         :param te1080p_hard_count: The te1080p_hard_count of this QueryCorpVcResResultDTO.
         :type te1080p_hard_count: int
@@ -163,7 +163,7 @@ class QueryCorpVcResResultDTO:
     def te720p_hard_count(self):
         """Gets the te720p_hard_count of this QueryCorpVcResResultDTO.
 
-        720P硬终端账户数
+        720P硬终端接入帐号数量。
 
         :return: The te720p_hard_count of this QueryCorpVcResResultDTO.
         :rtype: int
@@ -174,7 +174,7 @@ class QueryCorpVcResResultDTO:
     def te720p_hard_count(self, te720p_hard_count):
         """Sets the te720p_hard_count of this QueryCorpVcResResultDTO.
 
-        720P硬终端账户数
+        720P硬终端接入帐号数量。
 
         :param te720p_hard_count: The te720p_hard_count of this QueryCorpVcResResultDTO.
         :type te720p_hard_count: int
@@ -185,7 +185,7 @@ class QueryCorpVcResResultDTO:
     def te_soft_count(self):
         """Gets the te_soft_count of this QueryCorpVcResResultDTO.
 
-        软终端账户数
+        软终端账户数量。
 
         :return: The te_soft_count of this QueryCorpVcResResultDTO.
         :rtype: int
@@ -196,7 +196,7 @@ class QueryCorpVcResResultDTO:
     def te_soft_count(self, te_soft_count):
         """Sets the te_soft_count of this QueryCorpVcResResultDTO.
 
-        软终端账户数
+        软终端账户数量。
 
         :param te_soft_count: The te_soft_count of this QueryCorpVcResResultDTO.
         :type te_soft_count: int
@@ -207,7 +207,7 @@ class QueryCorpVcResResultDTO:
     def room_count(self):
         """Gets the room_count of this QueryCorpVcResResultDTO.
 
-        大屏软终端数量
+        电子白板（SmartRooms）接入帐号数量。
 
         :return: The room_count of this QueryCorpVcResResultDTO.
         :rtype: int
@@ -218,7 +218,7 @@ class QueryCorpVcResResultDTO:
     def room_count(self, room_count):
         """Sets the room_count of this QueryCorpVcResResultDTO.
 
-        大屏软终端数量
+        电子白板（SmartRooms）接入帐号数量。
 
         :param room_count: The room_count of this QueryCorpVcResResultDTO.
         :type room_count: int
@@ -229,7 +229,7 @@ class QueryCorpVcResResultDTO:
     def record_capability(self):
         """Gets the record_capability of this QueryCorpVcResResultDTO.
 
-        录播存储空间 （单位：G）
+        录播存储空间 (单位:G)。
 
         :return: The record_capability of this QueryCorpVcResResultDTO.
         :rtype: int
@@ -240,7 +240,7 @@ class QueryCorpVcResResultDTO:
     def record_capability(self, record_capability):
         """Sets the record_capability of this QueryCorpVcResResultDTO.
 
-        录播存储空间 （单位：G）
+        录播存储空间 (单位:G)。
 
         :param record_capability: The record_capability of this QueryCorpVcResResultDTO.
         :type record_capability: int
@@ -251,7 +251,7 @@ class QueryCorpVcResResultDTO:
     def conf_call_count(self):
         """Gets the conf_call_count of this QueryCorpVcResResultDTO.
 
-        会议并发方数
+        会议并发方数量。
 
         :return: The conf_call_count of this QueryCorpVcResResultDTO.
         :rtype: int
@@ -262,7 +262,7 @@ class QueryCorpVcResResultDTO:
     def conf_call_count(self, conf_call_count):
         """Sets the conf_call_count of this QueryCorpVcResResultDTO.
 
-        会议并发方数
+        会议并发方数量。
 
         :param conf_call_count: The conf_call_count of this QueryCorpVcResResultDTO.
         :type conf_call_count: int
@@ -273,7 +273,7 @@ class QueryCorpVcResResultDTO:
     def live_count(self):
         """Gets the live_count of this QueryCorpVcResResultDTO.
 
-        推流并发数量
+        直播端口数量。
 
         :return: The live_count of this QueryCorpVcResResultDTO.
         :rtype: int
@@ -284,7 +284,7 @@ class QueryCorpVcResResultDTO:
     def live_count(self, live_count):
         """Sets the live_count of this QueryCorpVcResResultDTO.
 
-        推流并发数量
+        直播端口数量。
 
         :param live_count: The live_count of this QueryCorpVcResResultDTO.
         :type live_count: int
@@ -295,7 +295,7 @@ class QueryCorpVcResResultDTO:
     def third_party_hard_count(self):
         """Gets the third_party_hard_count of this QueryCorpVcResResultDTO.
 
-        第三方硬终端接入数
+        第三方硬终端接入帐号数量。
 
         :return: The third_party_hard_count of this QueryCorpVcResResultDTO.
         :rtype: int
@@ -306,7 +306,7 @@ class QueryCorpVcResResultDTO:
     def third_party_hard_count(self, third_party_hard_count):
         """Sets the third_party_hard_count of this QueryCorpVcResResultDTO.
 
-        第三方硬终端接入数
+        第三方硬终端接入帐号数量。
 
         :param third_party_hard_count: The third_party_hard_count of this QueryCorpVcResResultDTO.
         :type third_party_hard_count: int
@@ -317,7 +317,7 @@ class QueryCorpVcResResultDTO:
     def hw_vision_count(self):
         """Gets the hw_vision_count of this QueryCorpVcResResultDTO.
 
-        智慧屏终端接入数
+        智慧屏终端接入帐号数量。
 
         :return: The hw_vision_count of this QueryCorpVcResResultDTO.
         :rtype: int
@@ -328,7 +328,7 @@ class QueryCorpVcResResultDTO:
     def hw_vision_count(self, hw_vision_count):
         """Sets the hw_vision_count of this QueryCorpVcResResultDTO.
 
-        智慧屏终端接入数
+        智慧屏终端接入帐号数量。
 
         :param hw_vision_count: The hw_vision_count of this QueryCorpVcResResultDTO.
         :type hw_vision_count: int
@@ -339,7 +339,7 @@ class QueryCorpVcResResultDTO:
     def idea_hub_count(self):
         """Gets the idea_hub_count of this QueryCorpVcResResultDTO.
 
-        ideahub终端接入数
+        IdeaHub终端接入帐号数量。
 
         :return: The idea_hub_count of this QueryCorpVcResResultDTO.
         :rtype: int
@@ -350,7 +350,7 @@ class QueryCorpVcResResultDTO:
     def idea_hub_count(self, idea_hub_count):
         """Sets the idea_hub_count of this QueryCorpVcResResultDTO.
 
-        ideahub终端接入数
+        IdeaHub终端接入帐号数量。
 
         :param idea_hub_count: The idea_hub_count of this QueryCorpVcResResultDTO.
         :type idea_hub_count: int

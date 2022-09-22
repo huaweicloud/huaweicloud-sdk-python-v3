@@ -35,7 +35,7 @@ class SetQosThresholdRequest:
 
         The model defined in huaweicloud sdk
 
-        :param threshold_type: 阈值类型： * AUDIO：音频相关阈值。 * VIDEO：视频相关阈值。 * SCREEN：屏幕共享相关阈值。 * CPU：CPU相关阈值。
+        :param threshold_type: 阈值类型： * AUDIO：音频相关阈值 * VIDEO：视频相关阈值 * SCREEN：屏幕共享相关阈值 * CPU：CPU相关阈值
         :type threshold_type: str
         :param body: Body of the SetQosThresholdRequest
         :type body: :class:`huaweicloudsdkmeeting.v1.SetQosThresholdReq`
@@ -55,7 +55,7 @@ class SetQosThresholdRequest:
     def threshold_type(self):
         """Gets the threshold_type of this SetQosThresholdRequest.
 
-        阈值类型： * AUDIO：音频相关阈值。 * VIDEO：视频相关阈值。 * SCREEN：屏幕共享相关阈值。 * CPU：CPU相关阈值。
+        阈值类型： * AUDIO：音频相关阈值 * VIDEO：视频相关阈值 * SCREEN：屏幕共享相关阈值 * CPU：CPU相关阈值
 
         :return: The threshold_type of this SetQosThresholdRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class SetQosThresholdRequest:
     def threshold_type(self, threshold_type):
         """Sets the threshold_type of this SetQosThresholdRequest.
 
-        阈值类型： * AUDIO：音频相关阈值。 * VIDEO：视频相关阈值。 * SCREEN：屏幕共享相关阈值。 * CPU：CPU相关阈值。
+        阈值类型： * AUDIO：音频相关阈值 * VIDEO：视频相关阈值 * SCREEN：屏幕共享相关阈值 * CPU：CPU相关阈值
 
         :param threshold_type: The threshold_type of this SetQosThresholdRequest.
         :type threshold_type: str

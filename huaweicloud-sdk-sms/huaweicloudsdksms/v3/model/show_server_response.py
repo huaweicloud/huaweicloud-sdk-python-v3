@@ -87,15 +87,15 @@ class ShowServerResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 源端服务器id
+        :param id: 源端服务器ID
         :type id: str
-        :param ip: 源端服务器的ip
+        :param ip: 源端服务器的IP
         :type ip: str
         :param name: 用来区分不同源端服务器的名称
         :type name: str
         :param hostname: 源端主机名，注册源端必选，更新非必选
         :type hostname: str
-        :param enterprise_project_id: 企业项目id
+        :param enterprise_project_id: 企业项目ID
         :type enterprise_project_id: str
         :param add_date: 源端服务器注册的时间
         :type add_date: int
@@ -105,7 +105,7 @@ class ShowServerResponse(SdkResponse):
         :type os_version: str
         :param oem_system: 是否是OEM操作系统(Windows)
         :type oem_system: bool
-        :param state: 当前源端服务器状态
+        :param state: 当前源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 testing：测试中 finished：启动目的端完成
         :type state: str
         :param connected: 与Agent连接状态
         :type connected: bool
@@ -129,7 +129,7 @@ class ShowServerResponse(SdkResponse):
         :type networks: list[:class:`huaweicloudsdksms.v3.NetWork`]
         :param checks: 源端环境校验信息
         :type checks: list[:class:`huaweicloudsdksms.v3.EnvironmentCheck`]
-        :param migration_cycle: 迁移周期
+        :param migration_cycle: 迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
         :type migration_cycle: str
         :param state_action_time: 源端状态（state）上次发生变化的时间戳
         :type state_action_time: int
@@ -238,7 +238,7 @@ class ShowServerResponse(SdkResponse):
     def id(self):
         """Gets the id of this ShowServerResponse.
 
-        源端服务器id
+        源端服务器ID
 
         :return: The id of this ShowServerResponse.
         :rtype: str
@@ -249,7 +249,7 @@ class ShowServerResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this ShowServerResponse.
 
-        源端服务器id
+        源端服务器ID
 
         :param id: The id of this ShowServerResponse.
         :type id: str
@@ -260,7 +260,7 @@ class ShowServerResponse(SdkResponse):
     def ip(self):
         """Gets the ip of this ShowServerResponse.
 
-        源端服务器的ip
+        源端服务器的IP
 
         :return: The ip of this ShowServerResponse.
         :rtype: str
@@ -271,7 +271,7 @@ class ShowServerResponse(SdkResponse):
     def ip(self, ip):
         """Sets the ip of this ShowServerResponse.
 
-        源端服务器的ip
+        源端服务器的IP
 
         :param ip: The ip of this ShowServerResponse.
         :type ip: str
@@ -326,7 +326,7 @@ class ShowServerResponse(SdkResponse):
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowServerResponse.
 
-        企业项目id
+        企业项目ID
 
         :return: The enterprise_project_id of this ShowServerResponse.
         :rtype: str
@@ -337,7 +337,7 @@ class ShowServerResponse(SdkResponse):
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowServerResponse.
 
-        企业项目id
+        企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ShowServerResponse.
         :type enterprise_project_id: str
@@ -436,7 +436,7 @@ class ShowServerResponse(SdkResponse):
     def state(self):
         """Gets the state of this ShowServerResponse.
 
-        当前源端服务器状态
+        当前源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 testing：测试中 finished：启动目的端完成
 
         :return: The state of this ShowServerResponse.
         :rtype: str
@@ -447,7 +447,7 @@ class ShowServerResponse(SdkResponse):
     def state(self, state):
         """Sets the state of this ShowServerResponse.
 
-        当前源端服务器状态
+        当前源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 testing：测试中 finished：启动目的端完成
 
         :param state: The state of this ShowServerResponse.
         :type state: str
@@ -696,7 +696,7 @@ class ShowServerResponse(SdkResponse):
     def migration_cycle(self):
         """Gets the migration_cycle of this ShowServerResponse.
 
-        迁移周期
+        迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
 
         :return: The migration_cycle of this ShowServerResponse.
         :rtype: str
@@ -707,7 +707,7 @@ class ShowServerResponse(SdkResponse):
     def migration_cycle(self, migration_cycle):
         """Sets the migration_cycle of this ShowServerResponse.
 
-        迁移周期
+        迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
 
         :param migration_cycle: The migration_cycle of this ShowServerResponse.
         :type migration_cycle: str

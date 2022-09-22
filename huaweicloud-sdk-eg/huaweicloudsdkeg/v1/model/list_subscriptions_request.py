@@ -43,11 +43,11 @@ class ListSubscriptionsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param channel_id: 事件通道ID
+        :param channel_id: 指定查询的事件通道ID
         :type channel_id: str
         :param offset: 偏移量，表示从此偏移量开始查询，偏移量不能小于0
         :type offset: int
-        :param limit: 每页显示的条目数量，不能小于0。
+        :param limit: 每页显示的条目数量，不能小于0
         :type limit: int
         :param sort: 指定查询排序
         :type sort: str
@@ -84,7 +84,7 @@ class ListSubscriptionsRequest:
     def channel_id(self):
         """Gets the channel_id of this ListSubscriptionsRequest.
 
-        事件通道ID
+        指定查询的事件通道ID
 
         :return: The channel_id of this ListSubscriptionsRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class ListSubscriptionsRequest:
     def channel_id(self, channel_id):
         """Sets the channel_id of this ListSubscriptionsRequest.
 
-        事件通道ID
+        指定查询的事件通道ID
 
         :param channel_id: The channel_id of this ListSubscriptionsRequest.
         :type channel_id: str
@@ -128,7 +128,7 @@ class ListSubscriptionsRequest:
     def limit(self):
         """Gets the limit of this ListSubscriptionsRequest.
 
-        每页显示的条目数量，不能小于0。
+        每页显示的条目数量，不能小于0
 
         :return: The limit of this ListSubscriptionsRequest.
         :rtype: int
@@ -139,7 +139,7 @@ class ListSubscriptionsRequest:
     def limit(self, limit):
         """Sets the limit of this ListSubscriptionsRequest.
 
-        每页显示的条目数量，不能小于0。
+        每页显示的条目数量，不能小于0
 
         :param limit: The limit of this ListSubscriptionsRequest.
         :type limit: int

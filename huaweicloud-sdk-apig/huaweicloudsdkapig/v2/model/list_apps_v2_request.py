@@ -63,7 +63,7 @@ class ListAppsV2Request:
         :type status: int
         :param app_key: APP的KEY
         :type app_key: str
-        :param creator: APP的创建者。 - USER：用户自行创建 - MARKET：云市场分配
+        :param creator: APP的创建者。 - USER：用户自行创建 - MARKET：[云商店分配](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk)
         :type creator: str
         :param precise_search: 指定需要精确匹配查找的参数名称，目前仅支持name
         :type precise_search: str
@@ -258,7 +258,7 @@ class ListAppsV2Request:
     def creator(self):
         """Gets the creator of this ListAppsV2Request.
 
-        APP的创建者。 - USER：用户自行创建 - MARKET：云市场分配
+        APP的创建者。 - USER：用户自行创建 - MARKET：[云商店分配](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk)
 
         :return: The creator of this ListAppsV2Request.
         :rtype: str
@@ -269,7 +269,7 @@ class ListAppsV2Request:
     def creator(self, creator):
         """Sets the creator of this ListAppsV2Request.
 
-        APP的创建者。 - USER：用户自行创建 - MARKET：云市场分配
+        APP的创建者。 - USER：用户自行创建 - MARKET：[云商店分配](tag:hws)[暂未使用](tag:cmcc,ctc,DT,g42,hk_g42,hk_sbc,hk_tm,hws_eu,hws_ocb,OCB,sbc,tm,hws_hk)
 
         :param creator: The creator of this ListAppsV2Request.
         :type creator: str

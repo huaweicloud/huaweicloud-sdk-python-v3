@@ -47,21 +47,21 @@ class QueryCorpBasicResultDTO:
 
         The model defined in huaweicloud sdk
 
-        :param name: 企业名称
+        :param name: 企业名称。
         :type name: str
-        :param phone: 联系号码
+        :param phone: 联系号码。
         :type phone: str
-        :param country: 联系号码所属的国家
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
-        :param fax: 传真号码
+        :param fax: 传真号码。
         :type fax: str
-        :param email: 邮箱地址
+        :param email: 邮箱地址。
         :type email: str
-        :param address: 地址
+        :param address: 地址。
         :type address: str
-        :param description: 备注
+        :param description: 备注。
         :type description: str
-        :param sp_id: 企业所属spId
+        :param sp_id: 企业所属SP ID。
         :type sp_id: str
         """
         
@@ -98,7 +98,7 @@ class QueryCorpBasicResultDTO:
     def name(self):
         """Gets the name of this QueryCorpBasicResultDTO.
 
-        企业名称
+        企业名称。
 
         :return: The name of this QueryCorpBasicResultDTO.
         :rtype: str
@@ -109,7 +109,7 @@ class QueryCorpBasicResultDTO:
     def name(self, name):
         """Sets the name of this QueryCorpBasicResultDTO.
 
-        企业名称
+        企业名称。
 
         :param name: The name of this QueryCorpBasicResultDTO.
         :type name: str
@@ -120,7 +120,7 @@ class QueryCorpBasicResultDTO:
     def phone(self):
         """Gets the phone of this QueryCorpBasicResultDTO.
 
-        联系号码
+        联系号码。
 
         :return: The phone of this QueryCorpBasicResultDTO.
         :rtype: str
@@ -131,7 +131,7 @@ class QueryCorpBasicResultDTO:
     def phone(self, phone):
         """Sets the phone of this QueryCorpBasicResultDTO.
 
-        联系号码
+        联系号码。
 
         :param phone: The phone of this QueryCorpBasicResultDTO.
         :type phone: str
@@ -142,7 +142,7 @@ class QueryCorpBasicResultDTO:
     def country(self):
         """Gets the country of this QueryCorpBasicResultDTO.
 
-        联系号码所属的国家
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this QueryCorpBasicResultDTO.
         :rtype: str
@@ -153,7 +153,7 @@ class QueryCorpBasicResultDTO:
     def country(self, country):
         """Sets the country of this QueryCorpBasicResultDTO.
 
-        联系号码所属的国家
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this QueryCorpBasicResultDTO.
         :type country: str
@@ -164,7 +164,7 @@ class QueryCorpBasicResultDTO:
     def fax(self):
         """Gets the fax of this QueryCorpBasicResultDTO.
 
-        传真号码
+        传真号码。
 
         :return: The fax of this QueryCorpBasicResultDTO.
         :rtype: str
@@ -175,7 +175,7 @@ class QueryCorpBasicResultDTO:
     def fax(self, fax):
         """Sets the fax of this QueryCorpBasicResultDTO.
 
-        传真号码
+        传真号码。
 
         :param fax: The fax of this QueryCorpBasicResultDTO.
         :type fax: str
@@ -186,7 +186,7 @@ class QueryCorpBasicResultDTO:
     def email(self):
         """Gets the email of this QueryCorpBasicResultDTO.
 
-        邮箱地址
+        邮箱地址。
 
         :return: The email of this QueryCorpBasicResultDTO.
         :rtype: str
@@ -197,7 +197,7 @@ class QueryCorpBasicResultDTO:
     def email(self, email):
         """Sets the email of this QueryCorpBasicResultDTO.
 
-        邮箱地址
+        邮箱地址。
 
         :param email: The email of this QueryCorpBasicResultDTO.
         :type email: str
@@ -208,7 +208,7 @@ class QueryCorpBasicResultDTO:
     def address(self):
         """Gets the address of this QueryCorpBasicResultDTO.
 
-        地址
+        地址。
 
         :return: The address of this QueryCorpBasicResultDTO.
         :rtype: str
@@ -219,7 +219,7 @@ class QueryCorpBasicResultDTO:
     def address(self, address):
         """Sets the address of this QueryCorpBasicResultDTO.
 
-        地址
+        地址。
 
         :param address: The address of this QueryCorpBasicResultDTO.
         :type address: str
@@ -230,7 +230,7 @@ class QueryCorpBasicResultDTO:
     def description(self):
         """Gets the description of this QueryCorpBasicResultDTO.
 
-        备注
+        备注。
 
         :return: The description of this QueryCorpBasicResultDTO.
         :rtype: str
@@ -241,7 +241,7 @@ class QueryCorpBasicResultDTO:
     def description(self, description):
         """Sets the description of this QueryCorpBasicResultDTO.
 
-        备注
+        备注。
 
         :param description: The description of this QueryCorpBasicResultDTO.
         :type description: str
@@ -252,7 +252,7 @@ class QueryCorpBasicResultDTO:
     def sp_id(self):
         """Gets the sp_id of this QueryCorpBasicResultDTO.
 
-        企业所属spId
+        企业所属SP ID。
 
         :return: The sp_id of this QueryCorpBasicResultDTO.
         :rtype: str
@@ -263,7 +263,7 @@ class QueryCorpBasicResultDTO:
     def sp_id(self, sp_id):
         """Sets the sp_id of this QueryCorpBasicResultDTO.
 
-        企业所属spId
+        企业所属SP ID。
 
         :param sp_id: The sp_id of this QueryCorpBasicResultDTO.
         :type sp_id: str

@@ -33,7 +33,7 @@ class AddMaterialRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param file: 素材文件 - 只能上传jpg/jpeg/png格式文件，分辨率比率16:9，最大分辨率为3840*2160（推荐） - 请先命名完图片名称再上传
+        :param file: 素材文件。 - 只能上传jpg/jpeg/png格式文件，分辨率比率16:9，最大分辨率为3840*2160（推荐） - 请先命名完图片名称再上传
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`
         """
         
@@ -48,7 +48,7 @@ class AddMaterialRequestBody:
     def file(self):
         """Gets the file of this AddMaterialRequestBody.
 
-        素材文件 - 只能上传jpg/jpeg/png格式文件，分辨率比率16:9，最大分辨率为3840*2160（推荐） - 请先命名完图片名称再上传
+        素材文件。 - 只能上传jpg/jpeg/png格式文件，分辨率比率16:9，最大分辨率为3840*2160（推荐） - 请先命名完图片名称再上传
 
         :return: The file of this AddMaterialRequestBody.
         :rtype: :class:`huaweicloudsdkcore.http.formdata.FormFile`
@@ -59,7 +59,7 @@ class AddMaterialRequestBody:
     def file(self, file):
         """Sets the file of this AddMaterialRequestBody.
 
-        素材文件 - 只能上传jpg/jpeg/png格式文件，分辨率比率16:9，最大分辨率为3840*2160（推荐） - 请先命名完图片名称再上传
+        素材文件。 - 只能上传jpg/jpeg/png格式文件，分辨率比率16:9，最大分辨率为3840*2160（推荐） - 请先命名完图片名称再上传
 
         :param file: The file of this AddMaterialRequestBody.
         :type file: :class:`huaweicloudsdkcore.http.formdata.FormFile`

@@ -49,7 +49,7 @@ class QueryCorpResultDTO:
         :type res_info: :class:`huaweicloudsdkmeeting.v1.QueryCorpResResultDTO`
         :param group_dto: 
         :type group_dto: :class:`huaweicloudsdkmeeting.v1.OrgGroupDTO`
-        :param id: 企业id
+        :param id: 企业id。
         :type id: str
         """
         
@@ -157,7 +157,7 @@ class QueryCorpResultDTO:
     def id(self):
         """Gets the id of this QueryCorpResultDTO.
 
-        企业id
+        企业id。
 
         :return: The id of this QueryCorpResultDTO.
         :rtype: str
@@ -168,7 +168,7 @@ class QueryCorpResultDTO:
     def id(self, id):
         """Sets the id of this QueryCorpResultDTO.
 
-        企业id
+        企业id。
 
         :param id: The id of this QueryCorpResultDTO.
         :type id: str

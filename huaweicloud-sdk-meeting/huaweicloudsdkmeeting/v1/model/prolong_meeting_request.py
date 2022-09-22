@@ -37,9 +37,9 @@ class ProlongMeetingRequest:
 
         The model defined in huaweicloud sdk
 
-        :param conference_id: 会议ID
+        :param conference_id: 会议ID。
         :type conference_id: str
-        :param x_conference_authorization: 会控授权令牌，通过获取会控token接口获得。
+        :param x_conference_authorization: 会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
         :type x_conference_authorization: str
         :param body: Body of the ProlongMeetingRequest
         :type body: :class:`huaweicloudsdkmeeting.v1.RestProlongDurReqBody`
@@ -61,7 +61,7 @@ class ProlongMeetingRequest:
     def conference_id(self):
         """Gets the conference_id of this ProlongMeetingRequest.
 
-        会议ID
+        会议ID。
 
         :return: The conference_id of this ProlongMeetingRequest.
         :rtype: str
@@ -72,7 +72,7 @@ class ProlongMeetingRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this ProlongMeetingRequest.
 
-        会议ID
+        会议ID。
 
         :param conference_id: The conference_id of this ProlongMeetingRequest.
         :type conference_id: str
@@ -83,7 +83,7 @@ class ProlongMeetingRequest:
     def x_conference_authorization(self):
         """Gets the x_conference_authorization of this ProlongMeetingRequest.
 
-        会控授权令牌，通过获取会控token接口获得。
+        会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
         :return: The x_conference_authorization of this ProlongMeetingRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class ProlongMeetingRequest:
     def x_conference_authorization(self, x_conference_authorization):
         """Sets the x_conference_authorization of this ProlongMeetingRequest.
 
-        会控授权令牌，通过获取会控token接口获得。
+        会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
         :param x_conference_authorization: The x_conference_authorization of this ProlongMeetingRequest.
         :type x_conference_authorization: str

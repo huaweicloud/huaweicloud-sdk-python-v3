@@ -33,7 +33,7 @@ class RestCancelSingleRecordCycleConfListReqBody:
 
         The model defined in huaweicloud sdk
 
-        :param cycle_sub_conf_i_ds: 待删除的子会议标识列表
+        :param cycle_sub_conf_i_ds: 待删除的子会议UUID列表。
         :type cycle_sub_conf_i_ds: list[str]
         """
         
@@ -48,7 +48,7 @@ class RestCancelSingleRecordCycleConfListReqBody:
     def cycle_sub_conf_i_ds(self):
         """Gets the cycle_sub_conf_i_ds of this RestCancelSingleRecordCycleConfListReqBody.
 
-        待删除的子会议标识列表
+        待删除的子会议UUID列表。
 
         :return: The cycle_sub_conf_i_ds of this RestCancelSingleRecordCycleConfListReqBody.
         :rtype: list[str]
@@ -59,7 +59,7 @@ class RestCancelSingleRecordCycleConfListReqBody:
     def cycle_sub_conf_i_ds(self, cycle_sub_conf_i_ds):
         """Sets the cycle_sub_conf_i_ds of this RestCancelSingleRecordCycleConfListReqBody.
 
-        待删除的子会议标识列表
+        待删除的子会议UUID列表。
 
         :param cycle_sub_conf_i_ds: The cycle_sub_conf_i_ds of this RestCancelSingleRecordCycleConfListReqBody.
         :type cycle_sub_conf_i_ds: list[str]

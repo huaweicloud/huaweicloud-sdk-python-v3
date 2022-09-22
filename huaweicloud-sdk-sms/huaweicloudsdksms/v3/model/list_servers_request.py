@@ -51,7 +51,7 @@ class ListServersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param state: 源端服务器状态
+        :param state: 源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成
         :type state: str
         :param name: 源端服务器名称
         :type name: str
@@ -59,17 +59,17 @@ class ListServersRequest:
         :type id: str
         :param ip: 源端服务器IP地址
         :type ip: str
-        :param migproject: 迁移项目id，填写该参数将查询迁移项目下的所有虚拟机
+        :param migproject: 迁移项目ID，填写该参数将查询迁移项目下的所有虚拟机
         :type migproject: str
         :param limit: 每一页记录的源端服务器数量，0表示用默认值 200
         :type limit: int
         :param offset: 偏移量，默认值0
         :type offset: int
-        :param migration_cycle: 根据迁移周期查询
+        :param migration_cycle: checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 cutovering:启动目的端中 cutovered:启动目的端完成
         :type migration_cycle: str
         :param connected: 查询失去连接的源端
         :type connected: bool
-        :param enterprise_project_id: 需要查询的企业项目id
+        :param enterprise_project_id: 需要查询的企业项目ID
         :type enterprise_project_id: str
         """
         
@@ -112,7 +112,7 @@ class ListServersRequest:
     def state(self):
         """Gets the state of this ListServersRequest.
 
-        源端服务器状态
+        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成
 
         :return: The state of this ListServersRequest.
         :rtype: str
@@ -123,7 +123,7 @@ class ListServersRequest:
     def state(self, state):
         """Sets the state of this ListServersRequest.
 
-        源端服务器状态
+        源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 deleting：删除中 error：错误 cloning：等待克隆完成 cutovering：启动目的端中 finished：启动目的端完成
 
         :param state: The state of this ListServersRequest.
         :type state: str
@@ -200,7 +200,7 @@ class ListServersRequest:
     def migproject(self):
         """Gets the migproject of this ListServersRequest.
 
-        迁移项目id，填写该参数将查询迁移项目下的所有虚拟机
+        迁移项目ID，填写该参数将查询迁移项目下的所有虚拟机
 
         :return: The migproject of this ListServersRequest.
         :rtype: str
@@ -211,7 +211,7 @@ class ListServersRequest:
     def migproject(self, migproject):
         """Sets the migproject of this ListServersRequest.
 
-        迁移项目id，填写该参数将查询迁移项目下的所有虚拟机
+        迁移项目ID，填写该参数将查询迁移项目下的所有虚拟机
 
         :param migproject: The migproject of this ListServersRequest.
         :type migproject: str
@@ -266,7 +266,7 @@ class ListServersRequest:
     def migration_cycle(self):
         """Gets the migration_cycle of this ListServersRequest.
 
-        根据迁移周期查询
+        checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 cutovering:启动目的端中 cutovered:启动目的端完成
 
         :return: The migration_cycle of this ListServersRequest.
         :rtype: str
@@ -277,7 +277,7 @@ class ListServersRequest:
     def migration_cycle(self, migration_cycle):
         """Sets the migration_cycle of this ListServersRequest.
 
-        根据迁移周期查询
+        checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 cutovering:启动目的端中 cutovered:启动目的端完成
 
         :param migration_cycle: The migration_cycle of this ListServersRequest.
         :type migration_cycle: str
@@ -310,7 +310,7 @@ class ListServersRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListServersRequest.
 
-        需要查询的企业项目id
+        需要查询的企业项目ID
 
         :return: The enterprise_project_id of this ListServersRequest.
         :rtype: str
@@ -321,7 +321,7 @@ class ListServersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListServersRequest.
 
-        需要查询的企业项目id
+        需要查询的企业项目ID
 
         :param enterprise_project_id: The enterprise_project_id of this ListServersRequest.
         :type enterprise_project_id: str

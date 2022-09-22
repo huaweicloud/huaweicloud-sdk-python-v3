@@ -37,7 +37,7 @@ class Pages:
 
         The model defined in huaweicloud sdk
 
-        :param offset: 页面起始页，从0开始
+        :param offset: 页面起始页，从0开始。
         :type offset: int
         :param limit: 每页显示的条目数量。 默认值：10。 
         :type limit: int
@@ -63,7 +63,7 @@ class Pages:
     def offset(self):
         """Gets the offset of this Pages.
 
-        页面起始页，从0开始
+        页面起始页，从0开始。
 
         :return: The offset of this Pages.
         :rtype: int
@@ -74,7 +74,7 @@ class Pages:
     def offset(self, offset):
         """Sets the offset of this Pages.
 
-        页面起始页，从0开始
+        页面起始页，从0开始。
 
         :param offset: The offset of this Pages.
         :type offset: int

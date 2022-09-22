@@ -71,23 +71,23 @@ class UserDTO:
         :type id: str
         :param status_code: 查询用户详情时, 根据不同情况，响应不同。 * 0： 查询成功且用户信息有变化， 响应会把新的信息都返回回去 * 1 ：查询成功且用户信息没有变化，响应只会返回用户ID * 2 ：用户不存在 * 3 ：无权限查询这个用户 
         :type status_code: int
-        :param account: 用户账号。
+        :param account: 用户帐号。
         :type account: str
         :param name: 用户名。
         :type name: str
         :param english_name: 英文名。
         :type english_name: str
-        :param email: 邮箱。
+        :param email: 邮箱地址。
         :type email: str
         :param phone: 用户手机。
         :type phone: str
         :param dept_name: 用户部门。
         :type dept_name: str
-        :param number: 用户号码。
+        :param number: 用户SIP号码。
         :type number: str
         :param update_time: 用户信息最后更新时间。
         :type update_time: int
-        :param is_hard_terminal: 是否为硬终端。
+        :param is_hard_terminal: 是否为硬终端。 &gt; 该参数将被废弃，请勿使用。 
         :type is_hard_terminal: bool
         :param vmr_id: 用户虚拟会议室ID。
         :type vmr_id: str
@@ -101,7 +101,7 @@ class UserDTO:
         :type hide_phone: bool
         :param type: 类型： * NORMAL_USER&#x3D;普通用户 * HARD_TERMINAL&#x3D;硬终端用户 * WHITE_BOARD&#x3D;第三方白板 * HW_VISION_MEMBER&#x3D;智慧屏 
         :type type: str
-        :param dept_codes: 部门编码列表
+        :param dept_codes: 部门编码列表。
         :type dept_codes: list[str]
         """
         
@@ -212,7 +212,7 @@ class UserDTO:
     def account(self):
         """Gets the account of this UserDTO.
 
-        用户账号。
+        用户帐号。
 
         :return: The account of this UserDTO.
         :rtype: str
@@ -223,7 +223,7 @@ class UserDTO:
     def account(self, account):
         """Sets the account of this UserDTO.
 
-        用户账号。
+        用户帐号。
 
         :param account: The account of this UserDTO.
         :type account: str
@@ -278,7 +278,7 @@ class UserDTO:
     def email(self):
         """Gets the email of this UserDTO.
 
-        邮箱。
+        邮箱地址。
 
         :return: The email of this UserDTO.
         :rtype: str
@@ -289,7 +289,7 @@ class UserDTO:
     def email(self, email):
         """Sets the email of this UserDTO.
 
-        邮箱。
+        邮箱地址。
 
         :param email: The email of this UserDTO.
         :type email: str
@@ -344,7 +344,7 @@ class UserDTO:
     def number(self):
         """Gets the number of this UserDTO.
 
-        用户号码。
+        用户SIP号码。
 
         :return: The number of this UserDTO.
         :rtype: str
@@ -355,7 +355,7 @@ class UserDTO:
     def number(self, number):
         """Sets the number of this UserDTO.
 
-        用户号码。
+        用户SIP号码。
 
         :param number: The number of this UserDTO.
         :type number: str
@@ -388,7 +388,7 @@ class UserDTO:
     def is_hard_terminal(self):
         """Gets the is_hard_terminal of this UserDTO.
 
-        是否为硬终端。
+        是否为硬终端。 > 该参数将被废弃，请勿使用。 
 
         :return: The is_hard_terminal of this UserDTO.
         :rtype: bool
@@ -399,7 +399,7 @@ class UserDTO:
     def is_hard_terminal(self, is_hard_terminal):
         """Sets the is_hard_terminal of this UserDTO.
 
-        是否为硬终端。
+        是否为硬终端。 > 该参数将被废弃，请勿使用。 
 
         :param is_hard_terminal: The is_hard_terminal of this UserDTO.
         :type is_hard_terminal: bool
@@ -542,7 +542,7 @@ class UserDTO:
     def dept_codes(self):
         """Gets the dept_codes of this UserDTO.
 
-        部门编码列表
+        部门编码列表。
 
         :return: The dept_codes of this UserDTO.
         :rtype: list[str]
@@ -553,7 +553,7 @@ class UserDTO:
     def dept_codes(self, dept_codes):
         """Sets the dept_codes of this UserDTO.
 
-        部门编码列表
+        部门编码列表。
 
         :param dept_codes: The dept_codes of this UserDTO.
         :type dept_codes: list[str]

@@ -45,19 +45,19 @@ class ModDeptDTO:
 
         The model defined in huaweicloud sdk
 
-        :param dept_name: 部门名称 maxLength：128 minLength：1
+        :param dept_name: 部门名称。
         :type dept_name: str
-        :param parent_dept_code: 父部门编码 maxLength：32
+        :param parent_dept_code: 父部门编码。
         :type parent_dept_code: str
-        :param note: 备注 maxLength：96 minLength：0
+        :param note: 备注。
         :type note: str
         :param in_permission: 其他用户对该部门下用户的访问权限： - UNLIMITED：默认，不做限制 - OPEN：公开，其他部门都可访问（无论对方权限如何配置） - CLOSE：隐藏，其他部门不可访问（暂未实现） - DESIGNATED_DEPARTMENT：指定部门能访问（暂未实现）
         :type in_permission: str
-        :param out_permission: 该部门下用户访问权限控制 - UNLIMITED：不限制 - ONLY_SELF：仅能查询自己 - SELF_AND_CHILD_DEPARTMENT：该部门下用户能查询本部门及子部门通讯 - DESIGNATED_DEPARTMENT：该部门下用户能查询指定部门通讯录
+        :param out_permission: 该部门下用户访问权限控制。 - UNLIMITED：不限制 - ONLY_SELF：仅能查询自己 - SELF_AND_CHILD_DEPARTMENT：该部门下用户能查询本部门及子部门通讯 - DESIGNATED_DEPARTMENT：该部门下用户能查询指定部门通讯录
         :type out_permission: str
-        :param designated_out_dept_codes: 允许访问的部门列表,仅outPermission为DESIGNATED_DEPARTMENT时有效，最多支持配置150
+        :param designated_out_dept_codes: 允许访问的部门列表,仅outPermission为DESIGNATED_DEPARTMENT时有效，最多支持配置150个部门。
         :type designated_out_dept_codes: list[str]
-        :param sort_level: 部门排序号，序号越小,部门排序越靠前 minimum: 1 maximum: 10000
+        :param sort_level: 部门排序号，序号越小,部门排序越靠前。
         :type sort_level: int
         """
         
@@ -91,7 +91,7 @@ class ModDeptDTO:
     def dept_name(self):
         """Gets the dept_name of this ModDeptDTO.
 
-        部门名称 maxLength：128 minLength：1
+        部门名称。
 
         :return: The dept_name of this ModDeptDTO.
         :rtype: str
@@ -102,7 +102,7 @@ class ModDeptDTO:
     def dept_name(self, dept_name):
         """Sets the dept_name of this ModDeptDTO.
 
-        部门名称 maxLength：128 minLength：1
+        部门名称。
 
         :param dept_name: The dept_name of this ModDeptDTO.
         :type dept_name: str
@@ -113,7 +113,7 @@ class ModDeptDTO:
     def parent_dept_code(self):
         """Gets the parent_dept_code of this ModDeptDTO.
 
-        父部门编码 maxLength：32
+        父部门编码。
 
         :return: The parent_dept_code of this ModDeptDTO.
         :rtype: str
@@ -124,7 +124,7 @@ class ModDeptDTO:
     def parent_dept_code(self, parent_dept_code):
         """Sets the parent_dept_code of this ModDeptDTO.
 
-        父部门编码 maxLength：32
+        父部门编码。
 
         :param parent_dept_code: The parent_dept_code of this ModDeptDTO.
         :type parent_dept_code: str
@@ -135,7 +135,7 @@ class ModDeptDTO:
     def note(self):
         """Gets the note of this ModDeptDTO.
 
-        备注 maxLength：96 minLength：0
+        备注。
 
         :return: The note of this ModDeptDTO.
         :rtype: str
@@ -146,7 +146,7 @@ class ModDeptDTO:
     def note(self, note):
         """Sets the note of this ModDeptDTO.
 
-        备注 maxLength：96 minLength：0
+        备注。
 
         :param note: The note of this ModDeptDTO.
         :type note: str
@@ -179,7 +179,7 @@ class ModDeptDTO:
     def out_permission(self):
         """Gets the out_permission of this ModDeptDTO.
 
-        该部门下用户访问权限控制 - UNLIMITED：不限制 - ONLY_SELF：仅能查询自己 - SELF_AND_CHILD_DEPARTMENT：该部门下用户能查询本部门及子部门通讯 - DESIGNATED_DEPARTMENT：该部门下用户能查询指定部门通讯录
+        该部门下用户访问权限控制。 - UNLIMITED：不限制 - ONLY_SELF：仅能查询自己 - SELF_AND_CHILD_DEPARTMENT：该部门下用户能查询本部门及子部门通讯 - DESIGNATED_DEPARTMENT：该部门下用户能查询指定部门通讯录
 
         :return: The out_permission of this ModDeptDTO.
         :rtype: str
@@ -190,7 +190,7 @@ class ModDeptDTO:
     def out_permission(self, out_permission):
         """Sets the out_permission of this ModDeptDTO.
 
-        该部门下用户访问权限控制 - UNLIMITED：不限制 - ONLY_SELF：仅能查询自己 - SELF_AND_CHILD_DEPARTMENT：该部门下用户能查询本部门及子部门通讯 - DESIGNATED_DEPARTMENT：该部门下用户能查询指定部门通讯录
+        该部门下用户访问权限控制。 - UNLIMITED：不限制 - ONLY_SELF：仅能查询自己 - SELF_AND_CHILD_DEPARTMENT：该部门下用户能查询本部门及子部门通讯 - DESIGNATED_DEPARTMENT：该部门下用户能查询指定部门通讯录
 
         :param out_permission: The out_permission of this ModDeptDTO.
         :type out_permission: str
@@ -201,7 +201,7 @@ class ModDeptDTO:
     def designated_out_dept_codes(self):
         """Gets the designated_out_dept_codes of this ModDeptDTO.
 
-        允许访问的部门列表,仅outPermission为DESIGNATED_DEPARTMENT时有效，最多支持配置150
+        允许访问的部门列表,仅outPermission为DESIGNATED_DEPARTMENT时有效，最多支持配置150个部门。
 
         :return: The designated_out_dept_codes of this ModDeptDTO.
         :rtype: list[str]
@@ -212,7 +212,7 @@ class ModDeptDTO:
     def designated_out_dept_codes(self, designated_out_dept_codes):
         """Sets the designated_out_dept_codes of this ModDeptDTO.
 
-        允许访问的部门列表,仅outPermission为DESIGNATED_DEPARTMENT时有效，最多支持配置150
+        允许访问的部门列表,仅outPermission为DESIGNATED_DEPARTMENT时有效，最多支持配置150个部门。
 
         :param designated_out_dept_codes: The designated_out_dept_codes of this ModDeptDTO.
         :type designated_out_dept_codes: list[str]
@@ -223,7 +223,7 @@ class ModDeptDTO:
     def sort_level(self):
         """Gets the sort_level of this ModDeptDTO.
 
-        部门排序号，序号越小,部门排序越靠前 minimum: 1 maximum: 10000
+        部门排序号，序号越小,部门排序越靠前。
 
         :return: The sort_level of this ModDeptDTO.
         :rtype: int
@@ -234,7 +234,7 @@ class ModDeptDTO:
     def sort_level(self, sort_level):
         """Sets the sort_level of this ModDeptDTO.
 
-        部门排序号，序号越小,部门排序越靠前 minimum: 1 maximum: 10000
+        部门排序号，序号越小,部门排序越靠前。
 
         :param sort_level: The sort_level of this ModDeptDTO.
         :type sort_level: int

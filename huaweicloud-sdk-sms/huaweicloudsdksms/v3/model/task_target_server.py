@@ -61,7 +61,7 @@ class TaskTargetServer:
         :type vm_id: str
         :param name: 目的端服务器的名称
         :type name: str
-        :param ip: 目的端服务器ip
+        :param ip: 目的端服务器IP
         :type ip: str
         :param os_type: 源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
         :type os_type: str
@@ -75,9 +75,9 @@ class TaskTargetServer:
         :type volume_groups: list[:class:`huaweicloudsdksms.v3.VolumeGroups`]
         :param btrfs_list: Linux 必选，源端的Btrfs信息。如果源端不存在Btrfs，则为[]
         :type btrfs_list: list[str]
-        :param image_disk_id: 目的端代理镜像磁盘id
+        :param image_disk_id: 目的端代理镜像磁盘ID
         :type image_disk_id: str
-        :param cutovered_snapshot_ids: 目的端回滚快照id
+        :param cutovered_snapshot_ids: 目的端回滚快照ID
         :type cutovered_snapshot_ids: str
         """
         
@@ -191,7 +191,7 @@ class TaskTargetServer:
     def ip(self):
         """Gets the ip of this TaskTargetServer.
 
-        目的端服务器ip
+        目的端服务器IP
 
         :return: The ip of this TaskTargetServer.
         :rtype: str
@@ -202,7 +202,7 @@ class TaskTargetServer:
     def ip(self, ip):
         """Sets the ip of this TaskTargetServer.
 
-        目的端服务器ip
+        目的端服务器IP
 
         :param ip: The ip of this TaskTargetServer.
         :type ip: str
@@ -345,7 +345,7 @@ class TaskTargetServer:
     def image_disk_id(self):
         """Gets the image_disk_id of this TaskTargetServer.
 
-        目的端代理镜像磁盘id
+        目的端代理镜像磁盘ID
 
         :return: The image_disk_id of this TaskTargetServer.
         :rtype: str
@@ -356,7 +356,7 @@ class TaskTargetServer:
     def image_disk_id(self, image_disk_id):
         """Sets the image_disk_id of this TaskTargetServer.
 
-        目的端代理镜像磁盘id
+        目的端代理镜像磁盘ID
 
         :param image_disk_id: The image_disk_id of this TaskTargetServer.
         :type image_disk_id: str
@@ -367,7 +367,7 @@ class TaskTargetServer:
     def cutovered_snapshot_ids(self):
         """Gets the cutovered_snapshot_ids of this TaskTargetServer.
 
-        目的端回滚快照id
+        目的端回滚快照ID
 
         :return: The cutovered_snapshot_ids of this TaskTargetServer.
         :rtype: str
@@ -378,7 +378,7 @@ class TaskTargetServer:
     def cutovered_snapshot_ids(self, cutovered_snapshot_ids):
         """Sets the cutovered_snapshot_ids of this TaskTargetServer.
 
-        目的端回滚快照id
+        目的端回滚快照ID
 
         :param cutovered_snapshot_ids: The cutovered_snapshot_ids of this TaskTargetServer.
         :type cutovered_snapshot_ids: str

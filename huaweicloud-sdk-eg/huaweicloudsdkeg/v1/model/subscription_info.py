@@ -53,15 +53,15 @@ class SubscriptionInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 事件订阅ID
+        :param id: 订阅ID
         :type id: str
-        :param name: 事件订阅名称
+        :param name: 订阅名称
         :type name: str
-        :param description: 事件订阅描述
+        :param description: 订阅描述
         :type description: str
-        :param type: 事件订阅类型
+        :param type: 类型
         :type type: str
-        :param status: 事件订阅状态
+        :param status: 状态
         :type status: str
         :param channel_id: 通道ID
         :type channel_id: str
@@ -119,7 +119,7 @@ class SubscriptionInfo:
     def id(self):
         """Gets the id of this SubscriptionInfo.
 
-        事件订阅ID
+        订阅ID
 
         :return: The id of this SubscriptionInfo.
         :rtype: str
@@ -130,7 +130,7 @@ class SubscriptionInfo:
     def id(self, id):
         """Sets the id of this SubscriptionInfo.
 
-        事件订阅ID
+        订阅ID
 
         :param id: The id of this SubscriptionInfo.
         :type id: str
@@ -141,7 +141,7 @@ class SubscriptionInfo:
     def name(self):
         """Gets the name of this SubscriptionInfo.
 
-        事件订阅名称
+        订阅名称
 
         :return: The name of this SubscriptionInfo.
         :rtype: str
@@ -152,7 +152,7 @@ class SubscriptionInfo:
     def name(self, name):
         """Sets the name of this SubscriptionInfo.
 
-        事件订阅名称
+        订阅名称
 
         :param name: The name of this SubscriptionInfo.
         :type name: str
@@ -163,7 +163,7 @@ class SubscriptionInfo:
     def description(self):
         """Gets the description of this SubscriptionInfo.
 
-        事件订阅描述
+        订阅描述
 
         :return: The description of this SubscriptionInfo.
         :rtype: str
@@ -174,7 +174,7 @@ class SubscriptionInfo:
     def description(self, description):
         """Sets the description of this SubscriptionInfo.
 
-        事件订阅描述
+        订阅描述
 
         :param description: The description of this SubscriptionInfo.
         :type description: str
@@ -185,7 +185,7 @@ class SubscriptionInfo:
     def type(self):
         """Gets the type of this SubscriptionInfo.
 
-        事件订阅类型
+        类型
 
         :return: The type of this SubscriptionInfo.
         :rtype: str
@@ -196,7 +196,7 @@ class SubscriptionInfo:
     def type(self, type):
         """Sets the type of this SubscriptionInfo.
 
-        事件订阅类型
+        类型
 
         :param type: The type of this SubscriptionInfo.
         :type type: str
@@ -207,7 +207,7 @@ class SubscriptionInfo:
     def status(self):
         """Gets the status of this SubscriptionInfo.
 
-        事件订阅状态
+        状态
 
         :return: The status of this SubscriptionInfo.
         :rtype: str
@@ -218,7 +218,7 @@ class SubscriptionInfo:
     def status(self, status):
         """Sets the status of this SubscriptionInfo.
 
-        事件订阅状态
+        状态
 
         :param status: The status of this SubscriptionInfo.
         :type status: str

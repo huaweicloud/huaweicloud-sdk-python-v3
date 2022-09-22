@@ -45,7 +45,7 @@ class SearchQosParticipantsResponse(SdkResponse):
         :type limit: int
         :param offset: 查询偏移量。
         :type offset: int
-        :param data: QoS会议与会者列表。
+        :param data: 会议与会者QoS告警列表。
         :type data: list[:class:`huaweicloudsdkmeeting.v1.QosParticipantInfo`]
         """
         
@@ -136,7 +136,7 @@ class SearchQosParticipantsResponse(SdkResponse):
     def data(self):
         """Gets the data of this SearchQosParticipantsResponse.
 
-        QoS会议与会者列表。
+        会议与会者QoS告警列表。
 
         :return: The data of this SearchQosParticipantsResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.QosParticipantInfo`]
@@ -147,7 +147,7 @@ class SearchQosParticipantsResponse(SdkResponse):
     def data(self, data):
         """Sets the data of this SearchQosParticipantsResponse.
 
-        QoS会议与会者列表。
+        会议与会者QoS告警列表。
 
         :param data: The data of this SearchQosParticipantsResponse.
         :type data: list[:class:`huaweicloudsdkmeeting.v1.QosParticipantInfo`]

@@ -57,27 +57,27 @@ class Attendee:
 
         :param user_uuid: 与会者的用户UUID。
         :type user_uuid: str
-        :param account_id: 与会者帐号，兼容终端老版本。如果没有携带userUUID，就通过accountId查询用户信息。
+        :param account_id: 与会者的华为云会议帐号。
         :type account_id: str
-        :param name: 与会者名称或昵称，长度限制为96个字符。
+        :param name: 与会者名称，长度限制为96个字符。
         :type name: str
-        :param role: 会议中的角色。 - 0: 普通与会者。 - 1: 会议主席。 - 2: 预留字段，暂不对外开放。 default: 0
+        :param role: 会议中的角色。默认为普通与会者。 - 0: 普通与会者 - 1: 会议主持人
         :type role: int
-        :param phone: 电话号码(可支持SIP、TEL号码格式)。最大不超过127个字符。phone、email和sms三者需至少填写一个。当type为telepresence时，且设备为三屏智真，则该字段填写中屏号码。
+        :param phone: 号码。支持SIP号码或者手机号码。 &gt; * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 &gt; * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 &gt; * 呼叫手机需要开通PSTN权限，否则无法呼叫 
         :type phone: str
-        :param phone2: 预留字段，取值类型同phone。当type为telepresence时，且设备为三屏智真，则该字段填写左屏号码
+        :param phone2: 预留字段，取值类型同参数“phone”。
         :type phone2: str
-        :param phone3: 预留字段，取值类型同phone。当type为telepresence时，且设备为三屏智真，则该字段填写右屏号码
+        :param phone3: 预留字段，取值类型同参数“phone”。
         :type phone3: str
-        :param email: 邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个。
+        :param email: 邮件地址。 &gt; 会中邀请不发会议通知，不用填写。 
         :type email: str
-        :param sms: 短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。
+        :param sms: 短信通知的手机号码。 &gt; 会中邀请不发会议通知，不用填写。 
         :type sms: str
-        :param type: 默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 软终端用户固定电话，暂不使用。
+        :param type: 终端类型，类型枚举如下： * normal：软终端 * terminal：硬终端 * outside：外部与会人 * mobile：用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms）。含Maxhub、海信大屏、IdeaHub B2hwvision：华为智慧屏TV
         :type type: str
-        :param dept_uuid: 部门ID。最大不超过64个字符。
+        :param dept_uuid: 部门编码。
         :type dept_uuid: str
-        :param dept_name: 部门名称。最大不超过128个字符。
+        :param dept_name: 部门名称。
         :type dept_name: str
         """
         
@@ -145,7 +145,7 @@ class Attendee:
     def account_id(self):
         """Gets the account_id of this Attendee.
 
-        与会者帐号，兼容终端老版本。如果没有携带userUUID，就通过accountId查询用户信息。
+        与会者的华为云会议帐号。
 
         :return: The account_id of this Attendee.
         :rtype: str
@@ -156,7 +156,7 @@ class Attendee:
     def account_id(self, account_id):
         """Sets the account_id of this Attendee.
 
-        与会者帐号，兼容终端老版本。如果没有携带userUUID，就通过accountId查询用户信息。
+        与会者的华为云会议帐号。
 
         :param account_id: The account_id of this Attendee.
         :type account_id: str
@@ -167,7 +167,7 @@ class Attendee:
     def name(self):
         """Gets the name of this Attendee.
 
-        与会者名称或昵称，长度限制为96个字符。
+        与会者名称，长度限制为96个字符。
 
         :return: The name of this Attendee.
         :rtype: str
@@ -178,7 +178,7 @@ class Attendee:
     def name(self, name):
         """Sets the name of this Attendee.
 
-        与会者名称或昵称，长度限制为96个字符。
+        与会者名称，长度限制为96个字符。
 
         :param name: The name of this Attendee.
         :type name: str
@@ -189,7 +189,7 @@ class Attendee:
     def role(self):
         """Gets the role of this Attendee.
 
-        会议中的角色。 - 0: 普通与会者。 - 1: 会议主席。 - 2: 预留字段，暂不对外开放。 default: 0
+        会议中的角色。默认为普通与会者。 - 0: 普通与会者 - 1: 会议主持人
 
         :return: The role of this Attendee.
         :rtype: int
@@ -200,7 +200,7 @@ class Attendee:
     def role(self, role):
         """Sets the role of this Attendee.
 
-        会议中的角色。 - 0: 普通与会者。 - 1: 会议主席。 - 2: 预留字段，暂不对外开放。 default: 0
+        会议中的角色。默认为普通与会者。 - 0: 普通与会者 - 1: 会议主持人
 
         :param role: The role of this Attendee.
         :type role: int
@@ -211,7 +211,7 @@ class Attendee:
     def phone(self):
         """Gets the phone of this Attendee.
 
-        电话号码(可支持SIP、TEL号码格式)。最大不超过127个字符。phone、email和sms三者需至少填写一个。当type为telepresence时，且设备为三屏智真，则该字段填写中屏号码。
+        号码。支持SIP号码或者手机号码。 > * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 > * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 > * 呼叫手机需要开通PSTN权限，否则无法呼叫 
 
         :return: The phone of this Attendee.
         :rtype: str
@@ -222,7 +222,7 @@ class Attendee:
     def phone(self, phone):
         """Sets the phone of this Attendee.
 
-        电话号码(可支持SIP、TEL号码格式)。最大不超过127个字符。phone、email和sms三者需至少填写一个。当type为telepresence时，且设备为三屏智真，则该字段填写中屏号码。
+        号码。支持SIP号码或者手机号码。 > * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 > * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 > * 呼叫手机需要开通PSTN权限，否则无法呼叫 
 
         :param phone: The phone of this Attendee.
         :type phone: str
@@ -233,7 +233,7 @@ class Attendee:
     def phone2(self):
         """Gets the phone2 of this Attendee.
 
-        预留字段，取值类型同phone。当type为telepresence时，且设备为三屏智真，则该字段填写左屏号码
+        预留字段，取值类型同参数“phone”。
 
         :return: The phone2 of this Attendee.
         :rtype: str
@@ -244,7 +244,7 @@ class Attendee:
     def phone2(self, phone2):
         """Sets the phone2 of this Attendee.
 
-        预留字段，取值类型同phone。当type为telepresence时，且设备为三屏智真，则该字段填写左屏号码
+        预留字段，取值类型同参数“phone”。
 
         :param phone2: The phone2 of this Attendee.
         :type phone2: str
@@ -255,7 +255,7 @@ class Attendee:
     def phone3(self):
         """Gets the phone3 of this Attendee.
 
-        预留字段，取值类型同phone。当type为telepresence时，且设备为三屏智真，则该字段填写右屏号码
+        预留字段，取值类型同参数“phone”。
 
         :return: The phone3 of this Attendee.
         :rtype: str
@@ -266,7 +266,7 @@ class Attendee:
     def phone3(self, phone3):
         """Sets the phone3 of this Attendee.
 
-        预留字段，取值类型同phone。当type为telepresence时，且设备为三屏智真，则该字段填写右屏号码
+        预留字段，取值类型同参数“phone”。
 
         :param phone3: The phone3 of this Attendee.
         :type phone3: str
@@ -277,7 +277,7 @@ class Attendee:
     def email(self):
         """Gets the email of this Attendee.
 
-        邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个。
+        邮件地址。 > 会中邀请不发会议通知，不用填写。 
 
         :return: The email of this Attendee.
         :rtype: str
@@ -288,7 +288,7 @@ class Attendee:
     def email(self, email):
         """Sets the email of this Attendee.
 
-        邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个。
+        邮件地址。 > 会中邀请不发会议通知，不用填写。 
 
         :param email: The email of this Attendee.
         :type email: str
@@ -299,7 +299,7 @@ class Attendee:
     def sms(self):
         """Gets the sms of this Attendee.
 
-        短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。
+        短信通知的手机号码。 > 会中邀请不发会议通知，不用填写。 
 
         :return: The sms of this Attendee.
         :rtype: str
@@ -310,7 +310,7 @@ class Attendee:
     def sms(self, sms):
         """Sets the sms of this Attendee.
 
-        短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。
+        短信通知的手机号码。 > 会中邀请不发会议通知，不用填写。 
 
         :param sms: The sms of this Attendee.
         :type sms: str
@@ -321,7 +321,7 @@ class Attendee:
     def type(self):
         """Gets the type of this Attendee.
 
-        默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 软终端用户固定电话，暂不使用。
+        终端类型，类型枚举如下： * normal：软终端 * terminal：硬终端 * outside：外部与会人 * mobile：用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms）。含Maxhub、海信大屏、IdeaHub B2hwvision：华为智慧屏TV
 
         :return: The type of this Attendee.
         :rtype: str
@@ -332,7 +332,7 @@ class Attendee:
     def type(self, type):
         """Sets the type of this Attendee.
 
-        默认值由会议AS定义，号码类型枚举如下： - normal: 软终端。 - telepresence: 智真。单屏、三屏智真均属此类。（预留字段） - terminal: 会议室或硬终端。 - outside: 外部与会人。 - mobile: 用户手机号码。 - telephone: 软终端用户固定电话，暂不使用。
+        终端类型，类型枚举如下： * normal：软终端 * terminal：硬终端 * outside：外部与会人 * mobile：用户手机号码 * ideahub：ideahub * board: 电子白板（SmartRooms）。含Maxhub、海信大屏、IdeaHub B2hwvision：华为智慧屏TV
 
         :param type: The type of this Attendee.
         :type type: str
@@ -343,7 +343,7 @@ class Attendee:
     def dept_uuid(self):
         """Gets the dept_uuid of this Attendee.
 
-        部门ID。最大不超过64个字符。
+        部门编码。
 
         :return: The dept_uuid of this Attendee.
         :rtype: str
@@ -354,7 +354,7 @@ class Attendee:
     def dept_uuid(self, dept_uuid):
         """Sets the dept_uuid of this Attendee.
 
-        部门ID。最大不超过64个字符。
+        部门编码。
 
         :param dept_uuid: The dept_uuid of this Attendee.
         :type dept_uuid: str
@@ -365,7 +365,7 @@ class Attendee:
     def dept_name(self):
         """Gets the dept_name of this Attendee.
 
-        部门名称。最大不超过128个字符。
+        部门名称。
 
         :return: The dept_name of this Attendee.
         :rtype: str
@@ -376,7 +376,7 @@ class Attendee:
     def dept_name(self, dept_name):
         """Sets the dept_name of this Attendee.
 
-        部门名称。最大不超过128个字符。
+        部门名称。
 
         :param dept_name: The dept_name of this Attendee.
         :type dept_name: str

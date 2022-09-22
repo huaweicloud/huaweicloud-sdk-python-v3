@@ -41,15 +41,15 @@ class SubPicLayoutInfo:
 
         The model defined in huaweicloud sdk
 
-        :param id: 画面索引号
+        :param id: 多画面信息。
         :type id: int
-        :param left: 画面从左到右的坐标点
+        :param left: 子画面从左到右的索引。
         :type left: int
-        :param top: 画面从上到下的坐标点
+        :param top: 子画面从上到下的索引。
         :type top: int
-        :param x_size: 小画面的宽度
+        :param x_size: 子画面横向尺寸。
         :type x_size: int
-        :param y_size: 小画面的高度
+        :param y_size: 子画面横向尺寸。
         :type y_size: int
         """
         
@@ -77,7 +77,7 @@ class SubPicLayoutInfo:
     def id(self):
         """Gets the id of this SubPicLayoutInfo.
 
-        画面索引号
+        多画面信息。
 
         :return: The id of this SubPicLayoutInfo.
         :rtype: int
@@ -88,7 +88,7 @@ class SubPicLayoutInfo:
     def id(self, id):
         """Sets the id of this SubPicLayoutInfo.
 
-        画面索引号
+        多画面信息。
 
         :param id: The id of this SubPicLayoutInfo.
         :type id: int
@@ -99,7 +99,7 @@ class SubPicLayoutInfo:
     def left(self):
         """Gets the left of this SubPicLayoutInfo.
 
-        画面从左到右的坐标点
+        子画面从左到右的索引。
 
         :return: The left of this SubPicLayoutInfo.
         :rtype: int
@@ -110,7 +110,7 @@ class SubPicLayoutInfo:
     def left(self, left):
         """Sets the left of this SubPicLayoutInfo.
 
-        画面从左到右的坐标点
+        子画面从左到右的索引。
 
         :param left: The left of this SubPicLayoutInfo.
         :type left: int
@@ -121,7 +121,7 @@ class SubPicLayoutInfo:
     def top(self):
         """Gets the top of this SubPicLayoutInfo.
 
-        画面从上到下的坐标点
+        子画面从上到下的索引。
 
         :return: The top of this SubPicLayoutInfo.
         :rtype: int
@@ -132,7 +132,7 @@ class SubPicLayoutInfo:
     def top(self, top):
         """Sets the top of this SubPicLayoutInfo.
 
-        画面从上到下的坐标点
+        子画面从上到下的索引。
 
         :param top: The top of this SubPicLayoutInfo.
         :type top: int
@@ -143,7 +143,7 @@ class SubPicLayoutInfo:
     def x_size(self):
         """Gets the x_size of this SubPicLayoutInfo.
 
-        小画面的宽度
+        子画面横向尺寸。
 
         :return: The x_size of this SubPicLayoutInfo.
         :rtype: int
@@ -154,7 +154,7 @@ class SubPicLayoutInfo:
     def x_size(self, x_size):
         """Sets the x_size of this SubPicLayoutInfo.
 
-        小画面的宽度
+        子画面横向尺寸。
 
         :param x_size: The x_size of this SubPicLayoutInfo.
         :type x_size: int
@@ -165,7 +165,7 @@ class SubPicLayoutInfo:
     def y_size(self):
         """Gets the y_size of this SubPicLayoutInfo.
 
-        小画面的高度
+        子画面横向尺寸。
 
         :return: The y_size of this SubPicLayoutInfo.
         :rtype: int
@@ -176,7 +176,7 @@ class SubPicLayoutInfo:
     def y_size(self, y_size):
         """Sets the y_size of this SubPicLayoutInfo.
 
-        小画面的高度
+        子画面横向尺寸。
 
         :param y_size: The y_size of this SubPicLayoutInfo.
         :type y_size: int

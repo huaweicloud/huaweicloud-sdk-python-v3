@@ -33,7 +33,7 @@ class CreateTaskResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 创建成功返回的任务id
+        :param id: 创建成功返回的任务ID
         :type id: str
         """
         
@@ -49,7 +49,7 @@ class CreateTaskResponse(SdkResponse):
     def id(self):
         """Gets the id of this CreateTaskResponse.
 
-        创建成功返回的任务id
+        创建成功返回的任务ID
 
         :return: The id of this CreateTaskResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class CreateTaskResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this CreateTaskResponse.
 
-        创建成功返回的任务id
+        创建成功返回的任务ID
 
         :param id: The id of this CreateTaskResponse.
         :type id: str

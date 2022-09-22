@@ -33,7 +33,7 @@ class ShowTaskRequest:
 
         The model defined in huaweicloud sdk
 
-        :param task_id: 迁移任务id
+        :param task_id: 迁移任务ID
         :type task_id: str
         """
         
@@ -48,7 +48,7 @@ class ShowTaskRequest:
     def task_id(self):
         """Gets the task_id of this ShowTaskRequest.
 
-        迁移任务id
+        迁移任务ID
 
         :return: The task_id of this ShowTaskRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ShowTaskRequest:
     def task_id(self, task_id):
         """Sets the task_id of this ShowTaskRequest.
 
-        迁移任务id
+        迁移任务ID
 
         :param task_id: The task_id of this ShowTaskRequest.
         :type task_id: str

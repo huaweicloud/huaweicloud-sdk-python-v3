@@ -33,7 +33,7 @@ class ShowConfOrgResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param org_id: 企业ID
+        :param org_id: SP管理员根据会议ID查询该会议归属的企业ID。
         :type org_id: str
         """
         
@@ -49,7 +49,7 @@ class ShowConfOrgResponse(SdkResponse):
     def org_id(self):
         """Gets the org_id of this ShowConfOrgResponse.
 
-        企业ID
+        SP管理员根据会议ID查询该会议归属的企业ID。
 
         :return: The org_id of this ShowConfOrgResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class ShowConfOrgResponse(SdkResponse):
     def org_id(self, org_id):
         """Sets the org_id of this ShowConfOrgResponse.
 
-        企业ID
+        SP管理员根据会议ID查询该会议归属的企业ID。
 
         :param org_id: The org_id of this ShowConfOrgResponse.
         :type org_id: str

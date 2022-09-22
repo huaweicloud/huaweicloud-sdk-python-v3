@@ -43,17 +43,17 @@ class RestCustomMultiPictureBody:
 
         The model defined in huaweicloud sdk
 
-        :param manual_set: 是否为手工设置多画面： 0： 系统自动多画面 1： 手工设置多画面
+        :param manual_set: 是否为手工设置多画面。 * 0： 系统自动多画面 * 1： 手工设置多画面 
         :type manual_set: int
         :param pic_layout_info: 
         :type pic_layout_info: :class:`huaweicloudsdkmeeting.v1.PicLayoutInfo`
-        :param image_type: 画面类型
+        :param image_type: 画面类型。手工设置多画面时有效。 - Single: 单画面 - Two: 二画面 - Three: 三画面 - Three-2: 三画面 - Three-3: 三画面 - Three-4: 三画面 - Four: 四画面 - Four-2: 四画面 - Four-3: 四画面 - Five: 五画面 - Five-2: 五画面 - Six: 六画面 - Six-2: 六画面 - Six-3: 六画面 - Six-4: 六画面 - Six-5: 六画面 - Seven: 七画面 - Seven-2: 七画面 - Seven-3: 七画面 - Seven-4: 七画面 - Eight: 八画面 - Eight-2: 八画面 - Eight-3: 八画面 - Eight-4: 八画面 - Nine: 九画面 - Ten: 十画面 - Ten-2: 十画面 - Ten-3: 十画面 - Ten-4: 十画面 - Ten-5: 十画面 - Ten-6: 十画面 - Thirteen: 十三画面 - Thirteen-2: 十三画面 - Thirteen-3: 十三画面 - Thirteen-4: 十三画面 - Thirteen-5: 十三画面 - Sixteen: 十六画面 - Seventeen: 十七画面 - Twenty-Five: 二十五画面 
         :type image_type: str
-        :param subscriber_in_pics: 子画面列表
+        :param subscriber_in_pics: 子画面列表（手工设置多画面时必填）。
         :type subscriber_in_pics: list[:class:`huaweicloudsdkmeeting.v1.RestSubscriberInPic`]
-        :param switch_time: 表示轮询间隔，单位：秒。 当同一个子画面中包含有多个视频源时，此参数有效
+        :param switch_time: 表示轮询间隔,取值范围：10-120，默认10。单位：秒。 当同一个子画面中包含有多个与会者时，此参数有效。 
         :type switch_time: int
-        :param multi_pic_save_only: 多画面仅保存
+        :param multi_pic_save_only: 多画面是否仅保存。 * true： 仅保存 * false： 保存并应用 &gt; * ”仅保存“效果：仅保存当前画面布局，不进行广播等操作。 &gt; * ”保存并应用“效果：1、当会议状态为广播多画面、声控单画面、声控多画面、主持人观看多画面时，保存并应用后，改变画面布局，不改变状态。2、当会议状态为非广播多画面、声控单画面、声控多画面、主持人观看多画面时，如自动多画面、广播与会者、点名与会者时，保存并应用后，变为广播多画面。 &gt; * 当处于广播多画面、声控多画面、声控单画面状态下，无法设置主持人观看多画面。 
         :type multi_pic_save_only: bool
         """
         
@@ -83,7 +83,7 @@ class RestCustomMultiPictureBody:
     def manual_set(self):
         """Gets the manual_set of this RestCustomMultiPictureBody.
 
-        是否为手工设置多画面： 0： 系统自动多画面 1： 手工设置多画面
+        是否为手工设置多画面。 * 0： 系统自动多画面 * 1： 手工设置多画面 
 
         :return: The manual_set of this RestCustomMultiPictureBody.
         :rtype: int
@@ -94,7 +94,7 @@ class RestCustomMultiPictureBody:
     def manual_set(self, manual_set):
         """Sets the manual_set of this RestCustomMultiPictureBody.
 
-        是否为手工设置多画面： 0： 系统自动多画面 1： 手工设置多画面
+        是否为手工设置多画面。 * 0： 系统自动多画面 * 1： 手工设置多画面 
 
         :param manual_set: The manual_set of this RestCustomMultiPictureBody.
         :type manual_set: int
@@ -125,7 +125,7 @@ class RestCustomMultiPictureBody:
     def image_type(self):
         """Gets the image_type of this RestCustomMultiPictureBody.
 
-        画面类型
+        画面类型。手工设置多画面时有效。 - Single: 单画面 - Two: 二画面 - Three: 三画面 - Three-2: 三画面 - Three-3: 三画面 - Three-4: 三画面 - Four: 四画面 - Four-2: 四画面 - Four-3: 四画面 - Five: 五画面 - Five-2: 五画面 - Six: 六画面 - Six-2: 六画面 - Six-3: 六画面 - Six-4: 六画面 - Six-5: 六画面 - Seven: 七画面 - Seven-2: 七画面 - Seven-3: 七画面 - Seven-4: 七画面 - Eight: 八画面 - Eight-2: 八画面 - Eight-3: 八画面 - Eight-4: 八画面 - Nine: 九画面 - Ten: 十画面 - Ten-2: 十画面 - Ten-3: 十画面 - Ten-4: 十画面 - Ten-5: 十画面 - Ten-6: 十画面 - Thirteen: 十三画面 - Thirteen-2: 十三画面 - Thirteen-3: 十三画面 - Thirteen-4: 十三画面 - Thirteen-5: 十三画面 - Sixteen: 十六画面 - Seventeen: 十七画面 - Twenty-Five: 二十五画面 
 
         :return: The image_type of this RestCustomMultiPictureBody.
         :rtype: str
@@ -136,7 +136,7 @@ class RestCustomMultiPictureBody:
     def image_type(self, image_type):
         """Sets the image_type of this RestCustomMultiPictureBody.
 
-        画面类型
+        画面类型。手工设置多画面时有效。 - Single: 单画面 - Two: 二画面 - Three: 三画面 - Three-2: 三画面 - Three-3: 三画面 - Three-4: 三画面 - Four: 四画面 - Four-2: 四画面 - Four-3: 四画面 - Five: 五画面 - Five-2: 五画面 - Six: 六画面 - Six-2: 六画面 - Six-3: 六画面 - Six-4: 六画面 - Six-5: 六画面 - Seven: 七画面 - Seven-2: 七画面 - Seven-3: 七画面 - Seven-4: 七画面 - Eight: 八画面 - Eight-2: 八画面 - Eight-3: 八画面 - Eight-4: 八画面 - Nine: 九画面 - Ten: 十画面 - Ten-2: 十画面 - Ten-3: 十画面 - Ten-4: 十画面 - Ten-5: 十画面 - Ten-6: 十画面 - Thirteen: 十三画面 - Thirteen-2: 十三画面 - Thirteen-3: 十三画面 - Thirteen-4: 十三画面 - Thirteen-5: 十三画面 - Sixteen: 十六画面 - Seventeen: 十七画面 - Twenty-Five: 二十五画面 
 
         :param image_type: The image_type of this RestCustomMultiPictureBody.
         :type image_type: str
@@ -147,7 +147,7 @@ class RestCustomMultiPictureBody:
     def subscriber_in_pics(self):
         """Gets the subscriber_in_pics of this RestCustomMultiPictureBody.
 
-        子画面列表
+        子画面列表（手工设置多画面时必填）。
 
         :return: The subscriber_in_pics of this RestCustomMultiPictureBody.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.RestSubscriberInPic`]
@@ -158,7 +158,7 @@ class RestCustomMultiPictureBody:
     def subscriber_in_pics(self, subscriber_in_pics):
         """Sets the subscriber_in_pics of this RestCustomMultiPictureBody.
 
-        子画面列表
+        子画面列表（手工设置多画面时必填）。
 
         :param subscriber_in_pics: The subscriber_in_pics of this RestCustomMultiPictureBody.
         :type subscriber_in_pics: list[:class:`huaweicloudsdkmeeting.v1.RestSubscriberInPic`]
@@ -169,7 +169,7 @@ class RestCustomMultiPictureBody:
     def switch_time(self):
         """Gets the switch_time of this RestCustomMultiPictureBody.
 
-        表示轮询间隔，单位：秒。 当同一个子画面中包含有多个视频源时，此参数有效
+        表示轮询间隔,取值范围：10-120，默认10。单位：秒。 当同一个子画面中包含有多个与会者时，此参数有效。 
 
         :return: The switch_time of this RestCustomMultiPictureBody.
         :rtype: int
@@ -180,7 +180,7 @@ class RestCustomMultiPictureBody:
     def switch_time(self, switch_time):
         """Sets the switch_time of this RestCustomMultiPictureBody.
 
-        表示轮询间隔，单位：秒。 当同一个子画面中包含有多个视频源时，此参数有效
+        表示轮询间隔,取值范围：10-120，默认10。单位：秒。 当同一个子画面中包含有多个与会者时，此参数有效。 
 
         :param switch_time: The switch_time of this RestCustomMultiPictureBody.
         :type switch_time: int
@@ -191,7 +191,7 @@ class RestCustomMultiPictureBody:
     def multi_pic_save_only(self):
         """Gets the multi_pic_save_only of this RestCustomMultiPictureBody.
 
-        多画面仅保存
+        多画面是否仅保存。 * true： 仅保存 * false： 保存并应用 > * ”仅保存“效果：仅保存当前画面布局，不进行广播等操作。 > * ”保存并应用“效果：1、当会议状态为广播多画面、声控单画面、声控多画面、主持人观看多画面时，保存并应用后，改变画面布局，不改变状态。2、当会议状态为非广播多画面、声控单画面、声控多画面、主持人观看多画面时，如自动多画面、广播与会者、点名与会者时，保存并应用后，变为广播多画面。 > * 当处于广播多画面、声控多画面、声控单画面状态下，无法设置主持人观看多画面。 
 
         :return: The multi_pic_save_only of this RestCustomMultiPictureBody.
         :rtype: bool
@@ -202,7 +202,7 @@ class RestCustomMultiPictureBody:
     def multi_pic_save_only(self, multi_pic_save_only):
         """Sets the multi_pic_save_only of this RestCustomMultiPictureBody.
 
-        多画面仅保存
+        多画面是否仅保存。 * true： 仅保存 * false： 保存并应用 > * ”仅保存“效果：仅保存当前画面布局，不进行广播等操作。 > * ”保存并应用“效果：1、当会议状态为广播多画面、声控单画面、声控多画面、主持人观看多画面时，保存并应用后，改变画面布局，不改变状态。2、当会议状态为非广播多画面、声控单画面、声控多画面、主持人观看多画面时，如自动多画面、广播与会者、点名与会者时，保存并应用后，变为广播多画面。 > * 当处于广播多画面、声控多画面、声控单画面状态下，无法设置主持人观看多画面。 
 
         :param multi_pic_save_only: The multi_pic_save_only of this RestCustomMultiPictureBody.
         :type multi_pic_save_only: bool

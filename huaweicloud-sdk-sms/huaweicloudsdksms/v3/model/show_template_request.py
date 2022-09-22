@@ -33,7 +33,7 @@ class ShowTemplateRequest:
 
         The model defined in huaweicloud sdk
 
-        :param id: 需要查询的模板信息的id
+        :param id: 需要查询的模板信息的ID
         :type id: str
         """
         
@@ -48,7 +48,7 @@ class ShowTemplateRequest:
     def id(self):
         """Gets the id of this ShowTemplateRequest.
 
-        需要查询的模板信息的id
+        需要查询的模板信息的ID
 
         :return: The id of this ShowTemplateRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ShowTemplateRequest:
     def id(self, id):
         """Sets the id of this ShowTemplateRequest.
 
-        需要查询的模板信息的id
+        需要查询的模板信息的ID
 
         :param id: The id of this ShowTemplateRequest.
         :type id: str

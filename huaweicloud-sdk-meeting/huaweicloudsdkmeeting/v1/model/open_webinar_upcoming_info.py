@@ -65,27 +65,27 @@ class OpenWebinarUpcomingInfo:
 
         The model defined in huaweicloud sdk
 
-        :param conference_id: 会议ID。长度限制为32个字符。
+        :param conference_id: 网络研讨会ID。
         :type conference_id: str
-        :param corp_id: 企业id
+        :param corp_id: 企业ID。
         :type corp_id: str
-        :param subject: 主题
+        :param subject: 网络研讨会主题。
         :type subject: str
-        :param description: 描述
+        :param description: 网络研讨会描述。
         :type description: str
-        :param start_time: 开始时间
+        :param start_time: 网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
         :type start_time: str
-        :param duration: 时长，单位分钟
+        :param duration: 网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
         :type duration: int
-        :param time_zone_id: 时区ID
+        :param time_zone_id: 会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 &gt; * 举例：“timeZoneID”:\&quot;26\&quot;，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
         :type time_zone_id: int
-        :param scheduser_id: 会议预订者ID
+        :param scheduser_id: 网络研讨会预订者的用户UUID。
         :type scheduser_id: str
-        :param dept_name: 预订人部门
+        :param dept_name: 预订人部门名称。
         :type dept_name: str
-        :param scheduser_name: 会议预订者帐号名称。长度最大限制为96个字符。
+        :param scheduser_name: 预订者名称。
         :type scheduser_name: str
-        :param vmr_pkg_name: 网络研讨会资源名
+        :param vmr_pkg_name: 网络研讨会VMR名称。
         :type vmr_pkg_name: str
         :param chair_join_uri: 主持人入会地址。
         :type chair_join_uri: str
@@ -161,7 +161,7 @@ class OpenWebinarUpcomingInfo:
     def conference_id(self):
         """Gets the conference_id of this OpenWebinarUpcomingInfo.
 
-        会议ID。长度限制为32个字符。
+        网络研讨会ID。
 
         :return: The conference_id of this OpenWebinarUpcomingInfo.
         :rtype: str
@@ -172,7 +172,7 @@ class OpenWebinarUpcomingInfo:
     def conference_id(self, conference_id):
         """Sets the conference_id of this OpenWebinarUpcomingInfo.
 
-        会议ID。长度限制为32个字符。
+        网络研讨会ID。
 
         :param conference_id: The conference_id of this OpenWebinarUpcomingInfo.
         :type conference_id: str
@@ -183,7 +183,7 @@ class OpenWebinarUpcomingInfo:
     def corp_id(self):
         """Gets the corp_id of this OpenWebinarUpcomingInfo.
 
-        企业id
+        企业ID。
 
         :return: The corp_id of this OpenWebinarUpcomingInfo.
         :rtype: str
@@ -194,7 +194,7 @@ class OpenWebinarUpcomingInfo:
     def corp_id(self, corp_id):
         """Sets the corp_id of this OpenWebinarUpcomingInfo.
 
-        企业id
+        企业ID。
 
         :param corp_id: The corp_id of this OpenWebinarUpcomingInfo.
         :type corp_id: str
@@ -205,7 +205,7 @@ class OpenWebinarUpcomingInfo:
     def subject(self):
         """Gets the subject of this OpenWebinarUpcomingInfo.
 
-        主题
+        网络研讨会主题。
 
         :return: The subject of this OpenWebinarUpcomingInfo.
         :rtype: str
@@ -216,7 +216,7 @@ class OpenWebinarUpcomingInfo:
     def subject(self, subject):
         """Sets the subject of this OpenWebinarUpcomingInfo.
 
-        主题
+        网络研讨会主题。
 
         :param subject: The subject of this OpenWebinarUpcomingInfo.
         :type subject: str
@@ -227,7 +227,7 @@ class OpenWebinarUpcomingInfo:
     def description(self):
         """Gets the description of this OpenWebinarUpcomingInfo.
 
-        描述
+        网络研讨会描述。
 
         :return: The description of this OpenWebinarUpcomingInfo.
         :rtype: str
@@ -238,7 +238,7 @@ class OpenWebinarUpcomingInfo:
     def description(self, description):
         """Sets the description of this OpenWebinarUpcomingInfo.
 
-        描述
+        网络研讨会描述。
 
         :param description: The description of this OpenWebinarUpcomingInfo.
         :type description: str
@@ -249,7 +249,7 @@ class OpenWebinarUpcomingInfo:
     def start_time(self):
         """Gets the start_time of this OpenWebinarUpcomingInfo.
 
-        开始时间
+        网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :return: The start_time of this OpenWebinarUpcomingInfo.
         :rtype: str
@@ -260,7 +260,7 @@ class OpenWebinarUpcomingInfo:
     def start_time(self, start_time):
         """Sets the start_time of this OpenWebinarUpcomingInfo.
 
-        开始时间
+        网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :param start_time: The start_time of this OpenWebinarUpcomingInfo.
         :type start_time: str
@@ -271,7 +271,7 @@ class OpenWebinarUpcomingInfo:
     def duration(self):
         """Gets the duration of this OpenWebinarUpcomingInfo.
 
-        时长，单位分钟
+        网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :return: The duration of this OpenWebinarUpcomingInfo.
         :rtype: int
@@ -282,7 +282,7 @@ class OpenWebinarUpcomingInfo:
     def duration(self, duration):
         """Sets the duration of this OpenWebinarUpcomingInfo.
 
-        时长，单位分钟
+        网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
         :param duration: The duration of this OpenWebinarUpcomingInfo.
         :type duration: int
@@ -293,7 +293,7 @@ class OpenWebinarUpcomingInfo:
     def time_zone_id(self):
         """Gets the time_zone_id of this OpenWebinarUpcomingInfo.
 
-        时区ID
+        会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
         :return: The time_zone_id of this OpenWebinarUpcomingInfo.
         :rtype: int
@@ -304,7 +304,7 @@ class OpenWebinarUpcomingInfo:
     def time_zone_id(self, time_zone_id):
         """Sets the time_zone_id of this OpenWebinarUpcomingInfo.
 
-        时区ID
+        会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
         :param time_zone_id: The time_zone_id of this OpenWebinarUpcomingInfo.
         :type time_zone_id: int
@@ -315,7 +315,7 @@ class OpenWebinarUpcomingInfo:
     def scheduser_id(self):
         """Gets the scheduser_id of this OpenWebinarUpcomingInfo.
 
-        会议预订者ID
+        网络研讨会预订者的用户UUID。
 
         :return: The scheduser_id of this OpenWebinarUpcomingInfo.
         :rtype: str
@@ -326,7 +326,7 @@ class OpenWebinarUpcomingInfo:
     def scheduser_id(self, scheduser_id):
         """Sets the scheduser_id of this OpenWebinarUpcomingInfo.
 
-        会议预订者ID
+        网络研讨会预订者的用户UUID。
 
         :param scheduser_id: The scheduser_id of this OpenWebinarUpcomingInfo.
         :type scheduser_id: str
@@ -337,7 +337,7 @@ class OpenWebinarUpcomingInfo:
     def dept_name(self):
         """Gets the dept_name of this OpenWebinarUpcomingInfo.
 
-        预订人部门
+        预订人部门名称。
 
         :return: The dept_name of this OpenWebinarUpcomingInfo.
         :rtype: str
@@ -348,7 +348,7 @@ class OpenWebinarUpcomingInfo:
     def dept_name(self, dept_name):
         """Sets the dept_name of this OpenWebinarUpcomingInfo.
 
-        预订人部门
+        预订人部门名称。
 
         :param dept_name: The dept_name of this OpenWebinarUpcomingInfo.
         :type dept_name: str
@@ -359,7 +359,7 @@ class OpenWebinarUpcomingInfo:
     def scheduser_name(self):
         """Gets the scheduser_name of this OpenWebinarUpcomingInfo.
 
-        会议预订者帐号名称。长度最大限制为96个字符。
+        预订者名称。
 
         :return: The scheduser_name of this OpenWebinarUpcomingInfo.
         :rtype: str
@@ -370,7 +370,7 @@ class OpenWebinarUpcomingInfo:
     def scheduser_name(self, scheduser_name):
         """Sets the scheduser_name of this OpenWebinarUpcomingInfo.
 
-        会议预订者帐号名称。长度最大限制为96个字符。
+        预订者名称。
 
         :param scheduser_name: The scheduser_name of this OpenWebinarUpcomingInfo.
         :type scheduser_name: str
@@ -381,7 +381,7 @@ class OpenWebinarUpcomingInfo:
     def vmr_pkg_name(self):
         """Gets the vmr_pkg_name of this OpenWebinarUpcomingInfo.
 
-        网络研讨会资源名
+        网络研讨会VMR名称。
 
         :return: The vmr_pkg_name of this OpenWebinarUpcomingInfo.
         :rtype: str
@@ -392,7 +392,7 @@ class OpenWebinarUpcomingInfo:
     def vmr_pkg_name(self, vmr_pkg_name):
         """Sets the vmr_pkg_name of this OpenWebinarUpcomingInfo.
 
-        网络研讨会资源名
+        网络研讨会VMR名称。
 
         :param vmr_pkg_name: The vmr_pkg_name of this OpenWebinarUpcomingInfo.
         :type vmr_pkg_name: str

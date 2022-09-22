@@ -41,15 +41,15 @@ class ModMemberDTO:
 
         The model defined in huaweicloud sdk
 
-        :param name: 名称 maxLength：64 minLength：1
+        :param name: 名称。
         :type name: str
-        :param english_name: 英文名称 maxLength：64 minLength：0
+        :param english_name: 英文名称。
         :type english_name: str
-        :param signature: 签名 maxLength：512 minLength：0
+        :param signature: 签名。
         :type signature: str
-        :param title: 职位 maxLength：32 minLength：0
+        :param title: 职位。
         :type title: str
-        :param desc: 备注 maxLength：128 minLength：0
+        :param desc: 备注。
         :type desc: str
         """
         
@@ -76,7 +76,7 @@ class ModMemberDTO:
     def name(self):
         """Gets the name of this ModMemberDTO.
 
-        名称 maxLength：64 minLength：1
+        名称。
 
         :return: The name of this ModMemberDTO.
         :rtype: str
@@ -87,7 +87,7 @@ class ModMemberDTO:
     def name(self, name):
         """Sets the name of this ModMemberDTO.
 
-        名称 maxLength：64 minLength：1
+        名称。
 
         :param name: The name of this ModMemberDTO.
         :type name: str
@@ -98,7 +98,7 @@ class ModMemberDTO:
     def english_name(self):
         """Gets the english_name of this ModMemberDTO.
 
-        英文名称 maxLength：64 minLength：0
+        英文名称。
 
         :return: The english_name of this ModMemberDTO.
         :rtype: str
@@ -109,7 +109,7 @@ class ModMemberDTO:
     def english_name(self, english_name):
         """Sets the english_name of this ModMemberDTO.
 
-        英文名称 maxLength：64 minLength：0
+        英文名称。
 
         :param english_name: The english_name of this ModMemberDTO.
         :type english_name: str
@@ -120,7 +120,7 @@ class ModMemberDTO:
     def signature(self):
         """Gets the signature of this ModMemberDTO.
 
-        签名 maxLength：512 minLength：0
+        签名。
 
         :return: The signature of this ModMemberDTO.
         :rtype: str
@@ -131,7 +131,7 @@ class ModMemberDTO:
     def signature(self, signature):
         """Sets the signature of this ModMemberDTO.
 
-        签名 maxLength：512 minLength：0
+        签名。
 
         :param signature: The signature of this ModMemberDTO.
         :type signature: str
@@ -142,7 +142,7 @@ class ModMemberDTO:
     def title(self):
         """Gets the title of this ModMemberDTO.
 
-        职位 maxLength：32 minLength：0
+        职位。
 
         :return: The title of this ModMemberDTO.
         :rtype: str
@@ -153,7 +153,7 @@ class ModMemberDTO:
     def title(self, title):
         """Sets the title of this ModMemberDTO.
 
-        职位 maxLength：32 minLength：0
+        职位。
 
         :param title: The title of this ModMemberDTO.
         :type title: str
@@ -164,7 +164,7 @@ class ModMemberDTO:
     def desc(self):
         """Gets the desc of this ModMemberDTO.
 
-        备注 maxLength：128 minLength：0
+        备注。
 
         :return: The desc of this ModMemberDTO.
         :rtype: str
@@ -175,7 +175,7 @@ class ModMemberDTO:
     def desc(self, desc):
         """Sets the desc of this ModMemberDTO.
 
-        备注 maxLength：128 minLength：0
+        备注。
 
         :param desc: The desc of this ModMemberDTO.
         :type desc: str

@@ -21,29 +21,36 @@ class CustomizeSourceUpdateReq:
     sensitive_list = []
 
     openapi_types = {
-        'description': 'str'
+        'description': 'str',
+        'detail': 'object'
     }
 
     attribute_map = {
-        'description': 'description'
+        'description': 'description',
+        'detail': 'detail'
     }
 
-    def __init__(self, description=None):
+    def __init__(self, description=None, detail=None):
         """CustomizeSourceUpdateReq
 
         The model defined in huaweicloud sdk
 
         :param description: 事件源描述
         :type description: str
+        :param detail: json格式封装消息实例更新信息：如RabbitMQ实例的虚拟主机vhost字段、队列queue字段、用户密码
+        :type detail: object
         """
         
         
 
         self._description = None
+        self._detail = None
         self.discriminator = None
 
         if description is not None:
             self.description = description
+        if detail is not None:
+            self.detail = detail
 
     @property
     def description(self):
@@ -66,6 +73,28 @@ class CustomizeSourceUpdateReq:
         :type description: str
         """
         self._description = description
+
+    @property
+    def detail(self):
+        """Gets the detail of this CustomizeSourceUpdateReq.
+
+        json格式封装消息实例更新信息：如RabbitMQ实例的虚拟主机vhost字段、队列queue字段、用户密码
+
+        :return: The detail of this CustomizeSourceUpdateReq.
+        :rtype: object
+        """
+        return self._detail
+
+    @detail.setter
+    def detail(self, detail):
+        """Sets the detail of this CustomizeSourceUpdateReq.
+
+        json格式封装消息实例更新信息：如RabbitMQ实例的虚拟主机vhost字段、队列queue字段、用户密码
+
+        :param detail: The detail of this CustomizeSourceUpdateReq.
+        :type detail: object
+        """
+        self._detail = detail
 
     def to_dict(self):
         """Returns the model properties as a dict"""

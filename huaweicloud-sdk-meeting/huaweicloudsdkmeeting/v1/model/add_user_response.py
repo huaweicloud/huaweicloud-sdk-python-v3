@@ -85,39 +85,39 @@ class AddUserResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param id: 用户id
+        :param id: 用户UUID。
         :type id: str
-        :param user_account: 账号
+        :param user_account: 华为云会议帐号。
         :type user_account: str
-        :param name: 姓名
+        :param name: 名称。
         :type name: str
-        :param english_name: 英文名称
+        :param english_name: 英文名称。
         :type english_name: str
-        :param phone: 联系电话
+        :param phone: 联系电话。
         :type phone: str
-        :param country: 联系电话所属的国家
+        :param country: [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
         :type country: str
-        :param email: 邮箱
+        :param email: 邮箱地址。
         :type email: str
-        :param sip_num: SIP号码
+        :param sip_num: SIP号码。
         :type sip_num: str
-        :param vmr_list: 云会议室列表
+        :param vmr_list: 云会议室列表。
         :type vmr_list: list[:class:`huaweicloudsdkmeeting.v1.UserVmrDTO`]
-        :param dept_code: 部门编码
+        :param dept_code: 部门编码。
         :type dept_code: str
-        :param dept_name: 部门名称
+        :param dept_name: 部门名称。
         :type dept_name: str
-        :param dept_name_path: 部门完整名称
+        :param dept_name_path: 部门完整名称。
         :type dept_name_path: str
-        :param user_type: 用户类型 - 2：企业成员账户
+        :param user_type: 用户类型。 - 2：企业成员账户
         :type user_type: int
-        :param admin_type: 管理员类型 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
+        :param admin_type: 管理员类型。 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
         :type admin_type: int
-        :param signature: 签名
+        :param signature: 签名。
         :type signature: str
-        :param title: 职位
+        :param title: 职位。
         :type title: str
-        :param desc: 备注
+        :param desc: 备注。
         :type desc: str
         :param corp: 
         :type corp: :class:`huaweicloudsdkmeeting.v1.CorpBasicInfoDTO`
@@ -125,19 +125,19 @@ class AddUserResponse(SdkResponse):
         :type function: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
         :param dev_type: 
         :type dev_type: :class:`huaweicloudsdkmeeting.v1.QueryDeviceInfoResultDTO`
-        :param status: 用户状态 * 0、正常 * 1、停用 
+        :param status: 用户状态。 * 0：正常 * 1：停用 
         :type status: int
-        :param sort_level: 通讯录排序等级，序号越低优先级越高
+        :param sort_level: 通讯录排序等级，序号越低优先级越高。
         :type sort_level: int
-        :param hide_phone: 是否隐藏手机号码
+        :param hide_phone: 是否隐藏手机号码。
         :type hide_phone: bool
-        :param vision_account: 智慧屏唯一账号
+        :param vision_account: 智慧屏唯一帐号。
         :type vision_account: str
-        :param third_account: 第三方账号，自动开户的第三方账号、Ideahub账号的sn等
+        :param third_account: 第三方User ID。
         :type third_account: str
-        :param license: 许可证 * 0：商用； * 1：免费试用。 
+        :param license: 许可证。 * 0：商用 * 1：免费试用 
         :type license: int
-        :param active_time: 激活时间，utc时间戳
+        :param active_time: 激活时间，utc时间戳。
         :type active_time: int
         """
         
@@ -231,7 +231,7 @@ class AddUserResponse(SdkResponse):
     def id(self):
         """Gets the id of this AddUserResponse.
 
-        用户id
+        用户UUID。
 
         :return: The id of this AddUserResponse.
         :rtype: str
@@ -242,7 +242,7 @@ class AddUserResponse(SdkResponse):
     def id(self, id):
         """Sets the id of this AddUserResponse.
 
-        用户id
+        用户UUID。
 
         :param id: The id of this AddUserResponse.
         :type id: str
@@ -253,7 +253,7 @@ class AddUserResponse(SdkResponse):
     def user_account(self):
         """Gets the user_account of this AddUserResponse.
 
-        账号
+        华为云会议帐号。
 
         :return: The user_account of this AddUserResponse.
         :rtype: str
@@ -264,7 +264,7 @@ class AddUserResponse(SdkResponse):
     def user_account(self, user_account):
         """Sets the user_account of this AddUserResponse.
 
-        账号
+        华为云会议帐号。
 
         :param user_account: The user_account of this AddUserResponse.
         :type user_account: str
@@ -275,7 +275,7 @@ class AddUserResponse(SdkResponse):
     def name(self):
         """Gets the name of this AddUserResponse.
 
-        姓名
+        名称。
 
         :return: The name of this AddUserResponse.
         :rtype: str
@@ -286,7 +286,7 @@ class AddUserResponse(SdkResponse):
     def name(self, name):
         """Sets the name of this AddUserResponse.
 
-        姓名
+        名称。
 
         :param name: The name of this AddUserResponse.
         :type name: str
@@ -297,7 +297,7 @@ class AddUserResponse(SdkResponse):
     def english_name(self):
         """Gets the english_name of this AddUserResponse.
 
-        英文名称
+        英文名称。
 
         :return: The english_name of this AddUserResponse.
         :rtype: str
@@ -308,7 +308,7 @@ class AddUserResponse(SdkResponse):
     def english_name(self, english_name):
         """Sets the english_name of this AddUserResponse.
 
-        英文名称
+        英文名称。
 
         :param english_name: The english_name of this AddUserResponse.
         :type english_name: str
@@ -319,7 +319,7 @@ class AddUserResponse(SdkResponse):
     def phone(self):
         """Gets the phone of this AddUserResponse.
 
-        联系电话
+        联系电话。
 
         :return: The phone of this AddUserResponse.
         :rtype: str
@@ -330,7 +330,7 @@ class AddUserResponse(SdkResponse):
     def phone(self, phone):
         """Sets the phone of this AddUserResponse.
 
-        联系电话
+        联系电话。
 
         :param phone: The phone of this AddUserResponse.
         :type phone: str
@@ -341,7 +341,7 @@ class AddUserResponse(SdkResponse):
     def country(self):
         """Gets the country of this AddUserResponse.
 
-        联系电话所属的国家
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :return: The country of this AddUserResponse.
         :rtype: str
@@ -352,7 +352,7 @@ class AddUserResponse(SdkResponse):
     def country(self, country):
         """Sets the country of this AddUserResponse.
 
-        联系电话所属的国家
+        [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
         :param country: The country of this AddUserResponse.
         :type country: str
@@ -363,7 +363,7 @@ class AddUserResponse(SdkResponse):
     def email(self):
         """Gets the email of this AddUserResponse.
 
-        邮箱
+        邮箱地址。
 
         :return: The email of this AddUserResponse.
         :rtype: str
@@ -374,7 +374,7 @@ class AddUserResponse(SdkResponse):
     def email(self, email):
         """Sets the email of this AddUserResponse.
 
-        邮箱
+        邮箱地址。
 
         :param email: The email of this AddUserResponse.
         :type email: str
@@ -385,7 +385,7 @@ class AddUserResponse(SdkResponse):
     def sip_num(self):
         """Gets the sip_num of this AddUserResponse.
 
-        SIP号码
+        SIP号码。
 
         :return: The sip_num of this AddUserResponse.
         :rtype: str
@@ -396,7 +396,7 @@ class AddUserResponse(SdkResponse):
     def sip_num(self, sip_num):
         """Sets the sip_num of this AddUserResponse.
 
-        SIP号码
+        SIP号码。
 
         :param sip_num: The sip_num of this AddUserResponse.
         :type sip_num: str
@@ -407,7 +407,7 @@ class AddUserResponse(SdkResponse):
     def vmr_list(self):
         """Gets the vmr_list of this AddUserResponse.
 
-        云会议室列表
+        云会议室列表。
 
         :return: The vmr_list of this AddUserResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.UserVmrDTO`]
@@ -418,7 +418,7 @@ class AddUserResponse(SdkResponse):
     def vmr_list(self, vmr_list):
         """Sets the vmr_list of this AddUserResponse.
 
-        云会议室列表
+        云会议室列表。
 
         :param vmr_list: The vmr_list of this AddUserResponse.
         :type vmr_list: list[:class:`huaweicloudsdkmeeting.v1.UserVmrDTO`]
@@ -429,7 +429,7 @@ class AddUserResponse(SdkResponse):
     def dept_code(self):
         """Gets the dept_code of this AddUserResponse.
 
-        部门编码
+        部门编码。
 
         :return: The dept_code of this AddUserResponse.
         :rtype: str
@@ -440,7 +440,7 @@ class AddUserResponse(SdkResponse):
     def dept_code(self, dept_code):
         """Sets the dept_code of this AddUserResponse.
 
-        部门编码
+        部门编码。
 
         :param dept_code: The dept_code of this AddUserResponse.
         :type dept_code: str
@@ -451,7 +451,7 @@ class AddUserResponse(SdkResponse):
     def dept_name(self):
         """Gets the dept_name of this AddUserResponse.
 
-        部门名称
+        部门名称。
 
         :return: The dept_name of this AddUserResponse.
         :rtype: str
@@ -462,7 +462,7 @@ class AddUserResponse(SdkResponse):
     def dept_name(self, dept_name):
         """Sets the dept_name of this AddUserResponse.
 
-        部门名称
+        部门名称。
 
         :param dept_name: The dept_name of this AddUserResponse.
         :type dept_name: str
@@ -473,7 +473,7 @@ class AddUserResponse(SdkResponse):
     def dept_name_path(self):
         """Gets the dept_name_path of this AddUserResponse.
 
-        部门完整名称
+        部门完整名称。
 
         :return: The dept_name_path of this AddUserResponse.
         :rtype: str
@@ -484,7 +484,7 @@ class AddUserResponse(SdkResponse):
     def dept_name_path(self, dept_name_path):
         """Sets the dept_name_path of this AddUserResponse.
 
-        部门完整名称
+        部门完整名称。
 
         :param dept_name_path: The dept_name_path of this AddUserResponse.
         :type dept_name_path: str
@@ -495,7 +495,7 @@ class AddUserResponse(SdkResponse):
     def user_type(self):
         """Gets the user_type of this AddUserResponse.
 
-        用户类型 - 2：企业成员账户
+        用户类型。 - 2：企业成员账户
 
         :return: The user_type of this AddUserResponse.
         :rtype: int
@@ -506,7 +506,7 @@ class AddUserResponse(SdkResponse):
     def user_type(self, user_type):
         """Sets the user_type of this AddUserResponse.
 
-        用户类型 - 2：企业成员账户
+        用户类型。 - 2：企业成员账户
 
         :param user_type: The user_type of this AddUserResponse.
         :type user_type: int
@@ -517,7 +517,7 @@ class AddUserResponse(SdkResponse):
     def admin_type(self):
         """Gets the admin_type of this AddUserResponse.
 
-        管理员类型 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
+        管理员类型。 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
 
         :return: The admin_type of this AddUserResponse.
         :rtype: int
@@ -528,7 +528,7 @@ class AddUserResponse(SdkResponse):
     def admin_type(self, admin_type):
         """Sets the admin_type of this AddUserResponse.
 
-        管理员类型 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
+        管理员类型。 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
 
         :param admin_type: The admin_type of this AddUserResponse.
         :type admin_type: int
@@ -539,7 +539,7 @@ class AddUserResponse(SdkResponse):
     def signature(self):
         """Gets the signature of this AddUserResponse.
 
-        签名
+        签名。
 
         :return: The signature of this AddUserResponse.
         :rtype: str
@@ -550,7 +550,7 @@ class AddUserResponse(SdkResponse):
     def signature(self, signature):
         """Sets the signature of this AddUserResponse.
 
-        签名
+        签名。
 
         :param signature: The signature of this AddUserResponse.
         :type signature: str
@@ -561,7 +561,7 @@ class AddUserResponse(SdkResponse):
     def title(self):
         """Gets the title of this AddUserResponse.
 
-        职位
+        职位。
 
         :return: The title of this AddUserResponse.
         :rtype: str
@@ -572,7 +572,7 @@ class AddUserResponse(SdkResponse):
     def title(self, title):
         """Sets the title of this AddUserResponse.
 
-        职位
+        职位。
 
         :param title: The title of this AddUserResponse.
         :type title: str
@@ -583,7 +583,7 @@ class AddUserResponse(SdkResponse):
     def desc(self):
         """Gets the desc of this AddUserResponse.
 
-        备注
+        备注。
 
         :return: The desc of this AddUserResponse.
         :rtype: str
@@ -594,7 +594,7 @@ class AddUserResponse(SdkResponse):
     def desc(self, desc):
         """Sets the desc of this AddUserResponse.
 
-        备注
+        备注。
 
         :param desc: The desc of this AddUserResponse.
         :type desc: str
@@ -665,7 +665,7 @@ class AddUserResponse(SdkResponse):
     def status(self):
         """Gets the status of this AddUserResponse.
 
-        用户状态 * 0、正常 * 1、停用 
+        用户状态。 * 0：正常 * 1：停用 
 
         :return: The status of this AddUserResponse.
         :rtype: int
@@ -676,7 +676,7 @@ class AddUserResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this AddUserResponse.
 
-        用户状态 * 0、正常 * 1、停用 
+        用户状态。 * 0：正常 * 1：停用 
 
         :param status: The status of this AddUserResponse.
         :type status: int
@@ -687,7 +687,7 @@ class AddUserResponse(SdkResponse):
     def sort_level(self):
         """Gets the sort_level of this AddUserResponse.
 
-        通讯录排序等级，序号越低优先级越高
+        通讯录排序等级，序号越低优先级越高。
 
         :return: The sort_level of this AddUserResponse.
         :rtype: int
@@ -698,7 +698,7 @@ class AddUserResponse(SdkResponse):
     def sort_level(self, sort_level):
         """Sets the sort_level of this AddUserResponse.
 
-        通讯录排序等级，序号越低优先级越高
+        通讯录排序等级，序号越低优先级越高。
 
         :param sort_level: The sort_level of this AddUserResponse.
         :type sort_level: int
@@ -709,7 +709,7 @@ class AddUserResponse(SdkResponse):
     def hide_phone(self):
         """Gets the hide_phone of this AddUserResponse.
 
-        是否隐藏手机号码
+        是否隐藏手机号码。
 
         :return: The hide_phone of this AddUserResponse.
         :rtype: bool
@@ -720,7 +720,7 @@ class AddUserResponse(SdkResponse):
     def hide_phone(self, hide_phone):
         """Sets the hide_phone of this AddUserResponse.
 
-        是否隐藏手机号码
+        是否隐藏手机号码。
 
         :param hide_phone: The hide_phone of this AddUserResponse.
         :type hide_phone: bool
@@ -731,7 +731,7 @@ class AddUserResponse(SdkResponse):
     def vision_account(self):
         """Gets the vision_account of this AddUserResponse.
 
-        智慧屏唯一账号
+        智慧屏唯一帐号。
 
         :return: The vision_account of this AddUserResponse.
         :rtype: str
@@ -742,7 +742,7 @@ class AddUserResponse(SdkResponse):
     def vision_account(self, vision_account):
         """Sets the vision_account of this AddUserResponse.
 
-        智慧屏唯一账号
+        智慧屏唯一帐号。
 
         :param vision_account: The vision_account of this AddUserResponse.
         :type vision_account: str
@@ -753,7 +753,7 @@ class AddUserResponse(SdkResponse):
     def third_account(self):
         """Gets the third_account of this AddUserResponse.
 
-        第三方账号，自动开户的第三方账号、Ideahub账号的sn等
+        第三方User ID。
 
         :return: The third_account of this AddUserResponse.
         :rtype: str
@@ -764,7 +764,7 @@ class AddUserResponse(SdkResponse):
     def third_account(self, third_account):
         """Sets the third_account of this AddUserResponse.
 
-        第三方账号，自动开户的第三方账号、Ideahub账号的sn等
+        第三方User ID。
 
         :param third_account: The third_account of this AddUserResponse.
         :type third_account: str
@@ -775,7 +775,7 @@ class AddUserResponse(SdkResponse):
     def license(self):
         """Gets the license of this AddUserResponse.
 
-        许可证 * 0：商用； * 1：免费试用。 
+        许可证。 * 0：商用 * 1：免费试用 
 
         :return: The license of this AddUserResponse.
         :rtype: int
@@ -786,7 +786,7 @@ class AddUserResponse(SdkResponse):
     def license(self, license):
         """Sets the license of this AddUserResponse.
 
-        许可证 * 0：商用； * 1：免费试用。 
+        许可证。 * 0：商用 * 1：免费试用 
 
         :param license: The license of this AddUserResponse.
         :type license: int
@@ -797,7 +797,7 @@ class AddUserResponse(SdkResponse):
     def active_time(self):
         """Gets the active_time of this AddUserResponse.
 
-        激活时间，utc时间戳
+        激活时间，utc时间戳。
 
         :return: The active_time of this AddUserResponse.
         :rtype: int
@@ -808,7 +808,7 @@ class AddUserResponse(SdkResponse):
     def active_time(self, active_time):
         """Sets the active_time of this AddUserResponse.
 
-        激活时间，utc时间戳
+        激活时间，utc时间戳。
 
         :param active_time: The active_time of this AddUserResponse.
         :type active_time: int

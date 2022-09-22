@@ -49,23 +49,23 @@ class UserVmrDTO:
 
         The model defined in huaweicloud sdk
 
-        :param id: 云会议室的唯一标识
+        :param id: 云会议室的ID。 &gt; 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrID。 
         :type id: str
-        :param vmr_id: 云会议室ID即预约会议的id，分为两种，一种是创建用户时生成的，为用户个人的，另一种是企业管理员分配的专用云会议室
+        :param vmr_id: 云会议室的固定会议ID。 &gt; 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口返回数据的vmrConferenceID。 
         :type vmr_id: str
-        :param vmr_name: 云会议室名称
+        :param vmr_name: 云会议室名称。
         :type vmr_name: str
         :param vmr_mode: VMR模式。 - 0：个人会议ID - 1: 云会议室 - 2: 网络研讨会 
         :type vmr_mode: int
-        :param vmr_pkg_id: 云会议室套餐包的id，仅专用云会议室返回
+        :param vmr_pkg_id: 云会议室套餐包的id，仅云会议室返回。
         :type vmr_pkg_id: str
-        :param vmr_pkg_name: 云会议室套餐包的名称，仅专用云会议室返回
+        :param vmr_pkg_name: 云会议室套餐包的名称，仅云会议室返回。
         :type vmr_pkg_name: str
-        :param vmr_pkg_parties: 云会议室套餐包的会议并发方数，仅专用云会议室返回
+        :param vmr_pkg_parties: 云会议室套餐包的会议并发方数，仅云会议室返回。
         :type vmr_pkg_parties: int
-        :param vmr_pkg_length: 云会议室套餐包的与会时间，若为0则代表无限时长，仅专用云会议室返回
+        :param vmr_pkg_length: 云会议室套餐包的与会时间，若为0则代表无限时长，仅云会议室返回。
         :type vmr_pkg_length: int
-        :param status: 云会议室状态。 * 0.正常 * 1.停用 * 2.未分配 
+        :param status: 云会议室状态。 * 0：正常 * 1：停用 * 2：未分配 
         :type status: int
         """
         
@@ -105,7 +105,7 @@ class UserVmrDTO:
     def id(self):
         """Gets the id of this UserVmrDTO.
 
-        云会议室的唯一标识
+        云会议室的ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrID。 
 
         :return: The id of this UserVmrDTO.
         :rtype: str
@@ -116,7 +116,7 @@ class UserVmrDTO:
     def id(self, id):
         """Sets the id of this UserVmrDTO.
 
-        云会议室的唯一标识
+        云会议室的ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrID。 
 
         :param id: The id of this UserVmrDTO.
         :type id: str
@@ -127,7 +127,7 @@ class UserVmrDTO:
     def vmr_id(self):
         """Gets the vmr_id of this UserVmrDTO.
 
-        云会议室ID即预约会议的id，分为两种，一种是创建用户时生成的，为用户个人的，另一种是企业管理员分配的专用云会议室
+        云会议室的固定会议ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口返回数据的vmrConferenceID。 
 
         :return: The vmr_id of this UserVmrDTO.
         :rtype: str
@@ -138,7 +138,7 @@ class UserVmrDTO:
     def vmr_id(self, vmr_id):
         """Sets the vmr_id of this UserVmrDTO.
 
-        云会议室ID即预约会议的id，分为两种，一种是创建用户时生成的，为用户个人的，另一种是企业管理员分配的专用云会议室
+        云会议室的固定会议ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口返回数据的vmrConferenceID。 
 
         :param vmr_id: The vmr_id of this UserVmrDTO.
         :type vmr_id: str
@@ -149,7 +149,7 @@ class UserVmrDTO:
     def vmr_name(self):
         """Gets the vmr_name of this UserVmrDTO.
 
-        云会议室名称
+        云会议室名称。
 
         :return: The vmr_name of this UserVmrDTO.
         :rtype: str
@@ -160,7 +160,7 @@ class UserVmrDTO:
     def vmr_name(self, vmr_name):
         """Sets the vmr_name of this UserVmrDTO.
 
-        云会议室名称
+        云会议室名称。
 
         :param vmr_name: The vmr_name of this UserVmrDTO.
         :type vmr_name: str
@@ -193,7 +193,7 @@ class UserVmrDTO:
     def vmr_pkg_id(self):
         """Gets the vmr_pkg_id of this UserVmrDTO.
 
-        云会议室套餐包的id，仅专用云会议室返回
+        云会议室套餐包的id，仅云会议室返回。
 
         :return: The vmr_pkg_id of this UserVmrDTO.
         :rtype: str
@@ -204,7 +204,7 @@ class UserVmrDTO:
     def vmr_pkg_id(self, vmr_pkg_id):
         """Sets the vmr_pkg_id of this UserVmrDTO.
 
-        云会议室套餐包的id，仅专用云会议室返回
+        云会议室套餐包的id，仅云会议室返回。
 
         :param vmr_pkg_id: The vmr_pkg_id of this UserVmrDTO.
         :type vmr_pkg_id: str
@@ -215,7 +215,7 @@ class UserVmrDTO:
     def vmr_pkg_name(self):
         """Gets the vmr_pkg_name of this UserVmrDTO.
 
-        云会议室套餐包的名称，仅专用云会议室返回
+        云会议室套餐包的名称，仅云会议室返回。
 
         :return: The vmr_pkg_name of this UserVmrDTO.
         :rtype: str
@@ -226,7 +226,7 @@ class UserVmrDTO:
     def vmr_pkg_name(self, vmr_pkg_name):
         """Sets the vmr_pkg_name of this UserVmrDTO.
 
-        云会议室套餐包的名称，仅专用云会议室返回
+        云会议室套餐包的名称，仅云会议室返回。
 
         :param vmr_pkg_name: The vmr_pkg_name of this UserVmrDTO.
         :type vmr_pkg_name: str
@@ -237,7 +237,7 @@ class UserVmrDTO:
     def vmr_pkg_parties(self):
         """Gets the vmr_pkg_parties of this UserVmrDTO.
 
-        云会议室套餐包的会议并发方数，仅专用云会议室返回
+        云会议室套餐包的会议并发方数，仅云会议室返回。
 
         :return: The vmr_pkg_parties of this UserVmrDTO.
         :rtype: int
@@ -248,7 +248,7 @@ class UserVmrDTO:
     def vmr_pkg_parties(self, vmr_pkg_parties):
         """Sets the vmr_pkg_parties of this UserVmrDTO.
 
-        云会议室套餐包的会议并发方数，仅专用云会议室返回
+        云会议室套餐包的会议并发方数，仅云会议室返回。
 
         :param vmr_pkg_parties: The vmr_pkg_parties of this UserVmrDTO.
         :type vmr_pkg_parties: int
@@ -259,7 +259,7 @@ class UserVmrDTO:
     def vmr_pkg_length(self):
         """Gets the vmr_pkg_length of this UserVmrDTO.
 
-        云会议室套餐包的与会时间，若为0则代表无限时长，仅专用云会议室返回
+        云会议室套餐包的与会时间，若为0则代表无限时长，仅云会议室返回。
 
         :return: The vmr_pkg_length of this UserVmrDTO.
         :rtype: int
@@ -270,7 +270,7 @@ class UserVmrDTO:
     def vmr_pkg_length(self, vmr_pkg_length):
         """Sets the vmr_pkg_length of this UserVmrDTO.
 
-        云会议室套餐包的与会时间，若为0则代表无限时长，仅专用云会议室返回
+        云会议室套餐包的与会时间，若为0则代表无限时长，仅云会议室返回。
 
         :param vmr_pkg_length: The vmr_pkg_length of this UserVmrDTO.
         :type vmr_pkg_length: int
@@ -281,7 +281,7 @@ class UserVmrDTO:
     def status(self):
         """Gets the status of this UserVmrDTO.
 
-        云会议室状态。 * 0.正常 * 1.停用 * 2.未分配 
+        云会议室状态。 * 0：正常 * 1：停用 * 2：未分配 
 
         :return: The status of this UserVmrDTO.
         :rtype: int
@@ -292,7 +292,7 @@ class UserVmrDTO:
     def status(self, status):
         """Sets the status of this UserVmrDTO.
 
-        云会议室状态。 * 0.正常 * 1.停用 * 2.未分配 
+        云会议室状态。 * 0：正常 * 1：停用 * 2：未分配 
 
         :param status: The status of this UserVmrDTO.
         :type status: int

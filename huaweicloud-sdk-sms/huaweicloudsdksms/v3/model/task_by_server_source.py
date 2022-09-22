@@ -65,7 +65,7 @@ class TaskByServerSource:
 
         The model defined in huaweicloud sdk
 
-        :param id: 任务id
+        :param id: 任务ID
         :type id: str
         :param name: 任务名称
         :type name: str
@@ -81,13 +81,13 @@ class TaskByServerSource:
         :type migrate_speed: float
         :param start_target_server: 是否启动虚拟机
         :type start_target_server: bool
-        :param vm_template_id: 虚拟机模板id
+        :param vm_template_id: 虚拟机模板ID
         :type vm_template_id: str
         :param region_id: region_id
         :type region_id: str
         :param project_name: 项目名称
         :type project_name: str
-        :param project_id: 项目id
+        :param project_id: 项目ID
         :type project_id: str
         :param target_server: 
         :type target_server: :class:`huaweicloudsdksms.v3.TargetServerById`
@@ -95,7 +95,7 @@ class TaskByServerSource:
         :type log_collect_status: str
         :param exist_server: 是否使用已有虚拟机
         :type exist_server: bool
-        :param use_public_ip: 是否使用公网ip
+        :param use_public_ip: 是否使用公网IP
         :type use_public_ip: bool
         :param clone_server: 
         :type clone_server: :class:`huaweicloudsdksms.v3.CloneServer`
@@ -161,7 +161,7 @@ class TaskByServerSource:
     def id(self):
         """Gets the id of this TaskByServerSource.
 
-        任务id
+        任务ID
 
         :return: The id of this TaskByServerSource.
         :rtype: str
@@ -172,7 +172,7 @@ class TaskByServerSource:
     def id(self, id):
         """Sets the id of this TaskByServerSource.
 
-        任务id
+        任务ID
 
         :param id: The id of this TaskByServerSource.
         :type id: str
@@ -337,7 +337,7 @@ class TaskByServerSource:
     def vm_template_id(self):
         """Gets the vm_template_id of this TaskByServerSource.
 
-        虚拟机模板id
+        虚拟机模板ID
 
         :return: The vm_template_id of this TaskByServerSource.
         :rtype: str
@@ -348,7 +348,7 @@ class TaskByServerSource:
     def vm_template_id(self, vm_template_id):
         """Sets the vm_template_id of this TaskByServerSource.
 
-        虚拟机模板id
+        虚拟机模板ID
 
         :param vm_template_id: The vm_template_id of this TaskByServerSource.
         :type vm_template_id: str
@@ -403,7 +403,7 @@ class TaskByServerSource:
     def project_id(self):
         """Gets the project_id of this TaskByServerSource.
 
-        项目id
+        项目ID
 
         :return: The project_id of this TaskByServerSource.
         :rtype: str
@@ -414,7 +414,7 @@ class TaskByServerSource:
     def project_id(self, project_id):
         """Sets the project_id of this TaskByServerSource.
 
-        项目id
+        项目ID
 
         :param project_id: The project_id of this TaskByServerSource.
         :type project_id: str
@@ -489,7 +489,7 @@ class TaskByServerSource:
     def use_public_ip(self):
         """Gets the use_public_ip of this TaskByServerSource.
 
-        是否使用公网ip
+        是否使用公网IP
 
         :return: The use_public_ip of this TaskByServerSource.
         :rtype: bool
@@ -500,7 +500,7 @@ class TaskByServerSource:
     def use_public_ip(self, use_public_ip):
         """Sets the use_public_ip of this TaskByServerSource.
 
-        是否使用公网ip
+        是否使用公网IP
 
         :param use_public_ip: The use_public_ip of this TaskByServerSource.
         :type use_public_ip: bool

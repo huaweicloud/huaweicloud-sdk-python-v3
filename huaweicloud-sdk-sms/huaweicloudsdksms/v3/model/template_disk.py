@@ -21,24 +21,30 @@ class TemplateDisk:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'int',
         'index': 'int',
         'name': 'str',
         'disktype': 'str',
-        'size': 'int'
+        'size': 'int',
+        'device_use': 'str'
     }
 
     attribute_map = {
+        'id': 'id',
         'index': 'index',
         'name': 'name',
         'disktype': 'disktype',
-        'size': 'size'
+        'size': 'size',
+        'device_use': 'device_use'
     }
 
-    def __init__(self, index=None, name=None, disktype=None, size=None):
+    def __init__(self, id=None, index=None, name=None, disktype=None, size=None, device_use=None):
         """TemplateDisk
 
         The model defined in huaweicloud sdk
 
+        :param id: 磁盘ID
+        :type id: int
         :param index: 磁盘序号，从0开始
         :type index: int
         :param name: 磁盘名称
@@ -47,20 +53,50 @@ class TemplateDisk:
         :type disktype: str
         :param size: 磁盘大小，单位：GB
         :type size: int
+        :param device_use: 磁盘使用
+        :type device_use: str
         """
         
         
 
+        self._id = None
         self._index = None
         self._name = None
         self._disktype = None
         self._size = None
+        self._device_use = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         self.index = index
         self.name = name
         self.disktype = disktype
         self.size = size
+        if device_use is not None:
+            self.device_use = device_use
+
+    @property
+    def id(self):
+        """Gets the id of this TemplateDisk.
+
+        磁盘ID
+
+        :return: The id of this TemplateDisk.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this TemplateDisk.
+
+        磁盘ID
+
+        :param id: The id of this TemplateDisk.
+        :type id: int
+        """
+        self._id = id
 
     @property
     def index(self):
@@ -149,6 +185,28 @@ class TemplateDisk:
         :type size: int
         """
         self._size = size
+
+    @property
+    def device_use(self):
+        """Gets the device_use of this TemplateDisk.
+
+        磁盘使用
+
+        :return: The device_use of this TemplateDisk.
+        :rtype: str
+        """
+        return self._device_use
+
+    @device_use.setter
+    def device_use(self, device_use):
+        """Sets the device_use of this TemplateDisk.
+
+        磁盘使用
+
+        :param device_use: The device_use of this TemplateDisk.
+        :type device_use: str
+        """
+        self._device_use = device_use
 
     def to_dict(self):
         """Returns the model properties as a dict"""

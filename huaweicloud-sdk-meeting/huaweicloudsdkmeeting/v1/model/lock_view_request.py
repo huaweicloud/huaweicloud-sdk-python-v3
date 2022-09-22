@@ -41,9 +41,9 @@ class LockViewRequest:
 
         :param conference_id: 会议ID。
         :type conference_id: str
-        :param participant_id: 与会者标识。
+        :param participant_id: 专业会议终端的与会者标识。
         :type participant_id: str
-        :param x_conference_authorization: 会控授权令牌，通过获取会控token接口获得。
+        :param x_conference_authorization: 会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
         :type x_conference_authorization: str
         :param body: Body of the LockViewRequest
         :type body: :class:`huaweicloudsdkmeeting.v1.RestLockSiteViewReqBody`
@@ -89,7 +89,7 @@ class LockViewRequest:
     def participant_id(self):
         """Gets the participant_id of this LockViewRequest.
 
-        与会者标识。
+        专业会议终端的与会者标识。
 
         :return: The participant_id of this LockViewRequest.
         :rtype: str
@@ -100,7 +100,7 @@ class LockViewRequest:
     def participant_id(self, participant_id):
         """Sets the participant_id of this LockViewRequest.
 
-        与会者标识。
+        专业会议终端的与会者标识。
 
         :param participant_id: The participant_id of this LockViewRequest.
         :type participant_id: str
@@ -111,7 +111,7 @@ class LockViewRequest:
     def x_conference_authorization(self):
         """Gets the x_conference_authorization of this LockViewRequest.
 
-        会控授权令牌，通过获取会控token接口获得。
+        会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
         :return: The x_conference_authorization of this LockViewRequest.
         :rtype: str
@@ -122,7 +122,7 @@ class LockViewRequest:
     def x_conference_authorization(self, x_conference_authorization):
         """Sets the x_conference_authorization of this LockViewRequest.
 
-        会控授权令牌，通过获取会控token接口获得。
+        会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
         :param x_conference_authorization: The x_conference_authorization of this LockViewRequest.
         :type x_conference_authorization: str

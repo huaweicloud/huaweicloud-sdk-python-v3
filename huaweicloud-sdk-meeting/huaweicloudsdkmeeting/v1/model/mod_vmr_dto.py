@@ -41,11 +41,11 @@ class ModVmrDTO:
 
         The model defined in huaweicloud sdk
 
-        :param vmr_name: 云会议室名称 maxLength：128 minLength：1 
+        :param vmr_name: 云会议室名称。 
         :type vmr_name: str
-        :param gust_pwd: 来宾密码，“”代表不设置来宾密码 4~16位的数字 
+        :param gust_pwd: 来宾密码，设置为空字符串代表不设置来宾密码。 4~16位的数字 
         :type gust_pwd: str
-        :param chair_pwd: 主席密码 4~16位的数字 
+        :param chair_pwd: 主持人密码。4~16位的数字。 
         :type chair_pwd: str
         :param allow_gust_first: 是否允许来宾先入会。
         :type allow_gust_first: bool
@@ -77,7 +77,7 @@ class ModVmrDTO:
     def vmr_name(self):
         """Gets the vmr_name of this ModVmrDTO.
 
-        云会议室名称 maxLength：128 minLength：1 
+        云会议室名称。 
 
         :return: The vmr_name of this ModVmrDTO.
         :rtype: str
@@ -88,7 +88,7 @@ class ModVmrDTO:
     def vmr_name(self, vmr_name):
         """Sets the vmr_name of this ModVmrDTO.
 
-        云会议室名称 maxLength：128 minLength：1 
+        云会议室名称。 
 
         :param vmr_name: The vmr_name of this ModVmrDTO.
         :type vmr_name: str
@@ -99,7 +99,7 @@ class ModVmrDTO:
     def gust_pwd(self):
         """Gets the gust_pwd of this ModVmrDTO.
 
-        来宾密码，“”代表不设置来宾密码 4~16位的数字 
+        来宾密码，设置为空字符串代表不设置来宾密码。 4~16位的数字 
 
         :return: The gust_pwd of this ModVmrDTO.
         :rtype: str
@@ -110,7 +110,7 @@ class ModVmrDTO:
     def gust_pwd(self, gust_pwd):
         """Sets the gust_pwd of this ModVmrDTO.
 
-        来宾密码，“”代表不设置来宾密码 4~16位的数字 
+        来宾密码，设置为空字符串代表不设置来宾密码。 4~16位的数字 
 
         :param gust_pwd: The gust_pwd of this ModVmrDTO.
         :type gust_pwd: str
@@ -121,7 +121,7 @@ class ModVmrDTO:
     def chair_pwd(self):
         """Gets the chair_pwd of this ModVmrDTO.
 
-        主席密码 4~16位的数字 
+        主持人密码。4~16位的数字。 
 
         :return: The chair_pwd of this ModVmrDTO.
         :rtype: str
@@ -132,7 +132,7 @@ class ModVmrDTO:
     def chair_pwd(self, chair_pwd):
         """Sets the chair_pwd of this ModVmrDTO.
 
-        主席密码 4~16位的数字 
+        主持人密码。4~16位的数字。 
 
         :param chair_pwd: The chair_pwd of this ModVmrDTO.
         :type chair_pwd: str

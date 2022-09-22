@@ -37,11 +37,11 @@ class PicInfoNotify:
 
         The model defined in huaweicloud sdk
 
-        :param index: 多画面中每个画面的编号，编号从1开始
+        :param index: 多画面中每个画面的编号，编号从1开始。
         :type index: int
-        :param id: 每个画面中会话标识，即callNumber。
+        :param id: 每个画面中的与会者SIP号码。SIP号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)获取。
         :type id: list[str]
-        :param share: 是否为辅流 0： 不是辅流 1： 是辅流
+        :param share: 是否为辅流。 * 0： 不是辅流 * 1： 是辅流 
         :type share: int
         """
         
@@ -63,7 +63,7 @@ class PicInfoNotify:
     def index(self):
         """Gets the index of this PicInfoNotify.
 
-        多画面中每个画面的编号，编号从1开始
+        多画面中每个画面的编号，编号从1开始。
 
         :return: The index of this PicInfoNotify.
         :rtype: int
@@ -74,7 +74,7 @@ class PicInfoNotify:
     def index(self, index):
         """Sets the index of this PicInfoNotify.
 
-        多画面中每个画面的编号，编号从1开始
+        多画面中每个画面的编号，编号从1开始。
 
         :param index: The index of this PicInfoNotify.
         :type index: int
@@ -85,7 +85,7 @@ class PicInfoNotify:
     def id(self):
         """Gets the id of this PicInfoNotify.
 
-        每个画面中会话标识，即callNumber。
+        每个画面中的与会者SIP号码。SIP号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)获取。
 
         :return: The id of this PicInfoNotify.
         :rtype: list[str]
@@ -96,7 +96,7 @@ class PicInfoNotify:
     def id(self, id):
         """Sets the id of this PicInfoNotify.
 
-        每个画面中会话标识，即callNumber。
+        每个画面中的与会者SIP号码。SIP号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)获取。
 
         :param id: The id of this PicInfoNotify.
         :type id: list[str]
@@ -107,7 +107,7 @@ class PicInfoNotify:
     def share(self):
         """Gets the share of this PicInfoNotify.
 
-        是否为辅流 0： 不是辅流 1： 是辅流
+        是否为辅流。 * 0： 不是辅流 * 1： 是辅流 
 
         :return: The share of this PicInfoNotify.
         :rtype: int
@@ -118,7 +118,7 @@ class PicInfoNotify:
     def share(self, share):
         """Sets the share of this PicInfoNotify.
 
-        是否为辅流 0： 不是辅流 1： 是辅流
+        是否为辅流。 * 0： 不是辅流 * 1： 是辅流 
 
         :param share: The share of this PicInfoNotify.
         :type share: int

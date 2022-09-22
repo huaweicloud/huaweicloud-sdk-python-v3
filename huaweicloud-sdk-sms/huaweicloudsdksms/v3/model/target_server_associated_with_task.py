@@ -45,13 +45,13 @@ class TargetServerAssociatedWithTask:
 
         :param id: 目的端在SMS数据库中的ID
         :type id: str
-        :param vm_id: 目的端虚机id
+        :param vm_id: 目的端虚机ID
         :type vm_id: str
         :param name: 目的端服务器名称
         :type name: str
-        :param ip: 目的端服务器ip
+        :param ip: 目的端服务器IP
         :type ip: str
-        :param os_type: 目的端服务器的OS类型
+        :param os_type: 目的端服务器的OS类型 WINDOWS:WINDOWS系统 LINUX:LINUX系统 
         :type os_type: str
         :param os_version: 操作系统版本
         :type os_version: str
@@ -106,7 +106,7 @@ class TargetServerAssociatedWithTask:
     def vm_id(self):
         """Gets the vm_id of this TargetServerAssociatedWithTask.
 
-        目的端虚机id
+        目的端虚机ID
 
         :return: The vm_id of this TargetServerAssociatedWithTask.
         :rtype: str
@@ -117,7 +117,7 @@ class TargetServerAssociatedWithTask:
     def vm_id(self, vm_id):
         """Sets the vm_id of this TargetServerAssociatedWithTask.
 
-        目的端虚机id
+        目的端虚机ID
 
         :param vm_id: The vm_id of this TargetServerAssociatedWithTask.
         :type vm_id: str
@@ -150,7 +150,7 @@ class TargetServerAssociatedWithTask:
     def ip(self):
         """Gets the ip of this TargetServerAssociatedWithTask.
 
-        目的端服务器ip
+        目的端服务器IP
 
         :return: The ip of this TargetServerAssociatedWithTask.
         :rtype: str
@@ -161,7 +161,7 @@ class TargetServerAssociatedWithTask:
     def ip(self, ip):
         """Sets the ip of this TargetServerAssociatedWithTask.
 
-        目的端服务器ip
+        目的端服务器IP
 
         :param ip: The ip of this TargetServerAssociatedWithTask.
         :type ip: str
@@ -172,7 +172,7 @@ class TargetServerAssociatedWithTask:
     def os_type(self):
         """Gets the os_type of this TargetServerAssociatedWithTask.
 
-        目的端服务器的OS类型
+        目的端服务器的OS类型 WINDOWS:WINDOWS系统 LINUX:LINUX系统 
 
         :return: The os_type of this TargetServerAssociatedWithTask.
         :rtype: str
@@ -183,7 +183,7 @@ class TargetServerAssociatedWithTask:
     def os_type(self, os_type):
         """Sets the os_type of this TargetServerAssociatedWithTask.
 
-        目的端服务器的OS类型
+        目的端服务器的OS类型 WINDOWS:WINDOWS系统 LINUX:LINUX系统 
 
         :param os_type: The os_type of this TargetServerAssociatedWithTask.
         :type os_type: str

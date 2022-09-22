@@ -41,15 +41,15 @@ class SearchQosParticipantsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param conf_uuid: 会议UUID。最大不超过64个字节。
+        :param conf_uuid: 会议UUID。
         :type conf_uuid: str
-        :param conf_type: 会议类别。 * online：在线会议，在召开的会议。 * history：历史会议，已召开的会议。
+        :param conf_type: 会议类别。 * online：在线会议，正在召开的会议 * history：历史会议，已结束的会议
         :type conf_type: str
-        :param offset: 查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页的数据。
+        :param offset: 查询偏移量。 * 取值：大于等于0，默认值为0。 * 大于等于最大条目数量，则返回最后一页的数据。
         :type offset: int
-        :param limit: 查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
+        :param limit: 查询的条目数量。 * 取值：1-500，默认值为20。
         :type limit: int
-        :param search_key: 根据与会人名称作为关键词，模糊查询与会者列表
+        :param search_key: 查询条件。与会者名称可作为搜索内容。长度限制为1-512个字符。
         :type search_key: str
         """
         
@@ -75,7 +75,7 @@ class SearchQosParticipantsRequest:
     def conf_uuid(self):
         """Gets the conf_uuid of this SearchQosParticipantsRequest.
 
-        会议UUID。最大不超过64个字节。
+        会议UUID。
 
         :return: The conf_uuid of this SearchQosParticipantsRequest.
         :rtype: str
@@ -86,7 +86,7 @@ class SearchQosParticipantsRequest:
     def conf_uuid(self, conf_uuid):
         """Sets the conf_uuid of this SearchQosParticipantsRequest.
 
-        会议UUID。最大不超过64个字节。
+        会议UUID。
 
         :param conf_uuid: The conf_uuid of this SearchQosParticipantsRequest.
         :type conf_uuid: str
@@ -97,7 +97,7 @@ class SearchQosParticipantsRequest:
     def conf_type(self):
         """Gets the conf_type of this SearchQosParticipantsRequest.
 
-        会议类别。 * online：在线会议，在召开的会议。 * history：历史会议，已召开的会议。
+        会议类别。 * online：在线会议，正在召开的会议 * history：历史会议，已结束的会议
 
         :return: The conf_type of this SearchQosParticipantsRequest.
         :rtype: str
@@ -108,7 +108,7 @@ class SearchQosParticipantsRequest:
     def conf_type(self, conf_type):
         """Sets the conf_type of this SearchQosParticipantsRequest.
 
-        会议类别。 * online：在线会议，在召开的会议。 * history：历史会议，已召开的会议。
+        会议类别。 * online：在线会议，正在召开的会议 * history：历史会议，已结束的会议
 
         :param conf_type: The conf_type of this SearchQosParticipantsRequest.
         :type conf_type: str
@@ -119,7 +119,7 @@ class SearchQosParticipantsRequest:
     def offset(self):
         """Gets the offset of this SearchQosParticipantsRequest.
 
-        查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页的数据。
+        查询偏移量。 * 取值：大于等于0，默认值为0。 * 大于等于最大条目数量，则返回最后一页的数据。
 
         :return: The offset of this SearchQosParticipantsRequest.
         :rtype: int
@@ -130,7 +130,7 @@ class SearchQosParticipantsRequest:
     def offset(self, offset):
         """Sets the offset of this SearchQosParticipantsRequest.
 
-        查询偏移量。 * 取值：大于等于0，默认值为0。 * 小于最小值0时，系统设置为0。 * 大于等于最大条目数量，则返回最后一页的数据。
+        查询偏移量。 * 取值：大于等于0，默认值为0。 * 大于等于最大条目数量，则返回最后一页的数据。
 
         :param offset: The offset of this SearchQosParticipantsRequest.
         :type offset: int
@@ -141,7 +141,7 @@ class SearchQosParticipantsRequest:
     def limit(self):
         """Gets the limit of this SearchQosParticipantsRequest.
 
-        查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
+        查询的条目数量。 * 取值：1-500，默认值为20。
 
         :return: The limit of this SearchQosParticipantsRequest.
         :rtype: int
@@ -152,7 +152,7 @@ class SearchQosParticipantsRequest:
     def limit(self, limit):
         """Sets the limit of this SearchQosParticipantsRequest.
 
-        查询的条目数量。 * 取值：1-500，默认值为20。 * 小于最小值1时，系统设置为1。 * 大于最大值500时，系统设置为500。
+        查询的条目数量。 * 取值：1-500，默认值为20。
 
         :param limit: The limit of this SearchQosParticipantsRequest.
         :type limit: int
@@ -163,7 +163,7 @@ class SearchQosParticipantsRequest:
     def search_key(self):
         """Gets the search_key of this SearchQosParticipantsRequest.
 
-        根据与会人名称作为关键词，模糊查询与会者列表
+        查询条件。与会者名称可作为搜索内容。长度限制为1-512个字符。
 
         :return: The search_key of this SearchQosParticipantsRequest.
         :rtype: str
@@ -174,7 +174,7 @@ class SearchQosParticipantsRequest:
     def search_key(self, search_key):
         """Sets the search_key of this SearchQosParticipantsRequest.
 
-        根据与会人名称作为关键词，模糊查询与会者列表
+        查询条件。与会者名称可作为搜索内容。长度限制为1-512个字符。
 
         :param search_key: The search_key of this SearchQosParticipantsRequest.
         :type search_key: str

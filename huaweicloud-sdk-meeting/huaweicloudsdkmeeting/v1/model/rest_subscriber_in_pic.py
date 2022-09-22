@@ -37,11 +37,11 @@ class RestSubscriberInPic:
 
         The model defined in huaweicloud sdk
 
-        :param index: 多画面中每个画面的编号，编号从1开始
+        :param index: 多画面中每个画面的编号。编号从1开始。默认值为“1”。
         :type index: int
-        :param subscriber: 每个画面中会话标识，即Call_ID，通过会议状态通知获取
+        :param subscriber: 每个画面中与会者号码，从[[查询会议实时信息](https://support.huaweicloud.com/api-meeting/meeting_21_0029.html)](tag:hws)[[查询会议实时信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0029.html)](tag:hk)接口返回participants中的phone中获取。
         :type subscriber: list[str]
-        :param is_assist_stream: 是否为辅流 0： 不是辅流 1： 是辅流
+        :param is_assist_stream: 是否为辅流。默认值为0。 * 0： 不是辅流 * 1： 是辅流 
         :type is_assist_stream: int
         """
         
@@ -63,7 +63,7 @@ class RestSubscriberInPic:
     def index(self):
         """Gets the index of this RestSubscriberInPic.
 
-        多画面中每个画面的编号，编号从1开始
+        多画面中每个画面的编号。编号从1开始。默认值为“1”。
 
         :return: The index of this RestSubscriberInPic.
         :rtype: int
@@ -74,7 +74,7 @@ class RestSubscriberInPic:
     def index(self, index):
         """Sets the index of this RestSubscriberInPic.
 
-        多画面中每个画面的编号，编号从1开始
+        多画面中每个画面的编号。编号从1开始。默认值为“1”。
 
         :param index: The index of this RestSubscriberInPic.
         :type index: int
@@ -85,7 +85,7 @@ class RestSubscriberInPic:
     def subscriber(self):
         """Gets the subscriber of this RestSubscriberInPic.
 
-        每个画面中会话标识，即Call_ID，通过会议状态通知获取
+        每个画面中与会者号码，从[[查询会议实时信息](https://support.huaweicloud.com/api-meeting/meeting_21_0029.html)](tag:hws)[[查询会议实时信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0029.html)](tag:hk)接口返回participants中的phone中获取。
 
         :return: The subscriber of this RestSubscriberInPic.
         :rtype: list[str]
@@ -96,7 +96,7 @@ class RestSubscriberInPic:
     def subscriber(self, subscriber):
         """Sets the subscriber of this RestSubscriberInPic.
 
-        每个画面中会话标识，即Call_ID，通过会议状态通知获取
+        每个画面中与会者号码，从[[查询会议实时信息](https://support.huaweicloud.com/api-meeting/meeting_21_0029.html)](tag:hws)[[查询会议实时信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0029.html)](tag:hk)接口返回participants中的phone中获取。
 
         :param subscriber: The subscriber of this RestSubscriberInPic.
         :type subscriber: list[str]
@@ -107,7 +107,7 @@ class RestSubscriberInPic:
     def is_assist_stream(self):
         """Gets the is_assist_stream of this RestSubscriberInPic.
 
-        是否为辅流 0： 不是辅流 1： 是辅流
+        是否为辅流。默认值为0。 * 0： 不是辅流 * 1： 是辅流 
 
         :return: The is_assist_stream of this RestSubscriberInPic.
         :rtype: int
@@ -118,7 +118,7 @@ class RestSubscriberInPic:
     def is_assist_stream(self, is_assist_stream):
         """Sets the is_assist_stream of this RestSubscriberInPic.
 
-        是否为辅流 0： 不是辅流 1： 是辅流
+        是否为辅流。默认值为0。 * 0： 不是辅流 * 1： 是辅流 
 
         :param is_assist_stream: The is_assist_stream of this RestSubscriberInPic.
         :type is_assist_stream: int

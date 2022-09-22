@@ -69,7 +69,7 @@ class PostMigProjectBody:
         :type use_public_ip: bool
         :param exist_server: 是否是已经存在的服务器
         :type exist_server: bool
-        :param type: 迁移项目类型
+        :param type: 迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移 
         :type type: str
         :param enterprise_project: 企业项目名称
         :type enterprise_project: str
@@ -289,7 +289,7 @@ class PostMigProjectBody:
     def type(self):
         """Gets the type of this PostMigProjectBody.
 
-        迁移项目类型
+        迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移 
 
         :return: The type of this PostMigProjectBody.
         :rtype: str
@@ -300,7 +300,7 @@ class PostMigProjectBody:
     def type(self, type):
         """Sets the type of this PostMigProjectBody.
 
-        迁移项目类型
+        迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移 
 
         :param type: The type of this PostMigProjectBody.
         :type type: str

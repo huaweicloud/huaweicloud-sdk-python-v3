@@ -39,13 +39,13 @@ class SearchQosParticipantDetailRequest:
 
         The model defined in huaweicloud sdk
 
-        :param conf_uuid: 会议UUID。最大不超过64个字节。
+        :param conf_uuid: 会议UUID。
         :type conf_uuid: str
-        :param conf_type: 会议类别。 * online：在线会议，在召开的会议。 * history：历史会议，已召开的会议。
+        :param conf_type: 会议类别。 * online：在线会议，在召开的会议 * history：历史会议，已召开的会议
         :type conf_type: str
-        :param participant_id: 与会者ID。最大不超过64个字节。
+        :param participant_id: 与会者标识。
         :type participant_id: str
-        :param qos_type: Qos类型。 - audio：音频。 - video：视频。 - screen：屏幕共享。 - cpu：cpu。
+        :param qos_type: Qos类型。 - audio：音频 - video：视频 - screen：屏幕共享 - cpu：cpu
         :type qos_type: str
         """
         
@@ -66,7 +66,7 @@ class SearchQosParticipantDetailRequest:
     def conf_uuid(self):
         """Gets the conf_uuid of this SearchQosParticipantDetailRequest.
 
-        会议UUID。最大不超过64个字节。
+        会议UUID。
 
         :return: The conf_uuid of this SearchQosParticipantDetailRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class SearchQosParticipantDetailRequest:
     def conf_uuid(self, conf_uuid):
         """Sets the conf_uuid of this SearchQosParticipantDetailRequest.
 
-        会议UUID。最大不超过64个字节。
+        会议UUID。
 
         :param conf_uuid: The conf_uuid of this SearchQosParticipantDetailRequest.
         :type conf_uuid: str
@@ -88,7 +88,7 @@ class SearchQosParticipantDetailRequest:
     def conf_type(self):
         """Gets the conf_type of this SearchQosParticipantDetailRequest.
 
-        会议类别。 * online：在线会议，在召开的会议。 * history：历史会议，已召开的会议。
+        会议类别。 * online：在线会议，在召开的会议 * history：历史会议，已召开的会议
 
         :return: The conf_type of this SearchQosParticipantDetailRequest.
         :rtype: str
@@ -99,7 +99,7 @@ class SearchQosParticipantDetailRequest:
     def conf_type(self, conf_type):
         """Sets the conf_type of this SearchQosParticipantDetailRequest.
 
-        会议类别。 * online：在线会议，在召开的会议。 * history：历史会议，已召开的会议。
+        会议类别。 * online：在线会议，在召开的会议 * history：历史会议，已召开的会议
 
         :param conf_type: The conf_type of this SearchQosParticipantDetailRequest.
         :type conf_type: str
@@ -110,7 +110,7 @@ class SearchQosParticipantDetailRequest:
     def participant_id(self):
         """Gets the participant_id of this SearchQosParticipantDetailRequest.
 
-        与会者ID。最大不超过64个字节。
+        与会者标识。
 
         :return: The participant_id of this SearchQosParticipantDetailRequest.
         :rtype: str
@@ -121,7 +121,7 @@ class SearchQosParticipantDetailRequest:
     def participant_id(self, participant_id):
         """Sets the participant_id of this SearchQosParticipantDetailRequest.
 
-        与会者ID。最大不超过64个字节。
+        与会者标识。
 
         :param participant_id: The participant_id of this SearchQosParticipantDetailRequest.
         :type participant_id: str
@@ -132,7 +132,7 @@ class SearchQosParticipantDetailRequest:
     def qos_type(self):
         """Gets the qos_type of this SearchQosParticipantDetailRequest.
 
-        Qos类型。 - audio：音频。 - video：视频。 - screen：屏幕共享。 - cpu：cpu。
+        Qos类型。 - audio：音频 - video：视频 - screen：屏幕共享 - cpu：cpu
 
         :return: The qos_type of this SearchQosParticipantDetailRequest.
         :rtype: str
@@ -143,7 +143,7 @@ class SearchQosParticipantDetailRequest:
     def qos_type(self, qos_type):
         """Sets the qos_type of this SearchQosParticipantDetailRequest.
 
-        Qos类型。 - audio：音频。 - video：视频。 - screen：屏幕共享。 - cpu：cpu。
+        Qos类型。 - audio：音频 - video：视频 - screen：屏幕共享 - cpu：cpu
 
         :param qos_type: The qos_type of this SearchQosParticipantDetailRequest.
         :type qos_type: str

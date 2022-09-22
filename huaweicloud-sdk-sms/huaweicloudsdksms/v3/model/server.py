@@ -77,7 +77,7 @@ class Server:
 
         :param id: 源端在SMS数据库中的ID
         :type id: str
-        :param ip: 源端服务器ip，注册源端时必选，更新非必选
+        :param ip: 源端服务器IP，注册源端时必选，更新非必选
         :type ip: str
         :param name: 用来区分不同源端服务器的名称
         :type name: str
@@ -215,7 +215,7 @@ class Server:
     def ip(self):
         """Gets the ip of this Server.
 
-        源端服务器ip，注册源端时必选，更新非必选
+        源端服务器IP，注册源端时必选，更新非必选
 
         :return: The ip of this Server.
         :rtype: str
@@ -226,7 +226,7 @@ class Server:
     def ip(self, ip):
         """Sets the ip of this Server.
 
-        源端服务器ip，注册源端时必选，更新非必选
+        源端服务器IP，注册源端时必选，更新非必选
 
         :param ip: The ip of this Server.
         :type ip: str

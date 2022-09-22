@@ -35,7 +35,7 @@ class QosCpuInfo:
 
         The model defined in huaweicloud sdk
 
-        :param client_cpu_max: 华为云会议最大CPU使用率。
+        :param client_cpu_max: App最大CPU使用率。
         :type client_cpu_max: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
         :param system_cpu_max: 系统最大CPU使用率。
         :type system_cpu_max: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
@@ -56,7 +56,7 @@ class QosCpuInfo:
     def client_cpu_max(self):
         """Gets the client_cpu_max of this QosCpuInfo.
 
-        华为云会议最大CPU使用率。
+        App最大CPU使用率。
 
         :return: The client_cpu_max of this QosCpuInfo.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]
@@ -67,7 +67,7 @@ class QosCpuInfo:
     def client_cpu_max(self, client_cpu_max):
         """Sets the client_cpu_max of this QosCpuInfo.
 
-        华为云会议最大CPU使用率。
+        App最大CPU使用率。
 
         :param client_cpu_max: The client_cpu_max of this QosCpuInfo.
         :type client_cpu_max: list[:class:`huaweicloudsdkmeeting.v1.QosDataElement`]

@@ -43,17 +43,17 @@ class ProxyTokenDTO:
 
         The model defined in huaweicloud sdk
 
-        :param access_token: 代理鉴权服务器的短token字符串
+        :param access_token: 代理鉴权服务器的短token字符串。
         :type access_token: str
-        :param long_access_token: 代理鉴权服务器的长token字符串
+        :param long_access_token: 代理鉴权服务器的长token字符串。
         :type long_access_token: str
-        :param valid_period: token有效时长，单位：秒。
+        :param valid_period: Token有效时长，单位：秒。
         :type valid_period: int
         :param middle_end_url: 中台地址。
         :type middle_end_url: str
-        :param middle_end_inner_url: 中台内网地址
+        :param middle_end_inner_url: 中台内网地址。
         :type middle_end_inner_url: str
-        :param enable_rerouting: 是否开启二次路由
+        :param enable_rerouting: 是否开启二次路由。
         :type enable_rerouting: bool
         """
         
@@ -83,7 +83,7 @@ class ProxyTokenDTO:
     def access_token(self):
         """Gets the access_token of this ProxyTokenDTO.
 
-        代理鉴权服务器的短token字符串
+        代理鉴权服务器的短token字符串。
 
         :return: The access_token of this ProxyTokenDTO.
         :rtype: str
@@ -94,7 +94,7 @@ class ProxyTokenDTO:
     def access_token(self, access_token):
         """Sets the access_token of this ProxyTokenDTO.
 
-        代理鉴权服务器的短token字符串
+        代理鉴权服务器的短token字符串。
 
         :param access_token: The access_token of this ProxyTokenDTO.
         :type access_token: str
@@ -105,7 +105,7 @@ class ProxyTokenDTO:
     def long_access_token(self):
         """Gets the long_access_token of this ProxyTokenDTO.
 
-        代理鉴权服务器的长token字符串
+        代理鉴权服务器的长token字符串。
 
         :return: The long_access_token of this ProxyTokenDTO.
         :rtype: str
@@ -116,7 +116,7 @@ class ProxyTokenDTO:
     def long_access_token(self, long_access_token):
         """Sets the long_access_token of this ProxyTokenDTO.
 
-        代理鉴权服务器的长token字符串
+        代理鉴权服务器的长token字符串。
 
         :param long_access_token: The long_access_token of this ProxyTokenDTO.
         :type long_access_token: str
@@ -127,7 +127,7 @@ class ProxyTokenDTO:
     def valid_period(self):
         """Gets the valid_period of this ProxyTokenDTO.
 
-        token有效时长，单位：秒。
+        Token有效时长，单位：秒。
 
         :return: The valid_period of this ProxyTokenDTO.
         :rtype: int
@@ -138,7 +138,7 @@ class ProxyTokenDTO:
     def valid_period(self, valid_period):
         """Sets the valid_period of this ProxyTokenDTO.
 
-        token有效时长，单位：秒。
+        Token有效时长，单位：秒。
 
         :param valid_period: The valid_period of this ProxyTokenDTO.
         :type valid_period: int
@@ -171,7 +171,7 @@ class ProxyTokenDTO:
     def middle_end_inner_url(self):
         """Gets the middle_end_inner_url of this ProxyTokenDTO.
 
-        中台内网地址
+        中台内网地址。
 
         :return: The middle_end_inner_url of this ProxyTokenDTO.
         :rtype: str
@@ -182,7 +182,7 @@ class ProxyTokenDTO:
     def middle_end_inner_url(self, middle_end_inner_url):
         """Sets the middle_end_inner_url of this ProxyTokenDTO.
 
-        中台内网地址
+        中台内网地址。
 
         :param middle_end_inner_url: The middle_end_inner_url of this ProxyTokenDTO.
         :type middle_end_inner_url: str
@@ -193,7 +193,7 @@ class ProxyTokenDTO:
     def enable_rerouting(self):
         """Gets the enable_rerouting of this ProxyTokenDTO.
 
-        是否开启二次路由
+        是否开启二次路由。
 
         :return: The enable_rerouting of this ProxyTokenDTO.
         :rtype: bool
@@ -204,7 +204,7 @@ class ProxyTokenDTO:
     def enable_rerouting(self, enable_rerouting):
         """Sets the enable_rerouting of this ProxyTokenDTO.
 
-        是否开启二次路由
+        是否开启二次路由。
 
         :param enable_rerouting: The enable_rerouting of this ProxyTokenDTO.
         :type enable_rerouting: bool

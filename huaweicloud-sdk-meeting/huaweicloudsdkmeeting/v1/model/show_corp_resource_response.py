@@ -91,21 +91,21 @@ class ShowCorpResourceResponse(SdkResponse):
         :type idea_hub_count: :class:`huaweicloudsdkmeeting.v1.ResDetailDTO`
         :param vmr: 查询云会议室套餐包分配数量结果。
         :type vmr: list[:class:`huaweicloudsdkmeeting.v1.QueryVmrPkgResResultDTO`]
-        :param enable_pstn: 在创建企业的时候设置的pstn权限开关
+        :param enable_pstn: 在创建企业的时候设置的pstn权限开关。
         :type enable_pstn: bool
-        :param enable_sms: 在创建企业的时候设置的短信权限开关
+        :param enable_sms: 企业是否通过短信形式发送会议通知。
         :type enable_sms: bool
-        :param enable_hybrid_cloud: 企业是否开启混合云模式
+        :param enable_hybrid_cloud: 企业是否开启混合云模式。
         :type enable_hybrid_cloud: bool
-        :param enable_cloud_disk: 是否开启云盘
+        :param enable_cloud_disk: 是否开启云盘。
         :type enable_cloud_disk: bool
-        :param enable_uc: 是否开启UC功能
+        :param enable_uc: 是否开启UC功能。
         :type enable_uc: bool
-        :param enable_ai_minutes: 是否开启Ai会议纪要
+        :param enable_ai_minutes: 是否开启Ai会议纪要。
         :type enable_ai_minutes: bool
-        :param single_conf_call_count: 单会议并发呼叫数
+        :param single_conf_call_count: 单会议并发呼叫数。
         :type single_conf_call_count: int
-        :param conf_length: 会议时长
+        :param conf_length: 会议时长。
         :type conf_length: int
         """
         
@@ -397,7 +397,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def enable_pstn(self):
         """Gets the enable_pstn of this ShowCorpResourceResponse.
 
-        在创建企业的时候设置的pstn权限开关
+        在创建企业的时候设置的pstn权限开关。
 
         :return: The enable_pstn of this ShowCorpResourceResponse.
         :rtype: bool
@@ -408,7 +408,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def enable_pstn(self, enable_pstn):
         """Sets the enable_pstn of this ShowCorpResourceResponse.
 
-        在创建企业的时候设置的pstn权限开关
+        在创建企业的时候设置的pstn权限开关。
 
         :param enable_pstn: The enable_pstn of this ShowCorpResourceResponse.
         :type enable_pstn: bool
@@ -419,7 +419,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def enable_sms(self):
         """Gets the enable_sms of this ShowCorpResourceResponse.
 
-        在创建企业的时候设置的短信权限开关
+        企业是否通过短信形式发送会议通知。
 
         :return: The enable_sms of this ShowCorpResourceResponse.
         :rtype: bool
@@ -430,7 +430,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def enable_sms(self, enable_sms):
         """Sets the enable_sms of this ShowCorpResourceResponse.
 
-        在创建企业的时候设置的短信权限开关
+        企业是否通过短信形式发送会议通知。
 
         :param enable_sms: The enable_sms of this ShowCorpResourceResponse.
         :type enable_sms: bool
@@ -441,7 +441,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def enable_hybrid_cloud(self):
         """Gets the enable_hybrid_cloud of this ShowCorpResourceResponse.
 
-        企业是否开启混合云模式
+        企业是否开启混合云模式。
 
         :return: The enable_hybrid_cloud of this ShowCorpResourceResponse.
         :rtype: bool
@@ -452,7 +452,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def enable_hybrid_cloud(self, enable_hybrid_cloud):
         """Sets the enable_hybrid_cloud of this ShowCorpResourceResponse.
 
-        企业是否开启混合云模式
+        企业是否开启混合云模式。
 
         :param enable_hybrid_cloud: The enable_hybrid_cloud of this ShowCorpResourceResponse.
         :type enable_hybrid_cloud: bool
@@ -463,7 +463,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def enable_cloud_disk(self):
         """Gets the enable_cloud_disk of this ShowCorpResourceResponse.
 
-        是否开启云盘
+        是否开启云盘。
 
         :return: The enable_cloud_disk of this ShowCorpResourceResponse.
         :rtype: bool
@@ -474,7 +474,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def enable_cloud_disk(self, enable_cloud_disk):
         """Sets the enable_cloud_disk of this ShowCorpResourceResponse.
 
-        是否开启云盘
+        是否开启云盘。
 
         :param enable_cloud_disk: The enable_cloud_disk of this ShowCorpResourceResponse.
         :type enable_cloud_disk: bool
@@ -485,7 +485,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def enable_uc(self):
         """Gets the enable_uc of this ShowCorpResourceResponse.
 
-        是否开启UC功能
+        是否开启UC功能。
 
         :return: The enable_uc of this ShowCorpResourceResponse.
         :rtype: bool
@@ -496,7 +496,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def enable_uc(self, enable_uc):
         """Sets the enable_uc of this ShowCorpResourceResponse.
 
-        是否开启UC功能
+        是否开启UC功能。
 
         :param enable_uc: The enable_uc of this ShowCorpResourceResponse.
         :type enable_uc: bool
@@ -507,7 +507,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def enable_ai_minutes(self):
         """Gets the enable_ai_minutes of this ShowCorpResourceResponse.
 
-        是否开启Ai会议纪要
+        是否开启Ai会议纪要。
 
         :return: The enable_ai_minutes of this ShowCorpResourceResponse.
         :rtype: bool
@@ -518,7 +518,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def enable_ai_minutes(self, enable_ai_minutes):
         """Sets the enable_ai_minutes of this ShowCorpResourceResponse.
 
-        是否开启Ai会议纪要
+        是否开启Ai会议纪要。
 
         :param enable_ai_minutes: The enable_ai_minutes of this ShowCorpResourceResponse.
         :type enable_ai_minutes: bool
@@ -529,7 +529,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def single_conf_call_count(self):
         """Gets the single_conf_call_count of this ShowCorpResourceResponse.
 
-        单会议并发呼叫数
+        单会议并发呼叫数。
 
         :return: The single_conf_call_count of this ShowCorpResourceResponse.
         :rtype: int
@@ -540,7 +540,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def single_conf_call_count(self, single_conf_call_count):
         """Sets the single_conf_call_count of this ShowCorpResourceResponse.
 
-        单会议并发呼叫数
+        单会议并发呼叫数。
 
         :param single_conf_call_count: The single_conf_call_count of this ShowCorpResourceResponse.
         :type single_conf_call_count: int
@@ -551,7 +551,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def conf_length(self):
         """Gets the conf_length of this ShowCorpResourceResponse.
 
-        会议时长
+        会议时长。
 
         :return: The conf_length of this ShowCorpResourceResponse.
         :rtype: int
@@ -562,7 +562,7 @@ class ShowCorpResourceResponse(SdkResponse):
     def conf_length(self, conf_length):
         """Sets the conf_length of this ShowCorpResourceResponse.
 
-        会议时长
+        会议时长。
 
         :param conf_length: The conf_length of this ShowCorpResourceResponse.
         :type conf_length: int

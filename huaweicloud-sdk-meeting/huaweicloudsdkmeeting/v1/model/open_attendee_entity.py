@@ -47,19 +47,19 @@ class OpenAttendeeEntity:
 
         The model defined in huaweicloud sdk
 
-        :param app_id: App ID，应用标识，一个应用只需创建一次。必填字段
+        :param app_id: App ID。如果是APP ID鉴权场景，此项必填。参考[[App ID的申请](https://support.huaweicloud.com/devg-meeting/meeting_20_0011.html#section1)](tag:hws)[[App ID的申请](https://support.huaweicloud.com/intl/zh-cn/devg-meeting/meeting_20_0011.html#section1)](tag:hk)。
         :type app_id: str
-        :param user_account: 与会者的账号ID。如果是账号/密码鉴权场景，表示华为云会议帐号ID。如果是APP ID鉴权场景，表示第三方的User ID。必填字段
+        :param user_account: 嘉宾的帐号。 * 如果是帐号/密码鉴权场景: 选填，表示华为云会议帐号ID * 如果是APP ID鉴权场景：必填，表示第三方的User ID，同时需要携带参数appId 
         :type user_account: str
-        :param user_name: 与会者名称或昵称。长度限制为96个字符
+        :param user_name: 嘉宾的名称。长度限制为96个字符。
         :type user_name: str
-        :param dept_name: 部门名称
+        :param dept_name: 部门名称，最大128字符。
         :type dept_name: str
-        :param phone: 号码（可支持SIP、TEL号码格式）。最大不超过127个字符。phone、email和sms三者需至少填写一个。
+        :param phone: 号码。支持SIP号码或者手机号码。 * 如果是帐号/密码鉴权场景：必填 * 如果是APP ID鉴权场景：选填 &gt; * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 &gt; * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 &gt; * 呼叫手机需要开通PSTN权限，否则无法呼叫 
         :type phone: str
-        :param email: 邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个（用于预定、修改、取消会议的信息通知）。
+        :param email: 邮件地址。需要发邮件通知时填写。
         :type email: str
-        :param sms: 短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。（用于预定、修改、取消会议的信息通知）。
+        :param sms: 短信通知的手机号码。需要发短信通知时填写。
         :type sms: str
         :param is_hard_terminal: 是否硬终端（会议室或硬终端）。
         :type is_hard_terminal: bool
@@ -97,7 +97,7 @@ class OpenAttendeeEntity:
     def app_id(self):
         """Gets the app_id of this OpenAttendeeEntity.
 
-        App ID，应用标识，一个应用只需创建一次。必填字段
+        App ID。如果是APP ID鉴权场景，此项必填。参考[[App ID的申请](https://support.huaweicloud.com/devg-meeting/meeting_20_0011.html#section1)](tag:hws)[[App ID的申请](https://support.huaweicloud.com/intl/zh-cn/devg-meeting/meeting_20_0011.html#section1)](tag:hk)。
 
         :return: The app_id of this OpenAttendeeEntity.
         :rtype: str
@@ -108,7 +108,7 @@ class OpenAttendeeEntity:
     def app_id(self, app_id):
         """Sets the app_id of this OpenAttendeeEntity.
 
-        App ID，应用标识，一个应用只需创建一次。必填字段
+        App ID。如果是APP ID鉴权场景，此项必填。参考[[App ID的申请](https://support.huaweicloud.com/devg-meeting/meeting_20_0011.html#section1)](tag:hws)[[App ID的申请](https://support.huaweicloud.com/intl/zh-cn/devg-meeting/meeting_20_0011.html#section1)](tag:hk)。
 
         :param app_id: The app_id of this OpenAttendeeEntity.
         :type app_id: str
@@ -119,7 +119,7 @@ class OpenAttendeeEntity:
     def user_account(self):
         """Gets the user_account of this OpenAttendeeEntity.
 
-        与会者的账号ID。如果是账号/密码鉴权场景，表示华为云会议帐号ID。如果是APP ID鉴权场景，表示第三方的User ID。必填字段
+        嘉宾的帐号。 * 如果是帐号/密码鉴权场景: 选填，表示华为云会议帐号ID * 如果是APP ID鉴权场景：必填，表示第三方的User ID，同时需要携带参数appId 
 
         :return: The user_account of this OpenAttendeeEntity.
         :rtype: str
@@ -130,7 +130,7 @@ class OpenAttendeeEntity:
     def user_account(self, user_account):
         """Sets the user_account of this OpenAttendeeEntity.
 
-        与会者的账号ID。如果是账号/密码鉴权场景，表示华为云会议帐号ID。如果是APP ID鉴权场景，表示第三方的User ID。必填字段
+        嘉宾的帐号。 * 如果是帐号/密码鉴权场景: 选填，表示华为云会议帐号ID * 如果是APP ID鉴权场景：必填，表示第三方的User ID，同时需要携带参数appId 
 
         :param user_account: The user_account of this OpenAttendeeEntity.
         :type user_account: str
@@ -141,7 +141,7 @@ class OpenAttendeeEntity:
     def user_name(self):
         """Gets the user_name of this OpenAttendeeEntity.
 
-        与会者名称或昵称。长度限制为96个字符
+        嘉宾的名称。长度限制为96个字符。
 
         :return: The user_name of this OpenAttendeeEntity.
         :rtype: str
@@ -152,7 +152,7 @@ class OpenAttendeeEntity:
     def user_name(self, user_name):
         """Sets the user_name of this OpenAttendeeEntity.
 
-        与会者名称或昵称。长度限制为96个字符
+        嘉宾的名称。长度限制为96个字符。
 
         :param user_name: The user_name of this OpenAttendeeEntity.
         :type user_name: str
@@ -163,7 +163,7 @@ class OpenAttendeeEntity:
     def dept_name(self):
         """Gets the dept_name of this OpenAttendeeEntity.
 
-        部门名称
+        部门名称，最大128字符。
 
         :return: The dept_name of this OpenAttendeeEntity.
         :rtype: str
@@ -174,7 +174,7 @@ class OpenAttendeeEntity:
     def dept_name(self, dept_name):
         """Sets the dept_name of this OpenAttendeeEntity.
 
-        部门名称
+        部门名称，最大128字符。
 
         :param dept_name: The dept_name of this OpenAttendeeEntity.
         :type dept_name: str
@@ -185,7 +185,7 @@ class OpenAttendeeEntity:
     def phone(self):
         """Gets the phone of this OpenAttendeeEntity.
 
-        号码（可支持SIP、TEL号码格式）。最大不超过127个字符。phone、email和sms三者需至少填写一个。
+        号码。支持SIP号码或者手机号码。 * 如果是帐号/密码鉴权场景：必填 * 如果是APP ID鉴权场景：选填 > * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 > * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 > * 呼叫手机需要开通PSTN权限，否则无法呼叫 
 
         :return: The phone of this OpenAttendeeEntity.
         :rtype: str
@@ -196,7 +196,7 @@ class OpenAttendeeEntity:
     def phone(self, phone):
         """Sets the phone of this OpenAttendeeEntity.
 
-        号码（可支持SIP、TEL号码格式）。最大不超过127个字符。phone、email和sms三者需至少填写一个。
+        号码。支持SIP号码或者手机号码。 * 如果是帐号/密码鉴权场景：必填 * 如果是APP ID鉴权场景：选填 > * 号码可以通过[[查询企业通讯](https://support.huaweicloud.com/api-meeting/meeting_21_0512.html)](tag:hws)[[查询企业通讯](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0512.html)](tag:hk)接口录获取。返回的number是SIP号码，phone是手机号码 > * 填SIP号码系统会呼叫对应的软终端或者硬终端；填手机号码系统会呼叫手机 > * 呼叫手机需要开通PSTN权限，否则无法呼叫 
 
         :param phone: The phone of this OpenAttendeeEntity.
         :type phone: str
@@ -207,7 +207,7 @@ class OpenAttendeeEntity:
     def email(self):
         """Gets the email of this OpenAttendeeEntity.
 
-        邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个（用于预定、修改、取消会议的信息通知）。
+        邮件地址。需要发邮件通知时填写。
 
         :return: The email of this OpenAttendeeEntity.
         :rtype: str
@@ -218,7 +218,7 @@ class OpenAttendeeEntity:
     def email(self, email):
         """Sets the email of this OpenAttendeeEntity.
 
-        邮件地址。最大不超过255个字符。phone、email和sms三者需至少填写一个（用于预定、修改、取消会议的信息通知）。
+        邮件地址。需要发邮件通知时填写。
 
         :param email: The email of this OpenAttendeeEntity.
         :type email: str
@@ -229,7 +229,7 @@ class OpenAttendeeEntity:
     def sms(self):
         """Gets the sms of this OpenAttendeeEntity.
 
-        短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。（用于预定、修改、取消会议的信息通知）。
+        短信通知的手机号码。需要发短信通知时填写。
 
         :return: The sms of this OpenAttendeeEntity.
         :rtype: str
@@ -240,7 +240,7 @@ class OpenAttendeeEntity:
     def sms(self, sms):
         """Sets the sms of this OpenAttendeeEntity.
 
-        短信通知的手机号码。最大不超过32个字符。phone、email和sms三者需至少填写一个。（用于预定、修改、取消会议的信息通知）。
+        短信通知的手机号码。需要发短信通知时填写。
 
         :param sms: The sms of this OpenAttendeeEntity.
         :type sms: str

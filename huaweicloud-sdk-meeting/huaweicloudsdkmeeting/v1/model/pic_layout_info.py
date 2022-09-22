@@ -37,11 +37,11 @@ class PicLayoutInfo:
 
         The model defined in huaweicloud sdk
 
-        :param x: 多画面布局的宽度
+        :param x: 横向小格子数。
         :type x: int
-        :param y: 多画面布局的高度
+        :param y: 纵向小格子数。
         :type y: int
-        :param sub_pic_layout_info_list: 子画面布局具体列表
+        :param sub_pic_layout_info_list: 多画面信息。
         :type sub_pic_layout_info_list: list[:class:`huaweicloudsdkmeeting.v1.SubPicLayoutInfo`]
         """
         
@@ -63,7 +63,7 @@ class PicLayoutInfo:
     def x(self):
         """Gets the x of this PicLayoutInfo.
 
-        多画面布局的宽度
+        横向小格子数。
 
         :return: The x of this PicLayoutInfo.
         :rtype: int
@@ -74,7 +74,7 @@ class PicLayoutInfo:
     def x(self, x):
         """Sets the x of this PicLayoutInfo.
 
-        多画面布局的宽度
+        横向小格子数。
 
         :param x: The x of this PicLayoutInfo.
         :type x: int
@@ -85,7 +85,7 @@ class PicLayoutInfo:
     def y(self):
         """Gets the y of this PicLayoutInfo.
 
-        多画面布局的高度
+        纵向小格子数。
 
         :return: The y of this PicLayoutInfo.
         :rtype: int
@@ -96,7 +96,7 @@ class PicLayoutInfo:
     def y(self, y):
         """Sets the y of this PicLayoutInfo.
 
-        多画面布局的高度
+        纵向小格子数。
 
         :param y: The y of this PicLayoutInfo.
         :type y: int
@@ -107,7 +107,7 @@ class PicLayoutInfo:
     def sub_pic_layout_info_list(self):
         """Gets the sub_pic_layout_info_list of this PicLayoutInfo.
 
-        子画面布局具体列表
+        多画面信息。
 
         :return: The sub_pic_layout_info_list of this PicLayoutInfo.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.SubPicLayoutInfo`]
@@ -118,7 +118,7 @@ class PicLayoutInfo:
     def sub_pic_layout_info_list(self, sub_pic_layout_info_list):
         """Sets the sub_pic_layout_info_list of this PicLayoutInfo.
 
-        子画面布局具体列表
+        多画面信息。
 
         :param sub_pic_layout_info_list: The sub_pic_layout_info_list of this PicLayoutInfo.
         :type sub_pic_layout_info_list: list[:class:`huaweicloudsdkmeeting.v1.SubPicLayoutInfo`]

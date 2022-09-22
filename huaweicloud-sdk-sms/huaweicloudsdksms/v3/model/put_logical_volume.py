@@ -37,7 +37,7 @@ class PutLogicalVolume:
 
         The model defined in huaweicloud sdk
 
-        :param id: 逻辑卷id
+        :param id: 逻辑卷ID
         :type id: str
         :param need_migration: 是否迁移
         :type need_migration: bool
@@ -62,7 +62,7 @@ class PutLogicalVolume:
     def id(self):
         """Gets the id of this PutLogicalVolume.
 
-        逻辑卷id
+        逻辑卷ID
 
         :return: The id of this PutLogicalVolume.
         :rtype: str
@@ -73,7 +73,7 @@ class PutLogicalVolume:
     def id(self, id):
         """Sets the id of this PutLogicalVolume.
 
-        逻辑卷id
+        逻辑卷ID
 
         :param id: The id of this PutLogicalVolume.
         :type id: str

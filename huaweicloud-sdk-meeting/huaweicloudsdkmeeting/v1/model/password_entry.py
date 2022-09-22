@@ -35,7 +35,7 @@ class PasswordEntry:
 
         The model defined in huaweicloud sdk
 
-        :param conference_role: 会议角色。 - chair: 会议主持人。 - general: 普通与会者。
+        :param conference_role: 会议角色。 - chair: 会议主持人 - general: 普通与会者
         :type conference_role: str
         :param password: 会议中角色的密码（明文）。
         :type password: str
@@ -56,7 +56,7 @@ class PasswordEntry:
     def conference_role(self):
         """Gets the conference_role of this PasswordEntry.
 
-        会议角色。 - chair: 会议主持人。 - general: 普通与会者。
+        会议角色。 - chair: 会议主持人 - general: 普通与会者
 
         :return: The conference_role of this PasswordEntry.
         :rtype: str
@@ -67,7 +67,7 @@ class PasswordEntry:
     def conference_role(self, conference_role):
         """Sets the conference_role of this PasswordEntry.
 
-        会议角色。 - chair: 会议主持人。 - general: 普通与会者。
+        会议角色。 - chair: 会议主持人 - general: 普通与会者
 
         :param conference_role: The conference_role of this PasswordEntry.
         :type conference_role: str

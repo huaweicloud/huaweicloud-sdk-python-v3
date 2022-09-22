@@ -41,15 +41,15 @@ class DeptBasicDTO:
 
         The model defined in huaweicloud sdk
 
-        :param dept_code: 部门编码
+        :param dept_code: 部门编码。
         :type dept_code: str
-        :param corp_id: 企业id
+        :param corp_id: 企业id。
         :type corp_id: str
-        :param dept_name: 部门名称
+        :param dept_name: 部门名称。
         :type dept_name: str
-        :param dept_name_path: 部门名称路径
+        :param dept_name_path: 部门名称路径。
         :type dept_name_path: str
-        :param parent_dept_code: 父部门编码
+        :param parent_dept_code: 父部门编码。
         :type parent_dept_code: str
         """
         
@@ -77,7 +77,7 @@ class DeptBasicDTO:
     def dept_code(self):
         """Gets the dept_code of this DeptBasicDTO.
 
-        部门编码
+        部门编码。
 
         :return: The dept_code of this DeptBasicDTO.
         :rtype: str
@@ -88,7 +88,7 @@ class DeptBasicDTO:
     def dept_code(self, dept_code):
         """Sets the dept_code of this DeptBasicDTO.
 
-        部门编码
+        部门编码。
 
         :param dept_code: The dept_code of this DeptBasicDTO.
         :type dept_code: str
@@ -99,7 +99,7 @@ class DeptBasicDTO:
     def corp_id(self):
         """Gets the corp_id of this DeptBasicDTO.
 
-        企业id
+        企业id。
 
         :return: The corp_id of this DeptBasicDTO.
         :rtype: str
@@ -110,7 +110,7 @@ class DeptBasicDTO:
     def corp_id(self, corp_id):
         """Sets the corp_id of this DeptBasicDTO.
 
-        企业id
+        企业id。
 
         :param corp_id: The corp_id of this DeptBasicDTO.
         :type corp_id: str
@@ -121,7 +121,7 @@ class DeptBasicDTO:
     def dept_name(self):
         """Gets the dept_name of this DeptBasicDTO.
 
-        部门名称
+        部门名称。
 
         :return: The dept_name of this DeptBasicDTO.
         :rtype: str
@@ -132,7 +132,7 @@ class DeptBasicDTO:
     def dept_name(self, dept_name):
         """Sets the dept_name of this DeptBasicDTO.
 
-        部门名称
+        部门名称。
 
         :param dept_name: The dept_name of this DeptBasicDTO.
         :type dept_name: str
@@ -143,7 +143,7 @@ class DeptBasicDTO:
     def dept_name_path(self):
         """Gets the dept_name_path of this DeptBasicDTO.
 
-        部门名称路径
+        部门名称路径。
 
         :return: The dept_name_path of this DeptBasicDTO.
         :rtype: str
@@ -154,7 +154,7 @@ class DeptBasicDTO:
     def dept_name_path(self, dept_name_path):
         """Sets the dept_name_path of this DeptBasicDTO.
 
-        部门名称路径
+        部门名称路径。
 
         :param dept_name_path: The dept_name_path of this DeptBasicDTO.
         :type dept_name_path: str
@@ -165,7 +165,7 @@ class DeptBasicDTO:
     def parent_dept_code(self):
         """Gets the parent_dept_code of this DeptBasicDTO.
 
-        父部门编码
+        父部门编码。
 
         :return: The parent_dept_code of this DeptBasicDTO.
         :rtype: str
@@ -176,7 +176,7 @@ class DeptBasicDTO:
     def parent_dept_code(self, parent_dept_code):
         """Sets the parent_dept_code of this DeptBasicDTO.
 
-        父部门编码
+        父部门编码。
 
         :param parent_dept_code: The parent_dept_code of this DeptBasicDTO.
         :type parent_dept_code: str

@@ -35,7 +35,7 @@ class InviteWithPwdRequest:
 
         The model defined in huaweicloud sdk
 
-        :param conference_id: 会议ID
+        :param conference_id: 会议ID。
         :type conference_id: str
         :param body: Body of the InviteWithPwdRequest
         :type body: :class:`huaweicloudsdkmeeting.v1.RestInviteWithPwdReqBody`
@@ -55,7 +55,7 @@ class InviteWithPwdRequest:
     def conference_id(self):
         """Gets the conference_id of this InviteWithPwdRequest.
 
-        会议ID
+        会议ID。
 
         :return: The conference_id of this InviteWithPwdRequest.
         :rtype: str
@@ -66,7 +66,7 @@ class InviteWithPwdRequest:
     def conference_id(self, conference_id):
         """Sets the conference_id of this InviteWithPwdRequest.
 
-        会议ID
+        会议ID。
 
         :param conference_id: The conference_id of this InviteWithPwdRequest.
         :type conference_id: str

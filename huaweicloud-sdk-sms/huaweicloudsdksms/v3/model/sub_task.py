@@ -21,6 +21,7 @@ class SubTask:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'int',
         'name': 'str',
         'progress': 'int',
         'start_date': 'int',
@@ -31,6 +32,7 @@ class SubTask:
     }
 
     attribute_map = {
+        'id': 'id',
         'name': 'name',
         'progress': 'progress',
         'start_date': 'start_date',
@@ -40,11 +42,13 @@ class SubTask:
         'process_trace': 'process_trace'
     }
 
-    def __init__(self, name=None, progress=None, start_date=None, end_date=None, migrate_speed=None, user_op=None, process_trace=None):
+    def __init__(self, id=None, name=None, progress=None, start_date=None, end_date=None, migrate_speed=None, user_op=None, process_trace=None):
         """SubTask
 
         The model defined in huaweicloud sdk
 
+        :param id: 子任务ID
+        :type id: int
         :param name: 子任务名称
         :type name: str
         :param progress: 子任务的进度，取值为0-100之间的整数
@@ -63,6 +67,7 @@ class SubTask:
         
         
 
+        self._id = None
         self._name = None
         self._progress = None
         self._start_date = None
@@ -72,6 +77,8 @@ class SubTask:
         self._process_trace = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         if name is not None:
             self.name = name
         self.progress = progress
@@ -85,6 +92,28 @@ class SubTask:
             self.user_op = user_op
         if process_trace is not None:
             self.process_trace = process_trace
+
+    @property
+    def id(self):
+        """Gets the id of this SubTask.
+
+        子任务ID
+
+        :return: The id of this SubTask.
+        :rtype: int
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this SubTask.
+
+        子任务ID
+
+        :param id: The id of this SubTask.
+        :type id: int
+        """
+        self._id = id
 
     @property
     def name(self):

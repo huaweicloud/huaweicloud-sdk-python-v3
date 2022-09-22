@@ -39,11 +39,11 @@ class AddCorpAdminRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param account_type: 账号类型 * 0：会议账号 * 1：表示第三方账号。 默认0 
+        :param account_type: 帐号类型。默认0。 * 0：会议帐号 * 1：表示第三方帐号。 
         :type account_type: int
         :param body: Body of the AddCorpAdminRequest
         :type body: :class:`huaweicloudsdkmeeting.v1.CorpAdminDTO`
@@ -70,7 +70,7 @@ class AddCorpAdminRequest:
     def x_request_id(self):
         """Gets the x_request_id of this AddCorpAdminRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this AddCorpAdminRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class AddCorpAdminRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this AddCorpAdminRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this AddCorpAdminRequest.
         :type x_request_id: str
@@ -92,7 +92,7 @@ class AddCorpAdminRequest:
     def accept_language(self):
         """Gets the accept_language of this AddCorpAdminRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this AddCorpAdminRequest.
         :rtype: str
@@ -103,7 +103,7 @@ class AddCorpAdminRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this AddCorpAdminRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this AddCorpAdminRequest.
         :type accept_language: str
@@ -114,7 +114,7 @@ class AddCorpAdminRequest:
     def account_type(self):
         """Gets the account_type of this AddCorpAdminRequest.
 
-        账号类型 * 0：会议账号 * 1：表示第三方账号。 默认0 
+        帐号类型。默认0。 * 0：会议帐号 * 1：表示第三方帐号。 
 
         :return: The account_type of this AddCorpAdminRequest.
         :rtype: int
@@ -125,7 +125,7 @@ class AddCorpAdminRequest:
     def account_type(self, account_type):
         """Sets the account_type of this AddCorpAdminRequest.
 
-        账号类型 * 0：会议账号 * 1：表示第三方账号。 默认0 
+        帐号类型。默认0。 * 0：会议帐号 * 1：表示第三方帐号。 
 
         :param account_type: The account_type of this AddCorpAdminRequest.
         :type account_type: int

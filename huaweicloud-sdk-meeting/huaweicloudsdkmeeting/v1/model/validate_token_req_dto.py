@@ -37,11 +37,11 @@ class ValidateTokenReqDTO:
 
         The model defined in huaweicloud sdk
 
-        :param token: 登录用账号的token字符串
+        :param token: Access Token。
         :type token: str
-        :param need_gen_new_token: 是否生成新的token，内部使用参数。 true：生成新的token值。 false：不生成新的token值。 
+        :param need_gen_new_token: 是否生成新的Token。 * true：生成新的token值 * false：不生成新的token值 
         :type need_gen_new_token: bool
-        :param need_account_info: 是否需要返回用户可见帐号信息（帐号、用户姓名等信息）。
+        :param need_account_info: 是否需要返回用户帐号信息（帐号、用户名称等信息）。
         :type need_account_info: bool
         """
         
@@ -61,7 +61,7 @@ class ValidateTokenReqDTO:
     def token(self):
         """Gets the token of this ValidateTokenReqDTO.
 
-        登录用账号的token字符串
+        Access Token。
 
         :return: The token of this ValidateTokenReqDTO.
         :rtype: str
@@ -72,7 +72,7 @@ class ValidateTokenReqDTO:
     def token(self, token):
         """Sets the token of this ValidateTokenReqDTO.
 
-        登录用账号的token字符串
+        Access Token。
 
         :param token: The token of this ValidateTokenReqDTO.
         :type token: str
@@ -83,7 +83,7 @@ class ValidateTokenReqDTO:
     def need_gen_new_token(self):
         """Gets the need_gen_new_token of this ValidateTokenReqDTO.
 
-        是否生成新的token，内部使用参数。 true：生成新的token值。 false：不生成新的token值。 
+        是否生成新的Token。 * true：生成新的token值 * false：不生成新的token值 
 
         :return: The need_gen_new_token of this ValidateTokenReqDTO.
         :rtype: bool
@@ -94,7 +94,7 @@ class ValidateTokenReqDTO:
     def need_gen_new_token(self, need_gen_new_token):
         """Sets the need_gen_new_token of this ValidateTokenReqDTO.
 
-        是否生成新的token，内部使用参数。 true：生成新的token值。 false：不生成新的token值。 
+        是否生成新的Token。 * true：生成新的token值 * false：不生成新的token值 
 
         :param need_gen_new_token: The need_gen_new_token of this ValidateTokenReqDTO.
         :type need_gen_new_token: bool
@@ -105,7 +105,7 @@ class ValidateTokenReqDTO:
     def need_account_info(self):
         """Gets the need_account_info of this ValidateTokenReqDTO.
 
-        是否需要返回用户可见帐号信息（帐号、用户姓名等信息）。
+        是否需要返回用户帐号信息（帐号、用户名称等信息）。
 
         :return: The need_account_info of this ValidateTokenReqDTO.
         :rtype: bool
@@ -116,7 +116,7 @@ class ValidateTokenReqDTO:
     def need_account_info(self, need_account_info):
         """Sets the need_account_info of this ValidateTokenReqDTO.
 
-        是否需要返回用户可见帐号信息（帐号、用户姓名等信息）。
+        是否需要返回用户帐号信息（帐号、用户名称等信息）。
 
         :param need_account_info: The need_account_info of this ValidateTokenReqDTO.
         :type need_account_info: bool

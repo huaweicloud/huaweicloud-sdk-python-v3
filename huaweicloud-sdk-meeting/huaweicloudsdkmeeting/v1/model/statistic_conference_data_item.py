@@ -45,7 +45,7 @@ class StatisticConferenceDataItem:
 
         The model defined in huaweicloud sdk
 
-        :param time: * 日期/月份，category &#x3D; conference_info时有效。 * 小时，category &#x3D; conference_hourly_info时有效。
+        :param time: 日期/月份，category &#x3D; conference_info时有效。 小时，category &#x3D; conference_hourly_info时有效。
         :type time: str
         :param conf_count: 会议数(含VMR)。 category &#x3D; conference_info时有效。
         :type conf_count: str
@@ -91,7 +91,7 @@ class StatisticConferenceDataItem:
     def time(self):
         """Gets the time of this StatisticConferenceDataItem.
 
-        * 日期/月份，category = conference_info时有效。 * 小时，category = conference_hourly_info时有效。
+        日期/月份，category = conference_info时有效。 小时，category = conference_hourly_info时有效。
 
         :return: The time of this StatisticConferenceDataItem.
         :rtype: str
@@ -102,7 +102,7 @@ class StatisticConferenceDataItem:
     def time(self, time):
         """Sets the time of this StatisticConferenceDataItem.
 
-        * 日期/月份，category = conference_info时有效。 * 小时，category = conference_hourly_info时有效。
+        日期/月份，category = conference_info时有效。 小时，category = conference_hourly_info时有效。
 
         :param time: The time of this StatisticConferenceDataItem.
         :type time: str

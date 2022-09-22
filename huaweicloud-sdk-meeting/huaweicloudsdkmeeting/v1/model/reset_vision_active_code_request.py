@@ -39,11 +39,11 @@ class ResetVisionActiveCodeRequest:
 
         The model defined in huaweicloud sdk
 
-        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        :param x_request_id: 请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
         :type x_request_id: str
-        :param accept_language: 语言参数，默认为中文zh-CN, 英文为en-US
+        :param accept_language: 语言参数，默认为中文zh-CN，英文为en-US。
         :type accept_language: str
-        :param account: 账号 可通过用户管理中分页查询用户接口获取，对应接口返回userAccount字段。 
+        :param account: 华为云会议帐号。 可通过[[分页查询用户](https://support.huaweicloud.com/api-meeting/meeting_21_0071.html)](tag:hws)[[分页查询用户](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0071.html)](tag:hk)接口获取，对应接口返回userAccount字段。 
         :type account: str
         :param body: Body of the ResetVisionActiveCodeRequest
         :type body: :class:`huaweicloudsdkmeeting.v1.ActiveDTO`
@@ -69,7 +69,7 @@ class ResetVisionActiveCodeRequest:
     def x_request_id(self):
         """Gets the x_request_id of this ResetVisionActiveCodeRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :return: The x_request_id of this ResetVisionActiveCodeRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class ResetVisionActiveCodeRequest:
     def x_request_id(self, x_request_id):
         """Sets the x_request_id of this ResetVisionActiveCodeRequest.
 
-        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
+        请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
         :param x_request_id: The x_request_id of this ResetVisionActiveCodeRequest.
         :type x_request_id: str
@@ -91,7 +91,7 @@ class ResetVisionActiveCodeRequest:
     def accept_language(self):
         """Gets the accept_language of this ResetVisionActiveCodeRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :return: The accept_language of this ResetVisionActiveCodeRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class ResetVisionActiveCodeRequest:
     def accept_language(self, accept_language):
         """Sets the accept_language of this ResetVisionActiveCodeRequest.
 
-        语言参数，默认为中文zh-CN, 英文为en-US
+        语言参数，默认为中文zh-CN，英文为en-US。
 
         :param accept_language: The accept_language of this ResetVisionActiveCodeRequest.
         :type accept_language: str
@@ -113,7 +113,7 @@ class ResetVisionActiveCodeRequest:
     def account(self):
         """Gets the account of this ResetVisionActiveCodeRequest.
 
-        账号 可通过用户管理中分页查询用户接口获取，对应接口返回userAccount字段。 
+        华为云会议帐号。 可通过[[分页查询用户](https://support.huaweicloud.com/api-meeting/meeting_21_0071.html)](tag:hws)[[分页查询用户](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0071.html)](tag:hk)接口获取，对应接口返回userAccount字段。 
 
         :return: The account of this ResetVisionActiveCodeRequest.
         :rtype: str
@@ -124,7 +124,7 @@ class ResetVisionActiveCodeRequest:
     def account(self, account):
         """Sets the account of this ResetVisionActiveCodeRequest.
 
-        账号 可通过用户管理中分页查询用户接口获取，对应接口返回userAccount字段。 
+        华为云会议帐号。 可通过[[分页查询用户](https://support.huaweicloud.com/api-meeting/meeting_21_0071.html)](tag:hws)[[分页查询用户](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0071.html)](tag:hk)接口获取，对应接口返回userAccount字段。 
 
         :param account: The account of this ResetVisionActiveCodeRequest.
         :type account: str

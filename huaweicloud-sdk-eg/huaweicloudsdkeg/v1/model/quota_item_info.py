@@ -23,10 +23,10 @@ class QuotaItemInfo:
     openapi_types = {
         'name': 'str',
         'type': 'str',
-        'max': 'str',
-        'min': 'str',
-        'quota': 'str',
-        'used': 'str'
+        'max': 'int',
+        'min': 'int',
+        'quota': 'int',
+        'used': 'int'
     }
 
     attribute_map = {
@@ -48,13 +48,13 @@ class QuotaItemInfo:
         :param type: 配额类型
         :type type: str
         :param max: 配额最大值
-        :type max: str
+        :type max: int
         :param min: 配额最小值
-        :type min: str
+        :type min: int
         :param quota: 当前租户的配额
-        :type quota: str
+        :type quota: int
         :param used: 当前租户已使用的配额
-        :type used: str
+        :type used: int
         """
         
         
@@ -131,7 +131,7 @@ class QuotaItemInfo:
         配额最大值
 
         :return: The max of this QuotaItemInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._max
 
@@ -142,7 +142,7 @@ class QuotaItemInfo:
         配额最大值
 
         :param max: The max of this QuotaItemInfo.
-        :type max: str
+        :type max: int
         """
         self._max = max
 
@@ -153,7 +153,7 @@ class QuotaItemInfo:
         配额最小值
 
         :return: The min of this QuotaItemInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._min
 
@@ -164,7 +164,7 @@ class QuotaItemInfo:
         配额最小值
 
         :param min: The min of this QuotaItemInfo.
-        :type min: str
+        :type min: int
         """
         self._min = min
 
@@ -175,7 +175,7 @@ class QuotaItemInfo:
         当前租户的配额
 
         :return: The quota of this QuotaItemInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._quota
 
@@ -186,7 +186,7 @@ class QuotaItemInfo:
         当前租户的配额
 
         :param quota: The quota of this QuotaItemInfo.
-        :type quota: str
+        :type quota: int
         """
         self._quota = quota
 
@@ -197,7 +197,7 @@ class QuotaItemInfo:
         当前租户已使用的配额
 
         :return: The used of this QuotaItemInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._used
 
@@ -208,7 +208,7 @@ class QuotaItemInfo:
         当前租户已使用的配额
 
         :param used: The used of this QuotaItemInfo.
-        :type used: str
+        :type used: int
         """
         self._used = used
 
