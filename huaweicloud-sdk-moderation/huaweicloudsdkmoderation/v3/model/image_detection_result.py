@@ -23,7 +23,7 @@ class ImageDetectionResult:
     openapi_types = {
         'suggestion': 'str',
         'category': 'str',
-        'details': 'ImageDetectionResultDetail',
+        'details': 'list[ImageDetectionResultDetail]',
         'ocr_text': 'str'
     }
 
@@ -43,8 +43,8 @@ class ImageDetectionResult:
         :type suggestion: str
         :param category: 检测结果的一级标签。 支持category列表如下： politics: 涉政 terrorism: 暴恐 porn: 色情 image_text: 图文审核
         :type category: str
-        :param details: 
-        :type details: :class:`huaweicloudsdkmoderation.v3.ImageDetectionResultDetail`
+        :param details: 检测详情
+        :type details: list[:class:`huaweicloudsdkmoderation.v3.ImageDetectionResultDetail`]
         :param ocr_text: 图文审核检测出的文本，只有在category参数配置image_text且检测出文本时展示该字段。
         :type ocr_text: str
         """
@@ -114,9 +114,10 @@ class ImageDetectionResult:
     def details(self):
         """Gets the details of this ImageDetectionResult.
 
+        检测详情
 
         :return: The details of this ImageDetectionResult.
-        :rtype: :class:`huaweicloudsdkmoderation.v3.ImageDetectionResultDetail`
+        :rtype: list[:class:`huaweicloudsdkmoderation.v3.ImageDetectionResultDetail`]
         """
         return self._details
 
@@ -124,9 +125,10 @@ class ImageDetectionResult:
     def details(self, details):
         """Sets the details of this ImageDetectionResult.
 
+        检测详情
 
         :param details: The details of this ImageDetectionResult.
-        :type details: :class:`huaweicloudsdkmoderation.v3.ImageDetectionResultDetail`
+        :type details: list[:class:`huaweicloudsdkmoderation.v3.ImageDetectionResultDetail`]
         """
         self._details = details
 

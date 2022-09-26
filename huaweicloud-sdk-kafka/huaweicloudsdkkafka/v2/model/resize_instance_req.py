@@ -22,15 +22,21 @@ class ResizeInstanceReq:
 
     openapi_types = {
         'new_spec_code': 'str',
-        'new_storage_space': 'int'
+        'new_storage_space': 'int',
+        'oper_type': 'str',
+        'new_broker_num': 'int',
+        'new_product_id': 'str'
     }
 
     attribute_map = {
         'new_spec_code': 'new_spec_code',
-        'new_storage_space': 'new_storage_space'
+        'new_storage_space': 'new_storage_space',
+        'oper_type': 'oper_type',
+        'new_broker_num': 'new_broker_num',
+        'new_product_id': 'new_product_id'
     }
 
-    def __init__(self, new_spec_code=None, new_storage_space=None):
+    def __init__(self, new_spec_code=None, new_storage_space=None, oper_type=None, new_broker_num=None, new_product_id=None):
         """ResizeInstanceReq
 
         The model defined in huaweicloud sdk
@@ -39,18 +45,33 @@ class ResizeInstanceReq:
         :type new_spec_code: str
         :param new_storage_space: 规格变更后的消息存储空间，单位：GB。 若扩展实例基准带宽，则new_storage_space不能低于基准带宽规定的最小磁盘大小。
         :type new_storage_space: int
+        :param oper_type: 扩容类型, 新规格支持扩容类型：\&quot;horizontal\&quot;、\&quot;vertical\&quot;、\&quot;node\&quot;、\&quot;storage\&quot;四种类型。
+        :type oper_type: str
+        :param new_broker_num: 扩容后集群节点数。
+        :type new_broker_num: int
+        :param new_product_id: 新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。
+        :type new_product_id: str
         """
         
         
 
         self._new_spec_code = None
         self._new_storage_space = None
+        self._oper_type = None
+        self._new_broker_num = None
+        self._new_product_id = None
         self.discriminator = None
 
         if new_spec_code is not None:
             self.new_spec_code = new_spec_code
         if new_storage_space is not None:
             self.new_storage_space = new_storage_space
+        if oper_type is not None:
+            self.oper_type = oper_type
+        if new_broker_num is not None:
+            self.new_broker_num = new_broker_num
+        if new_product_id is not None:
+            self.new_product_id = new_product_id
 
     @property
     def new_spec_code(self):
@@ -95,6 +116,72 @@ class ResizeInstanceReq:
         :type new_storage_space: int
         """
         self._new_storage_space = new_storage_space
+
+    @property
+    def oper_type(self):
+        """Gets the oper_type of this ResizeInstanceReq.
+
+        扩容类型, 新规格支持扩容类型：\"horizontal\"、\"vertical\"、\"node\"、\"storage\"四种类型。
+
+        :return: The oper_type of this ResizeInstanceReq.
+        :rtype: str
+        """
+        return self._oper_type
+
+    @oper_type.setter
+    def oper_type(self, oper_type):
+        """Sets the oper_type of this ResizeInstanceReq.
+
+        扩容类型, 新规格支持扩容类型：\"horizontal\"、\"vertical\"、\"node\"、\"storage\"四种类型。
+
+        :param oper_type: The oper_type of this ResizeInstanceReq.
+        :type oper_type: str
+        """
+        self._oper_type = oper_type
+
+    @property
+    def new_broker_num(self):
+        """Gets the new_broker_num of this ResizeInstanceReq.
+
+        扩容后集群节点数。
+
+        :return: The new_broker_num of this ResizeInstanceReq.
+        :rtype: int
+        """
+        return self._new_broker_num
+
+    @new_broker_num.setter
+    def new_broker_num(self, new_broker_num):
+        """Sets the new_broker_num of this ResizeInstanceReq.
+
+        扩容后集群节点数。
+
+        :param new_broker_num: The new_broker_num of this ResizeInstanceReq.
+        :type new_broker_num: int
+        """
+        self._new_broker_num = new_broker_num
+
+    @property
+    def new_product_id(self):
+        """Gets the new_product_id of this ResizeInstanceReq.
+
+        新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。
+
+        :return: The new_product_id of this ResizeInstanceReq.
+        :rtype: str
+        """
+        return self._new_product_id
+
+    @new_product_id.setter
+    def new_product_id(self, new_product_id):
+        """Sets the new_product_id of this ResizeInstanceReq.
+
+        新规格变更后的产品ID。 涉及垂直扩容场景，需指定该项。
+
+        :param new_product_id: The new_product_id of this ResizeInstanceReq.
+        :type new_product_id: str
+        """
+        self._new_product_id = new_product_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -35,7 +35,7 @@ class FuncCode:
 
         The model defined in huaweicloud sdk
 
-        :param file: 函数代码，当CodeTye为inline/zip/jar时必选，且代码必须要进行base64编码。
+        :param file: 函数代码，如果不为空必须进行base64编码，为空时使用默认的代码。
         :type file: str
         :param link: 函数代码链接。
         :type link: str
@@ -47,14 +47,16 @@ class FuncCode:
         self._link = None
         self.discriminator = None
 
-        self.file = file
-        self.link = link
+        if file is not None:
+            self.file = file
+        if link is not None:
+            self.link = link
 
     @property
     def file(self):
         """Gets the file of this FuncCode.
 
-        函数代码，当CodeTye为inline/zip/jar时必选，且代码必须要进行base64编码。
+        函数代码，如果不为空必须进行base64编码，为空时使用默认的代码。
 
         :return: The file of this FuncCode.
         :rtype: str
@@ -65,7 +67,7 @@ class FuncCode:
     def file(self, file):
         """Sets the file of this FuncCode.
 
-        函数代码，当CodeTye为inline/zip/jar时必选，且代码必须要进行base64编码。
+        函数代码，如果不为空必须进行base64编码，为空时使用默认的代码。
 
         :param file: The file of this FuncCode.
         :type file: str

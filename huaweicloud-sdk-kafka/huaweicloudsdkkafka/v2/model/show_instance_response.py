@@ -85,6 +85,11 @@ class ShowInstanceResponse(SdkResponse):
         'agent_enable': 'bool',
         'pod_connect_address': 'str',
         'disk_encrypted': 'bool',
+        'disk_encrypted_key': 'str',
+        'public_management_connect_address': 'str',
+        'subnet_cidr': 'str',
+        'subnet_name': 'str',
+        'enable_acl': 'bool',
         'kafka_private_connect_address': 'str',
         'ces_version': 'str',
         'public_access_enabled': 'str',
@@ -160,6 +165,11 @@ class ShowInstanceResponse(SdkResponse):
         'agent_enable': 'agent_enable',
         'pod_connect_address': 'pod_connect_address',
         'disk_encrypted': 'disk_encrypted',
+        'disk_encrypted_key': 'disk_encrypted_key',
+        'public_management_connect_address': 'public_management_connect_address',
+        'subnet_cidr': 'subnet_cidr',
+        'subnet_name': 'subnet_name',
+        'enable_acl': 'enable_acl',
         'kafka_private_connect_address': 'kafka_private_connect_address',
         'ces_version': 'ces_version',
         'public_access_enabled': 'public_access_enabled',
@@ -170,7 +180,7 @@ class ShowInstanceResponse(SdkResponse):
         'dr_enable': 'dr_enable'
     }
 
-    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, ssl_two_way_enable=None, cert_replaced=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
+    def __init__(self, name=None, engine=None, engine_version=None, description=None, specification=None, storage_space=None, partition_num=None, used_storage_space=None, connect_address=None, port=None, status=None, instance_id=None, resource_spec_code=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, user_id=None, user_name=None, access_user=None, order_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, management_connect_address=None, ssl_enable=None, ssl_two_way_enable=None, cert_replaced=None, enterprise_project_id=None, is_logical_volume=None, extend_times=None, enable_auto_topic=None, type=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, available_zones=None, total_storage_space=None, public_connect_address=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, retention_policy=None, kafka_public_status=None, public_bandwidth=None, kafka_manager_user=None, enable_log_collection=None, cross_vpc_info=None, ipv6_enable=None, ipv6_connect_addresses=None, connector_enable=None, connector_id=None, rest_enable=None, rest_connect_address=None, public_boundwidth=None, message_query_inst_enable=None, vpc_client_plain=None, support_features=None, trace_enable=None, agent_enable=None, pod_connect_address=None, disk_encrypted=None, disk_encrypted_key=None, public_management_connect_address=None, subnet_cidr=None, subnet_name=None, enable_acl=None, kafka_private_connect_address=None, ces_version=None, public_access_enabled=None, node_num=None, new_spec_billing_enable=None, broker_num=None, tags=None, dr_enable=None):
         """ShowInstanceResponse
 
         The model defined in huaweicloud sdk
@@ -303,6 +313,16 @@ class ShowInstanceResponse(SdkResponse):
         :type pod_connect_address: str
         :param disk_encrypted: 是否开启磁盘加密。
         :type disk_encrypted: bool
+        :param disk_encrypted_key: 磁盘加密key，未开启磁盘加密时为空。
+        :type disk_encrypted_key: str
+        :param public_management_connect_address: 公网访问Kafka Manager连接地址。
+        :type public_management_connect_address: str
+        :param subnet_cidr: 子网网段。
+        :type subnet_cidr: str
+        :param subnet_name: 子网名称。
+        :type subnet_name: str
+        :param enable_acl: 是否开启访问控制。
+        :type enable_acl: bool
         :param kafka_private_connect_address: Kafka实例私有连接地址。
         :type kafka_private_connect_address: str
         :param ces_version: 云监控版本。
@@ -387,6 +407,11 @@ class ShowInstanceResponse(SdkResponse):
         self._agent_enable = None
         self._pod_connect_address = None
         self._disk_encrypted = None
+        self._disk_encrypted_key = None
+        self._public_management_connect_address = None
+        self._subnet_cidr = None
+        self._subnet_name = None
+        self._enable_acl = None
         self._kafka_private_connect_address = None
         self._ces_version = None
         self._public_access_enabled = None
@@ -525,6 +550,16 @@ class ShowInstanceResponse(SdkResponse):
             self.pod_connect_address = pod_connect_address
         if disk_encrypted is not None:
             self.disk_encrypted = disk_encrypted
+        if disk_encrypted_key is not None:
+            self.disk_encrypted_key = disk_encrypted_key
+        if public_management_connect_address is not None:
+            self.public_management_connect_address = public_management_connect_address
+        if subnet_cidr is not None:
+            self.subnet_cidr = subnet_cidr
+        if subnet_name is not None:
+            self.subnet_name = subnet_name
+        if enable_acl is not None:
+            self.enable_acl = enable_acl
         if kafka_private_connect_address is not None:
             self.kafka_private_connect_address = kafka_private_connect_address
         if ces_version is not None:
@@ -1949,6 +1984,116 @@ class ShowInstanceResponse(SdkResponse):
         :type disk_encrypted: bool
         """
         self._disk_encrypted = disk_encrypted
+
+    @property
+    def disk_encrypted_key(self):
+        """Gets the disk_encrypted_key of this ShowInstanceResponse.
+
+        磁盘加密key，未开启磁盘加密时为空。
+
+        :return: The disk_encrypted_key of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._disk_encrypted_key
+
+    @disk_encrypted_key.setter
+    def disk_encrypted_key(self, disk_encrypted_key):
+        """Sets the disk_encrypted_key of this ShowInstanceResponse.
+
+        磁盘加密key，未开启磁盘加密时为空。
+
+        :param disk_encrypted_key: The disk_encrypted_key of this ShowInstanceResponse.
+        :type disk_encrypted_key: str
+        """
+        self._disk_encrypted_key = disk_encrypted_key
+
+    @property
+    def public_management_connect_address(self):
+        """Gets the public_management_connect_address of this ShowInstanceResponse.
+
+        公网访问Kafka Manager连接地址。
+
+        :return: The public_management_connect_address of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._public_management_connect_address
+
+    @public_management_connect_address.setter
+    def public_management_connect_address(self, public_management_connect_address):
+        """Sets the public_management_connect_address of this ShowInstanceResponse.
+
+        公网访问Kafka Manager连接地址。
+
+        :param public_management_connect_address: The public_management_connect_address of this ShowInstanceResponse.
+        :type public_management_connect_address: str
+        """
+        self._public_management_connect_address = public_management_connect_address
+
+    @property
+    def subnet_cidr(self):
+        """Gets the subnet_cidr of this ShowInstanceResponse.
+
+        子网网段。
+
+        :return: The subnet_cidr of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._subnet_cidr
+
+    @subnet_cidr.setter
+    def subnet_cidr(self, subnet_cidr):
+        """Sets the subnet_cidr of this ShowInstanceResponse.
+
+        子网网段。
+
+        :param subnet_cidr: The subnet_cidr of this ShowInstanceResponse.
+        :type subnet_cidr: str
+        """
+        self._subnet_cidr = subnet_cidr
+
+    @property
+    def subnet_name(self):
+        """Gets the subnet_name of this ShowInstanceResponse.
+
+        子网名称。
+
+        :return: The subnet_name of this ShowInstanceResponse.
+        :rtype: str
+        """
+        return self._subnet_name
+
+    @subnet_name.setter
+    def subnet_name(self, subnet_name):
+        """Sets the subnet_name of this ShowInstanceResponse.
+
+        子网名称。
+
+        :param subnet_name: The subnet_name of this ShowInstanceResponse.
+        :type subnet_name: str
+        """
+        self._subnet_name = subnet_name
+
+    @property
+    def enable_acl(self):
+        """Gets the enable_acl of this ShowInstanceResponse.
+
+        是否开启访问控制。
+
+        :return: The enable_acl of this ShowInstanceResponse.
+        :rtype: bool
+        """
+        return self._enable_acl
+
+    @enable_acl.setter
+    def enable_acl(self, enable_acl):
+        """Sets the enable_acl of this ShowInstanceResponse.
+
+        是否开启访问控制。
+
+        :param enable_acl: The enable_acl of this ShowInstanceResponse.
+        :type enable_acl: bool
+        """
+        self._enable_acl = enable_acl
 
     @property
     def kafka_private_connect_address(self):

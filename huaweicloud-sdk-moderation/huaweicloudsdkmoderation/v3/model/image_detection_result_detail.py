@@ -27,7 +27,7 @@ class ImageDetectionResultDetail:
         'face_location': 'FaceLocationDetail',
         'qr_location': 'QRLocationDetail',
         'qr_content': 'str',
-        'segments': 'OCRTextDetail',
+        'segments': 'list[OCRTextDetail]',
         'label': 'str'
     }
 
@@ -59,8 +59,8 @@ class ImageDetectionResultDetail:
         :type qr_location: :class:`huaweicloudsdkmoderation.v3.QRLocationDetail`
         :param qr_content: 图片中二维码指向的链接，当请求参数categories中包含image_text时存在。
         :type qr_content: str
-        :param segments: 
-        :type segments: :class:`huaweicloudsdkmoderation.v3.OCRTextDetail`
+        :param segments: image_text场景下命中的文本片段。
+        :type segments: list[:class:`huaweicloudsdkmoderation.v3.OCRTextDetail`]
         :param label: 识别的详细标签。
         :type label: str
         """
@@ -223,9 +223,10 @@ class ImageDetectionResultDetail:
     def segments(self):
         """Gets the segments of this ImageDetectionResultDetail.
 
+        image_text场景下命中的文本片段。
 
         :return: The segments of this ImageDetectionResultDetail.
-        :rtype: :class:`huaweicloudsdkmoderation.v3.OCRTextDetail`
+        :rtype: list[:class:`huaweicloudsdkmoderation.v3.OCRTextDetail`]
         """
         return self._segments
 
@@ -233,9 +234,10 @@ class ImageDetectionResultDetail:
     def segments(self, segments):
         """Sets the segments of this ImageDetectionResultDetail.
 
+        image_text场景下命中的文本片段。
 
         :param segments: The segments of this ImageDetectionResultDetail.
-        :type segments: :class:`huaweicloudsdkmoderation.v3.OCRTextDetail`
+        :type segments: list[:class:`huaweicloudsdkmoderation.v3.OCRTextDetail`]
         """
         self._segments = segments
 

@@ -1,3 +1,35 @@
+# 3.1.4 2022-09-26
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateDependency`新增响应参数 `version`、`last_modified`
+  - 接口`ListDependencies`新增响应参数 `version`、`last_modified`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`新增响应参数 `disk_encrypted_key`、`public_management_connect_address`、`subnet_cidr`、`subnet_name`、`enable_acl`
+  - 接口`ShowInstance`新增响应参数 `disk_encrypted_key`、`public_management_connect_address`、`subnet_cidr`、`subnet_name`、`enable_acl`
+  - 接口`ResizeInstance`新增请求参数 `oper_type`、`new_broker_num`、`new_product_id`
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 修复接口`CheckImageModeration`响应参数类型错误的问题
+- _特性变更_
+  - 无
+
 # 3.1.3 2022-09-22
 
 ### HuaweiCloud SDK APIG

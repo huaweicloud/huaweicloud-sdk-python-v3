@@ -1,3 +1,35 @@
+# 3.1.4 2022-09-26
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `version`, `last_modified` to the interface `CreateDependency`
+  - Add the response parameters `version`, `last_modified` to the interface `ListDependencies`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `disk_encrypted_key`, `public_management_connect_address`, `subnet_cidr`, `subnet_name`, `enable_acl` to the interface `ListInstances`
+  - Add the response parameters `disk_encrypted_key`, `public_management_connect_address`, `subnet_cidr`, `subnet_name`, `enable_acl` to the interface `ShowInstance`
+  - Add the request parameters `oper_type`, `new_broker_num`, `new_product_id` to the interface `ResizeInstance`
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - None
+- _Bug Fix_
+  - Fix the problem that the response parameters' type of the interface `CheckImageModeration` is incorrect
+- _Change_
+  - None
+
 # 3.1.3 2022-09-22
 
 ### HuaweiCloud SDK APIG
