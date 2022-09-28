@@ -22,12 +22,12 @@ class CaseInfo:
 
     openapi_types = {
         'case_id': 'int',
-        'case_name': 'str',
+        'name': 'str',
         'case_type': 'int',
         'contents': 'list[Contents]',
         'for_loop_params': 'list[object]',
         'increase_setting': 'list[object]',
-        'stages': 'list[object]',
+        'stages': 'list[TestCaseStage]',
         'status': 'int',
         'temp_id': 'int',
         'sort': 'int'
@@ -35,7 +35,7 @@ class CaseInfo:
 
     attribute_map = {
         'case_id': 'case_id',
-        'case_name': 'case_name',
+        'name': 'name',
         'case_type': 'case_type',
         'contents': 'contents',
         'for_loop_params': 'for_loop_params',
@@ -46,15 +46,15 @@ class CaseInfo:
         'sort': 'sort'
     }
 
-    def __init__(self, case_id=None, case_name=None, case_type=None, contents=None, for_loop_params=None, increase_setting=None, stages=None, status=None, temp_id=None, sort=None):
+    def __init__(self, case_id=None, name=None, case_type=None, contents=None, for_loop_params=None, increase_setting=None, stages=None, status=None, temp_id=None, sort=None):
         """CaseInfo
 
         The model defined in huaweicloud sdk
 
         :param case_id: case_id
         :type case_id: int
-        :param case_name: case_name
-        :type case_name: str
+        :param name: 用例名称
+        :type name: str
         :param case_type: case_type
         :type case_type: int
         :param contents: contents
@@ -64,19 +64,19 @@ class CaseInfo:
         :param increase_setting: increase_setting
         :type increase_setting: list[object]
         :param stages: stages
-        :type stages: list[object]
-        :param status: status
+        :type stages: list[:class:`huaweicloudsdkcpts.v1.TestCaseStage`]
+        :param status: 状态，0：已删除；1：启用；2：禁用
         :type status: int
         :param temp_id: temp_id
         :type temp_id: int
-        :param sort: sort
+        :param sort: 排序字段
         :type sort: int
         """
         
         
 
         self._case_id = None
-        self._case_name = None
+        self._name = None
         self._case_type = None
         self._contents = None
         self._for_loop_params = None
@@ -89,8 +89,8 @@ class CaseInfo:
 
         if case_id is not None:
             self.case_id = case_id
-        if case_name is not None:
-            self.case_name = case_name
+        if name is not None:
+            self.name = name
         if case_type is not None:
             self.case_type = case_type
         if contents is not None:
@@ -131,26 +131,26 @@ class CaseInfo:
         self._case_id = case_id
 
     @property
-    def case_name(self):
-        """Gets the case_name of this CaseInfo.
+    def name(self):
+        """Gets the name of this CaseInfo.
 
-        case_name
+        用例名称
 
-        :return: The case_name of this CaseInfo.
+        :return: The name of this CaseInfo.
         :rtype: str
         """
-        return self._case_name
+        return self._name
 
-    @case_name.setter
-    def case_name(self, case_name):
-        """Sets the case_name of this CaseInfo.
+    @name.setter
+    def name(self, name):
+        """Sets the name of this CaseInfo.
 
-        case_name
+        用例名称
 
-        :param case_name: The case_name of this CaseInfo.
-        :type case_name: str
+        :param name: The name of this CaseInfo.
+        :type name: str
         """
-        self._case_name = case_name
+        self._name = name
 
     @property
     def case_type(self):
@@ -247,7 +247,7 @@ class CaseInfo:
         stages
 
         :return: The stages of this CaseInfo.
-        :rtype: list[object]
+        :rtype: list[:class:`huaweicloudsdkcpts.v1.TestCaseStage`]
         """
         return self._stages
 
@@ -258,7 +258,7 @@ class CaseInfo:
         stages
 
         :param stages: The stages of this CaseInfo.
-        :type stages: list[object]
+        :type stages: list[:class:`huaweicloudsdkcpts.v1.TestCaseStage`]
         """
         self._stages = stages
 
@@ -266,7 +266,7 @@ class CaseInfo:
     def status(self):
         """Gets the status of this CaseInfo.
 
-        status
+        状态，0：已删除；1：启用；2：禁用
 
         :return: The status of this CaseInfo.
         :rtype: int
@@ -277,7 +277,7 @@ class CaseInfo:
     def status(self, status):
         """Sets the status of this CaseInfo.
 
-        status
+        状态，0：已删除；1：启用；2：禁用
 
         :param status: The status of this CaseInfo.
         :type status: int
@@ -310,7 +310,7 @@ class CaseInfo:
     def sort(self):
         """Gets the sort of this CaseInfo.
 
-        sort
+        排序字段
 
         :return: The sort of this CaseInfo.
         :rtype: int
@@ -321,7 +321,7 @@ class CaseInfo:
     def sort(self, sort):
         """Sets the sort of this CaseInfo.
 
-        sort
+        排序字段
 
         :param sort: The sort of this CaseInfo.
         :type sort: int

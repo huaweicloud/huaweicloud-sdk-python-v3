@@ -24,6 +24,18 @@ class GaussDBforopenGaussRegion:
 
     AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://gaussdb-opengauss.ap-southeast-2.myhuaweicloud.com")
 
+    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://gaussdb-opengauss.ap-southeast-1.myhuaweicloud.com")
+
+    CN_EAST_3 = Region(id="cn-east-3", endpoint="https://gaussdb-opengauss.cn-east-3.myhuaweicloud.com")
+
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://gaussdb-opengauss.sa-brazil-1.myhuaweicloud.com")
+
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://gaussdb-opengauss.la-south-2.myhuaweicloud.com")
+
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://gaussdb-opengauss.la-north-2.myhuaweicloud.com")
+
+    AF_SOUTH_1 = Region(id="af-south-1", endpoint="https://gaussdb-opengauss.af-south-1.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-southwest-2": CN_SOUTHWEST_2,
@@ -32,6 +44,12 @@ class GaussDBforopenGaussRegion:
         "ap-southeast-3": AP_SOUTHEAST_3,
         "cn-north-2": CN_NORTH_2,
         "ap-southeast-2": AP_SOUTHEAST_2,
+        "ap-southeast-1": AP_SOUTHEAST_1,
+        "cn-east-3": CN_EAST_3,
+        "sa-brazil-1": SA_BRAZIL_1,
+        "la-south-2": LA_SOUTH_2,
+        "la-north-2": LA_NORTH_2,
+        "af-south-1": AF_SOUTH_1,
     }
 
     @classmethod

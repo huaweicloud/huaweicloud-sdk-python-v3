@@ -69,11 +69,11 @@ class Device:
         :type created_at: str
         :param updated_at: 更新时间
         :type updated_at: str
-        :param attributes: 
+        :param attributes: 终端设备静态属性信息
         :type attributes: dict(str, ValueInAttributes)
         :param connection_type: 连接类型，默认为edge
         :type connection_type: str
-        :param twin: 终端设备静态属性信息
+        :param twin: 终端设备孪生属性信息
         :type twin: dict(str, ValueInTwinResponse)
         :param access_config: 
         :type access_config: :class:`huaweicloudsdkief.v1.AccessConfig`
@@ -268,6 +268,7 @@ class Device:
     def attributes(self):
         """Gets the attributes of this Device.
 
+        终端设备静态属性信息
 
         :return: The attributes of this Device.
         :rtype: dict(str, ValueInAttributes)
@@ -278,6 +279,7 @@ class Device:
     def attributes(self, attributes):
         """Sets the attributes of this Device.
 
+        终端设备静态属性信息
 
         :param attributes: The attributes of this Device.
         :type attributes: dict(str, ValueInAttributes)
@@ -310,7 +312,7 @@ class Device:
     def twin(self):
         """Gets the twin of this Device.
 
-        终端设备静态属性信息
+        终端设备孪生属性信息
 
         :return: The twin of this Device.
         :rtype: dict(str, ValueInTwinResponse)
@@ -321,7 +323,7 @@ class Device:
     def twin(self, twin):
         """Sets the twin of this Device.
 
-        终端设备静态属性信息
+        终端设备孪生属性信息
 
         :param twin: The twin of this Device.
         :type twin: dict(str, ValueInTwinResponse)

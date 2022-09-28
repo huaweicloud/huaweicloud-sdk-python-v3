@@ -21,7 +21,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'permissions': 'list[Permission]',
+        'permissions': 'list[PermissionObject]',
         'total_count': 'int'
     }
 
@@ -36,7 +36,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param permissions: permission列表。
-        :type permissions: list[:class:`huaweicloudsdkvpcep.v1.Permission`]
+        :type permissions: list[:class:`huaweicloudsdkvpcep.v1.PermissionObject`]
         :param total_count: 满足查询条件的终端节点服务的白名单总条数，不受分页（即limit、offset参数）影响。
         :type total_count: int
         """
@@ -59,7 +59,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
         permission列表。
 
         :return: The permissions of this ListServicePermissionsDetailsResponse.
-        :rtype: list[:class:`huaweicloudsdkvpcep.v1.Permission`]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.PermissionObject`]
         """
         return self._permissions
 
@@ -70,7 +70,7 @@ class ListServicePermissionsDetailsResponse(SdkResponse):
         permission列表。
 
         :param permissions: The permissions of this ListServicePermissionsDetailsResponse.
-        :type permissions: list[:class:`huaweicloudsdkvpcep.v1.Permission`]
+        :type permissions: list[:class:`huaweicloudsdkvpcep.v1.PermissionObject`]
         """
         self._permissions = permissions
 

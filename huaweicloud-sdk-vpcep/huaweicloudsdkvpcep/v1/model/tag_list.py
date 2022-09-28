@@ -35,9 +35,9 @@ class TagList:
 
         The model defined in huaweicloud sdk
 
-        :param key: 键。最大长度36个unicode字符。 key不 能为空。不能包含“&#x3D;”、“*”、 “&lt;”、“&gt;”、“\\”、“,”、“|”和 “/”，且首尾字符不能为空格。
+        :param key: 键。 最大长度36个unicode字符。  key不能为空。不能包含“&#x3D;”、“*”、“&lt;”、“&gt;”、“\\”、“,”、“|”和“/”，且首尾字符不能为空格。
         :type key: str
-        :param value: 值。每个值最大长度43个unicode字 符，可以为空字符串。 不能包含 “&#x3D;”、“*”、“&lt;”、“&gt;”、“\\”、 “,”、“|”和“/”，且首尾字符不能 为空格。
+        :param value: 值。 每个值最大长度43个unicode字符，可以为空字符串。  不能包含“&#x3D;”、“*”、“&lt;”、“&gt;”、“\\”、“,”、“|”和“/”，且首尾字符不能为空格。
         :type value: str
         """
         
@@ -56,7 +56,7 @@ class TagList:
     def key(self):
         """Gets the key of this TagList.
 
-        键。最大长度36个unicode字符。 key不 能为空。不能包含“=”、“*”、 “<”、“>”、“\\”、“,”、“|”和 “/”，且首尾字符不能为空格。
+        键。 最大长度36个unicode字符。  key不能为空。不能包含“=”、“*”、“<”、“>”、“\\”、“,”、“|”和“/”，且首尾字符不能为空格。
 
         :return: The key of this TagList.
         :rtype: str
@@ -67,7 +67,7 @@ class TagList:
     def key(self, key):
         """Sets the key of this TagList.
 
-        键。最大长度36个unicode字符。 key不 能为空。不能包含“=”、“*”、 “<”、“>”、“\\”、“,”、“|”和 “/”，且首尾字符不能为空格。
+        键。 最大长度36个unicode字符。  key不能为空。不能包含“=”、“*”、“<”、“>”、“\\”、“,”、“|”和“/”，且首尾字符不能为空格。
 
         :param key: The key of this TagList.
         :type key: str
@@ -78,7 +78,7 @@ class TagList:
     def value(self):
         """Gets the value of this TagList.
 
-        值。每个值最大长度43个unicode字 符，可以为空字符串。 不能包含 “=”、“*”、“<”、“>”、“\\”、 “,”、“|”和“/”，且首尾字符不能 为空格。
+        值。 每个值最大长度43个unicode字符，可以为空字符串。  不能包含“=”、“*”、“<”、“>”、“\\”、“,”、“|”和“/”，且首尾字符不能为空格。
 
         :return: The value of this TagList.
         :rtype: str
@@ -89,7 +89,7 @@ class TagList:
     def value(self, value):
         """Sets the value of this TagList.
 
-        值。每个值最大长度43个unicode字 符，可以为空字符串。 不能包含 “=”、“*”、“<”、“>”、“\\”、 “,”、“|”和“/”，且首尾字符不能 为空格。
+        值。 每个值最大长度43个unicode字符，可以为空字符串。  不能包含“=”、“*”、“<”、“>”、“\\”、“,”、“|”和“/”，且首尾字符不能为空格。
 
         :param value: The value of this TagList.
         :type value: str

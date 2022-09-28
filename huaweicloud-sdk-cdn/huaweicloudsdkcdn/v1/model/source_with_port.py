@@ -21,6 +21,7 @@ class SourceWithPort:
     sensitive_list = []
 
     openapi_types = {
+        'domain_id': 'str',
         'ip_or_domain': 'str',
         'origin_type': 'str',
         'active_standby': 'int',
@@ -30,6 +31,7 @@ class SourceWithPort:
     }
 
     attribute_map = {
+        'domain_id': 'domain_id',
         'ip_or_domain': 'ip_or_domain',
         'origin_type': 'origin_type',
         'active_standby': 'active_standby',
@@ -38,11 +40,13 @@ class SourceWithPort:
         'https_port': 'https_port'
     }
 
-    def __init__(self, ip_or_domain=None, origin_type=None, active_standby=None, enable_obs_web_hosting=None, http_port=None, https_port=None):
+    def __init__(self, domain_id=None, ip_or_domain=None, origin_type=None, active_standby=None, enable_obs_web_hosting=None, http_port=None, https_port=None):
         """SourceWithPort
 
         The model defined in huaweicloud sdk
 
+        :param domain_id: 加速域名id。
+        :type domain_id: str
         :param ip_or_domain: 源站IP（非内网IP）或者域名。
         :type ip_or_domain: str
         :param origin_type: 源站类型（\&quot;ipaddr\&quot;： \&quot;IP源站\&quot;；\&quot;domain\&quot;： \&quot;域名源站\&quot;；\&quot;obs_bucket\&quot;： \&quot;OBS Bucket源站\&quot;）
@@ -59,6 +63,7 @@ class SourceWithPort:
         
         
 
+        self._domain_id = None
         self._ip_or_domain = None
         self._origin_type = None
         self._active_standby = None
@@ -67,6 +72,8 @@ class SourceWithPort:
         self._https_port = None
         self.discriminator = None
 
+        if domain_id is not None:
+            self.domain_id = domain_id
         self.ip_or_domain = ip_or_domain
         self.origin_type = origin_type
         self.active_standby = active_standby
@@ -76,6 +83,28 @@ class SourceWithPort:
             self.http_port = http_port
         if https_port is not None:
             self.https_port = https_port
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this SourceWithPort.
+
+        加速域名id。
+
+        :return: The domain_id of this SourceWithPort.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this SourceWithPort.
+
+        加速域名id。
+
+        :param domain_id: The domain_id of this SourceWithPort.
+        :type domain_id: str
+        """
+        self._domain_id = domain_id
 
     @property
     def ip_or_domain(self):

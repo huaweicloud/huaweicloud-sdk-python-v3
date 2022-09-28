@@ -602,6 +602,66 @@ class IefClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def create_encryptdatas(self, request):
+        """新增加密数据
+
+        新增加密数据
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateEncryptdatas
+        :type request: :class:`huaweicloudsdkief.v1.CreateEncryptdatasRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.CreateEncryptdatasResponse`
+        """
+        return self.create_encryptdatas_with_http_info(request)
+
+    def create_encryptdatas_with_http_info(self, request):
+        all_params = ['create_encryptdatas_request_body', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edm/encryptdatas',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateEncryptdatasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_endpoint(self, request):
         """创建端点
 
@@ -657,6 +717,68 @@ class IefClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateEndpointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_node_encryptdatas(self, request):
+        """加密数据绑定边缘节点
+
+        加密数据绑定边缘节点
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateNodeEncryptdatas
+        :type request: :class:`huaweicloudsdkief.v1.CreateNodeEncryptdatasRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.CreateNodeEncryptdatasResponse`
+        """
+        return self.create_node_encryptdatas_with_http_info(request)
+
+    def create_node_encryptdatas_with_http_info(self, request):
+        all_params = ['node_id', 'create_node_encryptdatas_request_body', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edm/nodes/{node_id}/encryptdatas',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateNodeEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1394,6 +1516,66 @@ class IefClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_encryptdatas(self, request):
+        """删除加密数据
+
+        删除加密数据
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEncryptdatas
+        :type request: :class:`huaweicloudsdkief.v1.DeleteEncryptdatasRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.DeleteEncryptdatasResponse`
+        """
+        return self.delete_encryptdatas_with_http_info(request)
+
+    def delete_encryptdatas_with_http_info(self, request):
+        all_params = ['encryptdata_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'encryptdata_id' in local_var_params:
+            path_params['encryptdata_id'] = local_var_params['encryptdata_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edm/encryptdatas/{encryptdata_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteEncryptdatasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_end_point(self, request):
         """删除一个端点
 
@@ -1449,6 +1631,68 @@ class IefClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteEndPointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_node_encryptdatas(self, request):
+        """解绑边缘节点的加密数据
+
+        解绑边缘节点的加密数据
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteNodeEncryptdatas
+        :type request: :class:`huaweicloudsdkief.v1.DeleteNodeEncryptdatasRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.DeleteNodeEncryptdatasResponse`
+        """
+        return self.delete_node_encryptdatas_with_http_info(request)
+
+    def delete_node_encryptdatas_with_http_info(self, request):
+        all_params = ['node_id', 'encryptdata_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+        if 'encryptdata_id' in local_var_params:
+            path_params['encryptdata_id'] = local_var_params['encryptdata_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edm/nodes/{node_id}/encryptdatas/{encryptdata_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteNodeEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1713,7 +1957,7 @@ class IefClient(Client):
         return self.enable_disable_edge_nodes_with_http_info(request)
 
     def enable_disable_edge_nodes_with_http_info(self, request):
-        all_params = ['node_id', 'node', 'ief_instance_id']
+        all_params = ['node_id', 'enable_disable_edge_nodes_request_body', 'ief_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -2302,6 +2546,134 @@ class IefClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_encryptdata_nodes(self, request):
+        """获取加密数据绑定的边缘节点
+
+        获取加密数据绑定的边缘节点
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListEncryptdataNodes
+        :type request: :class:`huaweicloudsdkief.v1.ListEncryptdataNodesRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ListEncryptdataNodesResponse`
+        """
+        return self.list_encryptdata_nodes_with_http_info(request)
+
+    def list_encryptdata_nodes_with_http_info(self, request):
+        all_params = ['encryptdata_id', 'limit', 'ief_instance_id', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'encryptdata_id' in local_var_params:
+            path_params['encryptdata_id'] = local_var_params['encryptdata_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edm/encryptdatas/{encryptdata_id}/nodes',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEncryptdataNodesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_encryptdatas(self, request):
+        """获取加密数据列表
+
+        获取加密数据列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListEncryptdatas
+        :type request: :class:`huaweicloudsdkief.v1.ListEncryptdatasRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ListEncryptdatasResponse`
+        """
+        return self.list_encryptdatas_with_http_info(request)
+
+    def list_encryptdatas_with_http_info(self, request):
+        all_params = ['name', 'limit', 'offset', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edm/encryptdatas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListEncryptdatasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_endpoints(self, request):
         """查询端点列表
 
@@ -2367,6 +2739,70 @@ class IefClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListEndpointsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_node_encryptdatas(self, request):
+        """获取边缘节点绑定的加密数据
+
+        获取边缘节点绑定的加密数据
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListNodeEncryptdatas
+        :type request: :class:`huaweicloudsdkief.v1.ListNodeEncryptdatasRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ListNodeEncryptdatasResponse`
+        """
+        return self.list_node_encryptdatas_with_http_info(request)
+
+    def list_node_encryptdatas_with_http_info(self, request):
+        all_params = ['node_id', 'limit', 'offset', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edm/nodes/{node_id}/encryptdatas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListNodeEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2888,6 +3324,68 @@ class IefClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def restart_deployments_pod(self, request):
+        """容器应用实例重启
+
+        重启部署下的应用实例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RestartDeploymentsPod
+        :type request: :class:`huaweicloudsdkief.v1.RestartDeploymentsPodRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.RestartDeploymentsPodResponse`
+        """
+        return self.restart_deployments_pod_with_http_info(request)
+
+    def restart_deployments_pod_with_http_info(self, request):
+        all_params = ['deployment_id', 'pod_name', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'deployment_id' in local_var_params:
+            path_params['deployment_id'] = local_var_params['deployment_id']
+        if 'pod_name' in local_var_params:
+            path_params['pod_name'] = local_var_params['pod_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/edgemgr/deployments/{deployment_id}/pods/{pod_name}/restart',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RestartDeploymentsPodResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_app_detail(self, request):
         """查询应用模板详情
 
@@ -3365,6 +3863,126 @@ class IefClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowEdgeNodeDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_edge_node_upgrade_details(self, request):
+        """查看边缘节点升级状态
+
+        该API用于查看边缘节点升级状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowEdgeNodeUpgradeDetails
+        :type request: :class:`huaweicloudsdkief.v1.ShowEdgeNodeUpgradeDetailsRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ShowEdgeNodeUpgradeDetailsResponse`
+        """
+        return self.show_edge_node_upgrade_details_with_http_info(request)
+
+    def show_edge_node_upgrade_details_with_http_info(self, request):
+        all_params = ['node_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edgemgr/nodes/{node_id}/upgrade',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowEdgeNodeUpgradeDetailsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_encryptdatas(self, request):
+        """查询加密数据详情
+
+        查询加密数据详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowEncryptdatas
+        :type request: :class:`huaweicloudsdkief.v1.ShowEncryptdatasRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.ShowEncryptdatasResponse`
+        """
+        return self.show_encryptdatas_with_http_info(request)
+
+    def show_encryptdatas_with_http_info(self, request):
+        all_params = ['encryptdata_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'encryptdata_id' in local_var_params:
+            path_params['encryptdata_id'] = local_var_params['encryptdata_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edm/encryptdatas/{encryptdata_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4181,7 +4799,7 @@ class IefClient(Client):
         return self.update_edge_node_with_http_info(request)
 
     def update_edge_node_with_http_info(self, request):
-        all_params = ['node_id', 'ief_instance_id', 'update_edge_node_body']
+        all_params = ['node_id', 'ief_instance_id', 'update_edge_node_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4285,6 +4903,68 @@ class IefClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateEdgeNodeDeviceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_encryptdatas(self, request):
+        """更新加密数据
+
+        更新加密数据
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateEncryptdatas
+        :type request: :class:`huaweicloudsdkief.v1.UpdateEncryptdatasRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.UpdateEncryptdatasResponse`
+        """
+        return self.update_encryptdatas_with_http_info(request)
+
+    def update_encryptdatas_with_http_info(self, request):
+        all_params = ['encryptdata_id', 'update_encryptdatas_request_body', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'encryptdata_id' in local_var_params:
+            path_params['encryptdata_id'] = local_var_params['encryptdata_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edm/encryptdatas/{encryptdata_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateEncryptdatasResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4469,6 +5149,66 @@ class IefClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateServiceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def upgrade_edge_node(self, request):
+        """升级边缘节点
+
+        该API用于升级边缘节点。边缘节点将自动升级到最新的可用版本
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpgradeEdgeNode
+        :type request: :class:`huaweicloudsdkief.v1.UpgradeEdgeNodeRequest`
+        :rtype: :class:`huaweicloudsdkief.v1.UpgradeEdgeNodeResponse`
+        """
+        return self.upgrade_edge_node_with_http_info(request)
+
+    def upgrade_edge_node_with_http_info(self, request):
+        all_params = ['node_id', 'ief_instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'node_id' in local_var_params:
+            path_params['node_id'] = local_var_params['node_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/edgemgr/nodes/{node_id}/upgrade',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpgradeEdgeNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

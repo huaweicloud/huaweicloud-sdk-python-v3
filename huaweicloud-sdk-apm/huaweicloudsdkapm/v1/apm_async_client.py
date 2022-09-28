@@ -570,6 +570,126 @@ class ApmAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_app_async(self, request):
+        """根据组件id删除指定的组件
+
+        该接口用于删除指定的组件
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteApp
+        :type request: :class:`huaweicloudsdkapm.v1.DeleteAppRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.DeleteAppResponse`
+        """
+        return self.delete_app_with_http_info(request)
+
+    def delete_app_with_http_info(self, request):
+        all_params = ['application_id', 'x_business_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'application_id' in local_var_params:
+            path_params['application_id'] = local_var_params['application_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/cmdb/apps/delete-app/{application_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteAppResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_env_async(self, request):
+        """根据环境id删除指定的环境
+
+        该接口用于删除指定的环境
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEnv
+        :type request: :class:`huaweicloudsdkapm.v1.DeleteEnvRequest`
+        :rtype: :class:`huaweicloudsdkapm.v1.DeleteEnvResponse`
+        """
+        return self.delete_env_with_http_info(request)
+
+    def delete_env_with_http_info(self, request):
+        all_params = ['env_id', 'x_business_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'env_id' in local_var_params:
+            path_params['env_id'] = local_var_params['env_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_business_id' in local_var_params:
+            header_params['x-business-id'] = local_var_params['x_business_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/apm2/openapi/cmdb/envs/delete-env/{env_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteEnvResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_app_envs_async(self, request):
         """获取组件下的环境列表
 

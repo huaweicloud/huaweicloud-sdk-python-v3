@@ -82,6 +82,8 @@ from huaweicloudsdkcpts.v1.model.show_temp_request import ShowTempRequest
 from huaweicloudsdkcpts.v1.model.show_temp_response import ShowTempResponse
 from huaweicloudsdkcpts.v1.model.show_temp_set_request import ShowTempSetRequest
 from huaweicloudsdkcpts.v1.model.show_temp_set_response import ShowTempSetResponse
+from huaweicloudsdkcpts.v1.model.stage_kpi_item import StageKpiItem
+from huaweicloudsdkcpts.v1.model.stage_kpi_items import StageKpiItems
 from huaweicloudsdkcpts.v1.model.task import Task
 from huaweicloudsdkcpts.v1.model.task_info import TaskInfo
 from huaweicloudsdkcpts.v1.model.task_run_info import TaskRunInfo
@@ -90,9 +92,9 @@ from huaweicloudsdkcpts.v1.model.temp_detail_info import TempDetailInfo
 from huaweicloudsdkcpts.v1.model.temp_info import TempInfo
 from huaweicloudsdkcpts.v1.model.temp_name import TempName
 from huaweicloudsdkcpts.v1.model.temp_running_data import TempRunningData
+from huaweicloudsdkcpts.v1.model.test_case_stage import TestCaseStage
 from huaweicloudsdkcpts.v1.model.tps_brokens import TpsBrokens
 from huaweicloudsdkcpts.v1.model.update_case_request import UpdateCaseRequest
-from huaweicloudsdkcpts.v1.model.update_case_request_body import UpdateCaseRequestBody
 from huaweicloudsdkcpts.v1.model.update_case_response import UpdateCaseResponse
 from huaweicloudsdkcpts.v1.model.update_new_task_request_body import UpdateNewTaskRequestBody
 from huaweicloudsdkcpts.v1.model.update_project_request import UpdateProjectRequest

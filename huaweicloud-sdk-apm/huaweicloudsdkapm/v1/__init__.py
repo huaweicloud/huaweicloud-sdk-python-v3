@@ -20,6 +20,10 @@ from huaweicloudsdkapm.v1.model.create_ak_sk_response import CreateAkSkResponse
 from huaweicloudsdkapm.v1.model.create_aksk_model import CreateAkskModel
 from huaweicloudsdkapm.v1.model.delete_ak_sk_request import DeleteAkSkRequest
 from huaweicloudsdkapm.v1.model.delete_ak_sk_response import DeleteAkSkResponse
+from huaweicloudsdkapm.v1.model.delete_app_request import DeleteAppRequest
+from huaweicloudsdkapm.v1.model.delete_app_response import DeleteAppResponse
+from huaweicloudsdkapm.v1.model.delete_env_request import DeleteEnvRequest
+from huaweicloudsdkapm.v1.model.delete_env_response import DeleteEnvResponse
 from huaweicloudsdkapm.v1.model.discard_info import DiscardInfo
 from huaweicloudsdkapm.v1.model.env_node_model import EnvNodeModel
 from huaweicloudsdkapm.v1.model.field_item import FieldItem

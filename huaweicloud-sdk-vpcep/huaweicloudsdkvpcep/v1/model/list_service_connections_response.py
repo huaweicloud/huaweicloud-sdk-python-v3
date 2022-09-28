@@ -21,7 +21,7 @@ class ListServiceConnectionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'connections': 'list[Connection]',
+        'connections': 'list[ConnectionEndpoints]',
         'total_count': 'int'
     }
 
@@ -36,7 +36,7 @@ class ListServiceConnectionsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param connections: 连接列表。
-        :type connections: list[:class:`huaweicloudsdkvpcep.v1.Connection`]
+        :type connections: list[:class:`huaweicloudsdkvpcep.v1.ConnectionEndpoints`]
         :param total_count: 满足查询条件的终端节点总条数，不受分页（即limit、offset参数）影响。
         :type total_count: int
         """
@@ -59,7 +59,7 @@ class ListServiceConnectionsResponse(SdkResponse):
         连接列表。
 
         :return: The connections of this ListServiceConnectionsResponse.
-        :rtype: list[:class:`huaweicloudsdkvpcep.v1.Connection`]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.ConnectionEndpoints`]
         """
         return self._connections
 
@@ -70,7 +70,7 @@ class ListServiceConnectionsResponse(SdkResponse):
         连接列表。
 
         :param connections: The connections of this ListServiceConnectionsResponse.
-        :type connections: list[:class:`huaweicloudsdkvpcep.v1.Connection`]
+        :type connections: list[:class:`huaweicloudsdkvpcep.v1.ConnectionEndpoints`]
         """
         self._connections = connections
 

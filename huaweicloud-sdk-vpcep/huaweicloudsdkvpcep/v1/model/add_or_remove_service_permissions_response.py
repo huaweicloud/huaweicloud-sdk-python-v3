@@ -33,7 +33,7 @@ class AddOrRemoveServicePermissionsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param permissions: permission列表。 权限格式为iam:domain:: 6e9dfd51d1124e8d8498dce894923a0d或“*”， “*”表示所有用户的终端节点可连接。其中 6e9dfd51d1124e8d8498dce894923a0d为可连接 的用户domian_id。
+        :param permissions: permission列表。 权限格式为iam:domain::6e9dfd51d1124e8d8498dce894923a0d或“*”， “*”表示所有用户的终端节点可连接。 其中6e9dfd51d1124e8d8498dce894923a0d为可连接的用户domian_id。
         :type permissions: list[str]
         """
         
@@ -49,7 +49,7 @@ class AddOrRemoveServicePermissionsResponse(SdkResponse):
     def permissions(self):
         """Gets the permissions of this AddOrRemoveServicePermissionsResponse.
 
-        permission列表。 权限格式为iam:domain:: 6e9dfd51d1124e8d8498dce894923a0d或“*”， “*”表示所有用户的终端节点可连接。其中 6e9dfd51d1124e8d8498dce894923a0d为可连接 的用户domian_id。
+        permission列表。 权限格式为iam:domain::6e9dfd51d1124e8d8498dce894923a0d或“*”， “*”表示所有用户的终端节点可连接。 其中6e9dfd51d1124e8d8498dce894923a0d为可连接的用户domian_id。
 
         :return: The permissions of this AddOrRemoveServicePermissionsResponse.
         :rtype: list[str]
@@ -60,7 +60,7 @@ class AddOrRemoveServicePermissionsResponse(SdkResponse):
     def permissions(self, permissions):
         """Sets the permissions of this AddOrRemoveServicePermissionsResponse.
 
-        permission列表。 权限格式为iam:domain:: 6e9dfd51d1124e8d8498dce894923a0d或“*”， “*”表示所有用户的终端节点可连接。其中 6e9dfd51d1124e8d8498dce894923a0d为可连接 的用户domian_id。
+        permission列表。 权限格式为iam:domain::6e9dfd51d1124e8d8498dce894923a0d或“*”， “*”表示所有用户的终端节点可连接。 其中6e9dfd51d1124e8d8498dce894923a0d为可连接的用户domian_id。
 
         :param permissions: The permissions of this AddOrRemoveServicePermissionsResponse.
         :type permissions: list[str]

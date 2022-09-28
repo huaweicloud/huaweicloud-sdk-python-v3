@@ -25,7 +25,8 @@ class ReportInfo:
         'details': 'ReportdetailsInfo',
         'outline': 'ReportoutlineInfo',
         'rtproportion': 'str',
-        'task_info': 'ReportTaskInfo'
+        'task_info': 'ReportTaskInfo',
+        'resp_time_range': 'object'
     }
 
     attribute_map = {
@@ -33,10 +34,11 @@ class ReportInfo:
         'details': 'details',
         'outline': 'outline',
         'rtproportion': 'rtproportion',
-        'task_info': 'taskInfo'
+        'task_info': 'taskInfo',
+        'resp_time_range': 'respTimeRange'
     }
 
-    def __init__(self, brokens=None, details=None, outline=None, rtproportion=None, task_info=None):
+    def __init__(self, brokens=None, details=None, outline=None, rtproportion=None, task_info=None, resp_time_range=None):
         """ReportInfo
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class ReportInfo:
         :type rtproportion: str
         :param task_info: 
         :type task_info: :class:`huaweicloudsdkcpts.v1.ReportTaskInfo`
+        :param resp_time_range: 响应时间分布
+        :type resp_time_range: object
         """
         
         
@@ -60,6 +64,7 @@ class ReportInfo:
         self._outline = None
         self._rtproportion = None
         self._task_info = None
+        self._resp_time_range = None
         self.discriminator = None
 
         if brokens is not None:
@@ -72,6 +77,8 @@ class ReportInfo:
             self.rtproportion = rtproportion
         if task_info is not None:
             self.task_info = task_info
+        if resp_time_range is not None:
+            self.resp_time_range = resp_time_range
 
     @property
     def brokens(self):
@@ -174,6 +181,28 @@ class ReportInfo:
         :type task_info: :class:`huaweicloudsdkcpts.v1.ReportTaskInfo`
         """
         self._task_info = task_info
+
+    @property
+    def resp_time_range(self):
+        """Gets the resp_time_range of this ReportInfo.
+
+        响应时间分布
+
+        :return: The resp_time_range of this ReportInfo.
+        :rtype: object
+        """
+        return self._resp_time_range
+
+    @resp_time_range.setter
+    def resp_time_range(self, resp_time_range):
+        """Sets the resp_time_range of this ReportInfo.
+
+        响应时间分布
+
+        :param resp_time_range: The resp_time_range of this ReportInfo.
+        :type resp_time_range: object
+        """
+        self._resp_time_range = resp_time_range
 
     def to_dict(self):
         """Returns the model properties as a dict"""

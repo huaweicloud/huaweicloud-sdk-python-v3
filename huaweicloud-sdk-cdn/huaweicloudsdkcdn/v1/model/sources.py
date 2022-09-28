@@ -21,6 +21,7 @@ class Sources:
     sensitive_list = []
 
     openapi_types = {
+        'domain_id': 'str',
         'ip_or_domain': 'str',
         'origin_type': 'str',
         'active_standby': 'int',
@@ -28,17 +29,20 @@ class Sources:
     }
 
     attribute_map = {
+        'domain_id': 'domain_id',
         'ip_or_domain': 'ip_or_domain',
         'origin_type': 'origin_type',
         'active_standby': 'active_standby',
         'enable_obs_web_hosting': 'enable_obs_web_hosting'
     }
 
-    def __init__(self, ip_or_domain=None, origin_type=None, active_standby=None, enable_obs_web_hosting=None):
+    def __init__(self, domain_id=None, ip_or_domain=None, origin_type=None, active_standby=None, enable_obs_web_hosting=None):
         """Sources
 
         The model defined in huaweicloud sdk
 
+        :param domain_id: 加速域名id。
+        :type domain_id: str
         :param ip_or_domain: 源站IP（非内网IP）或者域名。
         :type ip_or_domain: str
         :param origin_type: 源站类型取值：ipaddr、 domain、obs_bucket，分别表示：源站IP、源站域名、OBS桶访问域名。
@@ -51,17 +55,42 @@ class Sources:
         
         
 
+        self._domain_id = None
         self._ip_or_domain = None
         self._origin_type = None
         self._active_standby = None
         self._enable_obs_web_hosting = None
         self.discriminator = None
 
+        if domain_id is not None:
+            self.domain_id = domain_id
         self.ip_or_domain = ip_or_domain
         self.origin_type = origin_type
         self.active_standby = active_standby
         if enable_obs_web_hosting is not None:
             self.enable_obs_web_hosting = enable_obs_web_hosting
+
+    @property
+    def domain_id(self):
+        """Gets the domain_id of this Sources.
+
+        加速域名id。
+
+        :return: The domain_id of this Sources.
+        :rtype: str
+        """
+        return self._domain_id
+
+    @domain_id.setter
+    def domain_id(self, domain_id):
+        """Sets the domain_id of this Sources.
+
+        加速域名id。
+
+        :param domain_id: The domain_id of this Sources.
+        :type domain_id: str
+        """
+        self._domain_id = domain_id
 
     @property
     def ip_or_domain(self):

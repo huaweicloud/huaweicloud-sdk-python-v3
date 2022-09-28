@@ -37,7 +37,7 @@ class AcceptOrRejectEndpointRequestBody:
 
         :param action: 允许或拒绝连接。 ● receive：允许连接。 ● reject：拒绝连接。
         :type action: str
-        :param endpoints: 终端节点ID列表。 每次请求目前支持单条endpoint的 接受或拒绝。
+        :param endpoints: 终端节点ID列表。 每次请求目前支持单条endpoint的接受或拒绝。
         :type endpoints: list[str]
         """
         
@@ -76,7 +76,7 @@ class AcceptOrRejectEndpointRequestBody:
     def endpoints(self):
         """Gets the endpoints of this AcceptOrRejectEndpointRequestBody.
 
-        终端节点ID列表。 每次请求目前支持单条endpoint的 接受或拒绝。
+        终端节点ID列表。 每次请求目前支持单条endpoint的接受或拒绝。
 
         :return: The endpoints of this AcceptOrRejectEndpointRequestBody.
         :rtype: list[str]
@@ -87,7 +87,7 @@ class AcceptOrRejectEndpointRequestBody:
     def endpoints(self, endpoints):
         """Sets the endpoints of this AcceptOrRejectEndpointRequestBody.
 
-        终端节点ID列表。 每次请求目前支持单条endpoint的 接受或拒绝。
+        终端节点ID列表。 每次请求目前支持单条endpoint的接受或拒绝。
 
         :param endpoints: The endpoints of this AcceptOrRejectEndpointRequestBody.
         :type endpoints: list[str]

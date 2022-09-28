@@ -28,7 +28,7 @@ from huaweicloudsdkbssintl.v2.model.check_user_identity_response import CheckUse
 from huaweicloudsdkbssintl.v2.model.conversion import Conversion
 from huaweicloudsdkbssintl.v2.model.cost import Cost
 from huaweicloudsdkbssintl.v2.model.cost_data_by_dimension import CostDataByDimension
-from huaweicloudsdkbssintl.v2.model.coupon_simple_info_order_pay import CouponSimpleInfoOrderPay
+from huaweicloudsdkbssintl.v2.model.coupon_simple_info_order_pay_v3 import CouponSimpleInfoOrderPayV3
 from huaweicloudsdkbssintl.v2.model.create_customer_v2_req import CreateCustomerV2Req
 from huaweicloudsdkbssintl.v2.model.create_enterprise_realname_authentication_request import CreateEnterpriseRealnameAuthenticationRequest
 from huaweicloudsdkbssintl.v2.model.create_enterprise_realname_authentication_response import CreateEnterpriseRealnameAuthenticationResponse
@@ -48,7 +48,7 @@ from huaweicloudsdkbssintl.v2.model.dimension_group import DimensionGroup
 from huaweicloudsdkbssintl.v2.model.discount_detail_info import DiscountDetailInfo
 from huaweicloudsdkbssintl.v2.model.discount_info_v3 import DiscountInfoV3
 from huaweicloudsdkbssintl.v2.model.discount_item_v2 import DiscountItemV2
-from huaweicloudsdkbssintl.v2.model.discount_simple_info import DiscountSimpleInfo
+from huaweicloudsdkbssintl.v2.model.discount_simple_info_v3 import DiscountSimpleInfoV3
 from huaweicloudsdkbssintl.v2.model.enterprise_person_new import EnterprisePersonNew
 from huaweicloudsdkbssintl.v2.model.error_detail import ErrorDetail
 from huaweicloudsdkbssintl.v2.model.filter_factor import FilterFactor
@@ -123,7 +123,7 @@ from huaweicloudsdkbssintl.v2.model.order_line_item_entity_v2 import OrderLineIt
 from huaweicloudsdkbssintl.v2.model.order_line_item_v3 import OrderLineItemV3
 from huaweicloudsdkbssintl.v2.model.order_refund_info_v2 import OrderRefundInfoV2
 from huaweicloudsdkbssintl.v2.model.order_v3 import OrderV3
-from huaweicloudsdkbssintl.v2.model.pay_customer_order_req import PayCustomerOrderReq
+from huaweicloudsdkbssintl.v2.model.pay_customer_order_v3_req import PayCustomerOrderV3Req
 from huaweicloudsdkbssintl.v2.model.pay_orders_request import PayOrdersRequest
 from huaweicloudsdkbssintl.v2.model.pay_orders_response import PayOrdersResponse
 from huaweicloudsdkbssintl.v2.model.period_product_info import PeriodProductInfo

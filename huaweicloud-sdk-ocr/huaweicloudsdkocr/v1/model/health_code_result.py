@@ -21,34 +21,78 @@ class HealthCodeResult:
     sensitive_list = []
 
     openapi_types = {
+        'type': 'str',
         'name': 'str',
+        'idcard_number': 'str',
+        'phone_number': 'str',
+        'province': 'str',
+        'city': 'str',
         'time': 'str',
         'color': 'str',
+        'vaccination_status': 'str',
+        'pcr_test_result': 'str',
+        'pcr_test_organization': 'str',
+        'pcr_test_time': 'str',
+        'pcr_sampling_time': 'str',
+        'reached_city': 'list[str]',
         'confidence': 'object',
         'words_block_count': 'int',
         'words_block_list': 'list[HealthCodeWordsBlockList]'
     }
 
     attribute_map = {
+        'type': 'type',
         'name': 'name',
+        'idcard_number': 'idcard_number',
+        'phone_number': 'phone_number',
+        'province': 'province',
+        'city': 'city',
         'time': 'time',
         'color': 'color',
+        'vaccination_status': 'vaccination_status',
+        'pcr_test_result': 'pcr_test_result',
+        'pcr_test_organization': 'pcr_test_organization',
+        'pcr_test_time': 'pcr_test_time',
+        'pcr_sampling_time': 'pcr_sampling_time',
+        'reached_city': 'reached_city',
         'confidence': 'confidence',
         'words_block_count': 'words_block_count',
         'words_block_list': 'words_block_list'
     }
 
-    def __init__(self, name=None, time=None, color=None, confidence=None, words_block_count=None, words_block_list=None):
+    def __init__(self, type=None, name=None, idcard_number=None, phone_number=None, province=None, city=None, time=None, color=None, vaccination_status=None, pcr_test_result=None, pcr_test_organization=None, pcr_test_time=None, pcr_sampling_time=None, reached_city=None, confidence=None, words_block_count=None, words_block_list=None):
         """HealthCodeResult
 
         The model defined in huaweicloud sdk
 
+        :param type: 防疫码类别： - 健康码：health_code - 核酸检测记录：pcr_test_record - 通信行程卡：travel_card - 其他：other 
+        :type type: str
         :param name: 姓名 
         :type name: str
-        :param time: 健康码更新时间 
+        :param idcard_number: 身份证号码 
+        :type idcard_number: str
+        :param phone_number: 手机号码 
+        :type phone_number: str
+        :param province: 省份 
+        :type province: str
+        :param city: 城市 
+        :type city: str
+        :param time: 健康码或行程卡的更新时间 
         :type time: str
-        :param color: 健康码颜色，可选值包括： - \&quot;green\&quot; - \&quot;yellow\&quot; - \&quot;red\&quot; - \&quot;gray\&quot; 
+        :param color: 健康码或行程卡颜色。 健康码颜色可选值包括：  - \&quot;green\&quot;，绿码 - \&quot;yellow\&quot;，黄码 - \&quot;red\&quot;，红码 - \&quot;gray\&quot;，灰码  行程卡颜色可选值包括：  - \&quot;green\&quot;，绿码 - \&quot;yellow\&quot;，黄码 - \&quot;red\&quot;，红码 
         :type color: str
+        :param vaccination_status: 疫苗接种情况 
+        :type vaccination_status: str
+        :param pcr_test_result: 核酸检测结果，可选值包括： - \&quot;positive\&quot;,即阳性 - \&quot;negative\&quot;,即阴性 - \&quot;unknown\&quot;,未知 
+        :type pcr_test_result: str
+        :param pcr_test_organization: 核酸检测机构 
+        :type pcr_test_organization: str
+        :param pcr_test_time: 核酸检测结果更新时间 
+        :type pcr_test_time: str
+        :param pcr_sampling_time: 核酸检测采样时间 
+        :type pcr_sampling_time: str
+        :param reached_city: 行程卡的途径地址 
+        :type reached_city: list[str]
         :param confidence: 各个字段的置信度。 
         :type confidence: object
         :param words_block_count: 代表检测识别出来的文字块数目。 
@@ -59,20 +103,64 @@ class HealthCodeResult:
         
         
 
+        self._type = None
         self._name = None
+        self._idcard_number = None
+        self._phone_number = None
+        self._province = None
+        self._city = None
         self._time = None
         self._color = None
+        self._vaccination_status = None
+        self._pcr_test_result = None
+        self._pcr_test_organization = None
+        self._pcr_test_time = None
+        self._pcr_sampling_time = None
+        self._reached_city = None
         self._confidence = None
         self._words_block_count = None
         self._words_block_list = None
         self.discriminator = None
 
+        self.type = type
         self.name = name
+        self.idcard_number = idcard_number
+        self.phone_number = phone_number
+        self.province = province
+        self.city = city
         self.time = time
         self.color = color
+        self.vaccination_status = vaccination_status
+        self.pcr_test_result = pcr_test_result
+        self.pcr_test_organization = pcr_test_organization
+        self.pcr_test_time = pcr_test_time
+        self.pcr_sampling_time = pcr_sampling_time
+        self.reached_city = reached_city
         self.confidence = confidence
         self.words_block_count = words_block_count
         self.words_block_list = words_block_list
+
+    @property
+    def type(self):
+        """Gets the type of this HealthCodeResult.
+
+        防疫码类别： - 健康码：health_code - 核酸检测记录：pcr_test_record - 通信行程卡：travel_card - 其他：other 
+
+        :return: The type of this HealthCodeResult.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this HealthCodeResult.
+
+        防疫码类别： - 健康码：health_code - 核酸检测记录：pcr_test_record - 通信行程卡：travel_card - 其他：other 
+
+        :param type: The type of this HealthCodeResult.
+        :type type: str
+        """
+        self._type = type
 
     @property
     def name(self):
@@ -97,10 +185,98 @@ class HealthCodeResult:
         self._name = name
 
     @property
+    def idcard_number(self):
+        """Gets the idcard_number of this HealthCodeResult.
+
+        身份证号码 
+
+        :return: The idcard_number of this HealthCodeResult.
+        :rtype: str
+        """
+        return self._idcard_number
+
+    @idcard_number.setter
+    def idcard_number(self, idcard_number):
+        """Sets the idcard_number of this HealthCodeResult.
+
+        身份证号码 
+
+        :param idcard_number: The idcard_number of this HealthCodeResult.
+        :type idcard_number: str
+        """
+        self._idcard_number = idcard_number
+
+    @property
+    def phone_number(self):
+        """Gets the phone_number of this HealthCodeResult.
+
+        手机号码 
+
+        :return: The phone_number of this HealthCodeResult.
+        :rtype: str
+        """
+        return self._phone_number
+
+    @phone_number.setter
+    def phone_number(self, phone_number):
+        """Sets the phone_number of this HealthCodeResult.
+
+        手机号码 
+
+        :param phone_number: The phone_number of this HealthCodeResult.
+        :type phone_number: str
+        """
+        self._phone_number = phone_number
+
+    @property
+    def province(self):
+        """Gets the province of this HealthCodeResult.
+
+        省份 
+
+        :return: The province of this HealthCodeResult.
+        :rtype: str
+        """
+        return self._province
+
+    @province.setter
+    def province(self, province):
+        """Sets the province of this HealthCodeResult.
+
+        省份 
+
+        :param province: The province of this HealthCodeResult.
+        :type province: str
+        """
+        self._province = province
+
+    @property
+    def city(self):
+        """Gets the city of this HealthCodeResult.
+
+        城市 
+
+        :return: The city of this HealthCodeResult.
+        :rtype: str
+        """
+        return self._city
+
+    @city.setter
+    def city(self, city):
+        """Sets the city of this HealthCodeResult.
+
+        城市 
+
+        :param city: The city of this HealthCodeResult.
+        :type city: str
+        """
+        self._city = city
+
+    @property
     def time(self):
         """Gets the time of this HealthCodeResult.
 
-        健康码更新时间 
+        健康码或行程卡的更新时间 
 
         :return: The time of this HealthCodeResult.
         :rtype: str
@@ -111,7 +287,7 @@ class HealthCodeResult:
     def time(self, time):
         """Sets the time of this HealthCodeResult.
 
-        健康码更新时间 
+        健康码或行程卡的更新时间 
 
         :param time: The time of this HealthCodeResult.
         :type time: str
@@ -122,7 +298,7 @@ class HealthCodeResult:
     def color(self):
         """Gets the color of this HealthCodeResult.
 
-        健康码颜色，可选值包括： - \"green\" - \"yellow\" - \"red\" - \"gray\" 
+        健康码或行程卡颜色。 健康码颜色可选值包括：  - \"green\"，绿码 - \"yellow\"，黄码 - \"red\"，红码 - \"gray\"，灰码  行程卡颜色可选值包括：  - \"green\"，绿码 - \"yellow\"，黄码 - \"red\"，红码 
 
         :return: The color of this HealthCodeResult.
         :rtype: str
@@ -133,12 +309,144 @@ class HealthCodeResult:
     def color(self, color):
         """Sets the color of this HealthCodeResult.
 
-        健康码颜色，可选值包括： - \"green\" - \"yellow\" - \"red\" - \"gray\" 
+        健康码或行程卡颜色。 健康码颜色可选值包括：  - \"green\"，绿码 - \"yellow\"，黄码 - \"red\"，红码 - \"gray\"，灰码  行程卡颜色可选值包括：  - \"green\"，绿码 - \"yellow\"，黄码 - \"red\"，红码 
 
         :param color: The color of this HealthCodeResult.
         :type color: str
         """
         self._color = color
+
+    @property
+    def vaccination_status(self):
+        """Gets the vaccination_status of this HealthCodeResult.
+
+        疫苗接种情况 
+
+        :return: The vaccination_status of this HealthCodeResult.
+        :rtype: str
+        """
+        return self._vaccination_status
+
+    @vaccination_status.setter
+    def vaccination_status(self, vaccination_status):
+        """Sets the vaccination_status of this HealthCodeResult.
+
+        疫苗接种情况 
+
+        :param vaccination_status: The vaccination_status of this HealthCodeResult.
+        :type vaccination_status: str
+        """
+        self._vaccination_status = vaccination_status
+
+    @property
+    def pcr_test_result(self):
+        """Gets the pcr_test_result of this HealthCodeResult.
+
+        核酸检测结果，可选值包括： - \"positive\",即阳性 - \"negative\",即阴性 - \"unknown\",未知 
+
+        :return: The pcr_test_result of this HealthCodeResult.
+        :rtype: str
+        """
+        return self._pcr_test_result
+
+    @pcr_test_result.setter
+    def pcr_test_result(self, pcr_test_result):
+        """Sets the pcr_test_result of this HealthCodeResult.
+
+        核酸检测结果，可选值包括： - \"positive\",即阳性 - \"negative\",即阴性 - \"unknown\",未知 
+
+        :param pcr_test_result: The pcr_test_result of this HealthCodeResult.
+        :type pcr_test_result: str
+        """
+        self._pcr_test_result = pcr_test_result
+
+    @property
+    def pcr_test_organization(self):
+        """Gets the pcr_test_organization of this HealthCodeResult.
+
+        核酸检测机构 
+
+        :return: The pcr_test_organization of this HealthCodeResult.
+        :rtype: str
+        """
+        return self._pcr_test_organization
+
+    @pcr_test_organization.setter
+    def pcr_test_organization(self, pcr_test_organization):
+        """Sets the pcr_test_organization of this HealthCodeResult.
+
+        核酸检测机构 
+
+        :param pcr_test_organization: The pcr_test_organization of this HealthCodeResult.
+        :type pcr_test_organization: str
+        """
+        self._pcr_test_organization = pcr_test_organization
+
+    @property
+    def pcr_test_time(self):
+        """Gets the pcr_test_time of this HealthCodeResult.
+
+        核酸检测结果更新时间 
+
+        :return: The pcr_test_time of this HealthCodeResult.
+        :rtype: str
+        """
+        return self._pcr_test_time
+
+    @pcr_test_time.setter
+    def pcr_test_time(self, pcr_test_time):
+        """Sets the pcr_test_time of this HealthCodeResult.
+
+        核酸检测结果更新时间 
+
+        :param pcr_test_time: The pcr_test_time of this HealthCodeResult.
+        :type pcr_test_time: str
+        """
+        self._pcr_test_time = pcr_test_time
+
+    @property
+    def pcr_sampling_time(self):
+        """Gets the pcr_sampling_time of this HealthCodeResult.
+
+        核酸检测采样时间 
+
+        :return: The pcr_sampling_time of this HealthCodeResult.
+        :rtype: str
+        """
+        return self._pcr_sampling_time
+
+    @pcr_sampling_time.setter
+    def pcr_sampling_time(self, pcr_sampling_time):
+        """Sets the pcr_sampling_time of this HealthCodeResult.
+
+        核酸检测采样时间 
+
+        :param pcr_sampling_time: The pcr_sampling_time of this HealthCodeResult.
+        :type pcr_sampling_time: str
+        """
+        self._pcr_sampling_time = pcr_sampling_time
+
+    @property
+    def reached_city(self):
+        """Gets the reached_city of this HealthCodeResult.
+
+        行程卡的途径地址 
+
+        :return: The reached_city of this HealthCodeResult.
+        :rtype: list[str]
+        """
+        return self._reached_city
+
+    @reached_city.setter
+    def reached_city(self, reached_city):
+        """Sets the reached_city of this HealthCodeResult.
+
+        行程卡的途径地址 
+
+        :param reached_city: The reached_city of this HealthCodeResult.
+        :type reached_city: list[str]
+        """
+        self._reached_city = reached_city
 
     @property
     def confidence(self):

@@ -44,6 +44,11 @@ from huaweicloudsdkcloudrtc.v2.model.record_obs_file_addr import RecordObsFileAd
 from huaweicloudsdkcloudrtc.v2.model.record_param import RecordParam
 from huaweicloudsdkcloudrtc.v2.model.record_rule import RecordRule
 from huaweicloudsdkcloudrtc.v2.model.record_rule_req import RecordRuleReq
+from huaweicloudsdkcloudrtc.v2.model.remove_room_request import RemoveRoomRequest
+from huaweicloudsdkcloudrtc.v2.model.remove_room_response import RemoveRoomResponse
+from huaweicloudsdkcloudrtc.v2.model.remove_users_req import RemoveUsersReq
+from huaweicloudsdkcloudrtc.v2.model.remove_users_request import RemoveUsersRequest
+from huaweicloudsdkcloudrtc.v2.model.remove_users_response import RemoveUsersResponse
 from huaweicloudsdkcloudrtc.v2.model.show_app_request import ShowAppRequest
 from huaweicloudsdkcloudrtc.v2.model.show_app_response import ShowAppResponse
 from huaweicloudsdkcloudrtc.v2.model.show_auto_record_request import ShowAutoRecordRequest
@@ -68,6 +73,9 @@ from huaweicloudsdkcloudrtc.v2.model.stop_mix_job_request import StopMixJobReque
 from huaweicloudsdkcloudrtc.v2.model.stop_mix_job_response import StopMixJobResponse
 from huaweicloudsdkcloudrtc.v2.model.update_auto_record_request import UpdateAutoRecordRequest
 from huaweicloudsdkcloudrtc.v2.model.update_auto_record_response import UpdateAutoRecordResponse
+from huaweicloudsdkcloudrtc.v2.model.update_individual_job_req import UpdateIndividualJobReq
+from huaweicloudsdkcloudrtc.v2.model.update_individual_stream_job_request import UpdateIndividualStreamJobRequest
+from huaweicloudsdkcloudrtc.v2.model.update_individual_stream_job_response import UpdateIndividualStreamJobResponse
 from huaweicloudsdkcloudrtc.v2.model.update_mix_job_req import UpdateMixJobReq
 from huaweicloudsdkcloudrtc.v2.model.update_mix_job_request import UpdateMixJobRequest
 from huaweicloudsdkcloudrtc.v2.model.update_mix_job_response import UpdateMixJobResponse

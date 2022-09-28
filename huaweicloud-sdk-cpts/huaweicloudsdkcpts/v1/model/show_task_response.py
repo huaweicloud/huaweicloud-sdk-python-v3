@@ -23,16 +23,16 @@ class ShowTaskResponse(SdkResponse):
     openapi_types = {
         'code': 'str',
         'message': 'str',
-        'taskinfo': 'TaskInfo'
+        'task_info': 'TaskInfo'
     }
 
     attribute_map = {
         'code': 'code',
         'message': 'message',
-        'taskinfo': 'taskinfo'
+        'task_info': 'taskInfo'
     }
 
-    def __init__(self, code=None, message=None, taskinfo=None):
+    def __init__(self, code=None, message=None, task_info=None):
         """ShowTaskResponse
 
         The model defined in huaweicloud sdk
@@ -41,23 +41,23 @@ class ShowTaskResponse(SdkResponse):
         :type code: str
         :param message: message
         :type message: str
-        :param taskinfo: 
-        :type taskinfo: :class:`huaweicloudsdkcpts.v1.TaskInfo`
+        :param task_info: 
+        :type task_info: :class:`huaweicloudsdkcpts.v1.TaskInfo`
         """
         
         super(ShowTaskResponse, self).__init__()
 
         self._code = None
         self._message = None
-        self._taskinfo = None
+        self._task_info = None
         self.discriminator = None
 
         if code is not None:
             self.code = code
         if message is not None:
             self.message = message
-        if taskinfo is not None:
-            self.taskinfo = taskinfo
+        if task_info is not None:
+            self.task_info = task_info
 
     @property
     def code(self):
@@ -104,24 +104,24 @@ class ShowTaskResponse(SdkResponse):
         self._message = message
 
     @property
-    def taskinfo(self):
-        """Gets the taskinfo of this ShowTaskResponse.
+    def task_info(self):
+        """Gets the task_info of this ShowTaskResponse.
 
 
-        :return: The taskinfo of this ShowTaskResponse.
+        :return: The task_info of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.TaskInfo`
         """
-        return self._taskinfo
+        return self._task_info
 
-    @taskinfo.setter
-    def taskinfo(self, taskinfo):
-        """Sets the taskinfo of this ShowTaskResponse.
+    @task_info.setter
+    def task_info(self, task_info):
+        """Sets the task_info of this ShowTaskResponse.
 
 
-        :param taskinfo: The taskinfo of this ShowTaskResponse.
-        :type taskinfo: :class:`huaweicloudsdkcpts.v1.TaskInfo`
+        :param task_info: The task_info of this ShowTaskResponse.
+        :type task_info: :class:`huaweicloudsdkcpts.v1.TaskInfo`
         """
-        self._taskinfo = taskinfo
+        self._task_info = task_info
 
     def to_dict(self):
         """Returns the model properties as a dict"""

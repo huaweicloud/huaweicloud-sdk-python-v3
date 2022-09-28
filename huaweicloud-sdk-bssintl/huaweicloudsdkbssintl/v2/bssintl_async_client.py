@@ -2487,7 +2487,7 @@ class BssintlAsyncClient(Client):
     def pay_orders_async(self, request):
         """支付包年/包月产品订单
 
-        功能描述：客户可以对待支付状态的包年/包月产品订单进行支付
+        客户可以对待支付状态的包年/包月产品订单进行支付
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2529,7 +2529,7 @@ class BssintlAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/orders/customer-orders/pay',
+            resource_path='/v3/orders/customer-orders/pay',
             method='POST',
             path_params=path_params,
             query_params=query_params,

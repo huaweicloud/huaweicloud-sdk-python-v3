@@ -21,29 +21,36 @@ class CreateAkSkResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'ak': 'str'
+        'ak': 'str',
+        'sk': 'str'
     }
 
     attribute_map = {
-        'ak': 'ak'
+        'ak': 'ak',
+        'sk': 'sk'
     }
 
-    def __init__(self, ak=None):
+    def __init__(self, ak=None, sk=None):
         """CreateAkSkResponse
 
         The model defined in huaweicloud sdk
 
         :param ak: 创建/删除的ak信息
         :type ak: str
+        :param sk: 创建/删除的sk信息
+        :type sk: str
         """
         
         super(CreateAkSkResponse, self).__init__()
 
         self._ak = None
+        self._sk = None
         self.discriminator = None
 
         if ak is not None:
             self.ak = ak
+        if sk is not None:
+            self.sk = sk
 
     @property
     def ak(self):
@@ -66,6 +73,28 @@ class CreateAkSkResponse(SdkResponse):
         :type ak: str
         """
         self._ak = ak
+
+    @property
+    def sk(self):
+        """Gets the sk of this CreateAkSkResponse.
+
+        创建/删除的sk信息
+
+        :return: The sk of this CreateAkSkResponse.
+        :rtype: str
+        """
+        return self._sk
+
+    @sk.setter
+    def sk(self, sk):
+        """Sets the sk of this CreateAkSkResponse.
+
+        创建/删除的sk信息
+
+        :param sk: The sk of this CreateAkSkResponse.
+        :type sk: str
+        """
+        self._sk = sk
 
     def to_dict(self):
         """Returns the model properties as a dict"""

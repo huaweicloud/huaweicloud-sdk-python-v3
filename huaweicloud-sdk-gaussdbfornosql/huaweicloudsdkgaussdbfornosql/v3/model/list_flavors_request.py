@@ -47,7 +47,8 @@ class ListFlavorsRequest:
         self._engine_name = None
         self.discriminator = None
 
-        self.region = region
+        if region is not None:
+            self.region = region
         if engine_name is not None:
             self.engine_name = engine_name
 

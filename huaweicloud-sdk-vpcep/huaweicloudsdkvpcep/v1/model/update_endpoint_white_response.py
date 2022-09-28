@@ -69,11 +69,11 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
         :param id: 终端节点的ID，唯一标识。
         :type id: str
-        :param service_type: 终端节点连接的终端节点服务类 型。 ● gataway：由运维人员配置。 用户无需创建，可直接使用。 ● interface：包括运维人员配置 的云服务和用户自己创建的私 有服务。其中，运维人员配置 的云服务无需创建，用户可直 接使用。 您可以通过查询公共终端节点服 务列表查看由运维人员配置的所 有用户可见且可连接的终端节点 服务，并通过创建终端节点服务 创建Interface类型的终端节点服 务。
+        :param service_type: 终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置，用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
         :type service_type: str
         :param status: 终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● failed：失败
         :type status: str
-        :param ip: 访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： ● 当查询连接interface类型终端节点服务的终 端节点时。 ● 终端节点服务启用“连接审批”功能，且已 经“接受”连接审批。 “status”可以是“accepted”或者 “rejected（仅支持“接受”连接审批后再 “拒绝”的情况）”。
+        :param ip: 访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： ● 当查询连接interface类型终端节点服务的终端节点时。 ● 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
         :type ip: str
         :param active_status: 帐号状态。 ● frozen：冻结 ● active：解冻
         :type active_status: list[str]
@@ -83,25 +83,25 @@ class UpdateEndpointWhiteResponse(SdkResponse):
         :type marker_id: int
         :param endpoint_service_id: 终端节点服务的ID。
         :type endpoint_service_id: str
-        :param enable_dns: 是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服 务的终端节点时，“enable_dns”设 置为true或者false，均不创建域名。
+        :param enable_dns: 是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
         :type enable_dns: bool
-        :param dns_names: 访问所连接的终端节点服务的域 名。 当“enable_dns”为true时，该 参数可见。
+        :param dns_names: 访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
         :type dns_names: list[str]
-        :param subnet_id: vpc_id对应VPC下已创建的网络 （network）的ID，UUID格式。
+        :param subnet_id: vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
         :type subnet_id: str
         :param vpc_id: 终端节点所在的VPC的ID。
         :type vpc_id: str
-        :param created_at: 终端节点的创建时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        :param created_at: 终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
         :type created_at: str
-        :param updated_at: 终端节点的更新时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        :param updated_at: 终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
         :type updated_at: str
-        :param project_id: 项目ID，获取方法请参见获取项 目ID。
+        :param project_id: 项目ID，获取方法请参见获取项目ID。
         :type project_id: str
         :param tags: 标签列表，没有标签默认为空数组。
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
-        :param whitelist: 控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点 服务的终端节点时，显示此参 数。
+        :param whitelist: 控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
         :type whitelist: list[str]
-        :param enable_whitelist: 是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点 服务的终端节点时，显示此参 数。
+        :param enable_whitelist: 是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
         :type enable_whitelist: bool
         """
         
@@ -190,7 +190,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def service_type(self):
         """Gets the service_type of this UpdateEndpointWhiteResponse.
 
-        终端节点连接的终端节点服务类 型。 ● gataway：由运维人员配置。 用户无需创建，可直接使用。 ● interface：包括运维人员配置 的云服务和用户自己创建的私 有服务。其中，运维人员配置 的云服务无需创建，用户可直 接使用。 您可以通过查询公共终端节点服 务列表查看由运维人员配置的所 有用户可见且可连接的终端节点 服务，并通过创建终端节点服务 创建Interface类型的终端节点服 务。
+        终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置，用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
 
         :return: The service_type of this UpdateEndpointWhiteResponse.
         :rtype: str
@@ -201,7 +201,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def service_type(self, service_type):
         """Sets the service_type of this UpdateEndpointWhiteResponse.
 
-        终端节点连接的终端节点服务类 型。 ● gataway：由运维人员配置。 用户无需创建，可直接使用。 ● interface：包括运维人员配置 的云服务和用户自己创建的私 有服务。其中，运维人员配置 的云服务无需创建，用户可直 接使用。 您可以通过查询公共终端节点服 务列表查看由运维人员配置的所 有用户可见且可连接的终端节点 服务，并通过创建终端节点服务 创建Interface类型的终端节点服 务。
+        终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置，用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
 
         :param service_type: The service_type of this UpdateEndpointWhiteResponse.
         :type service_type: str
@@ -234,7 +234,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def ip(self):
         """Gets the ip of this UpdateEndpointWhiteResponse.
 
-        访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： ● 当查询连接interface类型终端节点服务的终 端节点时。 ● 终端节点服务启用“连接审批”功能，且已 经“接受”连接审批。 “status”可以是“accepted”或者 “rejected（仅支持“接受”连接审批后再 “拒绝”的情况）”。
+        访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： ● 当查询连接interface类型终端节点服务的终端节点时。 ● 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
 
         :return: The ip of this UpdateEndpointWhiteResponse.
         :rtype: str
@@ -245,7 +245,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def ip(self, ip):
         """Sets the ip of this UpdateEndpointWhiteResponse.
 
-        访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： ● 当查询连接interface类型终端节点服务的终 端节点时。 ● 终端节点服务启用“连接审批”功能，且已 经“接受”连接审批。 “status”可以是“accepted”或者 “rejected（仅支持“接受”连接审批后再 “拒绝”的情况）”。
+        访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： ● 当查询连接interface类型终端节点服务的终端节点时。 ● 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
 
         :param ip: The ip of this UpdateEndpointWhiteResponse.
         :type ip: str
@@ -344,7 +344,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def enable_dns(self):
         """Gets the enable_dns of this UpdateEndpointWhiteResponse.
 
-        是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服 务的终端节点时，“enable_dns”设 置为true或者false，均不创建域名。
+        是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :return: The enable_dns of this UpdateEndpointWhiteResponse.
         :rtype: bool
@@ -355,7 +355,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def enable_dns(self, enable_dns):
         """Sets the enable_dns of this UpdateEndpointWhiteResponse.
 
-        是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服 务的终端节点时，“enable_dns”设 置为true或者false，均不创建域名。
+        是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :param enable_dns: The enable_dns of this UpdateEndpointWhiteResponse.
         :type enable_dns: bool
@@ -366,7 +366,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def dns_names(self):
         """Gets the dns_names of this UpdateEndpointWhiteResponse.
 
-        访问所连接的终端节点服务的域 名。 当“enable_dns”为true时，该 参数可见。
+        访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
 
         :return: The dns_names of this UpdateEndpointWhiteResponse.
         :rtype: list[str]
@@ -377,7 +377,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def dns_names(self, dns_names):
         """Sets the dns_names of this UpdateEndpointWhiteResponse.
 
-        访问所连接的终端节点服务的域 名。 当“enable_dns”为true时，该 参数可见。
+        访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
 
         :param dns_names: The dns_names of this UpdateEndpointWhiteResponse.
         :type dns_names: list[str]
@@ -388,7 +388,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def subnet_id(self):
         """Gets the subnet_id of this UpdateEndpointWhiteResponse.
 
-        vpc_id对应VPC下已创建的网络 （network）的ID，UUID格式。
+        vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
 
         :return: The subnet_id of this UpdateEndpointWhiteResponse.
         :rtype: str
@@ -399,7 +399,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this UpdateEndpointWhiteResponse.
 
-        vpc_id对应VPC下已创建的网络 （network）的ID，UUID格式。
+        vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
 
         :param subnet_id: The subnet_id of this UpdateEndpointWhiteResponse.
         :type subnet_id: str
@@ -432,7 +432,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def created_at(self):
         """Gets the created_at of this UpdateEndpointWhiteResponse.
 
-        终端节点的创建时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The created_at of this UpdateEndpointWhiteResponse.
         :rtype: str
@@ -443,7 +443,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def created_at(self, created_at):
         """Sets the created_at of this UpdateEndpointWhiteResponse.
 
-        终端节点的创建时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param created_at: The created_at of this UpdateEndpointWhiteResponse.
         :type created_at: str
@@ -454,7 +454,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def updated_at(self):
         """Gets the updated_at of this UpdateEndpointWhiteResponse.
 
-        终端节点的更新时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The updated_at of this UpdateEndpointWhiteResponse.
         :rtype: str
@@ -465,7 +465,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def updated_at(self, updated_at):
         """Sets the updated_at of this UpdateEndpointWhiteResponse.
 
-        终端节点的更新时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this UpdateEndpointWhiteResponse.
         :type updated_at: str
@@ -476,7 +476,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def project_id(self):
         """Gets the project_id of this UpdateEndpointWhiteResponse.
 
-        项目ID，获取方法请参见获取项 目ID。
+        项目ID，获取方法请参见获取项目ID。
 
         :return: The project_id of this UpdateEndpointWhiteResponse.
         :rtype: str
@@ -487,7 +487,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def project_id(self, project_id):
         """Sets the project_id of this UpdateEndpointWhiteResponse.
 
-        项目ID，获取方法请参见获取项 目ID。
+        项目ID，获取方法请参见获取项目ID。
 
         :param project_id: The project_id of this UpdateEndpointWhiteResponse.
         :type project_id: str
@@ -520,7 +520,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def whitelist(self):
         """Gets the whitelist of this UpdateEndpointWhiteResponse.
 
-        控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点 服务的终端节点时，显示此参 数。
+        控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
         :return: The whitelist of this UpdateEndpointWhiteResponse.
         :rtype: list[str]
@@ -531,7 +531,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def whitelist(self, whitelist):
         """Sets the whitelist of this UpdateEndpointWhiteResponse.
 
-        控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点 服务的终端节点时，显示此参 数。
+        控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
         :param whitelist: The whitelist of this UpdateEndpointWhiteResponse.
         :type whitelist: list[str]
@@ -542,7 +542,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def enable_whitelist(self):
         """Gets the enable_whitelist of this UpdateEndpointWhiteResponse.
 
-        是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点 服务的终端节点时，显示此参 数。
+        是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
         :return: The enable_whitelist of this UpdateEndpointWhiteResponse.
         :rtype: bool
@@ -553,7 +553,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     def enable_whitelist(self, enable_whitelist):
         """Sets the enable_whitelist of this UpdateEndpointWhiteResponse.
 
-        是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点 服务的终端节点时，显示此参 数。
+        是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
         :param enable_whitelist: The enable_whitelist of this UpdateEndpointWhiteResponse.
         :type enable_whitelist: bool

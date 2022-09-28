@@ -615,6 +615,144 @@ class CloudRTCClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def remove_room(self, request):
+        """解散房间
+
+        调用此接口解散房间，将该房间中所有用户踢出房间。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RemoveRoom
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.RemoveRoomRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.RemoveRoomResponse`
+        """
+        return self.remove_room_with_http_info(request)
+
+    def remove_room_with_http_info(self, request):
+        all_params = ['content_type', 'app_id', 'room_id', 'authorization', 'x_sdk_date', 'x_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+        if 'room_id' in local_var_params:
+            path_params['room_id'] = local_var_params['room_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+        if 'authorization' in local_var_params:
+            header_params['Authorization'] = local_var_params['authorization']
+        if 'x_sdk_date' in local_var_params:
+            header_params['X-Sdk-Date'] = local_var_params['x_sdk_date']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/apps/{app_id}/rooms/{room_id}/dismiss',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RemoveRoomResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def remove_users(self, request):
+        """踢除在线用户
+
+        调用此接口强制用户离开房间。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RemoveUsers
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.RemoveUsersRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.RemoveUsersResponse`
+        """
+        return self.remove_users_with_http_info(request)
+
+    def remove_users_with_http_info(self, request):
+        all_params = ['content_type', 'app_id', 'room_id', 'remove_users_v2_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+        if 'room_id' in local_var_params:
+            path_params['room_id'] = local_var_params['room_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+        if 'authorization' in local_var_params:
+            header_params['Authorization'] = local_var_params['authorization']
+        if 'x_sdk_date' in local_var_params:
+            header_params['X-Sdk-Date'] = local_var_params['x_sdk_date']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/apps/{app_id}/rooms/{room_id}/batch-remove-users',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RemoveUsersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_app(self, request):
         """查询单个应用
 
@@ -1418,6 +1556,78 @@ class CloudRTCClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateAutoRecordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_individual_stream_job(self, request):
+        """更新单流任务
+
+        调用此接口修改单流任务。
+        
+        仅部分场景支持修改。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateIndividualStreamJob
+        :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateIndividualStreamJobRequest`
+        :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateIndividualStreamJobResponse`
+        """
+        return self.update_individual_stream_job_with_http_info(request)
+
+    def update_individual_stream_job_with_http_info(self, request):
+        all_params = ['content_type', 'app_id', 'job_id', 'update_individual_stream_job_v2_request_body', 'authorization', 'x_sdk_date', 'x_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'app_id' in local_var_params:
+            path_params['app_id'] = local_var_params['app_id']
+        if 'job_id' in local_var_params:
+            path_params['job_id'] = local_var_params['job_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+        if 'authorization' in local_var_params:
+            header_params['Authorization'] = local_var_params['authorization']
+        if 'x_sdk_date' in local_var_params:
+            header_params['X-Sdk-Date'] = local_var_params['x_sdk_date']
+        if 'x_project_id' in local_var_params:
+            header_params['X-Project-Id'] = local_var_params['x_project_id']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = ["X-request-Id"]
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/apps/{app_id}/individual-stream-jobs/{job_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateIndividualStreamJobResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

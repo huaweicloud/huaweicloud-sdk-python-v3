@@ -23,9 +23,9 @@ class ContentInfo:
     openapi_types = {
         'body_type': 'int',
         'bodys': 'list[object]',
-        'check_end_length': 'str',
-        'check_end_str': 'str',
-        'check_end_type': 'str',
+        'check_end_length': 'object',
+        'check_end_str': 'object',
+        'check_end_type': 'object',
         'connect_timeout': 'int',
         'connect_type': 'int',
         'headers': 'list[ContentHeader]',
@@ -65,12 +65,12 @@ class ContentInfo:
         :type body_type: int
         :param bodys: bodys
         :type bodys: list[object]
-        :param check_end_length: check_end_length
-        :type check_end_length: str
-        :param check_end_str: check_end_str
-        :type check_end_str: str
-        :param check_end_type: check_end_type
-        :type check_end_type: str
+        :param check_end_length: TCP/UDP协议返回数据长度
+        :type check_end_length: object
+        :param check_end_str: TCP/UDP协议返回结束符
+        :type check_end_str: object
+        :param check_end_type: TCP/UDP协议返回结束类型，1：返回数据长度；2：结束符
+        :type check_end_type: object
         :param connect_timeout: connect_timeout
         :type connect_timeout: int
         :param connect_type: connect_type
@@ -191,10 +191,10 @@ class ContentInfo:
     def check_end_length(self):
         """Gets the check_end_length of this ContentInfo.
 
-        check_end_length
+        TCP/UDP协议返回数据长度
 
         :return: The check_end_length of this ContentInfo.
-        :rtype: str
+        :rtype: object
         """
         return self._check_end_length
 
@@ -202,10 +202,10 @@ class ContentInfo:
     def check_end_length(self, check_end_length):
         """Sets the check_end_length of this ContentInfo.
 
-        check_end_length
+        TCP/UDP协议返回数据长度
 
         :param check_end_length: The check_end_length of this ContentInfo.
-        :type check_end_length: str
+        :type check_end_length: object
         """
         self._check_end_length = check_end_length
 
@@ -213,10 +213,10 @@ class ContentInfo:
     def check_end_str(self):
         """Gets the check_end_str of this ContentInfo.
 
-        check_end_str
+        TCP/UDP协议返回结束符
 
         :return: The check_end_str of this ContentInfo.
-        :rtype: str
+        :rtype: object
         """
         return self._check_end_str
 
@@ -224,10 +224,10 @@ class ContentInfo:
     def check_end_str(self, check_end_str):
         """Sets the check_end_str of this ContentInfo.
 
-        check_end_str
+        TCP/UDP协议返回结束符
 
         :param check_end_str: The check_end_str of this ContentInfo.
-        :type check_end_str: str
+        :type check_end_str: object
         """
         self._check_end_str = check_end_str
 
@@ -235,10 +235,10 @@ class ContentInfo:
     def check_end_type(self):
         """Gets the check_end_type of this ContentInfo.
 
-        check_end_type
+        TCP/UDP协议返回结束类型，1：返回数据长度；2：结束符
 
         :return: The check_end_type of this ContentInfo.
-        :rtype: str
+        :rtype: object
         """
         return self._check_end_type
 
@@ -246,10 +246,10 @@ class ContentInfo:
     def check_end_type(self, check_end_type):
         """Sets the check_end_type of this ContentInfo.
 
-        check_end_type
+        TCP/UDP协议返回结束类型，1：返回数据长度；2：结束符
 
         :param check_end_type: The check_end_type of this ContentInfo.
-        :type check_end_type: str
+        :type check_end_type: object
         """
         self._check_end_type = check_end_type
 

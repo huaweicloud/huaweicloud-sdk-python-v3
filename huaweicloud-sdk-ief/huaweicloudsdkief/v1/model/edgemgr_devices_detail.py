@@ -55,7 +55,7 @@ class EdgemgrDevicesDetail:
         :type name: str
         :param description: 终端设备描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
         :type description: str
-        :param attributes: 
+        :param attributes: 终端设备静态属性
         :type attributes: dict(str, ValueInAttributes)
         :param connection_type: 连接类型，默认为edge
         :type connection_type: str
@@ -170,6 +170,7 @@ class EdgemgrDevicesDetail:
     def attributes(self):
         """Gets the attributes of this EdgemgrDevicesDetail.
 
+        终端设备静态属性
 
         :return: The attributes of this EdgemgrDevicesDetail.
         :rtype: dict(str, ValueInAttributes)
@@ -180,6 +181,7 @@ class EdgemgrDevicesDetail:
     def attributes(self, attributes):
         """Sets the attributes of this EdgemgrDevicesDetail.
 
+        终端设备静态属性
 
         :param attributes: The attributes of this EdgemgrDevicesDetail.
         :type attributes: dict(str, ValueInAttributes)

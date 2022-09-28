@@ -25,11 +25,11 @@ class ListServiceDetailsResponse(SdkResponse):
         'port_id': 'str',
         'vip_port_id': 'str',
         'service_name': 'str',
-        'service_type': 'str',
+        'server_type': 'str',
         'vpc_id': 'str',
         'approval_enabled': 'bool',
         'status': 'str',
-        'server_type': 'str',
+        'service_type': 'str',
         'created_at': 'str',
         'updated_at': 'str',
         'project_id': 'str',
@@ -37,7 +37,8 @@ class ListServiceDetailsResponse(SdkResponse):
         'ports': 'list[PortList]',
         'tcp_proxy': 'str',
         'tags': 'list[TagList]',
-        'error': 'list[Error]'
+        'error': 'list[Error]',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -45,11 +46,11 @@ class ListServiceDetailsResponse(SdkResponse):
         'port_id': 'port_id',
         'vip_port_id': 'vip_port_id',
         'service_name': 'service_name',
-        'service_type': 'service_type',
+        'server_type': 'server_type',
         'vpc_id': 'vpc_id',
         'approval_enabled': 'approval_enabled',
         'status': 'status',
-        'server_type': 'server_type',
+        'service_type': 'service_type',
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'project_id': 'project_id',
@@ -57,32 +58,33 @@ class ListServiceDetailsResponse(SdkResponse):
         'ports': 'ports',
         'tcp_proxy': 'tcp_proxy',
         'tags': 'tags',
-        'error': 'error'
+        'error': 'error',
+        'description': 'description'
     }
 
-    def __init__(self, id=None, port_id=None, vip_port_id=None, service_name=None, service_type=None, vpc_id=None, approval_enabled=None, status=None, server_type=None, created_at=None, updated_at=None, project_id=None, cidr_type=None, ports=None, tcp_proxy=None, tags=None, error=None):
+    def __init__(self, id=None, port_id=None, vip_port_id=None, service_name=None, server_type=None, vpc_id=None, approval_enabled=None, status=None, service_type=None, created_at=None, updated_at=None, project_id=None, cidr_type=None, ports=None, tcp_proxy=None, tags=None, error=None, description=None):
         """ListServiceDetailsResponse
 
         The model defined in huaweicloud sdk
 
         :param id: 终端节点服务的ID，唯一标识。
         :type id: str
-        :param port_id: 标识终端节点服务后端资源的ID，格式为通用唯一识别码 （Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
+        :param port_id: 标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
         :type port_id: str
         :param vip_port_id: 虚拟IP的网卡ID。 仅当“port_id”为“VIP类型”时，返回该参数。
         :type vip_port_id: str
         :param service_name: 终端节点服务的名称。
         :type service_name: str
-        :param service_type: 资源类型。 ● VM：云服务器。 ● VIP：虚拟IP。 ● LB：增强负载均衡型。
-        :type service_type: str
+        :param server_type: 资源类型。 ● VM：云服务器。 ● VIP：虚拟IP。 ● LB：增强负载均衡型。
+        :type server_type: str
         :param vpc_id: 终端节点服务对应后端资源所在的VPC的ID。
         :type vpc_id: str
-        :param approval_enabled: 是否需要审批。 ● false：不需要审批，创建的终端节点连接直接为accepted状态。 ● true：需要审批，创建的终端节点连接为pendingAcceptance状态，需要终端节点服务所属用户审核后方可使用。
+        :param approval_enabled: 是否需要审批。 ● false：不需要审批，创建的终端节点连接直接为accepted状态。 ● true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。
         :type approval_enabled: bool
         :param status: 终端节点服务的状态。 ● creating：创建中 ● available：可连接 ● failed：失败 ● deleting：删除中
         :type status: str
-        :param server_type: 终端节点服务类型。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。其中，运维人员配 置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
-        :type server_type: str
+        :param service_type: 终端节点服务类型。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节。
+        :type service_type: str
         :param created_at: 终端节点服务的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
         :type created_at: str
         :param updated_at: 终端节点服务的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
@@ -93,12 +95,14 @@ class ListServiceDetailsResponse(SdkResponse):
         :type cidr_type: str
         :param ports: 服务开放的端口映射列表，详细内容请参见表4-17 同一个终端节点服务下，不允许重复的端口映射。若多个终端节点服务共用一个port_id，则 终端节点服务之间的所有端口映射的server_port和protocol的组合不能重复。
         :type ports: list[:class:`huaweicloudsdkvpcep.v1.PortList`]
-        :param tcp_proxy: 用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcpoption字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
+        :param tcp_proxy: 用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcpoption字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
         :type tcp_proxy: str
         :param tags: 资源标签列表
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
         :param error: 提交任务异常时返回的异常信息
         :type error: list[:class:`huaweicloudsdkvpcep.v1.Error`]
+        :param description: 描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。
+        :type description: str
         """
         
         super(ListServiceDetailsResponse, self).__init__()
@@ -107,11 +111,11 @@ class ListServiceDetailsResponse(SdkResponse):
         self._port_id = None
         self._vip_port_id = None
         self._service_name = None
-        self._service_type = None
+        self._server_type = None
         self._vpc_id = None
         self._approval_enabled = None
         self._status = None
-        self._server_type = None
+        self._service_type = None
         self._created_at = None
         self._updated_at = None
         self._project_id = None
@@ -120,6 +124,7 @@ class ListServiceDetailsResponse(SdkResponse):
         self._tcp_proxy = None
         self._tags = None
         self._error = None
+        self._description = None
         self.discriminator = None
 
         if id is not None:
@@ -130,16 +135,16 @@ class ListServiceDetailsResponse(SdkResponse):
             self.vip_port_id = vip_port_id
         if service_name is not None:
             self.service_name = service_name
-        if service_type is not None:
-            self.service_type = service_type
+        if server_type is not None:
+            self.server_type = server_type
         if vpc_id is not None:
             self.vpc_id = vpc_id
         if approval_enabled is not None:
             self.approval_enabled = approval_enabled
         if status is not None:
             self.status = status
-        if server_type is not None:
-            self.server_type = server_type
+        if service_type is not None:
+            self.service_type = service_type
         if created_at is not None:
             self.created_at = created_at
         if updated_at is not None:
@@ -156,6 +161,8 @@ class ListServiceDetailsResponse(SdkResponse):
             self.tags = tags
         if error is not None:
             self.error = error
+        if description is not None:
+            self.description = description
 
     @property
     def id(self):
@@ -183,7 +190,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def port_id(self):
         """Gets the port_id of this ListServiceDetailsResponse.
 
-        标识终端节点服务后端资源的ID，格式为通用唯一识别码 （Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
+        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
 
         :return: The port_id of this ListServiceDetailsResponse.
         :rtype: str
@@ -194,7 +201,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def port_id(self, port_id):
         """Sets the port_id of this ListServiceDetailsResponse.
 
-        标识终端节点服务后端资源的ID，格式为通用唯一识别码 （Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
+        标识终端节点服务后端资源的ID， 格式为通用唯一识别码（Universally Unique Identifier，下文简称UUID）。取值为： ● LB类型：增强型负载均衡器内网IP对应的端口ID。 ● VM类型：弹性云服务器IP地址对应的网卡ID。 ● VIP类型：虚拟资源所在物理服务器对应的网卡ID。
 
         :param port_id: The port_id of this ListServiceDetailsResponse.
         :type port_id: str
@@ -246,26 +253,26 @@ class ListServiceDetailsResponse(SdkResponse):
         self._service_name = service_name
 
     @property
-    def service_type(self):
-        """Gets the service_type of this ListServiceDetailsResponse.
+    def server_type(self):
+        """Gets the server_type of this ListServiceDetailsResponse.
 
         资源类型。 ● VM：云服务器。 ● VIP：虚拟IP。 ● LB：增强负载均衡型。
 
-        :return: The service_type of this ListServiceDetailsResponse.
+        :return: The server_type of this ListServiceDetailsResponse.
         :rtype: str
         """
-        return self._service_type
+        return self._server_type
 
-    @service_type.setter
-    def service_type(self, service_type):
-        """Sets the service_type of this ListServiceDetailsResponse.
+    @server_type.setter
+    def server_type(self, server_type):
+        """Sets the server_type of this ListServiceDetailsResponse.
 
         资源类型。 ● VM：云服务器。 ● VIP：虚拟IP。 ● LB：增强负载均衡型。
 
-        :param service_type: The service_type of this ListServiceDetailsResponse.
-        :type service_type: str
+        :param server_type: The server_type of this ListServiceDetailsResponse.
+        :type server_type: str
         """
-        self._service_type = service_type
+        self._server_type = server_type
 
     @property
     def vpc_id(self):
@@ -293,7 +300,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def approval_enabled(self):
         """Gets the approval_enabled of this ListServiceDetailsResponse.
 
-        是否需要审批。 ● false：不需要审批，创建的终端节点连接直接为accepted状态。 ● true：需要审批，创建的终端节点连接为pendingAcceptance状态，需要终端节点服务所属用户审核后方可使用。
+        是否需要审批。 ● false：不需要审批，创建的终端节点连接直接为accepted状态。 ● true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。
 
         :return: The approval_enabled of this ListServiceDetailsResponse.
         :rtype: bool
@@ -304,7 +311,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def approval_enabled(self, approval_enabled):
         """Sets the approval_enabled of this ListServiceDetailsResponse.
 
-        是否需要审批。 ● false：不需要审批，创建的终端节点连接直接为accepted状态。 ● true：需要审批，创建的终端节点连接为pendingAcceptance状态，需要终端节点服务所属用户审核后方可使用。
+        是否需要审批。 ● false：不需要审批，创建的终端节点连接直接为accepted状态。 ● true：需要审批，创建的终端节点连接为pendingAcceptance状态， 需要终端节点服务所属用户审核后方可使用。
 
         :param approval_enabled: The approval_enabled of this ListServiceDetailsResponse.
         :type approval_enabled: bool
@@ -334,26 +341,26 @@ class ListServiceDetailsResponse(SdkResponse):
         self._status = status
 
     @property
-    def server_type(self):
-        """Gets the server_type of this ListServiceDetailsResponse.
+    def service_type(self):
+        """Gets the service_type of this ListServiceDetailsResponse.
 
-        终端节点服务类型。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。其中，运维人员配 置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+        终端节点服务类型。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节。
 
-        :return: The server_type of this ListServiceDetailsResponse.
+        :return: The service_type of this ListServiceDetailsResponse.
         :rtype: str
         """
-        return self._server_type
+        return self._service_type
 
-    @server_type.setter
-    def server_type(self, server_type):
-        """Sets the server_type of this ListServiceDetailsResponse.
+    @service_type.setter
+    def service_type(self, service_type):
+        """Sets the service_type of this ListServiceDetailsResponse.
 
-        终端节点服务类型。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。其中，运维人员配 置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节点。
+        终端节点服务类型。 终端节点服务类型包括“网关（gataway）型”和“接口（interface）型”： ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过创建终端节点创建访问Gateway和Interface类型终端节点服务的终端节。
 
-        :param server_type: The server_type of this ListServiceDetailsResponse.
-        :type server_type: str
+        :param service_type: The service_type of this ListServiceDetailsResponse.
+        :type service_type: str
         """
-        self._server_type = server_type
+        self._service_type = service_type
 
     @property
     def created_at(self):
@@ -469,7 +476,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def tcp_proxy(self):
         """Gets the tcp_proxy of this ListServiceDetailsResponse.
 
-        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcpoption字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
+        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcpoption字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
         :return: The tcp_proxy of this ListServiceDetailsResponse.
         :rtype: str
@@ -480,7 +487,7 @@ class ListServiceDetailsResponse(SdkResponse):
     def tcp_proxy(self, tcp_proxy):
         """Sets the tcp_proxy of this ListServiceDetailsResponse.
 
-        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcpoption字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
+        用于控制是否将客户端的源IP、源端口、marker_id等信息携带到服务端。 信息携带支持两种方式： ● TCP TOA：表示将客户端信息插入到tcpoption字段中携带至服务端。 说明 仅当后端资源为OBS时，支持TCP TOA类型信息携带方式。 ● Proxy Protocol：表示将客户端相关信息插入到tcp payload字段中携带至服务端。 仅当服务端支持解析上述字段时，该参数设置才有效。 参数的取值包括： ● close：表示关闭代理协议。 ● toa_open：表示开启代理协议“tcp_toa”。 ● proxy_open：表示开启代理协议“proxy_protocol”。 ● open：表示同时开启代理协议“tcp_toa”和“proxy_protocol”。 默认值为“close”。
 
         :param tcp_proxy: The tcp_proxy of this ListServiceDetailsResponse.
         :type tcp_proxy: str
@@ -530,6 +537,28 @@ class ListServiceDetailsResponse(SdkResponse):
         :type error: list[:class:`huaweicloudsdkvpcep.v1.Error`]
         """
         self._error = error
+
+    @property
+    def description(self):
+        """Gets the description of this ListServiceDetailsResponse.
+
+        描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
+
+        :return: The description of this ListServiceDetailsResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ListServiceDetailsResponse.
+
+        描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
+
+        :param description: The description of this ListServiceDetailsResponse.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

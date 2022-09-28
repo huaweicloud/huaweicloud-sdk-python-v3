@@ -26,7 +26,9 @@ class VariableDetail:
         'is_quoted': 'bool',
         'name': 'str',
         'variable': 'list[object]',
-        'variable_type': 'int'
+        'variable_type': 'int',
+        'variable_mode': 'int',
+        'share_mode': 'int'
     }
 
     attribute_map = {
@@ -35,10 +37,12 @@ class VariableDetail:
         'is_quoted': 'is_quoted',
         'name': 'name',
         'variable': 'variable',
-        'variable_type': 'variable_type'
+        'variable_type': 'variable_type',
+        'variable_mode': 'variable_mode',
+        'share_mode': 'share_mode'
     }
 
-    def __init__(self, file_size=None, id=None, is_quoted=None, name=None, variable=None, variable_type=None):
+    def __init__(self, file_size=None, id=None, is_quoted=None, name=None, variable=None, variable_type=None, variable_mode=None, share_mode=None):
         """VariableDetail
 
         The model defined in huaweicloud sdk
@@ -55,6 +59,10 @@ class VariableDetail:
         :type variable: list[object]
         :param variable_type: variable_type
         :type variable_type: int
+        :param variable_mode: 变量读取模式，0：顺序模式；1：随机模式
+        :type variable_mode: int
+        :param share_mode: 变量共享模式，0：用例模式；1：并发模式
+        :type share_mode: int
         """
         
         
@@ -65,6 +73,8 @@ class VariableDetail:
         self._name = None
         self._variable = None
         self._variable_type = None
+        self._variable_mode = None
+        self._share_mode = None
         self.discriminator = None
 
         if file_size is not None:
@@ -79,6 +89,10 @@ class VariableDetail:
             self.variable = variable
         if variable_type is not None:
             self.variable_type = variable_type
+        if variable_mode is not None:
+            self.variable_mode = variable_mode
+        if share_mode is not None:
+            self.share_mode = share_mode
 
     @property
     def file_size(self):
@@ -211,6 +225,50 @@ class VariableDetail:
         :type variable_type: int
         """
         self._variable_type = variable_type
+
+    @property
+    def variable_mode(self):
+        """Gets the variable_mode of this VariableDetail.
+
+        变量读取模式，0：顺序模式；1：随机模式
+
+        :return: The variable_mode of this VariableDetail.
+        :rtype: int
+        """
+        return self._variable_mode
+
+    @variable_mode.setter
+    def variable_mode(self, variable_mode):
+        """Sets the variable_mode of this VariableDetail.
+
+        变量读取模式，0：顺序模式；1：随机模式
+
+        :param variable_mode: The variable_mode of this VariableDetail.
+        :type variable_mode: int
+        """
+        self._variable_mode = variable_mode
+
+    @property
+    def share_mode(self):
+        """Gets the share_mode of this VariableDetail.
+
+        变量共享模式，0：用例模式；1：并发模式
+
+        :return: The share_mode of this VariableDetail.
+        :rtype: int
+        """
+        return self._share_mode
+
+    @share_mode.setter
+    def share_mode(self, share_mode):
+        """Sets the share_mode of this VariableDetail.
+
+        变量共享模式，0：用例模式；1：并发模式
+
+        :param share_mode: The share_mode of this VariableDetail.
+        :type share_mode: int
+        """
+        self._share_mode = share_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -45,7 +45,7 @@ class ListServicePublicDetailsRequest:
 
         :param limit: 查询返回公共的终端节点服务数量限制，即每页返回的个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
         :type limit: int
-        :param offset: 偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数，表示从偏移量后面的终端节点服务开始查询。
+        :param offset: 偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
         :type offset: int
         :param endpoint_service_name: 公共终端节点服务的名称，支持大小写以及模糊匹配。
         :type endpoint_service_name: str
@@ -106,7 +106,7 @@ class ListServicePublicDetailsRequest:
     def offset(self):
         """Gets the offset of this ListServicePublicDetailsRequest.
 
-        偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数，表示从偏移量后面的终端节点服务开始查询。
+        偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
         :return: The offset of this ListServicePublicDetailsRequest.
         :rtype: int
@@ -117,7 +117,7 @@ class ListServicePublicDetailsRequest:
     def offset(self, offset):
         """Sets the offset of this ListServicePublicDetailsRequest.
 
-        偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数，表示从偏移量后面的终端节点服务开始查询。
+        偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
         :param offset: The offset of this ListServicePublicDetailsRequest.
         :type offset: int

@@ -825,7 +825,7 @@ class OcrClient(Client):
     def recognize_health_code(self, request):
         """防疫健康码识别
 
-        识别防疫健康码中的文字信息，并将识别的结构化结果返回给用户。
+        支持对全国各地区不同版式的防疫健康码、核酸检测记录、行程卡中的14个关键字段进行结构化识别；支持识别4种健康码颜色，包括绿码、黄码、红码、灰码；支持返回各个关键字段的置信度，以便提高人工校验效率。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

@@ -43,6 +43,7 @@ from huaweicloudsdkcdn.v1.model.domains_with_port import DomainsWithPort
 from huaweicloudsdkcdn.v1.model.enable_domain_request import EnableDomainRequest
 from huaweicloudsdkcdn.v1.model.enable_domain_response import EnableDomainResponse
 from huaweicloudsdkcdn.v1.model.error_code_cache import ErrorCodeCache
+from huaweicloudsdkcdn.v1.model.error_code_redirect_rules import ErrorCodeRedirectRules
 from huaweicloudsdkcdn.v1.model.follow302_status_body import Follow302StatusBody
 from huaweicloudsdkcdn.v1.model.follow302_status_request import Follow302StatusRequest
 from huaweicloudsdkcdn.v1.model.force_redirect import ForceRedirect
@@ -66,6 +67,7 @@ from huaweicloudsdkcdn.v1.model.origin_host_request import OriginHostRequest
 from huaweicloudsdkcdn.v1.model.origin_range_body import OriginRangeBody
 from huaweicloudsdkcdn.v1.model.origin_request import OriginRequest
 from huaweicloudsdkcdn.v1.model.origin_request_header import OriginRequestHeader
+from huaweicloudsdkcdn.v1.model.origin_request_url_rewrite import OriginRequestUrlRewrite
 from huaweicloudsdkcdn.v1.model.preheating_task_request import PreheatingTaskRequest
 from huaweicloudsdkcdn.v1.model.preheating_task_request_body import PreheatingTaskRequestBody
 from huaweicloudsdkcdn.v1.model.quotas import Quotas
@@ -156,3 +158,4 @@ from huaweicloudsdkcdn.v1.model.url_auth import UrlAuth
 from huaweicloudsdkcdn.v1.model.url_auth_get_body import UrlAuthGetBody
 from huaweicloudsdkcdn.v1.model.url_object import UrlObject
 from huaweicloudsdkcdn.v1.model.urls import Urls
+from huaweicloudsdkcdn.v1.model.user_agent_filter import UserAgentFilter

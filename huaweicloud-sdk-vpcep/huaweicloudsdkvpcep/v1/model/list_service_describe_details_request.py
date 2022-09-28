@@ -37,7 +37,7 @@ class ListServiceDescribeDetailsRequest:
 
         :param endpoint_service_name: 终端节点服务的名称。说明：该字段和id字段必须二选一，否则会出现错误。
         :type endpoint_service_name: str
-        :param id: 终端节点服务的ID，唯一标识。说明：该字段必须和endpoint_service_name字段二选一，否则会出现错误。
+        :param id: 终端节点服务的ID，唯一标识。 说明：该字段必须和endpoint_service_name字段二选一，否则会出现错误。
         :type id: str
         """
         
@@ -78,7 +78,7 @@ class ListServiceDescribeDetailsRequest:
     def id(self):
         """Gets the id of this ListServiceDescribeDetailsRequest.
 
-        终端节点服务的ID，唯一标识。说明：该字段必须和endpoint_service_name字段二选一，否则会出现错误。
+        终端节点服务的ID，唯一标识。 说明：该字段必须和endpoint_service_name字段二选一，否则会出现错误。
 
         :return: The id of this ListServiceDescribeDetailsRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class ListServiceDescribeDetailsRequest:
     def id(self, id):
         """Sets the id of this ListServiceDescribeDetailsRequest.
 
-        终端节点服务的ID，唯一标识。说明：该字段必须和endpoint_service_name字段二选一，否则会出现错误。
+        终端节点服务的ID，唯一标识。 说明：该字段必须和endpoint_service_name字段二选一，否则会出现错误。
 
         :param id: The id of this ListServiceDescribeDetailsRequest.
         :type id: str

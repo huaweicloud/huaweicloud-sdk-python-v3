@@ -40,7 +40,11 @@ class EndpointResp:
         'error': 'list[QueryError]',
         'whitelist': 'list[str]',
         'enable_whitelist': 'bool',
-        'routetables': 'list[str]'
+        'routetables': 'list[str]',
+        'description': 'str',
+        'policy_statement': 'list[PolicyStatement]',
+        'endpoint_pool_id': 'str',
+        'public_border_group': 'str'
     }
 
     attribute_map = {
@@ -63,17 +67,21 @@ class EndpointResp:
         'error': 'error',
         'whitelist': 'whitelist',
         'enable_whitelist': 'enable_whitelist',
-        'routetables': 'routetables'
+        'routetables': 'routetables',
+        'description': 'description',
+        'policy_statement': 'policy_statement',
+        'endpoint_pool_id': 'endpoint_pool_id',
+        'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, id=None, service_type=None, status=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None):
+    def __init__(self, id=None, service_type=None, status=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, ip=None, vpc_id=None, subnet_id=None, created_at=None, updated_at=None, project_id=None, tags=None, error=None, whitelist=None, enable_whitelist=None, routetables=None, description=None, policy_statement=None, endpoint_pool_id=None, public_border_group=None):
         """EndpointResp
 
         The model defined in huaweicloud sdk
 
         :param id: 终端节点的ID，唯一标识。
         :type id: str
-        :param service_type: 终端节点连接的终端节点服务类 型。 ● gataway：由运维人员配置。 用户无需创建，可直接使用。 ● interface：包括运维人员配置 的云服务和用户自己创建的私 有服务。其中，运维人员配置 的云服务无需创建，用户可直 接使用。 您可以通过查询公共终端节点服 务列表查看由运维人员配置的所 有用户可见且可连接的终端节点 服务，并通过创建终端节点服务 创建Interface类型的终端节点服 务。
+        :param service_type: 终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
         :type service_type: str
         :param status: 终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● failed：失败
         :type status: str
@@ -85,32 +93,40 @@ class EndpointResp:
         :type marker_id: int
         :param endpoint_service_id: 终端节点服务的ID。
         :type endpoint_service_id: str
-        :param enable_dns: 是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服 务的终端节点时，“enable_dns”设 置为true或者false，均不创建域名。
+        :param enable_dns: 是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
         :type enable_dns: bool
-        :param dns_names: 访问所连接的终端节点服务的域 名。 当“enable_dns”为true时，该 参数可见。
+        :param dns_names: 访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
         :type dns_names: list[str]
-        :param ip: 访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数：  当查询连接interface类型终端节点服务的终端节点时。 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
+        :param ip: 访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： 当查询连接interface类型终端节点服务的终端节点时。 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
         :type ip: str
         :param vpc_id: 终端节点所在的VPC的ID。
         :type vpc_id: str
-        :param subnet_id: vpc_id对应VPC下已创建的网络 （network）的ID，UUID格式。
+        :param subnet_id: vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
         :type subnet_id: str
-        :param created_at: 终端节点的创建时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        :param created_at: 终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
         :type created_at: str
-        :param updated_at: 终端节点的更新时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        :param updated_at: 终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
         :type updated_at: str
-        :param project_id: 项目ID，获取方法请参见获取项 目ID。
+        :param project_id: 项目ID，获取方法请参见获取项目ID。
         :type project_id: str
         :param tags: 标签列表，没有标签默认为空数组。
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.TagList`]
-        :param error: 错误信息。  当终端节点状态异常，即“status”的值为“failed”时，会返回该字段。
+        :param error: 错误信息。 当终端节点状态异常，即“status”的值为“failed”时，会返回该字段。
         :type error: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
-        :param whitelist: 控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点 服务的终端节点时，显示此参 数。
+        :param whitelist: 控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
         :type whitelist: list[str]
-        :param enable_whitelist: 是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点 服务的终端节点时，显示此参 数。
+        :param enable_whitelist: 是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
         :type enable_whitelist: bool
-        :param routetables: 路由表ID列表。 若未指定，返回默认VPC下路由表 ID。 创建连接Gateway类型终端节点 服务的终端节点时，显示此参 数。
+        :param routetables: 路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建连接Gateway类型终端节点服务的终端节点时，显示此参数。
         :type routetables: list[str]
+        :param description: 描述字段，支持中英文字母、数字等字符，不支持“&lt;”或“&gt;”字符。
+        :type description: str
+        :param policy_statement: 只涉及开启双端固定的网关型终端节点，响应体展示此字段
+        :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
+        :param endpoint_pool_id: 终端节点相关联的Pood的ID
+        :type endpoint_pool_id: str
+        :param public_border_group: 终端节点关联的Public Border Group信息，只有当终端节点和边缘Pool相关联时才会返回改字段
+        :type public_border_group: str
         """
         
         
@@ -135,6 +151,10 @@ class EndpointResp:
         self._whitelist = None
         self._enable_whitelist = None
         self._routetables = None
+        self._description = None
+        self._policy_statement = None
+        self._endpoint_pool_id = None
+        self._public_border_group = None
         self.discriminator = None
 
         if id is not None:
@@ -177,6 +197,14 @@ class EndpointResp:
             self.enable_whitelist = enable_whitelist
         if routetables is not None:
             self.routetables = routetables
+        if description is not None:
+            self.description = description
+        if policy_statement is not None:
+            self.policy_statement = policy_statement
+        if endpoint_pool_id is not None:
+            self.endpoint_pool_id = endpoint_pool_id
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
 
     @property
     def id(self):
@@ -204,7 +232,7 @@ class EndpointResp:
     def service_type(self):
         """Gets the service_type of this EndpointResp.
 
-        终端节点连接的终端节点服务类 型。 ● gataway：由运维人员配置。 用户无需创建，可直接使用。 ● interface：包括运维人员配置 的云服务和用户自己创建的私 有服务。其中，运维人员配置 的云服务无需创建，用户可直 接使用。 您可以通过查询公共终端节点服 务列表查看由运维人员配置的所 有用户可见且可连接的终端节点 服务，并通过创建终端节点服务 创建Interface类型的终端节点服 务。
+        终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
 
         :return: The service_type of this EndpointResp.
         :rtype: str
@@ -215,7 +243,7 @@ class EndpointResp:
     def service_type(self, service_type):
         """Sets the service_type of this EndpointResp.
 
-        终端节点连接的终端节点服务类 型。 ● gataway：由运维人员配置。 用户无需创建，可直接使用。 ● interface：包括运维人员配置 的云服务和用户自己创建的私 有服务。其中，运维人员配置 的云服务无需创建，用户可直 接使用。 您可以通过查询公共终端节点服 务列表查看由运维人员配置的所 有用户可见且可连接的终端节点 服务，并通过创建终端节点服务 创建Interface类型的终端节点服 务。
+        终端节点连接的终端节点服务类型。 ● gataway：由运维人员配置。用户无需创建，可直接使用。 ● interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
 
         :param service_type: The service_type of this EndpointResp.
         :type service_type: str
@@ -336,7 +364,7 @@ class EndpointResp:
     def enable_dns(self):
         """Gets the enable_dns of this EndpointResp.
 
-        是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服 务的终端节点时，“enable_dns”设 置为true或者false，均不创建域名。
+        是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :return: The enable_dns of this EndpointResp.
         :rtype: bool
@@ -347,7 +375,7 @@ class EndpointResp:
     def enable_dns(self, enable_dns):
         """Sets the enable_dns of this EndpointResp.
 
-        是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服 务的终端节点时，“enable_dns”设 置为true或者false，均不创建域名。
+        是否创建域名。 ● true：创建域名 ● false：不创建域名 说明 当创建连接gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
         :param enable_dns: The enable_dns of this EndpointResp.
         :type enable_dns: bool
@@ -358,7 +386,7 @@ class EndpointResp:
     def dns_names(self):
         """Gets the dns_names of this EndpointResp.
 
-        访问所连接的终端节点服务的域 名。 当“enable_dns”为true时，该 参数可见。
+        访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
 
         :return: The dns_names of this EndpointResp.
         :rtype: list[str]
@@ -369,7 +397,7 @@ class EndpointResp:
     def dns_names(self, dns_names):
         """Sets the dns_names of this EndpointResp.
 
-        访问所连接的终端节点服务的域 名。 当“enable_dns”为true时，该 参数可见。
+        访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
 
         :param dns_names: The dns_names of this EndpointResp.
         :type dns_names: list[str]
@@ -380,7 +408,7 @@ class EndpointResp:
     def ip(self):
         """Gets the ip of this EndpointResp.
 
-        访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数：  当查询连接interface类型终端节点服务的终端节点时。 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
+        访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： 当查询连接interface类型终端节点服务的终端节点时。 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
 
         :return: The ip of this EndpointResp.
         :rtype: str
@@ -391,7 +419,7 @@ class EndpointResp:
     def ip(self, ip):
         """Sets the ip of this EndpointResp.
 
-        访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数：  当查询连接interface类型终端节点服务的终端节点时。 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
+        访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数： 当查询连接interface类型终端节点服务的终端节点时。 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
 
         :param ip: The ip of this EndpointResp.
         :type ip: str
@@ -424,7 +452,7 @@ class EndpointResp:
     def subnet_id(self):
         """Gets the subnet_id of this EndpointResp.
 
-        vpc_id对应VPC下已创建的网络 （network）的ID，UUID格式。
+        vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
 
         :return: The subnet_id of this EndpointResp.
         :rtype: str
@@ -435,7 +463,7 @@ class EndpointResp:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this EndpointResp.
 
-        vpc_id对应VPC下已创建的网络 （network）的ID，UUID格式。
+        vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
 
         :param subnet_id: The subnet_id of this EndpointResp.
         :type subnet_id: str
@@ -446,7 +474,7 @@ class EndpointResp:
     def created_at(self):
         """Gets the created_at of this EndpointResp.
 
-        终端节点的创建时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The created_at of this EndpointResp.
         :rtype: str
@@ -457,7 +485,7 @@ class EndpointResp:
     def created_at(self, created_at):
         """Sets the created_at of this EndpointResp.
 
-        终端节点的创建时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param created_at: The created_at of this EndpointResp.
         :type created_at: str
@@ -468,7 +496,7 @@ class EndpointResp:
     def updated_at(self):
         """Gets the updated_at of this EndpointResp.
 
-        终端节点的更新时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :return: The updated_at of this EndpointResp.
         :rtype: str
@@ -479,7 +507,7 @@ class EndpointResp:
     def updated_at(self, updated_at):
         """Sets the updated_at of this EndpointResp.
 
-        终端节点的更新时间。 采用UTC时间格式，格式为： YYYY-MM-DDTHH:MM:SSZ
+        终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this EndpointResp.
         :type updated_at: str
@@ -490,7 +518,7 @@ class EndpointResp:
     def project_id(self):
         """Gets the project_id of this EndpointResp.
 
-        项目ID，获取方法请参见获取项 目ID。
+        项目ID，获取方法请参见获取项目ID。
 
         :return: The project_id of this EndpointResp.
         :rtype: str
@@ -501,7 +529,7 @@ class EndpointResp:
     def project_id(self, project_id):
         """Sets the project_id of this EndpointResp.
 
-        项目ID，获取方法请参见获取项 目ID。
+        项目ID，获取方法请参见获取项目ID。
 
         :param project_id: The project_id of this EndpointResp.
         :type project_id: str
@@ -534,7 +562,7 @@ class EndpointResp:
     def error(self):
         """Gets the error of this EndpointResp.
 
-        错误信息。  当终端节点状态异常，即“status”的值为“failed”时，会返回该字段。
+        错误信息。 当终端节点状态异常，即“status”的值为“failed”时，会返回该字段。
 
         :return: The error of this EndpointResp.
         :rtype: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
@@ -545,7 +573,7 @@ class EndpointResp:
     def error(self, error):
         """Sets the error of this EndpointResp.
 
-        错误信息。  当终端节点状态异常，即“status”的值为“failed”时，会返回该字段。
+        错误信息。 当终端节点状态异常，即“status”的值为“failed”时，会返回该字段。
 
         :param error: The error of this EndpointResp.
         :type error: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
@@ -556,7 +584,7 @@ class EndpointResp:
     def whitelist(self):
         """Gets the whitelist of this EndpointResp.
 
-        控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点 服务的终端节点时，显示此参 数。
+        控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
         :return: The whitelist of this EndpointResp.
         :rtype: list[str]
@@ -567,7 +595,7 @@ class EndpointResp:
     def whitelist(self, whitelist):
         """Sets the whitelist of this EndpointResp.
 
-        控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点 服务的终端节点时，显示此参 数。
+        控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
         :param whitelist: The whitelist of this EndpointResp.
         :type whitelist: list[str]
@@ -578,7 +606,7 @@ class EndpointResp:
     def enable_whitelist(self):
         """Gets the enable_whitelist of this EndpointResp.
 
-        是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点 服务的终端节点时，显示此参 数。
+        是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
         :return: The enable_whitelist of this EndpointResp.
         :rtype: bool
@@ -589,7 +617,7 @@ class EndpointResp:
     def enable_whitelist(self, enable_whitelist):
         """Sets the enable_whitelist of this EndpointResp.
 
-        是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点 服务的终端节点时，显示此参 数。
+        是否开启网络ACL隔离。 ● true：开启网络ACL隔离 ● false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
         :param enable_whitelist: The enable_whitelist of this EndpointResp.
         :type enable_whitelist: bool
@@ -600,7 +628,7 @@ class EndpointResp:
     def routetables(self):
         """Gets the routetables of this EndpointResp.
 
-        路由表ID列表。 若未指定，返回默认VPC下路由表 ID。 创建连接Gateway类型终端节点 服务的终端节点时，显示此参 数。
+        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建连接Gateway类型终端节点服务的终端节点时，显示此参数。
 
         :return: The routetables of this EndpointResp.
         :rtype: list[str]
@@ -611,12 +639,100 @@ class EndpointResp:
     def routetables(self, routetables):
         """Sets the routetables of this EndpointResp.
 
-        路由表ID列表。 若未指定，返回默认VPC下路由表 ID。 创建连接Gateway类型终端节点 服务的终端节点时，显示此参 数。
+        路由表ID列表。 若未指定，返回默认VPC下路由表ID。 创建连接Gateway类型终端节点服务的终端节点时，显示此参数。
 
         :param routetables: The routetables of this EndpointResp.
         :type routetables: list[str]
         """
         self._routetables = routetables
+
+    @property
+    def description(self):
+        """Gets the description of this EndpointResp.
+
+        描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
+
+        :return: The description of this EndpointResp.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this EndpointResp.
+
+        描述字段，支持中英文字母、数字等字符，不支持“<”或“>”字符。
+
+        :param description: The description of this EndpointResp.
+        :type description: str
+        """
+        self._description = description
+
+    @property
+    def policy_statement(self):
+        """Gets the policy_statement of this EndpointResp.
+
+        只涉及开启双端固定的网关型终端节点，响应体展示此字段
+
+        :return: The policy_statement of this EndpointResp.
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
+        """
+        return self._policy_statement
+
+    @policy_statement.setter
+    def policy_statement(self, policy_statement):
+        """Sets the policy_statement of this EndpointResp.
+
+        只涉及开启双端固定的网关型终端节点，响应体展示此字段
+
+        :param policy_statement: The policy_statement of this EndpointResp.
+        :type policy_statement: list[:class:`huaweicloudsdkvpcep.v1.PolicyStatement`]
+        """
+        self._policy_statement = policy_statement
+
+    @property
+    def endpoint_pool_id(self):
+        """Gets the endpoint_pool_id of this EndpointResp.
+
+        终端节点相关联的Pood的ID
+
+        :return: The endpoint_pool_id of this EndpointResp.
+        :rtype: str
+        """
+        return self._endpoint_pool_id
+
+    @endpoint_pool_id.setter
+    def endpoint_pool_id(self, endpoint_pool_id):
+        """Sets the endpoint_pool_id of this EndpointResp.
+
+        终端节点相关联的Pood的ID
+
+        :param endpoint_pool_id: The endpoint_pool_id of this EndpointResp.
+        :type endpoint_pool_id: str
+        """
+        self._endpoint_pool_id = endpoint_pool_id
+
+    @property
+    def public_border_group(self):
+        """Gets the public_border_group of this EndpointResp.
+
+        终端节点关联的Public Border Group信息，只有当终端节点和边缘Pool相关联时才会返回改字段
+
+        :return: The public_border_group of this EndpointResp.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this EndpointResp.
+
+        终端节点关联的Public Border Group信息，只有当终端节点和边缘Pool相关联时才会返回改字段
+
+        :param public_border_group: The public_border_group of this EndpointResp.
+        :type public_border_group: str
+        """
+        self._public_border_group = public_border_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

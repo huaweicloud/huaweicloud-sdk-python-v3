@@ -44,7 +44,10 @@ class ReportoutlineInfo:
         'tps': 'float',
         'version_uri': 'str',
         'project_id': 'str',
-        'service_id': 'str'
+        'service_id': 'str',
+        'progress_state': 'str',
+        'create_by': 'str',
+        'status_value': 'str'
     }
 
     attribute_map = {
@@ -71,10 +74,13 @@ class ReportoutlineInfo:
         'tps': 'tps',
         'version_uri': 'versionUri',
         'project_id': 'projectId',
-        'service_id': 'serviceId'
+        'service_id': 'serviceId',
+        'progress_state': 'progressState',
+        'create_by': 'createBy',
+        'status_value': 'statusValue'
     }
 
-    def __init__(self, avg_response_time=None, branch_id=None, branch_name=None, case_retry=None, complete_num=None, duration=None, end_time=None, executed_num=None, iteration_uri=None, kpi_case_count=None, kpi_case_execute_count=None, kpi_case_pass_count=None, max_users=None, pass_num=None, stage=None, stage_name=None, start_time=None, success_rate=None, task_status=None, total_num=None, tps=None, version_uri=None, project_id=None, service_id=None):
+    def __init__(self, avg_response_time=None, branch_id=None, branch_name=None, case_retry=None, complete_num=None, duration=None, end_time=None, executed_num=None, iteration_uri=None, kpi_case_count=None, kpi_case_execute_count=None, kpi_case_pass_count=None, max_users=None, pass_num=None, stage=None, stage_name=None, start_time=None, success_rate=None, task_status=None, total_num=None, tps=None, version_uri=None, project_id=None, service_id=None, progress_state=None, create_by=None, status_value=None):
         """ReportoutlineInfo
 
         The model defined in huaweicloud sdk
@@ -127,6 +133,12 @@ class ReportoutlineInfo:
         :type project_id: str
         :param service_id: 服务id
         :type service_id: str
+        :param progress_state: 
+        :type progress_state: str
+        :param create_by: 
+        :type create_by: str
+        :param status_value: 
+        :type status_value: str
         """
         
         
@@ -155,6 +167,9 @@ class ReportoutlineInfo:
         self._version_uri = None
         self._project_id = None
         self._service_id = None
+        self._progress_state = None
+        self._create_by = None
+        self._status_value = None
         self.discriminator = None
 
         if avg_response_time is not None:
@@ -205,6 +220,12 @@ class ReportoutlineInfo:
             self.project_id = project_id
         if service_id is not None:
             self.service_id = service_id
+        if progress_state is not None:
+            self.progress_state = progress_state
+        if create_by is not None:
+            self.create_by = create_by
+        if status_value is not None:
+            self.status_value = status_value
 
     @property
     def avg_response_time(self):
@@ -733,6 +754,66 @@ class ReportoutlineInfo:
         :type service_id: str
         """
         self._service_id = service_id
+
+    @property
+    def progress_state(self):
+        """Gets the progress_state of this ReportoutlineInfo.
+
+
+        :return: The progress_state of this ReportoutlineInfo.
+        :rtype: str
+        """
+        return self._progress_state
+
+    @progress_state.setter
+    def progress_state(self, progress_state):
+        """Sets the progress_state of this ReportoutlineInfo.
+
+
+        :param progress_state: The progress_state of this ReportoutlineInfo.
+        :type progress_state: str
+        """
+        self._progress_state = progress_state
+
+    @property
+    def create_by(self):
+        """Gets the create_by of this ReportoutlineInfo.
+
+
+        :return: The create_by of this ReportoutlineInfo.
+        :rtype: str
+        """
+        return self._create_by
+
+    @create_by.setter
+    def create_by(self, create_by):
+        """Sets the create_by of this ReportoutlineInfo.
+
+
+        :param create_by: The create_by of this ReportoutlineInfo.
+        :type create_by: str
+        """
+        self._create_by = create_by
+
+    @property
+    def status_value(self):
+        """Gets the status_value of this ReportoutlineInfo.
+
+
+        :return: The status_value of this ReportoutlineInfo.
+        :rtype: str
+        """
+        return self._status_value
+
+    @status_value.setter
+    def status_value(self, status_value):
+        """Sets the status_value of this ReportoutlineInfo.
+
+
+        :param status_value: The status_value of this ReportoutlineInfo.
+        :type status_value: str
+        """
+        self._status_value = status_value
 
     def to_dict(self):
         """Returns the model properties as a dict"""

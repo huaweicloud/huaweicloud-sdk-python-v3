@@ -27,7 +27,8 @@ class ListEndpointsRequest:
         'limit': 'int',
         'offset': 'int',
         'sort_key': 'str',
-        'sort_dir': 'str'
+        'sort_dir': 'str',
+        'public_border_group': 'str'
     }
 
     attribute_map = {
@@ -37,28 +38,31 @@ class ListEndpointsRequest:
         'limit': 'limit',
         'offset': 'offset',
         'sort_key': 'sort_key',
-        'sort_dir': 'sort_dir'
+        'sort_dir': 'sort_dir',
+        'public_border_group': 'public_border_group'
     }
 
-    def __init__(self, endpoint_service_name=None, vpc_id=None, id=None, limit=None, offset=None, sort_key=None, sort_dir=None):
+    def __init__(self, endpoint_service_name=None, vpc_id=None, id=None, limit=None, offset=None, sort_key=None, sort_dir=None, public_border_group=None):
         """ListEndpointsRequest
 
         The model defined in huaweicloud sdk
 
-        :param endpoint_service_name: 终端节点服务的名称，支持大小 写，前后模糊匹配。
+        :param endpoint_service_name: 终端节点服务的名称，支持大小写，前后模糊匹配。
         :type endpoint_service_name: str
         :param vpc_id: 终端节点所在的VPC的ID。
         :type vpc_id: str
         :param id: 终端节点的ID，唯一标识。
         :type id: str
-        :param limit: 查询返回终端节点的数量限制，即 每页返回的资源个数。 取值范围：0~1000，取值一般为 10，20或者50，默认为10。
+        :param limit: 查询返回终端节点的数量限制，即每页返回的资源个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
         :type limit: int
-        :param offset: 偏移量。 偏移量为一个大于0小于终端节点 服务总个数的整数，表示从偏移量 后面的终端节点服务开始查询。
+        :param offset: 偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
         :type offset: int
-        :param sort_key: 查询结果中终端节点列表的排序字 段，取值为： ● create_at：终端节点的创建时 间 ● update_at：终端节点的更新时 间 默认值为create_at。
+        :param sort_key: 查询结果中终端节点列表的排序字段，取值为： ● create_at：终端节点的创建时间 ● update_at：终端节点的更新时间 默认值为create_at。
         :type sort_key: str
-        :param sort_dir: 查询结果中终端节点列表的排序方 式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        :param sort_dir: 查询结果中终端节点列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
         :type sort_dir: str
+        :param public_border_group: 筛选结果中匹配边缘属性的EPS
+        :type public_border_group: str
         """
         
         
@@ -70,6 +74,7 @@ class ListEndpointsRequest:
         self._offset = None
         self._sort_key = None
         self._sort_dir = None
+        self._public_border_group = None
         self.discriminator = None
 
         if endpoint_service_name is not None:
@@ -86,12 +91,14 @@ class ListEndpointsRequest:
             self.sort_key = sort_key
         if sort_dir is not None:
             self.sort_dir = sort_dir
+        if public_border_group is not None:
+            self.public_border_group = public_border_group
 
     @property
     def endpoint_service_name(self):
         """Gets the endpoint_service_name of this ListEndpointsRequest.
 
-        终端节点服务的名称，支持大小 写，前后模糊匹配。
+        终端节点服务的名称，支持大小写，前后模糊匹配。
 
         :return: The endpoint_service_name of this ListEndpointsRequest.
         :rtype: str
@@ -102,7 +109,7 @@ class ListEndpointsRequest:
     def endpoint_service_name(self, endpoint_service_name):
         """Sets the endpoint_service_name of this ListEndpointsRequest.
 
-        终端节点服务的名称，支持大小 写，前后模糊匹配。
+        终端节点服务的名称，支持大小写，前后模糊匹配。
 
         :param endpoint_service_name: The endpoint_service_name of this ListEndpointsRequest.
         :type endpoint_service_name: str
@@ -157,7 +164,7 @@ class ListEndpointsRequest:
     def limit(self):
         """Gets the limit of this ListEndpointsRequest.
 
-        查询返回终端节点的数量限制，即 每页返回的资源个数。 取值范围：0~1000，取值一般为 10，20或者50，默认为10。
+        查询返回终端节点的数量限制，即每页返回的资源个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
         :return: The limit of this ListEndpointsRequest.
         :rtype: int
@@ -168,7 +175,7 @@ class ListEndpointsRequest:
     def limit(self, limit):
         """Sets the limit of this ListEndpointsRequest.
 
-        查询返回终端节点的数量限制，即 每页返回的资源个数。 取值范围：0~1000，取值一般为 10，20或者50，默认为10。
+        查询返回终端节点的数量限制，即每页返回的资源个数。 取值范围：0~1000，取值一般为10，20或者50，默认为10。
 
         :param limit: The limit of this ListEndpointsRequest.
         :type limit: int
@@ -179,7 +186,7 @@ class ListEndpointsRequest:
     def offset(self):
         """Gets the offset of this ListEndpointsRequest.
 
-        偏移量。 偏移量为一个大于0小于终端节点 服务总个数的整数，表示从偏移量 后面的终端节点服务开始查询。
+        偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
         :return: The offset of this ListEndpointsRequest.
         :rtype: int
@@ -190,7 +197,7 @@ class ListEndpointsRequest:
     def offset(self, offset):
         """Sets the offset of this ListEndpointsRequest.
 
-        偏移量。 偏移量为一个大于0小于终端节点 服务总个数的整数，表示从偏移量 后面的终端节点服务开始查询。
+        偏移量。 偏移量为一个大于0小于终端节点服务总个数的整数， 表示从偏移量后面的终端节点服务开始查询。
 
         :param offset: The offset of this ListEndpointsRequest.
         :type offset: int
@@ -201,7 +208,7 @@ class ListEndpointsRequest:
     def sort_key(self):
         """Gets the sort_key of this ListEndpointsRequest.
 
-        查询结果中终端节点列表的排序字 段，取值为： ● create_at：终端节点的创建时 间 ● update_at：终端节点的更新时 间 默认值为create_at。
+        查询结果中终端节点列表的排序字段，取值为： ● create_at：终端节点的创建时间 ● update_at：终端节点的更新时间 默认值为create_at。
 
         :return: The sort_key of this ListEndpointsRequest.
         :rtype: str
@@ -212,7 +219,7 @@ class ListEndpointsRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ListEndpointsRequest.
 
-        查询结果中终端节点列表的排序字 段，取值为： ● create_at：终端节点的创建时 间 ● update_at：终端节点的更新时 间 默认值为create_at。
+        查询结果中终端节点列表的排序字段，取值为： ● create_at：终端节点的创建时间 ● update_at：终端节点的更新时间 默认值为create_at。
 
         :param sort_key: The sort_key of this ListEndpointsRequest.
         :type sort_key: str
@@ -223,7 +230,7 @@ class ListEndpointsRequest:
     def sort_dir(self):
         """Gets the sort_dir of this ListEndpointsRequest.
 
-        查询结果中终端节点列表的排序方 式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        查询结果中终端节点列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
 
         :return: The sort_dir of this ListEndpointsRequest.
         :rtype: str
@@ -234,12 +241,34 @@ class ListEndpointsRequest:
     def sort_dir(self, sort_dir):
         """Sets the sort_dir of this ListEndpointsRequest.
 
-        查询结果中终端节点列表的排序方 式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
+        查询结果中终端节点列表的排序方式，取值为： ● desc：降序排序 ● asc：升序排序 默认值为desc。
 
         :param sort_dir: The sort_dir of this ListEndpointsRequest.
         :type sort_dir: str
         """
         self._sort_dir = sort_dir
+
+    @property
+    def public_border_group(self):
+        """Gets the public_border_group of this ListEndpointsRequest.
+
+        筛选结果中匹配边缘属性的EPS
+
+        :return: The public_border_group of this ListEndpointsRequest.
+        :rtype: str
+        """
+        return self._public_border_group
+
+    @public_border_group.setter
+    def public_border_group(self, public_border_group):
+        """Sets the public_border_group of this ListEndpointsRequest.
+
+        筛选结果中匹配边缘属性的EPS
+
+        :param public_border_group: The public_border_group of this ListEndpointsRequest.
+        :type public_border_group: str
+        """
+        self._public_border_group = public_border_group
 
     def to_dict(self):
         """Returns the model properties as a dict"""

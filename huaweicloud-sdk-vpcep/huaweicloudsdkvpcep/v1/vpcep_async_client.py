@@ -172,6 +172,130 @@ class VpcepAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_add_endpoint_service_permissions_async(self, request):
+        """批量添加或移除终端节点服务的白名单
+
+        功能介绍
+        批量添加当前用户下终端节点服务的白名单，支持添加描述信息。
+        说明
+        本帐号默认在自身用户的终端节点服务的白名单中。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchAddEndpointServicePermissions
+        :type request: :class:`huaweicloudsdkvpcep.v1.BatchAddEndpointServicePermissionsRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddEndpointServicePermissionsResponse`
+        """
+        return self.batch_add_endpoint_service_permissions_with_http_info(request)
+
+    def batch_add_endpoint_service_permissions_with_http_info(self, request):
+        all_params = ['vpc_endpoint_service_id', 'batch_add_permission']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_endpoint_service_id' in local_var_params:
+            path_params['vpc_endpoint_service_id'] = local_var_params['vpc_endpoint_service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/vpc-endpoint-services/{vpc_endpoint_service_id}/permissions/batch-create',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchAddEndpointServicePermissionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_remove_endpoint_service_permissions_async(self, request):
+        """批量添加或移除终端节点服务的白名单
+
+        功能介绍
+        批量删除当前用户下终端节点服务的白名单
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchRemoveEndpointServicePermissions
+        :type request: :class:`huaweicloudsdkvpcep.v1.BatchRemoveEndpointServicePermissionsRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.BatchRemoveEndpointServicePermissionsResponse`
+        """
+        return self.batch_remove_endpoint_service_permissions_with_http_info(request)
+
+    def batch_remove_endpoint_service_permissions_with_http_info(self, request):
+        all_params = ['vpc_endpoint_service_id', 'batch_remove_permission_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_endpoint_service_id' in local_var_params:
+            path_params['vpc_endpoint_service_id'] = local_var_params['vpc_endpoint_service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/vpc-endpoint-services/{vpc_endpoint_service_id}/permissions/batch-delete',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchRemoveEndpointServicePermissionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_endpoint_async(self, request):
         """创建终端节点
 
@@ -235,9 +359,11 @@ class VpcepAsyncClient(Client):
         """创建终端节点服务
 
         功能介绍
-        创建终端节点服务，允许其他用户创建终端节点连接您创建的终端节点服务，使用您所提供的服务。
+        创建终端节点服务，允许其他用户创建终端节点连接您创建的终端节点服务，
+        使用您所提供的服务。
         说明
-        该接口为异步接口，调用成功会返回200状态码，说明请求已正常下发。通常创建终端节点服务需要1~2分钟，可以通过查询终端节点服务详情查看创建结果。
+        该接口为异步接口，调用成功会返回200状态码，说明请求已正常下发。
+        通常创建终端节点服务需要1~2分钟，可以通过查询终端节点服务详情查看创建结果。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -346,6 +472,65 @@ class VpcepAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteEndpointResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_endpoint_policy_async(self, request):
+        """修改终端节点路由表
+
+        功能介绍
+        删除网关型终端节点policy。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteEndpointPolicy
+        :type request: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointPolicyRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.DeleteEndpointPolicyResponse`
+        """
+        return self.delete_endpoint_policy_with_http_info(request)
+
+    def delete_endpoint_policy_with_http_info(self, request):
+        all_params = ['vpc_endpoint_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_endpoint_id' in local_var_params:
+            path_params['vpc_endpoint_id'] = local_var_params['vpc_endpoint_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/vpc-endpoints/{vpc_endpoint_id}/policy',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteEndpointPolicyResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -485,7 +670,7 @@ class VpcepAsyncClient(Client):
         return self.list_endpoint_service_with_http_info(request)
 
     def list_endpoint_service_with_http_info(self, request):
-        all_params = ['endpoint_service_name', 'id', 'status', 'sort_key', 'sort_dir', 'limit', 'offset']
+        all_params = ['endpoint_service_name', 'id', 'status', 'sort_key', 'sort_dir', 'limit', 'offset', 'public_border_group']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -510,6 +695,8 @@ class VpcepAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
             query_params.append(('offset', local_var_params['offset']))
+        if 'public_border_group' in local_var_params:
+            query_params.append(('public_border_group', local_var_params['public_border_group']))
 
         header_params = {}
 
@@ -556,7 +743,7 @@ class VpcepAsyncClient(Client):
         return self.list_endpoints_with_http_info(request)
 
     def list_endpoints_with_http_info(self, request):
-        all_params = ['endpoint_service_name', 'vpc_id', 'id', 'limit', 'offset', 'sort_key', 'sort_dir']
+        all_params = ['endpoint_service_name', 'vpc_id', 'id', 'limit', 'offset', 'sort_key', 'sort_dir', 'public_border_group']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -581,6 +768,8 @@ class VpcepAsyncClient(Client):
             query_params.append(('sort_key', local_var_params['sort_key']))
         if 'sort_dir' in local_var_params:
             query_params.append(('sort_dir', local_var_params['sort_dir']))
+        if 'public_border_group' in local_var_params:
+            query_params.append(('public_border_group', local_var_params['public_border_group']))
 
         header_params = {}
 
@@ -747,7 +936,7 @@ class VpcepAsyncClient(Client):
         """查询终端节点服务概要
 
         功能介绍
-        查询终端节点服务的概要信息，此接口是供创建终端节点的用户来查询需要连接的终端节点服务信息。此接口既可以方便其他用户查询到您的终端节点服务概要信息又可以避免您的终端节点服务的细节信息暴露给其他用户。
+        查询终端节点服务的概要信息， 此接口是供创建终端节点的用户来查询需要连接的终端节点服务信息。 此接口既可以方便其他用户查询到您的终端节点服务概要信息, 又可以避免您的终端节点服务的细节信息暴露给其他用户。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -938,7 +1127,8 @@ class VpcepAsyncClient(Client):
         """查询公共终端节点服务列表
 
         功能介绍
-        查询公共终端节点服务的列表，公共终端节点服务是所有用户可见且可连接的终端节点服务，由运维人员创建，用户可直接使用，但无权创建。
+        查询公共终端节点服务的列表，公共终端节点服务是所有用户可见且可连接的终端节点服务，
+        由运维人员创建，用户可直接使用，但无权创建。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1119,6 +1309,128 @@ class VpcepAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_endpoint_connections_desc_async(self, request):
+        """更新终端节点连接描述
+
+        功能介绍：
+             更新终端节点服务连接的终端节点的描述。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateEndpointConnectionsDesc
+        :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointConnectionsDescRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointConnectionsDescResponse`
+        """
+        return self.update_endpoint_connections_desc_with_http_info(request)
+
+    def update_endpoint_connections_desc_with_http_info(self, request):
+        all_params = ['vpc_endpoint_service_id', 'update_ep_connections']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_endpoint_service_id' in local_var_params:
+            path_params['vpc_endpoint_service_id'] = local_var_params['vpc_endpoint_service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/vpc-endpoint-services/{vpc_endpoint_service_id}/connections/description',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateEndpointConnectionsDescResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_endpoint_policy_async(self, request):
+        """修改终端节点路由表
+
+        功能介绍
+        修改网关型终端节点policy。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateEndpointPolicy
+        :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointPolicyRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointPolicyResponse`
+        """
+        return self.update_endpoint_policy_with_http_info(request)
+
+    def update_endpoint_policy_with_http_info(self, request):
+        all_params = ['vpc_endpoint_id', 'update_endpoint_policy_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_endpoint_id' in local_var_params:
+            path_params['vpc_endpoint_id'] = local_var_params['vpc_endpoint_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/vpc-endpoints/{vpc_endpoint_id}/policy',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateEndpointPolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_endpoint_routetable_async(self, request):
         """修改终端节点路由表
 
@@ -1236,6 +1548,130 @@ class VpcepAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateEndpointServiceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_endpoint_service_name_async(self, request):
+        """修改终端节点服务名称
+
+        功能介绍
+        修改终端节点服务名称
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateEndpointServiceName
+        :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceNameRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServiceNameResponse`
+        """
+        return self.update_endpoint_service_name_with_http_info(request)
+
+    def update_endpoint_service_name_with_http_info(self, request):
+        all_params = ['vpc_endpoint_service_id', 'update_endpoint_service_name_mode']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_endpoint_service_id' in local_var_params:
+            path_params['vpc_endpoint_service_id'] = local_var_params['vpc_endpoint_service_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/vpc-endpoint-services/{vpc_endpoint_service_id}/name',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateEndpointServiceNameResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_endpoint_service_permission_desc_async(self, request):
+        """更新终端节点服务白名单描述
+
+        功能介绍
+        更新当前用户下终端节点服务白名单的描述信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateEndpointServicePermissionDesc
+        :type request: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServicePermissionDescRequest`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointServicePermissionDescResponse`
+        """
+        return self.update_endpoint_service_permission_desc_with_http_info(request)
+
+    def update_endpoint_service_permission_desc_with_http_info(self, request):
+        all_params = ['vpc_endpoint_service_id', 'permission_id', 'update_permission_desc_request']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'vpc_endpoint_service_id' in local_var_params:
+            path_params['vpc_endpoint_service_id'] = local_var_params['vpc_endpoint_service_id']
+        if 'permission_id' in local_var_params:
+            path_params['permission_id'] = local_var_params['permission_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/vpc-endpoint-services/{vpc_endpoint_service_id}/permissions/{permission_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateEndpointServicePermissionDescResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

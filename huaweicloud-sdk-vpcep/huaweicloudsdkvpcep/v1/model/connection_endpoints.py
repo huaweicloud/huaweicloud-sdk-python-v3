@@ -26,8 +26,9 @@ class ConnectionEndpoints:
         'created_at': 'str',
         'updated_at': 'str',
         'domain_id': 'str',
+        'error': 'list[QueryError]',
         'status': 'str',
-        'error': 'list[QueryError]'
+        'description': 'str'
     }
 
     attribute_map = {
@@ -36,11 +37,12 @@ class ConnectionEndpoints:
         'created_at': 'created_at',
         'updated_at': 'updated_at',
         'domain_id': 'domain_id',
+        'error': 'error',
         'status': 'status',
-        'error': 'error'
+        'description': 'description'
     }
 
-    def __init__(self, id=None, marker_id=None, created_at=None, updated_at=None, domain_id=None, status=None, error=None):
+    def __init__(self, id=None, marker_id=None, created_at=None, updated_at=None, domain_id=None, error=None, status=None, description=None):
         """ConnectionEndpoints
 
         The model defined in huaweicloud sdk
@@ -49,16 +51,18 @@ class ConnectionEndpoints:
         :type id: str
         :param marker_id: 终端节点的报文标识。
         :type marker_id: int
-        :param created_at: 终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        :param created_at: 终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
         :type created_at: str
-        :param updated_at: 终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        :param updated_at: 终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
         :type updated_at: str
         :param domain_id: 用户的Domain ID。
         :type domain_id: str
-        :param status: 终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败 ● deleting：删除中
-        :type status: str
         :param error: 错误信息。  当终端节点服务状态异常，即“status”的值为“failed”时，会返回该字段。
         :type error: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
+        :param status: 终端节点的连接状态。 ● pendingAcceptance：待接受 ● creating：创建中 ● accepted：已接受 ● rejected：已拒绝 ● failed：失败 ● deleting：删除中
+        :type status: str
+        :param description: 终端节点连接描述。
+        :type description: str
         """
         
         
@@ -68,8 +72,9 @@ class ConnectionEndpoints:
         self._created_at = None
         self._updated_at = None
         self._domain_id = None
-        self._status = None
         self._error = None
+        self._status = None
+        self._description = None
         self.discriminator = None
 
         if id is not None:
@@ -82,10 +87,12 @@ class ConnectionEndpoints:
             self.updated_at = updated_at
         if domain_id is not None:
             self.domain_id = domain_id
-        if status is not None:
-            self.status = status
         if error is not None:
             self.error = error
+        if status is not None:
+            self.status = status
+        if description is not None:
+            self.description = description
 
     @property
     def id(self):
@@ -135,7 +142,7 @@ class ConnectionEndpoints:
     def created_at(self):
         """Gets the created_at of this ConnectionEndpoints.
 
-        终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :return: The created_at of this ConnectionEndpoints.
         :rtype: str
@@ -146,7 +153,7 @@ class ConnectionEndpoints:
     def created_at(self, created_at):
         """Sets the created_at of this ConnectionEndpoints.
 
-        终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :param created_at: The created_at of this ConnectionEndpoints.
         :type created_at: str
@@ -157,7 +164,7 @@ class ConnectionEndpoints:
     def updated_at(self):
         """Gets the updated_at of this ConnectionEndpoints.
 
-        终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :return: The updated_at of this ConnectionEndpoints.
         :rtype: str
@@ -168,7 +175,7 @@ class ConnectionEndpoints:
     def updated_at(self, updated_at):
         """Sets the updated_at of this ConnectionEndpoints.
 
-        终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH: MM:SSZ
+        终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MMDDTHH:MM:SSZ
 
         :param updated_at: The updated_at of this ConnectionEndpoints.
         :type updated_at: str
@@ -198,6 +205,28 @@ class ConnectionEndpoints:
         self._domain_id = domain_id
 
     @property
+    def error(self):
+        """Gets the error of this ConnectionEndpoints.
+
+        错误信息。  当终端节点服务状态异常，即“status”的值为“failed”时，会返回该字段。
+
+        :return: The error of this ConnectionEndpoints.
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
+        """
+        return self._error
+
+    @error.setter
+    def error(self, error):
+        """Sets the error of this ConnectionEndpoints.
+
+        错误信息。  当终端节点服务状态异常，即“status”的值为“failed”时，会返回该字段。
+
+        :param error: The error of this ConnectionEndpoints.
+        :type error: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
+        """
+        self._error = error
+
+    @property
     def status(self):
         """Gets the status of this ConnectionEndpoints.
 
@@ -220,26 +249,26 @@ class ConnectionEndpoints:
         self._status = status
 
     @property
-    def error(self):
-        """Gets the error of this ConnectionEndpoints.
+    def description(self):
+        """Gets the description of this ConnectionEndpoints.
 
-        错误信息。  当终端节点服务状态异常，即“status”的值为“failed”时，会返回该字段。
+        终端节点连接描述。
 
-        :return: The error of this ConnectionEndpoints.
-        :rtype: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
+        :return: The description of this ConnectionEndpoints.
+        :rtype: str
         """
-        return self._error
+        return self._description
 
-    @error.setter
-    def error(self, error):
-        """Sets the error of this ConnectionEndpoints.
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ConnectionEndpoints.
 
-        错误信息。  当终端节点服务状态异常，即“status”的值为“failed”时，会返回该字段。
+        终端节点连接描述。
 
-        :param error: The error of this ConnectionEndpoints.
-        :type error: list[:class:`huaweicloudsdkvpcep.v1.QueryError`]
+        :param description: The description of this ConnectionEndpoints.
+        :type description: str
         """
-        self._error = error
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

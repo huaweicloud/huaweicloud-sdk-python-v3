@@ -37,9 +37,9 @@ class PortList:
 
         The model defined in huaweicloud sdk
 
-        :param client_port: 终端节点访问的端口。 终端节点提供给用户，作为访问终端节 点服务的端口，范围1-65535。
+        :param client_port: 终端节点访问的端口。 终端节点提供给用户，作为访问终端节点服务的端口，范围1-65535。
         :type client_port: int
-        :param server_port: 终端节点服务的端口。 终端节点服务绑定了后端资源，作为提 供服务的端口，范围1-65535。
+        :param server_port: 终端节点服务的端口。 终端节点服务绑定了后端资源，作为提供服务的端口，范围1-65535。
         :type server_port: int
         :param protocol: 端口映射协议，支持TCP。
         :type protocol: str
@@ -63,7 +63,7 @@ class PortList:
     def client_port(self):
         """Gets the client_port of this PortList.
 
-        终端节点访问的端口。 终端节点提供给用户，作为访问终端节 点服务的端口，范围1-65535。
+        终端节点访问的端口。 终端节点提供给用户，作为访问终端节点服务的端口，范围1-65535。
 
         :return: The client_port of this PortList.
         :rtype: int
@@ -74,7 +74,7 @@ class PortList:
     def client_port(self, client_port):
         """Sets the client_port of this PortList.
 
-        终端节点访问的端口。 终端节点提供给用户，作为访问终端节 点服务的端口，范围1-65535。
+        终端节点访问的端口。 终端节点提供给用户，作为访问终端节点服务的端口，范围1-65535。
 
         :param client_port: The client_port of this PortList.
         :type client_port: int
@@ -85,7 +85,7 @@ class PortList:
     def server_port(self):
         """Gets the server_port of this PortList.
 
-        终端节点服务的端口。 终端节点服务绑定了后端资源，作为提 供服务的端口，范围1-65535。
+        终端节点服务的端口。 终端节点服务绑定了后端资源，作为提供服务的端口，范围1-65535。
 
         :return: The server_port of this PortList.
         :rtype: int
@@ -96,7 +96,7 @@ class PortList:
     def server_port(self, server_port):
         """Sets the server_port of this PortList.
 
-        终端节点服务的端口。 终端节点服务绑定了后端资源，作为提 供服务的端口，范围1-65535。
+        终端节点服务的端口。 终端节点服务绑定了后端资源，作为提供服务的端口，范围1-65535。
 
         :param server_port: The server_port of this PortList.
         :type server_port: int

@@ -106,8 +106,10 @@ class QualityInfo:
             self.hdlb = hdlb
         if codec is not None:
             self.codec = codec
-        self.width = width
-        self.height = height
+        if width is not None:
+            self.width = width
+        if height is not None:
+            self.height = height
         self.bitrate = bitrate
         if video_frame_rate is not None:
             self.video_frame_rate = video_frame_rate

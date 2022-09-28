@@ -21,7 +21,7 @@ class ListSpecifiedVersionDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'version': 'Version'
+        'version': 'VersionObject'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class ListSpecifiedVersionDetailsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param version: 
-        :type version: :class:`huaweicloudsdkvpcep.v1.Version`
+        :type version: :class:`huaweicloudsdkvpcep.v1.VersionObject`
         """
         
         super(ListSpecifiedVersionDetailsResponse, self).__init__()
@@ -51,7 +51,7 @@ class ListSpecifiedVersionDetailsResponse(SdkResponse):
 
 
         :return: The version of this ListSpecifiedVersionDetailsResponse.
-        :rtype: :class:`huaweicloudsdkvpcep.v1.Version`
+        :rtype: :class:`huaweicloudsdkvpcep.v1.VersionObject`
         """
         return self._version
 
@@ -61,7 +61,7 @@ class ListSpecifiedVersionDetailsResponse(SdkResponse):
 
 
         :param version: The version of this ListSpecifiedVersionDetailsResponse.
-        :type version: :class:`huaweicloudsdkvpcep.v1.Version`
+        :type version: :class:`huaweicloudsdkvpcep.v1.VersionObject`
         """
         self._version = version
 

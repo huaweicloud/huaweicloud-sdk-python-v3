@@ -21,7 +21,7 @@ class ListVersionDetailsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'versions': 'list[Version]'
+        'versions': 'list[VersionObject]'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class ListVersionDetailsResponse(SdkResponse):
         The model defined in huaweicloud sdk
 
         :param versions: VPC终端节点版本信息列表。
-        :type versions: list[:class:`huaweicloudsdkvpcep.v1.Version`]
+        :type versions: list[:class:`huaweicloudsdkvpcep.v1.VersionObject`]
         """
         
         super(ListVersionDetailsResponse, self).__init__()
@@ -52,7 +52,7 @@ class ListVersionDetailsResponse(SdkResponse):
         VPC终端节点版本信息列表。
 
         :return: The versions of this ListVersionDetailsResponse.
-        :rtype: list[:class:`huaweicloudsdkvpcep.v1.Version`]
+        :rtype: list[:class:`huaweicloudsdkvpcep.v1.VersionObject`]
         """
         return self._versions
 
@@ -63,7 +63,7 @@ class ListVersionDetailsResponse(SdkResponse):
         VPC终端节点版本信息列表。
 
         :param versions: The versions of this ListVersionDetailsResponse.
-        :type versions: list[:class:`huaweicloudsdkvpcep.v1.Version`]
+        :type versions: list[:class:`huaweicloudsdkvpcep.v1.VersionObject`]
         """
         self._versions = versions
 

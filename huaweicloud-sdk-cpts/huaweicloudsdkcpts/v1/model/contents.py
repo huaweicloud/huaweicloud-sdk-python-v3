@@ -26,7 +26,9 @@ class Contents:
         'index': 'int',
         'selected_temp_name': 'str',
         'data': 'object',
-        'data_type': 'int'
+        'data_type': 'int',
+        'conditions': 'object',
+        'is_disabled': 'bool'
     }
 
     attribute_map = {
@@ -35,26 +37,32 @@ class Contents:
         'index': 'index',
         'selected_temp_name': 'selected_temp_name',
         'data': 'data',
-        'data_type': 'data_type'
+        'data_type': 'data_type',
+        'conditions': 'conditions',
+        'is_disabled': 'is_disabled'
     }
 
-    def __init__(self, content_id=None, content=None, index=None, selected_temp_name=None, data=None, data_type=None):
+    def __init__(self, content_id=None, content=None, index=None, selected_temp_name=None, data=None, data_type=None, conditions=None, is_disabled=None):
         """Contents
 
         The model defined in huaweicloud sdk
 
-        :param content_id: content_id
+        :param content_id: 事务id，若不为0表示此卡片为事务；为0表示非事务
         :type content_id: int
         :param content: content
         :type content: list[:class:`huaweicloudsdkcpts.v1.Content`]
-        :param index: index
+        :param index: 排序索引标识
         :type index: int
         :param selected_temp_name: selected_temp_name
         :type selected_temp_name: str
-        :param data: data
+        :param data: 数据（循环、条件控制器作用的数据）
         :type data: object
-        :param data_type: data_type
+        :param data_type: 类型，0:默认请求；1:数据指令；201:循环指令； 202:条件指令；301:集合点
         :type data_type: int
+        :param conditions: 若类型为202:条件指令，该字段为条件配置
+        :type conditions: object
+        :param is_disabled: 是否禁用
+        :type is_disabled: bool
         """
         
         
@@ -65,6 +73,8 @@ class Contents:
         self._selected_temp_name = None
         self._data = None
         self._data_type = None
+        self._conditions = None
+        self._is_disabled = None
         self.discriminator = None
 
         if content_id is not None:
@@ -79,12 +89,16 @@ class Contents:
             self.data = data
         if data_type is not None:
             self.data_type = data_type
+        if conditions is not None:
+            self.conditions = conditions
+        if is_disabled is not None:
+            self.is_disabled = is_disabled
 
     @property
     def content_id(self):
         """Gets the content_id of this Contents.
 
-        content_id
+        事务id，若不为0表示此卡片为事务；为0表示非事务
 
         :return: The content_id of this Contents.
         :rtype: int
@@ -95,7 +109,7 @@ class Contents:
     def content_id(self, content_id):
         """Sets the content_id of this Contents.
 
-        content_id
+        事务id，若不为0表示此卡片为事务；为0表示非事务
 
         :param content_id: The content_id of this Contents.
         :type content_id: int
@@ -128,7 +142,7 @@ class Contents:
     def index(self):
         """Gets the index of this Contents.
 
-        index
+        排序索引标识
 
         :return: The index of this Contents.
         :rtype: int
@@ -139,7 +153,7 @@ class Contents:
     def index(self, index):
         """Sets the index of this Contents.
 
-        index
+        排序索引标识
 
         :param index: The index of this Contents.
         :type index: int
@@ -172,7 +186,7 @@ class Contents:
     def data(self):
         """Gets the data of this Contents.
 
-        data
+        数据（循环、条件控制器作用的数据）
 
         :return: The data of this Contents.
         :rtype: object
@@ -183,7 +197,7 @@ class Contents:
     def data(self, data):
         """Sets the data of this Contents.
 
-        data
+        数据（循环、条件控制器作用的数据）
 
         :param data: The data of this Contents.
         :type data: object
@@ -194,7 +208,7 @@ class Contents:
     def data_type(self):
         """Gets the data_type of this Contents.
 
-        data_type
+        类型，0:默认请求；1:数据指令；201:循环指令； 202:条件指令；301:集合点
 
         :return: The data_type of this Contents.
         :rtype: int
@@ -205,12 +219,56 @@ class Contents:
     def data_type(self, data_type):
         """Sets the data_type of this Contents.
 
-        data_type
+        类型，0:默认请求；1:数据指令；201:循环指令； 202:条件指令；301:集合点
 
         :param data_type: The data_type of this Contents.
         :type data_type: int
         """
         self._data_type = data_type
+
+    @property
+    def conditions(self):
+        """Gets the conditions of this Contents.
+
+        若类型为202:条件指令，该字段为条件配置
+
+        :return: The conditions of this Contents.
+        :rtype: object
+        """
+        return self._conditions
+
+    @conditions.setter
+    def conditions(self, conditions):
+        """Sets the conditions of this Contents.
+
+        若类型为202:条件指令，该字段为条件配置
+
+        :param conditions: The conditions of this Contents.
+        :type conditions: object
+        """
+        self._conditions = conditions
+
+    @property
+    def is_disabled(self):
+        """Gets the is_disabled of this Contents.
+
+        是否禁用
+
+        :return: The is_disabled of this Contents.
+        :rtype: bool
+        """
+        return self._is_disabled
+
+    @is_disabled.setter
+    def is_disabled(self, is_disabled):
+        """Sets the is_disabled of this Contents.
+
+        是否禁用
+
+        :param is_disabled: The is_disabled of this Contents.
+        :type is_disabled: bool
+        """
+        self._is_disabled = is_disabled
 
     def to_dict(self):
         """Returns the model properties as a dict"""

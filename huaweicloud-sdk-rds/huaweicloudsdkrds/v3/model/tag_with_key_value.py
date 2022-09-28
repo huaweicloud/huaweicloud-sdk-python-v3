@@ -35,9 +35,9 @@ class TagWithKeyValue:
 
         The model defined in huaweicloud sdk
 
-        :param key: 标签键。最大长度36个unicode字符。 key不能为空，不能为空字符串，不能重复。字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        :param key: 标签键。长度为1-128个unicode字符。 可以包含任何语种字母、数字、空格和_.:&#x3D;+-@， 但首尾不能含有空格，不能以sys开头。
         :type key: str
-        :param value: 标签值。最大长度43个unicode字符。 可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        :param value: 标签值。最大长度255个unicode字符。 可以为空字符串。可以包含任何语种字母、数字、空格和_.:&#x3D;+-@， 但首尾不能含有空格。
         :type value: str
         """
         
@@ -54,7 +54,7 @@ class TagWithKeyValue:
     def key(self):
         """Gets the key of this TagWithKeyValue.
 
-        标签键。最大长度36个unicode字符。 key不能为空，不能为空字符串，不能重复。字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        标签键。长度为1-128个unicode字符。 可以包含任何语种字母、数字、空格和_.:=+-@， 但首尾不能含有空格，不能以sys开头。
 
         :return: The key of this TagWithKeyValue.
         :rtype: str
@@ -65,7 +65,7 @@ class TagWithKeyValue:
     def key(self, key):
         """Sets the key of this TagWithKeyValue.
 
-        标签键。最大长度36个unicode字符。 key不能为空，不能为空字符串，不能重复。字符集：A-Z，a-z ， 0-9，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        标签键。长度为1-128个unicode字符。 可以包含任何语种字母、数字、空格和_.:=+-@， 但首尾不能含有空格，不能以sys开头。
 
         :param key: The key of this TagWithKeyValue.
         :type key: str
@@ -76,7 +76,7 @@ class TagWithKeyValue:
     def value(self):
         """Gets the value of this TagWithKeyValue.
 
-        标签值。最大长度43个unicode字符。 可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        标签值。最大长度255个unicode字符。 可以为空字符串。可以包含任何语种字母、数字、空格和_.:=+-@， 但首尾不能含有空格。
 
         :return: The value of this TagWithKeyValue.
         :rtype: str
@@ -87,7 +87,7 @@ class TagWithKeyValue:
     def value(self, value):
         """Sets the value of this TagWithKeyValue.
 
-        标签值。最大长度43个unicode字符。 可以为空字符串。 字符集：A-Z，a-z ， 0-9，‘.’，‘-’，‘_’，UNICODE字符（\\u4E00-\\u9FFF）。
+        标签值。最大长度255个unicode字符。 可以为空字符串。可以包含任何语种字母、数字、空格和_.:=+-@， 但首尾不能含有空格。
 
         :param value: The value of this TagWithKeyValue.
         :type value: str

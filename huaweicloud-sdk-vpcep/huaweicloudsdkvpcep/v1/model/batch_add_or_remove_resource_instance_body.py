@@ -37,7 +37,7 @@ class BatchAddOrRemoveResourceInstanceBody:
 
         :param tags: 标签列表，没有标签默认为空数组。
         :type tags: list[:class:`huaweicloudsdkvpcep.v1.ResourceTag`]
-        :param action: 操作标识：仅限于 create（创建）、 delete（删除）。
+        :param action: 操作标识：仅限于 create（创建） delete（删除）
         :type action: str
         """
         
@@ -77,7 +77,7 @@ class BatchAddOrRemoveResourceInstanceBody:
     def action(self):
         """Gets the action of this BatchAddOrRemoveResourceInstanceBody.
 
-        操作标识：仅限于 create（创建）、 delete（删除）。
+        操作标识：仅限于 create（创建） delete（删除）
 
         :return: The action of this BatchAddOrRemoveResourceInstanceBody.
         :rtype: str
@@ -88,7 +88,7 @@ class BatchAddOrRemoveResourceInstanceBody:
     def action(self, action):
         """Sets the action of this BatchAddOrRemoveResourceInstanceBody.
 
-        操作标识：仅限于 create（创建）、 delete（删除）。
+        操作标识：仅限于 create（创建） delete（删除）
 
         :param action: The action of this BatchAddOrRemoveResourceInstanceBody.
         :type action: str

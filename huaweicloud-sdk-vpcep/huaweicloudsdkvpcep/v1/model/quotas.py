@@ -37,11 +37,11 @@ class Quotas:
 
         The model defined in huaweicloud sdk
 
-        :param type: 资源类型。支持根据资源类型过滤查询指 定类型的配额。 ● endpoint_service：终端节点服务 ● endpoint：终端节点
+        :param type: 资源类型。支持根据资源类型过滤查询指定类型的配额。 ● endpoint_service：终端节点服务 ● endpoint：终端节点
         :type type: str
         :param used: 已创建的资源个数。 取值范围：0~quota数。
         :type used: int
-        :param quota: 资源的最大配额数。 取值范围：各类型资源默认配额数的最大 值。
+        :param quota: 资源的最大配额数。 取值范围：各类型资源默认配额数的最大值。
         :type quota: int
         """
         
@@ -63,7 +63,7 @@ class Quotas:
     def type(self):
         """Gets the type of this Quotas.
 
-        资源类型。支持根据资源类型过滤查询指 定类型的配额。 ● endpoint_service：终端节点服务 ● endpoint：终端节点
+        资源类型。支持根据资源类型过滤查询指定类型的配额。 ● endpoint_service：终端节点服务 ● endpoint：终端节点
 
         :return: The type of this Quotas.
         :rtype: str
@@ -74,7 +74,7 @@ class Quotas:
     def type(self, type):
         """Sets the type of this Quotas.
 
-        资源类型。支持根据资源类型过滤查询指 定类型的配额。 ● endpoint_service：终端节点服务 ● endpoint：终端节点
+        资源类型。支持根据资源类型过滤查询指定类型的配额。 ● endpoint_service：终端节点服务 ● endpoint：终端节点
 
         :param type: The type of this Quotas.
         :type type: str
@@ -107,7 +107,7 @@ class Quotas:
     def quota(self):
         """Gets the quota of this Quotas.
 
-        资源的最大配额数。 取值范围：各类型资源默认配额数的最大 值。
+        资源的最大配额数。 取值范围：各类型资源默认配额数的最大值。
 
         :return: The quota of this Quotas.
         :rtype: int
@@ -118,7 +118,7 @@ class Quotas:
     def quota(self, quota):
         """Sets the quota of this Quotas.
 
-        资源的最大配额数。 取值范围：各类型资源默认配额数的最大 值。
+        资源的最大配额数。 取值范围：各类型资源默认配额数的最大值。
 
         :param quota: The quota of this Quotas.
         :type quota: int

@@ -5155,7 +5155,7 @@ class BssClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2/orders/customer-orders/pay',
+            resource_path='/v3/orders/customer-orders/pay',
             method='POST',
             path_params=path_params,
             query_params=query_params,

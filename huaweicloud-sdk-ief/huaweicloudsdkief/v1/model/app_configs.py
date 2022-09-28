@@ -24,17 +24,19 @@ class AppConfigs:
         'privileged': 'bool',
         'host_network': 'bool',
         'restart_policy': 'str',
-        'ports': 'list[Ports]'
+        'ports': 'list[Ports]',
+        'host_pid': 'str'
     }
 
     attribute_map = {
         'privileged': 'privileged',
         'host_network': 'host_network',
         'restart_policy': 'restart_policy',
-        'ports': 'ports'
+        'ports': 'ports',
+        'host_pid': 'host_pid'
     }
 
-    def __init__(self, privileged=None, host_network=None, restart_policy=None, ports=None):
+    def __init__(self, privileged=None, host_network=None, restart_policy=None, ports=None, host_pid=None):
         """AppConfigs
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class AppConfigs:
         :type restart_policy: str
         :param ports: 容器端口映射值
         :type ports: list[:class:`huaweicloudsdkief.v1.Ports`]
+        :param host_pid: 应用实例是否与主机共PID命名空间，默认值false
+        :type host_pid: str
         """
         
         
@@ -55,6 +59,7 @@ class AppConfigs:
         self._host_network = None
         self._restart_policy = None
         self._ports = None
+        self._host_pid = None
         self.discriminator = None
 
         if privileged is not None:
@@ -65,6 +70,8 @@ class AppConfigs:
             self.restart_policy = restart_policy
         if ports is not None:
             self.ports = ports
+        if host_pid is not None:
+            self.host_pid = host_pid
 
     @property
     def privileged(self):
@@ -153,6 +160,28 @@ class AppConfigs:
         :type ports: list[:class:`huaweicloudsdkief.v1.Ports`]
         """
         self._ports = ports
+
+    @property
+    def host_pid(self):
+        """Gets the host_pid of this AppConfigs.
+
+        应用实例是否与主机共PID命名空间，默认值false
+
+        :return: The host_pid of this AppConfigs.
+        :rtype: str
+        """
+        return self._host_pid
+
+    @host_pid.setter
+    def host_pid(self, host_pid):
+        """Sets the host_pid of this AppConfigs.
+
+        应用实例是否与主机共PID命名空间，默认值false
+
+        :param host_pid: The host_pid of this AppConfigs.
+        :type host_pid: str
+        """
+        self._host_pid = host_pid
 
     def to_dict(self):
         """Returns the model properties as a dict"""

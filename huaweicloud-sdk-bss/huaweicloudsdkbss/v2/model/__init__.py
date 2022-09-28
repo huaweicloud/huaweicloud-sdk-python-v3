@@ -45,7 +45,7 @@ from huaweicloudsdkbss.v2.model.coupon_max_use_quantity import CouponMaxUseQuant
 from huaweicloudsdkbss.v2.model.coupon_quota_v2 import CouponQuotaV2
 from huaweicloudsdkbss.v2.model.coupon_record_v2 import CouponRecordV2
 from huaweicloudsdkbss.v2.model.coupon_simple_info import CouponSimpleInfo
-from huaweicloudsdkbss.v2.model.coupon_simple_info_order_pay import CouponSimpleInfoOrderPay
+from huaweicloudsdkbss.v2.model.coupon_simple_info_order_pay_v3 import CouponSimpleInfoOrderPayV3
 from huaweicloudsdkbss.v2.model.create_customer_v2_req import CreateCustomerV2Req
 from huaweicloudsdkbss.v2.model.create_enterprise_project_auth_request import CreateEnterpriseProjectAuthRequest
 from huaweicloudsdkbss.v2.model.create_enterprise_project_auth_response import CreateEnterpriseProjectAuthResponse
@@ -78,7 +78,7 @@ from huaweicloudsdkbss.v2.model.demand_product_rating_result import DemandProduc
 from huaweicloudsdkbss.v2.model.dimension_group import DimensionGroup
 from huaweicloudsdkbss.v2.model.discount_info_v3 import DiscountInfoV3
 from huaweicloudsdkbss.v2.model.discount_item_v2 import DiscountItemV2
-from huaweicloudsdkbss.v2.model.discount_simple_info import DiscountSimpleInfo
+from huaweicloudsdkbss.v2.model.discount_simple_info_v3 import DiscountSimpleInfoV3
 from huaweicloudsdkbss.v2.model.em_child_node_v2 import EmChildNodeV2
 from huaweicloudsdkbss.v2.model.enterprise_person_new import EnterprisePersonNew
 from huaweicloudsdkbss.v2.model.error_detail import ErrorDetail
@@ -204,7 +204,7 @@ from huaweicloudsdkbss.v2.model.order_line_item_entity_v2 import OrderLineItemEn
 from huaweicloudsdkbss.v2.model.order_line_item_v3 import OrderLineItemV3
 from huaweicloudsdkbss.v2.model.order_refund_info_v2 import OrderRefundInfoV2
 from huaweicloudsdkbss.v2.model.order_v3 import OrderV3
-from huaweicloudsdkbss.v2.model.pay_customer_order_req import PayCustomerOrderReq
+from huaweicloudsdkbss.v2.model.pay_customer_order_v3_req import PayCustomerOrderV3Req
 from huaweicloudsdkbss.v2.model.pay_orders_request import PayOrdersRequest
 from huaweicloudsdkbss.v2.model.pay_orders_response import PayOrdersResponse
 from huaweicloudsdkbss.v2.model.period_product_info import PeriodProductInfo

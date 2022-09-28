@@ -35,9 +35,9 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param routetables: 路由表ID列表。节点的白名单。 此参数可以添加IPv4或CIDR： ● 当取值不为空时，表示将白 名单更新为取值所示内容。 ● 当取值为空时，表示删除所 有白名单。 默认为空列表。
+        :param routetables: 路由表ID列表。节点的白名单。 此参数可以添加IPv4或CIDR： ● 当取值不为空时，表示将白名单更新为取值所示内容。 ● 当取值为空时，表示删除所有白名单。 默认为空列表。
         :type routetables: list[str]
-        :param error: 当修改终端节点子网路由表失败 时，返回错误提示信息
+        :param error: 当修改终端节点子网路由表失败时，返回错误提示信息
         :type error: list[:class:`huaweicloudsdkvpcep.v1.RoutetableInfoError`]
         """
         
@@ -56,7 +56,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
     def routetables(self):
         """Gets the routetables of this UpdateEndpointRoutetableResponse.
 
-        路由表ID列表。节点的白名单。 此参数可以添加IPv4或CIDR： ● 当取值不为空时，表示将白 名单更新为取值所示内容。 ● 当取值为空时，表示删除所 有白名单。 默认为空列表。
+        路由表ID列表。节点的白名单。 此参数可以添加IPv4或CIDR： ● 当取值不为空时，表示将白名单更新为取值所示内容。 ● 当取值为空时，表示删除所有白名单。 默认为空列表。
 
         :return: The routetables of this UpdateEndpointRoutetableResponse.
         :rtype: list[str]
@@ -67,7 +67,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
     def routetables(self, routetables):
         """Sets the routetables of this UpdateEndpointRoutetableResponse.
 
-        路由表ID列表。节点的白名单。 此参数可以添加IPv4或CIDR： ● 当取值不为空时，表示将白 名单更新为取值所示内容。 ● 当取值为空时，表示删除所 有白名单。 默认为空列表。
+        路由表ID列表。节点的白名单。 此参数可以添加IPv4或CIDR： ● 当取值不为空时，表示将白名单更新为取值所示内容。 ● 当取值为空时，表示删除所有白名单。 默认为空列表。
 
         :param routetables: The routetables of this UpdateEndpointRoutetableResponse.
         :type routetables: list[str]
@@ -78,7 +78,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
     def error(self):
         """Gets the error of this UpdateEndpointRoutetableResponse.
 
-        当修改终端节点子网路由表失败 时，返回错误提示信息
+        当修改终端节点子网路由表失败时，返回错误提示信息
 
         :return: The error of this UpdateEndpointRoutetableResponse.
         :rtype: list[:class:`huaweicloudsdkvpcep.v1.RoutetableInfoError`]
@@ -89,7 +89,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
     def error(self, error):
         """Sets the error of this UpdateEndpointRoutetableResponse.
 
-        当修改终端节点子网路由表失败 时，返回错误提示信息
+        当修改终端节点子网路由表失败时，返回错误提示信息
 
         :param error: The error of this UpdateEndpointRoutetableResponse.
         :type error: list[:class:`huaweicloudsdkvpcep.v1.RoutetableInfoError`]

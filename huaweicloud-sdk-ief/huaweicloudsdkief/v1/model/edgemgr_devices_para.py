@@ -37,7 +37,7 @@ class EdgemgrDevicesPara:
 
         :param description: 终端设备描述，最大长度255，不允许^ ~ # $ % &amp; * &lt; &gt; ( ) [ ] { } &#39; \&quot; \\
         :type description: str
-        :param attributes: 
+        :param attributes: 终端设备静态属性
         :type attributes: dict(str, ValueInAttributes)
         """
         
@@ -78,6 +78,7 @@ class EdgemgrDevicesPara:
     def attributes(self):
         """Gets the attributes of this EdgemgrDevicesPara.
 
+        终端设备静态属性
 
         :return: The attributes of this EdgemgrDevicesPara.
         :rtype: dict(str, ValueInAttributes)
@@ -88,6 +89,7 @@ class EdgemgrDevicesPara:
     def attributes(self, attributes):
         """Sets the attributes of this EdgemgrDevicesPara.
 
+        终端设备静态属性
 
         :param attributes: The attributes of this EdgemgrDevicesPara.
         :type attributes: dict(str, ValueInAttributes)

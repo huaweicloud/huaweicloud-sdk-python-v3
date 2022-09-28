@@ -23,16 +23,18 @@ class StreamTranscodingTemplate:
     openapi_types = {
         'domain': 'str',
         'app_name': 'str',
+        'trans_type': 'str',
         'quality_info': 'list[QualityInfo]'
     }
 
     attribute_map = {
         'domain': 'domain',
         'app_name': 'app_name',
+        'trans_type': 'trans_type',
         'quality_info': 'quality_info'
     }
 
-    def __init__(self, domain=None, app_name=None, quality_info=None):
+    def __init__(self, domain=None, app_name=None, trans_type=None, quality_info=None):
         """StreamTranscodingTemplate
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class StreamTranscodingTemplate:
         :type domain: str
         :param app_name: 应用名称。 默认为“live”，若您需要自定义应用名称，请先提交工单申请。 
         :type app_name: str
+        :param trans_type: 转码流触发模式。 - play：拉流触发转码。 - publish：推流触发转码。 默认为play 
+        :type trans_type: str
         :param quality_info: 视频质量信息
         :type quality_info: list[:class:`huaweicloudsdklive.v1.QualityInfo`]
         """
@@ -49,11 +53,14 @@ class StreamTranscodingTemplate:
 
         self._domain = None
         self._app_name = None
+        self._trans_type = None
         self._quality_info = None
         self.discriminator = None
 
         self.domain = domain
         self.app_name = app_name
+        if trans_type is not None:
+            self.trans_type = trans_type
         self.quality_info = quality_info
 
     @property
@@ -99,6 +106,28 @@ class StreamTranscodingTemplate:
         :type app_name: str
         """
         self._app_name = app_name
+
+    @property
+    def trans_type(self):
+        """Gets the trans_type of this StreamTranscodingTemplate.
+
+        转码流触发模式。 - play：拉流触发转码。 - publish：推流触发转码。 默认为play 
+
+        :return: The trans_type of this StreamTranscodingTemplate.
+        :rtype: str
+        """
+        return self._trans_type
+
+    @trans_type.setter
+    def trans_type(self, trans_type):
+        """Sets the trans_type of this StreamTranscodingTemplate.
+
+        转码流触发模式。 - play：拉流触发转码。 - publish：推流触发转码。 默认为play 
+
+        :param trans_type: The trans_type of this StreamTranscodingTemplate.
+        :type trans_type: str
+        """
+        self._trans_type = trans_type
 
     @property
     def quality_info(self):

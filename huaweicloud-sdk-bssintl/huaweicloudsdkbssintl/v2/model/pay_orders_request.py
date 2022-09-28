@@ -21,7 +21,7 @@ class PayOrdersRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'PayCustomerOrderReq'
+        'body': 'PayCustomerOrderV3Req'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class PayOrdersRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the PayOrdersRequest
-        :type body: :class:`huaweicloudsdkbssintl.v2.PayCustomerOrderReq`
+        :type body: :class:`huaweicloudsdkbssintl.v2.PayCustomerOrderV3Req`
         """
         
         
@@ -51,7 +51,7 @@ class PayOrdersRequest:
 
 
         :return: The body of this PayOrdersRequest.
-        :rtype: :class:`huaweicloudsdkbssintl.v2.PayCustomerOrderReq`
+        :rtype: :class:`huaweicloudsdkbssintl.v2.PayCustomerOrderV3Req`
         """
         return self._body
 
@@ -61,7 +61,7 @@ class PayOrdersRequest:
 
 
         :param body: The body of this PayOrdersRequest.
-        :type body: :class:`huaweicloudsdkbssintl.v2.PayCustomerOrderReq`
+        :type body: :class:`huaweicloudsdkbssintl.v2.PayCustomerOrderV3Req`
         """
         self._body = body
 

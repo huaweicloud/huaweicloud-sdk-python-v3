@@ -33,7 +33,7 @@ class ListSpecifiedVersionDetailsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param version: 待查询版本号。取值 以v开头，例如v1。 若为空，表示查询所 有API的版本号。
+        :param version: 待查询版本号。 取值以v开头，例如v1。若为空，表示查询所有API的版本号。
         :type version: str
         """
         
@@ -48,7 +48,7 @@ class ListSpecifiedVersionDetailsRequest:
     def version(self):
         """Gets the version of this ListSpecifiedVersionDetailsRequest.
 
-        待查询版本号。取值 以v开头，例如v1。 若为空，表示查询所 有API的版本号。
+        待查询版本号。 取值以v开头，例如v1。若为空，表示查询所有API的版本号。
 
         :return: The version of this ListSpecifiedVersionDetailsRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ListSpecifiedVersionDetailsRequest:
     def version(self, version):
         """Sets the version of this ListSpecifiedVersionDetailsRequest.
 
-        待查询版本号。取值 以v开头，例如v1。 若为空，表示查询所 有API的版本号。
+        待查询版本号。 取值以v开头，例如v1。若为空，表示查询所有API的版本号。
 
         :param version: The version of this ListSpecifiedVersionDetailsRequest.
         :type version: str
