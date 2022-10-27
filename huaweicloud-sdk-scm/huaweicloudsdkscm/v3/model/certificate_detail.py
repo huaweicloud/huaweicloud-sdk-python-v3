@@ -132,8 +132,7 @@ class CertificateDetail:
         self.domain_count = domain_count
         self.wildcard_count = wildcard_count
         self.description = description
-        if enterprise_project_id is not None:
-            self.enterprise_project_id = enterprise_project_id
+        self.enterprise_project_id = enterprise_project_id
 
     @property
     def id(self):

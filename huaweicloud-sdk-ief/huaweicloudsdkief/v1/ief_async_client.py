@@ -363,7 +363,7 @@ class IefAsyncClient(Client):
     def create_device_async(self, request):
         """注册终端设备
 
-        该API用于注册一个终端设备。
+        注册终端设备。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1945,7 +1945,7 @@ class IefAsyncClient(Client):
     def enable_disable_edge_nodes_async(self, request):
         """启用停用边缘节点
 
-        该API用于启用停用边缘节点。被停用的边缘节点将无法连接到云端服务，可用该URI启用边缘节点恢复连接。
+        启用停用边缘节点。被停用的边缘节点将无法连接到云端服务，可用该URI启用边缘节点恢复连接。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3811,7 +3811,7 @@ class IefAsyncClient(Client):
     def show_edge_node_detail_async(self, request):
         """查询边缘节点详情
 
-        该API用于查询边缘节点详情。
+        查询边缘节点详情。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3863,66 +3863,6 @@ class IefAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowEdgeNodeDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def show_edge_node_upgrade_details_async(self, request):
-        """查看边缘节点升级状态
-
-        该API用于查看边缘节点升级状态。
-        
-        详细说明请参考华为云API Explorer。
-        Please refer to Huawei cloud API Explorer for details.
-
-        :param request: Request instance for ShowEdgeNodeUpgradeDetails
-        :type request: :class:`huaweicloudsdkief.v1.ShowEdgeNodeUpgradeDetailsRequest`
-        :rtype: :class:`huaweicloudsdkief.v1.ShowEdgeNodeUpgradeDetailsResponse`
-        """
-        return self.show_edge_node_upgrade_details_with_http_info(request)
-
-    def show_edge_node_upgrade_details_with_http_info(self, request):
-        all_params = ['node_id', 'ief_instance_id']
-        local_var_params = {}
-        for attr in request.attribute_map:
-            if hasattr(request, attr):
-                local_var_params[attr] = getattr(request, attr)
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'node_id' in local_var_params:
-            path_params['node_id'] = local_var_params['node_id']
-
-        query_params = []
-
-        header_params = {}
-        if 'ief_instance_id' in local_var_params:
-            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/nodes/{node_id}/upgrade',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            response_type='ShowEdgeNodeUpgradeDetailsResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4985,7 +4925,7 @@ class IefAsyncClient(Client):
         return self.update_node_by_device_id_with_http_info(request)
 
     def update_node_by_device_id_with_http_info(self, request):
-        all_params = ['device_id', 'node']
+        all_params = ['device_id', 'node', 'ief_instance_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -5000,6 +4940,8 @@ class IefAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'ief_instance_id' in local_var_params:
+            header_params['ief-instance-id'] = local_var_params['ief_instance_id']
 
         form_params = {}
 

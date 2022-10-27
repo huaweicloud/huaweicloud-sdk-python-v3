@@ -69,7 +69,7 @@ class ListListenersRequest:
 
         :param limit: 分页查询中每页的监听器个数
         :type limit: int
-        :param marker: 分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
+        :param marker: 分页查询的起始的资源id，表示上一页最后一条查询记录的监听器的id。不指定时表示查询第一页。
         :type marker: str
         :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
         :type page_reverse: bool
@@ -101,7 +101,7 @@ class ListListenersRequest:
         :type tls_container_id: str
         :param http2_enable: HTTP2功能的开启状态。取值范围：true/false。true：开启。false：关闭。
         :type http2_enable: bool
-        :param enterprise_project_id: 企业项目ID，仅用于基于企业项目的细粒度鉴权使用。 - 如果参数传递default_pool_id，则以pool对应的企业项目ID鉴权。 - 如果default_pool_id和enterprise_project_id都没有传递 ，则进行细粒度鉴权 ，必须在用户
+        :param enterprise_project_id: 企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\&quot;0\&quot;表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
         :type enterprise_project_id: str
         """
         
@@ -190,7 +190,7 @@ class ListListenersRequest:
     def marker(self):
         """Gets the marker of this ListListenersRequest.
 
-        分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
+        分页查询的起始的资源id，表示上一页最后一条查询记录的监听器的id。不指定时表示查询第一页。
 
         :return: The marker of this ListListenersRequest.
         :rtype: str
@@ -201,7 +201,7 @@ class ListListenersRequest:
     def marker(self, marker):
         """Sets the marker of this ListListenersRequest.
 
-        分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
+        分页查询的起始的资源id，表示上一页最后一条查询记录的监听器的id。不指定时表示查询第一页。
 
         :param marker: The marker of this ListListenersRequest.
         :type marker: str
@@ -542,7 +542,7 @@ class ListListenersRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListListenersRequest.
 
-        企业项目ID，仅用于基于企业项目的细粒度鉴权使用。 - 如果参数传递default_pool_id，则以pool对应的企业项目ID鉴权。 - 如果default_pool_id和enterprise_project_id都没有传递 ，则进行细粒度鉴权 ，必须在用户
+        企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 
         :return: The enterprise_project_id of this ListListenersRequest.
         :rtype: str
@@ -553,7 +553,7 @@ class ListListenersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListListenersRequest.
 
-        企业项目ID，仅用于基于企业项目的细粒度鉴权使用。 - 如果参数传递default_pool_id，则以pool对应的企业项目ID鉴权。 - 如果default_pool_id和enterprise_project_id都没有传递 ，则进行细粒度鉴权 ，必须在用户
+        企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 
         :param enterprise_project_id: The enterprise_project_id of this ListListenersRequest.
         :type enterprise_project_id: str

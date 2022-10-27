@@ -22,6 +22,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     openapi_types = {
         'severity': 'str',
+        'check_name': 'str',
         'check_type': 'str',
         'standard': 'str',
         'check_rule_name': 'str',
@@ -33,6 +34,7 @@ class CheckRuleRiskInfoResponseInfo:
 
     attribute_map = {
         'severity': 'severity',
+        'check_name': 'check_name',
         'check_type': 'check_type',
         'standard': 'standard',
         'check_rule_name': 'check_rule_name',
@@ -42,14 +44,16 @@ class CheckRuleRiskInfoResponseInfo:
         'status': 'status'
     }
 
-    def __init__(self, severity=None, check_type=None, standard=None, check_rule_name=None, check_rule_id=None, host_num=None, scan_result=None, status=None):
+    def __init__(self, severity=None, check_name=None, check_type=None, standard=None, check_rule_name=None, check_rule_id=None, host_num=None, scan_result=None, status=None):
         """CheckRuleRiskInfoResponseInfo
 
         The model defined in huaweicloud sdk
 
         :param severity: 风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
         :type severity: str
-        :param check_type: 基线名称
+        :param check_name: 基线名称
+        :type check_name: str
+        :param check_type: 基线类型
         :type check_type: str
         :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 华为标准   - qt_standard : 青腾标准
         :type standard: str
@@ -68,6 +72,7 @@ class CheckRuleRiskInfoResponseInfo:
         
 
         self._severity = None
+        self._check_name = None
         self._check_type = None
         self._standard = None
         self._check_rule_name = None
@@ -79,6 +84,8 @@ class CheckRuleRiskInfoResponseInfo:
 
         if severity is not None:
             self.severity = severity
+        if check_name is not None:
+            self.check_name = check_name
         if check_type is not None:
             self.check_type = check_type
         if standard is not None:
@@ -117,10 +124,32 @@ class CheckRuleRiskInfoResponseInfo:
         self._severity = severity
 
     @property
+    def check_name(self):
+        """Gets the check_name of this CheckRuleRiskInfoResponseInfo.
+
+        基线名称
+
+        :return: The check_name of this CheckRuleRiskInfoResponseInfo.
+        :rtype: str
+        """
+        return self._check_name
+
+    @check_name.setter
+    def check_name(self, check_name):
+        """Sets the check_name of this CheckRuleRiskInfoResponseInfo.
+
+        基线名称
+
+        :param check_name: The check_name of this CheckRuleRiskInfoResponseInfo.
+        :type check_name: str
+        """
+        self._check_name = check_name
+
+    @property
     def check_type(self):
         """Gets the check_type of this CheckRuleRiskInfoResponseInfo.
 
-        基线名称
+        基线类型
 
         :return: The check_type of this CheckRuleRiskInfoResponseInfo.
         :rtype: str
@@ -131,7 +160,7 @@ class CheckRuleRiskInfoResponseInfo:
     def check_type(self, check_type):
         """Sets the check_type of this CheckRuleRiskInfoResponseInfo.
 
-        基线名称
+        基线类型
 
         :param check_type: The check_type of this CheckRuleRiskInfoResponseInfo.
         :type check_type: str

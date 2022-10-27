@@ -43,9 +43,9 @@ class ListEnterpriseSubCustomersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param sub_customer_account_name: 企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
+        :param sub_customer_account_name: 企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。仅支持前缀匹配、后缀匹配、中间匹配；不支持携带空格查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
         :type sub_customer_account_name: str
-        :param sub_customer_display_name: 企业子账号的显示名称。不限制特殊字符。根据fuzzy_query取值决定是否按模糊查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
+        :param sub_customer_display_name: 企业子账号的显示名称。根据fuzzy_query取值决定是否按模糊查询。仅支持前缀匹配、后缀匹配、中间匹配；不支持携带空格查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
         :type sub_customer_display_name: str
         :param fuzzy_query: 企业子账号的显示名称、用户名是否按模糊查询。默认值为“0：不按模糊查询”。0：不按模糊查询1：按模糊查询
         :type fuzzy_query: int
@@ -84,7 +84,7 @@ class ListEnterpriseSubCustomersRequest:
     def sub_customer_account_name(self):
         """Gets the sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
 
-        企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
+        企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。仅支持前缀匹配、后缀匹配、中间匹配；不支持携带空格查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
         :return: The sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class ListEnterpriseSubCustomersRequest:
     def sub_customer_account_name(self, sub_customer_account_name):
         """Sets the sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
 
-        企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
+        企业子账号的账号名。根据fuzzy_query取值决定是否按模糊查询。仅支持前缀匹配、后缀匹配、中间匹配；不支持携带空格查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
         :param sub_customer_account_name: The sub_customer_account_name of this ListEnterpriseSubCustomersRequest.
         :type sub_customer_account_name: str
@@ -106,7 +106,7 @@ class ListEnterpriseSubCustomersRequest:
     def sub_customer_display_name(self):
         """Gets the sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
 
-        企业子账号的显示名称。不限制特殊字符。根据fuzzy_query取值决定是否按模糊查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
+        企业子账号的显示名称。根据fuzzy_query取值决定是否按模糊查询。仅支持前缀匹配、后缀匹配、中间匹配；不支持携带空格查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
         :return: The sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
         :rtype: str
@@ -117,7 +117,7 @@ class ListEnterpriseSubCustomersRequest:
     def sub_customer_display_name(self, sub_customer_display_name):
         """Sets the sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
 
-        企业子账号的显示名称。不限制特殊字符。根据fuzzy_query取值决定是否按模糊查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
+        企业子账号的显示名称。根据fuzzy_query取值决定是否按模糊查询。仅支持前缀匹配、后缀匹配、中间匹配；不支持携带空格查询。此参数不携带或携带值为空时，不作为筛选条件；携带值为空串时，作为筛选条件。
 
         :param sub_customer_display_name: The sub_customer_display_name of this ListEnterpriseSubCustomersRequest.
         :type sub_customer_display_name: str

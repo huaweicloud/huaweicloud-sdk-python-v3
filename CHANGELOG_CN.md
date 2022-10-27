@@ -1,3 +1,262 @@
+# 3.1.6 2022-10-27
+
+### HuaweiCloud SDK BMS
+
+- _新增特性_
+  - 支持接口`DeleteServerNics`、`UpdateBaremetalServerInterfaceAttachments`、`AddServerNics`、`ShowServerRemoteConsole`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowUrlTaskInfo`响应参数`id`类型调整 `int32` -> `int64`
+
+### HuaweiCloud SDK CloudIDE
+
+- _新增特性_
+  - 支持接口`ListExtensions`、`ShowExtensionDetail`、`ShowExtensionEvaluation`、`ShowExtensionEvaluationStar`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CodeHub
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListMergeRequest`:
+    - 新增响应参数 `merge_requests`
+    - 移除响应参数 `mergeRequests`
+  - 接口`ShowMergeRequest`:
+    - 新增响应参数 `approval_merge_request_approvers`、`closed_at`、`created_at`、`devcloud_source_branch`、`is_source_branch_exist`、`merge_request_assignee_list`、`merge_request_diff`、`merge_status`、`source_branch`、`target_branch`、`updated_at`
+    - 移除响应参数 `approvalMergeRequestApprovers`、`closedAt`、`createdAt`、`devcloudSourceBranch`、`isSourceBranchExist`、`mergeRequestAssigneeList`、`mergeRequestDiff`、`mergeStatus`、`sourceBranch`、`targetBranch`、`updatedAt`
+
+### HuaweiCloud SDK DCS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowInstance`:
+    - 响应参数`begin_time`类型调整 `string` -> `int64`
+    - 响应参数`end_time`类型调整 `string` -> `int64`
+    - 响应参数`current_time`类型调整 `string` -> `int64`
+    - 响应参数`next_expand_time`类型调整 `string` -> `int64`
+    - 响应参数`expand_effect_time`类型调整 `string` -> `int64`
+    - 响应参数`expand_interval_time`类型调整 `string` -> `int64`
+  - 接口`ResizeInstance`请求参数`new_capacity`类型调整 `int32` -> `integer`
+  - 接口`ListMigrationTask`新增响应参数 `target_instance_address`、`migration_method`、`task_name`、`target_instance_id`、`source_instance_name`、`target_instance_name`、`migrate_type`、`created_at`、`source_instance_id`、`task_id`、`data_source`、`status`
+  - 接口`ListRedislog`:
+    - 新增响应参数 `backup_id`
+    - 移除响应参数 `backupId`
+  - 接口`ListBackgroundTask`新增响应参数 `enable_show`
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 支持以下接口：
+    - `AddReadonlyNode`
+    - `UpgradeDatabaseVersion`
+    - `ShowSecondLevelMonitoringStatus`
+    - `SwitchSecondLevelMonitoring`
+    - `ChangeOpsWindow`
+    - `SetRecyclePolicy`
+    - `ExpandReplicasetNode`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListConfigurations`新增响应参数 `node_type`
+  - 接口`ListInstances`新增响应参数 `patch_available`
+  - 接口`ResizeInstanceVolume`新增请求参数 `node_ids`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateServers`新增请求参数 `X-Client-Token`、`batch_create_in_multi_az`
+  - 接口`CreatePostPaidServers`新增请求参数 `X-Client-Token`
+
+### HuaweiCloud SDK ELB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateListener`请求参数`tls_ciphers_policy`新增枚举值`tls-1-1`、`tls-1-2`、`tls-1-2-strict`, 移除枚举值` tls-1-1`、` tls-1-2`、` tls-1-2-strict`
+  - 接口`DeleteListener`移除请求参数 `cascade`
+  - 接口`DeleteLoadbalancer`移除请求参数 `cascade`
+  - 接口`ListApiVersions`:
+    - 新增响应参数 `versions`
+    - 移除响应参数 `id`、`status`
+  - 接口`CreateLoadBalancer`移除请求参数 `global_eip_ids`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _新增特性_
+  - 支持接口`ShowRestorableList`、`ListRestoreTime`、`DeleteBackup`、`RestoreExistingInstance`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListUsers`
+    - `ListUserChangeHistories`
+    - `ShowResourceQuotas`
+    - `ListQuotasDetail`
+    - `SwitchHostsProtectStatus`
+    - `BatchCreateTags`
+    - `DeleteResourceInstanceTag`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListRiskConfigs`:
+    - 新增请求参数 `check_name`
+    - 移除请求参数 `check_type`
+  - 接口`ShowCheckRuleDetail`:
+    - 新增请求参数 `check_name`
+    - 移除请求参数 `check_type`
+  - 接口`ListHostStatus`:
+    - 新增请求参数 `server_group`
+    - 请求参数`region`改为非必填
+  - 接口`ListVulnerabilities`:
+    - 新增响应参数 `severity_level`
+    - 响应参数`repair_necessity`类型调整 `int32` -> `string`
+
+### HuaweiCloud SDK IEF
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowEdgeNodeUpgradeDetails`
+  - 接口`UpdateNodeByDeviceId`新增请求参数 `ief-instance-id`
+  - 接口`ListPods`移除响应参数 `affinity`、`updated_at`
+  - 接口`CreateEncryptdatas`移除响应参数 `encrypt_data`
+  - 接口`ListEncryptdatas`:
+    - 新增响应参数 `encrypt_datas`
+    - 移除响应参数 `encrypt_data`
+  - 接口`UpdateEncryptdatas`移除响应参数 `encrypt_data`
+  - 接口`ListNodeEncryptdatas`:
+    - 新增响应参数 `encrypt_datas`
+    - 移除响应参数 `encrypt_data`
+
+### HuaweiCloud SDK IMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListTags`请求参数`__imagetype`新增枚举值`market`
+  - 接口`GlanceListImages`:
+    - 请求参数`__imagetype`新增枚举值`market`
+    - 响应参数`__imagetype`新增枚举值`market`
+  - 接口`GlanceShowImage`响应参数`__imagetype`新增枚举值`market`
+  - 接口`GlanceUpdateImage`响应参数`__imagetype`新增枚举值`market`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateMessage`新增请求参数 `properties`
+  - 接口`ListDeviceMessages`新增响应参数 `properties`
+  - 接口`ShowDeviceMessage`新增响应参数 `properties`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreatePostPaidInstance`:
+    - 新增请求参数 `disk_encrypted_enable`、`disk_encrypted_key`
+    - 请求参数`engine_version`新增枚举值`2.7`
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+  - 支持以下接口：
+    - `SearchCorpExternalDir`
+    - `SetCohost`
+    - `BatchHand`
+    - `CancelBroadcast`
+    - `AllowWaitingParticipant`
+    - `MoveToWaitingRoom`
+    - `AllowClientRecord`
+    - `ShowLayout`
+    - `SaveLayout`
+    - `DeleteLayout`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Moderation
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RunCreateVideoModerationJob`的请求参数`frame_interval`类型变更 `float` -> `integer`
+  - 接口`RunQueryAudioModerationJob`的响应参数`start_time`、`end_time`类型变更 `integer` -> `float`
+  - 接口`RunQueryVideoModerationJob`
+    - 响应参数`time`类型变更 `integer` -> `float`
+    - 响应参数`start_time`、`end_time`类型变更 `integer` -> `float`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstances`新增响应参数 `read_only_by_user`
+  - 接口`CreateDbUser`新增请求参数 `hosts`、`databases`
+
+### HuaweiCloud SDK SCM
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListCertificates`响应参数`enterprise_project_id`改为必填
+  - 接口`ShowCertificate`新增响应参数 `fingerprint`
+
+### HuaweiCloud SDK SFSTurbo
+
+- _新增特性_
+  - 支持接口`ChangeShareName`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.5 2022-09-28
 
 ### HuaweiCloud SDK APM

@@ -24,6 +24,10 @@ class CodeHubRegion:
 
     CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://codehub-ext.cn-southwest-2.myhuaweicloud.com")
 
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://codehub-ext.sa-brazil-1.myhuaweicloud.com")
+
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://codehub-ext.la-north-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-east-2": CN_EAST_2,
         "cn-south-1": CN_SOUTH_1,
@@ -32,6 +36,8 @@ class CodeHubRegion:
         "cn-north-1": CN_NORTH_1,
         "cn-south-2": CN_SOUTH_2,
         "cn-southwest-2": CN_SOUTHWEST_2,
+        "sa-brazil-1": SA_BRAZIL_1,
+        "la-north-2": LA_NORTH_2,
     }
 
     @classmethod

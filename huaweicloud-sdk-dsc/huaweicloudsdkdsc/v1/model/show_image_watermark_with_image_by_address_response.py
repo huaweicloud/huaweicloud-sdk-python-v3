@@ -35,7 +35,7 @@ class ShowImageWatermarkWithImageByAddressResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param region_id: 当前项目所在region的id，如北京一为：cn-north-1。
+        :param region_id: 当前项目所在region的id，如：xx-xx-1。
         :type region_id: str
         :param image_watermark: 提取出的水印图片存放地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.png**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.png为对象全路径名。
         :type image_watermark: str
@@ -56,7 +56,7 @@ class ShowImageWatermarkWithImageByAddressResponse(SdkResponse):
     def region_id(self):
         """Gets the region_id of this ShowImageWatermarkWithImageByAddressResponse.
 
-        当前项目所在region的id，如北京一为：cn-north-1。
+        当前项目所在region的id，如：xx-xx-1。
 
         :return: The region_id of this ShowImageWatermarkWithImageByAddressResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowImageWatermarkWithImageByAddressResponse(SdkResponse):
     def region_id(self, region_id):
         """Sets the region_id of this ShowImageWatermarkWithImageByAddressResponse.
 
-        当前项目所在region的id，如北京一为：cn-north-1。
+        当前项目所在region的id，如：xx-xx-1。
 
         :param region_id: The region_id of this ShowImageWatermarkWithImageByAddressResponse.
         :type region_id: str

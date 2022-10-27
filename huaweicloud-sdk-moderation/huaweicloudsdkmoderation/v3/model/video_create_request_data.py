@@ -22,7 +22,7 @@ class VideoCreateRequestData:
 
     openapi_types = {
         'url': 'str',
-        'frame_interval': 'float'
+        'frame_interval': 'int'
     }
 
     attribute_map = {
@@ -37,8 +37,8 @@ class VideoCreateRequestData:
 
         :param url: 视频url地址
         :type url: str
-        :param frame_interval: 截帧频率间隔，单位为秒，取值范围为0.5~60s；若不传递默认5s截帧一次
-        :type frame_interval: float
+        :param frame_interval: 截帧频率间隔，单位为秒，取值范围为1~60s；若不传递默认5s截帧一次
+        :type frame_interval: int
         """
         
         
@@ -77,10 +77,10 @@ class VideoCreateRequestData:
     def frame_interval(self):
         """Gets the frame_interval of this VideoCreateRequestData.
 
-        截帧频率间隔，单位为秒，取值范围为0.5~60s；若不传递默认5s截帧一次
+        截帧频率间隔，单位为秒，取值范围为1~60s；若不传递默认5s截帧一次
 
         :return: The frame_interval of this VideoCreateRequestData.
-        :rtype: float
+        :rtype: int
         """
         return self._frame_interval
 
@@ -88,10 +88,10 @@ class VideoCreateRequestData:
     def frame_interval(self, frame_interval):
         """Sets the frame_interval of this VideoCreateRequestData.
 
-        截帧频率间隔，单位为秒，取值范围为0.5~60s；若不传递默认5s截帧一次
+        截帧频率间隔，单位为秒，取值范围为1~60s；若不传递默认5s截帧一次
 
         :param frame_interval: The frame_interval of this VideoCreateRequestData.
-        :type frame_interval: float
+        :type frame_interval: int
         """
         self._frame_interval = frame_interval
 

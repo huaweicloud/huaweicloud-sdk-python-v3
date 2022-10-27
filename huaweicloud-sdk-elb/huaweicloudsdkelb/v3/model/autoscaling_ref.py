@@ -35,7 +35,7 @@ class AutoscalingRef:
 
         The model defined in huaweicloud sdk
 
-        :param enable: 当前负载均衡器是否开启弹性扩缩容。 取值： - true：开启。 - false：不开启。
+        :param enable: 当前负载均衡器是否开启弹性扩缩容。  取值： - true：开启。 - false：不开启。
         :type enable: bool
         :param min_l7_flavor_id: 弹性扩缩容的最小七层规格ID（规格类型L7_elastic），有七层监听器时，该字段不能为空。
         :type min_l7_flavor_id: str
@@ -55,7 +55,7 @@ class AutoscalingRef:
     def enable(self):
         """Gets the enable of this AutoscalingRef.
 
-        当前负载均衡器是否开启弹性扩缩容。 取值： - true：开启。 - false：不开启。
+        当前负载均衡器是否开启弹性扩缩容。  取值： - true：开启。 - false：不开启。
 
         :return: The enable of this AutoscalingRef.
         :rtype: bool
@@ -66,7 +66,7 @@ class AutoscalingRef:
     def enable(self, enable):
         """Sets the enable of this AutoscalingRef.
 
-        当前负载均衡器是否开启弹性扩缩容。 取值： - true：开启。 - false：不开启。
+        当前负载均衡器是否开启弹性扩缩容。  取值： - true：开启。 - false：不开启。
 
         :param enable: The enable of this AutoscalingRef.
         :type enable: bool

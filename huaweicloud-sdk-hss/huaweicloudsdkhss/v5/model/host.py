@@ -119,7 +119,7 @@ class Host:
         :type detect_result: str
         :param charging_mode: 收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
         :type charging_mode: str
-        :param resource_id: 云服务资源实例ID（UUID）
+        :param resource_id: 主机安全配额ID（UUID）
         :type resource_id: str
         :param outside_host: 是否非华为云机器
         :type outside_host: bool
@@ -590,7 +590,7 @@ class Host:
     def resource_id(self):
         """Gets the resource_id of this Host.
 
-        云服务资源实例ID（UUID）
+        主机安全配额ID（UUID）
 
         :return: The resource_id of this Host.
         :rtype: str
@@ -601,7 +601,7 @@ class Host:
     def resource_id(self, resource_id):
         """Sets the resource_id of this Host.
 
-        云服务资源实例ID（UUID）
+        主机安全配额ID（UUID）
 
         :param resource_id: The resource_id of this Host.
         :type resource_id: str

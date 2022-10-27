@@ -39,19 +39,19 @@ class MergeRequestsItem:
 
     attribute_map = {
         'author': 'author',
-        'closed_at': 'closedAt',
-        'created_at': 'createdAt',
+        'closed_at': 'closed_at',
+        'created_at': 'created_at',
         'description': 'description',
-        'devcloud_source_branch': 'devcloudSourceBranch',
+        'devcloud_source_branch': 'devcloud_source_branch',
         'id': 'id',
         'iid': 'iid',
-        'merge_request_assignee_list': 'mergeRequestAssigneeList',
-        'merge_status': 'mergeStatus',
-        'source_branch': 'sourceBranch',
+        'merge_request_assignee_list': 'merge_request_assignee_list',
+        'merge_status': 'merge_status',
+        'source_branch': 'source_branch',
         'state': 'state',
-        'target_branch': 'targetBranch',
+        'target_branch': 'target_branch',
         'title': 'title',
-        'updated_at': 'updatedAt'
+        'updated_at': 'updated_at'
     }
 
     def __init__(self, author=None, closed_at=None, created_at=None, description=None, devcloud_source_branch=None, id=None, iid=None, merge_request_assignee_list=None, merge_status=None, source_branch=None, state=None, target_branch=None, title=None, updated_at=None):

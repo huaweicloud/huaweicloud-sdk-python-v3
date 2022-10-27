@@ -39,9 +39,9 @@ class CreateIpRequestBody:
 
         :param type: 待打开IP开关的对象类型。 - 扩容shard组时，取值为“shard”。 - 扩容config组时，取值为“config”。
         :type type: str
-        :param target_id: 待打开IP开关的组ID。   - 对于shard组，取值为shard组ID。   - 对于config组，取值为config组ID。   - 如果为空，则打开该实例下同group类型的所有开关。 注意：   1. 第一次打开实例开关， 该参数需要传空。   2. 针对已开启开关的组， 开关不允许重复下发。
+        :param target_id: Shard组ID 注意：   1. 第一次添加Shard/Config IP时，该参数不传。   2. 对于已经添加过Shard IP的实例，需要传入该参数为新扩容的Shard组添加IP。
         :type target_id: str
-        :param password: 打开集群开关设置的密码。  注意：该密码暂不支持修改，请谨慎操作。
+        :param password: 打开集群开关设置的密码。 注意：该密码暂不支持修改，请谨慎操作。
         :type password: str
         """
         
@@ -83,7 +83,7 @@ class CreateIpRequestBody:
     def target_id(self):
         """Gets the target_id of this CreateIpRequestBody.
 
-        待打开IP开关的组ID。   - 对于shard组，取值为shard组ID。   - 对于config组，取值为config组ID。   - 如果为空，则打开该实例下同group类型的所有开关。 注意：   1. 第一次打开实例开关， 该参数需要传空。   2. 针对已开启开关的组， 开关不允许重复下发。
+        Shard组ID 注意：   1. 第一次添加Shard/Config IP时，该参数不传。   2. 对于已经添加过Shard IP的实例，需要传入该参数为新扩容的Shard组添加IP。
 
         :return: The target_id of this CreateIpRequestBody.
         :rtype: str
@@ -94,7 +94,7 @@ class CreateIpRequestBody:
     def target_id(self, target_id):
         """Sets the target_id of this CreateIpRequestBody.
 
-        待打开IP开关的组ID。   - 对于shard组，取值为shard组ID。   - 对于config组，取值为config组ID。   - 如果为空，则打开该实例下同group类型的所有开关。 注意：   1. 第一次打开实例开关， 该参数需要传空。   2. 针对已开启开关的组， 开关不允许重复下发。
+        Shard组ID 注意：   1. 第一次添加Shard/Config IP时，该参数不传。   2. 对于已经添加过Shard IP的实例，需要传入该参数为新扩容的Shard组添加IP。
 
         :param target_id: The target_id of this CreateIpRequestBody.
         :type target_id: str
@@ -105,7 +105,7 @@ class CreateIpRequestBody:
     def password(self):
         """Gets the password of this CreateIpRequestBody.
 
-        打开集群开关设置的密码。  注意：该密码暂不支持修改，请谨慎操作。
+        打开集群开关设置的密码。 注意：该密码暂不支持修改，请谨慎操作。
 
         :return: The password of this CreateIpRequestBody.
         :rtype: str
@@ -116,7 +116,7 @@ class CreateIpRequestBody:
     def password(self, password):
         """Sets the password of this CreateIpRequestBody.
 
-        打开集群开关设置的密码。  注意：该密码暂不支持修改，请谨慎操作。
+        打开集群开关设置的密码。 注意：该密码暂不支持修改，请谨慎操作。
 
         :param password: The password of this CreateIpRequestBody.
         :type password: str

@@ -108,6 +108,64 @@ class CloudIDEClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_extensions(self, request):
+        """查询插件列表
+
+        查询插件列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListExtensions
+        :type request: :class:`huaweicloudsdkcloudide.v2.ListExtensionsRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ListExtensionsResponse`
+        """
+        return self.list_extensions_with_http_info(request)
+
+    def list_extensions_with_http_info(self, request):
+        all_params = ['list_extensions_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/extension/extensionquery',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListExtensionsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_project_templates(self, request):
         """查询技术栈模板工程
 
@@ -339,6 +397,188 @@ class CloudIDEClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowExtensionAuthorizationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_extension_detail(self, request):
+        """查询插件详细信息
+
+        查询插件详细信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowExtensionDetail
+        :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionDetailRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionDetailResponse`
+        """
+        return self.show_extension_detail_with_http_info(request)
+
+    def show_extension_detail_with_http_info(self, request):
+        all_params = ['show_extension_detail_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/extension/public/detail',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowExtensionDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_extension_evaluation(self, request):
+        """查询插件评价
+
+        查询插件评价
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowExtensionEvaluation
+        :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationResponse`
+        """
+        return self.show_extension_evaluation_with_http_info(request)
+
+    def show_extension_evaluation_with_http_info(self, request):
+        all_params = ['extension_id', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'extension_id' in local_var_params:
+            query_params.append(('extension_id', local_var_params['extension_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/feedback/evaluation',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowExtensionEvaluationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_extension_evaluation_star(self, request):
+        """查询插件评星
+
+        查询插件评星
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowExtensionEvaluationStar
+        :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationStarRequest`
+        :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationStarResponse`
+        """
+        return self.show_extension_evaluation_star_with_http_info(request)
+
+    def show_extension_evaluation_star_with_http_info(self, request):
+        all_params = ['extension_id', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'extension_id' in local_var_params:
+            query_params.append(('extension_id', local_var_params['extension_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/marketplace/feedback/star',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowExtensionEvaluationStarResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

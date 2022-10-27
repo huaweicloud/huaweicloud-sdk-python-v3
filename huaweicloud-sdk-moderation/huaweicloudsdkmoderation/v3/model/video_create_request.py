@@ -45,7 +45,7 @@ class VideoCreateRequest:
         :type data: :class:`huaweicloudsdkmoderation.v3.VideoCreateRequestData`
         :param event_type: 事件类型，可选值如下： default：默认事件
         :type event_type: str
-        :param image_categories: 视频中画面需要检测的风险类型，列表不能为空。 terrorism：涉政暴恐内容的检测 porn：鉴黄内容的检测 politics：政治敏感人物内容的检测 imgtext：图文违规内容的检测（检测图片中出现的广告、色情、暴恐、涉政的文字违规内容以及二维码内容）
+        :param image_categories: 视频中画面需要检测的风险类型，列表不能为空。 terrorism：涉政暴恐内容的检测 porn：鉴黄内容的检测 politics：政治敏感人物内容的检测 image_text：图文违规内容的检测（检测图片中出现的广告、色情、暴恐、涉政的文字违规内容以及二维码内容）
         :type image_categories: list[str]
         :param audio_categories: 视频中音频需要检测的风险类型，不传或为空时表示不审核音频维度。 politics: 涉政检测 porn：涉黄检测 ad: 广告检测 moan: 娇喘检测 abuse: 辱骂检测
         :type audio_categories: list[str]
@@ -116,7 +116,7 @@ class VideoCreateRequest:
     def image_categories(self):
         """Gets the image_categories of this VideoCreateRequest.
 
-        视频中画面需要检测的风险类型，列表不能为空。 terrorism：涉政暴恐内容的检测 porn：鉴黄内容的检测 politics：政治敏感人物内容的检测 imgtext：图文违规内容的检测（检测图片中出现的广告、色情、暴恐、涉政的文字违规内容以及二维码内容）
+        视频中画面需要检测的风险类型，列表不能为空。 terrorism：涉政暴恐内容的检测 porn：鉴黄内容的检测 politics：政治敏感人物内容的检测 image_text：图文违规内容的检测（检测图片中出现的广告、色情、暴恐、涉政的文字违规内容以及二维码内容）
 
         :return: The image_categories of this VideoCreateRequest.
         :rtype: list[str]
@@ -127,7 +127,7 @@ class VideoCreateRequest:
     def image_categories(self, image_categories):
         """Sets the image_categories of this VideoCreateRequest.
 
-        视频中画面需要检测的风险类型，列表不能为空。 terrorism：涉政暴恐内容的检测 porn：鉴黄内容的检测 politics：政治敏感人物内容的检测 imgtext：图文违规内容的检测（检测图片中出现的广告、色情、暴恐、涉政的文字违规内容以及二维码内容）
+        视频中画面需要检测的风险类型，列表不能为空。 terrorism：涉政暴恐内容的检测 porn：鉴黄内容的检测 politics：政治敏感人物内容的检测 image_text：图文违规内容的检测（检测图片中出现的广告、色情、暴恐、涉政的文字违规内容以及二维码内容）
 
         :param image_categories: The image_categories of this VideoCreateRequest.
         :type image_categories: list[str]

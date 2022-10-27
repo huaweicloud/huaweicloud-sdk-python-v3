@@ -55,25 +55,25 @@ class Quota:
 
         :param project_id: 项目ID。
         :type project_id: str
-        :param loadbalancer: 负载均衡器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :param loadbalancer: 负载均衡器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type loadbalancer: int
-        :param certificate: 证书配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :param certificate: 证书配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type certificate: int
-        :param listener: 监听器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :param listener: 监听器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type listener: int
-        :param l7policy: 转发策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :param l7policy: 转发策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type l7policy: int
-        :param pool: 后端云服务器组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :param pool: 后端云服务器组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type pool: int
-        :param healthmonitor: 健康检查配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :param healthmonitor: 健康检查配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type healthmonitor: int
-        :param member: 后端云服务器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :param member: 后端云服务器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type member: int
-        :param members_per_pool: 单个pool下的member的配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        :param members_per_pool: 单个pool下的member的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
         :type members_per_pool: int
-        :param ipgroup: IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        :param ipgroup: IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type ipgroup: int
-        :param security_policy: 自定义安全策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        :param security_policy: 自定义安全策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
         :type security_policy: int
         """
         
@@ -130,7 +130,7 @@ class Quota:
     def loadbalancer(self):
         """Gets the loadbalancer of this Quota.
 
-        负载均衡器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        负载均衡器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :return: The loadbalancer of this Quota.
         :rtype: int
@@ -141,7 +141,7 @@ class Quota:
     def loadbalancer(self, loadbalancer):
         """Sets the loadbalancer of this Quota.
 
-        负载均衡器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        负载均衡器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param loadbalancer: The loadbalancer of this Quota.
         :type loadbalancer: int
@@ -152,7 +152,7 @@ class Quota:
     def certificate(self):
         """Gets the certificate of this Quota.
 
-        证书配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        证书配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :return: The certificate of this Quota.
         :rtype: int
@@ -163,7 +163,7 @@ class Quota:
     def certificate(self, certificate):
         """Sets the certificate of this Quota.
 
-        证书配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        证书配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param certificate: The certificate of this Quota.
         :type certificate: int
@@ -174,7 +174,7 @@ class Quota:
     def listener(self):
         """Gets the listener of this Quota.
 
-        监听器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        监听器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :return: The listener of this Quota.
         :rtype: int
@@ -185,7 +185,7 @@ class Quota:
     def listener(self, listener):
         """Sets the listener of this Quota.
 
-        监听器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        监听器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param listener: The listener of this Quota.
         :type listener: int
@@ -196,7 +196,7 @@ class Quota:
     def l7policy(self):
         """Gets the l7policy of this Quota.
 
-        转发策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        转发策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :return: The l7policy of this Quota.
         :rtype: int
@@ -207,7 +207,7 @@ class Quota:
     def l7policy(self, l7policy):
         """Sets the l7policy of this Quota.
 
-        转发策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        转发策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param l7policy: The l7policy of this Quota.
         :type l7policy: int
@@ -218,7 +218,7 @@ class Quota:
     def pool(self):
         """Gets the pool of this Quota.
 
-        后端云服务器组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        后端云服务器组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :return: The pool of this Quota.
         :rtype: int
@@ -229,7 +229,7 @@ class Quota:
     def pool(self, pool):
         """Sets the pool of this Quota.
 
-        后端云服务器组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        后端云服务器组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param pool: The pool of this Quota.
         :type pool: int
@@ -240,7 +240,7 @@ class Quota:
     def healthmonitor(self):
         """Gets the healthmonitor of this Quota.
 
-        健康检查配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        健康检查配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :return: The healthmonitor of this Quota.
         :rtype: int
@@ -251,7 +251,7 @@ class Quota:
     def healthmonitor(self, healthmonitor):
         """Sets the healthmonitor of this Quota.
 
-        健康检查配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        健康检查配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param healthmonitor: The healthmonitor of this Quota.
         :type healthmonitor: int
@@ -262,7 +262,7 @@ class Quota:
     def member(self):
         """Gets the member of this Quota.
 
-        后端云服务器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        后端云服务器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :return: The member of this Quota.
         :rtype: int
@@ -273,7 +273,7 @@ class Quota:
     def member(self, member):
         """Sets the member of this Quota.
 
-        后端云服务器配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        后端云服务器配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param member: The member of this Quota.
         :type member: int
@@ -284,7 +284,7 @@ class Quota:
     def members_per_pool(self):
         """Gets the members_per_pool of this Quota.
 
-        单个pool下的member的配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        单个pool下的member的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :return: The members_per_pool of this Quota.
         :rtype: int
@@ -295,7 +295,7 @@ class Quota:
     def members_per_pool(self, members_per_pool):
         """Sets the members_per_pool of this Quota.
 
-        单个pool下的member的配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
+        单个pool下的member的配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。
 
         :param members_per_pool: The members_per_pool of this Quota.
         :type members_per_pool: int
@@ -306,7 +306,7 @@ class Quota:
     def ipgroup(self):
         """Gets the ipgroup of this Quota.
 
-        IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :return: The ipgroup of this Quota.
         :rtype: int
@@ -317,7 +317,7 @@ class Quota:
     def ipgroup(self, ipgroup):
         """Sets the ipgroup of this Quota.
 
-        IP地址组配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        IP地址组配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :param ipgroup: The ipgroup of this Quota.
         :type ipgroup: int
@@ -328,7 +328,7 @@ class Quota:
     def security_policy(self):
         """Gets the security_policy of this Quota.
 
-        自定义安全策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        自定义安全策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :return: The security_policy of this Quota.
         :rtype: int
@@ -339,7 +339,7 @@ class Quota:
     def security_policy(self, security_policy):
         """Sets the security_policy of this Quota.
 
-        自定义安全策略配额。 取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
+        自定义安全策略配额。  取值： - 大于等于0：表示当前配额数量。 - -1：表示无配额限制。  [不支持该字段，请勿使用。](tag:hcso_dt)
 
         :param security_policy: The security_policy of this Quota.
         :type security_policy: int

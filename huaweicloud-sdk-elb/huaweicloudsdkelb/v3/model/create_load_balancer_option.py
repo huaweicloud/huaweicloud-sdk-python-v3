@@ -39,7 +39,6 @@ class CreateLoadBalancerOption:
         'admin_state_up': 'bool',
         'billing_info': 'str',
         'ipv6_bandwidth': 'BandwidthRef',
-        'global_eip_ids': 'list[str]',
         'publicip_ids': 'list[str]',
         'publicip': 'CreateLoadBalancerPublicIpOption',
         'elb_virsubnet_ids': 'list[str]',
@@ -69,7 +68,6 @@ class CreateLoadBalancerOption:
         'admin_state_up': 'admin_state_up',
         'billing_info': 'billing_info',
         'ipv6_bandwidth': 'ipv6_bandwidth',
-        'global_eip_ids': 'global_eip_ids',
         'publicip_ids': 'publicip_ids',
         'publicip': 'publicip',
         'elb_virsubnet_ids': 'elb_virsubnet_ids',
@@ -80,7 +78,7 @@ class CreateLoadBalancerOption:
         'waf_failure_action': 'waf_failure_action'
     }
 
-    def __init__(self, id=None, project_id=None, name=None, description=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_virsubnet_id=None, provider=None, l4_flavor_id=None, l7_flavor_id=None, guaranteed=None, vpc_id=None, availability_zone_list=None, enterprise_project_id=None, tags=None, admin_state_up=None, billing_info=None, ipv6_bandwidth=None, global_eip_ids=None, publicip_ids=None, publicip=None, elb_virsubnet_ids=None, ip_target_enable=None, deletion_protection_enable=None, prepaid_options=None, autoscaling=None, waf_failure_action=None):
+    def __init__(self, id=None, project_id=None, name=None, description=None, vip_address=None, vip_subnet_cidr_id=None, ipv6_vip_virsubnet_id=None, provider=None, l4_flavor_id=None, l7_flavor_id=None, guaranteed=None, vpc_id=None, availability_zone_list=None, enterprise_project_id=None, tags=None, admin_state_up=None, billing_info=None, ipv6_bandwidth=None, publicip_ids=None, publicip=None, elb_virsubnet_ids=None, ip_target_enable=None, deletion_protection_enable=None, prepaid_options=None, autoscaling=None, waf_failure_action=None):
         """CreateLoadBalancerOption
 
         The model defined in huaweicloud sdk
@@ -93,23 +91,23 @@ class CreateLoadBalancerOption:
         :type name: str
         :param description: 负载均衡器的描述。
         :type description: str
-        :param vip_address: 负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。   使用说明： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4虚拟IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配虚拟IP，vip_address&#x3D;null。
+        :param vip_address: 负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  使用说明： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4虚拟IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配虚拟IP，vip_address&#x3D;null。
         :type vip_address: str
-        :param vip_subnet_cidr_id: 负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4虚拟IP的LB，该字段必须传入。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。   使用说明： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id，则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。
+        :param vip_subnet_cidr_id: 负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4虚拟IP的LB，该字段必须传入。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  使用说明： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id， 则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。
         :type vip_subnet_cidr_id: str
-        :param ipv6_vip_virsubnet_id: 双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。   使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。   [不支持IPv6，请勿使用](tag:dt,dt_test)
+        :param ipv6_vip_virsubnet_id: 双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
         :type ipv6_vip_virsubnet_id: str
         :param provider: 负载均衡器的生产者名称。固定为vlb。
         :type provider: str
-        :param l4_flavor_id: 四层Flavor ID。 [使用说明： - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor（默认flavor根据不同局点有所不同，具体以实际值为准）。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb) [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
+        :param l4_flavor_id: 四层Flavor ID。  [使用说明：当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)  [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt)  [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
         :type l4_flavor_id: str
-        :param l7_flavor_id: 七层Flavor ID。 [使用说明： - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor（默认flavor根据不同局点有所不同，具体以实际值为准）。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb) [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
+        :param l7_flavor_id: 七层Flavor ID。  [使用说明：当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)  [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt)  [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
         :type l7_flavor_id: str
-        :param guaranteed: 是否独享型负载均衡器。取值： - true：独享型。 - false：共享型。  当前只支持设置为true，设置为false会返回400 Bad Request 。默认：true。
+        :param guaranteed: 是否独享型负载均衡器。  取值： - true：独享型。 - false：共享型。  当前只支持设置为true，设置为false会返回400 Bad Request 。默认：true。
         :type guaranteed: bool
-        :param vpc_id: 负载均衡器所在的VPC ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。   使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
+        :param vpc_id: 负载均衡器所在的VPC ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
         :type vpc_id: str
-        :param availability_zone_list: 可用区列表。可通过GET https://{ELB_Endponit}/v3/{project_id}/elb/availability-zones接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。
+        :param availability_zone_list: 可用区列表。可通过GET  https://{ELB_Endponit}/v3/{project_id}/elb/availability-zones 接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。
         :type availability_zone_list: list[str]
         :param enterprise_project_id: 负载均衡器所属的企业项目ID。不能传入\&quot;\&quot;、\&quot;0\&quot;或不存在的企业项目ID，创建时不传则资源属于default企业项目，默认返回\&quot;0\&quot;。  [不支持该字段，请勿使用。](tag:dt,dt_test,hcso_dt)
         :type enterprise_project_id: str
@@ -117,27 +115,25 @@ class CreateLoadBalancerOption:
         :type tags: list[:class:`huaweicloudsdkelb.v3.Tag`]
         :param admin_state_up: 负载均衡器的管理状态。只能设置为true。默认：true。  [不支持该字段，请勿使用。](tag:dt,dt_test)
         :type admin_state_up: bool
-        :param billing_info: 资源账单信息。取值： - 空：按需计费。 - 非空：包周期计费。  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如： CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f [ 不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+        :param billing_info: 资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费。  格式为： order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584:az1: 057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
         :type billing_info: str
         :param ipv6_bandwidth: 
         :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
-        :param global_eip_ids: 负载均衡器绑定的Global EIP的id。只支持绑定数组中的第一个Global EIP，其他将被忽略。
-        :type global_eip_ids: list[str]
         :param publicip_ids: 负载均衡器绑定的公网IP ID。只支持绑定数组中的第一个EIP，其他将被忽略。
         :type publicip_ids: list[str]
         :param publicip: 
         :type publicip: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerPublicIpOption`
         :param elb_virsubnet_ids: 下联面子网的网络ID列表。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_network_id得到。  若不指定该字段，则按如下规则选择下联面网络： 1. 如果ELB实例开启ipv6，则选择ipv6_vip_virsubnet_id子网对应的网络ID。 2. 如果ELB实例没有开启ipv6，开启ipv4，则选择vip_subnet_cidr_id子网对应的网络ID。 3. 如果ELB实例没有选择私网，只开启公网，则会在当前负载均衡器所在的VPC中任意选一个子网，优选可用IP多的网络。  若指定多个下联面子网，则按顺序优先使用第一个子网来为负载均衡器下联面端口分配ip地址。  下联面子网必须属于该LB所在的VPC。
         :type elb_virsubnet_ids: list[str]
-        :param ip_target_enable: 是否启用跨VPC后端转发。取值： - true：开启、 - false：不开启。  [仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs,dt,dt_test)  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  使用说明： - 开启不能关闭。
+        :param ip_target_enable: 是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。
         :type ip_target_enable: bool
-        :param deletion_protection_enable: 是否开启删除保护。取值：false不开启，true开启。默认false不开启。 &gt; 退场时需要先关闭所有资源的删除保护开关。
+        :param deletion_protection_enable: 是否开启删除保护。  取值：false不开启，true开启。默认false不开启。  &gt; 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
         :type deletion_protection_enable: bool
         :param prepaid_options: 
         :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidCreateOption`
         :param autoscaling: 
         :type autoscaling: :class:`huaweicloudsdkelb.v3.CreateLoadbalancerAutoscalingOption`
-        :param waf_failure_action: WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）   使用说明：只有绑定了waf的LB实例，该字段才会生效。
+        :param waf_failure_action: WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
         :type waf_failure_action: str
         """
         
@@ -161,7 +157,6 @@ class CreateLoadBalancerOption:
         self._admin_state_up = None
         self._billing_info = None
         self._ipv6_bandwidth = None
-        self._global_eip_ids = None
         self._publicip_ids = None
         self._publicip = None
         self._elb_virsubnet_ids = None
@@ -207,8 +202,6 @@ class CreateLoadBalancerOption:
             self.billing_info = billing_info
         if ipv6_bandwidth is not None:
             self.ipv6_bandwidth = ipv6_bandwidth
-        if global_eip_ids is not None:
-            self.global_eip_ids = global_eip_ids
         if publicip_ids is not None:
             self.publicip_ids = publicip_ids
         if publicip is not None:
@@ -318,7 +311,7 @@ class CreateLoadBalancerOption:
     def vip_address(self):
         """Gets the vip_address of this CreateLoadBalancerOption.
 
-        负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。   使用说明： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4虚拟IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配虚拟IP，vip_address=null。
+        负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  使用说明： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4虚拟IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配虚拟IP，vip_address=null。
 
         :return: The vip_address of this CreateLoadBalancerOption.
         :rtype: str
@@ -329,7 +322,7 @@ class CreateLoadBalancerOption:
     def vip_address(self, vip_address):
         """Sets the vip_address of this CreateLoadBalancerOption.
 
-        负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。   使用说明： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4虚拟IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配虚拟IP，vip_address=null。
+        负载均衡器的IPv4虚拟IP。该地址必须包含在所在子网的IPv4网段内，且未被占用。  使用说明： - 传入vip_address时必须传入vip_subnet_cidr_id。 - 不传入vip_address，但传入vip_subnet_cidr_id，则自动分配IPv4虚拟IP。 - 不传入vip_address，且不传vip_subnet_cidr_id，则不分配虚拟IP，vip_address=null。
 
         :param vip_address: The vip_address of this CreateLoadBalancerOption.
         :type vip_address: str
@@ -340,7 +333,7 @@ class CreateLoadBalancerOption:
     def vip_subnet_cidr_id(self):
         """Gets the vip_subnet_cidr_id of this CreateLoadBalancerOption.
 
-        负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4虚拟IP的LB，该字段必须传入。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。   使用说明： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id，则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。
+        负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4虚拟IP的LB，该字段必须传入。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  使用说明： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id， 则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。
 
         :return: The vip_subnet_cidr_id of this CreateLoadBalancerOption.
         :rtype: str
@@ -351,7 +344,7 @@ class CreateLoadBalancerOption:
     def vip_subnet_cidr_id(self, vip_subnet_cidr_id):
         """Sets the vip_subnet_cidr_id of this CreateLoadBalancerOption.
 
-        负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4虚拟IP的LB，该字段必须传入。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。   使用说明： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id，则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。
+        负载均衡器所在子网的IPv4子网ID。若需要创建带IPv4虚拟IP的LB，该字段必须传入。 可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的neutron_subnet_id得到。  使用说明： - vpc_id, vip_subnet_cidr_id, ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 若同时传入vpc_id和vip_subnet_cidr_id， 则vip_subnet_cidr_id对应的子网必须属于vpc_id对应的VPC。
 
         :param vip_subnet_cidr_id: The vip_subnet_cidr_id of this CreateLoadBalancerOption.
         :type vip_subnet_cidr_id: str
@@ -362,7 +355,7 @@ class CreateLoadBalancerOption:
     def ipv6_vip_virsubnet_id(self):
         """Gets the ipv6_vip_virsubnet_id of this CreateLoadBalancerOption.
 
-        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。   使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。   [不支持IPv6，请勿使用](tag:dt,dt_test)
+        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :return: The ipv6_vip_virsubnet_id of this CreateLoadBalancerOption.
         :rtype: str
@@ -373,7 +366,7 @@ class CreateLoadBalancerOption:
     def ipv6_vip_virsubnet_id(self, ipv6_vip_virsubnet_id):
         """Sets the ipv6_vip_virsubnet_id of this CreateLoadBalancerOption.
 
-        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。   使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。   [不支持IPv6，请勿使用](tag:dt,dt_test)
+        双栈类型负载均衡器所在子网的IPv6网络ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/subnets 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。 - 需要对应的子网开启IPv6。  [不支持IPv6，请勿使用。](tag:dt,dt_test)
 
         :param ipv6_vip_virsubnet_id: The ipv6_vip_virsubnet_id of this CreateLoadBalancerOption.
         :type ipv6_vip_virsubnet_id: str
@@ -406,7 +399,7 @@ class CreateLoadBalancerOption:
     def l4_flavor_id(self):
         """Gets the l4_flavor_id of this CreateLoadBalancerOption.
 
-        四层Flavor ID。 [使用说明： - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor（默认flavor根据不同局点有所不同，具体以实际值为准）。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb) [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
+        四层Flavor ID。  [使用说明：当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)  [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt)  [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
 
         :return: The l4_flavor_id of this CreateLoadBalancerOption.
         :rtype: str
@@ -417,7 +410,7 @@ class CreateLoadBalancerOption:
     def l4_flavor_id(self, l4_flavor_id):
         """Sets the l4_flavor_id of this CreateLoadBalancerOption.
 
-        四层Flavor ID。 [使用说明： - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor（默认flavor根据不同局点有所不同，具体以实际值为准）。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb) [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
+        四层Flavor ID。  [使用说明：当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)  [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt)  [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
 
         :param l4_flavor_id: The l4_flavor_id of this CreateLoadBalancerOption.
         :type l4_flavor_id: str
@@ -428,7 +421,7 @@ class CreateLoadBalancerOption:
     def l7_flavor_id(self):
         """Gets the l7_flavor_id of this CreateLoadBalancerOption.
 
-        七层Flavor ID。 [使用说明： - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor（默认flavor根据不同局点有所不同，具体以实际值为准）。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb) [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
+        七层Flavor ID。  [使用说明：当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)  [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt)  [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
 
         :return: The l7_flavor_id of this CreateLoadBalancerOption.
         :rtype: str
@@ -439,7 +432,7 @@ class CreateLoadBalancerOption:
     def l7_flavor_id(self, l7_flavor_id):
         """Sets the l7_flavor_id of this CreateLoadBalancerOption.
 
-        七层Flavor ID。 [使用说明： - 当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor（默认flavor根据不同局点有所不同，具体以实际值为准）。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb) [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt) [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
+        七层Flavor ID。  [使用说明：当l4_flavor_id和l7_flavor_id都不传的时，会使用默认flavor （默认flavor根据不同局点有所不同，具体以实际值为准）。 ](tag:hws,hws_hk,hws_eu,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb)  [只支持设置为l4_flavor.elb.shared。](tag:hcso_dt)  [所有LB实例共享带宽，该字段无效，请勿使用。](tag:fcs)
 
         :param l7_flavor_id: The l7_flavor_id of this CreateLoadBalancerOption.
         :type l7_flavor_id: str
@@ -450,7 +443,7 @@ class CreateLoadBalancerOption:
     def guaranteed(self):
         """Gets the guaranteed of this CreateLoadBalancerOption.
 
-        是否独享型负载均衡器。取值： - true：独享型。 - false：共享型。  当前只支持设置为true，设置为false会返回400 Bad Request 。默认：true。
+        是否独享型负载均衡器。  取值： - true：独享型。 - false：共享型。  当前只支持设置为true，设置为false会返回400 Bad Request 。默认：true。
 
         :return: The guaranteed of this CreateLoadBalancerOption.
         :rtype: bool
@@ -461,7 +454,7 @@ class CreateLoadBalancerOption:
     def guaranteed(self, guaranteed):
         """Sets the guaranteed of this CreateLoadBalancerOption.
 
-        是否独享型负载均衡器。取值： - true：独享型。 - false：共享型。  当前只支持设置为true，设置为false会返回400 Bad Request 。默认：true。
+        是否独享型负载均衡器。  取值： - true：独享型。 - false：共享型。  当前只支持设置为true，设置为false会返回400 Bad Request 。默认：true。
 
         :param guaranteed: The guaranteed of this CreateLoadBalancerOption.
         :type guaranteed: bool
@@ -472,7 +465,7 @@ class CreateLoadBalancerOption:
     def vpc_id(self):
         """Gets the vpc_id of this CreateLoadBalancerOption.
 
-        负载均衡器所在的VPC ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。   使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
+        负载均衡器所在的VPC ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
 
         :return: The vpc_id of this CreateLoadBalancerOption.
         :rtype: str
@@ -483,7 +476,7 @@ class CreateLoadBalancerOption:
     def vpc_id(self, vpc_id):
         """Sets the vpc_id of this CreateLoadBalancerOption.
 
-        负载均衡器所在的VPC ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。   使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
+        负载均衡器所在的VPC ID。可以通过GET https://{VPC_Endpoint}/v1/{project_id}/vpcs 响应参数中的id得到。  使用说明： - vpc_id，vip_subnet_cidr_id，ipv6_vip_virsubnet_id不能同时为空，且需要在同一个vpc下。
 
         :param vpc_id: The vpc_id of this CreateLoadBalancerOption.
         :type vpc_id: str
@@ -494,7 +487,7 @@ class CreateLoadBalancerOption:
     def availability_zone_list(self):
         """Gets the availability_zone_list of this CreateLoadBalancerOption.
 
-        可用区列表。可通过GET https://{ELB_Endponit}/v3/{project_id}/elb/availability-zones接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。
+        可用区列表。可通过GET  https://{ELB_Endponit}/v3/{project_id}/elb/availability-zones 接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。
 
         :return: The availability_zone_list of this CreateLoadBalancerOption.
         :rtype: list[str]
@@ -505,7 +498,7 @@ class CreateLoadBalancerOption:
     def availability_zone_list(self, availability_zone_list):
         """Sets the availability_zone_list of this CreateLoadBalancerOption.
 
-        可用区列表。可通过GET https://{ELB_Endponit}/v3/{project_id}/elb/availability-zones接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。
+        可用区列表。可通过GET  https://{ELB_Endponit}/v3/{project_id}/elb/availability-zones 接口来查询可用区集合列表。创建负载均衡器时，从查询结果选择某一个可用区集合，并从中选择一个或多个可用区。
 
         :param availability_zone_list: The availability_zone_list of this CreateLoadBalancerOption.
         :type availability_zone_list: list[str]
@@ -582,7 +575,7 @@ class CreateLoadBalancerOption:
     def billing_info(self):
         """Gets the billing_info of this CreateLoadBalancerOption.
 
-        资源账单信息。取值： - 空：按需计费。 - 非空：包周期计费。  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如： CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f [ 不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+        资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费。  格式为： order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584:az1: 057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
 
         :return: The billing_info of this CreateLoadBalancerOption.
         :rtype: str
@@ -593,7 +586,7 @@ class CreateLoadBalancerOption:
     def billing_info(self, billing_info):
         """Sets the billing_info of this CreateLoadBalancerOption.
 
-        资源账单信息。取值： - 空：按需计费。 - 非空：包周期计费。  包周期计费billing_info字段的格式为：order_id:product_id:region_id:project_id，如： CS2107161019CDJZZ:OFFI569702121789763584:az1:057ef081eb00d2732fd1c01a9be75e6f [ 不支持该字段，请勿使用](tag:dt,dt_test,hcso_dt)
+        资源账单信息。  取值： - 空：按需计费。 - 非空：包周期计费。  格式为： order_id:product_id:region_id:project_id，如：  CS2107161019CDJZZ:OFFI569702121789763584:az1: 057ef081eb00d2732fd1c01a9be75e6f  [不支持该字段，请勿使用](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
 
         :param billing_info: The billing_info of this CreateLoadBalancerOption.
         :type billing_info: str
@@ -619,28 +612,6 @@ class CreateLoadBalancerOption:
         :type ipv6_bandwidth: :class:`huaweicloudsdkelb.v3.BandwidthRef`
         """
         self._ipv6_bandwidth = ipv6_bandwidth
-
-    @property
-    def global_eip_ids(self):
-        """Gets the global_eip_ids of this CreateLoadBalancerOption.
-
-        负载均衡器绑定的Global EIP的id。只支持绑定数组中的第一个Global EIP，其他将被忽略。
-
-        :return: The global_eip_ids of this CreateLoadBalancerOption.
-        :rtype: list[str]
-        """
-        return self._global_eip_ids
-
-    @global_eip_ids.setter
-    def global_eip_ids(self, global_eip_ids):
-        """Sets the global_eip_ids of this CreateLoadBalancerOption.
-
-        负载均衡器绑定的Global EIP的id。只支持绑定数组中的第一个Global EIP，其他将被忽略。
-
-        :param global_eip_ids: The global_eip_ids of this CreateLoadBalancerOption.
-        :type global_eip_ids: list[str]
-        """
-        self._global_eip_ids = global_eip_ids
 
     @property
     def publicip_ids(self):
@@ -710,7 +681,7 @@ class CreateLoadBalancerOption:
     def ip_target_enable(self):
         """Gets the ip_target_enable of this CreateLoadBalancerOption.
 
-        是否启用跨VPC后端转发。取值： - true：开启、 - false：不开启。  [仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs,dt,dt_test)  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  使用说明： - 开启不能关闭。
+        是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。
 
         :return: The ip_target_enable of this CreateLoadBalancerOption.
         :rtype: bool
@@ -721,7 +692,7 @@ class CreateLoadBalancerOption:
     def ip_target_enable(self, ip_target_enable):
         """Sets the ip_target_enable of this CreateLoadBalancerOption.
 
-        是否启用跨VPC后端转发。取值： - true：开启、 - false：不开启。  [仅独享型负载均衡器支持该特性。](tag:hws,hws_hk,ocb,tlf,ctc,hcs,sbc,g42,tm,cmcc,hk_g42,mix,hk_sbc,hws_ocb,fcs,dt,dt_test)  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  使用说明： - 开启不能关闭。
+        是否启用跨VPC后端转发。  开启跨VPC后端转发后，后端服务器组不仅支持添加云上VPC内的服务器，还支持添加其他VPC、其他公有云、云下数据中心的服务器。  [仅独享型负载均衡器支持该特性。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt)  取值： - true：开启。 - false：不开启。  使用说明： - 开启不能关闭。
 
         :param ip_target_enable: The ip_target_enable of this CreateLoadBalancerOption.
         :type ip_target_enable: bool
@@ -732,7 +703,7 @@ class CreateLoadBalancerOption:
     def deletion_protection_enable(self):
         """Gets the deletion_protection_enable of this CreateLoadBalancerOption.
 
-        是否开启删除保护。取值：false不开启，true开启。默认false不开启。 > 退场时需要先关闭所有资源的删除保护开关。
+        是否开启删除保护。  取值：false不开启，true开启。默认false不开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
 
         :return: The deletion_protection_enable of this CreateLoadBalancerOption.
         :rtype: bool
@@ -743,7 +714,7 @@ class CreateLoadBalancerOption:
     def deletion_protection_enable(self, deletion_protection_enable):
         """Sets the deletion_protection_enable of this CreateLoadBalancerOption.
 
-        是否开启删除保护。取值：false不开启，true开启。默认false不开启。 > 退场时需要先关闭所有资源的删除保护开关。
+        是否开启删除保护。  取值：false不开启，true开启。默认false不开启。  > 退场时需要先关闭所有资源的删除保护开关。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42)
 
         :param deletion_protection_enable: The deletion_protection_enable of this CreateLoadBalancerOption.
         :type deletion_protection_enable: bool
@@ -794,7 +765,7 @@ class CreateLoadBalancerOption:
     def waf_failure_action(self):
         """Gets the waf_failure_action of this CreateLoadBalancerOption.
 
-        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）   使用说明：只有绑定了waf的LB实例，该字段才会生效。
+        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
 
         :return: The waf_failure_action of this CreateLoadBalancerOption.
         :rtype: str
@@ -805,7 +776,7 @@ class CreateLoadBalancerOption:
     def waf_failure_action(self, waf_failure_action):
         """Sets the waf_failure_action of this CreateLoadBalancerOption.
 
-        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）   使用说明：只有绑定了waf的LB实例，该字段才会生效。
+        WAF故障时的流量处理策略。discard:丢弃，forward: 转发到后端（默认）  使用说明：只有绑定了waf的LB实例，该字段才会生效。  [不支持该字段，请勿使用。](tag:hws_eu,g42,hk_g42,dt,dt_test,hcso_dt)
 
         :param waf_failure_action: The waf_failure_action of this CreateLoadBalancerOption.
         :type waf_failure_action: str

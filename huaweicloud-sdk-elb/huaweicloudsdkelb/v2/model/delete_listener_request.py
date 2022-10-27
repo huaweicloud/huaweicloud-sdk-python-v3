@@ -21,57 +21,28 @@ class DeleteListenerRequest:
     sensitive_list = []
 
     openapi_types = {
-        'cascade': 'bool',
         'listener_id': 'str'
     }
 
     attribute_map = {
-        'cascade': 'cascade',
         'listener_id': 'listener_id'
     }
 
-    def __init__(self, cascade=None, listener_id=None):
+    def __init__(self, listener_id=None):
         """DeleteListenerRequest
 
         The model defined in huaweicloud sdk
 
-        :param cascade: （不再支持）级联删除负载均衡器
-        :type cascade: bool
         :param listener_id: 监听器id
         :type listener_id: str
         """
         
         
 
-        self._cascade = None
         self._listener_id = None
         self.discriminator = None
 
-        if cascade is not None:
-            self.cascade = cascade
         self.listener_id = listener_id
-
-    @property
-    def cascade(self):
-        """Gets the cascade of this DeleteListenerRequest.
-
-        （不再支持）级联删除负载均衡器
-
-        :return: The cascade of this DeleteListenerRequest.
-        :rtype: bool
-        """
-        return self._cascade
-
-    @cascade.setter
-    def cascade(self, cascade):
-        """Sets the cascade of this DeleteListenerRequest.
-
-        （不再支持）级联删除负载均衡器
-
-        :param cascade: The cascade of this DeleteListenerRequest.
-        :type cascade: bool
-        """
-        self._cascade = cascade
 
     @property
     def listener_id(self):

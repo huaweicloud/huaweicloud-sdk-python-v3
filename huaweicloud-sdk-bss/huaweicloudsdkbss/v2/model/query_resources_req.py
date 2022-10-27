@@ -47,7 +47,7 @@ class QueryResourcesReq:
 
         The model defined in huaweicloud sdk
 
-        :param resource_ids: 资源ID列表。 查询指定资源ID的资源（当only_main_resource&#x3D;0时，查询指定资源及其附属资源）。最大支持50个ID同时作为条件查询。 此参数不携带或携带值为空列表时，不作为筛选条件，返回其他条件匹配的记录。  说明： 资源ID是指开通资源以后，云服务针对该资源分配的标志，譬如云主机ECS的资源ID是server_id。
+        :param resource_ids: 资源ID列表。 查询指定资源ID的资源（当only_main_resource&#x3D;0时，查询指定资源及其附属资源）。最大支持50个ID同时作为条件查询。 此参数不携带或携带值为空列表时，不作为筛选条件，返回其他条件匹配的记录。不支持携带值为null。  说明： 资源ID是指开通资源以后，云服务针对该资源分配的标志，譬如云主机ECS的资源ID是server_id。
         :type resource_ids: list[str]
         :param order_id: 订单号。查询指定订单下的资源。 此参数不携带或携带值为空串或携带值为null时，不作为筛选条件，返回其他条件匹配的记录。  说明： 使用特殊字符进行查询的时候，请注意进行URL编码转换，如“%”的转码应为“%25”。
         :type order_id: str
@@ -98,7 +98,7 @@ class QueryResourcesReq:
     def resource_ids(self):
         """Gets the resource_ids of this QueryResourcesReq.
 
-        资源ID列表。 查询指定资源ID的资源（当only_main_resource=0时，查询指定资源及其附属资源）。最大支持50个ID同时作为条件查询。 此参数不携带或携带值为空列表时，不作为筛选条件，返回其他条件匹配的记录。  说明： 资源ID是指开通资源以后，云服务针对该资源分配的标志，譬如云主机ECS的资源ID是server_id。
+        资源ID列表。 查询指定资源ID的资源（当only_main_resource=0时，查询指定资源及其附属资源）。最大支持50个ID同时作为条件查询。 此参数不携带或携带值为空列表时，不作为筛选条件，返回其他条件匹配的记录。不支持携带值为null。  说明： 资源ID是指开通资源以后，云服务针对该资源分配的标志，譬如云主机ECS的资源ID是server_id。
 
         :return: The resource_ids of this QueryResourcesReq.
         :rtype: list[str]
@@ -109,7 +109,7 @@ class QueryResourcesReq:
     def resource_ids(self, resource_ids):
         """Sets the resource_ids of this QueryResourcesReq.
 
-        资源ID列表。 查询指定资源ID的资源（当only_main_resource=0时，查询指定资源及其附属资源）。最大支持50个ID同时作为条件查询。 此参数不携带或携带值为空列表时，不作为筛选条件，返回其他条件匹配的记录。  说明： 资源ID是指开通资源以后，云服务针对该资源分配的标志，譬如云主机ECS的资源ID是server_id。
+        资源ID列表。 查询指定资源ID的资源（当only_main_resource=0时，查询指定资源及其附属资源）。最大支持50个ID同时作为条件查询。 此参数不携带或携带值为空列表时，不作为筛选条件，返回其他条件匹配的记录。不支持携带值为null。  说明： 资源ID是指开通资源以后，云服务针对该资源分配的标志，譬如云主机ECS的资源ID是server_id。
 
         :param resource_ids: The resource_ids of this QueryResourcesReq.
         :type resource_ids: list[str]

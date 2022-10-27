@@ -5090,7 +5090,7 @@ class RdsAsyncClient(Client):
     def create_db_user_async(self, request):
         """创建数据库用户
 
-        创建数据库用户。
+        在指定实例中创建数据库帐号。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

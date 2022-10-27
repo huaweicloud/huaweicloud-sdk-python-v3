@@ -37,11 +37,11 @@ class UpdateMemberOption:
 
         The model defined in huaweicloud sdk
 
-        :param admin_state_up: 后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
+        :param admin_state_up: 后端云服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
         :type admin_state_up: bool
         :param name: 后端云服务器名称。
         :type name: str
-        :param weight: 后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。   取值：0-100，默认1。   使用说明：若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
+        :param weight: 后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明：若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
         :type weight: int
         """
         
@@ -63,7 +63,7 @@ class UpdateMemberOption:
     def admin_state_up(self):
         """Gets the admin_state_up of this UpdateMemberOption.
 
-        后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
+        后端云服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
 
         :return: The admin_state_up of this UpdateMemberOption.
         :rtype: bool
@@ -74,7 +74,7 @@ class UpdateMemberOption:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this UpdateMemberOption.
 
-        后端云服务器的管理状态。取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
+        后端云服务器的管理状态。  取值：true、false。  虽然创建、更新请求支持该字段，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。  请勿传入该字段。
 
         :param admin_state_up: The admin_state_up of this UpdateMemberOption.
         :type admin_state_up: bool
@@ -107,7 +107,7 @@ class UpdateMemberOption:
     def weight(self):
         """Gets the weight of this UpdateMemberOption.
 
-        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。   取值：0-100，默认1。   使用说明：若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
+        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明：若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
 
         :return: The weight of this UpdateMemberOption.
         :rtype: int
@@ -118,7 +118,7 @@ class UpdateMemberOption:
     def weight(self, weight):
         """Sets the weight of this UpdateMemberOption.
 
-        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。   取值：0-100，默认1。   使用说明：若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
+        后端云服务器的权重，请求将根据pool配置的负载均衡算法和后端云服务器的权重进行负载分发。 权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值：0-100，默认1。  使用说明：若所在pool的lb_algorithm取值为SOURCE_IP，该字段无效。
 
         :param weight: The weight of this UpdateMemberOption.
         :type weight: int

@@ -37,7 +37,7 @@ class RunlogItem:
         'replication_ip': 'replication_ip',
         'status': 'status',
         'time': 'time',
-        'backup_id': 'backupId'
+        'backup_id': 'backup_id'
     }
 
     def __init__(self, id=None, file_name=None, group_name=None, replication_ip=None, status=None, time=None, backup_id=None):

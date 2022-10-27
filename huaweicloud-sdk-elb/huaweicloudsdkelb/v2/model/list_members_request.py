@@ -55,7 +55,7 @@ class ListMembersRequest:
 
         :param pool_id: 后端云服务器组id
         :type pool_id: str
-        :param limit: 分页查询中每页的监听器个数
+        :param limit: 分页查询中每页的后端服务器个数
         :type limit: int
         :param marker: 分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
         :type marker: str
@@ -140,7 +140,7 @@ class ListMembersRequest:
     def limit(self):
         """Gets the limit of this ListMembersRequest.
 
-        分页查询中每页的监听器个数
+        分页查询中每页的后端服务器个数
 
         :return: The limit of this ListMembersRequest.
         :rtype: int
@@ -151,7 +151,7 @@ class ListMembersRequest:
     def limit(self, limit):
         """Sets the limit of this ListMembersRequest.
 
-        分页查询中每页的监听器个数
+        分页查询中每页的后端服务器个数
 
         :param limit: The limit of this ListMembersRequest.
         :type limit: int

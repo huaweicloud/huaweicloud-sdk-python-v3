@@ -18,6 +18,8 @@ class SFSTurboRegion:
 
     CN_NORTH_4 = Region(id="cn-north-4", endpoint="https://sfs-turbo.cn-north-4.myhuaweicloud.com")
 
+    CN_NORTH_9 = Region(id="cn-north-9", endpoint="https://sfs-turbo.cn-north-9.myhuaweicloud.com")
+
     CN_SOUTH_1 = Region(id="cn-south-1", endpoint="https://sfs-turbo.cn-south-1.myhuaweicloud.com")
 
     CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://sfs-turbo.cn-southwest-2.myhuaweicloud.com")
@@ -36,11 +38,14 @@ class SFSTurboRegion:
 
     AF_SOUTH_1 = Region(id="af-south-1", endpoint="https://sfs-turbo.af-south-1.myhuaweicloud.com")
 
+    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://sfs-turbo.na-mexico-1.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-1": CN_NORTH_1,
         "cn-south-2": CN_SOUTH_2,
         "cn-east-3": CN_EAST_3,
         "cn-north-4": CN_NORTH_4,
+        "cn-north-9": CN_NORTH_9,
         "cn-south-1": CN_SOUTH_1,
         "cn-southwest-2": CN_SOUTHWEST_2,
         "ap-southeast-1": AP_SOUTHEAST_1,
@@ -50,6 +55,7 @@ class SFSTurboRegion:
         "la-south-2": LA_SOUTH_2,
         "la-north-2": LA_NORTH_2,
         "af-south-1": AF_SOUTH_1,
+        "na-mexico-1": NA_MEXICO_1,
     }
 
     @classmethod

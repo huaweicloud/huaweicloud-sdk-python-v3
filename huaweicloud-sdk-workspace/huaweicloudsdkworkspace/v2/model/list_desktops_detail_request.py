@@ -59,7 +59,7 @@ class ListDesktopsDetailRequest:
         :type desktop_ip: str
         :param offset: 用于分页查询，查询的起始记录序号，从0开始。
         :type offset: int
-        :param limit: 用于分页查询，取值范围0-1000，默认值1000。
+        :param limit: 用于分页查询，取值范围0-500，默认值500。
         :type limit: int
         :param desktop_id: 桌面ID。
         :type desktop_id: str
@@ -215,7 +215,7 @@ class ListDesktopsDetailRequest:
     def limit(self):
         """Gets the limit of this ListDesktopsDetailRequest.
 
-        用于分页查询，取值范围0-1000，默认值1000。
+        用于分页查询，取值范围0-500，默认值500。
 
         :return: The limit of this ListDesktopsDetailRequest.
         :rtype: int
@@ -226,7 +226,7 @@ class ListDesktopsDetailRequest:
     def limit(self, limit):
         """Sets the limit of this ListDesktopsDetailRequest.
 
-        用于分页查询，取值范围0-1000，默认值1000。
+        用于分页查询，取值范围0-500，默认值500。
 
         :param limit: The limit of this ListDesktopsDetailRequest.
         :type limit: int

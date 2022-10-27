@@ -43,7 +43,7 @@ class ListVulnerabilitiesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业租户ID
+        :param enterprise_project_id: 企业租户ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param type: 漏洞类型，包含如下：   -linux_vul : linux漏洞   -windows_vul : windows漏洞   -web_cms : Web-CMS漏洞
         :type type: str
@@ -83,7 +83,7 @@ class ListVulnerabilitiesRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListVulnerabilitiesRequest.
 
-        企业租户ID
+        企业租户ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListVulnerabilitiesRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class ListVulnerabilitiesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListVulnerabilitiesRequest.
 
-        企业租户ID
+        企业租户ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListVulnerabilitiesRequest.
         :type enterprise_project_id: str

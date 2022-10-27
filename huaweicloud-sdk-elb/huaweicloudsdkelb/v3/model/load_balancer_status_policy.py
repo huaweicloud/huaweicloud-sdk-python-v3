@@ -41,11 +41,11 @@ class LoadBalancerStatusPolicy:
 
         The model defined in huaweicloud sdk
 
-        :param action: 匹配后动作。取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
+        :param action: 匹配后动作。  取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
         :type action: str
         :param id: 转发策略ID。
         :type id: str
-        :param provisioning_status: 转发策略的配置状态。取值： - ACTIVE：使用中，默认值。 - ERROR：表示当前策略与同一监听器下的其他策略存在相同的规则配置。
+        :param provisioning_status: 转发策略的配置状态。  取值范围： - ACTIVE: 默认值，表示正常。 [- ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs)
         :type provisioning_status: str
         :param name: 转发策略名称。
         :type name: str
@@ -77,7 +77,7 @@ class LoadBalancerStatusPolicy:
     def action(self):
         """Gets the action of this LoadBalancerStatusPolicy.
 
-        匹配后动作。取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
+        匹配后动作。  取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
 
         :return: The action of this LoadBalancerStatusPolicy.
         :rtype: str
@@ -88,7 +88,7 @@ class LoadBalancerStatusPolicy:
     def action(self, action):
         """Sets the action of this LoadBalancerStatusPolicy.
 
-        匹配后动作。取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
+        匹配后动作。  取值： - REDIRECT_TO_POOL：转发到后端服务器组。 - REDIRECT_TO_LISTENER：转发到监听器。
 
         :param action: The action of this LoadBalancerStatusPolicy.
         :type action: str
@@ -121,7 +121,7 @@ class LoadBalancerStatusPolicy:
     def provisioning_status(self):
         """Gets the provisioning_status of this LoadBalancerStatusPolicy.
 
-        转发策略的配置状态。取值： - ACTIVE：使用中，默认值。 - ERROR：表示当前策略与同一监听器下的其他策略存在相同的规则配置。
+        转发策略的配置状态。  取值范围： - ACTIVE: 默认值，表示正常。 [- ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs)
 
         :return: The provisioning_status of this LoadBalancerStatusPolicy.
         :rtype: str
@@ -132,7 +132,7 @@ class LoadBalancerStatusPolicy:
     def provisioning_status(self, provisioning_status):
         """Sets the provisioning_status of this LoadBalancerStatusPolicy.
 
-        转发策略的配置状态。取值： - ACTIVE：使用中，默认值。 - ERROR：表示当前策略与同一监听器下的其他策略存在相同的规则配置。
+        转发策略的配置状态。  取值范围： - ACTIVE: 默认值，表示正常。 [- ERROR: 表示当前策略与同一监听器下的其他策略存在相同的规则配置。 ](tag:hws,hws_hk,ocb,ctc,hcs,g42,tm,cmcc,hk_g42,hws_ocb,fcs)
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusPolicy.
         :type provisioning_status: str

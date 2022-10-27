@@ -6,6 +6,9 @@ from __future__ import absolute_import
 from huaweicloudsdkdds.v3.dds_client import DdsClient
 from huaweicloudsdkdds.v3.dds_async_client import DdsAsyncClient
 # import models into sdk package
+from huaweicloudsdkdds.v3.model.add_readonly_node_request import AddReadonlyNodeRequest
+from huaweicloudsdkdds.v3.model.add_readonly_node_request_body import AddReadonlyNodeRequestBody
+from huaweicloudsdkdds.v3.model.add_readonly_node_response import AddReadonlyNodeResponse
 from huaweicloudsdkdds.v3.model.add_sharding_node_request import AddShardingNodeRequest
 from huaweicloudsdkdds.v3.model.add_sharding_node_response import AddShardingNodeResponse
 from huaweicloudsdkdds.v3.model.add_sharding_node_volume_option import AddShardingNodeVolumeOption
@@ -30,6 +33,8 @@ from huaweicloudsdkdds.v3.model.batch_tag_action_request import BatchTagActionRe
 from huaweicloudsdkdds.v3.model.batch_tag_action_response import BatchTagActionResponse
 from huaweicloudsdkdds.v3.model.cancel_eip_request import CancelEipRequest
 from huaweicloudsdkdds.v3.model.cancel_eip_response import CancelEipResponse
+from huaweicloudsdkdds.v3.model.change_ops_window_request import ChangeOpsWindowRequest
+from huaweicloudsdkdds.v3.model.change_ops_window_response import ChangeOpsWindowResponse
 from huaweicloudsdkdds.v3.model.charge_info_option import ChargeInfoOption
 from huaweicloudsdkdds.v3.model.charge_info_result import ChargeInfoResult
 from huaweicloudsdkdds.v3.model.check_password_request import CheckPasswordRequest
@@ -85,9 +90,12 @@ from huaweicloudsdkdds.v3.model.download_slowlog_response import DownloadSlowlog
 from huaweicloudsdkdds.v3.model.download_slowlog_result import DownloadSlowlogResult
 from huaweicloudsdkdds.v3.model.dss_pool_info import DssPoolInfo
 from huaweicloudsdkdds.v3.model.enlarge_instance_request_body import EnlargeInstanceRequestBody
+from huaweicloudsdkdds.v3.model.enlarge_replicaset_node_request_body import EnlargeReplicasetNodeRequestBody
 from huaweicloudsdkdds.v3.model.entity_configuration_parameters_result import EntityConfigurationParametersResult
 from huaweicloudsdkdds.v3.model.error_response import ErrorResponse
 from huaweicloudsdkdds.v3.model.errorlog_result import ErrorlogResult
+from huaweicloudsdkdds.v3.model.expand_replicaset_node_request import ExpandReplicasetNodeRequest
+from huaweicloudsdkdds.v3.model.expand_replicaset_node_response import ExpandReplicasetNodeResponse
 from huaweicloudsdkdds.v3.model.flavor import Flavor
 from huaweicloudsdkdds.v3.model.flavor_info import FlavorInfo
 from huaweicloudsdkdds.v3.model.get_backup_download_link_response_body_files import GetBackupDownloadLinkResponseBodyFiles
@@ -149,6 +157,7 @@ from huaweicloudsdkdds.v3.model.migrate_az_request import MigrateAzRequest
 from huaweicloudsdkdds.v3.model.migrate_az_request_body import MigrateAzRequestBody
 from huaweicloudsdkdds.v3.model.migrate_az_response import MigrateAzResponse
 from huaweicloudsdkdds.v3.model.node_item import NodeItem
+from huaweicloudsdkdds.v3.model.ops_window_request_body import OpsWindowRequestBody
 from huaweicloudsdkdds.v3.model.produce_auditlog_links_request_body import ProduceAuditlogLinksRequestBody
 from huaweicloudsdkdds.v3.model.query_connections_response import QueryConnectionsResponse
 from huaweicloudsdkdds.v3.model.query_instance_response import QueryInstanceResponse
@@ -157,6 +166,8 @@ from huaweicloudsdkdds.v3.model.query_project_tag_item import QueryProjectTagIte
 from huaweicloudsdkdds.v3.model.query_resource_tag_item import QueryResourceTagItem
 from huaweicloudsdkdds.v3.model.query_session_response import QuerySessionResponse
 from huaweicloudsdkdds.v3.model.query_tag_item import QueryTagItem
+from huaweicloudsdkdds.v3.model.recycle_policy import RecyclePolicy
+from huaweicloudsdkdds.v3.model.recycle_policy_response_body import RecyclePolicyResponseBody
 from huaweicloudsdkdds.v3.model.reset_password_request import ResetPasswordRequest
 from huaweicloudsdkdds.v3.model.reset_password_request_body import ResetPasswordRequestBody
 from huaweicloudsdkdds.v3.model.reset_password_response import ResetPasswordResponse
@@ -196,6 +207,8 @@ from huaweicloudsdkdds.v3.model.set_balancer_switch_request import SetBalancerSw
 from huaweicloudsdkdds.v3.model.set_balancer_switch_response import SetBalancerSwitchResponse
 from huaweicloudsdkdds.v3.model.set_balancer_window_request import SetBalancerWindowRequest
 from huaweicloudsdkdds.v3.model.set_balancer_window_response import SetBalancerWindowResponse
+from huaweicloudsdkdds.v3.model.set_recycle_policy_request import SetRecyclePolicyRequest
+from huaweicloudsdkdds.v3.model.set_recycle_policy_response import SetRecyclePolicyResponse
 from huaweicloudsdkdds.v3.model.show_api_version_request import ShowApiVersionRequest
 from huaweicloudsdkdds.v3.model.show_api_version_response import ShowApiVersionResponse
 from huaweicloudsdkdds.v3.model.show_auditlog_policy_request import ShowAuditlogPolicyRequest
@@ -216,6 +229,8 @@ from huaweicloudsdkdds.v3.model.show_quotas_request import ShowQuotasRequest
 from huaweicloudsdkdds.v3.model.show_quotas_response import ShowQuotasResponse
 from huaweicloudsdkdds.v3.model.show_resources_detail_response_body import ShowResourcesDetailResponseBody
 from huaweicloudsdkdds.v3.model.show_resources_list_response_body import ShowResourcesListResponseBody
+from huaweicloudsdkdds.v3.model.show_second_level_monitoring_status_request import ShowSecondLevelMonitoringStatusRequest
+from huaweicloudsdkdds.v3.model.show_second_level_monitoring_status_response import ShowSecondLevelMonitoringStatusResponse
 from huaweicloudsdkdds.v3.model.show_sharding_balancer_request import ShowShardingBalancerRequest
 from huaweicloudsdkdds.v3.model.show_sharding_balancer_response import ShowShardingBalancerResponse
 from huaweicloudsdkdds.v3.model.slowlog_result import SlowlogResult
@@ -223,6 +238,9 @@ from huaweicloudsdkdds.v3.model.source import Source
 from huaweicloudsdkdds.v3.model.storage import Storage
 from huaweicloudsdkdds.v3.model.switch_configuration_request import SwitchConfigurationRequest
 from huaweicloudsdkdds.v3.model.switch_configuration_response import SwitchConfigurationResponse
+from huaweicloudsdkdds.v3.model.switch_second_level_monitoring_request import SwitchSecondLevelMonitoringRequest
+from huaweicloudsdkdds.v3.model.switch_second_level_monitoring_request_body import SwitchSecondLevelMonitoringRequestBody
+from huaweicloudsdkdds.v3.model.switch_second_level_monitoring_response import SwitchSecondLevelMonitoringResponse
 from huaweicloudsdkdds.v3.model.switch_slowlog_desensitization_request import SwitchSlowlogDesensitizationRequest
 from huaweicloudsdkdds.v3.model.switch_slowlog_desensitization_response import SwitchSlowlogDesensitizationResponse
 from huaweicloudsdkdds.v3.model.switch_ssl_request import SwitchSslRequest
@@ -254,5 +272,8 @@ from huaweicloudsdkdds.v3.model.update_port_request_body import UpdatePortReques
 from huaweicloudsdkdds.v3.model.update_security_group_request import UpdateSecurityGroupRequest
 from huaweicloudsdkdds.v3.model.update_security_group_request_body import UpdateSecurityGroupRequestBody
 from huaweicloudsdkdds.v3.model.update_security_group_response import UpdateSecurityGroupResponse
+from huaweicloudsdkdds.v3.model.upgrade_database_version_request import UpgradeDatabaseVersionRequest
+from huaweicloudsdkdds.v3.model.upgrade_database_version_request_body import UpgradeDatabaseVersionRequestBody
+from huaweicloudsdkdds.v3.model.upgrade_database_version_response import UpgradeDatabaseVersionResponse
 from huaweicloudsdkdds.v3.model.volume import Volume
 

@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class VersionHistoryOperator:
+class IterationHistoryOperator:
 
     """
     Attributes:
@@ -37,7 +37,7 @@ class VersionHistoryOperator:
     }
 
     def __init__(self, user_id=None, user_name=None, nick_name=None, domain_id=None, domain_name=None):
-        """VersionHistoryOperator
+        """IterationHistoryOperator
 
         The model defined in huaweicloud sdk
 
@@ -75,110 +75,110 @@ class VersionHistoryOperator:
 
     @property
     def user_id(self):
-        """Gets the user_id of this VersionHistoryOperator.
+        """Gets the user_id of this IterationHistoryOperator.
 
         用户uuid
 
-        :return: The user_id of this VersionHistoryOperator.
+        :return: The user_id of this IterationHistoryOperator.
         :rtype: str
         """
         return self._user_id
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this VersionHistoryOperator.
+        """Sets the user_id of this IterationHistoryOperator.
 
         用户uuid
 
-        :param user_id: The user_id of this VersionHistoryOperator.
+        :param user_id: The user_id of this IterationHistoryOperator.
         :type user_id: str
         """
         self._user_id = user_id
 
     @property
     def user_name(self):
-        """Gets the user_name of this VersionHistoryOperator.
+        """Gets the user_name of this IterationHistoryOperator.
 
         用户名
 
-        :return: The user_name of this VersionHistoryOperator.
+        :return: The user_name of this IterationHistoryOperator.
         :rtype: str
         """
         return self._user_name
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this VersionHistoryOperator.
+        """Sets the user_name of this IterationHistoryOperator.
 
         用户名
 
-        :param user_name: The user_name of this VersionHistoryOperator.
+        :param user_name: The user_name of this IterationHistoryOperator.
         :type user_name: str
         """
         self._user_name = user_name
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this VersionHistoryOperator.
+        """Gets the nick_name of this IterationHistoryOperator.
 
         昵称
 
-        :return: The nick_name of this VersionHistoryOperator.
+        :return: The nick_name of this IterationHistoryOperator.
         :rtype: str
         """
         return self._nick_name
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this VersionHistoryOperator.
+        """Sets the nick_name of this IterationHistoryOperator.
 
         昵称
 
-        :param nick_name: The nick_name of this VersionHistoryOperator.
+        :param nick_name: The nick_name of this IterationHistoryOperator.
         :type nick_name: str
         """
         self._nick_name = nick_name
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this VersionHistoryOperator.
+        """Gets the domain_id of this IterationHistoryOperator.
 
         租户uuid
 
-        :return: The domain_id of this VersionHistoryOperator.
+        :return: The domain_id of this IterationHistoryOperator.
         :rtype: str
         """
         return self._domain_id
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this VersionHistoryOperator.
+        """Sets the domain_id of this IterationHistoryOperator.
 
         租户uuid
 
-        :param domain_id: The domain_id of this VersionHistoryOperator.
+        :param domain_id: The domain_id of this IterationHistoryOperator.
         :type domain_id: str
         """
         self._domain_id = domain_id
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this VersionHistoryOperator.
+        """Gets the domain_name of this IterationHistoryOperator.
 
         租户名
 
-        :return: The domain_name of this VersionHistoryOperator.
+        :return: The domain_name of this IterationHistoryOperator.
         :rtype: str
         """
         return self._domain_name
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this VersionHistoryOperator.
+        """Sets the domain_name of this IterationHistoryOperator.
 
         租户名
 
-        :param domain_name: The domain_name of this VersionHistoryOperator.
+        :param domain_name: The domain_name of this IterationHistoryOperator.
         :type domain_name: str
         """
         self._domain_name = domain_name
@@ -225,7 +225,7 @@ class VersionHistoryOperator:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, VersionHistoryOperator):
+        if not isinstance(other, IterationHistoryOperator):
             return False
 
         return self.__dict__ == other.__dict__

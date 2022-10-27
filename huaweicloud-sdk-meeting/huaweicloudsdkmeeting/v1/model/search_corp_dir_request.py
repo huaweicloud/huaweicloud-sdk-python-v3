@@ -55,7 +55,7 @@ class SearchCorpDirRequest:
         :type offset: int
         :param limit: 查询数量。 默认值：10。 
         :type limit: int
-        :param search_key: 搜索条件。支持帐号、名称、手机、邮箱模糊搜索。
+        :param search_key: 搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
         :type search_key: str
         :param dept_code: 部门编码。 
         :type dept_code: str
@@ -186,7 +186,7 @@ class SearchCorpDirRequest:
     def search_key(self):
         """Gets the search_key of this SearchCorpDirRequest.
 
-        搜索条件。支持帐号、名称、手机、邮箱模糊搜索。
+        搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
 
         :return: The search_key of this SearchCorpDirRequest.
         :rtype: str
@@ -197,7 +197,7 @@ class SearchCorpDirRequest:
     def search_key(self, search_key):
         """Sets the search_key of this SearchCorpDirRequest.
 
-        搜索条件。支持帐号、名称、手机、邮箱模糊搜索。
+        搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
 
         :param search_key: The search_key of this SearchCorpDirRequest.
         :type search_key: str

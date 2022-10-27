@@ -53,7 +53,7 @@ class ListCertificatesRequest:
         :type marker: str
         :param limit: 每页返回的个数。
         :type limit: int
-        :param page_reverse: 是否反向查询。取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        :param page_reverse: 是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse&#x3D;true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
         :type page_reverse: bool
         :param id: 证书ID。  支持多值查询，查询条件格式：*id&#x3D;xxx&amp;id&#x3D;xxx*。
         :type id: list[str]
@@ -149,7 +149,7 @@ class ListCertificatesRequest:
     def page_reverse(self):
         """Gets the page_reverse of this ListCertificatesRequest.
 
-        是否反向查询。取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
         :return: The page_reverse of this ListCertificatesRequest.
         :rtype: bool
@@ -160,7 +160,7 @@ class ListCertificatesRequest:
     def page_reverse(self, page_reverse):
         """Sets the page_reverse of this ListCertificatesRequest.
 
-        是否反向查询。取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
+        是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker。
 
         :param page_reverse: The page_reverse of this ListCertificatesRequest.
         :type page_reverse: bool

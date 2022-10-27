@@ -49,9 +49,9 @@ class RetrieveAmountInfoV2:
         :type measure_id: int
         :param currency: 币种。 CNY：人民币
         :type currency: str
-        :param amount: 账户余额（仅balance_type&#x3D;信用账户时才有这个字段）。
+        :param amount: 账户余额（仅balance_type&#x3D;信用账户时这个字段才有值）。
         :type amount: float
-        :param credit_amount: 信用额度（仅balance_type&#x3D;信用账户时才有这个字段）。
+        :param credit_amount: 信用额度（仅balance_type&#x3D;信用账户时这个字段才有值）。
         :type credit_amount: float
         :param expire_time: 信用额度过期时间。 UTC时间，格式为：2016-03-28T14:45:38Z。 如果查询信用账户可回收余额的查询结果没有失效时间，表示永久有效。
         :type expire_time: str
@@ -150,7 +150,7 @@ class RetrieveAmountInfoV2:
     def amount(self):
         """Gets the amount of this RetrieveAmountInfoV2.
 
-        账户余额（仅balance_type=信用账户时才有这个字段）。
+        账户余额（仅balance_type=信用账户时这个字段才有值）。
 
         :return: The amount of this RetrieveAmountInfoV2.
         :rtype: float
@@ -161,7 +161,7 @@ class RetrieveAmountInfoV2:
     def amount(self, amount):
         """Sets the amount of this RetrieveAmountInfoV2.
 
-        账户余额（仅balance_type=信用账户时才有这个字段）。
+        账户余额（仅balance_type=信用账户时这个字段才有值）。
 
         :param amount: The amount of this RetrieveAmountInfoV2.
         :type amount: float
@@ -172,7 +172,7 @@ class RetrieveAmountInfoV2:
     def credit_amount(self):
         """Gets the credit_amount of this RetrieveAmountInfoV2.
 
-        信用额度（仅balance_type=信用账户时才有这个字段）。
+        信用额度（仅balance_type=信用账户时这个字段才有值）。
 
         :return: The credit_amount of this RetrieveAmountInfoV2.
         :rtype: float
@@ -183,7 +183,7 @@ class RetrieveAmountInfoV2:
     def credit_amount(self, credit_amount):
         """Sets the credit_amount of this RetrieveAmountInfoV2.
 
-        信用额度（仅balance_type=信用账户时才有这个字段）。
+        信用额度（仅balance_type=信用账户时这个字段才有值）。
 
         :param credit_amount: The credit_amount of this RetrieveAmountInfoV2.
         :type credit_amount: float

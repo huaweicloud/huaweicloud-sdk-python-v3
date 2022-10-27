@@ -22,6 +22,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     openapi_types = {
         'severity': 'str',
+        'check_type': 'str',
         'check_type_desc': 'str',
         'check_rule_num': 'int',
         'failed_rule_num': 'int',
@@ -32,6 +33,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     attribute_map = {
         'severity': 'severity',
+        'check_type': 'check_type',
         'check_type_desc': 'check_type_desc',
         'check_rule_num': 'check_rule_num',
         'failed_rule_num': 'failed_rule_num',
@@ -40,13 +42,15 @@ class ShowRiskConfigDetailResponse(SdkResponse):
         'host_num': 'host_num'
     }
 
-    def __init__(self, severity=None, check_type_desc=None, check_rule_num=None, failed_rule_num=None, passed_rule_num=None, ignored_rule_num=None, host_num=None):
+    def __init__(self, severity=None, check_type=None, check_type_desc=None, check_rule_num=None, failed_rule_num=None, passed_rule_num=None, ignored_rule_num=None, host_num=None):
         """ShowRiskConfigDetailResponse
 
         The model defined in huaweicloud sdk
 
         :param severity: 风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
         :type severity: str
+        :param check_type: 基线类型
+        :type check_type: str
         :param check_type_desc: 基线描述
         :type check_type_desc: str
         :param check_rule_num: 检查项总数量
@@ -64,6 +68,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
         super(ShowRiskConfigDetailResponse, self).__init__()
 
         self._severity = None
+        self._check_type = None
         self._check_type_desc = None
         self._check_rule_num = None
         self._failed_rule_num = None
@@ -74,6 +79,8 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
         if severity is not None:
             self.severity = severity
+        if check_type is not None:
+            self.check_type = check_type
         if check_type_desc is not None:
             self.check_type_desc = check_type_desc
         if check_rule_num is not None:
@@ -108,6 +115,28 @@ class ShowRiskConfigDetailResponse(SdkResponse):
         :type severity: str
         """
         self._severity = severity
+
+    @property
+    def check_type(self):
+        """Gets the check_type of this ShowRiskConfigDetailResponse.
+
+        基线类型
+
+        :return: The check_type of this ShowRiskConfigDetailResponse.
+        :rtype: str
+        """
+        return self._check_type
+
+    @check_type.setter
+    def check_type(self, check_type):
+        """Sets the check_type of this ShowRiskConfigDetailResponse.
+
+        基线类型
+
+        :param check_type: The check_type of this ShowRiskConfigDetailResponse.
+        :type check_type: str
+        """
+        self._check_type = check_type
 
     @property
     def check_type_desc(self):

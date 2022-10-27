@@ -30,7 +30,7 @@ class MergeResult:
 
     attribute_map = {
         'closed': 'closed',
-        'merge_requests': 'mergeRequests',
+        'merge_requests': 'merge_requests',
         'merged': 'merged',
         'opened': 'opened',
         'total': 'total'

@@ -24,6 +24,12 @@ class CloudBuildRegion:
 
     CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://cloudbuild-ext.cn-southwest-2.myhuaweicloud.com")
 
+    AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://cloudbuild-ext.ap-southeast-3.myhuaweicloud.com")
+
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://cloudbuild-ext.sa-brazil-1.myhuaweicloud.com")
+
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://cloudbuild-ext.la-north-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-north-1": CN_NORTH_1,
@@ -32,6 +38,9 @@ class CloudBuildRegion:
         "cn-east-3": CN_EAST_3,
         "cn-south-2": CN_SOUTH_2,
         "cn-southwest-2": CN_SOUTHWEST_2,
+        "ap-southeast-3": AP_SOUTHEAST_3,
+        "sa-brazil-1": SA_BRAZIL_1,
+        "la-north-2": LA_NORTH_2,
     }
 
     @classmethod

@@ -24,6 +24,16 @@ class DscRegion:
 
     AP_SOUTHEAST_2 = Region(id="ap-southeast-2", endpoint="https://sdg.ap-southeast-2.myhuaweicloud.com")
 
+    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://sdg.ap-southeast-1.myhuaweicloud.com")
+
+    AP_SOUTHEAST_3 = Region(id="ap-southeast-3", endpoint="https://sdg.ap-southeast-3.myhuaweicloud.com")
+
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://sdg.sa-brazil-1.myhuaweicloud.com")
+
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://sdg.la-south-2.myhuaweicloud.com")
+
+    AF_SOUTH_1 = Region(id="af-south-1", endpoint="https://sdg.af-south-1.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-north-1": CN_NORTH_1,
@@ -32,6 +42,11 @@ class DscRegion:
         "cn-east-3": CN_EAST_3,
         "cn-south-1": CN_SOUTH_1,
         "ap-southeast-2": AP_SOUTHEAST_2,
+        "ap-southeast-1": AP_SOUTHEAST_1,
+        "ap-southeast-3": AP_SOUTHEAST_3,
+        "sa-brazil-1": SA_BRAZIL_1,
+        "la-south-2": LA_SOUTH_2,
+        "af-south-1": AF_SOUTH_1,
     }
 
     @classmethod

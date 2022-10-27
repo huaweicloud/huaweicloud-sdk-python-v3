@@ -55,15 +55,15 @@ class UpdateHealthMonitorOption:
 
         The model defined in huaweicloud sdk
 
-        :param admin_state_up: 健康检查的管理状态。取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
+        :param admin_state_up: 健康检查的管理状态。  取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
         :type admin_state_up: bool
         :param delay: 健康检查间隔。健康检查间隔。取值：1-50s。
         :type delay: int
-        :param domain_name: 发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。不能传空，但可传null或不传，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
+        :param domain_name: 发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。 不能传空，但可传null或不传，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
         :type domain_name: str
-        :param expected_codes: 期望响应状态码。取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。    默认值：200。   仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
+        :param expected_codes: 期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
         :type expected_codes: str
-        :param http_method: HTTP请求方法。取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。  使用说明：当type为HTTP/HTTPS时生效。  不支持该字段，请勿使用。
+        :param http_method: HTTP请求方法。  取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。  使用说明：当type为HTTP/HTTPS时生效。  不支持该字段，请勿使用。
         :type http_method: str
         :param max_retries: 健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。
         :type max_retries: int
@@ -126,7 +126,7 @@ class UpdateHealthMonitorOption:
     def admin_state_up(self):
         """Gets the admin_state_up of this UpdateHealthMonitorOption.
 
-        健康检查的管理状态。取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
+        健康检查的管理状态。  取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
 
         :return: The admin_state_up of this UpdateHealthMonitorOption.
         :rtype: bool
@@ -137,7 +137,7 @@ class UpdateHealthMonitorOption:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this UpdateHealthMonitorOption.
 
-        健康检查的管理状态。取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
+        健康检查的管理状态。  取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
 
         :param admin_state_up: The admin_state_up of this UpdateHealthMonitorOption.
         :type admin_state_up: bool
@@ -170,7 +170,7 @@ class UpdateHealthMonitorOption:
     def domain_name(self):
         """Gets the domain_name of this UpdateHealthMonitorOption.
 
-        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。不能传空，但可传null或不传，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
+        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。 不能传空，但可传null或不传，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
 
         :return: The domain_name of this UpdateHealthMonitorOption.
         :rtype: str
@@ -181,7 +181,7 @@ class UpdateHealthMonitorOption:
     def domain_name(self, domain_name):
         """Sets the domain_name of this UpdateHealthMonitorOption.
 
-        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。不能传空，但可传null或不传，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
+        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。 不能传空，但可传null或不传，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
 
         :param domain_name: The domain_name of this UpdateHealthMonitorOption.
         :type domain_name: str
@@ -192,7 +192,7 @@ class UpdateHealthMonitorOption:
     def expected_codes(self):
         """Gets the expected_codes of this UpdateHealthMonitorOption.
 
-        期望响应状态码。取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。    默认值：200。   仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
+        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
 
         :return: The expected_codes of this UpdateHealthMonitorOption.
         :rtype: str
@@ -203,7 +203,7 @@ class UpdateHealthMonitorOption:
     def expected_codes(self, expected_codes):
         """Sets the expected_codes of this UpdateHealthMonitorOption.
 
-        期望响应状态码。取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。    默认值：200。   仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
+        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
 
         :param expected_codes: The expected_codes of this UpdateHealthMonitorOption.
         :type expected_codes: str
@@ -214,7 +214,7 @@ class UpdateHealthMonitorOption:
     def http_method(self):
         """Gets the http_method of this UpdateHealthMonitorOption.
 
-        HTTP请求方法。取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。  使用说明：当type为HTTP/HTTPS时生效。  不支持该字段，请勿使用。
+        HTTP请求方法。  取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。  使用说明：当type为HTTP/HTTPS时生效。  不支持该字段，请勿使用。
 
         :return: The http_method of this UpdateHealthMonitorOption.
         :rtype: str
@@ -225,7 +225,7 @@ class UpdateHealthMonitorOption:
     def http_method(self, http_method):
         """Sets the http_method of this UpdateHealthMonitorOption.
 
-        HTTP请求方法。取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。  使用说明：当type为HTTP/HTTPS时生效。  不支持该字段，请勿使用。
+        HTTP请求方法。  取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。  使用说明：当type为HTTP/HTTPS时生效。  不支持该字段，请勿使用。
 
         :param http_method: The http_method of this UpdateHealthMonitorOption.
         :type http_method: str

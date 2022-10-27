@@ -91,7 +91,7 @@ class ListL7policiesRequest:
         :type position: int
         :param provisioning_status: 转发策略的配置状态，可以为ACTIVE、PENDING_CREATE 或者ERROR。默认值：ACTIVE；该字段为预留字段，暂未启用。
         :type provisioning_status: str
-        :param enterprise_project_id: 企业项目ID。  取值范围：带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。  若子账号查询转发策略列表时，需要指定enterprise_project_id为all_granted_eps或者具体企业项目ID。
+        :param enterprise_project_id: 企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\&quot;0\&quot;表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
         :type enterprise_project_id: str
         :param display_all_rules: 是否显示所有的rule信息。取值范围：false表示不显示（跟以前一样只显示ID）；true表示显示。
         :type display_all_rules: bool
@@ -462,7 +462,7 @@ class ListL7policiesRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListL7policiesRequest.
 
-        企业项目ID。  取值范围：带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。  若子账号查询转发策略列表时，需要指定enterprise_project_id为all_granted_eps或者具体企业项目ID。
+        企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 
         :return: The enterprise_project_id of this ListL7policiesRequest.
         :rtype: str
@@ -473,7 +473,7 @@ class ListL7policiesRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListL7policiesRequest.
 
-        企业项目ID。  取值范围：带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。  若子账号查询转发策略列表时，需要指定enterprise_project_id为all_granted_eps或者具体企业项目ID。
+        企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 
         :param enterprise_project_id: The enterprise_project_id of this ListL7policiesRequest.
         :type enterprise_project_id: str

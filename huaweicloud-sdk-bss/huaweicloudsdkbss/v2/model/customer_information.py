@@ -81,7 +81,7 @@ class CustomerInformation:
         :type country_code: str
         :param customer_type: 客户类型： -1：无类型0：个人1：企业 客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。
         :type customer_type: int
-        :param is_frozen: 是否冻结： 0：否1：是
+        :param is_frozen: 是否冻结： 0：否1：客户账号冻结2：客户账号和资源冻结 该字段预留。
         :type is_frozen: int
         :param account_managers: 该客户对应的客户经理信息，目前只支持1个，具体参见表2。
         :type account_managers: list[:class:`huaweicloudsdkbss.v2.AccountManager`]
@@ -365,7 +365,7 @@ class CustomerInformation:
     def is_frozen(self):
         """Gets the is_frozen of this CustomerInformation.
 
-        是否冻结： 0：否1：是
+        是否冻结： 0：否1：客户账号冻结2：客户账号和资源冻结 该字段预留。
 
         :return: The is_frozen of this CustomerInformation.
         :rtype: int
@@ -376,7 +376,7 @@ class CustomerInformation:
     def is_frozen(self, is_frozen):
         """Sets the is_frozen of this CustomerInformation.
 
-        是否冻结： 0：否1：是
+        是否冻结： 0：否1：客户账号冻结2：客户账号和资源冻结 该字段预留。
 
         :param is_frozen: The is_frozen of this CustomerInformation.
         :type is_frozen: int

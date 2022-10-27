@@ -53,11 +53,11 @@ class UpdatePostalReq:
         :type address_id: str
         :param recipient: 收件人姓名。 此参数不携带或携带值为null时，取值不更新。
         :type recipient: str
-        :param province: 省/自治区/直辖市。例如：江苏省。 此参数不携带或携带值为null时，取值不更新。
+        :param province: 省/自治区/直辖市。例如：江苏省。 该参数携带并赋值时，city、district参数也必须赋值。 此参数不携带或携带值为null时，取值不更新。
         :type province: str
-        :param city: 市/区。例如：南京市。 此参数不携带或携带值为null时，取值不更新。
+        :param city: 市/区。例如：南京市。 该参数携带并赋值时，province、district参数也必须赋值。 此参数不携带或携带值为null时，取值不更新。
         :type city: str
-        :param district: 区。例如：雨花区。 此参数不携带或携带值为null时，取值不更新。
+        :param district: 区。例如：雨花区。 该参数携带并赋值时，province、city参数也必须赋值。 此参数不携带或携带值为null时，取值不更新。
         :type district: str
         :param address: 邮寄详细地址。 此参数不携带或携带值为null时，取值不更新。
         :type address: str
@@ -148,7 +148,7 @@ class UpdatePostalReq:
     def province(self):
         """Gets the province of this UpdatePostalReq.
 
-        省/自治区/直辖市。例如：江苏省。 此参数不携带或携带值为null时，取值不更新。
+        省/自治区/直辖市。例如：江苏省。 该参数携带并赋值时，city、district参数也必须赋值。 此参数不携带或携带值为null时，取值不更新。
 
         :return: The province of this UpdatePostalReq.
         :rtype: str
@@ -159,7 +159,7 @@ class UpdatePostalReq:
     def province(self, province):
         """Sets the province of this UpdatePostalReq.
 
-        省/自治区/直辖市。例如：江苏省。 此参数不携带或携带值为null时，取值不更新。
+        省/自治区/直辖市。例如：江苏省。 该参数携带并赋值时，city、district参数也必须赋值。 此参数不携带或携带值为null时，取值不更新。
 
         :param province: The province of this UpdatePostalReq.
         :type province: str
@@ -170,7 +170,7 @@ class UpdatePostalReq:
     def city(self):
         """Gets the city of this UpdatePostalReq.
 
-        市/区。例如：南京市。 此参数不携带或携带值为null时，取值不更新。
+        市/区。例如：南京市。 该参数携带并赋值时，province、district参数也必须赋值。 此参数不携带或携带值为null时，取值不更新。
 
         :return: The city of this UpdatePostalReq.
         :rtype: str
@@ -181,7 +181,7 @@ class UpdatePostalReq:
     def city(self, city):
         """Sets the city of this UpdatePostalReq.
 
-        市/区。例如：南京市。 此参数不携带或携带值为null时，取值不更新。
+        市/区。例如：南京市。 该参数携带并赋值时，province、district参数也必须赋值。 此参数不携带或携带值为null时，取值不更新。
 
         :param city: The city of this UpdatePostalReq.
         :type city: str
@@ -192,7 +192,7 @@ class UpdatePostalReq:
     def district(self):
         """Gets the district of this UpdatePostalReq.
 
-        区。例如：雨花区。 此参数不携带或携带值为null时，取值不更新。
+        区。例如：雨花区。 该参数携带并赋值时，province、city参数也必须赋值。 此参数不携带或携带值为null时，取值不更新。
 
         :return: The district of this UpdatePostalReq.
         :rtype: str
@@ -203,7 +203,7 @@ class UpdatePostalReq:
     def district(self, district):
         """Sets the district of this UpdatePostalReq.
 
-        区。例如：雨花区。 此参数不携带或携带值为null时，取值不更新。
+        区。例如：雨花区。 该参数携带并赋值时，province、city参数也必须赋值。 此参数不携带或携带值为null时，取值不更新。
 
         :param district: The district of this UpdatePostalReq.
         :type district: str

@@ -39,7 +39,7 @@ class ShowDocWatermarkByAddressRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param region_id: 项目所在region的id，如北京一为：cn-north-1。
+        :param region_id: 项目所在region的id，如：xx-xx-1。
         :type region_id: str
         :param doc_type: 待提取水印的文档类型
         :type doc_type: str
@@ -67,7 +67,7 @@ class ShowDocWatermarkByAddressRequestBody:
     def region_id(self):
         """Gets the region_id of this ShowDocWatermarkByAddressRequestBody.
 
-        项目所在region的id，如北京一为：cn-north-1。
+        项目所在region的id，如：xx-xx-1。
 
         :return: The region_id of this ShowDocWatermarkByAddressRequestBody.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowDocWatermarkByAddressRequestBody:
     def region_id(self, region_id):
         """Sets the region_id of this ShowDocWatermarkByAddressRequestBody.
 
-        项目所在region的id，如北京一为：cn-north-1。
+        项目所在region的id，如：xx-xx-1。
 
         :param region_id: The region_id of this ShowDocWatermarkByAddressRequestBody.
         :type region_id: str

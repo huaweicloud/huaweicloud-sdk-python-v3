@@ -16,6 +16,8 @@ class EvsRegion:
 
     CN_NORTH_1 = Region(id="cn-north-1", endpoint="https://evs.cn-north-1.myhuaweicloud.com")
 
+    CN_NORTH_2 = Region(id="cn-north-2", endpoint="https://evs.cn-north-2.myhuaweicloud.com")
+
     CN_EAST_2 = Region(id="cn-east-2", endpoint="https://evs.cn-east-2.myhuaweicloud.com")
 
     CN_EAST_3 = Region(id="cn-east-3", endpoint="https://evs.cn-east-3.myhuaweicloud.com")
@@ -42,10 +44,13 @@ class EvsRegion:
 
     CN_NORTH_9 = Region(id="cn-north-9", endpoint="https://evs.cn-north-9.myhuaweicloud.com")
 
+    AP_SOUTHEAST_4 = Region(id="ap-southeast-4", endpoint="https://evs.ap-southeast-4.myhuaweicloud.com")
+
     static_fields = {
         "af-south-1": AF_SOUTH_1,
         "cn-north-4": CN_NORTH_4,
         "cn-north-1": CN_NORTH_1,
+        "cn-north-2": CN_NORTH_2,
         "cn-east-2": CN_EAST_2,
         "cn-east-3": CN_EAST_3,
         "cn-south-1": CN_SOUTH_1,
@@ -59,6 +64,7 @@ class EvsRegion:
         "la-south-2": LA_SOUTH_2,
         "na-mexico-1": NA_MEXICO_1,
         "cn-north-9": CN_NORTH_9,
+        "ap-southeast-4": AP_SOUTHEAST_4,
     }
 
     @classmethod

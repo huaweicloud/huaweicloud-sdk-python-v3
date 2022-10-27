@@ -105,7 +105,7 @@ class ListImagesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param imagetype: 镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared
+        :param imagetype: 镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared 市场镜像：market
         :type imagetype: str
         :param isregistered: 镜像是否可用，取值为true，扩展接口会默认为true，普通用户只能查询取值为true的镜像。
         :type isregistered: str
@@ -301,7 +301,7 @@ class ListImagesRequest:
     def imagetype(self):
         """Gets the imagetype of this ListImagesRequest.
 
-        镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared
+        镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared 市场镜像：market
 
         :return: The imagetype of this ListImagesRequest.
         :rtype: str
@@ -312,7 +312,7 @@ class ListImagesRequest:
     def imagetype(self, imagetype):
         """Sets the imagetype of this ListImagesRequest.
 
-        镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared
+        镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared 市场镜像：market
 
         :param imagetype: The imagetype of this ListImagesRequest.
         :type imagetype: str

@@ -51,7 +51,7 @@ class ListUpComingWebinarsRequest:
         :type offset: int
         :param limit: 查询数量。 默认值：10。 
         :type limit: int
-        :param search_key: 搜索条件。支持帐号、名称、手机、邮箱模糊搜索。
+        :param search_key: 搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
         :type search_key: str
         :param sort_type: 查询结果排序。默认升序。 * ASC_StartTIME：按会议开始时间升序排序 * DSC_StartTIME：按会议开始时间降序排序 
         :type sort_type: str
@@ -172,7 +172,7 @@ class ListUpComingWebinarsRequest:
     def search_key(self):
         """Gets the search_key of this ListUpComingWebinarsRequest.
 
-        搜索条件。支持帐号、名称、手机、邮箱模糊搜索。
+        搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
 
         :return: The search_key of this ListUpComingWebinarsRequest.
         :rtype: str
@@ -183,7 +183,7 @@ class ListUpComingWebinarsRequest:
     def search_key(self, search_key):
         """Sets the search_key of this ListUpComingWebinarsRequest.
 
-        搜索条件。支持帐号、名称、手机、邮箱模糊搜索。
+        搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
 
         :param search_key: The search_key of this ListUpComingWebinarsRequest.
         :type search_key: str

@@ -37,7 +37,7 @@ class MemberStatus:
 
         :param listener_id: 监听器ID
         :type listener_id: str
-        :param operating_status: 后端云服务器的健康状态。取值：  ONLINE：后端云服务器正常。 NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
+        :param operating_status: 后端云服务器的健康状态。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
         :type operating_status: str
         """
         
@@ -76,7 +76,7 @@ class MemberStatus:
     def operating_status(self):
         """Gets the operating_status of this MemberStatus.
 
-        后端云服务器的健康状态。取值：  ONLINE：后端云服务器正常。 NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
+        后端云服务器的健康状态。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
 
         :return: The operating_status of this MemberStatus.
         :rtype: str
@@ -87,7 +87,7 @@ class MemberStatus:
     def operating_status(self, operating_status):
         """Sets the operating_status of this MemberStatus.
 
-        后端云服务器的健康状态。取值：  ONLINE：后端云服务器正常。 NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
+        后端云服务器的健康状态。  取值： - ONLINE：后端云服务器正常。 - NO_MONITOR：后端云服务器所在的服务器组没有健康检查器。 - OFFLINE：后端云服务器关联的ECS服务器不存在或已关机。
 
         :param operating_status: The operating_status of this MemberStatus.
         :type operating_status: str

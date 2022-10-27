@@ -31,7 +31,7 @@ class ApprovalMergeRequestApproversItem:
     attribute_map = {
         'id': 'id',
         'name': 'name',
-        'nick_name': 'nickName',
+        'nick_name': 'nick_name',
         'state': 'state',
         'username': 'username'
     }

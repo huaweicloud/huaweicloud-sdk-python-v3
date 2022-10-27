@@ -65,7 +65,7 @@ class ListTagsRequest:
         :type limit: int
         :param page: 页码，表示需要查询第几页的数据。默认值为1。
         :type page: int
-        :param imagetype: 镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
+        :param imagetype: 镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
         :type imagetype: str
         :param id: 镜像ID。
         :type id: str
@@ -191,7 +191,7 @@ class ListTagsRequest:
     def imagetype(self):
         """Gets the imagetype of this ListTagsRequest.
 
-        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
+        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
 
         :return: The imagetype of this ListTagsRequest.
         :rtype: str
@@ -202,7 +202,7 @@ class ListTagsRequest:
     def imagetype(self, imagetype):
         """Sets the imagetype of this ListTagsRequest.
 
-        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
+        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
 
         :param imagetype: The imagetype of this ListTagsRequest.
         :type imagetype: str

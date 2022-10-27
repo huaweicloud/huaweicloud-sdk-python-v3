@@ -24,7 +24,8 @@ class VulInfo:
         'vul_name': 'str',
         'vul_id': 'str',
         'label_list': 'list[str]',
-        'repair_necessity': 'int',
+        'repair_necessity': 'str',
+        'severity_level': 'str',
         'host_num': 'int',
         'unhandle_host_num': 'int',
         'scan_time': 'int',
@@ -40,6 +41,7 @@ class VulInfo:
         'vul_id': 'vul_id',
         'label_list': 'label_list',
         'repair_necessity': 'repair_necessity',
+        'severity_level': 'severity_level',
         'host_num': 'host_num',
         'unhandle_host_num': 'unhandle_host_num',
         'scan_time': 'scan_time',
@@ -50,7 +52,7 @@ class VulInfo:
         'host_id_list': 'host_id_list'
     }
 
-    def __init__(self, vul_name=None, vul_id=None, label_list=None, repair_necessity=None, host_num=None, unhandle_host_num=None, scan_time=None, solution_detail=None, url=None, description=None, type=None, host_id_list=None):
+    def __init__(self, vul_name=None, vul_id=None, label_list=None, repair_necessity=None, severity_level=None, host_num=None, unhandle_host_num=None, scan_time=None, solution_detail=None, url=None, description=None, type=None, host_id_list=None):
         """VulInfo
 
         The model defined in huaweicloud sdk
@@ -62,7 +64,9 @@ class VulInfo:
         :param label_list: 漏洞标签
         :type label_list: list[str]
         :param repair_necessity: 修复必要性
-        :type repair_necessity: int
+        :type repair_necessity: str
+        :param severity_level: 漏洞级别
+        :type severity_level: str
         :param host_num: 受影响服务器台数
         :type host_num: int
         :param unhandle_host_num: 未处理服务器台数
@@ -87,6 +91,7 @@ class VulInfo:
         self._vul_id = None
         self._label_list = None
         self._repair_necessity = None
+        self._severity_level = None
         self._host_num = None
         self._unhandle_host_num = None
         self._scan_time = None
@@ -105,6 +110,8 @@ class VulInfo:
             self.label_list = label_list
         if repair_necessity is not None:
             self.repair_necessity = repair_necessity
+        if severity_level is not None:
+            self.severity_level = severity_level
         if host_num is not None:
             self.host_num = host_num
         if unhandle_host_num is not None:
@@ -195,7 +202,7 @@ class VulInfo:
         修复必要性
 
         :return: The repair_necessity of this VulInfo.
-        :rtype: int
+        :rtype: str
         """
         return self._repair_necessity
 
@@ -206,9 +213,31 @@ class VulInfo:
         修复必要性
 
         :param repair_necessity: The repair_necessity of this VulInfo.
-        :type repair_necessity: int
+        :type repair_necessity: str
         """
         self._repair_necessity = repair_necessity
+
+    @property
+    def severity_level(self):
+        """Gets the severity_level of this VulInfo.
+
+        漏洞级别
+
+        :return: The severity_level of this VulInfo.
+        :rtype: str
+        """
+        return self._severity_level
+
+    @severity_level.setter
+    def severity_level(self, severity_level):
+        """Sets the severity_level of this VulInfo.
+
+        漏洞级别
+
+        :param severity_level: The severity_level of this VulInfo.
+        :type severity_level: str
+        """
+        self._severity_level = severity_level
 
     @property
     def host_num(self):

@@ -30,6 +30,22 @@ class BmsRegion:
 
     RU_NORTHWEST_2 = Region(id="ru-northwest-2", endpoint="https://bms.ru-northwest-2.myhuaweicloud.com")
 
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://bms.la-south-2.myhuaweicloud.com")
+
+    SA_BRAZIL_1 = Region(id="sa-brazil-1", endpoint="https://bms.sa-brazil-1.myhuaweicloud.com")
+
+    CN_NORTH_9 = Region(id="cn-north-9", endpoint="https://bms.cn-north-9.myhuaweicloud.com")
+
+    CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://bms.cn-southwest-2.myhuaweicloud.com")
+
+    AF_SOUTH_1 = Region(id="af-south-1", endpoint="https://bms.af-south-1.myhuaweicloud.com")
+
+    LA_NORTH_2 = Region(id="la-north-2", endpoint="https://bms.la-north-2.myhuaweicloud.com")
+
+    CN_SOUTH_2 = Region(id="cn-south-2", endpoint="https://bms.cn-south-2.myhuaweicloud.com")
+
+    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://bms.na-mexico-1.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-2": CN_NORTH_2,
         "cn-north-4": CN_NORTH_4,
@@ -41,6 +57,14 @@ class BmsRegion:
         "ap-southeast-3": AP_SOUTHEAST_3,
         "ap-southeast-1": AP_SOUTHEAST_1,
         "ru-northwest-2": RU_NORTHWEST_2,
+        "la-south-2": LA_SOUTH_2,
+        "sa-brazil-1": SA_BRAZIL_1,
+        "cn-north-9": CN_NORTH_9,
+        "cn-southwest-2": CN_SOUTHWEST_2,
+        "af-south-1": AF_SOUTH_1,
+        "la-north-2": LA_NORTH_2,
+        "cn-south-2": CN_SOUTH_2,
+        "na-mexico-1": NA_MEXICO_1,
     }
 
     @classmethod

@@ -45,7 +45,7 @@ class ListWeakPasswordUsersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param host_name: 服务器名称
         :type host_name: str
@@ -91,7 +91,7 @@ class ListWeakPasswordUsersRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListWeakPasswordUsersRequest.
 
-        企业项目ID
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListWeakPasswordUsersRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class ListWeakPasswordUsersRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListWeakPasswordUsersRequest.
 
-        企业项目ID
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListWeakPasswordUsersRequest.
         :type enterprise_project_id: str

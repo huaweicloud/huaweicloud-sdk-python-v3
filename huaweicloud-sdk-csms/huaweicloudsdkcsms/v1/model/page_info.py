@@ -37,7 +37,7 @@ class PageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param next_marker: 下一页查询地址（下一页起始资源id），如果未指定该参数，则下一页为空。
+        :param next_marker: 下一页查询地址（下一页起始资源id）。
         :type next_marker: str
         :param previous_marker: 前一页查询地址（上一页末尾资源id）。
         :type previous_marker: str
@@ -63,7 +63,7 @@ class PageInfo:
     def next_marker(self):
         """Gets the next_marker of this PageInfo.
 
-        下一页查询地址（下一页起始资源id），如果未指定该参数，则下一页为空。
+        下一页查询地址（下一页起始资源id）。
 
         :return: The next_marker of this PageInfo.
         :rtype: str
@@ -74,7 +74,7 @@ class PageInfo:
     def next_marker(self, next_marker):
         """Sets the next_marker of this PageInfo.
 
-        下一页查询地址（下一页起始资源id），如果未指定该参数，则下一页为空。
+        下一页查询地址（下一页起始资源id）。
 
         :param next_marker: The next_marker of this PageInfo.
         :type next_marker: str

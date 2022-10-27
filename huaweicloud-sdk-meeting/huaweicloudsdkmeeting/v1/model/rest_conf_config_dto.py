@@ -75,7 +75,7 @@ class RestConfConfigDTO:
         :type guest_pwd: str
         :param vmr_id_type: 云会议室的会议ID模式。 * 0：固定会议ID * 1：随机会议ID
         :type vmr_id_type: int
-        :param prolong_length: 自动延长会议时长（取值范围0-60）。 * 0：表示会议到点自动结束，不延长会议 * 其他：表示自动延长的时长 &gt; * 自动结束会议是按照会议时长计算。比如预定的会议是9:00开始11:00结束，会议时长2个小时，如果与会者8:00就加入会议了，那会议在10:00就会自动结束 &gt; * 设置成其他值时，只要会中还有与会者，会议自动多次延迟
+        :param prolong_length: 自动延长会议时长（取值范围0-60）。 * 0：表示会议到点自动结束，不延长会议 * 其他：表示自动延长的时长 &gt; * 自动结束会议是按照会议时长计算。比如预定的会议是9:00开始11:00结束，会议时长2个小时，如果与会者8:00就加入会议了，那会议在10:00就会自动结束 &gt; * 设置成其他值时，只要会中还有与会者，会议自动多次延长
         :type prolong_length: int
         :param enable_waiting_room: 开启或者关闭等候室。 * true：开启 * false：不开启
         :type enable_waiting_room: bool
@@ -346,7 +346,7 @@ class RestConfConfigDTO:
     def prolong_length(self):
         """Gets the prolong_length of this RestConfConfigDTO.
 
-        自动延长会议时长（取值范围0-60）。 * 0：表示会议到点自动结束，不延长会议 * 其他：表示自动延长的时长 > * 自动结束会议是按照会议时长计算。比如预定的会议是9:00开始11:00结束，会议时长2个小时，如果与会者8:00就加入会议了，那会议在10:00就会自动结束 > * 设置成其他值时，只要会中还有与会者，会议自动多次延迟
+        自动延长会议时长（取值范围0-60）。 * 0：表示会议到点自动结束，不延长会议 * 其他：表示自动延长的时长 > * 自动结束会议是按照会议时长计算。比如预定的会议是9:00开始11:00结束，会议时长2个小时，如果与会者8:00就加入会议了，那会议在10:00就会自动结束 > * 设置成其他值时，只要会中还有与会者，会议自动多次延长
 
         :return: The prolong_length of this RestConfConfigDTO.
         :rtype: int
@@ -357,7 +357,7 @@ class RestConfConfigDTO:
     def prolong_length(self, prolong_length):
         """Sets the prolong_length of this RestConfConfigDTO.
 
-        自动延长会议时长（取值范围0-60）。 * 0：表示会议到点自动结束，不延长会议 * 其他：表示自动延长的时长 > * 自动结束会议是按照会议时长计算。比如预定的会议是9:00开始11:00结束，会议时长2个小时，如果与会者8:00就加入会议了，那会议在10:00就会自动结束 > * 设置成其他值时，只要会中还有与会者，会议自动多次延迟
+        自动延长会议时长（取值范围0-60）。 * 0：表示会议到点自动结束，不延长会议 * 其他：表示自动延长的时长 > * 自动结束会议是按照会议时长计算。比如预定的会议是9:00开始11:00结束，会议时长2个小时，如果与会者8:00就加入会议了，那会议在10:00就会自动结束 > * 设置成其他值时，只要会中还有与会者，会议自动多次延长
 
         :param prolong_length: The prolong_length of this RestConfConfigDTO.
         :type prolong_length: int

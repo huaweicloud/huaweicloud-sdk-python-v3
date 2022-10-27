@@ -22,7 +22,7 @@ class ListRiskConfigsRequest:
 
     openapi_types = {
         'enterprise_project_id': 'str',
-        'check_type': 'str',
+        'check_name': 'str',
         'severity': 'str',
         'standard': 'str',
         'host_id': 'str',
@@ -32,7 +32,7 @@ class ListRiskConfigsRequest:
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
-        'check_type': 'check_type',
+        'check_name': 'check_name',
         'severity': 'severity',
         'standard': 'standard',
         'host_id': 'host_id',
@@ -40,15 +40,15 @@ class ListRiskConfigsRequest:
         'offset': 'offset'
     }
 
-    def __init__(self, enterprise_project_id=None, check_type=None, severity=None, standard=None, host_id=None, limit=None, offset=None):
+    def __init__(self, enterprise_project_id=None, check_name=None, severity=None, standard=None, host_id=None, limit=None, offset=None):
         """ListRiskConfigsRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param check_type: 基线名称
-        :type check_type: str
+        :param check_name: 基线名称
+        :type check_name: str
         :param severity: 风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危
         :type severity: str
         :param standard: 标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 华为标准   - qt_standard : 青腾标准
@@ -64,7 +64,7 @@ class ListRiskConfigsRequest:
         
 
         self._enterprise_project_id = None
-        self._check_type = None
+        self._check_name = None
         self._severity = None
         self._standard = None
         self._host_id = None
@@ -74,8 +74,8 @@ class ListRiskConfigsRequest:
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        if check_type is not None:
-            self.check_type = check_type
+        if check_name is not None:
+            self.check_name = check_name
         if severity is not None:
             self.severity = severity
         if standard is not None:
@@ -91,7 +91,7 @@ class ListRiskConfigsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListRiskConfigsRequest.
 
-        企业项目ID
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListRiskConfigsRequest.
         :rtype: str
@@ -102,7 +102,7 @@ class ListRiskConfigsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListRiskConfigsRequest.
 
-        企业项目ID
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListRiskConfigsRequest.
         :type enterprise_project_id: str
@@ -110,26 +110,26 @@ class ListRiskConfigsRequest:
         self._enterprise_project_id = enterprise_project_id
 
     @property
-    def check_type(self):
-        """Gets the check_type of this ListRiskConfigsRequest.
+    def check_name(self):
+        """Gets the check_name of this ListRiskConfigsRequest.
 
         基线名称
 
-        :return: The check_type of this ListRiskConfigsRequest.
+        :return: The check_name of this ListRiskConfigsRequest.
         :rtype: str
         """
-        return self._check_type
+        return self._check_name
 
-    @check_type.setter
-    def check_type(self, check_type):
-        """Sets the check_type of this ListRiskConfigsRequest.
+    @check_name.setter
+    def check_name(self, check_name):
+        """Sets the check_name of this ListRiskConfigsRequest.
 
         基线名称
 
-        :param check_type: The check_type of this ListRiskConfigsRequest.
-        :type check_type: str
+        :param check_name: The check_name of this ListRiskConfigsRequest.
+        :type check_name: str
         """
-        self._check_type = check_type
+        self._check_name = check_name
 
     @property
     def severity(self):

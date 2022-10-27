@@ -45,7 +45,7 @@ class LoadBalancerStatus:
 
         :param name: 负载均衡器名称。
         :type name: str
-        :param provisioning_status: 负载均衡器的配置状态。取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
+        :param provisioning_status: 负载均衡器的配置状态。  取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
         :type provisioning_status: str
         :param listeners: 负载均衡器关联的监听器列表。
         :type listeners: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusListener`]
@@ -53,7 +53,7 @@ class LoadBalancerStatus:
         :type pools: list[:class:`huaweicloudsdkelb.v3.LoadBalancerStatusPool`]
         :param id: 负载均衡器ID。
         :type id: str
-        :param operating_status: 负载均衡器的操作状态。取值： - ONLINE：创建时默认状态，表示负载均衡器正常运行。 - FROZEN：已冻结。 - DEGRADED：负载均衡器下存在member的operating_status为OFFLINE时返回这个状态。 - DISABLED：负载均衡器的admin_state_up属性值为false。  说明：DEGRADED和DISABLED状态仅在当前接口中返回，LB详情等其他接口不返回这两个状态值。
+        :param operating_status: 负载均衡器的操作状态。  取值： - ONLINE：创建时默认状态，表示负载均衡器正常运行。 - FROZEN：已冻结。 - DEGRADED：负载均衡器下存在member的operating_status为OFFLINE时返回这个状态。 - DISABLED：负载均衡器的admin_state_up属性值为false。  说明：DEGRADED和DISABLED状态仅在当前接口中返回，LB详情等其他接口不返回这两个状态值。
         :type operating_status: str
         """
         
@@ -100,7 +100,7 @@ class LoadBalancerStatus:
     def provisioning_status(self):
         """Gets the provisioning_status of this LoadBalancerStatus.
 
-        负载均衡器的配置状态。取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
+        负载均衡器的配置状态。  取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
 
         :return: The provisioning_status of this LoadBalancerStatus.
         :rtype: str
@@ -111,7 +111,7 @@ class LoadBalancerStatus:
     def provisioning_status(self, provisioning_status):
         """Sets the provisioning_status of this LoadBalancerStatus.
 
-        负载均衡器的配置状态。取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
+        负载均衡器的配置状态。  取值： - ACTIVE：使用中。 - PENDING_DELETE：删除中。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatus.
         :type provisioning_status: str
@@ -188,7 +188,7 @@ class LoadBalancerStatus:
     def operating_status(self):
         """Gets the operating_status of this LoadBalancerStatus.
 
-        负载均衡器的操作状态。取值： - ONLINE：创建时默认状态，表示负载均衡器正常运行。 - FROZEN：已冻结。 - DEGRADED：负载均衡器下存在member的operating_status为OFFLINE时返回这个状态。 - DISABLED：负载均衡器的admin_state_up属性值为false。  说明：DEGRADED和DISABLED状态仅在当前接口中返回，LB详情等其他接口不返回这两个状态值。
+        负载均衡器的操作状态。  取值： - ONLINE：创建时默认状态，表示负载均衡器正常运行。 - FROZEN：已冻结。 - DEGRADED：负载均衡器下存在member的operating_status为OFFLINE时返回这个状态。 - DISABLED：负载均衡器的admin_state_up属性值为false。  说明：DEGRADED和DISABLED状态仅在当前接口中返回，LB详情等其他接口不返回这两个状态值。
 
         :return: The operating_status of this LoadBalancerStatus.
         :rtype: str
@@ -199,7 +199,7 @@ class LoadBalancerStatus:
     def operating_status(self, operating_status):
         """Sets the operating_status of this LoadBalancerStatus.
 
-        负载均衡器的操作状态。取值： - ONLINE：创建时默认状态，表示负载均衡器正常运行。 - FROZEN：已冻结。 - DEGRADED：负载均衡器下存在member的operating_status为OFFLINE时返回这个状态。 - DISABLED：负载均衡器的admin_state_up属性值为false。  说明：DEGRADED和DISABLED状态仅在当前接口中返回，LB详情等其他接口不返回这两个状态值。
+        负载均衡器的操作状态。  取值： - ONLINE：创建时默认状态，表示负载均衡器正常运行。 - FROZEN：已冻结。 - DEGRADED：负载均衡器下存在member的operating_status为OFFLINE时返回这个状态。 - DISABLED：负载均衡器的admin_state_up属性值为false。  说明：DEGRADED和DISABLED状态仅在当前接口中返回，LB详情等其他接口不返回这两个状态值。
 
         :param operating_status: The operating_status of this LoadBalancerStatus.
         :type operating_status: str

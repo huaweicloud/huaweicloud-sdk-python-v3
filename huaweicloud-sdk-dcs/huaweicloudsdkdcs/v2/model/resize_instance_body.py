@@ -22,7 +22,7 @@ class ResizeInstanceBody:
 
     openapi_types = {
         'spec_code': 'str',
-        'new_capacity': 'int',
+        'new_capacity': 'float',
         'bss_param': 'BssParamEntity',
         'reserved_ip': 'list[str]',
         'change_type': 'str',
@@ -49,8 +49,8 @@ class ResizeInstanceBody:
 
         :param spec_code: 产品规格编码。具体查询方法如下：  - 方法一：查询产品介绍中的[实例规格](https://support.huaweicloud.com/productdesc-dcs/dcs-pd-0522002.html) - 方法二：登录分布式缓存的控制台界面，点击购买缓存实例，查找对应的实例规格名称 - 方法三：调用[查询产品规格](https://support.huaweicloud.com/api-dcs/ListFlavors.html)接口查询。
         :type spec_code: str
-        :param new_capacity: 新的缓存实例规格，新的规格必须大于扩容前的规格，单位：GB。 取值包括：4，8，16，32，64 取值必须是当前产品支持的实例规格，请以实际为准。 
-        :type new_capacity: int
+        :param new_capacity: 新的缓存实例规格，单位：GB。 Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
+        :type new_capacity: float
         :param bss_param: 
         :type bss_param: :class:`huaweicloudsdkdcs.v2.BssParamEntity`
         :param reserved_ip: 需要保留的节点ip。cluster集群缩容时需要填写，不填写时系统将随机删除多余的分片
@@ -118,10 +118,10 @@ class ResizeInstanceBody:
     def new_capacity(self):
         """Gets the new_capacity of this ResizeInstanceBody.
 
-        新的缓存实例规格，新的规格必须大于扩容前的规格，单位：GB。 取值包括：4，8，16，32，64 取值必须是当前产品支持的实例规格，请以实际为准。 
+        新的缓存实例规格，单位：GB。 Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
 
         :return: The new_capacity of this ResizeInstanceBody.
-        :rtype: int
+        :rtype: float
         """
         return self._new_capacity
 
@@ -129,10 +129,10 @@ class ResizeInstanceBody:
     def new_capacity(self, new_capacity):
         """Sets the new_capacity of this ResizeInstanceBody.
 
-        新的缓存实例规格，新的规格必须大于扩容前的规格，单位：GB。 取值包括：4，8，16，32，64 取值必须是当前产品支持的实例规格，请以实际为准。 
+        新的缓存实例规格，单位：GB。 Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
 
         :param new_capacity: The new_capacity of this ResizeInstanceBody.
-        :type new_capacity: int
+        :type new_capacity: float
         """
         self._new_capacity = new_capacity
 

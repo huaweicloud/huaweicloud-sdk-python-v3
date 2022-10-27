@@ -161,7 +161,7 @@ class GlanceShowImageResponseBody:
         :type image_size: str
         :param image_source_type: 镜像后端存储类型，目前只支持uds
         :type image_source_type: str
-        :param imagetype: 镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
+        :param imagetype: 镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
         :type imagetype: str
         :param isregistered: 是否是注册过的镜像，取值为“true”或者“false”。
         :type isregistered: str
@@ -550,7 +550,7 @@ class GlanceShowImageResponseBody:
     def imagetype(self):
         """Gets the imagetype of this GlanceShowImageResponseBody.
 
-        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
+        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
 
         :return: The imagetype of this GlanceShowImageResponseBody.
         :rtype: str
@@ -561,7 +561,7 @@ class GlanceShowImageResponseBody:
     def imagetype(self, imagetype):
         """Sets the imagetype of this GlanceShowImageResponseBody.
 
-        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
+        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
 
         :param imagetype: The imagetype of this GlanceShowImageResponseBody.
         :type imagetype: str

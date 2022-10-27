@@ -675,6 +675,70 @@ class MeetingAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def allow_client_record_async(self, request):
+        """允许客户端录制
+
+        该接口用于设置允许/禁止与会者客户端本地录制（非云端录制）。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for AllowClientRecord
+        :type request: :class:`huaweicloudsdkmeeting.v1.AllowClientRecordRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.AllowClientRecordResponse`
+        """
+        return self.allow_client_record_with_http_info(request)
+
+    def allow_client_record_with_http_info(self, request):
+        all_params = ['conference_id', 'x_conference_authorization', 'participant_id', 'rest_allow_client_record_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'participant_id' in local_var_params:
+            query_params.append(('participantID', local_var_params['participant_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/allowClientRecord',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AllowClientRecordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def allow_guest_unmute_async(self, request):
         """与会者自己解除静音
 
@@ -732,6 +796,68 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AllowGuestUnmuteResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def allow_waiting_participant_async(self, request):
+        """准入等候者
+
+        该接口用于允许等候室中的成员进入会议。可以允许全部成员进入会议，或者允许指定成员进入会议。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for AllowWaitingParticipant
+        :type request: :class:`huaweicloudsdkmeeting.v1.AllowWaitingParticipantRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.AllowWaitingParticipantResponse`
+        """
+        return self.allow_waiting_participant_with_http_info(request)
+
+    def allow_waiting_participant_with_http_info(self, request):
+        all_params = ['conference_id', 'x_conference_authorization', 'rest_allow_waiting_participant_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/allowWaitingParticipant',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AllowWaitingParticipantResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1180,6 +1306,68 @@ class MeetingAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def batch_hand_async(self, request):
+        """批量举手
+
+        该接口用于批量设置来宾的举手/放下举手状态。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchHand
+        :type request: :class:`huaweicloudsdkmeeting.v1.BatchHandRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.BatchHandResponse`
+        """
+        return self.batch_hand_with_http_info(request)
+
+    def batch_hand_with_http_info(self, request):
+        all_params = ['conference_id', 'x_conference_authorization', 'rest_batch_hands_up_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/participants/batch/hands',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchHandResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def batch_update_devices_status_async(self, request):
         """批量修改终端状态
 
@@ -1367,6 +1555,66 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='BroadcastParticipantResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def cancel_broadcast_async(self, request):
+        """取消广播
+
+        该接口用于取消广播，包括：取消广播多画面，取消广播会场，取消点名会场。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CancelBroadcast
+        :type request: :class:`huaweicloudsdkmeeting.v1.CancelBroadcastRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.CancelBroadcastResponse`
+        """
+        return self.cancel_broadcast_with_http_info(request)
+
+    def cancel_broadcast_with_http_info(self, request):
+        all_params = ['conference_id', 'x_conference_authorization']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/cancelBroadcast',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CancelBroadcastResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -2566,6 +2814,68 @@ class MeetingAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_layout_async(self, request):
+        """删除多画面布局
+
+        该接口用于删除当前会议已保存的多画面布局。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteLayout
+        :type request: :class:`huaweicloudsdkmeeting.v1.DeleteLayoutRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteLayoutResponse`
+        """
+        return self.delete_layout_with_http_info(request)
+
+    def delete_layout_with_http_info(self, request):
+        all_params = ['conference_id', 'uu_id', 'x_conference_authorization']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'uu_id' in local_var_params:
+            query_params.append(('uuID', local_var_params['uu_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/layOut',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteLayoutResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def delete_recordings_async(self, request):
         """批量删除录制
 
@@ -3327,7 +3637,8 @@ class MeetingAsyncClient(Client):
     def invite_with_pwd_async(self, request):
         """通过会议ID和密码邀请与会者
 
-        该接口用于通过会议ID和密码邀请与会者。
+        该接口用于通过会议ID和密码邀请与会者。一般用于App已知会议ID和来宾密码，通过扫码等方式获取其他终端的SIP号码后，使用该接口将其他终端邀请加入会议中。
+        &gt; 需要管理员在企业的“会议设置”&gt;“来宾扫码邀请任意硬终端入会”设置成打开，才允许通过来宾密码邀请其他终端入会。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3775,6 +4086,68 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='LockViewResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def move_to_waiting_room_async(self, request):
+        """移入等候室
+
+        该接口用于将会中的指定与会者移入到等候室。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for MoveToWaitingRoom
+        :type request: :class:`huaweicloudsdkmeeting.v1.MoveToWaitingRoomRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.MoveToWaitingRoomResponse`
+        """
+        return self.move_to_waiting_room_with_http_info(request)
+
+    def move_to_waiting_room_with_http_info(self, request):
+        all_params = ['conference_id', 'x_conference_authorization', 'rest_move_to_waiting_room_req_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/moveToWaitingRoom',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='MoveToWaitingRoomResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4406,6 +4779,68 @@ class MeetingAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def save_layout_async(self, request):
+        """保存多画面布局
+
+        该接口用于保存多画面布局。保存的多画面布局，只能在当前会议使用，会议结束后，保存的多画面布局就会释放。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SaveLayout
+        :type request: :class:`huaweicloudsdkmeeting.v1.SaveLayoutRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SaveLayoutResponse`
+        """
+        return self.save_layout_with_http_info(request)
+
+    def save_layout_with_http_info(self, request):
+        all_params = ['conference_id', 'x_conference_authorization', 'rest_pic_layout_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/layOut',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SaveLayoutResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def search_attendance_records_of_his_meeting_async(self, request):
         """查询历史会议的与会者记录
 
@@ -4677,6 +5112,74 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='SearchCorpDirResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def search_corp_external_dir_async(self, request):
+        """查询企业外部联系人
+
+        企业用户（含管理员）通过该接口查询该企业的外部联系人或者个人外部联系人。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SearchCorpExternalDir
+        :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpExternalDirRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpExternalDirResponse`
+        """
+        return self.search_corp_external_dir_with_http_info(request)
+
+    def search_corp_external_dir_with_http_info(self, request):
+        all_params = ['x_request_id', 'accept_language', 'offset', 'limit', 'search_key', 'search_scope']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'search_key' in local_var_params:
+            query_params.append(('searchKey', local_var_params['search_key']))
+        if 'search_scope' in local_var_params:
+            query_params.append(('searchScope', local_var_params['search_scope']))
+
+        header_params = {}
+        if 'x_request_id' in local_var_params:
+            header_params['X-Request-Id'] = local_var_params['x_request_id']
+        if 'accept_language' in local_var_params:
+            header_params['Accept-Language'] = local_var_params['accept_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/usg/abs/external-contacts',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SearchCorpExternalDirResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -6169,6 +6672,70 @@ class MeetingAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def set_cohost_async(self, request):
+        """申请联席主持人
+
+        该接口用于设置联席主持人或释放联席主持人。只能将来宾设置为联席主持人。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SetCohost
+        :type request: :class:`huaweicloudsdkmeeting.v1.SetCohostRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.SetCohostResponse`
+        """
+        return self.set_cohost_with_http_info(request)
+
+    def set_cohost_with_http_info(self, request):
+        all_params = ['conference_id', 'participant_id', 'x_conference_authorization', 'rest_set_cohost_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+        if 'participant_id' in local_var_params:
+            query_params.append(('participantID', local_var_params['participant_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/participants/cohost',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetCohostResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def set_custom_multi_picture_async(self, request):
         """设置自定义多画面
 
@@ -7286,6 +7853,66 @@ class MeetingAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowHisMeetingDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_layout_async(self, request):
+        """查询多画面布局
+
+        该接口用于查询当前会议已保存的多画面布局。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowLayout
+        :type request: :class:`huaweicloudsdkmeeting.v1.ShowLayoutRequest`
+        :rtype: :class:`huaweicloudsdkmeeting.v1.ShowLayoutResponse`
+        """
+        return self.show_layout_with_http_info(request)
+
+    def show_layout_with_http_info(self, request):
+        all_params = ['conference_id', 'x_conference_authorization']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'conference_id' in local_var_params:
+            query_params.append(('conferenceID', local_var_params['conference_id']))
+
+        header_params = {}
+        if 'x_conference_authorization' in local_var_params:
+            header_params['X-Conference-Authorization'] = local_var_params['x_conference_authorization']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/mmc/control/conferences/layOut',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowLayoutResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

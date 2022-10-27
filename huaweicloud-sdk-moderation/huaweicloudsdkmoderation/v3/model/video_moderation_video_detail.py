@@ -24,8 +24,8 @@ class VideoModerationVideoDetail:
         'suggestion': 'str',
         'label': 'str',
         'audio_text': 'str',
-        'end_time': 'int',
-        'start_time': 'int',
+        'end_time': 'float',
+        'start_time': 'float',
         'detail': 'list[VideoModerationAudioDetailList]'
     }
 
@@ -50,9 +50,9 @@ class VideoModerationVideoDetail:
         :param audio_text: 音频片段文本内容
         :type audio_text: str
         :param end_time: 音频片段结束时间
-        :type end_time: int
+        :type end_time: float
         :param start_time: 音频片段开始时间
-        :type start_time: int
+        :type start_time: float
         :param detail: 音频片段审核详情
         :type detail: list[:class:`huaweicloudsdkmoderation.v3.VideoModerationAudioDetailList`]
         """
@@ -153,7 +153,7 @@ class VideoModerationVideoDetail:
         音频片段结束时间
 
         :return: The end_time of this VideoModerationVideoDetail.
-        :rtype: int
+        :rtype: float
         """
         return self._end_time
 
@@ -164,7 +164,7 @@ class VideoModerationVideoDetail:
         音频片段结束时间
 
         :param end_time: The end_time of this VideoModerationVideoDetail.
-        :type end_time: int
+        :type end_time: float
         """
         self._end_time = end_time
 
@@ -175,7 +175,7 @@ class VideoModerationVideoDetail:
         音频片段开始时间
 
         :return: The start_time of this VideoModerationVideoDetail.
-        :rtype: int
+        :rtype: float
         """
         return self._start_time
 
@@ -186,7 +186,7 @@ class VideoModerationVideoDetail:
         音频片段开始时间
 
         :param start_time: The start_time of this VideoModerationVideoDetail.
-        :type start_time: int
+        :type start_time: float
         """
         self._start_time = start_time
 

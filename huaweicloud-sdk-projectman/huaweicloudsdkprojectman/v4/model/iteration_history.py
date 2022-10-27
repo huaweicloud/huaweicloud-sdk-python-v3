@@ -23,7 +23,7 @@ class IterationHistory:
     openapi_types = {
         'iteration_id': 'str',
         'project_id': 'str',
-        'operator': 'VersionHistoryOperator',
+        'operator': 'IterationHistoryOperator',
         'operate': 'str',
         'operate_time': 'str',
         'details': 'list[IterationHistoryDetails]'
@@ -48,7 +48,7 @@ class IterationHistory:
         :param project_id: 项目ID
         :type project_id: str
         :param operator: 
-        :type operator: :class:`huaweicloudsdkprojectman.v4.VersionHistoryOperator`
+        :type operator: :class:`huaweicloudsdkprojectman.v4.IterationHistoryOperator`
         :param operate: 操作类型
         :type operate: str
         :param operate_time: 操作时间
@@ -130,7 +130,7 @@ class IterationHistory:
 
 
         :return: The operator of this IterationHistory.
-        :rtype: :class:`huaweicloudsdkprojectman.v4.VersionHistoryOperator`
+        :rtype: :class:`huaweicloudsdkprojectman.v4.IterationHistoryOperator`
         """
         return self._operator
 
@@ -140,7 +140,7 @@ class IterationHistory:
 
 
         :param operator: The operator of this IterationHistory.
-        :type operator: :class:`huaweicloudsdkprojectman.v4.VersionHistoryOperator`
+        :type operator: :class:`huaweicloudsdkprojectman.v4.IterationHistoryOperator`
         """
         self._operator = operator
 

@@ -21,9 +21,9 @@ class AudioModerationResultDetail:
     sensitive_list = []
 
     openapi_types = {
-        'start_time': 'int',
+        'start_time': 'float',
         'suggestion': 'str',
-        'end_time': 'int',
+        'end_time': 'float',
         'label': 'str',
         'audio_text': 'str',
         'segments': 'list[VideoModerationDetailSegment]'
@@ -44,11 +44,11 @@ class AudioModerationResultDetail:
         The model defined in huaweicloud sdk
 
         :param start_time: 音频片段开始时间
-        :type start_time: int
+        :type start_time: float
         :param suggestion: 音频片段审核处理建议： block：包含敏感信息，不通过 review：需要人工复检
         :type suggestion: str
         :param end_time: 音频片段结束时间
-        :type end_time: int
+        :type end_time: float
         :param label: 音频片段标签
         :type label: str
         :param audio_text: 音频片段文本内容
@@ -87,7 +87,7 @@ class AudioModerationResultDetail:
         音频片段开始时间
 
         :return: The start_time of this AudioModerationResultDetail.
-        :rtype: int
+        :rtype: float
         """
         return self._start_time
 
@@ -98,7 +98,7 @@ class AudioModerationResultDetail:
         音频片段开始时间
 
         :param start_time: The start_time of this AudioModerationResultDetail.
-        :type start_time: int
+        :type start_time: float
         """
         self._start_time = start_time
 
@@ -131,7 +131,7 @@ class AudioModerationResultDetail:
         音频片段结束时间
 
         :return: The end_time of this AudioModerationResultDetail.
-        :rtype: int
+        :rtype: float
         """
         return self._end_time
 
@@ -142,7 +142,7 @@ class AudioModerationResultDetail:
         音频片段结束时间
 
         :param end_time: The end_time of this AudioModerationResultDetail.
-        :type end_time: int
+        :type end_time: float
         """
         self._end_time = end_time
 

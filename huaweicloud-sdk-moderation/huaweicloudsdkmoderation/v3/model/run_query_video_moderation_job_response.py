@@ -25,7 +25,7 @@ class RunQueryVideoModerationJobResponse(SdkResponse):
         'job_id': 'str',
         'status': 'str',
         'request_params': 'VideoModerationResultRequestParams',
-        'craete_time': 'str',
+        'create_time': 'str',
         'update_time': 'str',
         'result': 'VideoModerationResultResult'
     }
@@ -35,12 +35,12 @@ class RunQueryVideoModerationJobResponse(SdkResponse):
         'job_id': 'job_id',
         'status': 'status',
         'request_params': 'request_params',
-        'craete_time': 'craete_time',
+        'create_time': 'create_time',
         'update_time': 'update_time',
         'result': 'result'
     }
 
-    def __init__(self, request_id=None, job_id=None, status=None, request_params=None, craete_time=None, update_time=None, result=None):
+    def __init__(self, request_id=None, job_id=None, status=None, request_params=None, create_time=None, update_time=None, result=None):
         """RunQueryVideoModerationJobResponse
 
         The model defined in huaweicloud sdk
@@ -53,8 +53,8 @@ class RunQueryVideoModerationJobResponse(SdkResponse):
         :type status: str
         :param request_params: 
         :type request_params: :class:`huaweicloudsdkmoderation.v3.VideoModerationResultRequestParams`
-        :param craete_time: 作业创建时间
-        :type craete_time: str
+        :param create_time: 作业创建时间
+        :type create_time: str
         :param update_time: 作业更新时间
         :type update_time: str
         :param result: 
@@ -67,7 +67,7 @@ class RunQueryVideoModerationJobResponse(SdkResponse):
         self._job_id = None
         self._status = None
         self._request_params = None
-        self._craete_time = None
+        self._create_time = None
         self._update_time = None
         self._result = None
         self.discriminator = None
@@ -80,8 +80,8 @@ class RunQueryVideoModerationJobResponse(SdkResponse):
             self.status = status
         if request_params is not None:
             self.request_params = request_params
-        if craete_time is not None:
-            self.craete_time = craete_time
+        if create_time is not None:
+            self.create_time = create_time
         if update_time is not None:
             self.update_time = update_time
         if result is not None:
@@ -174,26 +174,26 @@ class RunQueryVideoModerationJobResponse(SdkResponse):
         self._request_params = request_params
 
     @property
-    def craete_time(self):
-        """Gets the craete_time of this RunQueryVideoModerationJobResponse.
+    def create_time(self):
+        """Gets the create_time of this RunQueryVideoModerationJobResponse.
 
         作业创建时间
 
-        :return: The craete_time of this RunQueryVideoModerationJobResponse.
+        :return: The create_time of this RunQueryVideoModerationJobResponse.
         :rtype: str
         """
-        return self._craete_time
+        return self._create_time
 
-    @craete_time.setter
-    def craete_time(self, craete_time):
-        """Sets the craete_time of this RunQueryVideoModerationJobResponse.
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this RunQueryVideoModerationJobResponse.
 
         作业创建时间
 
-        :param craete_time: The craete_time of this RunQueryVideoModerationJobResponse.
-        :type craete_time: str
+        :param create_time: The create_time of this RunQueryVideoModerationJobResponse.
+        :type create_time: str
         """
-        self._craete_time = craete_time
+        self._create_time = create_time
 
     @property
     def update_time(self):

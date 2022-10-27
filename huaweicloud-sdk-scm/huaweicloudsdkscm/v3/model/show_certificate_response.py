@@ -40,6 +40,7 @@ class ShowCertificateResponse(SdkResponse):
         'sans': 'str',
         'domain_count': 'int',
         'wildcard_count': 'int',
+        'fingerprint': 'str',
         'enterprise_project_id': 'str',
         'authentification': 'list[Authentification]'
     }
@@ -64,11 +65,12 @@ class ShowCertificateResponse(SdkResponse):
         'sans': 'sans',
         'domain_count': 'domain_count',
         'wildcard_count': 'wildcard_count',
+        'fingerprint': 'fingerprint',
         'enterprise_project_id': 'enterprise_project_id',
         'authentification': 'authentification'
     }
 
-    def __init__(self, id=None, status=None, order_id=None, name=None, type=None, brand=None, push_support=None, revoke_reason=None, signature_algorithm=None, issue_time=None, not_before=None, not_after=None, validity_period=None, validation_method=None, domain_type=None, domain=None, sans=None, domain_count=None, wildcard_count=None, enterprise_project_id=None, authentification=None):
+    def __init__(self, id=None, status=None, order_id=None, name=None, type=None, brand=None, push_support=None, revoke_reason=None, signature_algorithm=None, issue_time=None, not_before=None, not_after=None, validity_period=None, validation_method=None, domain_type=None, domain=None, sans=None, domain_count=None, wildcard_count=None, fingerprint=None, enterprise_project_id=None, authentification=None):
         """ShowCertificateResponse
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class ShowCertificateResponse(SdkResponse):
         :type domain_count: int
         :param wildcard_count: 证书可绑定附加域名个数。
         :type wildcard_count: int
+        :param fingerprint: 证书的SHA-1指纹。
+        :type fingerprint: str
         :param enterprise_project_id: 企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
         :type enterprise_project_id: str
         :param authentification: 域名所有权认证信息，详情请参见Authentification字段数据结构说明。
@@ -138,6 +142,7 @@ class ShowCertificateResponse(SdkResponse):
         self._sans = None
         self._domain_count = None
         self._wildcard_count = None
+        self._fingerprint = None
         self._enterprise_project_id = None
         self._authentification = None
         self.discriminator = None
@@ -180,6 +185,8 @@ class ShowCertificateResponse(SdkResponse):
             self.domain_count = domain_count
         if wildcard_count is not None:
             self.wildcard_count = wildcard_count
+        if fingerprint is not None:
+            self.fingerprint = fingerprint
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if authentification is not None:
@@ -602,6 +609,28 @@ class ShowCertificateResponse(SdkResponse):
         :type wildcard_count: int
         """
         self._wildcard_count = wildcard_count
+
+    @property
+    def fingerprint(self):
+        """Gets the fingerprint of this ShowCertificateResponse.
+
+        证书的SHA-1指纹。
+
+        :return: The fingerprint of this ShowCertificateResponse.
+        :rtype: str
+        """
+        return self._fingerprint
+
+    @fingerprint.setter
+    def fingerprint(self, fingerprint):
+        """Sets the fingerprint of this ShowCertificateResponse.
+
+        证书的SHA-1指纹。
+
+        :param fingerprint: The fingerprint of this ShowCertificateResponse.
+        :type fingerprint: str
+        """
+        self._fingerprint = fingerprint
 
     @property
     def enterprise_project_id(self):

@@ -41,23 +41,23 @@ class MergeInfoResult:
     }
 
     attribute_map = {
-        'approval_merge_request_approvers': 'approvalMergeRequestApprovers',
+        'approval_merge_request_approvers': 'approval_merge_request_approvers',
         'author': 'author',
-        'closed_at': 'closedAt',
-        'created_at': 'createdAt',
+        'closed_at': 'closed_at',
+        'created_at': 'created_at',
         'description': 'description',
-        'devcloud_source_branch': 'devcloudSourceBranch',
+        'devcloud_source_branch': 'devcloud_source_branch',
         'id': 'id',
         'iid': 'iid',
-        'is_source_branch_exist': 'isSourceBranchExist',
-        'merge_request_assignee_list': 'mergeRequestAssigneeList',
-        'merge_request_diff': 'mergeRequestDiff',
-        'merge_status': 'mergeStatus',
-        'source_branch': 'sourceBranch',
+        'is_source_branch_exist': 'is_source_branch_exist',
+        'merge_request_assignee_list': 'merge_request_assignee_list',
+        'merge_request_diff': 'merge_request_diff',
+        'merge_status': 'merge_status',
+        'source_branch': 'source_branch',
         'state': 'state',
-        'target_branch': 'targetBranch',
+        'target_branch': 'target_branch',
         'title': 'title',
-        'updated_at': 'updatedAt'
+        'updated_at': 'updated_at'
     }
 
     def __init__(self, approval_merge_request_approvers=None, author=None, closed_at=None, created_at=None, description=None, devcloud_source_branch=None, id=None, iid=None, is_source_branch_exist=None, merge_request_assignee_list=None, merge_request_diff=None, merge_status=None, source_branch=None, state=None, target_branch=None, title=None, updated_at=None):

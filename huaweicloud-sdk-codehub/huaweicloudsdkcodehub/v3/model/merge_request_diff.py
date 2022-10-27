@@ -31,13 +31,13 @@ class MergeRequestDiff:
     }
 
     attribute_map = {
-        'base_commit_sha': 'baseCommitSha',
-        'commits_count': 'commitsCount',
-        'created_at': 'createdAt',
-        'head_commit_sha': 'headCommitSha',
-        'merge_request_id': 'mergeRequestId',
-        'start_commit_sha': 'startCommitSha',
-        'updated_at': 'updatedAt'
+        'base_commit_sha': 'base_commit_sha',
+        'commits_count': 'commits_count',
+        'created_at': 'created_at',
+        'head_commit_sha': 'head_commit_sha',
+        'merge_request_id': 'merge_request_id',
+        'start_commit_sha': 'start_commit_sha',
+        'updated_at': 'updated_at'
     }
 
     def __init__(self, base_commit_sha=None, commits_count=None, created_at=None, head_commit_sha=None, merge_request_id=None, start_commit_sha=None, updated_at=None):

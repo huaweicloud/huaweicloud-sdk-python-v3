@@ -51,7 +51,7 @@ class RestCustomMultiPictureBody:
         :type image_type: str
         :param subscriber_in_pics: 子画面列表（手工设置多画面时必填）。
         :type subscriber_in_pics: list[:class:`huaweicloudsdkmeeting.v1.RestSubscriberInPic`]
-        :param switch_time: 表示轮询间隔,取值范围：10-120，默认10。单位：秒。 当同一个子画面中包含有多个与会者时，此参数有效。 
+        :param switch_time: 表示轮询间隔,取值范围：10-120，默认10。单位：秒。 当同一个子画面中包含有多个与会者时，此参数有效。 &gt; 仅针对专业会议终端生效，对软终端不生效。 
         :type switch_time: int
         :param multi_pic_save_only: 多画面是否仅保存。 * true： 仅保存 * false： 保存并应用 &gt; * ”仅保存“效果：仅保存当前画面布局，不进行广播等操作。 &gt; * ”保存并应用“效果：1、当会议状态为广播多画面、声控单画面、声控多画面、主持人观看多画面时，保存并应用后，改变画面布局，不改变状态。2、当会议状态为非广播多画面、声控单画面、声控多画面、主持人观看多画面时，如自动多画面、广播与会者、点名与会者时，保存并应用后，变为广播多画面。 &gt; * 当处于广播多画面、声控多画面、声控单画面状态下，无法设置主持人观看多画面。 
         :type multi_pic_save_only: bool
@@ -169,7 +169,7 @@ class RestCustomMultiPictureBody:
     def switch_time(self):
         """Gets the switch_time of this RestCustomMultiPictureBody.
 
-        表示轮询间隔,取值范围：10-120，默认10。单位：秒。 当同一个子画面中包含有多个与会者时，此参数有效。 
+        表示轮询间隔,取值范围：10-120，默认10。单位：秒。 当同一个子画面中包含有多个与会者时，此参数有效。 > 仅针对专业会议终端生效，对软终端不生效。 
 
         :return: The switch_time of this RestCustomMultiPictureBody.
         :rtype: int
@@ -180,7 +180,7 @@ class RestCustomMultiPictureBody:
     def switch_time(self, switch_time):
         """Sets the switch_time of this RestCustomMultiPictureBody.
 
-        表示轮询间隔,取值范围：10-120，默认10。单位：秒。 当同一个子画面中包含有多个与会者时，此参数有效。 
+        表示轮询间隔,取值范围：10-120，默认10。单位：秒。 当同一个子画面中包含有多个与会者时，此参数有效。 > 仅针对专业会议终端生效，对软终端不生效。 
 
         :param switch_time: The switch_time of this RestCustomMultiPictureBody.
         :type switch_time: int

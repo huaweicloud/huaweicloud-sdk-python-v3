@@ -65,7 +65,7 @@ class ListCertificatesRequest:
         :type description: str
         :param type: SSL证书的类型。默认值：server；取值范围：server：服务端证书；client：客户端证书；
         :type type: str
-        :param domain: 服务端证书所签的域名。默认值：null；取值范围：普通域名由若干字符串组成，总长度为0-1024，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。泛域名在普通域名的基础上仅允许首字母为\&quot;*\&quot;。该字段仅type为server时有效。
+        :param domain: 服务端证书所签的域名。 取值：总长度为0-1024。  普通域名由若干字符串组成，字符串间以\&quot;.\&quot;分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\&quot;-\&quot;，且必须以字母或数字开头和结尾。  泛域名仅允许首段为\&quot;*\&quot;，其他取值限制与普通域名一致。如：*.domain.com，但不能是：*my.domain.com   该字段仅type为server时有效。
         :type domain: str
         :param private_key: PEM格式的服务端私有密钥。
         :type private_key: str
@@ -266,7 +266,7 @@ class ListCertificatesRequest:
     def domain(self):
         """Gets the domain of this ListCertificatesRequest.
 
-        服务端证书所签的域名。默认值：null；取值范围：普通域名由若干字符串组成，总长度为0-1024，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。泛域名在普通域名的基础上仅允许首字母为\"*\"。该字段仅type为server时有效。
+        服务端证书所签的域名。 取值：总长度为0-1024。  普通域名由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。  泛域名仅允许首段为\"*\"，其他取值限制与普通域名一致。如：*.domain.com，但不能是：*my.domain.com   该字段仅type为server时有效。
 
         :return: The domain of this ListCertificatesRequest.
         :rtype: str
@@ -277,7 +277,7 @@ class ListCertificatesRequest:
     def domain(self, domain):
         """Sets the domain of this ListCertificatesRequest.
 
-        服务端证书所签的域名。默认值：null；取值范围：普通域名由若干字符串组成，总长度为0-1024，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。泛域名在普通域名的基础上仅允许首字母为\"*\"。该字段仅type为server时有效。
+        服务端证书所签的域名。 取值：总长度为0-1024。  普通域名由若干字符串组成，字符串间以\".\"分割，单个字符串长度不超过63个字符，只能包含英文字母、数字或\"-\"，且必须以字母或数字开头和结尾。  泛域名仅允许首段为\"*\"，其他取值限制与普通域名一致。如：*.domain.com，但不能是：*my.domain.com   该字段仅type为server时有效。
 
         :param domain: The domain of this ListCertificatesRequest.
         :type domain: str

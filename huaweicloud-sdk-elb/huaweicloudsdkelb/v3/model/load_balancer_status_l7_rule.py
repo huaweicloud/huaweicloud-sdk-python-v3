@@ -39,9 +39,9 @@ class LoadBalancerStatusL7Rule:
 
         :param id: L7转发规则ID。
         :type id: str
-        :param type: 匹配内容类型。取值： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。  使用说明： 同一个l7policy下创建的所有的l7rule的HOST_NAME不能重复。
+        :param type: 匹配内容类型。  取值： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。  使用说明： 同一个l7policy下创建的所有的l7rule的HOST_NAME不能重复。
         :type type: str
-        :param provisioning_status: 转发规则的配置状态。 取值： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
+        :param provisioning_status: 转发规则的配置状态。  取值： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
         :type provisioning_status: str
         """
         
@@ -82,7 +82,7 @@ class LoadBalancerStatusL7Rule:
     def type(self):
         """Gets the type of this LoadBalancerStatusL7Rule.
 
-        匹配内容类型。取值： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。  使用说明： 同一个l7policy下创建的所有的l7rule的HOST_NAME不能重复。
+        匹配内容类型。  取值： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。  使用说明： 同一个l7policy下创建的所有的l7rule的HOST_NAME不能重复。
 
         :return: The type of this LoadBalancerStatusL7Rule.
         :rtype: str
@@ -93,7 +93,7 @@ class LoadBalancerStatusL7Rule:
     def type(self, type):
         """Sets the type of this LoadBalancerStatusL7Rule.
 
-        匹配内容类型。取值： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。  使用说明： 同一个l7policy下创建的所有的l7rule的HOST_NAME不能重复。
+        匹配内容类型。  取值： - HOST_NAME：域名匹配。 - PATH：URL路径匹配。  使用说明： 同一个l7policy下创建的所有的l7rule的HOST_NAME不能重复。
 
         :param type: The type of this LoadBalancerStatusL7Rule.
         :type type: str
@@ -104,7 +104,7 @@ class LoadBalancerStatusL7Rule:
     def provisioning_status(self):
         """Gets the provisioning_status of this LoadBalancerStatusL7Rule.
 
-        转发规则的配置状态。 取值： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
+        转发规则的配置状态。  取值： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
 
         :return: The provisioning_status of this LoadBalancerStatusL7Rule.
         :rtype: str
@@ -115,7 +115,7 @@ class LoadBalancerStatusL7Rule:
     def provisioning_status(self, provisioning_status):
         """Sets the provisioning_status of this LoadBalancerStatusL7Rule.
 
-        转发规则的配置状态。 取值： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
+        转发规则的配置状态。  取值： - ACTIVE：使用中，默认值。 - ERROR：当前规则所属策略与同一监听器下的其他策略存在相同的规则配置。
 
         :param provisioning_status: The provisioning_status of this LoadBalancerStatusL7Rule.
         :type provisioning_status: str

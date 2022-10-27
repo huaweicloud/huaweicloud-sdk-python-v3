@@ -35,9 +35,9 @@ class ErrorInfoDTO:
 
         The model defined in huaweicloud sdk
 
-        :param error_code: **参数说明**：异常信息错误码，包含IOTDA.014016和IOTDA.014112。IOTDA.014016表示设备不在线；IOTDA.014112表示设备没有订阅topic
+        :param error_code: **参数说明**：异常信息错误码，包含IOTDA.014016和IOTDA.014112。IOTDA.014016表示设备不在线；IOTDA.014112表示设备没有订阅topic。
         :type error_code: str
-        :param error_msg: **参数说明**：异常信息说明，包含设备不在线和设备没有订阅topic说明
+        :param error_msg: **参数说明**：异常信息说明，包含设备不在线和设备没有订阅topic说明。
         :type error_msg: str
         """
         
@@ -56,7 +56,7 @@ class ErrorInfoDTO:
     def error_code(self):
         """Gets the error_code of this ErrorInfoDTO.
 
-        **参数说明**：异常信息错误码，包含IOTDA.014016和IOTDA.014112。IOTDA.014016表示设备不在线；IOTDA.014112表示设备没有订阅topic
+        **参数说明**：异常信息错误码，包含IOTDA.014016和IOTDA.014112。IOTDA.014016表示设备不在线；IOTDA.014112表示设备没有订阅topic。
 
         :return: The error_code of this ErrorInfoDTO.
         :rtype: str
@@ -67,7 +67,7 @@ class ErrorInfoDTO:
     def error_code(self, error_code):
         """Sets the error_code of this ErrorInfoDTO.
 
-        **参数说明**：异常信息错误码，包含IOTDA.014016和IOTDA.014112。IOTDA.014016表示设备不在线；IOTDA.014112表示设备没有订阅topic
+        **参数说明**：异常信息错误码，包含IOTDA.014016和IOTDA.014112。IOTDA.014016表示设备不在线；IOTDA.014112表示设备没有订阅topic。
 
         :param error_code: The error_code of this ErrorInfoDTO.
         :type error_code: str
@@ -78,7 +78,7 @@ class ErrorInfoDTO:
     def error_msg(self):
         """Gets the error_msg of this ErrorInfoDTO.
 
-        **参数说明**：异常信息说明，包含设备不在线和设备没有订阅topic说明
+        **参数说明**：异常信息说明，包含设备不在线和设备没有订阅topic说明。
 
         :return: The error_msg of this ErrorInfoDTO.
         :rtype: str
@@ -89,7 +89,7 @@ class ErrorInfoDTO:
     def error_msg(self, error_msg):
         """Sets the error_msg of this ErrorInfoDTO.
 
-        **参数说明**：异常信息说明，包含设备不在线和设备没有订阅topic说明
+        **参数说明**：异常信息说明，包含设备不在线和设备没有订阅topic说明。
 
         :param error_msg: The error_msg of this ErrorInfoDTO.
         :type error_msg: str

@@ -32,6 +32,7 @@ class InstanceResponse:
         'updated': 'str',
         'db_user_name': 'str',
         'switch_strategy': 'str',
+        'read_only_by_user': 'str',
         'maintenance_window': 'str',
         'nodes': 'list[NodeResponse]',
         'related_instance': 'list[RelatedInstance]',
@@ -74,6 +75,7 @@ class InstanceResponse:
         'updated': 'updated',
         'db_user_name': 'db_user_name',
         'switch_strategy': 'switch_strategy',
+        'read_only_by_user': 'read_only_by_user',
         'maintenance_window': 'maintenance_window',
         'nodes': 'nodes',
         'related_instance': 'related_instance',
@@ -104,7 +106,7 @@ class InstanceResponse:
         'expiration_time': 'expiration_time'
     }
 
-    def __init__(self, id=None, status=None, enable_ssl=None, private_ips=None, private_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, cpu=None, mem=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None, alias=None, max_iops=None, expiration_time=None):
+    def __init__(self, id=None, status=None, enable_ssl=None, private_ips=None, private_dns_names=None, public_ips=None, type=None, created=None, updated=None, db_user_name=None, switch_strategy=None, read_only_by_user=None, maintenance_window=None, nodes=None, related_instance=None, name=None, datastore=None, ha=None, port=None, backup_strategy=None, enterprise_project_id=None, disk_encryption_id=None, flavor_ref=None, cpu=None, mem=None, volume=None, region=None, vpc_id=None, subnet_id=None, security_group_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None, storage_used_space=None, order_id=None, associated_with_ddm=None, alias=None, max_iops=None, expiration_time=None):
         """InstanceResponse
 
         The model defined in huaweicloud sdk
@@ -131,6 +133,8 @@ class InstanceResponse:
         :type db_user_name: str
         :param switch_strategy: 数据库切换策略。取值为“reliability”或“availability”，分别对应于可靠性优先和可用性优先。
         :type switch_strategy: str
+        :param read_only_by_user: 客户设置实例只读API的状态信息。仅支持RDS for MySQL引擎。取值为“true”，表示该实例为客户设置的只读状态。取值为“false”，表示该实例未被客户设置只读。
+        :type read_only_by_user: str
         :param maintenance_window: 可维护时间窗，为UTC时间。
         :type maintenance_window: str
         :param nodes: 
@@ -202,6 +206,7 @@ class InstanceResponse:
         self._updated = None
         self._db_user_name = None
         self._switch_strategy = None
+        self._read_only_by_user = None
         self._maintenance_window = None
         self._nodes = None
         self._related_instance = None
@@ -244,6 +249,8 @@ class InstanceResponse:
         self.updated = updated
         self.db_user_name = db_user_name
         self.switch_strategy = switch_strategy
+        if read_only_by_user is not None:
+            self.read_only_by_user = read_only_by_user
         self.maintenance_window = maintenance_window
         self.nodes = nodes
         self.related_instance = related_instance
@@ -522,6 +529,28 @@ class InstanceResponse:
         :type switch_strategy: str
         """
         self._switch_strategy = switch_strategy
+
+    @property
+    def read_only_by_user(self):
+        """Gets the read_only_by_user of this InstanceResponse.
+
+        客户设置实例只读API的状态信息。仅支持RDS for MySQL引擎。取值为“true”，表示该实例为客户设置的只读状态。取值为“false”，表示该实例未被客户设置只读。
+
+        :return: The read_only_by_user of this InstanceResponse.
+        :rtype: str
+        """
+        return self._read_only_by_user
+
+    @read_only_by_user.setter
+    def read_only_by_user(self, read_only_by_user):
+        """Sets the read_only_by_user of this InstanceResponse.
+
+        客户设置实例只读API的状态信息。仅支持RDS for MySQL引擎。取值为“true”，表示该实例为客户设置的只读状态。取值为“false”，表示该实例未被客户设置只读。
+
+        :param read_only_by_user: The read_only_by_user of this InstanceResponse.
+        :type read_only_by_user: str
+        """
+        self._read_only_by_user = read_only_by_user
 
     @property
     def maintenance_window(self):

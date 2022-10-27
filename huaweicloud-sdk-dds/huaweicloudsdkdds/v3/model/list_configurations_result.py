@@ -26,6 +26,7 @@ class ListConfigurationsResult:
         'description': 'str',
         'datastore_version': 'str',
         'datastore_name': 'str',
+        'node_type': 'str',
         'created': 'str',
         'updated': 'str',
         'user_defined': 'bool'
@@ -37,12 +38,13 @@ class ListConfigurationsResult:
         'description': 'description',
         'datastore_version': 'datastore_version',
         'datastore_name': 'datastore_name',
+        'node_type': 'node_type',
         'created': 'created',
         'updated': 'updated',
         'user_defined': 'user_defined'
     }
 
-    def __init__(self, id=None, name=None, description=None, datastore_version=None, datastore_name=None, created=None, updated=None, user_defined=None):
+    def __init__(self, id=None, name=None, description=None, datastore_version=None, datastore_name=None, node_type=None, created=None, updated=None, user_defined=None):
         """ListConfigurationsResult
 
         The model defined in huaweicloud sdk
@@ -57,6 +59,8 @@ class ListConfigurationsResult:
         :type datastore_version: str
         :param datastore_name: 数据库类型。
         :type datastore_name: str
+        :param node_type: 参数模板节点类型。 - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。
+        :type node_type: str
         :param created: 创建时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
         :type created: str
         :param updated: 更新时间，格式为\&quot;yyyy-MM-ddTHH:mm:ssZ\&quot;。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
@@ -72,6 +76,7 @@ class ListConfigurationsResult:
         self._description = None
         self._datastore_version = None
         self._datastore_name = None
+        self._node_type = None
         self._created = None
         self._updated = None
         self._user_defined = None
@@ -82,6 +87,7 @@ class ListConfigurationsResult:
         self.description = description
         self.datastore_version = datastore_version
         self.datastore_name = datastore_name
+        self.node_type = node_type
         self.created = created
         self.updated = updated
         self.user_defined = user_defined
@@ -195,6 +201,28 @@ class ListConfigurationsResult:
         :type datastore_name: str
         """
         self._datastore_name = datastore_name
+
+    @property
+    def node_type(self):
+        """Gets the node_type of this ListConfigurationsResult.
+
+        参数模板节点类型。 - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。
+
+        :return: The node_type of this ListConfigurationsResult.
+        :rtype: str
+        """
+        return self._node_type
+
+    @node_type.setter
+    def node_type(self, node_type):
+        """Sets the node_type of this ListConfigurationsResult.
+
+        参数模板节点类型。 - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。
+
+        :param node_type: The node_type of this ListConfigurationsResult.
+        :type node_type: str
+        """
+        self._node_type = node_type
 
     @property
     def created(self):

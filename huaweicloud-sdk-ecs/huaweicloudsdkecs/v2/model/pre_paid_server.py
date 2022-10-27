@@ -37,6 +37,7 @@ class PrePaidServer:
         'data_volumes': 'list[PrePaidServerDataVolume]',
         'security_groups': 'list[PrePaidServerSecurityGroup]',
         'availability_zone': 'str',
+        'batch_create_in_multi_az': 'bool',
         'extendparam': 'PrePaidServerExtendParam',
         'metadata': 'dict(str, str)',
         'osscheduler_hints': 'PrePaidServerSchedulerHints',
@@ -62,6 +63,7 @@ class PrePaidServer:
         'data_volumes': 'data_volumes',
         'security_groups': 'security_groups',
         'availability_zone': 'availability_zone',
+        'batch_create_in_multi_az': 'batch_create_in_multi_az',
         'extendparam': 'extendparam',
         'metadata': 'metadata',
         'osscheduler_hints': 'os:scheduler_hints',
@@ -70,7 +72,7 @@ class PrePaidServer:
         'description': 'description'
     }
 
-    def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, user_data=None, admin_pass=None, key_name=None, vpcid=None, nics=None, publicip=None, count=None, is_auto_rename=None, root_volume=None, data_volumes=None, security_groups=None, availability_zone=None, extendparam=None, metadata=None, osscheduler_hints=None, tags=None, server_tags=None, description=None):
+    def __init__(self, auto_terminate_time=None, image_ref=None, flavor_ref=None, name=None, user_data=None, admin_pass=None, key_name=None, vpcid=None, nics=None, publicip=None, count=None, is_auto_rename=None, root_volume=None, data_volumes=None, security_groups=None, availability_zone=None, batch_create_in_multi_az=None, extendparam=None, metadata=None, osscheduler_hints=None, tags=None, server_tags=None, description=None):
         """PrePaidServer
 
         The model defined in huaweicloud sdk
@@ -107,6 +109,8 @@ class PrePaidServer:
         :type security_groups: list[:class:`huaweicloudsdkecs.v2.PrePaidServerSecurityGroup`]
         :param availability_zone: 待创建云服务器所在的可用分区，需要指定可用分区（AZ）的名称。  可通过接口 [查询可用区列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product&#x3D;ECS&amp;api&#x3D;NovaListAvailabilityZones) 获取，也可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取。
         :type availability_zone: str
+        :param batch_create_in_multi_az: 是否支持随机多AZ部署。  - “true”：批量创建的ecs部署在多个AZ上 - “false”：批量创建的ecs部署在单个AZ上  &gt; 说明： &gt;  &gt; 当availability_zone为空时该字段生效。
+        :type batch_create_in_multi_az: bool
         :param extendparam: 
         :type extendparam: :class:`huaweicloudsdkecs.v2.PrePaidServerExtendParam`
         :param metadata: 用户自定义字段键值对。  &gt; 说明： &gt;  &gt; - 最多可注入10对键值（Key/Value）。 &gt; - 主键（Key）只能由大写字母（A-Z）、小写字母（a-z）、数字（0-9）、中划线（-）、下划线（_）、冒号（:）和小数点（.）组成，长度为[1-255]个字符。 &gt; - 值（value）最大长度为255个字符。  系统预留字段  1. op_svc_userid : 用户ID      当extendparam结构中的chargingMode为prePaid（即创建包年包月付费的云服务器），且使用SSH秘钥方式登录云服务器时，该字段为必选字段。  2. agency_name  :  委托的名称   委托是由租户管理员在统一身份认证服务（Identity and Access Management，IAM）上创建的，可以为弹性云服务器提供访问云服务的临时凭证。  &gt; 说明： &gt;  &gt; 委托获取、更新请参考如下步骤： &gt;  &gt; 1. 使用IAM服务提供的[查询委托列表](https://support.huaweicloud.com/api-iam/zh-cn_topic_0079467614.html)接口，获取有效可用的委托名称。 &gt; 2. 使用[更新云服务器元数](https://support.huaweicloud.com/api-ecs/zh-cn_topic_0025560298.html)据接口，更新metadata中agency_name字段为新的委托名称。 
@@ -139,6 +143,7 @@ class PrePaidServer:
         self._data_volumes = None
         self._security_groups = None
         self._availability_zone = None
+        self._batch_create_in_multi_az = None
         self._extendparam = None
         self._metadata = None
         self._osscheduler_hints = None
@@ -173,6 +178,8 @@ class PrePaidServer:
             self.security_groups = security_groups
         if availability_zone is not None:
             self.availability_zone = availability_zone
+        if batch_create_in_multi_az is not None:
+            self.batch_create_in_multi_az = batch_create_in_multi_az
         if extendparam is not None:
             self.extendparam = extendparam
         if metadata is not None:
@@ -533,6 +540,28 @@ class PrePaidServer:
         :type availability_zone: str
         """
         self._availability_zone = availability_zone
+
+    @property
+    def batch_create_in_multi_az(self):
+        """Gets the batch_create_in_multi_az of this PrePaidServer.
+
+        是否支持随机多AZ部署。  - “true”：批量创建的ecs部署在多个AZ上 - “false”：批量创建的ecs部署在单个AZ上  > 说明： >  > 当availability_zone为空时该字段生效。
+
+        :return: The batch_create_in_multi_az of this PrePaidServer.
+        :rtype: bool
+        """
+        return self._batch_create_in_multi_az
+
+    @batch_create_in_multi_az.setter
+    def batch_create_in_multi_az(self, batch_create_in_multi_az):
+        """Sets the batch_create_in_multi_az of this PrePaidServer.
+
+        是否支持随机多AZ部署。  - “true”：批量创建的ecs部署在多个AZ上 - “false”：批量创建的ecs部署在单个AZ上  > 说明： >  > 当availability_zone为空时该字段生效。
+
+        :param batch_create_in_multi_az: The batch_create_in_multi_az of this PrePaidServer.
+        :type batch_create_in_multi_az: bool
+        """
+        self._batch_create_in_multi_az = batch_create_in_multi_az
 
     @property
     def extendparam(self):

@@ -21,35 +21,28 @@ class DeleteLoadbalancerRequest:
     sensitive_list = []
 
     openapi_types = {
-        'loadbalancer_id': 'str',
-        'cascade': 'bool'
+        'loadbalancer_id': 'str'
     }
 
     attribute_map = {
-        'loadbalancer_id': 'loadbalancer_id',
-        'cascade': 'cascade'
+        'loadbalancer_id': 'loadbalancer_id'
     }
 
-    def __init__(self, loadbalancer_id=None, cascade=None):
+    def __init__(self, loadbalancer_id=None):
         """DeleteLoadbalancerRequest
 
         The model defined in huaweicloud sdk
 
         :param loadbalancer_id: 负载均衡器id
         :type loadbalancer_id: str
-        :param cascade: （不再支持）级联删除负载均衡器
-        :type cascade: bool
         """
         
         
 
         self._loadbalancer_id = None
-        self._cascade = None
         self.discriminator = None
 
         self.loadbalancer_id = loadbalancer_id
-        if cascade is not None:
-            self.cascade = cascade
 
     @property
     def loadbalancer_id(self):
@@ -72,28 +65,6 @@ class DeleteLoadbalancerRequest:
         :type loadbalancer_id: str
         """
         self._loadbalancer_id = loadbalancer_id
-
-    @property
-    def cascade(self):
-        """Gets the cascade of this DeleteLoadbalancerRequest.
-
-        （不再支持）级联删除负载均衡器
-
-        :return: The cascade of this DeleteLoadbalancerRequest.
-        :rtype: bool
-        """
-        return self._cascade
-
-    @cascade.setter
-    def cascade(self, cascade):
-        """Sets the cascade of this DeleteLoadbalancerRequest.
-
-        （不再支持）级联删除负载均衡器
-
-        :param cascade: The cascade of this DeleteLoadbalancerRequest.
-        :type cascade: bool
-        """
-        self._cascade = cascade
 
     def to_dict(self):
         """Returns the model properties as a dict"""

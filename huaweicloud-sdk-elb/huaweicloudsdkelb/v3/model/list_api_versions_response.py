@@ -21,80 +21,51 @@ class ListApiVersionsResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'status': 'str'
+        'versions': 'list[ApiVersionInfo]'
     }
 
     attribute_map = {
-        'id': 'id',
-        'status': 'status'
+        'versions': 'versions'
     }
 
-    def __init__(self, id=None, status=None):
+    def __init__(self, versions=None):
         """ListApiVersionsResponse
 
         The model defined in huaweicloud sdk
 
-        :param id: API版本号。 取值：由高到低版本分别为v3，v2，v2.0。
-        :type id: str
-        :param status: API版本的状态。 取值： - CURRENT：当前版本。 - STABLE：稳定版本。 - DEPRECATED：废弃版本。  说明： 所有支持的API版本中最高版状态为CURRENT，其他版本状态为STABLE。
-        :type status: str
+        :param versions: 可用API版本列表。
+        :type versions: list[:class:`huaweicloudsdkelb.v3.ApiVersionInfo`]
         """
         
         super(ListApiVersionsResponse, self).__init__()
 
-        self._id = None
-        self._status = None
+        self._versions = None
         self.discriminator = None
 
-        if id is not None:
-            self.id = id
-        if status is not None:
-            self.status = status
+        if versions is not None:
+            self.versions = versions
 
     @property
-    def id(self):
-        """Gets the id of this ListApiVersionsResponse.
+    def versions(self):
+        """Gets the versions of this ListApiVersionsResponse.
 
-        API版本号。 取值：由高到低版本分别为v3，v2，v2.0。
+        可用API版本列表。
 
-        :return: The id of this ListApiVersionsResponse.
-        :rtype: str
+        :return: The versions of this ListApiVersionsResponse.
+        :rtype: list[:class:`huaweicloudsdkelb.v3.ApiVersionInfo`]
         """
-        return self._id
+        return self._versions
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this ListApiVersionsResponse.
+    @versions.setter
+    def versions(self, versions):
+        """Sets the versions of this ListApiVersionsResponse.
 
-        API版本号。 取值：由高到低版本分别为v3，v2，v2.0。
+        可用API版本列表。
 
-        :param id: The id of this ListApiVersionsResponse.
-        :type id: str
+        :param versions: The versions of this ListApiVersionsResponse.
+        :type versions: list[:class:`huaweicloudsdkelb.v3.ApiVersionInfo`]
         """
-        self._id = id
-
-    @property
-    def status(self):
-        """Gets the status of this ListApiVersionsResponse.
-
-        API版本的状态。 取值： - CURRENT：当前版本。 - STABLE：稳定版本。 - DEPRECATED：废弃版本。  说明： 所有支持的API版本中最高版状态为CURRENT，其他版本状态为STABLE。
-
-        :return: The status of this ListApiVersionsResponse.
-        :rtype: str
-        """
-        return self._status
-
-    @status.setter
-    def status(self, status):
-        """Sets the status of this ListApiVersionsResponse.
-
-        API版本的状态。 取值： - CURRENT：当前版本。 - STABLE：稳定版本。 - DEPRECATED：废弃版本。  说明： 所有支持的API版本中最高版状态为CURRENT，其他版本状态为STABLE。
-
-        :param status: The status of this ListApiVersionsResponse.
-        :type status: str
-        """
-        self._status = status
+        self._versions = versions
 
     def to_dict(self):
         """Returns the model properties as a dict"""

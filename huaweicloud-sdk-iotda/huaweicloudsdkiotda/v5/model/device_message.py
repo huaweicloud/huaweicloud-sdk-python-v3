@@ -27,6 +27,7 @@ class DeviceMessage:
         'encoding': 'str',
         'payload_format': 'str',
         'topic': 'str',
+        'properties': 'PropertiesDTO',
         'status': 'str',
         'error_info': 'ErrorInfoDTO',
         'created_time': 'str',
@@ -40,13 +41,14 @@ class DeviceMessage:
         'encoding': 'encoding',
         'payload_format': 'payload_format',
         'topic': 'topic',
+        'properties': 'properties',
         'status': 'status',
         'error_info': 'error_info',
         'created_time': 'created_time',
         'finished_time': 'finished_time'
     }
 
-    def __init__(self, message_id=None, name=None, message=None, encoding=None, payload_format=None, topic=None, status=None, error_info=None, created_time=None, finished_time=None):
+    def __init__(self, message_id=None, name=None, message=None, encoding=None, payload_format=None, topic=None, properties=None, status=None, error_info=None, created_time=None, finished_time=None):
         """DeviceMessage
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class DeviceMessage:
         :type payload_format: str
         :param topic: 消息topic
         :type topic: str
+        :param properties: 
+        :type properties: :class:`huaweicloudsdkiotda.v5.PropertiesDTO`
         :param status: 消息状态，包含PENDING，DELIVERED，FAILED和TIMEOUT，PENDING指设备不在线，消息被缓存起来，等设备上线之后下发； DELIVERED指消息发送成功；FAILED消息发送失败；TIMEOUT指消息在平台默认时间内（1天）还没有下发送给设备，则平台会将消息设置为超时，状态为TIMEOUT。
         :type status: str
         :param error_info: 
@@ -81,6 +85,7 @@ class DeviceMessage:
         self._encoding = None
         self._payload_format = None
         self._topic = None
+        self._properties = None
         self._status = None
         self._error_info = None
         self._created_time = None
@@ -99,6 +104,8 @@ class DeviceMessage:
             self.payload_format = payload_format
         if topic is not None:
             self.topic = topic
+        if properties is not None:
+            self.properties = properties
         if status is not None:
             self.status = status
         if error_info is not None:
@@ -239,6 +246,26 @@ class DeviceMessage:
         :type topic: str
         """
         self._topic = topic
+
+    @property
+    def properties(self):
+        """Gets the properties of this DeviceMessage.
+
+
+        :return: The properties of this DeviceMessage.
+        :rtype: :class:`huaweicloudsdkiotda.v5.PropertiesDTO`
+        """
+        return self._properties
+
+    @properties.setter
+    def properties(self, properties):
+        """Sets the properties of this DeviceMessage.
+
+
+        :param properties: The properties of this DeviceMessage.
+        :type properties: :class:`huaweicloudsdkiotda.v5.PropertiesDTO`
+        """
+        self._properties = properties
 
     @property
     def status(self):

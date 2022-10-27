@@ -981,7 +981,7 @@ class EcsAsyncClient(Client):
         return self.create_post_paid_servers_with_http_info(request)
 
     def create_post_paid_servers_with_http_info(self, request):
-        all_params = ['create_post_paid_servers_request_body']
+        all_params = ['create_post_paid_servers_request_body', 'x_client_token']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -994,6 +994,8 @@ class EcsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
 
         form_params = {}
 
@@ -1121,7 +1123,7 @@ class EcsAsyncClient(Client):
         return self.create_servers_with_http_info(request)
 
     def create_servers_with_http_info(self, request):
-        all_params = ['create_servers_request_body']
+        all_params = ['create_servers_request_body', 'x_client_token']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1134,6 +1136,8 @@ class EcsAsyncClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_client_token' in local_var_params:
+            header_params['X-Client-Token'] = local_var_params['x_client_token']
 
         form_params = {}
 

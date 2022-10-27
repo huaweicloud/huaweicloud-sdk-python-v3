@@ -57,9 +57,9 @@ class ListPoolsRequest:
 
         The model defined in huaweicloud sdk
 
-        :param limit: 分页查询中每页的监听器个数
+        :param limit: 分页查询中每页的后端服务器组个数
         :type limit: int
-        :param marker: 分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
+        :param marker: 分页查询的起始的资源id，表示上一页最后一条查询记录的后端服务器组的id。不指定时表示查询第一页。
         :type marker: str
         :param page_reverse: 分页的顺序，true表示从后往前分页，false表示从前往后分页，默认为false。
         :type page_reverse: bool
@@ -81,7 +81,7 @@ class ListPoolsRequest:
         :type member_address: str
         :param member_device_id: 后端云服务器组关联的后端云服务器对应的弹性云服务器的ID。
         :type member_device_id: str
-        :param enterprise_project_id: 企业项目ID，仅用于基于企业项目的细粒度鉴权使用；如果参数中传递了loadbalancer_id，则用该负载均衡器对应企业项目ID鉴权；如果参数中没有传递loadbalancer_id，而传递了healthmonitor_id，则使用健康检查器对应的企业项目id鉴权。
+        :param enterprise_project_id: 企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\&quot;0\&quot;表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
         :type enterprise_project_id: str
         """
         
@@ -133,7 +133,7 @@ class ListPoolsRequest:
     def limit(self):
         """Gets the limit of this ListPoolsRequest.
 
-        分页查询中每页的监听器个数
+        分页查询中每页的后端服务器组个数
 
         :return: The limit of this ListPoolsRequest.
         :rtype: int
@@ -144,7 +144,7 @@ class ListPoolsRequest:
     def limit(self, limit):
         """Sets the limit of this ListPoolsRequest.
 
-        分页查询中每页的监听器个数
+        分页查询中每页的后端服务器组个数
 
         :param limit: The limit of this ListPoolsRequest.
         :type limit: int
@@ -155,7 +155,7 @@ class ListPoolsRequest:
     def marker(self):
         """Gets the marker of this ListPoolsRequest.
 
-        分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
+        分页查询的起始的资源id，表示上一页最后一条查询记录的后端服务器组的id。不指定时表示查询第一页。
 
         :return: The marker of this ListPoolsRequest.
         :rtype: str
@@ -166,7 +166,7 @@ class ListPoolsRequest:
     def marker(self, marker):
         """Sets the marker of this ListPoolsRequest.
 
-        分页查询的起始的资源id，表示上一页最后一条查询记录的负载均衡器的id。不指定时表示查询第一页。
+        分页查询的起始的资源id，表示上一页最后一条查询记录的后端服务器组的id。不指定时表示查询第一页。
 
         :param marker: The marker of this ListPoolsRequest.
         :type marker: str
@@ -397,7 +397,7 @@ class ListPoolsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListPoolsRequest.
 
-        企业项目ID，仅用于基于企业项目的细粒度鉴权使用；如果参数中传递了loadbalancer_id，则用该负载均衡器对应企业项目ID鉴权；如果参数中没有传递loadbalancer_id，而传递了healthmonitor_id，则使用健康检查器对应的企业项目id鉴权。
+        企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 
         :return: The enterprise_project_id of this ListPoolsRequest.
         :rtype: str
@@ -408,7 +408,7 @@ class ListPoolsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListPoolsRequest.
 
-        企业项目ID，仅用于基于企业项目的细粒度鉴权使用；如果参数中传递了loadbalancer_id，则用该负载均衡器对应企业项目ID鉴权；如果参数中没有传递loadbalancer_id，而传递了healthmonitor_id，则使用健康检查器对应的企业项目id鉴权。
+        企业项目ID。  传入all_granted_eps表示查询所有有权限的企业项目资源；\"0\"表示查询默认企业项目资源；或者指定的企业项目ID下的资源。
 
         :param enterprise_project_id: The enterprise_project_id of this ListPoolsRequest.
         :type enterprise_project_id: str

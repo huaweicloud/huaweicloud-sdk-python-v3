@@ -45,7 +45,7 @@ class ImportCertificateRequestBody:
 
         The model defined in huaweicloud sdk
 
-        :param name: 证书名称。字符长度为0~63位。
+        :param name: 证书名称。字符长度为3~63位。
         :type name: str
         :param certificate: 证书内容。回车换行需要使用转义字符\\n或者\\r\\n替换。
         :type certificate: str
@@ -87,7 +87,7 @@ class ImportCertificateRequestBody:
     def name(self):
         """Gets the name of this ImportCertificateRequestBody.
 
-        证书名称。字符长度为0~63位。
+        证书名称。字符长度为3~63位。
 
         :return: The name of this ImportCertificateRequestBody.
         :rtype: str
@@ -98,7 +98,7 @@ class ImportCertificateRequestBody:
     def name(self, name):
         """Sets the name of this ImportCertificateRequestBody.
 
-        证书名称。字符长度为0~63位。
+        证书名称。字符长度为3~63位。
 
         :param name: The name of this ImportCertificateRequestBody.
         :type name: str

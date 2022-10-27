@@ -21,20 +21,24 @@ class UpdateNodeByDeviceIdRequest:
     sensitive_list = []
 
     openapi_types = {
+        'ief_instance_id': 'str',
         'device_id': 'str',
         'body': 'EdgeNodeUpdateByDevice'
     }
 
     attribute_map = {
+        'ief_instance_id': 'ief-instance-id',
         'device_id': 'device_id',
         'body': 'body'
     }
 
-    def __init__(self, device_id=None, body=None):
+    def __init__(self, ief_instance_id=None, device_id=None, body=None):
         """UpdateNodeByDeviceIdRequest
 
         The model defined in huaweicloud sdk
 
+        :param ief_instance_id: 铂金版实例ID，专业版实例为空值
+        :type ief_instance_id: str
         :param device_id: 设备ID
         :type device_id: str
         :param body: Body of the UpdateNodeByDeviceIdRequest
@@ -43,13 +47,38 @@ class UpdateNodeByDeviceIdRequest:
         
         
 
+        self._ief_instance_id = None
         self._device_id = None
         self._body = None
         self.discriminator = None
 
+        if ief_instance_id is not None:
+            self.ief_instance_id = ief_instance_id
         self.device_id = device_id
         if body is not None:
             self.body = body
+
+    @property
+    def ief_instance_id(self):
+        """Gets the ief_instance_id of this UpdateNodeByDeviceIdRequest.
+
+        铂金版实例ID，专业版实例为空值
+
+        :return: The ief_instance_id of this UpdateNodeByDeviceIdRequest.
+        :rtype: str
+        """
+        return self._ief_instance_id
+
+    @ief_instance_id.setter
+    def ief_instance_id(self, ief_instance_id):
+        """Sets the ief_instance_id of this UpdateNodeByDeviceIdRequest.
+
+        铂金版实例ID，专业版实例为空值
+
+        :param ief_instance_id: The ief_instance_id of this UpdateNodeByDeviceIdRequest.
+        :type ief_instance_id: str
+        """
+        self._ief_instance_id = ief_instance_id
 
     @property
     def device_id(self):

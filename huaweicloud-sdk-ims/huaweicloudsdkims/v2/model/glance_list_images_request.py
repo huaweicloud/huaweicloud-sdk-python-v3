@@ -95,7 +95,7 @@ class GlanceListImagesRequest:
 
         The model defined in huaweicloud sdk
 
-        :param imagetype: 镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
+        :param imagetype: 镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
         :type imagetype: str
         :param isregistered: 镜像是否是受保护，取值为true/false。一般查询公共镜像时候取值为true，查询私有镜像可以不指定。
         :type isregistered: bool
@@ -266,7 +266,7 @@ class GlanceListImagesRequest:
     def imagetype(self):
         """Gets the imagetype of this GlanceListImagesRequest.
 
-        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
+        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
 
         :return: The imagetype of this GlanceListImagesRequest.
         :rtype: str
@@ -277,7 +277,7 @@ class GlanceListImagesRequest:
     def imagetype(self, imagetype):
         """Sets the imagetype of this GlanceListImagesRequest.
 
-        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared
+        镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
 
         :param imagetype: The imagetype of this GlanceListImagesRequest.
         :type imagetype: str

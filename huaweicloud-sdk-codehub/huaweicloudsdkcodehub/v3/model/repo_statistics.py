@@ -59,7 +59,7 @@ class RepoStatistics:
         :type created_at: datetime
         :param delete_lines: 删除代码行
         :type delete_lines: int
-        :param id: 仓库id
+        :param id: 仓库统计记录id
         :type id: int
         :param project_id: 仓库id
         :type project_id: int
@@ -215,7 +215,7 @@ class RepoStatistics:
     def id(self):
         """Gets the id of this RepoStatistics.
 
-        仓库id
+        仓库统计记录id
 
         :return: The id of this RepoStatistics.
         :rtype: int
@@ -226,7 +226,7 @@ class RepoStatistics:
     def id(self, id):
         """Sets the id of this RepoStatistics.
 
-        仓库id
+        仓库统计记录id
 
         :param id: The id of this RepoStatistics.
         :type id: int

@@ -21,14 +21,14 @@ class BandwidthInfo:
     sensitive_list = []
 
     openapi_types = {
-        'begin_time': 'str',
-        'end_time': 'str',
-        'current_time': 'str',
+        'begin_time': 'int',
+        'end_time': 'int',
+        'current_time': 'int',
         'bandwidth': 'int',
-        'next_expand_time': 'str',
+        'next_expand_time': 'int',
         'expand_count': 'int',
-        'expand_effect_time': 'str',
-        'expand_interval_time': 'str',
+        'expand_effect_time': 'int',
+        'expand_interval_time': 'int',
         'max_expand_count': 'int',
         'task_running': 'bool'
     }
@@ -52,21 +52,21 @@ class BandwidthInfo:
         The model defined in huaweicloud sdk
 
         :param begin_time: 临时扩容开始时间
-        :type begin_time: str
+        :type begin_time: int
         :param end_time: 临时扩容结束时间
-        :type end_time: str
+        :type end_time: int
         :param current_time: 当前时间
-        :type current_time: str
+        :type current_time: int
         :param bandwidth: 当前带宽，单位为GB
         :type bandwidth: int
         :param next_expand_time: 下一个扩容时间
-        :type next_expand_time: str
+        :type next_expand_time: int
         :param expand_count: 扩容数量
         :type expand_count: int
         :param expand_effect_time: 临时扩容时间间隔
-        :type expand_effect_time: str
+        :type expand_effect_time: int
         :param expand_interval_time: 下一次可以扩容间隔时间
-        :type expand_interval_time: str
+        :type expand_interval_time: int
         :param max_expand_count: 最大扩容数量
         :type max_expand_count: int
         :param task_running: 任务是否运行
@@ -115,7 +115,7 @@ class BandwidthInfo:
         临时扩容开始时间
 
         :return: The begin_time of this BandwidthInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._begin_time
 
@@ -126,7 +126,7 @@ class BandwidthInfo:
         临时扩容开始时间
 
         :param begin_time: The begin_time of this BandwidthInfo.
-        :type begin_time: str
+        :type begin_time: int
         """
         self._begin_time = begin_time
 
@@ -137,7 +137,7 @@ class BandwidthInfo:
         临时扩容结束时间
 
         :return: The end_time of this BandwidthInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._end_time
 
@@ -148,7 +148,7 @@ class BandwidthInfo:
         临时扩容结束时间
 
         :param end_time: The end_time of this BandwidthInfo.
-        :type end_time: str
+        :type end_time: int
         """
         self._end_time = end_time
 
@@ -159,7 +159,7 @@ class BandwidthInfo:
         当前时间
 
         :return: The current_time of this BandwidthInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._current_time
 
@@ -170,7 +170,7 @@ class BandwidthInfo:
         当前时间
 
         :param current_time: The current_time of this BandwidthInfo.
-        :type current_time: str
+        :type current_time: int
         """
         self._current_time = current_time
 
@@ -203,7 +203,7 @@ class BandwidthInfo:
         下一个扩容时间
 
         :return: The next_expand_time of this BandwidthInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._next_expand_time
 
@@ -214,7 +214,7 @@ class BandwidthInfo:
         下一个扩容时间
 
         :param next_expand_time: The next_expand_time of this BandwidthInfo.
-        :type next_expand_time: str
+        :type next_expand_time: int
         """
         self._next_expand_time = next_expand_time
 
@@ -247,7 +247,7 @@ class BandwidthInfo:
         临时扩容时间间隔
 
         :return: The expand_effect_time of this BandwidthInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._expand_effect_time
 
@@ -258,7 +258,7 @@ class BandwidthInfo:
         临时扩容时间间隔
 
         :param expand_effect_time: The expand_effect_time of this BandwidthInfo.
-        :type expand_effect_time: str
+        :type expand_effect_time: int
         """
         self._expand_effect_time = expand_effect_time
 
@@ -269,7 +269,7 @@ class BandwidthInfo:
         下一次可以扩容间隔时间
 
         :return: The expand_interval_time of this BandwidthInfo.
-        :rtype: str
+        :rtype: int
         """
         return self._expand_interval_time
 
@@ -280,7 +280,7 @@ class BandwidthInfo:
         下一次可以扩容间隔时间
 
         :param expand_interval_time: The expand_interval_time of this BandwidthInfo.
-        :type expand_interval_time: str
+        :type expand_interval_time: int
         """
         self._expand_interval_time = expand_interval_time
 

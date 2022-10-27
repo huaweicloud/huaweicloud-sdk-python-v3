@@ -11,6 +11,9 @@ from huaweicloudsdksfsturbo.v1.model.change_security_group import ChangeSecurity
 from huaweicloudsdksfsturbo.v1.model.change_security_group_request import ChangeSecurityGroupRequest
 from huaweicloudsdksfsturbo.v1.model.change_security_group_request_body import ChangeSecurityGroupRequestBody
 from huaweicloudsdksfsturbo.v1.model.change_security_group_response import ChangeSecurityGroupResponse
+from huaweicloudsdksfsturbo.v1.model.change_share_name_req import ChangeShareNameReq
+from huaweicloudsdksfsturbo.v1.model.change_share_name_request import ChangeShareNameRequest
+from huaweicloudsdksfsturbo.v1.model.change_share_name_response import ChangeShareNameResponse
 from huaweicloudsdksfsturbo.v1.model.create_share_request import CreateShareRequest
 from huaweicloudsdksfsturbo.v1.model.create_share_request_body import CreateShareRequestBody
 from huaweicloudsdksfsturbo.v1.model.create_share_response import CreateShareResponse
@@ -32,6 +35,7 @@ from huaweicloudsdksfsturbo.v1.model.list_shares_response import ListSharesRespo
 from huaweicloudsdksfsturbo.v1.model.metadata import Metadata
 from huaweicloudsdksfsturbo.v1.model.resource_tag import ResourceTag
 from huaweicloudsdksfsturbo.v1.model.share import Share
+from huaweicloudsdksfsturbo.v1.model.share_name import ShareName
 from huaweicloudsdksfsturbo.v1.model.shares import Shares
 from huaweicloudsdksfsturbo.v1.model.show_share_request import ShowShareRequest
 from huaweicloudsdksfsturbo.v1.model.show_share_response import ShowShareResponse

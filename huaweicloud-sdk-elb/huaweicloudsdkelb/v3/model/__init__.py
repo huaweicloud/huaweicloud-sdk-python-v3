@@ -3,6 +3,7 @@
 from __future__ import absolute_import
 
 # import models into model package
+from huaweicloudsdkelb.v3.model.api_version_info import ApiVersionInfo
 from huaweicloudsdkelb.v3.model.autoscaling_ref import AutoscalingRef
 from huaweicloudsdkelb.v3.model.availability_zone import AvailabilityZone
 from huaweicloudsdkelb.v3.model.bandwidth_ref import BandwidthRef

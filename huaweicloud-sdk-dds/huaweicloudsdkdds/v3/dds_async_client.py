@@ -48,6 +48,66 @@ class DdsAsyncClient(Client):
 
         return ClientBuilder(clazz)
 
+    def add_readonly_node_async(self, request):
+        """实例新增只读节点
+
+        DDS副本集实例新增只读节点。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for AddReadonlyNode
+        :type request: :class:`huaweicloudsdkdds.v3.AddReadonlyNodeRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.AddReadonlyNodeResponse`
+        """
+        return self.add_readonly_node_with_http_info(request)
+
+    def add_readonly_node_with_http_info(self, request):
+        all_params = ['instance_id', 'add_readonly_node_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/readonly-node',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='AddReadonlyNodeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def add_sharding_node_async(self, request):
         """扩容集群实例的节点数量
 
@@ -341,6 +401,66 @@ class DdsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CancelEipResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def change_ops_window_async(self, request):
+        """设置可维护时间段
+
+        修改用户允许启动某项对数据库实例运行有影响的任务的时间范围，例如操作系统升级和数据库软件版本升级的时间窗。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ChangeOpsWindow
+        :type request: :class:`huaweicloudsdkdds.v3.ChangeOpsWindowRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ChangeOpsWindowResponse`
+        """
+        return self.change_ops_window_with_http_info(request)
+
+    def change_ops_window_with_http_info(self, request):
+        all_params = ['instance_id', 'ops_window_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/maintenance-window',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ChangeOpsWindowResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -643,9 +763,9 @@ class DdsAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def create_ip_async(self, request):
-        """打开集群的Shard/Config IP开关
+        """创建集群的Shard/Config IP
 
-        打开集群的Shard/Config IP开关
+        创建集群的Shard/Config IP
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1229,6 +1349,66 @@ class DdsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DownloadSlowlogResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def expand_replicaset_node_async(self, request):
+        """扩容副本集实例的节点数量
+
+        扩容指定副本集实例的节点数量，暂不支持包周期实例
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ExpandReplicasetNode
+        :type request: :class:`huaweicloudsdkdds.v3.ExpandReplicasetNodeRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ExpandReplicasetNodeResponse`
+        """
+        return self.expand_replicaset_node_with_http_info(request)
+
+    def expand_replicaset_node_with_http_info(self, request):
+        all_params = ['instance_id', 'enlarge_replicaset_node_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/replicaset-node',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ExpandReplicasetNodeResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3298,6 +3478,64 @@ class DdsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def set_recycle_policy_async(self, request):
+        """设置实例回收站策略
+
+        设置实例回收站策略
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SetRecyclePolicy
+        :type request: :class:`huaweicloudsdkdds.v3.SetRecyclePolicyRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.SetRecyclePolicyResponse`
+        """
+        return self.set_recycle_policy_with_http_info(request)
+
+    def set_recycle_policy_with_http_info(self, request):
+        all_params = ['recycle_policy_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/recycle-policy',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SetRecyclePolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_auditlog_policy_async(self, request):
         """查询审计日志策略
 
@@ -3770,6 +4008,64 @@ class DdsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_second_level_monitoring_status_async(self, request):
+        """查询秒级监控配置
+
+        查询秒级监控配置。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowSecondLevelMonitoringStatus
+        :type request: :class:`huaweicloudsdkdds.v3.ShowSecondLevelMonitoringStatusRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ShowSecondLevelMonitoringStatusResponse`
+        """
+        return self.show_second_level_monitoring_status_with_http_info(request)
+
+    def show_second_level_monitoring_status_with_http_info(self, request):
+        all_params = ['instance_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/monitoring-by-seconds/switch',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowSecondLevelMonitoringStatusResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_sharding_balancer_async(self, request):
         """查询集群均衡设置
 
@@ -3883,6 +4179,66 @@ class DdsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='SwitchConfigurationResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def switch_second_level_monitoring_async(self, request):
+        """开启/关闭秒级监控
+
+        开启或关闭指定实例的秒级监控。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SwitchSecondLevelMonitoring
+        :type request: :class:`huaweicloudsdkdds.v3.SwitchSecondLevelMonitoringRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.SwitchSecondLevelMonitoringResponse`
+        """
+        return self.switch_second_level_monitoring_with_http_info(request)
+
+    def switch_second_level_monitoring_with_http_info(self, request):
+        all_params = ['instance_id', 'switch_second_level_monitoring_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/monitoring-by-seconds/switch',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SwitchSecondLevelMonitoringResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4481,6 +4837,66 @@ class DdsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateSecurityGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def upgrade_database_version_async(self, request):
+        """数据库补丁升级
+
+        升级数据库补丁版本。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpgradeDatabaseVersion
+        :type request: :class:`huaweicloudsdkdds.v3.UpgradeDatabaseVersionRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.UpgradeDatabaseVersionResponse`
+        """
+        return self.upgrade_database_version_with_http_info(request)
+
+    def upgrade_database_version_with_http_info(self, request):
+        all_params = ['instance_id', 'upgrade_database_version_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db-upgrade',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpgradeDatabaseVersionResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

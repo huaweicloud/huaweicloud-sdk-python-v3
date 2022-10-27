@@ -24,7 +24,6 @@ class PodResp:
         'id': 'str',
         'name': 'str',
         'configs': 'PodConfigs',
-        'affinity': 'Affinity',
         'init_containers': 'list[ContainerResp]',
         'containers': 'list[ContainerResp]',
         'node_id': 'str',
@@ -33,7 +32,6 @@ class PodResp:
         'reason': 'str',
         'message': 'str',
         'created_at': 'str',
-        'updated_at': 'str',
         'state': 'str'
     }
 
@@ -41,7 +39,6 @@ class PodResp:
         'id': 'id',
         'name': 'name',
         'configs': 'configs',
-        'affinity': 'affinity',
         'init_containers': 'init_containers',
         'containers': 'containers',
         'node_id': 'node_id',
@@ -50,11 +47,10 @@ class PodResp:
         'reason': 'reason',
         'message': 'message',
         'created_at': 'created_at',
-        'updated_at': 'updated_at',
         'state': 'state'
     }
 
-    def __init__(self, id=None, name=None, configs=None, affinity=None, init_containers=None, containers=None, node_id=None, deployment_id=None, project_id=None, reason=None, message=None, created_at=None, updated_at=None, state=None):
+    def __init__(self, id=None, name=None, configs=None, init_containers=None, containers=None, node_id=None, deployment_id=None, project_id=None, reason=None, message=None, created_at=None, state=None):
         """PodResp
 
         The model defined in huaweicloud sdk
@@ -65,8 +61,6 @@ class PodResp:
         :type name: str
         :param configs: 
         :type configs: :class:`huaweicloudsdkief.v1.PodConfigs`
-        :param affinity: 
-        :type affinity: :class:`huaweicloudsdkief.v1.Affinity`
         :param init_containers: 应用实例init容器
         :type init_containers: list[:class:`huaweicloudsdkief.v1.ContainerResp`]
         :param containers: 应用实例业务容器
@@ -83,8 +77,6 @@ class PodResp:
         :type message: str
         :param created_at: 应用实例创建时间
         :type created_at: str
-        :param updated_at: 应用实例更新时间
-        :type updated_at: str
         :param state: 应用实例状态
         :type state: str
         """
@@ -94,7 +86,6 @@ class PodResp:
         self._id = None
         self._name = None
         self._configs = None
-        self._affinity = None
         self._init_containers = None
         self._containers = None
         self._node_id = None
@@ -103,14 +94,12 @@ class PodResp:
         self._reason = None
         self._message = None
         self._created_at = None
-        self._updated_at = None
         self._state = None
         self.discriminator = None
 
         self.id = id
         self.name = name
         self.configs = configs
-        self.affinity = affinity
         if init_containers is not None:
             self.init_containers = init_containers
         self.containers = containers
@@ -120,7 +109,6 @@ class PodResp:
         self.reason = reason
         self.message = message
         self.created_at = created_at
-        self.updated_at = updated_at
         self.state = state
 
     @property
@@ -186,26 +174,6 @@ class PodResp:
         :type configs: :class:`huaweicloudsdkief.v1.PodConfigs`
         """
         self._configs = configs
-
-    @property
-    def affinity(self):
-        """Gets the affinity of this PodResp.
-
-
-        :return: The affinity of this PodResp.
-        :rtype: :class:`huaweicloudsdkief.v1.Affinity`
-        """
-        return self._affinity
-
-    @affinity.setter
-    def affinity(self, affinity):
-        """Sets the affinity of this PodResp.
-
-
-        :param affinity: The affinity of this PodResp.
-        :type affinity: :class:`huaweicloudsdkief.v1.Affinity`
-        """
-        self._affinity = affinity
 
     @property
     def init_containers(self):
@@ -382,28 +350,6 @@ class PodResp:
         :type created_at: str
         """
         self._created_at = created_at
-
-    @property
-    def updated_at(self):
-        """Gets the updated_at of this PodResp.
-
-        应用实例更新时间
-
-        :return: The updated_at of this PodResp.
-        :rtype: str
-        """
-        return self._updated_at
-
-    @updated_at.setter
-    def updated_at(self, updated_at):
-        """Sets the updated_at of this PodResp.
-
-        应用实例更新时间
-
-        :param updated_at: The updated_at of this PodResp.
-        :type updated_at: str
-        """
-        self._updated_at = updated_at
 
     @property
     def state(self):

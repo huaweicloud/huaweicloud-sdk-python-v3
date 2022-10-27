@@ -580,13 +580,13 @@ class ElbAsyncClient(Client):
         """创建负载均衡器
 
         创建负载均衡器。
-        
-        1.若要创建内网IPv4负载均衡器，则需要设置vip_subnet_cidr_id。
-        2.若要创建公网IPv4负载均衡器，则需要设置publicip，以及设置vpc_id和vip_subnet_cidr_id这两个参数中的一个。
-        3.若要绑定有已有公网IPv4地址，需要设置publicip_ids，以及设置vpc_id和vip_subnet_cidr_id这两个参数中的一个。
-        4.若要创建内网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id。
-        5.若要创建公网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id和ipv6_bandwidth。
-        6.不支持绑定已有未使用的内网IPv4、内网IPv6或公网IPv6地址。
+        1. 若要创建内网IPv4负载均衡器，则需要设置vip_subnet_cidr_id。
+        2. 若要创建公网IPv4负载均衡器，则需要设置publicip，以及设置vpc_id和vip_subnet_cidr_id这两个参数中的一个。
+        3. 若要绑定有已有公网IPv4地址，
+        则需要设置publicip_ids，以及设置vpc_id和vip_subnet_cidr_id这两个参数中的一个。
+        4. 若要创建内网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id。
+        5. 若要创建公网双栈负载均衡器，则需要设置ipv6_vip_virsubnet_id和ipv6_bandwidth。
+        6. 不支持绑定已有未使用的内网IPv4、内网IPv6或公网IPv6地址。
         
         [&gt; 不支持创建IPv6地址负载均衡器](tag:dt,dt_test)
         
@@ -1563,11 +1563,13 @@ class ElbAsyncClient(Client):
 
         返回租户创建LB时可使用的可用区集合列表情况。
         
+        - 默认情况下，会返回一个可用区集合。
+        在（如创建LB）设置可用区时，填写的可用区必须包含在可用区集合中、为这个可用区集合的子集。
         
-        - 默认情况下，会返回一个可用区集合。在（如创建LB）设置可用区时，填写的可用区必须包含在可用区集合中、为这个可用区集合的子集。
-        
-        
-        - 特殊场景下，部分客户要求负载均衡只能创建在指定可用区集合中，此时会返回客户定制的可用区集合。返回可用区集合可能为一个也可能为多个，比如列表有两个可用区集合\\[az1,az2\\], \\[az2, az3\\]。在创建负载均衡器时，可以选择创建在多个可用区，但所选的多个可用区必须同属于其中一个可用区集合，如可以选az2和az3，但不能选择 az1和az3。你可以选择多个可用区，只要这些可用区在一个子集中
+        - 特殊场景下，部分客户要求负载均衡只能创建在指定可用区集合中，此时会返回客户定制的可用区集合。
+        返回可用区集合可能为一个也可能为多个，比如列表有两个可用区集合\\[az1,az2\\],\\[az2,az3\\]。
+        在创建负载均衡器时，可以选择创建在多个可用区，但所选的多个可用区必须同属于其中一个可用区集合，
+        如可以选az2和az3，但不能选择az1和az3。你可以选择多个可用区，只要这些可用区在一个子集中
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -3232,8 +3234,9 @@ class ElbAsyncClient(Client):
         """查询负载均衡器状态树
 
         查询负载均衡器状态树，包括负载均衡器及其关联的子资源的状态信息。
-        
-        注意：该接口中的operating_status不一定与对应资源的operating_status相同。如：当Member的admin_state_up&#x3D;false且operating_status&#x3D;OFFLINE时，该接口返回member的operating_status&#x3D;DISABLE。
+        注意：该接口中的operating_status不一定与对应资源的operating_status相同。
+        如：当Member的admin_state_up&#x3D;false且operating_status&#x3D;OFFLINE时，
+        该接口返回member的operating_status&#x3D;DISABLE。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -4303,21 +4306,17 @@ class ElbAsyncClient(Client):
 
         计算以下几种场景的预占用IP数量：
         
-        -
-        计算创建LB的第一个七层监听器后总占用IP数量：传入loadbalancer_id、l7_flavor_id为空、ip_target_enable不传或为false。
+        - 计算创建LB的第一个七层监听器后总占用IP数量：
+        传入loadbalancer_id、l7_flavor_id为空、ip_target_enable不传或为false。
         
-        -
-        计算LB规格变更或开启跨VPC后总占用IP数量：传入参数loadbalancer_id，及l7_flavor_id不为空或ip_target_enable为true。
+        - 计算LB规格变更或开启跨VPC后总占用IP数量：
+        传入参数loadbalancer_id，及l7_flavor_id不为空或ip_target_enable为true。
         
-        -
-        计算创建LB所需IP数量：传入参数availability_zone_id，及可选参数l7_flavor_id、ip_target_enable、ip_version，不能传loadbalancer_id。
-        
+        - 计算创建LB所需IP数量：传入参数availability_zone_id，
+        及可选参数l7_flavor_id、ip_target_enable、ip_version，不能传loadbalancer_id。
         
         说明：
-        
-        
         - 计算出来的预占IP数大于等于最终实际占用的IP数。
-        
         - 总占用IP数量，即整个LB所占用的IP数量。
         
         详细说明请参考华为云API Explorer。
@@ -4385,7 +4384,9 @@ class ElbAsyncClient(Client):
     def create_ip_group_async(self, request):
         """创建IP地址组
 
-        创建IP地址组。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，会只保留其中一个写入。
+        创建IP地址组。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。
+        
+        需要注意0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，只会保存其中一个。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -4633,7 +4634,10 @@ class ElbAsyncClient(Client):
     def update_ip_group_async(self, request):
         """更新IP地址组
 
-        更新IP地址组，只支持全量更新IP。即IP地址组中的ip_list将被全量覆盖，不在请求参数中的IP地址将被移除。输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。需要注意，0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，会只保留其中一个写入。
+        更新IP地址组，只支持全量更新IP。即IP地址组中的ip_list将被全量覆盖，不在请求参数中的IP地址将被移除。
+        输入的ip可为ip地址或者CIDR子网，支持IPV4和IPV6。
+        
+        需要注意0.0.0.0与0.0.0.0/32视为重复，0:0:0:0:0:0:0:1与::1与::1/128视为重复，只会保存其中一个。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

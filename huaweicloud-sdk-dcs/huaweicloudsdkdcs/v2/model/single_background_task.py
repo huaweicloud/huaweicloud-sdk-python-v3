@@ -29,7 +29,8 @@ class SingleBackgroundTask:
         'params': 'str',
         'status': 'str',
         'created_at': 'str',
-        'updated_at': 'str'
+        'updated_at': 'str',
+        'enable_show': 'bool'
     }
 
     attribute_map = {
@@ -41,10 +42,11 @@ class SingleBackgroundTask:
         'params': 'params',
         'status': 'status',
         'created_at': 'created_at',
-        'updated_at': 'updated_at'
+        'updated_at': 'updated_at',
+        'enable_show': 'enable_show'
     }
 
-    def __init__(self, id=None, name=None, details=None, user_name=None, user_id=None, params=None, status=None, created_at=None, updated_at=None):
+    def __init__(self, id=None, name=None, details=None, user_name=None, user_id=None, params=None, status=None, created_at=None, updated_at=None, enable_show=None):
         """SingleBackgroundTask
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class SingleBackgroundTask:
         :type created_at: str
         :param updated_at: 任务结束时间，格式为2020-06-17T07:38:42.503Z
         :type updated_at: str
+        :param enable_show: 是否有详细任务进展，可以展开查看
+        :type enable_show: bool
         """
         
         
@@ -80,6 +84,7 @@ class SingleBackgroundTask:
         self._status = None
         self._created_at = None
         self._updated_at = None
+        self._enable_show = None
         self.discriminator = None
 
         if id is not None:
@@ -100,6 +105,8 @@ class SingleBackgroundTask:
             self.created_at = created_at
         if updated_at is not None:
             self.updated_at = updated_at
+        if enable_show is not None:
+            self.enable_show = enable_show
 
     @property
     def id(self):
@@ -296,6 +303,28 @@ class SingleBackgroundTask:
         :type updated_at: str
         """
         self._updated_at = updated_at
+
+    @property
+    def enable_show(self):
+        """Gets the enable_show of this SingleBackgroundTask.
+
+        是否有详细任务进展，可以展开查看
+
+        :return: The enable_show of this SingleBackgroundTask.
+        :rtype: bool
+        """
+        return self._enable_show
+
+    @enable_show.setter
+    def enable_show(self, enable_show):
+        """Sets the enable_show of this SingleBackgroundTask.
+
+        是否有详细任务进展，可以展开查看
+
+        :param enable_show: The enable_show of this SingleBackgroundTask.
+        :type enable_show: bool
+        """
+        self._enable_show = enable_show
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -525,7 +525,7 @@ class ElbAsyncClient(Client):
     def create_listener_tags_async(self, request):
         """添加监听器标签
 
-        给指定负载均衡器添加标签。
+        给指定监听器添加标签。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1055,7 +1055,7 @@ class ElbAsyncClient(Client):
     def delete_listener_async(self, request):
         """删除监听器
 
-        根据指定ID删除监听器。提供级联删除选项，当选择级联删除时，删除和负载均衡器关联的转发规则、转发策略、白名单、标签等。
+        根据指定ID删除监听器。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1067,7 +1067,7 @@ class ElbAsyncClient(Client):
         return self.delete_listener_with_http_info(request)
 
     def delete_listener_with_http_info(self, request):
-        all_params = ['listener_id', 'cascade']
+        all_params = ['listener_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1080,8 +1080,6 @@ class ElbAsyncClient(Client):
             path_params['listener_id'] = local_var_params['listener_id']
 
         query_params = []
-        if 'cascade' in local_var_params:
-            query_params.append(('cascade', local_var_params['cascade']))
 
         header_params = {}
 
@@ -1175,7 +1173,7 @@ class ElbAsyncClient(Client):
     def delete_loadbalancer_async(self, request):
         """删除负载均衡
 
-        根据指定ID删除负载均衡器。提供级联删除选项，当选择级联删除时，删除和负载均衡器关联的监听器、后端云服务器组、后端云服务器、健康检查、转发策略、转发规则、白名单、标签等
+        根据指定ID删除负载均衡器。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1187,7 +1185,7 @@ class ElbAsyncClient(Client):
         return self.delete_loadbalancer_with_http_info(request)
 
     def delete_loadbalancer_with_http_info(self, request):
-        all_params = ['loadbalancer_id', 'cascade']
+        all_params = ['loadbalancer_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1200,8 +1198,6 @@ class ElbAsyncClient(Client):
             path_params['loadbalancer_id'] = local_var_params['loadbalancer_id']
 
         query_params = []
-        if 'cascade' in local_var_params:
-            query_params.append(('cascade', local_var_params['cascade']))
 
         header_params = {}
 
@@ -2133,7 +2129,7 @@ class ElbAsyncClient(Client):
     def list_members_async(self, request):
         """查询后端云服务器列表
 
-        添加属于某个后端云服务器组的后端云服务器。
+        查询属于某个后端云服务器组的后端云服务器。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

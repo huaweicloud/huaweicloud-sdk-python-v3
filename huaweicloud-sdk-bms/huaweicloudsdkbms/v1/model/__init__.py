@@ -4,6 +4,9 @@ from __future__ import absolute_import
 
 # import models into model package
 from huaweicloudsdkbms.v1.model.absolute import Absolute
+from huaweicloudsdkbms.v1.model.add_server_nics_req import AddServerNicsReq
+from huaweicloudsdkbms.v1.model.add_server_nics_request import AddServerNicsRequest
+from huaweicloudsdkbms.v1.model.add_server_nics_response import AddServerNicsResponse
 from huaweicloudsdkbms.v1.model.address import Address
 from huaweicloudsdkbms.v1.model.address_info import AddressInfo
 from huaweicloudsdkbms.v1.model.addresses import Addresses
@@ -37,6 +40,9 @@ from huaweicloudsdkbms.v1.model.create_baremetal_servers_body import CreateBarem
 from huaweicloudsdkbms.v1.model.create_scheduler_hints import CreateSchedulerHints
 from huaweicloudsdkbms.v1.model.create_servers import CreateServers
 from huaweicloudsdkbms.v1.model.data_volumes import DataVolumes
+from huaweicloudsdkbms.v1.model.delete_server_nics_req import DeleteServerNicsReq
+from huaweicloudsdkbms.v1.model.delete_server_nics_request import DeleteServerNicsRequest
+from huaweicloudsdkbms.v1.model.delete_server_nics_response import DeleteServerNicsResponse
 from huaweicloudsdkbms.v1.model.delete_windows_bare_metal_server_password_request import DeleteWindowsBareMetalServerPasswordRequest
 from huaweicloudsdkbms.v1.model.delete_windows_bare_metal_server_password_response import DeleteWindowsBareMetalServerPasswordResponse
 from huaweicloudsdkbms.v1.model.detach_baremetal_server_volume_request import DetachBaremetalServerVolumeRequest
@@ -54,6 +60,7 @@ from huaweicloudsdkbms.v1.model.flavors_resp import FlavorsResp
 from huaweicloudsdkbms.v1.model.image import Image
 from huaweicloudsdkbms.v1.model.image_info import ImageInfo
 from huaweicloudsdkbms.v1.model.interface_attachments import InterfaceAttachments
+from huaweicloudsdkbms.v1.model.interface_attachments_req import InterfaceAttachmentsReq
 from huaweicloudsdkbms.v1.model.links import Links
 from huaweicloudsdkbms.v1.model.links_info import LinksInfo
 from huaweicloudsdkbms.v1.model.list_bare_metal_server_details_request import ListBareMetalServerDetailsRequest
@@ -81,16 +88,20 @@ from huaweicloudsdkbms.v1.model.public_ip import PublicIp
 from huaweicloudsdkbms.v1.model.reboot_body import RebootBody
 from huaweicloudsdkbms.v1.model.reinstall_baremetal_server_os_request import ReinstallBaremetalServerOsRequest
 from huaweicloudsdkbms.v1.model.reinstall_baremetal_server_os_response import ReinstallBaremetalServerOsResponse
+from huaweicloudsdkbms.v1.model.remote_console import RemoteConsole
 from huaweicloudsdkbms.v1.model.reset_password import ResetPassword
 from huaweicloudsdkbms.v1.model.reset_password_body import ResetPasswordBody
 from huaweicloudsdkbms.v1.model.reset_pwd_one_click_request import ResetPwdOneClickRequest
 from huaweicloudsdkbms.v1.model.reset_pwd_one_click_response import ResetPwdOneClickResponse
 from huaweicloudsdkbms.v1.model.root_volume import RootVolume
 from huaweicloudsdkbms.v1.model.scheduler_hints import SchedulerHints
+from huaweicloudsdkbms.v1.model.security_group_info import SecurityGroupInfo
 from huaweicloudsdkbms.v1.model.security_groups import SecurityGroups
 from huaweicloudsdkbms.v1.model.security_groups_info import SecurityGroupsInfo
 from huaweicloudsdkbms.v1.model.security_groups_list import SecurityGroupsList
 from huaweicloudsdkbms.v1.model.server_details import ServerDetails
+from huaweicloudsdkbms.v1.model.server_nics import ServerNics
+from huaweicloudsdkbms.v1.model.server_nics_req import ServerNicsReq
 from huaweicloudsdkbms.v1.model.server_os_scheduler_hints import ServerOsSchedulerHints
 from huaweicloudsdkbms.v1.model.servers_info_type import ServersInfoType
 from huaweicloudsdkbms.v1.model.servers_list import ServersList
@@ -104,6 +115,9 @@ from huaweicloudsdkbms.v1.model.show_job_infos_request import ShowJobInfosReques
 from huaweicloudsdkbms.v1.model.show_job_infos_response import ShowJobInfosResponse
 from huaweicloudsdkbms.v1.model.show_reset_pwd_request import ShowResetPwdRequest
 from huaweicloudsdkbms.v1.model.show_reset_pwd_response import ShowResetPwdResponse
+from huaweicloudsdkbms.v1.model.show_server_remote_console_req import ShowServerRemoteConsoleReq
+from huaweicloudsdkbms.v1.model.show_server_remote_console_request import ShowServerRemoteConsoleRequest
+from huaweicloudsdkbms.v1.model.show_server_remote_console_response import ShowServerRemoteConsoleResponse
 from huaweicloudsdkbms.v1.model.show_specified_version_request import ShowSpecifiedVersionRequest
 from huaweicloudsdkbms.v1.model.show_specified_version_response import ShowSpecifiedVersionResponse
 from huaweicloudsdkbms.v1.model.show_tenant_quota_request import ShowTenantQuotaRequest
@@ -113,6 +127,9 @@ from huaweicloudsdkbms.v1.model.show_windows_baremetal_server_pwd_response impor
 from huaweicloudsdkbms.v1.model.start_servers_info import StartServersInfo
 from huaweicloudsdkbms.v1.model.sub_jobs import SubJobs
 from huaweicloudsdkbms.v1.model.system_tags import SystemTags
+from huaweicloudsdkbms.v1.model.update_baremetal_server_interface_attachments_req import UpdateBaremetalServerInterfaceAttachmentsReq
+from huaweicloudsdkbms.v1.model.update_baremetal_server_interface_attachments_request import UpdateBaremetalServerInterfaceAttachmentsRequest
+from huaweicloudsdkbms.v1.model.update_baremetal_server_interface_attachments_response import UpdateBaremetalServerInterfaceAttachmentsResponse
 from huaweicloudsdkbms.v1.model.update_baremetal_server_metadata_req import UpdateBaremetalServerMetadataReq
 from huaweicloudsdkbms.v1.model.update_baremetal_server_metadata_request import UpdateBaremetalServerMetadataRequest
 from huaweicloudsdkbms.v1.model.update_baremetal_server_metadata_response import UpdateBaremetalServerMetadataResponse

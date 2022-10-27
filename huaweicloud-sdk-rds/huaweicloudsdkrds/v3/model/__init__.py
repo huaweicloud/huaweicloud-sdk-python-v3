@@ -85,6 +85,7 @@ from huaweicloudsdkrds.v3.model.customer_upgrade_database_version_req import Cus
 from huaweicloudsdkrds.v3.model.data_ip_request import DataIpRequest
 from huaweicloudsdkrds.v3.model.database_for_creation import DatabaseForCreation
 from huaweicloudsdkrds.v3.model.database_with_privilege import DatabaseWithPrivilege
+from huaweicloudsdkrds.v3.model.database_with_privilege_object import DatabaseWithPrivilegeObject
 from huaweicloudsdkrds.v3.model.datastore import Datastore
 from huaweicloudsdkrds.v3.model.db_user_pwd_request import DbUserPwdRequest
 from huaweicloudsdkrds.v3.model.delete_configuration_request import DeleteConfigurationRequest

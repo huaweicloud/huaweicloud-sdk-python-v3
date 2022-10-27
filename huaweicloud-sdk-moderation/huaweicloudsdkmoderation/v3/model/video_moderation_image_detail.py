@@ -24,7 +24,7 @@ class VideoModerationImageDetail:
         'suggestion': 'str',
         'category': 'str',
         'ocr_text': 'str',
-        'time': 'int',
+        'time': 'float',
         'detail': 'list[VideoModerationImageDetailList]'
     }
 
@@ -48,7 +48,7 @@ class VideoModerationImageDetail:
         :param ocr_text: 图文审核检测出的文本，只有在category参数配置image_text且检测出文本时展示该字段。
         :type ocr_text: str
         :param time: 截帧在视频文件中的时间，单位为秒
-        :type time: int
+        :type time: float
         :param detail: 图像帧审核详情
         :type detail: list[:class:`huaweicloudsdkmoderation.v3.VideoModerationImageDetailList`]
         """
@@ -146,7 +146,7 @@ class VideoModerationImageDetail:
         截帧在视频文件中的时间，单位为秒
 
         :return: The time of this VideoModerationImageDetail.
-        :rtype: int
+        :rtype: float
         """
         return self._time
 
@@ -157,7 +157,7 @@ class VideoModerationImageDetail:
         截帧在视频文件中的时间，单位为秒
 
         :param time: The time of this VideoModerationImageDetail.
-        :type time: int
+        :type time: float
         """
         self._time = time
 

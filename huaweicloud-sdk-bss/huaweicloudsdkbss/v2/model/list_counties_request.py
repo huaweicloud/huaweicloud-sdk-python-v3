@@ -43,9 +43,9 @@ class ListCountiesRequest:
         :type x_language: str
         :param city_code: 城市的编码。
         :type city_code: str
-        :param offset: 偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        :param offset: 偏移量，从0开始。默认值为0。此参数不携带或携带值为null时，取默认值0；不支持携带值为空。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset &#x3D; 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
         :type offset: int
-        :param limit: 每次查询的数量，最大1000。
+        :param limit: 每次查询的数量，最大1000。默认值为10。此参数不携带，取默认值10；不支持携带值为空和携带值为null。
         :type limit: int
         """
         
@@ -113,7 +113,7 @@ class ListCountiesRequest:
     def offset(self):
         """Gets the offset of this ListCountiesRequest.
 
-        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        偏移量，从0开始。默认值为0。此参数不携带或携带值为null时，取默认值0；不支持携带值为空。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :return: The offset of this ListCountiesRequest.
         :rtype: int
@@ -124,7 +124,7 @@ class ListCountiesRequest:
     def offset(self, offset):
         """Sets the offset of this ListCountiesRequest.
 
-        偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
+        偏移量，从0开始。默认值为0。此参数不携带或携带值为null时，取默认值0；不支持携带值为空。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
         :param offset: The offset of this ListCountiesRequest.
         :type offset: int
@@ -135,7 +135,7 @@ class ListCountiesRequest:
     def limit(self):
         """Gets the limit of this ListCountiesRequest.
 
-        每次查询的数量，最大1000。
+        每次查询的数量，最大1000。默认值为10。此参数不携带，取默认值10；不支持携带值为空和携带值为null。
 
         :return: The limit of this ListCountiesRequest.
         :rtype: int
@@ -146,7 +146,7 @@ class ListCountiesRequest:
     def limit(self, limit):
         """Sets the limit of this ListCountiesRequest.
 
-        每次查询的数量，最大1000。
+        每次查询的数量，最大1000。默认值为10。此参数不携带，取默认值10；不支持携带值为空和携带值为null。
 
         :param limit: The limit of this ListCountiesRequest.
         :type limit: int

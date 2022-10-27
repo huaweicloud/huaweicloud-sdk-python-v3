@@ -37,7 +37,7 @@ class CreateRedirectPoolsConfig:
 
         :param pool_id: 后端主机组的ID。
         :type pool_id: str
-        :param weight: 后端主机组的权重。 取值：0-100。
+        :param weight: 后端主机组的权重。  取值：0-100。
         :type weight: int
         """
         
@@ -76,7 +76,7 @@ class CreateRedirectPoolsConfig:
     def weight(self):
         """Gets the weight of this CreateRedirectPoolsConfig.
 
-        后端主机组的权重。 取值：0-100。
+        后端主机组的权重。  取值：0-100。
 
         :return: The weight of this CreateRedirectPoolsConfig.
         :rtype: int
@@ -87,7 +87,7 @@ class CreateRedirectPoolsConfig:
     def weight(self, weight):
         """Sets the weight of this CreateRedirectPoolsConfig.
 
-        后端主机组的权重。 取值：0-100。
+        后端主机组的权重。  取值：0-100。
 
         :param weight: The weight of this CreateRedirectPoolsConfig.
         :type weight: int

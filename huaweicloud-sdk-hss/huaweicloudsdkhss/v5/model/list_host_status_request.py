@@ -44,6 +44,7 @@ class ListHostStatusRequest:
         'outside_host': 'bool',
         'asset_value': 'str',
         'label': 'str',
+        'server_group': 'str',
         'limit': 'int',
         'offset': 'int'
     }
@@ -72,18 +73,19 @@ class ListHostStatusRequest:
         'outside_host': 'outside_host',
         'asset_value': 'asset_value',
         'label': 'label',
+        'server_group': 'server_group',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, version=None, agent_status=None, detect_result=None, host_name=None, host_id=None, host_status=None, os_type=None, private_ip=None, public_ip=None, ip_addr=None, protect_status=None, group_id=None, group_name=None, policy_group_id=None, policy_group_name=None, charging_mode=None, refresh=None, above_version=None, outside_host=None, asset_value=None, label=None, limit=None, offset=None):
+    def __init__(self, region=None, enterprise_project_id=None, version=None, agent_status=None, detect_result=None, host_name=None, host_id=None, host_status=None, os_type=None, private_ip=None, public_ip=None, ip_addr=None, protect_status=None, group_id=None, group_name=None, policy_group_id=None, policy_group_name=None, charging_mode=None, refresh=None, above_version=None, outside_host=None, asset_value=None, label=None, server_group=None, limit=None, offset=None):
         """ListHostStatusRequest
 
         The model defined in huaweicloud sdk
 
         :param region: region id
         :type region: str
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
         :param version: 主机开通的版本，包含如下6种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
         :type version: str
@@ -93,7 +95,7 @@ class ListHostStatusRequest:
         :type detect_result: str
         :param host_name: 服务器名称
         :type host_name: str
-        :param host_id: 服务器id
+        :param host_id: 服务器ID
         :type host_id: str
         :param host_status: 主机状态，包含如下4种。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。   - BUILDING ：创建中。   - ERROR ：故障。
         :type host_status: str
@@ -127,6 +129,8 @@ class ListHostStatusRequest:
         :type asset_value: str
         :param label: 资产标签
         :type label: str
+        :param server_group: 资产服务器组
+        :type server_group: str
         :param limit: 每页显示个数，默认10
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
@@ -158,12 +162,12 @@ class ListHostStatusRequest:
         self._outside_host = None
         self._asset_value = None
         self._label = None
+        self._server_group = None
         self._limit = None
         self._offset = None
         self.discriminator = None
 
-        if region is not None:
-            self.region = region
+        self.region = region
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if version is not None:
@@ -208,6 +212,8 @@ class ListHostStatusRequest:
             self.asset_value = asset_value
         if label is not None:
             self.label = label
+        if server_group is not None:
+            self.server_group = server_group
         if limit is not None:
             self.limit = limit
         if offset is not None:
@@ -239,7 +245,7 @@ class ListHostStatusRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListHostStatusRequest.
 
-        企业项目ID
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ListHostStatusRequest.
         :rtype: str
@@ -250,7 +256,7 @@ class ListHostStatusRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListHostStatusRequest.
 
-        企业项目ID
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ListHostStatusRequest.
         :type enterprise_project_id: str
@@ -349,7 +355,7 @@ class ListHostStatusRequest:
     def host_id(self):
         """Gets the host_id of this ListHostStatusRequest.
 
-        服务器id
+        服务器ID
 
         :return: The host_id of this ListHostStatusRequest.
         :rtype: str
@@ -360,7 +366,7 @@ class ListHostStatusRequest:
     def host_id(self, host_id):
         """Sets the host_id of this ListHostStatusRequest.
 
-        服务器id
+        服务器ID
 
         :param host_id: The host_id of this ListHostStatusRequest.
         :type host_id: str
@@ -718,6 +724,28 @@ class ListHostStatusRequest:
         :type label: str
         """
         self._label = label
+
+    @property
+    def server_group(self):
+        """Gets the server_group of this ListHostStatusRequest.
+
+        资产服务器组
+
+        :return: The server_group of this ListHostStatusRequest.
+        :rtype: str
+        """
+        return self._server_group
+
+    @server_group.setter
+    def server_group(self, server_group):
+        """Sets the server_group of this ListHostStatusRequest.
+
+        资产服务器组
+
+        :param server_group: The server_group of this ListHostStatusRequest.
+        :type server_group: str
+        """
+        self._server_group = server_group
 
     @property
     def limit(self):

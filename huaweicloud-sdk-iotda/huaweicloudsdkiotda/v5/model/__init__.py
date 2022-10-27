@@ -128,6 +128,7 @@ from huaweicloudsdkiotda.v5.model.net_address import NetAddress
 from huaweicloudsdkiotda.v5.model.obs_forwarding import ObsForwarding
 from huaweicloudsdkiotda.v5.model.page import Page
 from huaweicloudsdkiotda.v5.model.product_summary import ProductSummary
+from huaweicloudsdkiotda.v5.model.properties_dto import PropertiesDTO
 from huaweicloudsdkiotda.v5.model.property_filter import PropertyFilter
 from huaweicloudsdkiotda.v5.model.query_device_simplify import QueryDeviceSimplify
 from huaweicloudsdkiotda.v5.model.query_queue_base import QueryQueueBase
@@ -221,4 +222,5 @@ from huaweicloudsdkiotda.v5.model.update_rule_action_response import UpdateRuleA
 from huaweicloudsdkiotda.v5.model.update_rule_req import UpdateRuleReq
 from huaweicloudsdkiotda.v5.model.update_rule_request import UpdateRuleRequest
 from huaweicloudsdkiotda.v5.model.update_rule_response import UpdateRuleResponse
+from huaweicloudsdkiotda.v5.model.user_prop_dto import UserPropDTO
 from huaweicloudsdkiotda.v5.model.verify_certificate_dto import VerifyCertificateDTO

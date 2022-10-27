@@ -24,6 +24,7 @@ class DeviceMessageRequest:
         'message_id': 'str',
         'name': 'str',
         'message': 'object',
+        'properties': 'PropertiesDTO',
         'encoding': 'str',
         'payload_format': 'str',
         'topic': 'str',
@@ -34,13 +35,14 @@ class DeviceMessageRequest:
         'message_id': 'message_id',
         'name': 'name',
         'message': 'message',
+        'properties': 'properties',
         'encoding': 'encoding',
         'payload_format': 'payload_format',
         'topic': 'topic',
         'topic_full_name': 'topic_full_name'
     }
 
-    def __init__(self, message_id=None, name=None, message=None, encoding=None, payload_format=None, topic=None, topic_full_name=None):
+    def __init__(self, message_id=None, name=None, message=None, properties=None, encoding=None, payload_format=None, topic=None, topic_full_name=None):
         """DeviceMessageRequest
 
         The model defined in huaweicloud sdk
@@ -51,6 +53,8 @@ class DeviceMessageRequest:
         :type name: str
         :param message: **参数说明**：消息内容，支持string和json格式。
         :type message: object
+        :param properties: 
+        :type properties: :class:`huaweicloudsdkiotda.v5.PropertiesDTO`
         :param encoding: **参数说明**：消息内容编码格式。默认值none。 **取值范围**： - none  - base64：只能通过topic_full_name字段自定义的topic发送消息,否则会发送失败。
         :type encoding: str
         :param payload_format: **参数说明**：有效负载格式，在消息内容编码格式为none时有效。默认值standard（平台封装的标准格式）。 **取值范围**： - standard  - raw：时直接将消息内容作为有效负载下发， 注意： 取值为raw时，只能通过topic_full_name字段自定义的topic发送消息，否则会发送失败。
@@ -66,6 +70,7 @@ class DeviceMessageRequest:
         self._message_id = None
         self._name = None
         self._message = None
+        self._properties = None
         self._encoding = None
         self._payload_format = None
         self._topic = None
@@ -77,6 +82,8 @@ class DeviceMessageRequest:
         if name is not None:
             self.name = name
         self.message = message
+        if properties is not None:
+            self.properties = properties
         if encoding is not None:
             self.encoding = encoding
         if payload_format is not None:
@@ -151,6 +158,26 @@ class DeviceMessageRequest:
         :type message: object
         """
         self._message = message
+
+    @property
+    def properties(self):
+        """Gets the properties of this DeviceMessageRequest.
+
+
+        :return: The properties of this DeviceMessageRequest.
+        :rtype: :class:`huaweicloudsdkiotda.v5.PropertiesDTO`
+        """
+        return self._properties
+
+    @properties.setter
+    def properties(self, properties):
+        """Sets the properties of this DeviceMessageRequest.
+
+
+        :param properties: The properties of this DeviceMessageRequest.
+        :type properties: :class:`huaweicloudsdkiotda.v5.PropertiesDTO`
+        """
+        self._properties = properties
 
     @property
     def encoding(self):

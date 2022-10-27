@@ -1,3 +1,262 @@
+# 3.1.6 2022-10-27
+
+### HuaweiCloud SDK BMS
+
+- _Features_
+  - Support the interfaces `DeleteServerNics`, `UpdateBaremetalServerInterfaceAttachments`, `AddServerNics`, `ShowServerRemoteConsole`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `int32` -> `int64` of the response parameter `id` of the interface `ShowUrlTaskInfo`
+
+### HuaweiCloud SDK CloudIDE
+
+- _Features_
+  - Support the interfaces `ListExtensions`, `ShowExtensionDetail`, `ShowExtensionEvaluation`, `ShowExtensionEvaluationStar`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CodeHub
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListMergeRequest`:
+    - Add the response parameter `merge_requests`
+    - Remove the response parameter `mergeRequests`
+  - Changes of the interface `ShowMergeRequest`:
+    - Add the response parameters `approval_merge_request_approvers`, `closed_at`, `created_at`, `devcloud_source_branch`, `is_source_branch_exist`, `merge_request_assignee_list`, `merge_request_diff`, `merge_status`, `source_branch`, `target_branch`, `updated_at`
+    - Remove the response parameters `approvalMergeRequestApprovers`, `closedAt`, `createdAt`, `devcloudSourceBranch`, `isSourceBranchExist`, `mergeRequestAssigneeList`, `mergeRequestDiff`, `mergeStatus`, `sourceBranch`, `targetBranch`, `updatedAt`
+
+### HuaweiCloud SDK DCS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShowInstance`:
+    - Modify the type `string` -> `int64` of the response parameter `begin_time`
+    - Modify the type `string` -> `int64` of the response parameter `end_time`
+    - Modify the type `string` -> `int64` of the response parameter `current_time`
+    - Modify the type `string` -> `int64` of the response parameter `next_expand_time`
+    - Modify the type `string` -> `int64` of the response parameter `expand_effect_time`
+    - Modify the type `string` -> `int64` of the response parameter `expand_interval_time`
+  - Modify the type `int32` -> `integer` of the request parameter `new_capacity` of the interface `ResizeInstance`
+  - Add the response parameters `target_instance_address`, `migration_method`, `task_name`, `target_instance_id`, `source_instance_name`, `target_instance_name`, `migrate_type`, `created_at`, `source_instance_id`, `task_id`, `data_source`, `status` to the interface `ListMigrationTask`
+  - Changes of the interface `ListRedislog`:
+    - Add the response parameter `backup_id`
+    - Remove the response parameter `backupId`
+  - Add the response parameter `enable_show` to the interface `ListBackgroundTask`
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - Support the following interfaces：
+    - `AddReadonlyNode`
+    - `UpgradeDatabaseVersion`
+    - `ShowSecondLevelMonitoringStatus`
+    - `SwitchSecondLevelMonitoring`
+    - `ChangeOpsWindow`
+    - `SetRecyclePolicy`
+    - `ExpandReplicasetNode`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `node_type` to the interface `ListConfigurations`
+  - Add the response parameter `patch_available` to the interface `ListInstances`
+  - Add the request parameter `node_ids` to the interface `ResizeInstanceVolume`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameters `X-Client-Token`, `batch_create_in_multi_az` to the interface `CreateServers`
+  - Add the request parameter `X-Client-Token` to the interface `CreatePostPaidServers`
+
+### HuaweiCloud SDK ELB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `tls-1-1`, `tls-1-2`, `tls-1-2-strict`, Remove the enum values ` tls-1-1`, ` tls-1-2`, ` tls-1-2-strict` from the request parameter `tls_ciphers_policy` to the interface `CreateListener`
+  - Remove the request parameter `cascade` from the interface `DeleteListener`
+  - Remove the request parameter `cascade` from the interface `DeleteLoadbalancer`
+  - Changes of the interface `ListApiVersions`:
+    - Add the response parameter `versions`
+    - Remove the response parameters `id`, `status`
+  - Remove the request parameter `global_eip_ids` from the interface `CreateLoadBalancer`
+
+### HuaweiCloud SDK GaussDBforNoSQL
+
+- _Features_
+  - Support the interfaces `ShowRestorableList`, `ListRestoreTime`, `DeleteBackup`, `RestoreExistingInstance`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - Support the following interfaces：
+    - `ListUsers`
+    - `ListUserChangeHistories`
+    - `ShowResourceQuotas`
+    - `ListQuotasDetail`
+    - `SwitchHostsProtectStatus`
+    - `BatchCreateTags`
+    - `DeleteResourceInstanceTag`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListRiskConfigs`:
+    - Add the request parameter `check_name`
+    - Remove the request parameter `check_type`
+  - Changes of the interface `ShowCheckRuleDetail`:
+    - Add the request parameter `check_name`
+    - Remove the request parameter `check_type`
+  - Changes of the interface `ListHostStatus`:
+    - Add the request parameter `server_group`
+    - The request parameter `region` changed to not required
+  - Changes of the interface `ListVulnerabilities`:
+    - Add the response parameter `severity_level`
+    - Modify the type `int32` -> `string` of the response parameter `repair_necessity`
+
+### HuaweiCloud SDK IEF
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `ShowEdgeNodeUpgradeDetails`
+  - Add the request parameter `ief-instance-id` to the interface `UpdateNodeByDeviceId`
+  - Remove the response parameters `affinity`, `updated_at` from the interface `ListPods`
+  - Remove the response parameter `encrypt_data` from the interface `CreateEncryptdatas`
+  - Changes of the interface `ListEncryptdatas`:
+    - Add the response parameter `encrypt_datas`
+    - Remove the response parameter `encrypt_data`
+  - Remove the response parameter `encrypt_data` from the interface `UpdateEncryptdatas`
+  - Changes of the interface `ListNodeEncryptdatas`:
+    - Add the response parameter `encrypt_datas`
+    - Remove the response parameter `encrypt_data`
+
+### HuaweiCloud SDK IMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `market` to the request parameter `__imagetype` to the interface `ListTags`
+  - Changes of the interface `GlanceListImages`:
+    - Add the enum values `market` to the request parameter `__imagetype`
+    - Add the enum values `market` to the response parameter `__imagetype`
+  - Add the enum values `market` to the response parameter `__imagetype` to the interface `GlanceShowImage`
+  - Add the enum values `market` to the response parameter `__imagetype` to the interface `GlanceUpdateImage`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `properties` to the interface `CreateMessage`
+  - Add the response parameter `properties` to the interface `ListDeviceMessages`
+  - Add the response parameter `properties` to the interface `ShowDeviceMessage`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreatePostPaidInstance`:
+    - Add the request parameters `disk_encrypted_enable`, `disk_encrypted_key`
+    - Add the enum values `2.7` to the request parameter `engine_version`
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+  - Support the following interfaces：
+    - `SearchCorpExternalDir`
+    - `SetCohost`
+    - `BatchHand`
+    - `CancelBroadcast`
+    - `AllowWaitingParticipant`
+    - `MoveToWaitingRoom`
+    - `AllowClientRecord`
+    - `ShowLayout`
+    - `SaveLayout`
+    - `DeleteLayout`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Moderation
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `float` -> `integer` of the request parameter `frame_interval` of the interface `RunCreateVideoModerationJob`
+  - Modify the type `float` -> `integer` of the response parameters `start_time`, `end_time` of the interface `RunQueryAudioModerationJob`
+  - Changes of the interface `RunQueryVideoModerationJob`:
+    - Modify the type `integer` -> `float` of the response parameter `time`
+    - Modify the type `integer` -> `float` of the response parameters `start_time`, `end_time`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `read_only_by_user` to the interface `ListInstances`
+  - Add the request parameters `hosts`, `databases` to the interface `CreateDbUser`
+
+### HuaweiCloud SDK SCM
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The response parameter `enterprise_project_id` changed to required of the interface `ListCertificates`
+  - Add the response parameter `fingerprint` to the interface `ShowCertificate`
+
+### HuaweiCloud SDK SFSTurbo
+
+- _Features_
+  - Support the interface `ChangeShareName`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.5 2022-09-28
 
 ### HuaweiCloud SDK APM

@@ -22,7 +22,7 @@ class ListFilesByQueryResponse(SdkResponse):
 
     openapi_types = {
         'error': 'Error',
-        'result': 'list[FileContentInfo]',
+        'result': 'FileContentInfo',
         'status': 'str'
     }
 
@@ -39,8 +39,8 @@ class ListFilesByQueryResponse(SdkResponse):
 
         :param error: 
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
-        :param result: 差异列表
-        :type result: list[:class:`huaweicloudsdkcodehub.v3.FileContentInfo`]
+        :param result: 
+        :type result: :class:`huaweicloudsdkcodehub.v3.FileContentInfo`
         :param status: 响应状态
         :type status: str
         """
@@ -83,10 +83,9 @@ class ListFilesByQueryResponse(SdkResponse):
     def result(self):
         """Gets the result of this ListFilesByQueryResponse.
 
-        差异列表
 
         :return: The result of this ListFilesByQueryResponse.
-        :rtype: list[:class:`huaweicloudsdkcodehub.v3.FileContentInfo`]
+        :rtype: :class:`huaweicloudsdkcodehub.v3.FileContentInfo`
         """
         return self._result
 
@@ -94,10 +93,9 @@ class ListFilesByQueryResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this ListFilesByQueryResponse.
 
-        差异列表
 
         :param result: The result of this ListFilesByQueryResponse.
-        :type result: list[:class:`huaweicloudsdkcodehub.v3.FileContentInfo`]
+        :type result: :class:`huaweicloudsdkcodehub.v3.FileContentInfo`
         """
         self._result = result
 

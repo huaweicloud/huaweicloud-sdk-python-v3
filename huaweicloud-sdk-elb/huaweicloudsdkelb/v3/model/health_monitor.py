@@ -65,15 +65,15 @@ class HealthMonitor:
 
         The model defined in huaweicloud sdk
 
-        :param admin_state_up: 健康检查的管理状态。取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
+        :param admin_state_up: 健康检查的管理状态。  取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
         :type admin_state_up: bool
         :param delay: 健康检查间隔。取值：1-50s。
         :type delay: int
-        :param domain_name: 发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
+        :param domain_name: 发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。 默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
         :type domain_name: str
-        :param expected_codes: 期望响应状态码。取值：   - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。    默认值：200。   仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
+        :param expected_codes: 期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
         :type expected_codes: str
-        :param http_method: HTTP请求方法。取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。   使用说明：当type为HTTP/HTTPS时生效。   不支持该字段，请勿使用。
+        :param http_method: HTTP请求方法。  取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。  使用说明：当type为HTTP/HTTPS时生效。  不支持该字段，请勿使用。
         :type http_method: str
         :param id: 健康检查ID
         :type id: str
@@ -95,9 +95,9 @@ class HealthMonitor:
         :type type: str
         :param url_path: 健康检查请求的请求路径。以\&quot;/\&quot;开头，默认为\&quot;/\&quot;。  使用说明：当type为HTTP/HTTPS时生效。
         :type url_path: str
-        :param created_at: 创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+        :param created_at: 创建时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,hk_tm)
         :type created_at: str
-        :param updated_at: 更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+        :param updated_at: 更新时间。格式：yyyy-MM-dd&#39;T&#39;HH:mm:ss&#39;Z&#39;，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,hk_tm)
         :type updated_at: str
         """
         
@@ -146,7 +146,7 @@ class HealthMonitor:
     def admin_state_up(self):
         """Gets the admin_state_up of this HealthMonitor.
 
-        健康检查的管理状态。取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
+        健康检查的管理状态。  取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
 
         :return: The admin_state_up of this HealthMonitor.
         :rtype: bool
@@ -157,7 +157,7 @@ class HealthMonitor:
     def admin_state_up(self, admin_state_up):
         """Sets the admin_state_up of this HealthMonitor.
 
-        健康检查的管理状态。取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
+        健康检查的管理状态。  取值： - true：表示开启健康检查，默认为true。 - false表示关闭健康检查。
 
         :param admin_state_up: The admin_state_up of this HealthMonitor.
         :type admin_state_up: bool
@@ -190,7 +190,7 @@ class HealthMonitor:
     def domain_name(self):
         """Gets the domain_name of this HealthMonitor.
 
-        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
+        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。 默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
 
         :return: The domain_name of this HealthMonitor.
         :rtype: str
@@ -201,7 +201,7 @@ class HealthMonitor:
     def domain_name(self, domain_name):
         """Sets the domain_name of this HealthMonitor.
 
-        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
+        发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。 默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
 
         :param domain_name: The domain_name of this HealthMonitor.
         :type domain_name: str
@@ -212,7 +212,7 @@ class HealthMonitor:
     def expected_codes(self):
         """Gets the expected_codes of this HealthMonitor.
 
-        期望响应状态码。取值：   - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。    默认值：200。   仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
+        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
 
         :return: The expected_codes of this HealthMonitor.
         :rtype: str
@@ -223,7 +223,7 @@ class HealthMonitor:
     def expected_codes(self, expected_codes):
         """Sets the expected_codes of this HealthMonitor.
 
-        期望响应状态码。取值：   - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。    默认值：200。   仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
+        期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：200。  仅支持HTTP/HTTPS设置该字段，其他协议设置不会生效。
 
         :param expected_codes: The expected_codes of this HealthMonitor.
         :type expected_codes: str
@@ -234,7 +234,7 @@ class HealthMonitor:
     def http_method(self):
         """Gets the http_method of this HealthMonitor.
 
-        HTTP请求方法。取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。   使用说明：当type为HTTP/HTTPS时生效。   不支持该字段，请勿使用。
+        HTTP请求方法。  取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。  使用说明：当type为HTTP/HTTPS时生效。  不支持该字段，请勿使用。
 
         :return: The http_method of this HealthMonitor.
         :rtype: str
@@ -245,7 +245,7 @@ class HealthMonitor:
     def http_method(self, http_method):
         """Sets the http_method of this HealthMonitor.
 
-        HTTP请求方法。取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。   使用说明：当type为HTTP/HTTPS时生效。   不支持该字段，请勿使用。
+        HTTP请求方法。  取值：GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH，默认GET。  使用说明：当type为HTTP/HTTPS时生效。  不支持该字段，请勿使用。
 
         :param http_method: The http_method of this HealthMonitor.
         :type http_method: str
@@ -476,7 +476,7 @@ class HealthMonitor:
     def created_at(self):
         """Gets the created_at of this HealthMonitor.
 
-        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,hk_tm)
 
         :return: The created_at of this HealthMonitor.
         :rtype: str
@@ -487,7 +487,7 @@ class HealthMonitor:
     def created_at(self, created_at):
         """Sets the created_at of this HealthMonitor.
 
-        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+        创建时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,hk_tm)
 
         :param created_at: The created_at of this HealthMonitor.
         :type created_at: str
@@ -498,7 +498,7 @@ class HealthMonitor:
     def updated_at(self):
         """Gets the updated_at of this HealthMonitor.
 
-        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,hk_tm)
 
         :return: The updated_at of this HealthMonitor.
         :rtype: str
@@ -509,7 +509,7 @@ class HealthMonitor:
     def updated_at(self, updated_at):
         """Sets the updated_at of this HealthMonitor.
 
-        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。
+        更新时间。格式：yyyy-MM-dd'T'HH:mm:ss'Z'，UTC时区。  [注意：独享型实例的历史数据以及共享型实例下的资源，不返回该字段。 ](tag:hws,hws_hk,ocb,ctc,g42,tm,cmcc,hk_g42,hws_ocb,fcs,dt,hk_tm)
 
         :param updated_at: The updated_at of this HealthMonitor.
         :type updated_at: str

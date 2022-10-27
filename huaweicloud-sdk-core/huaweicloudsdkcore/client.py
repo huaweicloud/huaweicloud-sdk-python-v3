@@ -267,6 +267,7 @@ class Client(object):
         if header_params:
             header_params = http_utils.sanitize_for_serialization(header_params)
             header_params = dict(http_utils.parameters_to_tuples(header_params, collection_formats))
+            header_params = {k: str(v) for k, v in header_params.items()}
         header_params.update(self._agent)
         return header_params
 

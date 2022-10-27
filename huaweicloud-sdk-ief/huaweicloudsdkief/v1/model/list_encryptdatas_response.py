@@ -21,58 +21,58 @@ class ListEncryptdatasResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'encrypt_data': 'list[EncryptData]',
+        'encrypt_datas': 'list[EncryptData]',
         'count': 'int'
     }
 
     attribute_map = {
-        'encrypt_data': 'encrypt_data',
+        'encrypt_datas': 'encrypt_datas',
         'count': 'count'
     }
 
-    def __init__(self, encrypt_data=None, count=None):
+    def __init__(self, encrypt_datas=None, count=None):
         """ListEncryptdatasResponse
 
         The model defined in huaweicloud sdk
 
-        :param encrypt_data: 加密数据列表详情
-        :type encrypt_data: list[:class:`huaweicloudsdkief.v1.EncryptData`]
+        :param encrypt_datas: 加密数据列表详情
+        :type encrypt_datas: list[:class:`huaweicloudsdkief.v1.EncryptData`]
         :param count: 加密数据总数
         :type count: int
         """
         
         super(ListEncryptdatasResponse, self).__init__()
 
-        self._encrypt_data = None
+        self._encrypt_datas = None
         self._count = None
         self.discriminator = None
 
-        if encrypt_data is not None:
-            self.encrypt_data = encrypt_data
+        if encrypt_datas is not None:
+            self.encrypt_datas = encrypt_datas
         if count is not None:
             self.count = count
 
     @property
-    def encrypt_data(self):
-        """Gets the encrypt_data of this ListEncryptdatasResponse.
+    def encrypt_datas(self):
+        """Gets the encrypt_datas of this ListEncryptdatasResponse.
 
         加密数据列表详情
 
-        :return: The encrypt_data of this ListEncryptdatasResponse.
+        :return: The encrypt_datas of this ListEncryptdatasResponse.
         :rtype: list[:class:`huaweicloudsdkief.v1.EncryptData`]
         """
-        return self._encrypt_data
+        return self._encrypt_datas
 
-    @encrypt_data.setter
-    def encrypt_data(self, encrypt_data):
-        """Sets the encrypt_data of this ListEncryptdatasResponse.
+    @encrypt_datas.setter
+    def encrypt_datas(self, encrypt_datas):
+        """Sets the encrypt_datas of this ListEncryptdatasResponse.
 
         加密数据列表详情
 
-        :param encrypt_data: The encrypt_data of this ListEncryptdatasResponse.
-        :type encrypt_data: list[:class:`huaweicloudsdkief.v1.EncryptData`]
+        :param encrypt_datas: The encrypt_datas of this ListEncryptdatasResponse.
+        :type encrypt_datas: list[:class:`huaweicloudsdkief.v1.EncryptData`]
         """
-        self._encrypt_data = encrypt_data
+        self._encrypt_datas = encrypt_datas
 
     @property
     def count(self):

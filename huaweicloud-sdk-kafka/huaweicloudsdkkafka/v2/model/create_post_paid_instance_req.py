@@ -46,6 +46,8 @@ class CreatePostPaidInstanceReq:
         'ssl_enable': 'bool',
         'retention_policy': 'str',
         'connector_enable': 'bool',
+        'disk_encrypted_enable': 'bool',
+        'disk_encrypted_key': 'str',
         'enable_auto_topic': 'bool',
         'storage_spec_code': 'str',
         'enterprise_project_id': 'str',
@@ -78,13 +80,15 @@ class CreatePostPaidInstanceReq:
         'ssl_enable': 'ssl_enable',
         'retention_policy': 'retention_policy',
         'connector_enable': 'connector_enable',
+        'disk_encrypted_enable': 'disk_encrypted_enable',
+        'disk_encrypted_key': 'disk_encrypted_key',
         'enable_auto_topic': 'enable_auto_topic',
         'storage_spec_code': 'storage_spec_code',
         'enterprise_project_id': 'enterprise_project_id',
         'tags': 'tags'
     }
 
-    def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, broker_num=None, storage_space=None, partition_num=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, public_bandwidth=None, publicip_id=None, ssl_enable=None, retention_policy=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
+    def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, broker_num=None, storage_space=None, partition_num=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, kafka_manager_user=None, kafka_manager_password=None, maintain_begin=None, maintain_end=None, enable_publicip=None, public_bandwidth=None, publicip_id=None, ssl_enable=None, retention_policy=None, connector_enable=None, disk_encrypted_enable=None, disk_encrypted_key=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
         """CreatePostPaidInstanceReq
 
         The model defined in huaweicloud sdk
@@ -95,7 +99,7 @@ class CreatePostPaidInstanceReq:
         :type description: str
         :param engine: 消息引擎。取值填写为：kafka。
         :type engine: str
-        :param engine_version: 消息引擎的版本。取值填写为：1.1.0和2.3.0。
+        :param engine_version: 消息引擎的版本。取值填写为：   - 1.1.0   - 2.3.0   - 2.7
         :type engine_version: str
         :param specification: [新规格实例：Kafka实例业务TPS规格，取值范围：   - c6.2u4g.cluster   - c6.4u8g.cluster   - c6.8u16g.cluster   - c6.12u24g.cluster   - c6.16u32g.cluster  老规格实例：](tag:hc,hk) Kafka实例的基准带宽，表示单位时间内传送的最大数据量，单位MB。取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB
         :type specification: str
@@ -139,9 +143,13 @@ class CreatePostPaidInstanceReq:
         :type retention_policy: str
         :param connector_enable: 是否开启消息转储功能。  默认不开启消息转储。
         :type connector_enable: bool
+        :param disk_encrypted_enable: 是否开启磁盘加密。
+        :type disk_encrypted_enable: bool
+        :param disk_encrypted_key: 磁盘加密key，未开启磁盘加密时为空。
+        :type disk_encrypted_key: str
         :param enable_auto_topic: 是否打开kafka自动创建topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。  默认是false关闭。
         :type enable_auto_topic: bool
-        :param storage_spec_code: 存储IO规格。 [新老规格的实例的存储IO规格不相同，创建实例请选择对应的存储IO规格。 新规格实例取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  老规格实例取值范围：](tag:hc,hk)   - 参数specification为100MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为300MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为600MB时，取值dms.physical.storage.ultra   - 参数specification为1200MB时，取值dms.physical.storage.ultra存储IO规格。如何选择磁盘类型请参考磁盘类型及性能介绍。
+        :param storage_spec_code: 存储IO规格。 [新老规格的实例的存储IO规格不相同，创建实例请选择对应的存储IO规格。 新规格实例取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  老规格实例取值范围：](tag:hc,hk)   - 参数specification为100MB/300MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为600MB/1200MB时，取值dms.physical.storage.ultra   如何选择磁盘类型请参考磁盘类型及性能介绍。
         :type storage_spec_code: str
         :param enterprise_project_id: 企业项目ID。若为企业项目帐号，该参数必填。
         :type enterprise_project_id: str
@@ -176,6 +184,8 @@ class CreatePostPaidInstanceReq:
         self._ssl_enable = None
         self._retention_policy = None
         self._connector_enable = None
+        self._disk_encrypted_enable = None
+        self._disk_encrypted_key = None
         self._enable_auto_topic = None
         self._storage_spec_code = None
         self._enterprise_project_id = None
@@ -221,6 +231,10 @@ class CreatePostPaidInstanceReq:
             self.retention_policy = retention_policy
         if connector_enable is not None:
             self.connector_enable = connector_enable
+        if disk_encrypted_enable is not None:
+            self.disk_encrypted_enable = disk_encrypted_enable
+        if disk_encrypted_key is not None:
+            self.disk_encrypted_key = disk_encrypted_key
         if enable_auto_topic is not None:
             self.enable_auto_topic = enable_auto_topic
         self.storage_spec_code = storage_spec_code
@@ -299,7 +313,7 @@ class CreatePostPaidInstanceReq:
     def engine_version(self):
         """Gets the engine_version of this CreatePostPaidInstanceReq.
 
-        消息引擎的版本。取值填写为：1.1.0和2.3.0。
+        消息引擎的版本。取值填写为：   - 1.1.0   - 2.3.0   - 2.7
 
         :return: The engine_version of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -310,7 +324,7 @@ class CreatePostPaidInstanceReq:
     def engine_version(self, engine_version):
         """Sets the engine_version of this CreatePostPaidInstanceReq.
 
-        消息引擎的版本。取值填写为：1.1.0和2.3.0。
+        消息引擎的版本。取值填写为：   - 1.1.0   - 2.3.0   - 2.7
 
         :param engine_version: The engine_version of this CreatePostPaidInstanceReq.
         :type engine_version: str
@@ -780,6 +794,50 @@ class CreatePostPaidInstanceReq:
         self._connector_enable = connector_enable
 
     @property
+    def disk_encrypted_enable(self):
+        """Gets the disk_encrypted_enable of this CreatePostPaidInstanceReq.
+
+        是否开启磁盘加密。
+
+        :return: The disk_encrypted_enable of this CreatePostPaidInstanceReq.
+        :rtype: bool
+        """
+        return self._disk_encrypted_enable
+
+    @disk_encrypted_enable.setter
+    def disk_encrypted_enable(self, disk_encrypted_enable):
+        """Sets the disk_encrypted_enable of this CreatePostPaidInstanceReq.
+
+        是否开启磁盘加密。
+
+        :param disk_encrypted_enable: The disk_encrypted_enable of this CreatePostPaidInstanceReq.
+        :type disk_encrypted_enable: bool
+        """
+        self._disk_encrypted_enable = disk_encrypted_enable
+
+    @property
+    def disk_encrypted_key(self):
+        """Gets the disk_encrypted_key of this CreatePostPaidInstanceReq.
+
+        磁盘加密key，未开启磁盘加密时为空。
+
+        :return: The disk_encrypted_key of this CreatePostPaidInstanceReq.
+        :rtype: str
+        """
+        return self._disk_encrypted_key
+
+    @disk_encrypted_key.setter
+    def disk_encrypted_key(self, disk_encrypted_key):
+        """Sets the disk_encrypted_key of this CreatePostPaidInstanceReq.
+
+        磁盘加密key，未开启磁盘加密时为空。
+
+        :param disk_encrypted_key: The disk_encrypted_key of this CreatePostPaidInstanceReq.
+        :type disk_encrypted_key: str
+        """
+        self._disk_encrypted_key = disk_encrypted_key
+
+    @property
     def enable_auto_topic(self):
         """Gets the enable_auto_topic of this CreatePostPaidInstanceReq.
 
@@ -805,7 +863,7 @@ class CreatePostPaidInstanceReq:
     def storage_spec_code(self):
         """Gets the storage_spec_code of this CreatePostPaidInstanceReq.
 
-        存储IO规格。 [新老规格的实例的存储IO规格不相同，创建实例请选择对应的存储IO规格。 新规格实例取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  老规格实例取值范围：](tag:hc,hk)   - 参数specification为100MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为300MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为600MB时，取值dms.physical.storage.ultra   - 参数specification为1200MB时，取值dms.physical.storage.ultra存储IO规格。如何选择磁盘类型请参考磁盘类型及性能介绍。
+        存储IO规格。 [新老规格的实例的存储IO规格不相同，创建实例请选择对应的存储IO规格。 新规格实例取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  老规格实例取值范围：](tag:hc,hk)   - 参数specification为100MB/300MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为600MB/1200MB时，取值dms.physical.storage.ultra   如何选择磁盘类型请参考磁盘类型及性能介绍。
 
         :return: The storage_spec_code of this CreatePostPaidInstanceReq.
         :rtype: str
@@ -816,7 +874,7 @@ class CreatePostPaidInstanceReq:
     def storage_spec_code(self, storage_spec_code):
         """Sets the storage_spec_code of this CreatePostPaidInstanceReq.
 
-        存储IO规格。 [新老规格的实例的存储IO规格不相同，创建实例请选择对应的存储IO规格。 新规格实例取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  老规格实例取值范围：](tag:hc,hk)   - 参数specification为100MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为300MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为600MB时，取值dms.physical.storage.ultra   - 参数specification为1200MB时，取值dms.physical.storage.ultra存储IO规格。如何选择磁盘类型请参考磁盘类型及性能介绍。
+        存储IO规格。 [新老规格的实例的存储IO规格不相同，创建实例请选择对应的存储IO规格。 新规格实例取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  老规格实例取值范围：](tag:hc,hk)   - 参数specification为100MB/300MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为600MB/1200MB时，取值dms.physical.storage.ultra   如何选择磁盘类型请参考磁盘类型及性能介绍。
 
         :param storage_spec_code: The storage_spec_code of this CreatePostPaidInstanceReq.
         :type storage_spec_code: str

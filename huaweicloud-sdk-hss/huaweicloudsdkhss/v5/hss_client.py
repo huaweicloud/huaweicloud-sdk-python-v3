@@ -48,6 +48,130 @@ class HssClient(Client):
 
         return ClientBuilder(clazz)
 
+    def batch_create_tags(self, request):
+        """批量创建标签
+
+        批量创建标签
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchCreateTags
+        :type request: :class:`huaweicloudsdkhss.v5.BatchCreateTagsRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.BatchCreateTagsResponse`
+        """
+        return self.batch_create_tags_with_http_info(request)
+
+    def batch_create_tags_with_http_info(self, request):
+        all_params = ['resource_type', 'resource_id', 'batch_create_tags_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/{resource_type}/{resource_id}/tags/create',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchCreateTagsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_resource_instance_tag(self, request):
+        """删除资源标签
+
+        删除单个资源下的标签
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteResourceInstanceTag
+        :type request: :class:`huaweicloudsdkhss.v5.DeleteResourceInstanceTagRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.DeleteResourceInstanceTagResponse`
+        """
+        return self.delete_resource_instance_tag_with_http_info(request)
+
+    def delete_resource_instance_tag_with_http_info(self, request):
+        all_params = ['resource_type', 'resource_id', 'key']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'resource_type' in local_var_params:
+            path_params['resource_type'] = local_var_params['resource_type']
+        if 'resource_id' in local_var_params:
+            path_params['resource_id'] = local_var_params['resource_id']
+        if 'key' in local_var_params:
+            path_params['key'] = local_var_params['key']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/{resource_type}/{resource_id}/tags/{key}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteResourceInstanceTagResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_host_status(self, request):
         """查询云服务器列表
 
@@ -63,7 +187,7 @@ class HssClient(Client):
         return self.list_host_status_with_http_info(request)
 
     def list_host_status_with_http_info(self, request):
-        all_params = ['region', 'enterprise_project_id', 'version', 'agent_status', 'detect_result', 'host_name', 'host_id', 'host_status', 'os_type', 'private_ip', 'public_ip', 'ip_addr', 'protect_status', 'group_id', 'group_name', 'policy_group_id', 'policy_group_name', 'charging_mode', 'refresh', 'above_version', 'outside_host', 'asset_value', 'label', 'limit', 'offset']
+        all_params = ['region', 'enterprise_project_id', 'version', 'agent_status', 'detect_result', 'host_name', 'host_id', 'host_status', 'os_type', 'private_ip', 'public_ip', 'ip_addr', 'protect_status', 'group_id', 'group_name', 'policy_group_id', 'policy_group_name', 'charging_mode', 'refresh', 'above_version', 'outside_host', 'asset_value', 'label', 'server_group', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -118,6 +242,8 @@ class HssClient(Client):
             query_params.append(('asset_value', local_var_params['asset_value']))
         if 'label' in local_var_params:
             query_params.append(('label', local_var_params['label']))
+        if 'server_group' in local_var_params:
+            query_params.append(('server_group', local_var_params['server_group']))
         if 'limit' in local_var_params:
             query_params.append(('limit', local_var_params['limit']))
         if 'offset' in local_var_params:
@@ -222,6 +348,84 @@ class HssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_quotas_detail(self, request):
+        """查询配额详情
+
+        查询配额详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListQuotasDetail
+        :type request: :class:`huaweicloudsdkhss.v5.ListQuotasDetailRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListQuotasDetailResponse`
+        """
+        return self.list_quotas_detail_with_http_info(request)
+
+    def list_quotas_detail_with_http_info(self, request):
+        all_params = ['region', 'enterprise_project_id', 'version', 'category', 'quota_status', 'used_status', 'host_name', 'resource_id', 'charging_mode', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+        if 'category' in local_var_params:
+            query_params.append(('category', local_var_params['category']))
+        if 'quota_status' in local_var_params:
+            query_params.append(('quota_status', local_var_params['quota_status']))
+        if 'used_status' in local_var_params:
+            query_params.append(('used_status', local_var_params['used_status']))
+        if 'host_name' in local_var_params:
+            query_params.append(('host_name', local_var_params['host_name']))
+        if 'resource_id' in local_var_params:
+            query_params.append(('resource_id', local_var_params['resource_id']))
+        if 'charging_mode' in local_var_params:
+            query_params.append(('charging_mode', local_var_params['charging_mode']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/billing/quotas-detail',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListQuotasDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_risk_config_check_rules(self, request):
         """查询指定安全配置项的检查项列表
 
@@ -237,7 +441,7 @@ class HssClient(Client):
         return self.list_risk_config_check_rules_with_http_info(request)
 
     def list_risk_config_check_rules_with_http_info(self, request):
-        all_params = ['check_type', 'standard', 'enterprise_project_id', 'result_type', 'check_rule_name', 'severity', 'host_id', 'limit', 'offset']
+        all_params = ['check_name', 'standard', 'enterprise_project_id', 'result_type', 'check_rule_name', 'severity', 'host_id', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -246,8 +450,8 @@ class HssClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'check_type' in local_var_params:
-            path_params['check_type'] = local_var_params['check_type']
+        if 'check_name' in local_var_params:
+            path_params['check_name'] = local_var_params['check_name']
 
         query_params = []
         if 'enterprise_project_id' in local_var_params:
@@ -283,7 +487,7 @@ class HssClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v5/{project_id}/baseline/risk-config/{check_type}/check-rules',
+            resource_path='/v5/{project_id}/baseline/risk-config/{check_name}/check-rules',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -311,7 +515,7 @@ class HssClient(Client):
         return self.list_risk_config_hosts_with_http_info(request)
 
     def list_risk_config_hosts_with_http_info(self, request):
-        all_params = ['check_type', 'standard', 'enterprise_project_id', 'host_name', 'host_ip', 'limit', 'offset']
+        all_params = ['check_name', 'standard', 'enterprise_project_id', 'host_name', 'host_ip', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -320,8 +524,8 @@ class HssClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'check_type' in local_var_params:
-            path_params['check_type'] = local_var_params['check_type']
+        if 'check_name' in local_var_params:
+            path_params['check_name'] = local_var_params['check_name']
 
         query_params = []
         if 'enterprise_project_id' in local_var_params:
@@ -353,7 +557,7 @@ class HssClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v5/{project_id}/baseline/risk-config/{check_type}/hosts',
+            resource_path='/v5/{project_id}/baseline/risk-config/{check_name}/hosts',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -381,7 +585,7 @@ class HssClient(Client):
         return self.list_risk_configs_with_http_info(request)
 
     def list_risk_configs_with_http_info(self, request):
-        all_params = ['enterprise_project_id', 'check_type', 'severity', 'standard', 'host_id', 'limit', 'offset']
+        all_params = ['enterprise_project_id', 'check_name', 'severity', 'standard', 'host_id', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -394,8 +598,8 @@ class HssClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-        if 'check_type' in local_var_params:
-            query_params.append(('check_type', local_var_params['check_type']))
+        if 'check_name' in local_var_params:
+            query_params.append(('check_name', local_var_params['check_name']))
         if 'severity' in local_var_params:
             query_params.append(('severity', local_var_params['severity']))
         if 'standard' in local_var_params:
@@ -518,6 +722,160 @@ class HssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSecurityEventsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_user_change_histories(self, request):
+        """获取账户变动历史信息
+
+        获取账户变动历史记录信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListUserChangeHistories
+        :type request: :class:`huaweicloudsdkhss.v5.ListUserChangeHistoriesRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListUserChangeHistoriesResponse`
+        """
+        return self.list_user_change_histories_with_http_info(request)
+
+    def list_user_change_histories_with_http_info(self, request):
+        all_params = ['user_name', 'host_id', 'root_permission', 'host_name', 'private_ip', 'change_type', 'limit', 'offset', 'enterprise_project_id', 'start_time', 'end_time']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'host_id' in local_var_params:
+            query_params.append(('host_id', local_var_params['host_id']))
+        if 'root_permission' in local_var_params:
+            query_params.append(('root_permission', local_var_params['root_permission']))
+        if 'host_name' in local_var_params:
+            query_params.append(('host_name', local_var_params['host_name']))
+        if 'private_ip' in local_var_params:
+            query_params.append(('private_ip', local_var_params['private_ip']))
+        if 'change_type' in local_var_params:
+            query_params.append(('change_type', local_var_params['change_type']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'start_time' in local_var_params:
+            query_params.append(('start_time', local_var_params['start_time']))
+        if 'end_time' in local_var_params:
+            query_params.append(('end_time', local_var_params['end_time']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/asset/user/change-history',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListUserChangeHistoriesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_users(self, request):
+        """获取资产的账号列表
+
+        获取资产的账号列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListUsers
+        :type request: :class:`huaweicloudsdkhss.v5.ListUsersRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ListUsersResponse`
+        """
+        return self.list_users_with_http_info(request)
+
+    def list_users_with_http_info(self, request):
+        all_params = ['host_id', 'user_name', 'host_name', 'private_ip', 'login_permission', 'root_permission', 'user_group', 'enterprise_project_id', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'host_id' in local_var_params:
+            query_params.append(('host_id', local_var_params['host_id']))
+        if 'user_name' in local_var_params:
+            query_params.append(('user_name', local_var_params['user_name']))
+        if 'host_name' in local_var_params:
+            query_params.append(('host_name', local_var_params['host_name']))
+        if 'private_ip' in local_var_params:
+            query_params.append(('private_ip', local_var_params['private_ip']))
+        if 'login_permission' in local_var_params:
+            query_params.append(('login_permission', local_var_params['login_permission']))
+        if 'root_permission' in local_var_params:
+            query_params.append(('root_permission', local_var_params['root_permission']))
+        if 'user_group' in local_var_params:
+            query_params.append(('user_group', local_var_params['user_group']))
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/asset/users',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListUsersResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -676,7 +1034,7 @@ class HssClient(Client):
         return self.show_check_rule_detail_with_http_info(request)
 
     def show_check_rule_detail_with_http_info(self, request):
-        all_params = ['check_type', 'check_rule_id', 'standard', 'enterprise_project_id', 'host_id']
+        all_params = ['check_name', 'check_rule_id', 'standard', 'enterprise_project_id', 'host_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -689,8 +1047,8 @@ class HssClient(Client):
         query_params = []
         if 'enterprise_project_id' in local_var_params:
             query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
-        if 'check_type' in local_var_params:
-            query_params.append(('check_type', local_var_params['check_type']))
+        if 'check_name' in local_var_params:
+            query_params.append(('check_name', local_var_params['check_name']))
         if 'check_rule_id' in local_var_params:
             query_params.append(('check_rule_id', local_var_params['check_rule_id']))
         if 'standard' in local_var_params:
@@ -727,6 +1085,70 @@ class HssClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_resource_quotas(self, request):
+        """查询配额信息
+
+        查询配额信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowResourceQuotas
+        :type request: :class:`huaweicloudsdkhss.v5.ShowResourceQuotasRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.ShowResourceQuotasResponse`
+        """
+        return self.show_resource_quotas_with_http_info(request)
+
+    def show_resource_quotas_with_http_info(self, request):
+        all_params = ['region', 'enterprise_project_id', 'version', 'charging_mode']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'version' in local_var_params:
+            query_params.append(('version', local_var_params['version']))
+        if 'charging_mode' in local_var_params:
+            query_params.append(('charging_mode', local_var_params['charging_mode']))
+
+        header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/billing/quotas',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowResourceQuotasResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_risk_config_detail(self, request):
         """查询指定安全配置项的检查结果
 
@@ -742,7 +1164,7 @@ class HssClient(Client):
         return self.show_risk_config_detail_with_http_info(request)
 
     def show_risk_config_detail_with_http_info(self, request):
-        all_params = ['check_type', 'standard', 'enterprise_project_id', 'host_id', 'limit', 'offset']
+        all_params = ['check_name', 'standard', 'enterprise_project_id', 'host_id', 'limit', 'offset']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -751,8 +1173,8 @@ class HssClient(Client):
         collection_formats = {}
 
         path_params = {}
-        if 'check_type' in local_var_params:
-            path_params['check_type'] = local_var_params['check_type']
+        if 'check_name' in local_var_params:
+            path_params['check_name'] = local_var_params['check_name']
 
         query_params = []
         if 'enterprise_project_id' in local_var_params:
@@ -782,7 +1204,7 @@ class HssClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v5/{project_id}/baseline/risk-config/{check_type}/detail',
+            resource_path='/v5/{project_id}/baseline/risk-config/{check_name}/detail',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -790,6 +1212,68 @@ class HssClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowRiskConfigDetailResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def switch_hosts_protect_status(self, request):
+        """切换防护状态
+
+        切换防护状态
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for SwitchHostsProtectStatus
+        :type request: :class:`huaweicloudsdkhss.v5.SwitchHostsProtectStatusRequest`
+        :rtype: :class:`huaweicloudsdkhss.v5.SwitchHostsProtectStatusResponse`
+        """
+        return self.switch_hosts_protect_status_with_http_info(request)
+
+    def switch_hosts_protect_status_with_http_info(self, request):
+        all_params = ['region', 'switch_hosts_protect_status_request_body', 'enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+        if 'region' in local_var_params:
+            header_params['region'] = local_var_params['region']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v5/{project_id}/host-management/protection',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='SwitchHostsProtectStatusResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

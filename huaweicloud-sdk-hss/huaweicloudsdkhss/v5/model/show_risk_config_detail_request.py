@@ -22,7 +22,7 @@ class ShowRiskConfigDetailRequest:
 
     openapi_types = {
         'enterprise_project_id': 'str',
-        'check_type': 'str',
+        'check_name': 'str',
         'standard': 'str',
         'host_id': 'str',
         'limit': 'int',
@@ -31,22 +31,22 @@ class ShowRiskConfigDetailRequest:
 
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
-        'check_type': 'check_type',
+        'check_name': 'check_name',
         'standard': 'standard',
         'host_id': 'host_id',
         'limit': 'limit',
         'offset': 'offset'
     }
 
-    def __init__(self, enterprise_project_id=None, check_type=None, standard=None, host_id=None, limit=None, offset=None):
+    def __init__(self, enterprise_project_id=None, check_name=None, standard=None, host_id=None, limit=None, offset=None):
         """ShowRiskConfigDetailRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID
+        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
         :type enterprise_project_id: str
-        :param check_type: 基线名称
-        :type check_type: str
+        :param check_name: 基线名称
+        :type check_name: str
         :param standard: 标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 华为标准 - qt_standard : 青腾标准
         :type standard: str
         :param host_id: 主机ID，不赋值时，查租户所有主机
@@ -60,7 +60,7 @@ class ShowRiskConfigDetailRequest:
         
 
         self._enterprise_project_id = None
-        self._check_type = None
+        self._check_name = None
         self._standard = None
         self._host_id = None
         self._limit = None
@@ -69,7 +69,7 @@ class ShowRiskConfigDetailRequest:
 
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
-        self.check_type = check_type
+        self.check_name = check_name
         self.standard = standard
         if host_id is not None:
             self.host_id = host_id
@@ -82,7 +82,7 @@ class ShowRiskConfigDetailRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowRiskConfigDetailRequest.
 
-        企业项目ID
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :return: The enterprise_project_id of this ShowRiskConfigDetailRequest.
         :rtype: str
@@ -93,7 +93,7 @@ class ShowRiskConfigDetailRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowRiskConfigDetailRequest.
 
-        企业项目ID
+        企业项目ID，查询所有企业项目时填写：all_granted_eps
 
         :param enterprise_project_id: The enterprise_project_id of this ShowRiskConfigDetailRequest.
         :type enterprise_project_id: str
@@ -101,26 +101,26 @@ class ShowRiskConfigDetailRequest:
         self._enterprise_project_id = enterprise_project_id
 
     @property
-    def check_type(self):
-        """Gets the check_type of this ShowRiskConfigDetailRequest.
+    def check_name(self):
+        """Gets the check_name of this ShowRiskConfigDetailRequest.
 
         基线名称
 
-        :return: The check_type of this ShowRiskConfigDetailRequest.
+        :return: The check_name of this ShowRiskConfigDetailRequest.
         :rtype: str
         """
-        return self._check_type
+        return self._check_name
 
-    @check_type.setter
-    def check_type(self, check_type):
-        """Sets the check_type of this ShowRiskConfigDetailRequest.
+    @check_name.setter
+    def check_name(self, check_name):
+        """Sets the check_name of this ShowRiskConfigDetailRequest.
 
         基线名称
 
-        :param check_type: The check_type of this ShowRiskConfigDetailRequest.
-        :type check_type: str
+        :param check_name: The check_name of this ShowRiskConfigDetailRequest.
+        :type check_name: str
         """
-        self._check_type = check_type
+        self._check_name = check_name
 
     @property
     def standard(self):
