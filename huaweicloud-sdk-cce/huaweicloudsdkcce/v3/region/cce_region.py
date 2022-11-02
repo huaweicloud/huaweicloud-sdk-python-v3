@@ -46,6 +46,8 @@ class CceRegion:
 
     NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://cce.na-mexico-1.myhuaweicloud.com")
 
+    RU_NORTHWEST_2 = Region(id="ru-northwest-2", endpoint="https://cce.ru-northwest-2.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-1": CN_NORTH_1,
         "cn-north-2": CN_NORTH_2,
@@ -65,6 +67,7 @@ class CceRegion:
         "la-south-2": LA_SOUTH_2,
         "la-north-2": LA_NORTH_2,
         "na-mexico-1": NA_MEXICO_1,
+        "ru-northwest-2": RU_NORTHWEST_2,
     }
 
     @classmethod

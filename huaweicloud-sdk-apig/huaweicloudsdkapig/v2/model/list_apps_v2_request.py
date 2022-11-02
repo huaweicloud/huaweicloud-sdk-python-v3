@@ -53,7 +53,7 @@ class ListAppsV2Request:
         :type instance_id: str
         :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
         :type offset: int
-        :param limit: 每页显示的条目数量
+        :param limit: 每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
         :type limit: int
         :param id: APP编号
         :type id: str
@@ -148,7 +148,7 @@ class ListAppsV2Request:
     def limit(self):
         """Gets the limit of this ListAppsV2Request.
 
-        每页显示的条目数量
+        每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
         :return: The limit of this ListAppsV2Request.
         :rtype: int
@@ -159,7 +159,7 @@ class ListAppsV2Request:
     def limit(self, limit):
         """Sets the limit of this ListAppsV2Request.
 
-        每页显示的条目数量
+        每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
         :param limit: The limit of this ListAppsV2Request.
         :type limit: int

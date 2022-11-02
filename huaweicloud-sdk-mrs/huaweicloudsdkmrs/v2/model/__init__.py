@@ -3,7 +3,7 @@
 from __future__ import absolute_import
 
 # import models into model package
-from huaweicloudsdkmrs.v2.model.add_jobs import AddJobs
+from huaweicloudsdkmrs.v2.model.add_jobs_req_v11 import AddJobsReqV11
 from huaweicloudsdkmrs.v2.model.agency_mapping import AgencyMapping
 from huaweicloudsdkmrs.v2.model.agency_mapping_array import AgencyMappingArray
 from huaweicloudsdkmrs.v2.model.auto_scaling_policy import AutoScalingPolicy
@@ -27,7 +27,7 @@ from huaweicloudsdkmrs.v2.model.job_query_bean import JobQueryBean
 from huaweicloudsdkmrs.v2.model.job_submit_result import JobSubmitResult
 from huaweicloudsdkmrs.v2.model.node_group_v2 import NodeGroupV2
 from huaweicloudsdkmrs.v2.model.resources_plan import ResourcesPlan
-from huaweicloudsdkmrs.v2.model.rules import Rules
+from huaweicloudsdkmrs.v2.model.rule import Rule
 from huaweicloudsdkmrs.v2.model.scale_script import ScaleScript
 from huaweicloudsdkmrs.v2.model.show_agency_mapping_request import ShowAgencyMappingRequest
 from huaweicloudsdkmrs.v2.model.show_agency_mapping_response import ShowAgencyMappingResponse

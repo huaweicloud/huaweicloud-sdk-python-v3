@@ -133,7 +133,7 @@ class JobExeResult:
         :type arguments: str
         :param hql: HQL脚本语句。
         :type hql: str
-        :param job_state: 作业状态编码：  - -1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
+        :param job_state: 作业状态编码：  - 1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
         :type job_state: int
         :param job_final_status: 作业最终状态码。  - 0：未完成 - 1：执行错误，终止执行 - 2：执行完成并且成功 - 3：已取消
         :type job_final_status: int
@@ -637,7 +637,7 @@ class JobExeResult:
     def job_state(self):
         """Gets the job_state of this JobExeResult.
 
-        作业状态编码：  - -1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
+        作业状态编码：  - 1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
 
         :return: The job_state of this JobExeResult.
         :rtype: int
@@ -648,7 +648,7 @@ class JobExeResult:
     def job_state(self, job_state):
         """Sets the job_state of this JobExeResult.
 
-        作业状态编码：  - -1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
+        作业状态编码：  - 1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
 
         :param job_state: The job_state of this JobExeResult.
         :type job_state: int

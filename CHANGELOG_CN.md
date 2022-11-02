@@ -1,3 +1,143 @@
+# 3.1.7 2022-11-02
+
+### HuaweiCloud SDK APIG
+
+- _新增特性_
+  - 支持以下接口：
+    - `UpdateHealthCheck`
+    - `BatchEnableMembers`
+    - `BatchDisableMembers`
+    - `ListMemberGroups`
+    - `CreateMemberGroup`
+    - `ShowDetailsOfMemberGroup`
+    - `UpdateMemberGroup`
+    - `DeleteMemberGroup`
+    - `ListMetricData`
+    - `ImportMicroservice`
+    - `ListCertificatesV2`
+    - `CreateCertificateV2`
+    - `BatchAssociateCertsV2`
+    - `BatchDisassociateCertsV2`
+    - `ShowDetailsOfCertificateV2`
+    - `UpdateCertificateV2`
+    - `DeleteCertificateV2`
+    - `BatchAssociateDomainsV2`
+    - `BatchDisassociateDomainsV2`
+    - `ListAttachedDomainsV2`
+    - `UpdateBackendInstancesV2`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateAclStrategyV2`:
+    - 请求参数`acl_type`类型调整 `string` -> `enum`
+    - 请求参数`entity_type`类型调整 `string` -> `enum`
+  - 接口`UpdateAclStrategyV2`:
+    - 请求参数`acl_type`类型调整 `string` -> `enum`
+    - 请求参数`entity_type`类型调整 `string` -> `enum`
+  - 接口`ListAclPolicyBindedToApiV2`响应参数`entity_type`新增枚举值`DOMAIN_ID`
+  - 接口`CreateVpcChannelV2`:
+    - 新增请求参数 `member_groups`、`microservice_info`、`dict_code`
+    - 请求参数`port`、`balance_strategy`、`member_type`改为必填
+  - 接口`ListVpcChannelsV2`:
+    - 新增请求参数 `dict_code`、`member_host`、`member_port`、`member_group_name`、`member_group_id`
+    - 新增响应参数 `microservice_info`、`type`、`dict_code`、`microservice_version`、`microservice_port`
+    - 响应参数`port`、`balance_strategy`、`member_type`改为必填
+  - 接口`ShowDetailsOfVpcChannelV2`:
+    - 新增响应参数 `microservice_info`、`type`、`dict_code`、`microservice_version`、`microservice_port`
+    - 响应参数`port`、`balance_strategy`、`member_type`改为必填
+  - 接口`UpdateVpcChannelV2`:
+    - 新增请求参数 `member_groups`、`microservice_info`、`dict_code`
+    - 新增响应参数 `microservice_info`、`type`、`dict_code`、`microservice_version`、`microservice_port`
+    - 请求参数`port`、`balance_strategy`、`member_type`改为必填
+    - 响应参数`port`、`balance_strategy`、`member_type`改为必填
+  - 接口`ListBackendInstancesV2`新增请求参数 `member_group_name`、`member_group_id`、`precise_search`
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowUrlTaskInfo`:
+    - 响应参数`modify_time`类型调整 `int32` -> `int64`
+    - 响应参数`create_time`类型调整 `int32` -> `int64`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 支持接口`UpdateServerBlockDevice`、`RegisterServerMonitor`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 支持接口`UpdateTransactionSplitStatus`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ShowGaussMySqlProxy`新增响应参数 `transaction_split`
+  - 接口`ShowGaussMySqlProxyList`新增响应参数 `transaction_split`
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateScalingPolicy`:
+    - 新增请求参数 `autoScalingPolicyReqV11`
+    - 移除请求参数 `auto_scaling_policy_req_V11`
+  - 接口`CreateCluster`:
+    - 新增请求参数 `createClusterReqV11`
+    - 移除请求参数 `cluster_req`
+  - 接口`ListClusters`移除响应参数 `name`、`uri`、`parameters`、`nodes`、`active_master`、`fail_action`、`before_component_start`、`start_time`、`state`
+  - 接口`UpdateClusterScaling`:
+    - 新增请求参数 `clusterScalingReq`
+    - 移除请求参数 `cluster_scaling_req`
+  - 接口`ShowClusterDetails`移除响应参数 `name`、`uri`、`parameters`、`nodes`、`active_master`、`fail_action`、`before_component_start`、`start_time`、`state`
+  - 接口`CreateClusterTag`:
+    - 新增请求参数 `createTagReq`
+    - 移除请求参数 `CreateTagRequest`
+  - 接口`BatchCreateClusterTags`:
+    - 新增请求参数 `batchCreateClusterTagsReq`
+    - 移除请求参数 `BatchCreateClusterTagsRequest`
+  - 接口`BatchDeleteClusterTags`移除请求参数 `key`、`value`
+  - 接口`ListClustersByTags`:
+    - 新增请求参数 `listResourceReq`
+    - 移除请求参数 `ListResourceRequest`
+    - 接口`CreateCluster`移除请求参数 `key`、`value`、`auto_scaling_enable`、`min_capacity`、`max_capacity`、`resources_plans`、`rules`、`exec_scripts`、`name`、`uri`、`parameters`、`nodes`、`active_master`、`fail_action`、`before_component_start`、`action_stages`、`job_type`、`job_name`、`jar_path`、`arguments`、`input`、`output`、`job_log`、`hive_script_path`、`hql`、`shutdown_cluster`、`submit_job_once_cluster_run`、`file_action`
+  - 接口`CreateExecuteJob`:
+    - 新增请求参数 `jobExecution`
+    - 移除请求参数 `job_execution_dto`
+    - 移除响应参数 `job_submit_result`
+  - 接口`BatchDeleteJobs`:
+    - 新增请求参数 `jobBatchDelete`
+    - 移除请求参数 `job_batch_delete`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ListPostgresqlExtension`、`CreatePostgresqlExtension`、`DeletePostgresqlExtension`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK SIS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`PushTranscriberJobs`请求参数`property`新增枚举值`sichuan_8k_common`
+  - 接口`RunTts`请求参数`property`新增枚举值`chinese_huaxiaolong_common`、`chinese_huaxiaorui_common`
+
 # 3.1.6 2022-10-27
 
 ### HuaweiCloud SDK BMS

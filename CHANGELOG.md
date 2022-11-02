@@ -1,3 +1,143 @@
+# 3.1.7 2022-11-02
+
+### HuaweiCloud SDK APIG
+
+- _Features_
+  - Support the following interfaces：
+    - `UpdateHealthCheck`
+    - `BatchEnableMembers`
+    - `BatchDisableMembers`
+    - `ListMemberGroups`
+    - `CreateMemberGroup`
+    - `ShowDetailsOfMemberGroup`
+    - `UpdateMemberGroup`
+    - `DeleteMemberGroup`
+    - `ListMetricData`
+    - `ImportMicroservice`
+    - `ListCertificatesV2`
+    - `CreateCertificateV2`
+    - `BatchAssociateCertsV2`
+    - `BatchDisassociateCertsV2`
+    - `ShowDetailsOfCertificateV2`
+    - `UpdateCertificateV2`
+    - `DeleteCertificateV2`
+    - `BatchAssociateDomainsV2`
+    - `BatchDisassociateDomainsV2`
+    - `ListAttachedDomainsV2`
+    - `UpdateBackendInstancesV2`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateAclStrategyV2`:
+    - Modify the type `string` -> `enum` of the request parameter `acl_type`
+    - Modify the type `string` -> `enum` of the request parameter `entity_type`
+  - Changes of the interface `UpdateAclStrategyV2`:
+    - Modify the type `string` -> `enum` of the request parameter `acl_type`
+    - Modify the type `string` -> `enum` of the request parameter `entity_type`
+  - Add the enum values `DOMAIN_ID` to the response parameter `entity_type` to the interface `ListAclPolicyBindedToApiV2`
+  - Changes of the interface `CreateVpcChannelV2`:
+    - Add the request parameters `member_groups`, `microservice_info`, `dict_code`
+    - The request parameter `port`, `balance_strategy`, `member_type` changed to required
+  - Changes of the interface `ListVpcChannelsV2`:
+    - Add the request parameters `dict_code`, `member_host`, `member_port`, `member_group_name`, `member_group_id`
+    - Add the response parameters `microservice_info`, `type`, `dict_code`, `microservice_version`, `microservice_port`
+    - The response parameter `port`, `balance_strategy`, `member_type` changed to required
+  - Changes of the interface `ShowDetailsOfVpcChannelV2`:
+    - Add the response parameters `microservice_info`, `type`, `dict_code`, `microservice_version`, `microservice_port`
+    - The response parameter `port`, `balance_strategy`, `member_type` changed to required
+  - Changes of the interface `UpdateVpcChannelV2`:
+    - Add the request parameters `member_groups`, `microservice_info`, `dict_code`
+    - Add the response parameters `microservice_info`, `type`, `dict_code`, `microservice_version`, `microservice_port`
+    - The request parameter `port`, `balance_strategy`, `member_type` changed to required
+    - The response parameter `port`, `balance_strategy`, `member_type` changed to required
+  - Add the request parameters `member_group_name`, `member_group_id`, `precise_search` to the interface `ListBackendInstancesV2`
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ShowUrlTaskInfo`:
+    - Modify the type `int32` -> `int64` of the response parameter `modify_time`
+    - Modify the type `int32` -> `int64` of the response parameter `create_time`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - Support the interfaces `UpdateServerBlockDevice`, `RegisterServerMonitor`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - Support the interface `UpdateTransactionSplitStatus`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `transaction_split` to the interface `ShowGaussMySqlProxy`
+  - Add the response parameter `transaction_split` to the interface `ShowGaussMySqlProxyList`
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `CreateScalingPolicy`:
+    - Add the request parameter `autoScalingPolicyReqV11`
+    - Remove the request parameter `auto_scaling_policy_req_V11`
+  - Changes of the interface `CreateCluster`:
+    - Add the request parameter `createClusterReqV11`
+    - Remove the request parameter `cluster_req`
+  - Remove the response parameters `name`, `uri`, `parameters`, `nodes`, `active_master`, `fail_action`, `before_component_start`, `start_time`, `state` from the interface `ListClusters`
+  - Changes of the interface `UpdateClusterScaling`:
+    - Add the request parameter `clusterScalingReq`
+    - Remove the request parameter `cluster_scaling_req`
+  - Remove the response parameters `name`, `uri`, `parameters`, `nodes`, `active_master`, `fail_action`, `before_component_start`, `start_time`, `state` from the interface `ShowClusterDetails`
+  - Changes of the interface `CreateClusterTag`:
+    - Add the request parameter `createTagReq`
+    - Remove the request parameter `CreateTagRequest`
+  - Changes of the interface `BatchCreateClusterTags`:
+    - Add the request parameter `batchCreateClusterTagsReq`
+    - Remove the request parameter `BatchCreateClusterTagsRequest`
+  - Remove the request parameters `key`, `value` from the interface `BatchDeleteClusterTags`
+  - Changes of the interface `ListClustersByTags`:
+    - Add the request parameter `listResourceReq`
+    - Remove the request parameter `ListResourceRequest`
+    - Remove the request parameters `key`, `value`, `auto_scaling_enable`, `min_capacity`, `max_capacity`, `resources_plans`, `rules`, `exec_scripts`, `name`, `uri`, `parameters`, `nodes`, `active_master`, `fail_action`, `before_component_start`, `action_stages`, `job_type`, `job_name`, `jar_path`, `arguments`, `input`, `output`, `job_log`, `hive_script_path`, `hql`, `shutdown_cluster`, `submit_job_once_cluster_run`, `file_action` from the interface `CreateCluster`
+  - Changes of the interface `CreateExecuteJob`:
+    - Add the request parameter `jobExecution`
+    - Remove the request parameter `job_execution_dto`
+    - Remove the response parameter `job_submit_result`
+  - Changes of the interface `BatchDeleteJobs`:
+    - Add the request parameter `jobBatchDelete`
+    - Remove the request parameter `job_batch_delete`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `ListPostgresqlExtension`, `CreatePostgresqlExtension`, `DeletePostgresqlExtension`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK SIS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `sichuan_8k_common` to the request parameter `property` to the interface `PushTranscriberJobs`
+  - Add the enum values `chinese_huaxiaolong_common`, `chinese_huaxiaorui_common` to the request parameter `property` to the interface `RunTts`
+
 # 3.1.6 2022-10-27
 
 ### HuaweiCloud SDK BMS

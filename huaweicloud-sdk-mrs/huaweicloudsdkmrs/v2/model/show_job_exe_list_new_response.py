@@ -21,29 +21,58 @@ class ShowJobExeListNewResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'total_record': 'int',
         'job_list': 'list[JobQueryBean]'
     }
 
     attribute_map = {
+        'total_record': 'total_record',
         'job_list': 'job_list'
     }
 
-    def __init__(self, job_list=None):
+    def __init__(self, total_record=None, job_list=None):
         """ShowJobExeListNewResponse
 
         The model defined in huaweicloud sdk
 
+        :param total_record: 总记录数
+        :type total_record: int
         :param job_list: 作业列表。
         :type job_list: list[:class:`huaweicloudsdkmrs.v2.JobQueryBean`]
         """
         
         super(ShowJobExeListNewResponse, self).__init__()
 
+        self._total_record = None
         self._job_list = None
         self.discriminator = None
 
+        if total_record is not None:
+            self.total_record = total_record
         if job_list is not None:
             self.job_list = job_list
+
+    @property
+    def total_record(self):
+        """Gets the total_record of this ShowJobExeListNewResponse.
+
+        总记录数
+
+        :return: The total_record of this ShowJobExeListNewResponse.
+        :rtype: int
+        """
+        return self._total_record
+
+    @total_record.setter
+    def total_record(self, total_record):
+        """Sets the total_record of this ShowJobExeListNewResponse.
+
+        总记录数
+
+        :param total_record: The total_record of this ShowJobExeListNewResponse.
+        :type total_record: int
+        """
+        self._total_record = total_record
 
     @property
     def job_list(self):

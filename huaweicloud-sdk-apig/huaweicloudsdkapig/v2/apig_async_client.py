@@ -562,29 +562,29 @@ class ApigAsyncClient(Client):
         
         支持配置的特性列表及特性配置示例如下：
         
-        | 特性名称 | 特性描述 | 特性配置示例 | 特性参数名称 | 参数描述 | 参数默认值 | 参数范围 | 
+        | 特性名称 | 特性描述 | 特性配置示例 | 特性参数名称 | 参数描述 | 参数默认值 | 参数范围 |
         --------| :------- | :-------| :-------| :-------| :-------| :-------
         | lts | 是否支持shubao访问日志上报功能。|{\&quot;name\&quot;:\&quot;lts\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;group_id\\\\\&quot;: \\\&quot;\\,\\\\\&quot;topic_id\\\\\&quot;:\\\\\&quot;\\\\\&quot;,\\\\\&quot;log_group\\\\\&quot;:\\\\\&quot;\\\\\&quot;,\\\\\&quot;log_stream\\\\\&quot;:\\\\\&quot;\\\\\&quot;}\&quot;} | (1) group_id &lt;br/&gt;(2) topic_id &lt;br/&gt;(3) log_group &lt;br/&gt;(4) log_stream | (1) 日志组ID &lt;br/&gt;(2) 日志流ID &lt;br/&gt;(3) 日志组名称 &lt;br/&gt;(4) 日志流名称 | - | - |
         | ratelimit | 是否支持自定义流控值。|{\&quot;name\&quot;:\&quot;ratelimit\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;api_limits\\\\\&quot;: 500}\&quot;} | api_limits | API全局默认流控值。注意：如果配置过小会导致业务持续被流控，请根据业务谨慎修改。 | 200 次/秒 | 1-1000000 次/秒 |
         | request_body_size | 是否支持设置请求体大小上限。|{\&quot;name\&quot;:\&quot;request_body_size\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;104857600\&quot;} | request_body_size | 请求中允许携带的Body大小上限。 | 12 M | 1-9536 M |
         | backend_timeout | 是否支持配置后端API最大超时时间。|{\&quot;name\&quot;:\&quot;backend_timeout\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\&quot;max_timeout\\\&quot;: 500}\&quot;} | max_timeout | API网关到后端服务的超时时间上限。 | 60000 ms | 1-600000 ms |
         | app_token | 是否开启app_token认证方式。|{\&quot;name\&quot;:\&quot;app_token\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;, \\\\\&quot;app_token_expire_time\\\\\&quot;: 3600, \\\\\&quot;app_token_uri\\\\\&quot;: \\\\\&quot;/v1/apigw/oauth2/token\\\\\&quot;, \\\\\&quot;refresh_token_expire_time\\\\\&quot;: 7200}\&quot;} | (1) enable &lt;br/&gt;(2) app_token_expire_time &lt;br/&gt;(3) refresh_token_expire_time &lt;br/&gt;(4) app_token_uri &lt;br/&gt;(5) app_token_key | (1) 是否开启 &lt;br/&gt;(2) access token的有效时间 &lt;br/&gt;(3) refresh token的有效时间 &lt;br/&gt;(4) 获取token的uri &lt;br/&gt;(5) token的加密key | (1) off &lt;br/&gt;(2) 3600 s &lt;br/&gt;(3) 7200 s &lt;br/&gt;(4) /v1/apigw/oauth2/token | (1) on/off &lt;br/&gt;(2) 1-72000 s &lt;br/&gt;(3) 1-72000 s |
-        | app_api_key | 是否开启app_api_key认证方式。|{\&quot;name\&quot;:\&quot;app_api_key\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off | 
-        | app_basic | 是否开启app_basic认证方式。|{\&quot;name\&quot;:\&quot;app_basic\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off | 
-        | app_secret | 是否支持app_secret认证方式。|{\&quot;name\&quot;:\&quot;app_secret\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off | 
-        | app_jwt | 是否支持app_jwt认证方式。|{\&quot;name\&quot;:\&quot;app_jwt\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;, \\\\\&quot;auth_header\\\\\&quot;: \\\\\&quot;Authorization\\\\\&quot;}\&quot;}| (1) enable &lt;br/&gt;(2) auth_header | (1) 是否开启app_jwt认证方式。 &lt;br/&gt;(2) app_jwt认证头 | (1) off &lt;br/&gt;(2) Authorization | (1) on/off | 
-        | public_key | 是否支持public_key类型的后端签名。|{\&quot;name\&quot;:\&quot;public_key\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;, \\\\\&quot;public_key_uri_prefix\\\\\&quot;: \\\\\&quot;/apigw/authadv/v2/public-key/\\\\\&quot;}\&quot;}| (1) enable &lt;br/&gt;(2) public_key_uri_prefix | (1)  是否开启app_jwt认证方式。 &lt;br/&gt;(2) 获取public key的uri前缀 | (1) off&lt;br/&gt;(2) /apigw/authadv/v2/public-key/ | (1) on/off | 
+        | app_api_key | 是否开启app_api_key认证方式。|{\&quot;name\&quot;:\&quot;app_api_key\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off |
+        | app_basic | 是否开启app_basic认证方式。|{\&quot;name\&quot;:\&quot;app_basic\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off |
+        | app_secret | 是否支持app_secret认证方式。|{\&quot;name\&quot;:\&quot;app_secret\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off |
+        | app_jwt | 是否支持app_jwt认证方式。|{\&quot;name\&quot;:\&quot;app_jwt\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;, \\\\\&quot;auth_header\\\\\&quot;: \\\\\&quot;Authorization\\\\\&quot;}\&quot;}| (1) enable &lt;br/&gt;(2) auth_header | (1) 是否开启app_jwt认证方式。 &lt;br/&gt;(2) app_jwt认证头 | (1) off &lt;br/&gt;(2) Authorization | (1) on/off |
+        | public_key | 是否支持public_key类型的后端签名。|{\&quot;name\&quot;:\&quot;public_key\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;, \\\\\&quot;public_key_uri_prefix\\\\\&quot;: \\\\\&quot;/apigw/authadv/v2/public-key/\\\\\&quot;}\&quot;}| (1) enable &lt;br/&gt;(2) public_key_uri_prefix | (1)  是否开启app_jwt认证方式。 &lt;br/&gt;(2) 获取public key的uri前缀 | (1) off&lt;br/&gt;(2) /apigw/authadv/v2/public-key/ | (1) on/off |
         | backend_token_allow | 是否支持普通租户透传token到后端。|{\&quot;name\&quot;:\&quot;backend_token_allow\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;backend_token_allow_users\\\\\&quot;: [\\\\\&quot;user_name\\\\\&quot;]}\&quot;} | backend_token_allow_users | 透传token到后端普通租户白名单，匹配普通租户domain name正则表达式 | - | - |
-        | backend_client_certificate | 是否开启后端双向认证。|{\&quot;name\&quot;:\&quot;backend_client_certificate\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;ca\\\\\&quot;: \\\\\&quot;\\\\\&quot;,\\\\\&quot;content\\\\\&quot;: \\\\\&quot;\\\\\&quot;,\\\\\&quot;key\\\\\&quot;: \\\\\&quot;\\\\\&quot;}\&quot;} | (1) enable &lt;br/&gt;(2) ca &lt;br/&gt;(3)  content &lt;br/&gt;(4) key | (1) 是否开启 &lt;br/&gt;(2) 双向认证信任证书 &lt;br/&gt;(3) 双向认证证书 &lt;br/&gt;(4) 双向认证信任私钥 | (1) off | (1) on/off | 
+        | backend_client_certificate | 是否开启后端双向认证。|{\&quot;name\&quot;:\&quot;backend_client_certificate\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;ca\\\\\&quot;: \\\\\&quot;\\\\\&quot;,\\\\\&quot;content\\\\\&quot;: \\\\\&quot;\\\\\&quot;,\\\\\&quot;key\\\\\&quot;: \\\\\&quot;\\\\\&quot;}\&quot;} | (1) enable &lt;br/&gt;(2) ca &lt;br/&gt;(3)  content &lt;br/&gt;(4) key | (1) 是否开启 &lt;br/&gt;(2) 双向认证信任证书 &lt;br/&gt;(3) 双向认证证书 &lt;br/&gt;(4) 双向认证信任私钥 | (1) off | (1) on/off |
         | ssl_ciphers | 是否支持https加密套件。|{\&quot;name\&quot;:\&quot;ssl_ciphers\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;config\&quot;: \&quot;{\\\\\&quot;ssl_ciphers\\\\\&quot;: [\\\\\&quot;ECDHE-ECDSA-AES256-GCM-SHA384\\\\\&quot;]}\&quot;} | ssl_ciphers | 支持的加解密套件。ssl_ciphers数组中只允许出现默认值中的字符串，且数组不能为空。 | - | ECDHE-ECDSA-AES256-GCM-SHA384,ECDHE-RSA-AES256-GCM-SHA384,ECDHE-ECDSA-AES128-GCM-SHA256,ECDHE-RSA-AES128-GCM-SHA256,ECDHE-ECDSA-AES256-SHA384,ECDHE-RSA-AES256-SHA384,ECDHE-ECDSA-AES128-SHA256,ECDHE-RSA-AES128-SHA256 |
-        | real_ip_from_xff | 是否开启使用xff头作为访问控制、流控策略的源ip生效依据。|{\&quot;name\&quot;:\&quot;real_ip_from_xff\&quot;,\&quot;enable\&quot;: true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;xff_index\\\\\&quot;: 1}\&quot;} | (1) enable &lt;br/&gt;(2) xff_index | (1) 是否开启 &lt;br/&gt;(2)  源ip所在xff头的索引位置（支持负数，-1为最后一位，以此类推） | (1) off &lt;br/&gt;(2) -1 | (1) on/off &lt;br/&gt;(2) int32有效值 | 
-        | app_route | 是否支持ip访问。|{\&quot;name\&quot;:\&quot;app_route\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off | 
-        | vpc_name_modifiable | 是否支持修改负载通道名称。 |{\&quot;name\&quot;:\&quot;vpc_name_modifiable\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | on | on/off | 
-        | default_group_host_trustlist | DEFAULT分组是否支持配置非本实例IP访问。|{\&quot;name\&quot;:\&quot;default_group_host_trustlist\&quot;,\&quot;enable\&quot;: true,\&quot;config\&quot;:  \&quot;{\\\\\&quot;enable\\\\\&quot;:\\\\\&quot;on\\\\\&quot;,\\\\\&quot;hosts\\\\\&quot;:[\\\\\&quot;123.2.2.2\\\\\&quot;,\\\\\&quot;202.2.2.2\\\\\&quot;]}\&quot;} | (1) enable &lt;br/&gt;(2) hosts | (1) 是否开启 &lt;br/&gt;(2) 非本实例IP列表 | - | (1) on/off | 
-        | throttle_strategy | 是否启用流控模式。 |{\&quot;name\&quot;:\&quot;throttle_strategy\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;strategy\\\\\&quot;: \\\\\&quot;local\\\\\&quot;}\&quot;} | (1) enable &lt;br/&gt;(2) strategy | (1) 是否开启&lt;br/&gt;(2) 流控模式 | (1) off | (1) on/off &lt;br/&gt;(2) cluster/local | 
-        | custom_log | 是否支持用户自定义API请求中的HEADER、QUERY、COOKIE参数值打印到日志。 |{\&quot;name\&quot;:\&quot;custom_log\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;custom_logs\\\\\&quot;:[{\\\\\&quot;location\\\\\&quot;:\\\\\&quot;header\\\\\&quot;,\\\\\&quot;name\\\\\&quot;:\\\\\&quot;a1234\\\\\&quot;}]}\&quot;} | (1) custom_logs &lt;br/&gt;(2) location &lt;br/&gt;(3) name | (1) 自定义日志 &lt;br/&gt;(2) 位置&lt;br/&gt;(3) 名称 | - | (1) 数量不超过10个 &lt;br/&gt;(2) header/query/cookie | 
-        | real_ip_header_getter | 是否开启通过用户自定义的Header获取用户源IP地址。 |{\&quot;name\&quot;:\&quot;real_ip_header_getter\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;header_getter\\\\\&quot;: \\\\\&quot;header:testIP\\\\\&quot;}\&quot;} | (1) enable &lt;br/&gt;(2) header_getter | (1) 是否开启 &lt;br/&gt;(2) 获取用户源IP地址的自定义Header | (1) off | (1) on/off | 
-        | policy_cookie_param | 是否开启策略后端条件支持cookie类型。 |{\&quot;name\&quot;:\&quot;policy_cookie_param\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off |  
+        | real_ip_from_xff | 是否开启使用xff头作为访问控制、流控策略的源ip生效依据。|{\&quot;name\&quot;:\&quot;real_ip_from_xff\&quot;,\&quot;enable\&quot;: true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;xff_index\\\\\&quot;: 1}\&quot;} | (1) enable &lt;br/&gt;(2) xff_index | (1) 是否开启 &lt;br/&gt;(2)  源ip所在xff头的索引位置（支持负数，-1为最后一位，以此类推） | (1) off &lt;br/&gt;(2) -1 | (1) on/off &lt;br/&gt;(2) int32有效值 |
+        | app_route | 是否支持ip访问。|{\&quot;name\&quot;:\&quot;app_route\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off |
+        | vpc_name_modifiable | 是否支持修改负载通道名称。 |{\&quot;name\&quot;:\&quot;vpc_name_modifiable\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | on | on/off |
+        | default_group_host_trustlist | DEFAULT分组是否支持配置非本实例IP访问。|{\&quot;name\&quot;:\&quot;default_group_host_trustlist\&quot;,\&quot;enable\&quot;: true,\&quot;config\&quot;:  \&quot;{\\\\\&quot;enable\\\\\&quot;:\\\\\&quot;on\\\\\&quot;,\\\\\&quot;hosts\\\\\&quot;:[\\\\\&quot;123.2.2.2\\\\\&quot;,\\\\\&quot;202.2.2.2\\\\\&quot;]}\&quot;} | (1) enable &lt;br/&gt;(2) hosts | (1) 是否开启 &lt;br/&gt;(2) 非本实例IP列表 | - | (1) on/off |
+        | throttle_strategy | 是否启用流控模式。 |{\&quot;name\&quot;:\&quot;throttle_strategy\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;strategy\\\\\&quot;: \\\\\&quot;local\\\\\&quot;}\&quot;} | (1) enable &lt;br/&gt;(2) strategy | (1) 是否开启&lt;br/&gt;(2) 流控模式 | (1) off | (1) on/off &lt;br/&gt;(2) cluster/local |
+        | custom_log | 是否支持用户自定义API请求中的HEADER、QUERY、COOKIE参数值打印到日志。 |{\&quot;name\&quot;:\&quot;custom_log\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;custom_logs\\\\\&quot;:[{\\\\\&quot;location\\\\\&quot;:\\\\\&quot;header\\\\\&quot;,\\\\\&quot;name\\\\\&quot;:\\\\\&quot;a1234\\\\\&quot;}]}\&quot;} | (1) custom_logs &lt;br/&gt;(2) location &lt;br/&gt;(3) name | (1) 自定义日志 &lt;br/&gt;(2) 位置&lt;br/&gt;(3) 名称 | - | (1) 数量不超过10个 &lt;br/&gt;(2) header/query/cookie |
+        | real_ip_header_getter | 是否开启通过用户自定义的Header获取用户源IP地址。 |{\&quot;name\&quot;:\&quot;real_ip_header_getter\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;{\\\\\&quot;enable\\\\\&quot;: \\\\\&quot;on\\\\\&quot;,\\\\\&quot;header_getter\\\\\&quot;: \\\\\&quot;header:testIP\\\\\&quot;}\&quot;} | (1) enable &lt;br/&gt;(2) header_getter | (1) 是否开启 &lt;br/&gt;(2) 获取用户源IP地址的自定义Header | (1) off | (1) on/off |
+        | policy_cookie_param | 是否开启策略后端条件支持cookie类型。 |{\&quot;name\&quot;:\&quot;policy_cookie_param\&quot;,\&quot;enable\&quot;:true,\&quot;config\&quot;: \&quot;on\&quot;} | - | - | off | on/off |
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1687,6 +1687,66 @@ class ApigAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def import_microservice_async(self, request):
+        """导入微服务
+
+        导入微服务
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ImportMicroservice
+        :type request: :class:`huaweicloudsdkapig.v2.ImportMicroserviceRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ImportMicroserviceResponse`
+        """
+        return self.import_microservice_with_http_info(request)
+
+    def import_microservice_with_http_info(self, request):
+        all_params = ['instance_id', 'import_microservice_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/microservice/import',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ImportMicroserviceResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_api_groups_quantities_v2_async(self, request):
         """查询API分组概况
 
@@ -2679,6 +2739,76 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListLatelyGroupStatisticsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_metric_data_async(self, request):
+        """查询监控数据
+
+        查询指定时间范围指定指标的指定粒度的监控数据，可以通过参数指定需要查询的数据维度。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListMetricData
+        :type request: :class:`huaweicloudsdkapig.v2.ListMetricDataRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListMetricDataResponse`
+        """
+        return self.list_metric_data_with_http_info(request)
+
+    def list_metric_data_with_http_info(self, request):
+        all_params = ['instance_id', 'dim', 'metric_name', '_from', 'to', 'period', 'filter']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+        if 'dim' in local_var_params:
+            query_params.append(('dim', local_var_params['dim']))
+        if 'metric_name' in local_var_params:
+            query_params.append(('metric_name', local_var_params['metric_name']))
+        if '_from' in local_var_params:
+            query_params.append(('from', local_var_params['_from']))
+        if 'to' in local_var_params:
+            query_params.append(('to', local_var_params['to']))
+        if 'period' in local_var_params:
+            query_params.append(('period', local_var_params['period']))
+        if 'filter' in local_var_params:
+            query_params.append(('filter', local_var_params['filter']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/metric-data',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListMetricDataResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -7860,10 +7990,628 @@ class ApigAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
-    def adding_backend_instances_v2_async(self, request):
-        """添加后端实例
+    def batch_associate_certs_v2_async(self, request):
+        """域名绑定SSL证书
 
-        为指定的VPC通道添加弹性云服务器
+        域名绑定SSL证书。目前暂时仅支持单个绑定,请求体当中的certificate_ids里面有且只能有一个证书ID
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchAssociateCertsV2
+        :type request: :class:`huaweicloudsdkapig.v2.BatchAssociateCertsV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.BatchAssociateCertsV2Response`
+        """
+        return self.batch_associate_certs_v2_with_http_info(request)
+
+    def batch_associate_certs_v2_with_http_info(self, request):
+        all_params = ['instance_id', 'group_id', 'domain_id', 'batch_associate_certs_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificates/attach',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchAssociateCertsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_associate_domains_v2_async(self, request):
+        """SSL证书绑定域名
+
+        域名绑定SSL证书
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchAssociateDomainsV2
+        :type request: :class:`huaweicloudsdkapig.v2.BatchAssociateDomainsV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.BatchAssociateDomainsV2Response`
+        """
+        return self.batch_associate_domains_v2_with_http_info(request)
+
+    def batch_associate_domains_v2_with_http_info(self, request):
+        all_params = ['certificate_id', 'batch_associate_domains_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/certificates/{certificate_id}/domains/attach',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchAssociateDomainsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_disassociate_certs_v2_async(self, request):
+        """域名解绑SSL证书
+
+        域名解绑SSL证书。目前暂时仅支持单个解绑,请求体当中的certificate_ids里面有且只能有一个证书ID
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchDisassociateCertsV2
+        :type request: :class:`huaweicloudsdkapig.v2.BatchDisassociateCertsV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.BatchDisassociateCertsV2Response`
+        """
+        return self.batch_disassociate_certs_v2_with_http_info(request)
+
+    def batch_disassociate_certs_v2_with_http_info(self, request):
+        all_params = ['instance_id', 'group_id', 'domain_id', 'batch_disassociate_certs_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'group_id' in local_var_params:
+            path_params['group_id'] = local_var_params['group_id']
+        if 'domain_id' in local_var_params:
+            path_params['domain_id'] = local_var_params['domain_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificates/detach',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDisassociateCertsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_disassociate_domains_v2_async(self, request):
+        """SSL证书解绑域名
+
+        SSL证书解绑域名
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchDisassociateDomainsV2
+        :type request: :class:`huaweicloudsdkapig.v2.BatchDisassociateDomainsV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.BatchDisassociateDomainsV2Response`
+        """
+        return self.batch_disassociate_domains_v2_with_http_info(request)
+
+    def batch_disassociate_domains_v2_with_http_info(self, request):
+        all_params = ['certificate_id', 'batch_disassociate_domains_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/certificates/{certificate_id}/domains/detach',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDisassociateDomainsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_certificate_v2_async(self, request):
+        """创建SSL证书
+
+        创建SSL证书
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateCertificateV2
+        :type request: :class:`huaweicloudsdkapig.v2.CreateCertificateV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.CreateCertificateV2Response`
+        """
+        return self.create_certificate_v2_with_http_info(request)
+
+    def create_certificate_v2_with_http_info(self, request):
+        all_params = ['create_certificate_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/certificates',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateCertificateV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_certificate_v2_async(self, request):
+        """删除SSL证书
+
+        删除ssl证书接口,删除时只有没有关联域名的证书才能被删除
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteCertificateV2
+        :type request: :class:`huaweicloudsdkapig.v2.DeleteCertificateV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.DeleteCertificateV2Response`
+        """
+        return self.delete_certificate_v2_with_http_info(request)
+
+    def delete_certificate_v2_with_http_info(self, request):
+        all_params = ['certificate_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/certificates/{certificate_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteCertificateV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_attached_domains_v2_async(self, request):
+        """获取SSL证书已绑定域名列表
+
+        获取SSL证书已绑定域名列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListAttachedDomainsV2
+        :type request: :class:`huaweicloudsdkapig.v2.ListAttachedDomainsV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListAttachedDomainsV2Response`
+        """
+        return self.list_attached_domains_v2_with_http_info(request)
+
+    def list_attached_domains_v2_with_http_info(self, request):
+        all_params = ['certificate_id', 'offset', 'limit', 'url_domain']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'url_domain' in local_var_params:
+            query_params.append(('url_domain', local_var_params['url_domain']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/certificates/{certificate_id}/attached-domains',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListAttachedDomainsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_certificates_v2_async(self, request):
+        """获取SSL证书列表
+
+        获取SSL证书列表。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListCertificatesV2
+        :type request: :class:`huaweicloudsdkapig.v2.ListCertificatesV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListCertificatesV2Response`
+        """
+        return self.list_certificates_v2_with_http_info(request)
+
+    def list_certificates_v2_with_http_info(self, request):
+        all_params = ['instance_id', 'offset', 'limit', 'name', 'common_name', 'signature_algorithm', 'type']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'common_name' in local_var_params:
+            query_params.append(('common_name', local_var_params['common_name']))
+        if 'signature_algorithm' in local_var_params:
+            query_params.append(('signature_algorithm', local_var_params['signature_algorithm']))
+        if 'type' in local_var_params:
+            query_params.append(('type', local_var_params['type']))
+        if 'instance_id' in local_var_params:
+            query_params.append(('instance_id', local_var_params['instance_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/certificates',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListCertificatesV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_details_of_certificate_v2_async(self, request):
+        """查看证书详情
+
+        查看证书详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowDetailsOfCertificateV2
+        :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfCertificateV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfCertificateV2Response`
+        """
+        return self.show_details_of_certificate_v2_with_http_info(request)
+
+    def show_details_of_certificate_v2_with_http_info(self, request):
+        all_params = ['certificate_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/certificates/{certificate_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDetailsOfCertificateV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_certificate_v2_async(self, request):
+        """修改SSL证书
+
+        修改SSL证书
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateCertificateV2
+        :type request: :class:`huaweicloudsdkapig.v2.UpdateCertificateV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.UpdateCertificateV2Response`
+        """
+        return self.update_certificate_v2_with_http_info(request)
+
+    def update_certificate_v2_with_http_info(self, request):
+        all_params = ['certificate_id', 'update_certificate_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/certificates/{certificate_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateCertificateV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def adding_backend_instances_v2_async(self, request):
+        """添加或更新后端实例
+
+        为指定的VPC通道添加后端实例
+        
+        若指定地址的后端实例已存在，则更新对应后端实例信息。若请求体中包含多个重复地址的后端实例定义，则使用第一个定义。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -7917,6 +8665,194 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='AddingBackendInstancesV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_disable_members_async(self, request):
+        """批量修改后端服务器状态不可用
+
+        批量修改后端服务器状态不可用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchDisableMembers
+        :type request: :class:`huaweicloudsdkapig.v2.BatchDisableMembersRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.BatchDisableMembersResponse`
+        """
+        return self.batch_disable_members_with_http_info(request)
+
+    def batch_disable_members_with_http_info(self, request):
+        all_params = ['instance_id', 'vpc_channel_id', 'batch_disable_members_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/batch-disable',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchDisableMembersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def batch_enable_members_async(self, request):
+        """批量修改后端服务器状态可用
+
+        批量修改后端服务器状态可用。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for BatchEnableMembers
+        :type request: :class:`huaweicloudsdkapig.v2.BatchEnableMembersRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.BatchEnableMembersResponse`
+        """
+        return self.batch_enable_members_with_http_info(request)
+
+    def batch_enable_members_with_http_info(self, request):
+        all_params = ['instance_id', 'vpc_channel_id', 'batch_enable_members_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/batch-enable',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='BatchEnableMembersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def create_member_group_async(self, request):
+        """添加或更新VPC通道后端服务器组
+
+        在服务集成中创建VPC通道后端服务器组，VPC通道后端实例可以选择是否关联后端实例服务器组，以便管理后端服务器节点。
+        
+        若指定名称的后端服务器组已存在，则更新对应后端服务器组信息。若请求体中包含多个重复名称的后端服务器定义，则使用第一个定义。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CreateMemberGroup
+        :type request: :class:`huaweicloudsdkapig.v2.CreateMemberGroupRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.CreateMemberGroupResponse`
+        """
+        return self.create_member_group_with_http_info(request)
+
+    def create_member_group_with_http_info(self, request):
+        all_params = ['instance_id', 'vpc_channel_id', 'create_member_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CreateMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -7986,7 +8922,7 @@ class ApigAsyncClient(Client):
     def delete_backend_instance_v2_async(self, request):
         """删除后端实例
 
-        删除指定VPC通道中的弹性云服务器
+        删除指定VPC通道中的后端实例
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -8040,6 +8976,68 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='DeleteBackendInstanceV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_member_group_async(self, request):
+        """删除VPC通道后端服务器组
+
+        删除指定的VPC通道后端服务器组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteMemberGroup
+        :type request: :class:`huaweicloudsdkapig.v2.DeleteMemberGroupRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.DeleteMemberGroupResponse`
+        """
+        return self.delete_member_group_with_http_info(request)
+
+    def delete_member_group_with_http_info(self, request):
+        all_params = ['instance_id', 'vpc_channel_id', 'member_group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+        if 'member_group_id' in local_var_params:
+            path_params['member_group_id'] = local_var_params['member_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -8108,7 +9106,7 @@ class ApigAsyncClient(Client):
     def list_backend_instances_v2_async(self, request):
         """查看后端实例列表
 
-        查看指定VPC通道的弹性云服务器列表。
+        查看指定VPC通道的后端实例列表。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -8120,7 +9118,7 @@ class ApigAsyncClient(Client):
         return self.list_backend_instances_v2_with_http_info(request)
 
     def list_backend_instances_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'vpc_channel_id', 'offset', 'limit', 'name']
+        all_params = ['instance_id', 'vpc_channel_id', 'offset', 'limit', 'name', 'member_group_name', 'member_group_id', 'precise_search']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -8141,6 +9139,12 @@ class ApigAsyncClient(Client):
             query_params.append(('limit', local_var_params['limit']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
+        if 'member_group_name' in local_var_params:
+            query_params.append(('member_group_name', local_var_params['member_group_name']))
+        if 'member_group_id' in local_var_params:
+            query_params.append(('member_group_id', local_var_params['member_group_id']))
+        if 'precise_search' in local_var_params:
+            query_params.append(('precise_search', local_var_params['precise_search']))
 
         header_params = {}
 
@@ -8171,6 +9175,76 @@ class ApigAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_member_groups_async(self, request):
+        """查询VPC通道后端云服务组列表
+
+        查询VPC通道后端云服务组列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListMemberGroups
+        :type request: :class:`huaweicloudsdkapig.v2.ListMemberGroupsRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ListMemberGroupsResponse`
+        """
+        return self.list_member_groups_with_http_info(request)
+
+    def list_member_groups_with_http_info(self, request):
+        all_params = ['instance_id', 'vpc_channel_id', 'offset', 'limit', 'dict_code', 'member_group_name', 'precise_search']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'dict_code' in local_var_params:
+            query_params.append(('dict_code', local_var_params['dict_code']))
+        if 'member_group_name' in local_var_params:
+            query_params.append(('member_group_name', local_var_params['member_group_name']))
+        if 'precise_search' in local_var_params:
+            query_params.append(('precise_search', local_var_params['precise_search']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListMemberGroupsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_vpc_channels_v2_async(self, request):
         """查询VPC通道列表
 
@@ -8186,7 +9260,7 @@ class ApigAsyncClient(Client):
         return self.list_vpc_channels_v2_with_http_info(request)
 
     def list_vpc_channels_v2_with_http_info(self, request):
-        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'precise_search']
+        all_params = ['instance_id', 'offset', 'limit', 'id', 'name', 'dict_code', 'precise_search', 'member_host', 'member_port', 'member_group_name', 'member_group_id']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -8207,8 +9281,18 @@ class ApigAsyncClient(Client):
             query_params.append(('id', local_var_params['id']))
         if 'name' in local_var_params:
             query_params.append(('name', local_var_params['name']))
+        if 'dict_code' in local_var_params:
+            query_params.append(('dict_code', local_var_params['dict_code']))
         if 'precise_search' in local_var_params:
             query_params.append(('precise_search', local_var_params['precise_search']))
+        if 'member_host' in local_var_params:
+            query_params.append(('member_host', local_var_params['member_host']))
+        if 'member_port' in local_var_params:
+            query_params.append(('member_port', local_var_params['member_port']))
+        if 'member_group_name' in local_var_params:
+            query_params.append(('member_group_name', local_var_params['member_group_name']))
+        if 'member_group_id' in local_var_params:
+            query_params.append(('member_group_id', local_var_params['member_group_id']))
 
         header_params = {}
 
@@ -8234,6 +9318,68 @@ class ApigAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListVpcChannelsV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_details_of_member_group_async(self, request):
+        """查看VPC通道后端服务器组详情
+
+        查看指定的VPC通道后端服务器组详情
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowDetailsOfMemberGroup
+        :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfMemberGroupRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfMemberGroupResponse`
+        """
+        return self.show_details_of_member_group_with_http_info(request)
+
+    def show_details_of_member_group_with_http_info(self, request):
+        all_params = ['instance_id', 'vpc_channel_id', 'member_group_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+        if 'member_group_id' in local_var_params:
+            path_params['member_group_id'] = local_var_params['member_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDetailsOfMemberGroupResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -8299,10 +9445,202 @@ class ApigAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def update_backend_instances_v2_async(self, request):
+        """更新后端实例
+
+        更新指定的VPC通道的后端实例。更新时，使用传入的请求参数对对应云服务组的后端实例进行全量覆盖修改。若未指定修改的云服务器组，则进行全量覆盖。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateBackendInstancesV2
+        :type request: :class:`huaweicloudsdkapig.v2.UpdateBackendInstancesV2Request`
+        :rtype: :class:`huaweicloudsdkapig.v2.UpdateBackendInstancesV2Response`
+        """
+        return self.update_backend_instances_v2_with_http_info(request)
+
+    def update_backend_instances_v2_with_http_info(self, request):
+        all_params = ['instance_id', 'vpc_channel_id', 'update_backend_instances_v2_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateBackendInstancesV2Response',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_health_check_async(self, request):
+        """修改VPC通道健康检查
+
+        修改VPC通道健康检查。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateHealthCheck
+        :type request: :class:`huaweicloudsdkapig.v2.UpdateHealthCheckRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.UpdateHealthCheckResponse`
+        """
+        return self.update_health_check_with_http_info(request)
+
+    def update_health_check_with_http_info(self, request):
+        all_params = ['instance_id', 'vpc_channel_id', 'update_health_check_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/health-config',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateHealthCheckResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_member_group_async(self, request):
+        """更新VPC通道后端服务器组
+
+        更新指定VPC通道后端服务器组
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateMemberGroup
+        :type request: :class:`huaweicloudsdkapig.v2.UpdateMemberGroupRequest`
+        :rtype: :class:`huaweicloudsdkapig.v2.UpdateMemberGroupResponse`
+        """
+        return self.update_member_group_with_http_info(request)
+
+    def update_member_group_with_http_info(self, request):
+        all_params = ['instance_id', 'vpc_channel_id', 'member_group_id', 'update_member_group_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'vpc_channel_id' in local_var_params:
+            path_params['vpc_channel_id'] = local_var_params['vpc_channel_id']
+        if 'member_group_id' in local_var_params:
+            path_params['member_group_id'] = local_var_params['member_group_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateMemberGroupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_vpc_channel_v2_async(self, request):
         """更新VPC通道
 
         更新指定VPC通道的参数
+        
+        使用传入的后端实例列表对VPC通道进行全量覆盖，若后端实例列表为空，则会全量删除已有的后端实例；
+        
+        使用传入的后端服务器组列表对VPC通道进行全量覆盖，若后端服务器组列表为空，则会全量删除已有的服务器组；
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

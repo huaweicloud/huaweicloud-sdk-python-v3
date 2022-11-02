@@ -131,7 +131,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         :type job_id: str
         :param job_name: 作业名称，只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。  说明： 不同作业的名称允许相同，但不建议设置相同。
         :type job_name: str
-        :param input_id:   数据输入ID。
+        :param input_id: 数据输入ID。
         :type input_id: str
         :param output_id: 数据输出ID。
         :type output_id: str
@@ -151,7 +151,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         :type is_protected: bool
         :param group_id: 作业执行组ID。
         :type group_id: str
-        :param jar_path: 执行程序Jar包或sql文件地址，需要满足如下要求：   - 最多为1023字符，不能包含;|&amp;&gt;&lt;&#39;$特殊字符，且不可为空或全空格。   - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
+        :param jar_path: 执行程序Jar包或sql文件地址，需要满足如下要求：  - 最多为1023字符，不能包含;|&amp;&gt;&lt;&#39;$特殊字符，且不可为空或全空格。  - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
         :type jar_path: str
         :param input: 数据输入地址，必须以“/”或“s3a://”开头。请配置为正确的OBS路径，OBS路径不支持KMS加密的文件或程序。  最多为1023字符，不能包含;|&amp;&gt;&#39;&lt;$特殊字符，可为空。
         :type input: str
@@ -161,13 +161,13 @@ class CreateAndExecuteJobResponse(SdkResponse):
         :type job_log: str
         :param job_type: 作业类型码。 - 1：MapReduce - 2：Spark - 3：Hive Script - 4：HiveSQL（当前不支持） - 5：DistCp，导入、导出数据。 - 6：Spark Script - 7：Spark SQL，提交SQL语句，（该接口当前不支持）  说明： 只有包含Spark和Hive组件的集群才能新增Spark和Hive类型的作业。
         :type job_type: int
-        :param file_action:   文件操作类型，包括： - export：从HDFS导出数据至OBS - import：从OBS导入数据至HDFS
+        :param file_action: 文件操作类型，包括：  - export：从HDFS导出数据至OBS  - import：从OBS导入数据至HDFS
         :type file_action: str
         :param arguments: 程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。 最多为150000字符，不能包含;|&amp;&gt;&#39;&lt;$!\\\&quot;\\特殊字符，可为空。 说明： 用户输入带有敏感信息（如登录密码）的参数时，可通过在参数名前添加“@”的方式，为该参数值加密，以防止敏感信息被明文形式持久化。在查看作业信息时，敏感信息显示为“*”。 例如：username&#x3D;admin @password&#x3D;admin_123
         :type arguments: str
         :param hql: Hive&amp;Spark Sql语句
         :type hql: str
-        :param job_state: 作业状态码。  - -1：Terminated - 1：Starting - 2：Running - 3：Completed - 4：Abnormal - 5：Error
+        :param job_state: 作业状态码。  - 1：Terminated - 2：Starting - 3：Running - 4：Completed - 5：Abnormal - 6：Error
         :type job_state: int
         :param job_final_status: 作业最终状态码。  - 0：未完成 - 1：执行错误，终止执行 - 2：执行完成并且成功 - 3：已取消
         :type job_final_status: int
@@ -187,7 +187,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
         :type step_name: str
         :param step_num: 步骤数量  为兼容历史版本，保留此参数。
         :type step_num: int
-        :param task_num:   任务数量。 为兼容历史版本，保留此参数。
+        :param task_num: 任务数量。为兼容历史版本，保留此参数。
         :type task_num: int
         :param update_by: 更新作业的用户ID。
         :type update_by: str
@@ -497,7 +497,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
     def input_id(self):
         """Gets the input_id of this CreateAndExecuteJobResponse.
 
-          数据输入ID。
+        数据输入ID。
 
         :return: The input_id of this CreateAndExecuteJobResponse.
         :rtype: str
@@ -508,7 +508,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
     def input_id(self, input_id):
         """Sets the input_id of this CreateAndExecuteJobResponse.
 
-          数据输入ID。
+        数据输入ID。
 
         :param input_id: The input_id of this CreateAndExecuteJobResponse.
         :type input_id: str
@@ -717,7 +717,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
     def jar_path(self):
         """Gets the jar_path of this CreateAndExecuteJobResponse.
 
-        执行程序Jar包或sql文件地址，需要满足如下要求：   - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。   - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
+        执行程序Jar包或sql文件地址，需要满足如下要求：  - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。  - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
 
         :return: The jar_path of this CreateAndExecuteJobResponse.
         :rtype: str
@@ -728,7 +728,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
     def jar_path(self, jar_path):
         """Sets the jar_path of this CreateAndExecuteJobResponse.
 
-        执行程序Jar包或sql文件地址，需要满足如下要求：   - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。   - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
+        执行程序Jar包或sql文件地址，需要满足如下要求：  - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。  - 需要以“/”或“s3a://”开头。OBS路径不支持KMS加密的文件或程序。  - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
 
         :param jar_path: The jar_path of this CreateAndExecuteJobResponse.
         :type jar_path: str
@@ -827,7 +827,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
     def file_action(self):
         """Gets the file_action of this CreateAndExecuteJobResponse.
 
-          文件操作类型，包括： - export：从HDFS导出数据至OBS - import：从OBS导入数据至HDFS
+        文件操作类型，包括：  - export：从HDFS导出数据至OBS  - import：从OBS导入数据至HDFS
 
         :return: The file_action of this CreateAndExecuteJobResponse.
         :rtype: str
@@ -838,7 +838,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
     def file_action(self, file_action):
         """Sets the file_action of this CreateAndExecuteJobResponse.
 
-          文件操作类型，包括： - export：从HDFS导出数据至OBS - import：从OBS导入数据至HDFS
+        文件操作类型，包括：  - export：从HDFS导出数据至OBS  - import：从OBS导入数据至HDFS
 
         :param file_action: The file_action of this CreateAndExecuteJobResponse.
         :type file_action: str
@@ -893,7 +893,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
     def job_state(self):
         """Gets the job_state of this CreateAndExecuteJobResponse.
 
-        作业状态码。  - -1：Terminated - 1：Starting - 2：Running - 3：Completed - 4：Abnormal - 5：Error
+        作业状态码。  - 1：Terminated - 2：Starting - 3：Running - 4：Completed - 5：Abnormal - 6：Error
 
         :return: The job_state of this CreateAndExecuteJobResponse.
         :rtype: int
@@ -904,7 +904,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
     def job_state(self, job_state):
         """Sets the job_state of this CreateAndExecuteJobResponse.
 
-        作业状态码。  - -1：Terminated - 1：Starting - 2：Running - 3：Completed - 4：Abnormal - 5：Error
+        作业状态码。  - 1：Terminated - 2：Starting - 3：Running - 4：Completed - 5：Abnormal - 6：Error
 
         :param job_state: The job_state of this CreateAndExecuteJobResponse.
         :type job_state: int
@@ -1113,7 +1113,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
     def task_num(self):
         """Gets the task_num of this CreateAndExecuteJobResponse.
 
-          任务数量。 为兼容历史版本，保留此参数。
+        任务数量。为兼容历史版本，保留此参数。
 
         :return: The task_num of this CreateAndExecuteJobResponse.
         :rtype: int
@@ -1124,7 +1124,7 @@ class CreateAndExecuteJobResponse(SdkResponse):
     def task_num(self, task_num):
         """Sets the task_num of this CreateAndExecuteJobResponse.
 
-          任务数量。 为兼容历史版本，保留此参数。
+        任务数量。为兼容历史版本，保留此参数。
 
         :param task_num: The task_num of this CreateAndExecuteJobResponse.
         :type task_num: int

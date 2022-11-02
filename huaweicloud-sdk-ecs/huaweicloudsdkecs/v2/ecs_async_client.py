@@ -2956,6 +2956,68 @@ class EcsAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def register_server_monitor_async(self, request):
+        """注册云服务器监控
+
+        将云服务器添加到监控表中。
+        
+        注册到监控表中的云服务会被ceilometer周期性采集监控数据，包括平台的版本、cpu信息、内存、网卡、磁盘、硬件平台等信息，这些数据上报给云监控。例如SAP云服务器内部的插件会周期性从云监控中查询监控数据，以报表形式呈现给SAP。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for RegisterServerMonitor
+        :type request: :class:`huaweicloudsdkecs.v2.RegisterServerMonitorRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.RegisterServerMonitorResponse`
+        """
+        return self.register_server_monitor_with_http_info(request)
+
+    def register_server_monitor_with_http_info(self, request):
+        all_params = ['server_id', 'register_server_monitor_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1.0/servers/{server_id}/action',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='RegisterServerMonitorResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def reinstall_server_with_cloud_init_async(self, request):
         """重装弹性云服务器操作系统(安装Cloud-init)
 
@@ -3919,6 +3981,68 @@ class EcsAsyncClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='UpdateServerAutoTerminateTimeResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_server_block_device_async(self, request):
+        """修改云服务器挂载的单个磁盘信息
+
+        修改云服务器云主机挂载的单个磁盘信息。&#39;当前仅支持修改delete_on_termination字段。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateServerBlockDevice
+        :type request: :class:`huaweicloudsdkecs.v2.UpdateServerBlockDeviceRequest`
+        :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerBlockDeviceResponse`
+        """
+        return self.update_server_block_device_with_http_info(request)
+
+    def update_server_block_device_with_http_info(self, request):
+        all_params = ['server_id', 'volume_id', 'update_server_block_device_req']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'server_id' in local_var_params:
+            path_params['server_id'] = local_var_params['server_id']
+        if 'volume_id' in local_var_params:
+            path_params['volume_id'] = local_var_params['volume_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloudservers/{server_id}/block_device/{volume_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateServerBlockDeviceResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

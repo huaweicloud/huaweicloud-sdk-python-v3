@@ -95,7 +95,7 @@ class ShowTasksResponse(SdkResponse):
         :type pack_num: int
         :param score: 安全分数
         :type score: int
-        :param safe_level: 安全等级:   * - safety  : 安全   * - average : 中风险   * - highrisk: 高风险 
+        :param safe_level: 安全等级:   * safety - 安全   * average - 中风险   * highrisk - 高风险 
         :type safe_level: str
         :param statistics: 
         :type statistics: :class:`huaweicloudsdkvss.v3.VulnsLevel`
@@ -487,7 +487,7 @@ class ShowTasksResponse(SdkResponse):
     def safe_level(self):
         """Gets the safe_level of this ShowTasksResponse.
 
-        安全等级:   * - safety  : 安全   * - average : 中风险   * - highrisk: 高风险 
+        安全等级:   * safety - 安全   * average - 中风险   * highrisk - 高风险 
 
         :return: The safe_level of this ShowTasksResponse.
         :rtype: str
@@ -498,7 +498,7 @@ class ShowTasksResponse(SdkResponse):
     def safe_level(self, safe_level):
         """Sets the safe_level of this ShowTasksResponse.
 
-        安全等级:   * - safety  : 安全   * - average : 中风险   * - highrisk: 高风险 
+        安全等级:   * safety - 安全   * average - 中风险   * highrisk - 高风险 
 
         :param safe_level: The safe_level of this ShowTasksResponse.
         :type safe_level: str

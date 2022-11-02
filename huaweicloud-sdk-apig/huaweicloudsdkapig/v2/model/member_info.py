@@ -53,15 +53,15 @@ class MemberInfo:
         :type weight: int
         :param is_backup: 是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
         :type is_backup: bool
-        :param member_group_name: 后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。  暂不支持
+        :param member_group_name: 后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。
         :type member_group_name: str
         :param status: 后端服务器状态   - 1：可用   - 2：不可用
         :type status: int
         :param port: 后端服务器端口
         :type port: int
-        :param ecs_id: 后端云服务器的编号。  后端实例类型为instance时生效，支持英文，数字，“-”,“_”，1 ~ 64字符。
+        :param ecs_id: 后端云服务器的编号。  后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。
         :type ecs_id: str
-        :param ecs_name: 后端云服务器的名称。  后端实例类型为instance时生效，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。
+        :param ecs_name: 后端云服务器的名称。  后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。
         :type ecs_name: str
         """
         
@@ -164,7 +164,7 @@ class MemberInfo:
     def member_group_name(self):
         """Gets the member_group_name of this MemberInfo.
 
-        后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。  暂不支持
+        后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。
 
         :return: The member_group_name of this MemberInfo.
         :rtype: str
@@ -175,7 +175,7 @@ class MemberInfo:
     def member_group_name(self, member_group_name):
         """Sets the member_group_name of this MemberInfo.
 
-        后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。  暂不支持
+        后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。
 
         :param member_group_name: The member_group_name of this MemberInfo.
         :type member_group_name: str
@@ -230,7 +230,7 @@ class MemberInfo:
     def ecs_id(self):
         """Gets the ecs_id of this MemberInfo.
 
-        后端云服务器的编号。  后端实例类型为instance时生效，支持英文，数字，“-”,“_”，1 ~ 64字符。
+        后端云服务器的编号。  后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。
 
         :return: The ecs_id of this MemberInfo.
         :rtype: str
@@ -241,7 +241,7 @@ class MemberInfo:
     def ecs_id(self, ecs_id):
         """Sets the ecs_id of this MemberInfo.
 
-        后端云服务器的编号。  后端实例类型为instance时生效，支持英文，数字，“-”,“_”，1 ~ 64字符。
+        后端云服务器的编号。  后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。
 
         :param ecs_id: The ecs_id of this MemberInfo.
         :type ecs_id: str
@@ -252,7 +252,7 @@ class MemberInfo:
     def ecs_name(self):
         """Gets the ecs_name of this MemberInfo.
 
-        后端云服务器的名称。  后端实例类型为instance时生效，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。
+        后端云服务器的名称。  后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。
 
         :return: The ecs_name of this MemberInfo.
         :rtype: str
@@ -263,7 +263,7 @@ class MemberInfo:
     def ecs_name(self, ecs_name):
         """Sets the ecs_name of this MemberInfo.
 
-        后端云服务器的名称。  后端实例类型为instance时生效，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。
+        后端云服务器的名称。  后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。
 
         :param ecs_name: The ecs_name of this MemberInfo.
         :type ecs_name: str

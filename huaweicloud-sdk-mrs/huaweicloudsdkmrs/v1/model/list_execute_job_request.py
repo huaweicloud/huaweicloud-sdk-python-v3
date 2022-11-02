@@ -51,7 +51,7 @@ class ListExecuteJobRequest:
         :type job_name: str
         :param cluster_id: 集群编号。
         :type cluster_id: str
-        :param state: 作业状态编码：  - -1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
+        :param state: 作业状态编码：  - 1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
         :type state: str
         :param id: 作业执行对象的编号。
         :type id: str
@@ -171,7 +171,7 @@ class ListExecuteJobRequest:
     def state(self):
         """Gets the state of this ListExecuteJobRequest.
 
-        作业状态编码：  - -1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
+        作业状态编码：  - 1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
 
         :return: The state of this ListExecuteJobRequest.
         :rtype: str
@@ -182,7 +182,7 @@ class ListExecuteJobRequest:
     def state(self, state):
         """Sets the state of this ListExecuteJobRequest.
 
-        作业状态编码：  - -1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
+        作业状态编码：  - 1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
 
         :param state: The state of this ListExecuteJobRequest.
         :type state: str

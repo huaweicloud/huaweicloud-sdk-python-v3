@@ -37,7 +37,7 @@ class CreateClusterResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param result:   操作结果。  true：操作成功  false：操作失败
+        :param result: 操作结果。 - true：操作成功 - false：操作失败
         :type result: bool
         :param msg: 系统提示信息，可为空。
         :type msg: str
@@ -63,7 +63,7 @@ class CreateClusterResponse(SdkResponse):
     def result(self):
         """Gets the result of this CreateClusterResponse.
 
-          操作结果。  true：操作成功  false：操作失败
+        操作结果。 - true：操作成功 - false：操作失败
 
         :return: The result of this CreateClusterResponse.
         :rtype: bool
@@ -74,7 +74,7 @@ class CreateClusterResponse(SdkResponse):
     def result(self, result):
         """Sets the result of this CreateClusterResponse.
 
-          操作结果。  true：操作成功  false：操作失败
+        操作结果。 - true：操作成功 - false：操作失败
 
         :param result: The result of this CreateClusterResponse.
         :type result: bool

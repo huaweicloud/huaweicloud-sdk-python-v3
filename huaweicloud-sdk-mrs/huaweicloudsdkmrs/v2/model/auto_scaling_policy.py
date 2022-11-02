@@ -25,7 +25,7 @@ class AutoScalingPolicy:
         'min_capacity': 'int',
         'max_capacity': 'int',
         'resources_plans': 'list[ResourcesPlan]',
-        'rules': 'list[Rules]',
+        'rules': 'list[Rule]',
         'exec_scripts': 'list[ScaleScript]'
     }
 
@@ -45,14 +45,14 @@ class AutoScalingPolicy:
 
         :param auto_scaling_enable: 当前自动伸缩规则是否开启。
         :type auto_scaling_enable: bool
-        :param min_capacity: 指定该节点组的最小保留节点数。  取值范围：[0～500]
+        :param min_capacity: 指定该节点组的最小保留节点数。 取值范围：[0～500]
         :type min_capacity: int
-        :param max_capacity: 指定该节点组的最大节点数。  取值范围：[0～500]
+        :param max_capacity: 指定该节点组的最大节点数。 取值范围：[0～500]
         :type max_capacity: int
-        :param resources_plans: 资源计划列表。若该参数为空表示不启用资源计划。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
+        :param resources_plans: 资源计划列表。若该参数为空表示不启用资源计划。 当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
         :type resources_plans: list[:class:`huaweicloudsdkmrs.v2.ResourcesPlan`]
-        :param rules: 自动伸缩的规则列表。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
-        :type rules: list[:class:`huaweicloudsdkmrs.v2.Rules`]
+        :param rules: 自动伸缩的规则列表。 当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
+        :type rules: list[:class:`huaweicloudsdkmrs.v2.Rule`]
         :param exec_scripts: 弹性伸缩自定义自动化脚本列表。若该参数为空表示不启用自动化脚本。
         :type exec_scripts: list[:class:`huaweicloudsdkmrs.v2.ScaleScript`]
         """
@@ -103,7 +103,7 @@ class AutoScalingPolicy:
     def min_capacity(self):
         """Gets the min_capacity of this AutoScalingPolicy.
 
-        指定该节点组的最小保留节点数。  取值范围：[0～500]
+        指定该节点组的最小保留节点数。 取值范围：[0～500]
 
         :return: The min_capacity of this AutoScalingPolicy.
         :rtype: int
@@ -114,7 +114,7 @@ class AutoScalingPolicy:
     def min_capacity(self, min_capacity):
         """Sets the min_capacity of this AutoScalingPolicy.
 
-        指定该节点组的最小保留节点数。  取值范围：[0～500]
+        指定该节点组的最小保留节点数。 取值范围：[0～500]
 
         :param min_capacity: The min_capacity of this AutoScalingPolicy.
         :type min_capacity: int
@@ -125,7 +125,7 @@ class AutoScalingPolicy:
     def max_capacity(self):
         """Gets the max_capacity of this AutoScalingPolicy.
 
-        指定该节点组的最大节点数。  取值范围：[0～500]
+        指定该节点组的最大节点数。 取值范围：[0～500]
 
         :return: The max_capacity of this AutoScalingPolicy.
         :rtype: int
@@ -136,7 +136,7 @@ class AutoScalingPolicy:
     def max_capacity(self, max_capacity):
         """Sets the max_capacity of this AutoScalingPolicy.
 
-        指定该节点组的最大节点数。  取值范围：[0～500]
+        指定该节点组的最大节点数。 取值范围：[0～500]
 
         :param max_capacity: The max_capacity of this AutoScalingPolicy.
         :type max_capacity: int
@@ -147,7 +147,7 @@ class AutoScalingPolicy:
     def resources_plans(self):
         """Gets the resources_plans of this AutoScalingPolicy.
 
-        资源计划列表。若该参数为空表示不启用资源计划。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
+        资源计划列表。若该参数为空表示不启用资源计划。 当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
         :return: The resources_plans of this AutoScalingPolicy.
         :rtype: list[:class:`huaweicloudsdkmrs.v2.ResourcesPlan`]
@@ -158,7 +158,7 @@ class AutoScalingPolicy:
     def resources_plans(self, resources_plans):
         """Sets the resources_plans of this AutoScalingPolicy.
 
-        资源计划列表。若该参数为空表示不启用资源计划。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
+        资源计划列表。若该参数为空表示不启用资源计划。 当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
         :param resources_plans: The resources_plans of this AutoScalingPolicy.
         :type resources_plans: list[:class:`huaweicloudsdkmrs.v2.ResourcesPlan`]
@@ -169,10 +169,10 @@ class AutoScalingPolicy:
     def rules(self):
         """Gets the rules of this AutoScalingPolicy.
 
-        自动伸缩的规则列表。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
+        自动伸缩的规则列表。 当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
         :return: The rules of this AutoScalingPolicy.
-        :rtype: list[:class:`huaweicloudsdkmrs.v2.Rules`]
+        :rtype: list[:class:`huaweicloudsdkmrs.v2.Rule`]
         """
         return self._rules
 
@@ -180,10 +180,10 @@ class AutoScalingPolicy:
     def rules(self, rules):
         """Sets the rules of this AutoScalingPolicy.
 
-        自动伸缩的规则列表。  当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
+        自动伸缩的规则列表。 当启用弹性伸缩时，资源计划与自动伸缩规则需至少配置其中一种。
 
         :param rules: The rules of this AutoScalingPolicy.
-        :type rules: list[:class:`huaweicloudsdkmrs.v2.Rules`]
+        :type rules: list[:class:`huaweicloudsdkmrs.v2.Rule`]
         """
         self._rules = rules
 

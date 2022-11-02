@@ -56,7 +56,7 @@ class Cluster:
         'subnet_name': 'str',
         'security_groups_id': 'str',
         'slave_security_groups_id': 'str',
-        'bootstrap_scripts': 'list[BootstrapScriptResp]',
+        'bootstrap_scripts': 'list[BootstrapScript]',
         'safe_mode': 'int',
         'cluster_version': 'str',
         'node_public_cert_name': 'str',
@@ -232,7 +232,7 @@ class Cluster:
         :param slave_security_groups_id: 非Master节点的安全组id，当前一个MRS集群只会使用一个安全组，所以该字段已经废弃，从兼容性考虑，该字段会返回和securityGroupsId同样的值。
         :type slave_security_groups_id: str
         :param bootstrap_scripts: 配置引导操作脚本信息。
-        :type bootstrap_scripts: list[:class:`huaweicloudsdkmrs.v1.BootstrapScriptResp`]
+        :type bootstrap_scripts: list[:class:`huaweicloudsdkmrs.v1.BootstrapScript`]
         :param safe_mode: MRS集群运行模式。 - 0：普通集群 - 1：安全集群
         :type safe_mode: int
         :param cluster_version: 集群版本。
@@ -1270,7 +1270,7 @@ class Cluster:
         配置引导操作脚本信息。
 
         :return: The bootstrap_scripts of this Cluster.
-        :rtype: list[:class:`huaweicloudsdkmrs.v1.BootstrapScriptResp`]
+        :rtype: list[:class:`huaweicloudsdkmrs.v1.BootstrapScript`]
         """
         return self._bootstrap_scripts
 
@@ -1281,7 +1281,7 @@ class Cluster:
         配置引导操作脚本信息。
 
         :param bootstrap_scripts: The bootstrap_scripts of this Cluster.
-        :type bootstrap_scripts: list[:class:`huaweicloudsdkmrs.v1.BootstrapScriptResp`]
+        :type bootstrap_scripts: list[:class:`huaweicloudsdkmrs.v1.BootstrapScript`]
         """
         self._bootstrap_scripts = bootstrap_scripts
 

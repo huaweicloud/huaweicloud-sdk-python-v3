@@ -35,7 +35,8 @@ class MysqlProxyV3:
         'mode': 'str',
         'nodes': 'list[MysqlProxyNodes]',
         'flavor_ref': 'str',
-        'name': 'str'
+        'name': 'str',
+        'transaction_split': 'str'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class MysqlProxyV3:
         'mode': 'mode',
         'nodes': 'nodes',
         'flavor_ref': 'flavor_ref',
-        'name': 'name'
+        'name': 'name',
+        'transaction_split': 'transaction_split'
     }
 
-    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None):
+    def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None):
         """MysqlProxyV3
 
         The model defined in huaweicloud sdk
@@ -91,6 +93,8 @@ class MysqlProxyV3:
         :type flavor_ref: str
         :param name: Proxy实例名称。
         :type name: str
+        :param transaction_split: Proxy事务拆分开关状态【ON/OFF】。
+        :type transaction_split: str
         """
         
         
@@ -110,6 +114,7 @@ class MysqlProxyV3:
         self._nodes = None
         self._flavor_ref = None
         self._name = None
+        self._transaction_split = None
         self.discriminator = None
 
         if pool_id is not None:
@@ -142,6 +147,8 @@ class MysqlProxyV3:
             self.flavor_ref = flavor_ref
         if name is not None:
             self.name = name
+        if transaction_split is not None:
+            self.transaction_split = transaction_split
 
     @property
     def pool_id(self):
@@ -472,6 +479,28 @@ class MysqlProxyV3:
         :type name: str
         """
         self._name = name
+
+    @property
+    def transaction_split(self):
+        """Gets the transaction_split of this MysqlProxyV3.
+
+        Proxy事务拆分开关状态【ON/OFF】。
+
+        :return: The transaction_split of this MysqlProxyV3.
+        :rtype: str
+        """
+        return self._transaction_split
+
+    @transaction_split.setter
+    def transaction_split(self, transaction_split):
+        """Sets the transaction_split of this MysqlProxyV3.
+
+        Proxy事务拆分开关状态【ON/OFF】。
+
+        :param transaction_split: The transaction_split of this MysqlProxyV3.
+        :type transaction_split: str
+        """
+        self._transaction_split = transaction_split
 
     def to_dict(self):
         """Returns the model properties as a dict"""

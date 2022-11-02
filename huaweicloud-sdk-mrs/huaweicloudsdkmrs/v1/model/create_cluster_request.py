@@ -21,7 +21,7 @@ class CreateClusterRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'CreateClusterReq'
+        'body': 'CreateClusterReqV11'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class CreateClusterRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the CreateClusterRequest
-        :type body: :class:`huaweicloudsdkmrs.v1.CreateClusterReq`
+        :type body: :class:`huaweicloudsdkmrs.v1.CreateClusterReqV11`
         """
         
         
@@ -51,7 +51,7 @@ class CreateClusterRequest:
 
 
         :return: The body of this CreateClusterRequest.
-        :rtype: :class:`huaweicloudsdkmrs.v1.CreateClusterReq`
+        :rtype: :class:`huaweicloudsdkmrs.v1.CreateClusterReqV11`
         """
         return self._body
 
@@ -61,7 +61,7 @@ class CreateClusterRequest:
 
 
         :param body: The body of this CreateClusterRequest.
-        :type body: :class:`huaweicloudsdkmrs.v1.CreateClusterReq`
+        :type body: :class:`huaweicloudsdkmrs.v1.CreateClusterReqV11`
         """
         self._body = body
 

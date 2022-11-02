@@ -51,13 +51,13 @@ class VpcHealthConfigBase:
 
         The model defined in huaweicloud sdk
 
-        :param protocol: 使用以下协议，对VPC中主机执行健康检查。
+        :param protocol: 使用以下协议，对VPC中主机执行健康检查： - TCP - HTTP - HTTPS
         :type protocol: str
-        :param path: 健康检查时的目标路径。protocol &#x3D; http时必选
+        :param path: 健康检查时的目标路径。protocol &#x3D; http或https时必选
         :type path: str
         :param method: 健康检查时的请求方法
         :type method: str
-        :param port: 健康检查的目标端口，缺省时为VPC中主机的端口号。
+        :param port: 健康检查的目标端口，缺少或port &#x3D; 0时为VPC中主机的端口号。  若此端口存在非0值，则使用此端口进行健康检查。
         :type port: int
         :param threshold_normal: 正常阈值。判定VPC通道中主机正常的依据为：连续检查x成功，x为您设置的正常阈值。
         :type threshold_normal: int
@@ -108,7 +108,7 @@ class VpcHealthConfigBase:
     def protocol(self):
         """Gets the protocol of this VpcHealthConfigBase.
 
-        使用以下协议，对VPC中主机执行健康检查。
+        使用以下协议，对VPC中主机执行健康检查： - TCP - HTTP - HTTPS
 
         :return: The protocol of this VpcHealthConfigBase.
         :rtype: str
@@ -119,7 +119,7 @@ class VpcHealthConfigBase:
     def protocol(self, protocol):
         """Sets the protocol of this VpcHealthConfigBase.
 
-        使用以下协议，对VPC中主机执行健康检查。
+        使用以下协议，对VPC中主机执行健康检查： - TCP - HTTP - HTTPS
 
         :param protocol: The protocol of this VpcHealthConfigBase.
         :type protocol: str
@@ -130,7 +130,7 @@ class VpcHealthConfigBase:
     def path(self):
         """Gets the path of this VpcHealthConfigBase.
 
-        健康检查时的目标路径。protocol = http时必选
+        健康检查时的目标路径。protocol = http或https时必选
 
         :return: The path of this VpcHealthConfigBase.
         :rtype: str
@@ -141,7 +141,7 @@ class VpcHealthConfigBase:
     def path(self, path):
         """Sets the path of this VpcHealthConfigBase.
 
-        健康检查时的目标路径。protocol = http时必选
+        健康检查时的目标路径。protocol = http或https时必选
 
         :param path: The path of this VpcHealthConfigBase.
         :type path: str
@@ -174,7 +174,7 @@ class VpcHealthConfigBase:
     def port(self):
         """Gets the port of this VpcHealthConfigBase.
 
-        健康检查的目标端口，缺省时为VPC中主机的端口号。
+        健康检查的目标端口，缺少或port = 0时为VPC中主机的端口号。  若此端口存在非0值，则使用此端口进行健康检查。
 
         :return: The port of this VpcHealthConfigBase.
         :rtype: int
@@ -185,7 +185,7 @@ class VpcHealthConfigBase:
     def port(self, port):
         """Sets the port of this VpcHealthConfigBase.
 
-        健康检查的目标端口，缺省时为VPC中主机的端口号。
+        健康检查的目标端口，缺少或port = 0时为VPC中主机的端口号。  若此端口存在非0值，则使用此端口进行健康检查。
 
         :param port: The port of this VpcHealthConfigBase.
         :type port: int

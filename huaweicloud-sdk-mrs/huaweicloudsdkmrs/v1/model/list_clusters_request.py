@@ -43,7 +43,7 @@ class ListClustersRequest:
 
         The model defined in huaweicloud sdk
 
-        :param tags: 可以通过集群的标签来搜索指定标签的集群，当指定多个tag进行查询时，标签之间是与的关系。  - tags参数的格式为tags&#x3D;k1\\*v1,k2\\*v2,k3\\*v3 - 当标签的value为空时，格式为tags&#x3D;k1,k2,k3\\*v3
+        :param tags: 可以通过集群的标签来搜索指定标签的集群，当指定多个tag进行查询时，标签之间是与的关系。  - tags参数的格式为tags&#x3D;k1*v1,k2*v2,k3*v3 - 当标签的value为空时，格式为tags&#x3D;k1,k2,k3*v3
         :type tags: str
         :param page_size: 分页查询每页返回的最大集群数量。  取值范围：[1～2147483646]
         :type page_size: str
@@ -84,7 +84,7 @@ class ListClustersRequest:
     def tags(self):
         """Gets the tags of this ListClustersRequest.
 
-        可以通过集群的标签来搜索指定标签的集群，当指定多个tag进行查询时，标签之间是与的关系。  - tags参数的格式为tags=k1\\*v1,k2\\*v2,k3\\*v3 - 当标签的value为空时，格式为tags=k1,k2,k3\\*v3
+        可以通过集群的标签来搜索指定标签的集群，当指定多个tag进行查询时，标签之间是与的关系。  - tags参数的格式为tags=k1*v1,k2*v2,k3*v3 - 当标签的value为空时，格式为tags=k1,k2,k3*v3
 
         :return: The tags of this ListClustersRequest.
         :rtype: str
@@ -95,7 +95,7 @@ class ListClustersRequest:
     def tags(self, tags):
         """Sets the tags of this ListClustersRequest.
 
-        可以通过集群的标签来搜索指定标签的集群，当指定多个tag进行查询时，标签之间是与的关系。  - tags参数的格式为tags=k1\\*v1,k2\\*v2,k3\\*v3 - 当标签的value为空时，格式为tags=k1,k2,k3\\*v3
+        可以通过集群的标签来搜索指定标签的集群，当指定多个tag进行查询时，标签之间是与的关系。  - tags参数的格式为tags=k1*v1,k2*v2,k3*v3 - 当标签的value为空时，格式为tags=k1,k2,k3*v3
 
         :param tags: The tags of this ListClustersRequest.
         :type tags: str

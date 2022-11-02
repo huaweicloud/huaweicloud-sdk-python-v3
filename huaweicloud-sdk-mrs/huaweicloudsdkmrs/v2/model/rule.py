@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class Rules:
+class Rule:
 
     """
     Attributes:
@@ -39,22 +39,22 @@ class Rules:
     }
 
     def __init__(self, name=None, description=None, adjustment_type=None, cool_down_minutes=None, scaling_adjustment=None, trigger=None):
-        """Rules
+        """Rule
 
         The model defined in huaweicloud sdk
 
-        :param name: 弹性伸缩规则的名称。  只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。  在一个节点组范围内，不允许重名。
+        :param name: 弹性伸缩规则的名称。 只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。 在一个节点组范围内，不允许重名。
         :type name: str
-        :param description: 弹性伸缩规则的说明。  最大长度为1024字符。
+        :param description: 弹性伸缩规则的说明。 最大长度为1024字符。
         :type description: str
-        :param adjustment_type: 弹性伸缩规则的调整类型，只允许以下类型：  枚举值： - scale_out：扩容 - scale_in：缩容
+        :param adjustment_type: 弹性伸缩规则的调整类型，只允许以下类型： 枚举值： - scale_out：扩容 - scale_in：缩容
         :type adjustment_type: str
-        :param cool_down_minutes: 触发弹性伸缩规则后，该集群处于冷却状态（不再执行弹性伸缩操作）的时长，单位为分钟。  取值范围[0～10080]，10080为一周的分钟数。
+        :param cool_down_minutes: 触发弹性伸缩规则后，该集群处于冷却状态（不再执行弹性伸缩操作）的时长，单位为分钟。 取值范围[0～10080]，10080为一周的分钟数。
         :type cool_down_minutes: int
-        :param scaling_adjustment: 单次调整集群节点的个数。  取值范围[1～100]
+        :param scaling_adjustment: 单次调整集群节点的个数。 取值范围[1～100]
         :type scaling_adjustment: int
         :param trigger: 
-        :type trigger: :class:`huaweicloudsdkmrs.v1.Trigger`
+        :type trigger: :class:`huaweicloudsdkmrs.v2.Trigger`
         """
         
         
@@ -77,131 +77,131 @@ class Rules:
 
     @property
     def name(self):
-        """Gets the name of this Rules.
+        """Gets the name of this Rule.
 
-        弹性伸缩规则的名称。  只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。  在一个节点组范围内，不允许重名。
+        弹性伸缩规则的名称。 只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。 在一个节点组范围内，不允许重名。
 
-        :return: The name of this Rules.
+        :return: The name of this Rule.
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Rules.
+        """Sets the name of this Rule.
 
-        弹性伸缩规则的名称。  只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。  在一个节点组范围内，不允许重名。
+        弹性伸缩规则的名称。 只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。 在一个节点组范围内，不允许重名。
 
-        :param name: The name of this Rules.
+        :param name: The name of this Rule.
         :type name: str
         """
         self._name = name
 
     @property
     def description(self):
-        """Gets the description of this Rules.
+        """Gets the description of this Rule.
 
-        弹性伸缩规则的说明。  最大长度为1024字符。
+        弹性伸缩规则的说明。 最大长度为1024字符。
 
-        :return: The description of this Rules.
+        :return: The description of this Rule.
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Rules.
+        """Sets the description of this Rule.
 
-        弹性伸缩规则的说明。  最大长度为1024字符。
+        弹性伸缩规则的说明。 最大长度为1024字符。
 
-        :param description: The description of this Rules.
+        :param description: The description of this Rule.
         :type description: str
         """
         self._description = description
 
     @property
     def adjustment_type(self):
-        """Gets the adjustment_type of this Rules.
+        """Gets the adjustment_type of this Rule.
 
-        弹性伸缩规则的调整类型，只允许以下类型：  枚举值： - scale_out：扩容 - scale_in：缩容
+        弹性伸缩规则的调整类型，只允许以下类型： 枚举值： - scale_out：扩容 - scale_in：缩容
 
-        :return: The adjustment_type of this Rules.
+        :return: The adjustment_type of this Rule.
         :rtype: str
         """
         return self._adjustment_type
 
     @adjustment_type.setter
     def adjustment_type(self, adjustment_type):
-        """Sets the adjustment_type of this Rules.
+        """Sets the adjustment_type of this Rule.
 
-        弹性伸缩规则的调整类型，只允许以下类型：  枚举值： - scale_out：扩容 - scale_in：缩容
+        弹性伸缩规则的调整类型，只允许以下类型： 枚举值： - scale_out：扩容 - scale_in：缩容
 
-        :param adjustment_type: The adjustment_type of this Rules.
+        :param adjustment_type: The adjustment_type of this Rule.
         :type adjustment_type: str
         """
         self._adjustment_type = adjustment_type
 
     @property
     def cool_down_minutes(self):
-        """Gets the cool_down_minutes of this Rules.
+        """Gets the cool_down_minutes of this Rule.
 
-        触发弹性伸缩规则后，该集群处于冷却状态（不再执行弹性伸缩操作）的时长，单位为分钟。  取值范围[0～10080]，10080为一周的分钟数。
+        触发弹性伸缩规则后，该集群处于冷却状态（不再执行弹性伸缩操作）的时长，单位为分钟。 取值范围[0～10080]，10080为一周的分钟数。
 
-        :return: The cool_down_minutes of this Rules.
+        :return: The cool_down_minutes of this Rule.
         :rtype: int
         """
         return self._cool_down_minutes
 
     @cool_down_minutes.setter
     def cool_down_minutes(self, cool_down_minutes):
-        """Sets the cool_down_minutes of this Rules.
+        """Sets the cool_down_minutes of this Rule.
 
-        触发弹性伸缩规则后，该集群处于冷却状态（不再执行弹性伸缩操作）的时长，单位为分钟。  取值范围[0～10080]，10080为一周的分钟数。
+        触发弹性伸缩规则后，该集群处于冷却状态（不再执行弹性伸缩操作）的时长，单位为分钟。 取值范围[0～10080]，10080为一周的分钟数。
 
-        :param cool_down_minutes: The cool_down_minutes of this Rules.
+        :param cool_down_minutes: The cool_down_minutes of this Rule.
         :type cool_down_minutes: int
         """
         self._cool_down_minutes = cool_down_minutes
 
     @property
     def scaling_adjustment(self):
-        """Gets the scaling_adjustment of this Rules.
+        """Gets the scaling_adjustment of this Rule.
 
-        单次调整集群节点的个数。  取值范围[1～100]
+        单次调整集群节点的个数。 取值范围[1～100]
 
-        :return: The scaling_adjustment of this Rules.
+        :return: The scaling_adjustment of this Rule.
         :rtype: int
         """
         return self._scaling_adjustment
 
     @scaling_adjustment.setter
     def scaling_adjustment(self, scaling_adjustment):
-        """Sets the scaling_adjustment of this Rules.
+        """Sets the scaling_adjustment of this Rule.
 
-        单次调整集群节点的个数。  取值范围[1～100]
+        单次调整集群节点的个数。 取值范围[1～100]
 
-        :param scaling_adjustment: The scaling_adjustment of this Rules.
+        :param scaling_adjustment: The scaling_adjustment of this Rule.
         :type scaling_adjustment: int
         """
         self._scaling_adjustment = scaling_adjustment
 
     @property
     def trigger(self):
-        """Gets the trigger of this Rules.
+        """Gets the trigger of this Rule.
 
 
-        :return: The trigger of this Rules.
-        :rtype: :class:`huaweicloudsdkmrs.v1.Trigger`
+        :return: The trigger of this Rule.
+        :rtype: :class:`huaweicloudsdkmrs.v2.Trigger`
         """
         return self._trigger
 
     @trigger.setter
     def trigger(self, trigger):
-        """Sets the trigger of this Rules.
+        """Sets the trigger of this Rule.
 
 
-        :param trigger: The trigger of this Rules.
-        :type trigger: :class:`huaweicloudsdkmrs.v1.Trigger`
+        :param trigger: The trigger of this Rule.
+        :type trigger: :class:`huaweicloudsdkmrs.v2.Trigger`
         """
         self._trigger = trigger
 
@@ -247,7 +247,7 @@ class Rules:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Rules):
+        if not isinstance(other, Rule):
             return False
 
         return self.__dict__ == other.__dict__

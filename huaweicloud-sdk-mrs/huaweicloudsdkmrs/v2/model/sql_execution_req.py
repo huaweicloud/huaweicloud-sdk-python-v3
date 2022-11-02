@@ -39,13 +39,13 @@ class SqlExecutionReq:
 
         The model defined in huaweicloud sdk
 
-        :param sql_type: SQL类型。目前仅支持“presto”类型的SQL。  说明： 只有包含Presto组件的集群才能提交执行presto类型的SQL。
+        :param sql_type: SQL类型。目前仅支持“presto”类型的SQL。 说明： 只有包含Presto组件的集群才能提交执行presto类型的SQL。
         :type sql_type: str
-        :param sql_content: 待执行的SQL语句。  说明： 目前仅支持执行单条语句，语句中不包含“;”。
+        :param sql_content: 待执行的SQL语句。 说明： 目前仅支持执行单条语句，语句中不包含“;”。
         :type sql_content: str
         :param database: 执行SQL所在的数据库，默认为default。
         :type database: str
-        :param archive_path: SQL执行结果的转储文件夹。  说明： 只有select语句才会转储查询的结果。当前仅支持转储到OBS中。
+        :param archive_path: SQL执行结果的转储文件夹。 说明： 只有select语句才会转储查询的结果。当前仅支持转储到OBS中。
         :type archive_path: str
         """
         
@@ -68,7 +68,7 @@ class SqlExecutionReq:
     def sql_type(self):
         """Gets the sql_type of this SqlExecutionReq.
 
-        SQL类型。目前仅支持“presto”类型的SQL。  说明： 只有包含Presto组件的集群才能提交执行presto类型的SQL。
+        SQL类型。目前仅支持“presto”类型的SQL。 说明： 只有包含Presto组件的集群才能提交执行presto类型的SQL。
 
         :return: The sql_type of this SqlExecutionReq.
         :rtype: str
@@ -79,7 +79,7 @@ class SqlExecutionReq:
     def sql_type(self, sql_type):
         """Sets the sql_type of this SqlExecutionReq.
 
-        SQL类型。目前仅支持“presto”类型的SQL。  说明： 只有包含Presto组件的集群才能提交执行presto类型的SQL。
+        SQL类型。目前仅支持“presto”类型的SQL。 说明： 只有包含Presto组件的集群才能提交执行presto类型的SQL。
 
         :param sql_type: The sql_type of this SqlExecutionReq.
         :type sql_type: str
@@ -90,7 +90,7 @@ class SqlExecutionReq:
     def sql_content(self):
         """Gets the sql_content of this SqlExecutionReq.
 
-        待执行的SQL语句。  说明： 目前仅支持执行单条语句，语句中不包含“;”。
+        待执行的SQL语句。 说明： 目前仅支持执行单条语句，语句中不包含“;”。
 
         :return: The sql_content of this SqlExecutionReq.
         :rtype: str
@@ -101,7 +101,7 @@ class SqlExecutionReq:
     def sql_content(self, sql_content):
         """Sets the sql_content of this SqlExecutionReq.
 
-        待执行的SQL语句。  说明： 目前仅支持执行单条语句，语句中不包含“;”。
+        待执行的SQL语句。 说明： 目前仅支持执行单条语句，语句中不包含“;”。
 
         :param sql_content: The sql_content of this SqlExecutionReq.
         :type sql_content: str
@@ -134,7 +134,7 @@ class SqlExecutionReq:
     def archive_path(self):
         """Gets the archive_path of this SqlExecutionReq.
 
-        SQL执行结果的转储文件夹。  说明： 只有select语句才会转储查询的结果。当前仅支持转储到OBS中。
+        SQL执行结果的转储文件夹。 说明： 只有select语句才会转储查询的结果。当前仅支持转储到OBS中。
 
         :return: The archive_path of this SqlExecutionReq.
         :rtype: str
@@ -145,7 +145,7 @@ class SqlExecutionReq:
     def archive_path(self, archive_path):
         """Sets the archive_path of this SqlExecutionReq.
 
-        SQL执行结果的转储文件夹。  说明： 只有select语句才会转储查询的结果。当前仅支持转储到OBS中。
+        SQL执行结果的转储文件夹。 说明： 只有select语句才会转储查询的结果。当前仅支持转储到OBS中。
 
         :param archive_path: The archive_path of this SqlExecutionReq.
         :type archive_path: str

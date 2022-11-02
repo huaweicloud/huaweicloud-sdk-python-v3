@@ -61,15 +61,15 @@ class VpcMemberInfo:
         :type weight: int
         :param is_backup: 是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
         :type is_backup: bool
-        :param member_group_name: 后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。  暂不支持
+        :param member_group_name: 后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。
         :type member_group_name: str
         :param status: 后端服务器状态   - 1：可用   - 2：不可用
         :type status: int
         :param port: 后端服务器端口
         :type port: int
-        :param ecs_id: 后端云服务器的编号。  后端实例类型为instance时生效，支持英文，数字，“-”,“_”，1 ~ 64字符。
+        :param ecs_id: 后端云服务器的编号。  后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。
         :type ecs_id: str
-        :param ecs_name: 后端云服务器的名称。  后端实例类型为instance时生效，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。
+        :param ecs_name: 后端云服务器的名称。  后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。
         :type ecs_name: str
         :param id: 后端实例对象的编号
         :type id: str
@@ -77,7 +77,7 @@ class VpcMemberInfo:
         :type vpc_channel_id: str
         :param create_time: 后端实例增加到VPC通道的时间
         :type create_time: datetime
-        :param member_group_id: 后端服务器组编号  暂不支持
+        :param member_group_id: 后端服务器组编号
         :type member_group_id: str
         """
         
@@ -192,7 +192,7 @@ class VpcMemberInfo:
     def member_group_name(self):
         """Gets the member_group_name of this VpcMemberInfo.
 
-        后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。  暂不支持
+        后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。
 
         :return: The member_group_name of this VpcMemberInfo.
         :rtype: str
@@ -203,7 +203,7 @@ class VpcMemberInfo:
     def member_group_name(self, member_group_name):
         """Sets the member_group_name of this VpcMemberInfo.
 
-        后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。  暂不支持
+        后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。
 
         :param member_group_name: The member_group_name of this VpcMemberInfo.
         :type member_group_name: str
@@ -258,7 +258,7 @@ class VpcMemberInfo:
     def ecs_id(self):
         """Gets the ecs_id of this VpcMemberInfo.
 
-        后端云服务器的编号。  后端实例类型为instance时生效，支持英文，数字，“-”,“_”，1 ~ 64字符。
+        后端云服务器的编号。  后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。
 
         :return: The ecs_id of this VpcMemberInfo.
         :rtype: str
@@ -269,7 +269,7 @@ class VpcMemberInfo:
     def ecs_id(self, ecs_id):
         """Sets the ecs_id of this VpcMemberInfo.
 
-        后端云服务器的编号。  后端实例类型为instance时生效，支持英文，数字，“-”,“_”，1 ~ 64字符。
+        后端云服务器的编号。  后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。
 
         :param ecs_id: The ecs_id of this VpcMemberInfo.
         :type ecs_id: str
@@ -280,7 +280,7 @@ class VpcMemberInfo:
     def ecs_name(self):
         """Gets the ecs_name of this VpcMemberInfo.
 
-        后端云服务器的名称。  后端实例类型为instance时生效，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。
+        后端云服务器的名称。  后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。
 
         :return: The ecs_name of this VpcMemberInfo.
         :rtype: str
@@ -291,7 +291,7 @@ class VpcMemberInfo:
     def ecs_name(self, ecs_name):
         """Sets the ecs_name of this VpcMemberInfo.
 
-        后端云服务器的名称。  后端实例类型为instance时生效，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。
+        后端云服务器的名称。  后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。
 
         :param ecs_name: The ecs_name of this VpcMemberInfo.
         :type ecs_name: str
@@ -368,7 +368,7 @@ class VpcMemberInfo:
     def member_group_id(self):
         """Gets the member_group_id of this VpcMemberInfo.
 
-        后端服务器组编号  暂不支持
+        后端服务器组编号
 
         :return: The member_group_id of this VpcMemberInfo.
         :rtype: str
@@ -379,7 +379,7 @@ class VpcMemberInfo:
     def member_group_id(self, member_group_id):
         """Sets the member_group_id of this VpcMemberInfo.
 
-        后端服务器组编号  暂不支持
+        后端服务器组编号
 
         :param member_group_id: The member_group_id of this VpcMemberInfo.
         :type member_group_id: str

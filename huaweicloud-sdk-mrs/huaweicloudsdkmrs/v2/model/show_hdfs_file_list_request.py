@@ -45,13 +45,13 @@ class ShowHdfsFileListRequest:
 
         :param cluster_id: 集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
         :type cluster_id: str
-        :param path: 文件目录，比如访问“/tmp/test”目录列表，此处必须是目录，整体URI为  /v2/{project_id}/clusters/{cluster_id}/files?path&#x3D;%2Ftmp%2Ftest  单层目录要遵循以下规则：  - 不能为空 - 不能以\&quot;.\&quot;开头或结尾 - 不能包括下列符号 : :*?\&quot;&lt;&gt;|\\;&amp;,&#39;&#x60;!{}[]$%+ - 不能超过255个字节
+        :param path: 文件目录。 比如访问“/tmp/test”目录列表，此处必须是目录，整体URI为/v2/{project_id}/clusters/{cluster_id}/files?path&#x3D;%2Ftmp%2Ftest 单层目录要遵循以下规则： - 不能为空 - 不能以\&quot;.\&quot;开头或结尾 - 不能包括下列符号 : :*?\&quot;&lt;&gt;|\\;&amp;,&#39;&#x60;!{}[]$%+ - 不能超过255个字节
         :type path: str
-        :param offset: 分页参数，表示从该偏移量开始查询文件列表，默认值为1。
+        :param offset: 分页参数，表示从该偏移量开始查询文件列表，默认值为0。
         :type offset: str
         :param limit: 分页参数，列表当前分页的数量限制，默认为100，最大1000。
         :type limit: str
-        :param sort_key: 列表排序按该属性排序。缺省值：path_suffix  - path_suffix：文件或目录名称 - length：文件大小 - modification_time：修改时间
+        :param sort_key: 列表排序按该属性排序。缺省值：path_suffix - path_suffix：文件或目录名称 - length：文件大小 - modification_time：修改时间
         :type sort_key: str
         :param order: 列表排序方式，desc为降序，asc为升序，默认值为desc。
         :type order: str
@@ -104,7 +104,7 @@ class ShowHdfsFileListRequest:
     def path(self):
         """Gets the path of this ShowHdfsFileListRequest.
 
-        文件目录，比如访问“/tmp/test”目录列表，此处必须是目录，整体URI为  /v2/{project_id}/clusters/{cluster_id}/files?path=%2Ftmp%2Ftest  单层目录要遵循以下规则：  - 不能为空 - 不能以\".\"开头或结尾 - 不能包括下列符号 : :*?\"<>|\\;&,'`!{}[]$%+ - 不能超过255个字节
+        文件目录。 比如访问“/tmp/test”目录列表，此处必须是目录，整体URI为/v2/{project_id}/clusters/{cluster_id}/files?path=%2Ftmp%2Ftest 单层目录要遵循以下规则： - 不能为空 - 不能以\".\"开头或结尾 - 不能包括下列符号 : :*?\"<>|\\;&,'`!{}[]$%+ - 不能超过255个字节
 
         :return: The path of this ShowHdfsFileListRequest.
         :rtype: str
@@ -115,7 +115,7 @@ class ShowHdfsFileListRequest:
     def path(self, path):
         """Sets the path of this ShowHdfsFileListRequest.
 
-        文件目录，比如访问“/tmp/test”目录列表，此处必须是目录，整体URI为  /v2/{project_id}/clusters/{cluster_id}/files?path=%2Ftmp%2Ftest  单层目录要遵循以下规则：  - 不能为空 - 不能以\".\"开头或结尾 - 不能包括下列符号 : :*?\"<>|\\;&,'`!{}[]$%+ - 不能超过255个字节
+        文件目录。 比如访问“/tmp/test”目录列表，此处必须是目录，整体URI为/v2/{project_id}/clusters/{cluster_id}/files?path=%2Ftmp%2Ftest 单层目录要遵循以下规则： - 不能为空 - 不能以\".\"开头或结尾 - 不能包括下列符号 : :*?\"<>|\\;&,'`!{}[]$%+ - 不能超过255个字节
 
         :param path: The path of this ShowHdfsFileListRequest.
         :type path: str
@@ -126,7 +126,7 @@ class ShowHdfsFileListRequest:
     def offset(self):
         """Gets the offset of this ShowHdfsFileListRequest.
 
-        分页参数，表示从该偏移量开始查询文件列表，默认值为1。
+        分页参数，表示从该偏移量开始查询文件列表，默认值为0。
 
         :return: The offset of this ShowHdfsFileListRequest.
         :rtype: str
@@ -137,7 +137,7 @@ class ShowHdfsFileListRequest:
     def offset(self, offset):
         """Sets the offset of this ShowHdfsFileListRequest.
 
-        分页参数，表示从该偏移量开始查询文件列表，默认值为1。
+        分页参数，表示从该偏移量开始查询文件列表，默认值为0。
 
         :param offset: The offset of this ShowHdfsFileListRequest.
         :type offset: str
@@ -170,7 +170,7 @@ class ShowHdfsFileListRequest:
     def sort_key(self):
         """Gets the sort_key of this ShowHdfsFileListRequest.
 
-        列表排序按该属性排序。缺省值：path_suffix  - path_suffix：文件或目录名称 - length：文件大小 - modification_time：修改时间
+        列表排序按该属性排序。缺省值：path_suffix - path_suffix：文件或目录名称 - length：文件大小 - modification_time：修改时间
 
         :return: The sort_key of this ShowHdfsFileListRequest.
         :rtype: str
@@ -181,7 +181,7 @@ class ShowHdfsFileListRequest:
     def sort_key(self, sort_key):
         """Sets the sort_key of this ShowHdfsFileListRequest.
 
-        列表排序按该属性排序。缺省值：path_suffix  - path_suffix：文件或目录名称 - length：文件大小 - modification_time：修改时间
+        列表排序按该属性排序。缺省值：path_suffix - path_suffix：文件或目录名称 - length：文件大小 - modification_time：修改时间
 
         :param sort_key: The sort_key of this ShowHdfsFileListRequest.
         :type sort_key: str

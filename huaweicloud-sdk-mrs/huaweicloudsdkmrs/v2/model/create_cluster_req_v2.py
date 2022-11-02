@@ -48,7 +48,7 @@ class CreateClusterReqV2:
         'log_collection': 'int',
         'node_groups': 'list[NodeGroupV2]',
         'bootstrap_scripts': 'list[BootstrapScript]',
-        'add_jobs': 'list[AddJobs]'
+        'add_jobs': 'list[AddJobsReqV11]'
     }
 
     attribute_map = {
@@ -89,9 +89,9 @@ class CreateClusterReqV2:
 
         :param is_dec_project: 说明是否为专属云的资源，默认为false。
         :type is_dec_project: bool
-        :param cluster_version: 集群版本。 MRS目前支持MRS 1.9.2、MRS 3.1.0版本。
+        :param cluster_version: 集群版本。例如：MRS 3.1.0。
         :type cluster_version: str
-        :param cluster_name: 集群名称，不允许相同。 只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。
+        :param cluster_name: 集群名称，不允许相同。  只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。
         :type cluster_name: str
         :param cluster_type: 集群类型，取值范围： - ANALYSIS：分析集群 - STREAMING：流式集群 - MIXED：混合集群 - CUSTOM：自定义集群，仅MRS 3.x版本支持。
         :type cluster_type: str
@@ -99,15 +99,15 @@ class CreateClusterReqV2:
         :type charge_info: :class:`huaweicloudsdkmrs.v2.ChargeInfo`
         :param region: 集群所在区域信息，请参见[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)。
         :type region: str
-        :param vpc_name: 子网所在VPC名称。 通过VPC管理控制台获取名称： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。  在“虚拟私有云”页面的列表中即可获取VPC名称。
+        :param vpc_name: 子网所在VPC名称。 通过VPC管理控制台获取名称： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 在“虚拟私有云”页面的列表中即可获取VPC名称。
         :type vpc_name: str
-        :param subnet_id: 子网ID。通过VPC管理控制台获取子网ID： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网。 4) 单击对应子网名称，获取“网络ID”。  “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。推荐使用“subnet_id”。
+        :param subnet_id: 子网ID。通过VPC管理控制台获取子网ID： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网。 4) 单击对应子网名称，获取“网络ID”。 “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。推荐使用“subnet_id”。
         :type subnet_id: str
-        :param subnet_name: 子网名称。 通过VPC管理控制台获取子网名称： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网，获取子网名称。  “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。当仅填写“subnet_name”一个参数且VPC下存在同名子网时，创建集群时以VPC平台第一个名称的子网为准。推荐使用“subnet_id”。
+        :param subnet_name: 子网名称。 通过VPC管理控制台获取子网名称： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网，获取子网名称。 “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。当仅填写“subnet_name”一个参数且VPC下存在同名子网时，创建集群时以VPC平台第一个名称的子网为准。推荐使用“subnet_id”。
         :type subnet_name: str
         :param components: 组件名称列表，用逗号分隔。支持的组件请参见[获取MRS集群信息](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)页面的“MRS服务支持的组件”内容。
         :type components: str
-        :param availability_zone: 可用分区名称。 可用分区信息请参见[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)。
+        :param availability_zone: 可用分区名称，不支持多AZ集群。 可用分区信息请参见[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)。
         :type availability_zone: str
         :param security_groups_id: 集群安全组的ID。 - 当该ID为空时MRS后台会自动创建安全组，自动创建的安全组名称以mrs_{cluster_name}开头。 - 当该ID不为空时，表示使用固定安全组来创建集群，传入的ID必须是当前租户中包含的安全组ID，且该安全组中需要包含一条支持全部协议、全部端口、源地址为指定的管理面节点IP的入方向规则。
         :type security_groups_id: str
@@ -123,7 +123,7 @@ class CreateClusterReqV2:
         :type node_root_password: str
         :param node_keypair_name: 密钥对名称。用户可以使用密钥对方式登录集群节点。
         :type node_keypair_name: str
-        :param enterprise_project_id: 企业项目ID。  创建集群时，给集群绑定企业项目ID。  默认设置为0，表示为default企业项目。  获取方式请参见《企业管理API参考》的“查询企业项目列表”响应消息表“enterprise_project字段数据结构说明”的“id”。
+        :param enterprise_project_id: 企业项目ID。 创建集群时，给集群绑定企业项目ID。 默认设置为0，表示为default企业项目。 获取方式请参见《企业管理API参考》的“查询企业项目列表”响应消息表“enterprise_project字段数据结构说明”的“id”。
         :type enterprise_project_id: str
         :param eip_address: 与MRS集群绑定的弹性公网IP，可实现使用弹性公网IP访问Manager的目的。该弹性公网IP必须已经创建且与集群在同一区域。
         :type eip_address: str
@@ -135,14 +135,14 @@ class CreateClusterReqV2:
         :type template_id: str
         :param tags: 集群的标签信息。 同一个集群最多能使用10个tag，tag的名称（key）不能重复。
         :type tags: list[:class:`huaweicloudsdkmrs.v2.Tag`]
-        :param log_collection: 集群创建失败时，是否收集失败日志。 默认设置为1，此时将创建OBS桶仅用于MRS集群创建失败时的日志收集。  枚举值： - 0：不收集 - 1：收集
+        :param log_collection: 集群创建失败时，是否收集失败日志。 默认设置为1，此时将创建OBS桶仅用于MRS集群创建失败时的日志收集。 枚举值： - 0：不收集 - 1：收集
         :type log_collection: int
         :param node_groups: 组成集群的节点组信息。
         :type node_groups: list[:class:`huaweicloudsdkmrs.v2.NodeGroupV2`]
         :param bootstrap_scripts: 配置引导操作脚本信息。
         :type bootstrap_scripts: list[:class:`huaweicloudsdkmrs.v2.BootstrapScript`]
         :param add_jobs: 创建集群时可同时提交作业，当前版本暂时只支持新增一个作业。
-        :type add_jobs: list[:class:`huaweicloudsdkmrs.v2.AddJobs`]
+        :type add_jobs: list[:class:`huaweicloudsdkmrs.v2.AddJobsReqV11`]
         """
         
         
@@ -248,7 +248,7 @@ class CreateClusterReqV2:
     def cluster_version(self):
         """Gets the cluster_version of this CreateClusterReqV2.
 
-        集群版本。 MRS目前支持MRS 1.9.2、MRS 3.1.0版本。
+        集群版本。例如：MRS 3.1.0。
 
         :return: The cluster_version of this CreateClusterReqV2.
         :rtype: str
@@ -259,7 +259,7 @@ class CreateClusterReqV2:
     def cluster_version(self, cluster_version):
         """Sets the cluster_version of this CreateClusterReqV2.
 
-        集群版本。 MRS目前支持MRS 1.9.2、MRS 3.1.0版本。
+        集群版本。例如：MRS 3.1.0。
 
         :param cluster_version: The cluster_version of this CreateClusterReqV2.
         :type cluster_version: str
@@ -270,7 +270,7 @@ class CreateClusterReqV2:
     def cluster_name(self):
         """Gets the cluster_name of this CreateClusterReqV2.
 
-        集群名称，不允许相同。 只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。
+        集群名称，不允许相同。  只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。
 
         :return: The cluster_name of this CreateClusterReqV2.
         :rtype: str
@@ -281,7 +281,7 @@ class CreateClusterReqV2:
     def cluster_name(self, cluster_name):
         """Sets the cluster_name of this CreateClusterReqV2.
 
-        集群名称，不允许相同。 只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。
+        集群名称，不允许相同。  只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。
 
         :param cluster_name: The cluster_name of this CreateClusterReqV2.
         :type cluster_name: str
@@ -356,7 +356,7 @@ class CreateClusterReqV2:
     def vpc_name(self):
         """Gets the vpc_name of this CreateClusterReqV2.
 
-        子网所在VPC名称。 通过VPC管理控制台获取名称： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。  在“虚拟私有云”页面的列表中即可获取VPC名称。
+        子网所在VPC名称。 通过VPC管理控制台获取名称： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 在“虚拟私有云”页面的列表中即可获取VPC名称。
 
         :return: The vpc_name of this CreateClusterReqV2.
         :rtype: str
@@ -367,7 +367,7 @@ class CreateClusterReqV2:
     def vpc_name(self, vpc_name):
         """Sets the vpc_name of this CreateClusterReqV2.
 
-        子网所在VPC名称。 通过VPC管理控制台获取名称： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。  在“虚拟私有云”页面的列表中即可获取VPC名称。
+        子网所在VPC名称。 通过VPC管理控制台获取名称： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 在“虚拟私有云”页面的列表中即可获取VPC名称。
 
         :param vpc_name: The vpc_name of this CreateClusterReqV2.
         :type vpc_name: str
@@ -378,7 +378,7 @@ class CreateClusterReqV2:
     def subnet_id(self):
         """Gets the subnet_id of this CreateClusterReqV2.
 
-        子网ID。通过VPC管理控制台获取子网ID： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网。 4) 单击对应子网名称，获取“网络ID”。  “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。推荐使用“subnet_id”。
+        子网ID。通过VPC管理控制台获取子网ID： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网。 4) 单击对应子网名称，获取“网络ID”。 “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。推荐使用“subnet_id”。
 
         :return: The subnet_id of this CreateClusterReqV2.
         :rtype: str
@@ -389,7 +389,7 @@ class CreateClusterReqV2:
     def subnet_id(self, subnet_id):
         """Sets the subnet_id of this CreateClusterReqV2.
 
-        子网ID。通过VPC管理控制台获取子网ID： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网。 4) 单击对应子网名称，获取“网络ID”。  “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。推荐使用“subnet_id”。
+        子网ID。通过VPC管理控制台获取子网ID： 1) 登录VPC管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网。 4) 单击对应子网名称，获取“网络ID”。 “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。推荐使用“subnet_id”。
 
         :param subnet_id: The subnet_id of this CreateClusterReqV2.
         :type subnet_id: str
@@ -400,7 +400,7 @@ class CreateClusterReqV2:
     def subnet_name(self):
         """Gets the subnet_name of this CreateClusterReqV2.
 
-        子网名称。 通过VPC管理控制台获取子网名称： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网，获取子网名称。  “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。当仅填写“subnet_name”一个参数且VPC下存在同名子网时，创建集群时以VPC平台第一个名称的子网为准。推荐使用“subnet_id”。
+        子网名称。 通过VPC管理控制台获取子网名称： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网，获取子网名称。 “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。当仅填写“subnet_name”一个参数且VPC下存在同名子网时，创建集群时以VPC平台第一个名称的子网为准。推荐使用“subnet_id”。
 
         :return: The subnet_name of this CreateClusterReqV2.
         :rtype: str
@@ -411,7 +411,7 @@ class CreateClusterReqV2:
     def subnet_name(self, subnet_name):
         """Sets the subnet_name of this CreateClusterReqV2.
 
-        子网名称。 通过VPC管理控制台获取子网名称： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网，获取子网名称。  “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。当仅填写“subnet_name”一个参数且VPC下存在同名子网时，创建集群时以VPC平台第一个名称的子网为准。推荐使用“subnet_id”。
+        子网名称。 通过VPC管理控制台获取子网名称： 1) 登录管理控制台。 2) 单击“虚拟私有云”，从左侧列表选择虚拟私有云。 3) 单击对应虚拟私有云所在行的“子网个数”查看子网，获取子网名称。 “subnet_id”和“subnet_name”必须至少填写一个，当这两个参数同时配置但是不匹配同一个子网时，集群会创建失败，请仔细填写参数。当仅填写“subnet_name”一个参数且VPC下存在同名子网时，创建集群时以VPC平台第一个名称的子网为准。推荐使用“subnet_id”。
 
         :param subnet_name: The subnet_name of this CreateClusterReqV2.
         :type subnet_name: str
@@ -444,7 +444,7 @@ class CreateClusterReqV2:
     def availability_zone(self):
         """Gets the availability_zone of this CreateClusterReqV2.
 
-        可用分区名称。 可用分区信息请参见[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)。
+        可用分区名称，不支持多AZ集群。 可用分区信息请参见[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)。
 
         :return: The availability_zone of this CreateClusterReqV2.
         :rtype: str
@@ -455,7 +455,7 @@ class CreateClusterReqV2:
     def availability_zone(self, availability_zone):
         """Sets the availability_zone of this CreateClusterReqV2.
 
-        可用分区名称。 可用分区信息请参见[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)。
+        可用分区名称，不支持多AZ集群。 可用分区信息请参见[终端节点](https://support.huaweicloud.com/api-mrs/mrs_02_0003.html)。
 
         :param availability_zone: The availability_zone of this CreateClusterReqV2.
         :type availability_zone: str
@@ -620,7 +620,7 @@ class CreateClusterReqV2:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateClusterReqV2.
 
-        企业项目ID。  创建集群时，给集群绑定企业项目ID。  默认设置为0，表示为default企业项目。  获取方式请参见《企业管理API参考》的“查询企业项目列表”响应消息表“enterprise_project字段数据结构说明”的“id”。
+        企业项目ID。 创建集群时，给集群绑定企业项目ID。 默认设置为0，表示为default企业项目。 获取方式请参见《企业管理API参考》的“查询企业项目列表”响应消息表“enterprise_project字段数据结构说明”的“id”。
 
         :return: The enterprise_project_id of this CreateClusterReqV2.
         :rtype: str
@@ -631,7 +631,7 @@ class CreateClusterReqV2:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateClusterReqV2.
 
-        企业项目ID。  创建集群时，给集群绑定企业项目ID。  默认设置为0，表示为default企业项目。  获取方式请参见《企业管理API参考》的“查询企业项目列表”响应消息表“enterprise_project字段数据结构说明”的“id”。
+        企业项目ID。 创建集群时，给集群绑定企业项目ID。 默认设置为0，表示为default企业项目。 获取方式请参见《企业管理API参考》的“查询企业项目列表”响应消息表“enterprise_project字段数据结构说明”的“id”。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateClusterReqV2.
         :type enterprise_project_id: str
@@ -752,7 +752,7 @@ class CreateClusterReqV2:
     def log_collection(self):
         """Gets the log_collection of this CreateClusterReqV2.
 
-        集群创建失败时，是否收集失败日志。 默认设置为1，此时将创建OBS桶仅用于MRS集群创建失败时的日志收集。  枚举值： - 0：不收集 - 1：收集
+        集群创建失败时，是否收集失败日志。 默认设置为1，此时将创建OBS桶仅用于MRS集群创建失败时的日志收集。 枚举值： - 0：不收集 - 1：收集
 
         :return: The log_collection of this CreateClusterReqV2.
         :rtype: int
@@ -763,7 +763,7 @@ class CreateClusterReqV2:
     def log_collection(self, log_collection):
         """Sets the log_collection of this CreateClusterReqV2.
 
-        集群创建失败时，是否收集失败日志。 默认设置为1，此时将创建OBS桶仅用于MRS集群创建失败时的日志收集。  枚举值： - 0：不收集 - 1：收集
+        集群创建失败时，是否收集失败日志。 默认设置为1，此时将创建OBS桶仅用于MRS集群创建失败时的日志收集。 枚举值： - 0：不收集 - 1：收集
 
         :param log_collection: The log_collection of this CreateClusterReqV2.
         :type log_collection: int
@@ -821,7 +821,7 @@ class CreateClusterReqV2:
         创建集群时可同时提交作业，当前版本暂时只支持新增一个作业。
 
         :return: The add_jobs of this CreateClusterReqV2.
-        :rtype: list[:class:`huaweicloudsdkmrs.v2.AddJobs`]
+        :rtype: list[:class:`huaweicloudsdkmrs.v2.AddJobsReqV11`]
         """
         return self._add_jobs
 
@@ -832,7 +832,7 @@ class CreateClusterReqV2:
         创建集群时可同时提交作业，当前版本暂时只支持新增一个作业。
 
         :param add_jobs: The add_jobs of this CreateClusterReqV2.
-        :type add_jobs: list[:class:`huaweicloudsdkmrs.v2.AddJobs`]
+        :type add_jobs: list[:class:`huaweicloudsdkmrs.v2.AddJobsReqV11`]
         """
         self._add_jobs = add_jobs
 

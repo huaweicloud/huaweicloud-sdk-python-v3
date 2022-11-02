@@ -47,9 +47,9 @@ class ResourcesPlan:
         :type start_time: str
         :param end_time: 资源计划的结束时间，格式与“start_time”相同，不早于start_time表示的时间，且与start_time间隔不小于30min。
         :type end_time: str
-        :param min_capacity: 资源计划内该节点组的最小保留节点数。  取值范围：[0～500]
+        :param min_capacity: 资源计划内该节点组的最小保留节点数。 取值范围：[0～500]
         :type min_capacity: int
-        :param max_capacity: 资源计划内该节点组的最大保留节点数。  取值范围：[0～500]
+        :param max_capacity: 资源计划内该节点组的最大保留节点数。 取值范围：[0～500]
         :type max_capacity: int
         """
         
@@ -138,7 +138,7 @@ class ResourcesPlan:
     def min_capacity(self):
         """Gets the min_capacity of this ResourcesPlan.
 
-        资源计划内该节点组的最小保留节点数。  取值范围：[0～500]
+        资源计划内该节点组的最小保留节点数。 取值范围：[0～500]
 
         :return: The min_capacity of this ResourcesPlan.
         :rtype: int
@@ -149,7 +149,7 @@ class ResourcesPlan:
     def min_capacity(self, min_capacity):
         """Sets the min_capacity of this ResourcesPlan.
 
-        资源计划内该节点组的最小保留节点数。  取值范围：[0～500]
+        资源计划内该节点组的最小保留节点数。 取值范围：[0～500]
 
         :param min_capacity: The min_capacity of this ResourcesPlan.
         :type min_capacity: int
@@ -160,7 +160,7 @@ class ResourcesPlan:
     def max_capacity(self):
         """Gets the max_capacity of this ResourcesPlan.
 
-        资源计划内该节点组的最大保留节点数。  取值范围：[0～500]
+        资源计划内该节点组的最大保留节点数。 取值范围：[0～500]
 
         :return: The max_capacity of this ResourcesPlan.
         :rtype: int
@@ -171,7 +171,7 @@ class ResourcesPlan:
     def max_capacity(self, max_capacity):
         """Sets the max_capacity of this ResourcesPlan.
 
-        资源计划内该节点组的最大保留节点数。  取值范围：[0～500]
+        资源计划内该节点组的最大保留节点数。 取值范围：[0～500]
 
         :param max_capacity: The max_capacity of this ResourcesPlan.
         :type max_capacity: int

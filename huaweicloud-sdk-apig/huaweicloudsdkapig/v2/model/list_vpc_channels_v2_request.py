@@ -26,7 +26,12 @@ class ListVpcChannelsV2Request:
         'limit': 'int',
         'id': 'str',
         'name': 'str',
-        'precise_search': 'str'
+        'dict_code': 'str',
+        'precise_search': 'str',
+        'member_host': 'str',
+        'member_port': 'int',
+        'member_group_name': 'str',
+        'member_group_id': 'str'
     }
 
     attribute_map = {
@@ -35,10 +40,15 @@ class ListVpcChannelsV2Request:
         'limit': 'limit',
         'id': 'id',
         'name': 'name',
-        'precise_search': 'precise_search'
+        'dict_code': 'dict_code',
+        'precise_search': 'precise_search',
+        'member_host': 'member_host',
+        'member_port': 'member_port',
+        'member_group_name': 'member_group_name',
+        'member_group_id': 'member_group_id'
     }
 
-    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, precise_search=None):
+    def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, dict_code=None, precise_search=None, member_host=None, member_port=None, member_group_name=None, member_group_id=None):
         """ListVpcChannelsV2Request
 
         The model defined in huaweicloud sdk
@@ -47,14 +57,24 @@ class ListVpcChannelsV2Request:
         :type instance_id: str
         :param offset: 偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
         :type offset: int
-        :param limit: 每页显示的条目数量
+        :param limit: 每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
         :type limit: int
         :param id: VPC通道的编号
         :type id: str
         :param name: VPC通道的名称
         :type name: str
-        :param precise_search: 指定需要精确匹配查找的参数名称，目前仅支持name
+        :param dict_code: VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
+        :type dict_code: str
+        :param precise_search: 指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  目前支持name，member_group_name。
         :type precise_search: str
+        :param member_host: 后端服务地址。默认精确查询，不支持模糊查询。
+        :type member_host: str
+        :param member_port: 后端服务器端口
+        :type member_port: int
+        :param member_group_name: 后端服务器组名称
+        :type member_group_name: str
+        :param member_group_id: 后端服务器组编号
+        :type member_group_id: str
         """
         
         
@@ -64,7 +84,12 @@ class ListVpcChannelsV2Request:
         self._limit = None
         self._id = None
         self._name = None
+        self._dict_code = None
         self._precise_search = None
+        self._member_host = None
+        self._member_port = None
+        self._member_group_name = None
+        self._member_group_id = None
         self.discriminator = None
 
         self.instance_id = instance_id
@@ -76,8 +101,18 @@ class ListVpcChannelsV2Request:
             self.id = id
         if name is not None:
             self.name = name
+        if dict_code is not None:
+            self.dict_code = dict_code
         if precise_search is not None:
             self.precise_search = precise_search
+        if member_host is not None:
+            self.member_host = member_host
+        if member_port is not None:
+            self.member_port = member_port
+        if member_group_name is not None:
+            self.member_group_name = member_group_name
+        if member_group_id is not None:
+            self.member_group_id = member_group_id
 
     @property
     def instance_id(self):
@@ -127,7 +162,7 @@ class ListVpcChannelsV2Request:
     def limit(self):
         """Gets the limit of this ListVpcChannelsV2Request.
 
-        每页显示的条目数量
+        每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
         :return: The limit of this ListVpcChannelsV2Request.
         :rtype: int
@@ -138,7 +173,7 @@ class ListVpcChannelsV2Request:
     def limit(self, limit):
         """Sets the limit of this ListVpcChannelsV2Request.
 
-        每页显示的条目数量
+        每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
         :param limit: The limit of this ListVpcChannelsV2Request.
         :type limit: int
@@ -190,10 +225,32 @@ class ListVpcChannelsV2Request:
         self._name = name
 
     @property
+    def dict_code(self):
+        """Gets the dict_code of this ListVpcChannelsV2Request.
+
+        VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
+
+        :return: The dict_code of this ListVpcChannelsV2Request.
+        :rtype: str
+        """
+        return self._dict_code
+
+    @dict_code.setter
+    def dict_code(self, dict_code):
+        """Sets the dict_code of this ListVpcChannelsV2Request.
+
+        VPC通道的字典编码  支持英文，数字，特殊字符（-_.）  暂不支持
+
+        :param dict_code: The dict_code of this ListVpcChannelsV2Request.
+        :type dict_code: str
+        """
+        self._dict_code = dict_code
+
+    @property
     def precise_search(self):
         """Gets the precise_search of this ListVpcChannelsV2Request.
 
-        指定需要精确匹配查找的参数名称，目前仅支持name
+        指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  目前支持name，member_group_name。
 
         :return: The precise_search of this ListVpcChannelsV2Request.
         :rtype: str
@@ -204,12 +261,100 @@ class ListVpcChannelsV2Request:
     def precise_search(self, precise_search):
         """Sets the precise_search of this ListVpcChannelsV2Request.
 
-        指定需要精确匹配查找的参数名称，目前仅支持name
+        指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  目前支持name，member_group_name。
 
         :param precise_search: The precise_search of this ListVpcChannelsV2Request.
         :type precise_search: str
         """
         self._precise_search = precise_search
+
+    @property
+    def member_host(self):
+        """Gets the member_host of this ListVpcChannelsV2Request.
+
+        后端服务地址。默认精确查询，不支持模糊查询。
+
+        :return: The member_host of this ListVpcChannelsV2Request.
+        :rtype: str
+        """
+        return self._member_host
+
+    @member_host.setter
+    def member_host(self, member_host):
+        """Sets the member_host of this ListVpcChannelsV2Request.
+
+        后端服务地址。默认精确查询，不支持模糊查询。
+
+        :param member_host: The member_host of this ListVpcChannelsV2Request.
+        :type member_host: str
+        """
+        self._member_host = member_host
+
+    @property
+    def member_port(self):
+        """Gets the member_port of this ListVpcChannelsV2Request.
+
+        后端服务器端口
+
+        :return: The member_port of this ListVpcChannelsV2Request.
+        :rtype: int
+        """
+        return self._member_port
+
+    @member_port.setter
+    def member_port(self, member_port):
+        """Sets the member_port of this ListVpcChannelsV2Request.
+
+        后端服务器端口
+
+        :param member_port: The member_port of this ListVpcChannelsV2Request.
+        :type member_port: int
+        """
+        self._member_port = member_port
+
+    @property
+    def member_group_name(self):
+        """Gets the member_group_name of this ListVpcChannelsV2Request.
+
+        后端服务器组名称
+
+        :return: The member_group_name of this ListVpcChannelsV2Request.
+        :rtype: str
+        """
+        return self._member_group_name
+
+    @member_group_name.setter
+    def member_group_name(self, member_group_name):
+        """Sets the member_group_name of this ListVpcChannelsV2Request.
+
+        后端服务器组名称
+
+        :param member_group_name: The member_group_name of this ListVpcChannelsV2Request.
+        :type member_group_name: str
+        """
+        self._member_group_name = member_group_name
+
+    @property
+    def member_group_id(self):
+        """Gets the member_group_id of this ListVpcChannelsV2Request.
+
+        后端服务器组编号
+
+        :return: The member_group_id of this ListVpcChannelsV2Request.
+        :rtype: str
+        """
+        return self._member_group_id
+
+    @member_group_id.setter
+    def member_group_id(self, member_group_id):
+        """Sets the member_group_id of this ListVpcChannelsV2Request.
+
+        后端服务器组编号
+
+        :param member_group_id: The member_group_id of this ListVpcChannelsV2Request.
+        :type member_group_id: str
+        """
+        self._member_group_id = member_group_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -39,13 +39,13 @@ class Trigger:
 
         The model defined in huaweicloud sdk
 
-        :param metric_name: 指标名称。  该触发条件会依据该名称对应指标的值来进行判断。  最大长度为64个字符。
+        :param metric_name: 指标名称。 该触发条件会依据该名称对应指标的值来进行判断。 最大长度为64个字符。
         :type metric_name: str
         :param metric_value: 指标阈值。  触发该条件的指标阈值，只允许输入整数或者带两位小数的数。
         :type metric_value: str
-        :param comparison_operator: 指标判断逻辑运算符，包括：  - LT：小于 - GT：大于 - LTOE：小于等于 - GTOE：大于等于
+        :param comparison_operator: 指标判断逻辑运算符，包括： - LT：小于 - GT：大于 - LTOE：小于等于 - GTOE：大于等于
         :type comparison_operator: str
-        :param evaluation_periods: 判断连续满足指标阈值的周期数(一个周期为5分钟)。  取值范围[1～288]
+        :param evaluation_periods: 判断连续满足指标阈值的周期数(一个周期为5分钟)。 取值范围[1～288]
         :type evaluation_periods: int
         """
         
@@ -67,7 +67,7 @@ class Trigger:
     def metric_name(self):
         """Gets the metric_name of this Trigger.
 
-        指标名称。  该触发条件会依据该名称对应指标的值来进行判断。  最大长度为64个字符。
+        指标名称。 该触发条件会依据该名称对应指标的值来进行判断。 最大长度为64个字符。
 
         :return: The metric_name of this Trigger.
         :rtype: str
@@ -78,7 +78,7 @@ class Trigger:
     def metric_name(self, metric_name):
         """Sets the metric_name of this Trigger.
 
-        指标名称。  该触发条件会依据该名称对应指标的值来进行判断。  最大长度为64个字符。
+        指标名称。 该触发条件会依据该名称对应指标的值来进行判断。 最大长度为64个字符。
 
         :param metric_name: The metric_name of this Trigger.
         :type metric_name: str
@@ -111,7 +111,7 @@ class Trigger:
     def comparison_operator(self):
         """Gets the comparison_operator of this Trigger.
 
-        指标判断逻辑运算符，包括：  - LT：小于 - GT：大于 - LTOE：小于等于 - GTOE：大于等于
+        指标判断逻辑运算符，包括： - LT：小于 - GT：大于 - LTOE：小于等于 - GTOE：大于等于
 
         :return: The comparison_operator of this Trigger.
         :rtype: str
@@ -122,7 +122,7 @@ class Trigger:
     def comparison_operator(self, comparison_operator):
         """Sets the comparison_operator of this Trigger.
 
-        指标判断逻辑运算符，包括：  - LT：小于 - GT：大于 - LTOE：小于等于 - GTOE：大于等于
+        指标判断逻辑运算符，包括： - LT：小于 - GT：大于 - LTOE：小于等于 - GTOE：大于等于
 
         :param comparison_operator: The comparison_operator of this Trigger.
         :type comparison_operator: str
@@ -133,7 +133,7 @@ class Trigger:
     def evaluation_periods(self):
         """Gets the evaluation_periods of this Trigger.
 
-        判断连续满足指标阈值的周期数(一个周期为5分钟)。  取值范围[1～288]
+        判断连续满足指标阈值的周期数(一个周期为5分钟)。 取值范围[1～288]
 
         :return: The evaluation_periods of this Trigger.
         :rtype: int
@@ -144,7 +144,7 @@ class Trigger:
     def evaluation_periods(self, evaluation_periods):
         """Sets the evaluation_periods of this Trigger.
 
-        判断连续满足指标阈值的周期数(一个周期为5分钟)。  取值范围[1～288]
+        判断连续满足指标阈值的周期数(一个周期为5分钟)。 取值范围[1～288]
 
         :param evaluation_periods: The evaluation_periods of this Trigger.
         :type evaluation_periods: int

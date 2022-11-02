@@ -49,11 +49,11 @@ class ShowSqlResultResponse(SdkResponse):
         :type message: str
         :param statement: 执行的SQL语句。
         :type statement: str
-        :param status: SQL的执行状态。  - QUEUED - WAITING_FOR_RESOURCES - PLANNING - STARTING - RUNNING - FINISHING - FINISHED - FAILED
+        :param status: SQL的执行状态。 - QUEUED - WAITING_FOR_RESOURCES - PLANNING - STARTING - RUNNING - FINISHING - FINISHED - FAILED
         :type status: str
-        :param result_location: SQL查询语句的最终结果归档路径。  说明： 只有select的语句才会在将SQL的执行结果转储到result_location中。
+        :param result_location: SQL查询语句的最终结果归档路径。 说明： 只有select的语句才会在将SQL的执行结果转储到result_location中。
         :type result_location: str
-        :param content: SQL的执行结果。  说明： 只有非select的语句才会在content中返回结果，如果SQL中没有结果，content为空。
+        :param content: SQL的执行结果。 说明： 只有非select的语句才会在content中返回结果，如果SQL中没有结果，content为空。
         :type content: list[list[str]]
         """
         
@@ -150,7 +150,7 @@ class ShowSqlResultResponse(SdkResponse):
     def status(self):
         """Gets the status of this ShowSqlResultResponse.
 
-        SQL的执行状态。  - QUEUED - WAITING_FOR_RESOURCES - PLANNING - STARTING - RUNNING - FINISHING - FINISHED - FAILED
+        SQL的执行状态。 - QUEUED - WAITING_FOR_RESOURCES - PLANNING - STARTING - RUNNING - FINISHING - FINISHED - FAILED
 
         :return: The status of this ShowSqlResultResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class ShowSqlResultResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this ShowSqlResultResponse.
 
-        SQL的执行状态。  - QUEUED - WAITING_FOR_RESOURCES - PLANNING - STARTING - RUNNING - FINISHING - FINISHED - FAILED
+        SQL的执行状态。 - QUEUED - WAITING_FOR_RESOURCES - PLANNING - STARTING - RUNNING - FINISHING - FINISHED - FAILED
 
         :param status: The status of this ShowSqlResultResponse.
         :type status: str
@@ -172,7 +172,7 @@ class ShowSqlResultResponse(SdkResponse):
     def result_location(self):
         """Gets the result_location of this ShowSqlResultResponse.
 
-        SQL查询语句的最终结果归档路径。  说明： 只有select的语句才会在将SQL的执行结果转储到result_location中。
+        SQL查询语句的最终结果归档路径。 说明： 只有select的语句才会在将SQL的执行结果转储到result_location中。
 
         :return: The result_location of this ShowSqlResultResponse.
         :rtype: str
@@ -183,7 +183,7 @@ class ShowSqlResultResponse(SdkResponse):
     def result_location(self, result_location):
         """Sets the result_location of this ShowSqlResultResponse.
 
-        SQL查询语句的最终结果归档路径。  说明： 只有select的语句才会在将SQL的执行结果转储到result_location中。
+        SQL查询语句的最终结果归档路径。 说明： 只有select的语句才会在将SQL的执行结果转储到result_location中。
 
         :param result_location: The result_location of this ShowSqlResultResponse.
         :type result_location: str
@@ -194,7 +194,7 @@ class ShowSqlResultResponse(SdkResponse):
     def content(self):
         """Gets the content of this ShowSqlResultResponse.
 
-        SQL的执行结果。  说明： 只有非select的语句才会在content中返回结果，如果SQL中没有结果，content为空。
+        SQL的执行结果。 说明： 只有非select的语句才会在content中返回结果，如果SQL中没有结果，content为空。
 
         :return: The content of this ShowSqlResultResponse.
         :rtype: list[list[str]]
@@ -205,7 +205,7 @@ class ShowSqlResultResponse(SdkResponse):
     def content(self, content):
         """Sets the content of this ShowSqlResultResponse.
 
-        SQL的执行结果。  说明： 只有非select的语句才会在content中返回结果，如果SQL中没有结果，content为空。
+        SQL的执行结果。 说明： 只有非select的语句才会在content中返回结果，如果SQL中没有结果，content为空。
 
         :param content: The content of this ShowSqlResultResponse.
         :type content: list[list[str]]

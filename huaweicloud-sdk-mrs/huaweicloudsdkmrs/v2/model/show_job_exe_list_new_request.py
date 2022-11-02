@@ -65,7 +65,7 @@ class ShowJobExeListNewRequest:
         :type job_id: str
         :param user: 用户名称、只能由字母、数字、特殊字符(-_.)组成，且不能以数字开头，并且长度为1～32字符。
         :type user: str
-        :param job_type: 作业类型。 - MapReduce - SparkSubmit - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
+        :param job_type: 作业类型。 - MapReduce - SparkPython - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
         :type job_type: str
         :param job_state: 作业运行状态。 - FAILED：失败 - KILLED：已终止 - NEW：已创建 - NEW_SAVING：已创建保存中 - SUBMITTED：已提交 - ACCEPTED：已接受 - RUNNING：运行中 - FINISHED：已完成
         :type job_state: str
@@ -75,7 +75,7 @@ class ShowJobExeListNewRequest:
         :type queue: str
         :param limit: 返回结果中每页显示条数。缺省值：10
         :type limit: str
-        :param offset: 表示作业列表从该偏移量开始查询。缺省值：1
+        :param offset: 表示作业列表从该偏移量开始查询。缺省值：0
         :type offset: str
         :param sort_by: 返回结果的排序方式，默认值为desc。 - asc：按升序排列 - desc：按降序排列
         :type sort_by: str
@@ -220,7 +220,7 @@ class ShowJobExeListNewRequest:
     def job_type(self):
         """Gets the job_type of this ShowJobExeListNewRequest.
 
-        作业类型。 - MapReduce - SparkSubmit - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
+        作业类型。 - MapReduce - SparkPython - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
 
         :return: The job_type of this ShowJobExeListNewRequest.
         :rtype: str
@@ -231,7 +231,7 @@ class ShowJobExeListNewRequest:
     def job_type(self, job_type):
         """Sets the job_type of this ShowJobExeListNewRequest.
 
-        作业类型。 - MapReduce - SparkSubmit - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
+        作业类型。 - MapReduce - SparkPython - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
 
         :param job_type: The job_type of this ShowJobExeListNewRequest.
         :type job_type: str
@@ -330,7 +330,7 @@ class ShowJobExeListNewRequest:
     def offset(self):
         """Gets the offset of this ShowJobExeListNewRequest.
 
-        表示作业列表从该偏移量开始查询。缺省值：1
+        表示作业列表从该偏移量开始查询。缺省值：0
 
         :return: The offset of this ShowJobExeListNewRequest.
         :rtype: str
@@ -341,7 +341,7 @@ class ShowJobExeListNewRequest:
     def offset(self, offset):
         """Sets the offset of this ShowJobExeListNewRequest.
 
-        表示作业列表从该偏移量开始查询。缺省值：1
+        表示作业列表从该偏移量开始查询。缺省值：0
 
         :param offset: The offset of this ShowJobExeListNewRequest.
         :type offset: str

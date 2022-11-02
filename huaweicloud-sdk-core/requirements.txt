@@ -1,5 +1,5 @@
 requests_futures
-requests-toolbelt == 0.9.1
+requests-toolbelt == 0.10.1
 simplejson <= 3.17.0
 six >= 1.16.0
 PyYAML >= 5.4.1

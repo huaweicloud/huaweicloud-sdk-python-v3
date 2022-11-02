@@ -3,7 +3,7 @@
 from __future__ import absolute_import
 
 # import models into model package
-from huaweicloudsdkmrs.v1.model.add_jobs import AddJobs
+from huaweicloudsdkmrs.v1.model.add_jobs_req_v11 import AddJobsReqV11
 from huaweicloudsdkmrs.v1.model.auto_scaling_policy import AutoScalingPolicy
 from huaweicloudsdkmrs.v1.model.auto_scaling_policy_req_v11 import AutoScalingPolicyReqV11
 from huaweicloudsdkmrs.v1.model.batch_create_cluster_tags_req import BatchCreateClusterTagsReq
@@ -13,15 +13,14 @@ from huaweicloudsdkmrs.v1.model.batch_delete_cluster_tags_req import BatchDelete
 from huaweicloudsdkmrs.v1.model.batch_delete_cluster_tags_request import BatchDeleteClusterTagsRequest
 from huaweicloudsdkmrs.v1.model.batch_delete_cluster_tags_response import BatchDeleteClusterTagsResponse
 from huaweicloudsdkmrs.v1.model.bootstrap_script import BootstrapScript
-from huaweicloudsdkmrs.v1.model.bootstrap_script_resp import BootstrapScriptResp
 from huaweicloudsdkmrs.v1.model.cluster import Cluster
 from huaweicloudsdkmrs.v1.model.cluster_scaling_params import ClusterScalingParams
 from huaweicloudsdkmrs.v1.model.cluster_scaling_req import ClusterScalingReq
 from huaweicloudsdkmrs.v1.model.component_amb import ComponentAmb
-from huaweicloudsdkmrs.v1.model.component_list import ComponentList
+from huaweicloudsdkmrs.v1.model.component_amb_v11 import ComponentAmbV11
 from huaweicloudsdkmrs.v1.model.create_and_execute_job_request import CreateAndExecuteJobRequest
 from huaweicloudsdkmrs.v1.model.create_and_execute_job_response import CreateAndExecuteJobResponse
-from huaweicloudsdkmrs.v1.model.create_cluster_req import CreateClusterReq
+from huaweicloudsdkmrs.v1.model.create_cluster_req_v11 import CreateClusterReqV11
 from huaweicloudsdkmrs.v1.model.create_cluster_request import CreateClusterRequest
 from huaweicloudsdkmrs.v1.model.create_cluster_response import CreateClusterResponse
 from huaweicloudsdkmrs.v1.model.create_cluster_tag_request import CreateClusterTagRequest
@@ -55,7 +54,7 @@ from huaweicloudsdkmrs.v1.model.match import Match
 from huaweicloudsdkmrs.v1.model.node_group_v10 import NodeGroupV10
 from huaweicloudsdkmrs.v1.model.node_group_v11 import NodeGroupV11
 from huaweicloudsdkmrs.v1.model.resources_plan import ResourcesPlan
-from huaweicloudsdkmrs.v1.model.rules import Rules
+from huaweicloudsdkmrs.v1.model.rule import Rule
 from huaweicloudsdkmrs.v1.model.scale_script import ScaleScript
 from huaweicloudsdkmrs.v1.model.show_cluster_details_request import ShowClusterDetailsRequest
 from huaweicloudsdkmrs.v1.model.show_cluster_details_response import ShowClusterDetailsResponse
@@ -65,7 +64,7 @@ from huaweicloudsdkmrs.v1.model.submit_job_req_v11 import SubmitJobReqV11
 from huaweicloudsdkmrs.v1.model.tag import Tag
 from huaweicloudsdkmrs.v1.model.tag_plain import TagPlain
 from huaweicloudsdkmrs.v1.model.tag_with_multi_value import TagWithMultiValue
-from huaweicloudsdkmrs.v1.model.task_node_groups import TaskNodeGroups
+from huaweicloudsdkmrs.v1.model.task_node_group import TaskNodeGroup
 from huaweicloudsdkmrs.v1.model.task_node_info import TaskNodeInfo
 from huaweicloudsdkmrs.v1.model.trigger import Trigger
 from huaweicloudsdkmrs.v1.model.update_cluster_scaling_request import UpdateClusterScalingRequest

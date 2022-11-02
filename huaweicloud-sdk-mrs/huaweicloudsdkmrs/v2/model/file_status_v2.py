@@ -67,7 +67,7 @@ class FileStatusV2:
         :type block_size: int
         :param length: 文件长度。
         :type length: int
-        :param type: 文件类型：  - FILE：文件  - DIRECTORY：目录
+        :param type: 文件类型： - FILE：文件 - DIRECTORY：目录
         :type type: str
         :param children_num: 该目录下的文件条目数。
         :type children_num: int
@@ -273,7 +273,7 @@ class FileStatusV2:
     def type(self):
         """Gets the type of this FileStatusV2.
 
-        文件类型：  - FILE：文件  - DIRECTORY：目录
+        文件类型： - FILE：文件 - DIRECTORY：目录
 
         :return: The type of this FileStatusV2.
         :rtype: str
@@ -284,7 +284,7 @@ class FileStatusV2:
     def type(self, type):
         """Sets the type of this FileStatusV2.
 
-        文件类型：  - FILE：文件  - DIRECTORY：目录
+        文件类型： - FILE：文件 - DIRECTORY：目录
 
         :param type: The type of this FileStatusV2.
         :type type: str

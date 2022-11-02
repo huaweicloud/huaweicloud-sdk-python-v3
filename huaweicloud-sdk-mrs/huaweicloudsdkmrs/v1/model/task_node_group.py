@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class TaskNodeGroups:
+class TaskNodeGroup:
 
     """
     Attributes:
@@ -39,7 +39,7 @@ class TaskNodeGroups:
     }
 
     def __init__(self, node_num=None, node_size=None, data_volume_type=None, data_volume_count=None, data_volume_size=None, auto_scaling_policy=None):
-        """TaskNodeGroups
+        """TaskNodeGroup
 
         The model defined in huaweicloud sdk
 
@@ -77,130 +77,130 @@ class TaskNodeGroups:
 
     @property
     def node_num(self):
-        """Gets the node_num of this TaskNodeGroups.
+        """Gets the node_num of this TaskNodeGroup.
 
         Task节点节点数量，取值范围0～500，Core与Task节点总数最大为500个。
 
-        :return: The node_num of this TaskNodeGroups.
+        :return: The node_num of this TaskNodeGroup.
         :rtype: int
         """
         return self._node_num
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this TaskNodeGroups.
+        """Sets the node_num of this TaskNodeGroup.
 
         Task节点节点数量，取值范围0～500，Core与Task节点总数最大为500个。
 
-        :param node_num: The node_num of this TaskNodeGroups.
+        :param node_num: The node_num of this TaskNodeGroup.
         :type node_num: int
         """
         self._node_num = node_num
 
     @property
     def node_size(self):
-        """Gets the node_size of this TaskNodeGroups.
+        """Gets the node_size of this TaskNodeGroup.
 
         Task节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
-        :return: The node_size of this TaskNodeGroups.
+        :return: The node_size of this TaskNodeGroup.
         :rtype: str
         """
         return self._node_size
 
     @node_size.setter
     def node_size(self, node_size):
-        """Sets the node_size of this TaskNodeGroups.
+        """Sets the node_size of this TaskNodeGroup.
 
         Task节点的实例规格，例如：c3.4xlarge.2.linux.bigdata。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
-        :param node_size: The node_size of this TaskNodeGroups.
+        :param node_size: The node_size of this TaskNodeGroup.
         :type node_size: str
         """
         self._node_size = node_size
 
     @property
     def data_volume_type(self):
-        """Gets the data_volume_type of this TaskNodeGroups.
+        """Gets the data_volume_type of this TaskNodeGroup.
 
         Task节点数据磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
 
-        :return: The data_volume_type of this TaskNodeGroups.
+        :return: The data_volume_type of this TaskNodeGroup.
         :rtype: str
         """
         return self._data_volume_type
 
     @data_volume_type.setter
     def data_volume_type(self, data_volume_type):
-        """Sets the data_volume_type of this TaskNodeGroups.
+        """Sets the data_volume_type of this TaskNodeGroup.
 
         Task节点数据磁盘存储类别，目前支持SATA、SAS和SSD。 - SATA：普通IO - SAS：高IO - SSD：超高IO - GPSSD：通用型SSD
 
-        :param data_volume_type: The data_volume_type of this TaskNodeGroups.
+        :param data_volume_type: The data_volume_type of this TaskNodeGroup.
         :type data_volume_type: str
         """
         self._data_volume_type = data_volume_type
 
     @property
     def data_volume_count(self):
-        """Gets the data_volume_count of this TaskNodeGroups.
+        """Gets the data_volume_count of this TaskNodeGroup.
 
         Task节点数据磁盘存储数目，取值范围：0～10。
 
-        :return: The data_volume_count of this TaskNodeGroups.
+        :return: The data_volume_count of this TaskNodeGroup.
         :rtype: int
         """
         return self._data_volume_count
 
     @data_volume_count.setter
     def data_volume_count(self, data_volume_count):
-        """Sets the data_volume_count of this TaskNodeGroups.
+        """Sets the data_volume_count of this TaskNodeGroup.
 
         Task节点数据磁盘存储数目，取值范围：0～10。
 
-        :param data_volume_count: The data_volume_count of this TaskNodeGroups.
+        :param data_volume_count: The data_volume_count of this TaskNodeGroup.
         :type data_volume_count: int
         """
         self._data_volume_count = data_volume_count
 
     @property
     def data_volume_size(self):
-        """Gets the data_volume_size of this TaskNodeGroups.
+        """Gets the data_volume_size of this TaskNodeGroup.
 
         Task节点数据磁盘存储大小。  取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 
-        :return: The data_volume_size of this TaskNodeGroups.
+        :return: The data_volume_size of this TaskNodeGroup.
         :rtype: int
         """
         return self._data_volume_size
 
     @data_volume_size.setter
     def data_volume_size(self, data_volume_size):
-        """Sets the data_volume_size of this TaskNodeGroups.
+        """Sets the data_volume_size of this TaskNodeGroup.
 
         Task节点数据磁盘存储大小。  取值范围：100GB～32000GB，传值只需填数字，不需要带单位GB。
 
-        :param data_volume_size: The data_volume_size of this TaskNodeGroups.
+        :param data_volume_size: The data_volume_size of this TaskNodeGroup.
         :type data_volume_size: int
         """
         self._data_volume_size = data_volume_size
 
     @property
     def auto_scaling_policy(self):
-        """Gets the auto_scaling_policy of this TaskNodeGroups.
+        """Gets the auto_scaling_policy of this TaskNodeGroup.
 
 
-        :return: The auto_scaling_policy of this TaskNodeGroups.
+        :return: The auto_scaling_policy of this TaskNodeGroup.
         :rtype: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicy`
         """
         return self._auto_scaling_policy
 
     @auto_scaling_policy.setter
     def auto_scaling_policy(self, auto_scaling_policy):
-        """Sets the auto_scaling_policy of this TaskNodeGroups.
+        """Sets the auto_scaling_policy of this TaskNodeGroup.
 
 
-        :param auto_scaling_policy: The auto_scaling_policy of this TaskNodeGroups.
+        :param auto_scaling_policy: The auto_scaling_policy of this TaskNodeGroup.
         :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicy`
         """
         self._auto_scaling_policy = auto_scaling_policy
@@ -247,7 +247,7 @@ class TaskNodeGroups:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TaskNodeGroups):
+        if not isinstance(other, TaskNodeGroup):
             return False
 
         return self.__dict__ == other.__dict__

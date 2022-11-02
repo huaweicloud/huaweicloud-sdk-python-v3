@@ -49,7 +49,7 @@ class UpdateAclStrategyV2Response(SdkResponse):
         :type acl_type: str
         :param acl_value: ACL策略值
         :type acl_value: str
-        :param entity_type: 对象类型： - IP - DOMAIN
+        :param entity_type: 对象类型： - IP - DOMAIN - DOMAIN_ID
         :type entity_type: str
         :param id: 编号
         :type id: str
@@ -150,7 +150,7 @@ class UpdateAclStrategyV2Response(SdkResponse):
     def entity_type(self):
         """Gets the entity_type of this UpdateAclStrategyV2Response.
 
-        对象类型： - IP - DOMAIN
+        对象类型： - IP - DOMAIN - DOMAIN_ID
 
         :return: The entity_type of this UpdateAclStrategyV2Response.
         :rtype: str
@@ -161,7 +161,7 @@ class UpdateAclStrategyV2Response(SdkResponse):
     def entity_type(self, entity_type):
         """Sets the entity_type of this UpdateAclStrategyV2Response.
 
-        对象类型： - IP - DOMAIN
+        对象类型： - IP - DOMAIN - DOMAIN_ID
 
         :param entity_type: The entity_type of this UpdateAclStrategyV2Response.
         :type entity_type: str

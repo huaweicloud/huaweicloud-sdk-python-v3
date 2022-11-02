@@ -4,11 +4,11 @@ import re
 import six
 
 
-
+from huaweicloudsdkcore.sdk_response import SdkResponse
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ComponentList:
+class ListPostgresqlExtensionResponse(SdkResponse):
 
     """
     Attributes:
@@ -21,50 +21,78 @@ class ComponentList:
     sensitive_list = []
 
     openapi_types = {
-        'component_name': 'str'
+        'extensions': 'list[ExtensionsResponse]',
+        'total_count': 'int'
     }
 
     attribute_map = {
-        'component_name': 'component_name'
+        'extensions': 'extensions',
+        'total_count': 'total_count'
     }
 
-    def __init__(self, component_name=None):
-        """ComponentList
+    def __init__(self, extensions=None, total_count=None):
+        """ListPostgresqlExtensionResponse
 
         The model defined in huaweicloud sdk
 
-        :param component_name: 组件名称
-        :type component_name: str
+        :param extensions: 
+        :type extensions: list[:class:`huaweicloudsdkrds.v3.ExtensionsResponse`]
+        :param total_count: 总插件数。
+        :type total_count: int
         """
         
-        
+        super(ListPostgresqlExtensionResponse, self).__init__()
 
-        self._component_name = None
+        self._extensions = None
+        self._total_count = None
         self.discriminator = None
 
-        self.component_name = component_name
+        if extensions is not None:
+            self.extensions = extensions
+        if total_count is not None:
+            self.total_count = total_count
 
     @property
-    def component_name(self):
-        """Gets the component_name of this ComponentList.
+    def extensions(self):
+        """Gets the extensions of this ListPostgresqlExtensionResponse.
 
-        组件名称
 
-        :return: The component_name of this ComponentList.
-        :rtype: str
+        :return: The extensions of this ListPostgresqlExtensionResponse.
+        :rtype: list[:class:`huaweicloudsdkrds.v3.ExtensionsResponse`]
         """
-        return self._component_name
+        return self._extensions
 
-    @component_name.setter
-    def component_name(self, component_name):
-        """Sets the component_name of this ComponentList.
+    @extensions.setter
+    def extensions(self, extensions):
+        """Sets the extensions of this ListPostgresqlExtensionResponse.
 
-        组件名称
 
-        :param component_name: The component_name of this ComponentList.
-        :type component_name: str
+        :param extensions: The extensions of this ListPostgresqlExtensionResponse.
+        :type extensions: list[:class:`huaweicloudsdkrds.v3.ExtensionsResponse`]
         """
-        self._component_name = component_name
+        self._extensions = extensions
+
+    @property
+    def total_count(self):
+        """Gets the total_count of this ListPostgresqlExtensionResponse.
+
+        总插件数。
+
+        :return: The total_count of this ListPostgresqlExtensionResponse.
+        :rtype: int
+        """
+        return self._total_count
+
+    @total_count.setter
+    def total_count(self, total_count):
+        """Sets the total_count of this ListPostgresqlExtensionResponse.
+
+        总插件数。
+
+        :param total_count: The total_count of this ListPostgresqlExtensionResponse.
+        :type total_count: int
+        """
+        self._total_count = total_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -108,7 +136,7 @@ class ComponentList:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ComponentList):
+        if not isinstance(other, ListPostgresqlExtensionResponse):
             return False
 
         return self.__dict__ == other.__dict__

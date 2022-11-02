@@ -71,13 +71,13 @@ class JobQueryBean:
         :type user: str
         :param job_name: 作业名称。
         :type job_name: str
-        :param job_result: 作业最终结果。  - FAILED：执行失败的作业 - KILLED：执行中被手动终止的作业。 - UNDEFINED：正在执行的作业。 - SUCCEEDED：执行成功的作业。
+        :param job_result: 作业最终结果。 - FAILED：执行失败的作业 - KILLED：执行中被手动终止的作业。 - UNDEFINED：正在执行的作业。 - SUCCEEDED：执行成功的作业。
         :type job_result: str
         :param job_state: 作业执行状态。  - FAILED：失败 - KILLED：已终止 - NEW：已创建 - NEW_SAVING：已创建保存中 - SUBMITTED：已提交 - ACCEPTED：已接受 - RUNNING：运行中 - FINISHED：已完成
         :type job_state: str
         :param job_progress: 作业执行进度。
         :type job_progress: float
-        :param job_type: 作业类型。  - MapReduce - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
+        :param job_type: 作业类型。 - MapReduce - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
         :type job_type: str
         :param started_time: 作业开始执行时间。单位：毫秒。
         :type started_time: int
@@ -95,7 +95,7 @@ class JobQueryBean:
         :type properties: str
         :param app_id: 实际作业编号。
         :type app_id: str
-        :param tracking_url: 日志链接地址。当前仅SparkSubmit作业支持该参数。  该参数基于集群的EIP访问集群中的YARN WebUI页面，用户如果在VPC界面解绑EIP，MRS服务侧数据会因为未更新导致该参数引用旧EIP导致访问失败，可通过对集群重新进行EIP的绑定来修复该问题。
+        :param tracking_url:  日志链接地址。当前仅SparkSubmit作业支持该参数。 该参数基于集群的EIP访问集群中的YARN WebUI页面，用户如果在VPC界面解绑EIP，MRS服务侧数据会因为未更新导致该参数引用旧EIP导致访问失败，可通过对集群重新进行EIP的绑定来修复该问题。
         :type tracking_url: str
         :param queue: 作业的资源对列类型。
         :type queue: str
@@ -227,7 +227,7 @@ class JobQueryBean:
     def job_result(self):
         """Gets the job_result of this JobQueryBean.
 
-        作业最终结果。  - FAILED：执行失败的作业 - KILLED：执行中被手动终止的作业。 - UNDEFINED：正在执行的作业。 - SUCCEEDED：执行成功的作业。
+        作业最终结果。 - FAILED：执行失败的作业 - KILLED：执行中被手动终止的作业。 - UNDEFINED：正在执行的作业。 - SUCCEEDED：执行成功的作业。
 
         :return: The job_result of this JobQueryBean.
         :rtype: str
@@ -238,7 +238,7 @@ class JobQueryBean:
     def job_result(self, job_result):
         """Sets the job_result of this JobQueryBean.
 
-        作业最终结果。  - FAILED：执行失败的作业 - KILLED：执行中被手动终止的作业。 - UNDEFINED：正在执行的作业。 - SUCCEEDED：执行成功的作业。
+        作业最终结果。 - FAILED：执行失败的作业 - KILLED：执行中被手动终止的作业。 - UNDEFINED：正在执行的作业。 - SUCCEEDED：执行成功的作业。
 
         :param job_result: The job_result of this JobQueryBean.
         :type job_result: str
@@ -293,7 +293,7 @@ class JobQueryBean:
     def job_type(self):
         """Gets the job_type of this JobQueryBean.
 
-        作业类型。  - MapReduce - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
+        作业类型。 - MapReduce - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
 
         :return: The job_type of this JobQueryBean.
         :rtype: str
@@ -304,7 +304,7 @@ class JobQueryBean:
     def job_type(self, job_type):
         """Sets the job_type of this JobQueryBean.
 
-        作业类型。  - MapReduce - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
+        作业类型。 - MapReduce - SparkSubmit：SparkPython类型的作业在查询时作业类型请选择SparkSubmit。 - HiveScript - HiveSql - DistCp，导入、导出数据。 - SparkScript - SparkSql - Flink
 
         :param job_type: The job_type of this JobQueryBean.
         :type job_type: str
@@ -491,7 +491,7 @@ class JobQueryBean:
     def tracking_url(self):
         """Gets the tracking_url of this JobQueryBean.
 
-        日志链接地址。当前仅SparkSubmit作业支持该参数。  该参数基于集群的EIP访问集群中的YARN WebUI页面，用户如果在VPC界面解绑EIP，MRS服务侧数据会因为未更新导致该参数引用旧EIP导致访问失败，可通过对集群重新进行EIP的绑定来修复该问题。
+         日志链接地址。当前仅SparkSubmit作业支持该参数。 该参数基于集群的EIP访问集群中的YARN WebUI页面，用户如果在VPC界面解绑EIP，MRS服务侧数据会因为未更新导致该参数引用旧EIP导致访问失败，可通过对集群重新进行EIP的绑定来修复该问题。
 
         :return: The tracking_url of this JobQueryBean.
         :rtype: str
@@ -502,7 +502,7 @@ class JobQueryBean:
     def tracking_url(self, tracking_url):
         """Sets the tracking_url of this JobQueryBean.
 
-        日志链接地址。当前仅SparkSubmit作业支持该参数。  该参数基于集群的EIP访问集群中的YARN WebUI页面，用户如果在VPC界面解绑EIP，MRS服务侧数据会因为未更新导致该参数引用旧EIP导致访问失败，可通过对集群重新进行EIP的绑定来修复该问题。
+         日志链接地址。当前仅SparkSubmit作业支持该参数。 该参数基于集群的EIP访问集群中的YARN WebUI页面，用户如果在VPC界面解绑EIP，MRS服务侧数据会因为未更新导致该参数引用旧EIP导致访问失败，可通过对集群重新进行EIP的绑定来修复该问题。
 
         :param tracking_url: The tracking_url of this JobQueryBean.
         :type tracking_url: str
