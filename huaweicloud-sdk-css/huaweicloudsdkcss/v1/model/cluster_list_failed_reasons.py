@@ -26,8 +26,8 @@ class ClusterListFailedReasons:
     }
 
     attribute_map = {
-        'error_code': 'error_code',
-        'error_msg': 'error_msg'
+        'error_code': 'errorCode',
+        'error_msg': 'errorMsg'
     }
 
     def __init__(self, error_code=None, error_msg=None):

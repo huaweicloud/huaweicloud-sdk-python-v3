@@ -37,7 +37,7 @@ class GeneralTextResult:
 
         The model defined in huaweicloud sdk
 
-        :param direction: 图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 360)。当detect_direction为false时，该字段值为 -1。 
+        :param direction: 图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 359],保留四位小数。 当detect_direction为false时，该字段值为 -1。 
         :type direction: float
         :param words_block_count: 识别文字块数目。 
         :type words_block_count: int
@@ -60,7 +60,7 @@ class GeneralTextResult:
     def direction(self):
         """Gets the direction of this GeneralTextResult.
 
-        图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 360)。当detect_direction为false时，该字段值为 -1。 
+        图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 359],保留四位小数。 当detect_direction为false时，该字段值为 -1。 
 
         :return: The direction of this GeneralTextResult.
         :rtype: float
@@ -71,7 +71,7 @@ class GeneralTextResult:
     def direction(self, direction):
         """Sets the direction of this GeneralTextResult.
 
-        图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 360)。当detect_direction为false时，该字段值为 -1。 
+        图片朝向，仅当detect_direction为true时，该字段有效。返回图片逆时针旋转角度，值区间为[0， 359],保留四位小数。 当detect_direction为false时，该字段值为 -1。 
 
         :param direction: The direction of this GeneralTextResult.
         :type direction: float

@@ -1675,7 +1675,7 @@ class OcrAsyncClient(Client):
             request_type=request.__class__.__name__)
 
     def recognize_qualification_certificate_async(self, request):
-        """从业资格证识别
+        """道路运输从业资格证识别
 
         识别道路运输从业资格证上的关键文字信息，并返回识别的结构化结果。
         

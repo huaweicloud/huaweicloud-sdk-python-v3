@@ -35,7 +35,7 @@ class RecyclePolicy:
 
         The model defined in huaweicloud sdk
 
-        :param enabled: 是否打开回收策略 - true 打开回收策略 - false 不打开回收策略
+        :param enabled: 打开回收策略，不可关闭 - true 打开回收策略
         :type enabled: bool
         :param retention_period_in_days: 策略保持时长（1-7天），天数为正整数，不填默认保留7天
         :type retention_period_in_days: int
@@ -55,7 +55,7 @@ class RecyclePolicy:
     def enabled(self):
         """Gets the enabled of this RecyclePolicy.
 
-        是否打开回收策略 - true 打开回收策略 - false 不打开回收策略
+        打开回收策略，不可关闭 - true 打开回收策略
 
         :return: The enabled of this RecyclePolicy.
         :rtype: bool
@@ -66,7 +66,7 @@ class RecyclePolicy:
     def enabled(self, enabled):
         """Sets the enabled of this RecyclePolicy.
 
-        是否打开回收策略 - true 打开回收策略 - false 不打开回收策略
+        打开回收策略，不可关闭 - true 打开回收策略
 
         :param enabled: The enabled of this RecyclePolicy.
         :type enabled: bool

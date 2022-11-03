@@ -75,7 +75,7 @@ class CustomerInformation:
         :type label: str
         :param telephone: 客户电话号码。
         :type telephone: str
-        :param verified_status: 实名认证状态： -1：未实名认证0：实名认证审核中1：实名认证不通过2：已实名认证3：实名认证失败
+        :param verified_status: 实名认证状态： -1：未实名认证0：实名认证审核中1：实名认证不通过2：已实名认证
         :type verified_status: str
         :param country_code: 国家码，电话号码的国家码前缀。 例如：中国 0086。
         :type country_code: str
@@ -299,7 +299,7 @@ class CustomerInformation:
     def verified_status(self):
         """Gets the verified_status of this CustomerInformation.
 
-        实名认证状态： -1：未实名认证0：实名认证审核中1：实名认证不通过2：已实名认证3：实名认证失败
+        实名认证状态： -1：未实名认证0：实名认证审核中1：实名认证不通过2：已实名认证
 
         :return: The verified_status of this CustomerInformation.
         :rtype: str
@@ -310,7 +310,7 @@ class CustomerInformation:
     def verified_status(self, verified_status):
         """Sets the verified_status of this CustomerInformation.
 
-        实名认证状态： -1：未实名认证0：实名认证审核中1：实名认证不通过2：已实名认证3：实名认证失败
+        实名认证状态： -1：未实名认证0：实名认证审核中1：实名认证不通过2：已实名认证
 
         :param verified_status: The verified_status of this CustomerInformation.
         :type verified_status: str

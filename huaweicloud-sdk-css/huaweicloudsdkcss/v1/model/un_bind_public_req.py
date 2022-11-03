@@ -21,7 +21,7 @@ class UnBindPublicReq:
     sensitive_list = []
 
     openapi_types = {
-        'eip': 'BindPublicReqEipReq'
+        'eip': 'UnBindPublicReqEipReq'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class UnBindPublicReq:
         The model defined in huaweicloud sdk
 
         :param eip: 
-        :type eip: :class:`huaweicloudsdkcss.v1.BindPublicReqEipReq`
+        :type eip: :class:`huaweicloudsdkcss.v1.UnBindPublicReqEipReq`
         """
         
         
@@ -42,7 +42,8 @@ class UnBindPublicReq:
         self._eip = None
         self.discriminator = None
 
-        self.eip = eip
+        if eip is not None:
+            self.eip = eip
 
     @property
     def eip(self):
@@ -50,7 +51,7 @@ class UnBindPublicReq:
 
 
         :return: The eip of this UnBindPublicReq.
-        :rtype: :class:`huaweicloudsdkcss.v1.BindPublicReqEipReq`
+        :rtype: :class:`huaweicloudsdkcss.v1.UnBindPublicReqEipReq`
         """
         return self._eip
 
@@ -60,7 +61,7 @@ class UnBindPublicReq:
 
 
         :param eip: The eip of this UnBindPublicReq.
-        :type eip: :class:`huaweicloudsdkcss.v1.BindPublicReqEipReq`
+        :type eip: :class:`huaweicloudsdkcss.v1.UnBindPublicReqEipReq`
         """
         self._eip = eip
 

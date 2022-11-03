@@ -47,7 +47,14 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         'can_copy': 'bool',
         'can_manage': 'bool',
         'app_component_list': 'list[AppComponentDao]',
-        'role_id': 'int'
+        'role_id': 'int',
+        'id': 'str',
+        'release_id': 'int',
+        'duration': 'str',
+        'execution_state': 'str',
+        'executor_id': 'str',
+        'executor_nick_name': 'str',
+        'steps': 'dict(str, Step)'
     }
 
     attribute_map = {
@@ -77,10 +84,17 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         'can_copy': 'can_copy',
         'can_manage': 'can_manage',
         'app_component_list': 'app_component_list',
-        'role_id': 'role_id'
+        'role_id': 'role_id',
+        'id': 'id',
+        'release_id': 'release_id',
+        'duration': 'duration',
+        'execution_state': 'execution_state',
+        'executor_id': 'executor_id',
+        'executor_nick_name': 'executor_nick_name',
+        'steps': 'steps'
     }
 
-    def __init__(self, task_id=None, name=None, project_id=None, project_name=None, deploy_system=None, create_time=None, update_time=None, state=None, execution_time=None, description=None, is_defaut_permission=None, template_id=None, owner=None, nick_name=None, owner_id=None, tenant_id=None, tenant_name=None, slave_cluster_id=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, app_component_list=None, role_id=None):
+    def __init__(self, task_id=None, name=None, project_id=None, project_name=None, deploy_system=None, create_time=None, update_time=None, state=None, execution_time=None, description=None, is_defaut_permission=None, template_id=None, owner=None, nick_name=None, owner_id=None, tenant_id=None, tenant_name=None, slave_cluster_id=None, is_care=None, can_modify=None, can_delete=None, can_view=None, can_execute=None, can_copy=None, can_manage=None, app_component_list=None, role_id=None, id=None, release_id=None, duration=None, execution_state=None, executor_id=None, executor_nick_name=None, steps=None):
         """ShowDeployTaskDetailResponse
 
         The model defined in huaweicloud sdk
@@ -139,6 +153,20 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         :type app_component_list: list[:class:`huaweicloudsdkclouddeploy.v2.AppComponentDao`]
         :param role_id: 角色ID,0：部署任务创建者，-1：项目创建者，3：项目经理，4：开发人员，5：测试经理，6：测试人员，7：参与者，8：浏览者
         :type role_id: int
+        :param id: 部署任务id
+        :type id: str
+        :param release_id: 任务序列id
+        :type release_id: int
+        :param duration: 执行时间
+        :type duration: str
+        :param execution_state: 执行状态
+        :type execution_state: str
+        :param executor_id: 执行者id
+        :type executor_id: str
+        :param executor_nick_name: 执行者名称
+        :type executor_nick_name: str
+        :param steps: 执行步骤
+        :type steps: dict(str, Step)
         """
         
         super(ShowDeployTaskDetailResponse, self).__init__()
@@ -170,6 +198,13 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         self._can_manage = None
         self._app_component_list = None
         self._role_id = None
+        self._id = None
+        self._release_id = None
+        self._duration = None
+        self._execution_state = None
+        self._executor_id = None
+        self._executor_nick_name = None
+        self._steps = None
         self.discriminator = None
 
         if task_id is not None:
@@ -226,6 +261,20 @@ class ShowDeployTaskDetailResponse(SdkResponse):
             self.app_component_list = app_component_list
         if role_id is not None:
             self.role_id = role_id
+        if id is not None:
+            self.id = id
+        if release_id is not None:
+            self.release_id = release_id
+        if duration is not None:
+            self.duration = duration
+        if execution_state is not None:
+            self.execution_state = execution_state
+        if executor_id is not None:
+            self.executor_id = executor_id
+        if executor_nick_name is not None:
+            self.executor_nick_name = executor_nick_name
+        if steps is not None:
+            self.steps = steps
 
     @property
     def task_id(self):
@@ -820,6 +869,160 @@ class ShowDeployTaskDetailResponse(SdkResponse):
         :type role_id: int
         """
         self._role_id = role_id
+
+    @property
+    def id(self):
+        """Gets the id of this ShowDeployTaskDetailResponse.
+
+        部署任务id
+
+        :return: The id of this ShowDeployTaskDetailResponse.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this ShowDeployTaskDetailResponse.
+
+        部署任务id
+
+        :param id: The id of this ShowDeployTaskDetailResponse.
+        :type id: str
+        """
+        self._id = id
+
+    @property
+    def release_id(self):
+        """Gets the release_id of this ShowDeployTaskDetailResponse.
+
+        任务序列id
+
+        :return: The release_id of this ShowDeployTaskDetailResponse.
+        :rtype: int
+        """
+        return self._release_id
+
+    @release_id.setter
+    def release_id(self, release_id):
+        """Sets the release_id of this ShowDeployTaskDetailResponse.
+
+        任务序列id
+
+        :param release_id: The release_id of this ShowDeployTaskDetailResponse.
+        :type release_id: int
+        """
+        self._release_id = release_id
+
+    @property
+    def duration(self):
+        """Gets the duration of this ShowDeployTaskDetailResponse.
+
+        执行时间
+
+        :return: The duration of this ShowDeployTaskDetailResponse.
+        :rtype: str
+        """
+        return self._duration
+
+    @duration.setter
+    def duration(self, duration):
+        """Sets the duration of this ShowDeployTaskDetailResponse.
+
+        执行时间
+
+        :param duration: The duration of this ShowDeployTaskDetailResponse.
+        :type duration: str
+        """
+        self._duration = duration
+
+    @property
+    def execution_state(self):
+        """Gets the execution_state of this ShowDeployTaskDetailResponse.
+
+        执行状态
+
+        :return: The execution_state of this ShowDeployTaskDetailResponse.
+        :rtype: str
+        """
+        return self._execution_state
+
+    @execution_state.setter
+    def execution_state(self, execution_state):
+        """Sets the execution_state of this ShowDeployTaskDetailResponse.
+
+        执行状态
+
+        :param execution_state: The execution_state of this ShowDeployTaskDetailResponse.
+        :type execution_state: str
+        """
+        self._execution_state = execution_state
+
+    @property
+    def executor_id(self):
+        """Gets the executor_id of this ShowDeployTaskDetailResponse.
+
+        执行者id
+
+        :return: The executor_id of this ShowDeployTaskDetailResponse.
+        :rtype: str
+        """
+        return self._executor_id
+
+    @executor_id.setter
+    def executor_id(self, executor_id):
+        """Sets the executor_id of this ShowDeployTaskDetailResponse.
+
+        执行者id
+
+        :param executor_id: The executor_id of this ShowDeployTaskDetailResponse.
+        :type executor_id: str
+        """
+        self._executor_id = executor_id
+
+    @property
+    def executor_nick_name(self):
+        """Gets the executor_nick_name of this ShowDeployTaskDetailResponse.
+
+        执行者名称
+
+        :return: The executor_nick_name of this ShowDeployTaskDetailResponse.
+        :rtype: str
+        """
+        return self._executor_nick_name
+
+    @executor_nick_name.setter
+    def executor_nick_name(self, executor_nick_name):
+        """Sets the executor_nick_name of this ShowDeployTaskDetailResponse.
+
+        执行者名称
+
+        :param executor_nick_name: The executor_nick_name of this ShowDeployTaskDetailResponse.
+        :type executor_nick_name: str
+        """
+        self._executor_nick_name = executor_nick_name
+
+    @property
+    def steps(self):
+        """Gets the steps of this ShowDeployTaskDetailResponse.
+
+        执行步骤
+
+        :return: The steps of this ShowDeployTaskDetailResponse.
+        :rtype: dict(str, Step)
+        """
+        return self._steps
+
+    @steps.setter
+    def steps(self, steps):
+        """Sets the steps of this ShowDeployTaskDetailResponse.
+
+        执行步骤
+
+        :param steps: The steps of this ShowDeployTaskDetailResponse.
+        :type steps: dict(str, Step)
+        """
+        self._steps = steps
 
     def to_dict(self):
         """Returns the model properties as a dict"""

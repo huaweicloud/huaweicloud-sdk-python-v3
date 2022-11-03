@@ -55,7 +55,7 @@ class Params:
         :type compare_result: str
         :param data_type: 参数类型
         :type data_type: str
-        :param group: 分组
+        :param group: 分组。 - common-常规参数 - performance-性能参数
         :type group: str
         :param key: 参数名
         :type key: str
@@ -156,7 +156,7 @@ class Params:
     def group(self):
         """Gets the group of this Params.
 
-        分组
+        分组。 - common-常规参数 - performance-性能参数
 
         :return: The group of this Params.
         :rtype: str
@@ -167,7 +167,7 @@ class Params:
     def group(self, group):
         """Sets the group of this Params.
 
-        分组
+        分组。 - common-常规参数 - performance-性能参数
 
         :param group: The group of this Params.
         :type group: str

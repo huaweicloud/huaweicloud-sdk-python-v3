@@ -47,7 +47,7 @@ class ListPartnerAccountChangeRecordsRequest:
 
         :param balance_type: 账户类型。BALANCE_TYPE_DEBIT：现金账户,BALANCE_TYPE_CREDIT：信用账户
         :type balance_type: str
-        :param trade_type: 交易类型。RECHARGE：充值,DEDEUCT：消费,REFUND：退款,RFROZEN：冻结,TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）,ADJUST：调账（华为核销等）,BEADJUST：经销商拨款,BERETRIEVE：经销商回收,BEUNBIND：解绑/关联模式切换导致的回收,EXPIRED：过期清零,BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）,TRADE_MODE_TRANSFER：交易模式变更,SYSTEM：系统操作（购买标销合同的伙伴涉及该模式）,COUPONCANCEL：代金券回收 此参数不携带或携带值为空时，不作为筛选条件。
+        :param trade_type: 交易类型。RECHARGE：充值,DEDEUCT：消费,REFUND：退款,RFROZEN：冻结,TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）,ADJUST：调账（华为核销等）,BEADJUST：经销商拨款,BERETRIEVE：经销商回收,BEUNBIND：解绑/关联模式切换导致的回收,BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）,TRADE_MODE_TRANSFER：交易模式变更, 此参数不携带或携带值为空时，不作为筛选条件。
         :type trade_type: str
         :param trade_time_begin: 查询收支明细的开始日期。 说明： 东八区时间，格式为YYYY-MM-DD，如“2017-10-21”。默认值为一年前的当天日期。
         :type trade_time_begin: str
@@ -112,7 +112,7 @@ class ListPartnerAccountChangeRecordsRequest:
     def trade_type(self):
         """Gets the trade_type of this ListPartnerAccountChangeRecordsRequest.
 
-        交易类型。RECHARGE：充值,DEDEUCT：消费,REFUND：退款,RFROZEN：冻结,TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）,ADJUST：调账（华为核销等）,BEADJUST：经销商拨款,BERETRIEVE：经销商回收,BEUNBIND：解绑/关联模式切换导致的回收,EXPIRED：过期清零,BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）,TRADE_MODE_TRANSFER：交易模式变更,SYSTEM：系统操作（购买标销合同的伙伴涉及该模式）,COUPONCANCEL：代金券回收 此参数不携带或携带值为空时，不作为筛选条件。
+        交易类型。RECHARGE：充值,DEDEUCT：消费,REFUND：退款,RFROZEN：冻结,TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）,ADJUST：调账（华为核销等）,BEADJUST：经销商拨款,BERETRIEVE：经销商回收,BEUNBIND：解绑/关联模式切换导致的回收,BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）,TRADE_MODE_TRANSFER：交易模式变更, 此参数不携带或携带值为空时，不作为筛选条件。
 
         :return: The trade_type of this ListPartnerAccountChangeRecordsRequest.
         :rtype: str
@@ -123,7 +123,7 @@ class ListPartnerAccountChangeRecordsRequest:
     def trade_type(self, trade_type):
         """Sets the trade_type of this ListPartnerAccountChangeRecordsRequest.
 
-        交易类型。RECHARGE：充值,DEDEUCT：消费,REFUND：退款,RFROZEN：冻结,TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）,ADJUST：调账（华为核销等）,BEADJUST：经销商拨款,BERETRIEVE：经销商回收,BEUNBIND：解绑/关联模式切换导致的回收,EXPIRED：过期清零,BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）,TRADE_MODE_TRANSFER：交易模式变更,SYSTEM：系统操作（购买标销合同的伙伴涉及该模式）,COUPONCANCEL：代金券回收 此参数不携带或携带值为空时，不作为筛选条件。
+        交易类型。RECHARGE：充值,DEDEUCT：消费,REFUND：退款,RFROZEN：冻结,TRANS：转账，余额和保证金互换（老商务模式，当前已无保证金账户）,ADJUST：调账（华为核销等）,BEADJUST：经销商拨款,BERETRIEVE：经销商回收,BEUNBIND：解绑/关联模式切换导致的回收,BONUSCONVERT：奖励金转换（老商务模式，当前已无奖励金账户）,TRADE_MODE_TRANSFER：交易模式变更, 此参数不携带或携带值为空时，不作为筛选条件。
 
         :param trade_type: The trade_type of this ListPartnerAccountChangeRecordsRequest.
         :type trade_type: str

@@ -45,7 +45,7 @@ class CompareTaskList:
         :type compare_task_id: str
         :param compare_type: 对比任务的类型。
         :type compare_type: str
-        :param compare_task_status: 对比任务的状态。
+        :param compare_task_status: 对比任务的状态。 - RUNNING-运行中 - WAITING_FOR_RUNNING-等待启动中 - SUCCESSFUL-完成 - FAILED-失败 - CANCELLED-已取消 - TIMEOUT_INTERRUPT-超时中断 - FULL_DOING-全量校验中 - INCRE_DOING-增量校验中
         :type compare_task_status: str
         :param create_time: 对比开始时间。
         :type create_time: str
@@ -117,7 +117,7 @@ class CompareTaskList:
     def compare_task_status(self):
         """Gets the compare_task_status of this CompareTaskList.
 
-        对比任务的状态。
+        对比任务的状态。 - RUNNING-运行中 - WAITING_FOR_RUNNING-等待启动中 - SUCCESSFUL-完成 - FAILED-失败 - CANCELLED-已取消 - TIMEOUT_INTERRUPT-超时中断 - FULL_DOING-全量校验中 - INCRE_DOING-增量校验中
 
         :return: The compare_task_status of this CompareTaskList.
         :rtype: str
@@ -128,7 +128,7 @@ class CompareTaskList:
     def compare_task_status(self, compare_task_status):
         """Sets the compare_task_status of this CompareTaskList.
 
-        对比任务的状态。
+        对比任务的状态。 - RUNNING-运行中 - WAITING_FOR_RUNNING-等待启动中 - SUCCESSFUL-完成 - FAILED-失败 - CANCELLED-已取消 - TIMEOUT_INTERRUPT-超时中断 - FULL_DOING-全量校验中 - INCRE_DOING-增量校验中
 
         :param compare_task_status: The compare_task_status of this CompareTaskList.
         :type compare_task_status: str

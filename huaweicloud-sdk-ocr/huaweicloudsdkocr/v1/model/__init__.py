@@ -35,6 +35,7 @@ from huaweicloudsdkocr.v1.model.flight_itinerary_result import FlightItineraryRe
 from huaweicloudsdkocr.v1.model.general_table_request_body import GeneralTableRequestBody
 from huaweicloudsdkocr.v1.model.general_table_result import GeneralTableResult
 from huaweicloudsdkocr.v1.model.general_table_words_block_list import GeneralTableWordsBlockList
+from huaweicloudsdkocr.v1.model.general_text_char_list import GeneralTextCharList
 from huaweicloudsdkocr.v1.model.general_text_request_body import GeneralTextRequestBody
 from huaweicloudsdkocr.v1.model.general_text_result import GeneralTextResult
 from huaweicloudsdkocr.v1.model.general_text_words_block_list import GeneralTextWordsBlockList

@@ -1,3 +1,156 @@
+# 3.1.8 2022-11-03
+
+### HuaweiCloud SDK DevSecurity
+
+- _Features_
+  - Support the service `DevSecurity`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK GA
+
+- _Features_
+  - Support the service `Global accelerator`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CloudDeploy
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `id`, `release_id`, `duration`, `execution_state`, `executor_id`, `executor_nick_name`, `steps` to the interface `ListDeployTasks`
+  - Add the response parameters `update_time`, `lastest_connection_time`, `connection_status`, `owner_name`, `updator_id`, `create_time`, `nick_name`, `owner_id`, `updator_name`, `connection_result` to the interface `ListHosts`
+  - Changes of the interface `ListHostGroups`:
+    - Add the response parameter `updated_by`
+    - Remove the response parameter `update_by`
+  - Changes of the interface `ShowDeploymentGroupDetail`:
+    - Add the response parameter `updated_by`
+    - Remove the response parameter `update_by`
+  - Add the response parameters `update_time`, `lastest_connection_time`, `connection_status`, `owner_name`, `updator_id`, `create_time`, `nick_name`, `owner_id`, `updator_name`, `connection_result` to the interface `ShowDeploymentHostDetail`
+  - Add the response parameters `id`, `release_id`, `duration`, `execution_state`, `executor_id`, `executor_nick_name`, `steps` to the interface `ShowDeployTaskDetail`
+  - Add the response parameter `type` to the interface `ListDeployTaskHistoryByDate`
+  - Changes of the interface `ShowProjectSuccessRate`:
+    - Add the response parameters `start_date`, `end_date`
+    - Remove the response parameters `start_time`, `end_time`
+  - Changes of the interface `ListTaskSuccessRate`:
+    - Add the response parameters `start_date`, `end_date`
+    - Remove the response parameters `start_time`, `end_time`
+
+### HuaweiCloud SDK CSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListClustersDetails`:
+    - Add the response parameter `failedReason`
+    - Remove the response parameter `failed_reasons`
+  - Changes of the interface `ShowClusterDetail`:
+    - Add the response parameter `failedReason`
+    - Remove the response parameter `failed_reasons`
+
+### HuaweiCloud SDK DRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `true`, `false`
+  - Add the enum values `true`, `false`
+  - Add the enum values `up`, `down`, `non-dbs`
+  - Add the enum values `success`, `failed`
+  - Changes of the interface `ListCompareResult`:
+    - Add the enum values `DB`, `TABLE`, `VIEW`, `EVENT`, `ROUTINE`, `INDEX`, `TRIGGER`, `SYNONYM`, `FUNCTION`, `PROCEDURE`, `TYPE`, `RULE`, `DEFAULT_TYPE`, `PLAN_GUIDE`, `CONSTRAINT`, `FILE_GROUP`, `PARTITION_FUNCTION`, `PARTITION_SCHEME`, `TABLE_COLLATION`
+    - Add the enum values `CONSISTENT`, `INCONSISTENT`, `COMPARING`, `WAITING_FOR_COMPARISON`, `FAILED_TO_COMPARE`, `TARGET_DB_NOT_EXIT`, `CAN_NOT_COMPARE`
+    - Add the enum values `CONSISTENT`, `INCONSISTENT`, `COMPARING`, `WAITING_FOR_COMPARISON`, `FAILED_TO_COMPARE`, `TARGET_DB_NOT_EXIT`, `CAN_NOT_COMPARE`
+    - Add the enum values `CONSISTENT`, `INCONSISTENT`, `COMPARING`, `WAITING_FOR_COMPARISON`, `FAILED_TO_COMPARE`, `TARGET_DB_NOT_EXIT`, `CAN_NOT_COMPARE`
+    - Add the enum values `RUNNING`, `WAITING_FOR_RUNNING`, `SUCCESSFUL`, `FAILED`, `CANCELLED`, `TIMEOUT_INTERRUPT`, `FULL_DOING`, `INCRE_DOING`
+  - Add the enum values `FULL_TRANS`, `FULL_INCR_TRANS`, `INCR_TRANS`
+  - Add the enum values `CREATING`, `CREATE_FAILED`, `CONFIGURATION`, `STARTJOBING`, `WAITING_FOR_START`, `START_JOB_FAILED`, `PAUSING`, `FULL_TRANSFER_STARTED`, `FULL_TRANSFER_FAILED`, `FULL_TRANSFER_COMPLETE`, `INCRE_TRANSFER_STARTED`, `INCRE_TRANSFER_FAILED`, `RELEASE_RESOURCE_STARTED`, `RELEASE_RESOURCE_FAILED`, `RELEASE_RESOURCE_COMPLETE`, `REBUILD_NODE_STARTED`, `REBUILD_NODE_FAILED`, `CHANGE_JOB_STARTED`, `CHANGE_JOB_FAILED`, `DELETED`, `CHILD_TRANSFER_STARTING`, `CHILD_TRANSFER_STARTED`, `CHILD_TRANSFER_COMPLETE`, `CHILD_TRANSFER_FAILED`, `RELEASE_CHILD_TRANSFER_STARTED`, `RELEASE_CHILD_TRANSFER_COMPLETE`, `NODE_UPGRADE_START`, `NODE_UPGRADE_COMPLETE`, `NODE_UPGRADE_FAILED`
+  - Changes of the interface `ShowJobList`:
+    - Add the enum values `PAUSING`, `REBUILD_NODE_STARTED`, `REBUILD_NODE_FAILED`, `DELETED`, `NODE_UPGRADE_START`, `NODE_UPGRADE_COMPLETE`, `NODE_UPGRADE_FAILED` to the request parameter `status`
+    - Add the enum values `CREATING`, `CREATE_FAILED`, `CONFIGURATION`, `STARTJOBING`, `WAITING_FOR_START`, `START_JOB_FAILED`, `PAUSING`, `FULL_TRANSFER_STARTED`, `FULL_TRANSFER_FAILED`, `FULL_TRANSFER_COMPLETE`, `INCRE_TRANSFER_STARTED`, `INCRE_TRANSFER_FAILED`, `RELEASE_RESOURCE_STARTED`, `RELEASE_RESOURCE_FAILED`, `RELEASE_RESOURCE_COMPLETE`, `REBUILD_NODE_STARTED`, `REBUILD_NODE_FAILED`, `CHANGE_JOB_STARTED`, `CHANGE_JOB_FAILED`, `DELETED`, `CHILD_TRANSFER_STARTING`, `CHILD_TRANSFER_STARTED`, `CHILD_TRANSFER_COMPLETE`, `CHILD_TRANSFER_FAILED`, `RELEASE_CHILD_TRANSFER_STARTED`, `RELEASE_CHILD_TRANSFER_COMPLETE`, `NODE_UPGRADE_START`, `NODE_UPGRADE_COMPLETE`, `NODE_UPGRADE_FAILED`
+    - Add the enum values `migration`, `sync`, `cloudDataGuard`
+    - Add the enum values `FULL_TRANS`, `FULL_INCR_TRANS`, `INCR_TRANS`
+    - Modify the type `string` -> `enum` of the response parameter `status`
+  - Add the enum values `CREATING`, `CREATE_FAILED`, `CONFIGURATION`, `STARTJOBING`, `WAITING_FOR_START`, `START_JOB_FAILED`, `PAUSING`, `FULL_TRANSFER_STARTED`, `FULL_TRANSFER_FAILED`, `FULL_TRANSFER_COMPLETE`, `INCRE_TRANSFER_STARTED`, `INCRE_TRANSFER_FAILED`, `RELEASE_RESOURCE_STARTED`, `RELEASE_RESOURCE_FAILED`, `RELEASE_RESOURCE_COMPLETE`, `REBUILD_NODE_STARTED`, `REBUILD_NODE_FAILED`, `CHANGE_JOB_STARTED`, `CHANGE_JOB_FAILED`, `DELETED`, `CHILD_TRANSFER_STARTING`, `CHILD_TRANSFER_STARTED`, `CHILD_TRANSFER_COMPLETE`, `CHILD_TRANSFER_FAILED`, `RELEASE_CHILD_TRANSFER_STARTED`, `RELEASE_CHILD_TRANSFER_COMPLETE`, `NODE_UPGRADE_START`, `NODE_UPGRADE_COMPLETE`, `NODE_UPGRADE_FAILED`
+  - Changes of the interface `BatchSwitchover`:
+    - Add the enum values `Sharding`, `ReplicaSet`, `ReplicaSingle`
+    - Add the enum values `Single`, `Ha`, `GR`, `Sharding`, `Sharding4.0+`, `ReplicaSet`, `Replica`, `ReplicaSingle`, `Cluster`, `Independent`, `Combined`, `Distributed`, `NoSharding`
+    - Add the enum values `up`, `down`, `non-dbs`
+
+### HuaweiCloud SDK ECS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The request parameter `destination_type` changed to not required of the interface `NovaCreateServers`
+
+### HuaweiCloud SDK EPS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `region_id` to the interface `MigrateResource`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the interface `ShowGaussMySqlProxy`
+  - Add the request parameter `lower_case_table_names` to the interface `CreateGaussMySqlInstance`
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `RecognizeGeneralText`:
+    - Add the request parameter `character_mode`
+    - Add the response parameters `confidence`, `char_list`
+  - Changes of the interface `RecognizeThailandIdcard`:
+    - Add the request parameter `return_text_location`
+    - Add the response parameter `text_location`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - Support the following interfaces：
+    - `ListInstance`
+    - `CreateInstance`
+    - `ShowInstance`
+    - `RenameInstance`
+    - `DeleteInstance`
+    - `ShowLtsInfoConfig`
+    - `UpdateLtsInfoConfig`
+    - `ListIpGroup`
+    - `CreateIpGroup`
+    - `ShowIpGroup`
+    - `UpdateIpGroup`
+    - `DeleteIpGroup`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.7 2022-11-02
 
 ### HuaweiCloud SDK APIG

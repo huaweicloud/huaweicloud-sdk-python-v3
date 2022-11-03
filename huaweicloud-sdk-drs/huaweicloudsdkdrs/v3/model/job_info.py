@@ -61,7 +61,7 @@ class JobInfo:
         :type id: str
         :param name: 任务名称
         :type name: str
-        :param status: 任务状态
+        :param status: 任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
         :type status: str
         :param description: 任务描述
         :type description: str
@@ -75,9 +75,9 @@ class JobInfo:
         :type billing_tag: bool
         :param job_direction: 迁移方向
         :type job_direction: str
-        :param db_use_type: 迁移场景
+        :param db_use_type: 迁移场景。 - migration:实时迁移 - sync:实时同步 - cloudDataGuard:实时灾备
         :type db_use_type: str
-        :param task_type: 迁移模式
+        :param task_type: 迁移模式。 - FULL_TRANS 全量 - FULL_INCR_TRANS 全量+增量 - INCR_TRANS 增量
         :type task_type: str
         :param children: 子任务信息体
         :type children: list[:class:`huaweicloudsdkdrs.v3.ChildrenJobInfo`]
@@ -165,7 +165,7 @@ class JobInfo:
     def status(self):
         """Gets the status of this JobInfo.
 
-        任务状态
+        任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
 
         :return: The status of this JobInfo.
         :rtype: str
@@ -176,7 +176,7 @@ class JobInfo:
     def status(self, status):
         """Sets the status of this JobInfo.
 
-        任务状态
+        任务状态。 - CREATING：创建中 - CREATE_FAILED：创建失败 - CONFIGURATION：配置中 - STARTJOBING：启动中 - WAITING_FOR_START：等待启动中 - START_JOB_FAILED：启动失败 - PAUSING：已暂停 - FULL_TRANSFER_STARTED：全量开始，灾备场景下为初始化 - FULL_TRANSFER_FAILED：全量失败，灾备场景下为初始化失败 - FULL_TRANSFER_COMPLETE：全量完成，灾备场景下为初始化完成 - INCRE_TRANSFER_STARTED：增量开始，灾备场景下为灾备中 - INCRE_TRANSFER_FAILED：增量失败，灾备场景下为灾备异常 - RELEASE_RESOURCE_STARTED：结束任务中 - RELEASE_RESOURCE_FAILED：结束任务失败 - RELEASE_RESOURCE_COMPLETE：已结束 - REBUILD_NODE_STARTED：故障恢复中 - REBUILD_NODE_FAILED：故障恢复失败 - CHANGE_JOB_STARTED：任务变更中 - CHANGE_JOB_FAILED：任务变更失败 - DELETED：已删除 - CHILD_TRANSFER_STARTING：再编辑子任务启动中 - CHILD_TRANSFER_STARTED：再编辑子任务迁移中 - CHILD_TRANSFER_COMPLETE：再编辑子任务迁移完成 - CHILD_TRANSFER_FAILED：再编辑子任务迁移失败 - RELEASE_CHILD_TRANSFER_STARTED：再编辑子任务结束中 - RELEASE_CHILD_TRANSFER_COMPLETE：再编辑子任务已结束 - NODE_UPGRADE_START：升级开始 - NODE_UPGRADE_COMPLETE：升级完成 - NODE_UPGRADE_FAILED：升级失败
 
         :param status: The status of this JobInfo.
         :type status: str
@@ -319,7 +319,7 @@ class JobInfo:
     def db_use_type(self):
         """Gets the db_use_type of this JobInfo.
 
-        迁移场景
+        迁移场景。 - migration:实时迁移 - sync:实时同步 - cloudDataGuard:实时灾备
 
         :return: The db_use_type of this JobInfo.
         :rtype: str
@@ -330,7 +330,7 @@ class JobInfo:
     def db_use_type(self, db_use_type):
         """Sets the db_use_type of this JobInfo.
 
-        迁移场景
+        迁移场景。 - migration:实时迁移 - sync:实时同步 - cloudDataGuard:实时灾备
 
         :param db_use_type: The db_use_type of this JobInfo.
         :type db_use_type: str
@@ -341,7 +341,7 @@ class JobInfo:
     def task_type(self):
         """Gets the task_type of this JobInfo.
 
-        迁移模式
+        迁移模式。 - FULL_TRANS 全量 - FULL_INCR_TRANS 全量+增量 - INCR_TRANS 增量
 
         :return: The task_type of this JobInfo.
         :rtype: str
@@ -352,7 +352,7 @@ class JobInfo:
     def task_type(self, task_type):
         """Sets the task_type of this JobInfo.
 
-        迁移模式
+        迁移模式。 - FULL_TRANS 全量 - FULL_INCR_TRANS 全量+增量 - INCR_TRANS 增量
 
         :param task_type: The task_type of this JobInfo.
         :type task_type: str

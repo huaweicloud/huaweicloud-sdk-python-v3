@@ -24,17 +24,19 @@ class GeneralTextRequestBody:
         'image': 'str',
         'url': 'str',
         'detect_direction': 'bool',
-        'quick_mode': 'bool'
+        'quick_mode': 'bool',
+        'character_mode': 'bool'
     }
 
     attribute_map = {
         'image': 'image',
         'url': 'url',
         'detect_direction': 'detect_direction',
-        'quick_mode': 'quick_mode'
+        'quick_mode': 'quick_mode',
+        'character_mode': 'character_mode'
     }
 
-    def __init__(self, image=None, url=None, detect_direction=None, quick_mode=None):
+    def __init__(self, image=None, url=None, detect_direction=None, quick_mode=None, character_mode=None):
         """GeneralTextRequestBody
 
         The model defined in huaweicloud sdk
@@ -47,6 +49,8 @@ class GeneralTextRequestBody:
         :type detect_direction: bool
         :param quick_mode: 快速模式开关，针对单行文字图片（要求图片只包含一行文字，且文字区域占比超过50%），打开时可以更快返回识别。可选值包括：  - true：打开快速模式；  - false：关闭快速模式。  &gt; 说明：  - 未传入该参数时默认为false，即关闭快速模式。 
         :type quick_mode: bool
+        :param character_mode: 单字符模式开关。可选值包括： - true：打开单字符模式 - false：关闭单字符模式  未传入该参数时默认为false，即不返回单个文本行的单字符信息。 
+        :type character_mode: bool
         """
         
         
@@ -55,6 +59,7 @@ class GeneralTextRequestBody:
         self._url = None
         self._detect_direction = None
         self._quick_mode = None
+        self._character_mode = None
         self.discriminator = None
 
         if image is not None:
@@ -65,6 +70,8 @@ class GeneralTextRequestBody:
             self.detect_direction = detect_direction
         if quick_mode is not None:
             self.quick_mode = quick_mode
+        if character_mode is not None:
+            self.character_mode = character_mode
 
     @property
     def image(self):
@@ -153,6 +160,28 @@ class GeneralTextRequestBody:
         :type quick_mode: bool
         """
         self._quick_mode = quick_mode
+
+    @property
+    def character_mode(self):
+        """Gets the character_mode of this GeneralTextRequestBody.
+
+        单字符模式开关。可选值包括： - true：打开单字符模式 - false：关闭单字符模式  未传入该参数时默认为false，即不返回单个文本行的单字符信息。 
+
+        :return: The character_mode of this GeneralTextRequestBody.
+        :rtype: bool
+        """
+        return self._character_mode
+
+    @character_mode.setter
+    def character_mode(self, character_mode):
+        """Sets the character_mode of this GeneralTextRequestBody.
+
+        单字符模式开关。可选值包括： - true：打开单字符模式 - false：关闭单字符模式  未传入该参数时默认为false，即不返回单个文本行的单字符信息。 
+
+        :param character_mode: The character_mode of this GeneralTextRequestBody.
+        :type character_mode: bool
+        """
+        self._character_mode = character_mode
 
     def to_dict(self):
         """Returns the model properties as a dict"""

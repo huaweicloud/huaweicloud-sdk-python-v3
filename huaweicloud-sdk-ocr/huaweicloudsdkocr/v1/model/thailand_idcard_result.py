@@ -40,7 +40,8 @@ class ThailandIdcardResult:
         'confidence': 'ThailandIdcardConfidence',
         'portrait_image': 'str',
         'portrait_location': 'list[list[int]]',
-        'idcard_type': 'str'
+        'idcard_type': 'str',
+        'text_location': 'object'
     }
 
     attribute_map = {
@@ -63,10 +64,11 @@ class ThailandIdcardResult:
         'confidence': 'confidence',
         'portrait_image': 'portrait_image',
         'portrait_location': 'portrait_location',
-        'idcard_type': 'idcard_type'
+        'idcard_type': 'idcard_type',
+        'text_location': 'text_location'
     }
 
-    def __init__(self, side=None, id_number=None, name_th=None, first_name_en=None, last_name_en=None, date_of_birth_th=None, date_of_birth_en=None, religion_th=None, address_th=None, date_of_issue_th=None, date_of_issue_en=None, date_of_expiry_th=None, date_of_expiry_en=None, serial_number=None, card_number=None, laser_number=None, confidence=None, portrait_image=None, portrait_location=None, idcard_type=None):
+    def __init__(self, side=None, id_number=None, name_th=None, first_name_en=None, last_name_en=None, date_of_birth_th=None, date_of_birth_en=None, religion_th=None, address_th=None, date_of_issue_th=None, date_of_issue_en=None, date_of_expiry_th=None, date_of_expiry_en=None, serial_number=None, card_number=None, laser_number=None, confidence=None, portrait_image=None, portrait_location=None, idcard_type=None, text_location=None):
         """ThailandIdcardResult
 
         The model defined in huaweicloud sdk
@@ -111,6 +113,8 @@ class ThailandIdcardResult:
         :type portrait_location: list[list[int]]
         :param idcard_type: 身份证的类型。取值如下所示： - normal：身份证原件 - copy：复印的身份证 当输入参数“return_idcard_type”为“true”时，才返回该参数。 
         :type idcard_type: str
+        :param text_location: 对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+        :type text_location: object
         """
         
         
@@ -135,6 +139,7 @@ class ThailandIdcardResult:
         self._portrait_image = None
         self._portrait_location = None
         self._idcard_type = None
+        self._text_location = None
         self.discriminator = None
 
         if side is not None:
@@ -177,6 +182,8 @@ class ThailandIdcardResult:
             self.portrait_location = portrait_location
         if idcard_type is not None:
             self.idcard_type = idcard_type
+        if text_location is not None:
+            self.text_location = text_location
 
     @property
     def side(self):
@@ -615,6 +622,28 @@ class ThailandIdcardResult:
         :type idcard_type: str
         """
         self._idcard_type = idcard_type
+
+    @property
+    def text_location(self):
+        """Gets the text_location of this ThailandIdcardResult.
+
+        对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+
+        :return: The text_location of this ThailandIdcardResult.
+        :rtype: object
+        """
+        return self._text_location
+
+    @text_location.setter
+    def text_location(self, text_location):
+        """Sets the text_location of this ThailandIdcardResult.
+
+        对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
+
+        :param text_location: The text_location of this ThailandIdcardResult.
+        :type text_location: object
+        """
+        self._text_location = text_location
 
     def to_dict(self):
         """Returns the model properties as a dict"""

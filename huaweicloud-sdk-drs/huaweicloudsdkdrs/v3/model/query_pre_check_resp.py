@@ -59,7 +59,7 @@ class QueryPreCheckResp:
         :type total_passed_rate: str
         :param rds_instance_id: RDS实例id。
         :type rds_instance_id: str
-        :param job_direction: 迁移方向
+        :param job_direction: 迁移方向。 - up-入云 灾备场景时对应本云为备 - down-出云 灾备场景时对应本云为主 - non-dbs-自建
         :type job_direction: str
         :param precheck_result: 预检查各项结果。
         :type precheck_result: list[:class:`huaweicloudsdkdrs.v3.PrecheckResult`]
@@ -215,7 +215,7 @@ class QueryPreCheckResp:
     def job_direction(self):
         """Gets the job_direction of this QueryPreCheckResp.
 
-        迁移方向
+        迁移方向。 - up-入云 灾备场景时对应本云为备 - down-出云 灾备场景时对应本云为主 - non-dbs-自建
 
         :return: The job_direction of this QueryPreCheckResp.
         :rtype: str
@@ -226,7 +226,7 @@ class QueryPreCheckResp:
     def job_direction(self, job_direction):
         """Sets the job_direction of this QueryPreCheckResp.
 
-        迁移方向
+        迁移方向。 - up-入云 灾备场景时对应本云为备 - down-出云 灾备场景时对应本云为主 - non-dbs-自建
 
         :param job_direction: The job_direction of this QueryPreCheckResp.
         :type job_direction: str

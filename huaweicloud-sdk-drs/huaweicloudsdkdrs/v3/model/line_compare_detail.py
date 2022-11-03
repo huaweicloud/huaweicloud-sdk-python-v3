@@ -55,7 +55,7 @@ class LineCompareDetail:
         :type target_row_num: int
         :param diff_row_num: 源库的表和目标库的表的差异值。
         :type diff_row_num: int
-        :param line_compare_result: 对比结果。
+        :param line_compare_result: 对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
         :type line_compare_result: str
         :param message: 附加信息。
         :type message: str
@@ -195,7 +195,7 @@ class LineCompareDetail:
     def line_compare_result(self):
         """Gets the line_compare_result of this LineCompareDetail.
 
-        对比结果。
+        对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 
         :return: The line_compare_result of this LineCompareDetail.
         :rtype: str
@@ -206,7 +206,7 @@ class LineCompareDetail:
     def line_compare_result(self, line_compare_result):
         """Sets the line_compare_result of this LineCompareDetail.
 
-        对比结果。
+        对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 
         :param line_compare_result: The line_compare_result of this LineCompareDetail.
         :type line_compare_result: str

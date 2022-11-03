@@ -55,7 +55,7 @@ class SwitchoverResp:
         :type source_db: :class:`huaweicloudsdkdrs.v3.EndpointVO`
         :param target_db: 
         :type target_db: :class:`huaweicloudsdkdrs.v3.EndpointVO`
-        :param job_direction: 任务方向。
+        :param job_direction: 任务方向。 - up 入云 灾备场景时对应本云为备 - down 出云 灾备场景时对应本云为主 - non-dbs 自建
         :type job_direction: str
         :param is_target_readonly: 目标库是否只读。
         :type is_target_readonly: bool
@@ -182,7 +182,7 @@ class SwitchoverResp:
     def job_direction(self):
         """Gets the job_direction of this SwitchoverResp.
 
-        任务方向。
+        任务方向。 - up 入云 灾备场景时对应本云为备 - down 出云 灾备场景时对应本云为主 - non-dbs 自建
 
         :return: The job_direction of this SwitchoverResp.
         :rtype: str
@@ -193,7 +193,7 @@ class SwitchoverResp:
     def job_direction(self, job_direction):
         """Sets the job_direction of this SwitchoverResp.
 
-        任务方向。
+        任务方向。 - up 入云 灾备场景时对应本云为备 - down 出云 灾备场景时对应本云为主 - non-dbs 自建
 
         :param job_direction: The job_direction of this SwitchoverResp.
         :type job_direction: str

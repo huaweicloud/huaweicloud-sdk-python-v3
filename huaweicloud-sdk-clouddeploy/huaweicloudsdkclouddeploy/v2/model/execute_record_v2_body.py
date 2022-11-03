@@ -28,7 +28,8 @@ class ExecuteRecordV2Body:
         'start_time': 'str',
         'nickname': 'str',
         'end_time': 'str',
-        'release_id': 'int'
+        'release_id': 'int',
+        'type': 'str'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ExecuteRecordV2Body:
         'start_time': 'start_time',
         'nickname': 'nickname',
         'end_time': 'end_time',
-        'release_id': 'release_id'
+        'release_id': 'release_id',
+        'type': 'type'
     }
 
-    def __init__(self, duration=None, state=None, operator=None, execution_id=None, start_time=None, nickname=None, end_time=None, release_id=None):
+    def __init__(self, duration=None, state=None, operator=None, execution_id=None, start_time=None, nickname=None, end_time=None, release_id=None, type=None):
         """ExecuteRecordV2Body
 
         The model defined in huaweicloud sdk
@@ -63,6 +65,8 @@ class ExecuteRecordV2Body:
         :type end_time: str
         :param release_id: 执行序列号
         :type release_id: int
+        :param type: 类型
+        :type type: str
         """
         
         
@@ -75,6 +79,7 @@ class ExecuteRecordV2Body:
         self._nickname = None
         self._end_time = None
         self._release_id = None
+        self._type = None
         self.discriminator = None
 
         if duration is not None:
@@ -93,6 +98,8 @@ class ExecuteRecordV2Body:
             self.end_time = end_time
         if release_id is not None:
             self.release_id = release_id
+        if type is not None:
+            self.type = type
 
     @property
     def duration(self):
@@ -269,6 +276,28 @@ class ExecuteRecordV2Body:
         :type release_id: int
         """
         self._release_id = release_id
+
+    @property
+    def type(self):
+        """Gets the type of this ExecuteRecordV2Body.
+
+        类型
+
+        :return: The type of this ExecuteRecordV2Body.
+        :rtype: str
+        """
+        return self._type
+
+    @type.setter
+    def type(self, type):
+        """Sets the type of this ExecuteRecordV2Body.
+
+        类型
+
+        :param type: The type of this ExecuteRecordV2Body.
+        :type type: str
+        """
+        self._type = type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

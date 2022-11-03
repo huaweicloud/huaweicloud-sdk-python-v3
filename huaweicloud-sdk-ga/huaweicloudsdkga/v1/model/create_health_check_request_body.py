@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ShowGaussMySqlProxyRequest:
+class CreateHealthCheckRequestBody:
 
     """
     Attributes:
@@ -21,79 +21,48 @@ class ShowGaussMySqlProxyRequest:
     sensitive_list = []
 
     openapi_types = {
-        'x_language': 'str',
-        'instance_id': 'str'
+        'health_check': 'CreateHealthCheckOption'
     }
 
     attribute_map = {
-        'x_language': 'X-Language',
-        'instance_id': 'instance_id'
+        'health_check': 'health_check'
     }
 
-    def __init__(self, x_language=None, instance_id=None):
-        """ShowGaussMySqlProxyRequest
+    def __init__(self, health_check=None):
+        """CreateHealthCheckRequestBody
 
         The model defined in huaweicloud sdk
 
-        :param x_language: 语言
-        :type x_language: str
-        :param instance_id: 实例ID
-        :type instance_id: str
+        :param health_check: 
+        :type health_check: :class:`huaweicloudsdkga.v1.CreateHealthCheckOption`
         """
         
         
 
-        self._x_language = None
-        self._instance_id = None
+        self._health_check = None
         self.discriminator = None
 
-        if x_language is not None:
-            self.x_language = x_language
-        self.instance_id = instance_id
+        self.health_check = health_check
 
     @property
-    def x_language(self):
-        """Gets the x_language of this ShowGaussMySqlProxyRequest.
+    def health_check(self):
+        """Gets the health_check of this CreateHealthCheckRequestBody.
 
-        语言
 
-        :return: The x_language of this ShowGaussMySqlProxyRequest.
-        :rtype: str
+        :return: The health_check of this CreateHealthCheckRequestBody.
+        :rtype: :class:`huaweicloudsdkga.v1.CreateHealthCheckOption`
         """
-        return self._x_language
+        return self._health_check
 
-    @x_language.setter
-    def x_language(self, x_language):
-        """Sets the x_language of this ShowGaussMySqlProxyRequest.
+    @health_check.setter
+    def health_check(self, health_check):
+        """Sets the health_check of this CreateHealthCheckRequestBody.
 
-        语言
 
-        :param x_language: The x_language of this ShowGaussMySqlProxyRequest.
-        :type x_language: str
+        :param health_check: The health_check of this CreateHealthCheckRequestBody.
+        :type health_check: :class:`huaweicloudsdkga.v1.CreateHealthCheckOption`
         """
-        self._x_language = x_language
-
-    @property
-    def instance_id(self):
-        """Gets the instance_id of this ShowGaussMySqlProxyRequest.
-
-        实例ID
-
-        :return: The instance_id of this ShowGaussMySqlProxyRequest.
-        :rtype: str
-        """
-        return self._instance_id
-
-    @instance_id.setter
-    def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowGaussMySqlProxyRequest.
-
-        实例ID
-
-        :param instance_id: The instance_id of this ShowGaussMySqlProxyRequest.
-        :type instance_id: str
-        """
-        self._instance_id = instance_id
+        self._health_check = health_check
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -137,7 +106,7 @@ class ShowGaussMySqlProxyRequest:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShowGaussMySqlProxyRequest):
+        if not isinstance(other, CreateHealthCheckRequestBody):
             return False
 
         return self.__dict__ == other.__dict__

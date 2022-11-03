@@ -191,6 +191,7 @@ from huaweicloudsdkcss.v1.model.system_templates import SystemTemplates
 from huaweicloudsdkcss.v1.model.tag import Tag
 from huaweicloudsdkcss.v1.model.tag_req import TagReq
 from huaweicloudsdkcss.v1.model.un_bind_public_req import UnBindPublicReq
+from huaweicloudsdkcss.v1.model.un_bind_public_req_eip_req import UnBindPublicReqEipReq
 from huaweicloudsdkcss.v1.model.update_alter_kibana_request import UpdateAlterKibanaRequest
 from huaweicloudsdkcss.v1.model.update_alter_kibana_response import UpdateAlterKibanaResponse
 from huaweicloudsdkcss.v1.model.update_batch_clusters_tags_request import UpdateBatchClustersTagsRequest

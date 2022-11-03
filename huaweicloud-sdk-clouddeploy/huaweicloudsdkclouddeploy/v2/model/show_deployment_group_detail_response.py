@@ -34,7 +34,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         'slave_cluster_id': 'str',
         'nick_name': 'str',
         'created_by': 'UserInfo',
-        'update_by': 'UserInfo',
+        'updated_by': 'UserInfo',
         'description': 'str',
         'permission': 'PermissionGroupDetail'
     }
@@ -53,12 +53,12 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         'slave_cluster_id': 'slave_cluster_id',
         'nick_name': 'nick_name',
         'created_by': 'created_by',
-        'update_by': 'update_by',
+        'updated_by': 'updated_by',
         'description': 'description',
         'permission': 'permission'
     }
 
-    def __init__(self, group_id=None, created_time=None, updated_time=None, host_count=None, project_name=None, name=None, region_name=None, project_id=None, os=None, auto_connection_test_switch=None, slave_cluster_id=None, nick_name=None, created_by=None, update_by=None, description=None, permission=None):
+    def __init__(self, group_id=None, created_time=None, updated_time=None, host_count=None, project_name=None, name=None, region_name=None, project_id=None, os=None, auto_connection_test_switch=None, slave_cluster_id=None, nick_name=None, created_by=None, updated_by=None, description=None, permission=None):
         """ShowDeploymentGroupDetailResponse
 
         The model defined in huaweicloud sdk
@@ -89,8 +89,8 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         :type nick_name: str
         :param created_by: 
         :type created_by: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
-        :param update_by: 
-        :type update_by: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
+        :param updated_by: 
+        :type updated_by: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
         :param description: 描述
         :type description: str
         :param permission: 
@@ -112,7 +112,7 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         self._slave_cluster_id = None
         self._nick_name = None
         self._created_by = None
-        self._update_by = None
+        self._updated_by = None
         self._description = None
         self._permission = None
         self.discriminator = None
@@ -143,8 +143,8 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
             self.nick_name = nick_name
         if created_by is not None:
             self.created_by = created_by
-        if update_by is not None:
-            self.update_by = update_by
+        if updated_by is not None:
+            self.updated_by = updated_by
         if description is not None:
             self.description = description
         if permission is not None:
@@ -435,24 +435,24 @@ class ShowDeploymentGroupDetailResponse(SdkResponse):
         self._created_by = created_by
 
     @property
-    def update_by(self):
-        """Gets the update_by of this ShowDeploymentGroupDetailResponse.
+    def updated_by(self):
+        """Gets the updated_by of this ShowDeploymentGroupDetailResponse.
 
 
-        :return: The update_by of this ShowDeploymentGroupDetailResponse.
+        :return: The updated_by of this ShowDeploymentGroupDetailResponse.
         :rtype: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
         """
-        return self._update_by
+        return self._updated_by
 
-    @update_by.setter
-    def update_by(self, update_by):
-        """Sets the update_by of this ShowDeploymentGroupDetailResponse.
+    @updated_by.setter
+    def updated_by(self, updated_by):
+        """Sets the updated_by of this ShowDeploymentGroupDetailResponse.
 
 
-        :param update_by: The update_by of this ShowDeploymentGroupDetailResponse.
-        :type update_by: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
+        :param updated_by: The updated_by of this ShowDeploymentGroupDetailResponse.
+        :type updated_by: :class:`huaweicloudsdkclouddeploy.v2.UserInfo`
         """
-        self._update_by = update_by
+        self._updated_by = updated_by
 
     @property
     def description(self):

@@ -65,9 +65,9 @@ class ContentCompareDetail:
         :type target_row_num: int
         :param diff_row_num: 源库的表和目标库的表的差异值。
         :type diff_row_num: int
-        :param line_compare_result: 行对比结果。
+        :param line_compare_result: 行对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
         :type line_compare_result: str
-        :param content_compare_result: 内容对比结果。
+        :param content_compare_result: 内容对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
         :type content_compare_result: str
         :param message: 附加信息。
         :type message: str
@@ -258,7 +258,7 @@ class ContentCompareDetail:
     def line_compare_result(self):
         """Gets the line_compare_result of this ContentCompareDetail.
 
-        行对比结果。
+        行对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 
         :return: The line_compare_result of this ContentCompareDetail.
         :rtype: str
@@ -269,7 +269,7 @@ class ContentCompareDetail:
     def line_compare_result(self, line_compare_result):
         """Sets the line_compare_result of this ContentCompareDetail.
 
-        行对比结果。
+        行对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 
         :param line_compare_result: The line_compare_result of this ContentCompareDetail.
         :type line_compare_result: str
@@ -280,7 +280,7 @@ class ContentCompareDetail:
     def content_compare_result(self):
         """Gets the content_compare_result of this ContentCompareDetail.
 
-        内容对比结果。
+        内容对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 
         :return: The content_compare_result of this ContentCompareDetail.
         :rtype: str
@@ -291,7 +291,7 @@ class ContentCompareDetail:
     def content_compare_result(self, content_compare_result):
         """Sets the content_compare_result of this ContentCompareDetail.
 
-        内容对比结果。
+        内容对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 
         :param content_compare_result: The content_compare_result of this ContentCompareDetail.
         :type content_compare_result: str

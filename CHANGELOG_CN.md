@@ -1,3 +1,156 @@
+# 3.1.8 2022-11-03
+
+### HuaweiCloud SDK DevSecurity
+
+- _新增特性_
+  - 支持研发安全服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK GA
+
+- _新增特性_
+  - 支持全球加速服务
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CloudDeploy
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListDeployTasks`新增响应参数 `id`、`release_id`、`duration`、`execution_state`、`executor_id`、`executor_nick_name`、`steps`
+  - 接口`ListHosts`新增响应参数 `update_time`、`lastest_connection_time`、`connection_status`、`owner_name`、`updator_id`、`create_time`、`nick_name`、`owner_id`、`updator_name`、`connection_result`
+  - 接口`ListHostGroups`:
+    - 新增响应参数 `updated_by`
+    - 移除响应参数 `update_by`
+  - 接口`ShowDeploymentGroupDetail`:
+    - 新增响应参数 `updated_by`
+    - 移除响应参数 `update_by`
+  - 接口`ShowDeploymentHostDetail`新增响应参数 `update_time`、`lastest_connection_time`、`connection_status`、`owner_name`、`updator_id`、`create_time`、`nick_name`、`owner_id`、`updator_name`、`connection_result`
+  - 接口`ShowDeployTaskDetail`新增响应参数 `id`、`release_id`、`duration`、`execution_state`、`executor_id`、`executor_nick_name`、`steps`
+  - 接口`ListDeployTaskHistoryByDate`新增响应参数 `type`
+  - 接口`ShowProjectSuccessRate`:
+    - 新增响应参数 `start_date`、`end_date`
+    - 移除响应参数 `start_time`、`end_time`
+  - 接口`ListTaskSuccessRate`:
+    - 新增响应参数 `start_date`、`end_date`
+    - 移除响应参数 `start_time`、`end_time`
+
+### HuaweiCloud SDK CSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListClustersDetails`:
+    - 新增响应参数 `failedReason`
+    - 移除响应参数 `failed_reasons`
+  - 接口`ShowClusterDetail`:
+    - 新增响应参数 `failedReason`
+    - 移除响应参数 `failed_reasons`
+
+### HuaweiCloud SDK DRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`BatchValidateConnections`响应参数`status`新增枚举值`true`、`false`
+  - 接口`BatchValidateClustersConnections`响应参数`status`新增枚举值`true`、`false`
+  - 接口`BatchCheckResults`响应参数`job_direction`新增枚举值`up`、`down`、`non-dbs`
+  - 接口`BatchSetSpeed`响应参数`status`新增枚举值`success`、`failed`
+  - 接口`ListCompareResult`:
+    - 响应参数`object_type`新增枚举值`DB`、`TABLE`、`VIEW`、`EVENT`、`ROUTINE`、`INDEX`、`TRIGGER`、`SYNONYM`、`FUNCTION`、`PROCEDURE`、`TYPE`、`RULE`、`DEFAULT_TYPE`、`PLAN_GUIDE`、`CONSTRAINT`、`FILE_GROUP`、`PARTITION_FUNCTION`、`PARTITION_SCHEME`、`TABLE_COLLATION`
+    - 响应参数`object_compare_result`新增枚举值`CONSISTENT`、`INCONSISTENT`、`COMPARING`、`WAITING_FOR_COMPARISON`、`FAILED_TO_COMPARE`、`TARGET_DB_NOT_EXIT`、`CAN_NOT_COMPARE`
+    - 响应参数`line_compare_result`新增枚举值`CONSISTENT`、`INCONSISTENT`、`COMPARING`、`WAITING_FOR_COMPARISON`、`FAILED_TO_COMPARE`、`TARGET_DB_NOT_EXIT`、`CAN_NOT_COMPARE`
+    - 响应参数`content_compare_result`新增枚举值`CONSISTENT`、`INCONSISTENT`、`COMPARING`、`WAITING_FOR_COMPARISON`、`FAILED_TO_COMPARE`、`TARGET_DB_NOT_EXIT`、`CAN_NOT_COMPARE`
+    - 响应参数`compare_task_status`新增枚举值`RUNNING`、`WAITING_FOR_RUNNING`、`SUCCESSFUL`、`FAILED`、`CANCELLED`、`TIMEOUT_INTERRUPT`、`FULL_DOING`、`INCRE_DOING`
+  - 接口`BatchListProgresses`响应参数`task_mode`新增枚举值`FULL_TRANS`、`FULL_INCR_TRANS`、`INCR_TRANS`
+  - 接口`BatchListJobDetails`响应参数`status`新增枚举值`CREATING`、`CREATE_FAILED`、`CONFIGURATION`、`STARTJOBING`、`WAITING_FOR_START`、`START_JOB_FAILED`、`PAUSING`、`FULL_TRANSFER_STARTED`、`FULL_TRANSFER_FAILED`、`FULL_TRANSFER_COMPLETE`、`INCRE_TRANSFER_STARTED`、`INCRE_TRANSFER_FAILED`、`RELEASE_RESOURCE_STARTED`、`RELEASE_RESOURCE_FAILED`、`RELEASE_RESOURCE_COMPLETE`、`REBUILD_NODE_STARTED`、`REBUILD_NODE_FAILED`、`CHANGE_JOB_STARTED`、`CHANGE_JOB_FAILED`、`DELETED`、`CHILD_TRANSFER_STARTING`、`CHILD_TRANSFER_STARTED`、`CHILD_TRANSFER_COMPLETE`、`CHILD_TRANSFER_FAILED`、`RELEASE_CHILD_TRANSFER_STARTED`、`RELEASE_CHILD_TRANSFER_COMPLETE`、`NODE_UPGRADE_START`、`NODE_UPGRADE_COMPLETE`、`NODE_UPGRADE_FAILED`
+  - 接口`ShowJobList`:
+    - 请求参数`status`新增枚举值`PAUSING`、`REBUILD_NODE_STARTED`、`REBUILD_NODE_FAILED`、`DELETED`、`NODE_UPGRADE_START`、`NODE_UPGRADE_COMPLETE`、`NODE_UPGRADE_FAILED`
+    - 响应参数`status`新增枚举值`CREATING`、`CREATE_FAILED`、`CONFIGURATION`、`STARTJOBING`、`WAITING_FOR_START`、`START_JOB_FAILED`、`PAUSING`、`FULL_TRANSFER_STARTED`、`FULL_TRANSFER_FAILED`、`FULL_TRANSFER_COMPLETE`、`INCRE_TRANSFER_STARTED`、`INCRE_TRANSFER_FAILED`、`RELEASE_RESOURCE_STARTED`、`RELEASE_RESOURCE_FAILED`、`RELEASE_RESOURCE_COMPLETE`、`REBUILD_NODE_STARTED`、`REBUILD_NODE_FAILED`、`CHANGE_JOB_STARTED`、`CHANGE_JOB_FAILED`、`DELETED`、`CHILD_TRANSFER_STARTING`、`CHILD_TRANSFER_STARTED`、`CHILD_TRANSFER_COMPLETE`、`CHILD_TRANSFER_FAILED`、`RELEASE_CHILD_TRANSFER_STARTED`、`RELEASE_CHILD_TRANSFER_COMPLETE`、`NODE_UPGRADE_START`、`NODE_UPGRADE_COMPLETE`、`NODE_UPGRADE_FAILED`
+    - 响应参数`db_use_type`新增枚举值`migration`、`sync`、`cloudDataGuard`
+    - 响应参数`task_type`新增枚举值`FULL_TRANS`、`FULL_INCR_TRANS`、`INCR_TRANS`
+    - 响应参数`status`类型调整 `string` -> `enum`
+  - 接口`BatchListJobStatus`响应参数`status`新增枚举值`CREATING`、`CREATE_FAILED`、`CONFIGURATION`、`STARTJOBING`、`WAITING_FOR_START`、`START_JOB_FAILED`、`PAUSING`、`FULL_TRANSFER_STARTED`、`FULL_TRANSFER_FAILED`、`FULL_TRANSFER_COMPLETE`、`INCRE_TRANSFER_STARTED`、`INCRE_TRANSFER_FAILED`、`RELEASE_RESOURCE_STARTED`、`RELEASE_RESOURCE_FAILED`、`RELEASE_RESOURCE_COMPLETE`、`REBUILD_NODE_STARTED`、`REBUILD_NODE_FAILED`、`CHANGE_JOB_STARTED`、`CHANGE_JOB_FAILED`、`DELETED`、`CHILD_TRANSFER_STARTING`、`CHILD_TRANSFER_STARTED`、`CHILD_TRANSFER_COMPLETE`、`CHILD_TRANSFER_FAILED`、`RELEASE_CHILD_TRANSFER_STARTED`、`RELEASE_CHILD_TRANSFER_COMPLETE`、`NODE_UPGRADE_START`、`NODE_UPGRADE_COMPLETE`、`NODE_UPGRADE_FAILED`
+  - 接口`BatchSwitchover`:
+    - 响应参数`mongo_ha_mode`新增枚举值`Sharding`、`ReplicaSet`、`ReplicaSingle`
+    - 响应参数`cluster_mode`新增枚举值`Single`、`Ha`、`GR`、`Sharding`、`Sharding4.0+`、`ReplicaSet`、`Replica`、`ReplicaSingle`、`Cluster`、`Independent`、`Combined`、`Distributed`、`NoSharding`
+    - 响应参数`job_direction`新增枚举值`up`、`down`、`non-dbs`
+
+### HuaweiCloud SDK ECS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`NovaCreateServers`请求参数`destination_type`改为非必填
+
+### HuaweiCloud SDK EPS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`MigrateResource`新增请求参数 `region_id`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowGaussMySqlProxy`
+  - 接口`CreateGaussMySqlInstance`新增请求参数 `lower_case_table_names`
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`RecognizeGeneralText`:
+    - 新增请求参数 `character_mode`
+    - 新增响应参数 `confidence`、`char_list`
+  - 接口`RecognizeThailandIdcard`:
+    - 新增请求参数 `return_text_location`
+    - 新增响应参数 `text_location`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListInstance`
+    - `CreateInstance`
+    - `ShowInstance`
+    - `RenameInstance`
+    - `DeleteInstance`
+    - `ShowLtsInfoConfig`
+    - `UpdateLtsInfoConfig`
+    - `ListIpGroup`
+    - `CreateIpGroup`
+    - `ShowIpGroup`
+    - `UpdateIpGroup`
+    - `DeleteIpGroup`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.7 2022-11-02
 
 ### HuaweiCloud SDK APIG

@@ -157,11 +157,11 @@ class EndpointVO:
         :type ssl_cert_password: str
         :param db_version: 数据库版本。
         :type db_version: str
-        :param mongo_ha_mode: mongoHa模式
+        :param mongo_ha_mode: mongoHa模式。 - Sharding 集群 - ReplicaSet 副本集 - ReplicaSingle 单节点
         :type mongo_ha_mode: str
         :param project_id: RDS实例projectId。
         :type project_id: str
-        :param cluster_mode: 集群模式
+        :param cluster_mode: 集群模式。 - Single：单节点RDS - Ha：主备RDS - GR：金融版RDS - Sharding：mongodb 集群或DDM的模式，均默认为分片 - Sharding4.0+：mongodb 集群版本4.0+，默认为不分片 - ReplicaSet：mongodb 副本集,Replica RDS只读副本 - ReplicaSingle：mongodb 单节点 - Cluster：集群 - Independent：gaussdbv5 independent模式 - Combined：gaussdbv5 Combined模式 - Distributed ：分布式taurus - NoSharding：非集群模式
         :type cluster_mode: str
         :param instance_id: RDS实例id。
         :type instance_id: str
@@ -888,7 +888,7 @@ class EndpointVO:
     def mongo_ha_mode(self):
         """Gets the mongo_ha_mode of this EndpointVO.
 
-        mongoHa模式
+        mongoHa模式。 - Sharding 集群 - ReplicaSet 副本集 - ReplicaSingle 单节点
 
         :return: The mongo_ha_mode of this EndpointVO.
         :rtype: str
@@ -899,7 +899,7 @@ class EndpointVO:
     def mongo_ha_mode(self, mongo_ha_mode):
         """Sets the mongo_ha_mode of this EndpointVO.
 
-        mongoHa模式
+        mongoHa模式。 - Sharding 集群 - ReplicaSet 副本集 - ReplicaSingle 单节点
 
         :param mongo_ha_mode: The mongo_ha_mode of this EndpointVO.
         :type mongo_ha_mode: str
@@ -932,7 +932,7 @@ class EndpointVO:
     def cluster_mode(self):
         """Gets the cluster_mode of this EndpointVO.
 
-        集群模式
+        集群模式。 - Single：单节点RDS - Ha：主备RDS - GR：金融版RDS - Sharding：mongodb 集群或DDM的模式，均默认为分片 - Sharding4.0+：mongodb 集群版本4.0+，默认为不分片 - ReplicaSet：mongodb 副本集,Replica RDS只读副本 - ReplicaSingle：mongodb 单节点 - Cluster：集群 - Independent：gaussdbv5 independent模式 - Combined：gaussdbv5 Combined模式 - Distributed ：分布式taurus - NoSharding：非集群模式
 
         :return: The cluster_mode of this EndpointVO.
         :rtype: str
@@ -943,7 +943,7 @@ class EndpointVO:
     def cluster_mode(self, cluster_mode):
         """Sets the cluster_mode of this EndpointVO.
 
-        集群模式
+        集群模式。 - Single：单节点RDS - Ha：主备RDS - GR：金融版RDS - Sharding：mongodb 集群或DDM的模式，均默认为分片 - Sharding4.0+：mongodb 集群版本4.0+，默认为不分片 - ReplicaSet：mongodb 副本集,Replica RDS只读副本 - ReplicaSingle：mongodb 单节点 - Cluster：集群 - Independent：gaussdbv5 independent模式 - Combined：gaussdbv5 Combined模式 - Distributed ：分布式taurus - NoSharding：非集群模式
 
         :param cluster_mode: The cluster_mode of this EndpointVO.
         :type cluster_mode: str

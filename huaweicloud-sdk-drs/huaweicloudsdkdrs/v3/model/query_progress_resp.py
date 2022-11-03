@@ -57,7 +57,7 @@ class QueryProgressResp:
         :type progress: str
         :param incre_trans_delay: 增量迁移时延
         :type incre_trans_delay: str
-        :param task_mode: 迁移模式
+        :param task_mode: 迁移模式。 - FULL_TRANS: 全量 - INCR_TRANS: 增量 - FULL_INCR_TRANS: 全量+增量
         :type task_mode: str
         :param transfer_status: 任务状态
         :type transfer_status: str
@@ -178,7 +178,7 @@ class QueryProgressResp:
     def task_mode(self):
         """Gets the task_mode of this QueryProgressResp.
 
-        迁移模式
+        迁移模式。 - FULL_TRANS: 全量 - INCR_TRANS: 增量 - FULL_INCR_TRANS: 全量+增量
 
         :return: The task_mode of this QueryProgressResp.
         :rtype: str
@@ -189,7 +189,7 @@ class QueryProgressResp:
     def task_mode(self, task_mode):
         """Sets the task_mode of this QueryProgressResp.
 
-        迁移模式
+        迁移模式。 - FULL_TRANS: 全量 - INCR_TRANS: 增量 - FULL_INCR_TRANS: 全量+增量
 
         :param task_mode: The task_mode of this QueryProgressResp.
         :type task_mode: str

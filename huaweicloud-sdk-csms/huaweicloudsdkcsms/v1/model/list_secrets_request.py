@@ -37,7 +37,7 @@ class ListSecretsRequest:
 
         :param limit: 每页返回的个数。  默认值：50。 
         :type limit: str
-        :param marker: 分页查询起始的资源id，为空时为查询第一页 
+        :param marker: 分页查询起始的凭据名称，为空时为查询第一页 
         :type marker: str
         """
         
@@ -78,7 +78,7 @@ class ListSecretsRequest:
     def marker(self):
         """Gets the marker of this ListSecretsRequest.
 
-        分页查询起始的资源id，为空时为查询第一页 
+        分页查询起始的凭据名称，为空时为查询第一页 
 
         :return: The marker of this ListSecretsRequest.
         :rtype: str
@@ -89,7 +89,7 @@ class ListSecretsRequest:
     def marker(self, marker):
         """Sets the marker of this ListSecretsRequest.
 
-        分页查询起始的资源id，为空时为查询第一页 
+        分页查询起始的凭据名称，为空时为查询第一页 
 
         :param marker: The marker of this ListSecretsRequest.
         :type marker: str

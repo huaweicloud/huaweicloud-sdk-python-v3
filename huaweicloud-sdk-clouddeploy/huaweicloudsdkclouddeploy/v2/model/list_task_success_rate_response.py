@@ -23,20 +23,20 @@ class ListTaskSuccessRateResponse(SdkResponse):
     openapi_types = {
         'project_id': 'str',
         'project_name': 'str',
-        'start_time': 'str',
-        'end_time': 'str',
+        'start_date': 'str',
+        'end_date': 'str',
         'tasks_success_rate': 'list[TaskSuccessRate]'
     }
 
     attribute_map = {
         'project_id': 'project_id',
         'project_name': 'project_name',
-        'start_time': 'start_time',
-        'end_time': 'end_time',
+        'start_date': 'start_date',
+        'end_date': 'end_date',
         'tasks_success_rate': 'tasks_success_rate'
     }
 
-    def __init__(self, project_id=None, project_name=None, start_time=None, end_time=None, tasks_success_rate=None):
+    def __init__(self, project_id=None, project_name=None, start_date=None, end_date=None, tasks_success_rate=None):
         """ListTaskSuccessRateResponse
 
         The model defined in huaweicloud sdk
@@ -45,10 +45,10 @@ class ListTaskSuccessRateResponse(SdkResponse):
         :type project_id: str
         :param project_name: 项目名称
         :type project_name: str
-        :param start_time: 任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
-        :type start_time: str
-        :param end_time: 任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
-        :type end_time: str
+        :param start_date: 任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
+        :type start_date: str
+        :param end_date: 任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
+        :type end_date: str
         :param tasks_success_rate: 任务的成功率列表
         :type tasks_success_rate: list[:class:`huaweicloudsdkclouddeploy.v2.TaskSuccessRate`]
         """
@@ -57,8 +57,8 @@ class ListTaskSuccessRateResponse(SdkResponse):
 
         self._project_id = None
         self._project_name = None
-        self._start_time = None
-        self._end_time = None
+        self._start_date = None
+        self._end_date = None
         self._tasks_success_rate = None
         self.discriminator = None
 
@@ -66,10 +66,10 @@ class ListTaskSuccessRateResponse(SdkResponse):
             self.project_id = project_id
         if project_name is not None:
             self.project_name = project_name
-        if start_time is not None:
-            self.start_time = start_time
-        if end_time is not None:
-            self.end_time = end_time
+        if start_date is not None:
+            self.start_date = start_date
+        if end_date is not None:
+            self.end_date = end_date
         if tasks_success_rate is not None:
             self.tasks_success_rate = tasks_success_rate
 
@@ -118,48 +118,48 @@ class ListTaskSuccessRateResponse(SdkResponse):
         self._project_name = project_name
 
     @property
-    def start_time(self):
-        """Gets the start_time of this ListTaskSuccessRateResponse.
+    def start_date(self):
+        """Gets the start_date of this ListTaskSuccessRateResponse.
 
         任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
 
-        :return: The start_time of this ListTaskSuccessRateResponse.
+        :return: The start_date of this ListTaskSuccessRateResponse.
         :rtype: str
         """
-        return self._start_time
+        return self._start_date
 
-    @start_time.setter
-    def start_time(self, start_time):
-        """Sets the start_time of this ListTaskSuccessRateResponse.
+    @start_date.setter
+    def start_date(self, start_date):
+        """Sets the start_date of this ListTaskSuccessRateResponse.
 
         任务执行开始时间范围的左边界（包含），格式yyyy-MM-dd
 
-        :param start_time: The start_time of this ListTaskSuccessRateResponse.
-        :type start_time: str
+        :param start_date: The start_date of this ListTaskSuccessRateResponse.
+        :type start_date: str
         """
-        self._start_time = start_time
+        self._start_date = start_date
 
     @property
-    def end_time(self):
-        """Gets the end_time of this ListTaskSuccessRateResponse.
+    def end_date(self):
+        """Gets the end_date of this ListTaskSuccessRateResponse.
 
         任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
 
-        :return: The end_time of this ListTaskSuccessRateResponse.
+        :return: The end_date of this ListTaskSuccessRateResponse.
         :rtype: str
         """
-        return self._end_time
+        return self._end_date
 
-    @end_time.setter
-    def end_time(self, end_time):
-        """Sets the end_time of this ListTaskSuccessRateResponse.
+    @end_date.setter
+    def end_date(self, end_date):
+        """Sets the end_date of this ListTaskSuccessRateResponse.
 
         任务执行开始时间范围的右边界（包含），格式yyyy-MM-dd 。最大时间范围为1年。
 
-        :param end_time: The end_time of this ListTaskSuccessRateResponse.
-        :type end_time: str
+        :param end_date: The end_date of this ListTaskSuccessRateResponse.
+        :type end_date: str
         """
-        self._end_time = end_time
+        self._end_date = end_date
 
     @property
     def tasks_success_rate(self):

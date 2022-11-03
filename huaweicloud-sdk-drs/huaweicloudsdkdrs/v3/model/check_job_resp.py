@@ -43,7 +43,7 @@ class CheckJobResp:
 
         :param id: 任务id。
         :type id: str
-        :param status: 测试结果
+        :param status: 测试结果。 - true：成功 - false：失败
         :type status: str
         :param error_code: 错误码。
         :type error_code: str
@@ -97,7 +97,7 @@ class CheckJobResp:
     def status(self):
         """Gets the status of this CheckJobResp.
 
-        测试结果
+        测试结果。 - true：成功 - false：失败
 
         :return: The status of this CheckJobResp.
         :rtype: str
@@ -108,7 +108,7 @@ class CheckJobResp:
     def status(self, status):
         """Sets the status of this CheckJobResp.
 
-        测试结果
+        测试结果。 - true：成功 - false：失败
 
         :param status: The status of this CheckJobResp.
         :type status: str

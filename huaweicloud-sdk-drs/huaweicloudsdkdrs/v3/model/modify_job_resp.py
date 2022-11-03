@@ -41,7 +41,7 @@ class ModifyJobResp:
 
         :param id: 任务ID
         :type id: str
-        :param status: 状态
+        :param status: 状态。 - success 成功 - failed 失败
         :type status: str
         :param error_code: 错误码
         :type error_code: str
@@ -90,7 +90,7 @@ class ModifyJobResp:
     def status(self):
         """Gets the status of this ModifyJobResp.
 
-        状态
+        状态。 - success 成功 - failed 失败
 
         :return: The status of this ModifyJobResp.
         :rtype: str
@@ -101,7 +101,7 @@ class ModifyJobResp:
     def status(self, status):
         """Sets the status of this ModifyJobResp.
 
-        状态
+        状态。 - success 成功 - failed 失败
 
         :param status: The status of this ModifyJobResp.
         :type status: str

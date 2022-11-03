@@ -21,6 +21,7 @@ class MigrateResource:
     sensitive_list = []
 
     openapi_types = {
+        'region_id': 'str',
         'project_id': 'str',
         'resource_id': 'str',
         'resource_type': 'str',
@@ -28,17 +29,20 @@ class MigrateResource:
     }
 
     attribute_map = {
+        'region_id': 'region_id',
         'project_id': 'project_id',
         'resource_id': 'resource_id',
         'resource_type': 'resource_type',
         'associated': 'associated'
     }
 
-    def __init__(self, project_id=None, resource_id=None, resource_type=None, associated=None):
+    def __init__(self, region_id=None, project_id=None, resource_id=None, resource_type=None, associated=None):
         """MigrateResource
 
         The model defined in huaweicloud sdk
 
+        :param region_id: 资源所属RegionID。迁移OBS服务资源时为必选项。
+        :type region_id: str
         :param project_id: 项目ID。resource_type为region级别服务时为必选项。
         :type project_id: str
         :param resource_id: 资源ID
@@ -51,18 +55,43 @@ class MigrateResource:
         
         
 
+        self._region_id = None
         self._project_id = None
         self._resource_id = None
         self._resource_type = None
         self._associated = None
         self.discriminator = None
 
+        if region_id is not None:
+            self.region_id = region_id
         if project_id is not None:
             self.project_id = project_id
         self.resource_id = resource_id
         self.resource_type = resource_type
         if associated is not None:
             self.associated = associated
+
+    @property
+    def region_id(self):
+        """Gets the region_id of this MigrateResource.
+
+        资源所属RegionID。迁移OBS服务资源时为必选项。
+
+        :return: The region_id of this MigrateResource.
+        :rtype: str
+        """
+        return self._region_id
+
+    @region_id.setter
+    def region_id(self, region_id):
+        """Sets the region_id of this MigrateResource.
+
+        资源所属RegionID。迁移OBS服务资源时为必选项。
+
+        :param region_id: The region_id of this MigrateResource.
+        :type region_id: str
+        """
+        self._region_id = region_id
 
     @property
     def project_id(self):

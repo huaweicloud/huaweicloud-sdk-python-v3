@@ -39,6 +39,7 @@ class MysqlInstanceRequest:
         'slave_count': 'int',
         'volume': 'MysqlVolume',
         'tags': 'list[MysqlTags]',
+        'lower_case_table_names': 'int',
         'enterprise_project_id': 'str',
         'dedicated_resource_id': 'str'
     }
@@ -62,11 +63,12 @@ class MysqlInstanceRequest:
         'slave_count': 'slave_count',
         'volume': 'volume',
         'tags': 'tags',
+        'lower_case_table_names': 'lower_case_table_names',
         'enterprise_project_id': 'enterprise_project_id',
         'dedicated_resource_id': 'dedicated_resource_id'
     }
 
-    def __init__(self, charge_info=None, region=None, name=None, datastore=None, mode=None, flavor_ref=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, password=None, backup_strategy=None, time_zone=None, availability_zone_mode=None, master_availability_zone=None, slave_count=None, volume=None, tags=None, enterprise_project_id=None, dedicated_resource_id=None):
+    def __init__(self, charge_info=None, region=None, name=None, datastore=None, mode=None, flavor_ref=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, password=None, backup_strategy=None, time_zone=None, availability_zone_mode=None, master_availability_zone=None, slave_count=None, volume=None, tags=None, lower_case_table_names=None, enterprise_project_id=None, dedicated_resource_id=None):
         """MysqlInstanceRequest
 
         The model defined in huaweicloud sdk
@@ -107,6 +109,8 @@ class MysqlInstanceRequest:
         :type volume: :class:`huaweicloudsdkgaussdb.v3.MysqlVolume`
         :param tags: 
         :type tags: list[:class:`huaweicloudsdkgaussdb.v3.MysqlTags`]
+        :param lower_case_table_names: 表名大小写是否敏感，默认值是“1”。  取值范围： - 0：表名被存储成固定且表名称大小写敏感。 - 1：表名将被存储成小写且表名称大小写不敏感。
+        :type lower_case_table_names: int
         :param enterprise_project_id: 企业项目ID。如果账户开通企业项目服务则该参数必选，未开启该参数不可选。
         :type enterprise_project_id: str
         :param dedicated_resource_id: 专属资源池ID，只有开通专属资源池后才可以下发此参数。
@@ -133,6 +137,7 @@ class MysqlInstanceRequest:
         self._slave_count = None
         self._volume = None
         self._tags = None
+        self._lower_case_table_names = None
         self._enterprise_project_id = None
         self._dedicated_resource_id = None
         self.discriminator = None
@@ -163,6 +168,8 @@ class MysqlInstanceRequest:
             self.volume = volume
         if tags is not None:
             self.tags = tags
+        if lower_case_table_names is not None:
+            self.lower_case_table_names = lower_case_table_names
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         if dedicated_resource_id is not None:
@@ -553,6 +560,28 @@ class MysqlInstanceRequest:
         :type tags: list[:class:`huaweicloudsdkgaussdb.v3.MysqlTags`]
         """
         self._tags = tags
+
+    @property
+    def lower_case_table_names(self):
+        """Gets the lower_case_table_names of this MysqlInstanceRequest.
+
+        表名大小写是否敏感，默认值是“1”。  取值范围： - 0：表名被存储成固定且表名称大小写敏感。 - 1：表名将被存储成小写且表名称大小写不敏感。
+
+        :return: The lower_case_table_names of this MysqlInstanceRequest.
+        :rtype: int
+        """
+        return self._lower_case_table_names
+
+    @lower_case_table_names.setter
+    def lower_case_table_names(self, lower_case_table_names):
+        """Sets the lower_case_table_names of this MysqlInstanceRequest.
+
+        表名大小写是否敏感，默认值是“1”。  取值范围： - 0：表名被存储成固定且表名称大小写敏感。 - 1：表名将被存储成小写且表名称大小写不敏感。
+
+        :param lower_case_table_names: The lower_case_table_names of this MysqlInstanceRequest.
+        :type lower_case_table_names: int
+        """
+        self._lower_case_table_names = lower_case_table_names
 
     @property
     def enterprise_project_id(self):

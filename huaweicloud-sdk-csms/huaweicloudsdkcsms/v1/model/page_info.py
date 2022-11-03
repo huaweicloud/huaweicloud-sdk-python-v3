@@ -37,9 +37,9 @@ class PageInfo:
 
         The model defined in huaweicloud sdk
 
-        :param next_marker: 下一页查询地址（下一页起始资源id）。
+        :param next_marker: 下一页查询地址（本页的末尾凭据名称，下一页起始凭据名称）。
         :type next_marker: str
-        :param previous_marker: 前一页查询地址（上一页末尾资源id）。
+        :param previous_marker: 本页的起始凭据名称，上一页末尾凭据名称。
         :type previous_marker: str
         :param current_count: 本页返回条目数量。
         :type current_count: int
@@ -63,7 +63,7 @@ class PageInfo:
     def next_marker(self):
         """Gets the next_marker of this PageInfo.
 
-        下一页查询地址（下一页起始资源id）。
+        下一页查询地址（本页的末尾凭据名称，下一页起始凭据名称）。
 
         :return: The next_marker of this PageInfo.
         :rtype: str
@@ -74,7 +74,7 @@ class PageInfo:
     def next_marker(self, next_marker):
         """Sets the next_marker of this PageInfo.
 
-        下一页查询地址（下一页起始资源id）。
+        下一页查询地址（本页的末尾凭据名称，下一页起始凭据名称）。
 
         :param next_marker: The next_marker of this PageInfo.
         :type next_marker: str
@@ -85,7 +85,7 @@ class PageInfo:
     def previous_marker(self):
         """Gets the previous_marker of this PageInfo.
 
-        前一页查询地址（上一页末尾资源id）。
+        本页的起始凭据名称，上一页末尾凭据名称。
 
         :return: The previous_marker of this PageInfo.
         :rtype: str
@@ -96,7 +96,7 @@ class PageInfo:
     def previous_marker(self, previous_marker):
         """Sets the previous_marker of this PageInfo.
 
-        前一页查询地址（上一页末尾资源id）。
+        本页的起始凭据名称，上一页末尾凭据名称。
 
         :param previous_marker: The previous_marker of this PageInfo.
         :type previous_marker: str

@@ -56,6 +56,7 @@ from huaweicloudsdkclouddeploy.v2.model.show_project_success_rate_request import
 from huaweicloudsdkclouddeploy.v2.model.show_project_success_rate_response import ShowProjectSuccessRateResponse
 from huaweicloudsdkclouddeploy.v2.model.start_deploy_task_request import StartDeployTaskRequest
 from huaweicloudsdkclouddeploy.v2.model.start_deploy_task_response import StartDeployTaskResponse
+from huaweicloudsdkclouddeploy.v2.model.step import Step
 from huaweicloudsdkclouddeploy.v2.model.task_info import TaskInfo
 from huaweicloudsdkclouddeploy.v2.model.task_success_rate import TaskSuccessRate
 from huaweicloudsdkclouddeploy.v2.model.tasks_success_rate_query import TasksSuccessRateQuery

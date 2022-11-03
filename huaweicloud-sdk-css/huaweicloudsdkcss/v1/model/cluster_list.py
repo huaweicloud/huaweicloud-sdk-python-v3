@@ -44,7 +44,7 @@ class ClusterList:
         'actions': 'list[str]',
         'enterprise_project_id': 'str',
         'tags': 'list[ClusterListTags]',
-        'failed_reasons': 'ClusterListFailedReasons',
+        'failed_reason': 'ClusterListFailedReasons',
         'period': 'bool'
     }
 
@@ -72,11 +72,11 @@ class ClusterList:
         'actions': 'actions',
         'enterprise_project_id': 'enterpriseProjectId',
         'tags': 'tags',
-        'failed_reasons': 'failed_reasons',
+        'failed_reason': 'failedReason',
         'period': 'period'
     }
 
-    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, bandwidth_size=None, https_enable=None, authority_enable=None, disk_encrypted=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reasons=None, period=None):
+    def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, bandwidth_size=None, https_enable=None, authority_enable=None, disk_encrypted=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None):
         """ClusterList
 
         The model defined in huaweicloud sdk
@@ -127,8 +127,8 @@ class ClusterList:
         :type enterprise_project_id: str
         :param tags: 集群标签。
         :type tags: list[:class:`huaweicloudsdkcss.v1.ClusterListTags`]
-        :param failed_reasons: 
-        :type failed_reasons: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
+        :param failed_reason: 
+        :type failed_reason: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
         :param period: 是否为包周期集群。 - \&quot;true\&quot; 表示是包周期计费的集群。 - \&quot;false\&quot; 表示是按需计费的集群。
         :type period: bool
         """
@@ -158,7 +158,7 @@ class ClusterList:
         self._actions = None
         self._enterprise_project_id = None
         self._tags = None
-        self._failed_reasons = None
+        self._failed_reason = None
         self._period = None
         self.discriminator = None
 
@@ -208,8 +208,8 @@ class ClusterList:
             self.enterprise_project_id = enterprise_project_id
         if tags is not None:
             self.tags = tags
-        if failed_reasons is not None:
-            self.failed_reasons = failed_reasons
+        if failed_reason is not None:
+            self.failed_reason = failed_reason
         if period is not None:
             self.period = period
 
@@ -714,24 +714,24 @@ class ClusterList:
         self._tags = tags
 
     @property
-    def failed_reasons(self):
-        """Gets the failed_reasons of this ClusterList.
+    def failed_reason(self):
+        """Gets the failed_reason of this ClusterList.
 
 
-        :return: The failed_reasons of this ClusterList.
+        :return: The failed_reason of this ClusterList.
         :rtype: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
         """
-        return self._failed_reasons
+        return self._failed_reason
 
-    @failed_reasons.setter
-    def failed_reasons(self, failed_reasons):
-        """Sets the failed_reasons of this ClusterList.
+    @failed_reason.setter
+    def failed_reason(self, failed_reason):
+        """Sets the failed_reason of this ClusterList.
 
 
-        :param failed_reasons: The failed_reasons of this ClusterList.
-        :type failed_reasons: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
+        :param failed_reason: The failed_reason of this ClusterList.
+        :type failed_reason: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
         """
-        self._failed_reasons = failed_reasons
+        self._failed_reason = failed_reason
 
     @property
     def period(self):

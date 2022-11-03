@@ -41,9 +41,9 @@ class ObjectCompareResultOverview:
 
         The model defined in huaweicloud sdk
 
-        :param object_type: 对象类型。
+        :param object_type: 对象类型。 - DB-数据库 - TABLE-表 - VIEW-视图 - EVENT-事件 - ROUTINE-存储过程和函数 - INDEX-索引,TRIGGER-触发器 - SYNONYM-同义词 - FUNCTION-函数 - PROCEDURE-存储过程 - TYPE-自定义类型 - RULE-规则 - DEFAULT_TYPE-缺省值 - PLAN_GUIDE-执行计划 - CONSTRAINT-约束 - FILE_GROUP-文件组 - PARTITION_FUNCTION-分区函数 - PARTITION_SCHEME-分区方案 - TABLE_COLLATION-表的排序规则
         :type object_type: str
-        :param object_compare_result: 对比结果。
+        :param object_compare_result: 对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
         :type object_compare_result: str
         :param target_count: 该类型的对象在目标库的个数。
         :type target_count: int
@@ -72,7 +72,7 @@ class ObjectCompareResultOverview:
     def object_type(self):
         """Gets the object_type of this ObjectCompareResultOverview.
 
-        对象类型。
+        对象类型。 - DB-数据库 - TABLE-表 - VIEW-视图 - EVENT-事件 - ROUTINE-存储过程和函数 - INDEX-索引,TRIGGER-触发器 - SYNONYM-同义词 - FUNCTION-函数 - PROCEDURE-存储过程 - TYPE-自定义类型 - RULE-规则 - DEFAULT_TYPE-缺省值 - PLAN_GUIDE-执行计划 - CONSTRAINT-约束 - FILE_GROUP-文件组 - PARTITION_FUNCTION-分区函数 - PARTITION_SCHEME-分区方案 - TABLE_COLLATION-表的排序规则
 
         :return: The object_type of this ObjectCompareResultOverview.
         :rtype: str
@@ -83,7 +83,7 @@ class ObjectCompareResultOverview:
     def object_type(self, object_type):
         """Sets the object_type of this ObjectCompareResultOverview.
 
-        对象类型。
+        对象类型。 - DB-数据库 - TABLE-表 - VIEW-视图 - EVENT-事件 - ROUTINE-存储过程和函数 - INDEX-索引,TRIGGER-触发器 - SYNONYM-同义词 - FUNCTION-函数 - PROCEDURE-存储过程 - TYPE-自定义类型 - RULE-规则 - DEFAULT_TYPE-缺省值 - PLAN_GUIDE-执行计划 - CONSTRAINT-约束 - FILE_GROUP-文件组 - PARTITION_FUNCTION-分区函数 - PARTITION_SCHEME-分区方案 - TABLE_COLLATION-表的排序规则
 
         :param object_type: The object_type of this ObjectCompareResultOverview.
         :type object_type: str
@@ -94,7 +94,7 @@ class ObjectCompareResultOverview:
     def object_compare_result(self):
         """Gets the object_compare_result of this ObjectCompareResultOverview.
 
-        对比结果。
+        对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 
         :return: The object_compare_result of this ObjectCompareResultOverview.
         :rtype: str
@@ -105,7 +105,7 @@ class ObjectCompareResultOverview:
     def object_compare_result(self, object_compare_result):
         """Sets the object_compare_result of this ObjectCompareResultOverview.
 
-        对比结果。
+        对比结果。 - CONSISTENT-一致 - INCONSISTENT-不一致 - COMPARING-正在对比 - WAITING_FOR_COMPARISON-等待对比 - FAILED_TO_COMPARE-对比失败 - TARGET_DB_NOT_EXIT-目标库不存在 - CAN_NOT_COMPARE-无法对比
 
         :param object_compare_result: The object_compare_result of this ObjectCompareResultOverview.
         :type object_compare_result: str

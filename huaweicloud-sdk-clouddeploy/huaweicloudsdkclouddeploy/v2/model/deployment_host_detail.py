@@ -35,7 +35,17 @@ class DeploymentHostDetail:
         'group_name': 'str',
         'project_id': 'str',
         'project_name': 'str',
-        'permission': 'PermissionHostDetail'
+        'permission': 'PermissionHostDetail',
+        'update_time': 'str',
+        'lastest_connection_time': 'str',
+        'connection_status': 'str',
+        'owner_name': 'str',
+        'updator_id': 'str',
+        'create_time': 'str',
+        'nick_name': 'str',
+        'owner_id': 'str',
+        'updator_name': 'str',
+        'connection_result': 'str'
     }
 
     attribute_map = {
@@ -53,10 +63,20 @@ class DeploymentHostDetail:
         'group_name': 'group_name',
         'project_id': 'project_id',
         'project_name': 'project_name',
-        'permission': 'permission'
+        'permission': 'permission',
+        'update_time': 'update_time',
+        'lastest_connection_time': 'lastest_connection_time',
+        'connection_status': 'connection_status',
+        'owner_name': 'owner_name',
+        'updator_id': 'updator_id',
+        'create_time': 'create_time',
+        'nick_name': 'nick_name',
+        'owner_id': 'owner_id',
+        'updator_name': 'updator_name',
+        'connection_result': 'connection_result'
     }
 
-    def __init__(self, group_id=None, host_name=None, ip=None, port=None, os=None, as_proxy=None, proxy_host_id=None, authorization=None, install_icagent=None, host_id=None, proxy_host=None, group_name=None, project_id=None, project_name=None, permission=None):
+    def __init__(self, group_id=None, host_name=None, ip=None, port=None, os=None, as_proxy=None, proxy_host_id=None, authorization=None, install_icagent=None, host_id=None, proxy_host=None, group_name=None, project_id=None, project_name=None, permission=None, update_time=None, lastest_connection_time=None, connection_status=None, owner_name=None, updator_id=None, create_time=None, nick_name=None, owner_id=None, updator_name=None, connection_result=None):
         """DeploymentHostDetail
 
         The model defined in huaweicloud sdk
@@ -91,6 +111,26 @@ class DeploymentHostDetail:
         :type project_name: str
         :param permission: 
         :type permission: :class:`huaweicloudsdkclouddeploy.v2.PermissionHostDetail`
+        :param update_time: 更新时间
+        :type update_time: str
+        :param lastest_connection_time: 最后连接时间
+        :type lastest_connection_time: str
+        :param connection_status: 连接状态
+        :type connection_status: str
+        :param owner_name: 拥有者名称
+        :type owner_name: str
+        :param updator_id: 维护者id
+        :type updator_id: str
+        :param create_time: 创建时间
+        :type create_time: str
+        :param nick_name: 昵称
+        :type nick_name: str
+        :param owner_id: 拥有者id
+        :type owner_id: str
+        :param updator_name: 维护者名称
+        :type updator_name: str
+        :param connection_result: 连接结果
+        :type connection_result: str
         """
         
         
@@ -110,6 +150,16 @@ class DeploymentHostDetail:
         self._project_id = None
         self._project_name = None
         self._permission = None
+        self._update_time = None
+        self._lastest_connection_time = None
+        self._connection_status = None
+        self._owner_name = None
+        self._updator_id = None
+        self._create_time = None
+        self._nick_name = None
+        self._owner_id = None
+        self._updator_name = None
+        self._connection_result = None
         self.discriminator = None
 
         self.group_id = group_id
@@ -135,6 +185,26 @@ class DeploymentHostDetail:
             self.project_name = project_name
         if permission is not None:
             self.permission = permission
+        if update_time is not None:
+            self.update_time = update_time
+        if lastest_connection_time is not None:
+            self.lastest_connection_time = lastest_connection_time
+        if connection_status is not None:
+            self.connection_status = connection_status
+        if owner_name is not None:
+            self.owner_name = owner_name
+        if updator_id is not None:
+            self.updator_id = updator_id
+        if create_time is not None:
+            self.create_time = create_time
+        if nick_name is not None:
+            self.nick_name = nick_name
+        if owner_id is not None:
+            self.owner_id = owner_id
+        if updator_name is not None:
+            self.updator_name = updator_name
+        if connection_result is not None:
+            self.connection_result = connection_result
 
     @property
     def group_id(self):
@@ -459,6 +529,226 @@ class DeploymentHostDetail:
         :type permission: :class:`huaweicloudsdkclouddeploy.v2.PermissionHostDetail`
         """
         self._permission = permission
+
+    @property
+    def update_time(self):
+        """Gets the update_time of this DeploymentHostDetail.
+
+        更新时间
+
+        :return: The update_time of this DeploymentHostDetail.
+        :rtype: str
+        """
+        return self._update_time
+
+    @update_time.setter
+    def update_time(self, update_time):
+        """Sets the update_time of this DeploymentHostDetail.
+
+        更新时间
+
+        :param update_time: The update_time of this DeploymentHostDetail.
+        :type update_time: str
+        """
+        self._update_time = update_time
+
+    @property
+    def lastest_connection_time(self):
+        """Gets the lastest_connection_time of this DeploymentHostDetail.
+
+        最后连接时间
+
+        :return: The lastest_connection_time of this DeploymentHostDetail.
+        :rtype: str
+        """
+        return self._lastest_connection_time
+
+    @lastest_connection_time.setter
+    def lastest_connection_time(self, lastest_connection_time):
+        """Sets the lastest_connection_time of this DeploymentHostDetail.
+
+        最后连接时间
+
+        :param lastest_connection_time: The lastest_connection_time of this DeploymentHostDetail.
+        :type lastest_connection_time: str
+        """
+        self._lastest_connection_time = lastest_connection_time
+
+    @property
+    def connection_status(self):
+        """Gets the connection_status of this DeploymentHostDetail.
+
+        连接状态
+
+        :return: The connection_status of this DeploymentHostDetail.
+        :rtype: str
+        """
+        return self._connection_status
+
+    @connection_status.setter
+    def connection_status(self, connection_status):
+        """Sets the connection_status of this DeploymentHostDetail.
+
+        连接状态
+
+        :param connection_status: The connection_status of this DeploymentHostDetail.
+        :type connection_status: str
+        """
+        self._connection_status = connection_status
+
+    @property
+    def owner_name(self):
+        """Gets the owner_name of this DeploymentHostDetail.
+
+        拥有者名称
+
+        :return: The owner_name of this DeploymentHostDetail.
+        :rtype: str
+        """
+        return self._owner_name
+
+    @owner_name.setter
+    def owner_name(self, owner_name):
+        """Sets the owner_name of this DeploymentHostDetail.
+
+        拥有者名称
+
+        :param owner_name: The owner_name of this DeploymentHostDetail.
+        :type owner_name: str
+        """
+        self._owner_name = owner_name
+
+    @property
+    def updator_id(self):
+        """Gets the updator_id of this DeploymentHostDetail.
+
+        维护者id
+
+        :return: The updator_id of this DeploymentHostDetail.
+        :rtype: str
+        """
+        return self._updator_id
+
+    @updator_id.setter
+    def updator_id(self, updator_id):
+        """Sets the updator_id of this DeploymentHostDetail.
+
+        维护者id
+
+        :param updator_id: The updator_id of this DeploymentHostDetail.
+        :type updator_id: str
+        """
+        self._updator_id = updator_id
+
+    @property
+    def create_time(self):
+        """Gets the create_time of this DeploymentHostDetail.
+
+        创建时间
+
+        :return: The create_time of this DeploymentHostDetail.
+        :rtype: str
+        """
+        return self._create_time
+
+    @create_time.setter
+    def create_time(self, create_time):
+        """Sets the create_time of this DeploymentHostDetail.
+
+        创建时间
+
+        :param create_time: The create_time of this DeploymentHostDetail.
+        :type create_time: str
+        """
+        self._create_time = create_time
+
+    @property
+    def nick_name(self):
+        """Gets the nick_name of this DeploymentHostDetail.
+
+        昵称
+
+        :return: The nick_name of this DeploymentHostDetail.
+        :rtype: str
+        """
+        return self._nick_name
+
+    @nick_name.setter
+    def nick_name(self, nick_name):
+        """Sets the nick_name of this DeploymentHostDetail.
+
+        昵称
+
+        :param nick_name: The nick_name of this DeploymentHostDetail.
+        :type nick_name: str
+        """
+        self._nick_name = nick_name
+
+    @property
+    def owner_id(self):
+        """Gets the owner_id of this DeploymentHostDetail.
+
+        拥有者id
+
+        :return: The owner_id of this DeploymentHostDetail.
+        :rtype: str
+        """
+        return self._owner_id
+
+    @owner_id.setter
+    def owner_id(self, owner_id):
+        """Sets the owner_id of this DeploymentHostDetail.
+
+        拥有者id
+
+        :param owner_id: The owner_id of this DeploymentHostDetail.
+        :type owner_id: str
+        """
+        self._owner_id = owner_id
+
+    @property
+    def updator_name(self):
+        """Gets the updator_name of this DeploymentHostDetail.
+
+        维护者名称
+
+        :return: The updator_name of this DeploymentHostDetail.
+        :rtype: str
+        """
+        return self._updator_name
+
+    @updator_name.setter
+    def updator_name(self, updator_name):
+        """Sets the updator_name of this DeploymentHostDetail.
+
+        维护者名称
+
+        :param updator_name: The updator_name of this DeploymentHostDetail.
+        :type updator_name: str
+        """
+        self._updator_name = updator_name
+
+    @property
+    def connection_result(self):
+        """Gets the connection_result of this DeploymentHostDetail.
+
+        连接结果
+
+        :return: The connection_result of this DeploymentHostDetail.
+        :rtype: str
+        """
+        return self._connection_result
+
+    @connection_result.setter
+    def connection_result(self, connection_result):
+        """Sets the connection_result of this DeploymentHostDetail.
+
+        连接结果
+
+        :param connection_result: The connection_result of this DeploymentHostDetail.
+        :type connection_result: str
+        """
+        self._connection_result = connection_result
 
     def to_dict(self):
         """Returns the model properties as a dict"""
