@@ -60,6 +60,7 @@ class ConferenceInfo:
         'vmr_id': 'str',
         'role': 'str',
         'webinar': 'bool',
+        'online_attendee_amount': 'int',
         'multi_stream_flag': 'int',
         'conf_mode': 'str',
         'schedule_vmr': 'bool',
@@ -109,6 +110,7 @@ class ConferenceInfo:
         'vmr_id': 'vmrID',
         'role': 'role',
         'webinar': 'webinar',
+        'online_attendee_amount': 'onlineAttendeeAmount',
         'multi_stream_flag': 'multiStreamFlag',
         'conf_mode': 'confMode',
         'schedule_vmr': 'scheduleVmr',
@@ -118,7 +120,7 @@ class ConferenceInfo:
         'cycle_sub_conf_id': 'cycleSubConfID'
     }
 
-    def __init__(self, conference_id=None, subject=None, size=None, time_zone_id=None, start_time=None, end_time=None, media_types=None, conference_state=None, language=None, access_number=None, password_entry=None, user_uuid=None, scheduser_name=None, conference_type=None, conf_type=None, cycle_params=None, is_auto_mute=None, is_auto_record=None, chair_join_uri=None, guest_join_uri=None, audience_join_uri=None, record_type=None, aux_address=None, live_address=None, record_aux_stream=None, record_auth_type=None, live_url=None, conf_config_info=None, vmr_flag=None, is_has_record_file=None, vmr_conference_id=None, conf_uuid=None, part_attendee_info=None, terminl_count=None, normal_count=None, dept_name=None, vmr_id=None, role=None, webinar=None, multi_stream_flag=None, conf_mode=None, schedule_vmr=None, concurrent_participants=None, pic_display=None, sub_confs=None, cycle_sub_conf_id=None):
+    def __init__(self, conference_id=None, subject=None, size=None, time_zone_id=None, start_time=None, end_time=None, media_types=None, conference_state=None, language=None, access_number=None, password_entry=None, user_uuid=None, scheduser_name=None, conference_type=None, conf_type=None, cycle_params=None, is_auto_mute=None, is_auto_record=None, chair_join_uri=None, guest_join_uri=None, audience_join_uri=None, record_type=None, aux_address=None, live_address=None, record_aux_stream=None, record_auth_type=None, live_url=None, conf_config_info=None, vmr_flag=None, is_has_record_file=None, vmr_conference_id=None, conf_uuid=None, part_attendee_info=None, terminl_count=None, normal_count=None, dept_name=None, vmr_id=None, role=None, webinar=None, online_attendee_amount=None, multi_stream_flag=None, conf_mode=None, schedule_vmr=None, concurrent_participants=None, pic_display=None, sub_confs=None, cycle_sub_conf_id=None):
         """ConferenceInfo
 
         The model defined in huaweicloud sdk
@@ -201,6 +203,8 @@ class ConferenceInfo:
         :type role: str
         :param webinar: 是否是网络研讨会。
         :type webinar: bool
+        :param online_attendee_amount: 当前在线与会人数。包含被邀入会和主动入会的与会者。 &gt; 仅在“[[查询在线会议列表](https://support.huaweicloud.com/api-meeting/meeting_21_0025.html)](tag:hws)[[查询在线会议列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0025.html)](tag:hk)”接口中返回。 
+        :type online_attendee_amount: int
         :param multi_stream_flag: 标识是否为多流视频会议。 * 1：多流会议 
         :type multi_stream_flag: int
         :param conf_mode: 会议类型模型。 * COMMON：MCU会议 * RTC：MMR会议 
@@ -258,6 +262,7 @@ class ConferenceInfo:
         self._vmr_id = None
         self._role = None
         self._webinar = None
+        self._online_attendee_amount = None
         self._multi_stream_flag = None
         self._conf_mode = None
         self._schedule_vmr = None
@@ -345,6 +350,8 @@ class ConferenceInfo:
             self.role = role
         if webinar is not None:
             self.webinar = webinar
+        if online_attendee_amount is not None:
+            self.online_attendee_amount = online_attendee_amount
         if multi_stream_flag is not None:
             self.multi_stream_flag = multi_stream_flag
         if conf_mode is not None:
@@ -1213,6 +1220,28 @@ class ConferenceInfo:
         :type webinar: bool
         """
         self._webinar = webinar
+
+    @property
+    def online_attendee_amount(self):
+        """Gets the online_attendee_amount of this ConferenceInfo.
+
+        当前在线与会人数。包含被邀入会和主动入会的与会者。 > 仅在“[[查询在线会议列表](https://support.huaweicloud.com/api-meeting/meeting_21_0025.html)](tag:hws)[[查询在线会议列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0025.html)](tag:hk)”接口中返回。 
+
+        :return: The online_attendee_amount of this ConferenceInfo.
+        :rtype: int
+        """
+        return self._online_attendee_amount
+
+    @online_attendee_amount.setter
+    def online_attendee_amount(self, online_attendee_amount):
+        """Sets the online_attendee_amount of this ConferenceInfo.
+
+        当前在线与会人数。包含被邀入会和主动入会的与会者。 > 仅在“[[查询在线会议列表](https://support.huaweicloud.com/api-meeting/meeting_21_0025.html)](tag:hws)[[查询在线会议列表](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0025.html)](tag:hk)”接口中返回。 
+
+        :param online_attendee_amount: The online_attendee_amount of this ConferenceInfo.
+        :type online_attendee_amount: int
+        """
+        self._online_attendee_amount = online_attendee_amount
 
     @property
     def multi_stream_flag(self):

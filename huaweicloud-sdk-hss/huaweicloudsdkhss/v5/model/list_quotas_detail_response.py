@@ -22,7 +22,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     openapi_types = {
         'packet_cycle_num': 'int',
-        'on_demand_numn': 'int',
+        'on_demand_num': 'int',
         'used_num': 'int',
         'idle_num': 'int',
         'normal_num': 'int',
@@ -35,7 +35,7 @@ class ListQuotasDetailResponse(SdkResponse):
 
     attribute_map = {
         'packet_cycle_num': 'packet_cycle_num',
-        'on_demand_numn': 'on_demand_numn',
+        'on_demand_num': 'on_demand_num',
         'used_num': 'used_num',
         'idle_num': 'idle_num',
         'normal_num': 'normal_num',
@@ -46,15 +46,15 @@ class ListQuotasDetailResponse(SdkResponse):
         'data_list': 'data_list'
     }
 
-    def __init__(self, packet_cycle_num=None, on_demand_numn=None, used_num=None, idle_num=None, normal_num=None, expired_num=None, freeze_num=None, quota_statistics_list=None, total_num=None, data_list=None):
+    def __init__(self, packet_cycle_num=None, on_demand_num=None, used_num=None, idle_num=None, normal_num=None, expired_num=None, freeze_num=None, quota_statistics_list=None, total_num=None, data_list=None):
         """ListQuotasDetailResponse
 
         The model defined in huaweicloud sdk
 
         :param packet_cycle_num: 包周期配额数
         :type packet_cycle_num: int
-        :param on_demand_numn: 按需配额数
-        :type on_demand_numn: int
+        :param on_demand_num: 按需配额数
+        :type on_demand_num: int
         :param used_num: 已使用配额数
         :type used_num: int
         :param idle_num: 空闲配额数
@@ -76,7 +76,7 @@ class ListQuotasDetailResponse(SdkResponse):
         super(ListQuotasDetailResponse, self).__init__()
 
         self._packet_cycle_num = None
-        self._on_demand_numn = None
+        self._on_demand_num = None
         self._used_num = None
         self._idle_num = None
         self._normal_num = None
@@ -89,8 +89,8 @@ class ListQuotasDetailResponse(SdkResponse):
 
         if packet_cycle_num is not None:
             self.packet_cycle_num = packet_cycle_num
-        if on_demand_numn is not None:
-            self.on_demand_numn = on_demand_numn
+        if on_demand_num is not None:
+            self.on_demand_num = on_demand_num
         if used_num is not None:
             self.used_num = used_num
         if idle_num is not None:
@@ -131,26 +131,26 @@ class ListQuotasDetailResponse(SdkResponse):
         self._packet_cycle_num = packet_cycle_num
 
     @property
-    def on_demand_numn(self):
-        """Gets the on_demand_numn of this ListQuotasDetailResponse.
+    def on_demand_num(self):
+        """Gets the on_demand_num of this ListQuotasDetailResponse.
 
         按需配额数
 
-        :return: The on_demand_numn of this ListQuotasDetailResponse.
+        :return: The on_demand_num of this ListQuotasDetailResponse.
         :rtype: int
         """
-        return self._on_demand_numn
+        return self._on_demand_num
 
-    @on_demand_numn.setter
-    def on_demand_numn(self, on_demand_numn):
-        """Sets the on_demand_numn of this ListQuotasDetailResponse.
+    @on_demand_num.setter
+    def on_demand_num(self, on_demand_num):
+        """Sets the on_demand_num of this ListQuotasDetailResponse.
 
         按需配额数
 
-        :param on_demand_numn: The on_demand_numn of this ListQuotasDetailResponse.
-        :type on_demand_numn: int
+        :param on_demand_num: The on_demand_num of this ListQuotasDetailResponse.
+        :type on_demand_num: int
         """
-        self._on_demand_numn = on_demand_numn
+        self._on_demand_num = on_demand_num
 
     @property
     def used_num(self):

@@ -32,7 +32,9 @@ class RestConfConfigDTO:
         'guest_pwd': 'str',
         'vmr_id_type': 'int',
         'prolong_length': 'int',
-        'enable_waiting_room': 'bool'
+        'enable_waiting_room': 'bool',
+        'is_host_camera_on': 'bool',
+        'is_guest_camera_on': 'bool'
     }
 
     attribute_map = {
@@ -47,10 +49,12 @@ class RestConfConfigDTO:
         'guest_pwd': 'guestPwd',
         'vmr_id_type': 'vmrIDType',
         'prolong_length': 'prolongLength',
-        'enable_waiting_room': 'enableWaitingRoom'
+        'enable_waiting_room': 'enableWaitingRoom',
+        'is_host_camera_on': 'isHostCameraOn',
+        'is_guest_camera_on': 'isGuestCameraOn'
     }
 
-    def __init__(self, is_send_notify=None, is_send_sms=None, is_send_calendar=None, is_auto_mute=None, is_hard_terminal_auto_mute=None, is_guest_free_pwd=None, call_in_restriction=None, allow_guest_start_conf=None, guest_pwd=None, vmr_id_type=None, prolong_length=None, enable_waiting_room=None):
+    def __init__(self, is_send_notify=None, is_send_sms=None, is_send_calendar=None, is_auto_mute=None, is_hard_terminal_auto_mute=None, is_guest_free_pwd=None, call_in_restriction=None, allow_guest_start_conf=None, guest_pwd=None, vmr_id_type=None, prolong_length=None, enable_waiting_room=None, is_host_camera_on=None, is_guest_camera_on=None):
         """RestConfConfigDTO
 
         The model defined in huaweicloud sdk
@@ -79,6 +83,10 @@ class RestConfConfigDTO:
         :type prolong_length: int
         :param enable_waiting_room: 开启或者关闭等候室。 * true：开启 * false：不开启
         :type enable_waiting_room: bool
+        :param is_host_camera_on: 主持人入会是否开启摄像头。 * true：开启 * false：不开启
+        :type is_host_camera_on: bool
+        :param is_guest_camera_on: 来宾入会是否开启摄像头。 * true：开启 * false：不开启
+        :type is_guest_camera_on: bool
         """
         
         
@@ -95,6 +103,8 @@ class RestConfConfigDTO:
         self._vmr_id_type = None
         self._prolong_length = None
         self._enable_waiting_room = None
+        self._is_host_camera_on = None
+        self._is_guest_camera_on = None
         self.discriminator = None
 
         if is_send_notify is not None:
@@ -121,6 +131,10 @@ class RestConfConfigDTO:
             self.prolong_length = prolong_length
         if enable_waiting_room is not None:
             self.enable_waiting_room = enable_waiting_room
+        if is_host_camera_on is not None:
+            self.is_host_camera_on = is_host_camera_on
+        if is_guest_camera_on is not None:
+            self.is_guest_camera_on = is_guest_camera_on
 
     @property
     def is_send_notify(self):
@@ -385,6 +399,50 @@ class RestConfConfigDTO:
         :type enable_waiting_room: bool
         """
         self._enable_waiting_room = enable_waiting_room
+
+    @property
+    def is_host_camera_on(self):
+        """Gets the is_host_camera_on of this RestConfConfigDTO.
+
+        主持人入会是否开启摄像头。 * true：开启 * false：不开启
+
+        :return: The is_host_camera_on of this RestConfConfigDTO.
+        :rtype: bool
+        """
+        return self._is_host_camera_on
+
+    @is_host_camera_on.setter
+    def is_host_camera_on(self, is_host_camera_on):
+        """Sets the is_host_camera_on of this RestConfConfigDTO.
+
+        主持人入会是否开启摄像头。 * true：开启 * false：不开启
+
+        :param is_host_camera_on: The is_host_camera_on of this RestConfConfigDTO.
+        :type is_host_camera_on: bool
+        """
+        self._is_host_camera_on = is_host_camera_on
+
+    @property
+    def is_guest_camera_on(self):
+        """Gets the is_guest_camera_on of this RestConfConfigDTO.
+
+        来宾入会是否开启摄像头。 * true：开启 * false：不开启
+
+        :return: The is_guest_camera_on of this RestConfConfigDTO.
+        :rtype: bool
+        """
+        return self._is_guest_camera_on
+
+    @is_guest_camera_on.setter
+    def is_guest_camera_on(self, is_guest_camera_on):
+        """Sets the is_guest_camera_on of this RestConfConfigDTO.
+
+        来宾入会是否开启摄像头。 * true：开启 * false：不开启
+
+        :param is_guest_camera_on: The is_guest_camera_on of this RestConfConfigDTO.
+        :type is_guest_camera_on: bool
+        """
+        self._is_guest_camera_on = is_guest_camera_on
 
     def to_dict(self):
         """Returns the model properties as a dict"""

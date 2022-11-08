@@ -17080,7 +17080,7 @@ class RomaAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
+            resource_path='/v2/{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
             method='GET',
             path_params=path_params,
             query_params=query_params,
@@ -17200,7 +17200,7 @@ class RomaAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
+            resource_path='/v2/{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
             method='DELETE',
             path_params=path_params,
             query_params=query_params,
@@ -17330,7 +17330,7 @@ class RomaAsyncClient(Client):
         auth_settings = []
 
         return self.call_api(
-            resource_path='/v2{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
+            resource_path='/v2/{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
             method='PUT',
             path_params=path_params,
             query_params=query_params,

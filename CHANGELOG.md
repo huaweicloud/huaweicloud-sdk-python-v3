@@ -1,3 +1,42 @@
+# 3.1.9 2022-11-08
+
+### HuaweiCloud SDK HSS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `ListQuotasDetail`:
+    - Add the response parameter `on_demand_num`
+    - Remove the response parameter `on_demand_numn`
+
+### HuaweiCloud SDK Meeting
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameters `onlineAttendeeAmount`, `isHostCameraOn`, `isGuestCameraOn` to the interface `SearchMeetings`
+  - Changes of the interface `CreateMeeting`:
+    - Add the request parameters `isHostCameraOn`, `isGuestCameraOn`
+    - Add the response parameters `onlineAttendeeAmount`, `isHostCameraOn`, `isGuestCameraOn`
+  - Changes of the interface `UpdateMeeting`:
+    - Add the request parameters `isHostCameraOn`, `isGuestCameraOn`
+    - Add the response parameters `onlineAttendeeAmount`, `isHostCameraOn`, `isGuestCameraOn`
+  - Add the response parameters `onlineAttendeeAmount`, `isHostCameraOn`, `isGuestCameraOn` to the interface `ShowMeetingDetail`
+  - Add the response parameters `onlineAttendeeAmount`, `isHostCameraOn`, `isGuestCameraOn` to the interface `SearchOnlineMeetings`
+  - Add the response parameters `onlineAttendeeAmount`, `isHostCameraOn`, `isGuestCameraOn` to the interface `ShowOnlineMeetingDetail`
+  - Add the response parameters `onlineAttendeeAmount`, `isHostCameraOn`, `isGuestCameraOn` to the interface `SearchHisMeetings`
+  - Add the response parameters `onlineAttendeeAmount`, `isHostCameraOn`, `isGuestCameraOn` to the interface `ShowHisMeetingDetail`
+  - Changes of the interface `CreateRecurringMeeting`:
+    - Add the request parameters `isHostCameraOn`, `isGuestCameraOn`
+    - Add the response parameters `onlineAttendeeAmount`, `isHostCameraOn`, `isGuestCameraOn`
+  - Changes of the interface `UpdateRecurringMeeting`:
+    - Add the request parameters `isHostCameraOn`, `isGuestCameraOn`
+    - Add the response parameters `onlineAttendeeAmount`, `isHostCameraOn`, `isGuestCameraOn`
+
 # 3.1.8 2022-11-03
 
 ### HuaweiCloud SDK DevSecurity

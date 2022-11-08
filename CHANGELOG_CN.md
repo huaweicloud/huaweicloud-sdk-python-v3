@@ -1,3 +1,42 @@
+# 3.1.9 2022-11-08
+
+### HuaweiCloud SDK HSS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListQuotasDetail`:
+    - 新增响应参数 `on_demand_num`
+    - 移除响应参数 `on_demand_numn`
+
+### HuaweiCloud SDK Meeting
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`SearchMeetings`新增响应参数 `onlineAttendeeAmount`、`isHostCameraOn`、`isGuestCameraOn`
+  - 接口`CreateMeeting`:
+    - 新增请求参数 `isHostCameraOn`、`isGuestCameraOn`
+    - 新增响应参数 `onlineAttendeeAmount`、`isHostCameraOn`、`isGuestCameraOn`
+  - 接口`UpdateMeeting`:
+    - 新增请求参数 `isHostCameraOn`、`isGuestCameraOn`
+    - 新增响应参数 `onlineAttendeeAmount`、`isHostCameraOn`、`isGuestCameraOn`
+  - 接口`ShowMeetingDetail`新增响应参数 `onlineAttendeeAmount`、`isHostCameraOn`、`isGuestCameraOn`
+  - 接口`SearchOnlineMeetings`新增响应参数 `onlineAttendeeAmount`、`isHostCameraOn`、`isGuestCameraOn`
+  - 接口`ShowOnlineMeetingDetail`新增响应参数 `onlineAttendeeAmount`、`isHostCameraOn`、`isGuestCameraOn`
+  - 接口`SearchHisMeetings`新增响应参数 `onlineAttendeeAmount`、`isHostCameraOn`、`isGuestCameraOn`
+  - 接口`ShowHisMeetingDetail`新增响应参数 `onlineAttendeeAmount`、`isHostCameraOn`、`isGuestCameraOn`
+  - 接口`CreateRecurringMeeting`:
+    - 新增请求参数 `isHostCameraOn`、`isGuestCameraOn`
+    - 新增响应参数 `onlineAttendeeAmount`、`isHostCameraOn`、`isGuestCameraOn`
+  - 接口`UpdateRecurringMeeting`:
+    - 新增请求参数 `isHostCameraOn`、`isGuestCameraOn`
+    - 新增响应参数 `onlineAttendeeAmount`、`isHostCameraOn`、`isGuestCameraOn`
+
 # 3.1.8 2022-11-03
 
 ### HuaweiCloud SDK DevSecurity

@@ -89,7 +89,7 @@ class DomainsWithPort:
         :type sources: list[:class:`huaweicloudsdkcdn.v1.SourceWithPort`]
         :param domain_origin_host: 
         :type domain_origin_host: :class:`huaweicloudsdkcdn.v1.DomainOriginHost`
-        :param https_status: 是否开启HTTPS加速。
+        :param https_status: 是否开启HTTPS加速。 0：代表未开启HTTPS加速； 1：代表开启HTTPS加速，且回源方式为协议跟随； 2：代表开启HTTPS加速，且回源方式为HTTP； 3：代表开启HTTPS加速，且回源方式为HTTPS。
         :type https_status: int
         :param create_time: 域名创建时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
         :type create_time: int
@@ -103,15 +103,15 @@ class DomainsWithPort:
         :type auto_refresh_preheat: int
         :param service_area: 华为云CDN提供的加速服务范围，包含：mainland_china中国大陆、outside_mainland_china中国大陆境外、global全球。
         :type service_area: str
-        :param range_status: Range回源状态。
+        :param range_status: Range回源状态（off代表关闭 on代表开启）。
         :type range_status: str
-        :param follow_status: 回源跟随状态。
+        :param follow_status: 回源跟随状态（off代表关闭 on代表开启）。
         :type follow_status: str
-        :param origin_status: 是否暂停源站回源。
+        :param origin_status: 是否暂停源站回源（off代表关闭 on代表开启）。
         :type origin_status: str
-        :param banned_reason: 域名禁用原因
+        :param banned_reason: 域名禁用原因。 1：该域名涉嫌违规内容（涉黄/涉赌/涉毒/涉政）已被禁用； 2：该域名因备案失效已被禁用； 3：该域名遭受攻击，已被禁用； 150：该域名涉嫌违规内容涉黄已被禁用； 151：该域名涉嫌违规内容涉政已被禁用； 152：该域名涉嫌违规内容涉暴已被禁用； 153：该域名涉嫌违规内容涉赌已被禁用。
         :type banned_reason: str
-        :param locked_reason: 域名锁定原因
+        :param locked_reason: 域名锁定原因（Changing the config, please wait）。
         :type locked_reason: str
         :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，不传表示查询默认项目。注意：当使用子账号调用接口时，该参数必传。
         :type enterprise_project_id: str
@@ -363,7 +363,7 @@ class DomainsWithPort:
     def https_status(self):
         """Gets the https_status of this DomainsWithPort.
 
-        是否开启HTTPS加速。
+        是否开启HTTPS加速。 0：代表未开启HTTPS加速； 1：代表开启HTTPS加速，且回源方式为协议跟随； 2：代表开启HTTPS加速，且回源方式为HTTP； 3：代表开启HTTPS加速，且回源方式为HTTPS。
 
         :return: The https_status of this DomainsWithPort.
         :rtype: int
@@ -374,7 +374,7 @@ class DomainsWithPort:
     def https_status(self, https_status):
         """Sets the https_status of this DomainsWithPort.
 
-        是否开启HTTPS加速。
+        是否开启HTTPS加速。 0：代表未开启HTTPS加速； 1：代表开启HTTPS加速，且回源方式为协议跟随； 2：代表开启HTTPS加速，且回源方式为HTTP； 3：代表开启HTTPS加速，且回源方式为HTTPS。
 
         :param https_status: The https_status of this DomainsWithPort.
         :type https_status: int
@@ -517,7 +517,7 @@ class DomainsWithPort:
     def range_status(self):
         """Gets the range_status of this DomainsWithPort.
 
-        Range回源状态。
+        Range回源状态（off代表关闭 on代表开启）。
 
         :return: The range_status of this DomainsWithPort.
         :rtype: str
@@ -528,7 +528,7 @@ class DomainsWithPort:
     def range_status(self, range_status):
         """Sets the range_status of this DomainsWithPort.
 
-        Range回源状态。
+        Range回源状态（off代表关闭 on代表开启）。
 
         :param range_status: The range_status of this DomainsWithPort.
         :type range_status: str
@@ -539,7 +539,7 @@ class DomainsWithPort:
     def follow_status(self):
         """Gets the follow_status of this DomainsWithPort.
 
-        回源跟随状态。
+        回源跟随状态（off代表关闭 on代表开启）。
 
         :return: The follow_status of this DomainsWithPort.
         :rtype: str
@@ -550,7 +550,7 @@ class DomainsWithPort:
     def follow_status(self, follow_status):
         """Sets the follow_status of this DomainsWithPort.
 
-        回源跟随状态。
+        回源跟随状态（off代表关闭 on代表开启）。
 
         :param follow_status: The follow_status of this DomainsWithPort.
         :type follow_status: str
@@ -561,7 +561,7 @@ class DomainsWithPort:
     def origin_status(self):
         """Gets the origin_status of this DomainsWithPort.
 
-        是否暂停源站回源。
+        是否暂停源站回源（off代表关闭 on代表开启）。
 
         :return: The origin_status of this DomainsWithPort.
         :rtype: str
@@ -572,7 +572,7 @@ class DomainsWithPort:
     def origin_status(self, origin_status):
         """Sets the origin_status of this DomainsWithPort.
 
-        是否暂停源站回源。
+        是否暂停源站回源（off代表关闭 on代表开启）。
 
         :param origin_status: The origin_status of this DomainsWithPort.
         :type origin_status: str
@@ -583,7 +583,7 @@ class DomainsWithPort:
     def banned_reason(self):
         """Gets the banned_reason of this DomainsWithPort.
 
-        域名禁用原因
+        域名禁用原因。 1：该域名涉嫌违规内容（涉黄/涉赌/涉毒/涉政）已被禁用； 2：该域名因备案失效已被禁用； 3：该域名遭受攻击，已被禁用； 150：该域名涉嫌违规内容涉黄已被禁用； 151：该域名涉嫌违规内容涉政已被禁用； 152：该域名涉嫌违规内容涉暴已被禁用； 153：该域名涉嫌违规内容涉赌已被禁用。
 
         :return: The banned_reason of this DomainsWithPort.
         :rtype: str
@@ -594,7 +594,7 @@ class DomainsWithPort:
     def banned_reason(self, banned_reason):
         """Sets the banned_reason of this DomainsWithPort.
 
-        域名禁用原因
+        域名禁用原因。 1：该域名涉嫌违规内容（涉黄/涉赌/涉毒/涉政）已被禁用； 2：该域名因备案失效已被禁用； 3：该域名遭受攻击，已被禁用； 150：该域名涉嫌违规内容涉黄已被禁用； 151：该域名涉嫌违规内容涉政已被禁用； 152：该域名涉嫌违规内容涉暴已被禁用； 153：该域名涉嫌违规内容涉赌已被禁用。
 
         :param banned_reason: The banned_reason of this DomainsWithPort.
         :type banned_reason: str
@@ -605,7 +605,7 @@ class DomainsWithPort:
     def locked_reason(self):
         """Gets the locked_reason of this DomainsWithPort.
 
-        域名锁定原因
+        域名锁定原因（Changing the config, please wait）。
 
         :return: The locked_reason of this DomainsWithPort.
         :rtype: str
@@ -616,7 +616,7 @@ class DomainsWithPort:
     def locked_reason(self, locked_reason):
         """Sets the locked_reason of this DomainsWithPort.
 
-        域名锁定原因
+        域名锁定原因（Changing the config, please wait）。
 
         :param locked_reason: The locked_reason of this DomainsWithPort.
         :type locked_reason: str
