@@ -454,6 +454,64 @@ class CphClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def delete_share_files(self, request):
+        """删除共享存储文件
+
+        删除共享存储目录中文件，该功能仅在支持共享存储的云手机规格上可实现。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteShareFiles
+        :type request: :class:`huaweicloudsdkcph.v1.DeleteShareFilesRequest`
+        :rtype: :class:`huaweicloudsdkcph.v1.DeleteShareFilesResponse`
+        """
+        return self.delete_share_files_with_http_info(request)
+
+    def delete_share_files_with_http_info(self, request):
+        all_params = ['delete_share_files_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/cloud-phone/phones/share-files',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteShareFilesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def import_traffic(self, request):
         """云手机流量导流
 
@@ -1065,9 +1123,9 @@ class CphClient(Client):
             request_type=request.__class__.__name__)
 
     def push_share_files(self, request):
-        """推送删除共享存储文件
+        """推送共享存储文件
 
-        推送文件至共享存储目录中，删除共享存储目录中文件，该功能仅在支持共享存储的云手机规格上可实现。
+        推送文件至共享存储目录中，该功能仅在支持共享存储的云手机规格上可实现。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -1599,7 +1657,7 @@ class CphClient(Client):
         return self.stop_cloud_phone_with_http_info(request)
 
     def stop_cloud_phone_with_http_info(self, request):
-        all_params = ['stop_cloud_phone_reuqest_body']
+        all_params = ['stop_cloud_phone_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):

@@ -42,8 +42,7 @@ class DeleteServerNicsReq:
         self._nics = None
         self.discriminator = None
 
-        if nics is not None:
-            self.nics = nics
+        self.nics = nics
 
     @property
     def nics(self):

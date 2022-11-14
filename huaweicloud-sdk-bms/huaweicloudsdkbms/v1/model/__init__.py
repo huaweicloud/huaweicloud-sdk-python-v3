@@ -103,6 +103,7 @@ from huaweicloudsdkbms.v1.model.server_details import ServerDetails
 from huaweicloudsdkbms.v1.model.server_nics import ServerNics
 from huaweicloudsdkbms.v1.model.server_nics_req import ServerNicsReq
 from huaweicloudsdkbms.v1.model.server_os_scheduler_hints import ServerOsSchedulerHints
+from huaweicloudsdkbms.v1.model.server_remote_console import ServerRemoteConsole
 from huaweicloudsdkbms.v1.model.servers_info_type import ServersInfoType
 from huaweicloudsdkbms.v1.model.servers_list import ServersList
 from huaweicloudsdkbms.v1.model.show_baremetal_server_interface_attachments_request import ShowBaremetalServerInterfaceAttachmentsRequest

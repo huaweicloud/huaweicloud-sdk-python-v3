@@ -23,18 +23,16 @@ class PushShareFilesRequestBody:
     openapi_types = {
         'bucket_name': 'str',
         'object_path': 'str',
-        'server_ids': 'list[str]',
-        'file_paths': 'str'
+        'server_ids': 'list[str]'
     }
 
     attribute_map = {
         'bucket_name': 'bucket_name',
         'object_path': 'object_path',
-        'server_ids': 'server_ids',
-        'file_paths': 'file_paths'
+        'server_ids': 'server_ids'
     }
 
-    def __init__(self, bucket_name=None, object_path=None, server_ids=None, file_paths=None):
+    def __init__(self, bucket_name=None, object_path=None, server_ids=None):
         """PushShareFilesRequestBody
 
         The model defined in huaweicloud sdk
@@ -45,8 +43,6 @@ class PushShareFilesRequestBody:
         :type object_path: str
         :param server_ids: 云手机服务器ID列表。
         :type server_ids: list[str]
-        :param file_paths: 所需删除的共享存储文件绝对路径。以/开头，最大长度4096字节，目前只支持大小写字母、数字、点（.）、斜线（/）、中划线（-）、空格、下划线（_）、等号（&#x3D;），不支持中文。路径中不能包含.. 上层目录路径，防止跨目录攻击。仅删除共享存储接口使用。
-        :type file_paths: str
         """
         
         
@@ -54,16 +50,11 @@ class PushShareFilesRequestBody:
         self._bucket_name = None
         self._object_path = None
         self._server_ids = None
-        self._file_paths = None
         self.discriminator = None
 
-        if bucket_name is not None:
-            self.bucket_name = bucket_name
-        if object_path is not None:
-            self.object_path = object_path
+        self.bucket_name = bucket_name
+        self.object_path = object_path
         self.server_ids = server_ids
-        if file_paths is not None:
-            self.file_paths = file_paths
 
     @property
     def bucket_name(self):
@@ -130,28 +121,6 @@ class PushShareFilesRequestBody:
         :type server_ids: list[str]
         """
         self._server_ids = server_ids
-
-    @property
-    def file_paths(self):
-        """Gets the file_paths of this PushShareFilesRequestBody.
-
-        所需删除的共享存储文件绝对路径。以/开头，最大长度4096字节，目前只支持大小写字母、数字、点（.）、斜线（/）、中划线（-）、空格、下划线（_）、等号（=），不支持中文。路径中不能包含.. 上层目录路径，防止跨目录攻击。仅删除共享存储接口使用。
-
-        :return: The file_paths of this PushShareFilesRequestBody.
-        :rtype: str
-        """
-        return self._file_paths
-
-    @file_paths.setter
-    def file_paths(self, file_paths):
-        """Sets the file_paths of this PushShareFilesRequestBody.
-
-        所需删除的共享存储文件绝对路径。以/开头，最大长度4096字节，目前只支持大小写字母、数字、点（.）、斜线（/）、中划线（-）、空格、下划线（_）、等号（=），不支持中文。路径中不能包含.. 上层目录路径，防止跨目录攻击。仅删除共享存储接口使用。
-
-        :param file_paths: The file_paths of this PushShareFilesRequestBody.
-        :type file_paths: str
-        """
-        self._file_paths = file_paths
 
     def to_dict(self):
         """Returns the model properties as a dict"""

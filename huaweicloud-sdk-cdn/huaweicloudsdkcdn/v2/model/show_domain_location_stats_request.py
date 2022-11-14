@@ -65,7 +65,7 @@ class ShowDomainLocationStatsRequest:
         :type stat_type: str
         :param interval: - 查询时间间隔，单位：秒，取值说明： - 300(5分钟)：最大查询跨度2天 - 3600(1小时)：最大查询跨度7天 - 86400(1天)：最大查询跨度31天 - 如果不传，默认取对应时间跨度的最小间隔。
         :type interval: int
-        :param country: 国家编码，多个以英文逗号分隔，all表示全部，取值见附录
+        :param country: - 国家&amp;地区编码，多个以英文逗号分隔，all表示全部，取值见附录 - 访问运营商统计数据时不能填写 - 访问top_url数据时不能填写 - 访问区域情况数据时只能填写cn(中国)
         :type country: str
         :param province: 省份编码，当country为cn（中国）时有效，多个以英文逗号分隔，all表示全部，取值见附录
         :type province: str
@@ -246,7 +246,7 @@ class ShowDomainLocationStatsRequest:
     def country(self):
         """Gets the country of this ShowDomainLocationStatsRequest.
 
-        国家编码，多个以英文逗号分隔，all表示全部，取值见附录
+        - 国家&地区编码，多个以英文逗号分隔，all表示全部，取值见附录 - 访问运营商统计数据时不能填写 - 访问top_url数据时不能填写 - 访问区域情况数据时只能填写cn(中国)
 
         :return: The country of this ShowDomainLocationStatsRequest.
         :rtype: str
@@ -257,7 +257,7 @@ class ShowDomainLocationStatsRequest:
     def country(self, country):
         """Sets the country of this ShowDomainLocationStatsRequest.
 
-        国家编码，多个以英文逗号分隔，all表示全部，取值见附录
+        - 国家&地区编码，多个以英文逗号分隔，all表示全部，取值见附录 - 访问运营商统计数据时不能填写 - 访问top_url数据时不能填写 - 访问区域情况数据时只能填写cn(中国)
 
         :param country: The country of this ShowDomainLocationStatsRequest.
         :type country: str

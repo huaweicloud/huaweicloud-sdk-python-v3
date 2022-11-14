@@ -1,3 +1,144 @@
+# 3.1.10 2022-11-14
+
+### HuaweiCloud SDK BMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - The response parameter `job_id` changed to required of the interface `DeleteServerNics`
+  - Changes of the interface `UpdateBaremetalServerInterfaceAttachments`:
+    - Modify the type `string` -> `boolean` of the request parameter `delete_on_termination`
+    - The request parameter `delete_on_termination` changed to required
+  - Add the response parameter `remote_console` to the interface `ShowServerRemoteConsole`
+
+### HuaweiCloud SDK CPH
+
+- _Features_
+  - Support the interface `DeleteShareFiles`
+- _Bug Fix_
+  - None
+- _Change_
+  - Changes of the interface `StopCloudPhone`:
+    - Add the request parameter `StopCloudPhoneRequestBody`
+    - Remove the request parameter `StopCloudPhoneReuqestBody`
+  - Changes of the interface `ShowCloudPhoneServerDetail`:
+    - Add the response parameters `server_name`, `availability_zone`, `server_id`, `server_model_name`, `phone_model_name`, `keypair_name`, `status`, `vpc_id`, `cidr`, `vpc_cidr`, `subnet_id`, `subnet_cidr`, `resource_project_id`, `metadata`, `addresses`, `network_version`, `create_time`, `update_time`
+    - Remove the response parameter `servers`
+  - Remove the request parameter `br_cidr` from the interface `CreateNet2CloudPhoneServer`
+
+### HuaweiCloud SDK CSMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `sys_tags` to the interface `ListSecretTags`
+
+### HuaweiCloud SDK DDS
+
+- _Features_
+  - Support the following interfaces：
+    - `ShowSlowlogDesensitizationSwitch`
+    - `ListRecycleInstances`
+    - `CheckWeakPassword`
+    - `ShowUpgradeDuration`
+    - `ShowDiskUsage`
+    - `ListSslCertDownloadAddress`
+    - `DeleteAuditLog`
+    - `ShowRecyclePolicy`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the request parameter `X-Language` to the interface `SwitchSlowlogDesensitization`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - Support the interface `ShowWorkflowExecutionForPage`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `enable_stream_response` to the interface `ListWorkflow`
+  - Add the response parameter `enable_stream_response` to the interface `UpdateWorkFlow`
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - Support the interfaces `ListBackPools`, `ListBackPoolMembers`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK Live
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the request parameter `specify_project` from the interface `ListStreamForbidden`
+  - Remove the request parameter `specify_project` from the interface `DeleteStreamForbidden`
+  - Remove the request parameter `specify_project` from the interface `UpdateStreamForbidden`
+  - Remove the request parameter `specify_project` from the interface `CreateStreamForbidden`
+  - Remove the enum values `global` from the response parameter `service_area` from the interface `ShowDomain`
+  - Remove the enum values `global` from the response parameter `service_area` from the interface `UpdateDomain`
+  - Remove the enum values `global` from the request parameter `service_area` from the interface `CreateDomain`
+  - Remove the request parameter `specify_project` from the interface `DeleteDomainMapping`
+  - Remove the request parameter `specify_project` from the interface `CreateDomainMapping`
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `resource_id` to the interface `ListHosts`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the interfaces `ShowPostgresqlParamValue`, `UpdatePostgresqlParameterValue`, `ListDrRelations`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the enum values `ESSD` to the request parameter `type` to the interface `CreateInstance`
+  - Add the enum values `ESSD` to the response parameter `type` to the interface `ListInstances`
+  - Add the enum values `ESSD` to the request parameter `type` to the interface `CreateRestoreInstance`
+  - Add the request parameter `is_revoke_public_privilege` to the interface `CreatePostgresqlDatabase`
+
+### HuaweiCloud SDK VPCEP
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Modify the type `string` -> `array` of the response parameter `Action` of the interface `ListEndpoints`
+  - Modify the type `string` -> `array` of the response parameter `Action` of the interface `DeleteEndpointPolicy`
+  - Changes of the interface `UpdateEndpointPolicy`:
+    - Modify the type `string` -> `array` of the request parameter `Action`
+    - Modify the type `string` -> `array` of the response parameter `Action`
+
+### HuaweiCloud SDK WAF
+
+- _Features_
+  - Support the interfaces `MigrateCompositeHosts`, `ShowSourceIp`, `ListNoticeConfigs`, `UpdateAlertNoticeConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - Add the response parameter `instance_name` to the interface `ListInstance`
+  - Add the response parameters `enabled`, `ltsAttackStreamID` to the interface `ShowLtsInfoConfig`
+  - Changes of the interface `UpdateLtsInfoConfig`:
+    - Add the request parameters `enabled`, `ltsAttackStreamID`
+    - Add the response parameters `enabled`, `ltsAttackStreamID`
+    - The request parameter `enabale` changed to not required
+  - Add the response parameter `description` to the interface `ShowIpGroup`
+
 # 3.1.9 2022-11-08
 
 ### HuaweiCloud SDK HSS

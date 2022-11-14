@@ -21,24 +21,20 @@ class DeleteDomainMappingRequest:
     sensitive_list = []
 
     openapi_types = {
-        'specify_project': 'str',
         'pull_domain': 'str',
         'push_domain': 'str'
     }
 
     attribute_map = {
-        'specify_project': 'specify_project',
         'pull_domain': 'pull_domain',
         'push_domain': 'push_domain'
     }
 
-    def __init__(self, specify_project=None, pull_domain=None, push_domain=None):
+    def __init__(self, pull_domain=None, push_domain=None):
         """DeleteDomainMappingRequest
 
         The model defined in huaweicloud sdk
 
-        :param specify_project: op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
-        :type specify_project: str
         :param pull_domain: 直播播放域名
         :type pull_domain: str
         :param push_domain: 直播推流域名
@@ -47,37 +43,12 @@ class DeleteDomainMappingRequest:
         
         
 
-        self._specify_project = None
         self._pull_domain = None
         self._push_domain = None
         self.discriminator = None
 
-        if specify_project is not None:
-            self.specify_project = specify_project
         self.pull_domain = pull_domain
         self.push_domain = push_domain
-
-    @property
-    def specify_project(self):
-        """Gets the specify_project of this DeleteDomainMappingRequest.
-
-        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
-
-        :return: The specify_project of this DeleteDomainMappingRequest.
-        :rtype: str
-        """
-        return self._specify_project
-
-    @specify_project.setter
-    def specify_project(self, specify_project):
-        """Sets the specify_project of this DeleteDomainMappingRequest.
-
-        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
-
-        :param specify_project: The specify_project of this DeleteDomainMappingRequest.
-        :type specify_project: str
-        """
-        self._specify_project = specify_project
 
     @property
     def pull_domain(self):

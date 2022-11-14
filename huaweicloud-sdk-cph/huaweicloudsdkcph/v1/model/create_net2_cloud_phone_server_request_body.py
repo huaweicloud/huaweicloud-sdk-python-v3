@@ -27,7 +27,6 @@ class CreateNet2CloudPhoneServerRequestBody:
         'image_id': 'str',
         'count': 'int',
         'keypair_name': 'str',
-        'br_cidr': 'str',
         'ports': 'list[CreateNet2CloudPhoneServerRequestBodyPorts]',
         'extend_param': 'CreateNet2CloudPhoneServerRequestBodyExtendParam',
         'tenant_vpc_id': 'str',
@@ -44,7 +43,6 @@ class CreateNet2CloudPhoneServerRequestBody:
         'image_id': 'image_id',
         'count': 'count',
         'keypair_name': 'keypair_name',
-        'br_cidr': 'br_cidr',
         'ports': 'ports',
         'extend_param': 'extend_param',
         'tenant_vpc_id': 'tenant_vpc_id',
@@ -54,7 +52,7 @@ class CreateNet2CloudPhoneServerRequestBody:
         'availability_zone': 'availability_zone'
     }
 
-    def __init__(self, server_name=None, server_model_name=None, phone_model_name=None, image_id=None, count=None, keypair_name=None, br_cidr=None, ports=None, extend_param=None, tenant_vpc_id=None, nics=None, public_ip=None, band_width=None, availability_zone=None):
+    def __init__(self, server_name=None, server_model_name=None, phone_model_name=None, image_id=None, count=None, keypair_name=None, ports=None, extend_param=None, tenant_vpc_id=None, nics=None, public_ip=None, band_width=None, availability_zone=None):
         """CreateNet2CloudPhoneServerRequestBody
 
         The model defined in huaweicloud sdk
@@ -71,8 +69,6 @@ class CreateNet2CloudPhoneServerRequestBody:
         :type count: int
         :param keypair_name: 密钥对名称，不超过64个字节，用于云手机ADB登录
         :type keypair_name: str
-        :param br_cidr: 
-        :type br_cidr: str
         :param ports: 云手机启用的应用端口，云手机服务会做端口转发
         :type ports: list[:class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequestBodyPorts`]
         :param extend_param: 
@@ -97,7 +93,6 @@ class CreateNet2CloudPhoneServerRequestBody:
         self._image_id = None
         self._count = None
         self._keypair_name = None
-        self._br_cidr = None
         self._ports = None
         self._extend_param = None
         self._tenant_vpc_id = None
@@ -114,8 +109,6 @@ class CreateNet2CloudPhoneServerRequestBody:
         self.count = count
         if keypair_name is not None:
             self.keypair_name = keypair_name
-        if br_cidr is not None:
-            self.br_cidr = br_cidr
         if ports is not None:
             self.ports = ports
         self.extend_param = extend_param
@@ -257,26 +250,6 @@ class CreateNet2CloudPhoneServerRequestBody:
         :type keypair_name: str
         """
         self._keypair_name = keypair_name
-
-    @property
-    def br_cidr(self):
-        """Gets the br_cidr of this CreateNet2CloudPhoneServerRequestBody.
-
-
-        :return: The br_cidr of this CreateNet2CloudPhoneServerRequestBody.
-        :rtype: str
-        """
-        return self._br_cidr
-
-    @br_cidr.setter
-    def br_cidr(self, br_cidr):
-        """Sets the br_cidr of this CreateNet2CloudPhoneServerRequestBody.
-
-
-        :param br_cidr: The br_cidr of this CreateNet2CloudPhoneServerRequestBody.
-        :type br_cidr: str
-        """
-        self._br_cidr = br_cidr
 
     @property
     def ports(self):

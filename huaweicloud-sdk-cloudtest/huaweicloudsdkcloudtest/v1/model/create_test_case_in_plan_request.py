@@ -39,7 +39,7 @@ class CreateTestCaseInPlanRequest:
 
         :param project_id: 项目唯一标识，固定长度32位字符
         :type project_id: str
-        :param plan_id: 计划唯一标识，固定长度32位字符
+        :param plan_id: 计划唯一标识，长度11-34位字符
         :type plan_id: str
         :param body: Body of the CreateTestCaseInPlanRequest
         :type body: :class:`huaweicloudsdkcloudtest.v1.CreateTestCaseInPlanRequestBody`
@@ -83,7 +83,7 @@ class CreateTestCaseInPlanRequest:
     def plan_id(self):
         """Gets the plan_id of this CreateTestCaseInPlanRequest.
 
-        计划唯一标识，固定长度32位字符
+        计划唯一标识，长度11-34位字符
 
         :return: The plan_id of this CreateTestCaseInPlanRequest.
         :rtype: str
@@ -94,7 +94,7 @@ class CreateTestCaseInPlanRequest:
     def plan_id(self, plan_id):
         """Sets the plan_id of this CreateTestCaseInPlanRequest.
 
-        计划唯一标识，固定长度32位字符
+        计划唯一标识，长度11-34位字符
 
         :param plan_id: The plan_id of this CreateTestCaseInPlanRequest.
         :type plan_id: str

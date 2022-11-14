@@ -21,7 +21,7 @@ class InterfaceAttachmentsReq:
     sensitive_list = []
 
     openapi_types = {
-        'delete_on_termination': 'str'
+        'delete_on_termination': 'bool'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class InterfaceAttachmentsReq:
         The model defined in huaweicloud sdk
 
         :param delete_on_termination: 
-        :type delete_on_termination: str
+        :type delete_on_termination: bool
         """
         
         
@@ -42,8 +42,7 @@ class InterfaceAttachmentsReq:
         self._delete_on_termination = None
         self.discriminator = None
 
-        if delete_on_termination is not None:
-            self.delete_on_termination = delete_on_termination
+        self.delete_on_termination = delete_on_termination
 
     @property
     def delete_on_termination(self):
@@ -51,7 +50,7 @@ class InterfaceAttachmentsReq:
 
 
         :return: The delete_on_termination of this InterfaceAttachmentsReq.
-        :rtype: str
+        :rtype: bool
         """
         return self._delete_on_termination
 
@@ -61,7 +60,7 @@ class InterfaceAttachmentsReq:
 
 
         :param delete_on_termination: The delete_on_termination of this InterfaceAttachmentsReq.
-        :type delete_on_termination: str
+        :type delete_on_termination: bool
         """
         self._delete_on_termination = delete_on_termination
 

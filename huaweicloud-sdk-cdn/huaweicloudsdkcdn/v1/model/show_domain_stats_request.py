@@ -65,7 +65,7 @@ class ShowDomainStatsRequest:
         :type group_by: str
         :param service_area: 服务区域：mainland_china（默认）、outside_mainland_china，当查询回源类指标时该参数无效。
         :type service_area: str
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\&quot;all\&quot;表示所有项目。注意：当使用子账号调用接口时，该参数必传。
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\&quot;all\&quot;表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
         :type enterprise_project_id: str
         """
         
@@ -276,7 +276,7 @@ class ShowDomainStatsRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ShowDomainStatsRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
         :return: The enterprise_project_id of this ShowDomainStatsRequest.
         :rtype: str
@@ -287,7 +287,7 @@ class ShowDomainStatsRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ShowDomainStatsRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowDomainStatsRequest.
         :type enterprise_project_id: str

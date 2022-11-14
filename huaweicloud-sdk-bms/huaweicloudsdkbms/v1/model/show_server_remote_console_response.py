@@ -21,20 +21,49 @@ class ShowServerRemoteConsoleResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'remote_console': 'ServerRemoteConsole'
     }
 
     attribute_map = {
+        'remote_console': 'remote_console'
     }
 
-    def __init__(self):
+    def __init__(self, remote_console=None):
         """ShowServerRemoteConsoleResponse
 
         The model defined in huaweicloud sdk
 
+        :param remote_console: 
+        :type remote_console: :class:`huaweicloudsdkbms.v1.ServerRemoteConsole`
         """
         
         super(ShowServerRemoteConsoleResponse, self).__init__()
+
+        self._remote_console = None
         self.discriminator = None
+
+        if remote_console is not None:
+            self.remote_console = remote_console
+
+    @property
+    def remote_console(self):
+        """Gets the remote_console of this ShowServerRemoteConsoleResponse.
+
+
+        :return: The remote_console of this ShowServerRemoteConsoleResponse.
+        :rtype: :class:`huaweicloudsdkbms.v1.ServerRemoteConsole`
+        """
+        return self._remote_console
+
+    @remote_console.setter
+    def remote_console(self, remote_console):
+        """Sets the remote_console of this ShowServerRemoteConsoleResponse.
+
+
+        :param remote_console: The remote_console of this ShowServerRemoteConsoleResponse.
+        :type remote_console: :class:`huaweicloudsdkbms.v1.ServerRemoteConsole`
+        """
+        self._remote_console = remote_console
 
     def to_dict(self):
         """Returns the model properties as a dict"""

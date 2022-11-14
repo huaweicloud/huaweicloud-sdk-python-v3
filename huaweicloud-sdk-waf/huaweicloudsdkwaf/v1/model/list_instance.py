@@ -41,7 +41,8 @@ class ListInstance:
         'specification': 'str',
         'hosts': 'list[IdHostnameEntry]',
         'server_id': 'str',
-        'create_time': 'int'
+        'create_time': 'int',
+        'instance_name': 'str'
     }
 
     attribute_map = {
@@ -65,10 +66,11 @@ class ListInstance:
         'specification': 'specification',
         'hosts': 'hosts',
         'server_id': 'serverId',
-        'create_time': 'create_time'
+        'create_time': 'create_time',
+        'instance_name': 'instance_name'
     }
 
-    def __init__(self, id=None, instancename=None, region=None, zone=None, arch=None, cpu_flavor=None, vpc_id=None, subnet_id=None, service_ip=None, security_group_ids=None, status=None, run_status=None, access_status=None, upgradable=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, specification=None, hosts=None, server_id=None, create_time=None):
+    def __init__(self, id=None, instancename=None, region=None, zone=None, arch=None, cpu_flavor=None, vpc_id=None, subnet_id=None, service_ip=None, security_group_ids=None, status=None, run_status=None, access_status=None, upgradable=None, cloud_service_type=None, resource_type=None, resource_spec_code=None, specification=None, hosts=None, server_id=None, create_time=None, instance_name=None):
         """ListInstance
 
         The model defined in huaweicloud sdk
@@ -93,9 +95,9 @@ class ListInstance:
         :type service_ip: str
         :param security_group_ids: 独享引擎绑定的安全组
         :type security_group_ids: list[str]
-        :param status: 独享引擎计费状态 \\n - 0：正常计费 \\n - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务 \\n - 2：终止，资源和数据将清除
+        :param status: 独享引擎计费状态   - 0：正常计费   - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务   - 2：终止，资源和数据将清除
         :type status: int
-        :param run_status: 独享引擎运行状态 \\ n - 0：创建中 \\n - 1：运行中 \\n - 2：删除中 \\n - 3：已删除 \\n - 4：创建失败 \\n - 5：已冻结 \\n - 6：异常 \\n - 7：更新中 \\n - 8：更新失败
+        :param run_status: 独享引擎运行状态   - 0：创建中   - 1：运行中   - 2：删除中   - 3：已删除   - 4：创建失败   - 5：已冻结   - 6：异常   - 7：更新中   - 8：更新失败
         :type run_status: int
         :param access_status: 独享引擎接入状态（0：未接入，1：已接入）
         :type access_status: int
@@ -115,6 +117,8 @@ class ListInstance:
         :type server_id: str
         :param create_time: 引擎实例创建时间
         :type create_time: int
+        :param instance_name: 独享引擎实例名称
+        :type instance_name: str
         """
         
         
@@ -140,6 +144,7 @@ class ListInstance:
         self._hosts = None
         self._server_id = None
         self._create_time = None
+        self._instance_name = None
         self.discriminator = None
 
         if id is not None:
@@ -184,6 +189,8 @@ class ListInstance:
             self.server_id = server_id
         if create_time is not None:
             self.create_time = create_time
+        if instance_name is not None:
+            self.instance_name = instance_name
 
     @property
     def id(self):
@@ -409,7 +416,7 @@ class ListInstance:
     def status(self):
         """Gets the status of this ListInstance.
 
-        独享引擎计费状态 \\n - 0：正常计费 \\n - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务 \\n - 2：终止，资源和数据将清除
+        独享引擎计费状态   - 0：正常计费   - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务   - 2：终止，资源和数据将清除
 
         :return: The status of this ListInstance.
         :rtype: int
@@ -420,7 +427,7 @@ class ListInstance:
     def status(self, status):
         """Sets the status of this ListInstance.
 
-        独享引擎计费状态 \\n - 0：正常计费 \\n - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务 \\n - 2：终止，资源和数据将清除
+        独享引擎计费状态   - 0：正常计费   - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务   - 2：终止，资源和数据将清除
 
         :param status: The status of this ListInstance.
         :type status: int
@@ -431,7 +438,7 @@ class ListInstance:
     def run_status(self):
         """Gets the run_status of this ListInstance.
 
-        独享引擎运行状态 \\ n - 0：创建中 \\n - 1：运行中 \\n - 2：删除中 \\n - 3：已删除 \\n - 4：创建失败 \\n - 5：已冻结 \\n - 6：异常 \\n - 7：更新中 \\n - 8：更新失败
+        独享引擎运行状态   - 0：创建中   - 1：运行中   - 2：删除中   - 3：已删除   - 4：创建失败   - 5：已冻结   - 6：异常   - 7：更新中   - 8：更新失败
 
         :return: The run_status of this ListInstance.
         :rtype: int
@@ -442,7 +449,7 @@ class ListInstance:
     def run_status(self, run_status):
         """Sets the run_status of this ListInstance.
 
-        独享引擎运行状态 \\ n - 0：创建中 \\n - 1：运行中 \\n - 2：删除中 \\n - 3：已删除 \\n - 4：创建失败 \\n - 5：已冻结 \\n - 6：异常 \\n - 7：更新中 \\n - 8：更新失败
+        独享引擎运行状态   - 0：创建中   - 1：运行中   - 2：删除中   - 3：已删除   - 4：创建失败   - 5：已冻结   - 6：异常   - 7：更新中   - 8：更新失败
 
         :param run_status: The run_status of this ListInstance.
         :type run_status: int
@@ -646,6 +653,28 @@ class ListInstance:
         :type create_time: int
         """
         self._create_time = create_time
+
+    @property
+    def instance_name(self):
+        """Gets the instance_name of this ListInstance.
+
+        独享引擎实例名称
+
+        :return: The instance_name of this ListInstance.
+        :rtype: str
+        """
+        return self._instance_name
+
+    @instance_name.setter
+    def instance_name(self, instance_name):
+        """Sets the instance_name of this ListInstance.
+
+        独享引擎实例名称
+
+        :param instance_name: The instance_name of this ListInstance.
+        :type instance_name: str
+        """
+        self._instance_name = instance_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

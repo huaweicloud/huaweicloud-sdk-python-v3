@@ -9,6 +9,8 @@ from huaweicloudsdkgsl.v3.gsl_async_client import GslAsyncClient
 from huaweicloudsdkgsl.v3.model.add_or_modify_attribute_req import AddOrModifyAttributeReq
 from huaweicloudsdkgsl.v3.model.add_or_modify_tag_req import AddOrModifyTagReq
 from huaweicloudsdkgsl.v3.model.attribute_req import AttributeReq
+from huaweicloudsdkgsl.v3.model.back_pool_mem_vo import BackPoolMemVO
+from huaweicloudsdkgsl.v3.model.back_pool_vo import BackPoolVO
 from huaweicloudsdkgsl.v3.model.batch_set_attributes_req import BatchSetAttributesReq
 from huaweicloudsdkgsl.v3.model.batch_set_attributes_request import BatchSetAttributesRequest
 from huaweicloudsdkgsl.v3.model.batch_set_attributes_response import BatchSetAttributesResponse
@@ -37,6 +39,10 @@ from huaweicloudsdkgsl.v3.model.exceed_cut_net_req import ExceedCutNetReq
 from huaweicloudsdkgsl.v3.model.flow_usage_vo import FlowUsageVo
 from huaweicloudsdkgsl.v3.model.list_attributes_request import ListAttributesRequest
 from huaweicloudsdkgsl.v3.model.list_attributes_response import ListAttributesResponse
+from huaweicloudsdkgsl.v3.model.list_back_pool_members_request import ListBackPoolMembersRequest
+from huaweicloudsdkgsl.v3.model.list_back_pool_members_response import ListBackPoolMembersResponse
+from huaweicloudsdkgsl.v3.model.list_back_pools_request import ListBackPoolsRequest
+from huaweicloudsdkgsl.v3.model.list_back_pools_response import ListBackPoolsResponse
 from huaweicloudsdkgsl.v3.model.list_flow_by_sim_cards_req import ListFlowBySimCardsReq
 from huaweicloudsdkgsl.v3.model.list_flow_by_sim_cards_request import ListFlowBySimCardsRequest
 from huaweicloudsdkgsl.v3.model.list_flow_by_sim_cards_response import ListFlowBySimCardsResponse

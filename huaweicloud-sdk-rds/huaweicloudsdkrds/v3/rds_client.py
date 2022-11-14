@@ -1528,6 +1528,64 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_dr_relations(self, request):
+        """list_dr_relations
+
+        批量查询容灾实例信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListDrRelations
+        :type request: :class:`huaweicloudsdkrds.v3.ListDrRelationsRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ListDrRelationsResponse`
+        """
+        return self.list_dr_relations_with_http_info(request)
+
+    def list_dr_relations_with_http_info(self, request):
+        all_params = ['x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/disaster-recovery-relation',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListDrRelationsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_error_logs(self, request):
         """查询数据库错误日志
 
@@ -6975,6 +7033,68 @@ class RdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_postgresql_param_value(self, request):
+        """获取实例指定参数的值
+
+        获取实例指定参数的值。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowPostgresqlParamValue
+        :type request: :class:`huaweicloudsdkrds.v3.ShowPostgresqlParamValueRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.ShowPostgresqlParamValueResponse`
+        """
+        return self.show_postgresql_param_value_with_http_info(request)
+
+    def show_postgresql_param_value_with_http_info(self, request):
+        all_params = ['instance_id', 'name', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'name' in local_var_params:
+            path_params['name'] = local_var_params['name']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/parameter/{name}',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowPostgresqlParamValueResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def start_database_proxy(self, request):
         """开启数据库代理
 
@@ -7092,6 +7212,70 @@ class RdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='StopDatabaseProxyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_postgresql_parameter_value(self, request):
+        """修改实例指定参数的值
+
+        修改实例指定参数的值。
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdatePostgresqlParameterValue
+        :type request: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlParameterValueRequest`
+        :rtype: :class:`huaweicloudsdkrds.v3.UpdatePostgresqlParameterValueResponse`
+        """
+        return self.update_postgresql_parameter_value_with_http_info(request)
+
+    def update_postgresql_parameter_value_with_http_info(self, request):
+        all_params = ['instance_id', 'name', 'modify_param_request', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+        if 'name' in local_var_params:
+            path_params['name'] = local_var_params['name']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/parameter/{name}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdatePostgresqlParameterValueResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,

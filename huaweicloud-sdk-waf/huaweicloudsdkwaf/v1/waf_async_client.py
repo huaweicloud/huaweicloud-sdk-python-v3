@@ -2302,6 +2302,64 @@ class WafAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_notice_configs_async(self, request):
+        """查询告警通知配置
+
+        查询告警通知配置
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListNoticeConfigs
+        :type request: :class:`huaweicloudsdkwaf.v1.ListNoticeConfigsRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ListNoticeConfigsResponse`
+        """
+        return self.list_notice_configs_with_http_info(request)
+
+    def list_notice_configs_with_http_info(self, request):
+        all_params = ['enterprise_project_id']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/waf/alerts',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListNoticeConfigsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_overviews_classification_async(self, request):
         """查询安全总览分类统计top信息
 
@@ -2968,6 +3026,68 @@ class WafAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def migrate_composite_hosts_async(self, request):
+        """按企业项目迁移防护域名
+
+        按企业项目迁移防护域名，仅专业版与独享版支持该功能
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for MigrateCompositeHosts
+        :type request: :class:`huaweicloudsdkwaf.v1.MigrateCompositeHostsRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.MigrateCompositeHostsResponse`
+        """
+        return self.migrate_composite_hosts_with_http_info(request)
+
+    def migrate_composite_hosts_with_http_info(self, request):
+        all_params = ['enterprise_project_id', 'target_enterprise_project_id', 'migrate_composite_hosts_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'target_enterprise_project_id' in local_var_params:
+            query_params.append(('target_enterprise_project_id', local_var_params['target_enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/composite-waf/hosts/migration',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='MigrateCompositeHostsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def rename_instance_async(self, request):
         """重命名WAF独享引擎
 
@@ -3624,6 +3744,124 @@ class WafAsyncClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_source_ip_async(self, request):
+        """查询WAF回源Ip信息
+
+        查询WAF回源Ip信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowSourceIp
+        :type request: :class:`huaweicloudsdkwaf.v1.ShowSourceIpRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.ShowSourceIpResponse`
+        """
+        return self.show_source_ip_with_http_info(request)
+
+    def show_source_ip_with_http_info(self, request):
+        all_params = []
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/{project_id}/waf/config/source-ip',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowSourceIpResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def update_alert_notice_config_async(self, request):
+        """更新告警通知配置
+
+        更新告警通知配置
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for UpdateAlertNoticeConfig
+        :type request: :class:`huaweicloudsdkwaf.v1.UpdateAlertNoticeConfigRequest`
+        :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAlertNoticeConfigResponse`
+        """
+        return self.update_alert_notice_config_with_http_info(request)
+
+    def update_alert_notice_config_with_http_info(self, request):
+        all_params = ['x_language', 'alert_id', 'update_alert_notice_config_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'alert_id' in local_var_params:
+            path_params['alert_id'] = local_var_params['alert_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/waf/alert/{alert_id}',
+            method='PUT',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='UpdateAlertNoticeConfigResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def update_certificate_async(self, request):
         """修改证书
 
@@ -3939,7 +4177,7 @@ class WafAsyncClient(Client):
     def update_lts_info_config_async(self, request):
         """配置全量日志lts
 
-        配置全量日志lts，该接口可用来开启与关闭wa全量日志以及配置日志组和日志流。日志组id和日志流id可前往云日志服务获取。配置的日志流id要属于所配置的日志组。
+        配置全量日志lts，该接口可用来开启与关闭waf全量日志以及配置日志组和日志流。日志组id和日志流id可前往云日志服务获取。配置的日志流id要属于所配置的日志组。
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.

@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class RecyclePolicyResponseBody:
+class Pager:
 
     """
     Attributes:
@@ -21,48 +21,109 @@ class RecyclePolicyResponseBody:
     sensitive_list = []
 
     openapi_types = {
-        'recycle_policy': 'RecyclePolicy'
+        'page': 'int',
+        'page_size': 'int',
+        'total_rows': 'int'
     }
 
     attribute_map = {
-        'recycle_policy': 'recycle_policy'
+        'page': 'page',
+        'page_size': 'page_size',
+        'total_rows': 'total_rows'
     }
 
-    def __init__(self, recycle_policy=None):
-        """RecyclePolicyResponseBody
+    def __init__(self, page=None, page_size=None, total_rows=None):
+        """Pager
 
         The model defined in huaweicloud sdk
 
-        :param recycle_policy: 
-        :type recycle_policy: :class:`huaweicloudsdkdds.v3.RecyclePolicy`
+        :param page: 页码
+        :type page: int
+        :param page_size: 每页大小
+        :type page_size: int
+        :param total_rows: 总条数
+        :type total_rows: int
         """
         
         
 
-        self._recycle_policy = None
+        self._page = None
+        self._page_size = None
+        self._total_rows = None
         self.discriminator = None
 
-        self.recycle_policy = recycle_policy
+        if page is not None:
+            self.page = page
+        if page_size is not None:
+            self.page_size = page_size
+        if total_rows is not None:
+            self.total_rows = total_rows
 
     @property
-    def recycle_policy(self):
-        """Gets the recycle_policy of this RecyclePolicyResponseBody.
+    def page(self):
+        """Gets the page of this Pager.
 
+        页码
 
-        :return: The recycle_policy of this RecyclePolicyResponseBody.
-        :rtype: :class:`huaweicloudsdkdds.v3.RecyclePolicy`
+        :return: The page of this Pager.
+        :rtype: int
         """
-        return self._recycle_policy
+        return self._page
 
-    @recycle_policy.setter
-    def recycle_policy(self, recycle_policy):
-        """Sets the recycle_policy of this RecyclePolicyResponseBody.
+    @page.setter
+    def page(self, page):
+        """Sets the page of this Pager.
 
+        页码
 
-        :param recycle_policy: The recycle_policy of this RecyclePolicyResponseBody.
-        :type recycle_policy: :class:`huaweicloudsdkdds.v3.RecyclePolicy`
+        :param page: The page of this Pager.
+        :type page: int
         """
-        self._recycle_policy = recycle_policy
+        self._page = page
+
+    @property
+    def page_size(self):
+        """Gets the page_size of this Pager.
+
+        每页大小
+
+        :return: The page_size of this Pager.
+        :rtype: int
+        """
+        return self._page_size
+
+    @page_size.setter
+    def page_size(self, page_size):
+        """Sets the page_size of this Pager.
+
+        每页大小
+
+        :param page_size: The page_size of this Pager.
+        :type page_size: int
+        """
+        self._page_size = page_size
+
+    @property
+    def total_rows(self):
+        """Gets the total_rows of this Pager.
+
+        总条数
+
+        :return: The total_rows of this Pager.
+        :rtype: int
+        """
+        return self._total_rows
+
+    @total_rows.setter
+    def total_rows(self, total_rows):
+        """Sets the total_rows of this Pager.
+
+        总条数
+
+        :param total_rows: The total_rows of this Pager.
+        :type total_rows: int
+        """
+        self._total_rows = total_rows
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -106,7 +167,7 @@ class RecyclePolicyResponseBody:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RecyclePolicyResponseBody):
+        if not isinstance(other, Pager):
             return False
 
         return self.__dict__ == other.__dict__

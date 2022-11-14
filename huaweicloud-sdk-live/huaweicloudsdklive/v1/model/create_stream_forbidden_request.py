@@ -21,58 +21,29 @@ class CreateStreamForbiddenRequest:
     sensitive_list = []
 
     openapi_types = {
-        'specify_project': 'str',
         'body': 'StreamForbiddenSetting'
     }
 
     attribute_map = {
-        'specify_project': 'specify_project',
         'body': 'body'
     }
 
-    def __init__(self, specify_project=None, body=None):
+    def __init__(self, body=None):
         """CreateStreamForbiddenRequest
 
         The model defined in huaweicloud sdk
 
-        :param specify_project: op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
-        :type specify_project: str
         :param body: Body of the CreateStreamForbiddenRequest
         :type body: :class:`huaweicloudsdklive.v1.StreamForbiddenSetting`
         """
         
         
 
-        self._specify_project = None
         self._body = None
         self.discriminator = None
 
-        if specify_project is not None:
-            self.specify_project = specify_project
         if body is not None:
             self.body = body
-
-    @property
-    def specify_project(self):
-        """Gets the specify_project of this CreateStreamForbiddenRequest.
-
-        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
-
-        :return: The specify_project of this CreateStreamForbiddenRequest.
-        :rtype: str
-        """
-        return self._specify_project
-
-    @specify_project.setter
-    def specify_project(self, specify_project):
-        """Sets the specify_project of this CreateStreamForbiddenRequest.
-
-        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
-
-        :param specify_project: The specify_project of this CreateStreamForbiddenRequest.
-        :type specify_project: str
-        """
-        self._specify_project = specify_project
 
     @property
     def body(self):

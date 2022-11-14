@@ -138,6 +138,7 @@ from huaweicloudsdkrds.v3.model.get_task_detail_list_rsp_jobs_instance import Ge
 from huaweicloudsdkrds.v3.model.grant_request import GrantRequest
 from huaweicloudsdkrds.v3.model.ha import Ha
 from huaweicloudsdkrds.v3.model.ha_response import HaResponse
+from huaweicloudsdkrds.v3.model.instance_dr_relation import InstanceDrRelation
 from huaweicloudsdkrds.v3.model.instance_request import InstanceRequest
 from huaweicloudsdkrds.v3.model.instance_response import InstanceResponse
 from huaweicloudsdkrds.v3.model.instance_restart_requset_body import InstanceRestartRequsetBody
@@ -167,6 +168,8 @@ from huaweicloudsdkrds.v3.model.list_datastores_request import ListDatastoresReq
 from huaweicloudsdkrds.v3.model.list_datastores_response import ListDatastoresResponse
 from huaweicloudsdkrds.v3.model.list_db_users_request import ListDbUsersRequest
 from huaweicloudsdkrds.v3.model.list_db_users_response import ListDbUsersResponse
+from huaweicloudsdkrds.v3.model.list_dr_relations_request import ListDrRelationsRequest
+from huaweicloudsdkrds.v3.model.list_dr_relations_response import ListDrRelationsResponse
 from huaweicloudsdkrds.v3.model.list_error_logs_new_request import ListErrorLogsNewRequest
 from huaweicloudsdkrds.v3.model.list_error_logs_new_response import ListErrorLogsNewResponse
 from huaweicloudsdkrds.v3.model.list_error_logs_request import ListErrorLogsRequest
@@ -216,6 +219,7 @@ from huaweicloudsdkrds.v3.model.migrate_follower_request import MigrateFollowerR
 from huaweicloudsdkrds.v3.model.migrate_follower_response import MigrateFollowerResponse
 from huaweicloudsdkrds.v3.model.modifiy_instance_name_request import ModifiyInstanceNameRequest
 from huaweicloudsdkrds.v3.model.modify_dns_name_request_body import ModifyDnsNameRequestBody
+from huaweicloudsdkrds.v3.model.modify_param_request import ModifyParamRequest
 from huaweicloudsdkrds.v3.model.modify_proxy_weight_request import ModifyProxyWeightRequest
 from huaweicloudsdkrds.v3.model.mysql_read_only_switch import MysqlReadOnlySwitch
 from huaweicloudsdkrds.v3.model.node_response import NodeResponse
@@ -323,10 +327,13 @@ from huaweicloudsdkrds.v3.model.show_instance_configuration_request import ShowI
 from huaweicloudsdkrds.v3.model.show_instance_configuration_response import ShowInstanceConfigurationResponse
 from huaweicloudsdkrds.v3.model.show_off_site_backup_policy_request import ShowOffSiteBackupPolicyRequest
 from huaweicloudsdkrds.v3.model.show_off_site_backup_policy_response import ShowOffSiteBackupPolicyResponse
+from huaweicloudsdkrds.v3.model.show_postgresql_param_value_request import ShowPostgresqlParamValueRequest
+from huaweicloudsdkrds.v3.model.show_postgresql_param_value_response import ShowPostgresqlParamValueResponse
 from huaweicloudsdkrds.v3.model.show_quotas_request import ShowQuotasRequest
 from huaweicloudsdkrds.v3.model.show_quotas_response import ShowQuotasResponse
 from huaweicloudsdkrds.v3.model.single2_ha import Single2Ha
 from huaweicloudsdkrds.v3.model.single2_ha_object import Single2HaObject
+from huaweicloudsdkrds.v3.model.slave_instance import SlaveInstance
 from huaweicloudsdkrds.v3.model.slow_log import SlowLog
 from huaweicloudsdkrds.v3.model.slow_log_file import SlowLogFile
 from huaweicloudsdkrds.v3.model.slow_log_statistics import SlowLogStatistics
@@ -391,6 +398,8 @@ from huaweicloudsdkrds.v3.model.update_port_request import UpdatePortRequest
 from huaweicloudsdkrds.v3.model.update_port_response import UpdatePortResponse
 from huaweicloudsdkrds.v3.model.update_postgresql_instance_alias_request import UpdatePostgresqlInstanceAliasRequest
 from huaweicloudsdkrds.v3.model.update_postgresql_instance_alias_response import UpdatePostgresqlInstanceAliasResponse
+from huaweicloudsdkrds.v3.model.update_postgresql_parameter_value_request import UpdatePostgresqlParameterValueRequest
+from huaweicloudsdkrds.v3.model.update_postgresql_parameter_value_response import UpdatePostgresqlParameterValueResponse
 from huaweicloudsdkrds.v3.model.update_rds_instance_alias_request import UpdateRdsInstanceAliasRequest
 from huaweicloudsdkrds.v3.model.update_read_weight_request import UpdateReadWeightRequest
 from huaweicloudsdkrds.v3.model.update_read_weight_response import UpdateReadWeightResponse

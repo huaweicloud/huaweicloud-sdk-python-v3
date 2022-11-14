@@ -26,7 +26,8 @@ class ShowIpGroupResponse(SdkResponse):
         'ips': 'str',
         'size': 'int',
         'rules': 'list[RuleInfo]',
-        'share_info': 'ShareInfo'
+        'share_info': 'ShareInfo',
+        'description': 'str'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class ShowIpGroupResponse(SdkResponse):
         'ips': 'ips',
         'size': 'size',
         'rules': 'rules',
-        'share_info': 'share_info'
+        'share_info': 'share_info',
+        'description': 'description'
     }
 
-    def __init__(self, id=None, name=None, ips=None, size=None, rules=None, share_info=None):
+    def __init__(self, id=None, name=None, ips=None, size=None, rules=None, share_info=None, description=None):
         """ShowIpGroupResponse
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class ShowIpGroupResponse(SdkResponse):
         :type rules: list[:class:`huaweicloudsdkwaf.v1.RuleInfo`]
         :param share_info: 
         :type share_info: :class:`huaweicloudsdkwaf.v1.ShareInfo`
+        :param description: 地址组描述
+        :type description: str
         """
         
         super(ShowIpGroupResponse, self).__init__()
@@ -65,6 +69,7 @@ class ShowIpGroupResponse(SdkResponse):
         self._size = None
         self._rules = None
         self._share_info = None
+        self._description = None
         self.discriminator = None
 
         if id is not None:
@@ -79,6 +84,8 @@ class ShowIpGroupResponse(SdkResponse):
             self.rules = rules
         if share_info is not None:
             self.share_info = share_info
+        if description is not None:
+            self.description = description
 
     @property
     def id(self):
@@ -209,6 +216,28 @@ class ShowIpGroupResponse(SdkResponse):
         :type share_info: :class:`huaweicloudsdkwaf.v1.ShareInfo`
         """
         self._share_info = share_info
+
+    @property
+    def description(self):
+        """Gets the description of this ShowIpGroupResponse.
+
+        地址组描述
+
+        :return: The description of this ShowIpGroupResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ShowIpGroupResponse.
+
+        地址组描述
+
+        :param description: The description of this ShowIpGroupResponse.
+        :type description: str
+        """
+        self._description = description
 
     def to_dict(self):
         """Returns the model properties as a dict"""

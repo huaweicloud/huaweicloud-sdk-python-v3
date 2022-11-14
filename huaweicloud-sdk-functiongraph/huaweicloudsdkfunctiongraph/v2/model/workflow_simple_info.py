@@ -21,6 +21,7 @@ class WorkflowSimpleInfo:
     sensitive_list = []
 
     openapi_types = {
+        'enable_stream_response': 'bool',
         'id': 'str',
         'workflow_urn': 'str',
         'name': 'str',
@@ -31,6 +32,7 @@ class WorkflowSimpleInfo:
     }
 
     attribute_map = {
+        'enable_stream_response': 'enable_stream_response',
         'id': 'id',
         'workflow_urn': 'workflow_urn',
         'name': 'name',
@@ -40,11 +42,13 @@ class WorkflowSimpleInfo:
         'created_by': 'created_by'
     }
 
-    def __init__(self, id=None, workflow_urn=None, name=None, description=None, created_time=None, updated_time=None, created_by=None):
+    def __init__(self, enable_stream_response=None, id=None, workflow_urn=None, name=None, description=None, created_time=None, updated_time=None, created_by=None):
         """WorkflowSimpleInfo
 
         The model defined in huaweicloud sdk
 
+        :param enable_stream_response: 函数流是否返回流式数据
+        :type enable_stream_response: bool
         :param id: 唯一标识ID，流程定义ID
         :type id: str
         :param workflow_urn: 函数工作流URN, 格式为： urn:fss:&lt;region_id&gt;:&lt;project_id&gt;:workflow:\\&lt;package\\&gt;:&lt;workflow_name&gt;:\\&lt;version\\&gt; 注意： package当前只支持default version当前只支持latest
@@ -63,6 +67,7 @@ class WorkflowSimpleInfo:
         
         
 
+        self._enable_stream_response = None
         self._id = None
         self._workflow_urn = None
         self._name = None
@@ -72,6 +77,7 @@ class WorkflowSimpleInfo:
         self._created_by = None
         self.discriminator = None
 
+        self.enable_stream_response = enable_stream_response
         self.id = id
         self.workflow_urn = workflow_urn
         self.name = name
@@ -79,6 +85,28 @@ class WorkflowSimpleInfo:
         self.created_time = created_time
         self.updated_time = updated_time
         self.created_by = created_by
+
+    @property
+    def enable_stream_response(self):
+        """Gets the enable_stream_response of this WorkflowSimpleInfo.
+
+        函数流是否返回流式数据
+
+        :return: The enable_stream_response of this WorkflowSimpleInfo.
+        :rtype: bool
+        """
+        return self._enable_stream_response
+
+    @enable_stream_response.setter
+    def enable_stream_response(self, enable_stream_response):
+        """Sets the enable_stream_response of this WorkflowSimpleInfo.
+
+        函数流是否返回流式数据
+
+        :param enable_stream_response: The enable_stream_response of this WorkflowSimpleInfo.
+        :type enable_stream_response: bool
+        """
+        self._enable_stream_response = enable_stream_response
 
     @property
     def id(self):

@@ -6,6 +6,7 @@ from __future__ import absolute_import
 from huaweicloudsdkwaf.v1.model.access_progress import AccessProgress
 from huaweicloudsdkwaf.v1.model.action import Action
 from huaweicloudsdkwaf.v1.model.advanced import Advanced
+from huaweicloudsdkwaf.v1.model.alert_notice_config_response import AlertNoticeConfigResponse
 from huaweicloudsdkwaf.v1.model.anti_tamper_rule_response_body import AntiTamperRuleResponseBody
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_request import ApplyCertificateToHostRequest
 from huaweicloudsdkwaf.v1.model.apply_certificate_to_host_request_body import ApplyCertificateToHostRequestBody
@@ -98,6 +99,7 @@ from huaweicloudsdkwaf.v1.model.ip_classification_item import IpClassificationIt
 from huaweicloudsdkwaf.v1.model.ip_group import IpGroup
 from huaweicloudsdkwaf.v1.model.ip_group_body import IpGroupBody
 from huaweicloudsdkwaf.v1.model.ip_item import IpItem
+from huaweicloudsdkwaf.v1.model.ips_item import IpsItem
 from huaweicloudsdkwaf.v1.model.list_antitamper_rule_request import ListAntitamperRuleRequest
 from huaweicloudsdkwaf.v1.model.list_antitamper_rule_response import ListAntitamperRuleResponse
 from huaweicloudsdkwaf.v1.model.list_bandwidth_timeline_request import ListBandwidthTimelineRequest
@@ -122,6 +124,8 @@ from huaweicloudsdkwaf.v1.model.list_instance_request import ListInstanceRequest
 from huaweicloudsdkwaf.v1.model.list_instance_response import ListInstanceResponse
 from huaweicloudsdkwaf.v1.model.list_ip_group_request import ListIpGroupRequest
 from huaweicloudsdkwaf.v1.model.list_ip_group_response import ListIpGroupResponse
+from huaweicloudsdkwaf.v1.model.list_notice_configs_request import ListNoticeConfigsRequest
+from huaweicloudsdkwaf.v1.model.list_notice_configs_response import ListNoticeConfigsResponse
 from huaweicloudsdkwaf.v1.model.list_overviews_classification_request import ListOverviewsClassificationRequest
 from huaweicloudsdkwaf.v1.model.list_overviews_classification_response import ListOverviewsClassificationResponse
 from huaweicloudsdkwaf.v1.model.list_policy_request import ListPolicyRequest
@@ -143,6 +147,9 @@ from huaweicloudsdkwaf.v1.model.list_value_list_response import ListValueListRes
 from huaweicloudsdkwaf.v1.model.list_whiteblackip_rule_request import ListWhiteblackipRuleRequest
 from huaweicloudsdkwaf.v1.model.list_whiteblackip_rule_response import ListWhiteblackipRuleResponse
 from huaweicloudsdkwaf.v1.model.lts_id_info import LtsIdInfo
+from huaweicloudsdkwaf.v1.model.migrate_composite_hosts_request import MigrateCompositeHostsRequest
+from huaweicloudsdkwaf.v1.model.migrate_composite_hosts_request_body import MigrateCompositeHostsRequestBody
+from huaweicloudsdkwaf.v1.model.migrate_composite_hosts_response import MigrateCompositeHostsResponse
 from huaweicloudsdkwaf.v1.model.policy_action import PolicyAction
 from huaweicloudsdkwaf.v1.model.policy_option import PolicyOption
 from huaweicloudsdkwaf.v1.model.policy_response import PolicyResponse
@@ -177,11 +184,16 @@ from huaweicloudsdkwaf.v1.model.show_policy_request import ShowPolicyRequest
 from huaweicloudsdkwaf.v1.model.show_policy_response import ShowPolicyResponse
 from huaweicloudsdkwaf.v1.model.show_premium_host_request import ShowPremiumHostRequest
 from huaweicloudsdkwaf.v1.model.show_premium_host_response import ShowPremiumHostResponse
+from huaweicloudsdkwaf.v1.model.show_source_ip_request import ShowSourceIpRequest
+from huaweicloudsdkwaf.v1.model.show_source_ip_response import ShowSourceIpResponse
 from huaweicloudsdkwaf.v1.model.simple_premium_waf_host import SimplePremiumWafHost
 from huaweicloudsdkwaf.v1.model.statistics_timeline_item import StatisticsTimelineItem
 from huaweicloudsdkwaf.v1.model.time_line_item import TimeLineItem
 from huaweicloudsdkwaf.v1.model.timeout_config import TimeoutConfig
 from huaweicloudsdkwaf.v1.model.traffic_mark import TrafficMark
+from huaweicloudsdkwaf.v1.model.update_alert_notice_config_request import UpdateAlertNoticeConfigRequest
+from huaweicloudsdkwaf.v1.model.update_alert_notice_config_request_body import UpdateAlertNoticeConfigRequestBody
+from huaweicloudsdkwaf.v1.model.update_alert_notice_config_response import UpdateAlertNoticeConfigResponse
 from huaweicloudsdkwaf.v1.model.update_certificate_request import UpdateCertificateRequest
 from huaweicloudsdkwaf.v1.model.update_certificate_request_body import UpdateCertificateRequestBody
 from huaweicloudsdkwaf.v1.model.update_certificate_response import UpdateCertificateResponse

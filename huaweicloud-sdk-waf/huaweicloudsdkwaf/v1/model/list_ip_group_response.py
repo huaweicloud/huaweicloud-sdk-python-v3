@@ -21,65 +21,43 @@ class ListIpGroupResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'cloud_total': 'int',
         'total': 'int',
-        'items': 'list[IpGroupBody]'
+        'items': 'list[IpGroupBody]',
+        'cloud_total': 'int'
     }
 
     attribute_map = {
-        'cloud_total': 'cloudTotal',
         'total': 'total',
-        'items': 'items'
+        'items': 'items',
+        'cloud_total': 'cloudTotal'
     }
 
-    def __init__(self, cloud_total=None, total=None, items=None):
+    def __init__(self, total=None, items=None, cloud_total=None):
         """ListIpGroupResponse
 
         The model defined in huaweicloud sdk
 
-        :param cloud_total: 该用户总的Ip地址组数量，包含本地与共享地址组
-        :type cloud_total: int
         :param total: 该用户当前企业项目下Ip地址组数量，只包含本地地址组
         :type total: int
         :param items: 地址组信息列表
         :type items: list[:class:`huaweicloudsdkwaf.v1.IpGroupBody`]
+        :param cloud_total: 该用户总的Ip地址组数量，包含本地与共享地址组
+        :type cloud_total: int
         """
         
         super(ListIpGroupResponse, self).__init__()
 
-        self._cloud_total = None
         self._total = None
         self._items = None
+        self._cloud_total = None
         self.discriminator = None
 
-        if cloud_total is not None:
-            self.cloud_total = cloud_total
         if total is not None:
             self.total = total
         if items is not None:
             self.items = items
-
-    @property
-    def cloud_total(self):
-        """Gets the cloud_total of this ListIpGroupResponse.
-
-        该用户总的Ip地址组数量，包含本地与共享地址组
-
-        :return: The cloud_total of this ListIpGroupResponse.
-        :rtype: int
-        """
-        return self._cloud_total
-
-    @cloud_total.setter
-    def cloud_total(self, cloud_total):
-        """Sets the cloud_total of this ListIpGroupResponse.
-
-        该用户总的Ip地址组数量，包含本地与共享地址组
-
-        :param cloud_total: The cloud_total of this ListIpGroupResponse.
-        :type cloud_total: int
-        """
-        self._cloud_total = cloud_total
+        if cloud_total is not None:
+            self.cloud_total = cloud_total
 
     @property
     def total(self):
@@ -124,6 +102,28 @@ class ListIpGroupResponse(SdkResponse):
         :type items: list[:class:`huaweicloudsdkwaf.v1.IpGroupBody`]
         """
         self._items = items
+
+    @property
+    def cloud_total(self):
+        """Gets the cloud_total of this ListIpGroupResponse.
+
+        该用户总的Ip地址组数量，包含本地与共享地址组
+
+        :return: The cloud_total of this ListIpGroupResponse.
+        :rtype: int
+        """
+        return self._cloud_total
+
+    @cloud_total.setter
+    def cloud_total(self, cloud_total):
+        """Sets the cloud_total of this ListIpGroupResponse.
+
+        该用户总的Ip地址组数量，包含本地与共享地址组
+
+        :param cloud_total: The cloud_total of this ListIpGroupResponse.
+        :type cloud_total: int
+        """
+        self._cloud_total = cloud_total
 
     def to_dict(self):
         """Returns the model properties as a dict"""

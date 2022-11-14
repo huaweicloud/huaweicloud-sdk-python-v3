@@ -23,7 +23,7 @@ class LtsIdInfo:
     openapi_types = {
         'lts_group_id': 'str',
         'lts_access_stream_id': 'str',
-        'lts_attack_stream_id': 'object'
+        'lts_attack_stream_id': 'str'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class LtsIdInfo:
         :param lts_access_stream_id: 访问日志流id
         :type lts_access_stream_id: str
         :param lts_attack_stream_id: 攻击日志流id
-        :type lts_attack_stream_id: object
+        :type lts_attack_stream_id: str
         """
         
         
@@ -110,7 +110,7 @@ class LtsIdInfo:
         攻击日志流id
 
         :return: The lts_attack_stream_id of this LtsIdInfo.
-        :rtype: object
+        :rtype: str
         """
         return self._lts_attack_stream_id
 
@@ -121,7 +121,7 @@ class LtsIdInfo:
         攻击日志流id
 
         :param lts_attack_stream_id: The lts_attack_stream_id of this LtsIdInfo.
-        :type lts_attack_stream_id: object
+        :type lts_attack_stream_id: str
         """
         self._lts_attack_stream_id = lts_attack_stream_id
 

@@ -65,7 +65,7 @@ class CreateInstanceRequestBody:
         :type arch: str
         :param instancename: 独享引擎名称前缀
         :type instancename: str
-        :param specification: 独享引擎版本规格，枚举值（企业版：waf.instance.enterprise，专业版：waf.instance.professional）
+        :param specification: 独享引擎版本规格   - 企业版：waf.instance.enterprise   - 专业版：waf.instance.professional
         :type specification: str
         :param cpu_flavor: 独享引擎ECS规格，实例规格企业版对应8U16G的ecs规格，专业版对应2U4G的ecs规格（通过调用ECS的ListFlavors接口获取应8U16G的ecs和2U4G的ecs对应规格id）
         :type cpu_flavor: str
@@ -77,7 +77,7 @@ class CreateInstanceRequestBody:
         :type security_group: list[str]
         :param count: 申请的独享引擎数量
         :type count: int
-        :param res_tenant: 是否为资源租户类   - true: 资源租户类   -false: 普通租户类
+        :param res_tenant: 是否为资源租户类   - true: 资源租户类   - false: 普通租户类
         :type res_tenant: bool
         """
         
@@ -225,7 +225,7 @@ class CreateInstanceRequestBody:
     def specification(self):
         """Gets the specification of this CreateInstanceRequestBody.
 
-        独享引擎版本规格，枚举值（企业版：waf.instance.enterprise，专业版：waf.instance.professional）
+        独享引擎版本规格   - 企业版：waf.instance.enterprise   - 专业版：waf.instance.professional
 
         :return: The specification of this CreateInstanceRequestBody.
         :rtype: str
@@ -236,7 +236,7 @@ class CreateInstanceRequestBody:
     def specification(self, specification):
         """Sets the specification of this CreateInstanceRequestBody.
 
-        独享引擎版本规格，枚举值（企业版：waf.instance.enterprise，专业版：waf.instance.professional）
+        独享引擎版本规格   - 企业版：waf.instance.enterprise   - 专业版：waf.instance.professional
 
         :param specification: The specification of this CreateInstanceRequestBody.
         :type specification: str
@@ -357,7 +357,7 @@ class CreateInstanceRequestBody:
     def res_tenant(self):
         """Gets the res_tenant of this CreateInstanceRequestBody.
 
-        是否为资源租户类   - true: 资源租户类   -false: 普通租户类
+        是否为资源租户类   - true: 资源租户类   - false: 普通租户类
 
         :return: The res_tenant of this CreateInstanceRequestBody.
         :rtype: bool
@@ -368,7 +368,7 @@ class CreateInstanceRequestBody:
     def res_tenant(self, res_tenant):
         """Sets the res_tenant of this CreateInstanceRequestBody.
 
-        是否为资源租户类   - true: 资源租户类   -false: 普通租户类
+        是否为资源租户类   - true: 资源租户类   - false: 普通租户类
 
         :param res_tenant: The res_tenant of this CreateInstanceRequestBody.
         :type res_tenant: bool

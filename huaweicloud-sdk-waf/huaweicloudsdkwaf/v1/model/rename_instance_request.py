@@ -37,7 +37,7 @@ class RenameInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询企业项目ID
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param instance_id: 独享引擎ID（通过调用WAF的ListInstance接口获取所有独享引擎信息查询独享引擎ID）
         :type instance_id: str
@@ -62,7 +62,7 @@ class RenameInstanceRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this RenameInstanceRequest.
 
-        通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询企业项目ID
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this RenameInstanceRequest.
         :rtype: str
@@ -73,7 +73,7 @@ class RenameInstanceRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this RenameInstanceRequest.
 
-        通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询企业项目ID
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this RenameInstanceRequest.
         :type enterprise_project_id: str

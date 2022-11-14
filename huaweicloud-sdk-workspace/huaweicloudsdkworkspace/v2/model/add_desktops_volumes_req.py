@@ -21,51 +21,51 @@ class AddDesktopsVolumesReq:
     sensitive_list = []
 
     openapi_types = {
-        'add_desktop_volumes_req': 'list[AddDesktopVolumesReq]'
+        'desktop_volumes': 'list[AddDesktopVolumesReq]'
     }
 
     attribute_map = {
-        'add_desktop_volumes_req': 'addDesktopVolumesReq'
+        'desktop_volumes': 'desktop_volumes'
     }
 
-    def __init__(self, add_desktop_volumes_req=None):
+    def __init__(self, desktop_volumes=None):
         """AddDesktopsVolumesReq
 
         The model defined in huaweicloud sdk
 
-        :param add_desktop_volumes_req: 新增磁盘参数。
-        :type add_desktop_volumes_req: list[:class:`huaweicloudsdkworkspace.v2.AddDesktopVolumesReq`]
+        :param desktop_volumes: 新增磁盘参数。
+        :type desktop_volumes: list[:class:`huaweicloudsdkworkspace.v2.AddDesktopVolumesReq`]
         """
         
         
 
-        self._add_desktop_volumes_req = None
+        self._desktop_volumes = None
         self.discriminator = None
 
-        if add_desktop_volumes_req is not None:
-            self.add_desktop_volumes_req = add_desktop_volumes_req
+        if desktop_volumes is not None:
+            self.desktop_volumes = desktop_volumes
 
     @property
-    def add_desktop_volumes_req(self):
-        """Gets the add_desktop_volumes_req of this AddDesktopsVolumesReq.
+    def desktop_volumes(self):
+        """Gets the desktop_volumes of this AddDesktopsVolumesReq.
 
         新增磁盘参数。
 
-        :return: The add_desktop_volumes_req of this AddDesktopsVolumesReq.
+        :return: The desktop_volumes of this AddDesktopsVolumesReq.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.AddDesktopVolumesReq`]
         """
-        return self._add_desktop_volumes_req
+        return self._desktop_volumes
 
-    @add_desktop_volumes_req.setter
-    def add_desktop_volumes_req(self, add_desktop_volumes_req):
-        """Sets the add_desktop_volumes_req of this AddDesktopsVolumesReq.
+    @desktop_volumes.setter
+    def desktop_volumes(self, desktop_volumes):
+        """Sets the desktop_volumes of this AddDesktopsVolumesReq.
 
         新增磁盘参数。
 
-        :param add_desktop_volumes_req: The add_desktop_volumes_req of this AddDesktopsVolumesReq.
-        :type add_desktop_volumes_req: list[:class:`huaweicloudsdkworkspace.v2.AddDesktopVolumesReq`]
+        :param desktop_volumes: The desktop_volumes of this AddDesktopsVolumesReq.
+        :type desktop_volumes: list[:class:`huaweicloudsdkworkspace.v2.AddDesktopVolumesReq`]
         """
-        self._add_desktop_volumes_req = add_desktop_volumes_req
+        self._desktop_volumes = desktop_volumes
 
     def to_dict(self):
         """Returns the model properties as a dict"""

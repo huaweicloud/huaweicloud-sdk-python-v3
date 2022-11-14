@@ -91,9 +91,9 @@ class DeleteInstanceResponse(SdkResponse):
         :type service_ip: str
         :param security_group_ids: 独享引擎绑定的安全组
         :type security_group_ids: list[str]
-        :param status: 独享引擎计费状态 \\n - 0：正常计费 \\n - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务 \\n - 2：终止，资源和数据将清除
+        :param status: 独享引擎计费状态   - 0：正常计费   - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务   - 2：终止，资源和数据将清除
         :type status: int
-        :param run_status: 独享引擎运行状态 \\ n - 0：创建中 \\n - 1：运行中 \\n - 2：删除中 \\n - 3：已删除 \\n - 4：创建失败 \\n - 5：已冻结 \\n - 6：异常 \\n - 7：更新中 \\n - 8：更新失败
+        :param run_status: 独享引擎运行状态   - 0：创建中   - 1：运行中   - 2：删除中   - 3：已删除   - 4：创建失败   - 5：已冻结   - 6：异常   - 7：更新中   - 8：更新失败
         :type run_status: int
         :param access_status: 独享引擎接入状态（0：未接入，1：已接入）
         :type access_status: int
@@ -402,7 +402,7 @@ class DeleteInstanceResponse(SdkResponse):
     def status(self):
         """Gets the status of this DeleteInstanceResponse.
 
-        独享引擎计费状态 \\n - 0：正常计费 \\n - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务 \\n - 2：终止，资源和数据将清除
+        独享引擎计费状态   - 0：正常计费   - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务   - 2：终止，资源和数据将清除
 
         :return: The status of this DeleteInstanceResponse.
         :rtype: int
@@ -413,7 +413,7 @@ class DeleteInstanceResponse(SdkResponse):
     def status(self, status):
         """Sets the status of this DeleteInstanceResponse.
 
-        独享引擎计费状态 \\n - 0：正常计费 \\n - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务 \\n - 2：终止，资源和数据将清除
+        独享引擎计费状态   - 0：正常计费   - 1：冻结,资源和数据会保留，但租户无法再正常使用云服务   - 2：终止，资源和数据将清除
 
         :param status: The status of this DeleteInstanceResponse.
         :type status: int
@@ -424,7 +424,7 @@ class DeleteInstanceResponse(SdkResponse):
     def run_status(self):
         """Gets the run_status of this DeleteInstanceResponse.
 
-        独享引擎运行状态 \\ n - 0：创建中 \\n - 1：运行中 \\n - 2：删除中 \\n - 3：已删除 \\n - 4：创建失败 \\n - 5：已冻结 \\n - 6：异常 \\n - 7：更新中 \\n - 8：更新失败
+        独享引擎运行状态   - 0：创建中   - 1：运行中   - 2：删除中   - 3：已删除   - 4：创建失败   - 5：已冻结   - 6：异常   - 7：更新中   - 8：更新失败
 
         :return: The run_status of this DeleteInstanceResponse.
         :rtype: int
@@ -435,7 +435,7 @@ class DeleteInstanceResponse(SdkResponse):
     def run_status(self, run_status):
         """Sets the run_status of this DeleteInstanceResponse.
 
-        独享引擎运行状态 \\ n - 0：创建中 \\n - 1：运行中 \\n - 2：删除中 \\n - 3：已删除 \\n - 4：创建失败 \\n - 5：已冻结 \\n - 6：异常 \\n - 7：更新中 \\n - 8：更新失败
+        独享引擎运行状态   - 0：创建中   - 1：运行中   - 2：删除中   - 3：已删除   - 4：创建失败   - 5：已冻结   - 6：异常   - 7：更新中   - 8：更新失败
 
         :param run_status: The run_status of this DeleteInstanceResponse.
         :type run_status: int

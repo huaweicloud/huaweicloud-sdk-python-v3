@@ -48,6 +48,136 @@ class GslClient(Client):
 
         return ClientBuilder(clazz)
 
+    def list_back_pool_members(self, request):
+        """查询后向流量池成员列表
+
+        查询后向流量池成员列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListBackPoolMembers
+        :type request: :class:`huaweicloudsdkgsl.v3.ListBackPoolMembersRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.ListBackPoolMembersResponse`
+        """
+        return self.list_back_pool_members_with_http_info(request)
+
+    def list_back_pool_members_with_http_info(self, request):
+        all_params = ['back_pool_id', 'billing_cycle', 'cid', 'limit', 'offset']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'back_pool_id' in local_var_params:
+            path_params['back_pool_id'] = local_var_params['back_pool_id']
+
+        query_params = []
+        if 'cid' in local_var_params:
+            query_params.append(('cid', local_var_params['cid']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'billing_cycle' in local_var_params:
+            query_params.append(('billing_cycle', local_var_params['billing_cycle']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/back-pools/{back_pool_id}/members',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListBackPoolMembersResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_back_pools(self, request):
+        """查询后向流量池列表
+
+        查询后向流量池列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListBackPools
+        :type request: :class:`huaweicloudsdkgsl.v3.ListBackPoolsRequest`
+        :rtype: :class:`huaweicloudsdkgsl.v3.ListBackPoolsResponse`
+        """
+        return self.list_back_pools_with_http_info(request)
+
+    def list_back_pools_with_http_info(self, request):
+        all_params = ['pool_name', 'limit', 'offset', 'billing_cycle']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'pool_name' in local_var_params:
+            query_params.append(('pool_name', local_var_params['pool_name']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'billing_cycle' in local_var_params:
+            query_params.append(('billing_cycle', local_var_params['billing_cycle']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v1/back-pools',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListBackPoolsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_pro_price_plans(self, request):
         """查询套餐列表信息
 

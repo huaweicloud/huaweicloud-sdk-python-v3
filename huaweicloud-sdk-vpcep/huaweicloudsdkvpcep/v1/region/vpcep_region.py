@@ -22,6 +22,12 @@ class VpcepRegion:
 
     CN_SOUTHWEST_2 = Region(id="cn-southwest-2", endpoint="https://vpcep.cn-southwest-2.myhuaweicloud.com")
 
+    AP_SOUTHEAST_1 = Region(id="ap-southeast-1", endpoint="https://vpc.ap-southeast-1.myhuaweicloud.com")
+
+    LA_SOUTH_2 = Region(id="la-south-2", endpoint="https://vpc.la-south-2.myhuaweicloud.com")
+
+    NA_MEXICO_1 = Region(id="na-mexico-1", endpoint="https://vpc.na-mexico-1.myhuaweicloud.com")
+
     static_fields = {
         "cn-north-4": CN_NORTH_4,
         "cn-north-1": CN_NORTH_1,
@@ -29,6 +35,9 @@ class VpcepRegion:
         "cn-east-3": CN_EAST_3,
         "cn-south-1": CN_SOUTH_1,
         "cn-southwest-2": CN_SOUTHWEST_2,
+        "ap-southeast-1": AP_SOUTHEAST_1,
+        "la-south-2": LA_SOUTH_2,
+        "na-mexico-1": NA_MEXICO_1,
     }
 
     @classmethod

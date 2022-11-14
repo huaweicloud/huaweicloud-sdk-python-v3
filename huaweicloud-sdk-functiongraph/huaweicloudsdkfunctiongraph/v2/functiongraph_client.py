@@ -3016,6 +3016,66 @@ class FunctionGraphClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_workflow_execution_for_page(self, request):
+        """分页获取指定函数流执行实例列表
+
+        分页获取指定函数流执行实例列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowWorkflowExecutionForPage
+        :type request: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionForPageRequest`
+        :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ShowWorkflowExecutionForPageResponse`
+        """
+        return self.show_workflow_execution_for_page_with_http_info(request)
+
+    def show_workflow_execution_for_page_with_http_info(self, request):
+        all_params = ['workflow_id', 'create_workflow_request_body']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'workflow_id' in local_var_params:
+            path_params['workflow_id'] = local_var_params['workflow_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v2/{project_id}/fgs/workflows/{workflow_id}/executions-history',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowWorkflowExecutionForPageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def start_sync_workflow_execution(self, request):
         """同步执行函数流
 

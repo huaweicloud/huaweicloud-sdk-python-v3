@@ -69,7 +69,7 @@ class DecoupledLiveDomainInfo:
         :type create_time: datetime
         :param status_describe: 状态描述
         :type status_describe: str
-        :param service_area: 域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+        :param service_area: 域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 
         :type service_area: str
         """
         
@@ -302,7 +302,7 @@ class DecoupledLiveDomainInfo:
     def service_area(self):
         """Gets the service_area of this DecoupledLiveDomainInfo.
 
-        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 
 
         :return: The service_area of this DecoupledLiveDomainInfo.
         :rtype: str
@@ -313,7 +313,7 @@ class DecoupledLiveDomainInfo:
     def service_area(self, service_area):
         """Sets the service_area of this DecoupledLiveDomainInfo.
 
-        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 
 
         :param service_area: The service_area of this DecoupledLiveDomainInfo.
         :type service_area: str

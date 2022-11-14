@@ -45,7 +45,7 @@ class LiveDomainCreateReq:
         :type domain_type: str
         :param region: 直播所属的直播中心
         :type region: str
-        :param service_area: 域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+        :param service_area: 域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 
         :type service_area: str
         """
         
@@ -133,7 +133,7 @@ class LiveDomainCreateReq:
     def service_area(self):
         """Gets the service_area of this LiveDomainCreateReq.
 
-        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 
 
         :return: The service_area of this LiveDomainCreateReq.
         :rtype: str
@@ -144,7 +144,7 @@ class LiveDomainCreateReq:
     def service_area(self, service_area):
         """Sets the service_area of this LiveDomainCreateReq.
 
-        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 - global表示全球区域 
+        域名应用区域 - mainland_china表示中国大陆区域 - outside_mainland_china表示中国大陆以外区域 
 
         :param service_area: The service_area of this LiveDomainCreateReq.
         :type service_area: str

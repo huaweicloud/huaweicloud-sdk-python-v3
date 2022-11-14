@@ -21,7 +21,7 @@ class AddServerNicsReq:
     sensitive_list = []
 
     openapi_types = {
-        'nics': 'ServerNicsReq'
+        'nics': 'list[ServerNicsReq]'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class AddServerNicsReq:
         The model defined in huaweicloud sdk
 
         :param nics: 
-        :type nics: :class:`huaweicloudsdkbms.v1.ServerNicsReq`
+        :type nics: list[:class:`huaweicloudsdkbms.v1.ServerNicsReq`]
         """
         
         
@@ -48,9 +48,10 @@ class AddServerNicsReq:
     def nics(self):
         """Gets the nics of this AddServerNicsReq.
 
+        
 
         :return: The nics of this AddServerNicsReq.
-        :rtype: :class:`huaweicloudsdkbms.v1.ServerNicsReq`
+        :rtype: list[:class:`huaweicloudsdkbms.v1.ServerNicsReq`]
         """
         return self._nics
 
@@ -58,9 +59,10 @@ class AddServerNicsReq:
     def nics(self, nics):
         """Sets the nics of this AddServerNicsReq.
 
+        
 
         :param nics: The nics of this AddServerNicsReq.
-        :type nics: :class:`huaweicloudsdkbms.v1.ServerNicsReq`
+        :type nics: list[:class:`huaweicloudsdkbms.v1.ServerNicsReq`]
         """
         self._nics = nics
 

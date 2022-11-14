@@ -35,7 +35,7 @@ class CreateRefreshTasksRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示在当前企业项目下添加缓存刷新任务，\&quot;all\&quot;代表所有项目。注意：当使用子账号调用接口时，该参数必传。
+        :param enterprise_project_id: 当用户开启企业项目功能时，该参数生效，表示在当前企业项目下添加缓存刷新任务，\&quot;all\&quot;代表所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
         :type enterprise_project_id: str
         :param body: Body of the CreateRefreshTasksRequest
         :type body: :class:`huaweicloudsdkcdn.v1.RefreshTaskRequest`
@@ -56,7 +56,7 @@ class CreateRefreshTasksRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this CreateRefreshTasksRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示在当前企业项目下添加缓存刷新任务，\"all\"代表所有项目。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示在当前企业项目下添加缓存刷新任务，\"all\"代表所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
         :return: The enterprise_project_id of this CreateRefreshTasksRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class CreateRefreshTasksRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this CreateRefreshTasksRequest.
 
-        当用户开启企业项目功能时，该参数生效，表示在当前企业项目下添加缓存刷新任务，\"all\"代表所有项目。注意：当使用子账号调用接口时，该参数必传。
+        当用户开启企业项目功能时，该参数生效，表示在当前企业项目下添加缓存刷新任务，\"all\"代表所有项目。注意：当使用子帐号调用接口时，该参数必传。  您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。
 
         :param enterprise_project_id: The enterprise_project_id of this CreateRefreshTasksRequest.
         :type enterprise_project_id: str

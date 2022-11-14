@@ -526,6 +526,66 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def check_weak_password(self, request):
+        """检查弱密码
+
+        检查弱密码
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for CheckWeakPassword
+        :type request: :class:`huaweicloudsdkdds.v3.CheckWeakPasswordRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.CheckWeakPasswordResponse`
+        """
+        return self.check_weak_password_with_http_info(request)
+
+    def check_weak_password_with_http_info(self, request):
+        all_params = ['weak_password_check_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/weak-password-verification',
+            method='POST',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='CheckWeakPasswordResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def create_configuration(self, request):
         """创建参数模板
 
@@ -875,6 +935,68 @@ class DdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='CreateManualBackupResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def delete_audit_log(self, request):
+        """删除审计日志
+
+        删除审计日志
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for DeleteAuditLog
+        :type request: :class:`huaweicloudsdkdds.v3.DeleteAuditLogRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.DeleteAuditLogResponse`
+        """
+        return self.delete_audit_log_with_http_info(request)
+
+    def delete_audit_log_with_http_info(self, request):
+        all_params = ['instance_id', 'delete_audit_log_request_body', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if 'body' in local_var_params:
+            body_params = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/auditlog',
+            method='DELETE',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='DeleteAuditLogResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -1357,7 +1479,7 @@ class DdsClient(Client):
     def expand_replicaset_node(self, request):
         """扩容副本集实例的节点数量
 
-        扩容指定副本集实例的节点数量，暂不支持包周期实例
+        扩容指定副本集实例的节点数量
         
         详细说明请参考华为云API Explorer。
         Please refer to Huawei cloud API Explorer for details.
@@ -2364,6 +2486,68 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def list_recycle_instances(self, request):
+        """查询回收站实例列表
+
+        查询回收站实例列表
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListRecycleInstances
+        :type request: :class:`huaweicloudsdkdds.v3.ListRecycleInstancesRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ListRecycleInstancesResponse`
+        """
+        return self.list_recycle_instances_with_http_info(request)
+
+    def list_recycle_instances_with_http_info(self, request):
+        all_params = ['x_language', 'offset', 'limit']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/recycle-instances',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListRecycleInstancesResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def list_restore_collections(self, request):
         """获取可恢复的数据库集合列表
 
@@ -2695,6 +2879,66 @@ class DdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ListSlowLogsResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def list_ssl_cert_download_address(self, request):
+        """获取SSL证书下载地址
+
+        获取SSL证书下载地址
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ListSslCertDownloadAddress
+        :type request: :class:`huaweicloudsdkdds.v3.ListSslCertDownloadAddressRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ListSslCertDownloadAddressResponse`
+        """
+        return self.list_ssl_cert_download_address_with_http_info(request)
+
+    def list_ssl_cert_download_address_with_http_info(self, request):
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/ssl-cert/download-link',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ListSslCertDownloadAddressResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -3834,6 +4078,66 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_disk_usage(self, request):
+        """查询实例磁盘信息
+
+        查询实例磁盘信息
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowDiskUsage
+        :type request: :class:`huaweicloudsdkdds.v3.ShowDiskUsageRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ShowDiskUsageResponse`
+        """
+        return self.show_disk_usage_with_http_info(request)
+
+    def show_disk_usage_with_http_info(self, request):
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/disk-usage',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowDiskUsageResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_entity_configuration(self, request):
         """获取指定实例的参数信息
 
@@ -4008,6 +4312,64 @@ class DdsClient(Client):
             collection_formats=collection_formats,
             request_type=request.__class__.__name__)
 
+    def show_recycle_policy(self, request):
+        """查询实例回收站策略
+
+        查询实例回收站策略
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowRecyclePolicy
+        :type request: :class:`huaweicloudsdkdds.v3.ShowRecyclePolicyRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ShowRecyclePolicyResponse`
+        """
+        return self.show_recycle_policy_with_http_info(request)
+
+    def show_recycle_policy_with_http_info(self, request):
+        all_params = ['x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/recycle-policy',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowRecyclePolicyResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
     def show_second_level_monitoring_status(self, request):
         """查询秒级监控配置
 
@@ -4119,6 +4481,126 @@ class DdsClient(Client):
             body=body_params,
             post_params=form_params,
             response_type='ShowShardingBalancerResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_slowlog_desensitization_switch(self, request):
+        """查询慢日志明文开关
+
+        查询慢日志明文开关
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowSlowlogDesensitizationSwitch
+        :type request: :class:`huaweicloudsdkdds.v3.ShowSlowlogDesensitizationSwitchRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ShowSlowlogDesensitizationSwitchResponse`
+        """
+        return self.show_slowlog_desensitization_switch_with_http_info(request)
+
+    def show_slowlog_desensitization_switch_with_http_info(self, request):
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/slowlog-desensitization/status',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowSlowlogDesensitizationSwitchResponse',
+            response_headers=response_headers,
+            auth_settings=auth_settings,
+            collection_formats=collection_formats,
+            request_type=request.__class__.__name__)
+
+    def show_upgrade_duration(self, request):
+        """查询数据库补丁升级预估时长
+
+        查询数据库补丁升级预估时长
+        
+        详细说明请参考华为云API Explorer。
+        Please refer to Huawei cloud API Explorer for details.
+
+        :param request: Request instance for ShowUpgradeDuration
+        :type request: :class:`huaweicloudsdkdds.v3.ShowUpgradeDurationRequest`
+        :rtype: :class:`huaweicloudsdkdds.v3.ShowUpgradeDurationResponse`
+        """
+        return self.show_upgrade_duration_with_http_info(request)
+
+    def show_upgrade_duration_with_http_info(self, request):
+        all_params = ['instance_id', 'x_language']
+        local_var_params = {}
+        for attr in request.attribute_map:
+            if hasattr(request, attr):
+                local_var_params[attr] = getattr(request, attr)
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'instance_id' in local_var_params:
+            path_params['instance_id'] = local_var_params['instance_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
+
+        form_params = {}
+
+        body_params = None
+        if isinstance(request, SdkStreamRequest):
+            body_params = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        return self.call_api(
+            resource_path='/v3/{project_id}/instances/{instance_id}/db-upgrade-duration',
+            method='GET',
+            path_params=path_params,
+            query_params=query_params,
+            header_params=header_params,
+            body=body_params,
+            post_params=form_params,
+            response_type='ShowUpgradeDurationResponse',
             response_headers=response_headers,
             auth_settings=auth_settings,
             collection_formats=collection_formats,
@@ -4259,7 +4741,7 @@ class DdsClient(Client):
         return self.switch_slowlog_desensitization_with_http_info(request)
 
     def switch_slowlog_desensitization_with_http_info(self, request):
-        all_params = ['instance_id', 'status']
+        all_params = ['instance_id', 'status', 'x_language']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -4276,6 +4758,8 @@ class DdsClient(Client):
         query_params = []
 
         header_params = {}
+        if 'x_language' in local_var_params:
+            header_params['X-Language'] = local_var_params['x_language']
 
         form_params = {}
 

@@ -23,7 +23,7 @@ class ServerNicsReq:
     openapi_types = {
         'subnet_id': 'str',
         'ip_address': 'str',
-        'security_groups': 'SecurityGroupInfo'
+        'security_groups': 'list[SecurityGroupInfo]'
     }
 
     attribute_map = {
@@ -42,7 +42,7 @@ class ServerNicsReq:
         :param ip_address: 
         :type ip_address: str
         :param security_groups: 
-        :type security_groups: :class:`huaweicloudsdkbms.v1.SecurityGroupInfo`
+        :type security_groups: list[:class:`huaweicloudsdkbms.v1.SecurityGroupInfo`]
         """
         
         
@@ -106,9 +106,10 @@ class ServerNicsReq:
     def security_groups(self):
         """Gets the security_groups of this ServerNicsReq.
 
+        
 
         :return: The security_groups of this ServerNicsReq.
-        :rtype: :class:`huaweicloudsdkbms.v1.SecurityGroupInfo`
+        :rtype: list[:class:`huaweicloudsdkbms.v1.SecurityGroupInfo`]
         """
         return self._security_groups
 
@@ -116,9 +117,10 @@ class ServerNicsReq:
     def security_groups(self, security_groups):
         """Sets the security_groups of this ServerNicsReq.
 
+        
 
         :param security_groups: The security_groups of this ServerNicsReq.
-        :type security_groups: :class:`huaweicloudsdkbms.v1.SecurityGroupInfo`
+        :type security_groups: list[:class:`huaweicloudsdkbms.v1.SecurityGroupInfo`]
         """
         self._security_groups = security_groups
 

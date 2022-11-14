@@ -51,7 +51,7 @@ class ScaleScript:
         :type uri: str
         :param parameters: 自定义自动化脚本参数。  多个参数间用空格隔开。 可以传入以下系统预定义参数： - ${mrs_scale_node_num}：扩缩容节点数 - ${mrs_scale_type}：扩缩容类型，扩容为scale_out，缩容为scale_in - ${mrs_scale_node_hostnames}：扩缩容的节点主机名称 - ${mrs_scale_node_ips}：扩缩容的节点IP - ${mrs_scale_rule_name}：触发扩缩容的规则名   其他用户自定义参数使用方式与普通shell脚本相同，多个参数中间用空格隔开。
         :type parameters: str
-        :param nodes: 自定义自动化脚本所执行的节点类型，包含Master、Core和Task三种类型。
+        :param nodes: 自定义自动化脚本所执行的节点组名称（非自定义集群也可使用节点类型，包含Master、Core和Task三种类型）。
         :type nodes: list[str]
         :param active_master: 自定义自动化脚本是否只运行在主Master节点上。  缺省值为false，表示自定义自动化脚本可运行在所有Master节点上。
         :type active_master: bool
@@ -152,7 +152,7 @@ class ScaleScript:
     def nodes(self):
         """Gets the nodes of this ScaleScript.
 
-        自定义自动化脚本所执行的节点类型，包含Master、Core和Task三种类型。
+        自定义自动化脚本所执行的节点组名称（非自定义集群也可使用节点类型，包含Master、Core和Task三种类型）。
 
         :return: The nodes of this ScaleScript.
         :rtype: list[str]
@@ -163,7 +163,7 @@ class ScaleScript:
     def nodes(self, nodes):
         """Sets the nodes of this ScaleScript.
 
-        自定义自动化脚本所执行的节点类型，包含Master、Core和Task三种类型。
+        自定义自动化脚本所执行的节点组名称（非自定义集群也可使用节点类型，包含Master、Core和Task三种类型）。
 
         :param nodes: The nodes of this ScaleScript.
         :type nodes: list[str]

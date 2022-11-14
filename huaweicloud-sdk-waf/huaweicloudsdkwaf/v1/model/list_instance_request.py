@@ -39,7 +39,7 @@ class ListInstanceRequest:
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询企业项目ID
+        :param enterprise_project_id: 您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
         :type enterprise_project_id: str
         :param page: 分页查询参数，第page页，默认值为1
         :type page: int
@@ -70,7 +70,7 @@ class ListInstanceRequest:
     def enterprise_project_id(self):
         """Gets the enterprise_project_id of this ListInstanceRequest.
 
-        通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询企业项目ID
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :return: The enterprise_project_id of this ListInstanceRequest.
         :rtype: str
@@ -81,7 +81,7 @@ class ListInstanceRequest:
     def enterprise_project_id(self, enterprise_project_id):
         """Sets the enterprise_project_id of this ListInstanceRequest.
 
-        通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询通过企业项目管理服务的查询企业项目列表接口ListEnterpriseProject查询企业项目ID
+        您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
         :param enterprise_project_id: The enterprise_project_id of this ListInstanceRequest.
         :type enterprise_project_id: str

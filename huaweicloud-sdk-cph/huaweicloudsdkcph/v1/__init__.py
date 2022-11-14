@@ -6,6 +6,8 @@ from __future__ import absolute_import
 from huaweicloudsdkcph.v1.cph_client import CphClient
 from huaweicloudsdkcph.v1.cph_async_client import CphAsyncClient
 # import models into sdk package
+from huaweicloudsdkcph.v1.model.address import Address
+from huaweicloudsdkcph.v1.model.bandwidth import Bandwidth
 from huaweicloudsdkcph.v1.model.batch_export_cloud_phone_data_request import BatchExportCloudPhoneDataRequest
 from huaweicloudsdkcph.v1.model.batch_export_cloud_phone_data_request_body import BatchExportCloudPhoneDataRequestBody
 from huaweicloudsdkcph.v1.model.batch_export_cloud_phone_data_request_body_storage_infos import BatchExportCloudPhoneDataRequestBodyStorageInfos
@@ -40,6 +42,9 @@ from huaweicloudsdkcph.v1.model.create_net2_cloud_phone_server_response import C
 from huaweicloudsdkcph.v1.model.delete_share_apps_request import DeleteShareAppsRequest
 from huaweicloudsdkcph.v1.model.delete_share_apps_request_body import DeleteShareAppsRequestBody
 from huaweicloudsdkcph.v1.model.delete_share_apps_response import DeleteShareAppsResponse
+from huaweicloudsdkcph.v1.model.delete_share_files_request import DeleteShareFilesRequest
+from huaweicloudsdkcph.v1.model.delete_share_files_request_body import DeleteShareFilesRequestBody
+from huaweicloudsdkcph.v1.model.delete_share_files_response import DeleteShareFilesResponse
 from huaweicloudsdkcph.v1.model.import_traffic_request import ImportTrafficRequest
 from huaweicloudsdkcph.v1.model.import_traffic_request_body import ImportTrafficRequestBody
 from huaweicloudsdkcph.v1.model.import_traffic_response import ImportTrafficResponse
@@ -51,7 +56,6 @@ from huaweicloudsdkcph.v1.model.list_cloud_phone_server_models_request import Li
 from huaweicloudsdkcph.v1.model.list_cloud_phone_server_models_response import ListCloudPhoneServerModelsResponse
 from huaweicloudsdkcph.v1.model.list_cloud_phone_servers_request import ListCloudPhoneServersRequest
 from huaweicloudsdkcph.v1.model.list_cloud_phone_servers_response import ListCloudPhoneServersResponse
-from huaweicloudsdkcph.v1.model.list_cloud_phone_servers_response_body import ListCloudPhoneServersResponseBody
 from huaweicloudsdkcph.v1.model.list_cloud_phones_request import ListCloudPhonesRequest
 from huaweicloudsdkcph.v1.model.list_cloud_phones_response import ListCloudPhonesResponse
 from huaweicloudsdkcph.v1.model.list_encode_servers_request import ListEncodeServersRequest
@@ -113,4 +117,5 @@ from huaweicloudsdkcph.v1.model.update_phone_name_response import UpdatePhoneNam
 from huaweicloudsdkcph.v1.model.update_server_name_request import UpdateServerNameRequest
 from huaweicloudsdkcph.v1.model.update_server_name_request_body import UpdateServerNameRequestBody
 from huaweicloudsdkcph.v1.model.update_server_name_response import UpdateServerNameResponse
+from huaweicloudsdkcph.v1.model.volume import Volume
 

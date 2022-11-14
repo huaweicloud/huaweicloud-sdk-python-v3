@@ -21,190 +21,134 @@ class MasterInstance:
     sensitive_list = []
 
     openapi_types = {
-        'id': 'str',
-        'status': 'str',
-        'name': 'str',
-        'weight': 'int',
-        'available_zones': 'list[AvailableZone]',
-        'cpu_num': 'int'
+        'instance_id': 'str',
+        'region': 'str',
+        'project_id': 'str',
+        'project_name': 'str'
     }
 
     attribute_map = {
-        'id': 'id',
-        'status': 'status',
-        'name': 'name',
-        'weight': 'weight',
-        'available_zones': 'available_zones',
-        'cpu_num': 'cpu_num'
+        'instance_id': 'instance_id',
+        'region': 'region',
+        'project_id': 'project_id',
+        'project_name': 'project_name'
     }
 
-    def __init__(self, id=None, status=None, name=None, weight=None, available_zones=None, cpu_num=None):
+    def __init__(self, instance_id=None, region=None, project_id=None, project_name=None):
         """MasterInstance
 
         The model defined in huaweicloud sdk
 
-        :param id: 主实例ID。
-        :type id: str
-        :param status: 主实例状态。
-        :type status: str
-        :param name: 主实例名称。
-        :type name: str
-        :param weight: 主实例读写分离权重。
-        :type weight: int
-        :param available_zones: 可用区信息。
-        :type available_zones: list[:class:`huaweicloudsdkrds.v3.AvailableZone`]
-        :param cpu_num: 主实例CPU个数。
-        :type cpu_num: int
+        :param instance_id: 实例ID。
+        :type instance_id: str
+        :param region: 区域。
+        :type region: str
+        :param project_id: 项目ID。
+        :type project_id: str
+        :param project_name: 项目名称。
+        :type project_name: str
         """
         
         
 
-        self._id = None
-        self._status = None
-        self._name = None
-        self._weight = None
-        self._available_zones = None
-        self._cpu_num = None
+        self._instance_id = None
+        self._region = None
+        self._project_id = None
+        self._project_name = None
         self.discriminator = None
 
-        self.id = id
-        self.status = status
-        self.name = name
-        self.weight = weight
-        self.available_zones = available_zones
-        self.cpu_num = cpu_num
+        self.instance_id = instance_id
+        self.region = region
+        self.project_id = project_id
+        self.project_name = project_name
 
     @property
-    def id(self):
-        """Gets the id of this MasterInstance.
+    def instance_id(self):
+        """Gets the instance_id of this MasterInstance.
 
-        主实例ID。
+        实例ID。
 
-        :return: The id of this MasterInstance.
+        :return: The instance_id of this MasterInstance.
         :rtype: str
         """
-        return self._id
+        return self._instance_id
 
-    @id.setter
-    def id(self, id):
-        """Sets the id of this MasterInstance.
+    @instance_id.setter
+    def instance_id(self, instance_id):
+        """Sets the instance_id of this MasterInstance.
 
-        主实例ID。
+        实例ID。
 
-        :param id: The id of this MasterInstance.
-        :type id: str
+        :param instance_id: The instance_id of this MasterInstance.
+        :type instance_id: str
         """
-        self._id = id
+        self._instance_id = instance_id
 
     @property
-    def status(self):
-        """Gets the status of this MasterInstance.
+    def region(self):
+        """Gets the region of this MasterInstance.
 
-        主实例状态。
+        区域。
 
-        :return: The status of this MasterInstance.
+        :return: The region of this MasterInstance.
         :rtype: str
         """
-        return self._status
+        return self._region
 
-    @status.setter
-    def status(self, status):
-        """Sets the status of this MasterInstance.
+    @region.setter
+    def region(self, region):
+        """Sets the region of this MasterInstance.
 
-        主实例状态。
+        区域。
 
-        :param status: The status of this MasterInstance.
-        :type status: str
+        :param region: The region of this MasterInstance.
+        :type region: str
         """
-        self._status = status
+        self._region = region
 
     @property
-    def name(self):
-        """Gets the name of this MasterInstance.
+    def project_id(self):
+        """Gets the project_id of this MasterInstance.
 
-        主实例名称。
+        项目ID。
 
-        :return: The name of this MasterInstance.
+        :return: The project_id of this MasterInstance.
         :rtype: str
         """
-        return self._name
+        return self._project_id
 
-    @name.setter
-    def name(self, name):
-        """Sets the name of this MasterInstance.
+    @project_id.setter
+    def project_id(self, project_id):
+        """Sets the project_id of this MasterInstance.
 
-        主实例名称。
+        项目ID。
 
-        :param name: The name of this MasterInstance.
-        :type name: str
+        :param project_id: The project_id of this MasterInstance.
+        :type project_id: str
         """
-        self._name = name
+        self._project_id = project_id
 
     @property
-    def weight(self):
-        """Gets the weight of this MasterInstance.
+    def project_name(self):
+        """Gets the project_name of this MasterInstance.
 
-        主实例读写分离权重。
+        项目名称。
 
-        :return: The weight of this MasterInstance.
-        :rtype: int
+        :return: The project_name of this MasterInstance.
+        :rtype: str
         """
-        return self._weight
+        return self._project_name
 
-    @weight.setter
-    def weight(self, weight):
-        """Sets the weight of this MasterInstance.
+    @project_name.setter
+    def project_name(self, project_name):
+        """Sets the project_name of this MasterInstance.
 
-        主实例读写分离权重。
+        项目名称。
 
-        :param weight: The weight of this MasterInstance.
-        :type weight: int
+        :param project_name: The project_name of this MasterInstance.
+        :type project_name: str
         """
-        self._weight = weight
-
-    @property
-    def available_zones(self):
-        """Gets the available_zones of this MasterInstance.
-
-        可用区信息。
-
-        :return: The available_zones of this MasterInstance.
-        :rtype: list[:class:`huaweicloudsdkrds.v3.AvailableZone`]
-        """
-        return self._available_zones
-
-    @available_zones.setter
-    def available_zones(self, available_zones):
-        """Sets the available_zones of this MasterInstance.
-
-        可用区信息。
-
-        :param available_zones: The available_zones of this MasterInstance.
-        :type available_zones: list[:class:`huaweicloudsdkrds.v3.AvailableZone`]
-        """
-        self._available_zones = available_zones
-
-    @property
-    def cpu_num(self):
-        """Gets the cpu_num of this MasterInstance.
-
-        主实例CPU个数。
-
-        :return: The cpu_num of this MasterInstance.
-        :rtype: int
-        """
-        return self._cpu_num
-
-    @cpu_num.setter
-    def cpu_num(self, cpu_num):
-        """Sets the cpu_num of this MasterInstance.
-
-        主实例CPU个数。
-
-        :param cpu_num: The cpu_num of this MasterInstance.
-        :type cpu_num: int
-        """
-        self._cpu_num = cpu_num
+        self._project_name = project_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

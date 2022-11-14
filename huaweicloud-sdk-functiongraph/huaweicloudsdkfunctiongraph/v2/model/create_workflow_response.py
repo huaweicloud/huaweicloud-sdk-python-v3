@@ -21,6 +21,7 @@ class CreateWorkflowResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'enable_stream_response': 'bool',
         'id': 'str',
         'workflow_urn': 'str',
         'name': 'str',
@@ -31,6 +32,7 @@ class CreateWorkflowResponse(SdkResponse):
     }
 
     attribute_map = {
+        'enable_stream_response': 'enable_stream_response',
         'id': 'id',
         'workflow_urn': 'workflow_urn',
         'name': 'name',
@@ -40,11 +42,13 @@ class CreateWorkflowResponse(SdkResponse):
         'created_by': 'created_by'
     }
 
-    def __init__(self, id=None, workflow_urn=None, name=None, description=None, created_time=None, updated_time=None, created_by=None):
+    def __init__(self, enable_stream_response=None, id=None, workflow_urn=None, name=None, description=None, created_time=None, updated_time=None, created_by=None):
         """CreateWorkflowResponse
 
         The model defined in huaweicloud sdk
 
+        :param enable_stream_response: 函数流是否返回流式数据
+        :type enable_stream_response: bool
         :param id: 唯一标识ID，流程定义ID
         :type id: str
         :param workflow_urn: 函数工作流URN, 格式为： urn:fss:&lt;region_id&gt;:&lt;project_id&gt;:workflow:\\&lt;package\\&gt;:&lt;workflow_name&gt;:\\&lt;version\\&gt; 注意： package当前只支持default version当前只支持latest
@@ -63,6 +67,7 @@ class CreateWorkflowResponse(SdkResponse):
         
         super(CreateWorkflowResponse, self).__init__()
 
+        self._enable_stream_response = None
         self._id = None
         self._workflow_urn = None
         self._name = None
@@ -72,6 +77,8 @@ class CreateWorkflowResponse(SdkResponse):
         self._created_by = None
         self.discriminator = None
 
+        if enable_stream_response is not None:
+            self.enable_stream_response = enable_stream_response
         if id is not None:
             self.id = id
         if workflow_urn is not None:
@@ -86,6 +93,28 @@ class CreateWorkflowResponse(SdkResponse):
             self.updated_time = updated_time
         if created_by is not None:
             self.created_by = created_by
+
+    @property
+    def enable_stream_response(self):
+        """Gets the enable_stream_response of this CreateWorkflowResponse.
+
+        函数流是否返回流式数据
+
+        :return: The enable_stream_response of this CreateWorkflowResponse.
+        :rtype: bool
+        """
+        return self._enable_stream_response
+
+    @enable_stream_response.setter
+    def enable_stream_response(self, enable_stream_response):
+        """Sets the enable_stream_response of this CreateWorkflowResponse.
+
+        函数流是否返回流式数据
+
+        :param enable_stream_response: The enable_stream_response of this CreateWorkflowResponse.
+        :type enable_stream_response: bool
+        """
+        self._enable_stream_response = enable_stream_response
 
     @property
     def id(self):

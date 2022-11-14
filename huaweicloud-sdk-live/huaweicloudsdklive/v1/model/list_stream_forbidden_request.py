@@ -21,7 +21,6 @@ class ListStreamForbiddenRequest:
     sensitive_list = []
 
     openapi_types = {
-        'specify_project': 'str',
         'domain': 'str',
         'app_name': 'str',
         'stream_name': 'str',
@@ -30,7 +29,6 @@ class ListStreamForbiddenRequest:
     }
 
     attribute_map = {
-        'specify_project': 'specify_project',
         'domain': 'domain',
         'app_name': 'app_name',
         'stream_name': 'stream_name',
@@ -38,13 +36,11 @@ class ListStreamForbiddenRequest:
         'size': 'size'
     }
 
-    def __init__(self, specify_project=None, domain=None, app_name=None, stream_name=None, page=None, size=None):
+    def __init__(self, domain=None, app_name=None, stream_name=None, page=None, size=None):
         """ListStreamForbiddenRequest
 
         The model defined in huaweicloud sdk
 
-        :param specify_project: op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
-        :type specify_project: str
         :param domain: 推流域名
         :type domain: str
         :param app_name: 应用名称，不指定则查询domain下所有应用的禁止直播推流信息
@@ -59,7 +55,6 @@ class ListStreamForbiddenRequest:
         
         
 
-        self._specify_project = None
         self._domain = None
         self._app_name = None
         self._stream_name = None
@@ -67,8 +62,6 @@ class ListStreamForbiddenRequest:
         self._size = None
         self.discriminator = None
 
-        if specify_project is not None:
-            self.specify_project = specify_project
         self.domain = domain
         if app_name is not None:
             self.app_name = app_name
@@ -78,28 +71,6 @@ class ListStreamForbiddenRequest:
             self.page = page
         if size is not None:
             self.size = size
-
-    @property
-    def specify_project(self):
-        """Gets the specify_project of this ListStreamForbiddenRequest.
-
-        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
-
-        :return: The specify_project of this ListStreamForbiddenRequest.
-        :rtype: str
-        """
-        return self._specify_project
-
-    @specify_project.setter
-    def specify_project(self, specify_project):
-        """Sets the specify_project of this ListStreamForbiddenRequest.
-
-        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
-
-        :param specify_project: The specify_project of this ListStreamForbiddenRequest.
-        :type specify_project: str
-        """
-        self._specify_project = specify_project
 
     @property
     def domain(self):

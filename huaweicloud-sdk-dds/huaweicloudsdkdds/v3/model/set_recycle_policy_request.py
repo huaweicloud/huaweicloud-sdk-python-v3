@@ -21,7 +21,7 @@ class SetRecyclePolicyRequest:
     sensitive_list = []
 
     openapi_types = {
-        'body': 'RecyclePolicyResponseBody'
+        'body': 'RecyclePolicyRequestBody'
     }
 
     attribute_map = {
@@ -34,7 +34,7 @@ class SetRecyclePolicyRequest:
         The model defined in huaweicloud sdk
 
         :param body: Body of the SetRecyclePolicyRequest
-        :type body: :class:`huaweicloudsdkdds.v3.RecyclePolicyResponseBody`
+        :type body: :class:`huaweicloudsdkdds.v3.RecyclePolicyRequestBody`
         """
         
         
@@ -51,7 +51,7 @@ class SetRecyclePolicyRequest:
 
 
         :return: The body of this SetRecyclePolicyRequest.
-        :rtype: :class:`huaweicloudsdkdds.v3.RecyclePolicyResponseBody`
+        :rtype: :class:`huaweicloudsdkdds.v3.RecyclePolicyRequestBody`
         """
         return self._body
 
@@ -61,7 +61,7 @@ class SetRecyclePolicyRequest:
 
 
         :param body: The body of this SetRecyclePolicyRequest.
-        :type body: :class:`huaweicloudsdkdds.v3.RecyclePolicyResponseBody`
+        :type body: :class:`huaweicloudsdkdds.v3.RecyclePolicyRequestBody`
         """
         self._body = body
 

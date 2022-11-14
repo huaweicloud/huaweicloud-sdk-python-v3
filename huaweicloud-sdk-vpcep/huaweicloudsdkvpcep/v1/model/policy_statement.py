@@ -22,7 +22,7 @@ class PolicyStatement:
 
     openapi_types = {
         'effect': 'str',
-        'action': 'str',
+        'action': 'list[str]',
         'resource': 'list[str]'
     }
 
@@ -40,7 +40,7 @@ class PolicyStatement:
         :param effect: 允许或拒绝，控制访问权限
         :type effect: str
         :param action: obs访问权限
-        :type action: str
+        :type action: list[str]
         :param resource: obs对象
         :type resource: list[str]
         """
@@ -85,7 +85,7 @@ class PolicyStatement:
         obs访问权限
 
         :return: The action of this PolicyStatement.
-        :rtype: str
+        :rtype: list[str]
         """
         return self._action
 
@@ -96,7 +96,7 @@ class PolicyStatement:
         obs访问权限
 
         :param action: The action of this PolicyStatement.
-        :type action: str
+        :type action: list[str]
         """
         self._action = action
 

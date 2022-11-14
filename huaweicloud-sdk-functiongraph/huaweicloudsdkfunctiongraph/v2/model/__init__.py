@@ -57,6 +57,7 @@ from huaweicloudsdkfunctiongraph.v2.model.export_function_response import Export
 from huaweicloudsdkfunctiongraph.v2.model.express_config import ExpressConfig
 from huaweicloudsdkfunctiongraph.v2.model.flow_execute_body import FlowExecuteBody
 from huaweicloudsdkfunctiongraph.v2.model.flow_execution_brief import FlowExecutionBrief
+from huaweicloudsdkfunctiongraph.v2.model.flow_execution_brief_v2 import FlowExecutionBriefV2
 from huaweicloudsdkfunctiongraph.v2.model.func_async_destination_config import FuncAsyncDestinationConfig
 from huaweicloudsdkfunctiongraph.v2.model.func_code import FuncCode
 from huaweicloudsdkfunctiongraph.v2.model.func_destination_config import FuncDestinationConfig
@@ -117,6 +118,8 @@ from huaweicloudsdkfunctiongraph.v2.model.on_error import OnError
 from huaweicloudsdkfunctiongraph.v2.model.operate_error_info import OperateErrorInfo
 from huaweicloudsdkfunctiongraph.v2.model.operation_state import OperationState
 from huaweicloudsdkfunctiongraph.v2.model.page_info import PageInfo
+from huaweicloudsdkfunctiongraph.v2.model.pager import Pager
+from huaweicloudsdkfunctiongraph.v2.model.query_run_list_param import QueryRunListParam
 from huaweicloudsdkfunctiongraph.v2.model.resources import Resources
 from huaweicloudsdkfunctiongraph.v2.model.retry import Retry
 from huaweicloudsdkfunctiongraph.v2.model.retry_work_flow_request import RetryWorkFlowRequest
@@ -145,6 +148,8 @@ from huaweicloudsdkfunctiongraph.v2.model.show_work_flow_metric_request import S
 from huaweicloudsdkfunctiongraph.v2.model.show_work_flow_metric_response import ShowWorkFlowMetricResponse
 from huaweicloudsdkfunctiongraph.v2.model.show_work_flow_request import ShowWorkFlowRequest
 from huaweicloudsdkfunctiongraph.v2.model.show_work_flow_response import ShowWorkFlowResponse
+from huaweicloudsdkfunctiongraph.v2.model.show_workflow_execution_for_page_request import ShowWorkflowExecutionForPageRequest
+from huaweicloudsdkfunctiongraph.v2.model.show_workflow_execution_for_page_response import ShowWorkflowExecutionForPageResponse
 from huaweicloudsdkfunctiongraph.v2.model.show_workflow_execution_request import ShowWorkflowExecutionRequest
 from huaweicloudsdkfunctiongraph.v2.model.show_workflow_execution_response import ShowWorkflowExecutionResponse
 from huaweicloudsdkfunctiongraph.v2.model.sla_reports_value import SlaReportsValue

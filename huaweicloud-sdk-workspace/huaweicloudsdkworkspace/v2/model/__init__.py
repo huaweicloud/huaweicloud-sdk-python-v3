@@ -22,6 +22,8 @@ from huaweicloudsdkworkspace.v2.model.batch_run_desktops_request import BatchRun
 from huaweicloudsdkworkspace.v2.model.batch_run_desktops_response import BatchRunDesktopsResponse
 from huaweicloudsdkworkspace.v2.model.cancel_workspace_request import CancelWorkspaceRequest
 from huaweicloudsdkworkspace.v2.model.cancel_workspace_response import CancelWorkspaceResponse
+from huaweicloudsdkworkspace.v2.model.change_user_status_request import ChangeUserStatusRequest
+from huaweicloudsdkworkspace.v2.model.change_user_status_response import ChangeUserStatusResponse
 from huaweicloudsdkworkspace.v2.model.create_desktop_req import CreateDesktopReq
 from huaweicloudsdkworkspace.v2.model.create_desktop_request import CreateDesktopRequest
 from huaweicloudsdkworkspace.v2.model.create_desktop_response import CreateDesktopResponse
@@ -71,6 +73,7 @@ from huaweicloudsdkworkspace.v2.model.list_workspaces_request import ListWorkspa
 from huaweicloudsdkworkspace.v2.model.list_workspaces_response import ListWorkspacesResponse
 from huaweicloudsdkworkspace.v2.model.modify_workspace_attributes_req import ModifyWorkspaceAttributesReq
 from huaweicloudsdkworkspace.v2.model.nic import Nic
+from huaweicloudsdkworkspace.v2.model.operate_user_req import OperateUserReq
 from huaweicloudsdkworkspace.v2.model.product_detail_info import ProductDetailInfo
 from huaweicloudsdkworkspace.v2.model.product_info import ProductInfo
 from huaweicloudsdkworkspace.v2.model.record import Record

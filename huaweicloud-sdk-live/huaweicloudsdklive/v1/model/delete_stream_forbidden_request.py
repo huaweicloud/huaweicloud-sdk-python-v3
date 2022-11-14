@@ -21,26 +21,22 @@ class DeleteStreamForbiddenRequest:
     sensitive_list = []
 
     openapi_types = {
-        'specify_project': 'str',
         'domain': 'str',
         'app_name': 'str',
         'stream_name': 'str'
     }
 
     attribute_map = {
-        'specify_project': 'specify_project',
         'domain': 'domain',
         'app_name': 'app_name',
         'stream_name': 'stream_name'
     }
 
-    def __init__(self, specify_project=None, domain=None, app_name=None, stream_name=None):
+    def __init__(self, domain=None, app_name=None, stream_name=None):
         """DeleteStreamForbiddenRequest
 
         The model defined in huaweicloud sdk
 
-        :param specify_project: op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
-        :type specify_project: str
         :param domain: 推流域名
         :type domain: str
         :param app_name: RTMP应用名称
@@ -51,39 +47,14 @@ class DeleteStreamForbiddenRequest:
         
         
 
-        self._specify_project = None
         self._domain = None
         self._app_name = None
         self._stream_name = None
         self.discriminator = None
 
-        if specify_project is not None:
-            self.specify_project = specify_project
         self.domain = domain
         self.app_name = app_name
         self.stream_name = stream_name
-
-    @property
-    def specify_project(self):
-        """Gets the specify_project of this DeleteStreamForbiddenRequest.
-
-        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
-
-        :return: The specify_project of this DeleteStreamForbiddenRequest.
-        :rtype: str
-        """
-        return self._specify_project
-
-    @specify_project.setter
-    def specify_project(self, specify_project):
-        """Sets the specify_project of this DeleteStreamForbiddenRequest.
-
-        op账号需要携带的特定project_id，当使用op账号时该值为所操作租户的project_id
-
-        :param specify_project: The specify_project of this DeleteStreamForbiddenRequest.
-        :type specify_project: str
-        """
-        self._specify_project = specify_project
 
     @property
     def domain(self):

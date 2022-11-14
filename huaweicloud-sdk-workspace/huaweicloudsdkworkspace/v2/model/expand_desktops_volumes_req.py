@@ -21,51 +21,51 @@ class ExpandDesktopsVolumesReq:
     sensitive_list = []
 
     openapi_types = {
-        'expand_volumes_req': 'list[ExpandVolumesReq]'
+        'desktop_volumes_expansion': 'list[ExpandVolumesReq]'
     }
 
     attribute_map = {
-        'expand_volumes_req': 'expandVolumesReq'
+        'desktop_volumes_expansion': 'desktop_volumes_expansion'
     }
 
-    def __init__(self, expand_volumes_req=None):
+    def __init__(self, desktop_volumes_expansion=None):
         """ExpandDesktopsVolumesReq
 
         The model defined in huaweicloud sdk
 
-        :param expand_volumes_req: 扩容磁盘参数。
-        :type expand_volumes_req: list[:class:`huaweicloudsdkworkspace.v2.ExpandVolumesReq`]
+        :param desktop_volumes_expansion: 扩容磁盘参数。
+        :type desktop_volumes_expansion: list[:class:`huaweicloudsdkworkspace.v2.ExpandVolumesReq`]
         """
         
         
 
-        self._expand_volumes_req = None
+        self._desktop_volumes_expansion = None
         self.discriminator = None
 
-        if expand_volumes_req is not None:
-            self.expand_volumes_req = expand_volumes_req
+        if desktop_volumes_expansion is not None:
+            self.desktop_volumes_expansion = desktop_volumes_expansion
 
     @property
-    def expand_volumes_req(self):
-        """Gets the expand_volumes_req of this ExpandDesktopsVolumesReq.
+    def desktop_volumes_expansion(self):
+        """Gets the desktop_volumes_expansion of this ExpandDesktopsVolumesReq.
 
         扩容磁盘参数。
 
-        :return: The expand_volumes_req of this ExpandDesktopsVolumesReq.
+        :return: The desktop_volumes_expansion of this ExpandDesktopsVolumesReq.
         :rtype: list[:class:`huaweicloudsdkworkspace.v2.ExpandVolumesReq`]
         """
-        return self._expand_volumes_req
+        return self._desktop_volumes_expansion
 
-    @expand_volumes_req.setter
-    def expand_volumes_req(self, expand_volumes_req):
-        """Sets the expand_volumes_req of this ExpandDesktopsVolumesReq.
+    @desktop_volumes_expansion.setter
+    def desktop_volumes_expansion(self, desktop_volumes_expansion):
+        """Sets the desktop_volumes_expansion of this ExpandDesktopsVolumesReq.
 
         扩容磁盘参数。
 
-        :param expand_volumes_req: The expand_volumes_req of this ExpandDesktopsVolumesReq.
-        :type expand_volumes_req: list[:class:`huaweicloudsdkworkspace.v2.ExpandVolumesReq`]
+        :param desktop_volumes_expansion: The desktop_volumes_expansion of this ExpandDesktopsVolumesReq.
+        :type desktop_volumes_expansion: list[:class:`huaweicloudsdkworkspace.v2.ExpandVolumesReq`]
         """
-        self._expand_volumes_req = expand_volumes_req
+        self._desktop_volumes_expansion = desktop_volumes_expansion
 
     def to_dict(self):
         """Returns the model properties as a dict"""

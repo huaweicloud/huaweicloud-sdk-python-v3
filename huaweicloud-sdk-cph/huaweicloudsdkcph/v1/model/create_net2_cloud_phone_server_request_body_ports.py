@@ -52,12 +52,9 @@ class CreateNet2CloudPhoneServerRequestBodyPorts:
         self._internet_accessible = None
         self.discriminator = None
 
-        if name is not None:
-            self.name = name
-        if listen_port is not None:
-            self.listen_port = listen_port
-        if internet_accessible is not None:
-            self.internet_accessible = internet_accessible
+        self.name = name
+        self.listen_port = listen_port
+        self.internet_accessible = internet_accessible
 
     @property
     def name(self):

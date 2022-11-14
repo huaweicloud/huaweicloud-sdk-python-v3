@@ -8,7 +8,7 @@ import six
 from huaweicloudsdkcore.utils.http_utils import sanitize_for_serialization
 
 
-class ListCloudPhoneServersResponseBody:
+class ModifyParamRequest:
 
     """
     Attributes:
@@ -21,78 +21,50 @@ class ListCloudPhoneServersResponseBody:
     sensitive_list = []
 
     openapi_types = {
-        'request_id': 'str',
-        'servers': 'list[object]'
+        'value': 'str'
     }
 
     attribute_map = {
-        'request_id': 'request_id',
-        'servers': 'servers'
+        'value': 'value'
     }
 
-    def __init__(self, request_id=None, servers=None):
-        """ListCloudPhoneServersResponseBody
+    def __init__(self, value=None):
+        """ModifyParamRequest
 
         The model defined in huaweicloud sdk
 
-        :param request_id: 请求的唯一标识ID
-        :type request_id: str
-        :param servers: 云手机服务器信息
-        :type servers: list[object]
+        :param value: 参数值。
+        :type value: str
         """
         
         
 
-        self._request_id = None
-        self._servers = None
+        self._value = None
         self.discriminator = None
 
-        self.request_id = request_id
-        self.servers = servers
+        self.value = value
 
     @property
-    def request_id(self):
-        """Gets the request_id of this ListCloudPhoneServersResponseBody.
+    def value(self):
+        """Gets the value of this ModifyParamRequest.
 
-        请求的唯一标识ID
+        参数值。
 
-        :return: The request_id of this ListCloudPhoneServersResponseBody.
+        :return: The value of this ModifyParamRequest.
         :rtype: str
         """
-        return self._request_id
+        return self._value
 
-    @request_id.setter
-    def request_id(self, request_id):
-        """Sets the request_id of this ListCloudPhoneServersResponseBody.
+    @value.setter
+    def value(self, value):
+        """Sets the value of this ModifyParamRequest.
 
-        请求的唯一标识ID
+        参数值。
 
-        :param request_id: The request_id of this ListCloudPhoneServersResponseBody.
-        :type request_id: str
+        :param value: The value of this ModifyParamRequest.
+        :type value: str
         """
-        self._request_id = request_id
-
-    @property
-    def servers(self):
-        """Gets the servers of this ListCloudPhoneServersResponseBody.
-
-        云手机服务器信息
-
-        :return: The servers of this ListCloudPhoneServersResponseBody.
-        :rtype: list[object]
-        """
-        return self._servers
-
-    @servers.setter
-    def servers(self, servers):
-        """Sets the servers of this ListCloudPhoneServersResponseBody.
-
-        云手机服务器信息
-
-        :param servers: The servers of this ListCloudPhoneServersResponseBody.
-        :type servers: list[object]
-        """
-        self._servers = servers
+        self._value = value
 
     def to_dict(self):
         """Returns the model properties as a dict"""
@@ -136,7 +108,7 @@ class ListCloudPhoneServersResponseBody:
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ListCloudPhoneServersResponseBody):
+        if not isinstance(other, ModifyParamRequest):
             return False
 
         return self.__dict__ == other.__dict__

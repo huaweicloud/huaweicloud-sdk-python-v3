@@ -39,7 +39,7 @@ class SqlExecutionReq:
 
         The model defined in huaweicloud sdk
 
-        :param sql_type: SQL类型。目前仅支持“presto”类型的SQL。 说明： 只有包含Presto组件的集群才能提交执行presto类型的SQL。
+        :param sql_type: SQL类型。目前仅支持“presto”类型的SQL。 说明： - 只有包含Presto组件的集群才能提交执行presto类型的SQL。 - 当前仅MRS 2.0.6版本的MRS 2.0.6.1补丁、MRS 2.1.0版本的MRS 2.1.0.7补丁、MRS 3.1.2及之后版本集群支持。
         :type sql_type: str
         :param sql_content: 待执行的SQL语句。 说明： 目前仅支持执行单条语句，语句中不包含“;”。
         :type sql_content: str
@@ -68,7 +68,7 @@ class SqlExecutionReq:
     def sql_type(self):
         """Gets the sql_type of this SqlExecutionReq.
 
-        SQL类型。目前仅支持“presto”类型的SQL。 说明： 只有包含Presto组件的集群才能提交执行presto类型的SQL。
+        SQL类型。目前仅支持“presto”类型的SQL。 说明： - 只有包含Presto组件的集群才能提交执行presto类型的SQL。 - 当前仅MRS 2.0.6版本的MRS 2.0.6.1补丁、MRS 2.1.0版本的MRS 2.1.0.7补丁、MRS 3.1.2及之后版本集群支持。
 
         :return: The sql_type of this SqlExecutionReq.
         :rtype: str
@@ -79,7 +79,7 @@ class SqlExecutionReq:
     def sql_type(self, sql_type):
         """Sets the sql_type of this SqlExecutionReq.
 
-        SQL类型。目前仅支持“presto”类型的SQL。 说明： 只有包含Presto组件的集群才能提交执行presto类型的SQL。
+        SQL类型。目前仅支持“presto”类型的SQL。 说明： - 只有包含Presto组件的集群才能提交执行presto类型的SQL。 - 当前仅MRS 2.0.6版本的MRS 2.0.6.1补丁、MRS 2.1.0版本的MRS 2.1.0.7补丁、MRS 3.1.2及之后版本集群支持。
 
         :param sql_type: The sql_type of this SqlExecutionReq.
         :type sql_type: str

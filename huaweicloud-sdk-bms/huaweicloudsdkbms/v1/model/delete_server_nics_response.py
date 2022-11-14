@@ -33,7 +33,7 @@ class DeleteServerNicsResponse(SdkResponse):
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 
+        :param job_id: 提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询
         :type job_id: str
         """
         
@@ -49,7 +49,7 @@ class DeleteServerNicsResponse(SdkResponse):
     def job_id(self):
         """Gets the job_id of this DeleteServerNicsResponse.
 
-        
+        提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询
 
         :return: The job_id of this DeleteServerNicsResponse.
         :rtype: str
@@ -60,7 +60,7 @@ class DeleteServerNicsResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this DeleteServerNicsResponse.
 
-        
+        提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询
 
         :param job_id: The job_id of this DeleteServerNicsResponse.
         :type job_id: str

@@ -27,6 +27,7 @@ class HostModel:
         'availability_zone_id': 'str',
         'tags': 'list[TagPlain]',
         'status': 'str',
+        'resource_id': 'str',
         'flavor': 'str',
         'type': 'str',
         'mem': 'str',
@@ -44,6 +45,7 @@ class HostModel:
         'availability_zone_id': 'availability_zone_id',
         'tags': 'tags',
         'status': 'status',
+        'resource_id': 'resource_id',
         'flavor': 'flavor',
         'type': 'type',
         'mem': 'mem',
@@ -54,7 +56,7 @@ class HostModel:
         'data_volume_count': 'data_volume_count'
     }
 
-    def __init__(self, id=None, name=None, ip=None, availability_zone_id=None, tags=None, status=None, flavor=None, type=None, mem=None, cpu=None, root_volume_size=None, data_volume_type=None, data_volume_size=None, data_volume_count=None):
+    def __init__(self, id=None, name=None, ip=None, availability_zone_id=None, tags=None, status=None, resource_id=None, flavor=None, type=None, mem=None, cpu=None, root_volume_size=None, data_volume_type=None, data_volume_size=None, data_volume_count=None):
         """HostModel
 
         The model defined in huaweicloud sdk
@@ -71,6 +73,8 @@ class HostModel:
         :type tags: list[:class:`huaweicloudsdkmrs.v1.TagPlain`]
         :param status: 虚拟机当前状态
         :type status: str
+        :param resource_id: 节点资源ID
+        :type resource_id: str
         :param flavor: 虚拟机规格ID
         :type flavor: str
         :param type: 虚拟机类型，当前支持MasterNode，CoreNode，TaskNode
@@ -97,6 +101,7 @@ class HostModel:
         self._availability_zone_id = None
         self._tags = None
         self._status = None
+        self._resource_id = None
         self._flavor = None
         self._type = None
         self._mem = None
@@ -119,6 +124,8 @@ class HostModel:
             self.tags = tags
         if status is not None:
             self.status = status
+        if resource_id is not None:
+            self.resource_id = resource_id
         if flavor is not None:
             self.flavor = flavor
         if type is not None:
@@ -267,6 +274,28 @@ class HostModel:
         :type status: str
         """
         self._status = status
+
+    @property
+    def resource_id(self):
+        """Gets the resource_id of this HostModel.
+
+        节点资源ID
+
+        :return: The resource_id of this HostModel.
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        """Sets the resource_id of this HostModel.
+
+        节点资源ID
+
+        :param resource_id: The resource_id of this HostModel.
+        :type resource_id: str
+        """
+        self._resource_id = resource_id
 
     @property
     def flavor(self):

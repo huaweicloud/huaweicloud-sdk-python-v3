@@ -121,7 +121,7 @@ class LiveAsyncClient(Client):
         return self.create_domain_mapping_with_http_info(request)
 
     def create_domain_mapping_with_http_info(self, request):
-        all_params = ['create_domain_mapping_request_body', 'specify_project']
+        all_params = ['create_domain_mapping_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -132,8 +132,6 @@ class LiveAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'specify_project' in local_var_params:
-            query_params.append(('specify_project', local_var_params['specify_project']))
 
         header_params = {}
 
@@ -355,7 +353,7 @@ class LiveAsyncClient(Client):
         return self.create_stream_forbidden_with_http_info(request)
 
     def create_stream_forbidden_with_http_info(self, request):
-        all_params = ['create_stream_forbidden_request_body', 'specify_project']
+        all_params = ['create_stream_forbidden_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -366,8 +364,6 @@ class LiveAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'specify_project' in local_var_params:
-            query_params.append(('specify_project', local_var_params['specify_project']))
 
         header_params = {}
 
@@ -531,7 +527,7 @@ class LiveAsyncClient(Client):
         return self.delete_domain_mapping_with_http_info(request)
 
     def delete_domain_mapping_with_http_info(self, request):
-        all_params = ['pull_domain', 'push_domain', 'specify_project']
+        all_params = ['pull_domain', 'push_domain']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -542,8 +538,6 @@ class LiveAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'specify_project' in local_var_params:
-            query_params.append(('specify_project', local_var_params['specify_project']))
         if 'pull_domain' in local_var_params:
             query_params.append(('pull_domain', local_var_params['pull_domain']))
         if 'push_domain' in local_var_params:
@@ -709,7 +703,7 @@ class LiveAsyncClient(Client):
         return self.delete_stream_forbidden_with_http_info(request)
 
     def delete_stream_forbidden_with_http_info(self, request):
-        all_params = ['domain', 'app_name', 'stream_name', 'specify_project']
+        all_params = ['domain', 'app_name', 'stream_name']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -720,8 +714,6 @@ class LiveAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'specify_project' in local_var_params:
-            query_params.append(('specify_project', local_var_params['specify_project']))
         if 'domain' in local_var_params:
             query_params.append(('domain', local_var_params['domain']))
         if 'app_name' in local_var_params:
@@ -1165,7 +1157,7 @@ class LiveAsyncClient(Client):
         return self.list_stream_forbidden_with_http_info(request)
 
     def list_stream_forbidden_with_http_info(self, request):
-        all_params = ['domain', 'specify_project', 'app_name', 'stream_name', 'page', 'size']
+        all_params = ['domain', 'app_name', 'stream_name', 'page', 'size']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1176,8 +1168,6 @@ class LiveAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'specify_project' in local_var_params:
-            query_params.append(('specify_project', local_var_params['specify_project']))
         if 'domain' in local_var_params:
             query_params.append(('domain', local_var_params['domain']))
         if 'app_name' in local_var_params:
@@ -1709,7 +1699,7 @@ class LiveAsyncClient(Client):
         return self.update_stream_forbidden_with_http_info(request)
 
     def update_stream_forbidden_with_http_info(self, request):
-        all_params = ['update_stream_forbidden_request_body', 'specify_project']
+        all_params = ['update_stream_forbidden_request_body']
         local_var_params = {}
         for attr in request.attribute_map:
             if hasattr(request, attr):
@@ -1720,8 +1710,6 @@ class LiveAsyncClient(Client):
         path_params = {}
 
         query_params = []
-        if 'specify_project' in local_var_params:
-            query_params.append(('specify_project', local_var_params['specify_project']))
 
         header_params = {}
 

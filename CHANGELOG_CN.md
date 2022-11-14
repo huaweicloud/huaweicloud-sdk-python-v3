@@ -1,3 +1,144 @@
+# 3.1.10 2022-11-14
+
+### HuaweiCloud SDK BMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`DeleteServerNics`响应参数`job_id`改为必填
+  - 接口`UpdateBaremetalServerInterfaceAttachments`:
+    - 请求参数`delete_on_termination`类型调整 `string` -> `boolean`
+    - 请求参数`delete_on_termination`改为必填
+  - 接口`ShowServerRemoteConsole`新增响应参数 `remote_console`
+
+### HuaweiCloud SDK CPH
+
+- _新增特性_
+  - 支持接口`DeleteShareFiles`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`StopCloudPhone`:
+    - 新增请求参数 `StopCloudPhoneRequestBody`
+    - 移除请求参数 `StopCloudPhoneReuqestBody`
+  - 接口`ShowCloudPhoneServerDetail`:
+    - 新增响应参数 `server_name`、`availability_zone`、`server_id`、`server_model_name`、`phone_model_name`、`keypair_name`、`status`、`vpc_id`、`cidr`、`vpc_cidr`、`subnet_id`、`subnet_cidr`、`resource_project_id`、`metadata`、`addresses`、`network_version`、`create_time`、`update_time`
+    - 移除响应参数 `servers`
+  - 接口`CreateNet2CloudPhoneServer`移除请求参数 `br_cidr`
+
+### HuaweiCloud SDK CSMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListSecretTags`新增响应参数 `sys_tags`
+
+### HuaweiCloud SDK DDS
+
+- _新增特性_
+  - 支持以下接口：
+    - `ShowSlowlogDesensitizationSwitch`
+    - `ListRecycleInstances`
+    - `CheckWeakPassword`
+    - `ShowUpgradeDuration`
+    - `ShowDiskUsage`
+    - `ListSslCertDownloadAddress`
+    - `DeleteAuditLog`
+    - `ShowRecyclePolicy`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`SwitchSlowlogDesensitization`新增请求参数 `X-Language`
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 支持接口`ShowWorkflowExecutionForPage`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListWorkflow`新增响应参数 `enable_stream_response`
+  - 接口`UpdateWorkFlow`新增响应参数 `enable_stream_response`
+
+### HuaweiCloud SDK GSL
+
+- _新增特性_
+  - 支持接口`ListBackPools`、`ListBackPoolMembers`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK Live
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListStreamForbidden`移除请求参数 `specify_project`
+  - 接口`DeleteStreamForbidden`移除请求参数 `specify_project`
+  - 接口`UpdateStreamForbidden`移除请求参数 `specify_project`
+  - 接口`CreateStreamForbidden`移除请求参数 `specify_project`
+  - 接口`ShowDomain`响应参数`service_area`移除枚举值`global`
+  - 接口`UpdateDomain`响应参数`service_area`移除枚举值`global`
+  - 接口`CreateDomain`请求参数`service_area`移除枚举值`global`
+  - 接口`DeleteDomainMapping`移除请求参数 `specify_project`
+  - 接口`CreateDomainMapping`移除请求参数 `specify_project`
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListHosts`新增响应参数 `resource_id`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`ShowPostgresqlParamValue`、`UpdatePostgresqlParameterValue`、`ListDrRelations`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`CreateInstance`请求参数`type`新增枚举值`ESSD`
+  - 接口`ListInstances`响应参数`type`新增枚举值`ESSD`
+  - 接口`CreateRestoreInstance`请求参数`type`新增枚举值`ESSD`
+  - 接口`CreatePostgresqlDatabase`新增请求参数 `is_revoke_public_privilege`
+
+### HuaweiCloud SDK VPCEP
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListEndpoints`响应参数`Action`类型调整 `string` -> `array`
+  - 接口`DeleteEndpointPolicy`响应参数`Action`类型调整 `string` -> `array`
+  - 接口`UpdateEndpointPolicy`:
+    - 请求参数`Action`类型调整 `string` -> `array`
+    - 响应参数`Action`类型调整 `string` -> `array`
+
+### HuaweiCloud SDK WAF
+
+- _新增特性_
+  - 支持接口`MigrateCompositeHosts`、`ShowSourceIp`、`ListNoticeConfigs`、`UpdateAlertNoticeConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 接口`ListInstance`新增响应参数 `instance_name`
+  - 接口`ShowLtsInfoConfig`新增响应参数 `enabled`、`ltsAttackStreamID`
+  - 接口`UpdateLtsInfoConfig`:
+    - 新增请求参数 `enabled`、`ltsAttackStreamID`
+    - 新增响应参数 `enabled`、`ltsAttackStreamID`
+    - 请求参数`enabale`改为非必填
+  - 接口`ShowIpGroup`新增响应参数 `description`
+
 # 3.1.9 2022-11-08
 
 ### HuaweiCloud SDK HSS

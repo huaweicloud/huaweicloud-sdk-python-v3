@@ -26,7 +26,8 @@ class PostgresqlDatabaseForCreation:
         'owner': 'str',
         'template': 'str',
         'lc_collate': 'str',
-        'lc_ctype': 'str'
+        'lc_ctype': 'str',
+        'is_revoke_public_privilege': 'bool'
     }
 
     attribute_map = {
@@ -35,10 +36,11 @@ class PostgresqlDatabaseForCreation:
         'owner': 'owner',
         'template': 'template',
         'lc_collate': 'lc_collate',
-        'lc_ctype': 'lc_ctype'
+        'lc_ctype': 'lc_ctype',
+        'is_revoke_public_privilege': 'is_revoke_public_privilege'
     }
 
-    def __init__(self, name=None, character_set=None, owner=None, template=None, lc_collate=None, lc_ctype=None):
+    def __init__(self, name=None, character_set=None, owner=None, template=None, lc_collate=None, lc_ctype=None, is_revoke_public_privilege=None):
         """PostgresqlDatabaseForCreation
 
         The model defined in huaweicloud sdk
@@ -55,6 +57,8 @@ class PostgresqlDatabaseForCreation:
         :type lc_collate: str
         :param lc_ctype: 数据库分类集。默认en_US.UTF-8。
         :type lc_ctype: str
+        :param is_revoke_public_privilege: 是否回收public schema的PUBLIC CREATE权限。 true，表示回收该权限。 false，表示不回收该权限。 缺省时默认是false。
+        :type is_revoke_public_privilege: bool
         """
         
         
@@ -65,6 +69,7 @@ class PostgresqlDatabaseForCreation:
         self._template = None
         self._lc_collate = None
         self._lc_ctype = None
+        self._is_revoke_public_privilege = None
         self.discriminator = None
 
         self.name = name
@@ -78,6 +83,8 @@ class PostgresqlDatabaseForCreation:
             self.lc_collate = lc_collate
         if lc_ctype is not None:
             self.lc_ctype = lc_ctype
+        if is_revoke_public_privilege is not None:
+            self.is_revoke_public_privilege = is_revoke_public_privilege
 
     @property
     def name(self):
@@ -210,6 +217,28 @@ class PostgresqlDatabaseForCreation:
         :type lc_ctype: str
         """
         self._lc_ctype = lc_ctype
+
+    @property
+    def is_revoke_public_privilege(self):
+        """Gets the is_revoke_public_privilege of this PostgresqlDatabaseForCreation.
+
+        是否回收public schema的PUBLIC CREATE权限。 true，表示回收该权限。 false，表示不回收该权限。 缺省时默认是false。
+
+        :return: The is_revoke_public_privilege of this PostgresqlDatabaseForCreation.
+        :rtype: bool
+        """
+        return self._is_revoke_public_privilege
+
+    @is_revoke_public_privilege.setter
+    def is_revoke_public_privilege(self, is_revoke_public_privilege):
+        """Sets the is_revoke_public_privilege of this PostgresqlDatabaseForCreation.
+
+        是否回收public schema的PUBLIC CREATE权限。 true，表示回收该权限。 false，表示不回收该权限。 缺省时默认是false。
+
+        :param is_revoke_public_privilege: The is_revoke_public_privilege of this PostgresqlDatabaseForCreation.
+        :type is_revoke_public_privilege: bool
+        """
+        self._is_revoke_public_privilege = is_revoke_public_privilege
 
     def to_dict(self):
         """Returns the model properties as a dict"""

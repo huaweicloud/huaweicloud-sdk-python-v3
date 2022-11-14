@@ -21,20 +21,24 @@ class SwitchSlowlogDesensitizationRequest:
     sensitive_list = []
 
     openapi_types = {
+        'x_language': 'str',
         'instance_id': 'str',
         'status': 'str'
     }
 
     attribute_map = {
+        'x_language': 'X-Language',
         'instance_id': 'instance_id',
         'status': 'status'
     }
 
-    def __init__(self, instance_id=None, status=None):
+    def __init__(self, x_language=None, instance_id=None, status=None):
         """SwitchSlowlogDesensitizationRequest
 
         The model defined in huaweicloud sdk
 
+        :param x_language: 语言。
+        :type x_language: str
         :param instance_id: 实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
         :type instance_id: str
         :param status: 开启或关闭慢日志脱敏，取值为on或off。
@@ -43,12 +47,37 @@ class SwitchSlowlogDesensitizationRequest:
         
         
 
+        self._x_language = None
         self._instance_id = None
         self._status = None
         self.discriminator = None
 
+        if x_language is not None:
+            self.x_language = x_language
         self.instance_id = instance_id
         self.status = status
+
+    @property
+    def x_language(self):
+        """Gets the x_language of this SwitchSlowlogDesensitizationRequest.
+
+        语言。
+
+        :return: The x_language of this SwitchSlowlogDesensitizationRequest.
+        :rtype: str
+        """
+        return self._x_language
+
+    @x_language.setter
+    def x_language(self, x_language):
+        """Sets the x_language of this SwitchSlowlogDesensitizationRequest.
+
+        语言。
+
+        :param x_language: The x_language of this SwitchSlowlogDesensitizationRequest.
+        :type x_language: str
+        """
+        self._x_language = x_language
 
     @property
     def instance_id(self):
